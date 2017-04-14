@@ -3,7 +3,6 @@ var apiKey = 'AIzaSyA7Uka7Cbx7SPTWqDn52Nw9XPAe1kdQZxs'; //choose public apiKey, 
 var userEmail = "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com"; //your calendar Id
 var userTimeZone = "New_York"; //example "Rome" "Los_Angeles" ecc...
 var maxRows = 10; //events to shown
-var calName = ""; //name of calendar (write what you want, doesn't matter)
 
 // starrie@virginia.edu&cid=
 // 5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com&cid=k613quo3pribde7jrm5e12ft1c@group.calendar.google.com&cid=d2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com&cid=j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com&cid=dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com&cid=6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com&cid=lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com&cid=f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com&cid=pce8r0mnja2do20vkku2gslamk@group.calendar.google.com#main_7
@@ -21,8 +20,12 @@ function padNum(num) {
 
 //--------------------- From 24h to Am/Pm
 function AmPm(num) {
-    if (num <= 12) { return "am " + num; }
-    return "pm " + padNum(num - 12);
+    if (num <= 12) { return num; }
+    return padNum(num - 12);
+}
+function AmPm1(num) {
+    if (num <= 12) { return " am"; }
+    return " pm";
 }
 //--------------------- end
 
@@ -79,6 +82,7 @@ function handleAuthResult(authResult) {
 //--------------------- API CALL itself
 function makeApiCall() {
     var today = new Date(); //today date
+    today.setDate(today.getDate() - 1); //today date minus one day
     gapi.client.load('calendar', 'v3', function () {
         var request = gapi.client.calendar.events.list({
             'calendarId' : userEmail,
@@ -112,6 +116,7 @@ function makeApiCall() {
                 }
                 else{
                     var time = dateTime[1].split(":"); //split hh ss etc...
+                    var AmPmInd = AmPm1(time[0])
                     var startHour = AmPm(time[0]);
                     var startMin = time[1];
                     var str = [ //change this to match your needs
@@ -120,7 +125,7 @@ function makeApiCall() {
                         startMonth, ' ',
                         startDay, ', ',
                         startYear, ' @ ',
-                        startHour, ':', startMin, '</a></b> - ', item.summary, ' in <b>', item.location, '</b><br><br>'
+                        startHour, ':', startMin, AmPmInd, '</a></b> - ', item.summary, ' in <b>', item.location, '</b><br><br>'
                         ];
                 }
                 li.innerHTML = str.join('');
@@ -136,7 +141,6 @@ function makeApiCall() {
 
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
-    <div id='content'>
-    <h4 id='calendar' style="color:grey">LOADING . . . .</h4>
-    <ul id='events'></ul>
-    </div>
+<div id='content'>
+  <ul id='events'></ul>
+</div>
