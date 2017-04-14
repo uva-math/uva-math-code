@@ -9,3 +9,8 @@ body {
     margin:0px;
     padding:0px;
 }
+
+a:focus, a:hover {
+  color: #eb5f0c;
+  text-decoration: underline;
+}
