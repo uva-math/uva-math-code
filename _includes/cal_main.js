@@ -1,6 +1,6 @@
 <script>
-var clientId = '924411057957-sc2sk1rd27p32ip0kkv2lcn87v23mtfn.apps.googleusercontent.com'; //choose web app client Id, redirect URI and Javascript origin set to http://localhost
-var apiKey = 'AIzaSyBPoIIEB_Xn6UOv1RKNnWkf9LrDzpsrNzM'; //choose public apiKey, any IP allowed (leave blank the allowed IP boxes in Google Dev Console)
+var clientId = '924411057957-0d9mrr6c8uvgsbdq1v1he5ha0je1om3d.apps.googleusercontent.com'; //choose web app client Id, redirect URI and Javascript origin set to http://localhost
+var apiKey = 'AIzaSyA7Uka7Cbx7SPTWqDn52Nw9XPAe1kdQZxs'; //choose public apiKey, any IP allowed (leave blank the allowed IP boxes in Google Dev Console)
 var userEmail = "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com"; //your calendar Id
 var userTimeZone = "New_York"; //example "Rome" "Los_Angeles" ecc...
 var maxRows = 10; //events to shown
