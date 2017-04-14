@@ -32,7 +32,7 @@ function monthString(num) {
     else if (num === "02") { return "Feb"; }
     else if (num === "03") { return "Mar"; }
     else if (num === "04") { return "Apr"; }
-    else if (num === "05") { return "Maj"; }
+    else if (num === "05") { return "May"; }
     else if (num === "06") { return "Jun"; }
     else if (num === "07") { return "Jul"; }
     else if (num === "08") { return "Aug"; }
