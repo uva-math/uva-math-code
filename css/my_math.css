@@ -1,0 +1,11 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+    padding-top: 20px;
+    font-size: 18px;
+    margin:0px;
+    padding:0px;
+}
