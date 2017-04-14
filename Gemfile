@@ -1,4 +1,4 @@
 source 'https://rubygems.org'
 gem 'github-pages', group: :jekyll_plugins
 
-# will remove gh-pages at some point?
+# will remove github-pages when move to standalone
