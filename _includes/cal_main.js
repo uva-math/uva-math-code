@@ -1,5 +1,4 @@
 <script>
-var clientId = '924411057957-0d9mrr6c8uvgsbdq1v1he5ha0je1om3d.apps.googleusercontent.com'; //choose web app client Id, redirect URI and Javascript origin set to http://localhost
 var apiKey = 'AIzaSyA7Uka7Cbx7SPTWqDn52Nw9XPAe1kdQZxs'; //choose public apiKey, any IP allowed (leave blank the allowed IP boxes in Google Dev Console)
 var userEmail = "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com"; //your calendar Id
 var userTimeZone = "New_York"; //example "Rome" "Los_Angeles" ecc...
@@ -65,7 +64,7 @@ function handleClientLoad() {
 
 //--------------------- check Auth
 function checkAuth() {
-    gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
+    gapi.auth.authorize({scope: scopes, immediate: true}, handleAuthResult);
 }
 //--------------------- end
 
@@ -85,8 +84,7 @@ function makeApiCall() {
             'calendarId' : userEmail,
             'timeZone' : userTimeZone,
             'singleEvents': true,
-            // 'timeMin': today.toISOString(),      //for now will roll manually, but switch to this to do automatic
-            'timeMin': '2017-04-10T00:00:00.720Z',  //gathers only events not happened yet
+            'timeMin': today.toISOString(),  //collecting events from today
             'maxResults': maxRows,
             'orderBy': 'startTime'});
     request.execute(function (resp) {
@@ -137,6 +135,7 @@ function makeApiCall() {
 </script>
 
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
+
     <div id='content'>
     <h4 id='calendar' style="color:grey">LOADING . . . .</h4>
     <ul id='events'></ul>
