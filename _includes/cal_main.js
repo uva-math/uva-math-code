@@ -1,11 +1,20 @@
 <script>
-var apiKey = 'AIzaSyA7Uka7Cbx7SPTWqDn52Nw9XPAe1kdQZxs'; //choose public apiKey, any IP allowed (leave blank the allowed IP boxes in Google Dev Console)
-var userEmail = "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com"; //your calendar Id
+var apiKey = 'AIzaSyA7Uka7Cbx7SPTWqDn52Nw9XPAe1kdQZxs';
+var userEmail = [
+  "starrie@virginia.edu",
+  "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com",
+  "5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com",
+  "k613quo3pribde7jrm5e12ft1c@group.calendar.google.com",
+  "d2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com",
+  "j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com",
+  "dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com",
+  "6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com",
+  "f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com",
+  "pce8r0mnja2do20vkku2gslamk@group.calendar.google.com"
+]; //your calendar Ids
 var userTimeZone = "New_York"; //example "Rome" "Los_Angeles" ecc...
 var maxRows = 10; //events to shown
 
-// starrie@virginia.edu&cid=
-// 5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com&cid=k613quo3pribde7jrm5e12ft1c@group.calendar.google.com&cid=d2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com&cid=j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com&cid=dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com&cid=6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com&cid=lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com&cid=f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com&cid=pce8r0mnja2do20vkku2gslamk@group.calendar.google.com#main_7
 
 var scopes = 'https://www.googleapis.com/auth/calendar';
 
@@ -85,10 +94,10 @@ function makeApiCall() {
     today.setDate(today.getDate() - 1); //today date minus one day
     gapi.client.load('calendar', 'v3', function () {
         var request = gapi.client.calendar.events.list({
-            'calendarId' : userEmail,
+            'calendarId' : userEmail[4],
             'timeZone' : userTimeZone,
             'singleEvents': true,
-            'timeMin': today.toISOString(),  //collecting events from today
+            'timeMin': today.toISOString(),  //collecting events from today minus one day
             'maxResults': maxRows,
             'orderBy': 'startTime'});
     request.execute(function (resp) {
@@ -105,6 +114,7 @@ function makeApiCall() {
                 var startDay = date[2];
                 var startDateISO = new Date(startMonth + " " + startDay + ", " + startYear + " 00:00:00");
                 var startDayWeek = dayString(startDateISO.getDay());
+
                 if( allDay == true){ //change this to match your needs
                   var str = [
                   '<b><a href="', item.htmlLink, '">',
@@ -128,9 +138,11 @@ function makeApiCall() {
                         startHour, ':', startMin, AmPmInd, '</a></b> - ', item.summary, ' in <b>', item.location, '</b><br><br>'
                         ];
                 }
+
                 li.innerHTML = str.join('');
                 li.setAttribute('class', classes.join(' '));
                 document.getElementById('events').appendChild(li);
+
             }
         document.getElementById('calendar').innerHTML = calName;
         });
