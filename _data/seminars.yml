@@ -1,0 +1,31 @@
+- cal_number: '1'
+  name: Geometry Seminar
+  webpage: http://pi.math.virginia.edu/geometry/
+
+- cal_number: '2'
+  name: Undergraduate Math Club
+  webpage: http://pi.math.virginia.edu/mathclub/
+
+- cal_number: '3'
+  name: Harmonic Analysis and PDEs Seminar
+  webpage: http://pi.math.virginia.edu/diffeq/
+
+- cal_number: '4'
+  name: Mathematical Physics Seminar
+  webpage: http://pi.math.virginia.edu/mathphys/
+
+- cal_number: '5'
+  name: Algebra Seminar
+  webpage: http://pi.math.virginia.edu/algebra/
+
+- cal_number: '6'
+  name: Colloquium
+  webpage: http://pi.math.virginia.edu/colloq/
+
+- cal_number: '7'
+  name: Probability Seminar
+  webpage: http://faculty.virginia.edu/Probability/
+
+- cal_number: '8'
+  name: Topology Seminar
+  webpage: http://pi.math.virginia.edu/topology/
