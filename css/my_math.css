@@ -5,7 +5,7 @@ html {
 }
 body {
     padding-top: 20px;
-    font-size: 18px;
+    /*font-size: 14px;*/
     margin:0px;
     padding:0px;
 }
@@ -14,3 +14,7 @@ a:focus, a:hover {
   color: #eb5f0c;
   text-decoration: underline;
 }
+
+.small-vertical-divider{
+    margin: 0.5cm 0cm 0cm 0cm;
+  }

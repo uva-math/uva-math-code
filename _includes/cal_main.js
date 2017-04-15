@@ -12,7 +12,8 @@
     "f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com",   //8 - topology
     "pce8r0mnja2do20vkku2gslamk@group.calendar.google.com",   //9 - hmm? seems like the old calendar for many events, and now seems defunct
     "starrie@virginia.edu",                                   //10 - hmm?
-    //add new seminar calendars here and modify the function giving the link
+    //add new seminar calendars here and modify the function giving the link as well as _data/seminars.yml
+    //do not touch the last seminar (it is empty and it is needed for IE compatibility)
     "c7vr381laveomub6abc4vh3qos@group.calendar.google.com"
     // this last one is the empty calendar with no seminar link (also for compatibility with IE)
   ]; //list of all calendars, new seminar google calendars can be added here
@@ -21,7 +22,7 @@
   var scopes = 'https://www.googleapis.com/auth/calendar.readonly';
   // google API keys
   var userTimeZone = "New_York"; // Charlottesville is in this timezone so we keep it like this
-  var maxSeminars = 10; //This is the number of seminars to display
+  var maxSeminars = 8; //This is the number of seminars to display
   var maxRows = 7; //This is the number of events to pull from each of the calendars
 
   var propSep = "__sep__";
@@ -32,16 +33,16 @@
 //various seminar things
   function getSeminar(num)
   {
-    if(num == 1) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "1" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
-    if(num == 2) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "2" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
-    if(num == 3) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "3" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
-    if(num == 4) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "4" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
-    if(num == 5) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "5" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
-    if(num == 6) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "6" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
-    if(num == 7) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "7" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
-    if(num == 8) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "8" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
-    if(num == 9) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "9" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
-    if(num == 10) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "10" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
+    if(num == 1) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "1" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 2) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "2" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 3) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "3" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 4) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "4" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 5) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "5" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 6) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "6" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 7) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "7" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 8) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "8" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 9) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "9" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 10) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "10" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
     return '';
   }
   function getLocation(loc)
@@ -56,11 +57,11 @@
   {
     if (abst)
     {
-      var retStr = ['<details><summary>Abstract</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><br><a href="' ,  htlink, '">Google Calendar link</a><br>', '</details>'];
+      var retStr = ['<details><summary>Description</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '">Google Calendar link</a><br>', '</details>'];
       // appendPre(retStr);
       return retStr.join('');
     }
-    return '';
+    return '<br>';
   }
 
 // ------------
@@ -182,8 +183,8 @@
                 startMin + ' ' +
                 AmPm1(time[0]) + '</a></b>';
             }
-            var str = strBegin + ' ' +
-            getSeminar(cal_j) + ' - <b>' +
+            var str = strBegin + '<br>' +
+            getSeminar(cal_j) + '<br><b>' +
             item.summary + '</b> ' +
             getLocation(item.location) +
             getAbstract(item.description, item.htmlLink);
@@ -199,9 +200,9 @@
             for (var j = 0; j < eventsToDisplay; j++)
             {
               //this is where the events' representation happens
-              var li = document.createElement('li');
+              var li = document.createElement('div');
               var elem = (eventsArray[j]+'').split(propSep)[1];
-              li.innerHTML = elem;
+              li.innerHTML = elem + '<br>';
               document.getElementById('events').appendChild(li);
             }
             executeOnce = 1;
@@ -214,5 +215,5 @@
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
 <div id='content'>
-  <ul id='events'></ul>
+  <div id='events'></div>
 </div>

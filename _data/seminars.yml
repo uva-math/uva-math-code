@@ -1,3 +1,6 @@
+# This is used for generating the list of seminars, and for assigning links to seminar pages on the main page
+# Please do not touch the numbering. If want to add a seminar, add in the end (new numbers start with 10 as of Apr 2017)
+
 - cal_number: '1'
   name: Geometry Seminar
   webpage: 'http://pi.math.virginia.edu/geometry/'

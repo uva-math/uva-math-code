@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include header.html %}
+
+<body>
+
+{% include navbar.html %}
+
+<h1>post layout. {{page.title}}</h1>
+
+<div class="container">
+  {{ content }}
+</div>
+
+{% include footer.html %}
+
+{% include mathjax %}
+
+{% include bootjs %}
+
+</body>
+
+</html>
