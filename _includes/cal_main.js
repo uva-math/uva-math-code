@@ -51,11 +51,11 @@
     }
     return '';
   }
-  function getAbstract(abst)
+  function getAbstract(abst, htlink)
   {
     if (abst)
     {
-      var retStr = ['<details><summary>Abstract</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '</details>'];
+      var retStr = ['<details><summary>Abstract</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><br><a href="' ,  htlink, '">Google Calendar link</a><br>', '</details>'];
       // appendPre(retStr);
       return retStr.join('');
     }
@@ -159,10 +159,11 @@
             {
               var strBegin = startDT +
                 propSep +
+                '<b><a href="' + item.htmlLink + '">' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +
-                startYear;
+                startYear + '</a></b>';
             }
             else
             {
@@ -171,19 +172,20 @@
               var startMin = time[1];
               var strBegin = startDT +
                 propSep +
+                '<b><a href="' + item.htmlLink + '">' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +
                 startYear + ' @ ' +
                 startHour + ':' +
                 startMin + ' ' +
-                AmPm1(time[0]);
+                AmPm1(time[0]) + '</a></b>';
             }
             var str = strBegin + ' ' +
             getSeminar(cal_j) + ' - <b>' +
             item.summary + '</b> ' +
             getLocation(item.location) +
-            getAbstract(item.description);
+            getAbstract(item.description, item.htmlLink);
             // formatted google calendar events are packed into array of strings here
             eventsArray.push(str);
 
