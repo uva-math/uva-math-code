@@ -51,6 +51,14 @@
     }
     return '';
   }
+  function getAbstract(abst)
+  {
+    if (abst)
+    {
+      return abst;
+    }
+    return '';
+  }
 
 // ------------
 
@@ -171,8 +179,10 @@
             }
             var str = strBegin + ' ' +
             getSeminar(cal_j) + ' - <b>' +
-            item.summary + '</b> ' + getLocation(item.location);
-            ;
+            item.summary + '</b> ' + getLocation(item.location) +
+            '<details><summary>Abstract</summary>' +
+            getAbstract(item.description) +
+              '</details>';
             // formatted google calendar events are packed into array of strings here
             eventsArray.push(str);
 
