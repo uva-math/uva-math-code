@@ -12,7 +12,8 @@
     "f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com",   //8 - topology
     "pce8r0mnja2do20vkku2gslamk@group.calendar.google.com",   //9 - hmm? seems like the old calendar for many events, and now seems defunct
     "starrie@virginia.edu",                                   //10 - hmm?
-    //add new seminar calendars here and modify the function giving the link
+    //add new seminar calendars here and modify the function giving the link as well as _data/seminars.yml
+    //do not touch the last seminar (it is empty and it is needed for IE compatibility)
     "c7vr381laveomub6abc4vh3qos@group.calendar.google.com"
     // this last one is the empty calendar with no seminar link (also for compatibility with IE)
   ]; //list of all calendars, new seminar google calendars can be added here
