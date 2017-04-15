@@ -1,24 +1,27 @@
 <script>
 // javascript to access all seminar google calendars which puts them onto main page;
 // its modifications can be used for seminar pages
-  var userEmail = [
-    "dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com",
-    "6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com",
-    "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com",
-    "5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com",
-    "k613quo3pribde7jrm5e12ft1c@group.calendar.google.com",
-    "d2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com",
-    "j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com",
-    "f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com",
-    "pce8r0mnja2do20vkku2gslamk@group.calendar.google.com",
-    "starrie@virginia.edu"
+  var userEmail = [ //do not reorder as seminar links depend on this
+    "dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com",   //1 - geometry
+    "6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com",   //2 - math club
+    "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com",   //3 - harmonic seminar
+    "5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com",   //4 - math physics
+    "k613quo3pribde7jrm5e12ft1c@group.calendar.google.com",   //5 - algebra
+    "d2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com",   //6 - colloquium
+    "j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com",   //7 - probability
+    "f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com",   //8 - topology
+    "pce8r0mnja2do20vkku2gslamk@group.calendar.google.com",   //9 - hmm? seems like the old calendar for many events, and now seems defunct
+    "starrie@virginia.edu",                                   //10 - hmm?
+    //add new seminar calendars here and modify the function giving the link
+    "c7vr381laveomub6abc4vh3qos@group.calendar.google.com"
+    // this last one is the empty calendar with no seminar link (also for compatibility with IE)
   ]; //list of all calendars, new seminar google calendars can be added here
   var apiKey = 'AIzaSyA7Uka7Cbx7SPTWqDn52Nw9XPAe1kdQZxs';
   var clientId = '924411057957-0d9mrr6c8uvgsbdq1v1he5ha0je1om3d.apps.googleusercontent.com';
   var scopes = 'https://www.googleapis.com/auth/calendar.readonly';
   // google API keys
   var userTimeZone = "New_York"; // Charlottesville is in this timezone so we keep it like this
-  var maxRows = 7;
+  var maxRows = 10;
 
   var propSep = "__sep__";
 
@@ -82,7 +85,8 @@
     var executeOnce = 0;
     var today = new Date();
     var request = [];
-    today.setDate(today.getDate() - 1);
+    today.setDate(today.getDate() - 1); //access data from yesterday, and display a fixed number of events
+    //this part calls the API
     gapi.client.load('calendar', 'v3', function () {
       for(var cal_i = 0; cal_i < userEmail.length; cal_i++ )
       {
@@ -98,6 +102,7 @@
           cal_i
         ];
       }
+      //this part packs the results into a single array
       for(let cal_j = 0; cal_j < userEmail.length; cal_j++ )
       {
         request[cal_j][0].execute(function (resp)
@@ -109,7 +114,7 @@
             var startDT = allDay ? item.start.date : item.start.dateTime;
 
             eventsArray.push(startDT + propSep + cal_j + propSep + item.summary);
-            // formatted google calendar events are put into array as strings
+            // formatted google calendar events are packed into array of strings here
 
           }
           if(calsArray.length == userEmail.length && !executeOnce)
