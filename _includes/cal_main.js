@@ -55,7 +55,9 @@
   {
     if (abst)
     {
-      return abst;
+      var retStr = ['<details><summary>Abstract</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '</details>'];
+      // appendPre(retStr);
+      return retStr.join('');
     }
     return '';
   }
@@ -179,13 +181,11 @@
             }
             var str = strBegin + ' ' +
             getSeminar(cal_j) + ' - <b>' +
-            item.summary + '</b> ' + getLocation(item.location) +
-            '<details><summary>Abstract</summary>' +
-            getAbstract(item.description) +
-              '</details>';
+            item.summary + '</b> ' +
+            getLocation(item.location) +
+            getAbstract(item.description);
             // formatted google calendar events are packed into array of strings here
             eventsArray.push(str);
-
 
           }
           if(calsArray.length == userEmail.length && !executeOnce)
