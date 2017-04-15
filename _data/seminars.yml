@@ -1,39 +1,39 @@
 - cal_number: '1'
   name: Geometry Seminar
-  webpage: http://pi.math.virginia.edu/geometry/
-  google_cal_id: "dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com"
+  webpage: 'http://pi.math.virginia.edu/geometry/'
+  google_cal_id: 'dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com'
 
 - cal_number: '2'
   name: Undergraduate Math Club
-  webpage: http://pi.math.virginia.edu/mathclub/
-  google_cal_id: "6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com"
+  webpage: 'http://pi.math.virginia.edu/mathclub/'
+  google_cal_id: '6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com'
 
 - cal_number: '3'
   name: Harmonic Analysis and PDEs Seminar
-  webpage: http://pi.math.virginia.edu/diffeq/
-  google_cal_id: "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com"
+  webpage: 'http://pi.math.virginia.edu/diffeq/'
+  google_cal_id: 'lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com'
 
 - cal_number: '4'
   name: Mathematical Physics Seminar
-  webpage: http://pi.math.virginia.edu/mathphys/
-  google_cal_id: "5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com"
+  webpage: 'http://pi.math.virginia.edu/mathphys/'
+  google_cal_id: '5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com'
 
 - cal_number: '5'
   name: Algebra Seminar
-  webpage: http://pi.math.virginia.edu/algebra/
-  google_cal_id: "k613quo3pribde7jrm5e12ft1c@group.calendar.google.com"
+  webpage: 'http://pi.math.virginia.edu/algebra/'
+  google_cal_id: 'k613quo3pribde7jrm5e12ft1c@group.calendar.google.com'
 
 - cal_number: '6'
   name: Colloquium
-  webpage: http://pi.math.virginia.edu/colloq/
-  google_cal_id: "d2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com"
+  webpage: 'http://pi.math.virginia.edu/colloq/'
+  google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
 
 - cal_number: '7'
   name: Probability Seminar
-  webpage: http://faculty.virginia.edu/Probability/
-  google_cal_id: "j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com"
+  webpage: 'http://faculty.virginia.edu/Probability/'
+  google_cal_id: 'j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com'
 
 - cal_number: '8'
   name: Topology Seminar
-  webpage: http://pi.math.virginia.edu/topology/
-  google_cal_id: "f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com"
+  webpage: 'http://pi.math.virginia.edu/topology/'
+  google_cal_id: 'f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com'
