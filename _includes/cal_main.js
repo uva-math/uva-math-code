@@ -1,7 +1,7 @@
 <script>
 // javascript to access all seminar google calendars which puts them onto main page;
 // its modifications can be used for seminar pages
-  var userEmail = [ //do not reorder as seminar links depend on this
+  var userEmail = [ //do not reorder as seminar links depend on this. This also has to match _data/seminars.yml
     "dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com",   //1 - geometry
     "6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com",   //2 - math club
     "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com",   //3 - harmonic seminar
