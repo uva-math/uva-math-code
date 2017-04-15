@@ -4,5 +4,14 @@ layout: main_page
 ---
 
 <div class="container">
-  {% include cal_main.js %}
+  <!-- {% include cal_main.js %} -->
 </div>
+
+<ul>
+      {% for post in site.posts limit:7 %}
+      <li>
+        [<small>{{ post.date | date: "%B %-d, %Y" }}</small>] <b><a href="{{site.url }}{{ post.url }}">{{ post.title }}</a></b>
+        {{ post.excerpt | markdownify }}
+      </li>
+      {% endfor %}
+    </ul>
