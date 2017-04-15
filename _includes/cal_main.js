@@ -18,9 +18,9 @@
   var scopes = 'https://www.googleapis.com/auth/calendar.readonly';
   // google API keys
   var userTimeZone = "New_York"; // Charlottesville is in this timezone so we keep it like this
-  var maxRows = 10;
+  var maxRows = 7;
 
-  var propertySeparator = "__sep__";
+  var propSep = "__sep__";
 
   var eventsArray = [];
   var calsArray = [];
@@ -81,27 +81,33 @@
   function makeApiCall(callback) {
     var executeOnce = 0;
     var today = new Date();
-    today.setDate(today.getDate());
+    var request = [];
+    today.setDate(today.getDate() - 1);
     gapi.client.load('calendar', 'v3', function () {
       for(var cal_i = 0; cal_i < userEmail.length; cal_i++ )
       {
-        var request = gapi.client.calendar.events.list({
+        request[cal_i] = gapi.client.calendar.events.list({
           'calendarId' : userEmail[cal_i],
           'timeZone' : userTimeZone,
           'singleEvents': true,
           'timeMin': today.toISOString(),
           'maxResults': maxRows,
           'orderBy': 'startTime'});
-        request.execute(function (resp)
+      }
+      for(var cal_j = 0; cal_j < userEmail.length; cal_j++ )
+      {
+        request[cal_j].execute(function (resp)
         {
-          calsArray.push('a');
+          calsArray.push('');
           for (var i = 0; i < resp.items.length; i++) {
             var item = resp.items[i];
             var allDay = item.start.date? true : false;
             var startDT = allDay ? item.start.date : item.start.dateTime;
-            eventsArray.push(startDT + propertySeparator + item.summary);
+
+            eventsArray.push(startDT + propSep + calsArray.length + propSep + item.summary);
             // formatted google calendar events are put into array as strings
-            }
+
+          }
           if(calsArray.length == userEmail.length && !executeOnce)
           {
             eventsArray.sort();
@@ -110,8 +116,8 @@
             {
               //this is where the events' representation happens
               el = eventsArray[j];
-              appendPre(el.split(propertySeparator)[0]);
-              appendPre(el.split(propertySeparator)[1]);
+              // appendPre(el.split(propSep)[0]);
+              appendPre(el);
             }
             executeOnce = 1;
           };
