@@ -1,22 +1,23 @@
 <script>
 var apiKey = 'AIzaSyA7Uka7Cbx7SPTWqDn52Nw9XPAe1kdQZxs';
 var userEmail = [
+  "dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com",
+  "6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com",
   "starrie@virginia.edu",
   "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com",
   "5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com",
   "k613quo3pribde7jrm5e12ft1c@group.calendar.google.com",
   "d2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com",
   "j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com",
-  "dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com",
-  "6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com",
   "f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com",
   "pce8r0mnja2do20vkku2gslamk@group.calendar.google.com"
 ]; //your calendar Ids
+var clientId = '924411057957-0d9mrr6c8uvgsbdq1v1he5ha0je1om3d.apps.googleusercontent.com';
 var userTimeZone = "New_York"; //example "Rome" "Los_Angeles" ecc...
 var maxRows = 10; //events to shown
+var scopes = 'https://www.googleapis.com/auth/calendar.readonly';
 
 
-var scopes = 'https://www.googleapis.com/auth/calendar';
 
 //--------------------- Add a 0 to numbers
 function padNum(num) {
@@ -29,12 +30,8 @@ function padNum(num) {
 
 //--------------------- From 24h to Am/Pm
 function AmPm(num) {
-    if (num <= 12) { return num; }
-    return padNum(num - 12);
-}
-function AmPm1(num) {
-    if (num <= 12) { return " am"; }
-    return " pm";
+    if (num <= 12) { return "am " + num; }
+    return "pm " + padNum(num - 12);
 }
 //--------------------- end
 
@@ -76,7 +73,7 @@ function handleClientLoad() {
 
 //--------------------- check Auth
 function checkAuth() {
-    gapi.auth.authorize({scope: scopes, immediate: true}, handleAuthResult);
+    gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
 }
 //--------------------- end
 
@@ -88,16 +85,24 @@ function handleAuthResult(authResult) {
 }
 //--------------------- end
 
+function appendPre(message) {
+  var pre = document.getElementById('content');
+  var textContent = document.createTextNode(message + '\n');
+  pre.appendChild(textContent);
+}
+
 //--------------------- API CALL itself
+
 function makeApiCall() {
     var today = new Date(); //today date
-    today.setDate(today.getDate() - 1); //today date minus one day
+    var bigArray = [];
+    today.setDate(today.getDate() - 100); //today date minus 60 days
     gapi.client.load('calendar', 'v3', function () {
         var request = gapi.client.calendar.events.list({
-            'calendarId' : userEmail[4],
+            'calendarId' : userEmail[8],
             'timeZone' : userTimeZone,
             'singleEvents': true,
-            'timeMin': today.toISOString(),  //collecting events from today minus one day
+            'timeMin': today.toISOString(),
             'maxResults': maxRows,
             'orderBy': 'startTime'});
     request.execute(function (resp) {
@@ -107,44 +112,35 @@ function makeApiCall() {
                 var classes = [];
                 var allDay = item.start.date? true : false;
                 var startDT = allDay ? item.start.date : item.start.dateTime;
-                var dateTime = startDT.split("T"); //split date from time
-                var date = dateTime[0].split("-"); //split yyyy mm dd
-                var startYear = date[0];
-                var startMonth = monthString(date[1]);
-                var startDay = date[2];
-                var startDateISO = new Date(startMonth + " " + startDay + ", " + startYear + " 00:00:00");
-                var startDayWeek = dayString(startDateISO.getDay());
-
-                if( allDay == true){ //change this to match your needs
-                  var str = [
-                  '<b><a href="', item.htmlLink, '">',
-                  startDayWeek, ' ',
-                  startMonth, ' ',
-                  startDay, ', ',
-                  startYear, '</a></b> - ', item.summary, ' in <b>', item.location, '</b><br><br>'
-                  ];
-                }
-                else{
-                    var time = dateTime[1].split(":"); //split hh ss etc...
-                    var AmPmInd = AmPm1(time[0])
-                    var startHour = AmPm(time[0]);
-                    var startMin = time[1];
-                    var str = [ //change this to match your needs
-                        '<b><a href="', item.htmlLink, '">',
-                        startDayWeek, ' ',
-                        startMonth, ' ',
-                        startDay, ', ',
-                        startYear, ' @ ',
-                        startHour, ':', startMin, AmPmInd, '</a></b> - ', item.summary, ' in <b>', item.location, '</b><br><br>'
-                        ];
-                }
-
-                li.innerHTML = str.join('');
-                li.setAttribute('class', classes.join(' '));
-                document.getElementById('events').appendChild(li);
-
+                // var dateTime = startDT.split("T"); //split date from time
+                // var date = dateTime[0].split("-"); //split yyyy mm dd
+                // var startYear = date[0];
+                // var startMonth = monthString(date[1]);
+                // var startDay = date[2];
+                // var startDateISO = new Date(startMonth + " " + startDay + ", " + startYear + " 00:00:00");
+                // var startDayWeek = dayString(startDateISO.getDay());
+                // if( allDay == true){ //change this to match your needs
+                //   var str = [
+                //   '<b><a href="', item.htmlLink, '">',
+                //   startDayWeek, ' ',
+                //   startMonth, ' ',
+                //   startDay, ', ',
+                //   startYear, '</a></b> - ', item.summary, ' in <b>', item.location, '</b><br><br>'
+                //   ];
+                // }
+                // else{
+                    // var time = dateTime[1].split(":"); //split hh ss etc...
+                    // var startHour = AmPm(time[0]);
+                    // var startMin = time[1];
+                    var str = startDT + ' ' + item.summary;
+                // }
+                bigArray.push(str);
             }
-        document.getElementById('calendar').innerHTML = calName;
+            bigArray.sort();
+            for(var j = 0; j < bigArray.length; j++)
+            {
+              appendPre(bigArray[j]);
+            }
         });
     });
 }
@@ -153,6 +149,4 @@ function makeApiCall() {
 
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
-<div id='content'>
-  <ul id='events'></ul>
-</div>
+<pre id="content"></pre>
