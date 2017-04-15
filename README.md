@@ -1,6 +1,6 @@
 # Mathematics at the University of Virginia
 
-Official website of Department of Mathematics at the University of Virginia (under construction)
+Official website of Department of Mathematics at the University of Virginia (under construction: see the old website [here](http://www.math.virginia.edu/))
 
 ## Notes on progress and ToDos
 
