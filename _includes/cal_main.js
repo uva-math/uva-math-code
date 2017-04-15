@@ -86,25 +86,29 @@
     gapi.client.load('calendar', 'v3', function () {
       for(var cal_i = 0; cal_i < userEmail.length; cal_i++ )
       {
-        request[cal_i] = gapi.client.calendar.events.list({
+        request[cal_i] =
+        [
+          gapi.client.calendar.events.list({
           'calendarId' : userEmail[cal_i],
           'timeZone' : userTimeZone,
           'singleEvents': true,
           'timeMin': today.toISOString(),
           'maxResults': maxRows,
-          'orderBy': 'startTime'});
+          'orderBy': 'startTime'}),
+          cal_i
+        ];
       }
-      for(var cal_j = 0; cal_j < userEmail.length; cal_j++ )
+      for(let cal_j = 0; cal_j < userEmail.length; cal_j++ )
       {
-        request[cal_j].execute(function (resp)
+        request[cal_j][0].execute(function (resp)
         {
-          calsArray.push('');
+          calsArray.push(cal_j);
           for (var i = 0; i < resp.items.length; i++) {
             var item = resp.items[i];
             var allDay = item.start.date? true : false;
             var startDT = allDay ? item.start.date : item.start.dateTime;
 
-            eventsArray.push(startDT + propSep + calsArray.length + propSep + item.summary);
+            eventsArray.push(startDT + propSep + cal_j + propSep + item.summary);
             // formatted google calendar events are put into array as strings
 
           }
