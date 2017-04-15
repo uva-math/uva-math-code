@@ -3,14 +3,14 @@
   var userEmail = [
     "dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com",
     "6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com",
-    "starrie@virginia.edu",
     "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com",
     "5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com",
     "k613quo3pribde7jrm5e12ft1c@group.calendar.google.com",
     "d2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com",
     "j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com",
     "f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com",
-    "pce8r0mnja2do20vkku2gslamk@group.calendar.google.com"
+    "pce8r0mnja2do20vkku2gslamk@group.calendar.google.com",
+    "starrie@virginia.edu"
   ]; //your calendar Ids
   var clientId = '924411057957-0d9mrr6c8uvgsbdq1v1he5ha0je1om3d.apps.googleusercontent.com';
   var userTimeZone = "New_York"; //example "Rome" "Los_Angeles" ecc...
@@ -94,6 +94,7 @@
   //--------------------- API CALL itself
 
   function makeApiCall(callback) {
+    var executeOnce = 0;
     var today = new Date();
     today.setDate(today.getDate());
     gapi.client.load('calendar', 'v3', function () {
@@ -112,12 +113,21 @@
             var allDay = item.start.date? true : false;
             var startDT = allDay ? item.start.date : item.start.dateTime;
             eventsArray.push(startDT + ' ' + item.summary);
-            appendPre(startDT + ' ' + item.summary);
+            // appendPre(startDT + ' ' + item.summary);
+            }
+            if(eventsArray.length == 19 && !executeOnce)
+            {
+              eventsArray.sort();
+              for (var j = 0; j < eventsArray.length; j++)
+              {
+                appendPre(j + '  ' + eventsArray[j]);
+              }
+              executeOnce = 1;
           };
         });
       };
     });
-    console.log(eventsArray.length);
+
   }
 </script>
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
