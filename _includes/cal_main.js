@@ -14,10 +14,10 @@ var userEmail = [
 ]; //your calendar Ids
 var clientId = '924411057957-0d9mrr6c8uvgsbdq1v1he5ha0je1om3d.apps.googleusercontent.com';
 var userTimeZone = "New_York"; //example "Rome" "Los_Angeles" ecc...
-var maxRows = 10; //events to shown
+var maxRows = 3; //events to shown
 var scopes = 'https://www.googleapis.com/auth/calendar.readonly';
 
-
+var eventsArray = [];
 
 //--------------------- Add a 0 to numbers
 function padNum(num) {
@@ -93,57 +93,33 @@ function appendPre(message) {
 
 //--------------------- API CALL itself
 
-function makeApiCall() {
-    var today = new Date(); //today date
-    var bigArray = [];
-    today.setDate(today.getDate() - 100); //today date minus 60 days
-    gapi.client.load('calendar', 'v3', function () {
-        var request = gapi.client.calendar.events.list({
-            'calendarId' : userEmail[8],
-            'timeZone' : userTimeZone,
-            'singleEvents': true,
-            'timeMin': today.toISOString(),
-            'maxResults': maxRows,
-            'orderBy': 'startTime'});
-    request.execute(function (resp) {
-            for (var i = 0; i < resp.items.length; i++) {
-                var li = document.createElement('li');
-                var item = resp.items[i];
-                var classes = [];
-                var allDay = item.start.date? true : false;
-                var startDT = allDay ? item.start.date : item.start.dateTime;
-                // var dateTime = startDT.split("T"); //split date from time
-                // var date = dateTime[0].split("-"); //split yyyy mm dd
-                // var startYear = date[0];
-                // var startMonth = monthString(date[1]);
-                // var startDay = date[2];
-                // var startDateISO = new Date(startMonth + " " + startDay + ", " + startYear + " 00:00:00");
-                // var startDayWeek = dayString(startDateISO.getDay());
-                // if( allDay == true){ //change this to match your needs
-                //   var str = [
-                //   '<b><a href="', item.htmlLink, '">',
-                //   startDayWeek, ' ',
-                //   startMonth, ' ',
-                //   startDay, ', ',
-                //   startYear, '</a></b> - ', item.summary, ' in <b>', item.location, '</b><br><br>'
-                //   ];
-                // }
-                // else{
-                    // var time = dateTime[1].split(":"); //split hh ss etc...
-                    // var startHour = AmPm(time[0]);
-                    // var startMin = time[1];
-                    var str = startDT + ' ' + item.summary;
-                // }
-                bigArray.push(str);
-            }
-            bigArray.sort();
-            for(var j = 0; j < bigArray.length; j++)
-            {
-              appendPre(bigArray[j]);
-            }
-        });
-    });
+function makeApiCall(callback) {
+  var today = new Date();
+  today.setDate(today.getDate());
+  gapi.client.load('calendar', 'v3', function () {
+    for(var cal_i = 0; cal_i < userEmail.length; cal_i++ )
+    {
+      var request = gapi.client.calendar.events.list({
+        'calendarId' : userEmail[cal_i],
+        'timeZone' : userTimeZone,
+        'singleEvents': true,
+        'timeMin': today.toISOString(),
+        'maxResults': maxRows,
+        'orderBy': 'startTime'});
+      request.execute(function (resp) {
+        for (var i = 0; i < resp.items.length; i++) {
+          var item = resp.items[i];
+          var allDay = item.start.date? true : false;
+          var startDT = allDay ? item.start.date : item.start.dateTime;
+          eventsArray.push(startDT + ' ' + item.summary);
+          appendPre(startDT + ' ' + item.summary);
+        };
+      });
+    };
+  });
+  console.log(eventsArray.length);
 }
+
 //--------------------- end
 </script>
 
