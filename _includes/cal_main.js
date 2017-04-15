@@ -147,34 +147,32 @@
             var startDayWeek = dayString(startDateISO.getDay());
             if( allDay == true)
             {
-              var str = startDT +
+              var strBegin = startDT +
                 propSep +
-                getSeminar (cal_j) + ' ' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +
-                startYear + ' - <b>' +
-                item.summary + '</b>' + ' ' +
-                getLocation(item.location);
+                startYear;
             }
             else
             {
               var time = dateTime[1].split(":"); //split hh ss etc...
               var startHour = AmPm(time[0]);
               var startMin = time[1];
-              var str = startDT +
+              var strBegin = startDT +
                 propSep +
-                getSeminar (cal_j) + ' ' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +
                 startYear + ' @ ' +
                 startHour + ':' +
                 startMin + ' ' +
-                AmPm1(time[0]) + ' - <b>' +
-                item.summary + '</b>' + ' ' +
-                getLocation(item.location);
+                AmPm1(time[0]);
             }
+            var str = strBegin + ' ' +
+            getSeminar(cal_j) + ' - <b>' +
+            item.summary + '</b> ' + getLocation(item.location);
+            ;
             // formatted google calendar events are packed into array of strings here
             eventsArray.push(str);
 
