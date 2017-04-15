@@ -1,5 +1,36 @@
+<script>
+  var isDetailsSupported = (function(doc) {
+  	var el = doc.createElement('details');
+  	var fake;
+  	var root;
+  	var diff;
+  	if (!('open' in el)) {
+  		return false;
+  	}
+  	root = doc.body || (function() {
+  		var de = doc.documentElement;
+  		fake = true;
+  		return de.insertBefore(doc.createElement('body'), de.firstElementChild || de.firstChild);
+  	}());
+  	el.innerHTML = '<summary>a</summary>b';
+  	el.style.display = 'block';
+  	root.appendChild(el);
+  	diff = el.offsetHeight;
+  	el.open = true;
+  	diff = diff != el.offsetHeight;
+  	root.removeChild(el);
+  	if (fake) {
+  		root.parentNode.removeChild(root);
+  	}
+  	return diff;
+  }(document));
+  if (!isDetailsSupported) {
+		document.documentElement.className += ' no-details';
+	}
+</script>
+
 <style>
-  /*details, summary { display: block; border: 1px solid #666; padding: 1em; }*/
+  details, summary { display: block; }
   /* Apply a pointer cursor and style the background upon hover to indicate <summary> is a clickable element. */
   /* These styles can be applied regardless of whether the fallback is needed */
   summary { cursor: pointer; }
