@@ -21,12 +21,38 @@
   var scopes = 'https://www.googleapis.com/auth/calendar.readonly';
   // google API keys
   var userTimeZone = "New_York"; // Charlottesville is in this timezone so we keep it like this
-  var maxRows = 10;
+  var maxRows = 7;
 
   var propSep = "__sep__";
 
   var eventsArray = [];
   var calsArray = [];
+
+//various seminar things
+  function getSeminar(num)
+  {
+    if(num == 1) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "1" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
+    if(num == 2) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "2" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
+    if(num == 3) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "3" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
+    if(num == 4) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "4" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
+    if(num == 5) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "5" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
+    if(num == 6) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "6" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
+    if(num == 7) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "7" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
+    if(num == 8) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "8" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
+    if(num == 9) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "9" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
+    if(num == 10) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "10" %}<a href="{{sem.webpage}}">[{{sem.name}}]</a>{% endif %}{% endfor %}'; }
+    return '';
+  }
+  function getLocation(loc)
+  {
+    if (loc)
+    {
+      return 'in ' + loc;
+    }
+    return '';
+  }
+
+// ------------
 
   function padNum(num) {
       if (num <= 9) {
@@ -35,8 +61,12 @@
       return num;
   }
   function AmPm(num) {
-      if (num <= 12) { return "am " + num; }
-      return "pm " + padNum(num - 12);
+      if (num <= 12) { return num; }
+      return padNum(num - 12);
+  }
+  function AmPm1(num) {
+      if (num < 12) { return "am"; }
+      return "pm";
   }
   function monthString(num) {
            if (num === "01") { return "Jan"; }
@@ -73,12 +103,6 @@
           makeApiCall();
       }
   }
-  function appendPre(message) {
-    //prints in a bare way
-    var pre = document.getElementById('content');
-    var textContent = document.createTextNode(message + '\n');
-    pre.appendChild(textContent);
-  }
 
   //--------------------- main function makes API calls and displays results
   function makeApiCall(callback) {
@@ -108,25 +132,66 @@
         request[cal_j][0].execute(function (resp)
         {
           calsArray.push(cal_j);
-          for (var i = 0; i < resp.items.length; i++) {
+          for (var i = 0; i < resp.items.length; i++)
+          {
+            // formatted google calendar events are packed into array of strings here
             var item = resp.items[i];
             var allDay = item.start.date? true : false;
             var startDT = allDay ? item.start.date : item.start.dateTime;
-
-            eventsArray.push(startDT + propSep + cal_j + propSep + item.summary);
+            var dateTime = startDT.split("T"); //split date from time
+            var date = dateTime[0].split("-"); //split yyyy mm dd
+            var startYear = date[0];
+            var startMonth = monthString(date[1]);
+            var startDay = date[2];
+            var startDateISO = new Date(startMonth + " " + startDay + ", " + startYear + " 00:00:00");
+            var startDayWeek = dayString(startDateISO.getDay());
+            if( allDay == true)
+            {
+              var str = startDT +
+                propSep +
+                getSeminar (cal_j) + ' ' +
+                startDayWeek + ' ' +
+                startMonth + ' ' +
+                startDay + ', ' +
+                startYear + ' - <b>' +
+                item.summary + '</b>' + ' ' +
+                getLocation(item.location);
+            }
+            else
+            {
+              var time = dateTime[1].split(":"); //split hh ss etc...
+              var startHour = AmPm(time[0]);
+              var startMin = time[1];
+              var str = startDT +
+                propSep +
+                getSeminar (cal_j) + ' ' +
+                startDayWeek + ' ' +
+                startMonth + ' ' +
+                startDay + ', ' +
+                startYear + ' @ ' +
+                startHour + ':' +
+                startMin + ' ' +
+                AmPm1(time[0]) + ' - <b>' +
+                item.summary + '</b>' + ' ' +
+                getLocation(item.location);
+            }
             // formatted google calendar events are packed into array of strings here
+            eventsArray.push(str);
+
 
           }
           if(calsArray.length == userEmail.length && !executeOnce)
           {
             eventsArray.sort();
             // the array is sorted after all calendars are processes
-            for (var j = 0; j < eventsArray.length; j++)
+            var eventsToDisplay = eventsArray.length > 8 ? 8 : eventsArray.length;
+            for (var j = 0; j < eventsToDisplay; j++)
             {
               //this is where the events' representation happens
-              el = eventsArray[j];
-              // appendPre(el.split(propSep)[0]);
-              appendPre(el);
+              var li = document.createElement('li');
+              var elem = (eventsArray[j]+'').split(propSep)[1];
+              li.innerHTML = elem;
+              document.getElementById('events').appendChild(li);
             }
             executeOnce = 1;
           };
@@ -137,4 +202,6 @@
 </script>
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
-<pre id="content"></pre>
+<div id='content'>
+  <ul id='events'></ul>
+</div>
