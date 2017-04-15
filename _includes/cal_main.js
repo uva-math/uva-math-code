@@ -21,7 +21,8 @@
   var scopes = 'https://www.googleapis.com/auth/calendar.readonly';
   // google API keys
   var userTimeZone = "New_York"; // Charlottesville is in this timezone so we keep it like this
-  var maxRows = 7;
+  var maxSeminars = 10; //This is the number of seminars to display
+  var maxRows = 7; //This is the number of events to pull from each of the calendars
 
   var propSep = "__sep__";
 
@@ -194,7 +195,7 @@
           {
             eventsArray.sort();
             // the array is sorted after all calendars are processes
-            var eventsToDisplay = eventsArray.length > 8 ? 8 : eventsArray.length;
+            var eventsToDisplay = eventsArray.length > maxSeminars ? maxSeminars : eventsArray.length;
             for (var j = 0; j < eventsToDisplay; j++)
             {
               //this is where the events' representation happens
