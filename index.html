@@ -21,7 +21,7 @@ navbar_weight: 1
       <div class="jumbotron">
         <h1>{{ post.title }}</h1>
         {% if post.image != null %}
-          <img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%">
+          <img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%" alt="{{post.image_alt}}">
         {% endif %}
         {{ post.excerpt | markdownify }}
         <p><a class="btn btn-secondary" href="{{site.url }}{{ post.url }}" role="button">View details &raquo;</a></p>
@@ -35,7 +35,7 @@ navbar_weight: 1
           <div class="col-12 col-lg-6 my-bordered">
             <h3>{{ post.title }}</h3>
             {% if post.image != null %}
-              <img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:240px;height:auto;width:auto;">
+              <img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:240px;height:auto;width:auto;" alt="{{post.image_alt}}">
             {% endif %}
             {{ post.excerpt | markdownify }}
             <p><a class="btn btn-secondary" href="{{site.url }}{{ post.url }}" role="button">View details &raquo;</a></p>
@@ -64,6 +64,7 @@ navbar_weight: 1
 
     </div><!--/span-->
   </div><!--/row-->
+</div>
 
 <!-- <ul>
   {% for post in site.posts limit:7 %}
