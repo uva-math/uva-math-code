@@ -11,10 +11,10 @@ body {
 }
 
 a:focus, a:hover {
-  color: #eb5f0c;
+  color: #F1F1EF;
   text-decoration: underline;
 }
 
-.small-vertical-divider{
-    margin: 0.5cm 0cm 0cm 0cm;
-  }
+.my-bordered{
+  border-left: 1px solid #c2c2c2;
+}
