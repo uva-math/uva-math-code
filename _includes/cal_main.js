@@ -22,7 +22,7 @@
   var scopes = 'https://www.googleapis.com/auth/calendar.readonly';
   // google API keys
   var userTimeZone = "New_York"; // Charlottesville is in this timezone so we keep it like this
-  var maxSeminars = 8; //This is the number of seminars to display
+  var maxSeminars = 10; //This is the number of seminars to display
   var maxRows = 7; //This is the number of events to pull from each of the calendars
 
   var propSep = "__sep__";
