@@ -55,6 +55,14 @@ a:hover.list-group-item.active {
   border-color: #002F6C;
 }
 
+#q		{
+  width:120px;
+  -webkit-transition:width 0.3s ease-in-out;
+}
+#q:focus	{
+  width:324px;
+  -webkit-transition:width 0.5s ease-in-out;
+}
 
 
 
