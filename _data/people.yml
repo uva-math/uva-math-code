@@ -1,5 +1,17 @@
 # list of all people at Department of Mathematics, UVA
 
+# here is an empty template:
+
+# - name:
+#   lastname:
+#   general_position:
+#   position:
+#   office:
+#   phone:
+#   email:
+#   image:
+#   personal_page:
+
 - name: Leonid
   lastname: Petrov
   general_position: faculty
@@ -29,3 +41,23 @@
   email: raj3e@virginia.edu
   image:
   personal_page:
+
+- name: Craig
+  lastname: Huneke
+  general_position: faculty
+  position: Marvin Rosenblum Professor & Chair
+  office: 231 Kerchof Hall
+  phone: 434-924-4919
+  email: math-chair@virginia.edu
+  image: img/people/craighuneke.jpg
+  personal_page: http://faculty.virginia.edu/huneke/
+
+- name: Christian
+  lastname: Gromoll
+  general_position: faculty
+  position: Associate Professor
+  office: 204 Kerchof Hall
+  phone: 434-924-4923
+  email: gromoll@virginia.edu
+  image: img/people/christiangromoll.jpg
+  personal_page: http://faculty.virginia.edu/gromoll/
