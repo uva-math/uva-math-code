@@ -13,4 +13,14 @@ Official website of Department of Mathematics at the University of Virginia (und
 - Need to figure out navbar conventions, too
 - RSS feed? (it should be easy)
 
+## UVA web guidelines ToDo
+
+- fonts - when the website goes live at virginia.edu domain we can put
+  ```
+  <script src="//use.typekit.net/tgy5tlj.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  ```
+  into the header to use branded fonts
+-
+
 ## Conventions and adding content
