@@ -11,7 +11,8 @@ Official website of Department of Mathematics at the University of Virginia (und
 - Pages which are the most static will be just coded as html's with layouts. Hopefully there will not be many of them, and we'll need to assign some responsibility for updating those..
 - There will be several layouts: main page (with special navbar?), posts page, and other pages with usual navbar; and the layouts will differ by the presence of the right-pane links!
 - Need to figure out navbar conventions, too
-- RSS feed? (it should be easy)
+- RSS feed for department news? (it should be easy)
+- Maybe think about optimizing for small screens (so that on very small screen you first get 5 talks and then the rest?
 
 ## UVA web guidelines ToDo
 
