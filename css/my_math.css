@@ -1,5 +1,33 @@
+@font-face {
+    font-family: 'franklingothic-book';
+    src: url('fonts/franklingothic-book-webfont.woff2') format('woff2'),
+         url('fonts/franklingothic-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'franklingothic-bookit';
+    src: url('fonts/franklingothic-bookit-webfont.woff2') format('woff2'),
+         url('fonts/franklingothic-bookit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'franklingothic-demi';
+    src: url('fonts/franklingothic-demi-webfont.woff2') format('woff2'),
+         url('fonts/franklingothic-demi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'franklingothic-demiit';
+    src: url('fonts/franklingothic-demiit-webfont.woff2') format('woff2'),
+         url('fonts/franklingothic-demiit-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
-  font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
@@ -8,7 +36,36 @@ body {
     /*font-size: 14px;*/
     margin:0px;
     padding:0px;
+    font-family: "franklingothic-book", Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
+
+.jumbotron {
+background-color:#F1F1EF !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: franklingothic-demi;
+  line-height: 1.1;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+/*@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;*/
+
 
 a:focus, a:hover {
   color: #e57200;
@@ -16,5 +73,5 @@ a:focus, a:hover {
 }
 
 .my-bordered{
-  border-left: 1px dotted #F1F1EF;
+  border-left: 1px solid #DADADA;
 }

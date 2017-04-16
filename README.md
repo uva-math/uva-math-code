@@ -27,4 +27,6 @@ Official website of Department of Mathematics at the University of Virginia (und
 listed below." - this suggests the design of the navbar. But it also seems that they would like to have 3 elements: top brand, name of the department, and then, only then, the navbar. Ok.
 - There is also information on how to make footer and which contact info must go there, ok.
 
+Found this nice website for customizing bootstrap variables: [http://bootstrap-live-customizer.com/](http://bootstrap-live-customizer.com/)
+
 ## Conventions and adding content
