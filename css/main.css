@@ -24,9 +24,37 @@ a:focus, a:hover {
   background-color: #002F6C !important;
 }
 
-a.bg-inverse:focus, a.bg-inverse:hover {
-  background-color: #101112 !important;
+a.bg-inverse:link, a.bg-inverse:visited {
+  color: white;
 }
+
+a.bg-inverse:focus, a.bg-inverse:hover {
+  background-color: #002F6C !important;
+  color: #e57200;
+  text-decoration: none;
+}
+
+.list-group-item.active {
+  color: white;
+  background-color: #002F6C;
+  border-color: #002F6C;
+}
+
+a.list-group-item.active,
+button.list-group-item.active {
+  color: white;
+  background-color: #002F6C;
+  border-color: #002F6C;
+}
+
+a:focus.list-group-item.active,
+a:hover.list-group-item.active {
+  color: white;
+  color: #e57200;
+  background-color: #002F6C;
+  border-color: #002F6C;
+}
+
 
 
 

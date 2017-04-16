@@ -2,7 +2,15 @@
      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
      </button>
-     <a class="navbar-brand" href="{{site.url}}">UVA Math</a>
+     <div class="navbar-brand" style="padding-top: 0 ;padding-bottom: 0;">
+      <div class="hidden-sm-down"><a href="http://www.virginia.edu">
+        <img src="{{site.url}}/img/brand/uva-horiz.png" style="margin-top:25px; margin-bottom:22px;width:324px"></a>
+      </div>
+      <div class="hidden-md-up"><a href="http://www.virginia.edu">
+        <img src="{{site.url}}/img/brand/uva-horiz.png" style="margin-top:12px; margin-bottom:15px;width:200px"></a>
+      </div>
+      <a href="{{site.url}}" class="bg-inverse" style="font-family: 'franklingothic-demi', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:24px; text-transform: uppercase;">Department of Mathematics</a>
+     </div>
      <div class="collapse navbar-collapse" id="navbarCollapse">
        <ul class="navbar-nav mr-auto">
          {% assign sorted_pages = (site.pages | sort: 'navbar_weight') %}
