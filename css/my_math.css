@@ -16,5 +16,5 @@ a:focus, a:hover {
 }
 
 .my-bordered{
-  border-left: 1px solid #c2c2c2;
+  border-left: 1px dotted #c2c2c2;
 }
