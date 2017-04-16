@@ -40,7 +40,15 @@ body {
 }
 
 .jumbotron {
-background-color:#F1F1EF !important;
+  background-color:#F1F1EF;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.jumbotron h2,
+.jumbotron .h2 {
+  color: inherit;
+  font-family: "franklingothic-demiit", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -55,7 +63,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: franklingothic-demi;
+  font-family: "franklingothic-demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.1;
   color: inherit;
   text-transform: uppercase;
