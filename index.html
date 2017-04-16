@@ -36,7 +36,7 @@ navbar_weight: 1
             {% if post.image != null %}
               <img src="{{ post.image | replace: '__SITE_URL__', site.url }}" alt="{{ post.image-alt }}" title="{{ post.image-alt }}" style="max-width:70%;max-height:240px;height:auto;width:auto;margin: 0cm 0cm 0.3cm 0cm;">
             {% endif %}
-            <h4>{{ post.title }}</h4>
+            <h3>{{ post.title }}</h3>
             {{ post.excerpt | markdownify }}
             <p><a class="btn btn-secondary" href="{{site.url }}{{ post.url }}" role="button">View details &raquo;</a></p>
           </div><!--/span-->
@@ -57,7 +57,7 @@ navbar_weight: 1
       </div>
       <br>
 
-      <h4>Upcoming events (<a href="{{site.url}}/events/">all</a>)</h4>
+      <h3>Upcoming events (<a href="{{site.url}}/events/">all</a>)</h3>
       <div style="font-size:15px; margin: 0.5cm 0cm 0cm 0cm;" class="container">
         {% include cal_main.js %}
       </div>

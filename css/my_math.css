@@ -46,10 +46,30 @@ body {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
-.jumbotron h2,
-.jumbotron .h2 {
-  color: inherit;
-  font-family: "franklingothic-demiit", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+h1,
+.h1 {
+  font-size: 36px;
+}
+h2,
+.h2 {
+  font-size: 30px;
+}
+h3,
+.h3 {
+  font-size: 22px;
+}
+h4,
+.h4 {
+  font-size: 22px;
+}
+h5,
+.h5 {
+  font-size: 18px;
+}
+h6,
+.h6 {
+  font-size: 18px;
 }
 
 h1,
@@ -65,6 +85,38 @@ h6,
 .h5,
 .h6 {
   font-family: "franklingothic-demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+h2,
+.h2
+{
+  font-family: "franklingothic-demiit", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /*font-style: italic;*/
+  line-height: 1.1;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+h4,
+.h4
+{
+  font-family: 'Unna', serif;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.1;
+  color: inherit;
+  text-transform: uppercase;
+}
+
+h6,
+.h6
+{
+  font-family: 'Unna', serif;
+  font-style: italic;
+  font-weight: bold;
   line-height: 1.1;
   color: inherit;
   text-transform: uppercase;
