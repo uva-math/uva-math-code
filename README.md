@@ -21,6 +21,9 @@ Official website of Department of Mathematics at the University of Virginia (und
   <script>try{Typekit.load();}catch(e){}</script>
   ```
   into the header to use branded fonts
--
+- "Font Styles and Hierarchy: There are no rigid rules around combining typefaces to establish a page hierarchy. The composition of fonts should be varied in scale, style and vertical spacing. This will make the page feel bold and energetic yet readable"; but there is no CSS for this, just the descriptions. Maybe this can be done, too
+- "Brand Bar: The Brand Bar is a common element across all University sites. Details about the Brand Bar are
+listed below." - this suggests the design of the navbar. But it also seems that they would like to have 3 elements: top brand, name of the department, and then, only then, the navbar. Ok.
+- There is also information on how to make footer and which contact info must go there, ok.
 
 ## Conventions and adding content
