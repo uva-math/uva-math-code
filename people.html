@@ -1,0 +1,26 @@
+---
+title: People
+layout: default
+---
+
+<h1>List of people (proof of concept, populated from <a href="https://github.com/uva-math/uva-math.github.io/blob/master/_data/people.yml">here</a>)</h1>
+
+{% assign sorted_people = (site.data.people | sort: 'lastname') %}
+
+{% for ppl in sorted_people %}
+  {% if ppl.image != null %}
+    <img src="{{site.url}}/{{ ppl.image }}" width=80>
+  {% endif %}
+
+  {{ ppl.name }} {{ ppl.lastname }}
+
+  {% if ppl.email != null %}
+    <a href="mailto:{{ ppl.email }}">{{ ppl.email }}</a>
+  {% endif %}
+
+  {% if ppl.personal_page != nul %}
+    <a href="{{ ppl.personal_page }}">{{ ppl.personal_page }}</a>
+  {% endif %}
+
+  <br>
+{% endfor %}

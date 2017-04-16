@@ -1,6 +1,7 @@
 # list of all people at Department of Mathematics, UVA
 
-- name: Leonid Petrov
+- name: Leonid
+  lastname: Petrov
   general_position: faculty
   position: Assistant Professor
   office: 209 Kerchof Hall
@@ -9,16 +10,18 @@
   image: img/people/leonidpetrov.jpg
   personal_page: http://faculty.virginia.edu/petrov/
 
-- name: Jennifer Morse
+- name: Jennifer
+  lastname: Morse
   general_position: faculty
   position: Professor
   office: 219 Kerchof Hall
   phone: 434-243-8778
   email: jlm6cj@virginia.edu
-  image: 
+  image:
   personal_page:
 
-- name: Raven James
+- name: Raven
+  lastname: James
   general_position: staff
   position: Temp, Administrative and HR Assistant
   office: 218 Kerchof Hall
