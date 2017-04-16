@@ -127,6 +127,9 @@ h6,
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;*/
 
+a:link, a:visited {
+  color: #2A69A6;
+}
 
 a:focus, a:hover {
   color: #e57200;
