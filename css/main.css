@@ -1,3 +1,41 @@
+html {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+    padding-top: 20px;
+    /*font-size: 14px;*/
+    margin:0px;
+    padding:0px;
+    font-family: "franklingothic-book", Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+a:link, a:visited {
+  color: #2A69A6;
+}
+
+a:focus, a:hover {
+  color: #e57200;
+  text-decoration: underline;
+}
+
+.bg-inverse {
+  background-color: #002F6C !important;
+}
+
+a.bg-inverse:focus, a.bg-inverse:hover {
+  background-color: #101112 !important;
+}
+
+
+
+/*BOOTSTRAP FONT DEFAULTS
+@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;*/
+
 @font-face {
     font-family: 'franklingothic-book';
     src: url('fonts/franklingothic-book-webfont.woff2') format('woff2'),
@@ -25,19 +63,6 @@
          url('fonts/franklingothic-demiit-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-html {
-  -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
-}
-body {
-    padding-top: 20px;
-    /*font-size: 14px;*/
-    margin:0px;
-    padding:0px;
-    font-family: "franklingothic-book", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 500;
 }
 
 .jumbotron {
@@ -122,20 +147,6 @@ h6,
   text-transform: uppercase;
 }
 
-/*@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
-@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;*/
-
-a:link, a:visited {
-  color: #2A69A6;
-}
-
-a:focus, a:hover {
-  color: #e57200;
-  text-decoration: underline;
-}
-
-.my-bordered{
+.my-bordered-news-snippets{
   border-left: 1px solid #DADADA;
 }
