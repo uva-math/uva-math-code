@@ -31,9 +31,20 @@
          {% endif %}
          {% endfor %}
        </ul>
-       <!-- <form class="form-inline mt-2 mt-md-0">
-         <input class="form-control mr-sm-2" type="text" placeholder="Search">
-         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-       </form> -->
+
+       <form class="form-inline mt-2 mt-md-0" id="search_form" name="q">
+         <input class="form-control mr-sm-2" type="text" id="q" placeholder="UVA Search">
+         <button class="bg-inverse my-2 my-sm-0" style="border:none;" type="submit" value=""><img src="{{site.url}}/img/brand/search.png"></button>
+       </form>
+
      </div>
    </nav>
+
+<!-- simple search script calling the UVA search -->
+   <script>
+     document.getElementById("search_form").onsubmit = searchFunction;
+     function searchFunction() {
+        var link_s = document.getElementById('q').value;
+        window.open("http://www.virginia.edu/search/site/" + link_s);
+     }
+   </script>
