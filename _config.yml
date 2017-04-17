@@ -10,4 +10,4 @@ excerpt_separator: <!--more-->  # you can specify your own separator, of course.
 
 paginate: 10
 paginate_path: "blog/page:num"
-permalink: pretty
+permalink: /:year/:month/:day/:title/
