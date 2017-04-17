@@ -1,7 +1,32 @@
+<nav class="navbar navbar-toggleable-sm mb-4 navbar-light" style="background-color:rgba(0, 0, 0, 0.15);">
+  <div class="container">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <ul class="navbar-nav mr-auto">
+    {% assign sorted_pages = (site.pages | sort: 'navbar_weight') %}
+    {% for p in sorted_pages%}
+    {% if p.url == page.url and p.navbar_id != null %}
+    <li class="nav-item active">
+      <a class="nav-link" href="{{site.url}}{{p.url}}">{{ p.navbar_id }}<span class="sr-only">(current)</span></a>
+    </li>
+    {% elsif p.navbar_id != null %}
+    <li class="nav-item">
+      <a class="nav-link" href="{{site.url}}{{p.url}}">{{ p.navbar_id }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+  </div>
+</nav>
+
+<!--
 <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse mb-4">
-     <!-- <button class="navbar-toggler navbar-toggler-right" style="padding:8px" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+     <button class="navbar-toggler navbar-toggler-right" style="padding:8px" type="button" data-toggle="collapse" data-target="#navbarCollapse_1" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
-     </button> -->
+     </button>
      <div class="container">
      <div class="navbar-brand" style="padding-top: 0 ;padding-bottom: 0;">
       <a href="http://www.virginia.edu" class="hidden-sm-down">
@@ -11,28 +36,10 @@
       <a href="http://www.virginia.edu/search/site/" class="hidden-md-up hidden-xs-down navbar-toggler-right">
         <img src="{{site.url}}/img/brand/search.png" style="width:20px;margin: 14px 0px 12px 0px" alt="Search">
       </a>
-
-      <!-- <div style="margin-bottom:10px;"  class="hidden-sm-down">
-        <a href="{{site.url}}" class="bg-inverse" style="font-family: 'franklingothic-demi', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:24px; text-transform: uppercase;">Department of Mathematics</a>
-      </div>
-      <div class="hidden-md-up">
-        <a href="{{site.url}}" class="bg-inverse" style="font-family: 'franklingothic-demi', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:20px; text-transform: uppercase;">Department of Mathematics</a>
-      </div> -->
      </div>
-     <div class="collapse navbar-collapse" id="navbarCollapse">
+     <div class="collapse navbar-collapse" id="navbarCollapse_1">
        <div class="navbar-nav mr-auto">
-         <!-- {% assign sorted_pages = (site.pages | sort: 'navbar_weight') %}
-         {% for p in sorted_pages%}
-         {% if p.url == page.url and p.navbar_id != null %}
-         <li class="nav-item active">
-           <a class="nav-link" href="{{site.url}}{{p.url}}">{{ p.navbar_id }}<span class="sr-only">(current)</span></a>
-         </li>
-         {% elsif p.navbar_id != null %}
-         <li class="nav-item">
-           <a class="nav-link" href="{{site.url}}{{p.url}}">{{ p.navbar_id }}</a>
-         </li>
-         {% endif %}
-         {% endfor %} -->
+
        </div>
        <form class="form-inline mt-2 mt-md-0 hidden-sm-down" id="search_form" name="q">
          <input class="form-control input-lg mr-sm-2" type="text" id="q" id="searchForm" placeholder="UVA Search">
@@ -40,14 +47,4 @@
        </form>
      </div>
      </div>
-   </nav>
-
-
-<!-- simple search script calling the UVA search -->
-   <script>
-     document.getElementById("search_form").onsubmit = searchFunction;
-     function searchFunction() {
-        var link_s = document.getElementById('q').value;
-        window.open("http://www.virginia.edu/search/site/" + link_s);
-     }
-   </script>
+   </nav> -->

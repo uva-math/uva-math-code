@@ -12,13 +12,18 @@
 {% include navbar.html %}
 
 <div class="container">
-  <h1>post layout. {{page.title}}</h1>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-10">
+      <h2>post layout. {{page.title}}</h2>
 
-  {% if page.image != null %}
-    <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;">
-  {% endif %}
+      {% if page.image != null %}
+        <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;">
+      {% endif %}
 
-  {{ content }}
+      {{ content }}
+		</div>
+	</div>
 </div>
 
 {% include footer.html %}
