@@ -6,6 +6,14 @@ Official website of Department of Mathematics at the University of Virginia (und
 
 # April 17, 2017
 
+## Minor things
+
+1. The bold font does not seem to be very visible with the free version of UVA fonts used. This should be checked against the UVA fonts
+2. Gray navbar - should the active links have full height?
+
+
+## Plans wrt old webpage
+
 The main webpage layout is mostly done. There are other areas to focus on,
 such as the "people" page, seminars, UG/Grad infomation pages (very important!),
 and other things.
