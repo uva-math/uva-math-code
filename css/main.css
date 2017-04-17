@@ -156,12 +156,18 @@ h6,
   text-transform: uppercase;
 }
 
-.dept-logo-large {
+a.dept-logo-large:link, a.dept-logo-large:visited
+{
   font-family: "franklingothic-demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 36px;
-  line-height: 1.1;
-  color: inherit;
+  color: #002F6C;
   text-transform: uppercase;
+}
+
+a.dept-logo-large:focus, a.dept-logo-large:hover
+{
+  color: #e57200;
+  text-decoration: none;
 }
 
 h2,
