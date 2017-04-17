@@ -15,14 +15,16 @@ navbar_weight: 5
   {% endif %}
 
   {{ ppl.name }} {{ ppl.lastname }}
+   -
+  {{ ppl.position }}
+  -
 
   {% if ppl.email != null %}
     <a href="mailto:{{ ppl.email }}">{{ ppl.email }}</a>
   {% endif %}
 
   {% if ppl.personal_page != nul %}
-    <a href="{{ ppl.personal_page }}">{{ ppl.personal_page }}</a>
+    <br>Personal webpage: <a href="{{ ppl.personal_page }}">{{ ppl.personal_page }}</a>
   {% endif %}
-
-  <br>
+  <hr>
 {% endfor %}
