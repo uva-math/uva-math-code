@@ -1,14 +1,17 @@
 <nav class="navbar navbar-toggleable-sm navbar-inverse bg-inverse mb-4">
-     <button class="navbar-toggler navbar-toggler-right" style="padding:8px" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+     <!-- <button class="navbar-toggler navbar-toggler-right" style="padding:8px" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
-     </button>
+     </button> -->
+     <div class="container">
      <div class="navbar-brand" style="padding-top: 0 ;padding-bottom: 0;">
-      <div class="hidden-sm-down"><a href="http://www.virginia.edu">
+      <a href="http://www.virginia.edu" class="hidden-sm-down">
         <img src="{{site.url}}/img/brand/uva-horiz.png" style="margin-top:20px; margin-bottom:22px;width:324px"></a>
-      </div>
-      <div class="hidden-md-up"><a href="http://www.virginia.edu">
+      <a href="http://www.virginia.edu" class="hidden-md-up">
         <img src="{{site.url}}/img/brand/uva-horiz.png" style="margin-top:12px; margin-bottom:15px;width:200px"></a>
-      </div>
+      <a href="http://www.virginia.edu/search/site/" class="hidden-md-up navbar-toggler-right">
+        <img src="{{site.url}}/img/brand/search.png" style="width:20px;margin: 14px 0px 12px 0px" alt="Search">
+      </a>
+
       <!-- <div style="margin-bottom:10px;"  class="hidden-sm-down">
         <a href="{{site.url}}" class="bg-inverse" style="font-family: 'franklingothic-demi', 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:24px; text-transform: uppercase;">Department of Mathematics</a>
       </div>
@@ -31,15 +34,17 @@
          {% endif %}
          {% endfor %} -->
        </div>
-
-       <form class="form-inline mt-2 mt-md-0" id="search_form" name="q">
-         <button class="hidden-md-up bg-inverse my-2 my-sm-0" style="border:none;" type="submit" value=""><img src="{{site.url}}/img/brand/search.png" style="width:30px", alt="Search"></button>
+       <form class="form-inline mt-2 mt-md-0 hidden-sm-down" id="search_form" name="q">
          <input class="form-control input-lg mr-sm-2" type="text" id="q" id="searchForm" placeholder="UVA Search">
-         <button class="hidden-sm-down bg-inverse my-2 my-sm-0" style="border:none;" type="submit" value=""><img src="{{site.url}}/img/brand/search.png" style="width:30px", alt="Search"></button>
+         <button class="bg-inverse my-2 my-sm-0" style="border:none;" type="submit" value=""><img src="{{site.url}}/img/brand/search.png" style="width:30px", alt="Search"></button>
        </form>
-
+     </div>
      </div>
    </nav>
+
+<h1 class="container">
+Department of Mathematics
+</h1>
 
 <!-- simple search script calling the UVA search -->
    <script>
