@@ -12,9 +12,10 @@
 {% include navbar.html %}
 
 <div class="container">
-	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
+<div class="container">
+
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-12 col-md-8">
       <h2>post layout. {{page.title}}</h2>
 
       {% if page.image != null %}
@@ -23,7 +24,16 @@
 
       {{ content }}
 		</div>
-	</div>
+    <div class="col-md-4 sidebar-offcanvas">
+      <div class="list-group h5">
+        <a href="#" class="list-group-item">Support goes here</a>
+        <a href="http://math.virginia.edu" class="list-group-item active">Link</a>
+        <a href="#" class="list-group-item">Link</a>
+        <a href="#" class="list-group-item">Link</a>
+      </div>
+    </div><!--/span-->
+  </div>
+</div>
 </div>
 
 {% include footer.html %}
