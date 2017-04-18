@@ -100,6 +100,10 @@ and the text above will be an excerpt
 The text below will only be displayed on a separate page
 dedicated to this news entry.
 
-## 2. Adding new static pages
+## 3. Adding new static pages
 
 ToDo: static page folder; navigation in front matter; etc
+
+## 4. Adding new static pages
+
+Faculty data and faculty pages; note that this is counted automatically in the "about" page!
