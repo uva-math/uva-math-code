@@ -6,28 +6,30 @@
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <ul class="navbar-nav mr-auto">
-    {% assign sorted_pages = (site.pages | sort: 'navbar_weight') %}
+    {% assign sorted_pages = site.pages | sort: "nav_weight" %}
     {% for p in sorted_pages%}
-    {% if p.url == page.url and p.navbar_id != null %}
-    <li class="nav-item active">
-      <a class="nav-link" href="{{site.url}}{{p.url}}">{{ p.navbar_id }}<span class="sr-only">(current)</span></a>
-    </li>
-    {% elsif p.navbar_id != null %}
-    <li class="nav-item">
-      <a class="nav-link" href="{{site.url}}{{p.url}}">{{ p.navbar_id }}</a>
-    </li>
+    {% if p.nav_id != null and p.nav_nesting != true %}
+      <li class="nav-item {%if p.url == page.url %}active{% endif %}">
+        <a class="nav-link" href="{{site.url}}{{p.url}}">{{ p.nav_id }}{%if p.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
+      </li>
     {% endif %}
-    {% endfor %}
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+    {% if p.nav_id != null and p.nav_nesting == true %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="{{site.url}}{{p.url}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{p.nav_id}}
         </a>
-        <div class="dropdown-menu h5" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+        <div class="dropdown-menu h5">
+          {% for pp in sorted_pages%}
+          {% if pp.nav_id != null and pp.nav_parent == p.nav_id %}
+          <a class="dropdown-item {%if pp.url == page.url %}active{% endif %}" href="{{site.url}}{{pp.url}}">{{pp.nav_id}}{%if pp.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
+          {% endif %}
+          {% endfor %}
         </div>
       </li>
+
+
+    {% endif %}
+    {% endfor %}
     </ul>
   </div>
   </div>
