@@ -13,9 +13,12 @@
 
 <div class="container">
   <div class="container">
-    <div class="row">
+    <div class="row row-offcanvas row-offcanvas-right">
       <div class="col-md-10">
         {{ content }}
+      </div>
+      <div class="col-md-2 sidebar-offcanvas">
+        {% include support_link.html %}
       </div>
     </div>
   </div>
