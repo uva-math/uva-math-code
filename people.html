@@ -26,5 +26,9 @@ navbar_weight: 5
   {% if ppl.personal_page != nul %}
     <br>Personal webpage: <a href="{{ ppl.personal_page }}">{{ ppl.personal_page }}</a>
   {% endif %}
+  <br>
+
+  {{ ppl.information | markdownify }}
+
   <hr>
 {% endfor %}

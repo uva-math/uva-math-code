@@ -2,8 +2,8 @@
 
 # here is an empty template:
 
-# - name:
-#   lastname:
+# - lastname:
+#   name:
 #   UVA_id:
 #   general_position:
 #   position:
@@ -13,9 +13,13 @@
 #   image:
 #   personal_page:
 #   interests:
+#   information: |
+#     * an example of a biblio entry
+#     * can put as many as you want - they are processed by markdown.
+#     * And can put free-form text, too
 
-- name: Leonid
-  lastname: Petrov
+- lastname: Petrov
+  name: Leonid
   UVA_id: lap5r
   general_position: faculty
   position: Assistant Professor
@@ -29,9 +33,12 @@
     - Probability
     - Representation Theory
     - Statistical Mechanics
+  information: |
+    * Asymptotics of Random Lozenge Tilings via Gelfand-Tsetlin Schemes (2012), [arXiv:1202.3901 [math.PR]](http://arxiv.org/abs/1202.3901).
+    * (with Ivan Corwin) Stochastic higher spin vertex models on the line (2015).
 
-- name: Jennifer
-  lastname: Morse
+- lastname: Morse
+  name: Jennifer
   UVA_id: jlm6cj
   general_position: faculty
   position: Professor
@@ -41,9 +48,10 @@
   image:
   personal_page:
   interests:
+  information:
 
-- name: Raven
-  lastname: James
+- lastname: James
+  name: Raven
   UVA_id: raj3e
   general_position: staff
   position: Temp, Administrative and HR Assistant
@@ -53,9 +61,10 @@
   image:
   personal_page:
   interests:
+  information:
 
-- name: Craig
-  lastname: Huneke
+- lastname: Huneke
+  name: Craig
   UVA_id: clh4xd
   general_position: faculty
   position: Marvin Rosenblum Professor & Chair
@@ -66,9 +75,19 @@
   personal_page: http://faculty.virginia.edu/huneke/
   interests:
     - Commutative Algebra
+  information: |
+    Commutative algebra was born out of three classical fields: number theory, algebraic geometry, and invariant theory, but now is used to study many other topics in mathematics. My own focus is the study of solutions of polynomial or power series equations in many variables. I am especially interested in a method called "reduction to characteristic p." Here are a few of my papers:
 
-- name: Christian
-  lastname: Gromoll
+    * The structure of linkage (with B. Ulrich), Annals of Math. 126 (1987), 277-334.
+    * Tight closure, invariant theory, and the Briançon-Skoda theorem (with M. Hochster), J. Amer. Math. Soc. 3 (1990), 31-116.
+    * Infinite integral extensions and big Cohen-Macaulay algebras (with M. Hochster), Annals of Math 135 (1992), 53-89.
+    * Direct methods for primary decomposition (with D. Eisenbud and W. Vasconcelos), Inventiones Math. 110 (1992), 207-236.
+    * Uniform bounds in noetherian rings, Inventiones Math. 107 (1992), 203-223.
+    * Comparison of symbolic and ordinary powers of ideals (with M. Hochster), Invent. Math. 147 (2002), 349-369.
+    * The regularity of Tor and graded Betti numbers (with D. Eisenbud and B. Ulrich), Amer. J. Math. 128 (2006), 573-605
+
+- lastname: Gromoll
+  name: Christian
   UVA_id: hcg3m
   general_position: faculty
   position: Associate Professor
