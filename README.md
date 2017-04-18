@@ -15,7 +15,6 @@ Official website of Department of Mathematics at the University of Virginia (und
 - [ ] http://www.math.virginia.edu/newsletter
 - [ ] http://www.math.virginia.edu/content/final-exercises-ceremony-college-and-graduate-school-arts-and-sciences-0
 - [ ] http://www.math.virginia.edu/content/job-opportunities
-- [ ] http://www.math.virginia.edu/content/virginia-mathematics-lectures
 - [ ] http://www.math.virginia.edu/research
 - [ ] http://www.math.virginia.edu/facultyresearch
 - [ ] http://www.math.virginia.edu/seminarguide
@@ -25,13 +24,6 @@ Official website of Department of Mathematics at the University of Virginia (und
 - [ ] http://www.math.virginia.edu/summer
 - [ ] http://www.math.virginia.edu/courses
 - [ ] http://www.math.virginia.edu/resources
-- [ ] http://www.math.virginia.edu/content/ims
-- [ ] http://www.math.virginia.edu/content/lectures-general-audience
-- [ ] http://www.math.virginia.edu/ims/analysis2015
-- [ ] http://www.math.virginia.edu/content/conferences-and-workshops
-- [ ] http://www.math.virginia.edu/content/past-lectures
-- [ ] http://www.math.virginia.edu/content/publications
-- [ ] http://www.math.virginia.edu/content/contacts
 - [ ] http://www.math.virginia.edu/sites/math.virginia.edu/files/Virginia%20Math%20Bulletin%2C%20June%202016.pdf
 
 

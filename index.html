@@ -1,8 +1,8 @@
 ---
 events: true
 # no layout since it's a main page with special navbar that is not be repeated
-nav_id: Home
-nav_weight: 10
+# nav_id: Home
+# nav_weight: 10
 # nav_nesting: true
 ---
 
@@ -23,9 +23,6 @@ nav_weight: 10
   <div class="container">
     <div class="row row-offcanvas row-offcanvas-right">
       <div class="col-12 col-md-8">
-        <!-- <p class="float-right hidden-md-up">
-          <button type="button" class="btn btn-primary btn-sm" data-toggle="offcanvas">Toggle nav</button>
-        </p> -->
 
         {% assign major_news_counter = 0 %}
         {% for post in site.categories['news'] limit:5 %}

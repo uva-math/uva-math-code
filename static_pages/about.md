@@ -2,8 +2,8 @@
 title: About
 layout: no_right_menu
 permalink: /about/
-# nav_id: Support
-# nav_weight: 20
+nav_id: About
+nav_weight: 0
 # nav_nesting: true
 # nav_parent: Home
 ---
@@ -14,7 +14,7 @@ permalink: /about/
 
 #### The department
 
-<img src="{{site.url}}/img/pillars.jpg" class="float-right">
+<img src="{{site.url}}/img/pillars.jpg" class="clear-right" style="max-width:50%; padding:20px" alt="Pillars">
 
 The Mathematics Department has {% assign counter = 0 %}{% for p in site.departmentpeople %}{% if p.general_position == 'tt_faculty' %}{% assign counter=counter | plus:1 %}{% endif %}{% endfor %}{{ counter }} tenured and tenure-track faculty, {% assign counter = 0 %}{% for p in site.departmentpeople %}{% if p.general_position == postdoc %}{% assign counter=counter | plus:1 %}{% endif %}{% endfor %}{{ counter }} postdoctoral instructors, {% assign counter = 0 %}{% for p in site.departmentpeople %}{% if p.general_position == lecturer %}{% assign counter=counter | plus:1 %}{% endif %}{% endfor %}{{ counter }} lecturers, a variety of visitors, {% assign counter = 0 %}{% for p in site.departmentpeople %}{% if p.general_position == grad_student %}{% assign counter=counter | plus:1 %}{% endif %}{% endfor %}{{ counter }} graduate students, and over 230 undergraduate majors. Courses are taught in a variety of mathematical areas, and research is done in many diverse fields.
 
