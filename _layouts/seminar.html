@@ -16,11 +16,6 @@
 
   <div class="row row-offcanvas row-offcanvas-right">
     <div class="col-12 col-md-8">
-      <h1 class="mb-4">{{page.title}}</h1>
-
-      {% if page.image != null %}
-        <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;">
-      {% endif %}
 
       {{ content }}
 		</div>
@@ -30,7 +25,7 @@
       {% include seminar_right_menu.html %}
       <br>
 
-      {% if page.events %}
+      {% if page.events == true %}
         <h3>{{ site.new_seminars_label }} (<a href="{{site.url}}/seminars/archive-all">archive</a>)</h3>
         <div style="font-size:15px; margin: 0.5cm 0cm 0cm 0cm;" class="container">
           {% include cal_main.js %}

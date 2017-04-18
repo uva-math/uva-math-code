@@ -8,5 +8,6 @@ nav_nesting: true
 events: true
 ---
 
+<!-- do not change! should be identical to /calendar/ -->
 
 {% include seminar_main_page.html %}
