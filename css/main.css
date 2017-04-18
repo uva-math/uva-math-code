@@ -55,6 +55,24 @@ a:hover.list-group-item.active {
   border-color: #002F6C;
 }
 
+.dropdown-menu a {
+  color: #002359;
+}
+
+.dropdown-menu a {
+  color: #002359;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: #002359;
+  background-color: #F1F1EF;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: #002F6C;
+}
+
+
 #q		{
   width:115px;
   -webkit-transition:width 0.3s ease-in-out;
