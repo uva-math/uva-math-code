@@ -4,8 +4,6 @@ Official website of Department of Mathematics at the University of Virginia (und
 
 ## Implementation needed of subpages from old website:
 
-- [ ] http://www.math.virginia.edu/about
-- [ ] http://www.math.virginia.edu/about/history
 - [ ] http://www.math.virginia.edu/directory
 - [ ] http://www.math.virginia.edu/faculty
 - [ ] http://www.math.virginia.edu/gradstudents
