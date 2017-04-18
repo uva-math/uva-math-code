@@ -49,9 +49,13 @@ Official website of Department of Mathematics at the University of Virginia (und
 - RSS feed for department news? (it should be easy)
 - Maybe think about optimizing for small screens (so that on very small screen you first get 5 talks and then the rest?
 
-# Adding content. Conventions and guidelines
+# Conventions and guidelines on adding and modifying content
 
-## 1. Adding news entries (writing posts)
+## 1. How to collaborate on the content of the Math Department website
+
+ToDo: Levels of access; modifying in browser; pull requests; setting up local copy; previewing the website locally
+
+## 2. Adding news entries (writing posts)
 
 The following functionality is supported to display news on the main page. 
 To create a new news/announcement entry,
