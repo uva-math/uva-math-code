@@ -4,7 +4,7 @@ permalink: /seminars/probability/
 nav_parent: Seminars
 events: false
 sem_page: true
-# title: CAN OVERRIDE
+title: Probability seminar
 ---
 
 {% include seminar_page.html

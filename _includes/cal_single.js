@@ -8,7 +8,6 @@
   // google API keys
   var userTimeZone = "New_York"; // Charlottesville is in this timezone so we keep it like this
   var maxSeminars = {{include.max_sem}}; //This is the number of seminars to display
-  var maxRows = {{include.max_from_cal}}; //This is the number of events to pull from each of the calendars
 
   var propSep = "__sep__";
 
@@ -19,7 +18,7 @@
   {
     if (loc)
     {
-      return 'in ' + loc;
+      return 'Location: ' + loc;
     }
     return '';
   }
@@ -27,7 +26,7 @@
   {
     if (abst)
     {
-      var retStr = ['<details><summary>Description</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '">Google Calendar link</a><br>', '</details>'];
+      var retStr = ['<details><summary>Abstract</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '">Google Calendar link</a><br>', '</details><br>'];
       // appendPre(retStr);
       return retStr.join('');
     }
@@ -114,7 +113,7 @@
             'timeMin': ffr.toISOString(),
             'timeMax': tto.toISOString(),
           {%endif%}
-          'maxResults': maxRows,
+          'maxResults': maxSeminars,
           'orderBy': 'startTime'}),
           cal_i
         ];
@@ -142,7 +141,7 @@
             {
               var strBegin = startDT +
                 propSep +
-                '<b><a href="' + item.htmlLink + '">' +
+                '<b><a href="' + item.htmlLink + '" class="h6 mt-6">' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +
@@ -155,7 +154,7 @@
               var startMin = time[1];
               var strBegin = startDT +
                 propSep +
-                '<b><a href="' + item.htmlLink + '">' +
+                '<b><a href="' + item.htmlLink + '" class="h6 mt-6">' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +
@@ -164,8 +163,8 @@
                 startMin + ' ' +
                 AmPm1(time[0]) + '</a></b>';
             }
-            var str = strBegin + '<br><b>' +
-            item.summary + '</b> ' +
+            var str = strBegin + '<h5 class="mt-1">' +
+            item.summary + '</h5>' +
             getLocation(item.location) +
             getAbstract(item.description, item.htmlLink);
             // formatted google calendar events are packed into array of strings here
@@ -180,9 +179,9 @@
             for (var j = 0; j < eventsToDisplay; j++)
             {
               //this is where the events' representation happens
-              var li = document.createElement('div');
+              var li = document.createElement('li');
               var elem = (eventsArray[j]+'').split(propSep)[1];
-              li.innerHTML = elem + '<br>';
+              li.innerHTML = elem;
               document.getElementById('events').appendChild(li);
             }
             executeOnce = 1;
@@ -195,5 +194,5 @@
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
 <div id='content'>
-  <div id='events'></div>
+  <ul id='events'></ul>
 </div>
