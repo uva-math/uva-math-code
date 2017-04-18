@@ -12,6 +12,8 @@ navbar_weight: 5
 {% for ppl in sorted_people %}
   {% if ppl.image != null %}
     <img src="{{site.url}}/{{ ppl.image }}" width=80>
+  {% else %}
+    <i class="fa fa-3x fa-user" style="color:#002F6C" aria-hidden="true"></i>
   {% endif %}
 
   {{ ppl.name }} {{ ppl.lastname }}
