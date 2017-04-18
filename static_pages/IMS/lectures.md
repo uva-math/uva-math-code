@@ -1,7 +1,7 @@
 ---
 title: Virginia Mathematics Lectures
 layout: static_page_no_right_menu
-permalink: /ims/virginia-mathematics-lectures/
+permalink: /ims/lectures/
 nav_id: Virginia Mathematics Lectures
 nav_weight: 2
 # nav_nesting: true
