@@ -2,40 +2,40 @@
 
 Official website of Department of Mathematics at the University of Virginia (under construction: see the current website [here](http://www.math.virginia.edu/)). Below is a working notebook associated with the initial stage of the website project.
 
-## Some of the subpages linked from the old main page
+## Implementation of subpages from old website
 
--  http://www.math.virginia.edu/support
--  http://www.math.virginia.edu/about
--  http://www.math.virginia.edu/about/history
--  http://www.math.virginia.edu/directory
--  http://www.math.virginia.edu/faculty
--  http://www.math.virginia.edu/gradstudents
--  http://www.math.virginia.edu/staff
--  http://www.math.virginia.edu/news
--  http://www.math.virginia.edu/calendar
--  http://www.math.virginia.edu/conferences
--  http://www.math.virginia.edu/awards
--  http://www.math.virginia.edu/newsletter
--  http://www.math.virginia.edu/content/final-exercises-ceremony-college-and-graduate-school-arts-and-sciences-0
--  http://www.math.virginia.edu/content/job-opportunities
--  http://www.math.virginia.edu/content/virginia-mathematics-lectures
--  http://www.math.virginia.edu/research
--  http://www.math.virginia.edu/facultyresearch
--  http://www.math.virginia.edu/seminarguide
--  http://www.math.virginia.edu/academics
--  http://www.math.virginia.edu/graduate
--  http://www.math.virginia.edu/undergraduate
--  http://www.math.virginia.edu/summer
--  http://www.math.virginia.edu/courses
--  http://www.math.virginia.edu/resources
--  http://www.math.virginia.edu/content/ims
--  http://www.math.virginia.edu/content/lectures-general-audience
--  http://www.math.virginia.edu/ims/analysis2015
--  http://www.math.virginia.edu/content/conferences-and-workshops
--  http://www.math.virginia.edu/content/past-lectures
--  http://www.math.virginia.edu/content/publications
--  http://www.math.virginia.edu/content/contacts
--  http://www.math.virginia.edu/sites/math.virginia.edu/files/Virginia%20Math%20Bulletin%2C%20June%202016.pdf
+- [ ] http://www.math.virginia.edu/support
+- [ ] http://www.math.virginia.edu/about
+- [ ] http://www.math.virginia.edu/about/history
+- [x] http://www.math.virginia.edu/directory
+- [ ] http://www.math.virginia.edu/faculty
+- [ ] http://www.math.virginia.edu/gradstudents
+- [ ] http://www.math.virginia.edu/staff
+- [ ] http://www.math.virginia.edu/news
+- [ ] http://www.math.virginia.edu/calendar
+- [ ] http://www.math.virginia.edu/conferences
+- [ ] http://www.math.virginia.edu/awards
+- [ ] http://www.math.virginia.edu/newsletter
+- [ ] http://www.math.virginia.edu/content/final-exercises-ceremony-college-and-graduate-school-arts-and-sciences-0
+- [ ] http://www.math.virginia.edu/content/job-opportunities
+- [ ] http://www.math.virginia.edu/content/virginia-mathematics-lectures
+- [ ] http://www.math.virginia.edu/research
+- [ ] http://www.math.virginia.edu/facultyresearch
+- [ ] http://www.math.virginia.edu/seminarguide
+- [ ] http://www.math.virginia.edu/academics
+- [ ] http://www.math.virginia.edu/graduate
+- [ ] http://www.math.virginia.edu/undergraduate
+- [ ] http://www.math.virginia.edu/summer
+- [ ] http://www.math.virginia.edu/courses
+- [ ] http://www.math.virginia.edu/resources
+- [ ] http://www.math.virginia.edu/content/ims
+- [ ] http://www.math.virginia.edu/content/lectures-general-audience
+- [ ] http://www.math.virginia.edu/ims/analysis2015
+- [ ] http://www.math.virginia.edu/content/conferences-and-workshops
+- [ ] http://www.math.virginia.edu/content/past-lectures
+- [ ] http://www.math.virginia.edu/content/publications
+- [ ] http://www.math.virginia.edu/content/contacts
+- [ ] http://www.math.virginia.edu/sites/math.virginia.edu/files/Virginia%20Math%20Bulletin%2C%20June%202016.pdf
 
 
 ## Notes on progress and ToDos
