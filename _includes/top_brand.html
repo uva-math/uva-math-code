@@ -21,18 +21,6 @@
      </div>
      <div class="collapse navbar-collapse" id="navbarCollapse">
        <div class="navbar-nav mr-auto">
-         <!-- {% assign sorted_pages = (site.pages | sort: 'navbar_weight') %}
-         {% for p in sorted_pages%}
-         {% if p.url == page.url and p.navbar_id != null %}
-         <li class="nav-item active">
-           <a class="nav-link" href="{{site.url}}{{p.url}}">{{ p.navbar_id }}<span class="sr-only">(current)</span></a>
-         </li>
-         {% elsif p.navbar_id != null %}
-         <li class="nav-item">
-           <a class="nav-link" href="{{site.url}}{{p.url}}">{{ p.navbar_id }}</a>
-         </li>
-         {% endif %}
-         {% endfor %} -->
        </div>
        <form class="form-inline mt-2 mt-md-0 hidden-sm-down" id="search_form" name="q">
          <input class="form-control input-lg mr-sm-2" type="text" id="q" placeholder="UVA Search">
