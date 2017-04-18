@@ -4,31 +4,14 @@ permalink: /seminars/algebra/
 nav_parent: Seminars
 events: false
 sem_page: true
+# title: CAN OVERRIDE
 ---
 
-{% assign xx = page.permalink | split: '/' %}
-{% for word in xx %}{% if forloop.last %}{% assign cur_shortname = word %}{%endif%}{% endfor %}
-{% for sem in site.data.seminars %}
-{%if sem.shortname == cur_shortname %}
+{% include seminar_page.html
+  content="This is a sample content which can be added to a seminar page. <b>HTML</b>, *markdown*, $$\displaystyle\int\dfrac{and\ \LaTeX}{math}$$ are allowed"
+  contacts="You can also add extra contact information or anything else here. For example, the `<hr>` below is also added from include.
 
-# University of Virginia {{sem.name}}
+  For even more flexibility simply copy the whole content of `seminar_page.html` and edit it as your own webpage
 
-#### [Old webpage link]({{sem.webpage}})
-
----
-
-Regular time and location: {{sem.regular_times}}
-
-{% if sem.information != null %}
-  {{ sem.information }}
-{% endif %}
-
-
----
-
-Contact: {% for cnt in sem.contact %}{{cnt.name}} ([*{{cnt.email}}*](mailto:{{cnt.email}})){% if forloop.last == false %},{% endif %} {% endfor %}
-
-
-
-{%endif%}
-{% endfor %}
+  <hr>"
+%}

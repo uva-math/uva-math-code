@@ -23,8 +23,9 @@
   var scopes = 'https://www.googleapis.com/auth/calendar.readonly';
   // google API keys
   var userTimeZone = "New_York"; // Charlottesville is in this timezone so we keep it like this
-  var maxSeminars = 8; //This is the number of seminars to display
-  var maxRows = 7; //This is the number of events to pull from each of the calendars
+  var maxSeminars = {{include.max_sem}}; //This is the number of seminars to display
+  var maxRows = {{include.max_from_cal}}; //This is the number of events to pull from each of the calendars
+
 
   var propSep = "__sep__";
 
@@ -120,9 +121,16 @@
   //--------------------- main function makes API calls and displays results
   function makeApiCall(callback) {
     var executeOnce = 0;
-    var today = new Date();
+    {%if include.current %}
+      var today = new Date();
+      console.log(today.toISOString());
+      today.setDate(today.getDate() {%if include.days_back != null%}- {{include.days_back}}{%endif%}); //access current data from some days ago
+    {%else%}
+      var ffr = new Date('{{include.show_from}}'); //access historical data
+      var tto = new Date('{{include.show_to}}');
+    {%endif%}
     var request = [];
-    today.setDate(today.getDate()); //access data from yesterday, and display a fixed number of events
+
     //this part calls the API
     gapi.client.load('calendar', 'v3', function () {
       for(var cal_i = 0; cal_i < userEmail.length; cal_i++ )
@@ -133,7 +141,12 @@
           'calendarId' : userEmail[cal_i],
           'timeZone' : userTimeZone,
           'singleEvents': true,
-          'timeMin': today.toISOString(),
+          {%if include.current %}
+            'timeMin': today.toISOString(),
+          {%else%}
+            'timeMin': ffr.toISOString(),
+            'timeMax': tto.toISOString(),
+          {%endif%}
           'maxResults': maxRows,
           'orderBy': 'startTime'}),
           cal_i
