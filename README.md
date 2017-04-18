@@ -57,7 +57,7 @@ ToDo: Levels of access; modifying in browser; pull requests; setting up local co
 
 ## 2. Adding news/announcements entries
 
-The following functionality is supported to display news on the main page. 
+The following functionality is supported to display news on the main page.
 To create a new news/announcement entry,
 add a file with name `YYYY-MM-DD-title.md`
 to the subfolder `_posts`, having the following preamble:
@@ -65,6 +65,7 @@ to the subfolder `_posts`, having the following preamble:
 	---
 	layout: post
 	comments: false
+	events: false
 	published: true
 	title: YOUR_TITLE
 	date: YYYY-MM-DD HH:MM:SS
@@ -72,12 +73,13 @@ to the subfolder `_posts`, having the following preamble:
 	image: IMAGE_ADDRESS
 	image-alt: IMAGE_ALT_TEXT
 	---
-	
+
 Make sure to put the preamble on top of the file.
 
-### Necessary parameters
+### Main parameters
 
-- The `comments` feature is not implemented yet
+- The `comments` feature is not implemented for now
+-	`events: false` means that there is no list of upcoming events. Change to true in a rare case you want to add the list of upcoming events to a post
 - `published: true` is to publish the entry; replace by `false` to not publish
 - Replace `YOUR_TITLE` with your title
 - The date's HH:MM:SS is the time of publication. It is not displayed anywhere but is used to sort posts from the same day
@@ -96,16 +98,15 @@ Make sure to put the preamble on top of the file.
 ### Main text of an entry
 
 - After the above preamble ending with `---`,
-write the body of the post in markdown. 
-A couple of guides 
+write the body of the post in markdown.
+A couple of guides
 are [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 and [here in pdf](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
-Also the use of the usual HTML is possible, e.g., for entering images and 
-links. 
+Also the use of the usual HTML is possible, e.g., for entering images and
+links.
 
-- News excerpts are supported: enter `<!--more-->`, 
-and the text above will be an excerpt 
-(displayed on the main page and the news page). 
+- News excerpts are supported: enter `<!--more-->`,
+and the text above will be an excerpt
+(displayed on the main page and the news page).
 The text below will only be displayed on a separate page
 dedicated to this news entry.
-

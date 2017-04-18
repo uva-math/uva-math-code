@@ -1,7 +1,8 @@
 ---
 navbar_id: Home
 navbar_weight: 1
-# no layout since it's a main page with special navbar and special right links; will not be repeated
+# no layout since it's a main page with special navbar that is not be repeated
+events: true
 ---
 
 <!DOCTYPE html>
@@ -63,20 +64,16 @@ navbar_weight: 1
 
       <div class="col-10 col-md-4 sidebar-offcanvas" id="sidebar">
 
-      <br class="hidden-md-up">
-        <div class="list-group h5">
-          <a href="#" class="list-group-item">Support goes here maybe</a>
-          <a href="http://math.virginia.edu" class="list-group-item active">Active link</a>
-          <a href="#" class="list-group-item">Link one</a>
-          <a href="#" class="list-group-item">Another Link which is a somewhat long link
-          so needs to be rendered in several lines</a>
-        </div>
+        <br class="hidden-md-up">
+        {% include default_right_menu.html %}
         <br>
 
-        <h3>Upcoming events (<a href="{{site.url}}/events/">all</a>)</h3>
-        <div style="font-size:15px; margin: 0.5cm 0cm 0cm 0cm;" class="container">
-          {% include cal_main.js %}
-        </div>
+        {% if page.events %}
+          <h3>Upcoming events (<a href="{{site.url}}/events/">all</a>)</h3>
+          <div style="font-size:15px; margin: 0.5cm 0cm 0cm 0cm;" class="container">
+            {% include cal_main.js %}
+          </div>
+        {% endif %}
 
       </div><!--/span-->
     </div><!--/row-->
