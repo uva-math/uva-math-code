@@ -109,3 +109,7 @@ and the text above will be an excerpt
 (displayed on the main page and the news page).
 The text below will only be displayed on a separate page
 dedicated to this news entry.
+
+## 2. Adding new static pages
+
+ToDo: static page folder; navigation in front matter; etc
