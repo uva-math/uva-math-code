@@ -1,7 +1,7 @@
 ---
+UVA_id: hcg3m
 lastname: Gromoll
 name: Christian
-UVA_id: hcg3m
 general_position: faculty
 position: Associate Professor
 office: 204 Kerchof Hall

@@ -1,7 +1,7 @@
 ---
+UVA_id: raj3e
 lastname: James
 name: Raven
-UVA_id: raj3e
 general_position: staff
 position: Temp, Administrative and HR Assistant
 office: 218 Kerchof Hall
@@ -10,5 +10,4 @@ email: raj3e@virginia.edu
 image:
 personal_page:
 interests:
-information:
 ---

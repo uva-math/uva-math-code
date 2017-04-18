@@ -1,7 +1,7 @@
 ---
+UVA_id: jlm6cj
 lastname: Morse
 name: Jennifer
-UVA_id: jlm6cj
 general_position: faculty
 position: Professor
 office: 219 Kerchof Hall
@@ -10,5 +10,4 @@ email: jlm6cj@virginia.edu
 image:
 personal_page:
 interests:
-information:
 ---
