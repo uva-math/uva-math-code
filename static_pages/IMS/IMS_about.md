@@ -2,7 +2,7 @@
 title: About IMS
 layout: static_page_no_right_menu
 permalink: /ims/about/
-nav_id: About IMS
+nav_id: 'About IMS'
 nav_weight: 1
 nav_nesting: true
 nav_parent: IMS
