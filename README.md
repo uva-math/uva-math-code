@@ -9,7 +9,6 @@ Official website of Department of Mathematics at the University of Virginia (und
 - [ ] http://www.math.virginia.edu/gradstudents
 - [ ] http://www.math.virginia.edu/staff
 - [ ] http://www.math.virginia.edu/news
-- [ ] http://www.math.virginia.edu/calendar
 - [ ] http://www.math.virginia.edu/conferences
 - [ ] http://www.math.virginia.edu/awards
 - [ ] http://www.math.virginia.edu/newsletter
@@ -17,7 +16,6 @@ Official website of Department of Mathematics at the University of Virginia (und
 - [ ] http://www.math.virginia.edu/content/job-opportunities
 - [ ] http://www.math.virginia.edu/research
 - [ ] http://www.math.virginia.edu/facultyresearch
-- [ ] http://www.math.virginia.edu/seminarguide
 - [ ] http://www.math.virginia.edu/academics
 - [ ] http://www.math.virginia.edu/graduate
 - [ ] http://www.math.virginia.edu/undergraduate
