@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% include header.html %}
+</head>
+
+<body>
+
+{% include top_brand.html %}
+
+{% include navbar.html %}
+
+<div class="container">
+<div class="container">
+
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-12 col-md-8">
+      <h1>{{page.title}}</h1>
+
+      {% if page.image != null %}
+        <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;">
+      {% endif %}
+
+      {{ content }}
+		</div>
+    <div class="col-md-4 sidebar-offcanvas">
+
+      <br class="hidden-md-up">
+      {% include default_right_menu.html %}
+      <br>
+
+      {% if page.events %}
+        <h3>{{ site.new_seminars_label }} (<a href="{{site.url}}/events/">all</a>)</h3>
+        <div style="font-size:15px; margin: 0.5cm 0cm 0cm 0cm;" class="container">
+          {% include cal_main.js %}
+        </div>
+      {% endif %}
+
+    </div><!--/span-->
+  </div>
+</div>
+</div>
+
+{% include footer.html %}
+
+{% include mathjax %}
+
+{% include bootjs %}
+
+</body>
+
+</html>
