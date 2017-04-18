@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% include header.html %}
+</head>
+
+<body>
+
+{% include top_brand.html %}
+
+{% include navbar.html %}
+
+<div class="container">
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-8">
+      <h2>{{page.name}} {{page.lastname}}</h2>
+
+      {% if page.image != null %}
+        <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;">
+      {% endif %}
+
+      {{ content }}
+		</div>
+    <div class="col-md-4">
+
+      <ul>
+          <li>
+            {{page.office}}
+          </li>
+          <li>
+              {{page.email}}
+          </li>
+          <li>
+            etc
+          </li>
+      </ul>
+
+
+
+
+    </div><!--/span-->
+  </div>
+</div>
+</div>
+
+{% include footer.html %}
+
+{% include mathjax %}
+
+{% include bootjs %}
+
+</body>
+
+</html>
