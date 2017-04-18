@@ -6,6 +6,7 @@ permalink: /support/
 # nav_weight: 20
 # nav_nesting: true
 # nav_parent: Home
+support: off
 ---
 
 
