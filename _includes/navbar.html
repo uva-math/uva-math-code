@@ -14,7 +14,7 @@
       </li>
     {% endif %}
     {% if p.nav_id != null and p.nav_nesting == true and p.nav_parent == null %}
-      <li class="nav-item dropdown {% if {{page.nav_parent}} == p.nav_id %}active{% endif %}">
+      <li class="nav-item dropdown {% if {{page.nav_parent}} == p.nav_id or p.url == page.url %}active{% endif %}">
         <a class="nav-link dropdown-toggle" href="{{site.url}}{{p.url}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{p.nav_id}}
         </a>

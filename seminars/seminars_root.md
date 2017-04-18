@@ -8,9 +8,5 @@ nav_nesting: true
 events: true
 ---
 
-{% assign sorted_pages = site.pages | sort: "nav_weight" %}
-{% for p in sorted_pages %}
-{% if p.permalink contains '/seminars/' and p.permalink != '/seminars/' %}
-- ### [{{p.nav_id}}]({{site.url}}{{p.url}})
-{% endif %}
-{% endfor %}
+
+{% include seminar_main_page.html %}

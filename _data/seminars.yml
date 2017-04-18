@@ -4,6 +4,30 @@
 # google_cal_id: 'dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com'
 # in the javascript corresponds to an empty old outdated seminar which is fine; its id is 0 then
 
+- cal_number: '6'
+  name: Colloquium
+  shortname: colloq
+  webpage: 'http://pi.math.virginia.edu/colloq/'
+  google_cal_id: 'j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com'
+  seminar_weight: 1
+  regular_times: Thursdays at 4:00 in Ker 317. Refreshments served at 3:30
+  contact:
+    - name: Malek Abdesselam
+      email: aa4cr@virginia.edu
+    - name: Mikhail Ershov
+      email: ershov@virginia.edu
+
+- cal_number: '5'
+  name: Algebra Seminar
+  shortname: algebra
+  webpage: 'http://pi.math.virginia.edu/algebra/'
+  google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
+  seminar_weight: 2
+  regular_times: Wednesdays and some Fridays, 3:30-4:30pm, Ker 317
+  contact:
+    - name: Ben Webster
+      email: btw4e@virginia.edu
+
 - cal_number: '1'
   name: Geometry Seminar
   shortname: geometry
@@ -13,16 +37,11 @@
   regular_times: Tuesdays at 2:00 in Ker 317
   information: |
     The Geometry Seminar talks usually focus on aspects of low-dimensional topology and geometry, including knot theory and categorification, Floer homology, 3- and 4-dimensional manifolds, and symplectic and contact topology. The lectures are often given by outside speakers, however UVa graduate students and faculty give talks as well.
-
-
-- cal_number: '2'
-  name: Undergraduate Math Club
-  shortname: mathclub
-  webpage: 'http://pi.math.virginia.edu/mathclub/'
-  google_cal_id: 'lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com'
-  seminar_weight: 12
-  regular_times: Mondays at 5:00 in Ker 314 (Math lounge)
-
+  contact:
+    - name: Slava Krushkal
+      email: krushkal@virginia.edu
+    - name: Tom Mark
+      email: tmark@virginia.edu
 
 - cal_number: '3'
   name: Harmonic Analysis and PDEs Seminar
@@ -33,6 +52,15 @@
   regular_times: Mondays at 11:00
   information: |
     Harmonic Analysis and PDEs seminar features a mix of local speakers (graduate students and faculty) and visitors. The ideal topics live on the interface between the two fields; luckily, the interface has been steadily expanding.
+  contact:
+    - name: Yen Do
+      email: yendo@virginia.edu
+    - name: Aseel Farhat
+      email: af7py@virginia.edu
+    - name:  Zoran Grujic
+      email: zg7c@virginia.edu
+    - name: Francesco Di Plinio
+      email: fd4v@virginia.edu
 
 - cal_number: '4'
   name: Mathematical Physics Seminar
@@ -43,24 +71,9 @@
   regular_times: Wednesdays and some Fridays at 2:00 in Ker 326
   information: |
     The Mathematical Physics Seminar features talks on a wide variety of topics such as, for instance, Schrödinger operators, the mathematics of quantum systems, statistical mechanics, the renormalization group and quantum field theory. Lectures typically are of research level and are given by local as well as outside speakers. Graduate students in mathematical physics are encouraged to give presentations at this seminar about their ongoing research. Everyone is welcome to attend.
-
-- cal_number: '5'
-  name: Algebra Seminar
-  shortname: algebra
-  webpage: 'http://pi.math.virginia.edu/algebra/'
-  google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
-  seminar_weight: 2
-  regular_times: Wednesdays and some Fridays, 3:30-4:30pm, Ker 317
-
-
-- cal_number: '6'
-  name: Colloquium
-  shortname: colloq
-  webpage: 'http://pi.math.virginia.edu/colloq/'
-  google_cal_id: 'j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com'
-  seminar_weight: 1
-  regular_times: Thursdays at 4:00 in Ker 317. Refreshments served at 3:30
-
+  contact:
+    - name: John Imbrie
+      email: imbrie@virginia.edu
 
 - cal_number: '7'
   name: Probability Seminar
@@ -71,7 +84,15 @@
   regular_times: Wednesdays at 4:35
   information: |
     The Probability Seminar is the place to see talks on active research topics in probability theory, as well as informal discussions of basic notions of probability.  We typically have invited speakers every 2-3 weeks presenting a wide array of research in probability. Most other weeks are informal discussions led by local participants, often graduate students discussing recently studied topics. The seminar is open to all. Feel free to attend regularly or occasionally. [Please see the online schedule for upcoming talks. You can also let the organizers know if you would like to be on the mailing list.]
-
+  contact:
+    - name: Christian Gromoll
+      email: gromoll@virginia.edu
+    - name: Tai Melcher
+      email: melcher@virginia.edu
+    - name: Leonid Petrov
+      email: petrov@virginia.edu
+    - name: Axel Saenz
+      email: ais6a@virginia.edu
 
 
 - cal_number: '8'
@@ -83,3 +104,19 @@
   regular_times: Thursdays at 2:00 in Ker 326
   information: |
     Topology Seminar talks are on recent developments in algebraic topology—including homotopy theory, ordinary and extraordinary homology and cohomology, cobordism theory, and K-theory—and related subjects like differential topology and homological algebra.
+  contact:
+    - name: Julie Bergner
+      email: jeb2md@virginia.edu
+
+- cal_number: '2'
+  name: Undergraduate Math Club
+  shortname: mathclub
+  webpage: 'http://pi.math.virginia.edu/mathclub/'
+  google_cal_id: 'lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com'
+  seminar_weight: 12
+  regular_times: Mondays at 5:00 in Ker 314 (Math lounge)
+  contact:
+    - name: Sara Maloni
+      email: sm4cw@virginia.edu
+    - name: Leonid Petrov
+      email: petrov@virginia.edu
