@@ -1,23 +1,7 @@
 <script>
 // javascript to access all seminar google calendars which puts them onto main page;
 // its modifications can be used for seminar pages
-  var userEmail = [ //do not reorder as seminar links depend on this. This also has to match _data/seminars.yml
-    "dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com",   //0 - hmm? empty old defunct
-    "6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com",   //1 - geometry
-    "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com",   //2 - math club
-    "5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com",   //3 - harmonic seminar
-    "k613quo3pribde7jrm5e12ft1c@group.calendar.google.com",   //4 - math physics
-    "d2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com",   //5 - algebra
-    "j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com",   //6 - colloquium
-    "f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com",   //7 - probability
-    "pce8r0mnja2do20vkku2gslamk@group.calendar.google.com",   //8 - topology
-    "starrie@virginia.edu",
-		//9 - hmm? seems like the old calendar for many events, and now seems defunct
-    //add new seminar calendars here and modify the function giving the link as well as _data/seminars.yml
-    //do not touch the last seminar (it is empty and it is needed for IE compatibility)
-    "c7vr381laveomub6abc4vh3qos@group.calendar.google.com"
-    // this last one is the empty calendar with no seminar link (also for compatibility with IE)
-  ]; //list of all calendars, new seminar google calendars can be added here
+  var userEmail = ["{{include.google_cal_id}}"];
   var apiKey = 'AIzaSyA7Uka7Cbx7SPTWqDn52Nw9XPAe1kdQZxs';
   var clientId = '924411057957-0d9mrr6c8uvgsbdq1v1he5ha0je1om3d.apps.googleusercontent.com';
   var scopes = 'https://www.googleapis.com/auth/calendar.readonly';
@@ -26,27 +10,11 @@
   var maxSeminars = {{include.max_sem}}; //This is the number of seminars to display
   var maxRows = {{include.max_from_cal}}; //This is the number of events to pull from each of the calendars
 
-
   var propSep = "__sep__";
 
   var eventsArray = [];
   var calsArray = [];
 
-//various seminar things
-  function getSeminar(num)
-  {
-    if(num == 1) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "1" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 2) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "2" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 3) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "3" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 4) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "4" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 5) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "5" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 6) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "6" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 7) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "7" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 8) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "8" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 9) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "9" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 10) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "10" %}<a href="{{sem.webpage}}">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    return '';
-  }
   function getLocation(loc)
   {
     if (loc)
@@ -196,8 +164,7 @@
                 startMin + ' ' +
                 AmPm1(time[0]) + '</a></b>';
             }
-            var str = strBegin + '<br>' +
-            getSeminar(cal_j) + '<br><b>' +
+            var str = strBegin + '<br><b>' +
             item.summary + '</b> ' +
             getLocation(item.location) +
             getAbstract(item.description, item.htmlLink);
