@@ -72,6 +72,8 @@ to the subfolder `_posts`, having the following preamble:
 	image: IMAGE_ADDRESS
 	image-alt: IMAGE_ALT_TEXT
 	---
+	
+Make sure to put the preamble on top of the file.
 
 ### Necessary parameters
 
