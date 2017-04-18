@@ -1,42 +1,90 @@
 # This is used for generating the list of seminars, and for assigning links to seminar pages on the main page
-# Please do not touch the numbering. If want to add a seminar, add in the end (new numbers start with 10 as of Apr 2017)
+# Please do not touch the cal_number, it is needed for javascript displaying recent seminars. If need to reorder, change seminar_weight. If want to add a seminar new cal_number parameters start with 10 as of Apr 2017. Javascript should be modified to display new added seminars if they have a google calendar
 
 - cal_number: '1'
   name: Geometry Seminar
+  shortname: geometry
   webpage: 'http://pi.math.virginia.edu/geometry/'
   google_cal_id: 'dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com'
+  seminar_weight: 3
+  regular_times: Tuesdays at 2:00 in Ker 317
+  information: |
+    The Geometry Seminar talks usually focus on aspects of low-dimensional topology and geometry, including knot theory and categorification, Floer homology, 3- and 4-dimensional manifolds, and symplectic and contact topology. The lectures are often given by outside speakers, however UVa graduate students and faculty give talks as well.
 
 - cal_number: '2'
   name: Undergraduate Math Club
+  shortname: mathclub
   webpage: 'http://pi.math.virginia.edu/mathclub/'
   google_cal_id: '6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com'
+  seminar_weight: 12
+  regular_times: Mondays at 5:00 in Ker 314 (Math lounge)
+  information: |
+    Math club information
+
+
 
 - cal_number: '3'
   name: Harmonic Analysis and PDEs Seminar
+  shortname: diffeq
   webpage: 'http://pi.math.virginia.edu/diffeq/'
   google_cal_id: 'lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com'
+  seminar_weight: 4
+  regular_times: Mondays at 11:00
+  information: |
+    Harmonic Analysis and PDEs seminar features a mix of local speakers (graduate students and faculty) and visitors. The ideal topics live on the interface between the two fields; luckily, the interface has been steadily expanding.
+
+
 
 - cal_number: '4'
   name: Mathematical Physics Seminar
+  shortname: mathphys
   webpage: 'http://pi.math.virginia.edu/mathphys/'
   google_cal_id: '5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com'
+  seminar_weight: 5
+  regular_times: Wednesdays and some Fridays at 2:00 in Ker 326
+  information: |
+    The Mathematical Physics Seminar features talks on a wide variety of topics such as, for instance, Schrödinger operators, the mathematics of quantum systems, statistical mechanics, the renormalization group and quantum field theory. Lectures typically are of research level and are given by local as well as outside speakers. Graduate students in mathematical physics are encouraged to give presentations at this seminar about their ongoing research. Everyone is welcome to attend.
+
+
 
 - cal_number: '5'
   name: Algebra Seminar
+  shortname: algebra
   webpage: 'http://pi.math.virginia.edu/algebra/'
   google_cal_id: 'k613quo3pribde7jrm5e12ft1c@group.calendar.google.com'
+  seminar_weight: 2
+  regular_times: Wednesdays and some Fridays, 3:30-4:30pm, Ker 317
+  information: |
+    Algebra Seminar information
 
 - cal_number: '6'
   name: Colloquium
+  shortname: colloq
   webpage: 'http://pi.math.virginia.edu/colloq/'
   google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
+  seminar_weight: 1
+  regular_times: Thursdays at 4:00 in Ker 317. Refreshments served at 3:30
+  information: |
+    Colloquium information
 
 - cal_number: '7'
   name: Probability Seminar
+  shortname: probability
   webpage: 'http://faculty.virginia.edu/Probability/'
   google_cal_id: 'j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com'
+  seminar_weight: 9
+  regular_times: Wednesdays at 4:35
+  information: |
+    The Probability Seminar is the place to see talks on active research topics in probability theory, as well as informal discussions of basic notions of probability.  We typically have invited speakers every 2-3 weeks presenting a wide array of research in probability. Most other weeks are informal discussions led by local participants, often graduate students discussing recently studied topics. The seminar is open to all. Feel free to attend regularly or occasionally. [Please see the online schedule for upcoming talks. You can also let the organizers know if you would like to be on the mailing list.]
+
+
 
 - cal_number: '8'
   name: Topology Seminar
+  shortname: topology
   webpage: 'http://pi.math.virginia.edu/topology/'
   google_cal_id: 'f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com'
+  seminar_weight: 10
+  regular_times: Thursdays at 2:00 in Ker 326
+  information: |
+    Topology Seminar talks are on recent developments in algebraic topology—including homotopy theory, ordinary and extraordinary homology and cohomology, cobordism theory, and K-theory—and related subjects like differential topology and homological algebra.
