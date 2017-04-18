@@ -18,13 +18,18 @@
     </div>
     <div class="col-md-9">
       <b>Regular time and location: {{sem.regular_times}}</b>
-
       {% if sem.information != null %}<details class="mb-3"><summary>Description</summary>
         {{ sem.information }}
       </details>
       {% endif %}
     </div>
   </div>
+{% else %}
+  <b>Regular time and location: {{sem.regular_times}}</b>
+  {% if sem.information != null %}<details class="mb-3"><summary>Description</summary>
+    {{ sem.information }}
+  </details>
+  {% endif %}
 {% endif %}
 
 {{ include.content }}
