@@ -64,7 +64,7 @@ Make sure to put the preamble on top of the file.
 ### Main parameters
 
 - The `comments` feature is not implemented for now
--	`events: false` means that there is no list of upcoming events. Change to true in a rare case you want to add the list of upcoming events to a post. Not specified `events` means the same as `events: false`
+-	`events: false` means that there is no google calendar list of upcoming seminars/events. Change to true in the rare case you want to add the list of upcoming seminars to a post. Not specified `events` means the same as `events: false`
 - `published: true` is to publish the entry; replace by `false` to not publish
 - Replace `YOUR_TITLE` with your title. It is helpful if the title is relatively short
 - The date's HH:MM:SS is the time of publication. It is not displayed anywhere but is used to sort posts from the same day
