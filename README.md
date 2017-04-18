@@ -49,9 +49,9 @@ Official website of Department of Mathematics at the University of Virginia (und
 - RSS feed for department news? (it should be easy)
 - Maybe think about optimizing for small screens (so that on very small screen you first get 5 talks and then the rest?
 
-## Conventions and adding content
+# Adding content. Conventions and guidelines
 
-### 1. Adding news entries (writing posts)
+## 1. Adding news entries (writing posts)
 
 The following functionality is supported to display news on the main page. 
 To create a new news/announcement entry,
@@ -69,25 +69,25 @@ to the subfolder `_posts`, having the following preamble:
 	image-alt: IMAGE_ALT_TEXT
 	---
 
-#### Necessary parameters
+### Necessary parameters
 
 - The `comments` feature is not implemented yet
 - `published: true` is to publish the entry; replace by `false` to not publish
 - Replace `YOUR_TITLE` with your title
 - The date's HH:MM:SS is the time of publication. It is not displayed anywhere but is used to sort posts from the same day
 
-#### Categories
+### Categories
 
 - In categories, put `news` to display the entry, `major-news` to display the entry in a larger format on the top page (up to one `major-news` entry will be displayed). So `categories: news major-news` will display this entry in a larger format
 
-#### Images
+### Images
 
 - In `image`, put an URL address of an external image or an address of a local image from the `img` subfolder (the image should be put into this subfolder beforehand). If using a local address, prepend it with `__SITE_URL__`, like in `image: __SITE_URL__/img/Routunda.jpg`
 - `image-alt` is the alternate text for the image entered, like in `image-alt: Rotunda`
 - One main image per entry is supported. If needed, other images can be added in the main text using the usual `img` tag, or in a markdown fashion
 - If `image` and `image-alt` are not present then no image will be displayed, this will not cause error
 
-#### Main text of an entry
+### Main text of an entry
 
 - After the above preamble ending with `---`,
 write the body of the post in markdown. 
