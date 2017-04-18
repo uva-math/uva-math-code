@@ -104,6 +104,6 @@ dedicated to this news entry.
 
 ToDo: static page folder; navigation in front matter; etc
 
-## 4. Adding new static pages
+## 4. Faculty pages
 
 Faculty data and faculty pages; note that this is counted automatically in the "about" page!
