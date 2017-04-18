@@ -1,30 +1,9 @@
 # Mathematics at the University of Virginia
 
-Official website of Department of Mathematics at the University of Virginia (under construction: see the current website [here](http://www.math.virginia.edu/))
+Official website of Department of Mathematics at the University of Virginia (under construction: see the current website [here](http://www.math.virginia.edu/)). Below is a working notebook associated with the initial stage of the website project.
 
----
+## Some of the subpages linked from the old main page
 
-# April 17, 2017
-
-## Minor things
-
-1. The bold font does not seem to be very visible with the free version of UVA fonts used. This should be checked against the UVA fonts
-2. Gray navbar - should the active links have full height?
-
-
-## Plans wrt old webpage
-
-The main webpage layout is mostly done. There are other areas to focus on,
-such as the "people" page, seminars, UG/Grad infomation pages (very important!),
-and other things.
-
-We need to also preserve the original naming of links from the old webpage
-for consistency.
-Here is a list of some of the subpages of the old page
-(got via looking at links from the main page):
-
--  http://www.math.virginia.edu/#main-content
--  http://www.math.virginia.edu/
 -  http://www.math.virginia.edu/support
 -  http://www.math.virginia.edu/about
 -  http://www.math.virginia.edu/about/history
@@ -32,7 +11,6 @@ Here is a list of some of the subpages of the old page
 -  http://www.math.virginia.edu/faculty
 -  http://www.math.virginia.edu/gradstudents
 -  http://www.math.virginia.edu/staff
--  http://www.math.virginia.edu/news#536
 -  http://www.math.virginia.edu/news
 -  http://www.math.virginia.edu/calendar
 -  http://www.math.virginia.edu/conferences
@@ -50,7 +28,6 @@ Here is a list of some of the subpages of the old page
 -  http://www.math.virginia.edu/summer
 -  http://www.math.virginia.edu/courses
 -  http://www.math.virginia.edu/resources
--  http://www.math.virginia.edu/
 -  http://www.math.virginia.edu/content/ims
 -  http://www.math.virginia.edu/content/lectures-general-audience
 -  http://www.math.virginia.edu/ims/analysis2015
@@ -58,28 +35,13 @@ Here is a list of some of the subpages of the old page
 -  http://www.math.virginia.edu/content/past-lectures
 -  http://www.math.virginia.edu/content/publications
 -  http://www.math.virginia.edu/content/contacts
--  http://www.math.virginia.edu/news#846
--  http://www.math.virginia.edu/seminarguide
--  http://www.math.virginia.edu/calendar
--  http://www.math.virginia.edu/people/lap5r
--  http://www.math.virginia.edu/people/der
--  http://www.math.virginia.edu/courses#MATH 7310
--  http://www.math.virginia.edu/courses
 -  http://www.math.virginia.edu/sites/math.virginia.edu/files/Virginia%20Math%20Bulletin%2C%20June%202016.pdf
 
-## Some subpages
-
----
-
-# April 16, 2017
-
-Progress so far.
 
 ## Notes on progress and ToDos
 
 - Two main sources of updates - google calendars of seminars, plus in-site posts for news and other things
-- For now I have coded the most difficult part - retrieving data from google calendars
-- The posts feature is straightforward. I will use "categories" everywhere
+- The posts feature is straightforward. "Categories" everywhere
 - The sources of other less frequently updated information will be "seminars" and "people" in \_data and maybe other database-like structures (but not for courses I hope!.. but one can mine courses from Lou's list eventually :))
 - Pages which are the most static will be just coded as html's with layouts. Hopefully there will not be many of them, and we'll need to assign some responsibility for updating those..
 - There will be several layouts: main page (with special navbar?), posts page, and other pages with usual navbar; and the layouts will differ by the presence of the right-pane links!
@@ -87,19 +49,57 @@ Progress so far.
 - RSS feed for department news? (it should be easy)
 - Maybe think about optimizing for small screens (so that on very small screen you first get 5 talks and then the rest?
 
-## UVA web guidelines ToDo
-
-- fonts - when the website goes live at virginia.edu domain we can put
-  ```
-  <script src="//use.typekit.net/tgy5tlj.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
-  ```
-  into the header to use branded fonts
-- "Font Styles and Hierarchy: There are no rigid rules around combining typefaces to establish a page hierarchy. The composition of fonts should be varied in scale, style and vertical spacing. This will make the page feel bold and energetic yet readable"; but there is no CSS for this, just the descriptions. Maybe this can be done, too
-- "Brand Bar: The Brand Bar is a common element across all University sites. Details about the Brand Bar are
-listed below." - this suggests the design of the navbar. But it also seems that they would like to have 3 elements: top brand, name of the department, and then, only then, the navbar. Ok.
-- There is also information on how to make footer and which contact info must go there, ok.
-
-Found this nice website for customizing bootstrap variables: [http://bootstrap-live-customizer.com/](http://bootstrap-live-customizer.com/)
-
 ## Conventions and adding content
+
+### 1. Adding news entries (writing posts)
+
+The following functionality is supported to display news on the main page. 
+To create a new news/announcement entry,
+add a file with name `YYYY-MM-DD-title.md`
+to the subfolder `_posts`, having the following preamble:
+
+	---
+	layout: post
+	comments: false
+	published: true
+	title: YOUR_TITLE
+	date: YYYY-MM-DD HH:MM:SS
+	categories: YOUR_CATEGORIES
+	image: IMAGE_ADDRESS
+	image-alt: IMAGE_ALT_TEXT
+	---
+
+#### Necessary parameters
+
+- The `comments` feature is not implemented yet
+- `published: true` is to publish the entry; replace by `false` to not publish
+- Replace `YOUR_TITLE` with your title
+- The date's HH:MM:SS is the time of publication. It is not displayed anywhere but is used to sort posts from the same day
+
+#### Categories
+
+- In categories, put `news` to display the entry, `major-news` to display the entry in a larger format on the top page (up to one `major-news` entry will be displayed). So `categories: news major-news` will display this entry in a larger format
+
+#### Images
+
+- In `image`, put an URL address of an external image or an address of a local image from the `img` subfolder (the image should be put into this subfolder beforehand). If using a local address, prepend it with `__SITE_URL__`, like in `image: __SITE_URL__/img/Routunda.jpg`
+- `image-alt` is the alternate text for the image entered, like in `image-alt: Rotunda`
+- One main image per entry is supported. If needed, other images can be added in the main text using the usual `img` tag, or in a markdown fashion
+- If `image` and `image-alt` are not present then no image will be displayed, this will not cause error
+
+#### Main text of an entry
+
+- After the above preamble ending with `---`,
+write the body of the post in markdown. 
+A couple of guides 
+are [here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+and [here in pdf](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf).
+Also the use of the usual HTML is possible, e.g., for entering images and 
+links. 
+
+- News excerpts are supported: enter `<!--more-->`, 
+and the text above will be an excerpt 
+(displayed on the main page and the news page). 
+The text below will only be displayed on a separate page
+dedicated to this news entry.
+
