@@ -176,14 +176,26 @@
             eventsArray.sort();
             // the array is sorted after all calendars are processes
             var eventsToDisplay = eventsArray.length > maxSeminars ? maxSeminars : eventsArray.length;
-            for (var j = 0; j < eventsToDisplay; j++)
-            {
-              //this is where the events' representation happens
-              var li = document.createElement('li');
-              var elem = (eventsArray[j]+'').split(propSep)[1];
-              li.innerHTML = elem;
-              document.getElementById('events').appendChild(li);
-            }
+            {%if include.current %}
+              for (var j = 0; j < eventsToDisplay; j++)
+              {
+                //this is where the events' representation happens
+                var li = document.createElement('li');
+                var elem = (eventsArray[j]+'').split(propSep)[1];
+                li.innerHTML = elem;
+                document.getElementById('events').appendChild(li);
+              }
+            {% else %}
+              for (var j = eventsToDisplay - 1; j>=0; j--)
+              {
+                //this is where the events' representation happens
+                var li = document.createElement('li');
+                var elem = (eventsArray[j]+'').split(propSep)[1];
+                li.innerHTML = elem;
+                document.getElementById('events').appendChild(li);
+              }
+            {% endif %}
+
             executeOnce = 1;
           };
         });
@@ -194,5 +206,9 @@
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
 <div id='content'>
-  <ul id='events'></ul>
+  {%if include.current %}
+    <ul id='events'></ul>
+  {% else %}
+    <ol reversed id='events'></ol>
+  {% endif %}
 </div>
