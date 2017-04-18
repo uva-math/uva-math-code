@@ -1,6 +1,6 @@
 ---
 title: About IMS
-layout: no_right_menu
+layout: static_page_no_right_menu
 permalink: /ims/about/
 nav_id: About IMS
 nav_weight: 1

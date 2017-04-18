@@ -1,6 +1,6 @@
 ---
 title: IMS
-layout: no_right_menu
+layout: static_page_no_right_menu
 permalink: /ims/
 nav_id: IMS
 nav_weight: 1000

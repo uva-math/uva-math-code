@@ -1,6 +1,6 @@
 ---
 title: About
-layout: no_right_menu
+layout: static_page_no_right_menu
 permalink: /about/
 nav_id: About
 nav_weight: 0
