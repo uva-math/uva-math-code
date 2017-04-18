@@ -4,6 +4,7 @@
 
 # - name:
 #   lastname:
+#   UVA_id:
 #   general_position:
 #   position:
 #   office:
@@ -11,9 +12,11 @@
 #   email:
 #   image:
 #   personal_page:
+#   interests:
 
 - name: Leonid
   lastname: Petrov
+  UVA_id: lap5r
   general_position: faculty
   position: Assistant Professor
   office: 209 Kerchof Hall
@@ -21,9 +24,15 @@
   email: petrov@virginia.edu
   image: img/people/leonidpetrov.jpg
   personal_page: http://faculty.virginia.edu/petrov/
+  interests:
+    - Mathematical Physics
+    - Probability
+    - Representation Theory
+    - Statistical Mechanics
 
 - name: Jennifer
   lastname: Morse
+  UVA_id: jlm6cj
   general_position: faculty
   position: Professor
   office: 219 Kerchof Hall
@@ -31,9 +40,11 @@
   email: jlm6cj@virginia.edu
   image:
   personal_page:
+  interests:
 
 - name: Raven
   lastname: James
+  UVA_id: raj3e
   general_position: staff
   position: Temp, Administrative and HR Assistant
   office: 218 Kerchof Hall
@@ -41,9 +52,11 @@
   email: raj3e@virginia.edu
   image:
   personal_page:
+  interests:
 
 - name: Craig
   lastname: Huneke
+  UVA_id: clh4xd
   general_position: faculty
   position: Marvin Rosenblum Professor & Chair
   office: 231 Kerchof Hall
@@ -51,9 +64,12 @@
   email: math-chair@virginia.edu
   image: img/people/craighuneke.jpg
   personal_page: http://faculty.virginia.edu/huneke/
+  interests:
+    - Commutative Algebra
 
 - name: Christian
   lastname: Gromoll
+  UVA_id: hcg3m
   general_position: faculty
   position: Associate Professor
   office: 204 Kerchof Hall
@@ -61,3 +77,5 @@
   email: gromoll@virginia.edu
   image: img/people/christiangromoll.jpg
   personal_page: http://faculty.virginia.edu/gromoll/
+  interests:
+    - Probability
