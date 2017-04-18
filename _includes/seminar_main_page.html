@@ -1,11 +1,11 @@
 
 {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %}
 {% for sem in sorted_sem %}
-- ##### [{{sem.name}}]({{sem.webpage}})
+### [{{sem.name}}]({{sem.webpage}})
   **{{ sem.regular_times }}**
 
   {% for cnt in sem.contact %}{{cnt.name}} ([*{{cnt.email}}*](mailto:{{cnt.email}})){% if forloop.last == false %},{% endif %} {% endfor %}
-  {% if sem.information != null %}<details class="mb-4"><summary>Description</summary>
+  {% if sem.information != null %}<details class="mb-3"><summary>Description</summary>
     {{ sem.information }}
   </details>
   {% endif %}
