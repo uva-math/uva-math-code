@@ -18,7 +18,7 @@
   {
     if (loc)
     {
-      return 'Location: ' + loc;
+      return loc;
     }
     return '';
   }
