@@ -2,8 +2,8 @@
 title: Support Us
 layout: no_right_menu
 permalink: /support/
-nav_id: Support
-nav_weight: 20
+# nav_id: Support
+# nav_weight: 20
 # nav_nesting: true
 # nav_parent: Home
 ---

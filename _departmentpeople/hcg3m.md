@@ -2,7 +2,7 @@
 UVA_id: hcg3m
 lastname: Gromoll
 name: Christian
-general_position: faculty
+general_position: tt_faculty
 position: Associate Professor
 office: 204 Kerchof Hall
 phone: 434-924-4923
