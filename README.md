@@ -55,7 +55,7 @@ Official website of Department of Mathematics at the University of Virginia (und
 
 ToDo: Levels of access; modifying in browser; pull requests; setting up local copy; previewing the website locally
 
-## 2. Adding news entries (writing posts)
+## 2. Adding news/announcements entries
 
 The following functionality is supported to display news on the main page. 
 To create a new news/announcement entry,
