@@ -1,0 +1,119 @@
+\documentclass[12pt]{report}
+\usepackage{latexsym,amsfonts,amssymb,amsthm,amsmath}
+
+
+
+
+\setlength{\topmargin}{0in}
+\setlength{\oddsidemargin}{0.52in}
+\setlength{\textwidth}{6in}
+\setlength{\textheight}{8.4in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+
+\newtheorem{remark}{Remark}[section]
+
+\numberwithin{equation}{section}
+\numberwithin{theorem}{section}
+
+\pagestyle{myheadings}
+\newcommand{\dblsp}{\renewcommand{\baselinestretch}{2}\tiny\normalsize}
+\newcommand{\sglsp}{\renewcommand{\baselinestretch}{1}\tiny\normalsize}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+
+\vspace*{1in}
+
+Title of Dissertation
+\\[12mm]
+Full Legal Name
+\\
+Hometown, State
+\\[12mm]
+Previous degree(s), Name of University, Year of Graduation
+\\[22mm]
+A Dissertation presented to the Graduate Faculty
+\\
+of the University of Virginia in Candidacy for the Degree of
+\\
+Doctor of Philosophy
+\\[12mm]
+Department of Mathematics
+\\[8mm]
+University of Virginia
+\\
+Month, Year Degree will be Conferred
+
+\end{center}
+
+\vfill
+
+\begin{flushright}
+\rule{6cm}{.01cm} \\[5mm]
+\rule{6cm}{.01cm} \\[5mm]
+\rule{6cm}{.01cm} \\[5mm]
+\rule{6cm}{.01cm} \\[5mm]
+\end{flushright}
+
+\newpage
+
+\dblsp
+\pagenumbering{roman}
+
+\newpage
+
+
+\tableofcontents \addtocontents{toc}
+{\protect\thispagestyle{myheadings}\markright{}}
+
+
+\newpage
+
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\markright{}
+
+
+\sglsp
+\chapter{FILL IN TITLE}
+\thispagestyle{myheadings}
+
+\dblsp
+\vspace*{-.65cm}
+
+
+
+%INSERT COPY
+
+\sglsp
+\chapter{FILL IN TITLE}
+\thispagestyle{myheadings}
+
+\dblsp
+\vspace*{-.65cm}
+
+%INSERT COPY
+
+%AND SO ON....
+
+\begin{thebibliography}{99}
+
+\protect\thispagestyle{myheadings}\markright{}
+
+\bibitem{}
+Sham, Sam the, %and so on....
+
+\end{thebibliography}
+
+
+
+\end{document}

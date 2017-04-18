@@ -23,7 +23,6 @@ Official website of Department of Mathematics at the University of Virginia (und
 - [ ] http://www.math.virginia.edu/undergraduate
 - [ ] http://www.math.virginia.edu/summer
 - [ ] http://www.math.virginia.edu/courses
-- [ ] http://www.math.virginia.edu/resources
 - [ ] http://www.math.virginia.edu/sites/math.virginia.edu/files/Virginia%20Math%20Bulletin%2C%20June%202016.pdf
 
 
