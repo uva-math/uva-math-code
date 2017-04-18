@@ -12,7 +12,7 @@ nav_weight: 0
 
 # About
 
-#### The department
+## The department
 
 <img src="{{site.url}}/img/pillars.jpg" class="clear-right" style="max-width:50%; padding:20px" alt="Pillars">
 
@@ -26,13 +26,15 @@ The Department has had a significant presence in the American mathematical commu
 
 The Department is housed in Kerchof Hall on the central grounds of the University.
 
-#### The university
+## The university
 
 The University of Virginia was founded in 1819 by Thomas Jefferson, who established the curriculum and designed the buildings which still provide a focus for the University, allowing close contact between the students and faculty, and promoting Jefferson's ideal of an "academical village" for the free exchange of ideas between fields.
 
 Today the University has grown to a community of 20,000 students, including 6,300 graduate and professional students, and nearly 2,000 faculty in ten schools. The College and Graduate School of Arts and Sciences, with undergraduate and graduate programs in 24 departments, defines, as it has from Jefferson's day, the core of the University.
 
 The University is located in Charlottesville near the foothills of the Blue Ridge Mountains. The region is unmatched in the richness of historic sites, museums, and landmarks, and is known for its fine restaurants and local wineries. Charlottesville is 110 miles from Washington, D.C,  70 miles from the state capital, Richmond, and a 20-minute drive from Shenandoah National Park.
+
+---
 
 # History
 
