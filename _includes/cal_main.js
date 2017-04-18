@@ -121,7 +121,7 @@
     var executeOnce = 0;
     var today = new Date();
     var request = [];
-    today.setDate(today.getDate() - 1); //access data from yesterday, and display a fixed number of events
+    today.setDate(today.getDate()); //access data from yesterday, and display a fixed number of events
     //this part calls the API
     gapi.client.load('calendar', 'v3', function () {
       for(var cal_i = 0; cal_i < userEmail.length; cal_i++ )

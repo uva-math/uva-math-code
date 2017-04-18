@@ -79,7 +79,7 @@ Make sure to put the preamble on top of the file.
 ### Main parameters
 
 - The `comments` feature is not implemented for now
--	`events: false` means that there is no list of upcoming events. Change to true in a rare case you want to add the list of upcoming events to a post
+-	`events: false` means that there is no list of upcoming events. Change to true in a rare case you want to add the list of upcoming events to a post. Not specified `events` means the same as `events: false`
 - `published: true` is to publish the entry; replace by `false` to not publish
 - Replace `YOUR_TITLE` with your title
 - The date's HH:MM:SS is the time of publication. It is not displayed anywhere but is used to sort posts from the same day
