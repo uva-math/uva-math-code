@@ -18,7 +18,7 @@
   {
     if (loc)
     {
-      return loc;
+      return loc + '<br>';
     }
     return '';
   }
