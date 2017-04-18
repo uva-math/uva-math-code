@@ -1,3 +1,5 @@
+<!-- template which is included as a page of individual seminar -->
+
 {% assign xx = page.permalink | split: '/' %}
 {% for word in xx %}{% if forloop.last %}{% assign cur_shortname = word %}{%endif%}{% endfor %}
 {% for sem in site.data.seminars %}
