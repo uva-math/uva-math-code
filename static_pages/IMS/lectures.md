@@ -2,7 +2,7 @@
 title: Virginia Mathematics Lectures
 layout: static_page_no_right_menu
 permalink: /ims/lectures/
-nav_id: Virginia Mathematics Lectures
+nav_id: Virginia Mathematics Lectures (2014-)
 nav_weight: 2
 # nav_nesting: true
 nav_parent: IMS
@@ -168,7 +168,7 @@ We shall discuss these matters, and explain how they are part of the theory of a
 
 *Abstract:* Ramanujan graphs are optimal expanders. Their explicit construction is based on deep results of Deligne and Drinfeld in the theory of automorphic forms of $$GL(2)$$. The work of Lafforgue for $$GL(d)$$ enables the developments of high-dimensional objects: the Ramanujan complexes. These simplical complexes/hyper graphs enjoy some remarkable properties, being random-like but at the same time very symmetric. We will show how this helps to solve some problems in computer science (e.g., error-correcting codes) and in geometry.
 
-#### Lecture 3: Coboundry Expanders and Property Testing
+#### Lecture 3: Coboundary Expanders and Property Testing
 
 *Abstract:* Another direction of generalizing expanders from graphs to simplical complexes was proposed independently by Linial-Meshulam (in the context of developing Erodos-type theory of random simplical complexes) and by Gromov (when studying overlapping properties). We explain this notion and show a surprising connection with "property testing" which is a subject of fundamental importance, in theory and practice, in computer science.
 
