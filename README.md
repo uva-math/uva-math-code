@@ -2,7 +2,7 @@
 
 Official website of Department of Mathematics at the University of Virginia (under construction: see the current website [here](http://www.math.virginia.edu/)). Below is a working notebook associated with the initial stage of the website project.
 
-## Implementation of subpages from old website
+## Implementation needed of subpages from old website:
 
 - [ ] http://www.math.virginia.edu/about
 - [ ] http://www.math.virginia.edu/about/history
