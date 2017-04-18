@@ -1,4 +1,4 @@
-<!-- template which is included as a page of individual seminar -->
+<!-- template which is used to build archive pages of an individual seminar. if using google calendar, this has to be included manually because it is not clear how to pass variables in -->
 
 {% assign xx = page.permalink | split: '/' %}
 {% for word in xx %}{% if forloop.last %}{% assign cur_shortname = word %}{%endif%}{% endfor %}
@@ -37,12 +37,6 @@
 <h2 class="mt-4 mb-3">Upcoming talks</h2>
 
 {% include cal_single.js google_cal_id = sem.google_cal_id current="true" max_sem=8 %}
-
-{% if include.archives %}
-  <h3 class="mb-3">Archives</h3>
-
-  {{include.archives}}
-{%endif%}
 
 ---
 

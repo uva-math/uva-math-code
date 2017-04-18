@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 
-{% if page.sem_page == true%}
+{% if page.sem_page == true and page.sem_archive == false %}
   {% assign xx = page.permalink | split: '/' %}
   {% for word in xx %}{% if forloop.last %}{% assign cur_shortname = word %}{%endif%}{% endfor %}
   {% for sem in site.data.seminars %}
