@@ -6,7 +6,7 @@ permalink: /seminarguide/
 # nav_weight: 15
 # nav_nesting: true
 nav_parent: Seminars
-events: true
+events: false
 ---
 
 <!-- do not change! should be identical to /calendar/ -->
