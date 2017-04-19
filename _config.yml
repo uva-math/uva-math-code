@@ -25,3 +25,5 @@ collections:
   departmentpeople:
     output: true
     permalink: /people/:name
+
+exclude: [vendor]
