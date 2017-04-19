@@ -100,4 +100,6 @@ ToDo: static page folder; navigation in front matter; etc
 
 ## 4. Faculty pages
 
-Faculty data and faculty pages; note that this is counted automatically in the "about" page!
+Faculty data and faculty pages; note that this is counted automatically in the "about" page (and counters can be added anywhere)
+
+## 4. Seminar pages
