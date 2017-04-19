@@ -1,5 +1,5 @@
 import pandas as pd
-url = './fac.html'
+url = './grad.html'
 
 for i, df in enumerate(pd.read_html(url)):
-    df.to_csv('myfile_%s.csv' % i)
+    df.to_csv('b-myfile_%s.csv' % i)
