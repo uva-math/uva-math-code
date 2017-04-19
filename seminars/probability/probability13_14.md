@@ -1,7 +1,7 @@
 ---
-title: Algebra Seminar 2015-16
+title: Probability Seminar 2013-14
 layout: seminar
-permalink: /seminars/algebra/2015-16/
+permalink: /seminars/probability/2013-14/
 events: false
 sem_page: true
 sem_archive: true
@@ -28,8 +28,9 @@ sem_archive: true
 {% endif %}
 
 {% include cal_single.js google_cal_id = sem.google_cal_id current=false max_sem=100
-show_from='1 July 2015'
-show_to='1 July 2016' %}
+show_from='1 July 2013'
+show_to='1 July 2014' %}
+
 
 ---
 

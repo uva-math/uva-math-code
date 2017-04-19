@@ -21,9 +21,11 @@
 		</div>
     <div class="col-md-4 sidebar-offcanvas">
 
+      {% if page.right_panel != false %}
       <br class="hidden-md-up">
       {% include seminar_right_menu.html %}
       <br>
+      {%endif%}
 
       {% if page.events == true %}
         <h3>{{ site.new_seminars_label }}</h3>

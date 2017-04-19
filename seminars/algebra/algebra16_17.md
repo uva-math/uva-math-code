@@ -24,6 +24,7 @@ sem_archive: true
     <div class="col-md-3">
       <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" />
     </div>
+  </div>
 {% endif %}
 
 {% include cal_single.js google_cal_id = sem.google_cal_id current=false max_sem=100

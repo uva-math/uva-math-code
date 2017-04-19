@@ -1,0 +1,38 @@
+body 
+{
+    font-family: Arial,sans-serif;
+	color: #000000;
+	line-height: 1.166;	
+	margin: 0px;
+	padding: 10px;
+	background: #fefaa2 fixed;
+}
+
+body a:visited
+{
+    color: #cc0000;
+}
+
+.Banner table {
+    background-color: #99ccff;
+    width: 100%;
+    border:  10px outset gray;
+    border-spacing: 1px;
+}
+
+.Banner td, th {
+    padding: 4px;
+    border: none;
+    
+}
+
+table {
+    width: 98%;
+    border: 8px outset gray;
+    border-spacing: 2px;
+} 
+
+td, th {
+    padding: 4px;
+    border: 1px solid black;
+}

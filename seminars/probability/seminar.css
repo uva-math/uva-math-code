@@ -1,0 +1,278 @@
+body {
+        margin-bottom: 0px; 
+        margin-top: 0px; 
+        margin-right: 0px; 
+        margin-left: 0px; 
+        background-color: #FFFFFF;
+}
+
+ul, li, td, th, span, div {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        color: #000000; 
+        }
+td, th {
+        vertical-align: top;
+}
+
+sps {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 20pt;
+        color: #DA7707;
+        font-weight: normal;}
+
+sps1 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        color: #000000; 
+        font-weight: bold;}
+
+.toptd {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        color: #000000;
+        vertical-align: middle}
+
+A:link {color: #003366; text-decoration: none;}
+A:visited {color: #003366;text-decoration: none;}
+A:active {color: #003366;text-decoration: none;}
+A:hover { text-decoration: underline;}
+
+A.botnav:link {color:#FFFFFF; text-decoration: none;}
+A.botnav:visited { color:#FFFFFF; text-decoration: none;}
+A.botnav:active { color:#FFFFFF; text-decoration: none;}
+A.botnav:hover { color:#FFFFFF; text-decoration: underline;}
+
+A.rednav:link {color:#DA7707; text-decoration: none;}
+A.rednav:visited { color:#DA7707; text-decoration: none;}
+A.rednav:active { color:#DA7707; text-decoration: none;}
+A.rednav:hover { color:#DA7707; text-decoration: underline;}
+
+A.navtext:link {color:#000000; text-decoration: none;}
+A.navtext:visited { color:#000000; text-decoration: none;}
+A.navtext:active { color:#999999; text-decoration: none;}
+A.navtext:hover { color:#999999; text-decoration: none;}
+
+A.navtext_on:link {color:#990000; text-decoration: none;}
+A.navtext_on:visited { color:#990000; text-decoration: none;}
+A.navtext_on:active { color:#999999; text-decoration: none;}
+A.navtext_on:hover { color:#999999; text-decoration: none;}
+
+.gray {
+        color: #999999;}
+
+.botnav {
+        color: #FFFFFF;
+        text-decoration: none;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+        font-weight: bold;}
+.rednav {
+        color: #DA7707;
+        text-decoration: none;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+        font-weight: bold;}
+.bluenav {
+        color: #003366;
+        text-decoration: none;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 8pt;}
+.lastmod {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+        font-weight: normal;
+        color: #000000;}
+
+.searchtext {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+        color: #000000;}
+
+.searchtext2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+        color: #FFFFFF;}
+        
+.bottext {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+        color: #FFFFFF;}
+
+.redtext {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+        color: #DA7707;}
+
+.bodytext {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        color: #000000;}
+
+.headline {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 12pt;
+        color: #000000;
+        font-weight: bold;}
+        
+h1 {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 16pt;
+        color: #DA7707;
+        font-weight: normal;
+        padding-top: 18px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;}
+        
+.formtext {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 8pt;
+        font-weight: normal;
+        color: #000000;
+        letter-spacing: normal;}        
+
+.navtext {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        color: #000000;}
+        
+.navtext_on {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10pt;
+        color: #990000;}                
+
+
+
+.bg5
+{
+   
+    BACKGROUND-COLOR: #990000;
+}
+.bg6
+{
+    BACKGROUND-COLOR: #efefef
+}
+
+.rightColumnEmph1
+{
+    FONT-WEIGHT: bold;
+    COLOR: #990000
+}
+.redText
+{
+    COLOR: #DA7707
+}
+.title
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 110%;
+    COLOR: #990000
+}
+A.title:link
+{
+    COLOR: #990000;
+    TEXT-DECORATION: none
+}
+A.title:visited
+{
+    COLOR: #990000;
+    TEXT-DECORATION: none
+}
+A.title:active
+{
+    COLOR: #990000;
+    TEXT-DECORATION: underline
+}
+A.title:hover
+{
+    COLOR: #990000;
+    TEXT-DECORATION: underline
+}
+.highlight
+{
+         font-weight: normal;
+}
+.pulldown
+{
+    BORDER-RIGHT: #990000 1px solid;
+    BORDER-TOP: #990000 1px solid;
+    FONT-SIZE: 100%;
+    BORDER-LEFT: #990000 1px solid;
+    COLOR: #990000;
+    BORDER-BOTTOM: #990000 1px solid;
+    FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #fdf8e7
+}
+
+
+A.navtextSub:link, A.navtextSub:visited, A.navtextSub:active, A.navtextSub:hover
+{
+    COLOR: #990000;
+    TEXT-DECORATION: none
+}
+A.topLink:link, A.topLink:visited, A.topLink:active
+{
+    COLOR: #DA7707;
+    TEXT-DECORATION: none
+}
+ A.topLink:hover
+{
+    COLOR: #DA7707;
+        TEXT-DECORATION: underline
+
+}
+
+.departmentName {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 18pt;
+        color: #990000;
+        font-weight: normal;
+        padding-top: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-left: 0px;}
+.departmentContact {
+        color: #990000;
+}
+.courseNumber {
+        color: #666666;
+        background-color: #ffffff;
+           FONT-SIZE: 80%;
+        width: 100px;
+        border-bottom: solid 1px #eeeeee;
+}
+
+ul { text-indent: 0px; margin: 0px 0px 0px 20px;  padding: 0px 30px 0px 10px; }     
+li { list-style-position: outside ;  padding: 0px 0px 7px 0px ; }
+.smnrTblTitle {background-color:#999999 ; color: #ffffff ; } 
+.smnrTblRow {background-color:#dddddd ;} 
+.smnrTopic {font-style: italic;}
+
+
+div.jobTitle { font-weight: bold; font-size: 120%; padding: 2px 5px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-size: 12pt;
+background-color: #efefef;
+border-top: solid #cccccc 1px;
+}
+div.jobCompany {
+background-color: #efefef;
+padding: 2px 5px; font-weight: normal;}
+div.jobDesc { padding: 2px 2px; border-top: solid #cccccc 1px;}
+div.jobDetails {background-color: #ffffff;  padding: 10px;}
+div.jobPosting {color: #666666;  text-align:right;}
+
+div.jobLabel {border: solid #ff0000 1px;} 
+
+.done {color: #cccccc}
+.sideTitle
+{
+ COLOR: #990000;FONT-SIZE: 100%;
+}
+        
+A.sideLink:link, A.sideLink:visited, A.sideLink:active, A.sideLink:hover
+{
+    COLOR: #000000;
+    TEXT-DECORATION: none;
+}
