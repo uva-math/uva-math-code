@@ -1,5 +1,5 @@
 ---
-title: Probability Seminar 2010-11
+title: Probability Seminar Spring 2011
 layout: seminar
 permalink: /seminars/probability/2010-11/
 events: false
