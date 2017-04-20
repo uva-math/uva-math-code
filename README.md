@@ -1,4 +1,4 @@
-# Mathematics at the University of Virginia
+# Mathematics at the University of Virginia&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    [![Build Status](https://travis-ci.org/uva-math/uva-math.github.io.svg?branch=master)](https://travis-ci.org/uva-math/uva-math.github.io)
 
 Official website of Department of Mathematics at the University of Virginia (under construction: see the current website [here](http://www.math.virginia.edu/)). Below is a working notebook associated with the initial stage of the website project.
 
