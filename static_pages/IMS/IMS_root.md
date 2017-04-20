@@ -10,6 +10,8 @@ nav_nesting: true
 
 # Institute of Mathematical Science
 
+<br>
+
 {% assign sorted_pages = site.pages | sort: "nav_weight" %}
 {% for p in sorted_pages %}
 {% if p.permalink contains '/ims/' and p.permalink != '/ims/' %}

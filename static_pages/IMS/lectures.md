@@ -11,6 +11,8 @@ nav_parent: IMS
 # Virginia Mathematics Lectures
 
 
+<br>
+
 In 2014, the IMS established the Distinguished Lecture Series "Virginia Mathematics Lectures." The inaugural speaker was Professor Alex Lubotzky from the Hebrew University of Jerusalem. Each semester thereafter brought us another speaker in the series, including Vaughan Jones (Vanderbilt), Ian Agol (UC Berkeley), and – most recently – Benedict H. Gross (Harvard).
 
 These lecture series were enthusiastically met by the audience which included undergraduate and graduate students, faculty members and guests from other departments and institutions. Given the success of the lectures, the IMS will continue to organize two such series every year.
