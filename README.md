@@ -2,7 +2,7 @@
 
 Official website of Department of Mathematics at the University of Virginia (under construction: see the current website [here](http://www.math.virginia.edu/)). Below is a working notebook associated with the initial stage of the website project.
 
-## Implementation needed of subpages from old website:
+## ToDo: Implementation needed of subpages from old website:
 
 - [ ] http://www.math.virginia.edu/directory
 - [ ] http://www.math.virginia.edu/faculty
@@ -22,13 +22,6 @@ Official website of Department of Mathematics at the University of Virginia (und
 - [ ] http://www.math.virginia.edu/summer
 - [ ] http://www.math.virginia.edu/courses
 - [ ] http://www.math.virginia.edu/sites/math.virginia.edu/files/Virginia%20Math%20Bulletin%2C%20June%202016.pdf
-
-
-## Notes on progress and ToDos
-
-- The sources of other less frequently updated information will be "seminars" and "people" in \_data and maybe other database-like structures (but not for courses I hope!.. but one can mine courses from Lou's list eventually :))
-- There will be several layouts: main page (with special navbar?), posts page, and other pages with usual navbar; and the layouts will differ by the presence of the right-pane links!
-- Need to figure out navbar conventions, too
 
 # Conventions and guidelines on adding and modifying content
 
