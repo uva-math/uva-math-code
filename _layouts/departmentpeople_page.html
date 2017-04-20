@@ -19,7 +19,7 @@
       <h2>{{page.name}} {{page.lastname}}</h2>
 
       {% if page.image != null %}
-        <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;">
+        <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;" alt="{{ page.name }} {{ page.lastname }}" title="{{ page.name }} {{ page.lastname }}">
       {% endif %}
 
       {{ content }}

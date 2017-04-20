@@ -19,7 +19,7 @@
       <h2>post layout. {{page.title}}</h2>
 
       {% if page.image != null %}
-        <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;">
+        <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;" alt="{{page.image-alt}}" title="{{page.image-alt}}">
       {% endif %}
 
       {{ content }}

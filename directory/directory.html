@@ -20,7 +20,7 @@ In this way, under people there will be links to lists by position, and to a lis
 
 {% for ppl in sorted_people %}
   {% if ppl.image != null %}
-    <img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" width=80>
+    <img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" width=80 alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}">
   {% else %}
     <i class="fa fa-3x fa-user" style="color:#002F6C" aria-hidden="true"></i>
   {% endif %}
