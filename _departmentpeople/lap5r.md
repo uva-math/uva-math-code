@@ -2,7 +2,7 @@
 UVA_id: lap5r
 lastname: Petrov
 name: Leonid
-general_position: tt_faculty
+general_position: faculty
 position: Assistant Professor
 office: 209 Kerchof Hall
 phone: 434-924-4167
