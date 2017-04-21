@@ -22,23 +22,29 @@
         <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;" alt="{{ page.name }} {{ page.lastname }}" title="{{ page.name }} {{ page.lastname }}">
       {% endif %}
 
-      {{ content }}
-		</div>
-    <div class="col-md-4">
+      <a href="{{site.url}}/people/{{page.UVA_id}}">{{ page.name }} {{ page.lastname }}</a>
+       -
+      {{ page.position }}
+      -
 
-      <ul>
-          <li>
-            {{page.office}}
-          </li>
-          <li>
-              {{page.email}}
-          </li>
-          <li>
-            etc
-          </li>
-      </ul>
+      {% if page.email != null %}
+        <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+      {% endif %}
 
+      {% if page.personal_page != nul %}
+        <br>Personal webpage: <a href="{{ page.personal_page }}">{{ page.personal_page }}</a>
+      {% endif %}
+      <br>
 
+      {{page.office}}
+
+      {{page.phone}}
+
+      {%for int in page.interests%}
+        <br>- {{ int }}<br>
+      {%endfor%}
+
+      {{ page.content | markdownify }}
 
 
     </div><!--/span-->
