@@ -7,7 +7,7 @@ position:
 office: 301 Kerchof Hall
 phone: 434-924-4100
 email: bjp8w@virginia.edu
-image: __SITE_URL__/img/people/Parshall.jpg
+image: __SITE_URL__/img/people/ParshallB.jpg
 personal_page:
 interests:
 
