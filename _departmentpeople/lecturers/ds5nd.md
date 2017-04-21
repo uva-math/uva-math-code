@@ -5,9 +5,9 @@ name: Dmitriy
 general_position: lecturer
 position: Lecturer
 office: 131 Kerchof Hall
-phone: 434-
+phone: 
 email: ds5nd@virginia.edu
-image: 
+image:
 personal_page:
 interests:
 
