@@ -8,7 +8,7 @@ with open('Fall 2016 faculty staff list.csv', 'rb') as csvfile:
         op_file.write('UVA_id: ' + row[3]+ '\n')
         op_file.write('lastname: ' + row[0].split(' ')[1] + '\n')
         op_file.write('name: ' + row[0].split(' ')[0] + '\n')
-        op_file.write('general_position: lecturer' + '\n')
+        op_file.write('general_position: staff' + '\n')
         op_file.write('position:' + '\n')
         op_file.write('office: ' + row[2] + ' Hall' + '\n')
         op_file.write('phone: 434-' + row[1] + '\n')
