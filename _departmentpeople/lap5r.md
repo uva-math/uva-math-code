@@ -7,7 +7,7 @@ position: Assistant Professor
 office: 209 Kerchof Hall
 phone: 434-924-4167
 email: petrov@virginia.edu
-image: __SITE_URL__/img/people/leonidpetrov.jpg
+image: __SITE_URL__/img/people/Petrov.jpg
 personal_page: http://faculty.virginia.edu/petrov/
 interests:
   - Mathematical Physics
