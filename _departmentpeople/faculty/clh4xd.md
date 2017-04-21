@@ -13,7 +13,7 @@ interests:
   - Commutative Algebra
 ---
 
-Commutative algebra was born out of three classical fields: number theory, algebraic geometry, and invariant theory, but now is used to study many other topics in mathematics. My own focus is the study of solutions of polynomial or power series equations in many variables. I am especially interested in a method called "reduction to characteristic p." Here are a few of my papers:
+<!-- Commutative algebra was born out of three classical fields: number theory, algebraic geometry, and invariant theory, but now is used to study many other topics in mathematics. My own focus is the study of solutions of polynomial or power series equations in many variables. I am especially interested in a method called "reduction to characteristic p." Here are a few of my papers:
 
 * The structure of linkage (with B. Ulrich), Annals of Math. 126 (1987), 277-334.
 * Tight closure, invariant theory, and the Briançon-Skoda theorem (with M. Hochster), J. Amer. Math. Soc. 3 (1990), 31-116.
@@ -21,4 +21,4 @@ Commutative algebra was born out of three classical fields: number theory, algeb
 * Direct methods for primary decomposition (with D. Eisenbud and W. Vasconcelos), Inventiones Math. 110 (1992), 207-236.
 * Uniform bounds in noetherian rings, Inventiones Math. 107 (1992), 203-223.
 * Comparison of symbolic and ordinary powers of ideals (with M. Hochster), Invent. Math. 147 (2002), 349-369.
-* The regularity of Tor and graded Betti numbers (with D. Eisenbud and B. Ulrich), Amer. J. Math. 128 (2006), 573-605
+* The regularity of Tor and graded Betti numbers (with D. Eisenbud and B. Ulrich), Amer. J. Math. 128 (2006), 573-605 -->
