@@ -13,6 +13,8 @@ interests:
   - Commutative Algebra
 ---
 
+<!-- ignore this probably outdated info for now -->
+
 <!-- Commutative algebra was born out of three classical fields: number theory, algebraic geometry, and invariant theory, but now is used to study many other topics in mathematics. My own focus is the study of solutions of polynomial or power series equations in many variables. I am especially interested in a method called "reduction to characteristic p." Here are a few of my papers:
 
 * The structure of linkage (with B. Ulrich), Annals of Math. 126 (1987), 277-334.

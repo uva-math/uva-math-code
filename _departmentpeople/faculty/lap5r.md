@@ -15,6 +15,9 @@ interests:
   - Representation Theory
   - Statistical Mechanics
 ---
+
+<!-- ignore this outdated info for now -->
+
 <!--
 * Asymptotics of Random Lozenge Tilings via Gelfand-Tsetlin Schemes (2012), [arXiv:1202.3901 [math.PR]](http://arxiv.org/abs/1202.3901).
 * (with Ivan Corwin) Stochastic higher spin vertex models on the line (2015). -->
