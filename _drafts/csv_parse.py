@@ -1,6 +1,6 @@
 import csv
 
-with open('Workbook1.csv', 'rb') as csvfile:
+with open('Fall 2016 faculty staff list.csv', 'rb') as csvfile:
     rr = csv.reader(csvfile, delimiter=',')
     for row in rr:
         op_file = open (row[3]+'.md', 'w')
@@ -8,7 +8,7 @@ with open('Workbook1.csv', 'rb') as csvfile:
         op_file.write('UVA_id: ' + row[3]+ '\n')
         op_file.write('lastname: ' + row[0].split(' ')[1] + '\n')
         op_file.write('name: ' + row[0].split(' ')[0] + '\n')
-        op_file.write('general_position: faculty' + '\n')
+        op_file.write('general_position: emeritus' + '\n')
         op_file.write('position:' + '\n')
         op_file.write('office: ' + row[2] + ' Hall' + '\n')
         op_file.write('phone: 434-' + row[1] + '\n')
