@@ -19,7 +19,6 @@ In this way, under people there will be links to lists by position, and to a lis
 {% assign sorted_people = (site.departmentpeople | sort: 'lastname') %}
 
 {% for ppl in sorted_people %}
-  {% if ppl.general_position == 'postdoc' %}
   <div class="row">
     <div class="col-md-2">
       {% if ppl.image != null %}
@@ -33,35 +32,32 @@ In this way, under people there will be links to lists by position, and to a lis
           <i class="fa fa-3x fa-user" style="color:#002F6C;" aria-hidden="true"></i>
       {% endif %}
     </div>
-    <div class="col-md-10">
+    <div class="col-md-5">
 
-      <a href="{{site.url}}/people/{{ppl.UVA_id}}">{{ ppl.name }} {{ ppl.lastname }}</a>
-       -
+      <a href="{{site.url}}/people/{{ppl.UVA_id}}" class="h5">{{ ppl.name }} {{ ppl.lastname }}</a>
+      <br>
       {{ ppl.position }}
-      -
+    </div>
+    <div class="col-md-5">
+      {{ppl.office}}
+
+      <br>
+      {% if ppl.phone != null %}
+        {{ppl.phone}}
+        <br>
+      {% endif %}
 
       {% if ppl.email != null %}
         <a href="mailto:{{ ppl.email }}">{{ ppl.email }}</a>
       {% endif %}
-
-      {% if ppl.personal_page != nul %}
-        <br>Personal webpage: <a href="{{ ppl.personal_page }}">{{ ppl.personal_page }}</a>
-      {% endif %}
       <br>
 
-      {{ppl.office}}
-
-      {{ppl.phone}}
-
-      {%for int in ppl.interests%}
-        <br>- {{ int }}<br>
-      {%endfor%}
-
-      {{ ppl.content | markdownify }}
+      {% if ppl.personal_page != nul %}
+        <a href="{{ ppl.personal_page }}">{{ ppl.personal_page }}</a>
+      {% endif %}
 
     </div>
   </div>
 
   <hr>
-  {% endif %}
 {% endfor %}
