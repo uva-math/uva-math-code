@@ -3,11 +3,11 @@ UVA_id: ais6a
 lastname: Saenz-Rodriguez
 name: Axel
 general_position: postdoc
-position:
+position: Mary Ann Pitts Postdoctoral Fellow
 office: 221 Kerchof Hall
 phone: 434-243-8778
 email: ais6a@virginia.edu
-image: 
+image:
 personal_page:
 interests:
 

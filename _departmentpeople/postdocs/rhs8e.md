@@ -3,7 +3,7 @@ UVA_id: rhs8e
 lastname: Santharoubane
 name: Ramanujan
 general_position: postdoc
-position:
+position: Whyburn Instructor
 office: 229 Kerchof Hall
 phone: 434-243-8778
 email: rhs8e@virginia.edu
