@@ -18,7 +18,7 @@
         <a class="nav-link dropdown-toggle" href="{{site.url}}{{p.url}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{p.nav_id}}
         </a>
-        <div class="dropdown-menu h5 dropdown-menu-right">
+        <div class="dropdown-menu h5 {% if p.nav_id == 'IMS' %}dropdown-menu-right{% endif %}">
           {% for pp in sorted_pages%}
           {% if pp.nav_id != null and pp.nav_parent == p.nav_id %}
           <a class="dropdown-item {%if pp.url == page.url %}active bg-inverse{% endif %}" href="{{site.url}}{{pp.url}}">{{pp.nav_id}}{%if pp.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
