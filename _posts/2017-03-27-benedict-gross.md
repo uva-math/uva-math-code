@@ -14,6 +14,10 @@ more-text: Abstracts
 
 <h3 class="mt-3 mb-4"> Benedict H. Gross (Harvard) March 27-29, 2017</h3>
 
+- Lecture 1: The rank of elliptic curves
+- Lecture 2: The arithmetic of hyperelliptic curves
+- Lecture 3: Heegner points on modular curves
+
 <!--more-->
 
 #### Lecture 1: The rank of elliptic curves

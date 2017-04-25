@@ -18,7 +18,7 @@
     <div class="col-12 col-md-8">
       <h1>{{page.title}}</h1>
 
-      <h4>{{page.event-date |  date: "%A, %B %-d, %Y" }}</h4>
+      {% if page.event-date != null %}<h4>{{page.event-date |  date: "%A, %B %-d, %Y" }}</h4>{% endif %}
 
       {% if page.image != null %}
         {% if page.image-address != null %}<a href="{{ page.image-address | replace: '__SITE_URL__', site.url }}">{% endif %}<img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;" alt="{{page.image-alt}}" title="{{page.image-alt}}">{% if page.image-address != null %}</a>{% endif %}<br><br />
