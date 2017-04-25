@@ -1,5 +1,5 @@
 ---
-title: News
+title: Academic Programs
 layout: static_page_no_right_menu
 nav_id: Academic Programs
 permalink: /academics/
