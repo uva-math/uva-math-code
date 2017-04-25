@@ -38,7 +38,7 @@ have been in the forefront of number theory since since the time of Fermat.
 I will focus on the group of rational points, which Mordell proved was
 finitely generated. I will review the conjecture of Birch and Swinnerton-
 Dyer, which attempts to predict the rank of this group from the average
-number of points ($$mod p$$), and will discuss the progress that has been
+number of points ($$\mod p$$), and will discuss the progress that has been
 made on this conjecture to date.
 
 

@@ -24,32 +24,34 @@ events: true
     <div class="row row-offcanvas row-offcanvas-right">
       <div class="col-12 col-md-8">
 
-        {% assign major_news_counter = 0 %}
+        {% assign major-news_counter = 0 %}
         {% for post in site.categories['news'] limit:5 %}
-        {% if post.categories contains 'major_news' and major_news_counter == 0 %}
-        {% assign major_news_id = post.id %}
-        {% assign major_news_counter = major_news_counter | plus:1 %}
+        {% if post.categories contains 'major-news' and major-news_counter == 0 %}
+        {% assign major-news_id = post.id %}
+        {% assign major-news_counter = major-news_counter | plus:1 %}
         <div class="jumbotron">
-          <h2>{{ post.title }}</h2>
+          <h2 class="mb-3">{{ post.title }}</h2>
+          <h5>{{ post.event-date |  date: "%A, %B %-d, %Y" }}</h5>
           {% if post.image != null %}
-            <img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%" alt="{{post.image-alt}}" title="{{ post.image-alt }}">
+            {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%" alt="{{post.image-alt}}" title="{{ post.image-alt }}">{% if post.image-address != null %}</a>{% endif %}<br /><br />
           {% endif %}
           {{ post.excerpt | markdownify }}
-          <p><a class="btn btn-secondary" href="{{site.url }}{{ post.url }}" role="button">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="{{site.url }}{{ post.url }}" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a></p>
         </div>
         {% endif %}
         {% endfor %}
 
         <div class="row">
           {% for post in site.categories['news'] limit:5 %}
-          {% if post.id != major_news_id %}
+          {% if post.id != major-news_id %}
             <div class="col-12 col-lg-6 my-bordered-news-snippets">
               {% if post.image != null %}
-                <img src="{{ post.image | replace: '__SITE_URL__', site.url }}" alt="{{ post.image-alt }}" title="{{ post.image-alt }}" style="max-width:70%;max-height:240px;height:auto;width:auto;margin: 0cm 0cm 0.3cm 0cm;">
+                {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" alt="{{ post.image-alt }}" title="{{ post.image-alt }}" style="max-width:70%;max-height:240px;height:auto;width:auto;margin: 0cm 0cm 0.3cm 0cm;">{% if post.image-address != null %}</a>{% endif %}
               {% endif %}
-              <h3>{{ post.title }}</h3>
+              <h3 class="mb-3">{{ post.title }}</h3>
+              <h6>{{ post.event-date |  date: "%A, %B %-d, %Y" }}</h6>
               {{ post.excerpt | markdownify }}
-              <p><a class="btn btn-secondary" href="{{site.url }}{{ post.url }}" role="button">View details &raquo;</a></p>
+              <p><a class="btn btn-secondary" href="{{site.url }}{{ post.url }}" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a></p>
             </div><!--/span-->
           {% endif %}
           {% endfor %}

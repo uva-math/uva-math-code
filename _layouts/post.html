@@ -16,10 +16,12 @@
 
   <div class="row row-offcanvas row-offcanvas-right">
     <div class="col-12 col-md-8">
-      <h2>post layout. {{page.title}}</h2>
+      <h1>{{page.title}}</h1>
+
+      <h4>{{page.event-date |  date: "%A, %B %-d, %Y" }}</h4>
 
       {% if page.image != null %}
-        <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;" alt="{{page.image-alt}}" title="{{page.image-alt}}">
+        {% if page.image-address != null %}<a href="{{ page.image-address | replace: '__SITE_URL__', site.url }}">{% endif %}<img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;" alt="{{page.image-alt}}" title="{{page.image-alt}}">{% if page.image-address != null %}</a>{% endif %}<br><br />
       {% endif %}
 
       {{ content }}
