@@ -27,3 +27,7 @@ Number theory is founded on the basic properties of integers and prime numbers. 
 We shall try to introduce the Langlands program through the theory of L-functions. These are infinite series that look like the famous Riemann zeta function, except that they have nontrivial coefficients. The information that goes into the coefficients is in fact very interesting, and gives an elegant way of organizing fundamental data from number theory, representation theory and algebraic geometry. The Langlands program postulates deep relationships among different L-functions, and hence also the data in their coefficients.
 
 We shall discuss these matters, and explain how they are part of the theory of automorphic forms. We shall then describe the trace formula, which has led to important results in the classification of automorphic representations. If time permits, we shall also say something about Beyond Endoscopy, a proposal by Langlands for attacking the central conjecture of the subject known as the Principle of Functoriality.
+
+<br>
+
+[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)
