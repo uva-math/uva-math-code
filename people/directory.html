@@ -23,9 +23,11 @@ In this way, under people there will be links to lists by position, and to a lis
     <div class="col-md-2">
       {% if ppl.image != null %}
       <div class="row">
-        <div class="col-md-9">
-          <img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="max-width:100%;width:auto;" class="hidden-sm-down">
-          <img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="max-width:100px;width:auto;" class="hidden-md-up">
+        <div class="col-md-9" class="hidden-md-up">
+          <img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:100px" class="hidden-md-up">
+        </div>
+        <div class="col-md-12" class="hidden-sm-down">
+          <img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:100px" class="hidden-sm-down">
         </div>
       </div>
       {% else %}
