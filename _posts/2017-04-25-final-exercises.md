@@ -6,8 +6,8 @@ event-date: 2017-05-20 12:00:00
 comments: false
 categories: major-news news events
 published: true
-image:
-image-alt:
+image: __SITE_URL__/img/diplomas.gif
+image-alt: Final Exercises ceremony
 more-text: Schedule and locations
 ---
 
@@ -26,3 +26,7 @@ Reservation Time: 12:00 p.m. – 3:00 p.m.<br /><em>*Finals on the Lawn, all dep
 <p><strong>Severe Weather:</strong>       <strong>Gilmer Hall, Room 130<br />
 Ceremony Start Time: 12:30 p.m.</strong><br />
 Reservation Time: 12:00 p.m. – 3:00 p.m.<br /><em>*Finals in John Paul Jones Arena, all department ceremonies inside.</em></p>
+
+<br>
+
+[More details at http://majorevents.virginia.edu/finals](http://majorevents.virginia.edu/finals)
