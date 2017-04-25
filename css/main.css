@@ -242,4 +242,5 @@ h6,
 
 .my-bordered-news-snippets{
   border-left: 1px solid #DADADA;
+  border-bottom: 1px dotted #DADADA;
 }

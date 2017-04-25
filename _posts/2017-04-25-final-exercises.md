@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Final Exercises Ceremony for the College and Graduate School of Arts and Sciences
-date: 2017-04-25 13:30:00
+date: 2017-04-23 13:30:00
 event-date: 2017-05-20 12:00:00
 comments: false
-categories: major-news news
+categories: major-news news events
 published: true
 image:
 image-alt:
