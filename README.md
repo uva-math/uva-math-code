@@ -25,6 +25,8 @@ Official website of Department of Mathematics at the University of Virginia (und
 
 # Conventions and guidelines on adding and modifying content
 
+(under construction; this needs to be updated; documentation will only follow when the site goes live)
+
 ## 1. How to collaborate on the content of the Math Department website
 
 ToDo: Levels of access; modifying in browser; pull requests; setting up local copy; previewing the website locally
