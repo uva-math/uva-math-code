@@ -9,7 +9,7 @@ highlighter: rouge
 excerpt_separator: <!--more-->
 
 paginate: 10
-paginate_path: "blog/page:num"
+paginate_path: "news/page:num"
 permalink: /:year/:month/:day/:title/
 
 new_seminars_label: Upcoming seminars
