@@ -1,7 +1,7 @@
 ---
 title: Probability Seminar 2016-17
-permalink: "/seminars/probability/2016-17/"
 layout: seminar
+permalink: /seminars/probability/2016-17/
 events: false
 sem_page: true
 sem_archive: true

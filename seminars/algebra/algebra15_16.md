@@ -1,7 +1,7 @@
 ---
 title: Algebra Seminar 2015-16
-permalink: "/seminars/algebra/2015-16/"
 layout: seminar
+permalink: /seminars/algebra/2015-16/
 events: false
 sem_page: true
 sem_archive: true

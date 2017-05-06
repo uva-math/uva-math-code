@@ -1,17 +1,16 @@
 ---
-title: Clh4xd
-position: 0
 UVA_id: clh4xd
 lastname: Huneke
 name: Craig
 general_position: faculty
+position: Marvin Rosenblum Professor & Chair
 office: 231 Kerchof Hall
 phone: 434-924-4919
 email: math-chair@virginia.edu
 image: __SITE_URL__/img/people/Huneke.jpg
 personal_page: http://faculty.virginia.edu/huneke/
 interests:
-- Commutative Algebra
+  - Commutative Algebra
 ---
 
 <!-- ignore this probably outdated info for now -->

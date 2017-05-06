@@ -1,9 +1,10 @@
 ---
 title: Virginia Mathematics Lectures
-permalink: "/ims/lectures/"
 layout: static_page_no_right_menu
-nav_id: Virginia Mathematics Lectures (2014-)
+permalink: /ims/lectures/
+nav_id: 'Virginia Mathematics Lectures (2014-)'
 nav_weight: 2
+# nav_nesting: true
 nav_parent: IMS
 ---
 

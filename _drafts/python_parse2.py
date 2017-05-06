@@ -1,8 +1,3 @@
----
-title: Python_parse2
-date: 2017-05-06 14:59:19.139000000 Z
----
-
 import pandas as pd
 url = './grad.html'
 

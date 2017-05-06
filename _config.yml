@@ -1,33 +1,29 @@
----
-title: Uva Math.Github.Io
-timezone: UTC
-collections:
-  departmentpeople:
-    title: Departmentpeople
-    output: true
-    permalink: "/people/:name"
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
-defaults:
-- scope:
-    path: ''
-    type: departmentpeople
-  values:
-    layout: departmentpeople_page
-url: https://uva-math.github.io
+url: "https://uva-math.github.io"
+
 name: Mathematics at the University of Virginia
-description: Official website of Department of Mathematics at the University of Virginia
-  (under construction)
+description: Official website of Department of Mathematics at the University of Virginia (under construction)
+
 markdown: kramdown
 highlighter: rouge
-excerpt_separator: "<!--more-->"
+
+excerpt_separator: <!--more-->
+
 paginate: 10
-paginate_path: news/page:num
-permalink: "/:year/:month/:day/:title/"
+paginate_path: "news/page:num"
+permalink: /:year/:month/:day/:title/
+
 new_seminars_label: Upcoming seminars
-exclude:
-- vendor
+
+defaults:
+  - scope:
+      path: ""
+      type: departmentpeople
+    values:
+      layout: departmentpeople_page
+
+collections:
+  departmentpeople:
+    output: true
+    permalink: /people/:name
+
+exclude: [vendor]

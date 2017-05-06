@@ -1,7 +1,7 @@
 ---
 title: Seminars
-permalink: "/seminars/"
 layout: seminar
+permalink: /seminars/
 nav_id: Seminars
 nav_weight: 15
 nav_nesting: true

@@ -1,13 +1,11 @@
 ---
-title: Final Exercises Ceremony for the College and Graduate School of Arts and Sciences
-date: 2017-04-23 13:30:00 Z
-categories:
-- major-news
-- news
-- events
 layout: post
-event-date: 2017-05-20 12:00:00 Z
+title: Final Exercises Ceremony for the College and Graduate School of Arts and Sciences
+date: 2017-04-23 13:30:00
+event-date: 2017-05-20 12:00:00
 comments: false
+categories: major-news news events
+published: true
 image: __SITE_URL__/img/diplomas.gif
 image-alt: Final Exercises ceremony
 more-text: Schedule and locations

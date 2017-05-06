@@ -1,9 +1,10 @@
 ---
 title: Seminars
-permalink: "/calendar/"
 layout: seminar
+permalink: /calendar/
 nav_id: All seminars
 nav_weight: -2
+# nav_nesting: true
 nav_parent: Seminars
 events: false
 ---

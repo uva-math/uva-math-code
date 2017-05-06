@@ -1,10 +1,11 @@
 ---
 title: IMS
-permalink: "/ims/"
 layout: static_page_no_right_menu
-nav_id: IMS
+permalink: /ims/
+nav_id: 'IMS'
 nav_weight: 1000
 nav_nesting: true
+# nav_parent: Home
 ---
 
 # Institute of Mathematical Science

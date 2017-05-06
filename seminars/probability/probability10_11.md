@@ -1,7 +1,7 @@
 ---
 title: Probability Seminar Spring 2011
-permalink: "/seminars/probability/2010-11/"
 layout: seminar
+permalink: /seminars/probability/2010-11/
 events: false
 sem_page: true
 sem_archive: true

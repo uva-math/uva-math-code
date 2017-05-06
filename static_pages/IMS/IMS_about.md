@@ -1,12 +1,13 @@
 ---
 title: About IMS
-permalink: "/ims/about/"
 layout: static_page_no_right_menu
+permalink: /ims/about/
 nav_id: 'About Institute of Mathematical Science '
 nav_weight: 1
 nav_nesting: true
 nav_parent: IMS
 ---
+
 
 # Institute of Mathematical Science
 
