@@ -1,11 +1,9 @@
 ---
 title: Resources
+permalink: "/resources/"
 layout: static_page_no_right_menu
-permalink: /resources/
 nav_id: Resources
 nav_weight: 900
-# nav_nesting: true
-# nav_parent: Home
 ---
 
 # Services, Links & Resources

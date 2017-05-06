@@ -1,14 +1,9 @@
 ---
 title: Support Us
+permalink: "/support/"
 layout: static_page_no_right_menu
-permalink: /support/
-# nav_id: Support
-# nav_weight: 20
-# nav_nesting: true
-# nav_parent: Home
-support: off
+support: false
 ---
-
 
 # Support Us
 

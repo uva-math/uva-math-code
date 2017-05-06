@@ -1,3 +1,8 @@
+---
+title: Csv_parse
+date: 2017-05-06 14:59:18.728000000 Z
+---
+
 import csv
 
 with open('Fall 2016 faculty staff list.csv', 'rb') as csvfile:

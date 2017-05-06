@@ -1,10 +1,9 @@
 ---
 title: Academic Programs
+permalink: "/academics/"
 layout: static_page_no_right_menu
 nav_id: Academic Programs
-permalink: /academics/
 nav_weight: 80
-# nav_nesting: true
 ---
 
 (under construction)

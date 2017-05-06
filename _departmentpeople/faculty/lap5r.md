@@ -1,19 +1,20 @@
 ---
+title: Lap5r
+position: 0
 UVA_id: lap5r
 lastname: Petrov
 name: Leonid
 general_position: faculty
-position: Assistant Professor
 office: 209 Kerchof Hall
 phone: 434-924-4167
 email: petrov@virginia.edu
 image: __SITE_URL__/img/people/Petrov.jpg
 personal_page: http://faculty.virginia.edu/petrov/
 interests:
-  - Mathematical Physics
-  - Probability
-  - Representation Theory
-  - Statistical Mechanics
+- Mathematical Physics
+- Probability
+- Representation Theory
+- Statistical Mechanics
 ---
 
 <!-- ignore this outdated info for now -->
