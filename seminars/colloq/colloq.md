@@ -9,10 +9,8 @@ title: University of Virginia Mathematics Colloquium #override the default title
 ---
 
 {% include seminar_page.html
-  content="This is a sample content which can be added to a seminar page. <b>HTML</b>, *markdown*, $$\displaystyle\int\dfrac{and\ \LaTeX}{math}$$ are allowed"
-  contacts="You can also add extra contact information or anything else here. For example, the `<hr>` below is also added from include.
-
-  For even more flexibility simply copy the whole content of `seminar_page.html` and edit it as your own webpage
-
-  <hr>"
+  content=""
+  contacts=""
+  archives="[2016-17](/seminars/colloq/2016-17/) \|
+    [2015-16](/seminars/colloq/2015-16/)"
 %}
