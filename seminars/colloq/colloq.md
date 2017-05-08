@@ -17,6 +17,6 @@ title: University of Virginia Mathematics Colloquium #override the default title
     [2013-14](/seminars/colloq/2013-14/) \|
     [2012-13](/seminars/colloq/2012-13/) \|
     [2011-12](/seminars/colloq/2011-12/) \|
-    [2010-11](/seminars/colloq/2010-11/) \|
+    [2010-11](/seminars/colloq/2010-11/)
     "
 %}
