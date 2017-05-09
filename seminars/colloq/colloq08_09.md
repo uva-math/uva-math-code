@@ -103,8 +103,8 @@ Math Club
 
 <B>October 30</B></td>
 <td valign="top">
-<a href="http://www.math.indiana.edu/people/profile.phtml?id=msjolly">Michael Jolly
-</a> (Indiana University) &nbsp;&nbsp;<span class="small">Host: Zoran Grujic</span><br>
+Michael Jolly
+ (Indiana University) &nbsp;&nbsp;<span class="small">Host: Zoran Grujic</span><br>
 &nbsp;&nbsp;<i>Title: Computation of Invariant Manifolds
 </i>
 
@@ -211,7 +211,7 @@ No colloquium
 <br>
 <i>Title:
 On Correctors in Anisotropic Singular Perturbations Problems
-</i>&nbsp;&nbsp;<a href="chipot.pdf" target="blank">Abstract (PDF)</a>
+</i>
 <BR>
 Host: Irena Lasiecka
 
@@ -243,7 +243,7 @@ No colloquium
 
 <B>February 26</B></td>
 <td valign="top">
-<a href="http://www.math.biu.ac.il/people/">Samuel Krushkal </a>  (Bar-Ilan University and UVA)
+Samuel Krushkal  (Bar-Ilan University and UVA)
 <br>
 <details><summary><i>Title: Moser's conjecture and geometry of Teichm&uuml;ller spaces</i></summary>
   Teichmüller spaces are the deformation spaces of conformal structures on Riemann surfaces. They have various applications in Mathematics and in String theory in Physics. I plan to discuss mainly the universal Teichmüller space, containing copies of all such spaces. It is a complex Banach manifold with rich complex geometry and pluripotential theory. An application to solving several long standing problems, including Moser's conjecture on Grunsky and Teichmüller norms, will be briefly presented. </details>
@@ -280,7 +280,7 @@ Host: Brian Parshall
 
 <B>March 19</B></td>
 <td valign="top">
-<a href="http://milnor.math.ucl.ac.be/plwiki/PascalLambrechtsProfessional/HomePage">Pascal Lambrechts</a>  (Universite catholique de Louvain)
+Pascal Lambrechts  (Universite catholique de Louvain)
 <br>
 <details><summary><i>Title: Understanding immersions and embeddings: the cut and paste strategy</i></summary>  We will consider smooth immersions and smooth embeddings of a manifold into a Euclidean space. At the beginning of my talk I will review Smale's strategy for proving his famous result that the sphere can be turned inside-out through immersions. I will then explain how this strategy has been generalized to understand not only immersions, but also embeddings. Finally, I will show how these ideas can help us to understand better the spaces of embeddings of the circle into a Euclidean space, that is of the space of knots. </details>
 <BR>
@@ -330,7 +330,7 @@ Host: David Sherman
 
 <B>April 9</B></td>
 <td valign="top">
-<a href="http://www.math.uga.edu/~wag/">Bill Graham</a>  (University of Georgia)
+Bill Graham (University of Georgia)
 <br>
 <i>Title: Localization in Equivariant Cohomology and K-Theory
 </i>
@@ -355,7 +355,7 @@ No colloquium
 
 <B>April 23</B></td>
 <td valign="top">
-<a href="http://www.math.uic.edu/~demarco/">Laura De Marco</a>  (University of Illinois at Chicago)
+Laura De Marco  (University of Illinois at Chicago)
 <br>
 <i>Title: Deformations of complex dynamical systems</i>
 <BR>
