@@ -7,6 +7,8 @@ sem_page: true
 sem_archive: true
 ---
 
+<h1 class="mt-2 mb-4">COLLOQUIUM 2010-11</h1>
+
 <div class="MainFrame">
 <center>
     <h1 class="mb-3 mt-3">
