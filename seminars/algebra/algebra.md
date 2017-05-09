@@ -10,4 +10,5 @@ sem_page: true
 {% include seminar_page.html archives="
   [2016-17](/seminars/algebra/2016-17/) \|
   [2015-16](/seminars/algebra/2015-16/) \|
-  [2002-07](/seminars/algebra/AlgSeminarOld/)" %}
+  [2002-07](/seminars/algebra/AlgSeminarOld/)"
+%}
