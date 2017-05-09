@@ -7,7 +7,7 @@ sem_page: true
 sem_archive: true
 ---
 
-<h1 class="mt-2 mb-4">COLLOQUIUM 2009-10</h1>
+<h1 class="mt-2 mb-4">Colloquium 2009-10</h1>
 
 <TABLE BORDER="yes" WIDTH="720" CELLPADDING="3">
 

@@ -1,0 +1,10 @@
+---
+title: Colloquium 1999-00
+layout: seminar
+permalink: /seminars/colloq/1999-00/
+events: false
+sem_page: true
+sem_archive: true
+---
+
+<h1 class="mt-2 mb-4">Colloquium 1999-00</h1>
