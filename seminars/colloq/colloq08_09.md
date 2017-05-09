@@ -24,7 +24,7 @@ sem_archive: true
 
 <B>September 9*</B></td>
 <td valign="top">
-<a href="http://www.math.biu.ac.il/~rowen/">Louis Rowen
+<a href="http://u.math.biu.ac.il/~rowen/">Louis Rowen
 </a> (Bar Ilan University) &nbsp;&nbsp;<span class="small">Host: Andrei Rapinchuk</span><br>
 &nbsp;&nbsp;<i>Title: Supertropical algebra (Joint work with Z. Izhakian)</i>
 
