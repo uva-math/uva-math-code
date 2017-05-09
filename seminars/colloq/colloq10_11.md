@@ -164,7 +164,8 @@ Fall 2010
 </td>
 <td>
 <a href="http://people.virginia.edu/~des5e/">David Sherman</a> (UVA) &nbsp;&nbsp;<span class="small">Host: D. Sherman</span><br>
-&nbsp;&nbsp;<i>Title: <a href="abstracts.htm#sherman">What is an ultrapower?</a></i>
+&nbsp;&nbsp;<details><summary><i>Title: What is an ultrapower?</i></summary>  The classical ultrapower is a fundamental construction in logic, where it plays a role in several striking, easy-to-understand theorems about algebraic structures. There are also versions of the ultrapower construction for analytic structures such as Banach spaces, but these do not satisfy the same theorems until the underlying logic is also made more analytic. This talk will overlap by about half with one I gave in the algebra seminar last spring. I presume no familiarity with logic.
+</details>
 </TD></TR>
 
 <TR>
@@ -174,7 +175,8 @@ Fall 2010
     <td>
 <a href="http://people.virginia.edu/~mve2x/">Mikhail Ershov</a>
  &nbsp;&nbsp;<span class="small">Host: M. Ershov</span><br>
-&nbsp;&nbsp;<i>Title: <a href="abstracts.htm#ershov">What is Kazhdan's property (T)?</a></i>
+&nbsp;&nbsp;<details><summary><i>Title: What is Kazhdan's property (T)?</i></summary>   Property (T) is a representation-theoretic notion defined by Kazhdan in 1967. Originally introduced merely as a tool for studying lattices in Lie groups, property (T) quickly turned into a major research direction with many connections outside of group theory and representation theory. In this talk, I plan to define property (T), describe (in very general terms) basic techniques for proving / disproving property (T), and discuss some of its basic applications, mainly in combinatorics.
+</details>
 
 </TD></TR>
 
@@ -183,9 +185,12 @@ Fall 2010
 <B>October 7</B>
 </td>
 <td>
-<a href=http://www.math.virginia.edu/~ww9c/">Weiqiang Wang</a>
+<a href="http://www.math.virginia.edu/people/ww9c">
+  Weiqiang Wang
+</a>
  &nbsp;&nbsp;<span class="small">Host: W. Wang</span><br>
-&nbsp;&nbsp;<i>Title: <a href="abstracts.htm#wang">What is Boson-Fermion Correspondence?</a></i>
+&nbsp;&nbsp;<details><summary><i>Title: What is Boson-Fermion Correspondence?</i></summary>  The answers depend on whom you talk to. The boson-fermion correspondence has roots in math physics. It can be turned into a new approach to the character tables and representations of the symmetric groups. It offers another view toward the combinatorics of partitions. It also provides a module theoretic framework [categorification] for the celebrated Jacobi triple product identity.
+</details>
 
 </TD></TR>
 
@@ -198,7 +203,8 @@ Fall 2010
 <a href="http://people.virginia.edu/~aa4cr/">Malek Abdesselam</a> (UVA)
 <!--</a>-->
  &nbsp;&nbsp;<span class="small">Host: M. Abdesselam</span><br>
-&nbsp;&nbsp;<i>Title: <a href="abstracts.htm#abdesselam">What is a Feynman Diagram?</a></i>
+&nbsp;&nbsp;<details><summary><i>Title: What is a Feynman Diagram?</i></summary>There are many viable answers to this question. Mine is: a finite combinatorial structure which encodes an algebraic expression given by contraction of indices, starting from a collection of elementary tensors. When seen in this way, Feynman diagrams turn out to be ubiquitous in mathematics and can shed light on questions in algebra as well as analysis. I will try to give a very selective sample of applications of this notion, starting with explicit series for solutions of systems of algebraic equations.
+</details>
 
 </TD></TR>
 
@@ -211,7 +217,7 @@ Fall 2010
 Jae-hoon Kwon
 <!--</a>-->
 (University of Seoul/UC Berkeley) &nbsp;&nbsp;<span class="small">Host: W. Wang</span><br>
-&nbsp;&nbsp;<i>Title: <a href="abstracts.htm#kwon">Crystal graphs and Young tableaux</a> </i>
+&nbsp;&nbsp;<details><summary><i>Title: Crystal graphs and Young tableaux</i></summary>	A crystal graph is a combinatorial object associated with an integrable highest weight module over the quantum group of a Kac-Moody algebra. The purpose of this talk is to give an exposition on the relation between the classical combinatorics of Young tableaux and the crystal graphs of integrable $U_q(\mathfrak{gl}_n)$-modules, as an introduction to crystal base theory for those who are not familiar with this area.</details>
 
 </TD></TR>
 
@@ -222,7 +228,8 @@ Jae-hoon Kwon
     </td>
     <td>
         <a href="http://www.math.cornell.edu/~vogtmann/">Karen Vogtmann</a> (Cornell) &nbsp;&nbsp;<span class="small">Host: S. Krushkal</span><br />
-        &nbsp;&nbsp;<i>Title: <a href="abstracts.htm#Vogtmann">Maps into and out of  automorphism groups of free groups</a></i>
+        &nbsp;&nbsp;<details><summary><i>Title: Maps into and out of  automorphism groups of free groups</i></summary>  The contemporary study of mapping class groups and outer automophism groups of free groups is heavily influenced by the analogy between these groups and lattices in semisimple Lie groups. It can be proved that these groups are not lattices, so the fact that they share many properties with lattices is intriguing and somewhat mysterious. In this talk I will focus on properties of automorphism groups of free groups which echo the strong rigidity properties enjoyed by lattices, i.e. properties which severely restrict the possibilities for homomorphisms between lattices.
+        </details>
     </td>
 </tr>
 
@@ -243,14 +250,16 @@ Thanksgiving
 </td>
     <td>
         <a href="http://math.depaul.edu/~bridget/">Bridget Tenner</a> (DePaul University) &nbsp;&nbsp;<span class="small">Host: M. Hill</span><br />
-        &nbsp;&nbsp;<i>Title: <a href="abstracts.htm#Tenner">Coxeter groups and Bruhat order: algebraic and topological structure</a></i>
+        &nbsp;&nbsp;<details><summary><i>Title: Coxeter groups and Bruhat order: algebraic and topological structure</i></summary>Coxeter groups are classical objects of interest to mathematicians in a variety of disciplines. One aspect of these systems is the study of a particular partial ordering of their elements, known as the Bruhat order.
+        In this talk we explore several different structural aspects of Coxeter groups and of the Bruhat order, from both algebraic and topological perspectives. The results discussed will involve reduced words, permutation patterns, zonotopal tilings, order ideals, and the homotopy type of a particular cell complex. For example, recent work has uncovered significant links between permutation patterns, the reduced words of a permutation, and the interval structure of the Bruhat order. Among other things, this connection implies that a certain class of 2n-gons can be tiled by convex centrally symmetric 2k-gons iff k is 2 or n.</details>
     </td>
 </TR>
 <tr>
     <td><b>December 9</b></td>
     <td>
         Howard Masur (University of Chicago) &nbsp;&nbsp;<span class="small">Host: A. Rapinchuk</span><br />
-        &nbsp;&nbsp;<i>Title: <a href="abstracts.htm#Masur">Dynamics and ergodic theory of billiards in rational angled polygons</a></i>
+        &nbsp;&nbsp;<details><summary><i>Title: Dynamics and ergodic theory of billiards in rational angled polygons</i></summary>An appealing example of a dynamical system is given by billiards in a polygon in the plane. The billiard ball moves at unit speed in a straight line and reflects off the sides with angle of reflection equal to angle of incidence. In dynamical systems one typically wants to study the long term behavior of orbits. In ergodic theory one asks if typical orbits are equidistributed. The case when the vertex angles are rational multiples of pi has been extensively studied. There is an unfolding process which converts the table into what is called a translation surface, and the billiard flow into a flow by straight lines on the surface. The unfolding of a square gives a torus and the flow is by straight lines on the torus, a subject that goes back to Kronecker and Weyl. In general one gets flows on higher genus surfaces. I will survey some of what is known in this subject.
+</details>
     </td>
 </tr>
 </tbody>
