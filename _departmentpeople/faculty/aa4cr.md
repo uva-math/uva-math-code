@@ -3,7 +3,7 @@ UVA_id: aa4cr
 lastname: Abdesselam
 name: Abdelmalek
 general_position: faculty
-position:
+position: Associate Professor
 office: 227 Kerchof Hall
 phone: 434-924-4926
 email: malek@virginia.edu
