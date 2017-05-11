@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 set -e # halt script on error
 
+sed -i.bak 's/url: \"https:\/\/uva-math.github.io\"/url: \"http:\/\/uva-math.s3-website-us-east-1.amazonaws.com\"/g' _config.yml
+
 bundle exec jekyll build
 bundle exec htmlproofer ./_site --allow_hash_href true
