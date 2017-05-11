@@ -35,7 +35,7 @@ sem_archive: true
 
 <B>September 11</B></td>
 <td valign="top">
-<a href="http://uoregon.edu/~klesh/">Sasha Kleshchev
+<a href="http://pages.uoregon.edu/klesh/">Sasha Kleshchev
 </a> (University of Oregon/UVa) &nbsp;&nbsp;<span class="small">Host: Weiqiang Wang</span><br>
 &nbsp;&nbsp;<i>Title: Recent developments in representation theory of symmetric groups</i>
 
