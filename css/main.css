@@ -89,7 +89,7 @@ a:hover.list-group-item.active {
 .navbar-light .navbar-nav .nav-link {
   color: #002F6C;
   font-family: "franklingothic-demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 19px;
   text-transform: uppercase;
 }
 
@@ -173,7 +173,7 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 19px;
+  font-size: 18px;
 }
 h6,
 .h6 {
