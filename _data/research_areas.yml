@@ -1,6 +1,12 @@
 # This is used for generating the list of research areas
 # This has to match the pages permalinks for the research area pages
 
+
+-
+  name: Algebra and Representation Theory
+  shortname: alg_repth
+
+
 -
   name: Analysis and PDEs
   shortname: analysis
@@ -16,7 +22,3 @@
 -
   name: Geometry and Topology
   shortname: geom_top
-
--
-  name: Algebra and Representation Theory
-  shortname: alg_repth
