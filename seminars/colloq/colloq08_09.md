@@ -24,8 +24,8 @@ sem_archive: true
 
 <B>September 9*</B></td>
 <td valign="top">
-Louis Rowen
- (Bar Ilan University) &nbsp;&nbsp;<span class="small">Host: Andrei Rapinchuk</span><br>
+<a href="http://u.math.biu.ac.il/~rowen/">Louis Rowen
+</a> (Bar Ilan University) &nbsp;&nbsp;<span class="small">Host: Andrei Rapinchuk</span><br>
 &nbsp;&nbsp;<i>Title: Supertropical algebra (Joint work with Z. Izhakian)</i>
 
 
@@ -35,8 +35,8 @@ Louis Rowen
 
 <B>September 11</B></td>
 <td valign="top">
-Sasha Kleshchev
- (University of Oregon/UVa) &nbsp;&nbsp;<span class="small">Host: Weiqiang Wang</span><br>
+<a href="http://pages.uoregon.edu/klesh/">Sasha Kleshchev
+</a> (University of Oregon/UVa) &nbsp;&nbsp;<span class="small">Host: Weiqiang Wang</span><br>
 &nbsp;&nbsp;<i>Title: Recent developments in representation theory of symmetric groups</i>
 
 
@@ -60,8 +60,8 @@ Sasha Kleshchev
 
 <B>October 2</B></td>
 <td valign="top">
-Rafael Benguria
- (P. Universidad Catolica de Chile) &nbsp;&nbsp;<span class="small">Host: Lawrence Thomas</span><br>
+<a href="http://www.fis.puc.cl/~rbenguri/">Rafael Benguria
+</a> (P. Universidad Catolica de Chile) &nbsp;&nbsp;<span class="small">Host: Lawrence Thomas</span><br>
 &nbsp;&nbsp;<i>Title: The zeroes of the Fourier transform of the characteristic function of
 a domain and their relation with the eigenvalues of the Laplacian
 </i>
@@ -73,8 +73,8 @@ a domain and their relation with the eigenvalues of the Laplacian
 
 <B>October 9</B></td>
 <td valign="top">
-Ruth Williams
- (UCSD) &nbsp;&nbsp;<span class="small">Host: Christian Gromoll</span><br>
+<a href="http://www.math.ucsd.edu/~williams">Ruth Williams
+</a> (UCSD) &nbsp;&nbsp;<span class="small">Host: Christian Gromoll</span><br>
 &nbsp;&nbsp;<i>Title: Stochastic networks with resource sharing
 </i>
 
@@ -118,8 +118,8 @@ Michael Jolly
 
 <B>November 6</B></td>
 <td valign="top">
-Charles Rezk
- (U Illinois, Urbana) &nbsp;&nbsp;<span class="small">Host: Nick Kuhn</span><br>
+<a href="http://www.math.uiuc.edu/~rezk/">Charles Rezk
+</a> (U Illinois, Urbana) &nbsp;&nbsp;<span class="small">Host: Nick Kuhn</span><br>
 &nbsp;&nbsp;<i>Canceled</i>
 
 
@@ -131,8 +131,8 @@ Charles Rezk
 
 <B>November 13</B></td>
 <td valign="top">
-David Hemmer
- (Buffalo) &nbsp;&nbsp;<span class="small">Host: Brian Parshall</span><br>
+<a href="http://www.math.buffalo.edu/~dhemmer/">David Hemmer
+</a> (Buffalo) &nbsp;&nbsp;<span class="small">Host: Brian Parshall</span><br>
 &nbsp;&nbsp;<i>Title: A tour of symmetric group representation theory via Specht module
 filtrations</i>
 
@@ -207,7 +207,7 @@ No colloquium
 
 <B>February 5</B></td>
 <td valign="top">
-Michael Chipot  (University of Z&uuml;rich)
+<a href="http://www.math.uzh.ch/index.php?professur&key1=108&no_cache=1">Michael Chipot</a>  (University of Z&uuml;rich)
 <br>
 <i>Title:
 On Correctors in Anisotropic Singular Perturbations Problems
@@ -224,7 +224,7 @@ Host: Irena Lasiecka
 <td valign="top">
 No colloquium
 <br>
-<i></i>
+<i><a href=""></a></i>
 Departmental Meeting
 </TD></TR><TR><TD VALIGN="top">
 
@@ -257,7 +257,7 @@ Samuel Krushkal  (Bar-Ilan University and UVA)
 <td valign="top">
 No colloquium
 <br>
-<i></i>
+<i><a href=""></a></i>
 Spring Recess
 </TD></TR><TR><TD VALIGN="top">
 
@@ -265,7 +265,7 @@ Spring Recess
 
 <B>March 12</B></td>
 <td valign="top">
-**cancelled** Dan Nakano  (University of Georgia)
+**cancelled** <a href="http://www.math.uga.edu/%7Enakano/">Dan Nakano</a>  (University of Georgia)
 <br>
 <i>Title: Invertible Modules, Cohomology, and Nilpotent Matrices </i>
 <BR>
@@ -313,7 +313,7 @@ Host: Andrei Rapinchuk
 
 <B>April 2</B></td>
 <td valign="top">
-**cancelled** C. Ward Henson  (UIUC)
+**cancelled** <a href="http://www.math.uiuc.edu/~henson/">C. Ward Henson</a>  (UIUC)
 <br>
 <details><summary><i>Title: Model theory for metric structures</i></summary> A metric structure is based on a complete metric space (M,d); the rest of the structure consists of operations, which are distinguished M-valued functions on M; predicates, which are distinguished real-valued functions on M, and constants, which are distinguished elements of M. The restriction of each operation and predicate to an arbitrary bounded subset of its domain must be bounded and uniformly continuous. Metric structures arise in all areas of mathematics, especially in analysis, probability, and geometry. For example: Banach spaces, -lattices, -algebras, etc; C*-algebras; measure algebras; asymptotic cones of finitely generated groups; and metric spaces themselves.
   Logicians view model theory as a set of concepts and tools for applying first order logic (predicate logic) to structures arising in mathematics. A more congenial starting point for non-logicians is the ultraproduct construction, which has been used in natural ways in many parts of algebra. There is a nice generalization of the ultraproduct construction to metric structures, and it has found important uses since the 1960s in several areas of analysis. (For example, ultraproducts of Banach spaces are routinely used as a tool by specialists in the geometric theory of Banach spaces.) We will use this ultraproduct from analysis as a starting point for explaining how model theory is beginning to be applied to metric structures.
@@ -368,7 +368,7 @@ Host: Tom Kriete
 
 <B>April 30</B></td>
 <td valign="top">
-Michael Hill  (UVa)
+<a href="http://people.virginia.edu/~mah7cd/">Michael Hill</a>  (UVa)
 <br>
 <details><summary><i>Title: On the non-existence of Kervaire invariant one manifolds</i></summary>  I will describe joint work with Hopkins and Ravenel in which we show that there are no smooth Kervaire invariant one manifolds in dimensions larger than 126. I will begin by describing the classical reductions from the study of manifolds to the study of the Adams spectral sequence, and then I will describe some new, equivariant techniques which further recast the problem into one of algebra.
 </details>

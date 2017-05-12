@@ -229,7 +229,7 @@ Jae-hoon Kwon
         <b>November 4</b>
     </td>
     <td>
-        Karen Vogtmann (Cornell) &nbsp;&nbsp;<span class="small">Host: S. Krushkal</span><br />
+        <a href="http://www.math.cornell.edu/~vogtmann/">Karen Vogtmann</a> (Cornell) &nbsp;&nbsp;<span class="small">Host: S. Krushkal</span><br />
         &nbsp;&nbsp;<details><summary><i>Title: Maps into and out of  automorphism groups of free groups</i></summary>  The contemporary study of mapping class groups and outer automophism groups of free groups is heavily influenced by the analogy between these groups and lattices in semisimple Lie groups. It can be proved that these groups are not lattices, so the fact that they share many properties with lattices is intriguing and somewhat mysterious. In this talk I will focus on properties of automorphism groups of free groups which echo the strong rigidity properties enjoyed by lattices, i.e. properties which severely restrict the possibilities for homomorphisms between lattices.
         </details>
     </td>
