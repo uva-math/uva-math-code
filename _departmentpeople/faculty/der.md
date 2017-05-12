@@ -10,5 +10,7 @@ email: der@virginia.edu
 image: __SITE_URL__/img/people/Ramirez.jpg
 personal_page:
 
+areas:
+  - Analysis, PDEs, and Operator Algebras
 
 ---

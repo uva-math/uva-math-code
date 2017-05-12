@@ -11,4 +11,7 @@ image: __SITE_URL__/img/people/Kuhn.jpg
 personal_page:
 
 
+areas:
+  - Geometry and Topology
+
 ---

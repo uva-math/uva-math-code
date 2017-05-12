@@ -10,5 +10,8 @@ email: lww8k@virginia.edu
 image: __SITE_URL__/img/people/West.jpg
 personal_page:
 
+areas:
+  - Algebra and Representation Theory
+
 
 ---

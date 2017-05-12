@@ -10,5 +10,10 @@ email: ais6a@virginia.edu
 image:
 personal_page: http://faculty.virginia.edu/saenz/
 
+areas:
+  - Probability and Combinatorics
+  - Mathematical Physics and Applied Mathematics
+  - Geometry and Topology
+
 
 ---

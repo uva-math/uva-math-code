@@ -10,5 +10,7 @@ email: krushkal@virginia.edu
 image: __SITE_URL__/img/people/Krushkal.jpg
 personal_page:
 
+areas:
+  - Geometry and Topology
 
 ---

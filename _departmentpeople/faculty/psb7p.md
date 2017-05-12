@@ -10,5 +10,9 @@ email: psb7p@virginia.edu
 image: __SITE_URL__/img/people/Bourdon.jpg
 personal_page:
 
+areas:
+  - Analysis, PDEs, and Operator Algebras
+  - Mathematical Physics and Applied Mathematics
+
 
 ---

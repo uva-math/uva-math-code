@@ -10,5 +10,7 @@ email: jeb2md@virginia.edu
 image: __SITE_URL__/img/people/Bergner.jpg
 personal_page:
 
+areas:
+  - Geometry and Topology
 
 ---

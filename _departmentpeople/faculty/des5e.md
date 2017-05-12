@@ -10,5 +10,8 @@ email: dsherman@virginia.edu
 image: __SITE_URL__/img/people/Sherman.jpg
 personal_page:
 
+areas:
+  - Analysis, PDEs, and Operator Algebras
+
 
 ---

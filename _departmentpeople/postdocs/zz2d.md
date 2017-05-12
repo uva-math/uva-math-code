@@ -10,5 +10,7 @@ email: zz2d@virginia.edu
 image: __SITE_URL__/img/people/Zhang.jpg
 personal_page:
 
+areas:
+  - Algebra and Representation Theory
 
 ---

@@ -10,5 +10,9 @@ email: zg7c@virginia.edu
 image: __SITE_URL__/img/people/Grujic.jpg
 personal_page:
 
+areas:
+  - Analysis, PDEs, and Operator Algebras
+  - Mathematical Physics and Applied Mathematics
+
 
 ---

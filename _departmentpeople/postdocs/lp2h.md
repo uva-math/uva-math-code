@@ -10,5 +10,8 @@ email: lp2h@virginia.edu
 image: __SITE_URL__/img/people/Pereira.jpg
 personal_page: http://www.faculty.virginia.edu/luisalex/
 
+areas:
+  - Geometry and Topology
+
 
 ---

@@ -11,4 +11,7 @@ image: __SITE_URL__/img/people/Abramenko.jpg
 personal_page:
 
 
+areas:
+  - Algebra and Representation Theory
+  
 ---

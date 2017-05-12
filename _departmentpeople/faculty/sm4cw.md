@@ -10,5 +10,7 @@ email: sm4cw@virginia.edu
 image: __SITE_URL__/img/people/Maloni.jpg
 personal_page:
 
+areas:
+  - Geometry and Topology
 
 ---

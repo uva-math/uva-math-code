@@ -10,5 +10,9 @@ email: jeff@virginia.edu
 image: __SITE_URL__/img/people/Holt.jpg
 personal_page:
 
+areas:
+  - Mathematical Physics and Applied Mathematics
+  - Analysis, PDEs, and Operator Algebras
+
 
 ---

@@ -10,5 +10,7 @@ email: malek@virginia.edu
 image: __SITE_URL__/img/people/Abdesselam.jpg
 personal_page:
 
+areas:
+  - Mathematical Physics and Applied Mathematics
 
 ---

@@ -10,5 +10,9 @@ email: jf8dc@virginia.edu
 image: __SITE_URL__/img/people/Foldes.jpg
 personal_page:
 
+areas:
+  - Analysis, PDEs, and Operator Algebras
+  - Probability and Combinatorics
+
 
 ---

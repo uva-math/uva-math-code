@@ -10,5 +10,8 @@ email: iwh@virginia.edu
 image: __SITE_URL__/img/people/Herbst.jpg
 personal_page:
 
+areas:
+  - Mathematical Physics and Applied Mathematics
+
 
 ---

@@ -11,7 +11,7 @@
   shortname: geom_top
 
 -
-  name: Analysis and PDEs
+  name: Analysis, PDEs, and Operator Algebras
   shortname: analysis
 
 -
@@ -24,4 +24,4 @@
 
 -
   name: History of Mathematics and Mathematical Education
-  shortname: mathphys
+  shortname: histmath

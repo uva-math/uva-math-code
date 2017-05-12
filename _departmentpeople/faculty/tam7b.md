@@ -10,5 +10,9 @@ email: melcher@virginia.edu
 image: __SITE_URL__/img/people/Melcher.jpg
 personal_page:
 
+areas:
+  - Probability and Combinatorics
+  - Analysis, PDEs, and Operator Algebras
+
 
 ---

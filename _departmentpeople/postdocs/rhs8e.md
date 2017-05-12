@@ -10,5 +10,9 @@ email: rhs8e@virginia.edu
 image: __SITE_URL__/img/people/Santharoubane.jpg
 personal_page:
 
+areas:
+  - Geometry and Topology
+  - Mathematical Physics and Applied Mathematics
+
 
 ---

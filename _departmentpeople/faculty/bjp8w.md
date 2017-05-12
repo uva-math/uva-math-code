@@ -10,5 +10,7 @@ email: bjp8w@virginia.edu
 image: __SITE_URL__/img/people/ParshallB.jpg
 personal_page:
 
+areas:
+  - Algebra and Representation Theory
 
 ---

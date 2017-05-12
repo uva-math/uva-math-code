@@ -10,4 +10,8 @@ email: jlm6cj@virginia.edu
 image:
 personal_page:
 
+areas:
+  - Probability and Combinatorics
+  - Algebra and Representation Theory
+
 ---

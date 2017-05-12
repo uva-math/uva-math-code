@@ -10,5 +10,8 @@ email: obus@virginia.edu
 image: __SITE_URL__/img/people/Obus.jpg
 personal_page:
 
+areas:
+  - Algebra and Representation Theory
+  - Geometry and Topology
 
 ---

@@ -10,5 +10,8 @@ email: af7py@virginia.edu
 image: __SITE_URL__/img/people/Farhat.jpg
 personal_page:
 
+areas:
+  - Analysis, PDEs, and Operator Algebras
+
 
 ---
