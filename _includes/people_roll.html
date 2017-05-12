@@ -41,8 +41,9 @@
     <div class="col-md-2">
       {% if ppl.image != null %}
       <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:70px" class="hidden-sm-down float-right"></a>
+      <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:100px" class="hidden-md-up mt-3"></a>
       {% else %}
-        <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{site.url}}/img/people/Avatar_image.png" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:80px" class="hidden-sm-down float-right"></a>
+        <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{site.url}}/img/people/Avatar_image.png" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:70px" class="hidden-sm-down float-right"></a>
       {% endif %}
     </div>
   </div>
