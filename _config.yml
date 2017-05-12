@@ -20,6 +20,7 @@ defaults:
       type: departmentpeople
     values:
       layout: departmentpeople_page
+      nav_parent: People
 
 collections:
   departmentpeople:
