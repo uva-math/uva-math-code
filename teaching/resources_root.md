@@ -1,5 +1,5 @@
 ---
-title: Resources
+title: Resources and Information
 layout: static_page_no_right_menu
 permalink: /resources/
 nav_id: Resources
