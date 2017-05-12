@@ -74,7 +74,7 @@ a:hover.list-group-item.active {
 
 
 #q		{
-  width:110px;
+  width:115px;
   -webkit-transition:width 0.3s ease-in-out;
 }
 #q:focus	{
