@@ -74,11 +74,11 @@ a:hover.list-group-item.active {
 
 
 #q		{
-  width:115px;
+  width:110px;
   -webkit-transition:width 0.3s ease-in-out;
 }
 #q:focus	{
-  width:200px;
+  width:220px;
   -webkit-transition:width 0.5s ease-in-out;
 }
 

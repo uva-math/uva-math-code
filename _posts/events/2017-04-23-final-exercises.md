@@ -6,7 +6,7 @@ event-date: 2017-05-20 12:00:00
 comments: false
 categories: major-news news events
 published: true
-image: __SITE_URL__/img/diplomas.gif
+image: __SITE_URL__/img/Routunda.jpg
 image-alt: Final Exercises ceremony
 more-text: Schedule and locations
 ---
