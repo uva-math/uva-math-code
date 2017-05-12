@@ -1,5 +1,3 @@
-{% include support_link.html %}
-<br>
 <div class="list-group h5">
   {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %}
   <a href="{{ site.url }}/calendar/" class="list-group-item {% if page.url == '/calendar/' %}active{% endif %}">All seminars</a>
