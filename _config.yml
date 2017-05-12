@@ -24,6 +24,6 @@ defaults:
 collections:
   departmentpeople:
     output: true
-    permalink: /people/:name
+    permalink: /people/:name/
 
 exclude: [vendor]

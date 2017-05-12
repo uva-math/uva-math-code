@@ -22,7 +22,7 @@
         <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;" alt="{{ page.name }} {{ page.lastname }}" title="{{ page.name }} {{ page.lastname }}">
       {% endif %}
 
-      <a href="{{site.url}}/people/{{page.UVA_id}}.html">{{ page.name }} {{ page.lastname }}</a>
+      <a href="{{site.url}}/people/{{page.UVA_id}}/">{{ page.name }} {{ page.lastname }}</a>
        -
       {{ page.position }}
       -
