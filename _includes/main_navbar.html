@@ -20,13 +20,13 @@
         </a><ul class="list-group">
           {% for pp in sorted_pages%}
           {% if pp.nav_id != null and pp.nav_parent == p.nav_id %}
-          <li class="list-group-item" style="padding: 1px"><a class="h5" href="{{site.url}}{{pp.url}}">{{pp.nav_id}}{%if pp.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a></li>
+          <li class="list-group-item" style="padding: 1px; background-color:#F1F1EF;"><a class="h5" href="{{site.url}}{{pp.url}}">{{pp.nav_id}}{%if pp.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a></li>
           {% endif %}
           {% endfor %}
           {% if p.nav_id == "Seminars" %}
             {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %}
             {% for sem in sorted_sem %}
-            <li class="list-group-item" style="padding: 1px"><a class="h5 {%if page.url contains sem.shortname %}active bg-inverse{% endif %}" href="{{site.url}}/seminars/{{sem.shortname}}">{{sem.name}}{%if page.url contains sem.shortname %}<span class="sr-only">(current)</span>{% endif %}</a></li>
+            <li class="list-group-item" style="padding: 1px; background-color:#F1F1EF;"><a class="h5 {%if page.url contains sem.shortname %}active bg-inverse{% endif %}" href="{{site.url}}/seminars/{{sem.shortname}}">{{sem.name}}{%if page.url contains sem.shortname %}<span class="sr-only">(current)</span>{% endif %}</a></li>
             {% endfor %}
           {% endif %}
           </ul>
