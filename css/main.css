@@ -20,6 +20,10 @@ a:focus, a:hover {
   text-decoration: underline;
 }
 
+a.list-group-item-action:hover, a.list-group-item-action:focus {
+  color: #e57200;
+}
+
 .bg-inverse {
   background-color: #002F6C !important;
 }
