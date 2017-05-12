@@ -9,6 +9,6 @@ phone: 434-243-8698
 email: me3qr@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

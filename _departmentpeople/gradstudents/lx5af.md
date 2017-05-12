@@ -9,6 +9,6 @@ phone: 434-924-3776
 email: lx5af@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

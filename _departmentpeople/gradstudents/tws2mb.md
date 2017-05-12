@@ -9,6 +9,6 @@ phone: 434-982-2786
 email: tws2mb@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

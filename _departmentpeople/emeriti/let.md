@@ -9,6 +9,6 @@ phone: 434-924-4936
 email: let@virginia.edu
 image: __SITE_URL__/img/people/Thomas.jpg
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

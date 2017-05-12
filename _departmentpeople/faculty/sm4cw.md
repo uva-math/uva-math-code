@@ -9,6 +9,6 @@ phone: 434-924-8896
 email: sm4cw@virginia.edu
 image: __SITE_URL__/img/people/Maloni.jpg
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

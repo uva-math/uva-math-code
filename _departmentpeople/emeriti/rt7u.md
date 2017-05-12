@@ -9,6 +9,6 @@ phone:
 email: rt7u@virginia.edu
 image: __SITE_URL__/img/people/Triggiani.jpg
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

@@ -9,6 +9,6 @@ phone: 434-982-2785
 email: zg8bf@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

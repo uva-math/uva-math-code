@@ -9,6 +9,6 @@ phone: 434-924-4933
 email: iwh@virginia.edu
 image: __SITE_URL__/img/people/Herbst.jpg
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

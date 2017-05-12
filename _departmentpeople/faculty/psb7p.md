@@ -9,6 +9,6 @@ phone: 434-924-4939
 email: psb7p@virginia.edu
 image: __SITE_URL__/img/people/Bourdon.jpg
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

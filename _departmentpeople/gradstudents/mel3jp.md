@@ -9,6 +9,6 @@ phone: 434-982-2786
 email: mel3jp@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

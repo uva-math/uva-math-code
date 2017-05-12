@@ -9,6 +9,6 @@ phone: 434-243-1115
 email: mra4ma@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

@@ -9,6 +9,6 @@ phone: 434-924-1411
 email: khp3k@virginia.edu
 image: __SITE_URL__/img/people/ParshallK.jpg
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

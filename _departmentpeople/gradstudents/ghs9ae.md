@@ -9,6 +9,6 @@ phone: 434-243-2304
 email: ghs9ae@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

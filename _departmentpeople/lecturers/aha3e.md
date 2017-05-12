@@ -9,6 +9,6 @@ phone: 434-924-4940
 email: aha3e@virginia.edu
 image: __SITE_URL__/img/people/Abdelbaki.jpg
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

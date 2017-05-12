@@ -9,6 +9,6 @@ phone: 434-924-4910
 email: imbrie@virginia.edu
 image: __SITE_URL__/img/people/Imbrie.jpg
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

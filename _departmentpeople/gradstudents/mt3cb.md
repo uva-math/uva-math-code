@@ -9,6 +9,6 @@ phone: 434-924-8777
 email: mt3cb@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

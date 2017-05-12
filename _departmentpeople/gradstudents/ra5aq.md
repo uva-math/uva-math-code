@@ -9,6 +9,6 @@ phone: 434-924-8777
 email: ra5aq@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

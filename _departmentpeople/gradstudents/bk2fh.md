@@ -9,6 +9,6 @@ phone: 434-924-3796
 email: bk2fh@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

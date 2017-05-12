@@ -9,6 +9,6 @@ phone: 434-924-4919
 email: raj3e@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 published: true
 ---

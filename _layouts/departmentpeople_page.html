@@ -16,37 +16,75 @@
 
   <div class="row">
     <div class="col-md-8">
-      <h2>{{page.name}} {{page.lastname}}</h2>
+      <h1>{{page.name}} {{page.lastname}}</h1>
+      <h2 style="font-size:1.5em" class="mb-3">{{ page.position }}</h2>
 
-      {% if page.image != null %}
-        <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:60%;max-height:400px;height:auto;width:auto;" alt="{{ page.name }} {{ page.lastname }}" title="{{ page.name }} {{ page.lastname }}">
+      <div class="row">
+        {% if page.office != null %}
+        <div class="col-md-6">
+          {% if page.office contains "Halsey" %}
+            P. O. Box 400135<br />Department of Statistics<br />
+          {% else %}
+            P. O. Box 400137<br />Department of Mathematics<br />
+          {% endif %}
+          {{page.office}}
+        </div>
+        {% endif %}
+        <div class="col-md-6">
+
+          {% if page.phone != null %}
+            <span class="fa fa-phone" aria-hidden="true"></span>
+            <a href="tel:{{page.phone}}">{{page.phone}}</a><br />
+          {% endif %}
+
+          {% if page.email != null %}
+            <span class="fa fa-envelope" aria-hidden="true"></span>
+            <a href="mailto:{{ page.email }}">{{ page.email }}</a>
+            <br />
+          {% endif %}
+
+          {% if page.personal_page != null %}
+            <span class="fa fa-external-link" aria-hidden="true"></span>
+            <a href="{{ page.personal_page }}">Personal webpage</a>
+          {% endif %}
+        </div>
+      </div>
+
+      {% if page.areas != null %}
+      <div class="btn-group-vertical btn-group-sm mt-4" role="group" aria-label="research-areas-group">
+        {% for area in page.areas %}
+        {% for def_area in site.data.research_areas %}
+          {% if def_area.name == area%}
+            {% assign cur_def_area = def_area %}
+          {% endif %}
+        {% endfor %}
+          <button type="button" class="btn btn-secondary" style="text-align:left"><a href="{{site.url}}/research/{{cur_def_area.shortname}}">{{area}}</a></button>
+        {% endfor %}
+      </div>
       {% endif %}
 
-      <a href="{{site.url}}/people/{{page.UVA_id}}/">{{ page.name }} {{ page.lastname }}</a>
-       -
-      {{ page.position }}
-      -
 
-      {% if page.email != null %}
-        <a href="mailto:{{ page.email }}">{{ page.email }}</a>
-      {% endif %}
+      <hr />
 
-      {% if page.personal_page != nul %}
-        <br>Personal webpage: <a href="{{ page.personal_page }}">{{ page.personal_page }}</a>
-      {% endif %}
-      <br>
+      <!-- {% if page.interests != null %}
+        <b>Research interests:</b>
+        <ul>
+        {%for int in page.interests%}
+          <li>
+            {{ int }}
+          </li>
+        {%endfor%}
+        </ul>
+      {% endif %} -->
 
-      {{page.office}}
 
-      {{page.phone}}
-
-      {%for int in page.interests%}
-        <br>- {{ int }}<br>
-      {%endfor%}
 
       {{ page.content | markdownify }}
-
-
+    </div>
+    <div class="col-md-4">
+      {% if page.image != null %}
+        <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;" alt="{{ page.name }} {{ page.lastname }}" title="{{ page.name }} {{ page.lastname }}">
+      {% endif %}
     </div><!--/span-->
   </div>
 </div>

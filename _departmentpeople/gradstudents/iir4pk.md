@@ -9,6 +9,6 @@ phone: 434-243-8778
 email: iir4pk@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

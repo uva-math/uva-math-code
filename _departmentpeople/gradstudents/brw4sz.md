@@ -9,6 +9,6 @@ phone: 434-924-3776
 email: brw4sz@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

@@ -7,7 +7,7 @@
     <div class="col-md-6">
       <a href="{{site.url}}/people/{{ppl.UVA_id}}/" class="h5">{{ ppl.name }} {{ ppl.lastname }}</a>
       <div class="mb-1"><i>{{ ppl.position }}</i></div>
-        {% for area in ppl.areas %}
+        <!--{% for area in ppl.areas %}
         {% for def_area in site.data.research_areas %}
           {% if def_area.name == area%}
             {% assign cur_def_area = def_area %}
@@ -18,24 +18,30 @@
           {% else %}
             <a href="{{site.url}}/research/{{cur_def_area.shortname}}">{{area}}</a>
           {% endif %}
-        {% endfor %}
+        {% endfor %}-->
 
     </div>
     <div class="col-md-4">
-      {{ppl.office}}
+      {% if ppl.office != null %}
+        <span class="fa fa-building" aria-hidden="true" style="font-size:0.8em"></span>
+        {{ppl.office}}
+        <br>
+      {% endif %}
 
-      <br>
       {% if ppl.phone != null %}
-        {{ppl.phone}}
+        <span class="fa fa-phone" aria-hidden="true" style="font-size:0.8em"></span>
+        <a href="tel:{{ppl.phone}}">{{ppl.phone}}</a>
         <br>
       {% endif %}
 
       {% if ppl.email != null %}
+        <span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span>
         <a href="mailto:{{ ppl.email }}">{{ ppl.email }}</a>
       {% endif %}
       <br>
 
       {% if ppl.personal_page != null %}
+        <span class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></span>
         <a href="{{ ppl.personal_page }}">Personal page</a>
       {% endif %}
     </div>

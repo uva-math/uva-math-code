@@ -9,6 +9,6 @@ phone: 434-243-8778
 email: rhs8e@virginia.edu
 image: __SITE_URL__/img/people/Santharoubane.jpg
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

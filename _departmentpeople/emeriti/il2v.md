@@ -9,6 +9,6 @@ phone:
 email: il2v@virginia.edu
 image: __SITE_URL__/img/people/Lasiecka.jpg
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

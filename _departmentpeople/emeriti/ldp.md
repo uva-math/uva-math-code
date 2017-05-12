@@ -9,6 +9,6 @@ phone: 434-924-4936
 email: ldp@virginia.edu
 image: __SITE_URL__/img/people/Pitt.jpg
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

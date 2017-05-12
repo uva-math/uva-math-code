@@ -9,6 +9,6 @@ phone: 434-243-8777
 email: pjb9ub@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

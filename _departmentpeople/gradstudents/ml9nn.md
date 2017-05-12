@@ -9,6 +9,6 @@ phone: 434-924-4947
 email: ml9nn@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---

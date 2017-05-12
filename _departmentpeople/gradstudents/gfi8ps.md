@@ -9,6 +9,6 @@ phone: 434-
 email: gfi8ps@virginia.edu
 image:
 personal_page:
-interests: #Any and all narrower research interests
+
 
 ---
