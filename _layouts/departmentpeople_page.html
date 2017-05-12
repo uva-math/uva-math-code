@@ -75,7 +75,7 @@
       {% if page.image != null %}
         <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;" alt="{{ page.name }} {{ page.lastname }}" title="{{ page.name }} {{ page.lastname }}">
       {% else %}
-        <img src="{{ site.url }}/img/people/Avatar_image.png" style="max-width:100%;max-height:400px;height:auto;width:auto;" alt="{{ page.name }} {{ page.lastname }}" title="{{ page.name }} {{ page.lastname }}">
+        <img src="{{ site.url }}/img/people/Avatar_image.png" style="max-width:100%;max-height:400px;height:auto;width:auto;" class="hidden-sm-down" alt="{{ page.name }} {{ page.lastname }}" title="{{ page.name }} {{ page.lastname }}">
       {% endif %}
     </div><!--/span-->
   </div>
