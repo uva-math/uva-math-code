@@ -155,6 +155,10 @@ a:hover.list-group-item.active {
   margin-bottom: 20px;
 }
 
+.my-row-zebra .row:nth-of-type(2n+1){
+  background-color: #F1F1EF;
+}
+
 h1,
 .h1 {
   font-size: 34px;
