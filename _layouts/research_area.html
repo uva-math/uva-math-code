@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% if page.sem_page == true and page.sem_archive != true %}
+    {% assign xx = page.permalink | split: '/' %}
+    {% for word in xx %}{% if forloop.last %}{% assign cur_shortname = word %}{%endif%}{% endfor %}
+    {% for sem in site.data.seminars %}
+    {%if sem.shortname == cur_shortname %}
+      <title>{{ sem.name }} | Mathematics at the University of Virginia</title>
+    {%endif%}
+    {% endfor %}
+  {% endif %}
+  {% include header.html %}
+</head>
+
+<body>
+
+{% include top_brand.html %}
+
+{% include navbar.html %}
+
+<div class="container">
+<div class="container">
+
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-12 col-md-8">
+
+      {{ content }}
+		</div>
+    </div><!--/span-->
+  </div>
+</div>
+</div>
+
+{% include footer.html %}
+
+{% include mathjax %}
+
+{% include bootjs %}
+
+</body>
+
+</html>

@@ -8,12 +8,14 @@
       <div class="mb-1"><i>{{ ppl.position }}</i></div>
         {% for area in ppl.areas %}
         {% for def_area in site.data.research_areas %}
-          {{def_area.name}}
+          {% if def_area.name == area%}
+            {% assign cur_def_area = def_area %}
+          {% endif %}
         {% endfor %}
           {% if forloop.last == false %}
-            {{area}},
+            <a href="{{site.url}}/research/{{cur_def_area.shortname}}">{{area}}</a>,
           {% else %}
-            {{area}}
+            <a href="{{site.url}}/research/{{cur_def_area.shortname}}">{{area}}</a>
           {% endif %}
         {% endfor %}
 

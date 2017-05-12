@@ -6,7 +6,7 @@
 
 -
   name: Probability and Combinatorics
-  shortname: probcomb
+  shortname: prob_comb
 
 -
   name: Mathematical Physics
@@ -14,8 +14,8 @@
 
 -
   name: Geometry and Topology
-  shortname: geomtop
+  shortname: geom_top
 
 -
   name: Algebra and Representation Theory
-  shortname: algrep
+  shortname: alg_repth
