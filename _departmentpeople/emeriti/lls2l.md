@@ -9,6 +9,6 @@ phone: 434-924-4929
 email: lls2l@virginia.edu
 image: __SITE_URL__/img/people/Scott.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

@@ -9,6 +9,6 @@ phone: 434-924-8946
 email: fd4v@virginia.edu
 image: __SITE_URL__/img/people/DiPlinio.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

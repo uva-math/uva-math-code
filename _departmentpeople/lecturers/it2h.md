@@ -9,6 +9,6 @@ phone: 434-243-2304
 email: it2h@virginia.edu
 image: __SITE_URL__/img/people/Timchenko.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

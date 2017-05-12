@@ -9,8 +9,12 @@ phone: 434-924-4919
 email: math-chair@virginia.edu
 image: __SITE_URL__/img/people/Huneke.jpg
 personal_page: http://faculty.virginia.edu/huneke/
-interests:
+interests: #Any and all narrower research interests
   - Commutative Algebra
+
+areas: #Must coincide with the ones in _data/research_areas.yml
+  - Algebra and Representation Theory
+
 ---
 
 <!-- ignore this probably outdated info for now -->

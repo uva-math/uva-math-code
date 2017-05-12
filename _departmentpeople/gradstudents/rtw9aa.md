@@ -9,6 +9,6 @@ phone: 434-924-8777
 email: rtw9aa@virginia.edu
 image:
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

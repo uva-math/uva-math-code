@@ -9,6 +9,6 @@ phone: 434-
 email: vvs9cc@virginia.edu
 image:
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

@@ -9,6 +9,6 @@ phone: 434-924-4938
 email: jrf@virginia.edu
 image: __SITE_URL__/img/people/Faulkner.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

@@ -9,6 +9,6 @@ phone: 434-924-4944
 email: lww8k@virginia.edu
 image: __SITE_URL__/img/people/West.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

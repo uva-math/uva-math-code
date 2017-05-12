@@ -9,6 +9,6 @@ phone: 434-243-7702
 email: yqd3p@virginia.edu
 image: __SITE_URL__/img/people/Do.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

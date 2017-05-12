@@ -9,6 +9,6 @@ phone:
 email: ds5nd@virginia.edu
 image:
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

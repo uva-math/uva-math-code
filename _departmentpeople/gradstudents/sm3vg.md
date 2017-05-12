@@ -9,6 +9,6 @@ phone: 434-924-4947
 email: sm3vg@virginia.edu
 image:
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

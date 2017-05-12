@@ -9,6 +9,6 @@ phone: 434-243-1174
 email: rwv7tz@virginia.edu
 image:
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

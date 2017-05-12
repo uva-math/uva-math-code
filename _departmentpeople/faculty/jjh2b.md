@@ -9,6 +9,6 @@ phone: 434-924-4927
 email: jeff@virginia.edu
 image: __SITE_URL__/img/people/Holt.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

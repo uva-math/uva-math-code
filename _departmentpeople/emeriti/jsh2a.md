@@ -9,6 +9,6 @@ phone:
 email: jsh2a@virginia.edu
 image: __SITE_URL__/img/people/Howland.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

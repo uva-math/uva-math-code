@@ -9,6 +9,6 @@ phone: 434-924-4934
 email: der@virginia.edu
 image: __SITE_URL__/img/people/Ramirez.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

@@ -9,5 +9,5 @@ phone: 434-243-8778
 email: jlm6cj@virginia.edu
 image:
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 ---

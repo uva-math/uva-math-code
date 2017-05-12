@@ -9,6 +9,6 @@ phone: 434-924-7079
 email: dsherman@virginia.edu
 image: __SITE_URL__/img/people/Sherman.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

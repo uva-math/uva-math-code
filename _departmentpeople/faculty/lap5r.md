@@ -9,11 +9,18 @@ phone: 434-924-4167
 email: petrov@virginia.edu
 image: __SITE_URL__/img/people/Petrov.jpg
 personal_page: http://faculty.virginia.edu/petrov/
-interests:
+interests: #Any and all narrower research interests
   - Mathematical Physics
   - Probability
   - Representation Theory
   - Statistical Mechanics
+
+areas: #Must coincide with the ones in _data/research_areas.yml
+  - Probability and Combinatorics
+  - Mathematical Physics
+  - Algebra and Representation Theory
+
+
 ---
 
 <!-- ignore this outdated info for now -->

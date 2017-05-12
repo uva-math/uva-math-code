@@ -9,6 +9,6 @@ phone: 434-924-3796
 email: mjf7eb@virginia.edu
 image:
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

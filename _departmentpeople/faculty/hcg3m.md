@@ -9,6 +9,6 @@ phone: 434-924-4923
 email: gromoll@virginia.edu
 image: __SITE_URL__/img/people/Gromoll.jpg
 personal_page: http://faculty.virginia.edu/gromoll/
-interests:
+interests: #Any and all narrower research interests
   - Probability
 ---

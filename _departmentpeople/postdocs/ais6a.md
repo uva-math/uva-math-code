@@ -8,7 +8,7 @@ office: 221 Kerchof Hall
 phone: 434-243-8778
 email: ais6a@virginia.edu
 image:
-personal_page:
-interests:
+personal_page: http://faculty.virginia.edu/saenz/
+interests: #Any and all narrower research interests
 
 ---

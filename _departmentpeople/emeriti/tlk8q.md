@@ -9,6 +9,6 @@ phone: 434-924-4932
 email: tlk8q@virginia.edu
 image: __SITE_URL__/img/people/Kriete.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

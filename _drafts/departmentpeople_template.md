@@ -9,7 +9,7 @@ phone:
 email:
 image:
 personal_page:
-interests:
+interests: #Any and all narrower research interests
   - a
   - b
 ---

@@ -1,0 +1,50 @@
+{% assign sorted_people = (site.departmentpeople | sort: 'lastname') %}
+
+{% for ppl in sorted_people %}
+{% if ppl.general_position == include.type %}
+  <div class="row">
+    <div class="col-md-6">
+      <a href="{{site.url}}/people/{{ppl.UVA_id}}/" class="h5">{{ ppl.name }} {{ ppl.lastname }}</a>
+      <div class="mb-1"><i>{{ ppl.position }}</i></div>
+        {% for area in ppl.areas %}
+        {% for def_area in site.data.research_areas %}
+          {{def_area.name}}
+        {% endfor %}
+          {% if forloop.last == false %}
+            {{area}},
+          {% else %}
+            {{area}}
+          {% endif %}
+        {% endfor %}
+
+    </div>
+    <div class="col-md-4">
+      {{ppl.office}}
+
+      <br>
+      {% if ppl.phone != null %}
+        {{ppl.phone}}
+        <br>
+      {% endif %}
+
+      {% if ppl.email != null %}
+        <a href="mailto:{{ ppl.email }}">{{ ppl.email }}</a>
+      {% endif %}
+      <br>
+
+      {% if ppl.personal_page != null %}
+        <a href="{{ ppl.personal_page }}">Personal page</a>
+      {% endif %}
+    </div>
+    <div class="col-md-2">
+      {% if ppl.image != null %}
+      <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:70px" class="hidden-sm-down float-right"></a>
+      {% else %}
+        <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{site.url}}/img/people/Avatar_image.png" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:80px" class="hidden-sm-down float-right"></a>
+      {% endif %}
+    </div>
+  </div>
+
+  <hr>
+{% endif %}
+{% endfor %}

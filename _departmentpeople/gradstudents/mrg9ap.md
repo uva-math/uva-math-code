@@ -9,6 +9,6 @@ phone: 434-243-8698
 email: mrg9ap@virginia.edu
 image:
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

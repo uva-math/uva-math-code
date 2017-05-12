@@ -9,6 +9,6 @@ phone: 434-924-6887
 email: sgk4n@virginia.edu
 image:
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

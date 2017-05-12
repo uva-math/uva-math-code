@@ -15,7 +15,7 @@ with open('Fall 2016 faculty staff list.csv', 'rb') as csvfile:
         op_file.write('email: ' + row[3] +'@virginia.edu' + '\n')
         op_file.write('image:' + '\n')
         op_file.write('personal_page:' + '\n')
-        op_file.write('interests:' + '\n')
+        op_file.write('interests: #Any and all narrower research interests' + '\n')
         op_file.write('\n')
         op_file.write('---' + '\n')
         

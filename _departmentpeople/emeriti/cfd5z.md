@@ -9,6 +9,6 @@ phone: 434-924-4939
 email: cfd5z@virginia.edu
 image: __SITE_URL__/img/people/Dunkl.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

@@ -9,6 +9,6 @@ phone: 434-924-4924
 email: bdm3f@virginia.edu
 image: __SITE_URL__/img/people/MacCluer.jpg
 personal_page:
-interests:
+interests: #Any and all narrower research interests
 
 ---

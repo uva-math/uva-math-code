@@ -2,15 +2,20 @@
 
 -
   name: Analysis and PDEs
+  shortname: analysis
 
 -
-  name: Probability
+  name: Probability and Combinatorics
+  shortname: probcomb
 
 -
   name: Mathematical Physics
+  shortname: mathphys
 
 -
   name: Geometry and Topology
+  shortname: geomtop
 
 -
   name: Algebra and Representation Theory
+  shortname: algrep

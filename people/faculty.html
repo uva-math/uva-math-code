@@ -8,4 +8,35 @@ nav_nesting: true
 nav_parent: People
 ---
 
-(under construction)
+<h1 class="mb-4">Faculty Directory</h1>
+
+<h2 class="mb-4 mt-5">Permanent Faculty</h2>
+
+
+
+{% include people_roll.html type='faculty' %}
+
+
+<h2 class="mb-4 mt-5">Postdoctoral Visitors</h2>
+
+
+
+
+{% include people_roll.html type='postdoc' %}
+
+
+
+<h2 class="mb-4 mt-5">Lecturers</h2>
+
+
+
+
+{% include people_roll.html type='lecturer' %}
+
+
+
+<h2 class="mb-4 mt-5">Emeritus Faculty</h2>
+
+
+
+{% include people_roll.html type='emeritus' %}
