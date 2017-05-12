@@ -1,10 +1,10 @@
 ---
-title: Academic Programs
+title: Resources
 layout: static_page_no_right_menu
-nav_id: Academic Programs
-permalink: /academics/
-nav_weight: 80
-# nav_nesting: true
+permalink: /resources/
+nav_id: Resources
+nav_weight: 900
+nav_nesting: true
 ---
 
 (under construction)

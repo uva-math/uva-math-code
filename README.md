@@ -4,8 +4,6 @@ Official website of Department of Mathematics at the University of Virginia (und
 
 ## ToDo: Implementation needed of subpages from old website:
 
-- [ ] http://www.math.virginia.edu/news
-- [ ] http://www.math.virginia.edu/conferences
 - [ ] http://www.math.virginia.edu/awards
 - [ ] http://www.math.virginia.edu/newsletter
 - [ ] http://www.math.virginia.edu/content/final-exercises-ceremony-college-and-graduate-school-arts-and-sciences-0
@@ -13,8 +11,6 @@ Official website of Department of Mathematics at the University of Virginia (und
 - [ ] http://www.math.virginia.edu/research
 - [ ] http://www.math.virginia.edu/facultyresearch
 - [ ] http://www.math.virginia.edu/academics
-- [ ] http://www.math.virginia.edu/graduate
-- [ ] http://www.math.virginia.edu/undergraduate
 - [ ] http://www.math.virginia.edu/summer
 - [ ] http://www.math.virginia.edu/courses
 - [ ] http://www.math.virginia.edu/sites/math.virginia.edu/files/Virginia%20Math%20Bulletin%2C%20June%202016.pdf
