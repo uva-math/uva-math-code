@@ -1,0 +1,6 @@
+<h3 class="mb-4">Faculty by research area</h3>
+<div class="list-group-sm mt-4">
+    {% for area in site.data.research_areas %}
+      <a class="list-group-item list-group-item-action" href="{{site.url}}/research/{{area.shortname}}">{{area.name}}</a>
+    {% endfor %}
+</div>

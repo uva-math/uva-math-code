@@ -3,7 +3,7 @@
 <div class="my-row-zebra">
 {% for ppl in sorted_people %}
 {% if ppl.general_position == include.type %}
-  <div class="row" style="padding:8px">
+  <div class="row" style="padding:10px 0px">
     <div class="col-md-6">
       <a href="{{site.url}}/people/{{ppl.UVA_id}}/" class="h5">{{ ppl.name }} {{ ppl.lastname }}</a>
       <div class="mb-1"><i>{{ ppl.position }}</i></div>
