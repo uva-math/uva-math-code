@@ -6,6 +6,9 @@
   name: Algebra and Representation Theory
   shortname: alg_repth
 
+-
+  name: Geometry and Topology
+  shortname: geom_top
 
 -
   name: Analysis and PDEs
@@ -16,9 +19,9 @@
   shortname: prob_comb
 
 -
-  name: Mathematical Physics
+  name: Mathematical Physics and Applied Mathematics
   shortname: mathphys
 
 -
-  name: Geometry and Topology
-  shortname: geom_top
+  name: History of Mathematics and Mathematical Education
+  shortname: mathphys
