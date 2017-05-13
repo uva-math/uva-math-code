@@ -15,12 +15,12 @@
     {% for ppl in sorted_people %}
     {% if ppl.areas contains area.name %}
       <div class="row" style="padding:10px 0px">
-        <div class="col-md-6">
+        <div class="col-md-5">
           <a href="{{site.url}}/people/{{ppl.UVA_id}}/" class="h5">{{ ppl.name }} {{ ppl.lastname }}</a>
           <div class="mb-1"><i>{{ ppl.position }}</i></div>
 
         </div>
-        <div class="col-md-4">
+        <div class="col-md-5">
           {% if ppl.office != null %}
             <span class="fa fa-building" aria-hidden="true" style="font-size:0.8em"></span>
             {{ppl.office}}
