@@ -1,13 +1,23 @@
 ---
-title: Research Areas and People Pages | Documentation
+title: People Pages and Research Areas
 layout: documentation_page
 permalink: /doc/people/
 nav_parent: Info
+doc_page: true
+nav_weight: 102
 ---
 
 # People pages and research areas
 
-Here's an example of a description of a faculty member. The page itself can be found [here]({{site.url}}/people/aso9t/).
+## Structure of people pages
+
+### One person - one file
+
+Each person's page corresponds to a single file in the `_departmentpeople/` folder called `[UVA_COMPUTING_ID].md`. This naming is for the purposes of consistency with links in the old website. This file corresponds to the page `{{site.url}}/people/[UVA_COMPUTING_ID]/`. The people listings such as [{{site.url}}/faculty/]({{site.url}}/faculty/) and listings by research areas are generated automatically.
+
+**Note.** The subfolders in `_departmentpeople/` are purely for convenience - they do not affect anything in the actual website.
+
+Here's an example of such a file for a particular faculty member. The page itself is at [{{site.url}}/people/aso9t/]({{site.url}}/people/aso9t/).
 
 {% highlight markdown linenos %}
 ---
@@ -25,10 +35,31 @@ areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 ---
+
+
 ##### Selected Publications
 - Cyclic extensions and the local lifting problem (with S. Wewers), Ann. of Math. **180**, No. 1 (2014), 233--284.
 - Fields of moduli of three-point $G$-covers with cyclic $p$-Sylow, I, Algebra Number Theory **6**, No. 5 (2012), 833--883.
 {% endhighlight %}
 
-1. describe what everything means and how it's built into a page.
-2. step by step.?
+### Fields in the people pages
+
+The first 15 lines in this file are for configuration, separated by two `---`. The lines after line 15 (after the second `---`) can be any content the person would like on their page. The syntax is [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Math formulas are also [supported]({{site.url}}/doc/math/).
+
+Most configuration fields are self-evident, except the following:
+
+#### `general_position`
+
+#### `image`
+
+#### `areas`
+
+See [below](#research_areas_pages).
+
+### Changing the people in the department
+
+To *add a person*, make a new file and fill all the fields in. The person's page will appear on the website on correct pages.
+
+To *remove a person*, either delete the file, or remove it from the building of the website by adding `published: false`, say, before the `areas:` line.
+
+## <a name="research_areas_pages">Research areas</a>

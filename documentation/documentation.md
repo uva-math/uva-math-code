@@ -1,11 +1,12 @@
 ---
-title: Main principles | Documentation
+title: Main principles
 layout: documentation_page
 permalink: /doc/
 nav_parent: Info
 nav_nesting: true
 nav_weight: 100
 nav_id: Website Documentation
+doc_page: true
 ---
 
 # Main principles
@@ -24,7 +25,7 @@ There are two main ways to edit the website content:
 
 In both cases, the changes in the code will trigger the website to automatically update, this takes about 5 minutes.
 
-Having a local copy of the website allows to preview your edits locally using [Jekyll](https://jekyllrb.com/) (only on Mac and Linux). This procedure is described in detail in Jekyll documentation, see for example [here](https://jekyllrb.com/docs/installation/) and [here](https://jekyllrb.com/docs/usage/). Note that due to API limitations seminar google calendars **may not work** in your local previews.
+Having a local copy of the website allows to preview your edits locally using [Jekyll](https://jekyllrb.com/) (only on Mac and Linux). This procedure is described in detail in Jekyll documentation, see for example [here](https://jekyllrb.com/docs/installation/) and [here](https://jekyllrb.com/docs/usage/). **Note that due to API limitations seminar google calendars will not work in local previews**.
 
 The website building (and testing) are powered by [Travis CI](https://travis-ci.org/). The current build status is&nbsp;&nbsp;[![Build Status](https://travis-ci.org/uva-math/uva-math-code.svg?branch=master)](https://travis-ci.org/uva-math/uva-math-code)
 

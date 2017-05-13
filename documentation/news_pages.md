@@ -1,6 +1,7 @@
 ---
-title: News Pages | Documentation
-layout: documentation_page
+title: News Pages
 permalink: /doc/news/
 nav_parent: Info
+doc_page: true
+nav_weight: 103
 ---
