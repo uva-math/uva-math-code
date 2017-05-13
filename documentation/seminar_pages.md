@@ -9,6 +9,10 @@ nav_weight: 101
 
 # Seminar pages
 
+---
+
+## Overview
+
 The main code for a seminar page located at `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md` ([example on GitHub](https://github.com/uva-math/uva-math-code/blob/master/seminars/colloq/colloq.md)) looks quite simple. Here is an example (symbols `%` and `{}` are together in the actual page, but for correct rendering here they are separated by a space; also in the actual page there are more links to archives):
 
 {% highlight markdown linenos %}
@@ -121,6 +125,10 @@ The bigger this parameter the lower is the seminar in the list of seminars (in t
 #####  information
 
 Under `information: |` field, put a paragraph's description of the seminar. This is displayed on the seminar page and on the page listing all seminars.
+
+---
+
+## How to change seminar pages
 
 ### Changing seminar information
 

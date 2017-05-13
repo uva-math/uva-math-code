@@ -11,7 +11,9 @@ doc_page: true
 
 # Main principles
 
-## Collaborative editing powered by [GitHub](https://github.com)
+---
+
+### Collaborative editing powered by [GitHub](https://github.com)
 
 Edits to the website are tested automatically so are unlikely to break anything.
 Moreover, any edit can be reverted. Therefore, *you* are welcome to
@@ -29,13 +31,17 @@ Having a local copy of the website allows to preview your edits locally using [J
 
 The website building (and testing) are powered by [Travis CI](https://travis-ci.org/). The current build status is&nbsp;&nbsp;[![Build Status](https://travis-ci.org/uva-math/uva-math-code.svg?branch=master)](https://travis-ci.org/uva-math/uva-math-code)
 
-## Simple content structure powered by [Jekyll](https://jekyllrb.com/)
+---
+
+### Simple content structure powered by [Jekyll](https://jekyllrb.com/)
 
 - Any simple change in content should require editing in only one place. More complicated edits (such as adding a new seminar) might need changes in up to two places. Typical editing scenarios are documented on these pages.
 - The content is text file based, with no databases or complicated CMSs
 - The simply structured content is then built (using [Travis CI](https://travis-ci.org/)) into a static HTML website (plus a little client-side javascript for google calendar interaction, math rendering, and responsive design)
 
-## Flexible design powered by [Bootstrap](http://getbootstrap.com/)
+---
+
+### Flexible design powered by [Bootstrap](http://getbootstrap.com/)
 
 - Most design elements can be tweaked independently of content (and most changes require editing only in one file)
 - Design is fully customizable
