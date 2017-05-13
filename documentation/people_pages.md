@@ -44,7 +44,16 @@ areas:
 
 ### Fields in the people pages
 
-The first 15 lines in this file are for configuration, separated by two `---`. The lines after line 15 (after the second `---`) can be any content the person would like on their page. The syntax is [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Math formulas are also [supported]({{site.url}}/doc/math/).
+#### Content
+
+The first 15 lines in this file are for configuration, separated by two `---`. The lines after line 15 (after the second `---`) can be any content the person would like on their page, such as
+- Selected publications
+- More detailed description of research interests
+- Any links, pictures, and so on
+
+The syntax is [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Math formulas are also [supported]({{site.url}}/doc/math/).
+
+#### Configuration
 
 Most configuration fields are self-evident, except the following:
 
