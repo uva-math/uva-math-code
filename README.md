@@ -2,6 +2,8 @@
 
 Official website of Department of Mathematics at the University of Virginia (under construction: see the current website [here](http://www.math.virginia.edu/)). Below is a working notebook associated with the initial stage of the website project.
 
+{{site.url}}
+
 ## ToDo: Implementation needed of subpages from old website:
 
 - [ ] http://www.math.virginia.edu/content/final-exercises-ceremony-college-and-graduate-school-arts-and-sciences-0
