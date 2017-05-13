@@ -98,11 +98,11 @@ To *remove a person*, either delete the file, or remove it from the building of 
 
 The listings of people by research area such as [{{site.url}}/research/analysis/]({{site.url}}/research/analysis/) are generated automatically. To ensure correct generation of the website, one needs to add the exact research areas to each person's configuration, as in the example above:
 
-```
+{% highlight html %}
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
-```
+{% endhighlight %}
 
 Possible values for research areas are quite broad and include the cup signs $$\cup$$ to indicate this. Here are the possible values for research areas one can put into a person's `.md` page:
 
@@ -112,12 +112,12 @@ Possible values for research areas are quite broad and include the cup signs $$\
 
 The list of these values is in the file `_data/research_areas.yml` ([GitHub link](https://github.com/uva-math/uva-math-code/blob/master/_data/research_areas.yml)), here is an example of one entry (the dash in the first line and indentation are important):
 
-```
+{% highlight html %}
 -
   name: Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
   h-name: Analysis &cup; PDE &cup; Operator Algebras
   shortname: analysis
-```
+{% endhighlight %}
 
 ### Changing global research areas
 

@@ -138,3 +138,17 @@ To ensure that the seminar information renders properly the following conditions
 3. The seminar is added to the unifying google calendar script `_includes/cal_main.js` for display on the main page. This requires adding the corresponding `google\_cal\_id` to the list of google calendar id's in the beginning of the script, and also adding a corresponding line to the function `function getSeminar(num)`
 
 If removing a seminar, consider keeping the archives. One can link them maybe on the all seminars page, or create a special archive page for a no longer existing seminar.
+
+### Standalone seminar pages
+
+The google calendar feature allows to create pages with event lists displayed from google calendar,
+but not linked to the "all seminars" page on the unifying calendar on the main page.
+This might be suitable for a reading or a graduate seminar. To do this, one should imitate
+`/_includes/seminar_page.html` and hardcode the values in a standalone page. The key
+line of code displaying the google calendar events is
+
+{% highlight c linenos %}
+{ % include cal_single.js google_cal_id = [YOUR_GOOGLE_CALENDAR_ID] current = "true" max_sem = 50 % }
+{% endhighlight %}
+
+(again, `%` and `{}` in the actual code should be together).
