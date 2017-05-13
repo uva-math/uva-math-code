@@ -6,7 +6,7 @@
 {%if area.shortname == cur_shortname %}
 
 <div class="row">
-  <div class="col-md-8">
+  <div class="col-md-7">
     <h1 class="mb-4">{{area.h-name}}</h1>
 
     {% assign sorted_people = (site.departmentpeople | sort: 'lastname') %}
@@ -15,12 +15,12 @@
     {% for ppl in sorted_people %}
     {% if ppl.areas contains area.name %}
       <div class="row" style="padding:10px 0px">
-        <div class="col-md-5">
+        <div class="col-md-4">
           <a href="{{site.url}}/people/{{ppl.UVA_id}}/" class="h5">{{ ppl.name }} {{ ppl.lastname }}</a>
           <div class="mb-1"><i>{{ ppl.position }}</i></div>
 
         </div>
-        <div class="col-md-5">
+        <div class="col-md-6">
           {% if ppl.office != null %}
             <span class="fa fa-building" aria-hidden="true" style="font-size:0.8em"></span>
             {{ppl.office}}
@@ -59,7 +59,7 @@
     </div>
 
   </div>
-  <div class="col-md-4">
+  <div class="col-md-5">
     {% include research_areas_sidebar.html %}
   </div>
 </div>
