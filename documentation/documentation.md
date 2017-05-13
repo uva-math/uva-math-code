@@ -26,6 +26,8 @@ In both cases, the changes in the code will trigger the website to automatically
 
 Having a local copy of the website allows to preview your edits locally using [Jekyll](https://jekyllrb.com/), only on Mac. This is described in detail in Jekyll documentation, see for example [here](https://jekyllrb.com/docs/installation/) and [here](https://jekyllrb.com/docs/usage/).
 
+The builds (and tests) are powered by [Travis CI](https://travis-ci.org/). The current build status is&nbsp;&nbsp;[![Build Status](https://travis-ci.org/uva-math/uva-math-code.svg?branch=master)](https://travis-ci.org/uva-math/uva-math-code)
+
 ## Simple content structure powered by [Jekyll](https://jekyllrb.com/)
 
 - Any simple change in content requires editing in only one place. More complicated edits (such as adding a new seminar) might need changes in up to two places.
