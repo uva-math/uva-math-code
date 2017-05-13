@@ -1,8 +1,8 @@
 <div class="list-group h5">
   {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %}
-  <a href="{{ site.url }}/calendar/" class="list-group-item {% if page.url == '/calendar/' %}active{% endif %}">All seminars</a>
+  <a href="{{ site.url }}/calendar/" class="list-group-item list-group-item-action {% if page.url == '/calendar/' %}active{% endif %}">All seminars</a>
   {% for sem in sorted_sem %}
-    <a href="{{site.url}}/seminars/{{ sem.shortname }}/" class="list-group-item
+    <a href="{{site.url}}/seminars/{{ sem.shortname }}/" class="list-group-item list-group-item-action
     {% if page.url contains sem.shortname %}active{% endif %}">
       {{ sem.name }}
     </a>
