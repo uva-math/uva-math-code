@@ -24,6 +24,8 @@ events: true
     <div class="row row-offcanvas row-offcanvas-right">
       <div class="col-12 col-md-8">
 
+      <!-- Code for the news roll -->
+
         {% assign major-news_counter = 0 %}
         {% for post in site.categories['news'] limit:5 %}
         {% if post.categories contains 'major-news' and major-news_counter == 0 %}
@@ -60,9 +62,11 @@ events: true
 
       </div><!--/span-->
 
-  <!-- The main page's right menu -->
+<!-- The main page's right menu -->
 
       <div class="col-10 col-md-4 sidebar-offcanvas" id="sidebar">
+
+<!-- Link group on the right -->
 
         <br class="hidden-md-up">
         <div class="list-group h5 hidden-md-down">
@@ -70,6 +74,7 @@ events: true
         </div>
         <br class="hidden-md-down">
 
+<!-- Unifying upcoming seminars calendar -->
 
         {% if page.events %}
           <h3>{{ site.new_seminars_label }} (<a href="{{site.url}}/calendar/">all</a>)</h3>
