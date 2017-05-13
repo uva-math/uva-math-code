@@ -88,6 +88,8 @@ To *remove a person*, either delete the file, or remove it from the building of 
 
 ## <a name="research_areas_pages">Research areas</a>
 
+### Adding research areas to people
+
 The listings of people by research area such as [{{site.url}}/research/analysis/]({{site.url}}/research/analysis/) are generated automatically. To ensure correct generation of the website, one needs to add the exact research areas to each person's configuration, as in the example above:
 
 ```
@@ -111,7 +113,9 @@ The list of these values is in the file `_data/research_areas.yml` ([GitHub link
   shortname: analysis
 ```
 
-Therefore, for correct display of research areas, three conditions must be met:
+### Changing global research areas
+
+For correct display of research areas, three conditions must be met:
 
 1. The research area is described in `_data/research_areas.yml` as above
 2. A simple file corresponding to the research area with permalink corresponding to the area's `shortname` must be manually created. These files are in `people/research/` folder, see an [example file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/people/research/analysis.md).
