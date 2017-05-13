@@ -184,6 +184,14 @@ h6,
   font-size: 18px;
 }
 
+.smaller-h5
+{
+  font-family: "franklingothic-demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+  color: inherit;
+  text-transform: uppercase;
+}
+
 h1,
 h2,
 h3,

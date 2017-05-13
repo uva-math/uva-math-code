@@ -12,7 +12,7 @@ personal_page:
 
 areas:
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
-  - Analysis&nbsp;$$\cup$$&nbsp;PDEs&nbsp;$$\cup$$&nbsp;Operator Algebras
+  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
 
 
 ---

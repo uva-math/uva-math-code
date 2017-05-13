@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Foldes.jpg
 personal_page:
 
 areas:
-  - Analysis&nbsp;$$\cup$$&nbsp;PDEs&nbsp;$$\cup$$&nbsp;Operator Algebras
+  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
 
 
