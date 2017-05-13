@@ -78,7 +78,7 @@
 - cal_number: '7'
   name: Probability Seminar
   shortname: probability
-  image: __SITE_URL__/img/tiling_v.png
+  image: __SITE_URL__/img/seminars/tiling_v.png
   webpage: 'http://faculty.virginia.edu/Probability/'
   google_cal_id: 'f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com'
   seminar_weight: 9

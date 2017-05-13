@@ -9,6 +9,8 @@ nav_weight: 102
 
 # People pages and research areas
 
+---
+
 ## Structure of people pages
 
 ### One person - one file
@@ -57,7 +59,7 @@ The syntax is [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-C
 
 Most configuration fields are self-evident, except the following:
 
-##### `general_position`
+##### general\_position
 
 This field is used to put the person in a correct listing such as [{{site.url}}/visitors/]({{site.url}}/visitors/) or [{{site.url}}/gradstudents/]({{site.url}}/gradstudents/). Possible values are:
 
@@ -72,11 +74,13 @@ This field is also used in automatically counting the number of faculty/postdocs
 
 The exact title of the position is under `position:` configuration field, as in `position: Assistant Professor`.
 
-##### `image`
+##### image
 
-Put the image file (`jpg` or `png`, any size/dimensions, but square and up to `600x600` preferred) into the folder `/img/people/` in the source code, and link it in a configuration field like `image: __SITE_URL__/img/people/Obus.jpg`. **Important!** keep the `__SITE_URL__` prefix as is, this is needed for correct automatic generation of the website.
+Put the image file (`jpg` or `png`, any size/dimensions, but square and up to `600x600` preferred) into the folder `/img/people/` in the source code, and link it in a configuration field like `image: __SITE_URL__/img/people/Obus.jpg`.
 
-##### `areas:`
+**Important!** keep the `__SITE_URL__` prefix as is, this is needed for correct automatic generation of the website.
+
+##### areas
 
 See [below](#research_areas_pages).
 
@@ -85,6 +89,8 @@ See [below](#research_areas_pages).
 To *add a person*, make a new file and fill all the fields in. The person's page will appear on the website on correct pages.
 
 To *remove a person*, either delete the file, or remove it from the building of the website by adding `published: false`, say, before the `areas:` line.
+
+---
 
 ## <a name="research_areas_pages">Research areas</a>
 

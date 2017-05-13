@@ -50,7 +50,7 @@
 
 **Contact:** {% for cnt in sem.contact %}{{cnt.name}} ([*{{cnt.email}}*](mailto:{{cnt.email}})){% if forloop.last == false %},{% endif %} {% endfor %}
 
-**[Old webpage link]({{sem.webpage}})**
+{% if sem.webpage != null %}**[Old webpage link]({{sem.webpage}})**{% endif %}
 
 {%endif%}
 {% endfor %}

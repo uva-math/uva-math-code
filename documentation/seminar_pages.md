@@ -42,7 +42,7 @@ The fields `content=""` and `contacts=""` allow to add some extra content into s
 
 ### Archives
 
-###### Recent
+###### More recent
 
 The recent archives using google calendars are displayed year by year, semi-automatically: one simply needs to create archive pages each year - these can be copied from a previous example like at [this GitHub link](https://github.com/uva-math/uva-math-code/blob/master/seminars/colloq/colloq15_16.md).
 
@@ -53,18 +53,80 @@ The recent archives using google calendars are displayed year by year, semi-auto
 
 Older archives not using google calendar have to be moved manually from the old seminar pages. See [this GitHub issue](https://github.com/uva-math/uva-math-code/issues/16) on which archives have already been moved.
 
-### Where is the magic
+### Where the magic happens
 
 The key to how this works is in the field `permalink: /seminars/colloq/` which tells the builder that this page corresponds to the Colloquium. Similarly, for the seminar archive pages the key field is something like `permalink: /seminars/colloq/2015-16/` which tells the builder to look at the Colloquium. The `title:` field in both cases is not essential and can be changed.
 
 The main information on seminars is contained in `_data/seminars.yml` ([this file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/_data/seminars.yml)). Its structure is explained below.
 
-## Seminars data file `_data/seminars.yml`
+The javascript code which generates talks lists is in the files `_includes/cal_main.js` (for the main page unified list of talks; [file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/_includes/cal_main.js)) and `_includes/cal_single.js` (for individual seminar pages and archives; [file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/_includes/cal_single.js)).
 
-This is the main file which contains all information 
+---
 
+## Seminars data file
+
+`_data/seminars.yml` ([file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/_data/seminars.yml)) is the main file which contains all information about seminars. An example of a seminar entry is below:
+{% highlight yaml linenos %}
+- cal_number: '7'
+  name: Probability Seminar
+  shortname: probability
+  image: __SITE_URL__/img/seminars/tiling_v.png
+  webpage: 'http://faculty.virginia.edu/Probability/'
+  google_cal_id: 'f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com'
+  seminar_weight: 9
+  regular_times: Wednesdays at 4:35
+  information: |
+    The Probability Seminar is the place to see talks on active research topics in probability theory, as well as informal discussions of basic notions of probability.  We typically have invited speakers every 2-3 weeks presenting a wide array of research in probability. Most other weeks are informal discussions led by local participants, often graduate students discussing recently studied topics. The seminar is open to all. Feel free to attend regularly or occasionally.
+  contact:
+    - name: Christian Gromoll
+      email: gromoll@virginia.edu
+    - name: Tai Melcher
+      email: melcher@virginia.edu
+    - name: Leonid Petrov
+      email: petrov@virginia.edu
+    - name: Axel Saenz
+      email: ais6a@virginia.edu
+{% endhighlight %}
+
+Some configuration fields are self-evident. Here are explanations for the rest:
+
+##### cal\_number
+
+Do not touch this entry, it is needed for correct identification of the seminar in the list of upcoming talks
+on the main page.
+
+##### shortname
+
+This is the main seminar identifier which is used in permalinks is seminar pages.
+
+##### image
+
+Put the image file (`jpg` or `png`, any size/dimensions, but square and up to `600x600` preferred) into the folder `/img/seminars/` in the source code, and link it in a configuration field as above.
+
+**Important!** keep the `__SITE_URL__` prefix as is, this is needed for correct automatic generation of the website.
+
+##### webpage
+
+This is a link to the old seminar webpage, if needed. Once all archives are moved, this field can be eliminated which will eliminate the link from the seminar page
+
+##### google\_cal\_id
+
+Identifier of the goolge calendar associated with the seminar, for display on the website.
+
+##### seminar\_weight
+
+The bigger this parameter the lower is the seminar in the list of seminars (in the navigation bar and on the
+  seminar pages).
+
+#####  information: \|
 
 ### Changing seminar information
 
 
 ### Adding/removing a seminar globally
+
+1. seminar yml
+2. seminar pages and archives
+3. change in google calendar javascript
+
+if removing a seminar, keep the archives and link them maybe on the "all seminars" page, or create a special page
