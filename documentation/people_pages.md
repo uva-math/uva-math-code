@@ -13,7 +13,7 @@ nav_weight: 102
 
 ### One person - one file
 
-Each person's page corresponds to a single file in the `_departmentpeople/` folder called `[UVA_COMPUTING_ID].md`. This naming is for the purposes of consistency with links in the old website. This file corresponds to the page `{{site.url}}/people/[UVA_COMPUTING_ID]/`. The people listings such as [{{site.url}}/faculty/]({{site.url}}/faculty/) and listings by research areas are generated automatically.
+Each person's page corresponds to a single file in the `_departmentpeople/` folder called `[UVA_COMPUTING_ID].md` (all these files are here on [GitHub](https://github.com/uva-math/uva-math-code/tree/master/_departmentpeople)). This naming is for the purposes of consistency with links in the old website. This file corresponds to the page `{{site.url}}/people/[UVA_COMPUTING_ID]/`. The people listings such as [{{site.url}}/faculty/]({{site.url}}/faculty/) and listings by research areas are generated automatically.
 
 **Note.** The subfolders in `_departmentpeople/` are purely for convenience - they do not affect anything in the actual website.
 
@@ -48,18 +48,49 @@ The first 15 lines in this file are for configuration, separated by two `---`. T
 
 Most configuration fields are self-evident, except the following:
 
-#### `general_position`
+##### `general_position`
 
-#### `image`
+This field is used to put the person in a correct listing such as [{{site.url}}/visitors/]({{site.url}}/visitors/) or [{{site.url}}/gradstudents/]({{site.url}}/gradstudents/). Possible values are:
 
-#### `areas`
+- `emeritus`
+- `faculty` (tenure-track or tenured)
+- `gradstudent`
+- `lecturer`
+- `postdoc`
+- `staff`
+
+This field is also used in automatically counting the number of faculty/postdocs/etc on pages like [about]({{site.url}}/about/).
+
+The exact title of the position is under `position:` configuration field, as in `position: Assistant Professor`.
+
+##### `image`
+
+Put the image file (`jpg` or `png`, any size/dimensions, but square and up to `600x600` preferred) into the folder `/img/people/` in the source code, and link it in a configuration field like `image: __SITE_URL__/img/people/Obus.jpg`. **Important!** keep the `__SITE_URL__` prefix as is, this is needed for correct automatic generation of the website.
+
+##### `areas:`
 
 See [below](#research_areas_pages).
 
-### Changing the people in the department
+### Adding/removing people
 
 To *add a person*, make a new file and fill all the fields in. The person's page will appear on the website on correct pages.
 
 To *remove a person*, either delete the file, or remove it from the building of the website by adding `published: false`, say, before the `areas:` line.
 
 ## <a name="research_areas_pages">Research areas</a>
+
+The listings of people by research area such as [{{site.url}}/research/analysis/]({{site.url}}/research/analysis/) are generated automatically. To ensure correct generation of the website, one needs to add the exact research areas to each person's configuration, as in the example above:
+
+```
+areas:
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+```
+
+Possible values for research areas are quite broad and include the cup signs $$\cup$$ to indicate this. Here are the possible values for research areas one can put into a person's `.md` page:
+
+{% for area in site.data.research_areas %}
+  - ``{{area.name}}``
+{% endfor %}
+
+The list of these values is in the file `_data/research_areas.yml` ([GitHub link](https://github.com/uva-math/uva-math-code/blob/master/_data/research_areas.yml)).

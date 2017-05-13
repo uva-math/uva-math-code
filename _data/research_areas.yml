@@ -1,5 +1,7 @@
 # This is used for generating the list of research areas
-# This has to match the pages permalinks for the research area pages
+
+# IMPORTANT: shortname - has to match permalinks for the research area pages
+# h-name - this is how the title is displayed in <h1> on each page
 
 
 -
@@ -29,5 +31,5 @@
 
 -
   h-name: History of Mathematics
-  name: History of$$\ $$Mathematics
+  name: History of$$\ $$Mathematics # for correct indentation
   shortname: histmath
