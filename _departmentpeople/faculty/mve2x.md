@@ -10,5 +10,6 @@ email: ershov@virginia.edu
 image: __SITE_URL__/img/people/Ershov.jpg
 personal_page:
 
-
+areas:
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 ---
