@@ -8,8 +8,8 @@ highlighter: rouge
 
 excerpt_separator: <!--more-->
 
-paginate: 10
-paginate_path: "news/page:num"
+paginate: 2
+paginate_path: "allnews/page:num"
 permalink: /:year/:month/:day/:title/
 
 new_seminars_label: Upcoming seminars
@@ -28,3 +28,5 @@ collections:
     permalink: /people/:name/
 
 exclude: [vendor]
+
+gems: [jekyll-paginate]
