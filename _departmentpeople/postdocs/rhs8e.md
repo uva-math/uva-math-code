@@ -12,7 +12,7 @@ personal_page:
 
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
-  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Math
+  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
 
 
 ---
