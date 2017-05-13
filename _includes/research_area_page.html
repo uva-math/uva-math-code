@@ -7,11 +7,11 @@
 
 <div class="row">
   <div class="col-md-7">
-    <h1 class="mb-4">{{area.h-name}}</h1>
+    <h2 class="mb-4">{{area.h-name}}</h2>
 
     {% assign sorted_people = (site.departmentpeople | sort: 'lastname') %}
 
-    <div class="my-row-zebra">
+    <div class="my-row-zebra mr-3">
     {% for ppl in sorted_people %}
     {% if ppl.areas contains area.name %}
       <div class="row" style="padding:10px 0px">
