@@ -12,7 +12,7 @@ personal_page:
 
 areas:
   - Analysis&nbsp;$$\cup$$&nbsp;PDEs&nbsp;$$\cup$$&nbsp;Operator Algebras
-  - Math Physics&nbsp;$\cup$&nbsp;Applied Math
+  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Math
 
 
 ---

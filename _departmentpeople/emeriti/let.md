@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Thomas.jpg
 personal_page:
 
 areas:
-  - Math Physics&nbsp;$\cup$&nbsp;Applied Math
+  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Math
 
 
 ---

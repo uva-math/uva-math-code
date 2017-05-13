@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Petrov.jpg
 personal_page: http://faculty.virginia.edu/petrov/
 areas: #Must coincide with the ones in _data/research_areas.yml
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
-  - Math Physics&nbsp;$\cup$&nbsp;Applied Math
+  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Math
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 
