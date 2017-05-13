@@ -11,6 +11,6 @@ image: __SITE_URL__/img/people/Abdesselam.jpg
 personal_page:
 
 areas:
-  - Mathematical Physics and Applied Mathematics
+  - Math Physics&nbsp;$\cup$&nbsp;Applied Math
 
 ---

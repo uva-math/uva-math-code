@@ -11,9 +11,9 @@ image: __SITE_URL__/img/people/Do.jpg
 personal_page:
 
 areas:
-  - Analysis, PDEs, and Operator Algebras
-  - Probability and Combinatorics
-  - Mathematical Physics and Applied Mathematics
+  - Analysis&nbsp;$$\cup$$&nbsp;PDEs&nbsp;$$\cup$$&nbsp;Operator Algebras
+  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
+  - Math Physics&nbsp;$\cup$&nbsp;Applied Math
 
 
 

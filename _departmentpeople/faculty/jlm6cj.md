@@ -11,7 +11,7 @@ image:
 personal_page:
 
 areas:
-  - Probability and Combinatorics
-  - Algebra and Representation Theory
+  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 ---

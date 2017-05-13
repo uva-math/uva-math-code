@@ -11,8 +11,8 @@ image: __SITE_URL__/img/people/Santharoubane.jpg
 personal_page:
 
 areas:
-  - Geometry and Topology
-  - Mathematical Physics and Applied Mathematics
+  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+  - Math Physics&nbsp;$\cup$&nbsp;Applied Math
 
 
 ---

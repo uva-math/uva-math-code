@@ -11,8 +11,8 @@ image: __SITE_URL__/img/people/Melcher.jpg
 personal_page:
 
 areas:
-  - Probability and Combinatorics
-  - Analysis, PDEs, and Operator Algebras
+  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
+  - Analysis&nbsp;$$\cup$$&nbsp;PDEs&nbsp;$$\cup$$&nbsp;Operator Algebras
 
 
 ---

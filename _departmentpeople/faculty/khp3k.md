@@ -11,6 +11,6 @@ image: __SITE_URL__/img/people/ParshallK.jpg
 personal_page:
 
 areas:
-  - History of Mathematics and Mathematical Education
+  - History of Mathematics$$\phantom{\cup}$$
 
 ---

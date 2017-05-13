@@ -10,5 +10,7 @@ email: tlk8q@virginia.edu
 image: __SITE_URL__/img/people/Kriete.jpg
 personal_page:
 
+areas:
+  - Analysis&nbsp;$$\cup$$&nbsp;PDEs&nbsp;$$\cup$$&nbsp;Operator Algebras
 
 ---

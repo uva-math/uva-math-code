@@ -11,8 +11,8 @@ image: __SITE_URL__/img/people/Bourdon.jpg
 personal_page:
 
 areas:
-  - Analysis, PDEs, and Operator Algebras
-  - Mathematical Physics and Applied Mathematics
+  - Analysis&nbsp;$$\cup$$&nbsp;PDEs&nbsp;$$\cup$$&nbsp;Operator Algebras
+  - Math Physics&nbsp;$\cup$&nbsp;Applied Math
 
 
 ---

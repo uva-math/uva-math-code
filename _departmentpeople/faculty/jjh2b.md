@@ -11,8 +11,8 @@ image: __SITE_URL__/img/people/Holt.jpg
 personal_page:
 
 areas:
-  - Mathematical Physics and Applied Mathematics
-  - Analysis, PDEs, and Operator Algebras
+  - Math Physics&nbsp;$\cup$&nbsp;Applied Math
+  - Analysis&nbsp;$$\cup$$&nbsp;PDEs&nbsp;$$\cup$$&nbsp;Operator Algebras
 
 
 ---

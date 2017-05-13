@@ -12,6 +12,6 @@ personal_page:
 
 
 areas:
-  - Algebra and Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 ---

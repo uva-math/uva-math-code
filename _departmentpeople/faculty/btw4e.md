@@ -11,8 +11,8 @@ image: __SITE_URL__/img/people/Webster.jpg
 personal_page:
 
 areas:
-  - Algebra and Representation Theory
-  - Geometry and Topology
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Geometry&nbsp;$$\cup$$&nbsp;Topology
 
 
 ---

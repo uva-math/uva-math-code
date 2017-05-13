@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Huneke.jpg
 personal_page: http://faculty.virginia.edu/huneke/
 
 areas: #Must coincide with the ones in _data/research_areas.yml
-  - Algebra and Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 ---
 

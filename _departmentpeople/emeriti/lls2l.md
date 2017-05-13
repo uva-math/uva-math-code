@@ -10,5 +10,7 @@ email: lls2l@virginia.edu
 image: __SITE_URL__/img/people/Scott.jpg
 personal_page:
 
+areas:
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 ---

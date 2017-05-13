@@ -11,5 +11,5 @@ image: __SITE_URL__/img/people/Gromoll.jpg
 personal_page: http://faculty.virginia.edu/gromoll/
 
 areas:
-  - Probability and Combinatorics
+  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
 ---

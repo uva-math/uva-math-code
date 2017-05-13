@@ -12,6 +12,6 @@ personal_page:
 
 
 areas:
-  - Geometry and Topology
+  - Geometry&nbsp;$$\cup$$&nbsp;Topology
 
 ---

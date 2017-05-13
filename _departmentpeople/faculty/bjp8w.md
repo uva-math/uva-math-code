@@ -11,6 +11,6 @@ image: __SITE_URL__/img/people/ParshallB.jpg
 personal_page:
 
 areas:
-  - Algebra and Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 ---

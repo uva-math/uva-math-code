@@ -10,9 +10,9 @@ email: petrov@virginia.edu
 image: __SITE_URL__/img/people/Petrov.jpg
 personal_page: http://faculty.virginia.edu/petrov/
 areas: #Must coincide with the ones in _data/research_areas.yml
-  - Probability and Combinatorics
-  - Mathematical Physics
-  - Algebra and Representation Theory
+  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
+  - Math Physics&nbsp;$\cup$&nbsp;Applied Math
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 
 ---

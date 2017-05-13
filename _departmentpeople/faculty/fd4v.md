@@ -11,6 +11,6 @@ image: __SITE_URL__/img/people/DiPlinio.jpg
 personal_page:
 
 areas:
-  - Analysis, PDEs, and Operator Algebras
+  - Analysis&nbsp;$$\cup$$&nbsp;PDEs&nbsp;$$\cup$$&nbsp;Operator Algebras
 
 ---
