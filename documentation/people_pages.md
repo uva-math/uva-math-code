@@ -102,4 +102,17 @@ Possible values for research areas are quite broad and include the cup signs $$\
   - ``{{area.name}}``
 {% endfor %}
 
-The list of these values is in the file `_data/research_areas.yml` ([GitHub link](https://github.com/uva-math/uva-math-code/blob/master/_data/research_areas.yml)).
+The list of these values is in the file `_data/research_areas.yml` ([GitHub link](https://github.com/uva-math/uva-math-code/blob/master/_data/research_areas.yml)), here is an example of one entry (the dash in the first line and indentation are important):
+
+```
+-
+  name: Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
+  h-name: Analysis &cup; PDE &cup; Operator Algebras
+  shortname: analysis
+```
+
+Therefore, for correct display of research areas, three conditions must be met:
+
+1. The research area is described in `_data/research_areas.yml` as above
+2. A simple file corresponding to the research area with permalink corresponding to the area's `shortname` must be manually created. These files are in `people/research/` folder, see an [example file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/people/research/analysis.md).
+2. In the people's pages, the research area should be listed exactly, according to its `name` field.
