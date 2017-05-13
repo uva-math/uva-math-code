@@ -3,6 +3,9 @@ title: Main principles | Documentation
 layout: documentation_page
 permalink: /doc/
 nav_parent: Info
+nav_nesting: true
+nav_weight: 100
+nav_id: Website Documentation
 ---
 
 # Main principles
