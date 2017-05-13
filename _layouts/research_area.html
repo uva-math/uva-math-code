@@ -6,7 +6,7 @@
     {% for word in xx %}{% if forloop.last %}{% assign cur_shortname = word %}{%endif%}{% endfor %}
     {% for area in site.data.research_areas %}
     {%if area.shortname == cur_shortname %}
-      <title>{{ area.name }} Research | Mathematics at the University of Virginia</title>
+      <title>{{ area.h-name }} Research | Mathematics at the University of Virginia</title>
     {%endif%}
     {% endfor %}
   {% include header.html %}
