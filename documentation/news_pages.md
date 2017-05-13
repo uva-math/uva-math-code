@@ -1,7 +1,8 @@
 ---
-title: Seminar Pages | Documentation
+title: News Pages | Documentation
 layout: static_page_no_right_menu
-permalink: /doc/static/
+permalink: /doc/news/
+nav_parent: Info
 ---
 
 <div class="row">

@@ -1,7 +1,8 @@
 ---
-title: Seminar Pages | Documentation
+title: Research Areas and People Pages | Documentation
 layout: static_page_no_right_menu
-permalink: /doc/ugg/
+permalink: /doc/people/
+nav_parent: Info
 ---
 
 <div class="row">

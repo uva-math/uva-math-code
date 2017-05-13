@@ -2,6 +2,7 @@
 title: Seminar Pages | Documentation
 layout: static_page_no_right_menu
 permalink: /doc/seminars/
+nav_parent: Info
 ---
 
 <div class="row">

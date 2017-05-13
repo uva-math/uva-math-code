@@ -1,7 +1,8 @@
 ---
-title: Seminar Pages | Documentation
+title: Undergraduate and Graduate Information Pages | Documentation
 layout: static_page_no_right_menu
-permalink: /doc/news/
+permalink: /doc/ugg/
+nav_parent: Info
 ---
 
 <div class="row">
