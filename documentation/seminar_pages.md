@@ -9,7 +9,7 @@ nav_weight: 101
 
 # Seminar pages
 
-The main code for a seminar page located at `seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md` ([example on GitHub](https://github.com/uva-math/uva-math-code/blob/master/seminars/colloq/colloq.md)) looks quite simple. Here is an example (symbols `%` and `{}` are together in the actual page, but for correct rendering here they are separated by a space; also in the actual page there are more links to archives):
+The main code for a seminar page located at `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md` ([example on GitHub](https://github.com/uva-math/uva-math-code/blob/master/seminars/colloq/colloq.md)) looks quite simple. Here is an example (symbols `%` and `{}` are together in the actual page, but for correct rendering here they are separated by a space; also in the actual page there are more links to archives):
 
 {% highlight markdown linenos %}
 ---
@@ -118,15 +118,23 @@ Identifier of the goolge calendar associated with the seminar, for display on th
 The bigger this parameter the lower is the seminar in the list of seminars (in the navigation bar and on the
   seminar pages).
 
-#####  information: \|
+#####  information
+
+Under `information: |` field, put a paragraph's description of the seminar. This is displayed on the seminar page and on the page listing all seminars.
 
 ### Changing seminar information
 
+To change information of an existing seminar, edit `_data/seminars.yml`. To add additional information to the seminar page, add it to `content=""` or `contacts=""` in the `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md` corresponding to the seminar.
 
-### Adding/removing a seminar globally
+**Advanced**. To make even more changes to the page of a seminar you can copy the template in `/_includes/seminar_page.html` into the content section (below second `---`) of the seminar page `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md`, and make deeper edits there.
 
-1. seminar yml
-2. seminar pages and archives
-3. change in google calendar javascript
 
-if removing a seminar, keep the archives and link them maybe on the "all seminars" page, or create a special page
+### Adding a seminar globally
+
+To ensure that the seminar information renders properly the following conditions must be met:
+
+1. The seminar should be described in the `_data/seminars.yml` file
+2. The simple seminar page (and, optionally, archive pages) must be manually created at  `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md`. The permalink configuration field of that `.md` file should match the seminar shortname.
+3. The seminar is added to the unifying google calendar script `_includes/cal_main.js` for display on the main page. This requires adding the corresponding `google\_cal\_id` to the list of google calendar id's in the beginning of the script, and also adding a corresponding line to the function `function getSeminar(num)`
+
+If removing a seminar, consider keeping the archives. One can link them maybe on the all seminars page, or create a special archive page for a no longer existing seminar.
