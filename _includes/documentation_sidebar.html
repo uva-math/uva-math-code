@@ -1,8 +1,17 @@
 <div class="list-group-sm">
   {% assign sorted_pages = site.pages | sort: "nav_weight" %}
   {% for pg in sorted_pages %}
-  {% if pg.doc_page == true %}
+  {% if pg.doc_page == true and pg.reminders_page != true %}
       <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">{{pg.title}}</a>
   {% endif %}
   {% endfor %}
 </div>
+
+<br>
+
+{% if page.reminders_page != true %}
+<div class="list-group-sm">
+  <a class="list-group-item h5 orange-item"
+      href="{{site.url}}/doc/reminders/">Important reminders</a>
+</div>
+{% endif %}

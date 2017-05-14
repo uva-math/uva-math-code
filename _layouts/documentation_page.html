@@ -13,15 +13,15 @@
 {% include navbar.html %}
 
 <div class="container">
-
+  {% if page.reminders_page != true %}
   <div class="list-group-sm">
     <a class="list-group-item h5 orange-item"
-        href="{{site.url}}/doc/">Before making edits to the website please read these important reminders</a>
+        href="{{site.url}}/doc/reminders/">Before making edits to the website please read these important reminders</a>
   </div>
-
+  <br>
+  {% endif %}
   <div class="container">
 
-    <br>
 
     <div class="row row-offcanvas row-offcanvas-right">
       <div class="col-md-8">
