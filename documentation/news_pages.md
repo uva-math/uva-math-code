@@ -13,8 +13,12 @@ nav_weight: 103
 
 ## Post entry
 
+### Categories currently present on the website:
 
-
+{% assign sorted_cats = site.categories | sort %}
+{% for category in sorted_cats %}
+{{ category | first }}{% unless forloop.last %}{% endunless %}
+{% endfor %}
 
 
 
