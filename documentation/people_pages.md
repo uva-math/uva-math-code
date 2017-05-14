@@ -54,6 +54,7 @@ The first 15 lines in this file are for configuration, separated by two `---`. T
 - Any links, pictures, and so on
 
 The syntax is [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Math formulas are also [supported]({{site.url}}/doc/math/).
+As usual, plain HTML is supported inside markdown.
 
 #### Configuration
 

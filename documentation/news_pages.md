@@ -84,11 +84,20 @@ One image to the post can be added to be handled automatically (to be displayed 
 and on the post page). More images can be added manually as needed, both above and below the excerpt separator.
 
 The syntax of the content (both above and below the excerpt separator) is [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Math formulas are also [supported]({{site.url}}/doc/math/). 
+As usual, plain HTML is supported inside markdown.
 
 ### Configuration variables
 
 Let us now describe the configuration variables (not all of them are present above),
 and how they affect the presentation of the post.
+
+##### layout
+
+Should be set to `layout: post`, simple as that
+
+##### 
+
+
 
 ### Categories currently present on the website:
 
