@@ -10,7 +10,9 @@ reminders_page: true
 
 # Important reminders before making edits to the website
 
-Tip: to get started it is helpful to view the code of the current page. 
+### Tip
+
+To get started it is helpful to view the code of the current page. 
 To launch the GitHub web editor for this page (and any other page of the website) 
 click on the GitHub icon in the lower right corner.
 
