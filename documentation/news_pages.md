@@ -143,7 +143,8 @@ You can include any subfolder names in the permalink.
 <span class="nonupper-h5">categories</span>
 
 This is an important variable because it determines where the post is displayed.
-The currently used categories on the website are (the list below is generated automatically):
+The currently used categories on the website are (the list below is generated automatically), 
+to give an idea of standard post categories:
 
 {% assign sorted_cats = site.categories | sort %}
 <ul>
@@ -159,9 +160,23 @@ on the ["all news" page]({{site.url}}/allnews/). If you add `news`, then the pos
 will be displayed on the main page (note that the main page displays only 5 most recent posts).
 And so on, see [below](#displaying-posts) for a detailed description.
 
-<span class="nonupper-h5">variables related to image</span>
+<span class="nonupper-h5">more-text</span>
 
-Posts look nicely with images. If you do not want an image, simply omit these variables.
+This is the text on the "more" button at the bottom of the post excerpt,
+which can be configured to make more sense. For example, for IMS lectures
+it can say "Abstracts", for Virginia Math Bulletin it can say "Start reading", and so on.
+If this is not defined, then the text at the bottom of the post excerpt
+says simply "View details".
+
+<span class="nonupper-h5">variables related to post image</span>
+
+Posts look nicely with images. 
+One image to the post can be added to be handled automatically (to be displayed in nice size in both post rolls
+and on the post page). The variables `image`, `image-alt`, `image-address`, `image-tall`, and 
+`image-wide` determine how this image is handled.
+More images can be added manually as needed, both above and below the excerpt separator.
+
+If you do not want an automatically handled image in the post, simply omit these image variables.
 
 <span class="nonupper-h6">`image`</span>
 
@@ -171,20 +186,27 @@ Put the image file into the folder `/img/news_events/` or simply into `/img/` in
 
 <span class="nonupper-h6">`image-alt`</span>
 
-This is the
-Benedict H. Gross Poster
+This is the alternative text and title of the image. This can be empty, but better to put there something 
+informative, maybe also even the title of the post.
 
 <span class="nonupper-h6">`image-address`</span>
 
+This is a link to where a click on the image leads. 
+If no link address is provided, then by default the link address 
+is the address of the post page. 
+However, sometimes it makes sense to have a link to an external resource
+or to a PDF or a larger copy of the image.
+In case of internal links, use the `__SITE_URL__` prefix in the addresses,
+as in the `image` variable.
+
 <span class="nonupper-h6">`image-tall` and `image-wide`</span>
 
-image-address: __SITE_URL__/img/IMS/Gross_poster.jpg
-image-tall: true
-
-##### more-text
-
-
-
+If the image is wide and can occupy a wider part of the post excerpt, 
+then set `image-wide: true`. If the image is tall 
+and normally takes too much vertical space, then set `image-tall: true`. 
+How these variables is handled is specific to each post roll, 
+and this can be easily configured. These variables are very optional,
+and should not be included for more or less square images.
 
 ---
 

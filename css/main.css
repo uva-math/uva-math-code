@@ -210,6 +210,27 @@ h6,
   text-transform: uppercase;
 }
 
+nonupper-h5,
+.nonupper-h5
+{
+  font-size: 18px;
+  font-family: "franklingothic-demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.1;
+  color: inherit;
+}
+
+nonupper-h6,
+.nonupper-h6
+{
+  font-size: 18px;
+  font-family: 'Unna', serif;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1.1;
+  color: inherit;
+}
+
+
 h1,
 h2,
 h3,

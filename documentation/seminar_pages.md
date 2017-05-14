@@ -94,35 +94,35 @@ The javascript code which generates talks lists is in the files `_includes/cal_m
 
 Some configuration fields are self-evident. Here are explanations for the rest:
 
-##### cal\_number
+<span class="nonupper-h5">cal\_number</span>
 
 Do not touch this entry, it is needed for correct identification of the seminar in the list of upcoming talks
 on the main page.
 
-##### shortname
+<span class="nonupper-h5">shortname</span>
 
 This is the main seminar identifier which is used in permalinks is seminar pages.
 
-##### image
+<span class="nonupper-h5">image</span>
 
 Put the image file (`jpg` or `png`, any size/dimensions, but square and up to `600x600` preferred) into the folder `/img/seminars/` in the source code, and link it in a configuration field as above.
 
 **Important!** keep the `__SITE_URL__` prefix as is, this is needed for correct automatic generation of the website.
 
-##### webpage
+<span class="nonupper-h5">webpage</span>
 
 This is a link to the old seminar webpage, if needed. Once all archives are moved, this field can be eliminated which will eliminate the link from the seminar page
 
-##### google\_cal\_id
+<span class="nonupper-h5">google\_cal\_id</span>
 
 Identifier of the goolge calendar associated with the seminar, for display on the website.
 
-##### seminar\_weight
+<span class="nonupper-h5">seminar\_weight</span>
 
 The bigger this parameter the lower is the seminar in the list of seminars (in the navigation bar and on the
   seminar pages).
 
-#####  information
+<span class="nonupper-h5">information</span>
 
 Under `information: |` field, put a paragraph's description of the seminar. This is displayed on the seminar page and on the page listing all seminars.
 

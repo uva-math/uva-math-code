@@ -60,7 +60,7 @@ As usual, plain HTML is supported inside markdown.
 
 Most configuration fields are self-evident, except the following:
 
-##### general\_position
+<span class="nonupper-h5">general\_position</span>
 
 This field is used to put the person in a correct listing such as [{{site.url}}/visitors/]({{site.url}}/visitors/) or [{{site.url}}/gradstudents/]({{site.url}}/gradstudents/). Possible values are:
 
@@ -75,13 +75,13 @@ This field is also used in automatically counting the number of faculty/postdocs
 
 The exact title of the position is under `position:` configuration field, as in `position: Assistant Professor`.
 
-##### image
+<span class="nonupper-h5">image</span>
 
 Put the image file (`jpg` or `png`, any size/dimensions, but square and up to `600x600` preferred) into the folder `/img/people/` in the source code, and link it in a configuration field like `image: __SITE_URL__/img/people/Obus.jpg`.
 
 **Important!** keep the `__SITE_URL__` prefix as is, this is needed for correct automatic generation of the website.
 
-##### areas
+<span class="nonupper-h5">areas</span>
 
 See [below](#research_areas_pages).
 
