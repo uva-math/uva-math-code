@@ -91,11 +91,65 @@ As usual, plain HTML is supported inside markdown.
 Let us now describe the configuration variables (not all of them are present above),
 and how they affect the presentation of the post.
 
+##### published
+
+Setting `published: false` will remove the post from the website
+completely (but it will stay in the [GitHub source](https://github.com/uva-math/uva-math-code)). By default this variable is set to `published: true`, so it can as well be omitted.
+
 ##### layout
 
-Should be set to `layout: post`, simple as that
+Should be set to `layout: post`, simple as that. By the way, the post layout `_layouts/post.html`
+determines how the individual post page looks like.
 
-##### 
+##### comments
+
+The comments feature is not yet implemented, but if it will be implemented then
+`comments: false` will disable comments (this will be the default setting),
+and only manually setting `comments: true` will enable comments.
+Therefore, this variable can simply be not present in posts.
+
+##### title
+
+Well, this is the title of the post which is displayed in both post rolls and 
+on the post page.
+
+##### date
+
+This is the published date of the post which may not coincide with the 
+actual date of the event. 
+It should coincide with the date in the filename of the post `.md` file. 
+It is also displayed as "date published" at the bottom of the post page
+
+**Note.** The `date` (and `event-date` below) should be formatted with hours, minutes and seconds, as in
+`date: 2017-03-27 13:30:00`. Hours, minutes, and seconds are displayed nowhere, 
+and they are used only to determine the ordering of the posts when they are shown in a roll.
+
+##### event-date and multi-day-event
+
+These two variables allow to indicate the date of an event, if a post is announcing 
+an event such as IMS lectures or a conference. If the post is not about an event, 
+simply do not include these variables.
+
+The value `event-date` is displayed under the title of the post. If `multi-day-event` is set to `true`, 
+the text before the date says "Event start date", otherwise the text says "Event date".
+
+##### permalink
+
+If you do not like the default address `{{site.url}}/YYYY/MM/name-of-the-post`
+of the post page, you can manually set it to something else, as 
+in `permalink: /ims/lectures/benedict-gross/`. 
+You can include any subfolder names in the permalink. 
+
+##### categories 
+
+
+
+news virginia-mathematics-lectures ims events
+image: __SITE_URL__/img/IMS/Gross_poster.jpg
+image-alt: Benedict H. Gross Poster
+image-address: __SITE_URL__/img/IMS/Gross_poster.jpg
+image-tall: true
+more-text: Abstracts
 
 
 
