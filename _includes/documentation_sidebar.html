@@ -9,9 +9,8 @@
 
 <br>
 
-{% if page.reminders_page != true %}
+
 <div class="list-group-sm">
-  <a class="list-group-item h5 orange-item"
+  <a class="list-group-item h5 {% if page.reminders_page != true %}orange-item{% else %}active bg-inverse{% endif %}"
       href="{{site.url}}/doc/reminders/">Important reminders</a>
 </div>
-{% endif %}
