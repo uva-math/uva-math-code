@@ -14,11 +14,11 @@ reminders_page: true
 
 ### 1. Tip for web editing on GitHub
 
-To get started it is helpful to view the code of the current page. 
-To launch the GitHub web editor for this page (and any other page of the website) 
-click on the GitHub icon in the lower right corner. 
+To get started it is helpful to view the code of the current page.
+To launch the GitHub web editor for this page (and any other page of the website)
+click on the GitHub icon in the lower right corner.
 If you understand what's going on you can try editing this page.
-However, if the source contains includes (such as `{%raw%}{% include seminar_main_page.html %}{%endraw%}`) 
+However, if the source contains includes (such as `{%raw%}{% include seminar_main_page.html %}{%endraw%}`)
 then you typically should not edit this page.
 
 ### 2. Do not forget to sync with GitHub when editing locally
@@ -27,6 +27,8 @@ then you typically should not edit this page.
 
 If using a local copy of the website code, **make sure to sync before your first edit**. This will help avoid git conflicts.
 Also remember that the website will be built and updated with your local changes only upon syncing with the GitHub.
+
+**Remember!** If you edit on the web then the web changes should also be synced with the local ones.
 
 ### 3. Formatting of internal links
 
