@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virginia Mathematics Lectures - Benedict Gross
+title: Virginia Mathematics Lectures - Benedict Gross - March 27-29, 2017
 date: 2017-03-27 13:30:00
 event-date: 2017-03-27 12:00:00
 comments: false
@@ -13,7 +13,7 @@ image-tall: true
 more-text: Abstracts
 ---
 
-<h3 class="mt-3 mb-4"> Benedict H. Gross (Harvard) March 27-29, 2017</h3>
+<h3 class="mt-3 mb-4"> Benedict H. Gross (Harvard)</h3>
 
 - Lecture 1: The rank of elliptic curves
 - Lecture 2: The arithmetic of hyperelliptic curves

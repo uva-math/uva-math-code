@@ -35,7 +35,7 @@ The website building (and testing) are powered by [Travis CI](https://travis-ci.
 
 ### Simple content structure powered by [Jekyll](https://jekyllrb.com/)
 
-- Any simple change in content should require editing in only one place. More complicated edits (such as adding a new seminar) might need changes in up to two places. Typical editing scenarios are documented on these pages.
+- Any simple change in content should require editing in only one place. More complicated edits (such as adding a new seminar) might need changes in up to three places. Typical editing scenarios are documented on these pages.
 - The content is text file based, with no databases or complicated CMSs
 - The simply structured content is then built (using [Travis CI](https://travis-ci.org/)) into a static HTML website (plus a little client-side javascript for google calendar interaction, math rendering, and responsive design)
 

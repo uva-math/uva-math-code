@@ -42,55 +42,6 @@ These lecture series were enthusiastically met by the audience which included un
 </div>
 
 
-
-## <a name="smith"></a>Karen Smith (University of Michigan) February 29th - March 2nd, 2016
-
-### Algebra, Geometry and Analysis over Finite Fields
-
-#### Lecture 1
-
-*Abstract:* In this lecture, we review how Noether's introduction of the concept of an abstract ring changed the course of mathematics in the twentieth century by enabling us to apply the methods of  "reduction modulo p" to solve problems in algebraic geometry. Specifically, I'll discuss how understanding solutions to polynomials over finite fields can help understand the geometry of geometric objects (called varieties) defined by real or complex polynomials. Miraculously, rings of characteristic p have some very special properties that can be powerful tools in analyzing them, often replacing tools like integration for real manifolds.
-
-#### Lecture 2
-
-*Abstract:* In the second lecture, we review Hironaka's famous theorem on the resolution of singularities of a complex algebraic variety. We show this theorem can help us understand and measure the singularities of complex varieties. Amazingly, it turns out that the only algebraic characterization of a geometric condition called "rational singularities" involves reduction to characteristic p. Specifically, we will see how algebraic tools such as Frobenius splitting impact  different areas of math, including the minimal model program for complex algebraic varieties and cluster algebras in combinatorics/representation theory.
-
-
-
-#### Lecture 3
-
-*Abstract:* In the final lecture, we discuss a numerical invariant of singularities called the analytic index of singularities, which is defined by the convergence of a certain integral. Amazingly, this invariant turns out to have a prime characteristic description as well, as the limit, over all primes p, of another invariant called the F-pure threshold. The study of these F-pure thresholds leads to some very interesting and mysterious fractal like behavior.
-
-
-<img src="{{site.url}}/img/IMS/Karen_Smith_poster_4_0.jpg" style="max-width:80%" alt="Virginia Mathematics Lectures">
-
-<hr>
-
-## <a name="agol"></a> Ian Agol (Berkeley) October 14th-16th, 2015
-
-### The Virtual Haken Conjecture
-
-*Abstract:* Waldhausen conjectured in 1968 that every aspherical 3-manifold has a finite-sheeted cover which is Haken (contains an embedded essential surface). Thurston conjectured that hyperbolic 3-manifolds have a finite-sheeted cover which fibers over the circle.
-
-#### An overview of 3-Manifold Topology
-
-*Abstract:* The first lecture will be an overview of  3-manifold topology in order to explain the meaning Waldhausen's virtual Haken conjecture and Thurston's virtual fibering conjecture, and how they relate to other problems in 3-manifold theory.
-
-
-#### Lecture 2: What is Geometric Group Theory?
-
-*Abstract:* The second lecture will give some background on geometric group theory, including the topics of hyperbolic groups and $$CAT(0)$$ cube complexes after Gromov, and explain how the above conjectures may be reduced to a conjecture of Dani Wise in geometric group theory.
-
-
-#### Lecture 3: Geometric Group Theory and the Virtual Haken Conjecture
-
-*Abstract:*  The third lecture will discuss the proof of Wise's conjecture, that cubulated hyperbolic groups are virtually special. Part of this result is joint work with Daniel Groves and Jason Manning. We will attempt to make these lectures accessible to a general mathematical audience at the level of a colloquium talk.
-
-
-<img src="{{site.url}}/img/IMS/Agol_poster_5_0.jpg" style="max-width:80%" alt="Virginia Mathematics Lectures">
-
-<hr>
-
 ## <a name="jones"></a> Vaughan Jones (Vanderbilt University) April 6th-8th, 2015
 
 #### Lecture 1:  Knots and Groups

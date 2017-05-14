@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Virginia Mathematics Lectures - James Arthur
+title: Virginia Mathematics Lectures - James Arthur - November 14-16, 2016
 date: 2016-11-14 13:30:00
 event-date: 2016-11-14 12:00:00
 comments: false
@@ -13,7 +13,7 @@ image-tall: true
 more-text: Abstract
 ---
 
-<h3 class="mt-3 mb-4">James Arthur (University of Toronto) November 14-16, 2016</h3>
+<h3 class="mt-3 mb-4">James Arthur (University of Toronto)</h3>
 
 - Lecture 1: L-functions and Number Theory
 - Lecture 2: The Trace Formula and Automorphic Forms
