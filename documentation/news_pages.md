@@ -163,13 +163,19 @@ And so on, see [below](#displaying-posts) for a detailed description.
 
 Posts look nicely with images. If you do not want an image, simply omit these variables.
 
+###### `image`
+
+Put the image file into the folder `/img/news_events/` or simply into `/img/` in the source code (or a proper another subfolder of `/img/`, or even into a different subfolder like it is done for the math bulletin; the only desire is that this should be more or less consistent). Link the image in the post file like this: `image: __SITE_URL__/img/IMS/Gross_poster.jpg`.
+
+**Important!** keep the `__SITE_URL__` prefix as is, this is needed for correct automatic generation of the website.
+
+###### `image-alt`
+
+This is the 
+Benedict H. Gross Poster
 
 
 
-
-
-image: __SITE_URL__/img/IMS/Gross_poster.jpg
-image-alt: Benedict H. Gross Poster
 image-address: __SITE_URL__/img/IMS/Gross_poster.jpg
 image-tall: true
 
