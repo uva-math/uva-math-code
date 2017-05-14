@@ -22,7 +22,7 @@ and send your username to [L. Petrov](mailto:petrov@virginia.edu) to be added as
 
 There are two main ways to edit the website content:
 
-- **On the web**: Smaller edits can be made directly on the web at [GitHub](https://github.com/uva-math/uva-math-code).
+- **On the web**: Smaller edits can be made directly on the web at [GitHub](https://github.com/uva-math/uva-math-code). The GitHub icon in the lower right corner of each page points to the source file associated with this page, for quicker and simpler editing of existing content on the web.
 - **Locally**: Clone the website code to your local machine, make edits, and then sync the changes back to [GitHub](https://github.com/uva-math/uva-math-code). For this we recommend installing the [GitHub Desktop app](https://desktop.github.com/) and the [Atom text editor](https://atom.io/). Both are available for both Windows and Mac, and Atom is also available for Linux.
 
 In both cases, the changes in the code will trigger the website to automatically update, this takes about 5 minutes.
