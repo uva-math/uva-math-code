@@ -2,7 +2,6 @@
 layout: post
 title: Vaughan Jones - Virginia Mathematics Lectures - April 6-8, 2015
 date: 2015-04-06 13:30:00
-event-date: 2015-04-06 12:00:00
 comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true

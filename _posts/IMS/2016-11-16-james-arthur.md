@@ -2,7 +2,6 @@
 layout: post
 title: James Arthur - Virginia Mathematics Lectures - November 14-16, 2016
 date: 2016-11-14 13:30:00
-event-date: 2016-11-14 12:00:00
 comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
