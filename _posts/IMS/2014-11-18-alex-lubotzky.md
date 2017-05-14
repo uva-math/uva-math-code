@@ -4,6 +4,7 @@ title: Alex Lubotzky - Virginia Mathematics Lectures - November 18-20, 2014
 date: 2014-11-18 13:30:00
 event-date: 2014-11-18 13:30:00
 multi-day-event: true
+permalink: /ims/lectures/alex-lubotzky/
 comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
