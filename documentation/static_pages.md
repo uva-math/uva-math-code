@@ -70,7 +70,54 @@ nav_parent: People
 {%endhighlight%}
 
 Lines 10-13 are the content of the page, it contains the title and 
-a code which 
+a piece of code which automatically generates the list of the postdocs. 
+Let us discuss other variables in this particular case.
+
+<span class="nonupper-h5">title</span>
+
+The page's title, simple as that.
+
+<span class="nonupper-h5">layout</span>
+
+The layout `static_page_no_right_menu` is the simplest layout possible, 
+see [below](#empty_layout).
+
+<span class="nonupper-h5">permalink</span>
+
+This is the (relative) URL which will be used in the generated website. 
+For many pages, specifying `permalink` is often a good idea. Note that the 
+`permalink` has nothing to do with the filename associated 
+with the page (which is `/people/postdocs.html` in this particular case).
+
+<span class="nonupper-h5">nav\_parent</span>
+
+If this variable is defined then the page cannot be first-level. 
+Setting this variable as above highlights the corresponding first-level entry.
+Thus, this variable is used in second-level or highlighted pages.
+
+<span class="nonupper-h5">nav\_id</span>
+
+Setting this variable means that the page is first- or second-level,
+and this is the name which will appear in the navigation bar 
+(which thus can be shorter than the page title).
+
+<span class="nonupper-h5">nav\_nesting</span>
+
+If this is set to true then the page is either
+first- or second-level, depending on 
+whether `nav_parent` is set or not.
+
+<span class="nonupper-h5">nav\_weight</span>
+
+This is used to order the menu entries in the navigation bar
+(the first- and the second-level entries under each first-level entry are
+sorted separately) and sometimes in the right sidebar menu.
+The general rule is that the smaller `nav_weight`, the 
+closer the page is to the beginning of the sorted list.
+
+### A note on first-level label pages
+
+
 
 
 ---
@@ -114,7 +161,7 @@ nav_parent: [TO_HIGHLIGHT_A_NAVIGATION_BAR_ENTRY]
 ---
 {%endhighlight%}
 
-The layout `static_page_no_right_menu` corresponds to a completely empty static page
+<a name="empty_layout">The layout</a> `static_page_no_right_menu` corresponds to a completely empty static page
 only having the top brand bar, the navigation bar, and the footer element. 
 [Here]({{site.url}}/emptypage/) is an example of such a page, [file on GitHub](https://raw.githubusercontent.com/uva-math/uva-math-code/master/emptypage.md).
 

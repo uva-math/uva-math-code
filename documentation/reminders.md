@@ -24,12 +24,13 @@ Also remember that the website will be built and updated with your local changes
 ### 2. Internal links
 
 For internal links (when referencing a page on the department website)
-please use `{%raw%}{{ site.url }}{%endraw%}`
-**instead of an actual URL of the website** and/or
-**instead of using relative paths**.
-The tag
-`{%raw%}{{ site.url }}{%endraw%}`
-will be built into the actual URL which is `{{ site.url }}`.
+in pages' contents
+please use `{%raw%}{{site.url}}{%endraw%}`
+**instead of an actual URL of the website or
+relative paths**.
+The expression
+`{%raw%}{{site.url}}{%endraw%}`
+will become the actual website URL which is `{{site.url}}`.
 
 For example, the current page should be referenced as
 
@@ -43,5 +44,5 @@ It can also be referenced as
 {{ site.url }}{{ page.url }}
 {%endraw%}{%endhighlight%}
 
-Both expressions are built into the correct address of the current page, which is `{{ site.url }}{{ page.url }}`.
+Both expressions turn into the correct address of the current page which is `{{ site.url }}{{ page.url }}`.
 See [Jekyll documentation](https://jekyllrb.com/docs/variables/) for more details.
