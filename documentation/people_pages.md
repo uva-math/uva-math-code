@@ -106,9 +106,11 @@ areas:
 
 Possible values for research areas are quite broad and include the cup signs $$\cup$$ to indicate this. Here are the possible values for research areas one can put into a person's `.md` page:
 
+<ul>
 {% for area in site.data.research_areas %}
-  - ``{{area.name}}``
+<li><code class="highlighter-rouge">{{area.name | replace: '&nbsp;$$\cup$$&nbsp;', '&amp;nbsp;$$\cup$$&amp;nbsp;'}}</code></li>
 {% endfor %}
+</ul>
 
 The list of these values is in the file `_data/research_areas.yml` ([GitHub link](https://github.com/uva-math/uva-math-code/blob/master/_data/research_areas.yml)), here is an example of one entry (the dash in the first line and indentation are important):
 

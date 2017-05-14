@@ -8,6 +8,7 @@ categories: major-news news events
 published: true
 image: __SITE_URL__/img/Routunda.jpg
 image-alt: Final Exercises ceremony
+image-wide: true
 more-text: Schedule and locations
 ---
 

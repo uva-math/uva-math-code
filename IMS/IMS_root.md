@@ -8,9 +8,7 @@ nav_nesting: true
 # nav_parent: Home
 ---
 
-# Institute of Mathematical Science
-
-<br>
+<h1 class="mb-5">Institute of Mathematical Science</h1>
 
 {% assign sorted_pages = site.pages | sort: "nav_weight" %}
 {% for p in sorted_pages %}

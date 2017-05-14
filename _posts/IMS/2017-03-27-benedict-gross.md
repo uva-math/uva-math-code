@@ -9,6 +9,7 @@ published: true
 image: __SITE_URL__/img/IMS/Gross_poster.jpg
 image-alt: Benedict H. Gross Poster
 image-address: __SITE_URL__/img/IMS/Gross_poster.jpg
+image-tall: true
 more-text: Abstracts
 ---
 
