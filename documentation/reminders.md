@@ -2,7 +2,7 @@
 title: Important reminders
 layout: documentation_page
 permalink: /doc/reminders/
-nav_id: Important reminders
+nav_parent: Info
 doc_page: true
 nav_weight: 1000
 reminders_page: true
