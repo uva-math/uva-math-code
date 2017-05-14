@@ -2,11 +2,9 @@
 title: Important reminders
 layout: documentation_page
 permalink: /doc/reminders/
-nav_parent: Info
-nav_nesting: true
-nav_weight: 100
 nav_id: Important reminders
 doc_page: true
+nav_weight: 1000
 reminders_page: true
 ---
 
@@ -16,7 +14,7 @@ reminders_page: true
 
 ### 1. GitHub sync
 
-If using a local copy of the website code, **make sure to sync before your first edit**. This will help avoid git conflicts. This does not apply if you're making changes in the web editor. 
+If using a local copy of the website code, **make sure to sync before your first edit**. This will help avoid git conflicts. This does not apply if you're making changes in the web editor.
 
 ### 2. Internal links
 
