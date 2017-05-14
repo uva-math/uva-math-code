@@ -25,7 +25,8 @@ Also remember that the website will be built and updated with your local changes
 
 For internal links (when referencing a page on the department website)
 please use `{%raw%}{{ site.url }}{%endraw%}`
-**instead of an actual URL of the website**.
+**instead of an actual URL of the website** and/or
+**instead of using relative paths**.
 The tag
 `{%raw%}{{ site.url }}{%endraw%}`
 will be built into the actual URL which is `{{ site.url }}`.
