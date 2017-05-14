@@ -21,6 +21,8 @@ If you understand what's going on you can try editing this page.
 However, if the source contains includes (such as `{%raw%}{% include seminar_main_page.html %}{%endraw%}`)
 then you typically should not edit this page.
 
+Edits (web or local) take up to five minutes to appear on the actual website.
+
 ### 2. Do not forget to sync with GitHub when editing locally
 
 *(This does not apply if you're making changes in the web editor)*
