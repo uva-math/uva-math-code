@@ -10,7 +10,9 @@ reminders_page: true
 
 # Important reminders before making edits to the website
 
-## [This file's code on GitHub](https://raw.githubusercontent.com/uva-math/uva-math-code/master/documentation/reminders.md)
+##### [This file's code on GitHub](https://raw.githubusercontent.com/uva-math/uva-math-code/master/documentation/reminders.md)
+
+##### *(Tip: to launch the GitHub web editor for a concrete page, click on the github icon in the lower right corner)*
 
 ---
 
