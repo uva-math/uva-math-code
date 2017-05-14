@@ -8,7 +8,9 @@ nav_weight: 1000
 reminders_page: true
 ---
 
-# Important reminders before making edits to the website ([This file on GitHub](https://raw.githubusercontent.com/uva-math/uva-math-code/master/documentation/reminders.md))
+# Important reminders before making edits to the website
+
+## [This file's code on GitHub](https://raw.githubusercontent.com/uva-math/uva-math-code/master/documentation/reminders.md)
 
 ---
 
