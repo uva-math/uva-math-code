@@ -9,6 +9,8 @@ nav_weight: 107
 
 # Support for math formulas
 
+---
+
 Mathematical $$\mathrm{\LaTeX}$$ formulas are supported on this webpage via [MathJax](https://www.mathjax.org/), a powerful external Javascript library.
 We refer to MathJax's documentation for full details.
 Here are just some things to note:
