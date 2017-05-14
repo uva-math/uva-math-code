@@ -1,5 +1,5 @@
 ---
-title: Main principles
+title: General principles
 layout: documentation_page
 permalink: /doc/
 nav_parent: Info
@@ -9,7 +9,7 @@ nav_id: Website Documentation
 doc_page: true
 ---
 
-# Main principles
+# General principles
 
 ---
 

@@ -67,13 +67,32 @@ subfolders starting with `_` like `/_posts/`.
 
 ### To create a static page
 
+#### 1.
+
 Create `.md` or `.html` file somewhere in the code of the website, and 
-specify the configuration variables:
+specify the configuration variables in the beginning of the file. A minimal collection of the configuration 
+variables is the following:
+{%highlight yaml linenos %}
+---
+title: [YOUR_PAGE_TITLE]
+layout: static_page_no_right_menu
+permalink: [YOUR_PAGEs_PERMALINK]
+nav_parent: [TO_HIGHLIGHT_A_NAVIGATION_BAR_ENTRY]
+---
+{%endhighlight%}
+
+The layout `static_page_no_right_menu` corresponds to a completely empty static page
+only having the top brand bar, the navigation bar, and the footer element. 
+[Here]({{site.url}}/emptypage/) is an example of such a page, [file on GitHub]().
+
+#### 2.
 
 Then edit the content of the page in 
 [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 or plain HTML.
 Math formulas are also [supported]({{site.url}}/doc/math/).
+
+#### 3.
 
 The static page just added can be linked on existing website pages
 using its permalink. [Remember](doc/reminders/) to use 

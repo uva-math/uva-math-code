@@ -173,6 +173,7 @@ says simply "View details".
 
 This variable is specific to the IMS lectures (and typically should not be used for any other posts).
 It is used to highlight the IMS navigation bar item which clearly corresponds to the IMS lectures.
+See [here]({{site.url}}/doc/static/) for details on how pages interact with the navigation bar.
 
 <span class="nonupper-h5">variables related to post image</span>
 
