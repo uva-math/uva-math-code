@@ -13,9 +13,9 @@ nav_weight: 101
 
 ## Overview
 
-The main code for a seminar page located at `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md` ([example on GitHub](https://github.com/uva-math/uva-math-code/blob/master/seminars/colloq/colloq.md)) looks quite simple. Here is an example (symbols `%` and `{}` are together in the actual page, but for correct rendering here they are separated by a space; also in the actual page there are more links to archives):
+The main code for a seminar page located at `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md` ([example on GitHub](https://github.com/uva-math/uva-math-code/blob/master/seminars/colloq/colloq.md)) looks quite simple. Here is an example (in the actual page there are more links to archives):
 
-{% highlight markdown linenos %}
+{% highlight markdown linenos %}{%raw%}
 ---
 layout: seminar
 permalink: /seminars/colloq/
@@ -26,7 +26,7 @@ title: University of Virginia Mathematics Colloquium #override the default title
 # title: CAN OVERRIDE the title in <h1> on the page; the title of the page itself is hardcoded from seminars.yml
 ---
 
-{ % include seminar_page.html
+{% include seminar_page.html
   content=""
   contacts=""
   archives="[2016-17](/seminars/colloq/2016-17/) \|
@@ -35,7 +35,7 @@ title: University of Virginia Mathematics Colloquium #override the default title
     [2013-14](/seminars/colloq/2013-14/) \|
     ...
     "
-% }
+%}{%endraw%}
 {% endhighlight %}
 
 ### Core functionality
@@ -153,10 +153,8 @@ The google calendar feature allows to create pages with event lists displayed fr
 but not linked to the "all seminars" page on the unifying calendar on the main page.
 This might be suitable for a reading or a graduate seminar. To do this, one should imitate
 `/_includes/seminar_page.html` and hardcode the values in a standalone page. The key
-line of code displaying the google calendar events is
+line of code displaying google calendar events is
 
-{% highlight c linenos %}
-{ % include cal_single.js google_cal_id = [YOUR_GOOGLE_CALENDAR_ID] current = "true" max_sem = 50 % }
-{% endhighlight %}
-
-(again, `%` and `{}` in the actual code should be together).
+{% highlight c linenos %}{%raw%}
+{% include cal_single.js google_cal_id = [YOUR_GOOGLE_CALENDAR_ID] current = "true" max_sem = 50 %}
+{%endraw%}{% endhighlight %}
