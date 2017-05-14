@@ -39,6 +39,10 @@ and they can be reached by clicking through links on the website.
 
 ## Details on configuration variables
 
+There numerous configuration variables one can put in the beginning of the page. 
+Here we focus only on those interacting with the navigation bar, or, more broadly, with
+the URL structure of the website.
+
 
 ---
 
@@ -83,7 +87,7 @@ nav_parent: [TO_HIGHLIGHT_A_NAVIGATION_BAR_ENTRY]
 
 The layout `static_page_no_right_menu` corresponds to a completely empty static page
 only having the top brand bar, the navigation bar, and the footer element. 
-[Here]({{site.url}}/emptypage/) is an example of such a page, [file on GitHub]().
+[Here]({{site.url}}/emptypage/) is an example of such a page, [file on GitHub](https://raw.githubusercontent.com/uva-math/uva-math-code/master/emptypage.md).
 
 #### 2.
 
@@ -95,6 +99,6 @@ Math formulas are also [supported]({{site.url}}/doc/math/).
 #### 3.
 
 The static page just added can be linked on existing website pages
-using its permalink. [Remember](doc/reminders/) to use 
+using its permalink. [Remember]({{site.url}}/doc/reminders/) to use 
 `{%raw%}{{ site.url }}{%endraw%}`
 instead of an actual URL of the website to create internal links.
