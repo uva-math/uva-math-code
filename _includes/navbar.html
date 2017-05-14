@@ -19,6 +19,9 @@
           {{p.nav_id}}
         </a>
         <div class="dropdown-menu h5 {% if p.nav_id == 'IMS' %}dropdown-menu-right{% endif %}" style="font-size:16px">
+          {% if p.nav_id == "News&Events" %}
+            <a class="dropdown-item {%if paginator.page %}active bg-inverse{% endif %}" style="font-size:16px" href="{{site.url}}/allnews/">All News and Events{%if paginator.page %}<span class="sr-only">(current)</span>{% endif %}</a>
+          {% endif %}
           {% for pp in sorted_pages%}
           {% if pp.nav_id != null and pp.nav_parent == p.nav_id %}
           <a class="dropdown-item {%if pp.url == page.url %}active bg-inverse{% endif %}" style="font-size:16px" href="{{site.url}}{{pp.url}}">{{pp.nav_id}}{%if pp.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>

@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Virginia Mathematics Lectures
+title: Virginia Mathematics Lectures - Benedict Gross
 date: 2017-03-27 13:30:00
 event-date: 2017-03-27 12:00:00
 comments: false
-categories: news virginia-mathematics-lectures events
+categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Gross_poster.jpg
 image-alt: Benedict H. Gross Poster

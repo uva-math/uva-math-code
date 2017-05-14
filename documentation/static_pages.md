@@ -1,5 +1,5 @@
 ---
-title: Static Pages
+title: Static Pages and Navigation Bar
 layout: documentation_page
 permalink: /doc/static/
 nav_parent: Info
