@@ -36,10 +36,11 @@ These lecture series were enthusiastically met by the audience which included un
 
 <br>
 
-<div class="row my-col-12-zebra">
+<div class="row">
 {% for post in site.posts %}
   {% if post.categories contains "virginia-mathematics-lectures" %}
-    <div class="col-12 my-bordered-news-snippets">
+    <div class="col-12">
+      <hr />
         <h2 class="mb-2 mt-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{ post.title }}</a></h2>
 
         {% if post.event-date != null and post.multi-day-event %}
@@ -53,7 +54,7 @@ These lecture series were enthusiastically met by the audience which included un
         {{ post.excerpt | markdownify }}
 
         <p><a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a></p>
-    </div>
+  </div>
   {% endif %}
 {% endfor %}
 </div>
