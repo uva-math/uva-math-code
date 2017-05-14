@@ -16,7 +16,10 @@ reminders_page: true
 
 ### 1. GitHub sync
 
-If using a local copy of the website code, **make sure to sync before your first edit**. This will help avoid git conflicts. This does not apply if you're making changes in the web editor.
+*(This does not apply if you're making changes in the web editor)*
+
+If using a local copy of the website code, **make sure to sync before your first edit**. This will help avoid git conflicts.
+Also remember that the website will be built and updated only upon syncing with the GitHub.
 
 ### 2. Internal links
 
