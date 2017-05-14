@@ -2,6 +2,8 @@
 layout: post
 title: Benedict Gross - Virginia Mathematics Lectures - March 27-29, 2017
 date: 2017-03-27 13:30:00
+event-date: 2017-03-27 13:30:00
+multi-day-event: true
 comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true

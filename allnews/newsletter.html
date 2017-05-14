@@ -23,8 +23,12 @@ We have started a newsletter for the Department, the Virginia Math Bulletin. We 
 {% for post in site.posts %}
 {% if post.categories contains "virginia-math-bulletin" %}
 <div class="col-12 my-bordered-news-snippets">
-<h2 class="mb-2 mt-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{ post.title }}</a></h2> {% if post.event-date != null %}
-<h6>{{ post.event-date |  date: "%A, %B %-d, %Y" }}</h6>{% endif %} {% if post.image != null %} {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" alt="{{ post.image-alt }}" title="{{ post.image-alt }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %}{% if post.image-tall %}max-height:450px;{% endif %}height:auto;width:auto;" class="mb-3 mt-2"></a>
+<h2 class="mb-2 mt-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{ post.title }}</a></h2>
+{% if post.event-date != null and post.multi-day-event %}
+        <h6>Event start date: {{ post.event-date |  date: "%A, %B %-d, %Y" }}</h6>{% endif %}
+        {% if post.event-date != null and post.multi-day-event != true %}
+        <h6>Event date: {{ post.event-date |  date: "%A, %B %-d, %Y" }}</h6>{% endif %}
+{% if post.image != null %} {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" alt="{{ post.image-alt }}" title="{{ post.image-alt }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %}{% if post.image-tall %}max-height:450px;{% endif %}height:auto;width:auto;" class="mb-3 mt-2"></a>
 {% endif %} {{ post.excerpt | markdownify }}
 <p><a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a></p>
 </div>

@@ -2,6 +2,8 @@
 layout: post
 title: Karen Smith - Virginia Mathematics Lectures - February 29th - March 2nd, 2016
 date: 2016-02-29 13:30:00
+event-date: 2016-02-29 13:30:00
+multi-day-event: true
 comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true

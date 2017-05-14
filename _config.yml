@@ -8,7 +8,7 @@ highlighter: rouge
 
 excerpt_separator: <!--more-->
 
-paginate: 10
+paginate: 8
 paginate_path: "allnews/page:num"
 permalink: /:year/:month/:day/:title/
 
