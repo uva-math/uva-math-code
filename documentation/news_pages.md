@@ -142,36 +142,45 @@ You can include any subfolder names in the permalink.
 
 ##### categories 
 
+This is an important variable because it determines where the post is displayed.
+The currently used categories on the website are (the list below is generated automatically):
+
+{% assign sorted_cats = site.categories | sort %}
+<ul>
+{% for category in sorted_cats %}
+<li><code class="highlighter-rouge">{{ category | first }}</code></li>
+{% endfor %}
+</ul>
+
+A post can have several categories.
+
+By default, all published posts (i.e., not with `published: false`) are displayed
+on the ["all news" page]({{site.url}}/allnews/). If you add `news`, then the post
+will be displayed on the main page (note that the main page displays only 5 most recent posts).
+And so on, see [below](#displaying-posts) for a detailed description.
+
+##### variables related to image
+
+Posts look nicely with images. If you do not want an image, simply omit these variables.
 
 
-news virginia-mathematics-lectures ims events
+
+
+
+
 image: __SITE_URL__/img/IMS/Gross_poster.jpg
 image-alt: Benedict H. Gross Poster
 image-address: __SITE_URL__/img/IMS/Gross_poster.jpg
 image-tall: true
-more-text: Abstracts
 
-
-
-### Categories currently present on the website:
-
-{% assign sorted_cats = site.categories | sort %}
-{% for category in sorted_cats %}
-{{ category | first }}{% unless forloop.last %}{% endunless %}
-{% endfor %}
-
-posts can have several categories
-
-
-
-
+##### more-text
 
 
 
 
 ---
 
-## Where posts are displayed
+## <a name="displaying-posts">Where posts are displayed</a>
 
 The posts are automatically displayed in a number of pages, including the following.
 
