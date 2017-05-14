@@ -15,13 +15,17 @@ reminders_page: true
 ### 1. Tip for web editing on GitHub
 
 To get started it is helpful to view the code of the current page.
+
 To launch the GitHub web editor for this page (and any other page of the website)
 click on the GitHub icon in the lower right corner.
+
 If you understand what's going on you can try editing this page.
 However, if the source contains includes (such as `{%raw%}{% include seminar_main_page.html %}{%endraw%}`)
 then you typically should not edit this page.
 
 Edits (web or local) take up to five minutes to appear on the actual website.
+The current build status can be viewed by clicking on the checkmark icon next to the GitHub icon 
+in the lower right corner of each page.
 
 ### 2. Do not forget to sync with GitHub when editing locally
 
