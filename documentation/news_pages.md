@@ -28,9 +28,67 @@ Each post corresponds to a file located in the `_posts/` folder or one of its su
 YYYY-MM-DD-name-of-the-post.md
 {% endhighlight %}
 
+Here `YYYY-MM-DD` better correspond to `date:` configuration variable in the post. 
+The post itself has its own page. By default, its address is formatted as 
+`{{site.url}}/YYYY/MM/name-of-the-post`, where `YYYY`, `MM`, and `name-of-the-post` 
+come from the file name. This default address can be changed by setting the 
+`permalink:`  configuration variable.
+
 ---
 
-## Post configuration variables
+## Post file
+
+### Example of a post file
+
+{% highlight markdown linenos %}
+---
+layout: post
+title: Benedict Gross - Virginia Mathematics Lectures - March 27-29, 2017
+date: 2017-03-27 13:30:00
+event-date: 2017-03-27 13:30:00
+multi-day-event: true
+permalink: /ims/lectures/benedict-gross/
+comments: false
+categories: news virginia-mathematics-lectures ims events
+published: true
+image: __SITE_URL__/img/IMS/Gross_poster.jpg
+image-alt: Benedict H. Gross Poster
+image-address: __SITE_URL__/img/IMS/Gross_poster.jpg
+image-tall: true
+more-text: Abstracts
+---
+
+<h3 class="mt-3 mb-4"> Benedict H. Gross (Harvard)</h3>
+
+- Lecture 1: The rank of elliptic curves
+- Lecture 2: The arithmetic of hyperelliptic curves
+- Lecture 3: Heegner points on modular curves
+
+<!--more-->
+
+#### Lecture 1: The rank of elliptic curves
+
+[FURTHER_CONTENT]
+{% endhighlight %}
+
+### Content
+
+The first 16 lines define many configuration variables for the post. The
+rest of the file (after the second `---`) is the content of the post. 
+Note the separator `<!--more-->`. The content above it is the 
+post excerpt which is displayed in all post rolls, and the content below it is displayed
+only on the page of the post, cf. [the post roll]({{site.url}}/newsletter/) and a [page
+of the post]({{site.url}}/2016/06/bulletin/).
+
+One image to the post can be added to be handled automatically (to be displayed in nice size in both post rolls
+and on the post page). More images can be added manually as needed, both above and below the excerpt separator.
+
+The syntax of the content (both above and below the excerpt separator) is [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Math formulas are also [supported]({{site.url}}/doc/math/). 
+
+### Configuration variables
+
+Let us now describe the configuration variables (not all of them are present above),
+and how they affect the presentation of the post.
 
 ### Categories currently present on the website:
 
