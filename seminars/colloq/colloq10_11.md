@@ -5,6 +5,7 @@ permalink: /seminars/colloq/2010-11/
 events: false
 sem_page: true
 sem_archive: true
+nav_parent: Seminars
 ---
 
 <h1 class="mt-2 mb-4">COLLOQUIUM 2010-11</h1>

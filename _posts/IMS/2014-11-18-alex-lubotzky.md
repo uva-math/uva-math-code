@@ -13,6 +13,7 @@ image-alt: Alex Lubotzky Poster
 image-address: __SITE_URL__/img/IMS/Lubotzky8x14_5_0.jpg
 image-tall: true
 more-text: Abstracts
+nav_parent: IMS
 ---
 
 <h3 class="mt-3 mb-4">Alex Lubotzky (Hebrew University of Jerusalem)</h3>

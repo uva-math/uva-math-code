@@ -5,6 +5,7 @@ permalink: /seminars/algebra/2012-13/
 events: false
 sem_page: true
 sem_archive: true
+nav_parent: Seminars
 ---
 
 {% assign xx = page.permalink | split: '/' %}

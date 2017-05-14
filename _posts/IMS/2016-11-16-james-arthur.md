@@ -13,6 +13,7 @@ image-alt: James Arthur Poster
 image-address: __SITE_URL__/img/IMS/Arthur_poster1_0.jpg
 image-tall: true
 more-text: Abstract
+nav_parent: IMS
 ---
 
 <h3 class="mt-3 mb-4">James Arthur (University of Toronto)</h3>

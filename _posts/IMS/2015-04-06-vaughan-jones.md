@@ -13,6 +13,7 @@ image-alt: Vaughan Jones Poster
 image-address: __SITE_URL__/img/IMS/Jones_poster_3_0.jpg
 image-tall: true
 more-text: Abstracts
+nav_parent: IMS
 ---
 
 <h3 class="mt-3 mb-4">Vaughan Jones (Vanderbilt University)</h3>

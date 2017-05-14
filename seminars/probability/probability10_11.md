@@ -5,6 +5,7 @@ permalink: /seminars/probability/2010-11/
 events: false
 sem_page: true
 sem_archive: true
+nav_parent: Seminars
 ---
 
 {% assign xx = page.permalink | split: '/' %}

@@ -13,6 +13,7 @@ image-alt: Karen Smith Poster
 image-address: __SITE_URL__/img/IMS/Karen_Smith_poster_4_0.jpg
 image-tall: true
 more-text: Abstracts
+nav_parent: IMS
 ---
 
 <h3 class="mt-3 mb-4">Karen Smith (University of Michigan)</h3>

@@ -5,6 +5,7 @@ permalink: /seminars/algebra/2007-08/
 events: false
 sem_page: true
 sem_archive: true
+nav_parent: Seminars
 ---
 
 <h1 class="mt-2 mb-4">Algebra Seminar, Spring 2008</h1>

@@ -13,6 +13,7 @@ image-alt: Benedict H. Gross Poster
 image-address: __SITE_URL__/img/IMS/Gross_poster.jpg
 image-tall: true
 more-text: Abstracts
+nav_parent: IMS
 ---
 
 <h3 class="mt-3 mb-4"> Benedict H. Gross (Harvard)</h3>
