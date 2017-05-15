@@ -26,11 +26,11 @@
   {
     if (abst)
     {
-      var retStr = ['<details><summary>Abstract</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '">Google Calendar link</a><br>', '</details><br>'];
+      var retStr = ['<details><summary>Abstract</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '">Google Calendar link</a><br>', '</details>'];
       // appendPre(retStr);
       return retStr.join('');
     }
-    return '<br>';
+    return '';
   }
 
 // ------------
@@ -181,6 +181,7 @@
               {
                 //this is where the events' representation happens
                 var li = document.createElement('li');
+                li.className = "mb-3";
                 var elem = (eventsArray[j]+'').split(propSep)[1];
                 li.innerHTML = elem;
                 document.getElementById('events').appendChild(li);
@@ -190,6 +191,7 @@
               {
                 //this is where the events' representation happens
                 var li = document.createElement('li');
+                li.className = "mb-3";
                 var elem = (eventsArray[j]+'').split(propSep)[1];
                 li.innerHTML = elem;
                 document.getElementById('events').appendChild(li);
@@ -207,8 +209,8 @@
 
 <div id='content'>
   {%if include.current %}
-    <ul id='events'></ul>
+    <ul id='events' class="my-ul-zebra"></ul>
   {% else %}
-    <ol reversed id='events'></ol>
+    <ol reversed id='events' class="my-ul-zebra"></ol>
   {% endif %}
 </div>

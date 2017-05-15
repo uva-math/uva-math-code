@@ -63,7 +63,7 @@
       // appendPre(retStr);
       return retStr.join('');
     }
-    return '<br>';
+    return '';
   }
 
 // ------------
@@ -214,8 +214,9 @@
             {
               //this is where the events' representation happens
               var li = document.createElement('div');
+              li.className = "mt-3";
               var elem = (eventsArray[j]+'').split(propSep)[1];
-              li.innerHTML = elem + '<br>';
+              li.innerHTML = elem + '';
               document.getElementById('events').appendChild(li);
             }
             executeOnce = 1;
@@ -227,6 +228,6 @@
 </script>
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
-<div id='content'>
+<div id='content' class="my-div-zebra">
   <div id='events'></div>
 </div>
