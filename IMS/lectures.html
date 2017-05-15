@@ -53,7 +53,7 @@ These lecture series were enthusiastically met by the audience which included un
 
         {{ post.excerpt | markdownify }}
 
-        <p><a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a></p>
+        <p><a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a></p>
   </div>
   {% endif %}
 {% endfor %}
