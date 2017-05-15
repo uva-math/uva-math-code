@@ -46,6 +46,12 @@ events: true
         {% endif %}
         {% endfor %}
 
+
+        <div class="list-group h5 hidden-lg-up">
+          {% include front_page_link_list.html %}
+          <br />
+        </div>
+
         <div class="row">
           {% for post in site.categories['news'] limit:5 %}
           {% if post.id != major-news_id %}
@@ -76,8 +82,7 @@ events: true
 
         <br class="hidden-md-up">
         <div class="list-group h5 hidden-md-down">
-          <a href="{{site.url}}/facultyresearch/" class="list-group-item list-group-item-action" >Faculty Research</a>
-          <a href="{{site.url}}/newsletter/" class="list-group-item list-group-item-action" >Virginia Math Bulletin</a>
+          {% include front_page_link_list.html %}
         </div>
         <br class="hidden-md-down">
 
