@@ -158,11 +158,23 @@ a:hover.list-group-item.active {
     font-style: normal;
 }
 
-.jumbotron {
+
+@media (max-width: 575px){.jumbotron {
+  background-color:#F1F1EF;
+  padding: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 3px;
+  padding-top: 20px;
+}
+}
+
+
+@media (min-width: 576px){.jumbotron {
   background-color:#F1F1EF;
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 20px;
+}
 }
 
 .my-row-zebra .row:nth-of-type(2n+1){
