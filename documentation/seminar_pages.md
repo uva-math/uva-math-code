@@ -29,10 +29,10 @@ title: University of Virginia Mathematics Colloquium #override the default title
 {% include seminar_page.html
   content=""
   contacts=""
-  archives="[2016-17](/seminars/colloq/2016-17/) \|
-    [2015-16](/seminars/colloq/2015-16/) \|
-    [2014-15](/seminars/colloq/2014-15/) \|
-    [2013-14](/seminars/colloq/2013-14/) \|
+  archives="[2016-17]({{site.url}}/seminars/colloq/2016-17/) \|
+    [2015-16]({{site.url}}/seminars/colloq/2015-16/) \|
+    [2014-15]({{site.url}}/seminars/colloq/2014-15/) \|
+    [2013-14]({{site.url}}/seminars/colloq/2013-14/) \|
     ...
     "
 %}{%endraw%}
