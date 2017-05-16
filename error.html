@@ -7,65 +7,67 @@ permalink: /error.html
 # nav_nesting: true
 ---
 
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-  <title>Error page | Mathematics at the University of Virginia</title>
+  <title>Error Page and Site Map | Mathematics at the University of Virginia</title>
   {% include main_header.html %}
 </head>
 
 <body>
 
-{% include top_brand.html %}
+  {% include top_brand.html %} {% include navbar.html %}
 
-{% include main_navbar.html %}
-
-<div class="container">
   <div class="container">
-    <div class="row row-offcanvas row-offcanvas-right">
-      <div class="col-12 col-md-8">
-
-      <h1>Sorry,</h1>
-      <h1 class="mb-3">the page you requested does not exist</h1>
-
-      (under construction: include a picture)
-
-      <h2 class="mt-3"><a href="{{site.url}}">To the main page</a></h2>
-
-      </div><!--/span-->
-
-  <!-- The main page's right menu -->
-
-      <div class="col-10 col-md-4 sidebar-offcanvas" id="sidebar">
-
-        <br class="hidden-md-up">
-        <div class="list-group h5 hidden-md-down">
-          {% if page.support == null or page.support == true %}<a href="{{site.url}}/support/" class="list-group-item" style="background-color:rgba(235,95,12, 0.6);color:#002F6C;">Support us</a>{% endif %}
-        </div>
-        <div class="list-group hidden-lg-up ">
-          {% if page.support == null or page.support == true %}<a href="{{site.url}}/support/" class="list-group-item" style="background-color:rgba(235,95,12, 0.6);color:#002F6C;padding:10px;font-weight:900">SUPPORT US</a>{% endif %}
-        </div>
-        <br />
-
-        {% if page.events %}
-          <h3>{{ site.new_seminars_label }} (<a href="{{site.url}}/calendar/">all</a>)</h3>
-          <div style="font-size:15px; margin: 0.5cm 0cm 0cm 0cm;" class="container">
-            <!-- {% include cal_main.js show_from="2014" show_to="2015" max_sem=300 max_from_cal=100 %} -->
-            {% include cal_main.js current="true" max_sem=8 max_from_cal=7 %}
-          </div>
-        {% endif %}
-
-      </div><!--/span-->
-    </div><!--/row-->
+    <div class="list-group-sm">
+      <h1 class="list-group-item mt-4 mb-4 orange-item">Sorry, the page you requested does not exist</h1>
+    </div>
   </div>
-</div>
 
-{% include footer.html %}
+  <hr />
 
-{% include mathjax %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h1>&lt;Website map&gt;</h1>
+      </div>
 
-{% include bootjs %}
+
+      <div class="col-md-8">
+        <br class="hidden-md-up" />
+
+        <div class="list-group-lg">
+          <a class="list-group-item list-group-item-action h3 btn btn-secondary bg-inverse" href="{{site.url}}">Home</a>
+          <ul class="mt-3">
+          </ul>
+          {% assign sorted_pages = site.pages | sort: "nav_weight" %} {% for p in sorted_pages%} {% if p.nav_id != null and p.nav_nesting != true and p.nav_parent == null %}
+          <a class="list-group-item list-group-item-action h3 btn btn-secondary bg-inverse" href="{{site.url}}{{p.url}}">{{ p.nav_id }}</a>
+          <ul class="mt-3">
+          </ul>
+          {% endif %} {% if p.nav_id != null and p.nav_nesting == true and p.nav_parent == null %}
+          <a class="list-group-item list-group-item-action h3 btn btn-secondary bg-inverse" href="{{site.url}}{{p.url}}">
+            {{p.nav_id}}
+          </a>
+          <ul class="mt-3">
+            {% for pp in sorted_pages%} {% if pp.nav_id != null and pp.nav_parent == p.nav_id %}
+            <li>
+              <a class="h5" href="{{site.url}}{{pp.url}}">{{pp.nav_id}}</a>
+            </li> {% endif %} {% endfor %} {% if p.nav_id == "Seminars" %} {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %} {% for sem in sorted_sem %}
+            <li>
+              <a class="h5" href="{{site.url}}/seminars/{{sem.shortname}}">{{sem.name}}</a>
+            </li>
+            {% endfor %} {% endif %}
+          </ul>
+          {% endif %} {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %} {% include mathjax %} {% include bootjs %}
 
 </body>
 
