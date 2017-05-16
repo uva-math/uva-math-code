@@ -20,4 +20,4 @@ We appreciate all contributions to the Department of Mathematics. Your gift will
 
 A special "thank you" to everyone who has already responded.
 
-### [Support Mathematics](http://giving.virginia.edu/mathematics)
+<h3 class="mt-3">[Support Mathematics](http://giving.virginia.edu/mathematics)</h3>
