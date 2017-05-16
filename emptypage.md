@@ -6,5 +6,3 @@ nav_parent: Info
 ---
 
 Content goes here.
-
-Test Amazon S3 policies
