@@ -10,4 +10,5 @@ sem_page: true
 {% include seminar_page.html
   content=""
   contacts=""
+  archives="[2016-17](/seminars/diffeq/2016-17/)"
 %}
