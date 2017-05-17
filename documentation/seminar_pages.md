@@ -44,7 +44,7 @@ The main day-to-day content in the seminar pages is taken from google calendars.
 
 The fields `content=""` and `contacts=""` allow to add some extra content into specific places on the automatically generated seminar page: the first field adds before `UPCOMING TALKS` list, and the second field - before the `Contact:` information at the bottom of the page.
 
-The unified list of talks is displayed on the main page. **Note:** only 180 days of seminars are displayed on the main page and on the "all seminars" [{{site.url}}/calendar/]({{site.url}}/calendar/) page. Seminars further in the future can be found at the individual seminars pages.
+The unified list of talks is displayed on the main page. **Note:** only 180 days of seminars are displayed on the main page and on the "all seminars" page [{{site.url}}/calendar/]({{site.url}}/calendar/). Seminars further in the future can be found at the individual seminars pages.
 
 ### Archives
 
