@@ -44,6 +44,8 @@ The main day-to-day content in the seminar pages is taken from google calendars.
 
 The fields `content=""` and `contacts=""` allow to add some extra content into specific places on the automatically generated seminar page: the first field adds before `UPCOMING TALKS` list, and the second field - before the `Contact:` information at the bottom of the page.
 
+The unified list of talks is displayed on the main page. **Note:** only 180 days of seminars are displayed on the main page and on the "all seminars" [{{site.url}}/calendar/]({{site.url}}/calendar/) page. Seminars further in the future can be found at the individual seminars pages.
+
 ### Archives
 
 ###### More recent
@@ -63,7 +65,7 @@ The key to how this works is in the field `permalink: /seminars/colloq/` which t
 
 The main information on seminars is contained in `_data/seminars.yml` ([this file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/_data/seminars.yml)). Its structure is explained below.
 
-The javascript code which generates talks lists is in the files `_includes/cal_main.js` (for the main page unified list of talks; [file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/_includes/cal_main.js)) and `_includes/cal_single.js` (for individual seminar pages and archives; [file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/_includes/cal_single.js)).
+The javascript code which generates talks lists is in the files `_includes/cal_main.js` (for the main page the unified list of talks is displayed; [file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/_includes/cal_main.js)) and `_includes/cal_single.js` (for individual seminar pages and archives; [file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/_includes/cal_single.js)).
 
 ---
 
