@@ -142,6 +142,7 @@
           'singleEvents': true,
           {%if include.current %}
             'timeMin': today.toISOString(),
+            'timeMax': (today.getDate() + 180).toISOString(),
           {%else%}
             'timeMin': ffr.toISOString(),
             'timeMax': tto.toISOString(),
