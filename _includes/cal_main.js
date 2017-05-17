@@ -123,6 +123,8 @@
     var executeOnce = 0;
     {%if include.current %}
       var today = new Date();
+      var future_day = new Date();
+      future_day.setDate( future_day.getDate() + 180 ); //display only events 180 days into the future
       today.setDate(today.getDate() {%if include.days_back != null%}- {{include.days_back}}{%endif%}); //access current data from some days ago
     {%else%}
       var ffr = new Date('{{include.show_from}}'); //access historical data
@@ -142,7 +144,7 @@
           'singleEvents': true,
           {%if include.current %}
             'timeMin': today.toISOString(),
-            'timeMax': (today.getDate() + 180).toISOString(),
+            'timeMax': future_day.toISOString(),
           {%else%}
             'timeMin': ffr.toISOString(),
             'timeMax': tto.toISOString(),
