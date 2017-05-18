@@ -276,7 +276,7 @@ nonupper-h6,
   font-size: 18px;
   font-family: 'Unna', serif;
   font-style: italic;
-  font-weight: bold;
+  /*font-weight: bold;*/
   line-height: 1.1;
   color: inherit;
 }
@@ -329,7 +329,7 @@ h4,
 {
   font-family: 'Unna', serif;
   font-style: italic;
-  font-weight: bold;
+  /*font-weight: bold;*/
   line-height: 1.1;
   color: inherit;
   text-transform: uppercase;
@@ -340,7 +340,7 @@ h6,
 {
   font-family: 'Unna', serif;
   font-style: italic;
-  font-weight: bold;
+  /*font-weight: bold;*/
   line-height: 1.1;
   color: inherit;
   text-transform: uppercase;
