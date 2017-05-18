@@ -5,8 +5,8 @@ description: Official website of Department of Mathematics at the University of 
 
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
-  
+  math_engine: nil
+
 highlighter: rouge
 
 excerpt_separator: <!--more-->
