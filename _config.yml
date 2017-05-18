@@ -4,6 +4,9 @@ name: Mathematics at the University of Virginia
 description: Official website of Department of Mathematics at the University of Virginia (under construction)
 
 markdown: kramdown
+kramdown:
+  math_engine: mathjax
+  
 highlighter: rouge
 
 excerpt_separator: <!--more-->
