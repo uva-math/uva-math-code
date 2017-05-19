@@ -8,7 +8,7 @@ office: 209 Kerchof Hall
 phone: 434-924-4167
 email: petrov@virginia.edu
 image: __SITE_URL__/img/people/Petrov.jpg
-personal_page: http://faculty.virginia.edu/petrov/
+personal_page: http://lpetrov.cc/
 areas: #Must coincide with the ones in _data/research_areas.yml
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
   - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
