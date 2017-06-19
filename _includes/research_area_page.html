@@ -9,7 +9,7 @@
   <div class="col-md-7">
     <h2 class="mb-4">{{area.h-name}}</h2>
 
-    {% assign sorted_people = (site.departmentpeople | sort: 'lastname') %}
+    {% assign sorted_people = site.departmentpeople | sort: 'lastname' %}
 
     <div class="my-row-zebra mr-3">
     {% for ppl in sorted_people %}

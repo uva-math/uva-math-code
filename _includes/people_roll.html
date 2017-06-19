@@ -1,4 +1,4 @@
-{% assign sorted_people = (site.departmentpeople | sort: 'lastname') %}
+{% assign sorted_people = site.departmentpeople | sort: 'lastname' %}
 
 <div class="my-row-zebra">
 {% for ppl in sorted_people %}

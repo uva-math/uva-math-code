@@ -9,7 +9,7 @@ nav_nesting: true
 
 <h1 class="mb-4">Alphabetic list of all members of the Department</h1>
 
-{% assign sorted_people = (site.departmentpeople | sort: 'lastname') %}
+{% assign sorted_people = site.departmentpeople | sort: 'lastname' %}
 
 <div class="my-row-zebra">
 {% for ppl in sorted_people %}
