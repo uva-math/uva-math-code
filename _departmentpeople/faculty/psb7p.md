@@ -3,7 +3,7 @@ UVA_id: psb7p
 lastname: Bourdon
 name: Paul
 general_position: faculty
-position:
+position: Lecturer & Director of Lower Division Courses
 office: 225 Kerchof Hall
 phone: 434-924-4939
 email: psb7p@virginia.edu
