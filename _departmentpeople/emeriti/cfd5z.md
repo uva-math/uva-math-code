@@ -3,7 +3,7 @@ UVA_id: cfd5z
 lastname: Dunkl
 name: Charles
 general_position: emeritus
-position:
+position: Professor Emeritus
 office: 202 Kerchof Hall
 phone: 434-924-4939
 email: cfd5z@virginia.edu

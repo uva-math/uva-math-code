@@ -3,7 +3,7 @@ UVA_id: bdm3f
 lastname: MacCluer
 name: Barbara
 general_position: emeritus
-position:
+position: Professor Emeritus
 office: 202 Kerchof Hall
 phone: 434-924-4924
 email: bdm3f@virginia.edu

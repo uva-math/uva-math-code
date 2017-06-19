@@ -3,7 +3,7 @@ UVA_id: kmm4m
 lastname: McCrimmon
 name: Kevin
 general_position: emeritus
-position:
+position: Professor Emeritus
 office: 213 Kerchof Hall
 phone: 434-924-4938
 email: kmm4m@virginia.edu

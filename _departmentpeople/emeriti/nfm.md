@@ -3,7 +3,7 @@ UVA_id: nfm
 lastname: Martin
 name: Nathaniel
 general_position: emeritus
-position:
+position: Professor Emeritus
 office:
 phone:
 email: nfm@virginia.edu

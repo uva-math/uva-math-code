@@ -3,7 +3,7 @@ UVA_id: jsh2a
 lastname: Howland
 name: James
 general_position: emeritus
-position:
+position: Professor Emeritus
 office:
 phone:
 email: jsh2a@virginia.edu

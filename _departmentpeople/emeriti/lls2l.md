@@ -3,7 +3,7 @@ UVA_id: lls2l
 lastname: Scott
 name: Leonard
 general_position: emeritus
-position:
+position: McConnell-Bernard Professor of Mathematics Emeritus
 office: 207 Kerchof Hall
 phone: 434-924-4929
 email: lls2l@virginia.edu

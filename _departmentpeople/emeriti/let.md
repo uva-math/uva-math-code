@@ -3,7 +3,7 @@ UVA_id: let
 lastname: Thomas
 name: Lawrence
 general_position: emeritus
-position:
+position: Professor Emeritus
 office: 305 Kerchof Hall
 phone: 434-924-4936
 email: let@virginia.edu
