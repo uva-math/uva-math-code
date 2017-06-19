@@ -32,4 +32,4 @@ collections:
 
 exclude: [vendor]
 
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
