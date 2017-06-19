@@ -3,12 +3,12 @@ UVA_id: khp3k
 lastname: Parshall
 name: Karen
 general_position: faculty
-position:
+position: Commonwealth Professor of Mathematics and History
 office: 226 Kerchof Hall
 phone: 434-924-1411
 email: khp3k@virginia.edu
 image: __SITE_URL__/img/people/ParshallK.jpg
-personal_page:
+personal_page: http://people.virginia.edu/~khp3k/home.htm
 
 areas:
   - History of$$\ $$Mathematics
