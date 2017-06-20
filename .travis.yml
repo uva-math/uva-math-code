@@ -2,7 +2,7 @@ language: ruby
 rvm:
 - 2.4.1
 
-# only build the master branch so that branch edits do not corrupt the website
+
 branches:
   only:
   - master
