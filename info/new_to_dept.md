@@ -30,10 +30,10 @@ Software Central (http://www.its.virginia.edu/central/) provides access to site-
 
 **Scheduling Classrooms:** If your classroom is not the right size or you wish to reserve a classroom for a review session, makeup exam, etc., see the front office (room 216).
 
-**Copying Exams:** The Department has a copier/scanner (room 203) and floor printers (rooms 313, 118) for printing. You should be able to print from your office computer to any of these printers. To use the copier, you need to obtain the passcode from Zvezdana Kish (room 214). There is also a copier in the Library (room 107); obtain a copy card from Zvezdana Kish (room 214). Large print jobs may be sent to the Copy Center through Allison Boese (room 216).
+**Copying Exams:** The Department has a copier/scanner (room 203) and floor printers (rooms 313, 118) for printing. You should be able to print from your office computer to any of these printers. To use the copier, you need to obtain the passcode from Zvezdana Kish (room 214). There is also a copier in the Library (room 107); obtain a copy card from Zvezdana Kish (room 214). Large print jobs may be sent to the Copy Center through Raven James (room 216).
 
 **Telephone:** To make a call within the University, dial the last 5 digits of the number (ex. 4-4900). To call outside the University, dial 9 for an outside line. To make long distance calls, please request an FAC number from Zvezdana Kish (room 214).
 
 **Mailboxes:** Everyone has a mailbox in the mailroom (off the Lobby on the main floor).
 
-**Supply Room (220):** The Supply Room has paper, pens, chalk, toner cartridges, and other supplies. There is also a refrigerator, microwave, and FAX machine. You may check out a projector with Allison Boese (room 216).
+**Supply Room (220):** The Supply Room has paper, pens, chalk, toner cartridges, and other supplies. There is also a refrigerator, microwave, and FAX machine. You may check out a projector with Raven James (room 216).
