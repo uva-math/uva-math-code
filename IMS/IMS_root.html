@@ -1,0 +1,27 @@
+---
+title: IMS
+layout: static_page_no_right_menu
+permalink: /ims/
+nav_id: 'IMS'
+nav_weight: 1000
+nav_nesting: true
+# nav_parent: Home
+---
+
+<div class="row">
+  <div class="col-md-8">
+    <h1 class="mb-5">Institute of Mathematical Science</h1>
+
+    <ul>
+    {% assign sorted_pages = site.pages | sort: "nav_weight" %}
+    {% for p in sorted_pages %}
+    {% if p.permalink contains '/ims/' and p.permalink != '/ims/' %}
+    <li> <h3><a href="{{site.url}}{{p.url}}">{{p.nav_id}}</a></h3></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+  </div>
+  <div class="col-md-4">
+    <img src="{{ site.url }}/img/people/Avatar_image.png" style="max-width:100%;max-height:400px;height:auto;width:auto;" class="hidden-sm-down" alt="UVA Mathematics Logo" title="UVA Mathematics Logo">
+  </div>
+</div>
