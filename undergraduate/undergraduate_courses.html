@@ -1,0 +1,24 @@
+---
+title: Undergraduate courses
+layout: ug_page
+permalink: /courses/undergrad/
+nav_id: Undergraduate courses
+nav_parent: Undergraduate
+nav_nesting: true
+nav_weight: 1000
+---
+
+{% assign sorted_courses = site.data.courses | sort: "number" %}
+
+<div class="my-row-zebra">
+{% for crs in sorted_courses %}
+{% unless crs.graduate %}
+  <div class="row" style="padding:10px 0px">
+    <div class="col-12">
+       <div class="mt-1 mb-1"><code class="highlighter-rouge" style="background:inherit; padding:0px">MATH {{crs.number}}</code>&nbsp;&nbsp;&nbsp;<b>{{crs.name}} ({{crs.credits}})</b></div>
+       {{crs.descr}}
+    </div>
+  </div>
+{% endunless %}
+{% endfor %}
+</div>

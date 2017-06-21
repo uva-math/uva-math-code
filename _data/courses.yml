@@ -2,16 +2,19 @@
 
 # all fields are self-explanatory; if the course is graduate this should be indicated
 
--
-  name: Precalculus
-  credits: 3.00
-  number: MATH 1030
+- name: Precalculus
+  credits: "3.00"
+  number: 1030
   descr: 'Studies computational skills, patterns of quantitative problem solving, and mathematical thought. Includes linear and quadratic equations, polynomials, inverse functions, logarithms, arithmetic and geometric sequences, trigonometric functions, and linear systems. (Does not satisfy the College natural science and mathematics requirement.) Prerequisite: High school algebra II and geometry.'
 
 
--
-  name: General Topology
-  credits: 3.00
+- name: Calculus III
+  credits: "4.00"
+  number: 2310
+  descr: 'A continuation of Calc I and II, this course is about functions of several variables. Topics include finding maxima and minima of functions of several variables/surfaces and curves in three-dimensional space/integration over these surfaces and curves.  Additional topics: conservative vector fields/Stokes’ and the divergence theorems/how these concepts relate to real world applications. Prerequisite: MATH 1320 or the equivalent.'
+
+- name: General Topology
+  credits: "3.00"
   graduate: true
-  number: MATH 5770
+  number: 5770
   descr: 'Topological spaces and continuous functions, connectedness, compactness, countability and separation axioms, and function spaces. Time permitting, more advanced examples of topological spaces, such as projectives spaces, as well as an introduction to the fundamental group will be covered. Prerequisite: MATH 2310 and 3351, with 3310 recommended.'
