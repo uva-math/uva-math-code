@@ -57,7 +57,9 @@ Director of Analytics, Prudential Financial<br>
 *Uniform Convergence Methods in Hilbert-Kunz Theory*<br>
 (Advisor: Craig Huneke)
 
-## Summer 2014
+<!-- to finish formatting below from here -->
+
+Summer 2014
 
 Reed Nessler
 Simple Connectivity in Polar Spaces with Group-Theoretic Applications
