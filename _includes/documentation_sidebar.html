@@ -1,11 +1,19 @@
 <div class="list-group-sm">
   {% assign sorted_pages = site.pages | sort: "nav_weight" %}
   {% for pg in sorted_pages %}
-  {% if pg.doc_page == true and pg.reminders_page != true %}
+  {% if pg.doc_page == true and pg.reminders_page != true and pg.permalink != '/doc/contribute/' %}
       <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">{{pg.title}}</a>
   {% endif %}
   {% endfor %}
 </div>
+
+<br />
+
+<div class="list-group-sm">
+  <a class="list-group-item list-group-item-action h5 {% if page.permalink == '/doc/contribute/' %}active{% endif %}"
+      href="{{site.url}}/doc/contribute/">Contribute to the content</a>
+</div>
+
 
 <br>
 

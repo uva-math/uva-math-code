@@ -9,16 +9,25 @@ nav_id: Website Documentation
 doc_page: true
 ---
 
-# General principles
+## Purpose of the documentation pages
+
+The purpose of these pages is to help understand the structure of the department
+website, and to invite everyone at the department [contribute]({{site.url}}/doc/contribute/) to the content
+of our website.
+
+
+
+<h1 class="mt-5">General principles of the website organization</h1>
 
 ---
 
-### Collaborative editing powered by [GitHub](https://github.com)
+### 1. Collaborative editing powered by [GitHub](https://github.com)
 
 Edits to the website are tested automatically so are unlikely to break anything.
 Moreover, any edit can be reverted. Therefore, *you* are welcome to
 participate in editing the content. The first step is to sign up on [GitHub.com](https://github.com)
 and send your username to [L. Petrov](mailto:petrov@virginia.edu) to be added as a collaborator.
+See [here]({{site.url}}/doc/contribute/) for more details on how to contribute.
 
 There are two main ways to edit the website content:
 
@@ -33,7 +42,7 @@ The website building (and testing) are powered by [Travis CI](https://travis-ci.
 
 ---
 
-### Simple content structure powered by [Jekyll](https://jekyllrb.com/)
+### 2. Simple content structure powered by [Jekyll](https://jekyllrb.com/)
 
 - Any simple change in content should require editing in only one place. More complicated edits (such as adding a new seminar) might need changes in up to three places. Typical editing scenarios are documented on these pages.
 - The content is text file based, with no databases or complicated CMSs
@@ -41,7 +50,7 @@ The website building (and testing) are powered by [Travis CI](https://travis-ci.
 
 ---
 
-### Flexible design powered by [Bootstrap](http://getbootstrap.com/)
+### 3. Flexible design powered by [Bootstrap](http://getbootstrap.com/)
 
 - Most design elements can be tweaked independently of content (and most changes require editing only in one file)
 - Design is fully customizable
