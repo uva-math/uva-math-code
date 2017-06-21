@@ -2,7 +2,7 @@
 title: Information
 layout: ug_page
 permalink: /undergraduate/
-nav_id: Information
+nav_id: For current and prospective undergraduate students
 nav_long: true
 nav_parent: Undergraduate
 nav_nesting: true
