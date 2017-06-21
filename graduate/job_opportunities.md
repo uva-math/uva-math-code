@@ -1,5 +1,5 @@
 ---
-title: Job opprtunities
+title: Job opportunities
 layout: g_page
 g_info: true
 permalink: /graduate/employment/
