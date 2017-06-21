@@ -72,11 +72,15 @@ but both are supported.
 There is a yaml "database" file `_data/courses.yml`
 ([link to GitHub](https://github.com/uva-math/uva-math-code/blob/master/_data/courses.yml))
 which contains all the course descriptions. 
-It is mined from [this page at the Lou's list](https://rabi.phys.virginia.edu/mySIS/CC2/Mathematics.html) (which is itself is mined from the UVA SIS) by the python script `/script/lou_course_descriptions.py` ([link to GitHub]()). This script is a part of the source code. 
+It is mined from [this page at the Lou's list](https://rabi.phys.virginia.edu/mySIS/CC2/Mathematics.html) (which is itself is mined from the UVA SIS) by the python script `/script/lou_course_descriptions.py` ([link to GitHub](https://github.com/uva-math/uva-math-code/blob/master/script/lou_course_descriptions.py)). This script is a part of the source code. 
 
 **Note:** You can make changes to this database file `_data/courses.yml` but running the script will overwrite it.
 
-The course description pages use this database file to list all courses, undergraduate or graduate.
+The course description pages use this database file to list all courses, 
+undergraduate (`/courses/undergrad/`) or graduate (`/courses/graduate/`).
 The difference is that the graduate courses have an additional `graduate: true` field, 
-while the undergraduate courses do not need it. 
+while the undergraduate courses do not need it. (The script will check if the number of the course
+	is $\ge 5000$ then it lists it as a graduate.)
 
+**Note:** There is a combined course description page with permalink `/courses/` which is not linked from the undergraduate
+or graduate pages but is kept for compatibility with the old website.
