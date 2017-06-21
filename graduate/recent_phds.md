@@ -61,246 +61,246 @@ Director of Analytics, Prudential Financial<br>
 
 ## Summer 2014
 
-- **Reed Nessler**
-*Simple Connectivity in Polar Spaces with Group-Theoretic Applications*
+- **Reed Nessler**<br>
+*Simple Connectivity in Polar Spaces with Group-Theoretic Applications*<br>
 (Advisor:Peter Abramenko)
 
-- **Daniel Remine**
-*Analysis and Computational Fluid Dynamics for the Stabilization and Control of 3-Dimensional Navier-Stokes Fluid Channel Flows by a Wall-Normal Boundary Controller*
+- **Daniel Remine**<br>
+*Analysis and Computational Fluid Dynamics for the Stabilization and Control of 3-Dimensional Navier-Stokes Fluid Channel Flows by a Wall-Normal Boundary Controller*<br>
 (Advisor: Roberto Triggiani)
 
-- **Julia Spencer**
-*Min-Max Game Theory for the Linearized Navier-Stokes Equations with Internal Localized Control and Distributed Disturbance*
+- **Julia Spencer**<br>
+*Min-Max Game Theory for the Linearized Navier-Stokes Equations with Internal Localized Control and Distributed Disturbance*<br>
 (Advisor:Roberto Triggiani)
 
 ## May 2014
 
-- **Zachary Bradshaw**
-*On Turbulent Dynamics and Related Theoretical Topics Associated with Diffusive Incompressible Fluid Models*
+- **Zachary Bradshaw**<br>
+*On Turbulent Dynamics and Related Theoretical Topics Associated with Diffusive Incompressible Fluid Models*<br>
 (Advisor: Zoran Grujic)
 
-- **Ajay Chandra**
-*Construction and Analysis of a Hierarchical Massless Quantum Field Theory*
+- **Ajay Chandra**<br>
+*Construction and Analysis of a Hierarchical Massless Quantum Field Theory*<br>
 (Advisor: Abdelmalek Abdesselam)
 
-- **Sean Ian Clark**
-*Quantum Supergroups and Canonical Bases*
+- **Sean Ian Clark**<br>
+*Quantum Supergroups and Canonical Bases*<br>
 (Advisor: Weiqiang Wang)
 
-- **Jason David Knapp**
-*Stability and Convergence of Approximate Solutions to the Moore-Gibson-Thompson Equation*
+- **Jason David Knapp**<br>
+*Stability and Convergence of Approximate Solutions to the Moore-Gibson-Thompson Equation*<br>
 (Advisor: Irena Lasiecka)
 
-- **Christopher Grant Lefler**
-*Well-Posedness and Stability for Nonlinear Schroedinger Equations with Dynamic/Wentzell Boundary Conditions*
+- **Christopher Grant Lefler**<br>
+*Well-Posedness and Stability for Nonlinear Schroedinger Equations with Dynamic/Wentzell Boundary Conditions*<br>
 (Advisor: Irena Lasiecka)
 
-- **Nathaniel Ray Pappas**
-*On Rank Gradient and p-Gradient of Finitely Generated Groups*
+- **Nathaniel Ray Pappas**<br>
+*On Rank Gradient and p-Gradient of Finitely Generated Groups*<br>
 (Advisor: Mikhail V. Ershov)
 
 ## December 2013
 
-- **Mor Katz**
-*Essentially Normal Composition Operators*
+- **Mor Katz**<br>
+*Essentially Normal Composition Operators*<br>
 (Advisor: Thomas Kriete)
 
 ## August 2013
 
-- **Nicolas Fourrier**
-Research Analyst, CGG
-*Analysis of Existence, Regularity, and Stability of Solutions to Wave Equations with Dynamic Boundary Conditions*
+- **Nicolas Fourrier**<br>
+Research Analyst, CGG<br>
+*Analysis of Existence, Regularity, and Stability of Solutions to Wave Equations with Dynamic Boundary Conditions*<br>
 (Advisor: Irena Lasiecka)
 
-- **Andrea Merlin Heald**
-*Bounded Generation of Two Families of S-Arithmetic Groups*
+- **Andrea Merlin Heald**<br>
+*Bounded Generation of Two Families of S-Arithmetic Groups*<br>
 (Advisor: Andrei Rapinchuk)
 
-- **Matthew Hogancamp**
-Visiting Asst. Professor, Indiana University
-*Local and Quasi-Local sl(2) Link Homology*
+- **Matthew Hogancamp**<br>
+Visiting Asst. Professor, Indiana University<br>
+*Local and Quasi-Local sl(2) Link Homology*<br>
 (Advisor: Slava Krushkal)
 
 ## May 2013
 
-- **Constance Baltera**
-*Coinvariant Algebras and Fake Degrees*
+- **Constance Baltera**<br>
+*Coinvariant Algebras and Fake Degrees*<br>
 (Advisor: Weiqiang Wang)
 
-- **Daniel Dobbs**
-Asst. Professor, Huntington University
-*Properties of Measures and Processes Related to Brownian Motion on Infinite-Dimensional Heisenberg-Like Groups*
+- **Daniel Dobbs**<br>
+Asst. Professor, Huntington University<br>
+*Properties of Measures and Processes Related to Brownian Motion on Infinite-Dimensional Heisenberg-Like Groups*<br>
 (Advisor: Tai Melcher)
 
-- **Sean Droms**
-Asst. Professor, Lebanon Valley College
-*Constructions of Stein Fillings*
+- **Sean Droms**<br>
+Asst. Professor, Lebanon Valley College<br>
+*Constructions of Stein Fillings*<br>
 (Advisor: Tom Mark)
 
 
-- **Timothy Emerick**
-Systems Engineer, CCRi
-*A Group-Theoretic Characterization of the Unipotent Radical*
+- **Timothy Emerick**<br>
+Systems Engineer, CCRi<br>
+*A Group-Theoretic Characterization of the Unipotent Radical*<br>
 (Advisor: Peter Abramenko)
 
-- **Craig Kleski**
-Visiting Asst. Professor, Miami University
-*Boundaries for Operator Systems*
+- **Craig Kleski**<br>
+Visiting Asst. Professor, Miami University<br>
+*Boundaries for Operator Systems*<br>
 (Advisor: David Sherman)
 
-- **Kristen Mazur**
-Visiting Asst. Professor, Lafayette College
-*On the Structure of Mackey Functors and Tambara Functors*
+- **Kristen Mazur**<br>
+Visiting Asst. Professor, Lafayette College<br>
+*On the Structure of Mackey Functors and Tambara Functors*<br>
 (Advisor: Michael Hill)
 
-- **Timothy Pollio**
-*The Multinorm Principle*
+- **Timothy Pollio**<br>
+*The Multinorm Principle*<br>
 (Advisor: Andrei Rapinchuk)
 
-- **Carolyn Yarnall**
-Visiting Asst. Professor, Wabash College
-*The Slices of Suspensions of HZ for Cuclic p-Groups*
+- **Carolyn Yarnall**<br>
+Visiting Asst. Professor, Wabash College<br>
+*The Slices of Suspensions of HZ for Cuclic p-Groups*<br>
 (Advisor: Michael Hill)
 
 
 
 ## August 2012
 
-- **Jameson Graber**
-INRIA Postdoctoral Fellow, École National Supérieure, Paris, France
-*The Wave Equation with Generalized Nonlinear Acoustic Boundary Conditions*
+- **Jameson Graber**<br>
+INRIA Postdoctoral Fellow, École National Supérieure, Paris, France<br>
+*The Wave Equation with Generalized Nonlinear Acoustic Boundary Conditions*<br>
 (Advisor: Irena Lasiecka)
 
 
-- **Joseph Johnson**
-Instructor, Mary Baldwin College
-*K(X): An Equivariant K-Theory Functor from Spaces to lambda-Rings*
+- **Joseph Johnson**<br>
+Instructor, Mary Baldwin College<br>
+*K(X): An Equivariant K-Theory Functor from Spaces to lambda-Rings*<br>
 (Advisor: Nicholas Kuhn)
 
 
-- **Jason McCarty**
-Assistant Professor, Indiana University of Pennsylvania
-*The Mod 2 Homology of Infinite Loop Spaces*
+- **Jason McCarty**<br>
+Assistant Professor, Indiana University of Pennsylvania<br>
+*The Mod 2 Homology of Infinite Loop Spaces*<br>
 (Advisor: Nicholas Kuhn)
 
-- **Yung Ning Peng**
-Postdoctoral Researcher, Academia China, Taiwan
-*Parabolic Presentations of the Super Yangian YM|N and Applications*
+- **Yung Ning Peng**<br>
+Postdoctoral Researcher, Academia China, Taiwan<br>
+*Parabolic Presentations of the Super Yangian YM|N and Applications*<br>
 (Advisor: Weiqiang Wang)
 
-- **Justin Webster**
-Postdoctoral Fellow, Department of Mathematics, Oregon State University
-*Analysis of Flow-Plate Interactions: Semigroup Well-Posedness and Long-Time Behavior*
+- **Justin Webster**<br>
+Postdoctoral Fellow, Department of Mathematics, Oregon State University<br>
+*Analysis of Flow-Plate Interactions: Semigroup Well-Posedness and Long-Time Behavior*<br>
 (Advisor: Irena Lasiecka)
 
 
 
 ## May 2012
 
-- **Martin Keutel**
-Analyst, Metron, Inc.
-*Fluid Limits for the Shortest Job First and Least Attained Service Protocols*
+- **Martin Keutel**<br>
+Analyst, Metron, Inc.<br>
+*Fluid Limits for the Shortest Job First and Least Attained Service Protocols*<br>
 (Advisor: Christian Gromoll)
 
 
-- **Yongjin Lu**
-Assistant Professor, Virginia State University
-*Asymptotic Stability of Systems of Coupled PDEs Arising from Acoustic-Structural and Fluid-Structural Interaction*
+- **Yongjin Lu**<br>
+Assistant Professor, Virginia State University<br>
+*Asymptotic Stability of Systems of Coupled PDEs Arising from Acoustic-Structural and Fluid-Structural Interaction*<br>
 (Advisor: Irena Lasiecka)
 
 
-- **Daniel Pryor**
-*Topological Manifold Calculus*
+- **Daniel Pryor**<br>
+*Topological Manifold Calculus*<br>
 (Advisor: Gregory Arone)
 
-- **Jing Zhang**
-*Tenure Track Assistant Professor, Virginia State University*
-Min-Max Game Theory and Non-Standard Differential Riccati Equations under the Singular Estimates and an Application to the Fluid-Structure Interaction Model
+- **Jing Zhang**<br>
+Tenure Track Assistant Professor, Virginia State University<br>
+*in-Max Game Theory and Non-Standard Differential Riccati Equations under the Singular Estimates and an Application to the Fluid-Structure Interaction Model*<br>
 (Advisor: Roberto Triggiani)
 
 
 
 ## August 2011
 
-- **Shitao Liu**
-Posdoctoral Researcher, University of Helsinki
-*Inverse Problems for Single and Strongly Coupled PDEs via Boundary Measurements: A Carleman Estimates Approach*
+- **Shitao Liu**<br>
+Posdoctoral Researcher, University of Helsinki<br>
+*Inverse Problems for Single and Strongly Coupled PDEs via Boundary Measurements: A Carleman Estimates Approach*<br>
 (Advisor: Roberto Triggiani, Irena Lasiecka)
 
 
 
 ## May 2011
 
-- **James Nolie Hughes**
-Visiting Assistant Professor, Mary Baldwin College
-*On Polynomial Functors from Topological Spaces to Spectra*
+- **James Nolie Hughes**<br>
+Visiting Assistant Professor, Mary Baldwin College<br>
+*On Polynomial Functors from Topological Spaces to Spectra*<br>
 (Advisor: Z. Gregory Arone)
 
-- **Matthew Curtis Burkholder Zaremsky**
-Visiting Scholar, University of Bielefeld
-*Strong Transitivity and Weyl Transitivity of Group Actions on Affine Buildings*
+- **Matthew Curtis Burkholder Zaremsky**<br>
+Visiting Scholar, University of Bielefeld<br>
+*Strong Transitivity and Weyl Transitivity of Group Actions on Affine Buildings*<br>
 (Advisor: Peter Abramenko)
 
 
 
 ## December 2010
 
-- **Nicholas Andrew Hamblet**
-Systems Engineer, Commonwealth Computer Research
-*A Convenient Homotopy Limit Description of Spaces of Affine Embeddings*
+- **Nicholas Andrew Hamblet**<br>
+Systems Engineer, Commonwealth Computer Research<br>
+*A Convenient Homotopy Limit Description of Spaces of Affine Embeddings*<br>
 (Advisor: Z. Gregory Arone)
 
-- **Timothy Woodcock**
-Assistant Professor, Stonehill College
-*Commuting Graphs of Finite Groups*
+- **Timothy Woodcock**<br>
+Assistant Professor, Stonehill College<br>
+*Commuting Graphs of Finite Groups*<br>
 (Advisor: Andrei Rapinchuk)
 
 
 
 ## August 2010
 
-- **Katherine Cason Heller**
-Assistant Professor, North Central College
-*Composition Operators on S^2(D)*
+- **Katherine Cason Heller**<br>
+Assistant Professor, North Central College<br>
+*Composition Operators on S^2(D)*<br>
 (Advisor: Barbara D. MacCluer)
 
 
-- **Robert Alan McEwen II**
-Operations Research Analyst, Nat. Ground Intelligence
-*Homological Stability for the Groups Out(n,t+1)*
+- **Robert Alan McEwen II**<br>
+Operations Research Analyst, Nat. Ground Intelligence<br>
+*Homological Stability for the Groups Out(n,t+1)*<br>
 (Advisor: Kai-Uwe Bux)
 
 
-- **Diana Dunn Morris**
-Lecturer, Engineering School, University of Virginia
-*Coordination of Jordan Superalgebras*
+- **Diana Dunn Morris**<br>
+Lecturer, Engineering School, University of Virginia<br>
+*Coordination of Jordan Superalgebras*<br>
 (Advisor: Kevin McCrimmon)
 
 
-**Turker Ozsari**
-Assistant Professor, Dogus University
-*Stabilization of Nonlinear Schroedinger Equation with Inhomogeneous Dirichlet Boundary Control*
+**Turker Ozsari**<br>
+Assistant Professor, Dogus University<br>
+*Stabilization of Nonlinear Schroedinger Equation with Inhomogeneous Dirichlet Boundary Control*<br>
 (Advisor: Irena Lasiecka)
 
 
 ## May 2010
 
-- **Eric Finster**
-Postdoctorate, IGHT, Switzerland
-*Stabilization of Homotopy Limits*
+- **Eric Finster**<br>
+Postdoctorate, IGHT, Switzerland<br>
+*Stabilization of Homotopy Limits*<br>
 (Advisor: Greg Arone)
 
-- **Katie Quertermous**
-Assistant Professor, James Madison University
-*Fixed Point Composition C*-Algebras*
+- **Katie Quertermous**<br>
+Assistant Professor, James Madison University<br>
+*Fixed Point Composition C*-Algebras*<br>
 (Advisor: Thomas Kriete)
 
-- **Jinkui Wan**
-Assistant Professor, Beijing Institute of Technology
-*Representations of Affine Hecke Algebras and Related Algebras*
+- **Jinkui Wan**<br>
+Assistant Professor, Beijing Institute of Technology<br>
+*Representations of Affine Hecke Algebras and Related Algebras*<br>
 (Advisor: Weiqiang Wang)
 
-- **Lei Zhao**
-Postdoctorate, University of Oklahoma
-*Modular Representations of Lie Superalgebras*
+- **Lei Zhao**<br>
+Postdoctorate, University of Oklahoma<br>
+*Modular Representations of Lie Superalgebras*<br>
 (Advisor: Weiqiang Wang)
