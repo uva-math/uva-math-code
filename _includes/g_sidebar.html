@@ -1,6 +1,7 @@
+{% assign sorted_pages = site.pages | sort: "nav_weight" %}
+
 <div class="list-group-sm">
   <a class="list-group-item list-group-item-action h5 {% if page.permalink == "/graduate/" %}active{% endif %}" href="{{site.url}}/graduate/">Information</a>
-    {% assign sorted_pages = site.pages | sort: "nav_weight" %}
     {% for pg in sorted_pages %}
     {% if pg.layout == "g_page" and pg.g_info %}
         <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">&bull; {{pg.title}}</a>
@@ -12,7 +13,6 @@
 
 <div class="list-group-sm">
   <a class="list-group-item list-group-item-action h5 {% if page.permalink == "/graduate/policies/" %}active{% endif %}" href="{{site.url}}/graduate/policies/">Policies</a>
-    {% assign sorted_pages = site.pages | sort: "nav_weight" %}
     {% for pg in sorted_pages %}
     {% if pg.layout == "g_page" and pg.g_policy %}
         <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}" style="padding-left: 50px;">{{pg.title}}</a>
