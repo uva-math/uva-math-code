@@ -27,7 +27,7 @@ print ""
 
 for i in range(1, len(data)):
     if i%2 :
-        print "- name:", data[i][1]
+        print "- name: \"", data[i][1], "\""
         print "  number:", data[i][0].replace("MATH ", "", 1)
         if int( data[i][0].replace("MATH ", "", 1) ) >= 5000 :
             print "  graduate: true"
