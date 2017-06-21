@@ -7,7 +7,7 @@ doc_page: true
 nav_weight: 999
 ---
 
-# How to contribute to the content of the Math Department website
+# How you can contribute to updating the content at the Math Department website
 
 ---
 

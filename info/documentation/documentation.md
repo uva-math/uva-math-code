@@ -12,8 +12,8 @@ doc_page: true
 ## Purpose of the documentation pages
 
 The purpose of these pages is to help understand the structure of the department
-website, and to invite everyone at the department [contribute]({{site.url}}/doc/contribute/) to the content
-of our website.
+website, and to invite everyone at the department to [contribute]({{site.url}}/doc/contribute/) to updating the content
+on our website.
 
 
 
