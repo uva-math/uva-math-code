@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+{% include header.html %}
+</head>
+
+<body>
+
+{% include top_brand.html %}
+
+{% include navbar.html %}
+
+<div class="container">
+  <div class="container">
+
+    <div class="row row-offcanvas row-offcanvas-right">
+      <div class="col-md-8">
+
+        {{ content | markdownify }}
+
+      </div>
+      <div class="col-md-4">
+        <hr class="hidden-md-up">
+        <h3 class="mb-3 sidebar-offcanvas">Graduate program</h3>
+
+        {% include g_sidebar.html %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% include footer.html %}
+
+{% include bootjs %}
+
+{% include katex %}{% include mathjax %}
+
+</body>
+
+</html>
