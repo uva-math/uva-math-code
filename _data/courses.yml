@@ -10,6 +10,7 @@
 
 - name: Calculus III
   credits: "4.00"
+  offered: Fall 2017
   number: 2310
   descr: 'A continuation of Calc I and II, this course is about functions of several variables. Topics include finding maxima and minima of functions of several variables/surfaces and curves in three-dimensional space/integration over these surfaces and curves.  Additional topics: conservative vector fields/Stokes’ and the divergence theorems/how these concepts relate to real world applications. Prerequisite: MATH 1320 or the equivalent.'
 

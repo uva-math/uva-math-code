@@ -76,6 +76,8 @@ It is mined from [this page at the Lou's list](https://rabi.phys.virginia.edu/my
 
 **Note:** You can make changes to this database file `_data/courses.yml` but running the script will overwrite it.
 
+**Note:** The current (upcoming) semester is *hardcoded* into the script, so it needs to be changed to the correct one to correctly display that the course is offered in the current semester.
+
 The course description pages use this database file to list all courses, 
 undergraduate (`/courses/undergrad/`) or graduate (`/courses/graduate/`).
 The difference is that the graduate courses have an additional `graduate: true` field, 
