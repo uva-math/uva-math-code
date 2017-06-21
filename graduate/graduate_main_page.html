@@ -8,3 +8,21 @@ nav_parent: Graduate
 nav_nesting: true
 nav_weight: 1
 ---
+
+# Graduate Program
+
+---
+
+The Mathematics Department administers programs leading to **Master of Arts**, **Master of Science**, and **Doctor of Philosophy** degrees in mathematics. These programs provide diverse opportunities for advanced study and research in areas of algebra, analysis, topology, and the history of mathematics. The Mathematics Department has {% assign counter = 0 %}{% for p in site.departmentpeople %}{% if p.general_position == 'faculty' %}{% assign counter=counter | plus:1 %}{% endif %}{% endfor %}{{ counter }} tenured and tenure-track faculty, nearly a dozen postdoctoral instructors and visitors, and {% assign counter = 0 %}{% for p in site.departmentpeople %}{% if p.general_position == 'gradstudent' %}{% assign counter=counter | plus:1 %}{% endif %}{% endfor %}{{ counter }} graduate students, creating a close-knit community of faculty and students.
+
+The research of the faculty represents numerous subfields of mathematics. In algebra, these include linear and arithmetic groups and associated structures, representation theory, commutative algebra,  algebraic geometry, number theory, combinatorics, and geometric group theory. In analysis, subfields include probability, mathematical physics, partial differential equations, operator theory, and harmonic analysis. The topology group includes specialists in both algebraic topology and geometric topology, and has connections to category theory and differential geometry. In our history of mathematics program, emphasis is on the nineteenth and twentieth centuries.
+
+Besides a series of colloquium lectures, there are also weekly research seminars in algebra, differential equations, geometry, mathematical physics, operator theory, probability, and topology ([list of seminars]({{site.url}}/calendar/)). The graduate student seminar serves as a meeting place for graduate students and junior faculty to talk about mathematics.
+
+The Department and Mathematics Library are located in Kerchof Hall.
+
+There is a well-equipped computing laboratory available to faculty and graduate students, as well as a computer in every office.
+
+
+
+**Note:** *The information contained on this website is for informational purposes only. The Undergraduate Record and Graduate Record represent the official repository for academic program requirements. These publications may be found at [`http://records.ureg.virginia.edu/index.php`](http://records.ureg.virginia.edu/index.php).*
