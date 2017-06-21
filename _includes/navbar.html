@@ -30,7 +30,7 @@
           {% if p.nav_id == "Seminars" %}
             {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %}
             {% for sem in sorted_sem %}
-            <a class="dropdown-item {%if page.url contains sem.shortname %}active bg-inverse{% endif %}" href="{{site.url}}/seminars/{{sem.shortname}}">{{sem.name}}{%if page.url contains sem.shortname %}<span class="sr-only">(current)</span>{% endif %}</a>
+            <a class="dropdown-item {%if page.url contains sem.shortname %}active bg-inverse{% endif %}" href="{{site.url}}/seminars/{{sem.shortname}}" {%if sem.nav_longname %}style="white-space: normal"{%endif%}>{{sem.name}}{%if page.url contains sem.shortname %}<span class="sr-only">(current)</span>{% endif %}</a>
             {% endfor %}
           {% endif %}
         </div>
