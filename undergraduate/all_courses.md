@@ -17,7 +17,7 @@ permalink: /courses/
        <div class="mt-1 mb-1"><code class="highlighter-rouge" style="background:inherit; padding:0px">MATH {{crs.number}}</code>&nbsp;&nbsp;&nbsp;<b>{{crs.name}}</b>{% if crs.offered %}<div class="float-right hidden-sm-down">
          <code class="highlighter-rouge" style="background:inherit; padding:0px">Offered {{crs.offered}}</code>
        </div><span class="hidden-md-up">
-         &bull; (Offered {{crs.offered}})
+         &bull; <b>(Offered {{crs.offered}})</b>
        </span>
      {% endif %}</div>
        {{crs.descr}}
