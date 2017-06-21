@@ -9,6 +9,13 @@ import csv
 
 html = urllib2.urlopen(lou_url).read()
 soup = BeautifulSoup(html, "lxml")
-table = soup.select_one("table.data2_s")
+table = soup.select("table")[1]
 
-print soup.select("table")[1].prettify()
+data = []
+
+rows = table.find_all('tr')
+for row in rows:
+    cols = row.find_all('td')
+    cols = [ele.text.strip() for ele in cols]
+    data.append([ele for ele in cols if ele])
+
