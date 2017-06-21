@@ -11,4 +11,12 @@ nav_weight: 999
 
 ---
 
-under construction
+0. email me or Raven or both
+
+1. issues (and how to get there) -> click on issue; and figure out issue categories
+
+2. can fork and suggest changes
+
+3. can be added with full access (faculty)
+
+
