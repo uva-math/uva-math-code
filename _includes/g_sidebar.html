@@ -1,10 +1,10 @@
 {% assign sorted_pages = site.pages | sort: "nav_weight" %}
 
 <div class="list-group-sm">
-  <a class="list-group-item list-group-item-action h5 {% if page.permalink == "/graduate/" %}active{% endif %}" href="{{site.url}}/graduate/">Information</a>
+  <a class="list-group-item list-group-item-action h5 orange-item {% if page.permalink == "/graduate/" %}active{% endif %}" href="{{site.url}}/graduate/">Information</a>
     {% for pg in sorted_pages %}
     {% if pg.layout == "g_page" and pg.g_info %}
-        <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}" style="padding-left:30px;">&bull; {{pg.title}}</a>
+        <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">{{pg.title}}</a>
     {% endif %}
     {% endfor %}
 </div>
@@ -12,10 +12,10 @@
 <br />
 
 <div class="list-group-sm">
-  <a class="list-group-item list-group-item-action h5 {% if page.permalink == "/graduate/policies/" %}active{% endif %}" href="{{site.url}}/graduate/policies/">Policies</a>
+  <a class="list-group-item list-group-item-action h5 orange-item {% if page.permalink == "/graduate/policies/" %}active{% endif %}" href="{{site.url}}/graduate/policies/">Policies</a>
     {% for pg in sorted_pages %}
     {% if pg.layout == "g_page" and pg.g_policy %}
-        <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}" style="padding-left:30px;">&bull; {{pg.title}}</a>
+        <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">{{pg.title}}</a>
     {% endif %}
     {% endfor %}
 </div>
@@ -23,5 +23,5 @@
 <br />
 
 <div class="list-group-sm">
-  <a class="list-group-item list-group-item-action h5 {% if page.permalink == "/courses/graduate/" %}active{% endif %}" href="{{site.url}}/courses/graduate/">Course descriptions</a>
+  <a class="list-group-item list-group-item-action h5 orange-item {% if page.permalink == "/courses/graduate/" %}active{% endif %}" href="{{site.url}}/courses/graduate/">Course descriptions</a>
 </div>
