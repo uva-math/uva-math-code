@@ -277,7 +277,7 @@ Lecturer, Engineering School, University of Virginia<br>
 (Advisor: Kevin McCrimmon)
 
 
-**Turker Ozsari**<br>
+- **Turker Ozsari**<br>
 Assistant Professor, Dogus University<br>
 *Stabilization of Nonlinear Schroedinger Equation with Inhomogeneous Dirichlet Boundary Control*<br>
 (Advisor: Irena Lasiecka)
