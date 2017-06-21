@@ -22,7 +22,7 @@ Students in the Department of Mathematics may earn a B.A. with several different
 
 ---
 
-<h2 class="mb-4">Contacts</h2>
+<h2 class="mb-4 mt-2">Contacts</h2>
 
 
 - ##### Director of Undergraduate Studies:<br>
