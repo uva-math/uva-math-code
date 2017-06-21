@@ -4,6 +4,9 @@ layout: static_page_no_right_menu
 permalink: /courses/
 ---
 
+<h1 class="mb-4">Course descriptions &bull; (<a href="{{site.url}}/courses/undergrad/">undergraduate</a>) &bull; (<a href="{{site.url}}/courses/graduate/">graduate</a>)</h1>
+
+
 
 {% assign sorted_courses = site.data.courses | sort: "number" %}
 
