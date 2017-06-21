@@ -17,7 +17,7 @@ nav_weight: 20
 
 - **University ID and Computing** [`http://its.virginia.edu/accounts/facstaffaccounts.html`](http://its.virginia.edu/accounts/facstaffaccounts.html) New faculty/staff begin here
 
-- **Software Central** [`http://www.its.virginia.edu/central/`](http://www.its.virginia.edu/central/) provides access to site-licensed software that can be distributed to members of the University at no charge.  Our local IT is Sarah Kent ([`sgk4n@virginia.edu`](mailto:sgk4n@virginia.edu), room `116`, Kerchof Hall).
+- **Software Gateway** [`http://its.virginia.edu/software/`](http://its.virginia.edu/software//) provides access to site-licensed software that can be distributed to members of the University at no charge.  Our local IT is Sarah Kent ([`sgk4n@virginia.edu`](mailto:sgk4n@virginia.edu), room `116`, Kerchof Hall).
 
 - **Setting up Direct Deposit:**  In order to set up direct deposit for your paycheck, you will need to have an account on the University’s Integrated System [`http://www.virginia.edu/integratedsystem/`](http://www.virginia.edu/integratedsystem/)    
 
