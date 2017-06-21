@@ -1,27 +1,23 @@
 <div class="list-group-sm">
   <a class="list-group-item list-group-item-action h5 {% if page.permalink == "/undergraduate/" %}active{% endif %}" href="{{site.url}}/undergraduate/">Information</a>
-  <div class="list-group-sm">
     {% assign sorted_pages = site.pages | sort: "nav_weight" %}
     {% for pg in sorted_pages %}
     {% if pg.layout == "ug_page" and pg.ug_info %}
         <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">&bull; {{pg.title}}</a>
     {% endif %}
     {% endfor %}
-  </div>
 </div>
 
 <br />
 
 <div class="list-group-sm">
   <a class="list-group-item list-group-item-action h5 {% if page.permalink == "/undergraduate/policies/" %}active{% endif %}" href="{{site.url}}/undergraduate/policies/">Policies</a>
-  <div class="list-group-sm">
     {% assign sorted_pages = site.pages | sort: "nav_weight" %}
     {% for pg in sorted_pages %}
     {% if pg.layout == "ug_page" and pg.ug_policy %}
         <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}" style="padding-left: 50px;">{{pg.title}}</a>
     {% endif %}
     {% endfor %}
-  </div>
 </div>
 
 <br />
