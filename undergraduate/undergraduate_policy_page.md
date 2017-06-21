@@ -16,4 +16,4 @@ nav_weight: 8
 
 <h2 class="mt-2 mb-3">Policies FAQ</h2>
 
-[If I need precalculus...]({{ site.url }}/undergraduate/docs/If I need precalculus....pdf)
+- [If I need precalculus...]({{ site.url }}/undergraduate/docs/If I need precalculus....pdf)
