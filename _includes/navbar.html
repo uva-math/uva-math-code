@@ -10,21 +10,21 @@
     {% for p in sorted_pages%}
     {% if p.nav_id != null and p.nav_nesting != true and p.nav_parent == null %}
       <li class="nav-item {%if p.url == page.url %}active bg-inverse{% endif %}">
-        <a class="nav-link" href="{{site.url}}{{p.url}}">{{ p.nav_id }}{%if p.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
+        <a class="nav-link" {% if p.nav_long %}style="white-space: normal"{% endif %} href="{{site.url}}{{p.url}}">{{ p.nav_id }}{%if p.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
       </li>
     {% endif %}
     {% if p.nav_id != null and p.nav_nesting == true and p.nav_parent == null %}
       <li class="nav-item dropdown {% if {{page.nav_parent}} == p.nav_id or p.url == page.url %}active{% endif %}">
-        <a class="nav-link dropdown-toggle" href="{{site.url}}{{p.url}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" {% if p.nav_long %}style="white-space: normal"{% endif %} href="{{site.url}}{{p.url}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{p.nav_id}}
         </a>
-        <div class="dropdown-menu h5 {% if p.nav_id == 'IMS' or p.nav_id == 'Info' or p.nav_id == 'Undergraduate' or p.nav_id == 'Graduate'%}dropdown-menu-right{% endif %}" style="font-size:16px">
+        <div class="dropdown-menu h5 {% if p.nav_id == 'IMS' or p.nav_id == 'Info' or p.nav_id == 'Graduate'%}dropdown-menu-right{% endif %}" style="font-size:16px">
           {% if p.nav_id == "News&Events" %}
-            <a class="dropdown-item {%if paginator.page %}active bg-inverse{% endif %}" style="font-size:16px" href="{{site.url}}/allnews/">All News and Events{%if paginator.page %}<span class="sr-only">(current)</span>{% endif %}</a>
+            <a class="dropdown-item {%if paginator.page %}active bg-inverse{% endif %}" style="font-size:16px; {% if p.nav_long %}white-space: normal{% endif %}" href="{{site.url}}/allnews/">All News and Events{%if paginator.page %}<span class="sr-only">(current)</span>{% endif %}</a>
           {% endif %}
           {% for pp in sorted_pages%}
           {% if pp.nav_id != null and pp.nav_parent == p.nav_id %}
-          <a class="dropdown-item {%if pp.url == page.url %}active bg-inverse{% endif %}" style="font-size:16px" href="{{site.url}}{{pp.url}}">{{pp.nav_id}}{%if pp.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
+          <a class="dropdown-item {%if pp.url == page.url %}active bg-inverse{% endif %}" style="font-size:16px; {% if pp.nav_long %}white-space: normal{% endif %}" href="{{site.url}}{{pp.url}}">{{pp.nav_id}}{%if pp.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
           {% endif %}
           {% endfor %}
           {% if p.nav_id == "Seminars" %}
