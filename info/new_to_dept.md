@@ -1,5 +1,5 @@
 ---
-title: New to the department
+title: New to the department?
 layout: static_page_no_right_menu
 permalink: /new_to_department/
 nav_id:  New to the department?
@@ -10,7 +10,9 @@ nav_weight: 20
 
 # New to the Department?
 
-<h5 class="mt-2 mb-4">Welcome to the Department of Mathematics!  Below is some information to get you started.</h5>
+---
+
+<h5 class="mt-2 mb-4">Welcome to the Department of Mathematics!  Below is some information to get you started:</h5>
 
 
 - **University ID and Computing** [`http://its.virginia.edu/accounts/facstaffaccounts.html`](http://its.virginia.edu/accounts/facstaffaccounts.html) New faculty/staff begin here
