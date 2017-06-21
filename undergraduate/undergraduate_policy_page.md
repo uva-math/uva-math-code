@@ -18,3 +18,4 @@ nav_weight: 8
 
 - [If I need precalculus...]({{ site.url }}/undergraduate/docs/If I need precalculus....pdf)
 - [If I took the wrong calculus course....]({{ site.url }}/undergraduate/docs/If I took the wrong calculus course....pdf)
+- [Repeating a course]({{ site.url }}/undergraduate/docs/Repeating a course.pdf)
