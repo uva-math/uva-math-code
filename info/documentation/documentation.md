@@ -31,14 +31,16 @@ See [here]({{site.url}}/doc/contribute/) for more details on how to contribute.
 
 There are two main ways to edit the website content:
 
-- **On the web**: Smaller edits can be made directly on the web at [GitHub](https://github.com/uva-math/uva-math-code). The GitHub icon in the lower right corner of each page points to the source file associated with this page, for quicker and simpler editing of existing content on the web.
+- **On the web**: Smaller edits can be made directly on the web at [GitHub](https://github.com/uva-math/uva-math-code). The GitHub icon <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
+{% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank">
+  <span class="fa fa-github-square fa-2x"></span></a> in the lower right corner of each page points to the source file associated with this page, for quicker and simpler editing of existing content on the web.
 - **Locally**: Clone the website code to your local machine, make edits, and then sync the changes back to [GitHub](https://github.com/uva-math/uva-math-code). For this we recommend installing the [GitHub Desktop app](https://desktop.github.com/) and the [Atom text editor](https://atom.io/). Both are available for both Windows and Mac, and Atom is also available for Linux.
 
 In both cases, the changes in the code will trigger the website to automatically update, this takes about 5 minutes.
 
 Having a local copy of the website allows to preview your edits locally using [Jekyll](https://jekyllrb.com/) (only on Mac and Linux). This procedure is described in detail in Jekyll documentation, see for example [here](https://jekyllrb.com/docs/installation/) and [here](https://jekyllrb.com/docs/usage/). **Note that due to API limitations seminar google calendars will not work in local previews**.
 
-The website building (and testing) are powered by [Travis CI](https://travis-ci.org/). The current build status is&nbsp;&nbsp;[![Build Status](https://travis-ci.org/uva-math/uva-math-code.svg?branch=master)](https://travis-ci.org/uva-math/uva-math-code)
+The website building (and testing) are powered by [Travis CI](https://travis-ci.org/). One can always check the current build status by clicking on the checkmark icon <a href="https://travis-ci.org/uva-math/uva-math-code/builds" title="Travis CI Build Status" target="_blank"><span class="fa fa-check-square fa-2x"></span></a> in the lower right corner of each page. The current build status is&nbsp;&nbsp;[![Build Status](https://travis-ci.org/uva-math/uva-math-code.svg?branch=master)](https://travis-ci.org/uva-math/uva-math-code)
 
 ---
 

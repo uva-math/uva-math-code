@@ -1,0 +1,1 @@
+{% for ppl in site.departmentpeople %}{% if ppl.UVA_id == include.UVA_id %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {% endif %}{{ ppl.name }} {{ ppl.lastname }}{% if ppl.email != null %}</a>{% endif %}</span>{% endif %}{% endfor %}
