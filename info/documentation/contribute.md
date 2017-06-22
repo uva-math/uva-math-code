@@ -1,5 +1,5 @@
 ---
-title: Contribute to the content
+title: Help update website 
 layout: documentation_page
 permalink: /doc/contribute/
 nav_parent: Info
@@ -67,7 +67,37 @@ issues on top of the resulting GitHub page.
 ## 2. Suggesting changes ("pull-requests")
 
 A more automated way of editing the website is to suggest changes to a particular page via editing its source code
-and creating a so-called "**pull-request**". This is done as follows. 
+and creating a so-called "**pull-request**" (so you ask the code 
+owner to "pull", or incorporate, your changes into the main code). This is done as follows. 
+
+Suppose you want to edit a simple piece of
+information, e.g. add your new publication (for adding/changing the picture resort to way number 0 above, or create a local fork of the website code, 
+make changes there, and create a pull-request). Here are the steps:
+
+1. Go to your page such as [`{{site.url}}/people/aso9t/`]({{site.url}}/people/aso9t/),
+and click on the 
+GitHub icon <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
+{% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank"><span class="fa fa-github-square fa-2x"></span></a> in the lower right corner.
+
+2. 
+You will see the source of the page. 
+To edit the source, click on the pen icon in this panel on the right:<br>
+<img src="{{site.url}}/img/github_editing.png" alt="GitHub editing" title="GitHub editing">
+
+3. Make the necessary changes in browser. Hint: for formatting tips, check other webpages, 
+click on the GitHub icon, and click `Raw` on the same panel as above to see the actual source code.
+
+4. Click the green button `Propose file change` on the bottom. Then click `Create pull request`. You may describe your changes in more detail in these text fields,
+or just leave this as is. 
+
+5. Click `Create pull request` on the bottom again after describing the nature of the changes. 
+
+The administrator(s) will be notified and can approve or decline (or edit and then approve) your pull request.
+You should then be notified of the outcome by email, and the changes will appear on the webpage.
+
+**Note**: Pull requests are public, and existing open pull requests are seen on GitHub
+at [`https://github.com/uva-math/uva-math-code/pulls`](https://github.com/uva-math/uva-math-code/pulls)
+
 
 ---
 
@@ -80,4 +110,11 @@ updated (this takes about 5 minutes).
 Any change can be reverted, and changes that break the website will not
 appear on the actual webpage. Therefore, do not hesitate to ask 
 {% include person_info_email_only.html UVA_id="lap5r" %} or {% include person_info_email_only.html UVA_id="hcg3m" %}
-for full access and relevant training.
+for full edit access and relevant training.
+
+**Note**: Unfortunately, GitHub does not provide partial editing access (of only specific files).
+However, this restriction is natural because any file can in principle change name and/or location.
+
+**Note**: Having full edit rights is nice but this can lead to edit conflicts (when the file is changed by 
+at least two people at the same time). Pull requests does not lead to conflicts as easily, and 
+allow numerous people edit the website at the same time, if needed.
