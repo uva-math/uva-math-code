@@ -13,7 +13,7 @@ nav_weight: 12
 
 <p>If you feel a private tutor would be beneficial, please call the Department (434-924-4919) or email <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a>.</p>
 
-<p>&nbsp;</p>
+<p>&nbsp;</p>  
 
 <h3>Be a Grader!</h3>
 
