@@ -71,7 +71,3 @@ Please click here: <a href="{{ site.url }}/undergraduate/docs/DSP-GMP Info Sheet
 	<li>Actuary </li>
 	<li>Market analyst (GTECH Corporation)</li>
 </ul>
-
-
-
-copy from the "job opportunities" page and also from "where the graduates go" and also add the NSA info from http://math.virginia.edu/resources
