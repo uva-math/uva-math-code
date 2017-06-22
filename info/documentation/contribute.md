@@ -40,8 +40,13 @@ require signing up at [GitHub](https://www.github.com) but this is quite simple.
 ## 0. Good old email or personal conversation
 
 You can send an email to
-{% include person_info_email_only.html UVA_id="lap5r" %}, {% include person_info_email_only.html UVA_id="hcg3m" %}, or {% include person_info_email_only.html UVA_id="raj3e" %}, or talk to one of them, and explain what needs to be updated. This way of communication is **by no means not discouraged**, as the head goal is that the website
+{% include person_info_email_only.html UVA_id="lap5r" %}, {% include person_info_email_only.html UVA_id="hcg3m" %}, or {% include person_info_email_only.html UVA_id="raj3e" %}, or talk to one of them, and explain what needs to be updated. 
+
+This way of communication is **by no means discouraged**, as the head goal is that the website
 contains up-to-date and relevant information.
+However, the next three ways of updating the website involve various levels of automating the 
+update process, and thus could potentially lead to the website being more up to date, and
+containing more of the relevant information.
 
 ---
 
@@ -61,8 +66,18 @@ issues on top of the resulting GitHub page.
 
 ## 2. Suggesting changes ("pull-requests")
 
+A more automated way of editing the website is to suggest changes to a particular page via editing its source code
+and creating a so-called "**pull-request**". This is done as follows. 
+
 ---
 
 ## 3. Full edit access
 
-Faculty members can receive full editing access.
+Faculty members can receive full editing access from the administrators.
+This allows to edit any source file, and upon 
+committing the changes to the GitHub the webpage will be automatically 
+updated (this takes about 5 minutes).
+Any change can be reverted, and changes that break the website will not
+appear on the actual webpage. Therefore, do not hesitate to ask 
+{% include person_info_email_only.html UVA_id="lap5r" %} or {% include person_info_email_only.html UVA_id="hcg3m" %}
+for full access and relevant training.
