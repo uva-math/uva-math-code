@@ -6,6 +6,9 @@ permalink: /content/41-or-31-bama-program/
 nav_parent: Undergraduate
 nav_weight: 8
 ---
+
+<h1 class="mb-3">4+1 (or 3+1) BA/MA Program</h1>
+
 <p>Information on the 5-year Master&#39;s Program:<br />
 <br />
 &mdash;It offers streamlined admission to the graduate school for the purpose of obtaining a master&rsquo;s degree after 1 additional year at UVa.<br />
