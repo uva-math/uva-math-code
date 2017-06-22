@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.math.virginia.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Department of Mathematics, U.Va. - Analysis</title>
+ <link>http://www.math.virginia.edu/taxonomy/term/37</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Grujic</title>
+ <link>http://www.math.virginia.edu/node/158</link>
+ <description>&lt;div class=&quot;field field-name-field-firstname field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Zoran&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-photo field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; src=&quot;http://www.math.virginia.edu/sites/math.virginia.edu/files/styles/large/public/Grujic_1.jpg?itok=7df568Ru&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-title field-type-ds field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;dc:title&quot;&gt;Grujic&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-position field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Professor&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Research Areas:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/taxonomy/term/37&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Analysis&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;/taxonomy/term/31&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Applied Mathematics&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/taxonomy/term/14&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Partial Differential Equations&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-phone field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;434-243-7701&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-publications field-type-text-long field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Publications/Research:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Coherent vortex structures and 3D enstrophy cascade (with R. Dascaliuc), Comm. Math. Phys. 317 (2013), 547-561.&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;p&gt;A geometric measure-type regularity criterion for solutions to the 3D Navier-Stokes equations, Nonlinearity 26 (2013), 289-296.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-email field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;zg7c@virginia.edu&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-link field-type-link-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;http://people.virginia.edu/~zg7c/&quot;&gt;Personal Webpage&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-adress field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;P. O. Box 400137&lt;br /&gt;
+	Dept. of Mathematics&lt;br /&gt;
+	331 Kerchof Hall&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;h2 class=&quot;first&quot; id=&quot;a1&quot;&gt;
+	Research Interests&lt;/h2&gt;
+&lt;p&gt;Most of my research falls in the realm of analyzing singularity formation (or the lack thereof) in nonlinear partial differential equations arising as models in mathematical fluid and plasma dynamics.&lt;/p&gt;
+&lt;h2 id=&quot;a2&quot;&gt;
+	Education&lt;/h2&gt;
+&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;
+		Bachelor of Science (BS), University of Zagreb&lt;/li&gt;
+&lt;li&gt;
+		Master of Arts (MA), Indiana University, Bloomington&lt;/li&gt;
+&lt;li class=&quot;last&quot;&gt;
+		Doctor of Philosophy (PhD), Indiana University, Bloomington&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 03 May 2012 17:44:28 +0000</pubDate>
+ <dc:creator>Anonymous</dc:creator>
+ <guid isPermaLink="false">158 at http://www.math.virginia.edu</guid>
+ <comments>http://www.math.virginia.edu/node/158#comments</comments>
+</item>
+<item>
+ <title>Sherman</title>
+ <link>http://www.math.virginia.edu/node/82</link>
+ <description>&lt;div class=&quot;field field-name-field-firstname field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;David&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-photo field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; src=&quot;http://www.math.virginia.edu/sites/math.virginia.edu/files/styles/large/public/Sherman_0.jpg?itok=Jc1k74XR&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-title field-type-ds field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;dc:title&quot;&gt;Sherman&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-position field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Associate Professor&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Research Areas:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/taxonomy/term/37&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Analysis&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;/taxonomy/term/22&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Operator Algebras&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-phone field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;434-924-7079&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-publications field-type-text-long field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Publications/Research:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Unitary orbits of normal operators in von Neumann algebras, &lt;em&gt;Journal für die Reine und Angewandte Mathematik&lt;/em&gt; 605 (2007), 95-132.&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;p&gt;Model theory of operator algebras I: Stability, &lt;em&gt;Bull. London Math. Soc&lt;/em&gt;., to appear (with Ilijas Farah and Bradd Hart).&lt;/p&gt;
+&lt;p&gt;.&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-email field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;dsherman@virginia.edu&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-link field-type-link-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;http://www.people.virginia.edu/~des5e&quot;&gt;Personal Webpage&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-adress field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;P. O. Box 400137&lt;br /&gt;
+	Dept. of Mathematics&lt;br /&gt;
+	211 Kerchof Hall&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;h2&gt;
+	Education&lt;/h2&gt;
+&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;
+		Bachelor of Arts (BA), Washington University, St. Louis&lt;/li&gt;
+&lt;li&gt;
+		Master of Arts (MA), University of California, Los Angeles&lt;/li&gt;
+&lt;li class=&quot;last&quot;&gt;
+		Doctor of Philosophy (PhD), University of California, Los Angeles&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 03 May 2012 17:44:14 +0000</pubDate>
+ <dc:creator>Anonymous</dc:creator>
+ <guid isPermaLink="false">82 at http://www.math.virginia.edu</guid>
+ <comments>http://www.math.virginia.edu/node/82#comments</comments>
+</item>
+<item>
+ <title>Ramirez</title>
+ <link>http://www.math.virginia.edu/node/81</link>
+ <description>&lt;div class=&quot;field field-name-field-firstname field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Donald&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-photo field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; src=&quot;http://www.math.virginia.edu/sites/math.virginia.edu/files/styles/large/public/Ramirez_0.jpg?itok=tmy3hqxZ&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-title field-type-ds field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;dc:title&quot;&gt;Ramirez&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-position field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Professor&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Research Areas:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/taxonomy/term/37&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Analysis&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;/taxonomy/term/28&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Harmonic Analysis&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-phone field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;434-924-4934&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-publications field-type-text-long field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Publications/Research:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Anomalies in the Foundations of Ridge Regression, &lt;em&gt;International Statistical Review&lt;/em&gt;, 76, 89-105 (2008) (with D. Jensen). &lt;a class=&quot;externalLink&quot; href=&quot;http://arxiv.org/abs/math.ST/0703551&quot;&gt;http://arxiv.org/abs/math.ST/0703551&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;p&gt;Anomalies in the Analysis of Calibrated Data, &lt;em&gt;Journal of Statistical Computation and Simulation&lt;/em&gt; 79(3)(2009), 299-314 (with D. Jensen). &lt;a class=&quot;externalLink&quot; href=&quot;http://arxiv.org/abs/math.ST/0703550&quot;&gt;http://arxiv.org/abs/math.ST/0703550&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-email field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;donr@virginia.edu&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-link field-type-link-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;http://people.virginia.edu/~der/&quot;&gt;Personal Webpage&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-adress field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;P. O. Box 400137&lt;br /&gt;
+	Dept. of Mathematics&lt;br /&gt;
+	206 Kerchof Hall&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;h2 class=&quot;first&quot; id=&quot;a1&quot;&gt;
+	Research Interests&lt;/h2&gt;
+&lt;p&gt;Outliers in linear regression models; modification of ridge estimators - surrogate estimators; inverse calibration&lt;/p&gt;
+&lt;h2 id=&quot;a2&quot;&gt;
+	Education&lt;/h2&gt;
+&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;
+		Bachelor of Science (BS), Tulane University&lt;/li&gt;
+&lt;li class=&quot;last&quot;&gt;
+		Doctor of Philosophy (PhD), Tulane University&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 03 May 2012 17:44:14 +0000</pubDate>
+ <dc:creator>Anonymous</dc:creator>
+ <guid isPermaLink="false">81 at http://www.math.virginia.edu</guid>
+ <comments>http://www.math.virginia.edu/node/81#comments</comments>
+</item>
+</channel>
+</rss>

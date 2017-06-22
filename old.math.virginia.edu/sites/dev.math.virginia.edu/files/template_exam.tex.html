@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" version="XHTML+RDFa 1.0" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(2),u=e(3),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}finally{f.emit("fn-end",[c.now()],t)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now()])}},{}],2:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],3:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],4:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=m(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){v[e]=m(e).concat(n)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(t)}function g(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var v={},y={},b={on:l,emit:t,get:w,listeners:m,context:n,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(2),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=h.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+h.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===d.readyState&&i()}function i(){f("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),f=e("handle"),c=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1039.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=n.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),f("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+<link rel="shortcut icon" href="../../math.virginia.edu/themes/math/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+  <title>Page not found | Department of Mathematics, U.Va.</title>
+  <link type="text/css" rel="stylesheet" href="../../math.virginia.edu/files/css/css_xE-rWrJf-fncB6ztZfd2huxqgxu4WO-qwma6Xer30m4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.math.virginia.edu/sites/math.virginia.edu/files/css/css_7EHNqqw5CpLMpFUdbcE8RRybk2_y4aZdNykrA9VAx7A.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://www.math.virginia.edu/sites/math.virginia.edu/files/css/css_v2Sm1r1BVaOXo_Z7yH8HYiLzFR0TxEuzORUbqxbTioE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../math.virginia.edu/files/css/css_5DtLil62NxRokawCtijPrDtjlnaiG2CvQcsDE2WfnNE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="../../math.virginia.edu/files/css/css_5mTtFVydJf2oMAE8_yipJnrPzLpsTYYTegpDeIbTuPU.css" media="print" />
+  <script type="text/javascript" src="../../math.virginia.edu/files/js/js_Xjzh1hVfcgVAixhmmB6Go8TUMPOiprA-2vkC-oWXARQ.js"></script>
+<script type="text/javascript" src="../../math.virginia.edu/files/js/js_45JniWrXrY8q8AEVIV6GFupI5scizolw-FrujytMgiY.js"></script>
+<script type="text/javascript" src="../../math.virginia.edu/files/js/js_gPqjYq7fqdMzw8-29XWQIVoDSWTmZCGy9OqaHppNxuQ.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","http://www.math.virginia.edu/sites/math.virginia.edu/files/googleanalytics/analytics.js?orjge3","ga");ga("create", "UA-57366601-23", {"cookieDomain":"auto"});ga("set", "page", "/404.html?page=" + document.location.pathname + document.location.search + "&from=" + document.referrer);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"math","theme_token":"NifFm9vVY9hLA8_ypTTQBO1e-KGY3zY-x6pSzJh5d0w","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.bgiframe.js":1,"sites\/all\/modules\/nice_menus\/js\/jquery.hoverIntent.js":1,"sites\/all\/modules\/nice_menus\/js\/superfish.js":1,"sites\/all\/modules\/nice_menus\/js\/nice_menus.js":1,"sites\/all\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"modules\/search\/search.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus.css":1,"sites\/all\/modules\/nice_menus\/css\/nice_menus_default.css":1,"sites\/math.virginia.edu\/themes\/math\/style.less":1,"sites\/math.virginia.edu\/themes\/math\/print.css":1}},"urlIsAjaxTrusted":{"\/sites\/dev.math.virginia.edu\/files\/template_exam.tex":true},"nice_menus_options":{"delay":800,"speed":"slow"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-search404" >
+  <div id="skip-link">
+    <a href="template_exam.tex.html#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+	      
+
+    
+  <div id="wrapper">
+	<div id="content-wrapper">
+      <div id="header">
+        <div id="logo-floater">
+                  
+            <h1 id="branding"><a href="../../../index.html">
+            <span>Department of Mathematics, U.Va.</span>
+            </a></h1>
+         
+        
+        </div>
+        <div id="searchbox">
+       	  
+			  <div class="region region-header">
+    <div id="block-search-form" class="block block-search">
+
+    
+  <div class="content">
+    <form action="template_exam.tex.html" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit--2" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-ofgezTAdQyPMyqnw3VAAHGjaElWspbSvqoe7ciBagZ8" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>  </div>
+</div>
+  </div>
+            
+            <input type="submit" value="U.Va." id="uva-s" />
+            <input type="submit" value="People" id="people-s" />
+        </div>
+		
+      </div> <!-- /#header -->
+	   
+        <div id="main-nav">
+            <div class="region region-highlighted">
+    <div id="block-block-2" class="block block-block">
+
+    
+  <div class="content">
+    <div class="give">
+	<a href="../../../support.html" style="padding-right: 3px;" target="_new"><img alt="Support Us" height="20" src="../../math.virginia.edu/themes/math/images/give4.png" width="80" /></a> <a class="external" href="http://www.facebook.com/UVAMath" style="padding-right: 3px;" target="_new"><img alt="Facebook" height="20" src="../../math.virginia.edu/themes/math/images/facebook.png" width="20" /></a> <a href="http://www.twitter.com/@uvamath" target="_new"><img alt="twitter" height="20" src="../../math.virginia.edu/themes/math/images/twitter.png" width="20" /></a>
+<p> </p>
+<p> </p>
+</div>
+<p> </p>
+  </div>
+</div>
+<div id="block-nice-menus-1" class="block block-nice-menus">
+
+    
+  <div class="content">
+    <ul class="nice-menu nice-menu-down nice-menu-main-menu" id="nice-menu-1"><li class="menu-419 menuparent  menu-path-node-46 first odd "><a href="../../../about.html">About</a><ul><li class="menu-616 menu-path-node-36 first odd last"><a href="../../../about/history.html">History</a></li>
+</ul></li>
+<li class="menu-437 menuparent  menu-path-directory  even "><a href="../../../directory.html" title="">People</a><ul><li class="menu-438  menu-path-faculty first odd "><a href="../../../faculty.html" title="">Faculty</a></li>
+<li class="menu-439 menu-path-gradstudents  even "><a href="../../../gradstudents.html" title="">Graduate Students </a></li>
+<li class="menu-442 menu-path-staff  odd last"><a href="../../../staff.html" title="">Staff</a></li>
+</ul></li>
+<li class="menu-459 menuparent  menu-path-mathvirginiaedu-news536  odd "><a href="../../../news.html#536" title="">News &amp; Events</a><ul><li class="menu-461  menu-path-news first odd "><a href="../../../news.html" title="">News</a></li>
+<li class="menu-460 menu-path-node-31  even "><a href="../../../calendar.html">Calendar</a></li>
+<li class="menu-889 menu-path-node-406  odd "><a href="../../../conferences.html" title="Conference website links">Conferences</a></li>
+<li class="menu-462 menu-path-node-32  even "><a href="../../../awards.html" title="Undergraduate Awards">Awards</a></li>
+<li class="menu-1011 menu-path-node-439  odd "><a href="../../../newsletter.html">UVa Math Newsletter: Virginia Math Bulletin</a></li>
+<li class="menu-2601 menu-path-node-846  even "><a href="../../../content/final-exercises-ceremony-college-and-graduate-school-arts-and-sciences-0.html">Final Exercises Ceremony for the College and Graduate School of Arts and Sciences</a></li>
+<li class="menu-2116 menu-path-node-791  odd "><a href="../../../content/job-opportunities.html">Job Opportunities</a></li>
+<li class="menu-1946  menu-path-node-596  even last"><a href="../../../content/virginia-mathematics-lectures.html">Virginia Mathematics Lectures</a></li>
+</ul></li>
+<li class="menu-420 menuparent  menu-path-node-24  even "><a href="../../../research.html">Research</a><ul><li class="menu-464 menu-path-node-24 first odd "><a href="../../../research.html" title="">Research Areas</a></li>
+<li class="menu-463 menu-path-facultyresearch  even "><a href="../../../facultyresearch.html" title="">Faculty Research</a></li>
+<li class="menu-465 menu-path-node-21  odd last"><a href="../../../seminarguide.html">Seminar Guide</a></li>
+</ul></li>
+<li class="menu-422 menuparent  menu-path-node-11  odd "><a href="../../../academics.html">Academics</a><ul><li class="menu-467  menu-path-node-12 first odd "><a href="../../../graduate.html">Graduate Program</a></li>
+<li class="menu-468  menu-path-undergraduate  even "><a href="../../../undergraduate.html" title="">Undergraduate Program</a></li>
+<li class="menu-479 menu-path-node-33  odd "><a href="../../../summer.html">Summer Programs</a></li>
+<li class="menu-491  menu-path-courses  even last"><a href="../../../courses.html" title="">Course Descriptions</a></li>
+</ul></li>
+<li class="menu-480 menu-path-resources  even "><a href="../../../resources.html" title="">Resources</a></li>
+<li class="menu-227 menu-path-front  odd "><a href="../../../index.html">Home</a></li>
+<li class="menu-1143 menuparent  menu-path-node-463  even last"><a href="../../../content/ims.html">IMS</a><ul><li class="menu-1240 menu-path-node-470 first odd "><a href="../../../content/lectures-general-audience.html">Lectures for the General Audience</a></li>
+<li class="menu-1581 menu-path-node-506  even "><a href="../../../ims/analysis2015.html" title="Virginia Analysis Lectures">Virginia Analysis Lectures</a></li>
+<li class="menu-1242 menu-path-node-472  odd "><a href="../../../content/conferences-and-workshops.html">Conferences and Workshops</a></li>
+<li class="menu-1245 menu-path-node-475  even "><a href="../../../content/past-lectures.html">Past Lectures</a></li>
+<li class="menu-1243 menu-path-node-473  odd "><a href="../../../content/publications.html">Publications</a></li>
+<li class="menu-1244 menu-path-node-474  even last"><a href="../../../content/contacts.html">Contacts</a></li>
+</ul></li>
+</ul>
+  </div>
+</div>
+  </div>
+  
+        </div>
+            <div id="content">
+      
+      
+       
+      <div id="page-content">
+          
+          <a id="main-content"></a>
+          <div id="tabs-wrapper">                                <h1 class="with-tabs">Page not found</h1>
+                              </div>                    <div class="messages error">
+<h2 class="element-invisible">Error message</h2>
+The page you requested does not exist. For your convenience, a search was performed using the query sites dev math virginia edu files template exam tex.</div>
+                    <div class="clearfix">
+              <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <form class="search-form" action="http://www.math.virginia.edu/search/site" method="post" id="search-form" accept-charset="UTF-8"><div><div class="container-inline form-wrapper" id="edit-basic"><div class="form-item form-type-textfield form-item-keys">
+  <label for="edit-keys">Enter terms </label>
+ <input type="text" id="edit-keys" name="keys" value="sites dev math virginia edu files template exam tex" size="20" maxlength="255" class="form-text" />
+</div>
+<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /><input type="hidden" name="get" value="[]" />
+</div><input type="hidden" name="form_build_id" value="form-u6VwZSs9lKnqtistsqmavWCrGDHVY8fjCozkZn28oio" />
+<input type="hidden" name="form_id" value="apachesolr_search_custom_page_search_form" />
+</div></form>  <h2>Search results</h2>
+  <ol class="search-results apachesolr_search-results">
+    <li class="search-result">
+    <h3 class="title">
+    <a href="http://www.math.virginia.edu/node/45">LaTeX templates/style files</a>
+  </h3>
+    <div class="search-snippet-info">
+          <p class="search-snippet">   LaTeX <strong>templates</strong>/style <strong>files</strong>: <strong>template_thesis.tex</strong> <strong>template_letter.tex</strong> <strong>template_exam.tex</strong> ...</p>
+              <p class="search-info"><span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Anonymous (not verified)</span> - 03/25/2015 - 15:29</p>
+      </div>
+</li>
+<li class="search-result">
+    <h3 class="title">
+    <a href="http://www.math.virginia.edu/node/3596">Performance</a>
+  </h3>
+    <div class="search-snippet-info">
+          <p class="search-snippet"> places requirements and dates on the auditions web <strong>site</strong> (http://music.<strong>virginia.edu</strong> ...  (http://rabi.phys.<strong>virginia.edu</strong>/mySIS/CS2/index.php). Here you can update your own course description and provide a link to the class web <strong>site</strong> ...  is now in effect and is posted on the web <strong>site</strong> at http://music.<strong>virginia.edu</strong> ...</p>
+              <p class="search-info"><span class="username" xml:lang="" about="/user/59" typeof="sioc:UserAccount" property="foaf:name" datatype="">tina.r.knight</span> - 06/01/2017 - 11:04</p>
+      </div>
+</li>
+<li class="search-result">
+    <h3 class="title">
+    <a href="http://www.math.virginia.edu/node/138">Jewish Studies</a>
+  </h3>
+    <div class="search-snippet-info">
+          <p class="search-snippet"> http://<strong>dev1.shanti.virginia.edu</strong>/jewishstudies/ Requirements  ...</p>
+              <p class="search-info"><span class="username" xml:lang="" about="/user/2" typeof="sioc:UserAccount" property="foaf:name" datatype="">manager</span> - 09/23/2011 - 15:21</p>
+      </div>
+</li>
+<li class="search-result">
+    <h3 class="title">
+    <a href="../../../node/41.html">Resources</a>
+  </h3>
+    <div class="search-snippet-info">
+          <p class="search-snippet"> (434-924-4919) or email  <strong>math-help@virginia.edu</strong> ...  http://its.<strong>virginia.edu</strong>/accounts/facstaffaccounts.html Software Central (http://www.its.<strong>virginia.edu</strong>/central/) provides access to <strong>site</strong>-licensed software ...  (sgk4n@<strong>virginia.edu</strong>, room 116, Kerchof Hall). Setting up Direct Deposit:  In order to set up direct deposit for your ...</p>
+              <p class="search-info"><span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Anonymous (not verified)</span> - 07/18/2016 - 09:47</p>
+      </div>
+</li>
+<li class="search-result">
+    <h3 class="title">
+    <a href="http://www.math.virginia.edu/node/52">German Newsletter 2015</a>
+  </h3>
+    <div class="search-snippet-info">
+          <p class="search-snippet"> /<strong>sites/german.virginia.edu/files</strong>/German_Newsletter_2015.pdf  ...</p>
+              <p class="search-info"><span class="username" xml:lang="" about="/user/1" typeof="sioc:UserAccount" property="foaf:name" datatype="">artsci</span> - 11/09/2015 - 11:15</p>
+      </div>
+</li>
+<li class="search-result">
+    <h3 class="title">
+    <a href="../../../node/13.html">Undergraduate Program</a>
+  </h3>
+    <div class="search-snippet-info">
+          <p class="search-snippet"> grade for the <strong>Math</strong> Department. Please submit your application to <strong>math-help@virginia.edu</strong> or bring ...  Contact: Thomas Koberda (tmk5a@<strong>virginia.edu</strong>).   <strong>Math</strong> Placement If you are unsure about which UVa ...  <strong>math-help@virginia.edu</strong>.   Transfer of Credit Information and requirements  for transfer of credit. Transfer of credit ...</p>
+              <p class="search-info"><span class="username" xml:lang="" typeof="sioc:UserAccount" property="foaf:name" datatype="">Anonymous (not verified)</span> - 08/17/2016 - 09:26</p>
+      </div>
+</li>
+<li class="search-result">
+    <h3 class="title">
+    <a href="http://www.math.virginia.edu/node/176">IMPORTANT FIRST YEAR APPLICATION INFORMATION. Submit the complete application via e-mail to: echols1styrapp@virginia.edu.</a>
+  </h3>
+    <div class="search-snippet-info">
+          <p class="search-snippet"> e-mail to: echols1styrapp@<strong>virginia.edu</strong> (6) DO NOT SUBMIT MORE THAN ONE APPLICATION OR VERSION ...  an unofficial advising transcript from SIS as a pdf <strong>file</strong>. (3) Prepare a one-page resume as a pdf. (4) Assemble ...  the application form, answers to the questions, your transcript and resume into a single pdf <strong>file</strong>. To insert ...</p>
+              <p class="search-info"><span class="username" xml:lang="" about="/user/117" typeof="sioc:UserAccount" property="foaf:name" datatype="">Michael Timko</span> - 06/15/2017 - 16:12</p>
+      </div>
+</li>
+<li class="search-result">
+    <h3 class="title">
+    <a href="http://www.math.virginia.edu/node/2594">2010- Soundscapes in Jefferson&#039;s America symposium</a>
+  </h3>
+    <div class="search-snippet-info">
+          <p class="search-snippet"> www.<strong>virginia.edu</strong>/music/jeffersonsoundscapes Soundscapes in Jefferson’s America explores the musical world of Thomas Jefferson. Scholars, ...  and Shirley Small Special Collections Library at The University of <strong>Virginia</strong> Friday, April 30, 2010 9:30am-6pm, ...  of <strong>Virginia</strong>) 10:00-12:00 Introducing Jefferson’s Soundscapes Deborah McDowell (University of <strong>Virginia</strong>), Chair ...</p>
+              <p class="search-info"><span class="username" xml:lang="" about="/user/76" typeof="sioc:UserAccount" property="foaf:name" datatype="">Kristy Moon</span> - 11/15/2015 - 22:37</p>
+      </div>
+</li>
+<li class="search-result">
+    <h3 class="title">
+    <a href="http://www.math.virginia.edu/node/377">Echoes Newsletter, Spring 2016</a>
+  </h3>
+    <div class="search-snippet-info">
+          <p class="search-snippet"> http://mlbs.<strong>virginia.edu/sites/mlbs.virginia.edu/files</strong>/echoes_spring_2016_v14.pd...  ...</p>
+              <p class="search-info"><span class="username" xml:lang="" about="/user/43" typeof="sioc:UserAccount" property="foaf:name" datatype="">esn8n</span> - 04/19/2016 - 13:01</p>
+      </div>
+</li>
+<li class="search-result">
+    <h3 class="title">
+    <a href="../../../content/karen-smith-february-29th-march-2nd-2016.html">Job/Internship Announcements</a>
+  </h3>
+    <div class="search-snippet-info">
+          <p class="search-snippet"> this opportunity: Research Specialist To apply, visit http://jobs.<strong>virginia.edu</strong> and search on Posting Number 0617861. ...  have any questions please contact Lisa Downing at  lad8v@<strong>virginia.edu</strong>. Office of Policy Development ...  Internship Listing:    www.<strong>virginia.edu</strong>/uip   -  Summer Session 2016 Internship Program in Charlottesville  ...</p>
+              <p class="search-info"><span class="username" xml:lang="" about="/user/14" typeof="sioc:UserAccount" property="foaf:name" datatype="">ef8t</span> - 07/28/2016 - 08:22</p>
+      </div>
+</li>
+  </ol>
+  <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a title="Go to page 2" href="http://www.math.virginia.edu/search404?page=1&amp;destination=sites/dev.math.virginia.edu/files/template_exam.tex">2</a></li>
+<li class="pager-item"><a title="Go to page 3" href="http://www.math.virginia.edu/search404?page=2&amp;destination=sites/dev.math.virginia.edu/files/template_exam.tex">3</a></li>
+<li class="pager-item"><a title="Go to page 4" href="http://www.math.virginia.edu/search404?page=3&amp;destination=sites/dev.math.virginia.edu/files/template_exam.tex">4</a></li>
+<li class="pager-item"><a title="Go to page 5" href="http://www.math.virginia.edu/search404?page=4&amp;destination=sites/dev.math.virginia.edu/files/template_exam.tex">5</a></li>
+<li class="pager-item"><a title="Go to page 6" href="http://www.math.virginia.edu/search404?page=5&amp;destination=sites/dev.math.virginia.edu/files/template_exam.tex">6</a></li>
+<li class="pager-item"><a title="Go to page 7" href="http://www.math.virginia.edu/search404?page=6&amp;destination=sites/dev.math.virginia.edu/files/template_exam.tex">7</a></li>
+<li class="pager-item"><a title="Go to page 8" href="http://www.math.virginia.edu/search404?page=7&amp;destination=sites/dev.math.virginia.edu/files/template_exam.tex">8</a></li>
+<li class="pager-item"><a title="Go to page 9" href="http://www.math.virginia.edu/search404?page=8&amp;destination=sites/dev.math.virginia.edu/files/template_exam.tex">9</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a title="Go to next page" href="http://www.math.virginia.edu/search404?page=1&amp;destination=sites/dev.math.virginia.edu/files/template_exam.tex">next ›</a></li>
+<li class="pager-last last"><a title="Go to last page" href="http://www.math.virginia.edu/search404?page=428&amp;destination=sites/dev.math.virginia.edu/files/template_exam.tex">last »</a></li>
+</ul></div>  </div>
+</div>
+  </div>
+          </div>
+                    
+      </div>
+
+	  </div>
+      </div>
+  </div> <!-- /#wrapper -->
+    <div class="region region-footer">
+    <div id="block-block-1" class="block block-block">
+
+    
+  <div class="content">
+    <div id="footer">
+      <div>
+       <div id="contactinfo">
+        <h3 class="printtitle">Contact Info:</h3>
+        <dl class="contact">
+          <dt class="title"></dt><dd class="title">Dept. of Mathematics</dd>
+          <dt class="phone">Phone: </dt>
+          <dd class="phone">(434) 924-4919 </dd>
+          <dt class="fax">Fax: </dt>
+          <dd class="fax">(434) 982-3084</dd>
+          <dt class="email">Email: </dt>
+          <dd class="email">math-help@virginia.edu</dd>
+
+        </dl>
+        <ul class="address">
+          <li><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=38.032400++%09-78.508299&amp;sll=38.032476,-78.508277&amp;sspn=0.001572,0.001851&amp;ie=UTF8&amp;ll=38.032746,-78.508558&amp;spn=0.007944,0.007489&amp;z=16">141 Cabell Drive, Kerchof Hall</a></li>
+          <li>P.O. Box 400137</li>
+          <li>Charlottesville, VA 22904-4137</li>
+          <li><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=38.032400++%09-78.508299&amp;sll=38.032476,-78.508277&amp;sspn=0.001572,0.001851&amp;ie=UTF8&amp;ll=38.032746,-78.508558&amp;spn=0.007944,0.007489&amp;z=16"><img align="top" style="padding-right: 2px;" src="http://www.virginia.edu/uvatemplates2010/images/shared/icon/map.png">Get Directions</a></li>
+        </ul>
+       </div>
+        <p id="version"><span class="un_jtt_hide print"><a href="http://transcoder.usablenet.com/tt/referrer">Text Version</a></span> | <a href="../../../print%3C-php%20echo%20url($_GET%5B&apos;q&apos;%5D)%20-%3E.html">Print Version</a></p>
+        <p id="siteinfo">Maintained by: <a href='mailto:math-help@virginia.edu'>Department of Mathematics</a><br />    
+          Last Modified:
+<script language="Javascript">
+document.write("Last Modified: " + document.lastModified +"");
+</SCRIPT> 
+<br /> 
+          <a href="http://www.virginia.edu/copyright.html" class="link">&copy;</a> Copyright <?php print gmdate('Y', REQUEST_TIME) ?> by the Rector and Visitors of the University of Virginia</p>
+      </div>
+   </div>  </div>
+</div>
+  </div>
+<script type="text/javascript">
+  (function ($) {
+	  
+		$('#uva-s').click(function(){  
+			var searchterm = $('form#search-block-form input.form-text')[1].value;
+			window.open("http://www.virginia.edu/search/results.html?q=" + searchterm + "&sa=&cx=017593750330628318309%3Algfaqmeyqba&cof=FORID%3A11", '_blank');
+		});	
+
+		$('#people-s').click(function(){
+			$('#edit-search-block-form--2').attr('name', 'whitepages');
+			$('form#search-block-form').attr('action', 'http://www.virginia.edu/cgi-local/ldapweb').attr('method', 'post');	
+			$('form#search-block-form').submit();
+		});  
+	
+}(jQuery));
+</script>  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"e545aeb814","applicationID":"65779938","transactionName":"NFBWbURZWkJRVUUKCw0adVpCUVtfH0VUAhYAXQAJAmdEUFdT","queueTime":0,"applicationTime":326,"atts":"GBdVGwxDSUw=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

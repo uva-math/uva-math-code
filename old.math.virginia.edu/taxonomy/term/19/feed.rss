@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xml:base="http://www.math.virginia.edu"  xmlns:dc="http://purl.org/dc/elements/1.1/">
+<channel>
+ <title>Department of Mathematics, U.Va. - Geometric Topology</title>
+ <link>http://www.math.virginia.edu/taxonomy/term/19</link>
+ <description></description>
+ <language>en</language>
+<item>
+ <title>Koberda</title>
+ <link>http://www.math.virginia.edu/content/koberda</link>
+ <description>&lt;div class=&quot;field field-name-field-firstname field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thomas &lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-photo field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; src=&quot;http://www.math.virginia.edu/sites/math.virginia.edu/files/styles/large/public/Thomas%20Koberda_0.jpg?itok=EYv2-ifE&quot; width=&quot;250&quot; height=&quot;316&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-title field-type-ds field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;dc:title&quot;&gt;Koberda&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-position field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Assistant Professor&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Research Areas:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/taxonomy/term/19&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Geometric Topology&lt;/a&gt;&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;a href=&quot;/taxonomy/term/12&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Group Theory&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-phone field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;434-924-4941&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-publications field-type-text-long field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Publications/Research:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Embedability between right-angled Artin groups. Joint with Sang-hyun Kim. (Geom. Topol. 17 (2013), no. 1, 493-530)&lt;/p&gt;
+&lt;p&gt;Anti-trees and right-angled Artin subgroups of planar braid groups. Joint with Sang-hyun Kim. (Geom. Topol. 19 (2015), no. 6, 3289-3306)&lt;/p&gt;
+&lt;p&gt;Quotients of surface groups and homology of finite covers via quantum representations. Joint with Ramanujan Santharoubane. (Invent. Math. (2016))&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-email field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;tmk5a@virginia.edu&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-link field-type-link-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;http://faculty.virginia.edu/Koberda/&quot;&gt;Personal Page&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-adress field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;P.O. Box 400137&lt;br /&gt;
+Dept. of Mathematics&lt;br /&gt;
+304 Kerchof Hall&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;h4&gt;Research Interests&lt;/h4&gt;
+&lt;p&gt;I am interested in geometric group theory and geometric topology. In particular, my research concerns right-angled Artin groups, mapping class groups, braid groups, arrangement groups, and quantum representations.&lt;/p&gt;
+&lt;h4&gt;Education&lt;/h4&gt;
+&lt;p&gt;B.S.: University of Chicago, 2007&lt;/p&gt;
+&lt;p&gt;M.A.: Harvard University, 2008&lt;/p&gt;
+&lt;p&gt;Ph.D.: Harvard University, 2012&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Mon, 17 Aug 2015 14:52:20 +0000</pubDate>
+ <dc:creator>Damar Watts</dc:creator>
+ <guid isPermaLink="false">485 at http://www.math.virginia.edu</guid>
+ <comments>http://www.math.virginia.edu/content/koberda#comments</comments>
+</item>
+<item>
+ <title>Mark</title>
+ <link>http://www.math.virginia.edu/node/149</link>
+ <description>&lt;div class=&quot;field field-name-field-firstname field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Thomas&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-photo field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; src=&quot;http://www.math.virginia.edu/sites/math.virginia.edu/files/styles/large/public/Mark.jpg?itok=2mqrGF_n&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-title field-type-ds field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;dc:title&quot;&gt;Mark&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-position field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Associate Professor&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Research Areas:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/taxonomy/term/19&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Geometric Topology&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-phone field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;434-924-4948&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-publications field-type-text-long field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Publications/Research:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;Product formulae for Ozsvath-Szabo 4-manifold invariants, &lt;em&gt;Geom. Topol.&lt;/em&gt; 12 (2008), 1557-1651 (with S. Jabuka).&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;p&gt;On the Heegaard Floer homology of a surface times a circle, &lt;em&gt;Adv. Math.&lt;/em&gt; 218 (2008), 728-761 (with S. Jabuka).&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-email field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;tmark@virginia.edu&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-link field-type-link-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;http://www.faculty.virginia.edu/tmark&quot;&gt;Personal Webpage&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-adress field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;P. O. Box 400137&lt;br /&gt;
+	Dept. of Mathematics&lt;br /&gt;
+	327 Kerchof Hall&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;h2&gt;
+	Education&lt;/h2&gt;
+&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;
+		Bachelor of Arts (BA), Reed College&lt;/li&gt;
+&lt;li class=&quot;last&quot;&gt;
+		Doctor of Philosophy (PhD), Michigan State University&lt;/li&gt;
+&lt;/ul&gt;&lt;h2&gt;
+	Research Projects&lt;/h2&gt;
+&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;
+		Fibrations and the topology of low-dimensional manifolds
+&lt;ul&gt;&lt;li class=&quot;first last&quot;&gt;
+				Project sponsored by U.S. NSF - Directorate Math. &amp;amp; Physical Sciences&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 03 May 2012 17:44:28 +0000</pubDate>
+ <dc:creator>Anonymous</dc:creator>
+ <guid isPermaLink="false">149 at http://www.math.virginia.edu</guid>
+ <comments>http://www.math.virginia.edu/node/149#comments</comments>
+</item>
+<item>
+ <title>Krushkal</title>
+ <link>http://www.math.virginia.edu/node/153</link>
+ <description>&lt;div class=&quot;field field-name-field-firstname field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Slava&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-photo field-type-image field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;img typeof=&quot;foaf:Image&quot; src=&quot;http://www.math.virginia.edu/sites/math.virginia.edu/files/styles/large/public/krushkal_0.jpg?itok=31y2TKmX&quot; width=&quot;300&quot; height=&quot;300&quot; alt=&quot;&quot; /&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-title field-type-ds field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;dc:title&quot;&gt;Krushkal&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-position field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;Professor&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-tags field-type-taxonomy-term-reference field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Research Areas:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;/taxonomy/term/19&quot; typeof=&quot;skos:Concept&quot; property=&quot;rdfs:label skos:prefLabel&quot; datatype=&quot;&quot;&gt;Geometric Topology&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-phone field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;434-924-4949&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-publications field-type-text-long field-label-above&quot;&gt;&lt;div class=&quot;field-label&quot;&gt;Publications/Research:&amp;nbsp;&lt;/div&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;A counterexample to the strong version of Freedman&#039;s conjecture, &lt;em&gt;Annals of Mathematics&lt;/em&gt; 168 (2008), 675-693. Preprint version: &lt;img align=&quot;top&quot; alt=&quot;PDF document icon&quot; class=&quot;icon&quot; height=&quot;16&quot; src=&quot;http://artsandsciences.virginia.edu/images/icons/file_types/pdf.gif&quot; width=&quot;16&quot; /&gt; &lt;a href=&quot;http://arxiv.org/PS_cache/math/pdf/0610/0610865v2.pdf&quot;&gt;http://arxiv.org/PS_cache/math/pdf/0610/0610865v2.pdf&lt;/a&gt; (.pdf)&lt;/p&gt;
+&lt;/div&gt;&lt;div class=&quot;field-item odd&quot;&gt;&lt;p&gt;Tutte chromatic identities from the Temperley-Lieb algebra, &lt;em&gt;Geometry and Topology&lt;/em&gt; 13 (2009), 709-741 (with Paul Fendley). Preprint version: &lt;img align=&quot;top&quot; alt=&quot;PDF document icon&quot; class=&quot;icon&quot; height=&quot;16&quot; src=&quot;http://artsandsciences.virginia.edu/images/icons/file_types/pdf.gif&quot; width=&quot;16&quot; /&gt; &lt;a href=&quot;http://arxiv.org/PS_cache/arxiv/pdf/0711/0711.0016v3.pdf&quot;&gt;http://arxiv.org/PS_cache/arxiv/pdf/0711/0711.0016v3.pdf&lt;/a&gt; (.pdf)&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-email field-type-text field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;krushkal@virginia.edu&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-link field-type-link-field field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;a href=&quot;http://people.virginia.edu/~vk6e/&quot;&gt;Personal Webpage&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-field-adress field-type-text-long field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot;&gt;&lt;p&gt;P. O. Box 400137&lt;br /&gt;
+	Dept. of Mathematics&lt;br /&gt;
+	321 Kerchof Hall&lt;/p&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;field field-name-body field-type-text-with-summary field-label-hidden&quot;&gt;&lt;div class=&quot;field-items&quot;&gt;&lt;div class=&quot;field-item even&quot; property=&quot;content:encoded&quot;&gt;&lt;h2 class=&quot;first&quot; id=&quot;a1&quot;&gt;
+	Research Interests&lt;/h2&gt;
+&lt;p&gt;Low-dimensional geometry and topology&lt;/p&gt;
+&lt;h2 id=&quot;a2&quot;&gt;
+	Education&lt;/h2&gt;
+&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;
+		Bachelor of Science (BS), Novosibirsk State University&lt;/li&gt;
+&lt;li&gt;
+		Master of Science (MS), University of California, San Diego&lt;/li&gt;
+&lt;li class=&quot;last&quot;&gt;
+		Doctor of Philosophy (PhD), University of California, San Diego&lt;/li&gt;
+&lt;/ul&gt;&lt;h2 id=&quot;a3&quot;&gt;
+	Research Projects&lt;/h2&gt;
+&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;
+		Low-dimensional topology and topological methods in condensed matter physics
+&lt;ul&gt;&lt;li class=&quot;first&quot;&gt;
+				Project sponsored by U.S. NSF - Directorate Math. &amp;amp; Physical Sciences&lt;/li&gt;
+&lt;li&gt;
+				07/01/2010 - 06/30/2013&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;</description>
+ <pubDate>Thu, 03 May 2012 17:44:28 +0000</pubDate>
+ <dc:creator>Anonymous</dc:creator>
+ <guid isPermaLink="false">153 at http://www.math.virginia.edu</guid>
+ <comments>http://www.math.virginia.edu/node/153#comments</comments>
+</item>
+</channel>
+</rss>
