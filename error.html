@@ -67,7 +67,7 @@ permalink: /error.html
     </div>
   </div>
 
-  {% include footer.html %} {% include katex %}{% include mathjax %} {% include bootjs %}
+  {% include footer.html %} {%unless page.math == false %}{% include katex %}{% include mathjax %}{%endunless%} {% include bootjs %}
 
 </body>
 

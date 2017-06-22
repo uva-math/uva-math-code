@@ -105,7 +105,7 @@ events: true
 
 {% include footer.html %}
 
-{% include katex %}{% include mathjax %}
+{%unless page.math == false %}{% include katex %}{% include mathjax %}{%endunless%}
 
 {% include bootjs %}
 
