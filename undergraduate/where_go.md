@@ -68,7 +68,6 @@ Please click here: <a href="/sites/math.virginia.edu/files/DSP-GMP%20Info%20Shee
 	<li>Investment banker (Townsend Frew)</li>
 	<li>Network engineer (Sprint Communications, Reliacom)</li>
 	<li>Software tester (Teir)</li>
-	<li>Actuary (<a href="http://artsandsciences.virginia.edu/mathematics/academics/undergraduate/jobs/watson.htm">Watson Wyatt Worldwide</a>)</li>
 	<li>Market analyst (GTECH Corporation)</li>
 </ul>
 
