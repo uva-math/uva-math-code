@@ -1,5 +1,5 @@
 ---
-title: Help update website 
+title: Help update the website 
 layout: documentation_page
 permalink: /doc/contribute/
 nav_parent: Info
