@@ -6,7 +6,12 @@ permalink: /undergrad/placement/
 nav_parent: Undergraduate
 nav_weight: 101
 ---
-<h1 class="mb-3">Where the Department of Mathematics graduates go</h1>
+
+<h1 class="mb-3">Job opportunities</h1>
+
+<p><em>The Department of Mathematics does not endorse the companies or organizations linked below. We provide these links as a help to our students. </em></p>
+
+---
 
 <p><a href="http://aftercollege.com/groups/cc.asp?gcc=914511790">Department of Mathematics Job Resource</a>&nbsp;powered by AfterCollege.</p>
 
@@ -35,41 +40,37 @@ nav_weight: 101
 
 <p>Please see the University&#39;s <a href="http://www.virginia.edu/%7Ecareer/">Office of Career Planning and Placement</a> for information on jobs and resources.</p>
 
-<hr />
-<p><em>The Department of Mathematics does not endorse the companies or organizations linked below. We provide these links as a help to our students. </em></p>
+### NSA Employment Opprotunities For Undergraduates
 
-<p><strong>Employment Opprotunities For Undergraduates</strong></p>
+The Mathematics Research Group at the National Security (NSA) offers two exceptional summer Programs for undergraduate and graduate mathematics students.
 
-<p>The Mathematics Research Group at the National Security (NSA) offers two exceptional summer Programs for undergraduate and graduate mathematics students.</p>
+Both programs offer a unique opportunity for students to work directly with NSA mathematicians on mission-critical problems and experience the excitement of the NSA mathematics community.
 
-<p><br />
-Both programs offer a unique opportunity for students to work directly with NSA mathematicians on mission-critical problems and experience the excitement of the NSA mathematics community.<br />
-<br />
-Please click here: <a href="{{ site.url }}/undergraduate/docs/DSP-GMP Info Sheets_2015.pdf">Undergraduate Director&#39;s Summer Program (DSP)</a>.</p>
+Please click here: <a href="{{ site.url }}/undergraduate/docs/DSP-GMP Info Sheets_2015 1.pdf">Undergraduate Director&#39;s Summer Program (DSP)</a>.
 
-<p><strong>&nbsp;&nbsp;Some positions accepted by our graduates are:</strong></p>
+---
 
-<ul>
-	<li>Graduate School (Princeton); Consultant (Federal Government)</li>
-	<li>Graduate School (MIT, UC San Diego, Stanford, Clemson, U. of Maryland, Northwestern University, UVa)</li>
-	<li>Summer Position (Institute for Defense Analyses)</li>
-	<li>AMENTRA, Richmond</li>
-	<li>Pricing Analyst (Freddie Mac, McLean, VA)</li>
-	<li>Engineer (Performance Engineering Corp., E-OIR Measurements)</li>
-	<li>Economist (Federal Trade Commission, Federal Reserve Bank)</li>
-	<li>Programmer (Broadway and Seymour, Information Analysis, Sentient Systems)</li>
-	<li>Consultant (Price Waterhouse, Accenture)</li>
-	<li>Analyst (SNL Securities, Columbia Gas, Proctor and Gamble, Saks Fifth Avenue, Capital One, Electronic Data Systems)</li>
-	<li>Actuary (Actuarial and Technical Solutions, Pension Benefit Guaranty, GEICO, Colonial Penn)</li>
-	<li>Technical consultant (American Management Systems)</li>
-	<li>Math teacher (American Overseas School of Rome, Gulliver Academy, Chesapeake Public Schools, Fairfax County Public Schools)</li>
-	<li>Information analyst (Electronic Data Systems)</li>
-	<li>Computer engineer (Microsoft)</li>
-	<li>Insurance underwriter (State Farm Insurance Companies)</li>
-	<li>Systems analyst (American Management Systems)</li>
-	<li>Investment banker (Townsend Frew)</li>
-	<li>Network engineer (Sprint Communications, Reliacom)</li>
-	<li>Software tester (Teir)</li>
-	<li>Actuary  (Watson Wyatt Worldwide)</li>
-	<li>Market analyst (GTECH Corporation)</li>
-</ul>
+<h1 class="mb-3 mt-1">Some positions accepted by our graduates</h1>
+
+- Graduate School (Princeton); Consultant (Federal Government)
+- Graduate School (MIT, UC San Diego, Stanford, Clemson, U. of Maryland, Northwestern University, UVa)
+- Summer Position (Institute for Defense Analyses)
+- AMENTRA, Richmond
+- Pricing Analyst (Freddie Mac, McLean, VA)
+- Engineer (Performance Engineering Corp., E-OIR Measurements)
+- Economist (Federal Trade Commission, Federal Reserve Bank)
+- Programmer (Broadway and Seymour, Information Analysis, Sentient Systems)
+- Consultant (Price Waterhouse, Accenture)
+- Analyst (SNL Securities, Columbia Gas, Proctor and Gamble, Saks Fifth Avenue, Capital One, Electronic Data Systems)
+- Actuary (Actuarial and Technical Solutions, Pension Benefit Guaranty, GEICO, Colonial Penn)
+- Technical consultant (American Management Systems)
+- Math teacher (American Overseas School of Rome, Gulliver Academy, Chesapeake Public Schools, Fairfax County Public Schools)
+- Information analyst (Electronic Data Systems)
+- Computer engineer (Microsoft)
+- Insurance underwriter (State Farm Insurance Companies)
+- Systems analyst (American Management Systems)
+- Investment banker (Townsend Frew)
+- Network engineer (Sprint Communications, Reliacom)
+- Software tester (Teir)
+- Actuary  (Watson Wyatt Worldwide)
+- Market analyst (GTECH Corporation)
