@@ -6,9 +6,11 @@ permalink: /content/math-placement/
 nav_parent: Undergraduate
 nav_weight: 5
 ---
-<div>
+
+<h1 class="mb-3">Placement in Math courses</h1>
+
+
 <p>Students planning to major in the social sciences, arts, or humanities, and who wish to take a mathematics course but omit the study of calculus, may choose from MATH 1110 (Elementary Probability Theory), or MATH 1140 (Financial Mathematics). Students may not take all 12 credits needed to satisfy the math/science requirement from the Department of Mathematics and the Department of Statistics. For purposes of the requirement, the courses in these two departments are treated as coming from a single department.</p>
-</div>
 
 <p>The study of calculus is the foundation of college mathematics for students planning to major in mathematics or the physical sciences, or for those who anticipate a career or graduate study in any of the physical sciences, engineering, or applied social sciences (such as economics). There are essentially three programs of study available in calculus:&nbsp;</p>
 
@@ -141,13 +143,13 @@ nav_weight: 5
 
 <h3>Advanced Placement</h3>
 
-<h4>We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.</h4>
+We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
 
 <table border="1" cellpadding="0" cellspacing="0">
 	<tbody>
 		<tr>
 			<td colspan="3">
-			<h4>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</h4>
+			<h5>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</h5>
 			</td>
 		</tr>
 		<tr>
@@ -223,8 +225,9 @@ nav_weight: 5
 
 <h3>If you are unsure about which UVa Mathematics course should be your first, consult&nbsp;your <a href="http://college.artsandsciences.virginia.edu/faculty_advisors">faculty advisor</a>.</h3>
 
+---
 
-<h3> Calculus Placement (Without Credit) </h3>
+<h2> Calculus Placement (Without Credit) </h2>
 <p> If you believe your previous experience in calculus has prepared
 you to begin your work in calculus at UVA at an advanced level,
 but you do not have credit for the prerequisite lower-level course
