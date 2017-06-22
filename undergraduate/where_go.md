@@ -6,6 +6,8 @@ permalink: /undergrad/placement/
 nav_parent: Undergraduate
 nav_weight: 101
 ---
+<h1 class="mb-3">Where the Department of Mathematics graduates go</h1>
+
 <p><a href="http://aftercollege.com/groups/cc.asp?gcc=914511790">Department of Mathematics Job Resource</a>&nbsp;powered by AfterCollege.</p>
 
 <p>There are many job and advanced-degree opportunities for our math majors.</p>
@@ -68,6 +70,6 @@ Please click here: <a href="{{ site.url }}/undergraduate/docs/DSP-GMP Info Sheet
 	<li>Investment banker (Townsend Frew)</li>
 	<li>Network engineer (Sprint Communications, Reliacom)</li>
 	<li>Software tester (Teir)</li>
-	<li>Actuary </li>
+	<li>Actuary  (Watson Wyatt Worldwide)</li>
 	<li>Market analyst (GTECH Corporation)</li>
 </ul>
