@@ -1,7 +1,7 @@
 ---
 title: Link to the old website
 layout: static_page_no_right_menu
-permalink: /old.math.virginia.edu/old_website_link/
+permalink: /old_website_copy/
 nav_parent: Info
 nav_nesting: true
 nav_weight: 200
