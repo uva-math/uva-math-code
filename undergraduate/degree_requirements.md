@@ -22,4 +22,4 @@ nav_weight: 1
 	</li>
 </ul>
 
-<p>If you would like to have a course count toward your major/minor, but it is not on the list of approved courses, please take the following fillable form to your advisor for approval and a signature:&nbsp;<a href="{{ site.url }}/undergraduate/docs/exception(fillable)_1.pdf"/sites/math.virginia.edu/files/exception%28fillable%29_2.pdf">&nbsp;</a>(.pdf, 17KB)</p>
+<p>If you would like to have a course count toward your major/minor, but it is not on the list of approved courses, please take the following fillable form to your advisor for approval and a signature:&nbsp;<a href="{{ site.url }}/undergraduate/docs/exception(fillable)_1.pdf">Course Exception for a Major/Minor in Mathematics</a> (.pdf, 17KB)</p>
