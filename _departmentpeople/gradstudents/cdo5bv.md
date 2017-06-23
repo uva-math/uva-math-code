@@ -7,7 +7,7 @@ position: Graduate Student
 office: 119 Kechof Hall
 phone: 434-243-1115
 email: cdo5bv@virginia.edu
-image:
+image: __SITE_URL__/img/people/Osborne.jpg
 personal_page:
 
 
