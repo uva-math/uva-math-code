@@ -1,5 +1,5 @@
 ---
-title: Link to the old website
+title: Pre-2017 website
 layout: static_page_no_right_menu
 permalink: /old_website_copy/
 nav_parent: Info
