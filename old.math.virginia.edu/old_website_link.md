@@ -5,7 +5,7 @@ permalink: /old.math.virginia.edu/old_website_link/
 nav_parent: Info
 nav_nesting: true
 nav_weight: 200
-nav_id: Old website
+nav_id: Pre-2017 website
 ---
 
 <h1 class="mb-3">Pre-2017 math.virginia.edu</h1>
