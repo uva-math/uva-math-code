@@ -13,4 +13,4 @@ nav_weight: 100
 <br />
 This programs offer a unique opportunity for graduate students to work directly with NSA mathematicians on mission-critical problems and experience the excitement of the NSA mathematics community.</p>
 
-<p>Please click here:<a href="/sites/math.virginia.edu/files/DSP-GMP%20Info%20Sheets_2015%202.pdf">&nbsp;Graduate Mathematics Program (GMP)</a></p>
+<p>Please click here:<a href="{{ site.url }}/graduate/docs/DSP-GMP Info Sheets_2015 2.pdf">&nbsp;Graduate Mathematics Program (GMP)</a></p>
