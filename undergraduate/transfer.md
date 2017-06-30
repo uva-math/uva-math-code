@@ -6,3 +6,6 @@ permalink: /undergraduate/transfer-credit/
 nav_parent: Undergraduate
 nav_weight: 6
 ---
+<h3>Transfer of Credit</h3>
+
+<p><a href="http://college.artsandsciences.virginia.edu/transfer-credit">Information and requirements</a>&nbsp;for transfer of credit. Transfer of credit advisor: <a href="http://www.math.virginia.edu/people/iwh">Ira Herbst</a>, 228&nbsp;Kerchof Hall and <a href="mailto:pa8e@virginia.edu">Peter Abramenko</a>, 306 Kerchof Hall.</p>
