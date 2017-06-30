@@ -16,11 +16,11 @@ nav_weight: 8
 
 <h2 class="mt-2 mb-3">Policies FAQ</h2>
 
-- How to set up an online advising schedule: 
-https://advise.sites.virginia.edu/
+- How to set up an online advising schedule:
+({{ site.url }}/https://advise.sites.virginia.edu/)
 
-- When can an undergraduate add more than 15 credit-hours? 
-http://college.as.virginia.edu/advisors_adviseandenroll
+- When can an undergraduate add more than 15 credit-hours?
+({{ site.url }}/http://college.as.virginia.edu/advisors_adviseandenroll)
 
 - How do I compute my MATH GPA?
 To compute the MATH GPA, use the nine MATH courses that SIS shows were required for the
@@ -28,19 +28,21 @@ major.
 - Can students in the 5 year BA/MT program participate in their 4th-year graduation?
 Yes, complete the Participation in Final Exercises by BA Form.
 - How to check on UVA courses?
-http://rabi.phys.virginia.edu/mySIS/CS2/index.php
+({{ site.url }}/http://rabi.phys.virginia.edu/mySIS/CS2/index.php)
 
 - What courses can I transfer to UVA?
-http://saz-webdmz.eservices.virginia.edu/asequivs/
+({{ site.url }}/http://saz-webdmz.eservices.virginia.edu/asequivs/)
 
 - Can I double count some courses?
 Yes. The current policy is given in the Undergraduate Record: “Up to two coursesthat are being
 counted for another College major can also be counted for the major in mathematics. Three
 courses may be allowed if the other major is interdisciplinary.”
+
 - Can I get a different room for my class?
 Email: rooms@virginia.edu
+
 - Can I see what rooms are available?
-Yes, http://www.virginia.edu/source/index.php
+Yes, ({{ site.url }}/http://www.virginia.edu/source/index.php)
 
 - Where can a graduate student be the instructor-of-record?
 In addition, all GTAs, per the accreditation requirements for the Southern Association of Colleges
@@ -48,13 +50,13 @@ and Schools (SACS), are expected to have a master’s degree or 18 graduate cred
 discipline they are teaching.
 and Schools (SACS), are expected to have a master’s degree or 18 graduate credit hours in the
 discipline they are teaching.
-http://www.virginia.edu/uvapolicies/Policies/PROV-001v1.html
+({{ site.url }}/http://www.virginia.edu/uvapolicies/Policies/PROV-001v1.html)
 
 - How to configure your home directory
-Use the link:https://admin.people.virginia.edu/cgi-local/ww/menu
-
+({{ site.url }}/https://admin.people.virginia.edu/cgi-local/ww/menu)
 to change your password, restore your files, and change file permission
-- Course Action Form: http://www.virginia.edu/registrar/courseactionform.html
+- Course action form:
+({{ site.url }}/http://www.virginia.edu/registrar/courseactionform.html)
 
 - [If I need precalculus...]({{ site.url }}/undergraduate/docs/If I need precalculus....pdf)
 - [If I took the wrong calculus course....]({{ site.url }}/undergraduate/docs/If I took the wrong calculus course....pdf)
