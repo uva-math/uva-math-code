@@ -6,64 +6,70 @@ permalink: /graduate/admission/
 nav_parent: Graduate
 nav_weight: 1
 ---
-<p>Thank you for your interest in mathematics graduate study at the University of Virginia. We hope you will decide to apply. The deadline for application is <strong>JANUARY 15.</strong></p>
 
-<p><strong>Application Checklist: </strong><br />
-(1) application;<br />
-(2) statement of purpose;<br />
-(3) GRE scores, including the mathematics&nbsp;subject test;<br />
-(4) 2 or 3 letters of recommendation;<br />
-(5) unofficial transcript;<br />
-(6) $85 application fee;<br />
-(7) TOEFL score for international students (see <a href="http://graduate.as.virginia.edu/requirements">http://graduate.as.virginia.edu/requirements</a>).</p>
+<h1 class="mb-3">Graduate Admissions</h1>
 
-<p>Other useful links</p>
+ Thank you for your interest in mathematics graduate study at the University of Virginia. We hope you will decide to apply. The deadline for application is <strong>JANUARY 15.</strong>
 
-<p>Requirements:&nbsp;<a href="http://graduate.as.virginia.edu/requirements">http://graduate.as.virginia.edu/requirements</a><br />
-Deadlines:&nbsp;<a href="http://graduate.as.virginia.edu/deadlines">http://graduate.as.virginia.edu/deadlines</a><br />
-FAQ:&nbsp;<a href="http://graduate.as.virginia.edu/frequently-asked-questions">http://graduate.as.virginia.edu/frequently-asked-questions</a>&nbsp;</p>
+## Application Checklist:
+1. Application;
+2. Statement of purpose;
+3. GRE scores, including the mathematics&nbsp;subject test;
+4. 2 or 3 letters of recommendation;
+5. Unofficial transcript;
+6. $85 application fee;
+7. TOEFL score for international students (see <a href="http://graduate.as.virginia.edu/requirements">here</a>).
 
-<p><strong>Please note that we do not usually admit students for a Master&#39;s degree only; we admit students seeking a PhD</strong>.</p>
+##### Other useful links
 
-<p>&nbsp;</p>
+- Requirements: [`http://graduate.as.virginia.edu/requirements`](http://graduate.as.virginia.edu/requirements)
+- Deadlines: [`http://graduate.as.virginia.edu/deadlines`](http://graduate.as.virginia.edu/deadlines)
+- FAQ: [`http://graduate.as.virginia.edu/frequently-asked-questions`](http://graduate.as.virginia.edu/frequently-asked-questions)
 
-<p><strong>Criteria for Admission:</strong><br />
-In making its decisions about admission and financial aid, the Department is first and foremost looking for students that we feel will flourish in our program. To determine if a student will be successful, the Department pays close attention to the overall undergraduate record, letters of recommendation, GRE scores (both on the general examinations and on the mathematics subject exam), and the student&#39;s personal statement.</p>
+ <strong>Please note that we do not usually admit students for a Master&#39;s degree only; we admit students seeking a PhD</strong>.
 
-<p>Regarding the undergraduate record, the rigor of the applicant&#39;s mathematics program is an important factor; a good grounding in real analysis (as in our MATH 5310 and MATH 5330), algebra (as in MATH 5651/5652), general topology (as in MATH 5700), and complex analysis (as in MATH 3340) is ideal. For students from smaller schools, we have found that a solid score on the Mathematics Subject Exam is a useful indicator of future success.</p>
+## Criteria for Admission
 
-<p>Students occasionally arrive with an area of interest in mind, planning to work with a specific research group: this is quite common for international students. Foreign applicants are particularly encouraged to contact our faculty about their specific mathematical interests.</p>
+In making its decisions about admission and financial aid, the Department is first and foremost looking for students that we feel will flourish in our program. To determine if a student will be successful, the Department pays close attention to the overall undergraduate record, letters of recommendation, GRE scores (both on the general examinations and on the mathematics subject exam), and the student&#39;s personal statement.
 
-<p>Students interested in our program in the history of mathematics should contact Professor Karen Parshall for admission prerequisites.</p>
+ Regarding the undergraduate record, the rigor of the applicant&#39;s mathematics program is an important factor; a good grounding in real analysis (as in our MATH 5310 and MATH 5330), algebra (as in MATH 5651/5652), general topology (as in MATH 5700), and complex analysis (as in MATH 3340) is ideal. For students from smaller schools, we have found that a solid score on the Mathematics Subject Exam is a useful indicator of future success.
 
-<p>Finally, we are looking for enthusiasm for mathematics in all its depth and beauty!</p>
+## Reseach areas
 
-<p><strong>International Students:</strong> As the University&#39;s most international department, we welcome applications from foreign students!</p>
+ Students occasionally arrive with an area of interest in mind, planning to work with a specific research group: this is quite common for international students. Foreign applicants are particularly encouraged to contact our faculty about their specific mathematical interests.
 
-<p>The following websites for international students should be helpful:</p>
+ Students interested in our program in the history of mathematics should contact Professor Karen Parshall for admission prerequisites.
 
-<ul>
-	<li>General information for admitted international students:&nbsp;<a href="http://issp.virginia.edu/newly-admitted-students">http://issp.virginia.edu/newly-admitted-students</a></li>
-	<li>International Studies Office: <a href="http://www.virginia.edu/iso/">http://www.virginia.edu/iso/</a></li>
-</ul>
+ Finally, we are looking for enthusiasm for mathematics in all its depth and beauty!
 
-<p>New teaching assistants whose first language is not English&nbsp; have their spoken English proficiency evaluated by the International Students Office and Teaching Resource Center. This test is similar to ETS&#39;s Test of Spoken English (TSE), and students who have taken the TSE, and have a high enough score, can be exempted from this evaluation.</p>
 
-<p>&nbsp;</p>
+## International Students
 
-<p><strong>Contact Information:</strong><br />
-<br />
-<br />
-Graduate School of Arts and Sciences<br />
-P. O. Box 400775<br />
-University of Virginia<br />
-Charlottesville, Virginia 22904-4775<br />
-e-mail: <a href="mailto:gsas.admission@virginia.edu">gsas.admission@virginia.edu</a><br />
-Telephone (434) 924-7184 (TDD: (434) 982-HEAR)<br />
-<br />
-Admissions, Department of Mathematics<br />
-P. O. Box 400137<br />
-University of Virginia<br />
-Charlottesville, Virginia 22904-4137<br />
-e-mail:&nbsp;<a href="mailto:tam7b@virginia.edu">tam7b@virginia.edu</a><br />
-Telephone: (434) 924-4918 (TDD: (434) 982-HEAR)</p>
+As the University&#39;s most international department, we welcome applications from foreign students!
+
+The following websites for international students should be helpful:
+
+- General information for admitted international students:
+	[`http://issp.virginia.edu/newly-admitted-students`](http://issp.virginia.edu/newly-admitted-students)
+- International Studies Office:
+	[`http://www.virginia.edu/iso/`](http://www.virginia.edu/iso/)
+
+ New teaching assistants whose first language is not English have their spoken English proficiency evaluated by the International Students Office and Teaching Resource Center. This test is similar to ETS&#39;s Test of Spoken English (TSE), and students who have taken the TSE, and have a high enough score, can be exempted from this evaluation.
+
+---
+
+## Contact Information
+
+### Graduate School of Arts and Sciences
+P. O. Box 400775<br>
+University of Virginia<br>
+Charlottesville, Virginia 22904-4775<br>
+e-mail: <a href="mailto:gsas.admission@virginia.edu">gsas.admission@virginia.edu</a><br>
+Telephone (434) 924-7184 (TDD: (434) 982-HEAR)
+
+### Admissions, Department of Mathematics
+P. O. Box 400137<br>
+University of Virginia<br>
+Charlottesville, Virginia 22904-4137<br>
+e-mail: {% include person_info_email_only.html UVA_id="njk4x" %}<br>
+Telephone: (434) 924-4918 (TDD: (434) 982-HEAR)

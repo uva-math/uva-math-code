@@ -7,7 +7,7 @@ nav_parent: Graduate
 nav_weight: 100
 ---
 
-<p><strong>Employment Opprotunities For Graduates</strong></p>
+<h1 class="mb-3">Employment Opprotunities For Graduates</h1>
 
 <p>The Mathematics Research Group at the National Security (NSA) offers two exceptional summer Programs for undergraduate and graduate mathematics students.<br />
 <br />
