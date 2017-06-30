@@ -13,26 +13,35 @@ nav_weight: 1
 - ##### Director of Undergraduate Studies:<br>
 {% include person_info.html UVA_id="iwh" %}
 
-- ##### MATH 1210-1220 Coordinator:<br>
+- ##### MATH 1210 and 1310 Coordinator:<br>
 {% include person_info.html UVA_id="psb7p" %}
 
-- ##### MATH 1310-1320 Coordinator:<br>
-{% include person_info.html UVA_id="vk6e" %}
+- ##### MATH 1220 and 1320 Coordinator:<br>
+{% include person_info.html UVA_id="des5e" %}
 
 - ##### Transfer of Credit Advisors:<br>
 {% include person_info.html UVA_id="iwh" %}<br>
 {% include person_info.html UVA_id="pa8e" %}
 
-- ##### Majors/Minors Advisors (Spring 2017):<br>
+- ##### Majors/Minors Advisors (Fall 2017):<br>
 {% include person_info.html UVA_id="pa8e" %}<br>
 {% include person_info.html UVA_id="iwh" %}<br>
-{% include person_info.html UVA_id="jjh2b" %}<br>
 {% include person_info.html UVA_id="vk6e" %}<br>
-{% include person_info.html UVA_id="tam7b" %}<br>
-{% include person_info.html UVA_id="asr3x" %}
+<!-- {% include person_info.html UVA_id="tam7b" %}<br> -->
+{% include person_info.html UVA_id="ww9c" %}
 
-- ##### Majors/Minors Admin. Assistant:<br>
+- ##### Majors/Minors Administrative Assistant:<br>
 {% include person_info.html UVA_id="aab8b" %}
+
+- ##### First Year Advisors (Fall 2017):<br>
+{% include person_info.html UVA_id="pa8e" %}<br>
+{% include person_info.html UVA_id="jeb2md" %}<br>
+{% include person_info.html UVA_id="hcg3m" %}<br>
+{% include person_info.html UVA_id="jjh2b" %}<br>
+{% include person_info.html UVA_id="njk4x" %}<br>
+{% include person_info.html UVA_id="aso9t" %}<br>
+{% include person_info.html UVA_id="bjp8w" %}<br>
+{% include person_info.html UVA_id="des5e" %}
 
 - ##### Ombudsman:<br>
 {% include person_info.html UVA_id="pa8e" %}
@@ -42,3 +51,12 @@ nav_weight: 1
 
 - ##### Summer Session:<br>
 {% include person_info.html UVA_id="pa8e" %}
+
+- ##### Math Club contacts:<br>
+{% include person_info.html UVA_id="sm4cw" %}<br>
+{% include person_info.html UVA_id="aso9t" %}
+
+- ##### Putnam contacts:<br>
+{% include person_info.html UVA_id="tmk5a" %}
+{% include person_info.html UVA_id="jdb8pc" %}
+
