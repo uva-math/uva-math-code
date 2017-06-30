@@ -19,27 +19,27 @@ nav_weight: 1
 {% include person_info.html UVA_id="des5e" %}
 
 - ##### Transfer of Credit Advisors:<br>
-{% include person_info.html UVA_id="pa8e" %}<br>
+{% include person_info.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
 {% include person_info.html UVA_id="iwh" %}
 
 - ##### Math Majors/Minors Advisors:<br>
-{% include person_info.html UVA_id="pa8e" %}<br>
-{% include person_info.html UVA_id="iwh" %}<br>
-{% include person_info.html UVA_id="vk6e" %}<br>
-<!-- {% include person_info.html UVA_id="tam7b" %}<br> -->
+{% include person_info.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
+{% include person_info.html UVA_id="iwh" %}<br><br class="hidden-sm-up">
+{% include person_info.html UVA_id="vk6e" %}<br><br class="hidden-sm-up">
+<!-- {% include person_info.html UVA_id="tam7b" %}<br><br class="hidden-sm-up"> -->
 {% include person_info.html UVA_id="ww9c" %}
 
 - ##### Math Majors/Minors Administrative Assistant:<br>
 {% include person_info.html UVA_id="aab8b" %}
 
 - ##### First Year Advisors:<br>
-{% include person_info.html UVA_id="aa4cr" %}<br>
-{% include person_info.html UVA_id="jeb2md" %}<br>
-{% include person_info.html UVA_id="hcg3m" %}<br>
-{% include person_info.html UVA_id="jjh2b" %}<br>
-{% include person_info.html UVA_id="njk4x" %}<br>
-{% include person_info.html UVA_id="aso9t" %}<br>
-{% include person_info.html UVA_id="bjp8w" %}<br>
+{% include person_info.html UVA_id="aa4cr" %}<br><br class="hidden-sm-up">
+{% include person_info.html UVA_id="jeb2md" %}<br><br class="hidden-sm-up">
+{% include person_info.html UVA_id="hcg3m" %}<br><br class="hidden-sm-up">
+{% include person_info.html UVA_id="jjh2b" %}<br><br class="hidden-sm-up">
+{% include person_info.html UVA_id="njk4x" %}<br><br class="hidden-sm-up">
+{% include person_info.html UVA_id="aso9t" %}<br><br class="hidden-sm-up">
+{% include person_info.html UVA_id="bjp8w" %}<br><br class="hidden-sm-up">
 {% include person_info.html UVA_id="des5e" %}
 
 - ##### Ombudsman:<br>
@@ -52,10 +52,10 @@ nav_weight: 1
 {% include person_info.html UVA_id="pa8e" %}
 
 - ##### Math Club contacts:<br>
-{% include person_info.html UVA_id="sm4cw" %}<br>
+{% include person_info.html UVA_id="sm4cw" %}<br><br class="hidden-sm-up">
 {% include person_info.html UVA_id="aso9t" %}
 
 - ##### Putnam contacts:<br>
-{% include person_info.html UVA_id="tmk5a" %}
+{% include person_info.html UVA_id="tmk5a" %}<br><br class="hidden-sm-up">
 {% include person_info.html UVA_id="jdb8pc" %}
 
