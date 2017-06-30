@@ -7,7 +7,7 @@ nav_parent: Undergraduate
 nav_weight: 3
 math: false
 ---
-# Academic life 
+<h1 class="mb-3"> Academic life </h1>
 
 <h3>Math Club</h3>
 

@@ -10,7 +10,7 @@ nav_weight: 8
 
 <p>There are opportunities to participate in mathematics research&nbsp;at the undergraduate level. In particular, the AMS has compiled a <a href="http://www.ams.org/employment/reu.html">list of summer REUs</a> (Research Experiences for Undergraduates) that are organized at various institutions throughout the US.</p>
 
-<p>&nbsp;</p>
+---
 
 <h3>Research Support</h3>
 
