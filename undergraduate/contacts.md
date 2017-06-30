@@ -7,8 +7,7 @@ nav_parent: Undergraduate
 nav_weight: 1
 ---
 
-<h1 class="mb-4">Contacts</h1>
-
+<h1 class="mb-4">Contacts (Fall 2017)</h1>
 
 - ##### Director of Undergraduate Studies:<br>
 {% include person_info.html UVA_id="iwh" %}
@@ -23,7 +22,7 @@ nav_weight: 1
 {% include person_info.html UVA_id="iwh" %}<br>
 {% include person_info.html UVA_id="pa8e" %}
 
-- ##### Majors/Minors Advisors (Fall 2017):<br>
+- ##### Majors/Minors Advisors:<br>
 {% include person_info.html UVA_id="pa8e" %}<br>
 {% include person_info.html UVA_id="iwh" %}<br>
 {% include person_info.html UVA_id="vk6e" %}<br>
@@ -33,7 +32,7 @@ nav_weight: 1
 - ##### Majors/Minors Administrative Assistant:<br>
 {% include person_info.html UVA_id="aab8b" %}
 
-- ##### First Year Advisors (Fall 2017):<br>
+- ##### First Year Advisors:<br>
 {% include person_info.html UVA_id="pa8e" %}<br>
 {% include person_info.html UVA_id="jeb2md" %}<br>
 {% include person_info.html UVA_id="hcg3m" %}<br>
