@@ -21,7 +21,7 @@ nav_weight: 8
 <br />
 If you think you may be interested in the program, I suggest you meet with your math advisor. Together you can discuss whether the program is suitable for you, and verify that your schedule will accommodate it. Note that interested students&rsquo; transcripts will be reviewed by the graduate committee in the mathematics department prior to their acceptance, and an endorsement from your advisor will be helpful in reaching a decision.<br />
 <br />
-I also suggest you review the requirements for the master&rsquo;s degree, which can be found here:http://<a href="http://www.math.virginia.edu/graduate/requirements">www.math.virginia.edu/graduate/requirements</a><br />
+I also suggest you review the requirements for the master&rsquo;s degree, which can be found here: [`www.math.virginia.edu/graduate/requirements`](www.math.virginia.edu/graduate/requirements)<br />
 <br />
 Finally, note that ONLY 6 credits of graduate work that you took while officially an undergraduate can count toward the master&rsquo;s. In some cases, this might mean that to make the program work efficiently for you, you would need to graduate (from the bachelor&rsquo;s program) early.</p>
 
