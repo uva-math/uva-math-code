@@ -17,7 +17,7 @@ nav_weight: 8
 <h2 class="mt-2 mb-3">Policies FAQ</h2>
 
 - How to set up an online advising schedule:
-({{ site.url }}/https://advise.sites.virginia.edu/)
+https://advise.sites.virginia.edu
 
 - When can an undergraduate add more than 15 credit-hours?
 ({{ site.url }}/http://college.as.virginia.edu/advisors_adviseandenroll)
