@@ -19,21 +19,21 @@ nav_weight: 1
 {% include person_info.html UVA_id="des5e" %}
 
 - ##### Transfer of Credit Advisors:<br>
-{% include person_info.html UVA_id="iwh" %}<br>
-{% include person_info.html UVA_id="pa8e" %}
+{% include person_info.html UVA_id="pa8e" %}<br>
+{% include person_info.html UVA_id="iwh" %}
 
-- ##### Majors/Minors Advisors:<br>
+- ##### Math Majors/Minors Advisors:<br>
 {% include person_info.html UVA_id="pa8e" %}<br>
 {% include person_info.html UVA_id="iwh" %}<br>
 {% include person_info.html UVA_id="vk6e" %}<br>
 <!-- {% include person_info.html UVA_id="tam7b" %}<br> -->
 {% include person_info.html UVA_id="ww9c" %}
 
-- ##### Majors/Minors Administrative Assistant:<br>
+- ##### Math Majors/Minors Administrative Assistant:<br>
 {% include person_info.html UVA_id="aab8b" %}
 
 - ##### First Year Advisors:<br>
-{% include person_info.html UVA_id="pa8e" %}<br>
+{% include person_info.html UVA_id="aa4cr" %}<br>
 {% include person_info.html UVA_id="jeb2md" %}<br>
 {% include person_info.html UVA_id="hcg3m" %}<br>
 {% include person_info.html UVA_id="jjh2b" %}<br>
