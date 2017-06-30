@@ -41,7 +41,7 @@ counted for another College major can also be counted for the major in mathemati
 courses may be allowed if the other major is interdisciplinary.”
 
 - Can I get a different room for my class?
-Email: rooms@virginia.edu
+Email: <a href="mailto:rooms@virginia.edu">rooms@virginia.edu</a>
 
 - Can I see what rooms are available?
 Yes, see [`http://www.virginia.edu/source/index.php`](http://www.virginia.edu/source/index.php).
