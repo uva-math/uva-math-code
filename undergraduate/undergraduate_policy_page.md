@@ -25,8 +25,10 @@ http://college.as.virginia.edu/advisors_adviseandenroll
 - How do I compute my MATH GPA?
 To compute the MATH GPA, use the nine MATH courses that SIS shows were required for the
 major.
+
 - Can students in the 5 year BA/MT program participate in their 4th-year graduation?
 Yes, complete the Participation in Final Exercises by BA Form.
+
 - How to check on UVA courses?
 http://rabi.phys.virginia.edu/mySIS/CS2/index.php
 
