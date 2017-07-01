@@ -9,6 +9,8 @@ nav_weight: 20
 
 <h1 class="mb-3">Recent PhDs</h1>
 
+## Spring and Summer 2017
+
 ## May 2016
 
 - **Scott Atkinson**<br>
