@@ -10,6 +10,10 @@ email: math-chair@virginia.edu
 image: __SITE_URL__/img/people/Huneke.jpg
 personal_page: http://faculty.virginia.edu/huneke/
 
+grad_general_areas:
+  - algebra
+grad_special_areas:
+  - commutative  
 areas: #Must coincide with the ones in _data/research_areas.yml
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 

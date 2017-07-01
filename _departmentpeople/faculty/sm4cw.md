@@ -13,4 +13,8 @@ personal_page: http://www.people.virginia.edu/~sm4cw/Welcome.html
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 
+grad_general_areas:
+  - geometry
+grad_special_areas:
+  - geom_top
 ---

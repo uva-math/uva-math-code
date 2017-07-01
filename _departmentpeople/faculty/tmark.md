@@ -13,4 +13,8 @@ personal_page: http://www.faculty.virginia.edu/tmark/
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 
+grad_general_areas:
+  - geometry
+grad_special_areas:
+  - geom_top
 ---

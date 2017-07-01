@@ -13,4 +13,8 @@ personal_page:
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 
+grad_general_areas:
+  - geometry
+grad_special_areas:
+  - alg_top
 ---

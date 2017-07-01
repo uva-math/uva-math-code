@@ -14,6 +14,13 @@ areas: #Must coincide with the ones in _data/research_areas.yml
   - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
+grad_general_areas:
+  - algebra
+  - analysis
+grad_special_areas:
+  - reptheory
+  - math_physics
+  - probability
 
 ---
 

@@ -36,6 +36,10 @@ personal_page: http://people.virginia.edu/~aso9t/
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
+grad_general_areas:
+  - algebra
+grad_special_areas:
+  - algebraic_geometry
 ---
 
 
@@ -97,7 +101,13 @@ Put the image file (`jpg` or `png`, any size/dimensions, but square and up to `6
 
 <span class="nonupper-h5">areas</span>
 
-See [below](#research_areas_pages).
+This is a field which determines how people are displayed by research area
+in the general lists of the people in the department (for example, [here]({{site.url}}/research/analysis/)).
+See [below](#research_areas_pages) for details.
+
+<span class="nonupper-h5">grad\_general\_areas and grad\_special\_areas</span>
+
+These fields determine only where the person is displayed in the [graduate research areas information page]({{site.url}}/graduate/research-areas/).
 
 ### Adding/removing people
 

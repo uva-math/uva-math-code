@@ -10,6 +10,9 @@ email: khp3k@virginia.edu
 image: __SITE_URL__/img/people/ParshallK.jpg
 personal_page: http://people.virginia.edu/~khp3k/home.htm
 
+grad_general_areas:
+  - history
+
 areas:
   - History of$$\ $$Mathematics
 

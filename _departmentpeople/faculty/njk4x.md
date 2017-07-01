@@ -14,4 +14,8 @@ personal_page: http://pi.math.virginia.edu/Faculty/Kuhn/
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 
+grad_general_areas:
+  - geometry
+grad_special_areas:
+  - alg_top
 ---

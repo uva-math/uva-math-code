@@ -10,6 +10,13 @@ email: btw4e@virginia.edu
 image: __SITE_URL__/img/people/Webster.jpg
 personal_page:
 
+grad_general_areas:
+  - algebra
+  - geometry
+grad_special_areas:
+  - reptheory
+  - algeom
+  - geom_top
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology

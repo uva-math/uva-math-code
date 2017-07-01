@@ -9,7 +9,10 @@ phone: 434-924-8946
 email: fd4v@virginia.edu
 image: __SITE_URL__/img/people/DiPlinio.jpg
 personal_page:
-
+grad_general_areas:
+  - analysis
+grad_special_areas:
+  - diffeq
 areas:
   - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
 

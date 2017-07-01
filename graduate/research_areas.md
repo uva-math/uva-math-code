@@ -7,6 +7,8 @@ nav_parent: Graduate
 nav_weight: 1
 ---
 
+{% assign sorted_people = site.departmentpeople | sort: 'lastname' %}
+
 <h1 class="mb-3">Research areas</h1>
 
  The Mathematics Department at the University of Virginia offers graduate students the opportunity to do research in a wide range of specialties. To help students with the daunting task of planning their multi-year program, in this guide we describe standard routes through the main research areas that students can currently pursue. We expect most students to follow one of these paths.
@@ -17,10 +19,10 @@ nav_weight: 1
 
 <h2>1 Graduate Program in Algebra</h2>
 
-<strong>Faculty</strong>
-P. Abramenko, M. Ershov, C. Huneke, J. Morse,&nbsp;A. Obus, B. Parshall, L. Petrov, A. Rapinchuk, W. Wang, and B. Webster
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "algebra" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
-Graduate research in algebra is organized into the following areas: 
+Graduate research in algebra is organized into the following areas:
 - Linear and Arithmetic Groups and Associated Structures
 - Representation Theory
 - Commutative Algebra
@@ -62,9 +64,8 @@ In the second year, students take the Second-Year Proficiency Exam, which, in al
 
 <h3>1.2 Linear and Arithmetic Groups and Associated Structures</h3>
 
-
-<strong>Faculty</strong>
-P. Abramenko, M. Ershov, and A. Rapinchuk
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "groups" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
  Research in this area focuses on structural, combinatorial and homological properties of linear groups over general rings with a special emphasis on arithmetic rings (i.e., the rings of <em>S</em>-integers in global fields). Topics include the normal subgroup structure of the groups of rational points of algebraic groups and of their important subgroups, finiteness properties of arithmetic groups in positive characteristic, the rigidity of representations of finitely generated groups and building theory, in particular, group actions on spherical, affine, and twin buildings. The work in this area requires methods of the theory of algebraic groups, algebraic number theory, homological algebra, and combinatorial geometry/topology.
 
@@ -75,9 +76,8 @@ MATH 7600 Homological Algebra, MATH 8851 Group Theory, MATH 8600 Commutative Alg
 
 <h3>1.3 Representation Theory</h3>
 
-
-<strong>Faculty</strong>
-B. Parshall, L. Petrov, W. Wang, and B. Webster
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "reptheory" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
  Representation theory deals with representations of algebraic and associated finite groups, associative and Lie algebras, and connections with algebraic geometry and mathematical physics. Topics include representations of reductive algebraic groups in positive characteristic with applications to finite groups of Lie type, quantum groups and Hecke algebras, quasi-hereditary algebras and vertex algebras. This work used methods from the theory of algebraic groups and algebraic geometry, Lie algebras, and homological algebra.
 
@@ -89,9 +89,8 @@ MATH 7600 Homological Algebra, MATH 8851 Group Theory, MATH 8852 Representation 
 
 <h3>1.4 Commutative Algebra</h3>
 
-
-<strong>Faculty</strong>
-C. Huneke
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "commutative" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
  Commutative algebra studies the space of solutions of polynomial and power series equations in many variables, often by creating a &quot;generic&quot; solution space, and investigating the properties of this space, and its specializations and deformations.
 
@@ -100,26 +99,25 @@ C. Huneke
  One of the most important techniques in modern commutative algebra is that of reduction to characteristic <em>p</em>, and the study and classification of singularities through invariants coming from this reduction.
 
 
-
-#### Recommended Advanced Courses 
+#### Recommended Advanced Courses
 
 MATH 7600, Homological Algebra; MATH 8600, Commutative Algebra; and MATH 8620, Algebraic Geometry.
 
 <h3>1.5 Algebraic Geometry</h3>
 
- <strong>Faculty</strong>
-J. Morse, A. Obus, B. Webster
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "algeom" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
 ---
 
 <h2>2 Graduate Program in Analysis</h2>
 
 
-<strong>Faculty</strong>
-A. Abdesselam, F. Di Plinio, Y. Do, J. Foldes, C. Gromoll, Z. Grujic, I. Herbst, J. Imbrie, T. Melcher, L. Petrov, D. Ramirez, and D. Sherman
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "analysis" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
-Graduate research in analysis is organized into the following areas: 
-- Differential Equations and Related Applied Mathematics 
+Graduate research in analysis is organized into the following areas:
+- Differential Equations and Related Applied Mathematics
 - Mathematical Physics
 - Operator Theory, Operator Algebras, and Function Theory
 - Probability and Related Applied Mathematics
@@ -160,15 +158,10 @@ Students in analysis in the second year and beyond are expected to participate i
 
 Also in the second year, students take the Second-Year Proficiency Exam, which, in analysis, consists of a conversation with a panel of faculty members on the material from two or three second-year analysis courses, and and on the bibliographical research done by the student for their seminar presentation.
 
-
-
-
-
 <h3>2.2 Differential Equations and Related Applied Mathematics</h3>
 
-
-<strong>Faculty</strong>
-F. Di Plinio, J. Foldes, and&nbsp;Z. Grujic
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "diffeq" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
  This area focuses on the qualitative study of solutions of differential equations: ordinary differential equations (ODE&#39;s) as well as partial differential equations (PDE&#39;s), both linear and nonlinear. Particular emphasis is placed on equations arising in mathematical physics and related areas of applied mathematics. Topics of study include fluid dynamics, linear and nonlinear elasticity and wave propagation, harmonic analysis, dynamical systems, and control theory. The mathematical methods used draw from real and complex analysis, functional analysis, harmonic analysis, ordinary and partial differential equations, basic differential geometry, and probability.
 
@@ -189,8 +182,8 @@ MATH 726 (Ordinary Differential Equations II) and MATH 826 (Partial Differential
 <h3>2.3 Mathematical Physics</h3>
 
 
-<strong>Faculty</strong>
-A. Abdesselam, Y. Do, I. Herbst, J. Imbrie, and L. Petrov
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "math_physics" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
  Our research in mathematical physics is concerned with the spectral and scattering theory for Schroedinger operators in quantum mechanics, equilibrium and non-equilibrium statistical mechanics, and topics in classical mechanics. The mathematical methods needed include: real analysis--measure theory and integration; functional analysis--for example, operators in Hilbert spaces; Fourier analysis; partial differential equations; and some basic probability theory.
 
@@ -210,9 +203,8 @@ MATH 8250 (Partial Differential Equations), MATH 7360 (Probability), MATH 8450 (
 
 <h3>2.4 Operator Theory, Function Theory, and Operator Algebras</h3>
 
-
-<strong>Faculty</strong>
-D. Sherman
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "operators" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
  Our research on Hilbert space operators draws broadly from functional analysis and has two main (interrelated) strands. One is rooted in complex function theory and concerns composition, Toeplitz, and other operators on spaces of analytic functions. The other studies algebraic structures of operators: von Neumann algebras, C*-algebras, operator spaces, and noncommutative function spaces.
 
@@ -232,9 +224,8 @@ MATH 7250 (Ordinary Differential Equations), MATH 7360 (Probability Theory), MAT
 
 <h3>2.5 Probability and Related Applied Mathematics</h3>
 
-
-<strong>Faculty</strong>
-Y. Do, C. Gromoll, T. Melcher, and L. Petrov
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "probability" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
  Probability is the mathematical theory of random events and random variables. Areas of particular interest to faculty include central limit theorems, Malliavin calculus, stochastic differential equations, Markov and L&egrave;vy processes, stochastic networks, measure-valued processes, and applications to operations research and mathematical biology.
 
@@ -250,10 +241,10 @@ MATH 8370 (Topics in Probability), MATH 7320 (Real Analysis II), MATH 7420 (Func
 
 <h2>3&nbsp;Graduate Program in Geometry and Topology</h2>
 
-<strong>Faculty</strong>
-J. Bergner, T. Koberda,&nbsp;V. Krushkal, N. Kuhn, S. Maloni, T. Mark, and B. Webster
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "geometry" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
-Graduate research in topology is organized into the following areas: 
+Graduate research in topology is organized into the following areas:
 - Algebraic Topology
 - Low-Dimensional Topology and Geometry
 
@@ -305,8 +296,8 @@ In the second year, students take the Second-Year Proficiency Exam, which, in to
 <h3>3.2 Algebraic Topology</h3>
 
 
-<strong>Faculty</strong>
-J. Bergner and N. Kuhn
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "alg_top" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
  The subject of algebraic topology is the interplay between topology and algebra. One associates algebraic objects, e.g., groups and rings, with topological spaces in a &#39;natural&#39; way, and investigates how the algebraic invariants reflect the topological structure of the spaces. Research in this area requires a good understanding of both topology and algebra. Areas of particular interest to faculty include homotopical algebra and homotopy as organized by the calculus of functors, group cohomology and its connections to representation theory and algebraic <em>K</em>-theory, and the study of complex oriented cohomology theories. There are deep connections with many parts of algebra, including algebraic geometry and number theory, and mathematical physics.
 
@@ -323,8 +314,8 @@ MATH 7840 Homotopy Theory, MATH 8800 Generalized Cohomology, MATH 7600 Homologic
 <h3>3.3&nbsp;Low-Dimensional Topology and Geometry</h3>
 
 
-<strong>Faculty</strong>
-T. Koberda, V. Krushkal, S. Maloni,&nbsp;T. Mark, and B. Webster
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "geom_top" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
  The central subject of geometric topology is the theory of manifolds, their classification, and study of their geometric properties. Research areas represented by the faculty include knot theory, quantum invariants of three-dimensional manifolds, geometric and differential four-dimensional topology, gauge theory, groups acting on manifolds, hyperbolic geometry, and moduli spaces of geometric structures.&nbsp; This area has deep connections with algebraic topology, representation theory, geometric analysis and mathematical physics.
 
@@ -338,8 +329,8 @@ MATH 8750 Topology of manifolds, MATH 8830 Cobordism and <em>K</em>-Theory, MATH
 <h2>4 Graduate Program in the History of Mathematics</h2>
 
 
-<strong>Faculty</strong>
-K. Parshall
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "history" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
  The graduate program in the history of mathematics includes a component in the history of science taken within the Department of History. Students in the program must satisfy all of the requirements for the Ph.D. in Mathematics. In particular, they must complete the coursework in mathematics and perform satisfactorily on General Examinations in two areas before they are permitted to proceed toward the doctorate. Strong reading competency in either French or German is required for admission into the program, with strong reading competency required in the other language by the time dissertation research begins. Depending on a particular student&#39;s interests, other languages may also be required.
 
@@ -381,7 +372,3 @@ For students in this program, the proposal defense replaces the Second-Year Prof
 - provides a detailed sketch of what the dissertation will cover, how it will be organized, and why;
 - situates the proposed work within the broader literature of the history of science and mathematics; and
 - provides a detailed (first approximation) of the dissertation&#39;s bibliography.
-
-
-
-

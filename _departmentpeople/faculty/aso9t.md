@@ -12,6 +12,10 @@ personal_page: http://people.virginia.edu/~aso9t/
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
+grad_general_areas:
+  - algebra
+grad_special_areas:
+  - algeom
 ---
 
 

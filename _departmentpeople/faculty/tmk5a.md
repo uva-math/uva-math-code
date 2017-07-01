@@ -14,4 +14,8 @@ areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 
+grad_general_areas:
+  - geometry
+grad_special_areas:
+  - geom_top
 ---

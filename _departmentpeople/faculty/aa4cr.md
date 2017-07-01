@@ -12,5 +12,8 @@ personal_page: http://people.virginia.edu/~aa4cr/
 
 areas:
   - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
-
+grad_general_areas:
+  - analysis
+grad_special_areas:
+  - math_physics
 ---
