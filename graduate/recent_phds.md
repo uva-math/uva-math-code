@@ -11,6 +11,35 @@ nav_weight: 20
 
 ## Spring and Summer 2017
 
+- **Peter Bonventre**<br>
+Posdoctoral Appointment, University of Kentucky <br>
+*Comparison of models for equivariant operads*<br>
+(Advisor: Michael Hill)
+
+- **Katelynn Kochalski**<br>
+Tenure-Track Job, SUNY Cortland <br>
+*Fluid limits and the batched processor sharing model*<br>
+(Advisor: Christian Gromoll)
+ 
+- **Bo Wang**<br>
+Quantitative Research Analyst, Susquehanna International Group, Philadelphia <br>
+*A generalization of martingale theory to self-averaging processes*<br>
+(Advisor: Christian Gromoll)
+
+- **Michael Willis**<br>
+Posdoctoral Appointment, UCLA <br>
+*Stable Limits of the Khovanov Homology and L-S-K Spectra for Infinite Braids*<br>
+(Advisor:Slava Krushkal)
+
+- **Xiang Wan**<br>
+*Global Existence and Exponential Stability for a Nonlinear Thermoelastic Kirchhoff-Love Plate System*<br>
+(Advisor:Irena Lasiecka)
+
+- **Anthony Mak**<br>
+Posdoctoral Appointment, UCLA <br>
+*Towards an Alternative Notion of General Type Symplectic 4-Manifolds*<br>
+(Advisor:Thomas Mark)
+
 ## May 2016
 
 - **Scott Atkinson**<br>
