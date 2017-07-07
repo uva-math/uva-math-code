@@ -32,7 +32,7 @@ Passing grades on two General Examinations, chosen from Algebra, Analysis, and T
 <p>Current syllabi for the Algebra, Analysis, and Topology General Examinations:</p>
 
 <ul>
-	<li><img alt="PDF document icon" class="icon" src="http://artsandsciences.virginia.edu/images/icons/file_types/pdf.gif" /> <a href="/sites/math.virginia.edu/files/Syllabus%20for%20Algebra%20General%20Exam.pdf">Algebra General Examination Syllabus in PDF</a> (.pdf, 19KB)</li>
+	<li>"[Syllabus for Algebra General Exam]({{ site.url }/graduate/docs/Syllabus for Algebra General Exam 1.pdf)</li>
 	<li><img alt="PDF document icon" class="icon" src="http://artsandsciences.virginia.edu/images/icons/file_types/pdf.gif" /> <a href="/sites/math.virginia.edu/files/Syllabus%20for%20Analysis%20General%20Exam.pdf">Analysis General Examination Syllabus in PDF</a> (.pdf, 24KB)</li>
 	<li><img alt="PDF document icon" class="icon" src="http://artsandsciences.virginia.edu/images/icons/file_types/pdf.gif" /> <a href="/sites/math.virginia.edu/files/Syllabus%20for%20Topology%20General%20Exam_0.pdf">Topology General Examination Syllabus in PDF</a> (.pdf, 32KB)</li>
 </ul>
