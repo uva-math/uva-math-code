@@ -32,9 +32,9 @@ Passing grades on two General Examinations, chosen from Algebra, Analysis, and T
 <p>Current syllabi for the Algebra, Analysis, and Topology General Examinations:</p>
 
 <ul>
-	<li>"[Syllabus for Algebra General Exam]({{ site.url }/graduate/docs/Syllabus for Algebra General Exam 1.pdf)</li>
-	<li>"[Syllabus for Analysis General Exam]({{ site.url }/graduate/docs/Syllabus for Analysis General Exam 2.pdf)</li>
-	<li>[Syllabus for Topology General Exam]({{ site.url }graduate/docs/Syllabus for Topology General Exam 3.pdf)</li>
+	<li>"[Syllabus for Algebra General Exam]({{ site.url }}/graduate/docs/Syllabus for Algebra General Exam 1.pdf)</li>
+	<li>"[Syllabus for Analysis General Exam]({{ site.url }}/graduate/docs/Syllabus for Analysis General Exam 2.pdf)</li>
+	<li>[Syllabus for Topology General Exam]({{ site.url }}graduate/docs/Syllabus for Topology General Exam 3.pdf)</li>
 </ul>
 
 <p>&nbsp;</p>
