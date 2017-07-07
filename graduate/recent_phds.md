@@ -29,16 +29,16 @@ Quantitative Research Analyst, Susquehanna International Group, Philadelphia <br
 - **Michael Willis**<br>
 Posdoctoral Appointment, UCLA <br>
 *Stable Limits of the Khovanov Homology and L-S-K Spectra for Infinite Braids*<br>
-(Advisor:Slava Krushkal)
+(Advisor: Slava Krushkal)
 
 - **Xiang Wan**<br>
 *Global Existence and Exponential Stability for a Nonlinear Thermoelastic Kirchhoff-Love Plate System*<br>
-(Advisor:Irena Lasiecka)
+(Advisor: Irena Lasiecka)
 
 - **Anthony Mak**<br>
 Posdoctoral Appointment, UCLA <br>
 *Towards an Alternative Notion of General Type Symplectic 4-Manifolds*<br>
-(Advisor:Thomas Mark)
+(Advisor: Thomas Mark)
 
 ## May 2016
 
