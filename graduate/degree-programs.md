@@ -33,7 +33,7 @@ Passing grades on two General Examinations, chosen from Algebra, Analysis, and T
 
 - [Syllabus for Algebra General Exam]({{ site.url }}/graduate/docs/Syllabus for Algebra General Exam 1.pdf)
 - [Syllabus for Analysis General Exam]({{ site.url }}/graduate/docs/Syllabus for Analysis General Exam 2.pdf)
-- [Syllabus for Topology General Exam]({{ site.url }}graduate/docs/Syllabus for Topology General Exam 3.pdf)
+- [Syllabus for Topology General Exam]({{ site.url }}/graduate/docs/Syllabus for Topology General Exam 3.pdf)
 
 <p><em>Second-Year Proficiency Examination:</em><br />
 A passing evaluation on an oral examination covering material from two or three selected second-year courses. Its purpose is to gauge the student&#39;s readiness to begin carrying out research in the student&#39;s chosen area, and the exact content is determined by faculty in consultation with the student. The exam is normally taken in May of the second year. If problems with the student&#39;s readiness are noted, the examining panel will make recommendations on how to fix these and meet again with the student in August.</p>
