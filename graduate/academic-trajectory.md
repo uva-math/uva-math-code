@@ -1,10 +1,10 @@
 ---
 title: Academic trajectory
 layout: g_page
-g_policy: true
+g_info: true
 permalink: /graduate/life/
 nav_parent: Graduate
-nav_weight: 25
+nav_weight: 10
 ---
 
 <h1 class="mb-3">Academic trajectory</h1>
