@@ -4,7 +4,7 @@ title: Sample job opportunity
 date: 2017-04-10 13:30:00
 comments: false
 categories: jobs
-published: true
+published: false
 ---
 
 This is a sample job opportunity post dated 2017-04-10 with category `jobs` but not `news`.
