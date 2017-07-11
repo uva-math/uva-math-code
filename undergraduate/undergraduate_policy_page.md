@@ -16,6 +16,8 @@ nav_weight: 8
 
 <h2 class="mt-2 mb-3">Policies FAQ</h2>
 
+- If you are unsure about which UVa Mathematics course should be your first, consult the [Department's Placement Policy]({{site.url}}/content/math-placement/). If you have a question about mathematics placement, contact your [faculty advisor](http://college.as.virginia.edu/advisors).
+
 - How to set up an online advising schedule:
 [`https://advise.sites.virginia.edu`](https://advise.sites.virginia.edu)
 

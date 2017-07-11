@@ -223,7 +223,7 @@ We give credit in the calculus sequence based upon the College Entrance Examinat
 
 A score of 5, 6, or 7 on the&nbsp; IB HL exam in mathematics yields credit for Math 1310 as well as Math 2000T (as per&nbsp;<a href="http://college.as.virginia.edu/iclec">http://college.as.virginia.edu/iclec</a>.)
 
-<h3>If you are unsure about which UVa Mathematics course should be your first, consult&nbsp;your <a href="http://college.artsandsciences.virginia.edu/faculty_advisors">faculty advisor</a>.</h3>
+<h3>If you are unsure about which UVa Mathematics course should be your first, consult&nbsp;your <a href="http://college.artsandsciences.virginia.edu/advisors">faculty advisor</a>.</h3>
 
 ---
 
@@ -239,10 +239,10 @@ course to enroll in. </p>
 The preceding addition should be inserted immediately above the final sentence on the placement page--above
 
 <h3>If you are unsure about which UVa Mathematics course should be your first, consult your <a
-href="http://college.artsandsciences.virginia.edu/faculty_advisors">faculty advisor</a>.</h3>
+href="http://college.as.virginia.edu/advisors">faculty advisor</a>.</h3>
 
 and immediately below
 
 <p> A score of 5, 6, or 7 on the IB HL exam in mathematics yields
 credit for Math 1310 as well as Math 2000T (as per <a
-href="http://college.as.virginia.edu/iclec">http://college.as.virginia.edu/iclec</a>.)</p>
+href="http://college.as.virginia.edu/iclec">http://college.as.virginia.edu/iclec</a>)</p>
