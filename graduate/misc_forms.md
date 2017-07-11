@@ -6,6 +6,5 @@ permalink: /graduate/forms/
 nav_parent: Graduate
 nav_weight: 200
 ---
-<p>For more about graduate life at the University, see:</p>
 
-['http://gradstudies.virginia.edu/gradguide'](http://gradstudies.virginia.edu/gradguide)
+- For more about graduate life at the University, see: [`http://gradstudies.virginia.edu/gradguide`](http://gradstudies.virginia.edu/gradguide)
