@@ -6,11 +6,14 @@ permalink: /graduate/life/
 nav_parent: Graduate
 nav_weight: 25
 ---
-<p>BEGINNING GRADUATE STUDENTS are advised by the Graduate Advisor. Usually in the second year students acquire a major professor who does all subsequent advising. The responsibility rests with the student to contact a prospective major professor. The advisor approves course selections, monitors progress, and generally oversees the student&#39;s program of study. Satisfactory progress is usually measured by a grade of at least B+ in all courses.</p>
+
+<h1 class="mb-3">Academic trajectory</h1>
+
+<p>Beginning graduate students are advised by the Graduate Advisor. Usually in the second year students acquire a major professor who does all subsequent advising. The responsibility rests with the student to contact a prospective major professor. The advisor approves course selections, monitors progress, and generally oversees the student&#39;s program of study. Satisfactory progress is usually measured by a grade of at least B+ in all courses.</p>
 
 <p>The following describes a core program commonly taken by prospective M.S. or Ph.D. students in mathematics during the first year:</p>
 
-<h3>Fall Semester</h3>
+### Fall Semester
 
 <p><em>MATH 7820: Differential Topology (recommended) or MATH 5770: General Topology</em><br />
 Topological spaces and continuous functions; product and quotient topologies; compactness and connectedness; separation and metrization.</p>
@@ -18,10 +21,10 @@ Topological spaces and continuous functions; product and quotient topologies; co
 <p><em>MATH 7340: Complex Analysis I</em><br />
 Fundamental theorems of analytic function theory.</p>
 
-<p><em>MATH 7751: Algebra I</em><br />
+_MATH 7751: Algebra I_<br>
 Detailed study of groups, rings, fields, modules, and multilinear algebra.</p>
 
-<p>MATH 7000: Seminar on College Teaching<br />
+_MATH 7000: Seminar on College Teaching_<br>
 Discussion of issues related to the practice of teaching, pedagogical concerns in college level mathematics, and aspects of the responsibilities of a professional mathematician.</p>
 
 <h3>Spring Semester</h3>
@@ -35,7 +38,7 @@ Further topics in groups, rings, fields, and multilinear algebra.</p>
 <p><em>MATH 7800: Algebraic Topology I</em><br />
 The fundamental group and covering spaces, Van Kampen theorem, and applications to group theory. Simplicial, cellular, and singular homology; Eilenberg-Steenrod axioms; categories and functors.</p>
 
-<p>MATH 7010: Seminar on Research in Mathematics<br />
+_MATH 7010: Seminar on Research in Mathematics_<br>
 This seminar discusses the issues related to research in Mathematics.</p>
 
 <p>Students with advanced preparation or specialized interests may, with permission of the graduate advisor, construct a suitably modified program. Students needing additional preparation are advised to take other courses, such as a 5000-level analysis or algebra sequence, before taking the 7000-level courses:</p>
@@ -52,10 +55,11 @@ This course includes a systematic review of the material usually considered in M
 <p><em>MATH 5652: Introduction to Abstract Algebra</em><br />
 Focuses on structural properties of basic algebraic systems such as groups, rings and fields. A special emphasis is made on polynomials in one and several variables, including irreducible polynomials, unique factorization and symmetric polynomials. Time permitting, such topics as group representations or algebras over a field may be included.</p>
 
-<p>In the second year and beyond, students choose from more specialized courses. Ph.D. students past the third year are mainly involved in seminars and independent research. In seminars, students have the opportunity to lecture on published work or their own research, gaining experience in exposition of advanced mathematical topics. For descriptions of the remaining graduate courses, see the Graduate School&#39;s catalogue.<br />
+In the second year and beyond, students choose from more specialized courses. Ph.D. students past the third year are mainly involved in seminars and independent research. In seminars, students have the opportunity to lecture on published work or their own research, gaining experience in exposition of advanced mathematical topics. For descriptions of the remaining graduate courses, see the Graduate School&#39;s catalogue.<br />
 <br />
 <br />
-Our standard Ph.D. program for a typical student is roughly as follows:</p>
+
+**Our standard Ph.D. program for a typical student is roughly as follows:**
 
 <p><em>First academic year:</em> While supported by a teaching assistantship (e.g., running two hours per week of discussion sections of calculus), students take core courses in algebra, analysis, and topology, providing the foundation for all further graduate work.</p>
 

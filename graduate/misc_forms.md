@@ -7,4 +7,4 @@ nav_parent: Graduate
 nav_weight: 200
 ---
 
-- For more about graduate life at the University, see: [`http://gradstudies.virginia.edu/gradguide`](http://gradstudies.virginia.edu/gradguide)
+- For more about graduate life at the University, see [`http://gradstudies.virginia.edu/gradguide`](http://gradstudies.virginia.edu/gradguide)
