@@ -33,7 +33,7 @@ up to date. This brings an advantage of uniform style of all official pages, and
 
 Surely one can think of more examples and reasons why multiple people should edit the content on the website.
 Below we discuss several ways one can interact with the website. All of them (except the number zero one)
-require signing up at [GitHub](https://www.github.com) but this is quite simple.
+require signing up at [GitHub](https://www.github.com)  - but the process is very simple and you need to only do this once.
 
 ---
 
