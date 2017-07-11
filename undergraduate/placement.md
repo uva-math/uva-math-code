@@ -7,7 +7,7 @@ nav_parent: Undergraduate
 nav_weight: 5
 ---
 
-<h1 class="mb-3">Placement in Math courses</h1>
+<h1 class="mb-4">Placement in Math courses</h1>
 
 
 <p>Students planning to major in the social sciences, arts, or humanities, and who wish to take a mathematics course but omit the study of calculus, may choose from MATH 1110 (Elementary Probability Theory), or MATH 1140 (Financial Mathematics). Students may not take all 12 credits needed to satisfy the math/science requirement from the Department of Mathematics and the Department of Statistics. For purposes of the requirement, the courses in these two departments are treated as coming from a single department.</p>
@@ -139,9 +139,7 @@ nav_weight: 5
 	</tbody>
 </table>
 
-<h3>&nbsp;</h3>
-
-<h3>Advanced Placement</h3>
+<h3 class="mt-4 mb-2">Advanced Placement</h3>
 
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
 
@@ -221,13 +219,11 @@ We give credit in the calculus sequence based upon the College Entrance Examinat
 	</tbody>
 </table>
 
-A score of 5, 6, or 7 on the&nbsp; IB HL exam in mathematics yields credit for Math 1310 as well as Math 2000T (as per&nbsp;<a href="http://college.as.virginia.edu/iclec">http://college.as.virginia.edu/iclec</a>.)
+<p> A score of 5, 6, or 7 on the IB HL exam in mathematics yields
+credit for Math 1310 as well as Math 2000T (as per <a
+href="http://college.as.virginia.edu/iclec">http://college.as.virginia.edu/iclec</a>)</p>
 
-<h3>If you are unsure about which UVa Mathematics course should be your first, consult&nbsp;your <a href="http://college.artsandsciences.virginia.edu/advisors">faculty advisor</a>.</h3>
-
----
-
-<h2> Calculus Placement (Without Credit) </h2>
+<h3 class="mt-2 mb-2"> Calculus Placement (Without Credit) </h3>
 <p> If you believe your previous experience in calculus has prepared
 you to begin your work in calculus at UVA at an advanced level,
 but you do not have credit for the prerequisite lower-level course
@@ -236,13 +232,7 @@ href="http://www.people.virginia.edu/%7Epsb7p/UVA_Calc_Placement_Exam.html"> A
 Calculus-Placement Exams</a> can help you decide which calculus
 course to enroll in. </p>
 
-The preceding addition should be inserted immediately above the final sentence on the placement page--above
 
-<h3>If you are unsure about which UVa Mathematics course should be your first, consult your <a
-href="http://college.as.virginia.edu/advisors">faculty advisor</a>.</h3>
+---
 
-and immediately below
-
-<p> A score of 5, 6, or 7 on the IB HL exam in mathematics yields
-credit for Math 1310 as well as Math 2000T (as per <a
-href="http://college.as.virginia.edu/iclec">http://college.as.virginia.edu/iclec</a>)</p>
+<h3>If you are unsure about which UVa Mathematics course should be your first, consult&nbsp;your <a href="http://college.artsandsciences.virginia.edu/advisors">faculty advisor</a>.</h3>
