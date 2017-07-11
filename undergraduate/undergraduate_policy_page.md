@@ -81,6 +81,6 @@ discipline they are teaching.
 
 - [Undergraduates taking graduate courses]({{site.url}}/undergraduate/docs/Undergraduates Taking Graduate Courses.pdf)
 
-- [Reasons one might not get into PBK](undergraduate/docs/Reasons one did not get into PBK.pdf)
+- [Reasons one might not get into PBK]({{site.url}}/undergraduate/docs/Reasons one did not get into PBK.pdf)
 
 - [International Baccalaureate]({{site.url}}/undergraduate/docs/International Baccalaureate.pdf)
