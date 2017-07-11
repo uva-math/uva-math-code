@@ -7,6 +7,8 @@ multi-day-event: true
 comments: false
 categories: news events conferences
 published: true
+image: __SITE_URL__/img/people/Kuhn.jpg
+image-alt: Nick Kuhn
 ---
 
 [Mid-Atlantic Topology Conference 2015](http://pi.math.virginia.edu/topology/Conference2015/index.html), April 25 - 26, 2015.
