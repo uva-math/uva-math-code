@@ -16,7 +16,7 @@ more-text: Abstract
 nav_parent: IMS
 ---
 
-<h3 class="mt-3 mb-4">James Arthur (University of Toronto)</h3>
+<h5 class="mt-3 mb-4">James Arthur (University of Toronto)</h5>
 
 - Lecture 1: L-functions and Number Theory
 - Lecture 2: The Trace Formula and Automorphic Forms

@@ -16,7 +16,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<h3 class="mt-3 mb-4">Vaughan Jones (Vanderbilt University)</h3>
+<h5 class="mt-3 mb-4">Vaughan Jones (Vanderbilt University)</h5>
 
 - Lecture 1: Knots and Groups
 - Lecture 2: Lecture 2: Von Neumann Algebra and Physics

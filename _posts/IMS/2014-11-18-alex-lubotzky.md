@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Alex Lubotzky - Virginia Mathematics Lectures - November 18-20, 2014
-date: 2014-11-18 13:30:00
+date: 2014-10-06 13:30:00
 event-date: 2014-11-18 13:30:00
 multi-day-event: true
 permalink: /ims/lectures/alex-lubotzky/
@@ -16,9 +16,9 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<h3 class="mt-3 mb-4">Alex Lubotzky (Hebrew University of Jerusalem)</h3>
+<h5 class="mt-3 mb-4">Alex Lubotzky (Hebrew University of Jerusalem)</h5>
 
-### Expanders: From One-Dimensional to Multi-Dimensional
+##### Expanders: From One-Dimensional to Multi-Dimensional
 
 - Lecture 1: Expander Graphs and Geometric/Topological Expanders
 - Lecture 2: From Ramanujan Graphs to Ramanujan Complexes

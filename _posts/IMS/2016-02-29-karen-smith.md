@@ -16,9 +16,9 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<h3 class="mt-3 mb-4">Karen Smith (University of Michigan)</h3>
+<h5 class="mt-3 mb-4">Karen Smith (University of Michigan)</h5>
 
-### Algebra, Geometry and Analysis over Finite Fields
+##### Algebra, Geometry and Analysis over Finite Fields
 
 <br>
 
