@@ -36,13 +36,13 @@ The University is located in Charlottesville near the foothills of the Blue Ridg
 
 # History
 
-### [Jefferson and Mathematics](http://pi.math.virginia.edu/Jefferson/jefferson.htm)
+### [Jefferson and Mathematics]({{site.url}}/history/Jefferson/jefferson.htm)
 ###### A lecture given by Professor John Fauvel at the University of Virginia on April 15, 1999.
 
 Professor Fauvel, who died in 2001, was a Senior Lecturer in Mathematics at the Open University in Milton Keynes, England. A former president of the British Society for the History of Mathematics, he was a noted authority on the history of mathematics.
 
 
-### [Professors (1825 through 1900)](http://pi.math.virginia.edu/History/1800s.htm)
+### [Professors (1825 through 1900)]({{site.url}}/history/History/1800s.htm)
 ###### From the History of Mathematics Seminar 1998-1999: Sloan E. Despeaux, Laura Martini, Karen Hunger Parshall, and Adrian C. Rice.
 
 From the beginning, Thomas Jefferson planned for his new University of Virginia to have a School of Mathematics. Thus, Thomas Key, the first Professor of Mathematics, was one of the faculty's original members at its opening in 1825. The mathematics chair was then occupied continuously until October of 1840 when the second incumbent, Charles Bonnycastle, died in mid term. By November of 1841, James Joseph Sylvester had arrived to take up the mathematical duties, but he vacated the chair in March of 1842 and was replaced by Edward Courtenay in the fall. Courtenay's death in 1853 resulted in another gap, filled by Alfred Bledsoe in 1854. Although the University was closed during the Civil War, mathematics has been taught here without interruption since Charles Venable joined the faculty in 1865.
