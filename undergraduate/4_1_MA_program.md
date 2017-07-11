@@ -24,3 +24,5 @@ If you think you may be interested in the program, we suggest you meet with your
 We also suggest you review the requirements for the master&rsquo;s degree, which can be found here: <a href="http://www.math.virginia.edu/graduate/requirements"><code class="highlighter-rouge">http://www.math.virginia.edu/graduate/requirements</code></a>
 
 Finally, note that ONLY 6 credits of graduate work that you took while officially an undergraduate can count toward the master&rsquo;s. In some cases, this might mean that to make the program work efficiently for you, you would need to graduate (from the bachelor&rsquo;s program) early.</p>
+
+[Participation in final exercises by BA/MT]({{site.url}}/undergraduate/docs/Participation in Final Exercises by BA.pdf)

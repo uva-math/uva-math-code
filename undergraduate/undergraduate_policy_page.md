@@ -29,18 +29,18 @@ To compute the MATH GPA, use the nine MATH courses that SIS shows were required 
 major.
 
 - Can students in the 5 year BA/MT program participate in their 4th-year graduation?
-Yes, complete the Participation in Final Exercises by BA Form.
+Yes, complete the [Participation in Final Exercises by BA Form]({{site.url}}/undergraduate/docs/Participation in Final Exercises by BA.pdf).
 
 - How to check on UVA courses?
 [`http://rabi.phys.virginia.edu/mySIS/CS2/index.php`](http://rabi.phys.virginia.edu/mySIS/CS2/index.php)
 
 - What courses can I transfer to UVA?
-[`http://ascs8.eservices.virginia.edu/asEquivs`](http://rabi.phys.virginia.edu/mySIS/CS2/index.php)
+[`http://ascs8.eservices.virginia.edu/asEquivs`](http://ascs8.eservices.virginia.edu/asEquivs)
 
 - Can I double count some courses?
-Yes. The current policy is given in the Undergraduate Record: “Up to two coursesthat are being
+Yes. The current policy is given in the Undergraduate Record: “Up to two courses that are being
 counted for another College major can also be counted for the major in mathematics. Three
-courses may be allowed if the other major is interdisciplinary.”
+courses may be allowed if the other major is interdisciplinary.” See also [Double counting for SEAS]({{site.url}}/content/double-counting-seas/)
 
 - Can I get a different room for my class?
 Email: <a href="mailto:rooms@virginia.edu">rooms@virginia.edu</a>
@@ -74,3 +74,7 @@ discipline they are teaching.
 - [Defer Major]({{ site.url }}/undergraduate/docs/Defer Major.pdf)
 
 - [Delete Major or Minor]({{ site.url }}/undergraduate/docs/Delete Major or Minor.pdf)
+
+- [Declaration of math minor form]({{ site.url }}/undergraduate/docs/Math Minor Declaration Form_1.pdf)
+
+- [Declaration of math major form]({{ site.url }}/undergraduate/docs/Declaration of Major form_0.pdf)
