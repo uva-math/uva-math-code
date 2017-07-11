@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Recent Mathematical Advances in Classical, Quantum, and Statistical Mechanics
+title: Conference on the Occasion of the Retirement of Larry Thomas
 date: 2013-03-08 13:30:00
 event-date: 2013-03-08 12:00:00
 multi-day-event: true
