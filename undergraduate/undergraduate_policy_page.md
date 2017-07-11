@@ -78,3 +78,5 @@ discipline they are teaching.
 - [Declaration of math minor form]({{ site.url }}/undergraduate/docs/Math Minor Declaration Form_1.pdf)
 
 - [Declaration of math major form]({{ site.url }}/undergraduate/docs/Declaration of Major form_0.pdf)
+
+- [Undergraduates taking graduate courses]({{site.url}}/undergraduate/docs/Undergraduates Taking Graduate Courses.pdf)

@@ -11,4 +11,7 @@ nav_weight: 200
 
 
 - [Credit Hour Overload]({{ site.url }}/undergraduate/docs/Credit Hour Overload.pdf)
+
 - [Exam Postponement Form]({{ site.url }}/undergraduate/docs/Exam Postponement Form.pdf)
+
+- [Submit new course form]({{ site.url }}/undergraduate/docs/Submit new course to CEPC.pdf)
