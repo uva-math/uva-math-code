@@ -33,6 +33,6 @@ nav_weight: 7
 
 <p><strong>Systems Engineering: </strong>three courses: APMA 2130 - ODE, APMA 3080 - Linear algebra, and APMA 3100 - Probability. APMA 3120, SYS 3021, and SYS 3060 are approved Math electives but should not be double counted since the number of core courses counted would then exceed three.</p>
 
----
+<!-- ---
 
-[Rules for double counting Engineering courses for SEAS students who are also majoring in Math in PDF]({{site.url}}/undergraduate/docs/Double counting for SEAS.pdf)
+[Rules for double counting Engineering courses for SEAS students who are also majoring in Math in PDF]({{site.url}}/undergraduate/docs/Double counting for SEAS.pdf) -->

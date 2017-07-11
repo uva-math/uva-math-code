@@ -52,6 +52,6 @@ The Distinguished Major Program (DMP) is a special option within the math major 
 
  While the Distinguished Major Thesis is a significant investment of time and effort, it has several important benefits for a student in addition to qualifying him/her for the high/highest honors. First and foremost, it creates a unique opportunity for a student to work one-on-one with a faculty advisor for a period of about one calendar year on a topic in advanced mathematics of mutual interest. This work will help to develop the student&rsquo;s analytical, research and expository skills, and can be expected to boost his/her application for graduate admission as well as for jobs in industry. It can also be a basis for the student&rsquo;s presentations at various venues and can sometimes lead to publications.
 
----
+<!-- ---
 
-[Distinguished Majors Program description in PDF]({{ site.url }}/undergraduate/docs/Distinguished Majors Program.pdf)
+[Distinguished Majors Program description in PDF]({{ site.url }}/undergraduate/docs/Distinguished Majors Program.pdf) -->
