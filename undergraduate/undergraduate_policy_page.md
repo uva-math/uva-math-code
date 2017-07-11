@@ -80,3 +80,7 @@ discipline they are teaching.
 - [Declaration of math major form]({{ site.url }}/undergraduate/docs/Declaration of Major form_0.pdf)
 
 - [Undergraduates taking graduate courses]({{site.url}}/undergraduate/docs/Undergraduates Taking Graduate Courses.pdf)
+
+- [Reasons one might not get into PBK](undergraduate/docs/Reasons one did not get into PBK.pdf)
+
+- [International Baccalaureate]({{site.url}}/undergraduate/docs/International Baccalaureate.pdf)
