@@ -9,6 +9,8 @@ nav_weight: 5
 
 <h1 class="mb-3">Financial Support</h1>
 
+---
+
 ## Stipends and support
 
 <p>There is no separate application form for financial aid; all applicants for admission to the Ph.D. program are automatically considered.</p>
@@ -22,6 +24,8 @@ nav_weight: 5
 <p>Additional support in the summer is usually available for students who continue to demonstrate progress toward their degree during the summer.</p>
 
 <p>Currently, significant funding for our graduate program is provided by a U.S. Department of Education GAANN grant.&nbsp; (GAANN stands for Graduate Assistance in Area of National Need). This grant includes funding for summer programs and dissertation-year fellowships, and supports transitional summer classes for incoming graduate students.</p>
+
+---
 
 ## Jefferson Scholars Foundation Graduate Fellowships
 
