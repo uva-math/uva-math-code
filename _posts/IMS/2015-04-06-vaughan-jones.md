@@ -32,7 +32,7 @@ nav_parent: IMS
 
 #### Lecture 2: Von Neumann Algebra and Physics
 
-*Abstract:*  The states of a quantum system are given by vectors in a Hilbert space with inner product $$\langle \xi,\eta \rangle$$. Observables are self-adjoint operators on that Hilbert space. The fundamental formula connecting the two is that if $$a$$ is an operator/observable and $$\xi$$ is a unit vector/state then $$\langle a\xi,\eta \rangle$$ is a real number giving the average value of repeated measurements of the observable $$a$$ if the system is prepared each time in the state $$\xi$$. Von Neumann introduced the algebras that bear his name in large part to help understand the mathematical structure of quantum theory. His prophetic ideas have been very fruitful in low dimensional quantum field theory and are intimately related to the knot polynomials of the first lecture.
+*Abstract:*  The states of a quantum system are given by vectors in a Hilbert space with inner product $$\langle \xi,\eta \rangle$$. Observables are self-adjoint operators on that Hilbert space. The fundamental formula connecting the two is that if $$a$$ is an operator/observable and $$\xi$$ is a unit vector/state then $$\langle a\xi,\xi \rangle$$ is a real number giving the average value of repeated measurements of the observable $$a$$ if the system is prepared each time in the state $$\xi$$. Von Neumann introduced the algebras that bear his name in large part to help understand the mathematical structure of quantum theory. His prophetic ideas have been very fruitful in low dimensional quantum field theory and are intimately related to the knot polynomials of the first lecture.
 
 
 #### Lecture 3: Do all Subfactors arise in Conformal Field Theory?
