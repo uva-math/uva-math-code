@@ -66,7 +66,11 @@ discipline they are teaching.
 [`http://www.virginia.edu/registrar/courseactionform.html`](http://www.virginia.edu/registrar/courseactionform.html)
 
 - [If I need precalculus...]({{ site.url }}/undergraduate/docs/If I need precalculus....pdf)
+
 - [If I took the wrong calculus course....]({{ site.url }}/undergraduate/docs/If I took the wrong calculus course....pdf)
+
 - [Repeating a course]({{ site.url }}/undergraduate/docs/Repeating a course.pdf)
+
 - [Defer Major]({{ site.url }}/undergraduate/docs/Defer Major.pdf)
+
 - [Delete Major or Minor]({{ site.url }}/undergraduate/docs/Delete Major or Minor.pdf)
