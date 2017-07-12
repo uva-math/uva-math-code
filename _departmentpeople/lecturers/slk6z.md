@@ -1,5 +1,6 @@
 ---
 UVA_id: slk6z
+published: false
 lastname: Krushkal
 name: Samuel
 general_position: lecturer
