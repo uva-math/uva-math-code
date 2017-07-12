@@ -19,6 +19,10 @@ nav_parent: News&Events
         <h6>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h6>{% endif %}
         {% if post.event-date != null and post.multi-day-event != true %}
         <h6>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h6>{% endif %}
+        {% if post.event-date == null %}
+        <h6>{{ post.date |  date: "%Y/%m/%d" }}</h6>
+        {% endif %}
+
         {{ post.excerpt | markdownify }}
         <p><a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a></p>
       </div>
