@@ -10,7 +10,9 @@ nav_weight: 1
 <h1 class="mb-3">Degree requirements</h1>
 
 - ### [Requirements]({{ site.url }}/undergraduate/docs/Requirements for Obtaining a Major in Mathematics_2.pdf) for Obtaining a Major in Mathematics
+- ### [Declaration of math major form]({{ site.url }}/undergraduate/docs/Declaration of Major form_0.pdf)
 - ### [Requirements]({{ site.url }}/undergraduate/docs/Requirements for declaring a Minor in Mathematics (1) (1) (1)_0.pdf) for Obtaining a Minor in Mathematics
+- ### [Declaration of math minor form]({{ site.url }}/undergraduate/docs/Math Minor Declaration Form_1.pdf)
 
 ---
 

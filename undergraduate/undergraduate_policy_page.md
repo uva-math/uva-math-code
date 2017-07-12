@@ -69,18 +69,6 @@ discipline they are teaching.
 
 - [If I took the wrong calculus course....]({{ site.url }}/undergraduate/docs/If I took the wrong calculus course....pdf)
 
-- [Repeating a course]({{ site.url }}/undergraduate/docs/Repeating a course.pdf)
-
-- [Defer Major]({{ site.url }}/undergraduate/docs/Defer Major.pdf)
-
-- [Delete Major or Minor]({{ site.url }}/undergraduate/docs/Delete Major or Minor.pdf)
-
-- [Declaration of math minor form]({{ site.url }}/undergraduate/docs/Math Minor Declaration Form_1.pdf)
-
-- [Declaration of math major form]({{ site.url }}/undergraduate/docs/Declaration of Major form_0.pdf)
-
 - [Undergraduates taking graduate courses]({{site.url}}/undergraduate/docs/Undergraduates Taking Graduate Courses.pdf)
 
 - [Reasons one might not get into PBK]({{site.url}}/undergraduate/docs/Reasons one did not get into PBK.pdf)
-
-- [International Baccalaureate]({{site.url}}/undergraduate/docs/International Baccalaureate.pdf)

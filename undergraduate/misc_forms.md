@@ -15,3 +15,9 @@ nav_weight: 200
 - [Exam Postponement Form]({{ site.url }}/undergraduate/docs/Exam Postponement Form.pdf)
 
 - [Submit new course form]({{ site.url }}/undergraduate/docs/Submit new course to CEPC.pdf)
+
+- [Repeating a course]({{ site.url }}/undergraduate/docs/Repeating a course.pdf)
+
+- [Defer Major]({{ site.url }}/undergraduate/docs/Defer Major.pdf)
+
+- [Delete Major or Minor]({{ site.url }}/undergraduate/docs/Delete Major or Minor.pdf)
