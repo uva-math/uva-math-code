@@ -29,7 +29,7 @@ See [here]({{site.url}}/doc/ugg/) for details.
 
 4. Dedicated static pages can be created within the website, for example,
 to host tutoring center information, etc. In this case, person(s) in charge would need to keep the information
-up to date. This brings an advantage of uniform style of all official pages, and also version control.
+up to date. This brings an advantage of uniform style of all official pages, and includes version control of source as a bonus.
 
 Surely one can think of more examples and reasons why multiple people should edit the content on the website.
 Below we discuss several ways one can interact with the website. All of them (except the number zero one)
