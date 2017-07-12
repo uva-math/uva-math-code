@@ -1,5 +1,6 @@
 ---
 UVA_id: zb8zr
+published: false
 lastname: Bradshaw
 name: Zachary
 general_position: lecturer
