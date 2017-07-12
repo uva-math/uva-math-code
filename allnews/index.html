@@ -24,6 +24,24 @@ nav_parent: News&Events
       </div>
       <!--/span-->
       {% endfor %}
+
+
+      <div class="col-lg-12 hidden-sm-down">
+        {% if paginator.total_pages > 1 %}
+          <div class="btn-group btn-group mt-4">
+          {% for page in (1..paginator.total_pages) %}
+              {% if page == paginator.page %}
+                <span class="btn btn-secondary h5"><em>{{ page }}</em></span>
+              {% elsif page == 1 %}
+                <a class="btn btn-secondary list-group-item-action h5" href="{{site.url}}/allnews/">{{ page }}</a>
+              {% else %}
+                <a class="btn btn-secondary list-group-item-action h5" href="{{site.url}}/{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+              {% endif %}
+            {% endfor %}
+            </div>
+            {%endif%}
+      </div>
+
     </div>
     <!--/row-->
 
