@@ -1,5 +1,6 @@
 ---
 UVA_id: dht3r
+published: false
 lastname: Thomasey
 name: Doug
 general_position: lecturer
