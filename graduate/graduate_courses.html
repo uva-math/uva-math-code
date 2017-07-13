@@ -8,13 +8,34 @@ nav_nesting: true
 nav_weight: 1000
 ---
 
-<h1 class="mb-3">Graduate courses</h1>
+<h1 class="mb-3">PhD level courses and research seminars</h1>
 
 {% assign sorted_courses = site.data.courses | sort: "number" %}
 
 <div class="my-row-zebra">
 {% for crs in sorted_courses %}
-{% if crs.graduate %}
+{% if crs.graduate and crs.number >= 7000 %}
+  <div class="row" style="padding:10px 0px">
+    <div class="col-12">
+       <div class="mt-1 mb-1"><code class="highlighter-rouge" style="background:inherit; padding:0px">MATH {{crs.number}}</code>&nbsp;&nbsp;&nbsp;<b>{{crs.name}}</b>{% if crs.offered %}<div class="float-right hidden-sm-down">
+         <code class="highlighter-rouge" style="background:inherit; padding:0px">Offered {{crs.offered}}</code>
+       </div><span class="hidden-md-up">
+         &bull; <b>(Offered {{crs.offered}})</b>
+       </span>
+     {% endif %}</div>
+       {{crs.descr}}
+    </div>
+  </div>
+{% endif %}
+{% endfor %}
+</div>
+
+
+<h1 class="mt-3 mb-3">Master level and mathematical education courses</h1>
+
+<div class="my-row-zebra">
+{% for crs in sorted_courses %}
+{% if crs.graduate and crs.number < 7000 %}
   <div class="row" style="padding:10px 0px">
     <div class="col-12">
        <div class="mt-1 mb-1"><code class="highlighter-rouge" style="background:inherit; padding:0px">MATH {{crs.number}}</code>&nbsp;&nbsp;&nbsp;<b>{{crs.name}}</b>{% if crs.offered %}<div class="float-right hidden-sm-down">
