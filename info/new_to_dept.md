@@ -35,7 +35,9 @@ nav_weight: 20
 
 - **Copying Exams:** The Department has a copier/scanner (room `203`) and floor printers (rooms `313`, `118`) for printing. You should be able to print from your office computer to any of these printers. To use the copier, you need to obtain the passcode from Zvezdana Kish (room `214`). There is also a copier in the Library (room `107`); obtain a copy card from Zvezdana Kish (room `214`). Large print jobs may be sent to the Copy Center through Raven James (room `216`).
 
-- **Telephone:** To make a call within the University, dial the last 5 digits of the number (ex. 4-4900). To call outside the University, dial 9 for an outside line. To make long distance calls, please request an FAC number from Zvezdana Kish (room `214`).
+- **Telephone:** To make a call within the University, dial the last 5 digits of the number (ex. 4-4900). To call outside the University, dial 9 for an outside line. To make long distance calls, please request an FAC number from {% include person_info.html UVA_id="zk4g" %}. See information at [`http://its.virginia.edu/telephone/using.html`](http://its.virginia.edu/telephone/using.html). Telephone Counselor for Math is {% include person_info.html UVA_id="aab8b" %}
+ 
+- **Mobile Devices at UVa:** [`http://its.virginia.edu/mobile/`](http://its.virginia.edu/mobile/)
 
 - **Mailboxes:** Everyone has a mailbox in the mailroom (off the Lobby on the main floor).
 
