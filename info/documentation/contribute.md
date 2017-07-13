@@ -104,7 +104,7 @@ at [`https://github.com/uva-math/uva-math-code/pulls`](https://github.com/uva-ma
 ## 3. Full edit access
 
 Faculty members can receive full editing access from the administrators.
-This allows to edit any source file - on the web as in item 2 above;
+This allows to edit any source file, on the web as explained above,
 or you can download a local copy of the source and then push changes to GitHub.
 Upon committing the changes to the GitHub the webpage will be automatically
 updated (this takes about 5 minutes).
