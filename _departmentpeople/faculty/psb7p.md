@@ -2,6 +2,7 @@
 UVA_id: psb7p
 lastname: Bourdon
 name: Paul
+non-tt: true
 general_position: faculty
 position: Lecturer & Director of Lower Division Courses
 office: 225 Kerchof Hall
