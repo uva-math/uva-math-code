@@ -8,7 +8,7 @@ office: 119 Kerchof Hall
 phone: 434-243-1115
 email: kc2ea@virginia.edu
 image:
-personal_page:
+personal_page: http://people.virginia.edu/~kc2ea/
 
 
 ---

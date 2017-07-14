@@ -8,7 +8,7 @@ office: 401 Kerchof Hall
 phone: 434-924-8777
 email: er2eq@virginia.edu
 image:
-personal_page:
+personal_page: http://people.virginia.edu/~er2eq/
 
 
 ---

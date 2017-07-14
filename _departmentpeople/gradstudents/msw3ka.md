@@ -8,7 +8,6 @@ office: 403 Kerchof Hall
 phone: 434-924-3776
 email: msw3ka@virginia.edu
 image:
-personal_page:
-
+personal_page: http://people.virginia.edu/~msw3ka/Home.html
 
 ---

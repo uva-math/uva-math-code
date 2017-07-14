@@ -8,7 +8,7 @@ office: 401 Kerchof Hall
 phone: 434-924-8777
 email: km6hb@virginia.edu
 image:
-personal_page:
+personal_page: http://www.people.virginia.edu/~km6hb/
 
 
 ---
