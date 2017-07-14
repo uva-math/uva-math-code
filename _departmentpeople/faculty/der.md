@@ -3,7 +3,7 @@ UVA_id: der
 lastname: Ramirez
 name: Donald
 general_position: faculty
-position: Professor
+position: Professor Emeritus
 office: 206 Kerchof Hall
 phone: 434-924-4934
 email: der@virginia.edu
