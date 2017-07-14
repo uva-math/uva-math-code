@@ -1,0 +1,3 @@
+User-agent: *
+Clawl-delay: 30
+Allow: /
