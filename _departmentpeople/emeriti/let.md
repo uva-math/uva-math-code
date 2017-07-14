@@ -8,7 +8,7 @@ office: 305 Kerchof Hall
 phone: 434-924-4936
 email: let@virginia.edu
 image: __SITE_URL__/img/people/Thomas.jpg
-personal_page:
+personal_page: http://people.virginia.edu/~let/
 
 areas:
   - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics

@@ -8,7 +8,7 @@ office: 213 Kerchof Hall
 phone: 434-924-4932
 email: tlk8q@virginia.edu
 image: __SITE_URL__/img/people/Kriete.jpg
-personal_page:
+personal_page: http://pi.math.virginia.edu/Faculty/Kriete/
 
 areas:
   - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras

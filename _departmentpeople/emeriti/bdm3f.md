@@ -8,7 +8,9 @@ office: 202 Kerchof Hall
 phone: 434-924-4924
 email: bdm3f@virginia.edu
 image: __SITE_URL__/img/people/MacCluer.jpg
-personal_page:
+personal_page: http://people.virginia.edu/~bdm3f/
 
+areas:
+  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
 
 ---
