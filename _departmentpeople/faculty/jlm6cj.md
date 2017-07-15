@@ -7,7 +7,7 @@ position: Professor
 office: 219 Kerchof Hall
 phone: 434-243-8778
 email: jlm6cj@virginia.edu
-image:
+image: __SITE_URL__/img/people/Morse.jpg
 personal_page:
 grad_general_areas:
   - algebra
