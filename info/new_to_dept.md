@@ -39,6 +39,8 @@ nav_weight: 20
 
 - **Mobile Devices at UVa:** [`http://its.virginia.edu/mobile/`](http://its.virginia.edu/mobile/)
 
+- **Advanced Research Computing Services:** [`http://www.uvacse.virginia.edu/`](http://www.uvacse.virginia.edu/), and in particular [Rivanna Cluster](http://www.uvacse.virginia.edu/rivanna)
+
 - **Mailboxes:** Everyone has a mailbox in the mailroom (off the Lobby on the main floor).
 
 - **Supply Room (220):** The Supply Room has paper, pens, chalk, toner cartridges, and other supplies. There is also a refrigerator, microwave, and FAX machine. You may check out a projector with Raven James {% include person_info.html UVA_id="raj3e" %}.
