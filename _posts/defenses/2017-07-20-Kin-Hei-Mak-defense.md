@@ -8,7 +8,7 @@ categories: news events
 published: true
 ---
 
-You are invited to the thesis defense of Anthony Kin Hei Mak, whose thesis is ``Constraints on basic classes for Lefschetz fibrations''. Details are below:
+You are invited to the thesis defense of Anthony Kin Hei Mak, whose thesis is "Constraints on basic classes for Lefschetz fibrations". Details are below:
 
 - Date: July 20 (Thursday)
 - Time: 9:00
