@@ -4,7 +4,7 @@ layout: static_page_no_right_menu
 permalink: /courses/
 ---
 
-<h1 class="mb-5">Course descriptions &bull; (<a href="{{site.url}}/courses/undergrad/">undergraduate</a>) &bull; (<a href="{{site.url}}/courses/graduate/">graduate</a>)</h1>
+<h1 class="mb-3">Course descriptions &bull; (<a href="{{site.url}}/courses/undergrad/">undergraduate</a>) &bull; (<a href="{{site.url}}/courses/graduate/">graduate</a>)</h1>
 
 This is a list of courses automatically generated from the [Lou's list](http://rabi.phys.virginia.edu/mySIS). Please refer there for details about instructors and current enrollment numbers.
 
