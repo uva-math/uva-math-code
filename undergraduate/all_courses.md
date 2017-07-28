@@ -15,6 +15,13 @@ This is a list of courses automatically generated from the [Lou's list](http://r
 
 <div class="my-row-zebra">
 {% for crs in sorted_courses %}
+{% assign maskedflag = 0 %}
+    {% for maskcrs in site.data.masked_courses %}
+      {% if crs.number == maskcrs.number %}
+        {% assign maskedflag = 1 %}
+      {% endif %}
+    {% endfor %}
+{% if maskedflag == 0 %}
   <div class="row" style="padding:10px 0px">
     <div class="col-12">
        <div class="mt-1 mb-1"><code class="highlighter-rouge" style="background:inherit; padding:0px">MATH {{crs.number}}</code>&nbsp;&nbsp;&nbsp;<b>{{crs.name}}</b>{% if crs.offered %}<div class="float-right hidden-sm-down">
@@ -26,5 +33,6 @@ This is a list of courses automatically generated from the [Lou's list](http://r
        {{crs.descr}}
     </div>
   </div>
+{% endif %}
 {% endfor %}
 </div>
