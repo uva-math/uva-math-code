@@ -270,10 +270,10 @@
   graduate: true
   descr: " Differential and Integral Calculus in Euclidean spaces; implicit and inverse function theorems, differential forms and Stokes' Theorem.    Prerequisite: Calculus III (either MATH 2310 or MATH 2315) and one of MATH 5310 or MATH 5770. "
 
-- name: " Complex Variables with Applications (3.00) "
-  number: 5340
-  graduate: true
-  descr: " Analytic functions, Cauchy formulas, power series, residue theorem, conformal mapping, and Laplace transforms.  Prerequisite: graduate standing. "
+#- name: " Complex Variables with Applications (3.00) "
+#  number: 5340
+#  graduate: true
+#  descr: " Analytic functions, Cauchy formulas, power series, residue theorem, conformal mapping, and Laplace transforms.  Prerequisite: graduate standing. "
 
 - name: " New Course in Mathematics (1.00 - 4.00) "
   number: 5559
@@ -285,10 +285,10 @@
   graduate: true
   descr: " Includes congruences, quadratic reciprocity, Diophantine equations, and number-theoretic functions, among others.  Prerequisite: MATH 3354 or instructor permission. "
 
-- name: " Survey of Algebra (3.00) "
-  number: 5654
-  graduate: true
-  descr: " Surveys groups, rings, and fields, and presents applications to other areas of mathematics, such as geometry and number theory. Explores the rational, real, and complex number systems, and the algebra of polynomials.  Prerequisite: MATH 1320 or equivalent and graduate standing. "
+#- name: " Survey of Algebra (3.00) "
+#  number: 5654
+#  graduate: true
+#  descr: " Surveys groups, rings, and fields, and presents applications to other areas of mathematics, such as geometry and number theory. Explores the rational, real, and complex number systems, and the algebra of polynomials.  Prerequisite: MATH 1320 or equivalent and graduate standing. "
 
 - name: " Introduction to Geometry (3.00) "
   number: 5700
