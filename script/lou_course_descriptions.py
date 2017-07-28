@@ -35,7 +35,7 @@ print ""
 for i in range(1, len(data)):
     if i%2 :
         if data[i][0].replace("MATH ", "", 1) == "4210":
-            print "- name: \"", "Math for Physics (3.00)", "\""
+            print "- name: \"", "Mathematics for Physics (3.00)", "\""
         else :
             print "- name: \"", data[i][1], "\""
         print "  number:", data[i][0].replace("MATH ", "", 1)
