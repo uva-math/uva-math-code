@@ -3,6 +3,11 @@
 
 # There is a list of courses that will not be shown, in file masked_courses.yml
 
+# There is a number of courses which must be added manually because they are not in Lou's list.
+# They are in courses_added_manually.yml
+
+# Some courses are renamed, hardcoded in the script
+
 - name: " Precalculus (3.00) "
   number: 1030
   descr: " Studies computational skills, patterns of quantitative problem solving, and mathematical thought. Includes linear and quadratic equations, polynomials, inverse functions, logarithms, arithmetic and geometric sequences, trigonometric functions, and linear systems. (Does not satisfy the College natural science and mathematics requirement.)  Prerequisite: High school algebra II and geometry. "
@@ -153,7 +158,7 @@
   offered: Fall 2017
   descr: " Topics include arbitrage arguments, valuation of futures, forwards and swaps, hedging, option-pricing theory, decision theory, and sensitivity analysis. Prerequisite: MATH 3100 or APMA 3100. Students should have a knowledge of matrix algebra. "
 
-- name: " Advanced Calculus with Applied Mathematics (3.00) "
+- name: " Math for Physics (3.00) "
   number: 4210
   descr: " Includes vector analysis, Green's, Stokes', divergence theorems, conservation of energy, and potential energy functions. Emphasizes physical interpretation, Sturm-Liouville problems and Fourier series, special functions, orthogonal polynomials, and Green's functions.    Prerequisite: MATH 2310, 3250; 3351 recommended. "
 
