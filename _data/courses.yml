@@ -237,11 +237,11 @@
 
 - name: " Distinguished Major Thesis I (3.00) "
   number: 4900
-  descr: " This course provides a framework for the completion of a Distinguished Major Thesis, a treatise containing an exposition of a chosen mathematical topic. A faculty advisor guides the student through all phases of the process which culminates in an open presentation of the thesis to an audience including a faculty evaluation committee. "
+  descr: " This course provides a framework for the completion of a Distinguished Major Thesis, a treatise containing an exposition of a chosen mathematical topic.  A faculty advisor guides a student through the beginning phases of the process of research and writing.  Prerequisite: Acceptance into the Distinguished Major Program. "
 
 - name: " Distinguished Major Thesis II (3.00) "
   number: 4901
-  descr: " This is the second semester of a two semester sequence for the purpose of the completion of a Distinguished Major Thesis, a treatise containing an exposition of a chosen mathematical topic. A faculty advisor guides the student through all phases of the process which culminates in an open presentation of the thesis to an audience including a faculty evaluation committee. Prerequisite: MATH 4900 "
+  descr: " This is the second semester of a two semester sequence for the purpose of the completion of a Distinguished Major Thesis. A faculty member guides the student through all phases of the process which culminates in an open presentation of the thesis to an audience including a faculty evaluation committee.  Prerequisite: MATH 4900. "
 
 - name: " Independent Study (1.00 - 3.00) "
   number: 4993
@@ -731,4 +731,3 @@
   graduate: true
   offered: Fall 2017
   descr: " The Mathematics Colloquium is held weekly, the sessions being devoted to research activities of students and faculty members, and to reports by visiting mathematicians on current work of interest. For doctoral dissertation, taken under the supervision of a dissertation director. "
-
