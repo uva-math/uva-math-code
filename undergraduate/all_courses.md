@@ -6,7 +6,7 @@ permalink: /courses/
 
 <h1 class="mb-3">Course descriptions &bull; (<a href="{{site.url}}/courses/undergrad/">undergraduate</a>) &bull; (<a href="{{site.url}}/courses/graduate/">graduate</a>)</h1>
 
-This is a list of courses automatically generated from the [Lou's list](http://rabi.phys.virginia.edu/mySIS). Please refer there for details about instructors and current enrollment numbers.
+Please refer to <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SIS</a> or <a href="https://rabi.phys.virginia.edu/mySIS/CS2/">Lou's list</a> for details about current instructors and current enrollment numbers.
 
 
 <br>
