@@ -19,5 +19,5 @@ nav_weight: 8
 	<li><a href="http://www.virginia.edu/cue/research_opportunities.php">Small Research and Travel Grants</a></li>
 	<li><a href="http://www.virginia.edu/cue/research_opportunities.php">Double Hoo Research Grant</a></li>
 	<li><a href="http://www.virginia.edu/cue/scholarships.php">Scholarships and Fellowships</a></li>
-	<li><a href="http://www.virginia.edu/cue/scholarships.php">Goldwater Scholarship</a></li>
+	<li><a href="http://www.virginia.edu/cue/scholarships.php?go=17">Goldwater Scholarship</a></li>
 </ul>
