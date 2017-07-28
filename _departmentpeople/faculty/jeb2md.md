@@ -8,7 +8,7 @@ office: 319 Kerchof Hall
 phone: 434-924-4952
 email: jeb2md@virginia.edu
 image: __SITE_URL__/img/people/Bergner.jpg
-personal_page:
+personal_page: http://people.virginia.edu/~jeb2md/
 
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
