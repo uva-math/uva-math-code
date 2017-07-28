@@ -11,7 +11,11 @@ Please refer to <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SI
 
 <br>
 
-{% assign sorted_courses = site.data.courses | sort: "number" %}
+{% assign courses = site.data.courses %}
+{% for added_course in site.data.courses_added_manually %}
+  {% assign courses = courses | push: added_course %}
+{% endfor %}
+{% assign sorted_courses = courses | sort: "number" %}
 
 <div class="my-row-zebra">
 {% for crs in sorted_courses %}
