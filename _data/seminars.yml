@@ -1,5 +1,5 @@
 # This is used for generating the list of seminars, and for assigning links to seminar pages on the main page
-# Please do not touch the cal_number, it is needed for javascript displaying recent seminars. If need to reorder, change seminar_weight. If want to add a seminar new cal_number parameters start with 10 as of Apr 2017. Javascript should be modified to display new added seminars if they have a google calendar
+# Please do not touch the cal_number, it is needed for javascript displaying recent seminars. If need to reorder, change seminar_weight. If want to add a seminar new cal_number parameters start with 11 as of Jul 2017. Javascript should be modified to display new added seminars if they have a google calendar
 
 # google_cal_id: 'dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com'
 # in the javascript corresponds to an empty old outdated seminar which is fine; its id is 0 then
@@ -123,5 +123,24 @@
   contact:
     - name: Sara Maloni
       email: sm4cw@virginia.edu
-    - name: Leonid Petrov
-      email: petrov@virginia.edu
+    - name: Andrew Obus
+      email: obus@virginia.edu
+
+- cal_number: '10'
+  name: Graduate Students Seminar
+  shortname: gradsem
+  webpage: 'http://pi.math.virginia.edu/gradsem/'
+  google_cal_id: 'n6dhh35l2td9i73ii6dbkpqtro@group.calendar.google.com'
+  seminar_weight: 11
+  regular_times: Fridays at 2:30 in Ker 317
+  information: |
+    The Graduate Seminar provides a friendly atmosphere for grad students to give talks about current interests, research, or teaching. This seminar is for grad students only and encourages audience participation while keeping the intensity level below that of other seminars.
+    <br><br>
+    The graduate student seminar was started in the spring of 1999 by several junior faculty members. They hoped it would serve as a meeting place for junior faculty members and graduate students to socialize and to talk about mathematics.
+    <br><br>
+    The seminar is designed with several goals in mind. The seminar gives everyone a chance to interact outside of class while providing exposure to some of the current interests of the department. As a result, graduate students in their early years have a chance to become more familiar with the potential areas of study. Perhaps the most important goal of the seminar is to provide graduate students with an open forum in which to practice giving mathematical talks in a supportive environment.
+    <br><br>
+    The seminar is intended for graduate students and junior faculty in an attempt to foster a less intimidating atmosphere for discussion. Such a friendly, informal environment not only makes it easier for the speakers, but promotes more audience participation. Most talks last about 45 minutes, which leaves sufficient time for comments and questions afterward. There have been a wide variety of topics covered. Many speakers have presented material related to their research while others have chosen to speak about topics that may not be directly related to their studies. Some people have even used the seminar to prepare for professional talks. Though topics vary, the goal is to keep the mathematical intensity at an appropriate level so that graduate students not specializing in that discipline can still follow the presentation and learn something.
+  contact:
+    - name: Kristin Courtney
+      email: kc2ea@virginia.edu
