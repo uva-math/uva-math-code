@@ -8,13 +8,15 @@ nav_nesting: true
 nav_weight: 1000
 ---
 
-<h1 class="mb-3">Graduate courses</h1>
+<h1 class="mb-2">Graduate courses</h1>
+
+<h3 class="mb-4">(<a href="#PHD">Phd level</a>) &bull; (<a href="#Masters">Masters and math education</a>)</h3>
 
 Please refer to <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SIS</a> or <a href="https://rabi.phys.virginia.edu/mySIS/CS2/">Lou's list</a> for details about current instructors and current enrollment numbers.
 
 <br />
 
-<h2 class="mb-3">PhD level courses and research seminars</h2>
+<h2 class="mb-3"><a name="PHD">PhD level courses and research seminars</a></h2>
 
 {% assign courses = site.data.courses %}
 {% for added_course in site.data.courses_added_manually %}
@@ -46,8 +48,9 @@ Please refer to <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SI
 {% endfor %}
 </div>
 
+<br />
 
-<h2 class="mt-3 mb-3">Master level and mathematical education courses</h2>
+<h2 class="mt-3 mb-3"><a name="Masters">Master level and mathematical education courses</a></h2>
 
 <div class="my-row-zebra">
 {% for crs in sorted_courses %}
