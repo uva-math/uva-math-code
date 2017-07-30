@@ -30,17 +30,17 @@
   number: 1160
   descr: " Studies basic concepts, operations, and structures occurring in number systems, number theory, and algebra. Inquiry-based student investigations explore historical developments and conceptual transitions in the development of number and algebraic systems. "
 
-- name: " Applied Calculus I with Algebra (4.00) "
+- name: " A Survey of Calculus I with Algebra (4.00) "
   number: 1190
   offered: Fall 2017
   descr: " Topics include College Algebra; limits and continuity; differentiation and integration of algebraic and elementary transcendental functions; and applications to maximum-minimum problems, curve sketching and exponential growth.  Credit is not given for both Math 1210, 1190, and 1310.   Prerequisite: No previous exposure to Calculus. "
 
-- name: " Applied Calculus I (3.00) "
+- name: "  A survey of Calculus I (3.00) "
   number: 1210
   offered: Fall 2017
   descr: " Topics include limits and continuity; differentiation and integration of algebraic and elementary transcendental functions; and applications to maximum-minimum problems, curve sketching and exponential growth. Credit is not given for both MATH 1210, 1212, and 1310. "
 
-- name: " Applied Calculus II (3.00) "
+- name: "  A survey of Calculus II (3.00) "
   number: 1220
   offered: Fall 2017
   descr: " A second calculus course for business, biology, and social science students. Analyzes functions of several variables, their graphs, partial derivatives and optimization; multiple integrals. Reviews basic single variable calculus and introduces differential equations and infinite series. Credit is not given for both MATH 1220 and 1320.  Prerequisite: MATH 1210 or equivalent. "
@@ -731,3 +731,4 @@
   graduate: true
   offered: Fall 2017
   descr: " The Mathematics Colloquium is held weekly, the sessions being devoted to research activities of students and faculty members, and to reports by visiting mathematicians on current work of interest. For doctoral dissertation, taken under the supervision of a dissertation director. "
+
