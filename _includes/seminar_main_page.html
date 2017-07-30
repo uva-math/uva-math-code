@@ -10,17 +10,20 @@
 
 <h2 class="mt-2 mb-4">List of seminars</h2>
 
+<ul class="my-ul-zebra">
 {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %}
 {% for sem in sorted_sem %}
-### [{{sem.name}}]({{site.url}}/seminars/{{ sem.shortname }}/)
-  **{{ sem.regular_times }}**
+<li class="mb-3"> <h3><a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a></h3>
+	<p class="mb-1"><b>{{ sem.regular_times }}</b></p>
 
-  {% for cnt in sem.contact %}{{cnt.name}} ([*{{cnt.email}}*](mailto:{{cnt.email}})){% if forloop.last == false %},{% endif %} {% endfor %}
-  {% if sem.information != null %}<details class="mb-3"><summary>Description</summary>
+			{% for cnt in sem.contact %}{{cnt.name}} (<a href="mailto:{{cnt.email}}">{{cnt.email}}</a>){% if forloop.last == false %},{% endif %} {% endfor %}
+  {% if sem.information != null %}<details><summary>Description</summary>
     {{ sem.information }}
   </details>
   {% endif %}
+	</li>
 {% endfor %}
+</ul>
 
 <hr>
 
