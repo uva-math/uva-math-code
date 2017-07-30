@@ -20,7 +20,7 @@ title: Seminar in operator theory and operator algebras
 {% endif %}
 
 <div class="list-group-sm">
-  <a class="list-group-item list-group-item-action h5 orange-item" href="http://www.people.virginia.edu/~des5e/sotoa/sotoa.html">Proceed to the standalone seminar webpage</a>
+  <a class="list-group-item list-group-item-action h5 orange-item" href="http://www.people.virginia.edu/~des5e/sotoa/sotoa.html">Proceed to the standalone seminar page</a>
 </div>
 
 <br>
