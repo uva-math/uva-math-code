@@ -1,5 +1,5 @@
 # This is used for generating the list of seminars, and for assigning links to seminar pages on the main page
-# Please do not touch the cal_number, it is needed for javascript displaying recent seminars. If need to reorder, change seminar_weight. If want to add a seminar new cal_number parameters start with 11 as of Jul 2017. Javascript should be modified to display new added seminars if they have a google calendar
+# Please do not touch the cal_number, it is needed for javascript displaying recent seminars. If need to reorder, change seminar_weight. If want to add a seminar new cal_number parameters start with 12 as of Jul 2017. Javascript should be modified to display new added seminars if they have a google calendar
 
 # google_cal_id: 'dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com'
 # in the javascript corresponds to an empty old outdated seminar which is fine; its id is 0 then
@@ -125,6 +125,19 @@
       email: sm4cw@virginia.edu
     - name: Andrew Obus
       email: obus@virginia.edu
+
+- cal_number: '11'
+  name: Operator theory seminar
+  shortname: sotoa
+  webpage: 'http://www.people.virginia.edu/~des5e/sotoa/sotoa.html'
+  google_cal_id: '@group.calendar.google.com'
+  seminar_weight: 6
+  regular_times: Tuesdays at 4:00 in Ker 326
+  information: |
+    The Seminar in Operator Theory and Operator Algebras covers a wide variety of topics in functional analysis, including <script type="math/tex">C^*</script>-algebras and von Neumann algebras, composition operators, Banach spaces, noncommutative convexity, and applications of complex function theory. Most lectures are research level, but we also feature expository talks.
+  contact:
+    - name: David Sherman
+      email: dsherman@virginia.edu
 
 - cal_number: '10'
   name: Graduate Students Seminar
