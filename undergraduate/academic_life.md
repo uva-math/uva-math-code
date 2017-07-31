@@ -11,7 +11,7 @@ math: false
 
 ### Math Club
 
-<p>See the Math Club&#39;s <a href="http://pi.math.virginia.edu/mathclub/">calendar</a> for meeting times.</p>
+<p>See the Math Club&#39;s <a href="{{site.url}}/seminars/mathclub/">calendar</a> for meeting times.</p>
 
 ### Competitions
 
@@ -19,4 +19,4 @@ math: false
 
 ### AWM
 
-(under construction)
+[Association for Women in Mathematics Student Chapter at the University of Virginia](http://people.virginia.edu/~er2eq/uva-awm/)
