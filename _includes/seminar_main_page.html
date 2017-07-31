@@ -17,7 +17,7 @@
 	<p class="mb-1"><b>{{ sem.regular_times }}</b></p>
 
 			{% for cnt in sem.contact %}{% include person_info_email_only.html UVA_id = cnt.UVA_id %}&nbsp;&nbsp;&nbsp;{% endfor %}
-  {% if sem.information != null %}<details><summary>Description</summary>
+  {% if sem.information != null %}<details class="mt-1"><summary>Description</summary>
     {{ sem.information }}
   </details>
   {% endif %}
