@@ -35,9 +35,9 @@ show_to='1 July 2016' %}
 
 ---
 
-**Contact:** {% for cnt in sem.contact %}{{cnt.name}} ([*{{cnt.email}}*](mailto:{{cnt.email}})){% if forloop.last == false %},{% endif %} {% endfor %}
+**Contact:** {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
 
-**[Old webpage link]({{sem.webpage}})**
+<br>**[Old webpage link]({{sem.webpage}})**
 
 {%endif%}
 {% endfor %}

@@ -12,10 +12,8 @@
   seminar_weight: 1
   regular_times: Thursdays at 4:00 in Ker 317. Refreshments served at 3:30
   contact:
-    - name: Malek Abdesselam
-      email: aa4cr@virginia.edu
-    - name: Mikhail Ershov
-      email: ershov@virginia.edu
+    - UVA_id: aa4cr
+    - UVA_id: mve2x
 
 - cal_number: '5'
   name: Algebra Seminar
@@ -25,8 +23,7 @@
   seminar_weight: 2
   regular_times: Wednesdays and some Fridays, 3:30-4:30pm, Ker 317
   contact:
-    - name: Ben Webster
-      email: btw4e@virginia.edu
+    - UVA_id: btw4e
 
 - cal_number: '1'
   name: Geometry Seminar
@@ -38,10 +35,8 @@
   information: |
     The Geometry Seminar talks usually focus on aspects of low-dimensional topology and geometry, including knot theory and categorification, Floer homology, 3- and 4-dimensional manifolds, and symplectic and contact topology. The lectures are often given by outside speakers, however UVa graduate students and faculty give talks as well.
   contact:
-    - name: Slava Krushkal
-      email: krushkal@virginia.edu
-    - name: Tom Mark
-      email: tmark@virginia.edu
+    - UVA_id: vk6e
+    - UVA_id: tmark
 
 - cal_number: '3'
   name: Harmonic Analysis and PDE Seminar
@@ -54,14 +49,10 @@
   information: |
     Harmonic Analysis and PDE seminar features a mix of local speakers (graduate students and faculty) and visitors. The ideal topics live on the interface between the two fields; luckily, the interface has been steadily expanding.
   contact:
-    - name: Yen Do
-      email: yendo@virginia.edu
-    - name: Aseel Farhat
-      email: af7py@virginia.edu
-    - name:  Zoran Grujic
-      email: zg7c@virginia.edu
-    - name: Francesco Di Plinio
-      email: fd4v@virginia.edu
+    - UVA_id: yqd3p
+    - UVA_id: af7py
+    - UVA_id: zg7c
+    - UVA_id: fd4v
 
 - cal_number: '4'
   name: Mathematical Physics Seminar
@@ -74,8 +65,7 @@
   information: |
     The Mathematical Physics Seminar features talks on a wide variety of topics such as, for instance, Schrödinger operators, the mathematics of quantum systems, statistical mechanics, the renormalization group and quantum field theory. Lectures typically are of research level and are given by local as well as outside speakers. Graduate students in mathematical physics are encouraged to give presentations at this seminar about their ongoing research. Everyone is welcome to attend.
   contact:
-    - name: John Imbrie
-      email: imbrie@virginia.edu
+    - UVA_id: ji2k
 
 - cal_number: '7'
   name: Probability Seminar
@@ -88,15 +78,10 @@
   information: |
     The Probability Seminar is the place to see talks on active research topics in probability theory, as well as informal discussions of basic notions of probability.  We typically have invited speakers every 2-3 weeks presenting a wide array of research in probability. Most other weeks are informal discussions led by local participants, often graduate students discussing recently studied topics. The seminar is open to all. Feel free to attend regularly or occasionally.
   contact:
-    - name: Christian Gromoll
-      email: gromoll@virginia.edu
-    - name: Tai Melcher
-      email: melcher@virginia.edu
-    - name: Leonid Petrov
-      email: petrov@virginia.edu
-    - name: Axel Saenz
-      email: ais6a@virginia.edu
-
+    - UVA_id: hcg3m
+    - UVA_id: tam7b
+    - UVA_id: lap5r
+    - UVA_id: ais6a
 
 - cal_number: '8'
   name: Topology Seminar
@@ -108,10 +93,8 @@
   information: |
     Topology Seminar talks are on recent developments in algebraic topology—including homotopy theory, ordinary and extraordinary homology and cohomology, cobordism theory, and K-theory—and related subjects like differential topology and homological algebra.
   contact:
-    - name: Julie Bergner
-      email: jeb2md@virginia.edu
-    - name: Nicholas Kuhn
-      email: njk4x@virginia.edu
+    - UVA_id: jeb2md
+    - UVA_id: njk4x
 
 - cal_number: '2'
   name: Undergraduate Math Club
@@ -121,10 +104,8 @@
   seminar_weight: 12
   regular_times: Mondays at 5:00 in Ker 314 (Math lounge)
   contact:
-    - name: Sara Maloni
-      email: sm4cw@virginia.edu
-    - name: Andrew Obus
-      email: obus@virginia.edu
+    - UVA_id: sm4cw
+    - UVA_id: aso9t
 
 - cal_number: '11'
   name: Operator theory seminar
@@ -136,8 +117,7 @@
   information: |
     The Seminar in Operator Theory and Operator Algebras covers a wide variety of topics in functional analysis, including <script type="math/tex">C^*</script>-algebras and von Neumann algebras, composition operators, Banach spaces, noncommutative convexity, and applications of complex function theory. Most lectures are research level, but we also feature expository talks.
   contact:
-    - name: David Sherman
-      email: dsherman@virginia.edu
+    - UVA_id: des5e
 
 - cal_number: '10'
   name: Graduate Students Seminar
@@ -155,5 +135,4 @@
     <br><br>
     The seminar is intended for graduate students and junior faculty in an attempt to foster a less intimidating atmosphere for discussion. Such a friendly, informal environment not only makes it easier for the speakers, but promotes more audience participation. Most talks last about 45 minutes, which leaves sufficient time for comments and questions afterward. There have been a wide variety of topics covered. Many speakers have presented material related to their research while others have chosen to speak about topics that may not be directly related to their studies. Some people have even used the seminar to prepare for professional talks. Though topics vary, the goal is to keep the mathematical intensity at an appropriate level so that graduate students not specializing in that discipline can still follow the presentation and learn something.
   contact:
-    - name: Kristin Courtney
-      email: kc2ea@virginia.edu
+    - UVA_id: kc2ea

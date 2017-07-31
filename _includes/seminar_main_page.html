@@ -16,7 +16,7 @@
 <li class="mb-3"> <h3><a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a></h3>
 	<p class="mb-1"><b>{{ sem.regular_times }}</b></p>
 
-			{% for cnt in sem.contact %}{{cnt.name}} (<a href="mailto:{{cnt.email}}">{{cnt.email}}</a>){% if forloop.last == false %},{% endif %} {% endfor %}
+			{% for cnt in sem.contact %}{% include person_info_email_only.html UVA_id = cnt.UVA_id %}&nbsp;&nbsp;&nbsp;{% endfor %}
   {% if sem.information != null %}<details><summary>Description</summary>
     {{ sem.information }}
   </details>
