@@ -1,0 +1,90 @@
+---
+title: University of Virginia Geometry Seminar 2010-11
+layout: static_page_no_right_menu
+permalink: /seminars/geometry/2010-11/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+
+<table>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra"  style="padding:5px">
+    <tr>
+    	<td valign="top">February 22</td>
+    	<td valign="top">Wilbur Whitten</td>
+    	<td><a href="javascript:Toggle('February 22')">Pseudo-meridians of knot groups</a>
+    <p id="February 22" style="display:none;">A pseudo-meridian of the group of a knot in the 3-sphere is an element that normally generates the group, but is not automorphic to a meridian.  In this talk, we will see that many knot groups contain an infinite number of pseudo-meridians (up to automorphism), and that the existence of such elements is connected with Simon's conjecture (Problem 1.12 (D) of Rob Kirby's list) and with other questions concerning knot-group epimorphisms.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 1</td>
+    	<td valign="top">Joshua Greene (Columbia)</td>
+    	<td><a href="javascript:Toggle('March 1')">Conway mutation and alternating links</a>
+    <p id="March 1" style="display:none;">Let D and D' denote connected, reduced, alternating diagrams for a pair of links, and Y and Y' their branched double-covers. I'll discuss the proof and consequences of the following result: Y and Y' have isomorphic Heegaard Floer homology groups iff Y and Y' are homeomorphic iff D and D' are mutants.<br /></p></td>
+    </tr>
+
+
+    <tr>
+    	<td valign="top">March 29</td>
+    	<td valign="top">David Clark</td>
+    	<td><a href="javascript:Toggle('March 29')">(No title)</a>
+    <p id="March 29" style="display:none;">A version of Khovanov link homology categorifies the Reshetikhin-Turaev polynomial corresponding to the fundamental vector representation of su(3). We demonstrate an action of the symmetric group on this homology, and discuss implications for extending the theory to a categorification of polynomials related to higher irreps of su(3).</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 12</td>
+    	<td valign="top">Jennifer Hom (U Penn)</td>
+    	<td><a href="javascript:Toggle('April 12')">Concordance and the knot Floer complex</a>
+    <p id="April 12" style="display:none;">We will use the knot Floer complex, in particular the<br />invariant epsilon, to define a new smooth concordance homomorphism.<br />Applications include a formula for tau of iterated cables, better<br />bounds (in many cases) on the 4-ball genus than tau alone, and a new<br />infinite family of smoothly independent topologically slice knots. We<br />will also discuss various algebraic properties of this construction,<br />including a total ordering, a ``much greater than'' relation, and a<br />filtration.</p></td>
+    </tr>
+
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>

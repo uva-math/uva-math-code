@@ -1,0 +1,254 @@
+---
+title: University of Virginia Geometry Seminar 2013-14
+layout: static_page_no_right_menu
+permalink: /seminars/geometry/2013-14/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table >
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra" style="padding:5px">
+
+
+<tr>
+ <td valign="top">August 27</td>
+ <td valign="top">John Baldwin (Boston College)</td>
+ <td><a href="javascript:Toggle('August 27')">A Bordered Monopole Floer Theory</a>
+<p id="August 27" style="display:none;"> I’ll discuss work-in-progress with Jon Bloom toward constructing a gauge theoretic analogue of the Fukaya category and monopole Floer theoretic invariants of bordered 3-manifolds. Our construction associates an A-infinity category to a surface, an A-infinity functor to a bordered 3-manifold, and an A-infinity natural transformation to a 4-dimensional cobordism of bordered 3-manifolds. In this talk, I'll discuss the (2+1)-dimensional aspects of the theory and describe a finite set of bordered handlebodies which "generate" our category.</p></td>
+</tr>
+
+<tr>
+ <td valign="top">August 28</td>
+ <td valign="top">Michael Freedman (Microsoft Station Q)</td>
+ <td><a href="javascript:Toggle('August 28')">"Over-gauging a field"</a>
+<p id="August 28" style="display:none;">Abstract: I will explore what happens to U(1) gauge theory if we allow the vector potential to explore a narrow cone around su(1) within su(1,1). There is surprising decoupling between curvature and characteristic classes leading to nontrivial principal SU(1,1) bundles with flat connections.  This suggest  a novel Lagrangian generalizing the Ginsberg- Landau formulation of superconductivity. In this context, the familiar  tradeoff between curvature, ||F_A||^2 ,  and covariant derivative,||D_A (phi)||^2,  becomes more complicated: Energy can be also be shifted to a Beltrami term or stored in topology.</p></td>
+</tr>
+
+<tr>
+ <td>September 3</td>
+ <td></td>
+ <td>Organizational meeting</td>
+</tr>
+
+<tr>
+ <td valign="top">September 10</td>
+ <td valign="top">Wilbur Whitten</td>
+ <td><a href="javascript:Toggle('September 10')">Knot-group killers</a>
+<p id="September 10" style="display:none;"> A pseudo-meridian of a knot k in the three-sphere is a killer of the group of k that is not a meridian.  We will see that any pseudomer of k is not the automorphic image of a meridian and can never be peripheral.  We will also look into the meaning and existence of pseudomers, give several examples, and pose a number of questions and conjectures.  (This is joint work with D. S. Silver and S. G. Williams.)</p></td>
+</tr>
+
+<tr>
+ <td valign="top">September 17</td>
+ <td valign="top">Ben Cooper (University of Zurich)</td>
+ <td><a href="javascript:Toggle('September 17')">Steenrod structures on quantum groups</a>
+<p id="September 17" style="display:none;">Abstract: I will discuss Steenrod structures on algebras related to knot homology theories (work with A. Beliakova and H. Queffelec)</p></td>
+</tr>
+
+<tr>
+ <td valign="top">September 24</td>
+ <td valign="top">Allison Gilmore (UCLA)</td>
+ <td><a href="javascript:Toggle('September 24')">On the knot Floer cube of resolutions</a>
+<p id="September 24" style="display:none;">Most knot homology theories were originally defined algebraically using a cube of resolutions approach. The commonalities in these algebraic definitions  contributed to the discovery of spectral sequences relating the various theories. Knot Floer homology has a cube of resolutions construction (due to Ozsvath and Szabo), and should lie at the end of a spectral sequence from HOMFLY-PT homology (according to a conjecture of Dunfield, Gukov, Rasmussen), but so far these facts have not come together. In this talk, we describe the similarities between the knot Floer and HOMFLY-PT cubes of resolutions, then account for the main difference: the appearance of a mysterious ``non-local ideal'' in the knot Floer construction. Our main result expresses this non-local ideal in terms of algebraic objects that appear the HOMFLY-PT construction. We will sketch a proof via Grobner basis techniques, then explore potential applications to the spectral sequence conjecture.</p></td>
+</tr>
+
+<tr>
+ <td valign="top">October 1</td>
+ <td valign="top">Shea Vela-Vick (LSU)</td>
+ <td><a href="javascript:Toggle('October 1')">Transverse knots, infinite cyclic covers and Heegaard Floer homology</a>
+<p id="October 1" style="display:none;">In recent years, Heegaard Floer theory has proven an invaluable tool for studying contact manifolds and the Legendrian and transverse knots they contain.  I plan to discuss a method for defining a variant of Heegaard Floer theory for infinite cyclic covers of transverse knots in the standard contact 3-sphere.  This invariant generalizes one defined in joint work with Baldwin and Vertesi for transverse knots braided about open book decompositions.  In this talk, I will discuss how our invariant is constructed and present some basic properties.  This is joint work with Tye Lidman and Sucharit Sarkar.</p></td>
+</tr>
+
+<tr>
+ <td valign="top">October 8</td>
+ <td valign="top">Michael Abel (UNC Chapel Hill)</td>
+ <td><a href="javascript:Toggle('October 8')">Virtual crossings and filtrations in HOMFLY-PT homology</a>
+<p id="October 8" style="display:none;">Soergel and Rouquier categorified the Hecke algebra by complexes of special bimodules called Soergel bimodules. HOMFLY-PT homology can be realized as the homology of these complexes after replacing the bimodules with their Hochschild homology. Soergel bimodules also have a filtration by what are known as standard bimodules, which can be used to represent virtual crossings in this categorification. We can use this filtration to represent Soergel bimodules as mapping cones of virtual crossings after passing to the correct category. I will review the construction of HOMFLY-PT homology and then I will present joint work with L. Rozansky which shows that this resolution into virtual crossings gives rise to both a more diagrammatic calculus of HOMFLY-PT homology and a filtered triply-graded homology theory which is a link invariant. We can use this to define a new fourth grading on HOMFLY-PT homology.</p></td>
+</tr>
+
+<tr>
+ <td>October 15</td>
+ <td>No seminar</td>
+ <td>Reading break</td>
+</tr>
+
+<tr>
+ <td valign="top">October 22</td>
+ <td valign="top">Bulent Tosun (UVa)</td>
+ <td><a href="javascript:Toggle('October 22')">Contact surgery and contact invariant</a>
+<p id="October 22" style="display:none;">One of the  fundamental problems in 3-dimensional contact geometry is the existence of a (tight) contact structure on a fixed 3-manifold. One is, in particular, interested in explicit construction of such structures. In my talk, I will first review known results which hopefully will motivate the notion of contact surgery, then will explain main result that answers the fundamental problem above for some class of three manifolds.</p></td>
+</tr>
+
+<tr>
+ <td valign="top">October 29</td>
+ <td valign="top">Adam Knapp (American U)</td>
+ <td><a href="javascript:Toggle('October 29')">Cotangent bundles of open 4-manifolds</a>
+<p id="October 29" style="display:none;">We show that, if X_1 and X_2 are two open homeomorphic<br>smooth 4-manifolds, then the cotangent bundles of X_1 and X_2 are symplectomorphic with their natural symplectic structures.</p></td>
+</tr>
+
+<tr>
+ <td valign="top">November 5</td>
+ <td valign="top">Paul Melvin (Bryn Mawr College)</td>
+ <td><a href="javascript:Toggle('November 5')">Exotic 2-spheres in 4-manifolds</a>
+<p id="November 5" style="display:none;">It is a well known principle in 4-dimensional topology that homeomorphic smooth simply-connected 4-manifolds become diffeomorphic after "stabilizing" (meaning connected summing with a product of two 2-spheres) sufficiently many times. Many explicit examples are known for which exactly one stabilization is required, but no examples have been shown to require more than one. Perhaps all these exotic smooth structures "dissolve" quickly.<br><br>An analogue of this principle holds for 2-spheres embedded in a smooth, simply-connected 4-manifold, namely, any two that are topologically isotopic become smoothly isotopic after stabilizing the manifold sufficiently many times. Until now, however, no bounds on the number of stabilizations needed have been found. In this talk, we will explicitly describe pairs of topologically isotopic knots that are not smoothly isotopic, but become so after one stabilization. This is joint work with Dave Auckly, Hee Jung Kim and Danny Ruberman.</p></td>
+</tr>
+
+<tr>
+ <td valign="top">November 12</td>
+ <td valign="top">Slava Krushkal </td>
+ <td><a href="javascript:Toggle('November 12')">Distortion and thickness in Euclidean spaces</a>
+<p id="November 12" style="display:none;">Distortion and thickness are measures of geometric complexity of embeddings of manifolds and simplicial complexes into Euclidean spaces. They have been studied in geometry, analysis, combinatorics and CS. I will survey recent results in the subject and I will discuss new qualitatively different estimates when the ambient dimension is twice the dimension of the complex.</p></td>
+</tr>
+
+<tr>
+ <td valign="top">November 19</td>
+ <td valign="top">Thomas Mark (UVa)</td>
+ <td><a href="javascript:Toggle('November 19')">Stein fillings and a relative symplectic isotopy problem</a>
+<p id="November 19" style="display:none;"> I will describe recent progress on the problem of classifying Stein fillings of 3-manifolds with contact structures supported by planar open books. In particular I will show how this problem can be reduced to a relative symplectic isotopy problem for a disjoint union of disks in a blowup of the 4-ball having given boundary, and outline a solution to this problem. As a consequence, we will see that any planar contact structure admits only finitely many Stein fillings, up to symplectic deformation. This is joint work with Chris Wendl.</p></td>
+</tr>
+
+<tr>
+ <td>November 26</td>
+ <td>Ben Webster</td>
+ <td>Grassmannians and Khovanov homology</td>
+</tr>
+
+<tr>
+ <td valign="top">December 10</td>
+ <td valign="top">Richard Sher</td>
+ <td><a href="javascript:Toggle('December 10')">Wild Embeddings in Manifolds</a>
+<p id="December 10" style="display:none;">A survey of some classical techniques and results related to nonstandard (or “wild”) embeddings into manifolds of standard spaces such as Cantor sets, cells and spheres. This talk is intended for non-experts and is appropriate for students having some familiarity with standard results in topology.</p></td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<table>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra"  style="padding:5px">
+
+    <tr>
+    	<td valign="top">February 11</td>
+    	<td valign="top">Aaron Abrams (Washington and Lee University)</td>
+    	<td><a href="javascript:Toggle('February 11')">Homological and homotopical Dehn functions are different</a>
+    <p id="February 11" style="display:none;">The homological and homotopical Dehn functions are different ways of <br>measuring the difficulty of filling a closed curve inside a (geometric model<br>of a) group.  The homological Dehn function measures fillings of cycles by<br>chains, whereas the (usual) homotopical Dehn function measures fillings<br>of curves by disks.  In this talk we will describe the first known examples<br>of finitely presented groups for which the two functions differ.  This is joint<br>work with N. Brady, P. Dani, and R. Young.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 18</td>
+    	<td valign="top">Joshua Sabloff (Haverford)</td>
+    	<td><a href="javascript:Toggle('February 18')">Topologically Distinct Lagrangian Fillings and the Generating Family Homology Number</a>
+    <p id="February 18" style="display:none;">We construct Legendrian submanifolds with arbitrarily many topologically distinct Lagrangian fillings, thereby (secretly) answering a question about intersections of complex curves with the 4-ball asked by Boileau and Fourrier. These fillings are then combined with a TQFT-like theory for Lagrangian cobordisms between Legendrian submanifolds to produce interesting consequences for some non-classical invariants of the Legendrian submanifolds with topologically distinct fillings.  Various parts of this talk are joint work with Traynor, Bourgeois-Traynor, and Cao-Gallup-Hayden.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 25</td>
+    	<td valign="top">Cagri Karakurt (U Texas)</td>
+    	<td><a href="javascript:Toggle('February 25')">Star Surgery of Symplectic 4-Manifolds</a>
+    <p id="February 25" style="display:none;">It is an interesting problem in 4-manifold topology to construct new symplectic manifolds out of given ones. One classical tool to do such <br>constructions  is  Fintushel and Stern's rational blow-down operation which is useful for understanding not only symplectic 4-manifolds but also their exotic smooth structures. Star surgery is a variation of rational blow-down  in which one removes a convex neighborhood of a union of symplectic spheres intersecting according to a star shaped plumbing, and<br>replaces it with a smaller symplectic filling of the contact manifold on the boundary which is not necessarily a rational ball. This operation admits many nice properties which allows one to control Seiberg-Witten<br>invariants, and produce exotic smooth structures. In this talk I'll give an example of star surgery, and use it to construct a minimal symplectic exotic copy of complex projective plane blown-up eight times.  This is a<br>joint work with L. Starkston.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 4</td>
+    	<td valign="top">Daniel Cristoforo-Gardiner (IAS)</td>
+    	<td><a href="javascript:Toggle('March 4')">Length, volume, and the existence of two Reeb orbits</a>
+    <p id="March 4" style="display:none;">I will discuss recent joint work with Vinicius Gripp and Michael Hutchings relating the volume of any contact three-manifold to the length of certain finite sets of Reeb orbits. I will also explain why this result implies that any closed contact three-manifold has at least two embedded Reeb orbits. Our proofs use embedded contact homology, which is a type of Floer homology for contact 3-manifolds that is isomorphic to a version of Heegard Floer homology.</p></td>
+    </tr>
+
+    <tr>
+    	<td>March 11</td>
+    	<td>No seminar</td>
+    	<td>Spring break</td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 18</td>
+    	<td valign="top">David Krcatovich (MSU)</td>
+    	<td><a href="javascript:Toggle('March 18')">The reduced knot Floer complex</a>
+    <p id="March 18" style="display:none;">The set of knots up to some four-dimensional equivalence relation can be given the structure of a group, called the (smooth) knot concordance group. We will discuss how to compute concordance invariants using Heegaard Floer homology. We will then introduce the idea of a "reduced" knot Floer complex, see how it can be used to simplify computations, and give examples of how it can be helpful in distinguishing knots which are not concordant.<br></p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 3</td>
+    	<td valign="top">Steven Boyer (UQAM)</td>
+    	<td><a href="javascript:Toggle('April 3')">L-spaces, left-orderability, and foliations</a>
+    <p id="April 3" style="display:none;"> Much work has been devoted in recent years to examining relationships between the existence of a co-oriented taut foliation in a closed, connected, prime 3-manifold W, the left-orderability of the fundamental group of W, and the property that W not be a Heegaard-Floer L-space. In this talk I will report on this work and will discuss evidence for the conjecture that an irreducible rational homology 3-sphere is an L-space if and only if its fundamental group is not left-orderable.<br><br>This is joint work with Cameron Gordon and Liam Watson, with Michel Boileau, and with Adam Clay. </p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 22</td>
+    	<td valign="top">Jeffrey Meier (U Texas)</td>
+    	<td><a href="javascript:Toggle('April 22')">Distinguishing topologically and smoothly doubly slice knots</a>
+    <p id="April 22" style="display:none;">The purpose of this talk is to show the existence of an infinite family of<br>smoothly slice knots that are topologically doubly slice, but not smoothly<br>doubly slice.  After outlining what is known about doubly slice knots, I<br>will present some sufficient conditions for a knot to be topologically<br>doubly slice, and show how the knots in question satisfy these criteria. <br>Then, I will outline how the correction terms coming from Heegaard Floer<br>homology can be used to obstruct these knots from being smoothly doubly<br>slice.  Along the way, we will encounter some very interesting open<br>questions related to the study of doubly slice knots.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 29</td>
+    	<td valign="top">Eamonn Tweedy (Rice U)</td>
+    	<td><a href="javascript:Toggle('April 29')">Positive concordance classes</a>
+    <p id="April 29" style="display:none;">Classically, a positive knot is a knot admitting a diagram with all right-handed crossings.  We study a notion of positivity for concordance classes of knots and links which generalizes this situation.  We give a characterization of positivity and discuss some obstructions.  This is joint work with Tim Cochran.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">May 6</td>
+    	<td valign="top">Michael Willis (UVa)</td>
+    	<td><a href="javascript:Toggle('May 6')">Rasmussen's s-invariant for Knots and Links</a>
+    <p id="May 6" style="display:none;">In this talk I will outline Rasmussen's 2004 paper Khovanov Homology and the Slice Genus.  The goal will be to define Rasmussen's s-invariant based on the Khovanov and Lee homologies for knots and links, and see how Rasmussen used this invariant to give a bound on the slice genus of knots.  In the case of positive knots, the s-invariant gives an exact calculation of the slice genus rather than a bound.  This leads to a Khovanov Homology proof of the Milnor Conjecture for torus knots.</p></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>

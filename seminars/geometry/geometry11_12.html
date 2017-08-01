@@ -1,0 +1,230 @@
+---
+title: University of Virginia Geometry Seminar 2011-12
+layout: static_page_no_right_menu
+permalink: /seminars/geometry/2011-12/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table >
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra" style="padding:5px">
+
+<tr>
+ <td valign="top">September 6</td>
+ <td valign="top">Ben Cooper (UVA)</td>
+ <td><a href="javascript:Toggle('September 6')">Handle Slides and Localizations of Categories</a>
+<p id="September 6" style="display:none;">I will explain a framework for evaluating some categorifications at a root of unity. This is implemented in the context of previous work. Within this construction I'll define objects which reflect the structure of 3-manifold topology. These objects are comparable to Reshetikhin-Turaev invariants at low levels in the decategorified setting.</p></td>
+</tr>
+
+<tr>
+ <td valign="top">September 13</td>
+ <td valign="top">Tye Lidman (UCLA)</td>
+ <td><a href="javascript:Toggle('September 13')">Triple cup products and Heegaard Floer homology</a>
+<p id="September 13" style="display:none;">We give a complete calculation (mod 2) of the infinity flavor of Heegaard Floer homology for all three-manifolds and torsion Spin^c structures. To do so we make use of the link surgery formula of Manolescu and Ozsvath, which allows one to calculate the Heegaard Floer homology of a three-manifold from a surgery presentation.  This agrees with the conjectured computation of Ozsvath-Szabo, establishing an isomorphism with Mark's cup homology mod 2.</p></td>
+</tr>
+
+<tr>
+ <td valign="top">September 22</td>
+ <td valign="top">John Etnyre (Georgia Tech)</td>
+ <td><a href="javascript:Toggle('September 22')">The classification of Legendrian and transversal knots</a>
+<p id="September 22" style="display:none;">The study of Legendrian and transverse knots has a long and rich history in contact topology, but in the last few years we been able to understand quite a lot of the qualitative features once can expect to see while studying such knots. I will survey what is known about the classification of these knots and discuss several outstanding problems in the area. </p></td>
+</tr>
+
+<tr>
+ <td>September 27</td>
+ <td>David Futer (Temple)</td>
+ <td>TBA</td>
+</tr>
+
+<tr>
+ <td valign="top">October 4</td>
+ <td valign="top">Tom Mark (UVA)</td>
+ <td><a href="javascript:Toggle('October 4')">Lefschetz fibrations and strong symplectic convexity</a>
+<p id="October 4" style="display:none;">Strong convexity is a key aspect of most symplectic surgery constructions in 4 dimensional topology, allowing two manifolds with boundary to be glued symplectically once the boundaries are contactomorphic. Lefschetz fibrations provide a straightforward way to identify contact structures using open books, but typically do not have the required convexity. I'll describe a reasonably general situation in which convexity can be combined with Lefschetz fibrations to give a variety of symplectic cut-and-paste operations on 4-manifolds.</p></td>
+</tr>
+
+
+<tr>
+ <td valign="top">October 18</td>
+ <td valign="top">Nathan Sunukjian (Stony Brook)</td>
+ <td><a href="javascript:Toggle('October 18')">The relationship between surgery and surface concordance in 4-manifolds</a>
+<p id="October 18" style="display:none;">If one wishes to understand the smooth structures of a given 4-manifolds, one approach is to first try to understand the surfaces which smoothly embed in it. One reason for this is because by<br />performing some sort of surgery on a surface, it is sometimes possible to change the smooth structure of the 4-manifold without altering its homeomorphism class. A considerable hurdle to this approach is that it<br />can be very difficult to find appropriate surfaces to perform the surgery on. Surface concordance is one way of trying to organize the surfaces in a 4-manifold. In this talk we will, (1) compute the<br />concordance group for a class of surfaces, and (2) explain when surgery on concordant surfaces gives the same result.</p></td>
+</tr>
+
+<tr>
+ <td valign="top">October 25</td>
+ <td valign="top">Chris Cornwell (Duke)</td>
+ <td><a href="javascript:Toggle('October 25')">Bindings of open book decompositions and lens spaces</a>
+<p id="October 25" style="display:none;">We will discuss recent work on Legendrian and transverse links in<br />universally tight contact lens spaces. There is a relationship between<br />such links and the Berge Conjecture. The surgery duals to Berge knots in<br />the corresponding lens space are all bindings of a rational open book<br />decomposition. We will discuss whether these Berge duals support the<br />universally tight contact structure on that lens space.</p></td>
+</tr>
+
+
+<tr>
+ <td valign="top">November 8</td>
+ <td valign="top">Matthew Hedden (Michigan State)</td>
+ <td><a href="javascript:Toggle('November 8')">Recent results in concordance</a>
+<p id="November 8" style="display:none;">Under an equivalence relation called concordance, knots form a<br />group with operation provided by the connected sum.  This group depends on<br />the category (smooth or topological) in which it is defined, and highlights<br />interesting aspects of 4-dimensional topology.  My talk will focus on<br />attempts to understand the group through its subgroups; that is, given a<br />collection of knots one can consider the subgroup which they generate within<br />the larger concordance group.  I will discuss various geometrically relevant<br />subgroups and some recent progress. Depending on which results become the<br />focus, this is joint work with subsets of {Paul Kirk, Chuck Livingston,<br />Danny Ruberman, Se-Goo Kim}.</p></td>
+</tr>
+
+<tr>
+ <td valign="top">November 29</td>
+ <td valign="top">Tai Melcher (UVa)</td>
+ <td><a href="javascript:Toggle('November 29')">Brownian motion on curved spaces</a>
+<p id="November 29" style="display:none;">Consider a perfume particle released from position x at time 0, and let B_t^x describe the position of the particle at any later time t>0.  The dynamics of this random trajectory are well understood: B_t^x is Brownian motion.  In particular, we know the transition probabilities of the particle, the function p_t(x,y) that gives the probability of the particle transitioning to position y in time t.  The function p_t(x,?) is called the heat kernel of B_t^x.<br /><br />The term "heat" comes from the fact that p_t is also the "fundamental solution" to the heat equation in R^3.  Thus, Brownian motion is somehow tied to heat flow in R^3, which ultimately relies on the flat geometry of Euclidean space.  In curved spaces, the dynamics of heat flow necessarily change depending on the geometry, and these changes can be characterized again in terms of Brownian motion on that space and its associated heat kernel.<br /><br />Thus, the geometry of a manifold and properties of the diffusion B_t and its heat kernel measure are all intimately related.  We will begin with Brownian motion in Euclidean space and use this paradigm as the basis for exploring these relationships in some simple curved examples. </p></td>
+</tr>
+
+<tr>
+ <td>December 2</td>
+ <td>Josh Sussan</td>
+ <td>TBA</td>
+</tr>
+
+</tbody>
+</table>
+
+<hr />
+
+<table>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra"  style="padding:5px">
+
+    <tr>
+    	<td valign="top">January 24</td>
+    	<td valign="top">Joan Licata (IAS)</td>
+    	<td><a href="javascript:Toggle('January 24')">Legendrian knot invariants in Seifert fibered spaces</a>
+    <p id="January 24" style="display:none;">Knot theory beyond the three-sphere has seen increased attention in recent years, and in this talk I'll focus on knot theory in Seifert fibered spaces.  In particular, we'll consider Legendrian knots in Seifert fibered spaces equipped with a special contact form.  This setting gives rise to both topological and contact geometric questions, and I'll describe some of the ingredients used to prove the Legendrian non-simplicity of an infinite family of knot types representing torsion homology classes.  This is joint work with J. Sabloff. <br /></p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">January 31</td>
+    	<td valign="top">Anastasiia Tsvietkova (UTK)</td>
+    	<td><a href="javascript:Toggle('January 31')">An alternative approach to hyperbolic structures on link complements</a>
+    <p id="January 31" style="display:none;">Thurston demonstrated that every link in S3 is a torus link, a satellite link or a hyperbolic link and these three categories are mutually exclusive. It also follows from work of Menasco that an alternating link represented by a prime diagram is either hyperbolic or a (2, n)�torus link.<br />A new method for computing the hyperbolic structure of the complement of a hyperbolic link, based on ideal polygons bounding the regions of a diagram of the link rather than decomposition of the complement into ideal tetrahedra, was suggested by M. Thistlethwaite. The method is applicable to all diagrams of hyperbolic links under a few mild restrictions. The talk will introduce the basics of the method. Some applications will be discussed, including a surprising rigidity property of certain tangles, a new numerical invariant for tangles, and formulas that allow one to calculate the volume of 2�bridged links directly from the diagram.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 7</td>
+    	<td valign="top">David Rose (Duke)</td>
+    	<td><a href="javascript:Toggle('February 7')">A categorification of quantum sl_3 projectors and the sl_3 Reshetikhin-Turaev invariants of tangles</a>
+    <p id="February 7" style="display:none;">We discuss a recent result of the speaker giving a categorification of quantum sl_3 projectors and the sl_3 Reshetikhin-Turaev invariants of framed tangles. In more detail, we will review Kuperberg's diagrammatic description of the category of representations of quantum sl_3 (which gives a combinatorial method for computing the quantum sl_3 invariant of links) as well as Morrison and Nieh's geometric categorification of this structure. We then show that there exist elements in Morrison and Nieh's categorification which correspond to projection onto highest weight irreducible summands and use these elements to construct a categorification of the sl_3 Reshetikhin-Turaev invariant, that is, a link homology theory from which the sl_3 invariant can be obtained by taking the graded Euler characteristic.<br /></p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 14</td>
+    	<td valign="top">Ben Cooper (UVA)</td>
+    	<td><a href="javascript:Toggle('February 14')">Homological generalizations of Hecke algebras</a>
+    <p id="February 14" style="display:none;">(In preparation) A family of algebras related to recent research in quantum topology and representation theory will be generalized using tools from topology. </p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 28</td>
+    	<td valign="top">Stefan Schwede (Bonn)</td>
+    	<td><a href="javascript:Toggle('February 28')">Equivariant properties of symmetric products</a>
+    <p id="February 28" style="display:none;">The filtration on the infinite symmetric product of spheres by number of factors provides a sequence of spectra between the sphere spectrum and the integral Eilenberg-Mac Lane spectrum. This filtration has received a lot of attention and the subquotients are interesting stable homotopy types.<br /><br />In this talk I will discuss the equivariant stable homotopy types, for finite groups, obtained from this filtration for the infinite symmetric product of representation spheres. The filtration is more complicated than in the non-equivariant case, and already on the zeroth homotopy groups an interesting filtration of the augmentation ideal of the Burnside rings arises. Our method is by `global' homotopy theory, i.e., we study the simultaneous behaviour for all finite groups at once. In this context, the equivariant subquotients are no longer rationally trivial, nor even concentrated in dimension 0.</p></td>
+    </tr>
+
+    <tr>
+    	<td>March 13</td>
+    	<td>Slava Krushkal (UVA)</td>
+    	<td>Slicing the Hopf link</td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 22</td>
+    	<td valign="top">Matt Hogancamp (UVA)</td>
+    	<td><a href="javascript:Toggle('March 22')">Categorification of Generalized Jones-Wenzl Projectors</a>
+    <p id="March 22" style="display:none;">The projections of tensor powers of the fundamental representation of quantum sl_2 onto the symmetric powers are called the Jones-Wenzl projectors. These have important applications to topology and have been categorified by previous authors. In this talk, we discuss a categorification of the entire decomposition of these tensor powers into irreducibles, and applications. This is joint work with Ben Cooper.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 27</td>
+    	<td valign="top">Margaret Doig (Indiana)</td>
+    	<td><a href="javascript:Toggle('March 27')">Finite surgeries</a>
+    <p id="March 27" style="display:none;">It is well known that any 3-manifold can be obtained by Dehn surgery on a link but not which ones can be obtained from a knot or which knots can produce them. We investigate these two questions for elliptic Seifert fibered spaces (other than lens spaces) using the Heegaard Floer ``correction terms'' or ``d-invariants'' associated to a 3-manifold Y and its torsion Spin^c structures. If H_1(Y ) is finite and small, the correction terms completely identify the manifolds which can be realized as knot surgeries and the knots which realize them; even when H_1(Y ) is larger (but still finite), the invariants help identify the manifolds and place restrictions on the knots.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 3</td>
+    	<td valign="top">James Conant (UTK)</td>
+    	<td><a href="javascript:Toggle('April 3')">Iterating the Whitney move</a>
+    <p id="April 3" style="display:none;">The Whitney move allows one to remove pairs of algebraically canceling intersections of an n-manifold embedded in a (2n)-manifold, where n > 2. It is well-known to fail when the ambient dimension is 4 because the Whitney disk that guides the move is not generically embedded. This leads to the idea of a Whitney tower, where one can pair the intersections of Whitney disks by �higher-order� Whitney disks, and repeat the process with these Whitney disks. We give a complete list of obstructions for a link in the 3-sphere to bound a Whitney tower of order n into the 4-ball, in terms of Milnor invariants, higher-order Sato-Levine invariants and higher-order Arf invariants. This is joint work with Rob Schneiderman and Peter Teichner.</p></td>
+    </tr>
+
+
+    <tr>
+    	<td valign="top">April 19</td>
+    	<td valign="top">Charles Frohman (University of Iowa)</td>
+    	<td><a href="javascript:Toggle('April 19')">SU(3) representations of web groups</a>
+    <p id="April 19" style="display:none;">I will explain a TQFT using the homology of representation spaces of the fundamental groups of the complements of webs in S^3.  ( A web is an oriented trivalent graph all of whose vertices are sources and sinks.)  This will be related to the sl_3 polynomial of links.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 24</td>
+    	<td valign="top">Tom Mark (UVA)</td>
+    	<td><a href="javascript:Toggle('April 24')">Floer homology and fractional Dehn twists</a>
+    <p id="April 24" style="display:none;">A fibered knot K in a 3-manifold Y gives rise to a contact structure on Y, which may or may not be tight. Composing the monodromy of K with sufficiently many right Dehn twists parallel to K always gives a tight contact structure (on a new 3-manifold), while after sufficiently many left twists the contact structure becomes overtwisted. I'll describe some work in progress that gives a bound on the number of twists required, depending only on Y. In particular, this proves a somewhat surprising fact, that the fractional Dehn twist coefficient of the monodromy of any fibered knot in Y is bounded by a constant determined by the Floer homology of Y.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">May 1</td>
+    	<td valign="top">Andras Stipsicz (IAS)</td>
+    	<td><a href="javascript:Toggle('May 1')">Knots in lattice homology</a>
+    <p id="May 1" style="display:none;">We introduce a filtration on the lattice homology<br />of a negative definite plumbing tree associated<br />to a further vertex and show how to determine<br />lattice homologies of surgeries on this last<br />vertex. We discuss the relation with Heegaard Floer<br />homology.</p></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>

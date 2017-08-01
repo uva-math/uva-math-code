@@ -1,0 +1,181 @@
+---
+title: University of Virginia Geometry Seminar 2012-13
+layout: static_page_no_right_menu
+permalink: /seminars/geometry/2012-13/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table >
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra" style="padding:5px">
+
+  <tr>
+  	<td>September 18</td>
+  	<td>Sean Droms (UVA)</td>
+  	<td>Spinal open books and Stein fillings</td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 2</td>
+  	<td valign="top">Laura Starkston (UT Austin)</td>
+  	<td><a href="javascript:Toggle('October 2')">Genus 2 mutation and the rank of knot homology theories</a>
+  <p id="October 2" style="display:none;">Though many classical knot invariants are unchanged by Conway mutation, it has been known for some time that bigraded knot Floer homology distinguishes some knots from their Conway mutants. Similarly bigraded integral Khovanov homology detects some Conway mutations of links. However, in all known examples, the total rank of each of these homology theories is unchanged by Conway mutation. In joint work with Allison Moore, we consider an infinite family of knot pairs, where each pair is related by a genus 2 mutation (a generalization of Conway mutation). Each knot is distinguished from its mutant pair by both knot Floer and Khovanov homologies as bigraded theories, but the rank of these homologies is constant. This provides positive evidence towards a conjecture that the rank of knot Floer and Khovanov homologies is invariant under genus 2 mutation.</p></td>
+  </tr>
+
+
+  <tr>
+  	<td valign="top">October 23</td>
+  	<td valign="top">Faramarz Vafaee (Michigan State)</td>
+  	<td><a href="javascript:Toggle('October 23')">Seifert surfaces distinguished by sutured Floer homology but not its Euler characteristic</a>
+  <p id="October 23" style="display:none;">We find a family of knots with trivial Alexander polynomial, and construct two non-isotopic Seifert surfaces for each member in our family. In order to distinguish the surfaces we study the sutured Floer homology invariants of the sutured manifolds obtained by cutting the knot complements along the Seifert surfaces. Our examples provide the first use of sutured Floer homology, and not merely its Euler char- acteristic (a classical torsion), to distinguish Seifert surfaces.</p></td>
+  </tr>
+
+
+  <tr>
+  	<td valign="top">November 6</td>
+  	<td valign="top">Matt Hogancamp (UVA)</td>
+  	<td><a href="javascript:Toggle('November 6')">A quasi-idempotent approach to link homology</a>
+  <p id="November 6" style="display:none;">By now there exist many categorifications of quantum link invariants, but as yet none of their ``colored'' versions (necessary to define an associated 3-manifold invariant) are functorial under link cobordisms.  In this talk I propose a categorification of the colored Jones polynomial which is likely to be functorial.  The construction uses a new, quasi-idempotent chain complex which categorifies a multiple of the Jones-Wenzl projector.<br /></p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">November 13</td>
+  	<td valign="top">Adam Levine (Brandeis)</td>
+  	<td><a href="javascript:Toggle('November 13')">Bordered Floer homology and splicing knot complements</a>
+  <p id="November 13" style="display:none;">We use bordered Floer homology to study 3-manifolds obtained by gluing together two knot complements (gluing meridian to longitude). If the knots are non-trivial knots in the 3-sphere, we show that the Heegaard Floer homology of the resulting manifold has rank greater than one. By extending this approach to knots in arbitrary homology spheres, we hope to prove that a manifold whose Heegaard Floer homology has rank one cannot contain an incompressible torus. This is joint work with Matt Hedden.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">December 4</td>
+  	<td valign="top">Anthony Mak (UVA)</td>
+  	<td><a href="javascript:Toggle('December 4')">Tight contact structures and contact invariants</a>
+  <p id="December 4" style="display:none;">Ozsvath and Szabo used Heegaard Floer homology to define an invariant of contact structures, where a non-vanishing invariant implies tightness. Using a surgery exact triangle for Heegaard Floer homology, Lisca and Stipsicz proved the existence of positive, tight contact structures on 3-manifolds resulted from contact surgeries on certain knots in the 3-sphere. After reviewing defintions and basic tools, I will outline the proof of this result.</p></td>
+  </tr>
+
+</tbody>
+</table>
+
+<hr />
+
+<table>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra"  style="padding:5px">
+
+    <tr>
+    	<td valign="top">February 19</td>
+    	<td valign="top">Amey Kaloti (Georgia Tech)</td>
+    	<td><a href="javascript:Toggle('February 19')">Stein fillings of planar open books</a>
+    <p id="February 19" style="display:none;">The goal of this talk is to study geography and classification problem for Stein fillings of contact structures supported by planar open books. In the first part we will prove that for contact structures supported by planar open books Stein fillings have a finite geography. In the second part we will talk about classification of Stein fillings of virtually overtwisted contact structures on lens space L(pn+p+1,n+1).</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 26</td>
+    	<td valign="top">Yi Li (Johns Hopkins)</td>
+    	<td><a href="javascript:Toggle('February 26')">A new way to Hopf's conjectures and Yau's problem</a>
+    <p id="February 26" style="display:none;">In this talk, I describe a way from geometric analysis to try to prove the Hopf conjectures on positively curved manifolds. Namely, any compact even dimensional Riemannian manifold of positive sectional curvature has positive Euler characteristic, and S^2 * S^2 can not admit any Riemannian metric of positive sectional curvature. Our method may also give an affirmative answer to a longstanding problem of Yau: does there exist an effective circle action on a compact Riemannian manifold of positive sectional curvature? This is a joint work with Kefeng Liu.<br /></p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 5</td>
+    	<td valign="top">Rui Wang (UW Madison)</td>
+    	<td><a href="javascript:Toggle('March 5')">Canonical connection on contact manifolds and its application to contact instantons</a>
+    <p id="March 5" style="display:none;">In this talk, I will define a new connection which we call the canonical connection associated to every contact triad. We use it to study the contact instanton which is a generalization of Hofer's pseudo-holomorphic curve in symplectization. I will sketch how to use this connection to study the asymptotic behavior of contact instanton and also other analytic properties. We expect to study the moduli space of such contact instantons and then to define a new type of contact homology without involving symplectization. This is a joint work with Yong-Geun Oh.</p></td>
+    </tr>
+
+
+    <tr>
+    	<td valign="top">April 2</td>
+    	<td valign="top">Michael Brandenbursky (Vanderbilt)</td>
+    	<td><a href="javascript:Toggle('April 2')">Quasi-isometric embeddings, quasi-morphisms and groups of geometric origin</a>
+    <p id="April 2" style="display:none;">Let M be a smooth compact connected oriented manifold of dimension at least two endowed with a volume form. Assuming certain<br />conditions on the fundamental group of M, I will construct quasi-isometric embeddings of either free Abelian or direct products of<br />non-Abelian free groups into the group of volume-preserving diffeomorphisms of M equipped with the L^p metric induced by a Riemannian metric on M. If time permits I will explain a relation between quasi-morphisms, the L^p metrics and quasi-isometric embeddings of vector spaces into the above group. <br /></p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 9</td>
+    	<td valign="top">Cheryl Balm (Michigan State)</td>
+    	<td><a href="javascript:Toggle('April 9')">Crossing changes, satellites and twisting operations</a>
+    <p id="April 9" style="display:none;">An easily stated question in knot theory asks when a crossing change in a knot diagram leaves the underlying knot unchanged.  We will explore a related question involving cosmetic generalized crossing changes, which are defined in terms of Dehn surgery in the knot complement.  In particular, we will find obstructions to the existence of cosmetic crossing changes in families of knots obtained from satellite and twisting operations on the torus.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 16</td>
+    	<td valign="top">Matthew Graham (Boston College)</td>
+    	<td><a href="javascript:Toggle('April 16')">Grid and Marked Movies</a>
+    <p id="April 16" style="display:none;">Recently Sarkar defined maps for the combinatorial version of knot Floer homology (HFK) whose underlying grid maps could be viewed as births, deaths and saddles. Juhasz has shown that the hat version of HFK is functorial with respect to smooth decorated cobordisms. This leads one to ask the question, "Do these grid diagram maps induce maps on HFK that are invariant with respect to smooth marked isotopy classes of surfaces?" In this talk I will discuss and provide the necessary topological constructions to make sense of this question. Specifically, I will introduce grid movies and show how they correspond to smooth embedded surfaces and I will generalize Carter, Rieger and Saito's movie move theorem: to grid movies; smooth marked movies; and grid marked movies. If there is time, I will briefly sketch some of the necessary steps to answer the motivating question in the affirmative.<br /></p></td>
+    </tr>
+
+    <tr>
+    	<td>April 23</td>
+    	<td>Matt Hogancamp (UVa)</td>
+    	<td>Thesis Defense: Local and quasi-local sl(2) link homology</td>
+    </tr>
+
+    <tr>
+    	<td>April 26</td>
+    	<td>Michael Freedman (Microsoft Station Q)</td>
+    	<td>Distortion of knots and complexes</td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 30</td>
+    	<td valign="top">Cagatay Kutluhan (Harvard)</td>
+    	<td><a href="javascript:Toggle('April 30')">Holonomy filtration and knots</a>
+    <p id="April 30" style="display:none;">Motivated by the construction of the isomorphisms between Heegaard Floer and Seiberg--Witten Floer homologies (joint with Yi-Jen Lee and Clifford H. Taubes), we will describe a (Z+Z)-filtered monopole knot homology isomorphic to Ozsvath-Szabo's knot Floer homology.</p></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>

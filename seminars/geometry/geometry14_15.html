@@ -1,0 +1,283 @@
+---
+title: University of Virginia Geometry Seminar 2014-15
+layout: static_page_no_right_menu
+permalink: /seminars/geometry/2014-15/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table >
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra" style="padding:5px">
+
+<tr>
+  <td valign="top">September 29</td>
+  <td valign="top">Yajing Liu (UCLA)</td>
+  <td><a href="javascript:Toggle('September 29')">L-space surgeries on links</a>
+    <p id="September 29" style="display:none;"> An L-space link is a link on which all large surgeries are L-spaces. These links turn out to be rich in geometry and simple in algebra. I will present some properties and examples of L-space links in contrast to L-space knots, give bounds on the ranks
+      of their Floer homology and on the coefficients in the multi-variable Alexander polynomials, and show that how to use Manolescu-Ozsvath link surgery formula to give a free resolution of the Floer homology of surgeries on any L-space links. As an
+      application, we compute the whole package of Heegaard Floer homology of surgeries on 2-component L-space links only in terms of Alexander polynomial and the surgery framing.</p>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">October 6</td>
+  <td valign="top">Mike Willis (UVa)</td>
+  <td><a href="javascript:Toggle('October 6')">The Khovanov homotopy type of Lipshitz and Sarkar</a>
+    <p id="October 6" style="display:none;"> This talk will introduce the Khovanov Flow Category which gives rise to the construction of the Lipshitz-Sarkar stable homotopy type of a knot (ie a suspension spectrum X(K)). The cohomology H*(X(K)) coincides with the Khovanov homology of the knot,
+      but the spectrum X(K) carries more information, including stable cohomology operations.</p>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">October 13</td>
+  <td valign="top">Steven Sivek (Princeton)</td>
+  <td><a href="javascript:Toggle('October 13')">Contact structures and reducible surgeries</a>
+    <p id="October 13" style="display:none;"> The cabling conjecture asserts that surgery on a knot in S^3 can only be a nontrivial connected sum if the knot is a (p,q)-cable of another knot and the surgery slope is pq. In this talk, I will use contact geometry to put strong restrictions on the
+      possible slopes of reducible surgeries below the Thurston-Bennequin number of a knot. In particular, if n-surgery on a positive hyperbolic knot K is irreducible, then we will see that n=2g(K)-1 and g(K) > 2. This is joint work with Tye Lidman.</p>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">October 27</td>
+  <td valign="top">Thomas Koberda (Yale)</td>
+  <td><a href="javascript:Toggle('October 27')">Convex cocompact subgroups of right-angled Artin groups (Special room: Kerchof 317)</a>
+    <p id="October 27" style="display:none;"> Convex cocompact groups originate in the study of the geometry of low-dimensional manifolds. An analogue of convex cocompactness in the theory of mapping class groups was developed by B. Farb and L. Mosher in 2001. Since then, convex cocompact subgroups
+      have been the subject of intense study, because they give insight into the geometry of mapping class groups as well as into the structure of Gromov-hyperbolic surface group extensions. In this talk, I will discuss the geometry of convex cocompact
+      subgroups of mapping class groups which arise from representations of right-angled Artin groups, as well as an analogue of convex cocompactness for subgroups of right-angled Artin groups. This represents joint work with J. Mangahas and S. Taylor.</p>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">November 3</td>
+  <td valign="top">Caitlin Leverson (Duke)</td>
+  <td><a href="javascript:Toggle('November 3')">Legendrian knots, augmentations, and ruling</a>
+    <p id="November 3" style="display:none;"> A Legendrian knot in R^3 with the standard contact structure is a knot for which dz-ydx=0. Given a Legendrian knot, one can associate the Chekanov-Eliashberg differential graded algebra (DGA) over Z/2. Fuchs and Sabloff showed there is a correspondence
+      between augmentations to Z/2 of the DGA and rulings of the knot diagram. Etnyre, Ng, and Sabloff showed that one can define a lift of the Chekanov-Eliashberg DGA over Z/2 to a DGA over Z[t,t^{-1}]. This talk will give an extension of the relationship
+      between rulings and augmentations to Z/2 of the DGA over Z/2, to a relationship between rulings and augmentations to a field of the DGA over Z[t,t^{-1}]. No knowledge of the Chekanov-Eliashberg DGA will be assumed.</p>
+  </td>
+</tr>
+
+
+<tr>
+  <td valign="top">November 17</td>
+  <td valign="top">Inanc Baykur (UMass Amherst)</td>
+  <td><a href="javascript:Toggle('November 17')">Multisections of Lefschetz fibrations and topology of symplectic 4-manifolds</a>
+    <p id="November 17" style="display:none;"> We initiate an extensive study of multisections of Lefschetz<br />fibrations via positive factorizations in framed mapping class groups.<br />Using our techniques, we can reformulate and tackle various interesting conjectures and problems related
+      to the topology of symplectic<br />4-manifolds. In this talk we will focus on the symplectic Kodaira dimension, and the conjectural smooth classification of symplectic Calabi-Yau surfaces and their fundamental groups in real dimension 4. If time
+      permits, we will discuss some other applications as well; such as Stipsicz&#39;s conjectures on minimality and fiber sum decompositions, constructions of inequivalent Lefschetz fibrations and exotic pencils. Joint work with K. Hayano.</p>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">November 24</td>
+  <td valign="top">Christopher Scaduto (UCLA)</td>
+  <td><a href="javascript:Toggle('November 24')">Instantons and odd Khovanov homology</a>
+    <p id="November 24" style="display:none;"> Consider the double cover of the 3-sphere branched over a link. We will discuss how the instanton homology of this 3-manifold is related to the Khovanov homology of the link. When signs (integer coefficients) are taken into account, the relevant link
+      homology is odd Khovanov homology, which is genuinely distinct from Khovanov homology. This material is motivated by work of Ozsváth and Szabó in the Heegaard-Floer setting.</p>
+  </td>
+</tr>
+
+
+<tr>
+  <td valign="top">December 8</td>
+  <td valign="top">Matt Hogancamp (Indiana)</td>
+  <td><a href="javascript:Toggle('December 8')">The stable Khovanov-Rozansky homology of torus knots</a>
+    <p id="December 8" style="display:none;"> In a series of surprising conjectures, Gorsky-Oblomkov-Rasmussen-Shende relate Khovanov-Rozansky homologies of the torus knot T(p,q) with the representation theory of the rational Cherednik algebra for SL_p. One such conjecture states that the triply
+      graded Khovanov-Rozansky homology has a well-defined limit as $q\to \infty$, and that this homology is very simple: it is a (super) polynomial ring. In this talk we discuss and outline a proof of this limiting version of their conjecture. Along
+      the way we discuss a categorified Young symmetrizer, which plays an essential role in our proof.</p>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">December 15</td>
+  <td valign="top">Michael Abel (VCU)</td>
+  <td><a href="javascript:Toggle('December 15')">An algebraic construction of colored HOMFLY-PT homology</a>
+    <p id="December 15" style="display:none;"> The HOMFLY-PT polynomial colored by one-column partitions, P_{1^n}(L) can be constructed by cabling a braid by objects known as Young antisymmetrizers in the Hecke algebra of S_n . In this talk, after reviewing the basic construction of HOMFLY-PT
+      homology, we will show how to categorify these objects in the homotopy category of Soergel bimodules. These categorical antisymmetrizers can also be twisted by permutations. Each of these twisted objects can be used to define a link homology theory
+      H_{1^n,w}(L) categorifying P_{1^n}(L). As an application we will give a method of computing the limit of the HOMFLY-PT homology of the (p,q)-torus knot as q approaches infinity. This is joint work with Matt Hogancamp.</p>
+  </td>
+</tr>
+
+</tbody>
+</table>
+
+<hr />
+
+<table>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra"  style="padding:5px">
+    <tr>
+      <td valign="top">January 20</td>
+      <td valign="top">Slava Krushkal (UVa)</td>
+      <td><a href="javascript:Toggle('January 20')">Engel relations and 4-manifolds</a>
+        <p id="January 20" style="display:none;"> The 2-Engel relation, classically studied in group theory, will be used to analyze the topological surgery conjecture, a long-standing problem in 4-manifold topology.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">January 27</td>
+      <td valign="top">Ina Petkova (Rice U)</td>
+      <td><a href="javascript:Toggle('January 27')">Combinatorial tangle Floer homology</a>
+        <p id="January 27" style="display:none;"> In joint work with Vera Vertesi, we extend the functoriality in<br />Heegaard Floer homology by defining a Heegaard Floer invariant for<br />tangles which satisfies a nice gluing formula. We will discuss the<br />construction of this combinatorial
+          invariant for tangles in S^3, D^3,<br />and I x S^2. The special case of S^3 gives back a stabilized version<br />of knot Floer homology.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">February 10</td>
+      <td valign="top">Julia Bennett (UT Austin)</td>
+      <td><a href="javascript:Toggle('February 10')">Large R^4&#39;s in Stein surfaces</a>
+        <p id="February 10" style="display:none;"> While many open 4-manifolds are known to admit uncountably many<br />diffeomorphism classes of smooth structures, it is still unknown if this<br />behavior can be expected in general. The goal of this talk is to introduce<br />a family of "large"
+          R^4&#39;s with the property that each is contained in some<br />compact Stein surface. We will discuss why these new R^4&#39;s are relevant to<br />understanding smoothing theory on more general open 4-manifolds and<br />outline their construction.
+          Along the way, we will define Casson handles<br />and describe their use in cut-and-paste arguments.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">February 17</td>
+      <td valign="top">Bulent Tosun (UVA)</td>
+      <td><a href="javascript:Toggle('February 17')">Tight small Seifert fibered manifolds</a>
+        <p id="February 17" style="display:none;"> The existence problem of a tight contact structure on a fixed three manifold is hard and still widely open. The classification problem is even less well-understood. In this talk, we will focus on the classification of tight contact structures
+          on (certain) Seifert fibered manifolds on which the existence problem was settled recently by Lisca and Stipsicz.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">February 24</td>
+      <td valign="top">Elizabeth Denne (Washington &amp; Lee)</td>
+      <td><a href="javascript:Toggle('February 24')">Ribbonlength for knot diagrams</a>
+        <p id="February 24" style="display:none;"> Abstract: Knots and links are modeled as ribbons immersed in the plane.<br />This is a 2-dimensional analogue of thick knots and the ropelength problem. This<br />talk will introduce the idea of a flat ribbon link and give examples of<br />&#39;tight&#39;
+          ribbonlength knots. It turns out there are some surprising<br />technicalities involved - moving from 3 to 2 dimensions does not<br />necessarily simplify the mathematics.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">March 3</td>
+      <td valign="top">Chris Manon (GMU)</td>
+      <td><a href="javascript:Toggle('March 3')">Toric geometry of moduli spaces of principal bundles on a curve</a>
+        <p id="March 3" style="display:none;"> For $C$ a smooth projective curve, and $G$ a simple, simply connected<br />complex group, let $M_C(G)$ be the moduli space of semistable<br />$G-$principal bundles on $C$. As the curve $C$ moves in the moduli<br />$\mathcal{M}_g$ of smooth curves,
+          the spaces $M_C(G)$ are known to<br />define a flat family of schemes, and this family can be extended to<br />the Deligne-Mumford compactification $\bar{\mathcal{M}}_g$. We<br />describe the geometry of the fibers of this family which appear
+          at the<br />stable boundary, in particular we discuss a recent result which shows<br />that the fibers over maximally singular curves contain an important<br />and ubiquitous moduli space, the free group character variety<br />$\mathcal{X}(F_g,
+          G),$ as a dense, open subspace. The latter is a<br />moduli space of representations of the free group $F_g$ in $G$, and<br />naturally appears as an object of interest in Teichm\"uller theory,<br />the theory of geometric structures, and the
+          theory of Higgs bundles.<br />For $G = SL_2(\C)$ and $SL_3(\C)$ we describe maximal rank valuations<br />on the coordinate rings of these spaces, and how the associated<br />Newton-Okounkov polyhedra can be used to study the geometry of both<br
+          />$\mathcal{X}(F_g, G)$ and $M_C(G).$</p>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td valign="top">March 17</td>
+      <td valign="top">James Conway (Georgia Tech)</td>
+      <td><a href="javascript:Toggle('March 17')">Tight Surgeries on Knots in Overtwisted Contact Manifolds</a>
+        <p id="March 17" style="display:none;"> Most work on surgeries in contact manifolds has focused upon determining the situations where tightness is preserved. We will discuss an approach to this problem from the reverse angle: when negative surgery on a fibred knot in an overtwisted
+          contact manifold produces a tight one. We will examine the various phenomena that occur, and discuss an approach to characterising them via Heegaard Floer homology.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">March 24</td>
+      <td valign="top">Samuel Lisi (U Mississippi)</td>
+      <td><a href="javascript:Toggle('March 24')">Symplectic Homology for Affine Algebraic Varieties</a>
+        <p id="March 24" style="display:none;"> Symplectic homology is a version of Floer homology defined for symplectic manifolds with contact-type boundaries. This invariant detects a number of interesting properties of Weinstein domains, and is very rich in many examples; for instance,
+          the symplectic homology of a cotangent bundle is isomorphic to the homology of the loop space (by Viterbo; Abbondandolo and Schwarz). <br />I will provide some background and motivation for studying symplectic homology, and will discuss the
+          computation of symplectic homology for certain affine algebraic varieties in terms of relative Gromov-Witten invariants. This is joint work with Luis Diogo.</p>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td valign="top">April 7</td>
+      <td valign="top">Adam Knapp (American Univ)</td>
+      <td><a href="javascript:Toggle('April 7')"> Towards a Seiberg-Witten stable homotopy type for 3-manifolds with boundary</a>
+        <p id="April 7" style="display:none;"> I will report on progress in defining an invariant of 3-manifolds with boundary in the spirit of C. Manolescu&#39;s stable homotopy type for rational homology 3-spheres.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">April 17</td>
+      <td valign="top">Mark Powell (MPIM Bonn)</td>
+      <td><a href="javascript:Toggle('April 17')">Casson towers and slice knots</a>
+        <p id="April 17" style="display:none;"> A Casson tower is constructed by thickening a 2-complex built from layers of immersed discs in a 4-manifold. A Casson tower has a height and an attaching circle, which is the boundary of its base disc. A higher tower, namely a tower with more
+          layers of immersed discs, is a better approximation to an embedded disc. Casson towers featured prominently in Freedman&#39;s original proof of the 4-dimensional topological Poincaré conjecture. In particular Freedman showed that an infinite
+          Casson tower, which is called a Casson handle, contains an embedded disc. The ability to embed discs is the key to being able to apply surgery and h-cobordism techniques, originally from high dimensional topology, to 4-manifolds.<br />I will
+          explain what a Casson tower is and present embedding results, from work with Jae Choon Cha, on Casson towers of height 4, 3 and 2. The height 2 result in particular can be used to find a new family of topologically slice knots. I will explain
+          why we think these slice knots are interesting.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">April 21</td>
+      <td valign="top">Marco Aldi (VCU) </td>
+      <td><a href="javascript:Toggle('April 21')">Odd dimensional generalized geometry</a>
+        <p id="April 21" style="display:none;"> Generalized geometry is the study of the geometry of the generalized tangent bundle (direct sum of the tangent and cotangent bundle) of a manifold. Partly because of the connection with physics, most of the literature on generalized geometry specializes
+          to even-dimensional manifolds. The odd-dimensional case, pioneered by Vaisman, Wade and Poon, is much less understood. In this talk we report on an on-going project (joint with D. Grandini) aimed at developing a unified framework that provides
+          generalized complex geometry concepts (such as type, pure spinors, T-duality etc.) with natural odd-dimensional counterparts.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">April 28</td>
+      <td valign="top">Radmila Sazdanovic (NC State)</td>
+      <td><a href="javascript:Toggle('April 28')">Relations between chromatic and Khovanov homology</a>
+        <p id="April 28" style="display:none;"> We analyze the algebraic structure of Khovanov homology and related chromatic homology<br />theories, with a focus on understanding torsion. Although computations hint at the abundance of torsion, describing and understanding it is no easy task.
+          We will discuss current results on 2-torsion, which we obtain using relations to chromatic graph homology theories and spectral sequence arguments. We also state non-existence results for odd torsion in certain gradings of Khovanov homology
+          of semi-adequate knots and links.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>
