@@ -584,7 +584,6 @@
 - name: " Lie Groups (3.00) "
   number: 8700
   graduate: true
-  offered: Fall 2017
   descr: " Studies basic results concerning Lie groups, Lie algebras, and the correspondence between them. "
 
 - name: " Lie Algebras (3.00) "

@@ -50,7 +50,9 @@ for i in range(1, len(data)):
             print "  graduate: true"
     else :
         if data[i][0] == "Offered" + current_semester :
-            print "  offered: " + current_semester
+            if data[i-1][0].replace("MATH ", "", 1) != "8700":
+                #somehow 8700 is offered on Lou's list but not in reality
+                print "  offered: " + current_semester
             # redo descriptions
             if data[i-1][0].replace("MATH ", "", 1) == "4900":
                 print "  descr: \"", "This course provides a framework for the completion of a Distinguished Major Thesis, a treatise containing an exposition of a chosen mathematical topic.  A faculty advisor guides a student through the beginning phases of the process of research and writing.  Prerequisite: Acceptance into the Distinguished Major Program.", "\""
