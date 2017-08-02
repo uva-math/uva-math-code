@@ -1,5 +1,6 @@
 ---
 UVA_id: lww8k
+published: false
 lastname: West
 name: Lloyd
 general_position: postdoc
