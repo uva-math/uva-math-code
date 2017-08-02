@@ -163,7 +163,7 @@
                 startMin + ' ' +
                 AmPm1(time[0]) + '</a></b>';
             }
-            var str = strBegin + '<h5 class="mt-1">' +
+            var str = strBegin + '<h5 class="mt-1" style="text-transform:none !important">' +
             item.summary + '</h5>' +
             getLocation(item.location) +
             getAbstract(item.description, item.htmlLink);
