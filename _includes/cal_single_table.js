@@ -196,7 +196,8 @@
                 tr.className = "mb-3";
                 var elem = (eventsArray[j]+'');
                 var dateTimeOfSem = (strBegin+'').split(propSep)[1];
-                tdd.innerHTML = dateTimeOfSem;
+                var dateTimeTable = startMonth + ' ' + startDay;
+                tdd.innerHTML = '<h6>' + dateTimeTable + '</h6>';
                 tdb.innerHTML = elem
                 tr.appendChild(tdd);
                 tr.appendChild(tdb);
@@ -215,7 +216,6 @@
 
 <div id='content'>
   <table >
-  <h3>Fall Semester</h3>
   <thead>
       <tr>
           <th width="12%">Date</th>
