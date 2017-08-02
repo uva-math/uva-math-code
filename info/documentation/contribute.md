@@ -17,17 +17,17 @@ The structure of the Math Department website
 allows everyone to contribute to updating its contents.
 Here are several examples:
 
-1. Every member of the Department can update own personal information, such as
+- Every member of the Department can update own personal information, such as
 research interests, selected publications, link to personal page, etc. See [here]({{site.url}}/doc/people/) for details.
 
-2. One can add news about conferences or seminar series being organized, and it will be displayed on the Department main page.
+- One can add news about conferences or seminar series being organized, and it will be displayed on the Department main page.
 See [here]({{site.url}}/doc/news/) for details.
 
-3. The website contains lots of information that should be kept up-to-date, including
+- The website contains lots of information that should be kept up-to-date, including
 undergraduate and graduate policies, etc. This can be updated by people in charge of these subjects.
 See [here]({{site.url}}/doc/ugg/) for details.
 
-4. Dedicated static pages can be created within the website, for example,
+- Dedicated static pages can be created within the website, for example,
 to host tutoring center information, etc. In this case, person(s) in charge would need to keep the information
 up to date. This brings an advantage of uniform style of all official pages, and includes version control of the source as a bonus.
 
