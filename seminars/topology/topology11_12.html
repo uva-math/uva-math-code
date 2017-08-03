@@ -1,0 +1,294 @@
+---
+title: University of Virginia Topology Seminar 2011-12
+layout: static_page_no_right_menu
+permalink: /seminars/topology/2011-12/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table width=100%>
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra">
+  <tr>
+  	<td>August 25</td>
+  	<td>Everyone</td>
+  	<td>Organizational Meeting</td>
+  </tr>
+
+  <tr>
+  	<td>September 1</td>
+  	<td>Nick Kuhn</td>
+  	<td>Dyer-Lashof operations in spectral sequences for towers</td>
+  </tr>
+
+  <tr>
+  	<td>September 8</td>
+  	<td>Mike Hill</td>
+  	<td>Equivariant Localizations</td>
+  </tr>
+
+  <tr>
+  	<td>September 15</td>
+  	<td>Greg Arone</td>
+  	<td>What is homotopy descent anyway?</td>
+  </tr>
+
+  <tr>
+  	<td valign="top">September 22</td>
+  	<td valign="top">John Etnyre (GA Tech)</td>
+  	<td><a href="javascript:Toggle('September 22')">The classification of Legendrian and transversal knots</a>
+  <p id="September 22" style="display:none;">The study of Legendrian and transverse knots has a long and rich history in contact topology, but in the last few years we been able to understand quite a lot of the qualitative features once can expect to see while studying such knots. I will survey what is known about the classification of these knots and discuss several outstanding problems in the area. </p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">September 29</td>
+  	<td valign="top">Jack Morava (JHU)</td>
+  	<td><a href="javascript:Toggle('September 29')">Diagonalizing the genome</a>
+  <p id="September 29" style="display:none;">In the 60's VI Arnol'd remarked that the space of real symmetric matrices has an interesting stratification, defined by eigenvalue multiplicity. Since these spaces parametrize families of harmonic oscillators, this stratification has applications to resonance phenomena in mechanics.<br /><br />In a posting at arXiv:1009.3224 (currently undergoing perestroika), Satyan Devadoss and I propose a kind of resolution of Arnol'd's stratification, relating compactified configuration spaces of eigenvalues to certain smooth aspherical spaces of trees [see arXiv:math/0507514 in one direction, and work of Vogtmann, Billera and Holmes in another]. We hope these will have useful applications in genetics; in any case they are a source of lots of nice picture.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 6</td>
+  	<td valign="top">Frank Quinn (VA Tech)</td>
+  	<td><a href="javascript:Toggle('October 6')">Modules over ring spectra, with ideas about applications to manifolds</a>
+  <p id="October 6" style="display:none;">Viewing modules over rings as spectra in the category of spaces over the classifying space of the units of the ring may have technical advantages. The eventual goal is a better understanding of characteristic features of smooth manifolds. Parts will be quite speculative.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 13</td>
+  	<td valign="top">Inna Zakharevic (MIT)</td>
+  	<td><a href="javascript:Toggle('October 13')">A K-theoretic construction of scissors congruence spectra</a>
+  <p id="October 13" style="display:none;">Hilbert's third problem asks the following question: given two polyhedra with the same volume, is it possible to dissect one into finitely many polyhedra and rearrange it into the other one?  The answer (due to Dehn in 1901) is no: there is another invariant that must also be the same.  Further work in the 60s and 70s generalized this to other geometries by constructing groups which encode scissors congruence data.  Though most of the computational techniques used with these groups related to group homology, the algebraic K-theory of various fields appears in some very unexpected places in the computations.  In this talk we will give a different perspective on this problem by examining it from the perspective of algebraic K-theory: we construct the K-theory spectrum of a scissors congruence problem and relate some of the classical structures on scissors congruence groups to structures on this spectrum.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 20</td>
+  	<td valign="top">Gereon Quick (Harvard)</td>
+  	<td><a href="javascript:Toggle('October 20')">Hodge filtered complex cobordism</a>
+  <p id="October 20" style="display:none;">We report on a joint project with Mike Hopkins and introduce Hodge filtered complex cobordism groups for complex manifolds. These groups combine integral topological and complex geometric information in analogy to differential cohomology groups for smooth manifolds. By taking the Hodge filtration into account these groups form a natural generalization of Deligne cohomolgy and become especially interesting for Kaehler manifolds.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 25</td>
+  	<td valign="top">Vincent Franjou (University of Nantes)</td>
+  	<td><a href="javascript:Toggle('October 25')">Higher invariant theory and power surjectivity</a>
+  <p id="October 25" style="display:none;">A classic problem in invariant theory, often referred to as Hilbert's 14th problem, asks, when a group acts on a finitely generated commutative algebra by algebra automorphisms, whether the ring of invariants is still finitely generated. The question extends to finite generation of the cohomology algebra of a group. We'll present recent progress and generalizations with a stress on the case of a general base ring.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 27</td>
+  	<td valign="top">Rosona Eldred (UIUC)</td>
+  	<td><a href="javascript:Toggle('October 27')">Nilpotence and Approximations of Functors</a>
+  <p id="October 27" style="display:none;">The study of polynomial functors (in the sense of Goodwille) and of nilpotent groups share strong similarities. We provide motivation of the development of Goodwillie's Taylor tower from its relationship to the lower central series of a group. As shown by Biedermann and Dwyer, the Goodwillie polynomial approximations to a functor naturally take values in spaces with an interesting nilpotence condition. We recover this result by establishing a stronger property on the finite limits used to construct the polynomial approximations.</p></td>
+  </tr>
+
+  <tr>
+  	<td>October 31</td>
+  	<td>Everyone</td>
+  	<td>Halloween Party! (6-9pm)</td>
+  </tr>
+
+  <tr>
+  	<td>November 3</td>
+  	<td>Jason McCarty (UVA)</td>
+  	<td>Examples of exotic convergence in a spectral sequence for H_*(Omega^infty X)</td>
+  </tr>
+
+  <tr>
+  	<td valign="top">November 10</td>
+  	<td valign="top">Teena Gerhardt (MSU)</td>
+  	<td><a href="javascript:Toggle('November 10')">Cyclotomic spectra and computations in algebraic K-theory</a>
+  <p id="November 10" style="display:none;">In this talk I will describe joint work with Vigleik Angeltveit, Mike Hill, and Ayelet Lindenstrauss, yielding new computations of algebraic K-theory groups. In particular, we consider the K-theory of truncated polynomial algebras in several variables. Techniques from equivariant stable homotopy theory are often key to algebraic K-theory computations. In this case we use n-cubes of cyclotomic spectra to compute the topological cyclic homology, and hence K-theory, of the rings in question.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">November 17</td>
+  	<td valign="top">John Francis (Northwestern)</td>
+  	<td><a href="javascript:Toggle('November 17')">Factorization homology of topological manifolds</a>
+  <p id="November 17" style="display:none;">I'll describe an axiomatic characterization of factorization homology (a.k.a. topological chiral homology) of topological manifolds, in a sense analogous to (and generalizing) the Eilenberg-Steenrod axioms for usual homology. I'll then present some classes of computations of factorization homology, conjecture on its relation to previously studied invariants, and speculate just how refined of a manifold invariant it is -- for example, it's not homotopy invariant.</p></td>
+  </tr>
+
+  <tr>
+  	<td>November 24</td>
+  	<td>No Seminar</td>
+  	<td>Thanksgiving</td>
+  </tr>
+
+  <tr>
+  	<td valign="top">December 1</td>
+  	<td valign="top">Kyle Ormsby (MIT)</td>
+  	<td><a href="javascript:Toggle('December 1')">Tate normal form in level resolutions of the K(2)-local sphere</a>
+  <p id="December 1" style="display:none;">The K(2)-localization of the sphere spectrum admits a conjectural small resolution built from TMF and "TMF with level structures" --- the evaluation of the TMF sheaf on the stack of elliptic curves equipped with an order l subgroup. In this talk, I will use variations on Tate normal form to describe several Hopf algebroids that stackify to elliptic curves with level structure. These Hopf algebroids lead to computations of the Behrens-Lawson spectrum Q(l), a height 2 analogue of the image of J. This is current work with Mark Behrens, Nat Stapleton, and Vesna Stojanoska.</p></td>
+  </tr>
+
+  <tr>
+  	<td>December 8</td>
+  	<td>Daniel Pryor (UVA)</td>
+  	<td>Topological Categories and Manifold Calculus</td>
+  </tr>
+</tbody>
+</table>
+
+<hr />
+
+<table width=100%>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra">
+    <tr>
+    	<td>January 19</td>
+    	<td>Everyone</td>
+    	<td>Organizational Meeting</td>
+    </tr>
+
+    <tr>
+    	<td>January 26</td>
+    	<td>Nick Kuhn (UVA)</td>
+    	<td>Iterated Dyer-Lashof operations and Hecke algebras of type A</td>
+    </tr>
+
+    <tr>
+    	<td>February 9</td>
+    	<td>Kristen Mazur (UVA)</td>
+    	<td>Presenting Tambara Functors</td>
+    </tr>
+
+    <tr>
+    	<td>February 9</td>
+    	<td>Carolyn Yarnall (UVA)</td>
+    	<td>The Equivariant Slice Filtration</td>
+    </tr>
+
+    <tr>
+    	<td>February 16</td>
+    	<td>Greg Arone (UVA)</td>
+    	<td>Sharp decompositions of equivariant homology</td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 23</td>
+    	<td valign="top">David Ayala (Harvard)</td>
+    	<td><a href="javascript:Toggle('February 23')">Locally standard geometries and algebraic structures</a>
+    <p id="February 23" style="display:none;">For M a suitable category of topological spaces which are locally prescribed, I will characterize homology theories on M in terms of algebraic data.  Examples of such a category includes that of n-manifolds for some fixed n, and that of 3-manifolds with an embedded 1-manifold; examples of such algebraic data is that of an E_n algebra, or an associative algebra with a suitable action of an E_3 algebra.  For such a collection M, I will also discuss Poincare' duality with coefficients in an algebra in the sense of this algebraic data.  The techniques involve (higher) operads and category theory.  This work is joint with John Francis and Hiro Tanaka.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 28</td>
+    	<td valign="top">Stefan Schwede (Bonn)</td>
+    	<td><a href="javascript:Toggle('February 28')">Equivariant properties of symmetric products</a>
+    <p id="February 28" style="display:none;">The filtration on the infinite symmetric product of spheres by number of factors provides a sequence of spectra between the sphere spectrum and the integral Eilenberg-Mac Lane spectrum. This filtration has received a lot of attention and the subquotients are interesting stable homotopy types.<br /><br />In this talk I will discuss the equivariant stable homotopy types, for finite groups, obtained from this filtration for the infinite symmetric product of representation spheres. The filtration is more complicated than in the non-equivariant case, and already on the zeroth homotopy groups an interesting filtration of the augmentation ideal of the Burnside rings arises. Our method is by `global' homotopy theory, i.e., we study the simultaneous behaviour for all finite groups at once. In this context, the equivariant subquotients are no longer rationally trivial, nor even concentrated in dimension 0.</p></td>
+    </tr>
+
+    <tr>
+    	<td>March 1</td>
+    	<td>Olga Stroilova (MIT)</td>
+    	<td>t_k and L(n)</td>
+    </tr>
+
+    <tr>
+    	<td>March 8</td>
+    	<td>No Seminar</td>
+    	<td>Spring Break</td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 15</td>
+    	<td valign="top">John Klein (Wayne State)</td>
+    	<td><a href="javascript:Toggle('March 15')">Algebraic Topology and the Quantization of Fluctuating Currents</a>
+    <p id="March 15" style="display:none;">We use algebraic topological methods to study the statistical distributions of stochastic currents generated in graphs. We demonstrate that in the adiabatic and low temperature limits that quantization of current generation occurs.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 20</td>
+    	<td valign="top">Robin Koytcheff (Brown)</td>
+    	<td><a href="javascript:Toggle('March 20')">A colored operad for infection of links</a>
+    <p id="March 20" style="display:none;">Ryan Budney recently constructed an operad that encodes splicing of knots and extends his little 2-cubes action on the space of (long) knots.  He further showed that the space of knots is freely generated over the splicing operad by the subspace of torus and hyperbolic knots.  Infection of knots (or links) by string links is a generalization of splicing from knots to links and is useful for studying concordance of knots.  In joint work in progress with John Burke, we construct a colored operad that encodes this infection operation and use it to study the space of links.</p></td>
+    </tr>
+
+    <tr>
+    	<td>March 29</td>
+    	<td>Mike Hill (UVA)</td>
+    	<td>What do we mean by 'G-symmetric monoidal'?</td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 12</td>
+    	<td valign="top">Anna Marie Bohmann (Northwestern)</td>
+    	<td><a href="javascript:Toggle('April 12')">The Equivariant Generating Hypothesis</a>
+    <p id="April 12" style="display:none;">Freyd's generating hypothesis is a long-standing conjecture in stable homotopy theory.  The conjecture says that if a map between finite spectra induces the zero map on homotopy groups, then it must actually be nullhomotopic. We formulate the appropriate version of this conjecture in the equivariant setting.  We then give some results about this equivariant version and compare them to the nonequivariant results. In particular, we show that the rational version of this conjecture holds when the group of equivariance is finite, but fails when the group is S^1.  This result uses Greenlees's description of the rational S^1-equivariant homotopy category.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 19</td>
+    	<td valign="top">Charles Frohman (UIA)</td>
+    	<td><a href="javascript:Toggle('April 19')">SU(3) representations of web groups</a>
+    <p id="April 19" style="display:none;">I will explain a TQFT using the homology of representation spaces of the fundamental groups of the complements of webs in S^3.  ( A web is an oriented trivalent graph all of whose vertices are sources and sinks.)  This will be related to the sl_3 polynomial of links.</p></td>
+    </tr>
+
+    <tr>
+    	<td>May 1</td>
+    	<td>End of Semester Party!</td>
+    	<td></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">May 3</td>
+    	<td valign="top">Bill Dwyer (Notre Dame)</td>
+    	<td><a href="javascript:Toggle('May 3')">Exterior algebras run amok</a>
+    <p id="May 3" style="display:none;">This is about differential graded algebras (DGAs) whose homology is an exterior algebra of degree -1 over a ring R, where R is either the integers or the integers mod p. For R=Z, up to equivalence there is only one DGA, but it has many modules of even the simplest kind. (The existence of so many modules violates a fundamental tenet of topology.) For R=Z/p, there are many DGAs, but each one has only a single module of the simplest kind. This distressing work is joint with J. Greenlees and S. Iyengar.</p></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>

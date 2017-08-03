@@ -1,0 +1,213 @@
+---
+title: University of Virginia Topology Seminar 2006-07
+layout: static_page_no_right_menu
+permalink: /seminars/topology/2006-07/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table width=100%>
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra">
+  <tr>
+          <td>September 7 </td>
+          <td>Mike Hill (UVa) </td>
+          <td>Adams Spectral Sequence for ko, tmf, &amp; eo_{p-1}</td>
+      </tr>
+      <tr>
+          <td>September 14</td>
+          <td>Nick Kuhn (UVa)</td>
+          <td>Introduction to the Telescope Conjecture </td>
+      </tr>
+      <tr>
+          <td>September 21</td>
+          <td>Michael Ching (JHU)</td>
+          <td>Chain Rule for Goodwillie Derivatives </td>
+      </tr>
+      <tr>
+          <td>September 28</td>
+          <td>Jacob Lurie (Harvard)</td>
+          <td><a href="javascript:Toggle('Jacob')">Equivariant Cohomology via Algebraic Groups</a>
+          <p id="Jacob" style="display:none">I will explain how the study of group schemes in derived algebraic geometry leads naturally to the construction of equivariant cohomology theories. In particular, I will sketch a purely algebraic construction of equivariant K-theory and provide an interpretation of Snaith's theorem, which relates complex K-theory to the suspension spectrum of CP^{infty}.</p></td>
+      </tr>
+      <tr>
+          <td>October 5</td>
+          <td>Nick Kuhn (UVa)</td>
+          <td>Introduction to the Telescope Conjecture II</td>
+      </tr>
+      <tr>
+          <td>October 12</td>
+          <td>Kai-Uwe Bux (UVa)</td>
+          <td><a href="javascript:Toggle('KaiUwe')">Connectivity of Spheres and Horospheres in Euclidean Buildings</a>
+          <p id="KaiUwe" style="display:none">Let $X$ be a Euclidean building of dimension $m$. The Tits-Solomon theorem implies that metric spheres of small diameter are $(m-1)$-spherical. We show that this generalizes to metric spheres of arbitrary size. If $X$ is irreducible, we want to show that horospheres are also $(m-2)$-connected, and we may already have a proof. This is joint with Kevin Wortman (Yale). </p></td>
+      </tr>
+      <tr>
+          <td>October 19</td>
+          <td>Mike Hill (UVa)</td>
+          <td>Computing THH of ku</td>
+      </tr>
+      <tr>
+          <td>October 26</td>
+          <td>Nik Saveliev (U of Miami)</td>
+          <td>End-Periodic Dirac Operators and Applications to Topology</td>
+      </tr>
+      <tr>
+          <td>November 2</td>
+          <td>Nick Kuhn (UVa)</td>
+          <td>Central Detection Numbers in Group Cohomology</td>
+      </tr>
+      <tr>
+          <td>November 9</td>
+          <td>Nick Kuhn (UVa)</td>
+          <td>Central Detection Numbers is Group Cohomology II</td>
+      </tr>
+      <tr>
+          <td>November 16</td>
+          <td>Stefan Schwede (Bonn / MIT)</td>
+          <td>On the Homotopy Groups of Symmetric Spectra</td>
+      </tr>
+      <tr>
+          <td>November 23</td>
+          <td>No Seminar</td>
+          <td>Thanksgiving</td>
+      </tr>
+      <tr>
+          <td>November 30</td>
+          <td>Brendan Owens</td>
+          <td>Knots, Crossing Changes, and Heegaard Floer Homology</td>
+      </tr>
+      <tr>
+          <td>December 7</td>
+          <td>Bob Stong (UVa)</td>
+          <td>SU(n)/SO(n): Landweber's manifolds <a href="StongSUnSOn.pdf">Bob's Notes</a></td>
+      </tr>
+</tbody>
+</table>
+
+<hr />
+
+<table width=100%>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra">
+    <tr>
+    <td>January 18</td>
+    <td><a href="http://www.math.virginia.edu/~zga2m/">Greg Arone (UVA)</a></td>
+    <td>Deloopings for Connecting Maps in Taylor Towers <a href="AroneDelooping.pdf">Notes</a></td>
+    </tr>
+    <tr>
+    <td>January 25</td>
+    <td>Pascal Lambrechts</td>
+    <td>Blowups of Symplectic Manifolds and Rational Homotopy Theory</td>
+    </tr>
+    <tr>
+    <td>February 8</td>
+    <td>John Etnyre (Georgia Tech)</td>
+    <td>Lefschetz Fibrations and the Topology of 4 Manifolds</td>
+    </tr>
+    <tr>
+    <td>February 15</td>
+    <td><a href="http://www.math.virginia.edu/Faculty/Kuhn/">Nick Kuhn (UVA)</a></td>
+    <td>The Whitehead Conjecture</td>
+    </tr>
+    <tr>
+    <td>February 22</td>
+    <td><a href="http://www.math.virginia.edu/Faculty/Kuhn/">Nick Kuhn (UVA)</a></td>
+    <td>The Whitehead Conjecture II</td>
+    </tr>
+    <tr>
+    <td>March 1</td>
+    <td><a href="http://people.virginia.edu/~mah7cd/">Mike Hill (UVA)</a></td>
+    <td>THH(\ell) and THH(ko)</td>
+    </tr>
+    <tr>
+    <td>March 8</td>
+    <td>No Seminar</td>
+    <td>Spring Break</td>
+    </tr>
+    <tr>
+    <td>March 15</td>
+    <td>Soren Galatius (Stanford)</td>
+    <td><a href="javascript:Toggle('Soren')">Homotopy Type of the Cobordism Category</a>
+    <p id="Soren" style="display:none">The d-dimensional cobordism category C_d has closed (d-1)-dimensional manifolds as objects and compact d-dimensional cobordisms as morphisms. Thom's theorem determines pi_0 of the classifying space BC_d. I will discuss joint work with Madsen, Tillmann and Weiss, in which we determine the homotopy type of BC_d. As a corollary we get a new proof of Madsen-Weiss' generalized Mumford conjecture. <a href="http://arxiv.org/abs/math/0605249">arXiv</a></p></td>
+    </tr>
+    <tr>
+    <td>March 22</td>
+    <td><a href="http://www.math.virginia.edu/~vk6e/">Slava Krushkal (UVA)</a></td>
+    <td>Topological Arbiters</td>
+    </tr>
+    <tr>
+    <td>April 12</td>
+    <td>TBA </td>
+    <td>TBA</td>
+    </tr>
+    <tr>
+    <td>April 19</td>
+    <td>Frank Quinn (VA Tech)</td>
+    <td>K-theory of Infinite Groups</td>
+    </tr>
+    <tr>
+    <td>April 26</td>
+    <td>Jim Belk (Texas A&M)</td>
+    <td>Conjugacy and Dynamics in Thompson's Groups</td>
+    </tr>
+    <tr>
+    <td>May 3</td>
+    <td>Joanna Kania-Bartoszynska (NSF)</td>
+    <td>TBA</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>

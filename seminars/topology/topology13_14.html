@@ -1,0 +1,171 @@
+---
+title: University of Virginia Topology Seminar 2013-14
+layout: static_page_no_right_menu
+permalink: /seminars/topology/2013-14/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table width=100%>
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra">
+  <tr>
+  	<td>August 29</td>
+  	<td>Everyone!</td>
+  	<td>Topology Seminar Planning Meeting</td>
+  </tr>
+
+  <tr>
+  	<td>September 5</td>
+  	<td>Nick Kuhn (UVA)</td>
+  	<td>Stable Splittings and Consequences</td>
+  </tr>
+
+  <tr>
+  	<td valign="top">September 12</td>
+  	<td valign="top">Brian Munson (Naval Academy)</td>
+  	<td><a href="javascript:Toggle('September122.00pm')">Generalizations of Milnor's Invariants</a>
+  <p id="September122.00pm" style="display:none;">Milnor's invariants of linked circles in three-dimensional Euclidean space were designed to generalize the classical linking number and to detect linking of links such as the Borromean rings, which are pairwise unlinked and yet clearly distinguishable from the unlink. Koschorke generalized Milnor's invariants to define linking invariants of spheres of arbitrary dimension in Euclidean space using stable homotopy and cobordism theory. I will discuss a generalization of Koshorke's work to define linking of arbitrary manifolds in Euclidean space and how it fits into the framework of the manifold calculus of functors. One perspective that arises is the suggestion that the linking number and its higher-order generalizations ought to be thought of as relative (and multi-relative) invariants of spaces of link maps. I will also discuss a geometric interpretation of these invariants in terms of an over-crossing locus (first described by Koschorke) which is reminiscent of one definition of the classical linking number.</p></td>
+  </tr>
+
+  <tr>
+  	<td>September 19</td>
+  	<td>Luis Periera (UVA)</td>
+  	<td>Calculus of algebras over a spectral operad</td>
+  </tr>
+
+  <tr>
+  	<td valign="top">September 26</td>
+  	<td valign="top">Greg Arone (UVA)</td>
+  	<td><a href="javascript:Toggle('September262.00pm')">Tverberg's theorem and algebraic topology</a>
+  <p id="September262.00pm" style="display:none;">Tverberg's theorem is a classical fact about finite subsets of R^n. Algebraic topology provides an interesting perspective on this result and suggests some generalizations. I will try to explain what this is all about. This is going to be a survey talk, directed primarily at graduate students.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 3</td>
+  	<td valign="top">Lennart Meier (UVA)</td>
+  	<td><a href="javascript:Toggle('October32.00pm')"> Homotopy Fixed Points of Landweber Exact Theories</a>
+  <p id="October32.00pm" style="display:none;">Let $E$ be a Landweber exact spectrum (like $K$-theory or elliptic homology) with an action by a finite group $G.$ The talk is concerned with the following two questions: 1) When is the norm map from the homotopy orbits to the homotopy fixed points an equivalence? 2) When are $G$-equivariant $E$-modules equivalent to $E^{hG}$-modules? If there is enough time, the answers will then be generalized to derived schemes that are locally Landweber exact.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 10</td>
+  	<td valign="top">Mike Hill (UVA)</td>
+  	<td><a href="javascript:Toggle('October102.00pm')">An operadic approach to norms and transfers</a>
+  <p id="October102.00pm" style="display:none;">I'll describe joint work with Blumberg which explains how to find the transfer and norm maps in the operadic structure describing an equivariant infinite loopspace.</p></td>
+  </tr>
+
+  <tr>
+  	<td>October 17</td>
+  	<td>Mike Hill (UVA)</td>
+  	<td>On the transfer</td>
+  </tr>
+
+  <tr>
+  	<td>October 31</td>
+  	<td>Everyone</td>
+  	<td>Halloween Party!</td>
+  </tr>
+
+  <tr>
+  	<td>November 14</td>
+  	<td>Nick Kuhn (UVA)</td>
+  	<td>A direct proof that the total space of a universal bundle is contractible</td>
+  </tr>
+
+  <tr>
+  	<td valign="top">November 21</td>
+  	<td valign="top">David White (Wesleyan)</td>
+  	<td><a href="javascript:Toggle('November212.00pm')">Bousfield Localization and Algebras over Operads</a>
+  <p id="November212.00pm" style="display:none;">We give conditions on a monoidal model category M and on a set of maps S so that the Bousfield localization of M with respect to S preserves the structure of algebras over various operads. This problem was motivated by an example due to Mike Hill which demonstrates that for the model category of equivariant spectra, even very nice localizations can fail to preserve commutativity. A recent theorem of Hill and Hopkins gives conditions on the localization to prohibit this behavior. When we specialize our general machinery to the model category of equivariant spectra we recover this theorem. Furthermore, Blumberg and Hill have recently discovered a tower of operads which interpolates between naive and genuine commutativity for equivariant spectra, and our results apply to these intermediate operads as well.<br /><br />In general model categories, strict commutativity is not the same as E-infinity structure. We provide conditions on M and S such that strict commutative structure is preserved. En route we will introduce the commutative monoid axiom, which guarantees us that commutative monoids inherit a model structure. This axiom has a nice generalization which gives model structures and semi-model structures on algebras over an operad for various classes of non-cofibrant operads. If there is time we will discuss this and say a word about how it interacts with Bousfield localization.</p></td>
+  </tr>
+
+  <tr>
+  	<td>November 28</td>
+  	<td>No Seminar</td>
+  	<td>Thanksgiving</td>
+  </tr>
+</tbody>
+</table>
+
+<hr />
+
+<table width=100%>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra">
+    <tr>
+    	<td valign="top">January 23</td>
+    	<td valign="top">Nick Kuhn</td>
+    	<td><a href="javascript:Toggle('January232.00pm')">Representation theory and the cohomology of finite groups</a>
+    <p id="January232.00pm" style="display:none;">I'll discuss how one uses the minimal dimension of a faithful representation, and similar, to get good bounds on the degrees of generators, and similar, for the mod p cohomology ring of a finite group.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 20</td>
+    	<td valign="top">Victor Turchin (KSU)</td>
+    	<td><a href="javascript:Toggle('February202.00pm')">Spaces of non-k-equal configurations and spaces of non-k-equal immersions</a>
+    <p id="February202.00pm" style="display:none;">The homology of spaces of non-k-equal configurations of points<br />in a euclidean space are well known but have a rather complicated<br />combinatorial description. In a joint work with Natalya Dobrynskaya we<br />found a more natural geometric description of this homology based on an<br />operadic approach. A the end of the talk I will explain how this operadic<br />structure intervenes in the study of spaces of non-k-equal immersions.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 27</td>
+    	<td valign="top">Andrew Marshall</td>
+    	<td><a href="javascript:Toggle('March272.00pm')">Linear Configurations of Skeleta of Simplices.</a>
+    <p id="March272.00pm" style="display:none;">Braid groups arise as fundamental groups of configurations of points in the plane.  In this talk we'll look at the analogous group one gets from linear configurations of a tetrahedral graph $K_5$ in $\mathbb R^3$, and two families of higher dimensional analogs.  Surprisingly, the similar configuration space with $K_5$ in place of $K_4$, has the same homotopy type as the $K_4$ case, and this homotopy equivalence holds between the higher dimensional analogs.</p></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>

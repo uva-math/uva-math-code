@@ -1,0 +1,262 @@
+---
+title: University of Virginia Topology Seminar 2012-13
+layout: static_page_no_right_menu
+permalink: /seminars/topology/2012-13/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table width=100%>
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra">
+  <tr>
+  	<td>August 30</td>
+  	<td>Everyone</td>
+  	<td>Organizational Meeting</td>
+  </tr>
+
+  <tr>
+  	<td>September 6</td>
+  	<td>Nick Kuhn (UVA)</td>
+  	<td>Differential Graded Hopf Algebras</td>
+  </tr>
+
+  <tr>
+  	<td valign="top">September 13</td>
+  	<td valign="top">Carolyn Yarnall (UVA) </td>
+  	<td><a href="javascript:Toggle('September 13')"> Determining Slice Towers</a>
+  <p id="September 13" style="display:none;">I will begin by recalling the definition of the slice filtration along with some of its basic properties. Then I will discuss some computational methods for determining the slice towers of suspensions of the Eilenberg-MacLane spectrum associated to the constant Mackey functor for a cyclic p-group and provide some specific examples.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">September 20</td>
+  	<td valign="top">Mike Hill (UVA)</td>
+  	<td><a href="javascript:Toggle('September 20')">$[G]-E_\infty$ ring spectra</a>
+  <p id="September 20" style="display:none;">The talk will be in two parts:<br />I. General discussion of "What does $E_\infty$ mean?"<br />II. How does this apply in an equivariant context?</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">September 27</td>
+  	<td valign="top">Kate Ponto (UKY)</td>
+  	<td><a href="javascript:Toggle('September 27')">Multiplicativity of fixed point invariants</a>
+  <p id="September 27" style="display:none;">For a fibration (with a connected base space) the Euler characteristic of the total space is the product of the Euler characteristics of the base and fiber.  If the fibration satisfies restrictive additional hypotheses this extends to generalizations of the Euler characteristic such as the Lefschetz number and Nielsen number.  Recently Mike Shulman and I have extended these results to the Reidemeister trace and eliminated many of the classical hypotheses.  The key to our approach is to think of the Euler characteristic as an endomorphism rather an integer.  With this change in perspective, the product of integers becomes a composite of functions.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 4</td>
+  	<td valign="top">Sean Tilson (Wayne State)</td>
+  	<td><a href="javascript:Toggle('October 4')">Power operations and the Kunneth spectral sequence</a>
+  <p id="October 4" style="display:none;">Power operations have been constructed and successfully utilized in the Adams and Homological Homotopy Fixed Point Spectral Sequences by Bruner and Bruner-Rognes. It was thought that such results were not specific to the spectral sequence, but rather that they arose because highly structured ring spectra are involved. In this talk, we show that while the Kunneth Spectral Sequence enjoys some nice multiplicative properties, the relevant algebraic operations are zero (other than the square). Despite the negative results we are able to use old computations of Steinberger's with our current work to compute operations in the homotopy of some relative smash products.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 11</td>
+  	<td valign="top">Dustin Clausen (MIT)</td>
+  	<td><a href="javascript:Toggle('October 11')">p-adic J-homomorphisms</a>
+  <p id="October 11" style="display:none;">I'll start by recalling the real J-homomorphism.  Then I'll introduce its p-adic analogs, which more-or-less replace the use of real numbers in the real J-homomomrphism with p-adic numbers.  Then I'll explain two results that show the analogy of these p-adic J-homomorphisms with the real J-homomorphism:  first, they produce essentially the same elements of the stable stem (the classical "image of J" elements); and second, there is a "product formula" connecting all the J-homomorphisms (real and p-adic). This product formula is a generalization of the quadratic reciprocity law of number theory.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 18</td>
+  	<td valign="top">Claire Tomesch (UChicago)</td>
+  	<td><a href="javascript:Toggle('October 18')">Categories of Cohesion and 'Discretized' Model Categories</a>
+  <p id="October 18" style="display:none;">The purpose of this talk is to describe a notion of category of cohesion -- a concept of Lawvere introduced to describe 'relative discreteness' -- and its role in defining and understanding a model structure on Simpson-Tamsamani style versions of weak n-categories. The main payoff of this approach is an iterable construction of a model structure which takes into account the special role of 'discrete' objects.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 25</td>
+  	<td valign="top">Vesna Stojanoska (MIT)</td>
+  	<td><a href="javascript:Toggle('October 25')">A study of tmf cooperations</a>
+  <p id="October 25" style="display:none;">We combine three strategies to studying cooperations in connective topological modular forms: the Adams spectral sequence and its relation to Brown-Gitler modules following Mahowald's approach to cooperations in connective real K theory, Laures's theory of q-expansions of multi-variable modular forms, as well as level structure approximations. As a result, we obtain an algorithmic procedure for determining the structure of the smash product of tmf with itself.<br /><br />This is a report on joint work in progress with Behrens, Ormsby, and Stapleton.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 31</td>
+  	<td valign="top">Costumes!</td>
+  	<td><a href="javascript:Toggle('October 31')">Halloween Party (6-9PM)</a>
+  <p id="October 31" style="display:none;">Come prepared to hand out candy, carve pumpkins, and socialize. Prizes / good karma awarded for coming in costume!</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">November 1</td>
+  	<td valign="top">Emily Riehl (Harvard)</td>
+  	<td><a href="javascript:Toggle('November 1')">Homotopy coherent adjunctions of quasi-categories</a>
+  <p id="November 1" style="display:none;">We show that an adjoint functor between quasi-categories may be extended to a simplicially enriched functor whose domain is an explicitly presented "homotopy coherent adjunction". This enriched functor encapsulates both the coherent monad and the coherent comonad generated by the adjunction. Furthermore, because its domain is cofibrant, this data can be used to construct explicit quasi-categories of (co)algebras. Given time, we describe how our techniques can also be used to re-prove many of the foundational results about the category theory of quasi-categories. This is joint work with Dominic Verity.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">November 8</td>
+  	<td valign="top">John Lind (JHU)</td>
+  	<td><a href="javascript:Toggle('November 8')">Higher geometry and algebraic K-theory</a>
+  <p id="November 8" style="display:none;">A cohomology theory E is particularly useful when we can understand its cocycles \(E^*(X)\) in terms of geometric objects associated to the space X.  A basic example is the description of topological K-theory in terms of complex vector bundles.  I will give an analogous interpretation of cocycles for \(E=K(R),\) the algebraic K-theory of an associative ring spectrum, in terms of bundles of R-modules over X.<br /><br />The main technical development is a symmetric monoidal model for the category of spaces in which \(A_{\infty}\) spaces are strict monoids.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">November 14</td>
+  	<td valign="top">Kristen Mazur (UVA)</td>
+  	<td><a href="javascript:Toggle('November 14')">A G-Symmetric Monoidal Structure on the Category of G-Mackey Functors</a>
+  <p id="November 14" style="display:none;">I will describe a new G-symmetric monoidal structure on the category of G-Mackey functors. The current G-symmetric monoidal structure in incredibly complicated and is almost impossible to compute. Thus, I build a new structure that has the following advantages. First, it is both easy to define and easy to compute. Second, under this new structure we can show that Tambara functors are the G-commutative algebras. Finally, it is known that Tambara functors exist as the zeroeth stable homotopy groups of commutative G-ring spectra but there are very few examples of them available. Therefore, the new G-symmetric monoidal structure will provide a means of creating examples of Tambara functors.</p></td>
+  </tr>
+
+  <tr>
+  	<td>November 22</td>
+  	<td>Thanksgiving</td>
+  	<td>No Seminar</td>
+  </tr>
+
+  <tr>
+  	<td valign="top">December 6</td>
+  	<td valign="top">Nathaniel Stapleton (MIT)</td>
+  	<td><a href="javascript:Toggle('December 6')">An Application of Transchromatic Generalized Character Theory</a>
+  <p id="December 6" style="display:none;">The generalized character theory of Hopkins, Kuhn, and Ravenel has proved to be a very useful tool in the study of Morava E_n. In this talk, I will outline a compact construction of the transchromatic generalized character maps. The Morava E-theory of cyclic groups and symmetric groups have well known algebro-geometric interpretations. Using the relationship between the character maps and the transfer maps for Morava E-theory, I will provide algebro-geometric interpretations of the cohomology of some finite groups other than symmetric groups and cyclic groups.</p></td>
+  </tr>
+</tbody>
+</table>
+
+<hr />
+
+<table width=100%>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra">
+    <tr>
+    	<td>January 24</td>
+    	<td>Lennart Meier (UVA)</td>
+    	<td>Derived Stacks</td>
+    </tr>
+
+    <tr>
+    	<td>January 31</td>
+    	<td>Lennart Meier (UVA)</td>
+    	<td>Galois Theory in Derived Algebraic Geometry</td>
+    </tr>
+
+    <tr>
+    	<td>February 7</td>
+    	<td>Mike Hill (UVa)</td>
+    	<td>Topological modular forms in the log-etale topology</td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 14</td>
+    	<td valign="top">Don Larson (U. Rochester)</td>
+    	<td><a href="javascript:Toggle('February 14')">A computation in 3-primary K(2)-local stable homotopy theory using topological modular forms</a>
+    <p id="February 14" style="display:none;">One way to obtain information about the 3-primary stable homotopy groups of spheres is to study the $K(2)$-local sphere; that is, the sphere spectrum localized with respect to the 2nd Morava $K$-theory at the prime 3.  In this talk I will describe a method for computing the homotopy groups of a closely related spectrum $Q(2)$, originally constructed by Mark Behrens in an effort to clarify and extend previous work on the $K(2)$-local sphere by Shimomura, Yabe. Goerss, Henn, Mahowald, and Rezk.  The spectrum $Q(2)$ is built using isogenies of elliptic curves and spectra related to TMF, and as such, is conjectured to have interesting number-theoretic properties.  I will discuss these conjectures as well as potential connections between $Q(2)$ and the alpha and beta families in the 3-primary stable stems.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 21</td>
+    	<td valign="top">Yifei Zhu (UMN)</td>
+    	<td><a href="javascript:Toggle('February 21')">Computing power operations for Morava E-theory of height 2 at the prime 3</a>
+    <p id="February 21" style="display:none;">As an algebraic invariant attached to topological spaces, an elliptic cohomology theory records information about elliptic curves and integral modular forms. In particular, power operations in such a cohomology theory encode moduli problems of elliptic curves, specifically cyclic isogenies of the corresponding power. We will discuss an explicit example.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 28</td>
+    	<td valign="top">Jack Ullman (MIT)</td>
+    	<td><a href="javascript:Toggle('February 28')">The Regular Slice Spectral Sequence</a>
+    <p id="February 28" style="display:none;">The slice spectral sequence is a tool in equivariant stable homotopy theory that was recently used to solve the Kervaire invariant problem. In this talk I will describe new results on the slice spectral sequence, or rather a better-behaved variant called the regular slice spectral sequence. These include positive answers to conjectures by Mike Hill on the slice towers of spectra that are concentrated over a normal subgroup and on the slice towers of Eilenberg MacLane spectra. I will also discuss Brown-Comenetz duality and how it leads to an algebraic formula for a large portion of the first page of the spectral sequence. Time permitting, I will apply these results to obtain real Bott periodicity and a special case of the Atiyah-Segal completion theorem. We will also be able to use a result similar to the Moss convergence theorem to compute some Toda brackets in \(KO_*.\)</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 7</td>
+    	<td valign="top">Nick Kuhn (UVA)</td>
+    	<td><a href="javascript:Toggle('March 7')">On Jon Carlson's depth conjecture in group cohomology</a>
+    <p id="March 7" style="display:none;">Jon Carlson has conjectured that if the mod p cohomology of a finite group has depth d, it is not detected by the centralizers of elementary abelian p-subgroups of rank more than d.  We show this is true when d has the smallest possible value: the p-rank of the center.</p></td>
+    </tr>
+
+    <tr>
+    	<td>March 14</td>
+    	<td>Spring Break</td>
+    	<td>No Seminar</td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 18</td>
+    	<td valign="top">Dan Margalit (Georgia Tech)</td>
+    	<td><a href="javascript:Toggle('April 18')">Torelli groups, braid groups, and moduli spaces</a>
+    <p id="April 18" style="display:none;">In joint work with Tara Brendle and Andrew Putman, we prove that the kernel of the Burau representation evaluated at t=-1 is equal to the group generated by squares of Dehn twists about odd numbers of marked points. This theorem, which was conjectured by Richard Hain, can either be recast as giving a generating set for the hyperelliptic Torelli group or as describing the topology of the branch locus of the period mapping from Torelli space to the Siegel upper half-plane. I will focus on the main new ingredient, which is a method for transforming infinite presentations for groups into finite ones.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 25</td>
+    	<td valign="top">Kristen Mazur (UVA)</td>
+    	<td><a href="javascript:Toggle('Mazur')">[Thesis Defense] On the Structure of Mackey Functors and Tambara Functors</a>
+    <p id="Mazur" style="display:none;">The stable homotopy groups of a G-spectrum are Mackey functors, and the zeroeth stable homotopy group of a commutative G-ring spectrum has the extra structure of a Tambara functor. However, while Mackey functors and Tambara functors make frequent appearances in equivariant stable homotopy theory, much of their underlying algebra remains mysterious. I will discuss a new structure on the category of Mackey functors such that Tambara functors are commutative algebra-like objects. Moreover, the advantage to this new structure is that it is concrete and computable.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 25</td>
+    	<td valign="top">Carolyn Yarnall (UVA)</td>
+    	<td><a href="javascript:Toggle('Yarnall')">[Thesis Defense] The Slices of Suspensions of HZ for Cyclic p-Groups</a>
+    <p id="Yarnall" style="display:none;">The slice filtration is a filtration of equivariant spectra developed by Hill, Hopkins, and Ravenel in their solution to the Kervaire Invariant-One problem. While it is constructed in an analogous fashion to the Postnikov tower, there are some notable differences. A key difference is that the slice tower does not commute with ordinary suspensions and so the slice towers of suspensions of Eilenberg-MacLane spectra can be nontrivial. After recalling some basic definitions from the setting of equivariant stable homotopy theory, I will present the slice towers of suspensions of HZ where G=Cp^k for odd primes p and provide some specific examples.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">May 2</td>
+    	<td valign="top">Rebecca Field (JMU)</td>
+    	<td><a href="javascript:Toggle('May 2')">$BG_2$ and descent</a>
+    <p id="May 2" style="display:none;">In this talk I'll explain the descent spectral sequence, use it to compute the Morava E-theory of $BPSL_2$ and $BG_2,$ and compare the answer with restriction to abelian subgroups.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">May 9</td>
+    	<td valign="top">Josh Parks (UVA)</td>
+    	<td><a href="javascript:Toggle('May 9')">Division Functors and the Cohomology of Loop Spaces</a>
+    <p id="May 9" style="display:none;">I will give a construction of the left adjoint to tensor product in the category of unstable algebras over the Steenrod algebra and discuss an application to computing the cohomology of free loop spaces.</p></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>

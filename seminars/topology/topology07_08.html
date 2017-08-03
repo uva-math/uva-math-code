@@ -1,0 +1,224 @@
+---
+title: University of Virginia Topology Seminar 2007-08
+layout: static_page_no_right_menu
+permalink: /seminars/topology/2007-08/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table width=100% >
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra">
+  <tr>
+          <td>September 13</td>
+          <td><a href="http://people.virginia.edu/~mah7cd/">Mike Hill (UVA)</a></td>
+          <td>Higher Real K-theories</td>
+      </tr>
+      <tr>
+          <td>September 20</td>
+          <td>Eric Finster (UVa)</td>
+          <td>Model Categories</td>
+      </tr>
+      <tr>
+          <td>September 27</td>
+          <td><a href="http://people.virginia.edu/~nah7n/">Nicholas Hamblet (UVa)</a></td>
+          <td>An Application of Orthogonal Calculus to Configuration Spaces</td>
+      </tr>
+      <tr>
+          <td>October 4</td>
+          <td><a href="http://www.math.virginia.edu/Faculty/Kuhn/">Nick Kuhn (UVA)</a></td>
+          <td>Models for Mapping Spaces: A historical survey</td>
+      </tr>
+      <tr>
+          <td>October 11</td>
+          <td><a href="http://people.virginia.edu/~mah7cd/">Mike Hill (UVA)</a></td>
+          <td>Homotopy Fixed Points</td>
+      </tr>
+      <tr>
+          <td>October 18</td>
+          <td>James Hughes (UVa)</td>
+          <td>Rational Homotopy</td>
+      </tr>
+      <tr>
+          <td>October 25</td>
+          <td>No Seminar</td>
+          <td>No Seminar</td>
+      </tr>
+      <tr>
+          <td>November 1</td>
+          <td><a href="http://people.virginia.edu/~mah7cd/">Mike Hill (UVA)</a></td>
+          <td>Sullivan Models in Rational Homotopy</td>
+      </tr>
+      <tr>
+          <td>November 8</td>
+          <td>No Seminar</td>
+          <td>Stong Conference</td>
+      </tr>
+      <tr>
+          <td>November 15</td>
+          <td><a href="http://rybu.org/">Ryan Budney (U Victoria)</a></td>
+          <td><a href="javascript:Toggle('Budney')">Embeddings of 3-manifolds in the 4-sphere from the point of view of the 11-tetrahedron census</a>
+          <p id="Budney" style="display:none">I will outline the problem of determining which 3-manifolds embed in the 4-sphere.  This will have essentially 3 parts: <br />
+          (i) Known obstructions to a 3-manifold embedding in the 4-sphere such as torsion linking forms, Alexander polynomials, the Rochlin invariant, the Oszvath-Szabo d-invariant, Casson-Gordon invariants. <br />
+          (ii) Procedures for constructing embeddings. <br />
+          (iii) Computations:  Recent independent work of Matveev, Petronio and Burton has produced lists of all the 3-manifolds (up to homeomorphism) that can be triangulated with 11 or less tetrahedra. <br />
+          Computer implementation of known obstructions gives gives us a list of all 3-manifolds which pass the tests (1) but for which we still, as of yet, do not know if they embed in S^4. I will describe some characteristic manifolds from this list.</p></td>
+      </tr>
+      <tr>
+          <td>November 22</td>
+          <td>No Seminar</td>
+          <td>Thanksgiving</td>
+      </tr>
+      <tr>
+          <td>November 29</td>
+          <td>No Seminar</td>
+          <td>No Seminar</td>
+      </tr>
+      <tr>
+          <td>December 6</td>
+          <td><a href="http://www.math.virginia.edu/Faculty/Kuhn/">Nick Kuhn (UVA)</a></td>
+          <td>Reconstructing a Filtered Space from its subquotients (a la Cohen, Jones, & Segal)</td>
+      </tr>
+      <tr>
+          <td>December 13</td>
+          <td><a href="http://php.indiana.edu/~pkirk/">Paul Kirk</a></td>
+          <td>Twisted Alexander Polynomials and Obstructions to Slicing Knots</td>
+      </tr>
+</tbody>
+</table>
+
+<hr />
+
+<table width=100%>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra">
+    <tr>
+    <td>January 24</td>
+    <td><a href="http://www.math.virginia.edu/~zga2m/">Greg Arone (UVa)</a></td>
+    <td>Calculus of functors and embedding spaces: an overview</td>
+    </tr>
+    <tr>
+    <td>January 31</td>
+    <td><a href="http://people.virginia.edu/~kb2ue/home.html">Kai-Uwe Bux (UVa)</a></td>
+    <td><a href="javascript:Toggle('KaiUwe')">The dimension of the group of partially symmetric automorphisms of a free group</a>
+    <p id="KaiUwe" style="display:none;">(Joint with Ruth Charney and Karen Vogtmann) We determine the virtual dimension of the group $P\Sigma(n,k)\subset Out(F_n)$ generated by automorphisms which send the first $k$ generators to conjugates of themselves (each x_i is going to a conjugate $wx_iw^{-1}$). Thm: $vcd(P\Sigma(n,k))=2n-k-2$.</p></td>
+    </tr>
+    <tr>
+    <td>February 7</td>
+    <td>Eric Finster (UVa)</td>
+    <td>The Model Structure on the Category of Small Categories</td>
+    </tr>
+    <tr>
+    <td>February 14</td>
+    <td><a href="http://people.virginia.edu/~kb2ue/home.html">Kai-Uwe Bux (UVa)</a></td>
+    <td><a href="javascript:Toggle('KaiUwe2')">The dimension of the group of partially symmetric automorphisms of a free group II</a>
+    <p id="KaiUwe2" style="display:none;">(Joint with Ruth Charney and Karen Vogtmann) We determine the virtual dimension of the group $P\Sigma(n,k)\subset Out(F_n)$ generated by automorphisms which send the first $k$ generators to conjugates of themselves (each x_i is going to a conjugate $wx_iw^{-1}$). Thm: $vcd(P\Sigma(n,k))=2n-k-2$.</p></td>
+    </tr>
+    <tr>
+    <td>February 21</td>
+    <td><a href="http://people.virginia.edu/~nah7n/">Nicholas Hamblet (UVa)</a></td>
+    <td>The Poset of Linear Subspaces of <b>R</b>^n <a href="HambletPoset.pdf">Notes</a></td>
+    </tr>
+    <tr>
+    <td>February 28</td>
+    <td>No Seminar</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>March 6</td>
+    <td>No Seminar</td>
+    <td>Spring Break</td>
+    </tr>
+    <tr>
+    <td>March 13</td>
+    <td>No Seminar</td>
+    <td></td>
+    </tr>
+    <tr>
+    <td>March 20</td>
+    <td>Pascal Lambrechts (U of Louvaine la Neuve)</td>
+    <td>On Semi-Algebraic Forms</td>
+    </tr>
+    <tr>
+    <td>March 27</td>
+    <td><a href="http://www.math.virginia.edu/Faculty/Kuhn/">Nick Kuhn (UVa)</a></td>
+    <td>The Homology of Symmetric Groups in Characteristic p</td>
+    </tr>
+    <tr>
+    <td>April 3</td>
+    <td>No Seminar</td>
+    <td>No Seminar</td>
+    </tr>
+    <tr>
+    <td>April 10</td>
+    <td>Tom Mark (UVa)</td>
+    <td>Exotic Stein fillings of contact 3-manifolds</td>
+    </tr>
+    <tr>
+    <td>April 17</td>
+    <td>Josh Greene (Princeton)</td>
+    <td><a href="javascript:Toggle('JoshGreene')">Floer homology and knot concordance</a>
+    <p id="JoshGreene" style="display:none;">I will talk about two recent approaches to the study of smooth knot concordance, one coming from Donaldson theory, the other from Heegaard Floer homology. Then I will discuss how to combine the two to give a novel test for a knot to be slice, and apply the test to determine the concordance order of three-stranded pretzel knots.</p></td>
+    </tr>
+    <tr>
+    <td>April 24</td>
+    <td>Michael Usher (Princeton)</td>
+    <td><a href="javascript:Toggle('Usher')">Spectral numbers in Novikov and Floer homology</a>
+    <p id="Usher" style="display:none">The chain complexes in Novikov and Floer homology theories carry natural real-valued filtrations, allowing one to define the spectral number of any homology class as the infimum of the filtration levels of all chains representing that class; in the case of  Hamiltonian Floer homology these numbers have had interesting applications to symplectic topology due to Schwarz, Oh, and others.  I'll sketch a proof that the infimum in the definition of the spectral number is always attained.  This fact allows some of the applications of the spectral numbers that have been carried out for special classes (e.g., rational or semipositive) of closed symplectic manifolds to be generalized to all closed symplectic manifolds.</p></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>

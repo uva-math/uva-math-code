@@ -1,0 +1,224 @@
+---
+title: University of Virginia Topology Seminar 2014-15
+layout: static_page_no_right_menu
+permalink: /seminars/topology/2014-15/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table width=100%>
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra">
+  <tr>
+  	<td valign="top">September 10</td>
+  	<td valign="top">Nick Kuhn (UVA)</td>
+  	<td><a href="javascript:Toggle('Thu Sep 4-1')">Adams filtration and Hurewicz maps for infinite loopspaces</a>
+  <p id="Thu Sep 4-1" style="display:none;"> If X is an infinite loopspace, we relate the Adams filtration of its homotopy to the behavior of the Hurewicz map.  As examples, we recover a famous result of Milnor about vector bundles over spheres, and prove an analogue for Topological Modular Forms.<br /><br />I&#39;ll focus on explaining the theorem and examples.  The proof needs as input new constructions in algebras over an operad, which is a joint project with Luis Pereira.  (Maybe he will speak soon about this.)</p></td>
+  </tr>
+
+  <tr>
+  	<td>September 17</td>
+  	<td>Mike Hill (UVA)</td>
+  	<td>On the fate of $\eta^3$ in Hopkins-Miller spectra</td>
+  </tr>
+
+  <tr>
+  	<td>September 24</td>
+  	<td>Luis Pereira (UVA)</td>
+  	<td>On algebras over an operad</td>
+  </tr>
+
+  <tr>
+  	<td>October 1</td>
+  	<td>Greg Arone (UVA)</td>
+  	<td>Meditations on the Whitehead conjecture and its bu analogue</td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 8</td>
+  	<td valign="top">Robert Lipshitz (Columbia)</td>
+  	<td><a href="javascript:Toggle('Thu Oct 2-5')">A Khovanov stable homotopy type</a>
+  <p id="Thu Oct 2-5" style="display:none;"> Khovanov homology is an invariant of links in the three sphere which categorifies the Jones polynomial.  After recalling the definition of Khovanov homology we will construct a space-level refinement, or Khovanov (stable) homotopy type.  (This refinement was originally inspired to ideas of Cohen-Jones-Segal, in a proposal on Floer homotopy theory, but we can now give a more direct definition.)  We will then discuss some computations we can do (and some corresponding applications), some computations we wish we could do, and perhaps some other open questions.<br /><br />This is joint work with Tyler Lawson and Sucharit Sarkar</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">October 15</td>
+  	<td valign="top">Jon Beardsley (JHU)</td>
+  	<td><a href="javascript:Toggle('Thu Oct 9-6')">Ravenel&#39;s $X(n)$ Spectra as Iterated Hopf-Galois Extensions</a>
+  <p id="Thu Oct 9-6" style="display:none;"> We prove that the $X(n)$ spectra, used in the proof of Ravenel&#39;s Nilpotence Conjecture, can be constructed as iterated Hopf-Galois extensions of the sphere spectrum by loop spaces of odd dimensional spheres. We hope to leverage this structure to obtain a better understanding of the Nilpotence Theorem as well as develop an obstruction theory for the construction of complex orientations of homotopy commutative ring spectra. The method of proof is easily generalized to show that other Thom spectra can be considered intermediate Hopf-Galois extensions, for instance the fact that $MU$ is a Hopf-Galois extension of $MSU$ by infinite dimensional complex projective space.</p></td>
+  </tr>
+
+  <tr>
+  	<td valign="top">November 12</td>
+  	<td valign="top">Nick Kuhn (UVA)</td>
+  	<td><a href="javascript:Toggle('Thu Nov 6-7')">The Noetherian property of generic representations of finite fields</a>
+  <p id="Thu Nov 6-7" style="display:none;"> Let Rep(F;F) be the category of functors from vector spaces over a finite field F to itself.  In the 1980&#39;s, Lionel Schwartz asked if this category is locally Noetherian, i.e. the Yoneda small projectives are Noetherian objects in the usual sense.  Steven Sam, Andrew Snowden, and Andrew Putman have recently shown this is true, using Grobner bases, and Higman&#39;s lemma about posets.   I will discuss the conjecture, and indicate the steps in the proof.  Algebra students are encouraged to attend.</p></td>
+  </tr>
+
+  <tr>
+  	<td>November 26</td>
+  	<td>Joseph Hirsh (MIT)</td>
+  	<td>Model structures for coalgebras</td>
+  </tr>
+
+  <tr>
+  	<td>December 3</td>
+  	<td>No Seminar</td>
+  	<td>Thanksgiving</td>
+  </tr>
+
+  <tr>
+  	<td valign="top">December 10</td>
+  	<td valign="top">Guozhen Wang (MIT)</td>
+  	<td><a href="javascript:Toggle('Thu Dec 4-10')">Unstable Chromatic Homotopy Theory</a>
+  <p id="Thu Dec 4-10" style="display:none;"> The Bousfield-Kuhn functor enables us to study monochromatic phenomenon in unstable homotopy theory using stable techniques. I will describe its<br />effect on the Goodwillie tower of the identity for spheres. As an application, I will compute the K(2)-local homotopy groups of the three sphere at large primes.</p></td>
+  </tr>
+</tbody>
+</table>
+
+<hr />
+
+<table width=100%>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra">
+    <tr>
+    	<td>January 22</td>
+    	<td>Charmaine Sia (Harvard)</td>
+    	<td>Structures on forms of K-theory</td>
+    </tr>
+
+    <tr>
+    	<td>January 29</td>
+    	<td>Greg Arone (UVA)</td>
+    	<td>A branching rule for Lie(n) and the partition poset</td>
+    </tr>
+
+    <tr>
+    	<td>February 5</td>
+    	<td>Lennart Meier (UVA)</td>
+    	<td>The homotopy theory of homotopy theories</td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 12</td>
+    	<td valign="top">Greg Arone (UVA)</td>
+    	<td><a href="javascript:Toggle('Thu Feb 12-3')">The topological Tverberg conjecture, again.</a>
+    <p id="Thu Feb 12-3" style="display:none;"> The topological Tverberg conjecture has been a prominent open question in combinatorial topology. Recently Florian Frick announced a counterexample. We will review the conjecture and try to understand the counterexample.</p></td>
+    </tr>
+
+    <tr>
+    	<td>February 19</td>
+    	<td>Viktoriya Ozornova (Bremen)</td>
+    	<td>Fibrancy of partial model categories</td>
+    </tr>
+
+    <tr>
+    	<td valign="top">February 26</td>
+    	<td valign="top">Emanuele Dotto (MIT)</td>
+    	<td><a href="javascript:Toggle('Thu Feb 26-5')">Equivariant calculus of functors</a>
+    <p id="Thu Feb 26-5" style="display:none;"> Let $G$ be a finite group. I will define "$J$-excision" of functors on pointed $G$-spaces, for every finite $G$-set $J$. When $J$ is the trivial $G$-set with $n$-elements we recover Goodwillie&#39;s definition of $n$-excision. When $J=G$ we recover Blumberg&#39;s notion of equivariant excision. There are $J$-excisive approximations of homotopy functors which fit together into a "Taylor tree", as well as "$J$-homogeneous" approximations classified by suitably equivariant spectra. We will finish with a curious splitting of the "horizontal layers" of the tree of a homotopy functor, which recovers the tom Dieck splitting in the case of the identity functor.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 5</td>
+    	<td valign="top">Mona Merling (JHU)</td>
+    	<td><a href="javascript:Toggle('Thu Mar 5-6')">* CANCELED DUE TO SNOW * Equivariant algebraic K-theory</a>
+    <p id="Thu Mar 5-6" style="display:none;"> The first definitions of equivariant algebraic K-theory were given in the early 1980�s by Fiedorowicz, Hauschild and May, and by Dress and Kuku; however these early space-level definitions only allowed trivial action on the input ring or category. Equivariant infinite loop space theory allows us to define spectrum level generalizations of the early definitions: we can encode a G-action (not necessarily trivial) on the input as a genuine G-spectrum.<br /><br />I will discuss some of the subtleties involved in turning a ring or space with G-action into the right input for equivariant algebraic K-theory or A-theory, and some of the properties of the resulting equivariant algebraic K-theory G-spectrum. For example, our construction recovers as particular cases equivariant topological real and complex K-theory, Atiyah�s Real K-theory and statements previously formulated in terms of naive G-spectra for Galois extensions.<br /><br />I will also briefly discuss recent developments in equivariant infinite loop space theory from joint work with Guillou, May and Osorno (e.g., multiplicative structures) that should have long-range applications to equivariant algebraic K-theory.</p></td>
+    </tr>
+
+    <tr>
+    	<td>March 12</td>
+    	<td>No Seminar</td>
+    	<td>Spring Break</td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 19</td>
+    	<td valign="top">Vitaly Lorman (JHU)</td>
+    	<td><a href="javascript:Toggle('Thu Mar 19-8')">Computing with Real Johnson-Wilson Theories</a>
+    <p id="Thu Mar 19-8" style="display:none;"> Complex cobordism and its relatives, the Johnson-Wilson theories, $E(n)$, carry an action of $C_2$ by complex conjugation. Taking homotopy fixed points of the latter yields Real Johnson-Wilson theories, $ER(n)$. These can be seen as generalizations of real K-theory and are similarly amenable to computations. We will outline their properties, describe a generalization of the $\eta$-fibration, and discuss recent computations of the $ER(n)$-cohomology of some well-known spaces, including $CP^\infty$.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">March 26</td>
+    	<td valign="top">Agnes Beaudry (UChicago)</td>
+    	<td><a href="javascript:Toggle('Thu Mar 26-9')">The Chromatic Splitting Conjecture at $n=p=2$</a>
+    <p id="Thu Mar 26-9" style="display:none;"> Understanding the homotopy groups of the sphere spectrum $S$ is one of the great challenges of homotopy theory. The ring $\pi_*S$ is  extremely complex; there is no hope of computing it completely. However, it carries an amazing amount of structure. A famous theorem of Hopkins and Ravenel states that, after localizing at a prime, the sphere spectrum is filtered by ``simpler" spectra called the chromatic layers, which we denote by $L_nS$. How these layers interact with each other is a mystery. A conjecture of Hopkins, the chromatic splitting conjecture, suggests an  answer to the problem. The difficulty of the problem grows fast with $n$, and varies with the choice of prime at which we localize. The chromatic splitting conjecture is known to hold in its strongest form at all primes $p$ when $n=1$, and at all odd primes when $n=2$. However, it does not hold when $p=n=2$. In this talk, I explain why it fails in this case.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 2</td>
+    	<td valign="top">Michael Andrews</td>
+    	<td><a href="javascript:Toggle('Thu Apr 2-10')">Non-nilpotent elements in motivic homotopy theory</a>
+    <p id="Thu Apr 2-10" style="display:none;"> Classically, the nilpotence theorem of Devinatz, Hopkins, and Smith tells us that non-nilpotent self maps on finite p-local spectra induce nonzero homomorphisms on BP-homology. Motivically, over C, this theorem fails to hold: we have a motivic analog of BP and while $\eta:S^{1,1,}\to S^{0,0}$ induces zero on BP-homology, it is non-nilpotent. Work with Haynes Miller has led to a calculation of $\eta^{-1}\pi_{*,*}(S^{0,0})$, proving a conjecture of Guillou and Isaksen.<br /><br />I�ll introduce the motivic homotopy category and the motivic Adams-Novikov spectral sequence before describing this theorem. Then I�ll show that there are more periodicity operators in chromatic motivic homotopy theory than in the classical story. In particular, I will describe a new non-nilpotent self map.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 16</td>
+    	<td valign="top">Irina Bobkova (Rochester)</td>
+    	<td><a href="javascript:Toggle('Thu Apr 16-11')">Resolutions of the $K(2)$-local sphere spectrum</a>
+    <p id="Thu Apr 16-11" style="display:none;"> Computing the stable homotopy groups of spheres is one of the main problems in algebraic topology. In this talk, I will introduce chromatic homotopy theory which describes the homotopy of the $p$-local sphere spectrum $S$ through a family of localizations $L_{K(n)}S$ with respect to Morava K-theories $K(n)$. Considerable information here can be derived from the action of the Morava stabilizer group on the Lubin-Tate theory. Then I will specialize to the $K(2)$-local category and talk about finite resolutions of the $K(2)$-local sphere spectrum by a sequence of spectra.</p></td>
+    </tr>
+
+    <tr>
+    	<td valign="top">April 23</td>
+    	<td valign="top">Andrew Putman (Rice)</td>
+    	<td><a href="javascript:Toggle('Thu Apr 23-12')">Representation-theoretic patterns in the stable cohomology of congruence subgroups</a>
+    <p id="Thu Apr 23-12" style="display:none;"> I will explain how to use representation-theoretic tools arising from the mathematics surrounding the Artinian conjecture to understand patterns in the stable cohomology of congruence subgroups (for simplicity, mostly congruence subgroups of SL(n,Z)).  This is joint work with Steven Sam.</p></td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>

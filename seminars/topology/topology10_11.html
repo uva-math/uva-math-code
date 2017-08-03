@@ -1,0 +1,217 @@
+---
+title: University of Virginia Topology Seminar 2010-11
+layout: static_page_no_right_menu
+permalink: /seminars/topology/2010-11/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table width=100%>
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra">
+  <tr>
+          <td>September 1</td>
+          <td><a href="http://www.math.univ-paris13.fr/~bobol/">Bob Oliver</a></td>
+          <td>(In the algebra seminar)</td>
+      </tr>
+      <tr>
+          <td>September 9</td>
+          <td>Nick Kuhn (UVA)</td>
+          <td>On a new nonrealization theorem of Gaudens and Schwartz</td>
+      </tr>
+      <tr>
+          <td>September 16</td>
+          <td>Nick Kuhn (UVA)</td>
+          <td>On a new nonrealization theorem of Gaudens and Schwartz II</td>
+      </tr>
+      <tr>
+          <td>September 23</td>
+          <td>Calder Wishne</td>
+          <td>The moduli space of Riemann surfaces, mapping class groups, and the Mumford conjecture</td>
+      </tr>
+      <tr>
+          <td>September 30</td>
+          <td>TBA</td>
+          <td>TBA</td>
+      </tr>
+      <tr>
+          <td>October 7</td>
+          <td><a href="http://www.math.jmu.edu/~fieldre/">Rebecca Field</a> (JMU)</td>
+          <td>BSO(2n) as an extension of BO(2n) by BSp(2n)</td>
+      </tr>
+      <tr>
+          <td>October 14</td>
+          <td><a href="http://academic.csuohio.edu/bubenik_p/">Peter Bubenik</a> (Cleveland State U)</td>
+          <td><a href="javascript:Toggle('Bubenik')">Persistent homology and statistical estimation</a>
+          <p id="Bubenik" style="display:none;">I will give a tutorial on some aspects of the persistent homology machinery. Next I will give an application to analyzing data obtained from sampling from a real-valued function on a manifold. If there is interest, I will discuss a particular application to brain imaging data.</p></td>
+      </tr>
+      <tr>
+          <td>October 21</td>
+          <td>TBA</td>
+          <td>TBA</td>
+      </tr>
+      <tr>
+          <td>October 28</td>
+          <td><a href="http://www.math.uwo.ca/~jharpe9/">John Harper</a></td>
+          <td><a href="javascript:Toggle('Harper')">On a homotopy completion tower for algebras over operads in symmetric spectra</a>
+          <p id="Harper" style="display:none;">In Haynes Miller's proof of the Sullivan conjecture on maps from classifying spaces, Quillen's derived functor notion of homology (in the case of commutative algebras) is a critical ingredient. This suggests that homology for the larger class of algebraic structures parametrized by an operad O will also provide interesting and useful invariants. Working in the context of symmetric spectra, we introduce a completion tower for algebras over operads and prove that under appropriate connectivity conditions this tower interpolates between topological Quillen homology and the identity functor. This is part of a larger goal to attack the problem: how much of an O-algebra can be recovered from its topological Quillen homology? We also prove analogous results for algebras over operads in unbounded chain complexes. This talk is an introduction to these results (joint with K. Hess) with an emphasis on several of the motivating ideas.</p>
+          </td>
+      </tr>
+      <tr>
+          <td>November 4</td>
+          <td><a href="http://www.math.jhu.edu/~santhana/">Rekha Santhanam</a> (Johns Hopkins)</td>
+          <td><a href="javascript:Toggle('Santhanam')">Equivariant Gamma Spaces and Equivariant Barratt-Priddy Theorem</a>
+          <p id="Santhanam" style="display:none;">We describe equivariant \Gamma spaces as defined by Shimakawa and explain how they model equivariant infinite loop spaces.<br />
+          We construct a very-special equivariant \Gamma-space from a symmetric monoidal G-category for a finite group G. We outline a proof of the equivariant version of the Barratt-Priddy theorem in the finite group case using these ideas.</p>
+          </td>
+      </tr>
+      <tr>
+          <td>November 11</td>
+          <td><a href="http://www.nilesjohnson.net/">Niles Johnson</a> (UGA)</td>
+          <td><a href="javascript:Toggle('Johnson')">Complex Orientations and p-typicality</a>
+          <p id="Johnson" style="display:none;">This talk will describe computational results related to the structure of power operations on complex oriented cohomology theories (localized at a prime p).  After introducing the relevant concepts, we will describe results from joint work with Justin Noel showing that, for primes p less than or equal to 13, a number of well-known MU_(p)-rings do not admit the structure of commutative MU_(p)-algebras.<br />
+          These spectra have complex orientations which factor through the Brown-Peterson spectrum and correspond to p-typical formal group laws; our computations show that such a factorization is incompatible with the power operations on complex cobordism and thus the complex orientations cannot carry MU_(p)-algebra structure.  This implies, for example, that if E is a Landweber exact MU_(p)-ring whose associated formal group law is p-typical of positive height, then the canonical map MU_(p) -->E is not a map of H_infty ring spectra. It immediately follows that the standard p-typical orientations on BP, E(n), and E_n do not rigidify to maps of E_infty ring spectra. We conjecture that similar results hold for all primes.</p>
+          </td>
+      </tr>
+      <tr>
+          <td>November 18</td>
+          <td>TBA</td>
+          <td>TBA</td>
+      </tr>
+      <tr>
+          <td>November 25</td>
+          <td>No Seminar</td>
+          <td>Thanksgiving</td>
+      </tr>
+      <tr>
+          <td>December 2</td>
+          <td><a href="http://www.math.jhu.edu/~asalch/">Andrew Salch</a> (Johns Hopkins)</td>
+          <td><a href="javascript:Toggle('Salch')">Some recent developments in the stable homotopy groups of spheres</a>
+          <p id="Salch" style="display:none;">We will describe the current state of an ongoing project which attempts to describe the stable homotopy groups of spheres using the arithmetic of L-functions. This is sometimes called a "topological Langlands program." This project is happening on two fronts, a conceptual front and a computational front; we will spend some time describing progress made on both fronts. On the conceptual front, we will give a crash course in the constructions used in the proof of the local Langlands correspondences, and we describe efforts (including some successful ones!) to lift these constructions from commutative rings to E_\infty-ring spectra; and on the computational front, we describe the appearance of the same unit groups in p-adic division algebras in both the Jacquet-Langlands correpondences and in chromatic stable homotopy theory (as Morava stabilizer groups), and we describe a systematic method of attack on the cohomology of these profinite groups, as well as some new computations that this systematic computational attack has resulted in.</p>
+          </td>
+      </tr>
+</tbody>
+</table>
+
+<hr />
+
+<table width=100%>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra">
+    <tr>
+    	<td>January 27</td>
+    	<td>Bjorn Dundas</td>
+    	<td>Smash powers of commutative ring spectra</td>
+    </tr>
+    <tr>
+    	<td>February 17</td>
+    	<td>Ismar Volic (Wellesley)</td>
+    	<td>Integral expressions for Milnor Invariants I</td>
+    </tr>
+    <tr>
+    	<td>February 24</td>
+    	<td>Ismar Volic (Wellesley)</td>
+    	<td>Integral expressions for Milnor Invariants II</td>
+    </tr>
+    <tr>
+    	<td valign="top">March 3</td>
+    	<td valign="top">Victor Turchin</td>
+    	<td><a href="javascript:Toggle('March 3')">Delooping totalization of a multiplicative operad</a>
+    <p id="March 3" style="display:none;">Dwyer and Hess recently proved that under some conditions the totalization of the cosimplicial space obtained from a multiplicative operad is weakly equivalent to the double loop space of the space of derived maps from the associative operad to the operad itself. Their approaches relies heavily on the homotopy theory of simplicial model categories. A little bit later I found another and more straightforward proof of the same result. In my talk I will compare the two approaches.</p></td>
+    </tr>
+    <tr>
+    	<td>March 10</td>
+    	<td>No Seminar</td>
+    	<td>Spring Break</td>
+    </tr>
+    <tr>
+    	<td>March 17</td>
+    	<td>Doug Ravenel (Rochester)</td>
+    	<td>A solution to the Arf-Kervaire Invariant One problem part 2</td>
+    </tr>
+    <tr>
+    	<td>March 24</td>
+    	<td>Dan Lior (UIUC)</td>
+    	<td>TBA</td>
+    </tr>
+    <tr>
+    	<td>March 31</td>
+    	<td>Sean Droms (UVa)</td>
+    	<td>Constructions of Stein manifolds</td>
+    </tr>
+    <tr>
+    	<td>March 31</td>
+    	<td>Matthew Hogancamp (UVa)</td>
+    	<td>A category for the chromatic polynomial</td>
+    </tr>
+    <tr>
+    	<td>April 7</td>
+    	<td>Nick Kuhn (UVA)</td>
+    	<td>The mod 2 homology of infinite loopspaces and derived functors of destabilization: I</td>
+    </tr>
+    <tr>
+    	<td>April 14</td>
+    	<td>Jason McCarty</td>
+    	<td>The mod 2 homology of infinite loopspaces and derived functors of destabilization: II</td>
+    </tr>
+    <tr>
+    	<td>May 5</td>
+    	<td>Topology Party!</td>
+    	<td>5pm-9pm</td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>

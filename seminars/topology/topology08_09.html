@@ -1,0 +1,245 @@
+---
+title: University of Virginia Topology Seminar 2008-09
+layout: static_page_no_right_menu
+permalink: /seminars/topology/2008-09/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+
+<table width=100%>
+<h3>Fall Semester</h3>
+<thead>
+    <tr>
+        <th width="12%">Date</th>
+        <th width="20%">Speaker</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody class="my-tr-zebra">
+  <tr>
+          <td>September 4</td>
+          <td><a href="http://www.math.virginia.edu/~vk6e/">Slava Krushkal (UVa)</a></td>
+          <td>Quantum topology and the chromatic polynomial</td>
+      </tr>
+      <tr>
+          <td>September 11</td>
+          <td><a href="http://www.math.virginia.edu/Faculty/Kuhn/">Nick Kuhn (UVa)</a></td>
+          <td>Some Topological Non-realization Results</td>
+      </tr>
+      <tr>
+          <td>September 18</td>
+          <td>Joe Johnson (UVa)</td>
+          <td>A $\lambda$-ring structure on $\mathbb K(X)$.</td>
+      </tr>
+      <tr>
+          <td>September 25</td>
+          <td>Stephen Griffith (U. Minn)</td>
+          <td><a href="javascript:Toggle('Griffith')">Positivity in torus equivariant K-theory of homogeneous spaces</a>
+          <p id="Griffith" style="display:none;">The cohomology rings of homogeneous spaces tend to have positive structure constants with respect to natural bases. In ordinary cohomology theory, this fact can be proved by using the (transitive) group action and a generic transversality argument. (joint work with with Anderson and Miller)</p></td>
+      </tr>
+      <tr>
+          <td>October 2</td>
+          <td><a href="http://people.virginia.edu/~mah7cd/">Mike Hill (UVA)</a></td>
+          <td>Motivic THH</td>
+      </tr>
+      <tr>
+          <td>October 9</td>
+          <td><a href="http://www.math.virginia.edu/Faculty/Kuhn/">Nick Kuhn (UVA)</a></td>
+          <td>Some Topological Non-realization Results II</td>
+      </tr>
+      <tr>
+          <td>October 17</td>
+          <td><a href="http://people.virginia.edu/~kb2ue/home.html">Kai-Uwe Bux (UVA)</a></td>
+          <td><a href="javascript:Toggle('KaiUwe')">Thompson's group V is linear</a>
+          <p id="KaiUwe" style="display:none;">(Joint with Jim Belk) V has subgroups that are so close to being a BN-pair that the classical proof for simplicity of linear groups with irreducible Coxeter system goes through almost without change. It turns out that the subgroup F plays the role of the solvable Borel subgroup.</p></td>
+      </tr>
+      <tr>
+          <td>October 23</td>
+          <td>Eric Finster (UVA)</td>
+          <td>Stabilization of Homotopy Limits</td>
+      </tr>
+      <tr>
+          <td>October 30</td>
+          <td><a href="http://www.math.virginia.edu/~zga2m/">Greg Arone (UVA)</a></td>
+          <td>Filtered spectra arising from augmented Gamma-spaces</td>
+      </tr>
+      <tr>
+          <td>November 6</td>
+          <td><a href="http://www.math.uiuc.edu/~rezk/">Charles Rezk (UIUC)</a></td>
+          <td><a href="javascript:Toggle('Rezk08')">A Cartesian Presentation of n-Categories</a>
+          <p id="Rezk08" style="display:none;">There are a number of distinct definitions of the notion of a weak n-category; each definition has its own advantages and disadvantages. One desirable property is to have for two n-categories C and D a suitable notion of the "n-category of functors" from C to D. I'll describe a model with this property, and in doing so try to shed some light on what makes the notion of n-category so difficult to pin down.</p></td>
+      </tr>
+      <tr>
+          <td>November 13</td>
+          <td>Boldizsar Kalmar (Columbia)</td>
+          <td><a href="javascript:Toggle('Kalmar')">Singular maps, cobordism, and applications in low dimension</a>
+          <p id="Kalmar" style="display:none;">I give geometric invariants of cobordisms of fold maps, and show relations between the signature of the source manifold and the  singular set, when the dimension of the target or the source manifold, or the codimension is small. Also show relations between the singular fibers of a fold map and the source manifold, for example, if the singular fibers are not so complicated in a sense, then the source manifold is null-cobordant.</p></td>
+      </tr>
+      <tr>
+          <td>November 20</td>
+          <td><a href="http://people.virginia.edu/~des5e/">David Sherman (UVA)</a></td>
+          <td><a href="javascript:Toggle('Sherman')">Variations on Kuratowski's 14-set theorem</a>
+          <p id="Sherman" style="display:none;">Kuratowski's 14-set theorem says that in a topological space, 14 is the maximum possible number of distinct sets that can be generated from a fixed set by taking closures and complements.  In this talk I will consider the analogous questions for any possible subset of the operations {closure, complement, interior, union, intersection}, and any number of initially given sets.  The topic is somewhat recreational and requires only undergraduate point-set topology.</p></td>
+      </tr>
+      <tr>
+          <td>November 27</td>
+          <td>No Seminar</td>
+          <td>Thanksgiving</td>
+      </tr>
+      <tr>
+          <td>December 4</td>
+          <td><a href="http://www.ma.utexas.edu/users/jvanhorn/">Jeremy Van Horn-Morris (U Quebec, Montreal)</a></td>
+          <td><a href="javascript:Toggle('Horn')">Monoids and Contact Structures</a>
+          <p id="Horn" style="display:none;">The study of contact structures on 3-manifolds changed radically by Giroux's rather surprising correspondence with open book decompositions.  Abstractly, an open book can be thought of as a pair $(\Sigma, \phi)$ where $\Sigma$ is a compact bordered surface and $\phi$ is an automorphism of $\Sigma$.  Work by Goodman, Honda-Kazez-Mati\'{c}, and Giroux and Baldwin showed that one could extract rather strong geometric information directly from the monodromy $\phi$, and that this data was encoded by certain monoids in the mapping class group of $\Sigma$.  We cement this analogy and show that most properties of interest to a contact geometer have a corresponding monoid in the mapping class group.</p></td>
+      </tr>
+</tbody>
+</table>
+
+<hr />
+
+<table width=100%>
+    <h3>Spring Semester</h3>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra">
+    <tr>
+            <td>January 15</td>
+            <td><a href="http://palmer.wellesley.edu/~ivolic/">Ismar Volic (Wellesley)</a></td>
+    	    <td>Multivariable Calculus and Link Spaces</td>
+    	</tr>
+    	<tr>
+            <td>January 22</td>
+            <td>Jongil Park (Seoul National U)</td>
+            <td><a href="JPark-abstract.pdf">Symplectic 4-manifolds with b<sub>2</sub><sup>+</sup>=1 versus complex surfaces with p<sub>g</sub>=0</a></td>
+        </tr>
+        <tr>
+            <td>January 29</td>
+            <td><a href="http://www.math.virginia.edu/Faculty/Kuhn/">Nick Kuhn (UVa)</a></td>
+            <td><a href="javascript:Toggle('Kuhn')">A new proof of a result of Arone and Mahowald</a>
+            <p id="Kuhn" style="display:none;">Crucial to Greg and Mark Mahowald's work on the homotopy groups of a d dimensional sphere, with d odd, is that certain spaces L(k,d) have mod 2 cohomology free over certain finite sub Hopf algebras of the Steenrod algebra.  We show how formulae related to the Dickson invariants (Dickson, 1903) make it easy to reduce to the case when d = 1. If there is time, I may survey various proofs of the d=1 case, some of which involve the Steinberg module for the finite groups GL(k,F_2).</p></td>
+        </tr>
+        <tr>
+            <td>February 5</td>
+            <td>Eric Finster (UVa)</td>
+            <td><a href="javascript:Toggle('Finster')">Simplicial Sets and the Calculus of Coends</a>
+            <p id="Finster" style="display:none;">Many common constructions of homotopy theory can be very succinctly described in the category of simplicial sets using the calculus of coends.  I'll try to give a primer on the definition and use of coends and the survery some examples: skeletal filtrations, Postnikov towers, joins, and (ordinal) subdivision.</p></td>
+        </tr>
+        <tr>
+            <td>February 12</td>
+            <td><a href="http://www.math.virginia.edu/~zga2m/">Greg Arone (UVa)</a></td>
+            <td>Operads, Modules, and the Chain Rule</td>
+        </tr>
+        <tr>
+            <td>February 19</td>
+            <td>James Hughes (UVa)</td>
+            <td>Operads: A Crash Course</td>
+        </tr>
+        <tr>
+            <td>February 26</td>
+            <td>Nick Kuhn (UVA)</td>
+            <td>Representing Homology with Manifolds</td>
+        </tr>
+        <tr>
+            <td>March 5</td>
+            <td>No Seminar</td>
+            <td>Spring Break</td>
+        </tr>
+        <tr>
+            <td>March 12</td>
+            <td>Calder Wishne</td>
+            <td>Topology and Robotics</td>
+        </tr>
+        <tr>
+            <td>March 19</td>
+            <td><a href="http://www.math.ksu.edu/~turchin/">Victor Turchin (Kansas State University)</a></td>
+            <td><a href="javascript:Toggle('Turchin')">Hodge Decomposition in the Homology of Long Knots</a>
+            <p id="Turchin" style="display:none;">We will describe a natural splitting in the rational homology and homotopy of the spaces of long knots Emb(R1,R^N). This decomposition arises from the cabling maps in the same way as a natural decomposition in the homology of loop spaces arises from power maps. The generating function for the Euler characteristics of the terms of this splitting will be presented. Based on this generating function one can show that both the homology and homotopy ranks of the spaces in question grow at least exponentially. There are two more motivations to study this decomposition. First, it is related to the study of the homology of higher dimensional knots Emb(R^k,R^N). Second, it is deeply related to the question whether Vassiliev invariants can distinguish knots from their inverses.</p></td>
+        </tr>
+        <tr>
+            <td>March 26</td>
+            <td>TBA</td>
+            <td>TBA</td>
+        </tr>
+        <tr>
+            <td>April 2</td>
+            <td><a href="http://math.boisestate.edu/~kania/">Joanna Kania-Bartoszynska (NSF)</a></td>
+            <td><a href="javascript:Toggle('Kania')">Topological  applications of quantum invariants</a><p id="Kania" style="display:none;">I will discuss several applications of quantum invariants of 3-manifolds derived form topological quantum field theories.  Examples include criteria for periodicity of knots and manifolds, obstructions to embedding one manifold into another, and combinatorial formulas for computing integrals of simple closed curves over character variety of the surface against Goldman's symplectic measure.</p></td>
+        </tr>
+        <tr>
+            <td>April 9</td>
+            <td>Mike Hill (UVA)</td>
+            <td>Equivariant Homotopy Theory</td>
+        </tr>
+        <tr>
+            <td>April 16</td>
+            <td><a href="http://www.math.ucsd.edu/~bjcooper/">Ben Cooper (UCSD)</a></td>
+            <td><a href="javascript:Toggle('Cooper')">Homology and 3-manifold cobordisms</a>
+            <p id="Cooper" style="display:none;">I will describe recent work on topological field theory in three dimensions, explaining how an algebra yields a certain kind of 3-dimensional field theory in a functorial way, how this implies the existence of an action of certain 3-manifold cobordisms on the algebra's homology.</p></td>
+        </tr>
+        <tr>
+            <td>April 23</td>
+            <td>Abdelmalek Abdesselam (UVA)</td>
+            <td><a href="javascript:Toggle('Abdesselam')">Upper bounds for classical spin networks</a>
+            <p id="Abdesselam" style="display:none;">In a recent article, Garoufalidis and van der Veen proposed an analogue of the volume conjecture for classical spin networks. These are generalizations of 3n-j coefficients from SU(2) recoupling theory for angular momentum in quantum mechanics. We will present new upper bounds on the evaluation of such networks, in the general case. For the case of drum graphs we also have lower bounds which allow for the exact determination of the growth rate when the number of `colors' goes to infinity.</p></td>
+        </tr>
+        <tr>
+            <td>April 30</td>
+            <td>Jozef Przytycki (George Washington U)</td>
+            <td><a href="javascript:Toggle('Przytycki')">Algebra Situs: Panorama of Skein Modules</a>
+            <p id="Przytycki" style="display:none;">Skein Modules are algebraic object associated to a manifold, usually constructed as a formal linear combination of embedded  (or immersed) submanifolds, or simplicial complexes, modulo locally defined relations. In more restricted setting skein module is a module associated to a 3-dimensional manifold, by considering linear combinations of links (or graphs) in the manifold, modulo properly chosen (skein) relations. It is the main object of the  algebraic topology based on knots. In the choice of relations one takes into account several factors:<br />
+    (i)  Is the module we obtain accessible (computable)?<br />
+    (ii) How precise are our modules in distinguishing 3-manifolds and links
+          in them?<br />
+    (iii) Does the module reflect topology/geometry of a 3-manifold
+    (e.g. surfaces in a manifold, geometric decomposition of a manifold)?.<br />
+    (iv) Does the module admit some additional structure (e.g.~filtration,
+         gradation, multiplication, Hopf algebra structure)?<br />
+    In this talk we offer a panorama of skein modules.</p></td>
+        </tr>
+
+  </tbody>
+</table>
+
+
+
+{%endif%} {% endfor %}
+
+<script type="text/javascript">
+function Toggle(abstractID) {
+     var CurrentAbstract = document.getElementById(abstractID);
+     if (CurrentAbstract.style.display == 'none') {
+         CurrentAbstract.style.display = 'block';
+     }
+     else {
+         CurrentAbstract.style.display = 'none';
+     }
+ }
+</script>
