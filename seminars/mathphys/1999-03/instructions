@@ -1,8 +1,10 @@
+(old instructions for the Math Phys seminar)
+
 In order to schedule a speaker for the Mathematical Physics
 Seminar, check the URL for the week you wish to schedule.  If there is
 nothing scheduled, go ahead and set aside the slot for your speaker by
 adding information to the corresponding file.  It would also be
-helpful to change the file 
+helpful to change the file
 
 /home/ji2k/public_html/Mathphys/index.html
 
@@ -12,14 +14,10 @@ To make these changes you have to be using an editor on weyl.
 
 Title, and any further information on the talk would be appreciated
 when available.  The usual time for the seminar is 2:00 Wednesdays,
-but exceptions can of course be made to accomodate schedules.  
+but exceptions can of course be made to accomodate schedules.
 
 The file you'd need to modify for Oct 28, for example, is
 
 /home/ji2k/public_html/Mathphys/Oct28.txt
 
 If you have trouble modifying the file you can email me with the information at ji2k@virginia.edu
-
-The usual address for browsing the Mathematical Physics Seminar page is
-
-http://www.math.virginia.edu/~ji2k/Mathphys/
