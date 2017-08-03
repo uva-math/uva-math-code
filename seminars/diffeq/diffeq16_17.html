@@ -1,0 +1,265 @@
+---
+title: Harmonic Analysis and PDE seminar 2016-17
+layout: static_page_no_right_menu
+permalink: /seminars/diffeq/2016-17/
+events: false
+sem_page: true
+sem_archive: true
+nav_parent: Seminars
+---
+
+{% assign xx = page.permalink | split: '/' %}
+{% assign cur_shortname = xx[2] %}
+
+{% for sem in site.data.seminars %}
+{%if sem.shortname == cur_shortname %}
+
+{% if page.title == null %}
+  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+{% else %}
+  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+{% endif %}
+
+{% if sem.image != null %}
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+    </div>
+  </div>
+{% endif %}
+
+<table width=100%>
+  <thead>
+    <tr>
+      <th width="12%">Date</th>
+      <th width="20%">Speaker</th>
+      <th>Title</th>
+    </tr>
+  </thead>
+  <tbody class="my-tr-zebra">
+
+    <tr>
+      <td valign="top">Sep 06, 2016 </td>
+      <td valign="top">Francesco Di Plinio (UVA)</td>
+      <td><a href="javascript:Toggle('a1')">On the sparse domination of singular integral operators
+</a>
+        <p id="a1" style="display:none;">Abstract: A recent remarkable discovery is that the action of Calderón-Zygmund singular integral operators  is dominated in a pointwise sense by the averages of the input functions over a sparse, i.e. essentially disjoint, collection of intervals. This control is much stronger than  L^p-norm bounds: a most striking consequence is that sharp weighted norm inequalities follow from the corresponding, rather immediate estimates for the averaging operators. We describe a novel approach to sparse domination which extends well beyond Calderón-Zygmund theory. Our prime application is the domination of modulation invariant operators, such as the bilinear Hilbert transforms, to which the standard methods do not apply. Joint work with Amalia Culiuc and Yumeng Ou. </p>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td valign="top">Sep 13, 2016</td>
+      <td valign="top">Juraj Foldes (UVA)</td>
+        <td><a href="javascript:Toggle('a2')">Uniqueness of critical points in the variational problems
+</a>
+        <p id="a2" style="display:none;">Abstract: We prove a unified and general criterion for the uniqueness of critical points of a functional in the presence of constraints such as positivity, boundedness, or fixed mass. Our method relies on convexity properties along suitable paths and
+significantly generalizes well-known uniqueness theorems. Due to the flexibility in the construction of the paths, our approach does not depend on the convexity of the domain and can be used to prove uniqueness in subsets, even if it does not hold globally. The results apply to all critical points and not only to minimizers, thus they provide uniqueness of solutions to the corresponding Euler-Lagrange equations.
+For functionals emerging from elliptic problems, the assumptions of our abstract theorems follow from maximum principles, decay properties, and novel general inequalities.To illustrate our method we present a unified proof of known results, as well as new theorems.</p>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td valign="top">Sep 20, 2016</td>
+      <td valign="top">Zachary Bradshaw (UVA)</td>
+      <td><a href="javascript:Toggle('a3')">Self Similar Solutions to the Navier-Stokes equations</a>
+        <p id="a3" style="display:none;">Abstract: We will discuss the history and enduring importance of self-similar solutions to the Navier-Stokes equations as well as a new method for constructing these solutions for large, possibly non-smooth initial data on the whole and half-space.
+</p>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td valign="top">Sep 27, 2016</td>
+      <td valign="top">Yen Do (UVA)</td>
+      <td><a href="javascript:Toggle('a4')">Variational estimates for the bilinear iterated Fourier integral.</a>
+        <p id="a4" style="display:none;">Abstract: We prove pointwise variational Lp bounds for a bilinear Fourier integral operator in a large but not necessarily sharp range of exponents. This result is a joint strengthening of the corresponding bounds for the classical Carleson operator, the bilinear Hilbert transform, the variation norm Carleson operator, and the bi-Carleson operator. Joint work with C. Muscalu and C. Thiele.</p>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td valign="top">Oct 11, 2016</td>
+      <td valign="top">Robert Rahm (Washington U St Louis)</td>
+      <td><a href="javascript:Toggle('a5')"> Ap weights and Quantitative Estimates in the Schrödinger Setting</a>
+        <p id="a5" style="display:none;">Abstract Consider the Schroedinger operator Lf(x) = - Laplace f(x) + V(x)f(x). We investigate weighted inequalities for the fractional integral operator I_a = (L)^-a/2. More precisely, let 0 < a < n and 1/p - 1/q = a/n, we would like to estimate the operator norm of I_a as an operator from L^p(w^p) to L^q(w^q) in terms of a fractional Muckenhoupt condition adapted to L. I_a has better decay properties than the classical fractional integral operator but is highly "non-local"; this is one of the obstructions to establishing the weighted estimate.
+
+
+This is joint work with Ji Li and Brett Wick.</p>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td valign="top">Oct 18, 2016
+</td>
+      <td valign="top">Cecilia Mondaini (Texas A&M)</td>
+      <td><a href="javascript:Toggle('a6')">Post-processing Galerkin method applied to a data assimilation algorithm: uniform in time error estimates</a>
+        <p id="a6" style="display:none;">Abstract We consider a data assimilation algorithm for recovering the exact value of a reference solution of the two-dimensional Navier-Stokes equations, by using continuous in time and coarse spatial observations. The algorithm is given by an approximate model which incorporates the observations through a feedback control (nudging) term. Our goal is to obtain an analytical estimate of the error committed when numerically solving this approximate model by using a post-processing technique for the spectral Galerkin method, inspired by the theory of approximate inertial manifolds. Our results show that, under suitable assumptions on the relaxation parameter and the resolution of the spatial mesh, the error estimate in this case is uniform in time, as opposed to previous results obtained when applying the same post-processing technique to, e.g., the 2D Navier-Stokes equations directly, where the error estimate grows exponentially in time. This important difference is justified due to the presence of the feedback control term, that stabilizes the large scales of the approximate solution. Although here we consider the 2D Navier-Stokes equations, we remark that our results apply equally to other dissipative evolution equations. This is a joint work with C. Foias and E. S. Titi.</p>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td valign="top">Oct 25, 2016</td>
+      <td valign="top">Jose Manuel Conde-Alonso (ICMAT Madrid)</td>
+      <td><a href="javascript:Toggle('a7')">A dyadic RBMO space and pointwise domination of nonhomogeneous Calderon-Zygmund operators.</a>
+        <p id="a7" style="display:none;">We revisit basic nonhomogeneous Calderon-Zygmund theory from the point of view of martingales. Given a measure μ of polynomial growth on R^d, we refine a deep result by David and Mattila to construct an atomic martingale filtration of supp(μ) which provides the right framework for a dyadic form of nondoubling harmonic analysis. Our dyadic formulation is effective to address some basic questions:
+<br />
+1. i)  A dyadic form of the ‘right’ BMO space for non doubling measures, RBMO.
+<br />
+2. ii)  Lerner’s domination of Calderon-Zygmund operators by dyadic operators.
+<br />
+3. iii)  A dyadic Calderon-Zygmund decomposition suitable for the study of both Calderon-Zygmund operators and Haar shifts.
+<br />
+If there is enough time, we will explain how the formulation of our results in terms of martingales leads to a natural generalization to matrix valued functions.
+Based on joint work with Javier Parcet.</p>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td valign="top">Nov 15,
+2016</td>
+      <td valign="top">Sameer Iyer (BROWN)</td>
+      <td><a href="javascript:Toggle('a8')">Global-in-x Steady Prandtl Expansion over a Moving Boundary.</a>
+        <p id="a8" style="display:none;">I will outline the proof that steady, incompressible Navier-Stokes flows posed over the moving boundary, y = 0, can be decomposed into Euler and Prandtl flows globally in the tangential variable, assuming a sufficiently small velocity mismatch. The main obstacles in the analysis center around obtaining sharp decay rates for the linearized profiles and the remainders. The remainders are controlled via a high-order energy method, supplemented with appropriate embedding theorems, which I will present.</p>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td valign="top">Jan 23, 2017</td>
+      <td valign="top"></td>
+      <td>Organizational meeting
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td valign="top">Jan 30, 2017
+</td>
+      <td valign="top">Juraj Foldes (UVA)</td>
+      <td><a href="javascript:Toggle('a10')">Entropy, Euler equation, and Variational methods</a>
+        <p id="a10" style="display:none;">Abstract: Two dimensional turbulent flows for large Reynold's numbers can be approximated by solutions of incompressible Euler's equation. As time increases, the solutions of Euler's equation are increasing their disorder; however, at the same time, they are limited by the existence of infinitely many invariants. Hence, it is natural to assume that the limit profiles are functions which maximize an entropy given the values of conserved quantities. Such solutions are described by methods of Statistical Mechanics and are called maximal entropy solutions. Nevertheless, there is no general agreement in the literature on what is the right notion of the entropy. We will show that on symmetric domains, independently of the choice of entropy, the maximal entropy solutions with small energy respect the geometry of the domain.
+This is a joint work with Vladimir Sverak (University of Minnesota).</p>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td valign="top">Feb 06, 2017</td>
+      <td valign="top">Aseel Farhat (UVA)</td>
+      <td><a href="javascript:Toggle('a11')">Mixing By Incompressible Flows</a>
+        <p id="a11" style="display:none;">Abstract: We will go over two recent papers on mixing by (1) G. Alberti, G. Crippa and A. Mazzucato and by (2) Y. Yao and A. Zlatos. We will present the two constructions of incompressible flows in L^\infty(W^{1,1}) that r-mixes mean-zero initial data to scale r in O(|log(r)|) time. That is, that the bound in the re-arrangement cost conjecture by Bressan is optimal when p=1.</p>
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td valign="top">Feb 13, 2017</td>
+      <td valign="top"> Aseel Farhat (UVA) </td>
+      <td>Mixing By Incompressible Flows (part II)
+      </td>
+    </tr>
+
+
+
+    <tr>
+      <td valign="top">Feb 27, 2017</td>
+      <td valign="top">Peter Perry (U Kentucky)</td>
+      <td><a href="javascript:Toggle('a13')">Soliton Resolution for the Derivative Nonlinear Schr\"{o}dinger Equation</a>
+        <p id="a13" style="display:none;">Abstract: This talk reports on joint work with Robert Jenkins, Jiaqi Liu, and Catherine Sulem. The derivative nonlinear Schr\"{o}dinger equation (DNLS) is a dispersive nonlinear PDE in one space and one time dimension which describes the propagation of Alfv\'{e}n waves in plasmas, is known to admit solitary wave solutions, and was shown to be completely integrable by Kaup and Newell. We'll outline a proof using the inverse scattering method that this equation has solutions global in time for generic initial data in a weighted Sobolev space and show that for such data, the solution is asymptotic to the sum of a finite number of solitons plus radiation.</p>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td valign="top">March 13, 2017</td>
+      <td valign="top">Liaosha Xu (UVA)</td>
+      <td><a href="javascript:Toggle('a15')"> Pointwise Multipliers In Weighted BMOs And L log^k L Estimates For Vorticity  </a>
+        <p id="a15" style="display:none;"> Abstract:
+   In this talk we first review some results in harmonic analysis and a theorem on L log L bound for vorticity by Zachary and Zoran. Then we attempt to generalize the theorem by studying L log^k L bound for the vorticity. The main challenge is to extend the pointwise multiplier theorem and the Log-characterization of BMO for more general weight functions. If time allows, there will also be some intuition behind this generalization, i.e. how this could improve the results in a paper on sub-critical blow-up scenarios for 3D NSE.
+</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">March 20, 2017</td>
+      <td valign="top">Jared Whitehead (BYU)</td>
+      <td><a href="javascript:Toggle('a16')">Convective systems with additive noise</a>
+        <p id="a16" style="display:none;">We investigate some of the mathematical and physical properties of a convective system with additive stochastic noise in the temperature evolution equation.  In particular, we develop a methodology to evaluate the stability of a base conductive state even in the presence of a time-dependent white noise.  This is joint work with Juraj Foldes, Nathan Glatt-Holtz, and Geordie Richards.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">March 27, 2017</td>
+      <td valign="top">Liaosha Xu (UVA)
+</td>
+      <td>Pointwise Multipliers In Weighted BMOs And L log^k L Estimates For Vorticity, part II
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">April 03, 2017</td>
+      <td valign="top">Armen Shirikyan</td>
+      <td>TBA
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">April 10, 2017</td>
+      <td valign="top">Mark Lewers (UVA)</td>
+      <td><a href="javascript:Toggle('a19')">Lp Outer Measure Theory and (Outer) Carleson Embeddings</a>
+        <p id="a19" style="display:none;">This talk is review of what we went over in a series of talks this past fall (based off a paper by Y. Do and C. Thiele). We will go over the theory of Lp spaces using outer measures rather than classical measure theory. Unlike previously developed theories based on super level sets, we'll go over the theory developed by Do and Thiele which uses pre-defined averages over generating sets of the outer measure, called super level measures. Besides going over some basic intuitive results in outer Lp spaces, we'll investigate how Carleson's embedding map can be extended to the outer Lp case on the upper half plane.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td valign="top">April 24, 2017</td>
+      <td valign="top">Kelsey Goodin (UVA)</td>
+      <td><a href="javascript:Toggle('a20')">An Introduction to the Calculus of Variations</a>
+        <p id="a20" style="display:none;">We can consider a special case of partial differential equations, Euler Lagrange Equations, whose solutions can be characterized as minimum values of functional equations. To solve these equations, we appeal to calculus of variations, which is a functional analytic analogue of the optimization concepts from undergrad calculus. In this talk we’ll introduce variational methods for solving PDE’s and discuss techniques for tackling non-constant boundary conditions and additional constraints. Time permitting; we’ll discuss the Weierstrass construction and fields.</p>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+
+
+
+<hr>
+<h3 class="mb-3">Archives</h3>
+
+<p><a href="/seminars/diffeq/2016-17/">2016-17</a> |
+  <a href="/seminars/diffeq/2015-16/">2015-16</a> |
+  <a href="/seminars/diffeq/2014-15/">2014-15</a></p>
+
+
+<hr />
+
+<b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
+
+<br><br><br>
+
+<b><a href="{{sem.webpage}}">Old webpage link</a></b> {%endif%} {% endfor %}
+
+<script type="text/javascript">
+  function Toggle(abstractID) {
+    var CurrentAbstract = document.getElementById(abstractID);
+    if (CurrentAbstract.style.display == 'none') {
+      CurrentAbstract.style.display = 'block';
+    } else {
+      CurrentAbstract.style.display = 'none';
+    }
+  }
+</script>
