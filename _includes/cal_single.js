@@ -224,8 +224,8 @@
 		<table width=100%>
 		<thead class="hidden-sm-down">
 			<tr>
-					<th width="12%">Date, Time</th>
-					<th>Speaker, Title, Abstract</th>
+					<th width="12%" style="padding-top:5px;padding-bottom:5px">Date</th>
+					<th style="padding-top:5px;padding-bottom:5px">Speaker, Title, Abstract</th>
 			</tr>
 			<tbody class="my-tr-zebra" id="events">
 			</tbody>
