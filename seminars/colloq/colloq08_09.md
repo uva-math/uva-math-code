@@ -382,7 +382,7 @@ Host: Tom Kriete
 <hr />
 <h3 class="mb-3">Archives</h3>
 
-<p><a href="/seminars/colloq/">current</a> | <a href="/seminars/colloq/2016-17/">2016-17</a> |
+<p><a href="/seminars/colloq/">current</a> | <a href="/seminars/colloq/2017-18/">2017-18</a> | <a href="/seminars/colloq/2016-17/">2016-17</a> |
     <a href="/seminars/colloq/2015-16/">2015-16</a> |
     <a href="/seminars/colloq/2014-15/">2014-15</a> |
     <a href="/seminars/colloq/2013-14/">2013-14</a> |
