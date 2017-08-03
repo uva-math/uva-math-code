@@ -57,7 +57,7 @@ The recent archives using google calendars are displayed year by year, semi-auto
 
 ###### Older
 
-Older archives not using google calendar have to be moved manually from the old seminar pages. See [this GitHub issue](https://github.com/uva-math/uva-math-code/issues/16) on which archives have already been moved.
+Older archives not using google calendar were moved manually from the old seminar pages.
 
 ### Where the magic happens
 

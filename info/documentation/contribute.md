@@ -53,8 +53,8 @@ containing more of the relevant information.
 ## 1. GitHub issues
 
 Having a [GitHub](https://www.github.com) account, one can add an **issue**. Current issues for the website are
-located here: [`https://github.com/uva-math/uva-math-code/issues`](https://github.com/uva-math/uva-math-code/issues)
-and a new issue can be added by anyone. **Issues are public** (but after all we're talking about editing a public website, right?).
+located here: [`https://github.com/uva-math/uva-math-code/issues`](https://github.com/uva-math/uva-math-code/issues). There si also wiki page at [`https://github.com/uva-math/uva-math-code/wiki/Issues-extended`](https://github.com/uva-math/uva-math-code/wiki/Issues-extended) for issues with longer turnaround.
+A new issue can be added by anyone. **Issues are public** (but after all we're talking about editing a public website, right?).
 
 The advantage of issues is that they can easily reference code, can be discussed and commented on, and ultimately be resolved and closed
 (though closed issues also stay public). To view the source code for any page click on the
