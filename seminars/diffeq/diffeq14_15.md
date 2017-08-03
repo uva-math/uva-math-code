@@ -1,7 +1,7 @@
 ---
-title: Harmonic Analysis and PDE seminar 2016-17
+title: Harmonic Analysis and PDE seminar 2014-15
 layout: seminar
-permalink: /seminars/diffeq/2016-17/
+permalink: /seminars/diffeq/2014-15/
 events: false
 sem_page: true
 sem_archive: true
@@ -36,6 +36,7 @@ nav_parent: Seminars
 <p><a href="/seminars/diffeq/2016-17/">2016-17</a> |
   <a href="/seminars/diffeq/2015-16/">2015-16</a> |
   <a href="/seminars/diffeq/2014-15/">2014-15</a></p>
+
 
 
 ---

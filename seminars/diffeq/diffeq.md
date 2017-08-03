@@ -10,5 +10,8 @@ sem_page: true
 {% include seminar_page.html
   content=""
   contacts=""
-  archives="[2016-17](/seminars/diffeq/2016-17/)"
+  archives="
+  [2016-17](/seminars/diffeq/2016-17/) \|
+  [2015-16](/seminars/diffeq/2015-16/) \|
+  [2014-15](/seminars/diffeq/2014-15/)"
 %}
