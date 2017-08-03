@@ -8,12 +8,18 @@
 
 <hr>
 
-<h2 class="mt-2 mb-4">List of seminars</h2>
+<h2 class="mt-2 mb-4">Google calendar</h2>
 
-<ul class="my-ul-zebra">
+<iframe frameborder="0" height="600" scrolling="no" src="https://calendar.google.com/calendar/embed?title=Seminars%20at%20Department%20of%20Mathematics%2C%20University%20of%20Virginia&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF{% for sem in site.data.seminars %}{% if sem.google_cal_id != null %}&amp;src={{ sem.google_cal_id | replace: '@', '%40'}}{% endif %}{% endfor %}&amp;ctz=America%2FNew_York" width="100%"></iframe>
+
+<hr />
+
+<h2 class="mt-2 mb-3">List of seminars</h2>
+
+<div class="my-div-odd-zebra">
 {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %}
 {% for sem in sorted_sem %}
-<li class="mb-3"> <h3><a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a></h3>
+<div class="mb-3"> <h3><a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a></h3>
 	<p class="mb-1"><b>{{ sem.regular_times }}</b></p>
 
 			{% for cnt in sem.contact %}{% include person_info_email_only.html UVA_id = cnt.UVA_id %}&nbsp;&nbsp;&nbsp;{% endfor %}
@@ -21,12 +27,6 @@
     {{ sem.information }}
   </details>
   {% endif %}
-	</li>
+</div>
 {% endfor %}
-</ul>
-
-<hr>
-
-<h2 class="mt-2 mb-4">Google calendar</h2>
-
-<iframe frameborder="0" height="600" scrolling="no" src="https://calendar.google.com/calendar/embed?title=Seminars%20at%20Department%20of%20Mathematics%2C%20University%20of%20Virginia&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF{% for sem in site.data.seminars %}{% if sem.google_cal_id != null %}&amp;src={{ sem.google_cal_id | replace: '@', '%40'}}{% endif %}{% endfor %}&amp;ctz=America%2FNew_York" width="100%"></iframe>
+</div>

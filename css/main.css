@@ -196,12 +196,20 @@ a:hover.list-group-item.active {
   background-color: #F1F1EF;
 }
 
+.my-p-zebra p:nth-of-type(2n){
+  background-color: #F1F1EF;
+}
+
 .my-tr-zebra tr:nth-of-type(2n+1){
   background-color: #F1F1EF;
 }
 
 
 .my-div-zebra div:nth-of-type(2n){
+  background-color: #F1F1EF;
+}
+
+.my-div-odd-zebra div:nth-of-type(2n+1){
   background-color: #F1F1EF;
 }
 
