@@ -32,6 +32,29 @@ nav_parent: Seminars
 show_from='1 July 2016'
 show_to='1 July 2017' %}
 
+<hr>
+<h3 class="mb-3">Archives</h3>
+
+<p><a href="/seminars/gradsem/2016-17/">2016-17</a> |
+<a href="/seminars/gradsem/2015-16/">2015-16</a> |
+<a href="/seminars/gradsem/2014-15/">2014-15</a> |
+<a href="/seminars/gradsem/2013-14/">2013-14</a> |
+<a href="/seminars/gradsem/2012-13/">2012-13</a> |
+<a href="/seminars/gradsem/2011-12/">2011-12</a> |
+<a href="/seminars/gradsem/2010-11/">2010-11</a> |
+<a href="/seminars/gradsem/2009-10/">2009-10</a> |
+<a href="/seminars/gradsem/2008-09/">2008-09</a> |
+<a href="/seminars/gradsem/2007-08/">2007-08</a> |
+<a href="/seminars/gradsem/2006-07/">2006-07</a> |
+<a href="/seminars/gradsem/2005-06/">2005-06</a> |
+<a href="/seminars/gradsem/2004-05/">2004-05</a> |
+<a href="/seminars/gradsem/2003-04/">2003-04</a> |
+<a href="/seminars/gradsem/2002-03/">2002-03</a> |
+<a href="/seminars/gradsem/2001-02/">2001-02</a> |
+<a href="/seminars/gradsem/2000-01/">2000-01</a> |
+<a href="/seminars/gradsem/1999-00/">1999-00</a> |
+<a href="/seminars/gradsem/1998-99/">1998-99</a></p>
+
 ---
 
 **Contact:** {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
