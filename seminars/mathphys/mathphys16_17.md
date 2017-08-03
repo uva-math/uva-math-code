@@ -32,11 +32,13 @@ nav_parent: Seminars
 show_from='1 July 2016'
 show_to='1 July 2017' %}
 
----
+<hr />
 
-**Contact:** {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
+<b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
 
-<br>**[Old webpage link]({{sem.webpage}})**
+<br><br><br>
+
+<b><a href="{{sem.webpage}}">Old webpage link</a></b>
 
 {%endif%}
 {% endfor %}
