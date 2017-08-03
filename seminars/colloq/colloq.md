@@ -29,6 +29,6 @@ title: University of Virginia Mathematics Colloquium #override the default title
     [2001-02](/seminars/colloq/2001-02/) \|
     [2000-01](/seminars/colloq/2000-01/) \|
     [1999-00](/seminars/colloq/1999-00/) \|
-    [1998-99](/seminars/colloq/1998-99/) \|
+    [1998-99](/seminars/colloq/1998-99/)
     "
 %}
