@@ -1,0 +1,9 @@
+The one-dimensional hard-core gas and three-dimensional branched polymers
+
+Last time I talked about an elementary method for computing the Green's function
+for the one-dimensional hard-core gas, and discussed its form near the critical
+activity at z=-1/e.  This time I will discuss its relation with the Green's 
+function for branched polymers in three dimensions.  I will derive the critical
+exponents in three dimensions and give the scaling form of the branched polymer
+Green's function.
+

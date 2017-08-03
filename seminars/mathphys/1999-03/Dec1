@@ -1,0 +1,60 @@
+Bastiaan Brams. Visiting Almut (Thursday/Friday).
+
+Talk Friday, 2pm in Ker 228.
+
+Title: "Electronic structure calculations via reduced density matrices
+        and semidefinite programming" 
+        
+        (Joint work with Shidong Jiang, Madhu Nayakkankuppam, 
+        Michael L. Overton, Jerome K. Percus and Francois Oustry.)
+
+Abstract: 
+The ground state variational problem for a many-electron system may be
+formulated in terms of the one-body and two-body reduced density matrices
+instead of the complete wavefunction [1-2].  A central issue is the
+``representability problem'' of characterizing (through convex
+inequalities) the class of functions that can arise as density matrix of a
+many-electron system.  The calculation of ground-state properties then
+reduces to a linear optimization problem subject to the representability
+constraints, of which the simplest ones are a finite set of linear
+equalities and bounds on eigenvalues, as in semidefinite programming.
+Significant work on this application was done in the 1970s [3], but
+interest has waned since, partly because of the unsettled status of the
+representability problem and partly because of the computational cost of
+solving the associated optimization problem.  Recent advances in the
+application of interior-point and related methods to semidefinite programs
+[4] have encouraged us to revisit the reduced density matrix approach to
+electronic structure calculations.  Our research follows two tracks.  On
+one hand we are using analytical and numerical approaches to develop new
+representability conditions.  Our new conditions extend fundamentally the
+known "diagonal" conditions developed in the 1970s [5], which correspond
+to the well-studied problem of characterizing the Cut Polytope [6].  While
+a complete solution of this problem appears intractable, we hope that our
+approach will bring the status of the complete representability problem to
+the same level as has been achieved for the diagonal problem.  On the
+other hand, we are exploring numerically the strength of the known
+representability conditions by calculations on model systems, in which we
+compare the ground state energy found by the optimization approach with
+the ground state energy found using full configuration interaction.
+
+[1] A. J. Coleman: "Structure of fermion density matrices",
+Rev. Mod. Phys. 35 (1963) 668--689.
+
+[2] Claude Garrod and Jerome K. Percus: "Reduction of the N-particle
+variational problem", J. Math. Phys. 5 (1964) 1756--1776.
+
+[3] M. Rosina and C. Garrod "The variational calculation of reduced
+density matrices", J. Comput. Phys. 18 (1975) 300--310.
+
+[4] L. Vandenberghe and S. Boyd: "Semidefinite programming",
+SIAM Rev. 38 (1996) 49--95.
+
+[5] Walter B. McRae and Ernest R. Davidson: "Linear inequalities for
+density matrices. II", J. Math. Phys. 15 (1972) 1527--1538.
+
+[6] Michel Marie Deza and Monique Laurent: "Geometry of Cuts and Metrics",
+Springer Verlag, Berlin, 1997.
+
+
+
+

@@ -1,0 +1,21 @@
+Mathematical Physics Seminar
+Wednesday April 28 2004, 2-3:30pm, 228 Kerchof Hall
+
+
+SPEAKER:   Cristina Draghici
+
+TITLE: "Symmetrization and Heat Kernels"
+
+ABSTRACT: We present rearrangement inequalities for
+multiple integrals, proved using the polarization
+technique. Polarization refers to rearranging a function
+with respect to a hyperplane. Then we derive
+sharp inequalities for ratios of integrals of heat
+kernels of Svhr"odinger operators, using our polarization
+inequalities. These ratio inequalities imply inequalities 
+for the partition functions and extend the results of 
+R. Banuelos, P.J. Mendez-Herndandez and D. You.
+
+-----------------------------------------------------------------
+Cristina will arrive Tuesday 4:22 pm and leave Thursday
+mid-afternoon. Host: Almut

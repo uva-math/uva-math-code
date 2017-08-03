@@ -1,0 +1,245 @@
+
+%Herbert Koch
+%Institut f"ur Angewandte Mathematik
+%Universit"at Heidelberg
+%Email:  koch@iwr.uni-heidelberg.de
+%Tel:    0049 6221 545715
+%  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt]{amsart}
+\pagestyle{plain}
+\oddsidemargin 1cm
+\evensidemargin .8cm
+\marginparsep 0pt
+\topmargin .0pt
+\marginparwidth 0pt
+\textwidth 6in
+\textheight 9.2in
+\makeatletter
+\renewcommand{\theenumi}{\Roman{enumi}}
+\makeatother
+
+
+\begin{document}
+
+\def\R{{\mathbb R}}
+\def\Z{{\mathbb Z}}
+\def\X{X}
+\def\Y{Y}
+\def\qn{{Q^n}}  
+\def\qn1{{Q^{n+1}}}
+\def\d{\partial}
+\def\e{\epsilon}
+\def\aa{\alpha}
+\def\tt{\theta}
+\def\VMO{\overline{VMO}}
+\def\F{\mathcal{F}}
+
+\newtheorem{theorem}{Theorem}
+
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newtheorem{definition}[remark]{Definition}
+
+\newcommand{\baa}{\begin{eqnarray}}
+\newcommand{\eaa}{\end{eqnarray}}
+\newcommand{\ba}{\begin{array}}
+\newcommand{\ea}{\end{array}}
+\newcommand{\bas}{\begin{eqnarray*}}
+\newcommand{\eas}{\end{eqnarray*}}
+
+ 
+
+\begin{center}
+{\bf Well-posedness for the Navier-Stokes equations\\
+Herbert Koch \\ 
+Institut f\"ur Angewandte Mathematik, Universit\"at Heidelberg
+}
+\end{center}
+
+
+
+%\begin{abstract}
+
+%\end{abstract}
+
+
+We study the incompressible Navier-Stokes equations on $\R^n \times
+\R^+$
+\begin{equation} \label{nav} 
+u_t + (u \cdot \nabla ) u-\Delta u + \nabla p  =0 
+\qquad 
+\nabla \cdot u = 0
+\end{equation}
+where $u$ is the velocity and $p$ is the pressure, with inital data 
+$u(x,0)= u_0(x)$.
+
+
+Existence of weak solutions has been shown by Leray. Uniqueness (and regularity) of weak solutions is unknown and both are among 
+the major open questions in applied analysis.
+Under stronger assumptions there exist local and/or global smooth solutions.
+One version of this has been shown by Kato for initial data in $L^n(\R^n)$.
+
+
+
+What are reasonable requirements for solutions and initial data?
+
+
+\begin{enumerate}
+
+\item The nonlinearity is quadratic. To have the notion of a  weak solution 
+we have to require for all $x$ and $R$
+\begin{equation} \label{1}   u \in L^2(B_R(x)\times [0,R^2]) \end{equation}
+
+
+\item The Navier-Stokes equations are invariant with respect to
+scaling. If  $u$ is a solution (we omit the pressure in the notation,
+as well as a discussion what we mean by a solution), then 
+\[ \tilde u= \lambda u(\lambda x, \lambda^2 t) \]
+is  again a solution. We require the   scale invariant version of 
+the $L^2$ condition above
+\begin{equation}\label{2}  
+\sup_{x,t\le T} t^{-n/2} \int_{B_{\sqrt{t}}(x)} \int_0^{t} |u|^2 \, dy \, ds < \infty. 
+\end{equation} 
+
+\item  
+The linear term should be  dominant. Let 
+\begin{equation}  \Vert v \Vert_{BMO^{-1}_{T}} := \sup_{x,t\le T } \left( t^{-n/2}\int_{B_{\sqrt{t}}(x)}
+\int_0^{t} |u|^2 \, dx \, ds \right)^{1/2} \end{equation} 
+where $u$ is the unique function  which satisfies 
+\[ u_t - \Delta u = 0, \qquad u(x,0)= v(x). \]
+We define the function space $BMO^{-1}_T $ as the set of all tempered distributions for which the norm is finite.
+
+\end{enumerate}
+
+
+
+\begin{theorem} 
+There exists $\delta>0$ with the following property: Let $0<T\le \infty$. 
+If $\nabla \cdot u_0=0$ and 
+$ \Vert u_0 \Vert_{(BMO^{-1}_{T})^n}
+ \le \delta $ 
+then there exists a unique smooth solution up to time $T$.
+\end{theorem}
+
+The theorem  implies for example existence of a unique local solution for initial velocity in $L^n$ or $L^\infty$.
+
+The talk is based on joint work with D. Tataru. 
+
+
+
+
+
+%\end{document}
+
+
+\begin{thebibliography}{10}
+  
+\bibitem{benartzi} M.~Ben-Artzi,  \newblock Global solutions of
+  two-dimensional {N}avier-{S}tokes and {E}uler equations.  \newblock
+  {\em Arch. Rational Mech. Anal.}, 128:329--358, 1994.
+  
+\bibitem{brezis} H.~Brezis,  \newblock Remarks on the preceding paper
+  ``{G}lobal solutions of two-dimensional {N}avier-{S}tokes and
+  {E}uler equations''.  \newblock {\em Arch. Rational Mech. Anal.},
+  128:359--360, 1994.
+  
+  
+\bibitem{897.35061} M.~Cannone,  \newblock {A generalization of a
+    theorem by Kato on Navier-Stokes equations.}  \newblock {\em Rev.
+    Mat. Iberoam.}, 13(3):515--541, 1997.
+
+
+  
+\bibitem{GM} Y.~Giga and T.~Miyakawa, \newblock{Navier-Stokes flow in
+    $\R\sp 3$ with measures as initial vorticity and Morrey spaces.}
+  \newblock{\em Comm. Partial Differential Equations}, 14(5):
+  577--618, 1989.
+  
+\bibitem{GMO} Y.~Giga, T.~Miyakawa and H.~Osada,
+  \newblock{Two-dimensional Navier-Stokes flow with measures as
+    initial vorticity.}  \newblock{\em Arch. Ration. Mech. Anal.},
+  104(3): 223-250, 1988.
+
+ 
+\bibitem{545.35073} T.~Kato,  \newblock {Strong $L\sp p$-solutions of
+    the Navier-Stokes equation in $\R\sp m$, with applications to weak
+    solutions}.  \newblock {\em {Math. Z.}}, 187:471--480, 1984.
+
+  
+\bibitem{KP} T.~Kato, and G.~ Ponce, \newblock{Commutator estimates
+    and the Euler and Navier-Stokes equations.} \newblock{\em Comm.
+    Pure Appl. Math.}, 41(7):891--907, 1988.
+
+
+  
+
+\bibitem{LM} P.-L.~Lions and  N.~Masmoudi, \newblock{Unicit\'e des solutions 
+faibles de Navier-Stokes dans $L^N(\Omega)$} 
+\newblock{\em C. R. Acad. Sci. Paris Sr. I Math}. 327 (1998), no. 5, 491--496
+  
+\bibitem{865.35101} F.~Planchon,  \newblock Global strong solutions in
+  {S}obolev or {L}ebesgue spaces to the incompressible {Navier-Stokes}
+  equations in $\mathbf{R}\sp 3$.  \newblock {\em Ann. Inst. Henri
+    Poincare, Anal. Non Lineaire}, 13(3):319--336, 1996.
+  
+
+  
+\bibitem{taylornav} M.~Taylor,  \newblock {Analysis on {M}orrey spaces
+    and applications to {N}avier-{S}tokes equation.}  \newblock {\em
+    Comm. Partial Differential Equations}, 17:1407--1456, 1992.
+  
+
+\end{thebibliography}
+
+
+
+
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt]{article}         
+\usepackage{amsmath, amsfonts}       
+\pagestyle{empty}
+\title{Unique continuation for elliptic equations with nonsmooth coefficients} 
+\author{Herbert Koch}   
+\begin{document}                                 
+\maketitle                                      
+
+
+Let $P$ be a 
+differential operator  and  let  $V$ and  $W$ be measurable functions. 
+We consider   sufficiently regular functions $u$  which satisfy
+\[  |Pu|    \le     V |u| + W |\nabla u | \]
+in a ball. We say the triple $(P,V,W)$ has the  strong unique continuation property (SUCP)
+if u vanishes if it vanishes of infinite order at one point.
+
+\bigskip
+
+{\bf
+Theorem} (Koch, Tataru): Let $n > 2$ and let $P$ be an elliptic partial differential operator 
+of second order with Lipschitz continuous coefficients.   
+The triple $(P,V,W)$ has the SUCP 
+if $V  \in L^{n/2}$  and $W \in L^{n+\epsilon}$.
+
+\bigskip
+
+The talk explains this result. It will  give a sketch of the proof
+and explains its relation to questions occuring in the context of
+nonlinear dispersive equations. 
+
+
+
+\noindent The talk is based  on  joint work with D. Tataru.
+
+\end{document}
+
+
+
+
+
+
+
+
+

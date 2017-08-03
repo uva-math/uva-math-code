@@ -1,0 +1,12 @@
+April 6, Wednesday 3:30 Kerchof 326
+
+Slava Krushkal,
+
+        "Topological quantum computation"
+
+This model of quantum computation was proposed by Freedman and Kitaev
+several years ago. One of the main advantages of this approach,
+compared to the "classical" qubit model is a "built in" error
+correction. I will talk about about trying to find a quantum mechanical
+system whose ground state is a TQFT.
+

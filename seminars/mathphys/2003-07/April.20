@@ -1,0 +1,63 @@
+Kerchof Hall, Room 317
+3:30, Friday, April 20 and Monday 23
+
+Speaker: Vojkan Jaksic, McGill University
+
+Title: An introduction to mathematical theory of non-equilibrium quantum statistical mechanics.
+
+
+
+Abstract: In this mini-course I shall discuss
+mathematical foundations of non-equilibrium quantum statistical mechanics focusing
+on a class of recent developments
+which fall roughly into two categories:
+(A) Axiomatic results that concern mathematical structure of the theory;
+(B) Study of concrete physically relevant models;
+In the first lecture I will focus on (A) in the simple setting of finite dimensional
+quantum systems. The exposition will be pedagogical and no background
+beyond basic linear algebra is required. After introducing the terminology
+(finite dimensional relative entropy, Gibbs canonical ensemble, free energy, etc),
+I shall discuss entropy production observable and
+entropy production balance equation, finite time linear response theory,
+finite time fluctuation theorems and their relation to linear response.
+In the first part of second lecture, which will be technically more advanced,
+ I shall discuss how these finite time results extend
+to infinite dimensional systems (by either taking thermodynamic
+limit of finite systems or by considering directly infinite dimensional
+C^\ast-dynamical systems).
+
+Taking time to infinity and showing that finite
+time structural results hold for the limiting states (called non- equilibrium steady states)
+and that the resulting relations are non-trivial
+is a fundamental problem which in context of (A) is solved by making axiomatic
+assumptions concerning ergodic properties of the system. The axioms
+can be verified only in the context of concrete models and that leads
+to (B) and some deep analytical problems. In the second part of the second lecture I will discuss
+some concrete physically relevant models for which axioms of (A) can be verified and,
+time permitting, some related open problems.
+
+References:
+
+[1] Aschbacher, W., Jaksic V., Pautrat, Y.,Pillet, C.-A.:
+Topics in non-equilibrium quantum statistical
+  mechanics. In Open Quantum Systems III. S. Attal, A. Joye,
+  C.-A. Pillet editors. Lecture Notes in Mathematics 1882,
+  Springer, New York (2006).
+
+[2] Jaksic, V.,Pillet, C-A.: On entropy production in quantum statistical mechanics.
+Commun. Math. Phys. 217, 285 (2001).
+
+[3] Jaksic, V., Pillet, C.-A.:
+Mathematical theory of non-equilibrium quantum statistical mechanics.
+J. Stat. Phys. 108, 787 (2002).
+
+[4] Ruelle, D.: Natural nonequilibrium states in quantum statistical
+mechanics. J. Stat. Phys. 98, 57 (2000).
+
+[5] Ruelle, D.: Entropy production in quantum spin systems.
+Commun. Math. Phys. 224, 3 (2001).
+
+[6] Ruelle, D.: Topics in quantum statistical mechanics and operator
+algebras. Preprint, mp-arc 01-257 (2001).
+
+

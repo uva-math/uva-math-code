@@ -1,0 +1,35 @@
+
+Erik Skibsted
+Institut for  Matematiske
+Aarhus Universitet, Munkegade  8000 Aarhus C, 
+Denmark
+email:skibsted@imf.au.dk
+
+
+Two-body scattering at low energies
+
+We give an account of various recent results obtained with Jan
+Derezi'nski on low-energy scattering for a class of long-range
+potentials containing the attractive Coulombic one. This includes
+the construction of wave operators of Isozaki--Kitada type diagonalizing
+the  whole  continuous part of the Hamiltonian. The corresponding S-matrix
+is strongly continuous (although not differentiable) at zero energy. 
+We derive a relationship to the analogous Dollard type constructions,
+and show that the location of the singularities of the scattering kernel
+S(lambda)(omega,omega') experiences an abrupt change at $lambda=0$.
+Thus, for example, for the purely Coulombic case the set of singularities
+jumps (as the energy goes down) from the set of coinciding outgoing
+and incoming angles, omega= omega', to the set of oppositely oriented angles,
+omega=-omega', reflecting the fact that the classical orbits at zero
+energy in this case are parabolas.
+
+
+
+
+\end{document}
+
+ 
+
+
+
+

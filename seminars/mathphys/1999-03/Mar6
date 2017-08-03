@@ -1,0 +1,6 @@
+The Sine-Gordon transformation, hard-core gases, and the Yang-Lee edge
+
+I will show how the Sine-Gordon transformation (usually used to get a field-theory
+representation of the Coulomb gas) turns some hard-core gases into field theories 
+with exponential interactions.  At the repulsive-core singularity at negative activity,
+this field theory is in the Yang-Lee class (cubic interaction with imaginary coefficient).

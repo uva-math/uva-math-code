@@ -1,0 +1,38 @@
+
+Mar 21, Monday, 12:00, Maury 110
+
+I.M.Segal, University of Notre Dame, Some mathematical questions of
+  the theory of Bose-Einstein condensation. 
+
+See Differential equations page.
+
+_______________________________________________________________
+
+
+March 23, Wed. 3:30, Kerchof 326
+
+David Ross, Rochester Inst. of Technology
+
+     Temperature-Dependent Vibrations of Micro-Beams
+     (with a brief introduction to MEMS)
+
+By the late 1980's the methods used to fabricate microelectronic
+devices had become sufficiently sophisticated that microelectronics
+engineers could build tiny machines on computer chips.  This brought
+about a new engineering discipline: Micro-Electro-Mechanical Systems,
+or MEMS.  In this talk, Professor Ross will introduce the methods and
+applications of MEMS from a mathematical perspective.  He will then
+focus on a particular problem that arose in the design of a MEMs
+micro-actuator.  The actuator is a bimetallic beam clamped at both
+ends.  Experiments show that the natural frequency of such a beam
+decreases as a function of the beam's temperature at low
+temperatures, then increases at higher temperatures.  Professor Ross
+will describe a mathematical model of the vibrations of a bimetallic
+beam, at the core of which is a non-linear fourth-order PDE.
+
+He will discuss numerical and analytical results for this equation,
+and he will show how this model explains the temperature-dependence of
+the beam's frequency.  He will present some open mathematical problems
+regarding this equation.  He will conclude by describing two
+inventions, which are now patented, that were suggested by the
+mathematical analysis.

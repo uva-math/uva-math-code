@@ -1,0 +1,3 @@
+
+Rich Felker will continue his discussion of the correlation inequality
+P(AB)\geq P(A)P(B), where P is a centered Gaussian measure (in R^d), A and B are symmetric convex sets.

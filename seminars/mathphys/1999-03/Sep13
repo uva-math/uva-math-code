@@ -1,0 +1,30 @@
+Friday, September 15, 2pm in Clark 142
+
+Speaker: Konstantin Rybnikov (Cornell)
+
+Title: Bootstrap percolation of convex defects
+
+What is the effect of punching holes at random in an infinite&nbsp;
+tensed membrane? When will the membrane still support tension? When will
+there be floppy portions that bend and flex? When will the&nbsp; whole
+structure become floppy with tension vanishing throughout the whole
+membrane? 
+
+We outline a mathematical theory of tension based
+on graph rigidity theory and introduce a probabilistic model for
+this problem. Assuming our infinite membrane is made of a material 
+with no plastic properties, we show that if the positions of the 
+holes are distributed in R^2 according to a Poisson law with 
+positive density (lambda) and the distribution of the shapes of the holes is 
+independent of the distribution of their centers, the tension vanishes 
+on all of R^2 for any value of the density. 
+
+In fact, this result follows from a more general theorem on the behavior 
+of iterated convex hulls of connected subsets of R^d.
+For this problem, we establish the existence of a 
+non-random N=N(\lambda) such that N (or less) iterative 
+convex hull operations are enough for covering all of
+R^d almost surely. We also show that if \lambda > 0
+is sufficiently small and the diameters of the sets of the original
+configuration are bounded from above, N(\lambda)> 2 almost
+surely.

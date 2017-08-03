@@ -1,0 +1,48 @@
+Wednesday, January 31, 3:30.
+
+Holly Carley
+
+	Large Deviations: Cramer's theorem and Gibb's Conditioning Principle
+
+This will be the first of a series of teaching/research seminars on
+large deviations.  We will begin with Cramer's theorem for sums of
+independent random variables, then go on to problems for diffusions, e.g.,
+Schilder's theorem.  We will be interested in the problem of
+developing higher asymptotics.
+
+
+
+
+
+
+Friday, February 2, at 3:30 pm: in 228 Kerchof Hall
+
+Dana Randall (Georgia Institute of Technology)
+
+            Sampling Adsorbing Staircase Walks 
+        Using a New Markov Chain Decomposition Method
+
+Staircase walks are lattice paths from (0,0) to (2n,0)
+which take diagonal steps and which never fall below the x-axis.
+A path hitting the x-axis k times is assigned a weight of c^k,
+where c > 0.  A simple local Markov chain which connects
+the state space and converges to the Gibbs measure (which normalizes
+these weights) is known to be rapidly mixing when c = 1, and can
+easily be shown to be rapidly mixing when c < 1.  We give the
+first proof that this Markov chain is also mixing in the more
+interesting case of c > 1, known in the statistical physics
+community as ``adsorbing staircase walks.''  The main new
+ingredient is a decomposition technique which allows us to analyze the
+Markov chain in pieces, applying different arguments to analyze
+each piece.
+
+-------------------------------------------------------
+Arrive Wednesday afternoon
+CS Colloquium Thursday afternoon
+MathPhys talk Friday afternoon
+Leave Saturday morning
+-------------------------------------------------------
+
+
+
+

@@ -1,0 +1,33 @@
+ABSTRACT: 
+
+In this talk I will discuss recent results (joint work with R. Cerf) 
+about  phase separation and coexistence in certain lattice models.
+There are two basic questions in this context. First:  why do we observe 
+tipically specific distinct  phases separated by sharp phase 
+boundaries? Second: what is the law determining the configuration and
+shape of the emerging phases?
+
+To  analyze these questions we study  Ising and Potts models below the 
+critical temperature in dimensions $\ge 2$ (although we focus on $d\ge
+3$). These models are probably the simplest possible  
+ones to exhibit several phases simultaneously. In order to obtain 
+more than one phase we have to impose certain constraints, such as
+boundary conditions or restrictions on the total 
+magnetization, etc. One well known example is the Wulff problem. In this
+context we can pose it as follows: Consider the Ising model 
+in a large box with plus boundary conditions and condition the system
+to have an excess amount of negative spins so that the empirical
+magnetization 
+is smaller than the spontaneous magnetization $m^*$. What is the
+typical picture we will see? 
+It is expected that the excess amount of minus spins will create
+a region filled with the minus phase (surrounded by the plus phase) 
+and this region has an asymptotically definite shape, called the Wulff
+crystall (droplet) which minimizes the surface energy associated 
+with the phase boundary. 
+One of our results is a proof of the validity of the
+picture described above. In the talk I will try to give an outline 
+of our approach which involves the use of the Fortuin-Kasteleyn
+represenation, large deviation theory, coarse-graining and geometric
+measure theory. 
+

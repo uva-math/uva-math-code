@@ -1,0 +1,26 @@
+John Cagnol
+
+Shape Optimization, Shells, and Applications
+
+Abstract:
+
+In many industrial processes the performance of the system highly depends
+on the geometric configuration, because of different physical phenomena.
+
+Given a PDE defined in a bounded domain, one is interested to know what is 
+the perturbation of the solution of that PDE under small perturbations of 
+the domain.  The shape derivative turns out to be an interesting tool for
+this.  We shall recall the the basic methods concerning the shape derivative
+and also explain why the situation is more complicated in the hyperbolic
+case and how we can recover some results by using the hidden regularity.
+
+A great increase in the development of flexible structures has taken
+place within the space and aeronautic industries during the last
+decade, with the emergence of micro-satellites.  In response to their 
+specific constraints, the engineers have proposed a concept known as 
+passive control.  We shall apply the shape optimization techniques
+described previously to one example: the Carpentier's joint, which is
+a shell with some geometric properties.
+
+There are parts of this work that joint with Jean-Paul Zolesio (CNRS, France)
+and parts with Jean-Paul Marmorat (Ecole des Mines de Paris, France).

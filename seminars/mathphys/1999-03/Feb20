@@ -1,0 +1,6 @@
+The one-dimensional hard-core gas and three-dimensional branched polymers
+
+Last time I used an identity between the pressure of the D dimensional hard-core
+gas and the generating function of branched polymers in D+2 dimensions to determine
+the scaling behavior of three-dimensional branched polymers.  Now I will explain this
+beautiful "dimensional reduction" formula.

@@ -1,0 +1,2 @@
+I will make some elementary remarks on the statistical mechanics of continuum gases, ensembles, and do some
+explicit computations in one dimension.  These will come in handy in the talk on Sept 17.
