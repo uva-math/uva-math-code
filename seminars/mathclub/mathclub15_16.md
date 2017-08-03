@@ -32,6 +32,15 @@ nav_parent: Seminars
 show_from='1 July 2015'
 show_to='1 July 2016' %}
 
+<hr>
+<h3 class="mb-3">Archives</h3>
+
+<p><a href="/seminars/mathclub/2016-17/">2016-17</a> |
+<a href="/seminars/mathclub/2015-16/">2015-16</a> |
+<a href="/seminars/mathclub/2014-15/">2014-15</a> |
+<a href="/seminars/mathclub/2013-14/">2013-14</a> |
+<a href="/seminars/mathclub/2010-11/">2010-11</a></p>
+
 ---
 
 **Contact:** {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
