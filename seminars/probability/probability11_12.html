@@ -1,7 +1,7 @@
 ---
-title: Probability Seminar 2015-16
+title: Probability Seminar 2011-12
 layout: seminar
-permalink: /seminars/probability/2015-16/
+permalink: /seminars/probability/2011-12/
 events: false
 sem_page: true
 sem_archive: true
@@ -29,8 +29,8 @@ nav_parent: Seminars
 {% endif %}
 
 {% include cal_single.js google_cal_id = sem.google_cal_id current=false max_sem=100
-show_from='1 July 2015'
-show_to='1 July 2016' %}
+show_from='1 July 2011'
+show_to='1 July 2012' %}
 
 
 <hr />
@@ -47,11 +47,10 @@ show_to='1 July 2016' %}
     <a href="/seminars/probability/Fall2010/">Fall 2010</a> |
     <a href="/seminars/probability/Spring2007/">Spring 2007</a></p>
 
----
+    <hr />
+        <b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %}{% endfor %}
 
-**Contact:** {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
 
-<br>**[Old webpage link]({{sem.webpage}})**
 
-{%endif%}
-{% endfor %}
+        {%endif%}
+        {% endfor %}
