@@ -55,11 +55,10 @@ show_to='1 July 2001' %}
 <a href="/seminars/gradsem/1999-00/">1999-00</a> |
 <a href="/seminars/gradsem/1998-99/">1998-99</a></p>
 
----
+<hr />
+    <b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %}{% endfor %}
 
-**Contact:** {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
 
-<br>**[Old webpage link]({{sem.webpage}})**
 
-{%endif%}
-{% endfor %}
+    {%endif%}
+    {% endfor %}

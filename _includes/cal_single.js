@@ -141,11 +141,17 @@
             {
               var strBegin = startDT +
                 propSep +
-                '<b><a href="' + item.htmlLink + '" class="h6 mt-6">' +
-                startDayWeek + ' ' +
-                startMonth + ' ' +
-                startDay + ', ' +
-                startYear + '</a></b>';
+                '<b><a href="' + item.htmlLink + '" class="mt-6">' +
+								propSep +
+                startDayWeek +
+								propSep +
+                startMonth + ' ' + startDay +
+								propSep +
+                startYear +
+								propSep +
+								propSep +
+								'</a></b>' +
+								propSep;
             }
             else
             {
@@ -154,14 +160,18 @@
               var startMin = time[1];
               var strBegin = startDT +
                 propSep +
-                '<b><a href="' + item.htmlLink + '" class="h6 mt-6">' +
-                startDayWeek + ' ' +
-                startMonth + ' ' +
-                startDay + ', ' +
-                startYear + ' @ ' +
-                startHour + ':' +
-                startMin + ' ' +
-                AmPm1(time[0]) + '</a></b>';
+                '<b><a href="' + item.htmlLink + '" class="mt-6">' +
+								propSep +
+                startDayWeek +
+								propSep +
+                startMonth + ' ' + startDay +
+								propSep +
+                startYear +
+								propSep +
+                startHour + ':' + startMin + AmPm1(time[0]) +
+								propSep +
+								'</a></b>' +
+								propSep;
             }
             var str = strBegin + '<h5 class="mt-1" style="text-transform:none !important">' +
             item.summary + '</h5>' +
@@ -176,27 +186,30 @@
             eventsArray.sort();
             // the array is sorted after all calendars are processes
             var eventsToDisplay = eventsArray.length > maxSeminars ? maxSeminars : eventsArray.length;
-            {%if include.current %}
               for (var j = 0; j < eventsToDisplay; j++)
               {
                 //this is where the events' representation happens
-                var li = document.createElement('li');
-                li.className = "mb-3";
-                var elem = (eventsArray[j]+'').split(propSep)[1];
-                li.innerHTML = elem;
-                document.getElementById('events').appendChild(li);
+                var tr = document.createElement('tr');
+                var tdl = document.createElement('td');
+                var tdr = document.createElement('td');
+
+                var elem_array = (eventsArray[j]+'').split(propSep);
+
+                tdl.setAttribute("valign","top");
+                tdl.setAttribute("class","hidden-sm-down");
+                tdr.setAttribute("valign","top");
+                tr.setAttribute("class","mb-3");
+                tdr.setAttribute("style","padding-top:5px;padding-bottom:5px");
+                tdl.setAttribute("style","padding:5px;");
+
+                tdl.innerHTML = elem_array[3];
+                tdr.innerHTML = elem_array[1] + elem_array[2] + ' ' + elem_array[3] + ', ' + elem_array[4] + " @ " + elem_array[5] + elem_array[6] + elem_array[7];
+
+                document.getElementById('events').appendChild(tr);
+                tr.appendChild(tdl);
+                tr.appendChild(tdr);
               }
-            {% else %}
-              for (var j = eventsToDisplay - 1; j>=0; j--)
-              {
-                //this is where the events' representation happens
-                var li = document.createElement('li');
-                li.className = "mb-3";
-                var elem = (eventsArray[j]+'').split(propSep)[1];
-                li.innerHTML = elem;
-                document.getElementById('events').appendChild(li);
-              }
-            {% endif %}
+
 
             executeOnce = 1;
           };
@@ -207,10 +220,16 @@
 </script>
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
-<div id='content'>
-  {%if include.current %}
-    <ul id='events' class="my-ul-zebra"></ul>
-  {% else %}
-    <ol reversed id='events' class="my-ul-zebra"></ol>
-  {% endif %}
+<div id="content">
+		<table width=100%>
+		<thead class="hidden-sm-down">
+			<tr>
+					<th width="12%">Date, Time</th>
+					<th>Speaker, Title, Abstract</th>
+			</tr>
+			<tbody class="my-tr-zebra" id="events">
+			</tbody>
+		</thead>
+		</table>
+    <br><br>
 </div>

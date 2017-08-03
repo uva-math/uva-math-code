@@ -44,15 +44,11 @@
   {{include.archives}}
 {%endif%}
 
----
+<hr />
 
 {{ include.contacts }}
 
-**Contact:** {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %}{% endfor %}
-
-<br />
-
-{% if sem.webpage != null %}**[Old webpage link]({{sem.webpage}})**{% endif %}
+<b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %}{% endfor %}
 
 {%endif%}
 {% endfor %}

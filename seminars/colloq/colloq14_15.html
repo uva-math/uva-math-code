@@ -1,7 +1,7 @@
 ---
-title: Colloquium 2016-17
+title: Colloquium 2014-15
 layout: seminar
-permalink: /seminars/colloq/2016-17/
+permalink: /seminars/colloq/2014-15/
 events: false
 sem_page: true
 sem_archive: true
@@ -29,9 +29,8 @@ nav_parent: Seminars
 {% endif %}
 
 {% include cal_single.js google_cal_id = sem.google_cal_id current=false max_sem=100
-show_from='1 July 2016'
-show_to='1 July 2017' %}
-
+show_from='1 July 2014'
+show_to='1 July 2015' %}
 
 <hr />
 <h3 class="mb-3">Archives</h3>
@@ -55,11 +54,9 @@ show_to='1 July 2017' %}
     <a href="/seminars/colloq/2000-01/">2000-01</a> |
     <a href="/seminars/colloq/1999-00/">1999-00</a> |
     <a href="/seminars/colloq/1998-99/">1998-99</a></p>
----
+    <hr />
+        <b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %}{% endfor %}
 
-**Contact:** {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
 
-<br>**[Old webpage link]({{sem.webpage}})**
-
-{%endif%}
-{% endfor %}
+        {%endif%}
+        {% endfor %}
