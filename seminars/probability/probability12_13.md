@@ -25,7 +25,7 @@ nav_parent: Seminars
     <div class="col-md-3">
       <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
     </div>
-  </div>
+  </div><br>
 {% endif %}
 
 {% include cal_single.js google_cal_id = sem.google_cal_id current=false max_sem=100
@@ -46,7 +46,7 @@ show_to='1 July 2013' %}
     <a href="/seminars/probability/2010-11/">Spring 2011</a> |
     <a href="/seminars/probability/Fall2010/">Fall 2010</a> |
     <a href="/seminars/probability/Spring2007/">Spring 2007</a></p>
-    
+
 ---
 
 **Contact:** {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
