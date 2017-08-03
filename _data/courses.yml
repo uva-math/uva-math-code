@@ -33,27 +33,27 @@
 - name: " A Survey of Calculus I with Algebra (4.00) "
   number: 1190
   offered: Fall 2017
-  descr: " Topics include College Algebra; limits and continuity; differentiation and integration of algebraic and elementary transcendental functions; and applications to maximum-minimum problems, curve sketching and exponential growth.  Credit is not given for both Math 1210, 1190, and 1310.   Prerequisite: No previous exposure to Calculus. "
+  descr: " A first calculus course for business/biology/social-science students. Topics include college algebra/limits and continuity/differentiation and integration of algebraic and elementary transcendental functions/applications to related-rates & optimization problems as well as to curve sketching & exponential growth. At most one of MATH 1190, MATH 1210, and 1310 may be taken for credit. Prerequisite: No previous exposure to Calculus. "
 
-- name: "  A survey of Calculus I (3.00) "
+- name: " A survey of Calculus I (3.00) "
   number: 1210
   offered: Fall 2017
-  descr: " Topics include limits and continuity; differentiation and integration of algebraic and elementary transcendental functions; and applications to maximum-minimum problems, curve sketching and exponential growth. Credit is not given for both MATH 1210, 1212, and 1310. "
+  descr: " A first calculus course for business/biology/social-science students. Topics include limits and continuity/differentiation & integration of algebraic & elementary transcendental functions/applications to related-rates & optimization problems as well as to curve sketching & exponential growth. At most one of Math 1190, MATH 1210, and 1310 ma1y be taken for credit. "
 
-- name: "  A survey of Calculus II (3.00) "
+- name: " A Survey of Calculus II (3.00) "
   number: 1220
   offered: Fall 2017
-  descr: " A second calculus course for business, biology, and social science students. Analyzes functions of several variables, their graphs, partial derivatives and optimization; multiple integrals. Reviews basic single variable calculus and introduces differential equations and infinite series. Credit is not given for both MATH 1220 and 1320.  Prerequisite: MATH 1210 or equivalent. "
+  descr: " A second calculus course for business/biology/and social-science students. Topics include differential equations/infinite series/analysis of functions of several variables/analysis of probability density functions of continuous random variables. The course begins with a review of basic single-variable calculus.  Prerequisite: MATH 1210 or equivalent; at most one of MATH 1220 and MATH 1320 may be taken for credit. "
 
 - name: " Calculus I (4.00) "
   number: 1310
   offered: Fall 2017
-  descr: " Introduces calculus with emphasis on techniques and applications. Recommended for natural science majors and students planning additional work in mathematics. The differential and integral calculus for functions of a single variable is developed through the fundamental theorem of calculus. Credit is not given for both MATH 1210, 1212, and 1310.  Prerequisite: Background in algebra, trigonometry, exponentials, logarithms, and analytic geometry. "
+  descr: " A first calculus course for natural-science majors/students planning further work in mathematics/students intending to pursue graduate work in applied social sciences. Introduces differential & integral calculus for single-variable functions, emphasizing techniques/applications & major theorems, like the fundamental theorem of calculus. Prerequisite: Background in algebra/trigonometry/exponentials/logarithms/analytic geometry. "
 
 - name: " Calculus II (4.00) "
   number: 1320
   offered: Fall 2017
-  descr: " Continuation of 1310. Applications of the integral, techniques of integration, infinite series, vectors. Credit is not given for both MATH 1220 and 1320.  Prerequisite: MATH 1310 or equivalent, or instructor permission. "
+  descr: " A second calculus course for natural-science majors, students planning additional work in mathematics, and students intending to pursue graduate work in the applied social sciences.  Topics include applications of the integral, techniques of integration, differential equations, infinite series, parametric equations, and polar coordinates.   Prerequisite: MATH 1310 or equivalent; at most one of MATH 1220 and MATH 1320 may be taken for credit. "
 
 - name: " Calculus Workshop I (2.00) "
   number: 1330
@@ -70,7 +70,7 @@
 - name: " Calculus III (4.00) "
   number: 2310
   offered: Fall 2017
-  descr: " Studies functions of several variables including lines and planes in space, differentiation of functions of several variables, maxima and minima, multiple integration, line integrals, and volume.  Prerequisite: MATH 1320 or its equivalent. "
+  descr: " A continuation of Calc I and II, this course is about functions of several variables. Topics include finding maxima and minima of functions of several variables/surfaces and curves in three-dimensional space/integration over these surfaces and curves. Additional topics: conservative vector fields/Stokes' and the divergence theorems/how these concepts relate to real world applications. Prerequisite: MATH 1320 or the equivalent. "
 
 - name: " Advanced Calculus and Linear Algebra I (4.00) "
   number: 2315
@@ -81,9 +81,9 @@
   number: 2559
   descr: " This course provides the opportunity to offer a new topic in the subject of mathematics. "
 
-- name: " Euclidean and Noneuclidean Geometry (3.00) "
+- name: " Euclidean and Non-Euclidean Geometry (3.00) "
   number: 2700
-  descr: " Examines assumptions and methods in the original text of Euclid's Elements. Covers selected geometric topics such as symmetries, spherical geometry, curvature, the dissection theory of area, constructable numbers, and the discovery of non-Euclidean geometry.  Prerequisites: Some familiarity with calculus. "
+  descr: " Examines assumptions and methods in the original text of Euclid's Elements. Covers selected geometric topics such as symmetries, spherical geometry, curvature, the dissection theory of area, constructible numbers, and the discovery of non-Euclidean geometry. Prerequisite: Some familiarity with calculus. "
 
 - name: " Transition to Higher Mathematics (4.00) "
   number: 3000
@@ -92,7 +92,7 @@
 - name: " Introduction to Probability (3.00) "
   number: 3100
   offered: Fall 2017
-  descr: " Includes sample spaces, combinatorial analysis, discrete and continuous random variables, classical distributions, expectation, Chebyshev theorem, independence, central limit theorem, conditional probability, and generating functions.  Prerequisite: MATH 1320. A knowledge of double integrals is recommended. "
+  descr: " Introduces fundamental concepts/techniques of probability/the theory of randomness. Focuses on problem solving/understanding key theoretical ideas. Topics include sample spaces combinatorial analysis/discrete and continuous random variables/classical distributions/expectation/Chebyshev's inequality/independence/central limit theorem/conditional probability/generating functions. Prerequisite: MATH 1320. Recommended: knowledge of double integrals. "
 
 - name: " Introduction to Mathematical Statistics (3.00) "
   number: 3120
@@ -110,16 +110,16 @@
 - name: " Basic Real Analysis (3.00) "
   number: 3310
   offered: Fall 2017
-  descr: " Concentrates on proving the basic theorems of calculus, with due attention to the beginner with little or no experience in the techniques of proof. Includes limits, continuity, differentiability, the Bolzano-Weierstrass theorem, Taylor's theorem, integrability of continuous functions, and uniform convergence.  Prerequisite: MATH 1320. "
+  descr: " A rigorous development of the properties of the real numbers and the ideas of calculus including theorems on limits/ continuity/differentiability/convergence of infinite series/the construction of the Riemann integral. The focus of students' work will be on getting experience in constructing proofs and developing examples. Prerequisite: MATH 1320. "
 
 - name: " Advanced Calculus and Linear Algebra II (4.00) "
   number: 3315
-  descr: " This course is a continuation of MATH 2315. Covers topics from linear algebra, differential equations and real analysis. Prepares students for taking advanced mathematical classes at an early stage.  Prerequisite: MATH 2315 "
+  descr: " This course is a continuation of MATH 2315. Covers topics from linear algebra/differential equations/real analysis. Success in this course and MATH 2315 (grades of B- or higher) exempts the student from the math major requirement of taking MATH 3351 and MATH 3250.  Students are encouraged to take more advanced courses in these areas. Prerequisite: MATH 2315. "
 
 - name: " Complex Variables with Applications (3.00) "
   number: 3340
   offered: Fall 2017
-  descr: " Topics include analytic functions, Cauchy formulas, power series, residue theorem, conformal mapping, and Laplace transforms.  Prerequisite: MATH 2310. "
+  descr: " Covers functions of a complex variable that are complex differentiable and the unusual and useful properties of such functions. Some topics: Cauchy's integral formula/power series/the residue theorem/Rouché's theorem. Applications include doing real integrals using complex methods and applications to fluid flow in two dimensions. Prerequisite: MATH 2310. "
 
 - name: " Applied Linear Algebra (3.00) "
   number: 3350
@@ -137,6 +137,7 @@
 
 - name: " New Course in Mathematics (1.00 - 4.00) "
   number: 3559
+  offered: Fall 2017
   descr: " This course provides the opportunity to offer a new topic in the subject of mathematics. "
 
 - name: " Discrete Mathematics (3.00) "
@@ -156,16 +157,16 @@
 - name: " Mathematics of Derivative Securities (3.00) "
   number: 4140
   offered: Fall 2017
-  descr: " Topics include arbitrage arguments, valuation of futures, forwards and swaps, hedging, option-pricing theory, decision theory, and sensitivity analysis. Prerequisite: MATH 3100 or APMA 3100. Students should have a knowledge of matrix algebra. "
+  descr: " This class introduces students to the mathematics used in pricing derivative securities. Topics include a review of the relevant probability theory of conditional expectation and martingales/the elements of financial markets and derivatives/pricing contingent claims in the binomial & the finite market model/(time permitting) the Black-Scholes model. Prerequisites: MATH 3100 or APMA 3100. Students should have a knowledge of matrix algebra. "
 
 - name: " Mathematics for Physics (3.00) "
   number: 4210
-  descr: " Includes vector analysis, Green's, Stokes', divergence theorems, conservation of energy, and potential energy functions. Emphasizes physical interpretation, Sturm-Liouville problems and Fourier series, special functions, orthogonal polynomials, and Green's functions.    Prerequisite: MATH 2310, 3250; 3351 recommended. "
+  descr: " This course covers linear algebra/complex analysis/vector differential & integral calculus. Thus it is a compressed version of MATH 3351 & MATH 3340 and a review of some of the material in MATH 2310. Emphasis is on the physical interpretation. [This course does not count as a Mathematics elective for Mathematics majors if both MATH 3351 and MATH 3340 are to be counted.] Prerequisite: MATH 2310. "
 
 - name: " Partial Differential Equations and Applied Mathematics (3.00) "
   number: 4220
   offered: Fall 2017
-  descr: " Introduces partial differential equations, Fourier transforms. Includes separation of variables, boundary value problems, classification of partial differential equations in two variables, Laplace and Poisson equations, and heat and wave equations.    Prerequisite: MATH 4210; 3351 recommended. "
+  descr: " This course is a beginning course in partial differential equations/Fourier analysis/special functions (such as spherical harmonics and Bessel functions). The discussion of partial differential equations will include the Laplace and Poisson equations and the heat and wave equations. Prerequisites: MATH 3250 and either MATH 3351 or MATH 4210. "
 
 - name: " Differential Equations and Dynamical Systems (3.00) "
   number: 4250
@@ -178,7 +179,11 @@
 - name: " Introduction to Real Analysis (3.00) "
   number: 4310
   offered: Fall 2017
-  descr: " The basic topology of Euclidean spaces; continuity, and differentiation of functions of a single variable; Riemann-Stieltjes integration; and convergence of sequences and series.  Prerequisite: MATH 3310 "
+  descr: " This course covers the basic topology of metric spaces/continuity and differentiation of functions of a single variable/Riemann-Stieltjes integration/convergence of sequences and series. Prerequisite:  MATH 3310 or permission of instructor. "
+
+- name: " Advanced Multivariate Calculus (3.00) "
+  number: 4330
+  descr: " Differential and Integral Calculus in Euclidean spaces; implicit and inverse function theorems, differential forms and Stokes' Theorem. Prerequisite: MATH 2310 or MATH 2315 "
 
 - name: " Algebraic Coding Theory (3.00) "
   number: 4452
@@ -201,14 +206,18 @@
   number: 4652
   descr: " Structural properties of basic algebraic systems such as groups, rings and fields. A special emphasis is made on polynomials in one and several variables, including irreducible polynomials, unique factorization and symmetric polynomials. Time permitting, such topics as group representations or algebras over a field may be included.    Prerequisite: MATH 3351 or 5651 "
 
+- name: " Number Theory (3.00) "
+  number: 4653
+  descr: " The study of the integers and related number systems. Includes polynomial congruences, rings of congruence classes and their groups of units, quadratic reciprocity, diophantine equations, and number-theoretic functions.  Additional topics such as the distribution of prime numbers may be included.  Prerequisite: MATH 3354. "
+
 - name: " Bilinear Forms and Group Representations (3.00) "
   number: 4657
   offered: Fall 2017
-  descr: " This course will cover the representation theory of finite groups and other interactions between linear and abstract algebra. Topics include: bilinear and sesquilinear forms and inner product spaces; important classes of linear operators on inner product spaces; the notion of group representations; complete reducibility of complex representations of finite groups; character theory; some applications of representation theory.  Prerequisite: MATH 3351 (or 4651) and MATH 3354 (or 4652) "
+  descr: " Covers the representation theory of finite groups/other interactions between linear & abstract algebra. Topics include: bilinear & sesquilinear forms & inner product spaces/important classes of linear operators on inner product spaces/the notion of group representation/complete reducibility of complex representations of finite groups/character theory/some applications of representation theory. Prerequisite: MATH 3351 (or 4651)/MATH 3354 (or 4652) "
 
 - name: " Galois Theory (3.00) "
   number: 4658
-  descr: " Solutions of polynomials, algebraic field extensions, field automorphisms, and the fundamental theorem of Galois theory.  Applications include the unsolvability of the quintic, as well as ruler and compass constructions.  Prerequisite: MATH 3351 (or 4651) and MATH 4652 "
+  descr: " This course studies the symmetries of solutions of polynomials. Topics include algebraic field extensions/field automorphisms/the fundamental theorem of Galois theory. Applications include the unsolvability of the quintic, as well as ruler & compass constructions. Prerequisites: MATH 3351 (or 4651) and MATH 4652. "
 
 - name: " Algebraic Combinatorics (3.00) "
   number: 4660
@@ -216,7 +225,7 @@
 
 - name: " Introduction to Differential Geometry (3.00) "
   number: 4720
-  descr: " Topics selected from the theory of curves and surfaces in Euclidean space and the theory of manifolds. Prerequisites: Math 2310 and Math 3351. "
+  descr: " Geometric study of curves/surfaces/their higher-dimensional analogues. Topics vary and may include curvature/vector fields and the Euler characteristic/the Frenet theory of curves in 3-space/geodesics/the Gauss-Bonnet theorem/and/or an introduction to Riemannian geometry on manifolds. Prerequisites: MATH 2310 and MATH 3351 or instructor permission. "
 
 - name: " Introduction to Knot Theory (3.00) "
   number: 4750
@@ -225,7 +234,7 @@
 - name: " General Topology (3.00) "
   number: 4770
   offered: Fall 2017
-  descr: " Topological spaces and continuous functions, connectedness, compactness, countability and separation axioms, and function spaces. Time permitting, more advanced examples of topological spaces, such as projective spaces, as well as an introduction to the fundamental group will be covered.  Prerequisite: Math 2310 and Math 3351 with Math 3310 recommended. "
+  descr: " Topics include abstract topological spaces & continuous functions/connectedness/compactness/countability/separation axioms. Rigorous proofs emphasized. Covers myriad examples, i.e., function spaces/projective spaces/quotient spaces/Cantor sets/compactifications. May include intro to aspects of algebraic topology, i.e., the fundamental group. Prerequisites: MATH 2310, MATH 3351, MATH 3310, or higher level versions of these courses. "
 
 - name: " Seminar (3.00) "
   number: 4830
@@ -235,13 +244,13 @@
   number: 4840
   descr: " This course will introduce students to the techniques and methods of mathematical research. Students  will independently work with mathematical literature on a topic assigned by the instructor and present their findings in various formats (presentation, paper etc.). "
 
-- name: " Distinguished Major Thesis I (3.00) "
+- name: " Distinguished Major Thesis (3.00) "
   number: 4900
   descr: " This course provides a framework for the completion of a Distinguished Major Thesis, a treatise containing an exposition of a chosen mathematical topic.  A faculty advisor guides a student through the beginning phases of the process of research and writing.  Prerequisite: Acceptance into the Distinguished Major Program. "
 
-- name: " Distinguished Major Thesis II (3.00) "
+- name: " Distinguished Major Thesis (3.00) "
   number: 4901
-  descr: " This is the second semester of a two semester sequence for the purpose of the completion of a Distinguished Major Thesis. A faculty member guides the student through all phases of the process which culminates in an open presentation of the thesis to an audience including a faculty evaluation committee.  Prerequisite: MATH 4900. "
+  descr: " This is the second semester of a two semester sequence for the purpose of the completion of a Distinguished Major Thesis. A faculty member guides the student through all phases of the process which culminates in an open presentation of the thesis to an audience including a faculty evaluation committee.    Prerequisite: MATH 4900. "
 
 - name: " Independent Study (1.00 - 3.00) "
   number: 4993
