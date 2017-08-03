@@ -1,0 +1,25 @@
+In order to schedule a speaker for the Mathematical Physics
+Seminar, check the URL for the week you wish to schedule.  If there is
+nothing scheduled, go ahead and set aside the slot for your speaker by
+adding information to the corresponding file.  It would also be
+helpful to change the file 
+
+/home/let/public_html/Mathphys/index.html
+
+and change the words "No seminar scheduled" to the name of your speaker.  A link to the speaker's home page is helpful if this is known.
+
+To make these changes you have to be using an editor on weyl.
+
+Title, and any further information on the talk would be appreciated
+when available.  The usual time for the seminar is 2:00 Wednesdays,
+but exceptions can of course be made to accomodate schedules.  
+
+The file you'd need to modify for Sep29, for example, is
+
+/home/let/public_html/Mathphys/Sep29
+
+If you have trouble modifying the file you can email me with the information at let@virginia.edu
+
+The usual address for browsing the Mathematical Physics Seminar page is
+
+http://www.math.virginia.edu/~let/Mathphys/
