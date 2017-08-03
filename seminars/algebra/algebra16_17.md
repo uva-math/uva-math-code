@@ -32,6 +32,22 @@ nav_parent: Seminars
 show_from='1 July 2016'
 show_to='1 July 2017' %}
 
+
+<hr />
+<h3 class="mb-3">Archives</h3>
+
+[2016-17](/seminars/algebra/2016-17/) \|
+[2015-16](/seminars/algebra/2015-16/) \|
+[2014-15](/seminars/algebra/2014-15/) \|
+[2013-14](/seminars/algebra/2013-14/) \|
+[2012-13](/seminars/algebra/2012-13/) \|
+[2011-12](/seminars/algebra/2011-12/) \|
+[2010-11](/seminars/algebra/2010-11/) \|
+[2009-10](/seminars/algebra/2009-10/) \|
+[2008-09](/seminars/algebra/2008-09/) \|
+[2007-08](/seminars/algebra/2007-08/) \|
+[2002-07](/seminars/algebra/AlgSeminarOld/)
+
 ---
 
 **Contact:** {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
