@@ -37,7 +37,7 @@ show_to='1 July 2011' %}
 <h3 class="mb-3">Archives</h3>
 
 
-<p><a href="/seminars/probability/2016-17/">2016-17</a> |
+<p><a href="/seminars/probability/">current</a> | <a href="/seminars/probability/2016-17/">2016-17</a> |
     <a href="/seminars/probability/2015-16/">2015-16</a> |
     <a href="/seminars/probability/2014-15/">2014-15</a> |
     <a href="/seminars/probability/2013-14/">2013-14</a> |

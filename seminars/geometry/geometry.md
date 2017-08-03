@@ -8,6 +8,7 @@ sem_page: true
 ---
 
 {% include seminar_page.html archives="
+[current](/seminars/geometry/) \|
 [2016-17](/seminars/geometry/2016-17/) \|
 [2015-16](/seminars/geometry/2015-16/) \|
 [2014-15](/seminars/geometry/2014-15/) \|

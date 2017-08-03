@@ -8,6 +8,7 @@ title: Graduate Students Seminar
 ---
 
 {% include seminar_page.html archives="
+[current](/seminars/gradsem/) \|
 [2016-17](/seminars/gradsem/2016-17/) \|
 [2015-16](/seminars/gradsem/2015-16/) \|
 [2014-15](/seminars/gradsem/2014-15/) \|

@@ -9,6 +9,7 @@ title: UVA Undergraduate Math club # OVERRIDE
 ---
 
 {% include seminar_page.html archives="
+[current](/seminars/mathclub/) \|
 [2016-17](/seminars/mathclub/2016-17/) \|
 [2015-16](/seminars/mathclub/2015-16/) \|
 [2014-15](/seminars/mathclub/2014-15/) \|

@@ -11,6 +11,7 @@ sem_page: true
   content=""
   contacts=""
   archives="
+  [current](/seminars/diffeq/) \|
   [2016-17](/seminars/diffeq/2016-17/) \|
   [2015-16](/seminars/diffeq/2015-16/) \|
   [2014-15](/seminars/diffeq/2014-15/)"

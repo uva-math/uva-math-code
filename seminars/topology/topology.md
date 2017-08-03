@@ -8,6 +8,7 @@ sem_page: true
 ---
 
 {% include seminar_page.html archives="
+[current](/seminars/topology/) \|
 [2016-17](/seminars/topology/2016-17/) \|
 [2015-16](/seminars/topology/2015-16/) \|
 [2014-15](/seminars/topology/2014-15/) \|

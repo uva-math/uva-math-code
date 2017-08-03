@@ -34,7 +34,7 @@ show_to='1 July 2016' %}
 
 <hr />
 <h3 class="mb-3">Archives</h3>
-
+<a href="/seminars/algebra/">current</a> |
 [2016-17](/seminars/algebra/2016-17/) \|
 [2015-16](/seminars/algebra/2015-16/) \|
 [2014-15](/seminars/algebra/2014-15/) \|

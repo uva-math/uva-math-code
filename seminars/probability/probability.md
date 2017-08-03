@@ -9,7 +9,9 @@ title: Probability seminar
 ---
 
 {% include seminar_page.html
-  archives="[2016-17](/seminars/probability/2016-17/) \|
+  archives="
+  [current](/seminars/probability/) \| 
+  [2016-17](/seminars/probability/2016-17/) \|
     [2015-16](/seminars/probability/2015-16/) \|
     [2014-15](/seminars/probability/2014-15/) \|
     [2013-14](/seminars/probability/2013-14/) \|
