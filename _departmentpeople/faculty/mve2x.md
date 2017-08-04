@@ -3,7 +3,7 @@ UVA_id: mve2x
 lastname: Ershov
 name: Mikhail
 general_position: faculty
-position: Professor
+position: Professor  & Associate Chair
 office: 302 Kerchof Hall
 phone: 434-924-4131
 email: ershov@virginia.edu
