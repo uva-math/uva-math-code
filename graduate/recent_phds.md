@@ -4,7 +4,7 @@ layout: g_page
 g_info: true
 permalink: /graduate/recentphds/
 nav_parent: Graduate
-nav_weight: 20
+nav_weight: 70
 ---
 
 <h1 class="mb-3">Recent PhDs</h1>
@@ -20,7 +20,7 @@ Posdoctoral Appointment, University of Kentucky <br>
 Tenure-Track Job, SUNY Cortland <br>
 *Fluid limits and the batched processor sharing model*<br>
 (Advisor: Christian Gromoll)
- 
+
 - **Bo Wang**<br>
 Quantitative Research Analyst, Susquehanna International Group, Philadelphia <br>
 *A generalization of martingale theory to self-averaging processes*<br>

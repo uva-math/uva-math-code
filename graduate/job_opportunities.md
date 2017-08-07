@@ -1,10 +1,10 @@
 ---
-title: Job opportunities
+title: Job hunt
 layout: g_page
 g_info: true
 permalink: /graduate/employment/
 nav_parent: Graduate
-nav_weight: 100
+nav_weight: 60
 ---
 
 <h1 class="mb-3">Employment Opprotunities For Graduates</h1>
