@@ -12,7 +12,7 @@ nav_weight: 70
 ## Spring and Summer 2017
 
 - **Peter Bonventre**<br>
-Posdoctoral Appointment, University of Kentucky <br>
+Postdoctoral Appointment, University of Kentucky <br>
 *Comparison of models for equivariant operads*<br>
 (Advisor: Michael Hill)
 
@@ -27,7 +27,7 @@ Quantitative Research Analyst, Susquehanna International Group, Philadelphia <br
 (Advisor: Christian Gromoll)
 
 - **Michael Willis**<br>
-Posdoctoral Appointment, UCLA <br>
+Postdoctoral Appointment, UCLA <br>
 *Stable Limits of the Khovanov Homology and L-S-K Spectra for Infinite Braids*<br>
 (Advisor: Slava Krushkal)
 
@@ -36,14 +36,14 @@ Posdoctoral Appointment, UCLA <br>
 (Advisor: Irena Lasiecka)
 
 - **Anthony Mak**<br>
-Posdoctoral Appointment, UCLA <br>
+Postdoctoral Appointment, UCLA <br>
 *Towards an Alternative Notion of General Type Symplectic 4-Manifolds*<br>
 (Advisor: Thomas Mark)
 
 ## May 2016
 
 - **Scott Atkinson**<br>
-Assistant Professor of Mathematics, Vanderbilt University<br>
+Postdoctoral Appointment, Vanderbilt University<br>
 *Convex sets associated to C*-algebras*<br>
 (Advisor: David Sherman)
 
@@ -254,7 +254,7 @@ Tenure Track Assistant Professor, Virginia State University<br>
 ## August 2011
 
 - **Shitao Liu**<br>
-Posdoctoral Researcher, University of Helsinki<br>
+Postdoctoral Researcher, University of Helsinki<br>
 *Inverse Problems for Single and Strongly Coupled PDEs via Boundary Measurements: A Carleman Estimates Approach*<br>
 (Advisor: Roberto Triggiani, Irena Lasiecka)
 
