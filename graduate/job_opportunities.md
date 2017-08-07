@@ -134,9 +134,12 @@ Summarize these in a table. Presenting data in a more user-friendly format (for 
 
 Include a sampling of course syllabi you have written, especially those for courses referenced in your teaching statement. The CTE's [Course Design Institute](http://cte.virginia.edu/programs/course-design-institute/) is a great resource helping to come up with more students-oriented syllabi and courses.
 
+
 ---
 
-## Building a Website <a name="Website"></a>
+<a name="Website"></a>
+## Building a Website
+
 
 Your website is your profile on the web, and UVA will host a page for you.
 ITC maintains <a href="http://its.virginia.edu/homedir/web/">instructions for
