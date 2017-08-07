@@ -1,10 +1,10 @@
 ---
 title: General exams
 layout: g_page
-g_policy: true
+g_info: true
 permalink: /graduate/generals/
 nav_parent: Graduate
-nav_weight: 9
+nav_weight: 18
 ---
 
 <h1 class="mb-3"></h1>
