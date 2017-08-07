@@ -31,7 +31,7 @@ Academic job applications require several standard items discussed below.
 ##### MathJobs.org Account
 
 Create an account on <a
-href="mathjobs.org">mathjobs.org</a>. This is the central repository for
+href="https://mathjobs.org">mathjobs.org</a>. This is the central repository for
 academic jobs in math: the vast majority of academic jobs are posted on
 mathjobs and you can apply here directly. All of your materials will be
 uploaded to mathjobs, as will your letter writers'
@@ -78,7 +78,7 @@ you have not yet published any, then you may list work in preparation
 and expository works. Any drafts you feel comfortable sharing should be
 on your website. Completed works (ready for publication or wide
 distribution) should be put on the <a
-href="arxiv.org">ArXiv</a>.
+href="https://arxiv.org">ArXiv</a>.
 
 ##### Personal Website
 
