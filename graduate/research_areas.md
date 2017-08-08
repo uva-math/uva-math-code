@@ -281,7 +281,7 @@ The General Exam in Topology is based on the material of MATH 7820 (or 5770), 78
 
 #### Research Seminar
 
-Topology students are expected to take and to participate actively in MATH 9800 (Topology Seminar) every semester after the first year. Research seminars are an important component of the graduate program. Participation in them gives students an opportunity to be exposed to the current research in topology. In the <em>first semester of the second year</em>, students contemplating working in topology should contact a faculty member regarding a topic for a literature survey and, during the <em>second semester</em>, give a short expository talk in the Topology seminar.
+Topology students are expected to take and to participate actively in either MATH 9800 (Topology Seminar) or MATH 9820 (Geometry Seminar) every semester after the first year. Research seminars are an important component of the graduate program. Participation in them gives students an opportunity to be exposed to the current research in topology. In the <em>first semester of the second year</em>, students contemplating working in topology should contact a faculty member regarding a topic for a literature survey and, during the <em>second semester</em>, give a short expository talk in the Topology or Geometry seminar.
 
 #### Second-Year Proficiency Exam
 
