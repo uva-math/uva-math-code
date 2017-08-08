@@ -129,7 +129,7 @@ a:hover.list-group-item.active {
 
 .my-navbar-dropdown-item
 {
-  font-family: 'franklin-gothic-urw-cond', 'arial narrow', sans-serif;
+  font-family: 'franklin-gothic-urw', arial, sans-serif;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
