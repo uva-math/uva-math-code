@@ -32,7 +32,7 @@ nav_weight: 1
 
 In making its decisions about admission and financial aid, the Department is first and foremost looking for students that we feel will flourish in our program. To determine if a student will be successful, the Department pays close attention to the overall undergraduate record, letters of recommendation, GRE scores (both on the general examinations and on the mathematics subject exam), and the student&#39;s personal statement.
 
- Regarding the undergraduate record, the rigor of the applicant&#39;s mathematics program is an important factor; a good grounding in real analysis (as in our MATH 5310 and MATH 5330), algebra (as in MATH 5651/5652), general topology (as in MATH 5700), and complex analysis (as in MATH 3340) is ideal. For students from smaller schools, we have found that a solid score on the Mathematics Subject Exam is a useful indicator of future success.
+ Regarding the undergraduate record, the rigor of the applicant&#39;s mathematics program is an important factor; a good grounding in real analysis (as in our {% include course number=4310 %} and {% include course number=4330 %}<span style="margin-left: -4px;"></span>), algebra (as in {% include course number=4651 %} and {% include course number=4652 %}<span style="margin-left: -4px;"></span>), general topology (as in {% include course number=5700 %}<span style="margin-left: -4px;"></span>), and complex analysis (as in {% include course number=3340 %}<span style="margin-left: -4px;"></span>) is ideal. For students from smaller schools, we have found that a solid score on the Mathematics Subject Exam is a useful indicator of future success.
 
 ## Reseach areas
 
