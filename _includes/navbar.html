@@ -1,7 +1,15 @@
 <nav class="navbar navbar-toggleable-sm mb-4 navbar-light" style="background-color:rgba(0, 0, 0, 0.15);">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="btn-toolbar">
+    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    {% if page.layout == "ug_page" or page.layout == "g_page" %}<button class="navbar-toggler ml-auto hidden-md-up" type="button" data-toggle="collapse" data-target="#collapseRightMenu" aria-expanded="false" aria-controls="collapseRightMenu">
+      <span class="fa fa-caret-square-o-down"></span>
+    </button>
+    {% endif %}
+  </div>
+
+
   <div class="container">
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
