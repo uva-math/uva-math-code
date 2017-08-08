@@ -18,19 +18,19 @@
         <a class="nav-link dropdown-toggle" {% if p.nav_long %}style="white-space: normal"{% endif %} href="{{site.url}}{{p.url}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{p.nav_id}}
         </a>
-        <div class="dropdown-menu h5 {% if p.nav_id == 'IMS' or p.nav_id == 'Info' or p.nav_id == 'Graduate'%}dropdown-menu-right{% endif %}" style="font-size:16px">
+        <div class="dropdown-menu {% if p.nav_id == 'IMS' or p.nav_id == 'Info' or p.nav_id == 'Graduate'%}dropdown-menu-right{% endif %}" style="font-size:16px">
           {% if p.nav_id == "News&Events" %}
-            <a class="dropdown-item {%if paginator.page %}active bg-inverse{% endif %}" style="font-size:16px; {% if p.nav_long %}white-space: normal{% endif %}" href="{{site.url}}/allnews/">All News and Events{%if paginator.page %}<span class="sr-only">(current)</span>{% endif %}</a>
+            <a class="dropdown-item h5 {%if paginator.page %}active bg-inverse{% endif %}" style="font-size:16px; {% if p.nav_long %}white-space: normal{% endif %}" href="{{site.url}}/allnews/">All News and Events{%if paginator.page %}<span class="sr-only">(current)</span>{% endif %}</a>
           {% endif %}
           {% for pp in sorted_pages%}
           {% if pp.nav_id != null and pp.nav_parent == p.nav_id %}
-          <a class="dropdown-item {%if pp.url == page.url %}active bg-inverse{% endif %}" style="font-size:16px; {% if pp.nav_long %}white-space: normal{% endif %}" href="{{site.url}}{{pp.url}}">{{pp.nav_id}}{%if pp.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
+          <a class="dropdown-item h5 {%if pp.url == page.url %}active bg-inverse{% endif %}" style="font-size:16px; {% if pp.nav_long %}white-space: normal{% endif %}" href="{{site.url}}{{pp.url}}">{{pp.nav_id}}{%if pp.url == page.url %}<span class="sr-only">(current)</span>{% endif %}</a>
           {% endif %}
           {% endfor %}
           {% if p.nav_id == "Seminars" %}
             {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %}
             {% for sem in sorted_sem %}
-            <a class="dropdown-item {%if page.url contains sem.shortname %}active bg-inverse{% endif %}" href="{{site.url}}/seminars/{{sem.shortname}}" {%if sem.nav_longname %}style="white-space: normal"{%endif%}>{{sem.name}}{%if page.url contains sem.shortname %}<span class="sr-only">(current)</span>{% endif %}</a>
+            <a class="dropdown-item h5 {%if page.url contains sem.shortname %}active bg-inverse{% endif %}" href="{{site.url}}/seminars/{{sem.shortname}}" {%if sem.nav_longname %}style="white-space: normal"{%endif%}>{{sem.name}}{%if page.url contains sem.shortname %}<span class="sr-only">(current)</span>{% endif %}</a>
             {% endfor %}
           {% endif %}
         </div>
