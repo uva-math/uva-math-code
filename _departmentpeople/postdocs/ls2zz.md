@@ -11,7 +11,7 @@ image:
 personal_page:
 
 areas:
-
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 
 ---

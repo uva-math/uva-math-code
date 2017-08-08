@@ -11,7 +11,7 @@ image:
 personal_page:
 
 areas:
-  
+  - Geometry&nbsp;$$\cup$$&nbsp;Topology
 
 
 ---
