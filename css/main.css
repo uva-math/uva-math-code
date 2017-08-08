@@ -110,7 +110,7 @@ a:hover.list-group-item.active {
 .navbar-light .navbar-nav .nav-link {
   color: #002F6C;
   font-family: 'franklin-gothic-urw-cond', 'arial narrow', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -125,6 +125,14 @@ a:hover.list-group-item.active {
 .navbar-light .navbar-nav .nav-link.active {
   color: white;
   background-color: #002F6C;
+}
+
+.my-navbar-dropdown-item
+{
+  font-family: 'franklin-gothic-urw-cond', 'arial narrow', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .navbar-light .navbar-toggler {
