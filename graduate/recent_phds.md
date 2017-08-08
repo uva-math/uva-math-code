@@ -36,7 +36,7 @@ Postdoctoral Appointment, UCLA <br>
 (Advisor: Irena Lasiecka)
 
 - **Anthony Mak**<br>
-Postdoctoral Appointment, UCLA <br>
+Assistant Professor (non tenure-track), University of Delaware <br>
 *Towards an Alternative Notion of General Type Symplectic 4-Manifolds*<br>
 (Advisor: Thomas Mark)
 
