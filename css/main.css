@@ -304,7 +304,7 @@ a.dept-logo-large:focus, a.dept-logo-large:hover
 h2,
 .h2
 {
-  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-family: 'bodoni-urw', georgia, serif;
   font-weight: 700;
   font-style: italic;
   line-height: 1.1;
@@ -316,7 +316,8 @@ h4,
 .h4
 {
   font-family: 'bodoni-urw', georgia, serif;
-  font-weight: 900;
+  font-weight: 700;
+  font-style: italic;
   line-height: 1.1;
   color: inherit;
   text-transform: uppercase;
@@ -326,7 +327,8 @@ h6,
 .h6
 {
   font-family: 'bodoni-urw', georgia, serif;
-  font-weight: 900;
+  font-weight: 700;
+  font-style: italic;
   line-height: 1.1;
   color: inherit;
   text-transform: uppercase;
