@@ -7,8 +7,8 @@ body {
     /*font-size: 14px;*/
     margin:0px;
     padding:0px;
-    font-family: "franklingothic-book", Arial, "Helvetica Neue", Helvetica, sans-serif;
-    font-weight: 500;
+    font-family: "franklin-gothic-urw", arial, sans-serif;
+    font-weight: 400;
 }
 
 a:link, a:visited {
@@ -109,8 +109,9 @@ a:hover.list-group-item.active {
 
 .navbar-light .navbar-nav .nav-link {
   color: #002F6C;
-  font-family: "franklingothic-demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'franklin-gothic-urw-cond', 'arial narrow', sans-serif;
   font-size: 16px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -133,42 +134,6 @@ a:hover.list-group-item.active {
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#002F6C' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
-
-/*BOOTSTRAP FONT DEFAULTS
-@font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif;
-@font-family-serif:       Georgia, "Times New Roman", Times, serif;
-@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
-@font-family-base:        @font-family-sans-serif;*/
-
-@font-face {
-    font-family: 'franklingothic-book';
-    src: url('fonts/franklingothic-book-webfont.woff2') format('woff2'),
-         url('fonts/franklingothic-book-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'franklingothic-bookit';
-    src: url('fonts/franklingothic-bookit-webfont.woff2') format('woff2'),
-         url('fonts/franklingothic-bookit-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'franklingothic-demi';
-    src: url('fonts/franklingothic-demi-webfont.woff2') format('woff2'),
-         url('fonts/franklingothic-demi-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'franklingothic-demiit';
-    src: url('fonts/franklingothic-demiit-webfont.woff2') format('woff2'),
-         url('fonts/franklingothic-demiit-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-
 
 @media (max-width: 575px){.jumbotron {
   background-color:#F1F1EF;
@@ -274,17 +239,19 @@ h6,
 
 .smaller-h5
 {
-  font-family: "franklingothic-demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
   line-height: 1.1;
   color: inherit;
   text-transform: uppercase;
+  font-weight: 700;
 }
 
 nonupper-h5,
 .nonupper-h5
 {
   font-size: 18px;
-  font-family: "franklingothic-demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit;
 }
@@ -293,9 +260,8 @@ nonupper-h6,
 .nonupper-h6
 {
   font-size: 18px;
-  font-family: 'Unna', serif;
-  font-style: italic;
-  /*font-weight: bold;*/
+  font-family: 'bodoni-urw', georgia, serif;
+  font-weight: 900;
   line-height: 1.1;
   color: inherit;
 }
@@ -313,7 +279,8 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "franklingothic-demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-weight: 700;
   line-height: 1.1;
   color: inherit;
   text-transform: uppercase;
@@ -321,7 +288,8 @@ h6,
 
 a.dept-logo-large:link, a.dept-logo-large:visited
 {
-  font-family: "franklingothic-demi", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-weight: 700;
   font-size: 36px;
   color: white;
   text-transform: uppercase;
@@ -336,8 +304,9 @@ a.dept-logo-large:focus, a.dept-logo-large:hover
 h2,
 .h2
 {
-  font-family: "franklingothic-demiit", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  /*font-style: italic;*/
+  font-family: "franklin-gothic-urw", arial, sans-serif;
+  font-weight: 700;
+  font-style: italic;
   line-height: 1.1;
   color: inherit;
   text-transform: uppercase;
@@ -346,9 +315,8 @@ h2,
 h4,
 .h4
 {
-  font-family: 'Unna', serif;
-  font-style: italic;
-  /*font-weight: bold;*/
+  font-family: 'bodoni-urw', georgia, serif;
+  font-weight: 900;
   line-height: 1.1;
   color: inherit;
   text-transform: uppercase;
@@ -357,9 +325,8 @@ h4,
 h6,
 .h6
 {
-  font-family: 'Unna', serif;
-  font-style: italic;
-  /*font-weight: bold;*/
+  font-family: 'bodoni-urw', georgia, serif;
+  font-weight: 900;
   line-height: 1.1;
   color: inherit;
   text-transform: uppercase;
