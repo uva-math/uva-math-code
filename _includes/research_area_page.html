@@ -7,13 +7,13 @@
 
 <div class="row">
   <div class="col-md-7">
-    <h2 class="mb-4">{{area.h-name}}</h2>
+    <h3 class="mb-4" style="font-style:italic">{{area.h-name}} faculty</h3>
 
     {% assign sorted_people = site.departmentpeople | sort: 'lastname' %}
 
     <div class="my-row-zebra mr-3">
     {% for ppl in sorted_people %}
-    {% if ppl.areas contains area.name %}
+    {% if ppl.areas contains area.name and ppl.general_position != "postdoc" and ppl.general_position != "gradstudent" %}
       <div class="row" style="padding:10px 0px">
         <div class="col-md-4">
           <a href="{{site.url}}/people/{{ppl.UVA_id}}/" class="h5">{{ ppl.name }} {{ ppl.lastname }}</a>
@@ -54,6 +54,69 @@
         </div>
       </div>
 
+    {% endif %}
+    {% endfor %}
+    </div>
+
+    <br />
+
+    {% assign cntr = 0 %}
+    {% for ppl in sorted_people %}
+    {% if ppl.areas contains area.name %}
+    {% if ppl.general_position == "postdoc" or ppl.general_position == "gradstudent"%}
+    {% assign cntr = cntr | plus:1 %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+    {% if cntr > 0 %}
+    <h3 class="mb-4 mt-2" style="font-style:italic">Postdocs and graduate students</h3>
+    {% endif %}
+
+    <div class="my-row-zebra mr-3">
+    {% for ppl in sorted_people %}
+    {% if ppl.areas contains area.name %}
+    {% if ppl.general_position == "postdoc" or ppl.general_position == "gradstudent"%}
+      <div class="row" style="padding:10px 0px">
+        <div class="col-md-4">
+          <a href="{{site.url}}/people/{{ppl.UVA_id}}/" class="h5">{{ ppl.name }} {{ ppl.lastname }}</a>
+          <div class="mb-1"><i>{{ ppl.position }}</i></div>
+
+        </div>
+        <div class="col-md-6">
+          {% if ppl.office != null %}
+            <span class="fa fa-building" aria-hidden="true" style="font-size:0.8em"></span>
+            {{ppl.office}}
+            <br>
+          {% endif %}
+
+          {% if ppl.phone != null %}
+            <span class="fa fa-phone" aria-hidden="true" style="font-size:0.8em"></span>
+            <a href="tel:{{ppl.phone}}">{{ppl.phone}}</a>
+            <br>
+          {% endif %}
+
+          {% if ppl.email != null %}
+            <span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span>
+            <a href="mailto:{{ ppl.email }}">{{ ppl.email }}</a>
+          {% endif %}
+          <br>
+
+          {% if ppl.personal_page != null %}
+            <span class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></span>
+            <a href="{{ ppl.personal_page }}">Personal page</a>
+          {% endif %}
+        </div>
+        <div class="col-md-2">
+          {% if ppl.image != null %}
+          <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:70px" class="hidden-sm-down float-right"></a>
+          <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:100px" class="hidden-md-up mt-3"></a>
+          {% else %}
+            <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{site.url}}/img/people/Avatar_image.png" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:70px" class="hidden-sm-down float-right"></a>
+          {% endif %}
+        </div>
+      </div>
+
+    {% endif %}
     {% endif %}
     {% endfor %}
     </div>

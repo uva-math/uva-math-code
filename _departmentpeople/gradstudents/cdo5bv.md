@@ -10,5 +10,7 @@ email: cdo5bv@virginia.edu
 image: __SITE_URL__/img/people/Osborne.jpg
 personal_page: http://www.people.virginia.edu/~cdo5bv/
 
+areas:
+  - Geometry&nbsp;$$\cup$$&nbsp;Topology
 
 ---
