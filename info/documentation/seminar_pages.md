@@ -13,7 +13,7 @@ nav_weight: 101
 
 ## Overview
 
-The main code for a seminar page located at `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md` ([example on GitHub](https://github.com/uva-math/uva-math-code/blob/master/seminars/colloq/colloq.md)) looks quite simple. Here is an example (in the actual page there are more links to archives):
+The main code for a seminar page located at `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].html` ([example on GitHub](https://github.com/uva-math/uva-math-code/blob/master/seminars/colloq/colloq.html)) looks quite simple. Here is an example (in the actual page there are more links to archives):
 
 {% highlight markdown linenos %}{%raw%}
 ---
@@ -50,7 +50,7 @@ The unified list of talks is displayed on the main page. **Note:** only 180 days
 
 ###### More recent
 
-The recent archives using google calendars are displayed year by year, semi-automatically: one simply needs to create archive pages each year - these can be copied from a previous example like at [this GitHub link](https://github.com/uva-math/uva-math-code/blob/master/seminars/colloq/colloq15_16.md).
+The recent archives using google calendars are displayed year by year, semi-automatically: one simply needs to create archive pages each year - these can be copied from a previous example like at [this GitHub link](https://github.com/uva-math/uva-math-code/blob/master/seminars/colloq/colloq15_16.html).
 
 **Note:** Links from google calendar entries displayed on seminar pages can be broken over time (i.e. when the linked external URL becomes unavailable). There is currently no way implemented to control this because these links are grabbed by javascript. This issue does not affect the displaying of more recent seminar talks, and will likely not be fixed.
 
@@ -130,9 +130,9 @@ Under `information: |` field, put a paragraph's description of the seminar. This
 
 ### Changing seminar information
 
-To change information of an existing seminar, edit `_data/seminars.yml`. To add additional information to the seminar page, add it to `content=""` or `contacts=""` in the `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md` corresponding to the seminar.
+To change information of an existing seminar, edit `_data/seminars.yml`. To add additional information to the seminar page, add it to `content=""` or `contacts=""` in the `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].html` corresponding to the seminar.
 
-**Advanced**. To make even more changes to the page of a seminar you can copy the template in `/_includes/seminar_page.html` into the content section (below second `---`) of the seminar page `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md`, and make deeper edits there.
+**Advanced**. To make even more changes to the page of a seminar you can copy the template in `/_includes/seminar_page.html` into the content section (below second `---`) of the seminar page `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].html`, and make deeper edits there.
 
 
 ### Adding a seminar globally
@@ -140,7 +140,7 @@ To change information of an existing seminar, edit `_data/seminars.yml`. To add 
 To ensure that the seminar information renders properly the following conditions must be met:
 
 1. The seminar should be described in the `_data/seminars.yml` file
-2. The simple seminar page (and, optionally, archive pages) must be manually created at  `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].md`. The permalink configuration field of that `.md` file should match the seminar shortname.
+2. The simple seminar page (and, optionally, archive pages) must be manually created at  `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].html`. The permalink configuration field of that `.html` file should match the seminar shortname.
 3. The seminar is added to the unifying google calendar script `_includes/cal_main.js` for display on the main page. This requires adding the corresponding `google\_cal\_id` to the list of google calendar id's in the beginning of the script, and also adding a corresponding line to the function `function getSeminar(num)`
 
 If removing a seminar, consider keeping the archives. One can link them maybe on the all seminars page, or create a special archive page for a no longer existing seminar.
