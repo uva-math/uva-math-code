@@ -130,7 +130,7 @@ To prepare for the mathematics major, you should complete the calculus sequence 
 			<p>Physics B.A.</p>
 			</td>
 			<td>
-			<p>{%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}<span style="margin-left:-4px"></span>, {%include course number=2310%}<span style="margin-left:-4px"></span>, {%include course number=3255%}</p>
+			<p>{%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}<span style="margin-left:-4px"></span>, {%include course number=2310%}<span style="margin-left:-4px"></span>, {%include course number=3250%}</p>
 			</td>
 		</tr>
 		<tr>
@@ -138,7 +138,7 @@ To prepare for the mathematics major, you should complete the calculus sequence 
 			<p>Physics B.S.</p>
 			</td>
 			<td>
-			<p>{%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}<span style="margin-left:-4px"></span>, {%include course number=2310%}<span style="margin-left:-4px"></span>, {%include course number=3250%}<span style="margin-left:-4px"></span>, {%include course number=3255%}<span style="margin-left:-4px"></span>, {%include course number=4210%}<span style="margin-left:-4px"></span>, {%include course number=4220%}</p>
+			<p>{%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}<span style="margin-left:-4px"></span>, {%include course number=2310%}<span style="margin-left:-4px"></span>, {%include course number=3250%}<span style="margin-left:-4px"></span>, {%include course number=4210%}<span style="margin-left:-4px"></span>, {%include course number=4220%}</p>
 			</td>
 		</tr>
 	</tbody>
