@@ -358,3 +358,11 @@ h6,
   border-left: 1px dotted #DADADA;
   border-bottom: 1px dotted #DADADA;
 }
+
+.my-tooltip{
+  border-bottom: 1px dotted black;
+}
+
+.my-tooltip:hover, .my-tooltip:focus{
+  text-decoration: none;
+}
