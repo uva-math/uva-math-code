@@ -7,5 +7,11 @@
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
+
+  // this is for IOS bug
+  if ('ontouchstart' in document.documentElement) {
+    $('body').css('cursor', 'pointer');
+  }
+  else if(window.Touch) { $('body').css('cursor', 'pointer'); }
 </script>
 {% endif %}
