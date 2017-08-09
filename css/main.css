@@ -361,6 +361,7 @@ h6,
 
 .my-tooltip{
   border-bottom: 1px dotted black;
+  cursor: pointer;
 }
 
 .my-tooltip:hover, .my-tooltip:focus{
