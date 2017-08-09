@@ -367,3 +367,7 @@ h6,
 .my-tooltip:hover, .my-tooltip:focus{
   text-decoration: none;
 }
+
+.tooltip-inner {
+    max-width: 270px;
+}
