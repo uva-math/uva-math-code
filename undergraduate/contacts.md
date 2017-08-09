@@ -12,10 +12,10 @@ nav_weight: 1
 - ##### Director of Undergraduate Studies:<br>
 {% include person_info_no_phone.html UVA_id="iwh" %}
 
-- ##### MATH 1210 and 1310 Coordinator:<br>
+- <h5>{% include course number=1210 code=false %} and {% include course number=1310 code=false %} Coordinator:</h5>
 {% include person_info_no_phone.html UVA_id="psb7p" %}
 
-- ##### MATH 1220 and 1320 Coordinator:<br>
+- <h5>{% include course number=1220 code=false %} and {% include course number=1320 code=false %} Coordinator:</h5>
 {% include person_info_no_phone.html UVA_id="des5e" %}
 
 - ##### Transfer of Credit Advisors:<br>
