@@ -5,6 +5,7 @@ ug_info: true
 permalink: /undergrad/contacts/
 nav_parent: Undergraduate
 nav_weight: 1
+tooltips: true
 ---
 
 <h1 class="mb-4">Contacts (Fall 2017)</h1>

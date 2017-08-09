@@ -1,3 +1,11 @@
 <!-- UVA fonts -->
 <script src="//use.typekit.net/tgy5tlj.js"></script>
 <script>try{Typekit.load();}catch(e){}</script>
+
+{% if page.tooltips %}
+<script type="text/javascript">
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+</script>
+{% endif %}

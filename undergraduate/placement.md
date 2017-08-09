@@ -5,6 +5,7 @@ ug_policy: true
 permalink: /content/math-placement/
 nav_parent: Undergraduate
 nav_weight: 5
+tooltips: true
 ---
 
 <h1 class="mb-4">Placement in Math courses</h1>
