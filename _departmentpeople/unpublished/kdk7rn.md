@@ -1,5 +1,6 @@
 ---
 UVA_id: kdk7rn
+published: false
 lastname: Kochalski
 name: Katelynn
 general_position: gradstudent
