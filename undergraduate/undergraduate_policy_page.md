@@ -42,26 +42,6 @@ Yes. The current policy is given in the Undergraduate Record: “Up to two cours
 counted for another College major can also be counted for the major in mathematics. Three
 courses may be allowed if the other major is interdisciplinary.” See also [Double counting for SEAS]({{site.url}}/content/double-counting-seas/)
 
-- Can I get a different room for my class?
-Email: <a href="mailto:rooms@virginia.edu">rooms@virginia.edu</a>
-
-- Can I see what rooms are available?
-Yes, see [`http://www.virginia.edu/source/index.php`](http://www.virginia.edu/source/index.php).
-However, some rooms in Kerchof Hall are not included in the system - ask {% include person_info_email_only.html UVA_id="aab8b" %}
-
-
-- Where can a graduate student be the instructor-of-record?
-In addition, all GTAs, per the accreditation requirements for the Southern Association of Colleges
-and Schools (SACS), are expected to have a master’s degree or 18 graduate credit hours in the
-discipline they are teaching.
-and Schools (SACS), are expected to have a master’s degree or 18 graduate credit hours in the
-discipline they are teaching.
-[`http://www.virginia.edu/uvapolicies/Policies/PROV-001v1.html`](http://www.virginia.edu/source/index.php)
-
-- How to configure your home directory
-[`https://admin.people.virginia.edu/cgi-local/ww/menu`](https://admin.people.virginia.edu/cgi-local/ww/menu)
-(to change your password, restore your files, and change file permission)
-
 - Course action form:
 [`http://www.virginia.edu/registrar/courseactionform.html`](http://www.virginia.edu/registrar/courseactionform.html)
 
