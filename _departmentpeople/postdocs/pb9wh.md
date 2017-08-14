@@ -3,7 +3,7 @@ UVA_id: pb9wh
 lastname: Bhattacharya
 name: Prasit
 general_position: postdoc
-position: Instructor
+position: Whyburn Instructor
 office: 131 Kerchof Hall
 phone:
 email: pb9wh@virginia.edu

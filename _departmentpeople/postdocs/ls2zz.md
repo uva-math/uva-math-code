@@ -3,7 +3,7 @@ UVA_id: ls2zz
 lastname: Speyer
 name: Liron
 general_position: postdoc
-position: Instructor
+position: Whyburn Instructor
 office: 324 Kerchof Hall
 phone:
 email: ls2zz@virginia.edu

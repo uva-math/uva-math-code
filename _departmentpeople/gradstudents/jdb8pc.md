@@ -8,7 +8,7 @@ office: 112 Kerchof Hall
 phone: 434-243-2304
 email: jdb8pc@virginia.edu
 image:
-personal_page:
+personal_page: http://www.people.virginia.edu/~jdb8pc/
 
 
 ---
