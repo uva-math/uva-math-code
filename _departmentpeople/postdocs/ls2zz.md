@@ -8,7 +8,7 @@ office: 324 Kerchof Hall
 phone:
 email: ls2zz@virginia.edu
 image:
-personal_page:
+personal_page: http://www.people.virginia.edu/~ls2zz/
 
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
