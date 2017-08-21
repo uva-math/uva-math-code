@@ -48,7 +48,7 @@ Postdoctoral Appointment, Vanderbilt University<br>
 (Advisor: David Sherman)
 
 - **Alessandro De Stefani**<br>
-Postdoc, Aarhus University<br>
+Postdoc, KTH, Stockholm<br>
 *Homological methods, singularities, and numerical invariants*<br>
 (Advisor: Craig Huneke)
 
@@ -77,6 +77,7 @@ Director of Analytics, Prudential Financial<br>
 ## May 2015
 
 - **Arindam Banerjee**<br>
+Postdoc, Purdue University<br>
 *Castelnuovo-Mumford Regularity and Edge Ideals*<br>
 (Advisor: Craig Huneke)
 
@@ -85,6 +86,7 @@ Director of Analytics, Prudential Financial<br>
 (Advisor: Weiqiang Wang)
 
 - **Ilya Igorevich Smirnov**<br>
+Postdoc, University of Michigan<br>
 *Uniform Convergence Methods in Hilbert-Kunz Theory*<br>
 (Advisor: Craig Huneke)
 
