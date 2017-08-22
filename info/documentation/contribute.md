@@ -71,7 +71,7 @@ and creating a so-called "**pull-request**" (so you ask the code
 owner to "pull", or incorporate, your changes into the main code). This is done as follows.
 
 Suppose you want to edit a simple piece of
-information, e.g. add your new publication (for adding/changing the picture resort to way number 0 above, or create a local fork of the website code,
+information, e.g. correct a typo, or add your new publication (for adding/changing the picture resort to way number 0 above, or create a local fork of the website code,
 make changes there, and create a pull-request). Here are the steps:
 
 1. Go to your page such as [`{{site.url}}/people/aso9t/`]({{site.url}}/people/aso9t/),
