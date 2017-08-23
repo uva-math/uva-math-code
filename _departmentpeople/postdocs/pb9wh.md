@@ -8,7 +8,7 @@ office: 131 Kerchof Hall
 phone:
 email: pb9wh@virginia.edu
 image:
-personal_page:
+personal_page: https://www3.nd.edu/~pbhattac/
 
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
