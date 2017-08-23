@@ -8,7 +8,7 @@ office: 229 Kerchof Hall
 phone: 434-243-8778
 email: rhs8e@virginia.edu
 image: __SITE_URL__/img/people/Santharoubane.jpg
-personal_page:
+personal_page: https://sites.google.com/site/ramanujansantharoubane/
 
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
