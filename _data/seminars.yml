@@ -103,6 +103,11 @@
   google_cal_id: 'lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com'
   seminar_weight: 12
   regular_times: Tuesdays at 5:00 in Ker 314 (Math lounge)
+  information: |
+    The Undergraduate Math Club at University of Virginia is a weekly seminar and a club (with an official CIO status) for students interested in mathematics and related areas. It meets on Tuesdays at 5pm for 60-80 minutes. The activities vary from talks by faculty members, graduate and undergraduate students to presentations by local industries, panel discussions (on REUs, careers for math majors, etc.), and outside activities such as a movie outing or a visit to a 3D printing lab.
+    <br><br>
+    The Math Club is a students' space, and the CIO structure provides the Club with a managing board which helps plan and organize events.
+
   contact:
     - UVA_id: sm4cw
     - UVA_id: aso9t

@@ -6,6 +6,7 @@ event-date: 2017-07-27 9:00:00
 comments: false
 categories: news events
 published: true
+hide-this-item: true
 ---
 
 **Xiang Wan** will defend his PhD dissertation on Thursday, July 27, beginning at 1:30PM in New Cabell 107.
