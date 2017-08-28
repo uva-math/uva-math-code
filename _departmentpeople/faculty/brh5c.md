@@ -5,7 +5,7 @@ name: Benjamin
 general_position: faculty
 position: Assistant Professor
 office: 219 Kerchof Hall
-phone:
+phone: 434-243-8778
 email: brh5c@virginia.edu
 image:
 personal_page:

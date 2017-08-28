@@ -5,7 +5,7 @@ name: Liron
 general_position: postdoc
 position: Whyburn Instructor
 office: 324 Kerchof Hall
-phone:
+phone: 434-924-4944
 email: ls2zz@virginia.edu
 image:
 personal_page: http://www.people.virginia.edu/~ls2zz/
