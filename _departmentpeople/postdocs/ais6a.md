@@ -7,7 +7,7 @@ position: Mary Ann Pitts Postdoctoral Fellow
 office: 221 Kerchof Hall
 phone: 434-243-8778
 email: ais6a@virginia.edu
-image:
+image: __SITE_URL__/img/people/Saenz.jpg
 personal_page: http://faculty.virginia.edu/saenz/
 
 areas:
