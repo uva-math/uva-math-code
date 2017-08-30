@@ -99,6 +99,13 @@ Put the image file (`jpg` or `png`, any size/dimensions, but square and up to `6
 
 **Important!** keep the `__SITE_URL__` prefix as is, this is needed for correct automatic generation of the website.
 
+<span class="nonupper-h5">office_hours</span>
+
+If you'd like, you can add office hours to be displayed on the website.
+They will be shown in the list of people and on the person's page at the department website.
+However, this information should be kept up to date, and so office
+hours should not be added for all facutly.
+
 <span class="nonupper-h5">areas</span>
 
 This is a field which determines how people are displayed by research area
