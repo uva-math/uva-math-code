@@ -246,6 +246,7 @@
 
 - name: " Distinguished Major Thesis (3.00) "
   number: 4900
+  offered: Fall 2017
   descr: " This course provides a framework for the completion of a Distinguished Major Thesis, a treatise containing an exposition of a chosen mathematical topic.  A faculty advisor guides a student through the beginning phases of the process of research and writing.  Prerequisite: Acceptance into the Distinguished Major Program. "
 
 - name: " Distinguished Major Thesis (3.00) "
@@ -254,6 +255,7 @@
 
 - name: " Independent Study (1.00 - 3.00) "
   number: 4993
+  offered: Fall 2017
   descr: " Reading and study programs in areas of interest to individual students. For third- and fourth-years interested in topics not covered in regular courses. Students must obtain a faculty advisor to approve and direct the program. "
 
 - name: " The History of the Calculus (3.00) "
