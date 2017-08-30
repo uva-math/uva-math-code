@@ -107,6 +107,11 @@ Put the image file (`jpg` or `png`, any size/dimensions, but square and up to `6
 
 **Important!** keep the `__SITE_URL__` prefix as is, this is needed for correct automatic generation of the website.
 
+<span class="nonupper-h5">published_in_nav</span>
+
+Smaller and less regular seminars can be excluded from the navigation bar
+by setting `published_in_nav` to `false`.
+
 <span class="nonupper-h5">webpage</span>
 
 This is a link to the old seminar webpage, if needed. Once all archives are moved, this field can be eliminated which will eliminate the link from the seminar page

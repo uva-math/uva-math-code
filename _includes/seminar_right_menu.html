@@ -5,9 +5,11 @@
   {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %}
   <a href="{{ site.url }}/calendar/" class="list-group-item list-group-item-action {% if page.url == '/calendar/' %}active{% endif %}">All seminars</a>
   {% for sem in sorted_sem %}
+  {% unless sem.published_in_nav == false %}
     <a href="{{site.url}}/seminars/{{ sem.shortname }}/" class="list-group-item list-group-item-action
     {% if page.url contains sem.shortname %}active{% endif %}">
       {{ sem.name }}
     </a>
+  {% endunless %}
   {% endfor %}
 </div>
