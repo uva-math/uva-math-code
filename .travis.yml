@@ -9,7 +9,6 @@ branches:
 
 notifications:
   email:
-    - lenia.petrov@gmail.com
     recipients:
       - lenia.petrov@gmail.com
     on_success: always
