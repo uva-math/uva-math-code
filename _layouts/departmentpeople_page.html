@@ -29,6 +29,9 @@
             P. O. Box 400137<br />Department of Mathematics<br />
           {% endif %}
           {{page.office}}
+          {% if page.office_hours != null %}
+            <br> Office hours: {{page.office_hours}}
+          {% endif %}
         </div>
         {% endif %}
         <div class="col-md-6">

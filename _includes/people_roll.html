@@ -25,6 +25,9 @@
       {% if ppl.office != null %}
         <span class="fa fa-building" aria-hidden="true" style="font-size:0.8em"></span>
         {{ppl.office}}
+        {% if ppl.office_hours != null %}
+          <br> Office hours: {{ppl.office_hours}}
+        {% endif %}
         <br>
       {% endif %}
 
