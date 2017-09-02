@@ -228,6 +228,7 @@
             }
             executeOnce = 1;
           };
+          document.getElementById('preloader').innerHTML = "";
         });
       };
     });
@@ -236,5 +237,6 @@
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
 <div id='content' class="my-div-zebra">
+  <div id='preloader' class="h5" style="color:grey">Loading seminars...</div>
   <div id='events'></div>
 </div>
