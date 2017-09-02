@@ -221,7 +221,7 @@
 </script>
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
-<div id='preloader' class="h5" style="color:grey">Loading seminars...</div>
+<div id='preloader' class="h5" style="color:grey">Loading talks...</div>
 <div id="content">
 		<table width=100%>
 		<thead class="hidden-sm-down">
