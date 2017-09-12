@@ -7,7 +7,7 @@ position: Whyburn Instructor
 office: 131 Kerchof Hall
 phone:
 email: pb9wh@virginia.edu
-image:
+image: __SITE_URL__/img/people/Bhattacharya.jpg
 personal_page: https://www3.nd.edu/~pbhattac/
 
 areas:

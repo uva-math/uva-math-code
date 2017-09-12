@@ -7,7 +7,7 @@ position: Postdoctoral Fellow
 office: 131 Kerchof Hall
 phone:
 email: vm6y@virginia.edu
-image:
+image: __SITE_URL__/img/people/Mukundan.jpg
 personal_page:
 
 areas:
