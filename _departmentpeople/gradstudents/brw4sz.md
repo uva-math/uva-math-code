@@ -8,7 +8,7 @@ office: 403 Kerchof Hall
 phone: 434-924-3776
 email: brw4sz@virginia.edu
 image:
-personal_page:
+personal_page: http://people.virginia.edu/~brw4sz/
 
 
 ---
