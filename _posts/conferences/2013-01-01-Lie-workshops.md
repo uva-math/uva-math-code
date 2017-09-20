@@ -7,4 +7,9 @@ categories: news events conferences
 published: true
 ---
 
-[Southeastern Lie Theory Workshop Series](http://pi.math.virginia.edu/lieworkshops/), 2009-2014.
+[Southeastern Lie Theory Workshop Series](http://pi.math.virginia.edu/lieworkshops/), 2009-2016.
+
+[NCSU(2015)]http://www4.ncsu.edu/~misra/SELie/index3.htm
+ 
+[UVA (2016)]http://people.virginia.edu/~btw4e/AQG/
+
