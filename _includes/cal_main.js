@@ -16,6 +16,7 @@
     //add new seminar calendars here and modify the function giving the link as well as _data/seminars.yml
     "n6dhh35l2td9i73ii6dbkpqtro@group.calendar.google.com",   //10 - gradsem
     "8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com",   //11 - galois
+    "ftc1mbjbp95irpj6t9e2tfl020@group.calendar.google.com",   //12 - operator
     //do not touch the last seminar (it is empty and it is needed for IE compatibility)
     "c7vr381laveomub6abc4vh3qos@group.calendar.google.com"
     // this last one is the empty calendar with no seminar link (also for compatibility with IE)
@@ -49,6 +50,7 @@
     if(num == 10) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "10" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
     if(num == 11) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "11" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
     if(num == 12) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "12" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 13) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "13" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
     return '';
   }
   function getLocation(loc)
