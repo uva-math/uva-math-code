@@ -47,6 +47,9 @@ title: Seminar in operator theory and operator algebras
 {% endif %}
 
 
+<h2 class="mt-4 mb-3">Upcoming talks</h2>
+
+{% include cal_single.js google_cal_id = sem.google_cal_id current="true" max_sem=50 %}
 
 
 
