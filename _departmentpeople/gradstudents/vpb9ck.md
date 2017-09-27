@@ -1,7 +1,7 @@
 ---
 UVA_id: vpb9ck
-lastname: Vishal
-name: Bajaj
+lastname: Bajaj
+name: Vishal
 general_position: gradstudent
 position: Graduate Student
 office: 121 Kerchof Hall
