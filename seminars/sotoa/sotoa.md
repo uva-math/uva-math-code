@@ -19,8 +19,6 @@ title: Seminar in operator theory and operator algebras
   <h1 class="mt-2 mb-4">{{page.title}}</h1>
 {% endif %}
 
-{{sem.shortname}}
-
 <div class="list-group-sm">
   <a class="list-group-item list-group-item-action h5 orange-item" href="http://www.people.virginia.edu/~des5e/sotoa/sotoa.html">Click here to proceed to the standalone seminar page</a>
 </div>
@@ -51,7 +49,7 @@ title: Seminar in operator theory and operator algebras
 
 <h2 class="mt-4 mb-3">Upcoming talks</h2>
 
-{% include cal_single.js google_cal_id = 'ftc1mbjbp95irpj6t9e2tfl020@group.calendar.google.com' current="true" max_sem=50 %}
+{% include cal_single.js google_cal_id = sem.google_cal_id current="true" max_sem=50 %}
 
 
 
