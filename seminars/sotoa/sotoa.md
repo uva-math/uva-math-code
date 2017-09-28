@@ -13,8 +13,6 @@ title: Seminar in operator theory and operator algebras
 {% for sem in site.data.seminars %}
 {%if sem.shortname == cur_shortname %}
 
-{% include cal_single.js google_cal_id = sem.google_cal_id current="true" max_sem=50 %}
-
 {% if page.title == null %}
   <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
 {% else %}
