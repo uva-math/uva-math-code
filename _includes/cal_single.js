@@ -1,20 +1,6 @@
-<div id='preloader' class="h5" style="color:grey">Loading talks...</div>
-<div id='content'>
-		<table width=100%>
-		<thead class="hidden-sm-down">
-			<tr>
-					<th width="12%" style="padding-top:5px;padding-bottom:5px">Date</th>
-					<th style="padding-top:5px;padding-bottom:5px">Speaker, Title, Abstract</th>
-			</tr>
-     		</thead>
-		<tbody class="my-tr-zebra" id='events'>
-		</tbody>
-		</table>
-    <br><br>
-</div>
-
-
 <script>
+$(document).ready(function() {
+	
 // javascript to access all seminar google calendars which puts them onto main page;
 // its modifications can be used for seminar pages
   var userEmail = ["{{include.google_cal_id}}"];
@@ -234,5 +220,23 @@
       };
     });
   }
+     
+   });
 </script>
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
+
+<div id='preloader' class="h5" style="color:grey">Loading talks...</div>
+<div id='content'>
+		<table width=100%>
+		<thead class="hidden-sm-down">
+			<tr>
+					<th width="12%" style="padding-top:5px;padding-bottom:5px">Date</th>
+					<th style="padding-top:5px;padding-bottom:5px">Speaker, Title, Abstract</th>
+			</tr>
+     		</thead>
+		<tbody class="my-tr-zebra" id='events'>
+		</tbody>
+		</table>
+    <br><br>
+</div>
+
