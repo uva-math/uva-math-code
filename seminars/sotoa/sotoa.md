@@ -51,8 +51,6 @@ title: Seminar in operator theory and operator algebras
 
 {% include cal_single.js google_cal_id = sem.google_cal_id current="true" max_sem=50 %}
 
-
-
 <hr />
 
 <b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %}{% endfor %}

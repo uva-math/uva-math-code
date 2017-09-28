@@ -1,4 +1,6 @@
 <script>
+
+	
 // javascript to access all seminar google calendars which puts them onto main page;
 // its modifications can be used for seminar pages
   var userEmail = ["{{include.google_cal_id}}"];
@@ -184,7 +186,7 @@
           if(calsArray.length == userEmail.length && !executeOnce)
           {
             eventsArray.sort();
-            // the array is sorted after all calendars are processes
+            // the array is sorted after all calendars are processed
             var eventsToDisplay = eventsArray.length > maxSeminars ? maxSeminars : eventsArray.length;
               for (var j = 0; j < eventsToDisplay; j++)
               {
@@ -205,9 +207,12 @@
                 tdl.innerHTML = elem_array[3];
                 tdr.innerHTML = elem_array[1] + elem_array[2] + ' ' + elem_array[3] + ', ' + elem_array[4] + " @ " + elem_array[5] + elem_array[6] + elem_array[7];
 
-                document.getElementById('events').appendChild(tr);
-                tr.appendChild(tdl);
-                tr.appendChild(tdr);
+                if(document.getElementById('events') != null)
+		{
+			document.getElementById('events').appendChild(tr);
+			tr.appendChild(tdl);
+			tr.appendChild(tdr);
+		}
               }
 
 
@@ -219,19 +224,22 @@
     });
   }
 </script>
-<script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
-<div id='preloader' class="h5" style="color:grey">Loading talks...</div>
-<div id="content">
-		<table width=100%>
+<div id='content'>
+		<table width="100%">
 		<thead class="hidden-sm-down">
 			<tr>
 					<th width="12%" style="padding-top:5px;padding-bottom:5px">Date</th>
 					<th style="padding-top:5px;padding-bottom:5px">Speaker, Title, Abstract</th>
 			</tr>
-			<tbody class="my-tr-zebra" id="events">
-			</tbody>
-		</thead>
+     		</thead>
+		<tbody class="my-tr-zebra" id='events'>
+		</tbody>
 		</table>
     <br><br>
 </div>
+<div id='preloader' class="h5" style="color:grey">Loading talks...</div>
+
+     
+<script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
+
