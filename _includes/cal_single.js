@@ -229,9 +229,9 @@
 					<th width="12%" style="padding-top:5px;padding-bottom:5px">Date</th>
 					<th style="padding-top:5px;padding-bottom:5px">Speaker, Title, Abstract</th>
 			</tr>
-			<tbody class="my-tr-zebra" id="events">
-			</tbody>
-		</thead>
+     		</thead>
+		<tbody class="my-tr-zebra" id="events">
+		</tbody>
 		</table>
     <br><br>
 </div>
