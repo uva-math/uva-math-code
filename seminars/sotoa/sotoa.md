@@ -19,6 +19,8 @@ title: Seminar in operator theory and operator algebras
   <h1 class="mt-2 mb-4">{{page.title}}</h1>
 {% endif %}
 
+{{sem.shortname}}
+
 <div class="list-group-sm">
   <a class="list-group-item list-group-item-action h5 orange-item" href="http://www.people.virginia.edu/~des5e/sotoa/sotoa.html">Click here to proceed to the standalone seminar page</a>
 </div>
