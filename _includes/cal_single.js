@@ -207,9 +207,12 @@
                 tdl.innerHTML = elem_array[3];
                 tdr.innerHTML = elem_array[1] + elem_array[2] + ' ' + elem_array[3] + ', ' + elem_array[4] + " @ " + elem_array[5] + elem_array[6] + elem_array[7];
 
-                document.getElementById('events').appendChild(tr);
-                tr.appendChild(tdl);
-                tr.appendChild(tdr);
+                if(document.getElementById('events') != null)
+		{
+			document.getElementById('events').appendChild(tr);
+			tr.appendChild(tdl);
+			tr.appendChild(tdr);
+		}
               }
 
 
