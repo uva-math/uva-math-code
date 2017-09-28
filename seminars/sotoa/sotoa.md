@@ -49,7 +49,7 @@ title: Seminar in operator theory and operator algebras
 
 <h2 class="mt-4 mb-3">Upcoming talks</h2>
 
-{% include cal_single.js google_cal_id = sem.google_cal_id current="true" max_sem=50 %}
+{% include cal_single.js google_cal_id = 'k613quo3pribde7jrm5e12ft1c@group.calendar.google.com' current="true" max_sem=50 %}
 
 
 
