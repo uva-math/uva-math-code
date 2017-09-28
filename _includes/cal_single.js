@@ -226,7 +226,7 @@
 </script>
 
 <div id='content'>
-		<table width=100%>
+		<table width="100%">
 		<thead class="hidden-sm-down">
 			<tr>
 					<th width="12%" style="padding-top:5px;padding-bottom:5px">Date</th>
