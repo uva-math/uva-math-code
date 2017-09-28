@@ -186,7 +186,7 @@
           if(calsArray.length == userEmail.length && !executeOnce)
           {
             eventsArray.sort();
-            // the array is sorted after all calendars are processes
+            // the array is sorted after all calendars are processed
             var eventsToDisplay = eventsArray.length > maxSeminars ? maxSeminars : eventsArray.length;
               for (var j = 0; j < eventsToDisplay; j++)
               {
@@ -222,7 +222,6 @@
   }
 </script>
 
-<div id='preloader' class="h5" style="color:grey">Loading talks...</div>
 <div id='content'>
 		<table width=100%>
 		<thead class="hidden-sm-down">
@@ -236,7 +235,7 @@
 		</table>
     <br><br>
 </div>
-
+<div id='preloader' class="h5" style="color:grey">Loading talks...</div>
 
      
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
