@@ -183,7 +183,6 @@
           }
           if(calsArray.length == userEmail.length && !executeOnce)
           {
-		  console.log(calsArray.length);
             eventsArray.sort();
             // the array is sorted after all calendars are processes
             var eventsToDisplay = eventsArray.length > maxSeminars ? maxSeminars : eventsArray.length;
@@ -206,8 +205,6 @@
                 tdl.innerHTML = elem_array[3];
                 tdr.innerHTML = elem_array[1] + elem_array[2] + ' ' + elem_array[3] + ', ' + elem_array[4] + " @ " + elem_array[5] + elem_array[6] + elem_array[7];
 
-		      		      		  console.log(document.getElementById('events'));
-		      		      		  console.log(tr);
                 document.getElementById('events').appendChild(tr);
                 tr.appendChild(tdl);
                 tr.appendChild(tdr);
@@ -225,7 +222,7 @@
 <script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
 <div id='preloader' class="h5" style="color:grey">Loading talks...</div>
-<div id="content">
+<div id='content'>
 		<table width=100%>
 		<thead class="hidden-sm-down">
 			<tr>
@@ -233,7 +230,7 @@
 					<th style="padding-top:5px;padding-bottom:5px">Speaker, Title, Abstract</th>
 			</tr>
      		</thead>
-		<tbody class="my-tr-zebra" id="events">
+		<tbody class="my-tr-zebra" id='events'>
 		</tbody>
 		</table>
     <br><br>
