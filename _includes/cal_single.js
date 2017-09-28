@@ -183,6 +183,7 @@
           }
           if(calsArray.length == userEmail.length && !executeOnce)
           {
+		  console.log(calsArray.length);
             eventsArray.sort();
             // the array is sorted after all calendars are processes
             var eventsToDisplay = eventsArray.length > maxSeminars ? maxSeminars : eventsArray.length;
@@ -205,6 +206,8 @@
                 tdl.innerHTML = elem_array[3];
                 tdr.innerHTML = elem_array[1] + elem_array[2] + ' ' + elem_array[3] + ', ' + elem_array[4] + " @ " + elem_array[5] + elem_array[6] + elem_array[7];
 
+		      		      		  console.log(document.getElementById('events'));
+		      		      		  console.log(tr);
                 document.getElementById('events').appendChild(tr);
                 tr.appendChild(tdl);
                 tr.appendChild(tdr);
