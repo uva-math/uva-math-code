@@ -23,7 +23,6 @@
 
 - name: " The Shape of Space (3.00) "
   number: 1150
-  offered: Fall 2017
   descr: " Provides an activity and project-based exploration of informal geometry in two and three dimensions. Emphasizes visualization skill, fundamental geometric concepts, and the analysis of shapes and patterns. Topics include concepts of measurement, geometric analysis, transformations, similarity, tessellations, flat and curved spaces, and topology. "
 
 - name: " Algebra, Number Systems, and Number Theory (3.00) "
@@ -204,7 +203,7 @@
 
 - name: " Introduction to Abstract Algebra (3.00) "
   number: 4652
-  descr: " Structural properties of basic algebraic systems such as groups, rings and fields. A special emphasis is made on polynomials in one and several variables, including irreducible polynomials, unique factorization and symmetric polynomials. Time permitting, such topics as group representations or algebras over a field may be included.    Prerequisite: MATH 3351 or 5651 "
+  descr: " Structural properties of basic algebraic systems such as groups, rings, and fields. A special emphasis is made on polynomials in one and several variables, including irreducible polynomials, unique factorization, and symmetric polynomials. Time permitting such topics as group representations or algebras over a field may be included.  Prerequisites: MATH 3351 or 4651 and MATH 3354 or permission of the instructor. "
 
 - name: " Number Theory (3.00) "
   number: 4653
