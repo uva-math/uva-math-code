@@ -1,7 +1,6 @@
 {% assign sorted_pages = site.pages | sort: "nav_weight" %}
 
 
-
 <div class="list-group-sm">
   <a class="list-group-item list-group-item-action h5" href="{{site.url}}/awm/">Home</a>
   <a class="list-group-item list-group-item-action h5" href="{{site.url}}/awm/who/">Who are we?&nbsp;</span></a>
@@ -9,8 +8,12 @@
   <a class="list-group-item list-group-item-action h5" href="{{site.url}}/awm/resources">Resources</span></a>
 </div>
 
-{% if has_AWM_calendar==true %}
-<iframe src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=3ehl1jte3jnlftm6h5m28b96jo%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FNew_York" style="border-width:0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+<br><br>
+
+
+{% if page.has_AWM_calendar %}
+
+<iframe src="https://calendar.google.com/calendar/embed?height=270&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=3ehl1jte3jnlftm6h5m28b96jo%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FNew_York" style="border-width:0" width="380" height="300" frameborder="0" scrolling="no"></iframe>
 {% endif %}
 
 <br />
