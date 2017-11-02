@@ -15,7 +15,7 @@ more-text: Speakers and details
 
 This conference is in conjunction with and immediately followed by the [Fall 2017 Virginia Mathematics Lectures]({{site.url}}/ims/lectures/yair-minsky/), to be given by Yair Minsky.
 
-Conference website: [`http://faculty.virginia.edu/Koberda/VTC2017.html`](http://faculty.virginia.edu/Koberda/VTC2017.html)
+[Conference website](http://faculty.virginia.edu/Koberda/VTC2017.html)
 
 <!--more-->
 
