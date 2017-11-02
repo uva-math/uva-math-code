@@ -7,7 +7,7 @@ position: Mathematics Business Administrator
 office: 214 Kerchof Hall
 phone: 434-924-4937
 email: zk4g@virginia.edu
-image:
+image: __SITE_URL__/img/people/Kish.jpg
 personal_page:
 
 
