@@ -5,7 +5,7 @@ date: 2017-11-02 08:00:01
 event-date: 2017-11-10 12:00:00
 multi-day-event: true
 comments: false
-categories: news events conferences major-news
+categories: news events conferences
 published: true
 image: __SITE_URL__/img/news_events/conf_topology_fall_2017.png
 image-alt: Virginia Topology Conference 2017

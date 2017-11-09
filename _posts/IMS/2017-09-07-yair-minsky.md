@@ -6,7 +6,7 @@ event-date: 2017-11-13 13:30:00
 multi-day-event: true
 permalink: /ims/lectures/yair-minsky/
 comments: false
-categories: news virginia-mathematics-lectures ims events
+categories: news virginia-mathematics-lectures ims events major-news
 published: true
 image: __SITE_URL__/img/IMS/Minsky_poster092517.jpg
 image-alt: Yair Minsky Poster
