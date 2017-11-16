@@ -5,7 +5,7 @@ name: Jennifer
 general_position: faculty
 position: Professor
 office: 206 Kerchof Hall
-phone: 434-243-8778
+phone: 434-924-4934
 email: jlm6cj@virginia.edu
 image: __SITE_URL__/img/people/Morse.jpg
 personal_page:
