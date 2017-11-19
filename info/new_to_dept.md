@@ -44,7 +44,7 @@ nav_weight: 20
 - **UNIX home directory service at `blue.unix.virginia.edu`:**
 [`https://admin.people.virginia.edu/cgi-local/ww/menu`](https://admin.people.virginia.edu/cgi-local/ww/menu)
 
-- **Advanced Research Computing Services:** [`http://www.uvacse.virginia.edu/`](http://www.uvacse.virginia.edu/), and in particular [Rivanna Cluster](http://www.uvacse.virginia.edu/rivanna)
+- **Advanced Research Computing Services:** [`https://arcs.virginia.edu`](https://arcs.virginia.edu), and in particular [Rivanna Cluster](https://arcs.virginia.edu/rivanna)
 
 - **Mailboxes:** Everyone has a mailbox in the mailroom (off the Lobby on the main floor).
 
