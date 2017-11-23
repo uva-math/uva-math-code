@@ -11,6 +11,11 @@ tooltips: true
 <h1 class="mb-3">Graduate Admissions</h1>
 
  Thank you for your interest in mathematics graduate study at the University of Virginia. We hope you will decide to apply. The deadline for application is <strong>JANUARY 15.</strong>
+ 
+## Main links:
+
+- The Graduate School of Arts & Sciences page (with "apply" link) - [`http://graduate.as.virginia.edu/`](http://graduate.as.virginia.edu/)
+- Direct link to application system at University of Virginia - [`https://applycentral.virginia.edu/apply/`](https://applycentral.virginia.edu/apply/)
 
 ## Application Checklist:
 1. Application;
