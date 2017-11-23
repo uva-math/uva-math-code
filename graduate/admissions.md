@@ -14,8 +14,8 @@ tooltips: true
  
 ## Main links:
 
-- The Graduate School of Arts & Sciences page (with "apply" link) - [`http://graduate.as.virginia.edu/`](http://graduate.as.virginia.edu/)
-- Direct link to application system at University of Virginia - [`https://applycentral.virginia.edu/apply/`](https://applycentral.virginia.edu/apply/)
+- The Graduate School of Arts & Sciences page (with "apply" link): [`http://graduate.as.virginia.edu/`](http://graduate.as.virginia.edu/)
+- Direct link to application system at University of Virginia: [`https://applycentral.virginia.edu/apply/`](https://applycentral.virginia.edu/apply/)
 
 ## Application Checklist:
 1. Application;
