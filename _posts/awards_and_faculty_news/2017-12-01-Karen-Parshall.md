@@ -3,7 +3,7 @@ layout: post
 title: Karen Parshall to Receive 2018 AMS Whiteman Prize
 date: 2017-12-01 13:30:00
 comments: false
-categories: news awards
+categories: news awards major-news
 published: true
 image: __SITE_URL__/img/people/ParshallK.jpg
 image-alt: Karen Parshall
