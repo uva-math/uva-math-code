@@ -1,0 +1,1 @@
+{% for ppl in site.departmentpeople %}{% if ppl.UVA_id == include.UVA_id %}<span style="white-space:nowrap"><a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name }} {{ ppl.lastname }}</a></span>{% endif %}{% endfor %}
