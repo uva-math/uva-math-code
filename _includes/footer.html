@@ -1,67 +1,55 @@
 <footer>
-<div class="mt-5" style="background-color:rgba(0, 0, 0, 0.15);">
-  <div class="container" style="padding:10px">
-              <div class="row" style="font-size:14px;font-weight:600">
-                <div class="col-md-3">
-                  Maintained by: <a href='mailto:math-help@virginia.edu'>Department of Mathematics</a>
-                  <br>
-                   <a href="http://www.virginia.edu/copyright.html" target="new">
-                     <i class="fa fa-copyright" aria-hidden="true"></i></a> Copyright
-                    by the Rector and Visitors of the University of Virginia
-                </div>
-                <div class="col-md-4 hidden-sm-down" style="text-align:right">
-                  <span class="fa fa-phone" aria-hidden="true"></span>
-                  <a href="tel:+1-434-924-4919">(434) 924-4919</a><br>
-                  <span class="fa fa-fax" aria-hidden="true"></span>
-                  <a href="fax:+1-434-982-3084">(434) 982-3084</a><br>
-                  <span class="fa fa-envelope" aria-hidden="true"></span>
-                  <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a>
-                </div>
-                <div class="col-md-4 hidden-md-up">
-                  <hr />
-                  <span class="fa fa-phone" aria-hidden="true"></span>
-                  <a href="tel:+1-434-924-4919">(434) 924-4919</a><br>
-                  <span class="fa fa-fax" aria-hidden="true"></span>
-                  <a href="fax:+1-434-982-3084">(434) 982-3084</a><br>
-                  <span class="fa fa-envelope" aria-hidden="true"></span>
-                  <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a>
-                  <hr />
-                </div>
-                <div class="col-md-4">
-                  141 Cabell Drive, Kerchof Hall<br>
-                  P.O. Box 400137<br>
-                  Charlottesville, VA 22904<br>
-                  <span class="fa fa-map-o" aria-hidden="true"></span>
-                  <a href="https://www.google.com/maps/place/Kerchof+Hall,+Charlottesville,+VA+22903/@38.0321891,-78.5088882,18z" target="_blank">Directions</a>
-                </div>
-                <div class="col-md-1 hidden-md-up">
-                  <hr>
-                  <!-- <a href="http://www.twitter.com/@uvamath">
-                    <span class="fa fa-twitter-square fa-2x"></span></a> -->
-                  <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
-                  {% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank">
-                    <span class="fa fa-github-square fa-2x mt-1"></span></a>
-                  <a href="https://travis-ci.org/uva-math/uva-math-code/builds" title="Travis CI Build Status" target="_blank">
-                    <span class="fa fa-check-square fa-2x mt-1 ml-2"></span></a>
-                  <a href="https://www.facebook.com/UVAMath" title="Department of Mathematics Facebook page" target="_blank">
-                    <span class="fa fa-facebook-square fa-2x mt-1 ml-2"></span></a>
-                  <a href="{{site.url}}/feed.xml" title="Subscribe to RSS feed" target="_blank">
-                    <span class="fa fa-rss-square fa-2x mt-1 ml-2"></span></a>
-                </div>
-                <div class="col-md-1 hidden-sm-down">
-                  <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
-                  {% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank">
-                    <span class="fa fa-github-square fa-2x mr-2 mt-1"></span></a>
-                  <a href="https://travis-ci.org/uva-math/uva-math-code/builds" title="Travis CI Build Status" target="_blank">
-                    <span class="fa fa-check-square fa-2x mt-1"></span></a>
-                  <a href="https://www.facebook.com/UVAMath" title="Department of Mathematics Facebook page" target="_blank">
-                    <span class="fa fa-facebook-square fa-2x mt-1 mr-2"></span></a>
-                  <a href="{{site.url}}/feed.xml" title="Subscribe to RSS feed" target="_blank">
-                    <span class="fa fa-rss-square fa-2x mt-1"></span></a>
-                  <!-- <a href="http://www.twitter.com/@uvamath">
-                    <span class="fa fa-twitter-square fa-2x mt-1"></span></a> -->
-                </div>
-              </div>
-            </div>
-</div>
+  <div class="mt-5" style="background-color:rgba(0, 0, 0, 0.12);">
+
+    <div class="container" style="padding:10px 15px">
+      <div class="container">
+
+      </div>
+      <div class="row" style="font-size:14px;font-weight:600">
+        <div class="col-md-6">
+          <a href="{{site.url}}">Leonid Petrov</a>
+
+          <br />
+
+          <a href="mailto:lenia.petrov@gmail.com">lenia.petrov@gmail.com</a> <br class="hidden-md-up"><span class="hidden-sm-down">&bull;</span>
+          <a href="mailto:petrov@virginia.edu">petrov@virginia.edu</a>
+          <hr class="hidden-md-up" />
+        </div>
+        <div class="col-md-4">
+          <a href="http://math.virginia.edu" target="_blank">Department of Mathematics</a><br />
+          <a href="http://www.virginia.edu" target="_blank">University of Virginia</a>
+          <hr class="hidden-md-up" />
+        </div>
+        <div class="col-md-2 hidden-sm-down" style="text-align:right">
+          <a {% if paginator.page %}href="https://github.com/lenis2000/homepage/blob/master/posts/index.html" {% else %}href="https://github.com/lenis2000/homepage/blob/master/{{page.path}}" {% endif %} title="This page on GitHub" target="_blank">
+            <span class="fa fa-github-square fa-2x mr-2 mt-1">
+            </span>
+          </a>
+          <a href="{{site.url}}/posts/feed.xml" title="Subscribe to RSS feed" target="_blank">
+                    <span class="fa fa-rss-square fa-2x mt-1 mr-2"></span></a>
+          <span>
+            <a href="https://travis-ci.org/lenis2000/homepage/builds" title="Travis CI build status" target="_blank">
+              <span class="fa fa-check-square fa-2x mt-1">
+              </span>
+            </a>
+          </span>
+        </div>
+        <div class="col-md-2 hidden-md-up">
+          <a {% if paginator.page %}href="https://github.com/lenis2000/homepage/blob/master/posts/index.html" {% else %}href="https://github.com/lenis2000/homepage/blob/master/{{page.path}}" {% endif %} title="This page on GitHub" target="_blank">
+            <span class="fa fa-github-square fa-2x mr-2 mt-1">
+            </span>
+          </a>
+          <a href="{{site.url}}/posts/feed.xml" title="Subscribe to RSS feed" target="_blank">
+                    <span class="fa fa-rss-square fa-2x mt-1 mr-2"></span></a>
+          <span>
+            <a href="https://travis-ci.org/lenis2000/homepage/builds" title="Travis CI build status" target="_blank">
+              <span class="fa fa-check-square fa-2x mt-1">
+              </span>
+            </a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </footer>
