@@ -6,7 +6,7 @@ event-date: 2018-01-26 11:00:00
 comments: false
 categories: news events
 published: true
-hide-this-item: true
+hide-this-item: false
 ---
 
 **Veronica Shalotenko** will defend her PhD dissertation on Friday, January 26, 2018, at 11AM, in New Cabell Hall, Room 042
