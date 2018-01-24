@@ -12,7 +12,7 @@ more-text: Details about the prize
 
 Congratulations to Associate Professor Julie Bergner on being selected the winner of the 2018-2019 Ruth I. Michler Memorial Prize competition!
 
-[https://sites.google.com/site/awmmath/programs/michler-prize](https://sites.google.com/site/awmmath/programs/michler-prize)
+[Link to the prize page](https://sites.google.com/site/awmmath/programs/michler-prize)
 
 <!--more-->
 
