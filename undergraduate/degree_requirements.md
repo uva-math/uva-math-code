@@ -12,7 +12,7 @@ nav_weight: 1
 - ##### [Requirements]({{ site.url }}/undergraduate/docs/Requirements for Obtaining a Major in Mathematics_2.pdf) for Obtaining a Major in Mathematics
 - ##### [Declaration of math major form]({{ site.url }}/undergraduate/docs/S18-Math Major Declaration form.pdf)
 - ##### [Requirements]({{ site.url }}/undergraduate/docs/Requirements for declaring a Minor in Mathematics (1) (1) (1)_0.pdf) for Obtaining a Minor in Mathematics
-- ##### [Declaration of math minor form]({{ site.url }}/undergraduate/docs/S18-Math Minor Declaration form.pdf)
+- ##### [Declaration of math minor form]({{ site.url }}/undergraduate/docs/S18-Math Minor Declaration Form.pdf)
 
 ---
 
