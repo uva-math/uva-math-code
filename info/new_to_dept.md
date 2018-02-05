@@ -46,6 +46,8 @@ nav_weight: 20
 
 - **Advanced Research Computing Services:** [`https://arcs.virginia.edu`](https://arcs.virginia.edu), and in particular [Rivanna Cluster](https://arcs.virginia.edu/rivanna)
 
+- **Math Department Tea Time** is every Tuesday and Thursday during the semester in Kerchof 314 (Math Lounge / Common Room), starting at 3:15.
+
 - **Mailboxes:** Everyone has a mailbox in the mailroom (off the Lobby on the main floor).
 
 - **Supply Room (220):** The Supply Room has paper, pens, chalk, toner cartridges, and other supplies. There is also a refrigerator, microwave, and FAX machine. You may check out a projector with Raven James {% include person_info.html UVA_id="raj3e" %}.

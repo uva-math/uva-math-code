@@ -3,7 +3,7 @@ layout: post
 title: New Faculty 2017-18
 date: 2017-09-12 00:30:00
 comments: false
-categories: news major-news
+categories: news
 published: true
 more-text: New Faculty Descriptions
 ---

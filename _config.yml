@@ -32,4 +32,11 @@ collections:
 
 exclude: [vendor]
 
-gems: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+
+author: UVA Math
+
+feed:
+  path: /feed.xml

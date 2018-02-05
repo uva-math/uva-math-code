@@ -2,7 +2,7 @@
 # Usage:
 # python lou_course_descriptions.py  > ../_data/courses.yml
 
-current_semester = "Fall 2017"
+current_semester = "Spring 2018"
 lou_url = "https://rabi.phys.virginia.edu/mySIS/CC2/Mathematics.html"
 
 from bs4 import BeautifulSoup

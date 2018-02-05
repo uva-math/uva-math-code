@@ -165,8 +165,7 @@ And so on, see [below](#displaying-posts) for a detailed description.
 
 Setting `hide-this-item: true` will hide the news item from the main page,
 even if it is not yet pushed back by newer news items. This can be handy for
-some small and not too relevant news which should be removed from the
-main page once time passes. However, this key does not hide this news item from the
+some small news once the time passes. However, this key does not hide this news item from the
 general news roll at [`{{site.url}}/allnews/`]({{site.url}}/allnews/).
 By agreement, major news will not be hidden like this, only the ordinary news.
 
