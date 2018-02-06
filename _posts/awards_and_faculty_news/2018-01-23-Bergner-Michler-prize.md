@@ -3,7 +3,7 @@ layout: post
 title: Julie Bergner to receive Michler Memorial Prize
 date: 2018-01-23 13:30:00
 comments: false
-categories: news awards major-news
+categories: news awards
 published: true
 image: __SITE_URL__/img/people/Bergner.jpg
 image-alt: Julie Bergner
