@@ -7,7 +7,7 @@ position: Graduate Student
 office: 112 Kerchof Hall
 phone: 434-243-2304
 email: ghs9ae@virginia.edu
-image:
+image: __SITE_URL__/img/people/Seelinger.jpg
 personal_page:
 
 
