@@ -8,9 +8,9 @@ permalink: /ims/lectures/irene-fonseca/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
-image: "http://irenefonseca.weebly.com/uploads/3/1/1/1/31113833/2059d19a-f924-4e2d-bf0c-d285d11c50d1_orig.jpg"
+image: __SITE_URL__/img/IMS/Fonseca_poster_1.jpg
 image-alt: Irene Fonseca
-image-address: "http://irenefonseca.weebly.com/"
+image-address: __SITE_URL__/img/IMS/Fonseca_poster_1.pdf
 image-tall: true
 more-text: Abstracts of talks
 nav_parent: IMS
