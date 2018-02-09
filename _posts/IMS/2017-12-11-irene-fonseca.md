@@ -8,9 +8,9 @@ permalink: /ims/lectures/irene-fonseca/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
-image: "http://irenefonseca.weebly.com/uploads/3/1/1/1/31113833/2059d19a-f924-4e2d-bf0c-d285d11c50d1_orig.jpg"
+image: __SITE_URL__/img/IMS/Fonseca_poster_1.jpg
 image-alt: Irene Fonseca
-image-address: "http://irenefonseca.weebly.com/"
+image-address: __SITE_URL__/img/IMS/Fonseca_poster_1.pdf
 image-tall: true
 more-text: Abstracts of talks
 nav_parent: IMS
@@ -32,7 +32,7 @@ This leads to the two talks of this series: **Variational Problems in Materials 
 
 ### Variational Problems in Materials Science
 
-*Lecture 1: March 15, 2018. Time and location: TBA*
+*Lecture 1: Thursday, March 15, 2018 5-6pm, Clark 108*
 
 **Abstract:**  Quantum dots are man-made nanocrystals of semiconducting materials. Their formation and assembly patterns play a central role in nanotechnology, and in particular in the optoelectronic properties of semiconductors. Changing the dots' size and shape gives rise to many applications that permeate our daily lives, such as the new Samsung QLED TV monitor that uses quantum dots to turn "light into perfect color"!
 
@@ -44,7 +44,7 @@ In this talk we will use methods from the calculus of variations and partial dif
 
 ### Variational Problems in Imaging Science
 
-*Lecture 2: March 16, 2018. Time and location: TBA*
+*Lecture 2: Friday, March 16, 2018 4-5pm, Clark 108*
 
 **Abstract:**  The mathematical treatment of image processing is strongly hinged on variational methods, partial differential equations, and machine learning. The bilevel scheme combines the principles of machine learning to adapt the model to a given data, while variational methods provide model-based approaches which are mathematically rigorous, yield stable solutions and error estimates. The combination of both leads to the study of weighted Ambrosio-Tortorelli and Mumford-Shah variational models for image processing.
 
