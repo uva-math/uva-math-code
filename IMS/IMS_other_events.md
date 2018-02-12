@@ -1,7 +1,7 @@
 ---
 title: IMS special events
 layout: static_page_no_right_menu
-permalink: /ims/analysis2015/
+permalink: /ims/special-events/
 nav_id: 'IMS special events'
 nav_weight: 5
 nav_nesting: true
