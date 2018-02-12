@@ -9,7 +9,7 @@ comments: false
 categories: news ims ims-special events major-news
 published: true
 image: __SITE_URL__/img/IMS/Simon-2018.jpg
-image-alt:
+image-alt: Barry Simon lectures poster
 image-address: __SITE_URL__/img/IMS/Simon-2018.pdf
 image-tall: true
 more-text: Schedule and abstracts
