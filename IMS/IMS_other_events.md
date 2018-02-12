@@ -11,6 +11,8 @@ nav_parent: IMS
 <h1 class="mb-5">Upcoming and past IMS special events</h1>
 
 
+---
+
 <div class="row">
 {% for post in site.posts %}
   {% if post.categories contains "ims-special" %}
