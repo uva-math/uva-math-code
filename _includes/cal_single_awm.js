@@ -201,7 +201,7 @@
                 tdl.setAttribute("class","hidden-sm-down");
                 tdr.setAttribute("valign","top");
                 tr.setAttribute("class","mb-3");
-                tdr.setAttribute("style","padding-top:5px;padding-bottom 5px;color:steelblue;font-size:20px");
+                tdr.setAttribute("style","padding-top:5px;padding-bottom 5px;font-size:20px");
                 tdl.setAttribute("style","padding:5px;color:orange");
 
                 tdl.innerHTML = elem_array[3];
