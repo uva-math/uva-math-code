@@ -28,7 +28,7 @@
   {
     if (abst)
     {
-      var retStr = ['<details><summary>Abstract</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '">Google Calendar link</a><br>', '</details>'];
+      var retStr = ['<details><summary>More info</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '">Google Calendar link</a><br>', '</details>'];
       // appendPre(retStr);
       return retStr.join('');
     }
@@ -230,7 +230,7 @@
 		<thead class="hidden-sm-down">
 			<tr>
 					<th width="12%" style="padding-top:5px;padding-bottom:5px">Date</th>
-					<th style="padding-top:5px;padding-bottom:5px">Speaker, Title, Abstract</th>
+					<th style="padding-top:5px;padding-bottom:5px"></th>
 			</tr>
      		</thead>
 		<tbody class="my-tr-zebra" id='events'>
