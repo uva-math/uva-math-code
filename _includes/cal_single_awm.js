@@ -201,8 +201,8 @@
                 tdl.setAttribute("class","hidden-sm-down");
                 tdr.setAttribute("valign","top");
                 tr.setAttribute("class","mb-3");
-                tdr.setAttribute("style","padding-top:5px;padding-bottom:5px");
-                tdl.setAttribute("style","padding:5px;");
+                tdr.setAttribute("style","padding-top:5px;padding-bottom 5px;color:steelblue;font-size:20px");
+                tdl.setAttribute("style","padding:5px;color:orange");
 
                 tdl.innerHTML = elem_array[3];
                 tdr.innerHTML = elem_array[1] + elem_array[2] + ' ' + elem_array[3] + ', ' + elem_array[4] + " @ " + elem_array[5] + elem_array[6] + elem_array[7];
