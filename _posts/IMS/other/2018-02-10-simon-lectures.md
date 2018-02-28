@@ -6,7 +6,7 @@ event-date: 2018-02-26 15:30:00
 multi-day-event: true
 permalink: /ims/simon-2018/
 comments: false
-categories: news ims ims-special events major-news
+categories: news ims ims-special events
 published: true
 image: __SITE_URL__/img/IMS/Simon-2018.jpg
 image-alt: Barry Simon lectures poster
