@@ -35,8 +35,8 @@
   information: |
     The Geometry Seminar talks usually focus on aspects of low-dimensional topology and geometry, including knot theory and categorification, Floer homology, 3- and 4-dimensional manifolds, and symplectic and contact topology. The lectures are often given by outside speakers, however UVa graduate students and faculty give talks as well.
   contact:
-    - UVA_id: vk6e
     - UVA_id: tmark
+    - UVA_id: sm4cw
 
 - cal_number: '3'
   name: Harmonic Analysis and PDE Seminar
