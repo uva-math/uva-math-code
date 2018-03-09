@@ -49,11 +49,11 @@
   information: |
     Harmonic Analysis and PDE seminar features a mix of local speakers (graduate students and faculty) and visitors. The ideal topics live on the interface between the two fields; luckily, the interface has been steadily expanding.
   contact:
+    - UVA_id: fd4v
     - UVA_id: yqd3p
     - UVA_id: af7py
     - UVA_id: jf8dc
     - UVA_id: zg7c
-    - UVA_id: fd4v
 
 - cal_number: '4'
   name: Mathematical Physics Seminar
