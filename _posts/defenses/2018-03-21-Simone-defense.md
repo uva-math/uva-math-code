@@ -16,4 +16,3 @@ The title the thesis is:
 "_Cut-and-paste operations and exotic 4-manifolds_"
 
 Everyone is invited.
-

@@ -8,7 +8,7 @@ comments: false
 categories: news ims ims-special events major-news
 published: true
 image: "http://pure.au.dk/portal/files/20236743/sherson.jpg"
-#image-alt: Barry Simon lectures poster
+image-alt: Jacob Sherson
 #image-address: __SITE_URL__/img/IMS/Simon-2018.pdf
 #image-tall: true
 #more-text: 
