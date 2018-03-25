@@ -7,7 +7,7 @@ multi-day-event: true
 comments: false
 categories: news events
 published: true
-hide-this-item: false
+hide-this-item: true
 more-text: Links to more information
 ---
 
