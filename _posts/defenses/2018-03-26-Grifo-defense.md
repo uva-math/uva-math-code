@@ -19,3 +19,4 @@ Her thesis is titled
 - Place: Ruffner Hall G006
 
 Everyone is invited to attend.
+
