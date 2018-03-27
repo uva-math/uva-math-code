@@ -16,6 +16,6 @@ Her thesis is titled
 
 - Date: Thursday, March 29
 - Time: 3:30pm
-- Place: Clark G004
+- Place: Ruffner Hall G006
 
 Everyone is invited to attend.
