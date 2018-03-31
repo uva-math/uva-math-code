@@ -7,6 +7,6 @@ categories: news awards
 published: true
 ---
 
-Congratulations to Sebastian (Ryuichi) Haney who has awarded the 2018 Goldwater Scholarship, one of about 20 in math nationwide.
+Congratulations to Sebastian (Ryuichi) Haney who has awarded the 2018 [Goldwater Scholarship](https://goldwater.scholarsapply.org) - one of about 20 in math nationwide.
 
 [List of awardees](https://goldwater.scholarsapply.org/2018-scholars-by-institution-state/)
