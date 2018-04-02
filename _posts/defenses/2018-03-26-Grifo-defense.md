@@ -6,7 +6,7 @@ event-date: 2018-03-29 15:30:00
 comments: false
 categories: news events
 published: true
-hide-this-item: false
+hide-this-item: true
 ---
 
 **Eloísa Grifo** will defend the PhD dissertation on Thursday, March 29. 
