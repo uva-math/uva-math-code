@@ -6,7 +6,7 @@ event-date: 2018-03-29 14:00:00
 comments: false
 categories: news events
 published: true
-hide-this-item: false
+hide-this-item: true
 ---
 
 You are invited to the thesis defense of **John Berman**, whose thesis is titled 
