@@ -7,7 +7,7 @@ categories: news awards
 published: true
 ---
 
-We are very pleased to announce the recipients of this year’s teaching awards for GTAs: 
+We are very pleased to announce the recipients of this year’s teaching awards for Graduate Teaching Assistants: 
 
 - **Zach Gates** is the winner of this year’s Mathematics Department Outstanding Graduate Teaching Assistant award
 - **Mariano Echeverria** and **Veronica Shalotenko** have each been awarded one of ten All-University Graduate Teaching Awards
