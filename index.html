@@ -27,7 +27,7 @@ events: true
       <!-- Code for the news roll -->
 
         {% assign major-news_counter = 0 %}
-        {% for post in site.categories['news'] limit:7 %}
+        {% for post in site.categories['news'] limit:10 %}
         {% if post.categories contains 'major-news' and major-news_counter == 0 %}
         {% assign major-news_id = post.id %}
         {% assign major-news_counter = major-news_counter | plus:1 %}
