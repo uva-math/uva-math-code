@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Math Major Sebastian Haney awarded Goldwater scholarship
-date: 2018-03-30 13:30:00
+date: 2018-04-04 13:30:00
 comments: false
 categories: news awards
 published: true
