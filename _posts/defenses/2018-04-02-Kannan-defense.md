@@ -6,7 +6,7 @@ event-date: 2018-04-04 14:00:00
 comments: false
 categories: news events
 published: true
-hide-this-item: false
+hide-this-item: true
 ---
 
 **Arun Kannan** will defend the undergraduate thesis on Wednesday, April 4. 
