@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2018 Mathematics Final Exercises Ceremony
-date: 2018-02-09 13:30:00
+date: 2018-04-10 13:30:00
 event-date: 2018-05-19 12:00:00
 comments: false
 categories: news events major-news
