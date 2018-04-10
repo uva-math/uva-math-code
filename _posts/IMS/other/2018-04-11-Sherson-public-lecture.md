@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Public Lecture by Jacob Sherson - April 19, 2018
-date: 2018-03-21 04:30:00
+date: 2018-04-11 04:30:00
 event-date: 2018-04-19 19:00:00
 multi-day-event: false
 comments: false
