@@ -12,7 +12,7 @@ image: __SITE_URL__/img/IMS/Simon-2018.jpg
 image-alt: Barry Simon lectures poster
 image-address: __SITE_URL__/img/IMS/Simon-2018.pdf
 image-tall: true
-more-text: Schedule and abstracts
+more-text: Schedule, abstracts, and PDF slides
 nav_parent: IMS
 ---
 
