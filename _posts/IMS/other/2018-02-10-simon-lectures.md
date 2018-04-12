@@ -31,6 +31,8 @@ The UVa Department of Mathematics &amp; The Institute of Mathematical Sciences p
 
 This is not a mathematics talk but it is a talk for mathematicians. Too often, we think of historical mathematicians as only names assigned to theorems. With vignettes and anecdotes, I’ll convince you they were also human beings and that, as the Chinese say, “May you live in interesting times” really is a curse.
 
+##### [`PDF slides`]({{site.url}}/talks_seminars_data/B_Simon_2018/Tales of our Forefathers - B. Simon.pdf)
+
 ---
 
 <h3 class="mb-3">2. More Tales of Our Forefathers</h3>
@@ -40,3 +42,9 @@ This is not a mathematics talk but it is a talk for mathematicians. Too often, w
 **4:30-5:30 pm, Maury 209**
 
 This is not a mathematics talk but it is a talk for mathematicians. Too often, we think of historical mathematicians as only names assigned to theorems. With vignettes and anecdotes, I’ll convince you they were also human beings and that, as the Chinese say, ‘May you live in interesting times’ really is a curse. It is not assumed that listeners heard my earlier talk. Amongst the mathematicians that I’ll discuss are Riemann, Newton, Krein and Noether”.
+
+##### [`PDF slides`]({{site.url}}/talks_seminars_data/B_Simon_2018/More Tales of our Forefathers - B. Simon.pdf)
+
+---
+
+##### [`PDF slides "Asymptotics of the Chebyshev Polynomials of General Sets"`]({{site.url}}/talks_seminars_data/B_Simon_2018/chebyshev - B. Simon.pdf)
