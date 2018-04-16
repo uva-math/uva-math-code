@@ -6,7 +6,7 @@ event-date: 2018-04-05 10:00:00
 comments: false
 categories: news events
 published: true
-hide-this-item: false
+hide-this-item: true
 ---
 
 **Kristin Courtney** will defend the PhD dissertation on Thursday, April 5. 
