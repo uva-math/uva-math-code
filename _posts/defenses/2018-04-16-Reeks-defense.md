@@ -6,7 +6,7 @@ event-date: 2018-04-18 13:00:00
 comments: false
 categories: news events
 published: true
-hide-this-item: false
+hide-this-item: true
 ---
 
 **Mike Reeks** will defend the PhD dissertation on Wednesday, April 18. 
