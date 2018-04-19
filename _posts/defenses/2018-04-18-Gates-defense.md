@@ -6,7 +6,7 @@ event-date: 2018-04-19 12:30:00
 comments: false
 categories: news events
 published: true
-hide-this-item: false
+hide-this-item: true
 ---
 
 **Zach Gates** will defend the PhD dissertation on Thursday, April 19. 
