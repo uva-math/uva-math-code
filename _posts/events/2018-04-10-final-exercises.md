@@ -29,3 +29,8 @@ _*Finals on the Lawn, all department ceremonies inside._
 **Ceremony Start Time: 12:30 p.m.**<br>
 Reservation Time: 12 p.m. – 3 p.m.<br>
 _*Finals in John Paul Jones Arena, all department ceremonies inside._
+
+
+<br><br>
+
+[See also this UVA News countdown](https://news.virginia.edu/content/final-exercises-2018)

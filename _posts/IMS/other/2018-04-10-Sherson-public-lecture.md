@@ -5,7 +5,7 @@ date: 2018-04-10 14:30:00
 event-date: 2018-04-19 19:00:00
 multi-day-event: false
 comments: false
-categories: news ims ims-special events major-news
+categories: news ims ims-special events 
 published: true
 image: __SITE_URL__/img/IMS/Sherson.png
 image-alt: Jacob Sherson Poster
