@@ -16,7 +16,7 @@ nav_nesting: true
     {% assign sorted_pages = site.pages | sort: "nav_weight" %}
     {% for p in sorted_pages %}
     {% if p.nav_parent == "IMS" and p.permalink != "/ims/workshop-fall-2018/" %}
-    <li> <h3><a href="{{site.url}}{{p.url}}">{{p.nav_id}}</a></h3></li>
+    <li><h3><a href="{{site.url}}{{p.url}}">{{p.nav_id}}</a></h3></li>
     {% endif %}
     {% endfor %}
     </ul>
