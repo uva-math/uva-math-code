@@ -10,8 +10,6 @@ nav_weight: 40
 
 <h1 class="mb-5">Services, Links &amp; Resources</h1>
 
-
-
 <!-- add book list? -->
 
 ### [Lou's Unofficial Class Schedule for Fall 2017 Math classes](http://rabi.phys.virginia.edu/mySIS/CS2/page.php?Semester=1178&Type=Group&Group=Mathematics)

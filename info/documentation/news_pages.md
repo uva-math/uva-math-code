@@ -94,6 +94,13 @@ and how they affect the presentation of the post.
 
 <span class="nonupper-h5">published</span>
 
+<div class="orange-item mb-2" style="padding:10px">
+<b>[update: April 24, 2018]</b>
+<br> 
+The setting <code class="highlighter-rouge">published: false</code> appears to be broken in a new version of Jekyll, 
+so please manually move the source files to a special folder <code class="highlighter-rouge">/_UNPUBLISHED/</code> in the source
+</div>
+
 Setting `published: false` will remove the post from the website
 completely (but it will stay in the [GitHub source](https://github.com/uva-math/uva-math-code)). By default this variable is set to `published: true`, so it can as well be omitted.
 
