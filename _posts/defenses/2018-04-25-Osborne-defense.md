@@ -6,7 +6,7 @@ event-date: 2018-04-26 11:00:00
 comments: false
 categories: news events
 published: true
-hide-this-item: false
+hide-this-item: true
 ---
 
 Christina Osborne's thesis defense will be held on Thursday, April 26.  
