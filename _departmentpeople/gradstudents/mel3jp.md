@@ -8,7 +8,7 @@ office: 123 Kerchof Hall
 phone: 434-982-2786
 email: mel3jp@virginia.edu
 image:
-personal_page:
+personal_page: http://people.virginia.edu/~mel3jp/
 
 
 ---
