@@ -6,7 +6,7 @@ event-date: 2018-04-27 14:00:00
 comments: false
 categories: news events
 published: true
-hide-this-item: false
+hide-this-item: true
 ---
 
 **Bradley Weaver** will defend the PhD dissertation on Friday, April 27. 
