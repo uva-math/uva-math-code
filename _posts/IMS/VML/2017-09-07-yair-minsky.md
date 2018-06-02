@@ -16,7 +16,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<h5 class="mt-3 mb-4"><a href="http://users.math.yale.edu/users/yair/">Yair Minsky (Yale University)</a></h5>
+<h5 class="mt-3 mb-4"><a href="https://sites.google.com/view/yair-minsky/">Yair Minsky (Yale University)</a></h5>
 
 <ul>
   <li>

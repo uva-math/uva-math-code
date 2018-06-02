@@ -41,8 +41,8 @@ nav_weight: 20
 
 - **Mobile Devices at UVa:** [`http://its.virginia.edu/mobile/`](http://its.virginia.edu/mobile/)
 
-- **UNIX home directory service at `blue.unix.virginia.edu`:**
-[`https://admin.people.virginia.edu/cgi-local/ww/menu`](https://admin.people.virginia.edu/cgi-local/ww/menu)
+<!-- - **UNIX home directory service at `blue.unix.virginia.edu`:**
+[`https://admin.people.virginia.edu/cgi-local/ww/menu`](https://admin.people.virginia.edu/cgi-local/ww/menu) -->
 
 - **Advanced Research Computing Services:** [`https://arcs.virginia.edu`](https://arcs.virginia.edu), and in particular [Rivanna Cluster](https://arcs.virginia.edu/rivanna)
 

@@ -8,5 +8,3 @@ published: true
 ---
 
 The Frank Finger Graduate Fellowship Award for Teaching was awarded to Katelynn Kochalski. This award honors teaching assistant in the College of Arts & Sciences for their recognition of stimulating and organized classroom teaching.
-
-[About the Award](http://cte.virginia.edu/awards/the-dr-frank-finger-graduate-fellowship-for-teaching/)
