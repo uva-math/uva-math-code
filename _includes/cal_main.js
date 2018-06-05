@@ -1,3 +1,4 @@
+<script src="https://apis.google.com/js/api.js"></script>
 <script>
 // javascript to access all seminar google calendars which puts them onto main page;
 // its modifications can be used for seminar pages
@@ -22,8 +23,6 @@
     // this last one is the empty calendar with no seminar link (also for compatibility with IE)
   ]; //list of all calendars, new seminar google calendars can be added here
   var apiKey = 'AIzaSyA7Uka7Cbx7SPTWqDn52Nw9XPAe1kdQZxs';
-  var clientId = '924411057957-0d9mrr6c8uvgsbdq1v1he5ha0je1om3d.apps.googleusercontent.com';
-  var scopes = 'https://www.googleapis.com/auth/calendar.readonly';
   // google API keys
   var userTimeZone = "New_York"; // Charlottesville is in this timezone so we keep it like this
   var maxSeminars = {{include.max_sem}}; //This is the number of seminars to display
@@ -111,21 +110,13 @@
       else if (num == "6") { return "Sat" }
       else if (num == "0") { return "Sun" }
   }
-  function handleClientLoad() {
-      gapi.client.setApiKey(apiKey);
-      checkAuth();
-  }
-  function checkAuth() {
-      gapi.auth.authorize({client_id: clientId, scope: scopes, immediate: true}, handleAuthResult);
-  }
-  function handleAuthResult(authResult) {
-      if (authResult) {
-          makeApiCall();
-      }
-  }
 
   //--------------------- main function makes API calls and displays results
-  function makeApiCall(callback) {
+  function start() {
+    gapi.client.init({
+      'apiKey': apiKey,
+      'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'],
+    }).then(function() {
     var executeOnce = 0;
     {%if include.current %}
       var today = new Date();
@@ -234,9 +225,11 @@
         });
       };
     });
-  }
+  });
+};
+
+  gapi.load('client', start);
 </script>
-<script src='https://apis.google.com/js/client.js?onload=handleClientLoad'></script>
 
 <div id='preloader' class="h5" style="color:grey">Loading seminars...</div>
 <div id='content' class="my-div-zebra">
