@@ -1,8 +1,10 @@
 # This is a python script to populate the course descriptions from Lou's list
 # Usage:
 # python lou_course_descriptions.py  > ../_data/courses.yml
+# (requires installing bs4 and lxml)
+# DO NOT FORGET TO UPDATE THE CURRENT SEMESTER for the script to work properly
 
-current_semester = "Spring 2018"
+current_semester = "Fall 2018"
 lou_url = "https://rabi.phys.virginia.edu/mySIS/CC2/Mathematics.html"
 
 from bs4 import BeautifulSoup
