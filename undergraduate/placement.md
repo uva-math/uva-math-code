@@ -36,7 +36,8 @@ To enroll in accelerated sections {%include course number=2315%} and its continu
 
 ### Additional Courses
 
-Pre-Commerce students are required to take a statistics course, usually STAT 2120, and one other mathematics course, usually {%include course number=1110%}<span style="margin-left:-4px"></span>, {%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%}<span style="margin-left:-4px"></span>, or {%include course number=1310%}<span style="margin-left:-4px"></span>.
+The McIntire School of Commerce’s B.S. in Commerce prerequisites
+ include STAT 2120 and a Calculus course ({%include course number=1190%}<span style="margin-left:-4px"></span>, {%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1310%}<span style="margin-left:-4px"></span>, or higher level).
 
 Pre-med students who are seeking to fulfill the &ldquo;second-semester&rdquo; calculus course required by some medical schools typically take {%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%}.
 
