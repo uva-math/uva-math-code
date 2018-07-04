@@ -18,8 +18,8 @@ The Institute of Mathematical Science (IMS) will bring together--in a centralize
 <ul>
 {% assign sorted_pages = site.pages | sort: "nav_weight" %}
 {% for p in sorted_pages %}
-{% if p.nav_parent == "IMS" and p.permalink != "/ims/about/" and p.permalink != "/ims/workshop-fall-2018/" %}
-<li> <h3><a href="{{site.url}}{{p.url}}">{{p.nav_id}}</a></h3></li>
+{% if p.nav_parent == "IMS" and p.permalink != "/ims/about/" and p.permalink != "/ims/analysis2015/" and p.permalink != "/ims/workshop-fall-2018/" %}
+<li><h3><a href="{{site.url}}{{p.url}}">{{p.nav_id}}</a></h3></li>
 {% endif %}
 {% endfor %}
 </ul>
