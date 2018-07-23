@@ -1,11 +1,11 @@
 ---
-title: AWM&#64;UVa
+title: AWM&commat;UVa
 layout: awm_page
 permalink: /awm/
 nav_parent: Undergraduate
 nav_nesting: true
 nav_weight: 970
-nav_id: AWM&#64;UVa
+nav_id: AWM&commat;UVa
 ---
 
 ###  AWM Student Chapter at the University of Virginia
