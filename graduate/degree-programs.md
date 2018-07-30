@@ -35,7 +35,7 @@ Current syllabi for the Algebra, Analysis, and Topology General Examinations:
 - [Syllabus for Analysis General Exam]({{ site.url }}/graduate/docs/Syllabus for Analysis General Exam 2.pdf)
 - [Syllabus for Topology General Exam]({{ site.url }}/graduate/docs/Syllabus for Topology General Exam 3.pdf)
 
-Examples of past general exams can be found [here]({{site.url}}//graduate/generals/).
+Examples of past general exams can be found [here]({{site.url}}/graduate/generals/).
 
 ### Second-Year Proficiency Examination
 
