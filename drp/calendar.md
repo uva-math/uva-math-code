@@ -1,7 +1,7 @@
 ---
 title: DRP Calendar
 layout: drp_page
-permalink: /drp/calendar
+permalink: /drp/calendar/
 ---
 
 <h2 class="mb-3">DRP Calendar</h2>

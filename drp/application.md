@@ -1,7 +1,7 @@
 ---
 title: DRP Application 
 layout: drp_page
-permalink: /drp/application
+permalink: /drp/application/
 ---
 
 <h2 class="mb-3">Mentee Application</h2>

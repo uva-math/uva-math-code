@@ -1,7 +1,7 @@
 ---
 title: DRP Frequently Asked Questions  
 layout: drp_page
-permalink: /drp/faq
+permalink: /drp/faq/
 ---
 
 <h2 class="mb-3">Frequently Asked Questions</h2>

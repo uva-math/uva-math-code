@@ -1,7 +1,7 @@
 ---
 title: Other DRP Programs
 layout: drp_page
-permalink: /drp/otherdrp
+permalink: /drp/otherdrp/
 ---
 
 <h2 class="mb-3">Other DRP Programs</h2>

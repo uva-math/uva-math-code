@@ -1,7 +1,7 @@
 ---
 title: DRP Committee 
 layout: drp_page
-permalink: /drp/committee
+permalink: /drp/committee/
 ---
 
 <h1 class="mb-3">Committee</h1>

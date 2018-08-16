@@ -1,7 +1,7 @@
 ---
 title: DRP Contact 
 layout: drp_page
-permalink: /drp/contact
+permalink: /drp/contact/
 ---
 
 <h2 class="mb-3">Contact Us</h2>
