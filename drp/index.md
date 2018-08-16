@@ -5,7 +5,7 @@ permalink: /drp/
 nav_id: Directed Reading Program
 nav_parent: Undergraduate
 nav_nesting: true
-nav_weight: 971
+nav_weight: 969
 has_DRP_calendar: false
 ---
 
