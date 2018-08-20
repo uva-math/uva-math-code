@@ -110,7 +110,7 @@
 - name: " Basic Real Analysis (3.00) "
   number: 3310
   offered: Fall 2018
-  descr: " A rigorous development of the properties of the real numbers and the ideas of calculus including theorems on limits/ continuity/differentiability/convergence of infinite series/the construction of the Riemann integral. The focus of students' work will be on getting experience in constructing proofs and developing examples. Prerequisite: MATH 1320. "
+  descr: " A rigorous development of the properties of the real numbers and the ideas of calculus including theorems on limits, continuity, differentiability, convergence of infinite series, and the construction of the Riemann integral. Students without prior experience constructing rigorous proofs are encouraged to take Math 3000 before or concurrently with Math 3310.  Prerequisite: MATH 1320. "
 
 - name: " Advanced Calculus and Linear Algebra II (4.00) "
   number: 3315
@@ -134,7 +134,7 @@
 - name: " Survey of Algebra (3.00) "
   number: 3354
   offered: Fall 2018
-  descr: " Surveys major topics of modern algebra: groups, rings, and fields. Presents applications to areas such as geometry and number theory; explores rational, real, and complex number systems, and the algebra of polynomials.  Prerequisite: MATH 1320 or equivalent. "
+  descr: " Surveys major topics of modern algebra: groups, rings, and fields. Presents applications to areas such as geometry and number theory; explores rational, real, and complex number systems, and the algebra of polynomials.  Students without prior experience constructing rigorous proofs are encouraged to take Math 3000 before or concurrently with Math 3354.  Prerequisite: MATH 1320. "
 
 - name: " New Course in Mathematics (1.00 - 4.00) "
   number: 3559
@@ -247,7 +247,6 @@
 
 - name: " Distinguished Major Thesis (3.00) "
   number: 4900
-  offered: Fall 2018
   descr: " This course provides a framework for the completion of a Distinguished Major Thesis, a treatise containing an exposition of a chosen mathematical topic.  A faculty advisor guides a student through the beginning phases of the process of research and writing.  Prerequisite: Acceptance into the Distinguished Major Program. "
 
 - name: " Distinguished Major Thesis (3.00) "
