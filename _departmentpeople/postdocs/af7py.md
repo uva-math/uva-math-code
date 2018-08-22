@@ -9,6 +9,7 @@ phone: 434-243-8748
 email: af7py@virginia.edu
 image: __SITE_URL__/img/people/Farhat.jpg
 personal_page: 'https://aseelfarhat842.wixsite.com/af7py'
+published: false
 
 areas:
   - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
