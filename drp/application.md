@@ -13,6 +13,8 @@ applications are judged on a holistic basis.
 
 [Mentee Application](https://docs.google.com/forms/d/e/1FAIpQLSfiH7EG1XgBx0-u0CYYCp9OmgOSAw0bgZuYQS5Gr0e0SElg7A/viewform?usp=sf_link)
 
+**Applications Due: Thursday, Sep 6, 2018**
+
 <h2 class="mb-3">Mentor Application</h2>
 
 Graduate students who are interested in becoming mentors should fill
