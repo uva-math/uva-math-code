@@ -16,3 +16,7 @@ permalink: /drp/otherdrp/
 - [University of Maryland](http://drp.math.umd.edu/)
 - [University of Texas at Austin](http://www.ma.utexas.edu/users/drp/)
 - [Yale University](https://math.yale.edu/undergrad-programs/directed-reading-program)
+
+<h2 class="mb-3">Directed Reading Program Network</h2>
+
+- [DRP Network](https://www.drp-network.org/)
