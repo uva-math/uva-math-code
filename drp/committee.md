@@ -13,4 +13,4 @@ The DRP Committee is comprised of the following graduate students
 - Jiajun Yan
 - Ethan Zell
 
-The sponsoring faculty member is [Sara Malnoi](http://www.people.virginia.edu/~sm4cw/Welcome.html).
+The sponsoring faculty member is [Sara Maloni](http://www.people.virginia.edu/~sm4cw/Welcome.html).
