@@ -8,7 +8,7 @@ office: 127 Kerchof Hall
 phone: 434-
 email: gfi8ps@virginia.edu
 image:
-personal_page:
+personal_page:http://people.virginia.edu/~gfi8ps/
 
 
 ---
