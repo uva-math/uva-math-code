@@ -9,6 +9,4 @@ phone: 434-
 email: gfi8ps@virginia.edu
 image:
 personal_page: http://people.virginia.edu/~gfi8ps/
-
-
 ---
