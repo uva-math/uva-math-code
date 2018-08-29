@@ -109,8 +109,8 @@
     The Math Club is a students' space, and the CIO structure provides the Club with a managing board which helps plan and organize events.
 
   contact:
+    - UVA_id: brh5c
     - UVA_id: sm4cw
-    - UVA_id: aso9t
 
 - cal_number: '12'
   name: Operator theory seminar

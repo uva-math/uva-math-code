@@ -4,7 +4,7 @@ layout: g_page
 g_info: true
 permalink: /graduate/research-areas/
 nav_parent: Graduate
-nav_weight: 1
+nav_weight: 2
 ---
 
 {% assign sorted_people = site.departmentpeople | sort: 'lastname' %}

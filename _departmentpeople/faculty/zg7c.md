@@ -3,7 +3,7 @@ UVA_id: zg7c
 lastname: Grujic
 name: Zoran
 general_position: faculty
-position: Professor & Interim Chair
+position: Professor
 office: 331 Kerchof Hall
 phone: 434-243-7779
 email: zg7c@virginia.edu
