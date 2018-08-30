@@ -9,6 +9,7 @@ phone: 434-924-4930
 email: obus@virginia.edu
 image: __SITE_URL__/img/people/Obus.jpg
 personal_page: http://people.virginia.edu/~aso9t/
+published: false
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
