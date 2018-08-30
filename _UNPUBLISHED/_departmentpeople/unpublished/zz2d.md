@@ -9,6 +9,7 @@ phone: 434-924-4939
 email: zz2d@virginia.edu
 image: __SITE_URL__/img/people/Zhang.jpg
 personal_page:
+published: false
 
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory

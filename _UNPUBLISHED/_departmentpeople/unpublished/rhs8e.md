@@ -9,6 +9,7 @@ phone: 434-243-8778
 email: rhs8e@virginia.edu
 image: __SITE_URL__/img/people/Santharoubane.jpg
 personal_page: https://sites.google.com/site/ramanujansantharoubane/
+published: false
 
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
