@@ -8,7 +8,7 @@ office:
 phone:
 email: il2v@virginia.edu
 image: __SITE_URL__/img/people/Lasiecka.jpg
-personal_page: www.memphis.edu/msci/people/lasiecka.php
+personal_page: http://www.memphis.edu/msci/people/lasiecka.php
 
 
 ---
