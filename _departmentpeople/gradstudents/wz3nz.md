@@ -1,14 +1,14 @@
 ---
-UVA_id: bw6qh
-lastname: Wang
-name: Bo
+UVA_id: wz3nz
+lastname: Zhang
+name: Weinan 
 general_position: gradstudent
 position: Graduate Student
 office: 401 Kerchof Hall
 phone: 434-924-8777
-email: bw6qh@virginia.edu
+email: wz3nz@virginia.edu
 image:
-personal_page:
+personal_page: 
 
 
 ---

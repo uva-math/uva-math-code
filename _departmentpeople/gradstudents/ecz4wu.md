@@ -1,14 +1,14 @@
 ---
-UVA_id: ctl3az
-lastname: Leonard
-name: Christopher
+UVA_id: ecz4wu
+lastname: Zell
+name: Ethan
 general_position: gradstudent
 position: Graduate Student
 office: 127 Kerchof Hall
 phone: 
-email: ctl3az@virginia.edu
+email: ecz4wu@virginia.edu
 image:
-personal_page:
+personal_page: 
 
 
 ---

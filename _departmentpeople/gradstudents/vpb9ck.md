@@ -4,8 +4,8 @@ lastname: Bajaj
 name: Vishal
 general_position: gradstudent
 position: Graduate Student
-office: 121 Kerchof Hall
-phone: 434-982-2785
+office: 125 Kerchof Hall
+phone: 434-243-1174
 email: vpb9ck@virginia.edu
 image:
 personal_page:
