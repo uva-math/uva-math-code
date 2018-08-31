@@ -4,7 +4,7 @@ lastname: Bourdon
 name: Paul
 non-tt: true
 general_position: faculty
-position: Professor & Director of Lower Division Courses
+position: Professor & Director of Lower Division Courses, General Faculty
 office: 225 Kerchof Hall
 phone: 434-982-4939
 email: psb7p@virginia.edu

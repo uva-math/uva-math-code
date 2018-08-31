@@ -4,7 +4,7 @@ lastname: Holt
 name: Jeffrey
 general_position: faculty
 non-tt: true
-position: Professor
+position: Professor, General Faculty
 office: 112 Halsey Hall
 phone: 434-924-4927
 email: jeff@virginia.edu

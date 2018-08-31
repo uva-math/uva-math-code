@@ -9,6 +9,7 @@ phone:
 email: zmb9b@virginia.edu
 image: '__SITE_URL__/img/people/2017-fall/Zack Beamer.jpg'
 personal_page:
+published: false
 
 
 ---
