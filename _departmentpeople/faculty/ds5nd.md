@@ -3,6 +3,7 @@ UVA_id: ds5nd
 lastname: Sonkin
 name: Dmitriy
 general_position: faculty
+non-tt: true
 position: Assistant Professor, General Faculty
 office: 131 Kerchof Hall
 phone: 
