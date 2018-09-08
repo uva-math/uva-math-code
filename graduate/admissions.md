@@ -32,9 +32,9 @@ tooltips: true
 - Deadlines: [`http://graduate.as.virginia.edu/deadlines`](http://graduate.as.virginia.edu/deadlines)
 - FAQ: [`http://graduate.as.virginia.edu/frequently-asked-questions`](http://graduate.as.virginia.edu/frequently-asked-questions)
 
- <strong>Please note that we do not usually admit students for a Master&#39;s degree only; we admit students seeking a PhD</strong>.
-
 ## Criteria for Admission
+
+<strong>Please note that Department of Mathematics does not normally admit students seeking only a Masters degree; we are primarily a PhD program.</strong>.
 
 In making its decisions about admission and financial aid, the Department is first and foremost looking for students that we feel will flourish in our program. To determine if a student will be successful, the Department pays close attention to the overall undergraduate record, letters of recommendation, GRE scores (both on the general examinations and on the mathematics subject exam), and the student&#39;s personal statement.
 

@@ -55,6 +55,8 @@ Written under the supervision of the major advisor, the PhD dissertation must co
 
 The Master of Arts and Master of Science programs are normally completed within two years.
 
+**Please note that Department of Mathematics does not normally admit students seeking only a Masters degree; we are primarily a PhD program.**
+
 ### Requirements for a Master of Arts
 
 Successful completion of 30 hours of approved courses at the 5000 level or above, which must include MATH 5310, 5330, 5651, 5652, or higher-level substitutes. Students may take approved courses from other departments. With permission, a Masters thesis can be substituted for up to six of the course hours.&nbsp;In addition, the student must pass a master&rsquo;s exam: either one of the General Exams as described in our PhD program requirements, or an ad hoc exam approved by the graduate committee.
