@@ -14,6 +14,14 @@ nav_weight: 1
 - ##### [Requirements]({{ site.url }}/undergraduate/docs/Requirements for declaring a Minor in Mathematics (1) (1) (1)_0.pdf) for Obtaining a Minor in Mathematics
 - ##### [Declaration of math minor form]({{ site.url }}/undergraduate/docs/S18-Math Minor Declaration Form.pdf)
 
+<h1 class="mb-3 mt-3">To Declare a Major/Minor:</h1>
+- {% include person_info.html UVA_id="aa4cr" %}
+- {% include person_info.html UVA_id="pa8e" %}
+- {% include person_info.html UVA_id="brh5c" %}
+- {% include person_info.html UVA_id="iwh" %}
+- {% include person_info.html UVA_id="des5e" %}
+
+
 ---
 
 **Note:** If you would like to have a course count toward your major/minor, but it is not on the list of approved courses, please take the following fillable form to your advisor for approval and a signature:&nbsp;<a href="{{ site.url }}/undergraduate/docs/exception(fillable)_1.pdf">Course Exception for a Major/Minor in Mathematics</a>
