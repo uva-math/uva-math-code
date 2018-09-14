@@ -104,7 +104,7 @@ Put the image file (`jpg` or `png`, any size/dimensions, but square and up to `6
 If you'd like, you can add office hours to be displayed on the website.
 They will be shown in the list of people and on the person's page at the department website.
 However, this information should be kept up to date, and so office
-hours should not be added for all facutly.
+hours should probably not be added for all facutly.
 
 <span class="nonupper-h5">areas</span>
 
