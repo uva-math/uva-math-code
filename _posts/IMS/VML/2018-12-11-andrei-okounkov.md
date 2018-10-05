@@ -8,14 +8,15 @@ permalink: /ims/lectures/andrei-okounkov/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
-image: __SITE_URL__/img/IMS/Okounkov.jpg
+image: __SITE_URL__/img/IMS/Okounkov_poster3.png
 image-alt: Andrei Okounkov
-# image-address: __SITE_URL__/img/IMS/
+image-address: __SITE_URL__/img/IMS/Okounkov_poster3.pdf
+image-tall: true
 more-text: Abstract
 nav_parent: IMS
 ---
 
-<h5 class="mt-3 mb-4"><a href="http://www.math.columbia.edu/~okounkov/">Andrei Okounkov</a> (Columbia University)</h5>
+<h5 class="mt-1 mb-4"><a href="http://www.math.columbia.edu/~okounkov/">Andrei Okounkov</a> (Columbia University)</h5>
 
 ### New worlds for Lie theory
 
