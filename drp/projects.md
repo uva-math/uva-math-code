@@ -47,7 +47,7 @@ permalink: /drp/projects/
   - Mentor: Jiajun Yan
   
 + Brownian Motion and its Applications
-  - Text: Brownian Motion by Peter Mo ̈rters and Yuval Peres
+  - Text: Brownian Motion by Peter Morters and Yuval Peres
   - Mentee: Xinru Cheng
   - Mentor: Ethan Zell
   
