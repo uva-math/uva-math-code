@@ -46,4 +46,9 @@ permalink: /drp/projects/
   - Mentee: Andrew Zazzera
   - Mentor: Jiajun Yan
   
++ Brownian Motion and its Applications
+  - Text: Brownian Motion by Peter Morters and Yuval Peres
+  - Mentee: Xinru Cheng
+  - Mentor: Ethan Zell
+  
 A great place to see more DRP projects is at [other DRP program pages]({{site.url}}/drp/otherdrp/).
