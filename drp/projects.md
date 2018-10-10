@@ -29,7 +29,7 @@ permalink: /drp/projects/
   - Mentee: Yifei Yang
   - Mentor: Joseph Eisner
 
-+ Wirtinger presentations of fundamental groups of knot compliments 
++ Wirtinger presentations of fundamental groups of knot complements 
   - Text: Algebraic Topology, Hatcher
   - Mentee: Zach Baugher
   - Mentor: Rostislav Akhmechet
@@ -37,11 +37,11 @@ permalink: /drp/projects/
 + Theorem: Let G be a finitely generated group with two different
   finite generating sets S and S'. Then G with the word metric induced
   by S is quasi-isometric to G with the word metric induced by S'
-  - Text: 
+  - Text: Office Hours with a Geometric Group Theorist, Clay and Margalit
   - Mentee: Sam Dulin
   - Mentor: Ian Runnels
 
-+ Constructing hyperoblic structures on genus surfaces
++ Constructing hyperbolic structures on closed surfaces (of genus g)
   - Text: Low-dimensional geometry: from euclidean surfaces to hyperbolic knots, Bonahon
   - Mentee: Andrew Zazzera
   - Mentor: Jiajun Yan
