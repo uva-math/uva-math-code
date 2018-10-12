@@ -9,7 +9,7 @@ permalink: /drp/projects/
 ### Fall 2018
   
 + Support vector machines and kernel methods    
-  - Text: Foundation of Machine Learning by Mohri, Rostamizadeh, and Talwalkar
+  - Text: Foundations of Machine Learning by Mohri, Rostamizadeh, and Talwalkar
   - Mentee: Dylan Hunt
   - Mentor: George Seelinger
 
@@ -50,5 +50,17 @@ permalink: /drp/projects/
   - Text: Brownian Motion by Peter Morters and Yuval Peres
   - Mentee: Xinru Cheng
   - Mentor: Ethan Zell
+  
+### Summer 2018
+
++ An Introduction to Computability Theory and 'Universal Programs'
+  - Text: Computability: An introduction to recursive function theory, N.J. Cutland
+  - Mentee: Parker Lazear
+  - Mentor: John Harnois 
+  
++ A Counterintuitive Subset of the Baer Space
+  - Text: Notes On Set Theory, Yiannis N. Moschovakis
+  - Mentee: Henry Carscadden
+  - Mentor: John Harnois 
   
 A great place to see more DRP projects is at [other DRP program pages]({{site.url}}/drp/otherdrp/).
