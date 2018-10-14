@@ -24,7 +24,7 @@ nav_parent: IMS
 - Lecture 2 - October 23, 5-6pm, Nau 101
 - Lecture 3 - October 24, 5-6pm, Nau 101
 
-Preceded by the <a href="{{site.url}}/ims/workshop-fall-2018/">Workshop on Representation Theory, Combinatorics, and Geometry</a>
+Preceded by the <a href="{{site.url}}/ims/workshop-fall-2018/schedule/">Workshop on Representation Theory, Combinatorics, and Geometry</a>
 (October&nbsp;19-21)
 
 <!--more-->
