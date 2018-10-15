@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Andrei Okounkov - Virginia Mathematics Lectures - October 22-24, 2018
-date: 2018-07-22 00:30:00
+# date: 2018-07-22 00:30:00
+date: 2018-10-12 00:30:00
 event-date: 2018-10-22 17:30:00
 multi-day-event: true
 permalink: /ims/lectures/andrei-okounkov/
