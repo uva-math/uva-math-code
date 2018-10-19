@@ -18,7 +18,7 @@ The workshop
 precedes the <a href="{{site.url}}/ims/lectures/andrei-okounkov/">Virginia Mathematics Lectures by Andrei Okounkov</a>
 (October 22-24, 2018).
 
-[Workshop schedule]({{site.url}}/ims/workshop-fall-2018/schedule/)
+[Workshop schedule]({{site.url}}/ims/workshop-fall-2018/schedule/) &bull; (<a href="{{site.url}}/IMS/okounkov_workshop_fall_2018/Schedule.pdf">PDF</a>)
 
 Organizers:&nbsp;&nbsp;
         {% include person_info_email_only.html UVA_id="jlm6cj" %}&nbsp;&nbsp;
