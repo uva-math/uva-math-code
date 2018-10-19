@@ -20,6 +20,8 @@ precedes the <a href="{{site.url}}/ims/lectures/andrei-okounkov/">Virginia Mathe
 
 [Workshop schedule]({{site.url}}/ims/workshop-fall-2018/schedule/) &bull; (<a href="{{site.url}}/IMS/okounkov_workshop_fall_2018/Schedule.pdf">PDF</a>)
 
+All talks are in Wilson Hall 301
+
 Organizers:&nbsp;&nbsp;
         {% include person_info_email_only.html UVA_id="jlm6cj" %}&nbsp;&nbsp;
         {% include person_info_email_only.html UVA_id="lap5r" %}&nbsp;&nbsp;
