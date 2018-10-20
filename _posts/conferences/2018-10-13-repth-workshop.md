@@ -5,7 +5,7 @@ date: 2018-10-13 08:00:01
 event-date: 2018-10-19 12:00:00
 multi-day-event: true
 comments: false
-categories: news events conferences major-news
+categories: news events conferences
 published: true
 image: __SITE_URL__/img/IMS/Okounkov_new_worlds_wide_workshop.jpg
 image-alt: "New worlds for Lie Theory"
