@@ -7,7 +7,7 @@ event-date: 2018-10-22 17:30:00
 multi-day-event: true
 permalink: /ims/lectures/andrei-okounkov/
 comments: false
-categories: news virginia-mathematics-lectures ims events major-news
+categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Okounkov_poster3.png
 image-alt: Andrei Okounkov
