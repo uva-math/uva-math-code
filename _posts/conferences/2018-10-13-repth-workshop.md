@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Workshop on Representation Theory, Combinatorics, and Geometry"
-date: 2018-10-13 08:00:01
+date: 2018-10-11 08:00:01
 event-date: 2018-10-19 12:00:00
 multi-day-event: true
 comments: false
