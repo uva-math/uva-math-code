@@ -44,7 +44,7 @@ Assistant Professor (non tenure-track), University of Delaware <br>
 
 - **Scott Atkinson**<br>
 Postdoctoral Appointment, Vanderbilt University<br>
-*Convex sets associated to C*-algebras*<br>
+*Convex sets associated to $C^*$-algebras*<br>
 (Advisor: David Sherman)
 
 - **Alessandro De Stefani**<br>
