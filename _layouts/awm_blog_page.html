@@ -9,5 +9,6 @@ layout: awm_page
     <li><a href="{{ post.url }}">{{ post.title}}</a>
     <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
     </li>
+{% endif %}
 {% endfor %}
 </ul>
