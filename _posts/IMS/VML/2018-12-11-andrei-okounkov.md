@@ -1,12 +1,13 @@
 ---
 layout: post
 title: Andrei Okounkov - Virginia Mathematics Lectures - October 22-24, 2018
-date: 2018-07-22 00:30:00
+# date: 2018-07-22 00:30:00
+date: 2018-10-12 00:30:00
 event-date: 2018-10-22 17:30:00
 multi-day-event: true
 permalink: /ims/lectures/andrei-okounkov/
 comments: false
-categories: news virginia-mathematics-lectures ims events major-news
+categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Okounkov_poster3.png
 image-alt: Andrei Okounkov
@@ -24,7 +25,7 @@ nav_parent: IMS
 - Lecture 2 - October 23, 5-6pm, Nau 101
 - Lecture 3 - October 24, 5-6pm, Nau 101
 
-Preceded by the <a href="{{site.url}}/ims/workshop-fall-2018/">Workshop on Representation Theory, Combinatorics, and Geometry</a>
+Preceded by the <a href="{{site.url}}/ims/workshop-fall-2018/schedule/">Workshop on Representation Theory, Combinatorics, and Geometry</a>
 (October&nbsp;19-21)
 
 <!--more-->
