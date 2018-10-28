@@ -5,6 +5,7 @@ layout: awm_page
 {{ content }}
 <ul class="awm-post">
 {% for post in site.posts %}
+{% if post.categories contains "awm" %}
     <li><a href="{{ post.url }}">{{ post.title}}</a>
     <span class="postDate">{{ post.date | date: "%b %-d, %Y" }}</span>
     </li>
