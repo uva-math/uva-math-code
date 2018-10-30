@@ -10,7 +10,8 @@ branches:
 notifications:
   email:
     recipients:
-      - ghseeli@gmail.com
+      - lenia.petrov@gmail.com
+      - raj3e@virginia.edu
     on_success: always
     on_failure: always
 
