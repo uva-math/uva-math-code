@@ -10,4 +10,7 @@ image-alt: Panel Guests
 ---
 Joined together with the Math Club, students learned about various opportunities and paths they can take related to math. Whether you are interested in going to grad school or have an interest in industrial work, the panel presenters had many tips to help you start looking for internships. Here is a brief description of what was discussed:
 
+Shannon, 4th year Math Major with Finance concentrentation
+  * She had the opportunity
+
 By Sandra Paredes
