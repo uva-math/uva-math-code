@@ -5,7 +5,7 @@ date: 2018-11-14 11:00:00
 comments: false
 categories: awm
 published: true
-image: ../../img/awm/panel_awm_2018_11_14.jpg
+image: __SITE_URL__/img/awm/panel_awm_2018_11_14.jpg
 image-alt: Panel Guests
 ---
 Joined together with the Math Club, students learned about various opportunities and paths they can take related to math. Whether you are interested in going to graduate school or have an interest in industrial work, the panel guests had many tips to help you start looking for internships. Here is a brief description of what they discussed:
@@ -32,7 +32,7 @@ Tianshu, Math major
  * Although finding an internship was hard, she notes that she learned a lot from her internships which included learning what she was really interested in.
  * **Tip:** If you’re thinking about quantitative internships, try to take Stats and CS classes because they will be helpful in internships and make you stand out.
  
- ![Panel Guests](/../../img/awm/panel_2018_11_14.jpg)
+ ![Panel Guests]({{site.url}}/img/awm/panel_2018_11_14.JPG)
  
  Follow us on [FB](https://www.facebook.com/AWMatUva) to stay updated on AWM events and posts!
  
