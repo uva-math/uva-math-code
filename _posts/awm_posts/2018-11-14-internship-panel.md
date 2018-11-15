@@ -32,7 +32,7 @@ Tianshu, Math major
  * Although finding an internship was hard, she notes that she learned a lot from her internships which included learning what she was really interested in.
  * **Tip:** If you’re thinking about quantitative internships, try to take Stats and CS classes because they will be helpful in internships and make you stand out.
  
-<img src="{{site.url}}/img/awm/panel_2018_11_14.jpg" alt="Panel Guests" style="max-width:70%">
+<img src="{{site.url}}/img/awm/panel_awm_2018_11_14_1.jpg" alt="Panel Guests" style="max-width:70%">
  
 Follow us on [FB](https://www.facebook.com/AWMatUva) to stay updated on AWM events and posts!
  
