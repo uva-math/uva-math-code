@@ -8,9 +8,9 @@ published: true
 image: __SITE_URL__/img/awm/panel_awm_2018_11_14.jpg
 image-alt: Panel Guests
 ---
-Joined together with the Math Club, students learned about various opportunities and paths they can take related to math. Whether you are interested in going to graduate school or have an interest in industrial work, the panel guests had many tips to help you start looking for internships. Here is a brief description of what they discussed:
+Joined together with the Math Club, students learned about various opportunities and paths they can take related to math. Whether you are interested in going to graduate school or have an interest in industrial work, the panel guests had many tips to help you start looking for internships.<!--more--> Here is a brief description of what they discussed:
 
-Shannon, 4th year Math Major with Finance concentrentation
+Shannon, 4th year Math Major with Finance concentration
   * She had the opportunity to intern for John Hancock in the corporate finance division
   * During her internship, she worked with financial models and had many projects involving Macroeconomics and Excel
   * She believes her math background have her an advantage in her internship since she was familiar with Stochastic Processes
@@ -32,7 +32,7 @@ Tianshu, Math major
  * Although finding an internship was hard, she notes that she learned a lot from her internships which included learning what she was really interested in.
  * **Tip:** If you’re thinking about quantitative internships, try to take Stats and CS classes because they will be helpful in internships and make you stand out.
  
-<img src="{{site.url}}/img/awm/panel_2018_11_14.jpg" alt="Panel Guests" style="max-width:70%;height:auto;width:auto;" />
+<img src="{{site.url}}/img/awm/panel_2018_11_14.jpg" alt="Panel Guests" style="max-width:70%">
  
 Follow us on [FB](https://www.facebook.com/AWMatUva) to stay updated on AWM events and posts!
  
