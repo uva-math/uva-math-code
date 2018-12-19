@@ -8,7 +8,7 @@ position: Professor
 # phone: 
 # office_hours: 
 email: cmr3hk@virginia.edu
-image: __SITE_URL__/img/people/Reidys.jpg
+image: __SITE_URL__/img/people/Reidys.jpeg
 # personal_page: 
 
 areas:
