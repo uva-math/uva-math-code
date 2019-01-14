@@ -21,6 +21,13 @@ Below are old exams and study materials for each of the subfields.
 
 ## Algebra
 
+- [August 2018]({{site.url}}/graduate/exams/algebra/2018-08.pdf)
+- [January 2018]({{site.url}}/graduate/exams/algebra/2018-01.pdf)
+- [August 2017]({{site.url}}/graduate/exams/algebra/2017-08.pdf)
+- [January 2017]({{site.url}}/graduate/exams/algebra/2017-01.pdf)
+- [August 2016]({{site.url}}/graduate/exams/algebra/2016-08.pdf)
+- [January 2016]({{site.url}}/graduate/exams/algebra/2016-01.pdf)
+- [August 2015]({{site.url}}/graduate/exams/algebra/2015-08.pdf)
 - [August 2014]({{site.url}}/graduate/exams/algebra/2014-08.pdf)
 - [January 2014]({{site.url}}/graduate/exams/algebra/2014-01.pdf)
 - [August 2013]({{site.url}}/graduate/exams/algebra/2013-08.pdf)
