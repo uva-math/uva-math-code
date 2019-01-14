@@ -20,14 +20,14 @@ tooltips: true
 {% include person_info_OH.html UVA_id="jsr2pz" %}
 
 - ##### Transfer of Credit Advisors:<br>
-{% include person_info_OH.html UVA_id="hcg3m" %}<br><br class="hidden-sm-up">
-{% include person_info_OH.html UVA_id="iwh" %}
+{% include person_info_OH.html UVA_id="hcg3m" %}<!-- <br><br class="hidden-sm-up">
+{% include person_info_OH.html UVA_id="iwh" %} -->
 
 - ##### To Declare a Major/Minor:<br>
 {% include person_info_OH.html UVA_id="aa4cr" %}<br><br class="hidden-sm-up">
 {% include person_info_OH.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
 {% include person_info_OH.html UVA_id="brh5c" %}<br><br class="hidden-sm-up">
-{% include person_info_OH.html UVA_id="iwh" %}<br><br class="hidden-sm-up">
+<!-- {% include person_info_OH.html UVA_id="iwh" %}<br><br class="hidden-sm-up"> -->
 {% include person_info_OH.html UVA_id="des5e" %}
 
 - ##### Math Majors/Minors Administrative Assistant:<br>
