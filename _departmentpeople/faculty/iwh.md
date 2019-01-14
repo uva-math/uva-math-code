@@ -7,7 +7,7 @@ position: Professor
 office: 228 Kerchof Hall
 phone: 434-924-4933
 email: iwh@virginia.edu
-office_hours: "Mo 2-3, We 4-5"
+office_hours: "
 image: __SITE_URL__/img/people/Herbst.jpg
 personal_page: http://pi.math.virginia.edu/Faculty/Herbst/
 grad_general_areas:
