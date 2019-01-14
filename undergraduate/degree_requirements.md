@@ -18,7 +18,6 @@ nav_weight: 1
 - {% include person_info_OH.html UVA_id="aa4cr" %}
 - {% include person_info_OH.html UVA_id="pa8e" %}
 - {% include person_info_OH.html UVA_id="brh5c" %}
-- {% include person_info_OH.html UVA_id="iwh" %}
 - {% include person_info_OH.html UVA_id="des5e" %}
 
 
