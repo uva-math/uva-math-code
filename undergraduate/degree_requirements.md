@@ -17,7 +17,6 @@ nav_weight: 1
 <h1 class="mb-3 mt-3">To Declare a Major/Minor:</h1>
 - {% include person_info_OH.html UVA_id="aa4cr" %}
 - {% include person_info_OH.html UVA_id="pa8e" %}
-- {% include person_info_OH.html UVA_id="hcg3m" %}
 - {% include person_info_OH.html UVA_id="brh5c" %}
 - {% include person_info_OH.html UVA_id="des5e" %}
 
