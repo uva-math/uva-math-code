@@ -19,4 +19,4 @@ For a more detailed schedule, and to register (by February 25th) please follow [
 
 These conference are part of <a title="https://sites.google.com/site/awmmath/programs/kovalevsky-days" href="https://sites.google.com/site/awmmath/programs/kovalevsky-days">series</a> of the Association of Women in Mathematics (AWM). For more than twenty years Sonia Kovalevsky Days have been organized and sponsored by AWM and held at colleges and universities throughout the country. Sonia Kovalevsky Days (SK Days) consist of a program of workshops, talks, and problem-solving competitions for female high school and middle school students and their teachers, both women and men.
 
-<img alt="Sofia Kovalevskaya" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Stamp_of_USSR_1635g.jpg/337px-Stamp_of_USSR_1635g.jpg">
+<!-- <img alt="Sofia Kovalevskaya" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Stamp_of_USSR_1635g.jpg/337px-Stamp_of_USSR_1635g.jpg"> -->
