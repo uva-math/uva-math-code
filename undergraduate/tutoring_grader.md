@@ -11,8 +11,8 @@ nav_weight: 12
 <p>
   If you need help with a math course, see the <a href="http://people.virginia.edu/%7Epsb7p/MTCsch.html">Math Tutoring Center</a> schedule.
 </p>
-<br />
-<a href="{{ site.url }}/undergraduate/docs/TutoringApplication_0_0_0 (1).docx">Tutoring Application</a>
+
+<p><a href="{{ site.url }}/undergraduate/docs/TutoringApplication_0_0_0 (1).docx">Tutoring Application</a></p>
 
 <p>If you feel a private tutor would be beneficial, please call the Department (434-924-4919) or email <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a>.</p>
 ---
