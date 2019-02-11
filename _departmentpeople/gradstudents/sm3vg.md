@@ -8,7 +8,7 @@ office: 110 Kerchof Hall
 phone: 434-924-4947
 email: sm3vg@virginia.edu
 image:
-personal_page: http://people.virginia.edu/~sm3vg
+personal_page: https://people.virginia.edu/~sm3vg/Sarasij/Home.html
 
 
 ---
