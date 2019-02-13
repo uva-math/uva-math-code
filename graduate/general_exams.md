@@ -21,7 +21,7 @@ Below are old exams and study materials for each of the subfields.
 
 ## Algebra
 
-- [January 2019]({{site.url}}/graduate/exams/algebra/2018-09.pdf)
+- [January 2019]({{site.url}}/graduate/exams/algebra/2019-01.pdf)
 - [August 2018]({{site.url}}/graduate/exams/algebra/2018-08.pdf)
 - [January 2018]({{site.url}}/graduate/exams/algebra/2018-01.pdf)
 - [August 2017]({{site.url}}/graduate/exams/algebra/2017-08.pdf)
