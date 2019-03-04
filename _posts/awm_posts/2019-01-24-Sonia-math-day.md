@@ -2,7 +2,7 @@
 layout: post
 title: "Sonia Kovalevsky Math Day"
 comments: false
-categories: awm news events major-news
+categories: awm news events
 event-date: 2019-03-02 09:30:00
 published: true
 image: https://upload.wikimedia.org/wikipedia/commons/f/f6/Sofja_Wassiljewna_Kowalewskaja_1.jpg
