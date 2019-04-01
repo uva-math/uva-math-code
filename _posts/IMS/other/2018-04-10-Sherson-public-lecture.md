@@ -23,7 +23,7 @@ entitled
 
 will be given on **April 19 at 7:00pm in Clark 108**
 
-The event is cosponsored by the [IMS](http://math.virginia.edu/ims/about/) and Departments of [Mathematics](http://math.virginia.edu/) and [Physics](http://www.phys.virginia.edu)
+The event is cosponsored by the [IMS](https://math.virginia.edu/ims/about/) and Departments of [Mathematics](https://math.virginia.edu/) and [Physics](http://www.phys.virginia.edu)
 
 <!--more-->
 

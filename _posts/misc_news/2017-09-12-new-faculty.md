@@ -9,8 +9,8 @@ more-text: New Faculty Descriptions
 ---
 
 We are excited to announce our new faculty: Assistant Professor
-[Benjamin Hayes](http://math.virginia.edu/people/brh5c/), Whyburn Instructors [Prasit Bhattacharya](http://math.virginia.edu/people/pb9wh/) and [Liron
-Speyer](http://math.virginia.edu/people/ls2zz/), and Postdoctoral Fellow [Vivek Mukundan](http://math.virginia.edu/people/vm6y/).
+[Benjamin Hayes](https://math.virginia.edu/people/brh5c/), Whyburn Instructors [Prasit Bhattacharya](https://math.virginia.edu/people/pb9wh/) and [Liron
+Speyer](https://math.virginia.edu/people/ls2zz/), and Postdoctoral Fellow [Vivek Mukundan](https://math.virginia.edu/people/vm6y/).
 
 [All Arts and Sciences New Faculty (PDF)](http://as.virginia.edu/sites/as.virginia.edu/files/resources/uva_as_newfacultybooklet_2017-2018.pdf)
 
