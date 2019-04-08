@@ -4,7 +4,7 @@ title: "Undergraduate thesis defense: Ben Keigwin"
 event-date: 2019-04-08 14:00:00
 comments: false
 categories: news events
-published: true
+published: false
 # hide-this-item: true
 ---
 
