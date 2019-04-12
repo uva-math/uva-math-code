@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Thesis defense: Brian Thomas"
-event-date: 2019-04-22 16:45:00
+event-date: 2019-04-15 13:30:00
 comments: false
 categories: news events
 published: true
