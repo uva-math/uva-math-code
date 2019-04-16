@@ -8,7 +8,7 @@ published: true
 # hide-this-item: true
 ---
 
-**Yichen Ma** will defend the undergraduate thesis on Monday, April 22. 
+**Yichen Ma** will defend the undergraduate thesis on Friday, April 19. 
 The title is
 
 "_Sofic approximations of groups_".
