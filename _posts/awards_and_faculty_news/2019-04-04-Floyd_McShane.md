@@ -2,7 +2,7 @@
 layout: post
 title: 2019 Undergraduate Award Winners
 comments: false
-categories: news awards
+categories: news awards major-news
 published: true
 image: __SITE_URL__/img/news_events/academical_village_amphitheater_aerial_ss_01.jpg.png
 image-alt: Academical village
