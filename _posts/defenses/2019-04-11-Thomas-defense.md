@@ -5,7 +5,7 @@ event-date: 2019-04-15 13:30:00
 comments: false
 categories: news events
 published: true
-# hide-this-item: true
+hide-this-item: true
 ---
 
 **Brian Thomas** will defend the Ph.D. thesis on Monday, April 15. 
