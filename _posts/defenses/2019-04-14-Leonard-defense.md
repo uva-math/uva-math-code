@@ -5,7 +5,7 @@ event-date: 2019-04-17 13:30:00
 comments: false
 categories: news events
 published: true
-# hide-this-item: true
+hide-this-item: true
 ---
 
 **Chris Leonard** will defend the Ph.D. thesis on Wednesday, April 17. 
