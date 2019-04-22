@@ -2,7 +2,7 @@
 layout: post
 title: GTA Teaching awards
 comments: false
-categories: news awards major-news
+categories: news awards
 published: true
 ---
 
