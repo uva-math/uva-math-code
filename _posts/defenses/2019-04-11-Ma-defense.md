@@ -5,7 +5,7 @@ event-date: 2019-04-19 11:00:00
 comments: false
 categories: news events
 published: true
-# hide-this-item: true
+hide-this-item: true
 ---
 
 **Yichen Ma** will defend the undergraduate thesis on Friday, April 19. 

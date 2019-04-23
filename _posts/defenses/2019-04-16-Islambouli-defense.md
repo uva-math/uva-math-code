@@ -5,7 +5,7 @@ event-date: 2019-04-18 14:00:00
 comments: false
 categories: news events
 published: true
-# hide-this-item: true
+hide-this-item: true
 ---
 
 **Gabriel Islambouli** will defend the Ph.D. thesis on Thursday, April 18. 
