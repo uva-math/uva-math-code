@@ -5,7 +5,7 @@ event-date: 2019-04-22 16:45:00
 comments: false
 categories: news events
 published: true
-# hide-this-item: true
+hide-this-item: true
 ---
 
 **Ben Keigwin** will defend the undergraduate thesis on Monday, April 22. 
