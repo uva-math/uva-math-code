@@ -15,7 +15,7 @@ published: true
 <a href="{{site.url}}/img/news_events/MattGagne_DefensePoster.pdf">Poster (PDF)</a>
 
 - Date: Wednesday, April 24
-- Time: 1:00 pm 
+- Time: 1:30 pm 
 - Place: Gilmer 166
 
 Everyone is invited to attend.
