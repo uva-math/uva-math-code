@@ -5,7 +5,7 @@ event-date: 2019-04-24 13:00:00
 comments: false
 categories: news events
 published: true
-# hide-this-item: true
+hide-this-item: true
 ---
 
 **Matt Gagne** will defend the Ph.D. thesis on Wednesday, April 24. The title is
