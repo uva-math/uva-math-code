@@ -5,7 +5,7 @@ event-date: 2019-04-23 13:00:00
 comments: false
 categories: news events
 published: true
-# hide-this-item: true
+hide-this-item: true
 ---
 
 **Jim Phillips** will defend the Ph.D. thesis on Tuesday, April 23. 
