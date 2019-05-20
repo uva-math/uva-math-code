@@ -4,7 +4,7 @@ title: "Virginia Integrable Probability Summer School"
 event-date: 2019-05-27 09:00:00
 multi-day-event: true
 comments: false
-categories: news events conferences
+categories: news events conferences major-news
 published: true
 image: __SITE_URL__/img/news_events/color-vertex.jpg
 image-alt: Colored vertex model

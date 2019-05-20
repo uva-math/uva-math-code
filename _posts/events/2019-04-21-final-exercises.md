@@ -3,7 +3,7 @@ layout: post
 title: 2019 Mathematics Final Exercises Ceremony
 event-date: 2019-05-18 12:00:00
 comments: false
-categories: news events major-news
+categories: news events
 published: true
 image: __SITE_URL__/img/Final_Exercises.png
 image-alt: Final Exercises ceremony
