@@ -9,7 +9,7 @@ office: 321 Kerchof Hall
 phone: 434-924-4949
 email: krushkal@virginia.edu
 image: __SITE_URL__/img/people/Krushkal.jpg
-personal_page: http://people.virginia.edu/~vk6e/
+personal_page: https://uva.theopenscholar.com/slava-krushkal
 
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
