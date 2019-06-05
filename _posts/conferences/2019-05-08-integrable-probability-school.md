@@ -11,7 +11,7 @@ image-alt: Colored vertex model
 image-wide: true
 ---
 
-Department of Mathematics, University of Virginia organizes a two-week summer school in Integrable Probability. The aim of the school is to educate the participants in recent trends around Integrable Probability - a rapidly developing field at the interface of probability / mathematical physics / statistical physics on the one hand, and representation theory / integrable systems on the other.
+From May 27 to June 8, 2019, Department of Mathematics of University of Virginia organizes a two-week summer school in Integrable Probability. The aim of the school is to educate the participants in recent trends around Integrable Probability - a rapidly developing field at the interface of probability / mathematical physics / statistical physics on the one hand, and representation theory / integrable systems on the other.
 
 [School website](http://frg.int-prob.org/vipss2019/schedule/)
 
