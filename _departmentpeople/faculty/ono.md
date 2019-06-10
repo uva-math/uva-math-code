@@ -3,7 +3,7 @@ UVA_id: ono
 lastname: Ono
 name: Ken
 general_position: faculty
-position: Professor
+position: 'Thomas Jefferson Professor of Mathematics'
 office: Coming in Fall 2019
 # phone: 
 email: ono@mathcs.emory.edu
