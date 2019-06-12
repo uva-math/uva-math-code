@@ -6,6 +6,38 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Spring 2019
+
++ Gröbner bases and applications in characteristic p
+  - Text: Ideals, Varieties, and Algorithms: An Introduction to Computational Algebraic Geometry and Commutative Algebra, David A.Cox, Donal O'Shea, and John B. Little.
+  - Mentee: Abrar Majidi Idrissi
+  - Mentor: Huy Dang
+
++ Classification of the Simple Lie Algebras
+  - Text: Introduction to Lie Algebras, Erdmann and Wildon 
+  - Mentee: Hisham M Assana
+  - Mentor: Arun Kannan
+
++ The Geometry of Free Groups
+  - Text: Geometric Group Theory: An Introduction, Clara Loeh
+  - Mentee: Katherine Andrews
+  - Mentor: Ian Runnels
+
++ Hamiltonian ODEs: Deterministic and probabilistic studies
+  - Text: ODEs and Dynamical Systems, Gerald Teschl
+  - Mentee: Yunlu Li
+  - Mentor: Mouhamadou
+
++ The Yoneda Embedding and its Applications
+  - Text: Categories for the Working Computer Scientist, Barr and Wells
+  - Mentee: Joseph Snitzer
+  - Mentor: Chris Chung
+
++ Real Analysis and Probability Theory
+  - Text: Real Analysis, Folland
+  - Mentee: Chris Pufko
+  - Mentor: Ethan Zell
+
 ### Fall 2018
   
 + Support vector machines and kernel methods    
