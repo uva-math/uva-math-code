@@ -37,6 +37,16 @@ permalink: /drp/projects/
   - Text: Real Analysis, Folland
   - Mentee: Chris Pufko
   - Mentor: Ethan Zell
+  
++ Representation Theory of Finite Groups
+  - Text: Representations and Characters of Groups, James and Liebeck
+  - Mentee: Jonah Newman
+  - Mentor: Liron Speyer
+ 
++ Exploring Schottky Groups
+  - Text: Indra's Pearls: The Vision of Felix Klein, Mumford, Series, Wright 
+  - Mentee: Aaron Christian
+  - Mentor: Jiajun Yan
 
 ### Fall 2018
   
