@@ -8,7 +8,7 @@ office: Coming in Fall 2019
 # phone: 
 email: ono@mathcs.emory.edu
 image: __SITE_URL__/img/people/Ono-tn.jpg
-personal_page: http://www.mathcs.emory.edu/~ono/
+personal_page: https://uva.theopenscholar.com/ken-ono
 
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
