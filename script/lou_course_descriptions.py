@@ -4,7 +4,7 @@
 # (requires installing bs4 and lxml)
 # DO NOT FORGET TO UPDATE THE CURRENT SEMESTER for the script to work properly
 
-current_semester = "Spring 2019"
+current_semester = "Fall 2019"
 lou_url = "https://rabi.phys.virginia.edu/mySIS/CC2/Mathematics.html"
 
 from bs4 import BeautifulSoup
