@@ -28,7 +28,7 @@ undergraduate and graduate policies, etc. This can be updated by people in charg
 See [here]({{site.url}}/doc/ugg/) for details.
 
 - Dedicated static pages can be created within the website, for example,
-to host tutoring center information, etc. In this case, person(s) in charge would need to keep the information
+to host Collaborative Learning Center information, etc. In this case, person(s) in charge would need to keep the information
 up to date. This brings an advantage of uniform style of all official pages, and includes version control of the source as a bonus.
 
 Surely one can think of more examples and reasons why multiple people should edit the content on the website.

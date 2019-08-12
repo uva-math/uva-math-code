@@ -17,9 +17,9 @@ published: false
 
 ---
 
-## Math Tutoring Center
+## Math Collaborative Learning Center
 
-If you need help with a math course, the [Math Tutoring Center](http://people.virginia.edu/~psb7p/MTCsch.html) operates all 7 days of the week during the semester.
+If you need help with a math course, the [Math Collaborative Learning Center](http://people.virginia.edu/~psb7p/MCLCsch.html) operates all 7 days of the week during the semester.
 
 If you feel a private tutor would be beneficial, please call the Department (434-924-4919) or email [math-help@virginia.edu](mailto:math-help@virginia.edu).
 

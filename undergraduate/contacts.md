@@ -45,7 +45,7 @@ tooltips: true
 - ##### Ombudsman:<br>
 {% include person_info_OH.html UVA_id="pa8e" %}
 
-- ##### Tutoring Center:<br>
+- ##### Collaborative Learning Center:<br>
 {% include person_info_OH.html UVA_id="psb7p" %}
 
 - ##### Summer Session:<br>
