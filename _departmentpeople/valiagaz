@@ -1,0 +1,23 @@
+---
+UVA_id: eg4va
+lastname: Gazaki
+name: Evangelia
+general_position: faculty
+position: Assistant Professor
+office: 221 Kerchof Hall
+phone: 434-924-4930
+email: eg4va@virginia.edu
+image: 
+personal_page: http://people.virginia.edu/~eg4va/
+areas:
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+grad_general_areas:
+  - algebra
+grad_special_areas:
+  - Number Theory
+---
+
+##### Selected Publications
+- A finer Tate duality theorem for local Galois symbols, J. of Algebra **509**, No. 1 (2018), 233--284.
+- A filtration of CH_0 for an abelian variety, Comp. Math. **151**, No. 5 (2015), 532--560.
