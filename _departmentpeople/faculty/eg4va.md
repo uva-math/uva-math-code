@@ -8,7 +8,7 @@ office: 221 Kerchof Hall
 phone: 
 email: eg4va@virginia.edu
 image: 
-personal_page: "http://www-personal.umich.edu/~gazaki/research.html"
+personal_page: "http://www-personal.umich.edu/~gazaki/index.html"
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
