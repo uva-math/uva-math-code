@@ -7,7 +7,7 @@ position: Assistant Professor
 office: 221 Kerchof Hall
 phone: 
 email: eg4va@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2019-fall/Gazaki.jpg
 personal_page: "http://www-personal.umich.edu/~gazaki/index.html"
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
