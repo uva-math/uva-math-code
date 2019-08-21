@@ -15,7 +15,7 @@ areas:
 grad_general_areas:
   - algebra
 grad_special_areas:
-  - algebraic_geometry
+  - algeom
 ---
 
 ##### Selected Publications
