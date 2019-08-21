@@ -8,3 +8,4 @@ gem "jekyll-paginate"
 gem "html-proofer"
 gem 's3_website'
 gem 'jekyll-feed'
+gem 'kramdown-math-nil'
