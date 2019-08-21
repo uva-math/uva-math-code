@@ -9,6 +9,7 @@ phone: 434-924-1790
 email: ais6a@virginia.edu
 image: __SITE_URL__/img/people/Saenz.jpg
 personal_page: http://faculty.virginia.edu/saenz/
+published: false
 
 areas:
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics

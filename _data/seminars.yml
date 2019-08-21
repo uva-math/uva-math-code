@@ -12,7 +12,6 @@
   seminar_weight: 1
   regular_times: Thursdays at 3:45 in Monroe 122. Refreshments served at 3:15 in Ker 314 (Math Lounge)
   contact:
-    - UVA_id: tmk5a
     - UVA_id: lap5r
 
 - cal_number: '5'
@@ -81,7 +80,6 @@
     - UVA_id: hcg3m
     - UVA_id: tam7b
     - UVA_id: lap5r
-    - UVA_id: ais6a
 
 - cal_number: '8'
   name: Topology Seminar
@@ -109,8 +107,9 @@
     The Math Club is a students' space, and the CIO structure provides the Club with a managing board which helps plan and organize events.
 
   contact:
+    - UVA_id: eg4va
     - UVA_id: brh5c
-    - UVA_id: sm4cw
+    
 
 - cal_number: '12'
   name: Operator theory seminar
@@ -167,4 +166,3 @@
   contact:
     - UVA_id: hcg3m
     - UVA_id: lap5r
-    - UVA_id: ais6a
