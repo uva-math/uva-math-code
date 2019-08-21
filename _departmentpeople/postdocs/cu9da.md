@@ -3,7 +3,7 @@ UVA_id: cu9da
 lastname: Ure
 name: Charlotte
 general_position: postdoc
-position: Postdoctoral Fellow
+position: Research Associate
 office: 
 phone:
 email: cu9da@virginia.edu
