@@ -4,7 +4,7 @@ lastname: Braga
 name: Bruno
 general_position: postdoc
 position: Mary Ann Pitts Research Associate
-office: 
+office: 229 Kerchof Hall
 phone:
 email: bd7bp@virginia.edu
 image: 

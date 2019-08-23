@@ -4,7 +4,7 @@ lastname: Qi
 name: You
 general_position: faculty
 position: Assistant Professor
-office: 
+office: 305 Kerchof Hall
 phone: 
 email: yq2dw@virginia.edu
 image: 
