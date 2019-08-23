@@ -9,7 +9,8 @@ phone:
 email: cu9da@virginia.edu
 image: 
 personal_page: http://people.virginia.edu/~cu9da/
-areas: - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+areas: 
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 
 
