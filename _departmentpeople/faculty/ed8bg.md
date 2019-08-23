@@ -1,7 +1,7 @@
 ---
 UVA_id: ed8bg
-lastname: 
-name: 
+lastname: Dimou
+name: Evangelos
 general_position: faculty
 non-tt: true
 position: Assistant Professor, General Faculty
