@@ -12,8 +12,9 @@
   seminar_weight: 1
   regular_times: Thursdays at 3:45 in Monroe 122. Refreshments served at 3:15 in Ker 314 (Math Lounge)
   contact:
-    - UVA_id: lap5r
     - UVA_id: sm4cw
+    - UVA_id: lap5r
+    
 
 - cal_number: '5'
   name: Algebra Seminar
