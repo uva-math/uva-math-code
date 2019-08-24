@@ -9,6 +9,6 @@ phone: 434-982-2786
 email: avo2t@virginia.edu
 image:
 personal_page:
-
+published: false
 
 ---

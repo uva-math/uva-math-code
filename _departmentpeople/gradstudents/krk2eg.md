@@ -9,6 +9,6 @@ phone: 434-924-8777
 email: krk2eg@virginia.edu
 image: '__SITE_URL__/img/people/2017-fall/Kristina King.jpg'
 personal_page:
-
+published: false
 
 ---

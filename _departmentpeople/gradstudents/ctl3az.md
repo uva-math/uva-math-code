@@ -9,6 +9,6 @@ phone:
 email: ctl3az@virginia.edu
 image:
 personal_page:
-
+published: false
 
 ---
