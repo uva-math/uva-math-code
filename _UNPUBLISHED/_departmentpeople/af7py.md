@@ -13,6 +13,4 @@ published: false
 
 areas:
   - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
-
-published: false
 ---
