@@ -4,7 +4,7 @@ lastname: Tarighat
 name: Mojdeh
 general_position: gradstudent
 position: Graduate Student
-office: 
+office: 112 Kerchof Hall
 phone: 
 email: mt3cb@virginia.edu
 image:

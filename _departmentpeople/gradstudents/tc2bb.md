@@ -4,7 +4,7 @@ lastname: Carawan
 name: Tanner
 general_position: gradstudent
 position: Graduate Student
-office: 
+office: 401 Kerchof Hall
 phone: 
 email: tc2bb@virginia.edu
 image:
