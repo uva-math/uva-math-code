@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Sara Maloni awarded CAREER award by NSF
+title: Sara Maloni receives CAREER award by NSF
 comments: false
 categories: news awards major-news
 published: true
