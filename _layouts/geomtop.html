@@ -30,7 +30,7 @@
             {% assign sorted_pages = site.pages | sort: "nav_weight" %}
             {% for pg in sorted_pages %}
             {% if pg.geomtop_page == true %}
-                <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">{{pg.title}}</a>
+                <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">{%if pg.geomtop_act_page == true%}&nbsp;&nbsp;&nbsp;&nbsp;{%endif%}{{pg.title}}</a>
             {% endif %}
             {% endfor %}
         </div>
