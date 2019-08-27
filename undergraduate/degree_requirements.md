@@ -1,5 +1,5 @@
 ---
-title: Degree requirements
+title: Degree requirements and declaration
 layout: ug_page
 ug_policy: true
 permalink: /undergraduate/requirements/
