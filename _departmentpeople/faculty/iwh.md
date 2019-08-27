@@ -5,6 +5,7 @@ name: Ira
 general_position: faculty
 position: Professor and Associate Chair
 office: 228 Kerchof Hall
+office_hours: "Tuesday 2PM, Thursday 5PM"
 phone: 434-924-4933
 email: iwh@virginia.edu
 office_hours:
