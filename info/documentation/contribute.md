@@ -74,7 +74,7 @@ Suppose you want to edit a simple piece of
 information, e.g. correct a typo, or add your new publication (for adding/changing the picture resort to way number 0 above, or create a local fork of the website code,
 make changes there, and create a pull-request). Here are the steps:
 
-1. Go to your page such as [`{{site.url}}/people/aso9t/`]({{site.url}}/people/aso9t/),
+1. Go to your page such as [`{{site.url}}/people/lap5r/`]({{site.url}}/people/lap5r/),
 and click on the
 GitHub icon <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
 {% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank"><span class="fa fa-github-square fa-2x"></span></a> in the lower right corner.
