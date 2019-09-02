@@ -7,10 +7,14 @@ position: Whyburn Research Associate
 office: 229 Kerchof Hall
 phone:
 email: ayp6e@virginia.edu
-image: 
-personal_page:
+image: __SITE_URL__/img/people/2019-fall/Pun.jpg
+personal_page: https://annapunying.wixsite.com/math-uva
+grad_general_areas:
+  - algebra
+grad_special_areas:
+  - algeom
 areas:
-
-
+  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 ---

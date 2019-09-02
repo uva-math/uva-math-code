@@ -11,9 +11,9 @@ may apply. Applications are not limited to math majors. The evaluation
 of applications is performed by the graduate committee. The
 applications are judged on a holistic basis.
 
-[Mentee Application](https://docs.google.com/forms/d/e/1FAIpQLSfiH7EG1XgBx0-u0CYYCp9OmgOSAw0bgZuYQS5Gr0e0SElg7A/viewform?usp=sf_link)
+[Mentee Application](https://docs.google.com/forms/d/e/1FAIpQLScA-Gl4n0dAZMGmIPLxDfvychzjaxEz4m0spOI2wkZGVlE9QA/viewform?usp=sf_link)
 
-**Applications Due: Friday, January 25th, 2019 11:59 PM EST**
+**Applications Due: Thursday, September 5th, 2019 11:59 PM EST**
 
 <h2 class="mb-3">Mentor Application</h2>
 

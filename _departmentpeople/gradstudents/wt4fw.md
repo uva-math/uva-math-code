@@ -4,7 +4,7 @@ lastname: Tralle
 name: Wojciech
 general_position: gradstudent
 position: Graduate Student
-office: 
+office: 127 Kerchof Hall
 phone: 
 email: wt4fw@virginia.edu
 image:

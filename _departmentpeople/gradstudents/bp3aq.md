@@ -4,7 +4,7 @@ lastname: Pandey
 name: Badri Vishal
 general_position: gradstudent
 position: Graduate Student
-office: 
+office: 123 Kerchof Hall
 phone: 
 email: bp3aq@virginia.edu
 image:

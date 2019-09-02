@@ -12,7 +12,9 @@
   seminar_weight: 1
   regular_times: Thursdays at 3:45 in Monroe 122. Refreshments served at 3:15 in Ker 314 (Math Lounge)
   contact:
+    - UVA_id: sm4cw
     - UVA_id: lap5r
+    
 
 - cal_number: '5'
   name: Algebra Seminar
@@ -20,9 +22,9 @@
   webpage: 'http://pi.math.virginia.edu/algebra/'
   google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
   seminar_weight: 20
-  regular_times: Wednesdays and some Fridays, 3:30-4:30pm, Kerchof 317
+  regular_times: Wednesdays and some Fridays, 3:30-4:30pm, New Cabell 332
   contact:
-    - UVA_id: btw4e
+    - UVA_id: mve2x
 
 - cal_number: '1'
   name: Geometry Seminar
@@ -44,7 +46,7 @@
   webpage: 'http://pi.math.virginia.edu/diffeq/'
   google_cal_id: '5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com'
   seminar_weight: 40
-  regular_times: Tuesdays at 3:30
+  regular_times: Tuesdays at 3:30 in Monroe hall 118
   information: |
     Harmonic Analysis and PDE seminar features a mix of local speakers (graduate students and faculty) and visitors. The ideal topics live on the interface between the two fields; luckily, the interface has been steadily expanding.
   contact:
@@ -147,11 +149,10 @@
   published_in_nav: false
   google_cal_id: '8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com'
   seminar_weight: 9000
-  regular_times: Tuesdays at 3:30 in Monroe 114
+  regular_times: Tuesdays at 3:30 in Clark G004
   information: |
     The Galois-Grothendieck Seminar is an expository seminar about various aspects of Galois theory and arithmetic geometry. Each semester/year has a coherent program, with graduate students contributing many of the talks.
   contact:
-    - UVA_id: aso9t
     - UVA_id: asr3x
 
 - cal_number: '13'

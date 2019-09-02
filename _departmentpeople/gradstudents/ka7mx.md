@@ -4,7 +4,7 @@ lastname: Aik
 name: Kian Cheong
 general_position: gradstudent
 position: Graduate Student
-office: 
+office: 402 Kerchof Hall
 phone: 
 email: ka7mx@virginia.edu
 image:

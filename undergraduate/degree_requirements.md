@@ -1,5 +1,5 @@
 ---
-title: Degree requirements
+title: Degree requirements and declaration
 layout: ug_page
 ug_policy: true
 permalink: /undergraduate/requirements/
@@ -10,15 +10,17 @@ nav_weight: 1
 <h1 class="mb-3">Degree requirements</h1>
 
 - ##### [Requirements]({{ site.url }}/undergraduate/docs/2018-07-Update - changes to mathematics major.pdf) for Obtaining a Major in Mathematics
-- ##### [Declaration of math major form]({{ site.url }}/undergraduate/docs/2019-Declaration of Major form.pdf)
+- ##### [Declaration of math major form]({{ site.url }}/undergraduate/docs/F19_Declaration of Major form.pdf)
 - ##### [Requirements]({{ site.url }}/undergraduate/docs/Requirements for declaring a Minor in Mathematics (1) (1) (1)_0.pdf) for Obtaining a Minor in Mathematics
-- ##### [Declaration of math minor form]({{ site.url }}/undergraduate/docs/2019-Math Minor Declaration Form.pdf)
+- ##### [Declaration of math minor form]({{ site.url }}/undergraduate/docs/F19_Declaration of Minor form.pdf)
 
 <h1 class="mb-3 mt-3">To Declare a Major/Minor:</h1>
 - {% include person_info_OH.html UVA_id="aa4cr" %}
 - {% include person_info_OH.html UVA_id="pa8e" %}
-- {% include person_info_OH.html UVA_id="brh5c" %}
-- {% include person_info_OH.html UVA_id="des5e" %}
+- {% include person_info_OH.html UVA_id="zg7c" %}
+- {% include person_info_OH.html UVA_id="yqd3p" %}
+- {% include person_info_OH.html UVA_id="iwh" %}
+
 
 ---
 
