@@ -10,7 +10,7 @@ tooltips: true
 
 <h1 class="mb-4">Contacts (Fall 2017)</h1>
 
-- ##### Director of Undergraduate Studies (spring 2019):<br>
+- ##### Director of Undergraduate Studies:<br>
 {% include DUS.html UVA_id="hcg3m" %}
 
 - <h5>{% include course number=1210 code=false %} and {% include course number=1310 code=false %} Coordinator:</h5>
@@ -26,21 +26,22 @@ tooltips: true
 - ##### To Declare a Major/Minor:<br>
 {% include person_info_OH.html UVA_id="aa4cr" %}<br><br class="hidden-sm-up">
 {% include person_info_OH.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
-{% include person_info_OH.html UVA_id="brh5c" %}<br><br class="hidden-sm-up">
-<!-- {% include person_info_OH.html UVA_id="iwh" %}<br><br class="hidden-sm-up"> -->
-{% include person_info_OH.html UVA_id="des5e" %}
+{% include person_info_OH.html UVA_id="iwh" %}<br><br class="hidden-sm-up">
+{% include person_info_OH.html UVA_id="zg7c" %}<br><br class="hidden-sm-up">
+{% include person_info_OH.html UVA_id="yqd3p" %}
 
 - ##### Math Majors/Minors Administrative Assistant:<br>
 {% include person_info_OH.html UVA_id="aab8b" %}
 
 - ##### First Year Advisors:<br>
-{% include person_info_OH.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
-{% include person_info_OH.html UVA_id="fd4v" %}<br><br class="hidden-sm-up">
-{% include person_info_OH.html UVA_id="jf8dc" %}<br><br class="hidden-sm-up">
-{% include person_info_OH.html UVA_id="hcg3m" %}<br><br class="hidden-sm-up">
 {% include person_info_OH.html UVA_id="brh5c" %}<br><br class="hidden-sm-up">
-{% include person_info_OH.html UVA_id="jlm6cj" %}<br><br class="hidden-sm-up">
-{% include person_info_OH.html UVA_id="lap5r" %}
+{% include person_info_OH.html UVA_id="lap5r" %}<br><br class="hidden-sm-up">
+{% include person_info_OH.html UVA_id="yqd3p" %}<br><br class="hidden-sm-up">
+{% include person_info_OH.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
+{% include person_info_OH.html UVA_id="tmk5a" %}<br><br class="hidden-sm-up">
+{% include person_info_OH.html UVA_id="jjh2b" %}<br><br class="hidden-sm-up">
+{% include person_info_OH.html UVA_id="des5e" %}<br><br class="hidden-sm-up">
+{% include person_info_OH.html UVA_id="ww9c" %}
 
 - ##### Ombudsman:<br>
 {% include person_info_OH.html UVA_id="pa8e" %}
@@ -53,7 +54,8 @@ tooltips: true
 
 - ##### Math Club contacts:<br>
 {% include person_info_OH.html UVA_id="brh5c" %}<br><br class="hidden-sm-up">
-{% include person_info_OH.html UVA_id="sm4cw" %}
+{% include person_info_OH.html UVA_id="eg4va" %}
 
 - ##### Putnam contacts:<br>
-{% include person_info_OH.html UVA_id="jf8dc" %}
+{% include person_info_OH.html UVA_id="tmk5a" %}<br><br class="hidden-sm-up">
+{% include person_info_OH.html UVA_id="yq2dw" %}
