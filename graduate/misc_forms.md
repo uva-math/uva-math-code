@@ -9,7 +9,7 @@ nav_weight: 200
 
 <h1 class="mb-3">Graduate forms and links</h1>
 
-- For more about graduate life at the University, see [`http://gradstudies.virginia.edu/gradguide`](http://gradstudies.virginia.edu/gradguide)
+- For more about graduate life at the University, see [`https://gradstudies.virginia.edu/grad-guide`](https://gradstudies.virginia.edu/grad-guide)
 
 - [Information, forms, and checklist on thesis submission and graduation](http://graduate.as.virginia.edu/thesis-submission-and-graduation)
 
