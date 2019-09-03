@@ -12,3 +12,5 @@ nav_weight: 200
 - For more about graduate life at the University, see [`http://gradstudies.virginia.edu/gradguide`](http://gradstudies.virginia.edu/gradguide)
 
 - [Information, forms, and checklist on thesis submission and graduation](http://graduate.as.virginia.edu/thesis-submission-and-graduation)
+
+- PhD poster template &bull; ([ZIP source]({{site.url}}/graduate/docs/PosterTemplate.zip)) &bull; ([PDF]({{site.url}}/graduate/docs/PosterTemplate.pdf))
