@@ -8,7 +8,7 @@ nav_weight: 1
 tooltips: true
 ---
 
-<h1 class="mb-4">Contacts (Fall 2017)</h1>
+<h1 class="mb-4">Contacts (Fall 2019)</h1>
 
 - ##### Director of Undergraduate Studies:<br>
 {% include DUS.html UVA_id="hcg3m" %}
