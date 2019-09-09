@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Peter Sarnak - Virginia Mathematics Lectures - November 4-6, 2019
-event-date: 2019-04-15 16:00:00
+event-date: 2019-11-04 16:00:00
 multi-day-event: true
 permalink: /ims/lectures/peter-sarnak/
 comments: false
