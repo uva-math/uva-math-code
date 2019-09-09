@@ -3,7 +3,7 @@ layout: post
 title: "Lunch with Sherry Gong (UCLA)"
 date: 2019-09-04 10:00:00
 comments: false
-categories: awm
+categories: awm news
 published: true
 image: __SITE_URL__/img/awm/lunch_awm_2019_09_04.jpg
 image-alt: Lunch attendees
