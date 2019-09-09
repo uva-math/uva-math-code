@@ -2,6 +2,7 @@
 layout: post
 title: "Lunch with Sherry Gong (UCLA)"
 date: 2019-09-04 10:00:00
+event-date: date: 2019-09-04 10:00:00
 comments: false
 categories: awm news
 published: true
@@ -9,7 +10,11 @@ image: __SITE_URL__/img/awm/lunch_awm_2019_09_04.jpg
 image-alt: Lunch attendees
 ---
 
-This week, the AWM met with Sherry Gong, an Assitant Adjunct Professor at UCLA. Over sandwiches, we discussed with Sherry her educational 
+This week, the AWM met with Sherry Gong, an Assitant Adjunct Professor at UCLA. 
+
+<!--more-->
+
+Over sandwiches, we discussed with Sherry her educational 
 background, from Puerto Rico to to Harvard to MIT. We learned how she competed on both the US and Puerto Rico team in the International 
 Mathematical Olympiad, always as one of the strongest competitors, and how she went on to coach the US Women's team for the Girls' 
 Mathematical Olympiad in 2010. Sherry discussed how her personal areas of research (low dimensional topology, operator theory) in math have
