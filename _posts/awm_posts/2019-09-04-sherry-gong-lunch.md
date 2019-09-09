@@ -17,6 +17,8 @@ been so largely determined by the mentors she could find. Gong explained the imp
 graduate student, and how to go about securing a good mentor, which opened up to a general room discussion of the most aggressive/intense 
 moves people had made to try to secure a mentor. We rounded out the meeting by discussing the process of applying in the field, and how to 
 pick research projects, make connections, and send emails to secure your own chance of getting your CV considered.
+
+<img src="{{site.url}}/img/awm/lunch_awm_2019_09_04.jpg" alt="Lunch attendees" style="max-width:70%">
  
 Follow us on [FB](https://www.facebook.com/AWMatUva) to stay updated on AWM events and posts!
  
