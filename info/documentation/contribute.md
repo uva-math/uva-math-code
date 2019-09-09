@@ -28,7 +28,7 @@ undergraduate and graduate policies, etc. This can be updated by people in charg
 See [here]({{site.url}}/doc/ugg/) for details.
 
 - Dedicated static pages can be created within the website, for example,
-to host tutoring center information, etc. In this case, person(s) in charge would need to keep the information
+to host Collaborative Learning Center information, etc. In this case, person(s) in charge would need to keep the information
 up to date. This brings an advantage of uniform style of all official pages, and includes version control of the source as a bonus.
 
 Surely one can think of more examples and reasons why multiple people should edit the content on the website.
@@ -74,7 +74,7 @@ Suppose you want to edit a simple piece of
 information, e.g. correct a typo, or add your new publication (for adding/changing the picture resort to way number 0 above, or create a local fork of the website code,
 make changes there, and create a pull-request). Here are the steps:
 
-1. Go to your page such as [`{{site.url}}/people/aso9t/`]({{site.url}}/people/aso9t/),
+1. Go to your page such as [`{{site.url}}/people/lap5r/`]({{site.url}}/people/lap5r/),
 and click on the
 GitHub icon <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
 {% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank"><span class="fa fa-github-square fa-2x"></span></a> in the lower right corner.

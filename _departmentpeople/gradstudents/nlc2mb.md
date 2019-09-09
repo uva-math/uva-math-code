@@ -4,10 +4,10 @@ lastname: Collins
 name: Nicholas
 general_position: gradstudent
 position: Graduate Student
-office: 401 Kerchof Hall
+office: 114 Kerchof Hall
 phone: 434-924-8777
 email: nlc2mb@virginia.edu
-image:
+image: __SITE_URL__/img/people/2019-spring/collins.jpg
 personal_page:
 
 

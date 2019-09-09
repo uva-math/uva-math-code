@@ -2,7 +2,7 @@
 
 # IMPORTANT: shortname - has to match permalinks for the research area pages
 # h-name - this is how the title is displayed in <h1> on each page
-
+# geomtop-page - for adding link to geomtop group page
 
 -
   name: Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
@@ -13,6 +13,7 @@
   name: Geometry&nbsp;$$\cup$$&nbsp;Topology
   h-name: Geometry &cup; Topology
   shortname: geom_top
+  geomtop-page: true
 
 -
   name: Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras

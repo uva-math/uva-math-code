@@ -21,6 +21,14 @@ Below are old exams and study materials for each of the subfields.
 
 ## Algebra
 
+- [January 2019]({{site.url}}/graduate/exams/algebra/2019-01.pdf)
+- [August 2018]({{site.url}}/graduate/exams/algebra/2018-08.pdf)
+- [January 2018]({{site.url}}/graduate/exams/algebra/2018-01.pdf)
+- [August 2017]({{site.url}}/graduate/exams/algebra/2017-08.pdf)
+- [January 2017]({{site.url}}/graduate/exams/algebra/2017-01.pdf)
+- [August 2016]({{site.url}}/graduate/exams/algebra/2016-08.pdf)
+- [January 2016]({{site.url}}/graduate/exams/algebra/2016-01.pdf)
+- [August 2015]({{site.url}}/graduate/exams/algebra/2015-08.pdf)
 - [August 2014]({{site.url}}/graduate/exams/algebra/2014-08.pdf)
 - [January 2014]({{site.url}}/graduate/exams/algebra/2014-01.pdf)
 - [August 2013]({{site.url}}/graduate/exams/algebra/2013-08.pdf)
@@ -44,12 +52,14 @@ Below are old exams and study materials for each of the subfields.
 - [May 2003]({{site.url}}/graduate/exams/algebra/2003-05.pdf)
 - [Exams 1981-2002]({{site.url}}/graduate/exams/algebra/AlgGento02.pdf)
 
-Here is a [Review Guide]({{site.url}}/graduate/exams/algebra/Surveyto99.pdf) for generals through 1999. The content has not largely changed.
+Here is an updated [Review Guide]({{site.url}}/graduate/exams/algebra/CombinedPrep2018-AlgebraGeneral.pdf) for algebra general exams.
 
 ---
 
 ## Analysis
 
+- [August 2019, real part]({{site.url}}/graduate/exams/analysis/2019Aug_real.pdf)
+- [August 2017]({{site.url}}/graduate/exams/analysis/2017Aug.pdf)
 - [January 2017]({{site.url}}/graduate/exams/analysis/2017Jan.pdf)
 - [August 2016]({{site.url}}/graduate/exams/analysis/2016Aug.pdf)
 - [August 2015]({{site.url}}/graduate/exams/analysis/2015Aug.pdf)

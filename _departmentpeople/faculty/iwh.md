@@ -3,11 +3,11 @@ UVA_id: iwh
 lastname: Herbst
 name: Ira
 general_position: faculty
-position: Professor
+position: Professor and Associate Chair
 office: 228 Kerchof Hall
+office_hours: "Tuesday 2PM, Thursday 5PM"
 phone: 434-924-4933
 email: iwh@virginia.edu
-office_hours: "Mo 2-3, We 4-5"
 image: __SITE_URL__/img/people/Herbst.jpg
 personal_page: http://pi.math.virginia.edu/Faculty/Herbst/
 grad_general_areas:

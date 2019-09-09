@@ -10,10 +10,11 @@
   webpage: 'http://pi.math.virginia.edu/colloq/'
   google_cal_id: 'j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com'
   seminar_weight: 1
-  regular_times: Thursdays at 3:45 in Clark 102. Refreshments served at 3:15
+  regular_times: Thursdays at 3:45 in Monroe 122. Refreshments served at 3:15 in Ker 314 (Math Lounge)
   contact:
-    - UVA_id: bjp8w
+    - UVA_id: sm4cw
     - UVA_id: lap5r
+    
 
 - cal_number: '5'
   name: Algebra Seminar
@@ -21,9 +22,9 @@
   webpage: 'http://pi.math.virginia.edu/algebra/'
   google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
   seminar_weight: 20
-  regular_times: Wednesdays and some Fridays, 3:30-4:30pm, Monroe 114
+  regular_times: Wednesdays and some Fridays, 3:30-4:30pm, New Cabell 332
   contact:
-    - UVA_id: btw4e
+    - UVA_id: mve2x
 
 - cal_number: '1'
   name: Geometry Seminar
@@ -31,7 +32,7 @@
   webpage: 'http://pi.math.virginia.edu/geometry/'
   google_cal_id: '6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com'
   seminar_weight: 30
-  regular_times: Tuesdays at 2:00 in Kerchof 326
+  regular_times: Tuesdays at 2:00 in New Cabell 315
   information: |
     The Geometry Seminar talks usually focus on aspects of low-dimensional topology and geometry, including knot theory and categorification, Floer homology, 3- and 4-dimensional manifolds, and symplectic and contact topology. The lectures are often given by outside speakers, however UVa graduate students and faculty give talks as well.
   contact:
@@ -45,7 +46,7 @@
   webpage: 'http://pi.math.virginia.edu/diffeq/'
   google_cal_id: '5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com'
   seminar_weight: 40
-  regular_times: Tuesdays at 3:30
+  regular_times: Tuesdays at 3:30 in Monroe hall 118
   information: |
     Harmonic Analysis and PDE seminar features a mix of local speakers (graduate students and faculty) and visitors. The ideal topics live on the interface between the two fields; luckily, the interface has been steadily expanding.
   contact:
@@ -81,7 +82,6 @@
     - UVA_id: hcg3m
     - UVA_id: tam7b
     - UVA_id: lap5r
-    - UVA_id: ais6a
 
 - cal_number: '8'
   name: Topology Seminar
@@ -109,8 +109,9 @@
     The Math Club is a students' space, and the CIO structure provides the Club with a managing board which helps plan and organize events.
 
   contact:
+    - UVA_id: eg4va
     - UVA_id: brh5c
-    - UVA_id: sm4cw
+    
 
 - cal_number: '12'
   name: Operator theory seminar
@@ -148,11 +149,10 @@
   published_in_nav: false
   google_cal_id: '8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com'
   seminar_weight: 9000
-  regular_times: Tuesdays at 3:30 in Monroe 114
+  regular_times: Tuesdays at 3:30 in Clark G004
   information: |
     The Galois-Grothendieck Seminar is an expository seminar about various aspects of Galois theory and arithmetic geometry. Each semester/year has a coherent program, with graduate students contributing many of the talks.
   contact:
-    - UVA_id: aso9t
     - UVA_id: asr3x
 
 - cal_number: '13'
@@ -161,7 +161,7 @@
   published_in_nav: true
   google_cal_id: 'fj2uv2u9ea74h8b0gihm3iu73c@group.calendar.google.com'
   seminar_weight: 5
-  regular_times: Mondays 3:30-4:30pm in Ruffner Hall 127
+  regular_times: Mondays 3:30-4:30pm in New Cabell Hall 168
   information: | 
      Talks at the Analysis Commons seminar cover topics of broader interest to the analysis community at University of Virginia. This includes functional analysis and operator algebras, mathematical physics, harmonic analysis and PDEs, probability theory, and other research areas. Presentations at this seminar are accessible to beginning graduate students in analysis. This calendar also lists talks at other UVA Math seminars which may be of interest to general analysis audience.
   contact:
