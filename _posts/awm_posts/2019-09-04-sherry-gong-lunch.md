@@ -2,7 +2,7 @@
 layout: post
 title: "Lunch with Sherry Gong (UCLA)"
 date: 2019-09-04 10:00:00
-event-date: date: 2019-09-04 10:00:00
+event-date: 2019-09-04 10:00:00
 comments: false
 categories: awm news
 published: true
