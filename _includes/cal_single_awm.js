@@ -88,8 +88,6 @@
     {%else%}
 	var ffr = new Date('{{include.show_from}}'); //access historical data
 	var tto = new Date();
-	today.setDate(today.getDate() {%if include.days_back != null%}- {{include.days_back}}{%endif%});
-      // var tto = new Date('{{include.show_to}}');
     {%endif%}
     var request = [];
 
