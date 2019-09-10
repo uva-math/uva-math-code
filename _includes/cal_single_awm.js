@@ -201,7 +201,11 @@
 
                 if(document.getElementById('events') != null)
 		{
-			document.getElementById('events').appendChild(tr);
+      {%if include.current %}
+      document.getElementById('events').appendChild(tr);
+      {%else%}
+      document.getElementById('events').insertBefore(tr, document.getElementById('events').firstChild);
+      {%endif%}
 			tr.appendChild(tdl);
 			tr.appendChild(tdr);
 		}
