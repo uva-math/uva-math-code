@@ -8,7 +8,7 @@ office: 229 Kerchof Hall
 phone:
 email: bd7bp@virginia.edu
 image: 
-personal_page:
+personal_page: https://sites.google.com/site/demendoncabraga/
 areas:
 
 
