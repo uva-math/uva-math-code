@@ -2,17 +2,17 @@
 
 <h1 class="mt-2 mb-3">University of Virginia Math Seminars</h1>
 
-<h2 class="mt-4 mb-3">Upcoming talks</h2>
-
-{% include cal_main.js current="true" max_sem=15 max_from_cal=7 %}
-
-<hr>
-
 <h2 class="mt-2 mb-4">Google calendar</h2>
 
 <iframe frameborder="0" height="600" scrolling="no" src="https://calendar.google.com/calendar/embed?title=Seminars%20at%20Department%20of%20Mathematics%2C%20University%20of%20Virginia&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF{% for sem in site.data.seminars %}{% if sem.google_cal_id != null %}&amp;src={{ sem.google_cal_id | replace: '@', '%40'}}{% endif %}{% endfor %}&amp;ctz=America%2FNew_York" width="100%"></iframe>
 
 <hr />
+
+<h2 class="mt-4 mb-3">Upcoming talks</h2>
+
+{% include cal_main.js current="true" max_sem=15 max_from_cal=7 %}
+
+<hr>
 
 <h2 class="mt-2 mb-3">List of seminars</h2>
 
