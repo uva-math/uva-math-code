@@ -17,15 +17,9 @@ nav_parent: IMS
 
 <h5 class="mt-1 mb-4"><a href="https://www.math.ias.edu/people/faculty/sarnak">Peter Sarnak</a> (IAS)</h5>
 
-- Lecture 1 - "**Integral Quadratic Forms and Applications**"
-    
-    November 4, time and location TBA
-- Lecture 2 - "**Integer points on affine cubic surfaces**"
-    
-    November 5, time and location TBA
-- Lecture 3 - "**Applications of points on subvarieties of tori**"
-    
-    November 6, time and location TBA
+- Lecture 1 - "**Integral Quadratic Forms and Applications**". November 4, time and location TBA
+- Lecture 2 - "**Integer points on affine cubic surfaces**". November 5, time and location TBA
+- Lecture 3 - "**Applications of points on subvarieties of tori**". November 6, time and location TBA
 
 <!--more-->
 
