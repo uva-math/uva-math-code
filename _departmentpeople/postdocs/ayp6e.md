@@ -12,7 +12,7 @@ personal_page: https://annapunying.wixsite.com/math-uva
 grad_general_areas:
   - algebra
 grad_special_areas:
-  - algeom
+  - reptheory
 areas:
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
