@@ -2,7 +2,7 @@
 layout: post
 title: Upcoming mathematics competitions
 comments: false
-categories: news major-news
+categories: news
 published: true
 ---
 
