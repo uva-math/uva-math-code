@@ -3,7 +3,7 @@ layout: post
 title: "Mid-Atlantic Topology Seminar 2019"
 event-date: 2019-10-26 12:00:00
 comments: false
-categories: news events conferences major-news
+categories: news events conferences
 published: true
 image: __SITE_URL__/img/news_events/conf_topology_fall_2018.png
 image-alt: Mid-Atlantic Topology Seminar 2019
