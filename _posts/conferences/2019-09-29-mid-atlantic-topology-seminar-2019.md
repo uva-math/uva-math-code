@@ -45,15 +45,9 @@ in the environment of chromatic homotopy theory.
  
 11:00--12:00  Mona Merling (University of Pennsylvania)
 
-Title : Inverting operations in operads
- 
-Abstract :  We describe a variant of the Dwyer-Kan hammock localization that allows us to construct a localization
-for operads with respect to submonoids of one-ary operations.  The construction is functorial.  It associates to an 
-operad O and a submonoid of one-ary operations W, an operad LO and a canonical map O to LO which takes elements in W 
-to homotopy invertible operations.
-Furthermore, we give a functor from the category of O-algebras to the category of LO-algebras satisfying an appropriate 
-universal property.
-This is joint work with Irina Bobkova, Kate Ponto, Ulrike Tillmann and Sarah Yeakel.
+Title: TBA
+
+Abstract: TBA
  
 (lunch: 12-2)
  
@@ -69,6 +63,12 @@ variant. This is joint work with Jeremy Hahn.
  
 3:30—4:30  Maria Basterra (University of New Hampshire)
 
-Title: TBA
-
-Abstract: TBA
+Title : Inverting operations in operads
+ 
+Abstract :  We describe a variant of the Dwyer-Kan hammock localization that allows us to construct a localization
+for operads with respect to submonoids of one-ary operations.  The construction is functorial.  It associates to an 
+operad O and a submonoid of one-ary operations W, an operad LO and a canonical map O to LO which takes elements in W 
+to homotopy invertible operations.
+Furthermore, we give a functor from the category of O-algebras to the category of LO-algebras satisfying an appropriate 
+universal property.
+This is joint work with Irina Bobkova, Kate Ponto, Ulrike Tillmann and Sarah Yeakel.
