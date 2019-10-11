@@ -32,7 +32,9 @@ All talks will be held in Clark Hall 107.
 ##### Schedule
  
 9:30 – 10:30   W. Stephen Wilson (Johns Hopkins University)
+
 Title:  $v_n$ torsion free H-spaces
+
 Abstract:   For some years there have been $(k-1)$-connected irreducible H-spaces, $Y_k$, with no p-torsion 
 in homology or homotopy.  All p-torsion free H-spacesa are products of these spaces and they show up regularly
 in the literature.  Boardman and I have generalized theses spaces and theorems using $(k-1)$ connected H-spaces, 
@@ -42,13 +44,23 @@ in the environment of chromatic homotopy theory.
 (break: 10:30-11)
  
 11:00--12:00  Mona Merling (University of Pennsylvania)
-Title: TBA
-Abstract: TBA
+
+Title : Inverting operations in operads
+ 
+Abstract :  We describe a variant of the Dwyer-Kan hammock localization that allows us to construct a localization
+for operads with respect to submonoids of one-ary operations.  The construction is functorial.  It associates to an 
+operad O and a submonoid of one-ary operations W, an operad LO and a canonical map O to LO which takes elements in W 
+to homotopy invertible operations.
+Furthermore, we give a functor from the category of O-algebras to the category of LO-algebras satisfying an appropriate 
+universal property.
+This is joint work with Irina Bobkova, Kate Ponto, Ulrike Tillmann and Sarah Yeakel.
  
 (lunch: 12-2)
  
 2:00-3:00  Dylan Wilson (Harvard)
+
 Title: Real Hochschild homology and the norm of $F_2$.
+
 Abstract: We study a spectral sequence computing the homotopy fixed points of the $C_2$ action on the smash square
 of $HF_2$. As an application, we give another proof of the $C_2$-Segal conjecture as well as a stronger, 'quantitative' 
 variant. This is joint work with Jeremy Hahn.
@@ -56,5 +68,7 @@ variant. This is joint work with Jeremy Hahn.
 (break: 3-3:30)
  
 3:30—4:30  Maria Basterra (University of New Hampshire)
+
 Title: TBA
+
 Abstract: TBA
