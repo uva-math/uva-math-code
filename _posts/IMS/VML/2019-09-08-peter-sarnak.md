@@ -7,9 +7,9 @@ permalink: /ims/lectures/peter-sarnak/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
-image: __SITE_URL__/img/IMS/Sarnak.jpg
+image: __SITE_URL__/img/IMS/Sarnak-poster.jpg
 image-alt: Peter Sarnak
-# image-address: __SITE_URL__/img/IMS/
+image-address: __SITE_URL__/img/IMS/Sarnak-poster.pdf
 image-tall: true
 more-text: Abstracts
 nav_parent: IMS
