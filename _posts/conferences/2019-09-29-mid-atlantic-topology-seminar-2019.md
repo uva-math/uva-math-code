@@ -45,10 +45,13 @@ in the environment of chromatic homotopy theory.
  
 11:00--12:00  Mona Merling (University of Pennsylvania)
 
-Title: TBA
-
-Abstract: TBA
+Title: Spectral Mackey functors as multifunctors 
  
+Abstract: I will discuss a new perspective on spectral Mackey functors as multifunctors. The main application I will 
+talk about is the construction of a map from the suspension G-spectrum of a smooth G-manifold M to the equivariant 
+A-theory of M, whose fiber, on fixed points, exhibits a "tom Dieck style" splitting into stable h-cobordism spaces.  
+This is joint work with Cary Malkiewich.
+
 (lunch: 12-2)
  
 2:00-3:00  Dylan Wilson (Harvard)
