@@ -4,7 +4,7 @@ title: Public lecture by Diane Hoffoss
 event-date: 2019-10-21 17:30:00
 multi-day-event: false
 comments: false
-categories: news ims ims-special events 
+categories: news ims ims-special events major-news
 published: true
 image: http://home.sandiego.edu/~dhoffoss/images/portrait1.jpg
 image-alt: Prof. Diane Hoffoss

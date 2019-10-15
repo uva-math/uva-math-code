@@ -5,7 +5,7 @@ event-date: 2019-11-04 16:00:00
 multi-day-event: true
 permalink: /ims/lectures/peter-sarnak/
 comments: false
-categories: news virginia-mathematics-lectures ims events major-news
+categories: news virginia-mathematics-lectures ims events 
 published: true
 image: __SITE_URL__/img/IMS/Sarnak-poster.jpg
 image-alt: Peter Sarnak
