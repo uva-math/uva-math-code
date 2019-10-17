@@ -6,8 +6,9 @@ multi-day-event: false
 comments: false
 categories: news ims ims-special events major-news
 published: true
-image: http://home.sandiego.edu/~dhoffoss/images/portrait1.jpg
+image: __SITE_URL__/img/IMS/Hoffoss.jpg
 image-alt: Prof. Diane Hoffoss
+image-address: __SITE_URL__/img/IMS/Hoffoss.pdf
 image-tall: true
 nav_parent: IMS
 more-text: Abstract and short bio
