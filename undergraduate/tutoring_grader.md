@@ -1,10 +1,12 @@
 ---
-title: Collaborative learning and becoming a grader
+title: Collaborative learning, tutoring, and graders
 layout: ug_page
 ug_info: true
 permalink: /undergraduate/tutoring-grader/
+nav_id: Collaborative learning, tutoring, and graders
 nav_parent: Undergraduate
-nav_weight: 12
+nav_nesting: true
+nav_weight: 5
 ---
 <h3>Math Collaborative Learning Center</h3>
 
