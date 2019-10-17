@@ -5,7 +5,7 @@ name: Evangelia
 general_position: faculty
 position: Assistant Professor
 office: 221 Kerchof Hall
-phone: 
+phone: 434-924-1790
 email: eg4va@virginia.edu
 image: __SITE_URL__/img/people/2019-fall/Gazaki.jpg
 personal_page: "http://www-personal.umich.edu/~gazaki/index.html"
