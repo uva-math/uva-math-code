@@ -5,7 +5,7 @@ name: Badri Vishal
 general_position: gradstudent
 position: Graduate Student
 office: 123 Kerchof Hall
-phone: 
+phone: 434-982-2786
 email: bp3aq@virginia.edu
 image:
 personal_page:
