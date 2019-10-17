@@ -5,7 +5,7 @@ name: Julie
 general_position: faculty
 position: Professor
 office: 319 Kerchof Hall
-phone: 434-924-4952
+phone: 434-924-4954
 email: jeb2md@virginia.edu
 image: __SITE_URL__/img/people/Bergner.jpg
 personal_page: http://people.virginia.edu/~jeb2md/
