@@ -4,7 +4,7 @@ title: Public lecture by Diane Hoffoss
 event-date: 2019-10-21 17:30:00
 multi-day-event: false
 comments: false
-categories: news ims ims-special events major-news
+categories: news ims ims-special events
 published: true
 image: __SITE_URL__/img/IMS/Hoffoss.jpg
 image-alt: Prof. Diane Hoffoss
