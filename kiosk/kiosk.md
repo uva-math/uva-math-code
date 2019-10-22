@@ -174,11 +174,11 @@ permalink: /kiosk/
             {
               var strBegin = startDT +
                 propSep +
-                '<b>' +
+                '<h3>' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +
-                startYear + '</b>';
+                startYear + '</h3>';
             }
             else
             {
@@ -187,16 +187,16 @@ permalink: /kiosk/
               var startMin = time[1];
               var strBegin = startDT +
                 propSep +
-                '<b>' +
+                '<h3>' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +
                 startYear + ' @ ' +
                 startHour + ':' +
                 startMin + ' ' +
-                AmPm1(time[0]) + '</b>';
+                AmPm1(time[0]) + '</h3>';
             }
-            var str = strBegin + '<br>' +
+            var str = strBegin + 
             getSeminar(cal_j) + '<br><b>' +
             item.summary + '</b> ' +
             getLocation(item.location) +
