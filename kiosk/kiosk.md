@@ -72,7 +72,7 @@ permalink: /kiosk/
   {
     if (abst)
     {
-      var retStr = ['<details open><summary>Description</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '"  target="_blank">Google Calendar link</a><br>', '</details>'];
+      var retStr = ['<details open><summary>Description</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br>', '</details>'];
       // appendPre(retStr);
       return retStr.join('');
     }
@@ -172,11 +172,11 @@ permalink: /kiosk/
             {
               var strBegin = startDT +
                 propSep +
-                '<b><a href="' + item.htmlLink + '"  target="_blank">' +
+                '<b>' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +
-                startYear + '</a></b>';
+                startYear + '</b>';
             }
             else
             {
@@ -185,14 +185,14 @@ permalink: /kiosk/
               var startMin = time[1];
               var strBegin = startDT +
                 propSep +
-                '<b><a href="' + item.htmlLink + '"  target="_blank">' +
+                '<b>' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +
                 startYear + ' @ ' +
                 startHour + ':' +
                 startMin + ' ' +
-                AmPm1(time[0]) + '</a></b>';
+                AmPm1(time[0]) + '</b>';
             }
             var str = strBegin + '<br>' +
             getSeminar(cal_j) + '<br><b>' +
