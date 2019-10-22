@@ -4,6 +4,8 @@ layout: kiosk
 permalink: /kiosk/
 ---
 
+# Upcoming seminars
+
 <script src="https://apis.google.com/js/api.js"></script>
 <script>
 // javascript to access all seminar google calendars which puts them onto main page;
