@@ -44,20 +44,20 @@ permalink: /kiosk/
 //various seminar things
   function getSeminar(num)
   {
-    if(num == 1) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "1" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 2) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "2" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 3) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "3" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 4) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "4" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 5) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "5" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 6) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "6" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 7) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "7" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 8) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "8" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 9) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "9" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 10) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "10" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 11) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "11" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 12) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "12" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 13) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "13" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 14) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "14" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 1) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "1" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 2) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "2" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 3) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "3" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 4) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "4" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 5) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "5" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 6) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "6" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 7) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "7" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 8) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "8" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 9) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "9" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 10) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "10" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 11) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "11" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 12) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "12" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 13) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "13" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 14) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "14" %}{{sem.name}}{% endif %}{% endfor %}'; }
     return '';
   }
   function getLocation(loc)
