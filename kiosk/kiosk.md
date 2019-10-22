@@ -4,7 +4,7 @@ layout: kiosk
 permalink: /kiosk/
 ---
 
-# Upcoming seminars
+<h1 class="mb-5">Upcoming seminars</h1>
 
 <script src="https://apis.google.com/js/api.js"></script>
 <script>
