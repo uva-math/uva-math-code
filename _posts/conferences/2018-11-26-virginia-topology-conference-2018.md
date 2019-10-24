@@ -7,9 +7,6 @@ multi-day-event: true
 comments: false
 categories: news events conferences major-news
 published: true
-image: __SITE_URL__/img/news_events/conf_topology_fall_2018.png
-image-alt: Virginia Topology Conference 2018
-image-wide: true
 more-text: Speakers and details
 ---
 
