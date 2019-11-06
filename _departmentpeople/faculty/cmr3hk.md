@@ -8,7 +8,7 @@ office: 126 Kerchof Hall
 # phone: 
 # office_hours: 
 email: cmr3hk@virginia.edu
-image: __SITE_URL__/img/people/Reidys.jpeg
+image: __SITE_URL__/img/people/2019-nov/Reidys.jpg
 # personal_page: 
 
 areas:

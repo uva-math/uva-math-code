@@ -8,7 +8,7 @@ position: Assistant Professor, General Faculty
 office: 224 Kerchof Hall
 phone: 434-924-4940
 email: ed8bg@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2019-nov/Dimou.jpg
 personal_page:
 
 ---

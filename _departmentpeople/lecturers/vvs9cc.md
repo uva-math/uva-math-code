@@ -7,6 +7,6 @@ position: Lecturer
 office: 224 Kerchof Hall
 phone: 434-924-4940
 email: vvs9cc@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2019-nov/Shalotenko.jpg
 personal_page:
 ---

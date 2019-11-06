@@ -8,7 +8,7 @@ position: Lecturer
 office: 129 Kerchof Hall
 phone: 434-924-8946
 email: slk6z@virginia.edu
-image:
+image: __SITE_URL__/img/people/2019-nov/Krushkal.jpg
 personal_page:
 
 
