@@ -3,10 +3,8 @@ layout: post
 title: "Mid-Atlantic Topology Seminar 2019"
 event-date: 2019-10-26 12:00:00
 comments: false
-categories: news events conferences major-news
+categories: news events conferences 
 published: true
-image: __SITE_URL__/img/news_events/conf_topology_fall_2018.png
-image-alt: Mid-Atlantic Topology Seminar 2019
 # image-wide: true
 more-text: Schedule
 ---
@@ -27,9 +25,11 @@ This seminar is a regional conference with a goal of bringing together the mid-A
 <!--more-->
 
  
-All talks will be held in Clark Hall 107.
+All talks will be held in Clark Hall 107. Free parking is available in the C1 parking lot behind Clark Hall, next to Kerchof Hall.
  
 ##### Schedule
+
+(coffee and pastries: 9-9:30)
  
 9:30 – 10:30   W. Stephen Wilson (Johns Hopkins University)
 
