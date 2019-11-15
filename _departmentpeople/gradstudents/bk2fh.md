@@ -8,7 +8,7 @@ office: 121 Kerchof Hall
 phone: 434-982-2785
 email: bk2fh@virginia.edu
 image:
-personal_page:
+personal_page: https://uva.theopenscholar.com/bogdan-krstic
 
 
 ---
