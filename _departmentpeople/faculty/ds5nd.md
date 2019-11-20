@@ -5,7 +5,7 @@ name: Dmitriy
 general_position: faculty
 non-tt: true
 position: Assistant Professor, General Faculty
-office: 131 Kerchof Hall
+office: 129 Kerchof Hall
 phone: 
 email: ds5nd@virginia.edu
 image:
