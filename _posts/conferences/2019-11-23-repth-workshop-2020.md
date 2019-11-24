@@ -6,6 +6,8 @@ multi-day-event: true
 comments: false
 categories: news events conferences
 published: true
+image: __SITE_URL__/img/news_events/cps1993.jpeg
+image-alt: "CPS at White Sands, 1993"
 ---
 
 Department of Mathematics and 

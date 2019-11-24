@@ -5,6 +5,8 @@ permalink: /ims/rt-workshop-spring-2020/
 nav_parent: IMS
 ---
 
+<img src="{{site.url}}/img/news_events/cps1993.jpeg" alt="CPS at White Sands, 1993">
+
 <h2 class="mb-2">Representations of Algebraic Groups and Quantum Groups</h2>
 
 <b>Thursday March 12 — Friday March 13, 2020</b>
