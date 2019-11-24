@@ -5,8 +5,6 @@ permalink: /ims/rt-workshop-spring-2020/
 nav_parent: IMS
 ---
 
-<img src="{{site.url}}/img/news_events/cps1993.jpeg" alt="CPS at White Sands, 1993">
-
 <h2 class="mb-2">Representations of Algebraic Groups and Quantum Groups</h2>
 
 <b>Thursday March 12 — Friday March 13, 2020</b>
@@ -42,3 +40,5 @@ The workshop is held on the occasion of Brian's retirement.
 <h5 class="mb-5"><a href="#">Registration and financial support (TBA)</a></h5>
 
 We gratefully acknowledge financial support from the UVa Mathematics Department and Institute of Mathematical Science
+
+<img src="{{site.url}}/img/news_events/cps1993.jpeg" alt="CPS at White Sands, 1993">
