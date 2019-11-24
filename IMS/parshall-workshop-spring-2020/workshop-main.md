@@ -1,11 +1,11 @@
 ---
-title:  Representations of Algebraic Groups and Quantum Groups (Spring 2020)
+title: Representations of Algebraic Groups and Quantum Groups (Spring 2020)
 layout: static_page_no_right_menu
 permalink: /ims/rt-workshop-spring-2020/
 nav_parent: IMS
 ---
 
-<h2 class="mb-2"> Representations of Algebraic Groups and Quantum Groups</h2>
+<h2 class="mb-2">Representations of Algebraic Groups and Quantum Groups</h2>
 
 <b>Thursday March 12 — Friday March 13, 2020</b>
 
@@ -19,7 +19,7 @@ Organizers: <a href="https://www.math.uga.edu/directory/people/daniel-k-nakano">
 <h5><a href="#">Schedule (TBA)</a> &bull; All talks are in Monroe Hall 122</h5>
 
 
-Followed by an AMS special session on ``<a href="http://www.ams.org/meetings/sectional/2273_program_ss13.html#title">Representations of algebraic groups and quantum groups: a tribute to Cline-Parshall-Scott (CPS)</a>”, Charlottesville, Virginia, March 13-15, 2020
+Followed by an AMS special session on "<a href="http://www.ams.org/meetings/sectional/2273_program_ss13.html#title">Representations of algebraic groups and quantum groups: a tribute to Cline-Parshall-Scott (CPS)</a>", Charlottesville, Virginia, March 13-15, 2020
 
 This workshop celebrates the work of G.T. Whyburn Professor of Mathematics <a href="https://math.virginia.edu/people/bjp8w/">Brian J. Parshall</a> and his collaborators. 
 In the course of his career, together with Ed Cline and <a href="http://people.virginia.edu/~lls2l/">Leonard Scott</a> (CPS) as well as with others, Brian has made important contributions to the representation theory of algebraic and quantum groups.
