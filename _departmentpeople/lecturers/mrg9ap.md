@@ -8,7 +8,7 @@ office: 126 Kerchof Hall
 phone: 
 email: mrg9ap@virginia.edu
 image:
-personal_page:
+personal_page: https://mrg9ap.wixsite.com/mattgagne
 
 
 ---
