@@ -26,4 +26,4 @@ Students will receive $24,000 per year in living support and full payment of the
 
 
 
-<h3 class="mt-3">[Further information and application](https://graduate.as.virginia.edu/bridge-doctorate)</h3>
+<h3 class="mt-3"><a href="https://graduate.as.virginia.edu/bridge-doctorate">Further information and application</a></h3>
