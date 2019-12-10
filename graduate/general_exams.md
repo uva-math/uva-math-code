@@ -81,13 +81,16 @@ Here is an updated [Review Guide]({{site.url}}/graduate/exams/algebra/CombinedPr
 
 ## Topology
 
+- [August 2019]({{site.url}}/graduate/exams/topology/2019-08.pdf)
+- [January 2019]({{site.url}}/graduate/exams/topology/2019-01.pdf)
+- [August 2018]({{site.url}}/graduate/exams/topology/2018-08.pdf)
+- [August 2017]({{site.url}}/graduate/exams/topology/2017-08.pdf)
+- [January 2017]({{site.url}}/graduate/exams/topology/2017-01.pdf)
+- [August 2016]({{site.url}}/graduate/exams/topology/2016-08.pdf)
+- [August 2015]({{site.url}}/graduate/exams/topology/2015-08.pdf)
+- [January 2015]({{site.url}}/graduate/exams/topology/2015-01.pdf)
 - [August 2014]({{site.url}}/graduate/exams/topology/2014-08.pdf)
 - [January 2014]({{site.url}}/graduate/exams/topology/2014-01.pdf)
 - [August 2013]({{site.url}}/graduate/exams/topology/2013-08.pdf)
 - [August 2012]({{site.url}}/graduate/exams/topology/2012-08.pdf)
 - [August 2010]({{site.url}}/graduate/exams/topology/2010-08.pdf)
-- [August 2003]({{site.url}}/graduate/exams/topology/2003-08.pdf)
-- [August 2002]({{site.url}}/graduate/exams/topology/2002-08.pdf)
-
-
-The topology curriculum for the general exams changed recently. The exams listed reflect the current curriculum. This [review guide]({{site.url}}/graduate/exams/topology/topreview.pdf) also contains helpful examples.
