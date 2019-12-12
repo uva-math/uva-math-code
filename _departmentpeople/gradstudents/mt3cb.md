@@ -7,7 +7,7 @@ position: Graduate Student
 office: 112 Kerchof Hall
 phone: 434-243-2304
 email: mt3cb@virginia.edu
-image:
+image: __SITE_URL__/img/people/2019-fall/Tarighat.jpg
 personal_page:
 
 
