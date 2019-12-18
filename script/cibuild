@@ -7,4 +7,4 @@ bundle exec jekyll build
 # find _site/ -type f -print0 | xargs -0 sed -i 's/{{site.url}}/http\:\/\/math\.virginia\.edu/g'
 # really ugly thing to fight a jekyll bug that it didn't replace {{site.url}} in some files
 
-bundle exec htmlproofer ./_site --allow_hash_href true --disable-external true --file-ignore "/_site/old.math.virginia.edu/"
+bundle exec htmlproofer ./_site --log-level debug --allow-hash-href true --disable-external true --file-ignore "/_site/old.math.virginia.edu/"
