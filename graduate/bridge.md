@@ -4,7 +4,7 @@ layout: g_page
 g_policy: true
 permalink: /graduate/bridge/
 nav_parent: Graduate
-nav_weight: 2
+nav_weight: 3
 nav_id: Bridge to the Doctorate
 nav_nesting: true
 ---
