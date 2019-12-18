@@ -5,6 +5,8 @@ g_policy: true
 permalink: /graduate/admission/
 nav_parent: Graduate
 nav_weight: 1
+nav_id: Graduate Admissions
+nav_nesting: true
 tooltips: true
 ---
 
