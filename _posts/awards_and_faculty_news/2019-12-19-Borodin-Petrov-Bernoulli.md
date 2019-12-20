@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Alexei Borodin and Leonid Petrov will receive the 2020 Bernoulli Prize for an Outstanding Survey Article in Probability
+title: Leonid Petrov will receive the 2020 Bernoulli Prize
 comments: false
 categories: news awards major-news
 published: true
