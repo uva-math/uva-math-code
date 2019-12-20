@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Leonid Petrov will receive the 2020 Bernoulli Prize
+title: Leonid Petrov will receive the 2020 Bernoulli Prize for a joint paper
 comments: false
 categories: news awards major-news
 published: true
