@@ -8,675 +8,695 @@
 
 # Some courses are renamed, hardcoded in the script
 
-- name: " Probability/Finite Mathematics (3.00) "
+- name: " Probability/Finite Mathematics (3) "
   number: 1110
+  offered: Spring 2020
   descr: " Studies finite probability theory including combinatorics, equiprobable models, conditional probability and Bayes' theorem, expectation and variance, and Markov chains. "
 
-- name: " Financial Mathematics (3.00) "
+- name: " Financial Mathematics (3) "
   number: 1140
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " The study of the mathematics needed to understand and answer a variety of questions that arise in everyday financial dealings. The emphasis is on applications, including simple and compound interest, valuation of bonds, amortization, sinking funds, and rates of return on investments. A solid understanding of algebra is assumed. "
 
-- name: " The Shape of Space (3.00) "
+- name: " The Shape of Space (3) "
   number: 1150
   descr: " Provides an activity and project-based exploration of informal geometry in two and three dimensions. Emphasizes visualization skill, fundamental geometric concepts, and the analysis of shapes and patterns. Topics include concepts of measurement, geometric analysis, transformations, similarity, tessellations, flat and curved spaces, and topology. "
 
-- name: " Algebra, Number Systems, and Number Theory (3.00) "
+- name: " Algebra, Number Systems, and Number Theory (3) "
   number: 1160
+  offered: Spring 2020
   descr: " Studies basic concepts, operations, and structures occurring in number systems, number theory, and algebra. Inquiry-based student investigations explore historical developments and conceptual transitions in the development of number and algebraic systems. "
 
-- name: " A Survey of Calculus I with Algebra (4.00) "
+- name: " A Survey of Calculus I with Algebra (4) "
   number: 1190
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " A first calculus course for business/biology/social-science students. Topics include college algebra/limits and continuity/differentiation and integration of algebraic and elementary transcendental functions/applications to related-rates & optimization problems as well as to curve sketching & exponential growth. At most one of MATH 1190, MATH 1210, and 1310 may be taken for credit. Prerequisite: No previous exposure to Calculus. "
 
-- name: " A survey of Calculus I (3.00) "
+- name: " A survey of Calculus I (3) "
   number: 1210
-  offered: Fall 2019
-  descr: " A first calculus course for business/biology/social-science students. Topics include limits and continuity/differentiation & integration of algebraic & elementary transcendental functions/applications to related-rates & optimization problems as well as to curve sketching & exponential growth. At most one of Math 1190, MATH 1210, and 1310 ma1y be taken for credit. "
+  offered: Spring 2020
+  descr: " A first calculus course for business/biology/social-science students. Topics include limits and continuity/differentiation & integration of algebraic & elementary transcendental functions/applications to related-rates & optimization problems as well as to curve sketching & exponential growth. At most one of MATH 1190, MATH 1210, and MATH 1310 may be taken for credit. "
 
-- name: " A Survey of Calculus II (3.00) "
+- name: " A Survey of Calculus II (3) "
   number: 1220
-  offered: Fall 2019
-  descr: " A second calculus course for business/biology/and social-science students. Topics include differential equations/infinite series/analysis of functions of several variables/analysis of probability density functions of continuous random variables. The course begins with a review of basic single-variable calculus.  Prerequisite: MATH 1210 or equivalent; at most one of MATH 1220 and MATH 1320 may be taken for credit. "
+  offered: Spring 2020
+  descr: " A second calculus course for business/biology/and social-science students. Topics include differential equations/infinite series/analysis of functions of several variables/analysis of probability density functions of continuous random variables. The course begins with a review of basic single-variable calculus. Prerequisite: MATH 1210 or equivalent; at most one of MATH 1220 and MATH 1320 may be taken for credit. "
 
-- name: " Calculus I (4.00) "
+- name: " Calculus I (4) "
   number: 1310
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " A first calculus course for natural-science majors/students planning further work in mathematics/students intending to pursue graduate work in applied social sciences. Introduces differential & integral calculus for single-variable functions, emphasizing techniques/applications & major theorems, like the fundamental theorem of calculus. Prerequisite: Background in algebra/trigonometry/exponentials/logarithms/analytic geometry. "
 
-- name: " Calculus II (4.00) "
+- name: " Calculus II (4) "
   number: 1320
-  offered: Fall 2019
-  descr: " A second calculus course for natural-science majors, students planning additional work in mathematics, and students intending to pursue graduate work in the applied social sciences.  Topics include applications of the integral, techniques of integration, differential equations, infinite series, parametric equations, and polar coordinates.   Prerequisite: MATH 1310 or equivalent; at most one of MATH 1220 and MATH 1320 may be taken for credit. "
+  offered: Spring 2020
+  descr: " A second calculus course for natural-science majors, students planning additional work in mathematics, and students intending to pursue graduate work in the applied social sciences. Topics include applications of the integral, techniques of integration, differential equations, infinite series, parametric equations, and polar coordinates. 
+Prerequisite: MATH 1310 or equivalent; at most one of MATH 1220 and MATH 1320 may be taken for credit. "
 
-- name: " New Course in Mathematics (1.00 - 4.00) "
+- name: " New Course in Mathematics (1 - 4) "
   number: 1559
   descr: " This course provides the opportunity to offer a new topic in the subject of mathematics. "
 
-- name: " Calculus III (4.00) "
+- name: " Calculus III (4) "
   number: 2310
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " A continuation of Calc I and II, this course is about functions of several variables. Topics include finding maxima and minima of functions of several variables/surfaces and curves in three-dimensional space/integration over these surfaces and curves. Additional topics: conservative vector fields/Stokes' and the divergence theorems/how these concepts relate to real world applications. Prerequisite: MATH 1320 or the equivalent. "
 
-- name: " Advanced Calculus and Linear Algebra I (4.00) "
+- name: " Advanced Calculus and Linear Algebra I (4) "
   number: 2315
-  offered: Fall 2019
-  descr: " Covers the material from Math 2310 (multivariable calculus) plus topics from complex numbers, set theory, and linear algebra.  Prepares students for taking advanced mathematics classes at an early stage. Credit is not given for both Math 2310 and Math 2315. "
+  descr: " Covers the material from Math 2310 (multivariable calculus) plus topics from complex numbers, set theory, and linear algebra. Prepares students for taking advanced mathematics classes at an early stage. Credit is not given for both Math 2310 and Math 2315. "
 
-- name: " New Course in Mathematics (1.00 - 4.00) "
+- name: " New Course in Mathematics (1 - 4) "
   number: 2559
   descr: " This course provides the opportunity to offer a new topic in the subject of mathematics. "
 
-- name: " Euclidean and Non-Euclidean Geometry (3.00) "
+- name: " Euclidean and Non-Euclidean Geometry (3) "
   number: 2700
   descr: " Examines assumptions and methods in the original text of Euclid's Elements. Covers selected geometric topics such as symmetries, spherical geometry, curvature, the dissection theory of area, constructible numbers, and the discovery of non-Euclidean geometry. Prerequisite: Some familiarity with calculus. "
 
-- name: " Transition to Higher Mathematics (4.00) "
+- name: " Transition to Higher Mathematics (4) "
   number: 3000
-  offered: Fall 2019
-  descr: " Covers basic concepts with an emphasis on writing mathematical proofs.  Topics include logic, sets, functions and relations, equivalence relations and partitions, induction, and cardinality.    Prerequisite: Math 1320; and students with a grade of B or better in Math 3310, 3354, or any 5000-level Math course are not eligible to enroll in Math 3000. "
+  offered: Spring 2020
+  descr: " Covers basic concepts with an emphasis on writing mathematical proofs. Topics include logic, sets, functions and relations, equivalence relations and partitions, induction, and cardinality. 
+Prerequisite: Math 1320; and students with a grade of B or better in Math 3310, 3354, or any 5000-level Math course are not eligible to enroll in Math 3000. "
 
-- name: " Introduction to Probability (3.00) "
+- name: " Introduction to Probability (3) "
   number: 3100
-  offered: Fall 2019
-  descr: " Introduces fundamental concepts/techniques of probability/the theory of randomness. Focuses on problem solving/understanding key theoretical ideas. Topics include sample spaces combinatorial analysis/discrete and continuous random variables/classical distributions/expectation/Chebyshev's inequality/independence/central limit theorem/conditional probability/generating functions. Prerequisite: MATH 1320. Recommended: knowledge of double integrals. "
+  offered: Spring 2020
+  descr: " Introduces fundamental ideas of probability, the theory of randomness. Focuses on problem solving and understanding key theoretical ideas. Topics include sample spaces, counting, random variables, classical distributions, expectation, Chebyshev's inequality, independence, central limit theorem, conditional probability, generating functions, joint distributions. Prerequisite: MATH 1320 or equivalent. Strongly recommended: MATH 2310 "
 
-- name: " Ordinary Differential Equations (4.00) "
+- name: " Ordinary Differential Equations (4) "
   number: 3250
-  offered: Fall 2019
-  descr: " Introduces the methods, theory, and applications of differential equations. Includes first-order, second and higher-order linear equations, series solutions, linear systems of first-order differential equations, and the associated matrix theory. May include numerical methods, non-linear systems, boundary value problems, and additional applications.  Prerequisite: MATH 1320 or its equivalent. "
+  offered: Spring 2020
+  descr: " Introduces the methods, theory, and applications of differential equations. Includes first-order, second and higher-order linear equations, series solutions, linear systems of first-order differential equations, and the associated matrix theory. May include numerical methods, non-linear systems, boundary value problems, and additional applications. Prerequisite: MATH 1320 or its equivalent. "
 
-- name: " Basic Real Analysis (3.00) "
+- name: " Basic Real Analysis (3) "
   number: 3310
-  offered: Fall 2019
-  descr: " A rigorous development of the properties of the real numbers and the ideas of calculus including theorems on limits, continuity, differentiability, convergence of infinite series, and the construction of the Riemann integral. Students without prior experience constructing rigorous proofs are encouraged to take Math 3000 before or concurrently with Math 3310.  Prerequisite: MATH 1320. "
+  offered: Spring 2020
+  descr: " A rigorous development of the properties of the real numbers and the ideas of calculus including theorems on limits, continuity, differentiability, convergence of infinite series, and the construction of the Riemann integral. Students without prior experience constructing rigorous proofs are encouraged to take Math 3000 before or concurrently with Math 3310. Prerequisite: MATH 1320. "
 
-- name: " Advanced Calculus and Linear Algebra II (4.00) "
+- name: " Advanced Calculus and Linear Algebra II (4) "
   number: 3315
-  descr: " This course is a continuation of MATH 2315. Covers topics from linear algebra/differential equations/real analysis. Success in this course and MATH 2315 (grades of B- or higher) exempts the student from the math major requirement of taking MATH 3351 and MATH 3250.  Students are encouraged to take more advanced courses in these areas. Prerequisite: MATH 2315. "
+  offered: Spring 2020
+  descr: " This course is a continuation of MATH 2315. Covers topics from linear algebra/differential equations/real analysis. Success in this course and MATH 2315 (grades of B- or higher) exempts the student from the math major requirement of taking MATH 3351 and MATH 3250. Students are encouraged to take more advanced courses in these areas. Prerequisite: MATH 2315. "
 
-- name: " Complex Variables with Applications (3.00) "
+- name: " Complex Variables with Applications (3) "
   number: 3340
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " Covers functions of a complex variable that are complex differentiable and the unusual and useful properties of such functions. Some topics: Cauchy's integral formula/power series/the residue theorem/Rouché's theorem. Applications include doing real integrals using complex methods and applications to fluid flow in two dimensions. Prerequisite: MATH 2310. "
 
-- name: " Applied Linear Algebra (3.00) "
+- name: " Applied Linear Algebra (3) "
   number: 3350
-  offered: Fall 2019
-  descr: " Topics will include systems of linear equations, matrix operations and inverses, vector spaces and subspaces, determinants, eigenvalues and eigenvectors, matrix factorizations, inner products and orthogonality, and linear transformations.  Emphasis will be on applications, with computer software integrated throughout the course.  The target audience for MATH 3350 is non-math majors from disciplines that apply tools from linear algebra. Credit is not given for both MATH 3350 and 3351. "
+  offered: Spring 2020
+  descr: " Topics will include systems of linear equations, matrix operations and inverses, vector spaces and subspaces, determinants, eigenvalues and eigenvectors, matrix factorizations, inner products and orthogonality, and linear transformations. Emphasis will be on applications, with computer software integrated throughout the course. The target audience for MATH 3350 is non-math majors from disciplines that apply tools from linear algebra. Credit is not given for both MATH 3350 and 3351. "
 
-- name: " Elementary Linear Algebra (3.00) "
+- name: " Elementary Linear Algebra (3) "
   number: 3351
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " Includes matrices, elementary row operations, inverses, vector spaces and bases, inner products and Gram-Schmidt orthogonalization, orthogonal matrices, linear transformations and change of basis, eigenvalues, eigenvectors, and symmetric matrices. Credit is not given for both MATH 3350 and 3351. Prerequisite: MATH 1320. "
 
-- name: " Survey of Algebra (3.00) "
+- name: " Survey of Algebra (3) "
   number: 3354
-  offered: Fall 2019
-  descr: " Surveys major topics of modern algebra: groups, rings, and fields. Presents applications to areas such as geometry and number theory; explores rational, real, and complex number systems, and the algebra of polynomials.  Students without prior experience constructing rigorous proofs are encouraged to take Math 3000 before or concurrently with Math 3354.  Prerequisite: MATH 1320. "
+  offered: Spring 2020
+  descr: " Surveys major topics of modern algebra: groups, rings, and fields. Presents applications to areas such as geometry and number theory; explores rational, real, and complex number systems, and the algebra of polynomials. Students without prior experience constructing rigorous proofs are encouraged to take Math 3000 before or concurrently with Math 3354. Prerequisite: MATH 1320. "
 
-- name: " New Course in Mathematics (1.00 - 4.00) "
+- name: " New Course in Mathematics (1 - 4) "
   number: 3559
   descr: " This course provides the opportunity to offer a new topic in the subject of mathematics. "
 
-- name: " Discrete Mathematics (3.00) "
+- name: " Discrete Mathematics (3) "
   number: 4040
-  offered: Fall 2019
-  descr: " Includes combinatorial principles, the binomial and multinomial theorems, partitions, discrete probability, algebraic structures, trees, graphs, symmetry groups, Polya's enumeration formula, linear recursions, generating functions and introduction to cryptography, time permitting.  Prerequisite: MATH 3354 or instructor permission. "
+  descr: " Includes combinatorial principles, the binomial and multinomial theorems, partitions, discrete probability, algebraic structures, trees, graphs, symmetry groups, Polya's enumeration formula, linear recursions, generating functions and introduction to cryptography, time permitting. Prerequisite: MATH 3354 or instructor permission. "
 
-- name: " Introduction to Stochastic Processes (3.00) "
+- name: " Introduction to Stochastic Processes (3) "
   number: 4110
-  offered: Fall 2019
-  descr: " Topics in probability selected from Random walks, Markov processes, Brownian motion, Poisson processes, branching processes, stationary time series, linear filtering and prediction, queuing processes, and renewal theory.  Prerequisite: MATH 3100 or APMA 3100; and a knowledge of matrix algebra "
+  offered: Spring 2020
+  descr: " Topics in probability selected from Random walks, Markov processes, Brownian motion, Poisson processes, branching processes, stationary time series, linear filtering and prediction, queuing processes, and renewal theory.
+Prerequisite: MATH 3100 or APMA 3100; and a knowledge of matrix algebra "
 
-- name: " Mathematics of Derivative Securities (3.00) "
+- name: " Mathematics of Derivative Securities (3) "
   number: 4140
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " This class introduces students to the mathematics used in pricing derivative securities. Topics include a review of the relevant probability theory of conditional expectation and martingales/the elements of financial markets and derivatives/pricing contingent claims in the binomial & the finite market model/(time permitting) the Black-Scholes model. Prerequisites: MATH 3100 or APMA 3100. Students should have a knowledge of matrix algebra. "
 
-- name: " Mathematics for Physics (3.00) "
+- name: " Mathematics for Physics (3) "
   number: 4210
+  offered: Spring 2020
   descr: " This course covers linear algebra/complex analysis/vector differential & integral calculus. Thus it is a compressed version of MATH 3351 & MATH 3340 and a review of some of the material in MATH 2310. Emphasis is on the physical interpretation. [This course does not count as a Mathematics elective for Mathematics majors if both MATH 3351 and MATH 3340 are to be counted.] Prerequisite: MATH 2310 or MATH 2315 or APMA 2120 "
 
-- name: " Partial Differential Equations and Applied Mathematics (3.00) "
+- name: " Partial Differential Equations and Applied Mathematics (3) "
   number: 4220
-  offered: Fall 2019
   descr: " This course is a beginning course in partial differential equations/Fourier analysis/special functions (such as spherical harmonics and Bessel functions). The discussion of partial differential equations will include the Laplace and Poisson equations and the heat and wave equations. Prerequisites: MATH 3250 and either MATH 3351 or MATH 4210. "
 
-- name: " Differential Equations and Dynamical Systems (3.00) "
+- name: " Differential Equations and Dynamical Systems (3) "
   number: 4250
-  descr: " A second course in ordinary differential equations, from the dynamical systems point of view. Topics include: existence and uniqueness theorems; linear systems; qualitative study of equilibria and attractors; bifurcation theory; introduction to chaotic systems. Further topics as chosen by the instructor. Applications drawn from physics, biology, and engineering.   Prerequisites: MATH 3351 or APMA 3080 and MATH 3310 or MATH 4310. "
+  offered: Spring 2020
+  descr: " A second course in ordinary differential equations, from the dynamical systems point of view. Topics include: existence and uniqueness theorems; linear systems; qualitative study of equilibria and attractors; bifurcation theory; introduction to chaotic systems. Further topics as chosen by the instructor. Applications drawn from physics, biology, and engineering. 
+Prerequisites: MATH 3351 or APMA 3080 and MATH 3310 or MATH 4310. "
 
-- name: " Elementary Numerical Analysis (3.00) "
+- name: " Elementary Numerical Analysis (3) "
   number: 4300
-  descr: " Includes Taylor's theorem, solution of nonlinear equations, interpolation and approximation by polynomials, numerical quadrature. May also cover numerical solutions of ordinary differential equations, Fourier series, or least-square approximation.  Prerequisite: MATH 3250 and computer proficiency. "
+  offered: Spring 2020
+  descr: " Includes Taylor's theorem, solution of nonlinear equations, interpolation and approximation by polynomials, numerical quadrature. May also cover numerical solutions of ordinary differential equations, Fourier series, or least-square approximation. Prerequisite: MATH 3250 and computer proficiency. "
 
-- name: " Introduction to Real Analysis (3.00) "
+- name: " Introduction to Real Analysis (3) "
   number: 4310
-  offered: Fall 2019
-  descr: " This course covers the basic topology of metric spaces/continuity and differentiation of functions of a single variable/Riemann-Stieltjes integration/convergence of sequences and series. Prerequisite:  MATH 3310 or permission of instructor. "
+  descr: " This course covers the basic topology of metric spaces/continuity and differentiation of functions of a single variable/Riemann-Stieltjes integration/convergence of sequences and series. Prerequisite: MATH 3310 or permission of instructor. "
 
-- name: " Calculus on Manifolds (3.00) "
+- name: " Calculus on Manifolds (3) "
   number: 4330
-  descr: " Differential and integral calculus in Euclidean spaces.  Implicit and inverse function theorems, differential forms and Stokes' theorem.   Prerequisites:  MATH 2310 or MATH 2315;  MATH 3351 or MATH 4651 or APMA 3080; and MATH 3310 or MATH 4310 "
+  offered: Spring 2020
+  descr: " Differential and integral calculus in Euclidean spaces. Implicit and inverse function theorems, differential forms and Stokes' theorem. 
+Prerequisites: MATH 2310 or MATH 2315; MATH 3351 or MATH 4651 or APMA 3080; and MATH 3310 or MATH 4310 "
 
-- name: " Algebraic Coding Theory (3.00) "
+- name: " Algebraic Coding Theory (3) "
   number: 4452
-  descr: " Introduces algebraic techniques for communicating information in the presence of noise. Includes linear codes, bounds for codes, BCH codes and their decoding algorithms. May also include quadratic residue codes, Reed-Muller codes, algebraic geometry codes, and connections with groups, designs, and lattices.  Prerequisite: MATH 3351 and 3354, or instructor permission. "
+  offered: Spring 2020
+  descr: " Introduces algebraic techniques for communicating information in the presence of noise. Includes linear codes, bounds for codes, BCH codes and their decoding algorithms. May also include quadratic residue codes, Reed-Muller codes, algebraic geometry codes, and connections with groups, designs, and lattices. Prerequisite: MATH 3351 and 3354, or instructor permission. "
 
-- name: " New Course in Mathematics (1.00 - 4.00) "
+- name: " New Course in Mathematics (1 - 4) "
   number: 4559
   descr: " This course provides the opportunity to offer a new topic in the subject of mathematics. "
 
-- name: " Advanced Linear Algebra (3.00) "
+- name: " Advanced Linear Algebra (3) "
   number: 4651
-  offered: Fall 2019
-  descr: " Review of topics from Math 3351 including vector spaces, bases, dimension,  matrices and linear transformations, diagonalization; however, the material is covered in greater depth  with emphasis on theoretical aspects. The course continues with more advanced topics  including Jordan and rational canonical forms of matrices and introduction to bilinear forms. Additional topics such  as modules and tensor products may be included.     Prerequisite: MATH 3351 "
+  offered: Spring 2020
+  descr: " Review of topics from Math 3351 including vector spaces, bases, dimension, matrices and linear transformations, diagonalization; however, the material is covered in greater depth with emphasis on theoretical aspects. The course continues with more advanced topics including Jordan and rational canonical forms of matrices and introduction to bilinear forms. Additional topics such as modules and tensor products may be included. 
+Prerequisite: MATH 3351 "
 
-- name: " Introduction to Abstract Algebra (3.00) "
+- name: " Introduction to Abstract Algebra (3) "
   number: 4652
-  descr: " Structural properties of basic algebraic systems such as groups, rings, and fields. A special emphasis is made on polynomials in one and several variables, including irreducible polynomials, unique factorization, and symmetric polynomials. Time permitting such topics as group representations or algebras over a field may be included.  Prerequisites: MATH 3351 or 4651 and MATH 3354 or permission of the instructor. "
+  offered: Spring 2020
+  descr: " Structural properties of basic algebraic systems such as groups, rings, and fields. A special emphasis is made on polynomials in one and several variables, including irreducible polynomials, unique factorization, and symmetric polynomials. Time permitting such topics as group representations or algebras over a field may be included. Prerequisites: MATH 3351 or 4651 and MATH 3354 or permission of the instructor. "
 
-- name: " Number Theory (3.00) "
-  number: 4653
-  descr: " The study of the integers and related number systems. Includes polynomial congruences, rings of congruence classes and their groups of units, quadratic reciprocity, diophantine equations, and number-theoretic functions.  Additional topics such as the distribution of prime numbers may be included.  Prerequisite: MATH 3354. "
-
-- name: " Bilinear Forms and Group Representations (3.00) "
-  number: 4657
-  descr: " Covers the representation theory of finite groups/other interactions between linear & abstract algebra. Topics include: bilinear & sesquilinear forms & inner product spaces/important classes of linear operators on inner product spaces/the notion of group representation/complete reducibility of complex representations of finite groups/character theory/some applications of representation theory. Prerequisite: MATH 3351 (or 4651)/MATH 3354 (or 4652) "
-
-- name: " Galois Theory (3.00) "
+- name: " Galois Theory (3) "
   number: 4658
   descr: " This course studies the symmetries of solutions of polynomials. Topics include algebraic field extensions/field automorphisms/the fundamental theorem of Galois theory. Applications include the unsolvability of the quintic, as well as ruler & compass constructions. Prerequisites: MATH 3351 (or 4651) and MATH 4652. "
 
-- name: " Algebraic Combinatorics (3.00) "
+- name: " Algebraic Combinatorics (3) "
   number: 4660
   descr: " Combinatorics of counting using basic tools from calculus, linear algebra, and occasionally group theory. Topics include: tableaux, symmetric polynomials, Catalan numbers, quantum binomial theorem, q-exponentials, partition and q-series identities. Bijective proofs will be emphasized when appropriate. "
 
-- name: " Introduction to Differential Geometry (3.00) "
+- name: " Introduction to Differential Geometry (3) "
   number: 4720
-  offered: Fall 2019
   descr: " Geometric study of curves/surfaces/their higher-dimensional analogues. Topics vary and may include curvature/vector fields and the Euler characteristic/the Frenet theory of curves in 3-space/geodesics/the Gauss-Bonnet theorem/and/or an introduction to Riemannian geometry on manifolds. Prerequisites: MATH 2310 and MATH 3351 or instructor permission. "
 
-- name: " Introduction to Knot Theory (3.00) "
+- name: " Introduction to Knot Theory (3) "
   number: 4750
-  descr: " Examines the knotting and linking of curves in space. Studies equivalence of knots via knot diagrams and Reidemeister moves in order to define certain invariants for distinguishing among knots. Also considers knots as boundaries of surfaces and via algebraic structures arising from knots.  Prerequisites: MATH 2310 and MATH 3351 and MATH 3354 or instructor permission. "
+  descr: " Examines the knotting and linking of curves in space. Studies equivalence of knots via knot diagrams and Reidemeister moves in order to define certain invariants for distinguishing among knots. Also considers knots as boundaries of surfaces and via algebraic structures arising from knots. Prerequisites: MATH 2310 and MATH 3351 and MATH 3354 or instructor permission. "
 
-- name: " General Topology (3.00) "
+- name: " General Topology (3) "
   number: 4770
-  offered: Fall 2019
-  descr: " Topics include abstract topological spaces & continuous functions/connectedness/compactness/countability/separation axioms. Rigorous proofs emphasized. Covers myriad examples, i.e., function spaces/projective spaces/quotient spaces/Cantor sets/compactifications. May include intro to aspects of algebraic topology, i.e., the fundamental group. Prerequisites: MATH 2310, MATH 3351, MATH 3310, or higher level versions of these courses. "
+  descr: " Topics include abstract topological spaces & continuous functions/connectedness/compactness/countability/separation axioms. Rigorous proofs emphasized. Covers myriad examples, i.e., function spaces/projective spaces/quotient spaces/Cantor sets/compactifications. May include intro to aspects of algebraic topology, i.e., the fundamental group. Prerequisites: MATH 2310 or 2315 or APMA 2120 and MATH 3315 or MATH 3351 or MATH 4651 or APMA 3080 "
 
-- name: " Introduction to Mathematical Research (3.00) "
+- name: " Introduction to Mathematical Research (3) "
   number: 4840
-  descr: " This course will introduce students to the techniques and methods of mathematical research. Students  will independently work with mathematical literature on a topic assigned by the instructor and present their findings in various formats (presentation, paper etc.). "
+  offered: Spring 2020
+  descr: " This course will introduce students to the techniques and methods of mathematical research. Students will independently work with mathematical literature on a topic assigned by the instructor and present their findings in various formats (presentation, paper etc.). "
 
-- name: " Distinguished Major Thesis (3.00) "
+- name: " Distinguished Major Thesis (3) "
   number: 4900
-  descr: " This course provides a framework for the completion of a Distinguished Major Thesis, a treatise containing an exposition of a chosen mathematical topic.  A faculty advisor guides a student through the beginning phases of the process of research and writing.  Prerequisite: Acceptance into the Distinguished Major Program. "
+  descr: " This course provides a framework for the completion of a Distinguished Major Thesis, a treatise containing an exposition of a chosen mathematical topic. A faculty advisor guides a student through the beginning phases of the process of research and writing. Prerequisite: Acceptance into the Distinguished Major Program. "
 
-- name: " Distinguished Major Thesis (3.00) "
+- name: " Distinguished Major Thesis (3) "
   number: 4901
-  descr: " This is the second semester of a two semester sequence for the purpose of the completion of a Distinguished Major Thesis. A faculty member guides the student through all phases of the process which culminates in an open presentation of the thesis to an audience including a faculty evaluation committee.    Prerequisite: MATH 4900. "
+  offered: Spring 2020
+  descr: " This is the second semester of a two semester sequence for the purpose of the completion of a Distinguished Major Thesis. A faculty member guides the student through all phases of the process which culminates in an open presentation of the thesis to an audience including a faculty evaluation committee. 
+Prerequisite: MATH 4900. "
 
-- name: " Independent Study (1.00 - 3.00) "
+- name: " Independent Study (1 - 3) "
   number: 4993
+  offered: Spring 2020
   descr: " Reading and study programs in areas of interest to individual students. For third- and fourth-years interested in topics not covered in regular courses. Students must obtain a faculty advisor to approve and direct the program. "
 
-- name: " The History of the Calculus (3.00) "
+- name: " The History of the Calculus (3) "
   number: 5010
   graduate: true
-  descr: " Studies the evolution of the various mathematical ideas leading up to the development of calculus in the 17th century, and how those ideas were perfected and extended by succeeding generations of mathematicians. Emphasizes primary source materials.  Prerequisite: MATH 2310 and 3351, or instructor permission. "
+  descr: " Studies the evolution of the various mathematical ideas leading up to the development of calculus in the 17th century, and how those ideas were perfected and extended by succeeding generations of mathematicians. Emphasizes primary source materials. Prerequisite: MATH 2310 and 3351, or instructor permission. "
 
-- name: " The History of Mathematics (3.00) "
+- name: " The History of Mathematics (3) "
   number: 5030
   graduate: true
-  descr: " Studies the development of mathematics from classical antiquity to the end of the 19th century, focusing on critical periods in the evolution of geometry, number theory, algebra, probability, and set theory. Emphasizes primary source materials.  Prerequisite: MATH 2310 and 3351, or instructor permission. "
+  descr: " Studies the development of mathematics from classical antiquity to the end of the 19th century, focusing on critical periods in the evolution of geometry, number theory, algebra, probability, and set theory. Emphasizes primary source materials. Prerequisite: MATH 2310 and 3351, or instructor permission. "
 
-- name: " Differential Equations and Dynamical Systems (3.00) "
+- name: " Differential Equations and Dynamical Systems (3) "
   number: 5250
   graduate: true
-  descr: " A second course in ordinary differential equations, from the dynamical systems point of view.  Topics include:  existence and uniqueness theorems; linear systems; qualitative study of equilibria and attractors; bifurcation theory; introduction to chaotic systems.  Further topics as chosen by the instructor.  Applications drawn from physics, biology, and engineering. Prerequisites:MATH 3351 and MATH 3310 or equivalent. "
+  descr: " A second course in ordinary differential equations, from the dynamical systems point of view. Topics include: existence and uniqueness theorems; linear systems; qualitative study of equilibria and attractors; bifurcation theory; introduction to chaotic systems. Further topics as chosen by the instructor. Applications drawn from physics, biology, and engineering. Prerequisites:MATH 3351 and MATH 3310 or equivalent. "
 
-- name: " Proofs in Analysis (3.00) "
+- name: " Proofs in Analysis (3) "
   number: 5305
   graduate: true
   descr: " This course reviews the proofs of the main theorems in analysis in preparation for the advanced graduate analysis courses. This course is offered in the summer and restricted to Mathematics and Graduate Arts and Science students. "
 
-- name: " New Course in Mathematics (1.00 - 4.00) "
+- name: " New Course in Mathematics (1 - 4) "
   number: 5559
   graduate: true
   descr: " This course provides the opportunity to offer a new topic in the subject of mathematics. "
 
-- name: " Introduction to Geometry (3.00) "
+- name: " Number Theory (3) "
+  number: 5653
+  graduate: true
+  descr: " The study of the integers and related number systems. Includes polynomial congruences, rings of congruence classes and their groups of units, quadratic reciprocity, diophantine equations, and number-theoretic functions. Additional topics such as the distribution of prime numbers may be included. Prerequisite: MATH 3354. "
+
+- name: " Bilinear Forms and Group Representations (3) "
+  number: 5657
+  graduate: true
+  descr: " Covers the representation theory of finite groups/other interactions between linear & abstract algebra. Topics include: bilinear & sesquilinear forms & inner product spaces/important classes of linear operators on inner product spaces/the notion of group representation/complete reducibility of complex representations of finite groups/character theory/some applications of representation theory. Prerequisite: MATH 3351 or 4651/MATH 3354 or 4652. "
+
+- name: " Introduction to Geometry (3) "
   number: 5700
   graduate: true
-  descr: " Topics selected from analytic, affine, projective, hyperbolic, and non-Euclidean geometry.  Prerequisite: MATH 2310, 3351, or instructor permission. "
+  offered: Spring 2020
+  descr: " Topics selected from analytic, affine, projective, hyperbolic, and non-Euclidean geometry. Prerequisite: MATH 2310, 3351, or instructor permission. "
 
-- name: " Introduction to Differential Geometry (3.00) "
+- name: " Introduction to Differential Geometry (3) "
   number: 5720
   graduate: true
-  descr: " Topics selected from the theory of curves and surfaces in Euclidean space and the theory of manifolds.  Prerequisite: MATH 2310 and 3351, or instructor permission. "
+  descr: " Topics selected from the theory of curves and surfaces in Euclidean space and the theory of manifolds. Prerequisite: MATH 2310 and 3351, or instructor permission. "
 
-- name: " General Topology (3.00) "
+- name: " General Topology (3) "
   number: 5770
   graduate: true
-  descr: " Topological spaces and continuous functions, connectedness, compactness, countability and separation axioms, and function spaces. Time permitting, more advanced examples of topological spaces, such as projectives spaces, as well as an introduction to the fundamental group will be covered.    Prerequisite: MATH 2310 and 3351, and 3310. "
+  descr: " Topological spaces and continuous functions, connectedness, compactness, countability and separation axioms, and function spaces. Time permitting, more advanced examples of topological spaces, such as projectives spaces, as well as an introduction to the fundamental group will be covered. 
+Prerequisite: MATH 2310 and 3351, and 3310. "
 
-- name: " Proofs in Algebra (3.00) "
+- name: " Proofs in Algebra (3) "
   number: 5855
   graduate: true
   descr: " This course reviews the proofs of the main theorems in algebra in preparation for the advanced graduate algebra courses.This course is offered in the summer and restricted to Mathematics and Graduate Arts and Science students. "
 
-- name: " Supervised Study in Mathematics (3.00) "
+- name: " Supervised Study in Mathematics (3) "
   number: 5896
   graduate: true
-  descr: " A rigorous program of supervised study designed to expose the student to a particular area of mathematics.  Prerequisite: Instructor permission and graduate standing. "
+  descr: " A rigorous program of supervised study designed to expose the student to a particular area of mathematics. Prerequisite: Instructor permission and graduate standing. "
 
-- name: " AFDA: Mathematical Modeling with Probability and Statistics (3.00) "
+- name: " AFDA: Mathematical Modeling with Probability and Statistics (3) "
   number: 6060
   graduate: true
-  descr: " Examines experimental design and probability and statistics through exploring, analyzing, and interpreting data sets.  Explores the graphing calculator as a tool to display and analyze data obtained from sampling, observations, measurement, experiments, and internet sources. "
+  descr: " Examines experimental design and probability and statistics through exploring, analyzing, and interpreting data sets. Explores the graphing calculator as a tool to display and analyze data obtained from sampling, observations, measurement, experiments, and internet sources. "
 
-- name: " Measurement and Data Analysis (3.00) "
+- name: " Measurement and Data Analysis (3) "
   number: 6120
   graduate: true
   descr: " Measurement and Data Analysis "
 
-- name: " Functions and Algebra (3.00) "
+- name: " Functions and Algebra (3) "
   number: 6452
   graduate: true
   descr: " Functions and Algebra "
 
-- name: " Number Systems and Number Theory for K-8 Mathematics Specialists (3.00) "
+- name: " Number Systems and Number Theory for K-8 Mathematics Specialists (3) "
   number: 6453
   graduate: true
   descr: " Number Systems and Number Theory for K-8 Mathematics Specialists "
 
-- name: " Rational Numbers and Proportional Reasoning (3.00) "
+- name: " Rational Numbers and Proportional Reasoning (3) "
   number: 6454
   graduate: true
   descr: " Rational Numbers and Proportional Reasoning "
 
-- name: " New Course in Mathematics (1.00 - 4.00) "
+- name: " New Course in Mathematics (1 - 4) "
   number: 6559
   graduate: true
   descr: " This course provides the opportunity to offer a new topic in the subject of mathematics. "
 
-- name: " Algebra for Middle School Specialists (3.00) "
+- name: " Algebra for Middle School Specialists (3) "
   number: 6600
   graduate: true
   descr: " Algebra for Middle School Specialists "
 
-- name: " AAO Introductory College Algebra and Trigonometry (3.00) "
+- name: " AAO Introductory College Algebra and Trigonometry (3) "
   number: 6630
   graduate: true
   descr: " AAO Introductory College Algebra and Trigonometry "
 
-- name: " AAO Calculus with Applications (3.00) "
+- name: " AAO Calculus with Applications (3) "
   number: 6650
   graduate: true
   descr: " AAO Calculus with Applications "
 
-- name: " Euclidean Geometry (3.00) "
+- name: " Euclidean Geometry (3) "
   number: 6660
   graduate: true
   descr: " Euclidean Geometry "
 
-- name: " AAO Probability and Statistics (3.00) "
+- name: " AAO Probability and Statistics (3) "
   number: 6670
   graduate: true
-  descr: " Explores introductory descriptive statistics, probability, and statistical inference.  Develops conceptual understanding and procedural fluency in problem settings based on real data which investigate the use of visual methods from summarizing quantitative information, basic experimental design, sampling methods, and interpretation of statistical analysis. "
+  descr: " Explores introductory descriptive statistics, probability, and statistical inference. Develops conceptual understanding and procedural fluency in problem settings based on real data which investigate the use of visual methods from summarizing quantitative information, basic experimental design, sampling methods, and interpretation of statistical analysis. "
 
-- name: " Geometry and Measurement for K-8 Math Specialists (3.00) "
+- name: " Geometry and Measurement for K-8 Math Specialists (3) "
   number: 6700
   graduate: true
   descr: " Geometry and Measurement for K-8 Math Specialists "
 
-- name: " MM Data Analysis, Probability, and Statistics for Middle School Teachers (3.00) "
+- name: " MM Data Analysis, Probability, and Statistics for Middle School Teachers (3) "
   number: 6760
   graduate: true
   descr: " Focuses on the representation of data for decision making and predictability based on data analysis as it relates to middle school mathematics and defined in the NCTM Professional Standards for School Mathematics and Virginia SOLS in Mathematics. Teachers deepen their understanding and use of the fundamental ideas in mathematics that underlie the probability and statistics strand. "
 
-- name: " Teaching Mathematics to Diverse Populations (3.00) "
+- name: " Teaching Mathematics to Diverse Populations (3) "
   number: 6800
   graduate: true
   descr: " Teaching Mathematics to Diverse Populations "
 
-- name: " Seminar on College Teaching (1.00 - 3.00) "
+- name: " Seminar on College Teaching (1 - 3) "
   number: 7000
   graduate: true
-  offered: Fall 2019
-  descr: " Discussion of issues related to the practice of teaching, pedagogical concerns in college level mathematics, and aspects of the responsibilities of a professional mathematician. Credits may not be used towards a Master's degree.  Prerequisite: Graduate standing in mathematics. "
+  descr: " Discussion of issues related to the practice of teaching, pedagogical concerns in college level mathematics, and aspects of the responsibilities of a professional mathematician. Credits may not be used towards a Master's degree. Prerequisite: Graduate standing in mathematics. "
 
-- name: " Seminar on Research in Mathematics (1.00 - 3.00) "
+- name: " Seminar on Research in Mathematics (1 - 3) "
   number: 7010
   graduate: true
-  descr: " This seminar discusses the issues related to research in Mathematics. There are speakers from the different areas of mathematics represented at the University of Virginia. Credit may not be used towards a Master's degree.  Prerequisite:  Graduate standing in mathematics. "
+  offered: Spring 2020
+  descr: " This seminar discusses the issues related to research in Mathematics. There are speakers from the different areas of mathematics represented at the University of Virginia. Credit may not be used towards a Master's degree. Prerequisite: Graduate standing in mathematics. "
 
-- name: " Ordinary Differential Equations and Dynamical Systems (3.00) "
+- name: " Ordinary Differential Equations and Dynamical Systems (3) "
   number: 7250
   graduate: true
-  descr: " Topics include well-posedness and stability of dynamical flows, attractors, invariant manifolds and their properties, and dissipative and Hamiltonian systems.  Prerequisite: MATH 5310 and linear algebra, or the equivalent. "
+  descr: " Topics include well-posedness and stability of dynamical flows, attractors, invariant manifolds and their properties, and dissipative and Hamiltonian systems. Prerequisite: MATH 5310 and linear algebra, or the equivalent. "
 
-- name: " Problems in Analysis (3.00) "
+- name: " Problems in Analysis (3) "
   number: 7305
   graduate: true
-  descr: " Applications of  the theory presented in MATH 7310, 7320, and 7340 to specific examples in real and complex analysis. The course emphasizes problem-solving and preparation for the General Examination in Analysis. Problems are based on those from past General Exams. This course is offered in the summer and restricted to Mathematics and Graduate Arts and Science students. "
+  descr: " Applications of the theory presented in MATH 7310, 7320, and 7340 to specific examples in real and complex analysis. The course emphasizes problem-solving and preparation for the General Examination in Analysis. Problems are based on those from past General Exams. This course is offered in the summer and restricted to Mathematics and Graduate Arts and Science students. "
 
-- name: " Real Analysis and Linear Spaces I (3.00) "
+- name: " Real Analysis and Linear Spaces I (3) "
   number: 7310
   graduate: true
-  descr: " Introduces measure and integration theory.  Prerequisite: MATH 5310 or equivalent. "
+  offered: Spring 2020
+  descr: " Introduces measure and integration theory. Prerequisite: MATH 5310 or equivalent. "
 
-- name: " Real Analysis and Linear Spaces II (3.00) "
+- name: " Real Analysis and Linear Spaces II (3) "
   number: 7320
   graduate: true
-  descr: " Additional topics in measure theory. Banach and Hilbert spaces, and Fourier analysis.  Prerequisite: MATH 7310, 7340, or equivalent. "
+  descr: " Additional topics in measure theory. Banach and Hilbert spaces, and Fourier analysis. Prerequisite: MATH 7310, 7340, or equivalent. "
 
-- name: " Complex Analysis I (3.00) "
+- name: " Complex Analysis I (3) "
   number: 7340
   graduate: true
-  offered: Fall 2019
   descr: " Studies the fundamental theorems of analytic function theory. "
 
-- name: " Probability Theory I (3.00) "
+- name: " Probability Theory I (3) "
   number: 7360
   graduate: true
-  descr: " Rigorous introduction to probability, using techniques of measure theory. Includes limit theorems, martingales, and stochastic processes.  Prerequisite: 7310 or equivalent. "
+  descr: " Rigorous introduction to probability, using techniques of measure theory. Includes limit theorems, martingales, and stochastic processes. Prerequisite: 7310 or equivalent. "
 
-- name: " Probability Theory II (3.00) "
+- name: " Probability Theory II (3) "
   number: 7370
   graduate: true
   descr: " Continuation of Probability Theory I. Elements of stochastic processes, including Brownian motion, continuous time martingales, and Markov processes. "
 
-- name: " Functional Analysis I (3.00) "
+- name: " Functional Analysis I (3) "
   number: 7410
   graduate: true
-  descr: " Studies the basic principles of linear analysis, including spectral theory of compact and selfadjoint operators.  Prerequisite: MATH 7340 and 7310, or equivalent. "
+  offered: Spring 2020
+  descr: " Studies the basic principles of linear analysis, including spectral theory of compact and selfadjoint operators. Prerequisite: MATH 7340 and 7310, or equivalent. "
 
-- name: " Functional Analysis II (3.00) "
+- name: " Functional Analysis II (3) "
   number: 7420
   graduate: true
-  descr: " Studies the spectral theory of unbounded operators, semigroups, and distribution theory.  Prerequisite: MATH 7410 or equivalent. "
+  descr: " Studies the spectral theory of unbounded operators, semigroups, and distribution theory. Prerequisite: MATH 7410 or equivalent. "
 
-- name: " Introduction to Mathematical Physics (3.00) "
+- name: " Introduction to Mathematical Physics (3) "
   number: 7450
   graduate: true
-  descr: " An introduction to classical mechanics, with topics in statistical and quantum mechanics, as time permits.  Prerequisite: MATH 5310. "
+  descr: " An introduction to classical mechanics, with topics in statistical and quantum mechanics, as time permits. Prerequisite: MATH 5310. "
 
-- name: " New Course in Mathematics (1.00 - 4.00) "
+- name: " New Course in Mathematics (1 - 4) "
   number: 7559
   graduate: true
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " This course provides the opportunity to offer a new topic in the subject of mathematics. "
 
-- name: " Homological Algebra (3.00) "
+- name: " Homological Algebra (3) "
   number: 7600
   graduate: true
-  offered: Fall 2019
-  descr: " Examines categories, functors, abelian catqegories, limits and colimits, chain complexes, homology and cohomology, homological dimension, derived functors, Tor and Ext, group homology, Lie algebra homology, spectral sequences, and calculations.  Prerequisite: MATH 5770. "
+  descr: " Examines categories, functors, abelian catqegories, limits and colimits, chain complexes, homology and cohomology, homological dimension, derived functors, Tor and Ext, group homology, Lie algebra homology, spectral sequences, and calculations. Prerequisite: MATH 5770. "
 
-- name: " Problems In Topology (3.00) "
+- name: " Problems In Topology (3) "
   number: 7705
   graduate: true
   descr: " A continuation of the theory presented in MATH 5770 and 7800 intensively training students to apply the theory to proving theorems and solving problems in topology, especially in preparation for the General Examination in Topology. Problems are based on those from past General Exams. This course is offered in the summer and restricted to Mathematics and Graduate Arts and Science students. "
 
-- name: " Algebra I (3.00) "
+- name: " Algebra I (3) "
   number: 7751
   graduate: true
-  offered: Fall 2019
-  descr: " Studies groups, rings, fields, modules, tensor products, and multilinear functions.  Prerequisite: MATH 5651, 5652, or equivalent. "
+  descr: " Studies groups, rings, fields, modules, tensor products, and multilinear functions. Prerequisite: MATH 5651, 5652, or equivalent. "
 
-- name: " Algebra II (3.00) "
+- name: " Algebra II (3) "
   number: 7752
   graduate: true
-  descr: " Studies groups, rings, fields, modules, tensor products, and multilinear functions.  Prerequisite: MATH 5651, 5652, or equivalent. "
+  offered: Spring 2020
+  descr: " Studies groups, rings, fields, modules, tensor products, and multilinear functions. Prerequisite: MATH 5651, 5652, or equivalent. "
 
-- name: " Algebra III (3.00) "
+- name: " Algebra III (3) "
   number: 7753
   graduate: true
-  offered: Fall 2019
-  descr: " Studies the Wedderburn theory, commutative algebra, and topics in advanced algebra.  Prerequisite: MATH 7751, 7752, or equivalent. "
+  descr: " Studies the Wedderburn theory, commutative algebra, and topics in advanced algebra. Prerequisite: MATH 7751, 7752, or equivalent. "
 
-- name: " Algebra IV (3.00) "
+- name: " Algebra IV (3) "
   number: 7754
   graduate: true
   descr: " Further topics in algebra. "
 
-- name: " Problems in Algebra (3.00) "
+- name: " Problems in Algebra (3) "
   number: 7755
   graduate: true
   descr: " A continuation of the theory presented in MATH 7751 and 7752 intensively training students to apply the theory to proving theorems in algebra, especially in preparation for the General Examination in Algebra. Problems are based on those from past General Exams. This course is offered in the summer and restricted to Mathematics and Graduate Arts and Science students. "
 
-- name: " Algebraic Topology I (3.00) "
+- name: " Algebraic Topology I (3) "
   number: 7800
   graduate: true
-  descr: " Topics include the fundamental group, covering spaces, covering transformations, the universal covering spaces, graphs and subgroups of free groups, and the fundamental groups of surfaces. Additional topics will be from homology, including chain complexes, simplicial and singular homology, exact sequences and excision, cellular homology, and classical applications.  Prerequisite: MATH 5352, 5770, or equivalent. "
+  offered: Spring 2020
+  descr: " Topics include the fundamental group, covering spaces, covering transformations, the universal covering spaces, graphs and subgroups of free groups, and the fundamental groups of surfaces. Additional topics will be from homology, including chain complexes, simplicial and singular homology, exact sequences and excision, cellular homology, and classical applications. Prerequisite: MATH 5352, 5770, or equivalent. "
 
-- name: " Algebraic Topology II (3.00) "
+- name: " Algebraic Topology II (3) "
   number: 7810
   graduate: true
-  offered: Fall 2019
-  descr: " Devoted to chomology theory: cohomology groups, the universal coefficient theorem, the Kunneth formula, cup products, the cohomology ring of manifolds, Poincare duality, and other topics if time permits.  Prerequisite: MATH 7800. "
+  descr: " Devoted to chomology theory: cohomology groups, the universal coefficient theorem, the Kunneth formula, cup products, the cohomology ring of manifolds, Poincare duality, and other topics if time permits. Prerequisite: MATH 7800. "
 
-- name: " Differential Topology (3.00) "
+- name: " Differential Topology (3) "
   number: 7820
   graduate: true
-  offered: Fall 2019
-  descr: " Topics include smooth manifolds and functions, tangent bundles and vector fields, embeddings, immersions, transversality, regular values, critical points, degree of maps, differential forms, de Rham cohomology, and connections.  Prerequisite: MATH 5310, 5770, or equivalent. "
+  descr: " Topics include smooth manifolds and functions, tangent bundles and vector fields, embeddings, immersions, transversality, regular values, critical points, degree of maps, differential forms, de Rham cohomology, and connections. Prerequisite: MATH 5310, 5770, or equivalent. "
 
-- name: " Fiber Bundles (3.00) "
+- name: " Fiber Bundles (3) "
   number: 7830
   graduate: true
-  descr: " Examines fiber bundles; induced bundles, principal bundles, classifying spaces, vector bundles, and characteristic classes, and introduces K-theory and Bott periodicity.  Prerequisite: MATH 7800. "
+  offered: Spring 2020
+  descr: " Examines fiber bundles; induced bundles, principal bundles, classifying spaces, vector bundles, and characteristic classes, and introduces K-theory and Bott periodicity. Prerequisite: MATH 7800. "
 
-- name: " Homotopy Theory (3.00) "
+- name: " Homotopy Theory (3) "
   number: 7840
   graduate: true
-  descr: " Definition of homotopy groups, homotopy theory of CW complexes, Huriewich theorem and Whitehead's theorem, Eilenberg-Maclane spaces, fibration and cofibration sequences, Postnikov towers, and obstruction theory.  Prerequisite: MATH 7800. "
+  descr: " Definition of homotopy groups, homotopy theory of CW complexes, Huriewich theorem and Whitehead's theorem, Eilenberg-Maclane spaces, fibration and cofibration sequences, Postnikov towers, and obstruction theory. Prerequisite: MATH 7800. "
 
-- name: " Partial Differential Equations (3.00) "
+- name: " Partial Differential Equations (3) "
   number: 8250
   graduate: true
-  descr: " Theory of distributions. Sobolev spaces and their properties (trace and embedding theorems). Theory of elliptic equations. Time-dependent partial differential equations: parabolic and hyperbolic equations. Topics in nonlinear partial differential equations.  Prerequisites: MATH 7410 and 7250. "
+  descr: " Theory of distributions. Sobolev spaces and their properties (trace and embedding theorems). Theory of elliptic equations. Time-dependent partial differential equations: parabolic and hyperbolic equations. Topics in nonlinear partial differential equations. Prerequisites: MATH 7410 and 7250. "
 
-- name: " Operator Theory I, II (3.00) "
+- name: " Operator Theory I, II (3) "
   number: 8310
   graduate: true
-  offered: Fall 2019
   descr: " Topics in the theory of operators on a Hilbert space and related areas of function theory. "
 
-- name: " Operator Theory I, II (3.00) "
+- name: " Operator Theory I, II (3) "
   number: 8320
   graduate: true
   descr: " Topics in the theory of operators on a Hilbert space and related areas of function theory. "
 
-- name: " Stochastic Calculus and Differential Equations (3.00) "
+- name: " Stochastic Calculus and Differential Equations (3) "
   number: 8360
   graduate: true
-  descr: " This course presents the basic theory of stochastic differential equations and provides examples of its applications.  It is an essential topic for students preparing to do research in probability. Topics covered include a review of the relevant stochastic process and martingale theory; stochastic calculus including Ito's formula; existence and uniqueness for stochastic differential equations, strong Markov property; and applications. Prerequisite: MATH 7360 and 7370, or instructor permission. "
+  offered: Spring 2020
+  descr: " This course presents the basic theory of stochastic differential equations and provides examples of its applications. It is an essential topic for students preparing to do research in probability. Topics covered include a review of the relevant stochastic process and martingale theory; stochastic calculus including Ito's formula; existence and uniqueness for stochastic differential equations, strong Markov property; and applications. Prerequisite: MATH 7360 and 7370, or instructor permission. "
 
-- name: " Random  Matrices (3.00) "
+- name: " Random Matrices (3) "
   number: 8380
   graduate: true
-  offered: Fall 2019
   descr: " Discusses fundamental problems and results of the theory of random matrices, and their connections to tools of algebra and combinatorics: Wigner's semicircle law, free probability, Gaussian, circular, and beta ensembles of random matrices, bulk and edge asymptotics and universality, Dyson's Brownian motion, determinantal point processes, and discrete analogues of random matrix models. Prerequisite: MATH 7360 or instructor permission. "
 
-- name: " Harmonic Analysis (3.00) "
+- name: " Harmonic Analysis (3) "
   number: 8410
   graduate: true
   descr: " This course studies real variable methods for singular integrals and related functional spaces. "
 
-- name: " Topics in Mathematical Physics (3.00) "
+- name: " Topics in Mathematical Physics (3) "
   number: 8450
   graduate: true
   descr: " Applies functional analysis to physical problems; scattering theory, statistical mechanics, and quantum field theory. "
 
-- name: " New Course in Mathematics (1.00 - 4.00) "
+- name: " Topics in Number Theory (3) "
+  number: 8510
+  graduate: true
+  descr: " Studies selected topics in algebraic or analytic number theory "
+
+- name: " New Course in Mathematics (1 - 4) "
   number: 8559
   graduate: true
-  offered: Fall 2019
   descr: " This course provides the opportunity to offer a new topic in the subject of mathematics. "
 
-- name: " Commutative Algebra (3.00) "
+- name: " Commutative Algebra (3) "
   number: 8600
   graduate: true
+  offered: Spring 2020
   descr: " The foundations of commutative algebra, algebraic number theory, or algebraic geometry. "
 
-- name: " Algebraic Geometry (3.00) "
+- name: " Algebraic Geometry (3) "
   number: 8620
   graduate: true
-  offered: Fall 2019
   descr: " Studies the foundations of algebraic geometry. "
 
-- name: " Algebraic Number Theory (3.00) "
+- name: " Algebraic Number Theory (3) "
   number: 8630
   graduate: true
+  offered: Spring 2020
   descr: " Theory of number fields and local fields, ramification theory, further topics as chosen by instructor. "
 
-- name: " Lie Groups (3.00) "
+- name: " Lie Groups (3) "
   number: 8700
   graduate: true
   descr: " Studies basic results concerning Lie groups, Lie algebras, and the correspondence between them. "
 
-- name: " Lie Algebras (3.00) "
+- name: " Lie Algebras (3) "
   number: 8710
   graduate: true
   descr: " Studies basic structure theory of Lie algebras. "
 
-- name: " Differential Geometry (3.00) "
+- name: " Differential Geometry (3) "
   number: 8720
   graduate: true
+  offered: Spring 2020
   descr: " Studies differential geometry in the large; connections; Riemannian geometry; Gauss-Bonnet formula; and differential forms. "
 
-- name: " Topology of Manifolds (3.00) "
+- name: " Topology of Manifolds (3) "
   number: 8750
   graduate: true
-  offered: Fall 2019
-  descr: " Studies regular and critical values, gradient flow, handle decompositions, Morse theory, h-cobordism theorem, Dehn's lemma in dimension 3, and disk theorem in dimension 4.  Prerequisite: Math 5770. "
+  descr: " Studies regular and critical values, gradient flow, handle decompositions, Morse theory, h-cobordism theorem, Dehn's lemma in dimension 3, and disk theorem in dimension 4. Prerequisite: Math 5770. "
 
-- name: " Topics in Algebraic Topology (3.00) "
+- name: " Topics in Algebraic Topology (3) "
   number: 8850
   graduate: true
+  offered: Spring 2020
   descr: " Selected advanced topics in algebraic topology. "
 
-- name: " Group Theory (3.00) "
+- name: " Group Theory (3) "
   number: 8851
   graduate: true
+  offered: Spring 2020
   descr: " Studies the basic structure theory of groups, especially finite groups. "
 
-- name: " Representation Theory (3.00) "
+- name: " Representation Theory (3) "
   number: 8852
   graduate: true
-  offered: Fall 2019
   descr: " Studies the foundations of representation and character theory of finite groups. "
 
-- name: " Algebraic Combinatorics (3.00) "
+- name: " Algebraic Combinatorics (3) "
   number: 8853
   graduate: true
+  offered: Spring 2020
   descr: " Covers methods of abstract algebra that can be applied to various combinatorial problems and combinatorial methods to approach problems in representation theory, algebraic geometry, and homological algebra. "
 
-- name: " Theory of Algebras (3.00) "
+- name: " Theory of Algebras (3) "
   number: 8855
   graduate: true
   descr: " Studies the basic structure theory of associative or nonassociative algebras. "
 
-- name: " Transformation Groups (3.00) "
+- name: " Transformation Groups (3) "
   number: 8880
   graduate: true
   descr: " Studies groups of transformations operating on a space; properties of fixed-point sets, orbit spaces; and local and global invariants. "
 
-- name: " Thesis (3.00 - 12.00) "
+- name: " Thesis (3 - 12) "
   number: 8995
   graduate: true
   descr: " Thesis "
 
-- name: " Non-Topical Research, Preparation for Research (1.00 - 12.00) "
+- name: " Non-Topical Research, Preparation for Research (1 - 12) "
   number: 8998
   graduate: true
-  offered: Fall 2019
   descr: " For master's research, taken before a thesis director has been selected. "
 
-- name: " Non-Topical Research (1.00 - 12.00) "
+- name: " Non-Topical Research (1 - 12) "
   number: 8999
   graduate: true
-  offered: Fall 2019
   descr: " For master's thesis, taken under the supervision of a thesis director. "
 
-- name: " History of  Mathematics Seminar (1.00 - 3.00) "
+- name: " History of Mathematics Seminar (1 - 3) "
   number: 9010
   graduate: true
   descr: " Discusses subjects from the history of mathematics. "
 
-- name: " Harmonic Analysis and PDEs (3.00) "
+- name: " Harmonic Analysis and PDEs (3) "
   number: 9250
   graduate: true
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " Harmonic Analysis and PDEs seminar "
 
-- name: " Operator Theory Seminar (3.00) "
+- name: " Operator Theory Seminar (3) "
   number: 9310
   graduate: true
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " Operator Theory Seminar "
 
-- name: " Probability Seminar (3.00) "
+- name: " Probability Seminar (3) "
   number: 9360
   graduate: true
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " Probability Seminar "
 
-- name: " Galois-Grothendieck Seminar (3.00) "
+- name: " Galois-Grothendieck Seminar (3) "
   number: 9410
   graduate: true
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " Galois-Grothendieck Seminar "
 
-- name: " Mathematical Physics Seminar (3.00) "
+- name: " Mathematical Physics Seminar (3) "
   number: 9450
   graduate: true
   descr: " Mathematical Physics Seminar "
 
-- name: " New Course in Mathematics (1.00 - 4.00) "
+- name: " New Course in Mathematics (1 - 4) "
   number: 9559
   graduate: true
   descr: " This course provides the opportunity to offer a new topic in the subject of mathematics. "
 
-- name: " Topology Seminar (3.00) "
+- name: " Topology Seminar (3) "
   number: 9800
   graduate: true
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " Topology Seminar "
 
-- name: " Geometry Seminar (1.00 - 3.00) "
+- name: " Geometry Seminar (1 - 3) "
   number: 9820
   graduate: true
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " Discusses subjects from geometry. "
 
-- name: " Algebra Seminar (3.00) "
+- name: " Algebra Seminar (3) "
   number: 9950
   graduate: true
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " Algebra Seminar "
 
-- name: " Independent Research (3.00 - 9.00) "
+- name: " Independent Research (3 - 9) "
   number: 9995
   graduate: true
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " Independent Research "
 
-- name: " Non-Topical Research, Preparation for Doctoral Research (1.00 - 12.00) "
+- name: " Non-Topical Research, Preparation for Doctoral Research (1 - 12) "
   number: 9998
   graduate: true
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " For doctoral research, taken before a dissertation director has been selected. "
 
-- name: " Non-Topical Research (1.00 - 12.00) "
+- name: " Non-Topical Research (1 - 12) "
   number: 9999
   graduate: true
-  offered: Fall 2019
+  offered: Spring 2020
   descr: " The Mathematics Colloquium is held weekly, the sessions being devoted to research activities of students and faculty members, and to reports by visiting mathematicians on current work of interest. For doctoral dissertation, taken under the supervision of a dissertation director. "
 
