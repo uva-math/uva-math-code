@@ -19,7 +19,7 @@ nav_parent: IMS
 
 - Lecture 1 - "**Random walks: simple and self-avoiding**". Wednesday, February 12, 2020. Time and location TBA
 - Lecture 2 - "**Conformal invariance and two-dimensional critical phenomenon**". Thursday, February 13, 2020. Time and location TBA
-- Lecture 3 - "**Loop measures and the loop-erased random walk**". Friday, February 13, 2020. Time and location TBA
+- Lecture 3 - "**Loop measures and the loop-erased random walk**". Friday, February 14, 2020. Time and location TBA
 
 <!--more-->
 
