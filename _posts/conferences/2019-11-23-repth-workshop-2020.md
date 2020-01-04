@@ -15,6 +15,8 @@ Institute of Mathematical Science
 will hold the workshop on 
 <a href="{{site.url}}/ims/rt-workshop-spring-2020/">Representations of Algebraic Groups and Quantum Groups</a>.
 
+##### [PDF Poster]({{site.url}}/IMS/parshall-workshop-spring-2020/parshall-workshop-spring-2020-poster.pdf)
+
 The workshop is followed by
 an AMS special session on "<a href="http://www.ams.org/meetings/sectional/2273_program_ss13.html#title">Representations of algebraic groups and quantum groups: a tribute to Cline-Parshall-Scott (CPS)</a>", Charlottesville, Virginia, March 13-15, 2020
 

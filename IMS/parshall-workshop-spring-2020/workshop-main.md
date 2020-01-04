@@ -9,6 +9,8 @@ nav_parent: IMS
 
 <b>Thursday March 12 — Friday March 13, 2020</b>
 
+##### [PDF Poster]({{site.url}}/IMS/parshall-workshop-spring-2020/parshall-workshop-spring-2020-poster.pdf)
+
 Workshop at Department of Mathematics, University of Virginia, Charlottesville, VA
 
 Organizers: <a href="https://www.math.uga.edu/directory/people/daniel-k-nakano">Dan Nakano (University of Georgia)</a>&nbsp;&nbsp;
