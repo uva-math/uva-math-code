@@ -94,8 +94,8 @@ events: true
           {{ post.excerpt | markdownify }}
           <a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>
         </div>
-        {% endif %}
         {% endunless %}
+        {% endif %}
         {% endfor %}
 
         <div class="list-group h5 hidden-lg-up">
