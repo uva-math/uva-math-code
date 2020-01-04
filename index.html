@@ -42,6 +42,25 @@ events: true
           {% endif %}
           {{ post.excerpt | markdownify }}
           <a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>
+
+          <!-- Swiper JS -->
+            <script src="../css/swiper.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+              var swiper = new Swiper('.swiper-container', {
+                spaceBetween: 30,
+                centeredSlides: true,
+                autoplay: {
+                  delay: 2500,
+                  disableOnInteraction: true,
+                },
+                pagination: {
+                  el: '.swiper-pagination',
+                  clickable: true,
+                },
+              });
+            </script>
         </div>
         {% endif %}
         {% endfor %}
