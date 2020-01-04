@@ -2,7 +2,7 @@
 layout: post
 title: Sara Maloni receives CAREER award by NSF
 comments: false
-categories: news awards major-news
+categories: news awards major-news swiper-news
 published: true
 image: __SITE_URL__/img/people/Maloni.jpg
 image-alt: Sara Maloni
