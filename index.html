@@ -24,31 +24,10 @@ events: true
     <div class="row row-offcanvas row-offcanvas-right">
       <div class="col-12 col-md-8">
 
-        {% assign major-news_counter = 0 %}
-        {% for post in site.categories['news'] limit:10 %}
-        {% if post.categories contains 'major-news' and major-news_counter == 0 %}
-        {% assign major-news_id = post.id %}
-        {% assign major-news_counter = major-news_counter | plus:1 %}
-        <div class="jumbotron">
-          <span class="{% if post.title.size<35 %}bodoni-h2{% else %}h2{% endif %} mb-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{post.title}}</a></span>
-          {% if post.event-date != null and post.multi-day-event %}
-          <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
-          {% if post.event-date != null and post.multi-day-event != true %}
-          <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
-          {% if post.image != null %}
-            {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %};max-height:400px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
-          {% endif %}
-          {{ post.excerpt | markdownify }}
-          <a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>
-        </div>
-        {% endif %}
-        {% endfor %}
-
-
-      <!-- Code for the news roll -->
+            <!-- Code for the news roll -->
       
       <div class="swiper-pagination mt-1"></div>
-      <div class="jumbotron" style="background:#DADADA">
+      <div class="jumbotron" style="padding: 12px">
       <div class="swiper-container mt-4">
       <div class="swiper-wrapper">
         {% assign swiper-news_counter = 0 %}
@@ -56,14 +35,13 @@ events: true
         {% if post.categories contains 'swiper-news' and swiper-news_counter < 4 %}
         {% assign swiper-news_id = post.id %}
         {% assign swiper-news_counter = swiper-news_counter | plus:1 %}
-          <div class="swiper-slide">
-                <span class="h4 mb-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{post.title}}</a></span>
+          <div class="swiper-slide" style="font-size: 0.9em">
+                <span class="h6 mb-1"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{post.title}}&nbsp;<span class="btn-secondary">&raquo;</span></a></span>
                 {% if post.event-date != null and post.multi-day-event %}
                 <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
                 {% if post.event-date != null and post.multi-day-event != true %}
                 <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
                 {{ post.excerpt | markdownify }}
-                <a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>
           </div>
       {% endif %}
       {% endfor %}
@@ -92,6 +70,27 @@ events: true
             // },
           });
         </script>
+
+
+        {% assign major-news_counter = 0 %}
+        {% for post in site.categories['news'] limit:10 %}
+        {% if post.categories contains 'major-news' and major-news_counter == 0 %}
+        {% assign major-news_id = post.id %}
+        {% assign major-news_counter = major-news_counter | plus:1 %}
+        <div class="jumbotron" style="background:#DADADA;">
+          <span class="{% if post.title.size<35 %}bodoni-h2{% else %}h2{% endif %} mb-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{post.title}}</a></span>
+          {% if post.event-date != null and post.multi-day-event %}
+          <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
+          {% if post.event-date != null and post.multi-day-event != true %}
+          <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
+          {% if post.image != null %}
+            {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %};max-height:400px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
+          {% endif %}
+          {{ post.excerpt | markdownify }}
+          <a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>
+        </div>
+        {% endif %}
+        {% endfor %}
 
         <div class="list-group h5 hidden-lg-up">
           {% include front_page_link_list.html classes="orange-item" %}
