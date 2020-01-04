@@ -37,8 +37,6 @@ The workshop is held on the occasion of Brian's retirement.
 1. Pham Tiep (Rutgers University)
 1. Wilberd van der Kallen (Utrecht University)
 
-<h5 class="mb-5"><a href="#">Registration and financial support (TBA)</a></h5>
-
 We gratefully acknowledge financial support from the UVa Mathematics Department and Institute of Mathematical Science
 
 <img src="{{site.url}}/img/news_events/cps1993.jpeg" alt="CPS at White Sands, 1993">
