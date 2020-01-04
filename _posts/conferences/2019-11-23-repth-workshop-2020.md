@@ -4,7 +4,7 @@ title: "Representations of Algebraic Groups and Quantum Groups"
 event-date: 2020-03-12 08:00:00
 multi-day-event: true
 comments: false
-categories: news events conferences major-news swiper-news
+categories: news events conferences major-news
 published: true
 image: __SITE_URL__/img/news_events/cps1993.jpeg
 image-alt: "CPS at White Sands, 1993"
