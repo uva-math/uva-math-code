@@ -41,7 +41,7 @@ events: true
                 <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
                 {% if post.event-date != null and post.multi-day-event != true %}
                 <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
-                {{ post.excerpt | markdownify | truncatewords: 30 }}
+                {{ post.excerpt | markdownify | truncatewords: 40, " &bull; read more &raquo;" }}
                 </a>
           </div>
       {% endif %}
