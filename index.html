@@ -36,12 +36,13 @@ events: true
         {% assign swiper-news_id = post.id %}
         {% assign swiper-news_counter = swiper-news_counter | plus:1 %}
           <div class="swiper-slide" style="font-size: 0.9em">
-                <span class="h6 mb-1"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{post.title}}&nbsp;<span class="btn-secondary">&raquo;</span></a></span>
+                <a href="{{site.url }}{{ post.url }}" style="color:inherit;"><span class="h6 mb-1">{{post.title}}</span>
                 {% if post.event-date != null and post.multi-day-event %}
                 <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
                 {% if post.event-date != null and post.multi-day-event != true %}
                 <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
                 {{ post.excerpt | markdownify }}
+                </a>
           </div>
       {% endif %}
       {% endfor %}
