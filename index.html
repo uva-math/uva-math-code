@@ -36,7 +36,7 @@ events: true
         {% assign swiper-news_id = post.id %}
         {% assign swiper-news_counter = swiper-news_counter | plus:1 %}
           <div class="swiper-slide" style="font-size: 0.9em">
-            <span class="h4 mb-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{post.title}}</a></span>
+          <a href="{{site.url }}{{ post.url }}" style="color:inherit;"><span class="h4 mb-3">{{post.title}}</span>
           {% if post.event-date != null and post.multi-day-event %}
           <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
           {% if post.event-date != null and post.multi-day-event != true %}
@@ -45,7 +45,7 @@ events: true
             {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %};max-height:400px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
           {% endif %}
           {{ post.excerpt | markdownify }}
-          <a class="btn btn-secondary" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>
+          </a>
           </div>
       {% endif %}
       {% endfor %}
