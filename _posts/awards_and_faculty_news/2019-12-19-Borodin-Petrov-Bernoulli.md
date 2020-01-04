@@ -2,7 +2,7 @@
 layout: post
 title: Leonid Petrov will receive the 2020 Bernoulli Prize for a joint paper
 comments: false
-categories: news awards
+categories: news awards swiper-news
 published: true
 image: __SITE_URL__/img/news_events/Borodin_Petrov.jpg
 image-alt: Alexei Borodin and Leonid Petrov
