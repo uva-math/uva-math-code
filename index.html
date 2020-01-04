@@ -24,10 +24,31 @@ events: true
     <div class="row row-offcanvas row-offcanvas-right">
       <div class="col-12 col-md-8">
 
+        {% assign major-news_counter = 0 %}
+        {% for post in site.categories['news'] limit:10 %}
+        {% if post.categories contains 'major-news' and major-news_counter == 0 %}
+        {% assign major-news_id = post.id %}
+        {% assign major-news_counter = major-news_counter | plus:1 %}
+        <div class="jumbotron">
+          <span class="{% if post.title.size<35 %}bodoni-h2{% else %}h2{% endif %} mb-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{post.title}}</a></span>
+          {% if post.event-date != null and post.multi-day-event %}
+          <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
+          {% if post.event-date != null and post.multi-day-event != true %}
+          <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
+          {% if post.image != null %}
+            {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %};max-height:400px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
+          {% endif %}
+          {{ post.excerpt | markdownify }}
+          <a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>
+        </div>
+        {% endif %}
+        {% endfor %}
+
+
       <!-- Code for the news roll -->
       
       <div class="swiper-pagination mt-1"></div>
-      <div class="jumbotron">
+      <div class="jumbotron" style="background:#DADADA">
       <div class="swiper-container mt-4">
       <div class="swiper-wrapper">
         {% assign swiper-news_counter = 0 %}
@@ -82,7 +103,8 @@ events: true
         {% assign usual-news-counter = 0 %}
         <div class="row zebra-md">
           {% for post in site.categories['news'] %}
-          {% if post.hide-this-item != true and usual-news-counter <= 5 %}
+          {% unless post.categories contains 'swiper-news' %}
+          {% if post.id != major-news_id and post.hide-this-item != true and usual-news-counter <= 5 %}
             {% assign usual-news-counter = usual-news-counter | plus:1 %}
             <div class="col-12 col-lg-6 my-bordered-news-snippets">
               {% if post.image != null %}
@@ -97,6 +119,7 @@ events: true
               <p><a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal"  role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a></p>
             </div><!--/span-->
           {% endif %}
+          {% endunless %}
           {% endfor %}
           <div class="col-lg-6"></div>
           <div class="col-lg-6">
