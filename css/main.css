@@ -20,6 +20,16 @@ a:focus, a:hover {
   text-decoration: underline;
 }
 
+a.main-roll-link:link, a.main-roll-link:visited {
+  color: inherit;
+}
+
+a.main-roll-link:focus, a.main-roll-link:hover {
+  color: #e57200;
+  text-decoration: underline;
+}
+
+
 @media (min-width: 1200px) {
   .container-wide {
     width: 1200px;
