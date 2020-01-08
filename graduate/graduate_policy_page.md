@@ -5,7 +5,7 @@ permalink: /graduate/policies/
 nav_id: Policies
 nav_parent: Graduate
 nav_nesting: true
-nav_weight: 8
+nav_weight: 10
 ---
 
 <h1 class="mb-3">Graduate program policies</h1>

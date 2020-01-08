@@ -4,7 +4,9 @@ layout: ug_page
 ug_policy: true
 permalink: /content/distinguished-major-program-dmp/
 nav_parent: Undergraduate
-nav_weight: 10
+nav_weight: 8
+nav_id: Distinguished Major Program
+nav_nesting: true
 tooltips: true
 ---
 <h1 class="mb-3">Distinguished Major Program</h1>

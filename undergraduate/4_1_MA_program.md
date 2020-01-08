@@ -5,6 +5,8 @@ ug_policy: true
 permalink: /content/41-or-31-bama-program/
 nav_parent: Undergraduate
 nav_weight: 8
+nav_id: 4+1 (or 3+1) BA/MA Program
+nav_nesting: true
 ---
 
 <h1 class="mb-3">4+1 (or 3+1) BA/MA Program</h1>
