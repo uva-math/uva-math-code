@@ -32,7 +32,7 @@ events: true
       <div class="swiper-wrapper">
         {% assign swiper-news_counter = 0 %}
         {% for post in site.categories['news'] limit:20 %}
-        {% if post.categories contains 'swiper-news' and swiper-news_counter < 5 %}
+        {% if post.categories contains 'swiper-news' and swiper-news_counter < 6 %}
         {% assign swiper-news_id = post.id %}
         {% assign swiper-news_counter = swiper-news_counter | plus:1 %}
           <div class="swiper-slide">
@@ -45,7 +45,8 @@ events: true
             {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;;max-height:175px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
           {% endif %}
           <a href="{{site.url }}{{ post.url }}" class="main-roll-link hidden-xs-down">
-          {{ post.excerpt | markdownify | strip_html | markdownify  }}
+          {% unless post.good-md %} {{ post.excerpt | markdownify | strip_html | markdownify  }}{% else %}
+          {{ post.excerpt | markdownify }}{% endunless %}
           </a>
           </div>
       {% endif %}
