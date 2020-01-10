@@ -3,7 +3,7 @@ UVA_id: it2h
 lastname: Timchenko
 name: Irina
 general_position: lecturer
-position: Instructor
+position: Lecturer
 office: 324 Kerchof Hall
 phone: 434-243-4942
 email: it2h@virginia.edu
