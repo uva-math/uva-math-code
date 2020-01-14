@@ -8,7 +8,7 @@ office: 121 Kerchof Hall
 phone: 434-982-2785
 email: mas3er@virginia.edu
 image: mark.jpg
-personal_page:markschrec.github.io
+personal_page: markschrec.github.io
 
 
 ---
