@@ -7,8 +7,8 @@ position: Graduate Student
 office: 121 Kerchof Hall
 phone: 434-982-2785
 email: mas3er@virginia.edu
-image:
-personal_page:
+image: mark.jpg
+personal_page:markschrec.github.io
 
 
 ---
