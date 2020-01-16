@@ -6,6 +6,34 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Fall 2019
+      
++ The Geometries of Surfaces
+  - Text: Low-Dimensional Geometry, Bonahon
+  - Mentee: Haoyu Li
+  - Mentor: Ian Runnels
+
++ Point-set Topology
+  - Text: Topology, Munkres
+  - Mentee: Dean Sublett
+  - Mentor: Shunyu Wan
+
++ Fibered Categories
+  - Text: Categorical Logic and Type Theory, Jacobs
+  - Mentee: Nijat Khanbabayev
+  - Mentor: John Harnois
+
++ Character Theory
+  - Text: Linear Representations of Finite Groups, Serre 
+  - Mentee: Greg Conneen
+  - Mentee: Spencer Martin
+  - Mentor: Chris Lloyd
+      
++ Alexander's Theorem
+  - Text: The Knot Book, Adams
+  - Mentee: Noah Brenny
+  - Mentor: Rostislav Akhmechet  
+
 ### Spring 2019
 
 + Gröbner bases and applications in characteristic p
