@@ -17,9 +17,9 @@ nav_parent: IMS
 
 <h5 class="mt-1 mb-4"><a href="https://math.uchicago.edu/~lawler/">Greg Lawler</a> (University of Chicago)</h5>
 
-- Lecture 1 - "**Random walks: simple and self-avoiding**". Wednesday, February 12, 2020. Time and location TBA
-- Lecture 2 - "**Conformal invariance and two-dimensional critical phenomenon**". Thursday, February 13, 2020. Time and location TBA
-- Lecture 3 - "**Loop measures and the loop-erased random walk**". Friday, February 14, 2020. Time and location TBA
+- Lecture 1 - "**Random walks: simple and self-avoiding**". Wednesday, February 12, 2020. 5-6pm, location TBA
+- Lecture 2 - "**Conformal invariance and two-dimensional critical phenomenon**". Thursday, February 13, 2020. 5-6pm, location TBA
+- Lecture 3 - "**Loop measures and the loop-erased random walk**". Friday, February 14, 2020. 4-5pm, location TBA
 
 <!--more-->
 
