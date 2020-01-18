@@ -7,10 +7,10 @@ permalink: /ims/lectures/greg-lawler/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
-image: __SITE_URL__/img/IMS/Lawler-poster.png
+image: __SITE_URL__/img/IMS/Lawler_poster.png
 image-alt: Greg Lawler
 image-tall: true
-image-address: __SITE_URL__/img/IMS/Lawler-poster.pdf
+image-address: __SITE_URL__/img/IMS/Lawler_poster.pdf
 more-text: Lectures and abstracts
 nav_parent: IMS
 ---
