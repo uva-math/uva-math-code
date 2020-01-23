@@ -10,7 +10,7 @@
   webpage: 'http://pi.math.virginia.edu/colloq/'
   google_cal_id: 'j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com'
   seminar_weight: 1
-  regular_times: Thursdays at 3:45 in Monroe 116. Refreshments served at 3:15 in Ker 314 (Math Lounge)
+  regular_times: Thursdays at 3:45, Monroe 116. Refreshments served at 3:15 in Ker 314 (Math Lounge)
   contact:
     - UVA_id: sm4cw
     - UVA_id: lap5r
@@ -22,7 +22,7 @@
   webpage: 'http://pi.math.virginia.edu/algebra/'
   google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
   seminar_weight: 20
-  regular_times: Wednesdays and some Fridays, 3:30-4:30pm, New Cabell 332
+  regular_times: Wednesdays and some Fridays, 3:30-4:30pm, Maury 113
   contact:
     - UVA_id: mve2x
 
@@ -32,7 +32,7 @@
   webpage: 'http://pi.math.virginia.edu/geometry/'
   google_cal_id: '6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com'
   seminar_weight: 30
-  regular_times: Tuesdays at 2:00 in New Cabell 315
+  regular_times: Tuesdays at 2:00, KER 326
   information: |
     The Geometry Seminar talks usually focus on aspects of low-dimensional topology and geometry, including knot theory and categorification, Floer homology, 3- and 4-dimensional manifolds, and symplectic and contact topology. The lectures are often given by outside speakers, however UVa graduate students and faculty give talks as well.
   contact:
@@ -46,7 +46,7 @@
   webpage: 'http://pi.math.virginia.edu/diffeq/'
   google_cal_id: '5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com'
   seminar_weight: 40
-  regular_times: Tuesdays at 3:30 in Monroe hall 118
+  regular_times: Tuesdays at 3:30, KER 317
   information: |
     Harmonic Analysis and PDE seminar features a mix of local speakers (graduate students and faculty) and visitors. The ideal topics live on the interface between the two fields; luckily, the interface has been steadily expanding.
   contact:
@@ -75,7 +75,7 @@
   webpage: 'http://faculty.virginia.edu/Probability/'
   google_cal_id: 'f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com'
   seminar_weight: 90
-  regular_times: Wednesdays at 4:35 in Ker 128
+  regular_times: Wednesdays at 4:35, KER 128
   information: |
     The Probability Seminar is the place to see talks on active research topics in probability theory, as well as informal discussions of basic notions of probability.  We typically have invited speakers every 2-3 weeks presenting a wide array of research in probability. Most other weeks are informal discussions led by local participants, often graduate students discussing recently studied topics. The seminar is open to all. Feel free to attend regularly or occasionally.
   contact:
@@ -89,7 +89,7 @@
   webpage: 'http://pi.math.virginia.edu/topology/'
   google_cal_id: 'pce8r0mnja2do20vkku2gslamk@group.calendar.google.com'
   seminar_weight: 100
-  regular_times: Thursdays at 2:00 in Ker 326
+  regular_times: Thursdays at 2:00, KER 326
   information: |
     Topology Seminar talks are on recent developments in algebraic topology—including homotopy theory, ordinary and extraordinary homology and cohomology, cobordism theory, and K-theory—and related subjects like differential topology and homological algebra.
   contact:
@@ -119,7 +119,7 @@
   google_cal_id: 'ftc1mbjbp95irpj6t9e2tfl020@group.calendar.google.com'
   webpage: 'http://www.people.virginia.edu/~des5e/sotoa/sotoa.html'
   seminar_weight: 60
-  regular_times: Tuesdays at 4:00 in Ker 326
+  regular_times: Tuesdays at 4:00, KER 326
   information: |
     The Seminar in Operator Theory and Operator Algebras covers a wide variety of topics in functional analysis, including <script type="math/tex">C^*</script>-algebras and von Neumann algebras, composition operators, Banach spaces, noncommutative convexity, and applications of complex function theory. Most lectures are research level, but we also feature expository talks.
   contact:
@@ -131,7 +131,7 @@
   webpage: 'http://pi.math.virginia.edu/gradsem/'
   google_cal_id: 'n6dhh35l2td9i73ii6dbkpqtro@group.calendar.google.com'
   seminar_weight: 110
-  regular_times: Fridays at 2:30 in Ker 326
+  regular_times: Fridays at 2:30, KER 326
   information: |
     The Graduate Seminar provides a friendly atmosphere for grad students to give talks about current interests, research, or teaching. This seminar is for grad students only and encourages audience participation while keeping the intensity level below that of other seminars.
     <br><br>
@@ -149,7 +149,7 @@
   published_in_nav: false
   google_cal_id: '8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com'
   seminar_weight: 9000
-  regular_times: Tuesdays at 3:30 in Clark 102
+  regular_times: Tuesdays at 3:30, Clark 102
   information: |
     The Galois-Grothendieck Seminar is an expository seminar about various aspects of Galois theory and arithmetic geometry. Each semester/year has a coherent program, with graduate students contributing many of the talks.
   contact:
