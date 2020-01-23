@@ -8,7 +8,7 @@ office: 125 Kerchof Hall
 phone: 434-243-1174
 email: ra5aq@virginia.edu
 image: __SITE_URL__/img/people/2019-fall/Akhmechet.jpg
-personal_page:
+personal_page: https://sites.google.com/view/rossakhmechet
 
 
 ---
