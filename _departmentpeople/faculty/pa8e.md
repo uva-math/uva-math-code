@@ -16,6 +16,6 @@ grad_special_areas:
   - groups
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
 
 ---

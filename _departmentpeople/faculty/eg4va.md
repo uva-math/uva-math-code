@@ -10,7 +10,7 @@ email: eg4va@virginia.edu
 image: __SITE_URL__/img/people/2019-fall/Gazaki.jpg
 personal_page: "http://www-personal.umich.edu/~gazaki/index.html"
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 grad_general_areas:
   - algebra

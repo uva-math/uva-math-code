@@ -11,6 +11,6 @@ image: __SITE_URL__/img/people/McCrimmon.jpg
 personal_page: http://pi.math.virginia.edu/Faculty/McCrimmon/
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
 
 ---

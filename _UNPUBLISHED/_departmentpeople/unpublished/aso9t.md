@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Obus.jpg
 personal_page: http://people.virginia.edu/~aso9t/
 published: false
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 grad_general_areas:
   - algebra

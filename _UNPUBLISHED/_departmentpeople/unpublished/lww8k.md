@@ -12,7 +12,7 @@ image: __SITE_URL__/img/people/West.jpg
 personal_page:
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
 
 
 ---

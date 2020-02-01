@@ -11,7 +11,7 @@ image: '__SITE_URL__/img/people/2017-fall/Liron Speyer.jpg'
 personal_page: http://www.people.virginia.edu/~ls2zz/
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
 
 
 ---

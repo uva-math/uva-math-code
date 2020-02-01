@@ -13,7 +13,7 @@ personal_page: http://pi.math.virginia.edu/Faculty/Kuhn/
 
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
 
 grad_general_areas:
   - geometry
