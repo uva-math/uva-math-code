@@ -12,6 +12,6 @@ personal_page:
 published: false
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 ---

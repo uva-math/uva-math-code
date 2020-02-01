@@ -11,6 +11,6 @@ image: __SITE_URL__/img/people/Ono-tn.jpg
 personal_page: https://uva.theopenscholar.com/ken-ono
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
 ---

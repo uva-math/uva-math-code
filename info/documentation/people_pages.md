@@ -34,7 +34,7 @@ email: obus@virginia.edu
 image: __SITE_URL__/img/people/Obus.jpg
 personal_page: http://people.virginia.edu/~aso9t/
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 grad_general_areas:
   - algebra
@@ -139,7 +139,7 @@ The listings of people by research area such as [{{site.url}}/research/analysis/
 
 {% highlight html %}
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 {% endhighlight %}
 

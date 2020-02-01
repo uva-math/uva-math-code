@@ -11,6 +11,6 @@ image: __SITE_URL__/img/people/Scott.jpg
 personal_page: http://people.virginia.edu/~lls2l/
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 ---

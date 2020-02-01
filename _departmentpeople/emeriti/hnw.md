@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Ward.jpg
 personal_page: http://people.virginia.edu/~hnw/home.html
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 ---
 

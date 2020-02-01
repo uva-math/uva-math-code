@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Dunkl.jpg
 personal_page: http://people.virginia.edu/~cfd5z/home.html
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory&nbsp;$$\cup$$&nbsp;Number Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
 
 ---
