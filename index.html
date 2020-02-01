@@ -49,7 +49,7 @@ events: true
           {{ post.excerpt | markdownify | strip_html | markdownify  }}
           </a>
           {% else %}
-          {{ post.excerpt | markdownify }}{% endunless %}
+          <div class="hidden-xs-down">{{ post.excerpt | markdownify }}{% endunless %}</div>
           </div>
       {% endif %}
       {% endfor %}
