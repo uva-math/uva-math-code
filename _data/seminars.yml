@@ -10,7 +10,7 @@
   webpage: 'http://pi.math.virginia.edu/colloq/'
   google_cal_id: 'j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com'
   seminar_weight: 1
-  regular_times: Thursdays at 3:45, Monroe 116. Refreshments served at 3:15 in Ker 314 (Math Lounge)
+  regular_times: Thursdays at 3:45, MONROE 116. Refreshments served at 3:15, KER 314 (Math Lounge)
   contact:
     - UVA_id: sm4cw
     - UVA_id: lap5r
@@ -22,7 +22,7 @@
   webpage: 'http://pi.math.virginia.edu/algebra/'
   google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
   seminar_weight: 20
-  regular_times: Wednesdays and some Fridays, 3:30-4:30pm, Maury 113
+  regular_times: Wednesdays and some Fridays, 3:30-4:30pm, MAURY 113
   contact:
     - UVA_id: mve2x
 
@@ -32,7 +32,7 @@
   webpage: 'http://pi.math.virginia.edu/geometry/'
   google_cal_id: '6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com'
   seminar_weight: 30
-  regular_times: Tuesdays at 2:00, Dell 2 103
+  regular_times: Tuesdays at 2:00, DELL 2 103
   information: |
     The Geometry Seminar talks usually focus on aspects of low-dimensional topology and geometry, including knot theory and categorification, Floer homology, 3- and 4-dimensional manifolds, and symplectic and contact topology. The lectures are often given by outside speakers, however UVa graduate students and faculty give talks as well.
   contact:
@@ -62,7 +62,7 @@
   webpage: 'http://pi.math.virginia.edu/mathphys/'
   google_cal_id: 'k613quo3pribde7jrm5e12ft1c@group.calendar.google.com'
   seminar_weight: 50
-  regular_times: Wednesdays and some Fridays at 2:00 in Ker 326
+  regular_times: Wednesdays and some Fridays at 2:00, KER 326
   information: |
     The Mathematical Physics Seminar features talks on a wide variety of topics such as, for instance, Schrödinger operators, the mathematics of quantum systems, statistical mechanics, the renormalization group and quantum field theory. Lectures typically are of research level and are given by local as well as outside speakers. Graduate students in mathematical physics are encouraged to give presentations at this seminar about their ongoing research. Everyone is welcome to attend.
   contact:
@@ -102,7 +102,7 @@
   webpage: 'http://pi.math.virginia.edu/mathclub/'
   google_cal_id: 'lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com'
   seminar_weight: 120
-  regular_times: Tuesdays at 5:00 in Ker 314 (Math lounge)
+  regular_times: Tuesdays at 5:00, KER 314 (Math lounge)
   information: |
     The Undergraduate Math Club at University of Virginia is a weekly seminar and a club (with an official CIO status) for students interested in mathematics and related areas. It meets on Tuesdays at 5pm for 60-80 minutes. The activities vary from talks by faculty members, graduate and undergraduate students to presentations by local industries, panel discussions (on REUs, careers for math majors, etc.), and outside activities such as a movie outing or a visit to a 3D printing lab.
     <br><br>
@@ -149,7 +149,7 @@
   published_in_nav: false
   google_cal_id: '8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com'
   seminar_weight: 9000
-  regular_times: Tuesdays at 3:30, Clark 102
+  regular_times: Tuesdays at 3:30, CLARK 102
   information: |
     The Galois-Grothendieck Seminar is an expository seminar about various aspects of Galois theory and arithmetic geometry. Each semester/year has a coherent program, with graduate students contributing many of the talks.
   contact:
@@ -161,7 +161,7 @@
   published_in_nav: true
   google_cal_id: 'fj2uv2u9ea74h8b0gihm3iu73c@group.calendar.google.com'
   seminar_weight: 5
-  regular_times: Mondays 3:00-4:00pm in New Cabell 056
+  regular_times: Mondays 3:00-4:00pm, NEW CABELL 056
   information: | 
      Talks at the Analysis Commons seminar cover topics of broader interest to the analysis community at University of Virginia. This includes functional analysis and operator algebras, mathematical physics, harmonic analysis and PDEs, probability theory, and other research areas. Presentations at this seminar are accessible to beginning graduate students in analysis. This calendar also lists talks at other UVA Math seminars which may be of interest to general analysis audience.
   contact:
