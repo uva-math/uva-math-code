@@ -39,8 +39,8 @@ dist: trusty
 
 deploy:
   provider: s3
-  access_key_id: <%= ENV['S3_ACCESS_KEY_ID'] %>
-  secret_access_key: <%= ENV['S3_SECRET_KEY'] %>
+  access_key_id: ENV['S3_ACCESS_KEY_ID']
+  secret_access_key: ENV['S3_SECRET_KEY']
   bucket: "math.virginia.edu"
   skip_cleanup: true
   region: "us-east-1"
