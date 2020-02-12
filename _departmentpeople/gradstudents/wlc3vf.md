@@ -8,7 +8,7 @@ office: 112 Kerchof Hall
 phone: 434-243-2304
 email: wlc3vf@virginia.edu
 image:
-personal_page: people.virginia.edu/~wlc3vf
+personal_page: https://people.virginia.edu/~wlc3vf/
 
 
 ---
