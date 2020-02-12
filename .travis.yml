@@ -1,39 +1,31 @@
 language: ruby
 rvm:
 - 2.5.1
-
-# only build the master branch so that branch edits do not corrupt the website
 branches:
   only:
   - master
-
 notifications:
   email:
-    - recipients:
-        - lenia.petrov@gmail.com
-      on_success: always
-    - recipients:
-        - rk8we@virginia.edu
-      on_success: change
-
+  - recipients:
+    - lenia.petrov@gmail.com
+    on_success: always
+  - recipients:
+    - rk8we@virginia.edu
+    on_success: change
 before_script:
- - chmod +x ./script/cibuild # or do this locally and commit
-
-# Assume bundler is being used, therefore
-# the `install` step will run `bundle install` by default.
-script: ./script/cibuild
-
-# branch whitelist, only for GitHub Pages
-# branches:
-#   only:
-#   - gh-pages     # test the gh-pages branch
-#   - /pages-(.*)/ # test every branch which starts with "pages-"
-
+- chmod +x ./script/cibuild
+script: "./script/cibuild"
 env:
   global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-
-# sudo: false # route your build to the container-based infrastructure for a faster build
-
-after_success: s3_website push
+  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 dist: trusty
+deploy:
+  skip_cleanup: true
+  provider: s3
+  access_key_id: AKIAT7GSD4LOBP6GVN65
+  secret_access_key:
+    secure: kfS/1ffnsNQWh0t9wrfiXuGFxfCSLqI2eJpv0ONlSAz+jVYWJPXGwCvJ6PU2aZZB06dn1oqrNAHwdau1ZZRn0xihq69gI1VMyI31FY/skDIloXiWLjJU3dtX1IzfEGxea389dNMCTSV+5PCkKn3Z64nWEExKRNil42llakOtSLWDDknSOmY0YY6KLE38SHKfZQqs9Fy1vl75L5bf0lf5HQ/8KTCwlr6fzP4W679/GaDYYOel0qYs1fMwcDq1YP5leOW6S2lcnhhLQ1g8EjONAr+8fFIVSxHRkWHXBKDdaOJSsIy8xrX3VW4CrAMA58rryLiPX/M9G4vPbXG1O0rBM2sm+b/cDxXis27FKdWyOK/1bC3CFq898OxELZ/Dh7NCwhMx4bgFwfo0gONRL1khwr9RKaUwoSkW5OT1dbOOXX76XSKGSdX2PYyDNoo0+ipzqkQiEpWMQHc1mWvdrlE9CEqeAb0zrERYHNAlUHNKjHIU7OHK4AD5jldMALgaI3SVnmiW6vH8BxZzUhEwZmhu+U3LoJuXoefExG2QpHoHT9H4xUJK81648UkJhIdw5GtJlbE9Okdx1Y9eFmbymltFycpqiCXoiEF8WF3kSBKVAm/EBjv4jYQnE6QhE4OEcp39fWxZ/BcwC3lpRk4SXVX0AcEqUep91NcQQ58Rnq2l1NI=
+  bucket: math.virginia.edu
+  local-dir: _site
+  on:
+    repo: uva-math/uva-math-code

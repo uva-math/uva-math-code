@@ -18,3 +18,5 @@ seminars/mathphys/2007-08/.DS_Store
 history/Jefferson/Thumbs.db
 script/.lou_course_descriptions.py.swp
 .vscode/settings.json
+vendor/
+img/.DS_Store
