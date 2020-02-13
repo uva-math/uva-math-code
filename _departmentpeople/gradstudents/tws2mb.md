@@ -7,7 +7,7 @@ position: Graduate Student
 office: 123 Kerchof Hall
 phone: 434-982-2786
 email: tws2mb@virginia.edu
-image:
+image:"__SITE_URL__/img/people/Thomas Sale.jpg"
 personal_page:
 
 
