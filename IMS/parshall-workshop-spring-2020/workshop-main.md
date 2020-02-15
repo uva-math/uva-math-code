@@ -32,7 +32,6 @@ The workshop is held on the occasion of Brian's retirement.
 1. Jon Carlson (University of Georgia)
 1. Jie Du (University of New South Wales, Australia)
 1. Eric Friedlander (University of Southern California)
-1. Robert Guralnick (University of Southern California)
 1. Jonathan Hall (Michigan State University)
 1. George Lusztig (MIT)
 1. Raphael Rouquier (UCLA)
