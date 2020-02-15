@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Greg Lawler will give Virginia Mathematics Lectures on February 12-14, 2020
+title: Greg Lawler - Virginia Mathematics Lectures - February 12-14, 2020
 event-date: 2020-02-12 16:00:00
 multi-day-event: true
 permalink: /ims/lectures/greg-lawler/
