@@ -18,7 +18,7 @@ Organizers: <a href="https://www.math.uga.edu/directory/people/daniel-k-nakano">
     {% include person_info_email_only.html UVA_id="ww9c" %}
 
 
-<h5><a href="{{site.url}}/ims/rt-workshop-spring-2020/schedule/">Schedule (TBA)</a> &bull; All talks are in Monroe Hall 122</h5>
+<h5><a href="{{site.url}}/ims/rt-workshop-spring-2020/schedule/">Schedule</a> &bull; All talks are in Monroe Hall 122</h5>
 
 
 Followed by an AMS special session on "<a href="http://www.ams.org/meetings/sectional/2273_program_ss13.html#title">Representations of algebraic groups and quantum groups: a tribute to Cline-Parshall-Scott (CPS)</a>", Charlottesville, Virginia, March 13-15, 2020
