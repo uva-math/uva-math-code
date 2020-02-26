@@ -77,16 +77,18 @@ Director of Analytics, Prudential Financial<br>
 ## May 2015
 
 - **Arindam Banerjee**<br>
+Golomb Visiting Assistant Professor, Purdue University
 Postdoc, Purdue University<br>
 *Castelnuovo-Mumford Regularity and Edge Ideals*<br>
 (Advisor: Craig Huneke)
 
 - **Huanchen Bao**<br>
+Brin Postdoctoral Fellow, University of Maryland, College Park
 *Canonical Bases Arising from Quantum Symmetric Pairs and Kazhdan-Lusztig Theory*<br>
 (Advisor: Weiqiang Wang)
 
 - **Ilya Igorevich Smirnov**<br>
-Postdoc, University of Michigan<br>
+Postdoc, Stockholm University<br>
 *Uniform Convergence Methods in Hilbert-Kunz Theory*<br>
 (Advisor: Craig Huneke)
 
@@ -95,32 +97,39 @@ Postdoc, University of Michigan<br>
 ## Summer 2014
 
 - **Reed Nessler**<br>
+Postdoctoral Research Associate, Texas A&M University
 *Simple Connectivity in Polar Spaces with Group-Theoretic Applications*<br>
 (Advisor:Peter Abramenko)
 
 - **Daniel Remine**<br>
+Senior Applied Scientist in Machine Learning, Adobe
 *Analysis and Computational Fluid Dynamics for the Stabilization and Control of 3-Dimensional Navier-Stokes Fluid Channel Flows by a Wall-Normal Boundary Controller*<br>
 (Advisor: Roberto Triggiani)
 
 - **Julia Spencer**<br>
+Assistant Professor of Applied Mathematics, UVA
 *Min-Max Game Theory for the Linearized Navier-Stokes Equations with Internal Localized Control and Distributed Disturbance*<br>
 (Advisor:Roberto Triggiani)
 
 ## May 2014
 
 - **Zachary Bradshaw**<br>
+Assistant Professor, University of Arkansas
 *On Turbulent Dynamics and Related Theoretical Topics Associated with Diffusive Incompressible Fluid Models*<br>
 (Advisor: Zoran Grujic)
 
 - **Ajay Chandra**<br>
+Leverhulme Early Career Fellow, Imperial College London
 *Construction and Analysis of a Hierarchical Massless Quantum Field Theory*<br>
 (Advisor: Abdelmalek Abdesselam)
 
 - **Sean Ian Clark**<br>
+Data Analyst, Education Strategy Consulting
 *Quantum Supergroups and Canonical Bases*<br>
 (Advisor: Weiqiang Wang)
 
 - **Jason David Knapp**<br>
+Chief Science Officer, Riverain Technologies
 *Stability and Convergence of Approximate Solutions to the Moore-Gibson-Thompson Equation*<br>
 (Advisor: Irena Lasiecka)
 
@@ -129,28 +138,31 @@ Postdoc, University of Michigan<br>
 (Advisor: Irena Lasiecka)
 
 - **Nathaniel Ray Pappas**<br>
+NSA
 *On Rank Gradient and p-Gradient of Finitely Generated Groups*<br>
 (Advisor: Mikhail V. Ershov)
 
 ## December 2013
 
 - **Mor Katz**<br>
+OpenAI
 *Essentially Normal Composition Operators*<br>
 (Advisor: Thomas Kriete)
 
 ## August 2013
 
 - **Nicolas Fourrier**<br>
-Research Analyst, CGG<br>
+AI Lead, Demand Forecasting<br>
 *Analysis of Existence, Regularity, and Stability of Solutions to Wave Equations with Dynamic Boundary Conditions*<br>
 (Advisor: Irena Lasiecka)
 
 - **Andrea Merlin Heald**<br>
+Lecturer, University of Washington
 *Bounded Generation of Two Families of S-Arithmetic Groups*<br>
 (Advisor: Andrei Rapinchuk)
 
 - **Matthew Hogancamp**<br>
-Visiting Asst. Professor, Indiana University<br>
+Assistant Professor, Northeastern University<br>
 *Local and Quasi-Local sl(2) Link Homology*<br>
 (Advisor: Slava Krushkal)
 
@@ -161,7 +173,7 @@ Visiting Asst. Professor, Indiana University<br>
 (Advisor: Weiqiang Wang)
 
 - **Daniel Dobbs**<br>
-Asst. Professor, Huntington University<br>
+Asst. Professor, Trine University<br>
 *Properties of Measures and Processes Related to Brownian Motion on Infinite-Dimensional Heisenberg-Like Groups*<br>
 (Advisor: Tai Melcher)
 
@@ -172,7 +184,7 @@ Asst. Professor, Lebanon Valley College<br>
 
 
 - **Timothy Emerick**<br>
-Systems Engineer, CCRi<br>
+Principal Machine Researcher/Assoc. Director, Commonwealth Computer Research, Inc.<br>
 *A Group-Theoretic Characterization of the Unipotent Radical*<br>
 (Advisor: Peter Abramenko)
 
@@ -182,7 +194,7 @@ Visiting Asst. Professor, Miami University<br>
 (Advisor: David Sherman)
 
 - **Kristen Mazur**<br>
-Visiting Asst. Professor, Lafayette College<br>
+Assistant Professor, Elon University<br>
 *On the Structure of Mackey Functors and Tambara Functors*<br>
 (Advisor: Michael Hill)
 
@@ -191,7 +203,7 @@ Visiting Asst. Professor, Lafayette College<br>
 (Advisor: Andrei Rapinchuk)
 
 - **Carolyn Yarnall**<br>
-Visiting Asst. Professor, Wabash College<br>
+Assistant Professor, California State University Dominguez Hills<br>
 *The Slices of Suspensions of HZ for Cuclic p-Groups*<br>
 (Advisor: Michael Hill)
 
@@ -200,29 +212,29 @@ Visiting Asst. Professor, Wabash College<br>
 ## August 2012
 
 - **Jameson Graber**<br>
-INRIA Postdoctoral Fellow, École National Supérieure, Paris, France<br>
+Assistant Professor, Baylor University<br>
 *The Wave Equation with Generalized Nonlinear Acoustic Boundary Conditions*<br>
 (Advisor: Irena Lasiecka)
 
 
 - **Joseph Johnson**<br>
-Instructor, Mary Baldwin College<br>
+Assistant Professor, Mary Baldwin College<br>
 *K(X): An Equivariant K-Theory Functor from Spaces to lambda-Rings*<br>
 (Advisor: Nicholas Kuhn)
 
 
 - **Jason McCarty**<br>
-Assistant Professor, Indiana University of Pennsylvania<br>
+Software Developer	Grant Street Group<br>
 *The Mod 2 Homology of Infinite Loop Spaces*<br>
 (Advisor: Nicholas Kuhn)
 
 - **Yung Ning Peng**<br>
-Postdoctoral Researcher, Academia China, Taiwan<br>
+Associate Professor, National Central University, Taiwan<br>
 *Parabolic Presentations of the Super Yangian YM|N and Applications*<br>
 (Advisor: Weiqiang Wang)
 
 - **Justin Webster**<br>
-Postdoctoral Fellow, Department of Mathematics, Oregon State University<br>
+Assistant Professor, University of Maryland Baltimore County<br>
 *Analysis of Flow-Plate Interactions: Semigroup Well-Posedness and Long-Time Behavior*<br>
 (Advisor: Irena Lasiecka)
 
