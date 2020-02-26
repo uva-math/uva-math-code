@@ -17,7 +17,7 @@ Postdoctoral Appointment, University of Kentucky <br>
 (Advisor: Michael Hill)
 
 - **Katelynn Kochalski**<br>
-Tenure-Track Job, SUNY Cortland <br>
+Tenure-Track Job, SUNY Geneseo <br>
 *Fluid limits and the batched processor sharing model*<br>
 (Advisor: Christian Gromoll)
 
