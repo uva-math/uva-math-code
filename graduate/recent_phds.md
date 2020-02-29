@@ -33,7 +33,7 @@ Univerisity of Waterloo, postdoctoral position<br>
 (Advisor: Slava Krushkal)
 
 - **Christopher Leonard**<br>
-Houst, Pricing and Data Solutions Lead<br>
+Pricing and Data Solutions Lead at Houst<br>
 *Cateforification of Tensor Products of Representations for Current Algebras and Quantum Groups*<br>
 (Advisor: Weiqiang Wang)
 
