@@ -48,27 +48,38 @@ Postdoc, University of Muenster<br>
 *C\*-algebras and finite-dimensional representations*<br>
 (Advisor: David Sherman)
 
-Zachary Gates
-Advisor: Peter Abramenko
-Finite presentability of groups acting on locally finite twin buildings
-Eloía Grifo
-Advisor: Craig Huneke
-Symbolic Powers and the Containment Problem
-Christina Osborne
-Advisor: Julie Bergner
-Decomposing the classifying diagram in terms of classifying spaces of groups
-Michael Reeks
-Advisor: Weiqiang Wang
-Trace and center of the twisted Heisenberg category
-Veronica Shalotenko
-Advisor: Brian Parshall
-In Search of Bounds on the Dimension of Ext between Irreducible Modules for Finite Groups of Lie Type
-Jonathan Simone
-Advisor: Thomas Mark
-Cut-and-paste operations and exotic 4-manifolds
-Bradley Weaver
-Advisor: Andrew Obus
-Non-abelian groups of order eight and the local lifting problem
+- **Zachary Gates**<br>
+*Finite presentability of groups acting on locally finite twin buildings*<br>
+(Advisor: Peter Abramenko)
+
+- **Eloisa Grifo**<br>
+Postdoctoral position at University of Michigan, then tenure track position at UC Riverside<br>
+*Symbolic Powers and the Containment Problem*<br>
+(Advisor: Craig Huneke)
+
+- **Christina Osborne**<br>
+Ohio State University, Ross Assistant Professor<br>
+*Decomposing the classifying diagram in terms of classifying spaces of groups*<br>
+(Advisor: Julie Bergner)
+
+- **Michael Reeks**<br>
+Bucknell University, tenure track<br>
+*Trace and center of the twisted Heisenberg category*<br>
+(Advisor: Weiqiang Wang)
+
+- **Veronica Shalotenko**<br>
+Lecturer at University of Virginia<br>
+*In Search of Bounds on the Dimension of Ext between Irreducible Modules for Finite Groups of Lie Type*<br>
+(Advisor: Brian Parshall)
+
+- **Jonathan Simone**<br>
+UMass Amherst, visiting assistant professor<br>
+*Cut-and-paste operations and exotic 4-manifolds*<br>
+(Advisor: Thomas Mark)
+
+- **Bradley Weaver**<br>
+*Non-abelian groups of order eight and the local lifting problem*<br>
+(Advisor: Andrew Obus)
 
 ## Spring and Summer 2017
 
