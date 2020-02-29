@@ -17,24 +17,34 @@ nav_weight: 70
 
 ## Spring 2019
 
-Mariano Echverria
-Advisor: Thomas Mark
-Naturality of the Contact Invariant in Monopole Floer Homology under Strong Symplectic Cobordisms
-Matthew Gagne
-Advisor: Nicholas Kuhn
-The family index of the odd signature operator with coefficients in a flat bundle
-Gabriel Islambouli
-Advisor: Slava Krushkal
-Parallels Between Heegaard Splittings and Trisections of 4-manifolds
-Christopher Leonard
-Advisor: Weiqiang Wang
-Cateforification of Tensor Products of Representations for Current Algebras and Quantum Groups
-James Phillips
-Advisor: Andrew Obus
-Reduction and Deformation of One-point Galois Covers
-Brian Thomas
-Advisor: Nicholas Kuhn
-Dyer-Lashof operations as extensions and an application to H*(BU)
+- **Mariano Echverria**<br>
+Rutgers University, postdoctoral position<br>
+*Naturality of the Contact Invariant in Monopole Floer Homology under Strong Symplectic Cobordisms*<br>
+(Advisor: Thomas Mark)
+
+- **Matthew Gagne**<br>
+Lecturer at University of Virginia<br>
+*The family index of the odd signature operator with coefficients in a flat bundle*<br>
+(Advisor: Nicholas Kuhn)
+
+- **Gabriel Islambouli**<br>
+Univerisity of Waterloo, postdoctoral position<br>
+*Parallels Between Heegaard Splittings and Trisections of 4-manifolds*<br>
+(Advisor: Slava Krushkal)
+
+- **Christopher Leonard**<br>
+Houst, Pricing and Data Solutions Lead<br>
+*Cateforification of Tensor Products of Representations for Current Algebras and Quantum Groups*<br>
+(Advisor: Weiqiang Wang)
+
+- **James Phillips**<br>
+Wellesley University, visiting lecturer<br>
+*Reduction and Deformation of One-point Galois Covers*<br>
+(Advisor: Andrew Obus)
+
+- **Brian Thomas**<br>
+*Dyer-Lashof operations as extensions and an application to H\*(BU)*<br>
+(Advisor: Nicholas Kuhn)
 
 ## Spring 2018
 
