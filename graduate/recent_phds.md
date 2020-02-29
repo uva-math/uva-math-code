@@ -9,6 +9,67 @@ nav_weight: 70
 
 <h1 class="mb-3">Recent PhDs</h1>
 
+## Fall 2019
+
+- **Aleksandr Morgan**<br>
+*Bounded generation of some linear groups*<br>
+(Advisor: Andrei Rapinchuk)
+
+## Spring 2019
+
+Mariano Echverria
+Advisor: Thomas Mark
+Naturality of the Contact Invariant in Monopole Floer Homology under Strong Symplectic Cobordisms
+Matthew Gagne
+Advisor: Nicholas Kuhn
+The family index of the odd signature operator with coefficients in a flat bundle
+Gabriel Islambouli
+Advisor: Slava Krushkal
+Parallels Between Heegaard Splittings and Trisections of 4-manifolds
+Christopher Leonard
+Advisor: Weiqiang Wang
+Cateforification of Tensor Products of Representations for Current Algebras and Quantum Groups
+James Phillips
+Advisor: Andrew Obus
+Reduction and Deformation of One-point Galois Covers
+Brian Thomas
+Advisor: Nicholas Kuhn
+Dyer-Lashof operations as extensions and an application to H*(BU)
+
+## Spring 2018
+
+- **John Berman**<br>
+NSF postdoc at UT Austin<br>
+*Categorified Algebra & Equivariant Homotopy Theory*<br>
+(Advisor: Michael Hill)
+
+- **Kristin Courtney**<br>
+Postdoc, University of Muenster<br>
+*C\*-algebras and finite-dimensional representations*<br>
+(Advisor: David Sherman)
+
+Zachary Gates
+Advisor: Peter Abramenko
+Finite presentability of groups acting on locally finite twin buildings
+Eloía Grifo
+Advisor: Craig Huneke
+Symbolic Powers and the Containment Problem
+Christina Osborne
+Advisor: Julie Bergner
+Decomposing the classifying diagram in terms of classifying spaces of groups
+Michael Reeks
+Advisor: Weiqiang Wang
+Trace and center of the twisted Heisenberg category
+Veronica Shalotenko
+Advisor: Brian Parshall
+In Search of Bounds on the Dimension of Ext between Irreducible Modules for Finite Groups of Lie Type
+Jonathan Simone
+Advisor: Thomas Mark
+Cut-and-paste operations and exotic 4-manifolds
+Bradley Weaver
+Advisor: Andrew Obus
+Non-abelian groups of order eight and the local lifting problem
+
 ## Spring and Summer 2017
 
 - **Peter Bonventre**<br>
@@ -39,6 +100,17 @@ Postdoctoral Appointment, UCLA <br>
 Assistant Professor (non tenure-track), University of Delaware <br>
 *Towards an Alternative Notion of General Type Symplectic 4-Manifolds*<br>
 (Advisor: Thomas Mark)
+
+## Summer and Fall 2016
+
+- **Hankyung Ko**<br>
+Postdoctoral position at Uppsala University<br>
+*Representations of quantum groups at roots of unity and their reductions mod p to algebraic group representations*<br>
+(Advisor: Brian Parshall)
+
+- **Keith Leitmeyer**<br>
+*Turbulence, Regularity, and Geometry in Solutions to the Navier-Stokes and Magnetohydrodynamic Equations*<br>
+(Advisor: Zoran Grujic)
 
 ## May 2016
 
