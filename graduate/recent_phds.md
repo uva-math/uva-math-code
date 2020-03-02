@@ -170,13 +170,13 @@ Director of Analytics, Prudential Financial<br>
 ## May 2015
 
 - **Arindam Banerjee**<br>
-Golomb Visiting Assistant Professor, Purdue University
+Golomb Visiting Assistant Professor, Purdue University<br>
 Postdoc, Purdue University<br>
 *Castelnuovo-Mumford Regularity and Edge Ideals*<br>
 (Advisor: Craig Huneke)
 
 - **Huanchen Bao**<br>
-Brin Postdoctoral Fellow, University of Maryland, College Park
+Brin Postdoctoral Fellow, University of Maryland, College Park<br>
 *Canonical Bases Arising from Quantum Symmetric Pairs and Kazhdan-Lusztig Theory*<br>
 (Advisor: Weiqiang Wang)
 
@@ -185,44 +185,42 @@ Postdoc, Stockholm University<br>
 *Uniform Convergence Methods in Hilbert-Kunz Theory*<br>
 (Advisor: Craig Huneke)
 
-<!-- to finish formatting below from here -->
-
 ## Summer 2014
 
 - **Reed Nessler**<br>
-Postdoctoral Research Associate, Texas A&M University
+Postdoctoral Research Associate, Texas A&M University<br>
 *Simple Connectivity in Polar Spaces with Group-Theoretic Applications*<br>
 (Advisor:Peter Abramenko)
 
 - **Daniel Remine**<br>
-Senior Applied Scientist in Machine Learning, Adobe
+Senior Applied Scientist in Machine Learning, Adobe<br>
 *Analysis and Computational Fluid Dynamics for the Stabilization and Control of 3-Dimensional Navier-Stokes Fluid Channel Flows by a Wall-Normal Boundary Controller*<br>
 (Advisor: Roberto Triggiani)
 
 - **Julia Spencer**<br>
-Assistant Professor of Applied Mathematics, UVA
+Assistant Professor of Applied Mathematics, UVA<br>
 *Min-Max Game Theory for the Linearized Navier-Stokes Equations with Internal Localized Control and Distributed Disturbance*<br>
 (Advisor:Roberto Triggiani)
 
 ## May 2014
 
 - **Zachary Bradshaw**<br>
-Assistant Professor, University of Arkansas
+Assistant Professor, University of Arkansas<br>
 *On Turbulent Dynamics and Related Theoretical Topics Associated with Diffusive Incompressible Fluid Models*<br>
 (Advisor: Zoran Grujic)
 
 - **Ajay Chandra**<br>
-Leverhulme Early Career Fellow, Imperial College London
+Leverhulme Early Career Fellow, Imperial College London<br>
 *Construction and Analysis of a Hierarchical Massless Quantum Field Theory*<br>
 (Advisor: Abdelmalek Abdesselam)
 
 - **Sean Ian Clark**<br>
-Data Analyst, Education Strategy Consulting
+Data Analyst, Education Strategy Consulting<br>
 *Quantum Supergroups and Canonical Bases*<br>
 (Advisor: Weiqiang Wang)
 
 - **Jason David Knapp**<br>
-Chief Science Officer, Riverain Technologies
+Chief Science Officer, Riverain Technologies<br>
 *Stability and Convergence of Approximate Solutions to the Moore-Gibson-Thompson Equation*<br>
 (Advisor: Irena Lasiecka)
 
@@ -231,14 +229,14 @@ Chief Science Officer, Riverain Technologies
 (Advisor: Irena Lasiecka)
 
 - **Nathaniel Ray Pappas**<br>
-NSA
+NSA<br>
 *On Rank Gradient and p-Gradient of Finitely Generated Groups*<br>
 (Advisor: Mikhail V. Ershov)
 
 ## December 2013
 
 - **Mor Katz**<br>
-OpenAI
+OpenAI<br>
 *Essentially Normal Composition Operators*<br>
 (Advisor: Thomas Kriete)
 
@@ -250,7 +248,7 @@ AI Lead, Demand Forecasting<br>
 (Advisor: Irena Lasiecka)
 
 - **Andrea Merlin Heald**<br>
-Lecturer, University of Washington
+Lecturer, University of Washington<br>
 *Bounded Generation of Two Families of S-Arithmetic Groups*<br>
 (Advisor: Andrei Rapinchuk)
 
