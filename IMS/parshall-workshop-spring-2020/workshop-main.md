@@ -20,9 +20,6 @@ Organizers: <a href="https://www.math.uga.edu/directory/people/daniel-k-nakano">
 
 <h5><a href="{{site.url}}/ims/rt-workshop-spring-2020/schedule/">Schedule</a> &bull; All talks are in Monroe Hall 122</h5>
 
-
-Followed by an AMS special session on "<a href="http://www.ams.org/meetings/sectional/2273_program_ss13.html#title">Representations of algebraic groups and quantum groups: a tribute to Cline-Parshall-Scott (CPS)</a>", Charlottesville, Virginia, March 13-15, 2020
-
 This workshop celebrates the work of G.T. Whyburn Professor of Mathematics <a href="https://math.virginia.edu/people/bjp8w/">Brian J. Parshall</a> and his collaborators. 
 In the course of his career, together with Ed Cline and <a href="http://people.virginia.edu/~lls2l/">Leonard Scott</a> (CPS) as well as with others, Brian has made important contributions to the representation theory of algebraic and quantum groups.
 The workshop is held on the occasion of Brian's retirement.
