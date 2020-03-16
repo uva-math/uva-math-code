@@ -10,8 +10,8 @@ nav_weight: 1
 <h1 class="mb-3">Degree requirements</h1>
 
 - ##### [Requirements]({{ site.url }}/undergraduate/docs/major_minor_req_s20.pdf) for Obtaining a Major or a Minor in Mathematics
-- ##### [Declaration of math major form]({{ site.url }}/undergraduate/docs/F19_Declaration of Major form.pdf)
-- ##### [Declaration of math minor form]({{ site.url }}/undergraduate/docs/F19_Declaration of Minor form.pdf)
+- ##### [Declaration of math major form]({{ site.url }}/undergraduate/docs/S20_Declaration of Major form.pdf)
+- ##### [Declaration of math minor form]({{ site.url }}/undergraduate/docs/S20_Declaration of Minor form.pdf)
 
 <h1 class="mb-3 mt-3">To Declare a Major/Minor:</h1>
 - {% include person_info_OH.html UVA_id="aa4cr" %}<br><br class="hidden-sm-up">
