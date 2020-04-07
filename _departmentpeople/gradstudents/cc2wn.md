@@ -7,7 +7,7 @@ position: Graduate Student
 office: 110 Kerchof Hall
 phone: 434-924-4947
 email: cc2wn@virginia.edu
-image: __SITE_URL__/img/people/2018-fall/ChrisProfile.jpg
+image: __SITE_URL__/img/people/2020-spring/Chris Chung.jpg
 personal_page: https://chriskchung.github.io
 
 
