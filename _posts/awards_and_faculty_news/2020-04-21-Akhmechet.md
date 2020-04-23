@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Graduate student Ross Akhmechet wins Jefferson dissertation year fellowship
+title: Rostislav Akhmechet wins Jefferson dissertation year fellowship
 comments: false
 categories: news awards swiper-news
 published: true
