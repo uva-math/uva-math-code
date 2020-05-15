@@ -5,8 +5,8 @@ event-date: 2019-05-16 14:00:00
 comments: false
 categories: news events major-news
 published: true
-#image: __SITE_URL__/img/Final_Exercises.png
-#mage-alt: Final Exercises ceremony
+image: __SITE_URL__/img/news_events/lawn_dusk_fall_ss_03.jpg.png
+mage-alt: Lawn
 ---
 
 The Department of Mathematics is hosting an online ceremony 
