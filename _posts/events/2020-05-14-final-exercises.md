@@ -9,7 +9,9 @@ image: __SITE_URL__/img/Final_Exercises.png
 image-alt: Final Exercises ceremony
 ---
 
-The Department of Mathematics is hosting an online ceremony to replace our usual ceremony for graduating math students. 
+The Department of Mathematics is hosting an online ceremony 
+on May 16,
+to replace our usual ceremony for graduating math students. 
 The schedule is as follows:
 
 - 1-1:45pm: UVA online ceremony available at [https://www.virginia.edu/live](https://www.virginia.edu/live)
@@ -18,5 +20,6 @@ The schedule is as follows:
 
 - 3pm: The Director of Graduate Studies, Julie Bergner, will continue with recognitions for our graduating Masters and PhD students, including remarks from thesis advisors.
 
-The Math Department events will take place via Zoom and will also be available via livestream at a youtube channel, starting at around 1:55pm: [https://www.youtube.com/channel/UCE_UHre0GfKg8LPyAcq8vEA/](https://www.youtube.com/channel/UCE_UHre0GfKg8LPyAcq8vEA/)
+The Math Department events will take place via Zoom and will also be available via livestream at a 
+[YouTube channel](https://www.youtube.com/channel/UCE_UHre0GfKg8LPyAcq8vEA/), starting at around 1:55pm 
 
