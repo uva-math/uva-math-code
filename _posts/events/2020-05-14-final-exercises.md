@@ -5,7 +5,7 @@ event-date: 2019-05-16 14:00:00
 comments: false
 categories: news events major-news
 published: true
-image: __SITE_URL__/img/news_events/lawn_dusk_fall_ss_03.jpg.png
+image: __SITE_URL__/img/news_events/lawn.png
 mage-alt: Lawn
 ---
 
