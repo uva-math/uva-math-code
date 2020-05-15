@@ -18,5 +18,5 @@ The schedule is as follows:
 
 - 3pm: The Director of Graduate Studies, Julie Bergner, will continue with recognitions for our graduating Masters and PhD students, including remarks from thesis advisors.
 
-These events will take place via Zoom and will also be available via livestream at a youtube channel, starting at around 1:55pm: [https://www.youtube.com/channel/UCE_UHre0GfKg8LPyAcq8vEA/](https://www.youtube.com/channel/UCE_UHre0GfKg8LPyAcq8vEA/)
+The Math Department events will take place via Zoom and will also be available via livestream at a youtube channel, starting at around 1:55pm: [https://www.youtube.com/channel/UCE_UHre0GfKg8LPyAcq8vEA/](https://www.youtube.com/channel/UCE_UHre0GfKg8LPyAcq8vEA/)
 
