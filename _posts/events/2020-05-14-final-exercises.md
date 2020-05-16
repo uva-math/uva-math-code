@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2020 Mathematics Final Exercises Ceremony Online
-event-date: 2019-05-16 14:00:00
+event-date: 2020-05-16 14:00:00
 comments: false
 categories: news events major-news
 published: true
