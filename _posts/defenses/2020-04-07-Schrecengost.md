@@ -5,7 +5,7 @@ event-date: 2020-04-23 15:30:00
 comments: false
 categories: news events
 published: true
-# hide-this-item: true
+hide-this-item: true
 ---
 
 **Mark Schrecengost** will defend the Ph.D. thesis on Thursday, April 23.
