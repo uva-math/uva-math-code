@@ -6,7 +6,7 @@ comments: false
 categories: news events major-news
 published: true
 image: __SITE_URL__/img/news_events/lawn.png
-mage-alt: Lawn
+image-alt: Lawn
 ---
 
 The Department of Mathematics is hosting an online ceremony 
