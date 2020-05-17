@@ -20,12 +20,12 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 dist: trusty
 deploy:
-  skip_cleanup: true
+  cleanup: false
   provider: s3
   access_key_id: AKIAT7GSD4LOBP6GVN65
   secret_access_key:
     secure: kfS/1ffnsNQWh0t9wrfiXuGFxfCSLqI2eJpv0ONlSAz+jVYWJPXGwCvJ6PU2aZZB06dn1oqrNAHwdau1ZZRn0xihq69gI1VMyI31FY/skDIloXiWLjJU3dtX1IzfEGxea389dNMCTSV+5PCkKn3Z64nWEExKRNil42llakOtSLWDDknSOmY0YY6KLE38SHKfZQqs9Fy1vl75L5bf0lf5HQ/8KTCwlr6fzP4W679/GaDYYOel0qYs1fMwcDq1YP5leOW6S2lcnhhLQ1g8EjONAr+8fFIVSxHRkWHXBKDdaOJSsIy8xrX3VW4CrAMA58rryLiPX/M9G4vPbXG1O0rBM2sm+b/cDxXis27FKdWyOK/1bC3CFq898OxELZ/Dh7NCwhMx4bgFwfo0gONRL1khwr9RKaUwoSkW5OT1dbOOXX76XSKGSdX2PYyDNoo0+ipzqkQiEpWMQHc1mWvdrlE9CEqeAb0zrERYHNAlUHNKjHIU7OHK4AD5jldMALgaI3SVnmiW6vH8BxZzUhEwZmhu+U3LoJuXoefExG2QpHoHT9H4xUJK81648UkJhIdw5GtJlbE9Okdx1Y9eFmbymltFycpqiCXoiEF8WF3kSBKVAm/EBjv4jYQnE6QhE4OEcp39fWxZ/BcwC3lpRk4SXVX0AcEqUep91NcQQ58Rnq2l1NI=
   bucket: math.virginia.edu
-  local-dir: _site
+  local_dir: _site
   on:
     repo: uva-math/uva-math-code
