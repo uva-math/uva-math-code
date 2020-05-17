@@ -15,7 +15,9 @@ The Department of Mathematics hosted an online diploma ceremony on May 16.
 
 - [PDF of the Math Department program]({{site.url}}/img/news_events/2020ceremony_program.pdf)
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fuQ4-p05kGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+- Diploma Ceremonies Recordings:
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/EPfyJ1DuQpk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/fuQ4-p05kGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe src="https://www.youtube-nocookie.com/embed/EPfyJ1DuQpk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
