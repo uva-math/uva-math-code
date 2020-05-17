@@ -17,7 +17,7 @@ The Department of Mathematics hosted an online diploma ceremony on May 16.
 
 - Diploma Ceremonies Recordings:
 
-<iframe src="https://www.youtube-nocookie.com/embed/fuQ4-p05kGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height="250"  src="https://www.youtube-nocookie.com/embed/fuQ4-p05kGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-<iframe src="https://www.youtube-nocookie.com/embed/EPfyJ1DuQpk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="400" height="250"  src="https://www.youtube-nocookie.com/embed/EPfyJ1DuQpk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
