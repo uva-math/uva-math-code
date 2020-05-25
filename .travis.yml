@@ -20,7 +20,7 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 dist: trusty
 deploy:
-  cleanup: false
+  skip_cleanup: true
   provider: s3
   access_key_id: AKIAT7GSD4LOBP6GVN65
   secret_access_key:
