@@ -3,7 +3,7 @@ layout: post
 title: 2020 Mathematics Diploma Ceremonies Recordings
 event-date: 2020-05-16 14:00:00
 comments: false
-categories: news events major-news
+categories: news events
 published: true
 image: __SITE_URL__/img/news_events/2020ceremony_screenshot.png
 image-alt: Screenshot of the ceremony
