@@ -4,11 +4,11 @@ layout: static_page_no_right_menu
 permalink: /courses/
 ---
 
-<h1 class="mb-3">Course descriptions &bull; (<a href="{{site.url}}/courses/undergrad/">undergraduate</a>) &bull; (<a href="{{site.url}}/courses/graduate/">graduate</a>)</h1>
+<h1 class="mb-3">Course descriptions</h1>
 
-Please refer to <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SIS</a> or <a href="https://rabi.phys.virginia.edu/mySIS/CS2/">Lou's list</a> for details about current instructors and current enrollment numbers.
+Please refer to <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SIS</a> or <a href="https://louslist.org/page.php?Semester=1208&Type=Group&Group=Mathematics">Lou's list</a> for details about courses offered.
 
-
+<!-- 
 <br>
 
 {% assign courses = site.data.courses %}
@@ -39,4 +39,4 @@ Please refer to <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SI
   </div>
 {% endif %}
 {% endfor %}
-</div>
+</div> -->
