@@ -8,7 +8,7 @@ office: 223 Kerchof Hall
 phone: 434-924-4939
 email: cu9da@virginia.edu
 image: __SITE_URL__/img/people/2019-fall/Ure.jpg
-personal_page: http://people.virginia.edu/~cu9da/
+personal_page: https://uva.theopenscholar.com/charlotte-ure
 areas: 
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
