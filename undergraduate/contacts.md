@@ -10,8 +10,9 @@ tooltips: true
 
 <h1 class="mb-4">Contacts (Fall 2019)</h1>
 
-- ##### Director of Undergraduate Studies:<br>
-{% include DUS.html UVA_id="hcg3m" %}
+- ##### Acting Director of Undergraduate Studies:<br>
+<!-- {% include DUS.html UVA_id="hcg3m" %} -->
+{% include DUS.html UVA_id="iwh" %}
 
 - <h5>{% include course number=1210 code=false %} and {% include course number=1310 code=false %} Coordinator:</h5>
 {% include person_info_OH.html UVA_id="psb7p" %}
@@ -20,8 +21,8 @@ tooltips: true
 {% include person_info_OH.html UVA_id="jsr2pz" %}
 
 - ##### Transfer of Credit Advisors:<br>
-{% include DUS.html UVA_id="hcg3m" %}<!-- <br><br class="hidden-sm-up">
-{% include person_info_OH.html UVA_id="iwh" %} -->
+<!-- {% include DUS.html UVA_id="hcg3m" %}<br><br class="hidden-sm-up"> -->
+{% include person_info_OH.html UVA_id="iwh" %} 
 
 - ##### To Declare a Major/Minor:<br>
 {% include person_info_OH.html UVA_id="aa4cr" %}<br><br class="hidden-sm-up">
