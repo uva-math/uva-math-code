@@ -8,6 +8,7 @@ published: true
 image: __SITE_URL__/img/news_events/2020ceremony_screenshot.png
 image-alt: Screenshot of the ceremony
 more-text: Math ceremonies recordings
+hide-this-item: true
 ---
 
 The Department of Mathematics hosted an online diploma ceremony on May 16.
