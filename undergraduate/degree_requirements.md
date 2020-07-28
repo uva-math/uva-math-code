@@ -14,7 +14,6 @@ nav_weight: 1
 - ##### [Declaration of math minor form]({{ site.url }}/undergraduate/docs/S20_Declaration of Minor form.pdf)
 
 <h1 class="mb-3 mt-3">To Declare a Major/Minor:</h1>
-- {% include person_info_OH.html UVA_id="aa4cr" %}<br><br class="hidden-sm-up">
 - {% include person_info_OH.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
 - {% include person_info_OH.html UVA_id="iwh" %}<br><br class="hidden-sm-up">
 - {% include person_info_OH.html UVA_id="jf8dc" %}<br><br class="hidden-sm-up">
