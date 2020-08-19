@@ -8,7 +8,7 @@ office: 309 Kerchof Hall
 phone: 434-924-8896
 email: sm4cw@virginia.edu
 image: __SITE_URL__/img/people/Maloni.jpg
-personal_page: https://sites.google.com/d/1xiGdZs0jylWOesu2TVgpkmFOrE9Ul_Hf/p/1Q1iX-1iTE5JnwgZ_4XAKt8RltrXRA386
+personal_page: https://sites.google.com/view/sara-maloni
 
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
