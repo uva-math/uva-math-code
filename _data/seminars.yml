@@ -146,7 +146,7 @@
 - cal_number: '11'
   name: Galois-Grothendieck seminar
   shortname: galois
-  published_in_nav: false
+  published_in_nav: true
   google_cal_id: '8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com'
   seminar_weight: 9000
   regular_times: Tuesdays at 3:30, CLARK 102
