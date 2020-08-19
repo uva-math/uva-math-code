@@ -54,16 +54,16 @@ The page's location in the code is `/people/postdocs.html`.
 {% highlight markdown linenos %}
 {%raw%}
 ---
-title: Postdoctoral Visitors
+title: Postdoctoral Scholars
 layout: static_page_no_right_menu
-permalink: /visitors/
+permalink: /postdocs/
 nav_id: Postdocs
 nav_weight: 2
 nav_nesting: true
 nav_parent: People
 ---
 
-<h1 class="mb-4">Postdoctoral Visitors</h1>
+<h1 class="mb-4">Postdoctoral Scholars</h1>
 
 {% include people_roll.html type='postdoc' %}
 {%endraw%}

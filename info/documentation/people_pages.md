@@ -80,7 +80,7 @@ Most configuration fields are self-evident, except the following:
 
 <span class="nonupper-h5">general\_position</span>
 
-This field is used to put the person in a correct listing such as [{{site.url}}/visitors/]({{site.url}}/visitors/) or [{{site.url}}/gradstudents/]({{site.url}}/gradstudents/). Possible values are:
+This field is used to put the person in a correct listing such as [{{site.url}}/postdocs/]({{site.url}}/postdocs/) or [{{site.url}}/gradstudents/]({{site.url}}/gradstudents/). Possible values are:
 
 - `emeritus`
 - `faculty` (tenure-track or tenured)
