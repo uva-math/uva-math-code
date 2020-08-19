@@ -9,6 +9,6 @@ phone: 434-243-1174
 email: vpb9ck@virginia.edu
 image: "__SITE_URL__/img/people/Vishal Bajaj.jpg"
 personal_page:
-
+published: false
 
 ---
