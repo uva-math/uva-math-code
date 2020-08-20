@@ -4,7 +4,7 @@ lastname: Olsen
 name: William
 general_position: postdoc
 position: RTG Research Associate
-office: 
+office: 311 Kerchof Hall 
 phone:
 email:
 image:
