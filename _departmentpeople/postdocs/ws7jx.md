@@ -4,9 +4,9 @@ lastname: Stern
 name: Walker
 general_position: postdoc
 position: RTG Research Associate
-office: 
+office: 311 Kerchof Hall
 phone:
-email:
+email: ws7jx@virginia.edu
 image:
 personal_page:
 
