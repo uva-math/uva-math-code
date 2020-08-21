@@ -4,6 +4,7 @@ lastname: Turnansky
 name: Morrison
 general_position: gradstudent
 position: Graduate Student
+published: false
 office: 403 Kerchof Hall
 phone: 434-924-3776
 email: mat5ej@virginia.edu
