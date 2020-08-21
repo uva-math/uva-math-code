@@ -4,6 +4,7 @@ lastname: Chung
 name: Christopher
 general_position: gradstudent
 position: Graduate Student
+published: false
 office: 110 Kerchof Hall
 phone: 434-924-4947
 email: cc2wn@virginia.edu
