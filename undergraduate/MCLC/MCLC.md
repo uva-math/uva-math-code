@@ -9,7 +9,7 @@ nav_nesting: true
 nav_weight: 5
 ---
 
-<img src="{{site.url}}/undergraduate/MCLC/MCLC_logo.png" style="max-width:100%;max-height:350px;height:auto;width:auto;" >
+<img src="{{site.url}}/undergraduate/MCLC/MCLC_logo.png" style="max-width:100%;max-height:350px;height:auto;width:auto;" alt="Math Collaborative Learning Center">
 
 <h2 class="mb-4">Math Collaborative Learning Center</h2>
 
@@ -39,7 +39,7 @@ When you enter a session have your problem(s) file open on your computer (and id
     </td>
     </tr>
     <tr>
-    <td valign="top">7-8:30 p.m.<br>
+    <td valign="top">7:00-8:30 p.m.<br>
     </td>
     <td valign="top"><a
         href="https://virginia.zoom.us/j/236958725">Calculus I
@@ -99,4 +99,4 @@ When you enter a session have your problem(s) file open on your computer (and id
 
 ---
 
-Contact: {% include person_info_email_only.html UVA_id="ed8bg" %}
+Contact: {% include person_info.html UVA_id="ed8bg" %}
