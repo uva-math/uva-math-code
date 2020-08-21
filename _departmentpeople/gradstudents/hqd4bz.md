@@ -4,6 +4,7 @@ lastname: Dang
 name: Huy
 general_position: gradstudent
 position: Graduate Student
+published: false
 office: 401 Kerchof Hall
 phone: 434-924-0899
 email: hqd4bz@virginia.edu
