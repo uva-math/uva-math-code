@@ -1,6 +1,7 @@
 ---
 title: Math Collaborative Learning Center
 layout: static_page_no_right_menu
+# layout: ug_page
 ug_info: true
 permalink: /undergraduate/MCLC/
 nav_id: Collaborative Learning Center
