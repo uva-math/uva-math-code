@@ -9,7 +9,7 @@ nav_nesting: true
 nav_weight: 5
 ---
 
-<img src="{{site.url}}/undergraduate/MCLC/MCLC_logo.png">
+<img src="{{site.url}}/undergraduate/MCLC/MCLC_logo.png" style="max-width:100%;max-height:350px;height:auto;width:auto;" >
 
 <h2 class="mb-3">Math Collaborative Learning Center</h2>
 
