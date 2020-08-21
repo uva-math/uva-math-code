@@ -4,6 +4,7 @@ lastname: Speyer
 name: Liron
 general_position: postdoc
 position: Whyburn Instructor
+published: false
 office: 324 Kerchof Hall
 phone: 434-924-4942 
 email: ls2zz@virginia.edu
