@@ -2,8 +2,8 @@
 UVA_id: mas3er
 lastname: Schrecengost
 name: Mark
-general_position: gradstudent
-position:
+general_position: lecturer
+position: Lecturer
 office: 212 Kerchof Hall
 phone: 
 email: mas3er@virginia.edu
