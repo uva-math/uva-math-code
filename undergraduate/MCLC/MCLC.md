@@ -24,7 +24,7 @@ nav_weight: 5
 <table width="100%" border="1" cellspacing="2" cellpadding="2">
 <tbody>
     <tr>
-    <td valign="top"><b>Time</b><br>
+    <td valign="top"><center><b>Time</center></b><br>
     </td>
     <td valign="top"><b>Sunday</b><br>
     </td>
@@ -54,8 +54,8 @@ nav_weight: 5
     </td>
     <td valign="top"><a
         href="https://virginia.zoom.us/j/6939765">Calculus I
-        &amp; II<br>
-       <!-- Math 3100<br>
+        &amp; II <!-- <br>
+        Math 3100<br>
         Math 3350/51<br>
         Math 3354</a><br> -->
     </td>
