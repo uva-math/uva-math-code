@@ -4,6 +4,7 @@ lastname: Rennier
 name: Bennett
 general_position: gradstudent
 position: Graduate Student
+published: false
 office: 401 Kerchof Hall
 phone: 434-924-0899
 email: bar2cm@virginia.edu
