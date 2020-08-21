@@ -1,6 +1,6 @@
 ---
 title: Math Collaborative Learning Center
-layout: ug_page
+layout: static_page_no_right_menu
 ug_info: true
 permalink: /undergraduate/MCLC/
 nav_id: Collaborative Learning Center
@@ -9,7 +9,7 @@ nav_nesting: true
 nav_weight: 5
 ---
 
-<img src="{{site.url}}/undergraduate/MCLC/MCLC_logo.png" style="max-width:100%;max-height:350px;height:auto;width:auto;" alt="Math Collaborative Learning Center">
+<img src="{{site.url}}/undergraduate/MCLC/MCLC_logo.png" style="max-width:70%;max-height:350px;height:auto;width:auto;" alt="Math Collaborative Learning Center">
 
 <h2 class="mb-4">Math Collaborative Learning Center</h2>
 
