@@ -50,20 +50,20 @@ nav_weight: 5
     <td valign="top"><a
         href="https://virginia.zoom.us/j/5795546">Calculus I
         &amp; II</a><br>
-        <a href="https://virginia.zoom.us/j/5795546">Math 2310</a><br>
+        <!-- <a href="https://virginia.zoom.us/j/5795546">Math 2310</a><br> -->
     </td>
     <td valign="top"><a
         href="https://virginia.zoom.us/j/6939765">Calculus I
         &amp; II<br>
-        Math 3100<br>
+       <!-- Math 3100<br>
         Math 3350/51<br>
-        Math 3354</a><br>
+        Math 3354</a><br> -->
     </td>
     <td valign="top"><a
         href="https://virginia.zoom.us/j/7088066">Calculus I
         &amp; II <br>
         <br>
-        Math 3000/3310 </a><br>
+       <!-- Math 3000/3310 </a><br> -->
     </td>
     </tr>
     <tr>
@@ -79,9 +79,9 @@ nav_weight: 5
     <td valign="top"><a
         href="https://virginia.zoom.us/j/5795546">Calculus I
         &amp; II</a><br>
-        <a href="https://virginia.zoom.us/j/5795546">Math 3100</a><br>
+        <!-- <a href="https://virginia.zoom.us/j/5795546">Math 3100</a><br>
         <a href="https://virginia.zoom.us/j/5795546">Math
-        3350/51</a><br>
+        3350/51</a><br> -->
     </td>
     <td valign="top"><a
         href="https://virginia.zoom.us/j/6939765">Calculus I
