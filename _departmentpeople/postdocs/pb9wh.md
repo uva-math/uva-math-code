@@ -4,7 +4,7 @@ lastname: Bhattacharya
 name: Prasit
 general_position: postdoc
 position: Whyburn Instructor
-published:false
+published: false
 office: 131 Kerchof Hall
 phone:
 email: pb9wh@virginia.edu
