@@ -14,4 +14,4 @@ tooltips: true
 {% include person_info_OH.html UVA_id="jeb2md" %}
 
 - ##### Graduate Admissions:<br>
-{% include person_info_OH.html UVA_id="tam7b" %}
+{% include person_info_OH.html UVA_id="ko5wk" %}
