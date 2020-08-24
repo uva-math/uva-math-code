@@ -88,7 +88,7 @@ nav_weight: 5
         &amp; II</a></td>
     <td valign="top"><a
         href="https://virginia.zoom.us/j/7088066">Calculus I
-        &amp; II <br>
+        &amp; II </a><br>
         </td>
     </tr>
 </tbody>
