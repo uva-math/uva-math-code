@@ -8,7 +8,7 @@ office: 311 Kerchof Hall
 phone:
 email: ws7jx@virginia.edu
 image:
-personal_page:
+personal_page: https://walkerstern.gitlab.io 
 
 areas:
 
