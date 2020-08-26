@@ -7,7 +7,7 @@ position: Graduate Student
 office: 112 Kerchof Hall
 phone: 434-243-2304
 email: wlc3vf@virginia.edu
-image:
+image:  __SITE_URL__/img/people/2020-spring/William Craig.jpg
 personal_page: https://people.virginia.edu/~wlc3vf/
 
 
