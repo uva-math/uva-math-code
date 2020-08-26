@@ -6,7 +6,7 @@ general_position: postdoc
 position: RTG Research Associate
 office: 311 Kerchof Hall 
 phone:
-email:
+email: weo3y@virginia.edu
 image:
 personal_page:
 
