@@ -7,7 +7,7 @@ position: Graduate Student
 office: 403 Kerchof Hall
 phone: 434-924-3776
 email: lx5af@virginia.edu
-image: 
+image:  __SITE_URL__/img/people/2020-spring/Liaosha Xu.jpg
 personal_page:
 
 
