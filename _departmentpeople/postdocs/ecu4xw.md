@@ -7,7 +7,7 @@ position: Whyburn Research Associate
 office: 301 Kerchof Hall
 phone: 434-924-4100
 email: ecu4xw@virginia.edu
-image:
+image: __SITE_URL__/img/people/2020-fall/Mazzoli.jpg
 personal_page:
 
 areas:
