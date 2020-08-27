@@ -7,7 +7,7 @@ position: Research Associate and Lecturer
 office: 131 Kerchof Hall 
 phone:
 email: tp2tt@virginia.edu
-image:
+image: __SITE_URL__/img/people/2020-fall/Polstra.jpg
 personal_page:
 
 areas:
