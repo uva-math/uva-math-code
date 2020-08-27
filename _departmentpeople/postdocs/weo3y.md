@@ -7,7 +7,7 @@ position: RTG Research Associate
 office: 311 Kerchof Hall 
 phone:
 email: weo3y@virginia.edu
-image:
+image: __SITE_URL__/img/people/2020-fall/Olsen.jpg
 personal_page:
 
 areas:
