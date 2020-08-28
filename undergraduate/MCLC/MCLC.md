@@ -24,10 +24,10 @@ nav_weight: 5
 <table width="100%" border="1" cellspacing="2" cellpadding="2">
 <tbody>
     <tr>
-    <td valign="top"><center><b>Time</b></center><br>
-    </td>
-    <td valign="top"><b>Sunday</b><br>
-    </td>
+    <th valign="top">Time<br>
+    </th>
+    <th valign="top"><b>Sunday</b><br>
+    </th>
     <td valign="top"><b>Monday</b><br>
     </td>
     <td valign="top"><b>Tuesday</b><br>
