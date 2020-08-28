@@ -8,7 +8,7 @@ office: 318 Kerchof Hall
 phone: 434-924-7123
 email: njk4x@virginia.edu
 image: __SITE_URL__/img/people/Kuhn.jpg
-personal_page: http://pi.math.virginia.edu/Faculty/Kuhn/
+personal_page: https://uva.theopenscholar.com/nick-kuhn
 
 
 areas:
