@@ -79,7 +79,8 @@ nav_weight: 5
     </td>
     <td valign="top"><a
         href="https://virginia.zoom.us/j/4600303">Calculus I
-        &amp; II</a></td>
+        &amp; II</a>
+    </td>
     <td valign="top"><a
         href="https://virginia.zoom.us/j/5795546">Calculus I
         &amp; II</a><br>
@@ -89,11 +90,13 @@ nav_weight: 5
     </td>
     <td valign="top"><a
         href="https://virginia.zoom.us/j/6939765">Calculus I
-        &amp; II</a></td>
+        &amp; II</a> <br>
+        <a href="https://virginia.zoom.us/j/5795546">Math 3354</a>
+    </td>
     <td valign="top"><a
         href="https://virginia.zoom.us/j/7088066">Calculus I
         &amp; II </a><br>
-        </td>
+    </td>
     </tr>
 </tbody>
 </table>
