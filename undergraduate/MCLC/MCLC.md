@@ -14,7 +14,7 @@ nav_weight: 5
 
 <h2 class="mb-4">Math Collaborative Learning Center</h2>
 
-**(MCLC WILL BE OPENING ON SEPTEMBER 1st)**
+**<p style="color:Red;"> MCLC WILL BE OPENING ON SEPTEMBER 1st**
 
 
 
