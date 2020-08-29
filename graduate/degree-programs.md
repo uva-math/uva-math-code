@@ -57,10 +57,12 @@ The Master of Arts and Master of Science programs are normally completed within 
 
 **Please note that Department of Mathematics does not normally admit students seeking only a Masters degree; we are primarily a PhD program.**
 
-### Requirements for a Master of Arts
+### (requirements are under review)
+
+<!-- ### Requirements for a Master of Arts
 
 Successful completion of 30 hours of approved courses at the 5000 level or above, which must include MATH 5310, 5330, 5651, 5652, or higher-level substitutes. Students may take approved courses from other departments. With permission, a Masters thesis can be substituted for up to six of the course hours.&nbsp;In addition, the student must pass a master&rsquo;s exam: either one of the General Exams as described in our PhD program requirements, or an ad hoc exam approved by the graduate committee.
 
 ### Requirements for a Master of Science
 
-Successful completion of 30 hours of approved courses at the 5000 level or above, which must include MATH 7310, 7340, 7751, 7752, 7800, and 7820, or higher-level substitutes. Students may take approved courses from other departments. In addition, the student must pass one of the General Exams as described in our PhD program requirements.
+Successful completion of 30 hours of approved courses at the 5000 level or above, which must include MATH 7310, 7340, 7751, 7752, 7800, and 7820, or higher-level substitutes. Students may take approved courses from other departments. In addition, the student must pass one of the General Exams as described in our PhD program requirements. -->
