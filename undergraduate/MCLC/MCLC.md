@@ -16,6 +16,9 @@ nav_weight: 5
 
 <p style="color:Red;"> MCLC WILL BE OPENING ON SEPTEMBER 1st </p>
 
+The MCLC provides assistance fot the following courses: <br>
+MATH 1190, 1210, 1310 (collectively reffered to as Calculus I), and MATH 1220, 1320 (collectively referred to as Calculus II) <br>
+MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351 and 3354
 
 
 
@@ -53,7 +56,7 @@ nav_weight: 5
     <td valign="top"><a
         href="https://virginia.zoom.us/j/5795546">Calculus I
         &amp; II</a><br>
-        <a href="https://virginia.zoom.us/j/5795546">Math 2310</a><br> 
+        <a href="https://virginia.zoom.us/j/5795546">Math 2310/2315</a><br> 
         <a href="https://virginia.zoom.us/j/5795546">Math 3000/3310</a><br> 
         <a href="https://virginia.zoom.us/j/5795546">Math 3250</a><br> 
     </td>
@@ -67,7 +70,7 @@ nav_weight: 5
     <td valign="top"><a
         href="https://virginia.zoom.us/j/7088066">Calculus I
         &amp; II </a> <br>
-       <a href="https://virginia.zoom.us/j/5795546">Math 2310</a><br> 
+       <a href="https://virginia.zoom.us/j/5795546">Math 2310/2315</a><br> 
     </td>
     </tr> 
     <tr>
