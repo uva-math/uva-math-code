@@ -24,7 +24,7 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
 <ul>
  <li> When joining an MCLC session, use a Zoom account that is associated with your UVA credentials.
  <li> Join a session from a quite environment. If you intend to have your web camera on, make sure your surroundings and attire are appropriate.
- <li> Be prepared to share your questions with your consultant. You can share your browser, documents open on your desktop interface (like PDFs), or your entire screen, by clicking the green "Share Screen" button found on Zoom's toolbar. You may also share a document via Zoom's Chat tool, by clicking "File" and uploading your document there. Your consultant may offer a different way to share.
+ <li> Be prepared to share your questions with your consultant. You can share your browser, documents open on your desktop interface (like PDFs), or your entire screen, by clicking the green "Share Screen" button found on Zoom's toolbar. You may also share a document via Zoom's Chat tool, by clicking "File" and uploading your document there. <em> Sharing options may be limited depending on the version of Zoom you are using. </em> Your consultant may offer a different way to share.
  <li> Once you join a session, a consulant will assign you to a (virtual) room for the course for which you need help. This process may take a couple of minutes. </li>
 </ul>
 
