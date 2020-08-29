@@ -16,16 +16,17 @@ nav_weight: 5
 
 <p style="color:Red;"> MCLC WILL BE OPENING ON SEPTEMBER 1st </p>
 
-The MCLC provides assistance fot the following courses: <br>
+
+The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer one-on-one (or small group) tutoring sessions for many 1000/2000/3000-level math courses. This service is free to all UVA students enrolled in one it the following courses: <br>
 -MATH 1190, 1210, 1310 (collectively reffered to as Calculus I), and MATH 1220, 1320 (collectively referred to as Calculus II) <br>
 -MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351, and 3354
 
-Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 semester will be held virtually, via Zoom. Here are a few things that you should have in mind before joining a session:
+Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 semester will be held virtually, via Zoom (links found in the table below). Here are a few things that you should have in mind before joining a session:
 <ul>
- <li> When joining an MCLC session, use a Zoom account that is associated with your UVA credentials.
- <li> Join a session from a quite environment. If you intend to have your web camera on, make sure your surroundings and attire are appropriate.
- <li> Be prepared to share your questions with your consultant. You can share your browser, documents open on your desktop interface (like PDFs), or your entire screen, by clicking the green "Share Screen" button found on Zoom's toolbar. You may also share a document via Zoom's Chat tool, by clicking "File" and uploading your document there. <em> Sharing options may be limited depending on the version of Zoom you are using. </em> Your consultant may offer a different way to share.
- <li> Once you join a session, a consulant will assign you to a (virtual) room for the course for which you need help. This process may take a couple of minutes. </li>
+ <li> When joining an MCLC session, use a Zoom account that is associated with your UVA credentials.</li>
+ <li> Join a session from a quite environment. If you intend to have your web camera on, make sure your surroundings and attire are appropriate.</li>
+ <li> Be prepared to share your questions with your consultant. You can share your browser, documents open on your desktop interface (like PDFs), or your entire screen, by clicking the green "Share Screen" button found on Zoom's toolbar. You may also share a document via Zoom's Chat tool, by clicking "File" and uploading your document there. <em> Sharing options may be limited depending on the version of Zoom you are using.</em> Your consultant may offer a different way to share.</li>
+ <li> Once you join a session, a consulant will assign you to a (virtual) room for the course for which you need help. This process may take a couple of minutes.</li>
 </ul>
 
 <h3 class="mb-4 mt-4">Schedule (to be updated)</h3>
