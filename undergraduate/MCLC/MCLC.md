@@ -27,8 +27,7 @@ The MCLC provides assistance fot the following courses: <br>
 <table width="100%" border="1" cellspacing="2" cellpadding="2">
  <thead>
     <tr>
-    <th> Times <br>
-    </th>
+    <th> Time </th>
     <th><b>Sunday</b><br>
     </th>
     <th><b>Monday</b><br>
