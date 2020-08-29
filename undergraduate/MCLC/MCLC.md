@@ -40,7 +40,7 @@ The MCLC provides assistance fot the following courses: <br>
     <th valign="top"><b>Thursday</b><br>
     </th>
     </tr>
-  <\thead> 
+  </thead> 
   <tbody>    
     <tr>
     <td valign="top">7:00-8:30 p.m.<br>
