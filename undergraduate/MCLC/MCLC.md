@@ -18,7 +18,7 @@ nav_weight: 5
 
 The MCLC provides assistance fot the following courses: <br>
 -MATH 1190, 1210, 1310 (collectively reffered to as Calculus I), and MATH 1220, 1320 (collectively referred to as Calculus II) <br>
--MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351 and 3354
+-MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351, and 3354
 
 
 
@@ -27,7 +27,7 @@ The MCLC provides assistance fot the following courses: <br>
 <table width="100%" border="1" cellspacing="2" cellpadding="2">
  <thead>
     <tr>
-    <th valign="top">Time<br>
+    <th> Time<br>
     </th>
     <th valign="top"><b>Sunday</b><br>
     </th>
