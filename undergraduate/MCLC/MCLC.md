@@ -20,7 +20,12 @@ The MCLC provides assistance fot the following courses: <br>
 -MATH 1190, 1210, 1310 (collectively reffered to as Calculus I), and MATH 1220, 1320 (collectively referred to as Calculus II) <br>
 -MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351, and 3354
 
-
+Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 semester will be held virtually, via Zoom. Here are a few things that you should have in mind before joining a session:
+<ul>
+ <li> When joining an MCLC session, use a Zoom account that is associated with your UVA credentials
+ <li> Join a session from a quite environment
+ <li> 
+</ul>
 
 <h3 class="mb-4 mt-4">Schedule (to be updated)</h3>
 
