@@ -17,9 +17,11 @@ nav_weight: 5
 <p style="color:Red;"> MCLC WILL BE OPENING ON SEPTEMBER 1st </p>
 
 
-The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer one-on-one (or small group) tutoring sessions for many 1000/2000/3000-level math courses. This service is free to all UVA students enrolled in one it the following courses: <br>
--MATH 1190, 1210, 1310 (collectively reffered to as Calculus I), and MATH 1220, 1320 (collectively referred to as Calculus II) <br>
--MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351, and 3354
+The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer one-on-one (or small group) tutoring sessions for many 1000/2000/3000-level math courses. This service is free to all UVA students enrolled in one of the following courses: <br>
+<ul>
+ <li> MATH 1190, 1210, 1310 (collectively reffered to as Calculus I), and MATH 1220, 1320 (collectively referred to as Calculus II) </li>
+ <li>MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351, and 3354 </li>
+</ul>
 
 Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 semester will be held virtually, via Zoom (links found in the table below). Here are a few things that you should have in mind before joining a session:
 <ul>
