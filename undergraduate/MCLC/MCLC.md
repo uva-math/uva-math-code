@@ -33,12 +33,12 @@ The MCLC provides assistance fot the following courses: <br>
     </th>
     <th valign="top"><b>Monday</b><br>
     </th>
-    <td valign="top"><b>Tuesday</b><br>
-    </td>
-    <td valign="top"><b>Wednesday</b><br>
-    </td>
-    <td valign="top"><b>Thursday</b><br>
-    </td>
+    <th valign="top"><b>Tuesday</b><br>
+    </th>
+    <th valign="top"><b>Wednesday</b><br>
+    </th>
+    <th valign="top"><b>Thursday</b><br>
+    </th>
     </tr>
   <\thead> 
   <tbody>    
