@@ -17,22 +17,22 @@ nav_weight: 5
 <p style="color:Red;"> MCLC WILL BE OPENING ON SEPTEMBER 1st </p>
 
 The MCLC provides assistance fot the following courses: <br>
-MATH 1190, 1210, 1310 (collectively reffered to as Calculus I), and MATH 1220, 1320 (collectively referred to as Calculus II) <br>
-MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351 and 3354
+-MATH 1190, 1210, 1310 (collectively reffered to as Calculus I), and MATH 1220, 1320 (collectively referred to as Calculus II) <br>
+-MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351 and 3354
 
 
 
 <h3 class="mb-4 mt-4">Schedule (to be updated)</h3>
 
 <table width="100%" border="1" cellspacing="2" cellpadding="2">
-<tbody>
+ <thead>
     <tr>
-    <td valign="top">Time<br>
-    </td>
-    <td valign="top"><b>Sunday</b><br>
-    </td>
-    <td valign="top"><b>Monday</b><br>
-    </td>
+    <th valign="top">Time<br>
+    </th>
+    <th valign="top"><b>Sunday</b><br>
+    </th>
+    <th valign="top"><b>Monday</b><br>
+    </th>
     <td valign="top"><b>Tuesday</b><br>
     </td>
     <td valign="top"><b>Wednesday</b><br>
@@ -40,6 +40,8 @@ MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351 and 3354
     <td valign="top"><b>Thursday</b><br>
     </td>
     </tr>
+  <\thead> 
+  <tbody>    
     <tr>
     <td valign="top">7:00-8:30 p.m.<br>
     </td>
@@ -101,7 +103,7 @@ MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351 and 3354
         &amp; II </a><br>
     </td>
     </tr>
-</tbody>
+ </tbody>
 </table>
 
 
