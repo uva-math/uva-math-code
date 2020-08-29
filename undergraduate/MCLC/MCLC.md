@@ -27,17 +27,17 @@ The MCLC provides assistance fot the following courses: <br>
 <table width="100%" border="1" cellspacing="2" cellpadding="2">
  <thead>
     <tr>
-    <th> Time<br>
+    <th> Times <br>
     </th>
-    <th valign="top"><b>Sunday</b><br>
+    <th><b>Sunday</b><br>
     </th>
-    <th valign="top"><b>Monday</b><br>
+    <th><b>Monday</b><br>
     </th>
-    <th valign="top"><b>Tuesday</b><br>
+    <th><b>Tuesday</b><br>
     </th>
-    <th valign="top"><b>Wednesday</b><br>
+    <th><b>Wednesday</b><br>
     </th>
-    <th valign="top"><b>Thursday</b><br>
+    <th><b>Thursday</b><br>
     </th>
     </tr>
   </thead> 
