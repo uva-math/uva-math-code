@@ -86,24 +86,20 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
     <td valign="top">8:30-10:00 p.m.<br>
     </td>
     <td valign="top"><a
-         href="https://virginia.zoom.us/j/2369587">Calculus I
-        &amp; II</a><br>
+         href="https://virginia.zoom.us/j/2369587">Calculus I &amp; II</a><br>
     </td>
     <td valign="top"><a
-        href="https://virginia.zoom.us/j/4600303">Calculus I
-        &amp; II</a>
+        href="https://virginia.zoom.us/j/4600303">Calculus I &amp; II</a>
     </td>
     <td valign="top"><a
            href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Calculus I &amp; II</a><br>
         <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Math 3354</a>
     </td>
     <td valign="top"><a
-        href="https://virginia.zoom.us/j/6939765">Calculus I
-        &amp; II</a> 
+        href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Calculus I &amp; II</a> 
     </td>
     <td valign="top"><a
-        href="https://virginia.zoom.us/j/7088066">Calculus I
-        &amp; II </a><br>
+        href="https://virginia.zoom.us/j/98925248186?pwd=NmMydUVSaG9kTzdmcUE4VmFFTHdrQT09">Calculus I &amp; II </a>
     </td>
     </tr>
  </tbody>
