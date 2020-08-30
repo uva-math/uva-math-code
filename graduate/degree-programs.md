@@ -57,7 +57,7 @@ The Master of Arts and Master of Science programs are normally completed within 
 
 **Please note that Department of Mathematics does not normally admit students seeking only a Masters degree; we are primarily a PhD program.**
 
-### (requirements are under review)
+### (Masters requirements are under review)
 
 <!-- ### Requirements for a Master of Arts
 
