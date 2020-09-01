@@ -14,10 +14,10 @@ nav_weight: 5
 
 <h2 class="mb-4">Math Collaborative Learning Center</h2>
 
-<p style="color:Red;"> MCLC WILL BE OPENING ON SEPTEMBER 1st </p>
+<p style="font-size:160%;"> The MCLC is now open for the Fall 2020 semester! </p>
 
 
-The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer one-on-one (or small group) tutoring sessions for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
+The Math Collaborative Learning Center (MCLC) is staffed with experienced undergraduate students (MCLC consultants) that offer one-on-one (or small group) tutoring sessions for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
 <ul>
  <li> MATH 1190, 1210, 1310 (collectively reffered to as Calculus I), and MATH 1220, 1320 (collectively referred to as Calculus II) </li>
  <li>MATH 2310, 2315, 3000, 3100, 3250, 3310, 3350, 3351, and 3354 </li>
@@ -36,11 +36,9 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
 <table width="100%" border="1" cellspacing="2" cellpadding="2">
  <thead>
     <tr>
-    <th> Time </th>
-    <th><b>Sunday</b><br>
-    </th>
-    <th><b>Monday</b><br>
-    </th>
+    <th><b>Time</b></th>
+    <th><b>Sunday</b><br></th>
+    <th><b>Monday</b><br></th>
     <th><b>Tuesday</b><br>
     </th>
     <th><b>Wednesday</b><br>
