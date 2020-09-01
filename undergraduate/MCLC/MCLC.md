@@ -56,8 +56,8 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
         <a href="https://virginia.zoom.us/j/97495239196?pwd=dkhQTnRMb1BzWWRGdGVhRHhoenVHUT09">Math 3350/3351</a> 
     </td>
     <td valign="top"><a
-        href="https://virginia.zoom.us/j/4600303">Calculus I &amp; II</a><br> <!--M-->
-        Math 3100
+           href="https://virginia.zoom.us/j/93231938016?pwd=SndFNzNCZEtMVWJYdC9sL0QreWVPZz09">Calculus I &amp; II</a><br> <!--M-->
+        <a href="https://virginia.zoom.us/j/93231938016?pwd=SndFNzNCZEtMVWJYdC9sL0QreWVPZz09">Math 3100</a>
     </td>
    <td valign="top"><a 
            href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Calculus I &amp; II</a><br> <!--T-->
@@ -72,8 +72,8 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
         <a href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Math 3350/3351</a><br> 
     </td>
     <td valign="top"><a
-          href="https://virginia.zoom.us/j/98925248186?pwd=ek5ldUN4ZXJWQmFmOFNzTENCYXduZz09">Calculus I &amp; II </a><br> <!--Th-->
-       <a href="https://virginia.zoom.us/j/98925248186?pwd=ek5ldUN4ZXJWQmFmOFNzTENCYXduZz09">Math 2310/2315</a><br> 
+           href="https://virginia.zoom.us/j/98925248186?pwd=ek5ldUN4ZXJWQmFmOFNzTENCYXduZz09">Calculus I &amp; II </a><br> <!--Th-->
+        <a href="https://virginia.zoom.us/j/98925248186?pwd=ek5ldUN4ZXJWQmFmOFNzTENCYXduZz09">Math 2310/2315</a><br> 
     </td>
    </tr> 
    <tr>
@@ -83,7 +83,7 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
          href="https://virginia.zoom.us/j/97495239196?pwd=dkhQTnRMb1BzWWRGdGVhRHhoenVHUT09">Calculus I &amp; II</a><br> <!--S-->
     </td>
     <td valign="top"><a
-        href="https://virginia.zoom.us/j/4600303">Calculus I &amp; II</a> <!--M-->
+        href="https://virginia.zoom.us/j/93231938016?pwd=SndFNzNCZEtMVWJYdC9sL0QreWVPZz09">Calculus I &amp; II</a> <!--M-->
     </td>
     <td valign="top"><a
            href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Calculus I &amp; II</a><br> <!--T-->
