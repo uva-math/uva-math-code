@@ -34,7 +34,7 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
 <h3 class="mb-4 mt-4">Schedule</h3>
 
 <table width="100%" border="1" cellspacing="2" cellpadding="2">
- <thead>
+ <thead style="background-color:tomato;">
     <tr>
     <th><b>Time</b></th>
     <th><b>Sunday</b><br></th>
