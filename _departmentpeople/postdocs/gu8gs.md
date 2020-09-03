@@ -8,7 +8,7 @@ office: 303 Kerchof Hall
 phone: 434-924-4943
 email: gu8gs@virginia.edu 
 image: 
-personal_page:
+personal_page: https://guraltsev.gitlab.io
 
 areas:
 
