@@ -12,10 +12,10 @@ nav_parent: IMS
 more-text: Abstracts and short bio
 ---
 
-Department of Mathematics is very happy to welcome Ingrid Daubechies for a virtual visit on Monday, September 14 and Tuesday, September 15. Here is the information about the events (all times in EDT):
+Department of Mathematics is very happy to welcome Ingrid Daubechies for a virtual visit on Monday, September 14 and Tuesday, September 15. Here is the information about the events (all times in EDT; password is the speaker's first name, lowercase):
 
-- **Colloquium: Monday, September 14, 4:00pm**
-- **Public Talk: Monday, September 14, 7:00pm**
+- **Colloquium: Monday, September 14, 4:00pm** at [https://virginia.zoom.us/j/94098593565](https://virginia.zoom.us/j/94098593565)
+- **Public Talk: Monday, September 14, 7:00pm** at [https://virginia.zoom.us/j/96310657012](https://virginia.zoom.us/j/96310657012)
 - **AWM Q&A Panel: Tuesday, September 15, 12:00pm**
 
 <!--more-->
