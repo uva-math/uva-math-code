@@ -16,7 +16,7 @@ Department of Mathematics is very happy to welcome Ingrid Daubechies for a virtu
 
 - **Colloquium: Monday, September 14, 4:00pm** at [https://virginia.zoom.us/j/94098593565](https://virginia.zoom.us/j/94098593565)
 - **Public Talk: Monday, September 14, 7:00pm** at [https://virginia.zoom.us/j/96310657012](https://virginia.zoom.us/j/96310657012)
-- **AWM Q&A Panel: Tuesday, September 15, 12:00pm**
+- **AWM Q&A Panel: Tuesday, September 15, 12:00pm** (zoom link at [https://math.virginia.edu/awm/calendar/](https://math.virginia.edu/awm/calendar/))
 
 <!--more-->
 
