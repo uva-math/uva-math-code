@@ -22,11 +22,11 @@ tooltips: true
 ## Application Checklist:
 1. Application;
 2. Statement of purpose;
-3. GRE scores, including the mathematics&nbsp;subject test;
+3. GRE scores, including the mathematics&nbsp;subject test (<b>this requirement is waived in 2020-2021 due to COVID-19</b>);
 4. 2 or 3 letters of recommendation;
 5. Unofficial transcript;
 6. $85 application fee;
-7. TOEFL score for international students (see <a href="http://graduate.as.virginia.edu/requirements">here</a>).
+7. TOEFL score for international students (see <a href="http://graduate.as.virginia.edu/requirements">here</a>). In exceptional circumstances, it might be possible to replace TOEFL with an in-person interview with UVA faculty.
 
 ##### Other useful links
 
