@@ -27,6 +27,10 @@ Graduate research in algebra is organized into the following areas:
 - Representation Theory
 - Commutative Algebra
 - Algebraic Geometry
+- Algebraic Combinatorics
+- Arithmetic Geometry
+- Number Theory
+
 
 
 <h3>1.1 Core Courses and Requirements in Algebra</h3>
@@ -79,7 +83,7 @@ MATH 7600 Homological Algebra, MATH 8851 Group Theory, MATH 8600 Commutative Alg
 **Faculty:**&nbsp;&nbsp;
 {% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "reptheory" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
- Representation theory deals with representations of algebraic and associated finite groups, associative and Lie algebras, and connections with algebraic geometry and mathematical physics. Topics include representations of reductive algebraic groups in positive characteristic with applications to finite groups of Lie type, quantum groups and Hecke algebras, quasi-hereditary algebras and vertex algebras. This work used methods from the theory of algebraic groups and algebraic geometry, Lie algebras, and homological algebra.
+ Representation theory deals with representations of algebraic and associated finite groups, associative and Lie algebras, and connections with algebraic geometry and mathematical physics. Topics include representations of reductive algebraic groups in positive characteristic with applications to finite groups of Lie type, quantum groups and Hecke algebras, quasi-hereditary algebras and vertex algebras. This work used methods from the theory of algebraic groups and algebraic geometry, Lie algebras, and homological algebra. Moonshine represents the interplay between the number theory of automorphic forms and the representation theory of finite groups.
 
 #### Recommended Advanced Courses
 

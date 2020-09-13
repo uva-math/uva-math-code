@@ -13,4 +13,10 @@ personal_page: https://uva.theopenscholar.com/ken-ono
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
+
+
+grad_general_areas:
+  - algebra
+grad_special_areas:
+  - reptheory
 ---
