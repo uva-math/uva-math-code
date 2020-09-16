@@ -4,7 +4,7 @@ title: Ingrid Daubechies Colloquium and Public Lecture
 event-date: 2020-09-14 19:00:00
 multi-day-event: false
 comments: false
-categories: news ims ims-special events 
+categories: news ims ims-special events major-news
 published: true
 image: __SITE_URL__/img/IMS/Daubechies.png
 image-alt: Prof. 
