@@ -9,9 +9,15 @@ phone: 434-924-4936
 email: yq2dw@virginia.edu
 image: __SITE_URL__/img/people/2019-fall/Qi.jpg
 personal_page: http://people.virginia.edu/~yq2dw/index.html
-areas:
+
+
 grad_general_areas:
+  - algebra
 grad_special_areas:
+  - reptheory
+
+areas:
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 
 ---
 

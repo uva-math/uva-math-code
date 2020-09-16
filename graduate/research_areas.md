@@ -112,6 +112,9 @@ MATH 7600, Homological Algebra; MATH 8600, Commutative Algebra; and MATH 8620, A
 **Faculty:**&nbsp;&nbsp;
 {% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "algeom" %}<a href="mailto:{{ ppl.email }}"><span style="whitespace:nowrap"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span> {{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</span></a>; {% endif %}{% endfor %}
 
+
+The <a href="{{site.url}}/seminars/galois/">Galois-Grothendieck seminar</a> is a learning seminar for graduate students, postdocs and faculty that focuses on topics from algebraic and arithmetic geometry and number theory. It is open to graduate students of all years independent of the chosen area of research.
+
 ---
 
 <h2>2 Graduate Program in Analysis</h2>
