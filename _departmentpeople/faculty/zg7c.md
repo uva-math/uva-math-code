@@ -14,6 +14,7 @@ grad_general_areas:
   - analysis
 grad_special_areas:
   - diffeq
+  - harmonic
 areas:
   - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
   - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics

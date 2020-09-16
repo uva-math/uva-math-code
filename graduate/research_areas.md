@@ -138,6 +138,7 @@ Graduate research in analysis is organized into the following areas:
 - Differential Equations and Related Applied Mathematics
 - Mathematical Physics
 - Operator Theory, Operator Algebras, and Function Theory
+- Harmonic Analysis
 - Probability and Related Applied Mathematics
 
 
@@ -203,7 +204,8 @@ MATH 726 (Ordinary Differential Equations II) and MATH 826 (Partial Differential
 **Faculty:**&nbsp;&nbsp;
 {% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "math_physics" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
 
- Our research in mathematical physics is concerned with the spectral and scattering theory for Schroedinger operators in quantum mechanics, equilibrium and non-equilibrium statistical mechanics, and topics in classical mechanics. The mathematical methods needed include: real analysis--measure theory and integration; functional analysis--for example, operators in Hilbert spaces; Fourier analysis; partial differential equations; and some basic probability theory.
+ Our research in mathematical physics is concerned with the spectral and scattering theory for Schroedinger operators in quantum mechanics, equilibrium and non-equilibrium statistical mechanics, and topics in classical mechanics. The mathematical methods needed include: real analysis--measure theory and integration; functional analysis--for example, operators in Hilbert spaces; Fourier analysis; partial differential equations; and some basic probability theory. 
+ Real variable methods for inverse scattering theory as a topic.
 
 #### Area Coursework
 
@@ -235,17 +237,25 @@ Besides the three common core analysis courses, students should take MATH 8310 (
 MATH 7250 (Ordinary Differential Equations), MATH 7360 (Probability Theory), MATH 7450 (Mathematical Physics), MATH 8250 (Ordinary Differential Equations), MATH 8320 (Operator Theory II), MATH 8400 (Harmonic Analysis).
 
 
+<h3>2.5 Harmonic Analysis</h3>
+
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "harmonic" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+
+Fourier analysis and boundedness of multilinear operators, focusing on time-frequency analysis and its recent development, motivated by studies of pointwise convergence of Fourier series and boundedness of the Bilinear Hilbert transform and variants. 
+
+#### Area Coursework
+
+Real Analysis, Complex Analysis, Functional Analysis, Probability Theory, and Topics In Harmonic Analysis.
 
 
-
-
-
-<h3>2.5 Probability and Related Applied Mathematics</h3>
+<h3>2.6 Probability and Related Applied Mathematics</h3>
 
 **Faculty:**&nbsp;&nbsp;
 {% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "probability" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
 
- Probability is the mathematical theory of random events and random variables. Areas of particular interest to faculty include central limit theorems, Malliavin calculus, stochastic differential equations, Markov and L&egrave;vy processes, stochastic networks, measure-valued processes, and applications to operations research and mathematical biology.
+ Probability is the mathematical theory of random events and random variables. Areas of particular interest to faculty include central limit theorems, Malliavin calculus, stochastic differential equations, Markov and L&egrave;vy processes, stochastic networks, measure-valued processes, roots of random polynomials, and applications to operations research and mathematical biology. 
+ 
 
 #### Area Coursework
 
