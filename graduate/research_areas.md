@@ -268,7 +268,7 @@ We must emphasize that these areas have a lot in common, so the subdivision into
 
 
 
-- _First Semester:_ MATH 7820 Differential Topology (recommended) <strong>or</strong> 5770 General Topology (point-set topology).
+- _First Semester:_ MATH 7820 Differential Topology (recommended).
 - _Second Semester:_ MATH 7800 Algebraic Topology I (fundamental group and covering spaces, singular and simplicial homology).
 
 
@@ -280,11 +280,11 @@ We must emphasize that these areas have a lot in common, so the subdivision into
 - _Second Semester:_ MATH 7830 Fiber Bundles (vector bundles, characteristic classes, elements of K-theory) and MATH 9800 Topology Seminar. In addition, during the second year students should take at least one additional topology course.
 
 
- The course MATH 7830 will be offered in the Spring semester each year. Besides taking the sequence MATH 7820 (or 5770), 7800, 7810, 7830, students with interests in topology are required--within the first two years--to take at least one additional course in the specialized area or track of topology (see below) which they expect to follow. These additional courses may be independent reading courses taken under the supervision of a faculty member.
+ The course MATH 7830 will be offered in the Spring semester each year. Besides taking the sequence MATH 7820, 7800, 7810, 7830, students with interests in topology are required--within the first two years--to take at least one additional course in the specialized area or track of topology (see below) which they expect to follow. These additional courses may be independent reading courses taken under the supervision of a faculty member.
 
 #### General exam
 
-The General Exam in Topology is based on the material of MATH 7820 (or 5770), 7800.
+The General Exam in Topology is based on the material of MATH 7820, 7800.
 
 #### Research Seminar
 
