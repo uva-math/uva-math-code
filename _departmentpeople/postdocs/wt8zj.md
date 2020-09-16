@@ -10,7 +10,14 @@ email: wt8zj@virginia.edu
 image: __SITE_URL__/img/people/2020-fall/Tsai.jpg
 personal_page:
 
+
 areas:
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+
+grad_general_areas:
+  - algebra
+grad_special_areas:
+  - reptheory
 
 
 
