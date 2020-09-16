@@ -21,6 +21,7 @@ grad_special_areas:
   - reptheory
   - math_physics
   - probability
+  - algcomb
 
 ---
 

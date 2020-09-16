@@ -14,6 +14,7 @@ grad_general_areas:
   - algebra
 grad_special_areas:
   - groups
+  - numth
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
 

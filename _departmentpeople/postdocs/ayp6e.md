@@ -13,6 +13,7 @@ grad_general_areas:
   - algebra
 grad_special_areas:
   - reptheory
+  - algcomb
 areas:
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory

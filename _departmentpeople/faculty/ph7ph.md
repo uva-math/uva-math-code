@@ -11,3 +11,10 @@ email: ph7ph@virginia.edu
 image: __SITE_URL__/img/people/2020-fall/Peter.jpg
 personal_page: 
 ---
+
+grad_general_areas:
+  - algebra
+grad_special_areas:
+  - numth
+areas:
+  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory

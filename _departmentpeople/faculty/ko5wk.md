@@ -19,4 +19,5 @@ grad_general_areas:
   - algebra
 grad_special_areas:
   - reptheory
+  - numth
 ---

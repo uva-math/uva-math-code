@@ -28,7 +28,6 @@ Graduate research in algebra is organized into the following areas:
 - Commutative Algebra
 - Algebraic Geometry
 - Algebraic Combinatorics
-- Arithmetic Geometry
 - Number Theory
 
 
@@ -114,6 +113,18 @@ MATH 7600, Homological Algebra; MATH 8600, Commutative Algebra; and MATH 8620, A
 
 
 The <a href="{{site.url}}/seminars/galois/">Galois-Grothendieck seminar</a> is a learning seminar for graduate students, postdocs and faculty that focuses on topics from algebraic and arithmetic geometry and number theory. It is open to graduate students of all years independent of the chosen area of research.
+
+<h3>1.6 Algebraic Combinatorics</h3>
+
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "algcomb" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+
+
+<h3>1.7 Number Theory</h3>
+
+**Faculty:**&nbsp;&nbsp;
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "numth" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+
 
 ---
 
