@@ -3,7 +3,7 @@ UVA_id: wt8zj
 lastname: Tsai
 name: Wei-Lun
 general_position: postdoc
-position: Research Associate
+position: Research Associate and Lecturer
 office: 131 Kerchof Hall
 phone:
 email: wt8zj@virginia.edu

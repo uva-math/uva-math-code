@@ -3,7 +3,7 @@ UVA_id: weo3y
 lastname: Olsen
 name: William
 general_position: postdoc
-position: RTG Research Associate
+position: RTG Research Associate and Lecturer
 office: 311 Kerchof Hall 
 phone:
 email: weo3y@virginia.edu

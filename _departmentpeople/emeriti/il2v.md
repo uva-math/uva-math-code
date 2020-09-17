@@ -3,7 +3,7 @@ UVA_id: il2v
 lastname: Lasiecka
 name: Irena
 general_position: emeritus
-position: Commonwealth Professor Emeritus
+position: Commonwealth Professor Emerita
 office:
 phone:
 email: il2v@virginia.edu

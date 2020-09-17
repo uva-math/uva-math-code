@@ -3,7 +3,7 @@ UVA_id: bjp8w
 lastname: Parshall
 name: Brian
 general_position: emeritus
-position: Professor Emeritus
+position: Gordon Whyburn Professor of Mathematics Emeritus
 office: 301 Kerchof Hall
 phone: 434-924-4100
 email: bjp8w@virginia.edu

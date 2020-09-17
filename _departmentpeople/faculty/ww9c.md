@@ -3,7 +3,7 @@ UVA_id: ww9c
 lastname: Wang
 name: Weiqiang
 general_position: faculty
-position: Professor
+position: Gordon Whyburn Professor of Mathematics
 office: 323 Kerchof Hall
 phone: 434-924-7905
 email: ww9c@virginia.edu

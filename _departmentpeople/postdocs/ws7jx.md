@@ -3,7 +3,7 @@ UVA_id: ws7jx
 lastname: Stern
 name: Walker
 general_position: postdoc
-position: RTG Research Associate
+position: RTG Research Associate and Lecturer
 office: 311 Kerchof Hall
 phone:
 email: ws7jx@virginia.edu
