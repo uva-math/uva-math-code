@@ -8,7 +8,7 @@ office: 131 Kerchof Hall
 phone:
 email: wt8zj@virginia.edu
 image: __SITE_URL__/img/people/2020-fall/Tsai.jpg
-personal_page:
+personal_page: https://uva.theopenscholar.com/wei-lun-tsai
 
 
 areas:
