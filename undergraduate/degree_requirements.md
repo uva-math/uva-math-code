@@ -14,10 +14,11 @@ nav_weight: 1
 - ##### [Declaration of math minor form]({{ site.url }}/undergraduate/docs/F20_Declaration of Minor form.pdf)
 
 <h1 class="mb-3 mt-3">To Declare a Major/Minor:</h1>
-- {% include person_info_OH.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
-- {% include person_info_OH.html UVA_id="iwh" %}<br><br class="hidden-sm-up">
-- {% include person_info_OH.html UVA_id="jf8dc" %}<br><br class="hidden-sm-up">
-- {% include person_info_OH.html UVA_id="yqd3p" %}
+- {% include person_info_OH.html UVA_id="pa8e" %} (Last name begins with letter F-J)<br><br class="hidden-sm-up">
+- {% include person_info_OH.html UVA_id="aa4cr" %} (Last name begins with letter A-E)<br><br class="hidden-sm-up">
+- {% include person_info_OH.html UVA_id="iwh" %} (Last name begins with letter U-Z)<br><br class="hidden-sm-up">
+- {% include person_info_OH.html UVA_id="jf8dc" %} (Last name begins with letter P-T)<br><br class="hidden-sm-up">
+- {% include person_info_OH.html UVA_id="yqd3p" %} (Last name begins with letter K-O)
 
 
 ---

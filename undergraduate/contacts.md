@@ -25,10 +25,11 @@ tooltips: true
 <!-- <br class="hidden-sm-up">{% include person_info_email_only.html UVA_id="iwh" %}  -->
 
 - ##### To Declare a Major/Minor:<br>
-{% include person_info_email_only.html UVA_id="iwh" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="jf8dc" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="yqd3p" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="pa8e" %}
+{% include person_info_email_only.html UVA_id="iwh" %} (Last name begins with letter U-Z)<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="aa4cr" %} (Last name begins with letter A-E)<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="jf8dc" %} (Last name begins with letter P-T)<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="yqd3p" %} (Last name begins with letter K-O)<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="pa8e" %} (Last name begins with letter F-J)
 
 
 - ##### Math Majors/Minors Administrative Assistant:<br>
