@@ -25,7 +25,6 @@ nav_weight: 2
 Graduate research in algebra is organized into the following areas:
 - Linear and Arithmetic Groups and Associated Structures
 - Representation Theory
-- Commutative Algebra
 - Algebraic Geometry
 - Algebraic Combinatorics
 - Number Theory
@@ -89,24 +88,7 @@ MATH 7600 Homological Algebra, MATH 8851 Group Theory, MATH 8600 Commutative Alg
 MATH 7600 Homological Algebra, MATH 8851 Group Theory, MATH 8852 Representation Theory, MATH 8620 Algebraic Geometry, MATH 8700 Lie Groups, MATH 8710 Lie Algebras, and special topics courses (or reading courses) in algebraic groups, Kac-Moody algebras, symmetric groups and their representations, Hecke algebras and quantum groups.
 
 
-
-<h3>1.4 Commutative Algebra</h3>
-
-**Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "commutative" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
-
- Commutative algebra studies the space of solutions of polynomial and power series equations in many variables, often by creating a &quot;generic&quot; solution space, and investigating the properties of this space, and its specializations and deformations.
-
- In the early 20th century, commutative algebra was born out of three classical fields: algebraic number theory, algebraic geometry, and invariant theory. Today it retains connections to all of these areas, as well as many other areas such as combinatorics, homological algebra, representation theory, computational algebra, singularity theory, and algebraic statistics.
-
- One of the most important techniques in modern commutative algebra is that of reduction to characteristic <em>p</em>, and the study and classification of singularities through invariants coming from this reduction.
-
-
-#### Recommended Advanced Courses
-
-MATH 7600, Homological Algebra; MATH 8600, Commutative Algebra; and MATH 8620, Algebraic Geometry.
-
-<h3>1.5 Algebraic Geometry</h3>
+<h3>1.4 Algebraic Geometry</h3>
 
 **Faculty:**&nbsp;&nbsp;
 {% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "algeom" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
@@ -114,13 +96,13 @@ MATH 7600, Homological Algebra; MATH 8600, Commutative Algebra; and MATH 8620, A
 
 The <a href="{{site.url}}/seminars/galois/">Galois-Grothendieck seminar</a> is a learning seminar for graduate students, postdocs and faculty that focuses on topics from algebraic and arithmetic geometry and number theory. It is open to graduate students of all years independent of the chosen area of research.
 
-<h3>1.6 Algebraic Combinatorics</h3>
+<h3>1.5 Algebraic Combinatorics</h3>
 
 **Faculty:**&nbsp;&nbsp;
 {% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "algcomb" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
 
 
-<h3>1.7 Number Theory</h3>
+<h3>1.6 Number Theory</h3>
 
 **Faculty:**&nbsp;&nbsp;
 {% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "numth" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
