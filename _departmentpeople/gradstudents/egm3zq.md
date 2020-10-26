@@ -7,7 +7,7 @@ position: Graduate Student
 office: 121 Kerchof Hall
 phone: 434-982-2785
 email: egm3zq@virginia.edu
-image: 
+image: /img/people/2020-fall/McSpirit.jpg 
 
 
 ---
