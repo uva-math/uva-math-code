@@ -9,7 +9,7 @@ office_hours: " Thu 3:30-4:30"
 phone: 434-243-7702
 email: yqd3p@virginia.edu
 image: __SITE_URL__/img/people/Do.jpg
-personal_page: http://people.virginia.edu/~yqd3p/
+personal_page: https://profile.virginia.edu/yqd3p
 
 grad_general_areas:
   - analysis
