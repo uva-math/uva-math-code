@@ -4,7 +4,7 @@ title: Ken Ono is Named Among the Most Influential Mathematicians
 comments: false
 categories: news awards swiper-news
 published: true
-image: __SITE_URL__/img/people/Ono.jpg
+image: __SITE_URL__/img/people/Ono2.jpg
 image-alt: Ken Ono
 good-md: true
 ---
