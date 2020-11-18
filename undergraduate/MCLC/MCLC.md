@@ -15,7 +15,7 @@ tooltips: true
 
 <h2 class="mb-4">Math Collaborative Learning Center</h2>
 
-<p style="font-size:150%;" style="color:Red;"> The last day of operation for the Fall 2020 semester is Monday, November 23 </p>
+<p style="font-size:150%;color:Red;"> The last day of operation for the Fall 2020 semester is Monday, November 23 </p>
 
 
 The Math Collaborative Learning Center (MCLC) is staffed with experienced undergraduate students (MCLC consultants) that offer one-on-one (or small group) tutoring sessions for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
