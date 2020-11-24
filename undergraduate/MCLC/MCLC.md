@@ -52,28 +52,28 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
     <tr>
     <td valign="top">7:00-8:30 p.m.<br>
     </td>
-    <td valign="top"><a
-           href="https://virginia.zoom.us/j/97495239196?pwd=dkhQTnRMb1BzWWRGdGVhRHhoenVHUT09">Calculus I &amp; II </a><br>
-        <a href="https://virginia.zoom.us/j/97495239196?pwd=dkhQTnRMb1BzWWRGdGVhRHhoenVHUT09">Math 3350/3351</a> 
+    <td valign="top">
+      <!--  <a href="https://virginia.zoom.us/j/97495239196?pwd=dkhQTnRMb1BzWWRGdGVhRHhoenVHUT09">Calculus I &amp; II </a><br>
+        <a href="https://virginia.zoom.us/j/97495239196?pwd=dkhQTnRMb1BzWWRGdGVhRHhoenVHUT09">Math 3350/3351</a> -->
     </td>
-    <td valign="top"><a
-           href="https://virginia.zoom.us/j/93231938016?pwd=SndFNzNCZEtMVWJYdC9sL0QreWVPZz09">Calculus I &amp; II</a><br> <!--M-->
+    <td valign="top">
+        <a href="https://virginia.zoom.us/j/93231938016?pwd=SndFNzNCZEtMVWJYdC9sL0QreWVPZz09">Calculus I &amp; II</a><br> <!--M-->
         <a href="https://virginia.zoom.us/j/93231938016?pwd=SndFNzNCZEtMVWJYdC9sL0QreWVPZz09">Math 3100</a>
     </td>
-   <td valign="top"><a 
-           href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Calculus I &amp; II</a><br> <!--T-->
+   <td valign="top"> 
+        <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Calculus I &amp; II</a><br> <!--T-->
         <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Math 2310/2315</a><br> 
         <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Math 3000/3310</a><br> 
         <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Math 3250</a><br> 
     </td>
-   <td valign="top"><a
-           href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Calculus I &amp; II </a><br> <!--W-->
+   <td valign="top">
+        <a href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Calculus I &amp; II </a><br> <!--W-->
         <a href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Math 3000/3310</a><br> 
         <a href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Math 3100</a><br> 
         <a href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Math 3350/3351</a><br> 
     </td>
-    <td valign="top"><a
-           href="https://virginia.zoom.us/j/98925248186?pwd=ek5ldUN4ZXJWQmFmOFNzTENCYXduZz09">Calculus I &amp; II </a><br> <!--Th-->
+    <td valign="top">
+        <a href="https://virginia.zoom.us/j/98925248186?pwd=ek5ldUN4ZXJWQmFmOFNzTENCYXduZz09">Calculus I &amp; II </a><br> <!--Th-->
         <a href="https://virginia.zoom.us/j/98925248186?pwd=ek5ldUN4ZXJWQmFmOFNzTENCYXduZz09">Math 2310/2315</a><br> 
     </td>
    </tr> 
@@ -86,15 +86,15 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
     <td valign="top"><a
         href="https://virginia.zoom.us/j/93231938016?pwd=SndFNzNCZEtMVWJYdC9sL0QreWVPZz09">Calculus I &amp; II</a> <!--M-->
     </td>
-    <td valign="top"><a
-           href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Calculus I &amp; II</a><br> <!--T-->
+    <td valign="top">
+        <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Calculus I &amp; II</a><br> <!--T-->
         <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Math 3354</a>
     </td>
-    <td valign="top"><a
-        href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Calculus I &amp; II</a> <!--W-->
+    <td valign="top">
+      <a href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Calculus I &amp; II</a> <!--W-->
     </td>
-    <td valign="top"><a
-        href="https://virginia.zoom.us/j/98925248186?pwd=NmMydUVSaG9kTzdmcUE4VmFFTHdrQT09">Calculus I &amp; II </a> <!--Th-->
+    <td valign="top">
+      <a href="https://virginia.zoom.us/j/98925248186?pwd=NmMydUVSaG9kTzdmcUE4VmFFTHdrQT09">Calculus I &amp; II </a> <!--Th-->
     </td>
     </tr>
  </tbody>
