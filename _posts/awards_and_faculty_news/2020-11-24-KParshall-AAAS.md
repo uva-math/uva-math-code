@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Karen Parshall elected Fellow of AAAS
 comments: false
 categories: news awards swiper-news
 published: true
