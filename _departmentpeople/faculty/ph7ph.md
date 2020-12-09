@@ -10,7 +10,6 @@ office_hours:
 email: ph7ph@virginia.edu
 image: __SITE_URL__/img/people/2020-fall/Peter.jpg
 personal_page: 
----
 
 grad_general_areas:
   - algebra
