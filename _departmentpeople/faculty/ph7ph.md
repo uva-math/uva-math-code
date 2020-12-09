@@ -18,3 +18,5 @@ grad_special_areas:
   - numth
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+
+---
