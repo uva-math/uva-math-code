@@ -8,7 +8,7 @@ office:
 phone: 
 email: der@virginia.edu
 image: __SITE_URL__/img/people/Ramirez.jpg
-personal_page: http://people.virginia.edu/~der/home.html
+personal_page: https://uva.theopenscholar.com/ramirez# 
 
 areas:
   - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
