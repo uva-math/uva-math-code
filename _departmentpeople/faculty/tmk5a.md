@@ -8,7 +8,7 @@ office: 304 Kerchof Hall
 phone: 434-924-4941
 email: tmk5a@virginia.edu
 image: __SITE_URL__/img/people/Koberda.jpg
-personal_page: http://faculty.virginia.edu/Koberda/
+personal_page: https://sites.google.com/view/koberdat
 
 areas:
   - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
