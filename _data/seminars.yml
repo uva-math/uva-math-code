@@ -27,6 +27,17 @@
   contact:
     - UVA_id: mve2x
 
+- cal_number: '15'
+  name: Number Theory Seminar
+  shortname: ntsem
+  google_cal_id: '56un1k179o7d8mtj85o12qsg7c@group.calendar.google.com'
+  seminar_weight: 22
+  regular_times: 
+  contact:
+    - UVA_id: ph7ph
+    - UVA_id: ko5wk
+
+
 - cal_number: '1'
   name: Geometry Seminar
   shortname: geometry
