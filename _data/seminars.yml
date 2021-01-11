@@ -17,7 +17,7 @@
     - UVA_id: lap5r
     
 - cal_number: '200'
-  name: &nbsp;
+  name: '---'
   shortname: separator
 # image: __SITE_URL__/img/seminars/
   seminar_weight: 35  
