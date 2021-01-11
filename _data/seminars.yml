@@ -16,6 +16,11 @@
     - UVA_id: sm4cw
     - UVA_id: lap5r
     
+- cal_number: '200'
+  name: &nbsp;
+  shortname: separator
+# image: __SITE_URL__/img/seminars/
+  seminar_weight: 35  
 
 - cal_number: '5'
   name: Algebra Seminar
