@@ -10,7 +10,7 @@
 # image: __SITE_URL__/img/seminars/
   webpage: 'http://pi.math.virginia.edu/colloq/'
   google_cal_id: 'j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com'
-  seminar_weight: 1
+  seminar_weight: 10
   regular_times: Thursdays 3:45-4:45, over zoom. Meeting opens at 3:15 for an informal "tea time" discussion
   contact:
     - UVA_id: sm4cw
@@ -22,7 +22,7 @@
   shortname: algebra
   webpage: 'http://pi.math.virginia.edu/algebra/'
   google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
-  seminar_weight: 20
+  seminar_weight: 40
   regular_times: Wednesdays and some Fridays, 3:30-4:30pm, over zoom
   contact:
     - UVA_id: mve2x
@@ -31,7 +31,7 @@
   name: Number Theory Seminar
   shortname: ntsem
   google_cal_id: '56un1k179o7d8mtj85o12qsg7c@group.calendar.google.com'
-  seminar_weight: 22
+  seminar_weight: 90
   regular_times: Fridays at 1:00, over zoom
   contact:
     - UVA_id: ph7ph
@@ -57,7 +57,7 @@
   shortname: diffeq
   webpage: 'http://pi.math.virginia.edu/diffeq/'
   google_cal_id: '5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com'
-  seminar_weight: 40
+  seminar_weight: 70
   regular_times: Tuesdays at 3:30, over zoom
   information: |
     Harmonic Analysis and PDE seminar features a mix of local speakers (graduate students and faculty) and visitors. The ideal topics live on the interface between the two fields; luckily, the interface has been steadily expanding.
@@ -73,7 +73,7 @@
   shortname: mathphys
   webpage: 'http://pi.math.virginia.edu/mathphys/'
   google_cal_id: 'k613quo3pribde7jrm5e12ft1c@group.calendar.google.com'
-  seminar_weight: 50
+  seminar_weight: 80
   regular_times: Wednesdays and some Fridays at 2:00, over zoom
   information: |
     The Mathematical Physics Seminar features talks on a wide variety of topics such as, for instance, Schrödinger operators, the mathematics of quantum systems, statistical mechanics, the renormalization group and quantum field theory. Lectures typically are of research level and are given by local as well as outside speakers. Graduate students in mathematical physics are encouraged to give presentations at this seminar about their ongoing research. Everyone is welcome to attend.
@@ -86,7 +86,7 @@
   image: __SITE_URL__/img/seminars/tiling_v.png
   webpage: 'http://faculty.virginia.edu/Probability/'
   google_cal_id: 'f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com'
-  seminar_weight: 90
+  seminar_weight: 110
   regular_times: Wednesdays at 4:35, over zoom
   information: |
     The Probability Seminar is the place to see talks on active research topics in probability theory, as well as informal discussions of basic notions of probability.  We typically have invited speakers every 2-3 weeks presenting a wide array of research in probability. Most other weeks are informal discussions led by local participants, often graduate students discussing recently studied topics. The seminar is open to all. Feel free to attend regularly or occasionally.
@@ -100,7 +100,7 @@
   shortname: topology
   webpage: 'http://pi.math.virginia.edu/topology/'
   google_cal_id: 'pce8r0mnja2do20vkku2gslamk@group.calendar.google.com'
-  seminar_weight: 100
+  seminar_weight: 120
   regular_times: Thursdays at 2:00, over zoom
   information: |
     Topology Seminar talks are on recent developments in algebraic topology—including homotopy theory, ordinary and extraordinary homology and cohomology, cobordism theory, and K-theory—and related subjects like differential topology and homological algebra.
@@ -113,7 +113,7 @@
   shortname: mathclub
   webpage: 'http://pi.math.virginia.edu/mathclub/'
   google_cal_id: 'lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com'
-  seminar_weight: 120
+  seminar_weight: 30
   regular_times: Tuesdays at 5:00, over zoom
   information: |
     The Undergraduate Math Club at University of Virginia is a weekly seminar and a club (with an official CIO status) for students interested in mathematics and related areas. It meets on Tuesdays at 5pm for 60-80 minutes. The activities vary from talks by faculty members, graduate and undergraduate students to presentations by local industries, panel discussions (on REUs, careers for math majors, etc.), and outside activities such as a movie outing or a visit to a 3D printing lab.
@@ -130,7 +130,7 @@
   shortname: sotoa
   google_cal_id: 'ftc1mbjbp95irpj6t9e2tfl020@group.calendar.google.com'
   webpage: 'http://www.people.virginia.edu/~des5e/sotoa/sotoa.html'
-  seminar_weight: 60
+  seminar_weight: 100
   regular_times: Tuesdays at 4:00, over zoom
   information: |
     The Seminar in Operator Theory and Operator Algebras covers a wide variety of topics in functional analysis, including <script type="math/tex">C^*</script>-algebras and von Neumann algebras, composition operators, Banach spaces, noncommutative convexity, and applications of complex function theory. Most lectures are research level, but we also feature expository talks.
@@ -142,7 +142,7 @@
   shortname: gradsem
   webpage: 'http://pi.math.virginia.edu/gradsem/'
   google_cal_id: 'n6dhh35l2td9i73ii6dbkpqtro@group.calendar.google.com'
-  seminar_weight: 110
+  seminar_weight: 20
   regular_times: Fridays at 2:30, over zoom
   information: |
     The Graduate Seminar provides a friendly atmosphere for grad students to give talks about current interests, research, or teaching. This seminar is for grad students only and encourages audience participation while keeping the intensity level below that of other seminars.
@@ -160,7 +160,7 @@
   shortname: galois
   published_in_nav: true
   google_cal_id: '8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com'
-  seminar_weight: 21
+  seminar_weight: 60
   regular_times: Tuesdays at 3:30, CLARK 102
   information: |
     The Galois-Grothendieck Seminar is an expository seminar about various aspects of Galois theory and arithmetic geometry. Each semester/year has a coherent program, with graduate students contributing many of the talks.
@@ -173,7 +173,7 @@
   shortname: ancommons
   published_in_nav: true
   google_cal_id: 'fj2uv2u9ea74h8b0gihm3iu73c@group.calendar.google.com'
-  seminar_weight: 5
+  seminar_weight: 50
   regular_times: Mondays 3:00-4:00pm, over zoom
   information: | 
      Talks at the Analysis Commons seminar cover topics of broader interest to the analysis community at University of Virginia. This includes functional analysis and operator algebras, mathematical physics, harmonic analysis and PDEs, probability theory, and other research areas. Presentations at this seminar are accessible to beginning graduate students in analysis. This calendar also lists talks at other UVA Math seminars which may be of interest to general analysis audience.
