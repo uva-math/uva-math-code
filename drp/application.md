@@ -9,11 +9,11 @@ permalink: /drp/application/
 Any undergraduate student who has completed Calculus III (Math 2310 or equivalent)
 may apply. Applications are not limited to math majors. The evaluation
 of applications is performed by the graduate committee. The
-applications are judged on a holistic basis.
+applications are judged on a holistic basis. You may opt to receive up to one course credit!
 
 [Mentee Application](https://docs.google.com/forms/d/e/1FAIpQLSfsgAnNdCqnyB0KkBecBYokQ8yKncX2LAEEynZ5gUTD8HC_rQ/viewform?usp=sf_link)
 
-**Applications Due: Friday, September 4th, 2020 11:59 PM EST**
+**Applications Due: Friday, February 12th, 2021 11:59 PM Eastern Time**
 
 <h2 class="mb-3">Mentor Application</h2>
 
