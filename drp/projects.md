@@ -6,6 +6,41 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Fall 2020
+
++ Galois Theory and its Applications
+   - Text: A Book of Abstract Algebra, Charles Pinter
+   - Mentee: Bilal Khan
+   - Mentee: Casia Siegel
+   - Mentor: Will Craig
+   
++ Group Theory and Rubik's Cube
+   - Mentee: Sabrina Fuller
+   - Mentor: Alec Traaseth
+   
++ Classification of Surfaces
+   - Text: A Guide to the Classification Theorem for Compact Surfaces, Gallier and Xu 
+   - Mentee: Harsh Padhye
+   - Mentee: Zhijun Cao
+   - Mentor: Alec Traaseth
+   
++ Analyzing Spaces
+   - Text: Functional Analysis, Bachman and Narici
+   - Mentee: Emma Graham
+   - Mentor: Bruno Braga
+   
++ Synthetic Topology 
+   - Text: Synthetic Topology of Data Types and Classical Spaces, Martin Escardo
+   - Mentee: Joey Rudek
+   - Mentor: Neelav Dutta
+   
+### Spring 2020
+
++ Homological proof of the Brouwer fixed point theorem 
+   - Text: Algebraic Topology, Hatcher
+   - Mentee: Thomas Blue
+   - Mentor: Chris Lloyd
+
 ### Fall 2019
       
 + The Geometries of Surfaces
