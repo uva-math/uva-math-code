@@ -10,7 +10,8 @@ nav_weight: 1
 <h1 class="mb-3">Degree requirements</h1>
 
 - ##### [Requirements]({{ site.url }}/undergraduate/docs/major_minor_req_f20.pdf) for Obtaining a Major or a Minor in Mathematics
-- ##### [Declaration of math major form]({{ site.url }}/undergraduate/docs/S20_Declaration of Major form.pdf)
+- ##### [Declaration of math major form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2
+)
 - ##### [Declaration of math minor form]({{ site.url }}/undergraduate/docs/F20_Declaration of Minor form.pdf)
 
 <h1 class="mb-3 mt-3">To Declare a Major/Minor:</h1>
