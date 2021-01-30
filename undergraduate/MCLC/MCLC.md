@@ -13,7 +13,7 @@ tooltips: true
 
 <img src="{{site.url}}/undergraduate/MCLC/MCLC_logo.png" style="max-width:70%;max-height:350px;height:auto;width:auto;" alt="Math Collaborative Learning Center">
 
-<h2 class="mb-4">Math Collaborative Learning Center</h2>
+<h1 class="mb-4">Math Collaborative Learning Center</h1>
 
 <!-- <p style="font-size:150%;color:Red;"> The last day of operation for the Fall 2020 semester is Monday, November 23 </p> -->
 <p style="font-size:150%;"> The MCLC will resume its operation for the Spring 2021 semester starting Monday, February 8 </p>
@@ -24,7 +24,7 @@ The Math Collaborative Learning Center (MCLC) is staffed with experienced underg
  <li>{% include course number=2310 %}, {% include course number=2315 %}, {% include course number=3000 %}, {% include course number=3100 %}, {% include course number=3250 %}, {% include course number=3310 %}, {% include course number=3350%}, {% include course number=3351%}, and {% include course number=3354%} </li>
 </ul>
 
-Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 semester will be held virtually, via Zoom (links found in the table below). Here are a few things that you should have in mind before joining a session:
+Due to the ongoing situation with COVID-19, all MCLC sessions for the Spring 2021 semester will be held virtually, via Zoom (links found in the table below). Here are a few things that you should have in mind before joining a session:
 <ul>
  <li> In order to join an MCLC session, use a Zoom account that is associated with your UVA credentials.</li>
  <li> Join a session from a quite environment. If you intend to have your web camera on, make sure your surroundings and attire are appropriate.</li>
@@ -32,7 +32,7 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
  <li> Once you join a session, a consulant will assign you to a (virtual) room for the course for which you need help. This process may take a couple of minutes.</li>
 </ul>
 
-<h3 class="mb-4 mt-4">Schedule</h3>
+<h2 class="mb-4 mt-4">Schedule</h2>
 
 <table width="100%" border="1" cellspacing="2" cellpadding="2">
  <thead style="background-color:coral;">
@@ -57,24 +57,23 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
         <a href="https://virginia.zoom.us/j/97495239196?pwd=dkhQTnRMb1BzWWRGdGVhRHhoenVHUT09">Math 3350/3351</a> -->
     </td>
     <td valign="top">
-       <!-- <a href="https://virginia.zoom.us/j/93231938016?pwd=SndFNzNCZEtMVWJYdC9sL0QreWVPZz09">Calculus I &amp; II</a><br> <!--M-->
-       <!-- <a href="https://virginia.zoom.us/j/93231938016?pwd=SndFNzNCZEtMVWJYdC9sL0QreWVPZz09">Math 3100</a> -->
+       <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Calculus I &amp; II</a><br> <!--M-->
+       <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Math 3100</a> 
     </td>
    <td valign="top"> 
-       <!-- <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Calculus I &amp; II</a><br> <!--T-->
-        <!-- <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Math 2310/2315</a><br> 
-        <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Math 3000/3310</a><br> 
-        <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Math 3250</a><br> -->
+        <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Calculus I &amp; II</a><br> <!--T-->
+        <!-- <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Math 2310/2315</a><br> -->
+        <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Math 3250</a><br> 
     </td>
    <td valign="top">
-       <!-- <a href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Calculus I &amp; II </a><br> <!--W-->
-       <!-- <a href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Math 3000/3310</a><br> 
-        <a href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Math 3100</a><br> 
-        <a href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Math 3350/3351</a><br> -->
+        <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Calculus I &amp; II </a><br> <!--W-->
+        <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Math 3000/3310</a><br> 
+        <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Math 3100</a><br> 
+        <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Math 3350/3351</a><br> 
     </td>
     <td valign="top">
-      <!--  <a href="https://virginia.zoom.us/j/98925248186?pwd=ek5ldUN4ZXJWQmFmOFNzTENCYXduZz09">Calculus I &amp; II </a><br> <!--Th-->
-      <!-- <a href="https://virginia.zoom.us/j/98925248186?pwd=ek5ldUN4ZXJWQmFmOFNzTENCYXduZz09">Math 2310/2315</a><br> -->
+        <a href="https://virginia.zoom.us/j/99985774187?pwd=a1hpVkFLcStmMHVUc2kwbGdrMFh3dz09">Calculus I &amp; II </a><br> <!--Th-->
+      <!-- <a href="https://virginia.zoom.us/j/99985774187?pwd=a1hpVkFLcStmMHVUc2kwbGdrMFh3dz09">Math 2310/2315</a><br> -->
     </td>
    </tr> 
    <tr>
@@ -84,17 +83,17 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Fall 2020 
         <a href="https://virginia.zoom.us/j/97495239196?pwd=dkhQTnRMb1BzWWRGdGVhRHhoenVHUT09">Calculus I &amp; II</a><br> <!--S-->
     </td>
     <td valign="top">
-       <!-- <a href="https://virginia.zoom.us/j/93231938016?pwd=SndFNzNCZEtMVWJYdC9sL0QreWVPZz09">Calculus I &amp; II</a> <!--M-->
+       <!-- <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Calculus I &amp; II</a> <!--M-->
     </td>
     <td valign="top">
-      <!--  <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Calculus I &amp; II</a><br> <!--T-->
-       <!-- <a href="https://virginia.zoom.us/j/99672208913?pwd=Z1FCM0czRTJMTnZGZzIwNGlFQWRWUT09">Math 3354</a> -->
+      <!--  <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Calculus I &amp; II</a><br> <!--T-->
+       <!-- <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Math 3354</a> -->
     </td>
     <td valign="top">
-      <a href="https://virginia.zoom.us/j/93277627377?pwd=UDdndlorQ1dMTnlZTjVCUWM0L0psUT09">Calculus I &amp; II</a> <!--W-->
+      <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Calculus I &amp; II</a> <!--W-->
     </td>
     <td valign="top">
-      <a href="https://virginia.zoom.us/j/98925248186?pwd=NmMydUVSaG9kTzdmcUE4VmFFTHdrQT09">Calculus I &amp; II </a> <!--Th-->
+      <a href="https://virginia.zoom.us/j/99985774187?pwd=a1hpVkFLcStmMHVUc2kwbGdrMFh3dz09">Calculus I &amp; II </a> <!--Th-->
     </td>
     </tr>
  </tbody>
