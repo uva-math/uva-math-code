@@ -92,7 +92,7 @@ Due to the ongoing situation with COVID-19, all MCLC sessions for the Spring 202
         <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Math 3354</a> 
     </td>
     <td valign="top">
-      <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Calculus I &amp; II</a> <!--W-->
+      <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Calculus I &amp; II</a><br> <!--W-->
       <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Math 2310</a> 
     </td>
     <td valign="top">
