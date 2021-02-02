@@ -8,9 +8,7 @@ permalink: /drp/committee/
 
 The DRP Committee is comprised of the following graduate students
 
-- John Harnois
 - Chris Lloyd
-- Jiajun Yan
-- Ethan Zell
+- Alec Traaseth
 
 The sponsoring faculty member is [Sara Maloni](http://www.people.virginia.edu/~sm4cw/Welcome.html).
