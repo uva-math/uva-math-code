@@ -17,5 +17,5 @@ mentor will work with you to choose a project that interests both of you.
 
 **Do I get credit for participating?**
 
-There is no course credit for participating in DRP.
+There is an optional course credit for participating in DRP!
 
