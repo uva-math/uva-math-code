@@ -2,7 +2,7 @@
 title: 4+1 BA/MA Program
 layout: ug_page
 ug_policy: true
-permalink: /content/41-or-31-bama-program/
+permalink: /content/41-ba-ma-program/
 nav_parent: Undergraduate
 nav_weight: 8
 nav_id: 4+1 BA/MA Program
