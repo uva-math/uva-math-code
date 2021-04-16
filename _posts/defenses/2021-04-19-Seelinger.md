@@ -1,21 +1,21 @@
 ---
 layout: post
-title: "Thesis defense: Chris Lloyd"
-event-date: 2021-04-12 09:00:00
+title: "Thesis defense: George Seelinger"
+event-date: 2021-04-26 13:00:00
 comments: false
 categories: news events
 published: true
-hide-this-item: true
+# hide-this-item: true
 ---
 
-**Chris Lloyd** will defend the Ph.D. thesis on Monday, April 12.
+**George Seelinger** will defend the Ph.D. thesis on Monday, April 26.
 The title is
 
-"_Applications of Chromatic Fixed Point Theory_".
+"_K-theoretic Catalan Functions_".
 
-- Date: Monday, April 12
-- Time: 09:00 am EST
-- Place: Zoom meeting (contact {% include person_info_email_only.html UVA_id="njk4x" %} for id)
+- Date: Monday, April 26
+- Time: 01:00 pm EST
+- Place: Zoom meeting (contact {% include person_info_email_only.html UVA_id="jlm6cj" %} for id)
 
 Everyone is invited to attend.
 
