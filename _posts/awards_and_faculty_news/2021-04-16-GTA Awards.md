@@ -1,6 +1,6 @@
 ---
 layout: post
-title: GTA Teaching awards
+title: Peter Johnson wins All-University Teaching Award
 comments: false
 categories: news awards swiper-news
 image: __SITE_URL__/img/people/2019-fall/Johnson.jpg
