@@ -5,6 +5,7 @@ comments: false
 categories: news awards swiper-news
 image: __SITE_URL__/img/people/2019-fall/Johnson.jpg
 published: true
+good-md: true
 ---
 
 
