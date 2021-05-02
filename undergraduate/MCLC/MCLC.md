@@ -15,7 +15,7 @@ tooltips: true
 
 <h1 class="mb-4">Math Collaborative Learning Center</h1>
 
-<!-- <p style="font-size:150%;color:Red;"> The last day of operation for the Fall 2020 semester is Monday, November 23 </p> -->
+<!-- <p style="font-size:150%;color:Red;"> The last day of operation for the Spring 2021 semester is Thursday, May 6 </p> -->
 <!--<p style="font-size:150%;"> The MCLC will resume its operation for the Spring 2021 semester starting Monday, February 8 </p>-->
 <p style="font-size:150%;"> The MCLC is now open for the Spring 2021 semester! </p>
 
