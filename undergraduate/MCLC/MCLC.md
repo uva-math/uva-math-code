@@ -33,7 +33,8 @@ Due to the ongoing situation with COVID-19 all MCLC sessions for the Spring 2021
  <li> Once you join a session, a consulant will assign you to a (virtual) room for the course for which you need help. This process may take a couple of minutes.</li>
 </ul>
 
-If you have joined an MCLC session this semester please take a couple of minutes to complete this <a target=_blank href=https://virginia.az1.qualtrics.com/jfe/form/SV_5alk5LpaWdFUWqy>survey</a>. We appreciate your feedback.
+If you have joined an MCLC session this semester please take a couple of minutes to complete this 
+<a "href=https://virginia.az1.qualtrics.com/jfe/form/SV_5alk5LpaWdFUWqy">survey</a>. We appreciate your feedback.
 
 <h2 class="mb-4 mt-4">Schedule</h2>
 
