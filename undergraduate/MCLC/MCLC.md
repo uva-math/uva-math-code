@@ -57,11 +57,11 @@ If you have joined an MCLC session this semester please take a couple of minutes
     <td valign="top">7:00-8:30 p.m.<br>
     </td>
     <td valign="top">
-        <a href="https://virginia.zoom.us/j/93926417928?pwd=ZXVFd3pZbENmekFsY0pYNzUwdnJCdz09">Calculus I &amp; II </a><br> <!--S-->
+      <!--  <a href="https://virginia.zoom.us/j/93926417928?pwd=ZXVFd3pZbENmekFsY0pYNzUwdnJCdz09">Calculus I &amp; II </a><br> <!--S-->
       <!--  <a href="https://virginia.zoom.us/j/97495239196?pwd=dkhQTnRMb1BzWWRGdGVhRHhoenVHUT09">Math 3350/3351</a> -->
     </td>
     <td valign="top">
-       <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Calculus I &amp; II</a><br> <!--M-->
+     <!--  <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Calculus I &amp; II</a><br> <!--M-->
        <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Math 2310</a> <br>
        <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Math 3000/3310</a> <br>
        <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Math 3350/3351</a> 
