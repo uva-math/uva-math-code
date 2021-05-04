@@ -33,8 +33,8 @@ Due to the ongoing situation with COVID-19 all MCLC sessions for the Spring 2021
  <li> Once you join a session, a consulant will assign you to a (virtual) room for the course for which you need help. This process may take a couple of minutes.</li>
 </ul>
 
-If you have joined an MCLC session this semester please take a couple of minutes to complete this 
-<a href="https://virginia.az1.qualtrics.com/jfe/form/SV_5alk5LpaWdFUWqy">survey</a>. We appreciate your feedback.
+<p style="font-size:120%;color:coral;"> If you have joined an MCLC session this semester please take a couple of minutes to complete this 
+<a href="https://virginia.az1.qualtrics.com/jfe/form/SV_5alk5LpaWdFUWqy">survey</a>. We appreciate your feedback. </p>
 
 <h2 class="mb-4 mt-4">Schedule</h2>
 
@@ -86,7 +86,7 @@ If you have joined an MCLC session this semester please take a couple of minutes
     <td valign="top">8:30-10:00 p.m.<br>
     </td>
     <td valign="top">
-        <a href="https://virginia.zoom.us/j/93926417928?pwd=ZXVFd3pZbENmekFsY0pYNzUwdnJCdz09">Calculus I &amp; II</a><br> <!--S-->
+      <!--  <a href="https://virginia.zoom.us/j/93926417928?pwd=ZXVFd3pZbENmekFsY0pYNzUwdnJCdz09">Calculus I &amp; II</a><br> <!--S-->
     </td>
     <td valign="top">
         <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Calculus I &amp; II</a> <!--M-->
