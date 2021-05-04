@@ -25,13 +25,15 @@ The Math Collaborative Learning Center (MCLC) is staffed with experienced underg
  <li>{% include course number=2310 %}, {% include course number=2315 %}, {% include course number=3000 %}, {% include course number=3100 %}, {% include course number=3250 %}, {% include course number=3310 %}, {% include course number=3350%}, {% include course number=3351%}, and {% include course number=3354%} </li>
 </ul>
 
-Due to the ongoing situation with COVID-19, all MCLC sessions for the Spring 2021 semester will be held virtually, via Zoom (links found in the table below). Here are a few things that you should have in mind before joining a session:
+Due to the ongoing situation with COVID-19 all MCLC sessions for the Spring 2021 semester will be held virtually, via Zoom (links found in the table below). Here are a few things that you should have in mind before joining a session:
 <ul>
  <li> In order to join an MCLC session, <b> use a Zoom account that is associated with your UVA credentials. </b> </li>
  <li> Join a session from a quite environment. If you intend to have your web camera on, make sure your surroundings and attire are appropriate.</li>
  <li> Be prepared to share your questions with your consultant. You can share your browser, documents open on your desktop interface (like PDFs), or your entire screen, by clicking the green "Share Screen" button found on Zoom's toolbar. You may also share a document via Zoom's Chat tool, by clicking "File" and uploading your document there. <em> Sharing options may be limited depending on the version of Zoom you are using.</em> Your consultant may offer a different way to share.</li>
  <li> Once you join a session, a consulant will assign you to a (virtual) room for the course for which you need help. This process may take a couple of minutes.</li>
 </ul>
+
+If you have joined an MCLC session this semester please take a couple of minutes to complete this <a target=_blank href=https://virginia.az1.qualtrics.com/jfe/form/SV_5alk5LpaWdFUWqy>survey</a>. We appreciate your feedback.
 
 <h2 class="mb-4 mt-4">Schedule</h2>
 
