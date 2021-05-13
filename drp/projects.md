@@ -6,6 +6,28 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Spring 2021
+
++ Hilbert's Nullstellensatz
+   - Text: Abstract Algebra, Dummit and Foote
+   - Mentee: Omar Alsalihi
+   - Mentor: Alec Traaseth
+
++ Isometries of the Hyperbolic Plane
+   - Text: Notes of Caroline Series
+   - Mentee: William MacMillan
+   - Mentor: Ian Runnels
+ 
++ Exploring the Robinson-Schensted-Knuth Algorithm
+   - Text: Young Tableaux With Applications to Representation Theory and Geometry, William Fulton
+   - Mentee: Katherine Cadzow
+   - Mentor: Mojdeh Tarighat
+
++ Grid Homology 
+   - Text: Grid Homology for Knots and Links by Ozsváth, Stipsicz, and Szabó
+   - Mentee: Nick Cooney
+   - Mentor: Peter Johnson
+
 ### Fall 2020
 
 + Galois Theory and its Applications
