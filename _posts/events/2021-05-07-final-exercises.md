@@ -5,10 +5,12 @@ event-date: 2020-05-24 13:30:00
 comments: false
 categories: news events major-news
 published: true
-image: __SITE_URL__/img/news_events/lawn.png
-image-alt: Lawn
+# image: __SITE_URL__/img/news_events/lawn.png
+# image-alt: Lawn
 # hide-this-item: true
 ---
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zulkz1LTY7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The Department of Mathematics is hosting an Online Diploma Ceremony 
 on Monday, May 24, at 1:30pm. The schedule is as follows:
@@ -19,4 +21,4 @@ on Monday, May 24, at 1:30pm. The schedule is as follows:
 
 - **2:15pm**: The Director of Graduate Studies, Julie Bergner, will continue with recognitions for our graduating Masters and PhD students, including remarks from thesis advisors.
 
-The Math Department events will take place via Zoom (link to be emailed to faculty and students), and will be live streamed on YouTube at [this link](https://www.youtube.com/watch?v=zulkz1LTY7I). For backup (in case something breaks), see [this YouTube channel](https://www.youtube.com/channel/UCE_UHre0GfKg8LPyAcq8vEA).
+The Math Department events will take place via Zoom (link to be emailed to faculty and students), and will be live streamed on YouTube at [this link](https://www.youtube.com/watch?v=zulkz1LTY7I). 
