@@ -10,7 +10,7 @@ published: true
 # hide-this-item: true
 ---
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zulkz1LTY7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zulkz1LTY7I?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 The Department of Mathematics is hosting an Online Diploma Ceremony 
 on Monday, May 24, at 1:30pm. The schedule is as follows:
