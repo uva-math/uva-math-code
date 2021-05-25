@@ -5,7 +5,7 @@ event-date: 2021-04-26 13:00:00
 comments: false
 categories: news events
 published: true
-# hide-this-item: true
+hide-this-item: true
 ---
 
 **George Seelinger** will defend the Ph.D. thesis on Monday, April 26.
