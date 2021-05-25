@@ -7,7 +7,7 @@ categories: news events
 published: true
 image: __SITE_URL__/img/news_events/lawn.png
 image-alt: Lawn
-# hide-this-item: true
+hide-this-item: true
 ---
 
 
