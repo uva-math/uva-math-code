@@ -3,7 +3,7 @@ layout: post
 title: 2021 Mathematics Final Exercises Ceremony Online
 event-date: 2020-05-24 13:30:00
 comments: false
-categories: news events major-news
+categories: news events
 published: true
 image: __SITE_URL__/img/news_events/lawn.png
 image-alt: Lawn
