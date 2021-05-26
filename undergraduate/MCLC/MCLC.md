@@ -89,7 +89,7 @@ Due to the ongoing situation with COVID-19 all MCLC sessions for the Spring 2021
       <!--  <a href="https://virginia.zoom.us/j/93926417928?pwd=ZXVFd3pZbENmekFsY0pYNzUwdnJCdz09">Calculus I &amp; II</a><br> <!--S-->
     </td>
     <td valign="top">
-        <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Calculus I &amp; II</a> <!--M-->
+      <!--  <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Calculus I &amp; II</a> <!--M-->
     </td>
     <td valign="top">
        <!-- <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Calculus I &amp; II</a><br> <!--T-->
