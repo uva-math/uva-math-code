@@ -8,7 +8,7 @@ office: 325 Kerchof Hall
 phone: 434-924-4910
 email: imbrie@virginia.edu
 image: __SITE_URL__/img/people/Imbrie.jpg
-personal_page: http://people.virginia.edu/~ji2k/
+personal_page: https://uva.theopenscholar.com/john-imbrie
 grad_general_areas:
   - analysis
 grad_special_areas:
