@@ -9,7 +9,7 @@ phone: 434-924-4942
 office_hours: 
 email: ph7ph@virginia.edu
 image: __SITE_URL__/img/people/2020-fall/Peter.jpg
-personal_page: 
+personal_page: https://sites.google.com/view/peterhumphries/
 
 grad_general_areas:
   - algebra
