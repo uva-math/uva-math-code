@@ -40,7 +40,7 @@ In both cases, the changes in the code will trigger the website to automatically
 
 Having a local copy of the website allows to preview your edits locally using [Jekyll](https://jekyllrb.com/) (only on Mac and Linux). This procedure is described in detail in Jekyll documentation, see for example [here](https://jekyllrb.com/docs/installation/) and [here](https://jekyllrb.com/docs/usage/). **Note that due to API limitations seminar google calendars will not work in local previews**.
 
-The website building (and testing) are powered by [Travis CI](https://travis-ci.org/). One can always check the current build status by clicking on the checkmark icon <a href="https://travis-ci.org/uva-math/uva-math-code/builds" title="Travis CI Build Status" target="_blank"><span class="fa fa-check-square fa-2x"></span></a> in the lower right corner of each page. The current build status is&nbsp;&nbsp;[![Build Status](https://travis-ci.org/uva-math/uva-math-code.svg?branch=master)](https://travis-ci.org/uva-math/uva-math-code)
+The website building (and testing) are powered by Github Actions.
 
 ---
 
@@ -48,7 +48,7 @@ The website building (and testing) are powered by [Travis CI](https://travis-ci.
 
 - Any simple change in content should require editing in only one place. More complicated edits (such as adding a new seminar) might need changes in up to three places. Typical editing scenarios are documented on these pages.
 - The content is text file based, with no databases or complicated CMSs
-- The simply structured content is then built (using [Travis CI](https://travis-ci.org/)) into a static HTML website (plus a little client-side javascript for google calendar interaction, math rendering, and responsive design)
+- The simply structured content is then built (using Github Actions) into a static HTML website (plus a little client-side javascript for google calendar interaction, math rendering, and responsive design)
 
 ---
 
