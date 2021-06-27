@@ -2,7 +2,7 @@
 layout: post
 title: 2021 Mathematics Diploma Ceremonies Recordings
 comments: false
-categories: news events major-news
+categories: news events 
 published: true
 #image: __SITE_URL__/img/news_events/lawn.png
 #image-alt: Lawn
