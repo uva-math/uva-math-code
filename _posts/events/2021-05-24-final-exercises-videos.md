@@ -6,7 +6,7 @@ categories: news events major-news
 published: true
 #image: __SITE_URL__/img/news_events/lawn.png
 #image-alt: Lawn
-# hide-this-item: true
+hide-this-item: true
 ---
 
 The Department of Mathematics hosted an online diploma ceremony on May 24.
