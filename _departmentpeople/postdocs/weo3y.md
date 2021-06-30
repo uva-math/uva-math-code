@@ -8,7 +8,7 @@ office: 311 Kerchof Hall
 phone:
 email: weo3y@virginia.edu
 image: __SITE_URL__/img/people/2020-fall/Olsen.jpg
-personal_page:
+personal_page:https://williamolsen.github.io/
 
 areas:
 
