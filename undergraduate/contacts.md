@@ -60,5 +60,5 @@ Daniel James
 {% include person_info_email_only.html UVA_id="ph7ph" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="eg4va" %}
 
-- ##### Putnam contacts:<br>
+- ##### Putnam contact:<br>
 {% include person_info_email_only.html UVA_id="jf8dc" %}
