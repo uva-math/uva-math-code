@@ -12,6 +12,6 @@ image: __SITE_URL__/img/people/2019-nov/Reidys.jpg
 # personal_page: 
 
 areas:
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
 ---

@@ -17,7 +17,7 @@ grad_special_areas:
   - harmonic
 areas:
   - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
 
 
 ---

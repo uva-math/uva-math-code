@@ -13,7 +13,7 @@ published: false
 
 areas:
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
 
 
 ---

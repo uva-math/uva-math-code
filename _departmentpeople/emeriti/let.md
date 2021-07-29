@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Thomas.jpg
 personal_page: http://people.virginia.edu/~let/
 
 areas:
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
 
 
 ---

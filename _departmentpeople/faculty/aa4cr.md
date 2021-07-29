@@ -12,7 +12,7 @@ image: __SITE_URL__/img/people/Abdesselam.jpg
 personal_page: http://people.virginia.edu/~aa4cr/
 
 areas:
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
 grad_general_areas:
   - analysis

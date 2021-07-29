@@ -20,7 +20,7 @@ grad_special_areas:
 areas:
   - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
 
 
 

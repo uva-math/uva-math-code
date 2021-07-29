@@ -11,6 +11,6 @@ image: __SITE_URL__/img/people/Scott.jpg
 personal_page: https://leonard-scott-emeritus.faculty.virginia.edu/
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Arithmetic Geometry/Number Theory&nbsp;$$\cup$$&nbsp;Representation Theory
 
 ---

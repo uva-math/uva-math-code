@@ -13,7 +13,7 @@ published: false
 
 areas:
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 
 

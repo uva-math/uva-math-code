@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Koberda.jpg
 personal_page: https://sites.google.com/view/koberdat
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra&nbsp;$$\cup$$&nbsp;Arithmetic Geometry/Number Theory&nbsp;$$\cup$$&nbsp;Representation Theory
   - Geometry&nbsp;$$\cup$$&nbsp;Topology
 
 grad_general_areas:

@@ -11,8 +11,8 @@ image: __SITE_URL__/img/people/Petrov.jpg
 personal_page: http://lpetrov.cc/
 areas: #Must coincide with the ones in _data/research_areas.yml
   - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Algebra&nbsp;$$\cup$$&nbsp;Arithmetic Geometry/Number Theory&nbsp;$$\cup$$&nbsp;Representation Theory
 
 grad_general_areas:
   - algebra
