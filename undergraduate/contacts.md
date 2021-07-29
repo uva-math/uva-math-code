@@ -39,14 +39,13 @@ Daniel James
 {% include person_info_email_only.html UVA_id="aab8b" %}
 
 - ##### First Year Advisors:<br>
-{% include person_info_email_only.html UVA_id="brh5c" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="lap5r" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="yqd3p" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="tmk5a" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="jjh2b" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="des5e" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="ww9c" %}
+{% include person_info_email_only.html UVA_id="jf8dc" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="eg4va" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="zg7c" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="vk6e" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="njk4x" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="yq2dw" %}
 
 - ##### Ombudsman:<br>
 {% include person_info_email_only.html UVA_id="pa8e" %}
