@@ -17,8 +17,7 @@ nav_weight: 1
 - {% include person_info_OH.html UVA_id="pa8e" %} (Last name begins with letter F-J)<br><br class="hidden-sm-up">
 - {% include person_info_OH.html UVA_id="aa4cr" %} (Last name begins with letter A-E)<br><br class="hidden-sm-up">
 - {% include person_info_OH.html UVA_id="iwh" %} (Last name begins with letter U-Z)<br><br class="hidden-sm-up">
-- {% include person_info_OH.html UVA_id="jf8dc" %} (Last name begins with letter P-T)<br><br class="hidden-sm-up">
-- {% include person_info_OH.html UVA_id="yqd3p" %} (Last name begins with letter K-O)
+- {% include person_info_OH.html UVA_id="jf8dc" %} (Last name begins with letter P-Z)
 
 
 ---
