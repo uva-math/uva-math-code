@@ -14,10 +14,11 @@ nav_weight: 1
 - ##### [Declaration of math minor form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)
 
 <h1 class="mb-3 mt-3">To Declare a Major/Minor:</h1>
-- {% include person_info_OH.html UVA_id="pa8e" %} (Last name begins with letter F-J)<br><br class="hidden-sm-up">
-- {% include person_info_OH.html UVA_id="aa4cr" %} (Last name begins with letter A-E)<br><br class="hidden-sm-up">
-- {% include person_info_OH.html UVA_id="iwh" %} (Last name begins with letter U-Z)<br><br class="hidden-sm-up">
-- {% include person_info_OH.html UVA_id="jf8dc" %} (Last name begins with letter P-Z)
+- {% include person_info_email_only.html UVA_id="pa8e" %} (Last name begins with letter A-E)<br><br class="hidden-sm-up">
+- {% include person_info_email_only.html UVA_id="yqd3p" %} (Last name begins with letter F-J)<br><br class="hidden-sm-up">
+- {% include person_info_email_only.html UVA_id="clh4xd" %} (Last name begins with letter K-O)<br><br class="hidden-sm-up">
+- {% include person_info_email_only.html UVA_id="zg7c" %} (Last name begins with letter P-T)<br><br class="hidden-sm-up">
+- {% include person_info_email_only.html UVA_id="njk4x" %} (Last name begins with letter U-Z)
 
 
 ---
