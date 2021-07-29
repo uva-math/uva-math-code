@@ -8,17 +8,21 @@ nav_weight: 1
 tooltips: true
 ---
 
-<h1 class="mb-4">Contacts (Fall 2019)</h1>
+<h1 class="mb-4">Contacts (2021-22 Academic Year)</h1>
 
 - ##### Director of Undergraduate Studies:<br>
 {% include DUS.html UVA_id="hcg3m" %}
 <!-- {% include DUS.html UVA_id="iwh" %} -->
 
-- <h5>{% include course number=1210 code=false %} and {% include course number=1310 code=false %} Coordinator:</h5>
-{% include person_info_email_only.html UVA_id="psb7p" %}
+- <h5>{% include course number=1210 code=false %} and {% include course number=1220 code=false %} Coordinator:</h5>
+{% include person_info_email_only.html UVA_id="ed8bg" %}
 
-- <h5>{% include course number=1220 code=false %} and {% include course number=1320 code=false %} Coordinator:</h5>
-{% include person_info_email_only.html UVA_id="jsr2pz" %}
+- <h5>{% include course number=1310 code=false %} Coordinator:</h5>
+<!-- {% include person_info_email_only.html UVA_id="psb7p" %} -->
+Daniel James
+
+- <h5>{% include course number=1320 code=false %} Coordinator:</h5>
+{% include person_info_email_only.html UVA_id="ds5nd" %}
 
 - ##### Transfer of Credit Advisors:<br>
 {% include DUS.html UVA_id="hcg3m" %}<br>
