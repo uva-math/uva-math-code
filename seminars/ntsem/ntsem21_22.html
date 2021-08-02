@@ -1,7 +1,7 @@
 ---
-title: University of Virginia Seminar in Operator Theory and Operator Algebras 2017-18
+title: Number Theory Seminar 2021-22
 layout: seminar
-permalink: /seminars/sotoa/2017-18/
+permalink: /seminars/ntsem/2021-22/
 events: false
 sem_page: true
 sem_archive: true
@@ -29,24 +29,19 @@ nav_parent: Seminars
 {% endif %}
 
 {% include cal_single.js google_cal_id = sem.google_cal_id current=false max_sem=100
-show_from='1 July 2017'
-show_to='1 July 2018' %}
-
-<hr />
-    <b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %}{% endfor %}
-
-
+show_from='1 July 2021'
+show_to='1 July 2022' %}
 
 <hr />
 <h3 class="mb-3">Archives</h3>
+<a href="/seminars/ntsem/">upcoming</a> 
+| <a href="/seminars/ntsem/2021-22/">2021-22</a> | <a href="/seminars/ntsem/2020-21/">2020-21</a>
 
-<p><a href="/seminars/sotoa/">upcoming</a> | <a href="/seminars/sotoa/2021-22/">2021-22</a> | <a href="/seminars/sotoa/2020-21/">2020-21</a> | <a href="/seminars/sotoa/2019-20/">2019-20</a> | <a href="/seminars/sotoa/2018-19/">2018-19</a> | <a href="/seminars/sotoa/2017-18/">2017-18</a></p>
+<hr />
 
-<div class="list-group-sm">
-  <a class="list-group-item list-group-item-action h5 orange-item" href="http://www.people.virginia.edu/~des5e/sotoa/sotoa.html">Old seminar page with pre-2017 talks</a>
-</div>
+<b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
 
 
 
-    {%endif%}
-    {% endfor %}
+{%endif%}
+{% endfor %}
