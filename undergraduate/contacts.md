@@ -45,7 +45,10 @@ Daniel James
 {% include person_info_email_only.html UVA_id="zg7c" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="vk6e" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="njk4x" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="yq2dw" %}
+{% include person_info_email_only.html UVA_id="tmark" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="tam7b" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="yq2dw" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="asr3x" %}
 
 - ##### Ombudsman:<br>
 {% include person_info_email_only.html UVA_id="pa8e" %}
