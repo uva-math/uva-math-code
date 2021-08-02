@@ -11,6 +11,6 @@ image: __SITE_URL__/img/people/Ramirez.jpg
 personal_page: https://uva.theopenscholar.com/ramirez# 
 
 areas:
-  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
+  - Analysis, PDE, Operator Algebras
 
 ---

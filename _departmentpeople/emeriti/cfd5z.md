@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Dunkl.jpg
 personal_page: https://uva.theopenscholar.com/charles-dunkl/
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Arithmetic Geometry/Number Theory&nbsp;$$\cup$$&nbsp;Representation Theory
-  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+  - Analysis, PDE, Operator Algebras
 
 ---

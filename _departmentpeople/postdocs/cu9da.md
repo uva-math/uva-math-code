@@ -10,6 +10,6 @@ email: cu9da@virginia.edu
 image: __SITE_URL__/img/people/2019-fall/Ure.jpg
 personal_page: https://uva.theopenscholar.com/charlotte-ure
 areas: 
-  - Algebra&nbsp;$$\cup$$&nbsp;Arithmetic Geometry/Number Theory&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
 ---

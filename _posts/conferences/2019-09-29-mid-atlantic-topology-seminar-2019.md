@@ -20,7 +20,7 @@ Speakers will be:
 This seminar is a regional conference with a goal of bringing together the mid-Atlantic algebraic topology community. It will also serve as one of the inaugural activities for the NSF RTG grant that the Topology and Geometry group at UVA recently received.
 
 - [Details and registration](https://math.virginia.edu/geomtop/conferences/)
-- [Geometry and topology group page](https://math.virginia.edu/geomtop/)
+- [Geometry, Topology group page](https://math.virginia.edu/geomtop/)
 
 <!--more-->
 

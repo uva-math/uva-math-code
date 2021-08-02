@@ -15,7 +15,7 @@ grad_general_areas:
 # grad_special_areas:
 #   - commutative  
 areas: #Must coincide with the ones in _data/research_areas.yml
-  - Algebra&nbsp;$$\cup$$&nbsp;Arithmetic Geometry/Number Theory&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
 ---
 

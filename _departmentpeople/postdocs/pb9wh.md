@@ -12,7 +12,7 @@ image: __SITE_URL__/img/people/Bhattacharya.jpg
 personal_page: http://www.people.virginia.edu/~pb9wh/
 
 areas:
-  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+  - Geometry, Topology
 
 
 ---

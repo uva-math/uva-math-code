@@ -11,6 +11,6 @@ image: __SITE_URL__/img/people/Kriete.jpg
 personal_page: http://pi.math.virginia.edu/Faculty/Kriete/
 
 areas:
-  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
+  - Analysis, PDE, Operator Algebras
 
 ---

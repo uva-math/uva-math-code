@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Maloni.jpg
 personal_page: https://sites.google.com/view/sara-maloni
 
 areas:
-  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+  - Geometry, Topology
 
 grad_general_areas:
   - geometry

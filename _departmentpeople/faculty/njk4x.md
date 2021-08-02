@@ -12,8 +12,8 @@ personal_page: https://uva.theopenscholar.com/nick-kuhn
 
 
 areas:
-  - Geometry&nbsp;$$\cup$$&nbsp;Topology
-  - Algebra&nbsp;$$\cup$$&nbsp;Arithmetic Geometry/Number Theory&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Geometry, Topology
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
 grad_general_areas:
   - geometry

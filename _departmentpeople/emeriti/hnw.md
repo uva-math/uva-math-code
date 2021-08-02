@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Ward.jpg
 personal_page: https://uva.theopenscholar.com/harold-ward
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Arithmetic Geometry/Number Theory&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
 ---
 

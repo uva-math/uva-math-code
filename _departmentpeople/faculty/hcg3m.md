@@ -15,5 +15,5 @@ grad_general_areas:
 grad_special_areas:
   - probability
 areas:
-  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
+  - Probability, Combinatorics
 ---

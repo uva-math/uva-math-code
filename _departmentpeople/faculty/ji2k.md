@@ -14,6 +14,6 @@ grad_general_areas:
 grad_special_areas:
   - math_physics
 areas:
-  - Math Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Mathematical Physics, Applied Mathematics
 
 ---

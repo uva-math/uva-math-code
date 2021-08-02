@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Mark.jpg
 personal_page: https://uva.theopenscholar.com/tom-mark
 
 areas:
-  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+  - Geometry, Topology
 
 grad_general_areas:
   - geometry

@@ -16,8 +16,8 @@ grad_general_areas:
 grad_special_areas:
   - diffeq
 areas:
-  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
-  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
+  - Analysis, PDE, Operator Algebras
+  - Probability, Combinatorics
 
 
 ---

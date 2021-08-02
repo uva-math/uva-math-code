@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Bergner.jpg
 personal_page: https://sites.google.com/view/julie-bergner/
 
 areas:
-  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+  - Geometry, Topology
 
 grad_general_areas:
   - geometry
