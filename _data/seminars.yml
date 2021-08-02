@@ -42,8 +42,10 @@
   #regular_times: Fridays at 1:00, over zoom
   regular_times: To be determined for 2021-2022
   contact:
+    - UVA_id: eg4va
     - UVA_id: ph7ph
     - UVA_id: ko5wk
+    
 
 
 - cal_number: '1'
