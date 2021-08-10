@@ -146,12 +146,7 @@ Include a sampling of course syllabi you have written, especially those for cour
 ## Building a Website
 
 
-Your website is your profile on the web, and UVA will host a page for you.
-ITC maintains <a href="http://its.virginia.edu/homedir/web/">instructions for
-uploading and publishing your webpage</a>.
-
-Prospective employers will visit your website to look at your academic and job materials.
-Academic pages for students on the market have a fairly standard format.
+Your website is your profile on the web. Prospective employers will visit your website to look at your academic and job materials. Academic pages for students on the market have a fairly standard format. UVA can host a page for you at "theopenscholar", see [here](https://uva.theopenscholar.com/get-a-website/). There are also several popular third-party free hosting solutions, such as [GitHub Pages](https://pages.github.com/) and [Google sites](https://sites.google.com/new). 
 
 ##### Main Page
 
