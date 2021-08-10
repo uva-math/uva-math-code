@@ -14,7 +14,11 @@ tooltips: true
 {% include DUS.html UVA_id="hcg3m" %}
 <!-- {% include DUS.html UVA_id="iwh" %} -->
 
-- <h5>{% include course number=1210 code=false %} and {% include course number=1220 code=false %} Coordinator:</h5>
+- <h5>{% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinator:</h5>
+<!-- {% include person_info_email_only.html UVA_id="psb7p" %} -->
+Matt Demers
+
+- <h5>{% include course number=1220 code=false %} Coordinator:</h5>
 {% include person_info_email_only.html UVA_id="ed8bg" %}
 
 - <h5>{% include course number=1310 code=false %} Coordinator:</h5>
