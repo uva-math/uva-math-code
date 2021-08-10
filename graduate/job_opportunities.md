@@ -1,5 +1,5 @@
 ---
-title: Job hunt
+title: Job Search Resources
 layout: g_page
 g_info: true
 permalink: /graduate/employment/
@@ -12,7 +12,6 @@ nav_weight: 60
 Navigating the job market can be confusing and stressful. If you are
 graduating this year and are on the market, consider our summer job materials
 workshop. Here is a brief rundown of what you need and what you need to do.
-
 
 The Center for Teaching Excellence (CTE) has some fantastic workshops geared to helping
 you produce the best job materials possible as part of their <a href="http://cte.virginia.edu/programs/tomorrows-professor-today/">Tomorrow's
@@ -61,8 +60,14 @@ Describe your experience
 in the classroom and your approach to teaching. This is a forum to
 explain your teaching philosophy, but the most successful are grounded
 in specific classroom experiences. For research postdocs, the usual
-length is a page. For liberal arts jobs, the teaching statement is often
+length is a page. For teaching-focused jobs, the teaching statement is often
 longer.
+
+##### Diversity Statement
+
+This item is increasingly common in job applications. May include the following: (1) a statement of your values around diversity, inclusion, equity, and/or justice in higher education; (2) examples of your efforts towards fostering diversity of perspectives, and success of underrepresented members of the mathematical community; (3) future plans of said efforts.
+
+More resources on diversity statements: [1](https://www.insidehighered.com/advice/2016/06/10/how-write-effective-diversity-statement-essay), [2](https://cft.vanderbilt.edu/guides-sub-pages/developing-and-writing-a-diversity-statement/).
 
 ##### Cover Letter
 
@@ -122,9 +127,9 @@ There are many applicants for
 each position in general, and small touches like this can help your application
 stand out.
 
-### Liberal Arts Colleges
+### Teaching-focused jobs
 
-If you are applying to liberal arts jobs, you should have more data available to make a case for your teaching prowess. You should craft a teaching portfolio including the following items.
+If you are applying to teaching-focused jobs, you should have more data available to make a case for your teaching prowess. You should craft a teaching portfolio including the following items. Having specifically tailored cover letters is important for these job applications.
 
 ##### Teaching Evaluations
 
