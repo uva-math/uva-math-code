@@ -2,9 +2,10 @@
 title: Contacts
 layout: ug_page
 ug_info: true
+nav_id: Contacts
 permalink: /undergrad/contacts/
 nav_parent: Undergraduate
-nav_weight: 1
+nav_weight: 3
 tooltips: true
 ---
 
