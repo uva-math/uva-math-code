@@ -22,7 +22,7 @@ tooltips: true
 ## Application Checklist:
 1. Application;
 2. Statement of purpose;
-3. GRE scores, including the mathematics&nbsp;subject test (<b>this requirement is waived in 2020-2021 due to COVID-19</b>);
+3. GRE scores, including the mathematics&nbsp;subject test (<b>this requirement is waived in 2020-2021</b>);
 4. 2 or 3 letters of recommendation;
 5. Unofficial transcript;
 6. $85 application fee;
