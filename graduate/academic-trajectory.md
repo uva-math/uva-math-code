@@ -9,14 +9,9 @@ nav_weight: 10
 
 <h1 class="mb-3">Academic trajectory</h1>
 
-<div class="list-group-sm mb-4">
-  <a class="list-group-item nonupper-h5 orange-item">The information on this page may be out of date and needs to be updated</a>
-</div>
+Beginning graduate students are advised by the Graduate Advisor. Usually in the second year students acquire a major professor who does all subsequent advising. The responsibility rests with the student to contact a prospective major professor. The advisor approves course selections, monitors progress, and generally oversees the student&#39;s program of study. Satisfactory progress is usually measured by a grade of at least B in all courses.
 
-
-Beginning graduate students are advised by the Graduate Advisor. Usually in the second year students acquire a major professor who does all subsequent advising. The responsibility rests with the student to contact a prospective major professor. The advisor approves course selections, monitors progress, and generally oversees the student&#39;s program of study. Satisfactory progress is usually measured by a grade of at least B+ in all courses.
-
-The following describes a core program commonly taken by M.S. or Ph.D. students in mathematics during the first year:
+The following describes a core program commonly taken Ph.D. students in mathematics during the first year:
 
 ### Fall Semester
 
