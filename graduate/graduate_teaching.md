@@ -18,9 +18,13 @@ nav_weight: 18
 Here are this year's course coordinators and GTA Mentor:
 
 - GTA Mentor:&nbsp;&nbsp;{% include person_info_email_only.html UVA_id="jsr2pz" %}
+
 - {% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinator: Matt Demers
+
 - {% include course number=1220 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="ed8bg" %}
+
 - {% include course number=1310 code=false %} Coordinator: Daniel James
+
 - {% include course number=1320 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="ds5nd" %}
 
 ---
