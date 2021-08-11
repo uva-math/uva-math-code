@@ -249,7 +249,7 @@ MATH 8370 (Topics in Probability), MATH 7320 (Real Analysis II), MATH 7420 (Func
 
 ---
 
-<h2>3&nbsp;Graduate Program in Geometry and Topology</h2>
+<h2>3&nbsp;Graduate Program in Geometry, Topology</h2>
 
 **Faculty:**&nbsp;&nbsp;
 {% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "geometry" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
@@ -291,7 +291,7 @@ The General Exam in Topology is based on the material of MATH 7820, 7800.
 
 #### Research Seminar
 
-Topology/geometry students are expected to take and to participate actively in the topology and/or geometry seminars every semester after the first year. There are normally two seminars weekly: geometric topology on Tuesdays, algebraic topology on Thursdays. Participants should attend either the Tuesday seminar or the Thursday seminar (or both), but in either case will register for MATH 9820 Geometry and Topology Seminar.
+Topology/geometry students are expected to take and to participate actively in the topology and/or geometry seminars every semester after the first year. There are normally two seminars weekly: geometric topology on Tuesdays, algebraic topology on Thursdays. Participants should attend either the Tuesday seminar or the Thursday seminar (or both), but in either case will register for MATH 9820 Geometry, Topology Seminar.
 
 #### Second-Year Proficiency Exam
 

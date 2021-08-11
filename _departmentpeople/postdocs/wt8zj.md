@@ -12,7 +12,7 @@ personal_page: https://uva.theopenscholar.com/wei-lun-tsai
 
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
 grad_general_areas:
   - algebra

@@ -11,6 +11,6 @@ image: __SITE_URL__/img/people/MacCluer.jpg
 personal_page: http://people.virginia.edu/~bdm3f/
 
 areas:
-  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
+  - Analysis, PDE, Operator Algebras
 
 ---

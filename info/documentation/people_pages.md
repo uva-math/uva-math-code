@@ -34,8 +34,8 @@ email: obus@virginia.edu
 image: __SITE_URL__/img/people/Obus.jpg
 personal_page: http://people.virginia.edu/~aso9t/
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
-  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+  - Geometry, Topology
 grad_general_areas:
   - algebra
 grad_special_areas:
@@ -139,8 +139,8 @@ The listings of people by research area such as [{{site.url}}/research/analysis/
 
 {% highlight html %}
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
-  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+  - Geometry, Topology
 {% endhighlight %}
 
 Possible values for research areas are quite broad and include the cup signs $$\cup$$ to indicate this. Here are the possible values for research areas one can put into a person's `.md` page:
@@ -155,7 +155,7 @@ The list of these values is in the file `_data/research_areas.yml` ([GitHub link
 
 {% highlight html %}
 -
-  name: Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
+  name: Analysis, PDE, Operator Algebras
   h-name: Analysis &cup; PDE &cup; Operator Algebras
   shortname: analysis
 {% endhighlight %}

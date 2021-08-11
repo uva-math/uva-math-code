@@ -11,8 +11,8 @@ image: __SITE_URL__/img/people/Pitt.jpg
 personal_page:
 
 areas:
-  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
-  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
+  - Analysis, PDE, Operator Algebras
+  - Probability, Combinatorics
 
 
 ---

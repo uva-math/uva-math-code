@@ -16,6 +16,6 @@ grad_general_areas:
 grad_special_areas:
   - operators
 areas:
-  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
+  - Analysis, PDE, Operator Algebras
 
 ---

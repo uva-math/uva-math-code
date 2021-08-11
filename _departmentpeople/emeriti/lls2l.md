@@ -8,9 +8,9 @@ office: 207 Kerchof Hall
 phone: 434-924-4929
 email: lls2l@virginia.edu
 image: __SITE_URL__/img/people/Scott.jpg
-personal_page: http://people.virginia.edu/~lls2l/
+personal_page: https://leonard-scott-emeritus.faculty.virginia.edu/
 
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
 ---

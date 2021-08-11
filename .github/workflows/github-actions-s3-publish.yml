@@ -1,0 +1,34 @@
+name: Build and deploy Jekyll site
+on: [push]
+
+jobs:
+  jekyll:
+    name: Build and deploy Jekyll site
+    runs-on: ubuntu-latest
+    environment: main
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Build
+      uses: jerryjvl/jekyll-build-action@v1
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: us-east-1
+
+    - name: Check HTML
+      uses: chabad360/htmlproofer@master
+      with:
+        # The directory to scan
+        directory: "./_site"
+        # The arguments to pass to HTMLProofer
+        arguments: --disable-external true --allow-hash-href true --file-ignore "/_site/old.math.virginia.edu/"
+          
+    - name: Sync output to S3
+      run: |
+        aws s3 sync ./_site/ s3://math.virginia.edu --delete

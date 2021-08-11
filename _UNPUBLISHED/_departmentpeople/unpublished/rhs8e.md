@@ -12,8 +12,8 @@ personal_page: https://sites.google.com/site/ramanujansantharoubane/
 published: false
 
 areas:
-  - Geometry&nbsp;$$\cup$$&nbsp;Topology
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Geometry, Topology
+  - Mathematical Physics, Applied Mathematics
 
 
 ---

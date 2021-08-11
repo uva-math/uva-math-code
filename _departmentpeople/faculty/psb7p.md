@@ -12,8 +12,8 @@ image: __SITE_URL__/img/people/Bourdon.jpg
 personal_page: https://uva.theopenscholar.com/paul-bourdon
 
 areas:
-  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Analysis, PDE, Operator Algebras
+  - Mathematical Physics, Applied Mathematics
 
 
 ---

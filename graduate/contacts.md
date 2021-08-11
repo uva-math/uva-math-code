@@ -8,10 +8,13 @@ nav_weight: 1
 tooltips: true
 ---
 
-<h1 class="mb-4">Contacts (Fall 2019)</h1>
+<h1 class="mb-4">Contacts (Fall 2021)</h1>
 
 - ##### Director of Graduate Studies:<br>
 {% include person_info_email_only.html UVA_id="jeb2md" %}
 
 - ##### Graduate Admissions:<br>
-{% include person_info_email_only.html UVA_id="ko5wk" %}
+{% include person_info_email_only.html UVA_id="tam7b" %}
+
+- ##### Bridge program:<br>
+{% include person_info_email_only.html UVA_id="des5e" %}

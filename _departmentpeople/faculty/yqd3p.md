@@ -18,9 +18,9 @@ grad_special_areas:
   - probability
   - harmonic
 areas:
-  - Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
-  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
+  - Analysis, PDE, Operator Algebras
+  - Probability, Combinatorics
+  - Mathematical Physics, Applied Mathematics
 
 
 

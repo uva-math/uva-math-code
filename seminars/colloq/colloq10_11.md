@@ -98,7 +98,7 @@ nav_parent: Seminars
 	<td valign="top"><b>March 24</b></td>
 	<td>Karen Vogtmann (Cornell)&nbsp;&nbsp;<span class="small"></span><br />
 	 &nbsp;&nbsp;<i>Title: <a href="javascript:Toggle('March 24')">Outer spaces</a></i>
-<p id="March 24" style="display:none;">Many classical families of groups, including arithmetic groups, surface mapping class groups and automorphism groups of free groups, are studied by considering the geometry and topology of their actions on nice contractible spaces.  In the case of the group Out(F_n) of outer automorphisms of a free group the appropriate space is known as Outer space.  I will describe Outer space, show how it is used to obtain information about Out(F_n) and then indicate how these ideas have recently been used to study a wider class of automorphism groups.</p></td>
+<p id="March 24" style="display:none;">Many classical families of groups, including arithmetic groups, surface mapping class groups and automorphism groups of free groups, are studied by considering the Geometry, Topology of their actions on nice contractible spaces.  In the case of the group Out(F_n) of outer automorphisms of a free group the appropriate space is known as Outer space.  I will describe Outer space, show how it is used to obtain information about Out(F_n) and then indicate how these ideas have recently been used to study a wider class of automorphism groups.</p></td>
 </tr>
 
 <tr>
@@ -269,7 +269,7 @@ Thanksgiving
 <hr />
 <h3 class="mb-3">Archives</h3>
 
-<p><a href="/seminars/colloq/">upcoming</a> | <a href="/seminars/colloq/2020-21/">2020-21</a> | <a href="/seminars/colloq/2019-20/">2019-20</a> | <a href="/seminars/colloq/2018-19/">2018-19</a> | <a href="/seminars/colloq/2017-18/">2017-18</a> | <a href="/seminars/colloq/2016-17/">2016-17</a> |
+<p><a href="/seminars/colloq/">upcoming</a> | <a href="/seminars/colloq/2021-22/">2021-22</a> | <a href="/seminars/colloq/2020-21/">2020-21</a> | <a href="/seminars/colloq/2019-20/">2019-20</a> | <a href="/seminars/colloq/2018-19/">2018-19</a> | <a href="/seminars/colloq/2017-18/">2017-18</a> | <a href="/seminars/colloq/2016-17/">2016-17</a> |
     <a href="/seminars/colloq/2015-16/">2015-16</a> |
     <a href="/seminars/colloq/2014-15/">2014-15</a> |
     <a href="/seminars/colloq/2013-14/">2013-14</a> |

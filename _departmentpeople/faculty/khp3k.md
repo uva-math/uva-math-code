@@ -14,6 +14,6 @@ grad_general_areas:
   - history
 
 areas:
-  - History of$$\ $$Mathematics
+  - History of Mathematics
 
 ---

@@ -12,9 +12,9 @@ personal_page: http://faculty.virginia.edu/saenz/
 published: false
 
 areas:
-  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
-  - Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
-  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+  - Probability, Combinatorics
+  - Mathematical Physics, Applied Mathematics
+  - Geometry, Topology
 
 
 ---

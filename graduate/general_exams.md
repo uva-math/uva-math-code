@@ -21,6 +21,10 @@ Below are old exams and study materials for each of the subfields.
 
 ## Algebra
 
+- [January 2021]({{site.url}}/graduate/exams/algebra/2021-01.pdf)
+- [August 2020]({{site.url}}/graduate/exams/algebra/2020-08.pdf)
+- [January 2020]({{site.url}}/graduate/exams/algebra/2020-01.pdf)
+- [August 2019]({{site.url}}/graduate/exams/algebra/2019-08.pdf)
 - [January 2019]({{site.url}}/graduate/exams/algebra/2019-01.pdf)
 - [August 2018]({{site.url}}/graduate/exams/algebra/2018-08.pdf)
 - [January 2018]({{site.url}}/graduate/exams/algebra/2018-01.pdf)
@@ -52,7 +56,7 @@ Below are old exams and study materials for each of the subfields.
 - [May 2003]({{site.url}}/graduate/exams/algebra/2003-05.pdf)
 - [Exams 1981-2002]({{site.url}}/graduate/exams/algebra/AlgGento02.pdf)
 
-Here is an updated [Review Guide]({{site.url}}/graduate/exams/algebra/CombinedPrep2018-AlgebraGeneral.pdf) for algebra general exams.
+Here is an updated [Review Guide]({{site.url}}/graduate/exams/algebra/CombinedPrep2021Jan-AlgebraGeneral.pdf) for algebra general exams.
 
 ---
 

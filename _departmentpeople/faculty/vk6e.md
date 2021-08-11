@@ -12,7 +12,7 @@ image: __SITE_URL__/img/people/Krushkal.jpg
 personal_page: https://uva.theopenscholar.com/slava-krushkal
 
 areas:
-  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+  - Geometry, Topology
 
 grad_general_areas:
   - geometry

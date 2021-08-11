@@ -15,7 +15,7 @@ grad_special_areas:
   - reptheory
   - algcomb
 areas:
-  - Probability&nbsp;$$\cup$$&nbsp;Combinatorics
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Probability, Combinatorics
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
 ---

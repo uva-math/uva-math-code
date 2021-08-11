@@ -5,32 +5,32 @@
 # geomtop-page - for adding link to geomtop group page
 
 -
-  name: Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  name: Algebra, Arithmetic Geometry/Number Theory, Representation Theory
   shortname: alg_repth
-  h-name: Algebra &cup; Representation Theory
+  h-name: Algebra &cup; Arithmetic Geometry/Number Theory &cup; Representation Theory
 
 -
-  name: Geometry&nbsp;$$\cup$$&nbsp;Topology
+  name: Geometry, Topology
   h-name: Geometry &cup; Topology
   shortname: geom_top
   geomtop-page: true
 
 -
-  name: Analysis&nbsp;$$\cup$$&nbsp;PDE&nbsp;$$\cup$$&nbsp;Operator Algebras
+  name: Analysis, PDE, Operator Algebras
   h-name: Analysis &cup; PDE &cup; Operator Algebras
   shortname: analysis
 
 -
+  name: Probability, Combinatorics
   h-name: Probability &cup; Combinatorics
-  name: Probability&nbsp;$$\cup$$&nbsp;Combinatorics
   shortname: prob_comb
 
 -
+  name: Mathematical Physics, Applied Mathematics
   h-name: Mathematical Physics &cup; Applied Mathematics
-  name: Mathematical Physics&nbsp;$$\cup$$&nbsp;Applied Mathematics
   shortname: mathphys
 
 -
   h-name: History of Mathematics
-  name: History of$$\ $$Mathematics # for correct indentation
+  name: History of Mathematics
   shortname: histmath

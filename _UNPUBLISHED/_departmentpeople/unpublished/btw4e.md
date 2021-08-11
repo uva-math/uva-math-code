@@ -19,8 +19,8 @@ grad_special_areas:
   - algeom
   - geom_top
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
-  - Geometry&nbsp;$$\cup$$&nbsp;Topology
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+  - Geometry, Topology
 
 
 ---

@@ -8,7 +8,7 @@ office: 307 Kerchof Hall
 phone: 434-924-4950
 email: asr3x@virginia.edu
 image: __SITE_URL__/img/people/Rapinchuk.jpg
-personal_page: http://pi.math.virginia.edu/Faculty/Rapinchuk/
+personal_page: https://uva.theopenscholar.com/andrei-rapinchuk/
 
 grad_general_areas:
   - algebra
@@ -16,6 +16,6 @@ grad_special_areas:
   - groups
   - numth
 areas:
-  - Algebra&nbsp;$$\cup$$&nbsp;Representation Theory
+  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
 ---

@@ -235,9 +235,8 @@ href="http://college.as.virginia.edu/iclec">http://college.as.virginia.edu/iclec
 If you believe your previous experience in calculus has prepared
 you to begin your work in calculus at UVA at an advanced level,
 but you do not have credit for the prerequisite lower-level course
-or courses, then the placement exams provided at <a
-href="http://www.people.virginia.edu/%7Epsb7p/UVA_Calc_Placement_Exam.html"> Advisory
-Calculus-Placement Exams</a> ([backup link]({{site.url}}/undergraduate/placement-backup/)) can help you decide which calculus
+or courses, then the placement exams provided at [Advisory
+Calculus-Placement Exams]({{site.url}}/undergraduate/placement-backup/) can help you decide which calculus
 course to enroll in.
 
 ---
