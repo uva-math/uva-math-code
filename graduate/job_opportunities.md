@@ -65,7 +65,7 @@ longer.
 
 ##### Diversity Statement
 
-This item is increasingly common in job applications. May include the following: (1) a statement of your values around diversity, inclusion, equity, and/or justice in higher education; (2) examples of your efforts towards fostering diversity of perspectives, and success of underrepresented members of the mathematical community; (3) future plans of said efforts.
+This item is increasingly common in job applications. May include the following: (1) a statement of your values around diversity, inclusion, equity, and/or justice in higher education; (2) examples of your efforts towards fostering diversity of perspectives, and success of underrepresented members of the mathematical community; (3) future plans of said efforts. See the [Berkeley rubric](https://ofew.berkeley.edu/recruitment/contributions-diversity/rubric-assessing-candidate-contributions-diversity-equity).
 
 More resources on diversity statements: [[1]](https://www.insidehighered.com/advice/2016/06/10/how-write-effective-diversity-statement-essay), [[2]](https://cft.vanderbilt.edu/guides-sub-pages/developing-and-writing-a-diversity-statement/).
 
