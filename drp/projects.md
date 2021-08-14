@@ -111,7 +111,7 @@ permalink: /drp/projects/
 + Hamiltonian ODEs: Deterministic and probabilistic studies
   - Text: ODEs and Dynamical Systems, Gerald Teschl
   - Mentee: Yunlu Li
-  - Mentor: Mouhamadou
+  - Mentor: Mouhamadou Sy
 
 + The Yoneda Embedding and its Applications
   - Text: Categories for the Working Computer Scientist, Barr and Wells

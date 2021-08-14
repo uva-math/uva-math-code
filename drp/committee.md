@@ -8,7 +8,8 @@ permalink: /drp/committee/
 
 The DRP Committee is comprised of the following graduate students
 
-- Chris Lloyd
-- Alec Traaseth
+- [Alec Traaseth](https://math.virginia.edu/people/at3kk/)
+- [Mojdeh Tarighat](https://math.virginia.edu/people/mt3cb/)
+- [Valentina Zapata Castro](https://math.virginia.edu/people/vz6an/)
 
-The sponsoring faculty members are [Sara Maloni](https://math.virginia.edu/people/sm4cw/), [You Qi](https://math.virginia.edu/people/yq2dw/) and [Zoran Grujic](https://math.virginia.edu/people/zg7c/).
+The sponsoring faculty members are [Sara Maloni](https://math.virginia.edu/people/sm4cw/) and [Peter Humphries](https://math.virginia.edu/people/ph7ph/).

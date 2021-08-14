@@ -13,8 +13,8 @@
   seminar_weight: 10
   regular_times: Thursdays 3:45-4:45, Clark 102
   contact:
-    - UVA_id: sm4cw
-    - UVA_id: lap5r
+    - UVA_id: jf8dc
+    - UVA_id: yq2dw
     
 - cal_number: '200'
   name: '---'
@@ -175,8 +175,7 @@
   published_in_nav: true
   google_cal_id: '8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com'
   seminar_weight: 60
-  #regular_times: Tuesdays at 3:30, CLARK 102
-  regular_times: To be determined for 2021-2022
+  regular_times: Tuesdays, 3:30-4:45 in Monroe 118
   information: |
     The Galois-Grothendieck Seminar is an expository seminar about various aspects of Galois theory and arithmetic geometry. Each semester/year has a coherent program, with graduate students contributing many of the talks.
   contact:

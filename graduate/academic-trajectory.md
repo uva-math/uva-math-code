@@ -9,14 +9,9 @@ nav_weight: 10
 
 <h1 class="mb-3">Academic trajectory</h1>
 
-<div class="list-group-sm mb-4">
-  <a class="list-group-item nonupper-h5 orange-item">The information on this page may be out of date and needs to be updated</a>
-</div>
+Beginning graduate students are advised by the Graduate Advisor. Usually in the second year students acquire a major professor who does all subsequent advising. The responsibility rests with the student to contact a prospective major professor. The advisor approves course selections, monitors progress, and generally oversees the student&#39;s program of study. Satisfactory progress is usually measured by a grade of at least B in all courses.
 
-
-Beginning graduate students are advised by the Graduate Advisor. Usually in the second year students acquire a major professor who does all subsequent advising. The responsibility rests with the student to contact a prospective major professor. The advisor approves course selections, monitors progress, and generally oversees the student&#39;s program of study. Satisfactory progress is usually measured by a grade of at least B+ in all courses.
-
-The following describes a core program commonly taken by M.S. or Ph.D. students in mathematics during the first year:
+The following describes a core program commonly taken Ph.D. students in mathematics during the first year:
 
 ### Fall Semester
 
@@ -46,19 +41,7 @@ The fundamental group and covering spaces, Van Kampen theorem, and applications 
 _MATH 7010: Seminar on Research in Mathematics_<br>
 This seminar discusses the issues related to research in Mathematics.
 
-Students with advanced preparation or specialized interests may, with permission of the graduate advisor, construct a suitably modified program. Students needing additional preparation are advised to take other courses, such as a 5000-level analysis or algebra sequence, before taking the 7000-level courses:
-
-<em>MATH 5310: Introduction to Real Analysis</em><br />
-Basic topology of Euclidean spaces, continuity and differentiation of functions on a single variable, Riemann-Stieltjes integration, and convergence of sequences and series.
-
-<em>MATH 5330: Advanced Multivariate Calculus</em><br />
-Differential and integral calculus in Euclidean spaces, implicit and inverse function theorems, differential forms and Stokes&#39; theorem.
-
-<em>MATH 5651: Advanced Linear Algebra</em><br />
-This course includes a systematic review of the material usually considered in MATH 3351 such as matrices, determinants, systems of linear equations, vector spaces, and linear operators. However, these concepts will be developed over general fields and more theoretical aspects will be emphasized. The centerpiece of the course is the theory of canonical forms, including the Jordan canonical form and the rational canonical form. Another important topic is general bilinear forms on vector spaces. Time permitting, some applications of linear algebra in differential equations, probability, etc. are considered.
-
-<em>MATH 5652: Introduction to Abstract Algebra</em><br />
-Focuses on structural properties of basic algebraic systems such as groups, rings and fields. A special emphasis is made on polynomials in one and several variables, including irreducible polynomials, unique factorization and symmetric polynomials. Time permitting, such topics as group representations or algebras over a field may be included.
+Students who pass general exams upon arrival can take more advanced courses in the first year.
 
 In the second year and beyond, students choose from more specialized courses. Ph.D. students past the third year are mainly involved in seminars and independent research. In seminars, students have the opportunity to lecture on published work or their own research, gaining experience in exposition of advanced mathematical topics. For descriptions of the remaining graduate courses, see the Graduate School&#39;s catalogue.<br />
 <br />

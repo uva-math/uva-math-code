@@ -53,11 +53,11 @@ Written under the supervision of the major advisor, the PhD dissertation must co
 
 ## Masters Degree Requirements
 
-The Master of Arts and Master of Science programs are normally completed within two years.
-
 **Please note that Department of Mathematics does not normally admit students seeking only a Masters degree; we are primarily a PhD program.**
 
-### (Masters requirements are under review)
+[Information on the The 4+1 BA/MA Program for current UVA undergraduate students]({{site.url}}/content/41-ba-ma-program/)
+
+<!-- ### (Masters requirements are under review) -->
 
 <!-- ### Requirements for a Master of Arts
 
