@@ -22,7 +22,7 @@ tooltips: true
 The Math Collaborative Learning Center (MCLC) is staffed with experienced undergraduate students (MCLC consultants) that offer one-on-one (or small group) tutoring sessions for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
 <ul>
  <li> {% include course number=1190 %}, {% include course number=1210 %}, {% include course number=1310 %} (collectively reffered to as Calculus I), and {% include course number=1220 %}, {% include course number=1320 %} (collectively referred to as Calculus II) </li>
- <li>{% include course number=2310 %}, {% include course number=2315 %}, {% include course number=3000 %}, {% include course number=3100 %}, {% include course number=3250 %}, {% include course number=3310 %}, {% include course number=3350%}, {% include course number=3351%}, and {% include course number=3354%} </li>
+ <li>{% include course number=2310 %}, {% include course number=3000 %}, {% include course number=3100 %}, {% include course number=3250 %}, {% include course number=3310 %}, {% include course number=3350%}, and {% include course number=3351%} </li>
 </ul>
 
 <!-- Due to the ongoing situation with COVID-19 all MCLC sessions for the Spring 2021 semester will be held virtually, via Zoom (links found in the table below). Here are a few things that you should have in mind before joining a session:
