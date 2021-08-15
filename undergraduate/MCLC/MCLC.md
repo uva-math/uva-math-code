@@ -94,11 +94,11 @@ The Math Collaborative Learning Center (MCLC) is staffed with experienced underg
     </td>
     <td valign="top">
        <!-- <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Calculus I &amp; II</a><br> <!--T-->
-        <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Math 3354</a> 
+        <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Math </a> 
     </td>
     <td valign="top">
      <!-- <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Calculus I &amp; II</a><br> <!--W-->
-      <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Math 2310</a> 
+      <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Math </a> 
     </td>
     <td valign="top">
      <!-- <a href="https://virginia.zoom.us/j/99985774187?pwd=a1hpVkFLcStmMHVUc2kwbGdrMFh3dz09">Calculus I &amp; II </a> <!--Th--> 
