@@ -19,7 +19,7 @@ tooltips: true
 <p style="font-size:150%;"> The MCLC will begin its operation for the Fall 2021 semester on Monday, August 30 </p>
 <!-- <ty"font-size:150%;"> The MCLC is now open for the Spring 2021 semester! </p> -->
 
-The Math Collaborative Learning Center (MCLC) operates in the Georges Student Center on the second floor of Clemons Library. The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer one-on-one (or small group) tutoring sessions for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
+The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Student Center on the second floor of Clemons Library. </b> The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer one-on-one (or small group) tutoring sessions for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
 <ul>
  <li> {% include course number=1190 %}, {% include course number=1210 %}, {% include course number=1310 %} (collectively reffered to as Calculus I) </li>
  <li> {% include course number=1220 %}, {% include course number=1320 %} (collectively referred to as Calculus II) </li>
