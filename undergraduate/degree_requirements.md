@@ -10,17 +10,24 @@ nav_weight: 1
 <h1 class="mb-3">Degree requirements</h1>
 
 - ##### [Requirements]({{ site.url }}/undergraduate/docs/major_minor_req_f20.pdf) for Obtaining a Major or a Minor in Mathematics
-- ##### [Declaration of math major form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)
-- ##### [Declaration of math minor form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)
 
 <h1 class="mb-3 mt-3">To Declare a Major/Minor:</h1>
-- {% include person_info_email_only.html UVA_id="pa8e" %} (Last name begins with letter A-E)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="yqd3p" %} (Last name begins with letter F-J)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="clh4xd" %} (Last name begins with letter K-O)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="zg7c" %} (Last name begins with letter P-T)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="njk4x" %} (Last name begins with letter U-Z)
+
+1. Review the above document for prerequisites to declare the major/minor and the requirements to earn the degree
+2. Select a concentration (if majoring) and create a tentative list of proposed courses that will earn the degree
+3. Contact the appropriate major declaration advisor below (according to your last name) to set up a meeting to review your plan
+
+{% include major_intake.md%}
+   
+4. After your meeting, send the declaration advisor a major (or minor) declaration form for official approval, prefilled with the courses you discussed at your meeting. Once admitted to the major/minor, you will be assigned to a new advisor in the department for ongoing advising  during course registration periods etc.
 
 
 ---
 
-**Note:** If you would like to have a course count toward your major/minor, but it is not on the list of approved courses, please take the following fillable form to your advisor for approval and a signature:&nbsp;<a href="{{ site.url }}/undergraduate/docs/exception(fillable)_1.pdf">Course Exception for a Major/Minor in Mathematics</a>
+- ##### [Declaration of math major form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)
+- ##### [Declaration of math minor form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)
+
+<!-- 
+---
+
+**Note:** If you would like to have a course count toward your major/minor, but it is not on the list of approved courses, please take the following fillable form to your advisor for approval and a signature:&nbsp;<a href="{{ site.url }}/undergraduate/docs/exception(fillable)_1.pdf">Course Exception for a Major/Minor in Mathematics</a> -->
