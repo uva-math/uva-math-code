@@ -19,8 +19,10 @@ nav_weight: 1
 
 {% include major_intake.md%}
    
-4. After your meeting, send the declaration advisor a major (or minor) declaration form for official approval, prefilled with the courses you discussed at your meeting. Once admitted to the major/minor, you will be assigned to a new advisor in the department for ongoing advising  during course registration periods etc.
-
+<ol>
+<li value="4">After your meeting, send the declaration advisor a major (or minor) declaration form for official approval, prefilled with the courses you discussed at your meeting. Once admitted to the major/minor, you will be assigned to a new advisor in the department for ongoing advising  during course registration periods etc.
+</li>
+</ol>
 
 ---
 
