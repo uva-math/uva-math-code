@@ -57,7 +57,7 @@ tooltips: true
 - ##### Ombudsman:<br>
 {% include person_info_email_only.html UVA_id="pa8e" %}
 
-- ##### Collaborative Learning Center:<br>
+- ##### Math Collaborative Learning Center:<br>
 {% include person_info_email_only.html UVA_id="ed8bg" %}
 
 - ##### Director of Cavalier Online Experiences (CONEX):<br>
