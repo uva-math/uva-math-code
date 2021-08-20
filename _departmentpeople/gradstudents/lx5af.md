@@ -2,8 +2,8 @@
 UVA_id: lx5af
 lastname: Xu
 name: Liaosha
-general_position: gradstudent
-position: Graduate Student
+general_position: postdoc
+position: Research Associate
 office: 403 Kerchof Hall
 phone: 434-924-3776
 email: lx5af@virginia.edu
