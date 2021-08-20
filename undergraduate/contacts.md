@@ -14,6 +14,8 @@ tooltips: true
 - ##### Director of Undergraduate Studies:<br>
 {% include DUS.html UVA_id="hcg3m" %}
 <!-- {% include DUS.html UVA_id="iwh" %} -->
+- ##### Director of Lower Division Courses:<br>
+{% include person_info_email_only.html UVA_id="jsr2pz" %}
 
 - <h5>{% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinator:</h5>
 {% include person_info_email_only.html UVA_id="zka4tz" %}
@@ -58,6 +60,8 @@ tooltips: true
 - ##### Collaborative Learning Center:<br>
 {% include person_info_email_only.html UVA_id="ed8bg" %}
 
+- ##### Director of Cavalier Online Experiences (CONEX):<br>
+{% include person_info_email_only.html UVA_id="jsr2pz" %}
 - ##### Summer Session:<br>
 {% include person_info_email_only.html UVA_id="pa8e" %}
 
