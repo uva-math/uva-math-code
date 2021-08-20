@@ -34,11 +34,10 @@ Daniel James
 <!-- <br class="hidden-sm-up">{% include person_info_email_only.html UVA_id="iwh" %}  -->
 
 - ##### To Declare a Major/Minor:<br>
-{% include person_info_email_only.html UVA_id="pa8e" %} (Last name begins with letter A-E)<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="yqd3p" %} (Last name begins with letter F-J)<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="clh4xd" %} (Last name begins with letter K-O)<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="zg7c" %} (Last name begins with letter P-T)<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="njk4x" %} (Last name begins with letter U-Z)
+
+{% include major_intake.md%}
+
+- See [this page]({{site.url}}/undergraduate/requirements/) for forms.
 
 - ##### Math Majors/Minors Administrative Assistant:<br>
 {% include person_info_email_only.html UVA_id="aab8b" %}
