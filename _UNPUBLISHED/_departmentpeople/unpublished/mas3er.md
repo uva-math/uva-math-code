@@ -9,5 +9,6 @@ phone:
 email: mas3er@virginia.edu
 image: __SITE_URL__/img/people/Schrecengost.jpg
 personal_page: https://markschrec.github.io/
+published: false
 
 ---

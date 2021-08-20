@@ -4,7 +4,7 @@ lastname: Gagne
 name: Matthew
 general_position: lecturer
 position: Lecturer
-office: 126 Kerchof Hall
+office: 207 Kerchof Hall
 phone: 
 email: mrg9ap@virginia.edu
 image: __SITE_URL__/img/people/2019-fall/Gagne.jpg
