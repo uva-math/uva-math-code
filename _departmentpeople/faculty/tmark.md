@@ -3,7 +3,7 @@ UVA_id: tmark
 lastname: Mark
 name: Thomas
 general_position: faculty
-position: Professor
+position: Professor and Associate Chair
 office: 327 Kerchof Hall
 phone: 434-924-4948
 email: tmark@virginia.edu
