@@ -8,6 +8,8 @@ permalink: /mathcircle/
 #nav_id: 
 ---
 
-### UVA Math Circle
+# UVA Math Circle
 
-<a href="MathCircle_article.pdf">What is the Math Circle?</a> (pdf)
+<br>
+
+- <a href="MathCircle_article.pdf">What is the Math Circle?</a> (pdf)
