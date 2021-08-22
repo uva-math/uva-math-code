@@ -269,7 +269,7 @@ We must emphasize that these areas have a lot in common, so the subdivision into
 
 
 
-- _First Semester:_ MATH 7820 Differential Topology (recommended).
+- _First Semester:_ MATH 7820 Differential Topology.
 - _Second Semester:_ MATH 7800 Algebraic Topology I (fundamental group and covering spaces, singular and simplicial homology).
 
 
