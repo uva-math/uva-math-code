@@ -3,7 +3,7 @@ title: UVA Math Circle
 layout: mathcircle
 permalink: /mathcircle/
 nav_id: Math Circle
-nav_weight: 1010
+nav_weight: 1011
 ---
 
 # UVA Math Circle
