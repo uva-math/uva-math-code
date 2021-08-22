@@ -2,10 +2,8 @@
 title: UVA Math Circle
 layout: mathcircle
 permalink: /mathcircle/
-#nav_parent: Undergraduate
-#nav_nesting: true
-#nav_weight: 9702
-#nav_id: 
+nav_id: Math Circle
+nav_weight: 900
 ---
 
 # UVA Math Circle
