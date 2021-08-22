@@ -10,3 +10,4 @@ permalink: /mathcircle/
 
 ### UVA Math Circle
 
+<a href="MathCircle_article.pdf">What is the Math Circle?</a> (pdf)
