@@ -38,8 +38,7 @@
   shortname: ntsem
   google_cal_id: '56un1k179o7d8mtj85o12qsg7c@group.calendar.google.com'
   seminar_weight: 90
-  #regular_times: Fridays at 1:00, over zoom
-  regular_times: To be determined for 2021-2022
+  regular_times: Fridays at 1:00, Rouss 403
   contact:
     - UVA_id: eg4va
     - UVA_id: ph7ph
