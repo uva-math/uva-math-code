@@ -9,6 +9,6 @@ phone: 434-924-0899
 email: tpb9ds@virginia.edu
 image:
 personal_page: 
-
+published: false
 
 ---
