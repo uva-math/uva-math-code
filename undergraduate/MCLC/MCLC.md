@@ -37,7 +37,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <!-- <p style="font-size:120%;color:coral;"> If you have joined an MCLC session this semester please take a couple of minutes to complete this 
 <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_5alk5LpaWdFUWqy">survey</a>. We appreciate your feedback. </p> -->
 
-<p> <h2 class="mb-4 mt-4">Schedule  </h2> (to be updated) </p>
+<h2 class="mb-4 mt-4">Schedule  </h2>
 
 <table cellpadding="6px" border="1px" cellspacing="0">
 <tbody>
@@ -111,8 +111,8 @@ MATH 3350/3351
 <td style="width: 377px;">Calculus I &amp; II </td>
 <td style="width: 247px;"></td>
 <td style="width: 423px;">
+MATH 3100 <br>
 MATH 3350/3351
-MATH 3100 (Sam)
 </td>
 <td style="width: 159px;"></td>
 </tr>
