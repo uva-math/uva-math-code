@@ -80,7 +80,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 247px;"></td>
 <td style="width: 423px;">MATH 1220 </td>
 <td style="width: 159px;">
-MATH 1190/1210, MATH 1220
+MATH 1190/1210, 1220
 </td>
 </tr>
 <tr>
@@ -111,8 +111,8 @@ MATH 3350/3351
 <td style="width: 377px;">Calculus I &amp; II </td>
 <td style="width: 247px;"></td>
 <td style="width: 423px;">
-3350/3351 (Casia)
-3100 (Sam)
+MATH 3350/3351
+MATH 3100 (Sam)
 </td>
 <td style="width: 159px;"></td>
 </tr>
