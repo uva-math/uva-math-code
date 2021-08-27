@@ -61,8 +61,8 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 51px;">2-3</td>
 <td style="width: 140px;"></td>
 <td style="width: 377px;"></td>
-<td style="width: 247px;">MATH 1190/1210, MATH 1220 </td>
-<td style="width: 423px;">MATH 1190/1210, MATH 1220 </td>
+<td style="width: 247px;">MATH 1190/1210, 1220 </td>
+<td style="width: 423px;">MATH 1190/1210, 1220 </td>
 <td style="width: 159px;"></td>
 </tr>
 <tr>
@@ -96,11 +96,11 @@ MATH 1190/1210, MATH 1220
 <td style="width: 140px;">Calculus I &amp; II </td>
 <td style="width: 377px;">
 Calculus I &amp; II 
-3250 
+MATH 3250 
 </td>
 <td style="width: 247px;">
 Calculus I &amp; II 
-3350/3351 
+MATH 3350/3351 
 </td>
 <td style="width: 423px;">MATH 2310 </td>
 <td style="width: 159px;">MATH 3000/3310 </td>
