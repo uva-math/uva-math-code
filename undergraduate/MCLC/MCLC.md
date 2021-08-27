@@ -40,6 +40,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <h2 class="mb-4 mt-4">Schedule  </h2>
 
 <table cellpadding="6px" border="1px" cellspacing="0">
+ <thead style="background-color:coral;">
 <tbody>
 <tr>
 <th style="width: 51px;">Time</th>
@@ -47,7 +48,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <th style="width: 377px;">Monday</th>
 <th style="width: 247px;">Tuesday</th>
 <th style="width: 423px;">Wednesday</th>
-<th style="width: 159px;">Thursday</th>
+<th style="width: 259px;">Thursday</th>
 </tr>
 <tr>
 <td style="width: 51px;">1-2</td>
