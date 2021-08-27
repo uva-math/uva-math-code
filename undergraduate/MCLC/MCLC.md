@@ -39,72 +39,85 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 
 <p> <h2 class="mb-4 mt-4">Schedule  </h2> (to be updated) </p>
 
-<table width="100%" border="1" cellspacing="2" cellpadding="2">
- <thead style="background-color:coral;">
-    <tr>
-    <th><b>Time</b></th>
-    <th><b>Sunday</b><br></th>
-    <th><b>Monday</b><br></th>
-    <th><b>Tuesday</b><br>
-    </th>
-    <th><b>Wednesday</b><br>
-    </th>
-    <th><b>Thursday</b><br>
-    </th>
-    </tr>
-  </thead> 
-  <tbody>    
-    <tr>
-    <td valign="top">7:00-8:30 p.m.<br>
-    </td>
-    <td valign="top">
-      <!--  <a href="https://virginia.zoom.us/j/93926417928?pwd=ZXVFd3pZbENmekFsY0pYNzUwdnJCdz09">Calculus I &amp; II </a><br> <!--S-->
-      <!--  <a href="https://virginia.zoom.us/j/97495239196?pwd=dkhQTnRMb1BzWWRGdGVhRHhoenVHUT09">Math 3350/3351</a> -->
-    </td>
-    <td valign="top">
-     <!--  <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Calculus I &amp; II</a><br> <!--M-->
-     <!-- <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Math 2310</a> <br>
-     <!--  <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Math 3000/3310</a> <br>
-     <!--  <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Math 3350/3351</a> -->
-    </td>
-   <td valign="top"> 
-        <!-- <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Calculus I &amp; II</a><br> <!--T-->
-        <!-- <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Math 2310/2315</a><br> -->
-        <!-- <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Math 3250</a><br> -->
-    </td>
-   <td valign="top">
-      <!--  <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Calculus I &amp; II </a><br> <!--W-->
-      <!--  <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Math 3000/3310</a><br> 
-        <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Math 3100</a><br> 
-        <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Math 3350/3351</a><br> -->
-    </td>
-    <td valign="top">
-      <!--  <a href="https://virginia.zoom.us/j/99985774187?pwd=a1hpVkFLcStmMHVUc2kwbGdrMFh3dz09">Calculus I &amp; II </a><br> <!--Th-->
-      <!-- <a href="https://virginia.zoom.us/j/99985774187?pwd=a1hpVkFLcStmMHVUc2kwbGdrMFh3dz09">Math 2310/2315</a><br> -->
-    </td>
-   </tr> 
-   <tr>
-    <td valign="top">8:30-10:00 p.m.<br>
-    </td>
-    <td valign="top">
-      <!--  <a href="https://virginia.zoom.us/j/93926417928?pwd=ZXVFd3pZbENmekFsY0pYNzUwdnJCdz09">Calculus I &amp; II</a><br> <!--S-->
-    </td>
-    <td valign="top">
-      <!--  <a href="https://virginia.zoom.us/j/98598946349?pwd=ZTRzZFNRbnI4bFNPMUtvcnBlOHU0Zz09">Calculus I &amp; II</a> <!--M-->
-    </td>
-    <td valign="top">
-       <!-- <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Calculus I &amp; II</a><br> <!--T-->
-        <a href="https://virginia.zoom.us/j/93382182796?pwd=dkd1R3N5ek1RV1NOL21EUVIwcTNwZz09">Math </a> 
-    </td>
-    <td valign="top">
-     <!-- <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Calculus I &amp; II</a><br> <!--W-->
-      <a href="https://virginia.zoom.us/j/96577182881?pwd=bVdadi9IdzBPYUpDemlxRW8xaXRaQT09">Math </a> 
-    </td>
-    <td valign="top">
-     <!-- <a href="https://virginia.zoom.us/j/99985774187?pwd=a1hpVkFLcStmMHVUc2kwbGdrMFh3dz09">Calculus I &amp; II </a> <!--Th--> 
-    </td>
-    </tr>
- </tbody>
+<table cellpadding="6px" border="1px" cellspacing="0">
+<tbody>
+<tr>
+<th style="width: 51px;">Time</th>
+<th style="width: 140px;">Sunday</th>
+<th style="width: 377px;">Monday</th>
+<th style="width: 247px;">Tuesday</th>
+<th style="width: 423px;">Wednesday</th>
+<th style="width: 159px;">Thursday</th>
+</tr>
+<tr>
+<td style="width: 51px;">1-2</td>
+<td style="width: 140px;"></td>
+<td style="width: 377px;"></td>
+<td style="width: 247px;"></td>
+<td style="width: 423px;"></td>
+<td style="width: 159px;">1310</td>
+</tr>
+<tr>
+<td style="width: 51px;">2-3</td>
+<td style="width: 140px;"></td>
+<td style="width: 377px;"></td>
+<td style="width: 247px;">1190/1210, 1220 (Julie)</td>
+<td style="width: 423px;">1190/1210, 1220 (Marco)</td>
+<td style="width: 159px;"></td>
+</tr>
+<tr>
+<td style="width: 51px;">3-4</td>
+<td style="width: 140px;"></td>
+<td style="width: 377px;"></td>
+<td style="width: 247px;">1310, 1320 (Julie)</td>
+<td style="width: 423px;">1310, 1320 (Marco)</td>
+<td style="width: 159px;"></td>
+</tr>
+<tr>
+<td style="width: 51px;">4-5</td>
+<td style="width: 140px;">3000/3310 (David)</td>
+<td style="width: 377px;">Calculus I &amp; II (Julie - Jim is going to cover 1320)</td>
+<td style="width: 247px;"></td>
+<td style="width: 423px;">1220 (Evangelos)</td>
+<td style="width: 159px;">
+1190/1210
+1220
+</td>
+</tr>
+<tr>
+<td style="width: 51px;"></td>
+<td style="width: 140px;"></td>
+<td style="width: 377px;"></td>
+<td style="width: 247px;"></td>
+<td style="width: 423px;"></td>
+<td style="width: 159px;"></td>
+</tr>
+<tr>
+<td style="width: 51px;">7-8:15</td>
+<td style="width: 140px;">Calculus I &amp; II (Sam, Harrison)</td>
+<td style="width: 377px;">
+Calculus I &amp; II (Casia)
+3250 (Sam)
+</td>
+<td style="width: 247px;">
+Calculus I &amp; II (Harisson, Marco)
+3350/3351 (David)
+</td>
+<td style="width: 423px;">2310 (Casia)</td>
+<td style="width: 159px;">3000/3310 (David)</td>
+</tr>
+<tr>
+<td style="width: 51px;">8:15-9:30</td>
+<td style="width: 140px;"></td>
+<td style="width: 377px;">Calculus I &amp; II (Casia)</td>
+<td style="width: 247px;"></td>
+<td style="width: 423px;">
+3350/3351 (Casia)
+3100 (Sam)
+</td>
+<td style="width: 159px;"></td>
+</tr>
+</tbody>
 </table>
 
 
