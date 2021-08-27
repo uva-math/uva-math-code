@@ -44,7 +44,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <tbody>
 <tr>
 <th style="width: 51px;">Time</th>
-<th style="width: 140px;">Sunday</th>
+<th style="width: 240px;">Sunday</th>
 <th style="width: 377px;">Monday</th>
 <th style="width: 247px;">Tuesday</th>
 <th style="width: 423px;">Wednesday</th>
@@ -97,7 +97,7 @@ MATH 1190/1210, 1220
 <td style="width: 51px;">7-8:15</td>
 <td style="width: 140px;">Calculus I &amp; II </td>
 <td style="width: 377px;">
-Calculus I &amp; II 
+Calculus I &amp; II <br>
 MATH 3250 
 </td>
 <td style="width: 247px;">
