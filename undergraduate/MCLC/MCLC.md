@@ -55,33 +55,33 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 51px;">1-2</td>
 <td style="width: 240px;"></td>
 <td style="width: 377px;"></td>
-<td style="width: 247px;"></td>
-<td style="width: 423px;"></td>
-<td style="width: 159px;">MATH 1310</td>
+<td style="width: 377px;"></td>
+<td style="width: 377px;"></td>
+<td style="width: 259px;">MATH 1310</td>
 </tr>
 <tr>
 <td style="width: 51px;">2-3</td>
 <td style="width: 240px;"></td>
 <td style="width: 377px;"></td>
-<td style="width: 247px;">MATH 1190/1210, 1220 </td>
-<td style="width: 423px;">MATH 1190/1210, 1220 </td>
-<td style="width: 159px;"></td>
+<td style="width: 377px;">MATH 1190/1210, 1220 </td>
+<td style="width: 377px;">MATH 1190/1210, 1220 </td>
+<td style="width: 259px;"></td>
 </tr>
 <tr>
 <td style="width: 51px;">3-4</td>
 <td style="width: 240px;"></td>
 <td style="width: 377px;"></td>
-<td style="width: 247px;">MATH 1310, 1320 </td>
-<td style="width: 423px;">MATH 1310, 1320 </td>
-<td style="width: 159px;"></td>
+<td style="width: 377px;">MATH 1310, 1320 </td>
+<td style="width: 377px;">MATH 1310, 1320 </td>
+<td style="width: 259px;"></td>
 </tr>
 <tr>
 <td style="width: 51px;">4-5</td>
 <td style="width: 240px;">MATH 3000/3310 </td>
 <td style="width: 377px;">Calculus I &amp; II </td>
-<td style="width: 247px;"></td>
-<td style="width: 423px;">MATH 1220 </td>
-<td style="width: 159px;">
+<td style="width: 377px;"></td>
+<td style="width: 377px;">MATH 1220 </td>
+<td style="width: 259px;">
 MATH 1190/1210, 1220
 </td>
 </tr>
@@ -89,9 +89,9 @@ MATH 1190/1210, 1220
 <td style="width: 51px;"></td>
 <td style="width: 240px;"></td>
 <td style="width: 377px;"></td>
-<td style="width: 247px;"></td>
-<td style="width: 423px;"></td>
-<td style="width: 159px;"></td>
+<td style="width: 377px;"></td>
+<td style="width: 377px;"></td>
+<td style="width: 259px;"></td>
 </tr>
 <tr>
 <td style="width: 51px;">7-8:15</td>
@@ -100,23 +100,23 @@ MATH 1190/1210, 1220
 Calculus I &amp; II <br>
 MATH 3250 
 </td>
-<td style="width: 247px;">
+<td style="width: 377px;">
 Calculus I &amp; II <br>
 MATH 3350/3351 
 </td>
-<td style="width: 423px;">MATH 2310 </td>
-<td style="width: 159px;">MATH 3000/3310 </td>
+<td style="width: 377px;">MATH 2310 </td>
+<td style="width: 259px;">MATH 3000/3310 </td>
 </tr>
 <tr>
 <td style="width: 51px;">8:15-9:30</td>
 <td style="width: 140px;"></td>
 <td style="width: 377px;">Calculus I &amp; II </td>
-<td style="width: 247px;"></td>
-<td style="width: 423px;">
+<td style="width: 377px;"></td>
+<td style="width: 377px;">
 MATH 3100 <br>
 MATH 3350/3351
 </td>
-<td style="width: 159px;"></td>
+<td style="width: 259px;"></td>
 </tr>
 </tbody>
 </table>
