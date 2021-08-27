@@ -55,33 +55,32 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 377px;"></td>
 <td style="width: 247px;"></td>
 <td style="width: 423px;"></td>
-<td style="width: 159px;">1310</td>
+<td style="width: 159px;">MATH 1310</td>
 </tr>
 <tr>
 <td style="width: 51px;">2-3</td>
 <td style="width: 140px;"></td>
 <td style="width: 377px;"></td>
-<td style="width: 247px;">1190/1210, 1220 (Julie)</td>
-<td style="width: 423px;">1190/1210, 1220 (Marco)</td>
+<td style="width: 247px;">MATH 1190/1210, MATH 1220 </td>
+<td style="width: 423px;">MATH 1190/1210, MATH 1220 </td>
 <td style="width: 159px;"></td>
 </tr>
 <tr>
 <td style="width: 51px;">3-4</td>
 <td style="width: 140px;"></td>
 <td style="width: 377px;"></td>
-<td style="width: 247px;">1310, 1320 (Julie)</td>
-<td style="width: 423px;">1310, 1320 (Marco)</td>
+<td style="width: 247px;">MATH 1310, 1320 </td>
+<td style="width: 423px;">MATH 1310, 1320 </td>
 <td style="width: 159px;"></td>
 </tr>
 <tr>
 <td style="width: 51px;">4-5</td>
-<td style="width: 140px;">3000/3310 (David)</td>
-<td style="width: 377px;">Calculus I &amp; II (Julie - Jim is going to cover 1320)</td>
+<td style="width: 140px;">MATH 3000/3310 </td>
+<td style="width: 377px;">Calculus I &amp; II </td>
 <td style="width: 247px;"></td>
-<td style="width: 423px;">1220 (Evangelos)</td>
+<td style="width: 423px;">MATH 1220 </td>
 <td style="width: 159px;">
-1190/1210
-1220
+MATH 1190/1210, MATH 1220
 </td>
 </tr>
 <tr>
@@ -94,22 +93,22 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </tr>
 <tr>
 <td style="width: 51px;">7-8:15</td>
-<td style="width: 140px;">Calculus I &amp; II (Sam, Harrison)</td>
+<td style="width: 140px;">Calculus I &amp; II </td>
 <td style="width: 377px;">
-Calculus I &amp; II (Casia)
-3250 (Sam)
+Calculus I &amp; II 
+3250 
 </td>
 <td style="width: 247px;">
-Calculus I &amp; II (Harisson, Marco)
-3350/3351 (David)
+Calculus I &amp; II 
+3350/3351 
 </td>
-<td style="width: 423px;">2310 (Casia)</td>
-<td style="width: 159px;">3000/3310 (David)</td>
+<td style="width: 423px;">MATH 2310 </td>
+<td style="width: 159px;">MATH 3000/3310 </td>
 </tr>
 <tr>
 <td style="width: 51px;">8:15-9:30</td>
 <td style="width: 140px;"></td>
-<td style="width: 377px;">Calculus I &amp; II (Casia)</td>
+<td style="width: 377px;">Calculus I &amp; II </td>
 <td style="width: 247px;"></td>
 <td style="width: 423px;">
 3350/3351 (Casia)
