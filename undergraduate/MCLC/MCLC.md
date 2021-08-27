@@ -53,7 +53,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
  </thead> 
 <tr>
 <td style="width: 51px;">1-2</td>
-<td style="width: 140px;"></td>
+<td style="width: 240px;"></td>
 <td style="width: 377px;"></td>
 <td style="width: 247px;"></td>
 <td style="width: 423px;"></td>
@@ -61,7 +61,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </tr>
 <tr>
 <td style="width: 51px;">2-3</td>
-<td style="width: 140px;"></td>
+<td style="width: 240px;"></td>
 <td style="width: 377px;"></td>
 <td style="width: 247px;">MATH 1190/1210, 1220 </td>
 <td style="width: 423px;">MATH 1190/1210, 1220 </td>
@@ -69,7 +69,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </tr>
 <tr>
 <td style="width: 51px;">3-4</td>
-<td style="width: 140px;"></td>
+<td style="width: 240px;"></td>
 <td style="width: 377px;"></td>
 <td style="width: 247px;">MATH 1310, 1320 </td>
 <td style="width: 423px;">MATH 1310, 1320 </td>
@@ -77,7 +77,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </tr>
 <tr>
 <td style="width: 51px;">4-5</td>
-<td style="width: 140px;">MATH 3000/3310 </td>
+<td style="width: 240px;">MATH 3000/3310 </td>
 <td style="width: 377px;">Calculus I &amp; II </td>
 <td style="width: 247px;"></td>
 <td style="width: 423px;">MATH 1220 </td>
@@ -87,7 +87,7 @@ MATH 1190/1210, 1220
 </tr>
 <tr>
 <td style="width: 51px;"></td>
-<td style="width: 140px;"></td>
+<td style="width: 240px;"></td>
 <td style="width: 377px;"></td>
 <td style="width: 247px;"></td>
 <td style="width: 423px;"></td>
@@ -95,13 +95,13 @@ MATH 1190/1210, 1220
 </tr>
 <tr>
 <td style="width: 51px;">7-8:15</td>
-<td style="width: 140px;">Calculus I &amp; II </td>
+<td style="width: 240px;">Calculus I &amp; II </td>
 <td style="width: 377px;">
 Calculus I &amp; II <br>
 MATH 3250 
 </td>
 <td style="width: 247px;">
-Calculus I &amp; II 
+Calculus I &amp; II <br>
 MATH 3350/3351 
 </td>
 <td style="width: 423px;">MATH 2310 </td>
