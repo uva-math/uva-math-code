@@ -57,7 +57,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 377px;"></td>
 <td style="width: 377px;"></td>
 <td style="width: 377px;"></td>
-<td style="width: 259px;">MATH 1310</td>
+<td style="width: 377px;">MATH 1310</td>
 </tr>
 <tr>
 <td style="width: 51px;">2-3</td>
@@ -65,7 +65,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 377px;"></td>
 <td style="width: 377px;">MATH 1190/1210, 1220 </td>
 <td style="width: 377px;">MATH 1190/1210, 1220 </td>
-<td style="width: 259px;"></td>
+<td style="width: 377px;"></td>
 </tr>
 <tr>
 <td style="width: 51px;">3-4</td>
@@ -73,7 +73,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 377px;"></td>
 <td style="width: 377px;">MATH 1310, 1320 </td>
 <td style="width: 377px;">MATH 1310, 1320 </td>
-<td style="width: 259px;"></td>
+<td style="width: 377px;"></td>
 </tr>
 <tr>
 <td style="width: 51px;">4-5</td>
@@ -81,7 +81,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 377px;">Calculus I &amp; II </td>
 <td style="width: 377px;"></td>
 <td style="width: 377px;">MATH 1220 </td>
-<td style="width: 259px;">
+<td style="width: 377px;">
 MATH 1190/1210, 1220
 </td>
 </tr>
@@ -91,7 +91,7 @@ MATH 1190/1210, 1220
 <td style="width: 377px;"></td>
 <td style="width: 377px;"></td>
 <td style="width: 377px;"></td>
-<td style="width: 259px;"></td>
+<td style="width: 377px;"></td>
 </tr>
 <tr>
 <td style="width: 51px;">7-8:15</td>
@@ -105,7 +105,7 @@ Calculus I &amp; II <br>
 MATH 3350/3351 
 </td>
 <td style="width: 377px;">MATH 2310 </td>
-<td style="width: 259px;">MATH 3000/3310 </td>
+<td style="width: 377px;">MATH 3000/3310 </td>
 </tr>
 <tr>
 <td style="width: 51px;">8:15-9:30</td>
@@ -116,7 +116,7 @@ MATH 3350/3351
 MATH 3100 <br>
 MATH 3350/3351
 </td>
-<td style="width: 259px;"></td>
+<td style="width: 377px;"></td>
 </tr>
 </tbody>
 </table>
