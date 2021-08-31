@@ -1,12 +1,12 @@
 ---
-UVA_id: 
-lastname: last
-name: first
+UVA_id: muf5cz 
+lastname: Wills
+name: Michael
 general_position: gradstudent
 position: Graduate Student
-office: ??? Kerchof Hall
-phone: 
-email: empty@virginia.edu
+office: 401 Kerchof Hall
+phone: 924-0899 
+email: muf5cz@virginia.edu
 image: 
 personal_page:
 
