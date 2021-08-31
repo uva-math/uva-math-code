@@ -1,12 +1,12 @@
 ---
-UVA_id: 
-lastname: last
-name: first
+UVA_id: aus8ng
+lastname: Sanchez
+name: Eloisa
 general_position: gradstudent
-position: Graduate Student
-office: ??? Kerchof Hall
+position: Bridge to the Doctorate Student
+office: Kerchof Hall
 phone: 
-email: empty@virginia.edu
+email: aus8ng@virginia.edu
 image: 
 personal_page:
 
