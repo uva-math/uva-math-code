@@ -8,7 +8,7 @@ office: 401 Kerchof Hall
 phone: 434-924-0899 
 email: kxk2dr@virginia.edu
 image: 
-personal_page
+personal_page:
 
 
 ---
