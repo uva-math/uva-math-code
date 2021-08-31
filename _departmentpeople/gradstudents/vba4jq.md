@@ -1,12 +1,12 @@
 ---
-UVA_id: 
-lastname: last
-name: first
+UVA_id: vba4jq
+lastname: Wang
+name: Biying
 general_position: gradstudent
 position: Graduate Student
-office: ??? Kerchof Hall
-phone: 
-email: empty@virginia.edu
+office: 110 Kerchof Hall
+phone: 924-4947 
+email: vba4jq@virginia.edu
 image: 
 personal_page:
 
