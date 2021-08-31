@@ -1,12 +1,12 @@
 ---
-UVA_id: 
-lastname: last
-name: first
+UVA_id: czj9zj
+lastname: Melo
+name: Luz
 general_position: gradstudent
-position: Graduate Student
-office: ??? Kerchof Hall
+position: Bridge to the Doctorate Student
+office:  Kerchof Hall
 phone: 
-email: empty@virginia.edu
+email: czj9zj@virginia.edu
 image: 
 personal_page:
 
