@@ -39,90 +39,90 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 
 <h2 class="mb-4 mt-4">Schedule  </h2>
 
-<table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 181px; width: 1683px;">
+<table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 353px; width: 1236px;">
 <thead style="background-color: coral; text-align: center;">
 <tr style="text-align: center; height: 19px;">
-<th style="width: 75.9375px; height: 19px;">Time</th>
-<th style="width: 188.672px; height: 19px;">Sunday</th>
-<th style="width: 240.688px; height: 19px;">Monday</th>
-<th style="width: 297.016px; height: 19px;">Tuesday</th>
-<th style="width: 280.406px; height: 19px;">Wednesday</th>
-<th style="width: 254.578px; height: 19px;">Thursday</th>
-<th style="width: 248.234px;">Friday</th>
+<th style="width: 78.1875px; height: 19px;">Time</th>
+<th style="width: 165.359px; height: 19px;">Sunday</th>
+<th style="width: 175.375px; height: 19px;">Monday</th>
+<th style="width: 177.391px; height: 19px;">Tuesday</th>
+<th style="width: 179.391px; height: 19px;">Wednesday</th>
+<th style="width: 183.391px; height: 19px;">Thursday</th>
+<th style="width: 173.438px; height: 19px;">Friday</th>
 </tr>
 </thead>
 <tbody>
 <tr style="height: 19px;">
-<td style="width: 75.9375px; height: 19px; text-align: center;">1-2</td>
-<td style="width: 188.672px; height: 19px;"></td>
-<td style="width: 240.688px; height: 19px;"></td>
-<td style="width: 297.016px; height: 19px;">MATH 1220</td>
-<td style="width: 280.406px; height: 19px;"></td>
-<td style="width: 254.578px; height: 19px;">MATH 1190/1210, 1310</td>
-<td style="width: 248.234px;"></td>
+<td style="width: 78.1875px; height: 19px; text-align: center;">1-2</td>
+<td style="width: 165.359px; height: 19px;"></td>
+<td style="width: 175.375px; height: 19px;"></td>
+<td style="width: 177.391px; height: 19px;">MATH 1220</td>
+<td style="width: 179.391px; height: 19px;"></td>
+<td style="width: 183.391px; height: 19px;">MATH 1190/1210, 1310</td>
+<td style="width: 173.438px; height: 19px;"></td>
 </tr>
 <tr style="height: 19px;">
-<td style="width: 75.9375px; height: 19px; text-align: center;">2-3</td>
-<td style="width: 188.672px; height: 19px;"></td>
-<td style="width: 240.688px; height: 19px;"></td>
-<td style="width: 297.016px; height: 19px;">MATH 1190/1210, 1220</td>
-<td style="width: 280.406px; height: 19px;">MATH 1190/1210, 1220</td>
-<td style="width: 254.578px; height: 19px;">MATH 1190/1210</td>
-<td style="width: 248.234px;"></td>
+<td style="width: 78.1875px; height: 10px; text-align: center;">2-3</td>
+<td style="width: 165.359px; height: 10px;"></td>
+<td style="width: 175.375px; height: 10px;"></td>
+<td style="width: 177.391px; height: 10px;">MATH 1190/1210, 1220</td>
+<td style="width: 179.391px; height: 10px;">MATH 1190/1210, 1220</td>
+<td style="width: 183.391px; height: 10px;">MATH 1190/1210</td>
+<td style="width: 173.438px; height: 10px;">MATH 1190/1210</td>
 </tr>
 <tr style="height: 19px;">
-<td style="width: 75.9375px; height: 19px; text-align: center;">3-4</td>
-<td style="width: 188.672px; height: 19px;"></td>
-<td style="width: 240.688px; height: 19px;"></td>
-<td style="width: 297.016px; height: 19px;">MATH 1310, 1320</td>
-<td style="width: 280.406px; height: 19px;">MATH 1310, 1320</td>
-<td style="width: 254.578px; height: 19px;"></td>
-<td style="width: 248.234px;"></td>
+<td style="width: 78.1875px; height: 19px; text-align: center;">3-4</td>
+<td style="width: 165.359px; height: 19px;"></td>
+<td style="width: 175.375px; height: 19px;"></td>
+<td style="width: 177.391px; height: 19px;">MATH 1310, 1320</td>
+<td style="width: 179.391px; height: 19px;">MATH 1310, 1320</td>
+<td style="width: 183.391px; height: 19px;"></td>
+<td style="width: 173.438px; height: 19px;"></td>
 </tr>
 <tr style="height: 19px;">
-<td style="width: 75.9375px; height: 19px; text-align: center;">4-5</td>
-<td style="width: 188.672px; height: 19px;">MATH 3000/3310</td>
-<td style="width: 240.688px; height: 19px;">MATH 1320</td>
-<td style="width: 297.016px; height: 19px;"></td>
-<td style="width: 280.406px; height: 19px;">MATH 1220</td>
-<td style="width: 254.578px; height: 19px;">MATH 1190/1210, 1220</td>
-<td style="width: 248.234px;"></td>
+<td style="width: 78.1875px; height: 19px; text-align: center;">4-5</td>
+<td style="width: 165.359px; height: 19px;">MATH 3000/3310</td>
+<td style="width: 175.375px; height: 19px;">MATH 1320</td>
+<td style="width: 177.391px; height: 19px;"></td>
+<td style="width: 179.391px; height: 19px;">MATH 1220</td>
+<td style="width: 183.391px; height: 19px;">MATH 1190/1210, 1220</td>
+<td style="width: 173.438px; height: 19px;"></td>
 </tr>
-<tr>
-<td style="width: 75.9375px; text-align: center;">5-6</td>
-<td style="width: 188.672px;"></td>
-<td style="width: 240.688px;"></td>
-<td style="width: 297.016px;"></td>
-<td style="width: 280.406px;"></td>
-<td style="width: 254.578px;">MATH 1320</td>
-<td style="width: 248.234px;"></td>
+<tr style="height: 19px;">
+<td style="width: 78.1875px; text-align: center; height: 19px;">5-6</td>
+<td style="width: 165.359px; height: 19px;"></td>
+<td style="width: 175.375px; height: 19px;"></td>
+<td style="width: 177.391px; height: 19px;"></td>
+<td style="width: 179.391px; height: 19px;"></td>
+<td style="width: 183.391px; height: 19px;">MATH 1320 (may start 5                      min late)</td>
+<td style="width: 173.438px; height: 19px;"></td>
 </tr>
 <tr style="height: 10px;">
-<td style="width: 75.9375px; height: 10px;"></td>
-<td style="width: 188.672px; height: 10px;"></td>
-<td style="width: 240.688px; height: 10px;"></td>
-<td style="width: 297.016px; height: 10px;"></td>
-<td style="width: 280.406px; height: 10px;"></td>
-<td style="width: 254.578px; height: 10px;"></td>
-<td style="width: 248.234px;"></td>
+<td style="width: 78.1875px; height: 10px;"></td>
+<td style="width: 165.359px; height: 10px;"></td>
+<td style="width: 175.375px; height: 10px;"></td>
+<td style="width: 177.391px; height: 10px;"></td>
+<td style="width: 179.391px; height: 10px;"></td>
+<td style="width: 183.391px; height: 10px;"></td>
+<td style="width: 173.438px; height: 10px;"></td>
 </tr>
 <tr style="height: 38px;">
-<td style="width: 75.9375px; height: 38px; text-align: center;">7-8:15</td>
-<td style="width: 188.672px; height: 38px;">Calculus I &amp; II</td>
-<td style="width: 240.688px; height: 38px;">Calculus I &amp; II <br />MATH 3250</td>
-<td style="width: 297.016px; height: 38px;">Calculus I &amp; II <br /><br /></td>
-<td style="width: 280.406px; height: 38px;">MATH 2310</td>
-<td style="width: 254.578px; height: 38px;">MATH 3000/3310</td>
-<td style="width: 248.234px;"></td>
+<td style="width: 78.1875px; height: 38px; text-align: center;">7-8:15</td>
+<td style="width: 165.359px; height: 38px;">Calculus I &amp; II</td>
+<td style="width: 175.375px; height: 38px;">Calculus I &amp; II <br />MATH 3250</td>
+<td style="width: 177.391px; height: 38px;">Calculus I &amp; II <br /><br /></td>
+<td style="width: 179.391px; height: 38px;">MATH 2310</td>
+<td style="width: 183.391px; height: 38px;">MATH 3000/3310</td>
+<td style="width: 173.438px; height: 38px;"></td>
 </tr>
 <tr style="height: 38px;">
-<td style="width: 75.9375px; height: 38px; text-align: center;">8:15-9:30</td>
-<td style="width: 188.672px; height: 38px;"></td>
-<td style="width: 240.688px; height: 38px;">Calculus I &amp; II</td>
-<td style="width: 297.016px; height: 38px;">MATH 3350/3351</td>
-<td style="width: 280.406px; height: 38px;">MATH 3100 <br />MATH 3350/3351</td>
-<td style="width: 254.578px; height: 38px;"></td>
-<td style="width: 248.234px;"></td>
+<td style="width: 78.1875px; height: 38px; text-align: center;">8:15-9:30</td>
+<td style="width: 165.359px; height: 38px;"></td>
+<td style="width: 175.375px; height: 38px;">Calculus I &amp; II</td>
+<td style="width: 177.391px; height: 38px;">MATH 3350/3351</td>
+<td style="width: 179.391px; height: 38px;">MATH 3100 <br />MATH 3350/3351</td>
+<td style="width: 183.391px; height: 38px;"></td>
+<td style="width: 173.438px; height: 38px;"></td>
 </tr>
 </tbody>
 </table>
