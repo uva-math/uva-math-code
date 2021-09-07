@@ -8,7 +8,7 @@ office: 303 Kerchof Hall
 phone: 
 email: waj9cr@virginia.edu
 image: 
-personal_page: 
+personal_page: https://pengitore.weebly.com  
 
 areas:
 
