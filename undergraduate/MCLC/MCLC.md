@@ -37,6 +37,8 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <!-- <p style="font-size:120%;color:coral;"> If you have joined an MCLC session this semester please take a couple of minutes to complete this 
 <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_5alk5LpaWdFUWqy">survey</a>. We appreciate your feedback. </p> -->
 
+<p style="font-size:120%;color:red;"> Shifts in red will NOT be held this current week. </p>
+
 <h2 class="mb-4 mt-4">Schedule  </h2>
 
 <table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 353px; width: 1236px;">
@@ -65,7 +67,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 78.1875px; height: 10px; text-align: center;">2-3</td>
 <td style="width: 165.359px; height: 10px;"></td>
 <td style="width: 175.375px; height: 10px;"></td>
-<td style="width: 177.391px; height: 10px;">MATH 1190/1210, 1220</td>
+<td style="width: 177.391px; height: 10px;color:Red;">MATH 1190/1210, 1220</td>
 <td style="width: 179.391px; height: 10px;">MATH 1190/1210, 1220</td>
 <td style="width: 183.391px; height: 10px;">MATH 1190/1210</td>
 <td style="width: 173.438px; height: 10px;">MATH 1190/1210</td>
