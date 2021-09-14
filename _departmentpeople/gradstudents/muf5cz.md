@@ -7,7 +7,7 @@ position: Graduate Student
 office: 401 Kerchof Hall
 phone: 924-0899 
 email: muf5cz@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2021-fall/Wills_M.jpg 
 personal_page:
 
 ---
