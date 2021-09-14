@@ -7,7 +7,7 @@ position: Graduate Student
 office: 127 Kerchof Hall
 phone:  
 email: rsx5wp@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2021-fall/Park_J.jpg 
 personal_page:
 
 ---
