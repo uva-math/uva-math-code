@@ -7,7 +7,7 @@ position: Marvin Rosenblum Professor
 office: 231 Kerchof Hall
 phone: 434-924-4946
 email: huneke@virginia.edu
-image: __SITE_URL__/img/people/Huneke_C.jpg
+image: __SITE_URL__/img/people/2021-fall/Huneke_C.jpg
 personal_page: http://faculty.virginia.edu/huneke/
 
 grad_general_areas:
