@@ -7,7 +7,7 @@ position: RTG Research Associate and Lecturer
 office: 301 Kerchof Hall
 phone: 
 email: eqr8nm@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2021-fall/Balderrama_W.jpg 
 personal_page: 
 
 areas:
