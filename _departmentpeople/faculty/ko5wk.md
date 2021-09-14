@@ -5,7 +5,7 @@ name: Ken
 general_position: faculty
 position: Thomas Jefferson Professor of Mathematics and Chair
 office: 228 Kerchof Hall 
-phone: 434-924-4911
+phone: 434-924-4933
 email: ko5wk@virginia.edu
 image: __SITE_URL__/img/people/Ono-tn.jpg
 personal_page: https://uva.theopenscholar.com/ken-ono
