@@ -7,7 +7,7 @@ position: Professor Emeritus
 office: 202 Kerchof Hall
 phone: 434-924-4924
 email: cfd5z@virginia.edu
-image: __SITE_URL__/img/people/Dunkl.jpg
+image: __SITE_URL__/img/people/Dunkl_C.jpg
 personal_page: https://uva.theopenscholar.com/charles-dunkl/
 
 areas:
