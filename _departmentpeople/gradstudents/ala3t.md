@@ -7,7 +7,7 @@ position: Bridge to the Doctorate Student
 office: 
 phone: 
 email: ala3t@virginia.edu
-image:
+image: __SITE_URL__/img/people/2021-fall/Avalos_A.jpg
 personal_page: 
 
 ---
