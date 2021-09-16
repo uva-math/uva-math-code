@@ -7,10 +7,10 @@ permalink: /ims/lectures/curtis-mcmullen/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
-image: __SITE_URL__/img/IMS/McMullen.jpeg
-image-alt: Curtis McMullen
-# image-tall: true
-# image-address: __SITE_URL__/img/IMS/Lawler_poster.pdf
+image: __SITE_URL__/img/IMS/McMullen_poster.png
+image-alt: Curtis McMullen Poster
+image-tall: true
+image-address: __SITE_URL__/img/IMS/McMullen_poster.pdf
 # more-text: Lectures and abstracts
 nav_parent: IMS
 ---
