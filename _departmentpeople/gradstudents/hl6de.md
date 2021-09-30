@@ -7,7 +7,7 @@ position: 4+1
 office:  
 phone:  
 email: hl6dew@virginia.edu
-image: __SITE_URL__/img/people/2021-fall/
+image: __SITE_URL__/img/people/2021-fall/Li.jpg
 personal_page: 
 
 ---
