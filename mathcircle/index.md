@@ -8,7 +8,11 @@ nav_weight: 1011
 
 # UVA Math Circle
 
-<img src="{{site.url}}/img/MathCircle-collage.jpg" style="max-width:100%" class="mt-3 mb-4" alt="Math circle collage">
+<img src="{{site.url}}/img/MathCircle-collage.jpg" style="max-width:100%" class="mt-3" alt="Math circle collage">
+
+<div style="font-size: 12px">Photo courtesy of Molly Angevine / A&S Communications Coordinator</div>
+
+<br>
 
 The Math Circle is a Fall program for elementary and middle school students from Charlottesville area schools, taking place on UVa grounds.
 
