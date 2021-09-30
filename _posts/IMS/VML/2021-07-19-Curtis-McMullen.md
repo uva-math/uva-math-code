@@ -5,7 +5,7 @@ event-date: 2021-11-08 16:00:00
 multi-day-event: true
 permalink: /ims/lectures/curtis-mcmullen/
 comments: false
-categories: news virginia-mathematics-lectures ims events 
+categories: news virginia-mathematics-lectures ims events major-news
 published: true
 image: __SITE_URL__/img/IMS/McMullen_poster.png
 image-alt: Curtis McMullen Poster
