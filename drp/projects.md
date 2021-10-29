@@ -6,6 +6,53 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Fall 2021
+
++ Geometric Group Theory
+   - Text: Office Hours with a Geometric Group Theorist, Clay and Margalit
+   - Mentee: Olivia Goodrich
+   - Mentor: Alec Traaseth
+
++ The Congruent Number Problem
+   - Text: Introduction to Elliptic Curves and Modular Forms, Koblitz
+   - Mentee: Catherine Cossaboom
+   - Mentor: Will Craig
+
++ Brownian Motion and Stochastic Differential Equations
+   - Text: Probability: Theory and Examples, Durrett
+   - Mentee: Jeremy Nachison
+   - Mentor: Don Phillips
+
++ Point Set Topology
+   - Text: Introduction to Topology, Baker
+   - Mentee: Liran Li
+   - Mentor: Shunyu Wan
+
++ A Survey of Galois Theory
+   - Text: A Book of Abstract Algebra, Pinter
+   - Mentee: Yunsheng Lu
+   - Mentor: Matt McCarthy
+
++ Finite Dimensional Lie algebras and their Root Systems
+   - Text: Lie Algebras of Finite and Affine Type, Carter
+   - Mentee: Alex Emmert
+   - Mentor: Weinan Zhang
+
++ Möbius Inversion and Cyclotomic Polynomials
+   - Text: Generating Functionology, Wilf
+   - Mentee: Michael Walker
+   - Mentor: Joe Webster
+
++ The Fundamental Group of a Knot Complement
+   - Texts: The Knot Book, Adams
+   - Mentee: Donovan Cates
+   - Mentor: Louisa Liles
+
++ Cryptographic Hash Functions from Expander Graphs
+   - Text: Introduction to Modern Cryptography, Katz and Lindell
+   - Mentee: Eli Kin
+   - Mentor: Neelav Dutta
+
 ### Spring 2021
 
 + Hilbert's Nullstellensatz
@@ -24,7 +71,7 @@ permalink: /drp/projects/
    - Mentor: Mojdeh Tarighat
 
 + Grid Homology 
-   - Text: Grid Homology for Knots and Links by Ozsváth, Stipsicz, and Szabó
+   - Text: Grid Homology for Knots and Links, Ozsváth, Stipsicz, and Szabó
    - Mentee: Nick Cooney
    - Mentor: Peter Johnson
 
@@ -37,6 +84,7 @@ permalink: /drp/projects/
    - Mentor: Will Craig
    
 + Group Theory and Rubik's Cube
+   - Text: Notes of Janet Chen
    - Mentee: Sabrina Fuller
    - Mentor: Alec Traaseth
    
@@ -94,7 +142,7 @@ permalink: /drp/projects/
 ### Spring 2019
 
 + Gröbner bases and applications in characteristic p
-  - Text: Ideals, Varieties, and Algorithms: An Introduction to Computational Algebraic Geometry and Commutative Algebra, David A.Cox, Donal O'Shea, and John B. Little.
+  - Text: Ideals, Varieties, and Algorithms: An Introduction to Computational Algebraic Geometry and Commutative Algebra, Cox, O'Shea, and Little
   - Mentee: Abrar Majidi Idrissi
   - Mentor: Huy Dang
 
@@ -104,12 +152,12 @@ permalink: /drp/projects/
   - Mentor: Arun Kannan
 
 + The Geometry of Free Groups
-  - Text: Geometric Group Theory: An Introduction, Clara Loeh
+  - Text: Geometric Group Theory: An Introduction, Loeh
   - Mentee: Katherine Andrews
   - Mentor: Ian Runnels
 
 + Hamiltonian ODEs: Deterministic and probabilistic studies
-  - Text: ODEs and Dynamical Systems, Gerald Teschl
+  - Text: ODEs and Dynamical Systems, Teschl
   - Mentee: Yunlu Li
   - Mentor: Mouhamadou Sy
 
@@ -136,27 +184,27 @@ permalink: /drp/projects/
 ### Fall 2018
   
 + Support vector machines and kernel methods    
-  - Text: Foundations of Machine Learning by Mohri, Rostamizadeh, and Talwalkar
+  - Text: Foundations of Machine Learning, Mohri, Rostamizadeh, and Talwalkar
   - Mentee: Dylan Hunt
   - Mentor: George Seelinger
 
-+ All groups can be realized as a fundamental group   
++ All Groups can be Realized as a Fundamental Group   
   - Text: Algebraic Topology, Hatcher
   - Mentee: Kyle Hoffmann
   - Mentor: John Harnois
 
-+ Topological proof of the Nielsen-Schreier Theorem (a subgroup of a
++ Topological Proof of the Nielsen-Schreier Theorem (a subgroup of a
   free group is free)
   - Text: Algebraic Topology, Hatcher
   - Mentee: Mia Shaker
   - Mentor: Chris Lloyd
 
-+ Difference between algebraic bases and Schauder bases
++ Difference Between Algebraic Bases and Schauder Bases
   - Text: Real Analysis: Modern Techniques and Their Applications, Folland
   - Mentee: Yifei Yang
   - Mentor: Joseph Eisner
 
-+ Wirtinger presentations of fundamental groups of knot complements 
++ Wirtinger Presentations of Fundamental Groups of Knot Complements 
   - Text: Algebraic Topology, Hatcher
   - Mentee: Zach Baugher
   - Mentor: Rostislav Akhmechet
@@ -168,13 +216,13 @@ permalink: /drp/projects/
   - Mentee: Sam Dulin
   - Mentor: Ian Runnels
 
-+ Constructing hyperbolic structures on closed surfaces (of genus g)
++ Constructing Hyperbolic Structures on Closed Surfaces (of genus g)
   - Text: Low-dimensional geometry: from euclidean surfaces to hyperbolic knots, Bonahon
   - Mentee: Andrew Zazzera
   - Mentor: Jiajun Yan
   
 + Brownian Motion and its Applications
-  - Text: Brownian Motion by Peter Morters and Yuval Peres
+  - Text: Brownian Motion, Peter Morters and Yuval Peres
   - Mentee: Xinru Cheng
   - Mentor: Ethan Zell
   
