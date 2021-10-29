@@ -33,9 +33,7 @@ Graduate students in topology are supported by the NSF RTG grant. See the [RTG p
 
 <p>Candidates nominated by the various University departments are invited by the Foundation to attend a selection competition conducted in late February which lasts a couple days and includes lectures by University faculty and administrators, meetings with faculty and students, and a formal interview.</p>
 
-<p><em>Mathematics graduate program applicants who think they might be good candidates for one these fellowships, and for whom this program seems intriguing, should indicate this in their application personal statement.</em></p>
-
-<p>For more information about this see&nbsp; <a href="http://www.jeffersonscholars.org/fellowship"><code class="highlighter-rouge">http://www.jeffersonscholars.org/fellowship</code></a>.</p>
+<p>For more information about this see&nbsp; <a href=" https://www.jeffersonscholars.org/jefferson-fellowship"><code class="highlighter-rouge"> https://www.jeffersonscholars.org/jefferson-fellowship</code></a>.</p>
 
 
 <h1 class="mb-3">Funding opportunities for current graduate students</h1>
@@ -43,18 +41,6 @@ Graduate students in topology are supported by the NSF RTG grant. See the [RTG p
 ---
 
 <h2 class="mb-3">Internal funding</h2>
-
-
-### Huskey Travel Grants
-
-Huskey travel grants provide up to $500 per year for students to attend conferences and workshops.
-
-These grants are decided on rolling three month windows. To apply, send
-- Conference or workshop name and dates of travel
-- Title of any work you are presenting
-- Estimated expenses
-
-to {% include person_info_email_only.html UVA_id="jeb2md" %}
 
 
 ### Departmental Money

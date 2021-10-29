@@ -14,17 +14,17 @@ tooltips: true
 - ##### Director of Undergraduate Studies:<br>
 {% include DUS.html UVA_id="hcg3m" %}
 <!-- {% include DUS.html UVA_id="iwh" %} -->
+- ##### Director of Lower Division Courses:<br>
+{% include person_info_email_only.html UVA_id="jsr2pz" %}
 
 - <h5>{% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinator:</h5>
-<!-- {% include person_info_email_only.html UVA_id="psb7p" %} -->
-Matt Demers
+{% include person_info_email_only.html UVA_id="zka4tz" %}
 
 - <h5>{% include course number=1220 code=false %} Coordinator:</h5>
 {% include person_info_email_only.html UVA_id="ed8bg" %}
 
 - <h5>{% include course number=1310 code=false %} Coordinator:</h5>
-<!-- {% include person_info_email_only.html UVA_id="psb7p" %} -->
-Daniel James
+{% include person_info_email_only.html UVA_id="hdj4nd" %}
 
 - <h5>{% include course number=1320 code=false %} Coordinator:</h5>
 {% include person_info_email_only.html UVA_id="ds5nd" %}
@@ -34,11 +34,10 @@ Daniel James
 <!-- <br class="hidden-sm-up">{% include person_info_email_only.html UVA_id="iwh" %}  -->
 
 - ##### To Declare a Major/Minor:<br>
-{% include person_info_email_only.html UVA_id="pa8e" %} (Last name begins with letter A-E)<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="yqd3p" %} (Last name begins with letter F-J)<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="clh4xd" %} (Last name begins with letter K-O)<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="zg7c" %} (Last name begins with letter P-T)<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="njk4x" %} (Last name begins with letter U-Z)
+
+{% include major_intake.md%}
+
+- See [this page]({{site.url}}/undergraduate/requirements/) for forms.
 
 - ##### Math Majors/Minors Administrative Assistant:<br>
 {% include person_info_email_only.html UVA_id="aab8b" %}
@@ -58,9 +57,11 @@ Daniel James
 - ##### Ombudsman:<br>
 {% include person_info_email_only.html UVA_id="pa8e" %}
 
-- ##### Collaborative Learning Center:<br>
+- ##### Math Collaborative Learning Center:<br>
 {% include person_info_email_only.html UVA_id="ed8bg" %}
 
+- ##### Director of Cavalier Online Experiences (CONEX):<br>
+{% include person_info_email_only.html UVA_id="jsr2pz" %}
 - ##### Summer Session:<br>
 {% include person_info_email_only.html UVA_id="pa8e" %}
 

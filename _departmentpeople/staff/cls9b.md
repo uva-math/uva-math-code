@@ -9,6 +9,6 @@ phone: 434-924-7806
 email: cls9b@virginia.edu
 image: 
 personal_page:
-
+published: false
 
 ---

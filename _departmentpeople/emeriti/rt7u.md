@@ -8,7 +8,7 @@ office:
 phone:
 email: rt7u@virginia.edu
 image: __SITE_URL__/img/people/Triggiani.jpg
-personal_page:
+personal_page: https://www.memphis.edu/msci/people/rtrggani.php
 
 
 ---

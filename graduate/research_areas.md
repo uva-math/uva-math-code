@@ -11,16 +11,16 @@ nav_weight: 2
 
 <h1 class="mb-3">Research areas</h1>
 
- The Mathematics Department at the University of Virginia offers graduate students the opportunity to do research in a wide range of specialties. To help students with the daunting task of planning their multi-year program, in this guide we describe standard routes through the main research areas that students can currently pursue. We expect most students to follow one of these paths.
+The Mathematics Department at the University of Virginia offers graduate students the opportunity to do research in a wide range of specialties. To help students with the daunting task of planning their multi-year program, in this guide we describe standard routes through the main research areas that students can currently pursue. We expect most students to follow one of these paths.
 
- For convenience, we have grouped these within Programs in Algebra, Analysis, Topology, and the History of Mathematics. However, it is to be emphasized that there is much interaction between these, and a course of study might easily fall between areas. Furthermore, research areas undergo constant change due to changing faculty and student interests, and to new faculty joining the Department. Finally, there are a number of possible courses of study not listed here that may involve collaboration with faculty from other departments.
+For convenience, we have grouped these within Programs in Algebra, Analysis, Topology, and the History of Mathematics. However, it is to be emphasized that there is much interaction between these, and a course of study might easily fall between areas. Furthermore, research areas undergo constant change due to changing faculty and student interests, and to new faculty joining the Department. Finally, there are a number of possible courses of study not listed here that may involve collaboration with faculty from other departments.
 
 ---
 
-<h2>1 Graduate Program in Algebra</h2>
+<h2>1 Algebra</h2>
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "algebra" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "algebra" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
 Graduate research in algebra is organized into the following areas:
 - Linear and Arithmetic Groups and Associated Structures
@@ -29,11 +29,9 @@ Graduate research in algebra is organized into the following areas:
 - Algebraic Combinatorics
 - Number Theory
 
-
-
 <h3>1.1 Core Courses and Requirements in Algebra</h3>
 
- The following is the list of basic, graduate courses in algebra prerequisite for students intending to pursue studies in algebra:
+The following is the list of basic, graduate courses in algebra prerequisite for students intending to pursue studies in algebra:
 
 #### First Year
 
@@ -44,7 +42,7 @@ Graduate research in algebra is organized into the following areas:
 #### Second Year
 
 - _First Semester:_ MATH 7753 Algebra III (algebras over a field, Artin-Wedderburn theory and the Jacobson radical, applications to representation theory) and MATH 9950 Algebra Seminar.
-- _Second Semester:_ MATH 7754 Algebra IV (topics in algebra) and MATH 950 Algebra Seminar
+- _Second Semester:_ MATH 7754 Algebra IV (topics in algebra) and MATH 9950 Algebra Seminar
 
 Students also take one additional algebra course in one of the two semesters.
 
@@ -67,9 +65,9 @@ In the second year, students take the Second-Year Proficiency Exam, which, in al
 <h3>1.2 Linear and Arithmetic Groups and Associated Structures</h3>
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "groups" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "groups" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
- Research in this area focuses on structural, combinatorial and homological properties of linear groups over general rings with a special emphasis on arithmetic rings (i.e., the rings of <em>S</em>-integers in global fields). Topics include the normal subgroup structure of the groups of rational points of algebraic groups and of their important subgroups, finiteness properties of arithmetic groups in positive characteristic, the rigidity of representations of finitely generated groups and building theory, in particular, group actions on spherical, affine, and twin buildings. The work in this area requires methods of the theory of algebraic groups, algebraic number theory, homological algebra, and combinatorial geometry/topology.
+Research in this area focuses on structural, combinatorial and homological properties of linear groups over general rings with a special emphasis on arithmetic rings (i.e., the rings of <em>S</em>-integers in global fields). Topics include the normal subgroup structure of the groups of rational points of algebraic groups and of their important subgroups, finiteness properties of arithmetic groups in positive characteristic, the rigidity of representations of finitely generated groups and building theory, in particular, group actions on spherical, affine, and twin buildings. The work in this area requires methods of the theory of algebraic groups, algebraic number theory, homological algebra, and combinatorial geometry/topology.
 
 #### Recommended Advanced Courses
 
@@ -79,7 +77,7 @@ MATH 7600 Homological Algebra, MATH 8851 Group Theory, MATH 8600 Commutative Alg
 <h3>1.3 Representation Theory</h3>
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "reptheory" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "reptheory" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
  Representation theory deals with representations of algebraic and associated finite groups, associative and Lie algebras, and connections with algebraic geometry and mathematical physics. Topics include representations of reductive algebraic groups in positive characteristic with applications to finite groups of Lie type, quantum groups and Hecke algebras, quasi-hereditary algebras and vertex algebras. This work used methods from the theory of algebraic groups and algebraic geometry, Lie algebras, and homological algebra. Moonshine represents the interplay between the number theory of automorphic forms and the representation theory of finite groups.
 
@@ -91,7 +89,7 @@ MATH 7600 Homological Algebra, MATH 8851 Group Theory, MATH 8852 Representation 
 <h3>1.4 Algebraic Geometry</h3>
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "algeom" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "algeom" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
 
 The <a href="{{site.url}}/seminars/galois/">Galois-Grothendieck seminar</a> is a learning seminar for graduate students, postdocs and faculty that focuses on topics from algebraic and arithmetic geometry and number theory. It is open to graduate students of all years independent of the chosen area of research.
@@ -99,22 +97,22 @@ The <a href="{{site.url}}/seminars/galois/">Galois-Grothendieck seminar</a> is a
 <h3>1.5 Algebraic Combinatorics</h3>
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "algcomb" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "algcomb" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
 
 <h3>1.6 Number Theory</h3>
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "numth" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "numth" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
 
 ---
 
-<h2>2 Graduate Program in Analysis</h2>
+<h2>2 Analysis</h2>
 
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "analysis" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "analysis" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
 Graduate research in analysis is organized into the following areas:
 - Differential Equations and Related Applied Mathematics
@@ -162,7 +160,7 @@ Also in the second year, students take the Second-Year Proficiency Exam, which, 
 <h3>2.2 Differential Equations and Related Applied Mathematics</h3>
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "diffeq" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "diffeq" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
  This area focuses on the qualitative study of solutions of differential equations: ordinary differential equations (ODE&#39;s) as well as partial differential equations (PDE&#39;s), both linear and nonlinear. Particular emphasis is placed on equations arising in mathematical physics and related areas of applied mathematics. Topics of study include fluid dynamics, linear and nonlinear elasticity and wave propagation, harmonic analysis, dynamical systems, and control theory. The mathematical methods used draw from real and complex analysis, functional analysis, harmonic analysis, ordinary and partial differential equations, basic differential geometry, and probability.
 
@@ -184,7 +182,7 @@ MATH 726 (Ordinary Differential Equations II) and MATH 826 (Partial Differential
 
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "math_physics" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "math_physics" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
  Our research in mathematical physics is concerned with the spectral and scattering theory for Schroedinger operators in quantum mechanics, equilibrium and non-equilibrium statistical mechanics, and topics in classical mechanics. The mathematical methods needed include: real analysis--measure theory and integration; functional analysis--for example, operators in Hilbert spaces; Fourier analysis; partial differential equations; and some basic probability theory. 
  Real variable methods for inverse scattering theory as a topic.
@@ -206,7 +204,7 @@ MATH 8250 (Partial Differential Equations), MATH 7360 (Probability), MATH 8450 (
 <h3>2.4 Operator Theory, Function Theory, and Operator Algebras</h3>
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "operators" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "operators" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
  Our research on Hilbert space operators draws broadly from functional analysis and has two main (interrelated) strands. One is rooted in complex function theory and concerns composition, Toeplitz, and other operators on spaces of analytic functions. The other studies algebraic structures of operators: von Neumann algebras, C*-algebras, operator spaces, and noncommutative function spaces.
 
@@ -222,7 +220,7 @@ MATH 7250 (Ordinary Differential Equations), MATH 7360 (Probability Theory), MAT
 <h3>2.5 Harmonic Analysis</h3>
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "harmonic" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "harmonic" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
 Fourier analysis and boundedness of multilinear operators, focusing on time-frequency analysis and its recent development, motivated by studies of pointwise convergence of Fourier series and boundedness of the Bilinear Hilbert transform and variants. 
 
@@ -234,7 +232,7 @@ Real Analysis, Complex Analysis, Functional Analysis, Probability Theory, and To
 <h3>2.6 Probability and Related Applied Mathematics</h3>
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "probability" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "probability" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
  Probability is the mathematical theory of random events and random variables. Areas of particular interest to faculty include central limit theorems, Malliavin calculus, stochastic differential equations, Markov and L&egrave;vy processes, stochastic networks, measure-valued processes, roots of random polynomials, and applications to operations research and mathematical biology. 
  
@@ -249,10 +247,10 @@ MATH 8370 (Topics in Probability), MATH 7320 (Real Analysis II), MATH 7420 (Func
 
 ---
 
-<h2>3&nbsp;Graduate Program in Geometry, Topology</h2>
+<h2>3 Geometry, Topology</h2>
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "geometry" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "geometry" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
 Graduate research in topology is organized into the following areas:
 - Algebraic Topology
@@ -271,7 +269,7 @@ We must emphasize that these areas have a lot in common, so the subdivision into
 
 
 
-- _First Semester:_ MATH 7820 Differential Topology (recommended).
+- _First Semester:_ MATH 7820 Differential Topology.
 - _Second Semester:_ MATH 7800 Algebraic Topology I (fundamental group and covering spaces, singular and simplicial homology).
 
 
@@ -307,7 +305,7 @@ In the second year, students take the Second-Year Proficiency Exam, which, in to
 
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "alg_top" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "alg_top" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
  The subject of algebraic topology is the interplay between topology and algebra. One associates algebraic objects, e.g., groups and rings, with topological spaces in a &#39;natural&#39; way, and investigates how the algebraic invariants reflect the topological structure of the spaces. Research in this area requires a good understanding of both topology and algebra. Areas of particular interest to faculty include homotopical algebra and homotopy as organized by the calculus of functors, group cohomology and its connections to representation theory and algebraic <em>K</em>-theory, and the study of complex oriented cohomology theories. There are deep connections with many parts of algebra, including algebraic geometry and number theory, and mathematical physics.
 
@@ -325,7 +323,7 @@ MATH 7840 Homotopy Theory, MATH 8800 Generalized Cohomology, MATH 7600 Homologic
 
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "geom_top" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_special_areas contains "geom_top" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
  The central subject of geometric topology is the theory of manifolds, their classification, and study of their geometric properties. Research areas represented by the faculty include knot theory, quantum invariants of three-dimensional manifolds, geometric and differential four-dimensional topology, gauge theory, groups acting on manifolds, hyperbolic geometry, and moduli spaces of geometric structures.&nbsp; This area has deep connections with algebraic topology, representation theory, geometric analysis and mathematical physics.
 
@@ -339,11 +337,11 @@ MATH 8750 Topology of manifolds, MATH 8830 Cobordism and <em>K</em>-Theory, MATH
 
 ---
 
-<h2>4 Graduate Program in the History of Mathematics</h2>
+<h2>4 History of Mathematics</h2>
 
 
 **Faculty:**&nbsp;&nbsp;
-{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "history" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endfor %}
+{% for ppl in sorted_people %}{% if ppl.grad_general_areas contains "history" %}{% if ppl.general_position == "faculty" %}<span style="white-space:nowrap">{% if ppl.email != null %}<a href="mailto:{{ ppl.email }}"><span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span></a> {% endif %}<a href="{% if ppl.personal_page != null %}{{ ppl.personal_page }}{% else %}{{ site.url }}/people/{{ppl.UVA_id}}{% endif %}">{{ ppl.name | slice: 0 }}. {{ ppl.lastname }}</a></span>; {% endif %}{% endif %}{% endfor %}
 
  The graduate program in the history of mathematics includes a component in the history of science taken within the Department of History. Students in the program must satisfy all of the requirements for the Ph.D. in Mathematics. In particular, they must complete the coursework in mathematics and perform satisfactorily on General Examinations in two areas before they are permitted to proceed toward the doctorate. Strong reading competency in either French or German is required for admission into the program, with strong reading competency required in the other language by the time dissertation research begins. Depending on a particular student&#39;s interests, other languages may also be required.
 

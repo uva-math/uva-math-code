@@ -4,7 +4,7 @@ lastname: Reidys
 name: Christian
 general_position: faculty
 position: Professor
-office: 126 Kerchof Hall
+office: 223 Kerchof Hall
 # phone: 
 # office_hours: 
 email: cmr3hk@virginia.edu

@@ -9,6 +9,7 @@ phone: 434-924-4939
 email: jr9zb@virginia.edu
 image: __SITE_URL__/img/people/2019-nov/Ren.jpg
 personal_page: 
+published: false
 
 areas:
 

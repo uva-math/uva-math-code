@@ -17,5 +17,6 @@ grad_special_areas:
   - numth
 areas:
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+  - Analysis, PDE, Operator Algebras
 
 ---

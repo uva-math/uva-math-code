@@ -38,8 +38,7 @@
   shortname: ntsem
   google_cal_id: '56un1k179o7d8mtj85o12qsg7c@group.calendar.google.com'
   seminar_weight: 90
-  #regular_times: Fridays at 1:00, over zoom
-  regular_times: To be determined for 2021-2022
+  regular_times: Fridays at 1:00, Rouss 403
   contact:
     - UVA_id: eg4va
     - UVA_id: ph7ph
@@ -53,7 +52,7 @@
   webpage: 'http://pi.math.virginia.edu/geometry/'
   google_cal_id: '6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com'
   seminar_weight: 65
-  regular_times: Tuesdays at 2:00, room TBA
+  regular_times: Tuesdays at 2:00, Monroe 111
   information: |
     The Geometry Seminar talks usually focus on aspects of low-dimensional topology and geometry, including knot theory and categorification, Floer homology, 3- and 4-dimensional manifolds, and symplectic and contact topology. The lectures are often given by outside speakers, however UVa graduate students and faculty give talks as well.
   contact:
@@ -67,8 +66,7 @@
   webpage: 'http://pi.math.virginia.edu/diffeq/'
   google_cal_id: '5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com'
   seminar_weight: 70
-  # regular_times: Tuesdays at 3:30, over zoom
-  regular_times: To be determined for 2021-2022
+  regular_times: Tuesdays at 3:30, Monroe 114
   information: |
     Harmonic Analysis and PDE seminar features a mix of local speakers (graduate students and faculty) and visitors. The ideal topics live on the interface between the two fields; luckily, the interface has been steadily expanding.
   contact:
@@ -98,8 +96,7 @@
   webpage: 'http://faculty.virginia.edu/Probability/'
   google_cal_id: 'f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com'
   seminar_weight: 110
-  #regular_times: Wednesdays at 12:30, over zoom
-  regular_times: To be determined for 2021-2022
+  regular_times: (Fall 2011) Wednesdays at 12:00pm, over zoom; (Spring 2022) Fridays at 1:00pm
   information: |
     The Probability Seminar is the place to see talks on active research topics in probability theory, as well as informal discussions of basic notions of probability.  We typically have invited speakers every 2-3 weeks presenting a wide array of research in probability. Most other weeks are informal discussions led by local participants, often graduate students discussing recently studied topics. The seminar is open to all. Feel free to attend regularly or occasionally.
   contact:
@@ -141,7 +138,7 @@
   name: Operator theory seminar
   shortname: sotoa
   google_cal_id: 'ftc1mbjbp95irpj6t9e2tfl020@group.calendar.google.com'
-  webpage: 'http://www.people.virginia.edu/~des5e/sotoa/sotoa.html'
+  webpage: 'https://dshermanmath.github.io/base/sotoa/sotoa.html'
   seminar_weight: 100
   #regular_times: Tuesdays at 4:00, over zoom
   regular_times: To be determined for 2021-2022
@@ -156,8 +153,7 @@
   webpage: 'http://pi.math.virginia.edu/gradsem/'
   google_cal_id: 'n6dhh35l2td9i73ii6dbkpqtro@group.calendar.google.com'
   seminar_weight: 20
-  #regular_times: Fridays at 2:30, over zoom
-  regular_times: To be determined for 2021-2022
+  regular_times: Fridays 2-3:20pm, New Cabell 027
   information: |
     The Graduate Seminar provides a friendly atmosphere for grad students to give talks about current interests, research, or teaching. This seminar is for grad students only and encourages audience participation while keeping the intensity level below that of other seminars.
     <br><br>
@@ -167,7 +163,8 @@
     <br><br>
     The seminar is intended for graduate students and junior faculty in an attempt to foster a less intimidating atmosphere for discussion. Such a friendly, informal environment not only makes it easier for the speakers, but promotes more audience participation. Most talks last about 45 minutes, which leaves sufficient time for comments and questions afterward. There have been a wide variety of topics covered. Many speakers have presented material related to their research while others have chosen to speak about topics that may not be directly related to their studies. Some people have even used the seminar to prepare for professional talks. Though topics vary, the goal is to keep the mathematical intensity at an appropriate level so that graduate students not specializing in that discipline can still follow the presentation and learn something.
   contact:
-    - UVA_id: ak5ah
+    - UVA_id: mjf7eb
+    - UVA_id: mt3cb
 
 - cal_number: '11'
   name: Galois-Grothendieck seminar

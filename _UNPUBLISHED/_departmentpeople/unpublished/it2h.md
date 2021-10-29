@@ -9,4 +9,5 @@ phone:
 email: it2h@virginia.edu
 image: __SITE_URL__/img/people/Timchenko.jpg
 personal_page:
+published: false
 ---
