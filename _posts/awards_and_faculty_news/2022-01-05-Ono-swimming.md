@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Ken Ono works with UVA swimming team
+title: Ken Ono helps UVA swimmers win 5 medals at the Tokyo Olympics
 comments: false
 categories: news awards swiper-news
 published: true
