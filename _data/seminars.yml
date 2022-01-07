@@ -38,7 +38,7 @@
   shortname: ntsem
   google_cal_id: '56un1k179o7d8mtj85o12qsg7c@group.calendar.google.com'
   seminar_weight: 90
-  regular_times: Fridays at 1:00, Rouss 403
+  regular_times: Fridays at 1:00, Clark 102
   contact:
     - UVA_id: eg4va
     - UVA_id: ph7ph
@@ -96,7 +96,7 @@
   webpage: 'http://faculty.virginia.edu/Probability/'
   google_cal_id: 'f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com'
   seminar_weight: 110
-  regular_times: (Fall 2011) Wednesdays at 12:00pm, over zoom; (Spring 2022) Fridays at 1:00pm
+  regular_times: Fridays at 1:00pm
   information: |
     The Probability Seminar is the place to see talks on active research topics in probability theory, as well as informal discussions of basic notions of probability.  We typically have invited speakers every 2-3 weeks presenting a wide array of research in probability. Most other weeks are informal discussions led by local participants, often graduate students discussing recently studied topics. The seminar is open to all. Feel free to attend regularly or occasionally.
   contact:

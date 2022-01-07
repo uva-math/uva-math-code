@@ -15,9 +15,9 @@ tooltips: true
 
 <h1 class="mb-4">Math Collaborative Learning Center</h1>
 
-<!-- <p style="font-size:150%;color:Red;"> The last day of operation for the Spring 2021 semester is Thursday, May 6 </p> -->
-<!-- <p style="font-size:150%;"> The MCLC will begin its operation for the Fall 2021 semester on Monday, August 30 </p> -->
-<p style="font-size:150%;"> The MCLC is now open for the Fall 2021 semester! </p>
+<!-- <p style="font-size:150%;color:Red;"> The last day of operation for the Spring 2022 semester is Tuesday, May 3 </p> -->
+<!-- <p style="font-size:150%;"> The MCLC will begin its operation for the Spring 2022 semester on Monday, January 24 </p> -->
+<!-- <p style="font-size:150%;"> The MCLC is now open for the Spring 2022 semester! </p> -->
 
 The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Student Center on the second floor of Clemons Library. </b> The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer assistance one-on-one (or in small groups) for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
 <ul>
@@ -35,7 +35,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </ul> -->
 
 <!-- <p style="font-size:120%;color:coral;"> If you have joined an MCLC session this semester please take a couple of minutes to complete this 
-<a href="https://virginia.az1.qualtrics.com/jfe/form/SV_5alk5LpaWdFUWqy">survey</a>. We appreciate your feedback. </p> -->
+<a href="https://virginia.az1.qualtrics.com/jfe/form/SV_bC8S4kTWpk700N8">survey</a>. We appreciate your feedback. -->
 
 
 <h2 class="mb-4 mt-4">Schedule  </h2>
@@ -79,16 +79,16 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 175.375px; height: 19px;"></td>
 <td style="width: 177.391px; height: 19px;">MATH 1310, 1320</td>
 <td style="width: 179.391px; height: 19px;">MATH 1310, 1320</td>
-<td style="width: 183.391px; height: 19px;">MATH 3350/3351</td>
+<td style="width: 183.391px; height: 19px;">Calculus I & II</td>
 <td style="width: 173.438px; height: 19px;"></td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 78.1875px; height: 19px; text-align: center;">4-5</td>
 <td style="width: 165.359px; height: 19px;">MATH 3000/3310</td>
 <td style="width: 175.375px; height: 19px;">MATH 1320</td>
-<td style="width: 177.391px; height: 19px;">Calculus I & II</td>
+<td style="width: 177.391px; height: 19px;"> Calculus I & II</td>
 <td style="width: 179.391px; height: 19px;">MATH 1220</td>
-<td style="width: 183.391px; height: 19px;">MATH 1190/1210, 1220 <br> MATH 1310, 1320</td>
+<td style="width: 183.391px; height: 19px;">MATH 1190/1210, 1220 <br> MATH 3350/3351</td>
 <td style="width: 173.438px; height: 19px;"></td>
 </tr>
 <tr style="height: 19px;">
