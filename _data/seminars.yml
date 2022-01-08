@@ -28,8 +28,7 @@
   webpage: 'http://pi.math.virginia.edu/algebra/'
   google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
   seminar_weight: 40
-  # regular_times: Wednesdays and some Fridays, 3:30-4:30pm, over zoom
-  regular_times: To be determined for 2021-2022
+  regular_times: Wednesdays and some Fridays, 3:30-4:30pm
   contact:
     - UVA_id: mve2x
 
@@ -82,8 +81,7 @@
   webpage: 'http://pi.math.virginia.edu/mathphys/'
   google_cal_id: 'k613quo3pribde7jrm5e12ft1c@group.calendar.google.com'
   seminar_weight: 80
-  #regular_times: Wednesdays and some Fridays at 2:00, over zoom
-  regular_times: To be determined for 2021-2022
+  regular_times: TBD
   information: |
     The Mathematical Physics Seminar features talks on a wide variety of topics such as, for instance, Schrödinger operators, the mathematics of quantum systems, statistical mechanics, the renormalization group and quantum field theory. Lectures typically are of research level and are given by local as well as outside speakers. Graduate students in mathematical physics are encouraged to give presentations at this seminar about their ongoing research. Everyone is welcome to attend.
   contact:
@@ -140,8 +138,7 @@
   google_cal_id: 'ftc1mbjbp95irpj6t9e2tfl020@group.calendar.google.com'
   webpage: 'https://dshermanmath.github.io/base/sotoa/sotoa.html'
   seminar_weight: 100
-  #regular_times: Tuesdays at 4:00, over zoom
-  regular_times: To be determined for 2021-2022
+  regular_times: Tuesdays at 4:00
   information: |
     The Seminar in Operator Theory and Operator Algebras covers a wide variety of topics in functional analysis, including <script type="math/tex">C^*</script>-algebras and von Neumann algebras, composition operators, Banach spaces, noncommutative convexity, and applications of complex function theory. Most lectures are research level, but we also feature expository talks.
   contact:
@@ -185,8 +182,7 @@
   published_in_nav: true
   google_cal_id: 'fj2uv2u9ea74h8b0gihm3iu73c@group.calendar.google.com'
   seminar_weight: 50
-  #regular_times: Mondays 3:00-4:00pm, over zoom
-  regular_times: To be determined for 2021-2022
+  regular_times: TBD
   information: | 
      Talks at the Analysis Commons seminar cover topics of broader interest to the analysis community at University of Virginia. This includes functional analysis and operator algebras, mathematical physics, harmonic analysis and PDEs, probability theory, and other research areas. Presentations at this seminar are accessible to beginning graduate students in analysis. This calendar also lists talks at other UVA Math seminars which may be of interest to general analysis audience.
   contact:
