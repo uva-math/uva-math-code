@@ -21,7 +21,7 @@ Bridge fellows will have the opportunity to complete a graduate certificate or m
 
 <h3 class="mb-4 mt-3">Financial Support</h3>
 
-Students will receive $24,000 per year in living support and full payment of their tuition, fees and single-person coverage in the University’s student health insurance plan for a period of two years.
+Students will receive $26,000 per year in living support and full payment of their tuition, fees and single-person coverage in the University’s student health insurance plan for a period of two years.
 
 
 
