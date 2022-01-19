@@ -6,6 +6,7 @@ categories: news awards major-news
 published: true
 image: __SITE_URL__/img/people/ParshallB.jpg
 image-alt: Brian Parshall
+more-text: Letter from Chair
 ---
 
 Our friend and colleague Gordon Whyburn Professor of Mathematics Emeritus Brian Parshall passed away unexpectedly Monday morning (January 17th, 2022). Below is a letter from the department chair.
