@@ -28,5 +28,5 @@ Ken Ono
 UVa Mathematics Chairman
 
 PS. To celebrate and honor his life, Karen has noted that Brian would have welcomed donations in his memory to
-BROOD = Basset Rescue of Old Dominion (Website https://brood-va.org/ The donation button is at the end of the site).  
-Hospice of the Piedmont. They were incredibly kind and caring. (Website: https://www.hopva.org/ and the donation button is at the top).
+- BROOD = Basset Rescue of Old Dominion (Website [https://brood-va.org/](https://brood-va.org/) The donation button is at the end of the site).  
+- Hospice of the Piedmont. They were incredibly kind and caring. (Website: [https://www.hopva.org/](https://www.hopva.org/) and the donation button is at the top).
