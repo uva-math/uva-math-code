@@ -38,7 +38,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_bC8S4kTWpk700N8">survey</a>. We appreciate your feedback. -->
 
 
-<h2 class="mb-4 mt-4">Schedule (To Be Updated) </h2>
+<h2 class="mb-4 mt-4">Schedule </h2>
 
 <p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p>
 
@@ -57,20 +57,20 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <tbody>
 <tr style="height: 19px;">
 <td style="width: 78.1875px; height: 19px; text-align: center;">1-2</td>
-<td style="width: 165.359px; height: 19px;"></td>
-<td style="width: 175.375px; height: 19px;"></td>
-<td style="width: 177.391px; height: 19px;"></td>
-<td style="width: 179.391px; height: 19px;"></td>
-<td style="width: 183.391px; height: 19px;">MATH 1310</td>
+<td style="width: 165.359px; height: 19px;"> </td>
+<td style="width: 175.375px; height: 19px;"> </td>
+<td style="width: 177.391px; height: 19px;"> </td>
+<td style="width: 179.391px; height: 19px;"> </td>
+<td style="width: 183.391px; height: 19px;">MATH 1310 </td>
 <td style="width: 173.438px; height: 19px;"></td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 78.1875px; height: 10px; text-align: center;">2-3</td>
-<td style="width: 165.359px; height: 10px;"></td>
-<td style="width: 175.375px; height: 10px;">Calculus I & II</td>
-<td style="width: 177.391px; height: 10px;">MATH 1190/1210, 1220</td>
-<td style="width: 179.391px; height: 10px;">MATH 1190/1210, 1220</td>
-<td style="width: 183.391px; height: 10px;">MATH </td>
+<td style="width: 165.359px; height: 10px;"> </td>
+<td style="width: 175.375px; height: 10px;"> </td>
+<td style="width: 177.391px; height: 10px;"> </td>
+<td style="width: 179.391px; height: 10px;"> </td>
+<td style="width: 183.391px; height: 10px;"> </td>
 <td style="width: 173.438px; height: 10px;"> </td>
 </tr>
 <tr style="height: 19px;">
@@ -85,10 +85,10 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <tr style="height: 19px;">
 <td style="width: 78.1875px; height: 19px; text-align: center;">4-5</td>
 <td style="width: 165.359px; height: 19px;">MATH </td>
-<td style="width: 175.375px; height: 19px;">MATH </td> <!-- M -->
-<td style="width: 177.391px; height: 19px;"> Calculus I & II</td>
-<td style="width: 179.391px; height: 19px;">MATH </td>
-<td style="width: 183.391px; height: 19px;">MATH <br> MATH </td>
+<td style="width: 175.375px; height: 19px;"> Calculus I & II </td> <!-- M -->
+<td style="width: 177.391px; height: 19px;"> </td>
+<td style="width: 179.391px; height: 19px;"> Calculus I & II </td> <!-- W -->
+<td style="width: 183.391px; height: 19px;"> </td>
 <td style="width: 173.438px; height: 19px;"></td>
 </tr>
 <tr style="height: 19px;">
