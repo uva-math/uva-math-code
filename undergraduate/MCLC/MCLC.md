@@ -59,9 +59,9 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 78.1875px; height: 19px; text-align: center;">1-2</td>
 <td style="width: 165.359px; height: 19px;"></td>
 <td style="width: 175.375px; height: 19px;"></td>
-<td style="width: 177.391px; height: 19px;">MATH 1220</td>
+<td style="width: 177.391px; height: 19px;"></td>
 <td style="width: 179.391px; height: 19px;"></td>
-<td style="width: 183.391px; height: 19px;">MATH </td>
+<td style="width: 183.391px; height: 19px;">MATH 1310</td>
 <td style="width: 173.438px; height: 19px;"></td>
 </tr>
 <tr style="height: 19px;">
@@ -75,17 +75,17 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </tr>
 <tr style="height: 19px;">
 <td style="width: 78.1875px; height: 19px; text-align: center;">3-4</td>
-<td style="width: 165.359px; height: 19px;">MATH </td>
-<td style="width: 175.375px; height: 19px;"></td>
-<td style="width: 177.391px; height: 19px;">MATH </td>
-<td style="width: 179.391px; height: 19px;">MATH </td>
+<td style="width: 165.359px; height: 19px;"> </td>
+<td style="width: 175.375px; height: 19px;">Calculus I & II</td> <!-- M -->
+<td style="width: 177.391px; height: 19px;"> </td>
+<td style="width: 179.391px; height: 19px;">Calculus I & II </td> <!-- W -->
 <td style="width: 183.391px; height: 19px;"></td>
 <td style="width: 173.438px; height: 19px;"></td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 78.1875px; height: 19px; text-align: center;">4-5</td>
 <td style="width: 165.359px; height: 19px;">MATH </td>
-<td style="width: 175.375px; height: 19px;">MATH </td>
+<td style="width: 175.375px; height: 19px;">MATH </td> <!-- M -->
 <td style="width: 177.391px; height: 19px;"> Calculus I & II</td>
 <td style="width: 179.391px; height: 19px;">MATH </td>
 <td style="width: 183.391px; height: 19px;">MATH <br> MATH </td>
@@ -94,7 +94,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <tr style="height: 19px;">
 <td style="width: 78.1875px; text-align: center; height: 19px;">5-6</td>
 <td style="width: 165.359px; height: 19px;"></td>
-<td style="width: 175.375px; height: 19px;"></td>
+<td style="width: 175.375px; height: 19px;"></td> <!-- M -->
 <td style="width: 177.391px; height: 19px;"></td>
 <td style="width: 179.391px; height: 19px;"></td>
 <td style="width: 183.391px; height: 19px;">MATH </td>
@@ -112,18 +112,18 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <tr style="height: 38px;">
 <td style="width: 78.1875px; height: 38px; text-align: center;">7-8:15</td>
 <td style="width: 165.359px; height: 38px;"></td>
-<td style="width: 175.375px; height: 38px;">Calculus I &amp; II <br />MATH 3250 </td>
+<td style="width: 175.375px; height: 38px;">Calculus I &amp; II <br />MATH 3350/3351 </td> <!-- M -->
 <td style="width: 177.391px; height: 38px;"> </td>
-<td style="width: 179.391px; height: 38px;">MATH </td>
+<td style="width: 179.391px; height: 38px;">MATH </td> <!-- W -->
 <td style="width: 183.391px; height: 38px;">MATH </td>
 <td style="width: 173.438px; height: 38px;"></td>
 </tr>
 <tr style="height: 38px;">
 <td style="width: 78.1875px; height: 38px; text-align: center;">8:15-9:30</td>
 <td style="width: 165.359px; height: 38px;"></td>
-<td style="width: 175.375px; height: 38px;">Calculus I &amp; II</td>
-<td style="width: 177.391px; height: 38px;">MATH 3350/3351</td>
-<td style="width: 179.391px; height: 38px;"> Calculus I & II<br /> MATH 3100 </td>
+<td style="width: 175.375px; height: 38px;">Calculus I &amp; II <br />MATH 3000/3310  </td> <!-- M -->
+<td style="width: 177.391px; height: 38px;">MATH 3100</td>
+<td style="width: 179.391px; height: 38px;"> Calculus I & II<br /> MATH 3250 </td> <!-- W -->
 <td style="width: 183.391px; height: 38px;"></td>
 <td style="width: 173.438px; height: 38px;"></td>
 </tr>
