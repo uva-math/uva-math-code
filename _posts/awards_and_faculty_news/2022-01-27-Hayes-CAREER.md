@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Ben Hayes Wins an NSF CAREER Award
-date: 2018-05-08 13:30:00
 comments: false
 categories: news awards swiper-news
 published: true
