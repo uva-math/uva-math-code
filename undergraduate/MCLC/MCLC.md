@@ -16,8 +16,8 @@ tooltips: true
 <h1 class="mb-4">Math Collaborative Learning Center</h1>
 
 <!-- <p style="font-size:150%;color:Red;"> The last day of operation for the Spring 2022 semester is Tuesday, May 3 </p> -->
-<p style="font-size:150%;"> The MCLC will begin its operation for the Spring 2022 semester on Monday, January 24 </p>
-<!-- <p style="font-size:150%;"> The MCLC is now open for the Spring 2022 semester! </p> -->
+<!-- <p style="font-size:150%;"> The MCLC will begin its operation for the Spring 2022 semester on Monday, January 24 </p> -->
+<p style="font-size:150%;"> The MCLC is now open for the Spring 2022 semester! </p> 
 
 The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Student Center on the second floor of Clemons Library. </b> The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer assistance one-on-one (or in small groups) for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
 <ul>
@@ -37,6 +37,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <!-- <p style="font-size:120%;color:coral;"> If you have joined an MCLC session this semester please take a couple of minutes to complete this 
 <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_bC8S4kTWpk700N8">survey</a>. We appreciate your feedback. -->
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QNGNmmVGzDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <h2 class="mb-4 mt-4">Schedule </h2>
 
