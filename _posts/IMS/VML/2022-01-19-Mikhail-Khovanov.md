@@ -7,10 +7,10 @@ permalink: /ims/lectures/mikhail-khovanov/
 comments: false
 categories: news virginia-mathematics-lectures ims events 
 published: true
-# image: __SITE_URL__/img/IMS/McMullen_poster.png
-# image-alt: Curtis McMullen Poster
+image: __SITE_URL__/img/IMS/Khovanov.png
+image-alt: Mikhail Khovanov
 # image-tall: true
-# image-address: __SITE_URL__/img/IMS/McMullen_poster.pdf
+# image-address: __SITE_URL__/img/IMS/???.pdf
 more-text: Abstracts
 nav_parent: IMS
 ---
