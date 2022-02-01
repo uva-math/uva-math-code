@@ -9,7 +9,7 @@ office_hours: "Tue 11-12, and by appointment"
 phone: 434-924-4152
 email: gromoll@virginia.edu
 image: __SITE_URL__/img/people/Gromoll.jpg
-personal_page: http://faculty.virginia.edu/gromoll/
+# personal_page: http://faculty.virginia.edu/gromoll/
 grad_general_areas:
   - analysis
 grad_special_areas:
