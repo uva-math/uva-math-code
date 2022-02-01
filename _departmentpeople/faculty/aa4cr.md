@@ -9,7 +9,7 @@ phone: 434-924-4926
 office_hours: "Mon 2-3pm and Fri 2-3pm"
 email: malek@virginia.edu
 image: __SITE_URL__/img/people/Abdesselam.jpg
-personal_page: http://people.virginia.edu/~aa4cr/
+# personal_page: http://people.virginia.edu/~aa4cr/
 
 areas:
   - Mathematical Physics, Applied Mathematics
