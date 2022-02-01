@@ -62,15 +62,15 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 175.375px; height: 19px;"> </td>
 <td style="width: 177.391px; height: 19px;"> </td>
 <td style="width: 179.391px; height: 19px;"> </td>
-<td style="width: 183.391px; height: 19px;">Math 1310 Office Hours</td>
+<td style="width: 183.391px; height: 19px;"> Math 1190/1210 Office Hours <br/> Math 1310 Office Hours</td>
 <td style="width: 173.438px; height: 19px;"></td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 78.1875px; height: 10px; text-align: center;">2-3</td>
 <td style="width: 165.359px; height: 10px;"> </td>
-<td style="width: 175.375px; height: 10px;"> </td>
-<td style="width: 177.391px; height: 10px;"> </td>
-<td style="width: 179.391px; height: 10px;"> </td>
+<td style="width: 175.375px; height: 10px;"> </td> <!-- M -->
+<td style="width: 177.391px; height: 10px;"> Math 1190/1210 Office Hours </td>
+<td style="width: 179.391px; height: 10px;"> Math 1210 Office Hours </td> <!-- W -->
 <td style="width: 183.391px; height: 10px;"> </td>
 <td style="width: 173.438px; height: 10px;"> </td>
 </tr>
@@ -78,7 +78,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 78.1875px; height: 19px; text-align: center;">3-4</td>
 <td style="width: 165.359px; height: 19px;"> </td>
 <td style="width: 175.375px; height: 19px;"> </td> <!-- M -->
-<td style="width: 177.391px; height: 19px;"> </td>
+<td style="width: 177.391px; height: 19px;"> Math 1190/1210 Office Hours </td>
 <td style="width: 179.391px; height: 19px;"> </td> <!-- W -->
 <td style="width: 183.391px; height: 19px;"></td>
 <td style="width: 173.438px; height: 19px;"></td>
@@ -97,7 +97,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 165.359px; height: 19px;"> </td>
 <td style="width: 175.375px; height: 19px;"> </td> <!-- M -->
 <td style="width: 177.391px; height: 19px;"> </td>
-<td style="width: 179.391px; height: 19px;"> Math 1220 Office Hours </td> <!-- W -->
+<td style="width: 179.391px; height: 19px;"> Math 1210 Office Hours <br/> Math 1220 Office Hours </td> <!-- W -->
 <td style="width: 183.391px; height: 19px;"> </td>
 <td style="width: 173.438px; height: 19px;"> </td>
 </tr>
