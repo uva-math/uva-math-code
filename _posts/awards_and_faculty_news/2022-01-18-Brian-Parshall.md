@@ -2,7 +2,7 @@
 layout: post
 title: Brian Parshall, Friend, Colleague, and Master Algebraist
 comments: false
-categories: news awards major-news
+categories: news awards
 published: true
 image: __SITE_URL__/img/people/ParshallB.jpg
 image-alt: Brian Parshall
