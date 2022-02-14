@@ -47,32 +47,32 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <thead style="background-color: coral; text-align: center;">
 <tr style="text-align: center; height: 19px;">
 <th style="width: 78.1875px; height: 19px;">Time</th>
-<th style="width: 200px; height: 19px;">Sunday</th>
-<th style="width: 200px; height: 19px;">Monday</th>
-<th style="width: 200px; height: 19px;">Tuesday</th>
-<th style="width: 200px; height: 19px;">Wednesday</th>
-<th style="width: 200px; height: 19px;">Thursday</th>
-<th style="width: 200px; height: 19px;">Friday</th>
+<th style="width: 220px; height: 19px;">Sunday</th>
+<th style="width: 220px; height: 19px;">Monday</th>
+<th style="width: 220px; height: 19px;">Tuesday</th>
+<th style="width: 220px; height: 19px;">Wednesday</th>
+<th style="width: 220px; height: 19px;">Thursday</th>
+<th style="width: 220px; height: 19px;">Friday</th>
 </tr>
 </thead>
 <tbody>
 <tr style="height: 19px;">
 <td style="width: 78.1875px; height: 19px; text-align: center;">1-2</td>
-<td style="width: 165.359px; height: 19px;"> </td>
-<td style="width: 175.375px; height: 19px;"> </td>
-<td style="width: 177.391px; height: 19px;"> </td>
-<td style="width: 179.391px; height: 19px;"> </td>
-<td style="width: 183.391px; height: 19px;"> Math 1190/1210 Office Hours <br/> Math 1310 Office Hours</td>
-<td style="width: 173.438px; height: 19px;"></td>
+<td style="width: 220px; height: 19px;"> </td>
+<td style="width: 220px; height: 19px;"> </td>
+<td style="width: 220px; height: 19px;"> </td>
+<td style="width: 220px; height: 19px;"> </td>
+<td style="width: 2201px; height: 19px;"> Math 1190/1210 Office Hours <br/> Math 1310 Office Hours</td>
+<td style="width: 220px; height: 19px;"></td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 78.1875px; height: 10px; text-align: center;">2-3</td>
-<td style="width: 165.359px; height: 10px;"> </td>
-<td style="width: 175.375px; height: 10px;"> </td> <!-- M -->
-<td style="width: 200px; height: 10px;"> Math 1190/1210 Office Hours </td>
-<td style="width: 179.391px; height: 10px;"> Math 1210 Office Hours </td> <!-- W -->
-<td style="width: 183.391px; height: 10px;"> </td>
-<td style="width: 173.438px; height: 10px;"> </td>
+<td style="width: 220px; height: 10px;"> </td>
+<td style="width: 220px; height: 10px;"> </td> <!-- M -->
+<td style="width: 220px; height: 10px;"> Math 1190/1210 Office Hours </td>
+<td style="width: 220px; height: 10px;"> Math 1210 Office Hours </td> <!-- W -->
+<td style="width: 220px; height: 10px;"> </td>
+<td style="width: 220px; height: 10px;"> </td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 78.1875px; height: 19px; text-align: center;">3-4</td>
