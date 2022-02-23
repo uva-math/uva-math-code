@@ -17,7 +17,7 @@ The Institute of Mathematical Science (IMS) will bring together--in a centralize
 </div>
 <div class="col-12 col-lg-6">
             <img class="mt-3 mb-2" src="{{site.url}}/img/Routunda.jpg"
-            style="max-width:100%;max-height:400px;height:auto;width:auto;" alt="UVa Rotunda" title="UVa Math Spring 2022 Workshop">            
+            style="max-width:100%;max-height:400px;height:auto;width:auto;" alt="UVa Rotunda" title="UVa Rotunda">            
     </div>
 </div>  
 ---
