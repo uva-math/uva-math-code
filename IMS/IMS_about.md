@@ -17,14 +17,8 @@ The Institute of Mathematical Science (IMS) will bring together--in a centralize
 ---
 
 <ul>
-{% assign sorted_pages = site.pages | sort: "nav_weight" %}
-{% for p in sorted_pages %}
-{% unless p.permalink contains "/ims/workshop-fall-2018/" %}
-    {% if p.nav_parent == "IMS" and p.permalink != "/ims/about/" and p.permalink != "/ims/analysis2015/"  %}
-    <li><h3><a href="{{site.url}}{{p.url}}">{{p.nav_id}}</a></h3></li>
-    {% endif %}
-{% endunless %}
-{% endfor %}
+    <li><h3><a href="{{site.url}}/ims/lectures/">VIRGINIA MATHEMATICS LECTURES</a></h3></li>
+    <li><h3><a href="{{site.url}}/ims/special-events/">IMS SPECIAL EVENTS</a></h3></li>
 </ul>
 
 <img src="{{site.url}}/img/Routunda.jpg" class="clear-right" style="max-width:45%; padding:20px" alt="Rotunda">
