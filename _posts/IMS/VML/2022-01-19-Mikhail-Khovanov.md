@@ -9,7 +9,7 @@ categories: news virginia-mathematics-lectures ims events major-news
 published: true
 image: __SITE_URL__/img/IMS/Khovanov_poster2.jpg
 image-alt: Mikhail Khovanov
-# image-tall: true
+image-tall: true
 # image-address: __SITE_URL__/img/IMS/???.pdf
 more-text: Abstracts
 nav_parent: IMS
