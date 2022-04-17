@@ -34,8 +34,8 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
  <li> Once you join a session, a consulant will assign you to a (virtual) room for the course for which you need help. This process may take a couple of minutes.</li>
 </ul> -->
 
-<!-- <p style="font-size:120%;color:coral;"> If you have joined an MCLC session this semester please take a couple of minutes to complete this 
-<a href="https://virginia.az1.qualtrics.com/jfe/form/SV_bC8S4kTWpk700N8">survey</a>. We appreciate your feedback. -->
+<p style="font-size:120%;color:coral;"> If you have joined an MCLC session this semester please take a couple of minutes to complete this 
+<a href="https://virginia.az1.qualtrics.com/jfe/form/SV_3k3HqHPjsTusFAG">survey</a>. We appreciate your feedback. 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QNGNmmVGzDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
