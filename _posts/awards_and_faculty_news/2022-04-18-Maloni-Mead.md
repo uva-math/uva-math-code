@@ -10,5 +10,5 @@ image-alt: Sara Maloni
 
 Congratulations to Sara Maloni who has been named a Mead Honored Professor for 2022-2023.
 
-Hand-picked by the deans, Mead Honored Professors lead creative and memorable "Dream Idea" projects that enrich the collegiate experience. 
+Hand-picked by the deans, Mead Honored Professors lead creative and memorable Dream Idea projects that enrich the collegiate experience. 
 
