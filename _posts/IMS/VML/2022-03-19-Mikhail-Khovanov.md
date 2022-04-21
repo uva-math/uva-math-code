@@ -5,7 +5,7 @@ event-date: 2022-04-18 16:00:00
 multi-day-event: true
 permalink: /ims/lectures/mikhail-khovanov/
 comments: false
-categories: news virginia-mathematics-lectures ims events major-news
+categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Khovanov_poster1.jpg
 image-alt: Mikhail Khovanov
