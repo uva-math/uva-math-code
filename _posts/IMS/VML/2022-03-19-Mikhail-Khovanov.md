@@ -17,9 +17,9 @@ nav_parent: IMS
 
 <h5 class="mt-1 mb-4"><a href="https://www.math.columbia.edu/~khovanov/">Mikhail Khovanov</a> (Columbia)</h5>
 
-- Lecture 1 - "**Universal construction and TQFTs: from Frobenius algebras to finite state automata**". Monday, April 18, 5:00-6:00pm, Nau 101.
-- Lecture 2 - "**Homological algebra of link homology: categorification of the Jones polynomial and the Kuperberg bracket**". Tuesday, April 19, 5:00-6:00pm, Nau 101. 
-- Lecture 3 - "**Foams, categorification of Reshetikhin-Turaev link invariants: GL(N) link homology and the 4-color theorem**". Wednesday, April 20, 5:00-6:00pm, Ridley G006.
+- Lecture 1 - "**Universal construction and TQFTs: from Frobenius algebras to finite state automata**". Monday, April 18, 5:00-6:00pm, Nau 101. <a href="https://you-qi2121.github.io/mypage/misc/Khovanov_lecture1.pdf">Notes</a>
+- Lecture 2 - "**Homological algebra of link homology: categorification of the Jones polynomial and the Kuperberg bracket**". Tuesday, April 19, 5:00-6:00pm, Nau 101. <a href="https://you-qi2121.github.io/mypage/misc/Khovanov_lecture2.pdf">Notes</a>
+- Lecture 3 - "**Foams, categorification of Reshetikhin-Turaev link invariants: GL(N) link homology and the 4-color theorem**". Wednesday, April 20, 5:00-6:00pm, Ridley G006. <a href="https://you-qi2121.github.io/mypage/misc/Khovanov_lecture3.pdf">Notes</a>
 
 The lectures will be in-person, and they will be preceded by the <a href="{{site.url}}/ims/workshop-spring-2022/">Workshop on Categorical Methods in Representation Theory and Quantum Topology</a>.
 
