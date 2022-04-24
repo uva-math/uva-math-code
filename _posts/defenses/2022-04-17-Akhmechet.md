@@ -5,7 +5,7 @@ event-date: 2022-04-22 13:15:00
 comments: false
 categories: news events
 published: true
-# hide-this-item: true
+hide-this-item: true
 ---
 
 **Ross Akhmechet** will defend the Ph.D. thesis on Friday, April 22.
