@@ -5,12 +5,12 @@ permalink: /code/
 published: true
 ---
 
-<p ><span >UVa Department of Mathematics Code of Conduct and Guidelines for Conflict
-        Resolution</span></p>
+# UVa Department of Mathematics Code of Conduct and Guidelines for Conflict Resolution
+
 <p ><span ></span></p>
 <p ><span>The University of Virginia Department of Mathematics is an academic workplace and community that
         thrives best under conditions of trust, respect, understanding, cooperation, and belonging among all its
-        members. In this document a </span><span >department member</span><span >&nbsp;means any
+        members. In this document a </span><b>department member</b><span >&nbsp;means any
         faculty member, staff member, student, or visitor of the department.</span></p>
 <p ><span ></span></p>
 <p ><span >This Code of Conduct (i) provides guidelines for behavior that will facilitate a
@@ -26,7 +26,9 @@ published: true
             of Virginia&rsquo;s commitment to free speech and expression</a></span><span>. We seek to promote dialogue
         and an atmosphere of mutual understanding and respect.</span></p>
 <p ><span ></span></p>
-<p ><span >Expected Behavior</span></p>
+
+## Expected Behavior
+
 <p ><span>The Department of Mathematics is an academic community, wherein maintaining utmost s</span><span
         >tandards of academic integrity is essential for functioning. All department members are expected to
     </span><span >exhibit honesty and integrity in academic, research, and professional duties</span><span
@@ -57,7 +59,9 @@ published: true
             clearly define expectations for how department members are to treat each other, and are responsive to
             complaints when they are brought </span><span >forward</span></li>
 </ul>
-<p ><span >Prohibited Conduct</span></p>
+
+## Prohibited Conduct
+
 <p ><span >Conduct prohibited by the university and reporting/redress procedures are outlined in the
         following policies, with which all department members should familiarize themselves: </span></p>
 <ul >
@@ -82,7 +86,9 @@ published: true
             href="https://uvapolicy.virginia.edu/policy/HRM-040&amp;sa=D&amp;source=editors&amp;ust=1652884448459893&amp;usg=AOvVaw305IRr3mRKyaho2-SdnJLE">HRM-040</a></span><span
         >.</span></p>
 <p ><span ></span></p>
-<p ><span >Unacceptable/Unwelcome Conduct</span></p>
+
+## Unacceptable/Unwelcome Conduct
+
 <p ><span>There are o</span><span>ther </span><span>behaviors that do not rise to the level of prohibited
         conduct but can still contribute to a hostile and unwelcoming work environment.</span><span>&nbsp;These
         behaviors can be addressed at the department level, with a n</span><span >on-punitive outcome, before
@@ -106,7 +112,9 @@ published: true
             href="https://hr.virginia.edu/employee-relations/respect-uva&amp;sa=D&amp;source=editors&amp;ust=1652884448461200&amp;usg=AOvVaw2PxGhl1WyjNUThAuc4I42C">Respect
             @ UVa</a></span><span >.</span></p>
 <p ><span ></span></p>
-<p ><span >What To Do/What Will Happen</span></p>
+
+## What To Do/What Will Happen
+
 <p ><span>Any university member who wishes to report prohibited conduct to the university can use the
     </span><span ><a 
             href="https://justreportit.virginia.edu&amp;sa=D&amp;source=editors&amp;ust=1652884448461695&amp;usg=AOvVaw0ELdUDpHycECtR8fBN92wz">Just
