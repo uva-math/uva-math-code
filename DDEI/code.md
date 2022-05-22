@@ -1,6 +1,5 @@
 ---
-title: Code of Conduct and Guidelines for Conflict
-Resolution
+title: Code of Conduct and Guidelines for Conflict Resolution
 layout: static_page_no_right_menu
 permalink: /code/
 published: true
