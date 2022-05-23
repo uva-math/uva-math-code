@@ -22,7 +22,7 @@ published: true
 <p ><span ></span></p>
 <p ><span>This document is not intended to abridge individual rights and freedoms nor to threaten violators
         with censorship and sanctions, and we affirm the </span><span ><a 
-            href="https://freespeech.virginia.edu/statement-free-expression-and-free-inquiry&amp;sa=D&amp;source=editors&amp;ust=1652884448455910&amp;usg=AOvVaw383vL8FfElxNmFnVO0asRy">University
+            href="https://freespeech.virginia.edu/statement-free-expression-and-free-inquiry">University
             of Virginia&rsquo;s commitment to free speech and expression</a></span><span>. We seek to promote dialogue
         and an atmosphere of mutual understanding and respect.</span></p>
 <p ><span ></span></p>
@@ -40,7 +40,7 @@ published: true
     </span><span>respectfully.</span><span>&nbsp; </span><span
         >E</span><span >ncouraged b</span><span >ehavior</span><span
         >&nbsp;includes the following examples, based on </span><span ><a 
-            href="https://hr.virginia.edu/employee-relations/respect-uva&amp;sa=D&amp;source=editors&amp;ust=1652884448457101&amp;usg=AOvVaw35Z1vC6QvsG95LUQeWYK0C">Respect
+            href="https://hr.virginia.edu/employee-relations/respect-uva">Respect
             @ UVa</a></span><span >: respectful department</span><span >&nbsp;members</span></p>
 <ul >
     <li ><span >value the contributions of all members of our community,
@@ -53,7 +53,7 @@ published: true
     <li ><span >have an open and cooperative approach in dealings with each other,
             recognizing individual differences; in particular, we affirm the university&rsquo;s position on the proper
             use of gender pronouns (see </span><span ><a 
-                href="https://eocr.virginia.edu/pronouns&amp;sa=D&amp;source=editors&amp;ust=1652884448457824&amp;usg=AOvVaw1GiDu4Z-LP8aId30IYZfC7">EOCR&rsquo;s
+                href="https://eocr.virginia.edu/pronouns">EOCR&rsquo;s
                 webpage</a></span><span >&nbsp;on this topic)</span></li>
     <li ><span >(if they are in leadership positions) model civility for others and
             clearly define expectations for how department members are to treat each other, and are responsive to
@@ -66,24 +66,24 @@ published: true
         following policies, with which all department members should familiarize themselves: </span></p>
 <ul >
     <li ><span ><a 
-                href="https://uvapolicy.virginia.edu/policy/hrm-009&amp;sa=D&amp;source=editors&amp;ust=1652884448458511&amp;usg=AOvVaw0elTjgli1nc7JvtPGR_lW4">HRM-009</a></span><span
+                href="https://uvapolicy.virginia.edu/policy/hrm-009">HRM-009</a></span><span
             >&nbsp;Preventing and Addressing Discrimination and Harassment (PADH), </span></li>
     <li ><span ><a 
-                href="https://uvapolicy.virginia.edu/policy/hrm-041&amp;sa=D&amp;source=editors&amp;ust=1652884448458813&amp;usg=AOvVaw0QU5BykLGJMagyX5teVuKw">HRM-041</a></span><span
+                href="https://uvapolicy.virginia.edu/policy/hrm-041">HRM-041</a></span><span
             >&nbsp;Policy on Sexual and Gender-Based Harassment and Other Forms of Interpersonal Violence
         </span></li>
     <li ><span ><a 
-                href="https://uvapolicy.virginia.edu/policy/hrm-010&amp;sa=D&amp;source=editors&amp;ust=1652884448459118&amp;usg=AOvVaw1iJS5581nDWvZYKBzn4eeQ">HRM-010</a></span><span
+                href="https://uvapolicy.virginia.edu/policy/hrm-010">HRM-010</a></span><span
             >&nbsp;Preventing and Addressing Retaliation (PAR), and </span></li>
     <li ><span ><a 
-                href="https://uvapolicy.virginia.edu/policy/HRM-040&amp;sa=D&amp;source=editors&amp;ust=1652884448459432&amp;usg=AOvVaw3LkjEizbBiD-LxCLZm1SMC">HRM-040</a></span><span>&nbsp;Reporting
+                href="https://uvapolicy.virginia.edu/policy/HRM-040">HRM-040</a></span><span>&nbsp;Reporting
             by University Employees.</span></li>
 </ul>
 <p ><span ></span></p>
 <p ><span >Note that, with very limited exceptions, any university member who is aware of an
         incident of prohibited conduct is required to file a report with</span><span >&nbsp;the
         university</span><span >; see </span><span ><a 
-            href="https://uvapolicy.virginia.edu/policy/HRM-040&amp;sa=D&amp;source=editors&amp;ust=1652884448459893&amp;usg=AOvVaw305IRr3mRKyaho2-SdnJLE">HRM-040</a></span><span
+            href="https://uvapolicy.virginia.edu/policy/HRM-040">HRM-040</a></span><span
         >.</span></p>
 <p ><span ></span></p>
 
@@ -109,7 +109,7 @@ published: true
 </ul>
 <p ><span >More</span><span >&nbsp;examples can be found under the heading of
         disrespectful behavior at </span><span ><a 
-            href="https://hr.virginia.edu/employee-relations/respect-uva&amp;sa=D&amp;source=editors&amp;ust=1652884448461200&amp;usg=AOvVaw2PxGhl1WyjNUThAuc4I42C">Respect
+            href="https://hr.virginia.edu/employee-relations/respect-uva">Respect
             @ UVa</a></span><span >.</span></p>
 <p ><span ></span></p>
 
@@ -117,16 +117,16 @@ published: true
 
 <p ><span>Any university member who wishes to report prohibited conduct to the university can use the
     </span><span ><a 
-            href="https://justreportit.virginia.edu&amp;sa=D&amp;source=editors&amp;ust=1652884448461695&amp;usg=AOvVaw0ELdUDpHycECtR8fBN92wz">Just
+            href="https://justreportit.virginia.edu">Just
             Report It</a></span><span>&nbsp;tool (scope includes Title IX violations, as in </span><span ><a
             
-            href="https://uvapolicy.virginia.edu/policy/hrm-041&amp;sa=D&amp;source=editors&amp;ust=1652884448461912&amp;usg=AOvVaw07o96v_AHwIdKgpgHg9Ond">HRM-041</a></span><span>)
+            href="https://uvapolicy.virginia.edu/policy/hrm-041">HRM-041</a></span><span>)
         or the </span><span ><a 
-            href="https://eocr.virginia.edu/file-complaint&amp;sa=D&amp;source=editors&amp;ust=1652884448462124&amp;usg=AOvVaw0RdYRFfi9h4D7ww_LEv322">EOCR
+            href="https://eocr.virginia.edu/file-complaint">EOCR
             complaint form</a></span><span>&nbsp;(PADHR violations, </span><span ><a 
-            href="https://uvapolicy.virginia.edu/policy/hrm-009&amp;sa=D&amp;source=editors&amp;ust=1652884448462334&amp;usg=AOvVaw33xWLpGNzBSRiN3iO9G3fk">HRM-009</a></span><span>&nbsp;and
+            href="https://uvapolicy.virginia.edu/policy/hrm-009">HRM-009</a></span><span>&nbsp;and
     </span><span ><a 
-            href="https://uvapolicy.virginia.edu/policy/hrm-010&amp;sa=D&amp;source=editors&amp;ust=1652884448462546&amp;usg=AOvVaw0aet9Rm_gBv__fuWtufECp">HRM-010</a></span><span
+            href="https://uvapolicy.virginia.edu/policy/hrm-010">HRM-010</a></span><span
         >).</span></p>
 <p ><span ></span></p>
 <p ><span >Below, we outline procedures for reporting and addressing grievances that may not rise to
@@ -141,18 +141,18 @@ published: true
             grievances regarding methods of evaluation in courses, a student should first attempt to resolve the issue
             with the course instructor before appealing to a faculty member as above; cf. </span><span ><a
                 
-                href="http://records.ureg.virginia.edu/content.php?catoid%3D53%26navoid%3D4166&amp;sa=D&amp;source=editors&amp;ust=1652884448463189&amp;usg=AOvVaw3I8w4vQLlVha-aQ7cJcgn0">relevant
+                href="http://records.ureg.virginia.edu/content.php?catoid%3D53%26navoid%3D4166">relevant
                 university policy</a></span><span >). </span></li>
     <li ><span>All faculty are expected to be receptive to any concerns voiced to them directly,
             and are expected to maintain confidentiality to the degree that is required and feasible. All concerns are
             to be taken seriously. If a grievance is determined to rise to the level of prohibited conduct, pursuant to
             extant university policies, any faculty member is required to report it, cf. </span><span ><a
                 
-                href="https://uvapolicy.virginia.edu/policy/HRM-040&amp;sa=D&amp;source=editors&amp;ust=1652884448463554&amp;usg=AOvVaw2tfdRx671H18c_WyxUBQGA">HRM-040</a></span><span
+                href="https://uvapolicy.virginia.edu/policy/HRM-040">HRM-040</a></span><span
             >.</span></li>
     <li ><span>A department member who wishes to discuss a concern with an advocate exempt from
             these reporting policies may consult this list of </span><span ><a 
-                href="https://eocr.virginia.edu/chart-confidential-resources&amp;sa=D&amp;source=editors&amp;ust=1652884448463925&amp;usg=AOvVaw2GCEAVMmPUqDuS2MQ0vidg">Confidential
+                href="https://eocr.virginia.edu/chart-confidential-resources">Confidential
                 Resources</a></span><span >.</span></li>
     <li ><span >If in an initial conversation it is deemed necessary, the faculty member
             will direct the complainant to, or facilitate contact with, the DDEI and/or Chair. If requested or required,
@@ -180,9 +180,9 @@ published: true
             the issues that they mediate, to the extent that is permitted by law.</span></li>
     <li ><span>Any retaliation against a complainant who has made a good faith petition under this
             code is unacceptable, by analogy to university policy </span><span ><a 
-                href="https://uvapolicy.virginia.edu/policy/HRM-010&amp;sa=D&amp;source=editors&amp;ust=1652884448464993&amp;usg=AOvVaw3Z6mMbX1yHRMvjei672I74">HRM-010</a></span><span>&nbsp;and
+                href="https://uvapolicy.virginia.edu/policy/HRM-010">HRM-010</a></span><span>&nbsp;and
             the guidelines of </span><span ><a 
-                href="https://hr.virginia.edu/employee-relations/respect-uva&amp;sa=D&amp;source=editors&amp;ust=1652884448465230&amp;usg=AOvVaw3t23SACpqhr-66idOjvPx-">Respect
+                href="https://hr.virginia.edu/employee-relations/respect-uva">Respect
                 @ UVa</a></span><span>, and may constitute prohibited conduct.</span></li>
 </ul>
 <p ><span ></span></p>
