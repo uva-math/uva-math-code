@@ -188,3 +188,17 @@ published: true
 <p ><span ></span></p>
 <p ><span>This code is a living document and subject to revision, with any proposed changes brought to the
         department for comment.</span></p>
+
+---
+
+- ##### Chair:<br>
+{% include person_info_email_only.html UVA_id="ko5wk" %}
+
+- ##### Director of Diversity, Equity, and Inclusion:<br>
+{% include person_info_email_only.html UVA_id="des5e" %}
+
+- ##### Director of Graduate Studies:<br>
+{% include person_info_email_only.html UVA_id="jeb2md" %}
+
+- ##### Director of Undergraduate Studies:<br>
+{% include DUS.html UVA_id="hcg3m" %}
