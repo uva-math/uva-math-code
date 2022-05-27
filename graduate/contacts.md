@@ -24,3 +24,6 @@ tooltips: true
 
 - ##### Bridge program:<br>
 {% include person_info_email_only.html UVA_id="des5e" %}
+
+- ##### Ombudsman:<br>
+{% include person_info_email_only.html UVA_id="pa8e" %}
