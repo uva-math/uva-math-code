@@ -189,6 +189,8 @@ published: true
 <p ><span>This code is a living document and subject to revision, with any proposed changes brought to the
         department for comment.</span></p>
 
+---
+
 ### Contacts
 
 - ##### Chair:<br>
