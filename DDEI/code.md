@@ -189,7 +189,7 @@ published: true
 <p ><span>This code is a living document and subject to revision, with any proposed changes brought to the
         department for comment.</span></p>
 
----
+### Contacts
 
 - ##### Chair:<br>
 {% include person_info_email_only.html UVA_id="ko5wk" %}
