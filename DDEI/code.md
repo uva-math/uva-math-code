@@ -203,4 +203,4 @@ published: true
 {% include person_info_email_only.html UVA_id="jeb2md" %}
 
 - ##### Director of Undergraduate Studies:<br>
-{% include DUS.html UVA_id="hcg3m" %}
+{% include person_info_email_only.html UVA_id="hcg3m" %}

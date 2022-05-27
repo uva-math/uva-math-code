@@ -19,7 +19,7 @@ tooltips: true
 
 - ##### Director of Undergraduate Studies:<br>
 {% include DUS.html UVA_id="hcg3m" %}
-<!-- {% include DUS.html UVA_id="iwh" %} -->
+
 - ##### Director of Lower Division Courses:<br>
 {% include person_info_email_only.html UVA_id="jsr2pz" %}
 
@@ -36,8 +36,7 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="ds5nd" %}
 
 - ##### Transfer of Credit Advisors:<br>
-{% include DUS.html UVA_id="hcg3m" %}<br>
-<!-- <br class="hidden-sm-up">{% include person_info_email_only.html UVA_id="iwh" %}  -->
+{% include person_info_email_only.html UVA_id="hcg3m" %}<br>
 
 - ##### To Declare a Major/Minor:<br>
 
