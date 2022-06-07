@@ -8,6 +8,6 @@ office: 121 Kerchof Hall
 phone: 434-982-2785
 email: egm3zq@virginia.edu
 image: /img/people/2020-fall/McSpirit.jpg 
-
+personal_page: https://eleanormcspirit.com
 
 ---
