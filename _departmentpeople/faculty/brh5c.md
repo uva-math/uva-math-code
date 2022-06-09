@@ -3,7 +3,7 @@ UVA_id: brh5c
 lastname: Hayes
 name: Benjamin
 general_position: faculty
-position: Assistant Professor
+position: Associate Professor
 office: 219 Kerchof Hall
 phone: 434-243-8778
 office_hours: "Mo 11-12, Tue 2-3"
