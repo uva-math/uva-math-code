@@ -77,6 +77,7 @@
 - cal_number: '4'
   name: Mathematical Physics Seminar
   nav_longname: true
+  published_in_nav: true
   shortname: mathphys
   webpage: 'http://pi.math.virginia.edu/mathphys/'
   google_cal_id: 'k613quo3pribde7jrm5e12ft1c@group.calendar.google.com'
@@ -179,7 +180,7 @@
 - cal_number: '13'
   name: Analysis Commons
   shortname: ancommons
-  published_in_nav: true
+  published_in_nav: false
   google_cal_id: 'fj2uv2u9ea74h8b0gihm3iu73c@group.calendar.google.com'
   seminar_weight: 50
   regular_times: TBD
