@@ -7,7 +7,7 @@ comments: false
 categories: news ims ims-special events 
 published: true
 image: __SITE_URL__/img/IMS/Daubechies.png
-image-alt: Prof. 
+image-alt: Prof. Daubechies
 nav_parent: IMS
 more-text: Abstracts and short bio
 ---
