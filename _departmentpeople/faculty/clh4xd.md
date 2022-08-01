@@ -3,8 +3,8 @@ UVA_id: clh4xd
 lastname: Huneke
 name: Craig
 general_position: faculty
-position: Marvin Rosenblum Professor
-office: 231 Kerchof Hall
+position: Marvin Rosenblum Professor Emeritus
+office: 213 Kerchof Hall
 phone: 434-924-4946
 email: huneke@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Huneke_C.jpg
