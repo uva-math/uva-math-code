@@ -2,7 +2,7 @@
 UVA_id: clh4xd
 lastname: Huneke
 name: Craig
-general_position: faculty
+general_position: emeritus
 position: Marvin Rosenblum Professor Emeritus
 office: 213 Kerchof Hall
 phone: 434-924-4946
