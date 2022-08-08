@@ -9,7 +9,7 @@ phone: 434-243-1115
 email: aus8ng@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Sanchez.jpg 
 personal_page:
-
+published: false
 
 
 ---
