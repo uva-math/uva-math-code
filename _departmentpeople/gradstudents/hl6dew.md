@@ -1,5 +1,5 @@
 ---
-UVA_id: hl6de
+UVA_id: hl6dew
 lastname: Li
 name: Haoyu
 general_position: gradstudent
@@ -9,6 +9,7 @@ phone:
 email: hl6dew@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Li.jpg
 personal_page: 
+published: false
 
 ---
 
