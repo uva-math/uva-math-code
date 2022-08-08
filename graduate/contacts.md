@@ -23,7 +23,10 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="tam7b" %}
 
 - ##### Bridge program:<br>
-{% include person_info_email_only.html UVA_id="des5e" %}
+{% include person_info_email_only.html UVA_id="brh5c" %}<span style="margin-left:-4px"></span>, {% include person_info_email_only.html UVA_id="tmk5a" %}
 
-- ##### Ombudsman:<br>
-{% include person_info_email_only.html UVA_id="pa8e" %}
+- ##### Ombudsperson:<br>
+{% include person_info_email_only.html UVA_id="ph7ph" %}
+
+- ##### Instructional Partner (to liaison with Learning Design & Technology):<br>
+{% include person_info_email_only.html UVA_id="lap5r" %}

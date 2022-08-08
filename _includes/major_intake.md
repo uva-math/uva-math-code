@@ -1,4 +1,5 @@
-- {% include person_info_email_only.html UVA_id="pa8e" %} (Last name begins with letter A-E)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="yqd3p" %} (Last name begins with letter F-M)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="zg7c" %} (Last name begins with letter N-T)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="njk4x" %} (Last name begins with letter U-Z)
+- {% include person_info_email_only.html UVA_id="aa4cr" %} (Last name begins with letter A-C)<br><br class="hidden-sm-up">
+- {% include person_info_email_only.html UVA_id="pa8e" %} (Last name begins with letter D-H)<br><br class="hidden-sm-up">
+- {% include person_info_email_only.html UVA_id="yqd3p" %} (Last name begins with letter I-M)<br><br class="hidden-sm-up">
+- {% include person_info_email_only.html UVA_id="zg7c" %} (Last name begins with letter N-Sc)<br><br class="hidden-sm-up">
+- {% include person_info_email_only.html UVA_id="ji2k" %} (Last name begins with letter Sd-Z)
