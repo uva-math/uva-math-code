@@ -106,7 +106,7 @@ To prepare for the mathematics major, you should complete the calculus sequence 
 			<p>Cognitive Science</p>
 			</td>
 			<td>
-			<p>{%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%} or {%include course number=1310%}
+			<p>{%include course number=1220%} or {%include course number=1310%}<span style="margin-left:-4px"></span>. Note that {%include course number=1210%} or equivalent is a prerequisite for {%include course number=1220%}<span style="margin-left:-4px"></span>.
 			</p>
 			</td>
 		</tr>
