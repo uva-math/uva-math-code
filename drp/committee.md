@@ -13,4 +13,5 @@ The DRP Committee is comprised of the following graduate students and postdocs
 - [Valentina Zapata Castro](https://math.virginia.edu/people/vz6an/)
 - [Gennady Uraltsev](https://math.virginia.edu/people/gu8gs/)
 
-The sponsoring faculty members are [Sara Maloni](https://math.virginia.edu/people/sm4cw/) and [Peter Humphries](https://math.virginia.edu/people/ph7ph/).
+The sponsoring faculty members are [Sara Maloni](https://math.virginia.edu/people/sm4cw/) and [Valia Gazaki](https://math.virginia.edu/people/eg4va
+/).
