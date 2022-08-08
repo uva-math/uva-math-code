@@ -5,8 +5,8 @@ name: Felipe Ignacio
 general_position: gradstudent
 position: Graduate Student
 office: 114 Kerchof Hall
-phone: 434-243-8698 
-email: tmpIDLlarena@virginia.edu
+phone: 
+email: 
 image: 
 personal_page:
 
