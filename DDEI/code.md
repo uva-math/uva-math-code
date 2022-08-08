@@ -197,7 +197,7 @@ published: true
 {% include person_info_email_only.html UVA_id="ko5wk" %}
 
 - ##### Director of Diversity, Equity, and Inclusion:<br>
-{% include person_info_email_only.html UVA_id="des5e" %}
+{% include person_info_email_only.html UVA_id="brh5c" %}
 
 - ##### Director of Graduate Studies:<br>
 {% include person_info_email_only.html UVA_id="jeb2md" %}

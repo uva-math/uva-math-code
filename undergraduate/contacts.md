@@ -9,13 +9,13 @@ nav_weight: 3
 tooltips: true
 ---
 
-<h1 class="mb-4">Contacts (2021-22 Academic Year)</h1>
+<h1 class="mb-4">Contacts (2022-23 Academic Year)</h1>
 
 - ##### Chair:<br>
 {% include person_info_email_only.html UVA_id="ko5wk" %}
 
 - ##### Director of Diversity, Equity, and Inclusion:<br>
-{% include person_info_email_only.html UVA_id="des5e" %}
+{% include person_info_email_only.html UVA_id="brh5c" %}
 
 - ##### Director of Undergraduate Studies:<br>
 {% include DUS.html UVA_id="hcg3m" %}
