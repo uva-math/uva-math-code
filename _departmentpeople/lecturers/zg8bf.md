@@ -1,0 +1,12 @@
+---
+UVA_id: zg8bf
+lastname: Gates
+name: Zach
+general_position: lecturer
+position: Lecturer
+office: 323 Kerchof Hall
+phone: 
+email: zg8bf@virginia.edu
+image: 
+personal_page:
+---
