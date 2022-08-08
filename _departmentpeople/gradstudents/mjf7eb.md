@@ -9,5 +9,6 @@ phone: 434-982-2785
 email: mjf7eb@virginia.edu
 image: __SITE_URL__/img/people/2018-fall/feller.jpg
 personal_page: https://math.mattfeller.com/
+published: false
 
 ---
