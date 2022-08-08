@@ -4,7 +4,7 @@ lastname: Cernekova
 name: Kristina
 general_position: lecturer
 position: Lecturer
-office: 212 Kerchof Hall
+office: 323 Kerchof Hall
 phone: 
 email: kc5kv@virginia.edu
 image: 
