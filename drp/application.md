@@ -11,7 +11,7 @@ may apply. Applications are not limited to math majors. The evaluation
 of applications is performed by the graduate committee. The
 applications are judged on a holistic basis. You may opt to receive up to one course credit!
 
-[Mentee Application](https://forms.gle/xU5EH2WVoGobvNBLA)
+[Mentee Application](https://forms.gle/WknhCh56AvMpCjat5)
 
 **Applications Due: Thursday, September 1st, 2021 11:59 PM Eastern Time**
 
@@ -21,4 +21,4 @@ Graduate students who are interested in becoming mentors should fill
 out the following application. To be eligible you must be a
 mathematics graduate student at least in your second year.
 
-[Mentor Application](https://forms.gle/FgvdGEQn7Qsf2QH97)
+[Mentor Application](https://forms.gle/wrexxryRVv1QYXLB9)
