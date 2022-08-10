@@ -6,6 +6,58 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Spring 2022
+
++ Introduction to Knot Theory
+   - Text: The Knot Book, Adams
+   - Mentee: Faith Ellis
+   - Mentor: Louisa Liles
+
++ Reasoning and Mathematical Elegance
+   - Text: Proofs from THE BOOK, Aigner
+   - Mentee: Blair Stilley
+   - Mentor: Walker Stern
+
++ Categories and Arrows
+   - Text: Category Theory in Context, Riehl
+   - Mentee: Declan Stacy
+   - Mentor: Walker Stern
+
++ Complex Analysis
+   - Text: Functions of One Complex Variable, Conway
+   - Mentee: David Bass
+   - Mentor: Shunyu Wan
+
++ Elliptic Curves and Cryptography
+   - Rational Points on Elliptic Curves, Silverman
+   - Mentee: Said Kaili
+   - Mentor: Will Craig
+
++ Introduction to Machine Learning
+   - Text: Machine Learning: A Probabilistic Perspective, Murphy
+   - Mentee: Mina Kim
+   - Mentor: Valentina Zapata Castro
+
++ General Topology and an Application
+   - Text: Topology, Munkres
+   - Mentee: Zacary Abusmaies
+   - Mentor: Tanner Carawan
+
++ p-adic Numbers and Interpolation of Special Zeta Values
+   - Text: p-adic Numbers, p-adic Analysis, and Zeta-Functions. Koblitz
+   - Mentee: Tanner Leonard
+   - Mentor: Joe Webster
+
++ Fractals and Hausdorff Dimension
+   - Text: Fractal Geometry: Mathematical Foundations and Applications, Falconer
+   - Mentee: Ivory Tang
+   - Mentor: Gennady Uraltsev
+
++ Introduction to Fourier Analysis
+   - Text: Fourier Analysis: An Introduction, Stein, Shakarchi
+   - Mentee: Ningxin Zhang
+   - Mentor: Gennady Uraltsev
+
 ### Fall 2021
 
 + Geometric Group Theory
