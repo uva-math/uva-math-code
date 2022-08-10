@@ -73,5 +73,5 @@ The AMS has several kinds of travel grants{% if d <= '18' %}, ranging in scope f
 ### Association for Women in Mathematics
 
 The AWM provides funding for women in mathematics to travel for conferences, mentoring opportunites, and workshops. More information can be found at their website:
-- <a href="https://sites.google.com/site/awmmath/programs/travel-grants">AWM Travel Grants</a>
+- <a href="https://awm-math.org/awards/awm-grants/travel-grants/">AWM Travel Grants</a>
 - See also the [AWM Student Chapter at the University of Virginia](http://people.virginia.edu/~er2eq/uva-awm/) page

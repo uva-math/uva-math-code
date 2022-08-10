@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 
 # will remove github-pages when move to standalone
 
-gem "jekyll", "3.8.6"
+gem "jekyll"
 gem "jekyll-paginate"
 gem "jekyll-feed"
 gem "html-proofer"

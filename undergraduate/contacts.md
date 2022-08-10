@@ -9,11 +9,17 @@ nav_weight: 3
 tooltips: true
 ---
 
-<h1 class="mb-4">Contacts (2021-22 Academic Year)</h1>
+<h1 class="mb-4">Contacts (2022-23 Academic Year)</h1>
+
+- ##### Chair:<br>
+{% include person_info_email_only.html UVA_id="ko5wk" %}
+
+- ##### Director of Diversity, Equity, and Inclusion:<br>
+{% include person_info_email_only.html UVA_id="brh5c" %}
 
 - ##### Director of Undergraduate Studies:<br>
 {% include DUS.html UVA_id="hcg3m" %}
-<!-- {% include DUS.html UVA_id="iwh" %} -->
+
 - ##### Director of Lower Division Courses:<br>
 {% include person_info_email_only.html UVA_id="jsr2pz" %}
 
@@ -27,11 +33,13 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="hdj4nd" %}
 
 - <h5>{% include course number=1320 code=false %} Coordinator:</h5>
-{% include person_info_email_only.html UVA_id="ds5nd" %}
+{% include person_info_email_only.html UVA_id="jsr2pz" %}
+
+- <h5>{% include course number=2310 code=false %} Coordinators:</h5>
+{% include person_info_email_only.html UVA_id="yq2dw" %} (Fall), {% include person_info_email_only.html UVA_id="tmark" %} (Spring)
 
 - ##### Transfer of Credit Advisors:<br>
-{% include DUS.html UVA_id="hcg3m" %}<br>
-<!-- <br class="hidden-sm-up">{% include person_info_email_only.html UVA_id="iwh" %}  -->
+{% include person_info_email_only.html UVA_id="hcg3m" %}<br>
 
 - ##### To Declare a Major/Minor:<br>
 
@@ -46,16 +54,16 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="jf8dc" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="eg4va" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="zg7c" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="brh5c" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="jjh2b" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="ph7ph" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="vk6e" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="njk4x" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="tmark" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="tam7b" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="lap5r" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="yq2dw" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="asr3x" %}
 
-- ##### Ombudsman:<br>
-{% include person_info_email_only.html UVA_id="pa8e" %}
+- ##### Ombudsperson:<br>
+{% include person_info_email_only.html UVA_id="ph7ph" %}
 
 - ##### Math Collaborative Learning Center:<br>
 {% include person_info_email_only.html UVA_id="ed8bg" %}
@@ -66,8 +74,15 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="pa8e" %}
 
 - ##### Math Club contacts:<br>
-{% include person_info_email_only.html UVA_id="ph7ph" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="eg4va" %}
+{% include person_info_email_only.html UVA_id="ph7ph" %} and
+{% include person_info_email_only.html UVA_id="jlm6cj" %}
+
+- ##### AMW Coordinators:<br>
+{% include person_info_email_only.html UVA_id="brh5c" %} and
+{% include person_info_email_only.html UVA_id="tam7b" %}
+
+- ##### Math Circle:<br>
+{% include person_info_email_only.html UVA_id="vk6e" %} and {% include person_info_email_only.html UVA_id="jf8dc" %}
 
 - ##### Putnam contact:<br>
 {% include person_info_email_only.html UVA_id="jf8dc" %}

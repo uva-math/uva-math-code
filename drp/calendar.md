@@ -8,7 +8,7 @@ permalink: /drp/calendar/
 
 | Week(s) | Milestone                                                                      |
 |---------|--------------------------------------------------------------------------------|
-|       1 | Student Talks                                                                  |
+|       1 | Student Talks from the previous semester                                       |
 |       2 | Deadline to apply to the program. The graduate committee decides on the pairs. |
 |       3 | The mentor/mentee pair decide on their topic and book.                         |
 |    4-11 | Work on the project.                                                           |

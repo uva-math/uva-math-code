@@ -12,8 +12,6 @@ more-text: Details about the prize
 
 Congratulations to Associate Professor Julie Bergner on being selected the winner of the 2018-2019 Ruth I. Michler Memorial Prize competition!
 
-[Link to the prize page](https://sites.google.com/site/awmmath/programs/michler-prize)
-
 <!--more-->
 
 The Ruth I. Michler Memorial Prize of the AWM is awarded annually to a woman recently promoted to Associate Professor or an equivalent position in the mathematical sciences. The prize provides a fellowship for the awardee to spend a semester in the Mathematics Department of Cornell University without teaching obligations. Recently promoted associate professors face many challenges as they prepare to take on greater leadership in research and in the profession. The Ruth I. Michler Memorial Prize will honor outstanding women at this stage of their careers and enable them to focus on their research in the stimulating environment of the Cornell University Mathematics Department.

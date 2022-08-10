@@ -3,7 +3,7 @@ UVA_id: jf8dc
 lastname: Földes
 name: Juraj
 general_position: faculty
-position: Assistant Professor
+position: Associate Professor
 office: 322 Kerchof  Hall
 office_hours: "Mon 1-2, Wed 10-11"
 phone: 434-243-8748

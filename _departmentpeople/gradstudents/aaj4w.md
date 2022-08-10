@@ -9,5 +9,6 @@ phone: 434-243-1115
 email: aaj4w@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Jenny.jpg
 personal_page: 
+published: false
 
 ---

@@ -9,6 +9,7 @@ phone:
 email: cls8az@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Siegel_C.jpg
 personal_page: 
+published: false
 
 ---
 

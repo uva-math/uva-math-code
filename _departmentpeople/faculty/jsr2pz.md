@@ -4,7 +4,7 @@ lastname: Rolf
 name: Jim
 non-tt: true
 general_position: faculty
-position: Associate Professor, General Faculty
+position: Professor, General Faculty
 office: 208 Kerchof Hall
 phone: 
 email: jsr2pz@virginia.edu

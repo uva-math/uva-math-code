@@ -12,6 +12,8 @@ personal_page:
 
 areas:
 
+published: false
+
 
 
 ---

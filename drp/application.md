@@ -13,12 +13,11 @@ applications are judged on a holistic basis. You may opt to receive up to one co
 
 [Mentee Application](https://forms.gle/WknhCh56AvMpCjat5)
 
-**Applications Due: Thursday, September 1st, 2021 11:59 PM Eastern Time**
+**Applications Due: Thursday, September 1st, 2022 11:59 PM Eastern Time**
 
 <h2 class="mb-3">Mentor Application</h2>
 
-Graduate students who are interested in becoming mentors should fill
-out the following application. To be eligible you must be a
-mathematics graduate student at least in your second year.
+Graduate students or postdocs who are interested in becoming mentors should fill
+out the following application. To be eligible as a graduate student you must be at least in your second year.
 
 [Mentor Application](https://forms.gle/wrexxryRVv1QYXLB9)

@@ -15,13 +15,11 @@ As part of a deep commitment to diversifying our graduate programs, the professo
 
 <h3 class="mb-4 mt-3">Mentoring</h3>
 
-Our bridge program provides two full years of fellowship support without teaching responsibilities for students to enroll in a combination of courses, guided research opportunities and UVA’s intensive graduate student professional development curriculum known as "PhD Plus." Each bridge fellow will work individually with faculty to develop a customized academic plan that will identify opportunities for additional disciplinary training, enable them to cultivate writing and research skills specific to their field, and develop a competitive portfolio for applying to doctoral programs.
-
-Bridge fellows will have the opportunity to complete a graduate certificate or master’s degree. Qualified students will be considered for promotion into UVA’s own doctoral programs after the first or second year.
+Our bridge program provides two full years of fellowship support without teaching responsibilities for students to enroll in a combination of courses, guided research opportunities and UVA’s intensive graduate student professional development curriculum known as "PhD Plus." Each bridge fellow will work individually with faculty to develop a customized academic plan that will identify opportunities for additional disciplinary training, enable them to cultivate writing and research skills specific to their field, and develop a competitive portfolio for applying to doctoral programs. Qualified students will be considered for promotion into UVA’s own doctoral programs after the first or second year.
 
 <h3 class="mb-4 mt-3">Financial Support</h3>
 
-Students will receive $24,000 per year in living support and full payment of their tuition, fees and single-person coverage in the University’s student health insurance plan for a period of two years.
+Students will receive $26,000 per year in living support and full payment of their tuition, fees and single-person coverage in the University’s student health insurance plan for a period of two years.
 
 
 

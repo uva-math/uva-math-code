@@ -3,7 +3,7 @@ UVA_id: ko5wk
 lastname: Ono
 name: Ken
 general_position: faculty
-position: Thomas Jefferson Professor of Mathematics and Chair
+position: Chairman and Marvin Rosenblum Professor of Mathematics
 office: 228 Kerchof Hall 
 phone: 434-924-4933
 email: ko5wk@virginia.edu

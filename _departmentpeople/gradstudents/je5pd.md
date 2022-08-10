@@ -10,5 +10,6 @@ email: je5pd@virginia.edu
 image: '__SITE_URL__/img/people/2017-fall/Eisner.jpg'
 personal_page:
 
+published: false
 
 ---
