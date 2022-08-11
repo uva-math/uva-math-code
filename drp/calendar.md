@@ -11,7 +11,7 @@ permalink: /drp/calendar/
 |       1 | Student Talks from the previous semester                                       |
 |       2 | Deadline to apply to the program. The graduate committee decides on the pairs. |
 |       3 | The mentor/mentee pair decide on their topic and book.                         |
-|    4-10 | Work on the project.                                                           |
+|    4-11 | Work on the project.                                                           |
 |       8 | Mid-semester evaluation. To ensure all pairs are progressing.                  |
-|     >12 | Begin working on presentation unless you want to work on it during the break.  |
-|      14 | Fancy dinner!                                                                  |
+|       9 | Fancy dinner!                                                                  |
+|     >11 | Prepare presentations for the following semester.                              |
