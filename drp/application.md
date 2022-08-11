@@ -21,3 +21,5 @@ Graduate students or postdocs who are interested in becoming mentors should fill
 out the following application. To be eligible as a graduate student you must be at least in your second year.
 
 [Mentor Application](https://docs.google.com/forms/d/e/1FAIpQLScqbBTGPzrnCWVJx9QW6iA_g7YL8IY4zDCm-pzPIHr2M3mOdQ/viewform?usp=sf_link)
+
+Here is our set of Mentor Guidelines, where you can read the specifics about the role: <INSERT PDF HERE>
