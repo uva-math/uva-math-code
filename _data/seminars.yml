@@ -29,8 +29,9 @@
   webpage: 'http://pi.math.virginia.edu/algebra/'
   google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
   seminar_weight: 40
-  regular_times: Wednesdays and some Fridays, 3:30-4:30pm
+  regular_times: Wednesdays 3:30-4:30pm, Cabell 056 and Fridays 3:30-4:30pm, Cabell 303 
   contact:
+    - UVA_id: yq2dw
     - UVA_id: mve2x
 
 - cal_number: '15'
