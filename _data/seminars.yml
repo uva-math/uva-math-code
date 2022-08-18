@@ -29,8 +29,9 @@
   webpage: 'http://pi.math.virginia.edu/algebra/'
   google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
   seminar_weight: 40
-  regular_times: Wednesdays and some Fridays, 3:30-4:30pm
+  regular_times: Wednesdays 3:30-4:30pm, Cabell 056 and Fridays 3:30-4:30pm, Cabell 303 
   contact:
+    - UVA_id: yq2dw
     - UVA_id: mve2x
 
 - cal_number: '15'
@@ -52,7 +53,7 @@
   webpage: 'http://pi.math.virginia.edu/geometry/'
   google_cal_id: '6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com'
   seminar_weight: 65
-  regular_times: Tuesdays at 2:00, New Cabell 168
+  regular_times: Tuesdays at 2:00, room TBA
   information: |
     The Geometry Seminar talks usually focus on aspects of low-dimensional topology and geometry, including knot theory and categorification, Floer homology, 3- and 4-dimensional manifolds, and symplectic and contact topology. The lectures are often given by outside speakers, however UVa graduate students and faculty give talks as well.
   contact:
@@ -110,7 +111,7 @@
   webpage: 'http://pi.math.virginia.edu/topology/'
   google_cal_id: 'pce8r0mnja2do20vkku2gslamk@group.calendar.google.com'
   seminar_weight: 120
-  regular_times: Thursdays at 2:00, New Cabell 168
+  regular_times: Thursdays at 2:00, room TBA
   information: |
     Topology Seminar talks are on recent developments in algebraic topology—including homotopy theory, ordinary and extraordinary homology and cohomology, cobordism theory, and K-theory—and related subjects like differential topology and homological algebra.
   contact:
