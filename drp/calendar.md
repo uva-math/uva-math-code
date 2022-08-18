@@ -6,12 +6,14 @@ permalink: /drp/calendar/
 
 <h2 class="mb-3">Timeline</h2>
 
-| Week(s) | Milestone                                                                      |
-|---------|--------------------------------------------------------------------------------|
-|       1 | Student Talks from the previous semester                                       |
-|       2 | Deadline to apply to the program. The graduate committee decides on the pairs. |
-|       3 | The mentor/mentee pair decide on their topic and book.                         |
-|    4-11 | Work on the project.                                                           |
-|       8 | Mid-semester evaluation. To ensure all pairs are progressing.                  |
-|       9 | Fancy dinner!                                                                  |
-|     >11 | Prepare presentations for the following semester.                              |
+| Week(s) | Milestone                                                                            |
+|---------|--------------------------------------------------------------------------------------|
+| Week of Aug 29th     | Student Talks from the previous semester                                |
+| Sep 1st              | Deadline to apply to the program.                                       |
+| Week of Sep 5th      | The mentor/mentee pair decide on their topic and book.                  |
+| Until Early November | Work on the project.                                                    |
+| Sep 13th             | Mentor lunch + Q&A, noon in Kerchof 314 (math lounge).                  |
+| Week of Oct 17th     | Mid-semester evaluation. To ensure all pairs are progressing.           |
+| Oct 25th             | Mentor lunch + Q&A, noon in Kerchof 314 (math lounge).                  |
+| Nov 14th and onwards | Prepare presentations for the following semester.                       |
+| Nov 16th             | Fancy dinner! 6PM, restaurant TBD.                                      |
