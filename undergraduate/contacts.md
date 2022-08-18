@@ -77,7 +77,7 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="ph7ph" %} and
 {% include person_info_email_only.html UVA_id="jlm6cj" %}
 
-- ##### AMW Coordinators:<br>
+- ##### AWM (Association for Women in Mathematics) Coordinators:<br>
 {% include person_info_email_only.html UVA_id="brh5c" %} and
 {% include person_info_email_only.html UVA_id="tam7b" %}
 
