@@ -25,7 +25,7 @@ Here are this year's course coordinators and GTA Mentor:
 
 - {% include course number=1310 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="hdj4nd" %}
 
-- {% include course number=1320 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="ds5nd" %}
+- {% include course number=1320 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="jsr2pz" %}
 
 ---
 
