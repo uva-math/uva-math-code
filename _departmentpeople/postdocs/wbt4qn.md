@@ -3,7 +3,7 @@ UVA_id: wbt4qn
 lastname: Lu
 name: Kang
 general_position: postdoc
-position: Research Associate and Lecturer
+position: Whyburn Research Associate and Lecturer
 office: 229 Kerchof Hall
 phone:
 email: wbt4qn@virginia.edu
