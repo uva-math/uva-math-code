@@ -42,7 +42,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 
 <h2 class="mb-4 mt-4">Schedule </h2>
 
-<p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p>
+<!-- <p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p> -->
 
 
 
