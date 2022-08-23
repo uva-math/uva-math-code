@@ -41,8 +41,8 @@ The following is the list of basic, graduate courses in algebra prerequisite for
 
 #### Second Year
 
-- _First Semester:_ MATH 7753 Algebra III (algebras over a field, Artin-Wedderburn theory and the Jacobson radical, applications to representation theory) and MATH 9950 Algebra Seminar.
-- _Second Semester:_ MATH 7754 Algebra IV (topics in algebra) and MATH 9950 Algebra Seminar
+<!-- - _First Semester:_ MATH 7753 Algebra III (algebras over a field, Artin-Wedderburn theory and the Jacobson radical, applications to representation theory) and MATH 9950 Algebra Seminar.
+- _Second Semester:_ MATH 7754 Algebra IV (topics in algebra) and MATH 9950 Algebra Seminar -->
 
 Students also take one additional algebra course in one of the two semesters.
 
@@ -278,7 +278,7 @@ We must emphasize that these areas have a lot in common, so the subdivision into
 
 
 - _First Semester:_ MATH 7810 Algebraic Topology II (cohomology, Poincar&eacute; duality) and MATH 9800 Topology Seminar.
-- _Second Semester:_ MATH 7830 Fiber Bundles (vector bundles, characteristic classes, elements of K-theory) and MATH 9800 Topology Seminar. In addition, during the second year students should take at least one additional topology course.
+- _Second Semester:_ MATH 7830 Fiber Bundles (vector bundles, characteristic classes, elements of K-theory) or MATH 8720 Differential Geometry (offered in alternating years). In addition, during the second year students should take at least one additional topology course.
 
 
  The course MATH 7830 will be offered in the Spring semester each year. Besides taking the sequence MATH 7820, 7800, 7810, 7830, students with interests in topology are required--within the first two years--to take at least one additional course in the specialized area or track of topology (see below) which they expect to follow. These additional courses may be independent reading courses taken under the supervision of a faculty member.

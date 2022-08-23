@@ -23,15 +23,15 @@ nav_weight: 5
 
 <p>Additional support in the summer is available for students who continue to demonstrate progress toward their degree during the summer.</p>
 
-Graduate students in topology are supported by the NSF RTG grant. See the [RTG page](https://math.virginia.edu/geomtop/).
+Some graduate students in topology are supported by the NSF RTG grant. See the [RTG page](https://math.virginia.edu/geomtop/).
 
 ---
 
 ## Jefferson Scholars Foundation Graduate Fellowships
 
-<p>The Mathematics Department is able to nominate a small number of applicants to be considered for <strong>Jefferson Scholars Foundation Graduate Fellowships</strong>.&nbsp; The award of these prestigious and remunerative&nbsp; 5 year fellowships is based on strong academic disciplinary credentials, <em>combined</em> with an interest in reaching out to a broad audience.&nbsp; Fellows participate in the various Jefferson Scholar activities throughout their graduate studies.&nbsp;</p>
+<p>The Mathematics Department is able to nominate a small number of applicants to be considered for <strong>Jefferson Scholars Foundation Graduate Fellowships</strong>.&nbsp; The award of these prestigious fellowships is based on strong academic disciplinary credentials, <em>combined</em> with an interest in reaching out to a broad audience.</p>
 
-<p>Candidates nominated by the various University departments are invited by the Foundation to attend a selection competition conducted in late February which lasts a couple days and includes lectures by University faculty and administrators, meetings with faculty and students, and a formal interview.</p>
+<p>The department solicits nominations from eligible students in the Spring, and department nominees are considered by a college-wide committee.</p>
 
 <p>For more information about this see&nbsp; <a href=" https://www.jeffersonscholars.org/jefferson-fellowship"><code class="highlighter-rouge"> https://www.jeffersonscholars.org/jefferson-fellowship</code></a>.</p>
 
