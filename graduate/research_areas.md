@@ -41,8 +41,8 @@ The following is the list of basic, graduate courses in algebra prerequisite for
 
 #### Second Year
 
-<!-- - _First Semester:_ MATH 7753 Algebra III (algebras over a field, Artin-Wedderburn theory and the Jacobson radical, applications to representation theory) and MATH 9950 Algebra Seminar.
-- _Second Semester:_ MATH 7754 Algebra IV (topics in algebra) and MATH 9950 Algebra Seminar -->
+- _First Semester:_ <!--MATH 7753 Algebra III (algebras over a field, Artin-Wedderburn theory and the Jacobson radical, applications to representation theory) and MATH 9950 Algebra Seminar.-->
+- _Second Semester:_ <!--MATH 7754 Algebra IV (topics in algebra) and MATH 9950 Algebra Seminar-->
 
 Students also take one additional algebra course in one of the two semesters.
 
