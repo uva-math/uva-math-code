@@ -63,7 +63,7 @@ The following websites for international students should be helpful:
 - International Studies Office:
 	[`http://www.virginia.edu/iso/`](http://www.virginia.edu/iso/)
 
- New teaching assistants whose first language is not English have their spoken English proficiency evaluated by the International Students Office and Teaching Resource Center. This test is similar to ETS&#39;s Test of Spoken English (TSE), and students who have taken the TSE, and have a high enough score, can be exempted from this evaluation.
+New teaching assistants whose first language is not English have their spoken English proficiency evaluated by the International Students Office and Teaching Resource Center. This test is similar to ETS&#39;s Test of Spoken English (TSE), and students who have taken the TSE, and have a high enough score, can be exempted from this evaluation.
 
 ---
 
