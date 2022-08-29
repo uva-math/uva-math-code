@@ -43,8 +43,8 @@ If you would like to participate in our mentoring program, please send us a mess
 ### Our chapter's leadership
 
 <ul>
-<li>President: Casia Siegel</li>
-<li>Vice President: Catherine Cossaboom</li>
+<li>President: Catherine Cossaboom</li>
+<!-- <li>Vice President: Catherine Cossaboom</li> -->
 <li>Faculty Mentors: {% include person_info_email_only.html UVA_id="brh5c" %} and {% include person_info_email_only.html UVA_id="tam7b" %}</li>
 </ul>  
 
