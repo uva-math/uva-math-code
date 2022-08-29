@@ -126,16 +126,16 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 153.422px; height: 38px;"> Calculus I & II </td>
 <td style="width: 224.594px; height: 38px;"> Math 3000/3310 <br/> Math 3350/3351 </td> <!-- M -->
 <td style="width: 235px; height: 38px;"> Math 2310 </td>
-<td style="width: 171.453px; height: 38px;"></td> <!-- W -->
+<td style="width: 171.453px; height: 38px;"> Calculus I & II</td> <!-- W -->
 <td style="width: 218.578px; height: 38px;"></td>
 <td style="width: 245.703px; height: 38px;"></td>
 </tr>
 <tr style="height: 38px;">
 <td style="width: 90px; height: 38px; text-align: center;">8:15-9:30</td>
 <td style="width: 153.422px; height: 38px;"></td>
-<td style="width: 224.594px; height: 38px;"> Caclulus I & II </td> <!-- M -->
+<td style="width: 224.594px; height: 38px;">  </td> <!-- M -->
 <td style="width: 234.625px; height: 38px;"></td>
-<td style="width: 171.453px; height: 38px;"> Calculus I & II </td> <!-- W -->
+<td style="width: 171.453px; height: 38px;"> </td> <!-- W -->
 <td style="width: 218.578px; height: 38px;"></td>
 <td style="width: 245.703px; height: 38px;"></td>
 </tr>
