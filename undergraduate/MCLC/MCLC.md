@@ -151,18 +151,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </tbody>
 </table>
 
-| Time      | Sunday                        | Monday                                            | Tuesday                | Wednesday                     | Thursday               | Friday                 |
-|-----------|-------------------------------|---------------------------------------------------|------------------------|-------------------------------|------------------------|------------------------|
-| 11-12     |                               | Math 1310 Office Hours                            | Math 1310 Office Hours | Math 1310 Office Hours        | Math 1310 Office Hours |                        |
-| 12-1      |                               |                                                   |                        | Math 1310 Office Hours        |                        |                        |
-| 1-2       |                               |                                                   |                        |                               |                        | Math 1310 Office Hours |
-| 2-3       |                               |                                                   |                        | Math 1310 Office Hours        |                        | Math 1310 Office Hours |
-| 3-4       | Math 3100                     | Math 1220 Office Hours                            |                        | Calculus I & II               |                        |                        |
-| 4-5       | Math 2310 <br/>Math 3000/3310 |                                                   |                        | Calculus I & II               | Calculus I & II        |                        |
-| 5-6       |                               | Calculus I & II                                   |                        |                               | Calculus I & II        |                        |
-| 6-7       |                               |                                                   |                        |                               |                        |                        |
-| 7-8:15    | Calculus I & II               | Math 3000/3310 <br/>Math 3250 <br/>Math 3350/3351 | Math 2310              | Calculus I & II               |                        |                        |
-| 8:15-9:30 |                               |                                                   |                        | Math 3350/3351 <br/>Math 3354 |
+
 
 
 
