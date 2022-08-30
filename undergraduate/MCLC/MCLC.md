@@ -46,7 +46,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <!-- <p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p> -->
 
 
--<table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 353px; width: 1400px;">
+<table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 353px; width: 1400px;">
 <thead style="background-color: coral; text-align: center;">
 <tr style="text-align: center; height: 19px;">
 <th style="width: 90px; height: 19px;">Time</th>
