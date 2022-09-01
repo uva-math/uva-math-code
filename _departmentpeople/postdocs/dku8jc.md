@@ -8,7 +8,7 @@ office: 131 Kerchof Hall
 phone:
 email: dku8jc@virginia.edu
 image: 
-personal_page: 
+personal_page: danielslonim.github.io 
 
 
 
