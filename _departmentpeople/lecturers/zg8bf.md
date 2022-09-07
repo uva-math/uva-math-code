@@ -7,6 +7,6 @@ position: General Faculty Lecturer
 office: 323 Kerchof Hall
 phone: 
 email: zg8bf@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2022-fall/Gates.jpg 
 personal_page:
 ---
