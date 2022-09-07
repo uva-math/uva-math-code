@@ -7,7 +7,7 @@ position: Whyburn Postdoctoral Researcher
 office: 131 Kerchof Hall
 phone:
 email: dku8jc@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2022-fall/Slonim.jpg 
 personal_page: https://danielslonim.github.io 
 
 
