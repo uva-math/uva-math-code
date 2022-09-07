@@ -1,6 +1,6 @@
 ---
 UVA_id: tmpIDMacmillan
-lastname: Macmillan
+lastname: McMillan
 name: Matt
 general_position: gradstudent
 position: Visiting Student
