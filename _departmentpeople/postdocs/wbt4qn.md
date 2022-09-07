@@ -7,7 +7,7 @@ position: Whyburn Research Associate and Lecturer
 office: 229 Kerchof Hall
 phone:
 email: wbt4qn@virginia.edu
-image: https://kanglu.me/files/kang-lu/files/lu_k.jpeg
+image: __SITE_URL__/img/people/2022-fall/Lu.jpg 
 personal_page: https://kanglu.me
 
 areas:
