@@ -7,7 +7,7 @@ position: Bridge to the Doctorate Student
 office: 
 phone: 
 email: aus8ng@virginia.edu
-image: __SITE_URL__/img/people/2021-fall/Sanchez.jpg 
+image: image: __SITE_URL__/img/people/2022-fall/Sanchez.jpg 
 personal_page:
 
 
