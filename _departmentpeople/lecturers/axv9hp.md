@@ -7,6 +7,6 @@ position: Lecturer
 office: 212 Kerchof Hall
 phone: 
 email: axv9hp@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2022-fall/Nabb.jpg 
 personal_page:
 ---
