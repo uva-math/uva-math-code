@@ -7,7 +7,7 @@ position: Graduate Student
 office: 119 Kerchof Hall
 phone: 
 email: eyu4dh@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2022-fall/Brunialti.jpg 
 personal_page:
 
 ---
