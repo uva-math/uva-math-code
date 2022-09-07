@@ -1,6 +1,6 @@
 ---
 UVA_id: mt3cb
-lastname: Tarighat
+lastname: Tarighat Feller
 name: Mojdeh
 general_position: gradstudent
 position: Graduate Student
