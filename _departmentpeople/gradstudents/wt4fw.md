@@ -7,7 +7,7 @@ position: Graduate Student
 office: 127 Kerchof Hall
 phone: 
 email: wt4fw@virginia.edu
-image: __SITE_URL__/img/people/2020-spring/Tralle.jpg
+image: __SITE_URL__/img/people/2022-fall/Tralle.jpg 
 personal_page:
 ---
 
