@@ -7,7 +7,7 @@ position: Graduate Student
 office: 114 Kerchof Hall
 phone: 
 email: hmy3tf@virginia.edu
-image: 
-personal_page:
+image: __SITE_URL__/img/people/2022-fall/Flores.jpg 
+personal_page: https://sites.google.com/view/felipefloresllarena/
 
 ---
