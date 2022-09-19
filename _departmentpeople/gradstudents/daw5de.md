@@ -8,7 +8,7 @@ office: 112 Kerchof Hall
 phone: 434-243-2304
 email: daw5de@virginia.edu
 image: '__SITE_URL__/img/people/2017-fall/Will.jpg'
-personal_page:
+personal_page: https://sites.google.com/virginia.edu/andrew-will
 
 
 ---
