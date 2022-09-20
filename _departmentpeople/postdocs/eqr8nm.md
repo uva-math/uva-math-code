@@ -8,7 +8,7 @@ office: 301 Kerchof Hall
 phone: 
 email: eqr8nm@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Balderrama_W.jpg 
-personal_page: 
+personal_page: https://williamb.info/ 
 
 areas:
 
