@@ -3,7 +3,7 @@ layout: post
 title: 2022 Final Exercises Ceremony for Mathematics (inclement weather location)
 event-date: 2022-05-21 12:00:00
 comments: false
-categories: news events major-news
+categories: news events 
 published: true
 image: __SITE_URL__/img/Final_Exercises2019.jpg
 image-alt: Final Exercises ceremony 2019
