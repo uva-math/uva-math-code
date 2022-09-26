@@ -54,7 +54,7 @@ title: Seminar in operator theory and operator algebras
 <hr />
 <h3 class="mb-3">Archives</h3>
 
-<p><a href="/seminars/sotoa/">upcoming</a> | <a href="/seminars/sotoa/2021-22/">2021-22</a> | <a href="/seminars/sotoa/2020-21/">2020-21</a> | <a href="/seminars/sotoa/2019-20/">2019-20</a> | <a href="/seminars/sotoa/2018-19/">2018-19</a> | <a href="/seminars/sotoa/2017-18/">2017-18</a></p>
+<p><a href="/seminars/sotoa/">upcoming</a> | <a href="/seminars/sotoa/2022-23/">2022-23</a> | <a href="/seminars/sotoa/2021-22/">2021-22</a> | <a href="/seminars/sotoa/2020-21/">2020-21</a> | <a href="/seminars/sotoa/2019-20/">2019-20</a> | <a href="/seminars/sotoa/2018-19/">2018-19</a> | <a href="/seminars/sotoa/2017-18/">2017-18</a></p>
 
 <div class="list-group-sm">
   <a class="list-group-item list-group-item-action h5 orange-item" href="https://dshermanmath.github.io/base/sotoa/sotoa.html">Old seminar page with pre-2017 talks</a>
