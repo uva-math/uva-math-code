@@ -42,7 +42,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 
 <h2 class="mb-4 mt-4">Schedule </h2>
 
-<p style="font-size:120%;color:red;"> The MCLC will remain closed during Reading Days, Octber 1 - October 4. </p>
+<p style="font-size:120%;color:red;"> The MCLC will remain closed during Reading Days, October 1 - October 4. </p>
 <p> Besides MCLC sessions, the schedule below also includes office hours that instructors hold at the MCLC. However, <b> this is not a comprehensive list of office hours.</b> For a comprehensive list of office hours ask your instructor, or visit the Collab site for your course. </p>
 <!-- <p style="font-size:120%;"> TBA </p> -->
 <!-- <p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p> -->
