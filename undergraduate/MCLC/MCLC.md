@@ -45,7 +45,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <!-- <p style="font-size:120%;color:red;"> The MCLC will remain closed during Reading Days, October 1 - October 4. </p> -->
 <p> Besides MCLC sessions, the schedule below also includes office hours that instructors hold at the MCLC. However, <b> this is not a comprehensive list of office hours.</b> For a comprehensive list of office hours ask your instructor, or visit the Collab site for your course. </p>
 <!-- <p style="font-size:120%;"> TBA </p> -->
-<!-- <p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p> -->
+<p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p> 
 
 
 <table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 353px; width: 1400px;">
@@ -136,7 +136,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <tr style="height: 10px;">
 <td style="width: 90px; text-align: center; height: 10px;">6-7</td>
 <td style="width: 153.422px; height: 10px;"></td>
-<td style="width: 235px; height: 10px;"> Caclulus I & II </td>
+<td style="width: 235px; height: 10px;color:red;"> Caclulus I & II </td>
 <td style="width: 234.625px; height: 10px;"></td>
 <td style="width: 171.453px; height: 10px;"></td>
 <td style="width: 218.578px; height: 10px;"></td>
