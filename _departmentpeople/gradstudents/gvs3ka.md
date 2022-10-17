@@ -7,7 +7,7 @@ position: Graduate Student
 office: 119 Kerchof Hall
 phone: 
 email: gvs3ka@virginia.edu
-image: 
+image: image: __SITE_URL__/img/people/2022-fall/Jaklitsch.jpg 
 personal_page:
 
 ---
