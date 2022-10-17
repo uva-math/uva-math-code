@@ -27,7 +27,7 @@ Courses and research amounting to 72 credit hours. Courses must include satisfac
 
 {% include grad_general_exams.md %}
 
-Examples of past general exams can be found [here]({{site.url}}/graduate/generals/).
+<b>Examples of past general exams can be found [here]({{site.url}}/graduate/generals/)</b>.
 
 ### Second-Year Proficiency Examination
 
