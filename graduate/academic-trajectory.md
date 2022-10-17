@@ -9,7 +9,7 @@ nav_weight: 10
 
 <h1 class="mb-3">Academic trajectory</h1>
 
-Beginning graduate students are advised by the Graduate Advisor. Usually in the second year students acquire a major professor who does all subsequent advising. The responsibility rests with the student to contact a prospective major professor. The advisor approves course selections, monitors progress, and generally oversees the student&#39;s program of study. Satisfactory progress is usually measured by a grade of at least B in all courses.
+Beginning graduate students are advised by the Director of Graduate Studies. Usually in the second year students acquire a major professor who does all subsequent advising. The responsibility rests with the student to contact a prospective major professor. The advisor approves course selections, monitors progress, and generally oversees the student&#39;s program of study. Satisfactory progress is usually measured by a grade of at least B in all courses.
 
 ### First year
 
