@@ -17,7 +17,7 @@ nav_weight: 5
 
 <p>Almost all mathematics doctoral graduate students are guaranteed five years of full support at the University, with financial aid awarded on an annual basis, contingent upon satisfactory progress.</p>
 
-<p>Entering students typically have teaching fellowships, which involve assisting in discussion sections of undergraduate courses. Most advanced students have teaching assistantships, which involve teaching lower division undergraduate courses such as calculus. A small number of students may also be supported through university fellowships, outside fellowships, and research grants. Every student gets two semesters without teaching on our usual fellowship support.</p>
+<p>Entering students typically have teaching fellowships, which involve assisting in discussion sections of undergraduate courses. Most advanced students have teaching assistantships, which involve teaching lower division undergraduate courses such as calculus. Every student gets two semesters without teaching on our usual fellowship support. A small number of students may also be supported through university fellowships, outside fellowships, and research grants.</p>
 
 <p>Stipends include an allowance for health insurance, tuition, and fees.</p>
 
