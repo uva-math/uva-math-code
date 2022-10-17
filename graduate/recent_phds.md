@@ -9,7 +9,7 @@ nav_weight: 70
 
 <h1 class="mb-3">Recent PhDs</h1>
 
-The list includes initial job placement if known.
+The list includes initial job placement or current job (if known).
 
 ## Fall 2019
 
