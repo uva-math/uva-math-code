@@ -9,11 +9,7 @@ nav_weight: 18
 
 <h1 class="mb-3"></h1>
 
-General Exams are given twice yearly: the last week before classes begin in August and the last week before classes resume in January. Current syllabi for the Algebra, Analysis, and Topology General Examinations:
-
-- [Syllabus for Algebra General Exam]({{ site.url }}/graduate/docs/Syllabus for Algebra General Exam 1.pdf)
-- [Syllabus for Analysis General Exam]({{ site.url }}/graduate/docs/Syllabus for Analysis General Exam 2.pdf)
-- [Syllabus for Topology General Exam]({{ site.url }}/graduate/docs/Syllabus for Topology General Exam 3.pdf)
+{% include grad_general_exams.md %}
 
 Below are old exams and study materials for each of the subfields.
 
