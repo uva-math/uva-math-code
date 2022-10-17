@@ -8,7 +8,8 @@ office: 127 Kerchof Hall
 phone: 
 email: wt4fw@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/Tralle.jpg 
-personal_page:
+personal_page: https://sites.google.com/view/wojtek-tralle/
+
 ---
 
 

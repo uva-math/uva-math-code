@@ -39,7 +39,13 @@ Examples of past general exams can be found [here]({{site.url}}/graduate/general
 
 ### Second-Year Proficiency Examination
 
-A passing evaluation on an oral examination covering material from two or three selected second-year courses. Its purpose is to gauge the student&#39;s readiness to begin carrying out research in the student&#39;s chosen area, and the exact content is determined by faculty in consultation with the student. The exam is normally taken in May of the second year. If problems with the student&#39;s readiness are noted, the examining panel will make recommendations on how to fix these and meet again with the student in August.
+The purpose of the oral exam is to assess whether a student is prepared to begin doing research in their chosen area with a thesis advisor.  The exam format is flexible and can be tailored to the students’ and examiners’ preferences. For example, it can consist of the student giving a presentation, followed by a question-and-answer period with the examiners, but it could also simply take the form of a question-and-answer exam.  Typically these exams should be expected to take 1.5-2 hours. 
+ 
+A student should develop an exam syllabus together with the intended thesis advisor and one additional permanent faculty member.  The nature of the syllabus can be flexible, depending on the research area and preferences of the student and examiners.  It could still take the form of a list of topics in a given area, drawn from a course or from standard textbooks, but could also take the form of a review of relevant papers, or a suitable combination.  The quantity of material should be roughly comparable to the content of two second-year courses.  While the exam format can be flexible, in the ways discussed above, it should be specified in the syllabus for approval.   
+ 
+The syllabus should be submitted to the Graduate Committee at least four weeks before the intended exam to allow for adequate time for review and revision, if necessary.  After the exam, regardless of the outcome, a form should be submitted to the department, including signatures of the two faculty examiners, indicating which of the two is the intended advisor, as well as the Director of Graduate Studies, to confirm that the syllabus was approved by the Graduate Committee.   
+ 
+Students already enrolled in Fall 2022 or earlier, before this format was approved, may opt to take the oral exam in the previous format of two faculty examining a student on the material from two semester courses on material beyond the first-year courses.
 
 ### Teaching Requirements
 

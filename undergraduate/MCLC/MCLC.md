@@ -42,9 +42,10 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 
 <h2 class="mb-4 mt-4">Schedule </h2>
 
+<!-- <p style="font-size:120%;color:red;"> The MCLC will remain closed during Reading Days, October 1 - October 4. </p> -->
 <p> Besides MCLC sessions, the schedule below also includes office hours that instructors hold at the MCLC. However, <b> this is not a comprehensive list of office hours.</b> For a comprehensive list of office hours ask your instructor, or visit the Collab site for your course. </p>
 <!-- <p style="font-size:120%;"> TBA </p> -->
-<!-- <p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p> -->
+<p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p> 
 
 
 <table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 353px; width: 1400px;">
@@ -73,7 +74,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 90px; height: 19px; text-align: center;">11-12</td>
 <td style="width: 153.422px; height: 19px;"></td>
 <td style="width: 235px; height: 19px;"> Math 1310 Office Hours </td>
-<td style="width: 235px; height: 19px;"> Math 1310 Office Hours </td>
+<td style="width: 235px; height: 19px;"> </td>
 <td style="width: 235px; height: 19px;"> Math 1190/1210 Office Hours <br/> Math 1310 Office Hours </td> <!-- W -->
 <td style="width: 235px; height: 19px;"> Math 1190/1210 Office Hours <br/> Math 1310 Office Hours </td>
 <td style="width: 235px; height: 19px;"></td>
@@ -84,7 +85,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 235px; height: 19px;"></td> <!-- M -->
 <td style="width: 235px; height: 19px;"></td>
 <td style="width: 235px; height: 19px;"> Math 1310 Office Hours </td> <!-- W -->
-<td style="width: 235px; height: 19px;"></td>
+<td style="width: 235px; height: 19px;"> Math 1310 Office Hours </td>
 <td style="width: 235px; height: 19px;"></td>
 </tr>
 <tr style="height: 19px;">
