@@ -5,9 +5,18 @@ g_info: true
 permalink: /graduate/teaching/
 nav_parent: Graduate
 nav_weight: 18
+tooltips: true
 ---
 
 <h1>Teaching Information</h1>
+
+
+Students in their first year are teaching assistants, and typically lead discussion sections for courses such as Multivariable Calculus, Transition to Higher Mathematics, or Basic Real Analysis, and sometimes also serve as graders.  These assignments are expected to take about 10 hours per week.  First year students have a teaching orientation the week before classes begin, and take {% include course number=7000 %} in the fall semester to help introduce them to the teaching experience.
+
+Students in their second year and beyond typically teach their own sections of Calculus courses, and these assignments usually take 15-20 hours per week, depending on the course.  These courses are closely coordinated by faculty members, and have common syllabi and exams.  Graduate instructors for these courses have an orientation and regular meetings with their coordinators.
+
+There are some opportunities for teaching other courses, such as Financial Mathematics, in later years in the program.  Students can also participate in programs through the [Center for Teaching Excellence](https://cte.virginia.edu).  Outside of their regular teaching responsibilities, some students also engage in teaching-related activities through the [Directed Reading Program](https://math.virginia.edu/drp/), [Math Circles](https://math.virginia.edu/mathcircle/), and [summer REU programs](https://uva.theopenscholar.com/reu/program).
+
 
 ---
 
