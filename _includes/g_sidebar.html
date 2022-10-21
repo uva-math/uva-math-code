@@ -3,7 +3,13 @@
 <div class="list-group-sm">
   <a class="list-group-item list-group-item-action h5 orange-item {% if page.permalink == "/graduate/" %}active{% endif %}" href="{{site.url}}/graduate/">Information</a>
     {% for pg in sorted_pages %}
-    {% if pg.layout == "g_page" and pg.g_info %}
+    {% if pg.layout == "g_page" and pg.g_info and pg.nav_weight <=10 %}
+        <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">{{pg.title}}</a>
+    {% endif %}
+    {% endfor %}
+    <a class="list-group-item list-group-item-action h5" href="{{site.url}}/facultyresearch/">Research areas&nbsp;<span class="fa fa-external-link" aria-hidden="true"></span></a>
+    {% for pg in sorted_pages %}
+    {% if pg.layout == "g_page" and pg.g_info and pg.nav_weight >= 11 %}
         <a class="list-group-item list-group-item-action h5 {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">{{pg.title}}</a>
     {% endif %}
     {% endfor %}
