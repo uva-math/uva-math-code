@@ -43,4 +43,5 @@ If you would like to participate in our mentoring program, please send us a mess
 <li>Faculty Mentors: {% include person_info_email_only.html UVA_id="brh5c" %} and {% include person_info_email_only.html UVA_id="tam7b" %}</li>
 </ul>  
 
-##### <a href="{{site.url}}/awm/who/">Past leadership</a>
+
+<h5 class="mt-4"> <a href="{{site.url}}/awm/who/">Past leadership</a></h5>
