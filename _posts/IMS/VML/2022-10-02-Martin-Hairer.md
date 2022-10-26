@@ -21,19 +21,19 @@ Martin Hairer will visit the department in the period November 28 – December 3
 <!--more-->
 
 ##### Lecture 1
-### 
+### Taming infinities
 
 **Abstract:** 
 
 Lecture 1 is accessible to mathematics majors.
 
 ##### Lecture 2
-### 
+### Stochastic quantisation of Yang-Mills
 
 **Abstract:** 
 
 ##### Lecture 3
-### 
+### Symmetries and renormalisation
 
 **Abstract:** 
 
