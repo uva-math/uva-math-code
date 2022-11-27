@@ -17,9 +17,6 @@ nav_parent: IMS
 
 <h5 class="mt-1 mb-4"><a href="https://www.hairer.org">Martin Hairer</a> (Imperial College London)</h5>
 
-Martin Hairer will visit the department from November 28 – December 3. He will deliver the Fall 2022 installment of our VML series, consisting of 3 lectures on November 29, 30, and December 1.
-
-
 ##### Lecture 1. "Taming infinities"
 
 November 29, 5-6pm, Nau 101. Accessible to mathematics majors.
@@ -33,6 +30,8 @@ November 30, 5-6pm, Nau 101
 December 1, 5-6pm, Nau 101
 
 <!--more-->
+
+Martin Hairer will visit the department from November 28 – December 3. He will deliver the Fall 2022 installment of our VML series, consisting of 3 lectures on November 29, 30, and December 1.
 
 ---
 
