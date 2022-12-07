@@ -15,7 +15,8 @@ tooltips: true
 
 <h1 class="mb-4">Math Collaborative Learning Center</h1>
 
-<!-- <p style="font-size:150%;color:Red;"> The last day of operation for the Spring 2022 semester is Tuesday, May 3 </p> -->
+<p style="font-size:150%;color:Red;"> The last day of operation for the Fall 2022 semester is Wednesday, December 7 
+ <br/> (only calculus sessions will be held on the last day) </p>
 <!-- <p style="font-size:150%;"> The MCLC will begin its operation for the Fall 2022 semester on Monday, August 29 </p> -->
 <p style="font-size:150%;"> The MCLC is now open for the Fall 2022 semester! </p>
 
@@ -146,7 +147,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </tr>
 <tr style="height: 38px;">
 <td style="width: 90px; height: 38px; text-align: center;">7-8:15</td>
-<td style="width: 153.422px; height: 38px;color:red;"> Calculus I & II </td>
+<td style="width: 153.422px; height: 38px;"> Calculus I & II </td>
 <td style="width: 224.594px; height: 38px;"> Calculus I & II <br/> Math 3000/3310 <br/> Math 3250 <br/> Math 3350/3351 </td> <!-- M -->
 <td style="width: 235px; height: 38px;"> Calculus I & II <br/> Math 2310 </td>
 <td style="width: 171.453px; height: 38px;"> Calculus I & II</td> <!-- W -->
