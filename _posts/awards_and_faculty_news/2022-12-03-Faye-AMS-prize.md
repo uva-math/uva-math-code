@@ -4,7 +4,7 @@ title: Former UVA REU student receives the AWM 2023 Schafer Prize
 comments: false
 categories: news awards swiper-news
 published: true
-image:  __SITE_URL__/img/news_events/Faye.png
+image:  __SITE_URL__/img/news_events/Faye.jpeg
 image-alt: Faye Jackson
 good-md: true
 ---
