@@ -5,7 +5,7 @@ event-date: 2022-11-29 16:00:00
 multi-day-event: true
 permalink: /ims/lectures/martin-hairer/
 comments: false
-categories: news virginia-mathematics-lectures ims events major-news
+categories: news virginia-mathematics-lectures ims events
 published: true
 image:  __SITE_URL__/img/IMS/Hairer_poster.jpg
 image-address: __SITE_URL__/img/IMS/Hairer_poster.pdf
