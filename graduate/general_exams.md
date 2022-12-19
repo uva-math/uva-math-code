@@ -58,6 +58,9 @@ Here is an updated [Review Guide]({{site.url}}/graduate/exams/algebra/CombinedPr
 
 ## Analysis
 
+- [August 2022, real part]({{site.url}}/graduate/exams/analysis/2022Aug_real.pdf)
+- [August 2022, complex part]({{site.url}}/graduate/exams/analysis/2022Aug_complex.pdf)
+- [January 2022, complex part]({{site.url}}/graduate/exams/analysis/2022Jan_complex.pdf)
 - [August 2021, complex part]({{site.url}}/graduate/exams/analysis/2021Aug_complex.pdf)
 - [January 2021, real part]({{site.url}}/graduate/exams/analysis/2021Jan_real.pdf)
 - [August 2020, complex part]({{site.url}}/graduate/exams/analysis/2020Aug_complex.pdf)
