@@ -1,7 +1,7 @@
 ---
 UVA_id: zsz8yz
 lastname: Buckland
-name: Landon
+name: Amelia
 general_position: gradstudent
 position: Graduate Student
 office: 401 Kerchof Hall
