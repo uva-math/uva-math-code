@@ -40,6 +40,11 @@ If you would like to participate in our mentoring program, please send us a mess
 <ul>
 <li>President: Catherine Cossaboom</li>
 <li>Vice President: Olivia Goodrich</li>
+<li>Treasurer: Vihini Gunasekera</li>
+<li>Secretary: Ivory Tang</li>
+<li>Website/Social Media: Zoe Zerui Wang</li>
+<li>Social Chair: Zivile Puospekaite</li>
+<li>Title IX Chair: Louisa Liles</li>
 <li>Faculty Mentors: {% include person_info_email_only.html UVA_id="brh5c" %} and {% include person_info_email_only.html UVA_id="tam7b" %}</li>
 </ul>  
 
