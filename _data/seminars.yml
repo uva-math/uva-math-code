@@ -142,10 +142,11 @@
   google_cal_id: 'ftc1mbjbp95irpj6t9e2tfl020@group.calendar.google.com'
   webpage: 'https://dshermanmath.github.io/base/sotoa/sotoa.html'
   seminar_weight: 100
-  regular_times: Tuesdays at 4:00
+  regular_times: Tuesdays at 4:00, Kerchof 326
   information: |
     The Seminar in Operator Theory and Operator Algebras covers a wide variety of topics in functional analysis, including <script type="math/tex">C^*</script>-algebras and von Neumann algebras, composition operators, Banach spaces, noncommutative convexity, and applications of complex function theory. Most lectures are research level, but we also feature expository talks.
   contact:
+    - UVA_id: brh5c
     - UVA_id: des5e
 
 - cal_number: '10'
