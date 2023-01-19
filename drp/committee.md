@@ -10,7 +10,6 @@ The DRP Committee is comprised of the following graduate students and postdocs
 
 - [Valentina Zapata Castro](https://math.virginia.edu/people/vz6an/)
 - [Eleftherios Chatzitheodoridis](https://math.virginia.edu/people/thp5uc/)
-- [Alec Traaseth](https://math.virginia.edu/people/at3kk/)
 - [Miika Ilkka Tapani Tuominen](https://math.virginia.edu/people/mit8vu/)
 - [Gennady Uraltsev](https://math.virginia.edu/people/gu8gs/)
 
