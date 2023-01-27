@@ -3,7 +3,7 @@ title: DRP Calendar
 layout: drp_page
 permalink: /drp/calendar/
 ---
-// Script contributed by Markus Tuominen
+
 <h2 class="mb-3">Timeline</h2>
 
 <table class="table table-striped">
