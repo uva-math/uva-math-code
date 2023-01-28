@@ -17,12 +17,6 @@ nav_parent: IMS
 
 <h5 class="mt-1 mb-4"><a href="https://math.mit.edu/~poonen/">Bjorn Poonen</a> (MIT)</h5>
 
-##### 1. "Undecidability in number theory". January 24 | 5-6pm | Wilson 402
-
-##### 2. "Undecidability in group theory, analysis, and topology". January 25 | 5-6pm | Nau 101
-
-##### 3. "Undecidability everywhere". January 26 | 5-6pm | Nau 101
-
 <!--more-->
 
 ##### 1. "Undecidability in number theory". January 24 | 5-6pm | Wilson 402
