@@ -5,7 +5,7 @@ event-date: 2023-01-24 17:00:00
 multi-day-event: true
 permalink: /ims/lectures/bjorn-poonen/
 comments: false
-categories: news virginia-mathematics-lectures ims events major-news
+categories: news virginia-mathematics-lectures ims events
 published: true
 image:  __SITE_URL__/img/IMS/Poonen_poster.jpg
 image-address: __SITE_URL__/img/IMS/Poonen_poster.pdf
