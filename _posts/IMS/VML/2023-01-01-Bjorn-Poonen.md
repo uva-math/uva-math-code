@@ -11,11 +11,19 @@ image:  __SITE_URL__/img/IMS/Poonen_poster.jpg
 image-address: __SITE_URL__/img/IMS/Poonen_poster.pdf
 image-alt: Bjorn Poonen
 image-tall: true
-more-text: Link to the VML series
+more-text: Abstracts
 nav_parent: IMS
 ---
 
 <h5 class="mt-1 mb-4"><a href="https://math.mit.edu/~poonen/">Bjorn Poonen</a> (MIT)</h5>
+
+##### 1. "Undecidability in number theory". January 24 | 5-6pm | Wilson 402
+
+##### 2. "Undecidability in group theory, analysis, and topology". January 25 | 5-6pm | Nau 101
+
+##### 3. "Undecidability everywhere". January 26 | 5-6pm | Nau 101
+
+<!--more-->
 
 ##### 1. "Undecidability in number theory". January 24 | 5-6pm | Wilson 402
 
@@ -30,8 +38,6 @@ Even before the resolution of Hilbert's tenth problem, some problems in group th
 Undecidable problems have arisen in nearly every major branch of mathematics.  This lecture will present a sampling of these and will discuss a few problems whose undecidability status is not yet known, including one about chess.
 
 (The three lectures will be mostly independent of each other.)
-
-<!--more-->
 
 ---
 
