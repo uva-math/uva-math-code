@@ -4,7 +4,7 @@ title: Slava Krushkal named a 2023 Fellow of the American Mathematical Society
 comments: false
 categories: news awards swiper-news
 published: true
-image: /img/people/2021-fall/Krushkal_S.jpg
+image: __SITE_URL__/img/people/2021-fall/Krushkal_S.jpg
 image-alt: Slava Krushkal
 good-md: true
 ---
