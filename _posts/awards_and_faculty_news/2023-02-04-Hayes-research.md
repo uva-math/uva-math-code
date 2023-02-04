@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Professon Ben Hayes honored for his research achievements in 2022"
+title: "Professor Ben Hayes honored for his research achievements in 2022"
 comments: false
 categories: news awards swiper-news
 published: true

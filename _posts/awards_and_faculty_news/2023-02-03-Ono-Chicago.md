@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Professon Ono Honored by the University of Chicago"
+title: "Professor Ono Honored by the University of Chicago"
 comments: false
 categories: news awards swiper-news
 published: true
