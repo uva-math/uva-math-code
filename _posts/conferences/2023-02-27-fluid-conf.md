@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 
+title: Reflections on mathematical fluid dynamics
 event-date: 2023-03-11 08:00:00
 multi-day-event: true
 comments: false
