@@ -12,6 +12,6 @@ image-tall: true
 image-alt: Conference poster
 ---
 
-The conference "Reflections on mathematical fluid dynamics" will be held at the University of Virginia in Charlottesville, VA on March 11-12, 2023.
+The conference "Reflections on mathematical fluid dynamics" will be held at the University of Virginia in Charlottesville, VA on March 11-12, 2023, in Clark 102.
 
 <!--more-->
