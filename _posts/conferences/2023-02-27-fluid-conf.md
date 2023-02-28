@@ -7,6 +7,7 @@ comments: false
 categories: news events conferences major-news
 published: true
 image: __SITE_URL__/img/news_events/fluid-refl-conf.jpg
+image-address: __SITE_URL__/img/news_events/fluid-refl-conf.pdf
 image-tall: true
 image-alt: Conference poster
 ---
