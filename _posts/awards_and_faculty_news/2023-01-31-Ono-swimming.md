@@ -2,7 +2,7 @@
 layout: post
 title: "The Math Behind the Medals: Professor Ken Ono Is Helping Virginia Revolutionize Swimming Performance"
 comments: false
-categories: news awards swiper-news
+categories: news awards 
 published: true
 image: __SITE_URL__/img/news_events/MKR_0553-450x326.jpg
 image-alt: "Ken Ono and Virginia head coach Todd DeSorbo. Photo Courtesy: Matthew Kent Riley/University of Virginia"
