@@ -19,8 +19,8 @@ The list includes initial job placement or current job (if known).
 
 ## Spring 2019
 
-- **Mariano Echverria**<br>
-Rutgers University, postdoctoral position<br>
+- **Mariano Echeverria**<br>
+Rutgers University, Assistant Teaching Professor<br>
 *Naturality of the Contact Invariant in Monopole Floer Homology under Strong Symplectic Cobordisms*<br>
 (Advisor: Thomas Mark)
 
