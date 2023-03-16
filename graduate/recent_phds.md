@@ -36,6 +36,11 @@ Max Planck Institute, Postdoc<br>
 *Quasi-2-Segal Sets*<br>
 (Advisor: Julie Bergner)
 
+- **Peter Johnson**<br>
+Michigan State University, Postdoc<br>
+*Small Seifert fibered zero surgery*<br>
+(Advisor: Thomas Mark)
+
 
 ## Fall 2021
 
