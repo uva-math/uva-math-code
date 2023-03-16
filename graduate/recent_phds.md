@@ -62,7 +62,7 @@ Vanderbilt University, Postdoc<br>
 (Advisor: Thomas Koberda)
 
 - **George Seelinger**		<br>
-University of Michigan, Postdoc<br>
+University of Michigan, NSF Postdoc<br>
 *K-Theoretic Catalan Functions*<br>
 (Advisor: Jennifer Morse)
 
