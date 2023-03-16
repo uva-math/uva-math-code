@@ -394,17 +394,17 @@ Baylor University, Associate Professor<br>
 (Advisor: Irena Lasiecka)
 
 - **Joseph Johnson**<br>
-Assistant Professor, Mary Baldwin College<br>
+Mary Baldwin College, Assistant Professor<br>
 *K(X): An Equivariant K-Theory Functor from Spaces to Lambda-Rings*<br>
 (Advisor: Nicholas Kuhn)
 
 - **Jason McCarty**<br>
-Software Developer	Grant Street Group<br>
+Grant Street Group, Software Developer<br>
 *The Mod 2 Homology of Infinite Loop Spaces*<br>
 (Advisor: Nicholas Kuhn)
 
 - **Yung Ning Peng**<br>
-Associate Professor, National Central University, Taiwan<br>
+National Central University, Taiwan, Associate Professor<br>
 *Parabolic Presentations of the Super Yangian YM|N and Applications*<br>
 (Advisor: Weiqiang Wang)
 
