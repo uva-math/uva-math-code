@@ -11,6 +11,13 @@ nav_weight: 70
 
 The list includes initial job placement or current job (if known).
 
+## Spring 2020
+
+- **Bogdan Krstic**<br>
+University of Rochester, postdocr<br>
+*Bispans in quasicategories*<br>
+(Advisor: Nicholas Kuhn)
+
 ## Fall 2019
 
 - **Aleksandr Morgan**<br>
@@ -190,39 +197,39 @@ Postdoc, Stockholm University<br>
 ## Summer 2014
 
 - **Reed Nessler**<br>
-Postdoctoral Research Associate, Texas A&M University<br>
+Texas A&M University, postdoc<br>
 *Simple Connectivity in Polar Spaces with Group-Theoretic Applications*<br>
-(Advisor:Peter Abramenko)
+(Advisor: Peter Abramenko)
 
 - **Daniel Remine**<br>
-Senior Applied Scientist in Machine Learning, Adobe<br>
+Adobe, Senior Applied Scientist in Machine Learning<br>
 *Analysis and Computational Fluid Dynamics for the Stabilization and Control of 3-Dimensional Navier-Stokes Fluid Channel Flows by a Wall-Normal Boundary Controller*<br>
 (Advisor: Roberto Triggiani)
 
 - **Julia Spencer**<br>
-Assistant Professor of Applied Mathematics, UVA<br>
+University of Virginia School of Engineering, Assistant Professor General Faculty<br>
 *Min-Max Game Theory for the Linearized Navier-Stokes Equations with Internal Localized Control and Distributed Disturbance*<br>
-(Advisor:Roberto Triggiani)
+(Advisor: Roberto Triggiani)
 
 ## May 2014
 
 - **Zachary Bradshaw**<br>
-Assistant Professor, University of Arkansas<br>
+University of Arkansas, Associate Professor<br>
 *On Turbulent Dynamics and Related Theoretical Topics Associated with Diffusive Incompressible Fluid Models*<br>
 (Advisor: Zoran Grujic)
 
 - **Ajay Chandra**<br>
-Leverhulme Early Career Fellow, Imperial College London<br>
+Imperial College London, Lecturer (Assistant Professor) <br>
 *Construction and Analysis of a Hierarchical Massless Quantum Field Theory*<br>
 (Advisor: Abdelmalek Abdesselam)
 
 - **Sean Ian Clark**<br>
-Data Analyst, Education Strategy Consulting<br>
+Education Strategy Consulting, Data Analyst<br>
 *Quantum Supergroups and Canonical Bases*<br>
 (Advisor: Weiqiang Wang)
 
 - **Jason David Knapp**<br>
-Chief Science Officer, Riverain Technologies<br>
+Riverain Technologies, Chief Science Officer<br>
 *Stability and Convergence of Approximate Solutions to the Moore-Gibson-Thompson Equation*<br>
 (Advisor: Irena Lasiecka)
 
@@ -233,7 +240,7 @@ Chief Science Officer, Riverain Technologies<br>
 - **Nathaniel Ray Pappas**<br>
 NSA<br>
 *On Rank Gradient and p-Gradient of Finitely Generated Groups*<br>
-(Advisor: Mikhail V. Ershov)
+(Advisor: Mikhail Ershov)
 
 ## December 2013
 
@@ -245,17 +252,17 @@ OpenAI<br>
 ## August 2013
 
 - **Nicolas Fourrier**<br>
-AI Lead, Demand Forecasting<br>
+Demand Forecasting, AI Lead<br>
 *Analysis of Existence, Regularity, and Stability of Solutions to Wave Equations with Dynamic Boundary Conditions*<br>
 (Advisor: Irena Lasiecka)
 
 - **Andrea Merlin Heald**<br>
-Lecturer, University of Washington<br>
+University of Washington, Lecturer<br>
 *Bounded Generation of Two Families of S-Arithmetic Groups*<br>
 (Advisor: Andrei Rapinchuk)
 
 - **Matthew Hogancamp**<br>
-Assistant Professor, Northeastern University<br>
+ Northeastern University, Assistant Professor<br>
 *Local and Quasi-Local sl(2) Link Homology*<br>
 (Advisor: Slava Krushkal)
 
@@ -266,14 +273,14 @@ Assistant Professor, Northeastern University<br>
 (Advisor: Weiqiang Wang)
 
 - **Daniel Dobbs**<br>
-Asst. Professor, Trine University<br>
+Trine University, Assistant Professor<br>
 *Properties of Measures and Processes Related to Brownian Motion on Infinite-Dimensional Heisenberg-Like Groups*<br>
 (Advisor: Tai Melcher)
 
 - **Sean Droms**<br>
-Asst. Professor, Lebanon Valley College<br>
+Lebanon Valley College, Associate Professor<br>
 *Constructions of Stein Fillings*<br>
-(Advisor: Tom Mark)
+(Advisor: Thomas Mark)
 
 
 - **Timothy Emerick**<br>
@@ -297,7 +304,7 @@ Assistant Professor, Elon University<br>
 
 - **Carolyn Yarnall**<br>
 Assistant Professor, California State University Dominguez Hills<br>
-*The Slices of Suspensions of HZ for Cuclic p-Groups*<br>
+*The Slices of Suspensions of HZ for Cyclic p-Groups*<br>
 (Advisor: Michael Hill)
 
 
@@ -305,7 +312,7 @@ Assistant Professor, California State University Dominguez Hills<br>
 ## August 2012
 
 - **Jameson Graber**<br>
-Assistant Professor, Baylor University<br>
+Baylor University, Associate Professor<br>
 *The Wave Equation with Generalized Nonlinear Acoustic Boundary Conditions*<br>
 (Advisor: Irena Lasiecka)
 
@@ -327,7 +334,7 @@ Associate Professor, National Central University, Taiwan<br>
 (Advisor: Weiqiang Wang)
 
 - **Justin Webster**<br>
-Assistant Professor, University of Maryland Baltimore County<br>
+University of Maryland Baltimore County, Associate Professor<br>
 *Analysis of Flow-Plate Interactions: Semigroup Well-Posedness and Long-Time Behavior*<br>
 (Advisor: Irena Lasiecka)
 
@@ -336,13 +343,13 @@ Assistant Professor, University of Maryland Baltimore County<br>
 ## May 2012
 
 - **Martin Keutel**<br>
-Analyst, Metron, Inc.<br>
+Metron, Inc., Analyst<br>
 *Fluid Limits for the Shortest Job First and Least Attained Service Protocols*<br>
 (Advisor: Christian Gromoll)
 
 
 - **Yongjin Lu**<br>
-Assistant Professor, Virginia State University<br>
+Oakland University, Associate Professor<br>
 *Asymptotic Stability of Systems of Coupled PDEs Arising from Acoustic-Structural and Fluid-Structural Interaction*<br>
 (Advisor: Irena Lasiecka)
 
@@ -352,8 +359,8 @@ Assistant Professor, Virginia State University<br>
 (Advisor: Gregory Arone)
 
 - **Jing Zhang**<br>
-Tenure Track Assistant Professor, Virginia State University<br>
-*in-Max Game Theory and Non-Standard Differential Riccati Equations under the Singular Estimates and an Application to the Fluid-Structure Interaction Model*<br>
+ Virginia State University, Associate Professor<br>
+*Min-Max Game Theory and Non-Standard Differential Riccati Equations under the Singular Estimates and an Application to the Fluid-Structure Interaction Model*<br>
 (Advisor: Roberto Triggiani)
 
 
@@ -361,7 +368,7 @@ Tenure Track Assistant Professor, Virginia State University<br>
 ## August 2011
 
 - **Shitao Liu**<br>
-Postdoctoral Researcher, University of Helsinki<br>
+Clemson University, Associate Professor<br>
 *Inverse Problems for Single and Strongly Coupled PDEs via Boundary Measurements: A Carleman Estimates Approach*<br>
 (Advisor: Roberto Triggiani, Irena Lasiecka)
 
@@ -370,12 +377,12 @@ Postdoctoral Researcher, University of Helsinki<br>
 ## May 2011
 
 - **James Nolie Hughes**<br>
-Visiting Assistant Professor, Mary Baldwin College<br>
+ Mary Baldwin College, Visiting Assistant Professor,<br>
 *On Polynomial Functors from Topological Spaces to Spectra*<br>
-(Advisor: Z. Gregory Arone)
+(Advisor: Gregory Arone)
 
 - **Matthew Curtis Burkholder Zaremsky**<br>
-Visiting Scholar, University of Bielefeld<br>
+University at Albany, Associate Professor<br>
 *Strong Transitivity and Weyl Transitivity of Group Actions on Affine Buildings*<br>
 (Advisor: Peter Abramenko)
 
@@ -384,12 +391,12 @@ Visiting Scholar, University of Bielefeld<br>
 ## December 2010
 
 - **Nicholas Andrew Hamblet**<br>
-Systems Engineer, Commonwealth Computer Research<br>
+Commonwealth Computer Research, Systems Engineer<br>
 *A Convenient Homotopy Limit Description of Spaces of Affine Embeddings*<br>
-(Advisor: Z. Gregory Arone)
+(Advisor: Gregory Arone)
 
 - **Timothy Woodcock**<br>
-Assistant Professor, Stonehill College<br>
+Stonehill College, Associate Professor<br>
 *Commuting Graphs of Finite Groups*<br>
 (Advisor: Andrei Rapinchuk)
 
@@ -398,25 +405,25 @@ Assistant Professor, Stonehill College<br>
 ## August 2010
 
 - **Katherine Cason Heller**<br>
-Assistant Professor, North Central College<br>
+North Central College, Associate Professor<br>
 *Composition Operators on S^2(D)*<br>
 (Advisor: Barbara D. MacCluer)
 
 
 - **Robert Alan McEwen II**<br>
-Operations Research Analyst, Nat. Ground Intelligence<br>
+National Ground Intelligence, Operations Research Analyst<br>
 *Homological Stability for the Groups Out(n,t+1)*<br>
 (Advisor: Kai-Uwe Bux)
 
 
 - **Diana Dunn Morris**<br>
-Lecturer, Engineering School, University of Virginia<br>
+University of Virginia School of Engineering, Lecturer<br>
 *Coordination of Jordan Superalgebras*<br>
 (Advisor: Kevin McCrimmon)
 
 
-- **Turker Ozsari**<br>
-Assistant Professor, Dogus University<br>
+- **T&uuml;rker &Ouml;zsari**<br>
+Bilkent University, Assistant Professor<br>
 *Stabilization of Nonlinear Schroedinger Equation with Inhomogeneous Dirichlet Boundary Control*<br>
 (Advisor: Irena Lasiecka)
 
@@ -424,21 +431,21 @@ Assistant Professor, Dogus University<br>
 ## May 2010
 
 - **Eric Finster**<br>
-Postdoctorate, IGHT, Switzerland<br>
+University of Birmingham, Lecturer (Assistant Professor)<br>
 *Stabilization of Homotopy Limits*<br>
-(Advisor: Greg Arone)
+(Advisor: Gregory Arone)
 
 - **Katie Quertermous**<br>
-Assistant Professor, James Madison University<br>
+James Madison University, Associate Professor<br>
 *Fixed Point Composition C*-Algebras*<br>
 (Advisor: Thomas Kriete)
 
 - **Jinkui Wan**<br>
-Assistant Professor, Beijing Institute of Technology<br>
+Beijing Institute of Technology, Professor<br>
 *Representations of Affine Hecke Algebras and Related Algebras*<br>
 (Advisor: Weiqiang Wang)
 
 - **Lei Zhao**<br>
-Postdoctorate, University of Oklahoma<br>
+University of Oklahoma, postdoc <br>
 *Modular Representations of Lie Superalgebras*<br>
 (Advisor: Weiqiang Wang)
