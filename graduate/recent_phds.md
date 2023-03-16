@@ -66,11 +66,11 @@ University of Michigan, Postdoc<br>
 
 - **Chris Chung**<br>
 Okinawa Institute of Science and Technology, Postdoc<br>
-*Quantum covering groups and quantum symmetric pairs*<br>
+*Quantum Covering Groups and Quantum Symmetric Pairs*<br>
 (Advisor: Weiqiang Wang)
 
 - **Bogdan Krstic**<br>
-University of Rochester, postdoc<br>
+University of Rochester, Postdoc<br>
 *Bispans in Quasicategories*<br>
 (Advisor: Nicholas Kuhn)
 
@@ -80,7 +80,7 @@ National Security Agency, Mathematician<br>
 (Advisor: Yen Do)
 
 - **Thomas Sale**<br>
-*Quantum symmetric pairs and quantum supergroups at roots of 1*<br>
+*Quantum Symmetric Pairs and Quantum Supergroups at Roots of 1*<br>
 (Advisor: Weiqiang Wang)
 
 - **Mark Schrecengost**<br>
@@ -119,12 +119,12 @@ Houst, Pricing and Data Solutions Lead<br>
 
 - **James Phillips**<br>
 Wellesley University, Visiting Lecturer<br>
-*Reduction and Deformation of One-point Galois Covers*<br>
+*Reduction and Deformation of One-Point Galois Covers*<br>
 (Advisor: Andrew Obus)
 
 - **Brian Thomas**<br>
 Ab Initio Software, Internal Consultant<br>
-*Dyer-Lashof operations as extensions and an application to H\*(BU)*<br>
+*Dyer-Lashof Operations as Extensions and an Application to H\*(BU)*<br>
 (Advisor: Nicholas Kuhn)
 
 ## Spring 2018
@@ -166,7 +166,7 @@ University of Virginia, Lecturer<br>
 
 - **Jonathan Simone**<br>
 University of Massachussetts Amherst, Visiting Assistant Professor<br>
-*Cut-and-paste Operations and Exotic 4-Manifolds*<br>
+*Cut-and-Paste Operations and Exotic 4-Manifolds*<br>
 (Advisor: Thomas Mark)
 
 - **Bradley Weaver**<br>
@@ -209,7 +209,7 @@ Assistant Professor (non tenure-track), University of Delaware <br>
 
 - **Hankyung Ko**<br>
 Uppsala University, Biträdande universitetslektor (Assistant Professor)<br>
-*Representations of quantum groups at roots of unity and their reductions mod p to algebraic group representations*<br>
+*Representations of Quantum Groups at Roots of Unity and Their Reductions Mod p to Algebraic Group Representations*<br>
 (Advisor: Brian Parshall)
 
 - **Keith Leitmeyer**<br>
@@ -220,12 +220,12 @@ Uppsala University, Biträdande universitetslektor (Assistant Professor)<br>
 
 - **Scott Atkinson**<br>
 Merkle, Data Science Engineer<br>
-*Convex sets associated to C*-algebras*<br>
+*Convex Sets Associated to C*-Algebras*<br>
 (Advisor: David Sherman)
 
 - **Alessandro De Stefani**<br>
 Università degli Studi di Genova, RTD B (Assistant Professor)<br>
-*Homological methods, singularities, and numerical invariants*<br>
+*Homological Methods, Singularities, and Numerical Invariants*<br>
 (Advisor: Craig Huneke)
 
 - **Daniel Franz**<br>
@@ -235,7 +235,7 @@ Visiting Assistant Professor, College of the Holy Cross<br>
 
 - **Stephen Hardy**<br>
 Visiting Assistant Professor, Hampden-Sydney College<br>
-*Pseudocompact $C^*$-algebras*<br>
+*Pseudocompact $C^*$-Algebras*<br>
 (Advisor: David Sherman)
 
 - **Chun-Ju Lai**<br>
@@ -390,7 +390,7 @@ Baylor University, Associate Professor<br>
 
 - **Joseph Johnson**<br>
 Assistant Professor, Mary Baldwin College<br>
-*K(X): An Equivariant K-Theory Functor from Spaces to lambda-Rings*<br>
+*K(X): An Equivariant K-Theory Functor from Spaces to Lambda-Rings*<br>
 (Advisor: Nicholas Kuhn)
 
 - **Jason McCarty**<br>
