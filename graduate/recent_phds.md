@@ -234,12 +234,12 @@ Università degli Studi di Genova, RTD B (Assistant Professor)<br>
 (Advisor: Craig Huneke)
 
 - **Daniel Franz**<br>
-Visiting Assistant Professor, College of the Holy Cross<br>
+College of the Holy Cross, Visiting Assistant Professor<br>
 *Quantifying the Residual Finiteness of Linear Groups*<br>
 (Advisor: Mikhail Ershov)
 
 - **Stephen Hardy**<br>
-Visiting Assistant Professor, Hampden-Sydney College<br>
+Hampden-Sydney College, Visiting Assistant Professor<br>
 *Pseudocompact $C^*$-Algebras*<br>
 (Advisor: David Sherman)
 
@@ -249,7 +249,7 @@ Institute of Mathematics, Academia Sinica, Taiwan, Assistant Professor<br>
 (Advisor: Weiqiang Wang)
 
 - **Bryce Terwilliger**<br>
-Director of Analytics, Prudential Financial<br>
+Prudential Financial, Director of Analytics<br>
 *Tandem Queues with Identical Service Times in Heavy Traffic*<br>
 (Advisor: Christian Gromoll)
 
@@ -317,7 +317,7 @@ Riverain Technologies, Chief Science Officer<br>
 (Advisor: Irena Lasiecka)
 
 - **Nathaniel Ray Pappas**<br>
-NSA<br>
+National Security Agency<br>
 *On Rank Gradient and p-Gradient of Finitely Generated Groups*<br>
 (Advisor: Mikhail Ershov)
 
@@ -421,7 +421,6 @@ Metron, Inc., Analyst<br>
 *Fluid Limits for the Shortest Job First and Least Attained Service Protocols*<br>
 (Advisor: Christian Gromoll)
 
-
 - **Yongjin Lu**<br>
 Oakland University, Associate Professor<br>
 *Asymptotic Stability of Systems of Coupled PDEs Arising from Acoustic-Structural and Fluid-Structural Interaction*<br>
@@ -432,7 +431,7 @@ Oakland University, Associate Professor<br>
 (Advisor: Gregory Arone)
 
 - **Jing Zhang**<br>
- Virginia State University, Associate Professor<br>
+Virginia State University, Associate Professor<br>
 *Min-Max Game Theory and Non-Standard Differential Riccati Equations under the Singular Estimates and an Application to the Fluid-Structure Interaction Model*<br>
 (Advisor: Roberto Triggiani)
 
@@ -448,7 +447,7 @@ Clemson University, Associate Professor<br>
 ## Spring 2011
 
 - **James Nolie Hughes**<br>
- Mary Baldwin College, Visiting Assistant Professor,<br>
+Mary Baldwin College, Visiting Assistant Professor<br>
 *On Polynomial Functors from Topological Spaces to Spectra*<br>
 (Advisor: Gregory Arone)
 
@@ -512,6 +511,6 @@ Beijing Institute of Technology, Professor<br>
 (Advisor: Weiqiang Wang)
 
 - **Lei Zhao**<br>
-University of Oklahoma, postdoc <br>
+University of Oklahoma, Postdoc <br>
 *Modular Representations of Lie Superalgebras*<br>
 (Advisor: Weiqiang Wang)
