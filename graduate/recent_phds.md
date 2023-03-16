@@ -46,7 +46,7 @@ Michigan State University, Postdoc<br>
 
 - **Joseph Eisner**<br>
 National Reconnaissance Office<br>
-*Support expansion operator algebras*<br>
+*Support Expansion Operator Algebras*<br>
 (Advisor: David Sherman)
 
 ## Spring 2021
