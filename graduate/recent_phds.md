@@ -11,17 +11,88 @@ nav_weight: 70
 
 The list includes initial job placement or current job (if known).
 
+## Fall 2022
+
+- **Will Craig**<br>
+University of Cologne, Postdoc<br>		
+*On the Coefficients of q-Series and Modular Forms*<br>
+(Advisor: Ken Ono)
+
+- **Badrey Pandi**<br>
+University of Cologne, Postdoc<br>		
+*On higher Turan Inequalities for the Plane Partitions, Ellipsoid T-Designs, and j-Inversion*<br>
+(Advisor: Ken Ono)
+
+
+## Spring 2022
+
+- **Ross Akhmechet**<br>
+Columbia University, Ritt Assistant Professor<br>
+*Annular Link Homology Theories and Their Homotopical Refinement*<br>
+(Advisor: Slava Krushkal)
+
+- **Matthew Feller**<br>
+Max Planck Institute, Postdoc<br>	
+*Quasi-2-Segal Sets*<br>
+(Advisor: Julie Bergner)
+
+
+## Fall 2021
+
+- **Joseph Eisner**
+National Reconnaissance Office<br>
+*Support expansion operator algebras*<br>
+(Advisor: David Sherman)
+
+## Spring 2021
+
+- **Christopher Lloyd**<br>
+Federal Aviation Administration, Mathematician<br>
+*Applications of Chromatic Fixed Point Theory*
+(Advisor: Nicholas Kuhn)
+
+- **Ian Runnels**<br>
+Vanderbilt University, Postdoc<br>
+*Right-Angled Artin Groups in Mapping Class Groups*
+(Advisor: Thomas Koberda)
+
+- **George Seelinger**			<br>
+University of Michigan, Postdoc<br>
+*K-Theoretic Catalan Functions*<br>
+(Advisor: Jennifer Morse)
+
+
 ## Spring 2020
+
+- **Chris Chung**
+Okinawa Institute of Science and Technology, Postdoc<br>
+*Quantum covering groups and quantum symmetric pairs*<br>
+(Advisor: Weiqiang Wang)
 
 - **Bogdan Krstic**<br>
 University of Rochester, postdocr<br>
-*Bispans in quasicategories*<br>
+*Bispans in Quasicategories*<br>
 (Advisor: Nicholas Kuhn)
+
+- **Mark Lewers**
+National Security Agency, Mathematician<br>
+*Carleson Embeddings into Weighted Outer Measure Spaces*<br>
+(Advisor: Yen Do)
+
+- **Thomas Sale**
+*Quantum symmetric pairs and quantum supergroups at roots of 1*<br>
+(Advisor: Weiqiang Wang)
+
+- **Mark Schrecengost**
+Epic, Software Developer<br>
+*Finite Generation of RGD Systems with Exceptional Links*<br>
+(Advisor: Peter Abramenko)
+
 
 ## Fall 2019
 
 - **Aleksandr Morgan**<br>
-*Bounded generation of some linear groups*<br>
+*Bounded Generation of Some Linear Groups*<br>
 (Advisor: Andrei Rapinchuk)
 
 ## Spring 2019
@@ -32,97 +103,100 @@ Rutgers University, Assistant Teaching Professor<br>
 (Advisor: Thomas Mark)
 
 - **Matthew Gagne**<br>
-Lecturer at University of Virginia<br>
-*The family index of the odd signature operator with coefficients in a flat bundle*<br>
+University of Virginia, Lecturer<br>
+*The Family Index of the Odd Signature Operator with Coefficients in a Flat Bundle*<br>
 (Advisor: Nicholas Kuhn)
 
 - **Gabriel Islambouli**<br>
-Univerisity of Waterloo, postdoctoral position<br>
-*Parallels Between Heegaard Splittings and Trisections of 4-manifolds*<br>
+University of Waterloo, Postdoc<br>
+*Parallels Between Heegaard Splittings and Trisections of 4-Manifolds*<br>
 (Advisor: Slava Krushkal)
 
 - **Christopher Leonard**<br>
-Pricing and Data Solutions Lead at Houst<br>
-*Cateforification of Tensor Products of Representations for Current Algebras and Quantum Groups*<br>
+Houst, Pricing and Data Solutions Lead<br>
+*Categorification of Tensor Products of Representations for Current Algebras and Quantum Groups*<br>
 (Advisor: Weiqiang Wang)
 
 - **James Phillips**<br>
-Wellesley University, visiting lecturer<br>
+Wellesley University, Visiting Lecturer<br>
 *Reduction and Deformation of One-point Galois Covers*<br>
 (Advisor: Andrew Obus)
 
 - **Brian Thomas**<br>
+Ab Initio Software, Internal Consultant<br>
 *Dyer-Lashof operations as extensions and an application to H\*(BU)*<br>
 (Advisor: Nicholas Kuhn)
 
 ## Spring 2018
 
 - **John Berman**<br>
-NSF postdoc at UT Austin<br>
+University of Massachusetts Amherst, Visiting Assistant Professor<br>
 *Categorified Algebra & Equivariant Homotopy Theory*<br>
 (Advisor: Michael Hill)
 
 - **Kristin Courtney**<br>
-Postdoc, University of Muenster<br>
-*C\*-algebras and finite-dimensional representations*<br>
+University of Southern Denmark, Assistant Professor<br>
+*C\*-Algebras and Finite-Dimensional Representations*<br>
 (Advisor: David Sherman)
 
 - **Zachary Gates**<br>
-*Finite presentability of groups acting on locally finite twin buildings*<br>
+University of Virginia, Lecturer<br>
+*Finite Presentability of Groups Acting on Locally Finite Twin Buildings*<br>
 (Advisor: Peter Abramenko)
 
 - **Eloisa Grifo**<br>
-Postdoctoral position at University of Michigan, then tenure track position at UC Riverside<br>
+University of Nebraska, Assistant Professor<br>
 *Symbolic Powers and the Containment Problem*<br>
 (Advisor: Craig Huneke)
 
 - **Christina Osborne**<br>
-Ohio State University, Ross Assistant Professor<br>
-*Decomposing the classifying diagram in terms of classifying spaces of groups*<br>
+Cedarville University, Assistant Professor<br>
+*Decomposing the Classifying Diagram in Terms of Classifying Spaces of Groups*<br>
 (Advisor: Julie Bergner)
 
 - **Michael Reeks**<br>
-Bucknell University, tenure track<br>
-*Trace and center of the twisted Heisenberg category*<br>
+Bucknell University, Assistant Professor<br>
+*Trace and Center of the Twisted Heisenberg Category*<br>
 (Advisor: Weiqiang Wang)
 
 - **Veronica Shalotenko**<br>
-Lecturer at University of Virginia<br>
+University of Virginia, Lecturer<br>
 *In Search of Bounds on the Dimension of Ext between Irreducible Modules for Finite Groups of Lie Type*<br>
 (Advisor: Brian Parshall)
 
 - **Jonathan Simone**<br>
-UMass Amherst, visiting assistant professor<br>
-*Cut-and-paste operations and exotic 4-manifolds*<br>
+University of Massachussetts Amherst, Visiting Assistant Professor<br>
+*Cut-and-paste Operations and Exotic 4-Manifolds*<br>
 (Advisor: Thomas Mark)
 
 - **Bradley Weaver**<br>
-*Non-abelian groups of order eight and the local lifting problem*<br>
+*Non-Abelian Groups of Order Eight and the Local Lifting Problem*<br>
 (Advisor: Andrew Obus)
 
 ## Spring and Summer 2017
 
 - **Peter Bonventre**<br>
-Postdoctoral Appointment, University of Kentucky <br>
-*Comparison of models for equivariant operads*<br>
+Georgetown University, Assistant Teaching Professor<br>
+*Comparison of Models for Equivariant Operads*<br>
 (Advisor: Michael Hill)
 
 - **Katelynn Kochalski**<br>
-Tenure-Track Job, SUNY Geneseo <br>
-*Fluid limits and the batched processor sharing model*<br>
+SUNY Geneseo, Assistant Professor<br>
+*Fluid Limits and the Batched Processor Sharing Model*<br>
 (Advisor: Christian Gromoll)
 
 - **Bo Wang**<br>
-Quantitative Research Analyst, Susquehanna International Group, Philadelphia <br>
-*A generalization of martingale theory to self-averaging processes*<br>
+Quantitative Research Analyst, Susquehanna International Group<br>
+*A Generalization of Martingale Theory to Self-Averaging Processes*<br>
 (Advisor: Christian Gromoll)
 
 - **Michael Willis**<br>
-Postdoctoral Appointment, UCLA <br>
+Texas A&M University, Assistant Professor <br>
 *Stable Limits of the Khovanov Homology and L-S-K Spectra for Infinite Braids*<br>
 (Advisor: Slava Krushkal)
 
 - **Xiang Wan**<br>
+Loyola University Chicago, Assistant Professor<br>
 *Global Existence and Exponential Stability for a Nonlinear Thermoelastic Kirchhoff-Love Plate System*<br>
 (Advisor: Irena Lasiecka)
 
@@ -134,7 +208,7 @@ Assistant Professor (non tenure-track), University of Delaware <br>
 ## Summer and Fall 2016
 
 - **Hankyung Ko**<br>
-Postdoctoral position at Uppsala University<br>
+Uppsala University, Biträdande universitetslektor (Assistant Professor)<br>
 *Representations of quantum groups at roots of unity and their reductions mod p to algebraic group representations*<br>
 (Advisor: Brian Parshall)
 
@@ -142,7 +216,7 @@ Postdoctoral position at Uppsala University<br>
 *Turbulence, Regularity, and Geometry in Solutions to the Navier-Stokes and Magnetohydrodynamic Equations*<br>
 (Advisor: Zoran Grujic)
 
-## May 2016
+## Spring 2016
 
 - **Scott Atkinson**<br>
 Postdoctoral Appointment, Vanderbilt University<br>
@@ -150,7 +224,7 @@ _Convex sets associated to C*-algebras_<br>
 (Advisor: David Sherman)
 
 - **Alessandro De Stefani**<br>
-Postdoc, KTH, Stockholm<br>
+Università degli Studi di Genova, RTD B (Assistant Professor)<br>
 *Homological methods, singularities, and numerical invariants*<br>
 (Advisor: Craig Huneke)
 
@@ -165,7 +239,7 @@ Visiting Assistant Professor, Hampden-Sydney College<br>
 (Advisor: David Sherman)
 
 - **Chun-Ju Lai**<br>
-Postdoctoral Fellow, Max Planck Institute for Mathematics<br>
+Institute of Mathematics, Academia Sinica, Taiwan, Assistant Professor<br>
 *Affine Quantum Symmetric Pairs: Multiplication Formulas and Canonical Bases*<br>
 (Advisor: Weiqiang Wang)
 
@@ -176,28 +250,28 @@ Director of Analytics, Prudential Financial<br>
 
 <!-- to finish formatting below -->
 
-## May 2015
+## Spring 2015
 
 - **Arindam Banerjee**<br>
-Golomb Visiting Assistant Professor, Purdue University<br>
-Postdoc, Purdue University<br>
+Ramakrishna Mission Vivekananda Educational and Research Institute, Assistant Professor and INSPIRE Faculty<br>
 *Castelnuovo-Mumford Regularity and Edge Ideals*<br>
 (Advisor: Craig Huneke)
 
 - **Huanchen Bao**<br>
-Brin Postdoctoral Fellow, University of Maryland, College Park<br>
+National University of Singapore, Assistant Professor<br>
 *Canonical Bases Arising from Quantum Symmetric Pairs and Kazhdan-Lusztig Theory*<br>
 (Advisor: Weiqiang Wang)
 
 - **Ilya Igorevich Smirnov**<br>
-Postdoc, Stockholm University<br>
+KTH Royal Institute of Technology, Researcher<br>
 *Uniform Convergence Methods in Hilbert-Kunz Theory*<br>
 (Advisor: Craig Huneke)
+
 
 ## Summer 2014
 
 - **Reed Nessler**<br>
-Texas A&M University, postdoc<br>
+Texas A&M University, Postdoc<br>
 *Simple Connectivity in Polar Spaces with Group-Theoretic Applications*<br>
 (Advisor: Peter Abramenko)
 
@@ -211,7 +285,7 @@ University of Virginia School of Engineering, Assistant Professor General Facult
 *Min-Max Game Theory for the Linearized Navier-Stokes Equations with Internal Localized Control and Distributed Disturbance*<br>
 (Advisor: Roberto Triggiani)
 
-## May 2014
+## Spring 2014
 
 - **Zachary Bradshaw**<br>
 University of Arkansas, Associate Professor<br>
@@ -242,14 +316,14 @@ NSA<br>
 *On Rank Gradient and p-Gradient of Finitely Generated Groups*<br>
 (Advisor: Mikhail Ershov)
 
-## December 2013
+## Fall 2013
 
 - **Mor Katz**<br>
 OpenAI<br>
 *Essentially Normal Composition Operators*<br>
 (Advisor: Thomas Kriete)
 
-## August 2013
+## Summer 2013
 
 - **Nicolas Fourrier**<br>
 Demand Forecasting, AI Lead<br>
@@ -266,7 +340,7 @@ University of Washington, Lecturer<br>
 *Local and Quasi-Local sl(2) Link Homology*<br>
 (Advisor: Slava Krushkal)
 
-## May 2013
+## Spring 2013
 
 - **Constance Baltera**<br>
 *Coinvariant Algebras and Fake Degrees*<br>
@@ -282,19 +356,18 @@ Lebanon Valley College, Associate Professor<br>
 *Constructions of Stein Fillings*<br>
 (Advisor: Thomas Mark)
 
-
 - **Timothy Emerick**<br>
-Principal Machine Researcher/Assoc. Director, Commonwealth Computer Research, Inc.<br>
+Commonwealth Computer Research, Inc., Principal Machine Researcher/Associate Director<br>
 *A Group-Theoretic Characterization of the Unipotent Radical*<br>
 (Advisor: Peter Abramenko)
 
 - **Craig Kleski**<br>
-Visiting Asst. Professor, Miami University<br>
+Miami University, Visiting Assistant Professor<br>
 *Boundaries for Operator Systems*<br>
 (Advisor: David Sherman)
 
 - **Kristen Mazur**<br>
-Assistant Professor, Elon University<br>
+Elon University, Assistant Professor<br>
 *On the Structure of Mackey Functors and Tambara Functors*<br>
 (Advisor: Michael Hill)
 
@@ -303,25 +376,22 @@ Assistant Professor, Elon University<br>
 (Advisor: Andrei Rapinchuk)
 
 - **Carolyn Yarnall**<br>
-Assistant Professor, California State University Dominguez Hills<br>
+California State University Dominguez Hills, Assistant Professor<br>
 *The Slices of Suspensions of HZ for Cyclic p-Groups*<br>
 (Advisor: Michael Hill)
 
 
-
-## August 2012
+## Summer 2012
 
 - **Jameson Graber**<br>
 Baylor University, Associate Professor<br>
 *The Wave Equation with Generalized Nonlinear Acoustic Boundary Conditions*<br>
 (Advisor: Irena Lasiecka)
 
-
 - **Joseph Johnson**<br>
 Assistant Professor, Mary Baldwin College<br>
 *K(X): An Equivariant K-Theory Functor from Spaces to lambda-Rings*<br>
 (Advisor: Nicholas Kuhn)
-
 
 - **Jason McCarty**<br>
 Software Developer	Grant Street Group<br>
@@ -339,8 +409,7 @@ University of Maryland Baltimore County, Associate Professor<br>
 (Advisor: Irena Lasiecka)
 
 
-
-## May 2012
+## Spring 2012
 
 - **Martin Keutel**<br>
 Metron, Inc., Analyst<br>
@@ -353,7 +422,6 @@ Oakland University, Associate Professor<br>
 *Asymptotic Stability of Systems of Coupled PDEs Arising from Acoustic-Structural and Fluid-Structural Interaction*<br>
 (Advisor: Irena Lasiecka)
 
-
 - **Daniel Pryor**<br>
 *Topological Manifold Calculus*<br>
 (Advisor: Gregory Arone)
@@ -364,8 +432,7 @@ Oakland University, Associate Professor<br>
 (Advisor: Roberto Triggiani)
 
 
-
-## August 2011
+## Summer 2011
 
 - **Shitao Liu**<br>
 Clemson University, Associate Professor<br>
@@ -373,8 +440,7 @@ Clemson University, Associate Professor<br>
 (Advisor: Roberto Triggiani, Irena Lasiecka)
 
 
-
-## May 2011
+## Spring 2011
 
 - **James Nolie Hughes**<br>
  Mary Baldwin College, Visiting Assistant Professor,<br>
@@ -387,8 +453,7 @@ University at Albany, Associate Professor<br>
 (Advisor: Peter Abramenko)
 
 
-
-## December 2010
+## Fall 2010
 
 - **Nicholas Andrew Hamblet**<br>
 Commonwealth Computer Research, Systems Engineer<br>
@@ -401,26 +466,22 @@ Stonehill College, Associate Professor<br>
 (Advisor: Andrei Rapinchuk)
 
 
-
-## August 2010
+## Summer 2010
 
 - **Katherine Cason Heller**<br>
 North Central College, Associate Professor<br>
 *Composition Operators on S^2(D)*<br>
 (Advisor: Barbara D. MacCluer)
 
-
 - **Robert Alan McEwen II**<br>
 National Ground Intelligence, Operations Research Analyst<br>
 *Homological Stability for the Groups Out(n,t+1)*<br>
 (Advisor: Kai-Uwe Bux)
 
-
 - **Diana Dunn Morris**<br>
 University of Virginia School of Engineering, Lecturer<br>
 *Coordination of Jordan Superalgebras*<br>
 (Advisor: Kevin McCrimmon)
-
 
 - **T&uuml;rker &Ouml;zsari**<br>
 Bilkent University, Assistant Professor<br>
@@ -428,7 +489,7 @@ Bilkent University, Assistant Professor<br>
 (Advisor: Irena Lasiecka)
 
 
-## May 2010
+## Spring 2010
 
 - **Eric Finster**<br>
 University of Birmingham, Lecturer (Assistant Professor)<br>
