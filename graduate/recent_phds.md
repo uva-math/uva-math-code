@@ -39,7 +39,7 @@ Max Planck Institute, Postdoc<br>
 
 ## Fall 2021
 
-- **Joseph Eisner**
+- **Joseph Eisner**<br>
 National Reconnaissance Office<br>
 *Support expansion operator algebras*<br>
 (Advisor: David Sherman)
@@ -56,7 +56,7 @@ Vanderbilt University, Postdoc<br>
 *Right-Angled Artin Groups in Mapping Class Groups*
 (Advisor: Thomas Koberda)
 
-- **George Seelinger**			<br>
+- **George Seelinger**		<br>
 University of Michigan, Postdoc<br>
 *K-Theoretic Catalan Functions*<br>
 (Advisor: Jennifer Morse)
