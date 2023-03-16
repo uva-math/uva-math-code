@@ -70,7 +70,7 @@ Okinawa Institute of Science and Technology, Postdoc<br>
 (Advisor: Weiqiang Wang)
 
 - **Bogdan Krstic**<br>
-University of Rochester, postdocr<br>
+University of Rochester, postdoc<br>
 *Bispans in Quasicategories*<br>
 (Advisor: Nicholas Kuhn)
 
