@@ -64,7 +64,7 @@ University of Michigan, Postdoc<br>
 
 ## Spring 2020
 
-- **Chris Chung**
+- **Chris Chung**<br>
 Okinawa Institute of Science and Technology, Postdoc<br>
 *Quantum covering groups and quantum symmetric pairs*<br>
 (Advisor: Weiqiang Wang)
@@ -74,16 +74,16 @@ University of Rochester, postdoc<br>
 *Bispans in Quasicategories*<br>
 (Advisor: Nicholas Kuhn)
 
-- **Mark Lewers**
+- **Mark Lewers**<br>
 National Security Agency, Mathematician<br>
 *Carleson Embeddings into Weighted Outer Measure Spaces*<br>
 (Advisor: Yen Do)
 
-- **Thomas Sale**
+- **Thomas Sale**<br>
 *Quantum symmetric pairs and quantum supergroups at roots of 1*<br>
 (Advisor: Weiqiang Wang)
 
-- **Mark Schrecengost**
+- **Mark Schrecengost**<br>
 Epic, Software Developer<br>
 *Finite Generation of RGD Systems with Exceptional Links*<br>
 (Advisor: Peter Abramenko)
