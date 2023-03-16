@@ -225,7 +225,7 @@ Uppsala University, Biträdande universitetslektor (Assistant Professor)<br>
 
 - **Scott Atkinson**<br>
 Merkle, Data Science Engineer<br>
-*Convex Sets Associated to C*-Algebras*<br>
+*Convex Sets Associated to C\*-Algebras*<br>
 (Advisor: David Sherman)
 
 - **Alessandro De Stefani**<br>
@@ -240,7 +240,7 @@ College of the Holy Cross, Visiting Assistant Professor<br>
 
 - **Stephen Hardy**<br>
 Hampden-Sydney College, Visiting Assistant Professor<br>
-*Pseudocompact $C^*$-Algebras*<br>
+*Pseudocompact C\*-Algebras*<br>
 (Advisor: David Sherman)
 
 - **Chun-Ju Lai**<br>
