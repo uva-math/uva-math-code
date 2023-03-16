@@ -219,8 +219,8 @@ Uppsala University, Biträdande universitetslektor (Assistant Professor)<br>
 ## Spring 2016
 
 - **Scott Atkinson**<br>
-Postdoctoral Appointment, Vanderbilt University<br>
-_Convex sets associated to C*-algebras_<br>
+Merkle, Data Science Engineer<br>
+*Convex sets associated to C*-algebras*<br>
 (Advisor: David Sherman)
 
 - **Alessandro De Stefani**<br>
