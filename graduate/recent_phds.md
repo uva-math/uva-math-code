@@ -474,7 +474,7 @@ Stonehill College, Associate Professor<br>
 
 - **Katherine Cason Heller**<br>
 North Central College, Associate Professor<br>
-*Composition Operators on S^2(D)*<br>
+*Composition Operators on S<sup>2</sup>(D)*<br>
 (Advisor: Barbara D. MacCluer)
 
 - **Robert Alan McEwen II**<br>
@@ -502,7 +502,7 @@ University of Birmingham, Lecturer (Assistant Professor)<br>
 
 - **Katie Quertermous**<br>
 James Madison University, Associate Professor<br>
-*Fixed Point Composition C*-Algebras*<br>
+*Fixed Point Composition C\*-Algebras*<br>
 (Advisor: Thomas Kriete)
 
 - **Jinkui Wan**<br>
