@@ -48,12 +48,12 @@ National Reconnaissance Office<br>
 
 - **Christopher Lloyd**<br>
 Federal Aviation Administration, Mathematician<br>
-*Applications of Chromatic Fixed Point Theory*
+*Applications of Chromatic Fixed Point Theory*<br>
 (Advisor: Nicholas Kuhn)
 
 - **Ian Runnels**<br>
 Vanderbilt University, Postdoc<br>
-*Right-Angled Artin Groups in Mapping Class Groups*
+*Right-Angled Artin Groups in Mapping Class Groups*<br>
 (Advisor: Thomas Koberda)
 
 - **George Seelinger**		<br>
