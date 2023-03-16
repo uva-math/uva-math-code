@@ -20,7 +20,7 @@ University of Cologne, Postdoc<br>
 
 - **Badrey Pandi**<br>
 University of Cologne, Postdoc<br>		
-*On higher Turan Inequalities for the Plane Partitions, Ellipsoid T-Designs, and j-Inversion*<br>
+*On Higher Turan Inequalities for the Plane Partitions, Ellipsoid T-Designs, and j-Inversion*<br>
 (Advisor: Ken Ono)
 
 
@@ -38,7 +38,7 @@ Max Planck Institute, Postdoc<br>
 
 - **Peter Johnson**<br>
 Michigan State University, Postdoc<br>
-*Small Seifert fibered zero surgery*<br>
+*Small Seifert Fibered Zero Surgery*<br>
 (Advisor: Thomas Mark)
 
 
