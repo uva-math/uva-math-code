@@ -168,6 +168,8 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 
 <br>
 
+<h2 class="mb-4 mt-4">MCLC at Gilmer Hall </h2>
+
 <p> This semester the MCLC offers a few sessions at a second location, <b>Gilmer 490</b>, as part of pilot program. </p>
 
 <p> <b>Math 1220:</b> Monday & Wednseday, 5-6 pm</p>
