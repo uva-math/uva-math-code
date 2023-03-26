@@ -172,6 +172,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 
 <p> This semester the MCLC offers a few sessions at a second location, <b>Gilmer 490</b>, as part of pilot program. </p>
 
+<p> <b>Calculus I (Math 1190/1210, Math 1310):</b> Tuesday & Wednseday, 5-6 pm</p>
 <p> <b>Math 1220:</b> Monday & Wednseday, 5-6 pm</p>
 ---
 
