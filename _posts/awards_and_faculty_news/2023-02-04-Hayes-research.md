@@ -13,4 +13,6 @@ The University of Virginia honored faculty members across Grounds for their outs
 
 Professor Ben Hayes was among the 2022 awardees of the NSF CAREER award.
 
+<!--more-->
+
 “This year’s awardees are an incredibly talented group of faculty who are working every day to advance the frontiers of knowledge and human progress, and it was a pleasure to recognize their achievements in this way,” UVA President Jim Ryan said. “I’m grateful for their efforts and excited about what’s next for research at UVA, across disciplines, schools, and areas of study.”
