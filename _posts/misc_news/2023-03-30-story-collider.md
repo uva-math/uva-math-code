@@ -8,7 +8,7 @@ categories:
   - events
   - swiper-news
 published: true
-image: __SITE_URL__/img/news_events/storycollider_uva_2023.jpg
+image: __SITE_URL__/img/news_events/storycollider_uva_2023.png
 image-wide: true
 image-alt: Story Collider event announcement
 hide-this-item: false
