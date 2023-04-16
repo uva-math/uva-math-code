@@ -5,7 +5,7 @@ event-date: 2023-04-11 11:00:00
 comments: false
 categories: news events
 published: true
-# hide-this-item: true
+hide-this-item: true
 ---
 
 **Mat Turnansky** will defend the Ph.D. thesis on Tuesday, April 11.
