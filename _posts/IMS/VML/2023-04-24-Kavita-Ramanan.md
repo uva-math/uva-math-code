@@ -7,9 +7,9 @@ permalink: /ims/lectures/kavita-ramanan/
 comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
-# image:  __SITE_URL__/img/IMS/Ramanan_poster.jpg
+image:  https://vivo.brown.edu/profile-images/34d/2c4/d79/957/4fb/092/2d8/676/d38/161/6a/kramanan_photo_.jpg
 # image-address: __SITE_URL__/img/IMS/Ramanan_poster.pdf
-# image-alt: Kavita Ramanan
+image-alt: Kavita Ramanan
 # image-tall: true
 # more-text: Abstracts
 nav_parent: IMS
