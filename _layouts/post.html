@@ -28,8 +28,10 @@
       {%if page.categories contains "conferences" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/conferences/" class="mb-5">conferences</a></button>{% endif %}
       {%if page.categories contains "virginia-math-bulletin" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/newsletter/" class="mb-5">Virginia Math Bulletin</a></button>{% endif %} 
       {%if page.categories contains "virginia-mathematics-lectures" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/ims/lectures/" class="mb-5">Virginia Mathematics Lectures</a></button>{% endif %} 
+      {%if page.categories contains "defenses" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/defenses/" class="mb-5">defenses</a></button>{% endif %}
 
-      {% if page.categories contains "awards" or page.categories contains "jobs" or page.categories contains "conferences" or page.categories contains "virginia-mathematics-lectures" or page.categories contains "virginia-math-bulletin" %}<br> {% endif %}
+
+      {% if page.categories contains "awards" or page.categories contains "jobs" or page.categories contains "conferences" or page.categories contains "virginia-mathematics-lectures" or page.categories contains "virginia-math-bulletin" or page.categories contains "defenses" %}<br> {% endif %}
 
 
       {% if page.image != null %}
