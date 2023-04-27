@@ -11,7 +11,7 @@ image:  https://vivo.brown.edu/profile-images/34d/2c4/d79/957/4fb/092/2d8/676/d3
 # image-address: __SITE_URL__/img/IMS/Ramanan_poster.pdf
 image-alt: Kavita Ramanan
 # image-tall: true
-# more-text: Abstracts
+more-text: Abstracts TBA
 nav_parent: IMS
 ---
 
