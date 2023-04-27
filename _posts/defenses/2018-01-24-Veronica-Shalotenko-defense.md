@@ -4,7 +4,7 @@ title: "Thesis defense announcement: Veronica Shalotenko"
 date: 2018-01-23 13:30:00
 event-date: 2018-01-26 11:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

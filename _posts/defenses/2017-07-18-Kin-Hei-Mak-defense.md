@@ -4,7 +4,7 @@ title: "Thesis defense announcement: Anthony Kin Hei Mak"
 date: 2017-07-18 13:30:00
 event-date: 2017-07-20 9:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Thesis defense: George Seelinger"
 event-date: 2021-04-26 13:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

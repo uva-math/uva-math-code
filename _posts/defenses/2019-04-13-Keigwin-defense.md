@@ -3,7 +3,7 @@ layout: post
 title: "Undergraduate thesis defense: Ben Keigwin"
 event-date: 2019-04-22 16:45:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

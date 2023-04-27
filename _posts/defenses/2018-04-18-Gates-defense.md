@@ -4,7 +4,7 @@ title: "Thesis defense: Zach Gates"
 date: 2018-04-18 04:00:00
 event-date: 2018-04-19 12:30:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

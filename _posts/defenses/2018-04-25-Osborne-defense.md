@@ -4,7 +4,7 @@ title: "Thesis defense: Christina Osborne"
 date: 2018-04-25 04:00:00
 event-date: 2018-04-26 11:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

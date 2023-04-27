@@ -3,7 +3,7 @@ layout: post
 title: "Thesis defense: Mat Turnansky"
 event-date: 2023-04-11 11:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

@@ -3,7 +3,7 @@ layout: post
 title: "Thesis defense: Ross Akhmechet"
 event-date: 2022-04-22 13:15:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

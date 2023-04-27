@@ -4,7 +4,7 @@ title: "Thesis defense: John Berman"
 date: 2018-03-26 04:00:00
 event-date: 2018-03-29 14:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

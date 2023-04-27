@@ -4,7 +4,7 @@ title: "Thesis defense announcement: Jonathan Simone"
 date: 2018-03-21 04:00:00
 event-date: 2018-03-22 09:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

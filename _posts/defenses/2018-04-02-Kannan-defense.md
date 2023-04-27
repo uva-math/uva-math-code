@@ -4,7 +4,7 @@ title: "Undergraduate thesis defense: Arun Kannan"
 date: 2018-04-02 04:00:00
 event-date: 2018-04-04 14:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

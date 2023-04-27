@@ -4,7 +4,7 @@ title: "Thesis defense announcement: Xiang Wan"
 date: 2017-07-24 13:30:00
 event-date: 2017-07-27 9:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

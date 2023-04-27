@@ -3,7 +3,7 @@ layout: post
 title: "Undergraduate thesis defense: Yichen Ma"
 event-date: 2019-04-19 11:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

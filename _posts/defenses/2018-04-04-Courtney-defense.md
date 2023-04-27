@@ -4,7 +4,7 @@ title: "Thesis defense: Kristin Courtney"
 date: 2018-04-04 04:00:00
 event-date: 2018-04-05 10:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

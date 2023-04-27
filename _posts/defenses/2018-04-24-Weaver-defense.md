@@ -4,7 +4,7 @@ title: "Thesis defense: Bradley Weaver"
 date: 2018-04-24 04:00:00
 event-date: 2018-04-27 14:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

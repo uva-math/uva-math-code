@@ -3,7 +3,7 @@ layout: post
 title: "Thesis defense: Gabriel Islambouli"
 event-date: 2019-04-18 14:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

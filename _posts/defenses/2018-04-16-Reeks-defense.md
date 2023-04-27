@@ -4,7 +4,7 @@ title: "Thesis defense: Mike Reeks"
 date: 2018-04-16 04:00:00
 event-date: 2018-04-18 13:00:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---

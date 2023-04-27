@@ -4,7 +4,7 @@ title: "Thesis defense: Eloísa Grifo"
 date: 2018-03-26 04:00:00
 event-date: 2018-03-29 15:30:00
 comments: false
-categories: news events
+categories: news events defenses
 published: true
 hide-this-item: true
 ---
