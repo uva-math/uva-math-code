@@ -4,6 +4,7 @@ title: 2023 Undergraduate Award Winners
 comments: false
 categories: news awards
 published: true
+more-text: About the prizes
 image: __SITE_URL__/img/news_events/academical_village_amphitheater_aerial_ss_01.jpg.png
 image-alt: Academical village
 ---

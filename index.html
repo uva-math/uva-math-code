@@ -42,7 +42,7 @@ events: true
             {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %};max-height:400px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
           {% endif %}
           {{ post.excerpt | markdownify }}
-          <a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>{% include categories.html %}
+          {% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}
         </div>
         {% endunless %}
         {% endif %}
@@ -127,7 +127,7 @@ events: true
               {% if post.event-date != null and post.multi-day-event != true %}
               <h6>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h6>{% endif %}
               <span class="hidden-xs-down">{{ post.excerpt | markdownify }}</span>
-              <p><a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal"  role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>{% include categories.html %}</p>
+              <p>{% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal"  role="button">{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}</p>
             </div><!--/span-->
           {% endif %}
           {% endunless %}
