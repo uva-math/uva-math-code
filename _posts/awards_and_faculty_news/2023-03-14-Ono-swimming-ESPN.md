@@ -2,7 +2,7 @@
 layout: post
 title: "The sorcery and science behind Virginia's swimming dynasty"
 comments: false
-categories: news awards swiper-news
+categories: news swiper-news
 published: true
 image: __SITE_URL__/img/news_events/MKR_0553-450x326.jpg
 image-alt: "Ken Ono and Virginia head coach Todd DeSorbo. Photo Courtesy: Matthew Kent Riley/University of Virginia"
