@@ -1,0 +1,16 @@
+{%if page.categories contains "awards" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/awards/" class="mb-5">awards</a></button>{% endif %}
+{%if page.categories contains "jobs" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/current-jobs/" class="mb-5">current jobs</a></button>{% endif %}
+{%if page.categories contains "conferences" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/conferences/" class="mb-5">conferences</a></button>{% endif %}
+{%if page.categories contains "virginia-math-bulletin" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/newsletter/" class="mb-5">Virginia Math Bulletin</a></button>{% endif %} 
+{%if page.categories contains "virginia-mathematics-lectures" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/ims/lectures/" class="mb-5">Virginia Mathematics Lectures</a></button>{% endif %} 
+{%if page.categories contains "defenses" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/defenses/" class="mb-5">defenses</a></button>{% endif %}
+
+{% if page.categories contains "awards" or page.categories contains "jobs" or page.categories contains "conferences" or page.categories contains "virginia-mathematics-lectures" or page.categories contains "virginia-math-bulletin" or page.categories contains "defenses" %}<br> {% endif %}
+
+{%if post.categories contains "awards" %}<button type="button" class="btn btn-secondary"><a href="{{site.url}}/awards/" class="btn btn-secondary h5" style="white-space: normal" role="button">awards</a></button>{% endif %}
+{%if post.categories contains "jobs" %}<button type="button" class="btn btn-secondary"><a href="{{site.url}}/current-jobs/" class="btn btn-secondary h5" style="white-space: normal" role="button">current jobs</a></button>{% endif %}
+{%if post.categories contains "conferences" %}<button type="button" class="btn btn-secondary"><a href="{{site.url}}/conferences/" class="btn btn-secondary h5" style="white-space: normal" role="button">conferences</a></button>{% endif %}
+{%if post.categories contains "virginia-math-bulletin" %}<button type="button" class="btn btn-secondary"><a href="{{site.url}}/newsletter/" class="btn btn-secondary h5" style="white-space: normal" role="button">Virginia Math Bulletin</a></button>{% endif %} 
+{%if post.categories contains "virginia-mathematics-lectures" %}<button type="button" class="btn btn-secondary"><a href="{{site.url}}/ims/lectures/" class="btn btn-secondary h5" style="white-space: normal" role="button">Virginia Mathematics Lectures</a></button>{% endif %} 
+{%if post.categories contains "defenses" %}<button type="button" class="btn btn-secondary"><a href="{{site.url}}/defenses/" class="btn btn-secondary h5" style="white-space: normal" role="button">defenses</a></button>{% endif %}
+{% if post.categories contains "awards" or post.categories contains "jobs" or post.categories contains "conferences" or post.categories contains "virginia-mathematics-lectures" or post.categories contains "virginia-math-bulletin" or post.categories contains "defenses" %}<br> {% endif %}

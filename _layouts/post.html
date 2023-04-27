@@ -23,16 +23,7 @@
       {% if page.event-date != null and page.multi-day-event != true %}
       <h4>Event date: {{ page.event-date |  date: "%A, %B %-d, %Y" }}</h4>{% endif %}
 
-      {%if page.categories contains "awards" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/awards/" class="mb-5">awards</a></button>{% endif %}
-      {%if page.categories contains "jobs" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/current-jobs/" class="mb-5">current jobs</a></button>{% endif %}
-      {%if page.categories contains "conferences" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/conferences/" class="mb-5">conferences</a></button>{% endif %}
-      {%if page.categories contains "virginia-math-bulletin" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/newsletter/" class="mb-5">Virginia Math Bulletin</a></button>{% endif %} 
-      {%if page.categories contains "virginia-mathematics-lectures" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/ims/lectures/" class="mb-5">Virginia Mathematics Lectures</a></button>{% endif %} 
-      {%if page.categories contains "defenses" %}<button type="button" class="btn btn-secondary mb-3"><a href="{{site.url}}/defenses/" class="mb-5">defenses</a></button>{% endif %}
-
-
-      {% if page.categories contains "awards" or page.categories contains "jobs" or page.categories contains "conferences" or page.categories contains "virginia-mathematics-lectures" or page.categories contains "virginia-math-bulletin" or page.categories contains "defenses" %}<br> {% endif %}
-
+      {% include categories.html %}
 
       {% if page.image != null %}
         {% if page.image-address != null %}<a href="{{ page.image-address | replace: '__SITE_URL__', site.url }}">{% endif %}<img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %}{% if post.image-tall %}max-height:800px;{% endif %}height:auto;width:auto;" alt="{{page.image-alt}}" title="{{page.image-alt}}">{% if page.image-address != null %}</a>{% endif %}<br><br />
