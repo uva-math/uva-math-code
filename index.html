@@ -42,7 +42,7 @@ events: true
             {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %};max-height:400px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
           {% endif %}
           {{ post.excerpt | markdownify }}
-          {% include categories.html %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>
+          <a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>{% include categories.html %}
         </div>
         {% endunless %}
         {% endif %}
@@ -66,7 +66,6 @@ events: true
           {% assign swiper-news_counter = swiper-news_counter | plus:1 %}
             <div class="swiper-slide">
             <a href="{{site.url }}{{ post.url }}" style="color:inherit;"><span class="h4 mb-3">{{post.title}}</a></span>
-            {% include categories.html %}
             {% if post.event-date != null and post.multi-day-event %}
             <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
             {% if post.event-date != null and post.multi-day-event != true %}
@@ -81,6 +80,7 @@ events: true
             {% else %}
             <div class="hidden-xs-down">{{ post.excerpt | markdownify }}
             </div>
+            {% include categories.html %}
             {% endunless %}
             </div>
         {% endif %}
@@ -119,7 +119,6 @@ events: true
             {% assign usual-news-counter = usual-news-counter | plus:1 %}
             <div class="col-12 col-lg-6 my-bordered-news-snippets">
               <h3 class="mb-3 mt-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{ post.title }}</a></h3>
-              {% include categories.html %}
               {% if post.image != null %}
                 {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" alt="{{ post.image-alt }}" title="{{ post.image-alt }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %};max-height:240px;height:auto;width:auto;" class="mb-3"></a>
               {% endif %}
@@ -128,7 +127,7 @@ events: true
               {% if post.event-date != null and post.multi-day-event != true %}
               <h6>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h6>{% endif %}
               <span class="hidden-xs-down">{{ post.excerpt | markdownify }}</span>
-              <p><a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal"  role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a></p>
+              <p><a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal"  role="button">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a>{% include categories.html %}</p>
             </div><!--/span-->
           {% endif %}
           {% endunless %}
