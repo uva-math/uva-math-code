@@ -2,7 +2,7 @@
 layout: post
 title: Inside UVA podcast with Ken Ono
 comments: false
-categories: news awards swiper-news
+categories: news swiper-news
 published: true
 image: __SITE_URL__/img/news_events/Inside-uva.png
 image-alt: Inside UVA podcast with Ken Ono
