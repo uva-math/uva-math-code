@@ -42,6 +42,4 @@ This talk will focus on two related models: loop measures and the loop-erased ra
 
 
 
-<br><br>
 
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

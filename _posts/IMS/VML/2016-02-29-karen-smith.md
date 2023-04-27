@@ -39,6 +39,4 @@ nav_parent: IMS
 *Abstract:* In the final lecture, we discuss a numerical invariant of singularities called the analytic index of singularities, which is defined by the convergence of a certain integral. Amazingly, this invariant turns out to have a prime characteristic description as well, as the limit, over all primes p, of another invariant called the F-pure threshold. The study of these F-pure thresholds leads to some very interesting and mysterious fractal like behavior.
 
 
-<br>
 
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

@@ -45,8 +45,4 @@ Lecture 1 is accessible to mathematics majors.
 **Abstract:** Foams are two-dimensional CW-complexes embedded in 3-space. Known link homology theories are based on foams subject to suitable skein relations as part of the package. We'll talk about a relatively recent advance (2017) by Louis-Hadrien Robert and Robert Wagner allowing to develop a clean theory for GL(N) foams bypassing previous categorical constructions and its connections to link homology, to Kronheimer-Mrowka gauge theory for 3-orbifolds, and to the Four-Color Theorem.
 
 
----
 
-<br><br>
-
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

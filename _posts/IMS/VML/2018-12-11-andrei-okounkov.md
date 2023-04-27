@@ -38,6 +38,4 @@ Unfamiliar terminology notwithstanding, there are good applications to very clas
 
 
 
-<br><br>
 
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

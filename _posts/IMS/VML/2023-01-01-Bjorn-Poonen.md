@@ -33,8 +33,4 @@ Undecidable problems have arisen in nearly every major branch of mathematics.  T
 
 (The three lectures will be mostly independent of each other.)
 
----
 
-<br><br>
-
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

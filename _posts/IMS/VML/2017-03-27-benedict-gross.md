@@ -56,6 +56,4 @@ Following Birch, we will consider the divisor classes supported on these
 points in the Jacobian, and will discuss methods that can be used to show that these classes are non-trivial.
 We will end with applications to the conjecture of Birch and Swinnerton-Dyer for elliptic curves over the rational numbers.
 
-<br>
 
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

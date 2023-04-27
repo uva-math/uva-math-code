@@ -25,8 +25,4 @@ The lectures are preceded by the <a href="https://filippomazzoli.github.io/confe
 
 <!--more-->
 
----
 
-<br><br>
-
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

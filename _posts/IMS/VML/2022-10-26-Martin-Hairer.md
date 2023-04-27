@@ -33,8 +33,4 @@ December 1, 5-6pm, Nau 101
 
 Martin Hairer will visit the department from November 28 – December 3. He will deliver the Fall 2022 installment of our VML series, consisting of 3 lectures on November 29, 30, and December 1.
 
----
 
-<br><br>
-
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

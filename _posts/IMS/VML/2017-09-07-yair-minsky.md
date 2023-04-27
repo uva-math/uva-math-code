@@ -59,6 +59,4 @@ nav_parent: IMS
 
 **Abstract:** While the theory has had many successes, we are still far from having a complete "effective" recipe for predicting the geometry of a hyperbolic 3-manifold from its topological description. I will describe some ongoing work in this direction, and some remaining questions.
 
-<br><br>
 
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

@@ -40,6 +40,4 @@ nav_parent: IMS
 *Abstract:* A subfactor is a pair of von Neumann algebras with trivial center (factors) one included in the other. A subfactor $$N \subset M$$ has an index $$[M : N]$$ which is a real number defined by von Neumann’s theory. For the most obvious examples of factors $$[M : N]$$ is actually an integer but in fact it can be any number in the set $$\{4\cos^2(\frac\pi n) \colon n = 3, 4, 5, 6, ...\} \cup [4, \infty]$$. Subfactors realising these values can be constructed from algebras of observables as in the second lecture. It is an open and intriguing question whether or not ALL subfactors (of finite index) can be obtained from quantum field theory. An attempt to take a continuum limit from the data of a subfactor has led to a new construction of knots and links from certain groups of homeomorphisms of the unit interval known as the Thompson groups.
 
 
-<br>
 
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

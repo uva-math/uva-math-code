@@ -41,6 +41,4 @@ nav_parent: IMS
 
 
 
-<br>
 
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

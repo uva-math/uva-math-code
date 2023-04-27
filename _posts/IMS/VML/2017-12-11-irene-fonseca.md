@@ -49,6 +49,4 @@ In this talk we will use methods from the calculus of variations and partial dif
 **Abstract:**  The mathematical treatment of image processing is strongly hinged on variational methods, partial differential equations, and machine learning. The bilevel scheme combines the principles of machine learning to adapt the model to a given data, while variational methods provide model-based approaches which are mathematically rigorous, yield stable solutions and error estimates. The combination of both leads to the study of weighted Ambrosio-Tortorelli and Mumford-Shah variational models for image processing.
 
 
-<br><br>
 
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

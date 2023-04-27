@@ -42,6 +42,4 @@ A cubic polynomial equation in four or more variables tends to have many integer
 The intersection of the division group of a finitely generated subgroup of a torus with an algebraic subvariety has been understood for some time (Lang, Laurent,...). After a brief review of some of the tools in the analysis and their recent extensions (Andre'-Oort Conjectures ), we give some old and new applications; periodicity of Betti numbers, algebraicity of Painleve' equations, and the additive structure of spectra of quantum graphs.
 
 
-<br><br>
 
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

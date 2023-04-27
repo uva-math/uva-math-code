@@ -33,8 +33,4 @@ Lecture abstract or description TBA.
 
 Lecture abstract or description TBA.
 
----
 
-<br><br>
-
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)

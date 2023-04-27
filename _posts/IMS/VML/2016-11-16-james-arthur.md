@@ -32,6 +32,4 @@ We shall try to introduce the Langlands program through the theory of L-function
 
 We shall discuss these matters, and explain how they are part of the theory of automorphic forms. We shall then describe the trace formula, which has led to important results in the classification of automorphic representations. If time permits, we shall also say something about Beyond Endoscopy, a proposal by Langlands for attacking the central conjecture of the subject known as the Principle of Functoriality.
 
-<br>
 
-[Virginia Mathematics Lectures archive]({{site.url}}/ims/lectures)
