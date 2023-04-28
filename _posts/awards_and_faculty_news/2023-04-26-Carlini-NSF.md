@@ -3,6 +3,8 @@ layout: post
 title: Zac Carlini Awarded NSF Graduate Fellowship and McShane Prize
 comments: false
 categories: news awards swiper-news
+image: __SITE_URL__/img/news_events/carlini.png
+image-alt: Zac Carlini
 good-md: true
 ---
 
