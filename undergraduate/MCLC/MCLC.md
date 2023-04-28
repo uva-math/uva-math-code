@@ -15,8 +15,7 @@ tooltips: true
 
 <h1 class="mb-4">Math Collaborative Learning Center</h1>
 
-<p style="font-size:150%;color:Red;"> The last day of operation for the Fall 2022 semester is Wednesday, December 7 
- <br/> (only calculus sessions will be held on the last day) </p> 
+<p style="font-size:150%;color:Red;"> The last day of operation for the Fall 2022 semester is Tuesday, May 2 
 <!-- <p style="font-size:150%;"> The MCLC will begin its operation for the Spring 2023 semester on Monday, January 23 </p> -->
 <!-- <p style="font-size:150%;"> The MCLC is now open for the Spring 2022 semester! </p> -->
 
