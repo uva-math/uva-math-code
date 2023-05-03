@@ -86,7 +86,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <tr style="height: 19px;">
 <td style="width: 90px; height: 19px; text-align: center;">12-1</td>
 <td style="width: 153.422px; height: 19px;"></td>
-<td style="width: 235px; height: 19px;"></td> Math 1210 Office Hours <!-- M -->
+<td style="width: 235px; height: 19px;">  Math 1210 Office Hours </td> <!-- M -->
 <td style="width: 235px; height: 19px;"></td>
 <td style="width: 235px; height: 19px;"> Math 1320 Office Hours </td> <!-- W -->
 <td style="width: 235px; height: 19px;">  </td>
