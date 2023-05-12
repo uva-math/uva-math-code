@@ -12,9 +12,9 @@ image: __SITE_URL__/img/Final_Exercises2019.jpg
 image-alt: Final Exercises ceremony
 ---
 
-Final Exercises ceremony for the College and Graduate School of Arts & Sciences will be on Saturday, May 20, 2023. See details about the Lawn ceremony [here](https://majorevents.virginia.edu/finals/tickets-and-seating).
+Final Exercises ceremony for the College and Graduate School of Arts & Sciences will be on Saturday, May 20, 2023. See details about the big Lawn ceremony [here](https://majorevents.virginia.edu/finals/tickets-and-seating).
 
-The ceremony times and locations for <b>Mathematics</b> are listed below (**11 a.m. – 12:30 p.m.**). These times and locations may be different from past years. 
+The ceremony times and locations for the <b>Mathematics Department Diploma Ceremony</b> are listed below (**11 a.m. – 12:30 p.m.**). These times and locations may be different from past years. 
 
 **Fair Weather:             Pavilion I, Lower Garden**<br>
 
