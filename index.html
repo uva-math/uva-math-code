@@ -115,7 +115,7 @@ events: true
         <div class="row zebra-md">
           {% for post in site.categories['news'] %}
           {% unless post.categories contains 'swiper-news' %}
-          {% if post.id != major-news_id and post.hide-this-item != true and usual-news-counter <= 3 %}
+          {% if post.id != major-news_id and post.hide-this-item != true and usual-news-counter <= 5 %}
             {% assign usual-news-counter = usual-news-counter | plus:1 %}
             <div class="col-12 col-lg-6 my-bordered-news-snippets">
               <h3 class="mb-3 mt-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{ post.title }}</a></h3>
