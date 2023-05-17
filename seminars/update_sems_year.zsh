@@ -15,7 +15,7 @@ for dir in algebra colloq diffeq galois geometry gradsem mathclub mathphys ntsem
   -e 's#show_from='\''1 July 2022'\''#show_from='\''1 July 2023'\''#g' \
   -e 's#show_to='\''1 July 2023'\''#show_to='\''1 July 2024'\''#g' "${dir}/${dir}23_24.html"
 
-  sed -i '' \
-  -e "s#<a href=\"/seminars/${dir}/\">upcoming</a> | <a href=\"/seminars/${dir}/2022-23/\">2022-23</a>#<a href=\"/seminars/${dir}/\">upcoming</a> | <a href=\"/seminars/${dir}/2023-24/\">2023-24</a> | <a href=\"/seminars/${dir}/2022-23/\">2022-23</a>#g" \
-  "${dir}/*.html"
+  for file in "${dir}"/*; do
+    sed -i '' -e "s#<a href=\"/seminars/${dir}/\">upcoming</a> | <a href=\"/seminars/${dir}/2022-23/\">2022-23</a>#<a href=\"/seminars/${dir}/\">upcoming</a> | <a href=\"/seminars/${dir}/2023-24/\">2023-24</a> | <a href=\"/seminars/${dir}/2022-23/\">2022-23</a>#g" "${file}"
+  done
 done
