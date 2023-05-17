@@ -17,6 +17,9 @@ for dir in algebra colloq diffeq galois geometry gradsem mathclub mathphys ntsem
 
   for file in "${dir}"/*.html; do
     sed -i '' -e "s#<a href=\"/seminars/${dir}/\">upcoming</a> | <a href=\"/seminars/${dir}/2022-23/\">2022-23</a>#<a href=\"/seminars/${dir}/\">upcoming</a> | <a href=\"/seminars/${dir}/2023-24/\">2023-24</a> | <a href=\"/seminars/${dir}/2022-23/\">2022-23</a>#g" "${file}"
-    
+    sed -i '' -e '/<a href="\/seminars\/'${dir}'\/">upcoming<\/a> |$/{
+    N
+    s#<a href="\/seminars\/'${dir}'\/">upcoming<\/a> |\n<a href="\/seminars\/'${dir}'\/2022-23\/">2022-23<\/a>#<a href="\/seminars\/'${dir}'\/">upcoming<\/a> | <a href="\/seminars\/'${dir}'\/2023-24\/">2023-24<\/a> | <a href="\/seminars\/'${dir}'\/2022-23\/">2022-23<\/a>#g
+  }' "${file}"
   done
 done
