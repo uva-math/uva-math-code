@@ -6,7 +6,6 @@ comments: false
 categories: 
 - news 
 - events
-- major-news
 published: true
 image: __SITE_URL__/img/Final_Exercises2019.jpg
 image-alt: Final Exercises ceremony
