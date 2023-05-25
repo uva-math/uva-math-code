@@ -27,7 +27,7 @@ events: true
             <!-- Code for the news roll -->
 
         {% assign major-news_counter = 0 %}
-        {% for post in site.categories['news'] limit:20 %}
+        {% for post in site.categories['news'] limit:10 %}
         {% if post.categories contains 'major-news' and major-news_counter == 0 %}
         {% unless post.categories contains 'swiper-news' %}
         {% assign major-news_id = post.id %}
