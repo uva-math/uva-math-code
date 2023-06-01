@@ -8,5 +8,5 @@ nav_weight: 4
 tooltips: true
 ---
 
-<h1 class="mb-4">Diagnostic</h1>
+<h1 class="mb-4">Diagnostic!</h1>
 
