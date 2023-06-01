@@ -1,4 +1,12 @@
-
+---
+title: Diagnostic Courses
+layout: ug_page
+ug_policy: true
+permalink: /undergraduate/diagnosticCourses/
+nav_parent: Undergraduate
+nav_weight: 4
+tooltips: true
+---
 
 ### Mathematics Prerequisites for the Sciences and Economics
 
