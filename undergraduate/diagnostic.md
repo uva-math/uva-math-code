@@ -15,7 +15,7 @@ tooltips: true
 ### What Math courses do I need?
 <p> First, you will want to think about what major you are considering and the courses you will be taking.  We have three pathways in our introductory courses.
 <ol>
-  <li>Non-calculus based courses for someone needing to fulfill a quantitative reasoning requirement and don’t need a calculus based course for their major. We offer MATH 1110: Probability/Finite Mathematics , MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and   MATH 1160 Algebra, Number Systems and Number Theory </li>
+  <li>Non-calculus based courses for someone needing to fulfill a quantitative reasoning requirement and don’t need a calculus based course for their major. We offer MATH 1110: Probability/Finite Mathematics , MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and   MATH 1160 Algebra, Number Systems and Number Theory. <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a> has more complete descriptions of each of these. </li>
   <li>Differential and Integral Calculus for non-STEM majors. We offer Math 1190, 1210, and 1220 for this path. </li>
     <li>Differential and Integral Calculus for STEM majors. We offer Math 1310 and 1320 for this path.</li>
   </ol>
