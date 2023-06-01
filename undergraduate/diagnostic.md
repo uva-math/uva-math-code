@@ -23,11 +23,45 @@ tooltips: true
     <li>Math 1210, Survey of Calculus 1, is a 3 credit course designed to answer the question "How do we describe how things change?" for non-STEM majors.  This is sometimes called <i>Differential Calculus</i>.  
       <li>Math 1220, Survey of Calculus 2, is a 3 credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for non-STEM majors. This is sometimes called <i>Integral Calculus</i>.  See  <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a> for more details.</li>
   </ul>
-    <li> <b>Path 3</b>  Differential and Integral Calculus for STEM majors. We offer Math 1310 and 1320 for this path. See  <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a> for more details.</li></li>
+    <li> <b>Path 3</b>  Differential and Integral Calculus for STEM majors. We offer Math 1310, 1320 and Math 2310 for this path. See  <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a> for more details.</li></li>
     <ul>
     <li>Math 1310, Calculus 1, is a 4 credit course designed to answer the question "How do we describe how things change?"  for STEM majors. This is sometimes called <i>Differential Calculus</i></li>
       <li>Math 1320, Calculus 2, is a 4 credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for STEM majors.  This is sometimes called <i>Integral Calculus</i></li>
+   <li>Math 2310, Calculus 3, is a 4 credit course designed to answer the question "What does Calculus look like in higher dimensions?"  for STEM majors.  This is sometimes called <i>Multivariable Calculus</i></li>
   </ul>
   </ol>
 
 ## What course is the best place to start?  
+<ol>
+  <li>Is <b>Path 1</b> the best choice for you? Feel free to sign up for the course that most interests you!</li>
+   <li>Is <b>Path 2</b> the best choice for you?</li>
+  <ul>
+    <li>If you have not taken a calculus course before, or it's been quite awhile, Math 1190 or Math 1210 is probably your best starting point.</li>
+      <li>If you are trying to decide between Math 1210 and Math 1220 do these three things: 
+        <ol>
+          <li>Take this self-paced Diagnostic. It's best not to use a calculator.</li>
+          <li>Check your answers  with this solution guide.</li>
+          <li>Use this advice to decide which course to take.</li>
+        </ol>
+          </li>
+  </ul>
+   <li>Is <b>Path 3</b> the best choice for you?</li>
+   <ul>
+    <li>If you have not taken a calculus course before, or it's been quite awhile, Math 1310 is probably your best starting point.</li>
+      <li>If you are trying to decide between Math 1310 and Math 1320 do these three things: 
+        <ol>
+          <li>Take this self-paced Diagnostic. It's best not to use a calculator.</li>
+          <li>Check your answers  with this solution guide.</li>
+          <li>Use this advice to decide which course to take.</li>
+        </ol>
+          </li>
+  </ul>
+  <li>If you are trying to decide between Math 1320 and Math 2310 do these three things: 
+        <ol>
+          <li>Take this self-paced Diagnostic. It's best not to use a calculator.</li>
+          <li>Check your answers  with this solution guide.</li>
+          <li>Use this advice to decide which course to take.</li>
+        </ol>
+          </li>
+  </ul>
+  </ol>
