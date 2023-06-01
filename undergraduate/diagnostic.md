@@ -13,7 +13,7 @@ tooltips: true
 <p>We are excited that you are interested in taking a math class at UVA! It’s important to find a good starting place so that we can best support your learning.  We have a couple of questions to help you figure out what’s next. </p>
 
 ## What Math courses do I need?
-<p> First, you will want to think about what major you are considering and the courses you will be taking. <a href="diagnosticCourses">Here's a list</a> of some majors and courses they require. </p>
+<p> First, you will want to think about what major you are considering and the courses you will be taking. <a href="https://math.virginia.edu/undergraduate/diagnosticCourses">Here's a list</a> of some majors and courses they require. </p>
 <h3 class="mb-4">Three pathways through our introductory courses</h3>
 <ol>
   <li> <b>Path 1</b>  Non-calculus based courses for someone needing to fulfill a quantitative reasoning requirement and don’t need a calculus based course for their major. We offer MATH 1110: Probability/Finite Mathematics , MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and   MATH 1160 Algebra, Number Systems and Number Theory. <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a> has more complete descriptions of each of these courses. </li>
