@@ -7,7 +7,7 @@ nav_parent: Undergraduate
 nav_weight: 4
 tooltips: true
 ---
-
+<h1 class="mb-4">Diagnostic</h1>
 
 <p>We are excited that you are interested in taking a math class at UVA! It’s important to find a good starting place so that we can best support your learning.  We have a couple of questions to help you figure out what’s next. </p>
 
