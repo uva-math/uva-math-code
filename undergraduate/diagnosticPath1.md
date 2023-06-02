@@ -22,6 +22,7 @@ tooltips: true
  <span class="bolded"> <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a></span> has more complete descriptions of each of these courses.
  </div>
   <p></p>
+ 
  ## Diagnostic: Which course is the best place to start?  
  <p>Simply pick the course that is most interesting to you and sign up!</p>
  
