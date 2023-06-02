@@ -9,7 +9,7 @@ tooltips: true
 ---
 <h1 class="mb-4">Diagnostic Advice for 1210/1220</h1>
 
-<p> Now that you've taken  <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">the diagnostic</a> to decide between Math 1210 and Math 1220: </p>
+<p> Now that you've taken  <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">the diagnostic</a> to decide between Math 1210 and Math 1220, </p>
 
  <ul>
     <li> Grade diagnostic problems as either right or wrong <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">using these solutions</a>. If you arrived at an incorrect solution owing only to a careless arithmetic error, then count the solution as correct. </li>
