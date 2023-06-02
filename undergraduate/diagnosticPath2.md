@@ -18,10 +18,15 @@ tooltips: true
       <li> <span class="bolded">Math 1220</span>, Survey of Calculus 2, is a <strong>3</strong> credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for non-STEM majors. This is sometimes called <i>Integral Calculus</i>.  
   </ul>
 
- <span class="bolded"> <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a></span> has more complete descriptions of each of these courses. 
+  
+<p>
+ <span class="bolded"> <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a></span> has more complete descriptions of each of these courses.
+ </p>
+
  
  ## Which course is the best place to start?  
  
+ <p>
  <ol>
     <li><em>Have you <span class="bolded">not</span> taken calculus course before?  Has it been quite awhile since your last calculus course?</em> </li>
 		<ul>
@@ -40,4 +45,5 @@ tooltips: true
 			  <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">this solution guide.</a></li>
 			  <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">this advice</a> to decide which course to take.</li>
     	</ul>
-</ol> 
+</ol>
+ </p>
