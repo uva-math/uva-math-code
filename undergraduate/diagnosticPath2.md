@@ -24,7 +24,7 @@ tooltips: true
  </div>
  <p></p>
  
- ## Diagnostic: Which course is the best place to start?  
+ ## Which course is the best place to start?  
  
  <ol>
     <li><em>Have you <strong>not</strong> taken calculus course before?  Has it been quite awhile since your last calculus course?</em> </li>
