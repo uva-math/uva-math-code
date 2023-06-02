@@ -1,7 +1,7 @@
 ---
 title: Diagnostic Courses
 layout: ug_page
-ug_policy: true
+ug_policy: false
 permalink: /undergraduate/diagnosticCourses/
 nav_parent: Undergraduate
 nav_weight: 4
