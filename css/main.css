@@ -400,10 +400,24 @@ h6,
     max-width: 270px;
 }
 
-.diagnostic ol::marker {
+
+.diagnostic ol {
+  padding: 1em 1em 1em 6em;
+}
+
+
+.diagnostic .bolded{
+font-weight: bold;
+}
+
+.diagnostic ol li::marker {
   content: "Path " counter(list-item) ": ";
-  color: #00b7a8;
   font-weight: bold;
+}
+
+.diagnostic ul li::marker {
+	content: normal;
+	font-weight: bold;
 }
 
 
