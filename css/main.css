@@ -400,8 +400,11 @@ h6,
     max-width: 270px;
 }
 
-.diagnostic ol:li::marker {
+.diagnostic {
   font-size: 100%;
   font-weight: bold;
-  color: red;
+}
+ol.diagnostic li::marker {
+  content:"[" counter(list-item)"] ";
+  color: rgba(0,0,0,0.5);
 }
