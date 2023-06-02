@@ -8,7 +8,7 @@ nav_weight: 4
 tooltips: true
 ---
 
-<h1 class="mb-4">Diagnostic for Path 2</h1>
+<h1 class="mb-4">Diagnostic for Path 2 UNDER CONSTRUCTION</h1>
 
 <p> We offer Math 1190, 1210, and 1220 for Path 2 </p>
 <div class=diagnostic>
