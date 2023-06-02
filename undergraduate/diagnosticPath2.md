@@ -35,5 +35,6 @@ tooltips: true
       <ul>
           <li>Take this self-paced Diagnostic. It's best not to use a calculator.</li>
           <li>Check your answers  with this solution guide.</li>
-          <li>Use this advice to deci
- 
+          <li>Use this advice to decide which course to take.</li>
+        </ul>
+    </ol>
