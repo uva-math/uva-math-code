@@ -24,7 +24,7 @@ tooltips: true
  </p>
 
  
- ## Which course is the best place to start?  
+ <h3> Which course is the best place to start?  </h3>
  
  <p>
  <ol>
