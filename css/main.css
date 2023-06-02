@@ -400,6 +400,14 @@ h6,
     max-width: 270px;
 }
 
+.diagnostic .shiftedRight {
+    margin-left: 30px;
+}
+
+
+.diagnostic .shiftedLeft {
+    margin-left: -35px;
+}
 
 .diagnostic ol {
   padding: 1em 1em 1em 6em;
