@@ -400,8 +400,8 @@ h6,
     max-width: 270px;
 }
 
-.diagnostic li::marker {
-  font-size: 90%;
+.diagnostic ol:li::marker {
+  font-size: 100%;
   font-weight: bold;
   color: red;
 }
