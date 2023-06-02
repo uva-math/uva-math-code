@@ -11,18 +11,14 @@ tooltips: true
 <h1 class="mb-4">Diagnostic for Path 2</h1>
 
 <p> We offer Math 1190, 1210, and 1220 for Path 2 </p>
-<div class=diagnostic>
+
  <ul>
     <li> <span class="bolded">Math 1190</span>, Survey of Calculus 1 with Algebra is a <strong>4</strong> credit course designed to provide a gentle introduction to Survey of Calculus 1 with addtional pre-calculus and algebra practice.  This is a great course if it's been awhile since your last math course and/or you would like to brush up on your pre-calculus and/or algebra skills.  </li>
     <li> <span class="bolded">Math 1210</span>, Survey of Calculus 1, is a <strong>3</strong> credit course designed to answer the question "How do we describe how things change?" for non-STEM majors.  This is sometimes called <i>Differential Calculus</i>.  </li>
       <li> <span class="bolded">Math 1220</span>, Survey of Calculus 2, is a <strong>3</strong> credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for non-STEM majors. This is sometimes called <i>Integral Calculus</i>.  
   </ul>
-  </div>
-  
 
- <span class="bolded"> <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a></span> has more complete descriptions of each of these courses.
- 
-
+ <span class="bolded"> <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a></span> has more complete descriptions of each of these courses. 
  
  ## Which course is the best place to start?  
  
@@ -44,5 +40,4 @@ tooltips: true
 			  <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">this solution guide.</a></li>
 			  <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">this advice</a> to decide which course to take.</li>
     	</ul>
-</ol>
- 
+</ol> 
