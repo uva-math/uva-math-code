@@ -400,11 +400,11 @@ h6,
     max-width: 270px;
 }
 
-.diagnostic {
-  font-size: 100%;
+.diagnostic ol::marker {
+  content: "Path " counter(list-item) ": ";
+  color: #00b7a8;
   font-weight: bold;
 }
-ol.diagnostic li::marker {
-  content:"[" counter(list-item)"] ";
-  color: rgba(0,0,0,0.5);
-}
+
+
+
