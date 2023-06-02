@@ -8,7 +8,7 @@ nav_weight: 4
 tooltips: true
 ---
 
-<h1 class="mb-4">Diagnostic for Path 2 UNDER CONSTRUCTION</h1>
+<h1 class="mb-4">Diagnostic for Path 2</h1>
 
 <p> We offer Math 1190, 1210, and 1220 for Path 2 </p>
 <div class=diagnostic>
@@ -22,19 +22,24 @@ tooltips: true
 
  <span class="bolded"> <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a></span> has more complete descriptions of each of these courses.
  </div>
+ <p></p>
  
  ## Diagnostic: Which course is the best place to start?  
+ 
  <ol>
-    <li><em>Have you <strong>not</strong> taken calculus course before?  Has it been quite awhile since your last calculus course?</em> Math 1190 or Math 1210 is probably your best starting point.</li>
-    <ul>
-    <li><em> Would it be helpful to brush up or get more practice with Algebra and/or Pre-Calculus?</em> if 'yes' is your answer, then 1190 Would be a great environment to do this. </li>
+    <li><em>Have you <strong>not</strong> taken calculus course before?  Has it been quite awhile since your last calculus course?</em> </li>
+    <ul><li>Math 1190 or Math 1210 is probably your best starting point.</li></ul>
+   
+    <li><em> Would it be helpful to brush up or get more practice with Algebra and/or Pre-Calculus?</em> </li>
+     <ul>
+     <li>if 'yes' is your answer, then 1190 Would be a great environment to do this. </li>
      <li>if 'no' is your answer then Math 1210 would be a good fit. 
     </ul>
   
     <li> <em> Are you trying to decide betwen Math 1210 and Math 1220?</em> You will need to do 3 things.
       <ul>
-          <li>Take this self-paced Diagnostic. It's best not to use a calculator.</li>
-          <li>Check your answers  with this solution guide.</li>
-          <li>Use this advice to decide which course to take.</li>
+          <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">self-paced Diagnostic.</a></li>
+          <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">this solution guide.</a></li>
+          <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">this advice</a> to decide which course to take.</li>
         </ul>
     </ol>
