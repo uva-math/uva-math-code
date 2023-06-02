@@ -2,7 +2,7 @@
 title: Diagnostic Advice for 1310/1320
 layout: ug_page
 ug_policy: false
-permalink: /undergraduate/diagnosticPath3Advice/
+permalink: /undergraduate/diagnosticPath3_1310_20Advice/
 nav_parent: Undergraduate
 nav_weight: 4
 tooltips: true
