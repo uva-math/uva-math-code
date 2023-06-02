@@ -399,3 +399,9 @@ h6,
 .tooltip-inner {
     max-width: 270px;
 }
+
+.diagnostic li::marker {
+  font-size: 90%;
+  font-weight: bold;
+  color: red;
+}
