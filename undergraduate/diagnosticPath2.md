@@ -17,17 +17,17 @@ tooltips: true
     <li> <span class="bolded">Math 1210</span>, Survey of Calculus 1, is a <strong>3</strong> credit course designed to answer the question "How do we describe how things change?" for non-STEM majors.  This is sometimes called <i>Differential Calculus</i>.  </li>
       <li> <span class="bolded">Math 1220</span>, Survey of Calculus 2, is a <strong>3</strong> credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for non-STEM majors. This is sometimes called <i>Integral Calculus</i>.  
   </ul>
-  
+  </div>
   
 
  <span class="bolded"> <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a></span> has more complete descriptions of each of these courses.
- </div>
+ 
 
  
  ## Which course is the best place to start?  
  
  <ol>
-    <li><em>Have you <strong>not</strong> taken calculus course before?  Has it been quite awhile since your last calculus course?</em> </li>
+    <li><em>Have you <span class="bolded">not</span> taken calculus course before?  Has it been quite awhile since your last calculus course?</em> </li>
 		<ul>
 			<li>Math 1190 or Math 1210 is probably your best starting point.</li>
 		</ul>
@@ -45,4 +45,4 @@ tooltips: true
 			  <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">this advice</a> to decide which course to take.</li>
     	</ul>
 </ol>
-    
+ 
