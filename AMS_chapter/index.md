@@ -35,6 +35,7 @@ The AMS, founded in 1888 to further the interests of mathematical research and s
   <li>advance the status of the profession of mathematics, encouraging and facilitating full participation of all individuals, and</li>
   <li>foster an awareness and appreciation of mathematics and its connections to other disciplines and everyday life.</li>
 </ul>
+
 Our purpose is to foster a greater understanding of mathematics, encourage student activity in research and related mathematical experiences, and provide a social and intellectual forum for all students interested in mathematics.
 
 Our goal is to invest in both the scholarly and social lives of our members. We host events to achieve this goal: organizing speakers, research and work retreats, and social gatherings, among others.
