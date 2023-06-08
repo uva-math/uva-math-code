@@ -27,10 +27,16 @@ The University of Virginia AMS graduate student chapter executive committee cons
 
 ###  AMS mission statement
 
-The AMS, founded in 1888 to further the interests of mathematical research and scholarship, serves the national and international community through its publications, meetings, advocacy and other programs, which promote mathematical research, its communication and uses, encourage and promote the transmission of mathematical understanding and skills, support mathematical education at all levels, advance the status of the profession of mathematics, encouraging and facilitating full participation of all individuals, and foster an awareness and appreciation of mathematics and its connections to other disciplines and everyday life.
-
+The AMS, founded in 1888 to further the interests of mathematical research and scholarship, serves the national and international community through its publications, meetings, advocacy and other programs, which
+<ul>
+  <li>promote mathematical research, its communication and uses,</li>
+  <li>encourage and promote the transmission of mathematical understanding and skills,</li>
+  <li>support mathematical education at all levels,</li>
+  <li>advance the status of the profession of mathematics, encouraging and facilitating full participation of all individuals, and</li>
+  <li>foster an awareness and appreciation of mathematics and its connections to other disciplines and everyday life.</li>
+</ul>
 Our purpose is to foster a greater understanding of mathematics, encourage student activity in research and related mathematical experiences, and provide a social and intellectual forum for all students interested in mathematics.
 
-Our goal is to invest in both the scholarly and social lives of our members. We host events to achieve this goal: organizing speakers, research/work retreats, and social gatherings, among others.
+Our goal is to invest in both the scholarly and social lives of our members. We host events to achieve this goal: organizing speakers, research and work retreats, and social gatherings, among others.
 
 We seek to inform and educate graduate students on all aspects of mathematics, both as a subject and a profession. We also publicize opportunities and raise awareness of issues related to mathematics and professional development.
