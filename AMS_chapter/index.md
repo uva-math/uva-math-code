@@ -14,6 +14,8 @@ The mission of the University of Virginia graduate student chapter of the AMS is
 
 To become a member and enjoy extra perks, such as being added to the chapter mailing list, please fill out <a href="https://forms.gle/WRxuXZMt9JvpvvqAA">this form</a>. Membership is for free.
 
+###  Executive committee
+
 The University of Virginia AMS graduate student chapter executive committee consists of:
 
 President: <a href="https://eleanormcspirit.com/">Eleanor McSpirit</a>
@@ -26,7 +28,7 @@ Treasurer: <a href="https://math.virginia.edu/people/guc8ns/">Petch Chueluecha</
 
 Member at large: <a href="https://math.virginia.edu/people/zha5sb/">Maximiliano Sánchez Garza</a>
 
-AMS mission statement
+###  AMS mission statement
 
 The AMS, founded in 1888 to further the interests of mathematical research and scholarship, serves the national and international community through its publications, meetings, advocacy and other programs, which promote mathematical research, its communication and uses, encourage and promote the transmission of mathematical understanding and skills, support mathematical education at all levels, advance the status of the profession of mathematics, encouraging and facilitating full participation of all individuals, and foster an awareness and appreciation of mathematics and its connections to other disciplines and everyday life.
 
