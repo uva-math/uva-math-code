@@ -4,7 +4,7 @@ title: 2023 UVa REU Number Theory lecture series
 event-date: 2023-06-08 00:00:00
 multi-day-event: true
 comments: false
-categories: news events
+categories: news events major-news
 published: true
 image: __SITE_URL__/img/news_events/summer.png
 image-alt: REU Number Theory Lectures
