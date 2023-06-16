@@ -17,20 +17,22 @@ tooltips: true
 ## Main links:
 
 - The Graduate School of Arts & Sciences page (with "apply" link): [`http://graduate.as.virginia.edu/`](http://graduate.as.virginia.edu/)
-- Direct link to application system at University of Virginia: [`https://applycentral.virginia.edu/apply/`](https://applycentral.virginia.edu/apply/)
+- Direct link to application system at University of Virginia: [`https://applycentral.virginia.edu/apply/`](https://applycentral.virginia.edu/apply/) <code>&#8212;</code> the portal for Fall 2024 admission will open on September 15, 2023.
 
 ## Application Checklist:
 1. Application;
 2. Statement of purpose;
-3. GRE scores, including the mathematics&nbsp;subject test (<b>all GRE requirements are waived in the 2022-2023 application year</b>);
+3. GRE scores, including the mathematics&nbsp;subject test (<b>all GRE requirements are waived in the 2023-2024 application year</b>);
 4. 2 or 3 letters of recommendation;
 5. Unofficial transcript;
-6. $85 application fee;
+6. $85 application fee; 
 7. TOEFL score for international students (see <a href="http://graduate.as.virginia.edu/requirements">here</a>). In exceptional circumstances, it might be possible to replace TOEFL with an in-person / video interview with UVA faculty.
 
 ##### Other useful links
 
+- Fee waivers for US citizens: [`https://graddiversity.virginia.edu/application-fee-waiver`](https://graddiversity.virginia.edu/application-fee-waiver)
 - Requirements: [`http://graduate.as.virginia.edu/requirements`](http://graduate.as.virginia.edu/requirements)
+ 	Under the Fees tab on this page, there is additional information about automatic application fee waivers for citizens of certain countries.
 - Deadlines: [`http://graduate.as.virginia.edu/deadlines`](http://graduate.as.virginia.edu/deadlines)
 - FAQ: [`http://graduate.as.virginia.edu/frequently-asked-questions`](http://graduate.as.virginia.edu/frequently-asked-questions)
 
