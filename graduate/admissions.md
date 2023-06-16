@@ -38,7 +38,7 @@ tooltips: true
 
 ## Criteria for Admission
 
-<strong>Please note that Department of Mathematics does not normally admit students seeking only a Masters degree; we are primarily a PhD program.</strong>.
+<strong>Please note that Department of Mathematics does not normally admit students seeking only a Masters degree; we are primarily a PhD program.</strong>
 
 In making its decisions about admission and financial aid, the Department is first and foremost looking for students that we feel will flourish in our program. To determine if a student will be successful, the Department pays close attention to the overall undergraduate record, letters of recommendation, and the student&#39;s personal statement.
 
