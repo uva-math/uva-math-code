@@ -17,7 +17,7 @@ tooltips: true
 ## Main links:
 
 - The Graduate School of Arts & Sciences page (with "apply" link): [`http://graduate.as.virginia.edu/`](http://graduate.as.virginia.edu/)
-- Direct link to application system at University of Virginia: [`https://applycentral.virginia.edu/apply/`](https://applycentral.virginia.edu/apply/) <code>&#8212;</code> the portal for Fall 2024 admission will open on September 15, 2023.
+- Direct link to application system at University of Virginia: [`https://applycentral.virginia.edu/apply/`](https://applycentral.virginia.edu/apply/) <code>&#8212;</code> the portal for Fall 2024 admission will open on October 1, 2023.
 
 ## Application Checklist:
 1. Application;
