@@ -8,6 +8,6 @@ office: 127 Kerchof Hall
 phone: 
 email: zha5sb@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/Garza.jpg 
-personal_page:
+personal_page: https://sites.google.com/view/maxsg
 
 ---
