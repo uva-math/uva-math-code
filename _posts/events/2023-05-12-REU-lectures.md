@@ -6,7 +6,7 @@ multi-day-event: true
 comments: false
 categories: news events major-news
 published: true
-image: __SITE_URL__/img/news_events/TerenceTao_UVA_2023.png
+image: __SITE_URL__/img/news_events/KenRibet_UVA_2023.jpg
 image-alt: REU Number Theory Lectures
 more-text: Talk titles
 ---
