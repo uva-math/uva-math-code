@@ -22,7 +22,7 @@ tooltips: true
 ## Application Checklist:
 1. Application;
 2. Statement of purpose;
-3. GRE scores, including the mathematics&nbsp;subject test (<b>all GRE requirements are waived in the 2023-2024 application year</b>);
+3. GRE scores, including the mathematics&nbsp;subject test (<b>all GRE requirements are waived for the Fall 2024 admission cycle</b>);
 4. 2 or 3 letters of recommendation;
 5. Unofficial transcript;
 6. $85 application fee; 
