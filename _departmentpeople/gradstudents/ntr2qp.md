@@ -1,7 +1,7 @@
 ---
 UVA_id: ntr2qp
-lastname: Arévalo Cordon
-name: Oscar Rogelio
+lastname: Arévalo
+name: Oscar
 general_position: gradstudent
 position: Graduate Student
 office: 
