@@ -7,7 +7,7 @@ position: Graduate Student
 office: 401 Kerchof Hall
 phone: 434-924-0899
 email: zuy3cu@virginia.edu
-image: __SITE_URL__/img/people/2022-fall/Hart.jpg 
+image: __SITE_URL__/img/people/2023-fall/Mason.jpg 
 personal_page:
 
 ---
