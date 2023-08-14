@@ -15,10 +15,9 @@ tooltips: true
 
 <h1 class="mb-4">Math Collaborative Learning Center</h1>
 
-<p style="font-size:150%;color:Red;"> The last day of operation for the Spring 2023 semester is Tuesday, May 2.
-<br> Some Calculus I & II sessions will continue through Monday, May 8
-</p>
-<!-- <p style="font-size:150%;"> The MCLC will begin its operation for the Spring 2023 semester on Monday, January 23 </p> -->
+<!-- <p style="font-size:150%;color:Red;"> The last day of operation for the Spring 2023 semester is Tuesday, May 2.
+<br> Some Calculus I & II sessions will continue through Monday, May 8 </p> -->
+<p style="font-size:150%;"> The MCLC will begin its operation for the Spring 2023 semester on Monday, August 28 </p>
 <!-- <p style="font-size:150%;"> The MCLC is now open for the Spring 2022 semester! </p> -->
 
 The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Student Center on the second floor of Clemons Library. </b> The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer assistance one-on-one (or in small groups) for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
@@ -41,8 +40,8 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 
 <br>
 
-<p style="font-size:120%;color:coral;"> If you have joined an MCLC session this semester please take a couple of minutes to complete this 
-<a href="https://virginia.az1.qualtrics.com/jfe/form/SV_5pyBzLjZP1U6xdI">survey</a>. We appreciate your feedback. </p> 
+<!-- <p style="font-size:120%;color:coral;"> If you have joined an MCLC session this semester please take a couple of minutes to complete this 
+<a href="https://virginia.az1.qualtrics.com/jfe/form/SV_5pyBzLjZP1U6xdI">survey</a>. We appreciate your feedback. </p> -->
 
 <h2 class="mb-4 mt-4">Schedule </h2>
 
@@ -126,7 +125,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 234.625px; height: 19px;"> </td>
 <td style="width: 171.453px; height: 19px;">  </td> <!-- W -->
 <td style="width: 218.578px; height: 19px;">  </td>
-<td style="width: 245.703px; height: 19px;"> Math 1310 Office Hours </td>
+<td style="width: 245.703px; height: 19px;"> </td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 90px; text-align: center; height: 19px;">5-6</td>
