@@ -2,7 +2,5 @@
 - Last name begins with **E-H:** {% include person_info_email_only.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
 - Last name begins with **J-L:** {% include person_info_email_only.html UVA_id="ph7ph" %}<br><br class="hidden-sm-up">
 - Last name begins with **M-P:** {% include person_info_email_only.html UVA_id="njk4x" %}<br><br class="hidden-sm-up">
-- Last name begins with **Q-T (Fall):** {% include person_info_email_only.html UVA_id="tam7b" %}<br><br class="hidden-sm-up">
-- Last name begins with **Q-T (Spring):** {% include person_info_email_only.html UVA_id="yqd3p" %}<br><br class="hidden-sm-up">
-- Last name begins with **U-Z (Fall):** {% include person_info_email_only.html UVA_id="lap5r" %}<br><br class="hidden-sm-up">
-- Last name begins with **U-Z (Spring):** {% include person_info_email_only.html UVA_id="asr3x" %}<br><br class="hidden-sm-up">
+- Last name begins with **Q-T:** {% include person_info_email_only.html UVA_id="tam7b" %}  (**Fall**); {% include person_info_email_only.html UVA_id="yqd3p" %} (**Spring**)<br><br class="hidden-sm-up">
+- Last name begins with **U-Z:** {% include person_info_email_only.html UVA_id="lap5r" %}  (**Fall**); {% include person_info_email_only.html UVA_id="asr3x" %} (**Spring**)<br><br class="hidden-sm-up">
