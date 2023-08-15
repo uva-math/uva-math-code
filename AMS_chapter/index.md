@@ -14,11 +14,6 @@ The mission of the University of Virginia graduate student chapter of the AMS is
 
 To become a member and enjoy extra perks, such as being added to the chapter mailing list, please fill out <a href="https://forms.gle/WRxuXZMt9JvpvvqAA">this form</a>. Membership is free.
 
-<br>
-<iframe src="https://calendar.google.com/calendar/embed?height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=c_60f1de561954223e1933f83f3bfb2520fd742ca85cbd6a02dade97379ec7fad3%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="500" frameborder="0" scrolling="no"></iframe>
-
-<br>
-
 ###  Executive committee
 
 The University of Virginia AMS graduate student chapter executive committee consists of:
@@ -30,6 +25,13 @@ The University of Virginia AMS graduate student chapter executive committee cons
   <li>Member at large: <a href="https://sites.google.com/view/maxsg">Maximiliano Sánchez Garza</a></li>
 </ul>
 Fellow AMS graduate student chapters are most welcome and encouraged to get in touch with us for joint social events!
+
+### Calendar
+
+<br>
+<iframe src="https://calendar.google.com/calendar/embed?height=500&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=c_60f1de561954223e1933f83f3bfb2520fd742ca85cbd6a02dade97379ec7fad3%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FNew_York" style="border-width:0" width="800" height="500" frameborder="0" scrolling="no"></iframe>
+
+<br>
 
 ###  AMS mission statement
 
