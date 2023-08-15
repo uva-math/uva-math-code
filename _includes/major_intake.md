@@ -1,8 +1,8 @@
-- {% include person_info_email_only.html UVA_id="aa4cr" %} (Last name begins with letter A-D)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="pa8e" %} (Last name begins with letter E-H)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="ph7ph" %} (Last name begins with letter J-L)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="njk4x" %} (Last name begins with letter M-P)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="tam7b" %} (Last name begins with letter Q-T for the <b>fall</b>)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="yqd3p" %} (Last name begins with letter Q-T for the <b>spring</b>)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="lap5r" %} (Last name begins with letter U-Z for the <b>fall</b>)<br><br class="hidden-sm-up">
-- {% include person_info_email_only.html UVA_id="asr3x" %} (Last name begins with letter U-Z for the <b>spring</b>)<br><br class="hidden-sm-up">
+- Last name begins with **A-D:** {% include person_info_email_only.html UVA_id="aa4cr" %}<br><br class="hidden-sm-up">
+- Last name begins with **E-H:** {% include person_info_email_only.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
+- Last name begins with **J-L:** {% include person_info_email_only.html UVA_id="ph7ph" %}<br><br class="hidden-sm-up">
+- Last name begins with **M-P:** {% include person_info_email_only.html UVA_id="njk4x" %}<br><br class="hidden-sm-up">
+- Last name begins with **Q-T (Fall):** {% include person_info_email_only.html UVA_id="tam7b" %}<br><br class="hidden-sm-up">
+- Last name begins with **Q-T (Spring):** {% include person_info_email_only.html UVA_id="yqd3p" %}<br><br class="hidden-sm-up">
+- Last name begins with **U-Z (Fall):** {% include person_info_email_only.html UVA_id="lap5r" %}<br><br class="hidden-sm-up">
+- Last name begins with **U-Z (Spring):** {% include person_info_email_only.html UVA_id="asr3x" %}<br><br class="hidden-sm-up">
