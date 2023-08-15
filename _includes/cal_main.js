@@ -54,9 +54,9 @@
     if(num == 11) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "11" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
     if(num == 12) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "12" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
     if(num == 13) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "13" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 14) { return '<a href="{{site.url}}/awm/calendar/">AWM at UVA</a>'; }
+    if(num == 14) { return '<a href="{{site.url}}/ams_chapter/">AWM at UVA</a>'; }
     if(num == 15) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "15" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
-    if(num == 16) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "16" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 16) { return '<a href="{{site.url}}/awm/calendar/">AMS Student Chapter</a>'; }
     if(num == 17) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "16" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
     return '';
   }
