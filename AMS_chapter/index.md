@@ -10,7 +10,7 @@ nav_id: AMS Grad Student Chapter
 
 ###  AMS Graduate Student Chapter
 
-The mission of the University of Virginia graduate student chapter of the AMS is informed by the objectives of the <a href="https://www.ams.org/home/page">American Mathematical Society (AMS)</a>, whose mission statement is attached below. Our chapter seeks to nurture intellectual, professional, and community development among our members. We host events in service of this goal, such as panel discussions, talks, and social gatherings.
+The mission of the University of Virginia graduate student chapter of the AMS is informed by the objectives of the <a href="https://www.ams.org/home/page">American Mathematical Society (AMS)</a>, whose mission statement is attached below. Our chapter seeks to nurture intellectual, professional, and community development among our members. We host events in service of this goal, such as panel discussions, talks, and social gatherings, including collaborations with fellow AMS graduate student chapters!
 
 To become a member and enjoy extra perks, such as being added to the chapter mailing list, please fill out <a href="https://forms.gle/WRxuXZMt9JvpvvqAA">this form</a>. Membership is for free.
 
@@ -24,6 +24,7 @@ The University of Virginia AMS graduate student chapter executive committee cons
   <li>Treasurer: <a href="https://math.virginia.edu/people/guc8ns/">Petch Chueluecha</a></li>
   <li>Member at large: <a href="https://sites.google.com/view/maxsg">Maximiliano Sánchez Garza</a></li>
 </ul>
+Fellow AMS graduate student chapters are most welcome and encouraged to get in touch with us for joint social events!
 
 ###  AMS mission statement
 
