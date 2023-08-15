@@ -44,9 +44,7 @@
     - UVA_id: eg4va
     - UVA_id: ph7ph
     - UVA_id: ko5wk
-    
-
-
+  
 - cal_number: '1'
   name: Geometry Seminar
   shortname: geometry
@@ -196,3 +194,18 @@
   contact:
     - UVA_id: hcg3m
     - UVA_id: lap5r
+
+- cal_number: '14'
+  name: AMW at UVA
+  shortname: awm
+  published_in_nav: false
+  google_cal_id: '3ehl1jte3jnlftm6h5m28b96jo@group.calendar.google.com'
+  seminar_weight: 190
+  
+- cal_number: '16'
+  name: AMS Student Chapter
+  shortname: ams
+  published_in_nav: false
+  google_cal_id: 'c_60f1de561954223e1933f83f3bfb2520fd742ca85cbd6a02dade97379ec7fad3@group.calendar.google.com'
+  seminar_weight: 191
+  
