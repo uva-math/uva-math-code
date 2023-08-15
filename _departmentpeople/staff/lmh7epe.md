@@ -9,6 +9,6 @@ phone:
 email: lmh7epe@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/LHerndon.jpg
 personal_page:
-
+published: false
 
 ---
