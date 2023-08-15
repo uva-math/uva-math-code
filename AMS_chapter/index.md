@@ -41,4 +41,6 @@ Our purpose is to foster a greater understanding of mathematics, encourage stude
 
 Our goal is to invest in both the scholarly and social lives of our members. We host events to achieve this goal: organizing speakers, research and work retreats, and social gatherings, among others.
 
+<iframe class="hidden-md-up" src="https://calendar.google.com/calendar/embed?height=270&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=c_60f1de561954223e1933f83f3bfb2520fd742ca85cbd6a02dade97379ec7fad3%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FNew_York" style="border-width:0" width="380" height="300" frameborder="0" scrolling="no"></iframe>
+
 We seek to inform and educate graduate students on all aspects of mathematics, both as a subject and a profession. We also publicize opportunities and raise awareness of issues related to mathematics and professional development.
