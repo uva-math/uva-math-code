@@ -1,6 +1,6 @@
 ---
 UVA_id: des5sf
-lastname: Cobhthaigh
+lastname: O Cobhthaigh
 name: Micheal
 general_position: gradstudent
 position: Graduate Student
