@@ -4,7 +4,7 @@ lastname: Simms
 name: Gregory
 general_position: lecturer
 position: Lecturer
-office:
+office: 212 Kerchof Hall
 phone: 
 email: gps9h@virginia.edu
 image: 
