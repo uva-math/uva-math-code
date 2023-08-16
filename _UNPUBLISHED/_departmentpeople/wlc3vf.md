@@ -9,7 +9,7 @@ phone: 434-243-2304
 email: wlc3vf@virginia.edu
 image:  __SITE_URL__/img/people/2021-fall/Craig_W.jpg
 personal_page: http://willcraigmath.wordpress.com/
-
+published: false
 
 ---
 

@@ -9,5 +9,5 @@ phone:
 email: aus8ng@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/Sanchez.jpg 
 personal_page:
-
+published: false
 ---

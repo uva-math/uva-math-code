@@ -9,6 +9,6 @@ phone: 434-243-8698
 email: ndn3em@virginia.edu
 image: '__SITE_URL__/img/people/2017-fall/Vi Nhan.jpg'
 personal_page: https://sites.google.com/view/nhan-nguyen/home
-
+published: false
 
 ---
