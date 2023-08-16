@@ -9,7 +9,7 @@ phone: 434-243-2304
 email: mt3cb@virginia.edu
 image: __SITE_URL__/img/people/2019-fall/Tarighat.jpg
 personal_page: https://sites.google.com/view/mojdeh
-
+published: false
 
 ---
 
