@@ -4,7 +4,7 @@ lastname: Parshall
 name: Karen
 general_position: emeritus
 position: Commonwealth Professor of Mathematics and History Emerita
-office: 
+office: 213 Kerchof Hall 
 phone: 
 email: khp3k@virginia.edu
 image: __SITE_URL__/img/people/ParshallK.jpg
