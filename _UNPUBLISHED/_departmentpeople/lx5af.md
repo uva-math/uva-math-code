@@ -9,7 +9,7 @@ phone:
 email: lx5af@virginia.edu
 image:  __SITE_URL__/img/people/2020-spring/Liaosha Xu.jpg
 personal_page:
-published: true
+published: false
 
 
 ---
