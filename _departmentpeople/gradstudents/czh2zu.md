@@ -4,7 +4,7 @@ lastname: Fridhi
 name: Samir
 general_position: gradstudent
 position: Bridge to the Doctorate Student
-office:
+office: 403 Kerchof Hall
 phone: 
 email: czh2zu@virginia.edu
 image: 
