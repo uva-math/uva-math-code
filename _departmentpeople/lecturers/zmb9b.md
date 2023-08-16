@@ -4,7 +4,7 @@ lastname: Beamer
 name: Zachary
 general_position: lecturer
 position: Lecturer
-office:
+office: 212 Kerchof Hall
 phone: 
 email: zmb9b@virginia.edu
 image: 
