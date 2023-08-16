@@ -4,8 +4,8 @@ lastname: Shapiro
 name: Brandon
 general_position: postdoc
 position: Whyburn Research Associate and Lecturer
-office:
-phone: 
+office: 311 Kerchof Hall
+phone:  
 email: pfy7cf@virginia.edu
 image: 
 personal_page:
