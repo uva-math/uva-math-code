@@ -4,7 +4,7 @@ lastname: Evans
 name: Ana Nora
 general_position: lecturer
 position: Lecturer
-office:
+office: 212 Kerchof Hall
 phone: 
 email: ans5k@virginia.edu
 image: 
