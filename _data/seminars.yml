@@ -29,7 +29,7 @@
   webpage: 'http://pi.math.virginia.edu/algebra/'
   google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
   seminar_weight: 40
-  regular_times: Wednesdays and Fridays 3:30-4:30pm, Monroe 122 
+  regular_times: Wednesdays and Fridays 3:30-4:30pm, New Cabell Hall 364
   contact:
     - UVA_id: yq2dw
     - UVA_id: mve2x
@@ -39,7 +39,7 @@
   shortname: ntsem
   google_cal_id: '56un1k179o7d8mtj85o12qsg7c@group.calendar.google.com'
   seminar_weight: 90
-  regular_times: Fridays at 1:00, Monroe 111
+  regular_times: Fridays at 1:00, New Cabell 411
   contact:
     - UVA_id: eg4va
     - UVA_id: ph7ph
@@ -51,7 +51,7 @@
   webpage: 'http://pi.math.virginia.edu/geometry/'
   google_cal_id: '6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com'
   seminar_weight: 65
-  regular_times: Tuesdays at 2:00, New Cabell Hall 315
+  regular_times: Tuesdays at 2:00, New Cabell Hall 415
   information: |
     The Geometry Seminar talks usually focus on aspects of low-dimensional topology and geometry, including knot theory and categorification, Floer homology, 3- and 4-dimensional manifolds, and symplectic and contact topology. The lectures are often given by outside speakers, however UVa graduate students and faculty give talks as well.
   contact:
@@ -95,7 +95,7 @@
   webpage: 'http://faculty.virginia.edu/Probability/'
   google_cal_id: 'f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com'
   seminar_weight: 110
-  regular_times: Fridays at 1:00pm, New Cabell 407
+  regular_times: Fridays at 1:00pm, Kerchof 317
   information: |
     The Probability Seminar is the place to see talks on active research topics in probability theory, as well as informal discussions of basic notions of probability.  We typically have invited speakers every 2-3 weeks presenting a wide array of research in probability. Most other weeks are informal discussions led by local participants, often graduate students discussing recently studied topics. The seminar is open to all. Feel free to attend regularly or occasionally.
   contact:
@@ -110,7 +110,7 @@
   webpage: 'http://pi.math.virginia.edu/topology/'
   google_cal_id: 'pce8r0mnja2do20vkku2gslamk@group.calendar.google.com'
   seminar_weight: 120
-  regular_times: Thursdays at 2:00, Monroe 114
+  regular_times: Thursdays at 2:00, New Cabell Hall 415
   information: |
     Topology Seminar talks are on recent developments in algebraic topology—including homotopy theory, ordinary and extraordinary homology and cohomology, cobordism theory, and K-theory—and related subjects like differential topology and homological algebra.
   contact:
@@ -140,7 +140,7 @@
   google_cal_id: 'ftc1mbjbp95irpj6t9e2tfl020@group.calendar.google.com'
   webpage: 'https://dshermanmath.github.io/base/sotoa/sotoa.html'
   seminar_weight: 100
-  regular_times: Tuesdays at 3:45, Kerchof 326
+  regular_times: Tuesdays at 3:45, Monroe Hall 113
   information: |
     The Seminar in Operator Theory and Operator Algebras covers a wide variety of topics in functional analysis, including <script type="math/tex">C^*</script>-algebras and von Neumann algebras, composition operators, Banach spaces, noncommutative convexity, and applications of complex function theory. Most lectures are research level, but we also feature expository talks.
   contact:
@@ -175,7 +175,7 @@
   published_in_nav: true
   google_cal_id: '8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com'
   seminar_weight: 60
-  regular_times: Tuesdays, 3:30-4:45 in Clark 102
+  regular_times: Tuesdays, 3:30-4:45 in New Cabell Hall 389
   information: |
     The Galois-Grothendieck Seminar is an expository seminar about various aspects of Galois theory and arithmetic geometry. Each semester/year has a coherent program, with graduate students contributing many of the talks.
   contact:
