@@ -11,5 +11,5 @@ image: __SITE_URL__/img/people/2019-fall/Ure.jpg
 personal_page: https://uva.theopenscholar.com/charlotte-ure
 areas: 
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
-
+published: false
 ---

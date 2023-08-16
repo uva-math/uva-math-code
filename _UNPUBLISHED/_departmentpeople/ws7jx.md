@@ -9,7 +9,7 @@ phone:
 email: ws7jx@virginia.edu
 image: __SITE_URL__/img/people/2020-fall/Walker.jpg
 personal_page: https://walkerstern.gitlab.io 
-
+published: false
 areas:
 
 

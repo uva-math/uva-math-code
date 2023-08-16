@@ -9,7 +9,7 @@ phone:
 email: nsr6sf@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Webster_J.jpg 
 personal_page: https://joe-webster.github.io/
-
+published: false
 areas:
 
 
