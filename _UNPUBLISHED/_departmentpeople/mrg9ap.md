@@ -9,6 +9,6 @@ phone:
 email: mrg9ap@virginia.edu
 image: __SITE_URL__/img/people/2019-fall/Gagne.jpg
 personal_page: https://mrg9ap.wixsite.com/mattgagne
-
+published: false
 
 ---

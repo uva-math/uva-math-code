@@ -9,4 +9,5 @@ phone:
 email: axv9hp@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/Nabb.jpg 
 personal_page:
+published: false
 ---

@@ -9,4 +9,6 @@ phone:
 email: zg8bf@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/Gates.jpg 
 personal_page:
+
+published: false
 ---
