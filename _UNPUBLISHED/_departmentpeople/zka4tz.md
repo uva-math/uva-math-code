@@ -10,6 +10,7 @@ phone:
 email: zka4tz@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Demers_M.jpg 
 personal_page: 
+published: false
 
 areas:
 
