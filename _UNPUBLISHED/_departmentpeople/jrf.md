@@ -10,5 +10,7 @@ email: jrf@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/Faulkner.jpg 
 personal_page:
 
+published: false
+
 
 ---
