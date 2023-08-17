@@ -11,7 +11,7 @@ tooltips: true
 <h1 class="mb-4">Contacts (2022-23 Academic Year)</h1>
 
 - ##### Chair:<br>
-{% include person_info_email_only.html UVA_id="ko5wk" %}
+{% include person_info_email_only.html UVA_id="tem4h" %}
 
 - ##### Associate Chair:<br>
 {% include person_info_email_only.html UVA_id="tmk5a" %}
@@ -23,7 +23,7 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="jeb2md" %}
 
 - ##### Graduate Admissions:<br>
-{% include person_info_email_only.html UVA_id="tam7b" %}
+{% include person_info_email_only.html UVA_id="tmk5a" %}
 
 - ##### Bridge program:<br>
 {% include person_info_email_only.html UVA_id="brh5c" %}<span style="margin-left:-4px"></span>, {% include person_info_email_only.html UVA_id="tmk5a" %}
