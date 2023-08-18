@@ -19,10 +19,10 @@ To become a member and enjoy extra perks, such as being added to the chapter mai
 The University of Virginia AMS graduate student chapter executive committee consists of:
 <ul>
   <li>President: <a href="https://eleanormcspirit.com/">Eleanor McSpirit</a></li>
-  <li>Vice president: <a href="https://alejandrodlpc.github.io/">Alejandro de las Peñas Castaño</a></li>
+  <li>Vice President: <a href="https://alejandrodlpc.github.io/">Alejandro de las Peñas Castaño</a></li>
   <li>Secretary: <a href="https://sites.google.com/view/eleftherios-chatzitheodoridis/home">Eleftherios Chatzitheodoridis</a></li>
   <li>Treasurer: <a href="https://math.virginia.edu/people/guc8ns/">Petch Chueluecha</a></li>
-  <li>Member at large: <a href="https://sites.google.com/view/maxsg">Maximiliano Sánchez Garza</a></li>
+  <li>Member At Large: <a href="https://sites.google.com/view/maxsg">Maximiliano Sánchez Garza</a></li>
 </ul>
 Fellow AMS graduate student chapters are most welcome and encouraged to get in touch with us for joint social events!
 
