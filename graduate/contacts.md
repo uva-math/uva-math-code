@@ -11,7 +11,7 @@ tooltips: true
 <h1 class="mb-4">Contacts (2022-23 Academic Year)</h1>
 
 - ##### Chair:<br>
-{% include person_info_email_only.html UVA_id="tem4h" %}
+{% include person_info_email_only.html UVA_id="tmark" %}
 
 - ##### Associate Chair:<br>
 {% include person_info_email_only.html UVA_id="tmk5a" %}
