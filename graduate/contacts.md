@@ -9,7 +9,7 @@ nav_weight: 1
 tooltips: true
 ---
 
-<h1 class="mb-4">Contacts (2022-23 Academic Year)</h1>
+<h1 class="mb-4">Contacts (2023-24 Academic Year)</h1>
 
 - ##### Chair:<br>
 {% include person_info_email_only.html UVA_id="tmark" %}
