@@ -85,7 +85,6 @@ tooltips: true
 - ##### Math Club contacts:<br>
 {% include person_info_email_only.html UVA_id="pa8e" %} and {% include person_info_email_only.html UVA_id="ph7ph" %}
 
-
 - ##### AWM (Association for Women in Mathematics) Coordinators:<br>
 {% include person_info_email_only.html UVA_id="brh5c" %} and
 {% include person_info_email_only.html UVA_id="jlm6cj" %}
