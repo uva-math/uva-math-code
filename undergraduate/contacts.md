@@ -47,7 +47,8 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="yq2dw" %} (Fall), {% include person_info_email_only.html UVA_id="tmark" %} (Spring)
 
 - ##### Transfer of Credit Advisors:<br>
-{% include person_info_email_only.html UVA_id="hcg3m" %}<br>
+{% include person_info_email_only.html UVA_id="hcg3m" %} (Fall),
+{% include DUS.html UVA_id="des5e" %} (Spring)<br>
 
 - ##### To Declare a Major/Minor:<br>
 
