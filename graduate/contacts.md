@@ -5,7 +5,7 @@ g_info: true
 nav_id: Contacts
 permalink: /graduate/contacts/
 nav_parent: Graduate
-nav_weight: 1
+nav_weight: 2
 tooltips: true
 ---
 
