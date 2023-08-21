@@ -32,7 +32,7 @@ tooltips: true
 
 
 - <h5>{% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinator:</h5>
-{% include person_info_email_only.html UVA_id="zka4tz" %}
+{% include person_info_email_only.html UVA_id="hdj4nd" %}
 
 - <h5>{% include course number=1220 code=false %} Coordinator:</h5>
 {% include person_info_email_only.html UVA_id="ed8bg" %}
@@ -44,7 +44,7 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="jsr2pz" %}
 
 - <h5>{% include course number=2310 code=false %} Coordinators:</h5>
-{% include person_info_email_only.html UVA_id="yq2dw" %} (Fall), {% include person_info_email_only.html UVA_id="tmark" %} (Spring)
+{% include person_info_email_only.html UVA_id="tam7b" %} (Fall), {% include person_info_email_only.html UVA_id="mbp6pj" %} (Spring)
 
 - ##### Transfer of Credit Advisors:<br>
 {% include person_info_email_only.html UVA_id="hcg3m" %} (Fall),
@@ -60,16 +60,14 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="eqg7fn" %}
 
 - ##### First Year Advisors:<br>
+{% include person_info_email_only.html UVA_id="aa4cr" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="jf8dc" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="eg4va" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="brh5c" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="jjh2b" %}<br><br class="hidden-sm-up">
 {% include person_info_email_only.html UVA_id="ph7ph" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="vk6e" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="lap5r" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="yq2dw" %}<br><br class="hidden-sm-up">
-{% include person_info_email_only.html UVA_id="asr3x" %}
+{% include person_info_email_only.html UVA_id="tmk5a" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="njk4x" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="asr3x" %}<br><br class="hidden-sm-up">
+{% include person_info_email_only.html UVA_id="des5e" %}
 
 - ##### Ombudsperson:<br>
 {% include person_info_email_only.html UVA_id="ph7ph" %}
