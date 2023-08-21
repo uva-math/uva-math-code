@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>{{ page.title }} | Geometry Lab at the University of Virginia</title>
+{% include header.html %}
+</head>
+
+<body>
+
+{% include top_brand.html %}
+
+{% include navbar.html %}
+
+<div class="container">
+  <div class="container">
+    <div class="row hidden-md-up">
+      <div class="col-12">
+        <div class="collapse" id="collapseRightMenu">
+          {% include geolab_sidebar.html %}
+          <hr /><br />
+        </div>
+      </div>
+    </div>
+
+    <div class="row row-offcanvas row-offcanvas-right">
+      <div class="col-md-8">
+
+        {{ content | markdownify }}
+
+      </div>
+      <div class="col-md-4">
+        <h3 class="mb-3 sidebar-offcanvas hidden-sm-down">GeoLab @ UVa</h3>
+        <div class="hidden-sm-down">{% include geolab_sidebar.html %}</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% include footer.html %}
+
+{% include bootjs %}
+
+{%unless page.math == false %}{% include katex %}{% include mathjax %}{%endunless%}
+
+{% include google-analytics.html %}{% include UVA_fonts.html %}
+
+</body>
+
+</html>

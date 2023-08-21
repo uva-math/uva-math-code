@@ -1,12 +1,11 @@
 ---
 title: Geometry Lab
-layout: static_page_no_right_menu
+layout: geolab_page
 permalink: /geolab/
-# nav_id: 
-# nav_parent: Undergraduate
-# nav_nesting: true
-# nav_weight: 969
-# has_DRP_calendar: false
+nav_id: Geometry Lab
+nav_parent: Undergraduate
+nav_nesting: true
+nav_weight: 970
 ---
 
 <h2 class="mb-3">Geometry Lab</h2>
