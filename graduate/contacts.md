@@ -13,23 +13,27 @@ tooltips: true
 - ##### Chair:<br>
 {% include person_info_email_only.html UVA_id="tmark" %}
 
-- ##### Associate Chair:<br>
-{% include person_info_email_only.html UVA_id="tmk5a" %}
+<!-- - ##### Associate Chair:<br>
+{% include person_info_email_only.html UVA_id="tmk5a" %} -->
 
 - ##### Director of Diversity, Equity, and Inclusion:<br>
 {% include person_info_email_only.html UVA_id="brh5c" %}
 
 - ##### Director of Graduate Studies:<br>
-{% include person_info_email_only.html UVA_id="jeb2md" %}
+{% include person_info_email_only.html UVA_id="ww9c" %}
 
 - ##### Graduate Admissions:<br>
 {% include person_info_email_only.html UVA_id="tmk5a" %}
 
 - ##### Bridge program:<br>
-{% include person_info_email_only.html UVA_id="brh5c" %}<span style="margin-left:-4px"></span>, {% include person_info_email_only.html UVA_id="tmk5a" %}
+{% include person_info_email_only.html UVA_id="eg4va" %} (Fall),
+{% include person_info_email_only.html UVA_id="brh5c" %}<span style="margin-left:-4px"></span>, 
+{% include person_info_email_only.html UVA_id="tmk5a" %}<span style="margin-left:-4px"></span>, 
+{% include person_info_email_only.html UVA_id="sm4cw" %} (Spring),
+{% include person_info_email_only.html UVA_id="des5e" %}
 
 - ##### Ombudsperson:<br>
 {% include person_info_email_only.html UVA_id="ph7ph" %}
-
+<!-- 
 - ##### Instructional Partner (to liaison with Learning Design & Technology):<br>
-{% include person_info_email_only.html UVA_id="lap5r" %}
+{% include person_info_email_only.html UVA_id="lap5r" %} -->

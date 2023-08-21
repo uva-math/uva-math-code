@@ -12,19 +12,24 @@ tooltips: true
 <h1 class="mb-4">Contacts (2022-23 Academic Year)</h1>
 
 - ##### Chair:<br>
-{% include person_info_email_only.html UVA_id="ko5wk" %}
+{% include person_info_email_only.html UVA_id="tmark" %}
 
-- ##### Associate Chair:<br>
-{% include person_info_email_only.html UVA_id="tmk5a" %}
+<!-- - ##### Associate Chair:<br>
+{% include person_info_email_only.html UVA_id="tmk5a" %} -->
 
 - ##### Director of Diversity, Equity, and Inclusion:<br>
 {% include person_info_email_only.html UVA_id="brh5c" %}
 
 - ##### Director of Undergraduate Studies:<br>
-{% include DUS.html UVA_id="hcg3m" %}
+ (<b>Fall 2023</b>)&bull; {% include DUS.html UVA_id="hcg3m" %} <br>
+ (<b>Spring 2024</b>)&bull; {% include DUS.html UVA_id="des5e" %}
+ 
 
-- ##### Director of Lower Division Courses:<br>
+- ##### Lower Division Committee:<br>
+{% include person_info_email_only.html UVA_id="hcg3m" %} (Fall),
+{% include person_info_email_only.html UVA_id="des5e" %}<span style="margin-left:-4px"></span>,
 {% include person_info_email_only.html UVA_id="jsr2pz" %}
+
 
 - <h5>{% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinator:</h5>
 {% include person_info_email_only.html UVA_id="zka4tz" %}
