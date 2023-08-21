@@ -57,7 +57,7 @@ tooltips: true
 - See [this page]({{site.url}}/undergraduate/requirements/) for forms.
 
 - ##### Math Majors/Minors Administrative Assistant:<br>
-{% include person_info_email_only.html UVA_id="aab8b" %}
+{% include person_info_email_only.html UVA_id="eqg7fn" %}
 
 - ##### First Year Advisors:<br>
 {% include person_info_email_only.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
@@ -83,15 +83,15 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="pa8e" %}
 
 - ##### Math Club contacts:<br>
-{% include person_info_email_only.html UVA_id="ph7ph" %} and
-{% include person_info_email_only.html UVA_id="jlm6cj" %}
+{% include person_info_email_only.html UVA_id="pa8e" %} and {% include person_info_email_only.html UVA_id="ph7ph" %}
+
 
 - ##### AWM (Association for Women in Mathematics) Coordinators:<br>
 {% include person_info_email_only.html UVA_id="brh5c" %} and
-{% include person_info_email_only.html UVA_id="tam7b" %}
+{% include person_info_email_only.html UVA_id="jlm6cj" %}
 
 - ##### Math Circle:<br>
-{% include person_info_email_only.html UVA_id="vk6e" %} and {% include person_info_email_only.html UVA_id="jf8dc" %}
+{% include person_info_email_only.html UVA_id="vk6e" %}, {% include person_info_email_only.html UVA_id="jf8dc" %}, {% include person_info_email_only.html UVA_id="mbp6pj" %}
 
 - ##### Putnam contact:<br>
 {% include person_info_email_only.html UVA_id="jf8dc" %}
