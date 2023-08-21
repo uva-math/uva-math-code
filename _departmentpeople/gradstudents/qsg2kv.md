@@ -7,6 +7,6 @@ position: Graduate Student
 office: 112 Kerchof Hall
 phone: 
 email: qsg2kv@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2023-fall/Lam_Nguyen.jpg
 
 ---
