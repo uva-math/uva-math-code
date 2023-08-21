@@ -11,15 +11,15 @@ may apply. Applications are not limited to math majors. The evaluation
 of applications is performed by the graduate committee. The
 applications are judged on a holistic basis. You may opt to receive up to one course credit!
 
-[Mentee Application](https://docs.google.com/forms/d/e/1FAIpQLSezHAkOFj4977Sj26gOzE1xpnDuQ0Tljfq_H65bv8BPeD5UoA/viewform?usp=sf_link)
+[Mentee Application](https://docs.google.com/forms/d/e/1FAIpQLScTl5avhO9tO6qWgv98GPAbxKbJxsRwu9wmIOLPK8JC-FMDAQ/viewform?usp=sf_link)
 
-**Applications Due: Thursday, January 26th, 2023 at 11:59 PM Eastern Time**
+**Applications Due: Friday, September 1st, 2023 at 11:59 PM Eastern Time**
 
 <h2 class="mb-3">Mentor Application</h2>
 
 Graduate students or postdocs who are interested in becoming mentors should fill
 out the following application. To be eligible as a graduate student you must be at least in your second year.
 
-[Mentor Application](https://docs.google.com/forms/d/e/1FAIpQLSe3aol-ac0W7tYPzPQo6VpCF7NlnOlwFectEd-gmVbyA49VFg/viewform?usp=sf_link)
+[Mentor Application](https://docs.google.com/forms/d/e/1FAIpQLScTPdqN_VS3X_-93AOKtxucp4lSxHa1zI9NZpb3ygYcXQQxEw/viewform?usp=sf_link)
 
-Here is our set of Mentor Guidelines, where you can read the specifics about the role: [Mentor Guidelines]({{ site.url }}/drp/Mentor_Guidelines-1.pdf)
+Here is our set of Mentor Guidelines, where you can read the specifics about the role: [Mentor Guidelines]({{ site.url }}/drp/Mentor_Guidelines.pdf)
