@@ -2,6 +2,7 @@
 title: Contacts
 layout: g_page
 g_info: true
+nav_id: Contacts
 permalink: /graduate/contacts/
 nav_parent: Graduate
 nav_weight: 1
