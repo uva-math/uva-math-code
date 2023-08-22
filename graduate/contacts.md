@@ -14,8 +14,8 @@ tooltips: true
 - ##### Chair:<br>
 {% include person_info_email_only.html UVA_id="tmark" %}
 
-<!-- - ##### Associate Chair:<br>
-{% include person_info_email_only.html UVA_id="tmk5a" %} -->
+- ##### Associate Chair:<br>
+{% include person_info_email_only.html UVA_id="jeb2md" %}
 
 - ##### Director of Diversity, Equity, and Inclusion:<br>
 {% include person_info_email_only.html UVA_id="brh5c" %}

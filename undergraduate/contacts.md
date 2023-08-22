@@ -14,8 +14,8 @@ tooltips: true
 - ##### Chair:<br>
 {% include person_info_email_only.html UVA_id="tmark" %}
 
-<!-- - ##### Associate Chair:<br>
-{% include person_info_email_only.html UVA_id="tmk5a" %} -->
+- ##### Associate Chair:<br>
+{% include person_info_email_only.html UVA_id="jeb2md" %}
 
 - ##### Director of Diversity, Equity, and Inclusion:<br>
 {% include person_info_email_only.html UVA_id="brh5c" %}
@@ -25,10 +25,10 @@ tooltips: true
  (<b>Spring 2024</b>)&bull; {% include DUS.html UVA_id="des5e" %}
  
 
-- ##### Lower Division Committee:<br>
+<!-- - ##### Lower Division Committee:<br>
 {% include person_info_email_only.html UVA_id="hcg3m" %} (Fall),
 {% include person_info_email_only.html UVA_id="des5e" %}<span style="margin-left:-4px"></span>,
-{% include person_info_email_only.html UVA_id="jsr2pz" %}
+{% include person_info_email_only.html UVA_id="jsr2pz" %} -->
 
 
 - <h5>{% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinator:</h5>
