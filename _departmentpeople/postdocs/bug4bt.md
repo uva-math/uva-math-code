@@ -7,7 +7,7 @@ position: NSF Postdoctoral Research Fellow
 office: 223 Kerchof Hall 
 phone: 434-924-4939
 email: bug4bt@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2023-fall/Blackwell.jpg
 personal_page:
 
 ---

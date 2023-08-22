@@ -7,6 +7,6 @@ position: Assistant Professor
 office: 331 Kerchof Hall 
 phone: 434-243-7779 
 email: mbp6pj@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2023-fall/JD.jpg
 personal_page:
 ---

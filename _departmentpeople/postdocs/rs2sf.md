@@ -7,7 +7,7 @@ position: Whyburn Research Associate and Lecturer
 office: 311 Kerchof Hall
 phone: 
 email: rs2sf@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2023-fall/Stees.jpg
 personal_page:
 
 ---
