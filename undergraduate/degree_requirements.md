@@ -15,7 +15,7 @@ nav_weight: 1
 
 1. Review the above document for prerequisites to declare the major/minor and the requirements to earn the degree
 2. Select a concentration (if majoring) and create a tentative list of proposed courses that will earn the degree
-3. Contact the appropriate major declaration advisor below (according to your last name) to set up a meeting to review your plan
+3. Contact the appropriate major declaration advisor below (according to your last name) to review your plan
 
 {% include major_intake.md%}
    
