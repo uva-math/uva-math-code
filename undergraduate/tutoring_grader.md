@@ -17,4 +17,4 @@ nav_weight: 6
 
 <h3>Be a Grader!</h3>
 
-<p><a href="{{ site.url }}/undergraduate/docs/Grader App.pdf">Application</a>&nbsp;to grade for the Math Department. Please submit your application to <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a> or bring it to 216 Kerchof Hall.</p>
+<p><a href="{{ site.url }}/undergraduate/docs/Grader_App_2023.pdf">Application</a>&nbsp;to grade for the Math Department. Please submit your application to <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a> or bring it to 216 Kerchof Hall.</p>
