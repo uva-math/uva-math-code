@@ -4,7 +4,7 @@ lastname: Singh
 name: Ajit
 general_position: postdoc
 position: Nehru-Fulbright Postdoctoral Fellow
-office:
+office: 207 Kerchof Hall
 phone: 
 email: 
 image: 
