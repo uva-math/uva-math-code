@@ -6,6 +6,33 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Spring 2023
+
++ Topological data analysis
+   - Text: Carlsson and Vejdemo-Johansson, Topological data analysis with applications
+   - Mentee: Lior Ben-David
+   - Mentor: Miika Tuominen
+
++ Geometry of groups
+   - Mentee: Anthony Doll
+   - Mentor: Mark Pengitore
+
++ From spaces and continuity to categories and functoriality
+   - Text: Bradley, Bryson, and Terilla, Topology: a categorical approach
+   - Mentee: Yejun Kim
+   - Mentor: Eleftherios Chatzitheodoridis
+
++ On primes and irreducibles: aren't they the same?
+   - Text: Ireland and Rosen, A classical introduction to modern number theory
+   - Mentee: Jake Fulford
+   - Mentor: Alejandro de las Peñas Castaño
+
++ The central limit theorem
+   - Text: Lesigne, Heads or tails: an introduction to limit theorems in probability
+   - Mentee: Charlie Wang
+   - Mentor: Yaolong Shen
+
+
 ### Fall 2022
 
 + Naturality of the double dual evaluation map
