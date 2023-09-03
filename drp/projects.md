@@ -6,6 +6,53 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Fall 2022
+
++ Naturality of the double dual evaluation map
+   - Text: Serge Lang, Linear algebra & Harold Simmons, An introduction to category theory
+   - Mentee: John Layne
+   - Mentor: Eleftherios Chatzitheodoridis
+
++ Measure theory: the foundations of probability
+   - Text: Sydney Resnick, A probability path
+   - Mentee: Zoe Zerui Wang
+   - Mentor: Daniel Slonim
+ 
++ Hilbert's 10th problem
+   - Text: Murty and Fodden, Hilbert's tenth problem: an introduction to logic, number theory, and computability
+   - Mentee: Trevor Millard
+   - Mentor: Michael Wills
+
++ The fast Fourier transform
+   - Text: M. C. Pereyra and L. A. Ward, Harmonic analysis: from Fourier to wavelets
+   - Mentee: Zihan Mei
+   - Mentor: Joe Webster
+
++ Foundations of machine learning
+   - Text: Shai Shalev-Shwartz and Shai Ben-David, Understanding machine learning: from theory to algorithms
+   - Mentee: Qingyang Wang
+   - Mentor: Mojdeh Tarighat Feller
+
++ Fractal geometry
+   - Text: Falconer, Fractal Geometry
+   - Mentee: Maahi Vyas
+   - Mentor: Miika Tuominen
+
++ Quadratic reciprocity
+   - Mentee: Bliss Bodawala
+   - Mentor: Kian Cheong Aik
+ 
++ Partitions and representation theory of Sn
+   - Text: Howe, An invitation to representation theory
+   - Mentee: Grace Guinan
+   - Mentor: Eleanor McSpirit
+
++ Lattice-based cryptography
+   - Text: Hoffstein, Pipher, and Silverman, An introduction to mathematical cryptography
+   - Mentee: Jack Liu
+   - Mentor: Alejandro de las Peñas Castaño
+
+
 ### Spring 2022
 
 + Introduction to Knot Theory
