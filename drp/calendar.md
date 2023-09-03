@@ -77,7 +77,7 @@ permalink: /drp/calendar/
                   </a>
                   <h5>${event.summary}</h5>
                   ${event.location ? `${event.location}</br>` : ''}
-                  ${event.description ? `<details><summary style="display: list-item">Details</summary>${event.description}</details>` : ''}
+                  ${event.description ? `<details style="white-space: pre-wrap;"><summary style="display: list-item">Details</summary>${event.description}</details>` : ''}
                 </td>
             </tr>
           `).join('');
