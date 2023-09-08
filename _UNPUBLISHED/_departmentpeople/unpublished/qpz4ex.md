@@ -9,6 +9,7 @@ phone:
 email: qpz4ex@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Scheckelhoff_K.jpg 
 personal_page:
+published: false
 
 
 ---

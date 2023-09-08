@@ -9,5 +9,6 @@ phone: 434-924-0899
 email: arj9zs@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Lazreq_D.jpg 
 personal_page:
+published: false
 
 ---
