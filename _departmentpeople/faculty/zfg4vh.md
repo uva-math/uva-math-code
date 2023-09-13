@@ -8,7 +8,7 @@ position: Assistant Professor, General Faculty
 office: 210 Kerchof Hall
 phone: 
 email: zfg4vh@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2023-fall/charles-baker.jpg
 personal_page:
 ---
 
