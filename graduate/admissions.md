@@ -31,7 +31,7 @@ tooltips: true
 
 - Fee waivers for US citizens: [`https://graddiversity.virginia.edu/application-fee-waiver`](https://graddiversity.virginia.edu/application-fee-waiver)
 - Requirements: [`http://graduate.as.virginia.edu/requirements`](http://graduate.as.virginia.edu/requirements)
- 	Under the Fees tab on this page, there is additional information about automatic application fee waivers for citizens of certain countries.
+ 	<br/>Under the Fees tab on this page, there is additional information about automatic application fee waivers for citizens of certain countries.
 - Deadlines: [`http://graduate.as.virginia.edu/deadlines`](http://graduate.as.virginia.edu/deadlines)
 - FAQ: [`http://graduate.as.virginia.edu/frequently-asked-questions`](http://graduate.as.virginia.edu/frequently-asked-questions)
 
