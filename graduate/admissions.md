@@ -22,11 +22,10 @@ tooltips: true
 ## Application Checklist:
 1. Application;
 2. Statement of purpose;
-3. GRE scores, including the mathematics&nbsp;subject test (<b>all GRE requirements are waived for the Fall 2024 admission cycle</b>);
-4. 2 or 3 letters of recommendation;
-5. Unofficial transcript;
-6. $85 application fee; 
-7. TOEFL score for international students (see <a href="http://graduate.as.virginia.edu/requirements">here</a>). In exceptional circumstances, it might be possible to replace TOEFL with an in-person / video interview with UVA faculty.
+3. 2 or 3 letters of recommendation;
+4. Unofficial transcript;
+5. $85 application fee; 
+6. TOEFL score for international students (see <a href="http://graduate.as.virginia.edu/requirements">here</a>). In exceptional circumstances, it might be possible to replace TOEFL with an in-person / video interview with UVA faculty.
 
 ##### Other useful links
 
@@ -42,7 +41,7 @@ tooltips: true
 
 In making its decisions about admission and financial aid, the Department is first and foremost looking for students that we feel will flourish in our program. To determine if a student will be successful, the Department pays close attention to the overall undergraduate record, letters of recommendation, and the student&#39;s personal statement.
 
- Regarding the undergraduate record, the rigor of the applicant&#39;s mathematics program is an important factor; a good grounding in real analysis (as in our {% include course number=4310 %} and {% include course number=4330 %}<span style="margin-left: -4px;"></span>), algebra (as in {% include course number=4651 %} and {% include course number=4652 %}<span style="margin-left: -4px;"></span>), general topology (as in {% include course number=5700 %}<span style="margin-left: -4px;"></span>), and complex analysis (as in {% include course number=3340 %}<span style="margin-left: -4px;"></span>) is ideal. For students from smaller schools, we have found that a solid score on the Mathematics Subject Exam is a useful indicator of future success.
+Regarding the undergraduate record, the rigor of the applicant&#39;s mathematics program is an important factor; a good grounding in real analysis (as in our {% include course number=4310 %} and {% include course number=4330 %}<span style="margin-left: -4px;"></span>), algebra (as in {% include course number=4651 %} and {% include course number=4652 %}<span style="margin-left: -4px;"></span>), general topology (as in {% include course number=5700 %}<span style="margin-left: -4px;"></span>), and complex analysis (as in {% include course number=3340 %}<span style="margin-left: -4px;"></span>) is ideal. For students from smaller schools, we have found that a solid score on the GRE Mathematics Subject Test can be a useful indicator of future success. Applicants may or may not choose to include unofficial GRE Mathematics Subject scores. Applications that do not include GRE Mathematics Subject scores will not be penalized in any way.
 
 ## Research areas
 
