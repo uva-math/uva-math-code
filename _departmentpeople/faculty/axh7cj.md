@@ -8,6 +8,6 @@ position: Assistant Professor, General Faculty
 office: 129 Kerchof Hall
 phone: 
 email: axh7cj@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2023-fall/Aitzhanova.jpg
 personal_page: 
 ---
