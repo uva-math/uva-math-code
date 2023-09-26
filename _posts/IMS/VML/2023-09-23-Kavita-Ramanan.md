@@ -20,7 +20,7 @@ nav_parent: IMS
 Though they have a common thread, the three lectures will be self-contained, and can mostly be followed independently of each other.
 
 <ul>
-<li><b>Lecture 1: Tails of random projections</b> | November 13 | 5-6pm | Wilson 402 </li>
+<li><b>Lecture 1: Tails of random projections: where probability meets geometry</b> | November 13 | 5-6pm | Wilson 402 </li>
 <li><b>Lecture 2: A probabilistic approach to the geometry of p-Schatten balls</b> | November 14 | 5-6pm | Nau 101</li>
 <li><b>Lecture 3: A unimodular Sanov's theorem and interacting particle systems on sparse random graphs</b> | November 15 | 5-6pm | Wilson 402</li>
 </ul>
