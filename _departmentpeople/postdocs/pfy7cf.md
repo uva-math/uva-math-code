@@ -7,7 +7,7 @@ position: Whyburn Research Associate and Lecturer
 office: 311 Kerchof Hall
 phone:  
 email: pfy7cf@virginia.edu
-image: 
+image: __SITE_URL__/img/people/2023-fall/brandon-shapiro.jpg
 personal_page:
 
 ---

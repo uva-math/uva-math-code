@@ -21,6 +21,7 @@
 <div class="my-div-odd-zebra">
 {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %}
 {% for sem in sorted_sem %}
+{% unless sem.shortname=="awm" or sem.shortname=="ams" %}
 <div class="mb-3"> <h3><a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a></h3>
 	<p class="mb-1"><b>{{ sem.regular_times }}</b></p>
 
@@ -30,5 +31,6 @@
   </details>
   {% endif %}
 </div>
+{% endunless %}
 {% endfor %}
 </div>

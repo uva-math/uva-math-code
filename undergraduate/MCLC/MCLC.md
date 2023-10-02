@@ -17,8 +17,10 @@ tooltips: true
 
 <!-- <p style="font-size:150%;color:Red;"> The last day of operation for the Spring 2023 semester is Tuesday, May 2.
 <br> Some Calculus I & II sessions will continue through Monday, May 8 </p> -->
-<p style="font-size:150%;"> The MCLC will begin its operation for the Fall 2023 semester on Monday, August 28 </p>
-<!-- <p style="font-size:150%;"> The MCLC is now open for the Spring 2022 semester! </p> -->
+<!-- <p style="font-size:150%;"> The MCLC will begin its operation for the Fall 2023 semester on Monday, August 28 </p> -->
+<p style="font-size:150%;"> The MCLC is now open for the Fall 2023 semester! </p>
+<p style="font-size:150%;color:Red;"> The MCLC will not offer sessions during Reading Days, October 1-3 </p>
+
 
 The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Student Center on the second floor of Clemons Library. </b> The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer assistance one-on-one (or in small groups) for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
 <ul>
@@ -69,7 +71,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 153.422px; height: 19px;"></td>
 <td style="width: 235px; height: 19px;">  </td> <!-- M -->
 <td style="width: 235px; height: 19px;"></td>
-<td style="width: 235px; height: 19px;">  </td> <!-- W -->
+<td style="width: 235px; height: 19px;"> Math 1220 Office Hours </td> <!-- W -->
 <td style="width: 235px; height: 19px;">  </td>
 <td style="width: 235px; height: 19px;"></td>
 </tr>
@@ -78,7 +80,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 153.422px; height: 19px;"></td>
 <td style="width: 235px; height: 19px;"> </td> <!-- M --> 
 <td style="width: 235px; height: 19px;">  </td>
-<td style="width: 235px; height: 19px;">  </td> <!-- W -->
+<td style="width: 235px; height: 19px;"> Math 1220 Office Hours </td> <!-- W -->
 <td style="width: 235px; height: 19px;"> </td>
 <td style="width: 235px; height: 19px;"> </td>
 </tr>
@@ -88,41 +90,41 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 224.594px; height: 10px;"></td> <!-- M -->
 <td style="width: 234.625px; height: 10px;">  </td>
 <td style="width: 171.453px; height: 10px;">  </td> <!-- W -->
-<td style="width: 218.578px; height: 10px;"> </td>
+<td style="width: 218.578px; height: 10px;"> Math 1220 Office Hours </td>
 <td style="width: 245.703px; height: 10px;">  </td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 90px; height: 19px; text-align: center;">3-4</td>
 <td style="width: 153.422px; height: 19px;"> </td>
-<td style="width: 224.594px; height: 19px;">  </td> <!-- M -->
+<td style="width: 224.594px; height: 19px;"> Math 1220 Office Hours </td> <!-- M -->
 <td style="width: 234.625px; height: 19px;">  </td>
-<td style="width: 171.453px; height: 19px;">  </td> <!-- W -->
+<td style="width: 171.453px; height: 19px;"> Math 1220 Office Hours </td> <!-- W -->
 <td style="width: 218.578px; height: 19px;">  </td>
-<td style="width: 245.703px; height: 19px;"> Calculus I & II </td>
+<td style="width: 245.703px; height: 19px;"> <!-- Calculus I & II --> </td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 90px; height: 19px; text-align: center;">4-5</td>
 <td style="width: 153.422px; height: 19px;">  </td>
-<td style="width: 224.594px; height: 19px;">  </td> <!-- M -->
+<td style="width: 224.594px; height: 19px;"> Calculus I & II </td> <!-- M -->
 <td style="width: 234.625px; height: 19px;"> </td>
 <td style="width: 171.453px; height: 19px;"> Calculus I & II </td> <!-- W -->
 <td style="width: 218.578px; height: 19px;"> Calculus I & II </td>
-<td style="width: 245.703px; height: 19px;"> Math 2310 </td>
+<td style="width: 245.703px; height: 19px;"> Calculus I & II <br/> Math 2310 </td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 90px; text-align: center; height: 19px;">5-6</td>
 <td style="width: 153.422px; height: 19px;"> </td>
 <td style="width: 224.594px; height: 19px;">  </td> <!-- M -->
-<td style="width: 234.625px; height: 19px;"> Calculus I & II </td>
-<td style="width: 235px; height: 19px;color:Red;">  </td> <!-- W -->
+<td style="width: 234.625px; height: 19px;"> Calculus I & II <br/> Math 3000/3310 </td>
+<td style="width: 235px; height: 19px;"> Calculus I & II </td> <!-- W -->
 <td style="width: 218.578px; height: 19px;"> Calculus I & II <br/> Math 3100 <br/> Math 3250 </td>
 <td style="width: 245.703px; height: 19px;"></td>
 </tr>
 <tr style="height: 10px;">
 <td style="width: 90px; text-align: center; height: 10px;">6-7</td>
 <td style="width: 153.422px; height: 10px;"></td>
-<td style="width: 235px; height: 10px;"> Calculus I & II <br/> Math 3350/3351 </td> <!-- M -->
-<td style="width: 234.625px; height: 10px;"> Calculus I & II </td>
+<td style="width: 235px; height: 10px;"> Calculus I & II <br/> Math 2310 <br/> Math 3350/3351 </td> <!-- M -->
+<td style="width: 234.625px; height: 10px;"> Calculus I & II <br/> Math 3350/3351 </td>
 <td style="width: 171.453px; height: 10px;"> Calculus I & II </td> <!--W-->
 <td style="width: 218.578px; height: 10px;"> Math 3000/3310 </td>
 <td style="width: 245.703px; height: 10px;"></td>
