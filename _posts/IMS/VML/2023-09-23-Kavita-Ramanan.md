@@ -7,10 +7,10 @@ permalink: /ims/lectures/kavita-ramanan/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
-image: __SITE_URL__/img/IMS/KR-Photo-2023.JPG
-# image-address: __SITE_URL__/img/IMS/Ramanan_poster.pdf
-image-alt: Kavita Ramanan
-# image-tall: true
+image: __SITE_URL__/img/IMS/Kavita-Ramanan-poster.jpg
+image-address: __SITE_URL__/img/IMS/Kavita-Ramanan-poster-pdf.pdf
+image-alt: Kavita Ramanan poster
+image-tall: true
 more-text: Abstracts TBA
 nav_parent: IMS
 ---
