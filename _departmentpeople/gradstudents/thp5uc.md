@@ -7,7 +7,6 @@ position: Graduate Student
 office: 125 Kerchof Hall
 phone: 434-243-1174 
 email: thp5uc@virginia.edu
-image: __SITE_URL__/img/people/2021-fall/Chatzitheodoridis_E.jpg 
-personal_page: https://sites.google.com/view/eleftherios-chatzitheodoridis/home 
+image: __SITE_URL__/img/people/2021-fall/Chatzitheodoridis_E.jpg
 
 ---
