@@ -20,7 +20,7 @@ The University of Virginia AMS graduate student chapter executive committee cons
 <ul>
   <li>President: <a href="https://eleanormcspirit.com/">Eleanor McSpirit</a></li>
   <li>Vice President: <a href="https://alejandrodlpc.github.io/">Alejandro de las Peñas Castaño</a></li>
-  <li>Secretary: <a href="https://sites.google.com/view/eleftherios-chatzitheodoridis/home">Eleftherios Chatzitheodoridis</a></li>
+  <li>Secretary: <a href="https://math.virginia.edu/people/thp5uc/">Eleftherios Chatzitheodoridis</a></li>
   <li>Treasurer: <a href="https://math.virginia.edu/people/guc8ns/">Petch Chueluecha</a></li>
   <li>Member At Large: <a href="https://sites.google.com/view/maxsg">Maximiliano Sánchez Garza</a></li>
 </ul>
