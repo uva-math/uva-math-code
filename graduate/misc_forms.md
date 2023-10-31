@@ -11,6 +11,8 @@ nav_weight: 200
 
 - For more about graduate life at the University, see [`https://gradstudies.virginia.edu/grad-guide`](https://gradstudies.virginia.edu/grad-guide)
 
+- [Oral Examination form]({{site.url}}/graduate/docs/oral_exam_form.pdf)
+
 - [Information, forms, and checklist on thesis submission and graduation](http://graduate.as.virginia.edu/thesis-submission-and-graduation)
 
 - PhD poster template &bull; ([ZIP source]({{site.url}}/graduate/docs/PosterTemplate.zip)) &bull; ([PDF]({{site.url}}/graduate/docs/PosterTemplate.pdf))
