@@ -6,7 +6,7 @@ general_position: faculty
 position: Associate Professor
 office: 227 Kerchof Hall
 phone: 434-924-4926
-office_hours: "Mon 2-3pm and Fri 2-3pm"
+# office_hours: ""
 email: malek@virginia.edu
 image: __SITE_URL__/img/people/Abdesselam.jpg
 # personal_page: http://people.virginia.edu/~aa4cr/
