@@ -52,7 +52,7 @@ tooltips: true
 
 - ##### To Declare a Major/Minor:<br>
 
-{% include major_intake.md%}
+{% include CONTACTS/major_intake.md%}
 
 - See [this page]({{site.url}}/undergraduate/requirements/) for forms.
 

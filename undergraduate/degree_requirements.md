@@ -17,7 +17,7 @@ nav_weight: 1
 2. Select a concentration (if majoring) and create a tentative list of proposed courses that will earn the degree
 3. Contact the appropriate major declaration advisor below (according to your last name) to review your plan
 
-{% include major_intake.md%}
+{% include CONTACTS/major_intake.md%}
    
 <ol>
 <li value="4">After the discussion with the advisor, send the declaration advisor a major (or minor) declaration form for official approval, prefilled with the courses you discussed at your meeting. Once admitted to the major/minor, you will be assigned to a new advisor in the department for ongoing advising  during course registration periods etc.
