@@ -42,6 +42,8 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 
 <br>
 
+<h2 class="mb-4 mt-4">Survey </h2>
+
 <p style="font-size:120%;color:coral;"> If you have joined an MCLC session this semester please take a couple of minutes to complete this 
 <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_6EAwT0QtCuRiixg">survey</a>. We appreciate your feedback. </p>
 
@@ -131,7 +133,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </tr>
 <tr style="height: 38px;">
 <td style="width: 90px; height: 38px; text-align: center;">7-8:15</td>
-<td style="width: 153.422px; height: 38px;"> Calculus I & II </td>
+<td style="width: 153.422px; height: 38px;color:red;"> Calculus I & II </td>
 <td style="width: 224.594px; height: 38px;">  Calculus I & II  <br/> Math 3100 </td> <!-- M -->
 <td style="width: 235px; height: 38px;"> Calculus I & II </td>
 <td style="width: 171.453px; height: 38px;"> Calculus I & II </td> <!-- W -->
