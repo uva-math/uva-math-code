@@ -18,7 +18,7 @@ tooltips: true
 <p style="font-size:150%;color:Red;"> The last day of operation for the Fall 2023 semester is Tuesday, December 5.
 <br> Some Calculus I & II sessions will continue through Friday, December 8 </p> 
 <!-- <p style="font-size:150%;"> The MCLC will begin its operation for the Fall 2023 semester on Monday, August 28 </p> -->
-<p style="font-size:150%;"> The MCLC is now open for the Fall 2023 semester! </p>
+<!-- <p style="font-size:150%;"> The MCLC is now open for the Fall 2023 semester! </p> -->
 <!-- <p style="font-size:150%;color:Red;"> The MCLC will not offer sessions during Reading Days, October 1-3 </p> -->
 
 
