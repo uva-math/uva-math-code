@@ -12,7 +12,7 @@
     "j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com",   //6 - colloquium
     "f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com",   //7 - probability
     "pce8r0mnja2do20vkku2gslamk@group.calendar.google.com",   //8 - topology
-    "starrie@virginia.edu",
+    "empty@virginia.edu", //was starrie???
 		//9 - hmm? seems like the old calendar for many events, and now seems defunct
     //add new seminar calendars here and modify the function giving the link as well as _data/seminars.yml
     "n6dhh35l2td9i73ii6dbkpqtro@group.calendar.google.com",   //10 - gradsem
