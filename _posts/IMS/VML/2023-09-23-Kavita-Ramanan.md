@@ -5,7 +5,7 @@ event-date: 2023-11-13 17:00:00
 multi-day-event: true
 permalink: /ims/lectures/kavita-ramanan/
 comments: false
-categories: news virginia-mathematics-lectures ims events major-news
+categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Kavita-Ramanan-poster.jpg
 image-address: __SITE_URL__/img/IMS/Kavita-Ramanan-poster-pdf.pdf
