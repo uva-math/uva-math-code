@@ -136,28 +136,29 @@ National Security Agency, Mathematician<br>
 - **Mark Schrecengost**<br> UVA Lecturer<br> *Finite Generation of RGD Systems with Exceptional Links*<br> (Advisor: Peter Abramenko)<br>Currently: Epic, Software Developer
 
 
-## Fall 2019
 
+## Fall 2019
 - **Aleksandr Morgan**<br>
 *Bounded Generation of Some Linear Groups*<br>
 (Advisor: Andrei Rapinchuk)
 
 ## Spring 2019
-
 - **Mariano Echeverria**<br>
 Rutgers University, Assistant Teaching Professor<br>
 *Naturality of the Contact Invariant in Monopole Floer Homology under Strong Symplectic Cobordisms*<br>
-(Advisor: Thomas Mark)
+(Advisor: Tom Mark)
 
 - **Matthew Gagne**<br>
 University of Virginia, Lecturer<br>
 *The Family Index of the Odd Signature Operator with Coefficients in a Flat Bundle*<br>
-(Advisor: Nicholas Kuhn)
+(Advisor: Nick Kuhn)<br>
+Currently: EMT
 
 - **Gabriel Islambouli**<br>
 University of Waterloo, Postdoc<br>
 *Parallels Between Heegaard Splittings and Trisections of 4-Manifolds*<br>
-(Advisor: Slava Krushkal)
+(Advisor: Slava Krushkal)<br>
+Currently: UC Davis, Krener Assistant Professor
 
 - **Christopher Leonard**<br>
 Houst, Pricing and Data Solutions Lead<br>
@@ -172,65 +173,73 @@ Wellesley University, Visiting Lecturer<br>
 - **Brian Thomas**<br>
 Ab Initio Software, Internal Consultant<br>
 *Dyer-Lashof Operations as Extensions and an Application to H\*(BU)*<br>
-(Advisor: Nicholas Kuhn)
+(Advisor: Nick Kuhn)
 
 ## Spring 2018
-
 - **John Berman**<br>
-University of Massachusetts Amherst, Visiting Assistant Professor<br>
+NSF postdoc, UT Austin<br>
 *Categorified Algebra & Equivariant Homotopy Theory*<br>
-(Advisor: Michael Hill)
+(Advisor: Mike Hill)<br>
+Currently: Teaching advanced middle/high school students in NC
 
 - **Kristin Courtney**<br>
-University of Southern Denmark, Assistant Professor<br>
+University of Muenster, Postdoc<br>
 *C\*-Algebras and Finite-Dimensional Representations*<br>
-(Advisor: David Sherman)
+(Advisor: David Sherman)<br>
+Currently: University of Southern Denmark, Assistant Professor
 
 - **Zachary Gates**<br>
-University of Virginia, Lecturer<br>
+Wabash College, Visiting Assistant Professor<br>
 *Finite Presentability of Groups Acting on Locally Finite Twin Buildings*<br>
-(Advisor: Peter Abramenko)
+(Advisor: Peter Abramenko)<br>
+Currently: UVA Lecturer (left 2023)
 
 - **Eloisa Grifo**<br>
-University of Nebraska, Assistant Professor<br>
+University of Utah, Postdoc<br>
 *Symbolic Powers and the Containment Problem*<br>
-(Advisor: Craig Huneke)
+(Advisor: Craig Huneke)<br>
+Currently: University of Nebraska, Assistant Professor
 
 - **Christina Osborne**<br>
-Cedarville University, Assistant Professor<br>
+The Ohio State University, Postdoc<br>
 *Decomposing the Classifying Diagram in Terms of Classifying Spaces of Groups*<br>
-(Advisor: Julie Bergner)
+(Advisor: Julie Bergner)<br>
+Currently: Cedarville University, Assistant Professor
 
 - **Michael Reeks**<br>
-Bucknell University, Assistant Professor<br>
+University of Ottawa, Postdoc<br>
 *Trace and Center of the Twisted Heisenberg Category*<br>
-(Advisor: Weiqiang Wang)
+(Advisor: Weiqiang Wang)<br>
+Currently: Bucknell University, Assistant Professor
 
 - **Veronica Shalotenko**<br>
-University of Virginia, Lecturer<br>
+UVA Lecturer<br>
 *In Search of Bounds on the Dimension of Ext between Irreducible Modules for Finite Groups of Lie Type*<br>
-(Advisor: Brian Parshall)
+(Advisor: Brian Parshall)<br>
+Currently: Oakton High School, Mathematics Teacher
 
 - **Jonathan Simone**<br>
 University of Massachussetts Amherst, Visiting Assistant Professor<br>
 *Cut-and-Paste Operations and Exotic 4-Manifolds*<br>
-(Advisor: Thomas Mark)
+(Advisor: Tom Mark)<br>
+Currently: Georgia Tech, Visiting Assistant Professor
 
 - **Bradley Weaver**<br>
 *Non-Abelian Groups of Order Eight and the Local Lifting Problem*<br>
 (Advisor: Andrew Obus)
 
 ## Spring and Summer 2017
-
 - **Peter Bonventre**<br>
-Georgetown University, Assistant Teaching Professor<br>
+University of Kentucky, Postdoc<br>
 *Comparison of Models for Equivariant Operads*<br>
-(Advisor: Michael Hill)
+(Advisor: Mike Hill)<br>
+Currently: National Security Agency
 
 - **Katelynn Kochalski**<br>
-SUNY Geneseo, Assistant Professor<br>
+SUNY Cortland/SUNY Geneseo Assistant Professor<br>
 *Fluid Limits and the Batched Processor Sharing Model*<br>
-(Advisor: Christian Gromoll)
+(Advisor: Christian Gromoll)<br>
+Currently: Associate Model Risk Analyst, M&T Bank
 
 - **Bo Wang**<br>
 Quantitative Research Analyst, Susquehanna International Group<br>
@@ -238,24 +247,25 @@ Quantitative Research Analyst, Susquehanna International Group<br>
 (Advisor: Christian Gromoll)
 
 - **Michael Willis**<br>
-Texas A&M University, Assistant Professor <br>
+UCLA, Assistant Adjunct Professor<br>
 *Stable Limits of the Khovanov Homology and L-S-K Spectra for Infinite Braids*<br>
-(Advisor: Slava Krushkal)
+(Advisor: Slava Krushkal)<br>
+Currently: Texas A&M University, Assistant Professor
 
-- **Xiang Wan**<br>
-Loyola University Chicago, Assistant Professor<br>
+- **Xiang Wang**<br>
+Wayne State University, Postdoc<br>
 *Global Existence and Exponential Stability for a Nonlinear Thermoelastic Kirchhoff-Love Plate System*<br>
-(Advisor: Irena Lasiecka)
+(Advisor: Irena Lasiecka)<br>
+Currently: Loyola University Chicago, Assistant Professor
 
 - **Anthony Mak**<br>
-Assistant Professor (non tenure-track), University of Delaware <br>
+University of Delaware, Assistant Professor (non-tenure track)<br>
 *Towards an Alternative Notion of General Type Symplectic 4-Manifolds*<br>
-(Advisor: Thomas Mark)
+(Advisor: Tom Mark)
 
 ## Summer and Fall 2016
-
 - **Hankyung Ko**<br>
-Uppsala University, Biträdande universitetslektor (Assistant Professor)<br>
+Uppsala University, Biträdande Universitetslektor (Assistant Professor)<br>
 *Representations of Quantum Groups at Roots of Unity and Their Reductions Mod p to Algebraic Group Representations*<br>
 (Advisor: Brian Parshall)
 
@@ -264,7 +274,6 @@ Uppsala University, Biträdande universitetslektor (Assistant Professor)<br>
 (Advisor: Zoran Grujic)
 
 ## Spring 2016
-
 - **Scott Atkinson**<br>
 Merkle, Data Science Engineer<br>
 *Convex Sets Associated to C\*-Algebras*<br>
@@ -278,12 +287,14 @@ Università degli Studi di Genova, RTD B (Assistant Professor)<br>
 - **Daniel Franz**<br>
 College of the Holy Cross, Visiting Assistant Professor<br>
 *Quantifying the Residual Finiteness of Linear Groups*<br>
-(Advisor: Mikhail Ershov)
+(Advisor: Mikhail Ershov)<br>
+Currently: Jacksonville University, Assistant Professor
 
 - **Stephen Hardy**<br>
 Hampden-Sydney College, Visiting Assistant Professor<br>
 *Pseudocompact C\*-Algebras*<br>
-(Advisor: David Sherman)
+(Advisor: David Sherman)<br>
+Currently: Washington and Lee University, Visiting Assistant Professor
 
 - **Chun-Ju Lai**<br>
 Institute of Mathematics, Academia Sinica, Taiwan, Assistant Professor<br>
@@ -295,10 +306,7 @@ Prudential Financial, Director of Analytics<br>
 *Tandem Queues with Identical Service Times in Heavy Traffic*<br>
 (Advisor: Christian Gromoll)
 
-<!-- to finish formatting below -->
-
 ## Spring 2015
-
 - **Arindam Banerjee**<br>
 Ramakrishna Mission Vivekananda Educational and Research Institute, Assistant Professor and INSPIRE Faculty<br>
 *Castelnuovo-Mumford Regularity and Edge Ideals*<br>
@@ -314,9 +322,7 @@ KTH Royal Institute of Technology, Researcher<br>
 *Uniform Convergence Methods in Hilbert-Kunz Theory*<br>
 (Advisor: Craig Huneke)
 
-
 ## Summer 2014
-
 - **Reed Nessler**<br>
 Texas A&M University, Postdoc<br>
 *Simple Connectivity in Polar Spaces with Group-Theoretic Applications*<br>
@@ -333,16 +339,16 @@ University of Virginia School of Engineering, Assistant Professor General Facult
 (Advisor: Roberto Triggiani)
 
 ## Spring 2014
-
 - **Zachary Bradshaw**<br>
 University of Arkansas, Associate Professor<br>
 *On Turbulent Dynamics and Related Theoretical Topics Associated with Diffusive Incompressible Fluid Models*<br>
 (Advisor: Zoran Grujic)
 
 - **Ajay Chandra**<br>
-Imperial College London, Lecturer (Assistant Professor) <br>
+University of Warwick, Research Associate<br>
 *Construction and Analysis of a Hierarchical Massless Quantum Field Theory*<br>
-(Advisor: Abdelmalek Abdesselam)
+(Advisor: Malek Abdesselam)<br>
+Currently: Imperial College London, Senior Lecturer
 
 - **Sean Ian Clark**<br>
 Education Strategy Consulting, Data Analyst<br>
@@ -359,7 +365,7 @@ Riverain Technologies, Chief Science Officer<br>
 (Advisor: Irena Lasiecka)
 
 - **Nathaniel Ray Pappas**<br>
-National Security Agency<br>
+National Security Agency, Mathematician<br>
 *On Rank Gradient and p-Gradient of Finitely Generated Groups*<br>
 (Advisor: Mikhail Ershov)
 
