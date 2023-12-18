@@ -102,7 +102,11 @@ University of Michigan, NSF Postdoc<br>
 
 ### Fall 2020
 
-- **Liaosha Xu**<br> MSRI, Postdoc<br>*Quantum Covering Groups and Quantum Symmetric Pairs*<br> (Advisor: Zoran Grujic)<br>Currently: UC Riverside, Visiting Assistant Professor
+- **Liaosha Xu**<br>
+MSRI, Postdoc<br>
+*Quantum Covering Groups and Quantum Symmetric Pairs*<br>
+(Advisor: Zoran Grujic)<br>
+Currently: UC Riverside, Visiting Assistant Professor
 
 ## Spring 2020
 
