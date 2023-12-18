@@ -11,6 +11,32 @@ nav_weight: 70
 
 The list includes initial job placement or current job (if known).
 
+
+## Summer 2023
+
+- **Nhan Nguyen**<br>
+  University of Colorado, Postdoc<br>
+  (Advisor: Yen Do)
+
+- **Jiajun Yan**<br>
+  UVA Jefferson Foundation Postdoc<br>
+  (Advisor: Tom Mark)
+
+
+## Spring 2023
+
+- **Morrison Turnansky**<br>
+  GEOST, Senior Machine Learning Engineer<br>
+  (Advisor: Ben Hayes)
+
+- **Andrew Will**<br>
+  Brooklyn College, Lecturer<br>
+  (Advisor: Slava Krushkal)
+
+- **Weinan Zhang**<br>
+  Hong Kong University, Postdoc<br>
+  (Advisor: Weiqiang Wang)
+
 ## Fall 2022
 
 - **Will Craig**<br>
@@ -23,6 +49,10 @@ University of Cologne, Postdoc<br>
 *On Higher Turan Inequalities for the Plane Partitions, Ellipsoid T-Designs, and j-Inversion*<br>
 (Advisor: Ken Ono)
 
+## Summer 2022
+
+- **Robert Theodore Williams**<br>
+  (Advisor: Peter Abramenko)
 
 ## Spring 2022
 
@@ -40,6 +70,10 @@ Max Planck Institute, Postdoc<br>
 Michigan State University, Postdoc<br>
 *Small Seifert Fibered Zero Surgery*<br>
 (Advisor: Thomas Mark)
+
+- **Sarasij Maitra**<br>
+  University of Utah, Postdoc<br>
+  (Advisor: Craig Huneke)
 
 
 ## Fall 2021
@@ -66,6 +100,9 @@ University of Michigan, NSF Postdoc<br>
 *K-Theoretic Catalan Functions*<br>
 (Advisor: Jennifer Morse)
 
+### Fall 2020
+
+- **Liaosha Xu**<br> MSRI, Postdoc<br>*Quantum Covering Groups and Quantum Symmetric Pairs*<br> (Advisor: Zoran Grujic)<br>Currently: UC Riverside, Visiting Assistant Professor
 
 ## Spring 2020
 
@@ -73,6 +110,10 @@ University of Michigan, NSF Postdoc<br>
 Okinawa Institute of Science and Technology, Postdoc<br>
 *Quantum Covering Groups and Quantum Symmetric Pairs*<br>
 (Advisor: Weiqiang Wang)
+
+- **Huy Dang**<br> National Center for Theoretical Sciences, Taipei, Postdoc<br> *Quantum Covering Groups and Quantum Symmetric Pairs*<br> (Advisor: Andrew Obus)
+
+- **Andrew Kobin**<br> UC Santa Cruz, Postdoc<br> *Quantum Covering Groups and Quantum Symmetric Pairs*<br> (Advisor: Andrew Obus)<br> Currently: Emory University, Postdoc
 
 - **Bogdan Krstic**<br>
 University of Rochester, Postdoc<br>
@@ -88,10 +129,7 @@ National Security Agency, Mathematician<br>
 *Quantum Symmetric Pairs and Quantum Supergroups at Roots of 1*<br>
 (Advisor: Weiqiang Wang)
 
-- **Mark Schrecengost**<br>
-Epic, Software Developer<br>
-*Finite Generation of RGD Systems with Exceptional Links*<br>
-(Advisor: Peter Abramenko)
+- **Mark Schrecengost**<br> UVA Lecturer<br> *Finite Generation of RGD Systems with Exceptional Links*<br> (Advisor: Peter Abramenko)<br>Currently: Epic, Software Developer
 
 
 ## Fall 2019
