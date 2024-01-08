@@ -13,7 +13,7 @@ applications are judged on a holistic basis. You may opt to receive up to one co
 
 [Mentee Application](https://forms.gle/VUU7Hffs4Kq9nQHBA)
 
-**Applications Due: Friday, January 26th, 2024 at 11:59 PM Eastern Time**
+**Applications Due: Friday, January 26th, 2024 at 11:59 PM Eastern Time.**
 
 <h2 class="mb-3">Mentor Application</h2>
 
@@ -22,4 +22,4 @@ out the following application. To be eligible as a graduate student, you must be
 
 [Mentor Application](https://forms.gle/8BGByDpRa49FXfC18)
 
-Here is our set of Mentor Guidelines, where you can read the specifics about the role: [Mentor Guidelines]({{ site.url }}/drp/Spring 2024 mentor guidelines.pdf)
+Here is our set of Mentor Guidelines, where you can read the specifics about the role. [Mentor Guidelines]({{ site.url }}/drp/Spring 2024 mentor guidelines.pdf)
