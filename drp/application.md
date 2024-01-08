@@ -22,4 +22,4 @@ out the following application. To be eligible as a graduate student, you must be
 
 [Mentor Application](https://forms.gle/8BGByDpRa49FXfC18)
 
-Here is our set of Mentor Guidelines, where you can read the specifics about the role: [Mentor Guidelines]({{ site.url }}/drp/Mentor_Guidelines.pdf)
+Here is our set of Mentor Guidelines, where you can read the specifics about the role: [Mentor Guidelines]({{ site.url }}/drp/Spring 2024 mentor guidelines.pdf)
