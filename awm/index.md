@@ -43,7 +43,7 @@ If you would like to participate in our mentoring program, please send us a mess
 <li>Treasurer: Vihini Gunasekera</li>
 <li>Secretary: Anna Yankoski (fall), Katie Nichols (spring) </li>
 <li>Social Chair: Zivile Puospekaite (fall), Claire Barklage (spring) </li>
-<li>Communications Chair: Kriti Bhabu</li>
+<li>Communications Chair: Kriti Bhabu (spring)</li>
 <li>Title IX Chair: Louisa Liles</li>
 <li>Faculty Mentors: {% include person_info_email_only.html UVA_id="brh5c" %} and {% include person_info_email_only.html UVA_id="jlm6cj" %}</li>
 </ul>  
