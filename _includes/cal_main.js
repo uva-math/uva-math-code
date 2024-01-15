@@ -22,6 +22,7 @@
     "3ehl1jte3jnlftm6h5m28b96jo@group.calendar.google.com",   //14 - AWM
     "56un1k179o7d8mtj85o12qsg7c@group.calendar.google.com",   //15 - Number Theory
     // (REMOVE AMS CHAPTER) "c_60f1de561954223e1933f83f3bfb2520fd742ca85cbd6a02dade97379ec7fad3@group.calendar.google.com",  // 16 - AMS chapter
+    "c_54969c7e95e9eb6b86db56bb73f087cc5cf1e09421b2ba9e89febf093510b331@group.calendar.google.com", // 17 - DRP
     //do not touch the last seminar (it is empty and it is needed for IE compatibility)
     "c7vr381laveomub6abc4vh3qos@group.calendar.google.com"
     // this last one is the empty calendar with no seminar link (also for compatibility with IE)
@@ -57,7 +58,8 @@
     if(num == 14) { return '<a href="{{site.url}}/awm/calendar/">AWM at UVA</a>'; }
     if(num == 15) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "15" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
     //if(num == 16) { return '<a href="{{site.url}}/ams_chapter/">AMS Student Chapter</a>'; }
-    if(num == 17) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "16" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
+    if(num == 16) { return '<a href="{{site.url}}/drp/calendar/">Directed Reading Program</a>'; }
+    // if(num == 17) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "16" %}<a href="{{site.url}}/seminars/{{ sem.shortname }}/">{{sem.name}}</a>{% endif %}{% endfor %}'; }
     return '';
   }
   function getLocation(loc)
