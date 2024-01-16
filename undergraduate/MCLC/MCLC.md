@@ -15,9 +15,9 @@ tooltips: true
 
 <h1 class="mb-4">Math Collaborative Learning Center</h1>
 
-<p style="font-size:150%;color:Red;"> The last day of operation for the Fall 2023 semester is Tuesday, December 5. </p> 
+<!-- <p style="font-size:150%;color:Red;"> The last day of operation for the Fall 2023 semester is Tuesday, December 5. </p> -->
 <!-- <br> Some Calculus I & II sessions will continue through Friday, December 8-->
-<!-- <p style="font-size:150%;"> The MCLC will begin its operation for the Spring 2024 semester on Monday, January 22 </p> -->
+<p style="font-size:150%;"> The MCLC will begin its operation for the Spring 2024 semester on Monday, January 22 </p> 
 <!-- <p style="font-size:150%;"> The MCLC is now open for the Fall 2023 semester! </p> -->
 <!-- <p style="font-size:150%;color:Red;"> The MCLC will not offer sessions during Reading Days, October 1-3 </p> -->
 
@@ -52,7 +52,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <!-- <p style="font-size:120%;color:red;"> The MCLC will remain closed during Reading Days, October 1 - October 4. </p> -->
 <p> Besides MCLC sessions, the schedule below also includes office hours that instructors hold at the MCLC. However, <b> this is not a comprehensive list of office hours.</b> For a comprehensive list of office hours ask your instructor, or visit the Canvas site for your course. </p>
 <!-- <p style="font-size:120%;"> TBA </p> -->
-<p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p> 
+<p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p>
 
 
 <table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 353px; width: 1400px;">
@@ -72,10 +72,10 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <td style="width: 90px; height: 19px; text-align: center;">12-1</td>
 <td style="width: 153.422px; height: 19px;"></td>
 <td style="width: 235px; height: 19px;">  </td> <!-- M -->
-<td style="width: 235px; height: 19px;"> </td>
+<td style="width: 235px; height: 19px;">  </td>
 <td style="width: 235px; height: 19px;">  </td> <!-- W -->
 <td style="width: 235px; height: 19px;">  </td>
-<td style="width: 235px; height: 19px;"> </td>
+<td style="width: 235px; height: 19px;">  </td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 90px; height: 19px; text-align: center;">1-2</td>
