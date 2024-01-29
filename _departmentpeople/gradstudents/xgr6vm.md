@@ -8,7 +8,7 @@ office: 123 Kerchof Hall
 phone: 
 email: xgr6vm@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/Hernandez.jpg
-personal_page:
+personal_page: https://sites.google.com/view/raulhdz
 
 
 ---
