@@ -6,6 +6,44 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Fall 2023
+
++ Choosing the optimal number of clusters for the k-means algorithm
+   - Text: Murphey, Machine learning: a probabalistic perspective
+   - Mentee: Michelle Giulajan
+   - Mentor: Beth Branman
+
++ Elliptic curves and the congruent number problem
+   - Texts: Silverman and Tate, Rational points on elliptic curves; Koblitz, Introduction to elliptic curves and modular forms
+   - Mentee: Owen Guttilla
+   - Mentor: Alejandro De Las Peñas Castaño
+
++ Brouwer's fixed point theorem and the fundamental group
+   - Text: Munkres, Topology
+   - Mentee: Alan Hale
+   - Mentor: William Balderrama
+
++ Random knot theory
+   - Texts: Livingston, Knot theory; Even-Zohar, Models of random knots
+   - Mentee: Samuel Lichtman
+   - Mentor: Sarah Blackwell
+
++ Hamiltonian mechanics and Poisson brackets
+   - Texts: Axler, Linear algebra done right; Hall, Quantum theory for mathematicians
+   - Mentee: Brian Meiser
+   - Mentor: Pedro Brunialti Lima de Andrade
+
++ Convex optimization and support vector machines
+   - Texts: Boyd and Vandenberghe, Convex optimization; Faisal, Ong, and Deisenroth, Mathematics for machine learning
+   - Mentee: Alex Ning
+   - Mentor: Kang Lu
+
++ Musical chord transformations as groups
+   - Texts: Rotman, An introduction to the theory of groups; Zhang, The framework of music theory as represented with groups
+   - Mentee: Peter Tessier
+   - Mentor: Maximiliano Sánchez Garza
+
+
 ### Spring 2023
 
 + Topological data analysis
