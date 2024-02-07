@@ -6,7 +6,7 @@ multi-day-event: true
 permalink: /ims/lectures/peter-kronheimer/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
-published: true
+published: false
 image: http://www.math.harvard.edu/~kronheim/kronheimer.gif
 # image-address: 
 image-alt: Peter Kronheimer
