@@ -10,5 +10,5 @@ email: eqg7fn@virginia.edu
 image: __SITE_URL__/img/people/2023-fall/Aswad_Duaa.jpg
 personal_page:
 
-published: true
+published: false
 ---
