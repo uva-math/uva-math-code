@@ -4,7 +4,7 @@ title: Randomness and Lie-theoretic structures
 event-date: 2024-03-04 09:00:00
 multi-day-event: true
 comments: false
-categories: news events
+categories: news events major-news
 published: true
 image: __SITE_URL__/img/source_rotunda.jpg
 image-alt: UVA Rotunda - source of enlightenment
