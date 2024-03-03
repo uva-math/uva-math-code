@@ -1,0 +1,101 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//example.com//Conference Scheduler//EN
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:STANDARD
+DTSTART:20240304T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:20240310T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+END:DAYLIGHT
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240304T080000
+DTEND;TZID=America/New_York:20240304T0855
+SUMMARY:Bagels and Coffee Breakfast
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240304T085500
+DTEND;TZID=America/New_York:20240304T090000
+SUMMARY:Opening Remarks
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240304T090000
+DTEND;TZID=America/New_York:20240304T100000
+SUMMARY:Jimmy He (MIT) - Symmetries of periodic measures on partitions
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240304T101500
+DTEND;TZID=America/New_York:20240304T111500
+SUMMARY:Ben Brubaker (Minnesota) - The Quantum Group - Partition Function Dictionary
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240304T113000
+DTEND;TZID=America/New_York:20240304T123000
+SUMMARY:Laura Colmenarejo (NC State) - Macdonald polynomials: why do we care about them?
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240304T140000
+DTEND;TZID=America/New_York:20240304T160000
+SUMMARY:Participant Talks
+DESCRIPTION:2:00 Weihong Xu (Virginia Tech)\, 2:20 Kelvin Rivera-Lopez (Gonzaga University)\, 2:40 Hong Chen (Rutgers)\, 3:00 Runqiu Xu (UC San Diego)\, 3:20 Haihan Wu (UC Davis)\, 3:40 Jiaming Xu (University of Wisconsin-Madison)
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240304T161500
+DTEND;TZID=America/New_York:20240304T171500
+SUMMARY:Jennifer Morse (University of Virginia) - A rational approach to Macdonald polynomials
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240305T080000
+DTEND;TZID=America/New_York:20240305T090000
+SUMMARY:Bagels and Coffee Breakfast
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240305T090000
+DTEND;TZID=America/New_York:20240305T100000
+SUMMARY:Mark Shimozono (Virginia Tech) - Centralizer construction of K-homology of affine Grassmannian
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240305T101500
+DTEND;TZID=America/New_York:20240305T111500
+SUMMARY:Colin McSwiggen (NYU Courant) - Large deviations and multivariable special functions
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240305T113000
+DTEND;TZID=America/New_York:20240305T123000
+SUMMARY:Slava Naprienko (UNC Chapel Hill) - Integrable Lattice Models from Representation Theory of p-adic Groups
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240305T134500
+DTEND;TZID=America/New_York:20240305T144500
+SUMMARY:Siddhartha Sahi (Rutgers) - Lyapunov exponents for random products of real matrices
+LOCATION:New York
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20240305T150000
+DTEND;TZID=America/New_York:20240305T160000
+SUMMARY:Jeffrey Kuan (Texas A&M) - Universality of dynamic processes using Drinfel'd twisters
+LOCATION:New York
+END:VEVENT
+END:VCALENDAR
