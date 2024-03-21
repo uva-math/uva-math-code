@@ -10,5 +10,5 @@ email: rk8we@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Mongold_R.jpg
 personal_page:
 
-published: true
+published: false
 ---
