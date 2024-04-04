@@ -59,12 +59,12 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <thead style="background-color: coral; text-align: center;">
 <tr style="text-align: center; height: 19px;">
 <th style="width: 90px; height: 19px;">Time</th>
-<th style="width: 153.422px; height: 19px;">Sunday</th>
-<th style="width: 224.594px; height: 19px;">Monday</th>
-<th style="width: 234.625px; height: 19px;">Tuesday</th>
-<th style="width: 171.453px; height: 19px;">Wednesday</th>
-<th style="width: 218.578px; height: 19px;">Thursday</th>
-<th style="width: 245.703px; height: 19px;">Friday</th>
+<th style="width: 160px; height: 19px;">Sunday</th>
+<th style="width: 160px; height: 19px;">Monday</th>
+<th style="width: 160px; height: 19px;">Tuesday</th>
+<th style="width: 160px; height: 19px;">Wednesday</th>
+<th style="width: 160px; height: 19px;">Thursday</th>
+<th style="width: 160px; height: 19px;">Friday</th>
 </tr>
 </thead>
 <tbody>
