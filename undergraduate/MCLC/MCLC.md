@@ -55,7 +55,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p>
 
 
-<table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 353px; width: 1400px;">
+<table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 353px; width: 1050px;">
 <thead style="background-color: coral; text-align: center;">
 <tr style="text-align: center; height: 19px;">
 <th style="width: 90px; height: 19px;">Time</th>
@@ -70,84 +70,84 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <tbody>
 <tr style="height: 19px;">
 <td style="width: 90px; height: 19px; text-align: center;">12-1</td>
-<td style="width: 153.422px; height: 19px;"></td>
-<td style="width: 235px; height: 19px;">  </td> <!-- M -->
-<td style="width: 235px; height: 19px;">  </td>
-<td style="width: 235px; height: 19px;">  </td> <!-- W -->
-<td style="width: 235px; height: 19px;">  </td>
-<td style="width: 235px; height: 19px;"> Calculus I & II </td>
+<td style="width: 160px; height: 19px;"></td>
+<td style="width: 160px; height: 19px;">  </td> <!-- M -->
+<td style="width: 160px; height: 19px;">  </td>
+<td style="width: 160px; height: 19px;">  </td> <!-- W -->
+<td style="width: 160px; height: 19px;">  </td>
+<td style="width: 160px; height: 19px;"> Calculus I & II </td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 90px; height: 19px; text-align: center;">1-2</td>
-<td style="width: 153.422px; height: 19px;"></td>
-<td style="width: 235px; height: 19px;"> </td> <!-- M --> 
-<td style="width: 235px; height: 19px;"> <!-- Math 1310 Office Hours --> </td>
-<td style="width: 235px; height: 19px;"> <!-- Math 1220 Office Hours --> </td> <!-- W -->
-<td style="width: 235px; height: 19px;"> </td>
-<td style="width: 235px; height: 19px;"> Calculus I & II </td>
+<td style="width: 160px; height: 19px;"></td>
+<td style="width: 160px; height: 19px;"> </td> <!-- M --> 
+<td style="width: 160px; height: 19px;"> <!-- Math 1310 Office Hours --> </td>
+<td style="width: 160px; height: 19px;"> <!-- Math 1220 Office Hours --> </td> <!-- W -->
+<td style="width: 160px; height: 19px;"> </td>
+<td style="width: 160px; height: 19px;"> Calculus I & II </td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 90px; height: 10px; text-align: center;">2-3</td>
-<td style="width: 153.422px; height: 10px;">  </td>
-<td style="width: 224.594px; height: 10px;"> Math 1220 Office Hours </td> <!-- M -->
-<td style="width: 234.625px; height: 10px;">  </td>
-<td style="width: 171.453px; height: 10px;">  </td> <!-- W -->
-<td style="width: 218.578px; height: 10px;"> Math 1220 Office Hours </td>
-<td style="width: 245.703px; height: 10px;"> Calculus I & II </td>
+<td style="width: 160px; height: 10px;">  </td>
+<td style="width: 160px; height: 10px;"> Math 1220 Office Hours </td> <!-- M -->
+<td style="width: 160px; height: 10px;">  </td>
+<td style="width: 160px; height: 10px;">  </td> <!-- W -->
+<td style="width: 160px; height: 10px;"> Math 1220 Office Hours </td>
+<td style="width: 160px; height: 10px;"> Calculus I & II </td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 90px; height: 19px; text-align: center;">3-4</td>
-<td style="width: 153.422px; height: 19px;"> Math 3250 </td>
-<td style="width: 224.594px; height: 19px;"> Math 1220 Office Hours </td> <!-- M -->
-<td style="width: 234.625px; height: 19px;">  </td>
-<td style="width: 171.453px; height: 19px;">  Math 1220 Office Hours </td> <!-- W -->
-<td style="width: 218.578px; height: 19px;"> Calculus I & II </td>
-<td style="width: 245.703px; height: 19px;"> Calculus I & II <br/> Math 2310 </td>
+<td style="width: 160px; height: 19px;"> Math 3250 </td>
+<td style="width: 160px; height: 19px;"> Math 1220 Office Hours </td> <!-- M -->
+<td style="width: 160px; height: 19px;">  </td>
+<td style="width: 160px; height: 19px;">  Math 1220 Office Hours </td> <!-- W -->
+<td style="width: 160px; height: 19px;"> Calculus I & II </td>
+<td style="width: 160px; height: 19px;"> Calculus I & II <br/> Math 2310 </td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 90px; height: 19px; text-align: center;">4-5</td>
-<td style="width: 153.422px; height: 19px;">  </td>
-<td style="width: 224.594px; height: 19px;">  </td> <!-- M -->
-<td style="width: 234.625px; height: 19px;"> Calculus I & II </td>
-<td style="width: 171.453px; height: 19px;"> Calculus I & II </td> <!-- W -->
-<td style="width: 218.578px; height: 19px;"> Calculus I & II  <br/> Math 3100 <br/> Math 3350/3351 </td>
-<td style="width: 245.703px; height: 19px;">  </td>
+<td style="width: 160px; height: 19px;">  </td>
+<td style="width: 160px; height: 19px;">  </td> <!-- M -->
+<td style="width: 160px; height: 19px;"> Calculus I & II </td>
+<td style="width: 160px; height: 19px;"> Calculus I & II </td> <!-- W -->
+<td style="width: 160px; height: 19px;"> Calculus I & II  <br/> Math 3100 <br/> Math 3350/3351 </td>
+<td style="width: 160px; height: 19px;">  </td>
 </tr>
 <tr style="height: 19px;">
 <td style="width: 90px; text-align: center; height: 19px;">5-6</td>
-<td style="width: 153.422px; height: 19px;"> Math 3350/3351 </td>
-<td style="width: 224.594px; height: 19px;"> Calculus I & II <br/> Math 3354 </td> <!-- M -->
-<td style="width: 234.625px; height: 19px;"> Calculus I & II </td>
-<td style="width: 235px; height: 19px;">  Calculus I & II <br/> Math 3100 </td> <!-- W -->
-<td style="width: 218.578px; height: 19px;"> Calculus I & II  <br/> Math 2310 </td>
-<td style="width: 245.703px; height: 19px;">  </td>
+<td style="width: 160px; height: 19px;"> Math 3350/3351 </td>
+<td style="width: 160px; height: 19px;"> Calculus I & II <br/> Math 3354 </td> <!-- M -->
+<td style="width: 160px; height: 19px;"> Calculus I & II </td>
+<td style="width: 160px; height: 19px;">  Calculus I & II <br/> Math 3100 </td> <!-- W -->
+<td style="width: 160px; height: 19px;"> Calculus I & II  <br/> Math 2310 </td>
+<td style="width: 160px; height: 19px;">  </td>
 </tr>
 <tr style="height: 10px;">
 <td style="width: 90px; text-align: center; height: 10px;">6-7</td>
-<td style="width: 153.422px; height: 10px;"></td>
-<td style="width: 235px; height: 10px;"> Calculus I & II  <br/> Math 2310 <br/> Math 3000/3310 </td> <!-- M -->
-<td style="width: 234.625px; height: 10px;"> Math 1140 <br/> Calculus I & II </td>
-<td style="width: 171.453px; height: 10px;"> Calculus I & II  <br/> Math 3000/3310 </td> <!--W-->
-<td style="width: 218.578px; height: 10px;"> Calculus I & II </td>
-<td style="width: 245.703px; height: 10px;"></td>
+<td style="width: 160px; height: 10px;"></td>
+<td style="width: 160px; height: 10px;"> Calculus I & II  <br/> Math 2310 <br/> Math 3000/3310 </td> <!-- M -->
+<td style="width: 160px; height: 10px;"> Math 1140 <br/> Calculus I & II </td>
+<td style="width: 160px; height: 10px;"> Calculus I & II  <br/> Math 3000/3310 </td> <!--W-->
+<td style="width: 160px; height: 10px;"> Calculus I & II </td>
+<td style="width: 160px; height: 10px;"></td>
 </tr>
 <tr style="height: 38px;">
 <td style="width: 90px; height: 38px; text-align: center;">7-8:15</td>
-<td style="width: 153.422px; height: 38px;"> Calculus I & II </td>
-<td style="width: 224.594px; height: 38px;">  Calculus I & II  </td> <!-- M -->
-<td style="width: 235px; height: 38px;"> Calculus I & II </td>
-<td style="width: 171.453px; height: 38px;"> Calculus I & II </td> <!-- W -->
-<td style="width: 218.578px; height: 38px;"></td>
-<td style="width: 245.703px; height: 38px;"></td>
+<td style="width: 160px; height: 38px;"> Calculus I & II </td>
+<td style="width: 160px; height: 38px;">  Calculus I & II  </td> <!-- M -->
+<td style="width: 160px; height: 38px;"> Calculus I & II </td>
+<td style="width: 160px; height: 38px;"> Calculus I & II </td> <!-- W -->
+<td style="width: 160px; height: 38px;"></td>
+<td style="width: 160px; height: 38px;"></td>
 </tr>
 <tr style="height: 38px;">
 <td style="width: 90px; height: 38px; text-align: center;">8:15-9:30</td>
-<td style="width: 153.422px; height: 38px;"></td>
-<td style="width: 224.594px; height: 38px;">  </td> <!-- M -->
-<td style="width: 234.625px; height: 38px;"> Calculus I & II </td>
-<td style="width: 171.453px; height: 38px;"> Calculus I & II </td> <!-- W -->
-<td style="width: 218.578px; height: 38px;"> </td>
-<td style="width: 245.703px; height: 38px;"> </td>
+<td style="width: 160px; height: 38px;"></td>
+<td style="width: 160px; height: 38px;">  </td> <!-- M -->
+<td style="width: 160px; height: 38px;"> Calculus I & II </td>
+<td style="width: 160px; height: 38px;"> Calculus I & II </td> <!-- W -->
+<td style="width: 160px; height: 38px;"> </td>
+<td style="width: 160px; height: 38px;"> </td>
 </tr>
 </tbody>
 </table>
