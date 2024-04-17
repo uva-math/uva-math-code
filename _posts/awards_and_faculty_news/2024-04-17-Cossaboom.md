@@ -4,6 +4,8 @@ title: Catherine Cossaboom is Awarded Goldwater Scholarship
 comments: false
 categories: news awards swiper-news
 published: true
+image: __SITE_URL__/img/news_events/Cossaboom.png
+image-alt: Catherine Cossaboom
 good-md: true
 ---
 
