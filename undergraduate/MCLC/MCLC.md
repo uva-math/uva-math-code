@@ -16,7 +16,7 @@ tooltips: true
 <h1 class="mb-4">Math Collaborative Learning Center</h1>
 
 <p style="font-size:150%;color:Red;"> The last day of operation for the Spring 2024 semester is Tuesday, April 30. </p> 
-<!-- <br> Some Calculus I & II sessions will continue through Friday, December 8-->
+ <br> Some Calculus I & II sessions will continue through Wednesday, May 8
 <!-- <p style="font-size:150%;"> The MCLC will begin its operation for the Spring 2024 semester on Monday, January 22 </p> -->
 <!-- <p style="font-size:150%;"> The MCLC is now open for the Fall 2023 semester! </p> -->
 <!-- <p style="font-size:150%;color:Red;"> The MCLC will not offer sessions during Reading Days, October 1-3 </p> -->
