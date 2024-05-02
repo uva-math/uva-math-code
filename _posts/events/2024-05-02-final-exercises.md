@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2024 Mathematics Final Exercises Ceremony
-event-date: 2023-05-18 11:00:00
+event-date: 2024-05-18 11:00:00
 comments: false
 categories: 
 - news 
