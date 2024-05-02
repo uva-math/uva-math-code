@@ -13,7 +13,7 @@ image-alt: Final Exercises ceremony
 ---
 
 
-[Final Exercises for the College and Graduate School of Arts & Sciences](https://majorevents.virginia.edu/finals/locations) will take place on Saturday, May 18, 2024 at 9:00 a.m. on the Lawn.
+[Final Exercises for the College and Graduate School of Arts & Sciences](https://majorevents.virginia.edu/finals/locations) will take place on **Saturday, May 18, 2024 at 9:00 a.m.** on the Lawn.
 
 The ceremony times and locations for the <b>Mathematics Department Diploma Ceremony</b> are listed below (**11 a.m. – 12:30 p.m.**):
 
