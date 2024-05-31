@@ -8,7 +8,7 @@ office: 127 Kerchof Hall
 phone: 
 email: wt4fw@virginia.edu
 image: __SITE_URL__/img/people/2023-fall/Wojciech.jpg
-personal_page: https://sites.google.com/view/wojciech-tralle/home
+personal_page: https://sites.google.com/view/wojciech-tralle
 
 ---
 
