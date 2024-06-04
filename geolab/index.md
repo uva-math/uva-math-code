@@ -16,7 +16,7 @@ This program allows students to learn and understand subjects not usually covere
 
 <h2 class="mb-3">Requirements</h2>
 
-The students are required to meet with their group and their mentor(s) once a week for an hour and a half to discuss their progress and plan for future work. Additionally, two hours of independent work are required each week. We will also have monthly common meetings (three total) between the different groups. You can see SCHEDULE for a more detailed discussion of the type of meetings, where students will have the opportunity to discuss their project with other students and wider communities. 
+The students are required to meet with their group and their mentor(s) once a week for an hour and a half to discuss their progress and plan for future work. Additionally, two hours of independent work are required each week. We will also have monthly common meetings (three total) between the different groups. You can see the <a href="{{site.url}}/geolab/schedule/">schedule page</a> for a more detailed discussion of the type of meetings, where students will have the opportunity to discuss their project with other students and wider communities. 
 
 <h2 class="mb-3">Apply</h2>
 
@@ -24,7 +24,7 @@ Applications to participate in the Geometry Lab open at the start of each semest
 
 <h2 class="mb-3">Got Questions?</h2>
 
-See the FAQ page for more details about the lab. If your question is not answered there, please feel free to <a href="{{site.url}}/geolab/contact/">contact us</a>.
+See the <a href="{{site.url}}/geolab/faq/">FAQ page</a> for more details about the lab. If your question is not answered there, please feel free to <a href="{{site.url}}/geolab/contact/">contact us</a>.
 
 <h2 class="mb-3">Other geometry labs</h2>
 
