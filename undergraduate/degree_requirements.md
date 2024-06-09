@@ -9,7 +9,8 @@ nav_weight: 1
 
 <h1 class="mb-3">Degree requirements</h1>
 
-- ##### [Requirements]({{ site.url }}/undergraduate/docs/major_minor_req_f20.pdf) for Obtaining a Major or a Minor in Mathematics
+- ##### [Major in Mathematics Requirements]({{ site.url }}/undergraduate/docs/MATH_MAJOR_2024.pdf) 
+- ##### [Minor in Mathematics Requirements]({{ site.url }}/undergraduate/docs/MATH_MINOR_2024.pdf)
 
 <h1 class="mb-3 mt-3">To Declare a Major/Minor:</h1>
 
