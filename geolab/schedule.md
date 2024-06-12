@@ -18,7 +18,7 @@ permalink: /geolab/schedule/
 <li>Third Common meeting: TBA</li>
 </ul>
 
-Examples of past common meetings:
+Examples of past common meetings: Test
 
 <ul>
 <li>Meeting with other Geometry Lab groups and presenting to each other</li>
