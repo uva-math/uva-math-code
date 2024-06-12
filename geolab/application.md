@@ -14,4 +14,4 @@ Applications Due: TBA.
 
 Mentor Application (link coming soon)
 
-Applications Due: TBA. Test
+Applications Due: TBA.
