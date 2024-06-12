@@ -36,9 +36,6 @@ To enroll in accelerated sections {%include course number=2315%} and its continu
 
 ### Additional Courses
 
-The McIntire School of Commerce’s B.S. in Commerce prerequisites
- include STAT 2120 and a Calculus course ({%include course number=1190%}<span style="margin-left:-4px"></span>, {%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1310%}<span style="margin-left:-4px"></span>, or higher level).
-
 Pre-med students who are seeking to fulfill the &ldquo;second-semester&rdquo; calculus course required by some medical schools typically take {%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%}.
 
 Elementary Education students planning to enroll in the 5-year Teacher Education program are encouraged to take {%include course number=1150%} and {%include course number=1160%}<span style="margin-left:-4px"></span>. Enrollment in both {%include course number=1150%} and {%include course number=1160%} is restricted to prospective students of the 5-year elementary education program. The instructor&rsquo;s permission is required for other students and may be obtained via e-mail to the instructor or from the instructor on the first day of class.
