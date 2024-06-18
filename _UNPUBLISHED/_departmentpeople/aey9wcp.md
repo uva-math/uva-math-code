@@ -9,5 +9,5 @@ phone:
 email: aey9wcp@virginia.edu
 image: 
 personal_page:
-published: true
+published: false
 ---
