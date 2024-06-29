@@ -44,7 +44,7 @@ University of Cologne, Postdoc<br>
 *On the Coefficients of q-Series and Modular Forms*<br>
 (Advisor: Ken Ono)
 
-- **Badrey Pandi**<br>
+- **Badri Pandey**<br>
 University of Cologne, Postdoc<br>		
 *On Higher Turan Inequalities for the Plane Partitions, Ellipsoid T-Designs, and j-Inversion*<br>
 (Advisor: Ken Ono)

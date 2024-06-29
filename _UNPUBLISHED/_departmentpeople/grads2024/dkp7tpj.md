@@ -10,6 +10,7 @@ email: dkp7tpj@virginia.edu
 image: __SITE_URL__/img/people/2020-fall/Phillips.jpg
 personal_page:
 
+published: false
 
 ---
 

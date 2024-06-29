@@ -10,5 +10,5 @@ email: jy4au@virginia.edu
 image: '__SITE_URL__/img/people/2023-fall/Jiajun.jpg'
 personal_page: https://sites.google.com/view/jiajunyan/
 
-
+published: false
 ---

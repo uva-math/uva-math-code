@@ -10,4 +10,6 @@ email: egm3zq@virginia.edu
 image: /img/people/2020-fall/McSpirit.jpg 
 personal_page: https://eleanormcspirit.com
 
+published: false
+
 ---

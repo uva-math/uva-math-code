@@ -10,4 +10,6 @@ email: hs7gy@virginia.edu
 image: __SITE_URL__/img/people/2020-fall/Saad2.jpg
 personal_page: https://hasansaad2.github.io/
 
+published: false
+
 ---

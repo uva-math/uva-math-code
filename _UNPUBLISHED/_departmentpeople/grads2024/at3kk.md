@@ -10,6 +10,6 @@ email: at3kk@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Traaseth_A.jpg
 personal_page: https://sites.google.com/view/alec-traaseth/
 
-
+published: false
 ---
 

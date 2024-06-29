@@ -10,5 +10,5 @@ email: sw6vm@virginia.edu
 image: __SITE_URL__/img/people/2019-nov/Wan.jpg
 personal_page: https://sites.google.com/virginia.edu/shunyuwan/home 
 
-
+published: false
 ---
