@@ -4,7 +4,7 @@ lastname: Basu
 name: Aaratrick
 general_position: gradstudent
 position: Graduate Student
-office: 
+office: 121 Kerchof Hall
 phone: 
 email: ukg7ef@virginia.edu
 image:
