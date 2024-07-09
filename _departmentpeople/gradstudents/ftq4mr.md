@@ -4,7 +4,7 @@ lastname: Lilly
 name: Astrid
 general_position: gradstudent
 position: Graduate Student
-office: 
+office: 401 Kerchof Hall
 phone: 
 email: ftq4mr@virginia.edu
 image:
