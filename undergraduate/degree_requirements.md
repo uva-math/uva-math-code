@@ -7,12 +7,20 @@ nav_parent: Undergraduate
 nav_weight: 1
 ---
 
-<h1 class="mb-3">Degree requirements</h1>
+<!-- <h1 class="mb-3">Degree requirements</h1> -->
 
-- ##### [Major in Mathematics Requirements]({{ site.url }}/undergraduate/docs/MATH_MAJOR_2024.pdf) 
-- ##### [Minor in Mathematics Requirements]({{ site.url }}/undergraduate/docs/MATH_MINOR_2024.pdf)
+## Major in Mathematics Requirements
 
-<h1 class="mb-3 mt-3">To Declare a Major/Minor:</h1>
+##### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=61&poid=10019) to the UREG page
+
+## Minor in Mathematics Requirements
+
+##### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=61&poid=10021) to the UREG page
+
+<!-- - ##### [Major in Mathematics Requirements]({{ site.url }}/undergraduate/docs/MATH_MAJOR_2024.pdf)  -->
+<!-- - ##### [Minor in Mathematics Requirements]({{ site.url }}/undergraduate/docs/MATH_MINOR_2024.pdf) -->
+
+<h1 class="mb-3 mt-5">To Declare a Major/Minor:</h1>
 
 1. Review the above document for prerequisites to declare the major/minor and the requirements to earn the degree
 2. Select a concentration (if majoring) and create a tentative list of proposed courses that will earn the degree
