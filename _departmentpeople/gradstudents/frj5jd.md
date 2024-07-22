@@ -7,7 +7,7 @@ position: Graduate Student
 office: 127 Kerchof Hall
 phone: 
 email: frj5jd@virginia.edu
-image:
+image: __SITE_URL__/img/people/2024-fall/leshkov.jpg
 personal_page:
 areas:
   

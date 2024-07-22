@@ -7,7 +7,7 @@ position: Graduate Student
 office: 125 Kerchof Hall
 phone: 
 email: mux9mj@virginia.edu
-image:
+image: __SITE_URL__/img/people/2024-fall/hudson.jpg
 personal_page:
 areas:
   

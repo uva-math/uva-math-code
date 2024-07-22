@@ -7,7 +7,7 @@ position: Graduate Student
 office: 401 Kerchof Hall
 phone: 
 email: taq4re@virginia.edu
-image:
+image: __SITE_URL__/img/people/2024-fall/sisler.jpg
 personal_page:
 areas:
   
