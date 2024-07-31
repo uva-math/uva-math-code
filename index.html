@@ -26,6 +26,62 @@ events: true
 
             <!-- Code for the news roll -->
 
+            <div class="swiper-pagination mt-1"></div>
+            <div class="jumbotron" style="padding: 12px">
+            <div class="swiper-container mt-4">
+            <div class="swiper-wrapper">
+              {% assign swiper-news_counter = 0 %}
+              {% for post in site.categories['news'] limit:20 %}
+              {% if post.categories contains 'swiper-news' and swiper-news_counter < 6 %}
+              {% assign swiper-news_id = post.id %}
+              {% assign swiper-news_counter = swiper-news_counter | plus:1 %}
+                <div class="swiper-slide">
+                <a href="{{site.url }}{{ post.url }}" style="color:inherit;"><span class="h4 mb-3">{{post.title}}</a></span>
+                {% if post.event-date != null and post.multi-day-event %}
+                <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
+                {% if post.event-date != null and post.multi-day-event != true %}
+                <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
+                {% if post.image != null %}
+                  {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;;max-height:175px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
+                {% endif %}
+                {% unless post.good-md %}
+                <a href="{{site.url }}{{ post.url }}" class="main-roll-link hidden-xs-down">
+                {{ post.excerpt | markdownify | strip_html | markdownify  }}
+                </a>
+                {% else %}
+                <div class="hidden-xs-down">{{ post.excerpt | markdownify }}
+                </div>
+                {% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal"  role="button">{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}
+                {% endunless %}
+                </div>
+            {% endif %}
+            {% endfor %}
+            </div>
+            </div>
+            </div>
+              <!-- Swiper JS -->
+              <script src="../css/swiper.min.js"></script>
+      
+              <!-- Initialize Swiper -->
+              <script>
+                var swiper = new Swiper('.swiper-container', {
+                  spaceBetween: 30,
+                  centeredSlides: true,
+                  autoplay: {
+                    delay: 6500,
+                    disableOnInteraction: true,
+                  },
+                  pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                  },
+                  // navigation: {
+                  //   nextEl: '.swiper-button-next',
+                  //   prevEl: '.swiper-button-prev',
+                  // },
+                });
+              </script>
+
         {% assign major-news_counter = 0 %}
         {% for post in site.categories['news'] limit:10 %}
         {% if post.categories contains 'major-news' and major-news_counter == 0 %}
@@ -55,61 +111,7 @@ events: true
           <br />
         </div>
 
-        <div class="swiper-pagination mt-1"></div>
-        <div class="jumbotron" style="padding: 12px">
-        <div class="swiper-container mt-4">
-        <div class="swiper-wrapper">
-          {% assign swiper-news_counter = 0 %}
-          {% for post in site.categories['news'] limit:20 %}
-          {% if post.categories contains 'swiper-news' and swiper-news_counter < 6 %}
-          {% assign swiper-news_id = post.id %}
-          {% assign swiper-news_counter = swiper-news_counter | plus:1 %}
-            <div class="swiper-slide">
-            <a href="{{site.url }}{{ post.url }}" style="color:inherit;"><span class="h4 mb-3">{{post.title}}</a></span>
-            {% if post.event-date != null and post.multi-day-event %}
-            <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
-            {% if post.event-date != null and post.multi-day-event != true %}
-            <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
-            {% if post.image != null %}
-              {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;;max-height:175px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
-            {% endif %}
-            {% unless post.good-md %}
-            <a href="{{site.url }}{{ post.url }}" class="main-roll-link hidden-xs-down">
-            {{ post.excerpt | markdownify | strip_html | markdownify  }}
-            </a>
-            {% else %}
-            <div class="hidden-xs-down">{{ post.excerpt | markdownify }}
-            </div>
-            {% include categories.html %}
-            {% endunless %}
-            </div>
-        {% endif %}
-        {% endfor %}
-        </div>
-        </div>
-        </div>
-          <!-- Swiper JS -->
-          <script src="../css/swiper.min.js"></script>
-  
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper('.swiper-container', {
-              spaceBetween: 30,
-              centeredSlides: true,
-              autoplay: {
-                delay: 6500,
-                disableOnInteraction: true,
-              },
-              pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-              },
-              // navigation: {
-              //   nextEl: '.swiper-button-next',
-              //   prevEl: '.swiper-button-prev',
-              // },
-            });
-          </script>
+        
 
         {% assign usual-news-counter = 0 %}
         <div class="row zebra-md">
