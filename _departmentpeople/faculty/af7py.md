@@ -7,6 +7,7 @@ position: Assistant Professor
 office: 225 Kerchof Hall
 phone:
 email: af7py@virginia.edu
+image: __SITE_URL__/img/people/Farhat.jpg
 personal_page:
 
 areas:
