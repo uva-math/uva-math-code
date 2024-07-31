@@ -10,6 +10,8 @@ email: gps9h@virginia.edu
 image: __SITE_URL__/img/people/2023-fall/simms.png
 personal_page:
 
+published: false
+
 ---
 
 

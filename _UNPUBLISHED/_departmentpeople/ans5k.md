@@ -10,4 +10,6 @@ email: ans5k@virginia.edu
 image: __SITE_URL__/img/people/2023-fall/evansnora.jpg
 personal_page:
 
+published: false
+
 ---
