@@ -2,8 +2,8 @@
 UVA_id: njk4x
 lastname: Kuhn
 name: Nicholas
-general_position: faculty
-position: Professor
+general_position: emeritus
+position: Professor Emeritus
 office: 318 Kerchof Hall
 phone: 434-924-7123
 email: njk4x@virginia.edu
