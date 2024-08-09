@@ -1,7 +1,7 @@
 ---
 layout: static_page_no_right_menu
 title: Department People List
-permalink: /people-list/b821cc04426d8c54bded02406e5a5ef5/
+permalink: /people-id/
 ---
 
 <div class="col-md-4">
