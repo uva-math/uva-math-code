@@ -4,12 +4,13 @@ title: Department People List
 permalink: /people-id/
 ---
 
-<div class="col-md-4">
+<div class="col-md-6">
 <table class="table table-striped">
   <thead>
     <tr>
       <th>Name</th>
       <th>UVA ID</th>
+      <th>Dept link</th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +19,7 @@ permalink: /people-id/
       <tr>
         <td>{{ person.name }} {{ person.lastname }}</td>
         <td>{{ person.UVA_id }}</td>
+        <td><a href="{{ site.url }}/people/{{ person.UVA_id }}/">Page</a></td>
       </tr>
     {% endfor %}
   </tbody>
