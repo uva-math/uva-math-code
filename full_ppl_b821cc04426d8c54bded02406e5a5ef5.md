@@ -2,6 +2,8 @@
 layout: static_page_no_right_menu
 title: Department People List
 permalink: /people-id/
+redirect_from:
+  - /people-list/b821cc04426d8c54bded02406e5a5ef5/
 ---
 
 <div class="col-md-6">
