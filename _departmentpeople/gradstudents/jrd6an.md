@@ -7,7 +7,7 @@ position: Graduate Student
 office: 123 Kerchof Hall
 phone: 
 email: jrd6an@virginia.edu
-image:
+image: __SITE_URL__/img/people-since-2024/2024/jrd6an.jpg
 personal_page:
 areas:
   
