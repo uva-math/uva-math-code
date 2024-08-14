@@ -32,6 +32,12 @@ nav_weight: 101
 	<li><a href="http://beanactuary.org">Be an Actuary</a></li>
 </ul>
 
+### Tech career information
+
+<ul>
+	<li>https://techguide.org/</li>
+</ul>
+
 <h3>Mathematics Association of America (MAA)</h3>
 
 <ul>
