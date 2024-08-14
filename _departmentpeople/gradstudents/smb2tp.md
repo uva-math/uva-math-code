@@ -7,7 +7,7 @@ position: Graduate Student
 office: 401 Kerchof Hall
 phone: 
 email: smb2tp@virginia.edu
-image:
+image: __SITE_URL__/img/people-since-2024/2024/smb2tp.jpg
 personal_page:
 areas:
   
