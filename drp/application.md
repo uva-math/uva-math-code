@@ -24,4 +24,4 @@ out the following application. To be eligible as a graduate student, you must be
 
 **Applications Due: Friday, September 6th, 2024 at 11:59 PM Eastern Time.**
 
-Here is our set of Mentor Guidelines, where you can read the specifics about the role. [Mentor Guidelines]({{ site.url }}/drp/Spring 2024 mentor guidelines.pdf)
+Here is our set of Mentor Guidelines, where you can read the specifics about the role. [Mentor Guidelines]({{ site.url }}/drp/Mentor_Guidelines.pdf)
