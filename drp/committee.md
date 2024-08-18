@@ -9,11 +9,12 @@ permalink: /drp/committee/
 The DRP committee is comprised of the following postdocs:
 
 - [Beth Branman](https://math.virginia.edu/people/szq3yx/)
-- [Jiajun Yan](https://math.virginia.edu/people/jy4au/)
+- [Kang Lu](https://math.virginia.edu/people/wbt4qn/)
 
 and the following graduate students:
 
-- [Eleftherios Chatzitheodoridis](https://math.virginia.edu/people/thp5uc/)
+- [Alejandro De Las Penas Castano](https://math.virginia.edu/people/ad7ag/)
+- [Darien Farnham](https://math.virginia.edu/people/qzr2cy/)
 - [Miika Tuominen](https://math.virginia.edu/people/mit8vu/)
 
 The sponsoring faculty member is [You Qi](https://math.virginia.edu/people/yq2dw/).
