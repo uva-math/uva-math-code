@@ -12,6 +12,43 @@ nav_weight: 70
 The list includes initial job placement or current job (if known).
 
 
+## Spring 2024
+
+## Spring 2024
+
+- **Tanner Carawan**<br>
+  TBA<br>
+  (Advisor: Julie Bergner)
+
+- **Eleanor Grace McSpirit**<br>
+  TBA<br>
+  (Advisor: Ken Ono)
+
+- **Donnelly Phillips**<br>
+  TBA<br>
+  (Advisor: Tai Melcher)
+
+- **Hasan Saad**<br>
+  TBA<br>
+  (Advisor: Ken Ono)
+
+- **Yaolong Shen**<br>
+  TBA<br>
+  (Advisor: Weiqiang Wang)
+
+- **Alec Traaseth**<br>
+  TBA<br>
+  (Advisor: Sara Maloni)
+
+- **Shunyu Wan**<br>
+  Georgia Institute of Technology, Postdoc<br>
+  (Advisor: Thomas Mark)
+
+- **Yuan Zhang**<br>
+  TBA<br>
+  (Advisor: Peter Abramenko)
+
+  
 ## Summer 2023
 
 - **Nhan Nguyen**<br>
