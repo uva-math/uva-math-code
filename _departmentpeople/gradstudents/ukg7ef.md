@@ -8,7 +8,7 @@ office: 121 Kerchof Hall
 phone: 
 email: ukg7ef@virginia.edu
 image:
-personal_page:
+personal_page: https://awnathan1893.github.io/
 areas:
   
 ---
