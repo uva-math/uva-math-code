@@ -11,10 +11,10 @@
   webpage: 'http://pi.math.virginia.edu/colloq/'
   google_cal_id: 'j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com'
   seminar_weight: 10
-  regular_times: Thursdays 3:45-4:45pm, Kerchof 111
+  regular_times: Thursdays 3:45-4:45pm, Kerchof 111. Refreshments at 3:15pm in Kerchof 314.
   contact:
-    - UVA_id: jeb2md
-    - UVA_id: yq2dw
+    - UVA_id: eg4va
+    - UVA_id: vk6e
     
 - cal_number: '200'
   name: '---'
