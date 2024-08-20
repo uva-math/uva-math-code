@@ -14,8 +14,6 @@ The list includes initial job placement or current job (if known).
 
 ## Spring 2024
 
-## Spring 2024
-
 - **Tanner Carawan**<br>
   TBA<br>
   (Advisor: Julie Bergner)
@@ -48,7 +46,7 @@ The list includes initial job placement or current job (if known).
   TBA<br>
   (Advisor: Peter Abramenko)
 
-  
+
 ## Summer 2023
 
 - **Nhan Nguyen**<br>
