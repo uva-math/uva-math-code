@@ -42,10 +42,10 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 
 <br>
 
-<!-- <h2 class="mb-4 mt-4">Survey </h2> -->
+<!-- <h2 class="mb-4 mt-4">Survey </h2> 
 
 <p style="font-size:120%;color:coral;"> If you have joined an MCLC session this semester please take a couple of minutes to complete this
- <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_85R3ujNTjN20tIa">survey</a>. We appreciate your feedback. </p> 
+ <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_85R3ujNTjN20tIa">survey</a>. We appreciate your feedback. </p> -->
 
 <h2 class="mb-4 mt-4">Schedule </h2>
 
@@ -55,7 +55,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p>
 
 
-<table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 353px; width: 1050px;">
+<!-- <table cellpadding="6px" border="4px" cellspacing="0" style="border-collapse: collapse; height: 353px; width: 1050px;">
 <thead style="background-color: coral; text-align: center;">
 <tr style="text-align: center; height: 19px;">
 <th style="width: 90px; height: 19px;">Time</th>
@@ -152,7 +152,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </tbody>
 </table>
 
-<br>
+<br> -->
 
 <!-- <h2 class="mb-4 mt-4">MCLC at Gilmer Hall </h2>
 
