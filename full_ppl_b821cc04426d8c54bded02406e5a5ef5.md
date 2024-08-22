@@ -8,27 +8,7 @@ redirect_from:
 
 <div class="container">
 <div class="row">
-<div class="col-md-6">
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>UVA ID</th>
-      <th>Dept link</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% assign sorted_people = site.departmentpeople | sort: "lastname" %}
-    {% for person in sorted_people %}
-      <tr>
-        <td>{{ person.name }} {{ person.lastname }}</td>
-        <td>{{ person.UVA_id }}</td>
-        <td><a href="{{ site.url }}/people/{{ person.UVA_id }}/">Page</a></td>
-      </tr>
-    {% endfor %}
-  </tbody>
-</table>
-</div>
+
 <div class="col-md-6">
 <!-- Search bar HTML -->
 <div id="search-container">
@@ -121,4 +101,26 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 </script>
 </div>
+<div class="col-md-6">
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>UVA ID</th>
+      <th>Dept link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign sorted_people = site.departmentpeople | sort: "lastname" %}
+    {% for person in sorted_people %}
+      <tr>
+        <td>{{ person.name }} {{ person.lastname }}</td>
+        <td>{{ person.UVA_id }}</td>
+        <td><a href="{{ site.url }}/people/{{ person.UVA_id }}/">Page</a></td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</div>
+
 </div></div>
