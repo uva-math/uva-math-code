@@ -6,6 +6,8 @@ redirect_from:
   - /people-list/b821cc04426d8c54bded02406e5a5ef5/
 ---
 
+<div class="container">
+<div class="row">
 <div class="col-md-6">
 <table class="table table-striped">
   <thead>
@@ -27,3 +29,96 @@ redirect_from:
   </tbody>
 </table>
 </div>
+<div class="col-md-6">
+<!-- Search bar HTML -->
+<div id="search-container">
+  <input type="text" id="search-input" placeholder="Search by name or UVA ID...">
+  <button id="search-button">Search</button>
+</div>
+
+<!-- CSS Styles -->
+<style>
+  #search-container {
+    margin: 20px 0;
+    text-align: center;
+  }
+  #search-input {
+    padding: 8px;
+    width: 300px;
+    font-size: 16px;
+  }
+  #search-button {
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #232D4B;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  #search-button:hover {
+    background-color: #0E1836;
+  }
+  .highlight {
+    background-color: yellow;
+  }
+</style>
+
+<!-- JavaScript for search functionality -->
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  const searchInput = document.getElementById('search-input');
+  const searchButton = document.getElementById('search-button');
+  const table = document.querySelector('table');
+  const rows = table.querySelectorAll('tr');
+
+  function performSearch() {
+    const searchTerm = searchInput.value.toLowerCase();
+    
+    rows.forEach((row, index) => {
+      if (index === 0) return; // Skip header row
+      
+      const name = row.cells[0].textContent.toLowerCase();
+      const uvaId = row.cells[1].textContent.toLowerCase();
+      
+      if (name.includes(searchTerm) || uvaId.includes(searchTerm)) {
+        row.style.display = '';
+        highlightText(row, searchTerm);
+      } else {
+        row.style.display = 'none';
+      }
+    });
+  }
+
+  function highlightText(row, searchTerm) {
+    [0, 1].forEach(cellIndex => {
+      const cell = row.cells[cellIndex];
+      const originalText = cell.textContent;
+      const highlightedText = originalText.replace(
+        new RegExp(searchTerm, 'gi'),
+        match => `<span class="highlight">${match}</span>`
+      );
+      cell.innerHTML = highlightedText;
+    });
+  }
+
+  searchButton.addEventListener('click', performSearch);
+  searchInput.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+      performSearch();
+    }
+  });
+
+  // Add a reset functionality
+  searchInput.addEventListener('input', function() {
+    if (this.value === '') {
+      rows.forEach(row => {
+        row.style.display = '';
+        row.cells[0].innerHTML = row.cells[0].textContent;
+        row.cells[1].innerHTML = row.cells[1].textContent;
+      });
+    }
+  });
+});
+</script>
+</div>
+</div></div>
