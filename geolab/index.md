@@ -8,7 +8,7 @@ nav_nesting: true
 nav_weight: 970
 ---
 
-[<img>](https://math.virginia.edu/geolab/images/Group3.jpeg)
+[[https://math.virginia.edu/geolab/images/Group3.jpeg]]
 
 <h2 class="mb-3">Geometry Lab</h2>
 
