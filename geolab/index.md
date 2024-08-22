@@ -8,6 +8,8 @@ nav_nesting: true
 nav_weight: 970
 ---
 
+[<img>](https://math.virginia.edu/geolab/images/Group3.jpeg)
+
 <h2 class="mb-3">Geometry Lab</h2>
 
 The Geometry Lab is a mentoring and research opportunity for students interested in experiencing Mathematics in a more hands-on way. Undergraduate students are paired with graduate students or postdocs for a semester-long project. See the <a href="{{site.url}}/geolab/projects/">projects page</a> for examples of projects which have run in the past. During the semesters there are various opportunities for the different groups to interact and for presenting the ideas behind the project to a wider community, like high school students from the Star Hill Pathway program, other undergraduate students from the <a href="{{site.url}}/awm/">AWM Student Chapter</a> or <a href="{{site.url}}/undergraduate/mathclub_redirect/">Math Club</a>, and also the Charlottesville community at the local Farmers Market. The mentors suggest general projects or media to use, but the details on the work will be decided together with the students.
