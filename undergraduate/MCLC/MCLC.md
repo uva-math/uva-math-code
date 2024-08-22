@@ -70,4 +70,4 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <br>
 ---
 
-Contact: {% include person_info_OH.html UVA_id="ed8bg"%}
+<!-- Contact: {% include person_info_OH.html UVA_id="ed8bg"%} -->
