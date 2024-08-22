@@ -12,7 +12,7 @@ redirect_from:
 <div class="col-md-6">
 <!-- Search bar HTML -->
 <div id="search-container">
-  <input type="text" id="search-input" placeholder="Search by name or UVA ID...">
+  <input type="text" id="search-input" placeholder="Filter by name or UVA ID...">
   <button id="search-button">Search</button>
 </div>
 
