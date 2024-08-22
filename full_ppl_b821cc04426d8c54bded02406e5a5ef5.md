@@ -13,7 +13,7 @@ redirect_from:
 <!-- Search bar HTML -->
 <div id="search-container">
   <input type="text" id="search-input" placeholder="Filter by name or UVA ID...">
-  <button id="search-button">Search</button>
+  <button id="search-button">Filter</button>
 </div>
 
 <!-- CSS Styles -->
