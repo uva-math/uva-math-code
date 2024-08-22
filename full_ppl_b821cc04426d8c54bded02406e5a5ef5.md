@@ -51,13 +51,17 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const table = document.querySelector('table');
   const rows = table.querySelectorAll('tr');
 
+  function removeAccents(str) {
+    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+
   function performSearch() {
-    const searchTerm = searchInput.value.toLowerCase();
+    const searchTerm = removeAccents(searchInput.value.toLowerCase());
     
     rows.forEach((row, index) => {
       if (index === 0) return; // Skip header row
       
-      const name = row.cells[0].textContent.toLowerCase();
+      const name = removeAccents(row.cells[0].textContent.toLowerCase());
       const uvaId = row.cells[1].textContent.toLowerCase();
       
       if (name.includes(searchTerm) || uvaId.includes(searchTerm)) {
@@ -73,10 +77,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     [0, 1].forEach(cellIndex => {
       const cell = row.cells[cellIndex];
       const originalText = cell.textContent;
-      const highlightedText = originalText.replace(
-        new RegExp(searchTerm, 'gi'),
-        match => `<span class="highlight">${match}</span>`
-      );
+      const normalizedText = removeAccents(originalText);
+      let highlightedText = '';
+      let lastIndex = 0;
+
+      const regex = new RegExp(searchTerm, 'gi');
+      let match;
+      while ((match = regex.exec(normalizedText)) !== null) {
+        highlightedText += originalText.slice(lastIndex, match.index);
+        highlightedText += `<span class="highlight">${originalText.slice(match.index, match.index + match[0].length)}</span>`;
+        lastIndex = match.index + match[0].length;
+      }
+      highlightedText += originalText.slice(lastIndex);
+
       cell.innerHTML = highlightedText;
     });
   }
