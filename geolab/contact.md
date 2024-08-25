@@ -4,7 +4,7 @@ layout: geolab_page
 permalink: /geolab/contact/
 ---
 
-<h2 class="mb-3">Contact Us</h2>
+<h2 class="mb-3">Current mentors and projects</h2>
 
 ### Mentors for Fall 2024:
 
@@ -20,5 +20,5 @@ permalink: /geolab/contact/
 - [Sara Maloni](https://sites.google.com/view/sara-maloni)
 
 ### Projects Fall 2024:
-1. **Geometry over finite fields**: Many familiar objects from geometry can be described using polynomial equations. For instance, the unit circle is the set of points in the xy-plane such that x^2+y^2-1=0, while the equation x^2-y^2-1=0 describes a hyperbola. In this project, we will study polynomials in exotic contexts for arithmetic called ``finite fields.” We will try to understand the geometry of solutions to polynomial equations over finite fields, both by hand and with computer algebra software. Prerequisites: MATH 1210/1310
+1. **Geometry over finite fields**: Many familiar objects from geometry can be described using polynomial equations. For instance, the unit circle is the set of points in the xy-plane such that x^2+y^2-1=0, while the equation x^2-y^2-1=0 describes a hyperbola. In this project, we will study polynomials in exotic contexts for arithmetic called "finite fields". One motivation to investigate this kind of geometry comes from "coding theory", which is the mathematics of how to make digital messages resistant to random noise. We will try to understand the geometry of solutions to polynomial equations over finite fields and how they can be used in digital communications, both by hand and with computer algebra software. Prerequisites: MATH 1210/1310
 2. **Zome and polyhedra**: The Zome toolkit makes it easy to build toy models of polyhedra, 3 dimensional solid shapes like cubes and pyramids built out of polygons on the outside. Using the Zome pieces, we can show why there are only 5 polyhedra whose faces are all the same shape, and also why in the fourth dimension there are only 6 shapes with the same kind of property. We will explore the geometry of shapes we can build using Zome, such as angles, counting faces of solid shapes, symmetries, knots, and/or many other possibilities. No prerequisites needed, though in previous semesters some comfort with trigonometry has been helpful.
