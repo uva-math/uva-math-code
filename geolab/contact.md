@@ -1,7 +1,7 @@
 ---
 title: Mentors and Faculty Advisors
 layout: geolab_page
-permalink: /geolab/contact/
+permalink: /geolab/current_projects/
 ---
 
 <h2 class="mb-3">Current mentors and projects</h2>
