@@ -17,6 +17,8 @@ The Geometry Lab is a mentoring and research opportunity for students interested
 
 This program allows students to learn and understand subjects not usually covered in the classes currently offered by the department. In addition, the students learn how to use hands-on activities to learn how to ask questions and start answering those questions which is exactly what research in mathematics is about, so for students interested in pursuing undergraduate research this is a great first step, together with the <a href="{{site.url}}/drp/">Directed Reading Program</a>. This program is also a great way to see if a math major is right for you.
 
+**Current projects**: Click <a href="{{site.url}}/geolab/current_projects/">here</a>
+
 <h2 class="mb-3">Requirements</h2>
 
 The students are required to meet with their group and their mentor(s) once a week for an hour and a half to discuss their progress and plan for future work. Additionally, two hours of independent work are required each week. We will also have monthly common meetings (three total) between the different groups. You can see the <a href="{{site.url}}/geolab/schedule/">schedule</a> for a more detailed discussion of the type of meetings, where students will have the opportunity to discuss their project with other students and wider communities. 
