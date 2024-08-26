@@ -29,7 +29,7 @@ Applications to participate in the Geometry Lab open at the start of each semest
 
 <h2 class="mb-3">Got Questions?</h2>
 
-See the <a href="{{site.url}}/geolab/faq/">FAQ page</a> for more details about the lab. If your question is not answered there, please feel free to <a href="{{site.url}}/geolab/contact/">contact us</a>.
+See the <a href="{{site.url}}/geolab/faq/">FAQ page</a> for more details about the lab. If your question is not answered there, please feel free to contact [Sara Maloni](https://math.virginia.edu/people/sm4cw/).
 
 <h2 class="mb-3">Other geometry labs</h2>
 
