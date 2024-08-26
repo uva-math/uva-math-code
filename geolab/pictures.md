@@ -12,4 +12,3 @@ permalink: /geolab/pictures/
 <img src="{{site.url}}/geolab/images/Market3.JPG" class="centerImage" width="50%" alt="GL - Market 3"> <img src="{{site.url}}/geolab/images/Fair.jpeg" class="centerImage" width="50%" alt="GL - Fair">
 
 <img src="{{site.url}}/geolab/images/Group4.JPG" class="centerImage" width="50%" alt="GL - Group 4"> 
-<img src="{{site.url}}/geolab/images/Market2.jpeg" class="centerImage" width="50%" alt="GL - Market 2">
