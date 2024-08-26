@@ -8,7 +8,7 @@ nav_nesting: true
 nav_weight: 970
 ---
 
-<img src = "https://math.virginia.edu/geolab/images/Group3.jpeg" style="display: block; margin: auto;" />
+<img src="{{site.url}}/geolab/images/Group3.jpeg" class="centerImage" style="cermax-width:100%;max-height:300px;height:auto;width:auto" class="mb-3" alt="AWM Logo">
 
 <br>
 
