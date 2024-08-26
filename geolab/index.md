@@ -32,3 +32,5 @@ See the <a href="{{site.url}}/geolab/faq/">FAQ page</a> for more details about t
 <h2 class="mb-3">Other geometry labs</h2>
 
 *   [https://geometrylabs.net/](https://geometrylabs.net/)
+
+<img src="{{site.url}}/geolab/images/Group2.jpeg" class="centerImage" style="cermax-width:100%;max-height:300px;height:auto;width:auto" class="mb-3" alt="Group2 Geometry Lab">
