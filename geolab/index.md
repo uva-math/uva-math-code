@@ -33,4 +33,4 @@ See the <a href="{{site.url}}/geolab/faq/">FAQ page</a> for more details about t
 
 *   [https://geometrylabs.net/](https://geometrylabs.net/)
 
-<img src="{{site.url}}/geolab/images/Group2.jpeg" class="centerImage" style="cermax-width:100%;max-height:300px;height:auto;width:auto" class="mb-3" alt="Group2 Geometry Lab">
+<img src="{{site.url}}/geolab/images/Group2.JPG" class="centerImage" style="cermax-width:100%;max-height:300px;height:auto;width:auto" class="mb-3" alt="Group2 Geometry Lab">
