@@ -10,7 +10,6 @@ nav_weight: 970
 
 <img src="{{site.url}}/geolab/images/Group3.jpeg" class="centerImage" style="cermax-width:100%;max-height:300px;height:auto;width:auto" class="mb-3" alt="Group Geometry Lab">
 
-<br>
 
 <h2 class="mb-3">Geometry Lab</h2>
 
