@@ -13,7 +13,7 @@ permalink: /geolab/schedule/
 <li>Deadline for application: Monday, September 2</li>
 <li>Groups start meeting with their mentors: week of September 2-6</li>
 <li>First common meeting: September 26, at 4:30pm (Meeting with all groups)</li>
-<li>Second common meeting (TBC): October 25 at 1-3pm (Meeting with <a href="https://www.virginiaequitycenter.org/starr-hill-pathways">Starr Hill Pathways</a> Program students)</li>
+<li>Second common meeting (TBC): October 25 at 1-3:15pm (Meeting with <a href="https://www.virginiaequitycenter.org/starr-hill-pathways">Starr Hill Pathways</a> Program students)</li>
 <li>Third Common meeting (TBC): November 19 (Meeting with <a href="{{site.url}}/awm/">AWM Student Chapter</a>
 </ul>
 
