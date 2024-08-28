@@ -9,5 +9,4 @@
 {% include person_info_email_only.html UVA_id="ww9c" %}
 
 - ##### Director of Undergraduate Studies:<br>
- (<b>Fall 2023</b>)&bull; {% include DUS.html UVA_id="hcg3m" %} <br>
- (<b>Spring 2024</b>)&bull; {% include DUS.html UVA_id="des5e" %}
+{% include DUS.html UVA_id="des5e" %}
