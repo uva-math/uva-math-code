@@ -14,11 +14,11 @@ permalink: /geolab/schedule/
 <li>Groups start meeting with their mentors: week of September 2-6</li>
 <li>First common meeting: September 26, at 4:30pm (Meeting with all groups)</li>
 <li>Second common meeting: October 18, at 1-3:15pm (Meeting with <a href="https://www.virginiaequitycenter.org/starr-hill-pathways">Starr Hill Pathways</a> Program students)</li>
-<li>Third Common meeting: November 14, at 5-7pm (Meeting with <a href="{{site.url}}/awm/">AWM Student Chapter</a>
+<li>Third Common meeting: November 14, at 5-7pm (Meeting with <a href="{{site.url}}/awm/">AWM Student Chapter</a></li>
 </ul>
 
 
-Examples of past common meetings:
+**Examples of past common meetings:**
 
 <ul>
 <li>Meeting with other Geometry Lab groups and presenting to each other</li>
