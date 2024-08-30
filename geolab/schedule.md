@@ -17,6 +17,7 @@ permalink: /geolab/schedule/
 <li>Third Common meeting: November 14, at 5-7pm (Meeting with <a href="{{site.url}}/awm/">AWM Student Chapter</a>
 </ul>
 
+
 Examples of past common meetings:
 
 <ul>
