@@ -114,9 +114,10 @@
   information: |
     Topology Seminar talks are on recent developments in algebraic topology—including homotopy theory, ordinary and extraordinary homology and cohomology, cobordism theory, and K-theory—and related subjects like differential topology and homological algebra.
   contact:
-    - UVA_id: jeb2md
-    - UVA_id: njk4x
     - UVA_id: mbp6pj
+    - UVA_id: pfy7cf
+    - UVA_id: pej7rg
+    - UVA_id: dfh3fs
 
 - cal_number: '2'
   name: Undergraduate Math Club
