@@ -38,12 +38,12 @@ If you would like to participate in our mentoring program, please send us a mess
 ### Our chapter's leadership
 
 <ul>
-<li>President: Catherine Cossaboom</li>
-<li>Vice President: Mandy Unterhalter</li>
-<li>Treasurer: Vihini Gunasekera</li>
-<li>Secretary: Anna Yankoski (fall), Katie Nichols (spring) </li>
-<li>Social Chair: Zivile Puospekaite (fall), Claire Barklage (spring) </li>
-<li>Volunteer Chair: Mary Edith Plunkett (spring)</li>
+<li>President: Mandy Unterhalter</li>
+<li>Vice President: Mary Edith Plunkett</li>
+<li>Treasurer: Bliss Bodawala</li>
+<li>Secretary: Claire Barklage</li>
+<li>Social Chair: Mikayla Carter</li>
+<li>Volunteer Chair: Audrey Humes (spring)</li>
 <li>Title IX Chair: Louisa Liles</li>
 <li>Faculty Mentors: {% include person_info_email_only.html UVA_id="brh5c" %} and {% include person_info_email_only.html UVA_id="jlm6cj" %}</li>
 </ul>  
