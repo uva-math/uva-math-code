@@ -10,5 +10,4 @@ email: zk4g@virginia.edu
 image: __SITE_URL__/img/people/Kish.jpg
 personal_page:
 
-
 ---
