@@ -208,3 +208,9 @@
   google_cal_id: 'c_54969c7e95e9eb6b86db56bb73f087cc5cf1e09421b2ba9e89febf093510b331@group.calendar.google.com'
   seminar_weight: 191
   
+- cal_number: '17'
+  name: Event
+  shortname: one_off
+  published_in_nav: false
+  google_cal_id: '7d22a1f9c156087098c19f2c7bb17765e6728b46e4d35cebc60613801f1453b7@group.calendar.google.com'
+  seminar_weight: 192
