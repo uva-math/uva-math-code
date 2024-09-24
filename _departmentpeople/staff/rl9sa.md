@@ -1,7 +1,7 @@
 ---
 UVA_id: rl9sa
 lastname: Lockley
-name: Lockley
+name: Raenell
 general_position: staff
 position: Events Coordinator
 office: 216 Kerchof Hall
