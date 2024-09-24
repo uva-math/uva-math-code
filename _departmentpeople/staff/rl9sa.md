@@ -1,6 +1,6 @@
 ---
 UVA_id: rl9sa
-lastname: Raenell
+lastname: Lockley
 name: Lockley
 general_position: staff
 position: Events Coordinator
