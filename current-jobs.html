@@ -7,7 +7,7 @@ title: Current job opportunities
 
 <div class="row my-col-12-zebra">
   {% for post in site.posts limit: 30 %}
-  {% if post.categories contains "jobs" and post.job-year >= 2023 %}
+  {% if post.categories contains "jobs" and post.job-year >= 2024 %}
   <div class="col-12 my-bordered-news-snippets">
   <h2 class="mb-2 mt-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{ post.title }}</a></h2>
   <h6>{{ post.date |  date: "%B %-d, %Y" }}</h6>
