@@ -3,7 +3,7 @@ UVA_id: dfh3fs
 lastname: Wang
 name: Oliver
 general_position: postdoc
-position: Postdoc
+position: RTG Research Associate and Lecturer
 office: 301 Kerchof Hall
 phone:
 email: dfh3fs@virginia.edu

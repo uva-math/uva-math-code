@@ -3,7 +3,7 @@ UVA_id: pej7rg
 lastname: Spitz
 name: Ben
 general_position: postdoc
-position: Postdoc
+position: Whyburn Research Associate and Lecturer
 office: 301 Kerchof Hall
 phone:
 email: pej7rg@virginia.edu
