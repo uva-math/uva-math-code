@@ -8,6 +8,7 @@ office: 110 Kerchof Hall
 phone: 434-924-4947
 email: mit8vu@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/Tuominen.jpg 
+personal_page: https://www.miikatuominen.com/
 
 
 ---
