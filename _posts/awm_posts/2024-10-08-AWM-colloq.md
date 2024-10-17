@@ -3,7 +3,7 @@ layout: post
 title: "AWM Colloquium: Linda Chen (Swarthmore College)"
 event-date: 2024-10-17 17:00:00
 comments: false
-categories: awm news major-news
+categories: awm news
 published: true
 image: __SITE_URL__/img/awm/AWM_colloq_2024-10-17.png
 image-alt: Colloquium poster
