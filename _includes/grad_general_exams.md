@@ -5,8 +5,7 @@ These exams are typically offered twice a year, January and August. Students are
 Syllabi for the Algebra, Analysis, and Topology General Examinations:
 <ul>
   <li>
-    <a href="{{ site.url }}/graduate/docs/Syllabus for Algebra General Exam 1.pdf">Syllabus for Algebra General Exam</a>.<br>
-    Preview <a href="{{ site.url }}/graduate/docs/Syllabus for Algebra General Exam 1 - update 2023.pdf">future directions for the algebra exam</a>, which will take effect after January 2024.
+    <a href="{{ site.url }}/graduate/docs/Syllabus for Algebra General Exam 1 - update 2023.pdf">Syllabus for Algebra General Exam</a>.<br>
   </li>
   <li>
     <a href="{{ site.url }}/graduate/docs/Syllabus for Analysis General Exam 2.pdf">Syllabus for Analysis General Exam</a>
