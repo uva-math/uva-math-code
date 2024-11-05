@@ -2,6 +2,7 @@
 UVA_id: eg4va
 lastname: Gazaki
 name: Evangelia
+pronouns: she/her/hers
 general_position: faculty
 position: Assistant Professor
 office: 221 Kerchof Hall

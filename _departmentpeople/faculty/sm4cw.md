@@ -2,6 +2,7 @@
 UVA_id: sm4cw
 lastname: Maloni
 name: Sara
+pronouns: she/her
 general_position: faculty
 position: Associate Professor
 office: 309 Kerchof Hall
