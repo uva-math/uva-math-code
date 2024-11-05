@@ -2,6 +2,7 @@
 UVA_id: lap5r
 lastname: Petrov
 name: Leonid
+pronouns: he/him
 general_position: faculty
 position: Professor
 office: 209 Kerchof Hall

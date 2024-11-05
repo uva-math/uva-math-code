@@ -18,7 +18,10 @@
   <div class="row">
     <div class="col-md-8">
       <h1>{{page.name}} {{page.lastname}}</h1>
-      <h2 style="font-size:1.5em" class="mb-3">{{ page.position }}</h2>
+      <h2 style="font-size:1.5em" class="mb-1">{{ page.position }}</h2>
+      {%if page.pronouns != null %}
+      <div class="mb-3">({{page.pronouns}})</div>
+      {%endif%}
 
       <div class="row">
         {% if page.office != null %}
