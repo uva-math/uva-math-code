@@ -2,6 +2,7 @@
 UVA_id: pej7rg
 lastname: Spitz
 name: Ben
+pronouns: he/him
 general_position: postdoc
 position: Whyburn Research Associate and Lecturer
 office: 301 Kerchof Hall
