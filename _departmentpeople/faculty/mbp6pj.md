@@ -2,6 +2,7 @@
 UVA_id: mbp6pj
 lastname: Quigley
 name: J.D.
+pronouns: he/him
 general_position: faculty
 position: Assistant Professor
 office: 331 Kerchof Hall 
