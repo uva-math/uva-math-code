@@ -9,6 +9,7 @@ phone: 434-924-0899
 email: kxk2dr@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Chasteen-Boyd_D.jpg 
 personal_page:
+pronouns: they/them
 
 
 ---
