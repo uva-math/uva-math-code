@@ -43,7 +43,7 @@ If you would like to participate in our mentoring program, please send us a mess
 <li>Treasurer: Bliss Bodawala</li>
 <li>Secretary: Claire Barklage</li>
 <li>Social Chair: Mikayla Carter</li>
-<li>Volunteer Chair: Audrey Humes (spring)</li>
+<li>Volunteer Chair: Audrey Humes</li>
 <li>Title IX Chair: Louisa Liles</li>
 <li>Colloquium Chair: Catherine Cossaboom</li>
 <li>Faculty Mentors: {% include person_info_email_only.html UVA_id="brh5c" %} and {% include person_info_email_only.html UVA_id="jlm6cj" %}</li>
