@@ -47,8 +47,6 @@ Regarding the undergraduate record, the rigor of the applicant&#39;s mathematics
 
 Students occasionally arrive with an area of interest in mind, planning to work with a specific research group: this is quite common for international students. Foreign applicants are particularly encouraged to contact our faculty about their specific mathematical interests.
 
-Students interested in our program in the history of mathematics should contact Professor Karen Parshall for admission prerequisites.
-
 Finally, we are looking for enthusiasm for mathematics in all its depth and beauty!
 
 ---
