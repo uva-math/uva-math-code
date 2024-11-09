@@ -10,7 +10,7 @@
 # DO NOT FORGET TO UPDATE THE CURRENT SEMESTER for the script to work properly
 
 current_semester = "Fall 2020"
-lou_url = "http://louslist.org/page.php?Semester=1208&Type=Group&Group=Mathematics"
+lou_url = "https://louslist.org/CC/Mathematics.html"
 
 from bs4 import BeautifulSoup
 import urllib.request, urllib.error, urllib.parse

@@ -6,7 +6,7 @@ permalink: /courses/
 
 <h1 class="mb-3">Course descriptions</h1>
 
-Please refer to <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SIS</a> or <a href="https://louslist.org/page.php?Semester=1208&Type=Group&Group=Mathematics">Lou's list</a> for details about courses offered.
+Please refer to <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SIS</a> or <a href="https://louslist.org/CC/Mathematics.html">Lou's list</a> for details about courses offered.
 
 <!-- 
 <br>
