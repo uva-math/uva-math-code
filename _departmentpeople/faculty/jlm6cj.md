@@ -1,6 +1,6 @@
 ---
 UVA_id: jlm6cj
-lastname: Morse
+lastname: Morse (she/her)
 name: Jennifer
 general_position: faculty
 position: Professor
