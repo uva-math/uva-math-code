@@ -2,6 +2,7 @@
 UVA_id: vz6an
 lastname: Zapata Castro
 name: Valentina
+pronouns: she/her
 general_position: gradstudent
 position: Graduate Student
 office: 123 Kerchof Hall
