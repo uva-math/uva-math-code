@@ -1,7 +1,8 @@
 ---
 UVA_id: jlm6cj
-lastname: Morse (she/her)
+lastname: Morse 
 name: Jennifer
+pronouns: she/her
 general_position: faculty
 position: Professor
 office: 206 Kerchof Hall
