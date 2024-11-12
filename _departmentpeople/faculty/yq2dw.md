@@ -11,10 +11,7 @@ image: __SITE_URL__/img/people/2021-fall/Qi_Y.jpg
 personal_page: https://you-qi2121.github.io/mypage/
 
 
-grad_general_areas:
-  - algebra
-grad_special_areas:
-  - reptheory
+
 
 areas:
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory

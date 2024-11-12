@@ -10,11 +10,7 @@ email: asr3x@virginia.edu
 image: __SITE_URL__/img/people/Rapinchuk.jpg
 personal_page: https://uva.theopenscholar.com/andrei-rapinchuk/
 
-grad_general_areas:
-  - algebra
-grad_special_areas:
-  - groups
-  - numth
+
 areas:
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 

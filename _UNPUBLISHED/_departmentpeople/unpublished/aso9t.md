@@ -13,10 +13,7 @@ published: false
 areas:
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
   - Geometry, Topology
-grad_general_areas:
-  - algebra
-grad_special_areas:
-  - algeom
+
 ---
 
 

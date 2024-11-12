@@ -13,8 +13,5 @@ personal_page: https://uva.theopenscholar.com/tom-mark
 areas:
   - Geometry, Topology
 
-grad_general_areas:
-  - geometry
-grad_special_areas:
-  - geom_top
+
 ---

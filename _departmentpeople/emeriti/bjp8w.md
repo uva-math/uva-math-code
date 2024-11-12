@@ -12,10 +12,6 @@ personal_page:
 
 published: false
 
-# grad_general_areas:
-#   - algebra
-# grad_special_areas:
-#   - reptheory
 
 areas:
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory

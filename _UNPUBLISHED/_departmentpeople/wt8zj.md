@@ -14,11 +14,6 @@ published: false
 areas:
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
-grad_general_areas:
-  - algebra
-grad_special_areas:
-  - reptheory
-  - numth
 
 
 

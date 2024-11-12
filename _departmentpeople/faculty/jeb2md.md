@@ -13,8 +13,4 @@ personal_page: https://sites.google.com/view/julie-bergner/
 areas:
   - Geometry, Topology
 
-grad_general_areas:
-  - geometry
-grad_special_areas:
-  - alg_top
 ---

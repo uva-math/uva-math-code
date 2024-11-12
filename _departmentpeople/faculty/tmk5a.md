@@ -14,8 +14,5 @@ areas:
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
   - Geometry, Topology
 
-grad_general_areas:
-  - geometry
-grad_special_areas:
-  - geom_top
+
 ---

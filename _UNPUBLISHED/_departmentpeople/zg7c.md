@@ -10,11 +10,7 @@ phone: 434-243-7779
 email: zg7c@virginia.edu
 image: __SITE_URL__/img/people/Grujic.jpg
 personal_page: https://zgrujic.faculty.virginia.edu
-grad_general_areas:
-  - analysis
-grad_special_areas:
-  - diffeq
-  - harmonic
+
 areas:
   - Analysis, PDE, Operator Algebras
   - Mathematical Physics, Applied Mathematics

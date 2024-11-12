@@ -11,10 +11,7 @@ email: ph7ph@virginia.edu
 image: __SITE_URL__/img/people/2020-fall/Peter.jpg
 personal_page: https://sites.google.com/view/peterhumphries/
 
-grad_general_areas:
-  - algebra
-grad_special_areas:
-  - numth
+
 areas:
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
   - Analysis, PDE, Operator Algebras

@@ -14,8 +14,5 @@ personal_page: https://mabdesselam.github.io/
 areas:
   - Mathematical Physics, Applied Mathematics
   - Probability, Combinatorics
-grad_general_areas:
-  - analysis
-grad_special_areas:
-  - math_physics
+
 ---

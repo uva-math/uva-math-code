@@ -10,10 +10,8 @@ email: khp3k@virginia.edu
 image: __SITE_URL__/img/people/ParshallK.jpg
 personal_page: https://uva.theopenscholar.com/karen-parshall
 
-grad_general_areas:
-  - history
 
 areas:
-  - History of Mathematics
+
 
 ---

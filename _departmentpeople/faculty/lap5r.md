@@ -15,14 +15,6 @@ areas: #Must coincide with the ones in _data/research_areas.yml
   - Mathematical Physics, Applied Mathematics
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
-grad_general_areas:
-  - algebra
-  - analysis
-grad_special_areas:
-  - reptheory
-  - math_physics
-  - probability
-  - algcomb
 
 ---
 

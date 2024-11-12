@@ -11,10 +11,7 @@ email: brh5c@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/Hayes.jpg 
 personal_page: https://sites.google.com/site/benhayeshomepage/
 
-grad_general_areas:
-  - analysis
-grad_special_areas:
-  - operators
+
 areas:
   - Analysis, PDE, Operator Algebras
 

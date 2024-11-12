@@ -11,12 +11,6 @@ email: yqd3p@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Do_Y.jpg
 personal_page: https://profile.virginia.edu/yqd3p
 
-grad_general_areas:
-  - analysis
-grad_special_areas:
-  - math_physics
-  - probability
-  - harmonic
 areas:
   - Analysis, PDE, Operator Algebras
   - Probability, Combinatorics

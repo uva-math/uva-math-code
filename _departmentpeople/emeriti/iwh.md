@@ -9,10 +9,6 @@ office: 202 Kerchof Hall
 email: iwh@virginia.edu
 image: __SITE_URL__/img/people/Herbst.jpg
 # personal_page: http://pi.math.virginia.edu/Faculty/Herbst/
-grad_general_areas:
-  - analysis
-grad_special_areas:
-  - math_physics
 areas:
   - Mathematical Physics, Applied Mathematics
 

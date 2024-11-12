@@ -14,8 +14,5 @@ personal_page: https://sites.google.com/view/sara-maloni
 areas:
   - Geometry, Topology
 
-grad_general_areas:
-  - geometry
-grad_special_areas:
-  - geom_top
+
 ---

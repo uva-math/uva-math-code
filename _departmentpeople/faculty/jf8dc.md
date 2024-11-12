@@ -11,10 +11,7 @@ email: jf8dc@virginia.edu
 image: __SITE_URL__/img/people/Foldes.jpg
 personal_page: https://uva.theopenscholar.com/juraj-foldes/teaching
 
-grad_general_areas:
-  - analysis
-grad_special_areas:
-  - diffeq
+
 areas:
   - Analysis, PDE, Operator Algebras
   - Probability, Combinatorics

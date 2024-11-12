@@ -14,10 +14,4 @@ areas:
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
   - Probability, Combinatorics
 
-
-grad_general_areas:
-  - algebra
-grad_special_areas:
-  - reptheory
-  - numth
 ---
