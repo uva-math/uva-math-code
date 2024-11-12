@@ -9,7 +9,18 @@
       {%if ppl.pronouns != null %}
       ({{ppl.pronouns}})
       {%endif%}
-      <div class="mb-1"><i>{{ ppl.position }}</i></div>
+      <div class="mb-1" style="font-weight: 500"><i>{{ ppl.position }}</i></div>
+      {%if ppl.specialty != null %} <div class="mb-1" style="font-size:0.9em;">{{ppl.specialty}}</div>{%endif%}
+      {%if ppl.research_tags != null %}
+      <div class="mb-1">{% for tag in ppl.research_tags %}
+        {% for def_tag in site.data.research_tags %}
+        {% if def_tag.tag == tag %}
+        <a class="btn btn-secondary" style="font-size:0.9em" href="{{site.url}}/research/{{def_tag.shortname}}">{{ def_tag.name }}</a>&nbsp;
+        {% endif %}
+        {% endfor %}
+      {% endfor %}
+      </div>
+      {%endif%}
         <!--{% for area in ppl.areas %}
         {% for def_area in site.data.research_areas %}
           {% if def_area.name == area%}

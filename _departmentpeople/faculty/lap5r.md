@@ -15,6 +15,12 @@ areas: #Must coincide with the ones in _data/research_areas.yml
   - Mathematical Physics, Applied Mathematics
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
+research_tags:
+  - PR_MP
+  - CO_NT
+specialty: Integrable Probability and Algebraic Combinatorics
+
+
 
 ---
 

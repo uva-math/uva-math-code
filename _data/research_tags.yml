@@ -1,0 +1,22 @@
+
+
+
+-
+  name: Algebra  &cup; Representation Theory
+  tag: AL_RT
+
+- 
+  name: Geometry  &cup; Topology
+  tag: GE_TO
+
+-
+  name: Analysis  &cup; PDEs
+  tag: AN_PD
+
+- 
+  name: Probability  &cup; Mathematical Physics
+  tag: PR_MP
+
+-
+  name: Combinatorics  &cup; Number Theory
+  tag: CO_NT
