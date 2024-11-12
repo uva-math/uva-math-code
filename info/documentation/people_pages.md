@@ -7,6 +7,8 @@ doc_page: true
 nav_weight: 102
 ---
 
+# (Note! This documentation is slightly outdated)
+
 # People pages and research areas
 
 ---
