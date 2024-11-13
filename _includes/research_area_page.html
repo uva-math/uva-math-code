@@ -19,7 +19,7 @@
 {% if current_tag %}
   <div class="row">
     <div class="col-md-9">
-      <h2 class="mb-4" style="font-style:italic">{{ current_tag.name }}</h2>
+      <h2 class="mb-4" style="font-style:italic">{{ current_tag.name }} Research</h2>
 
       {% comment %}
         Sort department people by last name.
@@ -28,7 +28,6 @@
 
       <!-- Section for Tenure-Track (TT) Faculty -->
       <div class="tt-faculty-section">
-        <h3>Research Faculty</h3>
         <div class="row">
           {% for person in sorted_people %}
             {% comment %}
@@ -76,7 +75,7 @@
                     <a href="{{ site.url }}/people/{{ person.UVA_id }}/" class="text-decoration-none text-dark">
                       <span class="nonupper-h5">{{ person.name }} {{ person.lastname }}</span>
                     </a>
-                    <p class="card-text"><i>{{ person.position }}</i></p>
+                    <!-- <p class="card-text"><i>{{ person.position }}</i></p> -->
                   </div>
                 </div>
               </div>
