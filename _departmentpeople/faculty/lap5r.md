@@ -16,8 +16,9 @@ areas: #Must coincide with the ones in _data/research_areas.yml
   - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
 
 research_tags:
-  - PR_MP
-  - CO_NT
+- PR
+- CO
+- MP
 specialty: Integrable Probability and Algebraic Combinatorics
 
 
