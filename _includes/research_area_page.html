@@ -26,7 +26,7 @@
       {% endcomment %}
       {% assign sorted_people = site.departmentpeople | sort: 'lastname' %}
 
-      <div class="my-row-zebra mr-3">
+      <div class="row">
         {% for person in sorted_people %}
           {% comment %}
             Determine if the person should be included based on the current tag.
@@ -42,121 +42,11 @@
               {% endif %}
             {% endfor %}
             {% if matches %}
-              <!-- Display person details -->
-              <div class="row" style="padding:10px 0px">
-                <div class="col-md-4">
-                  <a href="{{ site.url }}/people/{{ person.UVA_id }}/" class="nonupper-h5">
-                    {{ person.name }} {{ person.lastname }}
-                  </a>
-                  <div class="mb-1"><i>{{ person.position }}</i></div>
-                </div>
-                <div class="col-md-6">
-                  {% if person.office %}
-                    <span class="fa fa-building" aria-hidden="true" style="font-size:0.8em"></span>
-                    {{ person.office }}<br>
-                  {% endif %}
-
-                  {% if person.phone %}
-                    <span class="fa fa-phone" aria-hidden="true" style="font-size:0.8em"></span>
-                    <a href="tel:{{ person.phone }}">{{ person.phone }}</a><br>
-                  {% endif %}
-
-                  {% if person.email %}
-                    <span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span>
-                    <a href="mailto:{{ person.email }}">{{ person.email }}</a><br>
-                  {% endif %}
-
-                  {% if person.personal_page %}
-                    <span class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></span>
-                    <a href="{{ person.personal_page }}">Personal page</a>
-                  {% endif %}
-                </div>
-                <div class="col-md-2">
-                  {% if person.image %}
-                    <a href="{{ site.url }}/people/{{ person.UVA_id }}/">
-                      <img src="{{ person.image | replace: '__SITE_URL__', site.url }}" 
-                           alt="{{ person.name }} {{ person.lastname }}" 
-                           title="{{ person.name }} {{ person.lastname }}" 
-                           style="width:100%;max-width:70px" 
-                           class="hidden-sm-down float-right">
-                    </a>
-                    <a href="{{ site.url }}/people/{{ person.UVA_id }}/">
-                      <img src="{{ person.image | replace: '__SITE_URL__', site.url }}" 
-                           alt="{{ person.name }} {{ person.lastname }}" 
-                           title="{{ person.name }} {{ person.lastname }}" 
-                           style="width:100%;max-width:100px" 
-                           class="hidden-md-up mt-3">
-                    </a>
-                  {% else %}
-                    <a href="{{ site.url }}/people/{{ person.UVA_id }}/">
-                      <img src="{{ site.url }}/img/people/Avatar_image.png" 
-                           alt="{{ person.name }} {{ person.lastname }}" 
-                           title="{{ person.name }} {{ person.lastname }}" 
-                           style="width:100%;max-width:70px" 
-                           class="hidden-sm-down float-right">
-                    </a>
-                  {% endif %}
-                </div>
-              </div>
+              {% include person_card.html person=person %}
             {% endif %}
           {% else %}
             {% if person.research_tags contains current_tag.tag %}
-              <!-- Display person details -->
-              <div class="row" style="padding:10px 0px">
-                <div class="col-md-4">
-                  <a href="{{ site.url }}/people/{{ person.UVA_id }}/" class="nonupper-h5">
-                    {{ person.name }} {{ person.lastname }}
-                  </a>
-                  <div class="mb-1"><i>{{ person.position }}</i></div>
-                </div>
-                <div class="col-md-6">
-                  {% if person.office %}
-                    <span class="fa fa-building" aria-hidden="true" style="font-size:0.8em"></span>
-                    {{ person.office }}<br>
-                  {% endif %}
-
-                  {% if person.phone %}
-                    <span class="fa fa-phone" aria-hidden="true" style="font-size:0.8em"></span>
-                    <a href="tel:{{ person.phone }}">{{ person.phone }}</a><br>
-                  {% endif %}
-
-                  {% if person.email %}
-                    <span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span>
-                    <a href="mailto:{{ person.email }}">{{ person.email }}</a><br>
-                  {% endif %}
-
-                  {% if person.personal_page %}
-                    <span class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></span>
-                    <a href="{{ person.personal_page }}">Personal page</a>
-                  {% endif %}
-                </div>
-                <div class="col-md-2">
-                  {% if person.image %}
-                    <a href="{{ site.url }}/people/{{ person.UVA_id }}/">
-                      <img src="{{ person.image | replace: '__SITE_URL__', site.url }}" 
-                           alt="{{ person.name }} {{ person.lastname }}" 
-                           title="{{ person.name }} {{ person.lastname }}" 
-                           style="width:100%;max-width:70px" 
-                           class="hidden-sm-down float-right">
-                    </a>
-                    <a href="{{ site.url }}/people/{{ person.UVA_id }}/">
-                      <img src="{{ person.image | replace: '__SITE_URL__', site.url }}" 
-                           alt="{{ person.name }} {{ person.lastname }}" 
-                           title="{{ person.name }} {{ person.lastname }}" 
-                           style="width:100%;max-width:100px" 
-                           class="hidden-md-up mt-3">
-                    </a>
-                  {% else %}
-                    <a href="{{ site.url }}/people/{{ person.UVA_id }}/">
-                      <img src="{{ site.url }}/img/people/Avatar_image.png" 
-                           alt="{{ person.name }} {{ person.lastname }}" 
-                           title="{{ person.name }} {{ person.lastname }}" 
-                           style="width:100%;max-width:70px" 
-                           class="hidden-sm-down float-right">
-                    </a>
-                  {% endif %}
-                </div>
-              </div>
+              {% include person_card.html person=person %}
             {% endif %}
           {% endif %}
         {% endfor %}
