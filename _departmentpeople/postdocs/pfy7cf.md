@@ -10,4 +10,9 @@ email: pfy7cf@virginia.edu
 image: __SITE_URL__/img/people/2023-fall/brandon-shapiro.jpg
 personal_page:
 
+research_tags:
+- TO
+
+specialty: Homotopy Theory, Category Theory, Algebraic K-Theory
+
 ---
