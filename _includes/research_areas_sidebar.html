@@ -1,11 +1,10 @@
-<h3 class="mb-4">Faculty by research area</h3>
 
 <div class="list-group-sm mt-4">
   <a class="list-group-item list-group-item-action smaller-h5 {% if page.url contains "facultyresearch" %}active{% endif %}" href="{{site.url}}/facultyresearch/">All research areas</a>
 </div>
 
-
-<div class="list-group-sm mt-4">
+<h3 class="mt-4 mb-2">People by area</h3>
+<div class="list-group-sm mt-2">
     {% assign sorted_tags = site.data.research_tags | sort: 'name' %}
     {% for tag in sorted_tags %}
     {%if tag.overtag == true %}
