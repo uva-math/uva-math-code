@@ -11,4 +11,10 @@ email: blackwell@virginia.edu
 image: __SITE_URL__/img/people/2023-fall/Blackwell.jpg
 personal_page: https://seblackwell.com/
 
+research_tags:
+- GE
+- TO
+
+specialty:  Low-dimensional Topology, Symplectic/Contact Geometry
+
 ---
