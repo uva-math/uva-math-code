@@ -16,6 +16,7 @@ research_tags:
 - PR
 
 
+specialty: Harmonic Analysis, Random Polynomials
 
 
 ---

@@ -14,5 +14,6 @@ personal_page: https://sites.google.com/view/sara-maloni
 research_tags:
 - GE
 
+specialty: Low-dimensional Topology, Hyperbolic geometry
 
 ---

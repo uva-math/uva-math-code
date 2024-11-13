@@ -13,4 +13,6 @@ personal_page: https://uva.theopenscholar.com/weiqiang-wang
 research_tags:
 - RT
 
+specialty: Representation Theory, Quantum Groups
+
 ---

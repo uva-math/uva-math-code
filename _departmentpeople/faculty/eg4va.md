@@ -15,6 +15,8 @@ personal_page: "https://sites.google.com/view/valiagazakihomepage/home"
 research_tags:
 - NT
 
+specialty: Arithmetic Geometry
+
 ---
 
 ##### Selected Publications

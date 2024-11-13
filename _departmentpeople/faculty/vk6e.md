@@ -12,6 +12,9 @@ image: __SITE_URL__/img/people/2021-fall/Krushkal_S.jpg
 personal_page: https://uva.theopenscholar.com/slava-krushkal
 
 research_tags:
-  - TO
+- GE
+- TO
+
+specialty: Low-dimensional Geometry and Topology
 
 ---

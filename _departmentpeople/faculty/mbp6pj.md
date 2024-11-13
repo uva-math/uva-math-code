@@ -15,4 +15,6 @@ personal_page: https://quigleyjd.github.io/
 research_tags:
 - TO
 
+specialty: Homotopy Theory 
+
 ---

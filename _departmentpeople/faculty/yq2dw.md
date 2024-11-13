@@ -17,5 +17,7 @@ research_tags:
 - RT
 - TO
 
+specialty: Representation Theory, Categorification
+
 ---
 

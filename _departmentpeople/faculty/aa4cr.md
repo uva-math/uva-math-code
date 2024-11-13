@@ -14,5 +14,7 @@ personal_page: https://mabdesselam.github.io/
 research_tags:
 - MP
 
+specialty: Quantum Field Theory, Renormalization Group
+
 
 ---

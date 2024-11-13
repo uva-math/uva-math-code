@@ -15,5 +15,7 @@ research_tags:
 - AL
 - GE
 
+specialty: Geometric Group Theory
+
 
 ---

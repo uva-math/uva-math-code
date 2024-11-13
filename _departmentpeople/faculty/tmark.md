@@ -11,8 +11,8 @@ image: __SITE_URL__/img/people/Mark.jpg
 personal_page: https://uva.theopenscholar.com/tom-mark
 
 research_tags:
-- GE
+- TO
 
-
+specialty: Low-dimensional Topology
 
 ---

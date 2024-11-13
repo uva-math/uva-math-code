@@ -14,4 +14,6 @@ personal_page: https://dshermanmath.github.io/base/
 research_tags:
 - AN
 
+specialty: Operator Algebras
+
 ---
