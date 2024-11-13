@@ -1,6 +1,6 @@
 ---
 layout: research_area
-permalink: /research/prob_comb/
+permalink: /research/PRMP/
 events: false
 nav_parent: People
 ---

@@ -1,6 +1,6 @@
 ---
 layout: research_area
-permalink: /research/alg_repth/
+permalink: /research/ART/
 events: false
 nav_parent: People
 ---

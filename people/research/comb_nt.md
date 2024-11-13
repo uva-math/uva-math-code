@@ -1,6 +1,6 @@
 ---
 layout: research_area
-permalink: /research/mathphys/
+permalink: /research/CNT/
 events: false
 nav_parent: People
 ---

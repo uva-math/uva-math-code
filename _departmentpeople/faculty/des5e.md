@@ -11,8 +11,7 @@ email: dsherman@virginia.edu
 image: __SITE_URL__/img/people/Sherman.jpg
 personal_page: https://dshermanmath.github.io/base/
 
-areas:
-  - Analysis, PDE, Operator Algebras
-
+research_tags:
+- AN
 
 ---

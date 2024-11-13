@@ -12,7 +12,7 @@ image: __SITE_URL__/img/people/Abramenko.jpg
 # personal_page: http://pi.math.virginia.edu/Faculty/Abramenko/
 
 
-areas:
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+research_tags:
+- AL
 
 ---

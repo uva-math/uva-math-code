@@ -7,6 +7,14 @@
   tag: RT
 
 - 
+  name: Algebra and Representation Theory
+  overtag: true
+  tag: ART
+  includes:
+    - AL
+    - RT
+
+- 
   name: Geometry
   tag: GE
 
@@ -15,16 +23,33 @@
   tag: TO
 
 -
+  name: Geometry and Topology
+  overtag: true
+  tag: GT
+  includes:
+    - GE
+    - TO
+
+-
   name: Analysis
   tag: AN
+
+- 
+  name: PDE
+  tag: PDE
+
+-
+  name: Analysis and PDE
+  overtag: true
+  tag: APDE
+  includes:
+    - AN
+    - PDE
 
 -
   name: Applied Mathematics
   tag: AP
 
-- 
-  name: PDEs
-  tag: PDE
 
 - 
   name: Probability
@@ -34,6 +59,15 @@
   name: Mathematical Physics
   tag: MP
 
+-
+  name: Probability and Mathematical Physics
+  overtag: true
+  tag: PRMP
+  includes:
+    - PR
+    - MP
+
+
 - 
   name: Combinatorics
   tag: CO
@@ -41,3 +75,12 @@
 - 
   name: Number Theory
   tag: NT
+
+-
+  name: Combinatorics and Number Theory
+  overtag: true
+  tag: CNT
+  includes:
+    - CO
+    - NT
+

@@ -12,9 +12,10 @@ image: __SITE_URL__/img/people/Foldes.jpg
 personal_page: https://uva.theopenscholar.com/juraj-foldes/teaching
 
 
-areas:
-  - Analysis, PDE, Operator Algebras
-  - Probability, Combinatorics
+research_tags:
+- PDE
+- PR
+
 
 
 ---

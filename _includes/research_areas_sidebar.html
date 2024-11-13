@@ -6,8 +6,11 @@
 
 
 <div class="list-group-sm mt-4">
-    {% for area in site.data.research_areas %}
-      <a class="list-group-item list-group-item-action smaller-h5 {% if page.url contains area.shortname %}active{% endif %}" href="{{site.url}}/research/{{area.shortname}}">{{area.name}}</a>
+    {% assign sorted_tags = site.data.research_tags | sort: 'name' %}
+    {% for tag in sorted_tags %}
+    {%if tag.overtag == true %}
+      <a class="list-group-item list-group-item-action smaller-h5 {% if page.url contains tag.tag %}active{% endif %}" href="{{site.url}}/research/{{tag.tag}}">{{tag.name}}</a>
+    {%endif%}
     {% endfor %}
 </div>
 

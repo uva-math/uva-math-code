@@ -11,10 +11,10 @@ email: yqd3p@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Do_Y.jpg
 personal_page: https://profile.virginia.edu/yqd3p
 
-areas:
-  - Analysis, PDE, Operator Algebras
-  - Probability, Combinatorics
-  - Mathematical Physics, Applied Mathematics
+research_tags:
+- AN
+- PR
+
 
 
 

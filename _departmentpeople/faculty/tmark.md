@@ -10,8 +10,9 @@ email: tmark@virginia.edu
 image: __SITE_URL__/img/people/Mark.jpg
 personal_page: https://uva.theopenscholar.com/tom-mark
 
-areas:
-  - Geometry, Topology
+research_tags:
+- GE
+
 
 
 ---

@@ -11,7 +11,7 @@ image: __SITE_URL__/img/people/Rapinchuk.jpg
 personal_page: https://uva.theopenscholar.com/andrei-rapinchuk/
 
 
-areas:
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+research_tags:
+- AL
 
 ---

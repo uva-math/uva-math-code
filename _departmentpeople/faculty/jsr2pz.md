@@ -11,6 +11,6 @@ email: jsr2pz@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/Rolf.jpg 
 personal_page: https://uva.theopenscholar.com/jim-rolf/
 
-areas:
+
 
 ---

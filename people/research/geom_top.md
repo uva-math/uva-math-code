@@ -1,6 +1,6 @@
 ---
 layout: research_area
-permalink: /research/geom_top/
+permalink: /research/GT/
 events: false
 nav_parent: People
 ---

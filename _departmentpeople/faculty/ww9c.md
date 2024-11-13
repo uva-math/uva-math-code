@@ -10,7 +10,7 @@ email: ww9c@virginia.edu
 image: __SITE_URL__/img/people/Wang.jpg
 personal_page: https://uva.theopenscholar.com/weiqiang-wang
 
-areas:
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+research_tags:
+- RT
 
 ---

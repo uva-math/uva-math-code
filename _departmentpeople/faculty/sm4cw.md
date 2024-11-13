@@ -11,8 +11,8 @@ email: sm4cw@virginia.edu
 image: __SITE_URL__/img/people/Maloni.jpg
 personal_page: https://sites.google.com/view/sara-maloni
 
-areas:
-  - Geometry, Topology
+research_tags:
+- GE
 
 
 ---

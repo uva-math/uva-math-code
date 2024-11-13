@@ -10,7 +10,7 @@ email: imbrie@virginia.edu
 image: __SITE_URL__/img/people/Imbrie.jpg
 personal_page: https://uva.theopenscholar.com/john-imbrie
 
-areas:
-  - Mathematical Physics, Applied Mathematics
+research_tags:
+- MP
 
 ---

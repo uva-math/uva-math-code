@@ -10,8 +10,7 @@ email: ko5wk@virginia.edu
 image: __SITE_URL__/img/people/Ono-tn.jpg
 personal_page: https://uva.theopenscholar.com/ken-ono
 
-areas:
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
-  - Probability, Combinatorics
+research_tags:
+- NT
 
 ---

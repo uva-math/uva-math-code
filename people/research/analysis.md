@@ -1,6 +1,6 @@
 ---
 layout: research_area
-permalink: /research/analysis/
+permalink: /research/APDE/
 events: false
 nav_parent: People
 ---

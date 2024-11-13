@@ -11,8 +11,8 @@ email: malek@virginia.edu
 image: __SITE_URL__/img/people/Abdesselam.jpg
 personal_page: https://mabdesselam.github.io/
 
-areas:
-  - Mathematical Physics, Applied Mathematics
-  - Probability, Combinatorics
+research_tags:
+- MP
+
 
 ---

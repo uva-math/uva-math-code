@@ -12,7 +12,8 @@ image: __SITE_URL__/img/people/2022-fall/Hayes.jpg
 personal_page: https://sites.google.com/site/benhayeshomepage/
 
 
-areas:
-  - Analysis, PDE, Operator Algebras
+research_tags:
+- AN
+
 
 ---

@@ -11,8 +11,7 @@ email: jlm6cj@virginia.edu
 image: __SITE_URL__/img/people/2023-fall/Morse.jpg
 personal_page: https://morsej123.github.io/
 
-areas:
-  - Probability, Combinatorics
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+research_tags:
+- CO
 
 ---

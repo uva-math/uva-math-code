@@ -13,6 +13,6 @@ image: __SITE_URL__/img/people/Gromoll.jpg
 
 
 
-areas:
-  - Probability, Combinatorics
+research_tags:
+- PR
 ---

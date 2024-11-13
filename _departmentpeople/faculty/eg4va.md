@@ -10,9 +10,10 @@ phone: 434-924-1790
 email: eg4va@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Gazaki_V.jpg
 personal_page: "https://sites.google.com/view/valiagazakihomepage/home"
-areas:
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
-  - Geometry, Topology
+
+
+research_tags:
+- NT
 
 ---
 

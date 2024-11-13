@@ -10,7 +10,7 @@ email: jeb2md@virginia.edu
 image: __SITE_URL__/img/people/2023-fall/bergner.jpg
 personal_page: https://sites.google.com/view/julie-bergner/
 
-areas:
-  - Geometry, Topology
+research_tags:
+- TO
 
 ---

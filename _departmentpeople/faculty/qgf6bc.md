@@ -10,6 +10,6 @@ phone:
 email: qgf6bc@virginia.edu
 personal_page:
 
-areas:
+
 
 ---

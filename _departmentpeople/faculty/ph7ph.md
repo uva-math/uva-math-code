@@ -12,8 +12,8 @@ image: __SITE_URL__/img/people/2020-fall/Peter.jpg
 personal_page: https://sites.google.com/view/peterhumphries/
 
 
-areas:
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
-  - Analysis, PDE, Operator Algebras
+research_tags:
+- NT
+- AN
 
 ---

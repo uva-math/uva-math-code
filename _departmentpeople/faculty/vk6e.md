@@ -11,7 +11,7 @@ email: krushkal@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Krushkal_S.jpg
 personal_page: https://uva.theopenscholar.com/slava-krushkal
 
-areas:
-  - Geometry, Topology
+research_tags:
+  - TO
 
 ---

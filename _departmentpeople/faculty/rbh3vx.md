@@ -9,6 +9,5 @@ phone:
 email: rbh3vx@virginia.edu
 personal_page:
 
-areas:
 
 ---

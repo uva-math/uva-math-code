@@ -13,8 +13,9 @@ personal_page: https://you-qi2121.github.io/mypage/
 
 
 
-areas:
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+research_tags:
+- RT
+- TO
 
 ---
 
