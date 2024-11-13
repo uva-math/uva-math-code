@@ -14,7 +14,9 @@ personal_page: https://quigleyjd.github.io/
 
 research_tags:
 - TO
+- GE
+- AL
 
-specialty: Homotopy Theory 
+specialty: Homotopy Theory, Algebraic Topology, K-Theory
 
 ---
