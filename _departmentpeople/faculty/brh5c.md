@@ -2,6 +2,7 @@
 UVA_id: brh5c
 lastname: Hayes
 name: Benjamin
+pronouns: he/him
 general_position: faculty
 position: Associate Professor
 office: 219 Kerchof Hall
@@ -15,6 +16,6 @@ personal_page: https://sites.google.com/site/benhayeshomepage/
 research_tags:
 - AN
 
-specialty: Functional Analysis
+specialty: Functional Analysis, Operator Algebras
 
 ---
