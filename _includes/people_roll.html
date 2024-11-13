@@ -15,7 +15,7 @@
       <div class="mb-1">{% for tag in ppl.research_tags %}
         {% for def_tag in site.data.research_tags %}
         {% if def_tag.tag == tag %}
-        <a class="btn btn-secondary" style="font-size:0.9em" href="{{site.url}}/research/{{def_tag.shortname}}">{{ def_tag.name }}</a>&nbsp;
+        <a class="btn btn-secondary" style="font-size:0.9em" href="{{site.url}}/research/{{def_tag.tag}}/">{{ def_tag.name }}</a>&nbsp;
         {% endif %}
         {% endfor %}
       {% endfor %}

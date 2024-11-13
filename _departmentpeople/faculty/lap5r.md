@@ -18,7 +18,6 @@ areas: #Must coincide with the ones in _data/research_areas.yml
 research_tags:
 - PR
 - CO
-- MP
 specialty: Integrable Probability and Algebraic Combinatorics
 
 
