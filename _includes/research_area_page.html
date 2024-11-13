@@ -33,7 +33,7 @@
             - If the current tag has 'includes', check if the person has any of the included tags.
             - Otherwise, check if the person has the current tag.
           {% endcomment %}
-          {% if current_tag.includes %}
+          {% if current_tag.includes%}
             {% assign matches = false %}
             {% for included_tag in current_tag.includes %}
               {% if person.research_tags contains included_tag %}
@@ -42,7 +42,11 @@
               {% endif %}
             {% endfor %}
             {% if matches %}
+            {%if person.general_position == "faculty" %}
+            {%unless person.non-tt %}
               {% include person_card.html person=person %}
+            {% endunless %}
+              {% endif %}
             {% endif %}
           {% else %}
             {% if person.research_tags contains current_tag.tag %}
@@ -51,6 +55,11 @@
           {% endif %}
         {% endfor %}
       </div>
+      
+      
+      
+
+
     </div>
     <div class="col-md-3">
       <hr class="hidden-md-up">

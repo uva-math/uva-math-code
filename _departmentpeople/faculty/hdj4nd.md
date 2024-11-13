@@ -11,6 +11,8 @@ email: hdj4nd@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/James_D.jpg 
 personal_page: 
 
+research_tags:
+- AP
 
 
 ---
