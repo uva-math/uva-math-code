@@ -11,8 +11,9 @@ image: __SITE_URL__/img/people/Kuhn.jpg
 personal_page: https://uva.theopenscholar.com/nick-kuhn
 
 
-areas:
-  - Geometry, Topology
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+research_tags:
+- TO
+- AL
+
 
 ---

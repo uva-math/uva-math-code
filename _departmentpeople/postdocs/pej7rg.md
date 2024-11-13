@@ -11,6 +11,10 @@ email: pej7rg@virginia.edu
 personal_page: https://benspitz.com/
 image:  __SITE_URL__/img/people-since-2024/2024/pej7rg.jpg
 
-areas:
+research_tags:
+- TO
+- AL
+
+specialty: Algebraic Topology, Equivariant Algebra
 
 ---

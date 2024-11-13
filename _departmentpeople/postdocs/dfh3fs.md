@@ -9,6 +9,11 @@ phone:
 email: dfh3fs@virginia.edu
 personal_page:
 
-areas:
+research_tags:
+- TO
+- GE
+
+specialty: Algebraic Topology, K-Theory
+
 
 ---
