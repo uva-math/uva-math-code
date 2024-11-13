@@ -14,6 +14,6 @@ personal_page: https://uva.theopenscholar.com/andrei-rapinchuk/
 research_tags:
 - AL
 
-specialty: 
+specialty: Algebraic Groups
 
 ---
