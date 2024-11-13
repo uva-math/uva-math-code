@@ -14,8 +14,8 @@ personal_page: https://sites.google.com/view/peterhumphries/
 
 research_tags:
 - NT
-- AN
+- RT
 
-specialty: Analytic Number Theory
+specialty: Analytic Number Theory, Automorphic Forms, Representation Theory
 
 ---
