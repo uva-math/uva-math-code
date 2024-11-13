@@ -22,6 +22,7 @@
       {%if page.pronouns != null %}
       <div class="mb-3">({{page.pronouns}})</div>
       {%endif%}
+    
 
       <div class="row">
         {% if page.office != null %}
@@ -55,7 +56,20 @@
             <a href="{{ page.personal_page }}" target="_blank">Personal webpage</a>
           {% endif %}
         </div>
+
       </div>
+
+      {%if page.specialty != null %} <div class="mt-4" style="font-weight: 500;">{{page.specialty}}</div>{%endif%}
+      {%if page.research_tags != null %}
+      <div class="mt-4">{% for tag in page.research_tags %}
+        {% for def_tag in site.data.research_tags %}
+        {% if def_tag.tag == tag %}
+        <a class="btn btn-secondary" href="{{site.url}}/research/{{def_tag.tag}}/">{{ def_tag.name }}</a>&nbsp;
+        {% endif %}
+        {% endfor %}
+      {% endfor %}
+      </div>
+      {%endif%}
 
       <!-- {% if page.areas != null %}
       <div class="row">
@@ -74,6 +88,8 @@
       </div>
       {% endif %} -->
 
+
+      
       <br />
 
       {{ page.content | markdownify }}
