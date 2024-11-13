@@ -10,7 +10,9 @@ email: tlk8q@virginia.edu
 image: __SITE_URL__/img/people/Kriete.jpg
 # personal_page: http://pi.math.virginia.edu/Faculty/Kriete/
 
-areas:
-  - Analysis, PDE, Operator Algebras
+research_tags:
+- AN
+
+
 
 ---

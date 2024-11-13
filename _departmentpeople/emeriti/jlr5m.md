@@ -11,4 +11,7 @@ image: __SITE_URL__/img/people/2021-fall/Rovnyak_J.jpg
 personal_page: https://uva.theopenscholar.com/james-rovnyak
 
 
+research_tags:
+- AN
+
 ---

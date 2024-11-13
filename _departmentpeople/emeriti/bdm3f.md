@@ -10,7 +10,7 @@ email: bdm3f@virginia.edu
 image: __SITE_URL__/img/people/MacCluer.jpg
 # personal_page: http://people.virginia.edu/~bdm3f/
 
-areas:
-  - Analysis, PDE, Operator Algebras
+research_tags:
+- AN
 
 ---

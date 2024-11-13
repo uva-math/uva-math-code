@@ -19,46 +19,156 @@
 {% if current_tag %}
   <div class="row">
     <div class="col-md-9">
-      <h2 class="mb-4" style="font-style:italic">{{ current_tag.name }} Research</h2>
+      <h2 class="mb-4" style="font-style:italic">{{ current_tag.name }}</h2>
 
       {% comment %}
         Sort department people by last name.
       {% endcomment %}
       {% assign sorted_people = site.departmentpeople | sort: 'lastname' %}
 
-      <div class="row">
-        {% for person in sorted_people %}
-          {% comment %}
-            Determine if the person should be included based on the current tag.
-            - If the current tag has 'includes', check if the person has any of the included tags.
-            - Otherwise, check if the person has the current tag.
-          {% endcomment %}
-          {% if current_tag.includes%}
-            {% assign matches = false %}
-            {% for included_tag in current_tag.includes %}
-              {% if person.research_tags contains included_tag %}
-                {% assign matches = true %}
-                {% break %}
-              {% endif %}
-            {% endfor %}
-            {% if matches %}
-            {%if person.general_position == "faculty" %}
-            {%unless person.non-tt %}
-              {% include person_card.html person=person %}
-            {% endunless %}
+      <!-- Section for Tenure-Track (TT) Faculty -->
+      <div class="tt-faculty-section">
+        <h3>Research Faculty</h3>
+        <div class="row">
+          {% for person in sorted_people %}
+            {% comment %}
+              Determine if the person should be included as TT Faculty based on the current tag.
+              - Tag Matching Logic:
+                - If the current tag has 'includes', check if the person has any of the included tags.
+                - Otherwise, check if the person has the current tag.
+              - TT Faculty Criteria:
+                - general_position == "faculty"
+                - non-tt is not true
+            {% endcomment %}
+            {% assign tag_match = false %}
+            {% if current_tag.includes %}
+              {% for included_tag in current_tag.includes %}
+                {% if person.research_tags contains included_tag %}
+                  {% assign tag_match = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              {% if person.research_tags contains current_tag.tag %}
+                {% assign tag_match = true %}
               {% endif %}
             {% endif %}
-          {% else %}
-            {% if person.research_tags contains current_tag.tag %}
-              {% include person_card.html person=person %}
-            {% endif %}
-          {% endif %}
-        {% endfor %}
-      </div>
-      
-      
-      
 
+            {% if tag_match and person.general_position == "faculty" and person.non-tt != true %}
+              <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card h-100 text-center">
+                  <a href="{{ site.url }}/people/{{ person.UVA_id }}/">
+                    {% if person.image %}
+                      <img src="{{ person.image | replace: '__SITE_URL__', site.url }}" 
+                           alt="{{ person.name }} {{ person.lastname }}" 
+                           class="card-img-top img-fluid" 
+                           style="max-height: 200px; object-fit: cover;" 
+                           loading="lazy">
+                    {% else %}
+                      <img src="{{ site.url }}/img/people/Avatar_image.png" 
+                           alt="{{ person.name }} {{ person.lastname }}" 
+                           class="card-img-top img-fluid" 
+                           style="max-height: 200px; object-fit: cover;" 
+                           loading="lazy">
+                    {% endif %}
+                  </a>
+                  <div class="card-body">
+                    <a href="{{ site.url }}/people/{{ person.UVA_id }}/" class="text-decoration-none text-dark">
+                      <span class="nonupper-h5">{{ person.name }} {{ person.lastname }}</span>
+                    </a>
+                    <p class="card-text"><i>{{ person.position }}</i></p>
+                  </div>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+
+      <!-- Section for Other Faculty -->
+      <div class="other-faculty-section mt-5">
+        <h3>Other Faculty</h3>
+        <ul>
+          {% for person in sorted_people %}
+            {% comment %}
+              Determine if the person should be included in Other Faculty based on the current tag.
+              - Tag Matching Logic:
+                - If the current tag has 'includes', check if the person has any of the included tags.
+                - Otherwise, check if the person has the current tag.
+              - Other Faculty Criteria:
+                - general_position == "faculty" AND non-tt == true
+                - OR general_position == "emeritus"
+            {% endcomment %}
+            {% assign tag_match = false %}
+            {% if current_tag.includes %}
+              {% for included_tag in current_tag.includes %}
+                {% if person.research_tags contains included_tag %}
+                  {% assign tag_match = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              {% if person.research_tags contains current_tag.tag %}
+                {% assign tag_match = true %}
+              {% endif %}
+            {% endif %}
+
+            {% if tag_match %}
+              {% if person.general_position == "emeritus" %}
+                <li class="mb-2">
+                  <a href="{{ site.url }}/people/{{ person.UVA_id }}/">{{ person.name }} {{ person.lastname }}</a> ({{ person.position }})
+                </li>
+              {% endif %}
+              {% if person.general_position == "faculty" %}
+              {% if person.non-tt %}
+                <li class="mb-2">
+                  <a href="{{ site.url }}/people/{{ person.UVA_id }}/">{{ person.name }} {{ person.lastname }}</a> ({{ person.position }})
+                </li>
+              {% endif %}
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- Section for Graduate Students and Postdocs -->
+      <div class="grad-postdoc-section mt-5">
+        <h3>Graduate Students and Postdocs</h3>
+        <ul>
+          {% for person in sorted_people %}
+            {% comment %}
+              Determine if the person should be included in Graduate Students or Postdocs based on the current tag.
+              - Tag Matching Logic:
+                - If the current tag has 'includes', check if the person has any of the included tags.
+                - Otherwise, check if the person has the current tag.
+              - Criteria:
+                - general_position == "gradstudent"
+                - OR general_position == "postdoc"
+            {% endcomment %}
+            {% assign tag_match = false %}
+            {% if current_tag.includes %}
+              {% for included_tag in current_tag.includes %}
+                {% if person.research_tags contains included_tag %}
+                  {% assign tag_match = true %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              {% if person.research_tags contains current_tag.tag %}
+                {% assign tag_match = true %}
+              {% endif %}
+            {% endif %}
+
+            {% if tag_match %}
+              {% if person.general_position == "gradstudent" or person.general_position == "postdoc" %}
+                <li class="mb-2">
+                  <a href="{{ site.url }}/people/{{ person.UVA_id }}/">{{ person.name }} {{ person.lastname }}</a> ({{ person.position }})
+                </li>
+              {% endif %}
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
 
     </div>
     <div class="col-md-3">

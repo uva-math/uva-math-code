@@ -10,8 +10,9 @@ email: cfd5z@virginia.edu
 image: __SITE_URL__/img/people/2021-fall/Dunkl_C.jpg
 personal_page: https://uva.theopenscholar.com/charles-dunkl/
 
-areas:
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
-  - Analysis, PDE, Operator Algebras
+
+research_tags:
+- AL
+- AN
 
 ---

@@ -10,8 +10,7 @@ email: let@virginia.edu
 image: __SITE_URL__/img/people/Thomas.jpg
 # personal_page: http://people.virginia.edu/~let/
 
-areas:
-  - Mathematical Physics, Applied Mathematics
-
+research_tags:
+- MP
 
 ---

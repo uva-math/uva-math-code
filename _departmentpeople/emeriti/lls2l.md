@@ -10,7 +10,9 @@ email: lls2l@virginia.edu
 image: __SITE_URL__/img/people/Scott.jpg
 personal_page: https://leonard-scott-emeritus.faculty.virginia.edu/
 
-areas:
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+
+research_tags:
+- AL
+
 
 ---

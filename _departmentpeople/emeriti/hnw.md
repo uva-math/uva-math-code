@@ -10,8 +10,8 @@ email: hnw@virginia.edu
 image: __SITE_URL__/img/people/Ward.jpg
 personal_page: https://uva.theopenscholar.com/harold-ward
 
-areas:
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
+research_tags:
+- AL
 
 ---
 

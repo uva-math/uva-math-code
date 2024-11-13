@@ -10,9 +10,8 @@ email: ldp@virginia.edu
 image: __SITE_URL__/img/people/Pitt.jpg
 personal_page:
 
-areas:
-  - Analysis, PDE, Operator Algebras
-  - Probability, Combinatorics
-
+research_tags:
+- PR
+- AN
 
 ---

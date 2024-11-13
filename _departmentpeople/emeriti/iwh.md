@@ -9,8 +9,9 @@ office: 202 Kerchof Hall
 email: iwh@virginia.edu
 image: __SITE_URL__/img/people/Herbst.jpg
 # personal_page: http://pi.math.virginia.edu/Faculty/Herbst/
-areas:
-  - Mathematical Physics, Applied Mathematics
 
+
+research_tags:
+- MP
 
 ---
