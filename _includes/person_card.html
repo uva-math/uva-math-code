@@ -16,11 +16,9 @@
         {% endif %}
       </a>
       <div class="card-body">
-        <h5 class="card-title">
           <a href="{{ site.url }}/people/{{ include.person.UVA_id }}/" class="text-decoration-none text-dark">
-            {{ include.person.name }} {{ include.person.lastname }}
+            <span  class="nonupper-h5">{{ include.person.name }} {{ include.person.lastname }}</span>
           </a>
-        </h5>
         <p class="card-text"><i>{{ include.person.position }}</i></p>
       </div>
     </div>
