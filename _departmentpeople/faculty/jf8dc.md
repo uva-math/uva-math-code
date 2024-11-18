@@ -15,6 +15,7 @@ personal_page: https://uva.theopenscholar.com/juraj-foldes/teaching
 research_tags:
 - PDE
 - PR
+- AP
 
 
 
