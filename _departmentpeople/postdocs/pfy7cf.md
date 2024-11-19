@@ -8,7 +8,7 @@ office: 311 Kerchof Hall
 phone:  
 email: pfy7cf@virginia.edu
 image: __SITE_URL__/img/people/2023-fall/brandon-shapiro.jpg
-personal_page:
+personal_page: https://brandontshapiro.github.io/
 
 research_tags:
 - TO
