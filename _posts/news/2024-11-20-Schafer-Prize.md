@@ -6,12 +6,6 @@ categories: news awards
 published: true
 ---
 
-Dear Colleagues,
+Marie-Hélène Tomé, a participant in the 2023 REU program in number theory at the University of Virginia, has been named one of the winners of the 2025 Alice T. Schafer Prize for Excellence in Mathematics by an Undergraduate Woman. The program was organized by Professor Ken Ono. Congratulations to Marie-Hélène Tomé for this outstanding achievement!
 
-The 2025 Alice T. Schafer Prize for Excellence in Mathematics by an Undergraduate Woman was recently announced: the three winners are tahda queer, Marie-Hélène Tomé, and Katherine Tung. The prizes will be awarded at the annual AMS meeting in January, but you can read the full citation [here](https://awm-math.org/awards/schafer-prize-for-undergraduates/schafer-prize-2025/).
-
-I’m pleased to mention that one of the winners, Marie-Hélène Tomé, was a participant in the 2023 REU program in number theory at UVa, organized by Professor Ken Ono. Congratulations to her and all the winners!
-
-Yours,
-Thomas Mark
-Chair, Mathematics
+The Alice T. Schafer Prize is awarded annually to recognize the exceptional contributions of undergraduate women in mathematics. The awards will be presented at the annual AMS meeting in January. More details can be found [here](https://awm-math.org/awards/schafer-prize-for-undergraduates/schafer-prize-2025/).
