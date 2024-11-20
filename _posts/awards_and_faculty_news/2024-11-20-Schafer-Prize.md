@@ -7,6 +7,7 @@ published: true
 image: __SITE_URL__/img/news_events/tome.png
 image-alt: Marie-Hélène Tomé
 image-tall: true
+good-md: true
 ---
 
 Marie-Hélène Tomé, a participant in the 2023 REU program in number theory at the University of Virginia, has been named one of the winners of the 2025 Alice T. Schafer Prize for Excellence in Mathematics by an Undergraduate Woman. The REU program was organized by Professor Ken Ono. Congratulations to Marie-Hélène Tomé for this outstanding achievement!
