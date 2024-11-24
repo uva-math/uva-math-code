@@ -32,7 +32,7 @@ events: true
             <div class="swiper-wrapper">
               {% assign swiper-news_counter = 0 %}
               {% for post in site.categories['news'] limit:20 %}
-              {% if post.categories contains 'swiper-news' and swiper-news_counter < 6 %}
+              {% if post.categories contains 'swiper-news' and swiper-news_counter < 4 %}
               {% assign swiper-news_id = post.id %}
               {% assign swiper-news_counter = swiper-news_counter | plus:1 %}
                 <div class="swiper-slide">

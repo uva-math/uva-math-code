@@ -2,7 +2,7 @@
 layout: post
 title: UVA Math Proud of USA Swimmers
 comments: false
-categories: news swiper-news
+categories: news
 published: true
 image: __SITE_URL__/img/news_events/kate_douglass.png
 image-alt: Kate Douglass swimming
