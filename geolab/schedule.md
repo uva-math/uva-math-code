@@ -6,16 +6,9 @@ permalink: /geolab/schedule/
 
 <h2 class="mb-3">Schedule</h2>
 
-### Fall 2024
+### Spring 2024
 
-<ul>
-<li>Activity Fair: Monday, August 26</li>
-<li>Deadline for application: Monday, September 2</li>
-<li>Groups start meeting with their mentors: week of September 2-6</li>
-<li>First common meeting: September 26, at 4:30pm (Meeting with all groups)</li>
-<li>Second common meeting: October 18, at 1-3:15pm (Meeting with <a href="https://www.virginiaequitycenter.org/starr-hill-pathways">Starr Hill Pathways</a> Program students)</li>
-<li>Third Common meeting: November 14, at 5-7pm (Meeting with <a href="{{site.url}}/awm/">AWM Student Chapter</a></li>
-</ul>
+[Coming Soon]
 
 
 **Examples of past common meetings:**
