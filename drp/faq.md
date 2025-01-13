@@ -21,4 +21,4 @@ There is an optional course credit for participating in DRP!
 
 **When do I give my final presentation?**
 
-There is some flexibility here. Some students may opt to prepare their presentation before the semester is over and give it near the end of the semester or right at the beginning of the next semester, while other students might prefer preparing during the break and presenting sometime during the next semester.
+Presentations are usually given at the start of the next semester. However, there is some flexibility here such as in cases where the student might not be present the next semester.
