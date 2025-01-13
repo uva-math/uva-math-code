@@ -6,6 +6,22 @@ permalink: /geolab/projects/
 
 <h2 class="mb-3">Past Projects</h2>
 
+### Fall 2024
++ Coding Theory and Finite Fields
+    - Mentors: [J.D. Quigley](https://quigleyjd.github.io/), [Michael Wills](https://sites.google.com/view/michael-wills/)
+    - Mentees: Nate Bryerton, Arun Jannupreddy, Malik Kurtz, Dailin Li, Rohan Radadiya, Ridge Redding, Eva Simpson
+    - Description: We learned about how one can mathematically harden information against random errors in transmission by the stratregic addition of redundancy. We wrote functioning code implementing various systems for achieving this, and learned how to compare their performance.
+    - [Final Project](https://github.com/rr-102/FiniteFields-CodingTheory/blob/main/README.md)
+ 
++ Zome and polyhedra
+    - Mentor: [Brandon Shapiro](https://math.virginia.edu/people/pfy7cf/)
+      
++ Billiards and Translation Surfaces
+    - Mentors: [Lam Nguyen](https://math.virginia.edu/people/qsg2kv/), [Oliver Wang](https://math.virginia.edu/people/dfh3fs/)
+      
++ Computer graphics and Robotics
+    - Mentor: [Bakhyt Aitzhanova](https://math.virginia.edu/people/axh7cj/)
+
 ### Spring 2024
 
 + Knots: Spirographs, Wire, Clay
