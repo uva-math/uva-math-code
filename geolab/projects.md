@@ -6,6 +6,29 @@ permalink: /geolab/projects/
 
 <h2 class="mb-3">Past Projects</h2>
 
+### Fall 2024
+
++ Coding Theory and Finite Fields
+    - Mentors: [J.D. Quigley](https://quigleyjd.github.io/), [Michael Wills](https://sites.google.com/view/michael-wills/)
+    - Mentees: Nate Bryerton, Arun Jannupreddy, Malik Kurtz, Dailin Li, Rohan Radadiya, Ridge Redding, Eva Simpson
+    - Description: We learned about how one can mathematically harden information against random errors in transmission by the strategic addition of redundancy. We wrote functioning code implementing various systems for achieving this, and learned how to compare their performance. Many familiar objects from geometry can be described using polynomial equations. For instance, the unit circle is the set of points in the xy-plane such that x^2+y^2-1=0, while the equation x^2-y^2-1=0 describes a hyperbola. In this project, we studied polynomials in exotic contexts for arithmetic called "finite fields". One motivation to investigate this kind of geometry comes from coding theory, which is the mathematics of how to make digital messages resistant to random noise.
+    - Prerequisites: MATH 1210/1310
+    - [Final Project](https://github.com/rr-102/FiniteFields-CodingTheory/blob/main/README.md)
+ 
++ Zome and polyhedra
+    - Mentor: [Brandon Shapiro](https://math.virginia.edu/people/pfy7cf/)
+    - Description: The Zome toolkit makes it easy to build toy models of polyhedra, 3 dimensional solid shapes like cubes and pyramids built out of polygons on the outside. Using the Zome pieces, we can show why there are only 5 polyhedra whose faces are all the same shape, and also why in the fourth dimension there are only 6 shapes with the same kind of property. We explored the geometry of shapes we can build using Zome, such as angles, counting faces of solid shapes, symmetries, knots, and/or many other possibilities.
+    - Prerequisites: No prerequisites needed, though in previous semesters some comfort with trigonometry has been helpful.
+      
++ Billiards and Translation Surfaces
+    - Mentors: [Lam Nguyen](https://math.virginia.edu/people/qsg2kv/), [Oliver Wang](https://math.virginia.edu/people/dfh3fs/)
+    - Description: If a billiards player hits a ball in a particular direction, will it eventually drop in a pocket, and if so, after how many bounces? Questions like this one are the subject of mathematical billiards, and answering them surprisingly requires us to connect multiple branches of math including geometry, number theory, and linear algebra. In this project, we explored how examining billiards naturally leads to the geometric notion of translation surfaces, and we investigated the properties of flows on these surfaces.
+    - Prerequisites: No prerequisites needed; just curiosity and the eagerness to visualize and draw cool pictures.
+      
++ Computer graphics and Robotics
+    - Mentor: [Bakhyt Aitzhanova](https://math.virginia.edu/people/axh7cj/)
+    - Description: We learned a standard method for solving the forward kinematic problem for a given robot "arm". The forward kinematic problem is a fundamental concept in robotics and computer graphics that involves determining the position and orientation of the end-effector (or the tip) of a robot arm based on its joint parameters.
+
 ### Spring 2024
 
 + Knots: Spirographs, Wire, Clay

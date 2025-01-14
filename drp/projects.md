@@ -6,6 +6,59 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Spring 2024
+
++ From calculus to de Rham cohomology
+   - Text: Madsen and Tornehave, From calculus to cohomology: de Rham cohomology and characteristic classes
+   - Mentee: Ethan Fu
+   - Mentor: Eleftherios Chatzitheodoridis
+
++ Knots and Seifert surfaces
+   - Text: Livingston, Knot Theory
+   - Mentee: Claire Kehoe
+   - Mentor: Sarah Blackwell
+ 
++ Knot Theory
+   - Text: Crowell and Fox, Introduction to Knot Theory
+   - Mentee: Wynn Smith
+   - Mentor: Beth Branman
+
++ Algebraic Number Theory
+   - Text: Stewart and Tall, Algebraic Number Theory and Fermat's Last Theorem
+   - Mentee: Brandon Werbel
+   - Mentor: Alejandro De Las Penas Castano
+  
++ Symmetric functions and representation theory
+   - Text: Prasad, Representation theory: A combinatorial viewpoint
+   - Mentee: Henghui Li
+   - Mentor: Kang Lu
+ 
++ Category theory
+   - Texts: Lawvere and Rosebrugh, Sets for Mathematics; Riehl, Category Theory in Context; Leinster, Basic Category Theory
+   - Mentee: Luke Moyar
+   - Mentor: William Balderrama
+  
++ Matroids
+   - Text: Gordon and McNulty, Matroids: A geometric introduction
+   - Mentee: John Yan
+   - Mentor: Mark Pengitore
+
++ Nonlinear Dynamics and Chaos
+   - Text: Strogatz, Nonlinear Dynamics and Chaos
+   - Mentee: Mary Edith Plunkket
+   - Mentor: Pedro Brunialti
+
++ An Overview of Combinatorial and Geometric Group Theory
+   - Text: Löh, Geometric Group Theory: An Introduction
+   - Mentee: Grady Hollar
+   - Mentor: Darien Farnham
+
++ The RSK Correspondence and its applications
+   - Texts: Schensted, Longest increasing and decreasing subsequences; Stanley, Increasing and decreasing subsequences of permutations and their variants
+   - Mentee: Brendan Malaugh
+   - Mentor: Petch Chueluecha
+
+
 ### Fall 2023
 
 + Choosing the optimal number of clusters for the k-means algorithm
