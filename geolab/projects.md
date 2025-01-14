@@ -16,14 +16,17 @@ permalink: /geolab/projects/
 
 + Zome and polyhedra
     - Mentor: [Brandon Shapiro](https://math.virginia.edu/people/pfy7cf/)
+    - Mentees: Maya Clifford, Kyla Fish, Justin Gu, Wenwan Xu.
     - Description: The Zome toolkit makes it easy to build toy models of polyhedra, 3 dimensional solid shapes like cubes and pyramids built out of polygons on the outside. Using the Zome pieces, we can show why there are only 5 polyhedra whose faces are all the same shape, and also why in the fourth dimension there are only 6 shapes with the same kind of property. We explored the geometry of shapes we can build using Zome, such as angles, counting faces of solid shapes, symmetries, knots, and/or many other possibilities.
 
 + Billiards and Translation Surfaces
     - Mentors: [Lam Nguyen](https://math.virginia.edu/people/qsg2kv/), [Oliver Wang](https://math.virginia.edu/people/dfh3fs/)
+    - Mentees: Mariam Grigorian, Brian Lai, Emily Moore, Alessia Natalucci, Ismoil Nosirov, Dominic Tran, Jiaming Zhang.
     - Description: If a billiards player hits a ball in a particular direction, will it eventually drop in a pocket, and if so, after how many bounces? Questions like this one are the subject of mathematical billiards, and answering them surprisingly requires us to connect multiple branches of math including geometry, number theory, and linear algebra. In this project, we explored how examining billiards naturally leads to the geometric notion of translation surfaces, and we investigated the properties of flows on these surfaces.
 
 + Computer graphics and Robotics
     - Mentor: [Bakhyt Aitzhanova](https://math.virginia.edu/people/axh7cj/)
+    - Mentees: David Cao, Zachary Forino, Josh Gao, Alex Wei, Alexander Yao.
     - Description: We learned a standard method for solving the forward kinematic problem for a given robot "arm". The forward kinematic problem is a fundamental concept in robotics and computer graphics that involves determining the position and orientation of the end-effector (or the tip) of a robot arm based on its joint parameters.
 
 ### Spring 2024
