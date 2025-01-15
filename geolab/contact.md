@@ -9,8 +9,9 @@ permalink: /geolab/current_projects/
 ### Mentors for Spring 2025:
 
 - [Bakhyt Aitzhanova](https://math.virginia.edu/people/axh7cj/)
-- [Michael Wills](https://sites.google.com/view/michael-wills/)
 - [Brandon Shapiro](https://brandontshapiro.github.io/)
+- [Michael Wills](https://sites.google.com/view/michael-wills/)
+
 
 ### Faculty Advisors:
 - [Evangelia Gazaki](https://sites.google.com/view/valiagazakihomepage/home)
