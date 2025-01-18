@@ -9,4 +9,3 @@ gem "jekyll-feed"
 gem "html-proofer"
 gem 's3_website'
 gem 'jekyll-redirect-from'
-
