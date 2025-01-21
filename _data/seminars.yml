@@ -4,29 +4,29 @@
 # google_cal_id: 'dd0lvqfa6j2vtbocbhnsp3u380@group.calendar.google.com'
 # in the javascript corresponds to an empty old outdated seminar which is fine; its id is 0 then
 
-- cal_number: '6'
+- cal_number: "6"
   name: Colloquium
   shortname: colloq
-# image: __SITE_URL__/img/seminars/
-  webpage: 'http://pi.math.virginia.edu/colloq/'
-  google_cal_id: 'j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com'
+  # image: __SITE_URL__/img/seminars/
+  webpage: "http://pi.math.virginia.edu/colloq/"
+  google_cal_id: "j3a6i93k8m7ulpp9n5bg8vbb4g@group.calendar.google.com"
   seminar_weight: 10
   regular_times: Thursdays 3:45-4:45pm, Kerchof 111. Refreshments at 3:15pm in Kerchof 314.
   contact:
     - UVA_id: eg4va
     - UVA_id: vk6e
-    
-- cal_number: '200'
-  name: '---'
-  shortname: separator
-# image: __SITE_URL__/img/seminars/
-  seminar_weight: 35  
 
-- cal_number: '5'
+- cal_number: "200"
+  name: "---"
+  shortname: separator
+  # image: __SITE_URL__/img/seminars/
+  seminar_weight: 35
+
+- cal_number: "5"
   name: Algebra Seminar
   shortname: algebra
-  webpage: 'http://pi.math.virginia.edu/algebra/'
-  google_cal_id: 'd2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com'
+  webpage: "http://pi.math.virginia.edu/algebra/"
+  google_cal_id: "d2u7r4bb07jlh8v71pp61nrs3s@group.calendar.google.com"
   seminar_weight: 40
   regular_times: Wednesdays 3:30-4:30pm and Fridays 11:00am-12:00pm, Kerchof 111
   contact:
@@ -34,22 +34,22 @@
     - UVA_id: wbt4qn
     - UVA_id: mve2x
 
-- cal_number: '15'
+- cal_number: "15"
   name: Ramanujan-Serre Seminar (Number Theory)
   shortname: ntsem
-  google_cal_id: '56un1k179o7d8mtj85o12qsg7c@group.calendar.google.com'
+  google_cal_id: "56un1k179o7d8mtj85o12qsg7c@group.calendar.google.com"
   seminar_weight: 90
   regular_times: Fridays at 1:00, Kerchof 111
   contact:
     - UVA_id: eg4va
     - UVA_id: ph7ph
     - UVA_id: ko5wk
-  
-- cal_number: '1'
+
+- cal_number: "1"
   name: Geometry Seminar
   shortname: geometry
-  webpage: 'http://pi.math.virginia.edu/geometry/'
-  google_cal_id: '6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com'
+  webpage: "http://pi.math.virginia.edu/geometry/"
+  google_cal_id: "6njs6bnklu56g6lhi5ojl2pha8@group.calendar.google.com"
   seminar_weight: 65
   regular_times: Tuesdays at 2:00, Kerchof 111
   information: |
@@ -58,14 +58,14 @@
     - UVA_id: sm4cw
     - UVA_id: tmark
 
-- cal_number: '3'
+- cal_number: "3"
   name: Harmonic Analysis and PDE Seminar
   nav_longname: true
   shortname: diffeq
-  webpage: 'http://pi.math.virginia.edu/diffeq/'
-  google_cal_id: '5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com'
+  webpage: "http://pi.math.virginia.edu/diffeq/"
+  google_cal_id: "5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com"
   seminar_weight: 70
-  regular_times: Tuesdays 4-5pm, Kerchof 317 
+  regular_times: Tuesdays 4-5pm, Kerchof 317
   information: |
     Harmonic Analysis and PDE seminar features a mix of local speakers (graduate students and faculty) and visitors. The ideal topics live on the interface between the two fields; luckily, the interface has been steadily expanding.
   contact:
@@ -74,26 +74,26 @@
     - UVA_id: jf8dc
     - UVA_id: zg7c
 
-- cal_number: '4'
+- cal_number: "4"
   name: Mathematical Physics Seminar
   nav_longname: true
   published_in_nav: true
   shortname: mathphys
-  webpage: 'http://pi.math.virginia.edu/mathphys/'
-  google_cal_id: 'k613quo3pribde7jrm5e12ft1c@group.calendar.google.com'
+  webpage: "http://pi.math.virginia.edu/mathphys/"
+  google_cal_id: "k613quo3pribde7jrm5e12ft1c@group.calendar.google.com"
   seminar_weight: 80
-  regular_times: Wednesdays 2:15-3:15pm, Kerchof 111
+  regular_times: Mondays 12:00pm-12:50pm, Kerchof 111
   information: |
     The Mathematical Physics Seminar features talks on a wide variety of topics such as, for instance, Schrödinger operators, the mathematics of quantum systems, statistical mechanics, the renormalization group and quantum field theory. Lectures typically are of research level and are given by local as well as outside speakers. Graduate students in mathematical physics are encouraged to give presentations at this seminar about their ongoing research. Everyone is welcome to attend.
   contact:
     - UVA_id: aa4cr
 
-- cal_number: '7'
+- cal_number: "7"
   name: Probability Seminar
   shortname: probability
   # image: __SITE_URL__/img/seminars/tiling_v.png
-  webpage: 'http://faculty.virginia.edu/Probability/'
-  google_cal_id: 'f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com'
+  webpage: "http://faculty.virginia.edu/Probability/"
+  google_cal_id: "f0un05c36pdv08n0m90bi99jmk@group.calendar.google.com"
   seminar_weight: 110
   regular_times: Fridays at 1:00pm, New Cabell Hall 036
   information: |
@@ -104,11 +104,11 @@
     - UVA_id: lap5r
     - UVA_id: dku8jc
 
-- cal_number: '8'
+- cal_number: "8"
   name: Topology Seminar
   shortname: topology
-  webpage: 'http://pi.math.virginia.edu/topology/'
-  google_cal_id: 'pce8r0mnja2do20vkku2gslamk@group.calendar.google.com'
+  webpage: "http://pi.math.virginia.edu/topology/"
+  google_cal_id: "pce8r0mnja2do20vkku2gslamk@group.calendar.google.com"
   seminar_weight: 120
   regular_times: Thursdays at 2:00, Kerchof 111
   information: |
@@ -119,11 +119,11 @@
     - UVA_id: pej7rg
     - UVA_id: dfh3fs
 
-- cal_number: '2'
+- cal_number: "2"
   name: Undergraduate Math Club
   shortname: mathclub
-  webpage: 'http://pi.math.virginia.edu/mathclub/'
-  google_cal_id: 'lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com'
+  webpage: "http://pi.math.virginia.edu/mathclub/"
+  google_cal_id: "lhnqsj4qdhf8e7hn692c7to8ao@group.calendar.google.com"
   seminar_weight: 30
   regular_times: Tuesdays 5pm, Kerchof 314
   information: |
@@ -133,13 +133,12 @@
 
   contact:
     - UVA_id: pa8e
-    
 
-- cal_number: '12'
+- cal_number: "12"
   name: Operator theory seminar
   shortname: sotoa
-  google_cal_id: 'ftc1mbjbp95irpj6t9e2tfl020@group.calendar.google.com'
-  webpage: 'https://dshermanmath.github.io/base/sotoa/sotoa.html'
+  google_cal_id: "ftc1mbjbp95irpj6t9e2tfl020@group.calendar.google.com"
+  webpage: "https://dshermanmath.github.io/base/sotoa/sotoa.html"
   seminar_weight: 100
   regular_times: Tuesdays at 3:45, Kerchof Hall 111
   information: |
@@ -148,11 +147,11 @@
     - UVA_id: brh5c
     - UVA_id: des5e
 
-- cal_number: '10'
+- cal_number: "10"
   name: Graduate Students Seminar
   shortname: gradsem
-  webpage: 'http://pi.math.virginia.edu/gradsem/'
-  google_cal_id: 'n6dhh35l2td9i73ii6dbkpqtro@group.calendar.google.com'
+  webpage: "http://pi.math.virginia.edu/gradsem/"
+  google_cal_id: "n6dhh35l2td9i73ii6dbkpqtro@group.calendar.google.com"
   seminar_weight: 20
   regular_times: |
     Fridays 2-3:20pm, Kerchof 111, with a 2-2:20pm snack reception in the Kerchof 1st-floor graduate lounge.<br><br>
@@ -166,12 +165,11 @@
     - UVA_id: kxk2dr
     - UVA_id: muf5cz
 
-
-- cal_number: '11'
+- cal_number: "11"
   name: Galois-Grothendieck seminar
   shortname: galois
   published_in_nav: true
-  google_cal_id: '8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com'
+  google_cal_id: "8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com"
   seminar_weight: 60
   regular_times: Tuesdays, 3:30-4:45 in New Cabell Hall 389
   information: |
@@ -180,36 +178,36 @@
     - UVA_id: asr3x
     - UVA_id: eg4va
 
-- cal_number: '13'
+- cal_number: "13"
   name: Analysis Commons
   shortname: ancommons
   published_in_nav: false
-  google_cal_id: 'fj2uv2u9ea74h8b0gihm3iu73c@group.calendar.google.com'
+  google_cal_id: "fj2uv2u9ea74h8b0gihm3iu73c@group.calendar.google.com"
   seminar_weight: 50
   regular_times: TBD
-  information: | 
-     Talks at the Analysis Commons seminar cover topics of broader interest to the analysis community at University of Virginia. This includes functional analysis and operator algebras, mathematical physics, harmonic analysis and PDEs, probability theory, and other research areas. Presentations at this seminar are accessible to beginning graduate students in analysis. This calendar also lists talks at other UVA Math seminars which may be of interest to general analysis audience.
+  information: |
+    Talks at the Analysis Commons seminar cover topics of broader interest to the analysis community at University of Virginia. This includes functional analysis and operator algebras, mathematical physics, harmonic analysis and PDEs, probability theory, and other research areas. Presentations at this seminar are accessible to beginning graduate students in analysis. This calendar also lists talks at other UVA Math seminars which may be of interest to general analysis audience.
   contact:
     - UVA_id: hcg3m
     - UVA_id: lap5r
 
-- cal_number: '14'
+- cal_number: "14"
   name: AMW at UVA
   shortname: awm
   published_in_nav: false
-  google_cal_id: '3ehl1jte3jnlftm6h5m28b96jo@group.calendar.google.com'
+  google_cal_id: "3ehl1jte3jnlftm6h5m28b96jo@group.calendar.google.com"
   seminar_weight: 190
-  
-- cal_number: '16'
+
+- cal_number: "16"
   name: Directed Reading Program
   shortname: drp
   published_in_nav: false
-  google_cal_id: 'c_54969c7e95e9eb6b86db56bb73f087cc5cf1e09421b2ba9e89febf093510b331@group.calendar.google.com'
+  google_cal_id: "c_54969c7e95e9eb6b86db56bb73f087cc5cf1e09421b2ba9e89febf093510b331@group.calendar.google.com"
   seminar_weight: 191
-  
-- cal_number: '17'
+
+- cal_number: "17"
   name: Event
   shortname: one_off
   published_in_nav: false
-  google_cal_id: '7d22a1f9c156087098c19f2c7bb17765e6728b46e4d35cebc60613801f1453b7@group.calendar.google.com'
+  google_cal_id: "7d22a1f9c156087098c19f2c7bb17765e6728b46e4d35cebc60613801f1453b7@group.calendar.google.com"
   seminar_weight: 192
