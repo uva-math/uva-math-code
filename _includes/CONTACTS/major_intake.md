@@ -1,5 +1,5 @@
 - Last name begins with **A-D:** {% include person_info_email_only.html UVA_id="yqd3p" %}<br><br class="hidden-sm-up">
-- Last name begins with **E-H:** {% include person_info_email_only.html UVA_id="ph7ph" %} (**Fall**); {% include person_info_email_only.html UVA_id="hcg3m" %} (**Spring**)<br><br class="hidden-sm-up">
+- Last name begins with **E-H:** {% include person_info_email_only.html UVA_id="hcg3m" %}<br><br class="hidden-sm-up">
 - Last name begins with **I-L:** {% include person_info_email_only.html UVA_id="lap5r" %}<br><br class="hidden-sm-up">
 - Last name begins with **M-P:** {% include person_info_email_only.html UVA_id="af7py" %}<br><br class="hidden-sm-up">
 - Last name begins with **Q-T:** {% include person_info_email_only.html UVA_id="pa8e" %}<br><br class="hidden-sm-up">
