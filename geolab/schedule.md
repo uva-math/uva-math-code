@@ -6,10 +6,13 @@ permalink: /geolab/schedule/
 
 <h2 class="mb-3">Schedule</h2>
 
-### Spring 2024
+### Spring 2025
 
-[Coming Soon]
-
+<ul>
+  <li>Tuesday, February 25th, 5-6:30pm, Kerchof Hall 111: Meeting with other Geometry Lab groups and presenting to each other</li>
+  <li>Friday, March 28th, 2-3:20pm, Kerchof Hall 111: Presentations in Graduate Student Seminar (https://math.virginia.edu/seminars/gradsem/)</li>
+  <li>Saturday, April 19th, 10am-12pm, Ix Park Farmer's Market: Sharing activities based on projects with public</li>
+</ul>
 
 **Examples of past common meetings:**
 
