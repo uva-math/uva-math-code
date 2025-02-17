@@ -20,3 +20,12 @@ permalink: /geolab/faq/
     - Each weekly 1.5 hour meeting will consist of a mix of mini lectures from the mentors introducing new mathematical concepts, discussion amongst students about what they explored in the past week, further hands-on exploration as a group, and possibly more! The meetings will be guided by the questions and interests of the students, and are meant to operate more like a hands-on lab than a traditional classroom experience.
 + Can I get course credit? Do I have to get course credit?
     - Yes, students will sign up for one course credit. Generally this is mandatory, although it may be possible to make exceptions in special cases. Please <a href="{{site.url}}/geolab/contact/">contact us</a>.
+
+ For current participants:
+ + Where can my team present the results of our project?
+    - A list of recurring undergraduate research conferences is available <a href="https://seminar.math.vt.edu/mathclub/conferences.html">here</a>. Locally, you may also consider presenting in the Math Club, AWM, Graduate Student Seminar, <a href="https://vacadsci.org/2025-registration-for-the-annual-meeting/">Virginia Academy of Science</a> (registration deadline April 1, 2025), or <a href="https://sites.google.com/view/mid-atlantic-math-alliance/2025-meeting">Mid-Atlantic Regional Math Alliance</a> (registration deadline February 24, 2025).
++ What are some possible final products for our project?
+    - Some possible final products: expository/research paper; blog posts/journal throughout the semester documenting your project; code (in a GitHub repository) and user’s manual; poster at undergraduate conference (see above for a list of conferences); article in the Math Newsletter
++ It's my first time presenting! Any tips for giving a good math talk?
+   - Some advice for giving good math talks can be found <a href="https://blog.richmond.edu/wross/2008/03/26/how-to-give-a-good-20-minute-math-talk/">here</a>, <a href="https://www.math.stonybrook.edu/~bishop/lectures/GiveGoodTalk.pdf">here</a>, or <a href="https://terrytao.wordpress.com/career-advice/talks-are-not-the-same-as-papers/">here</a>. 
+
