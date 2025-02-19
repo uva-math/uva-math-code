@@ -7,8 +7,8 @@ permalink: /ims/lectures/jordan-ellenberg/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
-image: __SITE_URL__/img/IMS/Jordan-Ellenberg.jpg
-# image-address:
+image: __SITE_URL__/img/IMS/Jordan-Ellenberg-poster.jpg
+image-address: __SITE_URL__/img/IMS/Jordan-Ellenberg-poster.pdf
 image-alt: Jordan Ellenberg
 image-tall: true
 more-text: Abstracts
