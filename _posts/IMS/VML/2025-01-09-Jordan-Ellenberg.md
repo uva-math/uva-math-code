@@ -15,19 +15,18 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-
 <h5 class="mt-1 mb-1"><a href="https://people.math.wisc.edu/~ellenberg/">Jordan Ellenberg</a> (University of Wisconsin)</h5>
 
 
 <p>Jordan Ellenberg will deliver the Virginia Mathematics Lectures on March 4-5, 2025.</p>
 
-- **Lecture 1**: Tuesday, March 4, 2025, *Time and room TBA*
+- **Lecture 1**: Tuesday, March 4, 2025, 5-6pm, Wilson 402
 
   ### Three is harder than two
 
   (Abstract is below)
 
-- **Lecture 2**: Wednesday, March 5, 2025, *Time and room TBA*
+- **Lecture 2**: Wednesday, March 5, 2025, 5-6pm, Wilson 402
 
   ### What does machine learning have to offer pure mathematics?
 
@@ -37,14 +36,14 @@ nav_parent: IMS
 
 <h2 class="mt-4 mb-4">Abstracts</h2>
 
-- **Lecture 1**: Tuesday, March 4, 2025, *Time and room TBA*
+- **Lecture 1**: Tuesday, March 4, 2025, 5-6pm, Wilson 402
 
   ### Three is harder than two
 
    **Abstract:**
   Ambitious linear algebra students sometimes ask:  "Now that we're so good at studying nxn matrices, are we going to study nxnxn boxes of numbers?" This is a good question, and at an undergraduate level the answer is usually, "Good lord, no."  The theory of tensors is substantially harder and messier than the theory of matrices (there are about a dozen competing definitions for what "rank" is, for instance.)  In the same way, the combinatorics of sets of three things is harder than the combinatorics of sets fo two things.  How big can a subset of the unit disc be such that no two points are at distance less than .001?  Very manageable problem, the beginning of the subject of sphere packing.  How big can a subset of the unit disc be such that no three points form a triangle of area less than .001?  Very hard, still the subject of active research.  I'll give an overview of some problems on sets of three (sets of integers with no 3-term arithmetic progression, the cap set problem, the "no-isosceles" problem, Smyth's conjecture on Galois conjugates, etc.) and if there's time, I'll talk about how the resolution of the cap set problem ended up involving notions of ranks for tensors.
 
-- **Lecture 2**: Wednesday, March 5, 2025, *Time and room TBA*
+- **Lecture 2**: Wednesday, March 5, 2025, 5-6pm, Wilson 402
 
   ### What does machine learning have to offer pure mathematics?
 
