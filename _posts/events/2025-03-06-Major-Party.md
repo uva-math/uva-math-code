@@ -5,6 +5,8 @@ event-date: 2025-03-21 14:00:00
 comments: false
 categories: news events swiper-news
 published: true
+image: __SITE_URL__/img/news_events/MathMajorDeclaration_2025.png
+good-md: true
 ---
 
 
