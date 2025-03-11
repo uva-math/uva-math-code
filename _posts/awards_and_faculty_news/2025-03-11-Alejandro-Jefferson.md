@@ -8,5 +8,5 @@ image-alt: Alejandro De Las Penas Castano
 good-md: true
 ---
 
-Congratulations to Alejandro
+Congratulations to [Alejandro](https://math.virginia.edu/people/ad7ag/)
 who has been awarded the prestigious [Jefferson Dissertation Year Fellowship](https://www.jeffersonscholars.org/fellowships/jefferson)!
