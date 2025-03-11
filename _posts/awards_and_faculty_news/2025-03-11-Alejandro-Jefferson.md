@@ -8,5 +8,5 @@ image-alt: Alejandro De Las Penas Castano
 good-md: true
 ---
 
-Congratulations to Alejandro De Las Penas Castano, a graduate student at our department,
+Congratulations to Alejandro
 who has been awarded the prestigious [Jefferson Dissertation Year Fellowship](https://www.jeffersonscholars.org/fellowships/jefferson)!
