@@ -11,7 +11,7 @@ image-alt: "Mid-Atlantic Topology Conference 2025"
 # more-text: Full schedule and details
 ---
 
-The Mid-Atlantic Topology Conference 2025 (MATC-25) will be held at the University of Virginia from March 22-23, 2025, celebrating Nick Kuhn's 70th birthday!
+The Mid-Atlantic Topology Conference 2025 (MATC-25) will be held at the University of Virginia from March 22-23, 2025, celebrating {% include person_info_email_only.html UVA_id="njk4x" %}'s 70th birthday!
 
 [Conference Website](https://sites.google.com/view/matc-25){:target="_blank"}
 
