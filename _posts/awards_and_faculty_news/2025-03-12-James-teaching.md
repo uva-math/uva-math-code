@@ -2,7 +2,7 @@
 layout: post
 title: Daniel James receives 2025 All-University Teaching Award
 comments: false
-categories: news awards
+categories: news awards swiper-news
 published: true
 image: __SITE_URL__/img/people/2021-fall/James_D.jpg
 image-alt: Daniel James
