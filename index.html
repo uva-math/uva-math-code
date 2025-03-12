@@ -32,7 +32,7 @@ events: true
             <div class="swiper-wrapper">
               {% assign swiper-news_counter = 0 %}
               {% for post in site.categories['news'] limit:20 %}
-              {% if post.categories contains 'swiper-news' and swiper-news_counter < 4 %}
+              {% if post.categories contains 'swiper-news' and swiper-news_counter < 6 %}
               {% assign swiper-news_id = post.id %}
               {% assign swiper-news_counter = swiper-news_counter | plus:1 %}
                 <div class="swiper-slide">
@@ -61,7 +61,7 @@ events: true
             </div>
               <!-- Swiper JS -->
               <script src="../css/swiper.min.js"></script>
-      
+
               <!-- Initialize Swiper -->
               <script>
                 var swiper = new Swiper('.swiper-container', {
@@ -111,7 +111,7 @@ events: true
           <br />
         </div>
 
-        
+
 
         {% assign usual-news-counter = 0 %}
         <div class="row zebra-md">
