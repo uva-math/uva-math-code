@@ -14,7 +14,7 @@ more-text: Information about the ceremony
 ---
 
 
-[Final Exercises for the College and Graduate School of Arts & Sciences](https://majorevents.virginia.edu/finals/locations) will take place on **Saturday, May 17, 2025** on the Lawn.
+[Final Exercises for the College and Graduate School of Arts & Sciences](https://majorevents.virginia.edu/finals/schedule) will take place on **Saturday, May 17, 2025** on the Lawn.
 
 The **Mathematics Department Diploma Ceremony** will be held on **Saturday, May 17, 2025**, in the **Pavilion I, Lower Garden** from **11:00 a.m. to 12:30 p.m.**
 
