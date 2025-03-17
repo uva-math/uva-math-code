@@ -5,7 +5,7 @@ event-date: 2025-03-19 15:30:00
 comments: false
 categories: news events defenses
 published: true
-hide-this-item: true
+hide-this-item: false
 ---
 
 **Wojciech Tralle** will defend the thesis on **Wednesday, March 19**. The title is
