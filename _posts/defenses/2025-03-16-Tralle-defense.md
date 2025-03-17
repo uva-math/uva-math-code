@@ -14,7 +14,7 @@ hide-this-item: false
 
 - Date: Wednesday, March 19, 2025
 - Time: 3:30 pm
-- Place: Kerchof 311
+- Place: Kerchof 111
 - Committee: M. Ershov, V. Gazaki, I. Klich, A. Rapinchuk
 
 Everyone is invited to attend.
