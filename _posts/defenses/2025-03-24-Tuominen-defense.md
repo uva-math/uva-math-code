@@ -5,7 +5,7 @@ event-date: 2025-03-24 13:00:00
 comments: false
 categories: news events defenses
 published: true
-hide-this-item: false
+hide-this-item: true
 ---
 
 **Miika Tuominen** will defend the thesis on **Monday, March 24**. The title is
