@@ -47,3 +47,7 @@ letter of you last name.
 ---
 
 **Note:** If you would like to have a course count toward your major/minor, but it is not on the list of approved courses, please take the following fillable form to your advisor for approval and a signature:&nbsp;<a href="{{ site.url }}/undergraduate/docs/exception(fillable)_1.pdf">Course Exception for a Major/Minor in Mathematics</a> -->
+
+---
+
+- ### [Math Major Course Guide]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Spring25_version.pdf)
