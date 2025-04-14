@@ -8,7 +8,7 @@ published: true
 more-text: Abstract
 ---
 
-**Catherine Cossaboom** will defend the Distinguished Major Thesis on **Tuesday, April 22**. The title is
+**Catherine Cossaboom** will defend the Distinguished Major Thesis on **Tuesday, April 22** under the direction of advisor **Ken Ono**. The title is
 
 "_Distribution of Primes in Short Intervals_".
 
