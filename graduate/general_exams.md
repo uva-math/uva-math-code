@@ -16,8 +16,13 @@ Below are old exams and study materials for each of the subfields.
 <div class="row" markdown="1">
   <div class="col-md-4" markdown="1">
   
-  <h2>Algebra</h2>
+  <h2>Algebra</h2> 
   
+  - [01/2025]({{site.url}}/graduate/exams/algebra/2025-01.pdf)
+  - [08/2024]({{site.url}}/graduate/exams/algebra/2024-08.pdf)
+  - [01/2024]({{site.url}}/graduate/exams/algebra/2024-01.pdf)
+  - [08/2023]({{site.url}}/graduate/exams/algebra/2023-08.pdf)
+  - [01/2023]({{site.url}}/graduate/exams/algebra/2023-01.pdf)  
   - [08/2022]({{site.url}}/graduate/exams/algebra/2022-08.pdf)
   - [01/2022]({{site.url}}/graduate/exams/algebra/2022-01.pdf)
   - [08/2021]({{site.url}}/graduate/exams/algebra/2021-08.pdf)
