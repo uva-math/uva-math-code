@@ -3,7 +3,7 @@ layout: post
 title: "AWM/Math Club Colloquium: Caitlin Leverson (Bard College)"
 event-date: 2025-04-17 15:45:00
 comments: false
-categories: awm news major-news
+categories: awm news 
 published: true
 image: __SITE_URL__/img/awm/AWM_colloq_2025-04-17.png
 image-alt: Colloquium poster
