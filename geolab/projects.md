@@ -9,7 +9,7 @@ permalink: /geolab/projects/
 ### Spring 2025
 
 + Computer graphics and Robotics
-    - Mentors: [Bakhyt Aitzhanova](https://math.virginia.edu/people/axh7cj/)
+    - Mentors: Bakhyt Aitzhanova
     - Mentees: Danielle Amoateng, Yipeng Cao, Minu Choi, Doğa Eker, Temuulen Enkhtuvshin, Keegan Jewell, Otso Karali, Enoch Liu, Yashraj Vishwakarma.
     - Description: We will learn a standard method for solving the forward and inverse kinematic problems for a given robot “arm”. The forward kinematic problem is a fundamental concept in robotics and computer graphics that involves determining the position and orientation of the hand of a robot arm based on its joint parameters. Unlike forward kinematics, where the hand position is computed from known joint parameters, inverse kinematics works in reverse: given the hand position, we find the joint parameters. The inverse kinematic problem is more challenging because it often requires solving a system of non-linear polynomial equations.
  
