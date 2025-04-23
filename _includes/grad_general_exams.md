@@ -2,9 +2,9 @@ Passing grades on two General Examinations, chosen from Algebra, Analysis, and T
 
 These exams are typically offered twice a year, January and August. A student may repeat the examinations as many times as needed in order to satisfy the following requirements:
 
-**Old policy** (_applies to students who started their graduate program before Fall 2025_): Students are expected to attempt two different general examinations before the beginning of the third semester, to pass at least one general examination before the beginning of the fourth semester, and to pass both exams before the beginning of the sixth semester.
+**Old policy** (_applies to students who started their graduate program before August 2025_): Students are expected to attempt two different general examinations before the beginning of the third semester, to pass at least one general examination before the beginning of the fourth semester, and to pass both exams before the beginning of the sixth semester.
 
-**New policy** (_adopted in April 2025, applies to students who started their graduate program in Fall 2025 or later_):
+**New policy** (_adopted in April 2025, applies to students who started their graduate program in August 2025 or later_):
 Students are expected to attempt two different general examinations before the beginning of the third semester, to pass at least one general examination before the beginning of the fourth semester, and to pass both exams before the beginning of the fifth semester.
 
 
