@@ -6,6 +6,7 @@ comments: false
 categories: events defenses news
 published: true
 more-text: Abstract
+hide-this-item: true
 ---
 
 **Catherine Cossaboom** will defend the Distinguished Major Thesis on **Tuesday, April 22** under the direction of advisor **Ken Ono**. The title is
