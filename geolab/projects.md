@@ -6,28 +6,45 @@ permalink: /geolab/projects/
 
 <h2 class="mb-3">Past Projects</h2>
 
+### Spring 2025
+
++ Computer graphics and Robotics
+    - Mentors: Bakhyt Aitzhanova
+    - Mentees: Danielle Amoateng, Yipeng Cao, Minu Choi, Doğa Eker, Temuulen Enkhtuvshin, Keegan Jewell, Otso Karali, Enoch Liu, Yashraj Vishwakarma.
+    - Description: We will learn a standard method for solving the forward and inverse kinematic problems for a given robot “arm”. The forward kinematic problem is a fundamental concept in robotics and computer graphics that involves determining the position and orientation of the hand of a robot arm based on its joint parameters. Unlike forward kinematics, where the hand position is computed from known joint parameters, inverse kinematics works in reverse: given the hand position, we find the joint parameters. The inverse kinematic problem is more challenging because it often requires solving a system of non-linear polynomial equations.
+ 
++ Compass and Straightedge Constructions
+    - Mentors: Evangelia Gazaki, Michael Wills
+    - Mentees: Kyla Fish, Kyle Kirchheimer, Aris Lam, Emily Moore, Katharine Nichols, Jiaming Zhang.
+    - Description: This project will examine compass and straightedge constructions in the plane. We will use these tools to carry out explicit constructions (bisecting an angle, drawing a regular hexagon) as mathematicians have been doing for over 2000 years. Even as more and more constructions were discovered, some (such as constructing a square with the same area as a given circle) remained elusive. This project will also examine the seemingly distant branch of math known as Galois theory, and how it was used in the 1800’s to show the mathematical impossibility of these famous open problems.
+
++ Zome and polyhedra
+    - Mentors: Brandon Shapiro
+    - Mentees: Yunjie Tong Annie, Rachel Earle, Ari Escandon, Grayson Gemmell, Kate Peevey, Pierce Tan. 
+    - Description: The Zome toolkit makes it easy to build toy models of polyhedra, 3 dimensional solid shapes like cubes and pyramids built out of polygons on the outside. Using the Zome pieces, we can show why there are only 5 polyhedra whose faces are all the same shape, and also why in the fourth dimension there are only 6 shapes with the same kind of property. We will explor the geometry of shapes we can build using Zome, such as angles, counting faces of solid shapes, symmetries, knots, and/or many other possibilities.
+
 ### Fall 2024
 
++ Computer graphics and Robotics
+    - Mentor: Bakhyt Aitzhanova
+    - Mentees: David Cao, Zachary Forino, Josh Gao, Alex Wei, Alexander Yao.
+    - Description: We learned a standard method for solving the forward kinematic problem for a given robot "arm". The forward kinematic problem is a fundamental concept in robotics and computer graphics that involves determining the position and orientation of the end-effector (or the tip) of a robot arm based on its joint parameters.
+
++ Billiards and Translation Surfaces
+    - Mentors: Lam Nguyen, Oliver Wang
+    - Mentees: Mariam Grigorian, Brian Lai, Emily Moore, Alessia Natalucci, Ismoil Nosirov, Dominic Tran, Jiaming Zhang.
+    - Description: If a billiards player hits a ball in a particular direction, will it eventually drop in a pocket, and if so, after how many bounces? Questions like this one are the subject of mathematical billiards, and answering them surprisingly requires us to connect multiple branches of math including geometry, number theory, and linear algebra. In this project, we explored how examining billiards naturally leads to the geometric notion of translation surfaces, and we investigated the properties of flows on these surfaces.
+
 + Coding Theory and Finite Fields
-    - Mentors: [J.D. Quigley](https://quigleyjd.github.io/), [Michael Wills](https://sites.google.com/view/michael-wills/)
+    - Mentors: J.D. Quigley, Michael Wills
     - Mentees: Nate Bryerton, Arun Jannupreddy, Malik Kurtz, Dailin Li, Rohan Radadiya, Ridge Redding, Eva Simpson
     - Description: We learned about how one can mathematically harden information against random errors in transmission by the strategic addition of redundancy. We wrote functioning code implementing various systems for achieving this, and learned how to compare their performance. Many familiar objects from geometry can be described using polynomial equations. For instance, the unit circle is the set of points in the xy-plane such that x^2+y^2-1=0, while the equation x^2-y^2-1=0 describes a hyperbola. In this project, we studied polynomials in exotic contexts for arithmetic called "finite fields". One motivation to investigate this kind of geometry comes from coding theory, which is the mathematics of how to make digital messages resistant to random noise.
     - [Final Project](https://github.com/rr-102/FiniteFields-CodingTheory/blob/main/README.md)
 
 + Zome and polyhedra
-    - Mentor: [Brandon Shapiro](https://math.virginia.edu/people/pfy7cf/)
+    - Mentor: Brandon Shapiro
     - Mentees: Maya Clifford, Kyla Fish, Justin Gu, Wenwan Xu.
     - Description: The Zome toolkit makes it easy to build toy models of polyhedra, 3 dimensional solid shapes like cubes and pyramids built out of polygons on the outside. Using the Zome pieces, we can show why there are only 5 polyhedra whose faces are all the same shape, and also why in the fourth dimension there are only 6 shapes with the same kind of property. We explored the geometry of shapes we can build using Zome, such as angles, counting faces of solid shapes, symmetries, knots, and/or many other possibilities.
-
-+ Billiards and Translation Surfaces
-    - Mentors: [Lam Nguyen](https://math.virginia.edu/people/qsg2kv/), [Oliver Wang](https://math.virginia.edu/people/dfh3fs/)
-    - Mentees: Mariam Grigorian, Brian Lai, Emily Moore, Alessia Natalucci, Ismoil Nosirov, Dominic Tran, Jiaming Zhang.
-    - Description: If a billiards player hits a ball in a particular direction, will it eventually drop in a pocket, and if so, after how many bounces? Questions like this one are the subject of mathematical billiards, and answering them surprisingly requires us to connect multiple branches of math including geometry, number theory, and linear algebra. In this project, we explored how examining billiards naturally leads to the geometric notion of translation surfaces, and we investigated the properties of flows on these surfaces.
-
-+ Computer graphics and Robotics
-    - Mentor: [Bakhyt Aitzhanova](https://math.virginia.edu/people/axh7cj/)
-    - Mentees: David Cao, Zachary Forino, Josh Gao, Alex Wei, Alexander Yao.
-    - Description: We learned a standard method for solving the forward kinematic problem for a given robot "arm". The forward kinematic problem is a fundamental concept in robotics and computer graphics that involves determining the position and orientation of the end-effector (or the tip) of a robot arm based on its joint parameters.
 
 ### Spring 2024
 
