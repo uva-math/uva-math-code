@@ -11,7 +11,7 @@ nav_weight: 8
 
 **Note:** *The information and policies contained on this website is for informational purposes only. The Undergraduate Record and Graduate Record represent the official repository for academic program requirements. These publications may be found at [`http://records.ureg.virginia.edu/index.php`](http://records.ureg.virginia.edu/index.php).*
 
-*Official requirements for our graduate degrees are listed in the [Mathematics section of the Graduate Record](http://records.ureg.virginia.edu/preview_program.php?catoid=38&poid=4093).*
+*Official requirements for our graduate degrees are listed in the [Mathematics section of the Graduate Record](https://records.ureg.virginia.edu/preview_program.php?catoid=62&poid=9057).*
 
 *The general rules and requirements governed by the Graduate School of Arts and Sciences can also be found in the Graduate Record under [Policies](http://records.ureg.virginia.edu/content.php?catoid=38&navoid=2193).*
 
@@ -31,12 +31,12 @@ Courses and research amounting to 72 credit hours. Courses must include satisfac
 
 ### Second-Year Proficiency Examination
 
-The purpose of the oral exam is to assess whether a student is prepared to begin doing research in their chosen area with a thesis advisor.  The exam format is flexible and can be tailored to the students’ and examiners’ preferences. For example, it can consist of the student giving a presentation, followed by a question-and-answer period with the examiners, but it could also simply take the form of a question-and-answer exam.  Typically these exams should be expected to take 1.5-2 hours. 
- 
-A student should develop an exam syllabus together with the intended thesis advisor and one additional permanent faculty member.  The nature of the syllabus can be flexible, depending on the research area and preferences of the student and examiners.  It could still take the form of a list of topics in a given area, drawn from a course or from standard textbooks, but could also take the form of a review of relevant papers, or a suitable combination.  The quantity of material should be roughly comparable to the content of two second-year courses.  While the exam format can be flexible, in the ways discussed above, it should be specified in the syllabus for approval.   
- 
-The syllabus should be submitted to the Graduate Committee at least four weeks before the intended exam to allow for adequate time for review and revision, if necessary.  After the exam, regardless of the outcome, a form should be submitted to the department, including signatures of the two faculty examiners, indicating which of the two is the intended advisor, as well as the Director of Graduate Studies, to confirm that the syllabus was approved by the Graduate Committee.   
- 
+The purpose of the oral exam is to assess whether a student is prepared to begin doing research in their chosen area with a thesis advisor.  The exam format is flexible and can be tailored to the students’ and examiners’ preferences. For example, it can consist of the student giving a presentation, followed by a question-and-answer period with the examiners, but it could also simply take the form of a question-and-answer exam.  Typically these exams should be expected to take 1.5-2 hours.
+
+A student should develop an exam syllabus together with the intended thesis advisor and one additional permanent faculty member.  The nature of the syllabus can be flexible, depending on the research area and preferences of the student and examiners.  It could still take the form of a list of topics in a given area, drawn from a course or from standard textbooks, but could also take the form of a review of relevant papers, or a suitable combination.  The quantity of material should be roughly comparable to the content of two second-year courses.  While the exam format can be flexible, in the ways discussed above, it should be specified in the syllabus for approval.
+
+The syllabus should be submitted to the Graduate Committee at least four weeks before the intended exam to allow for adequate time for review and revision, if necessary.  After the exam, regardless of the outcome, a form should be submitted to the department, including signatures of the two faculty examiners, indicating which of the two is the intended advisor, as well as the Director of Graduate Studies, to confirm that the syllabus was approved by the Graduate Committee.
+
 Students already enrolled in Fall 2022 or earlier, before this format was approved, may opt to take the oral exam in the previous format of two faculty examining a student on the material from two semester courses on material beyond the first-year courses.
 
 ### Teaching Requirements
