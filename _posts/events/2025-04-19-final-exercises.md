@@ -18,6 +18,18 @@ more-text: Information about the ceremony
 
 The **Mathematics Department Diploma Ceremony** will be held on **Saturday, May 17, 2025**, in the **Pavilion I, Lower Garden** from **11:00 a.m. to 12:30 p.m.**
 
+
+
+### FAQ
+
+**Will I be included in the math graduation ceremony if math is my second major?**
+Yes, all students who are graduating with a major in mathematics, whether it is their primary or secondary major, are invited to participate in the Mathematics Department Diploma Ceremony.
+
+**Are tickets required for the math ceremony?**
+No, tickets are not required for the Mathematics Department Diploma Ceremony. Family and friends are welcome to attend.
+
+For more information about university-wide graduation events, please visit the [Office of Major Events](https://majorevents.virginia.edu/finals) website.
+
 <!--more-->
 
 ### General Info
@@ -44,6 +56,3 @@ Light refreshments will be available at the venue before the ceremony.
     - M.S. Mathematics
     - Ph.D. Mathematics
 - **12:30:** End of event
-
-
-For more information about university-wide graduation events, please visit the [Office of Major Events](https://majorevents.virginia.edu/finals) website.
