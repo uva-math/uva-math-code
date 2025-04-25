@@ -13,6 +13,6 @@ published: true
 
 - Date: Friday, April 25
 - Time: 2:00 pm
-- Place: Kerchof 326
+- Place: Kerchof 317
 
 Everyone is cordially invited to attend.
