@@ -5,6 +5,7 @@ event-date: 2025-04-25 17:00:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **Samir Fridhi** will defend the Master's thesis on **Friday, April 25th**. The title is

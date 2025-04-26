@@ -5,6 +5,7 @@ event-date: 2025-04-25 13:30:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **Mojdeh Tarighat Feller** will defend the Ph.D. thesis on **Friday, April 25th**. The title is
