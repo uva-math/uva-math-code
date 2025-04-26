@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Liran Li: DMP Thesis Defense"
+title: "DMP thesis defense: Liran Li"
 event-date: 2025-04-30 11:30:00
 comments: false
 categories: events defenses news

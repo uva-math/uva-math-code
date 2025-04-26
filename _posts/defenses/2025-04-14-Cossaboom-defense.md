@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Catherine Cossaboom: DMP Thesis Defense"
+title: "DMP thesis defense: Catherine Cossaboom"
 event-date: 2025-04-22 09:00:00
 comments: false
 categories: events defenses news
