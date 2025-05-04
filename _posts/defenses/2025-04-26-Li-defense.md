@@ -5,7 +5,7 @@ event-date: 2025-04-30 11:30:00
 comments: false
 categories: events defenses news
 published: true
-hide-this-item: false
+hide-this-item: true
 ---
 
 **Liran Li** will defend the Distinguished Major Thesis on **Wednesday, April 30** titled

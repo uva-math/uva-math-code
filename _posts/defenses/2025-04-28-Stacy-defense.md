@@ -5,6 +5,7 @@ event-date: 2025-04-30 11:00:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **Declan Stacy** will defend the Master thesis on **Wednesday, April 30**. The title is

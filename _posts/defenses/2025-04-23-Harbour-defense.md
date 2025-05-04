@@ -5,6 +5,7 @@ event-date: 2025-04-29 11:00:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **James Harbour** will defend the DMP thesis on **Tuesday, April 29th**. The title is
