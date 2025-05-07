@@ -5,6 +5,7 @@ event-date: 2025-05-05 15:00:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **Nikolas Dillery** will defend the DMP thesis on **Monday, May 5**. The title is
