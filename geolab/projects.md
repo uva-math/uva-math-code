@@ -20,7 +20,7 @@ permalink: /geolab/projects/
 
 + Zome and polyhedra
     - Mentors: Brandon Shapiro
-    - Mentees: Yunjie Tong Annie, Rachel Earle, Ari Escandon, Grayson Gemmell, Kate Peevey, Pierce Tan. 
+    - Mentees: Yunjie Tong Annie, Rachel Earle, Ari Escandon, Grayson Gemmell, George Li, Kate Peevey, Pierce Tan. 
     - Description: The Zome toolkit makes it easy to build toy models of polyhedra, 3 dimensional solid shapes like cubes and pyramids built out of polygons on the outside. Using the Zome pieces, we can show why there are only 5 polyhedra whose faces are all the same shape, and also why in the fourth dimension there are only 6 shapes with the same kind of property. We will explor the geometry of shapes we can build using Zome, such as angles, counting faces of solid shapes, symmetries, knots, and/or many other possibilities.
 
 ### Fall 2024
