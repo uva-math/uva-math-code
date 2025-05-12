@@ -48,12 +48,13 @@ title: "Title of Your Announcement"
 event-date: 2025-05-09 12:00:00
 multi-day-event: true
 comments: false
-categories: news events conferences
+categories: news events conferences swiper-news
 published: true
 image: __SITE_URL__/img/news_events/example-image.jpg
 image-alt: "Description of the image for accessibility"
 image-tall: true
 more-text: "Details and Schedule"
+good-md: true
 ---
 ```
 
@@ -78,6 +79,7 @@ more-text: "Details and Schedule"
 - `more-text` - Custom text for the "read more" button (defaults to "View details")
 - `hide-this-item: true` - Hides post from main page but not from category pages or all news
 - `permalink` - Custom URL for the post (default is `/YYYY/MM/name-of-the-post`)
+- `good-md: true` - Indicates that the markdown in the post is well-formed (affects rendering)
 
 ### Categories
 
@@ -92,30 +94,41 @@ categories: news events conferences
 - `news` - Required for posts to appear on the main page (up to 5 most recent)
 - `events` - Use for all event announcements
 - `conferences` - **Required** for all workshop, symposium, and conference announcements
-- `major-news` - Makes the post appear larger at the top of the main page
+- `major-news` - Makes the post appear larger at the top of the main page (for non-swiper posts)
+- `swiper-news` - Includes post in the carousel/slider on the main page (limited to 6 posts)
 - `virginia-mathematics-lectures` - For IMS lecture announcements
 - `awards` - For award announcements
 - `jobs` - For job opportunity posts
 - `virginia-math-bulletin` - For Virginia Math Bulletin issues
+- `ims` - For IMS-related announcements
+- `ims-special` - For special IMS events
 
 #### Category Usage Examples:
 
 - Conference announcement: `categories: news events conferences`
+- Featured award announcement: `categories: news awards swiper-news`
 - Major department event: `categories: news events major-news`
-- Award announcement: `categories: news awards`
 - IMS lecture: `categories: news events virginia-mathematics-lectures ims`
+
+### Content Display Controls
+
+- **Carousel/Swiper**: Add `swiper-news` category to include a post in the main page carousel (limited to 6 posts)
+- **Featured Box**: Posts with `major-news` that don't have `swiper-news` appear in a larger gray box below the carousel
+- **Standard Display**: Other posts with the `news` category appear in the main news grid
 
 ### Post Content
 
 - Use markdown for post content
 - Place `<!--more-->` to separate the excerpt (shown in list views) from full content
 - Include key details in the excerpt for visibility in post rolls
+- Add `good-md: true` to front matter if your post contains well-formatted markdown
 - Math formulas are supported using LaTeX syntax
 
 ### Images
 
 - Store images in `/img/news_events/` or an appropriate subfolder of `/img/`
 - Reference images with the `__SITE_URL__` prefix: `__SITE_URL__/img/news_events/image.jpg`
+- For carousel/swiper posts, use an image with aspect ratio around 16:9 for best results
 - For the main post image, use the `image` front matter field
 - Additional images can be added manually in the post content using markdown
 
@@ -133,6 +146,22 @@ This ensures links work correctly across different environments.
 
 ---
 
+## People References
+
+To reference department members, use the person_info include rather than hardcoding names:
+
+```
+{% raw %}{% include person_info_just_name.html UVA_id="cc2wn" %}{% endraw %}
+```
+
+Available include formats:
+- `person_info.html` - Full name, title, email, phone
+- `person_info_just_name.html` - Just the person's name
+- `person_info_email_only.html` - Name with email
+- `person_info_no_phone.html` - Name, title, email (no phone)
+
+---
+
 ## Publishing Workflow
 
 1. Create a new file with the correct naming convention in the appropriate subfolder
@@ -145,11 +174,35 @@ This ensures links work correctly across different environments.
 
 ## Page Visibility
 
-- **Main Department Page**: Shows 5 most recent posts with the `news` category
+- **Main Page Carousel**: Shows up to 6 posts with `swiper-news` category
+- **Main Page Featured Box**: Shows 1 post with `major-news` (without `swiper-news`)
+- **Main Page News Grid**: Shows up to 6 regular posts with `news` category
 - **All News Page**: Shows all published posts regardless of category
 - **Category Pages**: Show all posts with specific categories (e.g., conferences page)
 
 Use `hide-this-item: true` to hide items from the main page after they're no longer timely, while keeping them in archives.
+
+---
+
+## Special Post Types
+
+### Defenses
+
+PhD and DMP defense announcements should be created in `_posts/defenses/` with format:
+```
+YYYY-MM-DD-lastname-defense.md
+```
+
+Example categories: `categories: news events defenses`
+
+### Job Postings
+
+Job postings should be created in `_posts/jobs/` with format:
+```
+YYYY-MM-DD-jobs-YYYY.md
+```
+
+Example categories: `categories: news jobs`
 
 ---
 
