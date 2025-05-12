@@ -236,23 +236,25 @@ and should not be included for more or less square images.
 
 The posts are automatically displayed in a number of pages, including the following.
 
-**Note.** This information is current as of May 14, 2017, and more pages displaying posts might have been added.
+**Note.** This information is current as of May 2023.
 
 ### [Department main page]({{site.url}})
 
-The main department page [{{site.url}}]({{site.url}})
-displays up to 5 posts with category `news`. If a post does not have category `news` then it will not
-be displayed on the main page. Most posts thus should have category `news`.
+The main department page [{{site.url}}]({{site.url}}) has three display areas for news posts:
 
-If among the posts displayed on the main page
-there is a post with category `major-news`,
-then it is displayed on top with a larger picture.
-Only one `major-news` will be displayed like this, even if there are
-several such posts on the main page.
-If one wants to highlight a particular post then one should
-add `major-news` category to it, and remove this category
-from the other posts on the main page.
-The `major-news` category only affects posts displayed on the main page.
+1. **Carousel/Swiper**: The top section displays up to 6 recent posts with the `swiper-news` category in a rotating carousel.
+2. **Featured Box**: Below the carousel, one post with the `major-news` category (but not having `swiper-news`) is displayed in a larger gray box.
+3. **News Grid**: Finally, up to 6 recent posts with the `news` category (excluding those already shown in the carousel or featured box) are displayed in a grid format.
+
+If a post does not have the `news` category, it will not be displayed on the main page. Most posts should have the `news` category.
+
+#### Display Control Categories:
+
+- `news` - Required for posts to appear on the main page in any section
+- `swiper-news` - Includes post in the carousel/slider at the top of the main page (limited to 6 posts)
+- `major-news` - Makes a post appear in the larger featured box (when not also in the carousel)
+
+Only one `major-news` will be displayed in the featured box, even if there are several such posts available. If you want to highlight a particular post, add the `major-news` category to it, and consider removing this category from other posts. The `major-news` category only affects posts displayed on the main page.
 
 ### ["All news" page]({{site.url}}/allnews/)
 
