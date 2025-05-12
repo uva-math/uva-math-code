@@ -40,7 +40,9 @@ title: University of Virginia Mathematics Colloquium #override the default title
 
 ### Core functionality
 
-The main day-to-day content in the seminar pages is taken from google calendars. Each seminar has its own google calendar, and a javascript code on the page pulls the seminar entries and displays them in a nice format on a seminar page. The seminar organizers continue to update their seminar's google calendars as usual.
+The main day-to-day content in the seminar pages is taken from Google Calendars. Each seminar has its own Google Calendar, and JavaScript code on the page pulls the seminar entries and displays them in a nice format on the seminar page. The seminar organizers continue to update their seminar's Google Calendars as usual.
+
+**Note:** If you experience issues with calendars not displaying, please contact {% include person_info_email_only.html UVA_id="lap5r" %}.
 
 The fields `content=""` and `contacts=""` allow to add some extra content into specific places on the automatically generated seminar page: the first field adds before `UPCOMING TALKS` list, and the second field - before the `Contact:` information at the bottom of the page.
 
@@ -84,10 +86,9 @@ The javascript code which generates talks lists is in the files `_includes/cal_m
   information: |
     The Probability Seminar is the place to see talks on active research topics in probability theory, as well as informal discussions of basic notions of probability.  We typically have invited speakers every 2-3 weeks presenting a wide array of research in probability. Most other weeks are informal discussions led by local participants, often graduate students discussing recently studied topics. The seminar is open to all. Feel free to attend regularly or occasionally.
   contact:
-    - UVA_id: hcg3m
-    - UVA_id: tam7b
-    - UVA_id: lap5r
-    - UVA_id: ais6a
+    - UVA_id: faculty_id_1
+    - UVA_id: faculty_id_2
+    # List the computing IDs of seminar organizers here
 {% endhighlight %}
 
 Some configuration fields are self-evident. Here are explanations for the rest:

@@ -7,8 +7,6 @@ doc_page: true
 nav_weight: 102
 ---
 
-# (Note! This documentation is slightly outdated)
-
 # People pages and research areas
 
 ---
@@ -124,12 +122,7 @@ To *add a person*, make a new file and fill all the fields in. The person's page
 
 To *remove a person*, either delete the file, or remove it from the building of the website by adding `published: false`, say, before the `areas:` line.
 
-<div class="orange-item mb-2" style="padding:10px">
-<b>[update: April 24, 2018]</b>
-<br> 
-The setting <code class="highlighter-rouge">published: false</code> appears to be broken in a new version of Jekyll, 
-so please manually move the source files to a special folder <code class="highlighter-rouge">/_UNPUBLISHED/</code> in the source
-</div>
+To unpublish a person's page, set `published: false` in their file, or move the file to the `/_UNPUBLISHED/` directory.
 
 ---
 

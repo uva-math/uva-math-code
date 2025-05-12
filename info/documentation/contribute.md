@@ -39,8 +39,7 @@ require signing up at [GitHub](https://www.github.com)  - but the process is ver
 
 ## 0. Good old email or personal conversation
 
-You can send an email to
-{% include person_info_email_only.html UVA_id="lap5r" %}, {% include person_info_email_only.html UVA_id="hcg3m" %}, or {% include person_info_email_only.html UVA_id="raj3e" %}, or talk to one of them, and explain what needs to be updated.
+You can send an email to {% include person_info_email_only.html UVA_id="lap5r" %} or to the department chair and explain what needs to be updated.
 
 This way of communication is **by no means discouraged**, as the head goal is that the website
 contains up-to-date and relevant information.
@@ -53,7 +52,7 @@ containing more of the relevant information.
 ## 1. GitHub issues
 
 Having a [GitHub](https://www.github.com) account, one can add an **issue**. Current issues for the website are
-located here: [`https://github.com/uva-math/uva-math-code/issues`](https://github.com/uva-math/uva-math-code/issues). There si also wiki page at [`https://github.com/uva-math/uva-math-code/wiki/Issues-extended`](https://github.com/uva-math/uva-math-code/wiki/Issues-extended) for issues with longer turnaround.
+located here: [`https://github.com/uva-math/uva-math-code/issues`](https://github.com/uva-math/uva-math-code/issues). There is also a wiki page at [`https://github.com/uva-math/uva-math-code/wiki/Issues-extended`](https://github.com/uva-math/uva-math-code/wiki/Issues-extended) for issues with longer turnaround.
 A new issue can be added by anyone. **Issues are public** (but after all we're talking about editing a public website, right?).
 
 The advantage of issues is that they can easily reference code, can be discussed and commented on, and ultimately be resolved and closed
@@ -103,15 +102,14 @@ at [`https://github.com/uva-math/uva-math-code/pulls`](https://github.com/uva-ma
 
 ## 3. Full edit access
 
-Faculty members can receive full editing access from the administrators.
-This allows to edit any source file, on the web as explained above,
-or you can download a local copy of the source and then push changes to GitHub.
-Upon committing the changes to the GitHub the webpage will be automatically
+Faculty members can receive full editing access from {% include person_info_email_only.html UVA_id="lap5r" %}.
+This allows you to edit any source file, either on the web as explained above,
+or by downloading a local copy of the source and then pushing changes to GitHub.
+Upon committing the changes to GitHub, the webpage will be automatically
 updated (this takes about 5 minutes).
 Any change can be reverted, and changes that break the website will not
 appear on the actual webpage. Therefore, do not hesitate to ask
-{% include person_info_email_only.html UVA_id="lap5r" %} or {% include person_info_email_only.html UVA_id="hcg3m" %}
-for full edit access and relevant training.
+{% include person_info_email_only.html UVA_id="lap5r" %} for full edit access and relevant training.
 
 **Note**: Unfortunately, GitHub does not provide partial editing access (of only specific files).
 However, this restriction is natural because any file can in principle change name and/or location.
