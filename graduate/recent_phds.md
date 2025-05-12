@@ -23,7 +23,7 @@ The list includes initial job placement or current job (if known).
   (Advisor: Ken Ono)
 
 - **Donnelly Phillips**<br>
-  TBA<br>
+  MITRE, Applied Mathematician<br>
   (Advisor: Tai Melcher)
 
 - **Hasan Saad**<br>
