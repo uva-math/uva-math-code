@@ -9,5 +9,6 @@ phone: 434-924-4937
 email: zk4g@virginia.edu
 image: __SITE_URL__/img/people/Kish.jpg
 personal_page:
+published: false
 
 ---
