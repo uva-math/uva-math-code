@@ -26,8 +26,5 @@ tooltips: true
 - ##### Graduate Admissions:<br>
 {% include person_info_email_only.html UVA_id="asr3x" %}
 
-- ##### Bridge program:<br>
-{% include person_info_email_only.html UVA_id="des5e" %}
-
 - ##### Ombudsperson:<br>
 {% include person_info_email_only.html UVA_id="ph7ph" %} (Fall), {% include person_info_email_only.html UVA_id="yqd3p" %} (Spring)

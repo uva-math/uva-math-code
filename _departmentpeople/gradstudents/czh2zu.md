@@ -3,7 +3,7 @@ UVA_id: czh2zu
 lastname: Fridhi
 name: Samir
 general_position: gradstudent
-position: Bridge to the Doctorate Student
+position: Graduate Student
 office: 403 Kerchof Hall
 phone: 
 email: czh2zu@virginia.edu
