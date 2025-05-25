@@ -41,18 +41,18 @@
         <div class="col-md-6">
 
           {% if page.phone != null %}
-            <span class="fa fa-phone" aria-hidden="true"></span>
+            <span class="fa-solid fa-phone" aria-hidden="true"></span>
             <a href="tel:{{page.phone}}">{{page.phone}}</a><br />
           {% endif %}
 
           {% if page.email != null %}
-            <span class="fa fa-envelope" aria-hidden="true"></span>
+            <span class="fa-solid fa-envelope" aria-hidden="true"></span>
             <a href="mailto:{{ page.email }}">{{ page.email }}</a>
             <br />
           {% endif %}
 
           {% if page.personal_page != null %}
-            <span class="fa fa-external-link" aria-hidden="true"></span>
+            <span class="fa-solid fa-up-right-from-square" aria-hidden="true"></span>
             <a href="{{ page.personal_page }}" target="_blank">Personal webpage</a>
           {% endif %}
         </div>

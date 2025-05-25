@@ -37,29 +37,29 @@
     </div>
     <div class="col-md-4">
       {% if ppl.office != null %}
-        <span class="fa fa-building" aria-hidden="true" style="font-size:0.8em"></span>
+        <span class="fa-solid fa-building" aria-hidden="true" style="font-size:0.8em"></span>
         {{ppl.office}}
         {% if ppl.office_hours != null %}
-          <br><span class="fa fa-clock-o" aria-hidden="true" style="font-size:0.8em"></span>
+          <br><span class="fa-regular fa-clock" aria-hidden="true" style="font-size:0.8em"></span>
           Office hours: {{ppl.office_hours}}
         {% endif %}
         <br>
       {% endif %}
 
       {% if ppl.phone != null %}
-        <span class="fa fa-phone" aria-hidden="true" style="font-size:0.8em"></span>
+        <span class="fa-solid fa-phone" aria-hidden="true" style="font-size:0.8em"></span>
         <a href="tel:{{ppl.phone}}">{{ppl.phone}}</a>
         <br>
       {% endif %}
 
       {% if ppl.email != null %}
-        <span class="fa fa-envelope" aria-hidden="true" style="font-size:0.8em"></span>
+        <span class="fa-solid fa-envelope" aria-hidden="true" style="font-size:0.8em"></span>
         <a href="mailto:{{ ppl.email }}">{{ ppl.email }}</a>
       {% endif %}
       <br>
 
       {% if ppl.personal_page != null %}
-        <span class="fa fa-external-link" aria-hidden="true" style="font-size:0.8em"></span>
+        <span class="fa-solid fa-up-right-from-square" aria-hidden="true" style="font-size:0.8em"></span>
         <a href="{{ ppl.personal_page }}">Personal page</a>
       {% endif %}
     </div>
