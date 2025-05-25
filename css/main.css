@@ -13,6 +13,7 @@ body {
 
 a:link, a:visited {
   color: #2A69A6;
+  text-decoration: none;
 }
 
 a:focus, a:hover {
@@ -499,6 +500,86 @@ font-weight: bold;
 /* Ensure dropdown-menu-end works */
 .dropdown-menu-end {
   --bs-position: end;
+}
+
+/* Style secondary buttons as white with gray hover */
+.btn-secondary {
+  background-color: white;
+  border-color: #dee2e6;
+  color: #2A69A6;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:active,
+.btn-secondary.active {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+  color: #2A69A6;
+}
+
+/* Fix for button focus state */
+.btn-secondary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(222, 226, 230, 0.5);
+}
+
+/* Modern list group sidebar styling */
+.list-group-item-action {
+  color: #495057;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,.125);
+  text-decoration: none;
+}
+
+.list-group-item-action:hover,
+.list-group-item-action:focus {
+  color: #495057;
+  background-color: #f8f9fa;
+  text-decoration: none;
+}
+
+.list-group-item-action.active {
+  color: #fff;
+  background-color: #002F6C;
+  border-color: #002F6C;
+}
+
+/* Orange section headers */
+.list-group-item.orange-item {
+  background-color: rgba(235, 95, 12, 0.1);
+  border-color: rgba(235, 95, 12, 0.3);
+  color: #002F6C;
+  font-weight: 600;
+}
+
+.list-group-item.orange-item:hover {
+  background-color: rgba(235, 95, 12, 0.15);
+}
+
+.list-group-item.orange-item.active {
+  background-color: #EB5F0C;
+  border-color: #EB5F0C;
+  color: white;
+}
+
+/* Clean list group styling */
+.list-group-sm {
+  border-radius: 0.375rem;
+}
+
+.list-group-sm .list-group-item {
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+}
+
+.list-group-sm .list-group-item:first-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.list-group-sm .list-group-item:last-child {
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
 }
 
 
