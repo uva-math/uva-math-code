@@ -12,8 +12,8 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 ## 📋 Remaining Libraries to Update
 
 ### 1. Bootstrap (HIGH PRIORITY)
-**Current:** 4.0.0-alpha.6 (alpha from 2017)  
-**Target:** 5.3.3 (latest stable)  
+**Current:** 4.0.0-alpha.6 (alpha from 2017)
+**Target:** 5.3.3 (latest stable)
 **Breaking Changes:** Major - Bootstrap 5 has significant changes from v4
 
 **Tasks:**
@@ -28,8 +28,8 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 - [ ] Test responsive layouts thoroughly
 
 ### 2. jQuery (MEDIUM PRIORITY)
-**Current:** 3.2.1 (2017)  
-**Target:** 3.7.1 (latest)  
+**Current:** 3.2.1 (2017)
+**Target:** 3.7.1 (latest)
 **Note:** Bootstrap 5 no longer requires jQuery, consider removing
 
 **Tasks:**
@@ -39,8 +39,8 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 - [ ] Consider migrating jQuery code to vanilla JavaScript
 
 ### 3. KaTeX (MEDIUM PRIORITY)
-**Current:** 0.7.1 (2016-2017)  
-**Target:** 0.16.11 (latest)  
+**Current:** 0.7.1 (2016-2017)
+**Target:** 0.16.11 (latest)
 **Breaking Changes:** Minimal, mostly additive
 
 **Tasks:**
@@ -49,21 +49,9 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 - [ ] Update any custom KaTeX configurations
 - [ ] Verify auto-render functionality
 
-### 4. MathJax (LOW PRIORITY)
-**Current:** 2.7.0 (2017)  
-**Target:** 3.2.2 (latest)  
-**Breaking Changes:** Major - v3 is a complete rewrite
-
-**Tasks:**
-- [ ] Determine if both KaTeX and MathJax are needed
-- [ ] If keeping MathJax, plan v2 to v3 migration
-- [ ] Update configuration format (significant changes)
-- [ ] Update CDN links
-- [ ] Test on pages that use MathJax
-
-### 5. Swiper.js (LOW PRIORITY)
-**Current:** 6.5.9 (2021 - relatively recent)  
-**Target:** 11.1.15 (latest)  
+### 4. Swiper.js (LOW PRIORITY)
+**Current:** 6.5.9 (2021 - relatively recent)
+**Target:** 11.1.15 (latest)
 **Breaking Changes:** Some API changes between v6 and v11
 
 **Tasks:**
@@ -72,8 +60,8 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 - [ ] Update initialization code
 - [ ] Test carousel/slider functionality
 
-### 6. HTML5 Shim (CLEANUP)
-**Current:** Legacy Google Code link  
+### 5. HTML5 Shim (CLEANUP)
+**Current:** Legacy Google Code link
 **Status:** Deprecated - IE 6-8 support no longer needed
 
 **Tasks:**
@@ -108,8 +96,7 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 2. **jQuery** - May be eliminated with Bootstrap 5
 3. **KaTeX** - Important for math content, relatively easy update
 4. **HTML5 Shim** - Quick win, just remove
-5. **MathJax** - Complex update, evaluate necessity
-6. **Swiper.js** - Already relatively recent, lower priority
+5. **Swiper.js** - Already relatively recent, lower priority
 
 ## 🚀 Deployment Strategy
 
@@ -133,5 +120,4 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 - [Bootstrap 5 Migration Guide](https://getbootstrap.com/docs/5.0/migration/)
 - [jQuery Release Notes](https://blog.jquery.com/category/releases/)
 - [KaTeX Changelog](https://katex.org/docs/CHANGELOG.html)
-- [MathJax v3 Upgrade Guide](https://docs.mathjax.org/en/latest/upgrading/v2.html)
 - [Swiper Migration Guides](https://swiperjs.com/migration-guide)
