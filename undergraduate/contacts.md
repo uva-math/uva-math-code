@@ -21,8 +21,7 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="brh5c" %}
 
 - ##### Director of Undergraduate Studies:<br>
- &bull; {% include DUS.html UVA_id="des5e" %}
- 
+{% include DUS.html UVA_id="des5e" %}
 
 - <h5>{% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinator:</h5>
 {% include person_info_email_only.html UVA_id="jsr2pz" %}
