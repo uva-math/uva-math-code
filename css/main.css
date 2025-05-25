@@ -497,6 +497,35 @@ font-weight: bold;
   border-radius: .25rem;
 }
 
+/* Better hamburger menu styling */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler i {
+  color: #002F6C;
+}
+
+.navbar-toggler:hover {
+  background-color: rgba(0, 47, 108, 0.1);
+}
+
+/* Remove the orange background from secondary menu button */
+.navbar-toggler.orange-item {
+  background-color: transparent !important;
+  color: #EB5F0C;
+}
+
+.navbar-toggler.orange-item i {
+  color: #EB5F0C;
+}
+
+/* Style the mobile page title */
+.navbar .h5 {
+  font-weight: 600;
+  color: #002F6C !important;
+}
+
 /* Ensure dropdown-menu-end works */
 .dropdown-menu-end {
   --bs-position: end;
