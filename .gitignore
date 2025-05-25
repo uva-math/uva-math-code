@@ -24,3 +24,7 @@ script/page.html
 .DS_Store
 .aider*
 .env
+
+_site*
+_includes_backup*
+_layouts_backup*
