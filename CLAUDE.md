@@ -207,3 +207,51 @@ Example categories: `categories: news jobs`
 ---
 
 For more detailed documentation, see the [website documentation pages](https://math.virginia.edu/doc/).
+
+---
+
+## Repository Structure Overview
+
+This repository contains the source code for the University of Virginia Mathematics Department website (math.virginia.edu). It's a Jekyll-based static site that serves comprehensive information about the department's academic programs, people, research, and events.
+
+### Key Technology Stack
+- **Jekyll** - Static site generator that converts markdown to HTML
+- **GitHub Pages** - Hosting and deployment
+- **Markdown** - Primary content format
+- **YAML** - Configuration and structured data
+
+### Major Content Areas
+
+1. **News & Events** (`_posts/`)
+   - Organized by type: conferences, awards, defenses, jobs, events
+   - Date-based naming: `YYYY-MM-DD-title.md`
+   - Categories control where posts appear on the site
+
+2. **People Profiles** (`_departmentpeople/`)
+   - Separate folders for faculty, students, postdocs, staff
+   - Files named by UVA computing ID (e.g., `ko5wk.md`)
+   - Standardized profile format with front matter
+
+3. **Academic Programs**
+   - `undergraduate/` - Degree requirements, courses, advising
+   - `graduate/` - PhD program, exams, funding
+   - `seminars/` - Weekly seminar schedules
+
+4. **Special Programs**
+   - `IMS/` - Institute of Mathematical Sciences
+   - `RTG_geomtop/` - NSF-funded Research Training Group
+   - `awm/` - Women in Mathematics chapter
+   - `drp/` - Directed Reading Program
+   - `mathcircle/` - K-12 outreach
+
+5. **Data Files** (`_data/`)
+   - `courses.yml` - Course catalog
+   - `seminars.yml` - Seminar configurations
+   - `research_areas.yml` - Research group definitions
+
+### Content Management Patterns
+- Posts must include front matter with title, categories, and layout
+- Internal links use `{% raw %}{{site.url}}{% endraw %}` prefix
+- People references use include files rather than hardcoded names
+- Categories determine post visibility on different pages
+- Changes take ~5 minutes to appear on live site after GitHub commit
