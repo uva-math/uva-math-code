@@ -14,25 +14,20 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
   - Updated CSS and JS files in headers and includes
   - Tested math rendering - working correctly
 
+- [x] **Bootstrap 4.0.0-alpha.6 → 5.3.3** (Completed May 2025)
+  - Updated CDN links in all header files
+  - Migrated all data attributes (data-toggle → data-bs-toggle)
+  - Updated navbar classes (navbar-toggleable → navbar-expand, navbar-inverse → navbar-dark)
+  - Migrated responsive utilities (hidden-*-up/down → Bootstrap 5 display utilities)
+  - Updated margin utilities (mr-*/ml-* → me-*/ms-*)
+  - Added CSS compatibility layer for smooth transition
+  - Preserved all custom UVA styling
+  - Improved mobile hamburger menu design
+  - Kept jQuery for legacy compatibility
+
 ## 📋 Remaining Libraries to Update
 
-### 1. Bootstrap (HIGH PRIORITY)
-**Current:** 4.0.0-alpha.6 (alpha from 2017)
-**Target:** 5.3.3 (latest stable)
-**Breaking Changes:** Major - Bootstrap 5 has significant changes from v4
-
-**Tasks:**
-- [ ] Review Bootstrap 5 migration guide
-- [ ] Update CDN link in header files
-- [ ] Update Tether.js dependency (no longer needed in Bootstrap 5)
-- [ ] Fix grid system changes (`.col-xs-*` → `.col-*`)
-- [ ] Update utility classes (`.hidden-*` → `.d-none`, etc.)
-- [ ] Update navbar components (significant changes)
-- [ ] Update form controls
-- [ ] Update JavaScript components initialization
-- [ ] Test responsive layouts thoroughly
-
-### 2. jQuery (MEDIUM PRIORITY)
+### 1. jQuery (MEDIUM PRIORITY)
 **Current:** 3.2.1 (2017)
 **Target:** 3.7.1 (latest)
 **Note:** Bootstrap 5 no longer requires jQuery, consider removing
@@ -43,18 +38,7 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 - [ ] Test all jQuery-dependent functionality
 - [ ] Consider migrating jQuery code to vanilla JavaScript
 
-### 3. ✅ KaTeX (COMPLETED)
-**Previous:** 0.7.1 (2016-2017)
-**Updated to:** 0.16.22 (latest as of May 2025)
-**Breaking Changes:** Minimal, mostly additive
-
-**Completed Tasks:**
-- [x] Update KaTeX CDN links (CSS and JS) - Updated to jsDelivr CDN
-- [x] Test math rendering on various pages - Tested and working
-- [x] Update any custom KaTeX configurations - No changes needed
-- [x] Verify auto-render functionality - Working correctly
-
-### 4. Swiper.js (LOW PRIORITY)
+### 2. Swiper.js (LOW PRIORITY)
 **Current:** 6.5.9 (2021 - relatively recent)
 **Target:** 11.1.15 (latest)
 **Breaking Changes:** Some API changes between v6 and v11
@@ -65,7 +49,7 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 - [ ] Update initialization code
 - [ ] Test carousel/slider functionality
 
-### 5. HTML5 Shim (CLEANUP)
+### 3. HTML5 Shim (CLEANUP)
 **Current:** Legacy Google Code link
 **Status:** Deprecated - IE 6-8 support no longer needed
 
@@ -97,11 +81,9 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 
 ## 📊 Priority Order
 
-1. **Bootstrap + Tether** - Highest impact, most breaking changes
-2. **jQuery** - May be eliminated with Bootstrap 5
-3. ~~**KaTeX**~~ - ✅ COMPLETED
-4. **HTML5 Shim** - Quick win, just remove
-5. **Swiper.js** - Already relatively recent, lower priority
+1. **jQuery** - Consider removal since Bootstrap 5 doesn't require it
+2. **HTML5 Shim** - Quick win, just remove (IE 6-8 no longer relevant)
+3. **Swiper.js** - Already relatively recent (2021), lower priority
 
 ## 🚀 Deployment Strategy
 
