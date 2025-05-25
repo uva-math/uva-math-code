@@ -1,37 +1,31 @@
 <nav class="navbar navbar-expand-md mb-4 navbar-light" style="background-color:rgba(0, 0, 0, 0.15);">
   <div class="container-fluid">
-    <div class="d-flex align-items-center w-100">
-      <!-- Main navigation toggle - left side -->
-      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle main navigation">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      
-      <!-- Page title - center -->
-      <div class="mx-auto d-md-none">
-        {% if page.layout == "ug_page" %}
-          <span class="h5 mb-0 text-dark">Undergraduate</span>
-        {% elsif page.layout == "g_page" %}
-          <span class="h5 mb-0 text-dark">Graduate</span>
-        {% elsif page.layout == "awm_page" %}
-          <span class="h5 mb-0 text-dark">AWM@UVa</span>
-        {% elsif page.layout == "drp_page" %}
-          <span class="h5 mb-0 text-dark">DRP</span>
-        {% endif %}
-      </div>
-      
-      <!-- Secondary menu toggle - right side (only for special pages) -->
-      {% if page.layout == "ug_page" or page.layout == "g_page" or page.layout == "awm_page" or page.layout == "drp_page" %}
-      <button class="navbar-toggler border-0 shadow-none d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightMenu" aria-expanded="false" aria-controls="collapseRightMenu" aria-label="Toggle sidebar navigation">
-        <i class="fa-solid fa-ellipsis-vertical"></i>
-      </button>
+    <!-- Main navigation toggle - left side -->
+    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle main navigation">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    
+    <!-- Page title - center (mobile only) -->
+    <div class="mx-auto d-md-none">
+      {% if page.layout == "ug_page" %}
+        <span class="h5 mb-0 text-dark">Undergraduate</span>
+      {% elsif page.layout == "g_page" %}
+        <span class="h5 mb-0 text-dark">Graduate</span>
+      {% elsif page.layout == "awm_page" %}
+        <span class="h5 mb-0 text-dark">AWM@UVa</span>
+      {% elsif page.layout == "drp_page" %}
+        <span class="h5 mb-0 text-dark">DRP</span>
       {% endif %}
     </div>
-  </div>
+    
+    <!-- Secondary menu toggle - right side (only for special pages) -->
+    {% if page.layout == "ug_page" or page.layout == "g_page" or page.layout == "awm_page" or page.layout == "drp_page" %}
+    <button class="navbar-toggler border-0 shadow-none d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightMenu" aria-expanded="false" aria-controls="collapseRightMenu" aria-label="Toggle sidebar navigation">
+      <i class="fa-solid fa-ellipsis-vertical"></i>
+    </button>
+    {% endif %}
 
-
-  <div class="container-fluid">
-
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
     <ul class="navbar-nav me-auto">
     {% assign sorted_pages = site.pages | sort: "nav_weight" %}
     {% for p in sorted_pages%}

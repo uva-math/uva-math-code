@@ -497,6 +497,18 @@ font-weight: bold;
   border-radius: .25rem;
 }
 
+/* Navbar alignment fix for wide screens */
+@media (min-width: 768px) {
+  .navbar .container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .navbar-collapse {
+    justify-content: space-between;
+  }
+}
+
 /* Better hamburger menu styling */
 .navbar-toggler:focus {
   box-shadow: none;
