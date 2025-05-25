@@ -9,6 +9,11 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
   - Migrated all icon class names to v6 format
   - Removed old local Font Awesome directory
 
+- [x] **KaTeX 0.7.1 → 0.16.22** (Completed May 2025)
+  - Updated from Cloudflare CDN to jsDelivr CDN
+  - Updated CSS and JS files in headers and includes
+  - Tested math rendering - working correctly
+
 ## 📋 Remaining Libraries to Update
 
 ### 1. Bootstrap (HIGH PRIORITY)
@@ -38,16 +43,16 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 - [ ] Test all jQuery-dependent functionality
 - [ ] Consider migrating jQuery code to vanilla JavaScript
 
-### 3. KaTeX (MEDIUM PRIORITY) ✅
-**Current:** 0.7.1 (2016-2017)
+### 3. ✅ KaTeX (COMPLETED)
+**Previous:** 0.7.1 (2016-2017)
 **Updated to:** 0.16.22 (latest as of May 2025)
 **Breaking Changes:** Minimal, mostly additive
 
-**Tasks:**
+**Completed Tasks:**
 - [x] Update KaTeX CDN links (CSS and JS) - Updated to jsDelivr CDN
-- [ ] Test math rendering on various pages
-- [ ] Update any custom KaTeX configurations
-- [ ] Verify auto-render functionality
+- [x] Test math rendering on various pages - Tested and working
+- [x] Update any custom KaTeX configurations - No changes needed
+- [x] Verify auto-render functionality - Working correctly
 
 ### 4. Swiper.js (LOW PRIORITY)
 **Current:** 6.5.9 (2021 - relatively recent)
@@ -94,7 +99,7 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 
 1. **Bootstrap + Tether** - Highest impact, most breaking changes
 2. **jQuery** - May be eliminated with Bootstrap 5
-3. **KaTeX** - Important for math content, relatively easy update
+3. ~~**KaTeX**~~ - ✅ COMPLETED
 4. **HTML5 Shim** - Quick win, just remove
 5. **Swiper.js** - Already relatively recent, lower priority
 
