@@ -4,6 +4,12 @@
 
 This document provides a comprehensive plan for updating Bootstrap from 4.0.0-alpha.6 to 5.3.3 and evaluating jQuery dependencies. The update involves significant breaking changes and requires careful migration of CSS classes, JavaScript components, and custom styles.
 
+**⚠️ Important Migration Principles:**
+- Perform systematic, incremental changes rather than bulk replacements
+- Review every automated change before committing
+- Test functionality after each major change
+- Maintain comprehensive backups at each stage
+
 ## Current State Analysis
 
 ### Library Versions
@@ -196,6 +202,13 @@ class BootstrapMigrationTest < Minitest::Test
     end
   end
   
+  # Note: Testing for correct presence and usage of new data-bs-* attributes
+  # is complex for static analysis. This is better verified through:
+  # 1. Manual functional testing of each component
+  # 2. Browser console checks for Bootstrap initialization errors
+  # 3. Visual regression testing to ensure components render correctly
+  # 4. Accessibility testing to ensure ARIA attributes work with new structure
+  
   def test_responsive_images
     Dir.glob("#{@site_dir}/**/*.html").each do |file|
       doc = Nokogiri::HTML(File.read(file))
@@ -334,18 +347,48 @@ Create a reference table for systematic updates:
 | `data-placement="*"` | `data-bs-placement="*"` | Tooltips, Popovers |
 
 **Systematic Update Process:**
+
+⚠️ **CRITICAL**: Global search/replace operations must be done with extreme care. Consider updating attributes one at a time rather than all at once, and thoroughly review each change.
+
 ```bash
 # Backup all files first
 cp -r _includes _includes_backup
+cp -r _layouts _layouts_backup
 
-# Use careful search and replace
-# Example for data-toggle:
+# APPROACH 1: Careful attribute-by-attribute replacement (RECOMMENDED)
+# Update each attribute type separately for better control:
+
+# Step 1: Update data-toggle in specific contexts
+find _includes -name "*.html" -exec sed -i.bak 's/data-toggle="collapse"/data-bs-toggle="collapse"/g' {} \;
+find _includes -name "*.html" -exec sed -i.bak 's/data-toggle="dropdown"/data-bs-toggle="dropdown"/g' {} \;
+find _includes -name "*.html" -exec sed -i.bak 's/data-toggle="tooltip"/data-bs-toggle="tooltip"/g' {} \;
+
+# Step 2: Review changes after EACH attribute update
+git diff _includes/
+
+# Step 3: Test functionality before proceeding to next attribute
+bundle exec jekyll build
+# Manually test affected components
+
+# APPROACH 2: Global replacement (USE WITH CAUTION)
+# Only use if you're confident about all occurrences:
 find _includes -name "*.html" -exec sed -i.bak 's/data-toggle="/data-bs-toggle="/g' {} \;
-find _layouts -name "*.html" -exec sed -i.bak 's/data-toggle="/data-bs-toggle="/g' {} \;
+find _layouts -name "*.html" -exec sed -i.bak 's/data-target="/data-bs-target="/g' {} \;
 
-# Review changes before committing
-git diff
+# CRITICAL: Review ALL changes carefully
+git diff --color-words  # Shows word-level differences for easier review
+git status              # Check all modified files
+
+# Consider reviewing changes file by file:
+git add -p              # Interactive staging to review each change
 ```
+
+**Manual Verification Checklist:**
+- [ ] Each `data-bs-toggle` value matches Bootstrap 5 documentation
+- [ ] No unintended replacements in comments or JavaScript strings
+- [ ] All corresponding `data-bs-target` attributes updated
+- [ ] No partial replacements (e.g., `data-bs-toggle-toggle`)
+- [ ] Custom data attributes remain unchanged
 
 **Responsive Utilities Migration Map**:
 ```
