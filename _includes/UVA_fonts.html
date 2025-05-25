@@ -4,14 +4,17 @@
 
 {% if page.tooltips %}
 <script type="text/javascript">
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
-
-  // this is for IOS bug
-  if ('ontouchstart' in document.documentElement) {
-    $('body').css('cursor', 'pointer');
-  }
-  else if(window.Touch) { $('body').css('cursor', 'pointer'); }
+  // Bootstrap 5 tooltip initialization
+  document.addEventListener('DOMContentLoaded', function() {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+    var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+      return new bootstrap.Tooltip(tooltipTriggerEl)
+    });
+    
+    // iOS touch fix (vanilla JS version)
+    if ('ontouchstart' in document.documentElement || window.Touch) {
+      document.body.style.cursor = 'pointer';
+    }
+  });
 </script>
 {% endif %}

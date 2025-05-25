@@ -1,23 +1,23 @@
-<nav class="navbar navbar-toggleable-sm mb-4 navbar-light" style="background-color:rgba(0, 0, 0, 0.15);">
+<nav class="navbar navbar-expand-md mb-4 navbar-light" style="background-color:rgba(0, 0, 0, 0.15);">
   <div class="btn-toolbar">
-    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler me-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fa-solid fa-bars"></i>
     </button>
     {% if page.layout == "ug_page" or page.layout == "g_page" %}
-    <span class="nonupper-h5 nav-link hidden-md-up ml-auto" style="font-style: italic;font-weight:700">{% if page.layout == "ug_page" %}Undergraduate{% else %}Graduate{% endif %}</span>
-    <button class="navbar-toggler hidden-md-up orange-item" type="button" data-toggle="collapse" data-target="#collapseRightMenu" aria-expanded="false" aria-controls="collapseRightMenu">
+    <span class="nonupper-h5 nav-link d-md-none ms-auto" style="font-style: italic;font-weight:700">{% if page.layout == "ug_page" %}Undergraduate{% else %}Graduate{% endif %}</span>
+    <button class="navbar-toggler d-md-none orange-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightMenu" aria-expanded="false" aria-controls="collapseRightMenu">
       <i class="fa-solid fa-bars"></i>
     </button>
     {% endif %}
     {% if page.layout == "awm_page" %}
-    <span class="nonupper-h5 nav-link hidden-md-up ml-auto" style="font-style: italic;font-weight:700">AWM&commat;UVa</span>
-    <button class="navbar-toggler hidden-md-up orange-item" type="button" data-toggle="collapse" data-target="#collapseRightMenu" aria-expanded="false" aria-controls="collapseRightMenu">
+    <span class="nonupper-h5 nav-link d-md-none ms-auto" style="font-style: italic;font-weight:700">AWM&commat;UVa</span>
+    <button class="navbar-toggler d-md-none orange-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightMenu" aria-expanded="false" aria-controls="collapseRightMenu">
       <i class="fa-solid fa-bars"></i>
     </button>
     {% endif %}
     {% if page.layout == "drp_page" %}
-    <span class="nonupper-h5 nav-link hidden-md-up ml-auto" style="font-style: italic;font-weight:700">DRP</span>
-    <button class="navbar-toggler hidden-md-up orange-item" type="button" data-toggle="collapse" data-target="#collapseRightMenu" aria-expanded="false" aria-controls="collapseRightMenu">
+    <span class="nonupper-h5 nav-link d-md-none ms-auto" style="font-style: italic;font-weight:700">DRP</span>
+    <button class="navbar-toggler d-md-none orange-item" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightMenu" aria-expanded="false" aria-controls="collapseRightMenu">
       <i class="fa-solid fa-bars"></i>
     </button>
     {% endif %}
@@ -27,7 +27,7 @@
   <div class="container">
 
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav me-auto">
     {% assign sorted_pages = site.pages | sort: "nav_weight" %}
     {% for p in sorted_pages%}
     {% if p.nav_id != null and p.nav_nesting != true and p.nav_parent == null %}
@@ -37,10 +37,10 @@
     {% endif %}
     {% if p.nav_id != null and p.nav_nesting == true and p.nav_parent == null %}
       <li class="nav-item dropdown {% if {{page.nav_parent}} == p.nav_id or p.url == page.url %}active{% endif %}">
-        <a class="nav-link dropdown-toggle" {% if p.nav_long %}style="white-space: normal"{% endif %} href="{{site.url}}{{p.url}}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" {% if p.nav_long %}style="white-space: normal"{% endif %} href="{{site.url}}{{p.url}}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{p.nav_id}}
         </a>
-        <div class="dropdown-menu {% if p.nav_id == 'IMS' or p.nav_id == 'Info' or p.nav_id == 'Graduate'%}dropdown-menu-right{% endif %}">
+        <div class="dropdown-menu {% if p.nav_id == 'IMS' or p.nav_id == 'Info' or p.nav_id == 'Graduate'%}dropdown-menu-end{% endif %}">
           {% if p.nav_id == "News&Events" %}
             <a class="dropdown-item my-navbar-dropdown-item {%if paginator.page %}active bg-inverse{% endif %}" style="{% if p.nav_long %}white-space: normal{% endif %}" href="{{site.url}}/allnews/">All News and Events{%if paginator.page %}<span class="sr-only">(current)</span>{% endif %}</a>
           {% endif %}
@@ -62,7 +62,7 @@
     {% endif %}
     {% endfor %}
     </ul>
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav ms-auto">
       <li class="nav-item">
         <a href="{{site.url}}/support/" class="nav-link orange-item">Support us</a>
       </li>
