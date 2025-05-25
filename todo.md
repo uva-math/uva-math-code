@@ -38,13 +38,13 @@ This document outlines the plan for updating outdated libraries from 2017-2018 t
 - [ ] Test all jQuery-dependent functionality
 - [ ] Consider migrating jQuery code to vanilla JavaScript
 
-### 3. KaTeX (MEDIUM PRIORITY)
+### 3. KaTeX (MEDIUM PRIORITY) ✅
 **Current:** 0.7.1 (2016-2017)
-**Target:** 0.16.11 (latest)
+**Updated to:** 0.16.22 (latest as of May 2025)
 **Breaking Changes:** Minimal, mostly additive
 
 **Tasks:**
-- [ ] Update KaTeX CDN links (CSS and JS)
+- [x] Update KaTeX CDN links (CSS and JS) - Updated to jsDelivr CDN
 - [ ] Test math rendering on various pages
 - [ ] Update any custom KaTeX configurations
 - [ ] Verify auto-render functionality
