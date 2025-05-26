@@ -599,23 +599,44 @@ footer {
   border-top: 1px solid var(--border-color);
 }
 
-/* Dark mode toggle button */
-.theme-toggle {
+/* Dark mode toggle buttons */
+.theme-toggle-container {
+  display: inline-flex;
+  gap: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 4px;
+}
+
+.theme-toggle-btn {
   background: none;
   border: none;
   color: var(--text-color);
   cursor: pointer;
-  font-size: 1.2rem;
-  padding: 0.5rem;
-  transition: transform 0.3s ease;
+  font-size: 1rem;
+  padding: 0.5rem 0.75rem;
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  opacity: 0.6;
 }
 
-.theme-toggle:hover {
-  transform: scale(1.1);
+.theme-toggle-btn:hover {
+  opacity: 1;
 }
 
-.theme-toggle:focus {
+.theme-toggle-btn.active {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  opacity: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.theme-toggle-btn:focus {
   outline: none;
+}
+
+[data-theme="dark"] .theme-toggle-container {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Orange items in dark mode */
