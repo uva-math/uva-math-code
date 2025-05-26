@@ -928,10 +928,27 @@ pre, code {
   color: #EB5F0C;
 }
 
+/* Dark mode navbar toggle icons */
+[data-theme="dark"] .navbar-toggler i {
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .navbar-toggler:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .navbar-toggler.orange-item i {
+  color: #ffa500;
+}
+
 /* Style the mobile page title */
 .navbar .h5 {
   font-weight: 600;
   color: #002F6C !important;
+}
+
+[data-theme="dark"] .navbar .h5 {
+  color: #e8e8e8 !important;
 }
 
 /* Ensure dropdown-menu-end works */
