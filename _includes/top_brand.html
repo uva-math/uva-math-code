@@ -13,14 +13,9 @@
         <img src="{{site.url}}/img/brand/uva-horiz.png" style="margin-top:12px; margin-bottom:15px;width:200px" alt="UVA Logo"></a>
       
       <!-- Dark mode toggle for mobile -->
-      <div class="theme-toggle-container d-md-none ms-auto me-2" style="display: inline-flex !important;">
-        <button class="theme-toggle-btn" id="light-mode-btn-mobile" title="Light mode">
-          <i class="fas fa-sun"></i>
-        </button>
-        <button class="theme-toggle-btn" id="dark-mode-btn-mobile" title="Dark mode">
-          <i class="fas fa-moon"></i>
-        </button>
-      </div>
+      <button class="theme-toggle-single d-md-none ms-auto me-2" id="theme-toggle-mobile" title="Toggle dark mode">
+        <i class="fas fa-sun" id="theme-icon-mobile"></i>
+      </button>
       
       <a href="http://www.virginia.edu/search/site/" class="d-none d-sm-inline d-md-none navbar-toggler-right">
         <img src="{{site.url}}/img/brand/search.png" style="width:20px;margin: 14px 0px 12px 0px" alt="Search">
@@ -32,14 +27,9 @@
        </div>
        
        <!-- Dark mode toggle for desktop -->
-       <div class="theme-toggle-container me-3 d-none d-md-inline-flex">
-         <button class="theme-toggle-btn" id="light-mode-btn" title="Light mode">
-           <i class="fas fa-sun"></i>
-         </button>
-         <button class="theme-toggle-btn" id="dark-mode-btn" title="Dark mode">
-           <i class="fas fa-moon"></i>
-         </button>
-       </div>
+       <button class="theme-toggle-single me-3 d-none d-md-inline-block" id="theme-toggle" title="Toggle dark mode">
+         <i class="fas fa-sun" id="theme-icon"></i>
+       </button>
        
        <form class="form-inline mt-2 mt-md-0 d-none d-md-block" id="search_form" name="q">
          <input class="form-control input-lg me-sm-2" type="text" id="q" placeholder="UVA Search">
@@ -74,33 +64,32 @@
   // Apply theme to document
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
-    updateThemeButtons(theme);
+    updateThemeIcon(theme);
   }
 
-  // Update the theme toggle buttons
-  function updateThemeButtons(theme) {
-    const lightBtns = document.querySelectorAll('#light-mode-btn, #light-mode-btn-mobile');
-    const darkBtns = document.querySelectorAll('#dark-mode-btn, #dark-mode-btn-mobile');
+  // Update the theme toggle icon
+  function updateThemeIcon(theme) {
+    const icons = document.querySelectorAll('#theme-icon, #theme-icon-mobile');
     
-    lightBtns.forEach(btn => {
-      if (btn) {
+    icons.forEach(icon => {
+      if (icon) {
         if (theme === 'dark') {
-          btn.classList.remove('active');
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-moon');
         } else {
-          btn.classList.add('active');
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
         }
       }
     });
-    
-    darkBtns.forEach(btn => {
-      if (btn) {
-        if (theme === 'dark') {
-          btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
-        }
-      }
-    });
+  }
+
+  // Toggle theme
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
   }
 
   // Initialize theme on page load (immediately)
@@ -116,39 +105,19 @@
 
   // Theme toggle button handlers
   document.addEventListener('DOMContentLoaded', function() {
-    const lightBtns = document.querySelectorAll('#light-mode-btn, #light-mode-btn-mobile');
-    const darkBtns = document.querySelectorAll('#dark-mode-btn, #dark-mode-btn-mobile');
+    const toggleBtns = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
     
-    lightBtns.forEach(btn => {
+    toggleBtns.forEach(btn => {
       if (btn) {
         btn.addEventListener('click', function(e) {
           e.preventDefault();
-          applyTheme('light');
-          localStorage.setItem('theme', 'light');
+          toggleTheme();
         });
         
         // Add touch event for mobile
         btn.addEventListener('touchstart', function(e) {
           e.preventDefault();
-          applyTheme('light');
-          localStorage.setItem('theme', 'light');
-        });
-      }
-    });
-    
-    darkBtns.forEach(btn => {
-      if (btn) {
-        btn.addEventListener('click', function(e) {
-          e.preventDefault();
-          applyTheme('dark');
-          localStorage.setItem('theme', 'dark');
-        });
-        
-        // Add touch event for mobile
-        btn.addEventListener('touchstart', function(e) {
-          e.preventDefault();
-          applyTheme('dark');
-          localStorage.setItem('theme', 'dark');
+          toggleTheme();
         });
       }
     });
