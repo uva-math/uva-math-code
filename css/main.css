@@ -1139,5 +1139,199 @@ pre, code {
   border-bottom-right-radius: inherit;
 }
 
+/* ========================================
+   Dropdown Improvements
+   ======================================== */
+
+/* Consistent padding for all nav items */
+.navbar-nav .nav-link {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* Remove default Bootstrap dropdown arrow and add custom icon */
+.navbar-nav .dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-nav .dropdown-toggle {
+  position: relative;
+  padding-left: 2rem !important; /* Ensure enough space for arrow - increased and added !important */
+}
+
+/* Add Font Awesome chevron on the left */
+.navbar-nav .dropdown-toggle::before {
+  content: '\f107'; /* fa-chevron-down */
+  font-family: 'Font Awesome 6 Free', 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  left: 0.5rem; /* Position on the left with proper spacing */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.75rem;
+  transition: transform 0.2s ease;
+  opacity: 0.7;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* Rotate chevron when dropdown is open */
+.navbar-nav .dropdown-toggle[aria-expanded="true"]::before {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Better dropdown menu styling */
+.navbar-nav .dropdown-menu {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 0.25rem 0;
+}
+
+.navbar-nav .dropdown-item {
+  padding: 0.5rem 1.25rem;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.navbar-nav .dropdown-item:hover,
+.navbar-nav .dropdown-item:focus {
+  background-color: rgba(0, 47, 108, 0.05);
+  color: #002F6C;
+  text-decoration: none;
+}
+
+.navbar-nav .dropdown-item.active,
+.navbar-nav .dropdown-item:active {
+  background-color: #002F6C;
+  color: white;
+}
+
+/* Mobile-specific dropdown improvements */
+@media (max-width: 767px) {
+  /* Consistent padding for all nav items on mobile */
+  .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  /* Make dropdowns static on mobile for better UX */
+  .navbar-nav .dropdown-menu {
+    position: static !important;
+    float: none;
+    width: 100%;
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.03);
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+  
+  /* Better visual hierarchy on mobile */
+  .navbar-nav .dropdown-item {
+    padding-left: 2.5rem;
+    border-left: 3px solid transparent;
+  }
+  
+  .navbar-nav .dropdown-item:hover {
+    border-left-color: #e57200;
+    background-color: rgba(0, 0, 0, 0.02);
+  }
+  
+  /* Make dropdown toggles full width on mobile */
+  .navbar-nav .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+    padding-left: 1.5rem; /* Keep consistent left padding */
+  }
+  
+  /* Keep chevron on the left for mobile too */
+  .navbar-nav .dropdown-toggle::before {
+    left: 0.25rem;
+  }
+  
+  .navbar-nav .dropdown-toggle[aria-expanded="true"]::before {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  
+  /* Add subtle animation for mobile dropdowns */
+  .navbar-nav .dropdown-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .navbar-nav .dropdown-menu.show {
+    max-height: 600px; /* Adjust based on content */
+    transition: max-height 0.3s ease-in;
+  }
+}
+
+/* Fix alignment issues for rightmost dropdowns on desktop */
+@media (min-width: 768px) {
+  .navbar-nav .dropdown:last-child .dropdown-menu,
+  .navbar-nav .dropdown-menu.dropdown-menu-end {
+    right: 0;
+    left: auto;
+  }
+  
+  /* Ensure proper arrow positioning on desktop */
+  .navbar-nav .dropdown-toggle {
+    padding-left: 2rem !important; /* Consistent with base rule */
+    padding-right: 0.5rem;
+  }
+  
+  .navbar-nav .dropdown-toggle::before {
+    left: 0.75rem; /* Move arrow a bit more to the right to ensure no overlap */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Keep consistent padding for non-dropdown items */
+  .navbar-nav .nav-link:not(.dropdown-toggle) {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
+/* Dark mode support for dropdowns */
+[data-theme="dark"] .navbar-nav .dropdown-menu {
+  background-color: var(--card-bg);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .navbar-nav .dropdown-item {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .navbar-nav .dropdown-item:hover,
+[data-theme="dark"] .navbar-nav .dropdown-item:focus {
+  background-color: var(--hover-bg);
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .navbar-nav .dropdown-item.active,
+[data-theme="dark"] .navbar-nav .dropdown-item:active {
+  background-color: var(--active-bg);
+  color: white;
+}
+
+[data-theme="dark"] .navbar-nav .dropdown-toggle::before {
+  color: var(--text-color);
+}
+
+@media (max-width: 767px) {
+  [data-theme="dark"] .navbar-nav .dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+  
+  [data-theme="dark"] .navbar-nav .dropdown-item:hover {
+    border-left-color: var(--link-color);
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+}
+
 
 

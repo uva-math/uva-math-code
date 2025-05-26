@@ -48,7 +48,7 @@
         <a class="nav-link dropdown-toggle" {% if p.nav_long %}style="white-space: normal"{% endif %} href="{{site.url}}{{p.url}}" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           {{p.nav_id}}
         </a>
-        <div class="dropdown-menu {% if p.nav_id == 'IMS' or p.nav_id == 'Info' or p.nav_id == 'Graduate'%}dropdown-menu-end{% endif %}">
+        <div class="dropdown-menu">
           {% if p.nav_id == "News&Events" %}
             <a class="dropdown-item my-navbar-dropdown-item {%if paginator.page %}active bg-inverse{% endif %}" style="{% if p.nav_long %}white-space: normal{% endif %}" href="{{site.url}}/allnews/">All News and Events{%if paginator.page %}<span class="sr-only">(current)</span>{% endif %}</a>
           {% endif %}
