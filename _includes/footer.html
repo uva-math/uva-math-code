@@ -109,9 +109,16 @@
     }
   }
 
-  // Initialize theme on page load
+  // Initialize theme on page load (immediately)
   const currentTheme = getThemePreference();
   applyTheme(currentTheme);
+
+  // Also initialize when DOM is ready (for safety)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      applyTheme(currentTheme);
+    });
+  }
 
   // Theme toggle button handlers
   document.addEventListener('DOMContentLoaded', function() {
@@ -119,14 +126,30 @@
     const darkBtn = document.getElementById('dark-mode-btn');
     
     if (lightBtn) {
-      lightBtn.addEventListener('click', function() {
+      lightBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        applyTheme('light');
+        localStorage.setItem('theme', 'light');
+      });
+      
+      // Add touch event for mobile
+      lightBtn.addEventListener('touchstart', function(e) {
+        e.preventDefault();
         applyTheme('light');
         localStorage.setItem('theme', 'light');
       });
     }
     
     if (darkBtn) {
-      darkBtn.addEventListener('click', function() {
+      darkBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        applyTheme('dark');
+        localStorage.setItem('theme', 'dark');
+      });
+      
+      // Add touch event for mobile
+      darkBtn.addEventListener('touchstart', function(e) {
+        e.preventDefault();
         applyTheme('dark');
         localStorage.setItem('theme', 'dark');
       });
