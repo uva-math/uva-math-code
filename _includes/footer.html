@@ -133,39 +133,8 @@
 <!-- Dropdown enhancements for mobile -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  // Only apply to mobile
-  if (window.innerWidth <= 767) {
-    const dropdownToggles = document.querySelectorAll('.navbar-nav .dropdown-toggle');
-    
-    dropdownToggles.forEach(toggle => {
-      // Override Bootstrap's default dropdown behavior on mobile
-      toggle.addEventListener('click', function(e) {
-        if (window.innerWidth <= 767) {
-          e.preventDefault();
-          e.stopPropagation();
-          
-          const dropdownMenu = this.nextElementSibling;
-          const bsDropdown = bootstrap.Dropdown.getInstance(this);
-          
-          // Close other dropdowns
-          dropdownToggles.forEach(otherToggle => {
-            if (otherToggle !== this) {
-              const otherMenu = otherToggle.nextElementSibling;
-              const otherBsDropdown = bootstrap.Dropdown.getInstance(otherToggle);
-              if (otherBsDropdown) {
-                otherBsDropdown.hide();
-              }
-            }
-          });
-          
-          // Toggle current dropdown
-          if (bsDropdown) {
-            bsDropdown.toggle();
-          }
-        }
-      });
-    });
-  }
+  // Remove the mobile click override that was breaking functionality
+  // Bootstrap 5 handles mobile dropdowns well by default
   
   // Fix dropdown positioning on desktop to prevent overflow and ensure consistency
   const dropdowns = document.querySelectorAll('.navbar-nav .dropdown');
