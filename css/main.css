@@ -751,6 +751,35 @@ pre, code {
 [data-theme="dark"] .table-bordered th {
   border-color: var(--border-color);
 }
+
+/* Right sidebar panels */
+[data-theme="dark"] .sidebar-offcanvas {
+  background-color: transparent;
+}
+
+/* Calendar events in sidebar */
+[data-theme="dark"] .cal_event {
+  background-color: #3a3a3a;
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .cal_event:hover {
+  background-color: #444444;
+}
+
+/* Seminar listings */
+[data-theme="dark"] .cal_event_time {
+  color: #999999;
+}
+
+[data-theme="dark"] .my_col_date {
+  color: #bbbbbb;
+}
+
+/* Any inline containers in sidebar */
+[data-theme="dark"] .sidebar-offcanvas .container {
+  background-color: transparent;
+}
 }
 
 .navbar-toggler i {
