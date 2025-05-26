@@ -78,34 +78,7 @@
   // Apply theme to document
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
-    updateThemeIcon(theme);
-  }
-
-  // Update the theme toggle icon
-  function updateThemeIcon(theme) {
-    const icons = document.querySelectorAll('#theme-icon, #theme-icon-mobile');
-    
-    icons.forEach(icon => {
-      if (icon) {
-        // Add rotation animation
-        icon.style.transform = 'rotate(180deg)';
-        
-        setTimeout(() => {
-          if (theme === 'dark') {
-            icon.classList.remove('fa-sun');
-            icon.classList.add('fa-moon');
-          } else {
-            icon.classList.remove('fa-moon');
-            icon.classList.add('fa-sun');
-          }
-          
-          // Reset rotation after icon change
-          setTimeout(() => {
-            icon.style.transform = '';
-          }, 10);
-        }, 150);
-      }
-    });
+    // No need to update icons as both are always visible
   }
 
   // Toggle theme
