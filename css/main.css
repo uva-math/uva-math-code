@@ -679,6 +679,12 @@ footer {
   }
 }
 
+/* Fix vertical alignment of Support us button */
+.navbar-nav .nav-link.orange-item {
+  display: flex;
+  align-items: center;
+}
+
 /* Orange items in dark mode */
 [data-theme="dark"] .orange-item {
   background-color: #d14900;  /* Darker orange for dark mode */
