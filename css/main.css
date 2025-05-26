@@ -624,6 +624,15 @@ footer {
   z-index: 1000;
 }
 
+/* Icon animation */
+.theme-toggle-single i {
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle-single:active i {
+  transform: rotate(180deg) scale(0.9);
+}
+
 /* In light navbar */
 .navbar-light .theme-toggle-single {
   background-color: rgba(0, 47, 108, 0.1);
@@ -683,6 +692,39 @@ footer {
 .navbar-nav .nav-link.orange-item {
   display: flex;
   align-items: center;
+}
+
+/* Search form styling */
+#search_form .input-group {
+  max-width: 300px;
+}
+
+#search_form .input-group .form-control {
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+#search_form .input-group .btn {
+  border-left: 1px solid #ced4da;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 0.375rem 0.75rem;
+}
+
+/* Dark mode search form */
+[data-theme="dark"] #search_form .input-group .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] #search_form .input-group .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+[data-theme="dark"] #search_form .input-group .btn {
+  border-left-color: rgba(255, 255, 255, 0.2);
 }
 
 /* Orange items in dark mode */

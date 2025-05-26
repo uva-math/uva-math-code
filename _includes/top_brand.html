@@ -21,9 +21,13 @@
        <div class="navbar-nav me-auto">
        </div>
        
-       <form class="form-inline mt-2 mt-md-0 d-none d-md-block" id="search_form" name="q">
-         <input class="form-control input-lg me-sm-2" type="text" id="q" placeholder="UVA Search">
-         <button class="bg-inverse my-2 my-sm-0" style="border:none;" type="submit" value=""><img src="{{site.url}}/img/brand/search.png" style="width:30px" alt="UVA Search" title="UVA Search"></button>
+       <form class="form-inline mt-2 mt-md-0 d-none d-md-block d-flex align-items-center" id="search_form" name="q">
+         <div class="input-group">
+           <input class="form-control" type="text" id="q" placeholder="UVA Search">
+           <button class="btn bg-inverse" style="border:none;" type="submit" value="">
+             <img src="{{site.url}}/img/brand/search.png" style="width:24px" alt="UVA Search" title="UVA Search">
+           </button>
+         </div>
        </form>
      </div>
      </div>

@@ -87,13 +87,23 @@
     
     icons.forEach(icon => {
       if (icon) {
-        if (theme === 'dark') {
-          icon.classList.remove('fa-sun');
-          icon.classList.add('fa-moon');
-        } else {
-          icon.classList.remove('fa-moon');
-          icon.classList.add('fa-sun');
-        }
+        // Add rotation animation
+        icon.style.transform = 'rotate(180deg)';
+        
+        setTimeout(() => {
+          if (theme === 'dark') {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+          } else {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+          }
+          
+          // Reset rotation after icon change
+          setTimeout(() => {
+            icon.style.transform = '';
+          }, 10);
+        }, 150);
       }
     });
   }
