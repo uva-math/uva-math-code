@@ -255,3 +255,103 @@ This repository contains the source code for the University of Virginia Mathemat
 - People references use include files rather than hardcoded names
 - Categories determine post visibility on different pages
 - Changes take ~5 minutes to appear on live site after GitHub commit
+
+---
+
+## Dark Mode Implementation
+
+The website features a comprehensive dark mode that automatically adapts to user preferences and can be manually toggled.
+
+### Key Features
+
+1. **Automatic OS Detection**: The site respects the user's operating system dark mode preference on first visit
+2. **Manual Toggle**: Users can override the OS preference using a toggle button in the navbar
+3. **Persistent Preference**: User's choice is saved in localStorage and persists across sessions
+4. **Smooth Transitions**: All color changes animate smoothly when switching themes
+
+### Toggle Button Design
+
+- **Location**: Main navbar, positioned to the left of "Support us" link
+- **Mobile**: Remains visible on small screens, positioned to the left of the vertical dots menu on special pages
+- **Design**: Dual-icon toggle showing both cloud-sun (day) and moon (night) icons with a sliding indicator
+- **Interaction**: Click anywhere on the button to toggle between light and dark modes
+
+### Technical Implementation
+
+#### CSS Architecture
+
+The dark mode uses CSS custom properties (variables) defined in `/css/main.css`:
+
+```css
+:root {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+  /* ... other light mode variables */
+}
+
+[data-theme="dark"] {
+  --bg-color: #0a1628;  /* Very dark navy blue */
+  --text-color: #e8e8e8;
+  --card-bg: #1a2a3f;  /* Dark navy blue */
+  /* ... other dark mode variables */
+}
+```
+
+#### Color Scheme
+
+The dark mode uses a sophisticated navy blue color palette aligned with UVA branding:
+- **Background**: `#0a1628` (very dark navy)
+- **Cards/Panels**: `#1a2a3f` (dark navy)
+- **Hover States**: `#243448` (slightly lighter navy)
+- **Active States**: `#003d7a` (UVA blue variation)
+- **Text**: `#e8e8e8` (light gray)
+- **Links**: `#4da3ff` (lighter blue for contrast)
+
+#### JavaScript Functionality
+
+Located in `_includes/footer.html`, the dark mode script:
+1. Checks localStorage for saved preference
+2. Falls back to OS preference if no saved preference
+3. Applies theme by setting `data-theme` attribute on `<html>`
+4. Handles toggle button clicks and touch events
+5. Listens for OS theme changes (respects if user hasn't manually set preference)
+
+### Component-Specific Styling
+
+#### Navigation
+- **Navbar**: Background remains light with adjusted toggle button colors
+- **Hamburger/Dots**: Icons turn light gray (#e8e8e8) in dark mode
+- **Dropdowns**: Dark backgrounds with appropriate contrast
+
+#### Sidebars
+- **List Groups**: Dark gray (#243448) backgrounds instead of white
+- **Orange Headers**: Adjusted orange tones for visibility
+- **Active Items**: UVA blue variation (#003d7a) for selected items
+
+#### Content Areas
+- **Cards**: All use dark navy backgrounds
+- **Jumbotrons**: Special handling for major-news sections
+- **Zebra Striping**: Alternating rows use darker navy (#162133)
+- **Code Blocks**: Dark backgrounds with syntax highlighting
+
+#### Forms
+- **Search Bar**: Semi-transparent backgrounds with light borders
+- **Input Fields**: Dark backgrounds with light text
+- **Buttons**: Appropriate contrast adjustments
+
+### Best Practices for Content Creators
+
+1. **Images**: Ensure images have sufficient contrast for both light and dark modes
+2. **Colors**: Avoid hardcoding colors in inline styles; use CSS classes instead
+3. **Backgrounds**: Test content visibility in both modes before publishing
+4. **Icons**: Use Font Awesome icons which automatically adapt to the theme
+
+### Testing Dark Mode
+
+To test dark mode functionality:
+1. Click the toggle button in the navbar
+2. Check that all text remains readable
+3. Verify interactive elements maintain proper contrast
+4. Ensure images and media display correctly
+5. Test on both desktop and mobile devices
