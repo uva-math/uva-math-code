@@ -18,6 +18,11 @@
       {% endif %}
     </div>
     
+    <!-- Dark mode toggle for mobile -->
+    <button class="theme-toggle-single d-md-none me-2" id="theme-toggle-mobile" title="Toggle dark mode">
+      <i class="fas fa-sun" id="theme-icon-mobile"></i>
+    </button>
+    
     <!-- Secondary menu toggle - right side (only for special pages) -->
     {% if page.layout == "ug_page" or page.layout == "g_page" or page.layout == "awm_page" or page.layout == "drp_page" %}
     <button class="navbar-toggler border-0 shadow-none d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightMenu" aria-expanded="false" aria-controls="collapseRightMenu" aria-label="Toggle sidebar navigation">
@@ -62,6 +67,11 @@
     {% endfor %}
     </ul>
     <ul class="navbar-nav ms-auto">
+      <li class="nav-item">
+        <button class="theme-toggle-single me-2" id="theme-toggle" title="Toggle dark mode">
+          <i class="fas fa-sun" id="theme-icon"></i>
+        </button>
+      </li>
       <li class="nav-item">
         <a href="{{site.url}}/support/" class="nav-link orange-item">Support us</a>
       </li>

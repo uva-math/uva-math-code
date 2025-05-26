@@ -61,3 +61,88 @@
             </div>
 </div>
 </footer>
+
+<!-- Dark mode functionality -->
+<script>
+(function() {
+  // Get the current theme from localStorage or OS preference
+  function getThemePreference() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      return savedTheme;
+    }
+    // Check OS preference
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  // Apply theme to document
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    updateThemeIcon(theme);
+  }
+
+  // Update the theme toggle icon
+  function updateThemeIcon(theme) {
+    const icons = document.querySelectorAll('#theme-icon, #theme-icon-mobile');
+    
+    icons.forEach(icon => {
+      if (icon) {
+        if (theme === 'dark') {
+          icon.classList.remove('fa-sun');
+          icon.classList.add('fa-moon');
+        } else {
+          icon.classList.remove('fa-moon');
+          icon.classList.add('fa-sun');
+        }
+      }
+    });
+  }
+
+  // Toggle theme
+  function toggleTheme() {
+    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    applyTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+  }
+
+  // Initialize theme on page load (immediately)
+  const currentTheme = getThemePreference();
+  applyTheme(currentTheme);
+
+  // Also initialize when DOM is ready (for safety)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      applyTheme(currentTheme);
+    });
+  }
+
+  // Theme toggle button handlers
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtns = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
+    
+    toggleBtns.forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          toggleTheme();
+        });
+        
+        // Add touch event for mobile
+        btn.addEventListener('touchstart', function(e) {
+          e.preventDefault();
+          toggleTheme();
+        });
+      }
+    });
+  });
+
+  // Listen for OS theme changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+    // Only apply OS preference if user hasn't manually set a preference
+    if (!localStorage.getItem('theme')) {
+      applyTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+})();
+</script>

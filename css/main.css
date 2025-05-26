@@ -610,9 +610,9 @@ footer {
 
 /* Dark mode toggle button */
 .theme-toggle-single {
-  background-color: rgba(255, 255, 255, 0.15);
+  background-color: rgba(0, 47, 108, 0.1);
   border: none;
-  color: rgba(255, 255, 255, 0.9);
+  color: #002F6C;
   cursor: pointer;
   font-size: 1rem;
   padding: 0.5rem 0.75rem;
@@ -624,8 +624,14 @@ footer {
   z-index: 1000;
 }
 
+/* In light navbar */
+.navbar-light .theme-toggle-single {
+  background-color: rgba(0, 47, 108, 0.1);
+  color: #002F6C;
+}
+
 .theme-toggle-single:hover {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 47, 108, 0.2);
   transform: scale(1.05);
 }
 
@@ -635,17 +641,26 @@ footer {
 
 .theme-toggle-single:focus {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 0 3px rgba(0, 47, 108, 0.3);
 }
 
 /* Dark theme adjustments */
 [data-theme="dark"] .theme-toggle-single {
   background-color: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.9);
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .navbar-light .theme-toggle-single {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e8e8e8;
 }
 
 [data-theme="dark"] .theme-toggle-single:hover {
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="dark"] .theme-toggle-single:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
 }
 
 /* Mobile styling */
@@ -653,6 +668,14 @@ footer {
   .theme-toggle-single {
     padding: 0.4rem 0.6rem;
     font-size: 0.9rem;
+  }
+}
+
+/* Align with nav items on desktop */
+@media (min-width: 768px) {
+  .navbar-nav .theme-toggle-single {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
 }
 

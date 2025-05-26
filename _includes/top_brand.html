@@ -12,11 +12,6 @@
       <a href="http://www.virginia.edu" class="d-md-none"  style="vertical-align: baseline;">
         <img src="{{site.url}}/img/brand/uva-horiz.png" style="margin-top:12px; margin-bottom:15px;width:200px" alt="UVA Logo"></a>
       
-      <!-- Dark mode toggle for mobile -->
-      <button class="theme-toggle-single d-md-none ms-auto me-2" id="theme-toggle-mobile" title="Toggle dark mode">
-        <i class="fas fa-sun" id="theme-icon-mobile"></i>
-      </button>
-      
       <a href="http://www.virginia.edu/search/site/" class="d-none d-sm-inline d-md-none navbar-toggler-right">
         <img src="{{site.url}}/img/brand/search.png" style="width:20px;margin: 14px 0px 12px 0px" alt="Search">
       </a>
@@ -25,11 +20,6 @@
      <div class="collapse navbar-collapse" id="navbarCollapse">
        <div class="navbar-nav me-auto">
        </div>
-       
-       <!-- Dark mode toggle for desktop -->
-       <button class="theme-toggle-single me-3 d-none d-md-inline-block" id="theme-toggle" title="Toggle dark mode">
-         <i class="fas fa-sun" id="theme-icon"></i>
-       </button>
        
        <form class="form-inline mt-2 mt-md-0 d-none d-md-block" id="search_form" name="q">
          <input class="form-control input-lg me-sm-2" type="text" id="q" placeholder="UVA Search">
@@ -47,88 +37,3 @@
         window.open("http://www.virginia.edu/search/site/" + link_s);
      }
    </script>
-
-<!-- Dark mode functionality -->
-<script>
-(function() {
-  // Get the current theme from localStorage or OS preference
-  function getThemePreference() {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
-      return savedTheme;
-    }
-    // Check OS preference
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-  }
-
-  // Apply theme to document
-  function applyTheme(theme) {
-    document.documentElement.setAttribute('data-theme', theme);
-    updateThemeIcon(theme);
-  }
-
-  // Update the theme toggle icon
-  function updateThemeIcon(theme) {
-    const icons = document.querySelectorAll('#theme-icon, #theme-icon-mobile');
-    
-    icons.forEach(icon => {
-      if (icon) {
-        if (theme === 'dark') {
-          icon.classList.remove('fa-sun');
-          icon.classList.add('fa-moon');
-        } else {
-          icon.classList.remove('fa-moon');
-          icon.classList.add('fa-sun');
-        }
-      }
-    });
-  }
-
-  // Toggle theme
-  function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
-    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-    applyTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-  }
-
-  // Initialize theme on page load (immediately)
-  const currentTheme = getThemePreference();
-  applyTheme(currentTheme);
-
-  // Also initialize when DOM is ready (for safety)
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-      applyTheme(currentTheme);
-    });
-  }
-
-  // Theme toggle button handlers
-  document.addEventListener('DOMContentLoaded', function() {
-    const toggleBtns = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
-    
-    toggleBtns.forEach(btn => {
-      if (btn) {
-        btn.addEventListener('click', function(e) {
-          e.preventDefault();
-          toggleTheme();
-        });
-        
-        // Add touch event for mobile
-        btn.addEventListener('touchstart', function(e) {
-          e.preventDefault();
-          toggleTheme();
-        });
-      }
-    });
-  });
-
-  // Listen for OS theme changes
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
-    // Only apply OS preference if user hasn't manually set a preference
-    if (!localStorage.getItem('theme')) {
-      applyTheme(e.matches ? 'dark' : 'light');
-    }
-  });
-})();
-</script>
