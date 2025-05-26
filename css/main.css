@@ -546,16 +546,6 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Update link colors */
-a {
-  color: var(--link-color);
-}
-
-a:hover {
-  color: var(--link-color);
-  opacity: 0.8;
-}
-
 /* Dark mode link colors */
 [data-theme="dark"] a:link,
 [data-theme="dark"] a:visited {
