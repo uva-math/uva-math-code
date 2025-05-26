@@ -575,6 +575,15 @@ a:hover {
   border-color: var(--border-color);
 }
 
+/* Jumbotron major-news specific dark mode */
+[data-theme="dark"] .jumbotron[style*="background:#DADADA"] {
+  background-color: #3a3a3a !important;
+}
+
+[data-theme="dark"] .jumbotron {
+  background-color: #3a3a3a !important;
+}
+
 /* List groups */
 .list-group-item {
   background-color: var(--list-group-bg);
