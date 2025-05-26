@@ -509,6 +509,161 @@ font-weight: bold;
   box-shadow: none;
 }
 
+/* Dark Mode Styles */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #212529;
+  --card-bg: #ffffff;
+  --navbar-bg: rgba(0, 0, 0, 0.15);
+  --link-color: #007bff;
+  --border-color: #dee2e6;
+  --list-group-bg: #ffffff;
+  --list-group-hover: #f8f9fa;
+  --list-group-active-bg: #007bff;
+  --list-group-active-color: #ffffff;
+  --code-bg: #f8f9fa;
+  --footer-bg: #f8f9fa;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1a1a1a;
+  --text-color: #e0e0e0;
+  --card-bg: #2a2a2a;
+  --navbar-bg: rgba(255, 255, 255, 0.1);
+  --link-color: #66b3ff;
+  --border-color: #404040;
+  --list-group-bg: #2a2a2a;
+  --list-group-hover: #333333;
+  --list-group-active-bg: #0056b3;
+  --list-group-active-color: #ffffff;
+  --code-bg: #2a2a2a;
+  --footer-bg: #2a2a2a;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Update link colors */
+a {
+  color: var(--link-color);
+}
+
+a:hover {
+  color: var(--link-color);
+  opacity: 0.8;
+}
+
+/* Navbar dark mode */
+.navbar-light {
+  background-color: var(--navbar-bg) !important;
+}
+
+[data-theme="dark"] .navbar-light .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+[data-theme="dark"] .navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Cards and containers */
+.card, .jumbotron {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+/* List groups */
+.list-group-item {
+  background-color: var(--list-group-bg);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.list-group-item-action:hover {
+  background-color: var(--list-group-hover);
+  color: var(--text-color);
+}
+
+.list-group-item.active {
+  background-color: var(--list-group-active-bg);
+  border-color: var(--list-group-active-bg);
+  color: var(--list-group-active-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  border-top: 1px solid var(--border-color);
+}
+
+/* Dark mode toggle button */
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+}
+
+.theme-toggle:focus {
+  outline: none;
+}
+
+/* Orange items in dark mode */
+[data-theme="dark"] .orange-item {
+  background-color: #cc4c00;
+  color: #ffffff;
+}
+
+/* Code blocks */
+pre, code {
+  background-color: var(--code-bg);
+  color: var(--text-color);
+}
+
+/* Dropdowns */
+[data-theme="dark"] .dropdown-menu {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .dropdown-item {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .dropdown-item:hover {
+  background-color: var(--list-group-hover);
+  color: var(--text-color);
+}
+
+/* Tables */
+[data-theme="dark"] table {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .table {
+  color: var(--text-color);
+}
+
+[data-theme="dark"] .table-bordered {
+  border-color: var(--border-color);
+}
+
+[data-theme="dark"] .table-bordered td,
+[data-theme="dark"] .table-bordered th {
+  border-color: var(--border-color);
+}
+}
+
 .navbar-toggler i {
   color: #002F6C;
 }

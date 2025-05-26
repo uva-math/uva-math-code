@@ -58,6 +58,67 @@
                     <span class="fa-brands fa-square-twitter fa-2x mt-1"></span></a>
                 </div>
               </div>
+              <div class="row mt-3">
+                <div class="col-12 text-center">
+                  <button class="theme-toggle" id="theme-toggle" title="Toggle dark mode">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                  </button>
+                </div>
+              </div>
             </div>
 </div>
 </footer>
+
+<script>
+// Dark mode functionality
+(function() {
+  // Get the current theme from localStorage or OS preference
+  function getThemePreference() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      return savedTheme;
+    }
+    // Check OS preference
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  // Apply theme to document
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    updateThemeIcon(theme);
+  }
+
+  // Update the theme toggle icon
+  function updateThemeIcon(theme) {
+    const icon = document.getElementById('theme-icon');
+    if (icon) {
+      icon.className = theme === 'dark' ? 'fas fa-moon' : 'fas fa-sun';
+    }
+  }
+
+  // Initialize theme on page load
+  const currentTheme = getThemePreference();
+  applyTheme(currentTheme);
+
+  // Theme toggle button handler
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('theme-toggle');
+    if (toggleButton) {
+      toggleButton.addEventListener('click', function() {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        applyTheme(newTheme);
+        localStorage.setItem('theme', newTheme);
+      });
+    }
+  });
+
+  // Listen for OS theme changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+    // Only apply OS preference if user hasn't manually set a preference
+    if (!localStorage.getItem('theme')) {
+      applyTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+})();
+</script>
