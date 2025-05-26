@@ -54,19 +54,19 @@ nav_parent: News
   <div class="col-md-3 sidebar-offcanvas">
     <hr class="hidden-md-up">
 
-    <div class="list-group-sm">
+    <div class="list-group h5">
       {% if paginator.previous_page %}
-        <a class="list-group-item list-group-item-action h5" href="{{ paginator.previous_page_path }}">Previous</a>
+        <a class="list-group-item list-group-item-action" href="{{ paginator.previous_page_path }}">Previous</a>
       {% else %}
-        <li class="list-group-item h5 disabled">Previous</li>
+        <li class="list-group-item disabled">Previous</li>
       {% endif %}
 
-      <li class="list-group-item h5 active">Page: {{ paginator.page }} of {{ paginator.total_pages }}</li>
+      <li class="list-group-item active">Page: {{ paginator.page }} of {{ paginator.total_pages }}</li>
 
       {% if paginator.next_page %}
-        <a class="list-group-item list-group-item-action h5" href="{{ paginator.next_page_path }}">Next</a>
+        <a class="list-group-item list-group-item-action" href="{{ paginator.next_page_path }}">Next</a>
       {% else %}
-        <li class="list-group-item h5 disabled">Next</li>
+        <li class="list-group-item disabled">Next</li>
       {% endif %}
     </div>
   </div>
