@@ -612,25 +612,36 @@ footer {
 .theme-toggle-container {
   display: inline-flex;
   gap: 0;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
-  padding: 4px;
+  padding: 3px;
   position: relative;
   z-index: 1000;
+  align-items: center;
+}
+
+/* In top navbar (dark background) */
+.navbar-dark .theme-toggle-container {
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .theme-toggle-btn {
   background: none;
   border: none;
-  color: var(--text-color);
+  color: rgba(255, 255, 255, 0.7);
   cursor: pointer;
-  font-size: 1rem;
-  padding: 0.5rem 0.75rem;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
   transition: all 0.3s ease;
   border-radius: 16px;
-  opacity: 0.6;
+  opacity: 0.7;
   -webkit-tap-highlight-color: transparent;
   touch-action: manipulation;
+}
+
+/* In dark navbar */
+.navbar-dark .theme-toggle-btn {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .theme-toggle-btn:hover {
@@ -638,10 +649,15 @@ footer {
 }
 
 .theme-toggle-btn.active {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff;
   opacity: 1;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-dark .theme-toggle-btn.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #ffffff;
 }
 
 .theme-toggle-btn:focus {
@@ -652,15 +668,15 @@ footer {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
-/* Ensure buttons work on mobile */
+/* Mobile styling */
 @media (max-width: 767px) {
   .theme-toggle-container {
-    margin-bottom: 10px;
+    padding: 2px;
   }
   
   .theme-toggle-btn {
-    padding: 0.6rem 0.9rem;
-    font-size: 1.1rem;
+    padding: 0.3rem 0.5rem;
+    font-size: 0.85rem;
   }
 }
 

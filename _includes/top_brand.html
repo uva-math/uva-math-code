@@ -11,6 +11,17 @@
         <img src="{{site.url}}/img/brand/uva-horiz.png" style="margin-top:20px; margin-bottom:23px;width:324px" alt="UVA Logo"></a>
       <a href="http://www.virginia.edu" class="d-md-none"  style="vertical-align: baseline;">
         <img src="{{site.url}}/img/brand/uva-horiz.png" style="margin-top:12px; margin-bottom:15px;width:200px" alt="UVA Logo"></a>
+      
+      <!-- Dark mode toggle for mobile -->
+      <div class="theme-toggle-container d-md-none ms-auto me-2" style="display: inline-flex !important;">
+        <button class="theme-toggle-btn" id="light-mode-btn-mobile" title="Light mode">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button class="theme-toggle-btn" id="dark-mode-btn-mobile" title="Dark mode">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+      
       <a href="http://www.virginia.edu/search/site/" class="d-none d-sm-inline d-md-none navbar-toggler-right">
         <img src="{{site.url}}/img/brand/search.png" style="width:20px;margin: 14px 0px 12px 0px" alt="Search">
       </a>
@@ -19,6 +30,17 @@
      <div class="collapse navbar-collapse" id="navbarCollapse">
        <div class="navbar-nav me-auto">
        </div>
+       
+       <!-- Dark mode toggle for desktop -->
+       <div class="theme-toggle-container me-3 d-none d-md-inline-flex">
+         <button class="theme-toggle-btn" id="light-mode-btn" title="Light mode">
+           <i class="fas fa-sun"></i>
+         </button>
+         <button class="theme-toggle-btn" id="dark-mode-btn" title="Dark mode">
+           <i class="fas fa-moon"></i>
+         </button>
+       </div>
+       
        <form class="form-inline mt-2 mt-md-0 d-none d-md-block" id="search_form" name="q">
          <input class="form-control input-lg me-sm-2" type="text" id="q" placeholder="UVA Search">
          <button class="bg-inverse my-2 my-sm-0" style="border:none;" type="submit" value=""><img src="{{site.url}}/img/brand/search.png" style="width:30px" alt="UVA Search" title="UVA Search"></button>
@@ -35,3 +57,109 @@
         window.open("http://www.virginia.edu/search/site/" + link_s);
      }
    </script>
+
+<!-- Dark mode functionality -->
+<script>
+(function() {
+  // Get the current theme from localStorage or OS preference
+  function getThemePreference() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+      return savedTheme;
+    }
+    // Check OS preference
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+
+  // Apply theme to document
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    updateThemeButtons(theme);
+  }
+
+  // Update the theme toggle buttons
+  function updateThemeButtons(theme) {
+    const lightBtns = document.querySelectorAll('#light-mode-btn, #light-mode-btn-mobile');
+    const darkBtns = document.querySelectorAll('#dark-mode-btn, #dark-mode-btn-mobile');
+    
+    lightBtns.forEach(btn => {
+      if (btn) {
+        if (theme === 'dark') {
+          btn.classList.remove('active');
+        } else {
+          btn.classList.add('active');
+        }
+      }
+    });
+    
+    darkBtns.forEach(btn => {
+      if (btn) {
+        if (theme === 'dark') {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      }
+    });
+  }
+
+  // Initialize theme on page load (immediately)
+  const currentTheme = getThemePreference();
+  applyTheme(currentTheme);
+
+  // Also initialize when DOM is ready (for safety)
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+      applyTheme(currentTheme);
+    });
+  }
+
+  // Theme toggle button handlers
+  document.addEventListener('DOMContentLoaded', function() {
+    const lightBtns = document.querySelectorAll('#light-mode-btn, #light-mode-btn-mobile');
+    const darkBtns = document.querySelectorAll('#dark-mode-btn, #dark-mode-btn-mobile');
+    
+    lightBtns.forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          applyTheme('light');
+          localStorage.setItem('theme', 'light');
+        });
+        
+        // Add touch event for mobile
+        btn.addEventListener('touchstart', function(e) {
+          e.preventDefault();
+          applyTheme('light');
+          localStorage.setItem('theme', 'light');
+        });
+      }
+    });
+    
+    darkBtns.forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          applyTheme('dark');
+          localStorage.setItem('theme', 'dark');
+        });
+        
+        // Add touch event for mobile
+        btn.addEventListener('touchstart', function(e) {
+          e.preventDefault();
+          applyTheme('dark');
+          localStorage.setItem('theme', 'dark');
+        });
+      }
+    });
+  });
+
+  // Listen for OS theme changes
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+    // Only apply OS preference if user hasn't manually set a preference
+    if (!localStorage.getItem('theme')) {
+      applyTheme(e.matches ? 'dark' : 'light');
+    }
+  });
+})();
+</script>
