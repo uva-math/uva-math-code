@@ -526,18 +526,18 @@ font-weight: bold;
 }
 
 [data-theme="dark"] {
-  --bg-color: #1a1a1a;
-  --text-color: #e0e0e0;
-  --card-bg: #2a2a2a;
-  --navbar-bg: rgba(255, 255, 255, 0.1);
-  --link-color: #66b3ff;
-  --border-color: #404040;
-  --list-group-bg: #2a2a2a;
-  --list-group-hover: #333333;
-  --list-group-active-bg: #0056b3;
+  --bg-color: #0a1628;  /* Very dark navy blue */
+  --text-color: #e8e8e8;
+  --card-bg: #1a2a3f;  /* Dark navy blue */
+  --navbar-bg: rgba(255, 255, 255, 0.08);
+  --link-color: #4da3ff;  /* Lighter blue for links */
+  --border-color: #2a3f5f;  /* Navy blue border */
+  --list-group-bg: #1a2a3f;
+  --list-group-hover: #243448;
+  --list-group-active-bg: #003d7a;  /* UVA blue variation */
   --list-group-active-color: #ffffff;
-  --code-bg: #2a2a2a;
-  --footer-bg: #2a2a2a;
+  --code-bg: #1a2a3f;
+  --footer-bg: #162133;
 }
 
 body {
@@ -577,11 +577,11 @@ a:hover {
 
 /* Jumbotron major-news specific dark mode */
 [data-theme="dark"] .jumbotron[style*="background:#DADADA"] {
-  background-color: #3a3a3a !important;
+  background-color: #243448 !important;  /* Slightly lighter navy */
 }
 
 [data-theme="dark"] .jumbotron {
-  background-color: #3a3a3a !important;
+  background-color: #243448 !important;
 }
 
 /* List groups */
@@ -649,7 +649,7 @@ footer {
 }
 
 [data-theme="dark"] .theme-toggle-container {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.08);
 }
 
 /* Ensure buttons work on mobile */
@@ -666,50 +666,50 @@ footer {
 
 /* Orange items in dark mode */
 [data-theme="dark"] .orange-item {
-  background-color: #cc4c00;
+  background-color: #d14900;  /* Darker orange for dark mode */
   color: #ffffff;
 }
 
 /* Zebra stripes in dark mode */
 [data-theme="dark"] .my-bordered-news-snippets:nth-of-type(2n) {
-  background-color: #333333;
+  background-color: #162133;  /* Darker navy blue */
 }
 
 [data-theme="dark"] .my-p-zebra p:nth-of-type(2n) {
-  background-color: #333333;
+  background-color: #162133;
 }
 
 [data-theme="dark"] .my-tr-zebra tr:nth-of-type(2n+1) {
-  background-color: #333333;
+  background-color: #162133;
 }
 
 [data-theme="dark"] .my-div-zebra div:nth-of-type(2n) {
-  background-color: #333333;
+  background-color: #162133;
 }
 
 [data-theme="dark"] .my-div-odd-zebra div:nth-of-type(2n+1) {
-  background-color: #333333;
+  background-color: #162133;
 }
 
 [data-theme="dark"] .my-col-12-zebra .col-12:nth-of-type(2n+1) {
-  background-color: #333333;
+  background-color: #162133;
 }
 
 @media (min-width: 992px) {
   [data-theme="dark"] .my-col-12-zebra-twocols .col-12:nth-of-type(4n+1) {
-    background-color: #333333;
+    background-color: #162133;
   }
   [data-theme="dark"] .my-col-12-zebra-twocols .col-12:nth-of-type(4n+4) {
-    background-color: #333333;
+    background-color: #162133;
   }
 }
 
 @media (max-width: 991px) {
   [data-theme="dark"] .my-col-12-zebra-twocols .col-12:nth-of-type(2n+1) {
-    background-color: #333333;
+    background-color: #162133;
   }
   [data-theme="dark"] .zebra-md .col-12:nth-of-type(2n) {
-    background-color: #333333;
+    background-color: #162133;
   }
 }
 
@@ -759,12 +759,12 @@ pre, code {
 
 /* Calendar events in sidebar */
 [data-theme="dark"] .cal_event {
-  background-color: #3a3a3a;
+  background-color: #243448;
   border-color: var(--border-color);
 }
 
 [data-theme="dark"] .cal_event:hover {
-  background-color: #444444;
+  background-color: #2a3f5f;
 }
 
 /* Seminar listings */
