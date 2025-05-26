@@ -661,6 +661,49 @@ footer {
   color: #ffffff;
 }
 
+/* Zebra stripes in dark mode */
+[data-theme="dark"] .my-bordered-news-snippets:nth-of-type(2n) {
+  background-color: #333333;
+}
+
+[data-theme="dark"] .my-p-zebra p:nth-of-type(2n) {
+  background-color: #333333;
+}
+
+[data-theme="dark"] .my-tr-zebra tr:nth-of-type(2n+1) {
+  background-color: #333333;
+}
+
+[data-theme="dark"] .my-div-zebra div:nth-of-type(2n) {
+  background-color: #333333;
+}
+
+[data-theme="dark"] .my-div-odd-zebra div:nth-of-type(2n+1) {
+  background-color: #333333;
+}
+
+[data-theme="dark"] .my-col-12-zebra .col-12:nth-of-type(2n+1) {
+  background-color: #333333;
+}
+
+@media (min-width: 992px) {
+  [data-theme="dark"] .my-col-12-zebra-twocols .col-12:nth-of-type(4n+1) {
+    background-color: #333333;
+  }
+  [data-theme="dark"] .my-col-12-zebra-twocols .col-12:nth-of-type(4n+4) {
+    background-color: #333333;
+  }
+}
+
+@media (max-width: 991px) {
+  [data-theme="dark"] .my-col-12-zebra-twocols .col-12:nth-of-type(2n+1) {
+    background-color: #333333;
+  }
+  [data-theme="dark"] .zebra-md .col-12:nth-of-type(2n) {
+    background-color: #333333;
+  }
+}
+
 /* Code blocks */
 pre, code {
   background-color: var(--code-bg);
