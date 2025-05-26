@@ -780,6 +780,142 @@ pre, code {
 [data-theme="dark"] .sidebar-offcanvas .container {
   background-color: transparent;
 }
+
+/* List group items in dark mode */
+[data-theme="dark"] .list-group-item {
+  background-color: #243448;  /* Dark gray-blue */
+  border-color: #2a3f5f;
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .list-group-item-action:hover,
+[data-theme="dark"] .list-group-item-action:focus {
+  background-color: #2a3f5f;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .list-group-item.active {
+  background-color: #003d7a;
+  border-color: #003d7a;
+  color: #ffffff;
+}
+
+/* Orange items in dark mode */
+[data-theme="dark"] .list-group-item.orange-item {
+  background-color: rgba(235, 95, 12, 0.2);
+  border-color: rgba(235, 95, 12, 0.4);
+  color: #ffa500;
+}
+
+[data-theme="dark"] .list-group-item.orange-item:hover {
+  background-color: rgba(235, 95, 12, 0.3);
+  color: #ffb84d;
+}
+
+[data-theme="dark"] .list-group-item.orange-item.active {
+  background-color: #d14900;
+  border-color: #d14900;
+  color: #ffffff;
+}
+
+/* Default card background for dark mode */
+[data-theme="dark"] .card {
+  background-color: #1a2a3f;
+  border-color: #2a3f5f;
+}
+
+/* Explicitly style all common card and panel backgrounds */
+[data-theme="dark"] .bg-white {
+  background-color: #243448 !important;
+}
+
+[data-theme="dark"] .bg-light {
+  background-color: #1a2a3f !important;
+}
+
+/* Form controls in dark mode */
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+  background-color: #1a2a3f;
+  border-color: #2a3f5f;
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+  background-color: #243448;
+  border-color: #4da3ff;
+  color: #e8e8e8;
+}
+
+/* Badges and pills in dark mode */
+[data-theme="dark"] .badge {
+  background-color: #243448;
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .badge-primary {
+  background-color: #003d7a;
+}
+
+[data-theme="dark"] .badge-secondary {
+  background-color: #2a3f5f;
+}
+
+/* Alert boxes in dark mode */
+[data-theme="dark"] .alert {
+  background-color: #243448;
+  border-color: #2a3f5f;
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .alert-info {
+  background-color: #1a3a5a;
+  border-color: #2a4a6a;
+  color: #a8c8e8;
+}
+
+/* Wells and panels in dark mode */
+[data-theme="dark"] .well,
+[data-theme="dark"] .panel {
+  background-color: #243448;
+  border-color: #2a3f5f;
+}
+
+/* Modals in dark mode */
+[data-theme="dark"] .modal-content {
+  background-color: #1a2a3f;
+  border-color: #2a3f5f;
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .modal-header,
+[data-theme="dark"] .modal-footer {
+  border-color: #2a3f5f;
+}
+
+/* Close button in dark mode */
+[data-theme="dark"] .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Pagination in dark mode */
+[data-theme="dark"] .pagination .page-link {
+  background-color: #243448;
+  border-color: #2a3f5f;
+  color: #4da3ff;
+}
+
+[data-theme="dark"] .pagination .page-link:hover {
+  background-color: #2a3f5f;
+  border-color: #2a3f5f;
+  color: #4da3ff;
+}
+
+[data-theme="dark"] .pagination .page-item.active .page-link {
+  background-color: #003d7a;
+  border-color: #003d7a;
+  color: #ffffff;
 }
 
 .navbar-toggler i {
