@@ -14,26 +14,14 @@ jobs:
     - name: Build
       uses: jerryjvl/jekyll-build-action@v1
 
-    - name: Clean HTML files
+    - name: Clean HTML files with sudo
       run: |
-        # Ensure we have permissions
-        chmod -R u+w _site
+        # Use sudo for all operations
+        sudo find _site -name "*.html" -type f | while read file; do
+          sudo grep -v '^[[:space:]]*$' "$file" | sudo tee "$file.tmp" > /dev/null
+          sudo mv "$file.tmp" "$file"
+        done
 
-        # Remove empty lines using Python (most reliable)
-        python3 -c "
-        import os
-        import re
-        for root, dirs, files in os.walk('_site'):
-            for f in files:
-                if f.endswith('.html'):
-                    path = os.path.join(root, f)
-                    with open(path, 'r') as file:
-                        content = file.read()
-                    content = re.sub(r'\n\s*\n', '\n', content)
-                    content = re.sub(r'^\s*\n', '', content, flags=re.MULTILINE)
-                    with open(path, 'w') as file:
-                        file.write(content)
-        "
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
