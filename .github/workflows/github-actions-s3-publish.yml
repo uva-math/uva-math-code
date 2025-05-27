@@ -14,16 +14,22 @@ jobs:
     - name: Build
       uses: jerryjvl/jekyll-build-action@v1
 
-    - name: Remove empty lines from HTML
+    - name: Remove empty lines from HTML files
       run: |
-        find _site -name "*.html" -type f -exec python3 -c "
-        import sys
-        with open(sys.argv[1], 'r') as f:
-            lines = [line for line in f if line.strip()]
-        with open(sys.argv[1], 'w') as f:
-            f.writelines(lines)
-        " {} \;
-
+        echo "Removing empty lines from HTML files..."
+        count=0
+        find _site -name "*.html" -type f | while IFS= read -r file; do
+          # Create temp file with cleaned content
+          grep -v '^[[:space:]]*$' "$file" > "${file}.cleaned" || true
+          # Replace original if cleaning succeeded
+          if [ -s "${file}.cleaned" ]; then
+            mv "${file}.cleaned" "$file"
+            ((count++)) || true
+          else
+            rm -f "${file}.cleaned"
+          fi
+        done
+        echo "✅ Processed HTML files"
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
