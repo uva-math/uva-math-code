@@ -774,6 +774,10 @@ footer {
   background-color: #162133;
 }
 
+[data-theme="dark"] .my-row-zebra .row:nth-of-type(2n+1) {
+  background-color: #0f1a2b;  /* Darker than #162133 for better contrast */
+}
+
 [data-theme="dark"] .my-tr-zebra tr:nth-of-type(2n+1) {
   background-color: #162133;
 }
@@ -917,6 +921,12 @@ pre, code {
 [data-theme="dark"] .card {
   background-color: #1a2a3f;
   border-color: #2a3f5f;
+}
+
+/* Card text in dark mode */
+[data-theme="dark"] .card-body,
+[data-theme="dark"] .card-text {
+  color: #e8e8e8;
 }
 
 /* Explicitly style all common card and panel backgrounds */
