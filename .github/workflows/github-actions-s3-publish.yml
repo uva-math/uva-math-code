@@ -14,6 +14,9 @@ jobs:
     - name: Build
       uses: jerryjvl/jekyll-build-action@v1
 
+    - name: Remove empty lines from HTML
+      run: find _site -name "*.html" -type f -exec sed -i '/^[[:space:]]*$/d' {} +
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
@@ -28,7 +31,7 @@ jobs:
     #     directory: "./_site"
     #     # The arguments to pass to HTMLProofer
     #     arguments: --disable-external true --allow-hash-href true --file-ignore "/_site/old.math.virginia.edu/"
-          
+
     - name: Sync output to S3
       run: |
         aws s3 sync ./_site/ s3://math.virginia.edu --delete
