@@ -15,7 +15,15 @@ jobs:
       uses: jerryjvl/jekyll-build-action@v1
 
     - name: Remove empty lines from HTML
-      run: find _site -name "*.html" -type f -exec sed -i '/^[[:space:]]*$/d' {} +
+      run: |
+        find _site -name "*.html" -type f -exec python3 -c "
+        import sys
+        with open(sys.argv[1], 'r') as f:
+            lines = [line for line in f if line.strip()]
+        with open(sys.argv[1], 'w') as f:
+            f.writelines(lines)
+        " {} \;
+
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
