@@ -14,22 +14,19 @@ jobs:
     - name: Build
       uses: jerryjvl/jekyll-build-action@v1
 
-    - name: Remove empty lines from HTML files
-      run: |
-        echo "Removing empty lines from HTML files..."
-        count=0
-        find _site -name "*.html" -type f | while IFS= read -r file; do
-          # Create temp file with cleaned content
-          grep -v '^[[:space:]]*$' "$file" > "${file}.cleaned" || true
-          # Replace original if cleaning succeeded
-          if [ -s "${file}.cleaned" ]; then
-            mv "${file}.cleaned" "$file"
-            ((count++)) || true
-          else
-            rm -f "${file}.cleaned"
-          fi
+    - name: Clean HTML files properly
+    run: |
+      find _site -name "*.html" -type f -exec sh -c '
+        for file; do
+          # Remove empty lines, whitespace lines, and compress newlines
+          awk "NF || !p; {p=NF}" "$file" | \
+          sed "s/^[[:space:]]*$//" | \
+          awk "!NF{if (++n<=1) print; next}; {n=0; print}" > "$file.tmp" && \
+          mv "$file.tmp" "$file"
         done
-        echo "✅ Processed HTML files"
+      ' sh {} +
+
+
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
