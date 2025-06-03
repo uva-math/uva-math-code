@@ -13,3 +13,4 @@ image-alt: J.D. Quigley
 Congratulations to **J.D. Quigley** on receiving a prestigious NSF CAREER grant!
 
 Professor Quigley's research focuses on homotopy theory, algebraic topology, and K-theory. He joined the UVA Mathematics Department in 2023.
+[Read more in the College of Arts & Sciences article](https://as.virginia.edu/uva-mathematician-jd-quigley-awarded-nsf-career-grant)

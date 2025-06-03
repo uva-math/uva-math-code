@@ -17,7 +17,7 @@ more-text: Information about the ceremony
 
 The **Mathematics Department Diploma Ceremony** will be held on **Saturday, May 17, 2025**, in the **Pavilion I, Lower Garden** from **11:00 a.m. to 12:30 p.m.**
 
-
+<!--more-->
 
 ### FAQ
 
@@ -29,7 +29,7 @@ No, tickets are not required for the Mathematics Department Diploma Ceremony. Fa
 
 For more information about university-wide graduation events, please visit the [Office of Major Events](https://majorevents.virginia.edu/finals) website.
 
-<!--more-->
+
 
 ### General Info
 - **Fair-Weather Location:** Pavilion I, Lower Garden (11:00 a.m. - 12:30 p.m.)
