@@ -51,6 +51,19 @@ insitutions, but then also email <a
 href="mailto:math-dgs@virginia.edu">math-dgs@virginia.edu</a> with the proposed
 expenses before your trip.
 
+### DGS Funds (Academic Year 2025/26)
+
+The default standard purpose of the DGS funding is to support PhD students to participate in various workshops, conferences, and mathematical meetings which fit well with their research areas.
+
+1. A request for funding with a specific amount and a short justification can be emailed to DGS.
+2. The request is capped at $1000 per PhD student per Academic Year + Summer.
+3. Only students who have passed both general exams are eligible.
+4. The endorsement of the funding request by an advisor (or some potential advisor in case no formal advisor is declared yet) is required.
+5. Co-sharing with partial support from workshops or conferences or advisor's grant is encouraged.
+6. Research collaborations and giving presentations in conferences are encouraged.
+
+Funding may sometimes be used by students for other purposes, such as poster presentations. Exceptions beyond the standard guidelines can be made, up to the approval by the DGS and the Graduate Committee.
+
 ---
 
 <h2 class="mb-3">Outside Sources</h2>
