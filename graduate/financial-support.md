@@ -42,8 +42,7 @@ Some graduate students in topology are supported by the NSF RTG grant. See the [
 
 <h2 class="mb-3">Internal funding</h2>
 
-
-### Departmental Money
+### DGS Funds
 
 We have money to support graduate student travel to conferences, workshops,
 and other institutions for work-related visits. Apply for funding with the host
@@ -51,12 +50,10 @@ insitutions, but then also email <a
 href="mailto:math-dgs@virginia.edu">math-dgs@virginia.edu</a> with the proposed
 expenses before your trip.
 
-### DGS Funds (Academic Year 2025/26)
-
 The default standard purpose of the DGS funding is to support PhD students to participate in various workshops, conferences, and mathematical meetings which fit well with their research areas.
 
 1. A request for funding with a specific amount and a short justification can be emailed to DGS.
-2. The request is capped at $1000 per PhD student per Academic Year + Summer.
+2. The request is capped at $1000 per PhD student for the period of Academic Year 2025/26 + Summer 2026.
 3. Only students who have passed both general exams are eligible.
 4. The endorsement of the funding request by an advisor (or some potential advisor in case no formal advisor is declared yet) is required.
 5. Co-sharing with partial support from workshops or conferences or advisor's grant is encouraged.
