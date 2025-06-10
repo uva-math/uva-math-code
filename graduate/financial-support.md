@@ -40,9 +40,7 @@ Some graduate students in topology are supported by the NSF RTG grant. See the [
 
 ---
 
-<h2 class="mb-3">Internal funding</h2>
-
-### DGS Funds
+<h2 class="mb-3">Internal DGS funding</h2>
 
 We have money to support graduate student travel to conferences, workshops,
 and other institutions for work-related visits. Apply for funding with the host
