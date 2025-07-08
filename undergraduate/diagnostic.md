@@ -16,7 +16,7 @@ tooltips: true
 <h3 class="mb-4">Three pathways through our introductory courses</h3>
 <div class="diagnostic">
 <ol>
-  <li>   <em>Do you need to fulfill a quantitative reasoning requirement and don't need a calculus-based course for your major?</em> We offer MATH 1110: Probability/Finite Mathematics , MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and   MATH 1160 Algebra, Number Systems and Number Theory.  </li>
+  <li>   <em>Do you need to fulfill a quantitative reasoning requirement and don't need a calculus-based course for your major?</em> We offer MATH 1110: Probability/Finite Mathematics, MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and MATH 1160 Algebra, Number Systems and Number Theory.  </li>
   <p style="margin-left: -30px;">  <span class="bolded">Next Step</span> The next step is the diagnostic for Path 1 and more information about these courses  <a href="https://math.virginia.edu/undergraduate/diagnosticPath1">is here</a>. </p>
   
   <li>  <em>Are you interested in business, biology, a social science, or need to fulfill  pre-health requirements?</em>  Path 2 includes Differential and Integral Calculus for non-STEM majors via Math 1190, Math 1210, and Math 1220. </li>
@@ -26,9 +26,8 @@ tooltips: true
 
  
    
-  <li>  <em>Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?</em>  Path 3 includes Differential Calculus  Integral Calculus  and Multivariable Calculus. We offer Math 1310, 1320 and Math 2310 for this path. 
-</li>
+  <li>  <em>Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?</em>  Path 3 includes Differential Calculus Integral Calculus  and Multivariable Calculus. We offer Math 1310, 1320 and Math 2310 for this path. </li>
    <p style="margin-left: -30px;">  <span class="bolded">Next Step</span> The next step is the diagnostic for Path 3 and more information about these courses  <a href="https://math.virginia.edu/undergraduate/diagnosticPath3">is here</a>. </p>
 
-  </ol>
+</ol>
 </div>
