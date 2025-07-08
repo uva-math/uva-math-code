@@ -23,6 +23,6 @@ tooltips: true
  </div>
   <p></p>
  
- <h1 class="mb-4"> Diagnostic: Which course is the best place to start?  </h1>
+ <h2 class="mb-4"> Diagnostic: Which course is the best place to start?  </h2>
  <p>Simply pick the course that is most interesting to you and sign up!</p>
  
