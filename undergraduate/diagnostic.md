@@ -26,7 +26,7 @@ tooltips: true
 
  
    
-  <li>  <em>Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?</em>  Path 3 includes Differential Calculus Integral Calculus  and Multivariable Calculus. We offer MATH 1310, MATH 1320 and Math 2310 for this path. </li>
+  <li>  <em>Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?</em>  Path 3 includes Differential Calculus, Integral Calculus, and Multivariable Calculus. We offer MATH 1310, MATH 1320 and Math 2310 for this path. </li>
    <p style="margin-left: -30px;">  <span class="bolded">Next Step</span> The next step is the diagnostic for Path 3 and more information about these courses  <a href="https://math.virginia.edu/undergraduate/diagnosticPath3">is here</a>. </p>
 
 </ol>
