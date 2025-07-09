@@ -98,6 +98,28 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                   //   nextEl: '.swiper-button-next',
                   //   prevEl: '.swiper-button-prev',
                   // },
+                  // Enable mouse wheel support (two-finger swipes on Mac)
+                  mousewheel: {
+                    enabled: true,
+                    sensitivity: 1,
+                    thresholdDelta: 50,
+                    thresholdTime: 500,
+                  },
+                  // Enhanced touch support for mobile devices
+                  touchRatio: 1,
+                  touchAngle: 45,
+                  simulateTouch: true,
+                  allowTouchMove: true,
+                  touchStartPreventDefault: false,
+                  touchStartForcePreventDefault: false,
+                  touchMoveStopPropagation: false,
+                  // Better responsiveness for touch devices
+                  longSwipes: true,
+                  longSwipesRatio: 0.5,
+                  longSwipesMs: 300,
+                  followFinger: true,
+                  shortSwipes: true,
+                  threshold: 10,
                 });
               </script>
 

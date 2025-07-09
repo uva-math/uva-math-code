@@ -513,7 +513,7 @@ font-weight: bold;
 :root {
   --bg-color: #ffffff;
   --text-color: #212529;
-  --card-bg: #ffffff;
+  --card-bg: #f8f9fa;
   --navbar-bg: rgba(0, 0, 0, 0.15);
   --link-color: #007bff;
   --border-color: #dee2e6;
