@@ -1,0 +1,18 @@
+<!-- Search Bar -->
+<div id="people-search-group" class="input-group mb-4">
+  <input type="text" id="people-search-input" class="form-control" placeholder="Search people… (Esc to clear)" aria-label="Search people">
+  <button class="btn btn-secondary" type="button" id="people-search-clear">Clear</button>
+</div>
+
+<!-- Category Buttons (only show on pages with multiple types) -->
+{% if include.show_categories %}
+<div id="people-cat-buttons" class="d-none d-md-flex flex-wrap gap-2 mb-4">
+  <!-- Categories will be dynamically generated -->
+</div>
+{% endif %}
+
+<!-- Include the original people roll -->
+{% include people_roll.html type=include.type %}
+
+<!-- Include search script -->
+<script src="{{ site.url }}/css/people-search.js"></script>

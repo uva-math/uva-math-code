@@ -9,6 +9,12 @@ nav_nesting: true
 
 <h1 class="mb-4">Alphabetic list of all members of the Department</h1>
 
+<!-- Search Bar -->
+<div id="people-search-group" class="input-group mb-4">
+  <input type="text" id="people-search-input" class="form-control" placeholder="Search people… (Esc to clear)" aria-label="Search people">
+  <button class="btn btn-secondary" type="button" id="people-search-clear">Clear</button>
+</div>
+
 {% assign sorted_people = site.departmentpeople | sort: 'lastname' %}
 
 <div class="my-row-zebra">
@@ -68,3 +74,6 @@ nav_nesting: true
   </div>
 {% endfor %}
 </div>
+
+<!-- Include search script -->
+<script src="{{ site.url }}/css/people-search.js"></script>

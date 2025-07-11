@@ -1,16 +1,16 @@
 ---
-title: Faculty
+title: All People
 layout: static_page_no_right_menu
-permalink: /faculty/
-nav_id: Faculty
-nav_weight: 10
+permalink: /people/
+nav_id: All People
+nav_weight: 5
 nav_nesting: true
 nav_parent: People
 ---
 
-<h1 class="mb-4">Directory</h1>
+<h1 class="mb-4">All People</h1>
 
-<!-- Search interface for all faculty types -->
+<!-- Search interface with category buttons -->
 {% include people_roll_with_search.html show_categories=true %}
 
 <h2 class="mb-4 mt-5">Faculty</h2>
@@ -21,19 +21,18 @@ nav_parent: People
 
 {% include people_roll.html type='postdoc' %}
 
+<h2 class="mb-4 mt-5">Graduate Students</h2>
 
+{% include people_roll.html type='gradstudent' %}
 
 <h2 class="mb-4 mt-5">Lecturers</h2>
 
-
-
-
 {% include people_roll.html type='lecturer' %}
 
+<h2 class="mb-4 mt-5">Staff</h2>
 
+{% include people_roll.html type='staff' %}
 
 <h2 class="mb-4 mt-5">Emeritus Faculty</h2>
-
-
 
 {% include people_roll.html type='emeritus' %}
