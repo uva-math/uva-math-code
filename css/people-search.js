@@ -6,6 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     let activeCategory = 'all';
 
+    // Normalize text by removing diacritics for search
+    function normalizeText(text) {
+        return text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    }
+
     // Highlight matching text
     function highlightText(element, searchTerm) {
         if (!searchTerm) return;
@@ -109,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 row.dataset.personName = fullName.toLowerCase();
                 row.dataset.personCategory = category;
                 row.dataset.searchData = `${uvaId} ${fullName} ${position} ${specialty} ${office} ${email} ${phone} ${officeHours} ${researchTags}`.toLowerCase();
+                row.dataset.searchDataNormalized = normalizeText(`${uvaId} ${fullName} ${position} ${specialty} ${office} ${email} ${phone} ${officeHours} ${researchTags}`);
             });
         });
     }
@@ -139,14 +145,16 @@ document.addEventListener('DOMContentLoaded', function() {
                     matchesSearch = true;
                 } else {
                     const searchData = row.dataset.searchData;
+                    const searchDataNormalized = row.dataset.searchDataNormalized;
                     
                     // Smart case matching
                     if (originalSearchTerm !== originalSearchTerm.toLowerCase()) {
                         // Contains uppercase letters - case sensitive search
                         matchesSearch = row.textContent.includes(originalSearchTerm);
                     } else {
-                        // All lowercase - case insensitive search
-                        matchesSearch = searchData.includes(searchTerm);
+                        // All lowercase - case insensitive search with diacritic normalization
+                        const normalizedSearchTerm = normalizeText(searchTerm);
+                        matchesSearch = searchData.includes(searchTerm) || searchDataNormalized.includes(normalizedSearchTerm);
                     }
                 }
                 
