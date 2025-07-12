@@ -1,20 +1,16 @@
 ---
 layout: post
-title: "Matthew McCarthy Thesis Defense"
+title: "Thesis defense: Matthew McCarthy"
 event-date: 2025-07-12 15:30:00
 comments: false
 categories: news events defenses
 published: true
 ---
 
-Matthew McCarthy will defend his thesis "Connectedness Properties of some Subcomplexes of Twin Buildings and Their Group Theoretic Applications" on July 12.
+**Matthew McCarthy** will defend the Ph.D. thesis on **Friday, July 12**. The title is 
 
-<!--more-->
+"_Connectedness Properties of some Subcomplexes of Twin Buildings and Their Group Theoretic Applications_". 
 
-**Date:** Friday, July 12, 2025  
-**Time:** 3:30 PM  
-**Location:** Kerchof Hall 111
+The defense will be held at **Kerchof 111** at **3:30 pm**.
 
-**Title:** Connectedness Properties of some Subcomplexes of Twin Buildings and Their Group Theoretic Applications
-
-Everyone is welcome to attend.
+Everyone is invited to attend.
