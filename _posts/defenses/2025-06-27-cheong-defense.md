@@ -5,7 +5,7 @@ event-date: 2025-06-30 10:00:00
 comments: false
 categories: news events defenses
 published: true
-hide-this-item: false
+hide-this-item: true
 ---
 
 **Kian Aik Cheong** will defend the Ph.D. thesis on **Monday, June 30**. The title is 
