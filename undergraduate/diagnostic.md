@@ -1,6 +1,6 @@
 ---
 title: Diagnostic
-# layout: ug_page
+layout: ug_page
 ug_policy: true
 permalink: /undergraduate/diagnostic/
 nav_parent: Undergraduate
