@@ -41,5 +41,3 @@ nav_parent: IMS
 <hr>
 
 <p>The Virginia Mathematics Lectures are supported by the University of Virginia Department of Mathematics and the Institute of Mathematical Sciences.</p>
-
-<p>Organizers: {% include person_info_just_name.html UVA_id="sm4cw" %} and {% include person_info_just_name.html UVA_id="asr3x" %}</p>
