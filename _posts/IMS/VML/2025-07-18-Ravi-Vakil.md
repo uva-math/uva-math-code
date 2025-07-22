@@ -7,7 +7,8 @@ permalink: /ims/lectures/ravi-vakil/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
-image: __SITE_URL__/img/IMS/Ravi-Vakil.jpg
+image: __SITE_URL__/img/IMS/Ravi-Vakil-poster.jpg
+image-address: __SITE_URL__/img/IMS/Ravi-Vakil-poster.pdf
 image-alt: Ravi Vakil
 image-tall: true
 more-text: Details and Schedule
