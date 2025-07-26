@@ -8,7 +8,7 @@ office: 110 Kerchof Hall
 phone: 
 email: gsm6dn@virginia.edu
 image: __SITE_URL__/img/people/2024-fall/macmahon.jpg
-personal_page:
+personal_page: https://sites.google.com/view/connormacmahon/home
 areas:
   
 ---
