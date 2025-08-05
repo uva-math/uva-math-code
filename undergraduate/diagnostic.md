@@ -9,7 +9,7 @@ tooltips: true
 ---
 <h1 class="mb-4">Diagnostic</h1>
 
-<p>We are excited that you are interested in taking a math class at UVA! It is important to find a good starting place so that we can best support your learning. If you opted to take the ALEKS diagnostic assessment in Summer 2025, please visit this page for further information </p>
+<p>We are excited that you are interested in taking a math class at UVA! It is important to find a good starting place so that we can best support your learning. If you opted to take the ALEKS diagnostic assessment in Summer 2025, please visit <a href="https://math.virginia.edu/undergraduate/diagnostic_aleks">this page</a> for further information. </p>
 
 <p> If not, we have a couple of questions to help you figure out what's next. </p>
 
