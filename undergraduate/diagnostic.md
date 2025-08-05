@@ -9,9 +9,13 @@ tooltips: true
 ---
 <h1 class="mb-4">Diagnostic</h1>
 
-<p>We are excited that you are interested in taking a math class at UVA! It is important to find a good starting place so that we can best support your learning. If you opted to take the ALEKS diagnostic assessment in Summer 2025, please visit <a href="https://math.virginia.edu/undergraduate/diagnostic_aleks">this page</a> for further information. </p>
+<p>We are excited that you are interested in taking a math class at UVA! It is important to find a good starting place so that we can best support your learning. </p>
+ <ul>
+ <li> If you opted to take the ALEKS diagnostic assessment in Summer 2025, please visit <a href="https://math.virginia.edu/undergraduate/diagnostic_aleks">this page</a> for further information. </li>
+ <li> If not, we have a few questions below to help you figure out what's next. </li>
+</ul> 
+  
 
-<p> If not, we have a couple of questions to help you figure out what's next. </p>
 
 ## What Math courses do I need?
 <p> First, you will want to think about what major you are considering and the introductory mathematics courses you should take. <a href="https://math.virginia.edu/undergraduate/diagnosticCourses">Here's a list</a> of some majors and courses they require. </p>
