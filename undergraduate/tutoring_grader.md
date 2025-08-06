@@ -11,7 +11,7 @@ nav_weight: 6
 
 <h3>Tutoring</h3>
 
-<p>The best resource for help with math classes--aside from instructor office hours--is the <a href="https://math.virginia.edu/undergraduate/MCLC/">Math Collaborative Learning Center</a>, where you can find drop-in hours for most math classes numbered under 3000, and also make appointments for peer coaching. The math department does not offer tutoring services. Some math graduate students may be interested in tutoring on an individual basis; to circulate a request please email <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a></p>.
+<p>The best resource for help with math classes--aside from instructor office hours--is the <a href="https://math.virginia.edu/undergraduate/MCLC/">Math Collaborative Learning Center</a>, where you can find drop-in hours for most math classes numbered under 3000, and also make appointments for peer coaching. The math department does not offer tutoring services. Some math graduate students may be interested in tutoring on an individual basis; to circulate a request please email <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a>.</p>
 
 ---
 
