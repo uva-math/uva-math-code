@@ -43,7 +43,7 @@ nav_weight: 20
 
 - **Math Department Tea Time** is every Tuesday and Thursday during the semester in Kerchof 314 (Math Lounge / Common Room), starting at 3:15.
 
-- **Meeting Rooms at Kechof booking system**: `[https://math.virginia.edu/mrbs/](https://math.virginia.edu/mrbs/)`, see help [here](https://math.virginia.edu/mrbs/help-uva.php)
+- **Meeting Rooms at Kechof booking system**: [`https://math.virginia.edu/mrbs/`](https://math.virginia.edu/mrbs/), see help [here](https://math.virginia.edu/mrbs/help-uva.php)
 
 - **Mailboxes:** Everyone has a mailbox in the mailroom (off the Lobby on the main floor).
 
