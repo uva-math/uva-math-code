@@ -5,6 +5,7 @@ event-date: 2025-07-28 11:00:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **Valentina Zapata Castro** will defend the Ph.D. thesis on **Monday, July 28**. The title is
