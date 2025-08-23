@@ -38,14 +38,14 @@ If you would like to participate in our mentoring program, please send us a mess
 ### Our chapter's leadership
 
 <ul>
-<li>President: Mandy Unterhalter</li>
-<li>Vice President: Mary Edith Plunkett</li>
-<li>Treasurer: Bliss Bodawala</li>
-<li>Secretary: Claire Barklage</li>
-<li>Social Chair: Mikayla Carter</li>
-<li>Volunteer Chair: Audrey Humes</li>
-<li>Title IX Chair: Louisa Liles</li>
-<li>Colloquium Chair: Catherine Cossaboom</li>
+<li>President: Mary Edith Plunkett</li>
+<li>Vice President: Kate Butler</li>
+<li>Treasurer: Kriti Bhabu</li>
+<li>Communications Chair: Claire Barklage</li>
+<li>Events Chair: Alexa Stein</li>
+<li>Volunteer Chair: Xiangyu Shi</li>
+<li>Graduate DEI Chair: Astrid Lilly</li>
+<li>Undergraduate DEI Chair: Wynn Smith</li>
 <li>Faculty Mentors: {% include person_info_email_only.html UVA_id="brh5c" %} and {% include person_info_email_only.html UVA_id="jlm6cj" %}</li>
 </ul>  
 
