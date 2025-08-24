@@ -14,4 +14,4 @@ The DRP committee is comprised of the following graduate students:
 - [Jun Hyun Park](https://math.virginia.edu/people/rsx5wp/)
 - [Mikhail Tikhonov](https://math.virginia.edu/people/mst2ae/)
 
-The sponsoring faculty member is [Aseel Farhat](https://math.virginia.edu/people/af7py/) and [You Qi](https://math.virginia.edu/people/yq2dw/).
+The sponsoring faculty members are [Aseel Farhat](https://math.virginia.edu/people/af7py/) and [You Qi](https://math.virginia.edu/people/yq2dw/).
