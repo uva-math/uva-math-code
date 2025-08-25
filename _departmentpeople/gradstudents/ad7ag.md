@@ -7,7 +7,8 @@ position: Graduate Student
 office: 121 Kerchof Hall
 phone: 434-982-2785
 email: ad7ag@virginia.edu
-image: __SITE_URL__/img/people/2021-fall/Castano_A.jpg 
+image: __SITE_URL__/img/people/2021-fall/Castano_A.jpg
+personal_page: https://alejandrodlpc.github.io/ 
 
 
 
