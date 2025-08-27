@@ -17,8 +17,6 @@ nav_weight: 1
 
 ##### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=67&poid=10261) to the UREG page
 
-<!-- - ##### [Major in Mathematics Requirements]({{ site.url }}/undergraduate/docs/MATH_MAJOR_2024.pdf)  -->
-<!-- - ##### [Minor in Mathematics Requirements]({{ site.url }}/undergraduate/docs/MATH_MINOR_2024.pdf) -->
 
 <h3 class="mt-3">Please note:</h3>
 
