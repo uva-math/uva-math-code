@@ -3,7 +3,7 @@ UVA_id: yq2dw
 lastname: Qi
 name: You
 general_position: faculty
-position: Assistant Professor
+position: Associate Professor
 office: 305 Kerchof Hall
 phone: 434-924-4936
 email: yq2dw@virginia.edu
