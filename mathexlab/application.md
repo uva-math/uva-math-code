@@ -1,7 +1,9 @@
 ---
 title: Apply Now
 layout: geolab_page
-permalink: /geolab/application/
+permalink: /mathexlab/application/
+redirect_from:
+  - /geolab/application/
 ---
 
 <h2 class="mb-3">Apply Now</h2>

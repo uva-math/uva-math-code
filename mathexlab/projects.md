@@ -1,7 +1,9 @@
 ---
 title: Past Projects
 layout: geolab_page
-permalink: /geolab/projects/
+permalink: /mathexlab/projects/
+redirect_from:
+  - /geolab/projects/
 ---
 
 <h2 class="mb-3">Past Projects</h2>

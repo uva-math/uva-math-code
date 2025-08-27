@@ -1,7 +1,9 @@
 ---
-title: Schedule 
+title: Schedule
 layout: geolab_page
-permalink: /geolab/schedule/
+permalink: /mathexlab/schedule/
+redirect_from:
+  - /geolab/schedule/
 ---
 
 <h2 class="mb-3">Schedule</h2>
