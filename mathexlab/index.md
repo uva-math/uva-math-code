@@ -35,7 +35,7 @@ Applications to participate in the Math Experimental Lab open at the start of ea
 
 See the <a href="{{site.url}}/mathexlab/faq/">FAQ page</a> for more details about the lab. If your question is not answered there, please feel free to contact [Sara Maloni](https://math.virginia.edu/people/sm4cw/).
 
-<h2 class="mb-3">Other experimental labs</h2>
+<h2 class="mb-3">Other labs</h2>
 
 *   [https://geometrylabs.net/](https://geometrylabs.net/)
 
