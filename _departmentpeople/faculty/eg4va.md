@@ -4,7 +4,7 @@ lastname: Gazaki
 name: Evangelia
 pronouns: she/her/hers
 general_position: faculty
-position: Assistant Professor
+position: Associate Professor
 office: 221 Kerchof Hall
 phone: 434-924-1790
 email: eg4va@virginia.edu
