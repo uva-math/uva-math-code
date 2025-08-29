@@ -7,7 +7,7 @@ position: Graduate Student
 office: 
 phone: 
 email: avm5ax@virginia.edu
-image: 
+image: __SITE_URL__/img/people/fall25/Gabriel_Diraviam_tiny.png
 personal_page: 
 
 ---

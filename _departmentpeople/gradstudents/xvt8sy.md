@@ -7,7 +7,7 @@ position: Graduate Student
 office: 
 phone: 
 email: xvt8sy@virginia.edu
-image: 
+image: __SITE_URL__/img/people/fall25/Fausto_Navarro_Cepeda_tiny.png
 personal_page: 
 
 ---

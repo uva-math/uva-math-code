@@ -7,7 +7,7 @@ position: Graduate Student
 office: 
 phone: 
 email: vkn5ht@virginia.edu
-image: 
+image: __SITE_URL__/img/people/fall25/Andrew_Taylor_tiny.png
 personal_page: 
 
 ---

@@ -7,7 +7,7 @@ position: Graduate Student
 office: 
 phone: 
 email: cdn6nr@virginia.edu
-image: 
+image: __SITE_URL__/img/people/fall25/Shaoyi_Zhang_tiny.png
 personal_page: 
 
 ---

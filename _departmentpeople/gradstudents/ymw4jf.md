@@ -7,7 +7,7 @@ position: Graduate Student
 office: 
 phone: 
 email: ymw4jf@virginia.edu
-image: 
+image: __SITE_URL__/img/people/fall25/Khoa_Nguyen_tiny.png
 personal_page: 
 
 ---

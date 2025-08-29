@@ -7,7 +7,7 @@ position: Graduate Student
 office: 
 phone: 
 email: xhs2hf@virginia.edu
-image: 
+image: __SITE_URL__/img/people/fall25/Tommaso_Punis_tiny.png
 personal_page: 
 
 ---

@@ -7,7 +7,7 @@ position: Graduate Student
 office: 
 phone: 
 email: hcg4dz@virginia.edu
-image: 
+image: __SITE_URL__/img/people/fall25/Ben_Hilbert_tiny.png
 personal_page: 
 
 ---

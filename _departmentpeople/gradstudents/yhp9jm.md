@@ -7,7 +7,7 @@ position: Graduate Student
 office: 
 phone: 
 email: yhp9jm@virginia.edu
-image: 
+image: __SITE_URL__/img/people/fall25/Roan_Luikart_tiny.png
 personal_page: 
 
 ---

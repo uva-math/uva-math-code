@@ -7,7 +7,7 @@ position: Graduate Student
 office: 
 phone: 
 email: tdy3af@virginia.edu
-image: 
+image: __SITE_URL__/img/people/fall25/Liam_Staker_tiny.png
 personal_page: 
 
 ---
