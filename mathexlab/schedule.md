@@ -8,12 +8,12 @@ redirect_from:
 
 <h2 class="mb-3">Schedule</h2>
 
-### Spring 2025
+### Fall 2025
 
 <ul>
-  <li>Tuesday, February 25th, 5-6:30pm, Kerchof Hall 314: Informal meeting with other Geometry Lab groups</li>
-  <li>Friday, March 28th, 2-3:20pm, Kerchof Hall 111: Presentations in Graduate Student Seminar (https://math.virginia.edu/seminars/gradsem/)</li>
-  <li>Saturday, April 19th, 10am-12pm, Ix Park Farmer's Market: Sharing activities based on projects with public</li>
+  <li>First meeting: TBD</li>
+  <li>Second meeting: TBD</li>
+  <li>Third meeting: TBD</li>
 </ul>
 
 **Examples of past common meetings:**
