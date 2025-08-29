@@ -6,6 +6,60 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Spring 2025
+
+This list will be updated as more projects are confirmed.
+
++ Measure Theory and Probability
+   - Text:  Capinski and Kopp, Measure, Integral, and Probability
+   - Mentee: Andrew Kim
+   - Mentor: Jun Park
+     
++ An Introduction to Geometric Group Theory
+   - Text:  Clay and Margalit, Office Hours with a Geometric Group Theorist
+   - Mentee: Ismoil Nosirov
+   - Mentor: Beth Claire Branman
+     
++ The Hook Length Formula
+   - Text:  Stanley, Enumerative Combinatorics 
+   - Mentee: Nate Bryerton
+   - Mentor: Mikhail Tikhonov
+     
+### Fall 2024
+
++ Introduction to Functional Analysis
+   - Text:  Eidelman, Milman and Tsolomitis, Functional Analysis: An Introduction
+   - Mentee: Kayla Denoo
+   - Mentor: Felipe Flores
+
++ Differential Topology and the Generalized Stokes' Theorem
+   - Text: Lee, Introduction to Smooth Manifolds 
+   - Mentee: Alexander Kurtz
+   - Mentor: Nick Sweeney
+ 
++ DNA, Associations Schemes, and the Linear Programming Bound
+   - Text: Bruower and Haemers, Spectra of Graphs
+   - Mentee: Giovanni Mazzeo
+   - Mentor: Kang Lu
+ 
++ Quotients of Free Z-Modules of Finite Rank
+   - Text: David Tall and Ian Stewart, Algebraic Number Theory and Fermat’s Last Theorem
+   - Mentee: Josh Gao
+   - Mentor: Alejandro De Las Peñas Castaño
+     
++ p-adic Numbers
+   - Text: Gouvea, p-Adic Numbers
+   - Mentee: Alexander Seidenberg-Spitzer
+   - Mentor: Oliver Wang
+ 
++ Differential geometry of curves and surfaces
+   - Text: Montiel, Curves and surfaces
+   - Mentee: Zubin Kaul
+   - Mentor: Pedro Brunialti Lima De Andrade
+ 
+     
+     
+
 ### Spring 2024
 
 + From calculus to de Rham cohomology
