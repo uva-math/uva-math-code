@@ -24,14 +24,14 @@ This list will be updated as more projects are confirmed.
    - Text:  Stanley, Enumerative Combinatorics 
    - Mentee: Nate Bryerton
    - Mentor: Mikhail Tikhonov
-     
-### Fall 2024
 
 + Introduction to Algebraic Topology
    - Text:  Hatcher, Algebraic Topology
    - Mentee: Wynn Smith
    - Mentor: Sarah Blackwell
-   - 
+     
+### Fall 2024
+
 + Introduction to Functional Analysis
    - Text:  Eidelman, Milman and Tsolomitis, Functional Analysis: An Introduction
    - Mentee: Kayla Denoo
