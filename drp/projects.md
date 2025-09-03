@@ -27,6 +27,11 @@ This list will be updated as more projects are confirmed.
      
 ### Fall 2024
 
++ Introduction to Algebraic Topology
+   - Text:  Hatcher, Algebraic Topology
+   - Mentee: Wynn Smith
+   - Mentor: Sarah Blackwell
+
 + Introduction to Functional Analysis
    - Text:  Eidelman, Milman and Tsolomitis, Functional Analysis: An Introduction
    - Mentee: Kayla Denoo
