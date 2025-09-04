@@ -2,6 +2,17 @@
 
 This document provides comprehensive guidelines for maintaining content on the UVA Mathematics Department website.
 
+## Common Tasks
+
+Many content management requests come via email from department colleagues. These typically include:
+- Posting seminar/colloquium abstracts
+- Announcing conferences and workshops
+- Updating speaker information
+- Publishing award and defense announcements
+- Adding job postings
+
+When processing email requests, extract the key information (speaker names, titles, abstracts, dates, locations) and format according to the guidelines below.
+
 ---
 
 ## Content Structure
