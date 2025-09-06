@@ -38,9 +38,9 @@ Yes, complete the [Participation in Final Exercises by BA Form]({{site.url}}/und
 [`http://ascs8.eservices.virginia.edu/asEquivs`](http://ascs8.eservices.virginia.edu/asEquivs)
 
 - Can I double count some courses?
-Yes. The current policy is given in the Undergraduate Record: “Up to two courses that are being
+Yes. The current policy is given in the Undergraduate Record: "Up to two courses that are being
 counted for another College major can also be counted for the major in mathematics. Three
-courses may be allowed if the other major is interdisciplinary.” See also [Double counting for SEAS]({{site.url}}/content/double-counting-seas/)
+courses may be allowed if the other major is interdisciplinary." See also [Double counting courses in the math major and minor]({{site.url}}/content/double-counting-seas/)
 
 - Course action form:
 [`http://www.virginia.edu/registrar/courseactionform.html`](http://www.virginia.edu/registrar/courseactionform.html)
