@@ -8,6 +8,6 @@ office: 119 Kerchof Hall
 phone: 
 email: eyu4dh@virginia.edu
 image: __SITE_URL__/img/people/2023-fall/Pedro.jpg
-personal_page: https://sites.google.com/view/pedrobrunialti/home
+personal_page: https://pbrunialti.github.io/
 
 ---
