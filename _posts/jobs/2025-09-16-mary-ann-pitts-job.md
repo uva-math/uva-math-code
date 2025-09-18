@@ -28,7 +28,7 @@ Applicants should hold a PhD in mathematics or allied field, and a minimum of th
 
 ## Application Instructions
 
-Candidates should apply online at Interfolio and complete an application by attaching:
+Candidates should apply online at [Interfolio](https://apply.interfolio.com/172899) and complete an application by attaching:
 
 1. Cover letter of interest that includes a summary of your research plans, your teaching interests and experience, and how your skills and experience could advance the University's ambition to cultivate the most vibrant community in higher education in order to prepare students to be leaders in a diverse and globally connected world. [More information about the 2030 plan.](https://strategicplan.virginia.edu/strategic-goals/)
 
