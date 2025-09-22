@@ -11,9 +11,9 @@ redirect_from:
 ### Fall 2025
 
 <ul>
-  <li>First meeting: TBD</li>
-  <li>Second meeting: TBD</li>
-  <li>Third meeting: TBD</li>
+  <li>Introductory group meeting: Wednesday, October 6, 5-6pm </li>
+  <li>Visit from Starr Hill Pathways: Friday, October 17, 1-3pm </li>
+  <li>Final group presentations: Wednesday, December 6, 5-6pm </li>
 </ul>
 
 **Examples of past common meetings:**
