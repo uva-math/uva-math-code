@@ -39,7 +39,7 @@ Candidates should apply online at [Interfolio](https://apply.interfolio.com/1728
 
 Candidates may be asked to supply a list of names for letters of recommendation at a later date.
 
-In addition, please submit the following required documents electronically through www.MathJobs.org:
+In addition, please submit the following required documents electronically through [MathJobs listing](https://www.mathjobs.org/jobs/list/27105):
 
 1. Cover letter
 2. AMS Standard Cover Sheet
