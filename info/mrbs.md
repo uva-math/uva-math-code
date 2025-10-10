@@ -8,6 +8,7 @@ nav_nesting: true
 nav_weight: 30
 ---
 
+
 <h1 class="mb-5">Meeting Room Booking System (MRBS)</h1>
 
 <p>The Department of Mathematics uses the Meeting Room Booking System (MRBS) to manage all departmental room reservations. Bookings made through MRBS are official—the department office uses this calendar as the authoritative source for scheduling.</p>
