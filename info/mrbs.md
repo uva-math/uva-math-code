@@ -1,7 +1,7 @@
 ---
 title: Meeting Room Booking System
 layout: static_page_no_right_menu
-permalink: /mrbsi/
+permalink: /info-booking-rooms/
 nav_id: Kerchof Rooms Booking
 nav_parent: Info
 nav_nesting: true
