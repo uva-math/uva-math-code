@@ -48,4 +48,4 @@ letter of you last name.
 
 ---
 
-- ### [Math Major Course Guide]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Fall25_version.pdf)
+- ### Math Major Course Guide: [PDF]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Fall25_version.pdf) | [HTML]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Fall25_version.html)

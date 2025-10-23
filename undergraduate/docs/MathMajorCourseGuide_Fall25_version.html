@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UVA Math Courses</title>
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1 {
+            text-align: center;
+            font-variant: small-caps;
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        h2 {
+            font-variant: small-caps;
+            font-size: 1.2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            font-size: 1.1em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f0f0f0;
+        }
+        .course-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 30px 0;
+        }
+        .course-section h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .course-table {
+            border: 1px solid black;
+            padding: 20px;
+        }
+        .course-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 5px 0;
+        }
+        .course-code {
+            font-weight: normal;
+        }
+        .course-name {
+            flex: 1;
+            margin: 0 10px;
+        }
+        .course-schedule {
+            text-align: right;
+            min-width: 60px;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .prereq-table {
+            font-size: 0.95em;
+        }
+        .prereq-table td, .prereq-table th {
+            text-align: center;
+            padding: 6px 8px;
+        }
+        .prereq-table th {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>1. UVA Math courses sorted by subject</h1>
+
+<p>The tables below list UVA math courses sorted by subject that have been offered in the last 2 years. FS next to a course means that the course is offered every semester, F means every fall and S means every spring. For the remaining courses the table indicates the next planned offering if known. The courses listed as TBD are typically offered once every 2 years, but the exact schedule depends on the interests of the students and instructor availability. Further information about the next offering for these courses will likely be available by January 2026.</p>
+
+<div class="course-grid">
+    <div class="course-section">
+        <h3>Algebra</h3>
+        <div class="course-table">
+            <div class="course-row">
+                <span class="course-code">3351</span>
+                <span class="course-name">Elementary Linear Algebra</span>
+                <span class="course-schedule">FS</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">3354</span>
+                <span class="course-name">Survey of Algebra</span>
+                <span class="course-schedule">FS</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4040</span>
+                <span class="course-name">Discrete Math</span>
+                <span class="course-schedule">F</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4452</span>
+                <span class="course-name">Algebraic Coding Theory</span>
+                <span class="course-schedule">TBD</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4651</span>
+                <span class="course-name">Advanced Linear Algebra</span>
+                <span class="course-schedule">FS</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4652</span>
+                <span class="course-name">Intro to Abstract Algebra</span>
+                <span class="course-schedule">S</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4660</span>
+                <span class="course-name">Algebraic Combinatorics</span>
+                <span class="course-schedule">TBD</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">5653</span>
+                <span class="course-name">Number Theory</span>
+                <span class="course-schedule">F26</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">5657</span>
+                <span class="course-name">Bilinear Forms and Group Reps</span>
+                <span class="course-schedule">TBD</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="course-section">
+        <h3>Analysis and Probability</h3>
+        <div class="course-table">
+            <div class="course-row">
+                <span class="course-code">3100</span>
+                <span class="course-name">Intro to Probability</span>
+                <span class="course-schedule">FS</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">3250</span>
+                <span class="course-name">Differential Equations</span>
+                <span class="course-schedule">FS</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">3310</span>
+                <span class="course-name">Basic Real Analysis</span>
+                <span class="course-schedule">FS</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">3340</span>
+                <span class="course-name">Complex Variables</span>
+                <span class="course-schedule">FS</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4110</span>
+                <span class="course-name">Intro to Stochastic Processes</span>
+                <span class="course-schedule">FS</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4140</span>
+                <span class="course-name">Math of Derivative Securities</span>
+                <span class="course-schedule">FS</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4220</span>
+                <span class="course-name">PDE and Applied Math</span>
+                <span class="course-schedule">F</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4250</span>
+                <span class="course-name">Diff Eq and Dynamical Systems</span>
+                <span class="course-schedule">S</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4300</span>
+                <span class="course-name">Elementary Numerical Analysis</span>
+                <span class="course-schedule">F26/S27</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4310</span>
+                <span class="course-name">Intro to Real Analysis</span>
+                <span class="course-schedule">F</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="course-grid">
+    <div class="course-section">
+        <h3>Geometry and Topology</h3>
+        <div class="course-table">
+            <div class="course-row">
+                <span class="course-code">4330</span>
+                <span class="course-name">Calculus on Manifolds</span>
+                <span class="course-schedule">S</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4559</span>
+                <span class="course-name">Topological Data Analysis</span>
+                <span class="course-schedule">TBD</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4720</span>
+                <span class="course-name">Intro to Diff Geometry</span>
+                <span class="course-schedule">F26</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4750</span>
+                <span class="course-name">Intro to Knot Theory</span>
+                <span class="course-schedule">TBD</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4770</span>
+                <span class="course-name">General Topology</span>
+                <span class="course-schedule">F</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">5700</span>
+                <span class="course-name">Intro to Geometry</span>
+                <span class="course-schedule">S</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="course-section">
+        <h3>Other courses</h3>
+        <div class="course-table">
+            <div class="course-row">
+                <span class="course-code">2315</span>
+                <span class="course-name">Advanced Calculus and Algebra I</span>
+                <span class="course-schedule">F</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">3000</span>
+                <span class="course-name">Transition to Higher Math</span>
+                <span class="course-schedule">FS</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">3315</span>
+                <span class="course-name">Advanced Calculus and Algebra II</span>
+                <span class="course-schedule">S</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4559</span>
+                <span class="course-name">Introduction to Sequence Analysis</span>
+                <span class="course-schedule">TBD</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">4840</span>
+                <span class="course-name">Intro to Math Research</span>
+                <span class="course-schedule">S</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">5080</span>
+                <span class="course-name">Operations Research</span>
+                <span class="course-schedule">S26</span>
+            </div>
+            <div class="course-row">
+                <span class="course-code">5559</span>
+                <span class="course-name">Neural Networks and RNA Structures</span>
+                <span class="course-schedule">TBD</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1>2. Tables of prerequisites</h1>
+
+<p>This section describes the prerequisite relations between different math classes and contains additional comments that should help you choose a suitable order in which to take the classes.</p>
+
+<p>The 4 tables below list the prerequisites for math classes numbered above 3000. In each case, a non-empty entry at the intersection of row A and column B indicates that the course B is relevant for the course A, with the following meaning of the entries:</p>
+
+<ul>
+    <li><strong>2</strong> means that B is a prerequisite for A</li>
+    <li><strong>2-</strong> means that B is strongly recommended for A (in some cases taking the two courses concurrently is fine as well, but it is best to check with the instructors)</li>
+    <li><strong>1</strong> means that B is recommended for A, although the knowledge of the material from B will by no means be expected in A.</li>
+</ul>
+
+<p>All tables assume <em>transitivity</em> in the following sense: if C is required for B and B is required (resp. recommended) for A, then C is also required (resp. recommended) for A.</p>
+
+<h2>Proof prerequisites</h2>
+
+<ul>
+    <li><strong>*</strong> in the column PB indicates that a prior proof-based course is required (Math 3000, 3310, 3354 or comparable experience). This requirement is explicitly specified only for classes which do not already require Math 3310 or 3354.</li>
+    <li><strong>Math 3000 Transition to Higher Mathematics</strong> is an introduction to proofs class. While it is not an official prerequisite for any other math class, students without prior experience constructing rigorous proofs are encouraged to take Math 3000 before Math 3310, 3354 and any 4000+ level math classes. It is generally expected that students take Math 3000 at the same time or right after Math 2310, but the course is in no way dependent on the material from 1310, 1320 or 2310.</li>
+</ul>
+
+<table class="prereq-table">
+    <tr>
+        <th>Algebra</th>
+        <th>PB</th>
+        <th>1320</th>
+        <th>3100</th>
+        <th>3351</th>
+        <th>3354</th>
+        <th>4651</th>
+        <th>4652</th>
+    </tr>
+    <tr>
+        <td>3351</td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3354</td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td>2-</td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4040</td>
+        <td>*</td>
+        <td>2</td>
+        <td>1</td>
+        <td></td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4452</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4651</td>
+        <td>*</td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>2-</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4652</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4660</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>5653</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>5657</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+</table>
+
+<table class="prereq-table">
+    <tr>
+        <th>Analysis/Prob</th>
+        <th>PB</th>
+        <th>1310</th>
+        <th>1320</th>
+        <th>2310</th>
+        <th>3100</th>
+        <th>3250</th>
+        <th>3310</th>
+        <th>3340</th>
+        <th>3351</th>
+        <th>4110</th>
+        <th>4310</th>
+    </tr>
+    <tr>
+        <td>3100</td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        <td>2-</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3250</td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3310</td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3340</td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4110</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td>1</td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4140</td>
+        <td>*</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td>1</td>
+        <td></td>
+        <td>2</td>
+        <td>1</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4220</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4250</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+        <td>2</td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>4300</td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td>1</td>
+        <td>1</td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4310</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+
+<table class="prereq-table">
+    <tr>
+        <th>Geom/Top</th>
+        <th>2310</th>
+        <th>3250</th>
+        <th>3310</th>
+        <th>3351</th>
+        <th>3354</th>
+        <th>4310</th>
+    </tr>
+    <tr>
+        <td>4330</td>
+        <td>2</td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        <td></td>
+        <td>2-</td>
+    </tr>
+    <tr>
+        <td>4720</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2-</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4750</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>2</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4770</td>
+        <td>2</td>
+        <td></td>
+        <td>2</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>5700</td>
+        <td>2</td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>1</td>
+        <td></td>
+    </tr>
+</table>
+
+<table class="prereq-table">
+    <tr>
+        <th>Other courses</th>
+        <th>PB</th>
+        <th>1310</th>
+        <th>1320</th>
+        <th>2310</th>
+        <th>3310</th>
+        <th>3351</th>
+        <th>4040</th>
+    </tr>
+    <tr>
+        <td>4559 Intro to Sequence Analysis</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>2</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>5080 Operations Research</td>
+        <td>*</td>
+        <td>2</td>
+        <td>2</td>
+        <td>1</td>
+        <td></td>
+        <td>2</td>
+        <td></td>
+    </tr>
+</table>
+
+<h1>3. Some additional comments</h1>
+
+<ul>
+    <li><strong>Math 2315/3315 Advanced Calculus and Linear Algebra I/II</strong> is a two semester sequence which covers the majority of content from 2310 (Calc III), 3250 (differential equations) and 3351 (elementary linear algebra) and some additional topics from real analysis, set theory and combinatorics.</li>
+
+    <li><strong>Math 4840 Introduction to Mathematical Research</strong>. The mathematical content discussed in this course (as well as the exact course format) varies from year to year. The subjects covered in recent years include Number Theory, Knot Theory, Permutation Groups, Combinatorics/Representation Theory and Geometric Group Theory, and sometimes the course does not concentrate on a particular area of mathematics. There are no strict prerequisites for this class, and the expectations about the background vary from year to year. Students are encouraged to contact the instructor as soon as possible if they are not sure they have adequate background for the class.</li>
+</ul>
+
+</body>
+</html>
