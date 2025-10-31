@@ -15,6 +15,27 @@ This list will be updated as more projects are confirmed.
    - Mentee: Andrew Kim
    - Mentor: Jun Park
      
++ Symplectic geometry
+   - Main source: [Pedro, Introduction to Hamiltonian Mechanics DRP Notes](https://pbrunialti.github.io/notes/linear_symplectic_geometry.pdf) 
+   - Text: Arnold, Mathematical Methods of Classical Mechanics
+   - Mentee: Kiara Chantel Ruffin
+   - Mentor: Darien Farnham
+
++ Algebraic topology and the fundamental group
+   - Text: Crossley, Essential Topology and Lima, Fundamental Groups and Covering Spaces
+   - Mentee: Lucas McCulla
+   - Mentor: Mason Hart
+
++ Homotopical Combinatorics
+   - Text: Bao, Hazel et al, Transfer systems for rank two elementary Abelian groups: characteristic functions and matchstick games
+   - Mentee: Seth Bernstein
+   - Mentor: Ben Spitz
+
++ Introduction to Elliptic Curves
+   - Text:  Silverman and Tate, Rational Points on Elliptic Curves
+   - Mentee: Isaac Assink
+   - Mentor: Thomas Jaklitsch
+ 
 + An Introduction to Geometric Group Theory
    - Text:  Clay and Margalit, Office Hours with a Geometric Group Theorist
    - Mentee: Ismoil Nosirov
