@@ -21,8 +21,8 @@ This list will be updated as more projects are confirmed.
    - Mentee: Kiara Chantel Ruffin
    - Mentor: Darien Farnham
 
-+ 
-   - Text:  
++ Algebraic topology and the fundamental group
+   - Text: Crossley, Essential Topology and Lima, Fundamental Groups and Covering Spaces
    - Mentee: Lucas McCulla
    - Mentor: Mason Hart
 
