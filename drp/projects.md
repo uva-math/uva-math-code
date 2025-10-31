@@ -16,7 +16,7 @@ This list will be updated as more projects are confirmed.
    - Mentor: Jun Park
      
 + Symplectic geometry
-   - Main source: [https://pbrunialti.github.io/notes/linear_symplectic_geometry.pdf](Pedro, Introduction to Hamiltonian Mechanics DRP Notes)
+   - Main source: [Pedro, Introduction to Hamiltonian Mechanics DRP Notes](https://pbrunialti.github.io/notes/linear_symplectic_geometry.pdf) 
    - Text: Arnold, Mathematical Methods of Classical Mechanics
    - Mentee: Kiara Chantel Ruffin
    - Mentor: Darien Farnham
