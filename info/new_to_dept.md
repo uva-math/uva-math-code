@@ -31,7 +31,9 @@ nav_weight: 20
 
 - **Course Enrollments:**  Students enroll in their courses through SIS. SIS maintains waiting lists for courses and automatically enrolls waitlisted students as space comes available. Situations may arise when students cannot enroll through SIS, and need a permission from the instructor which is handled by SIS.
 
-- **Scheduling Classrooms:** If your classroom is not the right size or you wish to reserve a classroom for a review session, makeup exam, etc., see the front office (room `216`), or use [the Source classroom booking system](https://25live.virginia.edu/). Department-managed classrooms (Kerchof 111, 128, 201, 314 and 326) can be booked through the front office.
+- **Scheduling Classrooms:** There are two separate systems for booking classrooms:
+  - **25Live (UVA-wide classrooms):** For booking University-managed classrooms across Grounds, use [the 25Live classroom booking system](https://25live.virginia.edu/). This includes most lecture halls and classrooms outside Kerchof Hall.
+  - **Kerchof Hall rooms (Department-managed):** For booking department-managed rooms in Kerchof (rooms 111, 128, 201, 314, and 326), contact the front office (room `216`) or use the [Kerchof meeting room booking system](https://math.virginia.edu/mrbs/). These rooms are managed by the Math Department and are not part of the 25Live system.
 
 - **Copying Exams:** The Department has a copier/scanner (room `203`) and floor printers (rooms `313`, `118`) for printing. You should be able to print from your office computer (hooked up to LAN or eduroam wifi) to any of these printers. The front office (room `216`) can send large print jobs to UVA Printing and Copying Services. Please allow two days for turn around.
 
@@ -42,8 +44,6 @@ nav_weight: 20
 - **Advanced Research Computing Services:** [`https://arcs.virginia.edu`](https://arcs.virginia.edu), and in particular [Rivanna Cluster](https://arcs.virginia.edu/rivanna)
 
 - **Math Department Tea Time** is every Tuesday and Thursday during the semester in Kerchof 314 (Math Lounge / Common Room), starting at 3:15.
-
-- **Meeting Rooms at Kechof booking system**: [`https://math.virginia.edu/mrbs/`](https://math.virginia.edu/mrbs/), see help [here](https://math.virginia.edu/mrbs/help-uva.php)
 
 - **Mailboxes:** Everyone has a mailbox in the mailroom (off the Lobby on the main floor).
 
