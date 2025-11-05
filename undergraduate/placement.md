@@ -79,7 +79,7 @@ To prepare for the mathematics major, you should complete the calculus sequence 
 			<p>Biology</p>
 			</td>
 			<td>
-			<p>one semester of calculus ({%include course number=1210%} or {%include course number=1310%}<span style="margin-left:-4px"></span>) required for B.S.; optional for B.A.</p>
+			<p>One semester of calculus ({%include course number=1190%}, {%include course number=1210%}, or {%include course number=1310%}) required for B.S.; optional for B.A. (may substitute statistics course)</p>
 			</td>
 		</tr>
 		<tr>
