@@ -1,0 +1,196 @@
+---
+layout: g_page
+title: Analysis General Exam Syllabus
+permalink: /graduate/docs/analysis-general-exam-syllabus/
+nav_parent: Graduate
+---
+
+<style>
+  .syllabus-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    line-height: 1.7;
+  }
+
+  .syllabus-container h1 {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 3px solid #e57200;
+    padding-bottom: 0.5rem;
+  }
+
+  .syllabus-container .revision-date {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .syllabus-container h2 {
+    color: #e57200;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #e57200;
+    padding-left: 0.75rem;
+  }
+
+  .syllabus-container h3 {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+
+  .syllabus-container ol,
+  .syllabus-container ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .syllabus-container li {
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+  }
+
+  .syllabus-container .topic-list {
+    counter-reset: topic-counter;
+    list-style: none;
+    margin-left: 0;
+  }
+
+  .syllabus-container .topic-list > li {
+    counter-increment: topic-counter;
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .syllabus-container .topic-list > li::before {
+    content: counter(topic-counter) ".";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #e57200;
+  }
+
+  .syllabus-container .references {
+    background-color: var(--bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    opacity: 0.9;
+  }
+
+  .syllabus-container .references h3 {
+    margin-top: 0;
+  }
+
+  .syllabus-container .references ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+  }
+
+  .syllabus-container .references li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* MathML styling for dark mode */
+  .syllabus-container math {
+    color: var(--text-color);
+  }
+
+  @media (max-width: 768px) {
+    .syllabus-container {
+      padding: 1rem 0.5rem;
+    }
+
+    .syllabus-container h1 {
+      font-size: 1.5rem;
+    }
+
+    .syllabus-container h2 {
+      font-size: 1.3rem;
+    }
+
+    .syllabus-container h3 {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+
+<article class="syllabus-container" role="main" aria-labelledby="syllabus-title">
+  <h1 id="syllabus-title">Analysis General Exam Syllabus</h1>
+  <p class="revision-date">Revised March 2023</p>
+
+  <section aria-labelledby="basics-section">
+    <h2 id="basics-section">Basics (common for complex and real parts)</h2>
+    <ol class="topic-list">
+      <li>Elementary set operations, countable and uncountable sets.</li>
+      <li>Open, closed, compact, and connected sets on the line and in Euclidean space.</li>
+      <li>Completeness, infima and suprema, limit points, lim inf, lim sup.</li>
+      <li>Bolzano-Weierstrass, Heine-Borel theorems.</li>
+      <li>Continuous, uniformly continuous, differentiable functions.</li>
+      <li>Extreme value, intermediate value, mean value theorems.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="complex-analysis-section">
+    <h2 id="complex-analysis-section">Complex Analysis</h2>
+    <ol class="topic-list">
+      <li>Series of functions, power series, and power series of elementary functions, uniform convergence, Weierstrass <math><mi>M</mi></math> test. Formula for the radius of convergence of a power series.</li>
+      <li>Analytic and harmonic functions, Cauchy-Riemann equations.</li>
+      <li>Power series and Laurent series.</li>
+      <li>Elementary conformal mappings, fractional linear mappings. The Cayley transform.</li>
+      <li>Cauchy's integral theorem and Cauchy integral formula. Morera's theorem. Goursat's theorem.</li>
+      <li>Power series representation is equivalent to complex differentiability, and the power series converges in any ball where the function is complex differentiable. Classification of singularities. Meromorphic functions. Casorati-Weierstrass (Sokhotski) theorem.</li>
+      <li>Argument principle, open mapping theorem, maximum principle, Rouché's theorem, Schwarz's lemma, Liouville's theorem. Hurwitz' theorem.</li>
+      <li>Cauchy's residue theorem, evaluation of definite integrals. Evaluation of infinite series via residue theory.</li>
+      <li>Normal families. Montel's theorem. Riemann mapping theorem.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="real-analysis-section">
+    <h2 id="real-analysis-section">Real Analysis</h2>
+    <ol class="topic-list">
+      <li><math><mi>σ</mi></math>-algebras of sets.</li>
+      <li>Lebesgue measures and abstract measures, signed measures. Lebesgue-Stieltjes measures on the real line and their correspondence with increasing, right continuous functions.</li>
+      <li>Measurable functions. Approximation by simple functions. Riemann and Lebesgue integrals.</li>
+      <li>Monotone convergence and dominated convergence theorems, Fatou's lemma.</li>
+      <li>Product spaces and product measure, Fubini-Tonelli theorems.</li>
+      <li>Absolute continuity of measures, Radon-Nikodym theorem. Lebesgue-Radon-Nikodym decomposition.</li>
+      <li>Hardy-Littlewood maximal function: the maximal inequality for the Hardy-Littlewood maximal function and the Vitali covering lemma. The Lebesgue differentiation theorem.</li>
+      <li>Absolute continuity of functions, differentiation and the Fundamental Theorem of Calculus for absolutely continuous functions. The correspondence between absolutely continuous functions on <math><mi>ℝ</mi></math> and measures on <math><mi>ℝ</mi></math> which are absolutely continuous with respect to the Lebesgue measure. Bounded variation functions and their correspondence with complex measures on <math><mi>ℝ</mi></math>.</li>
+      <li>Hölder's inequality, Jensen's inequality.</li>
+      <li><math><msup><mi>L</mi><mi>p</mi></msup></math> spaces, completeness. Approximation of <math><msup><mi>L</mi><mi>p</mi></msup></math>-functions on <math><msup><mi>ℝ</mi><mi>d</mi></msup></math> by compactly supported continuous functions.</li>
+      <li>Hilbert space, projection theorem, Riesz representation theorem, orthonormal sets, <math><msup><mi>L</mi><mn>2</mn></msup></math> spaces.</li>
+      <li><math><msup><mi>L</mi><mi>p</mi></msup></math>-<math><msup><mi>L</mi><msup><mi>p</mi><mo>′</mo></msup></msup></math> duality when <math><mrow><mfrac><mn>1</mn><mi>p</mi></mfrac><mo>+</mo><mfrac><mn>1</mn><msup><mi>p</mi><mo>′</mo></msup></mfrac><mo>=</mo><mn>1</mn></mrow></math>.</li>
+      <li>Elementary Fourier series, Riesz-Fischer and Parseval theorems. Riemann-Lebesgue theorem. Dirichlet kernel.</li>
+      <li>Fourier transforms in <math><msup><mi>ℝ</mi><mi>d</mi></msup></math>, Plancherel and Parseval's theorems, Fourier transforms of derivatives and translations. Riemann-Lebesgue lemma. Hausdorff-Young's inequality.</li>
+      <li>Convolutions: Fourier transforms of convolutions, approximations to the identity, approximation of functions on <math><msup><mi>ℝ</mi><mi>d</mi></msup></math> by compactly supported smooth functions. Young's inequality for convolution.</li>
+    </ol>
+  </section>
+
+  <section class="references" aria-labelledby="references-section">
+    <h3 id="references-section">References</h3>
+    <ul>
+      <li>R. G. Bartle, <i>Elements of Real Analysis</i></li>
+      <li>W. Rudin, <i>Principles of Mathematical Analysis</i></li>
+      <li>H. L. Royden, <i>Real Analysis</i></li>
+      <li>G. Folland, <i>Real Analysis</i></li>
+      <li>S. Axler, <i>Measure, Integration &amp; Real Analysis</i></li>
+      <li>L. V. Ahlfors, <i>Complex Analysis</i></li>
+      <li>J. B. Conway, <i>Functions of a Complex Variable</i></li>
+      <li>T. Gamelin, <i>Complex Analysis</i></li>
+      <li>D. Marshall, <i>Complex Analysis</i></li>
+      <li>E. Stein and R. Shakarchi, <i>Complex Analysis</i></li>
+    </ul>
+  </section>
+</article>

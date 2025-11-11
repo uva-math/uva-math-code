@@ -1,0 +1,212 @@
+---
+layout: g_page
+title: Topology General Exam Syllabus
+permalink: /graduate/docs/topology-general-exam-syllabus/
+nav_parent: Graduate
+---
+
+<style>
+  .syllabus-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    line-height: 1.7;
+  }
+
+  .syllabus-container h1 {
+    color: var(--text-color);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 3px solid #e57200;
+    padding-bottom: 0.5rem;
+  }
+
+  .syllabus-container .revision-date {
+    color: var(--text-color);
+    opacity: 0.8;
+    font-style: italic;
+    margin-bottom: 2rem;
+    font-size: 0.95rem;
+  }
+
+  .syllabus-container h2 {
+    color: #e57200;
+    font-size: 1.5rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid #e57200;
+    padding-left: 0.75rem;
+  }
+
+  .syllabus-container h3 {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
+
+  .syllabus-container ol,
+  .syllabus-container ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .syllabus-container li {
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+  }
+
+  .syllabus-container .topic-list {
+    counter-reset: topic-counter;
+    list-style: none;
+    margin-left: 0;
+  }
+
+  .syllabus-container .topic-list > li {
+    counter-increment: topic-counter;
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .syllabus-container .topic-list > li::before {
+    content: "(" counter(topic-counter) ")";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+    color: #e57200;
+  }
+
+  .syllabus-container .references {
+    background-color: var(--bg-color);
+    border: 1px solid var(--text-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    opacity: 0.9;
+  }
+
+  .syllabus-container .references h3 {
+    margin-top: 0;
+    color: #e57200;
+  }
+
+  .syllabus-container .references ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+  }
+
+  .syllabus-container .references li {
+    margin-bottom: 0.5rem;
+  }
+
+  .syllabus-container .references-section {
+    margin-top: 1.5rem;
+  }
+
+  .syllabus-container .references-section h4 {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  /* MathML styling for dark mode */
+  .syllabus-container math {
+    color: var(--text-color);
+  }
+
+  @media (max-width: 768px) {
+    .syllabus-container {
+      padding: 1rem 0.5rem;
+    }
+
+    .syllabus-container h1 {
+      font-size: 1.5rem;
+    }
+
+    .syllabus-container h2 {
+      font-size: 1.3rem;
+    }
+
+    .syllabus-container h3 {
+      font-size: 1.1rem;
+    }
+  }
+</style>
+
+<article class="syllabus-container" role="main" aria-labelledby="syllabus-title">
+  <h1 id="syllabus-title">Topology General Exam Syllabus</h1>
+  <p class="revision-date">Revised February 2022</p>
+
+  <section aria-labelledby="differential-topology-section">
+    <h2 id="differential-topology-section">I. Differential Topology</h2>
+    <ol class="topic-list">
+      <li>Multivariable calculus basics: definition of a smooth map <math><mrow><mi>f</mi><mo>:</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo>→</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow></math>, the inverse and implicit function theorems.</li>
+      <li>Manifolds and smooth maps; submanifolds. Examples: 2-dimensional surfaces; the sphere <math><msup><mi>S</mi><mi>n</mi></msup></math>; the real projective space <math><msup><mi>ℝP</mi><mi>n</mi></msup></math>; examples of Lie groups: classical matrix groups.</li>
+      <li>The differential of a smooth map, tangent vectors, and tangent spaces. The tangent bundle.</li>
+      <li>Regular and critical values. Embeddings, immersions. Transversality.</li>
+      <li>Sard's theorem.</li>
+      <li>The embedding theorem: every closed manifold embeds in a Euclidean space.</li>
+      <li>Orientability.</li>
+      <li>Vector fields, the Euler characteristic.</li>
+      <li>Invariants of manifolds and smooth maps: mod 2 degree of a map, the integer-valued degree of a map between oriented manifolds, intersection numbers, linking numbers.</li>
+      <li>Applications to compact manifolds: <math><mrow><mo>∂</mo><mi>M</mi></mrow></math> is not a retract of <math><mi>M</mi></math>, Brouwer Fixed Point Theorem, zeros of vector fields, etc.</li>
+      <li>Vector bundles: tangent bundle, normal bundle, duals, tensor bundles. Structures on bundles including inner products, specifically Riemannian metrics.</li>
+      <li>Differential forms: exterior algebra, exterior derivative.</li>
+      <li>Integration of forms on oriented manifolds; Riemannian volume form; Stokes' theorem.</li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="algebraic-topology-section">
+    <h2 id="algebraic-topology-section">II. Algebraic Topology</h2>
+    <ol class="topic-list">
+      <li>Basic properties of singular homology: functoriality, homotopy invariance, long exact sequence of a pair, excision, and the Meyer–Vietoris sequence.</li>
+      <li>Homological algebra: chain complexes, maps, homotopies. The long exact homology sequence associated to a s.e.s. of chain complexes. The snake lemma. The 5–lemma.</li>
+      <li>The homology groups of spheres, and the degree of a map between spheres. Classic applications, such as Brouwer fixed point theorem, but proved with homology.</li>
+      <li>The Jordan–Alexander Complement Theorem: <math><mrow><msub><mi>H</mi><mo>*</mo></msub><mo>(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo>−</mo><mi>A</mi><mo>)</mo><mo>≅</mo><msub><mi>H</mi><mo>*</mo></msub><mo>(</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo>−</mo><mi>B</mi><mo>)</mo></mrow></math> if <math><mi>A</mi></math> and <math><mi>B</mi></math> are homeomorphic closed subsets of <math><msup><mi>ℝ</mi><mi>n</mi></msup></math>. The Jordan Curve Theorem is a special case.</li>
+      <li>The homology of a C.W. complex: cellular chains. This includes delta complex homology as a special case. Examples: real and complex projective spaces, closed surfaces.</li>
+      <li>Euler characteristic and its properties. Classic calculations: spheres, closed surfaces.</li>
+      <li>Construction of the fundamental group as a homotopy functor of a space with basepoint.</li>
+      <li>Covering spaces: definition and examples.</li>
+      <li>The lifting theorem: under appropriate point set conditions, a continuous <math><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>→</mo><mi>Y</mi></mrow></math> lifts through a covering map <math><mrow><mover><mi>Y</mi><mo>~</mo></mover><mo>→</mo><mi>Y</mi></mrow></math> iff it does on the level of <math><msub><mi>π</mi><mn>1</mn></msub></math>.</li>
+      <li>Deck transformations, and the correspondence between subgroups of the fundamental groups and covering spaces. A variant: if <math><mover><mi>Y</mi><mo>~</mo></mover></math> is simply connected, there is a 1–1 correspondence between covering spaces <math><mrow><mover><mi>Y</mi><mo>~</mo></mover><mo>→</mo><mi>Y</mi></mrow></math> and free, proper group actions on <math><mover><mi>Y</mi><mo>~</mo></mover></math>.</li>
+      <li>Seifert–Van Kampen Theorem.</li>
+      <li><math><msub><mi>H</mi><mn>1</mn></msub></math> is the abelianization of <math><msub><mi>π</mi><mn>1</mn></msub></math>.</li>
+      <li>Examples, including the fundamental group of spheres, projective space, surfaces, etc. Classic applications, e.g., to group theory.</li>
+    </ol>
+  </section>
+
+  <section class="references" aria-labelledby="references-section">
+    <h3 id="references-section">References</h3>
+    <ul>
+      <li><i>An Introduction to Manifolds</i> by L. Tu.</li>
+      <li><i>Differential Topology</i> by V. Guillemin and A. Pollack.</li>
+      <li><i>Introduction to Smooth Manifolds</i> by J. Lee</li>
+      <li><i>Algebraic Topology</i> by A. Hatcher.</li>
+      <li><i>Geometry and Topology</i> by G. Bredon</li>
+      <li><i>Homology Theory</i> by J. W. Vick (2nd edition).</li>
+    </ul>
+
+    <div class="references-section">
+      <h4>References for general topology background material:</h4>
+      <ul>
+        <li><i>Topology</i> by J. R. Munkres.</li>
+        <li>An outline summary of basic point set topology, by J.P. May, at<br>
+          <a href="http://www.math.uchicago.edu/~may/MISC/Topology.pdf" target="_blank" rel="noopener noreferrer">http://www.math.uchicago.edu/~may/MISC/Topology.pdf</a></li>
+      </ul>
+    </div>
+
+    <div class="references-section">
+      <h4>References for the Jordan-Alexander Complement Theorem:</h4>
+      <ul>
+        <li>A Dold, A simple proof of the Jordan-Alexander Complement Theorem, <i>Amer. Math. Monthly</i> <strong>100</strong> (1993), 856–857.</li>
+        <li>Both Hatcher and Vick prove special cases including the Jordan Curve Theorem.</li>
+      </ul>
+    </div>
+  </section>
+</article>
