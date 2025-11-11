@@ -13,7 +13,7 @@ Students are expected to attempt two different general examinations before the b
 Syllabi for the Algebra, Analysis, and Topology General Examinations:
 <ul>
   <li>
-    <a href="{{ site.url }}/graduate/docs/Syllabus for Algebra General Exam 1 - update 2023.pdf">Syllabus for Algebra General Exam</a><br>
+    <a href="{{ site.url }}/graduate/docs/Syllabus for Algebra General Exam 1 - update 2023.pdf">Syllabus for Algebra General Exam</a> (<a href="{{ site.url }}/graduate/docs/algebra-general-exam-syllabus/">HTML version</a>)<br>
   </li>
   <li>
     <a href="{{ site.url }}/graduate/docs/Syllabus for Analysis General Exam 2.pdf">Syllabus for Analysis General Exam</a>
