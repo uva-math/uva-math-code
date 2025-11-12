@@ -10,101 +10,41 @@ nav_parent: Graduate
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    background-color: var(--card-bg);
-    color: var(--text-color);
     line-height: 1.7;
   }
 
   .syllabus-container h1 {
-    color: var(--text-color);
     font-size: 2rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 3px solid #e57200;
-    padding-bottom: 0.5rem;
-  }
-
-  .syllabus-container .revision-date {
-    color: var(--text-color);
-    opacity: 0.8;
-    font-style: italic;
-    margin-bottom: 2rem;
-    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-color, #212529);
   }
 
   .syllabus-container h2 {
-    color: #e57200;
     font-size: 1.5rem;
-    margin-top: 2.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
     margin-bottom: 1rem;
-    border-left: 4px solid #e57200;
-    padding-left: 0.75rem;
+    color: var(--text-color, #212529);
   }
 
   .syllabus-container h3 {
-    color: var(--text-color);
     font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
     font-weight: 600;
-  }
-
-  .syllabus-container ol,
-  .syllabus-container ul {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .syllabus-container li {
+    margin-top: 1.5rem;
     margin-bottom: 0.75rem;
-    color: var(--text-color);
+    color: var(--text-color, #212529);
   }
 
-  .syllabus-container .topic-list {
-    counter-reset: topic-counter;
-    list-style: none;
-    margin-left: 0;
-  }
-
-  .syllabus-container .topic-list > li {
-    counter-increment: topic-counter;
-    position: relative;
-    padding-left: 2rem;
+  .syllabus-container p {
     margin-bottom: 1rem;
+    color: var(--text-color, #212529);
   }
 
-  .syllabus-container .topic-list > li::before {
-    content: counter(topic-counter) ".";
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-    color: #e57200;
-  }
-
-  .syllabus-container .references {
-    background-color: var(--bg-color);
-    border: 1px solid var(--text-color);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    opacity: 0.9;
-  }
-
-  .syllabus-container .references h3 {
-    margin-top: 0;
-  }
-
-  .syllabus-container .references ul {
-    list-style: disc;
-    margin-left: 1.5rem;
-  }
-
-  .syllabus-container .references li {
-    margin-bottom: 0.5rem;
-  }
-
-  /* MathML styling for dark mode */
-  .syllabus-container math {
-    color: var(--text-color);
+  .syllabus-container .revision-date {
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: var(--text-color, #212529);
   }
 
   @media (max-width: 768px) {
@@ -117,11 +57,7 @@ nav_parent: Graduate
     }
 
     .syllabus-container h2 {
-      font-size: 1.3rem;
-    }
-
-    .syllabus-container h3 {
-      font-size: 1.1rem;
+      font-size: 1.25rem;
     }
   }
 </style>
@@ -132,7 +68,7 @@ nav_parent: Graduate
 
   <section aria-labelledby="basics-section">
     <h2 id="basics-section">Basics (common for complex and real parts)</h2>
-    <ol class="topic-list">
+    <ol>
       <li>Elementary set operations, countable and uncountable sets.</li>
       <li>Open, closed, compact, and connected sets on the line and in Euclidean space.</li>
       <li>Completeness, infima and suprema, limit points, lim inf, lim sup.</li>
@@ -144,7 +80,7 @@ nav_parent: Graduate
 
   <section aria-labelledby="complex-analysis-section">
     <h2 id="complex-analysis-section">Complex Analysis</h2>
-    <ol class="topic-list">
+    <ol>
       <li>Series of functions, power series, and power series of elementary functions, uniform convergence, Weierstrass <math><mi>M</mi></math> test. Formula for the radius of convergence of a power series.</li>
       <li>Analytic and harmonic functions, Cauchy-Riemann equations.</li>
       <li>Power series and Laurent series.</li>
@@ -159,7 +95,7 @@ nav_parent: Graduate
 
   <section aria-labelledby="real-analysis-section">
     <h2 id="real-analysis-section">Real Analysis</h2>
-    <ol class="topic-list">
+    <ol>
       <li><math><mi>σ</mi></math>-algebras of sets.</li>
       <li>Lebesgue measures and abstract measures, signed measures. Lebesgue-Stieltjes measures on the real line and their correspondence with increasing, right continuous functions.</li>
       <li>Measurable functions. Approximation by simple functions. Riemann and Lebesgue integrals.</li>
@@ -178,7 +114,7 @@ nav_parent: Graduate
     </ol>
   </section>
 
-  <section class="references" aria-labelledby="references-section">
+  <section aria-labelledby="references-section">
     <h3 id="references-section">References</h3>
     <ul>
       <li>R. G. Bartle, <i>Elements of Real Analysis</i></li>

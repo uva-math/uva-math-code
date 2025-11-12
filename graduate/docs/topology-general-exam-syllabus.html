@@ -10,114 +10,49 @@ nav_parent: Graduate
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 1rem;
-    background-color: var(--card-bg);
-    color: var(--text-color);
     line-height: 1.7;
   }
 
   .syllabus-container h1 {
-    color: var(--text-color);
     font-size: 2rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 3px solid #e57200;
-    padding-bottom: 0.5rem;
-  }
-
-  .syllabus-container .revision-date {
-    color: var(--text-color);
-    opacity: 0.8;
-    font-style: italic;
-    margin-bottom: 2rem;
-    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-color, #212529);
   }
 
   .syllabus-container h2 {
-    color: #e57200;
     font-size: 1.5rem;
-    margin-top: 2.5rem;
+    font-weight: 600;
+    margin-top: 2rem;
     margin-bottom: 1rem;
-    border-left: 4px solid #e57200;
-    padding-left: 0.75rem;
+    color: var(--text-color, #212529);
   }
 
   .syllabus-container h3 {
-    color: var(--text-color);
     font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-bottom: 0.75rem;
     font-weight: 600;
-  }
-
-  .syllabus-container ol,
-  .syllabus-container ul {
-    margin-left: 1.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .syllabus-container li {
-    margin-bottom: 0.75rem;
-    color: var(--text-color);
-  }
-
-  .syllabus-container .topic-list {
-    counter-reset: topic-counter;
-    list-style: none;
-    margin-left: 0;
-  }
-
-  .syllabus-container .topic-list > li {
-    counter-increment: topic-counter;
-    position: relative;
-    padding-left: 2.5rem;
-    margin-bottom: 1rem;
-  }
-
-  .syllabus-container .topic-list > li::before {
-    content: "(" counter(topic-counter) ")";
-    position: absolute;
-    left: 0;
-    font-weight: bold;
-    color: #e57200;
-  }
-
-  .syllabus-container .references {
-    background-color: var(--bg-color);
-    border: 1px solid var(--text-color);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin-top: 2rem;
-    opacity: 0.9;
-  }
-
-  .syllabus-container .references h3 {
-    margin-top: 0;
-    color: #e57200;
-  }
-
-  .syllabus-container .references ul {
-    list-style: disc;
-    margin-left: 1.5rem;
-  }
-
-  .syllabus-container .references li {
-    margin-bottom: 0.5rem;
-  }
-
-  .syllabus-container .references-section {
     margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-color, #212529);
   }
 
-  .syllabus-container .references-section h4 {
-    color: var(--text-color);
+  .syllabus-container h4 {
     font-size: 1rem;
     font-weight: 600;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    color: var(--text-color, #212529);
   }
 
-  /* MathML styling for dark mode */
-  .syllabus-container math {
-    color: var(--text-color);
+  .syllabus-container p {
+    margin-bottom: 1rem;
+    color: var(--text-color, #212529);
+  }
+
+  .syllabus-container .revision-date {
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: var(--text-color, #212529);
   }
 
   @media (max-width: 768px) {
@@ -130,11 +65,7 @@ nav_parent: Graduate
     }
 
     .syllabus-container h2 {
-      font-size: 1.3rem;
-    }
-
-    .syllabus-container h3 {
-      font-size: 1.1rem;
+      font-size: 1.25rem;
     }
   }
 </style>
@@ -145,7 +76,7 @@ nav_parent: Graduate
 
   <section aria-labelledby="differential-topology-section">
     <h2 id="differential-topology-section">I. Differential Topology</h2>
-    <ol class="topic-list">
+    <ol>
       <li>Multivariable calculus basics: definition of a smooth map <math><mrow><mi>f</mi><mo>:</mo><msup><mi>ℝ</mi><mi>n</mi></msup><mo>→</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow></math>, the inverse and implicit function theorems.</li>
       <li>Manifolds and smooth maps; submanifolds. Examples: 2-dimensional surfaces; the sphere <math><msup><mi>S</mi><mi>n</mi></msup></math>; the real projective space <math><msup><mi>ℝP</mi><mi>n</mi></msup></math>; examples of Lie groups: classical matrix groups.</li>
       <li>The differential of a smooth map, tangent vectors, and tangent spaces. The tangent bundle.</li>
@@ -164,7 +95,7 @@ nav_parent: Graduate
 
   <section aria-labelledby="algebraic-topology-section">
     <h2 id="algebraic-topology-section">II. Algebraic Topology</h2>
-    <ol class="topic-list">
+    <ol>
       <li>Basic properties of singular homology: functoriality, homotopy invariance, long exact sequence of a pair, excision, and the Meyer–Vietoris sequence.</li>
       <li>Homological algebra: chain complexes, maps, homotopies. The long exact homology sequence associated to a s.e.s. of chain complexes. The snake lemma. The 5–lemma.</li>
       <li>The homology groups of spheres, and the degree of a map between spheres. Classic applications, such as Brouwer fixed point theorem, but proved with homology.</li>
@@ -181,7 +112,7 @@ nav_parent: Graduate
     </ol>
   </section>
 
-  <section class="references" aria-labelledby="references-section">
+  <section aria-labelledby="references-section">
     <h3 id="references-section">References</h3>
     <ul>
       <li><i>An Introduction to Manifolds</i> by L. Tu.</li>
@@ -192,21 +123,17 @@ nav_parent: Graduate
       <li><i>Homology Theory</i> by J. W. Vick (2nd edition).</li>
     </ul>
 
-    <div class="references-section">
-      <h4>References for general topology background material:</h4>
-      <ul>
-        <li><i>Topology</i> by J. R. Munkres.</li>
-        <li>An outline summary of basic point set topology, by J.P. May, at<br>
-          <a href="http://www.math.uchicago.edu/~may/MISC/Topology.pdf" target="_blank" rel="noopener noreferrer">http://www.math.uchicago.edu/~may/MISC/Topology.pdf</a></li>
-      </ul>
-    </div>
+    <h4>References for general topology background material:</h4>
+    <ul>
+      <li><i>Topology</i> by J. R. Munkres.</li>
+      <li>An outline summary of basic point set topology, by J.P. May, at<br>
+        <a href="http://www.math.uchicago.edu/~may/MISC/Topology.pdf" target="_blank" rel="noopener noreferrer">http://www.math.uchicago.edu/~may/MISC/Topology.pdf</a></li>
+    </ul>
 
-    <div class="references-section">
-      <h4>References for the Jordan-Alexander Complement Theorem:</h4>
-      <ul>
-        <li>A Dold, A simple proof of the Jordan-Alexander Complement Theorem, <i>Amer. Math. Monthly</i> <strong>100</strong> (1993), 856–857.</li>
-        <li>Both Hatcher and Vick prove special cases including the Jordan Curve Theorem.</li>
-      </ul>
-    </div>
+    <h4>References for the Jordan-Alexander Complement Theorem:</h4>
+    <ul>
+      <li>A Dold, A simple proof of the Jordan-Alexander Complement Theorem, <i>Amer. Math. Monthly</i> <strong>100</strong> (1993), 856–857.</li>
+      <li>Both Hatcher and Vick prove special cases including the Jordan Curve Theorem.</li>
+    </ul>
   </section>
 </article>
