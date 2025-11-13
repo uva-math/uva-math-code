@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Real Analysis, January 1987 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Real Analysis, January 1987</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="real-analysis-january-1987">Real Analysis,
+January 1987</h2>
+<ol>
+<li><p>Give an example of a sequence
+<math role="math" aria-label="f_{n} \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f_{n} \geq 0</annotation></semantics></math>
+of functions on
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+satisfying<br />
+(i)
+<math role="math" aria-label="\lim f_{n}(x)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim f_{n}(x)=0</annotation></semantics></math>
+a.e., but
+<math role="math" aria-label="\int f_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&int;</mo><msub><mi>f</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\int f_{n}</annotation></semantics></math>
+does not tend to zero.<br />
+(ii)
+<math role="math" aria-label="\int f_{n} \rightarrow 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&int;</mo><msub><mi>f</mi><mi>n</mi></msub><mo>&rarr;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\int f_{n} \rightarrow 0</annotation></semantics></math>,
+but
+<math role="math" aria-label="f_{n}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{n}(x)</annotation></semantics></math>
+does not tend to zero a.e.</p></li>
+<li><p>Let
+<math role="math" aria-label="\sum_{n=1}^{\infty}\left|a_{n}\right|&lt;\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty}\left|a_{n}\right|&lt;\infty</annotation></semantics></math>.
+Prove that</p></li>
+</ol>
+<p><math role="math" aria-label="\lim _{\epsilon \downarrow 0} \sum_{n=1}^{\infty} e^{-\epsilon n} a_{n}=\sum_{n=1}^{\infty} a_{n}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>ϵ</mi><mo>↓</mo><mn>0</mn></mrow></munder><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><msup><mi>e</mi><mrow><mi>−</mi><mi>ϵ</mi><mi>n</mi></mrow></msup><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><msub><mi>a</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\lim _{\epsilon \downarrow 0} \sum_{n=1}^{\infty} e^{-\epsilon n} a_{n}=\sum_{n=1}^{\infty} a_{n}</annotation></semantics></math></p>
+<ol start="3">
+<li><p>Let
+<math role="math" aria-label="\mathcal{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>
+be a
+<math role="math" aria-label="\sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&sigma;</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-field
+on
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>,
+and
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+a real-valued function on
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.<br />
+(a) Define what it means for
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+to be
+<math role="math" aria-label="\mathcal{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>-measurable.<br />
+(b) Let
+<math role="math" aria-label="f(x)=x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">f(x)=x</annotation></semantics></math>
+on
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>.
+What is the smallest
+<math role="math" aria-label="\sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&sigma;</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-field
+<math role="math" aria-label="\mathcal{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>
+of subsets for
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+for which
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is
+<math role="math" aria-label="\mathcal{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>-measurable?</p></li>
+<li><p>(a) Show that
+<math role="math" aria-label="\sum_{n=1}^{\infty} \frac{e^{i n x}}{n^{1+\alpha}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><mfrac><msup><mi>e</mi><mrow><mi>i</mi><mi>n</mi><mi>x</mi></mrow></msup><msup><mi>n</mi><mrow><mn>1</mn><mo>+</mo><mi>&alpha;</mi></mrow></msup></mfrac></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty} \frac{e^{i n x}}{n^{1+\alpha}}</annotation></semantics></math>
+converges to a continuous function
+<math role="math" aria-label="\alpha&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\alpha&gt;0</annotation></semantics></math>.<br />
+(b) Show that
+<math role="math" aria-label="\sum_{n=1}^{\infty} \frac{e^{i n x}}{n^{\alpha}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><mfrac><msup><mi>e</mi><mrow><mi>i</mi><mi>n</mi><mi>x</mi></mrow></msup><msup><mi>n</mi><mi>&alpha;</mi></msup></mfrac></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty} \frac{e^{i n x}}{n^{\alpha}}</annotation></semantics></math>
+is the Fourier series of a function in
+<math role="math" aria-label="L^{2}[0,2 \pi]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>&pi;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">L^{2}[0,2 \pi]</annotation></semantics></math>
+if
+<math role="math" aria-label="\alpha&gt;\frac{1}{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&gt;</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\alpha&gt;\frac{1}{2}</annotation></semantics></math>.</p></li>
+<li><p>Let
+<math role="math" aria-label="F(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F(x)</annotation></semantics></math>
+be a monotone increasing continuous function with
+<math role="math" aria-label="\lim _{x \rightarrow-\infty} F(x)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>x</mi><mo>&rarr;</mo><mi>−</mi><mi>&infin;</mi></mrow></msub><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim _{x \rightarrow-\infty} F(x)=0</annotation></semantics></math>
+and
+<math role="math" aria-label="\lim _{x \rightarrow \infty} F(x)=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>x</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\lim _{x \rightarrow \infty} F(x)=1</annotation></semantics></math>.
+Regarding
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+as the distribution of a Stieltjes measure
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>,
+compute, in terms of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+the measure of<br />
+(a)
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>,<br />
+(b) the set consisting of all rationals, and<br />
+(c) the set (
+<math role="math" aria-label="x: F(x)&gt;b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">x: F(x)&gt;b</annotation></semantics></math>
+).</p></li>
+<li><p>Prove that</p></li>
+</ol>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} n \int_{0}^{\infty} e^{-x^{2}}\left(e^{x / n}-1\right) d x=\int_{0}^{\infty} x e^{-x^{2}} d x=\frac{1}{2}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><mi>n</mi><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><msup><mi>e</mi><mrow><mi>−</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mrow><mi>x</mi><mi>/</mi><mi>n</mi></mrow></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>x</mi><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mi>x</mi><msup><mi>e</mi><mrow><mi>−</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} n \int_{0}^{\infty} e^{-x^{2}}\left(e^{x / n}-1\right) d x=\int_{0}^{\infty} x e^{-x^{2}} d x=\frac{1}{2}</annotation></semantics></math></p>
+<p>and justify your procedure.<br />
+7. (a) Suppose that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+are
+<math role="math" aria-label="L^{1}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>1</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{1}(\mathbb{R})</annotation></semantics></math>
+functions. Show that</p>
+<p><math role="math" aria-label="F(x)=\int f(x-y) g(y) d y" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo>&int;</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">F(x)=\int f(x-y) g(y) d y</annotation></semantics></math></p>
+<p>defines an
+<math role="math" aria-label="L^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>1</mn></msup><annotation encoding="application/x-tex">L^{1}</annotation></semantics></math>
+function.<br />
+(b) Suppose instead that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+are
+<math role="math" aria-label="L^{2}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}(\mathbb{R})</annotation></semantics></math>
+functions. Show that
+<math role="math" aria-label="F(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F(x)</annotation></semantics></math>
+is a bounded function.<br />
+(c) Show further, for
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+in
+<math role="math" aria-label="L^{2}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}(\mathbb{R})</annotation></semantics></math>,
+that
+<math role="math" aria-label="\lim _{x \rightarrow \pm \infty} F(x)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>x</mi><mo>&rarr;</mo><mi>&plusmn;</mi><mi>&infin;</mi></mrow></msub><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim _{x \rightarrow \pm \infty} F(x)=0</annotation></semantics></math>.</p>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Complex Analysis, May 1979 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Complex Analysis, May 1979</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="complex-analysis-may-1979">Complex Analysis,
+May 1979</h2>
+<ol>
+<li><p>Prove that
+<math role="math" aria-label="\zeta(z)=\sum_{n=1}^{\infty} \frac{1}{n^{z}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&zeta;</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><mfrac><mn>1</mn><msup><mi>n</mi><mi>z</mi></msup></mfrac></mrow><annotation encoding="application/x-tex">\zeta(z)=\sum_{n=1}^{\infty} \frac{1}{n^{z}}</annotation></semantics></math>
+converges and represents an analytic function in the half-plane Re
+<math role="math" aria-label="z&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">z&gt;1</annotation></semantics></math>.</p></li>
+<li><p>Assume that
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+is analytic in the extended complex plane except for a finite number of
+poles. Prove that
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+is a rational function.</p></li>
+<li><p>What is
+<math role="math" aria-label="\sup _{f \in S}\left|f^{\prime}(0)\right|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">sup</mi><mo>&#8289;</mo></mrow><mrow><mi>f</mi><mo>&isin;</mo><mi>S</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">|</mo><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\sup _{f \in S}\left|f^{\prime}(0)\right|</annotation></semantics></math>
+where
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is the set of functions which are analytic and bounded by 1 in
+<math role="math" aria-label="|z|&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|&lt;1</annotation></semantics></math>.
+Justify your answer.</p></li>
+<li><p>Evaluate</p></li>
+</ol>
+<p><math role="math" aria-label="I_{n}=\frac{1}{2 \pi} \int_{0}^{2 \pi} \frac{e^{-i n \theta}}{z+\cos \theta} d \theta" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>n</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>&pi;</mi></mrow></mfrac><msubsup><mo>&int;</mo><mn>0</mn><mrow><mn>2</mn><mi>&pi;</mi></mrow></msubsup><mfrac><msup><mi>e</mi><mrow><mi>−</mi><mi>i</mi><mi>n</mi><mi>&theta;</mi></mrow></msup><mrow><mi>z</mi><mo>+</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>&theta;</mi></mrow></mfrac><mi>d</mi><mi>&theta;</mi></mrow><annotation encoding="application/x-tex">I_{n}=\frac{1}{2 \pi} \int_{0}^{2 \pi} \frac{e^{-i n \theta}}{z+\cos \theta} d \theta</annotation></semantics></math></p>
+<p>for any integer
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+positive, negative, or zero.<br />
+5. Assume that
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+is analytic in a region containing the closed strip</p>
+<p><math role="math" aria-label="S=\{z=x+i y: 0 \leq x \leq 1,-\infty&lt;y&lt;\infty\} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>=</mo><mi>x</mi><mo>+</mo><mi>i</mi><mi>y</mi><mo>:</mo><mn>0</mn><mo>&le;</mo><mi>x</mi><mo>&le;</mo><mn>1</mn><mo>,</mo><mi>−</mi><mi>&infin;</mi><mo>&lt;</mo><mi>y</mi><mo>&lt;</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">S=\{z=x+i y: 0 \leq x \leq 1,-\infty&lt;y&lt;\infty\} .</annotation></semantics></math></p>
+<p>Assume that</p>
+<p><math role="math" aria-label="\lim _{|y| \rightarrow \infty}\left(\sup _{0 \leq x \leq 1}|f(x+i y)|\right)=0 ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mo stretchy="false" form="prefix">|</mo><mi>y</mi><mo stretchy="false" form="prefix">|</mo><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><munder><mi mathvariant="normal">sup</mi><mrow><mn>0</mn><mo>&le;</mo><mi>x</mi><mo>&le;</mo><mn>1</mn></mrow></munder><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>i</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\lim _{|y| \rightarrow \infty}\left(\sup _{0 \leq x \leq 1}|f(x+i y)|\right)=0 .</annotation></semantics></math></p>
+<p>Suppose that for all real
+<math role="math" aria-label="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,</p>
+<p><math role="math" aria-label="|f(i y)| \leq a \text { and }|f(1+i y)| \leq b," display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mi>a</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> and </mtext><mspace width="0.333em"></mspace></mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>i</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mi>b</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">|f(i y)| \leq a \text { and }|f(1+i y)| \leq b,</annotation></semantics></math></p>
+<p>where
+<math role="math" aria-label="a&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a&gt;0</annotation></semantics></math>
+and
+<math role="math" aria-label="b&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b&gt;0</annotation></semantics></math>.
+Prove that</p>
+<p><math role="math" aria-label="|f(x+i y)| \leq a^{1-x} b^{x}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>i</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><msup><mi>a</mi><mrow><mn>1</mn><mo>−</mo><mi>x</mi></mrow></msup><msup><mi>b</mi><mi>x</mi></msup></mrow><annotation encoding="application/x-tex">|f(x+i y)| \leq a^{1-x} b^{x}</annotation></semantics></math></p>
+<p>in all of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+(Hint: Show that the function
+<math role="math" aria-label="g(z)=\frac{f(z)}{a^{1-z} b^{z}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><msup><mi>a</mi><mrow><mn>1</mn><mo>−</mo><mi>z</mi></mrow></msup><msup><mi>b</mi><mi>z</mi></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">g(z)=\frac{f(z)}{a^{1-z} b^{z}}</annotation></semantics></math>
+is bounded by 1 in
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>,
+and deduce the inequality from this.)</p>
+
+</main>
+</body>
+</html>

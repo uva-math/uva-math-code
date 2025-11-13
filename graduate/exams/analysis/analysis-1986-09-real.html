@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Real Analysis, September 1986 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Real Analysis, September 1986</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="real-analysis-september-1986">Real Analysis,
+September 1986</h2>
+<ol>
+<li><p>Evaluate, and explain briefly your reasoning:</p></li>
+</ol>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} \int_{0}^{1} \frac{\sin (n x)}{\sqrt{x}} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><msqrt><mi>x</mi></msqrt></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} \int_{0}^{1} \frac{\sin (n x)}{\sqrt{x}} d x</annotation></semantics></math></p>
+<ol start="2">
+<li><p>Let</p></li>
+</ol>
+<p><math role="math" aria-label="f(x)=\sum_{n=-\infty}^{+\infty} \frac{e^{i n x}}{2^{|n|}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mi>−</mi><mi>&infin;</mi></mrow><mrow><mi>+</mi><mi>&infin;</mi></mrow></munderover><mfrac><msup><mi>e</mi><mrow><mi>i</mi><mi>n</mi><mi>x</mi></mrow></msup><msup><mn>2</mn><mrow><mo stretchy="false" form="prefix">|</mo><mi>n</mi><mo stretchy="false" form="prefix">|</mo></mrow></msup></mfrac></mrow><annotation encoding="application/x-tex">f(x)=\sum_{n=-\infty}^{+\infty} \frac{e^{i n x}}{2^{|n|}}</annotation></semantics></math></p>
+<p>(a) Is
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+continuous? Differentiable? Infinitely differentiable? Explain briefly
+your reasoning.<br />
+(b) Evaluate, and explain briefly your reasoning:</p>
+<p><math role="math" aria-label="\int_{0}^{2 \pi}|f(x)|^{2} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mrow><mn>2</mn><mi>&pi;</mi></mrow></msubsup><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{2 \pi}|f(x)|^{2} d x</annotation></semantics></math></p>
+<ol start="3">
+<li><p>(a) Let
+<math role="math" aria-label="F(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F(x)</annotation></semantics></math>
+be a continuous nondecreasing function on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.
+When is</p></li>
+</ol>
+<p><math role="math" aria-label="F(x)=\int_{0}^{x} F^{\prime}(t) d t ?" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>x</mi></msubsup><msup><mi>F</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>t</mi><mi>?</mi></mrow><annotation encoding="application/x-tex">F(x)=\int_{0}^{x} F^{\prime}(t) d t ?</annotation></semantics></math></p>
+<p>(b) Let</p>
+<p><math role="math" aria-label="F(x)=\sum_{\substack{1 / n \leq x \\ n \geq 2}} 3^{-n}=\sum_{n=2}^{\infty} 3^{-n} H(x-1 / n)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munder><mo>&sum;</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mrow><mn>1</mn><mi>/</mi><mi>n</mi><mo>&le;</mo><mi>x</mi></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mrow><mi>n</mi><mo>&ge;</mo><mn>2</mn></mrow></mtd></mtr></mtable></munder><msup><mn>3</mn><mrow><mi>−</mi><mi>n</mi></mrow></msup><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mo accent="false">&infin;</mo></munderover><msup><mn>3</mn><mrow><mi>−</mi><mi>n</mi></mrow></msup><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mi>/</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F(x)=\sum_{\substack{1 / n \leq x \\ n \geq 2}} 3^{-n}=\sum_{n=2}^{\infty} 3^{-n} H(x-1 / n)</annotation></semantics></math></p>
+<p>where
+<math role="math" aria-label="H(x)=0, x&lt;0,=1, x \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mi>x</mi><mo>&lt;</mo><mn>0</mn><mo>,</mo><mo>=</mo><mn>1</mn><mo>,</mo><mi>x</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">H(x)=0, x&lt;0,=1, x \geq 0</annotation></semantics></math>.<br />
+Express
+<math role="math" aria-label="\int_{0}^{1} g(x) d F(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\int_{0}^{1} g(x) d F(x)</annotation></semantics></math>
+as an infinite series, where
+<math role="math" aria-label="g(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(x)</annotation></semantics></math>
+is continuous on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.<br />
+4. Let
+<math role="math" aria-label="\pi: Z^{+} \rightarrow Z^{+}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&pi;</mi><mo>:</mo><msup><mi>Z</mi><mo>+</mo></msup><mo>&rarr;</mo><msup><mi>Z</mi><mo>+</mo></msup></mrow><annotation encoding="application/x-tex">\pi: Z^{+} \rightarrow Z^{+}</annotation></semantics></math>be
+a permutation of the positive integers
+<math role="math" aria-label="Z^{+}=\{1,2, \ldots\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>Z</mi><mo>+</mo></msup><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>…</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">Z^{+}=\{1,2, \ldots\}</annotation></semantics></math>.
+Prove that if
+<math role="math" aria-label="a_{n} \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_{n} \geq 0</annotation></semantics></math>,</p>
+<p><math role="math" aria-label="\sum_{n=1}^{\infty} a_{n}=\sum_{n=1}^{\infty} a_{\pi(n)}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><msub><mi>a</mi><mrow><mi>&pi;</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></msub></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty} a_{n}=\sum_{n=1}^{\infty} a_{\pi(n)}</annotation></semantics></math></p>
+<p>i.e., any rearrangement of a series of positive terms converges to
+the same result.<br />
+5. Prove, by showing directly the convergence of the difference
+quotient, that</p>
+<p><math role="math" aria-label="\frac{d}{d y} \int_{0}^{1} \frac{\sin (x y)}{\sqrt{x}} d x=\int_{0}^{1} \cos (x y) \sqrt{x} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>y</mi></mrow></mfrac><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><msqrt><mi>x</mi></msqrt></mfrac><mi>d</mi><mi>x</mi><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><msqrt><mi>x</mi></msqrt><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\frac{d}{d y} \int_{0}^{1} \frac{\sin (x y)}{\sqrt{x}} d x=\int_{0}^{1} \cos (x y) \sqrt{x} d x</annotation></semantics></math></p>
+<ol start="6">
+<li><p>Prove: If
+<math role="math" aria-label="f_{n} \rightarrow f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>&rarr;</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n} \rightarrow f</annotation></semantics></math>
+is
+<math role="math" aria-label="L_{1}[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">L_{1}[0,1]</annotation></semantics></math>
+and
+<math role="math" aria-label="f_{n}(x) \rightarrow g(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{n}(x) \rightarrow g(x)</annotation></semantics></math>
+a.e., then
+<math role="math" aria-label="f(x)=g(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)=g(x)</annotation></semantics></math>
+a.e.</p></li>
+<li><p>Prove that the uniform limit of a sequence of real-valued
+continuous functions
+<math role="math" aria-label="\left\{f_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{f_{n}\right\}</annotation></semantics></math>
+on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+is continuous.</p></li>
+</ol>
+
+</main>
+</body>
+</html>

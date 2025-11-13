@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Complex Analysis and Linear Spaces, January 1989 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Complex Analysis and Linear Spaces, January 1989</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered"
+id="complex-analysis-and-linear-spaces-january-1989">Complex Analysis
+and Linear Spaces, January 1989</h2>
+<ol>
+<li><p>(a) Let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be holomorphic on a region
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+in the complex plane. If
+<math role="math" aria-label="u=\operatorname{Re} f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mrow><mi mathvariant="normal">Re</mi><mo>&#8289;</mo></mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">u=\operatorname{Re} f</annotation></semantics></math>
+and
+<math role="math" aria-label="v=\operatorname{Im} f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">v=\operatorname{Im} f</annotation></semantics></math>,
+show that
+<math role="math" aria-label="u" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+and
+<math role="math" aria-label="v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+are harmonic on
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.<br />
+(b) Exhibit real-valued harmonic functions
+<math role="math" aria-label="u, v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u, v</annotation></semantics></math>
+in the complex plane such that
+<math role="math" aria-label="f=u+i v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mi>u</mi><mo>+</mo><mi>i</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">f=u+i v</annotation></semantics></math>
+is not holomorphic in the plane (prove this).</p></li>
+<li><p>(a) Compute the power series expansion of
+<math role="math" aria-label="\sinh z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sinh</mi><mo>&#8289;</mo></mrow><mi>z</mi></mrow><annotation encoding="application/x-tex">\sinh z</annotation></semantics></math>
+about the point
+<math role="math" aria-label="z_{0}=\pi i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>0</mn></msub><mo>=</mo><mi>&pi;</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">z_{0}=\pi i</annotation></semantics></math>.<br />
+(b) Evaluate</p></li>
+</ol>
+<p><math role="math" aria-label="\lim _{z \rightarrow \pi i} \frac{\sinh z}{z-\pi i}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>z</mi><mo>&rarr;</mo><mi>&pi;</mi><mi>i</mi></mrow></munder><mfrac><mrow><mrow><mi mathvariant="normal">sinh</mi><mo>&#8289;</mo></mrow><mi>z</mi></mrow><mrow><mi>z</mi><mo>−</mo><mi>&pi;</mi><mi>i</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\lim _{z \rightarrow \pi i} \frac{\sinh z}{z-\pi i}</annotation></semantics></math></p>
+<ol start="3">
+<li><p>Let
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+be holomorphic in the unit disk with</p></li>
+</ol>
+<p><math role="math" aria-label="f(z)=\sum_{n=0}^{\infty} a_{n} z^{n}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">&infin;</mo></munderover><msub><mi>a</mi><mi>n</mi></msub><msup><mi>z</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f(z)=\sum_{n=0}^{\infty} a_{n} z^{n}</annotation></semantics></math></p>
+<p>Assume that</p>
+<p><math role="math" aria-label="|f(z)| \leq 1 /(1-|z|)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">|f(z)| \leq 1 /(1-|z|)</annotation></semantics></math></p>
+<p>for all
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+in the disk. Prove that for
+<math role="math" aria-label="n \geq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n \geq 1</annotation></semantics></math>,</p>
+<p><math role="math" aria-label="\left|a_{n}\right| \leq(n+1)\left(1+\frac{1}{n}\right)^{n}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\left|a_{n}\right| \leq(n+1)\left(1+\frac{1}{n}\right)^{n}</annotation></semantics></math></p>
+<ol start="4">
+<li><p>Assume that</p></li>
+</ol>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} \int_{0}^{1}\left|f_{0}(x)-\sum_{k=0}^{n} a_{k} x^{k}\right|^{2} d x=0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><msup><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mn>0</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><munderover><mo>&sum;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><msub><mi>a</mi><mi>k</mi></msub><msup><mi>x</mi><mi>k</mi></msup><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} \int_{0}^{1}\left|f_{0}(x)-\sum_{k=0}^{n} a_{k} x^{k}\right|^{2} d x=0</annotation></semantics></math></p>
+<p>where
+<math role="math" aria-label="a_{0}, a_{1}, a_{2}, \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>,</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">a_{0}, a_{1}, a_{2}, \ldots</annotation></semantics></math>
+are complex numbers and
+<math role="math" aria-label="f_{0}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{0}(x)</annotation></semantics></math>
+is a function in
+<math role="math" aria-label="L^{2}(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}(0,1)</annotation></semantics></math>.
+Show that<br />
+(a)
+<math role="math" aria-label="\lim _{n \rightarrow \infty} \int_{0}^{1} \sum_{k=0}^{n} a_{k} x^{k} d x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><msubsup><mo>&sum;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></msubsup><msub><mi>a</mi><mi>k</mi></msub><msup><mi>x</mi><mi>k</mi></msup><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} \int_{0}^{1} \sum_{k=0}^{n} a_{k} x^{k} d x</annotation></semantics></math>
+exists as a finite number;<br />
+(b)
+<math role="math" aria-label="\lim _{k \rightarrow \infty} \frac{a_{k}}{k+1}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>k</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><mfrac><msub><mi>a</mi><mi>k</mi></msub><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim _{k \rightarrow \infty} \frac{a_{k}}{k+1}=0</annotation></semantics></math>;<br />
+(c) the power series</p>
+<p><math role="math" aria-label="f(z)=\sum_{k=0}^{\infty} a_{k} z^{k}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">&infin;</mo></munderover><msub><mi>a</mi><mi>k</mi></msub><msup><mi>z</mi><mi>k</mi></msup></mrow><annotation encoding="application/x-tex">f(z)=\sum_{k=0}^{\infty} a_{k} z^{k}</annotation></semantics></math></p>
+<p>converges in the disk
+<math role="math" aria-label="|z|&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|&lt;1</annotation></semantics></math>;<br />
+(d)
+<math role="math" aria-label="f(x)=f_{0}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>f</mi><mn>0</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)=f_{0}(x)</annotation></semantics></math>
+a.e. on
+<math role="math" aria-label="(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math>.<br />
+5. Let
+<math role="math" aria-label="f, g \in L^{2}(-\infty, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>g</mi><mo>&isin;</mo><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>&infin;</mi><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f, g \in L^{2}(-\infty, \infty)</annotation></semantics></math>.<br />
+(a) Prove that</p>
+<p><math role="math" aria-label="\lim _{h \rightarrow 0} \int_{-\infty}^{\infty}|f(x+h)-f(x)|^{2} d x=0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>h</mi><mo>&rarr;</mo><mn>0</mn></mrow></munder><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup><mi>d</mi><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim _{h \rightarrow 0} \int_{-\infty}^{\infty}|f(x+h)-f(x)|^{2} d x=0</annotation></semantics></math></p>
+<p>for all real
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+(Hint: First prove this under the additional assumption that
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is continuous and has compact support.)<br />
+(b) Prove that</p>
+<p><math role="math" aria-label="F(x)=\int_{-\infty}^{\infty} f(x+t) g(t) d t" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">F(x)=\int_{-\infty}^{\infty} f(x+t) g(t) d t</annotation></semantics></math></p>
+<p>is a continuous function of real
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.</p>
+
+</main>
+</body>
+</html>

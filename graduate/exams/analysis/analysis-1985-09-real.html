@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Real Analysis, September 1985 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Real Analysis, September 1985</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="real-analysis-september-1985">Real Analysis,
+September 1985</h2>
+<ol>
+<li><p>Evaluate</p></li>
+</ol>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} \int_{-\infty}^{\infty}\left(1-e^{-t^{2} / n}\right) e^{-|t|} \sin ^{2} t d t" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>e</mi><mrow><mi>−</mi><msup><mi>t</mi><mn>2</mn></msup><mi>/</mi><mi>n</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>e</mi><mrow><mi>−</mi><mo stretchy="false" form="prefix">|</mo><mi>t</mi><mo stretchy="false" form="prefix">|</mo></mrow></msup><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mi>t</mi><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} \int_{-\infty}^{\infty}\left(1-e^{-t^{2} / n}\right) e^{-|t|} \sin ^{2} t d t</annotation></semantics></math></p>
+<p>Justify each step in your computation.<br />
+2. (a) Let
+<math role="math" aria-label="\left\{u_{n}(x)\right\}, n=0,1,2, \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">}</mo></mrow><mo>,</mo><mi>n</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">\left\{u_{n}(x)\right\}, n=0,1,2, \ldots</annotation></semantics></math>
+be a sequence of functions defined iteratively by</p>
+<p><math role="math" aria-label="u_{n}(x)=u_{n-1}(x)\left(1-u_{n-1}(x)\right)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>u</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msub><mi>u</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">u_{n}(x)=u_{n-1}(x)\left(1-u_{n-1}(x)\right)</annotation></semantics></math></p>
+<p>with
+<math role="math" aria-label="u_{0}(x)=g(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>0</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">u_{0}(x)=g(x)</annotation></semantics></math>
+a continuous function
+<math role="math" aria-label="0 \leq g(x) \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&le;</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0 \leq g(x) \leq 1</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="\left\{u_{n}(x)\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{u_{n}(x)\right\}</annotation></semantics></math>
+converges uniformly,
+<math role="math" aria-label="n \rightarrow \infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">n \rightarrow \infty</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="\left\{r_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>r</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{r_{n}\right\}</annotation></semantics></math>
+be an enumeration of the rationals and define the step function</p>
+<p><math role="math" aria-label="\begin{aligned}
+j_{n}(x) &amp; =0, \quad x&lt;r_{n} \\
+&amp; =1, \quad x \geq r_{n}
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>j</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>0</mn><mo>,</mo><mspace width="1.0em"></mspace><mi>x</mi><mo>&lt;</mo><msub><mi>r</mi><mi>n</mi></msub></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>1</mn><mo>,</mo><mspace width="1.0em"></mspace><mi>x</mi><mo>&ge;</mo><msub><mi>r</mi><mi>n</mi></msub></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+j_{n}(x) &amp; =0, \quad x&lt;r_{n} \\
+&amp; =1, \quad x \geq r_{n}
+\end{aligned}</annotation></semantics></math></p>
+<p>Let</p>
+<p><math role="math" aria-label="f(x)=\sum_{n=1}^{\infty} \frac{1}{n^{2}} j_{n}(x)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><mfrac><mn>1</mn><msup><mi>n</mi><mn>2</mn></msup></mfrac><msub><mi>j</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)=\sum_{n=1}^{\infty} \frac{1}{n^{2}} j_{n}(x)</annotation></semantics></math></p>
+<p>Prove that
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is continuous at any irrational point
+<math role="math" aria-label="x_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>0</mn></msub><annotation encoding="application/x-tex">x_{0}</annotation></semantics></math>.<br />
+3. (a) Assuming the monotone convergence theorem, give a proof of
+Fatou’s lemma: For any sequence of Lebesgue integrable
+<math role="math" aria-label="f_{n} \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f_{n} \geq 0</annotation></semantics></math>,</p>
+<p><math role="math" aria-label="\int \liminf f_{n}(x) d x \leq \liminf \int f_{n}(x) d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&int;</mo><mrow><mi mathvariant="normal">liminf</mi><mo>&#8289;</mo></mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>&le;</mo><mrow><mi mathvariant="normal">liminf</mi><mo>&#8289;</mo></mrow><mo>&int;</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int \liminf f_{n}(x) d x \leq \liminf \int f_{n}(x) d x</annotation></semantics></math></p>
+<p>(b) Give an example where the inequality is strict.<br />
+4. (a) Is
+<math role="math" aria-label="\sum_{n \geq 0} \sin (n) e^{i n x}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&sum;</mo><mrow><mi>n</mi><mo>&ge;</mo><mn>0</mn></mrow></msub><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mi>i</mi><mi>n</mi><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\sum_{n \geq 0} \sin (n) e^{i n x}</annotation></semantics></math>
+the Fourier series for an
+<math role="math" aria-label="L^{1}([0,2 \pi], d x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>1</mn></msup><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>&pi;</mi><mo stretchy="false" form="postfix">]</mo><mo>,</mo><mi>d</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{1}([0,2 \pi], d x)</annotation></semantics></math>
+function? Explain your answer briefly.<br />
+(b) Is
+<math role="math" aria-label="\sum_{n \geq 1}^{\infty} n^{-3 / 4} e^{i n x}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>&ge;</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><msup><mi>n</mi><mrow><mi>−</mi><mn>3</mn><mi>/</mi><mn>4</mn></mrow></msup><msup><mi>e</mi><mrow><mi>i</mi><mi>n</mi><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\sum_{n \geq 1}^{\infty} n^{-3 / 4} e^{i n x}</annotation></semantics></math>
+the Fourier series for an
+<math role="math" aria-label="L^{2}([0,2 \pi], d x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>&pi;</mi><mo stretchy="false" form="postfix">]</mo><mo>,</mo><mi>d</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}([0,2 \pi], d x)</annotation></semantics></math>
+function? Explain your answer briefly.<br />
+5. (a) For what real values of
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is</p>
+<p><math role="math" aria-label="\Lambda_{\alpha}(f) \equiv \int_{0}^{1} x^{\alpha} f(x) d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">&Lambda;</mi><mi>&alpha;</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>&equiv;</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><msup><mi>x</mi><mi>&alpha;</mi></msup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\Lambda_{\alpha}(f) \equiv \int_{0}^{1} x^{\alpha} f(x) d x</annotation></semantics></math></p>
+<p>a continuous linear functional on
+<math role="math" aria-label="L^{2}([0,1], d x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo><mo>,</mo><mi>d</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}([0,1], d x)</annotation></semantics></math>
+?<br />
+(b) Set</p>
+<p><math role="math" aria-label="\left\|\Lambda_{\alpha}\right\|=\sup \left\{\left.\left|\int_{0}^{1} x^{\alpha} f(x) d x\right|\left|\int_{0}^{1}\right| f(x)\right|^{2} d x=1\right\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">&parallel;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mi>&alpha;</mi></msub><mo stretchy="true" form="postfix">&parallel;</mo></mrow><mo>=</mo><mrow><mi mathvariant="normal">sup</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">{</mo><msup><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><msup><mi>x</mi><mi>&alpha;</mi></msup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mo stretchy="true" form="postfix">|</mo></mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi><mo>=</mo><mn>1</mn><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">\left\|\Lambda_{\alpha}\right\|=\sup \left\{\left.\left|\int_{0}^{1} x^{\alpha} f(x) d x\right|\left|\int_{0}^{1}\right| f(x)\right|^{2} d x=1\right\}</annotation></semantics></math></p>
+<p>Compute
+<math role="math" aria-label="\left\|\Lambda_{\alpha}\right\|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">&parallel;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mi>&alpha;</mi></msub><mo stretchy="true" form="postfix">&parallel;</mo></mrow><annotation encoding="application/x-tex">\left\|\Lambda_{\alpha}\right\|</annotation></semantics></math>.<br />
+6. Let
+<math role="math" aria-label="f \in L^{2}(\mathbb{R}, d x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo>,</mo><mi>d</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f \in L^{2}(\mathbb{R}, d x)</annotation></semantics></math>,
+and let
+<math role="math" aria-label="\hat{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>f</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{f}</annotation></semantics></math>
+be its Fourier transform. Suppose that
+<math role="math" aria-label="\hat{f}(k)(1+|k|) \in L^{2}(\mathbb{R}, d k)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>f</mi><mo accent="true">̂</mo></mover><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo stretchy="false" form="prefix">|</mo><mi>k</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo>,</mo><mi>d</mi><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\hat{f}(k)(1+|k|) \in L^{2}(\mathbb{R}, d k)</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is equal, a.e., to a continuous function. (HINT: Show
+<math role="math" aria-label="\hat{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>f</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{f}</annotation></semantics></math>
+is an
+<math role="math" aria-label="L^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>1</mn></msup><annotation encoding="application/x-tex">L^{1}</annotation></semantics></math>-function.)</p>
+
+</main>
+</body>
+</html>

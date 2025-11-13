@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Real Analysis, January 1981 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Real Analysis, January 1981</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="real-analysis-january-1981">Real Analysis,
+January 1981</h2>
+<ol>
+<li><p>Definition. A real-valued function defined on an interval of
+<math role="math" aria-label="\mathbb{R}^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>1</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{1}</annotation></semantics></math>
+has a relative maximum at
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+if there exists a neighborhood
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+of
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+such that
+<math role="math" aria-label="f(y) \leq f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>&le;</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(y) \leq f(x)</annotation></semantics></math>
+for all
+<math role="math" aria-label="y \in N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>&isin;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">y \in N</annotation></semantics></math>.
+It has a proper maximum at
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+if there exists a neighborhood
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+of
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+such that
+<math role="math" aria-label="f(y)&lt;f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>&lt;</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(y)&lt;f(x)</annotation></semantics></math>
+for all
+<math role="math" aria-label="y \in N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>&isin;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">y \in N</annotation></semantics></math>.<br />
+Prove that any real-valued function defined on an interval of
+<math role="math" aria-label="\mathbb{R}^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>1</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{1}</annotation></semantics></math>
+has only a countable number of proper maximums.<br />
+Give an example to show that the statement is false if proper maximum is
+replaced by relative maximum.</p></li>
+<li><p>Let
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and
+<math role="math" aria-label="c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+be real numbers with
+<math role="math" aria-label="c&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c&gt;0</annotation></semantics></math>.
+Define
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+by</p></li>
+</ol>
+<p><math role="math" aria-label="f(x)= \begin{cases}x^{a} \sin \left(x^{-c}\right) &amp; \text { if } x \neq 0 \\ 0 &amp; \text { if } x=0\end{cases}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><msup><mi>x</mi><mi>a</mi></msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mrow><mi>−</mi><mi>c</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> if </mtext><mspace width="0.333em"></mspace></mrow><mi>x</mi><mo>&ne;</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mn>0</mn></mtd><mtd columnalign="left" style="text-align: left"><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> if </mtext><mspace width="0.333em"></mspace></mrow><mi>x</mi><mo>=</mo><mn>0</mn></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(x)= \begin{cases}x^{a} \sin \left(x^{-c}\right) &amp; \text { if } x \neq 0 \\ 0 &amp; \text { if } x=0\end{cases}</annotation></semantics></math></p>
+<p>Prove:<br />
+(a)
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is continuous iff
+<math role="math" aria-label="a&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a&gt;0</annotation></semantics></math>;<br />
+(b)
+<math role="math" aria-label="f^{\prime}(0)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f^{\prime}(0)</annotation></semantics></math>
+exists iff
+<math role="math" aria-label="a&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a&gt;1</annotation></semantics></math>;<br />
+(c)
+<math role="math" aria-label="f^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mi>′</mi></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math>
+is bounded iff
+<math role="math" aria-label="a \geq 1+c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&ge;</mo><mn>1</mn><mo>+</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a \geq 1+c</annotation></semantics></math>.<br />
+3. Prove or give a counter-example: If
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is differentiable on
+<math role="math" aria-label="(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math>,
+then its derivative is a measurable function on
+<math role="math" aria-label="(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math>.<br />
+4. (a) Show that
+<math role="math" aria-label="\frac{\sin x}{(1+x)^{2}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac><annotation encoding="application/x-tex">\frac{\sin x}{(1+x)^{2}}</annotation></semantics></math>
+is Lebesgue integrable on
+<math role="math" aria-label="(0, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0, \infty)</annotation></semantics></math>
+but
+<math role="math" aria-label="\frac{\cos x}{1+x}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{\cos x}{1+x}</annotation></semantics></math>
+is not.<br />
+(b) Prove that</p>
+<p><math role="math" aria-label="\lim _{A \rightarrow \infty} \int_{0}^{A} \frac{\cos x}{1+x} d x=\int_{0}^{\infty} \frac{\cos x}{1+x} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>A</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mo>&int;</mo><mn>0</mn><mi>A</mi></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac><mi>d</mi><mi>x</mi><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\lim _{A \rightarrow \infty} \int_{0}^{A} \frac{\cos x}{1+x} d x=\int_{0}^{\infty} \frac{\cos x}{1+x} d x</annotation></semantics></math></p>
+<p>exists, and</p>
+<p><math role="math" aria-label="\int_{0}^{\infty} \frac{\cos x}{1+x} d x=\int_{(0, \infty)} \frac{\sin x}{(1+x)^{2}} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac><mi>d</mi><mi>x</mi><mo>=</mo><msub><mo>&int;</mo><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow></msub><mfrac><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>x</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty} \frac{\cos x}{1+x} d x=\int_{(0, \infty)} \frac{\sin x}{(1+x)^{2}} d x</annotation></semantics></math></p>
+<ol start="5">
+<li><p>Let
+<math role="math" aria-label="f(x, t)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x, t)</annotation></semantics></math>
+be a function defined on
+<math role="math" aria-label="(0,1) \times(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&times;</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0,1) \times(0,1)</annotation></semantics></math>
+to
+<math role="math" aria-label="\mathbb{R}^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>1</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{1}</annotation></semantics></math>
+such that<br />
+(a)
+<math role="math" aria-label="\frac{\partial}{\partial t} f\left(\quad, t_{0}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>&part;</mi><mrow><mi>&part;</mi><mi>t</mi></mrow></mfrac><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mspace width="1.0em"></mspace><mo>,</mo><msub><mi>t</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{\partial}{\partial t} f\left(\quad, t_{0}\right)</annotation></semantics></math>
+exists for all
+<math role="math" aria-label="t_{0} \in(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mn>0</mn></msub><mo>&isin;</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">t_{0} \in(0,1)</annotation></semantics></math>;<br />
+(b) there exists
+<math role="math" aria-label="g \in L^{1}(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&isin;</mo><msup><mi>L</mi><mn>1</mn></msup><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g \in L^{1}(0,1)</annotation></semantics></math>
+such that</p></li>
+</ol>
+<p><math role="math" aria-label="\left|f\left(x, t_{1}\right)-f\left(x, t_{2}\right)\right| \leq g(x)\left|t_{1}-t_{2}\right|" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><msub><mi>t</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>t</mi><mn>1</mn></msub><mo>−</mo><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\left|f\left(x, t_{1}\right)-f\left(x, t_{2}\right)\right| \leq g(x)\left|t_{1}-t_{2}\right|</annotation></semantics></math></p>
+<p>for all
+<math role="math" aria-label="x, t_{1}, t_{2} \in(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo>&isin;</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x, t_{1}, t_{2} \in(0,1)</annotation></semantics></math>.<br />
+Prove that
+<math role="math" aria-label="f(\cdot, t) \in L^{1}(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>&sdot;</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msup><mi>L</mi><mn>1</mn></msup><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(\cdot, t) \in L^{1}(0,1)</annotation></semantics></math>
+for each
+<math role="math" aria-label="t \in(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">t \in(0,1)</annotation></semantics></math>,
+that
+<math role="math" aria-label="\frac{\partial f}{\partial t}(\cdot, t) \in L^{1}(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>&part;</mi><mi>f</mi></mrow><mrow><mi>&part;</mi><mi>t</mi></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>&sdot;</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msup><mi>L</mi><mn>1</mn></msup><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\frac{\partial f}{\partial t}(\cdot, t) \in L^{1}(0,1)</annotation></semantics></math>
+for each
+<math role="math" aria-label="t \in(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">t \in(0,1)</annotation></semantics></math>
+and that</p>
+<p><math role="math" aria-label="\frac{d}{d t} \int_{0}^{1} f(x, t) d x=\int_{0}^{1} \frac{\partial f}{\partial t}(x, t) d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>d</mi><mrow><mi>d</mi><mi>t</mi></mrow></mfrac><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mfrac><mrow><mi>&part;</mi><mi>f</mi></mrow><mrow><mi>&part;</mi><mi>t</mi></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\frac{d}{d t} \int_{0}^{1} f(x, t) d x=\int_{0}^{1} \frac{\partial f}{\partial t}(x, t) d x</annotation></semantics></math></p>
+<ol start="6">
+<li><p>Assume as known that every set in
+<math role="math" aria-label="\mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{n}</annotation></semantics></math>
+of positive Lebesgue measure contains a nonmeasurable set.</p></li>
+</ol>
+<p>Let
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+be a bijection of a bounded measurable set
+<math role="math" aria-label="E \subset \mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&sub;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">E \subset \mathbb{R}^{n}</annotation></semantics></math>
+to
+<math role="math" aria-label="T(E) \subset \mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mo stretchy="false" form="postfix">)</mo><mo>&sub;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">T(E) \subset \mathbb{R}^{n}</annotation></semantics></math>
+such that
+<math role="math" aria-label="T(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">T(A)</annotation></semantics></math>
+is measurable if and only if
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is measurable. Let
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+be Lebesgue measure on
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+is a measurable map, i.e.,
+<math role="math" aria-label="T^{-1} C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>C</mi></mrow><annotation encoding="application/x-tex">T^{-1} C</annotation></semantics></math>
+is measurable for each measurable
+<math role="math" aria-label="C \subset T(E)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>&sub;</mo><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C \subset T(E)</annotation></semantics></math>.<br />
+(b) Prove that the measure
+<math role="math" aria-label="\mu T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">\mu T</annotation></semantics></math>
+defined on measurable subsets of
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+by
+<math role="math" aria-label="\mu T(A)=\mu(T A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>T</mi><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu T(A)=\mu(T A)</annotation></semantics></math>
+is absolutely continuous with respect to
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>.<br />
+(c) Prove that
+<math role="math" aria-label="\mu T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">\mu T</annotation></semantics></math>
+is equivalent to
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>.</p>
+
+</main>
+</body>
+</html>

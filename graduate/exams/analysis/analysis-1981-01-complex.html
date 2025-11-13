@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Complex Analysis, January 1981 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Complex Analysis, January 1981</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="complex-analysis-january-1981">Complex
+Analysis, January 1981</h2>
+<ol>
+<li><p>Let
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+be analytic in a domain
+<math role="math" aria-label="\Omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Omega;</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="u(x, y)=\operatorname{Re} f(x+i y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">Re</mi><mo>&#8289;</mo></mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>i</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">u(x, y)=\operatorname{Re} f(x+i y)</annotation></semantics></math>
+is a harmonic function on
+<math role="math" aria-label="\Omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Omega;</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>.</p></li>
+<li><p>Find and classify the singularities of the following functions in
+the complex plane:<br />
+(a)
+<math role="math" aria-label="\frac{e^{1 / z}}{z(1+z)^{2}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><msup><mi>e</mi><mrow><mn>1</mn><mi>/</mi><mi>z</mi></mrow></msup><mrow><mi>z</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>z</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac><annotation encoding="application/x-tex">\frac{e^{1 / z}}{z(1+z)^{2}}</annotation></semantics></math><br />
+(b)
+<math role="math" aria-label="\cos \sqrt{z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><msqrt><mi>z</mi></msqrt></mrow><annotation encoding="application/x-tex">\cos \sqrt{z}</annotation></semantics></math><br />
+(c)
+<math role="math" aria-label="\frac{\log \left(1+z^{2}\right)}{1-z^{4}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><msup><mi>z</mi><mn>4</mn></msup></mrow></mfrac><annotation encoding="application/x-tex">\frac{\log \left(1+z^{2}\right)}{1-z^{4}}</annotation></semantics></math></p></li>
+<li><p>Evaluate by contour integration</p></li>
+</ol>
+<p><math role="math" aria-label="\int_{0}^{\infty} \frac{\cos a x}{1+x^{2}} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>a</mi><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty} \frac{\cos a x}{1+x^{2}} d x</annotation></semantics></math></p>
+<ol start="4">
+<li><p>Let
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+be the positively oriented unit circle
+<math role="math" aria-label="|z|=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|=1</annotation></semantics></math>.
+Find</p></li>
+</ol>
+<p><math role="math" aria-label="\int_{C} \frac{d z}{z^{2} \sin z}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mi>C</mi></msub><mfrac><mrow><mi>d</mi><mi>z</mi></mrow><mrow><msup><mi>z</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>z</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\int_{C} \frac{d z}{z^{2} \sin z}</annotation></semantics></math></p>
+<ol start="5">
+<li><p>Define</p></li>
+</ol>
+<p><math role="math" aria-label="f(z)=\sum_{n=-\infty}^{+\infty} a_{n} z^{n}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mi>−</mi><mi>&infin;</mi></mrow><mrow><mi>+</mi><mi>&infin;</mi></mrow></munderover><msub><mi>a</mi><mi>n</mi></msub><msup><mi>z</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f(z)=\sum_{n=-\infty}^{+\infty} a_{n} z^{n}</annotation></semantics></math></p>
+<p>where</p>
+<p><math role="math" aria-label="a_{n}= \begin{cases}2^{-(n+1)} &amp; n \geq 0 \\ 1 &amp; n&lt;0\end{cases}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><msup><mn>2</mn><mrow><mi>−</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></msup></mtd><mtd columnalign="left" style="text-align: left"><mi>n</mi><mo>&ge;</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mn>1</mn></mtd><mtd columnalign="left" style="text-align: left"><mi>n</mi><mo>&lt;</mo><mn>0</mn></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">a_{n}= \begin{cases}2^{-(n+1)} &amp; n \geq 0 \\ 1 &amp; n&lt;0\end{cases}</annotation></semantics></math></p>
+<p>for those values of
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+for which the series converges.<br />
+Let
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+be defined elsewhere by analytic continuation.<br />
+(a) Where does the representation (*) hold?<br />
+(b) What sort of behavior does
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+have at the origin
+<math role="math" aria-label="z=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">z=0</annotation></semantics></math>
+?<br />
+6. Prove that there is a positive number
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+for which there exist complex numbers
+<math role="math" aria-label="c_{0}, c_{1}, c_{2}, \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mn>0</mn></msub><mo>,</mo><msub><mi>c</mi><mn>1</mn></msub><mo>,</mo><msub><mi>c</mi><mn>2</mn></msub><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">c_{0}, c_{1}, c_{2}, \ldots</annotation></semantics></math>
+such that</p>
+<p><math role="math" aria-label="\frac{\left(z^{2}+\pi^{2}\right)\left(e^{z}-1\right)}{\sinh z}=\sum_{n=0}^{\infty} c_{n} z^{n}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>z</mi><mn>2</mn></msup><mo>+</mo><msup><mi>&pi;</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mi>z</mi></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mrow><mi mathvariant="normal">sinh</mi><mo>&#8289;</mo></mrow><mi>z</mi></mrow></mfrac><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">&infin;</mo></munderover><msub><mi>c</mi><mi>n</mi></msub><msup><mi>z</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\frac{\left(z^{2}+\pi^{2}\right)\left(e^{z}-1\right)}{\sinh z}=\sum_{n=0}^{\infty} c_{n} z^{n}</annotation></semantics></math></p>
+<p>for
+<math role="math" aria-label="|z|&lt;R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">|z|&lt;R</annotation></semantics></math>.
+Is there a largest such
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+? If so, what is it? Justify your answers.</p>
+
+</main>
+</body>
+</html>

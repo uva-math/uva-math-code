@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Complex Analysis, May 1978 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Complex Analysis, May 1978</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="complex-analysis-may-1978">Complex Analysis,
+May 1978</h2>
+<ol>
+<li><p>Classify all of the singularities of the function</p></li>
+</ol>
+<p><math role="math" aria-label="f(z)=\frac{e^{1 / z}}{1+z^{2}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><msup><mi>e</mi><mrow><mn>1</mn><mi>/</mi><mi>z</mi></mrow></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(z)=\frac{e^{1 / z}}{1+z^{2}}</annotation></semantics></math></p>
+<p>in the extended complex plane.<br />
+2. Determine the number of zeros of the polynomial</p>
+<p><math role="math" aria-label="p(z)=z^{87}+36 z^{57}+71 z^{4}+z^{3}-z+1" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>z</mi><mn>87</mn></msup><mo>+</mo><mn>36</mn><msup><mi>z</mi><mn>57</mn></msup><mo>+</mo><mn>71</mn><msup><mi>z</mi><mn>4</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup><mo>−</mo><mi>z</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p(z)=z^{87}+36 z^{57}+71 z^{4}+z^{3}-z+1</annotation></semantics></math></p>
+<p>(a) on the disk
+<math role="math" aria-label="\{z:|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{z:|z|&lt;1\}</annotation></semantics></math>;<br />
+(b) on the disk
+<math role="math" aria-label="\{z:|z|&lt;2\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{z:|z|&lt;2\}</annotation></semantics></math>.<br />
+3. Prove or disprove:<br />
+(a) There is a sequence of polynomials
+<math role="math" aria-label="\left\{p_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>p</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{p_{n}\right\}</annotation></semantics></math>
+such that
+<math role="math" aria-label="\lim _{n \rightarrow \infty} p_{n}(z)=\frac{1}{z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><msub><mi>p</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>1</mn><mi>z</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} p_{n}(z)=\frac{1}{z}</annotation></semantics></math>
+uniformly on the circle
+<math role="math" aria-label="|z|=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|=1</annotation></semantics></math>.<br />
+(b) There is a sequence of polynomials
+<math role="math" aria-label="\left\{p_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>p</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{p_{n}\right\}</annotation></semantics></math>
+such that
+<math role="math" aria-label="\lim _{n \rightarrow \infty} p_{n}(z)=\frac{1}{z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><msub><mi>p</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>1</mn><mi>z</mi></mfrac></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} p_{n}(z)=\frac{1}{z}</annotation></semantics></math>
+uniformly on the circle
+<math role="math" aria-label="|z-3|=2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo>−</mo><mn>3</mn><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">|z-3|=2</annotation></semantics></math>.<br />
+4. Evaluate
+<math role="math" aria-label="\int_{-\infty}^{\infty} \frac{1}{1+x^{6}} d x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>6</mn></msup></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \frac{1}{1+x^{6}} d x</annotation></semantics></math>
+using the residue calculus.<br />
+5. Prove that the range of a non-constant entire function is a dense
+subset of the complex plane.<br />
+6. Let
+<math role="math" aria-label="h" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+be a measurable function on the positive real line with</p>
+<p><math role="math" aria-label="\int_{0}^{\infty}|h(t)| d t&lt;\infty ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mo stretchy="false" form="prefix">|</mo><mi>h</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mi>d</mi><mi>t</mi><mo>&lt;</mo><mi>&infin;</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty}|h(t)| d t&lt;\infty .</annotation></semantics></math></p>
+<p>For
+<math role="math" aria-label="\operatorname{Im} z&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mi>z</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\operatorname{Im} z&gt;0</annotation></semantics></math>,
+set</p>
+<p><math role="math" aria-label="H(z)=\int_{0}^{\infty} h(t) e^{i t z} d t" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mi>h</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mi>i</mi><mi>t</mi><mi>z</mi></mrow></msup><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">H(z)=\int_{0}^{\infty} h(t) e^{i t z} d t</annotation></semantics></math></p>
+<p>Verify in detail that
+<math role="math" aria-label="H(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H(z)</annotation></semantics></math>
+is a well-defined analytic function in
+<math role="math" aria-label="\operatorname{Im} z&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mi>z</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\operatorname{Im} z&gt;0</annotation></semantics></math>.</p>
+
+</main>
+</body>
+</html>

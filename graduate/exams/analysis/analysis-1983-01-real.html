@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Real Analysis, January 1983 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Real Analysis, January 1983</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="real-analysis-january-1983">Real Analysis,
+January 1983</h2>
+<ol>
+<li><p>Let
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+be continuous on
+<math role="math" aria-label="[-1,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[-1,1]</annotation></semantics></math>
+and differentiable except possibly at
+<math role="math" aria-label="x=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>.
+Prove that if</p></li>
+</ol>
+<p><math role="math" aria-label="\lim _{x \rightarrow 0} f^{\prime}(x)=A" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>x</mi><mo>&rarr;</mo><mn>0</mn></mrow></munder><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\lim _{x \rightarrow 0} f^{\prime}(x)=A</annotation></semantics></math></p>
+<p>exists, then
+<math role="math" aria-label="f^{\prime}(0)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f^{\prime}(0)</annotation></semantics></math>
+exists and is equal to
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.<br />
+2. Let
+<math role="math" aria-label="f_{n}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{n}(x)</annotation></semantics></math>
+be a sequence of differentiable functions, whose derivatives
+<math role="math" aria-label="f_{n}^{\prime}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>f</mi><mi>n</mi><mi>′</mi></msubsup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{n}^{\prime}(x)</annotation></semantics></math>
+are continuous on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.
+Prove that if the sequence of derivatives
+<math role="math" aria-label="f_{n}^{\prime}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>f</mi><mi>n</mi><mi>′</mi></msubsup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{n}^{\prime}(x)</annotation></semantics></math>
+converges uniformly on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+to a function
+<math role="math" aria-label="g(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(x)</annotation></semantics></math>,
+and
+<math role="math" aria-label="f_{n}(0)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{n}(0)</annotation></semantics></math>
+converges, then
+<math role="math" aria-label="f_{n}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{n}(x)</annotation></semantics></math>
+converges to a continuously differentiable function
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+with
+<math role="math" aria-label="f^{\prime}(x)=g(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=g(x)</annotation></semantics></math>.<br />
+3. Prove or give a counter-example:<br />
+(a) If
+<math role="math" aria-label="\left\{f_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{f_{n}\right\}</annotation></semantics></math>
+is a decreasing sequence of measurable non-negative functions on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>,
+and
+<math role="math" aria-label="f_{n} \rightarrow 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>&rarr;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f_{n} \rightarrow 0</annotation></semantics></math>
+a.e., then
+<math role="math" aria-label="\int_{0}^{1} f_{n}(x) d x \rightarrow 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>&rarr;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\int_{0}^{1} f_{n}(x) d x \rightarrow 0</annotation></semantics></math>.<br />
+(b) A bounded measureable function on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+can be made continuous by redefining it on a set of measure zero.<br />
+(c) If
+<math role="math" aria-label="f_{n} \rightarrow f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>&rarr;</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n} \rightarrow f</annotation></semantics></math>
+in measure on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>,
+then
+<math role="math" aria-label="f_{n} \rightarrow f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>&rarr;</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n} \rightarrow f</annotation></semantics></math>
+a.e.<br />
+(d) If
+<math role="math" aria-label="a_{i j} \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_{i j} \geq 0</annotation></semantics></math>
+for all
+<math role="math" aria-label="i, j" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i, j</annotation></semantics></math>,
+then</p>
+<p><math role="math" aria-label="\sum_{i=1}^{\infty}\left(\sum_{j=1}^{\infty} a_{i j}\right)=\sum_{j=1}^{\infty}\left(\sum_{i=1}^{\infty} a_{i j}\right)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>&sum;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><mrow><mo stretchy="true" form="prefix">(</mo><munderover><mo>&sum;</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><mrow><mo stretchy="true" form="prefix">(</mo><munderover><mo>&sum;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{\infty}\left(\sum_{j=1}^{\infty} a_{i j}\right)=\sum_{j=1}^{\infty}\left(\sum_{i=1}^{\infty} a_{i j}\right)</annotation></semantics></math></p>
+<ol start="4">
+<li><p>Let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be a real-valued Lebesgue measurable function on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.<br />
+(a) Define the essential supremum of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>,
+ess sup
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.<br />
+(b) Prove that there exists a real-valued Lebesgue measurable function
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+such that</p></li>
+</ol>
+<p><math role="math" aria-label="\sup g=\mathrm{ess} \sup f" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">sup</mi><mo>&#8289;</mo></mrow><mi>g</mi><mo>=</mo><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">s</mi><mi mathvariant="normal">s</mi></mrow><mrow><mi mathvariant="normal">sup</mi><mo>&#8289;</mo></mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">\sup g=\mathrm{ess} \sup f</annotation></semantics></math></p>
+<p>and
+<math role="math" aria-label="f(x)=g(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)=g(x)</annotation></semantics></math>
+for almost all
+<math role="math" aria-label="x \in[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">x \in[0,1]</annotation></semantics></math>.<br />
+5. Let
+<math role="math" aria-label="F: \mathbb{R} \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mi>&Ropf;</mi><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">F: \mathbb{R} \rightarrow \mathbb{R}</annotation></semantics></math>
+be defined by</p>
+<p><math role="math" aria-label="F(x)= \begin{cases}0, &amp; x&lt;1 \\ (x-1)^{2}+1, &amp; 1 \leq x&lt;2 \\ 2, &amp; 2 \leq x\end{cases}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><mn>0</mn><mo>,</mo></mtd><mtd columnalign="left" style="text-align: left"><mi>x</mi><mo>&lt;</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>,</mo></mtd><mtd columnalign="left" style="text-align: left"><mn>1</mn><mo>&le;</mo><mi>x</mi><mo>&lt;</mo><mn>2</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mn>2</mn><mo>,</mo></mtd><mtd columnalign="left" style="text-align: left"><mn>2</mn><mo>&le;</mo><mi>x</mi></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">F(x)= \begin{cases}0, &amp; x&lt;1 \\ (x-1)^{2}+1, &amp; 1 \leq x&lt;2 \\ 2, &amp; 2 \leq x\end{cases}</annotation></semantics></math></p>
+<p>Let
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+be the Borel measure on
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+such that</p>
+<p><math role="math" aria-label="\mu((-\infty, x])=F(x) \text { for } x \in \mathbb{R}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>&infin;</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for </mtext><mspace width="0.333em"></mspace></mrow><mi>x</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\mu((-\infty, x])=F(x) \text { for } x \in \mathbb{R}</annotation></semantics></math></p>
+<p>Find the Lebesgue decomposition</p>
+<p><math role="math" aria-label="\mu=\mu_{a}+\mu_{s}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo>=</mo><msub><mi>&mu;</mi><mi>a</mi></msub><mo>+</mo><msub><mi>&mu;</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">\mu=\mu_{a}+\mu_{s}</annotation></semantics></math></p>
+<p>of
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>,
+where
+<math role="math" aria-label="\mu_{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&mu;</mi><mi>a</mi></msub><annotation encoding="application/x-tex">\mu_{a}</annotation></semantics></math>
+is absolutely continuous with respect to Lebesgue measure, and
+<math role="math" aria-label="\mu_{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&mu;</mi><mi>s</mi></msub><annotation encoding="application/x-tex">\mu_{s}</annotation></semantics></math>
+is singular. Give reasons for your answer.<br />
+6. Let
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+be a Borel measure on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.
+Show that</p>
+<p><math role="math" aria-label="\int_{0}^{1}|s-t|^{-\frac{1}{2}} d \mu(t)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mo stretchy="false" form="prefix">|</mo><mi>s</mi><mo>−</mo><mi>t</mi><msup><mo stretchy="false" form="prefix">|</mo><mrow><mi>−</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mi>d</mi><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\int_{0}^{1}|s-t|^{-\frac{1}{2}} d \mu(t)</annotation></semantics></math></p>
+<p>exists and is finite for almost all
+<math role="math" aria-label="s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+(with respect to Lebesgue measure). Hint: Estimate, for each
+<math role="math" aria-label="A&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A&gt;0</annotation></semantics></math>,</p>
+<p><math role="math" aria-label="\int_{[-A, A]} \int_{\mathbb{R}}|s-t|^{-\frac{1}{2}} d \mu(t) d s" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mrow><mo stretchy="false" form="prefix">[</mo><mi>−</mi><mi>A</mi><mo>,</mo><mi>A</mi><mo stretchy="false" form="postfix">]</mo></mrow></msub><msub><mo>&int;</mo><mi>&Ropf;</mi></msub><mo stretchy="false" form="prefix">|</mo><mi>s</mi><mo>−</mo><mi>t</mi><msup><mo stretchy="false" form="prefix">|</mo><mrow><mi>−</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup><mi>d</mi><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">\int_{[-A, A]} \int_{\mathbb{R}}|s-t|^{-\frac{1}{2}} d \mu(t) d s</annotation></semantics></math></p>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Complex Analysis General Exam January 1993 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Complex Analysis General Exam January 1993</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered"
+id="complex-analysis-general-exam-january-1993">Complex Analysis General
+Exam January 1993 </h2>
+<h2 class="unnumbered" id="name-4">Name:</h2>
+<ol>
+<li><p>Let
+<math role="math" aria-label="f(x)=z \sin \frac{1}{z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>z</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mfrac><mn>1</mn><mi>z</mi></mfrac></mrow><annotation encoding="application/x-tex">f(x)=z \sin \frac{1}{z}</annotation></semantics></math>
+for all nonzero complex numbers
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>.<br />
+(a) Locate all zeros of
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+and determine their orders.<br />
+(b) Examine the isolated singularities of
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+at 0 and
+<math role="math" aria-label="\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&infin;</mi><annotation encoding="application/x-tex">\infty</annotation></semantics></math>.
+Determine their nature, that is, are they poles, essential, or
+removable? If removable, say how to define the function at that point to
+make it analytic.</p></li>
+<li><p>Find all entire functions
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+such that the inequality</p></li>
+</ol>
+<p><math role="math" aria-label="|f(z)| \leq c\left(1+|z|^{2}\right)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mi>c</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">|f(z)| \leq c\left(1+|z|^{2}\right)</annotation></semantics></math></p>
+<p>is satisfied for all complex
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+and some constant
+<math role="math" aria-label="c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.<br />
+3. For what complex-valued measurable functions
+<math role="math" aria-label="g(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(x)</annotation></semantics></math>
+on
+<math role="math" aria-label="[0, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[0, \infty)</annotation></semantics></math>
+does the inequality</p>
+<p><math role="math" aria-label="\left|\int_{0}^{\infty} g(x) u(x) d x\right|^{2} \leq \int_{0}^{\infty} x^{2}|u(x)|^{2} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">|</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>u</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mo>&le;</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">|</mo><mi>u</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\left|\int_{0}^{\infty} g(x) u(x) d x\right|^{2} \leq \int_{0}^{\infty} x^{2}|u(x)|^{2} d x</annotation></semantics></math></p>
+<p>hold for all continuous, complex-valued functions
+<math role="math" aria-label="u(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">u(x)</annotation></semantics></math>
+with compact support on (
+<math role="math" aria-label="0, \infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">0, \infty</annotation></semantics></math>
+).<br />
+4. For
+<math role="math" aria-label="t \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">t \in R</annotation></semantics></math>
+define the fractional linear transformation</p>
+<p><math role="math" aria-label="f_{t}(z)=\frac{z+\tanh \frac{\pi t}{4}}{1+z \tanh \frac{\pi t}{4}}, \quad z \in C" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mi>z</mi><mo>+</mo><mrow><mi mathvariant="normal">tanh</mi><mo>&#8289;</mo></mrow><mfrac><mrow><mi>&pi;</mi><mi>t</mi></mrow><mn>4</mn></mfrac></mrow><mrow><mn>1</mn><mo>+</mo><mi>z</mi><mrow><mi mathvariant="normal">tanh</mi><mo>&#8289;</mo></mrow><mfrac><mrow><mi>&pi;</mi><mi>t</mi></mrow><mn>4</mn></mfrac></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>z</mi><mo>&isin;</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">f_{t}(z)=\frac{z+\tanh \frac{\pi t}{4}}{1+z \tanh \frac{\pi t}{4}}, \quad z \in C</annotation></semantics></math></p>
+<p>(i) Show that
+<math role="math" aria-label="f_{t}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>t</mi></msub><annotation encoding="application/x-tex">f_{t}</annotation></semantics></math>
+maps the unit disk
+<math role="math" aria-label="|z|&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|&lt;1</annotation></semantics></math>
+onto itself.<br />
+(ii) Show that if
+<math role="math" aria-label="t_{1}, t_{2} \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>,</mo><msub><mi>t</mi><mn>2</mn></msub><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">t_{1}, t_{2} \in R</annotation></semantics></math>,
+then</p>
+<p><math role="math" aria-label="f_{t_{1}}\left(f_{t_{2}}(z)\right)=f_{t_{1}+t_{2}}(z)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><msub><mi>t</mi><mn>1</mn></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><msub><mi>t</mi><mn>2</mn></msub></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>f</mi><mrow><msub><mi>t</mi><mn>1</mn></msub><mo>+</mo><msub><mi>t</mi><mn>2</mn></msub></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{t_{1}}\left(f_{t_{2}}(z)\right)=f_{t_{1}+t_{2}}(z)</annotation></semantics></math></p>
+<p>(iii) Show that</p>
+<p><math role="math" aria-label="g(z)=\frac{2}{\pi} \log \frac{1+z}{1-z}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>2</mn><mi>&pi;</mi></mfrac><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mfrac><mrow><mn>1</mn><mo>+</mo><mi>z</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>z</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">g(z)=\frac{2}{\pi} \log \frac{1+z}{1-z}</annotation></semantics></math></p>
+<p>maps the disk
+<math role="math" aria-label="|z|&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|&lt;1</annotation></semantics></math>
+one-to-one onto the strip
+<math role="math" aria-label="|\operatorname{Im} w|&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mi>w</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|\operatorname{Im} w|&lt;1</annotation></semantics></math>,
+and that</p>
+<p><math role="math" aria-label="g\left(f_{t}(z)\right)=g(z)+t, \quad|z|&lt;1, t \in R ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mi>t</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>t</mi><mo>,</mo><mspace width="1.0em"></mspace><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo>,</mo><mi>t</mi><mo>&isin;</mo><mi>R</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">g\left(f_{t}(z)\right)=g(z)+t, \quad|z|&lt;1, t \in R .</annotation></semantics></math></p>
+<ol start="5">
+<li><p>Show that an analytic branch of</p></li>
+</ol>
+<p><math role="math" aria-label="f(z)=\log \frac{z+1}{z-1}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mfrac><mrow><mi>z</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>z</mi><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(z)=\log \frac{z+1}{z-1}</annotation></semantics></math></p>
+<p>can be defined on
+<math role="math" aria-label="|z|&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|&gt;1</annotation></semantics></math>,
+and find its Laurent expansion.<br />
+6. Evaluate</p>
+<p><math role="math" aria-label="\int_{0}^{\infty} \frac{\log x}{1+x^{2}} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty} \frac{\log x}{1+x^{2}} d x</annotation></semantics></math></p>
+<p>by the method of contour integration.<br />
+7. Let
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+and
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+be integers,
+<math role="math" aria-label="k \geq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&ge;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k \geq 2</annotation></semantics></math>,
+and
+<math role="math" aria-label="0 \leq m \leq k-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&le;</mo><mi>m</mi><mo>&le;</mo><mi>k</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0 \leq m \leq k-1</annotation></semantics></math>.
+Show that there exist constants
+<math role="math" aria-label="a_{0}, \ldots, a_{k-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>0</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">a_{0}, \ldots, a_{k-1}</annotation></semantics></math>
+such that</p>
+<p><math role="math" aria-label="\frac{z^{m}}{z^{k}-1}=\sum_{j=0}^{m-1} \frac{a_{j}}{z-e^{2 \pi i j / k}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><msup><mi>z</mi><mi>m</mi></msup><mrow><msup><mi>z</mi><mi>k</mi></msup><mo>−</mo><mn>1</mn></mrow></mfrac><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>j</mi><mo>=</mo><mn>0</mn></mrow><mrow><mi>m</mi><mo>−</mo><mn>1</mn></mrow></munderover><mfrac><msub><mi>a</mi><mi>j</mi></msub><mrow><mi>z</mi><mo>−</mo><msup><mi>e</mi><mrow><mn>2</mn><mi>&pi;</mi><mi>i</mi><mi>j</mi><mi>/</mi><mi>k</mi></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{z^{m}}{z^{k}-1}=\sum_{j=0}^{m-1} \frac{a_{j}}{z-e^{2 \pi i j / k}}</annotation></semantics></math></p>
+<p>Then find formulas for these constants.</p>
+
+</main>
+</body>
+</html>

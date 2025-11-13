@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Real Analysis, May 1990 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Real Analysis, May 1990</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="real-analysis-may-1990">Real Analysis, May
+1990</h2>
+<ol>
+<li><p>Let
+<math role="math" aria-label="\left\{r_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>r</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{r_{n}\right\}</annotation></semantics></math>
+be an enumeration of the rationals in
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>,
+and let</p></li>
+</ol>
+<p><math role="math" aria-label="f(x)=\sum_{n=0}^{\infty} \frac{1}{2^{n}\left|x-r_{n}\right|^{\frac{1}{2}}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">&infin;</mo></munderover><mfrac><mn>1</mn><mrow><msup><mn>2</mn><mi>n</mi></msup><msup><mrow><mo stretchy="true" form="prefix">|</mo><mi>x</mi><mo>−</mo><msub><mi>r</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mfrac><mn>1</mn><mn>2</mn></mfrac></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(x)=\sum_{n=0}^{\infty} \frac{1}{2^{n}\left|x-r_{n}\right|^{\frac{1}{2}}}</annotation></semantics></math></p>
+<p>Show that<br />
+(a)
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is measurable;<br />
+(b) the series converges to an
+<math role="math" aria-label="L^{1}([0,1], d x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>1</mn></msup><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo><mo>,</mo><mi>d</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{1}([0,1], d x)</annotation></semantics></math>-function;<br />
+(c) the series converges pointwise a.e.<br />
+2. (a) Let
+<math role="math" aria-label="\mathcal{B}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+be a Banach space,
+<math role="math" aria-label="\lambda" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&lambda;</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+a bounded linear functional on
+<math role="math" aria-label="\mathcal{B}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>.
+Show that ker
+<math role="math" aria-label="\lambda \equiv\{x \in \mathcal{B} \mid \lambda(x)=0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>&equiv;</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>&isin;</mo><mi>ℬ</mi><mo>∣</mo><mi>&lambda;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\lambda \equiv\{x \in \mathcal{B} \mid \lambda(x)=0\}</annotation></semantics></math>
+is a closed linear subspace of
+<math role="math" aria-label="\mathcal{B}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>.<br />
+(b) For what values of
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is
+<math role="math" aria-label="\lambda" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&lambda;</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+a bounded linear functional on
+<math role="math" aria-label="L^{p}(\mathbb{R}, d x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mi>p</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo>,</mo><mi>d</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{p}(\mathbb{R}, d x)</annotation></semantics></math>,
+where</p>
+<p><math role="math" aria-label="\lambda(f)=\int_{0}^{1} \frac{f(x)}{x^{\frac{1}{2}}} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mfrac><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><msup><mi>x</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></msup></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\lambda(f)=\int_{0}^{1} \frac{f(x)}{x^{\frac{1}{2}}} d x</annotation></semantics></math></p>
+<ol start="3">
+<li><p>Suppose
+<math role="math" aria-label="f, g \in L^{2}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>g</mi><mo>&isin;</mo><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f, g \in L^{2}(\mathbb{R})</annotation></semantics></math>.
+Show that</p></li>
+</ol>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} \int_{-\infty}^{\infty} f(x+n) g(x) d x=0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} \int_{-\infty}^{\infty} f(x+n) g(x) d x=0</annotation></semantics></math></p>
+<ol start="4">
+<li><p>Let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be absolutely continuous with
+<math role="math" aria-label="\frac{d f}{d x}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>d</mi><mi>f</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{d f}{d x}</annotation></semantics></math>
+in
+<math role="math" aria-label="L^{2}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}(\mathbb{R})</annotation></semantics></math>.
+Prove that there exist constants
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>,
+<math role="math" aria-label="\alpha \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\alpha \geq 0</annotation></semantics></math>,
+such that</p></li>
+</ol>
+<p><math role="math" aria-label="|f(x)-f(y)| \leq L|x-y|^{\alpha}, x, y \in \mathbb{R} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mi>L</mi><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo>−</mo><mi>y</mi><msup><mo stretchy="false" form="prefix">|</mo><mi>&alpha;</mi></msup><mo>,</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>&isin;</mo><mi>&Ropf;</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">|f(x)-f(y)| \leq L|x-y|^{\alpha}, x, y \in \mathbb{R} .</annotation></semantics></math></p>
+<ol start="5">
+<li><p>(a) Explicitly sum the series</p></li>
+</ol>
+<p><math role="math" aria-label="\sum_{n=0}^{\infty} \frac{e^{i n x}}{2^{n}} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">&infin;</mo></munderover><mfrac><msup><mi>e</mi><mrow><mi>i</mi><mi>n</mi><mi>x</mi></mrow></msup><msup><mn>2</mn><mi>n</mi></msup></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty} \frac{e^{i n x}}{2^{n}} .</annotation></semantics></math></p>
+<p>(b) Using Parseval, compute the integral</p>
+<p><math role="math" aria-label="\int_{0}^{2 \pi} \frac{\cos (1990 x) d x}{2-e^{i x}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mrow><mn>2</mn><mi>&pi;</mi></mrow></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>1990</mn><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><mrow><mn>2</mn><mo>−</mo><msup><mi>e</mi><mrow><mi>i</mi><mi>x</mi></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\int_{0}^{2 \pi} \frac{\cos (1990 x) d x}{2-e^{i x}}</annotation></semantics></math></p>
+
+</main>
+</body>
+</html>

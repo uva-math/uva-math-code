@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Real Analysis, September 1978 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Real Analysis, September 1978</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="real-analysis-september-1978">Real Analysis,
+September 1978</h2>
+<ol>
+<li><p>(a) State the Mean Value Theorem.<br />
+(b) Let
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+be differentiable for
+<math role="math" aria-label="x&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x&gt;0</annotation></semantics></math>.
+Prove that if</p></li>
+</ol>
+<p><math role="math" aria-label="\lim _{x \rightarrow \infty} f^{\prime}(x)=0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>x</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim _{x \rightarrow \infty} f^{\prime}(x)=0</annotation></semantics></math></p>
+<p>then</p>
+<p><math role="math" aria-label="\lim _{x \rightarrow \infty}[f(x+1)-f(x)]=0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>x</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><mo stretchy="false" form="prefix">[</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim _{x \rightarrow \infty}[f(x+1)-f(x)]=0</annotation></semantics></math></p>
+<ol start="2">
+<li><p>Let
+<math role="math" aria-label="f_{n}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{n}(x)</annotation></semantics></math>
+be a sequence of increasing functions on
+<math role="math" aria-label="0 \leq x \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&le;</mo><mi>x</mi><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0 \leq x \leq 1</annotation></semantics></math>
+which converges pointwise to a function
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>.
+Prove that if
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is continuous, then
+<math role="math" aria-label="f_{n}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{n}(x)</annotation></semantics></math>
+converges uniformly to
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>.</p></li>
+<li><p>For
+<math role="math" aria-label="\alpha&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\alpha&gt;0</annotation></semantics></math>
+and
+<math role="math" aria-label="\beta&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&beta;</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\beta&gt;0</annotation></semantics></math>,
+let</p></li>
+</ol>
+<p><math role="math" aria-label="f(x) \begin{cases}x^{\alpha} \sin \left(\frac{1}{x^{\beta}}\right) &amp; x \neq 0 \\ 0 &amp; x=0\end{cases}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><msup><mi>x</mi><mi>&alpha;</mi></msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><msup><mi>x</mi><mi>&beta;</mi></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left"><mi>x</mi><mo>&ne;</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mn>0</mn></mtd><mtd columnalign="left" style="text-align: left"><mi>x</mi><mo>=</mo><mn>0</mn></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">f(x) \begin{cases}x^{\alpha} \sin \left(\frac{1}{x^{\beta}}\right) &amp; x \neq 0 \\ 0 &amp; x=0\end{cases}</annotation></semantics></math></p>
+<p>(a) For what values of
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+and
+<math role="math" aria-label="\beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&beta;</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+is
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+continuous?<br />
+(b) For what values of
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+and
+<math role="math" aria-label="\beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&beta;</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+is
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+of bounded variation on
+<math role="math" aria-label="-1 \leq x \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn><mo>&le;</mo><mi>x</mi><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">-1 \leq x \leq 1</annotation></semantics></math>
+?<br />
+4. Assume that
+<math role="math" aria-label="f(x) \in L_{p}[0, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msub><mi>L</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x) \in L_{p}[0, \infty)</annotation></semantics></math>
+for some
+<math role="math" aria-label="p, 1 \leq p&lt;\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mn>1</mn><mo>&le;</mo><mi>p</mi><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">p, 1 \leq p&lt;\infty</annotation></semantics></math>,
+and that
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is uniformly continuous on
+<math role="math" aria-label="[0, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[0, \infty)</annotation></semantics></math>.
+Prove that</p>
+<p><math role="math" aria-label="\lim _{x \rightarrow \infty} f(x)=0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>x</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim _{x \rightarrow \infty} f(x)=0</annotation></semantics></math></p>
+<ol start="5">
+<li><p>Let
+<math role="math" aria-label="K(x, y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K(x, y)</annotation></semantics></math>
+be a measurable function on the square
+<math role="math" aria-label="0 \leq x, y \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&le;</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0 \leq x, y \leq 1</annotation></semantics></math>
+satisfying</p></li>
+</ol>
+<p><math role="math" aria-label="\int_{0}^{1} \int_{0}^{1}|K(x, y)|^{2} d x d y&lt;\infty" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mo stretchy="false" form="prefix">|</mo><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup><mi>d</mi><mi>x</mi><mi>d</mi><mi>y</mi><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{1} \int_{0}^{1}|K(x, y)|^{2} d x d y&lt;\infty</annotation></semantics></math></p>
+<p>Prove that if
+<math role="math" aria-label="f \in L_{2}[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msub><mi>L</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f \in L_{2}[0,1]</annotation></semantics></math>,
+then the integral</p>
+<p><math role="math" aria-label="g(x)=\int_{0}^{1} K(x, y) f(y) d y" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">g(x)=\int_{0}^{1} K(x, y) f(y) d y</annotation></semantics></math></p>
+<p>converges for a.e.
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and that
+<math role="math" aria-label="g \in L_{2}[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&isin;</mo><msub><mi>L</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">g \in L_{2}[0,1]</annotation></semantics></math>.<br />
+6. Let
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+and
+<math role="math" aria-label="\nu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&nu;</mi><annotation encoding="application/x-tex">\nu</annotation></semantics></math>
+be finite Borel measures on
+<math role="math" aria-label="[0, \infty]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0, \infty]</annotation></semantics></math>.<br />
+(a) Prove that there is a unique finite Borel measure on
+<math role="math" aria-label="[0, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[0, \infty)</annotation></semantics></math>
+such that for every bounded continuous function
+<math role="math" aria-label="\phi(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\phi(x)</annotation></semantics></math>,</p>
+<p><math role="math" aria-label="\int_{0}^{\infty} \phi(x) d \lambda(x)=\int_{0}^{\infty} \int_{0}^{\infty} \phi(x y) d \mu(x) d \nu(x)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>&lambda;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>&nu;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty} \phi(x) d \lambda(x)=\int_{0}^{\infty} \int_{0}^{\infty} \phi(x y) d \mu(x) d \nu(x)</annotation></semantics></math></p>
+<p>(b) If
+<math role="math" aria-label="d \mu(x)=h(x) d x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>h</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">d \mu(x)=h(x) d x</annotation></semantics></math>
+is absolutely continuous (with respect to Lebesgue measure), prove that
+<math role="math" aria-label="\lambda" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&lambda;</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+is also absolutely continuous, and compute its Radon-Nikodym
+derivative.<br />
+7. State Egorov’s Theorem. Give a counter-example on an infinite measure
+space.<br />
+8. (a) Suppose
+<math role="math" aria-label="f, g \in L_{1}(-\infty, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>g</mi><mo>&isin;</mo><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>&infin;</mi><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f, g \in L_{1}(-\infty, \infty)</annotation></semantics></math>.
+Prove that</p>
+<p><math role="math" aria-label="h(x)=\int_{-\infty}^{\infty} f(x+t) g(t) d t" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">h(x)=\int_{-\infty}^{\infty} f(x+t) g(t) d t</annotation></semantics></math></p>
+<p>exists for almost all real
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and defines a function in
+<math role="math" aria-label="L_{1}(-\infty, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>&infin;</mi><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L_{1}(-\infty, \infty)</annotation></semantics></math>.<br />
+(b) Suppose
+<math role="math" aria-label="g \in L_{1}(-1,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&isin;</mo><msub><mi>L</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g \in L_{1}(-1,1)</annotation></semantics></math>
+and</p>
+<p><math role="math" aria-label="\int_{-1}^{1} x^{n} g(x) d x=0 \text { for } n=0,1, \ldots" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mn>1</mn></mrow><mn>1</mn></msubsup><msup><mi>x</mi><mi>n</mi></msup><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for </mtext><mspace width="0.333em"></mspace></mrow><mi>n</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">\int_{-1}^{1} x^{n} g(x) d x=0 \text { for } n=0,1, \ldots</annotation></semantics></math></p>
+<p>Prove
+<math role="math" aria-label="g=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g=0</annotation></semantics></math>
+a.e.</p>
+
+</main>
+</body>
+</html>

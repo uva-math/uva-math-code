@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Real Analysis, January 1979 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Real Analysis, January 1979</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="real-analysis-january-1979">Real Analysis,
+January 1979</h2>
+<ol>
+<li><p>Find the maximum of the expression</p></li>
+</ol>
+<p><math role="math" aria-label="\frac{x-\frac{y}{2}+\frac{z}{3}}{x^{4}+y^{4}+z^{4}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>x</mi><mo>−</mo><mfrac><mi>y</mi><mn>2</mn></mfrac><mo>+</mo><mfrac><mi>z</mi><mn>3</mn></mfrac></mrow><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>4</mn></msup><mo>+</mo><msup><mi>z</mi><mn>4</mn></msup></mrow></mfrac><annotation encoding="application/x-tex">\frac{x-\frac{y}{2}+\frac{z}{3}}{x^{4}+y^{4}+z^{4}}</annotation></semantics></math></p>
+<p>over the region
+<math role="math" aria-label="x^{4}+y^{4}+z^{4} \geq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>y</mi><mn>4</mn></msup><mo>+</mo><msup><mi>z</mi><mn>4</mn></msup><mo>&ge;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{4}+y^{4}+z^{4} \geq 1</annotation></semantics></math>.<br />
+2. Let
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+be a function of bounded variation on
+<math role="math" aria-label="(-\infty, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>&infin;</mi><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(-\infty, \infty)</annotation></semantics></math>.
+Suppose that
+<math role="math" aria-label="F(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F(x)</annotation></semantics></math>
+has compact support and that each continuously differential function
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+satisfies</p>
+<p><math role="math" aria-label="\int_{-\infty}^{\infty} F(x) f^{\prime}(x) d x=0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} F(x) f^{\prime}(x) d x=0</annotation></semantics></math></p>
+<p>Show that
+<math role="math" aria-label="F(x)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">F(x)=0</annotation></semantics></math>.<br />
+3. Suppose that
+<math role="math" aria-label="\left\{f_{n}(x)\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{f_{n}(x)\right\}</annotation></semantics></math>
+is a sequence of measurable functions on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+for which</p>
+<p><math role="math" aria-label="f(x)=\lim _{n \rightarrow \infty} f_{n}(x) \text { exists a.e. }" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> exists a.e. </mtext><mspace width="0.333em"></mspace></mrow></mrow><annotation encoding="application/x-tex">f(x)=\lim _{n \rightarrow \infty} f_{n}(x) \text { exists a.e. }</annotation></semantics></math></p>
+<p>Suppose that</p>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} \int_{0}^{1}\left|f_{n}(x)-f(x)\right| d x=0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mi>d</mi><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} \int_{0}^{1}\left|f_{n}(x)-f(x)\right| d x=0</annotation></semantics></math></p>
+<p>and that</p>
+<p><math role="math" aria-label="\sup _{n} \int_{0}^{1}\left|f_{n}(x)\right|^{2} d x&lt;\infty" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">sup</mi><mi>n</mi></munder><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><msup><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">\sup _{n} \int_{0}^{1}\left|f_{n}(x)\right|^{2} d x&lt;\infty</annotation></semantics></math></p>
+<p>Show that
+<math role="math" aria-label="\int_{0}^{1}|f(x)|^{2} d x&lt;\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup><mi>d</mi><mi>x</mi><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{1}|f(x)|^{2} d x&lt;\infty</annotation></semantics></math>.
+Does it follow that
+<math role="math" aria-label="\lim _{n \rightarrow \infty} \int_{0}^{1}\left|f_{n}(x)-f(x)\right|^{2} d x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><msup><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} \int_{0}^{1}\left|f_{n}(x)-f(x)\right|^{2} d x</annotation></semantics></math>.
+(Prove or give a counter-example.)<br />
+4. Let
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+be measurable on
+<math role="math" aria-label="(-\infty,+\infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>&infin;</mi><mo>,</mo><mi>+</mi><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(-\infty,+\infty)</annotation></semantics></math>
+and satisfy</p>
+<p><math role="math" aria-label="\int_{-\infty}^{\infty}|f(x)|^{2} d x&lt;\infty" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><msup><mo stretchy="false" form="prefix">|</mo><mn>2</mn></msup><mi>d</mi><mi>x</mi><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty}|f(x)|^{2} d x&lt;\infty</annotation></semantics></math></p>
+<p>Show that for each
+<math role="math" aria-label="h" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>h</mi><annotation encoding="application/x-tex">h</annotation></semantics></math>
+the integral</p>
+<p><math role="math" aria-label="\int_{-\infty}^{\infty} f(x) f(x+h) d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} f(x) f(x+h) d x</annotation></semantics></math></p>
+<p>converges absolutely. Define</p>
+<p><math role="math" aria-label="g(h) \equiv \int_{-\infty}^{\infty} f(x) f(x+h) d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>&equiv;</mo><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">g(h) \equiv \int_{-\infty}^{\infty} f(x) f(x+h) d x</annotation></semantics></math></p>
+<p>and show that
+<math role="math" aria-label="g(h)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(h)</annotation></semantics></math>
+is continuous and that</p>
+<p><math role="math" aria-label="\lim _{|h| \rightarrow \infty} g(h)=0 ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mo stretchy="false" form="prefix">|</mo><mi>h</mi><mo stretchy="false" form="prefix">|</mo><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\lim _{|h| \rightarrow \infty} g(h)=0 .</annotation></semantics></math></p>
+<ol start="5">
+<li><p>Let
+<math role="math" aria-label="f(\lambda, x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(\lambda, x)</annotation></semantics></math>
+be a continuous function of two variables,
+<math role="math" aria-label="0&lt;\lambda&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>&lambda;</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\lambda&lt;1</annotation></semantics></math>
+and
+<math role="math" aria-label="0&lt;x&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;x&lt;1</annotation></semantics></math>.
+Suppose that
+<math role="math" aria-label="\frac{\partial f}{\partial \lambda}(\lambda, x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>&part;</mi><mi>f</mi></mrow><mrow><mi>&part;</mi><mi>&lambda;</mi></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\frac{\partial f}{\partial \lambda}(\lambda, x)</annotation></semantics></math>
+exists for all
+<math role="math" aria-label="\lambda" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&lambda;</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+and
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and that</p></li>
+</ol>
+<p><math role="math" aria-label="h(x)=\sup _{0&lt;\lambda&lt;1}\left|\frac{\partial f}{\partial \lambda}(\lambda, x)\right|" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munder><mi mathvariant="normal">sup</mi><mrow><mn>0</mn><mo>&lt;</mo><mi>&lambda;</mi><mo>&lt;</mo><mn>1</mn></mrow></munder><mrow><mo stretchy="true" form="prefix">|</mo><mfrac><mrow><mi>&part;</mi><mi>f</mi></mrow><mrow><mi>&part;</mi><mi>&lambda;</mi></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">h(x)=\sup _{0&lt;\lambda&lt;1}\left|\frac{\partial f}{\partial \lambda}(\lambda, x)\right|</annotation></semantics></math></p>
+<p>satisfies
+<math role="math" aria-label="\int_{0}^{1} h(x) d x&lt;\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mi>h</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{1} h(x) d x&lt;\infty</annotation></semantics></math>.<br />
+Show that the function
+<math role="math" aria-label="F(\lambda) \equiv \int_{0}^{1} f(\lambda, x) d x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo><mo>&equiv;</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">F(\lambda) \equiv \int_{0}^{1} f(\lambda, x) d x</annotation></semantics></math>
+is differentiable and satisfies</p>
+<p><math role="math" aria-label="F^{\prime}(\lambda)=\int_{0}^{1} \frac{\partial f}{\partial \lambda}(\lambda, x) d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>F</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mfrac><mrow><mi>&part;</mi><mi>f</mi></mrow><mrow><mi>&part;</mi><mi>&lambda;</mi></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">F^{\prime}(\lambda)=\int_{0}^{1} \frac{\partial f}{\partial \lambda}(\lambda, x) d x</annotation></semantics></math></p>
+<ol start="6">
+<li><p>Show that a convex function defined on an open interval is
+continuous.</p></li>
+<li><p>Does there exist a nowhere dense set of positive Lebesgue measure
+in
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+? Prove or give an example.</p></li>
+</ol>
+
+</main>
+</body>
+</html>

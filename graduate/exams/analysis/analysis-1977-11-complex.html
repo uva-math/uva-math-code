@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Complex Analysis, November 1977 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Complex Analysis, November 1977</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="complex-analysis-november-1977">Complex
+Analysis, November 1977</h2>
+<ol>
+<li><p>Identify and classify the singularities of the function
+<math role="math" aria-label="z \csc \left(z^{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mrow><mi mathvariant="normal">csc</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>z</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">z \csc \left(z^{2}\right)</annotation></semantics></math>.</p></li>
+<li><p>Let
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+be non-constant and meromorphic on
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>.
+Assume that</p></li>
+</ol>
+<p><math role="math" aria-label="f(z)=f(z+1)=f(z+i)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo>+</mo><mi>i</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)=f(z+1)=f(z+i)</annotation></semantics></math></p>
+<p>for all
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+has at least one pole in the rectangle</p>
+<p><math role="math" aria-label="\{z: Z=x+i y \text { where } 0 \leq x \leq 1 \text { and } 0 \leq y \leq 1\} \text {. }" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mi>Z</mi><mo>=</mo><mi>x</mi><mo>+</mo><mi>i</mi><mi>y</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> where </mtext><mspace width="0.333em"></mspace></mrow><mn>0</mn><mo>&le;</mo><mi>x</mi><mo>&le;</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> and </mtext><mspace width="0.333em"></mspace></mrow><mn>0</mn><mo>&le;</mo><mi>y</mi><mo>&le;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo><mrow><mtext mathvariant="normal">. </mtext><mspace width="0.333em"></mspace></mrow></mrow><annotation encoding="application/x-tex">\{z: Z=x+i y \text { where } 0 \leq x \leq 1 \text { and } 0 \leq y \leq 1\} \text {. }</annotation></semantics></math></p>
+<ol start="3">
+<li><p>Evaluate the integral</p></li>
+</ol>
+<p><math role="math" aria-label="\int_{-\infty}^{\infty} \frac{\cos x}{1+x^{2}} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \frac{\cos x}{1+x^{2}} d x</annotation></semantics></math></p>
+<p>using the methods of complex analysis.<br />
+4. Assume that
+<math role="math" aria-label="p(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p(z)</annotation></semantics></math>
+is a polynomial such that
+<math role="math" aria-label="p\left(e^{i \theta}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mrow><mi>i</mi><mi>&theta;</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p\left(e^{i \theta}\right)</annotation></semantics></math>
+is real-valued for all real values of
+<math role="math" aria-label="\theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&theta;</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>.
+Use the methods of complex analysis to show that
+<math role="math" aria-label="p(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p(z)</annotation></semantics></math>
+is identically equal to a constant.<br />
+5. Prove the theorem which asserts that if
+<math role="math" aria-label="\left\{f_{n}\right\}_{1}^{\infty}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><mn>1</mn><mi>&infin;</mi></msubsup><annotation encoding="application/x-tex">\left\{f_{n}\right\}_{1}^{\infty}</annotation></semantics></math>
+is a sequence of functions analytic in the disk
+<math role="math" aria-label="D=\{z:|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">D=\{z:|z|&lt;1\}</annotation></semantics></math>
+such that
+<math role="math" aria-label="\left|f_{n}(z)\right|&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\left|f_{n}(z)\right|&gt;0</annotation></semantics></math>
+for all
+<math role="math" aria-label="n=1,2,3, \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">n=1,2,3, \ldots</annotation></semantics></math>
+and all
+<math role="math" aria-label="z \in D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">z \in D</annotation></semantics></math>,
+and if
+<math role="math" aria-label="\lim _{n \rightarrow \infty} f_{n}=f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} f_{n}=f</annotation></semantics></math>
+uniformly on all compact subsets of
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>,
+then either
+<math role="math" aria-label="f(x) \equiv 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&equiv;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(x) \equiv 0</annotation></semantics></math>
+or
+<math role="math" aria-label="|f(z)|&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">|f(z)|&gt;0</annotation></semantics></math>
+for all
+<math role="math" aria-label="z \in D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">z \in D</annotation></semantics></math>.</p>
+
+</main>
+</body>
+</html>

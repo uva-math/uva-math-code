@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>General Exam: Complex Analysis, Fall 1998 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">General Exam: Complex Analysis, Fall 1998</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered"
+id="general-exam-complex-analysis-fall-1998">General Exam: Complex
+Analysis, Fall 1998</h2>
+<ol>
+<li><p>Suppose
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is analytic in a domain
+<math role="math" aria-label="\Omega \supset\{z:|z| \leq 1\}, f(0)=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Omega;</mi><mo>&sup;</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo><mo>,</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\Omega \supset\{z:|z| \leq 1\}, f(0)=1</annotation></semantics></math>,
+and
+<math role="math" aria-label="|f(z)|&gt;2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">|f(z)|&gt;2</annotation></semantics></math>
+if
+<math role="math" aria-label="|z|=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|=1</annotation></semantics></math>.
+Must
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+have a zero in the unit disk? Prove or give a counterexample.</p></li>
+<li><p>If
+<math role="math" aria-label="a&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a&gt;1</annotation></semantics></math>
+show that
+<math role="math" aria-label="z+e^{-z}=a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>+</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>z</mi></mrow></msup><mo>=</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">z+e^{-z}=a</annotation></semantics></math>
+has one and only one solution with positive real part.</p></li>
+<li><p>The function</p></li>
+</ol>
+<p><math role="math" aria-label="\frac{1}{1-z^{2}}+\frac{1}{z-2}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mi>z</mi><mo>−</mo><mn>2</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{1-z^{2}}+\frac{1}{z-2}</annotation></semantics></math></p>
+<p>is to be expanded in a series of the form
+<math role="math" aria-label="\sum_{n=-\infty}^{\infty} c_{n} z^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><msub><mi>c</mi><mi>n</mi></msub><msup><mi>z</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\sum_{n=-\infty}^{\infty} c_{n} z^{n}</annotation></semantics></math>.
+How many such expansions are there? In what region is each valid? Find
+the coefficients
+<math role="math" aria-label="c_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mi>n</mi></msub><annotation encoding="application/x-tex">c_{n}</annotation></semantics></math>
+for each.<br />
+4. Let
+<math role="math" aria-label="f, f_{1}, f_{2}, \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><msub><mi>f</mi><mn>1</mn></msub><mo>,</mo><msub><mi>f</mi><mn>2</mn></msub><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">f, f_{1}, f_{2}, \ldots</annotation></semantics></math>
+be holomorphic functions which are defined on the unit disk
+<math role="math" aria-label="\mathbf{D}=\{z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Dopf;</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">\mathbf{D}=\{z</annotation></semantics></math>
+:
+<math role="math" aria-label="|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">|z|&lt;1\}</annotation></semantics></math>.
+Assume that</p>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} f_{n}(z)=f(z)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} f_{n}(z)=f(z)</annotation></semantics></math></p>
+<p>uniformly on all compact subsets of
+<math role="math" aria-label="\mathbf{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Dopf;</mi><annotation encoding="application/x-tex">\mathbf{D}</annotation></semantics></math>.
+Prove that</p>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} f_{n}^{\prime}(z)=f^{\prime}(z)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mi>f</mi><mi>n</mi><mi>′</mi></msubsup><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} f_{n}^{\prime}(z)=f^{\prime}(z)</annotation></semantics></math></p>
+<p>uniformly on all compact subsets of
+<math role="math" aria-label="\mathbf{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Dopf;</mi><annotation encoding="application/x-tex">\mathbf{D}</annotation></semantics></math>.<br />
+5. If
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is an analytic function on the unit disk
+<math role="math" aria-label="\mathbf{D}=\{z:|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Dopf;</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbf{D}=\{z:|z|&lt;1\}</annotation></semantics></math>
+which maps
+<math role="math" aria-label="\mathbf{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Dopf;</mi><annotation encoding="application/x-tex">\mathbf{D}</annotation></semantics></math>
+one-to-one and onto a domain
+<math role="math" aria-label="\Omega \supset \mathbf{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Omega;</mi><mo>&sup;</mo><mi>&Dopf;</mi></mrow><annotation encoding="application/x-tex">\Omega \supset \mathbf{D}</annotation></semantics></math>
+with
+<math role="math" aria-label="f(0)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(0)=0</annotation></semantics></math>,
+show
+<math role="math" aria-label="\left|f^{\prime}(0)\right| \geq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>&ge;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\left|f^{\prime}(0)\right| \geq 1</annotation></semantics></math>.
+When does
+<math role="math" aria-label="\left|f^{\prime}(0)\right|=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\left|f^{\prime}(0)\right|=1</annotation></semantics></math>
+? Hint: If
+<math role="math" aria-label="\phi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+is the inverse function, apply the maximum principle to
+<math role="math" aria-label="\phi(z) / z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">\phi(z) / z</annotation></semantics></math>.<br />
+6. Compute the integral</p>
+<p><math role="math" aria-label="\int_{-\infty}^{\infty} \frac{e^{a t}}{1+e^{t}} d t" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mfrac><msup><mi>e</mi><mrow><mi>a</mi><mi>t</mi></mrow></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mi>t</mi></msup></mrow></mfrac><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \frac{e^{a t}}{1+e^{t}} d t</annotation></semantics></math></p>
+<p>in closed form for
+<math role="math" aria-label="0&lt;a&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;a&lt;1</annotation></semantics></math>.
+Hint: the rectangle
+<math role="math" aria-label="[R, R+2 i \pi,-R+2 i \pi,-R]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>R</mi><mo>,</mo><mi>R</mi><mo>+</mo><mn>2</mn><mi>i</mi><mi>&pi;</mi><mo>,</mo><mi>−</mi><mi>R</mi><mo>+</mo><mn>2</mn><mi>i</mi><mi>&pi;</mi><mo>,</mo><mi>−</mi><mi>R</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[R, R+2 i \pi,-R+2 i \pi,-R]</annotation></semantics></math>
+might be useful.</p>
+<p>Work all problems. Give your arguments in adequate detail.</p>
+<ol>
+<li><p>Let
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+be any complex number. Show that the functions defined by the
+series</p></li>
+</ol>
+<p><math role="math" aria-label="1+a z+a^{2} z^{2}+\cdots" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>a</mi><mi>z</mi><mo>+</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>z</mi><mn>2</mn></msup><mo>+</mo><mi>⋯</mi></mrow><annotation encoding="application/x-tex">1+a z+a^{2} z^{2}+\cdots</annotation></semantics></math></p>
+<p>and</p>
+<p><math role="math" aria-label="\frac{1}{1-z}-\frac{(1-a) z}{(1-z)^{2}}+\frac{(1-a)^{2} z^{3}}{(1-z)^{2}}-\cdots" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>z</mi></mrow></mfrac><mo>−</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mi>z</mi></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>z</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>a</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><msup><mi>z</mi><mn>3</mn></msup></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>z</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac><mo>−</mo><mi>⋯</mi></mrow><annotation encoding="application/x-tex">\frac{1}{1-z}-\frac{(1-a) z}{(1-z)^{2}}+\frac{(1-a)^{2} z^{3}}{(1-z)^{2}}-\cdots</annotation></semantics></math></p>
+<p>are analytic continuations of each other. Describe the domains of
+validity (convergence) of the series.<br />
+2. Determine the radii of convergence of the power series which
+represents the following functions near
+<math role="math" aria-label="z=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">z=0</annotation></semantics></math>
+:<br />
+(a)
+<math role="math" aria-label="] f r a c z e^{z}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">]</mo><mi>f</mi><mi>r</mi><mi>a</mi><mi>c</mi><mi>z</mi><msup><mi>e</mi><mi>z</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">] f r a c z e^{z}-1</annotation></semantics></math><br />
+(b)
+<math role="math" aria-label="\frac{e^{z}-1}{z^{2}+4 \pi^{2}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><msup><mi>e</mi><mi>z</mi></msup><mo>−</mo><mn>1</mn></mrow><mrow><msup><mi>z</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><msup><mi>&pi;</mi><mn>2</mn></msup></mrow></mfrac><annotation encoding="application/x-tex">\frac{e^{z}-1}{z^{2}+4 \pi^{2}}</annotation></semantics></math><br />
+3. Let the set
+<math role="math" aria-label="S=\{z \in \mathbf{C}: z \neq 1,2,3, \ldots\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mi>z</mi><mo>&ne;</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi>…</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S=\{z \in \mathbf{C}: z \neq 1,2,3, \ldots\}</annotation></semantics></math>.
+Show that the series</p>
+<p><math role="math" aria-label="f(z)=\sum_{n=1}^{\infty} \frac{(-1)^{n}}{(n-z)^{2}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>−</mo><mi>z</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(z)=\sum_{n=1}^{\infty} \frac{(-1)^{n}}{(n-z)^{2}}</annotation></semantics></math></p>
+<p>converges uniformly and absolutely on every compact subset of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.<br />
+4. Evaluate by residues</p>
+<p><math role="math" aria-label="\int_{-\infty}^{\infty} \frac{x+3}{x^{3}+27} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mfrac><mrow><mi>x</mi><mo>+</mo><mn>3</mn></mrow><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>27</mn></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \frac{x+3}{x^{3}+27} d x</annotation></semantics></math></p>
+<ol start="5">
+<li><p>Let
+<math role="math" aria-label="\left\{f_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{f_{n}\right\}</annotation></semantics></math>
+be a sequence of entire functions with real zeros only and let
+<math role="math" aria-label="f=\lim _{n \rightarrow \infty} f_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><msub><mi>f</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">f=\lim _{n \rightarrow \infty} f_{n}</annotation></semantics></math>
+exist uniformly on every compact set of
+<math role="math" aria-label="\mathbf{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbf{C}</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+has real zeros only.</p></li>
+<li><p>The function
+<math role="math" aria-label="\frac{1}{1-z^{2}}+\frac{1}{5-z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mn>5</mn><mo>−</mo><mi>z</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{1}{1-z^{2}}+\frac{1}{5-z}</annotation></semantics></math>
+is to be expanded in a series of the form
+<math role="math" aria-label="\sum_{-\infty}^{\infty} c_{n} z^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><msub><mi>c</mi><mi>n</mi></msub><msup><mi>z</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\sum_{-\infty}^{\infty} c_{n} z^{n}</annotation></semantics></math>.
+How many such expansions are there? In what regions are they valid? Find
+the coefficients
+<math role="math" aria-label="c_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mi>n</mi></msub><annotation encoding="application/x-tex">c_{n}</annotation></semantics></math>
+for one of these regions.</p></li>
+<li><p>Evaluate</p></li>
+</ol>
+<p><math role="math" aria-label="\int_{-\infty}^{\infty} \frac{e^{a x}}{e^{x}+1} d x \text { for } 0&lt;a&lt;1" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mfrac><msup><mi>e</mi><mrow><mi>a</mi><mi>x</mi></mrow></msup><mrow><msup><mi>e</mi><mi>x</mi></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mi>d</mi><mi>x</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for </mtext><mspace width="0.333em"></mspace></mrow><mn>0</mn><mo>&lt;</mo><mi>a</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \frac{e^{a x}}{e^{x}+1} d x \text { for } 0&lt;a&lt;1</annotation></semantics></math></p>
+<p>using a rectangular contour.<br />
+3. Suppose
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+is entire and real-valued on the segment
+<math role="math" aria-label="(-\epsilon, \epsilon)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>ϵ</mi><mo>,</mo><mi>ϵ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(-\epsilon, \epsilon)</annotation></semantics></math>
+of the real axis for some
+<math role="math" aria-label="\epsilon&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\epsilon&gt;0</annotation></semantics></math>.
+Show
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is real for all real
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+How are
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+and
+<math role="math" aria-label="f(\bar{z})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mover><mi>z</mi><mo accent="true">‾</mo></mover><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(\bar{z})</annotation></semantics></math>
+related for
+<math role="math" aria-label="z \in \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">z \in \mathbb{C}</annotation></semantics></math>
+?<br />
+4. Show that if
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is analytic in
+<math role="math" aria-label="\Omega \supseteq \overline{\mathbb{D}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Omega;</mi><mo>&supe;</mo><mover><mi>&Dopf;</mi><mo accent="true">¯</mo></mover></mrow><annotation encoding="application/x-tex">\Omega \supseteq \overline{\mathbb{D}}</annotation></semantics></math>
+where
+<math role="math" aria-label="\overline{\mathbb{D}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>&Dopf;</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{\mathbb{D}}</annotation></semantics></math>
+is the closed unit disk, then</p>
+<p><math role="math" aria-label="\max _{|z|=1}\left|\frac{1}{z}-f(z)\right| \geq 1" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">max</mi><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn></mrow></munder><mrow><mo stretchy="true" form="prefix">|</mo><mfrac><mn>1</mn><mi>z</mi></mfrac><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>&ge;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\max _{|z|=1}\left|\frac{1}{z}-f(z)\right| \geq 1</annotation></semantics></math></p>
+<ol start="5">
+<li><p>Determine the number of roots of
+<math role="math" aria-label="2 z^{5}+8 z-1=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><msup><mi>z</mi><mn>5</mn></msup><mo>+</mo><mn>8</mn><mi>z</mi><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2 z^{5}+8 z-1=0</annotation></semantics></math>
+in<br />
+(a)
+<math role="math" aria-label="|z| \geq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&ge;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">|z| \geq 2</annotation></semantics></math><br />
+(b)
+<math role="math" aria-label="|z|&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|&lt;1</annotation></semantics></math><br />
+(c)
+<math role="math" aria-label="1&lt;|z|&lt;2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&lt;</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">1&lt;|z|&lt;2</annotation></semantics></math></p></li>
+<li><p>Suppose
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is analytic in
+<math role="math" aria-label="\mathbb{D}=\{|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Dopf;</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{D}=\{|z|&lt;1\}</annotation></semantics></math>
+with
+<math role="math" aria-label="f(0)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(0)=0</annotation></semantics></math>
+and
+<math role="math" aria-label="\operatorname{Re} f(z)&lt;A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Re</mi><mo>&#8289;</mo></mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&lt;</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\operatorname{Re} f(z)&lt;A</annotation></semantics></math>
+for some
+<math role="math" aria-label="A&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A&gt;0</annotation></semantics></math>.
+Show</p></li>
+</ol>
+<p><math role="math" aria-label="|f(z)| \leq \frac{2 A|z|}{1-|z|} \text { for } z \text { in } \mathbb{D}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mfrac><mrow><mn>2</mn><mi>A</mi><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo></mrow><mrow><mn>1</mn><mo>−</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo></mrow></mfrac><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for </mtext><mspace width="0.333em"></mspace></mrow><mi>z</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> in </mtext><mspace width="0.333em"></mspace></mrow><mi>&Dopf;</mi></mrow><annotation encoding="application/x-tex">|f(z)| \leq \frac{2 A|z|}{1-|z|} \text { for } z \text { in } \mathbb{D}</annotation></semantics></math></p>
+<p>(Hint: consider
+<math role="math" aria-label="\frac{f(z)}{2 A-f(z)}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mn>2</mn><mi>A</mi><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><annotation encoding="application/x-tex">\frac{f(z)}{2 A-f(z)}</annotation></semantics></math>.)<br />
+7. (a) Suppose
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is a non-constant analytic function in an open set
+<math role="math" aria-label="\Omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Omega;</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>
+containing the closed unit disk
+<math role="math" aria-label="\overline{\mathbb{D}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>&Dopf;</mi><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{\mathbb{D}}</annotation></semantics></math>
+such that
+<math role="math" aria-label="|f|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|f|</annotation></semantics></math>
+is constant on
+<math role="math" aria-label="\partial \mathbb{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&part;</mi><mi>&Dopf;</mi></mrow><annotation encoding="application/x-tex">\partial \mathbb{D}</annotation></semantics></math>.
+Prove
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+has at least one zero in
+<math role="math" aria-label="\mathbb{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Dopf;</mi><annotation encoding="application/x-tex">\mathbb{D}</annotation></semantics></math>.<br />
+(b) Find all entire functions
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+with
+<math role="math" aria-label="|g(z)|=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|g(z)|=1</annotation></semantics></math>
+whenever
+<math role="math" aria-label="|z|=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|=1</annotation></semantics></math>.</p>
+<p>In each problem, justify all assertions, show calculations and
+identify those theorems which you invoke in your arguments.</p>
+<ol>
+<li><p>(a) Is the function
+<math role="math" aria-label="u(x, y)=x^{3}-3 x y^{2}+3 x^{2} y-y^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mi>y</mi><mo>−</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">u(x, y)=x^{3}-3 x y^{2}+3 x^{2} y-y^{3}</annotation></semantics></math>
+harmonic in the plane?<br />
+(b) Does there exist a real function
+<math role="math" aria-label="v(x, y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">v(x, y)</annotation></semantics></math>
+so that
+<math role="math" aria-label="f=u+i v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mi>u</mi><mo>+</mo><mi>i</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">f=u+i v</annotation></semantics></math>
+is analytic in the plane? Explain.<br />
+(c) If yes in (b), find all such
+<math role="math" aria-label="v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>.</p></li>
+<li><p>Use the method of residues to calculate</p></li>
+</ol>
+<p><math role="math" aria-label="\int_{-\infty}^{\infty} \frac{\cos (a x)}{1+x^{2}} d x, \quad a&gt;0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac><mi>d</mi><mi>x</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \frac{\cos (a x)}{1+x^{2}} d x, \quad a&gt;0</annotation></semantics></math></p>
+<ol start="3">
+<li><p>Show that the series</p></li>
+</ol>
+<p><math role="math" aria-label="\frac{1}{1-z}+\frac{z}{z^{2}-1}+\frac{z^{2}}{z^{4}-1}+\frac{z^{4}}{z^{8}-1}+\cdots" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>1</mn><mo>−</mo><mi>z</mi></mrow></mfrac><mo>+</mo><mfrac><mi>z</mi><mrow><msup><mi>z</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mfrac><msup><mi>z</mi><mn>2</mn></msup><mrow><msup><mi>z</mi><mn>4</mn></msup><mo>−</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mfrac><msup><mi>z</mi><mn>4</mn></msup><mrow><msup><mi>z</mi><mn>8</mn></msup><mo>−</mo><mn>1</mn></mrow></mfrac><mo>+</mo><mi>⋯</mi></mrow><annotation encoding="application/x-tex">\frac{1}{1-z}+\frac{z}{z^{2}-1}+\frac{z^{2}}{z^{4}-1}+\frac{z^{4}}{z^{8}-1}+\cdots</annotation></semantics></math></p>
+<p>converges to 1 for
+<math role="math" aria-label="|z|&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|&lt;1</annotation></semantics></math>
+and to 0 for
+<math role="math" aria-label="|z|&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z|&gt;1</annotation></semantics></math>.<br />
+4. (a) Classify all singularities of</p>
+<p><math role="math" aria-label="f(z)=\frac{\left(e^{2 i z}-1\right)^{2}}{z^{5}\left(z^{2}-\pi^{2}\right)^{2}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mrow><mn>2</mn><mi>i</mi><mi>z</mi></mrow></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mrow><msup><mi>z</mi><mn>5</mn></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>z</mi><mn>2</mn></msup><mo>−</mo><msup><mi>&pi;</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(z)=\frac{\left(e^{2 i z}-1\right)^{2}}{z^{5}\left(z^{2}-\pi^{2}\right)^{2}}</annotation></semantics></math></p>
+<p>in the complex plane.<br />
+(b) What is the nature of the singularity at
+<math role="math" aria-label="z=\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">z=\infty</annotation></semantics></math>
+?<br />
+5. Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a fixed positive constant. Find all entire functions
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+such that</p>
+<p><math role="math" aria-label="\left|\int_{|z-w|=1} \frac{f(z)}{(z-w)^{3}} d z\right| \leq M" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mo>&int;</mo><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo>−</mo><mi>w</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn></mrow></msub><mfrac><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo>−</mo><mi>w</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>3</mn></msup></mrow></mfrac><mi>d</mi><mi>z</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">\left|\int_{|z-w|=1} \frac{f(z)}{(z-w)^{3}} d z\right| \leq M</annotation></semantics></math></p>
+<p>for all complex numbers
+<math role="math" aria-label="w" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>.<br />
+6. Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a bounded open connected set in the plane and assume that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is non-constant and continuous on
+<math role="math" aria-label="\bar{G}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>G</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar{G}</annotation></semantics></math>,
+analytic in
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,
+and that
+<math role="math" aria-label="|f(z)|=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|f(z)|=1</annotation></semantics></math>
+for all
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+in the boundary
+<math role="math" aria-label="\partial G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&part;</mi><mi>G</mi></mrow><annotation encoding="application/x-tex">\partial G</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+has at least one zero in
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.<br />
+7. Find all functions
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+analytic on
+<math role="math" aria-label="\{z:|z|&lt;2\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{z:|z|&lt;2\}</annotation></semantics></math>
+for which
+<math role="math" aria-label="\left|f\left(\frac{1}{n}\right)\right| \leq \frac{1}{3^{n}}, n=1,2,3, \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><mfrac><mn>1</mn><msup><mn>3</mn><mi>n</mi></msup></mfrac><mo>,</mo><mi>n</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">\left|f\left(\frac{1}{n}\right)\right| \leq \frac{1}{3^{n}}, n=1,2,3, \ldots</annotation></semantics></math>.
+Prove your answer.</p>
+<ol>
+<li><p>Let
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+be the meromorphic function defined in the complex plane
+<math role="math" aria-label="\mathbf{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbf{C}</annotation></semantics></math>,</p></li>
+</ol>
+<p><math role="math" aria-label="f(z)=z^{-2} \cot z=\frac{\cos z}{z^{2} \sin z}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>z</mi><mrow><mi>−</mi><mn>2</mn></mrow></msup><mrow><mi mathvariant="normal">cot</mi><mo>&#8289;</mo></mrow><mi>z</mi><mo>=</mo><mfrac><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>z</mi></mrow><mrow><msup><mi>z</mi><mn>2</mn></msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>z</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(z)=z^{-2} \cot z=\frac{\cos z}{z^{2} \sin z}</annotation></semantics></math></p>
+<p>Classify the singularities of
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbf{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbf{C}</annotation></semantics></math>,
+and, at each singularity, compute the associated residue there.<br />
+2. Compute the integrals<br />
+(a)</p>
+<p><math role="math" aria-label="\oint_{|z|=1} \bar{z} d z" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&conint;</mo><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn></mrow></msub><mover><mi>z</mi><mo accent="true">‾</mo></mover><mi>d</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">\oint_{|z|=1} \bar{z} d z</annotation></semantics></math></p>
+<p>by parametrizing
+<math role="math" aria-label="z . \bar{z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mi>.</mi><mover><mi>z</mi><mo accent="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">z . \bar{z}</annotation></semantics></math>
+is the complex conjugate of
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>.<br />
+(b)</p>
+<p><math role="math" aria-label="\oint_{|z|=1} z^{n} e^{1 / z} d z" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&conint;</mo><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn></mrow></msub><msup><mi>z</mi><mi>n</mi></msup><msup><mi>e</mi><mrow><mn>1</mn><mi>/</mi><mi>z</mi></mrow></msup><mi>d</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">\oint_{|z|=1} z^{n} e^{1 / z} d z</annotation></semantics></math></p>
+<p>for all integers
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.<br />
+(c)</p>
+<p><math role="math" aria-label="\int_{0}^{\infty} \frac{x^{\alpha}}{1+x} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mfrac><msup><mi>x</mi><mi>&alpha;</mi></msup><mrow><mn>1</mn><mo>+</mo><mi>x</mi></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty} \frac{x^{\alpha}}{1+x} d x</annotation></semantics></math></p>
+<p>for
+<math role="math" aria-label="-1&lt;\alpha&lt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn><mo>&lt;</mo><mi>&alpha;</mi><mo>&lt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">-1&lt;\alpha&lt;0</annotation></semantics></math>
+using contour integral techniques.<br />
+(d)</p>
+<p><math role="math" aria-label="\hat{f}(k)=\int_{\mathbf{R}} \frac{e^{i k x}}{\left(1+x^{2}\right)} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>f</mi><mo accent="true">̂</mo></mover><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mo>&int;</mo><mi>&Ropf;</mi></msub><mfrac><msup><mi>e</mi><mrow><mi>i</mi><mi>k</mi><mi>x</mi></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\hat{f}(k)=\int_{\mathbf{R}} \frac{e^{i k x}}{\left(1+x^{2}\right)} d x</annotation></semantics></math></p>
+<p>using contour integral techniques.<br />
+3. Suppose that
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+is analytic in a neighborhood of the closed unit disc
+<math role="math" aria-label="\bar{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>D</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar{D}</annotation></semantics></math>
+with
+<math role="math" aria-label="D=\{z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">D=\{z</annotation></semantics></math>
+:
+<math role="math" aria-label="|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">|z|&lt;1\}</annotation></semantics></math>
+and satisfies the bound,</p>
+<p><math role="math" aria-label="|f(z)|&lt;2" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">|f(z)|&lt;2</annotation></semantics></math></p>
+<p>in
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>.<br />
+(a) Show that
+<math role="math" aria-label="f^{\prime}(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f^{\prime}(z)</annotation></semantics></math>
+satisfies a bound</p>
+<p><math role="math" aria-label="\left|f^{\prime}(z)\right| \leq \frac{2}{1-|z|}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><mfrac><mn>2</mn><mrow><mn>1</mn><mo>−</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">\left|f^{\prime}(z)\right| \leq \frac{2}{1-|z|}</annotation></semantics></math></p>
+<p>for
+<math role="math" aria-label="z \in D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">z \in D</annotation></semantics></math>.<br />
+Now assume that
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+also satisfies the bound</p>
+<p><math role="math" aria-label="|z|^{n} \leq|f(z)|" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><msup><mo stretchy="false" form="prefix">|</mo><mi>n</mi></msup><mo>&le;</mo><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|z|^{n} \leq|f(z)|</annotation></semantics></math></p>
+<p>for
+<math role="math" aria-label="z \in \bar{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><mover><mi>D</mi><mo accent="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">z \in \bar{D}</annotation></semantics></math>,
+with
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+a fixed non-negative integer.<br />
+(b) Give an upper bound on the winding number for
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+about 0 by estimating an appropriate integral with path of integration
+the circle
+<math role="math" aria-label="\{z:|z|=1 / 2\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>1</mn><mi>/</mi><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{z:|z|=1 / 2\}</annotation></semantics></math>.
+(You need not optimize your bound by varying the radius of the
+circle.)<br />
+4. Suppose that
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+is analytic in a neighborhood of the closed right-half plane
+<math role="math" aria-label="\mathbf{\overline { C }}_{+}, \mathbf{C}_{+}= \{z \in \mathbf{C}: x&gt;0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover><mi>&Copf;</mi><mo accent="true">¯</mo></mover><mo>+</mo></msub><mo>,</mo><msub><mi>&Copf;</mi><mo>+</mo></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mi>x</mi><mo>&gt;</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbf{\overline { C }}_{+}, \mathbf{C}_{+}= \{z \in \mathbf{C}: x&gt;0\}</annotation></semantics></math>,
+and satisfies the bounds,</p>
+<p><math role="math" aria-label="|f(z)| \leq c(1+|z|)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mi>c</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">|f(z)| \leq c(1+|z|)</annotation></semantics></math></p>
+<p>for
+<math role="math" aria-label="z \in \mathbf{C}_{+}, c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><msub><mi>&Copf;</mi><mo>+</mo></msub><mo>,</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">z \in \mathbf{C}_{+}, c</annotation></semantics></math>
+a fixed constant; and</p>
+<p><math role="math" aria-label="|f(i y)| \leq\left(1+y^{2}\right)^{1 / 2}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mn>1</mn><mi>/</mi><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">|f(i y)| \leq\left(1+y^{2}\right)^{1 / 2}</annotation></semantics></math></p>
+<p>for
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+on the imaginary axis.<br />
+Show that
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+satisfies the sharp bound</p>
+<p><math role="math" aria-label="|f(z)| \leq|1+z|" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mo stretchy="false" form="prefix">|</mo><mn>1</mn><mo>+</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|f(z)| \leq|1+z|</annotation></semantics></math></p>
+<p>for
+<math role="math" aria-label="z \in \overline{\mathbf{C}}_{+}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><msub><mover><mi>&Copf;</mi><mo accent="true">¯</mo></mover><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">z \in \overline{\mathbf{C}}_{+}</annotation></semantics></math>,
+i.e.
+<math role="math" aria-label="c=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">c=1</annotation></semantics></math>.
+Hint: You might want to consider
+<math role="math" aria-label="f(z) /(1+z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z) /(1+z)</annotation></semantics></math>
+or possibly
+<math role="math" aria-label="f(z) /(1+z)^{1+\epsilon}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>z</mi><msup><mo stretchy="false" form="postfix">)</mo><mrow><mn>1</mn><mo>+</mo><mi>ϵ</mi></mrow></msup></mrow><annotation encoding="application/x-tex">f(z) /(1+z)^{1+\epsilon}</annotation></semantics></math>.<br />
+5. (a) Let
+<math role="math" aria-label="D=\{z:|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">D=\{z:|z|&lt;1\}</annotation></semantics></math>
+be the unit disc in the complex plane. Give an example of a fractional
+linear function
+<math role="math" aria-label="f(z)=\left(z-z_{0}\right) /(c z+d)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>z</mi><mo>−</mo><msub><mi>z</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mi>z</mi><mo>+</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)=\left(z-z_{0}\right) /(c z+d)</annotation></semantics></math>
+with a simple zero at
+<math role="math" aria-label="z_{0} \in D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>0</mn></msub><mo>&isin;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">z_{0} \in D</annotation></semantics></math>,
+and which is of unit modulus on the boundary
+<math role="math" aria-label="\partial D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&part;</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">\partial D</annotation></semantics></math>
+of
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>.
+Thus give suitable constants
+<math role="math" aria-label="c, d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>,</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">c, d</annotation></semantics></math>.<br />
+(b) Show that if
+<math role="math" aria-label="g(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(z)</annotation></semantics></math>
+is analytic in a neighborhood of
+<math role="math" aria-label="\bar{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>D</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar{D}</annotation></semantics></math>,
+has a simple zero at
+<math role="math" aria-label="z_{0} \in D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>0</mn></msub><mo>&isin;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">z_{0} \in D</annotation></semantics></math>
+and no other zeros in
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+and is of unit modulus on the boundary
+<math role="math" aria-label="\partial D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&part;</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">\partial D</annotation></semantics></math>,
+then
+<math role="math" aria-label="g(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(z)</annotation></semantics></math>
+is in fact fractional linear. Hint: consider the quotient,
+<math role="math" aria-label="g(z) / f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(z) / f(z)</annotation></semantics></math>.<br />
+6. (a) Let
+<math role="math" aria-label="f(z)=z^{2}-z+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>z</mi><mn>2</mn></msup><mo>−</mo><mi>z</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(z)=z^{2}-z+1</annotation></semantics></math>.
+Compute the change in argument of
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+over<br />
+(i) The positive real axis
+<math role="math" aria-label="\mathbf{R}_{+}, x \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Ropf;</mi><mo>+</mo></msub><mo>,</mo><mi>x</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbf{R}_{+}, x \geq 0</annotation></semantics></math>
+with
+<math role="math" aria-label="y=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y=0</annotation></semantics></math>.<br />
+(ii) A large quarter circle
+<math role="math" aria-label="\left\{z: z=R e^{i \theta}, R\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><mi>z</mi><mo>:</mo><mi>z</mi><mo>=</mo><mi>R</mi><msup><mi>e</mi><mrow><mi>i</mi><mi>&theta;</mi></mrow></msup><mo>,</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">\left\{z: z=R e^{i \theta}, R\right.</annotation></semantics></math>
+fixed,
+<math role="math" aria-label="\left.0 \leq \theta \leq \pi / 2\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&le;</mo><mi>&theta;</mi><mo>&le;</mo><mi>&pi;</mi><mi>/</mi><mn>2</mn><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left.0 \leq \theta \leq \pi / 2\right\}</annotation></semantics></math>,
+in the limit,
+<math role="math" aria-label="R \rightarrow \infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">R \rightarrow \infty</annotation></semantics></math>.<br />
+(iii) The upper imaginary axis
+<math role="math" aria-label="y \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">y \geq 0</annotation></semantics></math>
+with
+<math role="math" aria-label="x=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x=0</annotation></semantics></math>.<br />
+(b) One can show that
+<math role="math" aria-label="|f(z)| \geq 3 / 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&ge;</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">|f(z)| \geq 3 / 4</annotation></semantics></math>
+over the positive real axis and the upper imaginary axis. (You need not
+show this). Show that for
+<math role="math" aria-label="|\epsilon|&lt;3 / 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>ϵ</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>3</mn><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">|\epsilon|&lt;3 / 4</annotation></semantics></math>,</p>
+<p><math role="math" aria-label="g(z) \equiv z^{2}-z+1+\frac{\epsilon}{z+1}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&equiv;</mo><msup><mi>z</mi><mn>2</mn></msup><mo>−</mo><mi>z</mi><mo>+</mo><mn>1</mn><mo>+</mo><mfrac><mi>ϵ</mi><mrow><mi>z</mi><mo>+</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">g(z) \equiv z^{2}-z+1+\frac{\epsilon}{z+1}</annotation></semantics></math></p>
+<p>has one zero in the first quadrant.</p>
+
+</main>
+</body>
+</html>

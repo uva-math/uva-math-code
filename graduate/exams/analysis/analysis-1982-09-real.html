@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>Real Analysis, September 1982 - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/analysis/1977-2004.html">Analysis Exams 1977-2004</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Real Analysis, September 1982</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/analysis/1977-2004.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="real-analysis-september-1982">Real Analysis,
+September 1982</h2>
+<ol>
+<li><p>Is the sequence
+<math role="math" aria-label="f_{n}(x)=\frac{1}{1+n x}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>n</mi><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">f_{n}(x)=\frac{1}{1+n x}</annotation></semantics></math>
+uniformly convergent on the inteval
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+? Explain why or why not.</p></li>
+<li><p>For what values of
+<math role="math" aria-label="p&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p&gt;0</annotation></semantics></math>
+is the function</p></li>
+</ol>
+<p><math role="math" aria-label="f(x)=x^{p} \sin \frac{1}{x}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mi>p</mi></msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mfrac><mn>1</mn><mi>x</mi></mfrac></mrow><annotation encoding="application/x-tex">f(x)=x^{p} \sin \frac{1}{x}</annotation></semantics></math></p>
+<p>of bounded variation on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+?<br />
+3. Assume that
+<math role="math" aria-label="a_{n}&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_{n}&gt;0</annotation></semantics></math>
+and that
+<math role="math" aria-label="\sum_{n=1}^{\infty} a_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><msub><mi>a</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty} a_{n}</annotation></semantics></math>
+is convergent. Prove that</p>
+<p><math role="math" aria-label="\sum_{n=1}^{\infty} \sqrt{a_{n+1} a_{n}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><msqrt><mrow><msub><mi>a</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><msub><mi>a</mi><mi>n</mi></msub></mrow></msqrt></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty} \sqrt{a_{n+1} a_{n}}</annotation></semantics></math></p>
+<p>is convergent.<br />
+4. Let
+<math role="math" aria-label="r_{1}, r_{2}, \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">r_{1}, r_{2}, \ldots</annotation></semantics></math>
+be an enumeration of the rationals, and let</p>
+<p><math role="math" aria-label="I_{k}=\left(r_{k}-\frac{1}{k^{2}}, r_{k}+\frac{1}{k^{2}}\right) \quad(k=1,2, \ldots)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>k</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>r</mi><mi>k</mi></msub><mo>−</mo><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac><mo>,</mo><msub><mi>r</mi><mi>k</mi></msub><mo>+</mo><mfrac><mn>1</mn><msup><mi>k</mi><mn>2</mn></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="1.0em"></mspace><mo stretchy="false" form="prefix">(</mo><mi>k</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>…</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">I_{k}=\left(r_{k}-\frac{1}{k^{2}}, r_{k}+\frac{1}{k^{2}}\right) \quad(k=1,2, \ldots)</annotation></semantics></math></p>
+<p>Is there a point
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+which is not in
+<math role="math" aria-label="\bigcup_{k=1}^{\infty} I_{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>⋃</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><msub><mi>I</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">\bigcup_{k=1}^{\infty} I_{k}</annotation></semantics></math>
+? Explain.<br />
+5. Let
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+be a subset of real line Lebesgue measure zero. Can the set</p>
+<p><math role="math" aria-label="G=\{(x, y): x-y \in E\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>x</mi><mo>−</mo><mi>y</mi><mo>&isin;</mo><mi>E</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">G=\{(x, y): x-y \in E\}</annotation></semantics></math></p>
+<p>have positive two-dimensional Lebesgue measure? (Hint: Change
+variables and use Fubini’s theorem.)<br />
+6. A function on
+<math role="math" aria-label="[0, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[0, \infty)</annotation></semantics></math>
+is improperly Riemann-integrable iff the Riemann integral</p>
+<p><math role="math" aria-label="I(t)=\int_{0}^{t} f(x) d x \quad \text { exists for every } t&gt;0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>t</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mspace width="1.0em"></mspace><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> exists for every </mtext><mspace width="0.333em"></mspace></mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">I(t)=\int_{0}^{t} f(x) d x \quad \text { exists for every } t&gt;0</annotation></semantics></math></p>
+<p>and if</p>
+<p><math role="math" aria-label="I(t)=\lim _{t \rightarrow \infty} \int_{0}^{t} f(x) d x \quad \text { exists. }" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munder><mi mathvariant="normal">lim</mi><mrow><mi>t</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mo>&int;</mo><mn>0</mn><mi>t</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mspace width="1.0em"></mspace><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> exists. </mtext><mspace width="0.333em"></mspace></mrow></mrow><annotation encoding="application/x-tex">I(t)=\lim _{t \rightarrow \infty} \int_{0}^{t} f(x) d x \quad \text { exists. }</annotation></semantics></math></p>
+<p>Prove that if
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is continuous on
+<math role="math" aria-label="[0, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[0, \infty)</annotation></semantics></math>
+and
+<math role="math" aria-label="|f(x)|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|f(x)|</annotation></semantics></math>
+is improperly Riemann integrable, then<br />
+(a)
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is improperly Riemann integrable,<br />
+(b)
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is Lebesgue integrable on
+<math role="math" aria-label="[0, \infty]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0, \infty]</annotation></semantics></math>,
+and<br />
+(c)
+<math role="math" aria-label="I=\int_{0}^{\infty} f d m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mi>f</mi><mi>d</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">I=\int_{0}^{\infty} f d m</annotation></semantics></math>,<br />
+where
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+is Lebesgue measurable.</p>
+
+</main>
+</body>
+</html>
