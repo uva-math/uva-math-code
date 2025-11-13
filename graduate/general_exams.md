@@ -70,7 +70,7 @@ Below are old exams and study materials for each of the subfields.
   
   - [01/2023, real]({{site.url}}/graduate/exams/analysis/2023Jan_real.pdf)
   - [08/2022, complex]({{site.url}}/graduate/exams/analysis/2022Aug_complex.pdf)
-  - [08/2022, real]({{site.url}}/graduate/exams/analysis/2022Aug_real.pdf)
+  - [08/2022, real]({{site.url}}/graduate/exams/analysis/2022Aug_real.pdf) &bull; [HTML]({{site.url}}/graduate/exams/analysis/2022Aug_real.html)
   - [01/2022, complex]({{site.url}}/graduate/exams/analysis/2022Jan_complex.pdf)
   - [01/2022, real]({{site.url}}/graduate/exams/analysis/2022Jan_real.pdf)
   - [08/2021, complex]({{site.url}}/graduate/exams/analysis/2021Aug_complex.pdf)
