@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Topology General Exam August 16, 2010 </title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Current Exam</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<header id="title-block-header">
+<main>
+<h1 class="title">Topology General Exam<br />
+August 16, 2010 </h1>
+</header>
+<h2 class="unnumbered" id="name">Name:</h2>
+<p>Instructions: This is a four hour exam and 'closed book'. There are
+eight problems.</p>
+<ol>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<li><p>(a) Let
+<math role="math" aria-label="T \subset \mathbb{R}^{5}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>&sub;</mo><msup><mi>&Ropf;</mi><mn>5</mn></msup></mrow><annotation encoding="application/x-tex">T \subset \mathbb{R}^{5}</annotation></semantics></math>
+be a closed subspace homeomorphic to
+<math role="math" aria-label="\mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{2}</annotation></semantics></math>.
+Explain why
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+will be a retract of
+<math role="math" aria-label="\mathbb{R}^{5}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>5</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{5}</annotation></semantics></math>.<br />
+(b) View
+<math role="math" aria-label="S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mi>n</mi></msup><annotation encoding="application/x-tex">S^{n}</annotation></semantics></math>
+as
+<math role="math" aria-label="\mathbb{R}^{n} \cup\{\infty\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Ropf;</mi><mi>n</mi></msup><mo>&cup;</mo><mo stretchy="false" form="prefix">{</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}^{n} \cup\{\infty\}</annotation></semantics></math>,
+so that the open subsets of
+<math role="math" aria-label="S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mi>n</mi></msup><annotation encoding="application/x-tex">S^{n}</annotation></semantics></math>
+containing
+<math role="math" aria-label="\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&infin;</mi><annotation encoding="application/x-tex">\infty</annotation></semantics></math>
+are precisely the complements of compact subsets of
+<math role="math" aria-label="\mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{n}</annotation></semantics></math>.
+Recall that a continuous function
+<math role="math" aria-label="f: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>&Ropf;</mi><mi>m</mi></msup><mo>&rarr;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f: \mathbb{R}^{m} \rightarrow \mathbb{R}^{n}</annotation></semantics></math>
+is called proper if
+<math role="math" aria-label="f^{-1}(C)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>C</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f^{-1}(C)</annotation></semantics></math>
+is compact in
+<math role="math" aria-label="\mathbb{R}^{m}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>m</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{m}</annotation></semantics></math>
+whenever
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+is compact in
+<math role="math" aria-label="\mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{n}</annotation></semantics></math>.
+Show that such a proper map extends uniquely to a continuous function
+<math role="math" aria-label="\bar{f}: S^{m} \rightarrow S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>f</mi><mo accent="true">‾</mo></mover><mo>:</mo><msup><mi>S</mi><mi>m</mi></msup><mo>&rarr;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\bar{f}: S^{m} \rightarrow S^{n}</annotation></semantics></math>.<br />
+(c) With
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+as in part (a), check that the inclusion
+<math role="math" aria-label="i: T \hookrightarrow \mathbb{R}^{5}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>:</mo><mi>T</mi><mo>↪</mo><msup><mi>&Ropf;</mi><mn>5</mn></msup></mrow><annotation encoding="application/x-tex">i: T \hookrightarrow \mathbb{R}^{5}</annotation></semantics></math>
+is proper. By contrast, show that no retraction
+<math role="math" aria-label="r: \mathbb{R}^{5} \rightarrow T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>:</mo><msup><mi>&Ropf;</mi><mn>5</mn></msup><mo>&rarr;</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">r: \mathbb{R}^{5} \rightarrow T</annotation></semantics></math>
+can be proper. (Hint: start by using part (b).)</p></li>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<li><p>Let
+<math role="math" aria-label="\mathbb{R}^{\infty}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>&infin;</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{\infty}</annotation></semantics></math>
+denote the union
+<math role="math" aria-label="\mathbb{R} \hookrightarrow \mathbb{R}^{2} \hookrightarrow \mathbb{R}^{3} \hookrightarrow \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo>↪</mo><msup><mi>&Ropf;</mi><mn>2</mn></msup><mo>↪</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>↪</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">\mathbb{R} \hookrightarrow \mathbb{R}^{2} \hookrightarrow \mathbb{R}^{3} \hookrightarrow \ldots</annotation></semantics></math>,
+with the union topology, i.e.
+<math role="math" aria-label="U \subset \mathbb{R}^{\infty}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>&sub;</mo><msup><mi>&Ropf;</mi><mi>&infin;</mi></msup></mrow><annotation encoding="application/x-tex">U \subset \mathbb{R}^{\infty}</annotation></semantics></math>
+is open iff
+<math role="math" aria-label="U \cap \mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>&cap;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">U \cap \mathbb{R}^{n}</annotation></semantics></math>
+is open in
+<math role="math" aria-label="\mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{n}</annotation></semantics></math>
+for all
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Let
+<math role="math" aria-label="\mathbb{R}^{\omega}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>&omega;</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{\omega}</annotation></semantics></math>
+denote the product of a countable number of copies of
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>,
+with the product topology. Check that the evident set theoretic
+inclusion
+<math role="math" aria-label="i: \mathbb{R}^{\infty} \rightarrow \mathbb{R}^{\omega}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>:</mo><msup><mi>&Ropf;</mi><mi>&infin;</mi></msup><mo>&rarr;</mo><msup><mi>&Ropf;</mi><mi>&omega;</mi></msup></mrow><annotation encoding="application/x-tex">i: \mathbb{R}^{\infty} \rightarrow \mathbb{R}^{\omega}</annotation></semantics></math>
+is continuous, but is not a homeomorphism onto its image.</p></li>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<li><p>(a) Describe a connected double cover of
+<math role="math" aria-label="\mathbb{R} P^{2} \vee \mathbb{R} P^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup><mo>&or;</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{R} P^{2} \vee \mathbb{R} P^{2}</annotation></semantics></math>.
+(There is more than one correct answer.)<br />
+(b) What are the homology groups of your double cover?<br />
+(c) What is the fundamental group of your double cover?</p></li>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<li><p>Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be the compact surface with boundary circle
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+as pictured:<br />
+(a) Explain why
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is homotopy equivalent to a figure eight. (Hint:
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is the torus with a disk removed, and the torus is often represented as
+a square with opposite edges identified.)<br />
+(b) Explain why the inclusion
+<math role="math" aria-label="i: C \hookrightarrow M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>:</mo><mi>C</mi><mo>↪</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">i: C \hookrightarrow M</annotation></semantics></math>
+induces the zero homomorphism from
+<math role="math" aria-label="H_{1}(C)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>C</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H_{1}(C)</annotation></semantics></math>
+to
+<math role="math" aria-label="H_{1}(M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H_{1}(M)</annotation></semantics></math>.<br />
+(c) By contrast, explain why
+<math role="math" aria-label="i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+is not null homotopic.</p></li>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<li><p>Suppose given a commutative diagram of abelian groups<br />
+<img src="images/2025_11_13_ef6de1c200af79ffc350g-6.jpg" alt="Commutative diagram with exact rows and columns" style="max-width: 100%; height: auto; display: block; margin: 1em auto;" /><br />
+with exact rows and columns. Show that there are isomorphisms
+<math role="math" aria-label="\operatorname{ker} \alpha \simeq \operatorname{ker} \beta \quad" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ker</mi><mo>&#8289;</mo></mrow><mi>&alpha;</mi><mo>≃</mo><mrow><mi mathvariant="normal">ker</mi><mo>&#8289;</mo></mrow><mi>&beta;</mi><mspace width="1.0em"></mspace></mrow><annotation encoding="application/x-tex">\operatorname{ker} \alpha \simeq \operatorname{ker} \beta \quad</annotation></semantics></math>
+and
+<math role="math" aria-label="\quad \operatorname{coker} \alpha \simeq \operatorname{coker} \beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="1.0em"></mspace><mrow><mi mathvariant="normal">coker</mi><mo>&#8289;</mo></mrow><mi>&alpha;</mi><mo>≃</mo><mrow><mi mathvariant="normal">coker</mi><mo>&#8289;</mo></mrow><mi>&beta;</mi></mrow><annotation encoding="application/x-tex">\quad \operatorname{coker} \alpha \simeq \operatorname{coker} \beta</annotation></semantics></math>.</p></li>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<li><p>Recall that an
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-dimensional
+manifold is a Hausdorff topological space
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+that can be covered by open sets homeomorphic to open sets in
+<math role="math" aria-label="\mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{n}</annotation></semantics></math>.
+Prove that a compact
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-dimensional
+manifold can be embedded in (i.e. is homeomorphic to a subset of)
+<math role="math" aria-label="\mathbb{R}^{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>N</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{N}</annotation></semantics></math>
+for large enough
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>.
+(Hint: use a partition of unity associated to a finite open cover
+<math role="math" aria-label="U_{1}, \ldots, U_{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>U</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">U_{1}, \ldots, U_{k}</annotation></semantics></math>
+of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+equipped with embeddings
+<math role="math" aria-label="f_{i}: U_{i} \rightarrow \mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>i</mi></msub><mo>:</mo><msub><mi>U</mi><mi>i</mi></msub><mo>&rarr;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f_{i}: U_{i} \rightarrow \mathbb{R}^{n}</annotation></semantics></math>.)</p></li>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<li><p>Let
+<math role="math" aria-label="C \subset \mathbb{R}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>&sub;</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">C \subset \mathbb{R}^{3}</annotation></semantics></math>
+be the union of the
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>-axis
+and the
+<math role="math" aria-label="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-axis.
+Compute
+<math role="math" aria-label="H_{*}\left(\mathbb{R}^{3}-C\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mo>*</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>−</mo><mi>C</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H_{*}\left(\mathbb{R}^{3}-C\right)</annotation></semantics></math>.
+(Hint: note that
+<math role="math" aria-label="\mathbb{R}^{3}-C=\left(\mathbb{R}^{3}-x\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>−</mo><mi>C</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>−</mo><mi>x</mi></mrow></mrow><annotation encoding="application/x-tex">\mathbb{R}^{3}-C=\left(\mathbb{R}^{3}-x\right.</annotation></semantics></math>-axis
+<math role="math" aria-label=") \cap\left(\mathbb{R}^{3}-y\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">)</mo><mo>&cap;</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>−</mo><mi>y</mi></mrow></mrow><annotation encoding="application/x-tex">) \cap\left(\mathbb{R}^{3}-y\right.</annotation></semantics></math>-axis
+<math role="math" aria-label=")" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo stretchy="false" form="postfix">)</mo><annotation encoding="application/x-tex">)</annotation></semantics></math>.)</p></li>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<li><p>Let
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+be a Hausdorff space, and
+<math role="math" aria-label="f: X \rightarrow X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">f: X \rightarrow X</annotation></semantics></math>
+a continuous function such that</p></li>
+</ol>
+<ul>
+<li><p><math role="math" aria-label="f(x) \neq x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">f(x) \neq x</annotation></semantics></math>
+for all
+<math role="math" aria-label="x \in X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x \in X</annotation></semantics></math>,
+and</p></li>
+<li><p><math role="math" aria-label="f \circ f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&SmallCircle;</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f \circ f</annotation></semantics></math>
+is the identity.<br />
+(a) Show that every
+<math role="math" aria-label="x \in X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x \in X</annotation></semantics></math>
+has an open neighborhood
+<math role="math" aria-label="W_{x}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>W</mi><mi>x</mi></msub><annotation encoding="application/x-tex">W_{x}</annotation></semantics></math>
+satisfying
+<math role="math" aria-label="f\left(W_{x}\right) \cap W_{x}=\emptyset" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>W</mi><mi>x</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&cap;</mo><msub><mi>W</mi><mi>x</mi></msub><mo>=</mo><mi>&empty;</mi></mrow><annotation encoding="application/x-tex">f\left(W_{x}\right) \cap W_{x}=\emptyset</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="\bar{X}=X /(x \sim f(x))" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>X</mi><mo accent="true">‾</mo></mover><mo>=</mo><mi>X</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>∼</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\bar{X}=X /(x \sim f(x))</annotation></semantics></math>,
+with the quotient space topology. Show that the quotient map
+<math role="math" aria-label="q: X \rightarrow \bar{X}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mover><mi>X</mi><mo accent="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">q: X \rightarrow \bar{X}</annotation></semantics></math>
+is a covering map.</p></li>
+</ul>
+</main>
+</body>
+</html>
