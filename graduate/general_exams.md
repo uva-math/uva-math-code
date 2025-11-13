@@ -63,9 +63,9 @@ Below are old exams and study materials for each of the subfields.
   - [01/2004]({{site.url}}/graduate/exams/algebra/2004-01.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2004-01.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2003]({{site.url}}/graduate/exams/algebra/2003-08.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2003-08.pdf" aria-label="PDF version for printing">PDF</a>
   - [05/2003]({{site.url}}/graduate/exams/algebra/2003-05.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2003-05.pdf" aria-label="PDF version for printing">PDF</a>
-  - [1981-2002]({{site.url}}/graduate/exams/algebra/AlgGento02.pdf)
+  - [1981-2002]({{site.url}}/graduate/exams/algebra/AlgGento02/) &bull; <a href="{{site.url}}/graduate/exams/algebra/AlgGento02.pdf" aria-label="PDF version for printing">PDF</a>
   
-  Here is an updated [Review Guide]({{site.url}}/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.pdf) for algebra general exams (includes old exam problems sorted by topics up to and including Jan 22 exam).
+  Here is an updated [Review Guide]({{site.url}}/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.pdf" aria-label="PDF version for printing">PDF</a> for algebra general exams (includes old exam problems sorted by topics up to and including Jan 22 exam).
   
   </div>
   <div class="col-md-4" markdown="1">
@@ -106,7 +106,7 @@ Below are old exams and study materials for each of the subfields.
   - [08/2009]({{site.url}}/graduate/exams/analysis/2009Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2009Aug.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2009]({{site.url}}/graduate/exams/analysis/2009Jan.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2009Jan.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2007]({{site.url}}/graduate/exams/analysis/2007Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2007Aug.pdf" aria-label="PDF version for printing">PDF</a>
-  - [1977-2004]({{site.url}}/graduate/exams/analysis/1977-2004.pdf)
+  - [1977-2004]({{site.url}}/graduate/exams/analysis/1977-2004.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/1977-2004.pdf" aria-label="PDF version for printing">PDF</a>
   
   </div>
   <div class="col-md-4" markdown="1">
