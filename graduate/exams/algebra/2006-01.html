@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Algebra
+General Exam January 11, 2006 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Algebra
+General Exam January 11, 2006</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="algebra-general-exam-january-11-2006">Algebra
+General Exam January 11, 2006</h1>
+<p>This is exam is worth 100 points; each problem is worth 10 points. If
+you can’t prove part of some problem, you can still use the result of
+that part in proving subsequent parts or other problems. Throughout the
+exam, let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+denote a group,
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+a vector space over a field
+<math role="math" aria-label="F, V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>,</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">F, V</annotation></semantics></math>
+a vector space over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+and
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+a linear transformation on
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>.</p>
+<ol>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<li><p>A
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-set
+<math role="math" aria-label="\left(X,{ }_{X}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>,</mo><msub><mrow></mrow><mi>X</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(X,{ }_{X}\right)</annotation></semantics></math>
+is a set with a group action
+<math role="math" aria-label="g \cdot x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&sdot;</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">g \cdot x</annotation></semantics></math>
+so that
+<math role="math" aria-label="g \rightarrow g \cdot" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&rarr;</mo><mi>g</mi><mo>&sdot;</mo></mrow><annotation encoding="application/x-tex">g \rightarrow g \cdot</annotation></semantics></math>
+is a homomorphism
+<math role="math" aria-label="G \rightarrow \operatorname{Symm}(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>&rarr;</mo><mrow><mi mathvariant="normal">Symm</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G \rightarrow \operatorname{Symm}(X)</annotation></semantics></math>
+of groups. A
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-homomorphism
+<math role="math" aria-label="X \xrightarrow{f} Y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mover><mo>&rarr;</mo><mi>f</mi></mover><mi>Y</mi></mrow><annotation encoding="application/x-tex">X \xrightarrow{f} Y</annotation></semantics></math>
+of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-sets
+satisfies
+<math role="math" aria-label="f\left(g \cdot{ }_{X} x\right)= g \cdot_{Y} f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>g</mi><mo>&sdot;</mo><msub><mrow></mrow><mi>X</mi></msub><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>g</mi><msub><mo>&sdot;</mo><mi>Y</mi></msub><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f\left(g \cdot{ }_{X} x\right)= g \cdot_{Y} f(x)</annotation></semantics></math>
+for all
+<math role="math" aria-label="g \in G, x \in X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&isin;</mo><mi>G</mi><mo>,</mo><mi>x</mi><mo>&isin;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">g \in G, x \in X</annotation></semantics></math>.
+Let
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+be a subgroup of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>;
+we know that the left-coset space
+<math role="math" aria-label="G / H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>/</mi><mi>H</mi></mrow><annotation encoding="application/x-tex">G / H</annotation></semantics></math>
+becomes a
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-set
+under
+<math role="math" aria-label="g \cdot x H=g x H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&sdot;</mo><mi>x</mi><mi>H</mi><mo>=</mo><mi>g</mi><mi>x</mi><mi>H</mi></mrow><annotation encoding="application/x-tex">g \cdot x H=g x H</annotation></semantics></math>.
+Describe all possible
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-homomorphisms
+<math role="math" aria-label="G / H \xrightarrow{f} X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>/</mi><mi>H</mi><mover><mo>&rarr;</mo><mi>f</mi></mover><mi>X</mi></mrow><annotation encoding="application/x-tex">G / H \xrightarrow{f} X</annotation></semantics></math>.</p></li>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<li><p>Find the number of elements of order precisely
+<math role="math" aria-label="p^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mn>2</mn></msup><annotation encoding="application/x-tex">p^{2}</annotation></semantics></math>
+in the group
+<math role="math" aria-label="G=Z_{p^{3}} \times Z_{p^{5}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><msub><mi>Z</mi><msup><mi>p</mi><mn>3</mn></msup></msub><mo>&times;</mo><msub><mi>Z</mi><msup><mi>p</mi><mn>5</mn></msup></msub></mrow><annotation encoding="application/x-tex">G=Z_{p^{3}} \times Z_{p^{5}}</annotation></semantics></math>,
+where
+<math role="math" aria-label="Z_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Z</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Z_{n}</annotation></semantics></math>
+denotes the cyclic group of order
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.</p></li>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<li><p>If a prime
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+divides the order of a finite simple group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,
+show that
+<math role="math" aria-label="|G|&lt;n_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>G</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><msub><mi>n</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">|G|&lt;n_{p}</annotation></semantics></math>
+! where
+<math role="math" aria-label="n_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mi>p</mi></msub><annotation encoding="application/x-tex">n_{p}</annotation></semantics></math>
+is the number of distinct
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-Sylow
+subgroups of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.</p></li>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<li><p>Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be the ring of all continuous real-valued functiuons on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.
+Show that the set of functions
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+with
+<math role="math" aria-label="f(1)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(1)=0</annotation></semantics></math>
+is a maximal ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+which is not principal.</p></li>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<li><p>Let
+<math role="math" aria-label="T=\lambda I d+Z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mi>&lambda;</mi><mi>I</mi><mi>d</mi><mo>+</mo><mi>Z</mi></mrow><annotation encoding="application/x-tex">T=\lambda I d+Z</annotation></semantics></math>
+for
+<math role="math" aria-label="\lambda" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&lambda;</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+in a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+of characteristic 0 and
+<math role="math" aria-label="Z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>
+nilpotent (
+<math role="math" aria-label="Z^{m}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>Z</mi><mi>m</mi></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">Z^{m}=0</annotation></semantics></math>
+for some
+<math role="math" aria-label="m)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">m)</annotation></semantics></math>.
+Show that if
+<math role="math" aria-label="T^{k}=I d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mi>k</mi></msup><mo>=</mo><mi>I</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">T^{k}=I d</annotation></semantics></math>
+for some
+<math role="math" aria-label="k&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k&gt;0</annotation></semantics></math>
+then
+<math role="math" aria-label="Z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>
+must be the zero transformation.</p></li>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<li><p>If
+<math role="math" aria-label="T(v) \in F v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>F</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">T(v) \in F v</annotation></semantics></math>
+for all
+<math role="math" aria-label="v \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">v \in V</annotation></semantics></math>,
+show that
+<math role="math" aria-label="T=\lambda I d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mi>&lambda;</mi><mi>I</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">T=\lambda I d</annotation></semantics></math>
+is a "scalar" for some
+<math role="math" aria-label="\lambda \in F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>&isin;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">\lambda \in F</annotation></semantics></math>.</p></li>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<li><p>If
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is a finite subgroup of
+<math role="math" aria-label="S L_{2}(\mathbb{C})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><msub><mi>L</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>&Copf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">S L_{2}(\mathbb{C})</annotation></semantics></math>
+(the complex
+<math role="math" aria-label="2 \times 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&times;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2 \times 2</annotation></semantics></math>
+matrices of determinant 1 ) then
+<math role="math" aria-label="A v=v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>v</mi><mo>=</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">A v=v</annotation></semantics></math>
+for
+<math role="math" aria-label="A \in G, v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&isin;</mo><mi>G</mi><mo>,</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">A \in G, v</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{C}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Copf;</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{C}^{2}</annotation></semantics></math>
+implies
+<math role="math" aria-label="A=I_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><msub><mi>I</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">A=I_{2}</annotation></semantics></math>
+is the
+<math role="math" aria-label="2 \times 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&times;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2 \times 2</annotation></semantics></math>
+identity matrix or
+<math role="math" aria-label="v=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v=0</annotation></semantics></math>
+is the zero vector.</p></li>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<li><p>For an element
+<math role="math" aria-label="a \in \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">a \in \mathbb{Q}</annotation></semantics></math>,
+consider the ring homomorphism
+<math role="math" aria-label="\varphi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&phi;</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math>
+from the polynomial ring
+<math role="math" aria-label="\mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}[x]</annotation></semantics></math>
+to the ring
+<math role="math" aria-label="M_{3}(\mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mn>3</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M_{3}(\mathbb{Q})</annotation></semantics></math>
+of
+<math role="math" aria-label="3 \times 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>&times;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">3 \times 3</annotation></semantics></math>
+matrices, given by evaluation
+<math role="math" aria-label="f(x) \mapsto f(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&map;</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x) \mapsto f(A)</annotation></semantics></math>
+for
+<math role="math" aria-label="A=\left[\begin{array}{lll}a &amp; 1 &amp; 0 \\ 0 &amp; a &amp; 1 \\ 0 &amp; 0 &amp; a\end{array}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><mi>a</mi></mtd><mtd columnalign="left" style="text-align: left"><mn>1</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mn>0</mn></mtd><mtd columnalign="left" style="text-align: left"><mi>a</mi></mtd><mtd columnalign="left" style="text-align: left"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mn>0</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>0</mn></mtd><mtd columnalign="left" style="text-align: left"><mi>a</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">A=\left[\begin{array}{lll}a &amp; 1 &amp; 0 \\ 0 &amp; a &amp; 1 \\ 0 &amp; 0 &amp; a\end{array}\right]</annotation></semantics></math>.
+Show that the kernel of
+<math role="math" aria-label="\varphi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&phi;</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math>
+is the set of all polynomials
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+with
+<math role="math" aria-label="f(a)=f^{\prime}(a)=f^{\prime \prime}(a)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>f</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(a)=f^{\prime}(a)=f^{\prime \prime}(a)=0</annotation></semantics></math>.
+Is this a principal ideal?</p></li>
+<h2 class="unnumbered" id="problem-9">Problem 9</h2>
+<li><p>Prove that
+<math role="math" aria-label="\sqrt{2}+{ }^{3} \sqrt{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt><mo>+</mo><msup><mrow></mrow><mn>3</mn></msup><msqrt><mn>3</mn></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{2}+{ }^{3} \sqrt{3}</annotation></semantics></math>
+is irrational.</p></li>
+<h2 class="unnumbered" id="problem-10">Problem 10</h2>
+<li><p>Find all subfields of the field
+<math role="math" aria-label="\mathbb{Q}\left[\zeta_{3},{ }^{3} \sqrt{2}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>&zeta;</mi><mn>3</mn></msub><mo>,</mo><msup><mrow></mrow><mn>3</mn></msup><msqrt><mn>2</mn></msqrt><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{Q}\left[\zeta_{3},{ }^{3} \sqrt{2}\right]</annotation></semantics></math>
+for
+<math role="math" aria-label="\zeta_{3} \in \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&zeta;</mi><mn>3</mn></msub><mo>&isin;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">\zeta_{3} \in \mathbb{C}</annotation></semantics></math>
+a primitive cube root of unity.</p></li>
+</ol>
+</main>
+</body>
+</html>

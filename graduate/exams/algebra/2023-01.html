@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Algebra General Exam - January 2023 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Algebra General Exam - January 2023</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="algebra-general-exam---january-2023">Algebra General Exam - January 2023</h1>
+<p><strong>Your UVa ID Number:</strong></p>
+<ul>
+<li><p>Please Prove all your work and justify any statements that you
+make.</p></li>
+<li><p>State clearly and fully any theorem you use.</p></li>
+<li><p>Vague statements and hand-waving arguments will not be
+appreciated.</p></li>
+<li><p>You may assume the statement in an earlier part Proven in order
+to do a later part. do EACH PROBLEM ON A SEPARATE SHEET OF PAPER, AND
+STAPLE THEM TOGETHER IN THE CORRECT ORDER BEFORE TURNING THE EXAM
+IN.</p></li>
+</ul>
+<p>Sign below the pledge:<br />
+"On my honor, I pledge that I have neither given nor received help on
+this assignment."</p>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>(a) ( 8 points) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a finite group, and
+<math role="math" aria-label="H \varsubsetneqq G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>⊊</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">H \varsubsetneqq G</annotation></semantics></math>
+be a proper subgroup. Prove that</p>
+<p><math role="math" aria-label="G \neq \bigcup_{g \in G} g H g^{-1}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>&ne;</mo><munder><mo>⋃</mo><mrow><mi>g</mi><mo>&isin;</mo><mi>G</mi></mrow></munder><mi>g</mi><mi>H</mi><msup><mi>g</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">G \neq \bigcup_{g \in G} g H g^{-1}</annotation></semantics></math></p>
+<p>(Hint. Estimate the number of elements in the right-hand side.)<br />
+(b) ( 8 points) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a transitive subgroup of the symmetric group
+<math role="math" aria-label="S_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math>.
+Prove that there exists
+<math role="math" aria-label="g \in G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&isin;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">g \in G</annotation></semantics></math>
+that has no fixed points on
+<math role="math" aria-label="I_{n}=\{1,2, \ldots, n\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>n</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">I_{n}=\{1,2, \ldots, n\}</annotation></semantics></math>
+(i.e. there is no
+<math role="math" aria-label="i \in I_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>&isin;</mo><msub><mi>I</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">i \in I_{n}</annotation></semantics></math>
+such that
+<math role="math" aria-label="g(i)=i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">g(i)=i</annotation></semantics></math>
+).</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Let
+<math role="math" aria-label="R=\mathbb{Z}[\sqrt[3]{2}]=\left\{a_{0}+a_{1} \sqrt[3]{2}+a_{2}(\sqrt[3]{2})^{2} \mid a_{0}, a_{1}, a_{2} \in \mathbb{Z}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mroot><mn>2</mn><mn>3</mn></mroot><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><mroot><mn>2</mn><mn>3</mn></mroot><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">(</mo><mroot><mn>2</mn><mn>3</mn></mroot><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>∣</mo><msub><mi>a</mi><mn>0</mn></msub><mo>,</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><msub><mi>a</mi><mn>2</mn></msub><mo>&isin;</mo><mi>&Zopf;</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[\sqrt[3]{2}]=\left\{a_{0}+a_{1} \sqrt[3]{2}+a_{2}(\sqrt[3]{2})^{2} \mid a_{0}, a_{1}, a_{2} \in \mathbb{Z}\right\}</annotation></semantics></math>.<br />
+(a) ( 5 points) Prove that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a subring of
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>.<br />
+(b) (6 points) Prove that the evaluation homomorphism
+<math role="math" aria-label="\mathbb{Z}[x] \rightarrow R, p(x) \mapsto p(\sqrt[3]{2})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo>&rarr;</mo><mi>R</mi><mo>,</mo><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&map;</mo><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mroot><mn>2</mn><mn>3</mn></mroot><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[x] \rightarrow R, p(x) \mapsto p(\sqrt[3]{2})</annotation></semantics></math>,
+yields a ring isomorphism</p>
+<p><math role="math" aria-label="R \simeq \mathbb{Z}[x] /\left(x^{3}-2\right)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>≃</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">R \simeq \mathbb{Z}[x] /\left(x^{3}-2\right)</annotation></semantics></math></p>
+<p>(c) ( 6 points) Using the isomorphism from part (b) and the 3rd
+Isomorphism Theorem, can you determine if the ideals
+<math role="math" aria-label="5 R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mi>R</mi></mrow><annotation encoding="application/x-tex">5 R</annotation></semantics></math>
+and
+<math role="math" aria-label="7 R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mi>R</mi></mrow><annotation encoding="application/x-tex">7 R</annotation></semantics></math>
+are prime or maximal?</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>(8 points) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field (possibly finite). Prove that the polynomial ring
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>
+has infinitely many prime ideals.<br />
+Note: You cannot assume without proof that
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>
+has infinitely many irreducible polynomials.</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>(10 points) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 . Let
+<math role="math" aria-label="f: \mathbb{Z}^{n} \rightarrow \mathbb{Z}^{m}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>&Zopf;</mi><mi>n</mi></msup><mo>&rarr;</mo><msup><mi>&Zopf;</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">f: \mathbb{Z}^{n} \rightarrow \mathbb{Z}^{m}</annotation></semantics></math>
+be a
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-module
+homomorphism, and let
+<math role="math" aria-label="K=\operatorname{ker} f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mrow><mi mathvariant="normal">ker</mi><mo>&#8289;</mo></mrow><mi>f</mi></mrow><annotation encoding="application/x-tex">K=\operatorname{ker} f</annotation></semantics></math>.
+Prove that there exists a submodule
+<math role="math" aria-label="M \subset \mathbb{Z}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&sub;</mo><msup><mi>&Zopf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">M \subset \mathbb{Z}^{n}</annotation></semantics></math>
+such that<br />
+<math role="math" aria-label="\mathbb{Z}^{n}=K \oplus M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Zopf;</mi><mi>n</mi></msup><mo>=</mo><mi>K</mi><mo>&oplus;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z}^{n}=K \oplus M</annotation></semantics></math>.
+(Hint. Argue that
+<math role="math" aria-label="P:=\operatorname{im} f \subset \mathbb{Z}^{m}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>:=</mo><mrow><mi mathvariant="normal">im</mi><mo>&#8289;</mo></mrow><mi>f</mi><mo>&sub;</mo><msup><mi>&Zopf;</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">P:=\operatorname{im} f \subset \mathbb{Z}^{m}</annotation></semantics></math>
+is projective.) Reminder. An
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+is called projective if, for any surjective module homomorphism
+<math role="math" aria-label="\varphi: M \rightarrow N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">\varphi: M \rightarrow N</annotation></semantics></math>,
+every module homomorphism
+<math role="math" aria-label="\psi: P \rightarrow N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&psi;</mi><mo>:</mo><mi>P</mi><mo>&rarr;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">\psi: P \rightarrow N</annotation></semantics></math>
+admits a lifting
+<math role="math" aria-label="\tilde{\psi}: P \rightarrow M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>&psi;</mi><mo accent="true">̃</mo></mover><mo>:</mo><mi>P</mi><mo>&rarr;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">\tilde{\psi}: P \rightarrow M</annotation></semantics></math>
+such that
+<math role="math" aria-label="\varphi \circ \tilde{\psi}=\psi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo>&SmallCircle;</mo><mover><mi>&psi;</mi><mo accent="true">̃</mo></mover><mo>=</mo><mi>&psi;</mi></mrow><annotation encoding="application/x-tex">\varphi \circ \tilde{\psi}=\psi</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Let
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+be a finite Galois extension of degree
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+with Galois group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.
+In this problem, we think of the elements of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+as linear transformations
+<math role="math" aria-label="\sigma: L \rightarrow L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&sigma;</mi><mo>:</mo><mi>L</mi><mo>&rarr;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">\sigma: L \rightarrow L</annotation></semantics></math>
+of the
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>-dimensional
+vector space
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.<br />
+(a) ( 5 points) Let
+<math role="math" aria-label="\sigma \in G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&sigma;</mi><mo>&isin;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">\sigma \in G</annotation></semantics></math>
+be an element of order
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Prove that the minimal polynomial of
+<math role="math" aria-label="\sigma: L \rightarrow L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&sigma;</mi><mo>:</mo><mi>L</mi><mo>&rarr;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">\sigma: L \rightarrow L</annotation></semantics></math>
+is
+<math role="math" aria-label="\mu(x)=x^{n}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mu(x)=x^{n}-1</annotation></semantics></math>.
+(Hint. Use the standard theorem about linear independence of
+characters.)<br />
+(b) ( 10 points) Assume that
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is a prime
+<math role="math" aria-label="\neq" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&ne;</mo><annotation encoding="application/x-tex">\neq</annotation></semantics></math>
+char
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+and
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+contains a primitive
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-th
+root of unity. Let
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+be a Galois extension of degree
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+and let
+<math role="math" aria-label="\sigma \in \operatorname{Gal}(L / K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&sigma;</mi><mo>&isin;</mo><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mi>/</mi><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\sigma \in \operatorname{Gal}(L / K)</annotation></semantics></math>
+be a nontrivial automorphism. Prove that
+<math role="math" aria-label="\sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&sigma;</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>
+is diagonalizable. Identify its eigenvalues, the corresponding
+eigenvectors and derive from this analysis that
+<math role="math" aria-label="L=K(\sqrt[p]{a})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mroot><mi>a</mi><mi>p</mi></mroot><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L=K(\sqrt[p]{a})</annotation></semantics></math>
+for some
+<math role="math" aria-label="a \in K^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><msup><mi>K</mi><mo>&times;</mo></msup></mrow><annotation encoding="application/x-tex">a \in K^{\times}</annotation></semantics></math>.
+(Note. This gives an easier proof of Kummer theory in this special
+case).</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>( 10 points) Let
+<math role="math" aria-label="K / \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">K / \mathbb{Q}</annotation></semantics></math>
+be a Galois extension with Galois group
+<math role="math" aria-label="S_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math>
+(symmetric group) for some
+<math role="math" aria-label="n \geq 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">n \geq 5</annotation></semantics></math>.
+Assume that
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+contains a primitive root of unity
+<math role="math" aria-label="\zeta_{d}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&zeta;</mi><mi>d</mi></msub><annotation encoding="application/x-tex">\zeta_{d}</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="d \leq 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&le;</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">d \leq 6</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>(a) (6 points) Let
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+be a field extension and
+<math role="math" aria-label="f(x) \in K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x) \in K[x]</annotation></semantics></math>.
+Prove that there is an isomorphism of
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>-algebras</p>
+<p><math role="math" aria-label="L \bigotimes_{K} \frac{K[x]}{f(x) K[x]} \simeq \frac{L[x]}{f(x) L[x]}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msub><mo>⨂</mo><mi>K</mi></msub><mfrac><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow></mfrac><mo>≃</mo><mfrac><mrow><mi>L</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>L</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">L \bigotimes_{K} \frac{K[x]}{f(x) K[x]} \simeq \frac{L[x]}{f(x) L[x]}</annotation></semantics></math></p>
+<p>Note. The
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>-algebra
+structure on the ring
+<math role="math" aria-label="L \otimes_{K} \frac{K[x]}{f(x) K[x]}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mfrac><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">L \otimes_{K} \frac{K[x]}{f(x) K[x]}</annotation></semantics></math>
+is given on simple tensors by
+<math role="math" aria-label="c \cdot(a \otimes \overline{g(x)}):=(c a) \otimes \overline{g(x)}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&sdot;</mo><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>&otimes;</mo><mover><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><mo accent="true">¯</mo></mover><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>&otimes;</mo><mover><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><mo accent="true">¯</mo></mover></mrow><annotation encoding="application/x-tex">c \cdot(a \otimes \overline{g(x)}):=(c a) \otimes \overline{g(x)}</annotation></semantics></math>,
+where
+<math role="math" aria-label="c a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">c a</annotation></semantics></math>
+is the ring multiplication in
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>.<br />
+(b) ( 7 points) Suppose that
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+is a finite Galois extension of degree
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Prove that there is an isomorphism of
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>-algebras</p>
+<p><math role="math" aria-label="L \otimes_{K} L \simeq \underbrace{L \times \cdots \times L}_{n} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>L</mi><mo>≃</mo><munder><munder><mrow><mi>L</mi><mo>&times;</mo><mi>⋯</mi><mo>&times;</mo><mi>L</mi></mrow><mo accent="true">⏟</mo></munder><mi>n</mi></munder><mi>.</mi></mrow><annotation encoding="application/x-tex">L \otimes_{K} L \simeq \underbrace{L \times \cdots \times L}_{n} .</annotation></semantics></math></p>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+be the
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>-vector
+space of all polynomials
+<math role="math" aria-label="p(x, y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p(x, y)</annotation></semantics></math>
+in two variables of total degree
+<math role="math" aria-label="\leq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&le;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\leq 2</annotation></semantics></math>.
+Let
+<math role="math" aria-label="T: V \rightarrow V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>:</mo><mi>V</mi><mo>&rarr;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">T: V \rightarrow V</annotation></semantics></math>
+be the linear transformation
+<math role="math" aria-label="T(f)=\frac{\partial f}{\partial x}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mi>&part;</mi><mi>f</mi></mrow><mrow><mi>&part;</mi><mi>x</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">T(f)=\frac{\partial f}{\partial x}</annotation></semantics></math>.<br />
+(a) ( 2 points) Prove that
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+is nilpotent.<br />
+(b) ( 9 points) Construct a Jordan basis for
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+and compute its Jordan canonical form.</p>
+</main>
+</body>
+</html>

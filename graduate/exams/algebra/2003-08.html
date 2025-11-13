@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ALGEBRA GENERAL EXAM AUGUST 16, 2003, UVA - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">ALGEBRA GENERAL EXAM AUGUST 16, 2003, UVA</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered"
+id="algebra-general-exam-august-16-2003-uva">ALGEBRA GENERAL EXAM AUGUST 16, 2003, UVA</h1>
+<p>Notations. Throughout the exam, we denote by
+<math role="math" aria-label="\mathbb{Z}_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Zopf;</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\mathbb{Z}_{n}</annotation></semantics></math>
+the cyclic group of
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+elements,
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+the rational field,
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+the real field.</p>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>( 10 points) Let
+<math role="math" aria-label="G=S L_{2}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mi>S</mi><msub><mi>L</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G=S L_{2}(\mathbb{R})</annotation></semantics></math>
+be the group of real
+<math role="math" aria-label="2 \times 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&times;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2 \times 2</annotation></semantics></math>
+matrices with determinant one, and let
+<math role="math" aria-label="\mathbb{H}=\{z \in \mathbb{C} \mid \operatorname{Im} z&gt;0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℍ</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>∣</mo><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mi>z</mi><mo>&gt;</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{H}=\{z \in \mathbb{C} \mid \operatorname{Im} z&gt;0\}</annotation></semantics></math>
+be the upper half of the complex plane. It is known that the map
+<math role="math" aria-label="G \times \mathbb{H} \rightarrow \mathbb{H},(g, z) \mapsto g(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>&times;</mo><mi>ℍ</mi><mo>&rarr;</mo><mi>ℍ</mi><mo>,</mo><mo stretchy="false" form="prefix">(</mo><mi>g</mi><mo>,</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&map;</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G \times \mathbb{H} \rightarrow \mathbb{H},(g, z) \mapsto g(z)</annotation></semantics></math>,
+defines an action of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+on
+<math role="math" aria-label="\mathbb{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℍ</mi><annotation encoding="application/x-tex">\mathbb{H}</annotation></semantics></math>,
+where</p>
+<p><math role="math" aria-label="g(z)=\frac{a z+b}{c z+d}, \quad \text { for } g=\left[\begin{array}{cc}
+a &amp; b \\
+c &amp; d
+\end{array}\right] \in G ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mi>a</mi><mi>z</mi><mo>+</mo><mi>b</mi></mrow><mrow><mi>c</mi><mi>z</mi><mo>+</mo><mi>d</mi></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for </mtext><mspace width="0.333em"></mspace></mrow><mi>g</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>a</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>b</mi></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>c</mi></mtd><mtd columnalign="center" style="text-align: center"><mi>d</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">]</mo></mrow><mo>&isin;</mo><mi>G</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">g(z)=\frac{a z+b}{c z+d}, \quad \text { for } g=\left[\begin{array}{cc}
+a &amp; b \\
+c &amp; d
+\end{array}\right] \in G .</annotation></semantics></math></p>
+<p>(a) Identify the stabilizer
+<math role="math" aria-label="G(i)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(i)</annotation></semantics></math>
+of the point
+<math role="math" aria-label="z=i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mi>i</mi></mrow><annotation encoding="application/x-tex">z=i</annotation></semantics></math>
+(the imaginary root) in
+<math role="math" aria-label="\mathbb{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℍ</mi><annotation encoding="application/x-tex">\mathbb{H}</annotation></semantics></math>
+under this action.<br />
+(b) Show that the action of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+on
+<math role="math" aria-label="\mathbb{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℍ</mi><annotation encoding="application/x-tex">\mathbb{H}</annotation></semantics></math>
+is transitive.</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>( 10 points) Let
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+be a PID with
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+as its field of fractions. Show that every element
+<math role="math" aria-label="x \in F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">x \in F</annotation></semantics></math>
+can be written as a sum of primary fractions (i.e. with denominators
+powers of primes):</p>
+<p><math role="math" aria-label="x=\sum_{i=1}^{n} \frac{a_{i}}{p_{i}^{e_{i}}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><msub><mi>a</mi><mi>i</mi></msub><msubsup><mi>p</mi><mi>i</mi><msub><mi>e</mi><mi>i</mi></msub></msubsup></mfrac></mrow><annotation encoding="application/x-tex">x=\sum_{i=1}^{n} \frac{a_{i}}{p_{i}^{e_{i}}}</annotation></semantics></math></p>
+<p>for some
+<math role="math" aria-label="a_{1}, \ldots, a_{n} \in D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub><mo>&isin;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">a_{1}, \ldots, a_{n} \in D</annotation></semantics></math>,
+and distinct primes
+<math role="math" aria-label="p_{1}, \ldots, p_{n} \in D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub><mo>&isin;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">p_{1}, \ldots, p_{n} \in D</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>( 15 points) Let
+<math role="math" aria-label="P_{2 n-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mrow><mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">P_{2 n-1}</annotation></semantics></math>
+be the vector space of polynomials in one variable
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+with real coefficients of degree
+<math role="math" aria-label="\leq 2 n-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&le;</mo><mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\leq 2 n-1</annotation></semantics></math>.
+Let
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+denote the linear operator on
+<math role="math" aria-label="P_{2 n-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mrow><mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">P_{2 n-1}</annotation></semantics></math>
+defined by
+<math role="math" aria-label="p(x) \mapsto p(x)+p^{\prime \prime}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&map;</mo><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msup><mi>p</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p(x) \mapsto p(x)+p^{\prime \prime}(x)</annotation></semantics></math>
+for every
+<math role="math" aria-label="p(x) \in P_{2 n-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msub><mi>P</mi><mrow><mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">p(x) \in P_{2 n-1}</annotation></semantics></math>,
+where
+<math role="math" aria-label="p^{\prime \prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><annotation encoding="application/x-tex">p^{\prime \prime}</annotation></semantics></math>
+denotes the second derivative.<br />
+(a) Write the matrix
+<math role="math" aria-label="A_{T}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>T</mi></msub><annotation encoding="application/x-tex">A_{T}</annotation></semantics></math>
+of the operator
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+with respect to the basis
+<math role="math" aria-label="\left\{1, x, x^{2}, \ldots, x^{2 n-1}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><mn>1</mn><mo>,</mo><mi>x</mi><mo>,</mo><msup><mi>x</mi><mn>2</mn></msup><mo>,</mo><mi>…</mi><mo>,</mo><msup><mi>x</mi><mrow><mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{1, x, x^{2}, \ldots, x^{2 n-1}\right\}</annotation></semantics></math>
+of
+<math role="math" aria-label="P_{2 n-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mrow><mn>2</mn><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">P_{2 n-1}</annotation></semantics></math>.<br />
+(b) Find the Jordan canonical form of
+<math role="math" aria-label="A_{T}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>T</mi></msub><annotation encoding="application/x-tex">A_{T}</annotation></semantics></math>
+AND a Jordan basis for
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>( 15 points)<br />
+(a) Determine the following tensor products and explain your
+answers.<br />
+(i)
+<math role="math" aria-label="\mathbb{R} \bigotimes_{\mathbb{Z}} \mathbb{Z}_{2003}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><msub><mo>⨂</mo><mi>&Zopf;</mi></msub><msub><mi>&Zopf;</mi><mn>2003</mn></msub></mrow><annotation encoding="application/x-tex">\mathbb{R} \bigotimes_{\mathbb{Z}} \mathbb{Z}_{2003}</annotation></semantics></math><br />
+(ii)
+<math role="math" aria-label="\mathbb{Q}[x] /\left(x^{2}+1\right) \bigotimes_{\mathbb{Q}[x]} \mathbb{Q}[x] /\left(x^{2}+2\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>⨂</mo><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow></msub><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{Q}[x] /\left(x^{2}+1\right) \bigotimes_{\mathbb{Q}[x]} \mathbb{Q}[x] /\left(x^{2}+2\right)</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+and
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+be finite-dimensional vector spaces over a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+and
+<math role="math" aria-label="\left\{v_{1}, \ldots, v_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>v</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{v_{1}, \ldots, v_{n}\right\}</annotation></semantics></math>
+be a basis of
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>.
+Prove that if</p>
+<p><math role="math" aria-label="v_{1} \otimes w_{1}+\cdots+v_{n} \otimes w_{n}=0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>&otimes;</mo><msub><mi>w</mi><mn>1</mn></msub><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>v</mi><mi>n</mi></msub><mo>&otimes;</mo><msub><mi>w</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_{1} \otimes w_{1}+\cdots+v_{n} \otimes w_{n}=0</annotation></semantics></math></p>
+<p>in
+<math role="math" aria-label="V \bigotimes_{F} W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><msub><mo>⨂</mo><mi>F</mi></msub><mi>W</mi></mrow><annotation encoding="application/x-tex">V \bigotimes_{F} W</annotation></semantics></math>
+for
+<math role="math" aria-label="w_{1}, \ldots, w_{n} \in W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>w</mi><mi>n</mi></msub><mo>&isin;</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">w_{1}, \ldots, w_{n} \in W</annotation></semantics></math>,
+then
+<math role="math" aria-label="w_{1}=\cdots=w_{n}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>=</mo><mi>⋯</mi><mo>=</mo><msub><mi>w</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">w_{1}=\cdots=w_{n}=0</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>( 10 points) Choose your favorite one, denoted by
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,
+between the Klein four group (i.e.
+<math role="math" aria-label="\mathbb{Z}_{2} \times \mathbb{Z}_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><mn>2</mn></msub><mo>&times;</mo><msub><mi>&Zopf;</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{2} \times \mathbb{Z}_{2}</annotation></semantics></math>
+) and the diheral group
+<math role="math" aria-label="D_{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>4</mn></msub><annotation encoding="application/x-tex">D_{4}</annotation></semantics></math>
+of order 8. Provide an example of an irreducible degree 4 polynomial
+whose Galois group over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.
+Show your work.</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>( 15 points) Let
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+be a symmetric bilinear form on a finite-dimensional vector space
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+over a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.
+For a subspace
+<math role="math" aria-label="W \subset V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&sub;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">W \subset V</annotation></semantics></math>,
+we define the annihilator subspace of
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+in
+<math role="math" aria-label="V: W^{\perp}=\{x \in V \mid B(x, w)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>:</mo><msup><mi>W</mi><mo>&perp;</mo></msup><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>&isin;</mo><mi>V</mi><mo>∣</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">V: W^{\perp}=\{x \in V \mid B(x, w)=0</annotation></semantics></math>
+for every
+<math role="math" aria-label="w \in W\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>&isin;</mo><mi>W</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">w \in W\}</annotation></semantics></math>.
+Assume further that
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is nondegenerate, that is
+<math role="math" aria-label="V^{\perp}=\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>V</mi><mo>&perp;</mo></msup><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">V^{\perp}=\{0\}</annotation></semantics></math>.
+Show that:<br />
+(a)
+<math role="math" aria-label="\operatorname{dim} W^{\perp}=\operatorname{dim} V-\operatorname{dim} W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><msup><mi>W</mi><mo>&perp;</mo></msup><mo>=</mo><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>V</mi><mo>−</mo><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>W</mi></mrow><annotation encoding="application/x-tex">\operatorname{dim} W^{\perp}=\operatorname{dim} V-\operatorname{dim} W</annotation></semantics></math>.<br />
+(b)
+<math role="math" aria-label="\left(W^{\perp}\right)^{\perp}=W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>W</mi><mo>&perp;</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>&perp;</mo></msup><mo>=</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">\left(W^{\perp}\right)^{\perp}=W</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>(10 points for (a) and (b)) (Hint: proof by contradiction could be
+useful)</p>
+<p>Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a finite group of order
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Suppose that for every
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+dividing
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+the equation
+<math role="math" aria-label="x^{d}=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>d</mi></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{d}=1</annotation></semantics></math>
+has at most
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+solutions in
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.
+Show that:<br />
+(a) For each prime
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+the Sylow
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-subgroup
+of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is unique, and thus is normal.<br />
+(b) The Sylow
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-subgroup
+of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is cyclic.<br />
+(c) (bonus problem) Use (a) and (b) to show that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is cyclic.</p>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>( 15 points) Determine whether each of the following statements is
+TRUE or FALSE. You do NOT need to show your work.<br />
+(a) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a finite group. Assume that
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+is a normal subgroup of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+and
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+is a normal subgroup of
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>.
+Then
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+is normal in
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.<br />
+(b) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is PID, so is
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>.<br />
+(c) The integer orthogonal group
+<math role="math" aria-label="O_{n}(\mathbb{Z})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>O</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Zopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O_{n}(\mathbb{Z})</annotation></semantics></math>,
+which consists of
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+orthogonal matrices whose entries are all integers, is a finite
+group.<br />
+(d) Let
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+be a prime. Then the number of monic irreducible polynomials of degree 2
+over a finite field
+<math role="math" aria-label="\mathbb{F}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝔽</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{p}</annotation></semantics></math>
+is
+<math role="math" aria-label="p(p-1) / 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">p(p-1) / 2</annotation></semantics></math>.<br />
+(e) If an arbitrary integer polynomial
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+has no roots in
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>,
+then it has no roots in
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>.</p>
+</main>
+</body>
+</html>

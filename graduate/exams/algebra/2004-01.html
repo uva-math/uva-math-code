@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>ALGEBRA
+GENERAL EXAM JANUARY 10, 2004 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">ALGEBRA
+GENERAL EXAM JANUARY 10, 2004</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="algebra-general-exam-january-10-2004">ALGEBRA
+GENERAL EXAM JANUARY 10, 2004</h1>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>( 10 point) Let
+<math role="math" aria-label="G=\left\{g_{1}, \cdots, g_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>g</mi><mn>1</mn></msub><mo>,</mo><mi>⋯</mi><mo>,</mo><msub><mi>g</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">G=\left\{g_{1}, \cdots, g_{n}\right\}</annotation></semantics></math>
+a finite abelian group. Show that the product
+<math role="math" aria-label="P:=g_{1} \cdots g_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>:=</mo><msub><mi>g</mi><mn>1</mn></msub><mi>⋯</mi><msub><mi>g</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">P:=g_{1} \cdots g_{n}</annotation></semantics></math>
+is of order 1 or 2 .</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>(10 point) Let
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+be the subgroup of
+<math role="math" aria-label="G:=\mathbb{Z} \oplus \mathbb{Z}=\{(m, n) \mid m, n \in \mathbb{Z}\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>:=</mo><mi>&Zopf;</mi><mo>&oplus;</mo><mi>&Zopf;</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><mi>&Zopf;</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">G:=\mathbb{Z} \oplus \mathbb{Z}=\{(m, n) \mid m, n \in \mathbb{Z}\}</annotation></semantics></math>
+generated by
+<math role="math" aria-label="(1,2)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1,2)</annotation></semantics></math>
+and
+<math role="math" aria-label="(3,4)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(3,4)</annotation></semantics></math>.
+Identify the quotient group
+<math role="math" aria-label="G / H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>/</mi><mi>H</mi></mrow><annotation encoding="application/x-tex">G / H</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>( 15 point)</p>
+<p>
+(a) If
+<math role="math" aria-label="A \in M_{n}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&isin;</mo><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A \in M_{n}(\mathbb{R})</annotation></semantics></math>
+is idempotent, i.e.
+<math role="math" aria-label="A^{2}=A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A^{2}=A</annotation></semantics></math>,
+then it is diagonalizable.<br />
+(b) Two idempotent matrices
+<math role="math" aria-label="A, B \in M_{n}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>&isin;</mo><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A, B \in M_{n}(\mathbb{R})</annotation></semantics></math>
+are similar if and only if they have the same rank.</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>( 10 point) Show that a principal ideal in
+<math role="math" aria-label="\mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[x]</annotation></semantics></math>
+can never be maximal.</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>( 15 point) Let
+<math role="math" aria-label="\xi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&xi;</mi><annotation encoding="application/x-tex">\xi</annotation></semantics></math>
+be a primitive 9 -th root of unity. Let
+<math role="math" aria-label="K=\mathbb{Q}(\xi)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>&xi;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K=\mathbb{Q}(\xi)</annotation></semantics></math>
+and
+<math role="math" aria-label="F=\mathbb{Q}\left(\xi+\xi^{-1}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>&xi;</mi><mo>+</mo><msup><mi>&xi;</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F=\mathbb{Q}\left(\xi+\xi^{-1}\right)</annotation></semantics></math>.<br />
+(a) Show that
+<math role="math" aria-label="[K: F]=2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">[K: F]=2</annotation></semantics></math>.<br />
+(b) Show that the extension
+<math role="math" aria-label="F / Q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>/</mi><mi>Q</mi></mrow><annotation encoding="application/x-tex">F / Q</annotation></semantics></math>
+is normal.</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+and
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+be finite dimensional vector spaces over a field
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>,
+and let
+<math role="math" aria-label="f: V \rightarrow V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>V</mi><mo>&rarr;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">f: V \rightarrow V</annotation></semantics></math>
+and
+<math role="math" aria-label="g: W \rightarrow W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mi>W</mi><mo>&rarr;</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">g: W \rightarrow W</annotation></semantics></math>
+be linear operators. One can define a linear operator
+<math role="math" aria-label="f \otimes g: V \otimes_{k} W \rightarrow V \otimes_{k} W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&otimes;</mo><mi>g</mi><mo>:</mo><mi>V</mi><msub><mo>&otimes;</mo><mi>k</mi></msub><mi>W</mi><mo>&rarr;</mo><mi>V</mi><msub><mo>&otimes;</mo><mi>k</mi></msub><mi>W</mi></mrow><annotation encoding="application/x-tex">f \otimes g: V \otimes_{k} W \rightarrow V \otimes_{k} W</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="\operatorname{Tr}(f \otimes g)=\operatorname{Tr} f \cdot \operatorname{Tr} g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Tr</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>&otimes;</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">Tr</mi><mo>&#8289;</mo></mrow><mi>f</mi><mo>&sdot;</mo><mrow><mi mathvariant="normal">Tr</mi><mo>&#8289;</mo></mrow><mi>g</mi></mrow><annotation encoding="application/x-tex">\operatorname{Tr}(f \otimes g)=\operatorname{Tr} f \cdot \operatorname{Tr} g</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>( 15 point) Let
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+be a finite set acted upon by a finite group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.
+Denote by
+<math role="math" aria-label="\mathbb{C}(S)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(S)</annotation></semantics></math>
+the complex vector space of complex-valued functions on
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.<br />
+(a) Show that the map
+<math role="math" aria-label="G \times \mathbb{C}(S) \rightarrow \mathbb{C}(S),(x, f) \mapsto x . f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>&times;</mo><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>&map;</mo><mi>x</mi><mi>.</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">G \times \mathbb{C}(S) \rightarrow \mathbb{C}(S),(x, f) \mapsto x . f</annotation></semantics></math>,
+defines a
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-action
+on
+<math role="math" aria-label="\mathbb{C}(S)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(S)</annotation></semantics></math>.
+Here
+<math role="math" aria-label="x . f \in \mathbb{C}(S)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi>.</mi><mi>f</mi><mo>&isin;</mo><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x . f \in \mathbb{C}(S)</annotation></semantics></math>
+is defined by
+<math role="math" aria-label="x . f(s)=f\left(x^{-1} s\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi>.</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>s</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>s</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">x . f(s)=f\left(x^{-1} s\right)</annotation></semantics></math>
+for all
+<math role="math" aria-label="s \in S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&isin;</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">s \in S</annotation></semantics></math>.<br />
+(b) Show that the dimension of the subspace of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-fixed
+points in
+<math role="math" aria-label="\mathbb{C}(S)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(S)</annotation></semantics></math>
+is equal to the number of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-orbits
+in
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>( 15 point) TRUE-FALSE. You do not need to justify your
+answers.<br />
+(a) Every matrix in
+<math role="math" aria-label="S L_{n}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><msub><mi>L</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">S L_{n}(\mathbb{R})</annotation></semantics></math>
+has a positive real eigenvalue if
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is odd.<br />
+(b) The Galois group of
+<math role="math" aria-label="x^{3}+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{3}+1</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="S_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mn>3</mn></msub><annotation encoding="application/x-tex">S_{3}</annotation></semantics></math>.<br />
+(c) A group of order 99 must have a unique normal subgroup of order
+11.<br />
+(d) There exists a unique finite field of order 6 up to
+isomorphism.<br />
+(e)
+<math role="math" aria-label="\mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[x]</annotation></semantics></math>
+is a Euclidean domain.</p>
+</main>
+</body>
+</html>

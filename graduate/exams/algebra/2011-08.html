@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>General Exam:
+Algebra - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">General Exam:
+Algebra</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="general-exam-algebra">General Exam:
+Algebra</h1>
+<p>August 15, 2011<br />
+Instructions. You have 4 hours for the exam. Each part of each question
+is worth 4 points. Do each question on a separate sheet of paper (one
+side only please), and staple the sheets together in the correct
+order.</p>
+<p>On this exam, all rings
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+have an identity 1 by fiat.</p>
+<ol>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<li><p>Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a simple (left) module for a ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+This means that
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+has no submodules apart from 0 and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="M \cong R / I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>≅</mo><mi>R</mi><mi>/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">M \cong R / I</annotation></semantics></math>
+where
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is a maximal left ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>..<br />
+(b) Show that
+<math role="math" aria-label="E:=\operatorname{End}_{R}(M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>:=</mo><msub><mrow><mi mathvariant="normal">End</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E:=\operatorname{End}_{R}(M)</annotation></semantics></math>
+is a division ring, i. e., every nonzero element of
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+is invertible.</p></li>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<li><p>The following question concerns symmetric groups. You can assume
+as given the fact that any permutation in
+<math role="math" aria-label="S_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math>
+can be written (uniquely up to order) as a (commuting) product of
+disjoint cycles (of varying lengths). Otherwise, your argument should be
+self-contained.<br />
+(a) For
+<math role="math" aria-label="n \geq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n \geq 2</annotation></semantics></math>,
+show that the symmetric group
+<math role="math" aria-label="S_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math>
+is generated by the transpositions
+<math role="math" aria-label="(i, j), 1 \leq i&lt; j \leq n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mn>1</mn><mo>&le;</mo><mi>i</mi><mo>&lt;</mo><mi>j</mi><mo>&le;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">(i, j), 1 \leq i&lt; j \leq n</annotation></semantics></math>.<br />
+(b) For
+<math role="math" aria-label="n \geq 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n \geq 3</annotation></semantics></math>,
+show that the alternating group
+<math role="math" aria-label="A_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_{n}</annotation></semantics></math>
+is generated by the 3-cycles
+<math role="math" aria-label="(1,2, i), 2&lt;i \leq 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>i</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mn>2</mn><mo>&lt;</mo><mi>i</mi><mo>&le;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">(1,2, i), 2&lt;i \leq 3</annotation></semantics></math>.<br />
+(c) Let
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+be a subgroup of a group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+of index
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+has a normal subgroup
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+which is contained in
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+and which has index
+<math role="math" aria-label="\leq n!" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&le;</mo><mi>n</mi><mi>!</mi></mrow><annotation encoding="application/x-tex">\leq n!</annotation></semantics></math>.</p></li>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<li><p>(a) Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+be an noetherian module for a ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+so that
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+satisfies the ascending chain condition on submodules. Let
+<math role="math" aria-label="T: V \rightarrow V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>:</mo><mi>V</mi><mo>&rarr;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">T: V \rightarrow V</annotation></semantics></math>
+be a surjective
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-endomorphism.
+Prove that
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+is an isomorphism.<br />
+(b) In (a) suppose that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a field, so
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+is a vector space. Give another explanation of (a) in terms of the rank
+and nullity of
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>.</p></li>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<li><p>(a) Find all the irreducible polynomials of degree 4 over the
+finite field
+<math role="math" aria-label="\mathbb{F}_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>𝔽</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathbb{F}_{2}</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="K / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K / F</annotation></semantics></math>
+be a finite extension of finite fields. Show the norm map
+<math role="math" aria-label="N_{K / F}: K \rightarrow F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mrow><mi>K</mi><mi>/</mi><mi>F</mi></mrow></msub><mo>:</mo><mi>K</mi><mo>&rarr;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">N_{K / F}: K \rightarrow F</annotation></semantics></math>
+is surjective.</p></li>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<li><p>This problem tests some standard linear algebra facts. You can
+quote standard theorems.</p></li>
+</ol>
+<p>Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field and let
+<math role="math" aria-label="T: F^{6} \rightarrow F^{6}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>:</mo><msup><mi>F</mi><mn>6</mn></msup><mo>&rarr;</mo><msup><mi>F</mi><mn>6</mn></msup></mrow><annotation encoding="application/x-tex">T: F^{6} \rightarrow F^{6}</annotation></semantics></math>
+be a linear operator with characteristic polynomial</p>
+<p><math role="math" aria-label="\chi_{T}(t)=\left(t^{2}+t+1\right)\left(t^{2}-1\right) t^{2}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&chi;</mi><mi>T</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mi>t</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>t</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><msup><mi>t</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\chi_{T}(t)=\left(t^{2}+t+1\right)\left(t^{2}-1\right) t^{2}</annotation></semantics></math></p>
+<p>(a) If
+<math role="math" aria-label="F=\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">F=\mathbb{R}</annotation></semantics></math>,
+what are the various possibilities for the minimal polynomial
+<math role="math" aria-label="\mu_{T}(t)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&mu;</mi><mi>T</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu_{T}(t)</annotation></semantics></math>
+of
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+?<br />
+(b) Fill in the blank:</p>
+<p><math role="math" aria-label="\operatorname{det}(T)=\ldots ; \quad \operatorname{trace}(T)=" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">det</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>T</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>…</mi><mo>;</mo><mspace width="1.0em"></mspace><mrow><mi mathvariant="normal">trace</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>T</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo></mrow><annotation encoding="application/x-tex">\operatorname{det}(T)=\ldots ; \quad \operatorname{trace}(T)=</annotation></semantics></math></p>
+<p>Be careful about signs!<br />
+(c) Write down the companion matrix
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+of the polynomial
+<math role="math" aria-label="\chi_{T}(t)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&chi;</mi><mi>T</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\chi_{T}(t)</annotation></semantics></math>.
+Calculate the minimal polynomial of
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>.<br />
+(d) When
+<math role="math" aria-label="F=\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">F=\mathbb{C}</annotation></semantics></math>,
+when is
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+diagonalizable (i. e., represented by a diagonal matrix w.r.t. some
+basis)? Some explanation in terms of
+<math role="math" aria-label="\chi_{T}(t)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&chi;</mi><mi>T</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\chi_{T}(t)</annotation></semantics></math>
+or
+<math role="math" aria-label="\mu_{T}(t)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&mu;</mi><mi>T</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu_{T}(t)</annotation></semantics></math>
+is required.<br />
+(e) When
+<math role="math" aria-label="F=\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">F=\mathbb{R}</annotation></semantics></math>,
+when (if ever) is
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+represented by a symmetric matrix? Why?<br />
+(f) Bonus ( +4 points): Let
+<math role="math" aria-label="S: \mathbb{C}^{m} \rightarrow \mathbb{C}^{m}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>:</mo><msup><mi>&Copf;</mi><mi>m</mi></msup><mo>&rarr;</mo><msup><mi>&Copf;</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">S: \mathbb{C}^{m} \rightarrow \mathbb{C}^{m}</annotation></semantics></math>
+be a nilpotent operator which is represented by a matrix in Jordan
+normal form having blocks of sizes
+<math role="math" aria-label="\lambda_{1} \geq \lambda_{2} \geq \cdots \geq \lambda_{m} \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&lambda;</mi><mn>1</mn></msub><mo>&ge;</mo><msub><mi>&lambda;</mi><mn>2</mn></msub><mo>&ge;</mo><mi>⋯</mi><mo>&ge;</mo><msub><mi>&lambda;</mi><mi>m</mi></msub><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lambda_{1} \geq \lambda_{2} \geq \cdots \geq \lambda_{m} \geq 0</annotation></semantics></math>.
+Let
+<math role="math" aria-label="\lambda^{\prime}=\left(\lambda_{1}^{\prime}, \cdots, \lambda_{m}^{\prime}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&lambda;</mi><mi>′</mi></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>&lambda;</mi><mn>1</mn><mi>′</mi></msubsup><mo>,</mo><mi>⋯</mi><mo>,</mo><msubsup><mi>&lambda;</mi><mi>m</mi><mi>′</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda^{\prime}=\left(\lambda_{1}^{\prime}, \cdots, \lambda_{m}^{\prime}\right)</annotation></semantics></math>
+be the partition of
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+dual (or transpose) to the partition
+<math role="math" aria-label="\lambda=\left(\lambda_{1}, \cdots, \lambda_{m}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&lambda;</mi><mn>1</mn></msub><mo>,</mo><mi>⋯</mi><mo>,</mo><msub><mi>&lambda;</mi><mi>m</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda=\left(\lambda_{1}, \cdots, \lambda_{m}\right)</annotation></semantics></math>
+of
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>.
+What is the significance (in terms of
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+) of the integers
+<math role="math" aria-label="\lambda_{i}^{\prime}, i=1, \cdots, m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>&lambda;</mi><mi>i</mi><mi>′</mi></msubsup><mo>,</mo><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>⋯</mi><mo>,</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">\lambda_{i}^{\prime}, i=1, \cdots, m</annotation></semantics></math>
+? (Note: your answer should be precisely one [short] sentence! No
+further explanation is wanted.)</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>(a) Suppose that
+<math role="math" aria-label="G=C_{p} \times \cdots C_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><msub><mi>C</mi><mi>p</mi></msub><mo>&times;</mo><mi>⋯</mi><msub><mi>C</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">G=C_{p} \times \cdots C_{p}</annotation></semantics></math>
+is a direct product of
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+copies of the cyclic group
+<math role="math" aria-label="C_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>p</mi></msub><annotation encoding="application/x-tex">C_{p}</annotation></semantics></math>
+of order
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+How many subgroups does
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+have of order
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+? How many does it have of order
+<math role="math" aria-label="p^{n-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">p^{n-1}</annotation></semantics></math>
+? Explain.<br />
+(b) Now let
+<math role="math" aria-label="p_{1}, \cdots, p_{r}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>⋯</mi><mo>,</mo><msub><mi>p</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">p_{1}, \cdots, p_{r}</annotation></semantics></math>
+be distinct prime integers
+<math role="math" aria-label="&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">&gt;0</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="F:=\mathbb{Q}\left[\sqrt{p_{1}}, \cdots, \sqrt{p_{r}}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:=</mo><mi>&Qopf;</mi><mrow><mo stretchy="true" form="prefix">[</mo><msqrt><msub><mi>p</mi><mn>1</mn></msub></msqrt><mo>,</mo><mi>⋯</mi><mo>,</mo><msqrt><msub><mi>p</mi><mi>r</mi></msub></msqrt><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">F:=\mathbb{Q}\left[\sqrt{p_{1}}, \cdots, \sqrt{p_{r}}\right]</annotation></semantics></math>
+is an abelian Galois extension of
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>.<br />
+(c) Suppose that
+<math role="math" aria-label="a=p_{i_{1}} \cdots p_{i_{m}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><msub><mi>p</mi><msub><mi>i</mi><mn>1</mn></msub></msub><mi>⋯</mi><msub><mi>p</mi><msub><mi>i</mi><mi>m</mi></msub></msub></mrow><annotation encoding="application/x-tex">a=p_{i_{1}} \cdots p_{i_{m}}</annotation></semantics></math>
+(with distinct factors) is a nontrivial product of some of the primes
+<math role="math" aria-label="p_{1}, \cdots, p_{r}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>⋯</mi><mo>,</mo><msub><mi>p</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">p_{1}, \cdots, p_{r}</annotation></semantics></math>.
+Let
+<math role="math" aria-label="b \neq a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>&ne;</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">b \neq a</annotation></semantics></math>
+be another such element. Show that
+<math role="math" aria-label="\mathbb{Q}[\sqrt{a}] \neq \mathbb{Q}[\sqrt{b}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mi>a</mi></msqrt><mo stretchy="false" form="postfix">]</mo><mo>&ne;</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mi>b</mi></msqrt><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}[\sqrt{a}] \neq \mathbb{Q}[\sqrt{b}]</annotation></semantics></math>.
+Now use (a) to determine precisely the Galois group of
+<math role="math" aria-label="F / \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>/</mi><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">F / \mathbb{Q}</annotation></semantics></math>.
+Carefully justify your answer.<br />
+(d) Show that the numbers
+<math role="math" aria-label="\sqrt{p_{1}}, \cdots, \sqrt{p_{r}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msub><mi>p</mi><mn>1</mn></msub></msqrt><mo>,</mo><mi>⋯</mi><mo>,</mo><msqrt><msub><mi>p</mi><mi>r</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{p_{1}}, \cdots, \sqrt{p_{r}}</annotation></semantics></math>
+are linearly independent over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>,
+and that
+<math role="math" aria-label="\sqrt{p_{1}}+\cdots+\sqrt{p_{r}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msub><mi>p</mi><mn>1</mn></msub></msqrt><mo>+</mo><mi>⋯</mi><mo>+</mo><msqrt><msub><mi>p</mi><mi>r</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{p_{1}}+\cdots+\sqrt{p_{r}}</annotation></semantics></math>
+is a primitive element of
+<math role="math" aria-label="F / \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>/</mi><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">F / \mathbb{Q}</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>(a) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a finite simple group of order 168. How many elements of order 7 does
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+have? Why?<br />
+(b) How many conjugacy classes of elements of order 7 does
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+have? Hint: By looking at Sylow 3-subgroups, show that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+has no cyclic subgroup of order 21. Use this to determine the
+centralizer in
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+of an element of order
+<math role="math" aria-label="7 . \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mi>.</mi><mi>…</mi></mrow><annotation encoding="application/x-tex">7 . \ldots</annotation></semantics></math>.<br />
+(c) Assume that you know that
+<math role="math" aria-label="G:=G L_{3}\left(\mathbb{F}_{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>:=</mo><mi>G</mi><msub><mi>L</mi><mn>3</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>𝔽</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">G:=G L_{3}\left(\mathbb{F}_{2}\right)</annotation></semantics></math>
+is a simple group. Explicitly exhibit two elements of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+of order 7 which are not conjugate in
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.
+Explain.</p>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a field and let
+<math role="math" aria-label="A, B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A, B</annotation></semantics></math>
+be commutative
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-algebras.
+We do not assume
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+or
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is finite dimensional over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.<br />
+(a) If the
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-algebra
+<math role="math" aria-label="A \otimes_{K} B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>B</mi></mrow><annotation encoding="application/x-tex">A \otimes_{K} B</annotation></semantics></math>
+is a field, show that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+must be fields, too. (Partial credit is given if you have to assume that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+or
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is finite dimensional over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.)<br />
+(b) Provide an example of two field extensions
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+of degree 2 over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+such that
+<math role="math" aria-label="A \otimes_{K} B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>B</mi></mrow><annotation encoding="application/x-tex">A \otimes_{K} B</annotation></semantics></math>
+is a field of degree 4 over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.<br />
+(c) Compute
+<math role="math" aria-label="\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><msub><mo>&otimes;</mo><mi>&Ropf;</mi></msub><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C}</annotation></semantics></math>
+explicitly.<br />
+(d) Suppose
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+has characteristic
+<math role="math" aria-label="p&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p&gt;0</annotation></semantics></math>
+and that
+<math role="math" aria-label="A / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">A / K</annotation></semantics></math>
+is a field extension such that there exists
+<math role="math" aria-label="\xi \in A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&xi;</mi><mo>&isin;</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\xi \in A</annotation></semantics></math>
+such that
+<math role="math" aria-label="\xi \notin K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&xi;</mi><mo>&notin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\xi \notin K</annotation></semantics></math>,
+but
+<math role="math" aria-label="\xi^{p} \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&xi;</mi><mi>p</mi></msup><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\xi^{p} \in K</annotation></semantics></math>.
+Prove
+<math role="math" aria-label="A \otimes_{K} A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>A</mi></mrow><annotation encoding="application/x-tex">A \otimes_{K} A</annotation></semantics></math>
+is not a field.</p>
+</main>
+</body>
+</html>

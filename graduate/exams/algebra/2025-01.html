@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Algebra
+General Exam - January 2025 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Algebra
+General Exam - January 2025</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="algebra-general-exam---january-2025">Algebra
+General Exam - January 2025</h1>
+<p><strong>Your UVa ID Number:</strong></p>
+<ul>
+<li><p>There is a total of 80 points in 8 problems.</p></li>
+<li><p>Please provide complete proofs and justify every statement that
+you make.</p></li>
+<li><p>Make sure that the solution to every problem is a continuous text
+written legibly and in the correct order.</p></li>
+<li><p>If you refer to a standard theorem, please, state this theorem
+clearly and fully, and justify that this theorem applies in the
+situation at hand.</p></li>
+<li><p>Vague statements and hand-waving arguments will not be
+appreciated.</p></li>
+<li><p>You may assume the validity of one part of the problem to do
+another part even if you unable to prove the first part (in which case
+you, of course, will not get credit for it).<br />
+DO EACH PROBLEM ON A SEPARATE SHEET OF PAPER, AND STAPLE THEM TOGETHER
+IN THE CORRECT ORDER BEFORE TURNING THE EXAM IN.</p></li>
+</ul>
+<p><strong>Sign below the pledge:</strong></p>
+<p>"On my honor, I pledge that I have neither given nor received help on
+this assignment."</p>
+<p>Signature (Use ID number instead):</p>
+
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>(11pt) Let
+<math role="math" aria-label="G=\mathrm{GL}_{n}(\mathbb{C})=\left\{g \in M_{n}(\mathbb{C}) \mid g\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">G</mi><mi mathvariant="normal">L</mi></mrow><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Copf;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>g</mi><mo>&isin;</mo><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Copf;</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>g</mi></mrow></mrow><annotation encoding="application/x-tex">G=\mathrm{GL}_{n}(\mathbb{C})=\left\{g \in M_{n}(\mathbb{C}) \mid g\right.</annotation></semantics></math>
+is invertible
+<math role="math" aria-label="\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo stretchy="false" form="postfix">}</mo><annotation encoding="application/x-tex">\}</annotation></semantics></math>
+be the group of all invertible
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+complex matrices. Consider the set
+<math role="math" aria-label="U=\left\{X \in M_{n}(\mathbb{C}) \mid\left(X-I_{n}\right)^{n}=O\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>X</mi><mo>&isin;</mo><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Copf;</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>−</mo><msub><mi>I</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msup><mo>=</mo><mi>O</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">U=\left\{X \in M_{n}(\mathbb{C}) \mid\left(X-I_{n}\right)^{n}=O\right\}</annotation></semantics></math>,
+where
+<math role="math" aria-label="I_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mi>n</mi></msub><annotation encoding="application/x-tex">I_{n}</annotation></semantics></math>
+denotes the identity matrix.<br />
+(a) (3pt) Show that the correspondence
+<math role="math" aria-label="(g, X) \mapsto g X g^{-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>g</mi><mo>,</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>&map;</mo><mi>g</mi><mi>X</mi><msup><mi>g</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">(g, X) \mapsto g X g^{-1}</annotation></semantics></math>
+defined an action of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+on
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>.<br />
+(b) ( 4 pt ) Show that the number of orbits of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+on
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+is finite.<br />
+(c) ( 4 pt ) Provide a complete list of representatives for orbits, for
+<math role="math" aria-label="n=4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">n=4</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>(8pt) Consider a group action
+<math role="math" aria-label="\cdot: G \times X \rightarrow X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&sdot;</mi><mo>:</mo><mi>G</mi><mo>&times;</mo><mi>X</mi><mo>&rarr;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">\cdot: G \times X \rightarrow X</annotation></semantics></math>.<br />
+(a) (3pt) Show that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+naturally extends to an action on
+<math role="math" aria-label="X^{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>X</mi><mi>k</mi></msup><annotation encoding="application/x-tex">X^{k}</annotation></semantics></math>
+away from the multi-diagonal, i.e., on the set
+<math role="math" aria-label="\left\{\left(x_{1}, \ldots, x_{n}\right) \in X^{k} \mid x_{i} \neq x_{j}\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&isin;</mo><msup><mi>X</mi><mi>k</mi></msup><mo>∣</mo><msub><mi>x</mi><mi>i</mi></msub><mo>&ne;</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><annotation encoding="application/x-tex">\left\{\left(x_{1}, \ldots, x_{n}\right) \in X^{k} \mid x_{i} \neq x_{j}\right.</annotation></semantics></math>
+if
+<math role="math" aria-label="\left.i \neq j\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>&ne;</mo><mi>j</mi><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left.i \neq j\right\}</annotation></semantics></math>.<br />
+(b) (5pt) The group action of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+on
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+is said to be
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-transitive
+if the above action on
+<math role="math" aria-label="X^{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>X</mi><mi>k</mi></msup><annotation encoding="application/x-tex">X^{k}</annotation></semantics></math>
+away from the multi-diagonal is transtive. Prove that the natural action
+of the alternating group
+<math role="math" aria-label="A_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_{n}</annotation></semantics></math>
+on
+<math role="math" aria-label="\{1, \ldots, n\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{1, \ldots, n\}</annotation></semantics></math>
+is (
+<math role="math" aria-label="n-2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n-2</annotation></semantics></math>
+)-transitive.</p>
+
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>(9pt) For an odd number
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+and an orthogonal matrix
+<math role="math" aria-label="A \in \mathrm{O}_{n}(\mathbb{R}) \backslash \mathrm{SO}_{n}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&isin;</mo><msub><mi mathvariant="normal">O</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo><mo>&setminus;</mo><msub><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">O</mi></mrow><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A \in \mathrm{O}_{n}(\mathbb{R}) \backslash \mathrm{SO}_{n}(\mathbb{R})</annotation></semantics></math>,
+where</p>
+<p><math role="math" aria-label="\begin{gathered}
+\mathrm{O}_{n}(\mathbb{R})=\left\{A \in \mathrm{GL}_{n}(\mathbb{R}) \mid A A^{t}=I_{n}\right\} \\
+\mathrm{SO}_{n}(\mathbb{R})=\left\{A \in \mathrm{GL}_{n}(\mathbb{R}) \mid A A^{t}=I_{n}, \quad \operatorname{det}(A)&gt;0\right\}
+\end{gathered}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="center" style="text-align: center"><msub><mi mathvariant="normal">O</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>A</mi><mo>&isin;</mo><msub><mrow><mi mathvariant="normal">G</mi><mi mathvariant="normal">L</mi></mrow><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>A</mi><msup><mi>A</mi><mi>t</mi></msup><mo>=</mo><msub><mi>I</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">O</mi></mrow><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>A</mi><mo>&isin;</mo><msub><mrow><mi mathvariant="normal">G</mi><mi mathvariant="normal">L</mi></mrow><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>A</mi><msup><mi>A</mi><mi>t</mi></msup><mo>=</mo><msub><mi>I</mi><mi>n</mi></msub><mo>,</mo><mspace width="1.0em"></mspace><mi mathvariant="normal">det</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mn>0</mn><mo stretchy="true" form="postfix">}</mo></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{gathered}
+\mathrm{O}_{n}(\mathbb{R})=\left\{A \in \mathrm{GL}_{n}(\mathbb{R}) \mid A A^{t}=I_{n}\right\} \\
+\mathrm{SO}_{n}(\mathbb{R})=\left\{A \in \mathrm{GL}_{n}(\mathbb{R}) \mid A A^{t}=I_{n}, \quad \operatorname{det}(A)&gt;0\right\}
+\end{gathered}</annotation></semantics></math></p>
+<p>show that -1 is an eigenvalue of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>(10pt) Let
+<math role="math" aria-label="\phi: \mathbb{Z}^{r} \rightarrow \mathbb{Z}^{r}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>:</mo><msup><mi>&Zopf;</mi><mi>r</mi></msup><mo>&rarr;</mo><msup><mi>&Zopf;</mi><mi>r</mi></msup></mrow><annotation encoding="application/x-tex">\phi: \mathbb{Z}^{r} \rightarrow \mathbb{Z}^{r}</annotation></semantics></math>
+be an homomorphism of free abelian groups given by multiplication by a
+square matrix
+<math role="math" aria-label="A \in \mathrm{M}_{r}(\mathbb{Z})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&isin;</mo><msub><mi mathvariant="normal">M</mi><mi>r</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Zopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A \in \mathrm{M}_{r}(\mathbb{Z})</annotation></semantics></math>.<br />
+(a) (5pt) Show that
+<math role="math" aria-label="\operatorname{Im}(\phi)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>ϕ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Im}(\phi)</annotation></semantics></math>
+is of finite index in the target if and only if
+<math role="math" aria-label="\operatorname{det}(A) \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">det</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\operatorname{det}(A) \neq 0</annotation></semantics></math>.<br />
+(b) (5pt) Show that when the index is finite it is equal to
+<math role="math" aria-label="|\operatorname{det}(A)|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mrow><mi mathvariant="normal">det</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|\operatorname{det}(A)|</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>(11pt) Let
+<math role="math" aria-label="R=C[-1,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>C</mi><mo stretchy="false" form="prefix">[</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=C[-1,1]</annotation></semantics></math>
+be the ring of continuous real-valued functions on the interval
+<math role="math" aria-label="[-1,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[-1,1]</annotation></semantics></math>
+with the standard addition and multiplication of functions.<br />
+(a) (3pt) Give an example of zero divisors in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+(b) (4pt) Give an example of non-invertible elements that are not zero
+divisors.<br />
+(c) (4pt) Let
+<math role="math" aria-label="I \subset R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&sub;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">I \subset R</annotation></semantics></math>
+be the set of functions
+<math role="math" aria-label="f \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">f \in R</annotation></semantics></math>
+that vanish at 0 , i.e.,
+<math role="math" aria-label="f(0)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(0)=0</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is a maximal ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+which is not principal.</p>
+
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>(8pt) Let
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+be a finitely generated abelian group such that
+<math role="math" aria-label="A \otimes_{\mathbb{Z}} \mathbb{Z} /(25) \cong A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>&Zopf;</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>25</mn><mo stretchy="false" form="postfix">)</mo><mo>≅</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">A \otimes_{\mathbb{Z}} \mathbb{Z} /(25) \cong A</annotation></semantics></math>.
+Classify all such
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+s up to isomorphism.</p>
+
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>(12pt) A finite group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+has the following partially complete character table (of its complex
+irreducible representations), where
+<math role="math" aria-label="c_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mi>i</mi></msub><annotation encoding="application/x-tex">c_{i}</annotation></semantics></math>
+is the cardinality of the conjugacy class of
+<math role="math" aria-label="C_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>i</mi></msub><annotation encoding="application/x-tex">C_{i}</annotation></semantics></math>,
+and
+<math role="math" aria-label="C_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mn>1</mn></msub><annotation encoding="application/x-tex">C_{1}</annotation></semantics></math>
+is the conjugacy class of the group unit</p>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th
+style="text-align: center;"><math role="math" aria-label="C_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>i</mi></msub><annotation encoding="application/x-tex">C_{i}</annotation></semantics></math></th>
+<th
+style="text-align: center;"><math role="math" aria-label="C_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mn>1</mn></msub><annotation encoding="application/x-tex">C_{1}</annotation></semantics></math></th>
+<th
+style="text-align: center;"><math role="math" aria-label="C_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mn>2</mn></msub><annotation encoding="application/x-tex">C_{2}</annotation></semantics></math></th>
+<th
+style="text-align: center;"><math role="math" aria-label="C_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mn>3</mn></msub><annotation encoding="application/x-tex">C_{3}</annotation></semantics></math></th>
+<th
+style="text-align: center;"><math role="math" aria-label="C_{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mn>4</mn></msub><annotation encoding="application/x-tex">C_{4}</annotation></semantics></math></th>
+<th
+style="text-align: center;"><math role="math" aria-label="C_{5}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mn>5</mn></msub><annotation encoding="application/x-tex">C_{5}</annotation></semantics></math></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td
+style="text-align: center;"><math role="math" aria-label="c_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mi>i</mi></msub><annotation encoding="application/x-tex">c_{i}</annotation></semantics></math></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td
+style="text-align: center;"><math role="math" aria-label="\chi_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&chi;</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\chi_{1}</annotation></semantics></math></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+</tr>
+<tr>
+<td
+style="text-align: center;"><math role="math" aria-label="\chi_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&chi;</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\chi_{2}</annotation></semantics></math></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-1</td>
+</tr>
+<tr>
+<td
+style="text-align: center;"><math role="math" aria-label="\chi_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&chi;</mi><mn>3</mn></msub><annotation encoding="application/x-tex">\chi_{3}</annotation></semantics></math></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td
+style="text-align: center;"><math role="math" aria-label="\chi_{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&chi;</mi><mn>4</mn></msub><annotation encoding="application/x-tex">\chi_{4}</annotation></semantics></math></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">-1</td>
+<td style="text-align: center;">-1</td>
+<td style="text-align: center;"></td>
+</tr>
+<tr>
+<td
+style="text-align: center;"><math role="math" aria-label="\chi_{5}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&chi;</mi><mn>5</mn></msub><annotation encoding="application/x-tex">\chi_{5}</annotation></semantics></math></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+<td style="text-align: center;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>(a) ( 4 pt ) Complete the character table;<br />
+(b) (4pt) Determine the isomorphism type of the center
+<math role="math" aria-label="Z(G)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo stretchy="false" form="prefix">(</mo><mi>G</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">Z(G)</annotation></semantics></math>;<br />
+(c) (4pt) Determine the isomorphism type of the abelianization
+<math role="math" aria-label="G /[G, G]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mi>G</mi><mo>,</mo><mi>G</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">G /[G, G]</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>(11pt) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field of characteristic
+<math role="math" aria-label="p&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p&gt;0</annotation></semantics></math>
+and consider the polynomial
+<math role="math" aria-label="f(x):=x^{p}-x-c \in F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><msup><mi>x</mi><mi>p</mi></msup><mo>−</mo><mi>x</mi><mo>−</mo><mi>c</mi><mo>&isin;</mo><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x):=x^{p}-x-c \in F[x]</annotation></semantics></math>
+for some
+<math role="math" aria-label="c \in F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&isin;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">c \in F</annotation></semantics></math>.
+Let
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+be a root of
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+in an algebraic closure
+<math role="math" aria-label="\bar{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>F</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar{F}</annotation></semantics></math>
+of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.<br />
+(a) (3pt) Prove that
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+has roots
+<math role="math" aria-label="\alpha, \alpha+1, \ldots, \alpha+p-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>,</mo><mi>&alpha;</mi><mo>+</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>&alpha;</mi><mo>+</mo><mi>p</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\alpha, \alpha+1, \ldots, \alpha+p-1</annotation></semantics></math>.<br />
+(b) (4pt) Prove that
+<math role="math" aria-label="F(\alpha) / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">F(\alpha) / F</annotation></semantics></math>
+is a Galois extension.<br />
+(c) (4pt) Prove that
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is either irreducible or splits into linear factors in
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>.</p>
+</main>
+</body>
+</html>

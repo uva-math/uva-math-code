@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Algebra general exam. January 8, 2020, 9am -1pm - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Algebra general exam. January 8, 2020, 9am -1pm</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<header id="title-block-header">
+<main>
+<h1 class="title">Algebra general exam. January 8, 2020, 9am -1pm </h1>
+</header>
+<h2 class="unnumbered" id="your-uva-id-number">Your UVa ID Number:</h2>
+<h2 class="unnumbered" id="directions.">Directions.</h2>
+<ul>
+<li><p>Please show all your work and justify any statements that you
+make.</p></li>
+<li><p>State clearly and fully any theorem you use.</p></li>
+<li><p>Vague statements and hand-waving arguments will not be
+appreciated.</p></li>
+<li><p>You may assume the statement in an earlier part proven in order
+to do a later part.<br />
+DO EACH PROBLEM ON A SEPARATE SHEET OF PAPER, AND STAPLE THEM TOGETHER
+IN THE CORRECT ORDER BEFORE TURNING THE EXAM IN.</p></li>
+</ul>
+<p>Sign below the pledge:<br />
+"On my honor, I pledge that I have neither given nor received help on
+this assignment."<br />
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+(a) ( 7 pts) Let
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+be a cyclic group of order
+<math role="math" aria-label="n \geq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n \geq 2</annotation></semantics></math>.
+Explain briefly why
+<math role="math" aria-label="\operatorname{Aut}(C) \cong \mathbb{Z}_{n}^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Aut</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>C</mi><mo stretchy="false" form="postfix">)</mo><mo>≅</mo><msubsup><mi>&Zopf;</mi><mi>n</mi><mo>&times;</mo></msubsup></mrow><annotation encoding="application/x-tex">\operatorname{Aut}(C) \cong \mathbb{Z}_{n}^{\times}</annotation></semantics></math>(the
+multiplicative group of
+<math role="math" aria-label="\mathbb{Z}_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Zopf;</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\mathbb{Z}_{n}</annotation></semantics></math>
+) and why
+<math role="math" aria-label="\operatorname{Aut}(C) \cong \mathbb{Z}_{n-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Aut</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>C</mi><mo stretchy="false" form="postfix">)</mo><mo>≅</mo><msub><mi>&Zopf;</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">\operatorname{Aut}(C) \cong \mathbb{Z}_{n-1}</annotation></semantics></math>
+if
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is prime.<br />
+(b) ( 7 pts) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a finite group, let
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+be the smallest prime dividing
+<math role="math" aria-label="|G|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>G</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|G|</annotation></semantics></math>,
+and suppose that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+contains a normal subgroup
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+of order
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+lies in the center of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.<br />
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+(10 pts) Let
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+be the subgroup of
+<math role="math" aria-label="\mathbb{Z}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Zopf;</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{2}</annotation></semantics></math>
+generated by
+<math role="math" aria-label="(2,6)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>6</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(2,6)</annotation></semantics></math>
+and
+<math role="math" aria-label="(4,8)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>,</mo><mn>8</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(4,8)</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="A \cong \mathbb{Z}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≅</mo><msup><mi>&Zopf;</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A \cong \mathbb{Z}^{2}</annotation></semantics></math>
+and find (with proof) elements
+<math role="math" aria-label="v_{1}, v_{2} \in \mathbb{Z}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>&isin;</mo><msup><mi>&Zopf;</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">v_{1}, v_{2} \in \mathbb{Z}^{2}</annotation></semantics></math>
+and
+<math role="math" aria-label="n_{1}, n_{2} \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">n_{1}, n_{2} \in \mathbb{N}</annotation></semantics></math>
+such that
+<math role="math" aria-label="\mathbb{Z}^{2}=\mathbb{Z} v_{1} \oplus \mathbb{Z} v_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Zopf;</mi><mn>2</mn></msup><mo>=</mo><mi>&Zopf;</mi><msub><mi>v</mi><mn>1</mn></msub><mo>&oplus;</mo><mi>&Zopf;</mi><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}^{2}=\mathbb{Z} v_{1} \oplus \mathbb{Z} v_{2}</annotation></semantics></math>
+and
+<math role="math" aria-label="A=\mathbb{Z}\left(n_{1} v_{1}\right) \oplus \mathbb{Z}\left(n_{2} v_{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>&Zopf;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>n</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&oplus;</mo><mi>&Zopf;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>n</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A=\mathbb{Z}\left(n_{1} v_{1}\right) \oplus \mathbb{Z}\left(n_{2} v_{2}\right)</annotation></semantics></math>.<br />
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+(10 pts) Let
+<math role="math" aria-label="R=\mathbb{Z}[i]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[i]</annotation></semantics></math>,
+the ring of Gaussian integers. Find (with complete proof!) the number of
+ideals of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+which contain 30 .<br />
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 and let
+<math role="math" aria-label="x \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">x \in R</annotation></semantics></math>.<br />
+(a) (3 pts) Prove that
+<math role="math" aria-label="x \notin R^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&notin;</mo><msup><mi>R</mi><mo>&times;</mo></msup></mrow><annotation encoding="application/x-tex">x \notin R^{\times}</annotation></semantics></math>if
+and only if
+<math role="math" aria-label="x \in M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">x \in M</annotation></semantics></math>
+for some maximal ideal
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+(b) ( 9 pts) Prove that the following are equivalent:<br />
+(i)
+<math role="math" aria-label="x \in M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">x \in M</annotation></semantics></math>
+for every maximal ideal
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math><br />
+(ii)
+<math role="math" aria-label="1+x y \in R^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mi>y</mi><mo>&isin;</mo><msup><mi>R</mi><mo>&times;</mo></msup></mrow><annotation encoding="application/x-tex">1+x y \in R^{\times}</annotation></semantics></math>for
+every
+<math role="math" aria-label="y \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">y \in R</annotation></semantics></math><br />
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+(12 pts) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field and let
+<math role="math" aria-label="A, B \in \operatorname{Mat}_{n}(F)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>&isin;</mo><msub><mrow><mi mathvariant="normal">Mat</mi><mo>&#8289;</mo></mrow><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A, B \in \operatorname{Mat}_{n}(F)</annotation></semantics></math>
+for some
+<math role="math" aria-label="n \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">n \in \mathbb{N}</annotation></semantics></math>.
+Suppose that
+<math role="math" aria-label="A^{2}=B^{2}=I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>=</mo><msup><mi>B</mi><mn>2</mn></msup><mo>=</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">A^{2}=B^{2}=I</annotation></semantics></math>
+and
+<math role="math" aria-label="\operatorname{rk}(A-I)=\operatorname{rk}(B-I)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">rk</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>−</mo><mi>I</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">rk</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo>−</mo><mi>I</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{rk}(A-I)=\operatorname{rk}(B-I)</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+are similar. Hint: Consider separately the cases
+<math role="math" aria-label="\operatorname{char} F \neq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">char</mi><mo>&#8289;</mo></mrow><mi>F</mi><mo>&ne;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\operatorname{char} F \neq 2</annotation></semantics></math>
+and
+<math role="math" aria-label="\operatorname{char} F=2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">char</mi><mo>&#8289;</mo></mrow><mi>F</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\operatorname{char} F=2</annotation></semantics></math>.<br />
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+In each part of this problem determine if the given objects are
+isomorphic:<br />
+(a)
+<math role="math" aria-label="(4 \mathrm{pts}) \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mrow><mi mathvariant="normal">p</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false" form="postfix">)</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">(4 \mathrm{pts}) \mathbb{R}</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>
+as
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>-vector
+spaces<br />
+(b)
+<math role="math" aria-label="(3 \mathrm{pts}) \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mrow><mi mathvariant="normal">p</mi><mi mathvariant="normal">t</mi><mi mathvariant="normal">s</mi></mrow><mo stretchy="false" form="postfix">)</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">(3 \mathrm{pts}) \mathbb{C}</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{R} \times \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo>&times;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{R} \times \mathbb{R}</annotation></semantics></math>
+as rings<br />
+(c) ( 4 pts)
+<math role="math" aria-label="\mathbb{R}[x] /\left(x^{2}-1\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{R}[x] /\left(x^{2}-1\right)</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{R} \times \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo>&times;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{R} \times \mathbb{R}</annotation></semantics></math>
+as rings<br />
+(d) ( 4 pts)
+<math role="math" aria-label="\mathbb{R}[x] /(x-1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}[x] /(x-1)</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{R}[x] /(x+1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}[x] /(x+1)</annotation></semantics></math>
+as
+<math role="math" aria-label="\mathbb{R}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}[x]</annotation></semantics></math>-modules<br />
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+Let
+<math role="math" aria-label="F, K_{1}, K_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>,</mo><msub><mi>K</mi><mn>1</mn></msub><mo>,</mo><msub><mi>K</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">F, K_{1}, K_{2}</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+be fields with
+<math role="math" aria-label="F \subseteq K_{1} \subseteq L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&sube;</mo><msub><mi>K</mi><mn>1</mn></msub><mo>&sube;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">F \subseteq K_{1} \subseteq L</annotation></semantics></math>
+and
+<math role="math" aria-label="F \subseteq K_{2} \subseteq L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&sube;</mo><msub><mi>K</mi><mn>2</mn></msub><mo>&sube;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">F \subseteq K_{2} \subseteq L</annotation></semantics></math>.
+Recall that the tensor product
+<math role="math" aria-label="K_{1} \otimes_{F} K_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><msub><mo>&otimes;</mo><mi>F</mi></msub><msub><mi>K</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">K_{1} \otimes_{F} K_{2}</annotation></semantics></math>
+has a natural structure of a ring where multiplication of simple tensors
+is given by
+<math role="math" aria-label="(a \otimes b) \cdot(c \otimes d)=a c \otimes b d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>&otimes;</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>&sdot;</mo><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo>&otimes;</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mi>c</mi><mo>&otimes;</mo><mi>b</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">(a \otimes b) \cdot(c \otimes d)=a c \otimes b d</annotation></semantics></math>
+for all
+<math role="math" aria-label="a, c \in K_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>&isin;</mo><msub><mi>K</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">a, c \in K_{1}</annotation></semantics></math>
+and
+<math role="math" aria-label="b, d \in K_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>,</mo><mi>d</mi><mo>&isin;</mo><msub><mi>K</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">b, d \in K_{2}</annotation></semantics></math>.<br />
+(a) ( 5 pts) Prove that there exists a unique ring homomorphism
+<math role="math" aria-label="\pi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&pi;</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>
+:
+<math role="math" aria-label="K_{1} \otimes_{F} K_{2} \rightarrow L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><msub><mo>&otimes;</mo><mi>F</mi></msub><msub><mi>K</mi><mn>2</mn></msub><mo>&rarr;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">K_{1} \otimes_{F} K_{2} \rightarrow L</annotation></semantics></math>
+such that
+<math role="math" aria-label="\pi(a \otimes b)=a b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&pi;</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>&otimes;</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">\pi(a \otimes b)=a b</annotation></semantics></math>
+for all
+<math role="math" aria-label="a \in K_{1}, b \in K_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><msub><mi>K</mi><mn>1</mn></msub><mo>,</mo><mi>b</mi><mo>&isin;</mo><msub><mi>K</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">a \in K_{1}, b \in K_{2}</annotation></semantics></math>.<br />
+(b) ( 2 pts) Assume that
+<math role="math" aria-label="K_{1} \otimes_{F} K_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><msub><mo>&otimes;</mo><mi>F</mi></msub><msub><mi>K</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">K_{1} \otimes_{F} K_{2}</annotation></semantics></math>
+is a field. Prove that
+<math role="math" aria-label="\pi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&pi;</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>
+is injective.<br />
+(c) ( 5 pts) Assume that
+<math role="math" aria-label="K_{1} \cap K_{2} \neq F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><mo>&cap;</mo><msub><mi>K</mi><mn>2</mn></msub><mo>&ne;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">K_{1} \cap K_{2} \neq F</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="\pi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&pi;</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>
+is not injective.<br />
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+Let
+<math role="math" aria-label="K / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K / F</annotation></semantics></math>
+be a field extension. Suppose that
+<math role="math" aria-label="K=F(a, b)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K=F(a, b)</annotation></semantics></math>
+for some
+<math role="math" aria-label="a, b \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">a, b \in K</annotation></semantics></math>
+such that
+<math role="math" aria-label="a^{2} \in F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>&isin;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">a^{2} \in F</annotation></semantics></math>
+and
+<math role="math" aria-label="b^{2} \in F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>b</mi><mn>2</mn></msup><mo>&isin;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">b^{2} \in F</annotation></semantics></math>.<br />
+(a) ( 3 pts ) Prove that
+<math role="math" aria-label="[K: F] \leq 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>&le;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">[K: F] \leq 4</annotation></semantics></math><br />
+(b) ( 4 pts ) Give a specific example (with full proof) where
+<math role="math" aria-label="[K: F]=4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">[K: F]=4</annotation></semantics></math><br />
+(c) (4 pts) Assume that
+<math role="math" aria-label="\operatorname{char}(F) \neq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">char</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\operatorname{char}(F) \neq 2</annotation></semantics></math>.
+Prove that the extension
+<math role="math" aria-label="K / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K / F</annotation></semantics></math>
+is Galois<br />
+(d) ( 4 pts ) Now assume that
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is finite. Prove that
+<math role="math" aria-label="[K: F] \leq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>&le;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">[K: F] \leq 2</annotation></semantics></math>.</p>
+</main>
+</body>
+</html>

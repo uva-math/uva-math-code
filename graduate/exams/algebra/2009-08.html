@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Algebra general
+exam. August 17th 2009, 9am-1pm - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Algebra general
+exam. August 17th 2009, 9am-1pm</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered"
+id="algebra-general-exam.-august-17th-2009-9am-1pm">Algebra general
+exam. August 17th 2009, 9am-1pm</h1>
+<h2 class="unnumbered" id="directions.">Directions.</h2>
+<ul>
+<li><p>Please show all your work and justify any statements that you
+make.</p></li>
+<li><p>State clearly and fully any theorem you use.</p></li>
+<li><p>Vague statements and hand-waving arguments will not be
+appreciated.</p></li>
+<li><p>You may assume the statement in an earlier part proven in order
+to do a later part.</p></li>
+</ul>
+<p>DO EACH PROBLEM ON A SEPARATE SHEET OF PAPER, AND STAPLE THEM
+TOGETHER IN THE CORRECT ORDER BEFORE TURNING THE EXAM IN.</p>
+<ol>
+<li><h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a group of order 56 which does NOT have a normal subgroup of order 8
+.<br />
+(a) ( 8 pts) Prove that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+has a normal subgroup of order 7 .<br />
+(b) ( 4 pts ) Prove that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+has a subgroup of order 14.<br />
+(c) ( 4 pts) Prove that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+has a normal subgroup of order 14.</p></li>
+</ol>
+<p>Remark: Of course, you may omit (b) if you correctly answered
+(c).</p>
+
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a finite group and let
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+and
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be subgroups of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.
+For each
+<math role="math" aria-label="x \in G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">x \in G</annotation></semantics></math>
+define
+<math role="math" aria-label="H x K=\{h x k: h \in H, k \in K\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mi>x</mi><mi>K</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>h</mi><mi>x</mi><mi>k</mi><mo>:</mo><mi>h</mi><mo>&isin;</mo><mi>H</mi><mo>,</mo><mi>k</mi><mo>&isin;</mo><mi>K</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">H x K=\{h x k: h \in H, k \in K\}</annotation></semantics></math>.<br />
+(a) (3 pts) Prove that for any
+<math role="math" aria-label="x, y \in G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>&isin;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">x, y \in G</annotation></semantics></math>
+either
+<math role="math" aria-label="H x K=H y K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mi>x</mi><mi>K</mi><mo>=</mo><mi>H</mi><mi>y</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">H x K=H y K</annotation></semantics></math>
+or
+<math role="math" aria-label="H x K \cap H y K=\emptyset" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mi>x</mi><mi>K</mi><mo>&cap;</mo><mi>H</mi><mi>y</mi><mi>K</mi><mo>=</mo><mi>&empty;</mi></mrow><annotation encoding="application/x-tex">H x K \cap H y K=\emptyset</annotation></semantics></math>.<br />
+(b) (8 pts) Prove that
+<math role="math" aria-label="|H x K|=\frac{|H||K|}{\left|H \cap x K x^{-1}\right|}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>H</mi><mi>x</mi><mi>K</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">|</mo><mi>H</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="prefix">|</mo><mi>K</mi><mo stretchy="false" form="prefix">|</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mi>H</mi><mo>&cap;</mo><mi>x</mi><mi>K</mi><msup><mi>x</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="true" form="postfix">|</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">|H x K|=\frac{|H||K|}{\left|H \cap x K x^{-1}\right|}</annotation></semantics></math>.
+Hint: Use group actions: either a suitable action of
+<math role="math" aria-label="H \times K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>&times;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">H \times K</annotation></semantics></math>
+on
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+or a suitable action of
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+on
+<math role="math" aria-label="G / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">G / K</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>(a) ( 6 pts) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a principal ideal domain and
+<math role="math" aria-label="I \subset R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&sub;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">I \subset R</annotation></semantics></math>
+a proper nonzero ideal. Prove that if the quotient ring
+<math role="math" aria-label="R / I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">R / I</annotation></semantics></math>
+is a domain, then it must be a field.<br />
+(b) ( 4 pts) Does the assertion of (a) remain true if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is only assumed to be a unique factorization domain? Prove or a give a
+counterexample.</p>
+
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field and
+<math role="math" aria-label="R=F[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=F[x, y]</annotation></semantics></math>
+the ring of polynomials over
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+in two (commuting) variables
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and
+<math role="math" aria-label="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.
+Let
+<math role="math" aria-label="I=x R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>x</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">I=x R</annotation></semantics></math>
+be the principal ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+generated by
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and
+<math role="math" aria-label="S=F+I=\{f+i: f \in F, i \in I\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>F</mi><mo>+</mo><mi>I</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>f</mi><mo>+</mo><mi>i</mi><mo>:</mo><mi>f</mi><mo>&isin;</mo><mi>F</mi><mo>,</mo><mi>i</mi><mo>&isin;</mo><mi>I</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S=F+I=\{f+i: f \in F, i \in I\}</annotation></semantics></math>.
+Observe that
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is a subring of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is an ideal of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+(you need not justify these facts).<br />
+(a) ( 7 pts) Prove that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is not finitely generated as an ideal of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.</p>
+<p>Hint: Assume that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is finitely generated as an ideal of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+and reach a contradiction by showing that there must exist a natural
+number
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+such that any polynomial
+<math role="math" aria-label="p(x, y) \in I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">p(x, y) \in I</annotation></semantics></math>
+contains no monomials of the form
+<math role="math" aria-label="x y^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><msup><mi>y</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">x y^{n}</annotation></semantics></math>,
+with
+<math role="math" aria-label="n&gt;m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n&gt;m</annotation></semantics></math>.<br />
+(b) ( 5 pts) Prove that
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is not finitely generated as a ring.</p>
+<p>Hint: It is possible to answer (b) using (a) without doing any
+computations.</p>
+
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>(a) (8 pts) Let
+<math role="math" aria-label="A=\left(\begin{array}{lll}2 &amp; 1 &amp; 3 \\ 1 &amp; 2 &amp; 4 \\ 0 &amp; 0 &amp; 1\end{array}\right) \in M a t_{3}(\mathbb{C})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><mn>2</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>1</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>3</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mn>1</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>2</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>4</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mn>0</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>0</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>&isin;</mo><mi>M</mi><mi>a</mi><msub><mi>t</mi><mn>3</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>&Copf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A=\left(\begin{array}{lll}2 &amp; 1 &amp; 3 \\ 1 &amp; 2 &amp; 4 \\ 0 &amp; 0 &amp; 1\end{array}\right) \in M a t_{3}(\mathbb{C})</annotation></semantics></math>.
+Find the minimal polynomial, the characteristic polynomial and the
+Jordan canonical form of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.<br />
+(b) ( 7 pts) Let
+<math role="math" aria-label="J_{n}(0) \in \operatorname{Mat}_{n}(\mathbb{C})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msub><mrow><mi mathvariant="normal">Mat</mi><mo>&#8289;</mo></mrow><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Copf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">J_{n}(0) \in \operatorname{Mat}_{n}(\mathbb{C})</annotation></semantics></math>
+be the Jordan block of size
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+with 0 ’s on the diagonal. Prove that there exists no matrix
+<math role="math" aria-label="A \in M a t_{n}(\mathbb{C})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&isin;</mo><mi>M</mi><mi>a</mi><msub><mi>t</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Copf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A \in M a t_{n}(\mathbb{C})</annotation></semantics></math>
+such that
+<math role="math" aria-label="A^{2}=J_{n}(0)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mn>2</mn></msup><mo>=</mo><msub><mi>J</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A^{2}=J_{n}(0)</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Let
+<math role="math" aria-label="K / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K / F</annotation></semantics></math>
+be a finite extension of fields, and let
+<math role="math" aria-label="\alpha, \beta \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>,</mo><mi>&beta;</mi><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\alpha, \beta \in K</annotation></semantics></math>
+be such that
+<math role="math" aria-label="K=F(\alpha, \beta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo>,</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K=F(\alpha, \beta)</annotation></semantics></math>.
+Let
+<math role="math" aria-label="n=[F(\alpha): F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mo stretchy="false" form="prefix">[</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">n=[F(\alpha): F]</annotation></semantics></math>
+and
+<math role="math" aria-label="m=[F(\beta): F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mo stretchy="false" form="prefix">[</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">m=[F(\beta): F]</annotation></semantics></math>,
+and assume that
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+and
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+are relatively prime.<br />
+(a) (4 pts) Prove that
+<math role="math" aria-label="[K: F]=n m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mi>n</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">[K: F]=n m</annotation></semantics></math>.<br />
+(b) ( 6 pts) Assume that
+<math role="math" aria-label="K / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K / F</annotation></semantics></math>
+is Galois. Let
+<math role="math" aria-label="\mu_{\alpha, F}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&mu;</mi><mrow><mi>&alpha;</mi><mo>,</mo><mi>F</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu_{\alpha, F}(x)</annotation></semantics></math>
+and
+<math role="math" aria-label="\mu_{\beta, F}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&mu;</mi><mrow><mi>&beta;</mi><mo>,</mo><mi>F</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu_{\beta, F}(x)</annotation></semantics></math>
+be the minimal polynomials of
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+and
+<math role="math" aria-label="\beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&beta;</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+respectively. Let
+<math role="math" aria-label="\alpha^{\prime} \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&alpha;</mi><mi>′</mi></msup><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\alpha^{\prime} \in K</annotation></semantics></math>
+be a root of
+<math role="math" aria-label="\mu_{\alpha, F}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&mu;</mi><mrow><mi>&alpha;</mi><mo>,</mo><mi>F</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu_{\alpha, F}(x)</annotation></semantics></math>
+and let
+<math role="math" aria-label="\beta^{\prime} \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&beta;</mi><mi>′</mi></msup><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\beta^{\prime} \in K</annotation></semantics></math>
+be a root of
+<math role="math" aria-label="\mu_{\beta, F}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&mu;</mi><mrow><mi>&beta;</mi><mo>,</mo><mi>F</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu_{\beta, F}(x)</annotation></semantics></math>.
+Prove that there exists unique
+<math role="math" aria-label="\sigma \in \operatorname{Gal}(K / F)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&sigma;</mi><mo>&isin;</mo><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mi>/</mi><mi>F</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\sigma \in \operatorname{Gal}(K / F)</annotation></semantics></math>
+such that
+<math role="math" aria-label="\sigma(\alpha)=\alpha^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&sigma;</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>&alpha;</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">\sigma(\alpha)=\alpha^{\prime}</annotation></semantics></math>
+and
+<math role="math" aria-label="\sigma(\beta)=\beta^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&sigma;</mi><mo stretchy="false" form="prefix">(</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>&beta;</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">\sigma(\beta)=\beta^{\prime}</annotation></semantics></math>.<br />
+(c) ( 6 pts) Again assume that
+<math role="math" aria-label="K / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K / F</annotation></semantics></math>
+is Galois. Let
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+be the set of all elementns
+<math role="math" aria-label="c \in F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&isin;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">c \in F</annotation></semantics></math>
+such that
+<math role="math" aria-label="F(\alpha+c \beta) \neq K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo>+</mo><mi>c</mi><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">F(\alpha+c \beta) \neq K</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="|S| \leq n m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>S</mi><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mi>n</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">|S| \leq n m</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field and
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+a finite-dimensional vector space over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.
+Let
+<math role="math" aria-label="n=\operatorname{dim}_{F} K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>F</mi></msub><mi>K</mi></mrow><annotation encoding="application/x-tex">n=\operatorname{dim}_{F} K</annotation></semantics></math>,
+and assume that
+<math role="math" aria-label="n&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n&gt;1</annotation></semantics></math>.<br />
+(a) ( 6 pts) Is it always true that
+<math role="math" aria-label="K \otimes_{F} K \cong \operatorname{Mat}_{n}(F)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>&otimes;</mo><mi>F</mi></msub><mi>K</mi><mo>≅</mo><msub><mrow><mi mathvariant="normal">Mat</mi><mo>&#8289;</mo></mrow><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K \otimes_{F} K \cong \operatorname{Mat}_{n}(F)</annotation></semantics></math>
+as
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-modules?<br />
+(b) ( 6 pts) Now assume that
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+also has the structure of a commutative ring with 1 , so being an
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-vector
+space,
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+becomes an
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-algebra.
+Recall that in this case
+<math role="math" aria-label="K \otimes_{F} K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>&otimes;</mo><mi>F</mi></msub><mi>K</mi></mrow><annotation encoding="application/x-tex">K \otimes_{F} K</annotation></semantics></math>
+possesses unique
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-algebra
+structure such that
+<math role="math" aria-label="(a \otimes b) \cdot(c \otimes d)=a c \otimes b d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>&otimes;</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>&sdot;</mo><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo>&otimes;</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mi>c</mi><mo>&otimes;</mo><mi>b</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">(a \otimes b) \cdot(c \otimes d)=a c \otimes b d</annotation></semantics></math>
+for
+<math role="math" aria-label="a, b, c, d \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">a, b, c, d \in K</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="K \otimes_{F} K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>&otimes;</mo><mi>F</mi></msub><mi>K</mi></mrow><annotation encoding="application/x-tex">K \otimes_{F} K</annotation></semantics></math>
+cannot be a field.<br />
+Hint: Construct a non-trivial
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-algebra
+homomorphism
+<math role="math" aria-label="K \otimes_{F} K \rightarrow K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>&otimes;</mo><mi>F</mi></msub><mi>K</mi><mo>&rarr;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">K \otimes_{F} K \rightarrow K</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>( 8 pts) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field. Prove that the additive and multiplicative groups of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+cannot be isomorphic. Hint: Look at the orders of elements in both
+groups.</p>
+</main>
+</body>
+</html>

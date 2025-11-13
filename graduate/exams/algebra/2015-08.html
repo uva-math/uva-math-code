@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Algebra general exam - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Algebra general exam</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1>Algebra general exam</h1>
+<p>August 2015</p>
+<p>You have four hours. Justify all your statements as much as possible,
+and show your work. State clearly any theorem you use. Do each problem
+on a separate sheet of paper and staple them together. You are to
+receive no help on this exam including from books, notes, internet, etc.
+Put your name on the first page, and initials on all the other pages.
+Good luck.</p>
+<ol>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<li><p>(10 pts) Find all maximal ideals of
+<math role="math" aria-label="\mathbb{Z}[i]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[i]</annotation></semantics></math>
+which contain 182 . Find minimal generators for these ideals.</p></li>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<li><p>( 10 pts ) Let
+<math role="math" aria-label="r_{1}, r_{2}, r_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub><mo>,</mo><msub><mi>r</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">r_{1}, r_{2}, r_{3}</annotation></semantics></math>
+be the roots of the cubic polynomial
+<math role="math" aria-label="X^{3}+10 X^{2}-5 X+4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>X</mi><mn>3</mn></msup><mo>+</mo><mn>10</mn><msup><mi>X</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>X</mi><mo>+</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">X^{3}+10 X^{2}-5 X+4</annotation></semantics></math>.
+Find the cubic polynomial with rational coefficients whose roots are
+<math role="math" aria-label="r_{1}^{2}, r_{2}^{2}, r_{3}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>r</mi><mn>1</mn><mn>2</mn></msubsup><mo>,</mo><msubsup><mi>r</mi><mn>2</mn><mn>2</mn></msubsup><mo>,</mo><msubsup><mi>r</mi><mn>3</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">r_{1}^{2}, r_{2}^{2}, r_{3}^{2}</annotation></semantics></math>.</p></li>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<li><p>(20 pts)<br />
+a) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a group of order
+<math role="math" aria-label="2 n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>n</mi></mrow><annotation encoding="application/x-tex">2 n</annotation></semantics></math>,
+where
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is odd and
+<math role="math" aria-label="n&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n&gt;1</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+cannot be simple. (Hint: consider elements of order 2 in the regular
+representation of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+in
+<math role="math" aria-label="S_{2 n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mrow><mn>2</mn><mi>n</mi></mrow></msub><annotation encoding="application/x-tex">S_{2 n}</annotation></semantics></math>.)<br />
+b) Let
+<math role="math" aria-label="G=\mathbb{Z}_{n}^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><msubsup><mi>&Zopf;</mi><mi>n</mi><mo>*</mo></msubsup></mrow><annotation encoding="application/x-tex">G=\mathbb{Z}_{n}^{*}</annotation></semantics></math>
+denote the group of units in
+<math role="math" aria-label="\mathbb{Z}_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Zopf;</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\mathbb{Z}_{n}</annotation></semantics></math>.
+Find all integers
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+such that
+<math role="math" aria-label="x^{2}=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{2}=1</annotation></semantics></math>
+for all
+<math role="math" aria-label="x \in G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">x \in G</annotation></semantics></math>.</p></li>
+</ol>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>( 15 pts). Find the characteristic polynomial, the minimal
+polynomial, and the Jordan canonical form of the matrix (over the
+complex numbers)</p>
+<p><math role="math" aria-label="A=\left(\begin{array}{cccc}
+1 &amp; 2 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 2 &amp; 0 \\
+-1 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right) ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>2</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mi>−</mi><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">A=\left(\begin{array}{cccc}
+1 &amp; 2 &amp; 0 &amp; 1 \\
+1 &amp; 0 &amp; 0 &amp; -1 \\
+0 &amp; 0 &amp; 2 &amp; 0 \\
+-1 &amp; 0 &amp; 0 &amp; 1
+\end{array}\right) .</annotation></semantics></math></p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>( 10 pts ). Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with identity, and let
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+be a nilpotent ideal, i.e.,
+<math role="math" aria-label="I^{k}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>I</mi><mi>k</mi></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">I^{k}=0</annotation></semantics></math>
+for some
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.
+Let
+<math role="math" aria-label="M, N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>,</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">M, N</annotation></semantics></math>
+be two
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules,
+and let
+<math role="math" aria-label="f: M \rightarrow N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">f: M \rightarrow N</annotation></semantics></math>
+be an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-homomorphism.
+Suppose that the induced homomorphism from
+<math role="math" aria-label="M / I M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>/</mi><mi>I</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">M / I M</annotation></semantics></math>
+to
+<math role="math" aria-label="N / I N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi>/</mi><mi>I</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">N / I N</annotation></semantics></math>
+is surjective. Prove that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is surjective.</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>(10 pts) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field and
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+an
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+by
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+matrix with coefficients in
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.
+Assume that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+has only one invariant factor. Prove that for every
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+by
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+matrix
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+with coefficients in
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+such that
+<math role="math" aria-label="A B=B A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>B</mi><mo>=</mo><mi>B</mi><mi>A</mi></mrow><annotation encoding="application/x-tex">A B=B A</annotation></semantics></math>
+there is a polynomial
+<math role="math" aria-label="p(t) \in F[t]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>t</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">p(t) \in F[t]</annotation></semantics></math>
+such that
+<math role="math" aria-label="p(A)=B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">p(A)=B</annotation></semantics></math>.
+(Hint: consider the structure of
+<math role="math" aria-label="V=F^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><msup><mi>F</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">V=F^{n}</annotation></semantics></math>
+as a
+<math role="math" aria-label="k[A]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false" form="prefix">[</mo><mi>A</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">k[A]</annotation></semantics></math>-module.
+Use that an endomorphism is determined by its action on a basis.)</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>( 10 pts ). Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+be a finite dimensional vector space over a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+and let
+<math role="math" aria-label="V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>V</mi><mo>*</mo></msup><annotation encoding="application/x-tex">V^{*}</annotation></semantics></math>
+be its dual. For
+<math role="math" aria-label="v \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">v \in V</annotation></semantics></math>
+and
+<math role="math" aria-label="f \in V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>V</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">f \in V^{*}</annotation></semantics></math>,
+denote by
+<math role="math" aria-label="\phi_{v, f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ϕ</mi><mrow><mi>v</mi><mo>,</mo><mi>f</mi></mrow></msub><annotation encoding="application/x-tex">\phi_{v, f}</annotation></semantics></math>
+the endomorphism of
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+defined by
+<math role="math" aria-label="\phi_{v, f}(w)=f(w) v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ϕ</mi><mrow><mi>v</mi><mo>,</mo><mi>f</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">\phi_{v, f}(w)=f(w) v</annotation></semantics></math>
+for
+<math role="math" aria-label="w \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">w \in V</annotation></semantics></math>.
+Prove that there exists a well-defined
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+linear map
+<math role="math" aria-label="\Phi: V \otimes_{F} V^{*} \rightarrow \operatorname{End}_{F}(V)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Phi;</mi><mo>:</mo><mi>V</mi><msub><mo>&otimes;</mo><mi>F</mi></msub><msup><mi>V</mi><mo>*</mo></msup><mo>&rarr;</mo><msub><mrow><mi mathvariant="normal">End</mi><mo>&#8289;</mo></mrow><mi>F</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>V</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\Phi: V \otimes_{F} V^{*} \rightarrow \operatorname{End}_{F}(V)</annotation></semantics></math>
+satisfying
+<math role="math" aria-label="\Phi(v \otimes f)=\phi_{v, f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Phi;</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo>&otimes;</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>ϕ</mi><mrow><mi>v</mi><mo>,</mo><mi>f</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\Phi(v \otimes f)=\phi_{v, f}</annotation></semantics></math>
+for all
+<math role="math" aria-label="v \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">v \in V</annotation></semantics></math>
+and
+<math role="math" aria-label="f \in V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>V</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">f \in V^{*}</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="\Phi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Phi;</mi><annotation encoding="application/x-tex">\Phi</annotation></semantics></math>
+is an isomorphism.</p>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>( 15 pts). Consider the polynomial
+<math role="math" aria-label="x^{6}-3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>6</mn></msup><mo>−</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x^{6}-3</annotation></semantics></math>
+over the rational numbers. What is the degree of its splitting field,
+and what is the splitting field? Describe the Galois group of the
+splitting field as a subgroup of the symmetric group
+<math role="math" aria-label="S_{6}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mn>6</mn></msub><annotation encoding="application/x-tex">S_{6}</annotation></semantics></math>.
+Is it abelian?</p>
+</main>
+</body>
+</html>

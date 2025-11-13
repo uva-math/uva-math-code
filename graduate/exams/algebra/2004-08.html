@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Algebra General Exam 2004 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Algebra General Exam 2004</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<header id="title-block-header">
+<main>
+<h1 class="title">Algebra General Exam 2004 </h1>
+</header>
+<h2 class="unnumbered" id="august-16-2004-uva">August 16, 2004, UVA</h2>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>( 10 points) Assume that the group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is a direct product of two finite subgroups
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="B, G=A \times B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>,</mo><mi>G</mi><mo>=</mo><mi>A</mi><mo>&times;</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">B, G=A \times B</annotation></semantics></math>,
+and that
+<math role="math" aria-label="|A|,|B|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>A</mi><mo stretchy="false" form="prefix">|</mo><mo>,</mo><mo stretchy="false" form="prefix">|</mo><mi>B</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|A|,|B|</annotation></semantics></math>
+are relatively prime. Show that
+<math role="math" aria-label="H= (H \cap A) \times(H \cap B)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>H</mi><mo>&cap;</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>&times;</mo><mo stretchy="false" form="prefix">(</mo><mi>H</mi><mo>&cap;</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H= (H \cap A) \times(H \cap B)</annotation></semantics></math>
+for any subgroup
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>( 14 points) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a group of order 56, and let
+<math role="math" aria-label="P_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>p</mi></msub><annotation encoding="application/x-tex">P_{p}</annotation></semantics></math>
+for
+<math role="math" aria-label="p \in\{2,7\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">{</mo><mn>2</mn><mo>,</mo><mn>7</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p \in\{2,7\}</annotation></semantics></math>
+be a Sylow
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+subgroup of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.<br />
+(a) (6 points) Show that
+<math role="math" aria-label="P_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mn>2</mn></msub><annotation encoding="application/x-tex">P_{2}</annotation></semantics></math>
+or
+<math role="math" aria-label="P_{7}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mn>7</mn></msub><annotation encoding="application/x-tex">P_{7}</annotation></semantics></math>
+is normal in
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.<br />
+(b) ( 3 points) Give an example of a group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+with
+<math role="math" aria-label="|G|=56" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>G</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>56</mn></mrow><annotation encoding="application/x-tex">|G|=56</annotation></semantics></math>
+where
+<math role="math" aria-label="P_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mn>2</mn></msub><annotation encoding="application/x-tex">P_{2}</annotation></semantics></math>
+is not normal.<br />
+(c) ( 5 points) Show that there exists a group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+of order 56 with a non-normal
+<math role="math" aria-label="P_{7}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mn>7</mn></msub><annotation encoding="application/x-tex">P_{7}</annotation></semantics></math>.
+You can either do this by exhibiting a concrete example with this
+property or by describing how to construct such a group. In the latter
+case you have to justify why your approach works but you needn't give
+all details of the construction.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>( 12 points, 6 points each) Consider the ring
+<math role="math" aria-label="R=\mathbb{Z}[\sqrt{-7}]=\{m+n \sqrt{-7} \mid m, n \in \mathbb{Z}\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mrow><mi>−</mi><mn>7</mn></mrow></msqrt><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>m</mi><mo>+</mo><mi>n</mi><msqrt><mrow><mi>−</mi><mn>7</mn></mrow></msqrt><mo>∣</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><mi>&Zopf;</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[\sqrt{-7}]=\{m+n \sqrt{-7} \mid m, n \in \mathbb{Z}\}</annotation></semantics></math>.<br />
+(a) Is
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+a UFD? Give arguments for your answer.<br />
+(b) Exhibit an ideal
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+which is not principal. Show that your
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is not principal.</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>(12) Let
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+be a finite Galois extension. Suppose there exists an element
+<math role="math" aria-label="\alpha \in L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&isin;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">\alpha \in L</annotation></semantics></math>
+and another root
+<math role="math" aria-label="\alpha^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&alpha;</mi><mi>′</mi></msup><annotation encoding="application/x-tex">\alpha^{\prime}</annotation></semantics></math>
+of the minimal polynomial
+<math role="math" aria-label="\mu_{\alpha \mid K}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&mu;</mi><mrow><mi>&alpha;</mi><mo>∣</mo><mi>K</mi></mrow></msub><annotation encoding="application/x-tex">\mu_{\alpha \mid K}</annotation></semantics></math>
+of
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+such that the difference
+<math role="math" aria-label="\alpha^{\prime}-\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&alpha;</mi><mi>′</mi></msup><mo>−</mo><mi>&alpha;</mi></mrow><annotation encoding="application/x-tex">\alpha^{\prime}-\alpha</annotation></semantics></math>
+is an element of
+<math role="math" aria-label="K \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">K \backslash\{0\}</annotation></semantics></math>.<br />
+(a) (9 points) Prove that the characteristic
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+of
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+is different from 0 and that
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+divides
+<math role="math" aria-label="[L: K]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>L</mi><mo>:</mo><mi>K</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[L: K]</annotation></semantics></math>.<br />
+(b) ( 3 points) Give an example of an extension
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+and elements
+<math role="math" aria-label="\alpha, \alpha^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>,</mo><msup><mi>&alpha;</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">\alpha, \alpha^{\prime}</annotation></semantics></math>
+as described above.</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>( 10 points, 5 points each) Let
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+be the
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-submodule
+of
+<math role="math" aria-label="\mathbb{Z}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Zopf;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{3}</annotation></semantics></math>
+generated by the column vectors
+<math role="math" aria-label="(2,2,-2)^{t},(-4,-2,4)^{t}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>−</mi><mn>2</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>t</mi></msup><mo>,</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>4</mn><mo>,</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>4</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>t</mi></msup></mrow><annotation encoding="application/x-tex">(2,2,-2)^{t},(-4,-2,4)^{t}</annotation></semantics></math>
+and
+<math role="math" aria-label="(2,4,4)^{t} \in \mathbb{Z}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>4</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>t</mi></msup><mo>&isin;</mo><msup><mi>&Zopf;</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">(2,4,4)^{t} \in \mathbb{Z}^{3}</annotation></semantics></math>.<br />
+(a) Determine the structure of the abelian group
+<math role="math" aria-label="\mathbb{Z}^{3} / N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Zopf;</mi><mn>3</mn></msup><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z}^{3} / N</annotation></semantics></math>.<br />
+(b) Determine a basis
+<math role="math" aria-label="y_{1}, y_{2}, y_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">y_{1}, y_{2}, y_{3}</annotation></semantics></math>
+of
+<math role="math" aria-label="\mathbb{Z}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Zopf;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{3}</annotation></semantics></math>
+and natural numbers
+<math role="math" aria-label="d_{1}\left|d_{2}\right| d_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>d</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>d</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">d_{1}\left|d_{2}\right| d_{3}</annotation></semantics></math>
+such that
+<math role="math" aria-label="d_{1} y_{1}, d_{2} y_{2}, d_{3} y_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>d</mi><mn>3</mn></msub><msub><mi>y</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">d_{1} y_{1}, d_{2} y_{2}, d_{3} y_{3}</annotation></semantics></math>
+is a
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-basis
+of
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>( 10 points) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be an arbitrary field (
+<math role="math" aria-label="\rightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&rarr;</mo><annotation encoding="application/x-tex">\rightarrow</annotation></semantics></math>
+case distinction!). Classify, up to similarity, all matrices
+<math role="math" aria-label="A \in G L_{4}(K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&isin;</mo><mi>G</mi><msub><mi>L</mi><mn>4</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A \in G L_{4}(K)</annotation></semantics></math>
+of order 2. (Use an appropriate canonical form.)</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>( 12 points) Consider the group
+<math role="math" aria-label="G=S L_{2}\left(\mathbb{F}_{4}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mi>S</mi><msub><mi>L</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>𝔽</mi><mn>4</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">G=S L_{2}\left(\mathbb{F}_{4}\right)</annotation></semantics></math>.<br />
+(a) ( 4 points) Show without specifying any matrix that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+contains an element of order 5 .<br />
+(b) ( 8 points) Exhibit a concrete matrix
+<math role="math" aria-label="A \in S L_{2}\left(\mathbb{F}_{4}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&isin;</mo><mi>S</mi><msub><mi>L</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>𝔽</mi><mn>4</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A \in S L_{2}\left(\mathbb{F}_{4}\right)</annotation></semantics></math>
+of order 5 . Use
+<math role="math" aria-label="\mathbb{F}_{4}= \left\{0,1, \alpha, \alpha^{2}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝔽</mi><mn>4</mn></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mi>&alpha;</mi><mo>,</mo><msup><mi>&alpha;</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{F}_{4}= \left\{0,1, \alpha, \alpha^{2}\right\}</annotation></semantics></math>,
+where
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is a root of
+<math role="math" aria-label="x^{2}+x+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{2}+x+1</annotation></semantics></math>.
+Describe in detail how you obtained
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>;
+you shouldn’t just guess!<br />
+(Hint: You might first factorize
+<math role="math" aria-label="x^{5}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{5}-1</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{F}_{4}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>𝔽</mi><mn>4</mn></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{F}_{4}[x]</annotation></semantics></math>.)</p>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>(8 points) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a field,
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+a finite-dimensional vector space over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+and
+<math role="math" aria-label="v, w" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>,</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">v, w</annotation></semantics></math>
+two non-zero vectors in
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="v \otimes w=w \otimes v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&otimes;</mo><mi>w</mi><mo>=</mo><mi>w</mi><mo>&otimes;</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">v \otimes w=w \otimes v</annotation></semantics></math>
+in
+<math role="math" aria-label="V \otimes_{K} V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>V</mi></mrow><annotation encoding="application/x-tex">V \otimes_{K} V</annotation></semantics></math>
+if and only if there exists a
+<math role="math" aria-label="c \in K^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&isin;</mo><msup><mi>K</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">c \in K^{*}</annotation></semantics></math>
+such that
+<math role="math" aria-label="w=c v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><mi>c</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">w=c v</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-9">Problem 9</h2>
+<p>( 12 points, 3 points each) Decide in each of the following four
+cases whether the given statement is true or false. You need not give
+any arguments.<br />
+(a) If
+<math role="math" aria-label="n \geq 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n \geq 3</annotation></semantics></math>
+is a natural number and
+<math role="math" aria-label="A=J_{n}(0) \in M_{n}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><msub><mi>J</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A=J_{n}(0) \in M_{n}(\mathbb{R})</annotation></semantics></math>
+is a Jordan block matrix of size
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+with eigenvalue 0 , then
+<math role="math" aria-label="J_{2}(0) \oplus J_{n-2}(0)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>&oplus;</mo><msub><mi>J</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">J_{2}(0) \oplus J_{n-2}(0)</annotation></semantics></math>
+(i.e. two Jordan blocks, one of size 2 and one of size
+<math role="math" aria-label="n-2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n-2</annotation></semantics></math>
+) is the Jordan canonical form of
+<math role="math" aria-label="A^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mn>2</mn></msup><annotation encoding="application/x-tex">A^{2}</annotation></semantics></math>.<br />
+(b) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is an integral domain which is also a finite-dimensional
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-algebra
+for some field
+<math role="math" aria-label="K \subseteq R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>&sube;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">K \subseteq R</annotation></semantics></math>,
+then
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is itself a field.<br />
+(c) Let
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+be a field extension, and assume that
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+contains a primitive
+<math role="math" aria-label="n^{\text {th }}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mrow><mtext mathvariant="normal">th </mtext><mspace width="0.333em"></mspace></mrow></msup><annotation encoding="application/x-tex">n^{\text {th }}</annotation></semantics></math>
+root of unity
+<math role="math" aria-label="\zeta_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&zeta;</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\zeta_{n}</annotation></semantics></math>.
+Then
+<math role="math" aria-label="M / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">M / K</annotation></semantics></math>
+is normal for any subfield
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+of
+<math role="math" aria-label="K\left(\zeta_{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&zeta;</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">K\left(\zeta_{n}\right)</annotation></semantics></math>
+which contains
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+(i.e. we are considering the tower
+<math role="math" aria-label="\left.L / K\left(\zeta_{n}\right) / M / K\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&zeta;</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mi>M</mi><mi>/</mi><mi>K</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left.L / K\left(\zeta_{n}\right) / M / K\right)</annotation></semantics></math>.<br />
+(d) Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+be a finite-dimensional vector space over a field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="B: V \times V \rightarrow K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>:</mo><mi>V</mi><mo>&times;</mo><mi>V</mi><mo>&rarr;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">B: V \times V \rightarrow K</annotation></semantics></math>
+a symmetric
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-bilinear
+form. If there exists a subspace
+<math role="math" aria-label="W \neq\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&ne;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">W \neq\{0\}</annotation></semantics></math>
+of
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+such that
+<math role="math" aria-label="V=W \oplus W^{\perp}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>W</mi><mo>&oplus;</mo><msup><mi>W</mi><mo>&perp;</mo></msup></mrow><annotation encoding="application/x-tex">V=W \oplus W^{\perp}</annotation></semantics></math>,
+where
+<math role="math" aria-label="W^{\perp}:=\{x \in V \mid B(x, w)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>W</mi><mo>&perp;</mo></msup><mo>:=</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>&isin;</mo><mi>V</mi><mo>∣</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">W^{\perp}:=\{x \in V \mid B(x, w)=0</annotation></semantics></math>
+for all
+<math role="math" aria-label="w \in W\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>&isin;</mo><mi>W</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">w \in W\}</annotation></semantics></math>,
+then
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is nondegenerate.</p>
+</main>
+</body>
+</html>
