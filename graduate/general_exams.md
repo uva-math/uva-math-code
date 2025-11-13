@@ -22,14 +22,14 @@ Below are old exams and study materials for each of the subfields.
   
   <h2>Algebra</h2> 
   
-  - [01/2025]({{site.url}}/graduate/exams/algebra/2025-01.pdf)
-  - [08/2024]({{site.url}}/graduate/exams/algebra/2024-08.pdf)
-  - [01/2024]({{site.url}}/graduate/exams/algebra/2024-01.pdf)
-  - [08/2023]({{site.url}}/graduate/exams/algebra/2023-08.pdf)
-  - [01/2023]({{site.url}}/graduate/exams/algebra/2023-01.pdf)  
-  - [08/2022]({{site.url}}/graduate/exams/algebra/2022-08.pdf)
-  - [01/2022]({{site.url}}/graduate/exams/algebra/2022-01.pdf)
-  - [08/2021]({{site.url}}/graduate/exams/algebra/2021-08.pdf)
+  - [01/2025]({{site.url}}/graduate/exams/algebra/2025-01.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2025-01.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2024]({{site.url}}/graduate/exams/algebra/2024-08.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2024-08.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2024]({{site.url}}/graduate/exams/algebra/2024-01.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2024-01.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2023]({{site.url}}/graduate/exams/algebra/2023-08.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2023-08.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2023]({{site.url}}/graduate/exams/algebra/2023-01.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2023-01.pdf" aria-label="PDF version for printing">PDF</a>  
+  - [08/2022]({{site.url}}/graduate/exams/algebra/2022-08.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2022-08.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2022]({{site.url}}/graduate/exams/algebra/2022-01.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2022-01.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2021]({{site.url}}/graduate/exams/algebra/2021-08.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2021-08.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2021]({{site.url}}/graduate/exams/algebra/2021-01.pdf)
   - [08/2020]({{site.url}}/graduate/exams/algebra/2020-08.pdf)
   - [01/2020]({{site.url}}/graduate/exams/algebra/2020-01.pdf)
@@ -92,7 +92,7 @@ Below are old exams and study materials for each of the subfields.
   - [08/2014]({{site.url}}/graduate/exams/analysis/2014Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2014Aug.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2013]({{site.url}}/graduate/exams/analysis/2013Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2013Aug.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2013]({{site.url}}/graduate/exams/analysis/2013Jan.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2013Jan.pdf" aria-label="PDF version for printing">PDF</a>
-  - [08/2012]({{site.url}}/graduate/exams/analysis/2012Aug.pdf)
+  - [08/2012]({{site.url}}/graduate/exams/analysis/2012Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2012Aug.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2011]({{site.url}}/graduate/exams/analysis/2011Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2011Aug.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2011]({{site.url}}/graduate/exams/analysis/2011Jan.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2011Jan.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2010]({{site.url}}/graduate/exams/analysis/2010Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2010Aug.pdf" aria-label="PDF version for printing">PDF</a>
