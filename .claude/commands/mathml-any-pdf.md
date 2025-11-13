@@ -547,21 +547,96 @@ grep -c '<th' <HTML_PATH>
 - [ ] Complex tables use `headers` attribute
 - [ ] Tables are responsive (scrollable on mobile)
 
-### Step 17: Run Automated WCAG Verification Script
+### Step 17: Run Automated Validation Suite
+**CRITICAL**: Run the comprehensive validation script that executes ALL automated checks.
+
+**Note**: All validation scripts use only Python standard library - no external dependencies required.
+
 ```bash
+python3 scripts/validate_conversion.py <HTML_PATH>
+```
+
+This master script automatically runs:
+1. **WCAG 2.1 Level AA compliance** (verify_wcag.py)
+   - Unicode violations (U+1D400-U+1D7FF)
+   - H1 tag presence
+   - `<main>` landmark
+   - MathML role="math" attributes
+   - Breadcrumb navigation
+
+2. **Heading hierarchy** (check_heading_hierarchy.py)
+   - Exactly one H1
+   - No skipped levels (H1→H2, not H1→H3)
+   - All headings have unique IDs
+   - No duplicate IDs
+
+3. **Links and images** (check_links_images.py)
+   - Broken internal anchor links (#id references)
+   - Missing image files
+   - Images without alt text
+   - Empty links without text or aria-label
+
+4. **MathML accessibility** (check_mathml.py)
+   - All `<math>` have role="math"
+   - All `<math>` have aria-label
+   - Proper `<semantics>` wrappers
+   - LaTeX annotations present
+   - Display mode statistics
+
+**Expected output** (if all pass):
+```
+================================================================================
+PDF TO HTML CONVERSION VALIDATION REPORT
+================================================================================
+
+File: /path/to/file.html
+
+1. WCAG 2.1 LEVEL AA COMPLIANCE
+   ✅ PASS
+
+2. HEADING HIERARCHY
+   ✅ PASS
+
+3. LINKS AND IMAGES
+   ✅ PASS
+
+4. MATHML ACCESSIBILITY
+   ✅ PASS
+
+   Statistics:
+      Total math elements: 47
+      With role="math": 47
+      With aria-label: 47
+      Inline/Block: 32/15
+
+================================================================================
+OVERALL VERDICT
+================================================================================
+✅ PRODUCTION READY - All checks passed
+✅ WCAG 2.1 Level AA compliant
+✅ ADA Title II & III compliant
+✅ Lawsuit risk: MINIMAL
+```
+
+**If ANY failures reported**:
+1. **STOP immediately** - do NOT proceed to Step 18
+2. Read the failure details from the report
+3. Fix each violation:
+   - Unicode violations: Use Edit to replace with HTML entities
+   - Heading issues: Add/fix headings with Edit tool
+   - Broken links: Fix anchor targets or image paths
+   - MathML issues: Check fix_mathml.py output
+4. Re-run `validate_conversion.py`
+5. **Only proceed when** you see "✅ PRODUCTION READY"
+
+**Individual validation scripts** (for debugging):
+```bash
+# Run individual checks if needed:
 python3 scripts/verify_wcag.py <HTML_PATH>
+python3 scripts/check_heading_hierarchy.py <HTML_PATH>
+python3 scripts/check_links_images.py <HTML_PATH>
+python3 scripts/check_mathml.py <HTML_PATH>
 ```
-
-**Expected output**:
-```
-✅ <HTML_PATH>: PASS
-```
-
-**If failures reported**:
-1. STOP immediately
-2. Fix all violations
-3. Re-run validation
-4. Only proceed when you see `✅ PASS`
 
 ### Step 18: Final Quality Report
 After all validation passes, provide a comprehensive quality report:

@@ -28,3 +28,4 @@ script/page.html
 _site*
 _includes_backup*
 _layouts_backup*
+venv/

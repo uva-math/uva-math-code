@@ -6,7 +6,6 @@ Checks for proper MathML elements, ARIA attributes, and semantics.
 
 import sys
 import re
-from bs4 import BeautifulSoup
 
 def check_mathml(filepath):
     """
@@ -15,8 +14,6 @@ def check_mathml(filepath):
     """
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
-
-    soup = BeautifulSoup(content, 'html.parser')
 
     issues = []
     warnings = []
@@ -30,47 +27,55 @@ def check_mathml(filepath):
         'block': 0
     }
 
-    # Find all math elements
-    math_elements = soup.find_all('math')
-    stats['total_math'] = len(math_elements)
+    # Find all math elements using regex
+    math_pattern = r'<math[^>]*>(.*?)</math>'
+    math_elements = re.finditer(math_pattern, content, re.DOTALL | re.IGNORECASE)
+
+    math_list = list(re.finditer(math_pattern, content, re.DOTALL | re.IGNORECASE))
+    stats['total_math'] = len(math_list)
 
     if stats['total_math'] == 0:
         warnings.append("No math elements found (this may be expected)")
         return (True, issues, warnings, stats)
 
-    for i, math in enumerate(math_elements, 1):
+    for i, math_match in enumerate(math_list, 1):
+        math_tag = math_match.group(0)
+        math_content = math_match.group(1)
+
         # Check 1: role="math"
-        if math.get('role') == 'math':
+        if re.search(r'role="math"', math_tag):
             stats['with_role'] += 1
         else:
             issues.append(f"Math element #{i} missing role=\"math\"")
 
         # Check 2: aria-label with LaTeX
-        if math.get('aria-label'):
+        if re.search(r'aria-label="[^"]+"', math_tag):
             stats['with_aria_label'] += 1
         else:
             issues.append(f"Math element #{i} missing aria-label")
 
         # Check 3: xmlns namespace
-        if 'xmlns' not in math.attrs:
+        if 'xmlns' not in math_tag:
             warnings.append(f"Math element #{i} missing xmlns namespace")
 
         # Check 4: display attribute
-        display = math.get('display', 'inline')
-        if display == 'inline':
-            stats['inline'] += 1
-        elif display == 'block':
-            stats['block'] += 1
+        display_match = re.search(r'display="(inline|block)"', math_tag)
+        if display_match:
+            if display_match.group(1) == 'inline':
+                stats['inline'] += 1
+            elif display_match.group(1) == 'block':
+                stats['block'] += 1
+        else:
+            stats['inline'] += 1  # Default is inline
 
         # Check 5: <semantics> wrapper
-        if math.find('semantics'):
+        if '<semantics' in math_content:
             stats['with_semantics'] += 1
         else:
             warnings.append(f"Math element #{i} missing <semantics> wrapper")
 
         # Check 6: <annotation> with LaTeX
-        annotation = math.find('annotation', {'encoding': 'application/x-tex'})
-        if annotation:
+        if re.search(r'<annotation[^>]+encoding="application/x-tex"', math_content):
             stats['with_annotation'] += 1
         else:
             warnings.append(f"Math element #{i} missing LaTeX annotation")

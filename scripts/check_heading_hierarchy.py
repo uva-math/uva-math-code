@@ -6,7 +6,6 @@ Ensures proper H1/H2/H3 structure for WCAG 2.1 Level AA compliance.
 
 import sys
 import re
-from bs4 import BeautifulSoup
 
 def check_heading_hierarchy(filepath):
     """
@@ -16,19 +15,22 @@ def check_heading_hierarchy(filepath):
     with open(filepath, 'r', encoding='utf-8') as f:
         content = f.read()
 
-    soup = BeautifulSoup(content, 'html.parser')
-
     issues = []
 
-    # Extract all headings with their levels
+    # Extract all headings with their levels using regex
+    heading_pattern = r'<h([1-6])(?:\s+[^>]*)?(?:\s+id="([^"]*)")?[^>]*>(.*?)</h\1>'
+    heading_matches = re.finditer(heading_pattern, content, re.DOTALL | re.IGNORECASE)
+
     headings = []
-    for level in range(1, 7):
-        for heading in soup.find_all(f'h{level}'):
-            headings.append({
-                'level': level,
-                'text': heading.get_text().strip(),
-                'id': heading.get('id', '')
-            })
+    for match in heading_matches:
+        level = int(match.group(1))
+        id_attr = match.group(2) if match.group(2) else ''
+        text = re.sub(r'<[^>]+>', '', match.group(3)).strip()  # Remove HTML tags
+        headings.append({
+            'level': level,
+            'text': text,
+            'id': id_attr
+        })
 
     if not headings:
         issues.append("No headings found in document")

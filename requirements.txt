@@ -1,0 +1,6 @@
+# Python requirements for UVA Math website scripts
+# To install: pip install -r requirements.txt
+# (or use venv: python3 -m venv venv && source venv/bin/activate && pip install -r requirements.txt)
+
+# Currently all scripts use only standard library (no external dependencies required)
+# Future dependencies can be added here
