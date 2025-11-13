@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>COMPLEX ANALYSIS GENERAL
+EXAM FALL 2023 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">COMPLEX ANALYSIS GENERAL
+EXAM FALL 2023</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered"
+id="complex-analysis-general-exam-fall-2023">COMPLEX ANALYSIS GENERAL
+EXAM FALL 2023</h1>
+<p>Solve as many problems as you can. Full solutions on a smaller number
+of problems will be worth more than partial solutions on several
+problems. Don't use any of the Picard theorems.</p>
+
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>For
+<math role="math" aria-label="\xi \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&xi;</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\xi \in \mathbb{R}</annotation></semantics></math>,
+compute</p>
+<p><math role="math" aria-label="\int_{-\infty}^{\infty} \frac{\cos (\xi x)}{x^{2}+4 x+5} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>&xi;</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mi>x</mi><mo>+</mo><mn>5</mn></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \frac{\cos (\xi x)}{x^{2}+4 x+5} d x</annotation></semantics></math></p>
+<p>You must justify all estimates.</p>
+
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Let
+<math role="math" aria-label="f: \mathbb{C} \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>&Copf;</mi><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">f: \mathbb{C} \rightarrow \mathbb{C}</annotation></semantics></math>
+be an entire function whose derivative satisfies</p>
+<p><math role="math" aria-label="\left|f^{\prime}(z)\right| \leq e^{\sqrt{\log (|z|+1)}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><msup><mi>e</mi><msqrt><mrow><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></msqrt></msup></mrow><annotation encoding="application/x-tex">\left|f^{\prime}(z)\right| \leq e^{\sqrt{\log (|z|+1)}}</annotation></semantics></math></p>
+<p>for all
+<math role="math" aria-label="z \in \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">z \in \mathbb{C}</annotation></semantics></math>.
+Show that there exist constants
+<math role="math" aria-label="a, b \in \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>&isin;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">a, b \in \mathbb{C}</annotation></semantics></math>
+with
+<math role="math" aria-label="|a| \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>a</mi><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|a| \leq 1</annotation></semantics></math>
+such that
+<math role="math" aria-label="f(z)=a z+b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mi>z</mi><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">f(z)=a z+b</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Let
+<math role="math" aria-label="U:=\{z \in \mathbb{C}: \operatorname{Re}(z)&gt;0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>:=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mrow><mi mathvariant="normal">Re</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">U:=\{z \in \mathbb{C}: \operatorname{Re}(z)&gt;0\}</annotation></semantics></math>.
+Suppose that
+<math role="math" aria-label="f: \bar{U} \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mover><mi>U</mi><mo accent="true">‾</mo></mover><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">f: \bar{U} \rightarrow \mathbb{C}</annotation></semantics></math>
+is continuous,
+<math role="math" aria-label="\sup _{z \in \partial U}|f(z)| \leq 1,\left.f\right|_{U}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">sup</mi><mo>&#8289;</mo></mrow><mrow><mi>z</mi><mo>&isin;</mo><mi>&part;</mi><mi>U</mi></mrow></msub><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>1</mn><mo>,</mo><msub><mrow><mi>f</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi>U</mi></msub></mrow><annotation encoding="application/x-tex">\sup _{z \in \partial U}|f(z)| \leq 1,\left.f\right|_{U}</annotation></semantics></math>
+is holomorphic, and that there exist
+<math role="math" aria-label="M, \alpha&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>,</mo><mi>&alpha;</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">M, \alpha&gt;0</annotation></semantics></math>
+such that
+<math role="math" aria-label="|f(z)| \leq M e^{\alpha \sqrt{|z|}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mi>M</mi><msup><mi>e</mi><mrow><mi>&alpha;</mi><msqrt><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo></mrow></msqrt></mrow></msup></mrow><annotation encoding="application/x-tex">|f(z)| \leq M e^{\alpha \sqrt{|z|}}</annotation></semantics></math>
+for all
+<math role="math" aria-label="z \in U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">z \in U</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="|f(z)| \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|f(z)| \leq 1</annotation></semantics></math>
+for all
+<math role="math" aria-label="z \in U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">z \in U</annotation></semantics></math>.
+(Hint: for fixed
+<math role="math" aria-label="\varepsilon&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&epsilon;</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math>,
+show that the desired estimate holds for
+<math role="math" aria-label="f_{\varepsilon}(z):=f(z) e^{-\varepsilon z^{3 / 4}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>&epsilon;</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>e</mi><mrow><mi>−</mi><mi>&epsilon;</mi><msup><mi>z</mi><mrow><mn>3</mn><mi>/</mi><mn>4</mn></mrow></msup></mrow></msup></mrow><annotation encoding="application/x-tex">f_{\varepsilon}(z):=f(z) e^{-\varepsilon z^{3 / 4}}</annotation></semantics></math>.)</p>
+
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Given,
+<math role="math" aria-label="n, m \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>,</mo><mi>m</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">n, m \in \mathbb{N}</annotation></semantics></math>
+with
+<math role="math" aria-label="m&lt;2 n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&lt;</mo><mn>2</mn><mi>n</mi></mrow><annotation encoding="application/x-tex">m&lt;2 n</annotation></semantics></math>
+and
+<math role="math" aria-label="a, b \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">a, b \in \mathbb{R}</annotation></semantics></math>
+with
+<math role="math" aria-label="b&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b&gt;0</annotation></semantics></math>
+and
+<math role="math" aria-label="a \in \left(-b^{1-\frac{m}{2 n}}, b^{1-\frac{m}{2 n}}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><msup><mi>b</mi><mrow><mn>1</mn><mo>−</mo><mfrac><mi>m</mi><mrow><mn>2</mn><mi>n</mi></mrow></mfrac></mrow></msup><mo>,</mo><msup><mi>b</mi><mrow><mn>1</mn><mo>−</mo><mfrac><mi>m</mi><mrow><mn>2</mn><mi>n</mi></mrow></mfrac></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">a \in \left(-b^{1-\frac{m}{2 n}}, b^{1-\frac{m}{2 n}}\right)</annotation></semantics></math>,
+show that the polynomial
+<math role="math" aria-label="P(z):=z^{2 n}+a z^{m}+b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><msup><mi>z</mi><mrow><mn>2</mn><mi>n</mi></mrow></msup><mo>+</mo><mi>a</mi><msup><mi>z</mi><mi>m</mi></msup><mo>+</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">P(z):=z^{2 n}+a z^{m}+b</annotation></semantics></math>
+has exactly
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+zeroes (counted with multiplicity) with positive imaginary parts. (Hint:
+consider the case
+<math role="math" aria-label="a=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math>
+first.)</p>
+
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Let
+<math role="math" aria-label="\left(f_{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(f_{n}\right)</annotation></semantics></math>
+be a sequence of holomorphic functions from
+<math role="math" aria-label="\mathbb{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Dopf;</mi><annotation encoding="application/x-tex">\mathbb{D}</annotation></semantics></math>
+to
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>
+that is locally bounded, where
+<math role="math" aria-label="\mathbb{D}:=\{z \in \mathbb{C}:|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Dopf;</mi><mo>:=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{D}:=\{z \in \mathbb{C}:|z|&lt;1\}</annotation></semantics></math>
+denotes the unit disc centred at the origin. Suppose that there exists a
+holomorphic function
+<math role="math" aria-label="f: \mathbb{D} \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>&Dopf;</mi><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">f: \mathbb{D} \rightarrow \mathbb{C}</annotation></semantics></math>
+such that the set
+<math role="math" aria-label="A=\left\{z \in \mathbb{D}: \lim _{n \rightarrow \infty} f_{n}(z)=f(z)\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Dopf;</mi><mo>:</mo><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">A=\left\{z \in \mathbb{D}: \lim _{n \rightarrow \infty} f_{n}(z)=f(z)\right\}</annotation></semantics></math>
+has a limit point in
+<math role="math" aria-label="\mathbb{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Dopf;</mi><annotation encoding="application/x-tex">\mathbb{D}</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="\left(f_{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(f_{n}\right)</annotation></semantics></math>
+converges uniformly on compact sets to
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.</p>
+</main>
+</body>
+</html>

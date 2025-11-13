@@ -72,12 +72,12 @@ Below are old exams and study materials for each of the subfields.
   
   <h2>Analysis</h2>
 
-  - [08/2025, complex]({{site.url}}/graduate/exams/analysis/2025Aug_complex.pdf)
-  - [01/2025, complex]({{site.url}}/graduate/exams/analysis/2025Jan_complex.pdf)
-  - [01/2025, real]({{site.url}}/graduate/exams/analysis/2025Jan_real.pdf)
-  - [08/2024, real]({{site.url}}/graduate/exams/analysis/2024Aug_real.pdf)
-  - [08/2023, complex]({{site.url}}/graduate/exams/analysis/2023Aug_complex.pdf)
-  - [01/2023, complex]({{site.url}}/graduate/exams/analysis/2023Jan_complex.pdf)
+  - [08/2025, complex]({{site.url}}/graduate/exams/analysis/2025Aug_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2025Aug_complex.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2025, complex]({{site.url}}/graduate/exams/analysis/2025Jan_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2025Jan_complex.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2025, real]({{site.url}}/graduate/exams/analysis/2025Jan_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2025Jan_real.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2024, real]({{site.url}}/graduate/exams/analysis/2024Aug_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2024Aug_real.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2023, complex]({{site.url}}/graduate/exams/analysis/2023Aug_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2023Aug_complex.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2023, complex]({{site.url}}/graduate/exams/analysis/2023Jan_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2023Jan_complex.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2023, real]({{site.url}}/graduate/exams/analysis/2023Jan_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2023Jan_real.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2022, complex]({{site.url}}/graduate/exams/analysis/2022Aug_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2022Aug_complex.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2022, real]({{site.url}}/graduate/exams/analysis/2022Aug_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2022Aug_real.pdf" aria-label="PDF version for printing">PDF</a>
