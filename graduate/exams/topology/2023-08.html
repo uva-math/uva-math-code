@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Topology General Exam — August 2023 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Topology General Exam — August 2023</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="topology-general-exam">Topology General Exam — August 2023</h1>
+<p>Instructions: This is a four hour exam. Your solutions should be
+legible and clearly organized, written in complete sentences in good
+mathematical style on your own paper. All work should be your own-no
+outside sources are permitted-using methods and results from the first
+year topology courses. Each problem is worth the same number of
+points.</p>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Let
+<math role="math" aria-label="x_{i}, y_{i}, z, i=1, \ldots, n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>y</mi><mi>i</mi></msub><mo>,</mo><mi>z</mi><mo>,</mo><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">x_{i}, y_{i}, z, i=1, \ldots, n</annotation></semantics></math>,
+denote the coordinates on
+<math role="math" aria-label="\mathbb{R}^{2 n+1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">\mathbb{R}^{2 n+1}</annotation></semantics></math>.
+Consider the 1 -form</p>
+<p><math role="math" aria-label="w=\mathrm{d} z+\sum_{i=1}^{n} x_{i} \mathrm{~d} y_{i} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><mi mathvariant="normal">d</mi><mi>z</mi><mo>+</mo><munderover><mo>&sum;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>x</mi><mi>i</mi></msub><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">d</mi></mrow><msub><mi>y</mi><mi>i</mi></msub><mi>.</mi></mrow><annotation encoding="application/x-tex">w=\mathrm{d} z+\sum_{i=1}^{n} x_{i} \mathrm{~d} y_{i} .</annotation></semantics></math></p>
+<p>Compute
+<math role="math" aria-label="w \wedge(\mathrm{~d} w)^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>&and;</mo><mo stretchy="false" form="prefix">(</mo><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">d</mi></mrow><mi>w</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">w \wedge(\mathrm{~d} w)^{n}</annotation></semantics></math>
+and show that it is a volume form. Here
+<math role="math" aria-label="(\mathrm{d} w)^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">d</mi><mi>w</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">(\mathrm{d} w)^{n}</annotation></semantics></math>
+denotes the
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-fold
+wedge product
+<math role="math" aria-label="\mathrm{d} w \wedge \ldots \wedge \mathrm{~d} w" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">d</mi><mi>w</mi><mo>&and;</mo><mi>…</mi><mo>&and;</mo><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">d</mi></mrow><mi>w</mi></mrow><annotation encoding="application/x-tex">\mathrm{d} w \wedge \ldots \wedge \mathrm{~d} w</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Consider the subset
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+of
+<math role="math" aria-label="\mathbb{R}^{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>4</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{4}</annotation></semantics></math>
+defined by the equation
+<math role="math" aria-label="x_{1}^{2}+x_{2}^{2}-x_{3}^{2}-x_{4}^{2}=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>x</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>x</mi><mn>2</mn><mn>2</mn></msubsup><mo>−</mo><msubsup><mi>x</mi><mn>3</mn><mn>2</mn></msubsup><mo>−</mo><msubsup><mi>x</mi><mn>4</mn><mn>2</mn></msubsup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x_{1}^{2}+x_{2}^{2}-x_{3}^{2}-x_{4}^{2}=1</annotation></semantics></math>,
+and consider the function
+<math role="math" aria-label="f: \mathbb{R}^{4} \longrightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>&Ropf;</mi><mn>4</mn></msup><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">f: \mathbb{R}^{4} \longrightarrow \mathbb{R}</annotation></semantics></math>
+given by
+<math role="math" aria-label="f\left(x_{1}, x_{2}, x_{3}, x_{4}\right)=x_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><msub><mi>x</mi><mn>3</mn></msub><mo>,</mo><msub><mi>x</mi><mn>4</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">f\left(x_{1}, x_{2}, x_{3}, x_{4}\right)=x_{1}</annotation></semantics></math>.</p>
+<p>Show that
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is a submanifold of
+<math role="math" aria-label="\mathbb{R}^{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>4</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{4}</annotation></semantics></math>,
+and identify the critical points and critical values of the function
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+restricted to
+<math role="math" aria-label="S,\left.f\right|_{S}: S \longrightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>,</mo><msub><mrow><mi>f</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi>S</mi></msub><mo>:</mo><mi>S</mi><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">S,\left.f\right|_{S}: S \longrightarrow \mathbb{R}</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a compact manifold with boundary. Prove that there does not exist a
+smooth map
+<math role="math" aria-label="f: M \longrightarrow \partial M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>&part;</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">f: M \longrightarrow \partial M</annotation></semantics></math>
+such that
+<math role="math" aria-label="f(x)=x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">f(x)=x</annotation></semantics></math>
+for all
+<math role="math" aria-label="x \in \partial M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>&part;</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">x \in \partial M</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a smooth manifold and
+<math role="math" aria-label="f: M \longrightarrow M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">f: M \longrightarrow M</annotation></semantics></math>
+a smooth map. Suppose that
+<math role="math" aria-label="p \in M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&isin;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">p \in M</annotation></semantics></math>
+is a fixed point of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>,
+meaning
+<math role="math" aria-label="f(p)=p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">f(p)=p</annotation></semantics></math>.
+Prove that the following conditions are equivalent:<br />
+a) The graph
+<math role="math" aria-label="\{(x, f(x)) \mid x \in M\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>x</mi><mo>&isin;</mo><mi>M</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{(x, f(x)) \mid x \in M\}</annotation></semantics></math>
+of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+intersects the diagonal
+<math role="math" aria-label="\{(x, x) \mid x \in M\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>x</mi><mo>&isin;</mo><mi>M</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{(x, x) \mid x \in M\}</annotation></semantics></math>
+transversely at the point
+<math role="math" aria-label="(p, p) \in M \times M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>,</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>M</mi><mo>&times;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">(p, p) \in M \times M</annotation></semantics></math>.<br />
+b) 1 is not an eigenvalue of the differential
+<math role="math" aria-label="d_{p} f: T_{p} M \longrightarrow T_{p} M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>p</mi></msub><mi>f</mi><mo>:</mo><msub><mi>T</mi><mi>p</mi></msub><mi>M</mi><mo>&rarr;</mo><msub><mi>T</mi><mi>p</mi></msub><mi>M</mi></mrow><annotation encoding="application/x-tex">d_{p} f: T_{p} M \longrightarrow T_{p} M</annotation></semantics></math>.</p>
+<p>Hint. It may be helpful to consider the graph
+<math role="math" aria-label="\left\{\left(v, d_{p} f(v)\right) \mid v \in T_{p} M\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo>,</mo><msub><mi>d</mi><mi>p</mi></msub><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>∣</mo><mi>v</mi><mo>&isin;</mo><msub><mi>T</mi><mi>p</mi></msub><mi>M</mi><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{\left(v, d_{p} f(v)\right) \mid v \in T_{p} M\right\}</annotation></semantics></math>
+of the differential
+<math role="math" aria-label="d_{p} f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>p</mi></msub><mi>f</mi></mrow><annotation encoding="application/x-tex">d_{p} f</annotation></semantics></math>
+and the conditions under which it is transverse to the diagonal
+<math role="math" aria-label="\left\{(v, v) \mid v \in T_{p} M\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>v</mi><mo>&isin;</mo><msub><mi>T</mi><mi>p</mi></msub><mi>M</mi><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{(v, v) \mid v \in T_{p} M\right\}</annotation></semantics></math>
+in
+<math role="math" aria-label="T_{p} M \times T_{p} M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>p</mi></msub><mi>M</mi><mo>&times;</mo><msub><mi>T</mi><mi>p</mi></msub><mi>M</mi></mrow><annotation encoding="application/x-tex">T_{p} M \times T_{p} M</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Suppose that the 3 -torus
+<math role="math" aria-label="T^{3}=S^{1} \times S^{1} \times S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mn>3</mn></msup><mo>=</mo><msup><mi>S</mi><mn>1</mn></msup><mo>&times;</mo><msup><mi>S</mi><mn>1</mn></msup><mo>&times;</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">T^{3}=S^{1} \times S^{1} \times S^{1}</annotation></semantics></math>
+is written as a union
+<math role="math" aria-label="T^{3}=U_{1} \cup \cdots \cup U_{m}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mn>3</mn></msup><mo>=</mo><msub><mi>U</mi><mn>1</mn></msub><mo>&cup;</mo><mi>⋯</mi><mo>&cup;</mo><msub><mi>U</mi><mi>m</mi></msub></mrow><annotation encoding="application/x-tex">T^{3}=U_{1} \cup \cdots \cup U_{m}</annotation></semantics></math>
+of open subets
+<math role="math" aria-label="U_{j}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>U</mi><mi>j</mi></msub><annotation encoding="application/x-tex">U_{j}</annotation></semantics></math>
+each homeomorphic to
+<math role="math" aria-label="\mathbb{R}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{3}</annotation></semantics></math>.
+Prove that for some
+<math role="math" aria-label="k \leq m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&le;</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">k \leq m</annotation></semantics></math>,
+the intersection
+<math role="math" aria-label="\left(U_{1} \cup \cdots \cup U_{k-1}\right) \cap U_{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>U</mi><mn>1</mn></msub><mo>&cup;</mo><mi>⋯</mi><mo>&cup;</mo><msub><mi>U</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&cap;</mo><msub><mi>U</mi><mi>k</mi></msub></mrow><annotation encoding="application/x-tex">\left(U_{1} \cup \cdots \cup U_{k-1}\right) \cap U_{k}</annotation></semantics></math>
+is either empty or disconnected.</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Let
+<math role="math" aria-label="f: S^{n} \rightarrow S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mi>n</mi></msup><mo>&rarr;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f: S^{n} \rightarrow S^{n}</annotation></semantics></math>
+be a continuous map.<br />
+a) Prove that if
+<math role="math" aria-label="\operatorname{deg}(f) \neq(-1)^{n+1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\operatorname{deg}(f) \neq(-1)^{n+1}</annotation></semantics></math>
+then
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+has a fixed point.<br />
+b) Suppose that
+<math role="math" aria-label="f(x)=f(-x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)=f(-x)</annotation></semantics></math>
+for all
+<math role="math" aria-label="x \in S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">x \in S^{n}</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="\operatorname{deg}(f)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{deg}(f)</annotation></semantics></math>
+is even, and if in addition
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is even, then
+<math role="math" aria-label="\operatorname{deg}(f)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\operatorname{deg}(f)=0</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>Let
+<math role="math" aria-label="X=\mathbb{R} P^{2} \vee \mathbb{R} P^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup><mo>&or;</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">X=\mathbb{R} P^{2} \vee \mathbb{R} P^{2}</annotation></semantics></math>.<br />
+a) Prove that
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+does not admit a connected, regular, 3 -sheeted covering space.<br />
+b) Construct a connected (non-regular) 3-sheeted covering space of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>Let
+<math role="math" aria-label="K \subset S^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>&sub;</mo><msup><mi>S</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">K \subset S^{3}</annotation></semantics></math>
+be a smooth submanifold diffeomorphic to a circle,
+<math role="math" aria-label="K \cong S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>≅</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">K \cong S^{1}</annotation></semantics></math>
+(so
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+is a "knot" in the 3 -dimensional sphere). Use the axioms and properties
+of homology, including for example the long exact sequence of a pair and
+the Mayer-Vietoris sequence, to answer the following:<br />
+a) Find the relative homology groups
+<math role="math" aria-label="H_{j}\left(S^{3}, K\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>j</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mn>3</mn></msup><mo>,</mo><mi>K</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H_{j}\left(S^{3}, K\right)</annotation></semantics></math>
+for all
+<math role="math" aria-label="j" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>.<br />
+b) Prove that
+<math role="math" aria-label="H_{1}\left(S^{3}-K\right) \cong \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mn>3</mn></msup><mo>−</mo><mi>K</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≅</mo><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">H_{1}\left(S^{3}-K\right) \cong \mathbb{Z}</annotation></semantics></math>.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Topology General Exam January 11, 2024 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Topology General Exam January 11, 2024</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="topology-general-exam">Topology General Exam — January 11, 2024</h1>
+
+<p><strong>Student ID:</strong> __________________________</p>
+
+<p><strong>Instructions:</strong> This is a four hour exam. Your solutions should be
+legible and clearly organized, written in complete sentences in good
+mathematical style. All work should be your own-no outside sources are
+permitted-using methods and results from the first year topology course
+topics. There are 8 problems; each problem is worth the same number of
+points.</p>
+
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Let
+<math role="math" aria-label="f, g: \mathbb{R}^{1} \longrightarrow \mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>g</mi><mo>:</mo><msup><mi>&Ropf;</mi><mn>1</mn></msup><mo>&rarr;</mo><msup><mi>&Ropf;</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f, g: \mathbb{R}^{1} \longrightarrow \mathbb{R}^{2}</annotation></semantics></math>
+be two smooth maps. Prove that the subset of
+<math role="math" aria-label="\mathbb{R}^{1} \times \mathbb{R}^{1} \times \mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Ropf;</mi><mn>1</mn></msup><mo>&times;</mo><msup><mi>&Ropf;</mi><mn>1</mn></msup><mo>&times;</mo><msup><mi>&Ropf;</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{R}^{1} \times \mathbb{R}^{1} \times \mathbb{R}^{2}</annotation></semantics></math>
+consisting of all points
+<math role="math" aria-label="(x, y, z) \in \mathbb{R}^{1} \times \mathbb{R}^{1} \times \mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msup><mi>&Ropf;</mi><mn>1</mn></msup><mo>&times;</mo><msup><mi>&Ropf;</mi><mn>1</mn></msup><mo>&times;</mo><msup><mi>&Ropf;</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(x, y, z) \in \mathbb{R}^{1} \times \mathbb{R}^{1} \times \mathbb{R}^{2}</annotation></semantics></math>
+satisfying the equation
+<math role="math" aria-label="f(x)-g(x)=z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">f(x)-g(x)=z</annotation></semantics></math>
+is a submanifold. What is its dimension?</p>
+
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Consider two topological spaces
+<math role="math" aria-label="X, Y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X, Y</annotation></semantics></math>
+obtained from a disk by removing two smaller disks from its interior,
+and then identifying all three boundary curves to a single curve,
+respecting the orientations as shown in the figure. Compute the homology
+groups of both
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+and
+<math role="math" aria-label="Y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>
+with
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>
+coefficients.<br />
+<img src="2025_11_13_654537c7edef0e33f195g-1.jpg" alt="Diagram showing space X with orientation" style="max-width: 45%; height: auto; margin: 0.5em;" />
+<img src="2025_11_13_654537c7edef0e33f195g-1(2).jpg" alt="Diagram showing space Y with orientation" style="max-width: 45%; height: auto; margin: 0.5em;" /></p>
+
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Show that any smooth map
+<math role="math" aria-label="f: \mathbb{R} P^{n} \rightarrow \mathbb{R} P^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>&Ropf;</mi><msup><mi>P</mi><mi>n</mi></msup><mo>&rarr;</mo><mi>&Ropf;</mi><msup><mi>P</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f: \mathbb{R} P^{n} \rightarrow \mathbb{R} P^{n}</annotation></semantics></math>
+has a fixed point, when
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is even.</p>
+
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Prove that 1-forms
+<math role="math" aria-label="\theta_{1}, \ldots, \theta_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&theta;</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>&theta;</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\theta_{1}, \ldots, \theta_{n}</annotation></semantics></math>
+on a smooth
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-manifold
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+are linearly independent (thought of as sections of the cotangent
+bundle) if and only if
+<math role="math" aria-label="\theta_{1} \wedge \ldots \wedge \theta_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&theta;</mi><mn>1</mn></msub><mo>&and;</mo><mi>…</mi><mo>&and;</mo><msub><mi>&theta;</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\theta_{1} \wedge \ldots \wedge \theta_{n}</annotation></semantics></math>
+is non-vanishing.</p>
+
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Suppose the following diagram of abelian groups and homomorphisms
+commutes:<br />
+<img src="2025_11_13_654537c7edef0e33f195g-1(1).jpg" alt="Commutative diagram of abelian groups" style="max-width: 100%; height: auto; margin: 1em 0;" /></p>
+
+<p>Assume that the rows and columns form exact sequences. Prove that
+there are isomorphisms
+<math role="math" aria-label="\operatorname{ker} \alpha \cong \operatorname{ker} \beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ker</mi><mo>&#8289;</mo></mrow><mi>&alpha;</mi><mo>≅</mo><mrow><mi mathvariant="normal">ker</mi><mo>&#8289;</mo></mrow><mi>&beta;</mi></mrow><annotation encoding="application/x-tex">\operatorname{ker} \alpha \cong \operatorname{ker} \beta</annotation></semantics></math>
+and coker
+<math role="math" aria-label="\alpha \cong \operatorname{coker} \beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>≅</mo><mrow><mi mathvariant="normal">coker</mi><mo>&#8289;</mo></mrow><mi>&beta;</mi></mrow><annotation encoding="application/x-tex">\alpha \cong \operatorname{coker} \beta</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Let
+<math role="math" aria-label="M=\left\{x^{2}+y^{2}+z^{2}=1\right\} \subset \mathbb{R}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo stretchy="true" form="postfix">}</mo></mrow><mo>&sub;</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">M=\left\{x^{2}+y^{2}+z^{2}=1\right\} \subset \mathbb{R}^{3}</annotation></semantics></math>,
+and for a real number
+<math role="math" aria-label="c \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c \neq 0</annotation></semantics></math>
+let
+<math role="math" aria-label="N=\left\{x^{2}-y^{2}+z^{2}=c\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo>=</mo><mi>c</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">N=\left\{x^{2}-y^{2}+z^{2}=c\right\}</annotation></semantics></math>.
+For which values of
+<math role="math" aria-label="c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+is the intersection between
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+transverse? For which values of
+<math role="math" aria-label="c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+is this intersection a submanifold of
+<math role="math" aria-label="\mathbb{R}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{3}</annotation></semantics></math>?</p>
+
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>Let
+<math role="math" aria-label="\exp : \mathbb{C} \rightarrow \mathbb{C} \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">exp</mi><mo>&#8289;</mo></mrow><mo>:</mo><mi>&Copf;</mi><mo>&rarr;</mo><mi>&Copf;</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\exp : \mathbb{C} \rightarrow \mathbb{C} \backslash\{0\}</annotation></semantics></math>
+be the complex
+<math role="math" aria-label="\operatorname{exponential}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">exponential</mi><annotation encoding="application/x-tex">\operatorname{exponential}</annotation></semantics></math>
+map
+<math role="math" aria-label="\exp (z)=e^{z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">exp</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>e</mi><mi>z</mi></msup></mrow><annotation encoding="application/x-tex">\exp (z)=e^{z}</annotation></semantics></math>
+(recall that
+<math role="math" aria-label="\exp" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">exp</mi><annotation encoding="application/x-tex">\exp</annotation></semantics></math>
+is a universal covering map). If
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+is a connected, locally path-connected space and
+<math role="math" aria-label="f: X \rightarrow \mathbb{C} \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mi>&Copf;</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">f: X \rightarrow \mathbb{C} \backslash\{0\}</annotation></semantics></math>
+a continuous map, a logarithm of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is a continuous map
+<math role="math" aria-label="g: X \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">g: X \rightarrow \mathbb{C}</annotation></semantics></math>
+such that
+<math role="math" aria-label="\exp \circ g=f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">exp</mi><mo>&#8289;</mo></mrow><mo>&SmallCircle;</mo><mi>g</mi><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\exp \circ g=f</annotation></semantics></math>.
+Prove that if such an
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+has finite fundamental group, then any continuous map
+<math role="math" aria-label="f: X \rightarrow \mathbb{C} \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mi>&Copf;</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">f: X \rightarrow \mathbb{C} \backslash\{0\}</annotation></semantics></math>
+has a logarithm.</p>
+
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>The connected sum of the 2-torus
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+and the projective plane
+<math role="math" aria-label="\mathbb{R} P^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{R} P^{2}</annotation></semantics></math>
+is a smooth closed 2manifold
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+whose fundamental group has a presentation
+<math role="math" aria-label="\pi_{1}(M)=\left\langle a, b, c \mid a b a^{-1} b^{-1} c^{2}=1\right\rangle" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">⟨</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>∣</mo><mi>a</mi><mi>b</mi><msup><mi>a</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><msup><mi>b</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><msup><mi>c</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo stretchy="true" form="postfix">⟩</mo></mrow></mrow><annotation encoding="application/x-tex">\pi_{1}(M)=\left\langle a, b, c \mid a b a^{-1} b^{-1} c^{2}=1\right\rangle</annotation></semantics></math>.
+Determine the number of connected, regular 3-fold covering spaces of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+up to equivalence.</p>
+<p>Hint: First show that this number is the same as the number of
+surjections
+<math role="math" aria-label="\pi_{1}(M) \rightarrow \mathbb{Z} / 3 \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mi>&Zopf;</mi><mi>/</mi><mn>3</mn><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\pi_{1}(M) \rightarrow \mathbb{Z} / 3 \mathbb{Z}</annotation></semantics></math>
+up to equivalence, where two surjections
+<math role="math" aria-label="f, g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f, g</annotation></semantics></math>
+are equivalent if and only if
+<math role="math" aria-label="g=\phi \circ f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mi>ϕ</mi><mo>&SmallCircle;</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">g=\phi \circ f</annotation></semantics></math>
+for some automorphism
+<math role="math" aria-label="\phi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+of
+<math role="math" aria-label="\mathbb{Z} / 3 \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mn>3</mn><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z} / 3 \mathbb{Z}</annotation></semantics></math>.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Topology General Exam January 2023 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Topology General Exam January 2023</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="topology-general-exam-january-2023">Topology General Exam January 2023</h1>
+
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Recall that if
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+is a "nice" (meaning connected, locally path connected and semi-locally
+simply connected) topological space with basepoint
+<math role="math" aria-label="x_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>x</mi><mn>0</mn></msub><annotation encoding="application/x-tex">x_{0}</annotation></semantics></math>,
+then connected, based covering spaces of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+are in 1-1 correspondence with subgroups of
+<math role="math" aria-label="\pi_{1}\left(X, x_{0}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>X</mi><mo>,</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\pi_{1}\left(X, x_{0}\right)</annotation></semantics></math>.
+For such a space
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>,
+let
+<math role="math" aria-label="p: \widetilde{X} \rightarrow X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>:</mo><mover><mi>X</mi><mo accent="true">̃</mo></mover><mo>&rarr;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">p: \widetilde{X} \rightarrow X</annotation></semantics></math>
+be a universal covering map, and let
+<math role="math" aria-label="A \subset X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&sub;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">A \subset X</annotation></semantics></math>
+be a "nice" subspace. Let
+<math role="math" aria-label="\widetilde{A} \subset \widetilde{X}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>A</mi><mo accent="true">̃</mo></mover><mo>&sub;</mo><mover><mi>X</mi><mo accent="true">̃</mo></mover></mrow><annotation encoding="application/x-tex">\widetilde{A} \subset \widetilde{X}</annotation></semantics></math>
+be a path component of the preimage
+<math role="math" aria-label="p^{-1}(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p^{-1}(A)</annotation></semantics></math>.
+Prove that, with suitable choices of basepoints, the restriction
+<math role="math" aria-label="p: \widetilde{A} \rightarrow A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>:</mo><mover><mi>A</mi><mo accent="true">̃</mo></mover><mo>&rarr;</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">p: \widetilde{A} \rightarrow A</annotation></semantics></math>
+is the covering space of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+corresponding to the kernel of the map
+<math role="math" aria-label="\pi_{1}(A) \rightarrow \pi_{1}(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\pi_{1}(A) \rightarrow \pi_{1}(X)</annotation></semantics></math>
+induced by inclusion.</p>
+
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>a) For each
+<math role="math" aria-label="n&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n&gt;0</annotation></semantics></math>,
+let
+<math role="math" aria-label="S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mi>n</mi></msup><annotation encoding="application/x-tex">S^{n}</annotation></semantics></math>
+have the CW structure with a single 0 -cell and a single
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-cell.
+Describe a CW structure on the product
+<math role="math" aria-label="S^{n} \times S^{m}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mi>n</mi></msup><mo>&times;</mo><msup><mi>S</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">S^{n} \times S^{m}</annotation></semantics></math>,
+and use it to compute the homology groups
+<math role="math" aria-label="H_{i}\left(S^{n} \times S^{m}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mi>n</mi></msup><mo>&times;</mo><msup><mi>S</mi><mi>m</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H_{i}\left(S^{n} \times S^{m}\right)</annotation></semantics></math>.<br />
+b) Let
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+be the space obtained from
+<math role="math" aria-label="S^{1} \times S^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mn>1</mn></msup><mo>&times;</mo><msup><mi>S</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">S^{1} \times S^{2}</annotation></semantics></math>
+by attaching a 2-cell along a map
+<math role="math" aria-label="\partial D^{2} \rightarrow S^{1} \times\{p t\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&part;</mi><msup><mi>D</mi><mn>2</mn></msup><mo>&rarr;</mo><msup><mi>S</mi><mn>1</mn></msup><mo>&times;</mo><mo stretchy="false" form="prefix">{</mo><mi>p</mi><mi>t</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\partial D^{2} \rightarrow S^{1} \times\{p t\}</annotation></semantics></math>
+of degree
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.
+Describe a CW structure on
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+and use it to find the homology groups of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Let
+<math role="math" aria-label="f: S^{n} \rightarrow S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mi>n</mi></msup><mo>&rarr;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f: S^{n} \rightarrow S^{n}</annotation></semantics></math>
+be a continuous map that is homotopic to a constant map. Prove that
+there exists
+<math role="math" aria-label="x \in S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">x \in S^{n}</annotation></semantics></math>
+with
+<math role="math" aria-label="f(x)=x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">f(x)=x</annotation></semantics></math>,
+and also a point
+<math role="math" aria-label="y \in S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>&isin;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">y \in S^{n}</annotation></semantics></math>
+with
+<math role="math" aria-label="f(y)=-y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">f(y)=-y</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a smooth, oriented manifold without boundary and
+<math role="math" aria-label="f: M \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">f: M \rightarrow \mathbb{R}</annotation></semantics></math>
+a smooth map. For
+<math role="math" aria-label="t \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">t \in \mathbb{R}</annotation></semantics></math>
+a regular value of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>,
+prove that the submanifold
+<math role="math" aria-label="Y=f^{-1}(t)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><msup><mi>f</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">Y=f^{-1}(t)</annotation></semantics></math>
+of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is orientable.</p>
+
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a smooth manifold covered by two open connected sets,
+<math role="math" aria-label="M=U_{1} \cup U_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><msub><mi>U</mi><mn>1</mn></msub><mo>&cup;</mo><msub><mi>U</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">M=U_{1} \cup U_{2}</annotation></semantics></math>.
+Suppose
+<math role="math" aria-label="\omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&omega;</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
+is a 1 -form on
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and
+<math role="math" aria-label="f_{i}: U_{i} \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>i</mi></msub><mo>:</mo><msub><mi>U</mi><mi>i</mi></msub><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">f_{i}: U_{i} \rightarrow \mathbb{R}</annotation></semantics></math>
+are smooth maps such that
+<math role="math" aria-label="\omega_{U_{i}}=d f_{i}, i=1,2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&omega;</mi><msub><mi>U</mi><mi>i</mi></msub></msub><mo>=</mo><mi>d</mi><msub><mi>f</mi><mi>i</mi></msub><mo>,</mo><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\omega_{U_{i}}=d f_{i}, i=1,2</annotation></semantics></math>
+Prove that if
+<math role="math" aria-label="U_{1} \cap U_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mn>1</mn></msub><mo>&cap;</mo><msub><mi>U</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">U_{1} \cap U_{2}</annotation></semantics></math>
+is connected then there is a smooth function
+<math role="math" aria-label="f: M \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">f: M \rightarrow \mathbb{R}</annotation></semantics></math>
+such that
+<math role="math" aria-label="\omega=d f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&omega;</mi><mo>=</mo><mi>d</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">\omega=d f</annotation></semantics></math>.
+Find an example of a manifold
+<math role="math" aria-label="M=U_{1} \cup U_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><msub><mi>U</mi><mn>1</mn></msub><mo>&cup;</mo><msub><mi>U</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">M=U_{1} \cup U_{2}</annotation></semantics></math>
+where
+<math role="math" aria-label="U_{1} \cap U_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mn>1</mn></msub><mo>&cap;</mo><msub><mi>U</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">U_{1} \cap U_{2}</annotation></semantics></math>
+is not connected, and this conclusion does not hold.</p>
+
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Prove that the orthogonal group
+<math role="math" aria-label="O(n)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>O</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math>
+(consisting of
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+real matrices whose rows are orthonormal) is a manifold. What is its
+dimension?</p>
+
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>Let
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+each be copies of a Möbius band, and let
+<math role="math" aria-label="X=A \cup B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>A</mi><mo>&cup;</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">X=A \cup B</annotation></semantics></math>
+be the space obtained by identifying the boundary circles of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>.<br />
+a) Find a presentation for the fundamental group of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.<br />
+b) Compute the homology groups of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+with
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>
+coefficients and with coefficients in
+<math role="math" aria-label="\mathbb{Z} / 2 \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mn>2</mn><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z} / 2 \mathbb{Z}</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>Consider the Möbius band
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+with boundary curve
+<math role="math" aria-label="\gamma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&gamma;</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>.
+Denote the two circles in the wedge sum
+<math role="math" aria-label="S^{1} \vee S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mn>1</mn></msup><mo>&or;</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">S^{1} \vee S^{1}</annotation></semantics></math>
+by
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>,
+and consider a continuous map
+<math role="math" aria-label="\partial M \longrightarrow S^{1} \vee S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&part;</mi><mi>M</mi><mo>&rarr;</mo><msup><mi>S</mi><mn>1</mn></msup><mo>&or;</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">\partial M \longrightarrow S^{1} \vee S^{1}</annotation></semantics></math>
+which sends
+<math role="math" aria-label="\gamma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&gamma;</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+to the word
+<math role="math" aria-label="a b^{2} a b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><msup><mi>b</mi><mn>2</mn></msup><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">a b^{2} a b</annotation></semantics></math>.
+Does
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+admit an extension to
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+?</p>
+
+<h2 class="unnumbered" id="problem-9">Problem 9</h2>
+<p>A possible alternative to one of the above problems:</p>
+<p>Let
+<math role="math" aria-label="f: A \longrightarrow B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>A</mi><mo>&rarr;</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">f: A \longrightarrow B</annotation></semantics></math>
+be a chain map. Denoting the differential in the chain complexes
+<math role="math" aria-label="A, B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A, B</annotation></semantics></math>
+by
+<math role="math" aria-label="\mathrm{d}^{A}, \mathrm{~d}^{B}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">d</mi><mi>A</mi></msup><mo>,</mo><msup><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">d</mi></mrow><mi>B</mi></msup></mrow><annotation encoding="application/x-tex">\mathrm{d}^{A}, \mathrm{~d}^{B}</annotation></semantics></math>
+respectively, the mapping cone
+<math role="math" aria-label="C(f)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C(f)</annotation></semantics></math>
+is defined as the chain complex</p>
+<p><math role="math" aria-label="\ldots \longrightarrow A_{n+1} \oplus B_{n} \longrightarrow A_{n} \oplus B_{n-1} \longrightarrow A_{n-1} \oplus B_{n-2} \longrightarrow \ldots" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>…</mi><mo>&rarr;</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&oplus;</mo><msub><mi>B</mi><mi>n</mi></msub><mo>&rarr;</mo><msub><mi>A</mi><mi>n</mi></msub><mo>&oplus;</mo><msub><mi>B</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>&rarr;</mo><msub><mi>A</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>&oplus;</mo><msub><mi>B</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msub><mo>&rarr;</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">\ldots \longrightarrow A_{n+1} \oplus B_{n} \longrightarrow A_{n} \oplus B_{n-1} \longrightarrow A_{n-1} \oplus B_{n-2} \longrightarrow \ldots</annotation></semantics></math></p>
+<p>with the differential</p>
+<p><math role="math" aria-label="\left(\begin{array}{cc}
+-d_{n+1}^{A} &amp; 0 \\
+f_{n+1} &amp; d^{B} b_{n}
+\end{array}\right)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>−</mi><msubsup><mi>d</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mi>A</mi></msubsup></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><msub><mi>f</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="center" style="text-align: center"><msup><mi>d</mi><mi>B</mi></msup><msub><mi>b</mi><mi>n</mi></msub></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\begin{array}{cc}
+-d_{n+1}^{A} &amp; 0 \\
+f_{n+1} &amp; d^{B} b_{n}
+\end{array}\right)</annotation></semantics></math></p>
+<p>Prove that if
+<math role="math" aria-label="f, g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f, g</annotation></semantics></math>
+are chain homotopic, then
+<math role="math" aria-label="C(f), C(g)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C(f), C(g)</annotation></semantics></math>
+are chain homotopy equivalent.</p>
+</main>
+</body>
+</html>
