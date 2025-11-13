@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Topology General Exam - January 2015 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Topology - January 2015</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 id="topology-general-exam-january-2015">Topology General Exam - January 2015</h1>
+
+<p>Solve the following problems on your own paper. Be sure your
+solutions are legible and clearly organized. All work should be your
+own; no outside sources are permitted. You may use without proof
+standard results from first-semester differential and algebraic
+topology. Be sure to state precisely the results that you are using.</p>
+<p>In multiple part problems, late parts may depend on earlier ones.
+When working on later parts of such a problem, you may assume the
+results implied by earlier parts, even if you did not know how to do
+them.</p>
+
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Consider a smooth compact
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>-dimensional
+manifold embedded in Euclidean space,
+<math role="math" aria-label="M^{m} \subset \mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mi>m</mi></msup><mo>&sub;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">M^{m} \subset \mathbb{R}^{n}</annotation></semantics></math>,
+<math role="math" aria-label="n&gt;m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n&gt;m</annotation></semantics></math>.
+The normal bundle of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is defined to be</p>
+<p><math role="math" aria-label="N(M)=\left\{(m, v) \in \mathbb{R}^{n} \times \mathbb{R}^{n} \mid m \in M \text { and } v \in T_{m} M^{\perp}\right\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup><mo>&times;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup><mo>∣</mo><mi>m</mi><mo>&isin;</mo><mi>M</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> and </mtext><mspace width="0.333em"></mspace></mrow><mi>v</mi><mo>&isin;</mo><msub><mi>T</mi><mi>m</mi></msub><msup><mi>M</mi><mo>&perp;</mo></msup><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">N(M)=\left\{(m, v) \in \mathbb{R}^{n} \times \mathbb{R}^{n} \mid m \in M \text { and } v \in T_{m} M^{\perp}\right\}</annotation></semantics></math></p>
+<p>Here
+<math role="math" aria-label="T_{m} M^{\perp}=\left\{v \in \mathbb{R}^{n} \mid\langle v, w\rangle=0 \forall w \in T_{m} M\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>m</mi></msub><msup><mi>M</mi><mo>&perp;</mo></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>v</mi><mo>&isin;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup><mo>∣</mo><mo stretchy="false" form="prefix">⟨</mo><mi>v</mi><mo>,</mo><mi>w</mi><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mn>0</mn><mo>&forall;</mo><mi>w</mi><mo>&isin;</mo><msub><mi>T</mi><mi>m</mi></msub><mi>M</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">T_{m} M^{\perp}=\left\{v \in \mathbb{R}^{n} \mid\langle v, w\rangle=0 \forall w \in T_{m} M\right\}</annotation></semantics></math>,
+where
+<math role="math" aria-label="\langle\cdot, \cdot\rangle" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>&sdot;</mi><mo>,</mo><mi>&sdot;</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle\cdot, \cdot\rangle</annotation></semantics></math>
+indicates the usual inner product on
+<math role="math" aria-label="\mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{n}</annotation></semantics></math>.
+Then
+<math role="math" aria-label="N(M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">N(M)</annotation></semantics></math>
+is a smooth submanifold of
+<math role="math" aria-label="\mathbb{R}^{n} \times \mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Ropf;</mi><mi>n</mi></msup><mo>&times;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\mathbb{R}^{n} \times \mathbb{R}^{n}</annotation></semantics></math>
+of dimension
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+There is a natural embedding
+<math role="math" aria-label="\iota: M \rightarrow N(M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&iota;</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\iota: M \rightarrow N(M)</annotation></semantics></math>
+given by
+<math role="math" aria-label="\iota(m)=(m, 0)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&iota;</mi><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\iota(m)=(m, 0)</annotation></semantics></math>.
+Define
+<math role="math" aria-label="F: N(M) \rightarrow \mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">F: N(M) \rightarrow \mathbb{R}^{n}</annotation></semantics></math>
+by
+<math role="math" aria-label="F(m, v)=m+v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>m</mi><mo>+</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">F(m, v)=m+v</annotation></semantics></math>.<br />
+(a) Given a point
+<math role="math" aria-label="m \in M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&isin;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">m \in M</annotation></semantics></math>,
+we can choose a basis of
+<math role="math" aria-label="\mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{n}</annotation></semantics></math>
+such that
+<math role="math" aria-label="T_{m} M=\mathbb{R}^{m} \times 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>m</mi></msub><mi>M</mi><mo>=</mo><msup><mi>&Ropf;</mi><mi>m</mi></msup><mo>&times;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">T_{m} M=\mathbb{R}^{m} \times 0</annotation></semantics></math>
+while
+<math role="math" aria-label="T_{m} M^{\perp}= 0 \times \mathbb{R}^{n-m}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>m</mi></msub><msup><mi>M</mi><mo>&perp;</mo></msup><mo>=</mo><mn>0</mn><mo>&times;</mo><msup><mi>&Ropf;</mi><mrow><mi>n</mi><mo>−</mo><mi>m</mi></mrow></msup></mrow><annotation encoding="application/x-tex">T_{m} M^{\perp}= 0 \times \mathbb{R}^{n-m}</annotation></semantics></math>.
+Prove that the differential
+<math role="math" aria-label="D F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">D F</annotation></semantics></math>
+is an isomorphism at the point
+<math role="math" aria-label="\iota(m)=(m, 0) \in N(M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&iota;</mi><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\iota(m)=(m, 0) \in N(M)</annotation></semantics></math>.<br />
+(b) Prove that there exist
+<math role="math" aria-label="\epsilon&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\epsilon&gt;0</annotation></semantics></math>
+such that the restriction of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+to the subset
+<math role="math" aria-label="N_{\epsilon}(M)=\{(m, v) \in N(M)||v|&lt;\epsilon\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>N</mi><mi>ϵ</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="prefix">|</mo><mi>v</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mi>ϵ</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">N_{\epsilon}(M)=\{(m, v) \in N(M)||v|&lt;\epsilon\}</annotation></semantics></math>
+is a diffeomorphism onto a neighborhood of
+<math role="math" aria-label="M \subset \mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&sub;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">M \subset \mathbb{R}^{n}</annotation></semantics></math>.<br />
+(c) Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be the unit circle in
+<math role="math" aria-label="\mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{2}</annotation></semantics></math>.
+In this situation, what is the maximum possible value of
+<math role="math" aria-label="\epsilon" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math>
+from the previous part? Justify your answer.</p>
+
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Let
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+and
+<math role="math" aria-label="D^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>D</mi><mi>′</mi></msup><annotation encoding="application/x-tex">D^{\prime}</annotation></semantics></math>
+denote two copies of the unit disk in
+<math role="math" aria-label="\mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{2}</annotation></semantics></math>,
+and introduce polar coordinates (
+<math role="math" aria-label="r, \theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>,</mo><mi>&theta;</mi></mrow><annotation encoding="application/x-tex">r, \theta</annotation></semantics></math>
+) and (
+<math role="math" aria-label="r^{\prime}, \theta^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>r</mi><mi>′</mi></msup><mo>,</mo><msup><mi>&theta;</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">r^{\prime}, \theta^{\prime}</annotation></semantics></math>
+) on the two disks. For an integer
+<math role="math" aria-label="n \in \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">n \in \mathbb{Z}</annotation></semantics></math>,
+define an equivalence relation on the disjoint union
+<math role="math" aria-label="D \times S^{1} \sqcup D^{\prime} \times S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>&times;</mo><msup><mi>S</mi><mn>1</mn></msup><mo>⊔</mo><msup><mi>D</mi><mi>′</mi></msup><mo>&times;</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">D \times S^{1} \sqcup D^{\prime} \times S^{1}</annotation></semantics></math>,
+generated by the relation</p>
+<p><math role="math" aria-label="((r, \theta), \phi) \sim((1-r, \theta), \phi+n \theta) \quad \text { for } 0&lt;|r|&lt;1 ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>r</mi><mo>,</mo><mi>&theta;</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>ϕ</mi><mo stretchy="false" form="postfix">)</mo><mo>∼</mo><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>r</mi><mo>,</mo><mi>&theta;</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>ϕ</mi><mo>+</mo><mi>n</mi><mi>&theta;</mi><mo stretchy="false" form="postfix">)</mo><mspace width="1.0em"></mspace><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for </mtext><mspace width="0.333em"></mspace></mrow><mn>0</mn><mo>&lt;</mo><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">((r, \theta), \phi) \sim((1-r, \theta), \phi+n \theta) \quad \text { for } 0&lt;|r|&lt;1 .</annotation></semantics></math></p>
+<p>Let
+<math role="math" aria-label="Y_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Y</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Y_{n}</annotation></semantics></math>
+denote the quotient
+<math role="math" aria-label="D \times S^{1} \sqcup D^{\prime} \times S^{1} / \sim" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>&times;</mo><msup><mi>S</mi><mn>1</mn></msup><mo>⊔</mo><msup><mi>D</mi><mi>′</mi></msup><mo>&times;</mo><msup><mi>S</mi><mn>1</mn></msup><mi>/</mi><mo>∼</mo></mrow><annotation encoding="application/x-tex">D \times S^{1} \sqcup D^{\prime} \times S^{1} / \sim</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="Y_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Y</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Y_{n}</annotation></semantics></math>
+is a smooth compact 3-dimensional manifold.<br />
+(b) Use Van Kampen’s theorem to find the fundamental group of
+<math role="math" aria-label="Y_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>Y</mi><mi>n</mi></msub><annotation encoding="application/x-tex">Y_{n}</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a finite group acting on a smooth, compact, closed, oriented manifold
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+by orientationpreserving diffeomorphisms. Assume that the quotient space
+<math role="math" aria-label="N=M / G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mi>M</mi><mi>/</mi><mi>G</mi></mrow><annotation encoding="application/x-tex">N=M / G</annotation></semantics></math>
+is a smooth manifold, and also assume that there exists a point
+<math role="math" aria-label="x \in M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">x \in M</annotation></semantics></math>
+with the property that the group</p>
+<p><math role="math" aria-label="G_{x}=\{g \in G \mid g \cdot x=x\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>G</mi><mi>x</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>g</mi><mo>&isin;</mo><mi>G</mi><mo>∣</mo><mi>g</mi><mo>&sdot;</mo><mi>x</mi><mo>=</mo><mi>x</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">G_{x}=\{g \in G \mid g \cdot x=x\}</annotation></semantics></math></p>
+<p>is trivial. Prove that the natural quotient map
+<math role="math" aria-label="q: M \rightarrow N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">q: M \rightarrow N</annotation></semantics></math>
+has degree equal to the order of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Let
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+and
+<math role="math" aria-label="Y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>
+be closed, compact, oriented manifolds of the same dimension. Let
+<math role="math" aria-label="f, g: X \rightarrow Y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>g</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">f, g: X \rightarrow Y</annotation></semantics></math>
+be two smooth maps. The graphs of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+are the submanifolds of
+<math role="math" aria-label="X \times Y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>&times;</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">X \times Y</annotation></semantics></math>
+given by</p>
+<p><math role="math" aria-label="\Gamma_{f}=\{(x, f(x)) \mid x \in X\} \quad \Gamma_{g}=\{(x, g(x)) \mid x \in X\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">&Gamma;</mi><mi>f</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>x</mi><mo>&isin;</mo><mi>X</mi><mo stretchy="false" form="postfix">}</mo><mspace width="1.0em"></mspace><msub><mi mathvariant="normal">&Gamma;</mi><mi>g</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>x</mi><mo>&isin;</mo><mi>X</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\Gamma_{f}=\{(x, f(x)) \mid x \in X\} \quad \Gamma_{g}=\{(x, g(x)) \mid x \in X\}</annotation></semantics></math></p>
+<p>oriented so that the obvious diffeomorphisms
+<math role="math" aria-label="X \rightarrow \Gamma_{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>&rarr;</mo><msub><mi mathvariant="normal">&Gamma;</mi><mi>f</mi></msub></mrow><annotation encoding="application/x-tex">X \rightarrow \Gamma_{f}</annotation></semantics></math>
+and
+<math role="math" aria-label="X \rightarrow \Gamma_{g}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>&rarr;</mo><msub><mi mathvariant="normal">&Gamma;</mi><mi>g</mi></msub></mrow><annotation encoding="application/x-tex">X \rightarrow \Gamma_{g}</annotation></semantics></math>
+given by
+<math role="math" aria-label="x \mapsto(x, f(x))" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&map;</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x \mapsto(x, f(x))</annotation></semantics></math>
+and
+<math role="math" aria-label="x \mapsto(x, g(x))" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&map;</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x \mapsto(x, g(x))</annotation></semantics></math>
+are orientation-preserving.</p>
+<p>The coincidence number of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>,
+written
+<math role="math" aria-label="C(f, g)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C(f, g)</annotation></semantics></math>,
+is defined to be the intersection number
+<math role="math" aria-label="\Gamma_{f} . \Gamma_{g} \in \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">&Gamma;</mi><mi>f</mi></msub><mi>.</mi><msub><mi mathvariant="normal">&Gamma;</mi><mi>g</mi></msub><mo>&isin;</mo><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\Gamma_{f} . \Gamma_{g} \in \mathbb{Z}</annotation></semantics></math>.<br />
+(a) Prove that if
+<math role="math" aria-label="C(f, g) \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">C(f, g) \neq 0</annotation></semantics></math>
+then for any smooth maps
+<math role="math" aria-label="f^{\prime}, g^{\prime}: X \rightarrow Y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>′</mi></msup><mo>,</mo><msup><mi>g</mi><mi>′</mi></msup><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">f^{\prime}, g^{\prime}: X \rightarrow Y</annotation></semantics></math>
+such that
+<math role="math" aria-label="f^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mi>′</mi></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math>
+and
+<math role="math" aria-label="g^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>g</mi><mi>′</mi></msup><annotation encoding="application/x-tex">g^{\prime}</annotation></semantics></math>
+are homotopic to
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>,
+respectively, there exists a point
+<math role="math" aria-label="x \in X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x \in X</annotation></semantics></math>
+such that
+<math role="math" aria-label="f^{\prime}(x)=g^{\prime}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>g</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f^{\prime}(x)=g^{\prime}(x)</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="f, g: S^{1} \rightarrow S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>g</mi><mo>:</mo><msup><mi>S</mi><mn>1</mn></msup><mo>&rarr;</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">f, g: S^{1} \rightarrow S^{1}</annotation></semantics></math>
+be two maps of degree
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+and
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>,
+respectively. Prove that if
+<math role="math" aria-label="n \neq m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ne;</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n \neq m</annotation></semantics></math>,
+then there is a point
+<math role="math" aria-label="x \in S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">x \in S^{1}</annotation></semantics></math>
+with
+<math role="math" aria-label="f(x)=g(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)=g(x)</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Let
+<math role="math" aria-label="X=\mathbb{R} P^{2} \vee \mathbb{R} P^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup><mo>&or;</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">X=\mathbb{R} P^{2} \vee \mathbb{R} P^{2}</annotation></semantics></math>.
+In this question, covers are assumed to be path connected.<br />
+(a) Prove that
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+does not have a normal 3 -fold cover.<br />
+(b) Prove that
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+does have a non-normal 3-fold cover.<br />
+(c) Describe explicitly a 3 -fold cover of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Let
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+be a connected CW-complex. For each
+<math role="math" aria-label="n \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n \geq 0</annotation></semantics></math>,
+let
+<math role="math" aria-label="X^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>X</mi><mi>n</mi></msup><annotation encoding="application/x-tex">X^{n}</annotation></semantics></math>
+denote the
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-skeleton
+of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.
+Prove that the inclusion
+<math role="math" aria-label="X^{n} \hookrightarrow X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>X</mi><mi>n</mi></msup><mo>↪</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">X^{n} \hookrightarrow X</annotation></semantics></math>
+induces an isomorphism on
+<math role="math" aria-label="\pi_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&pi;</mi><mn>1</mn></msub><annotation encoding="application/x-tex">\pi_{1}</annotation></semantics></math>
+for
+<math role="math" aria-label="n \geq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n \geq 2</annotation></semantics></math>
+and an epimorphism for
+<math role="math" aria-label="n=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n=1</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>Fix integers
+<math role="math" aria-label="0 \leq k&lt;n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&le;</mo><mi>k</mi><mo>&lt;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">0 \leq k&lt;n</annotation></semantics></math>.
+Let
+<math role="math" aria-label="S^{k} \hookrightarrow S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mi>k</mi></msup><mo>↪</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">S^{k} \hookrightarrow S^{n}</annotation></semantics></math>
+be the standard inclusion. Compute the homology of the space obtained
+from
+<math role="math" aria-label="S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mi>n</mi></msup><annotation encoding="application/x-tex">S^{n}</annotation></semantics></math>
+by identifying antipodal points in
+<math role="math" aria-label="S^{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mi>k</mi></msup><annotation encoding="application/x-tex">S^{k}</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>Let
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+be a compact Hausdorff space. Let us say that
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+is cell-like if it has the following property:</p>
+<p>For any embedding
+<math role="math" aria-label="f: X \hookrightarrow S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>↪</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f: X \hookrightarrow S^{n}</annotation></semantics></math>,
+the space
+<math role="math" aria-label="S^{n} \backslash f(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mi>n</mi></msup><mo>&setminus;</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">S^{n} \backslash f(X)</annotation></semantics></math>
+has the same homology as the one-point space.<br />
+(a) (bonus question) Prove that if
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+is cell-like, then so is
+<math role="math" aria-label="X \times[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>&times;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">X \times[0,1]</annotation></semantics></math>.
+Note: At some point you may want to use a certain continuity property of
+singular homology. You can state it without proof.<br />
+Remember that regardless of what you did in part (a), you may assume it
+when working on subsequent parts.<br />
+(b) Prove that for each
+<math role="math" aria-label="k \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k \geq 0</annotation></semantics></math>,
+the closed ball
+<math role="math" aria-label="D^{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>D</mi><mi>k</mi></msup><annotation encoding="application/x-tex">D^{k}</annotation></semantics></math>
+is cell-like.<br />
+(c) Prove that for every embedding
+<math role="math" aria-label="f: S^{k} \hookrightarrow S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mi>k</mi></msup><mo>↪</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f: S^{k} \hookrightarrow S^{n}</annotation></semantics></math>,
+the space
+<math role="math" aria-label="S^{n} \backslash f\left(S^{k}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mi>n</mi></msup><mo>&setminus;</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mi>k</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">S^{n} \backslash f\left(S^{k}\right)</annotation></semantics></math>
+has the same homology as
+<math role="math" aria-label="S^{n-k-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mrow><mi>n</mi><mo>−</mo><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">S^{n-k-1}</annotation></semantics></math>.<br />
+(d) Is
+<math role="math" aria-label="S^{n} \backslash f\left(S^{k}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mi>n</mi></msup><mo>&setminus;</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mi>k</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">S^{n} \backslash f\left(S^{k}\right)</annotation></semantics></math>
+necessarily homotopy equivalent to
+<math role="math" aria-label="S^{n-k-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mrow><mi>n</mi><mo>−</mo><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">S^{n-k-1}</annotation></semantics></math>
+? Either prove it or give a counterexample.</p>
+</main>
+</body>
+</html>

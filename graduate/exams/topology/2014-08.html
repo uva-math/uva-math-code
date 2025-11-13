@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Topology General Exam - August 2014 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Topology General Exam - August 2014</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1>Topology General Exam - August 2014</h1>
+<p>Solve the following problems on your own paper. Be sure your
+solutions are legible and clearly organized. All work should be your
+own; no outside sources are permitted. You may use without proof
+standard results from first-semester differential and algebraic
+topology. Be sure to state precisely the results that you are using.</p>
+<p>In multiple part problems, late parts may depend on earlier ones.
+When working on later parts of such a problem, you may assume the
+results implied by earlier parts, even if you did not know how to do
+them.</p>
+
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Define a map
+<math role="math" aria-label="f: \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>&Ropf;</mi><mn>2</mn></msup><mo>&rarr;</mo><msup><mi>&Ropf;</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f: \mathbb{R}^{2} \rightarrow \mathbb{R}^{2}</annotation></semantics></math>
+by
+<math role="math" aria-label="f(x, y)=\left(y, x^{3}-y x\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>y</mi><mo>,</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mi>y</mi><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x, y)=\left(y, x^{3}-y x\right)</annotation></semantics></math>.<br />
+(a) What are the regular values of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+?<br />
+(b) Find
+<math role="math" aria-label="\operatorname{deg}_{(1,0)}(f)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{deg}_{(1,0)}(f)</annotation></semantics></math>.
+(Note that here
+<math role="math" aria-label="(1,0)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1,0)</annotation></semantics></math>
+is considered as a point of the range of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+Take
+<math role="math" aria-label="\mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{2}</annotation></semantics></math>
+to be equipped with the standard orientation.)</p>
+
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Define a smooth map
+<math role="math" aria-label="\varphi: \mathbb{R}^{3} \rightarrow \mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo>:</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>&rarr;</mo><msup><mi>&Ropf;</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\varphi: \mathbb{R}^{3} \rightarrow \mathbb{R}^{2}</annotation></semantics></math>
+by</p>
+<p><math role="math" aria-label="\varphi(x, y, z)=\left(\left(2-\sqrt{x^{2}+y^{2}}\right)^{2}+z^{2}, x^{2}+y^{2}-4\right) ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mo>−</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></msqrt><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo>,</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">\varphi(x, y, z)=\left(\left(2-\sqrt{x^{2}+y^{2}}\right)^{2}+z^{2}, x^{2}+y^{2}-4\right) .</annotation></semantics></math></p>
+<p>(a) Prove that the preimage
+<math role="math" aria-label="\varphi^{-1}(1,0)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&phi;</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\varphi^{-1}(1,0)</annotation></semantics></math>
+is an embedded submanifold of
+<math role="math" aria-label="\mathbb{R}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{3}</annotation></semantics></math>,
+and give a verbal description of the submanifold.<br />
+(b) For what value(s) of
+<math role="math" aria-label="c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>
+is the plane
+<math role="math" aria-label="x=c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">x=c</annotation></semantics></math>
+transverse to
+<math role="math" aria-label="\varphi^{-1}(1,0)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&phi;</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\varphi^{-1}(1,0)</annotation></semantics></math>
+? Justify your answer.</p>
+
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Suppose
+<math role="math" aria-label="M, N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>,</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">M, N</annotation></semantics></math>
+are oriented, disjoint embedded submanifolds of
+<math role="math" aria-label="\mathbb{R}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{3}</annotation></semantics></math>
+each diffeomorphic to a circle. The linking number between
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+is the integer
+<math role="math" aria-label="\ell k(M, N) \in \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℓ</mi><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo>,</mo><mi>N</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\ell k(M, N) \in \mathbb{Z}</annotation></semantics></math>
+given by the degree of the map</p>
+<p><math role="math" aria-label="\begin{aligned}
+M \times N &amp; \rightarrow S^{2} \\
+(x, y) &amp; \mapsto \frac{x-y}{|x-y|} .
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>M</mi><mo>&times;</mo><mi>N</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>&rarr;</mo><msup><mi>S</mi><mn>2</mn></msup></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>&map;</mo><mfrac><mrow><mi>x</mi><mo>−</mo><mi>y</mi></mrow><mrow><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo>−</mo><mi>y</mi><mo stretchy="false" form="prefix">|</mo></mrow></mfrac><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+M \times N &amp; \rightarrow S^{2} \\
+(x, y) &amp; \mapsto \frac{x-y}{|x-y|} .
+\end{aligned}</annotation></semantics></math></p>
+<p>Prove that if
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is the boundary of a compact oriented surface
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+embedded in
+<math role="math" aria-label="\mathbb{R}^{3}-N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>−</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">\mathbb{R}^{3}-N</annotation></semantics></math>,
+then
+<math role="math" aria-label="\ell k(M, N)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℓ</mi><mi>k</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo>,</mo><mi>N</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\ell k(M, N)=0</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Suppose
+<math role="math" aria-label="f: X^{n} \rightarrow Y^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>X</mi><mi>n</mi></msup><mo>&rarr;</mo><msup><mi>Y</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f: X^{n} \rightarrow Y^{n}</annotation></semantics></math>
+is a smooth map between compact connected manifolds without boundary,
+and assume
+<math role="math" aria-label="d f_{x}: T_{x} X \rightarrow T_{f(x)} Y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><msub><mi>f</mi><mi>x</mi></msub><mo>:</mo><msub><mi>T</mi><mi>x</mi></msub><mi>X</mi><mo>&rarr;</mo><msub><mi>T</mi><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow></msub><mi>Y</mi></mrow><annotation encoding="application/x-tex">d f_{x}: T_{x} X \rightarrow T_{f(x)} Y</annotation></semantics></math>
+is surjective for each
+<math role="math" aria-label="x \in X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">x \in X</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is a covering map.<br />
+(b) Assume both
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+and
+<math role="math" aria-label="Y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Y</mi><annotation encoding="application/x-tex">Y</annotation></semantics></math>
+are oriented. Prove that the degree of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+as a covering map (number of sheets) is equal to
+<math role="math" aria-label="|\operatorname{deg}(f)|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|\operatorname{deg}(f)|</annotation></semantics></math>,
+where
+<math role="math" aria-label="\operatorname{deg}(f)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{deg}(f)</annotation></semantics></math>
+is the degree of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+as a smooth map.</p>
+
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Prove that a continuous map
+<math role="math" aria-label="g: S^{n} \rightarrow S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><msup><mi>S</mi><mi>n</mi></msup><mo>&rarr;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">g: S^{n} \rightarrow S^{n}</annotation></semantics></math>
+satisfying
+<math role="math" aria-label="g(x)=g(-x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(x)=g(-x)</annotation></semantics></math>
+for all
+<math role="math" aria-label="x \in S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">x \in S^{n}</annotation></semantics></math>
+has even degree.</p>
+
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Let
+<math role="math" aria-label="p: \tilde{G} \rightarrow G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>:</mo><mover><mi>G</mi><mo accent="true">̃</mo></mover><mo>&rarr;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">p: \tilde{G} \rightarrow G</annotation></semantics></math>
+be a homomorphism of topological groups that is also a covering map.
+Assume that
+<math role="math" aria-label="\tilde{G}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>G</mi><mo accent="true">̃</mo></mover><annotation encoding="application/x-tex">\tilde{G}</annotation></semantics></math>
+is simply connected. Prove that
+<math role="math" aria-label="\pi_{1}(G, e)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>G</mi><mo>,</mo><mi>e</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\pi_{1}(G, e)</annotation></semantics></math>
+is isomorphic, as a group, to the kernel of
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>(a) Show that there is a free action of
+<math role="math" aria-label="\mathbb{Z} / 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\mathbb{Z} / 4</annotation></semantics></math>
+on the sphere
+<math role="math" aria-label="S^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>3</mn></msup><annotation encoding="application/x-tex">S^{3}</annotation></semantics></math>.</p>
+<p>Even if you you did not do part (a), continue with the rest of the
+problem as if you constructed such an action.</p>
+<p>Let
+<math role="math" aria-label="\mathbb{Z} / 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\mathbb{Z} / 2</annotation></semantics></math>
+act on
+<math role="math" aria-label="S^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>2</mn></msup><annotation encoding="application/x-tex">S^{2}</annotation></semantics></math>
+by sending a point to its antipode. Taking cartesian product with the
+action of part (a), we get an action of
+<math role="math" aria-label="\mathbb{Z} / 2 \times \mathbb{Z} / 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mn>2</mn><mo>&times;</mo><mi>&Zopf;</mi><mi>/</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">\mathbb{Z} / 2 \times \mathbb{Z} / 4</annotation></semantics></math>
+on
+<math role="math" aria-label="S^{2} \times S^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mn>2</mn></msup><mo>&times;</mo><msup><mi>S</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">S^{2} \times S^{3}</annotation></semantics></math>.
+Let
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+be the quotient space of this action and let
+<math role="math" aria-label="q: S^{2} \times S^{3} \rightarrow X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>:</mo><msup><mi>S</mi><mn>2</mn></msup><mo>&times;</mo><msup><mi>S</mi><mn>3</mn></msup><mo>&rarr;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">q: S^{2} \times S^{3} \rightarrow X</annotation></semantics></math>
+be the quotient map.<br />
+(b) Prove that
+<math role="math" aria-label="q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is a covering map.<br />
+(c) Describe the universal cover of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.<br />
+(d) What is the fundamental group of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+?<br />
+(e) Describe all the connected covers of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>,
+up to isomorphism. For each cover, specify its degree, its fundamental
+group, and its group of deck transformations.</p>
+
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>Prove that if
+<math role="math" aria-label="n \geq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n \geq 2</annotation></semantics></math>
+then every continuous map
+<math role="math" aria-label="f: \mathbb{R} P^{n} \rightarrow S^{1} \times S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>&Ropf;</mi><msup><mi>P</mi><mi>n</mi></msup><mo>&rarr;</mo><msup><mi>S</mi><mn>1</mn></msup><mo>&times;</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">f: \mathbb{R} P^{n} \rightarrow S^{1} \times S^{1}</annotation></semantics></math>
+is homotopic to a constant.</p>
+
+<h2 class="unnumbered" id="problem-9">Problem 9</h2>
+<p>Give an example (with justification) of a connected cover that is not
+regular.</p>
+
+<h2 class="unnumbered" id="problem-10">Problem 10</h2>
+<p>(a) Suppose that we have inclusions of spaces
+<math role="math" aria-label="A \subset B \subset C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&sub;</mo><mi>B</mi><mo>&sub;</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A \subset B \subset C</annotation></semantics></math>.
+Prove that there is a long exact sequence of relative homology
+groups</p>
+<p><math role="math" aria-label="\cdots \rightarrow H_{n}(B, A) \rightarrow H_{n}(C, A) \rightarrow H_{n}(C, B) \rightarrow H_{n-1}(B, A) \rightarrow \cdots" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>⋯</mi><mo>&rarr;</mo><msub><mi>H</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo>,</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><msub><mi>H</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>C</mi><mo>,</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><msub><mi>H</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>C</mi><mo>,</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><msub><mi>H</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo>,</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mi>⋯</mi></mrow><annotation encoding="application/x-tex">\cdots \rightarrow H_{n}(B, A) \rightarrow H_{n}(C, A) \rightarrow H_{n}(C, B) \rightarrow H_{n-1}(B, A) \rightarrow \cdots</annotation></semantics></math></p>
+<p>(b) Let
+<math role="math" aria-label="D^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>D</mi><mi>n</mi></msup><annotation encoding="application/x-tex">D^{n}</annotation></semantics></math>
+be the closed unit ball in
+<math role="math" aria-label="\mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{n}</annotation></semantics></math>.
+Let
+<math role="math" aria-label="S^{n-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">S^{n-1}</annotation></semantics></math>
+be the unit sphere, and let
+<math role="math" aria-label="D_{+}^{n-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>D</mi><mo>+</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msubsup><annotation encoding="application/x-tex">D_{+}^{n-1}</annotation></semantics></math>
+be the "northern hemisphere" in
+<math role="math" aria-label="S^{n-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">S^{n-1}</annotation></semantics></math>.
+We have inclusions
+<math role="math" aria-label="D_{+}^{n-1} \subset S^{n-1} \subset D^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mo>+</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msubsup><mo>&sub;</mo><msup><mi>S</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>&sub;</mo><msup><mi>D</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">D_{+}^{n-1} \subset S^{n-1} \subset D^{n}</annotation></semantics></math>.
+Prove that for every space
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+and every
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+there is a natural isomorphism</p>
+<p><math role="math" aria-label="H_{k}\left(D^{n} \times X, S^{n-1} \times X\right) \cong H_{k-1}\left(S^{n-1} \times X, D_{+}^{n-1} \times X\right) ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>k</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>D</mi><mi>n</mi></msup><mo>&times;</mo><mi>X</mi><mo>,</mo><msup><mi>S</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>&times;</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≅</mo><msub><mi>H</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>&times;</mo><mi>X</mi><mo>,</mo><msubsup><mi>D</mi><mo>+</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msubsup><mo>&times;</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">H_{k}\left(D^{n} \times X, S^{n-1} \times X\right) \cong H_{k-1}\left(S^{n-1} \times X, D_{+}^{n-1} \times X\right) .</annotation></semantics></math></p>
+<p>(c) Prove that for every
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+and
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+there is an isomorphism</p>
+<p><math role="math" aria-label="H_{k}\left(S^{n-1} \times X, D_{+}^{n-1} \times X\right) \cong H_{k}\left(D_{-}^{n-1} \times X, S^{n-2} \times X\right)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>k</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>&times;</mo><mi>X</mi><mo>,</mo><msubsup><mi>D</mi><mo>+</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msubsup><mo>&times;</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≅</mo><msub><mi>H</mi><mi>k</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>D</mi><mo>−</mo><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msubsup><mo>&times;</mo><mi>X</mi><mo>,</mo><msup><mi>S</mi><mrow><mi>n</mi><mo>−</mo><mn>2</mn></mrow></msup><mo>&times;</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H_{k}\left(S^{n-1} \times X, D_{+}^{n-1} \times X\right) \cong H_{k}\left(D_{-}^{n-1} \times X, S^{n-2} \times X\right)</annotation></semantics></math></p>
+<p>Hint: excision.<br />
+(d) Conclude that for every
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+and
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+there is an isomorphism</p>
+<p><math role="math" aria-label="H_{k}\left(D^{n} \times X, S^{n-1} \times X\right) \cong H_{k-n}(X)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>k</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>D</mi><mi>n</mi></msup><mo>&times;</mo><mi>X</mi><mo>,</mo><msup><mi>S</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>&times;</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≅</mo><msub><mi>H</mi><mrow><mi>k</mi><mo>−</mo><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H_{k}\left(D^{n} \times X, S^{n-1} \times X\right) \cong H_{k-n}(X)</annotation></semantics></math></p>
+<p>(e) Prove that
+<math role="math" aria-label="H_{k}\left(D^{n} \times X, S^{n-1} \times X\right) \cong H_{k}\left(S^{n} \times X, * \times X\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>k</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>D</mi><mi>n</mi></msup><mo>&times;</mo><mi>X</mi><mo>,</mo><msup><mi>S</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>&times;</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≅</mo><msub><mi>H</mi><mi>k</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mi>n</mi></msup><mo>&times;</mo><mi>X</mi><mo>,</mo><mi>*</mi><mo>&times;</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H_{k}\left(D^{n} \times X, S^{n-1} \times X\right) \cong H_{k}\left(S^{n} \times X, * \times X\right)</annotation></semantics></math><br />
+(f) Conclude that there is a natural isomorphism
+<math role="math" aria-label="H_{k}\left(S^{n} \times X\right) \cong H_{k}(X) \oplus H_{k-n}(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>k</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>S</mi><mi>n</mi></msup><mo>&times;</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≅</mo><msub><mi>H</mi><mi>k</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>&oplus;</mo><msub><mi>H</mi><mrow><mi>k</mi><mo>−</mo><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H_{k}\left(S^{n} \times X\right) \cong H_{k}(X) \oplus H_{k-n}(X)</annotation></semantics></math>
+Hint: The projection map
+<math role="math" aria-label="S^{n} \times X \rightarrow X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mi>n</mi></msup><mo>&times;</mo><mi>X</mi><mo>&rarr;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">S^{n} \times X \rightarrow X</annotation></semantics></math>
+is a retraction of the inclusion map
+<math role="math" aria-label="X \rightarrow S^{n} \times X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>&rarr;</mo><msup><mi>S</mi><mi>n</mi></msup><mo>&times;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">X \rightarrow S^{n} \times X</annotation></semantics></math>.
+What does it mean about the long exact sequence of the pair (
+<math role="math" aria-label="S^{n} \times X, * \times X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mi>n</mi></msup><mo>&times;</mo><mi>X</mi><mo>,</mo><mi>*</mi><mo>&times;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">S^{n} \times X, * \times X</annotation></semantics></math>
+)?</p>
+</main>
+</body>
+</html>

@@ -7,6 +7,10 @@ You are going to OCR a general exam PDF file to accessible HTML with MathML usin
 ## Requirements
 - The PDF path will be provided as an argument to this command
 - Use Mathpix API credentials from environment variables (MATHPIX_APP_ID and MATHPIX_API_KEY)
+- **This command is CONCURRENT-SAFE**: Multiple instances can run simultaneously without conflicts
+  - All files use unique PDF_ID-based names in `/tmp/` (e.g., `/tmp/<PDF_ID>_fixed.html`)
+  - Each instance processes its own PDF independently
+  - Only Step 9 (editing `general_exams.md`) requires retry logic if running concurrently
 - Generate accessible HTML with:
   - Actual MathML markup (NOT SVG, NOT Unicode characters)
   - Proper ARIA attributes (role="math", aria-label with LaTeX)
@@ -33,26 +37,26 @@ Wait until `"status":"completed"`.
 ### Step 3: Download and Extract TeX Format
 Download the tex.zip format (NOT .html, as it uses SVG) - SINGLE LINE for curl, then unzip:
 ```bash
-curl -X GET "https://api.mathpix.com/v3/pdf/<PDF_ID>.tex.zip" -H "app_id: $MATHPIX_APP_ID" -H "app_key: $MATHPIX_API_KEY" -o /tmp/output.tex.zip
+curl -X GET "https://api.mathpix.com/v3/pdf/<PDF_ID>.tex.zip" -H "app_id: $MATHPIX_APP_ID" -H "app_key: $MATHPIX_API_KEY" -o /tmp/<PDF_ID>.tex.zip
 ```
 
 Then extract:
 ```bash
-cd /tmp && unzip -o output.tex.zip
+cd /tmp && unzip -o <PDF_ID>.tex.zip
 ```
 
 The extracted .tex file will be in a subdirectory named with the PDF_ID.
 
 ### Step 4: Convert to HTML with MathML using Pandoc
 ```bash
-pandoc /tmp/<PDF_ID>/<PDF_ID>.tex -f latex -t html --mathml --standalone -o /tmp/output_mathml.html
+pandoc /tmp/<PDF_ID>/<PDF_ID>.tex -f latex -t html --mathml --standalone -o /tmp/<PDF_ID>_mathml.html
 ```
 
 ### Step 5: Post-process for accessibility and formatting
 Use the Python script `scripts/fix_mathml.py` to apply all fixes in one step:
 
 ```bash
-python3 scripts/fix_mathml.py /tmp/output_mathml.html /tmp/output_fixed.html
+python3 scripts/fix_mathml.py /tmp/<PDF_ID>_mathml.html /tmp/<PDF_ID>_fixed.html
 ```
 
 This script does everything:
@@ -151,7 +155,7 @@ Use this entity mapping:
 ### Step 7: Add H2 Problem Headings
 **CRITICAL**: After handling images, you MUST manually add H2 headings for each problem.
 
-1. Read the processed HTML file
+1. Read the processed HTML file at `/tmp/<PDF_ID>_fixed.html`
 2. Identify each problem in the exam (usually numbered 1, 2, 3, etc.)
 3. For each problem, add an H2 heading immediately before the problem content:
    ```html
@@ -180,14 +184,20 @@ Use this entity mapping:
 - The ID should match the problem number for anchor linking
 
 ### Step 8: Save to final location
-Save the processed HTML file next to the original PDF with the same name but .html extension.
+Save the processed HTML file (from `/tmp/<PDF_ID>_fixed.html`) next to the original PDF with the same name but .html extension.
 
 ### Step 9: Add accessible HTML link to the generals page
 After saving the HTML file, you MUST update the link in `graduate/general_exams.md` to follow accessibility best practices:
 
+**IMPORTANT FOR CONCURRENT EXECUTION:**
+- If running multiple instances concurrently, this step may fail with "File has been modified since read"
+- If this happens, simply re-read the file and retry the edit
+- Alternatively, you can defer this step and update all links at once after all conversions complete
+
 1. Read the file `graduate/general_exams.md`
 2. Find the line that references the PDF you just processed
 3. Replace that line to make HTML the primary link and PDF secondary
+4. **If the Edit fails** due to concurrent modification: re-read the file and try again
 
 **IMPORTANT: HTML must be the PRIMARY link (accessible version), PDF must be SECONDARY (for printing only)**
 
@@ -243,6 +253,10 @@ Read <PATH_TO_HTML>
 This final human-in-the-loop check ensures quality before the files go live.
 
 ## Important Notes
+- **CONCURRENT EXECUTION**: This command uses unique PDF_ID-based filenames in `/tmp/`, so multiple instances can run simultaneously without conflicts
+  - **Concurrent safety**: All processing steps (Mathpix API, file conversion, HTML generation) are fully isolated per PDF
+  - **File editing caveat**: Step 9 (updating `general_exams.md`) may fail if multiple instances edit simultaneously - if this happens, retry after re-reading the file
+  - **Batch workflow tip**: When processing many PDFs, you can skip Step 9 in concurrent runs and update all `general_exams.md` links together at the end
 - Do NOT use the direct .html download from Mathpix - it uses MathJax SVG rendering
 - Always use the tex.zip → pandoc → post-processing pipeline
 - Verify that NO Unicode mathematical characters remain in the final output
