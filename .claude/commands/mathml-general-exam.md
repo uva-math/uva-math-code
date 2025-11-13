@@ -102,10 +102,41 @@ Use this entity mapping:
 - Greek letters: α (&alpha;), β (&beta;), γ (&gamma;), δ (&delta;), ε (&epsilon;), η (&eta;), θ (&theta;), λ (&lambda;), μ (&mu;), ν (&nu;), π (&pi;), σ (&sigma;), τ (&tau;), φ (&phi;), ω (&omega;), Γ (&Gamma;), Δ (&Delta;), Θ (&Theta;), Λ (&Lambda;), Σ (&Sigma;), Φ (&Phi;), Ω (&Omega;)
 - Other: ∞ (&infin;), × (&times;), ⋅ (&sdot;), ± (&plusmn;), ∠ (&ang;), ⊕ (&oplus;), ⊗ (&otimes;)
 
-### Step 6: Save to final location
+### Step 6: Add H2 Problem Headings
+**CRITICAL**: After post-processing, you MUST manually add H2 headings for each problem.
+
+1. Read the processed HTML file
+2. Identify each problem in the exam (usually numbered 1, 2, 3, etc.)
+3. For each problem, add an H2 heading immediately before the problem content:
+   ```html
+   <h2 class="unnumbered" id="problem-N">Problem N</h2>
+   ```
+
+**Why this matters:**
+- H2 headings provide semantic structure for screen readers
+- Users can navigate between problems using heading navigation
+- WCAG 2.1 requires proper heading hierarchy for accessibility
+
+**Example transformation:**
+```html
+<!-- Before: Problem without heading -->
+<p><span class="problem-number">(1)</span> Let f: R → R be a continuous function...</p>
+
+<!-- After: Problem with proper H2 heading -->
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Let f: R → R be a continuous function...</p>
+```
+
+**Important notes:**
+- Each problem MUST have its own H2 heading
+- Remove any inline problem numbering like `<span class="problem-number">(1)</span>` or `<br /><br />(1)` when adding the H2
+- Use the pattern: `<h2 class="unnumbered" id="problem-N">Problem N</h2>`
+- The ID should match the problem number for anchor linking
+
+### Step 7: Save to final location
 Save the processed HTML file next to the original PDF with the same name but .html extension.
 
-### Step 7: Add accessible HTML link to the generals page
+### Step 8: Add accessible HTML link to the generals page
 After saving the HTML file, you MUST update the link in `graduate/general_exams.md` to follow accessibility best practices:
 
 1. Read the file `graduate/general_exams.md`
@@ -134,7 +165,7 @@ After saving the HTML file, you MUST update the link in `graduate/general_exams.
 - Clearly labeling the PDF as "for printing" to indicate its purpose
 - Using ARIA labels to communicate that PDFs may have accessibility limitations
 
-### Step 8: Final Review - Read Both Files
+### Step 9: Final Review - Read Both Files
 After completing all processing steps, you MUST read both the original PDF and the generated HTML file to provide a final quality assessment:
 
 ```bash
@@ -148,6 +179,7 @@ Read <PATH_TO_HTML>
 2. **MathML Quality**: Confirm that math expressions render correctly as MathML (not SVG or Unicode)
 3. **Accessibility**: Check that all accessibility features are present and correct:
    - Proper title and H1 heading
+   - **H2 headings for EVERY problem** (e.g., "Problem 1", "Problem 2", etc.)
    - Breadcrumb and back button navigation
    - ARIA labels on math elements
    - Semantic HTML structure
@@ -155,6 +187,7 @@ Read <PATH_TO_HTML>
    - Proper vertical spacing between main problems
    - Problem structure is clear and readable
 5. **Completeness**: Verify nothing was lost or corrupted during conversion
+   - Count problems in PDF and verify matching H2 headings in HTML
 
 **Provide a concise summary stating:**
 - ✓ What looks correct
@@ -174,7 +207,8 @@ This final human-in-the-loop check ensures quality before the files go live.
 The output HTML must have:
 ✓ Actual MathML elements (<math>, <mrow>, <mi>, <mo>, etc.)
 ✓ NO Unicode characters - all replaced with HTML/MathML entities
-✓ Proper heading hierarchy (H1 for title, H2 for problems/sections)
+✓ Proper heading hierarchy (H1 for title, H2 for EVERY problem)
+✓ **H2 heading for each problem** (e.g., `<h2 class="unnumbered" id="problem-1">Problem 1</h2>`)
 ✓ ARIA attributes on all math elements (role="math", aria-label)
 ✓ lang="en" attribute on <html> element
 ✓ Descriptive page title derived from H1 content (e.g., "TITLE - UVA Mathematics")
