@@ -15,35 +15,29 @@ You are going to OCR a general exam PDF file to accessible HTML with MathML usin
 ## Workflow
 
 ### Step 1: Upload PDF to Mathpix
-Use the Mathpix v3/pdf API endpoint to upload the PDF:
+Use the Mathpix v3/pdf API endpoint to upload the PDF (SINGLE LINE - no backslashes):
 ```bash
-curl -X POST "https://api.mathpix.com/v3/pdf" \
-  -H "app_id: $MATHPIX_APP_ID" \
-  -H "app_key: $MATHPIX_API_KEY" \
-  -F "file=@<PDF_PATH>" \
-  -F 'options_json={"conversion_formats": {"html.zip": true, "tex.zip": true}}'
+curl -X POST "https://api.mathpix.com/v3/pdf" -H "app_id: $MATHPIX_APP_ID" -H "app_key: $MATHPIX_API_KEY" -F "file=@<PDF_PATH>" -F 'options_json={"conversion_formats": {"html.zip": true, "tex.zip": true}}'
 ```
 
 Extract the `pdf_id` from the response.
 
 ### Step 2: Check conversion status
-Poll the status endpoint until conversion is complete:
+Poll the status endpoint until conversion is complete (SINGLE LINE - no backslashes):
 ```bash
-curl -X GET "https://api.mathpix.com/v3/pdf/<PDF_ID>" \
-  -H "app_id: $MATHPIX_APP_ID" \
-  -H "app_key: $MATHPIX_API_KEY"
+curl -X GET "https://api.mathpix.com/v3/pdf/<PDF_ID>" -H "app_id: $MATHPIX_APP_ID" -H "app_key: $MATHPIX_API_KEY"
 ```
 
 Wait until `"status":"completed"`.
 
 ### Step 3: Download and Extract TeX Format
-Download the tex.zip format (NOT .html, as it uses SVG):
+Download the tex.zip format (NOT .html, as it uses SVG) - SINGLE LINE for curl, then unzip:
 ```bash
-curl -X GET "https://api.mathpix.com/v3/pdf/<PDF_ID>.tex.zip" \
-  -H "app_id: $MATHPIX_APP_ID" \
-  -H "app_key: $MATHPIX_API_KEY" \
-  -o /tmp/output.tex.zip
+curl -X GET "https://api.mathpix.com/v3/pdf/<PDF_ID>.tex.zip" -H "app_id: $MATHPIX_APP_ID" -H "app_key: $MATHPIX_API_KEY" -o /tmp/output.tex.zip
+```
 
+Then extract:
+```bash
 cd /tmp && unzip -o output.tex.zip
 ```
 
@@ -102,8 +96,60 @@ Use this entity mapping:
 - Greek letters: α (&alpha;), β (&beta;), γ (&gamma;), δ (&delta;), ε (&epsilon;), η (&eta;), θ (&theta;), λ (&lambda;), μ (&mu;), ν (&nu;), π (&pi;), σ (&sigma;), τ (&tau;), φ (&phi;), ω (&omega;), Γ (&Gamma;), Δ (&Delta;), Θ (&Theta;), Λ (&Lambda;), Σ (&Sigma;), Φ (&Phi;), Ω (&Omega;)
 - Other: ∞ (&infin;), × (&times;), ⋅ (&sdot;), ± (&plusmn;), ∠ (&ang;), ⊕ (&oplus;), ⊗ (&otimes;)
 
-### Step 6: Add H2 Problem Headings
-**CRITICAL**: After post-processing, you MUST manually add H2 headings for each problem.
+### Step 6: Handle Images (Diagrams, Figures)
+**IMPORTANT**: Many exams contain diagrams (commutative diagrams, geometric figures, knot diagrams, etc.) that are extracted by Mathpix.
+
+1. **Check for extracted images**:
+   ```bash
+   ls -la /tmp/<PDF_ID>/images/
+   ```
+
+2. **If images exist**:
+   - Create the images directory if it doesn't exist:
+     ```bash
+     mkdir -p <EXAM_DIR>/images
+     ```
+
+   - Copy ALL image files to the exam images directory:
+     ```bash
+     cp /tmp/<PDF_ID>/images/*.jpg <EXAM_DIR>/images/
+     ```
+
+   - **Update ALL image paths in the HTML**:
+     - Find all `<img src="...">` tags in the HTML
+     - Change from `<img src="FILENAME"` to `<img src="images/FILENAME.jpg"`
+     - Add proper alt text describing what the diagram shows
+     - Add styling for responsive images:
+       ```html
+       <img src="images/FILENAME.jpg" alt="Descriptive alt text here" style="max-width: 100%; height: auto; display: block; margin: 1em auto;" />
+       ```
+
+3. **Common exam diagrams to look for**:
+   - Commutative diagrams (arrows between mathematical objects)
+   - Pushout/pullback squares
+   - Geometric figures (M\u00f6bius bands, knots, surfaces)
+   - Graphs and plots
+   - Function diagrams
+
+4. **Alt text guidelines**:
+   - Be descriptive but concise
+   - Examples:
+     - "Commutative diagram showing maps between groups A1, A2, B1, B2, and C"
+     - "Trefoil knot diagram"
+     - "Möbius band diagram showing the curve γ as its boundary"
+     - "Pushout diagram showing the construction of Xf"
+
+**Example transformation:**
+```html
+<!-- Before: Broken image path -->
+<img src="2025_11_13_abc123-1" alt="image" />
+
+<!-- After: Fixed path with descriptive alt text -->
+<img src="images/2025_11_13_abc123-1.jpg" alt="Commutative diagram showing the exact sequence" style="max-width: 100%; height: auto; display: block; margin: 1em auto;" />
+```
+
+### Step 7: Add H2 Problem Headings
+**CRITICAL**: After handling images, you MUST manually add H2 headings for each problem.
 
 1. Read the processed HTML file
 2. Identify each problem in the exam (usually numbered 1, 2, 3, etc.)
@@ -133,10 +179,10 @@ Use this entity mapping:
 - Use the pattern: `<h2 class="unnumbered" id="problem-N">Problem N</h2>`
 - The ID should match the problem number for anchor linking
 
-### Step 7: Save to final location
+### Step 8: Save to final location
 Save the processed HTML file next to the original PDF with the same name but .html extension.
 
-### Step 8: Add accessible HTML link to the generals page
+### Step 9: Add accessible HTML link to the generals page
 After saving the HTML file, you MUST update the link in `graduate/general_exams.md` to follow accessibility best practices:
 
 1. Read the file `graduate/general_exams.md`
@@ -165,7 +211,7 @@ After saving the HTML file, you MUST update the link in `graduate/general_exams.
 - Clearly labeling the PDF as "for printing" to indicate its purpose
 - Using ARIA labels to communicate that PDFs may have accessibility limitations
 
-### Step 9: Final Review - Read Both Files
+### Step 10: Final Review - Read Both Files
 After completing all processing steps, you MUST read both the original PDF and the generated HTML file to provide a final quality assessment:
 
 ```bash

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Topology General Exam - August 21, 2019 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Topology General Exam - August 21, 2019</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1>Topology General Exam</h1>
+<p style="text-align: center; font-weight: bold;">August 21, 2019</p>
+
+<p><strong>Instructions:</strong> This is a four hour exam. Your solutions should be
+legible and clearly organized, written in complete sentences in good
+mathematical style. All work should be your own-no outside sources are
+permitted-using methods and results from the first year topology course
+topics. Each problem is worth the same number of points.</p>
+
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Let
+<math role="math" aria-label="f: S^{n} \rightarrow S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mi>n</mi></msup><mo>&rarr;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f: S^{n} \rightarrow S^{n}</annotation></semantics></math>
+be a smooth map with the property that
+<math role="math" aria-label="d f_{x}: T_{x} S^{n} \rightarrow T_{f(x)} S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><msub><mi>f</mi><mi>x</mi></msub><mo>:</mo><msub><mi>T</mi><mi>x</mi></msub><msup><mi>S</mi><mi>n</mi></msup><mo>&rarr;</mo><msub><mi>T</mi><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow></msub><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">d f_{x}: T_{x} S^{n} \rightarrow T_{f(x)} S^{n}</annotation></semantics></math>
+is injective for every
+<math role="math" aria-label="x \in S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">x \in S^{n}</annotation></semantics></math>.<br />
+a) Prove that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is a diffeomorphism provided that
+<math role="math" aria-label="n \geq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n \geq 2</annotation></semantics></math>.<br />
+b) Find a counterexample to part (a) in the case that
+<math role="math" aria-label="n=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n=1</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a connected smooth manifold of dimension
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+and let
+<math role="math" aria-label="N \subset M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>&sub;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">N \subset M</annotation></semantics></math>
+be a smooth submanifold of dimension
+<math role="math" aria-label="n=m-k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mi>m</mi><mo>−</mo><mi>k</mi></mrow><annotation encoding="application/x-tex">n=m-k</annotation></semantics></math>.<br />
+a) Show that if
+<math role="math" aria-label="k \geq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&ge;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">k \geq 2</annotation></semantics></math>
+then
+<math role="math" aria-label="M \backslash N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&setminus;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">M \backslash N</annotation></semantics></math>
+is connected.<br />
+b) Prove that if
+<math role="math" aria-label="k \geq 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&ge;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">k \geq 3</annotation></semantics></math>
+then the inclusion
+<math role="math" aria-label="M \backslash N \rightarrow M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&setminus;</mo><mi>N</mi><mo>&rarr;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">M \backslash N \rightarrow M</annotation></semantics></math>
+induces an isomorphism
+<math role="math" aria-label="\pi_{1}\left(M \backslash N, x_{0}\right) \rightarrow \pi_{1}\left(M, x_{0}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mo>&setminus;</mo><mi>N</mi><mo>,</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&rarr;</mo><msub><mi>&pi;</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mo>,</mo><msub><mi>x</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\pi_{1}\left(M \backslash N, x_{0}\right) \rightarrow \pi_{1}\left(M, x_{0}\right)</annotation></semantics></math>
+for
+<math role="math" aria-label="x_{0} \in M \backslash N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>0</mn></msub><mo>&isin;</mo><mi>M</mi><mo>&setminus;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">x_{0} \in M \backslash N</annotation></semantics></math>
+any basepoint.</p>
+
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a smooth compact manifold with nonempty boundary
+<math role="math" aria-label="N=\partial M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>=</mo><mi>&part;</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">N=\partial M</annotation></semantics></math>.
+Prove that there does not exist a retraction
+<math role="math" aria-label="M \rightarrow N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&rarr;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">M \rightarrow N</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Let
+<math role="math" aria-label="M_{n} \cong \mathbb{R}^{n^{2}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>≅</mo><msup><mi>&Ropf;</mi><msup><mi>n</mi><mn>2</mn></msup></msup></mrow><annotation encoding="application/x-tex">M_{n} \cong \mathbb{R}^{n^{2}}</annotation></semantics></math>
+denote the square
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+matrices with real entries.<br />
+a) Prove that
+<math role="math" aria-label="\mathrm{SL}_{n}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">L</mi></mrow><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{SL}_{n}(\mathbb{R})</annotation></semantics></math>,
+the matrices with determinant 1 , is a smooth submanifold of
+<math role="math" aria-label="M_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mi>n</mi></msub><annotation encoding="application/x-tex">M_{n}</annotation></semantics></math>.<br />
+b) Prove that
+<math role="math" aria-label="\mathrm{SL}_{n}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">L</mi></mrow><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{SL}_{n}(\mathbb{R})</annotation></semantics></math>
+is not compact.</p>
+
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a 2 -complex consisting of one 0 -cell, two 1 -cells labelled
+<math role="math" aria-label="\{a, b\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{a, b\}</annotation></semantics></math>,
+and a single 2 -cell attached along the loop
+<math role="math" aria-label="a b a^{-1} b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>b</mi><msup><mi>a</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>b</mi></mrow><annotation encoding="application/x-tex">a b a^{-1} b</annotation></semantics></math>.<br />
+a) Find
+<math role="math" aria-label="H_{*}(K ; \mathbb{Z})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mo>*</mo></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>;</mo><mi>&Zopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H_{*}(K ; \mathbb{Z})</annotation></semantics></math>.<br />
+b) Find
+<math role="math" aria-label="H_{*}(K ; \mathbb{Z} / 2 \mathbb{Z})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mo>*</mo></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>;</mo><mi>&Zopf;</mi><mi>/</mi><mn>2</mn><mi>&Zopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H_{*}(K ; \mathbb{Z} / 2 \mathbb{Z})</annotation></semantics></math>.<br />
+c) Show that
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+is homeomorphic to a smooth manifold.</p>
+
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Lef
+<math role="math" aria-label="f: S^{n} \rightarrow S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mi>n</mi></msup><mo>&rarr;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f: S^{n} \rightarrow S^{n}</annotation></semantics></math>
+be a continuous map.<br />
+a) Prove that if
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+has no fixed points then
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is homotopic to the antipodal map.<br />
+b) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a group acting freely on
+<math role="math" aria-label="S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mi>n</mi></msup><annotation encoding="application/x-tex">S^{n}</annotation></semantics></math>,
+where here
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is even. Prove that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+has order at most two. [Hint: construct a homomorphism to
+<math role="math" aria-label="\mathbb{Z} / 2 \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mn>2</mn><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z} / 2 \mathbb{Z}</annotation></semantics></math>
+using degree and argue that this map is injective.]</p>
+
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>Let
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+be the 1 -point union of two copies of the projective plane,
+<math role="math" aria-label="X=\mathbb{R} P^{2} \vee \mathbb{R} P^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup><mo>&or;</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">X=\mathbb{R} P^{2} \vee \mathbb{R} P^{2}</annotation></semantics></math>.<br />
+a) Find a presentation for
+<math role="math" aria-label="\pi_{1}(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\pi_{1}(X)</annotation></semantics></math>
+and describe
+<math role="math" aria-label="H_{1}(X ; \mathbb{Z})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo>;</mo><mi>&Zopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H_{1}(X ; \mathbb{Z})</annotation></semantics></math>
+as a direct sum of cyclic groups.<br />
+b) Prove that every continuous map
+<math role="math" aria-label="f: X \rightarrow S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">f: X \rightarrow S^{1}</annotation></semantics></math>
+is nullhomotopic.</p>
+
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>Let
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+be a circle that is smoothly embedded in
+<math role="math" aria-label="\mathbb{R}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{3}</annotation></semantics></math>.
+For example
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+could be the trefoil knot:<br />
+<img src="images/2025_11_13_5647ecaed739d03766c6g-8.jpg" alt="Trefoil knot diagram" style="max-width: 100%; height: auto; display: block; margin: 1em auto;" /><br />
+but your methods should not be specific to this case. Find the homology
+groups
+<math role="math" aria-label="H_{*}\left(\mathbb{R}^{3} \backslash C ; \mathbb{Z}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mo>*</mo></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>&setminus;</mo><mi>C</mi><mo>;</mo><mi>&Zopf;</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">H_{*}\left(\mathbb{R}^{3} \backslash C ; \mathbb{Z}\right)</annotation></semantics></math>.</p></li>
+</ol>
+</main>
+</body>
+</html>

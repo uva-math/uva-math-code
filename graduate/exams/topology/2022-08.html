@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Topology General Exam - August 15, 2022 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Topology General Exam - August 15, 2022</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1>Topology General Exam</h1>
+<p style="text-align: center; font-weight: bold;">August 15, 2022</p>
+
+<p><strong>Instructions:</strong> This is a four hour exam. Your solutions should be
+legible and clearly organized, written in complete sentences in good
+mathematical style on your own paper. All work should be your own-no
+outside sources are permitted-using methods and results from the first
+year topology course topics. Each problem is worth the same number of
+points.</p>
+
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Let
+<math role="math" aria-label="\gamma: \mathbb{R} \rightarrow \mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&gamma;</mi><mo>:</mo><mi>&Ropf;</mi><mo>&rarr;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\gamma: \mathbb{R} \rightarrow \mathbb{R}^{n}</annotation></semantics></math>
+be a smooth curve. Prove that the set of real numbers</p>
+
+<p><math role="math" aria-label="K=\left\{r&gt;0 \mid \text { the sphere of radius } r \text { around } 0 \in \mathbb{R}^{n} \text { is tangent to the image of } \gamma\right\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>r</mi><mo>&gt;</mo><mn>0</mn><mo>∣</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> the sphere of radius </mtext><mspace width="0.333em"></mspace></mrow><mi>r</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> around </mtext><mspace width="0.333em"></mspace></mrow><mn>0</mn><mo>&isin;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> is tangent to the image of </mtext><mspace width="0.333em"></mspace></mrow><mi>&gamma;</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">K=\left\{r&gt;0 \mid \text { the sphere of radius } r \text { around } 0 \in \mathbb{R}^{n} \text { is tangent to the image of } \gamma\right\}</annotation></semantics></math></p>
+
+<p>has measure zero in
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>(a) Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+be connected compact smooth manifolds of the same dimension (without
+boundary), and
+<math role="math" aria-label="f: M \rightarrow N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">f: M \rightarrow N</annotation></semantics></math>
+a submersion. Prove that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is a covering map.<br />
+(b) Suppose
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is a connected closed surface ( 2 -manifold), and
+<math role="math" aria-label="f: M \rightarrow S^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><msup><mi>S</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f: M \rightarrow S^{2}</annotation></semantics></math>
+a submersion. Prove that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+must, in fact, be a diffeomorphism.</p>
+
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Consider the subset
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+of
+<math role="math" aria-label="\mathbb{R}^{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>4</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{4}</annotation></semantics></math>
+defined by the two equations</p>
+<p><math role="math" aria-label="\begin{array}{r}
+x^{2}+y^{2}-z^{2}-w^{2}=1 \\
+x y+z+w=3
+\end{array}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right"><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>−</mo><msup><mi>z</mi><mn>2</mn></msup><mo>−</mo><msup><mi>w</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>x</mi><mi>y</mi><mo>+</mo><mi>z</mi><mo>+</mo><mi>w</mi><mo>=</mo><mn>3</mn></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{array}{r}
+x^{2}+y^{2}-z^{2}-w^{2}=1 \\
+x y+z+w=3
+\end{array}</annotation></semantics></math></p>
+<p>Prove that
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is a smooth manifold and find its dimension.</p>
+
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Consider the smooth, closed curve
+<math role="math" aria-label="\gamma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&gamma;</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{R}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{3}</annotation></semantics></math>
+given in cylindrical coordinates
+<math role="math" aria-label="{ }^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow></mrow><mn>1</mn></msup><annotation encoding="application/x-tex">{ }^{1}</annotation></semantics></math>
+by</p>
+<p><math role="math" aria-label="\gamma(t)=(r(t), \theta(t), z(t)), \quad \begin{aligned}
+&amp; r(t)=2+\sin t \\
+&amp; \theta(t)=2 t \\
+&amp; z(t)=\cos t
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&gamma;</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>r</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>&theta;</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>z</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="1.0em"></mspace><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>r</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn><mo>+</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>t</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>&theta;</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn><mi>t</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>z</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>t</mi></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">\gamma(t)=(r(t), \theta(t), z(t)), \quad \begin{aligned}
+&amp; r(t)=2+\sin t \\
+&amp; \theta(t)=2 t \\
+&amp; z(t)=\cos t
+\end{aligned}</annotation></semantics></math></p>
+<p>where
+<math role="math" aria-label="t \in[0,2 \pi]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>&pi;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">t \in[0,2 \pi]</annotation></semantics></math>.
+Visually,
+<math role="math" aria-label="\gamma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&gamma;</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+can be pictured as the boundary of a Möbius band
+<math role="math" aria-label="M \subset \mathbb{R}^{3}-\{r=0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&sub;</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>−</mo><mo stretchy="false" form="prefix">{</mo><mi>r</mi><mo>=</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">M \subset \mathbb{R}^{3}-\{r=0\}</annotation></semantics></math>
+pictured below. Let
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+be the 1 -form on
+<math role="math" aria-label="\mathbb{R}^{3}-\{r=0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>−</mo><mo stretchy="false" form="prefix">{</mo><mi>r</mi><mo>=</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}^{3}-\{r=0\}</annotation></semantics></math>
+defined by
+<math role="math" aria-label="\alpha=d \theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>=</mo><mi>d</mi><mi>&theta;</mi></mrow><annotation encoding="application/x-tex">\alpha=d \theta</annotation></semantics></math>.<br />
+a) Find
+<math role="math" aria-label="\int_{\gamma} \alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mi>&gamma;</mi></msub><mi>&alpha;</mi></mrow><annotation encoding="application/x-tex">\int_{\gamma} \alpha</annotation></semantics></math>.<br />
+b) Use your answer to (a) to prove that Möbius band
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is not orientable, and in fact
+<math role="math" aria-label="\gamma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&gamma;</mi><annotation encoding="application/x-tex">\gamma</annotation></semantics></math>
+is not the boundary of any smooth, compact, orientable surface in
+<math role="math" aria-label="\mathbb{R}^{3}-\{r=0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>−</mo><mo stretchy="false" form="prefix">{</mo><mi>r</mi><mo>=</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}^{3}-\{r=0\}</annotation></semantics></math>.<br />
+<img src="images/2025_11_13_be00981bf5d1f2d5312bg-1.jpg" alt="Möbius band diagram showing the curve γ as its boundary" style="max-width: 100%; height: auto; display: block; margin: 1em auto;" /></p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>(a) Show that if
+<math role="math" aria-label="f: S^{4} \rightarrow S^{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mn>4</mn></msup><mo>&rarr;</mo><msup><mi>S</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">f: S^{4} \rightarrow S^{4}</annotation></semantics></math>
+is continuous, then
+<math role="math" aria-label="f \circ f: S^{4} \rightarrow S^{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&SmallCircle;</mo><mi>f</mi><mo>:</mo><msup><mi>S</mi><mn>4</mn></msup><mo>&rarr;</mo><msup><mi>S</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">f \circ f: S^{4} \rightarrow S^{4}</annotation></semantics></math>
+must have a fixed point.<br />
+(b) By contrast, show that there is a continuous map
+<math role="math" aria-label="f: S^{3} \rightarrow S^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mn>3</mn></msup><mo>&rarr;</mo><msup><mi>S</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">f: S^{3} \rightarrow S^{3}</annotation></semantics></math>
+such that
+<math role="math" aria-label="f \circ f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&SmallCircle;</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f \circ f</annotation></semantics></math>
+has no fixed point.</p>
+
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Let
+<math role="math" aria-label="X_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mi>n</mi></msub><annotation encoding="application/x-tex">X_{n}</annotation></semantics></math>
+denote the
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-skeleton
+of a CW complex
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.<br />
+a) Complete the definition: The cellular chain complex
+<math role="math" aria-label="\left(C_{*}^{C W}, d_{*}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>C</mi><mo>*</mo><mrow><mi>C</mi><mi>W</mi></mrow></msubsup><mo>,</mo><msub><mi>d</mi><mo>*</mo></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(C_{*}^{C W}, d_{*}\right)</annotation></semantics></math>
+of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+is defined by letting
+<math role="math" aria-label="C_{n}^{C W}(X)=H_{n}\left(X_{n}, X_{n-1}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>C</mi><mi>n</mi><mrow><mi>C</mi><mi>W</mi></mrow></msubsup><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>H</mi><mi>n</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>X</mi><mi>n</mi></msub><mo>,</mo><msub><mi>X</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">C_{n}^{C W}(X)=H_{n}\left(X_{n}, X_{n-1}\right)</annotation></semantics></math>
+and then letting
+<math role="math" aria-label="d_{n}: C_{n+1}^{C W}(X) \rightarrow C_{n}^{C W}(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>n</mi></msub><mo>:</mo><msubsup><mi>C</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mrow><mi>C</mi><mi>W</mi></mrow></msubsup><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><msubsup><mi>C</mi><mi>n</mi><mrow><mi>C</mi><mi>W</mi></mrow></msubsup><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">d_{n}: C_{n+1}^{C W}(X) \rightarrow C_{n}^{C W}(X)</annotation></semantics></math>
+be [you complete the definition].<br />
+b) Using your definition from part (a), show that
+<math role="math" aria-label="d_{n-1} \circ d_{n}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>&SmallCircle;</mo><msub><mi>d</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d_{n-1} \circ d_{n}=0</annotation></semantics></math>
+for all
+<math role="math" aria-label="n \geq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n \geq 1</annotation></semantics></math>.<br />
+c) Prove that
+<math role="math" aria-label="C_{n}^{C W}(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>C</mi><mi>n</mi><mrow><mi>C</mi><mi>W</mi></mrow></msubsup><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C_{n}^{C W}(X)</annotation></semantics></math>
+is isomorphic to a free abelian group with one generator for each
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-cell
+of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.</p>
+
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>Let
+<math role="math" aria-label="S^{3} \xrightarrow{i_{1}} S^{3} \vee S^{3} \xrightarrow{i_{2}} S^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mn>3</mn></msup><mover><mo>&rarr;</mo><msub><mi>i</mi><mn>1</mn></msub></mover><msup><mi>S</mi><mn>3</mn></msup><mo>&or;</mo><msup><mi>S</mi><mn>3</mn></msup><mover><mo>&rarr;</mo><msub><mi>i</mi><mn>2</mn></msub></mover><msup><mi>S</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">S^{3} \xrightarrow{i_{1}} S^{3} \vee S^{3} \xrightarrow{i_{2}} S^{3}</annotation></semantics></math>
+be the two inclusion maps into the wedge. Say that a map
+<math role="math" aria-label="f: S^{3} \vee S^{3} \rightarrow S^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mn>3</mn></msup><mo>&or;</mo><msup><mi>S</mi><mn>3</mn></msup><mo>&rarr;</mo><msup><mi>S</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">f: S^{3} \vee S^{3} \rightarrow S^{3}</annotation></semantics></math>
+has type (
+<math role="math" aria-label="m, n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m, n</annotation></semantics></math>
+) if the degree of
+<math role="math" aria-label="f \circ i_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&SmallCircle;</mo><msub><mi>i</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">f \circ i_{1}</annotation></semantics></math>
+is
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+and the degree of
+<math role="math" aria-label="f \circ i_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&SmallCircle;</mo><msub><mi>i</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">f \circ i_{2}</annotation></semantics></math>
+is
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Let
+<math role="math" aria-label="X_{f}=S^{3} \cup_{f}\left(D^{4} \vee D^{4}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>f</mi></msub><mo>=</mo><msup><mi>S</mi><mn>3</mn></msup><msub><mo>&cup;</mo><mi>f</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>D</mi><mn>4</mn></msup><mo>&or;</mo><msup><mi>D</mi><mn>4</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">X_{f}=S^{3} \cup_{f}\left(D^{4} \vee D^{4}\right)</annotation></semantics></math>,
+i.e.
+<math role="math" aria-label="X_{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mi>f</mi></msub><annotation encoding="application/x-tex">X_{f}</annotation></semantics></math>
+is the pushout<br />
+<img src="images/2025_11_13_be00981bf5d1f2d5312bg-2.jpg" alt="Pushout diagram showing the construction of Xf" style="max-width: 100%; height: auto; display: block; margin: 1em auto;" /></p>
+<p>Compute the homology groups of
+<math role="math" aria-label="X_{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>X</mi><mi>f</mi></msub><annotation encoding="application/x-tex">X_{f}</annotation></semantics></math>
+if
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+has type
+<math role="math" aria-label="(9,6)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>9</mn><mo>,</mo><mn>6</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(9,6)</annotation></semantics></math>,
+describing the homology groups as direct sums of cyclic groups, as
+usual.</p>
+
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>A group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is perfect if its commutator subgroup
+<math role="math" aria-label="{ }^{2}[G, G]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow></mrow><mn>2</mn></msup><mo stretchy="false" form="prefix">[</mo><mi>G</mi><mo>,</mo><mi>G</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">{ }^{2}[G, G]</annotation></semantics></math>
+is all of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.
+The famous Poincaré ’sphere’ is a 3-dimensional manifold
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+whose fundamental group is a perfect group of order 120. Show that any
+continuous function
+<math role="math" aria-label="M \rightarrow \mathbb{R} P^{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&rarr;</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">M \rightarrow \mathbb{R} P^{4}</annotation></semantics></math>
+must be null homotopic.</p>
+
+<p>(You may assume that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is smooth if desired.)</p>
+
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p><sup>1</sup>Recall that
+<math role="math" aria-label="r" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>r</mi><annotation encoding="application/x-tex">r</annotation></semantics></math>
+is the distance from the
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>-axis,
+and
+<math role="math" aria-label="\theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&theta;</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>
+is the usual angle about the
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>-axis.<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p><sup>2</sup>The subgroup generated by elements of the form
+<math role="math" aria-label="g h g^{-1} h^{-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mi>h</mi><msup><mi>g</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><msup><mi>h</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">g h g^{-1} h^{-1}</annotation></semantics></math>.<a
+href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</main>
+</body>
+</html>
