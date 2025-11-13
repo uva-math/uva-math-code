@@ -349,6 +349,43 @@ After completing the audit, provide:
 
 This comprehensive audit ensures legal compliance and protects the university from ADA lawsuits.
 
+---
+
+### AUTOMATED WCAG VERIFICATION (REQUIRED)
+
+**After completing your manual audit, IMMEDIATELY run the automated verification script:**
+
+```bash
+python3 scripts/verify_wcag.py <PATH_TO_HTML_FILE>
+```
+
+**This script automatically checks:**
+- ✓ Unicode violations (U+1D400-U+1D7FF range)
+- ✓ H1 tag presence
+- ✓ `<main>` landmark presence
+- ✓ MathML `role="math"` attributes
+- ✓ Breadcrumb navigation
+
+**Example:**
+```bash
+python3 scripts/verify_wcag.py graduate/exams/analysis/2017Aug.html
+```
+
+**Expected output if compliant:**
+```
+✅ graduate/exams/analysis/2017Aug.html: PASS
+```
+
+**If the script reports ANY failures:**
+1. **STOP immediately**
+2. Fix the violations
+3. Re-run the script
+4. Only proceed when you see `✅ PASS`
+
+**This automated check is MANDATORY** - it catches violations that manual review may miss and ensures consistent compliance across all exam files.
+
+---
+
 ## Important Notes
 - **CONCURRENT EXECUTION**: This command uses unique PDF_ID-based filenames in `/tmp/`, so multiple instances can run simultaneously without conflicts
   - **Concurrent safety**: All processing steps (Mathpix API, file conversion, HTML generation) are fully isolated per PDF
