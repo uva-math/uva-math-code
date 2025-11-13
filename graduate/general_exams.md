@@ -63,7 +63,7 @@ Below are old exams and study materials for each of the subfields.
   - [01/2004]({{site.url}}/graduate/exams/algebra/2004-01.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2004-01.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2003]({{site.url}}/graduate/exams/algebra/2003-08.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2003-08.pdf" aria-label="PDF version for printing">PDF</a>
   - [05/2003]({{site.url}}/graduate/exams/algebra/2003-05.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/2003-05.pdf" aria-label="PDF version for printing">PDF</a>
-  - [1981-2002]({{site.url}}/graduate/exams/algebra/AlgGento02/) &bull; <a href="{{site.url}}/graduate/exams/algebra/AlgGento02.pdf" aria-label="PDF version for printing">PDF</a>
+  - [1981-2002]({{site.url}}/graduate/exams/algebra/AlgGento02.html) &bull; <a href="{{site.url}}/graduate/exams/algebra/AlgGento02.pdf" aria-label="PDF version for printing">PDF</a>
   
   Here is an updated [Review Guide]({{site.url}}/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html) (<a href="{{site.url}}/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.pdf" aria-label="PDF version for printing">PDF for printing</a>) for algebra general exams (includes old exam problems sorted by topics up to and including Jan 22 exam).
   
