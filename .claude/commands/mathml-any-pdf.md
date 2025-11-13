@@ -258,15 +258,86 @@ Based on the PDF path, determine where the HTML should be saved and the appropri
 - For seminars: Back to Seminars → `/seminars/`
 - For undergraduate: Back to Undergraduate → `/undergraduate/`
 
-### Step 12: Add Jekyll Front Matter (if applicable)
-**Only if** the HTML will be used as a Jekyll page/post:
+### Step 12: Add Jekyll Front Matter (Context-Dependent)
+**CRITICAL**: Whether to add Jekyll front matter depends on the document type.
 
-Determine if Jekyll front matter is needed:
-- In `_posts/` → YES (but shouldn't convert PDFs here)
-- Direct content pages → NO (linked from other pages)
-- Standalone documents → NO
+#### Decision Logic:
 
-For most PDFs, **NO Jekyll front matter needed** - they're linked from existing pages.
+**NO Jekyll front matter** (standalone HTML):
+- Short individual exam PDFs (1-6 pages) in `/graduate/exams/`
+- Examples: `2025Jan_complex.pdf`, `2024-08.pdf`, `2023-08.pdf`
+
+**YES Jekyll front matter required**:
+- Long compilation/review PDFs in `/graduate/exams/`
+  - `CombinedPrep2022Jan-AlgebraGeneral.pdf`
+  - `1977-2004.pdf`
+  - `AlgGento02.pdf`
+- Syllabus PDFs in `/graduate/docs/`
+- All PDFs in `/IMS/`, `/RTG_geomtop/`, `/undergraduate/`, etc.
+
+#### How to Add Front Matter:
+
+If Jekyll front matter is required, add it at the VERY TOP of the HTML file (before `<!DOCTYPE html>`):
+
+```yaml
+---
+title: "Document Title from PDF"
+layout: page
+permalink: /path/to/document/
+---
+```
+
+**Layout by location:**
+- `graduate/` → `layout: g_page`
+- `undergraduate/` → `layout: ug_page`
+- Other locations → `layout: page`
+
+**Examples:**
+
+**Graduate compilation/review (needs front matter):**
+```yaml
+---
+title: "Algebra General Exam Review Guide 2022"
+layout: g_page
+permalink: /graduate/exams/algebra/review-guide-2022/
+nav_parent: Graduate
+---
+<!DOCTYPE html>
+<html lang="en">
+...
+```
+
+**IMS lecture notes (needs front matter):**
+```yaml
+---
+title: "IMS Lecture Notes Spring 2024"
+layout: page
+permalink: /IMS/lectures/spring-2024-notes/
+nav_parent: IMS
+---
+<!DOCTYPE html>
+<html lang="en">
+...
+```
+
+**Short individual exam (NO front matter):**
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ALGEBRA GENERAL EXAM AUGUST 2024 - UVA Mathematics</title>
+...
+```
+
+#### Adding Front Matter with Edit Tool:
+
+1. **Read the HTML** to get the title from the H1 heading
+2. **Determine if front matter needed** using logic above
+3. **If needed**, use Edit tool to add front matter:
+   - Old string: `<!DOCTYPE html>`
+   - New string: `---\ntitle: "Title Here"\nlayout: g_page\npermalink: /path/\nnav_parent: Graduate\n---\n<!DOCTYPE html>`
+
+**Note**: For long PDFs in `/graduate/exams/`, you'll likely be doing sample reading (not full PDF) per Step 15, so rely heavily on automated validation.
 
 ### Step 13: Save to final location
 Save the processed HTML file (from `/tmp/<PDF_ID>_fixed.html`) to the determined output location.
@@ -331,8 +402,15 @@ This will show which page(s) link to the PDF.
 - The HTML is still accessible by direct URL
 - User may manually add link later
 
-### Step 15: COMPREHENSIVE VALIDATION - Read FULL PDF and HTML
-**⚠️ MANDATORY**: You MUST read the COMPLETE PDF and COMPLETE HTML for comparison.
+### Step 15: COMPREHENSIVE VALIDATION - Read PDF and HTML
+**⚠️ MANDATORY**: Compare PDF source with HTML output to verify conversion quality.
+
+**IMPORTANT**: Always send the FULL PDF to Mathpix in Step 2 (required for complete conversion). This step is about Claude reading for manual verification.
+
+**First, check PDF page count** from Step 1 analysis.
+
+#### For SHORT PDFs (≤ 6 pages):
+Read the FULL PDF and FULL HTML:
 
 ```bash
 Read <PDF_PATH>
@@ -350,7 +428,49 @@ Read <HTML_PATH>
 - [ ] No garbled text
 - [ ] No broken math formulas
 
+#### For LONG PDFs (> 6 pages):
+**DO NOT read the entire PDF with Claude** (would waste tokens). Instead:
+
+1. **Read strategic samples**:
+   ```bash
+   # Read first 2 pages
+   Read <PDF_PATH> (pages 1-2)
+
+   # Read middle section (e.g., pages 25-27 for a 50-page doc)
+   Read <PDF_PATH> (pages 25-27)
+
+   # Read last page
+   Read <PDF_PATH> (last page)
+   ```
+
+2. **Read FULL HTML** (text is more compact):
+   ```bash
+   Read <HTML_PATH>
+   ```
+
+3. **Spot-check critical elements**:
+   - [ ] First heading matches PDF title
+   - [ ] TOC structure matches PDF sections (if applicable)
+   - [ ] Sample math formulas from different sections look correct
+   - [ ] Images present (check HTML for `<img>` tags)
+   - [ ] Tables formatted correctly
+   - [ ] Last section present (not truncated)
+
+4. **Rely heavily on automated validation** (Step 17):
+   - Automated scripts check ALL content systematically
+   - MathML validation ensures all formulas have proper markup
+   - Heading hierarchy check ensures structure
+   - Links/images check ensures nothing broken
+
 **Document any discrepancies** and fix them immediately.
+
+**Page count guidelines**:
+- **1-6 pages**: Read FULL PDF with Claude (exams, short syllabi, brief notes)
+- **7-15 pages**: Read samples only (lecture notes, short papers)
+- **16-30 pages**: Read minimal samples + heavy automation (long papers, chapters)
+- **31+ pages**: Read first/last pages only + rely on automation (books, theses, handbooks)
+
+**Remember**: ALWAYS send the FULL PDF to Mathpix (Step 2) regardless of page count - the cutoff only applies to Claude's manual reading in this step.
 
 ### Step 16: AUTOMATED WCAG 2.1 LEVEL AA COMPLIANCE AUDIT
 **⚠️ CRITICAL**: Comprehensive accessibility audit with automated checks.
@@ -916,9 +1036,9 @@ The command will:
 | **Back button** | Fixed (General Exams) | Dynamic based on path |
 | **Section headings** | H2 for problems | H2/H3 based on structure |
 | **Source page** | Always `general_exams.md` | Auto-detect with grep |
-| **Full PDF read** | Sample only | FULL document required |
-| **Full HTML read** | Sample only | FULL document required |
-| **Validation** | Standard checklist | Enhanced with grep checks |
+| **Full PDF read** | ≤6 pages: Full, >6: samples | ≤6 pages: Full, >6: samples |
+| **Full HTML read** | Always | Always |
+| **Validation** | Standard checklist | Enhanced automated suite |
 | **Examples** | No | Multiple usage examples |
 | **Image handling** | Basic | Enhanced with descriptions |
 | **Table handling** | Basic | Enhanced with headers/scope |
