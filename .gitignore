@@ -33,3 +33,5 @@ scripts/__pycache__
 full_recreate.py
 process_algebra_html.py
 recreate_algebra_html.sh
+split_large_html.py
+analyze_pdfs.py
