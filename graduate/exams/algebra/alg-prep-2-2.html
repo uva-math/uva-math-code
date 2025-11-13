@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>2.2 PIDs, UFDs and Polynomial Rings - Algebra General Exam Review - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html">Algebra Review Guide</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">2.2 PIDs, UFDs and Polynomial Rings</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="pids-ufds-and-polynomial-rings">2.2 PID’s,
+UFD’s and polynomial rings</h2>
+<p>KNOW: how to compute the gcd and the lcm of two elements
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and
+<math role="math" aria-label="b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+in a UFD
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and that the gcd can in general not be written as an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-linear
+combination of
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and
+<math role="math" aria-label="b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+(as opposed to the case where
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a PID); standard examples of non-principal ideals in
+<math role="math" aria-label="\mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[x]</annotation></semantics></math>
+and
+<math role="math" aria-label="K[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K[x, y]</annotation></semantics></math>
+for a field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>;
+the difference between irreducible and prime elements (for instance in a
+ring like
+<math role="math" aria-label="\mathbb{Z}[\sqrt{-5}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mrow><mi>−</mi><mn>5</mn></mrow></msqrt><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[\sqrt{-5}]</annotation></semantics></math>
+) and that these two notions coincide in a UFD; the fact that prime
+elements generate prime ideals which are minimal among the nonzero prime
+ideals if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a UFD; the fact that in any integral domain irreducible elements
+generate principal ideals which are maximal among the proper principal
+ideals.</p>
+<p>Know Hilbert’s Basis Theorem: If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is Noetherian, then also the polynomial ring
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>
+is Noetherian, i.e. all its ideals are finitely generated.</p>
+<p>Know Gauss’ Lemma and its variants: If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a UFD,
+<math role="math" aria-label="f, g \in R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>g</mi><mo>&isin;</mo><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f, g \in R[x]</annotation></semantics></math>
+with
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+primitive and
+<math role="math" aria-label="f \mid g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∣</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f \mid g</annotation></semantics></math>
+in
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>,
+where
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is the field of fractions of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+then
+<math role="math" aria-label="f \mid g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>∣</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">f \mid g</annotation></semantics></math>
+in
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>;
+primitive polynomials of
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>
+are irreducible iff they are prime in
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>
+iff they are irreducible (or prime) in
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>;<br />
+Consequence:
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>
+is also a UFD, in particular
+<math role="math" aria-label="\mathbb{Z}\left[x_{1}, \ldots, x_{n}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{Z}\left[x_{1}, \ldots, x_{n}\right]</annotation></semantics></math>
+and
+<math role="math" aria-label="K\left[x_{1}, \ldots, x_{n}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">K\left[x_{1}, \ldots, x_{n}\right]</annotation></semantics></math>
+are UFD’s for any
+<math role="math" aria-label="n \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">n \in \mathbb{N}</annotation></semantics></math>
+and any field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.</p>
+<p>Know EISENSTEIN’S CRITERION: If
+<math role="math" aria-label="f \in R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f \in R[x]</annotation></semantics></math>
+is a primitive polynomial (
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+a UFD) and
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+a prime dividing all coefficients of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+but the leading one and
+<math role="math" aria-label="p^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mn>2</mn></msup><annotation encoding="application/x-tex">p^{2}</annotation></semantics></math>
+not dividing the constant term, then
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is irreducible in
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>
+and hence in
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>.</p>
+<p>Avoid the following mistakes: If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a subring of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+and
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is a prime element in
+<math role="math" aria-label="R, p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>,</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">R, p</annotation></semantics></math>
+need not be a prime element in
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+(even if
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is a UFD and
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is not a unit in
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+); if you want to deduce from an equation
+<math role="math" aria-label="a=b c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">a=b c</annotation></semantics></math>
+in a domain
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+that
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+is not irreducible, don’t forget to check that
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and
+<math role="math" aria-label="b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+are no units in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>;
+likewise, if you have different irreducible elements
+<math role="math" aria-label="a, b, c, d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">a, b, c, d</annotation></semantics></math>
+in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and you want to deduce from an equation
+<math role="math" aria-label="a b=c d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>b</mi><mo>=</mo><mi>c</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">a b=c d</annotation></semantics></math>
+that they are not prime in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+don’t forget to check that they are not associate; keep in mind that the
+primitivity of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is an important assumption in Gauss’ Lemma; don’t apply Eisenstein’s
+criterion to
+<math role="math" aria-label="\mathbb{F}_{q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Fopf;</mi><mi>q</mi></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{F}_{q}[x]</annotation></semantics></math>
+(
+<math role="math" aria-label="\mathbb{F}_{q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>q</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{q}</annotation></semantics></math>
+is not the field of fractions of a proper subdomain, and it doesn’t have
+any prime elements).</p>
+<h2 class="unnumbered" id="related-problems-4">Related Problems</h2>
+<p>(Unless otherwise stated, all rings
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+are commutative with unit
+<math role="math" aria-label="1 ; F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">1 ; F</annotation></semantics></math>
+denotes a field.)</p>
+<ol>
+<li><p>(April
+<math role="math" aria-label="77 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>77</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">77 \# 4</annotation></semantics></math>
+) (a) If
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is a maximal ideal, SHOW
+<math role="math" aria-label="R / M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">R / M</annotation></semantics></math>
+is a field.<br />
+(b) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a Euclidean domain, show every ideal generated by an irreducible
+element is maximal.</p></li>
+<li><p>(Jan 79 #2; May 91 #2a) (a) SHOW that any Euclidean domain is a
+PID.<br />
+(b) Show that any two nonzero elements have a g.c.d. in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a Euclidean domain.<br />
+(c)Find (systematically)
+<math role="math" aria-label="m, n \in \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">m, n \in \mathbb{Z}</annotation></semantics></math>
+so that
+<math role="math" aria-label="421 m+1664 n=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>421</mn><mi>m</mi><mo>+</mo><mn>1664</mn><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">421 m+1664 n=1</annotation></semantics></math>.</p></li>
+<li><p>(Sep 79 #7b) Given an example of a prime ideal in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+which is not maximal; is there an example where
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a UFD?</p></li>
+<li><p>(Sep 80 #2) (a) Give 3 examples of PIDs.<br />
+(b) Show that the homomorphic image of a PIR (Principal Ideal Ring: all
+ideals are principal, but perhaps not a domain) is again a PIR.<br />
+(c) Give an example of a PID with a homomorphic image which is not a
+PID.</p></li>
+<li><p>(Jan 81 #4) SHOW
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>
+is a Euclidean domain, but
+<math role="math" aria-label="F[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x, y]</annotation></semantics></math>
+is not.</p></li>
+<li><p>(Sep
+<math role="math" aria-label="82 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>82</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">82 \# 2</annotation></semantics></math>
+) If
+<math role="math" aria-label="a_{1}, \ldots, a_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">a_{1}, \ldots, a_{n}</annotation></semantics></math>
+in a PID
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+have
+<math role="math" aria-label="\operatorname{gcd} d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">gcd</mi><mo>&#8289;</mo></mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">\operatorname{gcd} d</annotation></semantics></math>,
+show that there exists an invertible
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+matrix
+<math role="math" aria-label="Q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+of determinant 1 over
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+with
+<math role="math" aria-label="Q\left[a_{1}, \ldots, a_{n}\right]^{T}=[d, 0,0 \ldots 0]^{T}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><msup><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow><mi>T</mi></msup><mo>=</mo><mo stretchy="false" form="prefix">[</mo><mi>d</mi><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mi>…</mi><mn>0</mn><msup><mo stretchy="false" form="postfix">]</mo><mi>T</mi></msup></mrow><annotation encoding="application/x-tex">Q\left[a_{1}, \ldots, a_{n}\right]^{T}=[d, 0,0 \ldots 0]^{T}</annotation></semantics></math>.
+(This is false if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is merely a UFD).</p></li>
+<li><p>(Mar
+<math role="math" aria-label="83 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>83</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">83 \# 5</annotation></semantics></math>
+) If
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+is a UFD whose units together with 0 form a proper subring
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>,
+show
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+has infinitely many (nonassociate) primes. Give an example of such a
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>.</p></li>
+<li><p>(Sep
+<math role="math" aria-label="83 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>83</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">83 \# 7</annotation></semantics></math>
+) If
+<math role="math" aria-label="R \subseteq S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&sube;</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">R \subseteq S</annotation></semantics></math>
+are PIDs with
+<math role="math" aria-label="d=\operatorname{gcd}_{R}(a, b)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">gcd</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">d=\operatorname{gcd}_{R}(a, b)</annotation></semantics></math>,
+show
+<math role="math" aria-label="d=\operatorname{gcd}_{S}(a, b)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">gcd</mi><mo>&#8289;</mo></mrow><mi>S</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">d=\operatorname{gcd}_{S}(a, b)</annotation></semantics></math>
+too.</p></li>
+<li><p>(Feb
+<math role="math" aria-label="84 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>84</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">84 \# 5</annotation></semantics></math>
+) Factor
+<math role="math" aria-label="x^{3}-y^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><msup><mi>y</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">x^{3}-y^{3}</annotation></semantics></math>
+into irreducible factors in
+<math role="math" aria-label="\mathbb{Q}[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}[x, y]</annotation></semantics></math>.</p></li>
+<li><p>(1985 #3a) Show
+<math role="math" aria-label="x^{5}-6 x^{3}+12 x^{2}+21 x-3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><mn>6</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>12</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>21</mn><mi>x</mi><mo>−</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x^{5}-6 x^{3}+12 x^{2}+21 x-3</annotation></semantics></math>
+is irreducible in
+<math role="math" aria-label="\mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}[x]</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="87 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>87</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">87 \# 5</annotation></semantics></math>
+) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is an integral domain, what are necessary and sufficient conditions that
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>
+be: (0) a domain, (1) a PID, (2) a UFD, (3) noetherian.</p></li>
+<li><p>(Fall
+<math role="math" aria-label="87 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>87</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">87 \# 2</annotation></semantics></math>
+) Prove or disprove:
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+PID
+<math role="math" aria-label="\Longrightarrow R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&rArr;</mo><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\Longrightarrow R[x]</annotation></semantics></math>
+is PID.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="88 \# 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>88</mn><mi>#</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">88 \# 1</annotation></semantics></math>
+) If
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is a field, PROVE
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>
+is a PID.</p></li>
+<li><p>(Jan 89 #6) Prove or disprove: Every UFD is a PID.</p></li>
+<li><p>(Aug 89 #4) Show
+<math role="math" aria-label="R=\{f(x) \in \mathbb{Z}[x] \mid" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo>∣</mo></mrow><annotation encoding="application/x-tex">R=\{f(x) \in \mathbb{Z}[x] \mid</annotation></semantics></math>
+the coefficient of
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+in
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is even
+<math role="math" aria-label="\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo stretchy="false" form="postfix">}</mo><annotation encoding="application/x-tex">\}</annotation></semantics></math>
+is a subring. Show that 2 and
+<math role="math" aria-label="2 x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>x</mi></mrow><annotation encoding="application/x-tex">2 x</annotation></semantics></math>
+have a g.c.d. in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+but not a l.c.m.</p></li>
+<li><p>(May
+<math role="math" aria-label="1990 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1990</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">1990 \# 4</annotation></semantics></math>
+) If
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+is a nonzero prime ideal in a UFD, show
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+is minimal among nonzero prime ideals iff
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+is a principal ideal.</p></li>
+<li><p>(May 91 #2b) Prove or disprove:
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+Euclidean domain
+<math role="math" aria-label="\Longrightarrow R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&rArr;</mo><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\Longrightarrow R[x]</annotation></semantics></math>
+Euclidean domain and/or any two nonzero elements of
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>
+have a g.c.d. in
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>.</p></li>
+<li><p>(Jan 92 #2) Show that a polynomial of degree
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+has at most
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+roots in
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.</p></li>
+<li><p>(May 92 #6) Show that
+<math role="math" aria-label="f(x, y)=x+x^{3} y+y^{8}+x^{7} y^{5}+x^{2} y^{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>x</mi><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup><mi>y</mi><mo>+</mo><msup><mi>y</mi><mn>8</mn></msup><mo>+</mo><msup><mi>x</mi><mn>7</mn></msup><msup><mi>y</mi><mn>5</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">f(x, y)=x+x^{3} y+y^{8}+x^{7} y^{5}+x^{2} y^{4}</annotation></semantics></math>
+is irreducible over the rational field.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="94 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>94</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">94 \# 3</annotation></semantics></math>
+) Prove that
+<math role="math" aria-label="y^{3}+x^{2} y^{2}+x^{3} y+x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup><mi>y</mi><mo>+</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">y^{3}+x^{2} y^{2}+x^{3} y+x</annotation></semantics></math>
+is irreducible in
+<math role="math" aria-label="\mathbb{Z}[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[x, y]</annotation></semantics></math>.</p></li>
+<li><p>(Aug 94 #3) Describe which polynomials in
+<math role="math" aria-label="\mathbb{R}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}[x]</annotation></semantics></math>
+belong to the subring
+<math role="math" aria-label="\mathbb{R}\left[x^{2}, x^{3}\right], \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mrow><mo stretchy="true" form="prefix">[</mo><msup><mi>x</mi><mn>2</mn></msup><mo>,</mo><msup><mi>x</mi><mn>3</mn></msup><mo stretchy="true" form="postfix">]</mo></mrow><mo>,</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{R}\left[x^{2}, x^{3}\right], \mathbb{R}</annotation></semantics></math>
+the field of real numbers.</p></li>
+<li><p>(Jan 95 #6) Prove that any proper homomorphic image of a PID that
+remains an integral domain must actually be a field.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="95 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>95</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">95 \# 4</annotation></semantics></math>
+) Show that
+<math role="math" aria-label="\mathbb{Z}[\sqrt{10}]=\mathbb{Z}+\mathbb{Z} \sqrt{10}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mn>10</mn></msqrt><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mi>&Zopf;</mi><mo>+</mo><mi>&Zopf;</mi><msqrt><mn>10</mn></msqrt></mrow><annotation encoding="application/x-tex">\mathbb{Z}[\sqrt{10}]=\mathbb{Z}+\mathbb{Z} \sqrt{10}</annotation></semantics></math>
+is not a UFD. (Hint: show that a)
+<math role="math" aria-label="n^{2}-10 m^{2} \neq \pm 2,3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mn>2</mn></msup><mo>−</mo><mn>10</mn><msup><mi>m</mi><mn>2</mn></msup><mo>&ne;</mo><mi>&plusmn;</mi><mn>2</mn><mo>,</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">n^{2}-10 m^{2} \neq \pm 2,3</annotation></semantics></math>
+for all
+<math role="math" aria-label="n, m \in \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>,</mo><mi>m</mi><mo>&isin;</mo><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">n, m \in \mathbb{Z}</annotation></semantics></math>,
+b) 2,3 , and
+<math role="math" aria-label="4 \pm \sqrt{10}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>&plusmn;</mo><msqrt><mn>10</mn></msqrt></mrow><annotation encoding="application/x-tex">4 \pm \sqrt{10}</annotation></semantics></math>
+are irreducible in
+<math role="math" aria-label="\mathbb{Z}[\sqrt{10}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mn>10</mn></msqrt><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[\sqrt{10}]</annotation></semantics></math>.)</p></li>
+<li><p>(Aug
+<math role="math" aria-label="95 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>95</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">95 \# 5</annotation></semantics></math>
+) Factor
+<math role="math" aria-label="x^{9}-x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>9</mn></msup><mo>−</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x^{9}-x</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{F}_{3}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Fopf;</mi><mn>3</mn></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{F}_{3}[x]</annotation></semantics></math>
+into irreducible factors (
+<math role="math" aria-label="\mathbb{F}_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mn>3</mn></msub><annotation encoding="application/x-tex">\mathbb{F}_{3}</annotation></semantics></math>
+the Galois field of three elements).</p></li>
+<li><p>(Aug
+<math role="math" aria-label="96 \# 4)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>96</mn><mi>#</mi><mn>4</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">96 \# 4)</annotation></semantics></math>
+In
+<math role="math" aria-label="\mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}[x]</annotation></semantics></math>,
+let
+<math role="math" aria-label="f(x)=x^{m_{1}}+\ldots+x^{m_{k}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><msub><mi>m</mi><mn>1</mn></msub></msup><mo>+</mo><mi>…</mi><mo>+</mo><msup><mi>x</mi><msub><mi>m</mi><mi>k</mi></msub></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{m_{1}}+\ldots+x^{m_{k}}</annotation></semantics></math>
+where
+<math role="math" aria-label="m_{i} \equiv i-1(\bmod k)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mi>i</mi></msub><mo>&equiv;</mo><mi>i</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="prefix">(</mo><mrow><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">mod</mi><mo>&#8289;</mo></mrow><mspace width="0.222em"></mspace><mi>k</mi></mrow><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">m_{i} \equiv i-1(\bmod k)</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is divisible by
+<math role="math" aria-label="x^{k-1}+x^{k-2}+\ldots+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><msup><mi>x</mi><mrow><mi>k</mi><mo>−</mo><mn>2</mn></mrow></msup><mo>+</mo><mi>…</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{k-1}+x^{k-2}+\ldots+1</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="96 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>96</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">96 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a PID. An ideal
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is called primary if whenever
+<math role="math" aria-label="a b \in P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>b</mi><mo>&isin;</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">a b \in P</annotation></semantics></math>
+and
+<math role="math" aria-label="a \notin P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&notin;</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">a \notin P</annotation></semantics></math>
+then
+<math role="math" aria-label="b^{n} \in P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>b</mi><mi>n</mi></msup><mo>&isin;</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">b^{n} \in P</annotation></semantics></math>
+for some
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+(depending on
+<math role="math" aria-label="b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+). Show that
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+is primary iff either
+<math role="math" aria-label="P=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P=0</annotation></semantics></math>
+or
+<math role="math" aria-label="P=\left(p^{m}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>p</mi><mi>m</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">P=\left(p^{m}\right)</annotation></semantics></math>
+for some prime
+<math role="math" aria-label="p \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">p \in R</annotation></semantics></math>
+and some exponent
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>.</p></li>
+<li><p>(Jan 97 #4) Give counterexamples for each of the following
+statements, with details. Then correct each statement by modifying the
+underlined part. (a) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a commutative ring, then a polynomial in
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>
+of degree
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+has at most
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+roots in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+(b) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a division ring, then a polynomial in
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>
+of degree
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+has at most
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+roots in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+(c) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a unique factorization domain, then the greatest common divisor
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+of two members
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+can be written as
+<math role="math" aria-label="d=a x+b y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">d=a x+b y</annotation></semantics></math>
+for some
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and
+<math role="math" aria-label="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="98 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>98</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">98 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a PID. If
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>
+are two nonzero elements in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+show that they have a l.c.m. (an element
+<math role="math" aria-label="m \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">m \in R</annotation></semantics></math>
+such that (1)
+<math role="math" aria-label="a, b \mid m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>∣</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">a, b \mid m</annotation></semantics></math>,
+(2) if
+<math role="math" aria-label="a, b \mid x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>∣</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">a, b \mid x</annotation></semantics></math>
+then
+<math role="math" aria-label="m \mid x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>∣</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">m \mid x</annotation></semantics></math>.)</p></li>
+<li><p>(August 98 #5) The Krull dimension of a commutative ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is the longest chain of prime ideals properly contained in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+i.e. the largest integer
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+such that there exists a chain
+<math role="math" aria-label="P_{0}&lt;P_{1}&lt;\ldots&lt;P_{n}&lt;R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>&lt;</mo><msub><mi>P</mi><mn>1</mn></msub><mo>&lt;</mo><mi>…</mi><mo>&lt;</mo><msub><mi>P</mi><mi>n</mi></msub><mo>&lt;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">P_{0}&lt;P_{1}&lt;\ldots&lt;P_{n}&lt;R</annotation></semantics></math>
+(
+<math role="math" aria-label="P_{0}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mn>0</mn></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">P_{0}=0</annotation></semantics></math>
+allowed if prime) of prime ideals
+<math role="math" aria-label="P_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>i</mi></msub><annotation encoding="application/x-tex">P_{i}</annotation></semantics></math>
+in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a PID, find its Krull dimension.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="00 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>00</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">00 \# 6</annotation></semantics></math>
+) Given a finite field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+show there exists a polynomial
+<math role="math" aria-label="f(x, y) \in K[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x, y) \in K[x, y]</annotation></semantics></math>
+(in which both variables actually appear) for which the equation
+<math role="math" aria-label="f(x, y)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(x, y)=0</annotation></semantics></math>
+has no solutions in
+<math role="math" aria-label="K \times K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>&times;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">K \times K</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="01 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>01</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">01 \# 4</annotation></semantics></math>
+) If
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is an element of a PID
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+show that the left
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="R / R x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>R</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">R / R x</annotation></semantics></math>
+is irreducible as a module if and only if the element
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is irreducible as an element.</p></li>
+<li><p>(Aug 02 #1) (a) Find all nonconstant polynomials
+<math role="math" aria-label="p(x) \in \mathbb{C}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Copf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">p(x) \in \mathbb{C}[x]</annotation></semantics></math>
+satisfying
+<math role="math" aria-label="p(p(p((x))=p(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p(p(p((x))=p(x)</annotation></semantics></math>.
+(b) Find all rational functions
+<math role="math" aria-label="\varphi(x) \in \mathbb{C}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\varphi(x) \in \mathbb{C}(x)</annotation></semantics></math>
+satisfying
+<math role="math" aria-label="\varphi(2 x)=\varphi(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>&phi;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\varphi(2 x)=\varphi(x)</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="02 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>02</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">02 \# 6</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R=\mathbb{C}[x, y] / \mathfrak{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Copf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mi><mi mathvariant="fraktur">a</mi></mi></mrow><annotation encoding="application/x-tex">R=\mathbb{C}[x, y] / \mathfrak{a}</annotation></semantics></math>
+where
+<math role="math" aria-label="\mathbb{C}[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}[x, y]</annotation></semantics></math>
+is the ring of polynomials in variables
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and
+<math role="math" aria-label="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,
+and
+<math role="math" aria-label="\mathfrak{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi><mi mathvariant="fraktur">a</mi></mi><annotation encoding="application/x-tex">\mathfrak{a}</annotation></semantics></math>
+is the principal ideal of
+<math role="math" aria-label="\mathbb{C}[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}[x, y]</annotation></semantics></math>
+generated by
+<math role="math" aria-label="p(x, y)=y^{2}-x^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>y</mi><mn>2</mn></msup><mo>−</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">p(x, y)=y^{2}-x^{3}</annotation></semantics></math>.
+Show that the ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+generated by the image of
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and
+<math role="math" aria-label="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+is not principal.</p></li>
+<li><p>(May
+<math role="math" aria-label="03 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>03</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">03 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="f(x) \in \mathbb{R}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x) \in \mathbb{R}[x]</annotation></semantics></math>
+be a nonzero polynomial. Show that there exists a number
+<math role="math" aria-label="r \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">r \in \mathbb{R}</annotation></semantics></math>
+such that the polynomials
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+and
+<math role="math" aria-label="f(x+r)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x+r)</annotation></semantics></math>
+are relatively prime.</p></li>
+<li><p>(Aug 03, #2) Let
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+be a PID with
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+as its field of fractions. Show that every element
+<math role="math" aria-label="x \in F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">x \in F</annotation></semantics></math>
+can be written as a sum of primary fractions (i.e. with denominators
+powers of primes):</p></li>
+</ol>
+<p><math role="math" aria-label="x=\sum_{i=1}^{n} \frac{a_{i}}{p_{i}^{e_{i}}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mfrac><msub><mi>a</mi><mi>i</mi></msub><msubsup><mi>p</mi><mi>i</mi><msub><mi>e</mi><mi>i</mi></msub></msubsup></mfrac></mrow><annotation encoding="application/x-tex">x=\sum_{i=1}^{n} \frac{a_{i}}{p_{i}^{e_{i}}}</annotation></semantics></math></p>
+<p>for some
+<math role="math" aria-label="a_{1}, \ldots, a_{n} \in D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub><mo>&isin;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">a_{1}, \ldots, a_{n} \in D</annotation></semantics></math>
+and non-associate primes
+<math role="math" aria-label="p_{1}, \ldots, p_{n} \in D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>p</mi><mi>n</mi></msub><mo>&isin;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">p_{1}, \ldots, p_{n} \in D</annotation></semantics></math>.<br />
+36. (Jan 04 #4) Show that a principal ideal in
+<math role="math" aria-label="\mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[x]</annotation></semantics></math>
+can never be maximal.<br />
+37. (Aug 04 #3) Consider the ring
+<math role="math" aria-label="R=\mathbb{Z}[\sqrt{-7}]=\{m+n \sqrt{-7} \mid m, n \in \mathbb{Z}\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mrow><mi>−</mi><mn>7</mn></mrow></msqrt><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>m</mi><mo>+</mo><mi>n</mi><msqrt><mrow><mi>−</mi><mn>7</mn></mrow></msqrt><mo>∣</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><mi>&Zopf;</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[\sqrt{-7}]=\{m+n \sqrt{-7} \mid m, n \in \mathbb{Z}\}</annotation></semantics></math>.<br />
+(a) Is
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+a UFD? Give arguments for your answer.<br />
+(b) Exhibit an ideal
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+which is not principal. Show that your
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is not principal.<br />
+38. (Jan
+<math role="math" aria-label="05 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>05</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">05 \# 5</annotation></semantics></math>
+) Prove that the ideal
+<math role="math" aria-label="\left(x^{2}+2, x^{2}+7\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>,</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>7</mn><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(x^{2}+2, x^{2}+7\right)</annotation></semantics></math>
+is maximal in
+<math role="math" aria-label="\mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[x]</annotation></semantics></math>.<br />
+39. (Jan 06 #8) For an element
+<math role="math" aria-label="a \in \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">a \in \mathbb{Q}</annotation></semantics></math>,
+consider the homomorphism
+<math role="math" aria-label="\varphi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&phi;</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math>
+from the polynomial ring
+<math role="math" aria-label="\mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}[x]</annotation></semantics></math>
+to the ring
+<math role="math" aria-label="M_{3}(\mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mn>3</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M_{3}(\mathbb{Q})</annotation></semantics></math>
+of
+<math role="math" aria-label="3 \times 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>&times;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">3 \times 3</annotation></semantics></math>
+matrices, given by evaluation
+<math role="math" aria-label="f(x) \mapsto f(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&map;</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x) \mapsto f(A)</annotation></semantics></math>
+for</p>
+<p><math role="math" aria-label="A=\left(\begin{array}{ccc}
+a &amp; 1 &amp; 0 \\
+0 &amp; a &amp; 1 \\
+0 &amp; 0 &amp; a
+\end{array}\right)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mi>a</mi></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>a</mi></mtd><mtd columnalign="center" style="text-align: center"><mn>1</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>a</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A=\left(\begin{array}{ccc}
+a &amp; 1 &amp; 0 \\
+0 &amp; a &amp; 1 \\
+0 &amp; 0 &amp; a
+\end{array}\right)</annotation></semantics></math></p>
+<p>Show that the kernel of
+<math role="math" aria-label="\varphi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&phi;</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math>
+is the set of all polynomials
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+with
+<math role="math" aria-label="f(a)=f^{\prime}(a)=f^{\prime \prime}(a)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>f</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(a)=f^{\prime}(a)=f^{\prime \prime}(a)=0</annotation></semantics></math>.
+Is this a principal ideal?<br />
+40. (Aug 06 #4) Decide whether</p>
+<p><math role="math" aria-label="x y^{2}+x^{2} y+2 x y+y+x+1" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mi>y</mi><mo>+</mo><mn>2</mn><mi>x</mi><mi>y</mi><mo>+</mo><mi>y</mi><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x y^{2}+x^{2} y+2 x y+y+x+1</annotation></semantics></math></p>
+<p>is irreducible in
+<math role="math" aria-label="\mathbb{Q}[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}[x, y]</annotation></semantics></math>.<br />
+41. (Aug
+<math role="math" aria-label="06 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>06</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">06 \# 7</annotation></semantics></math>
+) Determine the number of monic irreducible polynomials of degree 2 in
+<math role="math" aria-label="\mathbb{F}_{7}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Fopf;</mi><mn>7</mn></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{F}_{7}[x]</annotation></semantics></math>.<br />
+42. (Jan 08 #4) (a) If
+<math role="math" aria-label="r \in \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&isin;</mo><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">r \in \mathbb{Q}</annotation></semantics></math>
+is a rational root of a monic integral polynomial</p>
+<p><math role="math" aria-label="p(x)=x^{n}+a_{n-1} x^{n-1}+\cdots+a_{0} \in \mathbb{Z}[x]" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub><mo>&isin;</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">p(x)=x^{n}+a_{n-1} x^{n-1}+\cdots+a_{0} \in \mathbb{Z}[x]</annotation></semantics></math></p>
+<p>show that
+<math role="math" aria-label="r \in \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&isin;</mo><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">r \in \mathbb{Z}</annotation></semantics></math>
+is integral.<br />
+(b) Factor
+<math role="math" aria-label="y^{5} x+y^{3} x^{2}+y+x^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>y</mi><mn>5</mn></msup><mi>x</mi><mo>+</mo><msup><mi>y</mi><mn>3</mn></msup><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>y</mi><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">y^{5} x+y^{3} x^{2}+y+x^{3}</annotation></semantics></math>
+into irreducible factors in
+<math role="math" aria-label="\mathbb{Z}[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[x, y]</annotation></semantics></math>,
+explaining why each is irreducible.<br />
+43. (Jan 08 #5) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a unital commutative ring, and consider 5 possible properties such a
+ring might have: it is
+<math role="math" aria-label="\left(\mathcal{P}_{1}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&Pscr;</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\mathcal{P}_{1}\right)</annotation></semantics></math>
+a domain,
+<math role="math" aria-label="\left(\mathcal{P}_{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&Pscr;</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\mathcal{P}_{2}\right)</annotation></semantics></math>
+a PID,
+<math role="math" aria-label="\left(\mathcal{P}_{3}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&Pscr;</mi><mn>3</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\mathcal{P}_{3}\right)</annotation></semantics></math>
+Euclidean,
+<math role="math" aria-label="\left(\mathcal{P}_{4}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&Pscr;</mi><mn>4</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\mathcal{P}_{4}\right)</annotation></semantics></math>
+noetherian,
+<math role="math" aria-label="\left(\mathcal{P}_{5}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&Pscr;</mi><mn>5</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\mathcal{P}_{5}\right)</annotation></semantics></math>
+a UFD.<br />
+(a) For which
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is it true that
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>
+always inherits property
+<math role="math" aria-label="\left(\mathcal{P}_{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&Pscr;</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\mathcal{P}_{n}\right)</annotation></semantics></math>
+from
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+(if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+has
+<math role="math" aria-label="\left(\mathcal{P}_{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&Pscr;</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\mathcal{P}_{n}\right)</annotation></semantics></math>,
+so must
+<math role="math" aria-label="R[x])" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">R[x])</annotation></semantics></math>
+? Circle the
+<math role="math" aria-label="n^{\prime} s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mi>′</mi></msup><mi>s</mi></mrow><annotation encoding="application/x-tex">n^{\prime} s</annotation></semantics></math>
+for which this holds, and explain your answer or give a
+counterexample.</p>
+<p><math role="math" aria-label="n=\begin{array}{|lllll|}
+\hline 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+\hline
+\end{array}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><mn>1</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>2</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>3</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>4</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>5</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">n=\begin{array}{|lllll|}
+\hline 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+\hline
+\end{array}</annotation></semantics></math></p>
+<p>(b) For which
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is it true that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+inherits property
+<math role="math" aria-label="\left(\mathcal{P}_{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&Pscr;</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\mathcal{P}_{n}\right)</annotation></semantics></math>
+from
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>
+? Circle the
+<math role="math" aria-label="n^{\prime} s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mi>′</mi></msup><mi>s</mi></mrow><annotation encoding="application/x-tex">n^{\prime} s</annotation></semantics></math>
+for which this holds, and explain your answer or give a
+counterexample.</p>
+<p><math role="math" aria-label="n=\begin{array}{|lllll|}
+\hline 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+\hline
+\end{array}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><mn>1</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>2</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>3</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>4</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>5</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">n=\begin{array}{|lllll|}
+\hline 1 &amp; 2 &amp; 3 &amp; 4 &amp; 5 \\
+\hline
+\end{array}</annotation></semantics></math></p>
+<p>(c) For which
+<math role="math" aria-label="n \neq 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ne;</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">n \neq 5</annotation></semantics></math>
+is it true that a quotient
+<math role="math" aria-label="R / P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">R / P</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+by a prime ideal (
+<math role="math" aria-label="P \triangleleft R, P \neq R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⊲</mo><mi>R</mi><mo>,</mo><mi>P</mi><mo>&ne;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">P \triangleleft R, P \neq R</annotation></semantics></math>
+) inherits property
+<math role="math" aria-label="\left(\mathcal{P}_{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&Pscr;</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\mathcal{P}_{n}\right)</annotation></semantics></math>
+from
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+? Circle the
+<math role="math" aria-label="n^{\prime} s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>n</mi><mi>′</mi></msup><mi>s</mi></mrow><annotation encoding="application/x-tex">n^{\prime} s</annotation></semantics></math>
+for which this holds, and explain your answer or give a
+counterexample.</p>
+<p><math role="math" aria-label="n=\begin{array}{|llll|}
+\hline 1 &amp; 2 &amp; 3 &amp; 4 \\
+\hline
+\end{array}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><mn>1</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>2</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>3</mn></mtd><mtd columnalign="left" style="text-align: left"><mn>4</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"></mtd></mtr></mtable></mrow><annotation encoding="application/x-tex">n=\begin{array}{|llll|}
+\hline 1 &amp; 2 &amp; 3 &amp; 4 \\
+\hline
+\end{array}</annotation></semantics></math></p>
+<ol start="44">
+<li><p>(Jan 08 #6) Let
+<math role="math" aria-label="R=\mathbb{Z}+2 \mathbb{Z}[x]=\mathbb{Z} 1+\sum_{n=0}^{\infty} 2 \mathbb{Z} x^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo>+</mo><mn>2</mn><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mi>&Zopf;</mi><mn>1</mn><mo>+</mo><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi>&infin;</mi></msubsup><mn>2</mn><mi>&Zopf;</mi><msup><mi>x</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}+2 \mathbb{Z}[x]=\mathbb{Z} 1+\sum_{n=0}^{\infty} 2 \mathbb{Z} x^{n}</annotation></semantics></math>.<br />
+(a) Show that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is not a UFD by finding an irreducible element that is not prime.<br />
+(b) Show that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is not noetherian by showing that the ideal
+<math role="math" aria-label="2 \mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">2 \mathbb{Z}[x]</annotation></semantics></math>
+is not finitely generated:
+<math role="math" aria-label="2 \mathbb{Z}[x] \neq \sum_{i=1}^{n} R f_{i}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo>&ne;</mo><msubsup><mo>&sum;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mi>R</mi><msub><mi>f</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">2 \mathbb{Z}[x] \neq \sum_{i=1}^{n} R f_{i}(x)</annotation></semantics></math>
+for any
+<math role="math" aria-label="f_{i}(x) \in 2 \mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>i</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mn>2</mn><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f_{i}(x) \in 2 \mathbb{Z}[x]</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="09 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>09</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">09 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field, and let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be the subring of
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>
+consisting of all polynomials with zero coefficient of
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>,
+that is,</p></li>
+</ol>
+<p><math role="math" aria-label="R=\left\{a_{0}+a_{2} x^{2}+\ldots+a_{n} x^{n}: a_{i} \in F\right\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>a</mi><mn>0</mn></msub><mo>+</mo><msub><mi>a</mi><mn>2</mn></msub><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>…</mi><mo>+</mo><msub><mi>a</mi><mi>n</mi></msub><msup><mi>x</mi><mi>n</mi></msup><mo>:</mo><msub><mi>a</mi><mi>i</mi></msub><mo>&isin;</mo><mi>F</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">R=\left\{a_{0}+a_{2} x^{2}+\ldots+a_{n} x^{n}: a_{i} \in F\right\}</annotation></semantics></math></p>
+<p>(a) Prove that the elements
+<math role="math" aria-label="x^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mn>2</mn></msup><annotation encoding="application/x-tex">x^{2}</annotation></semantics></math>
+and
+<math role="math" aria-label="x^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>x</mi><mn>3</mn></msup><annotation encoding="application/x-tex">x^{3}</annotation></semantics></math>
+are irreducible but not prime in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+(b) Is
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+a principal ideal domain? Prove your answer.<br />
+(c) Prove that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is Noetherian.<br />
+46. (Aug
+<math role="math" aria-label="09 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>09</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">09 \# 3</annotation></semantics></math>
+)(a) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a principal ideal domain and
+<math role="math" aria-label="I \subset R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&sub;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">I \subset R</annotation></semantics></math>
+a proper nonzero ideal. Prove that if the quotient ring
+<math role="math" aria-label="R / I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">R / I</annotation></semantics></math>
+is a domain then it must be a field.<br />
+(b) Does the assertion of (a) remain true if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is only assumed to be a unique factorization domain? Prove or give a
+counterexample.<br />
+47. (Aug
+<math role="math" aria-label="09 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>09</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">09 \# 4</annotation></semantics></math>
+) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field and
+<math role="math" aria-label="R=F[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=F[x, y]</annotation></semantics></math>
+the ring of polynomials in two (commuting) variables
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and
+<math role="math" aria-label="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>.
+Let
+<math role="math" aria-label="I=x R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>x</mi><mi>R</mi></mrow><annotation encoding="application/x-tex">I=x R</annotation></semantics></math>
+be the principal ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+generated by
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and
+<math role="math" aria-label="S=F+I= \{f+i: f \in F, i \in I\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>F</mi><mo>+</mo><mi>I</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>f</mi><mo>+</mo><mi>i</mi><mo>:</mo><mi>f</mi><mo>&isin;</mo><mi>F</mi><mo>,</mo><mi>i</mi><mo>&isin;</mo><mi>I</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S=F+I= \{f+i: f \in F, i \in I\}</annotation></semantics></math>.
+Observe that S is a subring of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is an ideal of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+(you need to justify these facts).<br />
+(a) Prove that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is not finitely generated as an ideal of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.</p>
+<p>Hint: Assume that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is finitely generated as an ideal of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+and reach a contradiction by showing that there must exist a natural
+number
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+such that any polynomial
+<math role="math" aria-label="p(x, y) \in I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">p(x, y) \in I</annotation></semantics></math>
+contains no monomials of the form
+<math role="math" aria-label="x y^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><msup><mi>y</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">x y^{n}</annotation></semantics></math>,
+with
+<math role="math" aria-label="n&gt;m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n&gt;m</annotation></semantics></math>.<br />
+(b) Prove that
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is not finitely generated as a ring.</p>
+<p>Hint: It is possible to answer (b) using (a) without doing any
+computations.<br />
+48. (Aug
+<math role="math" aria-label="10 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">10 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+denote the real numbers. The purpose of this problem is to show that the
+ring
+<math role="math" aria-label="A=\mathbb{R}[x, y] /\left(x^{2}+y^{2}-1\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A=\mathbb{R}[x, y] /\left(x^{2}+y^{2}-1\right)</annotation></semantics></math>
+is not a UFD. For an element
+<math role="math" aria-label="f \in \mathbb{R}[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f \in \mathbb{R}[x, y]</annotation></semantics></math>
+we denote its image in
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+by
+<math role="math" aria-label="[f]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>f</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[f]</annotation></semantics></math>.<br />
+(a) Show that every element of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+can be uniquely expressed in the form
+<math role="math" aria-label="[f(x)+g(x) y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[f(x)+g(x) y]</annotation></semantics></math>
+where
+<math role="math" aria-label="f(x), g(x) \in \mathbb{R}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x), g(x) \in \mathbb{R}[x]</annotation></semantics></math>.<br />
+(b) Show that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+has an automorphism
+<math role="math" aria-label="\varphi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&phi;</mi><annotation encoding="application/x-tex">\varphi</annotation></semantics></math>
+of order 2 such that
+<math role="math" aria-label="\varphi([f(x)])=[f(x)]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">[</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">[</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\varphi([f(x)])=[f(x)]</annotation></semantics></math>
+for each
+<math role="math" aria-label="f(x) \in \mathbb{R}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x) \in \mathbb{R}[x]</annotation></semantics></math>
+and
+<math role="math" aria-label="\varphi([y])=-[y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">[</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mo stretchy="false" form="prefix">[</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\varphi([y])=-[y]</annotation></semantics></math>.<br />
+(c) Use (a) and (b) to construct a function
+<math role="math" aria-label="N: A \rightarrow \mathbb{R}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>:</mo><mi>A</mi><mo>&rarr;</mo><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">N: A \rightarrow \mathbb{R}[x]</annotation></semantics></math>
+such that
+<math role="math" aria-label="N(u v)=N(u) N(v)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">N(u v)=N(u) N(v)</annotation></semantics></math>
+for all
+<math role="math" aria-label="u, v \in A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>v</mi><mo>&isin;</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">u, v \in A</annotation></semantics></math>.<br />
+(d) Use the function
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+from (c) to show that
+<math role="math" aria-label="[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[x]</annotation></semantics></math>
+is an irreducible element of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and that the only invertible elements of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+are (images of) nonzero constant polynomials.<br />
+Hint: It is essential that you are working over
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>,
+not over
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>.<br />
+(e) Now show that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is not a UFD.<br />
+49. (Aug 10 #4) Recall that a ring
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is called graded if
+<math role="math" aria-label="S=\oplus_{n=0}^{\infty} S_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><msubsup><mo>&oplus;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi>&infin;</mi></msubsup><msub><mi>S</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">S=\oplus_{n=0}^{\infty} S_{n}</annotation></semantics></math>
+where each
+<math role="math" aria-label="S_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math>
+is an additive subgroup and
+<math role="math" aria-label="S_{n} \cdot S_{m} \subseteq S_{n+m}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>&sdot;</mo><msub><mi>S</mi><mi>m</mi></msub><mo>&sube;</mo><msub><mi>S</mi><mrow><mi>n</mi><mo>+</mo><mi>m</mi></mrow></msub></mrow><annotation encoding="application/x-tex">S_{n} \cdot S_{m} \subseteq S_{n+m}</annotation></semantics></math>
+for all
+<math role="math" aria-label="n, m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>,</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">n, m</annotation></semantics></math>.
+An element
+<math role="math" aria-label="s \in S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&isin;</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">s \in S</annotation></semantics></math>
+is called homogeneous if
+<math role="math" aria-label="s \in S_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&isin;</mo><msub><mi>S</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">s \in S_{n}</annotation></semantics></math>
+for some
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+An ideal
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is called a graded ideal if
+<math role="math" aria-label="I=\oplus_{n=0}^{\infty}\left(I \cap S_{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><msubsup><mo>&oplus;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi>&infin;</mi></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><mi>I</mi><mo>&cap;</mo><msub><mi>S</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">I=\oplus_{n=0}^{\infty}\left(I \cap S_{n}\right)</annotation></semantics></math>.<br />
+(a) Let
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+be a graded ring and
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+and ideal of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is a graded ideal if and only if
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is generated (as an ideal) by a set of homogeneous elements.<br />
+(b) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 and
+<math role="math" aria-label="S=R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">S=R[x]</annotation></semantics></math>.
+Then
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is a naturally graded ring where
+<math role="math" aria-label="S_{n}=\left\{r x^{n}: r \in R\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mi>n</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>r</mi><msup><mi>x</mi><mi>n</mi></msup><mo>:</mo><mi>r</mi><mo>&isin;</mo><mi>R</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">S_{n}=\left\{r x^{n}: r \in R\right\}</annotation></semantics></math>.
+Assume that there exists
+<math role="math" aria-label="k \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">k \in \mathbb{N}</annotation></semantics></math>
+such that every ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+can be generated by at most
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+elements.<br />
+Let
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+be a graded ideal of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+can be written as
+<math role="math" aria-label="I=J \oplus M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>J</mi><mo>&oplus;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">I=J \oplus M</annotation></semantics></math>
+where
+<math role="math" aria-label="J" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+is an ideal of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+generated by at most
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+elements and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is a finitely generated
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module.<br />
+Hint: Adapt the proof of Hilbert’s basis theorem.<br />
+50. (Aug 11 # 4a) Find all the irreducible polynomials of degree 4 over
+the finite field
+<math role="math" aria-label="\mathbb{F}_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathbb{F}_{2}</annotation></semantics></math>.<br />
+51. (Jan
+<math role="math" aria-label="12 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">12 \# 7</annotation></semantics></math>
+) If
+<math role="math" aria-label="q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is a prime power, denote by
+<math role="math" aria-label="\mathbb{F}_{q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>q</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{q}</annotation></semantics></math>
+a finite field of order
+<math role="math" aria-label="q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>.<br />
+(a) Find a monic irreducible polynomial of degree 3 over
+<math role="math" aria-label="\mathbb{F}_{5}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mn>5</mn></msub><annotation encoding="application/x-tex">\mathbb{F}_{5}</annotation></semantics></math>
+and use it to construct a field of order 125 . Justify your
+answer.<br />
+(b) Find all
+<math role="math" aria-label="q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+for which the polynomial
+<math role="math" aria-label="p(x)=x^{2}+x+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p(x)=x^{2}+x+1</annotation></semantics></math>
+is irreducible in
+<math role="math" aria-label="\mathbb{F}_{q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Fopf;</mi><mi>q</mi></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{F}_{q}[x]</annotation></semantics></math>.
+Hint: What can you say about roots of
+<math role="math" aria-label="p(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p(x)</annotation></semantics></math>,
+and what do you know about the multiplicative group
+<math role="math" aria-label="\mathbb{F}_{q}^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>&Fopf;</mi><mi>q</mi><mo>&times;</mo></msubsup><annotation encoding="application/x-tex">\mathbb{F}_{q}^{\times}</annotation></semantics></math>?<br />
+52. (Aug
+<math role="math" aria-label="12 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">12 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+be a field and
+<math role="math" aria-label="R=k[x, y] /\left(x^{5}-y^{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>k</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><msup><mi>y</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">R=k[x, y] /\left(x^{5}-y^{2}\right)</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is isomorphic to the subring
+<math role="math" aria-label="k\left[t^{2}, t^{5}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mrow><mo stretchy="true" form="prefix">[</mo><msup><mi>t</mi><mn>2</mn></msup><mo>,</mo><msup><mi>t</mi><mn>5</mn></msup><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">k\left[t^{2}, t^{5}\right]</annotation></semantics></math>
+of
+<math role="math" aria-label="k[t]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false" form="prefix">[</mo><mi>t</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">k[t]</annotation></semantics></math>
+(the polynomials in one variable over
+<math role="math" aria-label="k)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">k)</annotation></semantics></math>.<br />
+(b) Prove that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is not isomorphic to
+<math role="math" aria-label="k[t]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo stretchy="false" form="prefix">[</mo><mi>t</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">k[t]</annotation></semantics></math>
+(as a ring).<br />
+53. (Jan
+<math role="math" aria-label="13 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">13 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field,
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+a positive integer, and
+<math role="math" aria-label="f_{1}, f_{2}, \ldots \in F\left[x_{1}, \ldots, x_{d}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>1</mn></msub><mo>,</mo><msub><mi>f</mi><mn>2</mn></msub><mo>,</mo><mi>…</mi><mo>&isin;</mo><mi>F</mi><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mi>d</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">f_{1}, f_{2}, \ldots \in F\left[x_{1}, \ldots, x_{d}\right]</annotation></semantics></math>
+an infinite sequence of polynomials in
+<math role="math" aria-label="F\left[x_{1}, \ldots, x_{d}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mi>d</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">F\left[x_{1}, \ldots, x_{d}\right]</annotation></semantics></math>.
+Given a positive integer
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+let
+<math role="math" aria-label="S_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math>
+be the set of all
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>-tuples
+<math role="math" aria-label="\left(a_{1}, \ldots, a_{d}\right) \in F^{d}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>d</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&isin;</mo><msup><mi>F</mi><mi>d</mi></msup></mrow><annotation encoding="application/x-tex">\left(a_{1}, \ldots, a_{d}\right) \in F^{d}</annotation></semantics></math>
+satisfying the following system of equations:</p>
+<p><math role="math" aria-label="f_{i}\left(a_{1}, \ldots, a_{d}\right)=0 \text { for each } 1 \leq i \leq n-1 \text { and } f_{n}\left(a_{1}, \ldots, a_{d}\right)=1" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>i</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>d</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for each </mtext><mspace width="0.333em"></mspace></mrow><mn>1</mn><mo>&le;</mo><mi>i</mi><mo>&le;</mo><mi>n</mi><mo>−</mo><mn>1</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> and </mtext><mspace width="0.333em"></mspace></mrow><msub><mi>f</mi><mi>n</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>d</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f_{i}\left(a_{1}, \ldots, a_{d}\right)=0 \text { for each } 1 \leq i \leq n-1 \text { and } f_{n}\left(a_{1}, \ldots, a_{d}\right)=1</annotation></semantics></math></p>
+<p>Prove that there exists an integer
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+such that the set
+<math role="math" aria-label="S_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math>
+is empty for all
+<math role="math" aria-label="n \geq N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">n \geq N</annotation></semantics></math>.
+Hint: Noetherian rings.<br />
+54. (Aug
+<math role="math" aria-label="15 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">15 \# 2</annotation></semantics></math>
+) Let
+<math role="math" aria-label="r_{1}, r_{2}, r_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub><mo>,</mo><msub><mi>r</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">r_{1}, r_{2}, r_{3}</annotation></semantics></math>
+be the roots of the cubic polynomial
+<math role="math" aria-label="X^{3}+10 X^{2}-5 X+4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>X</mi><mn>3</mn></msup><mo>+</mo><mn>10</mn><msup><mi>X</mi><mn>2</mn></msup><mo>−</mo><mn>5</mn><mi>X</mi><mo>+</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">X^{3}+10 X^{2}-5 X+4</annotation></semantics></math>.
+Find the cubic polynomial with rational coefficients whose roots are
+<math role="math" aria-label="r_{1}^{2}, r_{2}^{2}, r_{3}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>r</mi><mn>1</mn><mn>2</mn></msubsup><mo>,</mo><msubsup><mi>r</mi><mn>2</mn><mn>2</mn></msubsup><mo>,</mo><msubsup><mi>r</mi><mn>3</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">r_{1}^{2}, r_{2}^{2}, r_{3}^{2}</annotation></semantics></math>.<br />
+55. (Jan
+<math role="math" aria-label="16 \# 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mi>#</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">16 \# 1</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a field (possibly finite). Prove that the polynomial ring
+<math role="math" aria-label="K[X]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>X</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K[X]</annotation></semantics></math>
+has infinitely many maximal ideals.<br />
+56. (Aug
+<math role="math" aria-label="17 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>17</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">17 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R=\mathbb{Z}[x] /\left(x^{3}+x^{2}+1\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[x] /\left(x^{3}+x^{2}+1\right)</annotation></semantics></math>
+be the quotient of the polynomial ring
+<math role="math" aria-label="\mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[x]</annotation></semantics></math>
+modulo the principal ideal
+<math role="math" aria-label="\left(x^{3}+x^{2}+1\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(x^{3}+x^{2}+1\right)</annotation></semantics></math>.<br />
+(a) Is
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+an integral domain?<br />
+(b) Which of the principal ideals (2), (3), (5) of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+are prime ideals? And which of them are maximal?<br />
+57. (Jan
+<math role="math" aria-label="18 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>18</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">18 \# 2</annotation></semantics></math>
+) Consider the ring
+<math role="math" aria-label="R=\mathbb{Z}[\sqrt{-11}]=\{m+n \sqrt{-11} \mid m, n \in \mathbb{Z}\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mrow><mi>−</mi><mn>11</mn></mrow></msqrt><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>m</mi><mo>+</mo><mi>n</mi><msqrt><mrow><mi>−</mi><mn>11</mn></mrow></msqrt><mo>∣</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><mi>&Zopf;</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[\sqrt{-11}]=\{m+n \sqrt{-11} \mid m, n \in \mathbb{Z}\}</annotation></semantics></math>.<br />
+(a) Is
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+a UFD? Give arguments for your answer.<br />
+(b) Exhibit an ideal
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+which is not principal. Show that your
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is not principal.<br />
+58. (Jan 18 #3) Decide in each of the following three cases whether the
+given polynomial is irreducible. Include arguments.<br />
+(a)
+<math role="math" aria-label="x^{2}-2 i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn><mi>i</mi></mrow><annotation encoding="application/x-tex">x^{2}-2 i</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{Z}[i][x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[i][x]</annotation></semantics></math>;<br />
+(b)
+<math role="math" aria-label="x^{3}-49 x^{2}+(3+\sqrt{2}) x+7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>49</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo>+</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false" form="postfix">)</mo><mi>x</mi><mo>+</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">x^{3}-49 x^{2}+(3+\sqrt{2}) x+7</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{Z}[\sqrt{2}][x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[\sqrt{2}][x]</annotation></semantics></math>;<br />
+(c)
+<math role="math" aria-label="x^{2}+x y+y^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mi>y</mi><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">x^{2}+x y+y^{2}</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{C}[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}[x, y]</annotation></semantics></math>.<br />
+59. (Jan
+<math role="math" aria-label="19 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>19</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">19 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R=\mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[x]</annotation></semantics></math>.
+Find the number of maximal ideals of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+which contain
+<math role="math" aria-label="x^{2}+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{2}+1</annotation></semantics></math>
+and 15, and find explicit generators for each such ideal.<br />
+Hint: Reduce to a question about Gaussian integers.<br />
+60. (Jan
+<math role="math" aria-label="21 \# 8" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>21</mn><mi>#</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">21 \# 8</annotation></semantics></math>
+) Let
+<math role="math" aria-label="p \neq 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&ne;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">p \neq 3</annotation></semantics></math>
+be a prime and
+<math role="math" aria-label="R=\mathbb{F}_{p}[x] /\left(x^{3}-1\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><msub><mi>&Fopf;</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">R=\mathbb{F}_{p}[x] /\left(x^{3}-1\right)</annotation></semantics></math>.
+Describe the multiplicative group
+<math role="math" aria-label="R^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mo>&times;</mo></msup><annotation encoding="application/x-tex">R^{\times}</annotation></semantics></math>as
+a direct product of cyclic groups.<br />
+Note: Your answer can (and should) involve cases, but should be
+expressed explicitly in terms of
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.<br />
+61. (Aug 21 #4) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a (commutative) UFD (with 1 ), let
+<math role="math" aria-label="f \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">f \in R</annotation></semantics></math>,
+and assume that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is non-unit and nonzero. Let
+<math role="math" aria-label="R_{f}=R\left[\frac{1}{f}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>f</mi></msub><mo>=</mo><mi>R</mi><mrow><mo stretchy="true" form="prefix">[</mo><mfrac><mn>1</mn><mi>f</mi></mfrac><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">R_{f}=R\left[\frac{1}{f}\right]</annotation></semantics></math>
+(you can think of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+as the ring of fractions of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+with the set of denominators
+<math role="math" aria-label="D=\left\{1, f, f^{2}, \ldots\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mn>1</mn><mo>,</mo><mi>f</mi><mo>,</mo><msup><mi>f</mi><mn>2</mn></msup><mo>,</mo><mi>…</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">D=\left\{1, f, f^{2}, \ldots\right\}</annotation></semantics></math>
+or as the subring of the field of fractions
+<math role="math" aria-label="\operatorname{Frac}(R)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Frac</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Frac}(R)</annotation></semantics></math>
+generated by
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and
+<math role="math" aria-label="\frac{1}{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mn>1</mn><mi>f</mi></mfrac><annotation encoding="application/x-tex">\frac{1}{f}</annotation></semantics></math>
+). Prove that</p>
+<p><math role="math" aria-label="R_{f}^{\times} \cong R^{\times} \times \mathbb{Z}^{m} \text { for some } m \in \mathbb{N}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>R</mi><mi>f</mi><mo>&times;</mo></msubsup><mo>≅</mo><msup><mi>R</mi><mo>&times;</mo></msup><mo>&times;</mo><msup><mi>&Zopf;</mi><mi>m</mi></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for some </mtext><mspace width="0.333em"></mspace></mrow><mi>m</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">R_{f}^{\times} \cong R^{\times} \times \mathbb{Z}^{m} \text { for some } m \in \mathbb{N}</annotation></semantics></math></p>
+<p>(Here
+<math role="math" aria-label="S^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mo>&times;</mo></msup><annotation encoding="application/x-tex">S^{\times}</annotation></semantics></math>is
+the multiplicative group of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+). Give a detailed argument.<br />
+62. (Jan
+<math role="math" aria-label="22 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>22</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">22 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="f(x, y), g(x, y) \in \mathbb{C}[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Copf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x, y), g(x, y) \in \mathbb{C}[x, y]</annotation></semantics></math>
+be two polynomials that do not have a (non-constant) common
+factor.<br /><br /><span class="problem-number">(1)</span> Show that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+are relatively prime as elements of
+<math role="math" aria-label="\mathbb{C}(x)[y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">[</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(x)[y]</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{C}(y)[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(y)[x]</annotation></semantics></math>
+(where
+<math role="math" aria-label="\mathbb{C}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(x)</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{C}(y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(y)</annotation></semantics></math>
+are the fields of rational functions, i.e. the fraction fields of
+<math role="math" aria-label="\mathbb{C}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}[x]</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{C}[y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">[</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}[y]</annotation></semantics></math>,
+respectively). Give a detailed argument.<br /><br /><span class="problem-number">(2)</span> Show that the system of polynomial equations
+<math role="math" aria-label="f(x, y)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(x, y)=0</annotation></semantics></math>
+and
+<math role="math" aria-label="g(x, y)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g(x, y)=0</annotation></semantics></math>
+has finitely many solutions in
+<math role="math" aria-label="\mathbb{C}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Copf;</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{C}^{2}</annotation></semantics></math>.
+Hint: Use (1) and the fact that
+<math role="math" aria-label="\mathbb{C}(x)[y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">[</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(x)[y]</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{C}(y)[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(y)[x]</annotation></semantics></math>
+are PIDs (make sure to explain why the latter is true).</p>
+
+</main>
+</body>
+</html>

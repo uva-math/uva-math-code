@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>5.1 General Field Theory - Algebra General Exam Review - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html">Algebra Review Guide</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">5.1 General Field Theory</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="general-field-theory">5.1 General Field
+Theory</h2>
+<p>Know basic definitions: Characteristic, prime field; field extension
+<math role="math" aria-label="E / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">E / F</annotation></semantics></math>
+(simple, algebraic, transcendental, finite, normal, separable,
+inseparable); degree
+<math role="math" aria-label="[E: F] ; F(S), F[S]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>;</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>S</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[E: F] ; F(S), F[S]</annotation></semantics></math>
+for subsets
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+of
+<math role="math" aria-label="E / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">E / F</annotation></semantics></math>.
+Minimum polynomial of an algebraic element
+<math role="math" aria-label="a \in E / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>E</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">a \in E / F</annotation></semantics></math>;
+degree of
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.
+Splitting field of a polynomial over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.</p>
+<p>Know: Transitivity of degree
+<math role="math" aria-label="[K: F]=[K: E][E: F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>E</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="prefix">[</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[K: F]=[K: E][E: F]</annotation></semantics></math>
+if
+<math role="math" aria-label="K / E / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>E</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K / E / F</annotation></semantics></math>;<br />
+<math role="math" aria-label="[K(\alpha): K]=\operatorname{deg}\left(\mu_{\alpha \mid K}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>K</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&mu;</mi><mrow><mi>&alpha;</mi><mo>∣</mo><mi>K</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">[K(\alpha): K]=\operatorname{deg}\left(\mu_{\alpha \mid K}\right)</annotation></semantics></math>
+if
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is algebraic over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+with minimal polynomial
+<math role="math" aria-label="\mu_{\alpha \mid K}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&mu;</mi><mrow><mi>&alpha;</mi><mo>∣</mo><mi>K</mi></mrow></msub><annotation encoding="application/x-tex">\mu_{\alpha \mid K}</annotation></semantics></math>.<br />
+Know how to construct field extensions of F : simple algebraic extension
+<math role="math" aria-label="E=F[x] /(p(x))" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E=F[x] /(p(x))</annotation></semantics></math>
+for an irreducible polynomial
+<math role="math" aria-label="p(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p(x)</annotation></semantics></math>
+in
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>
+: this is a simple algebraic extension of degree
+<math role="math" aria-label="[E: F]= \operatorname{deg}(p)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[E: F]= \operatorname{deg}(p)</annotation></semantics></math>,
+generated by the image of
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+with minimal polynomial
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Simple transcendental extension:
+<math role="math" aria-label="E=F(x)=" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo></mrow><annotation encoding="application/x-tex">E=F(x)=</annotation></semantics></math>
+field of rational functions in
+<math role="math" aria-label="x=" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">x=</annotation></semantics></math>
+field of fractions of
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>.</p>
+<p>Know about splitting fields: Existence and uniqueness of splitting
+fields; connection with normal extensions: a finite field extension
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+is normal iff
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+is the splitting field of some (nonconstant) polynomial
+<math role="math" aria-label="f \in K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f \in K[x]</annotation></semantics></math>;
+extension lemma for field isomorphisms.</p>
+<p>Know about algebraically closed fields: any field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+has an algebraic extension
+<math role="math" aria-label="\bar{K}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>K</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar{K}</annotation></semantics></math>
+which is algebraically closed, called the algebraic closure of
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>;
+we have in particular
+<math role="math" aria-label="\overline{\mathbb{R}}=\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>&Ropf;</mi><mo accent="true">¯</mo></mover><mo>=</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">\overline{\mathbb{R}}=\mathbb{C}</annotation></semantics></math>
+(FUNDAMENTAL THEOREM OF ALGEBRA).</p>
+<p>Know about separable polynomials and field extensions: definition of
+separability; the basic criterion:
+<math role="math" aria-label="f \in K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f \in K[x]</annotation></semantics></math>
+is separable iff
+<math role="math" aria-label="\operatorname{gcd}(f, D(f))=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">gcd</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>D</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\operatorname{gcd}(f, D(f))=1</annotation></semantics></math>;
+consequence: fields of characteristic 0 and finite fields are perfect,
+i.e. all their algebraic extensions are automatically separable.</p>
+<p>Primitive Element Theorem: If
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+is finite and separable, then
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+is a simple extension of
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+i.e. there exists
+<math role="math" aria-label="\alpha \in L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&isin;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">\alpha \in L</annotation></semantics></math>
+such that
+<math role="math" aria-label="L=K(\alpha)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L=K(\alpha)</annotation></semantics></math>.
+(One can also show that
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+is a simple extension of
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+iff there are only finitely many intermediate fields between
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>.)</p>
+<p>KNOW HOW TO: construct all finite fields
+<math role="math" aria-label="\mathbb{F}_{q}\left(q=p^{e}\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Fopf;</mi><mi>q</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>q</mi><mo>=</mo><msup><mi>p</mi><mi>e</mi></msup></mrow></mrow><annotation encoding="application/x-tex">\mathbb{F}_{q}\left(q=p^{e}\right.</annotation></semantics></math>,
+split
+<math role="math" aria-label="x^{p^{e}}-x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><msup><mi>p</mi><mi>e</mi></msup></msup><mo>−</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x^{p^{e}}-x</annotation></semantics></math>
+over
+<math role="math" aria-label="\left.\mathbb{F}_{p}=\mathbb{Z}_{p}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Fopf;</mi><mi>p</mi></msub><mo>=</mo><msub><mi>&Zopf;</mi><mi>p</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left.\mathbb{F}_{p}=\mathbb{Z}_{p}\right)</annotation></semantics></math>.<br />
+Avoid the following mistakes: If
+<math role="math" aria-label="M / L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>/</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">M / L</annotation></semantics></math>
+and
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+are normal field extensions,
+<math role="math" aria-label="M / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">M / K</annotation></semantics></math>
+need not be normal; if
+<math role="math" aria-label="\operatorname{ch} \operatorname{ar}(K)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">ch</mi><mo>&#8289;</mo></mrow><mrow><mi mathvariant="normal">ar</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\operatorname{ch} \operatorname{ar}(K)=0</annotation></semantics></math>,
+not all polynomials in
+<math role="math" aria-label="K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K[x]</annotation></semantics></math>
+are separable (but the irreducible polynomials in
+<math role="math" aria-label="K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K[x]</annotation></semantics></math>
+are); if
+<math role="math" aria-label="f \in K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f \in K[x]</annotation></semantics></math>
+for some field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+satisfies
+<math role="math" aria-label="D(f) \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">D(f) \neq 0</annotation></semantics></math>,
+this does not imply that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is separable (it does if
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is irreducible); a polynomial in
+<math role="math" aria-label="K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K[x]</annotation></semantics></math>
+which doesn’t have any roots in
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+need not be irreducible (it is if
+<math role="math" aria-label="\operatorname{deg}(f) \leq 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>&le;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">\operatorname{deg}(f) \leq 3</annotation></semantics></math>
+).</p>
+<h2 class="unnumbered" id="related-problems-10">Related Problems</h2>
+<p><math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is an arbitrary field.</p>
+<ol>
+<li><p>(Apr
+<math role="math" aria-label="77 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>77</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">77 \# 2</annotation></semantics></math>
+) If
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is finite SHOW<br />
+(a)
+<math role="math" aria-label="|F|=q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>F</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">|F|=q</annotation></semantics></math>
+is a power of a prime
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,<br />
+(b)
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+splits
+<math role="math" aria-label="x^{q}-x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>q</mi></msup><mo>−</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x^{q}-x</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Z}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Zopf;</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\mathbb{Z}_{p}</annotation></semantics></math>,<br />
+(c)
+<math role="math" aria-label="F^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>F</mi><mo>*</mo></msup><annotation encoding="application/x-tex">F^{*}</annotation></semantics></math>
+is cyclic of order
+<math role="math" aria-label="q-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">q-1</annotation></semantics></math>.</p></li>
+<li><p>(Apr
+<math role="math" aria-label="77 \# 4 \mathrm{~b}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>77</mn><mi>#</mi><mn>4</mn><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">b</mi></mrow></mrow><annotation encoding="application/x-tex">77 \# 4 \mathrm{~b}</annotation></semantics></math>
+) If
+<math role="math" aria-label="p(x) \in F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">p(x) \in F[x]</annotation></semantics></math>
+is irreducible, SHOW there is a finite extension
+<math role="math" aria-label="E / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">E / F</annotation></semantics></math>
+containing a root of
+<math role="math" aria-label="p(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p(x)</annotation></semantics></math>.</p></li>
+<li><p>(Nov 77 #3) Give an example of an inseparable extension
+<math role="math" aria-label="E / \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mi>/</mi><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">E / \mathbb{Q}</annotation></semantics></math>
+of degree 7 .</p></li>
+</ol>
+<p>If you don’t succeed, give an arbitrary example of an algebraic but
+inseparable field extension.<br />
+4. (Nov 77 #4) Define finite extension and algebraic extension; does
+either imply the other?<br />
+5. (May 78 #10) Give a polynomial whose splitting field is a field of 9
+elements; repeat for 18 elements.<br />
+6. (Sep 82 #4) If
+<math role="math" aria-label="E / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">E / F</annotation></semantics></math>
+is algebraic and each
+<math role="math" aria-label="a \in E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">a \in E</annotation></semantics></math>
+belongs to a normal sub-extension
+<math role="math" aria-label="E_{a}(F \subseteq \left.E_{a} \subseteq E\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>a</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo>&sube;</mo><mrow><msub><mi>E</mi><mi>a</mi></msub><mo>&sube;</mo><mi>E</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">E_{a}(F \subseteq \left.E_{a} \subseteq E\right)</annotation></semantics></math>,
+show
+<math role="math" aria-label="E / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">E / F</annotation></semantics></math>
+is normal.<br />
+7. (Sep
+<math role="math" aria-label="83 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>83</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">83 \# 3</annotation></semantics></math>
+) (a) Show any finite subgroup of
+<math role="math" aria-label="F^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>F</mi><mo>*</mo></msup><annotation encoding="application/x-tex">F^{*}</annotation></semantics></math>
+(the multiplicative group of invertible elements of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+) must be cyclic. (Done in class but you might recall the
+argument.)<br />
+(b) Give an example of a finite nonabelian group contained in
+<math role="math" aria-label="R^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mo>*</mo></msup><annotation encoding="application/x-tex">R^{*}</annotation></semantics></math>
+for a ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+8. (Feb
+<math role="math" aria-label="84 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>84</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">84 \# 6</annotation></semantics></math>
+) If
+<math role="math" aria-label="[F(a): F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[F(a): F]</annotation></semantics></math>
+is odd show
+<math role="math" aria-label="F\left(a^{2}\right)=F(a)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>a</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F\left(a^{2}\right)=F(a)</annotation></semantics></math>.<br />
+9. (Sep
+<math role="math" aria-label="84 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>84</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">84 \# 7</annotation></semantics></math>
+) Factor
+<math role="math" aria-label="x^{8}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>8</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{8}-1</annotation></semantics></math>
+into irreducibles in
+<math role="math" aria-label="\mathbb{Z}_{p}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{p}[x]</annotation></semantics></math>
+for all primes
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+(Clarification: You should describe the prime factorization of
+<math role="math" aria-label="x^{8}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>8</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{8}-1</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{Z}_{p}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{p}[x]</annotation></semantics></math>
+for any given prime number
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+(distinguish cases!) but you needn’t compute explicitly, as elements of
+<math role="math" aria-label="\mathbb{Z}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Zopf;</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\mathbb{Z}_{p}</annotation></semantics></math>,
+those coefficients of the (monic) irreducible factors which are
+<math role="math" aria-label="\neq 0, \pm 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&ne;</mo><mn>0</mn><mo>,</mo><mi>&plusmn;</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">\neq 0, \pm 1</annotation></semantics></math>.)<br />
+10. (1985 #3b) Show the set of all
+<math role="math" aria-label="2 \times 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&times;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2 \times 2</annotation></semantics></math>
+matrices
+<math role="math" aria-label="\left(\begin{array}{rr}a &amp; b \\ \lambda b &amp; a\end{array}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>a</mi></mtd><mtd columnalign="right" style="text-align: right"><mi>b</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mi>&lambda;</mi><mi>b</mi></mtd><mtd columnalign="right" style="text-align: right"><mi>a</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\begin{array}{rr}a &amp; b \\ \lambda b &amp; a\end{array}\right)</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{F}_{7}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mn>7</mn></msub><annotation encoding="application/x-tex">\mathbb{F}_{7}</annotation></semantics></math>
+form (under the usual matrix addition and multiplication) a ring of size
+49 . For which
+<math role="math" aria-label="\lambda \in \mathbb{F}_{7}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>&isin;</mo><msub><mi>&Fopf;</mi><mn>7</mn></msub></mrow><annotation encoding="application/x-tex">\lambda \in \mathbb{F}_{7}</annotation></semantics></math>
+is this a field?<br />
+11. (Sep
+<math role="math" aria-label="86 \# 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>86</mn><mi>#</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">86 \# 1</annotation></semantics></math>
+) If
+<math role="math" aria-label="F=\mathbb{F}_{7}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><msub><mi>&Fopf;</mi><mn>7</mn></msub></mrow><annotation encoding="application/x-tex">F=\mathbb{F}_{7}</annotation></semantics></math>,
+show
+<math role="math" aria-label="p(x)=x^{2}+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p(x)=x^{2}+1</annotation></semantics></math>
+and
+<math role="math" aria-label="p(x)=x^{3}+x+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p(x)=x^{3}+x+1</annotation></semantics></math>
+are irreducible in
+<math role="math" aria-label="F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F[x]</annotation></semantics></math>,
+and show
+<math role="math" aria-label="F[x] /(p(x))" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F[x] /(p(x))</annotation></semantics></math>
+are fields (give their cardinalities).<br />
+12. (Jan
+<math role="math" aria-label="87 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>87</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">87 \# 4</annotation></semantics></math>
+) If
+<math role="math" aria-label="F \subseteq K \subseteq E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&sube;</mo><mi>K</mi><mo>&sube;</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">F \subseteq K \subseteq E</annotation></semantics></math>
+with
+<math role="math" aria-label="K / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K / F</annotation></semantics></math>
+finite, show that if
+<math role="math" aria-label="K / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K / F</annotation></semantics></math>
+is separable (resp. normal, Galois), then also
+<math role="math" aria-label="K(a) / F(a)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K(a) / F(a)</annotation></semantics></math>
+is separable (resp. normal, Galois) for any
+<math role="math" aria-label="a \in E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">a \in E</annotation></semantics></math>.<br />
+13. (May
+<math role="math" aria-label="89 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>89</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">89 \# 3</annotation></semantics></math>
+) If
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>
+are algebraic over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+of degrees
+<math role="math" aria-label="m, n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m, n</annotation></semantics></math>,
+show
+<math role="math" aria-label="[F(a, b): F] \leq m n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>&le;</mo><mi>m</mi><mi>n</mi></mrow><annotation encoding="application/x-tex">[F(a, b): F] \leq m n</annotation></semantics></math>,
+with equality if
+<math role="math" aria-label="m, n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m, n</annotation></semantics></math>
+are relatively prime. Give an example where the inequality is
+strict.<br />
+14. (Aug 89 #3) Show the set of all
+<math role="math" aria-label="2 \times 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&times;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2 \times 2</annotation></semantics></math>
+matrices
+<math role="math" aria-label="\left(\begin{array}{rr}a &amp; b \\ 2 b &amp; a\end{array}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="right" style="text-align: right"><mi>a</mi></mtd><mtd columnalign="right" style="text-align: right"><mi>b</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right"><mn>2</mn><mi>b</mi></mtd><mtd columnalign="right" style="text-align: right"><mi>a</mi></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left(\begin{array}{rr}a &amp; b \\ 2 b &amp; a\end{array}\right)</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{F}_{5}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mn>5</mn></msub><annotation encoding="application/x-tex">\mathbb{F}_{5}</annotation></semantics></math>
+form (under the usual matrix addition and multiplication) a field of
+size 25 .<br />
+15. (Aug
+<math role="math" aria-label="89 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>89</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">89 \# 5</annotation></semantics></math>
+) If
+<math role="math" aria-label="[E: F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[E: F]</annotation></semantics></math>
+is finite, show any ring endomorphism of
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+which fixes
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is an automorphism of
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.<br />
+16. (Aug
+<math role="math" aria-label="94 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>94</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">94 \# 6</annotation></semantics></math>
+) Show that
+<math role="math" aria-label="F=\mathbb{F}_{2}[x] /\left(x^{4}+x+1\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><msub><mi>&Fopf;</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F=\mathbb{F}_{2}[x] /\left(x^{4}+x+1\right)</annotation></semantics></math>
+is a field of characteristic 2 containing a primitive 15 -th root of
+unity. Exhibit such a root.<br />
+17. (Jan
+<math role="math" aria-label="95 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>95</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">95 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+be finite extensions of a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+both contained in a field
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>.
+Let
+<math role="math" aria-label="K L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">K L</annotation></semantics></math>
+be the set of finite sums of products of members of
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>.
+Explain why
+<math role="math" aria-label="K L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">K L</annotation></semantics></math>
+is a subring of
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+that is finite-dimensional over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.
+From that, show that
+<math role="math" aria-label="K L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">K L</annotation></semantics></math>
+is a field and, in fact, the smallest subfield of
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+containing
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>.<br />
+18. (Aug
+<math role="math" aria-label="97 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>97</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">97 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K(x)</annotation></semantics></math>
+be the field of rational functions over the field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.
+Prove Lüroth’s Theorem: for any nonconstant function
+<math role="math" aria-label="f \in K(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f \in K(x)</annotation></semantics></math>
+the degree
+<math role="math" aria-label="[K(x): K(f)]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[K(x): K(f)]</annotation></semantics></math>
+is finite. Can you describe
+<math role="math" aria-label="[K(x): K(f)]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[K(x): K(f)]</annotation></semantics></math>
+in terms of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+?<br />
+19. (Jan 98 #6) The finite field
+<math role="math" aria-label="\mathbb{F}_{32}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mn>32</mn></msub><annotation encoding="application/x-tex">\mathbb{F}_{32}</annotation></semantics></math>
+of 32 elements can be constructed as the extension
+<math role="math" aria-label="\mathbb{F}_{2}(\beta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Fopf;</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{F}_{2}(\beta)</annotation></semantics></math>
+where
+<math role="math" aria-label="\beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&beta;</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+is a root of the polynomial
+<math role="math" aria-label="x^{5}+x^{2}+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>5</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{5}+x^{2}+1</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{F}_{2}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Fopf;</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{F}_{2}[x]</annotation></semantics></math>.
+Find the minimal polynomial of
+<math role="math" aria-label="\beta^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&beta;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\beta^{3}</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{F}_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mn>2</mn></msub><annotation encoding="application/x-tex">\mathbb{F}_{2}</annotation></semantics></math>.<br />
+20. (Aug
+<math role="math" aria-label="99 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>99</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">99 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="f(x)=a_{n} x^{n}+a_{n-1} x^{n-1}+\cdots+a_{0}\left(a_{n} \neq 0\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>a</mi><mi>n</mi></msub><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>a</mi><mi>n</mi></msub><mo>&ne;</mo><mn>0</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)=a_{n} x^{n}+a_{n-1} x^{n-1}+\cdots+a_{0}\left(a_{n} \neq 0\right)</annotation></semantics></math>
+be a complex polynomial of degree
+<math role="math" aria-label="n&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n&gt;1</annotation></semantics></math>,
+and
+<math role="math" aria-label="f^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mi>′</mi></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math>
+its derivative. Let
+<math role="math" aria-label="\alpha_{1}, \ldots, \alpha_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&alpha;</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>&alpha;</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\alpha_{1}, \ldots, \alpha_{n}</annotation></semantics></math>
+be the
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+roots of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math role="math" aria-label="\alpha_{1}^{\prime}, \ldots, \alpha_{n-1}^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>&alpha;</mi><mn>1</mn><mi>′</mi></msubsup><mo>,</mo><mi>…</mi><mo>,</mo><msubsup><mi>&alpha;</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><mi>′</mi></msubsup></mrow><annotation encoding="application/x-tex">\alpha_{1}^{\prime}, \ldots, \alpha_{n-1}^{\prime}</annotation></semantics></math>
+the
+<math role="math" aria-label="n-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math>
+roots of the derivative (listing each root as many times as its
+multiplicity). Show that the average of the roots of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+equals the average of the roots of
+<math role="math" aria-label="f^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mi>′</mi></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math>.<br />
+(Hint: Use the relations between the coeffiecients of a polynomial and
+the roots of that polynomial.)<br />
+21. (Aug 99 #8) If
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is finite, show that every element
+<math role="math" aria-label="\alpha \in F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&isin;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">\alpha \in F</annotation></semantics></math>
+is the sum
+<math role="math" aria-label="\alpha=\beta_{1}^{2}+\beta_{2}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>=</mo><msubsup><mi>&beta;</mi><mn>1</mn><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>&beta;</mi><mn>2</mn><mn>2</mn></msubsup></mrow><annotation encoding="application/x-tex">\alpha=\beta_{1}^{2}+\beta_{2}^{2}</annotation></semantics></math>
+of two squares (for some
+<math role="math" aria-label="\beta_{1}, \beta_{2} \in F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&beta;</mi><mn>1</mn></msub><mo>,</mo><msub><mi>&beta;</mi><mn>2</mn></msub><mo>&isin;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">\beta_{1}, \beta_{2} \in F</annotation></semantics></math>
+).<br />
+22. (Aug
+<math role="math" aria-label="99 \# 9" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>99</mn><mi>#</mi><mn>9</mn></mrow><annotation encoding="application/x-tex">99 \# 9</annotation></semantics></math>
+) If
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is a prime number congruent to
+<math role="math" aria-label="1 \bmod 8" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mrow><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">mod</mi><mo>&#8289;</mo></mrow><mspace width="0.222em"></mspace><mn>8</mn></mrow></mrow><annotation encoding="application/x-tex">1 \bmod 8</annotation></semantics></math>,
+show that 2 is a "quadratic residue"
+<math role="math" aria-label="\bmod p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">mod</mi><mo>&#8289;</mo></mrow><mspace width="0.222em"></mspace><mi>p</mi></mrow><annotation encoding="application/x-tex">\bmod p</annotation></semantics></math>,
+i.e. there is an integer
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+such that
+<math role="math" aria-label="a^{2} \equiv 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mn>2</mn></msup><mo>&equiv;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">a^{2} \equiv 2</annotation></semantics></math>
+modulo
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+(Hint: show there is an
+<math role="math" aria-label="\varepsilon \in \mathbb{Z}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&epsilon;</mi><mo>&isin;</mo><msub><mi>&Zopf;</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\varepsilon \in \mathbb{Z}_{p}</annotation></semantics></math>
+with
+<math role="math" aria-label="\varepsilon^{4}=-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&epsilon;</mi><mn>4</mn></msup><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">\varepsilon^{4}=-1</annotation></semantics></math>,
+and consider
+<math role="math" aria-label="\alpha=\varepsilon+\varepsilon^{-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>=</mo><mi>&epsilon;</mi><mo>+</mo><msup><mi>&epsilon;</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\alpha=\varepsilon+\varepsilon^{-1}</annotation></semantics></math>.)<br />
+23. (May 03, #8) Let
+<math role="math" aria-label="K=\mathbb{Z} / p \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>&Zopf;</mi><mi>/</mi><mi>p</mi><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">K=\mathbb{Z} / p \mathbb{Z}</annotation></semantics></math>
+be the field of
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+elements (where
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is a prime). For an integer
+<math role="math" aria-label="d&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d&gt;0</annotation></semantics></math>,
+we let</p>
+<p><math role="math" aria-label="\sigma_{d}=\sum_{x \in K} x^{d}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&sigma;</mi><mi>d</mi></msub><mo>=</mo><munder><mo>&sum;</mo><mrow><mi>x</mi><mo>&isin;</mo><mi>K</mi></mrow></munder><msup><mi>x</mi><mi>d</mi></msup></mrow><annotation encoding="application/x-tex">\sigma_{d}=\sum_{x \in K} x^{d}</annotation></semantics></math></p>
+<p>Show that
+<math role="math" aria-label="\sigma_{d}=-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&sigma;</mi><mi>d</mi></msub><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">\sigma_{d}=-1</annotation></semantics></math>
+if
+<math role="math" aria-label="p-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p-1</annotation></semantics></math>
+divides
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+and
+<math role="math" aria-label="\sigma_{d}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&sigma;</mi><mi>d</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sigma_{d}=0</annotation></semantics></math>
+otherwise.<br />
+24. (Aug 05 #4) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>-subalgebra
+of
+<math role="math" aria-label="M_{n}(\mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M_{n}(\mathbb{Q})</annotation></semantics></math>.
+If
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+is a field, prove that
+<math role="math" aria-label="[K: \mathbb{Q}] \leq n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">]</mo><mo>&le;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">[K: \mathbb{Q}] \leq n</annotation></semantics></math>.<br />
+25. (Jan 06 # 9) Prove that
+<math role="math" aria-label="\sqrt{2}+\sqrt[3]{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><mn>2</mn></msqrt><mo>+</mo><mroot><mn>3</mn><mn>3</mn></mroot></mrow><annotation encoding="application/x-tex">\sqrt{2}+\sqrt[3]{3}</annotation></semantics></math>
+is irrational.<br />
+26. (Jan
+<math role="math" aria-label="08 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>08</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">08 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field.<br />
+(a) Show that if
+<math role="math" aria-label="a \in E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">a \in E</annotation></semantics></math>
+is an element of a field extension of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+with
+<math role="math" aria-label="[F(a): F]=7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>7</mn></mrow><annotation encoding="application/x-tex">[F(a): F]=7</annotation></semantics></math>,
+then
+<math role="math" aria-label="F\left(a^{3}\right)=F(a)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>a</mi><mn>3</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F\left(a^{3}\right)=F(a)</annotation></semantics></math>.<br />
+(b) Show that any subgroup of order 8 of the multiplicative group
+<math role="math" aria-label="F^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>F</mi><mo>&times;</mo></msup><annotation encoding="application/x-tex">F^{\times}</annotation></semantics></math>of
+the field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+must be cyclic. Is this also true of subgroups of order 16 ?<br />
+27. (Aug 08 #3) Prove or disprove the following statements about
+irreducibility.<br />
+(a) If
+<math role="math" aria-label="\operatorname{Gal}(E \mid \mathbb{Q})=S_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>S</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(E \mid \mathbb{Q})=S_{n}</annotation></semantics></math>
+for
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+the splitting field over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+of a polynomial
+<math role="math" aria-label="f(x) \in \mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x) \in \mathbb{Q}[x]</annotation></semantics></math>
+of degree
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+then
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+must be irreducible.<br />
+(b) If
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is algebraic over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>,
+then its minimum polynomial
+<math role="math" aria-label="\mu_{\alpha \mid \mathbb{Q}}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&mu;</mi><mrow><mi>&alpha;</mi><mo>∣</mo><mi>&Qopf;</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu_{\alpha \mid \mathbb{Q}}(x)</annotation></semantics></math>
+must be irreducible.<br />
+(c) If
+<math role="math" aria-label="A \in \mathbb{M}_{n \times n}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&isin;</mo><msub><mi>&Mopf;</mi><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A \in \mathbb{M}_{n \times n}(\mathbb{R})</annotation></semantics></math>,
+then its minimum polynomial
+<math role="math" aria-label="\mu_{A}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&mu;</mi><mi>A</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu_{A}(x)</annotation></semantics></math>
+must be irreducible.<br />
+28. (Jan 12 # 8) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field of characteristic zero, let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+be finite extensions of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+and
+<math role="math" aria-label="K L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>L</mi></mrow><annotation encoding="application/x-tex">K L</annotation></semantics></math>
+the compositum of
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="[K L: F] \leq[K: F][L: F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mi>L</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>&le;</mo><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="prefix">[</mo><mi>L</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[K L: F] \leq[K: F][L: F]</annotation></semantics></math>.<br />
+(b) Assume that
+<math role="math" aria-label="[K: F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[K: F]</annotation></semantics></math>
+and
+<math role="math" aria-label="[L: F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>L</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[L: F]</annotation></semantics></math>
+are relatively prime. Prove that
+<math role="math" aria-label="[K L: F]=[K: F][L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mi>L</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="prefix">[</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">[K L: F]=[K: F][L</annotation></semantics></math>
+:
+<math role="math" aria-label="F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">F]</annotation></semantics></math>.<br />
+(c) Give an example where
+<math role="math" aria-label="K \cap L=F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>&cap;</mo><mi>L</mi><mo>=</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">K \cap L=F</annotation></semantics></math>
+but
+<math role="math" aria-label="[K L: F] \neq[K: F][L: F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mi>L</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>&ne;</mo><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="prefix">[</mo><mi>L</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[K L: F] \neq[K: F][L: F]</annotation></semantics></math>.<br />
+(d) Assume that
+<math role="math" aria-label="K / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K / F</annotation></semantics></math>
+and
+<math role="math" aria-label="L / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">L / F</annotation></semantics></math>
+are both Galois. Prove that
+<math role="math" aria-label="\operatorname{Gal}(K L / F)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mi>L</mi><mi>/</mi><mi>F</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K L / F)</annotation></semantics></math>
+is isomorphic to a subgroup of
+<math role="math" aria-label="\operatorname{Gal}(K / F) \times \operatorname{Gal}(L / F)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mi>/</mi><mi>F</mi><mo stretchy="false" form="postfix">)</mo><mo>&times;</mo><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mi>/</mi><mi>F</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K / F) \times \operatorname{Gal}(L / F)</annotation></semantics></math>.
+(You need not prove that
+<math role="math" aria-label="K L / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>L</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K L / F</annotation></semantics></math>
+is Galois).<br />
+Note: The assertions of (a),(b) and (d) remain valid for
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+of positive characteristic, but part (a) has a shorter proof in the case
+of characteristic zero.<br />
+29. (Aug 12 #7) Let
+<math role="math" aria-label="K / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">K / F</annotation></semantics></math>
+be a field extension, let
+<math role="math" aria-label="\alpha, \beta \in K \backslash F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>,</mo><mi>&beta;</mi><mo>&isin;</mo><mi>K</mi><mo>&setminus;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">\alpha, \beta \in K \backslash F</annotation></semantics></math>
+be algebraic over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+and let
+<math role="math" aria-label="p=\operatorname{deg}_{F}(\alpha)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mi>F</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p=\operatorname{deg}_{F}(\alpha)</annotation></semantics></math>
+and
+<math role="math" aria-label="q=\operatorname{deg}_{F}(\beta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mi>F</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">q=\operatorname{deg}_{F}(\beta)</annotation></semantics></math>.
+Suppose that
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+and
+<math role="math" aria-label="q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+are distinct primes and that
+<math role="math" aria-label="p&gt;q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">p&gt;q</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="[F(\alpha, \beta): F]=p q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo>,</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mi>p</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">[F(\alpha, \beta): F]=p q</annotation></semantics></math>.<br />
+(b) Prove that
+<math role="math" aria-label="\operatorname{deg}_{F}(\alpha \beta)=p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mi>F</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\operatorname{deg}_{F}(\alpha \beta)=p</annotation></semantics></math>
+or
+<math role="math" aria-label="p q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>q</mi></mrow><annotation encoding="application/x-tex">p q</annotation></semantics></math>.<br />
+(c) Give an example showing that it MAY happen that
+<math role="math" aria-label="\operatorname{deg}_{F}(\alpha \beta)=p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mi>F</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">\operatorname{deg}_{F}(\alpha \beta)=p</annotation></semantics></math>.<br />
+30. (Jan
+<math role="math" aria-label="13 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">13 \# 4</annotation></semantics></math>
+) Let
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+be a prime,
+<math role="math" aria-label="\mathbb{F}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{p}</annotation></semantics></math>
+a finite field of order
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+and let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a fixed algebraic closure of
+<math role="math" aria-label="\mathbb{F}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{p}</annotation></semantics></math>.
+For
+<math role="math" aria-label="n \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">n \in \mathbb{N}</annotation></semantics></math>,
+denote by
+<math role="math" aria-label="\mathbb{F}_{p^{n}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><msup><mi>p</mi><mi>n</mi></msup></msub><annotation encoding="application/x-tex">\mathbb{F}_{p^{n}}</annotation></semantics></math>
+the unique subfield of order
+<math role="math" aria-label="p^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>n</mi></msup><annotation encoding="application/x-tex">p^{n}</annotation></semantics></math>
+inside
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="\mathbb{F}_{p^{n}} \cup \mathbb{F}_{p^{m}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Fopf;</mi><msup><mi>p</mi><mi>n</mi></msup></msub><mo>&cup;</mo><msub><mi>&Fopf;</mi><msup><mi>p</mi><mi>m</mi></msup></msub></mrow><annotation encoding="application/x-tex">\mathbb{F}_{p^{n}} \cup \mathbb{F}_{p^{m}}</annotation></semantics></math>
+is a subfield if and only if
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+divides
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+or
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+divides
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>.<br />
+(b) For a subset
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+of
+<math role="math" aria-label="\mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Nopf;</mi><annotation encoding="application/x-tex">\mathbb{N}</annotation></semantics></math>,
+let</p>
+<p><math role="math" aria-label="F(S)=\bigcup_{n \in S} \mathbb{F}_{p^{n}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munder><mo>⋃</mo><mrow><mi>n</mi><mo>&isin;</mo><mi>S</mi></mrow></munder><msub><mi>&Fopf;</mi><msup><mi>p</mi><mi>n</mi></msup></msub></mrow><annotation encoding="application/x-tex">F(S)=\bigcup_{n \in S} \mathbb{F}_{p^{n}}</annotation></semantics></math></p>
+<p>Give an example (with proof) of an infinite set
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+for which
+<math role="math" aria-label="F(S)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F(S)</annotation></semantics></math>
+is a subfield and
+<math role="math" aria-label="F(S) \neq F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>S</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">F(S) \neq F</annotation></semantics></math>.<br />
+31. (Aug
+<math role="math" aria-label="13 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">13 \# 6</annotation></semantics></math>
+) Let
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+be a prime and
+<math role="math" aria-label="\zeta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&zeta;</mi><annotation encoding="application/x-tex">\zeta</annotation></semantics></math>
+a primitive
+<math role="math" aria-label="p^{t h}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mrow><mi>t</mi><mi>h</mi></mrow></msup><annotation encoding="application/x-tex">p^{t h}</annotation></semantics></math>
+root of unity (in
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>
+). Set
+<math role="math" aria-label="R:=\mathbb{Z}[\zeta]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>:=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>&zeta;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R:=\mathbb{Z}[\zeta]</annotation></semantics></math>
+and
+<math role="math" aria-label="K:=\mathbb{Q}(\zeta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>:=</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>&zeta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K:=\mathbb{Q}(\zeta)</annotation></semantics></math>.<br />
+(a) Show that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a free
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-module
+and
+<math role="math" aria-label="R \cap \mathbb{Q}=\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&cap;</mo><mi>&Qopf;</mi><mo>=</mo><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">R \cap \mathbb{Q}=\mathbb{Z}</annotation></semantics></math>.<br />
+(b) Identify
+<math role="math" aria-label="\operatorname{Gal}(K \mid \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K \mid \mathbb{Q})</annotation></semantics></math>
+and show that the natural action of
+<math role="math" aria-label="\operatorname{Gal}(K \mid \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K \mid \mathbb{Q})</annotation></semantics></math>
+on
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+sends elements of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+to itself (hence giving an action of
+<math role="math" aria-label="\operatorname{Gal}(K \mid \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K \mid \mathbb{Q})</annotation></semantics></math>
+on
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+).<br />
+(c) For any two integers
+<math role="math" aria-label="m, n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m, n</annotation></semantics></math>
+which are not divisible by
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+show that the quotient (
+<math role="math" aria-label="1- \left.\zeta^{m}\right) /\left(1-\zeta^{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mrow><msup><mi>&zeta;</mi><mi>m</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>&zeta;</mi><mi>n</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">1- \left.\zeta^{m}\right) /\left(1-\zeta^{n}\right)</annotation></semantics></math>
+is an element of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+Hint: Reduce to the case where
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+divides
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>.<br />
+(d) Verify that
+<math role="math" aria-label="p=(1-\zeta) \ldots\left(1-\zeta^{p-1}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>&zeta;</mi><mo stretchy="false" form="postfix">)</mo><mi>…</mi><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><msup><mi>&zeta;</mi><mrow><mi>p</mi><mo>−</mo><mn>1</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">p=(1-\zeta) \ldots\left(1-\zeta^{p-1}\right)</annotation></semantics></math>.</p>
+<p>Hint: manipulate the cyclotomic polynomial associated to
+<math role="math" aria-label="\zeta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&zeta;</mi><annotation encoding="application/x-tex">\zeta</annotation></semantics></math>.<br />
+(e) Prove that
+<math role="math" aria-label="1-\zeta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>&zeta;</mi></mrow><annotation encoding="application/x-tex">1-\zeta</annotation></semantics></math>
+is not a unit of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+(f) Prove (using norms) that
+<math role="math" aria-label="1-\zeta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>&zeta;</mi></mrow><annotation encoding="application/x-tex">1-\zeta</annotation></semantics></math>
+is an irreducible element of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+(It is true, but harder to prove, that
+<math role="math" aria-label="1-\zeta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>−</mo><mi>&zeta;</mi></mrow><annotation encoding="application/x-tex">1-\zeta</annotation></semantics></math>
+is in fact a prime element of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.)<br />
+32. (Jan
+<math role="math" aria-label="14 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>14</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">14 \# 6</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K \mid F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>∣</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">K \mid F</annotation></semantics></math>
+be an extension of finite fields, and let
+<math role="math" aria-label="L, M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>,</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">L, M</annotation></semantics></math>
+be subfields of
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+containing
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.
+Assume that
+<math role="math" aria-label="L \cap M=F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>&cap;</mo><mi>M</mi><mo>=</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">L \cap M=F</annotation></semantics></math>.<br />
+(a) Show that the degrees
+<math role="math" aria-label="[L: F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>L</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[L: F]</annotation></semantics></math>
+and
+<math role="math" aria-label="[M: F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>M</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[M: F]</annotation></semantics></math>
+are relatively prime.</p>
+<p>Hint: How many subfields of a given order does a finite field
+have?<br />
+(b) Now assume additionally that
+<math role="math" aria-label="L=F(\alpha), M=F(\beta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>M</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L=F(\alpha), M=F(\beta)</annotation></semantics></math>
+and
+<math role="math" aria-label="K=F(\alpha, \beta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo>,</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K=F(\alpha, \beta)</annotation></semantics></math>
+for some
+<math role="math" aria-label="\alpha, \beta \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>,</mo><mi>&beta;</mi><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\alpha, \beta \in K</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="K=F(\alpha+\beta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo>+</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K=F(\alpha+\beta)</annotation></semantics></math>.<br />
+33. (Aug 18 #8) Describe the splitting field of
+<math role="math" aria-label="x^{4}+x^{2}+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{4}+x^{2}+1</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>.
+That is, describe elements of the algebraic closure of
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+which need to be adjoined in order to obtain the splitting field. What
+is the degree of the splitting field over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+?<br />
+34. (Jan
+<math role="math" aria-label="19 \# 8" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>19</mn><mi>#</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">19 \# 8</annotation></semantics></math>
+) Let
+<math role="math" aria-label="p&gt;2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">p&gt;2</annotation></semantics></math>
+be a prime, let
+<math role="math" aria-label="\mathbb{F}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{p}</annotation></semantics></math>
+be a field of order
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+and let
+<math role="math" aria-label="\overline{\mathbb{F}_{p}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msub><mi>&Fopf;</mi><mi>p</mi></msub><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{\mathbb{F}_{p}}</annotation></semantics></math>
+be an algebraic closure of
+<math role="math" aria-label="\mathbb{F}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{p}</annotation></semantics></math>.
+Let
+<math role="math" aria-label="f(x)=x^{m}+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mi>m</mi></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(x)=x^{m}+1</annotation></semantics></math>
+for some
+<math role="math" aria-label="m \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">m \in \mathbb{N}</annotation></semantics></math>.
+Assume that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is irreducible in
+<math role="math" aria-label="\mathbb{F}_{p}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Fopf;</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{F}_{p}[x]</annotation></semantics></math>,
+and let
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+be a root of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+in
+<math role="math" aria-label="\overline{\mathbb{F}_{p}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><msub><mi>&Fopf;</mi><mi>p</mi></msub><mo accent="true">¯</mo></mover><annotation encoding="application/x-tex">\overline{\mathbb{F}_{p}}</annotation></semantics></math>.<br />
+(a) Prove that the multiplicative order of
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+is equal to
+<math role="math" aria-label="2 m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>m</mi></mrow><annotation encoding="application/x-tex">2 m</annotation></semantics></math>.<br />
+(b) Prove that
+<math role="math" aria-label="2 m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>m</mi></mrow><annotation encoding="application/x-tex">2 m</annotation></semantics></math>
+divides
+<math role="math" aria-label="p^{m}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>m</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p^{m}-1</annotation></semantics></math>
+and
+<math role="math" aria-label="2 m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>m</mi></mrow><annotation encoding="application/x-tex">2 m</annotation></semantics></math>
+does not divide
+<math role="math" aria-label="p^{k}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>k</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p^{k}-1</annotation></semantics></math>
+for any
+<math role="math" aria-label="0&lt;k&lt;m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>k</mi><mo>&lt;</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">0&lt;k&lt;m</annotation></semantics></math>.<br />
+(c) Prove that
+<math role="math" aria-label="m \neq 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&ne;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">m \neq 4</annotation></semantics></math>.<br />
+35. (Aug 19 #8) Let
+<math role="math" aria-label="q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+be a prime power, let
+<math role="math" aria-label="\mathbb{F}_{q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>q</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{q}</annotation></semantics></math>
+be a field of order
+<math role="math" aria-label="q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>,
+and let
+<math role="math" aria-label="a \in \mathbb{F}_{q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><msub><mi>&Fopf;</mi><mi>q</mi></msub></mrow><annotation encoding="application/x-tex">a \in \mathbb{F}_{q}</annotation></semantics></math>
+be a nonzero element. Consider the polynomial</p>
+<p><math role="math" aria-label="f(x)=x^{q+1}-a" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mrow><mi>q</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">f(x)=x^{q+1}-a</annotation></semantics></math></p>
+<p>Let
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+be the splitting field of
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+over
+<math role="math" aria-label="K=\mathbb{F}_{q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><msub><mi>&Fopf;</mi><mi>q</mi></msub></mrow><annotation encoding="application/x-tex">K=\mathbb{F}_{q}</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="[L: K]=2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>L</mi><mo>:</mo><mi>K</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">[L: K]=2</annotation></semantics></math>.
+Note: Make sure to prove that the degree is equal to 2 , not just
+<math role="math" aria-label="\leq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&le;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\leq 2</annotation></semantics></math>.<br />
+Hint: Let
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+be a root of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+What can you say about the (multiplicative) order of
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+?<br />
+36. (Aug
+<math role="math" aria-label="20 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">20 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+be an odd prime number and set
+<math role="math" aria-label="q=p^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><msup><mi>p</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">q=p^{2}</annotation></semantics></math>.
+Consider the finite field
+<math role="math" aria-label="\mathbb{F}_{q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>q</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{q}</annotation></semantics></math>.<br />
+(a) Show that
+<math role="math" aria-label="\mathbb{F}_{q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>q</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{q}</annotation></semantics></math>
+contains a primitive 8-th root of unity
+<math role="math" aria-label="w" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>w</mi><annotation encoding="application/x-tex">w</annotation></semantics></math>
+and that the element
+<math role="math" aria-label="\alpha=w+w^{-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>=</mo><mi>w</mi><mo>+</mo><msup><mi>w</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\alpha=w+w^{-1}</annotation></semantics></math>
+satisfies
+<math role="math" aria-label="\alpha^{2}=2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&alpha;</mi><mn>2</mn></msup><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\alpha^{2}=2</annotation></semantics></math>.<br />
+(b) Show that
+<math role="math" aria-label="\alpha \in \mathbb{F}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&isin;</mo><msub><mi>&Fopf;</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\alpha \in \mathbb{F}_{p}</annotation></semantics></math>
+if and only if
+<math role="math" aria-label="p \equiv 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&equiv;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p \equiv 1</annotation></semantics></math>
+or
+<math role="math" aria-label="7 \bmod 8" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mrow><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">mod</mi><mo>&#8289;</mo></mrow><mspace width="0.222em"></mspace><mn>8</mn></mrow></mrow><annotation encoding="application/x-tex">7 \bmod 8</annotation></semantics></math>.</p>
+<p>Hint: Check when is
+<math role="math" aria-label="\alpha^{p}=\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&alpha;</mi><mi>p</mi></msup><mo>=</mo><mi>&alpha;</mi></mrow><annotation encoding="application/x-tex">\alpha^{p}=\alpha</annotation></semantics></math>.<br />
+37. (Jan 21 #7) Recall that a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is called perfect if either
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+has characteristic zero or
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+has characteristic
+<math role="math" aria-label="p&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p&gt;0</annotation></semantics></math>
+and every element of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is equal to
+<math role="math" aria-label="a^{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>a</mi><mi>p</mi></msup><annotation encoding="application/x-tex">a^{p}</annotation></semantics></math>
+for some
+<math role="math" aria-label="a \in F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">a \in F</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+admits a finite inseparable extension if and only if
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is not perfect.<br />
+38. (Aug 21 #7)<br />
+(a) Let
+<math role="math" aria-label="n \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">n \in \mathbb{N}</annotation></semantics></math>,
+let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be an algebraically closed field either of characteristic 0 or of
+characteristic
+<math role="math" aria-label="p&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p&gt;0</annotation></semantics></math>
+where
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+does not divide
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+contains a primitive
+<math role="math" aria-label="n^{\text {th }}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>n</mi><mrow><mtext mathvariant="normal">th </mtext><mspace width="0.333em"></mspace></mrow></msup><annotation encoding="application/x-tex">n^{\text {th }}</annotation></semantics></math>
+root of unity.<br />
+(b) According to (a)
+<math role="math" aria-label="\overline{\mathbb{F}}_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>&Fopf;</mi><mo accent="true">¯</mo></mover><mn>3</mn></msub><annotation encoding="application/x-tex">\overline{\mathbb{F}}_{3}</annotation></semantics></math>
+(the algebraic closure of a field with 3 elements) contains a primitive
+<math role="math" aria-label="13^{\text {th }}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>13</mn><mrow><mtext mathvariant="normal">th </mtext><mspace width="0.333em"></mspace></mrow></msup><annotation encoding="application/x-tex">13^{\text {th }}</annotation></semantics></math>
+root of unity, call it
+<math role="math" aria-label="\omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&omega;</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>.
+Compute
+<math role="math" aria-label="\left[\mathbb{F}_{3}(\omega): \mathbb{F}_{3}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>&Fopf;</mi><mn>3</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>&omega;</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><msub><mi>&Fopf;</mi><mn>3</mn></msub><mo stretchy="true" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\left[\mathbb{F}_{3}(\omega): \mathbb{F}_{3}\right]</annotation></semantics></math>
+(with proof).<br />
+39. (Jan
+<math role="math" aria-label="22 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>22</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">22 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+be a prime and let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field of order
+<math role="math" aria-label="p^{6}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mn>6</mn></msup><annotation encoding="application/x-tex">p^{6}</annotation></semantics></math>.
+Let</p>
+<p><math role="math" aria-label="\operatorname{Prim}(F)=\left\{\alpha \in F: \mathbb{F}_{p}(\alpha)=F\right\} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prim</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>&alpha;</mi><mo>&isin;</mo><mi>F</mi><mo>:</mo><msub><mi>&Fopf;</mi><mi>p</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>F</mi><mo stretchy="true" form="postfix">}</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">\operatorname{Prim}(F)=\left\{\alpha \in F: \mathbb{F}_{p}(\alpha)=F\right\} .</annotation></semantics></math></p>
+<p>(a) Find (with proof) an explicit formula for
+<math role="math" aria-label="|\operatorname{Prim}(F)|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mrow><mi mathvariant="normal">Prim</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|\operatorname{Prim}(F)|</annotation></semantics></math>.
+Hint: It is easier to compute
+<math role="math" aria-label="|F \backslash \operatorname{Prim}(F)|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>F</mi><mo>&setminus;</mo><mrow><mi mathvariant="normal">Prim</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|F \backslash \operatorname{Prim}(F)|</annotation></semantics></math>,
+the cardinality of the complement of
+<math role="math" aria-label="\operatorname{Prim}(F)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Prim</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Prim}(F)</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="\operatorname{Irr}_{6}(p)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">Irr</mi><mo>&#8289;</mo></mrow><mn>6</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Irr}_{6}(p)</annotation></semantics></math>
+denote the set of all monic irreducible polynomials of degree 6 over
+<math role="math" aria-label="\mathbb{F}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{p}</annotation></semantics></math>.
+Find (with proof) a simple relation between
+<math role="math" aria-label="\left|\operatorname{Irr}_{6}(p)\right|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">|</mo><msub><mrow><mi mathvariant="normal">Irr</mi><mo>&#8289;</mo></mrow><mn>6</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><annotation encoding="application/x-tex">\left|\operatorname{Irr}_{6}(p)\right|</annotation></semantics></math>
+and
+<math role="math" aria-label="|\operatorname{Prim}(F)|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mrow><mi mathvariant="normal">Prim</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|\operatorname{Prim}(F)|</annotation></semantics></math>.</p>
+
+</main>
+</body>
+</html>

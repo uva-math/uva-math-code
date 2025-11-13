@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>4.2 Tensor Products over Commutative Rings - Algebra General Exam Review - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html">Algebra Review Guide</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">4.2 Tensor Products over Commutative Rings</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="tensor-products-over-commutative-rings">4.2
+Tensor products (over commutative rings)</h2>
+<p>KNOW: the defining universal property of tensor products, the fact
+that tensor products uniquely exist; easy rules for tensor products
+(commutativity, associativity,
+<math role="math" aria-label="R \otimes_{R} M=M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>M</mi><mo>=</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">R \otimes_{R} M=M</annotation></semantics></math>,
+distributivity for direct sums); tensor products of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-linear
+maps; the fact that injectivity is in general not preserved by tensoring
+with
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>;
+the definition of flat modules (
+<math role="math" aria-label="M \otimes_{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><msub><mo>&otimes;</mo><mi>R</mi></msub></mrow><annotation encoding="application/x-tex">M \otimes_{R}</annotation></semantics></math>
+preserves injectivity nevertheless); the fact that a module is flat if
+all its finitely generated submodules are flat; the implications "free
+<math role="math" aria-label="\Rightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&rArr;</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>
+projective
+<math role="math" aria-label="\Rightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&rArr;</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>
+flat" for all (commutative) rings; "flat
+<math role="math" aria-label="\Rightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&rArr;</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>
+torsion free" for integral domains; the equivalences "free
+<math role="math" aria-label="\Leftrightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&hArr;</mo><annotation encoding="application/x-tex">\Leftrightarrow</annotation></semantics></math>
+projective" and "flat
+<math role="math" aria-label="\Leftrightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&hArr;</mo><annotation encoding="application/x-tex">\Leftrightarrow</annotation></semantics></math>
+torsion free" for PID’s; scalar extensions and the general definition of
+"rank" for an integral domain
+<math role="math" aria-label="R: \operatorname{rk}_{R}(M):=\operatorname{dim}_{F}\left(F \otimes_{R} M\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>:</mo><msub><mrow><mi mathvariant="normal">rk</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><msub><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>F</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>F</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>M</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">R: \operatorname{rk}_{R}(M):=\operatorname{dim}_{F}\left(F \otimes_{R} M\right)</annotation></semantics></math>
+(
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module,
+<math role="math" aria-label="F:=" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:=</mo></mrow><annotation encoding="application/x-tex">F:=</annotation></semantics></math>
+field of fractions of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+).</p>
+<p>Know the basic Lemma for tensor products of free modules:<br />
+If
+<math role="math" aria-label="\left\{e_{i} \mid i \in I\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>e</mi><mi>i</mi></msub><mo>∣</mo><mi>i</mi><mo>&isin;</mo><mi>I</mi><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{e_{i} \mid i \in I\right\}</annotation></semantics></math>
+is an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-basis
+of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and
+<math role="math" aria-label="\left\{f_{j} \mid j \in J\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>j</mi></msub><mo>∣</mo><mi>j</mi><mo>&isin;</mo><mi>J</mi><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{f_{j} \mid j \in J\right\}</annotation></semantics></math>
+is an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-basis
+of
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>,
+then
+<math role="math" aria-label="\left\{e_{i} \otimes f_{j} \mid i \in I\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>e</mi><mi>i</mi></msub><mo>&otimes;</mo><msub><mi>f</mi><mi>j</mi></msub><mo>∣</mo><mi>i</mi><mo>&isin;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">\left\{e_{i} \otimes f_{j} \mid i \in I\right.</annotation></semantics></math>
+and<br />
+<math role="math" aria-label="j \in J\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&isin;</mo><mi>J</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">j \in J\}</annotation></semantics></math>
+is an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+- basis of
+<math role="math" aria-label="M \otimes_{R} N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>N</mi></mrow><annotation encoding="application/x-tex">M \otimes_{R} N</annotation></semantics></math>.<br />
+Consequence:
+<math role="math" aria-label="\operatorname{dim}\left(V \otimes_{F} W\right)=\operatorname{dim} V \cdot \operatorname{dim} W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>V</mi><msub><mo>&otimes;</mo><mi>F</mi></msub><mi>W</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>V</mi><mo>&sdot;</mo><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>W</mi></mrow><annotation encoding="application/x-tex">\operatorname{dim}\left(V \otimes_{F} W\right)=\operatorname{dim} V \cdot \operatorname{dim} W</annotation></semantics></math>
+for
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-vector
+spaces
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+and
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>.<br />
+Know the basic relation between tensor products and modules of
+fractions:<br />
+If
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is a multiplicatively closed subset of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module,
+then
+<math role="math" aria-label="S^{-1} R \otimes_{R} M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>R</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>M</mi></mrow><annotation encoding="application/x-tex">S^{-1} R \otimes_{R} M</annotation></semantics></math>
+and
+<math role="math" aria-label="S^{-1} M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>M</mi></mrow><annotation encoding="application/x-tex">S^{-1} M</annotation></semantics></math>
+are isomorphic, as
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules
+and as
+<math role="math" aria-label="S^{-1} R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>R</mi></mrow><annotation encoding="application/x-tex">S^{-1} R</annotation></semantics></math>-modules.</p>
+<h2 class="unnumbered" id="related-problems-9">Related Problems</h2>
+<ol>
+<li><p>(Aug 03 #4) (a) Determine the following tensor products and
+explain your answers.<br />
+(i)
+<math role="math" aria-label="\mathbb{R} \bigotimes_{\mathbb{Z}} \mathbb{Z}_{2003}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><msub><mo>⨂</mo><mi>&Zopf;</mi></msub><msub><mi>&Zopf;</mi><mn>2003</mn></msub></mrow><annotation encoding="application/x-tex">\mathbb{R} \bigotimes_{\mathbb{Z}} \mathbb{Z}_{2003}</annotation></semantics></math>;<br />
+(ii)
+<math role="math" aria-label="\mathbb{Q}[x] /\left(x^{2}+1\right) \bigotimes_{\mathbb{Q}[x]} \mathbb{Q}[x] /\left(x^{2}+2\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>⨂</mo><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow></msub><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{Q}[x] /\left(x^{2}+1\right) \bigotimes_{\mathbb{Q}[x]} \mathbb{Q}[x] /\left(x^{2}+2\right)</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+and
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+be finite-dimensional vector spaces over a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+and
+<math role="math" aria-label="\left\{v_{1}, \ldots, v_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>v</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{v_{1}, \ldots, v_{n}\right\}</annotation></semantics></math>
+be a basis of
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>.
+Prove that if</p></li>
+</ol>
+<p><math role="math" aria-label="v_{1} \otimes w_{1}+\ldots+v_{n} \otimes w_{n}=0" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>&otimes;</mo><msub><mi>w</mi><mn>1</mn></msub><mo>+</mo><mi>…</mi><mo>+</mo><msub><mi>v</mi><mi>n</mi></msub><mo>&otimes;</mo><msub><mi>w</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_{1} \otimes w_{1}+\ldots+v_{n} \otimes w_{n}=0</annotation></semantics></math></p>
+<p>in
+<math role="math" aria-label="V \bigotimes_{F} W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><msub><mo>⨂</mo><mi>F</mi></msub><mi>W</mi></mrow><annotation encoding="application/x-tex">V \bigotimes_{F} W</annotation></semantics></math>
+for
+<math role="math" aria-label="w_{1}, \ldots w_{n} \in W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><msub><mi>w</mi><mi>n</mi></msub><mo>&isin;</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">w_{1}, \ldots w_{n} \in W</annotation></semantics></math>,
+then
+<math role="math" aria-label="w_{1}=\ldots=w_{n}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>=</mo><mi>…</mi><mo>=</mo><msub><mi>w</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">w_{1}=\ldots=w_{n}=0</annotation></semantics></math>.<br />
+2. (Jan 04 #6) Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+and
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+be finite-dimensional vector spaces over a field
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>,
+and let
+<math role="math" aria-label="f: V \rightarrow V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>V</mi><mo>&rarr;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">f: V \rightarrow V</annotation></semantics></math>
+and
+<math role="math" aria-label="g: W \rightarrow W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mi>W</mi><mo>&rarr;</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">g: W \rightarrow W</annotation></semantics></math>
+be linear operators. One can define a linear operator
+<math role="math" aria-label="f \otimes g: V \bigotimes_{k} W \rightarrow V \otimes_{k} W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&otimes;</mo><mi>g</mi><mo>:</mo><mi>V</mi><msub><mo>⨂</mo><mi>k</mi></msub><mi>W</mi><mo>&rarr;</mo><mi>V</mi><msub><mo>&otimes;</mo><mi>k</mi></msub><mi>W</mi></mrow><annotation encoding="application/x-tex">f \otimes g: V \bigotimes_{k} W \rightarrow V \otimes_{k} W</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="\operatorname{Tr}(f \otimes g)=\operatorname{Tr}(f) \cdot \operatorname{Tr}(g)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Tr</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>&otimes;</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">Tr</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>&sdot;</mo><mrow><mi mathvariant="normal">Tr</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Tr}(f \otimes g)=\operatorname{Tr}(f) \cdot \operatorname{Tr}(g)</annotation></semantics></math>.<br />
+3. (Aug 04 #8) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a field,
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+a finite-dimensional vector space over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+and
+<math role="math" aria-label="v, w" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>,</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">v, w</annotation></semantics></math>
+two non-zero vectors in
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="v \otimes w=w \otimes v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&otimes;</mo><mi>w</mi><mo>=</mo><mi>w</mi><mo>&otimes;</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">v \otimes w=w \otimes v</annotation></semantics></math>
+in
+<math role="math" aria-label="V \otimes_{K} V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>V</mi></mrow><annotation encoding="application/x-tex">V \otimes_{K} V</annotation></semantics></math>
+if and only if there exists a
+<math role="math" aria-label="c \in K^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&isin;</mo><msup><mi>K</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">c \in K^{*}</annotation></semantics></math>
+such that
+<math role="math" aria-label="w=c v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>=</mo><mi>c</mi><mi>v</mi></mrow><annotation encoding="application/x-tex">w=c v</annotation></semantics></math>.<br />
+4. (Aug 06 #9) Let
+<math role="math" aria-label="M / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">M / K</annotation></semantics></math>
+be a field extension and let
+<math role="math" aria-label="\zeta \in M \backslash K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&zeta;</mi><mo>&isin;</mo><mi>M</mi><mo>&setminus;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\zeta \in M \backslash K</annotation></semantics></math>
+be algebraic over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.
+Let
+<math role="math" aria-label="L:=K(\zeta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>:=</mo><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>&zeta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L:=K(\zeta)</annotation></semantics></math>
+denote the intermediate field generated by
+<math role="math" aria-label="\zeta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&zeta;</mi><annotation encoding="application/x-tex">\zeta</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="L \bigotimes_{K[x]} K[[x]]=\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msub><mo>⨂</mo><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow></msub><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">L \bigotimes_{K[x]} K[[x]]=\{0\}</annotation></semantics></math>.
+Here, we consider
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+as a
+<math role="math" aria-label="K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K[x]</annotation></semantics></math>-module
+where we let act
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+as multiplication by
+<math role="math" aria-label="\zeta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&zeta;</mi><annotation encoding="application/x-tex">\zeta</annotation></semantics></math>.<br />
+5. (Aug 08 #2) Prove the following statements about tensor
+products.<br />
+(a)
+<math role="math" aria-label="\mathbb{Z}_{5}[x] \bigotimes_{\mathbb{Z}} \mathbb{Q}[x]=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><mn>5</mn></msub><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><msub><mo>⨂</mo><mi>&Zopf;</mi></msub><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{5}[x] \bigotimes_{\mathbb{Z}} \mathbb{Q}[x]=0</annotation></semantics></math>.<br />
+(b)
+<math role="math" aria-label="\mathbb{Q}(i) \bigotimes_{\mathbb{Q}} \mathbb{Q}(\sqrt{2}) \cong \mathbb{Q}(i+\sqrt{2})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo stretchy="false" form="postfix">)</mo><msub><mo>⨂</mo><mi>&Qopf;</mi></msub><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false" form="postfix">)</mo><mo>≅</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>+</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}(i) \bigotimes_{\mathbb{Q}} \mathbb{Q}(\sqrt{2}) \cong \mathbb{Q}(i+\sqrt{2})</annotation></semantics></math>
+as
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>-vector
+spaces.<br />
+6. (Jan 09 #8) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative integral domain with 1 , and let
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+be a principal ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Prove that the
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="I \bigotimes_{R} I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><msub><mo>⨂</mo><mi>R</mi></msub><mi>I</mi></mrow><annotation encoding="application/x-tex">I \bigotimes_{R} I</annotation></semantics></math>
+is torsionfree.<br />
+In parts (b) - (d) of this problem let
+<math role="math" aria-label="R=\mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[x]</annotation></semantics></math>
+and
+<math role="math" aria-label="I=(2, x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">I=(2, x)</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="m=2 \otimes x-x \otimes 2 \in I \bigotimes_{R} I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>2</mn><mo>&otimes;</mo><mi>x</mi><mo>−</mo><mi>x</mi><mo>&otimes;</mo><mn>2</mn><mo>&isin;</mo><mi>I</mi><msub><mo>⨂</mo><mi>R</mi></msub><mi>I</mi></mrow><annotation encoding="application/x-tex">m=2 \otimes x-x \otimes 2 \in I \bigotimes_{R} I</annotation></semantics></math>.
+Find a nonzero element
+<math role="math" aria-label="r \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">r \in R</annotation></semantics></math>
+such that
+<math role="math" aria-label="r m=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mi>m</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r m=0</annotation></semantics></math>.<br />
+(c) Consider the mapping
+<math role="math" aria-label="\phi: I \times I \rightarrow \mathbb{Z} / 2 \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>:</mo><mi>I</mi><mo>&times;</mo><mi>I</mi><mo>&rarr;</mo><mi>&Zopf;</mi><mi>/</mi><mn>2</mn><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\phi: I \times I \rightarrow \mathbb{Z} / 2 \mathbb{Z}</annotation></semantics></math>
+given by</p>
+<p><math role="math" aria-label="\phi(p(x), q(x))=\frac{p(0)}{2} q^{\prime}(0) \quad \bmod 2" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>q</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><mn>2</mn></mfrac><msup><mi>q</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mspace width="1.0em"></mspace><mrow><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">mod</mi><mo>&#8289;</mo></mrow><mspace width="0.222em"></mspace><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">\phi(p(x), q(x))=\frac{p(0)}{2} q^{\prime}(0) \quad \bmod 2</annotation></semantics></math></p>
+<p>where
+<math role="math" aria-label="q^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>q</mi><mi>′</mi></msup><annotation encoding="application/x-tex">q^{\prime}</annotation></semantics></math>
+is the formal derivative of
+<math role="math" aria-label="q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>.
+Also consider
+<math role="math" aria-label="\mathbb{Z} / 2 \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mn>2</mn><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z} / 2 \mathbb{Z}</annotation></semantics></math>
+as an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+via the canonical projection
+<math role="math" aria-label="R \rightarrow \mathbb{Z} / 2 \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&rarr;</mo><mi>&Zopf;</mi><mi>/</mi><mn>2</mn><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">R \rightarrow \mathbb{Z} / 2 \mathbb{Z}</annotation></semantics></math>,
+i.e.
+<math role="math" aria-label="f . a:=f(0) a \bmod 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>.</mi><mi>a</mi><mo>:=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mi>a</mi><mrow><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">mod</mi><mo>&#8289;</mo></mrow><mspace width="0.222em"></mspace><mn>2</mn></mrow></mrow><annotation encoding="application/x-tex">f . a:=f(0) a \bmod 2</annotation></semantics></math>
+for
+<math role="math" aria-label="f \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">f \in R</annotation></semantics></math>
+and
+<math role="math" aria-label="a \in \mathbb{Z} / 2 \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>&Zopf;</mi><mi>/</mi><mn>2</mn><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">a \in \mathbb{Z} / 2 \mathbb{Z}</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="\phi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+is
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-bilinear.<br />
+(d) Use (c) to prove that
+<math role="math" aria-label="2 \otimes x \neq x \otimes 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&otimes;</mo><mi>x</mi><mo>&ne;</mo><mi>x</mi><mo>&otimes;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2 \otimes x \neq x \otimes 2</annotation></semantics></math>
+in
+<math role="math" aria-label="I \bigotimes_{R} I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><msub><mo>⨂</mo><mi>R</mi></msub><mi>I</mi></mrow><annotation encoding="application/x-tex">I \bigotimes_{R} I</annotation></semantics></math>
+(and thus, by (b)
+<math role="math" aria-label="I \bigotimes_{R} I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><msub><mo>⨂</mo><mi>R</mi></msub><mi>I</mi></mrow><annotation encoding="application/x-tex">I \bigotimes_{R} I</annotation></semantics></math>
+is not trosionfree).<br />
+7. (Aug
+<math role="math" aria-label="09 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>09</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">09 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field and
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+a finite-dimensional vector space over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.
+Let
+<math role="math" aria-label="n=\operatorname{dim}_{F} K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>F</mi></msub><mi>K</mi></mrow><annotation encoding="application/x-tex">n=\operatorname{dim}_{F} K</annotation></semantics></math>,
+and assume that
+<math role="math" aria-label="n&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n&gt;1</annotation></semantics></math>.<br />
+(a) Is it always true that
+<math role="math" aria-label="K \bigotimes_{F} K \cong M_{n}(F)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>⨂</mo><mi>F</mi></msub><mi>K</mi><mo>≅</mo><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K \bigotimes_{F} K \cong M_{n}(F)</annotation></semantics></math>
+as
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-modules?<br />
+(b) Now assume that
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+also has the structure of a commutative ring with 1 , so being an
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-vector
+space,
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+becomes an
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-algebra.
+Recall that in this case
+<math role="math" aria-label="K \bigotimes_{F} K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>⨂</mo><mi>F</mi></msub><mi>K</mi></mrow><annotation encoding="application/x-tex">K \bigotimes_{F} K</annotation></semantics></math>
+possesses a unique
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-algebra
+structure such that
+<math role="math" aria-label="(a \otimes b) \cdot(c \otimes d)=a c \otimes b d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>&otimes;</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>&sdot;</mo><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo>&otimes;</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mi>c</mi><mo>&otimes;</mo><mi>b</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">(a \otimes b) \cdot(c \otimes d)=a c \otimes b d</annotation></semantics></math>
+for
+<math role="math" aria-label="a, b, c, d \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>d</mi><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">a, b, c, d \in K</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="K \otimes_{F} K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>&otimes;</mo><mi>F</mi></msub><mi>K</mi></mrow><annotation encoding="application/x-tex">K \otimes_{F} K</annotation></semantics></math>
+cannot be a field.<br />
+Hint: Construct a non-trivial
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-algebra
+homomorphism
+<math role="math" aria-label="K \bigotimes_{F} K \rightarrow K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>⨂</mo><mi>F</mi></msub><mi>K</mi><mo>&rarr;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">K \bigotimes_{F} K \rightarrow K</annotation></semantics></math>.<br />
+8. (Aug
+<math role="math" aria-label="11 \# 8" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mi>#</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">11 \# 8</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a field and let
+<math role="math" aria-label="A, B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A, B</annotation></semantics></math>
+be commutative
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-algebras.
+We do not assume
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+or
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is finite dimensional over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.<br />
+(a) If the
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-algebra
+<math role="math" aria-label="A \otimes_{K} B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>B</mi></mrow><annotation encoding="application/x-tex">A \otimes_{K} B</annotation></semantics></math>
+is a field, show that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+must be fields, too. (Partial credit is given if you have to assume that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+or
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is finite dimensional over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.)<br />
+(b) Provide an example of two field extensions
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+of degree 2 over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+such that
+<math role="math" aria-label="A \otimes_{K} B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>B</mi></mrow><annotation encoding="application/x-tex">A \otimes_{K} B</annotation></semantics></math>
+is a field of degree 4 over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.<br />
+(c) Compute
+<math role="math" aria-label="\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Copf;</mi><msub><mo>&otimes;</mo><mi>&Ropf;</mi></msub><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{C} \otimes_{\mathbb{R}} \mathbb{C}</annotation></semantics></math>
+explicitly.<br />
+(d) Suppose
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+has characteristic
+<math role="math" aria-label="p&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p&gt;0</annotation></semantics></math>
+and that
+<math role="math" aria-label="A \mid K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>∣</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">A \mid K</annotation></semantics></math>
+is a field extension such that there exists
+<math role="math" aria-label="\xi \in A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&xi;</mi><mo>&isin;</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">\xi \in A</annotation></semantics></math>
+such that
+<math role="math" aria-label="\xi \notin K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&xi;</mi><mo>&notin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\xi \notin K</annotation></semantics></math>,
+but
+<math role="math" aria-label="\xi^{p} \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&xi;</mi><mi>p</mi></msup><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\xi^{p} \in K</annotation></semantics></math>.
+Prove
+<math role="math" aria-label="A \otimes_{K} A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>A</mi></mrow><annotation encoding="application/x-tex">A \otimes_{K} A</annotation></semantics></math>
+is not a field.<br />
+9. (Aug
+<math role="math" aria-label="12 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">12 \# 5</annotation></semantics></math>
+) Recall that if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a commutative ring with 1 and
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+are
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-algebras,
+then
+<math role="math" aria-label="A \otimes_{R} B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>B</mi></mrow><annotation encoding="application/x-tex">A \otimes_{R} B</annotation></semantics></math>
+also has the natural structure of an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-algebra.<br />
+(a) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+be fields of different characteristics. Prove that
+<math role="math" aria-label="K \otimes_{\mathbb{Z}} L=\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>L</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">K \otimes_{\mathbb{Z}} L=\{0\}</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+be fields of the same positive characteristic
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="K \otimes_{\mathbb{Z}} L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>L</mi></mrow><annotation encoding="application/x-tex">K \otimes_{\mathbb{Z}} L</annotation></semantics></math>
+can be provided in a natural way with the structure of an
+<math role="math" aria-label="\mathbb{F}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{p}</annotation></semantics></math>-algebra,
+and that this
+<math role="math" aria-label="\mathbb{F}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Fopf;</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\mathbb{F}_{p}</annotation></semantics></math>-algebra
+is isomorphic to
+<math role="math" aria-label="K \otimes_{\mathbb{F}_{p}} L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>&otimes;</mo><msub><mi>&Fopf;</mi><mi>p</mi></msub></msub><mi>L</mi></mrow><annotation encoding="application/x-tex">K \otimes_{\mathbb{F}_{p}} L</annotation></semantics></math>.
+Deduce that
+<math role="math" aria-label="K \otimes_{\mathbb{Z}} L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>L</mi></mrow><annotation encoding="application/x-tex">K \otimes_{\mathbb{Z}} L</annotation></semantics></math>
+is nonzero.<br />
+(c) Find an example of commutative rings
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+which are NOT fields such that
+<math role="math" aria-label="A \otimes_{\mathbb{Z}} B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>B</mi></mrow><annotation encoding="application/x-tex">A \otimes_{\mathbb{Z}} B</annotation></semantics></math>
+is a field. Hint: Use a suitable property of tensor products involving
+direct sums.<br />
+10. (Aug
+<math role="math" aria-label="13 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">13 \# 2</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+be fields of characteristic 0 . Prove that
+<math role="math" aria-label="K \bigotimes_{\mathbb{Z}} L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>⨂</mo><mi>&Zopf;</mi></msub><mi>L</mi></mrow><annotation encoding="application/x-tex">K \bigotimes_{\mathbb{Z}} L</annotation></semantics></math>
+is nonzero.<br />
+11. (Jan 14 #5)<br />
+(a) Consider the abelian group</p>
+<p><math role="math" aria-label="A=\prod_{n \geq 2} \mathbb{Z} / n \mathbb{Z}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><munder><mo>&prod;</mo><mrow><mi>n</mi><mo>&ge;</mo><mn>2</mn></mrow></munder><mi>&Zopf;</mi><mi>/</mi><mi>n</mi><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">A=\prod_{n \geq 2} \mathbb{Z} / n \mathbb{Z}</annotation></semantics></math></p>
+<p>Show that this is not a torsion group by exhibiting an element of
+infinite order.<br />
+(b) Show that
+<math role="math" aria-label="\mathbb{Q} \otimes_{\mathbb{Z}} A \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>A</mi><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathbb{Q} \otimes_{\mathbb{Z}} A \neq 0</annotation></semantics></math>.
+(Hint: this is
+<math role="math" aria-label="S^{-1} A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>A</mi></mrow><annotation encoding="application/x-tex">S^{-1} A</annotation></semantics></math>
+for
+<math role="math" aria-label="S=\mathbb{Z}-\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>&Zopf;</mi><mo>−</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">S=\mathbb{Z}-\{0\}</annotation></semantics></math>.)
+Bonus: Determine
+<math role="math" aria-label="\operatorname{dim}_{\mathbb{Q}}\left(\mathbb{Q} \otimes_{\mathbb{Z}} A\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>&Qopf;</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>&Qopf;</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>A</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{dim}_{\mathbb{Q}}\left(\mathbb{Q} \otimes_{\mathbb{Z}} A\right)</annotation></semantics></math>.<br />
+12. (Aug 14 #2) Compute<br />
+(a)
+<math role="math" aria-label="\mathbb{Q} / \mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Q} / \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mi>/</mi><mi>&Zopf;</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>&Qopf;</mi><mi>/</mi><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{Q} / \mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Q} / \mathbb{Z}</annotation></semantics></math>;<br />
+(b)
+<math role="math" aria-label="\mathbb{Z}_{2014} \otimes_{\mathbb{Z}} \mathbb{Z}_{2013}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><mn>2014</mn></msub><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><msub><mi>&Zopf;</mi><mn>2013</mn></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{2014} \otimes_{\mathbb{Z}} \mathbb{Z}_{2013}</annotation></semantics></math>;<br />
+(c)
+<math role="math" aria-label="\operatorname{Hom}_{\mathbb{Z}}\left(\mathbb{Z}_{2014}, \mathbb{Z}_{10}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mi>&Zopf;</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&Zopf;</mi><mn>2014</mn></msub><mo>,</mo><msub><mi>&Zopf;</mi><mn>10</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Hom}_{\mathbb{Z}}\left(\mathbb{Z}_{2014}, \mathbb{Z}_{10}\right)</annotation></semantics></math>
+(Here
+<math role="math" aria-label="\mathbb{Z}_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Zopf;</mi><mi>n</mi></msub><annotation encoding="application/x-tex">\mathbb{Z}_{n}</annotation></semantics></math>
+is regarded as a
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-module).<br />
+13. (Aug
+<math role="math" aria-label="14 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>14</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">14 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a field and
+<math role="math" aria-label="a \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">a \in K</annotation></semantics></math>.
+Consider
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+as a
+<math role="math" aria-label="K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K[x]</annotation></semantics></math>-module
+(denoted by
+<math role="math" aria-label="K_{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>a</mi></msub><annotation encoding="application/x-tex">K_{a}</annotation></semantics></math>
+) via the homomorphism
+<math role="math" aria-label="\mathrm{ev}_{a}: K[x] \rightarrow K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">v</mi></mrow><mi>a</mi></msub><mo>:</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo>&rarr;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\mathrm{ev}_{a}: K[x] \rightarrow K</annotation></semantics></math>
+which is the identity on
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and sends
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+to
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.
+Let
+<math role="math" aria-label="K[[x]]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K[[x]]</annotation></semantics></math>
+be the power series ring, which is regarded as a
+<math role="math" aria-label="K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K[x]</annotation></semantics></math>-algebra
+in a natural way. Determine with proof the tensor product
+<math role="math" aria-label="K_{a} \otimes_{K[x]} K[[x]]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>a</mi></msub><msub><mo>&otimes;</mo><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow></msub><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K_{a} \otimes_{K[x]} K[[x]]</annotation></semantics></math>.
+(Hint: keep in mind if one needs to divide into cases depending on
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.)<br />
+14. (Aug
+<math role="math" aria-label="15 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">15 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+be a finite dimensional vector space over a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+and let
+<math role="math" aria-label="V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>V</mi><mo>*</mo></msup><annotation encoding="application/x-tex">V^{*}</annotation></semantics></math>
+be its dual. For
+<math role="math" aria-label="v \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">v \in V</annotation></semantics></math>
+and
+<math role="math" aria-label="f \in V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>V</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">f \in V^{*}</annotation></semantics></math>,
+denote by
+<math role="math" aria-label="\phi_{v, f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ϕ</mi><mrow><mi>v</mi><mo>,</mo><mi>f</mi></mrow></msub><annotation encoding="application/x-tex">\phi_{v, f}</annotation></semantics></math>
+the endomorphism of
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+defined by
+<math role="math" aria-label="\phi_{v, f}(w)=f(w) v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ϕ</mi><mrow><mi>v</mi><mo>,</mo><mi>f</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">\phi_{v, f}(w)=f(w) v</annotation></semantics></math>
+for
+<math role="math" aria-label="w \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">w \in V</annotation></semantics></math>.
+Prove that there exists a well-defined
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-linear
+map
+<math role="math" aria-label="\Phi: V \otimes_{F} V^{*} \rightarrow \operatorname{End}_{F}(V)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Phi;</mi><mo>:</mo><mi>V</mi><msub><mo>&otimes;</mo><mi>F</mi></msub><msup><mi>V</mi><mo>*</mo></msup><mo>&rarr;</mo><msub><mrow><mi mathvariant="normal">End</mi><mo>&#8289;</mo></mrow><mi>F</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>V</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\Phi: V \otimes_{F} V^{*} \rightarrow \operatorname{End}_{F}(V)</annotation></semantics></math>
+satisfying
+<math role="math" aria-label="\Phi(v \otimes f)=\phi_{v, f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Phi;</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo>&otimes;</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>ϕ</mi><mrow><mi>v</mi><mo>,</mo><mi>f</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\Phi(v \otimes f)=\phi_{v, f}</annotation></semantics></math>
+for all
+<math role="math" aria-label="v \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">v \in V</annotation></semantics></math>
+and
+<math role="math" aria-label="f \in V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>V</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">f \in V^{*}</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="\Phi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Phi;</mi><annotation encoding="application/x-tex">\Phi</annotation></semantics></math>
+is an isomorphism.<br />
+15. (Jan
+<math role="math" aria-label="16 \# 8" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mi>#</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">16 \# 8</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+be finite extension fields of a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+of characteristic 0 . Prove that
+<math role="math" aria-label="K \otimes_{F} L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>&otimes;</mo><mi>F</mi></msub><mi>L</mi></mrow><annotation encoding="application/x-tex">K \otimes_{F} L</annotation></semantics></math>
+has no nonzero nilpotent elements.<br />
+16. (Aug
+<math role="math" aria-label="16 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">16 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+and
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+be vector spaces over a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+and let
+<math role="math" aria-label="\left\{v_{1}, \ldots, v_{\ell}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>v</mi><mi>ℓ</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{v_{1}, \ldots, v_{\ell}\right\}</annotation></semantics></math>
+and
+<math role="math" aria-label="\left\{w_{1}, \ldots, w_{\ell}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>w</mi><mi>ℓ</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{w_{1}, \ldots, w_{\ell}\right\}</annotation></semantics></math>
+be elements of these vector spaces. Assume that the vectors
+<math role="math" aria-label="\left\{w_{1}, \ldots, w_{\ell}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>w</mi><mi>ℓ</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{w_{1}, \ldots, w_{\ell}\right\}</annotation></semantics></math>
+are linearly independent. Show that
+<math role="math" aria-label="\sum_{i=1}^{\ell} v_{i} \otimes w_{i}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>ℓ</mi></msubsup><msub><mi>v</mi><mi>i</mi></msub><mo>&otimes;</mo><msub><mi>w</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\sum_{i=1}^{\ell} v_{i} \otimes w_{i}=0</annotation></semantics></math>
+implies that
+<math role="math" aria-label="v_{1}=\cdots=v_{\ell}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>=</mo><mi>⋯</mi><mo>=</mo><msub><mi>v</mi><mi>ℓ</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">v_{1}=\cdots=v_{\ell}=0</annotation></semantics></math>.<br />
+17. (Jan
+<math role="math" aria-label="17 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>17</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">17 \# 2</annotation></semantics></math>
+) Consider a field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+and two finite extensions
+<math role="math" aria-label="L, M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>,</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">L, M</annotation></semantics></math>
+of
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.
+Consider the
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-algebra
+<math role="math" aria-label="L \otimes_{K} M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>M</mi></mrow><annotation encoding="application/x-tex">L \otimes_{K} M</annotation></semantics></math>
+(with the usual multiplication
+<math role="math" aria-label="(a \otimes b)(c \otimes d)=a c \otimes b d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>&otimes;</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo>&otimes;</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mi>c</mi><mo>&otimes;</mo><mi>b</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">(a \otimes b)(c \otimes d)=a c \otimes b d</annotation></semantics></math>
+). Prove that
+<math role="math" aria-label="L \otimes_{K} M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>M</mi></mrow><annotation encoding="application/x-tex">L \otimes_{K} M</annotation></semantics></math>
+is a field if and only if any time an extension
+<math role="math" aria-label="E / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">E / K</annotation></semantics></math>
+contains subfields
+<math role="math" aria-label="L^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mi>′</mi></msup><annotation encoding="application/x-tex">L^{\prime}</annotation></semantics></math>
+and
+<math role="math" aria-label="M^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>M</mi><mi>′</mi></msup><annotation encoding="application/x-tex">M^{\prime}</annotation></semantics></math>
+which are
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-isomorphic
+to
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+the composite
+<math role="math" aria-label="L^{\prime} M^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mi>′</mi></msup><msup><mi>M</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">L^{\prime} M^{\prime}</annotation></semantics></math>
+has degree
+<math role="math" aria-label="\left[L^{\prime} M^{\prime}: K\right]=\left[L^{\prime}: K\right]\left[M^{\prime}: K\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">[</mo><msup><mi>L</mi><mi>′</mi></msup><msup><mi>M</mi><mi>′</mi></msup><mo>:</mo><mi>K</mi><mo stretchy="true" form="postfix">]</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><msup><mi>L</mi><mi>′</mi></msup><mo>:</mo><mi>K</mi><mo stretchy="true" form="postfix">]</mo></mrow><mrow><mo stretchy="true" form="prefix">[</mo><msup><mi>M</mi><mi>′</mi></msup><mo>:</mo><mi>K</mi><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\left[L^{\prime} M^{\prime}: K\right]=\left[L^{\prime}: K\right]\left[M^{\prime}: K\right]</annotation></semantics></math>.<br />
+18. (Jan
+<math role="math" aria-label="17 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>17</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">17 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring, and
+<math role="math" aria-label="M, N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>,</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">M, N</annotation></semantics></math>
+be
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules.
+Show that for any submodules
+<math role="math" aria-label="M^{\prime} \subset M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mi>′</mi></msup><mo>&sub;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">M^{\prime} \subset M</annotation></semantics></math>
+and
+<math role="math" aria-label="N^{\prime} \subset N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>N</mi><mi>′</mi></msup><mo>&sub;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">N^{\prime} \subset N</annotation></semantics></math>,
+the induced map
+<math role="math" aria-label="M \otimes_{R} N \rightarrow\left(M / M^{\prime}\right) \otimes_{R}\left(N / N^{\prime}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>N</mi><mo>&rarr;</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>M</mi><mi>/</mi><msup><mi>M</mi><mi>′</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><msub><mo>&otimes;</mo><mi>R</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>N</mi><mi>/</mi><msup><mi>N</mi><mi>′</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">M \otimes_{R} N \rightarrow\left(M / M^{\prime}\right) \otimes_{R}\left(N / N^{\prime}\right)</annotation></semantics></math>
+has kernel given by
+<math role="math" aria-label="M^{\prime} \otimes N+M \otimes N^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mi>′</mi></msup><mo>&otimes;</mo><mi>N</mi><mo>+</mo><mi>M</mi><mo>&otimes;</mo><msup><mi>N</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">M^{\prime} \otimes N+M \otimes N^{\prime}</annotation></semantics></math>.
+Here
+<math role="math" aria-label="M^{\prime} \otimes N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mi>′</mi></msup><mo>&otimes;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">M^{\prime} \otimes N</annotation></semantics></math>
+and
+<math role="math" aria-label="M \otimes N^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&otimes;</mo><msup><mi>N</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">M \otimes N^{\prime}</annotation></semantics></math>
+denote, respectively, the images of
+<math role="math" aria-label="M^{\prime} \otimes_{R} N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mi>′</mi></msup><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>N</mi></mrow><annotation encoding="application/x-tex">M^{\prime} \otimes_{R} N</annotation></semantics></math>
+and
+<math role="math" aria-label="M \otimes_{R} N^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><msup><mi>N</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">M \otimes_{R} N^{\prime}</annotation></semantics></math>
+in
+<math role="math" aria-label="M \otimes_{R} N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>N</mi></mrow><annotation encoding="application/x-tex">M \otimes_{R} N</annotation></semantics></math>.<br />
+19. (Aug
+<math role="math" aria-label="17 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>17</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">17 \# 7</annotation></semantics></math>
+) Consider the polynomial ring
+<math role="math" aria-label="R=F[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=F[x, y]</annotation></semantics></math>
+in two variables over the field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+and the ideal
+<math role="math" aria-label="I=(x, y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">I=(x, y)</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Let
+<math role="math" aria-label="\phi: R \longrightarrow F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>:</mo><mi>R</mi><mo>&rarr;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">\phi: R \longrightarrow F</annotation></semantics></math>
+be the
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-algebra
+homomorphism with
+<math role="math" aria-label="\phi(x)=\phi(y)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\phi(x)=\phi(y)=0</annotation></semantics></math>,
+which turns
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+into an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module.<br />
+(a) Show that the
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules
+<math role="math" aria-label="F \otimes_{R} F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>F</mi></mrow><annotation encoding="application/x-tex">F \otimes_{R} F</annotation></semantics></math>
+and
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+are isomorphic.<br />
+(b) Define maps
+<math role="math" aria-label="s, t: I \longrightarrow F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>,</mo><mi>t</mi><mo>:</mo><mi>I</mi><mo>&rarr;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">s, t: I \longrightarrow F</annotation></semantics></math>
+by
+<math role="math" aria-label="s(f)=c_{1,0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>c</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">s(f)=c_{1,0}</annotation></semantics></math>,
+respectively,
+<math role="math" aria-label="t(f)=c_{0,1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>c</mi><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">t(f)=c_{0,1}</annotation></semantics></math>
+if
+<math role="math" aria-label="f=\sum_{i, j} c_{i, j} x^{i} y^{j} \in I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><msub><mo>&sum;</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><msub><mi>c</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><msup><mi>x</mi><mi>i</mi></msup><msup><mi>y</mi><mi>j</mi></msup><mo>&isin;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">f=\sum_{i, j} c_{i, j} x^{i} y^{j} \in I</annotation></semantics></math>
+(with
+<math role="math" aria-label="c_{i, j} \in F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mo>&isin;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">c_{i, j} \in F</annotation></semantics></math>
+for all
+<math role="math" aria-label="i, j \in \mathbb{N}_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>&isin;</mo><msub><mi>&Nopf;</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">i, j \in \mathbb{N}_{0}</annotation></semantics></math>
+). Verify that
+<math role="math" aria-label="s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+and
+<math role="math" aria-label="t" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+are
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+homomorphisms.<br />
+(c) Prove that
+<math role="math" aria-label="x \otimes y-y \otimes x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&otimes;</mo><mi>y</mi><mo>−</mo><mi>y</mi><mo>&otimes;</mo><mi>x</mi></mrow><annotation encoding="application/x-tex">x \otimes y-y \otimes x</annotation></semantics></math>
+is not 0 in
+<math role="math" aria-label="I \otimes_{R} I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>I</mi></mrow><annotation encoding="application/x-tex">I \otimes_{R} I</annotation></semantics></math>.<br />
+(d) Prove that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is not a flat
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module.<br />
+20. (Jan 18 #4) Let
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+be a finite abelian group of order
+<math role="math" aria-label="n, p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>,</mo><mi>p</mi></mrow><annotation encoding="application/x-tex">n, p</annotation></semantics></math>
+a prime divisor of
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+and
+<math role="math" aria-label="n=p^{k} m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msup><mi>p</mi><mi>k</mi></msup><mi>m</mi></mrow><annotation encoding="application/x-tex">n=p^{k} m</annotation></semantics></math>
+with
+<math role="math" aria-label="k, m \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>,</mo><mi>m</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">k, m \in \mathbb{N}</annotation></semantics></math>
+such that
+<math role="math" aria-label="(p, m)=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo>,</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">(p, m)=1</annotation></semantics></math>.
+Denote by
+<math role="math" aria-label="A_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>p</mi></msub><annotation encoding="application/x-tex">A_{p}</annotation></semantics></math>
+the Sylow
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-subgroup
+of A .<br />
+(a) Show that the abelian groups
+<math role="math" aria-label="A_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>p</mi></msub><annotation encoding="application/x-tex">A_{p}</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{Z} / p^{k} \mathbb{Z} \otimes_{\mathbb{Z}} A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><msup><mi>p</mi><mi>k</mi></msup><mi>&Zopf;</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z} / p^{k} \mathbb{Z} \otimes_{\mathbb{Z}} A</annotation></semantics></math>
+are isomorphic.<br />
+(b) Describe
+<math role="math" aria-label="\mathbb{Z} / p \mathbb{Z} \otimes_{\mathbb{Z}} A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mi>p</mi><mi>&Zopf;</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>A</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z} / p \mathbb{Z} \otimes_{\mathbb{Z}} A</annotation></semantics></math>
+as an abelian group without using tensor products but (certain)
+invariants of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.<br />
+21. (Aug
+<math role="math" aria-label="19 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>19</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">19 \# 4</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 , let
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+be a subring of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+with 1 , and let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+be
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules.<br />
+(a) Prove that there exists a surjective
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>-module
+homomorphism
+<math role="math" aria-label="\phi: M \otimes_{S} N \rightarrow M \otimes_{R} N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>:</mo><mi>M</mi><msub><mo>&otimes;</mo><mi>S</mi></msub><mi>N</mi><mo>&rarr;</mo><mi>M</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>N</mi></mrow><annotation encoding="application/x-tex">\phi: M \otimes_{S} N \rightarrow M \otimes_{R} N</annotation></semantics></math>
+such that
+<math role="math" aria-label="\phi\left(m \otimes_{S} n\right)=m \otimes_{R} n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>m</mi><msub><mo>&otimes;</mo><mi>S</mi></msub><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>m</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>n</mi></mrow><annotation encoding="application/x-tex">\phi\left(m \otimes_{S} n\right)=m \otimes_{R} n</annotation></semantics></math>
+for all
+<math role="math" aria-label="m \in M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&isin;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">m \in M</annotation></semantics></math>
+and
+<math role="math" aria-label="n \in N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">n \in N</annotation></semantics></math>.
+Also prove that such
+<math role="math" aria-label="\phi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+is unique.<br />
+(b) Assume that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+are both fields,
+<math role="math" aria-label="R \neq S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&ne;</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">R \neq S</annotation></semantics></math>
+and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+are both nonzero. Prove that
+<math role="math" aria-label="\phi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+in part (a) is not injective. Warning:
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+are not assumed to be finitely generated. (c) Suppose that in (b) we
+remove the assumption ’
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is a field’ (but keep all other assumptions). Does the conclusion of (b)
+remain true?<br />
+22. (Jan
+<math role="math" aria-label="20 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">20 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="F, K_{1}, K_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>,</mo><msub><mi>K</mi><mn>1</mn></msub><mo>,</mo><msub><mi>K</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">F, K_{1}, K_{2}</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+be fields with
+<math role="math" aria-label="F \subseteq K_{1} \subseteq L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&sube;</mo><msub><mi>K</mi><mn>1</mn></msub><mo>&sube;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">F \subseteq K_{1} \subseteq L</annotation></semantics></math>
+and
+<math role="math" aria-label="F \subseteq K_{2} \subseteq L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&sube;</mo><msub><mi>K</mi><mn>2</mn></msub><mo>&sube;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">F \subseteq K_{2} \subseteq L</annotation></semantics></math>.
+Recall that the tensor product
+<math role="math" aria-label="K_{1} \otimes_{F} K_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><msub><mo>&otimes;</mo><mi>F</mi></msub><msub><mi>K</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">K_{1} \otimes_{F} K_{2}</annotation></semantics></math>
+has a natural structure of a ring where multiplication of simple tensors
+is given by
+<math role="math" aria-label="(a \otimes b) \cdot(c \otimes d)=a c \otimes b d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>&otimes;</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>&sdot;</mo><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo>&otimes;</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mi>c</mi><mo>&otimes;</mo><mi>b</mi><mi>d</mi></mrow><annotation encoding="application/x-tex">(a \otimes b) \cdot(c \otimes d)=a c \otimes b d</annotation></semantics></math>
+for all
+<math role="math" aria-label="a, c \in K_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>c</mi><mo>&isin;</mo><msub><mi>K</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">a, c \in K_{1}</annotation></semantics></math>
+and
+<math role="math" aria-label="b, d \in K_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>,</mo><mi>d</mi><mo>&isin;</mo><msub><mi>K</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">b, d \in K_{2}</annotation></semantics></math>.<br />
+(a) Prove that there exists a unique ring homomorphism
+<math role="math" aria-label="\pi: K_{1} \otimes_{F} K_{2} \rightarrow L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&pi;</mi><mo>:</mo><msub><mi>K</mi><mn>1</mn></msub><msub><mo>&otimes;</mo><mi>F</mi></msub><msub><mi>K</mi><mn>2</mn></msub><mo>&rarr;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">\pi: K_{1} \otimes_{F} K_{2} \rightarrow L</annotation></semantics></math>
+such that
+<math role="math" aria-label="\pi(a \otimes b)=a b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&pi;</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>&otimes;</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mi>b</mi></mrow><annotation encoding="application/x-tex">\pi(a \otimes b)=a b</annotation></semantics></math>
+for all
+<math role="math" aria-label="a \in K_{1}, b \in K_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><msub><mi>K</mi><mn>1</mn></msub><mo>,</mo><mi>b</mi><mo>&isin;</mo><msub><mi>K</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">a \in K_{1}, b \in K_{2}</annotation></semantics></math>.<br />
+(b) Assume that
+<math role="math" aria-label="K_{1} \otimes_{F} K_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><msub><mo>&otimes;</mo><mi>F</mi></msub><msub><mi>K</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">K_{1} \otimes_{F} K_{2}</annotation></semantics></math>
+is a field. Prove that
+<math role="math" aria-label="\pi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&pi;</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>
+is injective.<br />
+(c) Assume that
+<math role="math" aria-label="K_{1} \cap K_{2} \neq F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>1</mn></msub><mo>&cap;</mo><msub><mi>K</mi><mn>2</mn></msub><mo>&ne;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">K_{1} \cap K_{2} \neq F</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="\pi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&pi;</mi><annotation encoding="application/x-tex">\pi</annotation></semantics></math>
+is not injective.<br />
+23. (Aug
+<math role="math" aria-label="20 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">20 \# 6</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a field of characteristic 0 , and fix some algebraic closure
+<math role="math" aria-label="\bar{K}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>K</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar{K}</annotation></semantics></math>
+of
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.
+Let
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+be a finite extension, with
+<math role="math" aria-label="L \subseteq \bar{K}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>&sube;</mo><mover><mi>K</mi><mo accent="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">L \subseteq \bar{K}</annotation></semantics></math>,
+and let
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+be an element of
+<math role="math" aria-label="\bar{K}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>K</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar{K}</annotation></semantics></math>.<br />
+(a) Prove that there is a surjective
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-algebra
+homomorphism
+<math role="math" aria-label="\rho: L \otimes_{K} K(\alpha) \rightarrow L(\alpha)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&rho;</mi><mo>:</mo><mi>L</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mi>L</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\rho: L \otimes_{K} K(\alpha) \rightarrow L(\alpha)</annotation></semantics></math>.<br />
+(b) Prove that there exists an injective
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-algebra
+homomorphism (not necessarily sending 1 to 1)
+<math role="math" aria-label="\iota: L(\alpha) \rightarrow L \otimes_{K} K(\alpha)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&iota;</mi><mo>:</mo><mi>L</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mi>L</mi><msub><mo>&otimes;</mo><mi>K</mi></msub><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\iota: L(\alpha) \rightarrow L \otimes_{K} K(\alpha)</annotation></semantics></math>.
+Hint:
+<math role="math" aria-label="K(\alpha) \cong K[x] /\left(\mu_{\alpha, K}(x)\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo><mo>≅</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&mu;</mi><mrow><mi>&alpha;</mi><mo>,</mo><mi>K</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">K(\alpha) \cong K[x] /\left(\mu_{\alpha, K}(x)\right)</annotation></semantics></math>.<br />
+24. (Jan 21 #6) In both parts of this problem,
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a commutative ring with 1 , assume that
+<math role="math" aria-label="|R|&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>R</mi><mo stretchy="false" form="prefix">|</mo><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|R|&gt;1</annotation></semantics></math>,
+and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is a flat
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module,
+that is, assume that<br />
+Whenever we have an injective homomorphism
+<math role="math" aria-label="N \xrightarrow{f} N^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mover><mo>&rarr;</mo><mi>f</mi></mover><msup><mi>N</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">N \xrightarrow{f} N^{\prime}</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules,
+the induced map
+<math role="math" aria-label="f \otimes 1_{M}: N \otimes_{R} M \rightarrow N^{\prime} \otimes_{R} M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&otimes;</mo><msub><mn>1</mn><mi>M</mi></msub><mo>:</mo><mi>N</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>M</mi><mo>&rarr;</mo><msup><mi>N</mi><mi>′</mi></msup><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>M</mi></mrow><annotation encoding="application/x-tex">f \otimes 1_{M}: N \otimes_{R} M \rightarrow N^{\prime} \otimes_{R} M</annotation></semantics></math>
+is also injective.<br />
+(a) Assume that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a domain. Prove that
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+must be torsion-free.<br />
+(b) Now let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be arbitrary. Prove that the following are equivalent:<br />
+i. for every nonzero
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="N \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">N \neq 0</annotation></semantics></math>
+we have
+<math role="math" aria-label="N \otimes_{R} M \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>M</mi><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">N \otimes_{R} M \neq 0</annotation></semantics></math><br />
+ii. for every maximal ideal
+<math role="math" aria-label="\mathfrak{m}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi><mi mathvariant="fraktur">m</mi></mi><annotation encoding="application/x-tex">\mathfrak{m}</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+we have
+<math role="math" aria-label="\mathfrak{m} M \neq M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi><mi mathvariant="fraktur">m</mi></mi><mi>M</mi><mo>&ne;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">\mathfrak{m} M \neq M</annotation></semantics></math>.</p>
+<p>Note: You may use without proof standard isomorphisms of the form
+<math role="math" aria-label="(R / I) \otimes_{R} M \cong \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mi>/</mi><mi>I</mi><mo stretchy="false" form="postfix">)</mo><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>M</mi><mo>≅</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">(R / I) \otimes_{R} M \cong \ldots</annotation></semantics></math>
+where
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is an ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+25. (Aug
+<math role="math" aria-label="21 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>21</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">21 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 and let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+be finitely generated
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules.<br />
+(a) Prove that
+<math role="math" aria-label="M \otimes_{R} N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>N</mi></mrow><annotation encoding="application/x-tex">M \otimes_{R} N</annotation></semantics></math>
+is finitely generated.<br />
+(b) Assume in addition that
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is Noetherian. Prove that
+<math role="math" aria-label="M \otimes_{R} N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>N</mi></mrow><annotation encoding="application/x-tex">M \otimes_{R} N</annotation></semantics></math>
+is Noetherian. Note: You can use standard properties of Noetherian
+modules (unless they are equivalent or almost equivalent to the
+statement of (b)), but state clearly what you are using.</p>
+<p>Two more problems about tensor products:<br />
+26. Prove or disprove:<br />
+(a)
+<math role="math" aria-label="\mathbb{Q}(\sqrt{10}) \otimes_{\mathbb{Q}} \mathbb{Q}(\sqrt{10})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><msqrt><mn>10</mn></msqrt><mo stretchy="false" form="postfix">)</mo><msub><mo>&otimes;</mo><mi>&Qopf;</mi></msub><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><msqrt><mn>10</mn></msqrt><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}(\sqrt{10}) \otimes_{\mathbb{Q}} \mathbb{Q}(\sqrt{10})</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="\mathbb{Q}(\sqrt{10})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><msqrt><mn>10</mn></msqrt><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}(\sqrt{10})</annotation></semantics></math>
+as a
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>-vector
+space.<br />
+(b)
+<math role="math" aria-label="\mathbb{Q} \otimes_{\mathbb{Z}} \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{Q} \otimes_{\mathbb{Z}} \mathbb{Q}</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+as a
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-module.<br />
+27. Let
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+and
+<math role="math" aria-label="J" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+be ideals of a commutative ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+with 1 . Show that
+<math role="math" aria-label="R / I \otimes_{R} R / J" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>I</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>R</mi><mi>/</mi><mi>J</mi></mrow><annotation encoding="application/x-tex">R / I \otimes_{R} R / J</annotation></semantics></math>
+is isomorphic (as
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-algebra)
+to
+<math role="math" aria-label="R /(I+J)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>I</mi><mo>+</mo><mi>J</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">R /(I+J)</annotation></semantics></math>.</p>
+
+</main>
+</body>
+</html>

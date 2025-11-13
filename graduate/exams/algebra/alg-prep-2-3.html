@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>2.3 Non-commutative Rings - Algebra General Exam Review - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html">Algebra Review Guide</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">2.3 Non-commutative Rings</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="non-commutative-rings">2.3 Non-commutative
+rings</h2>
+<p>In Algebra I and II, no serious non-commutative ring theory is
+covered, which is the main subject of Algebra III. A few very basic
+notions you should know anyhow.</p>
+<p>Know basic ring definitions: Ring, subring; (group of) units, divison
+ring (or skew field); zero divisors; left-, right- and two-sided ideals;
+quotient module
+<math role="math" aria-label="R / I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">R / I</annotation></semantics></math>
+for a left ideal
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+and quotient ring
+<math role="math" aria-label="R / I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">R / I</annotation></semantics></math>
+for a two-sided ideal
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>;
+(side remark: the existence of maximal left-, right- and two-sided
+ideals again follows from Zorn’s Lemma); ring homomorphisms and
+isomorphisms; center
+<math role="math" aria-label="Z(R)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">Z(R)</annotation></semantics></math>
+of a ring
+<math role="math" aria-label="R ; K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">R ; K</annotation></semantics></math>-algebra
+for a field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.</p>
+<p>Know two basic examples: the Hamiltonian quaternions
+<math role="math" aria-label="\mathbb{H}=\mathbb{R} \oplus \mathbb{R} i \oplus \mathbb{R} j \oplus \mathbb{R} k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℍ</mi><mo>=</mo><mi>&Ropf;</mi><mo>&oplus;</mo><mi>&Ropf;</mi><mi>i</mi><mo>&oplus;</mo><mi>&Ropf;</mi><mi>j</mi><mo>&oplus;</mo><mi>&Ropf;</mi><mi>k</mi></mrow><annotation encoding="application/x-tex">\mathbb{H}=\mathbb{R} \oplus \mathbb{R} i \oplus \mathbb{R} j \oplus \mathbb{R} k</annotation></semantics></math>;
+the matrix algebra
+<math role="math" aria-label="M_{n}(K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M_{n}(K)</annotation></semantics></math>
+for a field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="related-problems-5">Related Problems</h2>
+<p>(
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+here is a not necessarily commutative ring with unit 1 )</p>
+<ol>
+<li><p>(Nov
+<math role="math" aria-label="77 \# 10" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>77</mn><mi>#</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">77 \# 10</annotation></semantics></math>
+) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field of characteristic
+<math role="math" aria-label="p&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p&gt;0</annotation></semantics></math>.
+A
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-polynomial
+is a polynomial
+<math role="math" aria-label="f(x)=a_{n} x^{p^{n}}+\ldots+a_{1} x^{p^{1}}+a_{0} x^{p^{0}}=a_{n} x^{p^{n}}+\ldots+a_{1} x^{p}+a_{0} x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>a</mi><mi>n</mi></msub><msup><mi>x</mi><msup><mi>p</mi><mi>n</mi></msup></msup><mo>+</mo><mi>…</mi><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>x</mi><msup><mi>p</mi><mn>1</mn></msup></msup><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub><msup><mi>x</mi><msup><mi>p</mi><mn>0</mn></msup></msup><mo>=</mo><msub><mi>a</mi><mi>n</mi></msub><msup><mi>x</mi><msup><mi>p</mi><mi>n</mi></msup></msup><mo>+</mo><mi>…</mi><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><msup><mi>x</mi><mi>p</mi></msup><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub><mi>x</mi></mrow><annotation encoding="application/x-tex">f(x)=a_{n} x^{p^{n}}+\ldots+a_{1} x^{p^{1}}+a_{0} x^{p^{0}}=a_{n} x^{p^{n}}+\ldots+a_{1} x^{p}+a_{0} x</annotation></semantics></math>
+which is a linear combination of
+<math role="math" aria-label="p^{e}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>e</mi></msup><annotation encoding="application/x-tex">p^{e}</annotation></semantics></math>-th
+powers of
+<math role="math" aria-label="x(e=n, . ., 1,0)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo>=</mo><mi>n</mi><mo>,</mo><mi>.</mi><mi>.</mi><mo>,</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x(e=n, . ., 1,0)</annotation></semantics></math>.
+If
+<math role="math" aria-label="a_{n} \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_{n} \neq 0</annotation></semantics></math>
+then
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+has degree
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.<br />
+(a) Show that the set
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+of all
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-polynomials
+becomes a non-commutative ring under the usual addition and the
+substitution product
+<math role="math" aria-label="f(x) * g(x)=f(g(x))" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>*</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x) * g(x)=f(g(x))</annotation></semantics></math>.
+Does
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+have a unit element? What are the zero divisors?<br />
+(b) Show that every left ideal
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is principal,
+<math role="math" aria-label="I=R f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>R</mi><mi>f</mi></mrow><annotation encoding="application/x-tex">I=R f</annotation></semantics></math>.<br />
+(c) Show that every right ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is principal iff the field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is perfect (
+<math role="math" aria-label="F^{p}=F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>F</mi><mi>p</mi></msup><mo>=</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">F^{p}=F</annotation></semantics></math>
+).<br />
+(d) Are there any perfect fields
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+for which
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is commutative?</p></li>
+<li><p>(Sep
+<math role="math" aria-label="84 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>84</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">84 \# 2</annotation></semantics></math>
+) Let
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+be a left ideal in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+(a) Show
+<math role="math" aria-label="I(L)=\{a \in R \mid L a \subseteq L\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>&isin;</mo><mi>R</mi><mo>∣</mo><mi>L</mi><mi>a</mi><mo>&sube;</mo><mi>L</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">I(L)=\{a \in R \mid L a \subseteq L\}</annotation></semantics></math>
+is the largest subring
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+such that
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+is a 2-sided ideal of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.<br />
+(b) Prove that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a division ring iff
+<math role="math" aria-label="I(L)=L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">I(L)=L</annotation></semantics></math>
+for all nonzero
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>.</p></li>
+<li><p>(1985#3d) An element of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is nilpotent if
+<math role="math" aria-label="x^{n}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^{n}=0</annotation></semantics></math>
+for some
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Show that if
+<math role="math" aria-label="x, y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x, y</annotation></semantics></math>
+are commuting nilpotent elements in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+then so is
+<math role="math" aria-label="x+y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x+y</annotation></semantics></math>;
+give an example to show this is not true if
+<math role="math" aria-label="x, y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x, y</annotation></semantics></math>
+do not commute.</p></li>
+<li><p>(Sep 86 #7) (a) Define the quaternions
+<math role="math" aria-label="\mathbb{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℍ</mi><annotation encoding="application/x-tex">\mathbb{H}</annotation></semantics></math>
+over the reals.<br />
+(b) Show that any homomorphism of
+<math role="math" aria-label="\mathbb{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℍ</mi><annotation encoding="application/x-tex">\mathbb{H}</annotation></semantics></math>
+into the complex numbers is identically zero.<br />
+(c) Prove that the equation
+<math role="math" aria-label="x^{2}+1=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^{2}+1=0</annotation></semantics></math>
+has infinitely many solutions in
+<math role="math" aria-label="\mathbb{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℍ</mi><annotation encoding="application/x-tex">\mathbb{H}</annotation></semantics></math>.
+Why can’t you deduce from the "factorization"
+<math role="math" aria-label="x^{2}+1=(x+i)(x-i)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>i</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>i</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x^{2}+1=(x+i)(x-i)</annotation></semantics></math>
+and the fact that
+<math role="math" aria-label="\mathbb{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℍ</mi><annotation encoding="application/x-tex">\mathbb{H}</annotation></semantics></math>
+is a division ring that there are only two solutions?<br />
+(d) How many solutions has the equation
+<math role="math" aria-label="x^{2}-1=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^{2}-1=0</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℍ</mi><annotation encoding="application/x-tex">\mathbb{H}</annotation></semantics></math>
+?</p></li>
+<li><p>(May 89 #2) Show that in a general ring (not necessarily
+commutative or with unit), all the elements that are not divisors of
+zero have the same additive order. What are the possible values for this
+order?</p></li>
+<li><p>(Aug
+<math role="math" aria-label="89 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>89</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">89 \# 2</annotation></semantics></math>
+) If
+<math role="math" aria-label="(a+b)^{2}=a^{2}+b^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>+</mo><msup><mi>b</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(a+b)^{2}=a^{2}+b^{2}</annotation></semantics></math>
+for all
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>
+in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+show
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is commutative.</p></li>
+<li><p>(Jan 94 #5) Give an example (and a proof that it works) of a ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+without identity and an ideal in the ring direct sum
+<math role="math" aria-label="R \oplus R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&oplus;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R \oplus R</annotation></semantics></math>
+that does not have the form
+<math role="math" aria-label="I_{1} \oplus I_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>1</mn></msub><mo>&oplus;</mo><msub><mi>I</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">I_{1} \oplus I_{2}</annotation></semantics></math>
+where the
+<math role="math" aria-label="I_{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>I</mi><mi>k</mi></msub><annotation encoding="application/x-tex">I_{k}</annotation></semantics></math>
+are ideals in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.</p></li>
+<li><p>(Aug 98 #5) A derivation
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+of a ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a map of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+into itself such that
+<math role="math" aria-label="D(a+b)= D(a)+D(b)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>+</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>D</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>D</mi><mo stretchy="false" form="prefix">(</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">D(a+b)= D(a)+D(b)</annotation></semantics></math>
+and
+<math role="math" aria-label="D(a b)=D(a) b+a D(b)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>D</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mi>b</mi><mo>+</mo><mi>a</mi><mi>D</mi><mo stretchy="false" form="prefix">(</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">D(a b)=D(a) b+a D(b)</annotation></semantics></math>
+for all elements
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Show that if
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+is a derivation, and in addition
+<math role="math" aria-label="D^{2}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>D</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">D^{2}=0</annotation></semantics></math>
+and
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+has no 2-torsion (
+<math role="math" aria-label="2 a=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2 a=0</annotation></semantics></math>
+implies
+<math role="math" aria-label="a=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a=0</annotation></semantics></math>
+), then the "exponential map" I
+<math role="math" aria-label="d+D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>+</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">d+D</annotation></semantics></math>
+is an automorphism of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.</p></li>
+<li><p>(Jan 05 #4) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a field and
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+a finite-dimensional
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-algebra
+(that is
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is a ring with 1 containing
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+in its center with
+<math role="math" aria-label="\operatorname{dim}_{K} A&lt;\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>K</mi></msub><mi>A</mi><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">\operatorname{dim}_{K} A&lt;\infty</annotation></semantics></math>
+). Show that any element of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is either a zero divisor or a unit.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="10 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">10 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a field. Let
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+be a finite-dimensional (possibly non-commutative)
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-algebra
+(with 1 ), and assume that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is a division ring.<br />
+(a) Prove that every
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-subalgebra
+of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is a division ring.<br />
+(b) Assume that
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+is algebraically closed. Prove that
+<math role="math" aria-label="\operatorname{dim}_{K} A=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>K</mi></msub><mi>A</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\operatorname{dim}_{K} A=1</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="11 \# 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mi>#</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">11 \# 1</annotation></semantics></math>
+) Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a simple (left) module for a ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+This means that
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+has no submodules apart from 0 and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="M \cong R / I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>≅</mo><mi>R</mi><mi>/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">M \cong R / I</annotation></semantics></math>
+where
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is a maximal left ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+(b) Show that
+<math role="math" aria-label="E:=\operatorname{End}_{R}(M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>:=</mo><msub><mrow><mi mathvariant="normal">End</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E:=\operatorname{End}_{R}(M)</annotation></semantics></math>
+is a division ring, i.e., every nonzero element of
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+is invertible.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="12 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">12 \# 4</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a ring with 1 . The opposite ring
+<math role="math" aria-label="R^{o p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><annotation encoding="application/x-tex">R^{o p}</annotation></semantics></math>
+is defined as follows: as a set
+<math role="math" aria-label="R^{o p}=R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><mo>=</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R^{o p}=R</annotation></semantics></math>,
+the addition on
+<math role="math" aria-label="R^{o p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><annotation encoding="application/x-tex">R^{o p}</annotation></semantics></math>
+coincides with the addition on
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and the multiplication
+<math role="math" aria-label="*" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>*</mi><annotation encoding="application/x-tex">*</annotation></semantics></math>
+on
+<math role="math" aria-label="R^{o p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mrow><mi>o</mi><mi>p</mi></mrow></msup><annotation encoding="application/x-tex">R^{o p}</annotation></semantics></math>
+is the multiplication on
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+in reverse order, that is,
+<math role="math" aria-label="a * b=b a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>*</mo><mi>b</mi><mo>=</mo><mi>b</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">a * b=b a</annotation></semantics></math>
+(where
+<math role="math" aria-label="b a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">b a</annotation></semantics></math>
+is the product in
+<math role="math" aria-label="R)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">R)</annotation></semantics></math>.
+Let
+<math role="math" aria-label="e \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">e \in R</annotation></semantics></math>
+be an idempotent element, that is,
+<math role="math" aria-label="e^{2}=e" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mn>2</mn></msup><mo>=</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">e^{2}=e</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="e R e=\{" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mi>R</mi><mi>e</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo></mrow><annotation encoding="application/x-tex">e R e=\{</annotation></semantics></math>
+ere
+<math role="math" aria-label=": r \in R\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>:</mo><mi>r</mi><mo>&isin;</mo><mi>R</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">: r \in R\}</annotation></semantics></math>
+is a ring with multiplicative identity
+<math role="math" aria-label="e" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>.<br />
+(b) Consider the left R-module M = Re. Prove that its endomorphism ring
+<math role="math" aria-label="\operatorname{End}_{R}(M)= \operatorname{Hom}_{R}(M, M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">End</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo>,</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{End}_{R}(M)= \operatorname{Hom}_{R}(M, M)</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="(e R e)^{o p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mi>R</mi><mi>e</mi><msup><mo stretchy="false" form="postfix">)</mo><mrow><mi>o</mi><mi>p</mi></mrow></msup></mrow><annotation encoding="application/x-tex">(e R e)^{o p}</annotation></semantics></math>,
+the opposite ring of
+<math role="math" aria-label="e R e" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mi>R</mi><mi>e</mi></mrow><annotation encoding="application/x-tex">e R e</annotation></semantics></math>.</p></li>
+<li><p>(Aug 14 #8) Let
+<math role="math" aria-label="A=M_{n}(R)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A=M_{n}(R)</annotation></semantics></math>
+be the algebra of
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+matrices over a commutative ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+with 1 . Fix
+<math role="math" aria-label="1 \leq i, j \leq n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&le;</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo>&le;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">1 \leq i, j \leq n</annotation></semantics></math>.
+Determine<br />
+(a) the left ideal of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+generated by
+<math role="math" aria-label="E_{i j}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">E_{i j}</annotation></semantics></math>;<br />
+(b) the (two-sided) ideal of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+generated by
+<math role="math" aria-label="E_{i j}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">E_{i j}</annotation></semantics></math>;<br />
+(c) Are there possibly other nonzero ideals of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+besides those of the form (b)?<br />
+(Here as usual
+<math role="math" aria-label="E_{i j}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><annotation encoding="application/x-tex">E_{i j}</annotation></semantics></math>
+denotes the matrix whose
+<math role="math" aria-label="(i, j)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>,</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(i, j)</annotation></semantics></math>
+th entry is 1 and 0 elsewhere.)</p></li>
+<li><p>(Jan 17 #8) Let
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+be the ring of
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+matrices over a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.<br />
+(a) Show the right ideals of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+are precisely the subsets of the form</p></li>
+</ol>
+<p><math role="math" aria-label="\{X \in A \mid \operatorname{image}(X) \subset V\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>X</mi><mo>&isin;</mo><mi>A</mi><mo>∣</mo><mrow><mi mathvariant="normal">image</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>&sub;</mo><mi>V</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{X \in A \mid \operatorname{image}(X) \subset V\}</annotation></semantics></math></p>
+<p>where
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+ranges over all linear subspaces of
+<math role="math" aria-label="F^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>F</mi><mi>n</mi></msup><annotation encoding="application/x-tex">F^{n}</annotation></semantics></math>.<br />
+(b) Show the left ideals of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+are precisely the subsets of the form</p>
+<p><math role="math" aria-label="\{X \in A \mid \operatorname{kernel}(X) \supset W\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>X</mi><mo>&isin;</mo><mi>A</mi><mo>∣</mo><mrow><mi mathvariant="normal">kernel</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>&sup;</mo><mi>W</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{X \in A \mid \operatorname{kernel}(X) \supset W\}</annotation></semantics></math></p>
+<p>where
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+ranges over all linear subspaces of
+<math role="math" aria-label="F^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>F</mi><mi>n</mi></msup><annotation encoding="application/x-tex">F^{n}</annotation></semantics></math>.<br />
+(c) Show that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is a simple ring: its only 2 -sided ideals are
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+itself, and
+<math role="math" aria-label="\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{0\}</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="chapter-3">Chapter 3</h2>
+<h2 class="unnumbered" id="modules-and-canonical-forms">Modules and
+canonical forms</h1>
+
+</main>
+</body>
+</html>

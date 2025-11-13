@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>5.3 Finding Galois Groups - Algebra General Exam Review - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html">Algebra Review Guide</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">5.3 Finding Galois Groups</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="finding-galois-groups">5.3 Finding Galois
+Groups</h2>
+<p>Here are a few remarks (certainly no complete list!) which might help
+in finding Galois groups in a concretely given situation. Let us first
+introduce some notation. If a separable polynomial
+<math role="math" aria-label="f \in K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f \in K[x]</annotation></semantics></math>
+of degree
+<math role="math" aria-label="n&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n&gt;0</annotation></semantics></math>
+is given and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+is the (up to
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-isomorphism
+uniquely determined) splitting field of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+we set
+<math role="math" aria-label="G(f \mid K):=G(L \mid K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(f \mid K):=G(L \mid K)</annotation></semantics></math>
+and call this the Galois group of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.<br /><br /><span class="problem-number">(1)</span> If
+<math role="math" aria-label="R_{f}:=\left\{\alpha_{1}, \ldots, \alpha_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>f</mi></msub><mo>:=</mo><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>&alpha;</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>&alpha;</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">R_{f}:=\left\{\alpha_{1}, \ldots, \alpha_{n}\right\}</annotation></semantics></math>
+is the set of roots of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+in
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>,
+the restriction of elements of
+<math role="math" aria-label="G(f \mid K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(f \mid K)</annotation></semantics></math>
+to
+<math role="math" aria-label="R_{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>f</mi></msub><annotation encoding="application/x-tex">R_{f}</annotation></semantics></math>
+defines an injective group homomorphism res from
+<math role="math" aria-label="G(f \mid K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(f \mid K)</annotation></semantics></math>
+into the group of all permutations of
+<math role="math" aria-label="R_{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>f</mi></msub><annotation encoding="application/x-tex">R_{f}</annotation></semantics></math>.
+Hence
+<math role="math" aria-label="G(f \mid K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(f \mid K)</annotation></semantics></math>
+can be identified with a subgroup of
+<math role="math" aria-label="S_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>n</mi></msub><annotation encoding="application/x-tex">S_{n}</annotation></semantics></math>.<br /><br /><span class="problem-number">(2)</span>
+<math role="math" aria-label="G(f \mid K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(f \mid K)</annotation></semantics></math>
+induces a transitive action on
+<math role="math" aria-label="R_{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>R</mi><mi>f</mi></msub><annotation encoding="application/x-tex">R_{f}</annotation></semantics></math>
+if and only if
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is irreducible. So for an irreducible polynomial
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+of degree 3 or 4 , there are only the following options:<br />
+<math role="math" aria-label="n=3: G(f \mid K)=S_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>3</mn><mo>:</mo><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>S</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">n=3: G(f \mid K)=S_{3}</annotation></semantics></math>
+or
+<math role="math" aria-label="A_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mn>3</mn></msub><annotation encoding="application/x-tex">A_{3}</annotation></semantics></math><br />
+<math role="math" aria-label="n=4: G(f \mid K)=S_{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>4</mn><mo>:</mo><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>S</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">n=4: G(f \mid K)=S_{4}</annotation></semantics></math>
+or
+<math role="math" aria-label="A_{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mn>4</mn></msub><annotation encoding="application/x-tex">A_{4}</annotation></semantics></math>
+or a Sylow 2-subgroup of
+<math role="math" aria-label="S_{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mn>4</mn></msub><annotation encoding="application/x-tex">S_{4}</annotation></semantics></math>
+(hence
+<math role="math" aria-label="\cong D_{8}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>≅</mo><msub><mi>D</mi><mn>8</mn></msub></mrow><annotation encoding="application/x-tex">\cong D_{8}</annotation></semantics></math>
+) or a subgroup generated by a 4-cycle or the unique normal subgroup
+<math role="math" aria-label="V\left(\cong \mathbb{Z}_{2} \times \mathbb{Z}_{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo>≅</mo><msub><mi>&Zopf;</mi><mn>2</mn></msub><mo>&times;</mo><msub><mi>&Zopf;</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">V\left(\cong \mathbb{Z}_{2} \times \mathbb{Z}_{2}\right)</annotation></semantics></math>
+of
+<math role="math" aria-label="S_{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mn>4</mn></msub><annotation encoding="application/x-tex">S_{4}</annotation></semantics></math>
+with
+<math role="math" aria-label="|V|=4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>V</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">|V|=4</annotation></semantics></math>.<br /><br /><span class="problem-number">(3)</span> If
+<math role="math" aria-label="K=\mathbb{Q}, n=3, f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>n</mi><mo>=</mo><mn>3</mn><mo>,</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">K=\mathbb{Q}, n=3, f</annotation></semantics></math>
+is irreducible and not all roots of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+are real, then
+<math role="math" aria-label="G(f \mid K)=S_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>S</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">G(f \mid K)=S_{3}</annotation></semantics></math>.
+(Why?)<br /><br /><span class="problem-number">(4)</span> Recall that
+<math role="math" aria-label="G\left(x^{n}-1 \mid \mathbb{Q}\right)=\mathbb{Z}_{n}^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mi>n</mi></msup><mo>−</mo><mn>1</mn><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msubsup><mi>&Zopf;</mi><mi>n</mi><mo>*</mo></msubsup></mrow><annotation encoding="application/x-tex">G\left(x^{n}-1 \mid \mathbb{Q}\right)=\mathbb{Z}_{n}^{*}</annotation></semantics></math>.
+This provides you (together with the subfields of
+<math role="math" aria-label="\mathbb{Q}\left(\zeta_{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&zeta;</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{Q}\left(\zeta_{n}\right)</annotation></semantics></math>
+) with a couple of nice abelian Galois groups. (In fact, by a famous
+theorem due to Kronecker and Weber, any finite Galois extension
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+of
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+with abelian
+<math role="math" aria-label="G(M \mid \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(M \mid \mathbb{Q})</annotation></semantics></math>
+is a subfield of a cyclotomic field.)<br /><br /><span class="problem-number">(5)</span> An important number associated with the polynomial
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+(which we assume to be monic here) is its discriminant
+<math role="math" aria-label="D_{f}:=\prod_{i&lt;j}\left(\alpha_{i}-\alpha_{j}\right)^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>f</mi></msub><mo>:=</mo><msub><mo>&prod;</mo><mrow><mi>i</mi><mo>&lt;</mo><mi>j</mi></mrow></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&alpha;</mi><mi>i</mi></msub><mo>−</mo><msub><mi>&alpha;</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">D_{f}:=\prod_{i&lt;j}\left(\alpha_{i}-\alpha_{j}\right)^{2}</annotation></semantics></math>,
+where again
+<math role="math" aria-label="R_{f}=\left\{\alpha_{1}, \ldots, \alpha_{n}\right\} . D_{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>f</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>&alpha;</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>&alpha;</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><mi>.</mi><msub><mi>D</mi><mi>f</mi></msub></mrow><annotation encoding="application/x-tex">R_{f}=\left\{\alpha_{1}, \ldots, \alpha_{n}\right\} . D_{f}</annotation></semantics></math>
+has the following properties (see also Problem (24) below):<br />
+(i)
+<math role="math" aria-label="D_{f} \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>f</mi></msub><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">D_{f} \in K</annotation></semantics></math>
+(since it is invariant under
+<math role="math" aria-label="G(f \mid K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(f \mid K)</annotation></semantics></math>
+)<br />
+(ii)
+<math role="math" aria-label="D_{f} \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>f</mi></msub><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">D_{f} \neq 0</annotation></semantics></math>
+(since we assumed that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is separable)<br />
+(iii)
+<math role="math" aria-label="\sqrt{D_{f}}=\prod_{i&lt;j}\left(\alpha_{i}-\alpha_{j}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msub><mi>D</mi><mi>f</mi></msub></msqrt><mo>=</mo><msub><mo>&prod;</mo><mrow><mi>i</mi><mo>&lt;</mo><mi>j</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&alpha;</mi><mi>i</mi></msub><mo>−</mo><msub><mi>&alpha;</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\sqrt{D_{f}}=\prod_{i&lt;j}\left(\alpha_{i}-\alpha_{j}\right)</annotation></semantics></math>
+is an element of the splitting field
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math><br />
+(iv) If
+<math role="math" aria-label="\operatorname{char}(K) \neq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">char</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\operatorname{char}(K) \neq 2</annotation></semantics></math>,
+an element
+<math role="math" aria-label="\sigma \in G(f \mid K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&sigma;</mi><mo>&isin;</mo><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\sigma \in G(f \mid K)</annotation></semantics></math>
+fixes
+<math role="math" aria-label="\sqrt{D_{f}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><msub><mi>D</mi><mi>f</mi></msub></msqrt><annotation encoding="application/x-tex">\sqrt{D_{f}}</annotation></semantics></math>
+iff
+<math role="math" aria-label="\sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&sigma;</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>
+is in
+<math role="math" aria-label="A_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mi>n</mi></msub><annotation encoding="application/x-tex">A_{n}</annotation></semantics></math>.
+Hence
+<math role="math" aria-label="G(f \mid K) \leq A_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>&le;</mo><msub><mi>A</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">G(f \mid K) \leq A_{n}</annotation></semantics></math>
+iff
+<math role="math" aria-label="\sqrt{D_{f}} \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msub><mi>D</mi><mi>f</mi></msub></msqrt><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\sqrt{D_{f}} \in K</annotation></semantics></math>.<br />
+(v)
+<math role="math" aria-label="D_{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mi>f</mi></msub><annotation encoding="application/x-tex">D_{f}</annotation></semantics></math>
+is a polynomial expression in the coefficients of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+We have the following formulas:<br />
+<math role="math" aria-label="f(x)=x^{2}+a x+b \Rightarrow D_{f}=a^{2}-4 b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mo>&rArr;</mo><msub><mi>D</mi><mi>f</mi></msub><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><mi>b</mi></mrow><annotation encoding="application/x-tex">f(x)=x^{2}+a x+b \Rightarrow D_{f}=a^{2}-4 b</annotation></semantics></math><br />
+<math role="math" aria-label="f(x)=x^{3}+a x^{2}+b x+c \Rightarrow D_{f}=a^{2} b^{2}-4 b^{3}-4 a^{3} c-27 c^{2}+18 a b c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>&rArr;</mo><msub><mi>D</mi><mi>f</mi></msub><mo>=</mo><msup><mi>a</mi><mn>2</mn></msup><msup><mi>b</mi><mn>2</mn></msup><mo>−</mo><mn>4</mn><msup><mi>b</mi><mn>3</mn></msup><mo>−</mo><mn>4</mn><msup><mi>a</mi><mn>3</mn></msup><mi>c</mi><mo>−</mo><mn>27</mn><msup><mi>c</mi><mn>2</mn></msup><mo>+</mo><mn>18</mn><mi>a</mi><mi>b</mi><mi>c</mi></mrow><annotation encoding="application/x-tex">f(x)=x^{3}+a x^{2}+b x+c \Rightarrow D_{f}=a^{2} b^{2}-4 b^{3}-4 a^{3} c-27 c^{2}+18 a b c</annotation></semantics></math>,
+in particular<br />
+<math role="math" aria-label="f(x)=x^{3}+p x+q(" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>p</mi><mi>x</mi><mo>+</mo><mi>q</mi><mo stretchy="false" form="prefix">(</mo></mrow><annotation encoding="application/x-tex">f(x)=x^{3}+p x+q(</annotation></semantics></math>
+standard form
+<math role="math" aria-label=") \Rightarrow D_{f}=-4 p^{3}-27 q^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">)</mo><mo>&rArr;</mo><msub><mi>D</mi><mi>f</mi></msub><mo>=</mo><mi>−</mi><mn>4</mn><msup><mi>p</mi><mn>3</mn></msup><mo>−</mo><mn>27</mn><msup><mi>q</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">) \Rightarrow D_{f}=-4 p^{3}-27 q^{2}</annotation></semantics></math><br />
+<math role="math" aria-label="f(x)=x^{4}+p x^{2}+q x+r \Rightarrow D_{f}=16 p^{4} r-4 p^{3} q^{2}-128 p^{2} r^{2}+144 p q^{2} r-27 q^{4}+256 r^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mi>p</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>q</mi><mi>x</mi><mo>+</mo><mi>r</mi><mo>&rArr;</mo><msub><mi>D</mi><mi>f</mi></msub><mo>=</mo><mn>16</mn><msup><mi>p</mi><mn>4</mn></msup><mi>r</mi><mo>−</mo><mn>4</mn><msup><mi>p</mi><mn>3</mn></msup><msup><mi>q</mi><mn>2</mn></msup><mo>−</mo><mn>128</mn><msup><mi>p</mi><mn>2</mn></msup><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mn>144</mn><mi>p</mi><msup><mi>q</mi><mn>2</mn></msup><mi>r</mi><mo>−</mo><mn>27</mn><msup><mi>q</mi><mn>4</mn></msup><mo>+</mo><mn>256</mn><msup><mi>r</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{4}+p x^{2}+q x+r \Rightarrow D_{f}=16 p^{4} r-4 p^{3} q^{2}-128 p^{2} r^{2}+144 p q^{2} r-27 q^{4}+256 r^{3}</annotation></semantics></math><br />
+<math role="math" aria-label="f(x)=x^{4}+a x^{3}+b \Rightarrow D_{f}=-27 a^{4} b^{2}+256 b^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mi>a</mi><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mi>b</mi><mo>&rArr;</mo><msub><mi>D</mi><mi>f</mi></msub><mo>=</mo><mi>−</mi><mn>27</mn><msup><mi>a</mi><mn>4</mn></msup><msup><mi>b</mi><mn>2</mn></msup><mo>+</mo><mn>256</mn><msup><mi>b</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{4}+a x^{3}+b \Rightarrow D_{f}=-27 a^{4} b^{2}+256 b^{3}</annotation></semantics></math></p>
+<h2 class="unnumbered" id="related-problems-12">Related Problems</h2>
+<p>In Problems 1-14 below, a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is given together with a polynomial
+<math role="math" aria-label="f(x) \in F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x) \in F[x]</annotation></semantics></math>,
+respectively an element
+<math role="math" aria-label="\beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&beta;</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+which is algebraic over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.
+Determine the Galois group
+<math role="math" aria-label="G=G(f \mid F)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G=G(f \mid F)</annotation></semantics></math>,
+respectively
+<math role="math" aria-label="G=G(F(\beta) \mid F)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G=G(F(\beta) \mid F)</annotation></semantics></math>
+(also decide whether
+<math role="math" aria-label="F(\beta) / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">F(\beta) / F</annotation></semantics></math>
+is Galois), and answer the questions in brackets.</p>
+<ol>
+<li><p>(Apr
+<math role="math" aria-label="77 \# 6) F=\mathbb{Q}, f=x^{3}+5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>77</mn><mi>#</mi><mn>6</mn><mo stretchy="false" form="postfix">)</mo><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">77 \# 6) F=\mathbb{Q}, f=x^{3}+5</annotation></semantics></math>
+(show
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is irreducible but
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is not of order 3 ; is
+<math role="math" aria-label="G(f \mid \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(f \mid \mathbb{Q})</annotation></semantics></math>
+solvable?)</p></li>
+<li><p>(Jan
+<math role="math" aria-label="81 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>81</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">81 \# 2</annotation></semantics></math>
+)
+<math role="math" aria-label="F=\mathbb{Q}, \beta=" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>&beta;</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">F=\mathbb{Q}, \beta=</annotation></semantics></math>
+primitive 7 -th root of unity (find the minimum polynomial of
+<math role="math" aria-label="\beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&beta;</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>,
+find
+<math role="math" aria-label="[\mathbb{Q}(\beta): \mathbb{Q}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[\mathbb{Q}(\beta): \mathbb{Q}]</annotation></semantics></math>,
+find all subfields).</p></li>
+<li><p>(Jan
+<math role="math" aria-label="82 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>82</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">82 \# 2</annotation></semantics></math>
+)
+<math role="math" aria-label="F=\mathbb{Q}, f=x^{3}+5 x-5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo>−</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">F=\mathbb{Q}, f=x^{3}+5 x-5</annotation></semantics></math>
+(show
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is irreducible, find its real roots; is
+<math role="math" aria-label="G(f \mid \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(f \mid \mathbb{Q})</annotation></semantics></math>
+solvable?)</p></li>
+<li><p><math role="math" aria-label="(\operatorname{Sep} 82 \# 5) F=\mathbb{Q}, f=x^{4}+2 x^{2}+2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">Sep</mi><mo>&#8289;</mo></mrow><mn>82</mn><mi>#</mi><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">(\operatorname{Sep} 82 \# 5) F=\mathbb{Q}, f=x^{4}+2 x^{2}+2</annotation></semantics></math>.</p></li>
+<li><p><math role="math" aria-label="(" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo stretchy="false" form="prefix">(</mo><annotation encoding="application/x-tex">(</annotation></semantics></math>
+March
+<math role="math" aria-label="83 \# 2) F=\mathbb{Q}, \beta=(1+\sqrt{2}) /(1+\sqrt{3})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>83</mn><mi>#</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>&beta;</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><msqrt><mn>3</mn></msqrt><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">83 \# 2) F=\mathbb{Q}, \beta=(1+\sqrt{2}) /(1+\sqrt{3})</annotation></semantics></math>.</p></li>
+<li><p><math role="math" aria-label="(\operatorname{Sep} 86 \# 4) F=\mathbb{Q}, f=x^{4}+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">Sep</mi><mo>&#8289;</mo></mrow><mn>86</mn><mi>#</mi><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">(\operatorname{Sep} 86 \# 4) F=\mathbb{Q}, f=x^{4}+1</annotation></semantics></math>.</p></li>
+<li><p><math role="math" aria-label="(\operatorname{Aug} 88 \# 5 ; \operatorname{Sep} 80 \# 7) F=\mathbb{Q}, f=x^{4}-x^{2}-6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">Aug</mi><mo>&#8289;</mo></mrow><mn>88</mn><mi>#</mi><mn>5</mn><mo>;</mo><mrow><mi mathvariant="normal">Sep</mi><mo>&#8289;</mo></mrow><mn>80</mn><mi>#</mi><mn>7</mn><mo stretchy="false" form="postfix">)</mo><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">(\operatorname{Aug} 88 \# 5 ; \operatorname{Sep} 80 \# 7) F=\mathbb{Q}, f=x^{4}-x^{2}-6</annotation></semantics></math>.</p></li>
+<li><p><math role="math" aria-label="(\operatorname{Jan} 87 \# 3) F=\mathbb{Q}, f=x^{4}-x^{2}-2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">Jan</mi><mo>&#8289;</mo></mrow><mn>87</mn><mi>#</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">(\operatorname{Jan} 87 \# 3) F=\mathbb{Q}, f=x^{4}-x^{2}-2</annotation></semantics></math>.</p></li>
+<li><p>(May
+<math role="math" aria-label="91 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>91</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">91 \# 5</annotation></semantics></math>
+)
+<math role="math" aria-label="F=\mathbb{Q}, f=x^{4}-2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">F=\mathbb{Q}, f=x^{4}-2</annotation></semantics></math>
+(find
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,
+identify all subfields of degree 4 over
+<math role="math" aria-label="Q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+with their corresponding subgroups).</p></li>
+<li><p>(Jan
+<math role="math" aria-label="94 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>94</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">94 \# 2</annotation></semantics></math>
+)
+<math role="math" aria-label="F=\mathbb{Q}, f=x^{4}-2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">F=\mathbb{Q}, f=x^{4}-2</annotation></semantics></math>
+(show
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+isomorphic to the dihedral group of order 8 ).</p></li>
+<li><p>(Jan
+<math role="math" aria-label="95 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>95</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">95 \# 7</annotation></semantics></math>
+)
+<math role="math" aria-label="F=\mathbb{Q}, f=x^{4}-2 x^{2}-2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">F=\mathbb{Q}, f=x^{4}-2 x^{2}-2</annotation></semantics></math>
+(show
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+irreducible, describe
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+as permutations of roots).</p></li>
+<li><p>(Aug
+<math role="math" aria-label="95 \# 3) F=\mathbb{Q}, f=x^{4}-4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>95</mn><mi>#</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">95 \# 3) F=\mathbb{Q}, f=x^{4}-4</annotation></semantics></math>
+(describe
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+as automorphisms, find all subfields).</p></li>
+<li><p>(Jan
+<math role="math" aria-label="97 \# 5) F=\mathbb{Q}, f=x^{4}-5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>97</mn><mi>#</mi><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">97 \# 5) F=\mathbb{Q}, f=x^{4}-5</annotation></semantics></math>
+(describe
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+as a group of permutations of the roots).</p></li>
+<li><p>(Jan 98 #5a)
+<math role="math" aria-label="F=\mathbb{Q}, f=x^{5}+5 x^{3}-20 x+10" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo>,</mo><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>5</mn></msup><mo>+</mo><mn>5</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>20</mn><mi>x</mi><mo>+</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">F=\mathbb{Q}, f=x^{5}+5 x^{3}-20 x+10</annotation></semantics></math>.</p></li>
+<li><p>(Nov 77 #8) Find
+<math role="math" aria-label="\operatorname{Gal}(E / \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(E / \mathbb{Q})</annotation></semantics></math>
+if
+<math role="math" aria-label="E=\mathbb{Q}(i, \beta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>,</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E=\mathbb{Q}(i, \beta)</annotation></semantics></math>
+for
+<math role="math" aria-label="\beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&beta;</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+a primitive
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-th
+root of unity for odd
+<math role="math" aria-label="n&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n&gt;1</annotation></semantics></math>.</p></li>
+<li><p>(Sep 78 #4) (a) If
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is irreducible of degree 5 over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>,
+show
+<math role="math" aria-label="G(f / \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(f / \mathbb{Q})</annotation></semantics></math>
+contains an element of order 5.<br />
+(b) Show
+<math role="math" aria-label="G\left(x^{4}+1 / \mathbb{Q}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>1</mn><mi>/</mi><mi>&Qopf;</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">G\left(x^{4}+1 / \mathbb{Q}\right)</annotation></semantics></math>
+has NO element of order 4.<br />
+(c) Show
+<math role="math" aria-label="G\left(x^{4}+x^{3}+1 / \mathbb{Q}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>1</mn><mi>/</mi><mi>&Qopf;</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">G\left(x^{4}+x^{3}+1 / \mathbb{Q}\right)</annotation></semantics></math>
+HAS an element of order 4 .</p></li>
+<li><p>(Jan 79 #6; Sep 79 #6) Find
+<math role="math" aria-label="\operatorname{Gal}(E / \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(E / \mathbb{Q})</annotation></semantics></math>
+for
+<math role="math" aria-label="E=\mathbb{Q}(\sqrt{2}, i)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><msqrt><mn>2</mn></msqrt><mo>,</mo><mi>i</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E=\mathbb{Q}(\sqrt{2}, i)</annotation></semantics></math>
+or
+<math role="math" aria-label="E=\mathbb{Q}(i+\sqrt{2})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo>+</mo><msqrt><mn>2</mn></msqrt><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E=\mathbb{Q}(i+\sqrt{2})</annotation></semantics></math>.</p></li>
+<li><p>(Sep
+<math role="math" aria-label="83 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>83</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">83 \# 4</annotation></semantics></math>
+) If
+<math role="math" aria-label="x^{4}+a x^{2}+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{4}+a x^{2}+1</annotation></semantics></math>
+is separable and irreducible over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+find all roots and their relationships, find
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+must be infinite.</p></li>
+<li><p>(Sep
+<math role="math" aria-label="84 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>84</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">84 \# 3</annotation></semantics></math>
+) If
+<math role="math" aria-label="E / \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mi>/</mi><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">E / \mathbb{Q}</annotation></semantics></math>
+is Galois of degree 4 , prove
+<math role="math" aria-label="E=\mathbb{Q}(\beta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E=\mathbb{Q}(\beta)</annotation></semantics></math>
+for a root
+<math role="math" aria-label="\beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&beta;</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>
+of a polynomial
+<math role="math" aria-label="x^{4}+a x^{2}+b \in \mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mo>&isin;</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">x^{4}+a x^{2}+b \in \mathbb{Q}[x]</annotation></semantics></math>;
+show
+<math role="math" aria-label="\operatorname{Gal}(E / \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(E / \mathbb{Q})</annotation></semantics></math>
+is cyclic iff
+<math role="math" aria-label="b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+is NOT in
+<math role="math" aria-label="\mathbb{Q}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Qopf;</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{Q}^{2}</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="89 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>89</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">89 \# 4</annotation></semantics></math>;
+Feb
+<math role="math" aria-label="84 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>84</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">84 \# 2</annotation></semantics></math>
+) (a) Find
+<math role="math" aria-label="\operatorname{Gal}\left(x^{3}-2 / \mathbb{Q}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>2</mn><mi>/</mi><mi>&Qopf;</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Gal}\left(x^{3}-2 / \mathbb{Q}\right)</annotation></semantics></math>.<br />
+(b) Find
+<math role="math" aria-label="f(x) \in \mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x) \in \mathbb{Q}[x]</annotation></semantics></math>
+with
+<math role="math" aria-label="\operatorname{Gal}(f / \mathbb{Q})=\mathbb{Z}_{2} \times S_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>&Zopf;</mi><mn>2</mn></msub><mo>&times;</mo><msub><mi>S</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(f / \mathbb{Q})=\mathbb{Z}_{2} \times S_{3}</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="89 \# 8" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>89</mn><mi>#</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">89 \# 8</annotation></semantics></math>
+) If
+<math role="math" aria-label="\beta=\sqrt{2+\sqrt{2}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&beta;</mi><mo>=</mo><msqrt><mrow><mn>2</mn><mo>+</mo><msqrt><mn>2</mn></msqrt></mrow></msqrt></mrow><annotation encoding="application/x-tex">\beta=\sqrt{2+\sqrt{2}}</annotation></semantics></math>,
+show
+<math role="math" aria-label="\mathbb{Q}(\beta) / \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{Q}(\beta) / \mathbb{Q}</annotation></semantics></math>
+is Galois with
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+cyclic; set up the Galois correspondence.</p></li>
+<li><p>(Sep
+<math role="math" aria-label="93 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>93</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">93 \# 6</annotation></semantics></math>
+)
+<math role="math" aria-label="F=\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">F=\mathbb{Q}</annotation></semantics></math>,
+<math role="math" aria-label="f=x^{5}-6 x+3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">f=x^{5}-6 x+3</annotation></semantics></math>.
+Prove
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is<br />
+(a) irreducible,<br />
+(b) has exactly 3 real roots,<br />
+(c)
+<math role="math" aria-label="G(E / L)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mi>/</mi><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(E / L)</annotation></semantics></math>
+contains a transposition of roots of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+for any real subfield
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+of the splitting field
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>,<br />
+(d)
+<math role="math" aria-label="G(E / Q)=S_{5}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mi>/</mi><mi>Q</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>S</mi><mn>5</mn></msub></mrow><annotation encoding="application/x-tex">G(E / Q)=S_{5}</annotation></semantics></math>,<br />
+(e)
+<math role="math" aria-label="0&lt;r \in \mathbb{Q}, \sqrt{r} \notin \mathbb{Q} \Longrightarrow \sqrt{r} \notin E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>r</mi><mo>&isin;</mo><mi>&Qopf;</mi><mo>,</mo><msqrt><mi>r</mi></msqrt><mo>&notin;</mo><mi>&Qopf;</mi><mo>&rArr;</mo><msqrt><mi>r</mi></msqrt><mo>&notin;</mo><mi>E</mi></mrow><annotation encoding="application/x-tex">0&lt;r \in \mathbb{Q}, \sqrt{r} \notin \mathbb{Q} \Longrightarrow \sqrt{r} \notin E</annotation></semantics></math>.</p></li>
+<li><p>(Jan 98 #5) The Galois group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+of a polynomial
+<math role="math" aria-label="f(x) \in F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x) \in F[x]</annotation></semantics></math>
+of degree 4 is known to contain a subgroup isomorphic to the dihedral
+group
+<math role="math" aria-label="D_{8}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>8</mn></msub><annotation encoding="application/x-tex">D_{8}</annotation></semantics></math>.<br />
+(a) Show that
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is irreducible.<br />
+(b) If some root
+<math role="math" aria-label="r_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>r</mi><mi>i</mi></msub><annotation encoding="application/x-tex">r_{i}</annotation></semantics></math>
+of
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+lies in the subfield
+<math role="math" aria-label="F\left(r_{j}, r_{k}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>r</mi><mi>j</mi></msub><mo>,</mo><msub><mi>r</mi><mi>k</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F\left(r_{j}, r_{k}\right)</annotation></semantics></math>
+generated by two other roots, show
+<math role="math" aria-label="F\left(r_{j}, r_{k}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>r</mi><mi>j</mi></msub><mo>,</mo><msub><mi>r</mi><mi>k</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">F\left(r_{j}, r_{k}\right)</annotation></semantics></math>
+is a splitting field for
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+and that
+<math role="math" aria-label="G=D_{8}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><msub><mi>D</mi><mn>8</mn></msub></mrow><annotation encoding="application/x-tex">G=D_{8}</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="00 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>00</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">00 \# 7</annotation></semantics></math>
+) Suppose that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is an irreducible polynomial of degree
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+with rational coefficients. Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a splitting field for
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+over the rationals
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>,
+and let
+<math role="math" aria-label="r_{1}, \ldots, r_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>r</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">r_{1}, \ldots, r_{n}</annotation></semantics></math>
+be the roots of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+in
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+with
+<math role="math" aria-label="a=\prod_{i&lt;j}\left(r_{i}-r_{j}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><msub><mo>&prod;</mo><mrow><mi>i</mi><mo>&lt;</mo><mi>j</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>r</mi><mi>i</mi></msub><mo>−</mo><msub><mi>r</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">a=\prod_{i&lt;j}\left(r_{i}-r_{j}\right)</annotation></semantics></math>.<br />
+(a) Show that the roots of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+are distinct.<br />
+(b) If the product
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+is not rational, show the Galois group
+<math role="math" aria-label="\operatorname{Gal}(K / \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K / \mathbb{Q})</annotation></semantics></math>
+contains an element which yields an odd permutation of the roots.<br />
+(c) If the product
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+is not rational, show that
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+contains at least one quadratic subfield.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="00 \# 8)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>00</mn><mi>#</mi><mn>8</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">00 \# 8)</annotation></semantics></math>
+Let
+<math role="math" aria-label="\zeta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&zeta;</mi><annotation encoding="application/x-tex">\zeta</annotation></semantics></math>
+be primitive 3rd root of unity,
+<math role="math" aria-label="K=\mathbb{Q}(\zeta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>&zeta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K=\mathbb{Q}(\zeta)</annotation></semantics></math>,
+and
+<math role="math" aria-label="L=K(\sqrt[3]{2})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mroot><mn>2</mn><mn>3</mn></mroot><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L=K(\sqrt[3]{2})</annotation></semantics></math>.<br />
+(a) Show that
+<math role="math" aria-label="L / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">L / K</annotation></semantics></math>
+is a Galois extension, and determine its Galois group
+<math role="math" aria-label="G:=G a l(L / K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>:=</mo><mi>G</mi><mi>a</mi><mi>l</mi><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mi>/</mi><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G:=G a l(L / K)</annotation></semantics></math>.<br />
+(b) Considering
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+as vector space over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+determine all
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-linear
+functionals
+<math role="math" aria-label="f: L \rightarrow K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>L</mi><mo>&rarr;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">f: L \rightarrow K</annotation></semantics></math>
+which are
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>-invariant
+(i.e.
+<math role="math" aria-label="f(\sigma(a))=f(a)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>&sigma;</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(\sigma(a))=f(a)</annotation></semantics></math>
+for all
+<math role="math" aria-label="\sigma \in G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&sigma;</mi><mo>&isin;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">\sigma \in G</annotation></semantics></math>
+and all
+<math role="math" aria-label="a \in L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">a \in L</annotation></semantics></math>
+).</p></li>
+<li><p>(Aug 01 #8) Find the Galois group of
+<math role="math" aria-label="f(x)=x^{13}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>13</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(x)=x^{13}-1</annotation></semantics></math>
+over the rationals
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+(i.e.
+<math role="math" aria-label="\operatorname{Gal}(K / \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K / \mathbb{Q})</annotation></semantics></math>
+for
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+the splitting field of
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+).</p></li>
+<li><p>(Aug 03 #5) Choose your favorite one, denoted by
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,
+between the Klein four group (i.e.
+<math role="math" aria-label="\mathbb{Z}_{2} \times \mathbb{Z}_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><mn>2</mn></msub><mo>&times;</mo><msub><mi>&Zopf;</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{2} \times \mathbb{Z}_{2}</annotation></semantics></math>
+) and the dihedral group
+<math role="math" aria-label="D_{8}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>8</mn></msub><annotation encoding="application/x-tex">D_{8}</annotation></semantics></math>
+of order 8. Provide an example of an irreducible degree 4 polynomial
+whose Galois group over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.
+Show your work.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="05 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>05</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">05 \# 6</annotation></semantics></math>
+) Let
+<math role="math" aria-label="f \in \mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f \in \mathbb{Q}[x]</annotation></semantics></math>
+be an irreducible polynomial of degree
+<math role="math" aria-label="4, \alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mi>&alpha;</mi></mrow><annotation encoding="application/x-tex">4, \alpha</annotation></semantics></math>
+a root of
+<math role="math" aria-label="f, K:=\mathbb{Q}(\alpha)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>K</mi><mo>:=</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f, K:=\mathbb{Q}(\alpha)</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+the splitting field of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>.
+Assume that
+<math role="math" aria-label="[L: \mathbb{Q}] \neq 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>L</mi><mo>:</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">]</mo><mo>&ne;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">[L: \mathbb{Q}] \neq 4</annotation></semantics></math>.<br />
+(a) Show that
+<math role="math" aria-label="G(L \mid \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(L \mid \mathbb{Q})</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="S_{4}, A_{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>S</mi><mn>4</mn></msub><mo>,</mo><msub><mi>A</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">S_{4}, A_{4}</annotation></semantics></math>
+or
+<math role="math" aria-label="D_{8}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>8</mn></msub><annotation encoding="application/x-tex">D_{8}</annotation></semantics></math>.<br />
+(b) Show that
+<math role="math" aria-label="G(L \mid \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G(L \mid \mathbb{Q})</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="D_{8}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>8</mn></msub><annotation encoding="application/x-tex">D_{8}</annotation></semantics></math>
+if
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+contains a subfield
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+such that
+<math role="math" aria-label="[F: \mathbb{Q}]=2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>F</mi><mo>:</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">[F: \mathbb{Q}]=2</annotation></semantics></math>.
+(You might use the subgroup structure of
+<math role="math" aria-label="S_{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mn>4</mn></msub><annotation encoding="application/x-tex">S_{4}</annotation></semantics></math>
+for free.)</p></li>
+<li><p>(Aug
+<math role="math" aria-label="05 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>05</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">05 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a field,
+<math role="math" aria-label="f \in K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f \in K[x]</annotation></semantics></math>
+a reducible separable polynomial of degree
+<math role="math" aria-label="4, L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mo>,</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">4, L</annotation></semantics></math>
+the splitting field of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="G=G(L \mid K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><mi>G</mi><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mo>∣</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">G=G(L \mid K)</annotation></semantics></math>
+the corresponding Galois group. List all (but no more!) possibilities
+for
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+in the following two cases:<br />
+(a)
+<math role="math" aria-label="K=\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">K=\mathbb{Q}</annotation></semantics></math><br />
+(b)
+<math role="math" aria-label="K=\mathbb{F}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>=</mo><msub><mi>&Fopf;</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">K=\mathbb{F}_{p}</annotation></semantics></math>,
+where
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is a prime number</p></li>
+<li><p>(Jan 08 #8) (a) Find a splitting field
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+of the polynomial
+<math role="math" aria-label="x^{4}+3 x^{3}+4 x^{2}+3 x+3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>3</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>4</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x^{4}+3 x^{3}+4 x^{2}+3 x+3</annotation></semantics></math>
+over the rationals
+<math role="math" aria-label="F=\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">F=\mathbb{Q}</annotation></semantics></math>,
+and find its degree
+<math role="math" aria-label="[E: F]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>E</mi><mo>:</mo><mi>F</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[E: F]</annotation></semantics></math>.<br />
+(Hint: First factorize over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>,
+and then write
+<math role="math" aria-label="E=F(\alpha, \beta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>=</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo>,</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">E=F(\alpha, \beta)</annotation></semantics></math>
+for an easy pure imaginary
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+and a real
+<math role="math" aria-label="\beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&beta;</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>.)<br />
+(b) Find the Galois group
+<math role="math" aria-label="\operatorname{Gal}(E / F)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mi>/</mi><mi>F</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(E / F)</annotation></semantics></math>
+of the extension field (describe all the automorphisms by their actions
+on
+<math role="math" aria-label="\alpha, \beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>,</mo><mi>&beta;</mi></mrow><annotation encoding="application/x-tex">\alpha, \beta</annotation></semantics></math>
+).<br />
+(c) Diagram the lattice of subgroups of the Galois group and the
+corresponding lattice of sub-field-extensions of
+<math role="math" aria-label="E / F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mi>/</mi><mi>F</mi></mrow><annotation encoding="application/x-tex">E / F</annotation></semantics></math>.</p></li>
+<li><p>(Aug 08 #8) This problem involves finding a seventh degree
+polynomial whose Galois group is isomorphic to
+<math role="math" aria-label="S_{7}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mn>7</mn></msub><annotation encoding="application/x-tex">S_{7}</annotation></semantics></math>.<br />
+(a) Prove that if
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is prime then any transposition
+<math role="math" aria-label="\tau" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&tau;</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+and
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-cycle
+<math role="math" aria-label="\sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&sigma;</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>
+together generate all of
+<math role="math" aria-label="S_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mi>p</mi></msub><annotation encoding="application/x-tex">S_{p}</annotation></semantics></math>.<br />
+(b) Prove that if
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is a prime number, and
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+a splitting field over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+for an irreducible polynomial
+<math role="math" aria-label="f(x) \in \mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x) \in \mathbb{Q}[x]</annotation></semantics></math>
+of degree
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+with exactly
+<math role="math" aria-label="p-2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>−</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">p-2</annotation></semantics></math>
+real roots, then the Galois group
+<math role="math" aria-label="\operatorname{Gal}(E \mid \mathbb{Q})=S_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>S</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(E \mid \mathbb{Q})=S_{p}</annotation></semantics></math>.<br />
+(c) Give a counter-example to the statement in part (b) if the degree of
+the polynomial is not prime.<br />
+(d) Exhibit (with proof) an irreducible polynomial of degree 7 over the
+rationals whose Galois group is
+<math role="math" aria-label="S_{7}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mn>7</mn></msub><annotation encoding="application/x-tex">S_{7}</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="09 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>09</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">09 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="p(x)=x^{4}-2 \in \mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mn>2</mn><mo>&isin;</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">p(x)=x^{4}-2 \in \mathbb{Q}[x]</annotation></semantics></math>.<br />
+(a) Find a splitting field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+for
+<math role="math" aria-label="p(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p(x)</annotation></semantics></math>.
+Describe
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+in the form
+<math role="math" aria-label="\mathbb{Q}(\alpha, \beta)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo>,</mo><mi>&beta;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}(\alpha, \beta)</annotation></semantics></math>
+for some
+<math role="math" aria-label="\alpha, \beta \in \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>,</mo><mi>&beta;</mi><mo>&isin;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">\alpha, \beta \in \mathbb{C}</annotation></semantics></math>.<br />
+(b) Determine the Galois group
+<math role="math" aria-label="\operatorname{Gal}(K \mid \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K \mid \mathbb{Q})</annotation></semantics></math>
+and describe its elements by their actions on
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math><br />
+and
+<math role="math" aria-label="\beta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&beta;</mi><annotation encoding="application/x-tex">\beta</annotation></semantics></math>.<br />
+(c) Which (well-known) group is
+<math role="math" aria-label="\operatorname{Gal}(K \mid \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>∣</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K \mid \mathbb{Q})</annotation></semantics></math>
+isomorphic to? Prove your answer.</p></li>
+<li><p>(Aug 11 #6) (a) Suppose that, for some prime number
+<math role="math" aria-label="p, G=C_{p} \times \ldots \times C_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mi>G</mi><mo>=</mo><msub><mi>C</mi><mi>p</mi></msub><mo>&times;</mo><mi>…</mi><mo>&times;</mo><msub><mi>C</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">p, G=C_{p} \times \ldots \times C_{p}</annotation></semantics></math>
+is a direct product of
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+copies of the cyclic group
+<math role="math" aria-label="C_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>C</mi><mi>p</mi></msub><annotation encoding="application/x-tex">C_{p}</annotation></semantics></math>
+of order p. How many subgroups does
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+have of order
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+? How many does it have of order
+<math role="math" aria-label="p^{n-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">p^{n-1}</annotation></semantics></math>
+? Explain.<br />
+(b) Now let
+<math role="math" aria-label="p_{1}, \ldots, p_{r}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>p</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">p_{1}, \ldots, p_{r}</annotation></semantics></math>
+be distinct prime numbers. Show that
+<math role="math" aria-label="F:=\mathbb{Q}\left[\sqrt{p_{1}}, \ldots, \sqrt{p_{r}}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:=</mo><mi>&Qopf;</mi><mrow><mo stretchy="true" form="prefix">[</mo><msqrt><msub><mi>p</mi><mn>1</mn></msub></msqrt><mo>,</mo><mi>…</mi><mo>,</mo><msqrt><msub><mi>p</mi><mi>r</mi></msub></msqrt><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">F:=\mathbb{Q}\left[\sqrt{p_{1}}, \ldots, \sqrt{p_{r}}\right]</annotation></semantics></math>
+is an abelian Galois extension of
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>.<br />
+(c) Suppose that
+<math role="math" aria-label="a=p_{i_{1}} \ldots p_{i_{m}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><msub><mi>p</mi><msub><mi>i</mi><mn>1</mn></msub></msub><mi>…</mi><msub><mi>p</mi><msub><mi>i</mi><mi>m</mi></msub></msub></mrow><annotation encoding="application/x-tex">a=p_{i_{1}} \ldots p_{i_{m}}</annotation></semantics></math>
+(with distinct factors) is a nontrivial product of some of the primes
+<math role="math" aria-label="p_{1}, \ldots, p_{r}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>p</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">p_{1}, \ldots, p_{r}</annotation></semantics></math>.
+Let
+<math role="math" aria-label="b \neq a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>&ne;</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">b \neq a</annotation></semantics></math>
+be another such element. Show that
+<math role="math" aria-label="\mathbb{Q}[\sqrt{a}] \neq \mathbb{Q}[\sqrt{b}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mi>a</mi></msqrt><mo stretchy="false" form="postfix">]</mo><mo>&ne;</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mi>b</mi></msqrt><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}[\sqrt{a}] \neq \mathbb{Q}[\sqrt{b}]</annotation></semantics></math>.
+Now use<br />
+(a) to determine precisely the Galois group of
+<math role="math" aria-label="F / \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>/</mi><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">F / \mathbb{Q}</annotation></semantics></math>.
+Carefully justify your answer.<br />
+(d) Show that the numbers
+<math role="math" aria-label="\sqrt{p_{1}}, \ldots, \sqrt{p_{r}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msub><mi>p</mi><mn>1</mn></msub></msqrt><mo>,</mo><mi>…</mi><mo>,</mo><msqrt><msub><mi>p</mi><mi>r</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{p_{1}}, \ldots, \sqrt{p_{r}}</annotation></semantics></math>
+are linearly independent over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>,
+and that
+<math role="math" aria-label="\sqrt{p_{1}}+ \ldots+\sqrt{p_{r}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msqrt><msub><mi>p</mi><mn>1</mn></msub></msqrt><mo>+</mo><mi>…</mi><mo>+</mo><msqrt><msub><mi>p</mi><mi>r</mi></msub></msqrt></mrow><annotation encoding="application/x-tex">\sqrt{p_{1}}+ \ldots+\sqrt{p_{r}}</annotation></semantics></math>
+is a primitive element of
+<math role="math" aria-label="F / \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>/</mi><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">F / \mathbb{Q}</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="13 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">13 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field and
+<math role="math" aria-label="f(x)=x^{4}+1 \in F[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mn>1</mn><mo>&isin;</mo><mi>F</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x)=x^{4}+1 \in F[x]</annotation></semantics></math>.<br />
+(a) Determine for which characteristic of
+<math role="math" aria-label="F f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F f(x)</annotation></semantics></math>
+is separable.<br />
+(b) Assume that
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is separable and irreducible over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+and denote by
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+the splitting field of
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.
+Determine the Galois group
+<math role="math" aria-label="\operatorname{Gal}(K \mid F)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo>∣</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K \mid F)</annotation></semantics></math>.<br />
+(c) If
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is irreducible over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+prove first that
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is infinite, and then that the characteristic of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+is 0 .</p></li>
+<li><p>(Jan 14 #7) Consider the real number
+<math role="math" aria-label="u=\sqrt{3+\sqrt{11}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><msqrt><mrow><mn>3</mn><mo>+</mo><msqrt><mn>11</mn></msqrt></mrow></msqrt></mrow><annotation encoding="application/x-tex">u=\sqrt{3+\sqrt{11}}</annotation></semantics></math>.<br />
+(a) Determine the minimal polynomial for
+<math role="math" aria-label="u" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>,
+and justify that it is the minimal polynomial.<br />
+(b) Is
+<math role="math" aria-label="\mathbb{Q}[u]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>u</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}[u]</annotation></semantics></math>
+the splitting field for the minimal polynomial of
+<math role="math" aria-label="u" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+? (Hint: consider which roots are real and which are complex.)<br />
+(c) Determine the Galois group of the splitting field. (Hint: What is
+the degree of the field extension?)</p></li>
+<li><p>(Aug
+<math role="math" aria-label="14 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>14</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">14 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="f(x)=x^{5}-2 \in \mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><mn>2</mn><mo>&isin;</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x)=x^{5}-2 \in \mathbb{Z}[x]</annotation></semantics></math>.<br />
+(a) Determine the splitting field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+of
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>;<br />
+(b) Determine the Galois group of
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>;<br />
+(c) List all the subfields
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+such that
+<math role="math" aria-label="[K: \mathbb{Q}]=4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>K</mi><mo>:</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">[K: \mathbb{Q}]=4</annotation></semantics></math>.</p></li>
+<li><p>(Aug 15 #8) Consider the polynomial
+<math role="math" aria-label="x^{6}-3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>6</mn></msup><mo>−</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x^{6}-3</annotation></semantics></math>
+over the rational numbers. What is the degree of its splitting field,
+and what is the splitting field? Describe the Galois group of the
+splitting field as a subgroup of the symmetric group
+<math role="math" aria-label="S_{6}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>S</mi><mn>6</mn></msub><annotation encoding="application/x-tex">S_{6}</annotation></semantics></math>.
+Is it abelian?</p></li>
+<li><p>(Aug
+<math role="math" aria-label="16 \# 3)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mi>#</mi><mn>3</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">16 \# 3)</annotation></semantics></math>
+Let
+<math role="math" aria-label="f(x)=x^{4}-x^{2}+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f(x)=x^{4}-x^{2}+1</annotation></semantics></math>.<br />
+(a) Describe a splitting field
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+for
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+(in particular, find its degree).<br />
+(b) Describe the Galois group of
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+and all of its subfields.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="17 \# 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>17</mn><mi>#</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">17 \# 1</annotation></semantics></math>
+) Consider the polynomial
+<math role="math" aria-label="f(X)=X^{4}-2 X^{2}-6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>X</mi><mn>4</mn></msup><mo>−</mo><mn>2</mn><msup><mi>X</mi><mn>2</mn></msup><mo>−</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">f(X)=X^{4}-2 X^{2}-6</annotation></semantics></math>.
+Prove this polynomial is irreducible. Describe the splitting field of
+this polynomial (including its degree over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+), and the Galois group of this splitting field (hint: pay attention to
+which roots are real and which are complex).</p></li>
+<li><p>(Jan 18 #7) (a) Construct, using cyclotomic fields, a Galois
+extension
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+of
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+of degree 3. Include arguments.<br />
+(b) Find, explicitly, a polynomial
+<math role="math" aria-label="f(x) \in \mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x) \in \mathbb{Q}[x]</annotation></semantics></math>
+such that your field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+in (a) is the splitting field of
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>.</p></li>
+<li><p>(Aug 18 #7) What is the Galois group of
+<math role="math" aria-label="x^{5}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>5</mn></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{5}-1</annotation></semantics></math>
+over a field with 7 elements?</p></li>
+<li><p>(Jan 19 #7) Let
+<math role="math" aria-label="F=\mathbb{Q}(\sqrt[6]{3}, i)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><mroot><mn>3</mn><mn>6</mn></mroot><mo>,</mo><mi>i</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F=\mathbb{Q}(\sqrt[6]{3}, i)</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="[F: \mathbb{Q}]=12" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>F</mi><mo>:</mo><mi>&Qopf;</mi><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mn>12</mn></mrow><annotation encoding="application/x-tex">[F: \mathbb{Q}]=12</annotation></semantics></math><br />
+(b) Prove that the extension
+<math role="math" aria-label="F / \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mi>/</mi><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">F / \mathbb{Q}</annotation></semantics></math>
+is Galois<br />
+(c) Prove that the Galois group
+<math role="math" aria-label="\operatorname{Gal}(F / \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(F / \mathbb{Q})</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="D_{12}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mn>12</mn></msub><annotation encoding="application/x-tex">D_{12}</annotation></semantics></math>,
+the dihedral group of order 12.</p></li>
+<li><p>(Aug 20 #8) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be the splitting field of the polynomial
+<math role="math" aria-label="f(x)=\left(x^{3}-11\right)\left(x^{2}+x-1\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>11</mn><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x)=\left(x^{3}-11\right)\left(x^{2}+x-1\right)</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>.<br />
+(a) Find (with proof) the degree of the extension
+<math role="math" aria-label="K / \mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mi>/</mi><mi>&Qopf;</mi></mrow><annotation encoding="application/x-tex">K / \mathbb{Q}</annotation></semantics></math>.<br />
+(b) Determine the isomorphism class of the Galois group
+<math role="math" aria-label="\operatorname{Gal}(K / \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K / \mathbb{Q})</annotation></semantics></math>
+and prove your answer. State your answer in the form
+<math role="math" aria-label="\operatorname{Gal}(K / \mathbb{Q}) \cong G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo><mo>≅</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K / \mathbb{Q}) \cong G</annotation></semantics></math>
+where
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is a "familiar" group, e.g.
+<math role="math" aria-label="G L_{2}\left(\mathbb{F}_{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><msub><mi>L</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&Fopf;</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">G L_{2}\left(\mathbb{F}_{2}\right)</annotation></semantics></math>
+or
+<math role="math" aria-label="\mathbb{Z}_{2} \times \mathbb{Z}_{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><mn>2</mn></msub><mo>&times;</mo><msub><mi>&Zopf;</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{2} \times \mathbb{Z}_{4}</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="21 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>21</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">21 \# 6</annotation></semantics></math>
+) Consider
+<math role="math" aria-label="f(x)=x^{4}+a x^{2}-1 \in \mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>4</mn></msup><mo>+</mo><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo>&isin;</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f(x)=x^{4}+a x^{2}-1 \in \mathbb{Q}[x]</annotation></semantics></math>
+where
+<math role="math" aria-label="a \in \mathbb{Z} \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>&Zopf;</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">a \in \mathbb{Z} \backslash\{0\}</annotation></semantics></math>.
+Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be the splitting field of
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+over
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>.<br />
+(a) Show that
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+is irreducible<br />
+(b) Show that
+<math role="math" aria-label="i \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">i \in K</annotation></semantics></math><br />
+(c) Determine the isomorphism class of the Galois group
+<math role="math" aria-label="\operatorname{Gal}(K / \mathbb{Q})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K / \mathbb{Q})</annotation></semantics></math>
+(your answer should be of the form
+<math role="math" aria-label="\operatorname{Gal}(K / \mathbb{Q}) \cong G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Gal</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mi>/</mi><mi>&Qopf;</mi><mo stretchy="false" form="postfix">)</mo><mo>≅</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">\operatorname{Gal}(K / \mathbb{Q}) \cong G</annotation></semantics></math>
+where
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is a familiar group).</p></li>
+</ol>
+</main>
+
+</main>
+</body>
+</html>

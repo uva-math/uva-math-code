@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>3.1 Modules - Algebra General Exam Review - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html">Algebra Review Guide</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">3.1 Modules</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="modules">3.1 Modules</h2>
+<h2 class="unnumbered" id="know-basic-notions">Know basic notions:</h2>
+<p>(i) for a general, not necessarily commutative ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+:<br />
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module,
+submodule, quotient module, isomorphism theorem(s), correspondence
+theorem; annihilators and torsion elements; cyclic, simple (or
+irreducible) and free modules; direct sums and direct products and their
+universal properties; know that the direct product of infinitely many
+copies of
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>
+is not a free
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-module;
+spanning and linearly independent subsets; sets of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+homomorphisms and the algebraic structures on them:
+<math role="math" aria-label="\operatorname{Hom}_{R}(M, N)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo>,</mo><mi>N</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Hom}_{R}(M, N)</annotation></semantics></math>
+is always an abelian group and an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is commutative;
+<math role="math" aria-label="\operatorname{End}_{R}(M)=\operatorname{Hom}_{R}(M, M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">End</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo>,</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{End}_{R}(M)=\operatorname{Hom}_{R}(M, M)</annotation></semantics></math>
+is always a ring and an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-algebra
+if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is commutative; know that
+<math role="math" aria-label="\operatorname{End}_{R}\left(R^{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">End</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>R</mi><mi>n</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{End}_{R}\left(R^{n}\right)</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="M_{n}(R)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>R</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M_{n}(R)</annotation></semantics></math>
+if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is commutative;<br />
+(ii) for an integral domain
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+: torsion submodule; well-defined rank of a free
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module;
+know that submodules of free modules need not be free but that rk
+<math role="math" aria-label="M^{\prime} \leq \operatorname{rk} M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mi>′</mi></msup><mo>&le;</mo><mrow><mi mathvariant="normal">rk</mi><mo>&#8289;</mo></mrow><mi>M</mi></mrow><annotation encoding="application/x-tex">M^{\prime} \leq \operatorname{rk} M</annotation></semantics></math>
+if
+<math role="math" aria-label="M^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>M</mi><mi>′</mi></msup><annotation encoding="application/x-tex">M^{\prime}</annotation></semantics></math>
+is a free submodule of a free module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.</p>
+<p>Know the basic theorems for finitely generated modules over a PID
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+: submodules of a free
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+are free (this is also true if
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is not finitely generated); torsion free finitely generated
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules
+are free; a finitely generated
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is always the direct some of its torsion submodule
+<math role="math" aria-label="T(M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">T(M)</annotation></semantics></math>
+and a free (finitely generated) submodule, and
+<math role="math" aria-label="T(M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">T(M)</annotation></semantics></math>
+is a finite direct sum of cyclic modules; existence and uniqueness of
+invariant factors and elementary divisors, namely (see also Section
+1.3):</p>
+<p>Elementary Divisor Form (longest decomposition into cyclics): Any
+finitely generated
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+can be written as
+<math role="math" aria-label="M=R /\left(p_{1}^{e_{1}}\right) \oplus \ldots R /\left(p_{r}^{e_{r}}\right) \oplus R^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>R</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>p</mi><mn>1</mn><msub><mi>e</mi><mn>1</mn></msub></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mo>&oplus;</mo><mi>…</mi><mi>R</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>p</mi><mi>r</mi><msub><mi>e</mi><mi>r</mi></msub></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mo>&oplus;</mo><msup><mi>R</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">M=R /\left(p_{1}^{e_{1}}\right) \oplus \ldots R /\left(p_{r}^{e_{r}}\right) \oplus R^{n}</annotation></semantics></math>,
+where
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is the rank of
+<math role="math" aria-label="M / T(M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>/</mi><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M / T(M)</annotation></semantics></math>,
+the
+<math role="math" aria-label="p_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>i</mi></msub><annotation encoding="application/x-tex">p_{i}</annotation></semantics></math>
+are (not necessarily distinct) prime elements of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+determined up to multiplication with units by
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+and the
+<math role="math" aria-label="e_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>e</mi><mi>i</mi></msub><annotation encoding="application/x-tex">e_{i}</annotation></semantics></math>
+are natural numbers, also uniquely determined by
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+(up to possible permutations of the direct summands). The prime powers
+<math role="math" aria-label="p_{i}^{e_{i}}(1 \leq i \leq r)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>p</mi><mi>i</mi><msub><mi>e</mi><mi>i</mi></msub></msubsup><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>&le;</mo><mi>i</mi><mo>&le;</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p_{i}^{e_{i}}(1 \leq i \leq r)</annotation></semantics></math>
+are called the elementary divisors of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.</p>
+<p>Invariant Factor Form (shortest decomposition into cyclics):
+<math role="math" aria-label="M=R /\left(d_{1}\right) \oplus \ldots R /\left(d_{s}\right) \oplus R^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>R</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>d</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&oplus;</mo><mi>…</mi><mi>R</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>d</mi><mi>s</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&oplus;</mo><msup><mi>R</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">M=R /\left(d_{1}\right) \oplus \ldots R /\left(d_{s}\right) \oplus R^{n}</annotation></semantics></math>
+with
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+as before and elements
+<math role="math" aria-label="d_{i} \in R \backslash\left(R^{*} \cup\{0\}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>&isin;</mo><mi>R</mi><mo>&setminus;</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>R</mi><mo>*</mo></msup><mo>&cup;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">d_{i} \in R \backslash\left(R^{*} \cup\{0\}\right)</annotation></semantics></math>
+satisfying
+<math role="math" aria-label="d_{1}\left|d_{2} \ldots\right| d_{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>d</mi><mn>2</mn></msub><mi>…</mi><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>d</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">d_{1}\left|d_{2} \ldots\right| d_{s}</annotation></semantics></math>.
+These elements
+<math role="math" aria-label="d_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>i</mi></msub><annotation encoding="application/x-tex">d_{i}</annotation></semantics></math>
+are, up to multiplication with units, uniquely determined by
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and called the invariant factors of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.<br />
+(Side remark: The number
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+is often called the Betti number of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.)<br />
+Know the "Compatible Basis Theorem": If
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+is a submodule of a finitely generated free
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="M(R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo stretchy="false" form="prefix">(</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">M(R</annotation></semantics></math>
+a PID
+<math role="math" aria-label=")" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo stretchy="false" form="postfix">)</mo><annotation encoding="application/x-tex">)</annotation></semantics></math>,
+then there exist an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-basis
+<math role="math" aria-label="y_{1}, \ldots, y_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">y_{1}, \ldots, y_{n}</annotation></semantics></math>
+of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and elements
+<math role="math" aria-label="d_{i} \in R \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>&isin;</mo><mi>R</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">d_{i} \in R \backslash\{0\}</annotation></semantics></math>
+(
+<math role="math" aria-label="1 \leq i \leq s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&le;</mo><mi>i</mi><mo>&le;</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">1 \leq i \leq s</annotation></semantics></math>
+), up to multiplication with units uniquely determined by
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+and called the invariant factors of
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+with respect to
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+such that
+<math role="math" aria-label="d_{1}\left|d_{2} \ldots\right| d_{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>d</mi><mn>2</mn></msub><mi>…</mi><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>d</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">d_{1}\left|d_{2} \ldots\right| d_{s}</annotation></semantics></math>
+and
+<math role="math" aria-label="d_{1} y_{1}, \ldots, d_{s} y_{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>d</mi><mi>s</mi></msub><msub><mi>y</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">d_{1} y_{1}, \ldots, d_{s} y_{s}</annotation></semantics></math>
+is an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-basis
+of
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="know-how-to-decompose-if-r-is-euclidean">Know
+How to Decompose if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is Euclidean:</h1>
+<p>(I) Write
+<math role="math" aria-label="M=F / N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>F</mi><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">M=F / N</annotation></semantics></math>
+for
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+free on
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+generators
+<math role="math" aria-label="\left\{y_{1}, \ldots, y_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>y</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{y_{1}, \ldots, y_{n}\right\}</annotation></semantics></math>,
+and choose (not necessarily free) generators
+<math role="math" aria-label="c_{i 1} y_{1}+\ldots c_{i n} y_{n}, i=1, \ldots, m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><mi>…</mi><msub><mi>c</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><msub><mi>y</mi><mi>n</mi></msub><mo>,</mo><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">c_{i 1} y_{1}+\ldots c_{i n} y_{n}, i=1, \ldots, m</annotation></semantics></math>
+for
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+(in other words:
+<math role="math" aria-label="c_{i 1} y_{1}+\ldots c_{i n} y_{n}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>c</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><msub><mi>y</mi><mn>1</mn></msub><mo>+</mo><mi>…</mi><msub><mi>c</mi><mrow><mi>i</mi><mi>n</mi></mrow></msub><msub><mi>y</mi><mi>n</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">c_{i 1} y_{1}+\ldots c_{i n} y_{n}=0</annotation></semantics></math>
+with
+<math role="math" aria-label="i=1, \ldots, m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">i=1, \ldots, m</annotation></semantics></math>
+is a set of defining relations for
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+). Define the relations matrix
+<math role="math" aria-label="C=\left(c_{i j}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>c</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">C=\left(c_{i j}\right)</annotation></semantics></math>.<br />
+(II) Now apply elementary row and column operations operations to
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+until you reach a diagonal form
+<math role="math" aria-label="\operatorname{diag}\left(d_{1}, \ldots, d_{s}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">diag</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>d</mi><mi>s</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{diag}\left(d_{1}, \ldots, d_{s}\right)</annotation></semantics></math>
+with
+<math role="math" aria-label="d_{i} \in R \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>&isin;</mo><mi>R</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">d_{i} \in R \backslash\{0\}</annotation></semantics></math>
+and
+<math role="math" aria-label="d_{1}\left|d_{2}\right| \ldots \mid d_{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>d</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><mi>…</mi><mo>∣</mo><msub><mi>d</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">d_{1}\left|d_{2}\right| \ldots \mid d_{s}</annotation></semantics></math>,
+meaning that the resulting matrix has
+<math role="math" aria-label="d_{1}, \ldots, d_{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>d</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">d_{1}, \ldots, d_{s}</annotation></semantics></math>
+as its first
+<math role="math" aria-label="s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+entries on the main diagonal and zeros everywhere else (the Euclidean
+Algorithm guarantees that this is possible).<br />
+(III) Then the
+<math role="math" aria-label="d_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>d</mi><mi>i</mi></msub><annotation encoding="application/x-tex">d_{i}</annotation></semantics></math>
+’s which are no units are the invariant factors of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="\bigoplus_{d_{i} \notin R^{*}} R /\left(d_{i}\right) \oplus R^{n-s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>⨁</mo><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>&notin;</mo><msup><mi>R</mi><mo>*</mo></msup></mrow></msub><mi>R</mi><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>d</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&oplus;</mo><msup><mi>R</mi><mrow><mi>n</mi><mo>−</mo><mi>s</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\bigoplus_{d_{i} \notin R^{*}} R /\left(d_{i}\right) \oplus R^{n-s}</annotation></semantics></math>.
+Keeping track of the column operations, this procedure also yields
+compatible bases for
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>,
+implying that
+<math role="math" aria-label="d_{1}, \ldots, d_{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>d</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">d_{1}, \ldots, d_{s}</annotation></semantics></math>
+(including the units) are the invariant factors of
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+with respect to
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="related-problems-6">Related Problems</h2>
+<ol>
+<li><p>(Sep
+<math role="math" aria-label="82 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>82</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">82 \# 2</annotation></semantics></math>
+) If
+<math role="math" aria-label="a_{1}, \ldots, a_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">a_{1}, \ldots, a_{n}</annotation></semantics></math>
+in a PID
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+have
+<math role="math" aria-label="\operatorname{gcd} d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">gcd</mi><mo>&#8289;</mo></mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">\operatorname{gcd} d</annotation></semantics></math>,
+show that there exists an invertible
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+matrix
+<math role="math" aria-label="Q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Q</mi><annotation encoding="application/x-tex">Q</annotation></semantics></math>
+of determinant 1 over
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+with
+<math role="math" aria-label="Q\left[a_{1}, \ldots, a_{n}\right]^{T}=[d, 0,0 \ldots 0]^{T}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi><msup><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow><mi>T</mi></msup><mo>=</mo><mo stretchy="false" form="prefix">[</mo><mi>d</mi><mo>,</mo><mn>0</mn><mo>,</mo><mn>0</mn><mi>…</mi><mn>0</mn><msup><mo stretchy="false" form="postfix">]</mo><mi>T</mi></msup></mrow><annotation encoding="application/x-tex">Q\left[a_{1}, \ldots, a_{n}\right]^{T}=[d, 0,0 \ldots 0]^{T}</annotation></semantics></math>.
+(This is false if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is merely a UFD).</p></li>
+<li><p>(Sep
+<math role="math" aria-label="84 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>84</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">84 \# 5</annotation></semantics></math>
+) If
+<math role="math" aria-label="A, B, C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A, B, C</annotation></semantics></math>
+are submodules of a general
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+with
+<math role="math" aria-label="A \supseteq C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&supe;</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A \supseteq C</annotation></semantics></math>,
+show
+<math role="math" aria-label="A \cap(B+ C)=(A \cap B)+C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&cap;</mo><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo>+</mo><mi>C</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>&cap;</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A \cap(B+ C)=(A \cap B)+C</annotation></semantics></math>.</p></li>
+<li><p>(Sep 84 #6) Find the invariant factors of the following
+<math role="math" aria-label="3 \times 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>&times;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">3 \times 3</annotation></semantics></math>
+matrices over
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>,
+and decide if they are equivalent:
+<math role="math" aria-label="\left(\begin{array}{ccc}10 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; 6\end{array}\right),\left(\begin{array}{ccc}4 &amp; 6 &amp; 4 \\ 4 &amp; 20 &amp; 12 \\ 20 &amp; 0 &amp; 20\end{array}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>10</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>4</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>6</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mrow><mo stretchy="true" form="prefix">(</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>4</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>6</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>4</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>4</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>20</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>12</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>20</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>0</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>20</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\left(\begin{array}{ccc}10 &amp; 0 &amp; 0 \\ 0 &amp; 4 &amp; 0 \\ 0 &amp; 0 &amp; 6\end{array}\right),\left(\begin{array}{ccc}4 &amp; 6 &amp; 4 \\ 4 &amp; 20 &amp; 12 \\ 20 &amp; 0 &amp; 20\end{array}\right)</annotation></semantics></math>.</p></li>
+<li><p>(Sept
+<math role="math" aria-label="86 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>86</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">86 \# 5</annotation></semantics></math>
+) If
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is an artinian module over a general
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+show that any injective endomorphism is surjective.<br />
+(A module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+over a general ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is called artinian if there is no infinite chain of strictly decreasing
+submodules of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.
+Standard example (explain why this is an example!):
+<math role="math" aria-label="R=" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">R=</annotation></semantics></math>
+finite dimensional
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>-algebra
+for a field
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="M=" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">M=</annotation></semantics></math>
+finitely generated
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module.)</p></li>
+<li><p>(Jan 87 #6; Aug 88 #6) If
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is an ideal of a commutative ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+show<br />
+(a)
+<math role="math" aria-label="R / I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">R / I</annotation></semantics></math>
+is simple as an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="\Longleftrightarrow I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&hArr;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">\Longleftrightarrow I</annotation></semantics></math>
+is a maximal ideal,<br />
+(b)
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+prime
+<math role="math" aria-label="\Longrightarrow R / I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&rArr;</mo><mi>R</mi><mi>/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">\Longrightarrow R / I</annotation></semantics></math>
+is an indecomposable
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module;<br />
+(An
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+is called indecomposable if it cannot be written as the direct sum of
+two nonzero
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules.)<br />
+(c) if
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is prime, what kind of ring is
+<math role="math" aria-label="R / I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">R / I</annotation></semantics></math>
+?</p></li>
+<li><p>(May
+<math role="math" aria-label="91 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>91</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">91 \# 6</annotation></semantics></math>
+) Let
+<math role="math" aria-label="M=\mathbb{Z} \oplus \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>&Zopf;</mi><mo>&oplus;</mo><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">M=\mathbb{Z} \oplus \mathbb{Z}</annotation></semantics></math>
+be the free module of rank 2 over the ring
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>
+of integers. Let
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+be the submodule of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+spanned by
+<math role="math" aria-label="x=(3,0), y=(0,4), z=(6,2)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo>,</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>y</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>z</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>6</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x=(3,0), y=(0,4), z=(6,2)</annotation></semantics></math>.
+Find a
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-basis
+for the submodule
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.</p></li>
+<li><p>(Aug 94 #8) If the annihilator of a left
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is
+<math role="math" aria-label="A n n_{R}(M)=\{a \in R \mid a M=0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>n</mi><msub><mi>n</mi><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>&isin;</mo><mi>R</mi><mo>∣</mo><mi>a</mi><mi>M</mi><mo>=</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">A n n_{R}(M)=\{a \in R \mid a M=0\}</annotation></semantics></math>,
+show that for submodules
+<math role="math" aria-label="M_{1}, M_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mn>1</mn></msub><mo>,</mo><msub><mi>M</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">M_{1}, M_{2}</annotation></semantics></math>
+of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+we have
+<math role="math" aria-label="A n n_{R}\left(M_{1}+M_{2}\right)=A n n_{R}\left(M_{1}\right) \cap A n n_{R}\left(M_{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>n</mi><msub><mi>n</mi><mi>R</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mn>1</mn></msub><mo>+</mo><msub><mi>M</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>A</mi><mi>n</mi><msub><mi>n</mi><mi>R</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&cap;</mo><mi>A</mi><mi>n</mi><msub><mi>n</mi><mi>R</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A n n_{R}\left(M_{1}+M_{2}\right)=A n n_{R}\left(M_{1}\right) \cap A n n_{R}\left(M_{2}\right)</annotation></semantics></math>.
+Show furthermore that we have
+<math role="math" aria-label="A n n_{R}\left(M_{1}\right)+A n n_{R}\left(M_{2}\right) \subseteq A n n_{R}\left(M_{1} \cap M_{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>n</mi><msub><mi>n</mi><mi>R</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>A</mi><mi>n</mi><msub><mi>n</mi><mi>R</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&sube;</mo><mi>A</mi><mi>n</mi><msub><mi>n</mi><mi>R</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mn>1</mn></msub><mo>&cap;</mo><msub><mi>M</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A n n_{R}\left(M_{1}\right)+A n n_{R}\left(M_{2}\right) \subseteq A n n_{R}\left(M_{1} \cap M_{2}\right)</annotation></semantics></math>,
+but show that this inclusion could be strict.<br />
+Additional question: Is
+<math role="math" aria-label="A n n_{R}\left(M_{1}\right)+A n n_{R}\left(M_{2}\right)=A n n_{R}\left(M_{1} \cap M_{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>n</mi><msub><mi>n</mi><mi>R</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><mi>A</mi><mi>n</mi><msub><mi>n</mi><mi>R</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>A</mi><mi>n</mi><msub><mi>n</mi><mi>R</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mn>1</mn></msub><mo>&cap;</mo><msub><mi>M</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A n n_{R}\left(M_{1}\right)+A n n_{R}\left(M_{2}\right)=A n n_{R}\left(M_{1} \cap M_{2}\right)</annotation></semantics></math>
+true if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a PID and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is a finitely generated torsion
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+(no free summand)?</p></li>
+<li><p>(Aug
+<math role="math" aria-label="96 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>96</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">96 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a finitely generated module over a ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Show that any generating set for
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+as
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+must contain a finite generating set. Conclude that
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+has a minimal generating set (no proper subset generates
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+), and that every minimal generating set of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is finite.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="97 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>97</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">97 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be the free module over
+<math role="math" aria-label="\mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}[x]</annotation></semantics></math>
+with basis
+<math role="math" aria-label="v_{1}, v_{2}, v_{3}, N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>,</mo><msub><mi>v</mi><mn>3</mn></msub><mo>,</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">v_{1}, v_{2}, v_{3}, N</annotation></semantics></math>
+a submodule with basis
+<math role="math" aria-label="w_{1}, w_{2}, w_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>w</mi><mn>1</mn></msub><mo>,</mo><msub><mi>w</mi><mn>2</mn></msub><mo>,</mo><msub><mi>w</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">w_{1}, w_{2}, w_{3}</annotation></semantics></math>,
+where</p></li>
+</ol>
+<p><math role="math" aria-label="\begin{aligned}
+&amp; w_{1}=\left(x^{3}-x^{2}-x+1\right) v_{1}+\left(2 x^{2}+2 x\right) v_{2}+\left(x^{3}+x^{2}\right) v_{3} \\
+&amp; w_{2}=\left(2 x^{3}-3 x^{2}-3 x+2\right) v_{1}+\left(5 x^{2}+5 x\right) v_{2}+\left(2 x^{3}+2 x^{2}\right) v_{3} \\
+&amp; w_{3}=\left(x^{3}-x\right) v_{1}+\left(x^{2}+x\right) v_{2}+\left(x^{3}+x^{2}\right) v_{3}
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>w</mi><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>v</mi><mn>2</mn></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>v</mi><mn>3</mn></msub></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>w</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>3</mn><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>3</mn><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>5</mn><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>5</mn><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>v</mi><mn>2</mn></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><mn>2</mn><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>v</mi><mn>3</mn></msub></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><msub><mi>w</mi><mn>3</mn></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>v</mi><mn>1</mn></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>x</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>v</mi><mn>2</mn></msub><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>3</mn></msup><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>v</mi><mn>3</mn></msub></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+&amp; w_{1}=\left(x^{3}-x^{2}-x+1\right) v_{1}+\left(2 x^{2}+2 x\right) v_{2}+\left(x^{3}+x^{2}\right) v_{3} \\
+&amp; w_{2}=\left(2 x^{3}-3 x^{2}-3 x+2\right) v_{1}+\left(5 x^{2}+5 x\right) v_{2}+\left(2 x^{3}+2 x^{2}\right) v_{3} \\
+&amp; w_{3}=\left(x^{3}-x\right) v_{1}+\left(x^{2}+x\right) v_{2}+\left(x^{3}+x^{2}\right) v_{3}
+\end{aligned}</annotation></semantics></math></p>
+<p>(a) There is a theorem which implies that
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+has another basis
+<math role="math" aria-label="u_{1}, u_{2}, u_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mn>1</mn></msub><mo>,</mo><msub><mi>u</mi><mn>2</mn></msub><mo>,</mo><msub><mi>u</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">u_{1}, u_{2}, u_{3}</annotation></semantics></math>
+for which
+<math role="math" aria-label="d_{1} u_{1}, d_{2} u_{2}, d_{3} u_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><msub><mi>u</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><msub><mi>u</mi><mn>2</mn></msub><mo>,</mo><msub><mi>d</mi><mn>3</mn></msub><msub><mi>u</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">d_{1} u_{1}, d_{2} u_{2}, d_{3} u_{3}</annotation></semantics></math>
+are a basis for
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+for some
+<math role="math" aria-label="d_{1}, d_{2}, d_{3} \in \mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>,</mo><msub><mi>d</mi><mn>3</mn></msub><mo>&isin;</mo><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">d_{1}, d_{2}, d_{3} \in \mathbb{Q}[x]</annotation></semantics></math>
+such that
+<math role="math" aria-label="d_{1}\left|d_{2}\right| d_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>d</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>d</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">d_{1}\left|d_{2}\right| d_{3}</annotation></semantics></math>.
+Write a carefully worded statement of this theorem, giving all
+appropriate hypotheses and conclusions.<br />
+(b) Find the values
+<math role="math" aria-label="d_{1}, d_{2}, d_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><mo>,</mo><msub><mi>d</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">d_{1}, d_{2}, d_{3}</annotation></semantics></math>
+for the example given here.<br />
+10. (Jan 98 #4) Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a module over a ring. A section
+<math role="math" aria-label="A: B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>:</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A: B</annotation></semantics></math>
+of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is a pair of submodules
+<math role="math" aria-label="A, B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A, B</annotation></semantics></math>
+of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+with
+<math role="math" aria-label="B \subseteq A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>&sube;</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">B \subseteq A</annotation></semantics></math>;
+a trivial section is where
+<math role="math" aria-label="B=A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">B=A</annotation></semantics></math>.
+A submodule
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+covers a section
+<math role="math" aria-label="A: B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>:</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A: B</annotation></semantics></math>
+if
+<math role="math" aria-label="(A \cap C)+B=A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>&cap;</mo><mi>C</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>B</mi><mo>=</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">(A \cap C)+B=A</annotation></semantics></math>,
+and avoids
+<math role="math" aria-label="A: B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>:</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A: B</annotation></semantics></math>
+if
+<math role="math" aria-label="A \cap C \subseteq B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&cap;</mo><mi>C</mi><mo>&sube;</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \cap C \subseteq B</annotation></semantics></math>.<br />
+(a) Show that
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+covers
+<math role="math" aria-label="A: B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>:</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A: B</annotation></semantics></math>
+iff
+<math role="math" aria-label="A \subseteq B+C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&sube;</mo><mi>B</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">A \subseteq B+C</annotation></semantics></math>,
+and avoids
+<math role="math" aria-label="A: B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>:</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A: B</annotation></semantics></math>
+iff
+<math role="math" aria-label="A \cap(B+C)=B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&cap;</mo><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo>+</mo><mi>C</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \cap(B+C)=B</annotation></semantics></math>.<br />
+(b) Show that every
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+simultaneously covers and avoids any trivial section; that any
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+with
+<math role="math" aria-label="C \supseteq A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>&supe;</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">C \supseteq A</annotation></semantics></math>
+covers
+<math role="math" aria-label="A: B ;" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>:</mo><mi>B</mi><mo>;</mo></mrow><annotation encoding="application/x-tex">A: B ;</annotation></semantics></math>
+and that any
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+with
+<math role="math" aria-label="C \subseteq B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>&sube;</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">C \subseteq B</annotation></semantics></math>
+avoids
+<math role="math" aria-label="A: B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>:</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A: B</annotation></semantics></math>.<br />
+(c) Give an example of a
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and a submodule
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+that covers one nontrivial section
+<math role="math" aria-label="A: B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>:</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A: B</annotation></semantics></math>
+and avoids another nontrivial section
+<math role="math" aria-label="A^{\prime}: B^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mi>′</mi></msup><mo>:</mo><msup><mi>B</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">A^{\prime}: B^{\prime}</annotation></semantics></math>
+for which the two quotients
+<math role="math" aria-label="A / B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>/</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">A / B</annotation></semantics></math>
+and
+<math role="math" aria-label="A^{\prime} / B^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>A</mi><mi>′</mi></msup><mi>/</mi><msup><mi>B</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">A^{\prime} / B^{\prime}</annotation></semantics></math>
+are isomorphic.<br />
+11. (Jan
+<math role="math" aria-label="05 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>05</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">05 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a PID,
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+a prime element of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and
+<math role="math" aria-label="M \neq\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&ne;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">M \neq\{0\}</annotation></semantics></math>
+a finitely generated
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+such that there exists a natural number
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+with
+<math role="math" aria-label="p^{k} M=\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mi>k</mi></msup><mi>M</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p^{k} M=\{0\}</annotation></semantics></math>.
+We choose
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+minimal<br />
+with this property, i.e.
+<math role="math" aria-label="p^{k-1} M \neq\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>M</mi><mo>&ne;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">p^{k-1} M \neq\{0\}</annotation></semantics></math>.<br />
+(a) Describe the structure of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="p^{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>k</mi></msup><annotation encoding="application/x-tex">p^{k}</annotation></semantics></math>
+is an elementary divisor of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and that each elementary divisor of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+divides
+<math role="math" aria-label="p^{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>k</mi></msup><annotation encoding="application/x-tex">p^{k}</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+be any element of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+with the property that
+<math role="math" aria-label="p^{k-1} m \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>p</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msup><mi>m</mi><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p^{k-1} m \neq 0</annotation></semantics></math>.
+Show that the cyclic module
+<math role="math" aria-label="N:=R m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>:=</mo><mi>R</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">N:=R m</annotation></semantics></math>
+has a complement
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+in
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+i.e.
+<math role="math" aria-label="M=N \oplus C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>N</mi><mo>&oplus;</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">M=N \oplus C</annotation></semantics></math>.<br />
+12. (Jan 08 #2) (a) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 , and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+a finite direct sum
+<math role="math" aria-label="M= M_{1} \oplus \cdots \oplus M_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><msub><mi>M</mi><mn>1</mn></msub><mo>&oplus;</mo><mi>⋯</mi><mo>&oplus;</mo><msub><mi>M</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">M= M_{1} \oplus \cdots \oplus M_{n}</annotation></semantics></math>
+of simple unital left
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules
+<math role="math" aria-label="M_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mi>i</mi></msub><annotation encoding="application/x-tex">M_{i}</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+has both the ascending and descending chain conditions on
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-submodules.<br />
+(b) Where does your argument use the hypotheses that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is unital,
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is commutative, or
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is unital?<br />
+13. (Aug
+<math role="math" aria-label="11 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>11</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">11 \# 3</annotation></semantics></math>
+) (a) Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+be an noetherian module for a ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+so that
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+satisfies the ascending chain condition on submodules. Let
+<math role="math" aria-label="T: V \rightarrow V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>:</mo><mi>V</mi><mo>&rarr;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">T: V \rightarrow V</annotation></semantics></math>
+be a surjective
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-endomorphism.
+Prove that
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+is an isomorphism.<br />
+(b) In (a) suppose that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a field, so
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+is a vector space. Give another explanation of (a) in terms of the rank
+and nullity of
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>.<br />
+14. (Jan
+<math role="math" aria-label="12 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">12 \# 6</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 . Recall that a left R -module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is called Noetherian if it satisfies the ascending chain condition on
+submodules and Artinian if it satisfies the descending chain condition
+on submodules. Assume that an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is both Artinian and Noetherian. (For example,
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+might be a field, and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+might be a finitedimensional vector space over
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+). Let
+<math role="math" aria-label="T: M \rightarrow M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">T: M \rightarrow M</annotation></semantics></math>
+be an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+homomorphism.<br />
+(a) Prove that there exists
+<math role="math" aria-label="k \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">k \in \mathbb{N}</annotation></semantics></math>
+s.t.
+<math role="math" aria-label="\operatorname{Ker}\left(T^{k}\right)=\operatorname{Ker}\left(T^{2 k}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Ker</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>T</mi><mi>k</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mi mathvariant="normal">Ker</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>T</mi><mrow><mn>2</mn><mi>k</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Ker}\left(T^{k}\right)=\operatorname{Ker}\left(T^{2 k}\right)</annotation></semantics></math>
+and
+<math role="math" aria-label="\operatorname{Im}\left(T^{k}\right)=\operatorname{Im}\left(T^{2 k}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>T</mi><mi>k</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>T</mi><mrow><mn>2</mn><mi>k</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Im}\left(T^{k}\right)=\operatorname{Im}\left(T^{2 k}\right)</annotation></semantics></math>.<br />
+(b) Prove that if
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+is as in part (a), then
+<math role="math" aria-label="M=\operatorname{Ker}\left(T^{k}\right) \oplus \operatorname{Im}\left(T^{k}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mrow><mi mathvariant="normal">Ker</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>T</mi><mi>k</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>&oplus;</mo><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>T</mi><mi>k</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">M=\operatorname{Ker}\left(T^{k}\right) \oplus \operatorname{Im}\left(T^{k}\right)</annotation></semantics></math>.<br />
+(c) Deduce from (a) and (b) that there exist submodules
+<math role="math" aria-label="M_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>0</mn></msub><annotation encoding="application/x-tex">M_{0}</annotation></semantics></math>
+and
+<math role="math" aria-label="M_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_{1}</annotation></semantics></math>
+of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+s.t.
+<math role="math" aria-label="M=M_{0} \oplus M_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><msub><mi>M</mi><mn>0</mn></msub><mo>&oplus;</mo><msub><mi>M</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">M=M_{0} \oplus M_{1}</annotation></semantics></math>,
+<math role="math" aria-label="T_{\mid M_{0}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mrow><mi>∣</mi><msub><mi>M</mi><mn>0</mn></msub></mrow></msub><annotation encoding="application/x-tex">T_{\mid M_{0}}</annotation></semantics></math>
+is nilpotent and
+<math role="math" aria-label="T_{\mid M_{1}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mrow><mi>∣</mi><msub><mi>M</mi><mn>1</mn></msub></mrow></msub><annotation encoding="application/x-tex">T_{\mid M_{1}}</annotation></semantics></math>
+is invertible (as a map from
+<math role="math" aria-label="M_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_{1}</annotation></semantics></math>
+to
+<math role="math" aria-label="M_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_{1}</annotation></semantics></math>
+).<br />
+(d) Now assume that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a field of characteristic zero,
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is a finite-dimensional vector space over
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and
+<math role="math" aria-label="\operatorname{tr}\left(T^{n}\right)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">tr</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>T</mi><mi>n</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\operatorname{tr}\left(T^{n}\right)=0</annotation></semantics></math>
+for every
+<math role="math" aria-label="n \in \mathbb{Z}_{&gt;0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><msub><mi>&Zopf;</mi><mrow><mo>&gt;</mo><mn>0</mn></mrow></msub></mrow><annotation encoding="application/x-tex">n \in \mathbb{Z}_{&gt;0}</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+is nilpotent. Hint: Apply (c), assume that
+<math role="math" aria-label="M_{1} \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mn>1</mn></msub><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">M_{1} \neq 0</annotation></semantics></math>
+and reach a contradiction by applying the Cayley-Hamilton theorem to
+<math role="math" aria-label="T_{\mid M_{1}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mrow><mi>∣</mi><msub><mi>M</mi><mn>1</mn></msub></mrow></msub><annotation encoding="application/x-tex">T_{\mid M_{1}}</annotation></semantics></math>.<br />
+15. (Aug
+<math role="math" aria-label="15 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">15 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with identity, and let
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+be a nilpotent ideal, i.e.,
+<math role="math" aria-label="I^{k}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>I</mi><mi>k</mi></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">I^{k}=0</annotation></semantics></math>
+for some
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>.
+Let
+<math role="math" aria-label="M, N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>,</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">M, N</annotation></semantics></math>
+be two
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules,
+and let
+<math role="math" aria-label="f: M \rightarrow N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">f: M \rightarrow N</annotation></semantics></math>
+be an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-homomorphism.
+Suppose that the induced homomorphism from
+<math role="math" aria-label="M / I M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>/</mi><mi>I</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">M / I M</annotation></semantics></math>
+to
+<math role="math" aria-label="N / I N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mi>/</mi><mi>I</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">N / I N</annotation></semantics></math>
+is surjective. Prove that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is surjective.<br />
+16. (Jan
+<math role="math" aria-label="16 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">16 \# 3</annotation></semantics></math>
+) Let R be a commutative ring with identity. A non-zero
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is said to be irreducible if 0 and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+are the only submodules of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is irreducible if and only if
+<math role="math" aria-label="M \cong R / m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>≅</mo><mi>R</mi><mi>/</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">M \cong R / m</annotation></semantics></math>,
+where
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+is a maximal ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+17. (Aug 16 # 7)<br />
+(a)Give a complete and irredundant list of abelian groups of order
+144.<br />
+(b)Give a complete and irredundant list of finitely generated modules
+over
+<math role="math" aria-label="\mathbb{F}_{2}[t]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Fopf;</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">[</mo><mi>t</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{F}_{2}[t]</annotation></semantics></math>
+where the polynomial
+<math role="math" aria-label="t^{4}+t^{3}+t+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>t</mi><mn>4</mn></msup><mo>+</mo><msup><mi>t</mi><mn>3</mn></msup><mo>+</mo><mi>t</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">t^{4}+t^{3}+t+1</annotation></semantics></math>
+acts trivially.<br />
+18. (Jan 17 #7) Consider the matrix</p>
+<p><math role="math" aria-label="A=\left[\begin{array}{ccc}
+12 &amp; 4 &amp; -16 \\
+4 &amp; 3 &amp; -7 \\
+8 &amp; 3 &amp; -11
+\end{array}\right]" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">[</mo><mtable><mtr><mtd columnalign="center" style="text-align: center"><mn>12</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>4</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mn>16</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>4</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>3</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mn>7</mn></mtd></mtr><mtr><mtd columnalign="center" style="text-align: center"><mn>8</mn></mtd><mtd columnalign="center" style="text-align: center"><mn>3</mn></mtd><mtd columnalign="center" style="text-align: center"><mi>−</mi><mn>11</mn></mtd></mtr></mtable><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">A=\left[\begin{array}{ccc}
+12 &amp; 4 &amp; -16 \\
+4 &amp; 3 &amp; -7 \\
+8 &amp; 3 &amp; -11
+\end{array}\right]</annotation></semantics></math></p>
+<p>(a) Find the characteristic and minimal polynomials of this
+polynomial and its Jordan normal form.<br />
+(b) Consider map
+<math role="math" aria-label="\mathbb{Z}^{3} \rightarrow \mathbb{Z}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Zopf;</mi><mn>3</mn></msup><mo>&rarr;</mo><msup><mi>&Zopf;</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{Z}^{3} \rightarrow \mathbb{Z}^{3}</annotation></semantics></math>
+induced by
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.
+Describe the kernel and cokernel of this map as a sum of copies of
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{Z} / n \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mi>n</mi><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z} / n \mathbb{Z}</annotation></semantics></math>.<br />
+19. (Aug 18 #4) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be an integral domain and let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a nontrivial torsion
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module.<br />
+(a) If
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is finitely generated then the annihilator of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is nontrivial. Recall that the annihilator of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is the ideal
+<math role="math" aria-label="\{r \mid r m=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>r</mi><mo>∣</mo><mi>r</mi><mi>m</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\{r \mid r m=0</annotation></semantics></math>
+for all
+<math role="math" aria-label="m \in M\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&isin;</mo><mi>M</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">m \in M\}</annotation></semantics></math>.<br />
+(b) Find an integral domain
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+and a torsion module
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+over
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+whose annihilator is the zero ideal.<br />
+20. (Jan
+<math role="math" aria-label="19 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>19</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">19 \# 6</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 , let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+and
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+a submodule of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+(a) Prove that if
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+and
+<math role="math" aria-label="M / N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">M / N</annotation></semantics></math>
+are both finitely generated, then
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is finitely generated<br />
+(b) Give an example where
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is finitely generated and
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+is not.<br />
+21. (Jan 20 #6) In each part of this problem determine if the given
+objects are isomorphic:<br />
+(a)
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>
+as
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>-vector
+spaces<br />
+(b)
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{R} \times \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo>&times;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{R} \times \mathbb{R}</annotation></semantics></math>
+as rings<br />
+(c)
+<math role="math" aria-label="\mathbb{R}[x] /\left(x^{2}-1\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathbb{R}[x] /\left(x^{2}-1\right)</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{R} \times \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo>&times;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{R} \times \mathbb{R}</annotation></semantics></math>
+as rings<br />
+(d)
+<math role="math" aria-label="\mathbb{R}[x] /(x-1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}[x] /(x-1)</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathbb{R}[x] /(x+1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}[x] /(x+1)</annotation></semantics></math>
+as
+<math role="math" aria-label="\mathbb{R}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{R}[x]</annotation></semantics></math>-modules<br />
+22. (Jan 22 #6) In each part determine whether the statement is TRUE (in
+all cases) or FALSE (in at least one case) and prove your claim. An
+answer (correct or incorrect) without explanation will not receive any
+credit.<br />
+(a) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative domain with 1 and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module.
+If
+<math role="math" aria-label="x \in M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">x \in M</annotation></semantics></math>
+and
+<math role="math" aria-label="y \in M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>&isin;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">y \in M</annotation></semantics></math>
+are both torsion elements, then
+<math role="math" aria-label="x+y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>+</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x+y</annotation></semantics></math>
+is also a torsion element.<br />
+(b) If
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+and
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+are fields, then
+<math role="math" aria-label="K \otimes_{\mathbb{Z}} L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>L</mi></mrow><annotation encoding="application/x-tex">K \otimes_{\mathbb{Z}} L</annotation></semantics></math>
+is nonzero.<br />
+(c) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a commutative ring with 1 and every
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module
+is free, then
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a field.<br />
+(d) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a commutative ring with 1 and
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is a finitely generated
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-module,
+then every submodule of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is finitely generated.</p>
+
+</main>
+</body>
+</html>

@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>1.3 Abelian Groups - Algebra General Exam Review - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html">Algebra Review Guide</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">1.3 Abelian Groups</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="abelian-groups">1.3 Abelian Groups</h2>
+<p>Know basic definitions: Free abelian group, rank, torsion, direct
+sum, elementary divisors, invariant factors.</p>
+<p>Know the Fundamental Theorem of Finitely Generated Abelian
+Groups:<br />
+Every finitely generated abelian group
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is of the form
+<math role="math" aria-label="A=T(A) \oplus F(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>&oplus;</mo><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A=T(A) \oplus F(A)</annotation></semantics></math>,
+where
+<math role="math" aria-label="T(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">T(A)</annotation></semantics></math>
+is the (finite) torsion subgroup of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="F(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F(A)</annotation></semantics></math>
+is a free abelian group of finite rank
+<math role="math" aria-label="n \in \mathbb{N}_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><msub><mi>&Nopf;</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">n \in \mathbb{N}_{0}</annotation></semantics></math>
+(i.e.
+<math role="math" aria-label="F(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F(A)</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="\mathbb{Z}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Zopf;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{Z}^{n}</annotation></semantics></math>
+), with
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+the "Betti number" of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+uniquely determined by
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.<br />
+Regarding
+<math role="math" aria-label="T(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">T(A)</annotation></semantics></math>
+(which is of course
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+if
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is finite):<br />
+Elementary Divisor Form (longest decomposition into cyclics)<br />
+<math role="math" aria-label="T(A)=\mathbb{Z}_{p_{1}^{f_{1}}} \oplus \cdots \oplus \mathbb{Z}_{p_{s}^{f_{s}}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>&Zopf;</mi><msubsup><mi>p</mi><mn>1</mn><msub><mi>f</mi><mn>1</mn></msub></msubsup></msub><mo>&oplus;</mo><mi>⋯</mi><mo>&oplus;</mo><msub><mi>&Zopf;</mi><msubsup><mi>p</mi><mi>s</mi><msub><mi>f</mi><mi>s</mi></msub></msubsup></msub></mrow><annotation encoding="application/x-tex">T(A)=\mathbb{Z}_{p_{1}^{f_{1}}} \oplus \cdots \oplus \mathbb{Z}_{p_{s}^{f_{s}}}</annotation></semantics></math>
+where the
+<math role="math" aria-label="p_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>i</mi></msub><annotation encoding="application/x-tex">p_{i}</annotation></semantics></math>
+’s are (not necessarily distinct) prime numbers, and the number of
+summands of type
+<math role="math" aria-label="\mathbb{Z}_{p^{f}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Zopf;</mi><msup><mi>p</mi><mi>f</mi></msup></msub><annotation encoding="application/x-tex">\mathbb{Z}_{p^{f}}</annotation></semantics></math>
+(the elementary divisors) are invariants of
+<math role="math" aria-label="T(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">T(A)</annotation></semantics></math>
+and
+<math role="math" aria-label="A ; T(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>;</mo><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A ; T(A)</annotation></semantics></math>
+is cyclic iff all elementary divisors have distinct primes.<br />
+Invariant Factor Form (shortest decomposition into cyclics)<br />
+<math role="math" aria-label="T(A)=\mathbb{Z}_{d_{1}} \oplus \cdots \oplus \mathbb{Z}_{d_{l}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>&Zopf;</mi><msub><mi>d</mi><mn>1</mn></msub></msub><mo>&oplus;</mo><mi>⋯</mi><mo>&oplus;</mo><msub><mi>&Zopf;</mi><msub><mi>d</mi><mi>l</mi></msub></msub></mrow><annotation encoding="application/x-tex">T(A)=\mathbb{Z}_{d_{1}} \oplus \cdots \oplus \mathbb{Z}_{d_{l}}</annotation></semantics></math>
+for
+<math role="math" aria-label="d_{1}\left|d_{2}\right| \cdots \mid d_{l}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>d</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><mi>⋯</mi><mo>∣</mo><msub><mi>d</mi><mi>l</mi></msub></mrow><annotation encoding="application/x-tex">d_{1}\left|d_{2}\right| \cdots \mid d_{l}</annotation></semantics></math>
+where the invariant factors
+<math role="math" aria-label="d_{i} \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">d_{i} \in \mathbb{N}</annotation></semantics></math>
+with
+<math role="math" aria-label="d_{i}&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d_{i}&gt;1</annotation></semantics></math>
+are invariants of
+<math role="math" aria-label="T(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">T(A)</annotation></semantics></math>
+and of
+<math role="math" aria-label="A ; T(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>;</mo><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A ; T(A)</annotation></semantics></math>
+is cyclic iff
+<math role="math" aria-label="l=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">l=1</annotation></semantics></math>.</p>
+<p>Know How to Count: the number of non-isomorphic finite abelian groups
+of order
+<math role="math" aria-label="n= p_{1}^{e_{1}} p_{2}^{e_{2}} \cdots p_{r}^{e_{r}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><msubsup><mi>p</mi><mn>1</mn><msub><mi>e</mi><mn>1</mn></msub></msubsup><msubsup><mi>p</mi><mn>2</mn><msub><mi>e</mi><mn>2</mn></msub></msubsup><mi>⋯</mi><msubsup><mi>p</mi><mi>r</mi><msub><mi>e</mi><mi>r</mi></msub></msubsup></mrow><annotation encoding="application/x-tex">n= p_{1}^{e_{1}} p_{2}^{e_{2}} \cdots p_{r}^{e_{r}}</annotation></semantics></math>,
+where this time the
+<math role="math" aria-label="p_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>i</mi></msub><annotation encoding="application/x-tex">p_{i}</annotation></semantics></math>
+’s are distinct primes, is
+<math role="math" aria-label="\mathcal{P}\left(e_{1}\right) \mathcal{P}\left(e_{2}\right) \cdots \mathcal{P}\left(e_{r}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Pscr;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>e</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>&Pscr;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>e</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>⋯</mi><mi>&Pscr;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>e</mi><mi>r</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{P}\left(e_{1}\right) \mathcal{P}\left(e_{2}\right) \cdots \mathcal{P}\left(e_{r}\right)</annotation></semantics></math>
+for
+<math role="math" aria-label="\mathcal{P}(e)=" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Pscr;</mi><mo stretchy="false" form="prefix">(</mo><mi>e</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo></mrow><annotation encoding="application/x-tex">\mathcal{P}(e)=</annotation></semantics></math>
+number of partitions of the exponent
+<math role="math" aria-label="e" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+(the number of ways of writing
+<math role="math" aria-label="e=f_{1}+\cdots+f_{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><msub><mi>f</mi><mn>1</mn></msub><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>f</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">e=f_{1}+\cdots+f_{s}</annotation></semantics></math>
+for
+<math role="math" aria-label="1 \leq f_{1} \leq \cdots \leq f_{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&le;</mo><msub><mi>f</mi><mn>1</mn></msub><mo>&le;</mo><mi>⋯</mi><mo>&le;</mo><msub><mi>f</mi><mi>s</mi></msub></mrow><annotation encoding="application/x-tex">1 \leq f_{1} \leq \cdots \leq f_{s}</annotation></semantics></math>
+).</p>
+<p>Know How to Decompose:<br />
+(I) Write
+<math role="math" aria-label="A=F / K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>F</mi><mi>/</mi><mi>K</mi></mrow><annotation encoding="application/x-tex">A=F / K</annotation></semantics></math>
+for
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+free on
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+generators
+<math role="math" aria-label="\left\{x_{1}, \ldots, x_{N}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mi>N</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{x_{1}, \ldots, x_{N}\right\}</annotation></semantics></math>
+with
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+relations
+<math role="math" aria-label="B \vec{x}=\overrightarrow{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mover><mi>x</mi><mo accent="true">&rarr;</mo></mover><mo>=</mo><mover><mn>0</mn><mo accent="true">&rarr;</mo></mover></mrow><annotation encoding="application/x-tex">B \vec{x}=\overrightarrow{0}</annotation></semantics></math>
+(ie.
+<math role="math" aria-label="b_{i 1} x_{1}+ \cdots+b_{i N} x_{N}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mrow><mi>i</mi><mn>1</mn></mrow></msub><msub><mi>x</mi><mn>1</mn></msub><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>b</mi><mrow><mi>i</mi><mi>N</mi></mrow></msub><msub><mi>x</mi><mi>N</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">b_{i 1} x_{1}+ \cdots+b_{i N} x_{N}=0</annotation></semantics></math>
+for
+<math role="math" aria-label="i=1,2, \ldots, M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>…</mi><mo>,</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">i=1,2, \ldots, M</annotation></semantics></math>
+).<br />
+(II) Rewrite equations
+<math role="math" aria-label="B \longrightarrow U B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>&rarr;</mo><mi>U</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">B \longrightarrow U B</annotation></semantics></math>
+for elementary
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+(elementary row operations), change basis of free
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-module
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+into
+<math role="math" aria-label="\left\{y_{1}, \ldots, y_{N}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>y</mi><mi>N</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{y_{1}, \ldots, y_{N}\right\}</annotation></semantics></math>
+by
+<math role="math" aria-label="B \longrightarrow B V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>&rarr;</mo><mi>B</mi><mi>V</mi></mrow><annotation encoding="application/x-tex">B \longrightarrow B V</annotation></semantics></math>
+for elementary
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+(elementary column operations), until reach "diagonal form"
+<math role="math" aria-label="\operatorname{diag}\left(d_{1}, \ldots, d_{n}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">diag</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>d</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{diag}\left(d_{1}, \ldots, d_{n}\right)</annotation></semantics></math>
+with
+<math role="math" aria-label="n \leq \max \{M, N\}, d_{1}, \ldots, d_{n} \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&le;</mo><mrow><mi mathvariant="normal">max</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">{</mo><mi>M</mi><mo>,</mo><mi>N</mi><mo stretchy="false" form="postfix">}</mo><mo>,</mo><msub><mi>d</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>d</mi><mi>n</mi></msub><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">n \leq \max \{M, N\}, d_{1}, \ldots, d_{n} \in \mathbb{N}</annotation></semantics></math>
+and
+<math role="math" aria-label="d_{1}\left|d_{2}\right| \ldots \mid d_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>d</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><mi>…</mi><mo>∣</mo><msub><mi>d</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">d_{1}\left|d_{2}\right| \ldots \mid d_{n}</annotation></semantics></math>.
+(III) Then
+<math role="math" aria-label="F=\bigoplus_{i=1}^{N} \mathbb{Z} y_{i}, K=\bigoplus_{i=1}^{n} \mathbb{Z} d_{i} y_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>=</mo><msubsup><mo>⨁</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup><mi>&Zopf;</mi><msub><mi>y</mi><mi>i</mi></msub><mo>,</mo><mi>K</mi><mo>=</mo><msubsup><mo>⨁</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mi>&Zopf;</mi><msub><mi>d</mi><mi>i</mi></msub><msub><mi>y</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">F=\bigoplus_{i=1}^{N} \mathbb{Z} y_{i}, K=\bigoplus_{i=1}^{n} \mathbb{Z} d_{i} y_{i}</annotation></semantics></math>
+and
+<math role="math" aria-label="A=F / K \cong \bigoplus_{i=1}^{n} \mathbb{Z} / d_{i} \mathbb{Z} \oplus \mathbb{Z}^{N-n}=\bigoplus_{d_{i} \neq 1} \mathbb{Z}_{d_{i}} \oplus \mathbb{Z}^{N-n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>F</mi><mi>/</mi><mi>K</mi><mo>≅</mo><msubsup><mo>⨁</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mi>&Zopf;</mi><mi>/</mi><msub><mi>d</mi><mi>i</mi></msub><mi>&Zopf;</mi><mo>&oplus;</mo><msup><mi>&Zopf;</mi><mrow><mi>N</mi><mo>−</mo><mi>n</mi></mrow></msup><mo>=</mo><msub><mo>⨁</mo><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>&ne;</mo><mn>1</mn></mrow></msub><msub><mi>&Zopf;</mi><msub><mi>d</mi><mi>i</mi></msub></msub><mo>&oplus;</mo><msup><mi>&Zopf;</mi><mrow><mi>N</mi><mo>−</mo><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">A=F / K \cong \bigoplus_{i=1}^{n} \mathbb{Z} / d_{i} \mathbb{Z} \oplus \mathbb{Z}^{N-n}=\bigoplus_{d_{i} \neq 1} \mathbb{Z}_{d_{i}} \oplus \mathbb{Z}^{N-n}</annotation></semantics></math>.
+So the Betti number of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is
+<math role="math" aria-label="N-n, T(A) \cong \bigoplus_{d_{i} \neq 1} \mathbb{Z}_{d_{i}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>−</mo><mi>n</mi><mo>,</mo><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>≅</mo><msub><mo>⨁</mo><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>&ne;</mo><mn>1</mn></mrow></msub><msub><mi>&Zopf;</mi><msub><mi>d</mi><mi>i</mi></msub></msub></mrow><annotation encoding="application/x-tex">N-n, T(A) \cong \bigoplus_{d_{i} \neq 1} \mathbb{Z}_{d_{i}}</annotation></semantics></math>,
+and the invariant factors of
+<math role="math" aria-label="T(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">T(A)</annotation></semantics></math>
+are
+<math role="math" aria-label="d_{r+1}\left|d_{r+2}\right| \ldots \mid d_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>d</mi><mrow><mi>r</mi><mo>+</mo><mn>2</mn></mrow></msub><mo stretchy="true" form="postfix">|</mo></mrow><mi>…</mi><mo>∣</mo><msub><mi>d</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">d_{r+1}\left|d_{r+2}\right| \ldots \mid d_{n}</annotation></semantics></math>
+if
+<math role="math" aria-label="d_{1}=\ldots=d_{r}=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mi>…</mi><mo>=</mo><msub><mi>d</mi><mi>r</mi></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d_{1}=\ldots=d_{r}=1</annotation></semantics></math>
+and
+<math role="math" aria-label="d_{r+1}&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">d_{r+1}&gt;1</annotation></semantics></math>.<br />
+(Figuratively speaking: reduce the matrix to the diagonal form using
+elementary row and column operations.)</p>
+<p>Know how to go back and forth between Invariant Factors and
+Elementary DiviSORS: InvFac
+<math role="math" aria-label="\longrightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&rarr;</mo><annotation encoding="application/x-tex">\longrightarrow</annotation></semantics></math>
+ElDiv by factoring each
+<math role="math" aria-label="d_{i}=\prod p_{i j}^{e_{i j}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>i</mi></msub><mo>=</mo><mo>&prod;</mo><msubsup><mi>p</mi><mrow><mi>i</mi><mi>j</mi></mrow><msub><mi>e</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></msubsup></mrow><annotation encoding="application/x-tex">d_{i}=\prod p_{i j}^{e_{i j}}</annotation></semantics></math>,
+ElDiv
+<math role="math" aria-label="\longrightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&rarr;</mo><annotation encoding="application/x-tex">\longrightarrow</annotation></semantics></math>
+InvFac by
+<math role="math" aria-label="d_{N}=\prod p_{i}^{\text {highest } e_{i}}, d_{N-1}= \prod p_{i}^{\text {next highest } e_{i}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mi>N</mi></msub><mo>=</mo><mo>&prod;</mo><msubsup><mi>p</mi><mi>i</mi><mrow><mrow><mtext mathvariant="normal">highest </mtext><mspace width="0.333em"></mspace></mrow><msub><mi>e</mi><mi>i</mi></msub></mrow></msubsup><mo>,</mo><msub><mi>d</mi><mrow><mi>N</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>=</mo><mo>&prod;</mo><msubsup><mi>p</mi><mi>i</mi><mrow><mrow><mtext mathvariant="normal">next highest </mtext><mspace width="0.333em"></mspace></mrow><msub><mi>e</mi><mi>i</mi></msub></mrow></msubsup></mrow><annotation encoding="application/x-tex">d_{N}=\prod p_{i}^{\text {highest } e_{i}}, d_{N-1}= \prod p_{i}^{\text {next highest } e_{i}}</annotation></semantics></math>,
+etc.</p>
+<h2 class="unnumbered" id="related-problems-2">Related Problems</h2>
+<ol>
+<li><p>Describe (up to isomorphism) all abelian groups of order: [May 91
+#4a] 4851; [85 #1c] 2334; [Aug 88 #4] 200; [Jan 87 #1] 72; [Feb 84 #1]
+1984; [Sep 80 #1] 80; [May 80 #1] 375.</p></li>
+<li><p>How many non-isomorphic abelian groups are there of order: [Sep
+83 #1] 1776, [Jan 98 #2a] 360.</p></li>
+<li><p>(April 77 #3) Use the Fundamental Theorem of Finite Abelian
+Groups to show the multiplicative group of the ring
+<math role="math" aria-label="\mathbb{Z}_{p^{n}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Zopf;</mi><msup><mi>p</mi><mi>n</mi></msup></msub><annotation encoding="application/x-tex">\mathbb{Z}_{p^{n}}</annotation></semantics></math>
+for prime
+<math role="math" aria-label="p, n&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mi>n</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">p, n&gt;1</annotation></semantics></math>
+has a subgroup of order
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.</p></li>
+<li><p>(May 78 #6) Give an example of a torsion-free abelian group which
+is not free. Can you give an example which is finitely
+generated?</p></li>
+<li><p>(Mar 83 #6) Show a finite abelian group is cyclic iff it has no
+subgroup isomorphic to
+<math role="math" aria-label="B \oplus B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>&oplus;</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">B \oplus B</annotation></semantics></math>
+for
+<math role="math" aria-label="B \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B \neq 0</annotation></semantics></math>.</p></li>
+<li><p>(Aug 89 #6) Find the structure of all abelian groups generated by
+3 elements
+<math role="math" aria-label="a, b, c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a, b, c</annotation></semantics></math>
+satisfying relations
+<math role="math" aria-label="-4 a+2 b+6 c=0,-6 a+2 b+6 c=0,7 a+4 b+15 c=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>4</mn><mi>a</mi><mo>+</mo><mn>2</mn><mi>b</mi><mo>+</mo><mn>6</mn><mi>c</mi><mo>=</mo><mn>0</mn><mo>,</mo><mi>−</mi><mn>6</mn><mi>a</mi><mo>+</mo><mn>2</mn><mi>b</mi><mo>+</mo><mn>6</mn><mi>c</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>7</mn><mi>a</mi><mo>+</mo><mn>4</mn><mi>b</mi><mo>+</mo><mn>15</mn><mi>c</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">-4 a+2 b+6 c=0,-6 a+2 b+6 c=0,7 a+4 b+15 c=0</annotation></semantics></math>.</p></li>
+<li><p>(Jan 92 #1) Show that an infinite abelian group is cyclic iff
+every nonzero subgroup has finite index.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="94 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>94</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">94 \# 2</annotation></semantics></math>
+) If
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is a finite abelian group of order
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+show that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+has a subgroup of order
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+for each divisor
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+of
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Show that this need not be true if
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is not abelian.</p></li>
+<li><p>(Aug 95 #3) Find the order of the abelian group generated by
+<math role="math" aria-label="x, y, z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">x, y, z</annotation></semantics></math>
+subject to the relations
+<math role="math" aria-label="4 x-2 y+4 z=0,7 x-8 y+z=0,8 x+y+13 z=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>x</mi><mo>−</mo><mn>2</mn><mi>y</mi><mo>+</mo><mn>4</mn><mi>z</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>7</mn><mi>x</mi><mo>−</mo><mn>8</mn><mi>y</mi><mo>+</mo><mi>z</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>8</mn><mi>x</mi><mo>+</mo><mi>y</mi><mo>+</mo><mn>13</mn><mi>z</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">4 x-2 y+4 z=0,7 x-8 y+z=0,8 x+y+13 z=0</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="96 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>96</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">96 \# 2</annotation></semantics></math>
+) Determine all pairs of positive integers
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>
+with
+<math role="math" aria-label="a \leq b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&le;</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a \leq b</annotation></semantics></math>
+such that
+<math role="math" aria-label="\mathbb{Z}_{a} \times \mathbb{Z}_{b}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><mi>a</mi></msub><mo>&times;</mo><msub><mi>&Zopf;</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{a} \times \mathbb{Z}_{b}</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="\mathbb{Z}_{15} \times \mathbb{Z}_{18} \times \mathbb{Z}_{20}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><mn>15</mn></msub><mo>&times;</mo><msub><mi>&Zopf;</mi><mn>18</mn></msub><mo>&times;</mo><msub><mi>&Zopf;</mi><mn>20</mn></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{15} \times \mathbb{Z}_{18} \times \mathbb{Z}_{20}</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="97 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>97</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">97 \# 2</annotation></semantics></math>
+) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a finite abelian group of order
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+and
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+an integer. Show that if
+<math role="math" aria-label="k_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>k</mi><mi>n</mi></msub><annotation encoding="application/x-tex">k_{n}</annotation></semantics></math>
+is the number of solutions of
+<math role="math" aria-label="g^{n}=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>g</mi><mi>n</mi></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">g^{n}=1</annotation></semantics></math>
+in
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,
+and
+<math role="math" aria-label="k^{(n)}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>k</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><annotation encoding="application/x-tex">k^{(n)}</annotation></semantics></math>
+is the number of
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-th
+powers in
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,
+then
+<math role="math" aria-label="k=k_{n} k^{(n)}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>=</mo><msub><mi>k</mi><mi>n</mi></msub><msup><mi>k</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">k=k_{n} k^{(n)}</annotation></semantics></math>.</p></li>
+<li><p>(Jan 98 #2) Take the free abelian group on three generators
+<math role="math" aria-label="x, y, z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">x, y, z</annotation></semantics></math>,
+and divide by the relations
+<math role="math" aria-label="2 x+4 y+5 z=0,6 x+8 y+10 z=0,8 x+12 y+20 z=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>x</mi><mo>+</mo><mn>4</mn><mi>y</mi><mo>+</mo><mn>5</mn><mi>z</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn><mi>x</mi><mo>+</mo><mn>8</mn><mi>y</mi><mo>+</mo><mn>10</mn><mi>z</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>8</mn><mi>x</mi><mo>+</mo><mn>12</mn><mi>y</mi><mo>+</mo><mn>20</mn><mi>z</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2 x+4 y+5 z=0,6 x+8 y+10 z=0,8 x+12 y+20 z=0</annotation></semantics></math>.
+Write the resulting group as a direct sum of cyclic groups.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="98 \# 1 \mathrm{~d}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>98</mn><mi>#</mi><mn>1</mn><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">d</mi></mrow></mrow><annotation encoding="application/x-tex">98 \# 1 \mathrm{~d}</annotation></semantics></math>
+) If
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is a finite abelian group of order
+<math role="math" aria-label="p q r" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mi>q</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">p q r</annotation></semantics></math>
+for distinct primes
+<math role="math" aria-label="p, q, r" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>,</mo><mi>q</mi><mo>,</mo><mi>r</mi></mrow><annotation encoding="application/x-tex">p, q, r</annotation></semantics></math>,
+show that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is cyclic.</p></li>
+<li><p>(Aug 98 #3) For an abelian group
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+the dual group
+<math role="math" aria-label="A^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mo>*</mo></msup><annotation encoding="application/x-tex">A^{*}</annotation></semantics></math>
+is defined to be
+<math role="math" aria-label="\operatorname{Hom}(A, \mathbb{T})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>,</mo><mi>&Topf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Hom}(A, \mathbb{T})</annotation></semantics></math>
+where the circle group or torus
+<math role="math" aria-label="\mathbb{T}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Topf;</mi><annotation encoding="application/x-tex">\mathbb{T}</annotation></semantics></math>
+is the multiplicative group of complex numbers of modulus 1 (the unit
+circle in the complex plane). Here
+<math role="math" aria-label="\operatorname{Hom}(A, B)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Hom}(A, B)</annotation></semantics></math>
+denotes the abelian group of homomorphisms of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+into
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+(under
+<math role="math" aria-label="(f+g)(a)=f(a)+g(a)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>+</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(f+g)(a)=f(a)+g(a)</annotation></semantics></math>
+); you may use the additivity property
+<math role="math" aria-label="\operatorname{Hom}\left(A_{1} \oplus\right. \left.A_{2}, B\right) \cong \operatorname{Hom}\left(A_{1}, B\right) \oplus \operatorname{Hom}\left(A_{2}, B\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo>&oplus;</mo></mrow><mrow><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>≅</mo><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>1</mn></msub><mo>,</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&oplus;</mo><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mn>2</mn></msub><mo>,</mo><mi>B</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Hom}\left(A_{1} \oplus\right. \left.A_{2}, B\right) \cong \operatorname{Hom}\left(A_{1}, B\right) \oplus \operatorname{Hom}\left(A_{2}, B\right)</annotation></semantics></math>
+and the isomorphism property that if
+<math role="math" aria-label="A \cong A^{\prime}, B \cong B^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≅</mo><msup><mi>A</mi><mi>′</mi></msup><mo>,</mo><mi>B</mi><mo>≅</mo><msup><mi>B</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">A \cong A^{\prime}, B \cong B^{\prime}</annotation></semantics></math>
+then
+<math role="math" aria-label="\operatorname{Hom}(A, B) \cong \operatorname{Hom}\left(A^{\prime}, B^{\prime}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo>≅</mo><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>A</mi><mi>′</mi></msup><mo>,</mo><msup><mi>B</mi><mi>′</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Hom}(A, B) \cong \operatorname{Hom}\left(A^{\prime}, B^{\prime}\right)</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="\mathbb{Z}_{n}^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>&Zopf;</mi><mi>n</mi><mo>*</mo></msubsup><annotation encoding="application/x-tex">\mathbb{Z}_{n}^{*}</annotation></semantics></math>
+is cyclic of order
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.<br />
+(b) Prove that
+<math role="math" aria-label="A^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>A</mi><mo>*</mo></msup><annotation encoding="application/x-tex">A^{*}</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+for any finite abelian group
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.</p></li>
+<li><p>(Aug 99 #3) The exponent
+<math role="math" aria-label="e" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>
+of a group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is defined as the smallest positive integer
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+such that
+<math role="math" aria-label="x^{k}=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">x^{k}=1</annotation></semantics></math>
+for all
+<math role="math" aria-label="x \in G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">x \in G</annotation></semantics></math>;
+for an abelian group, in additive notation this is the smallest
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>
+such that
+<math role="math" aria-label="k x=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">k x=0</annotation></semantics></math>
+for all elements. If
+<math role="math" aria-label="n_{1}, n_{2}, \ldots, n_{r}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>n</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">n_{1}, n_{2}, \ldots, n_{r}</annotation></semantics></math>
+are the invariant factors of a finite abelian group<br />
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+(so
+<math role="math" aria-label="n_{r}\left|n_{r-1}\right| \cdots\left|n_{2}\right| n_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mi>r</mi></msub><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>n</mi><mrow><mi>r</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="true" form="postfix">|</mo></mrow><mi>⋯</mi><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>n</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>n</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">n_{r}\left|n_{r-1}\right| \cdots\left|n_{2}\right| n_{1}</annotation></semantics></math>
+), prove that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+has exponent
+<math role="math" aria-label="e=n_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo>=</mo><msub><mi>n</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">e=n_{1}</annotation></semantics></math>,
+and has an element of order precisely
+<math role="math" aria-label="e" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>e</mi><annotation encoding="application/x-tex">e</annotation></semantics></math>.
+Conclude that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+has an element of order
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+iff
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+divides the largest invariant factor
+<math role="math" aria-label="n_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mn>1</mn></msub><annotation encoding="application/x-tex">n_{1}</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="00 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>00</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">00 \# 3</annotation></semantics></math>
+)(a) Let
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+be an abelian group, and let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+be any two endomorphisms of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+(group homomorphisms of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+into itself). Let
+<math role="math" aria-label="B:=\operatorname{Fix}(f g)=\{a \in A \mid f(g(a))=a\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>:=</mo><mrow><mi mathvariant="normal">Fix</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mi>g</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>&isin;</mo><mi>A</mi><mo>∣</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">B:=\operatorname{Fix}(f g)=\{a \in A \mid f(g(a))=a\}</annotation></semantics></math>,
+<math role="math" aria-label="C:=\operatorname{Fix}(g f)=\{a \in A \mid g(f((a))=a\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>:=</mo><mrow><mi mathvariant="normal">Fix</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>g</mi><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>&isin;</mo><mi>A</mi><mo>∣</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>a</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">C:=\operatorname{Fix}(g f)=\{a \in A \mid g(f((a))=a\}</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+and
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+are isomorphic subgroups of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>.
+(b) How many abelian groups (up to isomorphism) are there of order 1000
+which have no elements whose orders are larger than 35 ?</p></li>
+<li><p>(Aug 01 #3) How many nonisomorphic abelian groups are there of
+order 325 ?</p></li>
+<li><p>(Jan 04 #4) Let
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+be the subgroup of
+<math role="math" aria-label="G:=\mathbb{Z} \oplus \mathbb{Z}=\{(m, n) \mid m, n \in \mathbb{Z}\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>:=</mo><mi>&Zopf;</mi><mo>&oplus;</mo><mi>&Zopf;</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>m</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><mi>&Zopf;</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">G:=\mathbb{Z} \oplus \mathbb{Z}=\{(m, n) \mid m, n \in \mathbb{Z}\}</annotation></semantics></math>
+generated by
+<math role="math" aria-label="(1,2)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1,2)</annotation></semantics></math>
+and
+<math role="math" aria-label="(3,4)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo>,</mo><mn>4</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(3,4)</annotation></semantics></math>.
+Identify the quotient group
+<math role="math" aria-label="G / H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>/</mi><mi>H</mi></mrow><annotation encoding="application/x-tex">G / H</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="04 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>04</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">04 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+be the
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-submodule
+of
+<math role="math" aria-label="\mathbb{Z}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Zopf;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{3}</annotation></semantics></math>
+generated by the column vectors
+<math role="math" aria-label="(2,2,-2)^{t},(-4,-2,4)^{t}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>−</mi><mn>2</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>t</mi></msup><mo>,</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>4</mn><mo>,</mo><mi>−</mi><mn>2</mn><mo>,</mo><mn>4</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>t</mi></msup></mrow><annotation encoding="application/x-tex">(2,2,-2)^{t},(-4,-2,4)^{t}</annotation></semantics></math>
+and
+<math role="math" aria-label="(2,4,4)^{t} \in \mathbb{Z}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>4</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>t</mi></msup><mo>&isin;</mo><msup><mi>&Zopf;</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">(2,4,4)^{t} \in \mathbb{Z}^{3}</annotation></semantics></math>.<br />
+(a) Determine the structure of the abelian group
+<math role="math" aria-label="\mathbb{Z}^{3} / N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Zopf;</mi><mn>3</mn></msup><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z}^{3} / N</annotation></semantics></math>.<br />
+(b) Determine a basis
+<math role="math" aria-label="y_{1}, y_{2}, y_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>y</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">y_{1}, y_{2}, y_{3}</annotation></semantics></math>
+of
+<math role="math" aria-label="\mathbb{Z}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Zopf;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{3}</annotation></semantics></math>
+and natural numbers
+<math role="math" aria-label="d_{1}\left|d_{2}\right| d_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>d</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>d</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">d_{1}\left|d_{2}\right| d_{3}</annotation></semantics></math>
+such that
+<math role="math" aria-label="d_{1} y_{1}, d_{2} y_{2}, d_{3} y_{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><msub><mi>d</mi><mn>2</mn></msub><msub><mi>y</mi><mn>2</mn></msub><mo>,</mo><msub><mi>d</mi><mn>3</mn></msub><msub><mi>y</mi><mn>3</mn></msub></mrow><annotation encoding="application/x-tex">d_{1} y_{1}, d_{2} y_{2}, d_{3} y_{3}</annotation></semantics></math>
+is a
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>-basis
+of
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="05 \# 8" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>05</mn><mi>#</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">05 \# 8</annotation></semantics></math>
+) Let
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+be a finitely generated abelian group and
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+a natural number.<br />
+(a) Show that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+can be generated by
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+elements if and only if
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is a homomorphic image of
+<math role="math" aria-label="\mathbb{Z}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Zopf;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{Z}^{n}</annotation></semantics></math>.<br />
+(b) If
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is a subgroup of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+and
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+can be generated by
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+elements, prove that also
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+can be generated by
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+elements.<br />
+(Hint: It is known from the structure theory of modules over PID’s that
+this statement is true for
+<math role="math" aria-label="A=\mathbb{Z}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><msup><mi>&Zopf;</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">A=\mathbb{Z}^{n}</annotation></semantics></math>.)<br />
+(c) If
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is a prime number, prove that no subgroup of
+<math role="math" aria-label="\mathbb{Z}^{2} \oplus \mathbb{Z}_{p^{3}} \oplus \mathbb{Z}_{p^{4}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Zopf;</mi><mn>2</mn></msup><mo>&oplus;</mo><msub><mi>&Zopf;</mi><msup><mi>p</mi><mn>3</mn></msup></msub><mo>&oplus;</mo><msub><mi>&Zopf;</mi><msup><mi>p</mi><mn>4</mn></msup></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}^{2} \oplus \mathbb{Z}_{p^{3}} \oplus \mathbb{Z}_{p^{4}}</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="\mathbb{Z}_{p} \oplus \mathbb{Z}_{p} \oplus \mathbb{Z}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><mi>p</mi></msub><mo>&oplus;</mo><msub><mi>&Zopf;</mi><mi>p</mi></msub><mo>&oplus;</mo><msub><mi>&Zopf;</mi><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{p} \oplus \mathbb{Z}_{p} \oplus \mathbb{Z}_{p}</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="06 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>06</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">06 \# 2</annotation></semantics></math>
+) Find the number of elements of order precisely
+<math role="math" aria-label="p^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mn>2</mn></msup><annotation encoding="application/x-tex">p^{2}</annotation></semantics></math>
+in the group
+<math role="math" aria-label="\mathbb{Z}_{p^{3}} \times \mathbb{Z}_{p^{5}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><msup><mi>p</mi><mn>3</mn></msup></msub><mo>&times;</mo><msub><mi>&Zopf;</mi><msup><mi>p</mi><mn>5</mn></msup></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{p^{3}} \times \mathbb{Z}_{p^{5}}</annotation></semantics></math>.</p></li>
+<li><p>(Aug 08 #4) Let G be a finite abelian group,
+<math role="math" aria-label="|G|=n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>G</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">|G|=n</annotation></semantics></math>,
+and define the exponent of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+to be
+<math role="math" aria-label="\operatorname{Exp}(G):=\min \left\{k \in \mathbb{N} \mid g^{k}=e\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Exp</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>G</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><mrow><mi mathvariant="normal">min</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">{</mo><mi>k</mi><mo>&isin;</mo><mi>&Nopf;</mi><mo>∣</mo><msup><mi>g</mi><mi>k</mi></msup><mo>=</mo><mi>e</mi></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Exp}(G):=\min \left\{k \in \mathbb{N} \mid g^{k}=e\right.</annotation></semantics></math>
+for all
+<math role="math" aria-label="\left.g \in G.\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&isin;</mo><mi>G</mi><mi>.</mi><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left.g \in G.\right\}</annotation></semantics></math>.<br />
+a. Prove that
+<math role="math" aria-label="\operatorname{Exp}(G)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Exp</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>G</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Exp}(G)</annotation></semantics></math>
+divides
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+and
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+divides
+<math role="math" aria-label="\operatorname{Exp}(G)^{j}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Exp</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>G</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>j</mi></msup></mrow><annotation encoding="application/x-tex">\operatorname{Exp}(G)^{j}</annotation></semantics></math>
+for some
+<math role="math" aria-label="j \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">j \in \mathbb{N}</annotation></semantics></math>.<br />
+b. If
+<math role="math" aria-label="G, H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>,</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">G, H</annotation></semantics></math>
+are finite abelian groups with
+<math role="math" aria-label="\operatorname{Exp}(G)=\operatorname{Exp}(H)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Exp</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>G</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">Exp</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>H</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Exp}(G)=\operatorname{Exp}(H)</annotation></semantics></math>
+and
+<math role="math" aria-label="|G|=|H|=n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>G</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mo stretchy="false" form="prefix">|</mo><mi>H</mi><mo stretchy="false" form="prefix">|</mo><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">|G|=|H|=n</annotation></semantics></math>
+where
+<math role="math" aria-label="p^{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mn>4</mn></msup><annotation encoding="application/x-tex">p^{4}</annotation></semantics></math>
+does not divide
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+for any prime
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>,
+prove that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+and
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+are isomorphic.<br />
+c. State (without proof) results analogous to (a) and (b) which hold for
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+matrices over an algebraically closed field.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="09 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>09</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">09 \# 2</annotation></semantics></math>
+) (a) Classify abelian groups of order
+<math role="math" aria-label="72=2^{3} \cdot 3^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>72</mn><mo>=</mo><msup><mn>2</mn><mn>3</mn></msup><mo>&sdot;</mo><msup><mn>3</mn><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">72=2^{3} \cdot 3^{2}</annotation></semantics></math>
+up to isomorphism (the answer is sufficient).<br />
+(b) Let
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+and
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+be positive integers. What is the number of elements in
+<math role="math" aria-label="\mathbb{Z} / n \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mi>n</mi><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z} / n \mathbb{Z}</annotation></semantics></math>
+whose order divides
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+?<br />
+(c) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+and
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+be finite abelian groups, and assume that for any
+<math role="math" aria-label="m \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">m \in \mathbb{N}</annotation></semantics></math>
+the groups
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+and
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+have the same number of elements of order
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+and
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+are isomorphic.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="20 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">20 \# 2</annotation></semantics></math>
+) Let
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+be the subgroup of
+<math role="math" aria-label="\mathbb{Z}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Zopf;</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{Z}^{2}</annotation></semantics></math>
+generated by
+<math role="math" aria-label="(2,6)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mn>6</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(2,6)</annotation></semantics></math>
+and
+<math role="math" aria-label="(4,8)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>4</mn><mo>,</mo><mn>8</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(4,8)</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="A \cong \mathbb{Z}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>≅</mo><msup><mi>&Zopf;</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">A \cong \mathbb{Z}^{2}</annotation></semantics></math>
+and find (with proof) elements
+<math role="math" aria-label="v_{1}, v_{2} \in \mathbb{Z}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><msub><mi>v</mi><mn>2</mn></msub><mo>&isin;</mo><msup><mi>&Zopf;</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">v_{1}, v_{2} \in \mathbb{Z}^{2}</annotation></semantics></math>
+and
+<math role="math" aria-label="n_{1}, n_{2} \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>1</mn></msub><mo>,</mo><msub><mi>n</mi><mn>2</mn></msub><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">n_{1}, n_{2} \in \mathbb{N}</annotation></semantics></math>
+such that
+<math role="math" aria-label="\mathbb{Z}^{2}=\mathbb{Z} v_{1} \oplus \mathbb{Z} v_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&Zopf;</mi><mn>2</mn></msup><mo>=</mo><mi>&Zopf;</mi><msub><mi>v</mi><mn>1</mn></msub><mo>&oplus;</mo><mi>&Zopf;</mi><msub><mi>v</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}^{2}=\mathbb{Z} v_{1} \oplus \mathbb{Z} v_{2}</annotation></semantics></math>
+and
+<math role="math" aria-label="A=\mathbb{Z}\left(n_{1} v_{1}\right) \oplus \mathbb{Z}\left(n_{2} v_{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>&Zopf;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>n</mi><mn>1</mn></msub><msub><mi>v</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&oplus;</mo><mi>&Zopf;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>n</mi><mn>2</mn></msub><msub><mi>v</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">A=\mathbb{Z}\left(n_{1} v_{1}\right) \oplus \mathbb{Z}\left(n_{2} v_{2}\right)</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="20 \# 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>#</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">20 \# 1</annotation></semantics></math>
+) Let
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+be a finitely generated abelian group. Prove that the following are
+equivalent:<br />
+(a)
+<math role="math" aria-label="\operatorname{dim}_{\mathbb{Q}}\left(A \otimes_{\mathbb{Z}} \mathbb{Q}\right) \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>&Qopf;</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>&Qopf;</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\operatorname{dim}_{\mathbb{Q}}\left(A \otimes_{\mathbb{Z}} \mathbb{Q}\right) \leq 1</annotation></semantics></math><br />
+(b)
+<math role="math" aria-label="\operatorname{Aut}(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Aut</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Aut}(A)</annotation></semantics></math>
+is finite.</p></li>
+</ol>
+<p>Hint: Use classification of finitely generated abelian groups. What
+does the condition
+<math role="math" aria-label="\operatorname{dim}_{\mathbb{Q}}\left(A \otimes_{\mathbb{Z}} \mathbb{Q}\right) \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>&Qopf;</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><msub><mo>&otimes;</mo><mi>&Zopf;</mi></msub><mi>&Qopf;</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\operatorname{dim}_{\mathbb{Q}}\left(A \otimes_{\mathbb{Z}} \mathbb{Q}\right) \leq 1</annotation></semantics></math>
+tell you about a standard decomposition of
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+?<br />
+26. (Jan 21 #4) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a finite abelian group and let
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+be a prime. Prove that the number of elements of order
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+in
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is equal to the number of nontrivial homomorphisms from
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+to
+<math role="math" aria-label="\mathbb{Z}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Zopf;</mi><mi>p</mi></msub><annotation encoding="application/x-tex">\mathbb{Z}_{p}</annotation></semantics></math>.<br />
+Hint: Calculate both numbers separately.<br />
+27. (Aug 21 #2) Given a group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,
+denote by
+<math role="math" aria-label="\operatorname{Aut}(G)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Aut</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>G</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Aut}(G)</annotation></semantics></math>
+its group of automorphisms.<br />
+(a) Let
+<math role="math" aria-label="G=\mathbb{Z}_{p^{a}} \oplus \mathbb{Z}_{p^{b}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><msub><mi>&Zopf;</mi><msup><mi>p</mi><mi>a</mi></msup></msub><mo>&oplus;</mo><msub><mi>&Zopf;</mi><msup><mi>p</mi><mi>b</mi></msup></msub></mrow><annotation encoding="application/x-tex">G=\mathbb{Z}_{p^{a}} \oplus \mathbb{Z}_{p^{b}}</annotation></semantics></math>
+where
+<math role="math" aria-label="a \geq b&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&ge;</mo><mi>b</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a \geq b&gt;0</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="\operatorname{Aut}(G)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Aut</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>G</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Aut}(G)</annotation></semantics></math>
+is non-abelian by explicitly constructing two noncommuting
+automorphisms. Hint: It may be helpful to start with the case
+<math role="math" aria-label="a=b=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">a=b=1</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a finite abelian group. Show that
+<math role="math" aria-label="\operatorname{Aut}(G)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Aut</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>G</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Aut}(G)</annotation></semantics></math>
+is abelian
+<math role="math" aria-label="\Longleftrightarrow G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&hArr;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">\Longleftrightarrow G</annotation></semantics></math>
+is cyclic. Hint: Use (a). Remember that you are allowed to do this even
+if you did not solve (a).</p>
+<h2 class="unnumbered" id="chapter-2">Chapter 2</h2>
+<h2 class="unnumbered" id="rings">Rings</h2>
+
+</main>
+</body>
+</html>

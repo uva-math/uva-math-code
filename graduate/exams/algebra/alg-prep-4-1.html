@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>4.1 Dual Spaces and Bilinear Forms - Algebra General Exam Review - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html">Algebra Review Guide</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">4.1 Dual Spaces and Bilinear Forms</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="dual-spaces-and-bilinear-forms">4.1 Dual
+spaces and bilinear forms</h2>
+<p>Know the basic definitions: Linear form (or functional), dual space
+<math role="math" aria-label="V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>V</mi><mo>*</mo></msup><annotation encoding="application/x-tex">V^{*}</annotation></semantics></math>
+(space of all linear forms), dual basis
+<math role="math" aria-label="\mathcal{B}^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>ℬ</mi><mo>*</mo></msup><annotation encoding="application/x-tex">\mathcal{B}^{*}</annotation></semantics></math>
+(to a basis
+<math role="math" aria-label="\mathcal{B}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+for
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+); annihilator (of a subset of
+<math role="math" aria-label="V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>V</mi><mo>*</mo></msup><annotation encoding="application/x-tex">V^{*}</annotation></semantics></math>
+in
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+); dual (or adjoint or transpose)
+<math role="math" aria-label="T^{*}: W^{*} \rightarrow V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mo>*</mo></msup><mo>:</mo><msup><mi>W</mi><mo>*</mo></msup><mo>&rarr;</mo><msup><mi>V</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">T^{*}: W^{*} \rightarrow V^{*}</annotation></semantics></math>
+of a linear transformation
+<math role="math" aria-label="T: V \rightarrow W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>:</mo><mi>V</mi><mo>&rarr;</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">T: V \rightarrow W</annotation></semantics></math>
+(defined by
+<math role="math" aria-label="T^{*}(f)=f \circ T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo>&SmallCircle;</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">T^{*}(f)=f \circ T</annotation></semantics></math>
+for
+<math role="math" aria-label="f \in W^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>W</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">f \in W^{*}</annotation></semantics></math>
+); Bilinear form
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+on
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+(bilinear map
+<math role="math" aria-label="V \times V \rightarrow F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&times;</mo><mi>V</mi><mo>&rarr;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">V \times V \rightarrow F</annotation></semantics></math>
+) left and right duality maps
+<math role="math" aria-label="B_{L}, B_{R}: V \rightarrow V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>L</mi></msub><mo>,</mo><msub><mi>B</mi><mi>R</mi></msub><mo>:</mo><mi>V</mi><mo>&rarr;</mo><msup><mi>V</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">B_{L}, B_{R}: V \rightarrow V^{*}</annotation></semantics></math>
+(via
+<math role="math" aria-label="\left.B_{L}(x):=B(x, \cdot), B_{R}(x):=B(\cdot, x)\right) ;" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><msub><mi>B</mi><mi>L</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>&sdot;</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><msub><mi>B</mi><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>&sdot;</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>;</mo></mrow><annotation encoding="application/x-tex">\left.B_{L}(x):=B(x, \cdot), B_{R}(x):=B(\cdot, x)\right) ;</annotation></semantics></math>
+symmetric, alternating, skew symmetric, nondegenerate, anisotropic (
+<math role="math" aria-label="B(x, x)=0 \Rightarrow x=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>&rArr;</mo><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B(x, x)=0 \Rightarrow x=0</annotation></semantics></math>
+) bilinear form. Orthogonal direct sum
+<math role="math" aria-label="V_{1} \perp V_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>1</mn></msub><mo>&perp;</mo><msub><mi>V</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">V_{1} \perp V_{2}</annotation></semantics></math>,
+isometry
+<math role="math" aria-label="V_{1} \rightarrow V_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mn>1</mn></msub><mo>&rarr;</mo><msub><mi>V</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">V_{1} \rightarrow V_{2}</annotation></semantics></math>
+of spaces with bilinear forms, orthogonal
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+(isometry
+<math role="math" aria-label="V \rightarrow V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&rarr;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">V \rightarrow V</annotation></semantics></math>
+). Symplectic plane for an alternate bilinear form (basis
+<math role="math" aria-label="u, v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>,</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">u, v</annotation></semantics></math>
+with
+<math role="math" aria-label="B(u, v)=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">B(u, v)=1</annotation></semantics></math>,
+hence
+<math role="math" aria-label="B(u, u)=B(v, v)=0, B(v, u)=-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo>,</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo>,</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">B(u, u)=B(v, v)=0, B(v, u)=-1</annotation></semantics></math>
+).</p>
+<p>Definitions for a given Bilinear Form
+<math role="math" aria-label="B:" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>:</mo></mrow><annotation encoding="application/x-tex">B:</annotation></semantics></math>
+Matrix
+<math role="math" aria-label="\operatorname{Mat}_{\mathcal{B}}(B)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">Mat</mi><mo>&#8289;</mo></mrow><mi>ℬ</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Mat}_{\mathcal{B}}(B)</annotation></semantics></math>
+of
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+relative to an ordered basis
+<math role="math" aria-label="\mathcal{B}=\left\{x_{1}, \ldots, x_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℬ</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{B}=\left\{x_{1}, \ldots, x_{n}\right\}</annotation></semantics></math>
+of
+<math role="math" aria-label="V\left(b_{i j}=B\left(x_{i}, x_{j}\right)\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><msub><mi>x</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">V\left(b_{i j}=B\left(x_{i}, x_{j}\right)\right)</annotation></semantics></math>;
+left and right annihilators (or orthogonal complements)
+<math role="math" aria-label="U^{\perp, L}, U^{\perp, R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>U</mi><mrow><mo>&perp;</mo><mo>,</mo><mi>L</mi></mrow></msup><mo>,</mo><msup><mi>U</mi><mrow><mo>&perp;</mo><mo>,</mo><mi>R</mi></mrow></msup></mrow><annotation encoding="application/x-tex">U^{\perp, L}, U^{\perp, R}</annotation></semantics></math>
+of a subspace
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+(the vectors
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+killing
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+from the left or right,
+<math role="math" aria-label="B(x, U)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>U</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B(x, U)=0</annotation></semantics></math>
+or
+<math role="math" aria-label="B(U, x)=" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>U</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo></mrow><annotation encoding="application/x-tex">B(U, x)=</annotation></semantics></math>
+0 ), left and right radical
+<math role="math" aria-label="\operatorname{Rad}_{L}(B)=\operatorname{ker}\left(B_{L}\right)=V^{\perp, L}, \operatorname{Rad}_{R}(B)=\operatorname{ker}\left(B_{R}\right)=V^{\perp, R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">Rad</mi><mo>&#8289;</mo></mrow><mi>L</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">ker</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>B</mi><mi>L</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>V</mi><mrow><mo>&perp;</mo><mo>,</mo><mi>L</mi></mrow></msup><mo>,</mo><msub><mrow><mi mathvariant="normal">Rad</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">ker</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>B</mi><mi>R</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msup><mi>V</mi><mrow><mo>&perp;</mo><mo>,</mo><mi>R</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\operatorname{Rad}_{L}(B)=\operatorname{ker}\left(B_{L}\right)=V^{\perp, L}, \operatorname{Rad}_{R}(B)=\operatorname{ker}\left(B_{R}\right)=V^{\perp, R}</annotation></semantics></math>,
+left, right orthogonality, orthosymmetric
+<math role="math" aria-label="(B(x, y)=0 \Rightarrow B(y, x)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo>&rArr;</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">(B(x, y)=0 \Rightarrow B(y, x)=0</annotation></semantics></math>;
+standard examples: symmetric and alternating forms). Isotropic vector
+<math role="math" aria-label="(B(x, x)=0)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(B(x, x)=0)</annotation></semantics></math>.</p>
+<p>Know Facts:<br /><br /><span class="problem-number">(1)</span>
+<math role="math" aria-label="\operatorname{Bil}(V) \cong \operatorname{Hom}\left(V, V^{*}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Bil</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>V</mi><mo stretchy="false" form="postfix">)</mo><mo>≅</mo><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>V</mi><mo>,</mo><msup><mi>V</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\operatorname{Bil}(V) \cong \operatorname{Hom}\left(V, V^{*}\right)</annotation></semantics></math>
+linear map
+<math role="math" aria-label="(L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">(L</annotation></semantics></math>
+or
+<math role="math" aria-label="R) V \rightarrow V^{*}\left(B\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="postfix">)</mo><mi>V</mi><mo>&rarr;</mo><msup><mi>V</mi><mo>*</mo></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>B</mi></mrow></mrow><annotation encoding="application/x-tex">R) V \rightarrow V^{*}\left(B\right.</annotation></semantics></math>
+gives
+<math role="math" aria-label="L=B_{L}, R=B_{R} ; L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mo>=</mo><msub><mi>B</mi><mi>L</mi></msub><mo>,</mo><mi>R</mi><mo>=</mo><msub><mi>B</mi><mi>R</mi></msub><mo>;</mo><mi>L</mi></mrow><annotation encoding="application/x-tex">L=B_{L}, R=B_{R} ; L</annotation></semantics></math>
+or
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+gives
+<math role="math" aria-label="B(x, y)=L(x)(y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>L</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">B(x, y)=L(x)(y)</annotation></semantics></math>
+or
+<math role="math" aria-label="B(x, y)=R(y)(x))" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>R</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">B(x, y)=R(y)(x))</annotation></semantics></math>;<br /><br /><span class="problem-number">(2)</span> IF
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+IS FIN. DIM., nondegenerate bilinear form on
+<math role="math" aria-label="V \cong" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>≅</mo></mrow><annotation encoding="application/x-tex">V \cong</annotation></semantics></math>
+isomorphism (
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+or
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+)
+<math role="math" aria-label="V \rightarrow V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>&rarr;</mo><msup><mi>V</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">V \rightarrow V^{*}</annotation></semantics></math>;
+a bilinear form
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is nondegenerate
+<math role="math" aria-label="\Leftrightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&hArr;</mo><annotation encoding="application/x-tex">\Leftrightarrow</annotation></semantics></math>
+left nondegenerate (left radical zero)
+<math role="math" aria-label="\Leftrightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&hArr;</mo><annotation encoding="application/x-tex">\Leftrightarrow</annotation></semantics></math>
+right nondegenerate (right radical zero)
+<math role="math" aria-label="\Leftrightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&hArr;</mo><annotation encoding="application/x-tex">\Leftrightarrow</annotation></semantics></math>
+some/any matrix of
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is invertible (
+<math role="math" aria-label="\operatorname{det}\left(b_{i j}\right) \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">det</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>b</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\operatorname{det}\left(b_{i j}\right) \neq 0</annotation></semantics></math>
+),
+<math role="math" aria-label="\operatorname{Mat}_{\mathcal{B}}(B)=\operatorname{Mat}_{\mathcal{B}^{*}, \mathcal{B}}\left(B_{R}\right)= \operatorname{Mat}_{\mathcal{B}^{*}, \mathcal{B}}\left(B_{L}\right)^{t}, \operatorname{Mat}_{\mathcal{B}^{\prime}}(B)=P^{t} \operatorname{Mat}_{\mathcal{B}}(B) P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">Mat</mi><mo>&#8289;</mo></mrow><mi>ℬ</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mrow><mi mathvariant="normal">Mat</mi><mo>&#8289;</mo></mrow><mrow><msup><mi>ℬ</mi><mo>*</mo></msup><mo>,</mo><mi>ℬ</mi></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>B</mi><mi>R</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><msub><mrow><mi mathvariant="normal">Mat</mi><mo>&#8289;</mo></mrow><mrow><msup><mi>ℬ</mi><mo>*</mo></msup><mo>,</mo><mi>ℬ</mi></mrow></msub><msup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>B</mi><mi>L</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>t</mi></msup><mo>,</mo><msub><mrow><mi mathvariant="normal">Mat</mi><mo>&#8289;</mo></mrow><msup><mi>ℬ</mi><mi>′</mi></msup></msub><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>P</mi><mi>t</mi></msup><msub><mrow><mi mathvariant="normal">Mat</mi><mo>&#8289;</mo></mrow><mi>ℬ</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">\operatorname{Mat}_{\mathcal{B}}(B)=\operatorname{Mat}_{\mathcal{B}^{*}, \mathcal{B}}\left(B_{R}\right)= \operatorname{Mat}_{\mathcal{B}^{*}, \mathcal{B}}\left(B_{L}\right)^{t}, \operatorname{Mat}_{\mathcal{B}^{\prime}}(B)=P^{t} \operatorname{Mat}_{\mathcal{B}}(B) P</annotation></semantics></math>
+for the change-of-basis matrix
+<math role="math" aria-label="P=\operatorname{Mat}_{\mathcal{B}^{\prime}, \mathcal{B}}(I d) \Rightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">Mat</mi><mo>&#8289;</mo></mrow><mrow><msup><mi>ℬ</mi><mi>′</mi></msup><mo>,</mo><mi>ℬ</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>I</mi><mi>d</mi><mo stretchy="false" form="postfix">)</mo><mo>&rArr;</mo></mrow><annotation encoding="application/x-tex">P=\operatorname{Mat}_{\mathcal{B}^{\prime}, \mathcal{B}}(I d) \Rightarrow</annotation></semantics></math>
+the discriminant
+<math role="math" aria-label="\quad \operatorname{det}\left(\operatorname{Mat}_{\mathcal{B}}(B)\right)\left(F^{*}\right)^{2} \in F^{*} /\left(F^{*}\right)^{2} \cup\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mspace width="1.0em"></mspace><mrow><mi mathvariant="normal">det</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mi mathvariant="normal">Mat</mi><mo>&#8289;</mo></mrow><mi>ℬ</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>F</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>&isin;</mo><msup><mi>F</mi><mo>*</mo></msup><mi>/</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>F</mi><mo>*</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>&cup;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\quad \operatorname{det}\left(\operatorname{Mat}_{\mathcal{B}}(B)\right)\left(F^{*}\right)^{2} \in F^{*} /\left(F^{*}\right)^{2} \cup\{0\}</annotation></semantics></math>
+is a well-defined invariant of
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>;
+it is zero iff
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is degenerate.<br /><br /><span class="problem-number">(3)</span> If
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+is again finite-dimensional and
+<math role="math" aria-label="B: V \times V \rightarrow F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>:</mo><mi>V</mi><mo>&times;</mo><mi>V</mi><mo>&rarr;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">B: V \times V \rightarrow F</annotation></semantics></math>
+a nondegenerate symmetric bilinear form, we may identify
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+with
+<math role="math" aria-label="V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>V</mi><mo>*</mo></msup><annotation encoding="application/x-tex">V^{*}</annotation></semantics></math>
+via
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>,
+i.e. we may identify each
+<math role="math" aria-label="x \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">x \in V</annotation></semantics></math>
+with
+<math role="math" aria-label="B_{L}(x)=B_{R}(x) \in V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>L</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>B</mi><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msup><mi>V</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">B_{L}(x)=B_{R}(x) \in V^{*}</annotation></semantics></math>
+(since
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is symmetric,
+<math role="math" aria-label="B_{L}=B_{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>L</mi></msub><mo>=</mo><msub><mi>B</mi><mi>R</mi></msub></mrow><annotation encoding="application/x-tex">B_{L}=B_{R}</annotation></semantics></math>
+). Making this identification, any endomorphism of
+<math role="math" aria-label="V^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>V</mi><mo>*</mo></msup><annotation encoding="application/x-tex">V^{*}</annotation></semantics></math>
+can also be interpreted as an endomorphism of
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>.
+Then the dual
+<math role="math" aria-label="T^{*}: V \rightarrow V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mo>*</mo></msup><mo>:</mo><mi>V</mi><mo>&rarr;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">T^{*}: V \rightarrow V</annotation></semantics></math>
+of an endomorphism
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+of
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+is characterized by the following property:<br />
+<math role="math" aria-label="B(x, T(y))=B\left(T^{*}(x), y\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>T</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>y</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">B(x, T(y))=B\left(T^{*}(x), y\right)</annotation></semantics></math>
+for all
+<math role="math" aria-label="x, y \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">x, y \in V</annotation></semantics></math>.<br />
+Basic Splitting Lemma: If
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is orthosymmetric, any finite-dimensional nondegenerate subspace
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+of
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+is an orthogonal direct summand,
+<math role="math" aria-label="V=U \perp U^{\perp}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>U</mi><mo>&perp;</mo><msup><mi>U</mi><mo>&perp;</mo></msup></mrow><annotation encoding="application/x-tex">V=U \perp U^{\perp}</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="basic-structure-theorems">Basic Structure
+Theorems:</h1>
+<p>(I) Any space with alternating form
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is a direct sum
+<math role="math" aria-label="V=P_{1} \perp \ldots \perp P_{r} \perp R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><msub><mi>P</mi><mn>1</mn></msub><mo>&perp;</mo><mi>…</mi><mo>&perp;</mo><msub><mi>P</mi><mi>r</mi></msub><mo>&perp;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">V=P_{1} \perp \ldots \perp P_{r} \perp R</annotation></semantics></math>
+for
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+the radical,
+<math role="math" aria-label="P_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mi>i</mi></msub><annotation encoding="application/x-tex">P_{i}</annotation></semantics></math>
+symplectic planes. Therefore, the rank of any matrix representing
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is even and its determinant is a square. In particular, there are no
+nondegenerate alternating forms in odd dimensions.<br />
+(II) Any vector space over a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+with
+<math role="math" aria-label="\operatorname{char}(F) \neq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">char</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\operatorname{char}(F) \neq 2</annotation></semantics></math>
+with symmetric form is a direct sum
+<math role="math" aria-label="V=L_{1} \perp \ldots \perp L_{r} \perp R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><msub><mi>L</mi><mn>1</mn></msub><mo>&perp;</mo><mi>…</mi><mo>&perp;</mo><msub><mi>L</mi><mi>r</mi></msub><mo>&perp;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">V=L_{1} \perp \ldots \perp L_{r} \perp R</annotation></semantics></math>
+for
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+the radical,
+<math role="math" aria-label="L_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>L</mi><mi>i</mi></msub><annotation encoding="application/x-tex">L_{i}</annotation></semantics></math>
+anisotropic lines (
+<math role="math" aria-label="F u_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><msub><mi>u</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">F u_{i}</annotation></semantics></math>
+with
+<math role="math" aria-label="B\left(u_{i}, u_{i}\right) \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>u</mi><mi>i</mi></msub><mo>,</mo><msub><mi>u</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B\left(u_{i}, u_{i}\right) \neq 0</annotation></semantics></math>
+); thus there is an orthogonal basis
+<math role="math" aria-label="\left\{u_{1}, \ldots, u_{r}, z_{r+1}, \ldots, z_{r+s}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>u</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>u</mi><mi>r</mi></msub><mo>,</mo><msub><mi>z</mi><mrow><mi>r</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>z</mi><mrow><mi>r</mi><mo>+</mo><mi>s</mi></mrow></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{u_{1}, \ldots, u_{r}, z_{r+1}, \ldots, z_{r+s}\right\}</annotation></semantics></math>
+relative to which
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+has diagonal matrix. Over an algebraically closed field, we can assume
+all
+<math role="math" aria-label="B\left(u_{i}, u_{i}\right)=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>u</mi><mi>i</mi></msub><mo>,</mo><msub><mi>u</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">B\left(u_{i}, u_{i}\right)=1</annotation></semantics></math>;
+over the reals, we can assume all
+<math role="math" aria-label="B\left(u_{i}, u_{i}\right)= \pm 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>u</mi><mi>i</mi></msub><mo>,</mo><msub><mi>u</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>&plusmn;</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">B\left(u_{i}, u_{i}\right)= \pm 1</annotation></semantics></math>,
+with the numbers of +1 ’s, -1 ’s, and 0 ’s being invariants of
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+by Sylvester’s Law of Inertia.</p>
+<h2 class="unnumbered" id="related-problems-8">Related Problems</h2>
+<ol>
+<li><p>(Aug
+<math role="math" aria-label="94 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>94</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">94 \# 5</annotation></semantics></math>
+) If
+<math role="math" aria-label="f(x, y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x, y)</annotation></semantics></math>
+is an alternating bilinear form on a 25 -dimensional real vector space,
+and
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is its matrix with respect to some basis, show that
+<math role="math" aria-label="\operatorname{det}(A)^{25}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">det</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>A</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>25</mn></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\operatorname{det}(A)^{25}=0</annotation></semantics></math>.</p></li>
+<li><p>(Aug 95 #7) Show that every element of
+<math role="math" aria-label="S O_{5}(\mathbb{R})=\left\{A \in G L_{5}(\mathbb{R}) \mid(A x, A y)=(x, y)\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><msub><mi>O</mi><mn>5</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>A</mi><mo>&isin;</mo><mi>G</mi><msub><mi>L</mi><mn>5</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mi>x</mi><mo>,</mo><mi>A</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">S O_{5}(\mathbb{R})=\left\{A \in G L_{5}(\mathbb{R}) \mid(A x, A y)=(x, y)\right.</annotation></semantics></math>
+and
+<math role="math" aria-label="\operatorname{det}(A)= +1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">det</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>+</mi><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\operatorname{det}(A)= +1\}</annotation></semantics></math>
+[where
+<math role="math" aria-label="(x, y)=x \cdot y=x^{t} y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>x</mi><mo>&sdot;</mo><mi>y</mi><mo>=</mo><msup><mi>x</mi><mi>t</mi></msup><mi>y</mi></mrow><annotation encoding="application/x-tex">(x, y)=x \cdot y=x^{t} y</annotation></semantics></math>
+is the usual dot product on
+<math role="math" aria-label="\mathbb{R}^{5}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>5</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{5}</annotation></semantics></math>
+] has a nonzero fixed point
+<math role="math" aria-label="A x=x \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mi>x</mi><mo>=</mo><mi>x</mi><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">A x=x \neq 0</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="95 \# 10" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>95</mn><mi>#</mi><mn>10</mn></mrow><annotation encoding="application/x-tex">95 \# 10</annotation></semantics></math>
+) It is easy to check that the space
+<math role="math" aria-label="M_{n}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M_{n}(\mathbb{R})</annotation></semantics></math>
+of
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+real matrices is a real inner product space with inner product given by:
+<math role="math" aria-label="\langle A, B\rangle=\operatorname{trace}\left(A B^{t}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>A</mi><mo>,</mo><mi>B</mi><mo stretchy="false" form="postfix">⟩</mo><mo>=</mo><mrow><mi mathvariant="normal">trace</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mi>A</mi><msup><mi>B</mi><mi>t</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\langle A, B\rangle=\operatorname{trace}\left(A B^{t}\right)</annotation></semantics></math>,
+where
+<math role="math" aria-label="B^{t}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>B</mi><mi>t</mi></msup><annotation encoding="application/x-tex">B^{t}</annotation></semantics></math>
+denotes the transpose of the matrix
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>.
+Let
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+be an invertible matrix and
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+the linear operator on
+<math role="math" aria-label="M_{n}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M_{n}(\mathbb{R})</annotation></semantics></math>
+defined by
+<math role="math" aria-label="T(A)=P^{t} A P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>P</mi><mi>t</mi></msup><mi>A</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">T(A)=P^{t} A P</annotation></semantics></math>.
+Denote the adjoint of
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+relative to this inner product by
+<math role="math" aria-label="T^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mo>*</mo></msup><annotation encoding="application/x-tex">T^{*}</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="T^{*}(A)=P A P^{t}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>T</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>P</mi><mi>A</mi><msup><mi>P</mi><mi>t</mi></msup></mrow><annotation encoding="application/x-tex">T^{*}(A)=P A P^{t}</annotation></semantics></math>
+for all
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,
+and find necessary and sufficient conditions on the matrix
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+that
+<math role="math" aria-label="T=T^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><msup><mi>T</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">T=T^{*}</annotation></semantics></math>.
+Justify your answer.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="97 \# 7" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>97</mn><mi>#</mi><mn>7</mn></mrow><annotation encoding="application/x-tex">97 \# 7</annotation></semantics></math>
+) Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+be a finite-dimensional vector space over a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+and let
+<math role="math" aria-label="\lambda" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&lambda;</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+and
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+be two linear functionals on
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>.
+Define
+<math role="math" aria-label="B(x, y)=\lambda(x) \mu(y)-\lambda(y) \mu(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>&lambda;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>&lambda;</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">B(x, y)=\lambda(x) \mu(y)-\lambda(y) \mu(x)</annotation></semantics></math>
+for
+<math role="math" aria-label="x, y \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">x, y \in V</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is an alternating bilinear form on
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>,
+and determine the possible values for its rank.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="00 \# 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>00</mn><mi>#</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">00 \# 1</annotation></semantics></math>
+) Define the trace of an
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+real matrix, and show that the trace of the product
+<math role="math" aria-label="X Y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mi>Y</mi></mrow><annotation encoding="application/x-tex">X Y</annotation></semantics></math>
+of two real
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+matrices is the same as the trace of
+<math role="math" aria-label="Y X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mi>X</mi></mrow><annotation encoding="application/x-tex">Y X</annotation></semantics></math>.<br />
+(b) Explain why the trace of such a matrix is the sum of all eigenvalues
+(possibly complex, with the appropriate multiplicities) of the
+matrix.<br />
+(b) Explain how you would define the trace of an abstract linear
+operator on any finitedimensional real vector space
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+(i.e., a linear transformation from
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+to
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+).</p></li>
+<li><p>(Jan
+<math role="math" aria-label="00 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>00</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">00 \# 2</annotation></semantics></math>
+) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be a field and
+<math role="math" aria-label="M_{n}(K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M_{n}(K)</annotation></semantics></math>
+the
+<math role="math" aria-label="n \times n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&times;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">n \times n</annotation></semantics></math>
+matrices over
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.<br />
+(a) Determine all linear functionals
+<math role="math" aria-label="f: M_{n}(K) \longrightarrow K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">f: M_{n}(K) \longrightarrow K</annotation></semantics></math>
+which are symmetric in the sense that
+<math role="math" aria-label="f(a b)=f(b a)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>b</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(a b)=f(b a)</annotation></semantics></math>
+for all matrices
+<math role="math" aria-label="a, b \in M_{n}(K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>&isin;</mo><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">a, b \in M_{n}(K)</annotation></semantics></math>.<br />
+(b) Determine all linear functionals
+<math role="math" aria-label="f: M_{n}(K) \longrightarrow K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msub><mi>M</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">f: M_{n}(K) \longrightarrow K</annotation></semantics></math>
+which are invariant in the sense that
+<math role="math" aria-label="f\left(g a g^{-1}\right)=f(a)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>g</mi><mi>a</mi><msup><mi>g</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f\left(g a g^{-1}\right)=f(a)</annotation></semantics></math>
+for all invertible
+<math role="math" aria-label="g \in G L_{n}(K)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&isin;</mo><mi>G</mi><msub><mi>L</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>K</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g \in G L_{n}(K)</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="03 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>03</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">03 \# 6</annotation></semantics></math>
+) Let
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+be a symmetric bilinear form on a finite-dimensional vector space
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+over a field
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>.
+For a subspace
+<math role="math" aria-label="W \subseteq V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&sube;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">W \subseteq V</annotation></semantics></math>,
+we define the annihilator subspace of
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+in
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+:
+<math role="math" aria-label="W^{\perp}=\{x \in V \mid B(x, w)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>W</mi><mo>&perp;</mo></msup><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>&isin;</mo><mi>V</mi><mo>∣</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">W^{\perp}=\{x \in V \mid B(x, w)=0</annotation></semantics></math>
+for every
+<math role="math" aria-label="w \in W\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>&isin;</mo><mi>W</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">w \in W\}</annotation></semantics></math>.
+Assume further that
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+is nondegenerate, that is
+<math role="math" aria-label="V^{\perp}=\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>V</mi><mo>&perp;</mo></msup><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">V^{\perp}=\{0\}</annotation></semantics></math>.
+Show that:<br />
+(a) there is a natural isomorphism of vector spaces from
+<math role="math" aria-label="V / W^{\perp}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mi>/</mi><msup><mi>W</mi><mo>&perp;</mo></msup></mrow><annotation encoding="application/x-tex">V / W^{\perp}</annotation></semantics></math>
+to the dual space
+<math role="math" aria-label="W^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mo>*</mo></msup><annotation encoding="application/x-tex">W^{*}</annotation></semantics></math>
+of
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>;<br />
+(b)
+<math role="math" aria-label="\operatorname{dim} W^{\perp}=\operatorname{dim} V-\operatorname{dim} W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><msup><mi>W</mi><mo>&perp;</mo></msup><mo>=</mo><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>V</mi><mo>−</mo><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><mi>W</mi></mrow><annotation encoding="application/x-tex">\operatorname{dim} W^{\perp}=\operatorname{dim} V-\operatorname{dim} W</annotation></semantics></math>;<br />
+(c)
+<math role="math" aria-label="\left(W^{\perp}\right)^{\perp}=W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>W</mi><mo>&perp;</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>&perp;</mo></msup><mo>=</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">\left(W^{\perp}\right)^{\perp}=W</annotation></semantics></math>.</p></li>
+<li><p>(Jan 19 #4) Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a field with
+<math role="math" aria-label="\operatorname{char}(F) \neq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">char</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>F</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\operatorname{char}(F) \neq 2</annotation></semantics></math>,
+let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+be a finite-dimensional vector space over
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>,
+and let
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+be a symmetric bilinear form on
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>.<br />
+(a) Prove that if
+<math role="math" aria-label="B \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B \neq 0</annotation></semantics></math>,
+there exists
+<math role="math" aria-label="v \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">v \in V</annotation></semantics></math>
+such that
+<math role="math" aria-label="B(v, v) \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B(v, v) \neq 0</annotation></semantics></math>.<br />
+(b) Prove that for any
+<math role="math" aria-label="v \in V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&isin;</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">v \in V</annotation></semantics></math>
+with
+<math role="math" aria-label="B(v, v) \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B(v, v) \neq 0</annotation></semantics></math>
+there exists a subspace
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+such that
+<math role="math" aria-label="V= F v \oplus W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi>F</mi><mi>v</mi><mo>&oplus;</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">V= F v \oplus W</annotation></semantics></math>
+and
+<math role="math" aria-label="W \perp v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>&perp;</mo><mi>v</mi></mrow><annotation encoding="application/x-tex">W \perp v</annotation></semantics></math>,
+that is,
+<math role="math" aria-label="B(w, v)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo>,</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B(w, v)=0</annotation></semantics></math>
+for all
+<math role="math" aria-label="w \in W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>w</mi><mo>&isin;</mo><mi>W</mi></mrow><annotation encoding="application/x-tex">w \in W</annotation></semantics></math>.<br />
+(c) Use (a) and (b) to prove that there is a basis
+<math role="math" aria-label="\left\{v_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>v</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{v_{n}\right\}</annotation></semantics></math>
+of
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+such that
+<math role="math" aria-label="B\left(v_{i}, v_{j}\right)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>v</mi><mi>i</mi></msub><mo>,</mo><msub><mi>v</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">B\left(v_{i}, v_{j}\right)=0</annotation></semantics></math>
+for all
+<math role="math" aria-label="i \neq j" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>&ne;</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i \neq j</annotation></semantics></math>.</p></li>
+</ol>
+
+</main>
+</body>
+</html>

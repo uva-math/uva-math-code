@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title>2.1 Basic Commutative Ring Theory - Algebra General Exam Review - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html">Algebra Review Guide</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">2.1 Basic Commutative Ring Theory</li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered" id="basic-commutative-ring-theory">2.1 Basic
+commutative ring theory</h2>
+<p>KNOW BASIC DEFINITIONS: (commutative) ring, subring, ring
+homomorphism, ideal, quotient (or factor) ring, maximal and prime ideal;
+prime and irreducible elements; (group of) units, associate elements,
+divisibility, gcd, lcd; field, integral domain, Euclidean domain, PID,
+UFD, noetherian ring; polynomial ring
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>;
+rings of fractions.</p>
+<p>KNOW THE BASIC LEMMAS: isomorphism theorem(s);
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+maximal (prime)
+<math role="math" aria-label="\Leftrightarrow R / I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&hArr;</mo><mi>R</mi><mi>/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">\Leftrightarrow R / I</annotation></semantics></math>
+is a field (integral domain); finite integral domains are fields;
+Euclidean algorithm (know how to compute the gcd
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+of
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and
+<math role="math" aria-label="b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+as well as coefficients
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+and
+<math role="math" aria-label="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>
+such that
+<math role="math" aria-label="a x+b y=d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mi>x</mi><mo>+</mo><mi>b</mi><mi>y</mi><mo>=</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">a x+b y=d</annotation></semantics></math>
+); universal properties of polynomial rings and rings of fractions.</p>
+<p>Know basic CONSTRUCTIONS: direct products of rings; intersections,
+sums and products of ideals - recall<br />
+<math role="math" aria-label="I+J:=\{x+y \mid x \in I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>+</mo><mi>J</mi><mo>:=</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>∣</mo><mi>x</mi><mo>&isin;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">I+J:=\{x+y \mid x \in I</annotation></semantics></math>
+and
+<math role="math" aria-label="y \in J\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>&isin;</mo><mi>J</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">y \in J\}</annotation></semantics></math><br />
+<math role="math" aria-label="I J:=\left\{\sum_{i=1}^{n} x_{i} y_{i} \mid n \in \mathbb{N} ; x_{i} \in I, y_{i} \in J\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi>J</mi><mo>:=</mo><mrow><mo stretchy="true" form="prefix">{</mo><msubsup><mo>&sum;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>x</mi><mi>i</mi></msub><msub><mi>y</mi><mi>i</mi></msub><mo>∣</mo><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi><mo>;</mo><msub><mi>x</mi><mi>i</mi></msub><mo>&isin;</mo><mi>I</mi><mo>,</mo><msub><mi>y</mi><mi>i</mi></msub><mo>&isin;</mo><mi>J</mi></mrow></mrow><annotation encoding="application/x-tex">I J:=\left\{\sum_{i=1}^{n} x_{i} y_{i} \mid n \in \mathbb{N} ; x_{i} \in I, y_{i} \in J\right.</annotation></semantics></math>
+for all
+<math role="math" aria-label="\left.1 \leq i \leq n\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&le;</mo><mi>i</mi><mo>&le;</mo><mi>n</mi><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left.1 \leq i \leq n\right\}</annotation></semantics></math><br />
+Know examples of Euclidean domains:
+<math role="math" aria-label="\mathbb{Z} ; K[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo>;</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z} ; K[x]</annotation></semantics></math>
+for a field
+<math role="math" aria-label="K ; \mathbb{Z}[\alpha]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>;</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K ; \mathbb{Z}[\alpha]</annotation></semantics></math>
+for
+<math role="math" aria-label="\alpha=i, \sqrt{-2}, \sqrt{2}, \sqrt{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>=</mo><mi>i</mi><mo>,</mo><msqrt><mrow><mi>−</mi><mn>2</mn></mrow></msqrt><mo>,</mo><msqrt><mn>2</mn></msqrt><mo>,</mo><msqrt><mn>3</mn></msqrt></mrow><annotation encoding="application/x-tex">\alpha=i, \sqrt{-2}, \sqrt{2}, \sqrt{3}</annotation></semantics></math>.<br />
+Know examples of non-PID’s:
+<math role="math" aria-label="\mathbb{Z}[x] ; K[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mo>;</mo><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[x] ; K[x, y]</annotation></semantics></math>
+for a field
+<math role="math" aria-label="K ; \mathbb{Z}[\alpha]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>;</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K ; \mathbb{Z}[\alpha]</annotation></semantics></math>
+for
+<math role="math" aria-label="\alpha=\sqrt{-3}, \sqrt{-5}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>=</mo><msqrt><mrow><mi>−</mi><mn>3</mn></mrow></msqrt><mo>,</mo><msqrt><mrow><mi>−</mi><mn>5</mn></mrow></msqrt></mrow><annotation encoding="application/x-tex">\alpha=\sqrt{-3}, \sqrt{-5}</annotation></semantics></math>.<br />
+Know the "Hierarchy": field
+<math role="math" aria-label="\Rightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&rArr;</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>
+Euclidean domain
+<math role="math" aria-label="\Rightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&rArr;</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>
+PID
+<math role="math" aria-label="\Rightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&rArr;</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>
+UFD
+<math role="math" aria-label="\Rightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&rArr;</mo><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math>
+domain<br />
+Know some more theorems: Chinese Remainder Theorem; Gauss’ Lemma (
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+UFD
+<math role="math" aria-label="\Rightarrow R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&rArr;</mo><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\Rightarrow R[x]</annotation></semantics></math>
+UFD); Hilbert’s Basis Theorem (
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+noetherian
+<math role="math" aria-label="\Rightarrow R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&rArr;</mo><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\Rightarrow R[x]</annotation></semantics></math>
+noetherian); in a PID
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+any nonzero prime ideal is maximal and the
+<math role="math" aria-label="\operatorname{gcd}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">gcd</mi><annotation encoding="application/x-tex">\operatorname{gcd}</annotation></semantics></math>
+of
+<math role="math" aria-label="a_{1}, \ldots, a_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">a_{1}, \ldots, a_{n}</annotation></semantics></math>
+is an
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-linear
+combination of
+<math role="math" aria-label="a_{1}, \ldots, a_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>a</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">a_{1}, \ldots, a_{n}</annotation></semantics></math>.</p>
+<p>Know Zorn’s Lemma If
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is a nonempty partially ordered set such that every chain (linearly
+ordered subset)
+<math role="math" aria-label="C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+has an upper bound (
+<math role="math" aria-label="b \in S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>&isin;</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">b \in S</annotation></semantics></math>
+with
+<math role="math" aria-label="b \geq c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>&ge;</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">b \geq c</annotation></semantics></math>
+for all
+<math role="math" aria-label="c \in C" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&isin;</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">c \in C</annotation></semantics></math>
+), then
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+has at least one maximal element
+<math role="math" aria-label="m(t \in S, t \geq m \Rightarrow t=m)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>&isin;</mo><mi>S</mi><mo>,</mo><mi>t</mi><mo>&ge;</mo><mi>m</mi><mo>&rArr;</mo><mi>t</mi><mo>=</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">m(t \in S, t \geq m \Rightarrow t=m)</annotation></semantics></math>.<br />
+Main application in ring theory: Any proper ideal
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+of a ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is contained in a maximal ideal
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+(The important special case
+<math role="math" aria-label="I=\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">I=\{0\}</annotation></semantics></math>
+yields the existence of maximal ideals.)</p>
+<p>Avoid the following mistakes: If
+<math role="math" aria-label="\phi: R \longrightarrow S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo>:</mo><mi>R</mi><mo>&rarr;</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">\phi: R \longrightarrow S</annotation></semantics></math>
+is a ring homomorphism and
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is an ideal in R,
+<math role="math" aria-label="\phi(I)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>I</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\phi(I)</annotation></semantics></math>
+needn’t be an ideal in
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+(it is if
+<math role="math" aria-label="\phi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+is surjective), and if
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is prime (or maximal) in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+the ideal generated by
+<math role="math" aria-label="\phi(I)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>I</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\phi(I)</annotation></semantics></math>
+in
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+need not be prime (or maximal) in
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+(even if
+<math role="math" aria-label="\phi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+is surjective);
+<math role="math" aria-label="\mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[x]</annotation></semantics></math>
+does not admit a Euclidean algorithm (it’s even not a PID), similarly
+with
+<math role="math" aria-label="K[x, y]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">K[x, y]</annotation></semantics></math>
+where
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+is a field; if in a domain
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+the gcd of two elements
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and
+<math role="math" aria-label="b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+exists and equals 1 , this does not imply that the ideal (
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>
+) equals
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+(it does if (
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>
+) is principal).</p>
+<h2 class="unnumbered" id="related-problems-3">Related Problems</h2>
+<p>(Unless otherwise stated, all rings
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+are commutative with unit
+<math role="math" aria-label="1 ; F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">1 ; F</annotation></semantics></math>
+denotes a field.)</p>
+<ol>
+<li><p>(April
+<math role="math" aria-label="77 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>77</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">77 \# 4</annotation></semantics></math>
+) (a) If
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is a maximal ideal, SHOW
+<math role="math" aria-label="R / M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>M</mi></mrow><annotation encoding="application/x-tex">R / M</annotation></semantics></math>
+is a field. (Done.)<br />
+(b) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a Euclidean domain, show every ideal generated by an irreducible
+element is maximal.</p></li>
+<li><p>(May 78 #5) Is the ring
+<math role="math" aria-label="C[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">C[0,1]</annotation></semantics></math>
+of continuous real-valued functions on the closed interval
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+noetherian?</p></li>
+<li><p>(Sep 78 #6)
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is called a local ring if it has a unique maximal ideal; a domain is
+called a valuation domain if for every two elements
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>
+either
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+divides
+<math role="math" aria-label="b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+or
+<math role="math" aria-label="b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+divides
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.
+(a) Show
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is local iff the non-units form an ideal
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.
+(b) Show every valuation domain is local. (c) Show a local ring has no
+idempotents (
+<math role="math" aria-label="e^{2}=e" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mn>2</mn></msup><mo>=</mo><mi>e</mi></mrow><annotation encoding="application/x-tex">e^{2}=e</annotation></semantics></math>
+) other than 1,0 .</p></li>
+<li><p>(Sep 79 #7a; Nov
+<math role="math" aria-label="77 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>77</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">77 \# 5</annotation></semantics></math>
+) Give two examples of non-noetherian rings.</p></li>
+<li><p>(May
+<math role="math" aria-label="80 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>80</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">80 \# 2</annotation></semantics></math>
+) Hilbert’s Theorem says that
+<math role="math" aria-label="F\left[x_{1}, \ldots, x_{n}\right]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">F\left[x_{1}, \ldots, x_{n}\right]</annotation></semantics></math>
+is noetherian. Show that ANY finitely generated commutative
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>-algebra
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+is noetherian.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="82 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>82</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">82 \# 6</annotation></semantics></math>
+) If
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is an ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+with
+<math role="math" aria-label="I \cap S=\emptyset" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>&cap;</mo><mi>S</mi><mo>=</mo><mi>&empty;</mi></mrow><annotation encoding="application/x-tex">I \cap S=\emptyset</annotation></semantics></math>
+for some multiplicatively closed subset
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+containing 1, show there exists an ideal
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+containing
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+and maximal with respect to
+<math role="math" aria-label="M \cap S=\emptyset" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>&cap;</mo><mi>S</mi><mo>=</mo><mi>&empty;</mi></mrow><annotation encoding="application/x-tex">M \cap S=\emptyset</annotation></semantics></math>.
+Find an
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+if
+<math role="math" aria-label="R=\mathbb{Z}, S=\left\{3^{n} \mid n \geq 0\right\}, I=2 \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo>,</mo><mi>S</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><msup><mn>3</mn><mi>n</mi></msup><mo>∣</mo><mi>n</mi><mo>&ge;</mo><mn>0</mn><mo stretchy="true" form="postfix">}</mo></mrow><mo>,</mo><mi>I</mi><mo>=</mo><mn>2</mn><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}, S=\left\{3^{n} \mid n \geq 0\right\}, I=2 \mathbb{Z}</annotation></semantics></math>.</p></li>
+<li><p>(Mar 83 #8) Does 7 divide
+<math role="math" aria-label="10^{31}+31^{10}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>10</mn><mn>31</mn></msup><mo>+</mo><msup><mn>31</mn><mn>10</mn></msup></mrow><annotation encoding="application/x-tex">10^{31}+31^{10}</annotation></semantics></math>
+? Why?</p></li>
+<li><p>(Feb
+<math role="math" aria-label="84 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>84</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">84 \# 3</annotation></semantics></math>
+) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is finite, show every prime ideal is maximal.</p></li>
+<li><p>(1985#3c) If
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>
+are relatively prime integers, show the ring
+<math role="math" aria-label="\mathbb{Z}_{a b}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Zopf;</mi><mrow><mi>a</mi><mi>b</mi></mrow></msub><annotation encoding="application/x-tex">\mathbb{Z}_{a b}</annotation></semantics></math>
+is isomorphic to the direct sum
+<math role="math" aria-label="\mathbb{Z}_{a} \oplus \mathbb{Z}_{b}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><mi>a</mi></msub><mo>&oplus;</mo><msub><mi>&Zopf;</mi><mi>b</mi></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{a} \oplus \mathbb{Z}_{b}</annotation></semantics></math>
+of rings. Show (in
+<math role="math" aria-label="\leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\leq 1</annotation></semantics></math>
+word) why this implies if
+<math role="math" aria-label="m=p_{1}^{e_{1}} \ldots p_{t}^{e_{t}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><msubsup><mi>p</mi><mn>1</mn><msub><mi>e</mi><mn>1</mn></msub></msubsup><mi>…</mi><msubsup><mi>p</mi><mi>t</mi><msub><mi>e</mi><mi>t</mi></msub></msubsup></mrow><annotation encoding="application/x-tex">m=p_{1}^{e_{1}} \ldots p_{t}^{e_{t}}</annotation></semantics></math>
+that
+<math role="math" aria-label="\mathbb{Z}_{m}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&Zopf;</mi><mi>m</mi></msub><annotation encoding="application/x-tex">\mathbb{Z}_{m}</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="\mathbb{Z}_{p_{1}^{e_{1}}} \oplus \cdots \oplus \mathbb{Z}_{p_{t}^{e_{t}}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&Zopf;</mi><msubsup><mi>p</mi><mn>1</mn><msub><mi>e</mi><mn>1</mn></msub></msubsup></msub><mo>&oplus;</mo><mi>⋯</mi><mo>&oplus;</mo><msub><mi>&Zopf;</mi><msubsup><mi>p</mi><mi>t</mi><msub><mi>e</mi><mi>t</mi></msub></msubsup></msub></mrow><annotation encoding="application/x-tex">\mathbb{Z}_{p_{1}^{e_{1}}} \oplus \cdots \oplus \mathbb{Z}_{p_{t}^{e_{t}}}</annotation></semantics></math>.</p></li>
+<li><p>(May 89 #7; Aug 97 #8c) Show an element
+<math role="math" aria-label="a \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">a \in R</annotation></semantics></math>
+belongs to
+<math role="math" aria-label="J=\bigcap" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mo>=</mo><mo>⋂</mo></mrow><annotation encoding="application/x-tex">J=\bigcap</annotation></semantics></math>
+{maximal ideals of
+<math role="math" aria-label="R\} \Longleftrightarrow 1+r a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="postfix">}</mo><mo>&hArr;</mo><mn>1</mn><mo>+</mo><mi>r</mi><mi>a</mi></mrow><annotation encoding="application/x-tex">R\} \Longleftrightarrow 1+r a</annotation></semantics></math>
+is a unit for all
+<math role="math" aria-label="r \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">r \in R</annotation></semantics></math>.</p></li>
+<li><p>(May
+<math role="math" aria-label="1990 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1990</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">1990 \# 5</annotation></semantics></math>
+) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is an integral domain with only finite number
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+of ideals, show
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a field, and give an upper bound for
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.</p></li>
+<li><p>(May
+<math role="math" aria-label="92 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>92</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">92 \# 2</annotation></semantics></math>
+) If
+<math role="math" aria-label="a, b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>
+in an integral domain
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+satisfy
+<math role="math" aria-label="a^{n}=b^{n}, a^{m}=b^{m}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mi>n</mi></msup><mo>=</mo><msup><mi>b</mi><mi>n</mi></msup><mo>,</mo><msup><mi>a</mi><mi>m</mi></msup><mo>=</mo><msup><mi>b</mi><mi>m</mi></msup></mrow><annotation encoding="application/x-tex">a^{n}=b^{n}, a^{m}=b^{m}</annotation></semantics></math>
+for
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+and
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+relatively prime, show
+<math role="math" aria-label="a=b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a=b</annotation></semantics></math>.
+(Do you need that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is an integral domain?)</p></li>
+<li><p>(Jan 92 #6) Prove that an integral domain has the descending
+chain condition on ideals iff it is a field.</p></li>
+<li><p>(Sept
+<math role="math" aria-label="93 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>93</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">93 \# 2</annotation></semantics></math>
+) If
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+is a prime ideal which is not maximal, show
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+has infinitely many cosets in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.</p></li>
+<li><p>(Sept
+<math role="math" aria-label="93 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>93</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">93 \# 5</annotation></semantics></math>
+) (a) Let
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+be a Euclidean domain, with Euclidean function
+<math role="math" aria-label="\delta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&delta;</mi><annotation encoding="application/x-tex">\delta</annotation></semantics></math>
+(but do not assume
+<math role="math" aria-label="\delta(a b) \geq \delta(a)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&delta;</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mi>b</mi><mo stretchy="false" form="postfix">)</mo><mo>&ge;</mo><mi>&delta;</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\delta(a b) \geq \delta(a)</annotation></semantics></math>
+). Let
+<math role="math" aria-label="D_{n}=\{a \in D \mid a \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>n</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>&isin;</mo><mi>D</mi><mo>∣</mo><mi>a</mi><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">D_{n}=\{a \in D \mid a \neq 0</annotation></semantics></math>
+and
+<math role="math" aria-label="\delta(a) \geq n\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&delta;</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>&ge;</mo><mi>n</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\delta(a) \geq n\}</annotation></semantics></math>.
+Show that (i) if
+<math role="math" aria-label="b \in D_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>&isin;</mo><msub><mi>D</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">b \in D_{0}</annotation></semantics></math>
+and there exists an
+<math role="math" aria-label="a \in D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">a \in D</annotation></semantics></math>
+such that
+<math role="math" aria-label="a+D b \subseteq D_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>+</mo><mi>D</mi><mi>b</mi><mo>&sube;</mo><msub><mi>D</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">a+D b \subseteq D_{n}</annotation></semantics></math>,
+then
+<math role="math" aria-label="b \in D_{n+1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mo>&isin;</mo><msub><mi>D</mi><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><annotation encoding="application/x-tex">b \in D_{n+1}</annotation></semantics></math>;
+(ii)
+<math role="math" aria-label="\bigcap_{n} D_{n}=\emptyset" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>⋂</mo><mi>n</mi></msub><msub><mi>D</mi><mi>n</mi></msub><mo>=</mo><mi>&empty;</mi></mrow><annotation encoding="application/x-tex">\bigcap_{n} D_{n}=\emptyset</annotation></semantics></math>.<br />
+(b) Conversely, show that if an integral domain
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+has a chain of subsets
+<math role="math" aria-label="D \backslash\{0\}=D_{0} \supseteq D_{1} \supseteq D_{2} \supseteq \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo><mo>=</mo><msub><mi>D</mi><mn>0</mn></msub><mo>&supe;</mo><msub><mi>D</mi><mn>1</mn></msub><mo>&supe;</mo><msub><mi>D</mi><mn>2</mn></msub><mo>&supe;</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">D \backslash\{0\}=D_{0} \supseteq D_{1} \supseteq D_{2} \supseteq \ldots</annotation></semantics></math>
+satisfying properties (i) and (ii), then
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+is Euclidean.</p></li>
+<li><p>Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be an integral domain,
+<math role="math" aria-label="N: R \backslash\{0\} \longrightarrow\{n&gt;0 \mid n \in \mathbb{Z}\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>:</mo><mi>R</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo><mo>&rarr;</mo><mo stretchy="false" form="prefix">{</mo><mi>n</mi><mo>&gt;</mo><mn>0</mn><mo>∣</mo><mi>n</mi><mo>&isin;</mo><mi>&Zopf;</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">N: R \backslash\{0\} \longrightarrow\{n&gt;0 \mid n \in \mathbb{Z}\}</annotation></semantics></math>
+be a function for which (i)
+<math role="math" aria-label="N(1)=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">N(1)=1</annotation></semantics></math>
+and (ii)
+<math role="math" aria-label="N(x y)=N(x) N(y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">N(x y)=N(x) N(y)</annotation></semantics></math>
+for all
+<math role="math" aria-label="x, y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x, y</annotation></semantics></math>
+in
+<math role="math" aria-label="R \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">R \backslash\{0\}</annotation></semantics></math>.<br />
+(a) Let
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+be the field of fractions of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+can be extended in a unique way to a function from
+<math role="math" aria-label="K \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">K \backslash\{0\}</annotation></semantics></math>
+into
+<math role="math" aria-label="\mathbb{Q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Qopf;</mi><annotation encoding="application/x-tex">\mathbb{Q}</annotation></semantics></math>
+that still satisfies (i) and (ii) (now for all
+<math role="math" aria-label="x, y \in K \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>&isin;</mo><mi>K</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">x, y \in K \backslash\{0\}</annotation></semantics></math>
+).<br />
+(b) Show that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a Euclidean domain under
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+iff for each
+<math role="math" aria-label="x \in K \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>K</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">x \in K \backslash\{0\}</annotation></semantics></math>
+there is an element
+<math role="math" aria-label="r \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">r \in R</annotation></semantics></math>
+for which
+<math role="math" aria-label="N(x-r)&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">N(x-r)&lt;1</annotation></semantics></math>.</p></li>
+<li><p>(Jan 94 #8) Let
+<math role="math" aria-label="Z D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">Z D</annotation></semantics></math>
+denote the set of zero divisors of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+(including 0 ). Let
+<math role="math" aria-label="\mathcal{I}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℐ</mi><annotation encoding="application/x-tex">\mathcal{I}</annotation></semantics></math>
+be the set of ideals of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+which are contained in
+<math role="math" aria-label="Z D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">Z D</annotation></semantics></math>.<br />
+(a) Show that
+<math role="math" aria-label="R \backslash Z D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&setminus;</mo><mi>Z</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">R \backslash Z D</annotation></semantics></math>
+is closed under multiplication<br />
+(b) Show that if
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is a maximal member of
+<math role="math" aria-label="\mathcal{I}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℐ</mi><annotation encoding="application/x-tex">\mathcal{I}</annotation></semantics></math>,
+then
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is a prime ideal.<br />
+(c) Use Zorn’s Lemma to show that each member of
+<math role="math" aria-label="Z D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">Z D</annotation></semantics></math>
+is contained in a maximal member of
+<math role="math" aria-label="\mathcal{I}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℐ</mi><annotation encoding="application/x-tex">\mathcal{I}</annotation></semantics></math>.<br />
+(d) Conclude that the set
+<math role="math" aria-label="Z D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Z</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">Z D</annotation></semantics></math>
+is a union of prime ideals.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="97 \# 8" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>97</mn><mi>#</mi><mn>8</mn></mrow><annotation encoding="application/x-tex">97 \# 8</annotation></semantics></math>
+) (a) Show that the set
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+of all nilpotent elements
+<math role="math" aria-label="z\left(z^{n}=0\right." display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>z</mi><mi>n</mi></msup><mo>=</mo><mn>0</mn></mrow></mrow><annotation encoding="application/x-tex">z\left(z^{n}=0\right.</annotation></semantics></math>
+for some
+<math role="math" aria-label="\left.n\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left.n\right)</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+forms an ideal (called the nil radical of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+).<br />
+(b) The intersection
+<math role="math" aria-label="J" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+of all maximal ideals of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is called the Jacobson radical of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>;
+show that
+<math role="math" aria-label="N \subseteq J" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>N</mi><mo>&sube;</mo><mi>J</mi></mrow><annotation encoding="application/x-tex">N \subseteq J</annotation></semantics></math>.<br />
+(c) Give an example where
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+and
+<math role="math" aria-label="J" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+are different.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="99 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>99</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">99 \# 4</annotation></semantics></math>
+) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is an integral domain, find all
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-linear
+automorphisms of the polynomial ring
+<math role="math" aria-label="R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R[x]</annotation></semantics></math>.
+(If you can’t do the general case, do the case when
+<math role="math" aria-label="R=F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">R=F</annotation></semantics></math>
+is a field.)</p></li>
+<li><p>(Aug
+<math role="math" aria-label="02 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>02</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">02 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring,
+<math role="math" aria-label="\mathfrak{a}_{1}, \ldots, \mathfrak{a}_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi><mi mathvariant="fraktur">a</mi></mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi><mi mathvariant="fraktur">a</mi></mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\mathfrak{a}_{1}, \ldots, \mathfrak{a}_{n}</annotation></semantics></math>
+be ideals of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+If for all
+<math role="math" aria-label="i \neq j" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>&ne;</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i \neq j</annotation></semantics></math>
+we have
+<math role="math" aria-label="\mathfrak{a}_{i}+\mathfrak{a}_{j}=R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi><mi mathvariant="fraktur">a</mi></mi><mi>i</mi></msub><mo>+</mo><msub><mi><mi mathvariant="fraktur">a</mi></mi><mi>j</mi></msub><mo>=</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">\mathfrak{a}_{i}+\mathfrak{a}_{j}=R</annotation></semantics></math>
+then
+<math role="math" aria-label="\mathfrak{a}_{1} \cap \ldots \cap \mathfrak{a}_{n}=\mathfrak{a}_{1} \cdot \ldots \cdot \mathfrak{a}_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi><mi mathvariant="fraktur">a</mi></mi><mn>1</mn></msub><mo>&cap;</mo><mi>…</mi><mo>&cap;</mo><msub><mi><mi mathvariant="fraktur">a</mi></mi><mi>n</mi></msub><mo>=</mo><msub><mi><mi mathvariant="fraktur">a</mi></mi><mn>1</mn></msub><mo>&sdot;</mo><mi>…</mi><mo>&sdot;</mo><msub><mi><mi mathvariant="fraktur">a</mi></mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\mathfrak{a}_{1} \cap \ldots \cap \mathfrak{a}_{n}=\mathfrak{a}_{1} \cdot \ldots \cdot \mathfrak{a}_{n}</annotation></semantics></math>.
+(Hint. Induct, starting from
+<math role="math" aria-label="n=2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n=2</annotation></semantics></math>.)</p></li>
+<li><p>(Aug 02 #8) Is it true that in the ring
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+of all continuous real-valued functions on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>,
+any element which is not a zero divisor, is invertible?<br />
+And (May 03 #6): Give an example of a maximal ideal in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+And (Jan 06 #4): Is this maximal ideal principal?</p></li>
+<li><p>(Aug
+<math role="math" aria-label="05 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>05</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">05 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 (not necessarily a domain) such that any
+ideal in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is principal. Let
+<math role="math" aria-label="S \subseteq R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&sube;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">S \subseteq R</annotation></semantics></math>
+be a multiplicatively closed subset of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Show that any ideal in the ring of fractions
+<math role="math" aria-label="S^{-1} R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>R</mi></mrow><annotation encoding="application/x-tex">S^{-1} R</annotation></semantics></math>
+is also principal.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="06 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>06</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">06 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring. A radical is an ideal
+<math role="math" aria-label="I \unlhd R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>⊴</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">I \unlhd R</annotation></semantics></math>
+such that, for any
+<math role="math" aria-label="a \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">a \in R</annotation></semantics></math>,
+we have
+<math role="math" aria-label="a \in I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">a \in I</annotation></semantics></math>
+whenever some power
+<math role="math" aria-label="a^{k} \in I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mi>k</mi></msup><mo>&isin;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">a^{k} \in I</annotation></semantics></math>.<br />
+(a) Show that every prime ideal is radical.<br />
+(b) Assume
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is radical and
+<math role="math" aria-label="a \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">a \in R</annotation></semantics></math>
+does not lie in
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>.
+Show that there exists a prime ideal
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+that contains
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+but does not contain
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>.
+(Hint: use Zorn’s lemma.)</p></li>
+<li><p>(Aug
+<math role="math" aria-label="08 \# 5" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>08</mn><mi>#</mi><mn>5</mn></mrow><annotation encoding="application/x-tex">08 \# 5</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R=\mathbb{Z}[i]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[i]</annotation></semantics></math>
+be the ring of Gaussian integers, and let
+<math role="math" aria-label="I=(a, b)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">I=(a, b)</annotation></semantics></math>
+be the ideal generated by
+<math role="math" aria-label="a=16 i, b=5+3 i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>=</mo><mn>16</mn><mi>i</mi><mo>,</mo><mi>b</mi><mo>=</mo><mn>5</mn><mo>+</mo><mn>3</mn><mi>i</mi></mrow><annotation encoding="application/x-tex">a=16 i, b=5+3 i</annotation></semantics></math>
+in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+a. Systematically find
+<math role="math" aria-label="c \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">c \in R</annotation></semantics></math>
+such that
+<math role="math" aria-label="I=(c)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">I=(c)</annotation></semantics></math>.<br />
+b. Prove or disprove:
+<math role="math" aria-label="R / I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>I</mi></mrow><annotation encoding="application/x-tex">R / I</annotation></semantics></math>
+is a finite field.</p></li>
+<li><p>(Jan 09 #4) (a) Prove that the ring of Gaussian integers
+<math role="math" aria-label="\mathbb{Z}[i]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[i]</annotation></semantics></math>
+is a Euclidean domain.<br />
+(b) Let
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+and
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+be positive integers and assume that
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+is a product of distinct primes. Prove that the polynomial
+<math role="math" aria-label="f(x)=x^{n}-m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mi>n</mi></msup><mo>−</mo><mi>m</mi></mrow><annotation encoding="application/x-tex">f(x)=x^{n}-m</annotation></semantics></math>
+is irreducible in
+<math role="math" aria-label="\mathbb{Q}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}[x]</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="12 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">12 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R=\mathbb{Z}[\sqrt{-2}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mrow><mi>−</mi><mn>2</mn></mrow></msqrt><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[\sqrt{-2}]</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a Euclidean domain. Hint: Use the square of the usual complex
+norm.<br />
+(b) Write 7 and 11 as products of irreducible elements of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Justify your answer.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="12 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">12 \# 4</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 . Let
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+be the nilradical of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+that is,
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+is the set of all nilpotent elements of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+(including 0 ). You may use without proof that
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+is the intersection of all prime ideals of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Prove that the following conditions are equivalent:<br />
+(i)
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+has just one prime ideal.<br />
+(ii)
+<math role="math" aria-label="R / N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mi>/</mi><mi>N</mi></mrow><annotation encoding="application/x-tex">R / N</annotation></semantics></math>
+is a field.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="13 \# 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mi>#</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">13 \# 2</annotation></semantics></math>
+) In both parts of this problem
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a commutative domain with 1 and
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+is the field of fractions of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+(a) Let
+<math role="math" aria-label="R=\mathbb{Z}[t]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>t</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[t]</annotation></semantics></math>,
+the ring of polynomials over
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>
+in one variable. Let
+<math role="math" aria-label="p(x)=x^{n}+r_{n-1} x^{n-1}+ \ldots+r_{0} \in R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><msub><mi>r</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><msup><mi>x</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mi>…</mi><mo>+</mo><msub><mi>r</mi><mn>0</mn></msub><mo>&isin;</mo><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">p(x)=x^{n}+r_{n-1} x^{n-1}+ \ldots+r_{0} \in R[x]</annotation></semantics></math>
+be a monic polynomial with coefficients in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>,
+and suppose that
+<math role="math" aria-label="p(\alpha)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p(\alpha)=0</annotation></semantics></math>
+for some
+<math role="math" aria-label="\alpha \in K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&isin;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">\alpha \in K</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="\alpha \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">\alpha \in R</annotation></semantics></math>.<br />
+(b) Now let
+<math role="math" aria-label="R=\mathbb{Z}[\sqrt{-3}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mrow><mi>−</mi><mn>3</mn></mrow></msqrt><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[\sqrt{-3}]</annotation></semantics></math>.
+Find a monic polynomial
+<math role="math" aria-label="p(x) \in R[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">p(x) \in R[x]</annotation></semantics></math>
+which has a root in
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+but has no root in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+(and prove that
+<math role="math" aria-label="p(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p(x)</annotation></semantics></math>
+has required properties). Hint: There actually exists a quadratic
+polynomial with integer coefficients with required property.</p></li>
+<li><p>(Jan 14 #2) Find all ring homomorphisms<br />
+(a) from
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>
+to
+<math role="math" aria-label="\mathbb{Z} / 30 \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mn>30</mn><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z} / 30 \mathbb{Z}</annotation></semantics></math>;<br />
+(b) from
+<math role="math" aria-label="\mathbb{Z} / 30 \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mi>/</mi><mn>30</mn><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">\mathbb{Z} / 30 \mathbb{Z}</annotation></semantics></math>
+to
+<math role="math" aria-label="\mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Zopf;</mi><annotation encoding="application/x-tex">\mathbb{Z}</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="14 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>14</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">14 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="\mathbb{Q}(\sqrt{-2})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Qopf;</mi><mo stretchy="false" form="prefix">(</mo><msqrt><mrow><mi>−</mi><mn>2</mn></mrow></msqrt><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{Q}(\sqrt{-2})</annotation></semantics></math>
+be a quadratic field with associated ring of integers
+<math role="math" aria-label="\mathcal{O}=\mathbb{Z}[\sqrt{-2}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Oscr;</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mrow><mi>−</mi><mn>2</mn></mrow></msqrt><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathcal{O}=\mathbb{Z}[\sqrt{-2}]</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Oscr;</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math>
+is a Euclidean Domain . (Hint: use the field norm.)</p></li>
+<li><p>(Jan 14 #4) Prove that if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a principle ideal domain (P.I.D.) and
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+is a multiplicatively closed subset of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+with
+<math role="math" aria-label="0 \notin D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&notin;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">0 \notin D</annotation></semantics></math>,
+then
+<math role="math" aria-label="D^{-1} R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>D</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>R</mi></mrow><annotation encoding="application/x-tex">D^{-1} R</annotation></semantics></math>
+is also a P.I.D.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="15 \# 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mi>#</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">15 \# 1</annotation></semantics></math>
+) Find all maximal ideals of
+<math role="math" aria-label="\mathbb{Z}[i]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{Z}[i]</annotation></semantics></math>
+which contain 182 . Find minimal generators for these ideals.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="16 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">16 \# 6</annotation></semantics></math>
+) (a) Name two examples of each of the following: (i) PIDs which are not
+fields<br />
+(ii) UFDs which are not PIDs (iii) commutative integral domains which
+are not UFDs and<br />
+(iv) commutative rings which are not integral domains, (v)
+noncommutative rings.<br />
+(b) Given an example of a non-principal ideal in one of the examples you
+listed (with proof).</p></li>
+<li><p>(Aug 17 #4) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 which is Artinian, i.e. for any descending
+chain
+<math role="math" aria-label="I_{1} \supseteq I_{2} \ldots \supseteq I_{n} \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mn>1</mn></msub><mo>&supe;</mo><msub><mi>I</mi><mn>2</mn></msub><mi>…</mi><mo>&supe;</mo><msub><mi>I</mi><mi>n</mi></msub><mi>…</mi></mrow><annotation encoding="application/x-tex">I_{1} \supseteq I_{2} \ldots \supseteq I_{n} \ldots</annotation></semantics></math>
+of ideals of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+there exists an
+<math role="math" aria-label="n_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mn>0</mn></msub><annotation encoding="application/x-tex">n_{0}</annotation></semantics></math>
+such that
+<math role="math" aria-label="I_{n}=I_{n_{0}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>n</mi></msub><mo>=</mo><msub><mi>I</mi><msub><mi>n</mi><mn>0</mn></msub></msub></mrow><annotation encoding="application/x-tex">I_{n}=I_{n_{0}}</annotation></semantics></math>
+for all
+<math role="math" aria-label="n \geq n_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">n \geq n_{0}</annotation></semantics></math>.
+Prove the following:<br />
+(a) If
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is an integral domain, then it is a field.<br />
+(b) Any prime ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is maximal.<br />
+(c)
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+has only finitely many maximal ideals.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="18 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>18</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">18 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring such that all prime ideals are finitely generated.
+Prove that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is Noetherian by completing the following steps.<br />
+(a) Let
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+be the set of non-finitely generated ideals of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+Prove that if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is not Noetherian then
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+has a maximal element, say
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>.<br />
+(b) Prove that there exist elements
+<math role="math" aria-label="x, y \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">x, y \in R</annotation></semantics></math>
+such that
+<math role="math" aria-label="x, y \notin I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>&notin;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">x, y \notin I</annotation></semantics></math>
+but such that
+<math role="math" aria-label="x y \in I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mi>y</mi><mo>&isin;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">x y \in I</annotation></semantics></math>.<br />
+(c) Prove that
+<math role="math" aria-label="I_{x}=I+R x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>I</mi><mi>x</mi></msub><mo>=</mo><mi>I</mi><mo>+</mo><mi>R</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">I_{x}=I+R x</annotation></semantics></math>
+and
+<math role="math" aria-label="J_{x}=\{r \in R \mid r x \in I\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mi>x</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>r</mi><mo>&isin;</mo><mi>R</mi><mo>∣</mo><mi>r</mi><mi>x</mi><mo>&isin;</mo><mi>I</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">J_{x}=\{r \in R \mid r x \in I\}</annotation></semantics></math>
+are finitely generated ideals. Here,
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+is the same element as in the previous part.<br />
+(d) Conclude that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is finitely generated and derive a contradiction.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="19 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>19</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">19 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+and
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+be positive integers with
+<math role="math" aria-label="m \mid n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>∣</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m \mid n</annotation></semantics></math>,
+and let
+<math role="math" aria-label="f: \mathbb{Z} / n \mathbb{Z} \rightarrow \mathbb{Z} / m \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>&Zopf;</mi><mi>/</mi><mi>n</mi><mi>&Zopf;</mi><mo>&rarr;</mo><mi>&Zopf;</mi><mi>/</mi><mi>m</mi><mi>&Zopf;</mi></mrow><annotation encoding="application/x-tex">f: \mathbb{Z} / n \mathbb{Z} \rightarrow \mathbb{Z} / m \mathbb{Z}</annotation></semantics></math>
+be the natural projection. Prove that the associated map of the groups
+of units
+<math role="math" aria-label="f:(\mathbb{Z} / n \mathbb{Z})^{\times} \rightarrow (\mathbb{Z} / m \mathbb{Z})^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mo stretchy="false" form="prefix">(</mo><mi>&Zopf;</mi><mi>/</mi><mi>n</mi><mi>&Zopf;</mi><msup><mo stretchy="false" form="postfix">)</mo><mo>&times;</mo></msup><mo>&rarr;</mo><mo stretchy="false" form="prefix">(</mo><mi>&Zopf;</mi><mi>/</mi><mi>m</mi><mi>&Zopf;</mi><msup><mo stretchy="false" form="postfix">)</mo><mo>&times;</mo></msup></mrow><annotation encoding="application/x-tex">f:(\mathbb{Z} / n \mathbb{Z})^{\times} \rightarrow (\mathbb{Z} / m \mathbb{Z})^{\times}</annotation></semantics></math>is
+surjective.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="19 \# 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>19</mn><mi>#</mi><mn>6</mn></mrow><annotation encoding="application/x-tex">19 \# 6</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R=\mathbb{Z}[x]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[x]</annotation></semantics></math>.<br />
+(a) Let
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+be an ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+which contains a MONIC polynomial of degree
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>,
+call it
+<math role="math" aria-label="p(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p(x)</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+can be generated (as an ideal) by at most
+<math role="math" aria-label="n+1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n+1</annotation></semantics></math>
+elements. Hint: Consider the quotient
+<math role="math" aria-label="I /(p(x))" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">I /(p(x))</annotation></semantics></math>.<br />
+(b) Now let
+<math role="math" aria-label="M=(2, x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">M=(2, x)</annotation></semantics></math>
+and
+<math role="math" aria-label="I=M^{2}=\left(4,2 x, x^{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><msup><mi>M</mi><mn>2</mn></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>4</mn><mo>,</mo><mn>2</mn><mi>x</mi><mo>,</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">I=M^{2}=\left(4,2 x, x^{2}\right)</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+cannot be generated (as an ideal) by less than 3 elements. Hint:
+Consider the quotient
+<math role="math" aria-label="M^{2} / M^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>M</mi><mn>2</mn></msup><mi>/</mi><msup><mi>M</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">M^{2} / M^{3}</annotation></semantics></math>.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="20 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">20 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R=\mathbb{Z}[i]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[i]</annotation></semantics></math>,
+the ring of Gaussian integers. Find (with complete proof!) the number of
+ideals of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+which contain 30 .</p></li>
+<li><p>(Jan 20 #4) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 and let
+<math role="math" aria-label="x \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">x \in R</annotation></semantics></math>.<br />
+(a) Prove that
+<math role="math" aria-label="x \notin R^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&notin;</mo><msup><mi>R</mi><mo>&times;</mo></msup></mrow><annotation encoding="application/x-tex">x \notin R^{\times}</annotation></semantics></math>if
+and only if
+<math role="math" aria-label="x \in M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">x \in M</annotation></semantics></math>
+for some maximal ideal
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+(b) Prove that the following are equivalent:<br />
+(i)
+<math role="math" aria-label="x \in M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">x \in M</annotation></semantics></math>
+for every maximal ideal
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math><br />
+(ii)
+<math role="math" aria-label="1+x y \in R^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><mi>x</mi><mi>y</mi><mo>&isin;</mo><msup><mi>R</mi><mo>&times;</mo></msup></mrow><annotation encoding="application/x-tex">1+x y \in R^{\times}</annotation></semantics></math>for
+every
+<math role="math" aria-label="y \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">y \in R</annotation></semantics></math></p></li>
+<li><p>(Aug
+<math role="math" aria-label="20 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">20 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R=\mathbb{Z}[\sqrt{3}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mn>3</mn></msqrt><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[\sqrt{3}]</annotation></semantics></math>.
+You may assume without proof that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is a Euclidean domain. Let
+<math role="math" aria-label="p \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">p \in \mathbb{N}</annotation></semantics></math>
+be a prime number with
+<math role="math" aria-label="p \equiv 5 \bmod 12" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&equiv;</mo><mn>5</mn><mrow><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">mod</mi><mo>&#8289;</mo></mrow><mspace width="0.222em"></mspace><mn>12</mn></mrow></mrow><annotation encoding="application/x-tex">p \equiv 5 \bmod 12</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+is a prime element of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.<br />
+Hint:
+<math role="math" aria-label="12=3 \cdot 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mo>=</mo><mn>3</mn><mo>&sdot;</mo><mn>4</mn></mrow><annotation encoding="application/x-tex">12=3 \cdot 4</annotation></semantics></math>.</p></li>
+<li><p>(Aug
+<math role="math" aria-label="20 \# 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>#</mi><mn>4</mn></mrow><annotation encoding="application/x-tex">20 \# 4</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 . An ideal
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is called irreducible if
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+cannot be written as
+<math role="math" aria-label="I=J \cap K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mi>J</mi><mo>&cap;</mo><mi>K</mi></mrow><annotation encoding="application/x-tex">I=J \cap K</annotation></semantics></math>
+where
+<math role="math" aria-label="J" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>J</mi><annotation encoding="application/x-tex">J</annotation></semantics></math>
+and
+<math role="math" aria-label="K" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+are both ideals strictly containing
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>.<br />
+(a) Prove that every prime ideal is irreducible.<br />
+(b) Assume that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+contains a nonzero nilpotent element (that is, a nonzero element
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+such that
+<math role="math" aria-label="a^{n}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>a</mi><mi>n</mi></msup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a^{n}=0</annotation></semantics></math>
+for some
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+). Prove that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+contains an irreducible ideal which is not prime. Hint: Fix a nonzero
+nilpotent element
+<math role="math" aria-label="a \in R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">a \in R</annotation></semantics></math>.
+Consider the set of all ideals NOT containing
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and show that this set has a maximal element.</p></li>
+<li><p>(Jan
+<math role="math" aria-label="21 \# 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>21</mn><mi>#</mi><mn>3</mn></mrow><annotation encoding="application/x-tex">21 \# 3</annotation></semantics></math>
+) Let
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+be a commutative ring with 1 , and assume that
+<math role="math" aria-label="|R|&gt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>R</mi><mo stretchy="false" form="prefix">|</mo><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|R|&gt;1</annotation></semantics></math>.
+Prove that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+has at least one minimal prime ideal. Make sure to include all the
+details.<br />
+Hint: Use Zorn’s lemma "backwards".<br />
+Note: A prime ideal
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is called a minimal prime ideal if
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+has no prime ideals strictly contained in
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>.
+In particular, the zero ideal is a minimal prime whenever it is
+prime.</p></li>
+<li><p>(Aug 21 #4) Let
+<math role="math" aria-label="R=\mathbb{Z}[\sqrt{-11}]=\{a+b \sqrt{-11}: a, b \in \mathbb{Z}\} \subset \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msqrt><mrow><mi>−</mi><mn>11</mn></mrow></msqrt><mo stretchy="false" form="postfix">]</mo><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>a</mi><mo>+</mo><mi>b</mi><msqrt><mrow><mi>−</mi><mn>11</mn></mrow></msqrt><mo>:</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo>&isin;</mo><mi>&Zopf;</mi><mo stretchy="false" form="postfix">}</mo><mo>&sub;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">R=\mathbb{Z}[\sqrt{-11}]=\{a+b \sqrt{-11}: a, b \in \mathbb{Z}\} \subset \mathbb{C}</annotation></semantics></math>,
+and let
+<math role="math" aria-label="I=(3,1+\sqrt{-11})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mn>3</mn><mo>,</mo><mn>1</mn><mo>+</mo><msqrt><mrow><mi>−</mi><mn>11</mn></mrow></msqrt><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">I=(3,1+\sqrt{-11})</annotation></semantics></math>
+be the ideal of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+generated by 3 and
+<math role="math" aria-label="1+\sqrt{-11}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>+</mo><msqrt><mrow><mi>−</mi><mn>11</mn></mrow></msqrt></mrow><annotation encoding="application/x-tex">1+\sqrt{-11}</annotation></semantics></math>.<br /><br /><span class="problem-number">(1)</span> Prove that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is maximal.<br /><br /><span class="problem-number">(2)</span> Prove that
+<math role="math" aria-label="I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>I</mi><annotation encoding="application/x-tex">I</annotation></semantics></math>
+is not principal.</p></li>
+</ol>
+<p>Here are some further standard facts/problems concerning rings of
+fractions (
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+always denotes a multiplicatively closed subset of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+containing 1 ).<br />
+44. Show that the prime ideals of
+<math role="math" aria-label="S^{-1} R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>R</mi></mrow><annotation encoding="application/x-tex">S^{-1} R</annotation></semantics></math>
+are in one-to-one correspondence with the prime ideals of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+not containing any element of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+Is a similar statement true for maximal ideals?<br />
+45. Show that
+<math role="math" aria-label="S^{-1} R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>R</mi></mrow><annotation encoding="application/x-tex">S^{-1} R</annotation></semantics></math>
+is a local ring (i.e. has precisely one maximal ideal) if
+<math role="math" aria-label="S=R \backslash P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mi>R</mi><mo>&setminus;</mo><mi>P</mi></mrow><annotation encoding="application/x-tex">S=R \backslash P</annotation></semantics></math>
+for a prime ideal
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+of
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>.
+In this case we use the notation
+<math role="math" aria-label="R_{P}:=S^{-1} R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>R</mi><mi>P</mi></msub><mo>:=</mo><msup><mi>S</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>R</mi></mrow><annotation encoding="application/x-tex">R_{P}:=S^{-1} R</annotation></semantics></math>.<br />
+46. Prove that
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+does not have any nonzero nilpotent elements if and only if, for all
+prime ideals
+<math role="math" aria-label="P, R_{P}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>,</mo><msub><mi>R</mi><mi>P</mi></msub></mrow><annotation encoding="application/x-tex">P, R_{P}</annotation></semantics></math>
+does not have any nilpotent elements.<br />
+47. Suppose that
+<math role="math" aria-label="S=\left\{a^{n} \mid n \in \mathbb{N}_{0}\right\}\left(a^{0}:=1\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><msup><mi>a</mi><mi>n</mi></msup><mo>∣</mo><mi>n</mi><mo>&isin;</mo><msub><mi>&Nopf;</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">}</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>a</mi><mn>0</mn></msup><mo>:=</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">S=\left\{a^{n} \mid n \in \mathbb{N}_{0}\right\}\left(a^{0}:=1\right)</annotation></semantics></math>
+for some
+<math role="math" aria-label="a \in R \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>R</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">a \in R \backslash\{0\}</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="S^{-1} R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>S</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>R</mi></mrow><annotation encoding="application/x-tex">S^{-1} R</annotation></semantics></math>
+is isomorphic to
+<math role="math" aria-label="R[x] /(a x-1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">[</mo><mi>x</mi><mo stretchy="false" form="postfix">]</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">R[x] /(a x-1)</annotation></semantics></math>.
+What does this mean for nilpotent
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+?</p>
+
+</main>
+</body>
+</html>
