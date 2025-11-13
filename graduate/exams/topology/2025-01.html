@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Topology General Exam January 8, 2025 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Topology General Exam January 8, 2025</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="topology-general-exam">Topology General Exam — January 8, 2025</h1>
+<p><strong>Student ID:</strong> __________________________</p>
+<p><strong>Instructions:</strong> This is a four hour exam. Your solutions should be
+legible and clearly organized, written in complete sentences in good
+mathematical style. All work should be your own—no outside sources are
+permitted—using methods and results from the first year topology course
+topics. There are 7 problems; each problem is worth the same number of
+points.</p>
+<ol>
+<li><p>Show that any map
+<math role="math" aria-label="\mathbb{R} P^{2} \vee \mathbb{R} P^{2} \rightarrow S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup><mo>&or;</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup><mo>&rarr;</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">\mathbb{R} P^{2} \vee \mathbb{R} P^{2} \rightarrow S^{1}</annotation></semantics></math>
+is nullhomotopic.</p></li>
+<li><p>Consider the space
+<math role="math" aria-label="X=T \vee S^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mi>T</mi><mo>&or;</mo><msup><mi>S</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">X=T \vee S^{2}</annotation></semantics></math>,
+where
+<math role="math" aria-label="T=S^{1} \times S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><msup><mi>S</mi><mn>1</mn></msup><mo>&times;</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">T=S^{1} \times S^{1}</annotation></semantics></math>
+is the torus and
+<math role="math" aria-label="S^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>2</mn></msup><annotation encoding="application/x-tex">S^{2}</annotation></semantics></math>
+is the 2-sphere.<br />
+(a) Compute
+<math role="math" aria-label="\pi_{1}(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\pi_{1}(X)</annotation></semantics></math>.<br />
+(b) Compute the homology groups of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.<br />
+(c) Describe the isomorphism classes of covering spaces of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.</p></li>
+<li><p>Consider a commutative diagram of abelian groups:<br />
+<img src="2025_11_13_785a49c46d76ab9e3988g-4.jpg" alt="Commutative diagram with three rows and three columns of abelian groups" style="max-width: 100%; height: auto; margin: 1em 0;" /></p></li>
+</ol>
+<p>Suppose that all columns are exact, and that the two bottom rows are
+exact. Prove that the top row is exact at
+<math role="math" aria-label="A_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>A</mi><mn>2</mn></msub><annotation encoding="application/x-tex">A_{2}</annotation></semantics></math>,
+i.e. that
+<math role="math" aria-label="\operatorname{im}(i)=\operatorname{ker}(j)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">im</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">ker</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>j</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{im}(i)=\operatorname{ker}(j)</annotation></semantics></math>.<br />
+4. Let
+<math role="math" aria-label="f: S^{n} \rightarrow S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mi>n</mi></msup><mo>&rarr;</mo><msup><mi>S</mi><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">f: S^{n} \rightarrow S^{n}</annotation></semantics></math>
+be a smooth map that has no fixed points, where
+<math role="math" aria-label="S^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mi>n</mi></msup><annotation encoding="application/x-tex">S^{n}</annotation></semantics></math>
+is the
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-sphere.
+Find the degree of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.<br />
+5. Consider SL(
+<math role="math" aria-label="2, \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>,</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">2, \mathbb{R}</annotation></semantics></math>
+), the set of
+<math role="math" aria-label="2 \times 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&times;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2 \times 2</annotation></semantics></math>
+matrices of determinant 1 .<br />
+(a) Prove that
+<math role="math" aria-label="\mathrm{SL}(2, \mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">L</mi></mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{SL}(2, \mathbb{R})</annotation></semantics></math>
+is a smooth manifold.<br />
+(b) Prove that the tangent space
+<math role="math" aria-label="\mathrm{T}_{I} \mathrm{SL}(2, \mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">T</mi><mi>I</mi></msub><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">L</mi></mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{T}_{I} \mathrm{SL}(2, \mathbb{R})</annotation></semantics></math>
+at the identity matrix is the set of
+<math role="math" aria-label="2 \times 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>&times;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">2 \times 2</annotation></semantics></math>
+traceless matrices (i.e. matrices with trace equal to zero).<br />
+(c) Prove that for an arbitrary matrix
+<math role="math" aria-label="A \in \mathrm{SL}(2, \mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&isin;</mo><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">L</mi></mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A \in \mathrm{SL}(2, \mathbb{R})</annotation></semantics></math>,
+the tangent space
+<math role="math" aria-label="\mathrm{T}_{A} \mathrm{SL}(2, \mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">T</mi><mi>A</mi></msub><mrow><mi mathvariant="normal">S</mi><mi mathvariant="normal">L</mi></mrow><mo stretchy="false" form="prefix">(</mo><mn>2</mn><mo>,</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{T}_{A} \mathrm{SL}(2, \mathbb{R})</annotation></semantics></math>
+consists of matrices of the form
+<math role="math" aria-label="A \cdot M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&sdot;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">A \cdot M</annotation></semantics></math>
+where the trace of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is zero.<br />
+6. Consider
+<math role="math" aria-label="S^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>2</mn></msup><annotation encoding="application/x-tex">S^{2}</annotation></semantics></math>,
+the unit sphere in
+<math role="math" aria-label="\mathbb{R}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>3</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{3}</annotation></semantics></math>,
+and let
+<math role="math" aria-label="f: S^{2} \rightarrow \mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mn>2</mn></msup><mo>&rarr;</mo><msup><mi>&Ropf;</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f: S^{2} \rightarrow \mathbb{R}^{2}</annotation></semantics></math>
+be given by</p>
+<p><math role="math" aria-label="f(x, y, z)=\left(x^{2}+y^{2}, z^{2}+1\right)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>,</mo><msup><mi>z</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f(x, y, z)=\left(x^{2}+y^{2}, z^{2}+1\right)</annotation></semantics></math></p>
+<p>Consider the submanifold
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+of
+<math role="math" aria-label="\mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{2}</annotation></semantics></math>
+consisting of all points
+<math role="math" aria-label="\{(t, t) \mid t \in \mathbb{R}\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>t</mi><mo>&isin;</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{(t, t) \mid t \in \mathbb{R}\}</annotation></semantics></math>.<br />
+Is
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+transverse to
+<math role="math" aria-label="L" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>L</mi><annotation encoding="application/x-tex">L</annotation></semantics></math>
+? (That is, is it true that
+<math role="math" aria-label="\mathrm{d}_{p} f\left(\mathrm{~T}_{p} S^{2}\right)+\mathrm{T}_{f(p)} L=\mathrm{T}_{f(p)} \mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">d</mi><mi>p</mi></msub><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">T</mi></mrow><mi>p</mi></msub><msup><mi>S</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>+</mo><msub><mi mathvariant="normal">T</mi><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow></msub><mi>L</mi><mo>=</mo><msub><mi mathvariant="normal">T</mi><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow></msub><msup><mi>&Ropf;</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\mathrm{d}_{p} f\left(\mathrm{~T}_{p} S^{2}\right)+\mathrm{T}_{f(p)} L=\mathrm{T}_{f(p)} \mathbb{R}^{2}</annotation></semantics></math>
+for all
+<math role="math" aria-label="p \in f^{-1}(L)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&isin;</mo><msup><mi>f</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>L</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p \in f^{-1}(L)</annotation></semantics></math>
+?)<br />
+7. Consider the 1 -form
+<math role="math" aria-label="\omega=\sum_{i=1}^{n} x_{i} \mathrm{~d} x_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&omega;</mi><mo>=</mo><msubsup><mo>&sum;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msub><mi>x</mi><mi>i</mi></msub><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">d</mi></mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\omega=\sum_{i=1}^{n} x_{i} \mathrm{~d} x_{i}</annotation></semantics></math>
+on
+<math role="math" aria-label="\mathbb{R}^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\mathbb{R}^{n}</annotation></semantics></math>.
+Show that there exists an (
+<math role="math" aria-label="n-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n-1</annotation></semantics></math>
+)-form
+<math role="math" aria-label="\alpha \in \Omega^{n-1}\left(\mathbb{R}^{n} \backslash\{0\}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&isin;</mo><msup><mi mathvariant="normal">&Omega;</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\alpha \in \Omega^{n-1}\left(\mathbb{R}^{n} \backslash\{0\}\right)</annotation></semantics></math>
+such that</p>
+<p><math role="math" aria-label="\omega \wedge \alpha=\mathrm{d} x_{1} \wedge \ldots \wedge \mathrm{~d} x_{n}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&omega;</mi><mo>&and;</mo><mi>&alpha;</mi><mo>=</mo><mi mathvariant="normal">d</mi><msub><mi>x</mi><mn>1</mn></msub><mo>&and;</mo><mi>…</mi><mo>&and;</mo><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">d</mi></mrow><msub><mi>x</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\omega \wedge \alpha=\mathrm{d} x_{1} \wedge \ldots \wedge \mathrm{~d} x_{n}</annotation></semantics></math></p>
+</main>
+</body>
+</html>
