@@ -116,8 +116,6 @@ Below are old exams and study materials for each of the subfields.
   - [08/2022]({{site.url}}/graduate/exams/topology/2022-08.html) &bull; <a href="{{site.url}}/graduate/exams/topology/2022-08.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2022]({{site.url}}/graduate/exams/topology/2022-01.html) &bull; <a href="{{site.url}}/graduate/exams/topology/2022-01.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2019]({{site.url}}/graduate/exams/topology/2019-08.html) &bull; <a href="{{site.url}}/graduate/exams/topology/2019-08.pdf" aria-label="PDF version for printing">PDF</a>
-  - [01/2019]({{site.url}}/graduate/exams/topology/2019-01.pdf)
-  - [08/2018]({{site.url}}/graduate/exams/topology/2018-08.pdf)
   - [08/2017]({{site.url}}/graduate/exams/topology/2017-08.pdf)
   - [01/2017]({{site.url}}/graduate/exams/topology/2017-01.pdf)
   - [08/2016]({{site.url}}/graduate/exams/topology/2016-08.pdf)
@@ -126,6 +124,8 @@ Below are old exams and study materials for each of the subfields.
   - [08/2014]({{site.url}}/graduate/exams/topology/2014-08.pdf)
   - [01/2014]({{site.url}}/graduate/exams/topology/2014-01.pdf)
   - [08/2013]({{site.url}}/graduate/exams/topology/2013-08.pdf)
+  - [01/2019]({{site.url}}/graduate/exams/topology/2019-01.html) &bull; <a href="{{site.url}}/graduate/exams/topology/2019-01.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2018]({{site.url}}/graduate/exams/topology/2018-08.html) &bull; <a href="{{site.url}}/graduate/exams/topology/2018-08.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2012]({{site.url}}/graduate/exams/topology/2012-08.pdf)
   - [08/2010]({{site.url}}/graduate/exams/topology/2010-08.pdf)
   
