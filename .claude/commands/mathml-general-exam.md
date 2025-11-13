@@ -54,8 +54,14 @@ The extracted .tex file will be in a subdirectory named with the PDF_ID.
 pandoc /tmp/<PDF_ID>/<PDF_ID>.tex -f latex -t html --mathml --standalone -o /tmp/output_mathml.html
 ```
 
-### Step 5: Post-process to fix Unicode and improve accessibility
-Use the Python script `scripts/fix_mathml.py` to:
+### Step 5: Post-process for accessibility and formatting
+Use the Python script `scripts/fix_mathml.py` to apply all fixes in one step:
+
+```bash
+python3 scripts/fix_mathml.py /tmp/output_mathml.html /tmp/output_fixed.html
+```
+
+This script does everything:
 1. Replace all Unicode mathematical characters with HTML/MathML entities (&rarr;, &infin;, &Copf;, &epsilon;, etc.)
 2. Fix heading hierarchy (first H1 stays as title, subsequent H1s become H2)
 3. Add ARIA attributes to all math elements (role="math", aria-label with LaTeX source)
@@ -64,6 +70,10 @@ Use the Python script `scripts/fix_mathml.py` to:
 6. Add breadcrumb navigation at the top of the page
 7. Add a back button navigation below the breadcrumb
 8. Wrap main content in <main> landmark element
+9. Add proper spacing and indentation:
+   - Vertical spacing between main problems
+   - Sub-problems (a), (b), (c) indented with 2em left margin
+   - CSS classes for problem structure
 
 **Breadcrumb navigation** should:
 - Have aria-label="Breadcrumb"
@@ -93,30 +103,10 @@ Use this entity mapping:
 - Greek letters: α (&alpha;), β (&beta;), γ (&gamma;), δ (&delta;), ε (&epsilon;), η (&eta;), θ (&theta;), λ (&lambda;), μ (&mu;), ν (&nu;), π (&pi;), σ (&sigma;), τ (&tau;), φ (&phi;), ω (&omega;), Γ (&Gamma;), Δ (&Delta;), Θ (&Theta;), Λ (&Lambda;), Σ (&Sigma;), Φ (&Phi;), Ω (&Omega;)
 - Other: ∞ (&infin;), × (&times;), ⋅ (&sdot;), ± (&plusmn;), ∠ (&ang;), ⊕ (&oplus;), ⊗ (&otimes;)
 
-### Step 6: Add proper indentation for exam problems
-Use the Python script `scripts/add_exam_indentation.py` to add proper visual indentation:
-
-```bash
-python3 scripts/add_exam_indentation.py /tmp/output_fixed.html /tmp/output_indented.html
-```
-
-This script:
-1. Adds CSS classes for problem structure (`.problem`, `.problem-number`, `.subproblem`)
-2. Adds double line breaks (`<br /><br />`) between main problems (2), (3), (4), etc.
-3. Wraps problem numbers in `<span class="problem-number">` for consistent spacing
-4. Wraps sub-problems (a), (b), (c), etc. in `<span class="subproblem">` tags
-5. Applies 2em left margin to sub-problems for visual indentation
-
-**Why this matters:**
-- Preserves the visual hierarchy and spacing from the PDF
-- Makes it easier to distinguish main problems from sub-parts
-- Adds proper vertical spacing between problems
-- Improves readability and accessibility
-
-### Step 7: Save to final location
+### Step 6: Save to final location
 Save the processed HTML file next to the original PDF with the same name but .html extension.
 
-### Step 8: Add accessible HTML link to the generals page
+### Step 7: Add accessible HTML link to the generals page
 After saving the HTML file, you MUST update the link in `graduate/general_exams.md` to follow accessibility best practices:
 
 1. Read the file `graduate/general_exams.md`
@@ -145,7 +135,7 @@ After saving the HTML file, you MUST update the link in `graduate/general_exams.
 - Clearly labeling the PDF as "for printing" to indicate its purpose
 - Using ARIA labels to communicate that PDFs may have accessibility limitations
 
-### Step 9: Final Review - Read Both Files
+### Step 8: Final Review - Read Both Files
 After completing all processing steps, you MUST read both the original PDF and the generated HTML file to provide a final quality assessment:
 
 ```bash
@@ -194,6 +184,10 @@ The output HTML must have:
 ✓ Back button navigation with aria-label="Page navigation" below breadcrumb
 ✓ Main content wrapped in <main> landmark element
 ✓ Valid, well-formed HTML5 document with proper semantic structure
+✓ Proper visual spacing and indentation:
+  - Vertical spacing between main problems
+  - Sub-problems (a), (b), (c) indented with 2em left margin
+  - Problem hierarchy preserved from PDF
 ✓ HTML file saved next to the PDF with .html extension
 ✓ Link in graduate/general_exams.md updated with HTML as primary, PDF as secondary with aria-label
 ✓ Both PDF and HTML reviewed side-by-side with final quality assessment provided

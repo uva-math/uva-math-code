@@ -249,6 +249,64 @@ def wrap_content_in_main(html):
 
     return html
 
+def add_exam_indentation(html):
+    """Add proper indentation and spacing for exam problems."""
+
+    # Add CSS if not present
+    if '.subproblem' not in html:
+        css_insert = """    /* Exam problem styling */
+    .problem {
+      margin-bottom: 1.5em;
+    }
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    .subproblem {
+      margin-left: 2em;
+      margin-top: 0.5em;
+      display: block;
+    }
+  </style>"""
+        html = html.replace('  </style>', css_insert)
+
+    # Try to find content in <main>, otherwise work on <body>
+    main_match = re.search(r'<main>(.*?)</main>', html, re.DOTALL)
+    if main_match:
+        content = main_match.group(1)
+        start_pos = main_match.start(1)
+        end_pos = main_match.end(1)
+    else:
+        # No main element, work on body content
+        body_match = re.search(r'<body>(.*?)</body>', html, re.DOTALL)
+        if not body_match:
+            return html
+        content = body_match.group(1)
+        start_pos = body_match.start(1)
+        end_pos = body_match.end(1)
+
+    # Wrap problem numbers (2), (3), etc. with spacing class and add line breaks
+    # Don't match (1) at the start to avoid affecting the first problem
+    content = re.sub(
+        r'<br\s*/?\>[\s\n]*(\(\d+\))',
+        r'<br /><br /><span class="problem-number">\1</span>',
+        content
+    )
+
+    # Wrap sub-problems (a), (b), etc. with indentation divs
+    content = re.sub(
+        r'<br\s*/?\>[\s\n]*(\([a-z]\)\s+.*?)(?=<br\s*/?\>[\s\n]*(?:\([a-z]\)|\(\d+\)|$)|</p>)',
+        r'<br /><span class="subproblem">\1</span>',
+        content,
+        flags=re.DOTALL
+    )
+
+    # Replace in original HTML
+    html = html[:start_pos] + content + html[end_pos:]
+
+    return html
+
 def main():
     if len(sys.argv) != 3:
         print("Usage: fix_mathml.py input.html output.html")
@@ -269,6 +327,7 @@ def main():
     html = add_breadcrumb_navigation(html)
     html = add_back_button(html)
     html = wrap_content_in_main(html)
+    html = add_exam_indentation(html)
 
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(html)
