@@ -249,24 +249,16 @@ def wrap_content_in_main(html):
 
     return html
 
-def add_exam_indentation(html):
-    """Add proper indentation and spacing for exam problems."""
+def add_exam_spacing(html):
+    """Add proper spacing between exam problems."""
 
     # Add CSS if not present
-    if '.subproblem' not in html:
+    if '.problem-number' not in html:
         css_insert = """    /* Exam problem styling */
-    .problem {
-      margin-bottom: 1.5em;
-    }
     .problem-number {
       display: block;
       margin-top: 1.5em;
       margin-bottom: 0.5em;
-    }
-    .subproblem {
-      margin-left: 2em;
-      margin-top: 0.5em;
-      display: block;
     }
   </style>"""
         html = html.replace('  </style>', css_insert)
@@ -286,20 +278,12 @@ def add_exam_indentation(html):
         start_pos = body_match.start(1)
         end_pos = body_match.end(1)
 
-    # Wrap problem numbers (2), (3), etc. with spacing class and add line breaks
-    # Don't match (1) at the start to avoid affecting the first problem
+    # Add spacing between problem numbers (2), (3), etc.
+    # Add double line breaks before numbered problems
     content = re.sub(
         r'<br\s*/?\>[\s\n]*(\(\d+\))',
         r'<br /><br /><span class="problem-number">\1</span>',
         content
-    )
-
-    # Wrap sub-problems (a), (b), etc. with indentation divs
-    content = re.sub(
-        r'<br\s*/?\>[\s\n]*(\([a-z]\)\s+.*?)(?=<br\s*/?\>[\s\n]*(?:\([a-z]\)|\(\d+\)|$)|</p>)',
-        r'<br /><span class="subproblem">\1</span>',
-        content,
-        flags=re.DOTALL
     )
 
     # Replace in original HTML
@@ -327,7 +311,7 @@ def main():
     html = add_breadcrumb_navigation(html)
     html = add_back_button(html)
     html = wrap_content_in_main(html)
-    html = add_exam_indentation(html)
+    html = add_exam_spacing(html)
 
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(html)

@@ -70,10 +70,9 @@ This script does everything:
 6. Add breadcrumb navigation at the top of the page
 7. Add a back button navigation below the breadcrumb
 8. Wrap main content in <main> landmark element
-9. Add proper spacing and indentation:
-   - Vertical spacing between main problems
-   - Sub-problems (a), (b), (c) indented with 2em left margin
-   - CSS classes for problem structure
+9. Add proper spacing between main problems:
+   - Vertical spacing (double line breaks) between numbered problems
+   - CSS class for consistent problem spacing
 
 **Breadcrumb navigation** should:
 - Have aria-label="Breadcrumb"
@@ -153,9 +152,8 @@ Read <PATH_TO_HTML>
    - ARIA labels on math elements
    - Semantic HTML structure
 4. **Formatting and Spacing**: Ensure the HTML preserves the PDF's visual structure:
-   - Proper spacing between main problems
-   - Sub-problems (a), (b), (c) are visually indented
-   - Problem hierarchy is clear and readable
+   - Proper vertical spacing between main problems
+   - Problem structure is clear and readable
 5. **Completeness**: Verify nothing was lost or corrupted during conversion
 
 **Provide a concise summary stating:**
@@ -184,10 +182,7 @@ The output HTML must have:
 ✓ Back button navigation with aria-label="Page navigation" below breadcrumb
 ✓ Main content wrapped in <main> landmark element
 ✓ Valid, well-formed HTML5 document with proper semantic structure
-✓ Proper visual spacing and indentation:
-  - Vertical spacing between main problems
-  - Sub-problems (a), (b), (c) indented with 2em left margin
-  - Problem hierarchy preserved from PDF
+✓ Proper vertical spacing between main problems
 ✓ HTML file saved next to the PDF with .html extension
 ✓ Link in graduate/general_exams.md updated with HTML as primary, PDF as secondary with aria-label
 ✓ Both PDF and HTML reviewed side-by-side with final quality assessment provided
