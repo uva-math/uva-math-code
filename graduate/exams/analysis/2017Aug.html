@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Analysis General Exam August 2017 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Analysis General Exam August 2017</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 id="analysis-general-exam-august-2017">Analysis General Exam August 2017</h1>
+<p>Instructions. 4 hours. Closed book examination. As the exam is a bit
+long you do not have to do everything in order to succeed. In order to
+pass, you need to complete a significant portion of each of the two
+sections: complex analysis (Questions 1 through 4) and real analysis
+(Questions 5 through 7). Fully completing one section while leaving the
+other untouched will not result in a passing grade so please plan the
+allocation of your time and effort accordingly.</p>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be an entire function. Which of the following conditions imply that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is constant? Give proofs or counterexamples.<br />
+(a)
+<math role="math" aria-label="\operatorname{Re} z \geq 0 \Rightarrow|f(z)| \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Re</mi><mo>&#8289;</mo></mrow><mi>z</mi><mo>&ge;</mo><mn>0</mn><mo>&rArr;</mo><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\operatorname{Re} z \geq 0 \Rightarrow|f(z)| \leq 1</annotation></semantics></math>.<br />
+(b)
+<math role="math" aria-label="|z| \geq 1 \Rightarrow\left|\frac{f(z)^{2}}{z}\right| \leq \pi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&ge;</mo><mn>1</mn><mo>&rArr;</mo><mrow><mo stretchy="true" form="prefix">|</mo><mfrac><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow><mi>z</mi></mfrac><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><mi>&pi;</mi></mrow><annotation encoding="application/x-tex">|z| \geq 1 \Rightarrow\left|\frac{f(z)^{2}}{z}\right| \leq \pi</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Evaluate</p>
+<p><math role="math" aria-label="\int_{0}^{\infty} \frac{1}{x^{n}+1} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mfrac><mn>1</mn><mrow><msup><mi>x</mi><mi>n</mi></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty} \frac{1}{x^{n}+1} d x</annotation></semantics></math></p>
+<p>where
+<math role="math" aria-label="n \geq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n \geq 2</annotation></semantics></math>
+is an integer. Your final answer should not involve any reference to
+complex numbers.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>(a) Let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be an analytic function. Show that the level curves
+<math role="math" aria-label="\operatorname{Re} f(z)=k_{1}, \operatorname{Im} f(z)= k_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Re</mi><mo>&#8289;</mo></mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>k</mi><mn>1</mn></msub><mo>,</mo><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>k</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\operatorname{Re} f(z)=k_{1}, \operatorname{Im} f(z)= k_{2}</annotation></semantics></math>
+are perpendicular at any point where
+<math role="math" aria-label="f^{\prime}(z) \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f^{\prime}(z) \neq 0</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="p_{1}, p_{2}, \ldots p_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>1</mn></msub><mo>,</mo><msub><mi>p</mi><mn>2</mn></msub><mo>,</mo><mi>…</mi><msub><mi>p</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">p_{1}, p_{2}, \ldots p_{n}</annotation></semantics></math>
+be points on a circle of radius 1 . Show that there is a point on the
+circle such that the product of its distances to the
+<math role="math" aria-label="p_{j}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>p</mi><mi>j</mi></msub><annotation encoding="application/x-tex">p_{j}</annotation></semantics></math>
+is 1 . (Suggestion: apply the maximum modulus principle to an
+appropriate complex polynomial.)</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Let
+<math role="math" aria-label="z_{1}, z_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>,</mo><msub><mi>z</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">z_{1}, z_{2}</annotation></semantics></math>
+be unequal numbers in the open unit disk
+<math role="math" aria-label="\mathbb{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Dopf;</mi><annotation encoding="application/x-tex">\mathbb{D}</annotation></semantics></math>,
+and let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be an analytic selfmap of
+<math role="math" aria-label="\mathbb{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Dopf;</mi><annotation encoding="application/x-tex">\mathbb{D}</annotation></semantics></math>,
+not necessarily 1-1. Follow the steps below to prove the following
+version of Pick’s Lemma:</p>
+<p><math role="math" aria-label="\left|\frac{f\left(z_{1}\right)-f\left(z_{2}\right)}{1-f\left(z_{1}\right) \overline{f\left(z_{2}\right)}}\right| \leq\left|\frac{z_{1}-z_{2}}{1-z_{1} \overline{z_{2}}}\right|" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mfrac><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>z</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>z</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mrow><mn>1</mn><mo>−</mo><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>z</mi><mn>1</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow><mover><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>z</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><mo accent="true">¯</mo></mover></mrow></mfrac><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><mrow><mo stretchy="true" form="prefix">|</mo><mfrac><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>−</mo><msub><mi>z</mi><mn>2</mn></msub></mrow><mrow><mn>1</mn><mo>−</mo><msub><mi>z</mi><mn>1</mn></msub><mover><msub><mi>z</mi><mn>2</mn></msub><mo accent="true">¯</mo></mover></mrow></mfrac><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">\left|\frac{f\left(z_{1}\right)-f\left(z_{2}\right)}{1-f\left(z_{1}\right) \overline{f\left(z_{2}\right)}}\right| \leq\left|\frac{z_{1}-z_{2}}{1-z_{1} \overline{z_{2}}}\right|</annotation></semantics></math></p>
+<p>(a) Write down an explicit conformal self-map of the disk that sends
+<math role="math" aria-label="f\left(z_{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>z</mi><mn>2</mn></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f\left(z_{2}\right)</annotation></semantics></math>
+to 0 . You do not need to prove anything about your map.<br />
+(b) Find conformal self-maps of the disk
+<math role="math" aria-label="\varphi, \psi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo>,</mo><mi>&psi;</mi></mrow><annotation encoding="application/x-tex">\varphi, \psi</annotation></semantics></math>
+such that
+<math role="math" aria-label="\varphi \circ f \circ \psi^{-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo>&SmallCircle;</mo><mi>f</mi><mo>&SmallCircle;</mo><msup><mi>&psi;</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\varphi \circ f \circ \psi^{-1}</annotation></semantics></math>
+is an analytic self-map of the disk sending 0 to 0 , and apply the
+Schwarz lemma appropriately to
+<math role="math" aria-label="\varphi \circ f \circ \psi^{-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo>&SmallCircle;</mo><mi>f</mi><mo>&SmallCircle;</mo><msup><mi>&psi;</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\varphi \circ f \circ \psi^{-1}</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>(a) Recall that continuous functions in
+<math role="math" aria-label="L^{2}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}(\mathbb{R})</annotation></semantics></math>
+are dense in
+<math role="math" aria-label="L^{2}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}(\mathbb{R})</annotation></semantics></math>.
+Show that compactly supported continuous functions are dense in
+<math role="math" aria-label="L^{2}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}(\mathbb{R})</annotation></semantics></math>.<br />
+(b) For positive
+<math role="math" aria-label="a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>a</mi><annotation encoding="application/x-tex">a</annotation></semantics></math>
+and
+<math role="math" aria-label="b" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>b</mi><annotation encoding="application/x-tex">b</annotation></semantics></math>
+let
+<math role="math" aria-label="f_{a, b}=a \chi_{[0, b]}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow></msub><mo>=</mo><mi>a</mi><msub><mi>&chi;</mi><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">]</mo></mrow></msub></mrow><annotation encoding="application/x-tex">f_{a, b}=a \chi_{[0, b]}</annotation></semantics></math>.
+Produce a sequence (
+<math role="math" aria-label="a_{n}, b_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>,</mo><msub><mi>b</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">a_{n}, b_{n}</annotation></semantics></math>
+) such that
+<math role="math" aria-label="\int_{\mathbb{R}} f_{a_{n}, b_{n}}(x) d x=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mi>&Ropf;</mi></msub><msub><mi>f</mi><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>,</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\int_{\mathbb{R}} f_{a_{n}, b_{n}}(x) d x=1</annotation></semantics></math>
+for all
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+while
+<math role="math" aria-label="\left\|f_{a_{n}, b_{n}}\right\|_{L^{2}} \rightarrow 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo stretchy="true" form="prefix">&parallel;</mo><msub><mi>f</mi><mrow><msub><mi>a</mi><mi>n</mi></msub><mo>,</mo><msub><mi>b</mi><mi>n</mi></msub></mrow></msub><mo stretchy="true" form="postfix">&parallel;</mo></mrow><msup><mi>L</mi><mn>2</mn></msup></msub><mo>&rarr;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\left\|f_{a_{n}, b_{n}}\right\|_{L^{2}} \rightarrow 0</annotation></semantics></math>
+when
+<math role="math" aria-label="n \rightarrow \infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">n \rightarrow \infty</annotation></semantics></math>.<br />
+(c) Show that compactly supported continuous functions
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+such that
+<math role="math" aria-label="\int_{\mathbb{R}} f(x) d x=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mi>&Ropf;</mi></msub><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\int_{\mathbb{R}} f(x) d x=0</annotation></semantics></math>
+are dense in
+<math role="math" aria-label="L^{2}(\mathbb{R})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}(\mathbb{R})</annotation></semantics></math>.<br />
+(d) Are continuous functions
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+such that
+<math role="math" aria-label="\int_{[0,1]} f(x) d x=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow></msub><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\int_{[0,1]} f(x) d x=0</annotation></semantics></math>
+dense in
+<math role="math" aria-label="L^{2}([0,1])" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}([0,1])</annotation></semantics></math>
+? Justify your answer.</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>(a) Let
+<math role="math" aria-label="h_{0,0}(x)=\chi_{\left[0, \frac{1}{2}\right)}(x)-\chi_{\left[\frac{1}{2}, 1\right)}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>&chi;</mi><mrow><mo stretchy="true" form="prefix">[</mo><mn>0</mn><mo>,</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><msub><mi>&chi;</mi><mrow><mo stretchy="true" form="prefix">[</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>,</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">h_{0,0}(x)=\chi_{\left[0, \frac{1}{2}\right)}(x)-\chi_{\left[\frac{1}{2}, 1\right)}(x)</annotation></semantics></math>.
+More generally, for
+<math role="math" aria-label="n \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n \geq 0</annotation></semantics></math>
+and
+<math role="math" aria-label="0 \leq k \leq 2^{n}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&le;</mo><mi>k</mi><mo>&le;</mo><msup><mn>2</mn><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0 \leq k \leq 2^{n}-1</annotation></semantics></math>,
+we define
+<math role="math" aria-label="h_{n, k}(x)=2^{\frac{n}{2}} h_{0,0}\left(2^{n} x-k\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>h</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mn>2</mn><mfrac><mi>n</mi><mn>2</mn></mfrac></msup><msub><mi>h</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mn>2</mn><mi>n</mi></msup><mi>x</mi><mo>−</mo><mi>k</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">h_{n, k}(x)=2^{\frac{n}{2}} h_{0,0}\left(2^{n} x-k\right)</annotation></semantics></math>.
+For
+<math role="math" aria-label="n \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n \geq 0</annotation></semantics></math>
+and
+<math role="math" aria-label="(x, y) \in[0,1]^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><msup><mo stretchy="false" form="postfix">]</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(x, y) \in[0,1]^{2}</annotation></semantics></math>
+we let</p>
+<p><math role="math" aria-label="L_{n}(x, y)=\sum_{k=0}^{2^{n}-1} h_{n, k}(x) h_{n, k}(y)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mrow><msup><mn>2</mn><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow></munderover><msub><mi>h</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><msub><mi>h</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L_{n}(x, y)=\sum_{k=0}^{2^{n}-1} h_{n, k}(x) h_{n, k}(y)</annotation></semantics></math></p>
+<p>and</p>
+<p><math role="math" aria-label="K_{n}(x, y)=\chi_{[0,1)}(x) \chi_{[0,1)}(y)+\sum_{m=0}^{n} L_{m}(x, y)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>&chi;</mi><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><msub><mi>&chi;</mi><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><munderover><mo>&sum;</mo><mrow><mi>m</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><msub><mi>L</mi><mi>m</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K_{n}(x, y)=\chi_{[0,1)}(x) \chi_{[0,1)}(y)+\sum_{m=0}^{n} L_{m}(x, y)</annotation></semantics></math></p>
+<p>Plot
+<math role="math" aria-label="L_{0}, L_{1}, L_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mn>0</mn></msub><mo>,</mo><msub><mi>L</mi><mn>1</mn></msub><mo>,</mo><msub><mi>L</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">L_{0}, L_{1}, L_{2}</annotation></semantics></math>
+and
+<math role="math" aria-label="K_{0}, K_{1}, K_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>0</mn></msub><mo>,</mo><msub><mi>K</mi><mn>1</mn></msub><mo>,</mo><msub><mi>K</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">K_{0}, K_{1}, K_{2}</annotation></semantics></math>.
+(Do not use 3d plots but simply subdivide the square into regions and in
+each region indicate the value of the function. Do six different plot
+sketches, one for each function).<br />
+(b) Show that for
+<math role="math" aria-label="n \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n \geq 0</annotation></semantics></math>
+and
+<math role="math" aria-label="(x, y) \in[0,1]^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><msup><mo stretchy="false" form="postfix">]</mo><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">(x, y) \in[0,1]^{2}</annotation></semantics></math>,
+one has
+<math role="math" aria-label="K_{n}(x, y)=2^{n+1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">K_{n}(x, y)=2^{n+1}</annotation></semantics></math>
+if
+<math role="math" aria-label="x, y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x, y</annotation></semantics></math>
+both belong to
+<math role="math" aria-label="\left[\frac{k}{2^{n+1}}, \frac{k+1}{2^{n+1}}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">[</mo><mfrac><mi>k</mi><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><mo>,</mo><mfrac><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left[\frac{k}{2^{n+1}}, \frac{k+1}{2^{n+1}}\right)</annotation></semantics></math>
+for some
+<math role="math" aria-label="k, 0 \leq k \leq 2^{n+1}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi><mo>,</mo><mn>0</mn><mo>&le;</mo><mi>k</mi><mo>&le;</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">k, 0 \leq k \leq 2^{n+1}-1</annotation></semantics></math>,
+and
+<math role="math" aria-label="K_{n}(x, y)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">K_{n}(x, y)=0</annotation></semantics></math>
+otherwise.<br />
+(c) Let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be continuous on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>
+and, for
+<math role="math" aria-label="n \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n \geq 0</annotation></semantics></math>,
+define</p>
+<p><math role="math" aria-label="g_{n}(x)=\int_{0}^{1} K_{n}(x, y) f(y) d y" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><msub><mi>K</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">g_{n}(x)=\int_{0}^{1} K_{n}(x, y) f(y) d y</annotation></semantics></math></p>
+<p>Show that
+<math role="math" aria-label="\lim _{n \rightarrow \infty} g_{n}=f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><msub><mi>g</mi><mi>n</mi></msub><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} g_{n}=f</annotation></semantics></math>
+in
+<math role="math" aria-label="L^{p}([0,1])" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mi>p</mi></msup><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{p}([0,1])</annotation></semantics></math>
+for all
+<math role="math" aria-label="p \in[1, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>1</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p \in[1, \infty)</annotation></semantics></math>.<br />
+(d) Let
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+be the linear span of the collection of functions
+<math role="math" aria-label="h_{n, k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>h</mi><mrow><mi>n</mi><mo>,</mo><mi>k</mi></mrow></msub><annotation encoding="application/x-tex">h_{n, k}</annotation></semantics></math>,
+with
+<math role="math" aria-label="n \geq 0,0 \leq k \leq 2^{n}-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>0</mn><mo>,</mo><mn>0</mn><mo>&le;</mo><mi>k</mi><mo>&le;</mo><msup><mn>2</mn><mi>n</mi></msup><mo>−</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n \geq 0,0 \leq k \leq 2^{n}-1</annotation></semantics></math>,
+together with the constant function equal to 1 . Prove that
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>
+is dense in
+<math role="math" aria-label="L^{p}([0,1])" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mi>p</mi></msup><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{p}([0,1])</annotation></semantics></math>
+for all
+<math role="math" aria-label="p \in[1, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>1</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">p \in[1, \infty)</annotation></semantics></math>.<br />
+(e) In the particular case
+<math role="math" aria-label="p=2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">p=2</annotation></semantics></math>,
+give a geometric interpretation for the map which produces
+<math role="math" aria-label="g_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>g</mi><mi>n</mi></msub><annotation encoding="application/x-tex">g_{n}</annotation></semantics></math>
+out of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>(a) In this problem the formula</p>
+<p><math role="math" aria-label="\frac{1}{\sqrt{2 \pi}} \int_{\mathbb{R}} x^{n} e^{-\frac{x^{2}}{2}} d x=1" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><msqrt><mrow><mn>2</mn><mi>&pi;</mi></mrow></msqrt></mfrac><msub><mo>&int;</mo><mi>&Ropf;</mi></msub><msup><mi>x</mi><mi>n</mi></msup><msup><mi>e</mi><mrow><mi>−</mi><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>2</mn></mfrac></mrow></msup><mi>d</mi><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{1}{\sqrt{2 \pi}} \int_{\mathbb{R}} x^{n} e^{-\frac{x^{2}}{2}} d x=1</annotation></semantics></math></p>
+<p>for
+<math role="math" aria-label="n=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n=0</annotation></semantics></math>
+and
+<math role="math" aria-label="n=2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n=2</annotation></semantics></math>
+can be used without justification. For
+<math role="math" aria-label="(t, x) \in(0, \infty) \times \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo><mo>&times;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">(t, x) \in(0, \infty) \times \mathbb{R}</annotation></semantics></math>
+we let</p>
+<p><math role="math" aria-label="P(t, x)=\frac{1}{2 \sqrt{\pi t}} e^{-\frac{x^{2}}{4 t}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><msqrt><mrow><mi>&pi;</mi><mi>t</mi></mrow></msqrt></mrow></mfrac><msup><mi>e</mi><mrow><mi>−</mi><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>4</mn><mi>t</mi></mrow></mfrac></mrow></msup></mrow><annotation encoding="application/x-tex">P(t, x)=\frac{1}{2 \sqrt{\pi t}} e^{-\frac{x^{2}}{4 t}}</annotation></semantics></math></p>
+<p>Show that this function is infinitely differentiable and that</p>
+<p><math role="math" aria-label="\frac{\partial^{m+n} P}{\partial t^{m} \partial x^{n}}(t, x)=\frac{Q_{m, n}(t, x)}{2 \sqrt{\pi} t^{2 m+n+\frac{1}{2}}} e^{-\frac{x^{2}}{4 t}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msup><mi>&part;</mi><mrow><mi>m</mi><mo>+</mo><mi>n</mi></mrow></msup><mi>P</mi></mrow><mrow><mi>&part;</mi><msup><mi>t</mi><mi>m</mi></msup><mi>&part;</mi><msup><mi>x</mi><mi>n</mi></msup></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><msub><mi>Q</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mn>2</mn><msqrt><mi>&pi;</mi></msqrt><msup><mi>t</mi><mrow><mn>2</mn><mi>m</mi><mo>+</mo><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac></mrow></msup></mrow></mfrac><msup><mi>e</mi><mrow><mi>−</mi><mfrac><msup><mi>x</mi><mn>2</mn></msup><mrow><mn>4</mn><mi>t</mi></mrow></mfrac></mrow></msup></mrow><annotation encoding="application/x-tex">\frac{\partial^{m+n} P}{\partial t^{m} \partial x^{n}}(t, x)=\frac{Q_{m, n}(t, x)}{2 \sqrt{\pi} t^{2 m+n+\frac{1}{2}}} e^{-\frac{x^{2}}{4 t}}</annotation></semantics></math></p>
+<p>for some two-variable polynomials
+<math role="math" aria-label="Q_{m, n}(t, x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">Q_{m, n}(t, x)</annotation></semantics></math>
+satisfying the recursion</p>
+<p><math role="math" aria-label="\begin{aligned}
+Q_{m+1, n} &amp; =t^{2} \frac{\partial Q_{m, n}}{\partial t}+\left(\frac{x^{2}}{4}-\left(2 m+n+\frac{1}{2}\right) t\right) Q_{m, n} \\
+Q_{m, n+1} &amp; =t \frac{\partial Q_{m, n}}{\partial x}-\frac{x}{2} Q_{m, n}
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>Q</mi><mrow><mi>m</mi><mo>+</mo><mn>1</mn><mo>,</mo><mi>n</mi></mrow></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msup><mi>t</mi><mn>2</mn></msup><mfrac><mrow><mi>&part;</mi><msub><mi>Q</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub></mrow><mrow><mi>&part;</mi><mi>t</mi></mrow></mfrac><mo>+</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>4</mn></mfrac><mo>−</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><mi>m</mi><mo>+</mo><mi>n</mi><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>Q</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>Q</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msub></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mi>t</mi><mfrac><mrow><mi>&part;</mi><msub><mi>Q</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub></mrow><mrow><mi>&part;</mi><mi>x</mi></mrow></mfrac><mo>−</mo><mfrac><mi>x</mi><mn>2</mn></mfrac><msub><mi>Q</mi><mrow><mi>m</mi><mo>,</mo><mi>n</mi></mrow></msub></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+Q_{m+1, n} &amp; =t^{2} \frac{\partial Q_{m, n}}{\partial t}+\left(\frac{x^{2}}{4}-\left(2 m+n+\frac{1}{2}\right) t\right) Q_{m, n} \\
+Q_{m, n+1} &amp; =t \frac{\partial Q_{m, n}}{\partial x}-\frac{x}{2} Q_{m, n}
+\end{aligned}</annotation></semantics></math></p>
+<p>(b) Let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be a compactly supported twice continuously differentiable function on
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>.
+Show that</p>
+<p><math role="math" aria-label="\psi(t, x)=\int_{\mathbb{R}} P(t, x-y) f(y) d y" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&psi;</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mo>&int;</mo><mi>&Ropf;</mi></msub><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo>−</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>y</mi></mrow><annotation encoding="application/x-tex">\psi(t, x)=\int_{\mathbb{R}} P(t, x-y) f(y) d y</annotation></semantics></math></p>
+<p>is well defined and infinitely differentiable on
+<math role="math" aria-label="(0, \infty) \times \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo><mo>&times;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">(0, \infty) \times \mathbb{R}</annotation></semantics></math>.<br />
+(c) By computing
+<math role="math" aria-label="Q_{0,0}, Q_{1,0}, Q_{0,1}, Q_{0,2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mrow><mn>0</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>,</mo><msub><mi>Q</mi><mrow><mn>1</mn><mo>,</mo><mn>0</mn></mrow></msub><mo>,</mo><msub><mi>Q</mi><mrow><mn>0</mn><mo>,</mo><mn>1</mn></mrow></msub><mo>,</mo><msub><mi>Q</mi><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow></msub></mrow><annotation encoding="application/x-tex">Q_{0,0}, Q_{1,0}, Q_{0,1}, Q_{0,2}</annotation></semantics></math>
+show that
+<math role="math" aria-label="\psi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&psi;</mi><annotation encoding="application/x-tex">\psi</annotation></semantics></math>
+satisfies the heat equation, i.e.,</p>
+<p><math role="math" aria-label="\frac{\partial \psi}{\partial t}=\frac{\partial^{2} \psi}{\partial x^{2}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>&part;</mi><mi>&psi;</mi></mrow><mrow><mi>&part;</mi><mi>t</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><msup><mi>&part;</mi><mn>2</mn></msup><mi>&psi;</mi></mrow><mrow><mi>&part;</mi><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\frac{\partial \psi}{\partial t}=\frac{\partial^{2} \psi}{\partial x^{2}}</annotation></semantics></math></p>
+<p>on
+<math role="math" aria-label="(0, \infty) \times \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo><mo>&times;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">(0, \infty) \times \mathbb{R}</annotation></semantics></math>.<br />
+(d) Recall that a twice continuously differentiable function
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+satisfies the Taylor formula with integral remainder</p>
+<p><math role="math" aria-label="f(y)=f(x)+(y-x) f^{\prime}(x)+(y-x)^{2} \int_{0}^{1}(1-s) f^{\prime \prime}(x+s(y-x)) d s" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>x</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>s</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>f</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>s</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">f(y)=f(x)+(y-x) f^{\prime}(x)+(y-x)^{2} \int_{0}^{1}(1-s) f^{\prime \prime}(x+s(y-x)) d s</annotation></semantics></math></p>
+<p>Extend
+<math role="math" aria-label="\psi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&psi;</mi><annotation encoding="application/x-tex">\psi</annotation></semantics></math>
+to
+<math role="math" aria-label="[0, \infty) \times \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo><mo>&times;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">[0, \infty) \times \mathbb{R}</annotation></semantics></math>
+by letting
+<math role="math" aria-label="\psi(0, x)=f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&psi;</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\psi(0, x)=f(x)</annotation></semantics></math>
+for all
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>.
+Show that the heat equation continues to hold for this extension with
+<math role="math" aria-label="\frac{\partial}{\partial t}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mi>&part;</mi><mrow><mi>&part;</mi><mi>t</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{\partial}{\partial t}</annotation></semantics></math>
+derivatives at
+<math role="math" aria-label="t=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t=0</annotation></semantics></math>
+understood as right-derivatives. Hint: use the previous Taylor formula
+and a suitable change of variable in order to establish the identity</p>
+<p><math role="math" aria-label="\frac{\psi(t, x)-\psi(0, x)}{t}=\frac{1}{2 \sqrt{\pi}} \int_{[0,1]} \int_{\mathbb{R}} z^{2} e^{-\frac{z^{2}}{4}}(1-s) f^{\prime \prime}(x+s \sqrt{t} z) d z d s" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>&psi;</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>&psi;</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>t</mi></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><msqrt><mi>&pi;</mi></msqrt></mrow></mfrac><msub><mo>&int;</mo><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow></msub><msub><mo>&int;</mo><mi>&Ropf;</mi></msub><msup><mi>z</mi><mn>2</mn></msup><msup><mi>e</mi><mrow><mi>−</mi><mfrac><msup><mi>z</mi><mn>2</mn></msup><mn>4</mn></mfrac></mrow></msup><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>−</mo><mi>s</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>f</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mi>s</mi><msqrt><mi>t</mi></msqrt><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>z</mi><mi>d</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">\frac{\psi(t, x)-\psi(0, x)}{t}=\frac{1}{2 \sqrt{\pi}} \int_{[0,1]} \int_{\mathbb{R}} z^{2} e^{-\frac{z^{2}}{4}}(1-s) f^{\prime \prime}(x+s \sqrt{t} z) d z d s</annotation></semantics></math></p>
+<p>for
+<math role="math" aria-label="t&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">t&gt;0</annotation></semantics></math>.</p>
+</main>
+</body>
+</html>

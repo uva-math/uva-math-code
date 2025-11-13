@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Analysis General Exam, August 2013 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Current Exam</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1>Analysis General Exam, August 2013</h1>
+
+<p>Name:
+<math role="math" aria-label="\_\_\_\_" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>_</mi><mi>_</mi><mi>_</mi><mi>_</mi></mrow><annotation encoding="application/x-tex">\_\_\_\_</annotation></semantics></math></p>
+<p>Pledge:
+<math role="math" aria-label="\_\_\_\_" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>_</mi><mi>_</mi><mi>_</mi><mi>_</mi></mrow><annotation encoding="application/x-tex">\_\_\_\_</annotation></semantics></math></p>
+<p>Signature:
+<math role="math" aria-label="\_\_\_\_" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>_</mi><mi>_</mi><mi>_</mi><mi>_</mi></mrow><annotation encoding="application/x-tex">\_\_\_\_</annotation></semantics></math><br />
+Instructions. 4 hours. To get credit for a problem, you must carefully
+justify all (nontrivial) claims and show all calculations. You may use
+without proof anything that is proved in the texts by Folland and Bak
+and Newman, or other standard reference. If you do so, either refer to
+the theorem by name (if it has one) or give its statement; also verify
+explicitly all of its hypotheses. You may not cite a statement you are
+explicitly asked to prove, or facts that were given as exercises or
+homework.</p>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pr</th>
+<th style="text-align: left;">Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Find</p>
+<p><math role="math" aria-label="\int_{\gamma_{R}} \frac{z}{\sqrt{(z-a)(z-b)}} d z" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><msub><mi>&gamma;</mi><mi>R</mi></msub></msub><mfrac><mi>z</mi><msqrt><mrow><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo>−</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo>−</mo><mi>b</mi><mo stretchy="false" form="postfix">)</mo></mrow></msqrt></mfrac><mi>d</mi><mi>z</mi></mrow><annotation encoding="application/x-tex">\int_{\gamma_{R}} \frac{z}{\sqrt{(z-a)(z-b)}} d z</annotation></semantics></math></p>
+<p>Here
+<math role="math" aria-label="\gamma_{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&gamma;</mi><mi>R</mi></msub><annotation encoding="application/x-tex">\gamma_{R}</annotation></semantics></math>
+is the circle of radius
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+traversed counter-clockwise and
+<math role="math" aria-label="R&gt;\operatorname{Max}(|a|,|b|)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>&gt;</mo><mrow><mi mathvariant="normal">Max</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>a</mi><mo stretchy="false" form="prefix">|</mo><mo>,</mo><mo stretchy="false" form="prefix">|</mo><mi>b</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">R&gt;\operatorname{Max}(|a|,|b|)</annotation></semantics></math>.
+The square root is defined to be continuous for
+<math role="math" aria-label="|z|&gt;\operatorname{Max}(|a|,|b|)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&gt;</mo><mrow><mi mathvariant="normal">Max</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>a</mi><mo stretchy="false" form="prefix">|</mo><mo>,</mo><mo stretchy="false" form="prefix">|</mo><mi>b</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">|z|&gt;\operatorname{Max}(|a|,|b|)</annotation></semantics></math>
+and such that the integrand has limit 1 as
+<math role="math" aria-label="|z| \rightarrow \infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&rarr;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">|z| \rightarrow \infty</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Suppose
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is an entire function satisfying</p>
+<p><math role="math" aria-label="|f(z)| \leq C\left(|z|^{3}+1\right) / \ln (|z|+2)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mi>C</mi><mrow><mo stretchy="true" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><msup><mo stretchy="false" form="prefix">|</mo><mn>3</mn></msup><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>/</mi><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">|f(z)| \leq C\left(|z|^{3}+1\right) / \ln (|z|+2)</annotation></semantics></math></p>
+<p>Show that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is a polynomial of degree at most two. You can assume the validity of
+Cauchy's integral formula for derivatives.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>(a) Given
+<math role="math" aria-label="a \in D:=\{z:|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&isin;</mo><mi>D</mi><mo>:=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">a \in D:=\{z:|z|&lt;1\}</annotation></semantics></math>,
+show that there is an analytic function
+<math role="math" aria-label="f: D \rightarrow D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>D</mi><mo>&rarr;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">f: D \rightarrow D</annotation></semantics></math>
+such that</p>
+<p><math role="math" aria-label="\left|f^{\prime \prime}(a)\right|=\operatorname{Max}\left\{\left|g^{\prime \prime}(a)\right|: g \text { is analytic in } D \text { and } g: D \rightarrow D\right\} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msup><mi>f</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><mrow><mi mathvariant="normal">Max</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">{</mo><mrow><mo stretchy="true" form="prefix">|</mo><msup><mi>g</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>:</mo><mi>g</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> is analytic in </mtext><mspace width="0.333em"></mspace></mrow><mi>D</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> and </mtext><mspace width="0.333em"></mspace></mrow><mi>g</mi><mo>:</mo><mi>D</mi><mo>&rarr;</mo><mi>D</mi><mo stretchy="true" form="postfix">}</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">\left|f^{\prime \prime}(a)\right|=\operatorname{Max}\left\{\left|g^{\prime \prime}(a)\right|: g \text { is analytic in } D \text { and } g: D \rightarrow D\right\} .</annotation></semantics></math></p>
+<p>Make sure you check that
+<math role="math" aria-label="f: D \rightarrow D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>D</mi><mo>&rarr;</mo><mi>D</mi></mrow><annotation encoding="application/x-tex">f: D \rightarrow D</annotation></semantics></math>
+?<br />
+(b) Suppose that the second derivative in (a) is replaced by the first
+(i.e.
+<math role="math" aria-label="f^{\prime \prime} \rightarrow f^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><mo>&rarr;</mo><msup><mi>f</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">f^{\prime \prime} \rightarrow f^{\prime}</annotation></semantics></math>
+and
+<math role="math" aria-label="g^{\prime \prime} \rightarrow g^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>g</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><mo>&rarr;</mo><msup><mi>g</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">g^{\prime \prime} \rightarrow g^{\prime}</annotation></semantics></math>
+). Show that the function
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+would then satisfy
+<math role="math" aria-label="f(a)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(a)=0</annotation></semantics></math>.
+You may want to make use of the function</p>
+<p><math role="math" aria-label="g(z)=\frac{f(z)-f(a)}{1-f(z) \bar{f}(a)}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mn>1</mn><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mover><mi>f</mi><mo accent="true">‾</mo></mover><mo stretchy="false" form="prefix">(</mo><mi>a</mi><mo stretchy="false" form="postfix">)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">g(z)=\frac{f(z)-f(a)}{1-f(z) \bar{f}(a)}</annotation></semantics></math></p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Consider the polynomial</p>
+<p><math role="math" aria-label="P(z)=z^{84}+17 z^{54}+68 z^{4}+z^{3}-z+1" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>z</mi><mn>84</mn></msup><mo>+</mo><mn>17</mn><msup><mi>z</mi><mn>54</mn></msup><mo>+</mo><mn>68</mn><msup><mi>z</mi><mn>4</mn></msup><mo>+</mo><msup><mi>z</mi><mn>3</mn></msup><mo>−</mo><mi>z</mi><mo>+</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">P(z)=z^{84}+17 z^{54}+68 z^{4}+z^{3}-z+1</annotation></semantics></math></p>
+<p>(a) How many zeros does
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+have in the disk of radius 1 ?<br />
+(b) How many zeros does
+<math role="math" aria-label="P" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>P</mi><annotation encoding="application/x-tex">P</annotation></semantics></math>
+have in the disk of radius 2 ?</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Consider the functions
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+defined by</p>
+<p><math role="math" aria-label="f(x)=\int_{0}^{1} \frac{e^{-x^{2}\left(1+t^{2}\right)}}{1+t^{2}} d t \quad \text { and } \quad g(x)=\left(\int_{0}^{x} e^{-t^{2}} d t\right)^{2}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mfrac><msup><mi>e</mi><mrow><mi>−</mi><msup><mi>x</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><msup><mi>t</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msup><mrow><mn>1</mn><mo>+</mo><msup><mi>t</mi><mn>2</mn></msup></mrow></mfrac><mi>d</mi><mi>t</mi><mspace width="1.0em"></mspace><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> and </mtext><mspace width="0.333em"></mspace></mrow><mspace width="1.0em"></mspace><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>x</mi></msubsup><msup><mi>e</mi><mrow><mi>−</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></msup><mi>d</mi><mi>t</mi><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=\int_{0}^{1} \frac{e^{-x^{2}\left(1+t^{2}\right)}}{1+t^{2}} d t \quad \text { and } \quad g(x)=\left(\int_{0}^{x} e^{-t^{2}} d t\right)^{2}</annotation></semantics></math></p>
+<p>(a) Prove that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is differentiable with continuous derivative and show that the latter
+satisfies
+<math role="math" aria-label="f^{\prime}=-g^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>′</mi></msup><mo>=</mo><mi>−</mi><msup><mi>g</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">f^{\prime}=-g^{\prime}</annotation></semantics></math>.<br />
+(b) By a careful comparison of the values of
+<math role="math" aria-label="f(x)+g(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)+g(x)</annotation></semantics></math>
+at 0 and
+<math role="math" aria-label="\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&infin;</mi><annotation encoding="application/x-tex">\infty</annotation></semantics></math>
+prove that</p>
+<p><math role="math" aria-label="\int_{0}^{\infty} e^{-t^{2}} d t=\frac{\sqrt{\pi}}{2}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><msup><mi>e</mi><mrow><mi>−</mi><msup><mi>t</mi><mn>2</mn></msup></mrow></msup><mi>d</mi><mi>t</mi><mo>=</mo><mfrac><msqrt><mi>&pi;</mi></msqrt><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty} e^{-t^{2}} d t=\frac{\sqrt{\pi}}{2}</annotation></semantics></math></p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>In this problem we consider Euler's Gamma Function defined for
+<math role="math" aria-label="x \in(0, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">x \in(0, \infty)</annotation></semantics></math>
+by
+<math role="math" aria-label="\Gamma(x)= \int_{0}^{\infty} t^{x-1} e^{-t} d t" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Gamma;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><msup><mi>t</mi><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msup><msup><mi>e</mi><mrow><mi>−</mi><mi>t</mi></mrow></msup><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">\Gamma(x)= \int_{0}^{\infty} t^{x-1} e^{-t} d t</annotation></semantics></math>.<br />
+(a) Use the change of variable
+<math role="math" aria-label="t=x(1+u)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">t=x(1+u)</annotation></semantics></math>
+in order to express
+<math role="math" aria-label="\Gamma(x+1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Gamma;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\Gamma(x+1)</annotation></semantics></math>
+in terms of the integral
+<math role="math" aria-label="\int_{-1}^{\infty} e^{-x \phi(u)} d u" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mn>1</mn></mrow><mi>&infin;</mi></msubsup><msup><mi>e</mi><mrow><mi>−</mi><mi>x</mi><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mi>d</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">\int_{-1}^{\infty} e^{-x \phi(u)} d u</annotation></semantics></math>
+where
+<math role="math" aria-label="\phi(u)=u-\log (1+u)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>u</mi><mo>−</mo><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\phi(u)=u-\log (1+u)</annotation></semantics></math>.
+(The only logarithm we use is the Neperian one)<br />
+(b) Show there is an
+<math role="math" aria-label="\epsilon \in(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\epsilon \in(0,1)</annotation></semantics></math>
+such that
+<math role="math" aria-label="\phi(u) \geq \frac{u^{2}}{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo><mo>&ge;</mo><mfrac><msup><mi>u</mi><mn>2</mn></msup><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\phi(u) \geq \frac{u^{2}}{4}</annotation></semantics></math>
+for
+<math role="math" aria-label="u \in[-\epsilon, \epsilon]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mi>−</mi><mi>ϵ</mi><mo>,</mo><mi>ϵ</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">u \in[-\epsilon, \epsilon]</annotation></semantics></math>.
+For that fixed
+<math role="math" aria-label="\epsilon" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math>,
+and using the formula derived at the end of the previous problem, prove
+that</p></li>
+</ol>
+<p><math role="math" aria-label="\lim _{x \rightarrow \infty} \int_{-\epsilon \sqrt{x}}^{\epsilon \sqrt{x}} e^{-x \phi\left(\frac{z}{\sqrt{x}}\right)} d z=\sqrt{2 \pi}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>x</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>ϵ</mi><msqrt><mi>x</mi></msqrt></mrow><mrow><mi>ϵ</mi><msqrt><mi>x</mi></msqrt></mrow></msubsup><msup><mi>e</mi><mrow><mi>−</mi><mi>x</mi><mi>ϕ</mi><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>z</mi><msqrt><mi>x</mi></msqrt></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msup><mi>d</mi><mi>z</mi><mo>=</mo><msqrt><mrow><mn>2</mn><mi>&pi;</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">\lim _{x \rightarrow \infty} \int_{-\epsilon \sqrt{x}}^{\epsilon \sqrt{x}} e^{-x \phi\left(\frac{z}{\sqrt{x}}\right)} d z=\sqrt{2 \pi}</annotation></semantics></math></p>
+<p>(c) For the same fixed
+<math role="math" aria-label="\epsilon" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϵ</mi><annotation encoding="application/x-tex">\epsilon</annotation></semantics></math>,
+show that
+<math role="math" aria-label="\int_{-1}^{-\epsilon} e^{-x \phi(u)} d u" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mn>1</mn></mrow><mrow><mi>−</mi><mi>ϵ</mi></mrow></msubsup><msup><mi>e</mi><mrow><mi>−</mi><mi>x</mi><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mi>d</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">\int_{-1}^{-\epsilon} e^{-x \phi(u)} d u</annotation></semantics></math>
+and
+<math role="math" aria-label="\int_{\epsilon}^{\infty} e^{-x \phi(u)} d u" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mi>ϵ</mi><mi>&infin;</mi></msubsup><msup><mi>e</mi><mrow><mi>−</mi><mi>x</mi><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>u</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mi>d</mi><mi>u</mi></mrow><annotation encoding="application/x-tex">\int_{\epsilon}^{\infty} e^{-x \phi(u)} d u</annotation></semantics></math>
+satisfy bounds of the form
+<math role="math" aria-label="A e^{-c x}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><msup><mi>e</mi><mrow><mi>−</mi><mi>c</mi><mi>x</mi></mrow></msup></mrow><annotation encoding="application/x-tex">A e^{-c x}</annotation></semantics></math>
+for suitable positive constants
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="c" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.
+(Convexity helps)<br />
+(d) From the previous considerations deduce Stirling’s asymptotic
+formula</p>
+<p><math role="math" aria-label="\Gamma(x+1)=\left(\frac{x}{e}\right)^{x} \sqrt{2 \pi x}(1+o(1))" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Gamma;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>x</mi><mi>e</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>x</mi></msup><msqrt><mrow><mn>2</mn><mi>&pi;</mi><mi>x</mi></mrow></msqrt><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>o</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\Gamma(x+1)=\left(\frac{x}{e}\right)^{x} \sqrt{2 \pi x}(1+o(1))</annotation></semantics></math></p>
+<p>where
+<math role="math" aria-label="o(1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>o</mi><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">o(1)</annotation></semantics></math>
+means some function of
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+that goes to zero when
+<math role="math" aria-label="x \rightarrow \infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">x \rightarrow \infty</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>Let (
+<math role="math" aria-label="X, \mathcal{M}, \mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>ℳ</mi><mo>,</mo><mi>&mu;</mi></mrow><annotation encoding="application/x-tex">X, \mathcal{M}, \mu</annotation></semantics></math>
+) be a measure space and let
+<math role="math" aria-label="f: X \rightarrow[0, \infty]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f: X \rightarrow[0, \infty]</annotation></semantics></math>
+be a measurable function.<br />
+(a) Show that the map
+<math role="math" aria-label="[0, \infty) \rightarrow[0, \infty]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0, \infty) \rightarrow[0, \infty]</annotation></semantics></math>
+given by
+<math role="math" aria-label="t \mapsto \mu(\{x \mid f(x)&gt;t\})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>&map;</mo><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>∣</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi>t</mi><mo stretchy="false" form="postfix">}</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">t \mapsto \mu(\{x \mid f(x)&gt;t\})</annotation></semantics></math>
+is measurable.<br />
+(b) By first considering the case where
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is a simple function and then using monotone convergence prove that</p>
+<p><math role="math" aria-label="\int_{X} f d \mu=\int_{[0, \infty)} \mu(\{x \in X \mid f(x)&gt;t\}) d m(t)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mi>X</mi></msub><mi>f</mi><mi>d</mi><mi>&mu;</mi><mo>=</mo><msub><mo>&int;</mo><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow></msub><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>&isin;</mo><mi>X</mi><mo>∣</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi>t</mi><mo stretchy="false" form="postfix">}</mo><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\int_{X} f d \mu=\int_{[0, \infty)} \mu(\{x \in X \mid f(x)&gt;t\}) d m(t)</annotation></semantics></math></p>
+<p>(c) Using a suitable countable decomposition, show that</p>
+<p><math role="math" aria-label="\{(x, t) \in X \times[0, \infty) \mid f(x)&gt;t\} \in \mathcal{M} \otimes \mathcal{B}_{[0, \infty)}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>X</mi><mo>&times;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo><mo>∣</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mi>t</mi><mo stretchy="false" form="postfix">}</mo><mo>&isin;</mo><mi>ℳ</mi><mo>&otimes;</mo><msub><mi>ℬ</mi><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow></msub></mrow><annotation encoding="application/x-tex">\{(x, t) \in X \times[0, \infty) \mid f(x)&gt;t\} \in \mathcal{M} \otimes \mathcal{B}_{[0, \infty)}</annotation></semantics></math></p>
+<p>Use this fact to derive an alternate proof of (*) when
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+is
+<math role="math" aria-label="\sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&sigma;</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-finite.</p>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>Let (
+<math role="math" aria-label="X, \mathcal{M}, \mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>ℳ</mi><mo>,</mo><mi>&mu;</mi></mrow><annotation encoding="application/x-tex">X, \mathcal{M}, \mu</annotation></semantics></math>
+) be a
+<math role="math" aria-label="\sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&sigma;</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-finite
+measure space and consider the real Hilbert space
+<math role="math" aria-label="\mathcal{H}= L^{2}(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℋ</mi><mo>=</mo><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{H}= L^{2}(X)</annotation></semantics></math>
+of real-valued square-integrable functions. Let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be a measurable function
+<math role="math" aria-label="X \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">X \rightarrow \mathbb{R}</annotation></semantics></math>
+with finite
+<math role="math" aria-label="L^{\infty}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mi>&infin;</mi></msup><annotation encoding="application/x-tex">L^{\infty}</annotation></semantics></math>
+norm.<br />
+(a) Show that the map
+<math role="math" aria-label="T_{f}: \mathcal{H} \rightarrow \mathcal{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>f</mi></msub><mo>:</mo><mi>ℋ</mi><mo>&rarr;</mo><mi>ℋ</mi></mrow><annotation encoding="application/x-tex">T_{f}: \mathcal{H} \rightarrow \mathcal{H}</annotation></semantics></math>
+defined by pointwise multiplication
+<math role="math" aria-label="g \mapsto f g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&map;</mo><mi>f</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">g \mapsto f g</annotation></semantics></math>
+is well-defined, linear continuous and satisfies
+<math role="math" aria-label="\left\|T_{f}\right\|=\|f\|_{\infty}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">&parallel;</mo><msub><mi>T</mi><mi>f</mi></msub><mo stretchy="true" form="postfix">&parallel;</mo></mrow><mo>=</mo><mo stretchy="false" form="postfix">&parallel;</mo><mi>f</mi><msub><mo stretchy="false" form="postfix">&parallel;</mo><mi>&infin;</mi></msub></mrow><annotation encoding="application/x-tex">\left\|T_{f}\right\|=\|f\|_{\infty}</annotation></semantics></math>.<br />
+(b) A number
+<math role="math" aria-label="\lambda \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\lambda \in \mathbb{R}</annotation></semantics></math>
+is called an eigenvalue of
+<math role="math" aria-label="T_{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>f</mi></msub><annotation encoding="application/x-tex">T_{f}</annotation></semantics></math>
+iff there exists
+<math role="math" aria-label="g \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">g \neq 0</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathcal{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℋ</mi><annotation encoding="application/x-tex">\mathcal{H}</annotation></semantics></math>
+such that
+<math role="math" aria-label="T_{f}(g)=\lambda g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>f</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>&lambda;</mi><mi>g</mi></mrow><annotation encoding="application/x-tex">T_{f}(g)=\lambda g</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="\lambda" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&lambda;</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+is an eigenvalue of
+<math role="math" aria-label="T_{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>f</mi></msub><annotation encoding="application/x-tex">T_{f}</annotation></semantics></math>
+iff
+<math role="math" aria-label="\mu\left(X_{\lambda}\right)&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>X</mi><mi>&lambda;</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mu\left(X_{\lambda}\right)&gt;0</annotation></semantics></math>
+where
+<math role="math" aria-label="X_{\lambda}=\{x \in X \mid f(x)=\lambda\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>&lambda;</mi></msub><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>&isin;</mo><mi>X</mi><mo>∣</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">X_{\lambda}=\{x \in X \mid f(x)=\lambda\}</annotation></semantics></math>.<br />
+(c) Show that the set of eigenvalues for
+<math role="math" aria-label="T_{f}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>f</mi></msub><annotation encoding="application/x-tex">T_{f}</annotation></semantics></math>
+is at most countable.</p>
+</main>
+</body>
+</html>

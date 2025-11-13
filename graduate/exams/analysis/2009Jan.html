@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Analysis
+General Exam, January 2009 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Analysis
+General Exam, January 2009</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="analysis-general-exam-january-2009">Analysis
+General Exam, January 2009</h1>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Let
+<math role="math" aria-label="f: \mathbb{R} \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>&Ropf;</mi><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">f: \mathbb{R} \rightarrow \mathbb{R}</annotation></semantics></math>
+be a bounded real function.<br />
+(a) Fix
+<math role="math" aria-label="\delta&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&delta;</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\delta&gt;0</annotation></semantics></math>,
+and for every
+<math role="math" aria-label="\alpha \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\alpha \in \mathbb{R}</annotation></semantics></math>
+consider the set</p>
+<p><math role="math" aria-label="U_{\alpha}:=\{x \in \mathbb{R}: \sup \{f(y): y \in \mathbb{R},|y-x|&lt;\delta\}&gt;\alpha\} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>&alpha;</mi></msub><mo>:=</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>&isin;</mo><mi>&Ropf;</mi><mo>:</mo><mrow><mi mathvariant="normal">sup</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">{</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>y</mi><mo>&isin;</mo><mi>&Ropf;</mi><mo>,</mo><mo stretchy="false" form="prefix">|</mo><mi>y</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mi>&delta;</mi><mo stretchy="false" form="postfix">}</mo><mo>&gt;</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">}</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">U_{\alpha}:=\{x \in \mathbb{R}: \sup \{f(y): y \in \mathbb{R},|y-x|&lt;\delta\}&gt;\alpha\} .</annotation></semantics></math></p>
+<p>Show that for every
+<math role="math" aria-label="\alpha \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\alpha \in \mathbb{R}</annotation></semantics></math>
+the set
+<math role="math" aria-label="U_{\alpha}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>U</mi><mi>&alpha;</mi></msub><annotation encoding="application/x-tex">U_{\alpha}</annotation></semantics></math>
+is open.<br />
+(b) Let
+<math role="math" aria-label="u: \mathbb{R} \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>:</mo><mi>&Ropf;</mi><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">u: \mathbb{R} \rightarrow \mathbb{R}</annotation></semantics></math>
+be given by</p>
+<p><math role="math" aria-label="u(x):=\lim _{\delta \rightarrow 0}(\sup \{f(y): y \in \mathbb{R},|y-x|&lt;\delta\})" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><munder><mi mathvariant="normal">lim</mi><mrow><mi>&delta;</mi><mo>&rarr;</mo><mn>0</mn></mrow></munder><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">sup</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">{</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>y</mi><mo>&isin;</mo><mi>&Ropf;</mi><mo>,</mo><mo stretchy="false" form="prefix">|</mo><mi>y</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mi>&delta;</mi><mo stretchy="false" form="postfix">}</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">u(x):=\lim _{\delta \rightarrow 0}(\sup \{f(y): y \in \mathbb{R},|y-x|&lt;\delta\})</annotation></semantics></math></p>
+<p>Show that the function
+<math role="math" aria-label="u" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>u</mi><annotation encoding="application/x-tex">u</annotation></semantics></math>
+is well-defined and Lebesgue measurable.<br />
+Similarly, define</p>
+<p><math role="math" aria-label="l(x):=\lim _{\delta \rightarrow 0}(\inf \{f(y): y \in \mathbb{R},|y-x|&lt;\delta\})" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><munder><mi mathvariant="normal">lim</mi><mrow><mi>&delta;</mi><mo>&rarr;</mo><mn>0</mn></mrow></munder><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">inf</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">{</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>y</mi><mo>&isin;</mo><mi>&Ropf;</mi><mo>,</mo><mo stretchy="false" form="prefix">|</mo><mi>y</mi><mo>−</mo><mi>x</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mi>&delta;</mi><mo stretchy="false" form="postfix">}</mo><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">l(x):=\lim _{\delta \rightarrow 0}(\inf \{f(y): y \in \mathbb{R},|y-x|&lt;\delta\})</annotation></semantics></math></p>
+<p>which, by the same arguments, will also be well-defined and Lebesgue
+measurable.<br />
+(c) Show that the set of points where the function
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is continuous is measurable.</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Let
+<math role="math" aria-label="f:[0,1] \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">f:[0,1] \rightarrow \mathbb{R}</annotation></semantics></math>
+be a bounded, Lebesgue measurable function such that</p>
+<p><math role="math" aria-label="\int_{[0,1]} f(x) x^{k} d x=\frac{1}{k+4}, \quad \text { for } \quad k=0,1,2, \ldots" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow></msub><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><msup><mi>x</mi><mi>k</mi></msup><mi>d</mi><mi>x</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mi>k</mi><mo>+</mo><mn>4</mn></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for </mtext><mspace width="0.333em"></mspace></mrow><mspace width="1.0em"></mspace><mi>k</mi><mo>=</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">\int_{[0,1]} f(x) x^{k} d x=\frac{1}{k+4}, \quad \text { for } \quad k=0,1,2, \ldots</annotation></semantics></math></p>
+<p>Show that
+<math role="math" aria-label="f(x)=x^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>x</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">f(x)=x^{3}</annotation></semantics></math>
+a.e. on
+<math role="math" aria-label="[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,1]</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Let
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+be a Lebesgue measurable subset of
+<math role="math" aria-label="[0,2] \times[0,2]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">]</mo><mo>&times;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">[0,2] \times[0,2]</annotation></semantics></math>.
+For each
+<math role="math" aria-label="x \in[0,2]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">x \in[0,2]</annotation></semantics></math>
+set
+<math role="math" aria-label="F^{x}:=\{y \in[0,2]:(x, y) \in F\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>F</mi><mi>x</mi></msup><mo>:=</mo><mo stretchy="false" form="prefix">{</mo><mi>y</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">]</mo><mo>:</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>F</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">F^{x}:=\{y \in[0,2]:(x, y) \in F\}</annotation></semantics></math>
+and for each
+<math role="math" aria-label="y \in[0,2]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">y \in[0,2]</annotation></semantics></math>
+let
+<math role="math" aria-label="F_{y}:=\{x \in[0,2]:(x, y) \in F\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>F</mi><mi>y</mi></msub><mo>:=</mo><mo stretchy="false" form="prefix">{</mo><mi>x</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">]</mo><mo>:</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>F</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">F_{y}:=\{x \in[0,2]:(x, y) \in F\}</annotation></semantics></math>.
+Show that if
+<math role="math" aria-label="\left|F^{x}\right| \leq \frac{1}{8}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msup><mi>F</mi><mi>x</mi></msup><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><mfrac><mn>1</mn><mn>8</mn></mfrac></mrow><annotation encoding="application/x-tex">\left|F^{x}\right| \leq \frac{1}{8}</annotation></semantics></math>
+then</p>
+<p><math role="math" aria-label="\left|\left\{y \in[0,2]:\left|F_{y}\right| \geq 1\right\}\right| \leq \frac{1}{4}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>y</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mo stretchy="false" form="postfix">]</mo><mo>:</mo><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>F</mi><mi>y</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>&ge;</mo><mn>1</mn><mo stretchy="true" form="postfix">}</mo></mrow><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><mfrac><mn>1</mn><mn>4</mn></mfrac></mrow><annotation encoding="application/x-tex">\left|\left\{y \in[0,2]:\left|F_{y}\right| \geq 1\right\}\right| \leq \frac{1}{4}</annotation></semantics></math></p>
+<p>Here, if
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+is a Lebesgue measurable subset of
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>,
+we denote by
+<math role="math" aria-label="|E|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>E</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|E|</annotation></semantics></math>
+its Lebesgue measure.</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Let
+<math role="math" aria-label="\left\{f_{n}\right\}_{n \in \mathbb{N}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow></msub><annotation encoding="application/x-tex">\left\{f_{n}\right\}_{n \in \mathbb{N}}</annotation></semantics></math>
+be a sequence of functions such that, for each
+<math role="math" aria-label="n \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">n \in \mathbb{N}</annotation></semantics></math>
+we have
+<math role="math" aria-label="f_{n}: \mathbb{R} \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>:</mo><mi>&Ropf;</mi><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">f_{n}: \mathbb{R} \rightarrow \mathbb{R}</annotation></semantics></math>
+and
+<math role="math" aria-label="f_{n} \in L^{2}(\mathbb{R}, d x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>&isin;</mo><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo>,</mo><mi>d</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{n} \in L^{2}(\mathbb{R}, d x)</annotation></semantics></math>.
+Assume that for every
+<math role="math" aria-label="m, n \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">m, n \in \mathbb{N}</annotation></semantics></math>
+such that
+<math role="math" aria-label="m \geq n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&ge;</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">m \geq n</annotation></semantics></math>
+one has that</p>
+<p><math role="math" aria-label="\left\|f_{n}-f_{m}\right\|_{2}&lt;2^{-n}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo stretchy="true" form="prefix">&parallel;</mo><msub><mi>f</mi><mi>n</mi></msub><mo>−</mo><msub><mi>f</mi><mi>m</mi></msub><mo stretchy="true" form="postfix">&parallel;</mo></mrow><mn>2</mn></msub><mo>&lt;</mo><msup><mn>2</mn><mrow><mi>−</mi><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\left\|f_{n}-f_{m}\right\|_{2}&lt;2^{-n}</annotation></semantics></math></p>
+<p>where generically,
+<math role="math" aria-label="\|g\|_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">&parallel;</mo><mi>g</mi><msub><mo stretchy="false" form="postfix">&parallel;</mo><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\|g\|_{2}</annotation></semantics></math>
+denotes the
+<math role="math" aria-label="L^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>2</mn></msup><annotation encoding="application/x-tex">L^{2}</annotation></semantics></math>-norm
+of the function
+<math role="math" aria-label="g \in L^{2}(\mathbb{R}, d x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&isin;</mo><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo>,</mo><mi>d</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g \in L^{2}(\mathbb{R}, d x)</annotation></semantics></math>.<br />
+(a) Show that the sequence
+<math role="math" aria-label="\left\{f_{n}\right\}_{n \in \mathbb{N}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow></msub><annotation encoding="application/x-tex">\left\{f_{n}\right\}_{n \in \mathbb{N}}</annotation></semantics></math>
+converges point-wise a.e. on
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="\left\{u_{n}\right\}_{n \in \mathbb{N}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>u</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow></msub><annotation encoding="application/x-tex">\left\{u_{n}\right\}_{n \in \mathbb{N}}</annotation></semantics></math>
+be an orthonormal set of functions, also in
+<math role="math" aria-label="L^{2}(\mathbb{R}, d x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo>,</mo><mi>d</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{2}(\mathbb{R}, d x)</annotation></semantics></math>.
+Does the series</p>
+<p><math role="math" aria-label="\sum_{n=1}^{\infty} \frac{u_{n}(x)}{2^{n}}, \quad x \in \mathbb{R}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><mfrac><mrow><msub><mi>u</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><msup><mn>2</mn><mi>n</mi></msup></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mi>x</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty} \frac{u_{n}(x)}{2^{n}}, \quad x \in \mathbb{R}</annotation></semantics></math></p>
+<p>converge point-wise a.e. on
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+?<br />
+(c) If
+<math role="math" aria-label="x \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">x \in \mathbb{R}</annotation></semantics></math>
+is a point where the series from (1) converges we denote by
+<math role="math" aria-label="F(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F(x)</annotation></semantics></math>
+its value. Show that
+<math role="math" aria-label="F \in L^{2}(\mathbb{R}, d x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>&isin;</mo><msup><mi>L</mi><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo>,</mo><mi>d</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F \in L^{2}(\mathbb{R}, d x)</annotation></semantics></math>
+and compute its norm
+<math role="math" aria-label="\|F\|_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">&parallel;</mo><mi>F</mi><msub><mo stretchy="false" form="postfix">&parallel;</mo><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\|F\|_{2}</annotation></semantics></math>
+explicitly.</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>(a) Compute the integral</p>
+<p><math role="math" aria-label="I(r)=\int_{0}^{\infty} \frac{d x}{1+x^{r}}, \quad \text { where } \quad r&gt;1" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi><mo stretchy="false" form="prefix">(</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mfrac><mrow><mi>d</mi><mi>x</mi></mrow><mrow><mn>1</mn><mo>+</mo><msup><mi>x</mi><mi>r</mi></msup></mrow></mfrac><mo>,</mo><mspace width="1.0em"></mspace><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> where </mtext><mspace width="0.333em"></mspace></mrow><mspace width="1.0em"></mspace><mi>r</mi><mo>&gt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">I(r)=\int_{0}^{\infty} \frac{d x}{1+x^{r}}, \quad \text { where } \quad r&gt;1</annotation></semantics></math></p>
+<p>Hint: Use contour integral techniques. More specifically, consider a
+contour integral over
+<math role="math" aria-label="[0, \infty) \cup\left\{z \in \mathbb{C}: z=t e^{2 \pi i / r}, t \in[0, \infty)\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo><mo>&cup;</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mi>z</mi><mo>=</mo><mi>t</mi><msup><mi>e</mi><mrow><mn>2</mn><mi>&pi;</mi><mi>i</mi><mi>/</mi><mi>r</mi></mrow></msup><mo>,</mo><mi>t</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">[0, \infty) \cup\left\{z \in \mathbb{C}: z=t e^{2 \pi i / r}, t \in[0, \infty)\right\}</annotation></semantics></math>.<br />
+(b) Compute</p>
+<p><math role="math" aria-label="\lim _{r \rightarrow \infty} I(r)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>r</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><mi>I</mi><mo stretchy="false" form="prefix">(</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\lim _{r \rightarrow \infty} I(r)</annotation></semantics></math></p>
+<p>either directly by examining the limit of the integral above, or by
+using your answer to part (a).</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Let
+<math role="math" aria-label="D_{+}:=\{z \in \mathbb{C}: \operatorname{Re} z&gt;0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mo>+</mo></msub><mo>:=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mrow><mi mathvariant="normal">Re</mi><mo>&#8289;</mo></mrow><mi>z</mi><mo>&gt;</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">D_{+}:=\{z \in \mathbb{C}: \operatorname{Re} z&gt;0\}</annotation></semantics></math>
+be the right half plane and assume that
+<math role="math" aria-label="f: \overline{D_{+}} \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mover><msub><mi>D</mi><mo>+</mo></msub><mo accent="true">¯</mo></mover><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">f: \overline{D_{+}} \rightarrow \mathbb{C}</annotation></semantics></math>
+is analytic in
+<math role="math" aria-label="D_{+}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mo>+</mo></msub><annotation encoding="application/x-tex">D_{+}</annotation></semantics></math>,
+continuous on the closure
+<math role="math" aria-label="\bar{D}_{+}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mover><mi>D</mi><mo accent="true">‾</mo></mover><mo>+</mo></msub><annotation encoding="application/x-tex">\bar{D}_{+}</annotation></semantics></math>of
+<math role="math" aria-label="D_{+}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>D</mi><mo>+</mo></msub><annotation encoding="application/x-tex">D_{+}</annotation></semantics></math>,
+and satisfies</p>
+<p><math role="math" aria-label="|f(z)| \leq\left\{\begin{array}{lll}
+1 &amp; \text { if } &amp; \operatorname{Re} z=0 \\
+\ln |z| &amp; \text { if } &amp; |z| \geq 3
+\end{array}\right." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mrow><mo stretchy="true" form="prefix">{</mo><mtable><mtr><mtd columnalign="left" style="text-align: left"><mn>1</mn></mtd><mtd columnalign="left" style="text-align: left"><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> if </mtext><mspace width="0.333em"></mspace></mrow></mtd><mtd columnalign="left" style="text-align: left"><mrow><mi mathvariant="normal">Re</mi><mo>&#8289;</mo></mrow><mi>z</mi><mo>=</mo><mn>0</mn></mtd></mtr><mtr><mtd columnalign="left" style="text-align: left"><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo></mtd><mtd columnalign="left" style="text-align: left"><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> if </mtext><mspace width="0.333em"></mspace></mrow></mtd><mtd columnalign="left" style="text-align: left"><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&ge;</mo><mn>3</mn></mtd></mtr></mtable></mrow></mrow><annotation encoding="application/x-tex">|f(z)| \leq\left\{\begin{array}{lll}
+1 &amp; \text { if } &amp; \operatorname{Re} z=0 \\
+\ln |z| &amp; \text { if } &amp; |z| \geq 3
+\end{array}\right.</annotation></semantics></math></p>
+<p>Show that in fact</p>
+<p><math role="math" aria-label="|f(z)| \leq 1 \quad \text { in } \quad D_{+}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>1</mn><mspace width="1.0em"></mspace><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> in </mtext><mspace width="0.333em"></mspace></mrow><mspace width="1.0em"></mspace><msub><mi>D</mi><mo>+</mo></msub></mrow><annotation encoding="application/x-tex">|f(z)| \leq 1 \quad \text { in } \quad D_{+}</annotation></semantics></math></p>
+<p>Hint: Consider the function
+<math role="math" aria-label="g_{\varepsilon}: \overline{D_{+}} \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>&epsilon;</mi></msub><mo>:</mo><mover><msub><mi>D</mi><mo>+</mo></msub><mo accent="true">¯</mo></mover><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">g_{\varepsilon}: \overline{D_{+}} \rightarrow \mathbb{C}</annotation></semantics></math>
+given by
+<math role="math" aria-label="g_{\varepsilon}(z)=\frac{f(z)}{(1+z)^{\varepsilon}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>&epsilon;</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>+</mo><mi>z</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>&epsilon;</mi></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">g_{\varepsilon}(z)=\frac{f(z)}{(1+z)^{\varepsilon}}</annotation></semantics></math>
+for
+<math role="math" aria-label="\varepsilon&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&epsilon;</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>Let
+<math role="math" aria-label="\left\{f_{n}\right\}_{n \in \mathbb{N}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow></msub><annotation encoding="application/x-tex">\left\{f_{n}\right\}_{n \in \mathbb{N}}</annotation></semantics></math>
+be a bounded sequence of analytic functions in the unit disk
+<math role="math" aria-label="D:=\{z \in \mathbb{C}:|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>:=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">D:=\{z \in \mathbb{C}:|z|&lt;1\}</annotation></semantics></math>.<br />
+(a) Let
+<math role="math" aria-label="0&lt;r&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>r</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;r&lt;1</annotation></semantics></math>.
+Show that there exist a subsequence
+<math role="math" aria-label="\left\{f_{n_{j}}\right\}_{j \in \mathbb{N}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><msub><mi>n</mi><mi>j</mi></msub></msub><mo stretchy="true" form="postfix">}</mo></mrow><mrow><mi>j</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow></msub><annotation encoding="application/x-tex">\left\{f_{n_{j}}\right\}_{j \in \mathbb{N}}</annotation></semantics></math>
+of the above sequence which converges</p>
+<p><math role="math" aria-label="\lim _{j \rightarrow \infty} f_{n_{j}}(z)=g_{r}(z), \quad z \in D_{r}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>j</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msub><mi>f</mi><msub><mi>n</mi><mi>j</mi></msub></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>g</mi><mi>r</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mspace width="1.0em"></mspace><mi>z</mi><mo>&isin;</mo><msub><mi>D</mi><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">\lim _{j \rightarrow \infty} f_{n_{j}}(z)=g_{r}(z), \quad z \in D_{r}</annotation></semantics></math></p>
+<p>where
+<math role="math" aria-label="D_{r}:=\{z \in \mathbb{C}:|z|&lt;r\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>D</mi><mi>r</mi></msub><mo>:=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mi>r</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">D_{r}:=\{z \in \mathbb{C}:|z|&lt;r\}</annotation></semantics></math>
+and
+<math role="math" aria-label="g_{r}: D_{r} \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>g</mi><mi>r</mi></msub><mo>:</mo><msub><mi>D</mi><mi>r</mi></msub><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">g_{r}: D_{r} \rightarrow \mathbb{C}</annotation></semantics></math>
+is an analytic function.<br />
+(b) Does there exist a subsequence of the given sequence
+<math role="math" aria-label="\left\{f_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{f_{n}\right\}</annotation></semantics></math>
+which converges point-wise to a function
+<math role="math" aria-label="g(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(z)</annotation></semantics></math>
+analytic on
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+?</p>
+</main>
+</body>
+</html>

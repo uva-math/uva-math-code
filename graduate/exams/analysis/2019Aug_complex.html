@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Complex Analysis General Exam - August 2019 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Complex Analysis General Exam - August 2019</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="complex-analysis-general-exam-august-2019">Complex Analysis General Exam - August 2019</h1>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Let
+<math role="math" aria-label="\xi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&xi;</mi><annotation encoding="application/x-tex">\xi</annotation></semantics></math>
+be a nonnegative real number. Compute
+<math role="math" aria-label="\int_{-\infty}^{\infty} \frac{e^{i x \xi}}{x^{2}+1} d x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mfrac><msup><mi>e</mi><mrow><mi>i</mi><mi>x</mi><mi>&xi;</mi></mrow></msup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \frac{e^{i x \xi}}{x^{2}+1} d x</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be an entire function. Suppose that there is an
+<math role="math" aria-label="\alpha \in(0, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\alpha \in(0, \infty)</annotation></semantics></math>
+and a
+<math role="math" aria-label="C&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">C&gt;0</annotation></semantics></math>
+so that
+<math role="math" aria-label="|f(z)| \leq C|z|^{\alpha}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mi>C</mi><mo stretchy="false" form="prefix">|</mo><mi>z</mi><msup><mo stretchy="false" form="prefix">|</mo><mi>&alpha;</mi></msup></mrow><annotation encoding="application/x-tex">|f(z)| \leq C|z|^{\alpha}</annotation></semantics></math>
+for all
+<math role="math" aria-label="|z| \geq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&ge;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|z| \geq 1</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is a polynomial.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be an entire function. Suppose that
+<math role="math" aria-label="\lim _{z \rightarrow \infty} f(z)=\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>z</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">\lim _{z \rightarrow \infty} f(z)=\infty</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is a polynomial.</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Let
+<math role="math" aria-label="\Omega=\{z \in \mathbb{C}: \operatorname{Re}(z)&gt;0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Omega;</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mrow><mi mathvariant="normal">Re</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\Omega=\{z \in \mathbb{C}: \operatorname{Re}(z)&gt;0\}</annotation></semantics></math>.
+Suppose that
+<math role="math" aria-label="f: \bar{\Omega} \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mover><mi mathvariant="normal">&Omega;</mi><mo accent="true">‾</mo></mover><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">f: \bar{\Omega} \rightarrow \mathbb{C}</annotation></semantics></math>
+is continuous, and that
+<math role="math" aria-label="\left.f\right|_{\Omega}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi>f</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi mathvariant="normal">&Omega;</mi></msub><annotation encoding="application/x-tex">\left.f\right|_{\Omega}</annotation></semantics></math>
+is holomorphic. Suppose that
+<math role="math" aria-label="|f(i y)| \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>i</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|f(i y)| \leq 1</annotation></semantics></math>
+for all
+<math role="math" aria-label="y \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">y \in \mathbb{R}</annotation></semantics></math>
+and
+<math role="math" aria-label="|f(z)| \leq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">|f(z)| \leq 2</annotation></semantics></math>
+for all
+<math role="math" aria-label="z \in \Omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><mi mathvariant="normal">&Omega;</mi></mrow><annotation encoding="application/x-tex">z \in \Omega</annotation></semantics></math>.
+Show that in fact
+<math role="math" aria-label="|f(z)| \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">|f(z)| \leq 1</annotation></semantics></math>
+for all
+<math role="math" aria-label="z \in \Omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><mi mathvariant="normal">&Omega;</mi></mrow><annotation encoding="application/x-tex">z \in \Omega</annotation></semantics></math>.</p>
+<p>Hint: For
+<math role="math" aria-label="\varepsilon&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&epsilon;</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math>,
+consider
+<math role="math" aria-label="f_{\varepsilon}(z)=\frac{f(z)}{1+\varepsilon z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>&epsilon;</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mn>1</mn><mo>+</mo><mi>&epsilon;</mi><mi>z</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">f_{\varepsilon}(z)=\frac{f(z)}{1+\varepsilon z}</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="\left|f_{\varepsilon}\right| \leq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>&epsilon;</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\left|f_{\varepsilon}\right| \leq 1</annotation></semantics></math>
+for every
+<math role="math" aria-label="\varepsilon&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&epsilon;</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\varepsilon&gt;0</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Recall that if
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+is a open subset of
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>
+and
+<math role="math" aria-label="\mathcal{G}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math>
+is family of holomorphic functions on
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+then we say that
+<math role="math" aria-label="\mathcal{G}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math>
+is normal, if given any sequence
+<math role="math" aria-label="\left(f_{n}\right)_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msub><annotation encoding="application/x-tex">\left(f_{n}\right)_{n}</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathcal{G}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒢</mi><annotation encoding="application/x-tex">\mathcal{G}</annotation></semantics></math>
+there is a subsequence
+<math role="math" aria-label="\left(f_{n_{k}}\right)_{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><msub><mi>n</mi><mi>k</mi></msub></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>k</mi></msub><annotation encoding="application/x-tex">\left(f_{n_{k}}\right)_{k}</annotation></semantics></math>
+and a holomorphic function
+<math role="math" aria-label="g: U \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mi>U</mi><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">g: U \rightarrow \mathbb{C}</annotation></semantics></math>
+with
+<math role="math" aria-label="f_{n_{k}} \rightarrow_{k \rightarrow \infty} g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><msub><mi>n</mi><mi>k</mi></msub></msub><msub><mo>&rarr;</mo><mrow><mi>k</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><mi>g</mi></mrow><annotation encoding="application/x-tex">f_{n_{k}} \rightarrow_{k \rightarrow \infty} g</annotation></semantics></math>
+uniformly on compact subsets of
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>.</p>
+<p>Let
+<math role="math" aria-label="\mathbb{D}=\{z \in \mathbb{C}:|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔻</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{D}=\{z \in \mathbb{C}:|z|&lt;1\}</annotation></semantics></math>.
+Suppose that
+<math role="math" aria-label="\mathcal{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>
+is a family of holmorphic functions on
+<math role="math" aria-label="\mathbb{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝔻</mi><annotation encoding="application/x-tex">\mathbb{D}</annotation></semantics></math>
+and that
+<math role="math" aria-label="\sup _{f \in \mathcal{F}}|f(0)|&lt;\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">sup</mi><mo>&#8289;</mo></mrow><mrow><mi>f</mi><mo>&isin;</mo><mi>ℱ</mi></mrow></msub><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">\sup _{f \in \mathcal{F}}|f(0)|&lt;\infty</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="\mathcal{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>
+is normal if and only if
+<math role="math" aria-label="\left\{f^{\prime}: f \in \mathcal{F}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msup><mi>f</mi><mi>′</mi></msup><mo>:</mo><mi>f</mi><mo>&isin;</mo><mi>ℱ</mi><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{f^{\prime}: f \in \mathcal{F}\right\}</annotation></semantics></math>
+is normal.</p>
+</main>
+</body>
+</html>

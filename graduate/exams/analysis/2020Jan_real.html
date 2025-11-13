@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Real
+analysis general exam, January 2020 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Real
+analysis general exam, January 2020</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="real-analysis-general-exam-january-2020">Real
+analysis general exam, January 2020</h1>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Let
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+be the Lebesgue measure on
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>.
+For a Lebesgue measurable set
+<math role="math" aria-label="A \subset[0,1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&sub;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">A \subset[0,1]</annotation></semantics></math>,
+is it true that<br />
+(a)
+<math role="math" aria-label="\mu(A)=\sup _{U \subset A, U \text { open }} \mu(U)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mrow><mi mathvariant="normal">sup</mi><mo>&#8289;</mo></mrow><mrow><mi>U</mi><mo>&sub;</mo><mi>A</mi><mo>,</mo><mi>U</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> open </mtext><mspace width="0.333em"></mspace></mrow></mrow></msub><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>U</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu(A)=\sup _{U \subset A, U \text { open }} \mu(U)</annotation></semantics></math>
+? If true, prove this. If false, give a counterexample.<br />
+(b)
+<math role="math" aria-label="\mu(A)=\inf _{U \supset A, U \text { open }} \mu(U)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mrow><mi mathvariant="normal">inf</mi><mo>&#8289;</mo></mrow><mrow><mi>U</mi><mo>&sup;</mo><mi>A</mi><mo>,</mo><mi>U</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> open </mtext><mspace width="0.333em"></mspace></mrow></mrow></msub><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>U</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu(A)=\inf _{U \supset A, U \text { open }} \mu(U)</annotation></semantics></math>
+? If true, prove this. If false, give a counterexample.</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Find a polynomial
+<math role="math" aria-label="P(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">P(x)</annotation></semantics></math>
+of degree at most 3 such that
+<math role="math" aria-label="\int_{-1}^{1}\left|x^{4}-P(x)\right|^{2} d x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mn>1</mn></mrow><mn>1</mn></msubsup><msup><mrow><mo stretchy="true" form="prefix">|</mo><msup><mi>x</mi><mn>4</mn></msup><mo>−</mo><mi>P</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mn>2</mn></msup><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{-1}^{1}\left|x^{4}-P(x)\right|^{2} d x</annotation></semantics></math>
+is minimal.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Let
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+be a compact metric space, and
+<math role="math" aria-label="C(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C(X)</annotation></semantics></math>
+be the space of all real-valued continuous functions on
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+with the supremum norm. Assume that the subset
+<math role="math" aria-label="\mathcal{A} \subset C(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝒜</mi><mo>&sub;</mo><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{A} \subset C(X)</annotation></semantics></math>
+satisfies the following properties:</p></li>
+</ol>
+<ul>
+<li><p>(algebra) For all
+<math role="math" aria-label="f, g \in \mathcal{A}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>,</mo><mi>g</mi><mo>&isin;</mo><mi>𝒜</mi></mrow><annotation encoding="application/x-tex">f, g \in \mathcal{A}</annotation></semantics></math>
+and
+<math role="math" aria-label="\alpha, \beta \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mo>,</mo><mi>&beta;</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">\alpha, \beta \in \mathbb{R}</annotation></semantics></math>
+we have
+<math role="math" aria-label="\alpha f+\beta g \in \mathcal{A}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&alpha;</mi><mi>f</mi><mo>+</mo><mi>&beta;</mi><mi>g</mi><mo>&isin;</mo><mi>𝒜</mi></mrow><annotation encoding="application/x-tex">\alpha f+\beta g \in \mathcal{A}</annotation></semantics></math>
+and
+<math role="math" aria-label="f g \in \mathcal{A}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mi>g</mi><mo>&isin;</mo><mi>𝒜</mi></mrow><annotation encoding="application/x-tex">f g \in \mathcal{A}</annotation></semantics></math>.</p></li>
+<li><p>(separates points) For any
+<math role="math" aria-label="x \neq y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&ne;</mo><mi>y</mi></mrow><annotation encoding="application/x-tex">x \neq y</annotation></semantics></math>
+from
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+there exists a function
+<math role="math" aria-label="f \in \mathcal{A}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><mi>𝒜</mi></mrow><annotation encoding="application/x-tex">f \in \mathcal{A}</annotation></semantics></math>
+such that
+<math role="math" aria-label="f(x) \neq f(y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x) \neq f(y)</annotation></semantics></math>.</p></li>
+</ul>
+<p>This question has two parts:<br />
+(a) Show by example that
+<math role="math" aria-label="\mathcal{A}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒜</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math>
+need not be dense in
+<math role="math" aria-label="C(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C(X)</annotation></semantics></math>,
+explicitly checking all the properties of your example
+<math role="math" aria-label="\mathcal{A}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒜</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math>.<br />
+(b) In order to conclude that
+<math role="math" aria-label="\mathcal{A}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝒜</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math>
+is dense by Stone-Weierstrass Theorem, what additional condition(s)
+should be added?</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Let
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+be a measure on (
+<math role="math" aria-label="\mathbb{R}, \mathcal{B}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Ropf;</mi><mo>,</mo><mi>ℬ</mi></mrow><annotation encoding="application/x-tex">\mathbb{R}, \mathcal{B}</annotation></semantics></math>
+), where
+<math role="math" aria-label="\mathcal{B}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℬ</mi><annotation encoding="application/x-tex">\mathcal{B}</annotation></semantics></math>
+is the Borel
+<math role="math" aria-label="\sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&sigma;</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-algebra.
+Let
+<math role="math" aria-label="\mu(\mathbb{R})=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mu(\mathbb{R})=1</annotation></semantics></math>.
+Next, let
+<math role="math" aria-label="\mathcal{F} \subset \mathcal{B}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℱ</mi><mo>&sub;</mo><mi>ℬ</mi></mrow><annotation encoding="application/x-tex">\mathcal{F} \subset \mathcal{B}</annotation></semantics></math>
+be the sub-
+<math role="math" aria-label="\sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&sigma;</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-algebra
+of symmetric Borel sets, that is,
+<math role="math" aria-label="\mathcal{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>
+generated by all intervals of the form (
+<math role="math" aria-label="-a, a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>a</mi><mo>,</mo><mi>a</mi></mrow><annotation encoding="application/x-tex">-a, a</annotation></semantics></math>
+) with
+<math role="math" aria-label="a&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a&gt;0</annotation></semantics></math>.<br />
+Let
+<math role="math" aria-label="f \in L^{1}(\mathbb{R}, \mathcal{B}, \mu)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>L</mi><mn>1</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo>,</mo><mi>ℬ</mi><mo>,</mo><mi>&mu;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f \in L^{1}(\mathbb{R}, \mathcal{B}, \mu)</annotation></semantics></math>.
+Find a function
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+such that:<br />
+(a)
+<math role="math" aria-label="g \in L^{1}(\mathbb{R}, \mathcal{F}, \mu)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&isin;</mo><msup><mi>L</mi><mn>1</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo>,</mo><mi>ℱ</mi><mo>,</mo><mi>&mu;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g \in L^{1}(\mathbb{R}, \mathcal{F}, \mu)</annotation></semantics></math>
+(in particular,
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+is
+<math role="math" aria-label="\mathcal{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>-measurable).<br />
+(b) For all
+<math role="math" aria-label="E \in \mathcal{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>E</mi><mo>&isin;</mo><mi>ℱ</mi></mrow><annotation encoding="application/x-tex">E \in \mathcal{F}</annotation></semantics></math>
+we have
+<math role="math" aria-label="\int_{E} g d \mu=\int_{E} f d \mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mi>E</mi></msub><mi>g</mi><mi>d</mi><mi>&mu;</mi><mo>=</mo><msub><mo>&int;</mo><mi>E</mi></msub><mi>f</mi><mi>d</mi><mi>&mu;</mi></mrow><annotation encoding="application/x-tex">\int_{E} g d \mu=\int_{E} f d \mu</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Let
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+be a finite measure on some measurable space (
+<math role="math" aria-label="X, \mathcal{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>ℱ</mi></mrow><annotation encoding="application/x-tex">X, \mathcal{F}</annotation></semantics></math>
+).</p>
+<p>Show that a sequence of
+<math role="math" aria-label="\mathcal{F}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℱ</mi><annotation encoding="application/x-tex">\mathcal{F}</annotation></semantics></math>-measurable
+functions
+<math role="math" aria-label="f_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>n</mi></msub><annotation encoding="application/x-tex">f_{n}</annotation></semantics></math>
+converges to a function
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+in measure if and only if
+<math role="math" aria-label="\int_{X} \min \left\{1,\left|f_{n}-f\right|\right\} \mu(d x) \rightarrow 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mi>X</mi></msub><mrow><mi mathvariant="normal">min</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">{</mo><mn>1</mn><mo>,</mo><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>n</mi></msub><mo>−</mo><mi>f</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo stretchy="true" form="postfix">}</mo></mrow><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>d</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\int_{X} \min \left\{1,\left|f_{n}-f\right|\right\} \mu(d x) \rightarrow 0</annotation></semantics></math>
+as
+<math role="math" aria-label="n \rightarrow+\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&rarr;</mo><mi>+</mi><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">n \rightarrow+\infty</annotation></semantics></math>.</p>
+</main>
+</body>
+</html>

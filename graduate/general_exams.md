@@ -73,33 +73,33 @@ Below are old exams and study materials for each of the subfields.
   <h2>Analysis</h2>
   
   - [01/2023, real]({{site.url}}/graduate/exams/analysis/2023Jan_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2023Jan_real.pdf" aria-label="PDF version for printing">PDF</a>
-  - [08/2022, complex]({{site.url}}/graduate/exams/analysis/2022Aug_complex.pdf)
+  - [08/2022, complex]({{site.url}}/graduate/exams/analysis/2022Aug_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2022Aug_complex.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2022, real]({{site.url}}/graduate/exams/analysis/2022Aug_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2022Aug_real.pdf" aria-label="PDF version for printing">PDF</a>
-  - [01/2022, complex]({{site.url}}/graduate/exams/analysis/2022Jan_complex.pdf)
-  - [01/2022, real]({{site.url}}/graduate/exams/analysis/2022Jan_real.pdf)
-  - [08/2021, complex]({{site.url}}/graduate/exams/analysis/2021Aug_complex.pdf)
-  - [01/2021, real]({{site.url}}/graduate/exams/analysis/2021Jan_real.pdf)
-  - [08/2020, complex]({{site.url}}/graduate/exams/analysis/2020Aug_complex.pdf)
-  - [08/2020, real]({{site.url}}/graduate/exams/analysis/2020Aug_real.pdf)
-  - [01/2020, complex]({{site.url}}/graduate/exams/analysis/2020Jan_complex.pdf)
-  - [01/2020, real]({{site.url}}/graduate/exams/analysis/2020Jan_real.pdf)
-  - [08/2019, complex]({{site.url}}/graduate/exams/analysis/2019Aug_complex.pdf)
-  - [08/2019, real]({{site.url}}/graduate/exams/analysis/2019Aug_real.pdf)
-  - [08/2017]({{site.url}}/graduate/exams/analysis/2017Aug.pdf)
-  - [01/2017]({{site.url}}/graduate/exams/analysis/2017Jan.pdf)
-  - [08/2016]({{site.url}}/graduate/exams/analysis/2016Aug.pdf)
-  - [08/2015]({{site.url}}/graduate/exams/analysis/2015Aug.pdf)
-  - [08/2014]({{site.url}}/graduate/exams/analysis/2014Aug.pdf)
-  - [08/2013]({{site.url}}/graduate/exams/analysis/2013Aug.pdf)
-  - [01/2013]({{site.url}}/graduate/exams/analysis/2013Jan.pdf)
+  - [01/2022, complex]({{site.url}}/graduate/exams/analysis/2022Jan_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2022Jan_complex.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2022, real]({{site.url}}/graduate/exams/analysis/2022Jan_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2022Jan_real.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2021, complex]({{site.url}}/graduate/exams/analysis/2021Aug_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2021Aug_complex.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2021, real]({{site.url}}/graduate/exams/analysis/2021Jan_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2021Jan_real.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2020, complex]({{site.url}}/graduate/exams/analysis/2020Aug_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2020Aug_complex.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2020, real]({{site.url}}/graduate/exams/analysis/2020Aug_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2020Aug_real.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2020, complex]({{site.url}}/graduate/exams/analysis/2020Jan_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2020Jan_complex.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2020, real]({{site.url}}/graduate/exams/analysis/2020Jan_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2020Jan_real.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2019, complex]({{site.url}}/graduate/exams/analysis/2019Aug_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2019Aug_complex.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2019, real]({{site.url}}/graduate/exams/analysis/2019Aug_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2019Aug_real.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2017]({{site.url}}/graduate/exams/analysis/2017Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2017Aug.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2017]({{site.url}}/graduate/exams/analysis/2017Jan.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2017Jan.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2016]({{site.url}}/graduate/exams/analysis/2016Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2016Aug.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2015]({{site.url}}/graduate/exams/analysis/2015Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2015Aug.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2014]({{site.url}}/graduate/exams/analysis/2014Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2014Aug.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2013]({{site.url}}/graduate/exams/analysis/2013Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2013Aug.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2013]({{site.url}}/graduate/exams/analysis/2013Jan.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2013Jan.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2012]({{site.url}}/graduate/exams/analysis/2012Aug.pdf)
-  - [08/2011]({{site.url}}/graduate/exams/analysis/2011Aug.pdf)
-  - [01/2011]({{site.url}}/graduate/exams/analysis/2011Jan.pdf)
-  - [08/2010]({{site.url}}/graduate/exams/analysis/2010Aug.pdf)
-  - [01/2010]({{site.url}}/graduate/exams/analysis/2010Jan.pdf)
-  - [08/2009]({{site.url}}/graduate/exams/analysis/2009Aug.pdf)
-  - [01/2009]({{site.url}}/graduate/exams/analysis/2009Jan.pdf)
-  - [08/2007]({{site.url}}/graduate/exams/analysis/2007Aug.pdf)
+  - [08/2011]({{site.url}}/graduate/exams/analysis/2011Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2011Aug.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2011]({{site.url}}/graduate/exams/analysis/2011Jan.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2011Jan.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2010]({{site.url}}/graduate/exams/analysis/2010Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2010Aug.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2010]({{site.url}}/graduate/exams/analysis/2010Jan.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2010Jan.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2009]({{site.url}}/graduate/exams/analysis/2009Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2009Aug.pdf" aria-label="PDF version for printing">PDF</a>
+  - [01/2009]({{site.url}}/graduate/exams/analysis/2009Jan.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2009Jan.pdf" aria-label="PDF version for printing">PDF</a>
+  - [08/2007]({{site.url}}/graduate/exams/analysis/2007Aug.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2007Aug.pdf" aria-label="PDF version for printing">PDF</a>
   - [1977-2004]({{site.url}}/graduate/exams/analysis/1977-2004.pdf)
   
   </div>

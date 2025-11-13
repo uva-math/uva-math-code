@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Analysis General Exam - January 2013 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Analysis General Exam - January 2013</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="analysis-general-exam-january-2013">Analysis General Exam - January 2013</h1>
+<p>Name:
+<math role="math" aria-label="\_\_\_\_" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>_</mi><mi>_</mi><mi>_</mi><mi>_</mi></mrow><annotation encoding="application/x-tex">\_\_\_\_</annotation></semantics></math></p>
+<p>Pledge:
+<math role="math" aria-label="\_\_\_\_" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>_</mi><mi>_</mi><mi>_</mi><mi>_</mi></mrow><annotation encoding="application/x-tex">\_\_\_\_</annotation></semantics></math></p>
+<p>Signature:
+<math role="math" aria-label="\_\_\_\_" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>_</mi><mi>_</mi><mi>_</mi><mi>_</mi></mrow><annotation encoding="application/x-tex">\_\_\_\_</annotation></semantics></math><br />
+Instructions. 4 hours. Each problem is worth the same ( 25 points). To
+get credit for a problem, you must carefully justify all (nontrivial)
+claims and show all calculations. You may use without proof anything
+that is proved in the texts by Folland and Bak and Newman, or other
+standard reference. If you do so, either refer to the theorem by name
+(if it has one) or give its statement; also verify explicitly all of its
+hypotheses. However, you may not cite a statement you are explicitly
+asked to prove, or facts that were given as exercises or homework.</p>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Pr</th>
+<th style="text-align: left;">Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td
+style="text-align: left;"><math role="math" aria-label="\Sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Sigma;</mi><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Total points: 200</p>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>For any Borel measurable subset
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+of
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>,
+define</p>
+<p><math role="math" aria-label="\tilde{A}=\{(x, y): x+y \in A\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>A</mi><mo accent="true">̃</mo></mover><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>x</mi><mo>+</mo><mi>y</mi><mo>&isin;</mo><mi>A</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\tilde{A}=\{(x, y): x+y \in A\}</annotation></semantics></math></p>
+<p>and define the measure
+<math role="math" aria-label="\mu(A)=m_{2}\left(\tilde{A} \cap[0, \infty)^{2}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mi>m</mi><mn>2</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><mover><mi>A</mi><mo accent="true">̃</mo></mover><mo>&cap;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mu(A)=m_{2}\left(\tilde{A} \cap[0, \infty)^{2}\right)</annotation></semantics></math>,
+where
+<math role="math" aria-label="m_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mn>2</mn></msub><annotation encoding="application/x-tex">m_{2}</annotation></semantics></math>
+is Lebesgue measure on
+<math role="math" aria-label="\mathbb{R}^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{2}</annotation></semantics></math>.
+Find
+<math role="math" aria-label="g: \mathbb{R} \rightarrow[0, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mi>&Ropf;</mi><mo>&rarr;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g: \mathbb{R} \rightarrow[0, \infty)</annotation></semantics></math>
+such that for all
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>,</p>
+<p><math role="math" aria-label="\mu(A)=\int_{A} g(x) d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msub><mo>&int;</mo><mi>A</mi></msub><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\mu(A)=\int_{A} g(x) d x</annotation></semantics></math></p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Let (
+<math role="math" aria-label="X, \Sigma, \mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi mathvariant="normal">&Sigma;</mi><mo>,</mo><mi>&mu;</mi></mrow><annotation encoding="application/x-tex">X, \Sigma, \mu</annotation></semantics></math>
+) be a measure space and suppose that
+<math role="math" aria-label="A, B, A_{i}, B_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>,</mo><mi>B</mi><mo>,</mo><msub><mi>A</mi><mi>i</mi></msub><mo>,</mo><msub><mi>B</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">A, B, A_{i}, B_{i}</annotation></semantics></math>
+are members of
+<math role="math" aria-label="\Sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Sigma;</mi><annotation encoding="application/x-tex">\Sigma</annotation></semantics></math>
+with the properties
+<math role="math" aria-label="\left(A_{i} \times B_{i}\right) \cap\left(A_{j} \times B_{j}\right)=\varnothing" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo>&times;</mo><msub><mi>B</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&cap;</mo><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>j</mi></msub><mo>&times;</mo><msub><mi>B</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>⌀</mi></mrow><annotation encoding="application/x-tex">\left(A_{i} \times B_{i}\right) \cap\left(A_{j} \times B_{j}\right)=\varnothing</annotation></semantics></math>
+for
+<math role="math" aria-label="i \neq j" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>&ne;</mo><mi>j</mi></mrow><annotation encoding="application/x-tex">i \neq j</annotation></semantics></math>,
+and</p>
+<p><math role="math" aria-label="A \times B=\bigcup_{i=1}^{\infty} A_{i} \times B_{i}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&times;</mo><mi>B</mi><mo>=</mo><munderover><mo>⋃</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><msub><mi>A</mi><mi>i</mi></msub><mo>&times;</mo><msub><mi>B</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">A \times B=\bigcup_{i=1}^{\infty} A_{i} \times B_{i}</annotation></semantics></math></p>
+<p>Show that</p>
+<p><math role="math" aria-label="\mu(A) \mu(B)=\sum_{i=1}^{\infty} \mu\left(A_{i}\right) \mu\left(B_{i}\right) ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><mi>&mu;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>A</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>&mu;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>B</mi><mi>i</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">\mu(A) \mu(B)=\sum_{i=1}^{\infty} \mu\left(A_{i}\right) \mu\left(B_{i}\right) .</annotation></semantics></math></p>
+<p>(Note: The above calculation is used to construct product measure on
+<math role="math" aria-label="X \times X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>&times;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">X \times X</annotation></semantics></math>,
+so do not use product measure in your answer.)</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Suppose
+<math role="math" aria-label="\phi(z, t): U \times[a, b] \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><mi>U</mi><mo>&times;</mo><mo stretchy="false" form="prefix">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false" form="postfix">]</mo><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">\phi(z, t): U \times[a, b] \rightarrow \mathbb{C}</annotation></semantics></math>
+where
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+is an open subset of
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>.
+Suppose
+<math role="math" aria-label="\phi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ϕ</mi><annotation encoding="application/x-tex">\phi</annotation></semantics></math>
+is continuous in
+<math role="math" aria-label="t" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>
+for fixed
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>,
+analytic in
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+for fixed
+<math role="math" aria-label="t" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+and bounded on compacts of its domain. Let</p>
+<p><math role="math" aria-label="f(z)=\int_{a}^{b} \phi(z, t) d t" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mi>a</mi><mi>b</mi></msubsup><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">f(z)=\int_{a}^{b} \phi(z, t) d t</annotation></semantics></math></p>
+<p>Show that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is analytic in
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+and</p>
+<p><math role="math" aria-label="f^{\prime}(z)=\int_{a}^{b} \frac{\partial}{\partial z} \phi(z, t) d t" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&int;</mo><mi>a</mi><mi>b</mi></msubsup><mfrac><mi>&part;</mi><mrow><mi>&part;</mi><mi>z</mi></mrow></mfrac><mi>ϕ</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo>,</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">f^{\prime}(z)=\int_{a}^{b} \frac{\partial}{\partial z} \phi(z, t) d t</annotation></semantics></math></p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Suppose
+<math role="math" aria-label="p(z)=z^{n}+a_{n-1} z^{n-1}+\cdots+a_{1} z+a_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>z</mi><mi>n</mi></msup><mo>+</mo><msub><mi>a</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><msup><mi>z</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><mi>⋯</mi><mo>+</mo><msub><mi>a</mi><mn>1</mn></msub><mi>z</mi><mo>+</mo><msub><mi>a</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">p(z)=z^{n}+a_{n-1} z^{n-1}+\cdots+a_{1} z+a_{0}</annotation></semantics></math>
+with
+<math role="math" aria-label="\left|a_{0}\right|&gt;1, n \geq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>a</mi><mn>0</mn></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>&gt;</mo><mn>1</mn><mo>,</mo><mi>n</mi><mo>&ge;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\left|a_{0}\right|&gt;1, n \geq 1</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+has a zero outside the closed unit disk. (Hint: Factor
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.)</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Show that for each
+<math role="math" aria-label="\epsilon&gt;0, f(z)=\sin z+\left(z^{2}+i\right)^{-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ϵ</mi><mo>&gt;</mo><mn>0</mn><mo>,</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>z</mi><mo>+</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>z</mi><mn>2</mn></msup><mo>+</mo><mi>i</mi><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\epsilon&gt;0, f(z)=\sin z+\left(z^{2}+i\right)^{-1}</annotation></semantics></math>
+has infinitely many zeros in
+<math role="math" aria-label="\{z:|\operatorname{Im} z|&lt;\epsilon\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mi>ϵ</mi><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{z:|\operatorname{Im} z|&lt;\epsilon\}</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Let
+<math role="math" aria-label="G: \mathbb{R} \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>:</mo><mi>&Ropf;</mi><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">G: \mathbb{R} \rightarrow \mathbb{R}</annotation></semantics></math>
+be a bounded Borel measurable function and, for
+<math role="math" aria-label="n=1,2, \ldots" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi>…</mi></mrow><annotation encoding="application/x-tex">n=1,2, \ldots</annotation></semantics></math>,
+define
+<math role="math" aria-label="f_{0} \equiv 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mn>0</mn></msub><mo>&equiv;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">f_{0} \equiv 1</annotation></semantics></math>
+and</p>
+<p><math role="math" aria-label="f_{n}(t)=1+\int_{0}^{t} G\left(f_{n-1}(s)\right) d s, \quad t \in[-1,1]" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>1</mn><mo>+</mo><msubsup><mo>&int;</mo><mn>0</mn><mi>t</mi></msubsup><mi>G</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>s</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>s</mi><mo>,</mo><mspace width="1.0em"></mspace><mi>t</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f_{n}(t)=1+\int_{0}^{t} G\left(f_{n-1}(s)\right) d s, \quad t \in[-1,1]</annotation></semantics></math></p>
+<p>Show that
+<math role="math" aria-label="\left\{f_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{f_{n}\right\}</annotation></semantics></math>
+has a uniformly convergent subsequence.</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>Compute
+<math role="math" aria-label="\int_{0}^{\pi} \tan (\theta+i a) d \theta ; a \in \mathbb{R}, a \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mi>&pi;</mi></msubsup><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>&theta;</mi><mo>+</mo><mi>i</mi><mi>a</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>&theta;</mi><mo>;</mo><mi>a</mi><mo>&isin;</mo><mi>&Ropf;</mi><mo>,</mo><mi>a</mi><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\int_{0}^{\pi} \tan (\theta+i a) d \theta ; a \in \mathbb{R}, a \neq 0</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>(a) State and prove the dominated convergence theorem.</p>
+<p>(b) Let
+<math role="math" aria-label="\left\{f_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{f_{n}\right\}</annotation></semantics></math>
+be a sequence of measurable functions on (
+<math role="math" aria-label="X, \Sigma, \mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi mathvariant="normal">&Sigma;</mi><mo>,</mo><mi>&mu;</mi></mrow><annotation encoding="application/x-tex">X, \Sigma, \mu</annotation></semantics></math>
+) that converges pointwise a.e. to
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>.
+Suppose
+<math role="math" aria-label="\left\{g_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>g</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{g_{n}\right\}</annotation></semantics></math>
+is a sequence of integrable functions on
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+that converges pointwise a.e. and in
+<math role="math" aria-label="L^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>1</mn></msup><annotation encoding="application/x-tex">L^{1}</annotation></semantics></math>
+to
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>,
+such that
+<math role="math" aria-label="\left|f_{n}\right| \leq g_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><msub><mi>g</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">\left|f_{n}\right| \leq g_{n}</annotation></semantics></math>
+for all
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Show that</p>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} \int_{X} f_{n}=\int_{X} f" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msub><mo>&int;</mo><mi>X</mi></msub><msub><mi>f</mi><mi>n</mi></msub><mo>=</mo><msub><mo>&int;</mo><mi>X</mi></msub><mi>f</mi></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} \int_{X} f_{n}=\int_{X} f</annotation></semantics></math></p>
+<p>(Hint: Rework your proof to part (a))</p>
+</main>
+</body>
+</html>

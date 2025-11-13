@@ -96,9 +96,11 @@ Use this entity mapping:
 - Relations: ≤ (&le;), ≥ (&ge;), ≠ (&ne;), ≈ (&approx;), ≡ (&equiv;), ⟂ (&perp;), ∥ (&parallel;)
 - Calculus: ∂ (&part;), ∫ (&int;), ∮ (&conint;), ∑ (&sum;), ∏ (&prod;), ∇ (&nabla;), √ (&radic;)
 - Logic: ∀ (&forall;), ∃ (&exist;), ¬ (&not;), ∧ (&and;), ∨ (&or;)
-- Number sets: ℝ (&Ropf;), ℂ (&Copf;), ℕ (&Nopf;), ℤ (&Zopf;), ℚ (&Qopf;)
-- Greek letters: α (&alpha;), β (&beta;), γ (&gamma;), δ (&delta;), ε (&epsilon;), η (&eta;), θ (&theta;), λ (&lambda;), μ (&mu;), ν (&nu;), π (&pi;), σ (&sigma;), τ (&tau;), φ (&phi;), ω (&omega;), Γ (&Gamma;), Δ (&Delta;), Θ (&Theta;), Λ (&Lambda;), Σ (&Sigma;), Φ (&Phi;), Ω (&Omega;)
+- Number sets: ℝ (&Ropf;), ℂ (&Copf;), ℕ (&Nopf;), ℤ (&Zopf;), ℚ (&Qopf;), **𝔻 (&Dopf;)**, 𝔸 (&Aopf;), 𝔹 (&Bopf;), 𝔼 (&Eopf;), 𝔽 (&Fopf;), 𝔾 (&Gopf;), ℍ (&Hopf;), 𝕀 (&Iopf;), 𝕁 (&Jopf;), 𝕂 (&Kopf;), 𝕃 (&Lopf;), 𝕄 (&Mopf;), 𝕆 (&Oopf;), ℙ (&Popf;), 𝕊 (&Sopf;), 𝕋 (&Topf;), 𝕌 (&Uopf;), 𝕍 (&Vopf;), 𝕎 (&Wopf;), 𝕏 (&Xopf;), 𝕐 (&Yopf;)
+- Greek letters: α (&alpha;), β (&beta;), γ (&gamma;), δ (&delta;), ε (&epsilon;), η (&eta;), θ (&theta;), λ (&lambda;), μ (&mu;), ν (&nu;), π (&pi;), σ (&sigma;), τ (&tau;), φ (&phi;), ψ (&psi;), χ (&chi;), ω (&omega;), Γ (&Gamma;), Δ (&Delta;), Θ (&Theta;), Λ (&Lambda;), Σ (&Sigma;), Φ (&Phi;), Ψ (&Psi;), Ω (&Omega;)
 - Other: ∞ (&infin;), × (&times;), ⋅ (&sdot;), ± (&plusmn;), ∠ (&ang;), ⊕ (&oplus;), ⊗ (&otimes;)
+
+**CRITICAL**: Blackboard bold letters (especially **𝔻**) frequently appear in exams and MUST be converted to HTML entities. This is a common source of accessibility violations.
 
 ### Step 6: Handle Images (Diagrams, Figures)
 **IMPORTANT**: Many exams contain diagrams (commutative diagrams, geometric figures, knot diagrams, etc.) that are extracted by Mathpix.
@@ -221,8 +223,13 @@ After saving the HTML file, you MUST update the link in `graduate/general_exams.
 - Clearly labeling the PDF as "for printing" to indicate its purpose
 - Using ARIA labels to communicate that PDFs may have accessibility limitations
 
-### Step 10: Final Review - Read Both Files
-After completing all processing steps, you MUST read both the original PDF and the generated HTML file to provide a final quality assessment:
+### Step 10: COMPREHENSIVE LEGAL COMPLIANCE AUDIT
+**⚠️ CRITICAL**: This step is MANDATORY as accessibility violations expose the website to ADA lawsuits. All items must pass.
+
+After completing all processing steps, you MUST:
+1. Read both the original PDF and the generated HTML file
+2. Perform a thorough WCAG 2.1 Level AA compliance audit
+3. Fix any violations immediately before declaring the file production-ready
 
 ```bash
 # Read both files
@@ -230,27 +237,117 @@ Read <PATH_TO_PDF>
 Read <PATH_TO_HTML>
 ```
 
-**Review and report on:**
-1. **Content Accuracy**: Verify that all mathematical expressions, problems, and text from the PDF are correctly represented in the HTML
-2. **MathML Quality**: Confirm that math expressions render correctly as MathML (not SVG or Unicode)
-3. **Accessibility**: Check that all accessibility features are present and correct:
-   - Proper title and H1 heading
-   - **H2 headings for EVERY problem** (e.g., "Problem 1", "Problem 2", etc.)
-   - Breadcrumb and back button navigation
-   - ARIA labels on math elements
-   - Semantic HTML structure
-4. **Formatting and Spacing**: Ensure the HTML preserves the PDF's visual structure:
-   - Proper vertical spacing between main problems
-   - Problem structure is clear and readable
-5. **Completeness**: Verify nothing was lost or corrupted during conversion
-   - Count problems in PDF and verify matching H2 headings in HTML
+## WCAG 2.1 Level AA Compliance Checklist
 
-**Provide a concise summary stating:**
-- ✓ What looks correct
-- ⚠️ Any issues found (and fix them if possible)
-- Overall assessment: "Ready for production" or "Needs fixes"
+### 1. Document Structure (WCAG 1.3.1, 2.4.1)
+- [ ] Valid HTML5 DOCTYPE present
+- [ ] `lang="en"` attribute on `<html>` element
+- [ ] UTF-8 character encoding declared
+- [ ] Viewport meta tag for mobile accessibility
 
-This final human-in-the-loop check ensures quality before the files go live.
+### 2. Page Title (WCAG 2.4.2)
+- [ ] Descriptive `<title>` tag present (e.g., "Analysis General Exam August 2017 - UVA Mathematics")
+- [ ] Title accurately describes page content
+
+### 3. Semantic Heading Hierarchy (WCAG 1.3.1, 2.4.6) **[CRITICAL]**
+- [ ] Exactly ONE H1 heading (exam title)
+- [ ] H2 heading for EVERY problem (e.g., `<h2 class="unnumbered" id="problem-1">Problem 1</h2>`)
+- [ ] No skipped heading levels (H1 → H2, never H1 → H3)
+- [ ] Each heading has unique `id` attribute
+- [ ] Count problems in PDF = count of H2 headings in HTML
+
+### 4. Landmark Elements (WCAG 1.3.1, 2.4.1)
+- [ ] Breadcrumb `<nav>` with `aria-label="Breadcrumb"`
+- [ ] Page navigation `<nav>` with `aria-label="Page navigation"`
+- [ ] Main content wrapped in `<main>` element
+- [ ] Proper opening/closing tags for all landmarks
+
+### 5. Navigation Accessibility (WCAG 2.4.4, 2.4.8, 4.1.2)
+- [ ] Breadcrumb uses ordered list (`<ol>`)
+- [ ] Breadcrumb separators have `aria-hidden="true"`
+- [ ] Current page marked with `aria-current="page"`
+- [ ] Back button is semantic `<a>` element with descriptive text
+- [ ] All links have clear, descriptive text
+
+### 6. MathML Accessibility (WCAG 1.3.1, 1.4.5, 4.1.2) **[CRITICAL]**
+**Audit ALL math elements - check a representative sample:**
+- [ ] All have `role="math"`
+- [ ] All have `aria-label` with LaTeX source
+- [ ] All have `xmlns="http://www.w3.org/1998/Math/MathML"`
+- [ ] All use `<semantics>` wrapper
+- [ ] All have `<annotation encoding="application/x-tex">`
+
+### 7. Unicode Character Verification **[LAWSUIT RISK - CRITICAL]**
+**NO Unicode mathematical characters allowed. All MUST be HTML entities.**
+
+Run these verification commands:
+```bash
+# Check for Unicode mathematical operators (U+2200-U+22FF)
+grep -P '[\x{2200}-\x{22FF}]' <PATH_TO_HTML>
+
+# Check for Unicode mathematical alphanumeric symbols (U+1D400-U+1D7FF)
+# This includes blackboard bold: 𝔸 𝔹 ℂ 𝔻 𝔼 𝔽 𝔾 ℍ 𝕀 𝕁 𝕂 𝕃 𝕄 ℕ 𝕆 ℙ ℚ ℝ 𝕊 𝕋 𝕌 𝕍 𝕎 𝕏 𝕐 ℤ
+grep -P '[\x{1D400}-\x{1D7FF}]' <PATH_TO_HTML>
+
+# Check for common Greek letters
+grep -P '[α-ωΑ-Ω]' <PATH_TO_HTML>
+```
+
+**If ANY Unicode characters are found, FIX IMMEDIATELY:**
+- **Most common violation**: 𝔻 (U+1D53B) → Must be `&Dopf;`
+- ℝ → `&Ropf;`, ℂ → `&Copf;`, ℕ → `&Nopf;`, ℤ → `&Zopf;`, ℚ → `&Qopf;`
+- → → `&rarr;`, ≥ → `&ge;`, ≤ → `&le;`, ∈ → `&isin;`, ∞ → `&infin;`
+- α → `&alpha;`, β → `&beta;`, π → `&pi;`, φ → `&phi;`, ψ → `&psi;`, χ → `&chi;`
+
+**Manual inspection required for:**
+- [ ] Check `<mi>` elements inside `<math>` tags for raw Unicode
+- [ ] Verify blackboard bold letters (𝔻, ℝ, ℂ, ℕ, ℤ, ℚ) use entities
+- [ ] Verify Greek letters use entities
+- [ ] Verify mathematical operators use entities
+
+### 8. Color Contrast (WCAG 1.4.3)
+- [ ] Body text has minimum 4.5:1 contrast ratio (7:1 for AA)
+- [ ] Link colors have sufficient contrast
+- [ ] Navigation elements have sufficient contrast
+
+### 9. Keyboard Accessibility (WCAG 2.1.1, 2.4.3, 2.4.7)
+- [ ] All interactive elements keyboard accessible
+- [ ] Logical tab order (breadcrumb → back → main content)
+- [ ] No keyboard traps
+
+### 10. Mobile/Responsive (WCAG 1.4.4, 1.4.10)
+- [ ] Responsive meta viewport tag present
+- [ ] Flexible layout (no fixed widths)
+- [ ] Mobile-specific CSS (@media queries)
+
+### 11. Content Quality (WCAG 3.1.1, 3.1.2)
+- [ ] Language declared: `lang="en"`
+- [ ] All content is in declared language
+
+## Legal Compliance Summary
+
+After completing the audit, provide:
+
+**✅ PASS / ❌ FAIL Summary:**
+- Document Structure: [PASS/FAIL]
+- Page Title: [PASS/FAIL]
+- Heading Hierarchy: [PASS/FAIL]
+- Landmark Elements: [PASS/FAIL]
+- Navigation: [PASS/FAIL]
+- MathML: [PASS/FAIL]
+- **Unicode Verification: [PASS/FAIL]** ← CRITICAL
+- Color Contrast: [PASS/FAIL]
+- Keyboard: [PASS/FAIL]
+- Mobile: [PASS/FAIL]
+- Content: [PASS/FAIL]
+
+**Final Verdict:**
+- ✅ **PRODUCTION READY** - All WCAG 2.1 Level AA requirements met. Lawsuit risk: MINIMAL.
+- ❌ **NOT PRODUCTION READY** - Fix violations immediately before deployment.
+
+**If ANY items fail: FIX THEM IMMEDIATELY. Do not proceed until all items pass.**
+
+This comprehensive audit ensures legal compliance and protects the university from ADA lawsuits.
 
 ## Important Notes
 - **CONCURRENT EXECUTION**: This command uses unique PDF_ID-based filenames in `/tmp/`, so multiple instances can run simultaneously without conflicts
@@ -263,20 +360,42 @@ This final human-in-the-loop check ensures quality before the files go live.
 - Verify proper heading hierarchy (use grep or check a sample)
 - The final HTML should be fully accessible with screen readers
 
-## Success Criteria
-The output HTML must have:
-✓ Actual MathML elements (<math>, <mrow>, <mi>, <mo>, etc.)
-✓ NO Unicode characters - all replaced with HTML/MathML entities
-✓ Proper heading hierarchy (H1 for title, H2 for EVERY problem)
-✓ **H2 heading for each problem** (e.g., `<h2 class="unnumbered" id="problem-1">Problem 1</h2>`)
-✓ ARIA attributes on all math elements (role="math", aria-label)
-✓ lang="en" attribute on <html> element
-✓ Descriptive page title derived from H1 content (e.g., "TITLE - UVA Mathematics")
-✓ Breadcrumb navigation with aria-label="Breadcrumb" at top
-✓ Back button navigation with aria-label="Page navigation" below breadcrumb
-✓ Main content wrapped in <main> landmark element
+## Success Criteria - WCAG 2.1 Level AA Compliance
+
+The output HTML must meet ALL of these criteria to be production-ready:
+
+### Technical Requirements
+✓ Actual MathML elements (`<math>`, `<mrow>`, `<mi>`, `<mo>`, etc.)
+✓ **NO Unicode characters** - all replaced with HTML/MathML entities (especially **𝔻 → &Dopf;**)
+✓ Proper heading hierarchy (ONE H1, H2 for EVERY problem, no skipped levels)
+✓ H2 heading for each problem (e.g., `<h2 class="unnumbered" id="problem-1">Problem 1</h2>`)
+✓ ARIA attributes on all math elements (`role="math"`, `aria-label` with LaTeX)
+✓ `lang="en"` attribute on `<html>` element
+✓ Descriptive page title (e.g., "Analysis General Exam August 2017 - UVA Mathematics")
+✓ Breadcrumb navigation with `aria-label="Breadcrumb"`
+✓ Back button navigation with `aria-label="Page navigation"`
+✓ Main content wrapped in `<main>` landmark element
 ✓ Valid, well-formed HTML5 document with proper semantic structure
 ✓ Proper vertical spacing between main problems
 ✓ HTML file saved next to the PDF with .html extension
-✓ Link in graduate/general_exams.md updated with HTML as primary, PDF as secondary with aria-label
-✓ Both PDF and HTML reviewed side-by-side with final quality assessment provided
+✓ Link in `graduate/general_exams.md` updated (HTML primary, PDF secondary with aria-label)
+
+### Legal Compliance Requirements
+✓ **WCAG 2.1 Level AA compliant** - All 11 checklist items pass
+✓ **Unicode verification passed** - No raw Unicode mathematical characters
+✓ **Screen reader compatible** - All math properly labeled with ARIA
+✓ **Keyboard accessible** - Logical tab order, no traps
+✓ **Mobile responsive** - Viewport meta tag, flexible layout
+✓ **Color contrast compliant** - Minimum 4.5:1 ratio for text
+✓ **Semantic structure** - Proper landmarks, headings, lists
+✓ **ADA Title II & III compliant** - Ready for public deployment
+✓ **Section 508 compliant** - Federal accessibility standards met
+
+### Final Review Completed
+✓ Both PDF and HTML reviewed side-by-side
+✓ Comprehensive WCAG 2.1 Level AA audit performed
+✓ All violations fixed immediately
+✓ Legal compliance summary provided
+✓ **Lawsuit risk: MINIMAL** - File is legally defensible
+
+**If any criterion fails, the file is NOT production-ready and must be fixed immediately.**

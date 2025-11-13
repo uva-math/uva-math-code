@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Analysis
+General Exam: August 2015 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Analysis
+General Exam: August 2015</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="analysis-general-exam-august-2015">Analysis
+General Exam: August 2015</h1>
+<p>Please present your solutions as proofs, including all logical steps
+and detailed calculations. Verify or give adequate reasons for
+assertions that you make. Cite by name any theorems you wish to invoke.
+Please write only on one side of your paper.</p>
+<h2 class="unnumbered" id="part-i">PART I</h2>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Prove that
+<math role="math" aria-label="\zeta(z)=\sum_{n=1}^{\infty} n^{-z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&zeta;</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><msup><mi>n</mi><mrow><mi>−</mi><mi>z</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\zeta(z)=\sum_{n=1}^{\infty} n^{-z}</annotation></semantics></math>
+converges to an analytic function in the half plane
+<math role="math" aria-label="H=\{z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi></mrow><annotation encoding="application/x-tex">H=\{z</annotation></semantics></math>
+:
+<math role="math" aria-label="\operatorname{Re} z&gt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">Re</mi><mo>&#8289;</mo></mrow><mi>z</mi><mo>&gt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\operatorname{Re} z&gt;1\}</annotation></semantics></math>.
+Show that the derivatives of
+<math role="math" aria-label="\zeta(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&zeta;</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\zeta(z)</annotation></semantics></math>
+converge uniformly on compact subsets of
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Suppose
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+is a bounded domain with piecewise smooth boundary. Let
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+be meromorphic and
+<math role="math" aria-label="g(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(z)</annotation></semantics></math>
+analytic on
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>.
+Suppose that both
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+and
+<math role="math" aria-label="g(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g(z)</annotation></semantics></math>
+extend analytically across the boundary of
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>,
+and that
+<math role="math" aria-label="f(z) \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(z) \neq 0</annotation></semantics></math>
+on
+<math role="math" aria-label="\partial D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&part;</mi><mi>D</mi></mrow><annotation encoding="application/x-tex">\partial D</annotation></semantics></math>.
+Show that</p>
+<p><math role="math" aria-label="\frac{1}{2 \pi i} \oint_{\partial D} g(z) \frac{f^{\prime}(z)}{f(z)} d z=\sum_{j=1}^{n} m_{j} g\left(z_{j}\right)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mrow><mn>2</mn><mi>&pi;</mi><mi>i</mi></mrow></mfrac><msub><mo>&conint;</mo><mrow><mi>&part;</mi><mi>D</mi></mrow></msub><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mfrac><mrow><msup><mi>f</mi><mi>′</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><mi>d</mi><mi>z</mi><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>m</mi><mi>j</mi></msub><mi>g</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>z</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\frac{1}{2 \pi i} \oint_{\partial D} g(z) \frac{f^{\prime}(z)}{f(z)} d z=\sum_{j=1}^{n} m_{j} g\left(z_{j}\right)</annotation></semantics></math></p>
+<p>where
+<math role="math" aria-label="z_{1}, \ldots, z_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mn>1</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>z</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">z_{1}, \ldots, z_{n}</annotation></semantics></math>
+are the zeros and poles of
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>,
+and
+<math role="math" aria-label="m_{j}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>m</mi><mi>j</mi></msub><annotation encoding="application/x-tex">m_{j}</annotation></semantics></math>
+is the order of
+<math role="math" aria-label="f(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(z)</annotation></semantics></math>
+at
+<math role="math" aria-label="z_{j}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mi>j</mi></msub><annotation encoding="application/x-tex">z_{j}</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Recall that the principal branch of the inverse tangent function is
+defined on the complex plane with two slits on the imaginary axis by</p>
+<p><math role="math" aria-label="\operatorname{Tan}^{-1} z=\frac{1}{2 i} \log \left(\frac{1+i z}{1-i z}\right), z \notin(-i \infty,-i] \cup[i, i \infty) ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">Tan</mi><mo>&#8289;</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>z</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>i</mi></mrow></mfrac><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mi>i</mi><mi>z</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>i</mi><mi>z</mi></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mi>z</mi><mo>&notin;</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>i</mi><mi>&infin;</mi><mo>,</mo><mi>−</mi><mi>i</mi><mo stretchy="false" form="postfix">]</mo><mo>&cup;</mo><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo>,</mo><mi>i</mi><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">\operatorname{Tan}^{-1} z=\frac{1}{2 i} \log \left(\frac{1+i z}{1-i z}\right), z \notin(-i \infty,-i] \cup[i, i \infty) .</annotation></semantics></math></p>
+<p>Find the derivative of
+<math role="math" aria-label="\operatorname{Tan}^{-1} z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">Tan</mi><mo>&#8289;</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>z</mi></mrow><annotation encoding="application/x-tex">\operatorname{Tan}^{-1} z</annotation></semantics></math>.<br />
+Consider the analytic continuation of
+<math role="math" aria-label="\operatorname{Tan}^{-1} z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">Tan</mi><mo>&#8289;</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>z</mi></mrow><annotation encoding="application/x-tex">\operatorname{Tan}^{-1} z</annotation></semantics></math>
+along the path
+<math role="math" aria-label="z(t)=\sqrt{3} e^{i t}, t \in[0,2 \pi]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msqrt><mn>3</mn></msqrt><msup><mi>e</mi><mrow><mi>i</mi><mi>t</mi></mrow></msup><mo>,</mo><mi>t</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mn>2</mn><mi>&pi;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">z(t)=\sqrt{3} e^{i t}, t \in[0,2 \pi]</annotation></semantics></math>.
+What is the analytic continuation of
+<math role="math" aria-label="\operatorname{Tan}^{-1} z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">Tan</mi><mo>&#8289;</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>z</mi></mrow><annotation encoding="application/x-tex">\operatorname{Tan}^{-1} z</annotation></semantics></math>
+at the end of the path?<br />
+Consider now the analytic continuation along a figure-eight path with
+the same starting and ending point as above, that circles
+<math role="math" aria-label="i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>i</mi><annotation encoding="application/x-tex">i</annotation></semantics></math>
+once in a counterclockwise direction and
+<math role="math" aria-label="-i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mi>i</mi></mrow><annotation encoding="application/x-tex">-i</annotation></semantics></math>
+once in a clockwise direction. What is the analytic continuation of
+<math role="math" aria-label="\operatorname{Tan}^{-1} z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow><mi mathvariant="normal">Tan</mi><mo>&#8289;</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup><mi>z</mi></mrow><annotation encoding="application/x-tex">\operatorname{Tan}^{-1} z</annotation></semantics></math>
+at the end of the path?</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Consider the function</p>
+<p><math role="math" aria-label="f(z)=\left(\frac{1+z}{1-z}\right)^{2}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>1</mn><mo>+</mo><mi>z</mi></mrow><mrow><mn>1</mn><mo>−</mo><mi>z</mi></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f(z)=\left(\frac{1+z}{1-z}\right)^{2}</annotation></semantics></math></p>
+<p>Is
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+one-to-one on the unit disk
+<math role="math" aria-label="D=\{z:|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">D=\{z:|z|&lt;1\}</annotation></semantics></math>
+? What is the image of
+<math role="math" aria-label="D" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>D</mi><annotation encoding="application/x-tex">D</annotation></semantics></math>
+under
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+?</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Compute</p>
+<p><math role="math" aria-label="P V \int_{-\infty}^{\infty} \frac{\sin x}{\left(x^{2}+4\right)(x-1)} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mi>V</mi><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow><mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">P V \int_{-\infty}^{\infty} \frac{\sin x}{\left(x^{2}+4\right)(x-1)} d x</annotation></semantics></math></p>
+<h2 class="unnumbered" id="part-ii">PART II</h2>
+<p>The functions below (in #6-9) are defined on the measure space (
+<math role="math" aria-label="X, \mathcal{M}, \mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>ℳ</mi><mo>,</mo><mi>&mu;</mi></mrow><annotation encoding="application/x-tex">X, \mathcal{M}, \mu</annotation></semantics></math>
+), where
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+is a finite measure. Don't forget to verify hypotheses in any theorems
+you use.</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Show that if
+<math role="math" aria-label="\left\{f_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{f_{n}\right\}</annotation></semantics></math>
+are measurable real-valued functions, then
+<math role="math" aria-label="g=\limsup f_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>=</mo><mrow><mi mathvariant="normal">limsup</mi><mo>&#8289;</mo></mrow><msub><mi>f</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">g=\limsup f_{n}</annotation></semantics></math>
+is also measurable. (Hint: find an expression for the set where
+<math role="math" aria-label="g&gt;\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&gt;</mo><mi>&alpha;</mi></mrow><annotation encoding="application/x-tex">g&gt;\alpha</annotation></semantics></math>,
+for any real
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>.)</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>Let
+<math role="math" aria-label="1&lt;p&lt;\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&lt;</mo><mi>p</mi><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">1&lt;p&lt;\infty</annotation></semantics></math>.
+State Hölder’s Inequality and use it to show that
+<math role="math" aria-label="L^{p} \subseteq L^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mi>p</mi></msup><mo>&sube;</mo><msup><mi>L</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">L^{p} \subseteq L^{1}</annotation></semantics></math>.
+Show that this inclusion is proper if
+<math role="math" aria-label="\mathcal{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℳ</mi><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math>
+contains sets of arbitrarily small positive measure.</p>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>Let
+<math role="math" aria-label="f \in L^{\infty}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>L</mi><mi>&infin;</mi></msup></mrow><annotation encoding="application/x-tex">f \in L^{\infty}</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="f \in L^{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>L</mi><mi>p</mi></msup></mrow><annotation encoding="application/x-tex">f \in L^{p}</annotation></semantics></math>
+for any
+<math role="math" aria-label="p&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">p&gt;0</annotation></semantics></math>,
+and prove that
+<math role="math" aria-label="\|f\|_{p} \rightarrow\|f\|_{\infty}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">&parallel;</mo><mi>f</mi><msub><mo stretchy="false" form="postfix">&parallel;</mo><mi>p</mi></msub><mo>&rarr;</mo><mo stretchy="false" form="postfix">&parallel;</mo><mi>f</mi><msub><mo stretchy="false" form="postfix">&parallel;</mo><mi>&infin;</mi></msub></mrow><annotation encoding="application/x-tex">\|f\|_{p} \rightarrow\|f\|_{\infty}</annotation></semantics></math>
+as
+<math role="math" aria-label="p \rightarrow \infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">p \rightarrow \infty</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-9">Problem 9</h2>
+<p>Suppose
+<math role="math" aria-label="\left\{f_{n}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{f_{n}\right\}</annotation></semantics></math>
+and
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+are
+<math role="math" aria-label="L^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>1</mn></msup><annotation encoding="application/x-tex">L^{1}</annotation></semantics></math>
+functions such that
+<math role="math" aria-label="f_{n} \rightarrow f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>&rarr;</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n} \rightarrow f</annotation></semantics></math>
+a.e. Show that it need not be true that
+<math role="math" aria-label="f_{n} \rightarrow f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>&rarr;</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n} \rightarrow f</annotation></semantics></math>
+in
+<math role="math" aria-label="L^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>L</mi><mn>1</mn></msup><annotation encoding="application/x-tex">L^{1}</annotation></semantics></math>,
+but this does follow if in addition
+<math role="math" aria-label="\left\|f_{n}\right\|_{1} \rightarrow\|f\|_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo stretchy="true" form="prefix">&parallel;</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">&parallel;</mo></mrow><mn>1</mn></msub><mo>&rarr;</mo><mo stretchy="false" form="postfix">&parallel;</mo><mi>f</mi><msub><mo stretchy="false" form="postfix">&parallel;</mo><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\left\|f_{n}\right\|_{1} \rightarrow\|f\|_{1}</annotation></semantics></math>.
+(Hint: apply Fatou’s Lemma to the functions
+<math role="math" aria-label="|f|+\left|f_{n}\right| \pm\left|f-f_{n}\right|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>&plusmn;</mo><mrow><mo stretchy="true" form="prefix">|</mo><mi>f</mi><mo>−</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow></mrow><annotation encoding="application/x-tex">|f|+\left|f_{n}\right| \pm\left|f-f_{n}\right|</annotation></semantics></math>.)</p>
+<h2 class="unnumbered" id="problem-10">Problem 10</h2>
+<p>Let
+<math role="math" aria-label="\mathfrak{X}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝔛</mi><annotation encoding="application/x-tex">\mathfrak{X}</annotation></semantics></math>
+be a real Banach space, with
+<math role="math" aria-label="\mathfrak{Y}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝔜</mi><annotation encoding="application/x-tex">\mathfrak{Y}</annotation></semantics></math>
+a proper closed subspace.<br />
+a) Define the quotient norm on
+<math role="math" aria-label="\mathfrak{X} / \mathfrak{Y}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔛</mi><mi>/</mi><mi>𝔜</mi></mrow><annotation encoding="application/x-tex">\mathfrak{X} / \mathfrak{Y}</annotation></semantics></math>
+and show that it is complete, so that
+<math role="math" aria-label="\mathfrak{X} / \mathfrak{Y}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝔛</mi><mi>/</mi><mi>𝔜</mi></mrow><annotation encoding="application/x-tex">\mathfrak{X} / \mathfrak{Y}</annotation></semantics></math>
+is a Banach space. (You do not need to check that this is a norm.)<br />
+b) Let
+<math role="math" aria-label="x \in \mathfrak{X} \backslash \mathfrak{Y}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>𝔛</mi><mo>&setminus;</mo><mi>𝔜</mi></mrow><annotation encoding="application/x-tex">x \in \mathfrak{X} \backslash \mathfrak{Y}</annotation></semantics></math>.
+Show that there is
+<math role="math" aria-label="f \in \mathfrak{X}^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>𝔛</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">f \in \mathfrak{X}^{*}</annotation></semantics></math>
+such that
+<math role="math" aria-label="\left.f\right|_{\mathfrak{Y}}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi>f</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi>𝔜</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\left.f\right|_{\mathfrak{Y}}=0</annotation></semantics></math>
+and
+<math role="math" aria-label="f(x) \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f(x) \neq 0</annotation></semantics></math>.
+If
+<math role="math" aria-label="\|f\|=1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">&parallel;</mo><mi>f</mi><mo stretchy="false" form="postfix">&parallel;</mo><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\|f\|=1</annotation></semantics></math>,
+what is the greatest possible value for
+<math role="math" aria-label="f(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)</annotation></semantics></math>
+?</p>
+</main>
+</body>
+</html>

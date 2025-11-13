@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Analysis General Exam August 2016 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Analysis General Exam August 2016</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<p>Name:
+<math role="math" aria-label="\_\_\_\_" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>_</mi><mi>_</mi><mi>_</mi><mi>_</mi></mrow><annotation encoding="application/x-tex">\_\_\_\_</annotation></semantics></math></p>
+<p>Pledge:
+<math role="math" aria-label="\_\_\_\_" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>_</mi><mi>_</mi><mi>_</mi><mi>_</mi></mrow><annotation encoding="application/x-tex">\_\_\_\_</annotation></semantics></math></p>
+<p>Signature:
+<math role="math" aria-label="\_\_\_\_" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>_</mi><mi>_</mi><mi>_</mi><mi>_</mi></mrow><annotation encoding="application/x-tex">\_\_\_\_</annotation></semantics></math><br />
+To get credit for a problem, you must include all logical steps and
+detailed calculations. Verify or give adequate reasons for assertions
+that you make. Cite by name any theorems you wish to invoke. Please
+write only on one side of your paper.</p>
+<div class="center">
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Pr</th>
+<th style="text-align: left;">Score</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">1</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">2</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">5</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">6</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">7</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">8</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">9</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: center;">10</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td
+style="text-align: center;"><math role="math" aria-label="\sum" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&sum;</mo><annotation encoding="application/x-tex">\sum</annotation></semantics></math></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<main>
+<h1 class="unnumbered" id="analysis-general-exam-august-2016">Analysis General Exam August 2016</h1>
+<h2 class="unnumbered" id="part-i">PART I</h2>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>An entire function
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is said to be of exponential type if there exist positive constants
+<math role="math" aria-label="c_{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mn>1</mn></msub><annotation encoding="application/x-tex">c_{1}</annotation></semantics></math>
+and
+<math role="math" aria-label="c_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>c</mi><mn>2</mn></msub><annotation encoding="application/x-tex">c_{2}</annotation></semantics></math>
+such that</p>
+<p><math role="math" aria-label="|f(z)| \leq c_{1} e^{c_{2}|z|}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><msub><mi>c</mi><mn>1</mn></msub><msup><mi>e</mi><mrow><msub><mi>c</mi><mn>2</mn></msub><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo></mrow></msup></mrow><annotation encoding="application/x-tex">|f(z)| \leq c_{1} e^{c_{2}|z|}</annotation></semantics></math></p>
+<p>for all
+<math role="math" aria-label="z" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>z</mi><annotation encoding="application/x-tex">z</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is of exponential type if and only
+<math role="math" aria-label="f^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>f</mi><mi>′</mi></msup><annotation encoding="application/x-tex">f^{\prime}</annotation></semantics></math>
+is of exponential type.</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Let
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+be an entire function such that</p>
+<p><math role="math" aria-label="|f(z)| \leq 2 e^{x} \text { for all } z=x+i y \text { such that }|z|&gt;100 ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>2</mn><msup><mi>e</mi><mi>x</mi></msup><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for all </mtext><mspace width="0.333em"></mspace></mrow><mi>z</mi><mo>=</mo><mi>x</mi><mo>+</mo><mi>i</mi><mi>y</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> such that </mtext><mspace width="0.333em"></mspace></mrow><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&gt;</mo><mn>100</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">|f(z)| \leq 2 e^{x} \text { for all } z=x+i y \text { such that }|z|&gt;100 .</annotation></semantics></math></p>
+<p>Show that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is a multiple of the complex exponential function
+<math role="math" aria-label="e(z)=e^{z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msup><mi>e</mi><mi>z</mi></msup></mrow><annotation encoding="application/x-tex">e(z)=e^{z}</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Let
+<math role="math" aria-label="\Omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Omega;</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>
+be an open set containing the closed unit disc, and
+<math role="math" aria-label="\left\{f_{n}\right\}_{n=1}^{\infty}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><annotation encoding="application/x-tex">\left\{f_{n}\right\}_{n=1}^{\infty}</annotation></semantics></math>
+a sequence of analytic functions on
+<math role="math" aria-label="\Omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Omega;</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>
+converging to a function
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+uniformly on compacts (in
+<math role="math" aria-label="\Omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Omega;</mi><annotation encoding="application/x-tex">\Omega</annotation></semantics></math>
+). Suppose that the minimum of
+<math role="math" aria-label="|f|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|f|</annotation></semantics></math>
+on the unit circle is a strictly positive number. Show that there exists
+a positive integer
+<math role="math" aria-label="n_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>n</mi><mn>0</mn></msub><annotation encoding="application/x-tex">n_{0}</annotation></semantics></math>
+such that the functions
+<math role="math" aria-label="f_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>n</mi></msub><annotation encoding="application/x-tex">f_{n}</annotation></semantics></math>
+have the same number of zeros in the open unit disc for all
+<math role="math" aria-label="n \geq n_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><msub><mi>n</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">n \geq n_{0}</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Show that</p>
+<p><math role="math" aria-label="\int_{-\infty}^{\infty} \frac{\sin x}{x} d x=\pi" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mrow><mi>−</mi><mi>&infin;</mi></mrow><mi>&infin;</mi></msubsup><mfrac><mrow><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow><mi>x</mi></mfrac><mi>d</mi><mi>x</mi><mo>=</mo><mi>&pi;</mi></mrow><annotation encoding="application/x-tex">\int_{-\infty}^{\infty} \frac{\sin x}{x} d x=\pi</annotation></semantics></math></p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Let</p>
+<p><math role="math" aria-label="A=\{z \in \mathbb{C}: 0&lt;|z|&lt;1\} \text { and } B=\{z \in \mathbb{C}: 1&lt;|z|&lt;2\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mn>0</mn><mo>&lt;</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> and </mtext><mspace width="0.333em"></mspace></mrow><mi>B</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mn>1</mn><mo>&lt;</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>2</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">A=\{z \in \mathbb{C}: 0&lt;|z|&lt;1\} \text { and } B=\{z \in \mathbb{C}: 1&lt;|z|&lt;2\}</annotation></semantics></math></p>
+<p>Show that
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+and
+<math role="math" aria-label="B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>B</mi><annotation encoding="application/x-tex">B</annotation></semantics></math>
+are not conformally equivalent.</p>
+<h2 class="unnumbered" id="part-ii">PART II</h2>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Let (
+<math role="math" aria-label="X, \mathcal{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>ℳ</mi></mrow><annotation encoding="application/x-tex">X, \mathcal{M}</annotation></semantics></math>
+) denote a measurable space and suppose
+<math role="math" aria-label="\mu, \nu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo>,</mo><mi>&nu;</mi></mrow><annotation encoding="application/x-tex">\mu, \nu</annotation></semantics></math>
+are two positive measures on
+<math role="math" aria-label="\mathcal{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℳ</mi><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math>
+such that
+<math role="math" aria-label="\mu \leq \nu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo>&le;</mo><mi>&nu;</mi></mrow><annotation encoding="application/x-tex">\mu \leq \nu</annotation></semantics></math>,
+that is,
+<math role="math" aria-label="\mu(A) \leq \nu(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo><mo>&le;</mo><mi>&nu;</mi><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu(A) \leq \nu(A)</annotation></semantics></math>
+for all
+<math role="math" aria-label="A \in \mathcal{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&isin;</mo><mi>ℳ</mi></mrow><annotation encoding="application/x-tex">A \in \mathcal{M}</annotation></semantics></math>.
+Show that</p>
+<p><math role="math" aria-label="\int_{X} f d \mu \leq \int_{X} f d \nu" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mi>X</mi></msub><mi>f</mi><mi>d</mi><mi>&mu;</mi><mo>&le;</mo><msub><mo>&int;</mo><mi>X</mi></msub><mi>f</mi><mi>d</mi><mi>&nu;</mi></mrow><annotation encoding="application/x-tex">\int_{X} f d \mu \leq \int_{X} f d \nu</annotation></semantics></math></p>
+<p>for all measurable
+<math role="math" aria-label="f: X \rightarrow[0, \infty]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f: X \rightarrow[0, \infty]</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>For
+<math role="math" aria-label="p \in[1, \infty]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>1</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">p \in[1, \infty]</annotation></semantics></math>,
+let
+<math role="math" aria-label="L^{p}=L^{p}(X, \mathcal{M})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>L</mi><mi>p</mi></msup><mo>=</mo><msup><mi>L</mi><mi>p</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo>,</mo><mi>ℳ</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L^{p}=L^{p}(X, \mathcal{M})</annotation></semantics></math>
+where (
+<math role="math" aria-label="X, \mathcal{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>ℳ</mi></mrow><annotation encoding="application/x-tex">X, \mathcal{M}</annotation></semantics></math>
+) is a measurable space.</p>
+<p>Prove that, for
+<math role="math" aria-label="1 \leq p&lt;q&lt;r \leq \infty, L^{p} \cap L^{r}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>&le;</mo><mi>p</mi><mo>&lt;</mo><mi>q</mi><mo>&lt;</mo><mi>r</mi><mo>&le;</mo><mi>&infin;</mi><mo>,</mo><msup><mi>L</mi><mi>p</mi></msup><mo>&cap;</mo><msup><mi>L</mi><mi>r</mi></msup></mrow><annotation encoding="application/x-tex">1 \leq p&lt;q&lt;r \leq \infty, L^{p} \cap L^{r}</annotation></semantics></math>
+equipped with the norm
+<math role="math" aria-label="\|f\|:=\|f\|_{p}+\|f\|_{r}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="postfix">&parallel;</mo><mi>f</mi><mo stretchy="false" form="postfix">&parallel;</mo><mo>:=</mo><mo stretchy="false" form="postfix">&parallel;</mo><mi>f</mi><msub><mo stretchy="false" form="postfix">&parallel;</mo><mi>p</mi></msub><mi>+</mi><mo stretchy="false" form="postfix">&parallel;</mo><mi>f</mi><msub><mo stretchy="false" form="postfix">&parallel;</mo><mi>r</mi></msub></mrow><annotation encoding="application/x-tex">\|f\|:=\|f\|_{p}+\|f\|_{r}</annotation></semantics></math>
+is a Banach space and the inclusion map
+<math role="math" aria-label="\iota: L^{p} \cap L^{r} \rightarrow L^{q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&iota;</mi><mo>:</mo><msup><mi>L</mi><mi>p</mi></msup><mo>&cap;</mo><msup><mi>L</mi><mi>r</mi></msup><mo>&rarr;</mo><msup><mi>L</mi><mi>q</mi></msup></mrow><annotation encoding="application/x-tex">\iota: L^{p} \cap L^{r} \rightarrow L^{q}</annotation></semantics></math>
+given by
+<math role="math" aria-label="\iota(f)=f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&iota;</mi><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">\iota(f)=f</annotation></semantics></math>
+is continuous with respect to the norm topologies.</p>
+<h2 class="unnumbered" id="problem-8">Problem 8</h2>
+<p>Prove that</p>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} \int_{0}^{n}\left(1-\frac{x}{n}\right)^{n} d x=1" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mo>&int;</mo><mn>0</mn><mi>n</mi></msubsup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>−</mo><mfrac><mi>x</mi><mi>n</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msup><mi>d</mi><mi>x</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} \int_{0}^{n}\left(1-\frac{x}{n}\right)^{n} d x=1</annotation></semantics></math></p>
+<h2 class="unnumbered" id="problem-9">Problem 9</h2>
+<p>Suppose that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is Lebesgue integrable on
+<math role="math" aria-label="(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math>
+and
+<math role="math" aria-label="g:(0,1) \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">g:(0,1) \rightarrow \mathbb{R}</annotation></semantics></math>
+is defined by</p>
+<p><math role="math" aria-label="g(x):=\int_{x}^{1} \frac{f(t)}{t} d t" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><msubsup><mo>&int;</mo><mi>x</mi><mn>1</mn></msubsup><mfrac><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>t</mi><mo stretchy="false" form="postfix">)</mo></mrow><mi>t</mi></mfrac><mi>d</mi><mi>t</mi></mrow><annotation encoding="application/x-tex">g(x):=\int_{x}^{1} \frac{f(t)}{t} d t</annotation></semantics></math></p>
+<p>Prove that
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+is integrable on
+<math role="math" aria-label="(0,1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(0,1)</annotation></semantics></math>
+and</p>
+<p><math role="math" aria-label="\int_{0}^{1} g(x) d x=\int_{0}^{1} f(x) d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>1</mn></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{1} g(x) d x=\int_{0}^{1} f(x) d x</annotation></semantics></math></p>
+<h2 class="unnumbered" id="problem-10">Problem 10</h2>
+<p>Suppose
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+is a Hilbert space and
+<math role="math" aria-label="M_{n} \subset H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>n</mi></msub><mo>&sub;</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">M_{n} \subset H</annotation></semantics></math>
+is an increasing sequence of closed subspaces. Let
+<math role="math" aria-label="M:=\cup_{n=1}^{\infty} M_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>:=</mo><msubsup><mo>&cup;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><msub><mi>M</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">M:=\cup_{n=1}^{\infty} M_{n}</annotation></semantics></math>
+and
+<math role="math" aria-label="P_{n}=P_{M_{n}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>P</mi><mi>n</mi></msub><mo>=</mo><msub><mi>P</mi><msub><mi>M</mi><mi>n</mi></msub></msub></mrow><annotation encoding="application/x-tex">P_{n}=P_{M_{n}}</annotation></semantics></math>
+and
+<math role="math" aria-label="P_{\bar{M}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>P</mi><mover><mi>M</mi><mo accent="true">‾</mo></mover></msub><annotation encoding="application/x-tex">P_{\bar{M}}</annotation></semantics></math>
+be orthogonal projection onto
+<math role="math" aria-label="M_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mi>n</mi></msub><annotation encoding="application/x-tex">M_{n}</annotation></semantics></math>
+and
+<math role="math" aria-label="\bar{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>M</mi><mo accent="true">‾</mo></mover><annotation encoding="application/x-tex">\bar{M}</annotation></semantics></math>
+(the closure of
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+) respectively. Show that</p>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} P_{n} x=P_{\bar{M}} x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msub><mi>P</mi><mi>n</mi></msub><mi>x</mi><mo>=</mo><msub><mi>P</mi><mover><mi>M</mi><mo accent="true">‾</mo></mover></msub><mi>x</mi></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} P_{n} x=P_{\bar{M}} x</annotation></semantics></math></p>
+<p>for all
+<math role="math" aria-label="x \in H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">x \in H</annotation></semantics></math>.</p>
+<p><em>Hint:</em> First prove it for
+<math role="math" aria-label="x \in M^{\perp}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><msup><mi>M</mi><mo>&perp;</mo></msup></mrow><annotation encoding="application/x-tex">x \in M^{\perp}</annotation></semantics></math>,
+then
+<math role="math" aria-label="x \in M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">x \in M</annotation></semantics></math>,
+and then
+<math role="math" aria-label="x \in \bar{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mover><mi>M</mi><mo accent="true">‾</mo></mover></mrow><annotation encoding="application/x-tex">x \in \bar{M}</annotation></semantics></math>.</p>
+</main>
+</body>
+</html>
