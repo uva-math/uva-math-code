@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>TOPOLOGY GENERAL EXAM FALL 2025 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem {
+      margin-bottom: 1.5em;
+    }
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+    .subproblem {
+      margin-left: 2em;
+      margin-top: 0.5em;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">TOPOLOGY GENERAL EXAM FALL 2025</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 id="topology-general-exam-fall-2025">TOPOLOGY GENERAL EXAM FALL 2025</h1>
+<p>Instructions: This is a four hour exam. Your solutions should be
+legible and clearly organized, written in complete sentences in good
+mathematical style on your own paper. All work should be your own-no
+outside sources are permitted-using methods and results from the first
+year topology courses. Each problem is worth the same number of
+points.</p>
+
+<div class="problem">
+<p>(1) Let
+<math role="math" aria-label="X=S^{1} \times \mathbb{R} P^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><msup><mi>S</mi><mn>1</mn></msup><mo>&times;</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">X=S^{1} \times \mathbb{R} P^{2}</annotation></semantics></math>.<br /><span class="subproblem">(a) Compute
+<math role="math" aria-label="\pi_{1}(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\pi_{1}(X)</annotation></semantics></math>.</span><br /><span class="subproblem">(b) Describe the universal cover of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+and explicitly describe each element in the group of deck
+transformations of the universal cover.</span><br /><br /><span class="problem-number">(2)</span> Let
+<math role="math" aria-label="x_{1}, x_{2}, \ldots, x_{10}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>x</mi><mn>10</mn></msub></mrow><annotation encoding="application/x-tex">x_{1}, x_{2}, \ldots, x_{10}</annotation></semantics></math>
+be 10 distinct points on the 2 -torus
+<math role="math" aria-label="T^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mn>2</mn></msup><annotation encoding="application/x-tex">T^{2}</annotation></semantics></math>.
+Let
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+be the quotient of
+<math role="math" aria-label="T^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>T</mi><mn>2</mn></msup><annotation encoding="application/x-tex">T^{2}</annotation></semantics></math>
+obtained by identifying all 10 points.<br /><span class="subproblem">(a) Compute
+<math role="math" aria-label="\pi_{1}(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\pi_{1}(X)</annotation></semantics></math>.</span><br /><span class="subproblem">(b) Compute
+<math role="math" aria-label="H_{n}(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>H</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">H_{n}(X)</annotation></semantics></math>
+for all
+<math role="math" aria-label="n \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n \geq 0</annotation></semantics></math>.</span><br /><br /><span class="problem-number">(3)</span> (a) Let
+<math role="math" aria-label="f: S^{1} \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mn>1</mn></msup><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">f: S^{1} \rightarrow \mathbb{R}</annotation></semantics></math>
+be a continuous map. Show that there exists some
+<math role="math" aria-label="x \in S^{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">x \in S^{1}</annotation></semantics></math>
+such that
+<math role="math" aria-label="f(x)=f(-x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f(x)=f(-x)</annotation></semantics></math>.<br /><span class="subproblem">(b) Show that any continuous map
+<math role="math" aria-label="g: \mathbb{R} P^{2} \times \mathbb{R} P^{2} \rightarrow T^{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup><mo>&times;</mo><mi>&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup><mo>&rarr;</mo><msup><mi>T</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">g: \mathbb{R} P^{2} \times \mathbb{R} P^{2} \rightarrow T^{2}</annotation></semantics></math>
+is nullhomotopic.</span><br /><br /><span class="problem-number">(4)</span> Let (
+<math role="math" aria-label="C, d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>,</mo><mi>d</mi></mrow><annotation encoding="application/x-tex">C, d</annotation></semantics></math>
+) and (
+<math role="math" aria-label="C^{\prime}, d^{\prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>C</mi><mi>′</mi></msup><mo>,</mo><msup><mi>d</mi><mi>′</mi></msup></mrow><annotation encoding="application/x-tex">C^{\prime}, d^{\prime}</annotation></semantics></math>
+) be chain complexes of abelian groups. The mapping cone of a chain map
+<math role="math" aria-label="f:(C, d) \rightarrow\left(C^{\prime}, d^{\prime}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mo stretchy="false" form="prefix">(</mo><mi>C</mi><mo>,</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>C</mi><mi>′</mi></msup><mo>,</mo><msup><mi>d</mi><mi>′</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f:(C, d) \rightarrow\left(C^{\prime}, d^{\prime}\right)</annotation></semantics></math>,
+denoted (cone
+<math role="math" aria-label="(f), d^{\prime \prime}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><msup><mi>d</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup></mrow><annotation encoding="application/x-tex">(f), d^{\prime \prime}</annotation></semantics></math>
+), is defined by</p>
+<p><math role="math" aria-label="\operatorname{cone}(f)_{n}:=C_{n-1} \oplus C_{n}^{\prime}, \quad d^{\prime \prime}\left(c, c^{\prime}\right)=\left(-d(c), d^{\prime}\left(c^{\prime}\right)-f(c)\right) ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">cone</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><msub><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msub><mo>:=</mo><msub><mi>C</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>&oplus;</mo><msubsup><mi>C</mi><mi>n</mi><mi>′</mi></msubsup><mo>,</mo><mspace width="1.0em"></mspace><msup><mi>d</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>c</mi><mo>,</mo><msup><mi>c</mi><mi>′</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>−</mi><mi>d</mi><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><msup><mi>d</mi><mi>′</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>c</mi><mi>′</mi></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>−</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>c</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">\operatorname{cone}(f)_{n}:=C_{n-1} \oplus C_{n}^{\prime}, \quad d^{\prime \prime}\left(c, c^{\prime}\right)=\left(-d(c), d^{\prime}\left(c^{\prime}\right)-f(c)\right) .</annotation></semantics></math></p>
+<p>Prove that (cone
+<math role="math" aria-label="\left.(f), d^{\prime \prime}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><msup><mi>d</mi><mrow><mi>′</mi><mi>′</mi></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left.(f), d^{\prime \prime}\right)</annotation></semantics></math>
+is a chain complex.<br /><br /><span class="problem-number">(5)</span> Consider the family of smooth maps
+<math role="math" aria-label="f_{c}: \mathbb{R}^{2} \rightarrow \mathbb{R}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>c</mi></msub><mo>:</mo><msup><mi>&Ropf;</mi><mn>2</mn></msup><mo>&rarr;</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">f_{c}: \mathbb{R}^{2} \rightarrow \mathbb{R}^{3}</annotation></semantics></math>
+defined by</p>
+<p><math role="math" aria-label="f_{c}(x, y)=\left(x, y, c x+y^{2}\right), \quad c \in \mathbb{R} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>c</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>c</mi><mi>x</mi><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo><mspace width="1.0em"></mspace><mi>c</mi><mo>&isin;</mo><mi>&Ropf;</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">f_{c}(x, y)=\left(x, y, c x+y^{2}\right), \quad c \in \mathbb{R} .</annotation></semantics></math></p>
+<p>Let
+<math role="math" aria-label="S \subset \mathbb{R}^{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&sub;</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">S \subset \mathbb{R}^{3}</annotation></semantics></math>
+be the surface defined by</p>
+<p><math role="math" aria-label="S=\left\{(x, y, z) \in \mathbb{R}^{3} \mid z=x^{2}+y^{2}\right\} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msup><mi>&Ropf;</mi><mn>3</mn></msup><mo>∣</mo><mi>z</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">}</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">S=\left\{(x, y, z) \in \mathbb{R}^{3} \mid z=x^{2}+y^{2}\right\} .</annotation></semantics></math></p>
+<p>(a) For which values of
+<math role="math" aria-label="c \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">c \in \mathbb{R}</annotation></semantics></math>
+is the map
+<math role="math" aria-label="f_{c}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>c</mi></msub><annotation encoding="application/x-tex">f_{c}</annotation></semantics></math>
+transverse to the surface
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+?<br /><span class="subproblem">(b) For what values of
+<math role="math" aria-label="c \in \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mo>&isin;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">c \in \mathbb{R}</annotation></semantics></math>
+is the intersection of the image of
+<math role="math" aria-label="f_{c}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>c</mi></msub><annotation encoding="application/x-tex">f_{c}</annotation></semantics></math>
+with
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+a manifold?</span><br /><br /><span class="problem-number">(6)</span> Consider the 3 -form</p>
+<p><math role="math" aria-label="\theta=e^{w}(x d y \wedge d z+y d z \wedge d x+z d x \wedge d y)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&theta;</mi><mo>=</mo><msup><mi>e</mi><mi>w</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mi>d</mi><mi>y</mi><mo>&and;</mo><mi>d</mi><mi>z</mi><mo>+</mo><mi>y</mi><mi>d</mi><mi>z</mi><mo>&and;</mo><mi>d</mi><mi>x</mi><mo>+</mo><mi>z</mi><mi>d</mi><mi>x</mi><mo>&and;</mo><mi>d</mi><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\theta=e^{w}(x d y \wedge d z+y d z \wedge d x+z d x \wedge d y)</annotation></semantics></math></p>
+<p>on
+<math role="math" aria-label="\mathbb{R}^{4}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&Ropf;</mi><mn>4</mn></msup><annotation encoding="application/x-tex">\mathbb{R}^{4}</annotation></semantics></math>
+where the coordinates are
+<math role="math" aria-label="x, y, z, w" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo>,</mo><mi>w</mi></mrow><annotation encoding="application/x-tex">x, y, z, w</annotation></semantics></math>.
+Let
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+be the hemisphere
+<math role="math" aria-label="x^{2}+y^{2}+ z^{2}+w^{2}=1, w \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup><mo>+</mo><msup><mi>w</mi><mn>2</mn></msup><mo>=</mo><mn>1</mn><mo>,</mo><mi>w</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">x^{2}+y^{2}+ z^{2}+w^{2}=1, w \geq 0</annotation></semantics></math>,
+with the orientation induced as being part of the boundary of the 4
+-ball with the standard orientation. Compute</p>
+<p><math role="math" aria-label="\int_{S} \mathrm{~d} \theta ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mi>S</mi></msub><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">d</mi></mrow><mi>&theta;</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\int_{S} \mathrm{~d} \theta .</annotation></semantics></math></p>
+<p>(7) Let
+<math role="math" aria-label="p: M \rightarrow N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">p: M \rightarrow N</annotation></semantics></math>
+be a smooth covering map between closed manifolds of some dimension
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+Suppose
+<math role="math" aria-label="N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+is oriented. Show that
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is orientable. Pick an orientation on
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+and compute the degree of
+<math role="math" aria-label="p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+in terms of the number of sheets of the covering.</p>
+</main>
+</body>
+</html>

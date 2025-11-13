@@ -107,7 +107,7 @@ Below are old exams and study materials for each of the subfields.
   
   <h2>Topology</h2>
 
-  - [08/2025]({{site.url}}/graduate/exams/topology/2025-08.pdf)
+  - [08/2025]({{site.url}}/graduate/exams/topology/2025-08.html) &bull; <a href="{{site.url}}/graduate/exams/topology/2025-08.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2025]({{site.url}}/graduate/exams/topology/2025-01.pdf)
   - [08/2024]({{site.url}}/graduate/exams/topology/2024-08.pdf)
   - [01/2024]({{site.url}}/graduate/exams/topology/2024-01.pdf)
