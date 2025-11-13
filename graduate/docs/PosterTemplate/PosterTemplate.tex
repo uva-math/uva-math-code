@@ -1,0 +1,152 @@
+\documentclass[draft]{scrartcl}
+\usepackage{amssymb,rawfonts,amsthm,amsmath,amsfonts,transparent}
+\usepackage{amssymb,longtable,multicol,wrapfig,hanging}
+\usepackage[final]{graphicx}
+\usepackage{xcolor,lipsum}
+\usepackage{eso-pic}
+\usepackage{booktabs,colortbl}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{color}
+\usepackage{chapterbib,mathscinet}
+\usepackage{pdfpages,wrapfig}
+
+\input xy
+\xyoption{all}
+
+\usepackage{enumitem}
+\setlist{leftmargin=*,align=left,itemsep=0pt,topsep=2pt,font=\sffamily\color{UVAorange}}
+
+%\definecolor{UVAblue}{RGB}{25,25,112}
+\definecolor{UVAblue}{RGB}{0,0,100}
+\definecolor{UVAorange}{RGB}{175,70,00}
+
+\renewcommand{\labelitemi}{\color{UVAorange}{$\bullet$}}
+\newcommand{\fh}[1]{{\sffamily{\color{UVAorange}{#1}}}}
+
+\titleformat{\subsubsection}[runin]
+{\normalfont\sffamily\bfseries\color{UVAblue}}
+{\thesubsubsection}{.5em}{}[.]
+\titlespacing*{\subsubsection}
+{0pt}{8pt}{\wordsep}
+
+\titleformat{\subsection}[hang]
+{\normalfont\large\sffamily\bfseries\color{UVAblue}}
+{\arabic{subsection}}{.5em}{}
+\titlespacing*{\subsection}
+{0pt}{6pt}{\wordsep}
+
+\titleformat{\section}[hang]
+{\normalfont\huge\sffamily\bfseries\color{UVAblue}}
+{\thesection}{.5em}{}
+\titlespacing*{\section}
+{0pt}{6pt}{\wordsep}
+
+
+\newtheoremstyle{theorem}{\topsep}{\topsep}{}{}{\sffamily\bfseries\color{UVAblue}}{}{.5em}{}
+\theoremstyle{theorem}
+\newtheorem*{theorem}{Theorem}
+\newtheorem*{definition}{Definition}
+\newtheorem*{conjecture}{Conjecture}
+\newtheorem*{proposition}{Proposition}
+\newtheorem*{example}{Example}
+\newtheorem*{observation}{Observation}
+
+\geometry{top=3.5cm, bottom=1.7cm, left=1.7cm, right=1.7cm}
+
+\begin{document}
+
+\arrayrulecolor{UVAblue}
+\AddToShipoutPicture{%
+\put(0,0){
+	\parbox[b][\paperheight]{\paperwidth}{
+		\vfill\centering\includegraphics[width=\textwidth]{rotunda-drawing.pdf}
+		\vfill
+		}
+	}
+% the following causes the background rotunda image to be transparent/lighter
+\put(0,0){
+	\parbox[b][\paperheight]{\paperwidth}{
+		\vfill\centering\transparent{0.85}\textcolor{white}{\rule{17cm}{15cm}}
+		\vfill
+		}
+	}
+%\put(0,735){{\color{UVAorange}\line(1,0){595}}}
+%\put(515,737){\includegraphics[width=2.5cm]{SmallRotunda.pdf}}
+\put(40,760){\includegraphics[width=15cm]{mathlogo2.pdf}}
+}
+
+%\newgeometry{top=2.7cm, bottom=1.7cm, left=1.7cm, right=1.7cm}
+\pagestyle{empty}
+
+% the \section command is overloaded here to make spacing work correctly. This should be your only section.
+\section*{Thesis Title}
+{\color{UVAorange}\noindent\rule{\textwidth}{1pt}}
+\smallskip
+
+%Give a general-math-audience, "elevator" style description of your thesis topic, background, context, results, etc etc. 
+Nam elementum maximus velit sed aliquam. Nullam diam dolor, tempus a elit eu, ultricies consequat mi. Duis facilisis velit vitae vehicula auctor. Aenean pretium neque in enim laoreet porttitor. Phasellus euismod, ante id facilisis efficitur, magna urna feugiat ex, eu rhoncus turpis urna non erat. Praesent vulputate orci ac ullamcorper egestas. Mauris cursus elit odio, ut tempus ante maximus eu. 
+
+
+\begin{theorem}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra nulla eget nisl sodales, id porttitor dolor ultrices ut efficitur purus viverra. Phasellus ex tellus, vehicula nec malesuada sed, viverra eu metus.
+\end{theorem}
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra nulla eget nisl sodales, id porttitor dolor ultrices.
+
+\begin{definition} Let $A$ be wonderful.
+% You don't have to use \xymatrix
+\[ \xymatrix{
+A\ar[r]^-{\alpha} & B\ar[d]^-{\beta} \\
+C\ar[u]^-{\gamma}\ar[r]^-{\gamma\prime} & D
+} \]
+\end{definition}
+Nam elementum maximus velit sed aliquam. Aenean pretium neque in enim laoreet porttitor. Phasellus euismod, ante id facilisis efficitur, magna urna feugiat ex, eu rhoncus turpis urna non erat. Praesent vulputate orci ac ullamcorper egestas. Mauris cursus elit odio, ut tempus ante maximus eu. 
+
+
+% You can use subsection* or \subsection but you don't have to
+\subsection*{Awesomeness may occur}
+Nam elementum maximus velit sed aliquam. Nullam diam dolor, tempus a elit eu, ultricies consequat mi. Duis facilisis velit vitae vehicula auctor. 
+
+
+% You don't have to use figures --- but here's an example
+\begin{wrapfigure}[10]{l}{.3\textwidth}
+%the two .3\textwidth can be changed to something else but should be kept equal
+% the [10] is the number of lines the figure should cover
+% the {l} can be changed to {r}
+%\includegraphics[width=.3\textwidth]{yourfigurehere.pdf}
+\end{wrapfigure}
+ Praesent vulputate orci ac ullamcorper egestas. Mauris cursus elit odio, ut tempus ante maximus eu. 
+\[ KK(A,B)\to Hom(K_*(A),K_*(B)) \]
+Phasellus euismod, ante id facilisis efficitur, magna urna feugiat ex, eu rhoncus turpis urna non erat. 
+
+
+Praesent vulputate orci ac ullamcorper egestas. Mauris cursus elit odio, ut tempus ante maximus eu. .  Cf.~\ref{ref1}.
+% You don't have to use all the different types of theorem environments
+\begin{conjecture} Hooray. \end{conjecture}
+\begin{proposition} Hooray. \end{proposition}
+\begin{example} Hooray. \end{example}
+\begin{observation} Hooray. \end{observation}
+% You don't have to have references
+\subsection*{References}
+\begin{enumerate}[label={[\arabic*]},ref={\color{UVAblue}[\arabic*]}]
+\item Include any references here
+\label{ref1}
+\end{enumerate}
+
+
+\vskip 0pt plus 1fill
+{\color{UVAorange}\noindent\rule{\textwidth}{1pt}}
+\begin{wrapfigure}{r}{.3\textwidth}
+% Here will be a picture of you, submit one or have Allison use a stock photo. the picture should be in 4:3 and not too small
+%\includegraphics[width=.3\textwidth]{yourfacehere.pdf}
+\end{wrapfigure}
+% You should put your name, name of advisor, expected graduation, and general interests here
+\section*{Thomas Jefferson}
+\begin{itemize}
+\item[Advisor]  %Advisor Name Here
+\item[Defense Date] %Defense Date and Time Here, or TBA, or delete
+\item[Defense Location] %Where are you defending
+\item[Homepage] %Homepage or other items, or delete
+\end{itemize}
+
+\end{document} 
