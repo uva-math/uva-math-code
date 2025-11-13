@@ -29,3 +29,7 @@ _site*
 _includes_backup*
 _layouts_backup*
 venv/
+scripts/__pycache__
+full_recreate.py
+process_algebra_html.py
+recreate_algebra_html.sh

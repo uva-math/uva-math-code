@@ -18,14 +18,19 @@ def check_heading_hierarchy(filepath):
     issues = []
 
     # Extract all headings with their levels using regex
-    heading_pattern = r'<h([1-6])(?:\s+[^>]*)?(?:\s+id="([^"]*)")?[^>]*>(.*?)</h\1>'
+    heading_pattern = r'<h([1-6])([^>]*)>(.*?)</h\1>'
     heading_matches = re.finditer(heading_pattern, content, re.DOTALL | re.IGNORECASE)
 
     headings = []
     for match in heading_matches:
         level = int(match.group(1))
-        id_attr = match.group(2) if match.group(2) else ''
+        attributes = match.group(2)
         text = re.sub(r'<[^>]+>', '', match.group(3)).strip()  # Remove HTML tags
+
+        # Extract id from attributes
+        id_match = re.search(r'id="([^"]*)"', attributes)
+        id_attr = id_match.group(1) if id_match else ''
+
         headings.append({
             'level': level,
             'text': text,

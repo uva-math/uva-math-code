@@ -20,8 +20,17 @@ You are going to convert ANY PDF file to accessible HTML with MathML using the M
 ## Workflow
 
 ### Step 1: Analyze PDF Structure
-**Before uploading**, read the ENTIRE PDF to understand its structure:
+**IMPORTANT**: First check the PDF file size to avoid wasting tokens on large files.
 
+```bash
+ls -lh <PDF_PATH>
+```
+
+**Size-based reading strategy**:
+- **≤ 200KB**: Read the ENTIRE PDF
+- **> 200KB**: DO NOT read the PDF - skip to Step 2 and rely on automated validation later
+
+**If file is ≤ 200KB**, read it:
 ```bash
 Read <PDF_PATH>
 ```
@@ -41,6 +50,8 @@ Analyze for:
 - **Special features**: Colored text, multi-column layout, footnotes, etc.
 
 **Document this analysis** - it will guide the conversion process.
+
+**If PDF > 200KB**: Note the file size and skip analysis. Proceed directly to Step 2 and rely on automated validation in later steps.
 
 ### Step 2: Upload PDF to Mathpix
 Use the Mathpix v3/pdf API endpoint to upload the PDF (SINGLE LINE - no backslashes):
@@ -283,13 +294,16 @@ If Jekyll front matter is required, add it at the VERY TOP of the HTML file (bef
 ---
 title: "Document Title from PDF"
 layout: page
-permalink: /path/to/document/
+permalink: /exact/file/path.html
+nav_parent: ParentSection
 ---
 ```
 
+**IMPORTANT**: The `permalink:` field MUST match the exact file path to ensure the file is accessible at its filename-based URL.
+
 **Layout by location:**
-- `graduate/` → `layout: g_page`
-- `undergraduate/` → `layout: ug_page`
+- `graduate/` → `layout: g_page`, `nav_parent: Graduate`
+- `undergraduate/` → `layout: ug_page`, `nav_parent: Undergraduate`
 - Other locations → `layout: page`
 
 **Examples:**
@@ -299,7 +313,7 @@ permalink: /path/to/document/
 ---
 title: "Algebra General Exam Review Guide 2022"
 layout: g_page
-permalink: /graduate/exams/algebra/review-guide-2022/
+permalink: /graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html
 nav_parent: Graduate
 ---
 <!DOCTYPE html>
@@ -312,7 +326,7 @@ nav_parent: Graduate
 ---
 title: "IMS Lecture Notes Spring 2024"
 layout: page
-permalink: /IMS/lectures/spring-2024-notes/
+permalink: /IMS/files/LectureNotes_Spring2024.html
 nav_parent: IMS
 ---
 <!DOCTYPE html>
@@ -333,11 +347,105 @@ nav_parent: IMS
 
 1. **Read the HTML** to get the title from the H1 heading
 2. **Determine if front matter needed** using logic above
-3. **If needed**, use Edit tool to add front matter:
+3. **Calculate the permalink**: Use the exact file path (e.g., for `graduate/exams/algebra/file.html` → `/graduate/exams/algebra/file.html`)
+4. **If needed**, use Edit tool to add front matter:
    - Old string: `<!DOCTYPE html>`
-   - New string: `---\ntitle: "Title Here"\nlayout: g_page\npermalink: /path/\nnav_parent: Graduate\n---\n<!DOCTYPE html>`
+   - New string: `---\ntitle: "Title Here"\nlayout: g_page\npermalink: /graduate/exams/algebra/filename.html\nnav_parent: Graduate\n---\n<!DOCTYPE html>`
+   - **Permalink MUST match the exact file path**
 
 **Note**: For long PDFs in `/graduate/exams/`, you'll likely be doing sample reading (not full PDF) per Step 15, so rely heavily on automated validation.
+
+### Step 12b: Strip Pandoc HTML Structure (CRITICAL for Jekyll)
+
+**⚠️ CRITICAL**: If Jekyll front matter was added, you MUST remove all HTML structure tags. Jekyll's layout provides the full HTML structure - the file should contain ONLY the content.
+
+**Files that need Jekyll front matter require this step:**
+- Long compilation/review PDFs in `/graduate/exams/`
+- Syllabus PDFs in `/graduate/docs/`
+- All PDFs in `/IMS/`, `/RTG_geomtop/`, `/undergraduate/`, etc.
+
+**What to remove:**
+1. Everything from `<!DOCTYPE html>` through `<body>` (all the `<html>`, `<head>`, `<style>`, etc.)
+2. Closing `</body>` and `</html>` tags at the end
+
+**The file should be structured as:**
+```html
+---
+title: "..."
+layout: g_page
+permalink: /path/to/file.html
+nav_parent: Graduate
+---
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+...
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+...
+</nav>
+
+<main>
+...
+</main>
+```
+
+**Steps to strip HTML structure:**
+
+1. **Find where content starts** (breadcrumb navigation):
+   ```bash
+   grep -n "^<nav aria-label=\"Breadcrumb\"" <HTML_PATH>
+   ```
+
+2. **Remove everything from line 7 (after front matter) to the line before breadcrumb**:
+   - Use Edit tool to remove the entire block from `<!DOCTYPE html>` through `<body>`
+   - This includes ALL Pandoc CSS in `<style>` tags
+
+3. **Remove closing tags**:
+   - Use Edit tool to remove `</body>` and `</html>` at the end
+   - File should end with `</main>`
+
+**Example Edit operations:**
+
+```
+Old string:
+---
+front matter
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  ...all the head content and style tags...
+</head>
+<body>
+<nav aria-label="Breadcrumb"
+
+New string:
+---
+front matter
+---
+
+<nav aria-label="Breadcrumb"
+```
+
+```
+Old string:
+</main>
+</body>
+</html>
+
+New string:
+</main>
+```
+
+**Why this is critical:**
+- Pandoc generates full standalone HTML with its own CSS
+- Jekyll layouts already provide `<html>`, `<head>`, `<body>` structure
+- Having BOTH causes CSS conflicts and broken formatting
+- Jekyll's CSS cannot override Pandoc's inline styles
+- The page width, fonts, colors, and spacing will be completely wrong
+
+**Short exam files (NO Jekyll front matter) do NOT need this step** - they remain as standalone HTML with Pandoc structure intact.
 
 ### Step 13: Save to final location
 Save the processed HTML file (from `/tmp/<PDF_ID>_fixed.html`) to the determined output location.
@@ -407,9 +515,9 @@ This will show which page(s) link to the PDF.
 
 **IMPORTANT**: Always send the FULL PDF to Mathpix in Step 2 (required for complete conversion). This step is about Claude reading for manual verification.
 
-**First, check PDF page count** from Step 1 analysis.
+**First, check the PDF file size** (from Step 1 `ls -lh` output).
 
-#### For SHORT PDFs (≤ 6 pages):
+#### For SMALL PDFs (≤ 200KB):
 Read the FULL PDF and FULL HTML:
 
 ```bash
@@ -428,33 +536,23 @@ Read <HTML_PATH>
 - [ ] No garbled text
 - [ ] No broken math formulas
 
-#### For LONG PDFs (> 6 pages):
+#### For LARGE PDFs (> 200KB):
 **DO NOT read the entire PDF with Claude** (would waste tokens). Instead:
 
-1. **Read strategic samples**:
-   ```bash
-   # Read first 2 pages
-   Read <PDF_PATH> (pages 1-2)
-
-   # Read middle section (e.g., pages 25-27 for a 50-page doc)
-   Read <PDF_PATH> (pages 25-27)
-
-   # Read last page
-   Read <PDF_PATH> (last page)
-   ```
+1. **Skip PDF reading entirely** - do not read any pages from the PDF
 
 2. **Read FULL HTML** (text is more compact):
    ```bash
    Read <HTML_PATH>
    ```
 
-3. **Spot-check critical elements**:
-   - [ ] First heading matches PDF title
-   - [ ] TOC structure matches PDF sections (if applicable)
-   - [ ] Sample math formulas from different sections look correct
+3. **Verify HTML structure visually** (without PDF comparison):
+   - [ ] First heading looks like a document title
+   - [ ] TOC structure present (if applicable)
+   - [ ] Math formulas present (check for `<math` tags)
    - [ ] Images present (check HTML for `<img>` tags)
-   - [ ] Tables formatted correctly
-   - [ ] Last section present (not truncated)
+   - [ ] Tables formatted correctly (if applicable)
+   - [ ] Document appears complete (not truncated)
 
 4. **Rely heavily on automated validation** (Step 17):
    - Automated scripts check ALL content systematically
@@ -462,15 +560,13 @@ Read <HTML_PATH>
    - Heading hierarchy check ensures structure
    - Links/images check ensures nothing broken
 
-**Document any discrepancies** and fix them immediately.
+**Document any issues found** and fix them immediately.
 
-**Page count guidelines**:
-- **1-6 pages**: Read FULL PDF with Claude (exams, short syllabi, brief notes)
-- **7-15 pages**: Read samples only (lecture notes, short papers)
-- **16-30 pages**: Read minimal samples + heavy automation (long papers, chapters)
-- **31+ pages**: Read first/last pages only + rely on automation (books, theses, handbooks)
+**File size guidelines**:
+- **≤ 200KB**: Read FULL PDF with Claude for comparison
+- **> 200KB**: DO NOT read PDF - rely entirely on HTML inspection and automated validation
 
-**Remember**: ALWAYS send the FULL PDF to Mathpix (Step 2) regardless of page count - the cutoff only applies to Claude's manual reading in this step.
+**Remember**: ALWAYS send the FULL PDF to Mathpix (Step 2) regardless of file size - the 200KB cutoff only applies to Claude's manual reading in this step.
 
 ### Step 16: AUTOMATED WCAG 2.1 LEVEL AA COMPLIANCE AUDIT
 **⚠️ CRITICAL**: Comprehensive accessibility audit with automated checks.
