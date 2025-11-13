@@ -11,6 +11,10 @@ nav_weight: 18
 
 {% include grad_general_exams.md %}
 
+<div class="alert alert-info" role="note" markdown="1">
+**Accessibility Note:** HTML versions are screen-reader accessible and recommended for all users. PDF versions are provided for printing only and may not be fully accessible.
+</div>
+
 Below are old exams and study materials for each of the subfields.
 
 <div class="row" markdown="1">
@@ -68,9 +72,9 @@ Below are old exams and study materials for each of the subfields.
   
   <h2>Analysis</h2>
   
-  - [01/2023, real]({{site.url}}/graduate/exams/analysis/2023Jan_real.pdf)
+  - [01/2023, real]({{site.url}}/graduate/exams/analysis/2023Jan_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2023Jan_real.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2022, complex]({{site.url}}/graduate/exams/analysis/2022Aug_complex.pdf)
-  - [08/2022, real]({{site.url}}/graduate/exams/analysis/2022Aug_real.pdf) &bull; [HTML]({{site.url}}/graduate/exams/analysis/2022Aug_real.html)
+  - [08/2022, real]({{site.url}}/graduate/exams/analysis/2022Aug_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2022Aug_real.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2022, complex]({{site.url}}/graduate/exams/analysis/2022Jan_complex.pdf)
   - [01/2022, real]({{site.url}}/graduate/exams/analysis/2022Jan_real.pdf)
   - [08/2021, complex]({{site.url}}/graduate/exams/analysis/2021Aug_complex.pdf)

@@ -17,6 +17,10 @@ nav_weight: 8
 
 ---
 
+<div class="alert alert-info" role="note" markdown="1">
+**Accessibility Note:** This page links to syllabi and exams with HTML versions that are screen-reader accessible and recommended for all users. PDF versions are provided for printing only and may not be fully accessible. External links to the Graduate Record are maintained by the University Registrar.
+</div>
+
 ## PhD Requirements
 
 ### Course Requirements

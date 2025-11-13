@@ -21,7 +21,7 @@ curl -X POST "https://api.mathpix.com/v3/pdf" \
   -H "app_id: $MATHPIX_APP_ID" \
   -H "app_key: $MATHPIX_API_KEY" \
   -F "file=@<PDF_PATH>" \
-  -F 'options_json={"conversion_formats": {"html.zip": true, "mmd": true}}'
+  -F 'options_json={"conversion_formats": {"html.zip": true, "tex.zip": true}}'
 ```
 
 Extract the `pdf_id` from the response.
@@ -36,18 +36,22 @@ curl -X GET "https://api.mathpix.com/v3/pdf/<PDF_ID>" \
 
 Wait until `"status":"completed"`.
 
-### Step 3: Download Mathpix Markdown
-Download the .mmd format (NOT .html, as it uses SVG):
+### Step 3: Download and Extract TeX Format
+Download the tex.zip format (NOT .html, as it uses SVG):
 ```bash
-curl -X GET "https://api.mathpix.com/v3/pdf/<PDF_ID>.mmd" \
+curl -X GET "https://api.mathpix.com/v3/pdf/<PDF_ID>.tex.zip" \
   -H "app_id: $MATHPIX_APP_ID" \
   -H "app_key: $MATHPIX_API_KEY" \
-  -o /tmp/output.mmd
+  -o /tmp/output.tex.zip
+
+cd /tmp && unzip -o output.tex.zip
 ```
+
+The extracted .tex file will be in a subdirectory named with the PDF_ID.
 
 ### Step 4: Convert to HTML with MathML using Pandoc
 ```bash
-pandoc /tmp/output.mmd -f latex -t html --mathml --standalone -o /tmp/output_mathml.html
+pandoc /tmp/<PDF_ID>/<PDF_ID>.tex -f latex -t html --mathml --standalone -o /tmp/output_mathml.html
 ```
 
 ### Step 5: Post-process to fix Unicode and improve accessibility
@@ -92,27 +96,38 @@ Use this entity mapping:
 ### Step 6: Save to final location
 Save the processed HTML file next to the original PDF with the same name but .html extension.
 
-### Step 7: Add HTML link to the generals page
-After saving the HTML file, you MUST add a link to it in `graduate/general_exams.md`:
+### Step 7: Add accessible HTML link to the generals page
+After saving the HTML file, you MUST update the link in `graduate/general_exams.md` to follow accessibility best practices:
 
 1. Read the file `graduate/general_exams.md`
 2. Find the line that references the PDF you just processed
-3. Edit that line to add `&bull; [HTML]({{site.url}}/path/to/file.html)` after the PDF link
+3. Replace that line to make HTML the primary link and PDF secondary
 
-**Example:**
+**IMPORTANT: HTML must be the PRIMARY link (accessible version), PDF must be SECONDARY (for printing only)**
+
+**Link Format:**
 ```markdown
-# Before:
+# Before (PDF only):
 - [08/2022, real]({{site.url}}/graduate/exams/analysis/2022Aug_real.pdf)
 
-# After:
-- [08/2022, real]({{site.url}}/graduate/exams/analysis/2022Aug_real.pdf) &bull; [HTML]({{site.url}}/graduate/exams/analysis/2022Aug_real.html)
+# After (HTML primary, PDF secondary):
+- [08/2022, real]({{site.url}}/graduate/exams/analysis/2022Aug_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2022Aug_real.pdf" aria-label="PDF version for printing">PDF</a>
 ```
 
-**Important**: The `&bull;` (bullet point) must be used as the separator between PDF and HTML links.
+**Key requirements:**
+- Primary link text (e.g., "08/2022, real") links to the HTML version
+- Use `&bull;` as separator
+- PDF link must have `aria-label="PDF version for printing"`
+- PDF link text is simply "PDF"
+
+**Rationale:** This follows WCAG 2.1 Level AA guidelines by:
+- Making the accessible format (HTML) primary and most prominent
+- Clearly labeling the PDF as "for printing" to indicate its purpose
+- Using ARIA labels to communicate that PDFs may have accessibility limitations
 
 ## Important Notes
 - Do NOT use the direct .html download from Mathpix - it uses MathJax SVG rendering
-- Always use the .mmd → pandoc → post-processing pipeline
+- Always use the tex.zip → pandoc → post-processing pipeline
 - Verify that NO Unicode mathematical characters remain in the final output
 - Verify proper heading hierarchy (use grep or check a sample)
 - The final HTML should be fully accessible with screen readers
@@ -130,4 +145,4 @@ The output HTML must have:
 ✓ Main content wrapped in <main> landmark element
 ✓ Valid, well-formed HTML5 document with proper semantic structure
 ✓ HTML file saved next to the PDF with .html extension
-✓ Link added to graduate/general_exams.md with &bull; separator
+✓ Link in graduate/general_exams.md updated with HTML as primary, PDF as secondary with aria-label
