@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scalable=yes" />
+  <title> - UVA Mathematics</title>
+  <style>
+    /* Default styles for accessibility and readability */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 50em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+      line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    /* Skip navigation link */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: 8px;
+      text-decoration: none;
+      z-index: 100;
+    }
+    .skip-link:focus {
+      top: 0;
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #0066cc;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #0066cc;
+    }
+    a:hover, a:focus {
+      color: #0052a3;
+      text-decoration: none;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+      line-height: 1.2;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    /* Navigation styling */
+    nav {
+      margin-bottom: 1.5em;
+    }
+    .back-button {
+      display: inline-block;
+      padding: 0.5em 1em;
+      background-color: #f0f0f0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      text-decoration: none;
+      color: #333;
+    }
+    .back-button:hover, .back-button:focus {
+      background-color: #e0e0e0;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/exams/algebra/AlgGento02.html">Algebra Exams 1981-2002</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;"></li>
+  </ol>
+</nav>
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/exams/algebra/AlgGento02.html" class="back-button">&larr; Back to Table of Contents</a>
+</nav>
+
+<main id="main-content">
+<h2 class="unnumbered"
+id="general-exam-algebra-august-14-text-th-2000">General
+Exam-Algebra<br />
+August
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>14</mn><msup><mrow></mrow><mrow><mtext mathvariant="normal">th </mtext><mspace width="0.333em"></mspace></mrow></msup></mrow><annotation encoding="application/x-tex">14{ }^{\text {th }}</annotation></semantics></math>,
+2000</h2>
+<ol>
+<li><p>Let V be a non-zero vector space over the field of reals R . Show
+that V cannot be presented as the union of three proper
+subspaces.</p></li>
+<li><p>For a field
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>,
+we denote by
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">K(x)</annotation></semantics></math>
+the field of rational functions in one variable
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+over
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.
+Prove that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">C(x)</annotation></semantics></math>
+is not the algebraic closure of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">R(x)</annotation></semantics></math>.
+(
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+is the real numbers and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>C</mi><annotation encoding="application/x-tex">C</annotation></semantics></math>
+the complex numbers.)</p></li>
+<li><p>(i). Let G be a finite group of order
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">p</mi><mi>a</mi></msup><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">m</mi></mrow></mrow><annotation encoding="application/x-tex">\mathrm{p}^{a} \mathrm{~m}</annotation></semantics></math>
+where p is a prime relatively prime to m , and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">G</mi><mi mathvariant="normal">p</mi></msub><annotation encoding="application/x-tex">\mathrm{G}_{\mathrm{p}}</annotation></semantics></math>
+denote the set of elements of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+whose order is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>p</mi><mi>i</mi></msup><annotation encoding="application/x-tex">p^{i}</annotation></semantics></math>
+for some
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">i&gt;0</annotation></semantics></math>.
+Show that<br />
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>G</mi><mi>p</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>≤</mo><mo stretchy="false" form="prefix">[</mo><mi>G</mi><mo>:</mo><mi>N</mi><mo stretchy="false" form="postfix">]</mo><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>p</mi><mi>α</mi></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\left|G_{p}\right| \leq[G: N]\left(p^{\alpha}-1\right)</annotation></semantics></math>
+where
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>N</mi><annotation encoding="application/x-tex">N</annotation></semantics></math>
+is the normalizer of some Sylow
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>-subgroup,
+with equality holding iff any two distinct Sylow p-subgroups have
+trivial intersection.<br />
+(ii). Let G be a finite group of order
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">p</mi><mi>α</mi></msup><msup><mi mathvariant="normal">q</mi><mi>β</mi></msup></mrow><annotation encoding="application/x-tex">\mathrm{p}^{\alpha} \mathrm{q}^{\beta}</annotation></semantics></math>
+for distinct primes p and q . Assume that G does not have elements of
+order pq , and that G has just 1 Sylow q -subgroup.</p></li>
+</ol>
+<p>Show that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>G</mi><mi>p</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mo>=</mo><msup><mi>q</mi><mi>β</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>p</mi><mi>α</mi></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\left|G_{p}\right|=q^{\beta}\left(p^{\alpha}-1\right)</annotation></semantics></math>.<br />
+Show that any two distinct Sylow p-subgroups have only the identity in
+common.<br />
+4. Let A denote the set of complex numbers of the form
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">a</mi><mo>+</mo><mi mathvariant="normal">b</mi><msqrt><mrow><mi>−</mi><mn>6</mn></mrow></msqrt></mrow><annotation encoding="application/x-tex">\mathrm{a}+\mathrm{b} \sqrt{-6}</annotation></semantics></math>,
+with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">a</mi><mo>,</mo><mi mathvariant="normal">b</mi><mo>∈</mo><mi mathvariant="normal">Z</mi></mrow><annotation encoding="application/x-tex">\mathrm{a}, \mathrm{b} \in \mathrm{Z}</annotation></semantics></math>.<br />
+(i) Show that A is a subring of C .<br />
+(ii) Let J be the ideal of A generated by 5 and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mo>+</mo><msqrt><mrow><mi>−</mi><mn>6</mn></mrow></msqrt></mrow><annotation encoding="application/x-tex">2+\sqrt{-6}</annotation></semantics></math>.
+Show that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">J</mi><mo>≠</mo><mi mathvariant="normal">A</mi></mrow><annotation encoding="application/x-tex">\mathrm{J} \neq \mathrm{A}</annotation></semantics></math>.<br />
+(iii) Show that J is prime.<br />
+(iv) Show that the ideal 5A is not prime.<br />
+5. Let A be a commutative ring with 1 . Show that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">A</mi><mrow><mo stretchy="true" form="prefix">[</mo><mi mathvariant="normal">x</mi><mo>,</mo><msup><mi mathvariant="normal">x</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">\mathrm{A}\left[\mathrm{x}, \mathrm{x}^{-1}\right]</annotation></semantics></math>
+is Noetherian if and only if A is. (Reminder. A Noetherian ring is one
+in which every ideal is finitely generated. You may use any
+characterization of a Noetherian ring you know; you do not need to
+justify it.)<br />
+6. Let R be a ring with 1 and suppose that N is a non-zero left R
+-module. Show that N is indecomposable if and only if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mi>R</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>N</mi><mo>,</mo><mi>N</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\operatorname{Hom}_{R}(N, N)</annotation></semantics></math>
+does not contain an idempotent e with
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">e</mi><mo>≠</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\mathrm{e} \neq 0</annotation></semantics></math>
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">e</mi><mo>≠</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\mathrm{e} \neq 1</annotation></semantics></math>.<br />
+(Reminders. A module is indecomposable if it not the direct sum of two
+non-zero submodules. An element
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>
+of a ring is idempotent if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>s</mi><mn>2</mn></msup><mo>=</mo><mi>s</mi></mrow><annotation encoding="application/x-tex">s^{2}=s</annotation></semantics></math>.)<br />
+7. Let K be a Galois extension of Q , the rational numbers, with the
+Galois group
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">G</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">K</mi><mo>:</mo><mi mathvariant="normal">Q</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathrm{G}(\mathrm{K}: \mathrm{Q})</annotation></semantics></math>
+isomorphic to
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">A</mi><mn>4</mn></msub><annotation encoding="application/x-tex">\mathrm{A}_{4}</annotation></semantics></math>.
+(
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">A</mi><mn>4</mn></msub><annotation encoding="application/x-tex">\mathrm{A}_{4}</annotation></semantics></math>
+is the group of even permutations of 4 objects.)<br />
+(i) What is the degree of K over Q ?<br />
+(ii) Show that there is a polynomial
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+of degree 4 so that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>
+is isomorphic to the splitting field of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+over Q.<br />
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mn>1</mn></msub><mo>,</mo><msub><mi>r</mi><mn>2</mn></msub><mo>,</mo><msub><mi>r</mi><mn>3</mn></msub><mo>,</mo><msub><mi>r</mi><mn>4</mn></msub></mrow><annotation encoding="application/x-tex">r_{1}, r_{2}, r_{3}, r_{4}</annotation></semantics></math>
+be the roots of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+in
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>K</mi><annotation encoding="application/x-tex">K</annotation></semantics></math>.
+Let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mo>=</mo><mo>∏</mo><msub><mo>∏</mo><mrow><mn>1</mn><mo>≤</mo><mi>i</mi><mo>&lt;</mo><mi>j</mi><mo>≤</mo><mn>4</mn></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>r</mi><mi>i</mi></msub><mo>−</mo><msub><mi>r</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Delta=\prod \prod_{1 \leqslant i&lt;j \leqslant 4}\left(r_{i}-r_{j}\right)</annotation></semantics></math>.<br />
+(iii) Show that
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">Δ</mi><mn>2</mn></msup><annotation encoding="application/x-tex">\Delta^{2}</annotation></semantics></math>
+is in Q .<br />
+(iv) Is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">Δ</mi><annotation encoding="application/x-tex">\Delta</annotation></semantics></math>
+in Q ? Why or why not?<br />
+8. A certain
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>-module
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is generated by elements
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>c</mi><annotation encoding="application/x-tex">c</annotation></semantics></math>.
+Furthermore
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi><mo>+</mo><mn>4</mn><mi>b</mi><mo>+</mo><mn>2</mn><mi>c</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2 a+4 b+2 c=0</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mi>a</mi><mo>+</mo><mn>4</mn><mi>b</mi><mo>+</mo><mn>4</mn><mi>c</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">4 a+4 b+4 c=0</annotation></semantics></math>,
+and
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>a</mi><mo>+</mo><mn>4</mn><mi>b</mi><mo>+</mo><mn>14</mn><mi>c</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">2 a+4 b+14 c=0</annotation></semantics></math>.
+Assume all other
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>Z</mi><annotation encoding="application/x-tex">Z</annotation></semantics></math>-combinations
+of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo>,</mo><mi>b</mi><mo>,</mo><mi>c</mi></mrow><annotation encoding="application/x-tex">a, b, c</annotation></semantics></math>
+which are 0 can be derived from these three. (i.e. these are the
+defining relations for the module.) Find the invariant factors for this
+module and describe M up to isomorphism as a direct sum of cyclic
+submodules.<br />
+9. Let X be an invertible matrix with complex entries and let
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Y</mi><mo>=</mo><msup><mi mathvariant="normal">X</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\mathrm{Y}=\mathrm{X}^{-1}</annotation></semantics></math>.<br />
+(i). Show that if
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>
+is an eigenvalue for X then
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>λ</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">\lambda^{-1}</annotation></semantics></math>
+is an eigenvalue for Y .<br />
+(ii). Show that if the Jordan canonical form of X has a kxk Jordan block
+with diagonal entries
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>λ</mi><annotation encoding="application/x-tex">\lambda</annotation></semantics></math>,
+then the Jordan canonical form of Y has a kxk Jordan block with diagonal
+entries
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>λ</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><annotation encoding="application/x-tex">\lambda^{-1}</annotation></semantics></math>.</p>
+
+</main>
+</body>
+</html>
