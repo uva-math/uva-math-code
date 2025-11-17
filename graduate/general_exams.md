@@ -88,7 +88,7 @@ Below are old exams and study materials for each of the subfields.
   - [01/2022, complex]({{site.url}}/graduate/exams/analysis/2022Jan_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2022Jan_complex.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2022, real]({{site.url}}/graduate/exams/analysis/2022Jan_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2022Jan_real.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2021, complex]({{site.url}}/graduate/exams/analysis/2021Aug_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2021Aug_complex.pdf" aria-label="PDF version for printing">PDF</a>
-  - [01/2021, complex]({{site.url}}/graduate/exams/analysis/2021Jan_complex.pdf) &bull; PDF only
+  - [01/2021, complex]({{site.url}}/graduate/exams/analysis/2021Jan_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2021Jan_complex.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2021, real]({{site.url}}/graduate/exams/analysis/2021Jan_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2021Jan_real.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2020, complex]({{site.url}}/graduate/exams/analysis/2020Aug_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2020Aug_complex.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2020, real]({{site.url}}/graduate/exams/analysis/2020Aug_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2020Aug_real.pdf" aria-label="PDF version for printing">PDF</a>
