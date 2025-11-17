@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>REAL ANALYSIS GENERAL
+EXAM AUGUST 18, 2025 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">REAL ANALYSIS GENERAL
+EXAM AUGUST 18, 2025</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered"
+id="real-analysis-general-exam-august-18-2025">REAL ANALYSIS GENERAL
+EXAM AUGUST 18, 2025</h1>
+<ul>
+<li><p>Solve the following five questions. The exam is 2 hours
+long.</p></li>
+<li><p>To receive full credit, you must clearly state which theorems you
+are using in your proofs, and your proofs must be fully justified and
+explained.</p></li>
+</ul>
+<h2 class="unnumbered" id="question-1">Question 1</h2>
+<p>Let
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+be the Lebesgue measure on
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+and let
+<math role="math" aria-label="E" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>E</mi><annotation encoding="application/x-tex">E</annotation></semantics></math>
+be a Lebesgue measurable set such that
+<math role="math" aria-label="m(E)&lt;\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mi>E</mi><mo stretchy="false" form="postfix">)</mo><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">m(E)&lt;\infty</annotation></semantics></math>.
+Let
+<math role="math" aria-label="f_{n}, f: E \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>,</mo><mi>f</mi><mo>:</mo><mi>E</mi><mo>&rarr;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">f_{n}, f: E \rightarrow \mathbb{R}</annotation></semantics></math>
+be measurable functions such that
+<math role="math" aria-label="f_{n} \rightarrow f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>&rarr;</mo><mi>f</mi></mrow><annotation encoding="application/x-tex">f_{n} \rightarrow f</annotation></semantics></math>
+almost everywhere. Assume that</p>
+<p><math role="math" aria-label="\int_{E}\left|f_{n}\right|^{3} d m \leq 1, \text { for any } n \in \mathbb{N} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&int;</mo><mi>E</mi></msub><msup><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><mn>3</mn></msup><mi>d</mi><mi>m</mi><mo>&le;</mo><mn>1</mn><mo>,</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for any </mtext><mspace width="0.333em"></mspace></mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\int_{E}\left|f_{n}\right|^{3} d m \leq 1, \text { for any } n \in \mathbb{N} .</annotation></semantics></math></p>
+<p>Prove that</p>
+<p><math role="math" aria-label="\lim _{n \rightarrow \infty} \int_{E} f_{n} d m=\int_{E} f d m" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msub><mo>&int;</mo><mi>E</mi></msub><msub><mi>f</mi><mi>n</mi></msub><mi>d</mi><mi>m</mi><mo>=</mo><msub><mo>&int;</mo><mi>E</mi></msub><mi>f</mi><mi>d</mi><mi>m</mi></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} \int_{E} f_{n} d m=\int_{E} f d m</annotation></semantics></math></p>
+<h2 class="unnumbered" id="question-2">Question 2</h2>
+<p>Let
+<math role="math" aria-label="(X, \mathcal{M}, \mu)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo>,</mo><mi>ℳ</mi><mo>,</mo><mi>&mu;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(X, \mathcal{M}, \mu)</annotation></semantics></math>
+be a measure space and let
+<math role="math" aria-label="f: X \rightarrow[0, \infty]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f: X \rightarrow[0, \infty]</annotation></semantics></math>
+be a non-negative
+<math role="math" aria-label="\mathcal{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℳ</mi><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math>-measurable
+function on
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.
+Let</p>
+<p><math role="math" aria-label="T=\left\{t \in[0, \infty]: \mu\left(f^{-1}(\{t\})\right)&gt;0\right\} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>t</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">]</mo><mo>:</mo><mi>&mu;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>f</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">{</mo><mi>t</mi><mo stretchy="false" form="postfix">}</mo><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>&gt;</mo><mn>0</mn><mo stretchy="true" form="postfix">}</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">T=\left\{t \in[0, \infty]: \mu\left(f^{-1}(\{t\})\right)&gt;0\right\} .</annotation></semantics></math></p>
+<p>Prove that if
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is integrable, then
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>
+is a countable set.</p>
+<h2 class="unnumbered" id="question-3">Question 3</h2>
+<p>Let
+<math role="math" aria-label="\mathcal{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℳ</mi><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math>
+denote the Lebesgue measurable sets on
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>
+and let
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+be the Lebesgue measure on
+<math role="math" aria-label="\mathcal{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℳ</mi><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math>
+and
+<math role="math" aria-label="\tau" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&tau;</mi><annotation encoding="application/x-tex">\tau</annotation></semantics></math>
+be the counting measure on
+<math role="math" aria-label="\mathcal{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℳ</mi><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="m \ll \tau" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&Lt;</mo><mi>&tau;</mi></mrow><annotation encoding="application/x-tex">m \ll \tau</annotation></semantics></math>
+but
+<math role="math" aria-label="\frac{d m}{d \tau}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mfrac><mrow><mi>d</mi><mi>m</mi></mrow><mrow><mi>d</mi><mi>&tau;</mi></mrow></mfrac><annotation encoding="application/x-tex">\frac{d m}{d \tau}</annotation></semantics></math>
+doesn't exist. Explain why this doesn't contradict with the
+Radon-Nikodym Theorem?</p>
+<h2 class="unnumbered" id="question-4">Question 4</h2>
+<p>Let (
+<math role="math" aria-label="X, \mathcal{M}, \mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>,</mo><mi>ℳ</mi><mo>,</mo><mi>&mu;</mi></mrow><annotation encoding="application/x-tex">X, \mathcal{M}, \mu</annotation></semantics></math>
+) be a
+<math role="math" aria-label="\sigma" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&sigma;</mi><annotation encoding="application/x-tex">\sigma</annotation></semantics></math>-finite
+measure space with
+<math role="math" aria-label="\mu(X)=\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">\mu(X)=\infty</annotation></semantics></math>.<br />
+(a) Show that there exists a disjoint sequence
+<math role="math" aria-label="\left\{E_{n}\right\}_{n \in \mathbb{N}} \subset \mathcal{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mo stretchy="true" form="prefix">{</mo><msub><mi>E</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">}</mo></mrow><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow></msub><mo>&sub;</mo><mi>ℳ</mi></mrow><annotation encoding="application/x-tex">\left\{E_{n}\right\}_{n \in \mathbb{N}} \subset \mathcal{M}</annotation></semantics></math>
+(i.e.,
+<math role="math" aria-label="E_{n} \cap E_{m}=\phi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>n</mi></msub><mo>&cap;</mo><msub><mi>E</mi><mi>m</mi></msub><mo>=</mo><mi>ϕ</mi></mrow><annotation encoding="application/x-tex">E_{n} \cap E_{m}=\phi</annotation></semantics></math>,
+when
+<math role="math" aria-label="n \neq m)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ne;</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">n \neq m)</annotation></semantics></math>,
+such that
+<math role="math" aria-label="\cup_{n \in \mathbb{N}} E_{n}=X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&cup;</mo><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow></msub><msub><mi>E</mi><mi>n</mi></msub><mo>=</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">\cup_{n \in \mathbb{N}} E_{n}=X</annotation></semantics></math>
+and
+<math role="math" aria-label="\mu\left(E_{n}\right) \in[1, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>E</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&isin;</mo><mo stretchy="false" form="prefix">[</mo><mn>1</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mu\left(E_{n}\right) \in[1, \infty)</annotation></semantics></math>
+for every
+<math role="math" aria-label="n \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">n \in \mathbb{N}</annotation></semantics></math>.<br />
+(b) Show that there exists an
+<math role="math" aria-label="\mathcal{M}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>ℳ</mi><annotation encoding="application/x-tex">\mathcal{M}</annotation></semantics></math>-measurable
+function
+<math role="math" aria-label="f: X \rightarrow[0, \infty]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">f: X \rightarrow[0, \infty]</annotation></semantics></math>
+such that
+<math role="math" aria-label="f \in L^{p}(X, \mathcal{M}, \mu)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>L</mi><mi>p</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo>,</mo><mi>ℳ</mi><mo>,</mo><mi>&mu;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f \in L^{p}(X, \mathcal{M}, \mu)</annotation></semantics></math>
+for all
+<math role="math" aria-label="p \in(1, \infty]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&isin;</mo><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">p \in(1, \infty]</annotation></semantics></math>
+and
+<math role="math" aria-label="f \notin L^{1}(X, \mathcal{M}, \mu)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&notin;</mo><msup><mi>L</mi><mn>1</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo>,</mo><mi>ℳ</mi><mo>,</mo><mi>&mu;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f \notin L^{1}(X, \mathcal{M}, \mu)</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="question-5">Question 5</h2>
+<p>(a) Let
+<math role="math" aria-label="f \in L^{1}\left(\mathbb{R}^{n}, m\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&isin;</mo><msup><mi>L</mi><mn>1</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup><mo>,</mo><mi>m</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">f \in L^{1}\left(\mathbb{R}^{n}, m\right)</annotation></semantics></math>.
+Prove that the set of points where the maximal function is finite,
+<math role="math" aria-label="\left\{x \in \mathbb{R}^{n}: M f(x)&lt;\infty\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><mi>x</mi><mo>&isin;</mo><msup><mi>&Ropf;</mi><mi>n</mi></msup><mo>:</mo><mi>M</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&lt;</mo><mi>&infin;</mi><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{x \in \mathbb{R}^{n}: M f(x)&lt;\infty\right\}</annotation></semantics></math>,
+has full measure (i.e., its complement is a set of measure zero). The
+Hardy-Littlewood maximal function is defined as:</p>
+<p><math role="math" aria-label="M f(x)=\sup _{r&gt;0} \frac{1}{m(B(x, r))} \int_{B(x, r)} f(y) d m(y) ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><munder><mi mathvariant="normal">sup</mi><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow></munder><mfrac><mn>1</mn><mrow><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><msub><mo>&int;</mo><mrow><mi>B</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo></mrow></msub><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>m</mi><mo stretchy="false" form="prefix">(</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">M f(x)=\sup _{r&gt;0} \frac{1}{m(B(x, r))} \int_{B(x, r)} f(y) d m(y) .</annotation></semantics></math></p>
+<p>(b) Give the definition of the Lebesgue set and state the Lebesgue
+Differentiation Theorem. Give an example of a function
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+that is in
+<math role="math" aria-label="L_{\text {loc }}^{1}(\mathbb{R}, m)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>L</mi><mrow><mtext mathvariant="normal">loc </mtext><mspace width="0.333em"></mspace></mrow><mn>1</mn></msubsup><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo>,</mo><mi>m</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L_{\text {loc }}^{1}(\mathbb{R}, m)</annotation></semantics></math>
+but whose Lebesgue set is not all of
+<math role="math" aria-label="\mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Ropf;</mi><annotation encoding="application/x-tex">\mathbb{R}</annotation></semantics></math>.
+Justify your answer.</p>
+</main>
+</body>
+</html>
