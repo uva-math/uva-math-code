@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Complex Analysis General Exam August 2024 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Complex Analysis General Exam August 2024</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="complex-analysis-general-exam-august-2024">Complex Analysis General Exam August 2024</h1>
+<p>Solve as many problems as you can. Full solutions on a smaller number
+of problems will be worth more than partial solutions on several
+problems. Throughout
+<math role="math" aria-label="\mathbb{D}=\{z \in \mathbb{C}:|z|&lt;1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&Dopf;</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{D}=\{z \in \mathbb{C}:|z|&lt;1\}</annotation></semantics></math>.
+Don't use any of the Picard theorems.</p>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Compute, for
+<math role="math" aria-label="0&lt;\alpha&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><mi>&alpha;</mi><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">0&lt;\alpha&lt;1</annotation></semantics></math>,</p>
+<p><math role="math" aria-label="\int_{0}^{\infty} \frac{x^{\alpha}}{x^{2}+4} d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>0</mn><mi>&infin;</mi></msubsup><mfrac><msup><mi>x</mi><mi>&alpha;</mi></msup><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>4</mn></mrow></mfrac><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{0}^{\infty} \frac{x^{\alpha}}{x^{2}+4} d x</annotation></semantics></math></p>
+<p><strong>You must show all estimates.</strong></p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Suppose that
+<math role="math" aria-label="U \subseteq \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo>&sube;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">U \subseteq \mathbb{C}</annotation></semantics></math>
+is open and
+<math role="math" aria-label="f: U \rightarrow \mathbb{C} \backslash\{0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>U</mi><mo>&rarr;</mo><mi>&Copf;</mi><mo>&setminus;</mo><mo stretchy="false" form="prefix">{</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">f: U \rightarrow \mathbb{C} \backslash\{0\}</annotation></semantics></math>
+is holomorphic. Prove that
+<math role="math" aria-label="u(z)=\log |f(z)|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mrow><mi mathvariant="normal">log</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">|</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">u(z)=\log |f(z)|</annotation></semantics></math>
+is harmonic.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Let
+<math role="math" aria-label="\mathbb{H}=\{z \in \mathbb{C}: \operatorname{Im}(z)&gt;0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>ℍ</mi><mo>=</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&gt;</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\mathbb{H}=\{z \in \mathbb{C}: \operatorname{Im}(z)&gt;0\}</annotation></semantics></math>.
+Suppose that
+<math role="math" aria-label="f: \overline{\mathbb{H}} \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mover><mi>ℍ</mi><mo accent="true">¯</mo></mover><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">f: \overline{\mathbb{H}} \rightarrow \mathbb{C}</annotation></semantics></math>
+is continuous and that
+<math role="math" aria-label="\left.f\right|_{\mathbb{H}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mi>f</mi><mo stretchy="true" form="postfix">|</mo></mrow><mi>ℍ</mi></msub><annotation encoding="application/x-tex">\left.f\right|_{\mathbb{H}}</annotation></semantics></math>
+is holomorphic. Suppose that
+<math role="math" aria-label="f(\mathbb{R}) \subseteq \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>&Ropf;</mi><mo stretchy="false" form="postfix">)</mo><mo>&sube;</mo><mi>&Ropf;</mi></mrow><annotation encoding="application/x-tex">f(\mathbb{R}) \subseteq \mathbb{R}</annotation></semantics></math>
+and that
+<math role="math" aria-label="f(\mathbb{H}) \subseteq\{z \in \mathbb{C}: \operatorname{Im}(z) \geq 0, \operatorname{Re}(z) \geq 0\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>ℍ</mi><mo stretchy="false" form="postfix">)</mo><mo>&sube;</mo><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mrow><mi mathvariant="normal">Im</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&ge;</mo><mn>0</mn><mo>,</mo><mrow><mi mathvariant="normal">Re</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>&ge;</mo><mn>0</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">f(\mathbb{H}) \subseteq\{z \in \mathbb{C}: \operatorname{Im}(z) \geq 0, \operatorname{Re}(z) \geq 0\}</annotation></semantics></math>.
+Show that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is constant.</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Suppose that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+and
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+are analytic in an open subset
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+of
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>
+containing
+<math role="math" aria-label="\{z \in \mathbb{C}:|z| \leq 1\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>z</mi><mo>&isin;</mo><mi>&Copf;</mi><mo>:</mo><mo stretchy="false" form="prefix">|</mo><mi>z</mi><mo stretchy="false" form="prefix">|</mo><mo>&le;</mo><mn>1</mn><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{z \in \mathbb{C}:|z| \leq 1\}</annotation></semantics></math>.
+Suppose that
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+has a zero of order 1 at
+<math role="math" aria-label="z=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">z=0</annotation></semantics></math>,
+and no other zero in
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>.<br />
+(i) For
+<math role="math" aria-label="\zeta \in \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&zeta;</mi><mo>&isin;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">\zeta \in \mathbb{C}</annotation></semantics></math>,
+set
+<math role="math" aria-label="f_{\zeta}=f(z)+\zeta g(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>&zeta;</mi></msub><mo>=</mo><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>&zeta;</mi><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">f_{\zeta}=f(z)+\zeta g(z)</annotation></semantics></math>.
+Show that if
+<math role="math" aria-label="|\zeta|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>&zeta;</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|\zeta|</annotation></semantics></math>
+is small enough (depending upon
+<math role="math" aria-label="g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>g</mi><annotation encoding="application/x-tex">g</annotation></semantics></math>
+), then
+<math role="math" aria-label="f_{\zeta}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>&zeta;</mi></msub><annotation encoding="application/x-tex">f_{\zeta}</annotation></semantics></math>
+has no zeroes on
+<math role="math" aria-label="\partial \mathbb{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&part;</mi><mi>&Dopf;</mi></mrow><annotation encoding="application/x-tex">\partial \mathbb{D}</annotation></semantics></math>,
+has a unique zero in
+<math role="math" aria-label="\mathbb{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Dopf;</mi><annotation encoding="application/x-tex">\mathbb{D}</annotation></semantics></math>,
+and that the order of this zero is 1 .<br />
+(ii) Show that for all sufficiently small
+<math role="math" aria-label="|\zeta|" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>&zeta;</mi><mo stretchy="false" form="prefix">|</mo></mrow><annotation encoding="application/x-tex">|\zeta|</annotation></semantics></math>,
+if
+<math role="math" aria-label="z_{\zeta}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>z</mi><mi>&zeta;</mi></msub><annotation encoding="application/x-tex">z_{\zeta}</annotation></semantics></math>
+is the unique zero of
+<math role="math" aria-label="f_{\zeta}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>f</mi><mi>&zeta;</mi></msub><annotation encoding="application/x-tex">f_{\zeta}</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathbb{D}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Dopf;</mi><annotation encoding="application/x-tex">\mathbb{D}</annotation></semantics></math>,
+then</p>
+<p><math role="math" aria-label="z_{\zeta}=\frac{1}{2 \pi i} \int_{\partial \mathbb{D}} w \frac{f_{\zeta}^{\prime}(w)}{f_{\zeta}(w)} d w" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>z</mi><mi>&zeta;</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mi>&pi;</mi><mi>i</mi></mrow></mfrac><msub><mo>&int;</mo><mrow><mi>&part;</mi><mi>&Dopf;</mi></mrow></msub><mi>w</mi><mfrac><mrow><msubsup><mi>f</mi><mi>&zeta;</mi><mi>′</mi></msubsup><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow><mrow><msub><mi>f</mi><mi>&zeta;</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><mi>d</mi><mi>w</mi></mrow><annotation encoding="application/x-tex">z_{\zeta}=\frac{1}{2 \pi i} \int_{\partial \mathbb{D}} w \frac{f_{\zeta}^{\prime}(w)}{f_{\zeta}(w)} d w</annotation></semantics></math></p>
+<p>Hint: evaluate the integral by the residue theorem.</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Let
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>
+be a connected open subset of
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>.
+Suppose that
+<math role="math" aria-label="\left(f_{n}\right)_{n=1}^{\infty}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><annotation encoding="application/x-tex">\left(f_{n}\right)_{n=1}^{\infty}</annotation></semantics></math>
+is a sequence of holomorphic functions on
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>,
+and that there is a continuous
+<math role="math" aria-label="g: U \rightarrow[0,+\infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>:</mo><mi>U</mi><mo>&rarr;</mo><mo stretchy="false" form="prefix">[</mo><mn>0</mn><mo>,</mo><mi>+</mi><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">g: U \rightarrow[0,+\infty)</annotation></semantics></math>
+with
+<math role="math" aria-label="\left|f_{n}(z)\right| \leq g(z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">|</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">|</mo></mrow><mo>&le;</mo><mi>g</mi><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\left|f_{n}(z)\right| \leq g(z)</annotation></semantics></math>
+for all
+<math role="math" aria-label="n \in \mathbb{N}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><mi>&Nopf;</mi></mrow><annotation encoding="application/x-tex">n \in \mathbb{N}</annotation></semantics></math>
+and all
+<math role="math" aria-label="z \in U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">z \in U</annotation></semantics></math>.
+Assume that
+<math role="math" aria-label="p \in U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&isin;</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">p \in U</annotation></semantics></math>
+and that
+<math role="math" aria-label="r&gt;0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&gt;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">r&gt;0</annotation></semantics></math>
+has
+<math role="math" aria-label="B_{r}(p) \subseteq U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>r</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo><mo>&sube;</mo><mi>U</mi></mrow><annotation encoding="application/x-tex">B_{r}(p) \subseteq U</annotation></semantics></math>
+and that
+<math role="math" aria-label="\lim _{n \rightarrow \infty} f_{n}(z)=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">lim</mi><mo>&#8289;</mo></mrow><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\lim _{n \rightarrow \infty} f_{n}(z)=0</annotation></semantics></math>
+for all
+<math role="math" aria-label="z \in B_{r}(p)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>z</mi><mo>&isin;</mo><msub><mi>B</mi><mi>r</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>p</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">z \in B_{r}(p)</annotation></semantics></math>.<br />
+(i) Suppose that
+<math role="math" aria-label="h: U \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>:</mo><mi>U</mi><mo>&rarr;</mo><mi>&Copf;</mi></mrow><annotation encoding="application/x-tex">h: U \rightarrow \mathbb{C}</annotation></semantics></math>,
+and that there is a subsequence
+<math role="math" aria-label="\left(f_{n_{k}}\right)_{k}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><msub><mi>n</mi><mi>k</mi></msub></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>k</mi></msub><annotation encoding="application/x-tex">\left(f_{n_{k}}\right)_{k}</annotation></semantics></math>
+of
+<math role="math" aria-label="\left(f_{n}\right)_{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>f</mi><mi>n</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msub><annotation encoding="application/x-tex">\left(f_{n}\right)_{n}</annotation></semantics></math>
+with
+<math role="math" aria-label="f_{n_{k}} \rightarrow_{k \rightarrow \infty} h" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><msub><mi>n</mi><mi>k</mi></msub></msub><msub><mo>&rarr;</mo><mrow><mi>k</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></msub><mi>h</mi></mrow><annotation encoding="application/x-tex">f_{n_{k}} \rightarrow_{k \rightarrow \infty} h</annotation></semantics></math>
+uniformly on compact sets. Show that necessarily
+<math role="math" aria-label="h=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">h=0</annotation></semantics></math>.<br />
+(ii) Show that
+<math role="math" aria-label="f_{n} \rightarrow 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>f</mi><mi>n</mi></msub><mo>&rarr;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">f_{n} \rightarrow 0</annotation></semantics></math>
+uniformly on compact subsets of
+<math role="math" aria-label="U" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>U</mi><annotation encoding="application/x-tex">U</annotation></semantics></math>.</p>
+</main>
+</body>
+</html>

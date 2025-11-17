@@ -76,7 +76,7 @@ Below are old exams and study materials for each of the subfields.
   - [08/2025, real]({{site.url}}/graduate/exams/analysis/2025Aug_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2025Aug_real.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2025, complex]({{site.url}}/graduate/exams/analysis/2025Jan_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2025Jan_complex.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2025, real]({{site.url}}/graduate/exams/analysis/2025Jan_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2025Jan_real.pdf" aria-label="PDF version for printing">PDF</a>
-  - [08/2024, complex]({{site.url}}/graduate/exams/analysis/2024Aug_complex.pdf) &bull; PDF only
+  - [08/2024, complex]({{site.url}}/graduate/exams/analysis/2024Aug_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2024Aug_complex.pdf" aria-label="PDF version for printing">PDF</a>
   - [08/2024, real]({{site.url}}/graduate/exams/analysis/2024Aug_real.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2024Aug_real.pdf" aria-label="PDF version for printing">PDF</a>
   - [01/2024, complex]({{site.url}}/graduate/exams/analysis/2024Jan_complex.pdf) &bull; PDF only
   - [08/2023, complex]({{site.url}}/graduate/exams/analysis/2023Aug_complex.html) &bull; <a href="{{site.url}}/graduate/exams/analysis/2023Aug_complex.pdf" aria-label="PDF version for printing">PDF</a>
