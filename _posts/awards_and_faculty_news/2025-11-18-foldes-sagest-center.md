@@ -11,9 +11,12 @@ good-md: true
 
 Associate Professor {% include person_info_just_name.html UVA_id="jf8dc" %} will help provide the mathematical foundation for UVA's new SAGEST Predictive Simulation Center, part of a $16 million U.S. Department of Energy initiative to advance high-performance simulation science. The multi-university center will focus on making computer models of complex physical systems more accurate and dependable.
 
+Professor Földes will assist in the verification, validation, and uncertainty quantification core of the center, providing mathematical analysis to support predictability.
+
+[Read the full story at UVA Arts & Sciences](https://as.virginia.edu/news/uva-mathematician-help-lead-national-predictive-science-center)
+
 <!--more-->
 
-Professor Földes will assist in the verification, validation, and uncertainty quantification core of the center, providing mathematical analysis to support predictability.
 
 "Mathematics can help with making sure that what we get from simulations or AI models is actually relevant and provides us with reasonable confidence," Földes said. "Practical problems are outrageously difficult to solve — but we can help with analyzing some small components with well-defined conditions using mathematical principles that tell us when the results are trustworthy."
 
