@@ -2,7 +2,7 @@
 layout: post
 title: Mary Ann Pitts Jefferson Scholars Foundation Distinguished Professorship
 comments: false
-categories: jobs news major-news
+categories: jobs news
 published: true
 job-year: 2025
 image: __SITE_URL__/img/news_events/Fall_Lawn.png
