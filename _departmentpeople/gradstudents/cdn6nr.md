@@ -4,7 +4,7 @@ lastname: Zhang
 name: Shaoyi
 general_position: gradstudent
 position: Graduate Student
-office: 
+office: Kerchof Hall 131
 phone: 
 email: cdn6nr@virginia.edu
 image: __SITE_URL__/img/people/fall25/Shaoyi_Zhang_tiny.png

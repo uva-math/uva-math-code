@@ -4,7 +4,7 @@ lastname: Hilbert
 name: Ben Alexander
 general_position: gradstudent
 position: Graduate Student
-office: 
+office: Kerchof Hall 112
 phone: 
 email: hcg4dz@virginia.edu
 image: __SITE_URL__/img/people/fall25/Ben_Hilbert_tiny.png
