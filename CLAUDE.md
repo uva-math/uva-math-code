@@ -143,6 +143,14 @@ categories: news events conferences
 - For the main post image, use the `image` front matter field
 - Additional images can be added manually in the post content using markdown
 
+#### Combining Multiple Images
+
+To combine multiple photos into a single wider image for carousel posts, use ImageMagick:
+```bash
+magick image1.png image2.png +append combined-output.png
+```
+This creates a horizontally combined image. Add `image-wide: true` to the front matter when using wide combined images.
+
 ---
 
 ## Internal Links

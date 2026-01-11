@@ -11,4 +11,4 @@ image-wide: true
 good-md: true
 ---
 
-The [JMM 2026 Graduate School Fair](https://www.ams.org/learning-careers/students/gradfair) on January 6, 2026 in Washington, D.C. was a great success! We talked to at least a hundred students, spreading the word about the PhD program in Mathematics at the University of Virginia.
+The [JMM 2026 Graduate School Fair](https://www.ams.org/learning-careers/students/gradfair) on January 6, 2026 in Washington, D.C. was a great success! We talked to at least a hundred students, spreading the word about the [PhD program in Mathematics]({{site.url}}/graduate/admissions/) at the University of Virginia.
