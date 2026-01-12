@@ -167,6 +167,14 @@ This ensures links work correctly across different environments.
 
 ## People References
 
+### Finding People Files
+
+People profile files are named by UVA computing ID (e.g., `ntr2qp.md`), not by person's name. To find someone's profile:
+1. Search (grep) for their first or last name within `_departmentpeople/` to locate the file
+2. Common fields to update: `personal_page`, `office`, `phone`, `image`
+
+### Referencing People in Posts
+
 To reference department members, use the person_info include rather than hardcoding names:
 
 ```
@@ -186,7 +194,7 @@ Available include formats:
 1. Create a new file with the correct naming convention in the appropriate subfolder
 2. Add all required front matter with appropriate categories
 3. Write your content, separating excerpt with `<!--more-->`
-4. Commit changes to GitHub
+4. Commit changes to GitHub (do NOT include AI attribution in commit messages)
 5. Wait approximately 5 minutes for changes to appear on the live site
 
 ---
