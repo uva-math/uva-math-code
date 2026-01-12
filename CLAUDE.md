@@ -194,7 +194,7 @@ Available include formats:
 1. Create a new file with the correct naming convention in the appropriate subfolder
 2. Add all required front matter with appropriate categories
 3. Write your content, separating excerpt with `<!--more-->`
-4. Commit changes to GitHub (do NOT include AI attribution in commit messages)
+4. Commit and push changes to GitHub (push immediately after committing, do NOT include AI attribution in commit messages)
 5. Wait approximately 5 minutes for changes to appear on the live site
 
 ---
