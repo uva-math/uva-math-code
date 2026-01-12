@@ -8,6 +8,6 @@ office: 401 Kerchof Hall
 phone: 
 email: ntr2qp@virginia.edu
 image: __SITE_URL__/img/people/2023-fall/Oscar.jpg
-personal_page:
+personal_page: https://sites.google.com/view/oscar-arevalo-math/about
 published: true
 ---
