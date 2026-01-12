@@ -8,7 +8,7 @@ categories: events conferences
 published: true
 image: __SITE_URL__/img/news_events/BlueRidge2026.jpg
 image-tall: true
-image-alt: Blue Ridge Mountains
+image-alt: Spring in Blue Ridge Mountains
 more-text: Schedule and abstracts
 ---
 
