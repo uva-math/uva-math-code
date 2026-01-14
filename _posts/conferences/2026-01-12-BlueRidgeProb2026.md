@@ -13,7 +13,7 @@ more-text: Schedule and abstracts
 ---
 
 The second Blue Ridge Probability Day will occur on <b>Friday, March 13, 2026</b>. Location TBA. The speakers are
-- [Yu Gu](https://www.math.umd.edu/~ygu/) (University of Maryland)
+- [Yu Gu](https://www.math.umd.edu/~ygu7/) (University of Maryland)
 - [Eva Loeser](https://sites.google.com/ucsd.edu/eva-loesers-website/home) (UNC Chapel Hill)
 - [Mark Meckes](https://case.edu/artsci/math/mwmeckes/) (Case Western Reserve University)
 - TBA
@@ -22,15 +22,15 @@ The second Blue Ridge Probability Day will occur on <b>Friday, March 13, 2026</b
 
 ### Schedule
 
-| Time | Event |
-|------|-------|
-| 10:30 - 11:30 | Talk 1 |
-| 11:30 - 1:30 | Lunch |
-| 1:30 - 2:30 | Talk 2 |
-| 2:30 - 3:00 | Coffee/tea |
-| 3:00 - 4:00 | Talk 3 |
-| 4:00 - 4:30 | Coffee/tea |
-| 4:30 - 5:30 | Talk 4 |
+<table>
+<tr><td>10:30 - 11:30</td><td style="padding-left:2em;">Talk 1</td></tr>
+<tr><td>11:30 - 1:30</td><td style="padding-left:2em;">Lunch</td></tr>
+<tr><td>1:30 - 2:30</td><td style="padding-left:2em;">Talk 2</td></tr>
+<tr><td>2:30 - 3:00</td><td style="padding-left:2em;">Coffee/tea</td></tr>
+<tr><td>3:00 - 4:00</td><td style="padding-left:2em;">Talk 3</td></tr>
+<tr><td>4:00 - 4:30</td><td style="padding-left:2em;">Coffee/tea</td></tr>
+<tr><td>4:30 - 5:30</td><td style="padding-left:2em;">Talk 4</td></tr>
+</table>
 
 ---
 
