@@ -5,7 +5,7 @@ event-date: 2026-03-23 17:00:00
 multi-day-event: true
 permalink: /ims/lectures/rich-schwartz/
 comments: false
-categories: news ims
+categories: news virginia-mathematics-lectures ims events major-news
 published: true
 more-text: More information coming soon
 nav_parent: IMS
