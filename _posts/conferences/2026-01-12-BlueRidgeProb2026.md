@@ -13,18 +13,12 @@ more-text: Schedule and abstracts
 ---
 
 The second Blue Ridge Probability Day will occur on <b>Friday, March 13, 2026</b>. Time and location TBA. The speakers are
-- [Eva Loeser](https://sites.google.com/ucsd.edu/eva-loesers-website/home) (UNC Chapel Hill)
 - [Yu Gu](https://www.math.umd.edu/~ygu/) (University of Maryland)
-- TBA
+- [Eva Loeser](https://sites.google.com/ucsd.edu/eva-loesers-website/home) (UNC Chapel Hill)
+- [Mark Meckes](https://case.edu/artsci/math/mwmeckes/) (Case Western Reserve University)
 - TBA
 
 <!--more-->
-
-### Eva Loeser (UNC Chapel Hill) - Title TBA
-
-Abstract TBA
-
----
 
 ### Yu Gu (University of Maryland) - Title TBA
 
@@ -32,7 +26,13 @@ Abstract TBA
 
 ---
 
-### Speaker 3 (Institution) - Title TBA
+### Eva Loeser (UNC Chapel Hill) - Title TBA
+
+Abstract TBA
+
+---
+
+### Mark Meckes (Case Western Reserve University) - Title TBA
 
 Abstract TBA
 
