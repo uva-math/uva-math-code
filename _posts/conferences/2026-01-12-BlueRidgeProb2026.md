@@ -30,6 +30,7 @@ The second Blue Ridge Probability Day will occur on <b>Friday, March 13, 2026</b
 <tr><td>3:00 - 4:00</td><td style="padding-left:2em;">Talk 3</td></tr>
 <tr><td>4:00 - 4:30</td><td style="padding-left:2em;">Coffee/tea</td></tr>
 <tr><td>4:30 - 5:30</td><td style="padding-left:2em;">Talk 4</td></tr>
+<tr><td>6:30</td><td style="padding-left:2em;">Dinner</td></tr>
 </table>
 
 ---
