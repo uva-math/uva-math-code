@@ -16,7 +16,7 @@ The second Blue Ridge Probability Day will occur on <b>Friday, March 13, 2026</b
 - [Yu Gu](https://www.math.umd.edu/~ygu7/) (University of Maryland)
 - [Eva Loeser](https://sites.google.com/ucsd.edu/eva-loesers-website/home) (UNC Chapel Hill)
 - [Mark Meckes](https://case.edu/artsci/math/mwmeckes/) (Case Western Reserve University)
-- TBA
+- [David P. Herzog](https://faculty.sites.iastate.edu/dherzog/) (Iowa State University)
 
 <!--more-->
 
@@ -52,6 +52,6 @@ Abstract TBA
 
 ---
 
-### Speaker 4 (Institution) - Title TBA
+### David P. Herzog (Iowa State University) - Title TBA
 
 Abstract TBA
