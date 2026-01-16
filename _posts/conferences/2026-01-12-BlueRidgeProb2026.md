@@ -55,6 +55,6 @@ Abstract TBA
 
 ---
 
-### Mark Meckes (Case Western Reserve University) - Title TBA
+### Mark Meckes (Case Western Reserve University) - Entropy, diversity, and complexity in metric spaces and beyond
 
-Abstract TBA
+I will discuss a family emerging, geometrically aware generalizations of Rényi entropies and the theory and myriad connections to other fields growing around them.  The story will involve excursions into category theory, theoretical ecology, information theory, convex geometry, probability theory, and more.
