@@ -35,9 +35,11 @@ The second Blue Ridge Probability Day will occur on <b>Friday, March 13, 2026</b
 
 ---
 
-### Yu Gu (University of Maryland) - Title TBA
+### Yu Gu (University of Maryland) - Invariant measure for open KPZ
 
-Abstract TBA
+Consider a random interface growing above the interval [0,1], one may ask: if the slopes at the two boundary points are prescribed, what does the interface look like? This question reduces to understanding the equilibrium state of the open KPZ equation. In recent work of Corwin–Knizel, Barraquand–Le Doussal, and Bryc–Kuznetsov–Wang–Wesołowski, this equilibrium state is described explicitly and identified as a resampled Brownian motion.
+
+In this talk, I will present recent joint work with Alex Dunlap and Tommaso Rosati in which we provide a stochastic-analytic derivation of this equilibrium state. Our approach relies on tools such as change of measure, time reversal, Itô's formula, and the theory of regularity structures.
 
 ---
 
