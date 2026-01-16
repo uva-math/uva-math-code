@@ -25,11 +25,11 @@ The second Blue Ridge Probability Day will occur on <b>Friday, March 13, 2026</b
 <table>
 <tr><td>10:30 - 11:30</td><td style="padding-left:2em;">Mark Meckes</td></tr>
 <tr><td>11:30 - 1:30</td><td style="padding-left:2em;">Lunch</td></tr>
-<tr><td>1:30 - 2:30</td><td style="padding-left:2em;">Talk 2</td></tr>
+<tr><td>1:30 - 2:30</td><td style="padding-left:2em;">Eva Loeser</td></tr>
 <tr><td>2:30 - 3:00</td><td style="padding-left:2em;">Coffee/tea</td></tr>
-<tr><td>3:00 - 4:00</td><td style="padding-left:2em;">Talk 3</td></tr>
+<tr><td>3:00 - 4:00</td><td style="padding-left:2em;">Yu Gu</td></tr>
 <tr><td>4:00 - 4:30</td><td style="padding-left:2em;">Coffee/tea</td></tr>
-<tr><td>4:30 - 5:30</td><td style="padding-left:2em;">Talk 4</td></tr>
+<tr><td>4:30 - 5:30</td><td style="padding-left:2em;">David P. Herzog</td></tr>
 <tr><td>6:30</td><td style="padding-left:2em;">Dinner</td></tr>
 </table>
 
