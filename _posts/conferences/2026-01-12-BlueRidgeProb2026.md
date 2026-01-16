@@ -43,6 +43,12 @@ In this talk, I will present recent joint work with Alex Dunlap and Tommaso Rosa
 
 ---
 
+### David P. Herzog (Iowa State University) - Title TBA
+
+Abstract TBA
+
+---
+
 ### Eva Loeser (UNC Chapel Hill) - Title TBA
 
 Abstract TBA
@@ -50,11 +56,5 @@ Abstract TBA
 ---
 
 ### Mark Meckes (Case Western Reserve University) - Title TBA
-
-Abstract TBA
-
----
-
-### David P. Herzog (Iowa State University) - Title TBA
 
 Abstract TBA
