@@ -5,7 +5,7 @@ event-date: 2026-03-23 17:00:00
 multi-day-event: true
 permalink: /ims/lectures/rich-schwartz/
 comments: false
-categories: news virginia-mathematics-lectures ims events major-news
+categories: news virginia-mathematics-lectures ims events major-news swiper-news
 published: true
 image: __SITE_URL__/img/IMS/Rich-Schwartz.png
 image-alt: Rich Schwartz
