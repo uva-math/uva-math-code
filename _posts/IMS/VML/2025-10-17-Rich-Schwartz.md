@@ -7,6 +7,8 @@ permalink: /ims/lectures/rich-schwartz/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
+image: __SITE_URL__/img/IMS/Rich-Schwartz.png
+image-alt: Rich Schwartz
 more-text: Abstracts
 nav_parent: IMS
 ---
