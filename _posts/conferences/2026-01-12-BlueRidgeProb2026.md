@@ -49,9 +49,9 @@ Abstract TBA
 
 ---
 
-### Eva Loeser (UNC Chapel Hill) - Title TBA
+### Eva Loeser (UNC Chapel Hill) - Invariance Principle for d-Dimensional Markov Processes on a Domain
 
-Abstract TBA
+Many interacting particle systems that arise in mathematical physics, integrable probability, and queueing theory exhibit complex interactions when particles are near each other. Such a system of d particles traversing the real line can be represented as a stochastic process in R^d, (X_1,...,X_d), where X_i is the position of the ith largest particle. In this situation, we have a process that takes values on the Weyl chamber, S= { x in R^d : x_1 <= x_2 <= ... <= x_d}, where the interesting interaction occurs near the boundary of S (when at least two particles are near each other). The following question then arises: how can we take the diffusion limit of a Markov process in R^d that is constrained to a certain region where, in the microscopic dynamics, there is a proliferation of different boundary behaviors? To answer this question, we explore a generalization of the classical invariance principles for semimartingale reflected Brownian motions (SRBM) explored by Williams, Dai, Reiman, Kang, and others to situations in which the number of boundary behaviors can be much larger than the number of faces. We will use this theorem to obtain clean diffusion limits for examples from mathematical physics, integrable probability, and queueing theory.
 
 ---
 
