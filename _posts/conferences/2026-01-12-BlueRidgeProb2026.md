@@ -43,9 +43,9 @@ In this talk, I will present recent joint work with Alex Dunlap and Tommaso Rosa
 
 ---
 
-### David P. Herzog (Iowa State University) - Title TBA
+### David P. Herzog (Iowa State University) - Quantitative positivity of transition densities for random perturbations of Hamiltonian systems
 
-Abstract TBA
+I will present recent results on a class of diffusion processes arising from random perturbations of conservative Hamiltonian systems. Under a set of abstract hypotheses---including basic structural assumptions on the Hamiltonian, a weak Lyapunov structure, and a quantitative notion of smoothing---we prove that transition densities satisfy a sharp, uniform pointwise lower bound over Hamiltonian sublevel sets in the small noise limit. By applying our general theorem, we obtain quantitative minorization estimates for a variety of models including Langevin dynamics, chains of oscillators coupled to heat baths at different temperatures, and finite-dimensional fluid models such as stochastically forced Galerkin truncations of the Navier-Stokes equations and the Lorenz '96 system. As a corollary, assuming a stronger Lyapunov structure, our main result yields a sharp exponential rate of convergence to equilibrium in a weighted total variation norm. A central feature of our approach is that it does not require knowledge of the explicit form of the invariant measure, nor even its existence, and hence is broadly applicable to deduce minorization for physically relevant systems where invariant measures are inaccessible.
 
 ---
 
