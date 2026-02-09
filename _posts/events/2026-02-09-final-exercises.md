@@ -54,28 +54,30 @@ details > div {
 }
 </style>
 
-## May 2026 Mathematics Diploma Ceremony
+<h2>May 2026 Mathematics Diploma Ceremony</h2>
 
-**Saturday | May 16th | 2:30 &ndash; 4:00 P.M.**
+<p><strong>Saturday &nbsp;|&nbsp; May 16th &nbsp;|&nbsp; 2:30 &ndash; 4:00 P.M.</strong></p>
 
-**The Rotunda** | 1826 University Avenue | Charlottesville, VA 22904
+<p><strong>The Rotunda</strong> &nbsp;|&nbsp; 1826 University Avenue &nbsp;|&nbsp; Charlottesville, VA 22904</p>
 
-In the case of inclement or severe weather, the ceremony will be held at **Warner Hall** at the same time. Check the [Weather Plans](https://majorevents.virginia.edu/finals/weatherplans) site for updates.
+<p>In the case of inclement or severe weather, the ceremony will be held at <strong>Warner Hall</strong> at the same time. Check the <a href="https://majorevents.virginia.edu/finals/weatherplans">Weather Plans</a> site for updates.</p>
 
-- **Fair-Weather Location:** The Rotunda
-- **Inclement-Weather Location:** Warner Hall
-- **Department Contact:** Malvika Rajagopal: [math-help@virginia.edu](mailto:math-help@virginia.edu)
+<ul>
+<li><strong>Fair-Weather Location:</strong> The Rotunda</li>
+<li><strong>Inclement-Weather Location:</strong> Warner Hall</li>
+<li><strong>Department Contact:</strong> Malvika Rajagopal: <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a></li>
+</ul>
 
-Please visit the [Office of Major Events](https://majorevents.virginia.edu/finals/schedule) for the complete schedule of events for finals weekend, including the Lawn Ceremony.
+<p>Please visit the <a href="https://majorevents.virginia.edu/finals/schedule">Office of Major Events</a> for the complete schedule of events for finals weekend, including the Lawn Ceremony.</p>
 
 <!--more-->
 
----
+<hr>
 
-### The 2025&ndash;2026 Graduating Class
-**(Summer 25, Fall 25, May 26 graduates)**
+<h3>The 2025&ndash;2026 Graduating Class</h3>
+<p><strong>(Summer 25, Fall 25, May 26 graduates)</strong></p>
 
-At this event, we recognize students who completed their degree requirements in Summer 2025, Fall 2025, and Spring 2026. *Please note students planning to graduate in **Summer 2026** will be invited to the May 2027 ceremony.*
+<p>At this event, we recognize students who completed their degree requirements in Summer 2025, Fall 2025, and Spring 2026. <em>Please note students planning to graduate in <strong>Summer 2026</strong> will be invited to the May 2027 ceremony.</em></p>
 
 <details>
 <summary>Student Arrival Time</summary>
