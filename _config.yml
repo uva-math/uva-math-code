@@ -31,7 +31,7 @@ collections:
     output: true
     permalink: /people/:name/
 
-exclude: [vendor]
+exclude: [vendor, venv]
 
 plugins:
   - jekyll-paginate
