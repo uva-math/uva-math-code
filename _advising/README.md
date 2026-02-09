@@ -33,15 +33,20 @@ The Undergraduate Record states (see `math_major_ba.html`):
 **Added to the website's policy page** (`undergraduate/undergraduate_policy_page.md`) on 2026-02-09.
 
 ### APMA / MATH — still needed
-- [ ] APMA course listings or equivalency policies
+- [x] APMA substitution policy — documented in `math_major_ba.html` (4 specific swaps)
 
 ### Double counting — other departments / schools
-- [ ] College of A&S policies on majors: <https://college.as.virginia.edu/college-policies-regarding-majors>
-- [ ] College minor declaration and policy: <https://college.as.virginia.edu/minor-declaration-and-policy>
-- [ ] Types of majors (interdisciplinary list): <https://college.as.virginia.edu/types-majors-college>
+- [x] College of A&S policies on majors — downloaded as `college_policies_majors.html`
+- [x] College minor declaration and policy — downloaded as `college_minor_policy.html`
+- [x] Types of majors (interdisciplinary list) — downloaded as `college_types_of_majors.html`
 - [x] SEAS degree requirements / double counting rules (engineering side) — downloaded as `seas_academic_rules.html`
-- [ ] Per-department guidance for common overlaps (CS, Physics, Economics, Statistics)
+- [x] CS B.A. requirements — downloaded as `cs_ba.html` (shares MATH 3100, 3351, 3354, 4651 and others with math major)
+- [x] Applied Statistics B.A. requirements — downloaded as `applied_stats_ba.html` (shares MATH 3100, 3351 and many STAT courses)
+- [x] Physics B.A. requirements — downloaded as `physics_ba.html` (requires MATH 2310, 3250 — minimal overlap with math major)
+- [x] Economics B.A. requirements — downloaded as `economics_ba.html` (requires/lists MATH 3350, 3351, STAT 2120/3120/3220 — moderate overlap)
 
 ### Other useful references
-- [ ] Transfer credit policies for math courses
-- [ ] AP/IB credit policies for math placement
+- [x] College test credit overview — saved as `college_test_credit.md` (AP/IB general policies; detailed credit award charts are linked PDFs on the College site, not downloadable)
+- [ ] AP credit award chart (PDF linked from college.as.virginia.edu/test-credit — requires manual download)
+- [ ] IB credit award chart (PDF linked from same page)
+- [ ] Math department transfer credit page: <https://math.virginia.edu/undergraduate/transfer-credit/>
