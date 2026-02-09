@@ -7,6 +7,7 @@ categories:
 - news
 - events
 published: true
+hide-this-item: true
 image: __SITE_URL__/img/news_events/Final_Exercises_2022-05-22_ss_147.jpg
 image-alt: Final Exercises ceremony
 more-text: Information about the ceremony
