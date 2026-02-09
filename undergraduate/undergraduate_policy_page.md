@@ -37,6 +37,12 @@ Yes, complete the [Participation in Final Exercises by BA Form]({{site.url}}/und
 - What courses can I transfer to UVA?
 [`http://ascs8.eservices.virginia.edu/asEquivs`](http://ascs8.eservices.virginia.edu/asEquivs)
 
+- How many courses must have a MATH prefix?
+At least 6 courses offered for the major must have a MATH prefix.
+
+- Can APMA courses be used toward the math major?
+The following APMA substitutions are allowed: APMA 2130 for MATH 3250, APMA 3080 for MATH 3351, APMA 3100 for MATH 3100, and APMA 3120 for STAT 3120. However, APMA courses do not count toward the 6-course MATH prefix minimum.
+
 - Can I double count some courses?
 Yes. The current policy is given in the Undergraduate Record: "Up to two courses that are being
 counted for another College major can also be counted for the major in mathematics. Three
