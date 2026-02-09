@@ -38,7 +38,7 @@ Yes, complete the [Participation in Final Exercises by BA Form]({{site.url}}/und
 [`http://ascs8.eservices.virginia.edu/asEquivs`](http://ascs8.eservices.virginia.edu/asEquivs)
 
 - How many courses must have a MATH prefix?
-At least 6 courses offered for the major must have a MATH prefix.
+At least 6 courses counted as major requirements must have a MATH prefix.
 
 - Can APMA courses be used toward the math major?
 The following APMA substitutions are allowed: APMA 2130 for MATH 3250, APMA 3080 for MATH 3351, APMA 3100 for MATH 3100, and APMA 3120 for STAT 3120. However, APMA courses do not count toward the 6-course MATH prefix minimum.
