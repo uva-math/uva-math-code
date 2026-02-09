@@ -45,8 +45,7 @@ The Undergraduate Record states (see `math_major_ba.html`):
 - [x] Physics B.A. requirements — downloaded as `physics_ba.html` (requires MATH 2310, 3250 — minimal overlap with math major)
 - [x] Economics B.A. requirements — downloaded as `economics_ba.html` (requires/lists MATH 3350, 3351, STAT 2120/3120/3220 — moderate overlap)
 
-### Other useful references
-- [x] College test credit overview — saved as `college_test_credit.md` (AP/IB general policies; detailed credit award charts are linked PDFs on the College site, not downloadable)
-- [ ] AP credit award chart (PDF linked from college.as.virginia.edu/test-credit — requires manual download)
-- [ ] IB credit award chart (PDF linked from same page)
-- [ ] Math department transfer credit page: <https://math.virginia.edu/undergraduate/transfer-credit/>
+### AP/IB/CLEP credit and transfer policies
+- [x] AP/IB/CLEP/A-Level math credit tables — extracted into `ap_ib_clep_math_credit.md` (from Undergraduate Record 2024-2025 Admission section)
+- [x] College test credit overview — saved as `college_test_credit.md`
+- [x] College transfer credit policies — downloaded as `college_transfer_credit_policies.html`
