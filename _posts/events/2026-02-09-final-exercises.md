@@ -56,7 +56,7 @@ details > div {
 
 <h2>May 2026 Mathematics Diploma Ceremony</h2>
 
-<p><strong>Saturday &nbsp;|&nbsp; May 16th &nbsp;|&nbsp; 2:30 &ndash; 4:00 P.M.</strong></p>
+<h4>Saturday &nbsp;|&nbsp; May 16th &nbsp;|&nbsp; 2:30 &ndash; 4:00 P.M.</h4>
 
 <p><strong>The Rotunda</strong> &nbsp;|&nbsp; 1826 University Avenue &nbsp;|&nbsp; Charlottesville, VA 22904</p>
 
