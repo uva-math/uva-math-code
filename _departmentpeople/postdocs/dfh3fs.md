@@ -7,6 +7,7 @@ position: RTG Research Associate and Lecturer
 office: 301 Kerchof Hall
 phone:
 email: dfh3fs@virginia.edu
+image: __SITE_URL__/img/people/fall25/Oliver_Wang.jpg
 personal_page:
 
 research_tags:

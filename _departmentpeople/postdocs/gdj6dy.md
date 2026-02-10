@@ -7,7 +7,7 @@ position: Pitts Research Associate and Lecturer
 office:
 phone:
 email: gdj6dy@virginia.edu
-image:
+image: __SITE_URL__/img/people/fall25/Pranava_Jayanti.png
 personal_page:
 
 ---
