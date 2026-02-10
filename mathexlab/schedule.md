@@ -8,12 +8,12 @@ redirect_from:
 
 <h2 class="mb-3">Schedule</h2>
 
-### Fall 2025
+### Spring 2026
 
 <ul>
-  <li>Introductory group meeting: Wednesday, October 6, 5-6pm </li>
-  <li>Visit from Starr Hill Pathways: Friday, October 17, 1-3pm </li>
-  <li>Final group presentations: Wednesday, December 3, 5-6pm </li>
+  <li>Introductory group meeting: Tuesday, February 17, 5-6pm, Kerchof Hall 111 </li>
+  <li>Visit from Starr Hill Pathways: Friday, March 20, 10am-12pm, Chemistry Building 202 </li>
+  <li>Final group presentations: Thursday, April 23, 5-6pm, Kerchof Hall 111 </li>
 </ul>
 
 **Examples of past common meetings:**
