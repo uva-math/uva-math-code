@@ -4,7 +4,7 @@ title: 2026 Blue Ridge Probability Day
 event-date: 2026-03-13 10:30:00
 multi-day-event: false
 comments: false
-categories: news events conferences
+categories: news events conferences swiper-news
 published: true
 image: __SITE_URL__/img/news_events/BlueRidge2026.jpg
 image-tall: true
@@ -12,13 +12,21 @@ image-alt: Spring in Blue Ridge Mountains
 more-text: Schedule and abstracts
 ---
 
-The second Blue Ridge Probability Day will occur on <b>Friday, March 13, 2026</b>. Location TBA. The speakers are
+The second Blue Ridge Probability Day will occur on <b>Friday, March 13, 2026</b> in Kerchof 111. The speakers are
 - [Yu Gu](https://www.math.umd.edu/~ygu7/) (University of Maryland)
 - [Eva Loeser](https://sites.google.com/ucsd.edu/eva-loesers-website/home) (UNC Chapel Hill)
 - [Mark Meckes](https://case.edu/artsci/math/mwmeckes/) (Case Western Reserve University)
 - [David P. Herzog](https://faculty.sites.iastate.edu/dherzog/) (Iowa State University)
 
 <!--more-->
+
+### Parking
+
+- Kerchof Hall — hourly ParkMobile parking right at the building, 3-hour max
+- [Central Grounds Garage](https://maps.app.goo.gl/KY3a8AXyKpXRKkXJ7) — hourly parking, 3-hour max; 5-minute walk to Kerchof Hall
+- [Culbreth Road Garage](https://maps.app.goo.gl/8MZXfsB4byxAmqsJA) — a cheaper option; 15-minute walk to Kerchof Hall
+
+---
 
 ### Schedule
 
