@@ -23,7 +23,7 @@ The second Blue Ridge Probability Day will occur on <b>Friday, March 13, 2026</b
 ### Parking
 
 - Kerchof Hall — hourly ParkMobile parking right at the building, 3-hour max
-- [Central Grounds Garage (google maps)](https://maps.app.goo.gl/KY3a8AXyKpXRKkXJ7) — hourly parking, 3-hour max; 5-minute walk to Kerchof Hall
+- [Central Grounds Garage (google maps)](https://maps.app.goo.gl/KY3a8AXyKpXRKkXJ7) — hourly parking; 5-minute walk to Kerchof Hall
 - [Culbreth Road Garage (google maps)](https://maps.app.goo.gl/8MZXfsB4byxAmqsJA) — a cheaper option; 15-minute walk to Kerchof Hall
 
 ---
