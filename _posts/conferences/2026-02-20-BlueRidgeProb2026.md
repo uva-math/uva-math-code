@@ -6,6 +6,7 @@ multi-day-event: false
 comments: false
 categories: news events conferences swiper-news
 published: true
+good-md: true
 image: __SITE_URL__/img/news_events/BlueRidge2026.jpg
 image-tall: true
 image-alt: Spring in Blue Ridge Mountains
