@@ -165,9 +165,9 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 **Files:**
 - Modify: `index.html`
 
-- [ ] In the carousel section, change `<span class="h4 mb-3">` to an actual `<h3>` (or appropriate heading level) for post titles
-- [ ] Ensure the heading styling is preserved via CSS class
-- [ ] Use agentic browser to visit localhost:4000/ and verify carousel titles render with proper heading elements
+- [x] In the carousel section, change `<span class="h4 mb-3">` to an actual `<h3>` (or appropriate heading level) for post titles
+- [x] Ensure the heading styling is preserved via CSS class
+- [x] Use agentic browser to visit localhost:4000/ and verify carousel titles render with proper heading elements
 
 ### Task 11: Fix image alt text fallback
 
