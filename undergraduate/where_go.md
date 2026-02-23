@@ -35,7 +35,7 @@ nav_weight: 101
 ## Tech career information
 
 <ul>
-	<li>https://techguide.org/</li>
+	<li><a href="https://techguide.org/">TechGuide career resources</a></li>
 </ul>
 
 <h2>Mathematics Association of America (MAA)</h2>
