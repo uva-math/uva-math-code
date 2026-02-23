@@ -631,7 +631,7 @@ font-weight: bold;
 }
 
 /* Hamburger menu focus styling */
-.navbar-toggler:focus {
+.navbar-toggler:focus:not(:focus-visible) {
   box-shadow: none;
 }
 

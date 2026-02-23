@@ -86,11 +86,11 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 - Modify: `css/main.css`
 - Modify: `_includes/footer.html`
 
-- [ ] Change `.navbar-toggler:focus { box-shadow: none; }` to `.navbar-toggler:focus:not(:focus-visible) { box-shadow: none; }` so keyboard-only focus still shows an indicator
-- [ ] Add `rel="noopener noreferrer"` to all `target="_blank"` links in footer.html
-- [ ] Fix the copyright link: change `target="new"` to `target="_blank"` and add rel attribute
-- [ ] Update `http://` URLs in footer to `https://` where possible (twitter, copyright)
-- [ ] Use agentic browser to visit localhost:4000/ and verify footer links open correctly; tab through the page to verify focus indicators are visible on the navbar hamburger button
+- [x] Change `.navbar-toggler:focus { box-shadow: none; }` to `.navbar-toggler:focus:not(:focus-visible) { box-shadow: none; }` so keyboard-only focus still shows an indicator
+- [x] Add `rel="noopener noreferrer"` to all `target="_blank"` links in footer.html
+- [x] Fix the copyright link: change `target="new"` to `target="_blank"` and add rel attribute
+- [x] Update `http://` URLs in footer to `https://` where possible (twitter, copyright)
+- [x] Use agentic browser to visit localhost:4000/ and verify footer links open correctly; tab through the page to verify focus indicators are visible on the navbar hamburger button
 
 ### Task 5: Fix duplicate sidebar landmarks and add aria-current (M2, M3)
 
