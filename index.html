@@ -62,7 +62,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
               {% assign swiper-news_id = post.id %}
               {% assign swiper-news_counter = swiper-news_counter | plus:1 %}
                 <div class="swiper-slide">
-                <a href="{{site.url }}{{ post.url }}" style="color:inherit;"><span class="h4 mb-3">{{post.title}}</a></span>
+                <a href="{{site.url }}{{ post.url }}" style="color:inherit;"><span class="h4 mb-3">{{post.title}}</span></a>
                 {% if post.event-date != null and post.multi-day-event %}
                 <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
                 {% if post.event-date != null and post.multi-day-event != true %}

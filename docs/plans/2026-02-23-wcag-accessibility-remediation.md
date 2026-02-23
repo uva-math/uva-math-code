@@ -111,12 +111,12 @@ Addresses: M1 (social links missing names), M2 (search input no label), M3 (sear
 
 Addresses: M5 (sr-only class undefined), M6 (span closed after anchor)
 
-- [ ] Replace all `sr-only` class references with `visually-hidden` in `_includes/navbar.html`
-- [ ] Search the entire codebase for other `sr-only` usages and replace them
-- [ ] Fix the malformed `<a>...<span>...</a></span>` nesting on index.html line 57 to `<a><span>...</span></a>`
-- [ ] Ensure Bootstrap 5's `visually-hidden` class is available (or add a CSS definition if the Bootstrap build does not include it)
-- [ ] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser eval "document.querySelectorAll('.sr-only').length"` - confirm returns 0
-- [ ] Verify with agent-browser: `agent-browser eval "document.querySelector('#main-content').outerHTML"` to spot-check no malformed nesting remains
+- [x] Replace all `sr-only` class references with `visually-hidden` in `_includes/navbar.html`
+- [x] Search the entire codebase for other `sr-only` usages and replace them
+- [x] Fix the malformed `<a>...<span>...</a></span>` nesting on index.html line 57 to `<a><span>...</span></a>`
+- [x] Ensure Bootstrap 5's `visually-hidden` class is available (or add a CSS definition if the Bootstrap build does not include it)
+- [x] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser eval "document.querySelectorAll('.sr-only').length"` - confirm returns 0
+- [x] Verify with agent-browser: `agent-browser eval "document.querySelector('#main-content').outerHTML"` to spot-check no malformed nesting remains
 
 ### Task 6: Event Handling and Reduced Motion
 
