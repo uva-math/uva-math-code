@@ -77,12 +77,12 @@ Addresses: C3 (no pause button), C4 (not keyboard accessible)
 
 Addresses: C5 (dark mode toggle focus removed), C6 (hamburger toggle focus removed)
 
-- [ ] Replace `.theme-toggle-dual:focus { outline: none; }` with a visible focus indicator (e.g., `outline: 2px solid #002F6C; outline-offset: 2px;`)
-- [ ] Replace `.navbar-toggler:focus { box-shadow: none; }` with a visible focus style
-- [ ] Remove `shadow-none` from navbar toggler elements in `_includes/navbar.html` if it suppresses focus
-- [ ] Ensure focus indicators meet 3:1 contrast ratio in both light and dark modes
-- [ ] Verify with agent-browser: Tab to dark mode toggle, take screenshot to confirm focus ring: `agent-browser open http://localhost:4000 && agent-browser focus ".theme-toggle-dual" && agent-browser screenshot /tmp/focus-toggle.png`
-- [ ] Verify with agent-browser: Tab to hamburger (at mobile viewport), take screenshot: `agent-browser focus ".navbar-toggler" && agent-browser screenshot /tmp/focus-hamburger.png`
+- [x] Replace `.theme-toggle-dual:focus { outline: none; }` with a visible focus indicator (e.g., `outline: 2px solid #002F6C; outline-offset: 2px;`)
+- [x] Replace `.navbar-toggler:focus { box-shadow: none; }` with a visible focus style
+- [x] Remove `shadow-none` from navbar toggler elements in `_includes/navbar.html` if it suppresses focus
+- [x] Ensure focus indicators meet 3:1 contrast ratio in both light and dark modes
+- [x] Verify with agent-browser: Tab to dark mode toggle, take screenshot to confirm focus ring: `agent-browser open http://localhost:4000 && agent-browser focus ".theme-toggle-dual" && agent-browser screenshot /tmp/focus-toggle.png`
+- [x] Verify with agent-browser: Tab to hamburger (at mobile viewport), take screenshot: `agent-browser focus ".navbar-toggler" && agent-browser screenshot /tmp/focus-hamburger.png`
 
 ### Task 4: ARIA Labels and Accessible Names
 

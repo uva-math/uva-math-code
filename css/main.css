@@ -608,9 +608,28 @@ font-weight: bold;
   }
 }
 
-/* Better hamburger menu styling */
+/* Hamburger menu focus styling */
 .navbar-toggler:focus {
   box-shadow: none;
+  outline: 2px solid #002F6C;
+  outline-offset: 2px;
+}
+
+.navbar-toggler:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.navbar-toggler:focus-visible {
+  outline: 2px solid #002F6C;
+  outline-offset: 2px;
+}
+
+[data-theme="dark"] .navbar-toggler:focus {
+  outline-color: #ffffff;
+}
+
+[data-theme="dark"] .navbar-toggler:focus-visible {
+  outline-color: #ffffff;
 }
 
 /* Dark Mode Styles */
@@ -770,11 +789,19 @@ footer {
 }
 
 .theme-toggle-dual:focus {
+  outline: 2px solid #002F6C;
+  outline-offset: 2px;
+  border-radius: 20px;
+}
+
+.theme-toggle-dual:focus:not(:focus-visible) {
   outline: none;
 }
 
-.theme-toggle-dual:focus .toggle-track {
-  box-shadow: 0 0 0 3px rgba(0, 47, 108, 0.3);
+.theme-toggle-dual:focus-visible {
+  outline: 2px solid #002F6C;
+  outline-offset: 2px;
+  border-radius: 20px;
 }
 
 /* Dark theme state */
@@ -799,8 +826,12 @@ footer {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-[data-theme="dark"] .theme-toggle-dual:focus .toggle-track {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+[data-theme="dark"] .theme-toggle-dual:focus {
+  outline-color: #ffffff;
+}
+
+[data-theme="dark"] .theme-toggle-dual:focus-visible {
+  outline-color: #ffffff;
 }
 
 /* Mobile styling */
