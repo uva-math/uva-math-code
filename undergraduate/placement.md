@@ -226,4 +226,4 @@ course to enroll in.
 
 ---
 
-<h2>If you are unsure about which UVa Mathematics course should be your first, consult&nbsp;your <a href="http://college.artsandsciences.virginia.edu/advisors">faculty advisor</a>.</h3>
+<h2>If you are unsure about which UVa Mathematics course should be your first, consult&nbsp;your <a href="http://college.artsandsciences.virginia.edu/advisors">faculty advisor</a>.</h2>
