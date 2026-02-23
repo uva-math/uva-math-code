@@ -7,7 +7,7 @@ nav_parent: Undergraduate
 nav_weight: 1
 ---
 
-<!-- <h1 class="mb-3">Degree requirements</h1> -->
+<h1 class="mb-3">Degree requirements and declaration</h1>
 
 ## Major in Mathematics Requirements
 
@@ -38,8 +38,8 @@ letter of you last name.
 
 ---
 
-- ### [Declaration of math major form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)
-- ### [Declaration of math minor form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)
+- **[Declaration of math major form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)**
+- **[Declaration of math minor form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)**
 
 <!--
 ---
@@ -48,4 +48,4 @@ letter of you last name.
 
 ---
 
-- ### Math Major Course Guide: [PDF]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Fall25_version.pdf) | [HTML]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Fall25_version.html)
+- **Math Major Course Guide: [PDF]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Fall25_version.pdf) | [HTML]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Fall25_version.html)**
