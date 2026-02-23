@@ -51,7 +51,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
               <div class="swiper-pagination" style="position: static; width: auto;"></div>
               <div class="carousel-nav-buttons">
                 <button class="carousel-btn carousel-prev" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                <button class="carousel-btn carousel-pause" aria-label="Pause carousel" aria-pressed="false"><i class="fas fa-pause" aria-hidden="true"></i></button>
+                <button class="carousel-btn carousel-pause" aria-label="Pause carousel"><i class="fas fa-pause" aria-hidden="true"></i></button>
                 <button class="carousel-btn carousel-next" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
               </div>
             </div>
@@ -153,7 +153,6 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                   // Update button state if autoplay was disabled due to reduced motion
                   if (!isPlaying) {
                     pauseBtn.setAttribute('aria-label', 'Play carousel');
-                    pauseBtn.setAttribute('aria-pressed', 'true');
                     pauseBtn.querySelector('i').className = 'fas fa-play';
                   }
                   pauseBtn.addEventListener('click', function() {
@@ -169,13 +168,11 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                   swiper.on('autoplayStop', function() {
                     isPlaying = false;
                     pauseBtn.setAttribute('aria-label', 'Play carousel');
-                    pauseBtn.setAttribute('aria-pressed', 'true');
                     pauseBtn.querySelector('i').className = 'fas fa-play';
                   });
                   swiper.on('autoplayStart', function() {
                     isPlaying = true;
                     pauseBtn.setAttribute('aria-label', 'Pause carousel');
-                    pauseBtn.setAttribute('aria-pressed', 'false');
                     pauseBtn.querySelector('i').className = 'fas fa-pause';
                   });
                 }
