@@ -4,11 +4,16 @@
 <head>
     {% assign xx = page.permalink | split: '/' %}
     {% for word in xx %}{% if forloop.last %}{% assign cur_shortname = word %}{%endif%}{% endfor %}
+    {% assign title_set = false %}
     {% for area in site.data.research_areas %}
     {%if area.shortname == cur_shortname %}
       <title>{{ area.h-name }} Research | Mathematics at the University of Virginia</title>
+      {% assign title_set = true %}
     {%endif%}
     {% endfor %}
+    {% unless title_set %}
+      <title>{{ page.title }} | Mathematics at the University of Virginia</title>
+    {% endunless %}
   {% include header.html %}
 </head>
 
