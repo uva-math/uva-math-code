@@ -158,15 +158,22 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                   pauseBtn.addEventListener('click', function() {
                     if (isPlaying) {
                       swiper.autoplay.stop();
-                      pauseBtn.setAttribute('aria-label', 'Play carousel');
-                      pauseBtn.querySelector('i').className = 'fas fa-play';
-                      isPlaying = false;
                     } else {
                       swiper.autoplay.start();
-                      pauseBtn.setAttribute('aria-label', 'Pause carousel');
-                      pauseBtn.querySelector('i').className = 'fas fa-pause';
-                      isPlaying = true;
                     }
+                  });
+
+                  // Sync button state with actual Swiper autoplay state
+                  // (autoplay can stop via user interaction with disableOnInteraction: true)
+                  swiper.on('autoplayStop', function() {
+                    isPlaying = false;
+                    pauseBtn.setAttribute('aria-label', 'Play carousel');
+                    pauseBtn.querySelector('i').className = 'fas fa-play';
+                  });
+                  swiper.on('autoplayStart', function() {
+                    isPlaying = true;
+                    pauseBtn.setAttribute('aria-label', 'Pause carousel');
+                    pauseBtn.querySelector('i').className = 'fas fa-pause';
                   });
                 }
               </script>
