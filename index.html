@@ -45,9 +45,16 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
         
             <!-- Code for the news roll -->
 
-            <div class="swiper-pagination mt-1"></div>
+            <div class="carousel-controls-bar mt-1">
+              <div class="swiper-pagination" style="position: static; width: auto;"></div>
+              <div class="carousel-nav-buttons">
+                <button class="carousel-btn carousel-prev" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn carousel-pause" aria-label="Pause carousel" aria-pressed="false"><i class="fas fa-pause" aria-hidden="true"></i></button>
+                <button class="carousel-btn carousel-next" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+              </div>
+            </div>
             <div class="jumbotron" style="padding: 12px">
-            <div class="swiper-container mt-4">
+            <div class="swiper-container mt-4" role="region" aria-label="News carousel" aria-roledescription="carousel">
             <div class="swiper-wrapper">
               {% assign swiper-news_counter = 0 %}
               {% for post in site.categories['news'] limit:20 %}
@@ -94,11 +101,24 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                   pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
+                    renderBullet: function (index, className) {
+                      return '<span class="' + className + '" role="button" aria-label="Go to slide ' + (index + 1) + '" tabindex="0"></span>';
+                    },
                   },
-                  // navigation: {
-                  //   nextEl: '.swiper-button-next',
-                  //   prevEl: '.swiper-button-prev',
-                  // },
+                  navigation: {
+                    nextEl: '.carousel-next',
+                    prevEl: '.carousel-prev',
+                  },
+                  keyboard: {
+                    enabled: true,
+                    onlyInViewport: true,
+                  },
+                  a11y: {
+                    enabled: true,
+                    prevSlideMessage: 'Previous slide',
+                    nextSlideMessage: 'Next slide',
+                    paginationBulletMessage: 'Go to slide {{index}}',
+                  },
                   // Enable mouse wheel support (two-finger swipes on Mac)
                   mousewheel: {
                     enabled: true,
@@ -122,6 +142,29 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                   shortSwipes: true,
                   threshold: 10,
                 });
+
+                // Pause/Play button functionality
+                (function() {
+                  var pauseBtn = document.querySelector('.carousel-pause');
+                  var isPlaying = true;
+                  if (pauseBtn) {
+                    pauseBtn.addEventListener('click', function() {
+                      if (isPlaying) {
+                        swiper.autoplay.stop();
+                        pauseBtn.setAttribute('aria-label', 'Play carousel');
+                        pauseBtn.setAttribute('aria-pressed', 'true');
+                        pauseBtn.querySelector('i').className = 'fas fa-play';
+                        isPlaying = false;
+                      } else {
+                        swiper.autoplay.start();
+                        pauseBtn.setAttribute('aria-label', 'Pause carousel');
+                        pauseBtn.setAttribute('aria-pressed', 'false');
+                        pauseBtn.querySelector('i').className = 'fas fa-pause';
+                        isPlaying = true;
+                      }
+                    });
+                  }
+                })();
               </script>
 
         {% assign major-news_counter = 0 %}

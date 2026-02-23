@@ -61,13 +61,13 @@ Addresses: C1 (no skip-to-content link), C2 (no main landmark)
 
 Addresses: C3 (no pause button), C4 (not keyboard accessible)
 
-- [ ] Add a visible pause/play toggle button near the carousel with `aria-label="Pause carousel"` and update label dynamically
-- [ ] Add previous/next navigation buttons with `aria-label="Previous slide"` and `aria-label="Next slide"`
-- [ ] Configure Swiper to use keyboard navigation (`keyboard: { enabled: true }`)
-- [ ] Ensure pagination bullets are keyboard-focusable (configure Swiper `pagination.clickable` and add ARIA labels)
-- [ ] Add JavaScript to toggle autoplay on pause button click, updating `aria-pressed` state
-- [ ] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser snapshot` - confirm pause button and slide navigation appear in tree with correct labels
-- [ ] Verify with agent-browser: `agent-browser press Tab` repeatedly to reach carousel controls, then `agent-browser press Enter` to activate pause
+- [x] Add a visible pause/play toggle button near the carousel with `aria-label="Pause carousel"` and update label dynamically
+- [x] Add previous/next navigation buttons with `aria-label="Previous slide"` and `aria-label="Next slide"`
+- [x] Configure Swiper to use keyboard navigation (`keyboard: { enabled: true }`)
+- [x] Ensure pagination bullets are keyboard-focusable (configure Swiper `pagination.clickable` and add ARIA labels)
+- [x] Add JavaScript to toggle autoplay on pause button click, updating `aria-pressed` state
+- [x] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser snapshot` - confirm pause button and slide navigation appear in tree with correct labels
+- [x] Verify with agent-browser: `agent-browser press Tab` repeatedly to reach carousel controls, then `agent-browser press Enter` to activate pause
 
 ### Task 3: Restore Focus Indicators
 

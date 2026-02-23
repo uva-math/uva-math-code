@@ -31,6 +31,77 @@
   color: #e8e8e8;
 }
 
+/* Carousel controls bar */
+.carousel-controls-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.carousel-nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.carousel-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: 1px solid #002F6C;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #002F6C;
+  cursor: pointer;
+  font-size: 0.85rem;
+  padding: 0;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #002F6C;
+  color: #ffffff;
+}
+
+.carousel-btn:focus {
+  outline: 2px solid #e57200;
+  outline-offset: 2px;
+}
+
+/* Dark mode carousel controls */
+[data-theme="dark"] .carousel-btn {
+  border-color: #4da3ff;
+  background: #1a2a3f;
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .carousel-btn:hover {
+  background-color: #003d7a;
+  color: #ffffff;
+}
+
+[data-theme="dark"] .carousel-btn:focus {
+  outline-color: #4da3ff;
+}
+
+/* Swiper pagination bullet focus styles */
+.swiper-pagination-bullet {
+  transition: background-color 0.15s ease;
+}
+
+.swiper-pagination-bullet:focus {
+  outline: 2px solid #e57200;
+  outline-offset: 2px;
+}
+
+[data-theme="dark"] .swiper-pagination-bullet:focus {
+  outline-color: #4da3ff;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
