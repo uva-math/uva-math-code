@@ -144,13 +144,13 @@ Addresses: M7 (duplicate touch/click handlers), M8 (no prefers-reduced-motion)
 
 Addresses: M9 (footer social links not in nav), M10 (sidebars lack nav landmark)
 
-- [ ] Add `aria-label="University brand and search"` to the `<nav>` in `top_brand.html`
-- [ ] Add `aria-label="Main navigation"` to the `<nav>` in `navbar.html`
-- [ ] Wrap the social media links section in `_includes/footer.html` with `<nav aria-label="Social media">`
-- [ ] Wrap `_includes/ug_sidebar.html` content in `<nav aria-label="Undergraduate program">`
-- [ ] Wrap `_includes/g_sidebar.html` content in `<nav aria-label="Graduate program">`
-- [ ] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser snapshot` - confirm all navigation landmarks appear with distinct labels
-- [ ] Verify with agent-browser: `agent-browser open http://localhost:4000/undergraduate && agent-browser snapshot` - confirm sidebar nav landmark appears
+- [x] Add `aria-label="University brand and search"` to the `<nav>` in `top_brand.html`
+- [x] Add `aria-label="Main navigation"` to the `<nav>` in `navbar.html`
+- [x] Wrap the social media links section in `_includes/footer.html` with `<nav aria-label="Social media">`
+- [x] Wrap `_includes/ug_sidebar.html` content in `<nav aria-label="Undergraduate program">`
+- [x] Wrap `_includes/g_sidebar.html` content in `<nav aria-label="Graduate program">`
+- [x] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser snapshot` - confirm all navigation landmarks appear with distinct labels
+- [x] Verify with agent-browser: `agent-browser open http://localhost:4000/undergraduate && agent-browser snapshot` - confirm sidebar nav landmark appears
 
 ### Task 8: Verify Acceptance Criteria
 

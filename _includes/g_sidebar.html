@@ -1,3 +1,4 @@
+<nav aria-label="Graduate program">
 {% assign sorted_pages = site.pages | sort: "nav_weight" %}
 
 <div class="list-group h5">
@@ -33,3 +34,4 @@
 <div class="list-group h5">
   <a class="list-group-item list-group-item-action orange-item {% if page.permalink == "/courses/graduate/" %}active{% endif %}" href="{{site.url}}/courses/graduate/">Course descriptions</a>
 </div>
+</nav>
