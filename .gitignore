@@ -35,3 +35,6 @@ process_algebra_html.py
 recreate_algebra_html.sh
 split_large_html.py
 analyze_pdfs.py
+
+# ralphex progress logs
+.ralphex/progress/
