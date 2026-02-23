@@ -45,16 +45,16 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
         
             <!-- Code for the news roll -->
 
+            <div class="jumbotron" style="padding: 12px">
+            <div class="swiper-container mt-4" role="region" aria-label="News carousel" aria-roledescription="carousel">
             <div class="carousel-controls-bar mt-1">
               <div class="swiper-pagination" style="position: static; width: auto;"></div>
               <div class="carousel-nav-buttons">
                 <button class="carousel-btn carousel-prev" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                <button class="carousel-btn carousel-pause" aria-label="Pause carousel" aria-pressed="false"><i class="fas fa-pause" aria-hidden="true"></i></button>
+                <button class="carousel-btn carousel-pause" aria-label="Pause carousel"><i class="fas fa-pause" aria-hidden="true"></i></button>
                 <button class="carousel-btn carousel-next" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
               </div>
             </div>
-            <div class="jumbotron" style="padding: 12px">
-            <div class="swiper-container mt-4" role="region" aria-label="News carousel" aria-roledescription="carousel">
             <div class="swiper-wrapper">
               {% assign swiper-news_counter = 0 %}
               {% for post in site.categories['news'] limit:20 %}
@@ -68,7 +68,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                 {% if post.event-date != null and post.multi-day-event != true %}
                 <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
                 {% if post.image != null %}
-                  {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;;max-height:175px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
+                  {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:175px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
                 {% endif %}
                 {% unless post.good-md %}
                 <a href="{{site.url }}{{ post.url }}" class="main-roll-link d-none d-sm-inline">
@@ -101,9 +101,6 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                   pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
-                    renderBullet: function (index, className) {
-                      return '<span class="' + className + '" role="button" aria-label="Go to slide ' + (index + 1) + '" tabindex="0"></span>';
-                    },
                   },
                   navigation: {
                     nextEl: '.carousel-next',
@@ -144,38 +141,34 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                 });
 
                 // Disable autoplay if user prefers reduced motion
-                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+                if (prefersReducedMotion) {
                   swiper.autoplay.stop();
                 }
 
                 // Pause/Play button functionality
-                (function() {
-                  var pauseBtn = document.querySelector('.carousel-pause');
-                  var isPlaying = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-                  if (pauseBtn) {
-                    // Update button state if autoplay was disabled due to reduced motion
-                    if (!isPlaying) {
-                      pauseBtn.setAttribute('aria-label', 'Play carousel');
-                      pauseBtn.setAttribute('aria-pressed', 'true');
-                      pauseBtn.querySelector('i').className = 'fas fa-play';
-                    }
-                    pauseBtn.addEventListener('click', function() {
-                      if (isPlaying) {
-                        swiper.autoplay.stop();
-                        pauseBtn.setAttribute('aria-label', 'Play carousel');
-                        pauseBtn.setAttribute('aria-pressed', 'true');
-                        pauseBtn.querySelector('i').className = 'fas fa-play';
-                        isPlaying = false;
-                      } else {
-                        swiper.autoplay.start();
-                        pauseBtn.setAttribute('aria-label', 'Pause carousel');
-                        pauseBtn.setAttribute('aria-pressed', 'false');
-                        pauseBtn.querySelector('i').className = 'fas fa-pause';
-                        isPlaying = true;
-                      }
-                    });
+                var pauseBtn = document.querySelector('.carousel-pause');
+                var isPlaying = !prefersReducedMotion;
+                if (pauseBtn) {
+                  // Update button state if autoplay was disabled due to reduced motion
+                  if (!isPlaying) {
+                    pauseBtn.setAttribute('aria-label', 'Play carousel');
+                    pauseBtn.querySelector('i').className = 'fas fa-play';
                   }
-                })();
+                  pauseBtn.addEventListener('click', function() {
+                    if (isPlaying) {
+                      swiper.autoplay.stop();
+                      pauseBtn.setAttribute('aria-label', 'Play carousel');
+                      pauseBtn.querySelector('i').className = 'fas fa-play';
+                      isPlaying = false;
+                    } else {
+                      swiper.autoplay.start();
+                      pauseBtn.setAttribute('aria-label', 'Pause carousel');
+                      pauseBtn.querySelector('i').className = 'fas fa-pause';
+                      isPlaying = true;
+                    }
+                  });
+                }
               </script>
 
         {% assign major-news_counter = 0 %}

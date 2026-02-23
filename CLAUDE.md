@@ -341,7 +341,7 @@ Located in `_includes/footer.html`, the dark mode script:
 1. Checks localStorage for saved preference
 2. Falls back to OS preference if no saved preference
 3. Applies theme by setting `data-theme` attribute on `<html>`
-4. Handles toggle button clicks and touch events
+4. Handles toggle button clicks
 5. Listens for OS theme changes (respects if user hasn't manually set preference)
 
 ### Component-Specific Styling

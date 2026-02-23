@@ -102,13 +102,6 @@
   const currentTheme = getThemePreference();
   applyTheme(currentTheme);
 
-  // Also initialize when DOM is ready (for safety)
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function() {
-      applyTheme(currentTheme);
-    });
-  }
-
   // Theme toggle button handlers
   document.addEventListener('DOMContentLoaded', function() {
     const toggleBtns = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
