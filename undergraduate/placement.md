@@ -49,12 +49,8 @@ To prepare for the mathematics major, you should complete the calculus sequence 
 <table border="1" cellpadding="5" cellspacing="0">
 	<thead>
 		<tr>
-			<th scope="col">
-			<p><strong>Program</strong></p>
-			</th>
-			<th scope="col">
-			<p><strong>Math Requirements</strong></p>
-			</th>
+			<th scope="col"><strong>Program</strong></th>
+			<th scope="col"><strong>Math Requirements</strong></th>
 		</tr>
 	</thead>
 	<tbody>
@@ -151,15 +147,9 @@ We give credit in the calculus sequence based upon the College Entrance Examinat
 	<caption><strong>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</strong></caption>
 	<thead>
 		<tr>
-			<th scope="col">
-			<p>AP Test and Score</p>
-			</th>
-			<th scope="col">
-			<p>Credit Awarded</p>
-			</th>
-			<th scope="col">
-			<p>Recommended Course</p>
-			</th>
+			<th scope="col">AP Test and Score</th>
+			<th scope="col">Credit Awarded</th>
+			<th scope="col">Recommended Course</th>
 		</tr>
 	</thead>
 	<tbody>

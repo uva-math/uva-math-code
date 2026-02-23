@@ -64,9 +64,9 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                 <div class="swiper-slide">
                 <h3 class="h4 mb-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{post.title}}</a></h3>
                 {% if post.event-date != null and post.multi-day-event %}
-                <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
+                <p class="h5">Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{%else%}<br>{% endif %}
                 {% if post.event-date != null and post.multi-day-event != true %}
-                <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
+                <p class="h5">Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{%else%}<br>{% endif %}
                 {% if post.image != null %}
                   {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:175px;height:auto;width:auto;" alt="{{ post.image-alt | default: post.title }}" title="{{ post.image-alt | default: post.title }}"></a><br /><br />
                 {% endif %}
@@ -185,11 +185,11 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
         {% assign major-news_id = post.id %}
         {% assign major-news_counter = major-news_counter | plus:1 %}
         <div class="jumbotron" style="background:#DADADA; padding: 12px">
-          <span class="{% if post.title.size<35 %}bodoni-h2{% else %}h2{% endif %} mb-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{post.title}}</a></span>
+          <h2 class="{% if post.title.size<35 %}bodoni-h2{% else %}h2{% endif %} mb-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{post.title}}</a></h2>
           {% if post.event-date != null and post.multi-day-event %}
-          <h5>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
+          <p class="h5">Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{%else%}<br>{% endif %}
           {% if post.event-date != null and post.multi-day-event != true %}
-          <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
+          <p class="h5">Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{%else%}<br>{% endif %}
           {% if post.image != null %}
             {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %}max-height:400px;height:auto;width:auto;" alt="{{ post.image-alt | default: post.title }}" title="{{ post.image-alt | default: post.title }}"></a><br /><br />
           {% endif %}
@@ -221,9 +221,9 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                 {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" alt="{{ post.image-alt | default: post.title }}" title="{{ post.image-alt | default: post.title }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %};max-height:240px;height:auto;width:auto;" class="mb-3"></a>
               {% endif %}
               {% if post.event-date != null and post.multi-day-event %}
-              <h6>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h6>{% endif %}
+              <p class="h6">Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{% endif %}
               {% if post.event-date != null and post.multi-day-event != true %}
-              <h6>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h6>{% endif %}
+              <p class="h6">Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{% endif %}
               <span class="d-none d-sm-inline">{{ post.excerpt | markdownify }}</span>
               <p>{% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal"  role="button">{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}</p>
             </div><!--/span-->
