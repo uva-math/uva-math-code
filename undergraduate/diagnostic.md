@@ -11,7 +11,7 @@ tooltips: true
 
 <p>We are excited that you are interested in taking a math class at UVA! It is important to find a good starting place so that we can best support your learning. </p>
  <ul>
- <li> If you opted to take the ALEKS diagnostic assessment in Summer 2025, please visit <a href="https://math.virginia.edu/undergraduate/diagnostic_aleks">this page</a> for further information. </li>
+ <li> If you opted to take the ALEKS diagnostic assessment in Summer 2025, please visit the <a href="https://math.virginia.edu/undergraduate/diagnostic_aleks">ALEKS diagnostic assessment information page</a> for further information. </li>
  <li> If not, we have a few questions below to help you figure out what comes next. </li>
 </ul> 
   

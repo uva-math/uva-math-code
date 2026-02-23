@@ -10,11 +10,11 @@ tooltips: true
 
 <h1 class="mb-4">Placement in Math courses</h1>
 
-### Social sciences, arts, humanities students
+## Social sciences, arts, humanities students
 
 Students planning to major in the social sciences, arts, or humanities, and who wish to take a mathematics course but omit the study of calculus, may choose from {%include course number=1110%} or {%include course number=1140%}<span style="margin-left:-4px"></span>. Students may not take all 12 credits needed to satisfy the math/science requirement from the Department of Mathematics and the Department of Statistics. For purposes of the requirement, the courses in these two departments are treated as coming from a single department.
 
-### Calculus
+## Calculus
 
 <p>The study of calculus is the foundation of college mathematics for students planning to major in mathematics or the physical sciences, or for those who anticipate a career or graduate study in any of the physical sciences, engineering, or applied social sciences (such as economics). There are essentially three programs of study available in calculus:&nbsp;</p>
 
@@ -30,11 +30,11 @@ The {%include course number=1210%}<span style="margin-left:-4px"></span>, {%incl
 
 Students who do not have credit for a first-semester calculus course (via exam or transfer work) may elect to take {%include course number=1210%} or {%include course number=1310%}<span style="margin-left:-4px"></span>. Exceptionally well-prepared students (who place out of both {%include course number=1310%} and {%include course number=1320%}<span style="margin-left:-4px"></span>) may choose either {%include course number=2310%} or {%include course number=3250%} as their first course in the fall.
 
-### Advanced Calculus and Linear Algebra
+## Advanced Calculus and Linear Algebra
 
 To enroll in accelerated sections {%include course number=2315%} and its continuation {%include course number=3315%}<span style="margin-left:-4px"></span>, the student should contact the instructor. These courses are designed for highly motivated mathematics students. These courses are meant for those students who expect to major in subjects requiring the use of fairly advanced mathematics and for others who just love doing mathematics. It differs from {%include course number=2310%} in that more advanced material will be covered and more work on the part of the student will be expected. We expect that the additional effort will be amply rewarded. The prerequisite is a good command of single variable calculus.
 
-### Additional Courses
+## Additional Courses
 
 Pre-med students who are seeking to fulfill the &ldquo;second-semester&rdquo; calculus course required by some medical schools typically take {%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%}.
 
@@ -42,7 +42,7 @@ Elementary Education students planning to enroll in the 5-year Teacher Education
 
 To prepare for the mathematics major, you should complete the calculus sequence {%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}<span style="margin-left:-4px"></span>, {%include course number=2310%} by the end of your fourth semester; you also must demonstrate computer proficiency by completing CS 1110, CS 1111, CS 1112, &nbsp;CS 1113, CS 1120, or PHYS 2660, or an approved equivalent course with a grade of C- or higher. Please refer to the School of Engineering&rsquo;s enrollment policy on CS courses, which may be found on their web site. Descriptions of the major and minor programs are available from the Mathematics Department office.
 
-### Mathematics Prerequisites for the Sciences and Economics
+## Mathematics Prerequisites for the Sciences and Economics
 
 <p>Students who plan to major in economics or in one of the sciences need to pay careful attention to the requirements of those programs. Below is a list of minimal requirements; additional math courses are often recommended and are sometimes prerequisites for advanced courses and for admission to graduate programs. Since individual departments can change their requirements for their major, please verify their requirements by reading their departmental announcements. Specific questions should be addressed to individual departments.</p>
 
@@ -143,7 +143,7 @@ To prepare for the mathematics major, you should complete the calculus sequence 
 </table>
 <br>
 
-### Advanced Placement
+## Advanced Placement
 
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
 
@@ -223,9 +223,9 @@ We give credit in the calculus sequence based upon the College Entrance Examinat
 
 A score of 5, 6, or 7 on the IB HL exam in mathematics yields
 credit for {%include course number=1310%} as well as Math 2000T (as per <a
-href="http://college.as.virginia.edu/iclec">http://college.as.virginia.edu/iclec</a>)
+href="http://college.as.virginia.edu/iclec">the College's international credit policies page</a>)
 
-### Calculus Placement (Without Credit)
+## Calculus Placement (Without Credit)
 
 If you believe your previous experience in calculus has prepared
 you to begin your work in calculus at UVA at an advanced level,
@@ -236,4 +236,4 @@ course to enroll in.
 
 ---
 
-<h3>If you are unsure about which UVa Mathematics course should be your first, consult&nbsp;your <a href="http://college.artsandsciences.virginia.edu/advisors">faculty advisor</a>.</h3>
+<h2>If you are unsure about which UVa Mathematics course should be your first, consult&nbsp;your <a href="http://college.artsandsciences.virginia.edu/advisors">faculty advisor</a>.</h3>
