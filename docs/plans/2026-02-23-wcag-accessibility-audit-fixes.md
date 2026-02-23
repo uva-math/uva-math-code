@@ -62,9 +62,9 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 - Modify: `_includes/person_info_no_phone.html`
 - Modify: `_includes/DUS.html`
 
-- [ ] Add `aria-label="Email {{ ppl.name }} {{ ppl.lastname }}"` to each `<a href="mailto:...">` that wraps an icon-only envelope
-- [ ] In DUS.html, use appropriate aria-label for the hardcoded math-dus email address
-- [ ] Use agentic browser to visit localhost:4000/undergraduate/contacts/ and inspect that email icon links have accessible names
+- [x] Add `aria-label="Email {{ ppl.name }} {{ ppl.lastname }}"` to each `<a href="mailto:...">` that wraps an icon-only envelope
+- [x] In DUS.html, use appropriate aria-label for the hardcoded math-dus email address
+- [x] Use agentic browser to visit localhost:4000/undergraduate/contacts/ and inspect that email icon links have accessible names
 
 ### Task 3: Fix duplicate title and navbar issues (C3, C4)
 
