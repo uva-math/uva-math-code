@@ -51,7 +51,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
               <div class="swiper-pagination" style="position: static; width: auto;"></div>
               <div class="carousel-nav-buttons">
                 <button class="carousel-btn carousel-prev" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                <button class="carousel-btn carousel-pause" aria-label="Pause carousel"><i class="fas fa-pause" aria-hidden="true"></i></button>
+                <button class="carousel-btn carousel-pause" aria-label="Pause carousel" aria-pressed="false"><i class="fas fa-pause" aria-hidden="true"></i></button>
                 <button class="carousel-btn carousel-next" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
               </div>
             </div>
@@ -153,6 +153,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                   // Update button state if autoplay was disabled due to reduced motion
                   if (!isPlaying) {
                     pauseBtn.setAttribute('aria-label', 'Play carousel');
+                    pauseBtn.setAttribute('aria-pressed', 'true');
                     pauseBtn.querySelector('i').className = 'fas fa-play';
                   }
                   pauseBtn.addEventListener('click', function() {
@@ -168,11 +169,13 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                   swiper.on('autoplayStop', function() {
                     isPlaying = false;
                     pauseBtn.setAttribute('aria-label', 'Play carousel');
+                    pauseBtn.setAttribute('aria-pressed', 'true');
                     pauseBtn.querySelector('i').className = 'fas fa-play';
                   });
                   swiper.on('autoplayStart', function() {
                     isPlaying = true;
                     pauseBtn.setAttribute('aria-label', 'Pause carousel');
+                    pauseBtn.setAttribute('aria-pressed', 'false');
                     pauseBtn.querySelector('i').className = 'fas fa-pause';
                   });
                 }
@@ -191,7 +194,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
           {% if post.event-date != null and post.multi-day-event != true %}
           <h5>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h5>{%else%}<br>{% endif %}
           {% if post.image != null %}
-            {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %};max-height:400px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
+            {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %}max-height:400px;height:auto;width:auto;" alt="{{post.image-alt}}" title="{{ post.image-alt }}"></a><br /><br />
           {% endif %}
           {{ post.excerpt | markdownify }}
           {% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}

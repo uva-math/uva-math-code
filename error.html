@@ -19,8 +19,10 @@ permalink: /error.html
 
 <body>
 
+  <a href="#main-content" class="skip-link">Skip to main content</a>
   {% include top_brand.html %} {% include navbar.html %}
 
+  <main id="main-content">
   <div class="container">
     <div class="list-group-sm">
       <h1 class="list-group-item mt-4 mb-4 orange-item">Sorry, the page you requested does not exist</h1>
@@ -66,6 +68,7 @@ permalink: /error.html
       </div>
     </div>
   </div>
+  </main>
 
   {% include footer.html %} {%unless page.math == false %}{% include katex %}{% include mathjax %}{%endunless%} {% include bootjs %}
 
