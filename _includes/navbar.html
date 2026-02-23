@@ -2,7 +2,7 @@
   <div class="container">
     <!-- Main navigation toggle - left side -->
     <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle main navigation">
-      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-bars" aria-hidden="true"></i>
     </button>
     
     <!-- Page title - center (mobile only) -->
@@ -21,8 +21,8 @@
     <!-- Dark mode toggle for mobile -->
     <button class="theme-toggle-dual d-md-none me-2" id="theme-toggle-mobile" title="Toggle dark mode" aria-label="Toggle dark mode" aria-pressed="false">
       <span class="toggle-track">
-        <i class="fas fa-cloud-sun"></i>
-        <i class="fas fa-moon"></i>
+        <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+        <i class="fas fa-moon" aria-hidden="true"></i>
         <span class="toggle-thumb"></span>
       </span>
     </button>
@@ -30,7 +30,7 @@
     <!-- Secondary menu toggle - right side (only for special pages) -->
     {% if page.layout == "ug_page" or page.layout == "g_page" or page.layout == "awm_page" or page.layout == "drp_page" %}
     <button class="navbar-toggler border-0 d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightMenu" aria-expanded="false" aria-controls="collapseRightMenu" aria-label="Toggle sidebar navigation">
-      <i class="fa-solid fa-ellipsis-vertical"></i>
+      <i class="fa-solid fa-ellipsis-vertical" aria-hidden="true"></i>
     </button>
     {% endif %}
 
@@ -74,8 +74,8 @@
       <li class="nav-item d-none d-md-flex align-items-center">
         <button class="theme-toggle-dual me-2" id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" aria-pressed="false">
           <span class="toggle-track">
-            <i class="fas fa-cloud-sun"></i>
-            <i class="fas fa-moon"></i>
+            <i class="fas fa-cloud-sun" aria-hidden="true"></i>
+            <i class="fas fa-moon" aria-hidden="true"></i>
             <span class="toggle-thumb"></span>
           </span>
         </button>

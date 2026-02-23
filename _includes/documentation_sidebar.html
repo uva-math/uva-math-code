@@ -1,3 +1,4 @@
+<nav aria-label="Documentation">
 <div class="list-group h5">
   {% assign sorted_pages = site.pages | sort: "nav_weight" %}
   {% for pg in sorted_pages %}
@@ -22,3 +23,4 @@
   <a class="list-group-item {% if page.reminders_page != true %}orange-item{% else %}active bg-inverse{% endif %}"
       href="{{site.url}}/doc/reminders/">Important reminders</a>
 </div>
+</nav>

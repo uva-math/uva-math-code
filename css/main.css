@@ -80,7 +80,7 @@
   color: #ffffff;
 }
 
-.carousel-btn:focus {
+.carousel-btn:focus-visible {
   outline: 2px solid #e57200;
   outline-offset: 2px;
 }
@@ -97,7 +97,7 @@
   color: #ffffff;
 }
 
-[data-theme="dark"] .carousel-btn:focus {
+[data-theme="dark"] .carousel-btn:focus-visible {
   outline-color: #4da3ff;
 }
 
@@ -106,12 +106,12 @@
   transition: background-color 0.15s ease;
 }
 
-.swiper-pagination-bullet:focus {
+.swiper-pagination-bullet:focus-visible {
   outline: 2px solid #e57200;
   outline-offset: 2px;
 }
 
-[data-theme="dark"] .swiper-pagination-bullet:focus {
+[data-theme="dark"] .swiper-pagination-bullet:focus-visible {
   outline-color: #4da3ff;
 }
 
