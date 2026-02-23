@@ -6,10 +6,14 @@
   <a href="{{ site.url }}/calendar/" class="list-group-item list-group-item-action {% if page.url == '/calendar/' %}active{% endif %}">All seminars</a>
   {% for sem in sorted_sem %}
   {% unless sem.published_in_nav == false %}
+    {% if sem.shortname == "separator" %}
+    <div class="list-group-item" aria-hidden="true"><hr class="my-1"></div>
+    {% else %}
     <a href="{{site.url}}/seminars/{{ sem.shortname }}/" class="list-group-item list-group-item-action
     {% if page.url contains sem.shortname %}active{% endif %}">
       {{ sem.name }}
     </a>
+    {% endif %}
   {% endunless %}
   {% endfor %}
 </div>

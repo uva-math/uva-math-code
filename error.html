@@ -58,9 +58,13 @@ permalink: /error.html
             <li>
               <a class="h5" href="{{site.url}}{{pp.url}}">{{pp.nav_id}}</a>
             </li> {% endif %} {% endfor %} {% if p.nav_id == "Seminars" %} {% assign sorted_sem = site.data.seminars | sort: "seminar_weight" %} {% for sem in sorted_sem %}
+            {% if sem.shortname == "separator" %}
+            <li aria-hidden="true"><hr></li>
+            {% else %}
             <li>
               <a class="h5" href="{{site.url}}/seminars/{{sem.shortname}}">{{sem.name}}</a>
             </li>
+            {% endif %}
             {% endfor %} {% endif %}
           </ul>
           {% endif %} {% endfor %}

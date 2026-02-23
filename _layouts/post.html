@@ -23,9 +23,9 @@
       <h1>{{page.title}}</h1>
 
       {% if page.event-date != null and page.multi-day-event %}
-      <h4>Event start date: {{ page.event-date |  date: "%A, %B %-d, %Y" }}</h4>{% endif %}
+      <p class="h4">Event start date: {{ page.event-date |  date: "%A, %B %-d, %Y" }}</p>{% endif %}
       {% if page.event-date != null and page.multi-day-event != true %}
-      <h4>Event date: {{ page.event-date |  date: "%A, %B %-d, %Y" }}</h4>{% endif %}
+      <p class="h4">Event date: {{ page.event-date |  date: "%A, %B %-d, %Y" }}</p>{% endif %}
 
       {% include categories.html %}
 
