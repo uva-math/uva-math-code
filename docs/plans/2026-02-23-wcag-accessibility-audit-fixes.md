@@ -111,8 +111,8 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 - Modify: `_includes/details_header.html`
 - Modify: `css/main.css`
 
-- [ ] Add dark mode override for `summary:hover, summary:focus` in details_header.html inline style block: use a dark-appropriate background color (e.g., `#243448`) when `[data-theme="dark"]`
-- [ ] Use agentic browser to visit localhost:4000/undergraduate/ in dark mode, hover/focus on summary/details elements and verify text remains readable
+- [x] Add dark mode override for `summary:hover, summary:focus` in details_header.html inline style block: use a dark-appropriate background color (e.g., `#243448`) when `[data-theme="dark"]`
+- [x] Use agentic browser to visit localhost:4000/undergraduate/ in dark mode, hover/focus on summary/details elements and verify text remains readable
 
 ### Task 7: Fix heading hierarchy in undergraduate content pages (M6)
 
