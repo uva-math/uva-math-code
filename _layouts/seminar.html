@@ -5,11 +5,16 @@
   {% if page.sem_page == true and page.sem_archive != true %}
     {% assign xx = page.permalink | split: '/' %}
     {% for word in xx %}{% if forloop.last %}{% assign cur_shortname = word %}{%endif%}{% endfor %}
+    {% assign title_set = false %}
     {% for sem in site.data.seminars %}
     {%if sem.shortname == cur_shortname %}
       <title>{{ sem.name }} | Mathematics at the University of Virginia</title>
+      {% assign title_set = true %}
     {%endif%}
     {% endfor %}
+    {% unless title_set %}
+      <title>{{ page.title }} | Mathematics at the University of Virginia</title>
+    {% endunless %}
   {% else %}
     <title>{{ page.title }} | Mathematics at the University of Virginia</title>
   {% endif %}
