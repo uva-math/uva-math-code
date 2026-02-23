@@ -35,6 +35,7 @@
   /* These styles can be applied regardless of whether the fallback is needed */
   summary { cursor: pointer; }
   summary:hover, summary:focus { background: #DADADA; }
+  [data-theme="dark"] summary:hover, [data-theme="dark"] summary:focus { background: #243448; }
   /* The following styles are not really needed, since the jQuery script takes care of hiding/displaying the elements. */
   /* However, we’re still gonna use CSS as well to prevent FOUC in browsers that understand these selectors. */
   /* Remember: by default (and probably most of the time), the contents of the <details> element are hidden. */

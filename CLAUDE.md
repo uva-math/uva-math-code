@@ -84,7 +84,7 @@ good-md: true
 #### Optional Front Matter Fields
 
 - `image` - Path to the post image (use `__SITE_URL__` prefix: `__SITE_URL__/img/news_events/image.jpg`)
-- `image-alt` - Alternative text for the image (for accessibility)
+- `image-alt` - Alternative text for the image (for accessibility). If omitted, the post title is used as fallback alt text. Providing specific descriptive alt text is still recommended.
 - `image-tall` or `image-wide` - Add if your image has unusual dimensions
 - `image-address` - URL where clicking the image leads (defaults to post page if omitted)
 - `more-text` - Custom text for the "read more" button (defaults to "View details")
@@ -414,7 +414,7 @@ A fallback definition exists in `css/main.css` in case Bootstrap's class is unav
 
 ### Focus Indicators
 
-Never suppress focus outlines on interactive elements. The site uses visible focus indicators that meet 3:1 contrast ratio in both light and dark modes. Do not add `outline: none`, `box-shadow: none`, or the `shadow-none` class to buttons, links, or form controls.
+Never suppress focus outlines on interactive elements for keyboard users. The site uses visible focus indicators that meet 3:1 contrast ratio in both light and dark modes. Do not add `outline: none`, `box-shadow: none`, or the `shadow-none` class to buttons, links, or form controls unconditionally. If mouse-click focus rings need to be suppressed for aesthetic reasons, use the `:focus:not(:focus-visible)` pattern to preserve keyboard focus indicators.
 
 ### Carousel Accessibility
 

@@ -38,7 +38,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </ul> -->
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QNGNmmVGzDQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QNGNmmVGzDQ" title="Introduction to the Math Collaborative Learning Center" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <br>
 
@@ -54,7 +54,7 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <!-- <p style="font-size:120%;"> TBA </p> -->
 <!-- <p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p> -->
 
-<p style="font-size:120%;"> Follow this <a href="https://academicsupport.virginia.edu/mclc-math-collaborative-learning-center">link</a>. </p>
+<p style="font-size:120%;"> See the <a href="https://academicsupport.virginia.edu/mclc-math-collaborative-learning-center">MCLC schedule on the Academic Support site</a>. </p>
 
 <br> 
 

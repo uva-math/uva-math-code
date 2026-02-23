@@ -11,7 +11,7 @@ tooltips: true
 
 <p>We are excited that you are interested in taking a math class at UVA! It is important to find a good starting place so that we can best support your learning. </p>
  <ul>
- <li> If you opted to take the ALEKS diagnostic assessment in Summer 2025, please visit <a href="https://math.virginia.edu/undergraduate/diagnostic_aleks">this page</a> for further information. </li>
+ <li> If you opted to take the ALEKS diagnostic assessment in Summer 2025, please visit the <a href="https://math.virginia.edu/undergraduate/diagnostic_aleks">ALEKS diagnostic assessment information page</a> for further information. </li>
  <li> If not, we have a few questions below to help you figure out what comes next. </li>
 </ul> 
   
@@ -23,17 +23,17 @@ tooltips: true
 <div class="diagnostic">
 <ol>
   <li>   <em>Do you need to fulfill a quantitative reasoning requirement and don't need a calculus-based course for your major?</em> We offer MATH 1110 Probability/Finite Mathematics, MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and MATH 1160 Algebra, Number Systems and Number Theory.  </li>
-  <p style="margin-left: -30px;">  <span class="bolded">Next Step</span> The next step is the diagnostic for Path 1 and more information about these courses  <a href="https://math.virginia.edu/undergraduate/diagnosticPath1">is here</a>. </p>
+  <p style="margin-left: -30px;">  <span class="bolded">Next Step</span> Take the <a href="https://math.virginia.edu/undergraduate/diagnosticPath1">Path 1 diagnostic and course information</a>. </p>
 
   <li>  <em>Are you interested in business, biology, a social science, or need to fulfill  pre-health requirements?</em>  Path 2 includes Differential and Integral Calculus for non-STEM majors via MATH 1190, MATH 1210, and MATH 1220. </li>
 
 
-   <p style="margin-left: -30px;">  <span class="bolded">Next Step</span> The next step is the diagnostic for Path 2 and more information about these courses <a href="https://math.virginia.edu/undergraduate/diagnosticPath2">is here</a>. </p>
+   <p style="margin-left: -30px;">  <span class="bolded">Next Step</span> Take the <a href="https://math.virginia.edu/undergraduate/diagnosticPath2">Path 2 diagnostic and course information</a>. </p>
 
 
 
   <li>  <em>Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?</em>  Path 3 includes Differential Calculus, Integral Calculus, and Multivariable Calculus. We offer MATH 1310, MATH 1320 and Math 2310 for this path. </li>
-   <p style="margin-left: -30px;">  <span class="bolded">Next Step</span> The next step is the diagnostic for Path 3 and more information about these courses  <a href="https://math.virginia.edu/undergraduate/diagnosticPath3">is here</a>. </p>
+   <p style="margin-left: -30px;">  <span class="bolded">Next Step</span> Take the <a href="https://math.virginia.edu/undergraduate/diagnosticPath3">Path 3 diagnostic and course information</a>. </p>
 
 </ol>
 </div>

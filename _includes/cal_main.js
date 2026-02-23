@@ -76,7 +76,7 @@
   {
     if (abst)
     {
-      var retStr = ['<details><summary>Description</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '"  target="_blank">Google Calendar link</a><br>', '</details>'];
+      var retStr = ['<details><summary>Description</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '"  target="_blank" rel="noopener noreferrer">Google Calendar link</a><br>', '</details>'];
       // appendPre(retStr);
       return retStr.join('');
     }
@@ -186,7 +186,7 @@
             {
               var strBegin = startDT +
                 propSep +
-                '<b><a href="' + item.htmlLink + '"  target="_blank">' +
+                '<b><a href="' + item.htmlLink + '"  target="_blank" rel="noopener noreferrer">' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +
@@ -199,7 +199,7 @@
               var startMin = time[1];
               var strBegin = startDT +
                 propSep +
-                '<b><a href="' + item.htmlLink + '"  target="_blank">' +
+                '<b><a href="' + item.htmlLink + '"  target="_blank" rel="noopener noreferrer">' +
                 startDayWeek + ' ' +
                 startMonth + ' ' +
                 startDay + ', ' +

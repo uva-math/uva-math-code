@@ -514,6 +514,10 @@ h6,
   text-decoration: none;
 }
 
+[data-theme="dark"] .my-tooltip {
+  border-bottom-color: #6db3ff;
+}
+
 .tooltip-inner {
     max-width: 270px;
 }
@@ -622,7 +626,7 @@ font-weight: bold;
 }
 
 /* Hamburger menu focus styling */
-.navbar-toggler:focus {
+.navbar-toggler:focus:not(:focus-visible) {
   box-shadow: none;
 }
 
