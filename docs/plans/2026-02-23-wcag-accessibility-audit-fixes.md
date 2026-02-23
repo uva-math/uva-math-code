@@ -181,8 +181,8 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 
 ### Task 12: Final verification with agentic browser
 
-- [ ] Use agentic browser to visit localhost:4000/undergraduate/ - check page title, heading hierarchy, course tooltips, sidebar landmarks, skip navigation
-- [ ] Use agentic browser to visit localhost:4000/content/distinguished-major-program-dmp/ - check sidebar, heading hierarchy, person info email links
-- [ ] Use agentic browser to visit localhost:4000/ - check carousel headings, image alt text, navbar separator, footer links
-- [ ] Toggle dark mode via the browser and verify tooltip borders, summary hover states, and general contrast on the above pages
-- [ ] Tab through interactive elements on localhost:4000/undergraduate/ to verify keyboard accessibility of course tooltips and email links
+- [x] Use agentic browser to visit localhost:4000/undergraduate/ - check page title, heading hierarchy, course tooltips, sidebar landmarks, skip navigation
+- [x] Use agentic browser to visit localhost:4000/content/distinguished-major-program-dmp/ - check sidebar, heading hierarchy, person info email links
+- [x] Use agentic browser to visit localhost:4000/ - check carousel headings, image alt text, navbar separator, footer links
+- [x] Toggle dark mode via the browser and verify tooltip borders, summary hover states, and general contrast on the above pages
+- [x] Tab through interactive elements on localhost:4000/undergraduate/ to verify keyboard accessibility of course tooltips and email links
