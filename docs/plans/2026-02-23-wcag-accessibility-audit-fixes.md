@@ -156,9 +156,9 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 - Modify: `undergraduate/diagnostic.md`
 - Modify: `undergraduate/MCLC/MCLC.md`
 
-- [ ] In diagnostic.md: replace "is here" link text with descriptive text (e.g., "Path 1 diagnostic" / "Path 2 diagnostic" / "Path 3 diagnostic")
-- [ ] In MCLC/MCLC.md: replace bare "link" text with descriptive text; also update the YouTube iframe title from "YouTube video player" to something descriptive like "Introduction to the Math Collaborative Learning Center"
-- [ ] Use agentic browser to visit localhost:4000/undergraduate/diagnostic/ and localhost:4000/undergraduate/MCLC/MCLC/ to verify links have descriptive text
+- [x] In diagnostic.md: replace "is here" link text with descriptive text (e.g., "Path 1 diagnostic" / "Path 2 diagnostic" / "Path 3 diagnostic")
+- [x] In MCLC/MCLC.md: replace bare "link" text with descriptive text; also update the YouTube iframe title from "YouTube video player" to something descriptive like "Introduction to the Math Collaborative Learning Center"
+- [x] Use agentic browser to visit localhost:4000/undergraduate/diagnostic/ and localhost:4000/undergraduate/MCLC/MCLC/ to verify links have descriptive text
 
 ### Task 10: Fix carousel heading semantics (M11)
 
