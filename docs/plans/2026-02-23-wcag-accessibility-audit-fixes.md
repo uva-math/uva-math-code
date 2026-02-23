@@ -100,10 +100,10 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 - Modify: `_includes/ug_sidebar.html`
 - Modify: `_includes/g_sidebar.html`
 
-- [ ] In ug_page.html (and g_page.html), add `aria-hidden="true"` to the mobile-collapsed duplicate sidebar, OR give the two instances distinct aria-labels
-- [ ] Add `aria-current="page"` to active sidebar links: where `{% if page.permalink == pg.permalink %}active{% endif %}` appears, also add `aria-current="page"` conditionally
-- [ ] Apply the same pattern to g_sidebar.html
-- [ ] Use agentic browser to visit localhost:4000/undergraduate/ and localhost:4000/content/distinguished-major-program-dmp/ to verify sidebar landmarks are distinct and active item has aria-current
+- [x] In ug_page.html (and g_page.html), add `aria-hidden="true"` to the mobile-collapsed duplicate sidebar, OR give the two instances distinct aria-labels
+- [x] Add `aria-current="page"` to active sidebar links: where `{% if page.permalink == pg.permalink %}active{% endif %}` appears, also add `aria-current="page"` conditionally
+- [x] Apply the same pattern to g_sidebar.html
+- [x] Use agentic browser to visit localhost:4000/undergraduate/ and localhost:4000/content/distinguished-major-program-dmp/ to verify sidebar landmarks are distinct and active item has aria-current
 
 ### Task 6: Fix dark mode contrast issues (M5)
 

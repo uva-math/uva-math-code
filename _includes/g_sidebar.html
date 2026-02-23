@@ -1,17 +1,17 @@
-<nav aria-label="Graduate program">
+<nav aria-label="Graduate program{% if include.sidebar_variant == 'mobile' %} (mobile){% endif %}">
 {% assign sorted_pages = site.pages | sort: "nav_weight" %}
 
 <div class="list-group h5">
-  <a class="list-group-item list-group-item-action orange-item {% if page.permalink == "/graduate/" %}active{% endif %}" href="{{site.url}}/graduate/">Information</a>
+  <a class="list-group-item list-group-item-action orange-item {% if page.permalink == "/graduate/" %}active{% endif %}" {% if page.permalink == "/graduate/" %}aria-current="page"{% endif %} href="{{site.url}}/graduate/">Information</a>
     {% for pg in sorted_pages %}
     {% if pg.layout == "g_page" and pg.g_info and pg.nav_weight <=10 %}
-        <a class="list-group-item list-group-item-action {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">{{pg.title}}</a>
+        <a class="list-group-item list-group-item-action {% if page.permalink ==  pg.permalink %}active{% endif %}" {% if page.permalink == pg.permalink %}aria-current="page"{% endif %} href="{{pg.url}}">{{pg.title}}</a>
     {% endif %}
     {% endfor %}
     <a class="list-group-item list-group-item-action" href="{{site.url}}/facultyresearch/">Research areas&nbsp;<span class="fa-solid fa-up-right-from-square" aria-hidden="true"></span></a>
     {% for pg in sorted_pages %}
     {% if pg.layout == "g_page" and pg.g_info and pg.nav_weight >= 11 %}
-        <a class="list-group-item list-group-item-action {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">{{pg.title}}</a>
+        <a class="list-group-item list-group-item-action {% if page.permalink ==  pg.permalink %}active{% endif %}" {% if page.permalink == pg.permalink %}aria-current="page"{% endif %} href="{{pg.url}}">{{pg.title}}</a>
     {% endif %}
     {% endfor %}
   <a class="list-group-item list-group-item-action" href="{{site.url}}/ams_chapter/">AMS Grad Student Chapter&nbsp;<span class="fa-solid fa-up-right-from-square" aria-hidden="true"></span></a>
@@ -21,10 +21,10 @@
 <br />
 
 <div class="list-group h5">
-  <a class="list-group-item list-group-item-action orange-item {% if page.permalink == "/graduate/policies/" %}active{% endif %}" href="{{site.url}}/graduate/policies/">Policies</a>
+  <a class="list-group-item list-group-item-action orange-item {% if page.permalink == "/graduate/policies/" %}active{% endif %}" {% if page.permalink == "/graduate/policies/" %}aria-current="page"{% endif %} href="{{site.url}}/graduate/policies/">Policies</a>
     {% for pg in sorted_pages %}
     {% if pg.layout == "g_page" and pg.g_policy %}
-        <a class="list-group-item list-group-item-action {% if page.permalink ==  pg.permalink %}active{% endif %}" href="{{pg.url}}">{{pg.title}}</a>
+        <a class="list-group-item list-group-item-action {% if page.permalink ==  pg.permalink %}active{% endif %}" {% if page.permalink == pg.permalink %}aria-current="page"{% endif %} href="{{pg.url}}">{{pg.title}}</a>
     {% endif %}
     {% endfor %}
 </div>
@@ -32,6 +32,6 @@
 <br />
 
 <div class="list-group h5">
-  <a class="list-group-item list-group-item-action orange-item {% if page.permalink == "/courses/graduate/" %}active{% endif %}" href="{{site.url}}/courses/graduate/">Course descriptions</a>
+  <a class="list-group-item list-group-item-action orange-item {% if page.permalink == "/courses/graduate/" %}active{% endif %}" {% if page.permalink == "/courses/graduate/" %}aria-current="page"{% endif %} href="{{site.url}}/courses/graduate/">Course descriptions</a>
 </div>
 </nav>
