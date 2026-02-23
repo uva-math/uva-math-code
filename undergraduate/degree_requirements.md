@@ -11,11 +11,11 @@ nav_weight: 1
 
 ## Major in Mathematics Requirements
 
-##### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=67&poid=10259) to the UREG page
+### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=67&poid=10259) to the UREG page
 
 ## Minor in Mathematics Requirements
 
-##### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=67&poid=10261) to the UREG page
+### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=67&poid=10261) to the UREG page
 
 
 <h3 class="mt-3">Please note:</h3>
@@ -23,7 +23,7 @@ nav_weight: 1
 <b>If you have questions about the requirements, please reach out to your intake advisor.</b> The intake advisor list is below, based on the first
 letter of you last name.
 
-<h1 class="mb-3 mt-5">To Declare a Major/Minor:</h1>
+<h2 class="mb-3 mt-5">To Declare a Major/Minor:</h2>
 
 1. Review the above document for prerequisites to declare the major/minor and the requirements to earn the degree
 2. Select a concentration (if majoring) and create a tentative list of proposed courses that will earn the degree
@@ -38,8 +38,8 @@ letter of you last name.
 
 ---
 
-- ##### [Declaration of math major form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)
-- ##### [Declaration of math minor form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)
+- ### [Declaration of math major form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)
+- ### [Declaration of math minor form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)
 
 <!--
 ---

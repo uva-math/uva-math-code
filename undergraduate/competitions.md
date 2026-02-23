@@ -7,7 +7,7 @@ nav_parent: Undergraduate
 nav_weight: 10
 ---
 
-<h3 class="mb-5">Upcoming mathematics competitions </h3>
+<h2 class="mb-5">Upcoming mathematics competitions</h2>
 
 
 <!-- 

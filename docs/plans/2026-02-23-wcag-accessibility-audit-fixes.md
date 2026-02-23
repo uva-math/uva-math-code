@@ -123,11 +123,11 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 - Modify: `undergraduate/tutoring_grader.md`
 - Modify: `undergraduate/competitions.md`
 
-- [ ] In degree_requirements.md: replace `#####` (h5) headings with `###` (h3), and fix any `<h1>` that appears below h3 to be `##` (h2)
-- [ ] In contacts.md: replace `<h5>` section headings with `##` (h2), and remove `<h5>` from inside `<li>` elements
-- [ ] In where_go.md: ensure single h1, demote second `<h1>` to `##`, fix h1-to-h3 skip
-- [ ] In tutoring_grader.md and competitions.md: add an h1 or h2 page title if missing, ensure headings don't start at h3
-- [ ] Use agentic browser to visit each page at localhost:4000 and verify heading hierarchy renders correctly (visually inspect heading sizes and structure)
+- [x] In degree_requirements.md: replace `#####` (h5) headings with `###` (h3), and fix any `<h1>` that appears below h3 to be `##` (h2)
+- [x] In contacts.md: replace `<h5>` section headings with `##` (h2), and remove `<h5>` from inside `<li>` elements
+- [x] In where_go.md: ensure single h1, demote second `<h1>` to `##`, fix h1-to-h3 skip
+- [x] In tutoring_grader.md and competitions.md: add an h1 or h2 page title if missing, ensure headings don't start at h3
+- [x] Use agentic browser to visit each page at localhost:4000 and verify heading hierarchy renders correctly (visually inspect heading sizes and structure)
 
 ### Task 8: Fix placement page accessibility (M7, M8)
 

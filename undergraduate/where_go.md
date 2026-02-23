@@ -17,7 +17,7 @@ nav_weight: 101
 
 <p>There are many job and advanced-degree opportunities for our math majors.</p>
 
-<h3>American Mathematical Society Career Information</h3>
+<h2>American Mathematical Society Career Information</h2>
 
 <ul>
 	<li><a href="http://www.ams.org/employment/internships.html">Internship and Co-op Opportunities for Undergraduates</a></li>
@@ -26,19 +26,19 @@ nav_weight: 101
 	<li><a href="http://www.ams.org/careers/">Mathematical Sciences Career Information</a></li>
 </ul>
 
-<h3>Actuarial Career Information</h3>
+<h2>Actuarial Career Information</h2>
 
 <ul>
 	<li><a href="http://beanactuary.org">Be an Actuary</a></li>
 </ul>
 
-### Tech career information
+## Tech career information
 
 <ul>
 	<li>https://techguide.org/</li>
 </ul>
 
-<h3>Mathematics Association of America (MAA)</h3>
+<h2>Mathematics Association of America (MAA)</h2>
 
 <ul>
 	<li><a href="http://www.maa.org/careers"><em>www.maa.org/careers</em> </a>(see&nbsp;Career Profiles)</li>
@@ -46,7 +46,7 @@ nav_weight: 101
 
 <p>Please see the University&#39;s <a href="http://www.virginia.edu/%7Ecareer/">Office of Career Planning and Placement</a> for information on jobs and resources.</p>
 
-### NSA Employment Opprotunities For Undergraduates
+## NSA Employment Opportunities For Undergraduates
 
 The Mathematics Research Group at the National Security (NSA) offers two exceptional summer Programs for undergraduate and graduate mathematics students.
 
@@ -56,7 +56,7 @@ Please click here: <a href="{{ site.url }}/undergraduate/docs/DSP-GMP Info Sheet
 
 ---
 
-<h1 class="mb-3 mt-1">Some positions accepted by our graduates</h1>
+<h2 class="mb-3 mt-1">Some positions accepted by our graduates</h2>
 
 - Graduate School (Princeton); Consultant (Federal Government)
 - Graduate School (MIT, UC San Diego, Stanford, Clemson, U. of Maryland, Northwestern University, UVa)
