@@ -145,10 +145,10 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 - Modify: `undergraduate/placement-backup.html`
 - Modify: `undergraduate/placement.md`
 
-- [ ] Add `lang="en"` to all `<html>` tags in placement-files/*.html and placement-backup.html
-- [ ] In placement.md: convert the "AP Test and Score" table header row from `<td><p><strong>` to proper `<th scope="col">` inside a `<thead>`
-- [ ] Ensure both tables in placement.md have `<thead>` with `<th scope="col">` for column headers
-- [ ] Use agentic browser to visit localhost:4000/undergraduate/placement/ and verify tables render correctly with proper header semantics
+- [x] Add `lang="en"` to all `<html>` tags in placement-files/*.html and placement-backup.html
+- [x] In placement.md: convert the "AP Test and Score" table header row from `<td><p><strong>` to proper `<th scope="col">` inside a `<thead>`
+- [x] Ensure both tables in placement.md have `<thead>` with `<th scope="col">` for column headers
+- [x] Use agentic browser to visit localhost:4000/undergraduate/placement/ and verify tables render correctly with proper header semantics
 
 ### Task 9: Fix non-descriptive link text (M9)
 

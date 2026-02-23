@@ -49,10 +49,10 @@ To prepare for the mathematics major, you should complete the calculus sequence 
 <table border="1" cellpadding="5" cellspacing="0">
 	<thead>
 		<tr>
-			<th>
+			<th scope="col">
 			<p><strong>Program</strong></p>
 			</th>
-			<th>
+			<th scope="col">
 			<p><strong>Math Requirements</strong></p>
 			</th>
 		</tr>
@@ -148,23 +148,21 @@ To prepare for the mathematics major, you should complete the calculus sequence 
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
 
 <table border="1" cellpadding="5" cellspacing="0" class="mb-3">
+	<caption><strong>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</strong></caption>
+	<thead>
+		<tr>
+			<th scope="col">
+			<p>AP Test and Score</p>
+			</th>
+			<th scope="col">
+			<p>Credit Awarded</p>
+			</th>
+			<th scope="col">
+			<p>Recommended Course</p>
+			</th>
+		</tr>
+	</thead>
 	<tbody>
-		<tr>
-			<td colspan="3">
-			<h5>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</h5>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p><strong>AP Test and Score</strong></p>
-			</td>
-			<td>
-			<p><strong>Credit Awarded</strong></p>
-			</td>
-			<td>
-			<p><strong>Recommended Course</strong></p>
-			</td>
-		</tr>
 		<tr>
 			<td>
 			<p>AB less than or = 3</p>
