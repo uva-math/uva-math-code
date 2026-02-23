@@ -168,5 +168,5 @@ All verification against http://localhost:4000 using agent-browser:
 
 ### Task 9: Update Documentation
 
-- [ ] Update CLAUDE.md to note accessibility patterns (skip link, aria-label conventions, visually-hidden class usage)
-- [ ] Move this plan to `docs/plans/completed/`
+- [x] Update CLAUDE.md to note accessibility patterns (skip link, aria-label conventions, visually-hidden class usage)
+- [x] Move this plan to `docs/plans/completed/`

@@ -382,3 +382,48 @@ To test dark mode functionality:
 3. Verify interactive elements maintain proper contrast
 4. Ensure images and media display correctly
 5. Test on both desktop and mobile devices
+
+---
+
+## Accessibility (WCAG 2.1 AA)
+
+The website follows WCAG 2.1 AA accessibility standards. All new content and components must maintain these patterns.
+
+### Skip Navigation
+
+Every layout includes a skip-to-content link as the first child of `<body>`:
+```html
+<a href="#main-content" class="skip-link">Skip to main content</a>
+```
+The primary content area is wrapped in `<main id="main-content">`. The `.skip-link` class in `css/main.css` makes the link visually hidden until focused.
+
+### Visually Hidden Text
+
+Use Bootstrap 5's `visually-hidden` class (not the older `sr-only`) to hide text that should only be read by screen readers:
+```html
+<span class="visually-hidden">Description for screen readers</span>
+```
+A fallback definition exists in `css/main.css` in case Bootstrap's class is unavailable.
+
+### ARIA Labels
+
+- All icon-only links (social media, etc.) must have `aria-label` describing the link purpose
+- Navigation landmarks (`<nav>`) must have unique `aria-label` values to distinguish them (e.g., "Main navigation", "Social media", "Undergraduate program")
+- The search form uses `role="search"` and `aria-label="Site search"`
+- The dark mode toggle uses `aria-pressed` to convey its state
+
+### Focus Indicators
+
+Never suppress focus outlines on interactive elements. The site uses visible focus indicators that meet 3:1 contrast ratio in both light and dark modes. Do not add `outline: none`, `box-shadow: none`, or the `shadow-none` class to buttons, links, or form controls.
+
+### Carousel Accessibility
+
+The main page Swiper carousel includes:
+- A pause/play toggle button with dynamic `aria-label`
+- Previous/next navigation buttons
+- Keyboard navigation support
+- Automatic pause when `prefers-reduced-motion: reduce` is active
+
+### Reduced Motion
+
+The site respects `prefers-reduced-motion: reduce` via a media query in `css/main.css` that disables transitions and animations. The carousel autoplay is also disabled for users who prefer reduced motion.
