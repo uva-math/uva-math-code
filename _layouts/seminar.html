@@ -10,6 +10,8 @@
       <title>{{ sem.name }} | Mathematics at the University of Virginia</title>
     {%endif%}
     {% endfor %}
+  {% else %}
+    <title>{{ page.title }} | Mathematics at the University of Virginia</title>
   {% endif %}
   {% include header.html %}
 </head>

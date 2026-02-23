@@ -74,11 +74,11 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 - Modify: `_includes/navbar.html`
 - Modify: `_data/seminars.yml`
 
-- [ ] Remove the `<title>` tag from layout files that also include header.html (header.html already sets `<title>`), OR remove from header.html and keep in layouts. Choose whichever preserves the more descriptive title (layouts have section info like "| Undergraduate Program |")
-- [ ] Check all other layouts for the same duplicate title pattern and fix
-- [ ] In `_includes/navbar.html`, filter out seminar entries with shortname "separator" and render a `<div class="dropdown-divider" role="separator"></div>` instead of a link
-- [ ] Alternatively, add `published_in_nav: false` to the separator entry in `_data/seminars.yml` if the existing `unless` logic handles it
-- [ ] Use agentic browser to visit localhost:4000/undergraduate/ and inspect the page source to confirm only one `<title>` element exists; also check the Seminars navbar dropdown for proper separator rendering
+- [x] Remove the `<title>` tag from layout files that also include header.html (header.html already sets `<title>`), OR remove from header.html and keep in layouts. Choose whichever preserves the more descriptive title (layouts have section info like "| Undergraduate Program |")
+- [x] Check all other layouts for the same duplicate title pattern and fix
+- [x] In `_includes/navbar.html`, filter out seminar entries with shortname "separator" and render a `<div class="dropdown-divider" role="separator"></div>` instead of a link
+- [x] Alternatively, add `published_in_nav: false` to the separator entry in `_data/seminars.yml` if the existing `unless` logic handles it
+- [x] Use agentic browser to visit localhost:4000/undergraduate/ and inspect the page source to confirm only one `<title>` element exists; also check the Seminars navbar dropdown for proper separator rendering
 
 ### Task 4: Fix navbar focus and footer link accessibility (M1, M10)
 
