@@ -49,10 +49,10 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 - Modify: `_includes/course`
 - Modify: `css/main.css`
 
-- [ ] Change `<span>` to `<a>` element in `_includes/course` so the `href` attribute works and the element is keyboard-focusable
-- [ ] Ensure the tooltip still triggers on hover/focus for the `<a>` element
-- [ ] Add dark mode override for `.my-tooltip` border-bottom color (M4: change from `black` to use a visible color in dark mode)
-- [ ] Use agentic browser to visit localhost:4000/undergraduate/ and verify course tooltips are visible, keyboard-focusable, and display correctly in both light and dark mode
+- [x] Change `<span>` to `<a>` element in `_includes/course` so the `href` attribute works and the element is keyboard-focusable
+- [x] Ensure the tooltip still triggers on hover/focus for the `<a>` element
+- [x] Add dark mode override for `.my-tooltip` border-bottom color (M4: change from `black` to use a visible color in dark mode)
+- [x] Use agentic browser to visit localhost:4000/undergraduate/ and verify course tooltips are visible, keyboard-focusable, and display correctly in both light and dark mode
 
 ### Task 2: Fix icon-only email links in person_info includes (C2)
 
