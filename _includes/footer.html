@@ -36,26 +36,26 @@
                 </div>
                 <div class="col-md-1 d-md-none">
                   <hr>
-                  <a href="http://www.twitter.com/@math_uva"  target="_blank">
-                    <span class="fa-brands fa-square-twitter fa-2x"></span></a>
-                    <a href="https://www.facebook.com/UVAMath" title="Department of Mathematics Facebook page" target="_blank">
-                      <span class="fa-brands fa-facebook-square fa-2x mt-1"></span></a>
-                    <a href="https://www.instagram.com/uva_math/" title="Department of Mathematics Instagram" target="_blank">
-                      <span class="fa-brands fa-instagram fa-2x mt-1"></span></a>
+                  <a href="http://www.twitter.com/@math_uva" aria-label="UVA Math on Twitter" target="_blank">
+                    <span class="fa-brands fa-square-twitter fa-2x" aria-hidden="true"></span></a>
+                    <a href="https://www.facebook.com/UVAMath" aria-label="UVA Math on Facebook" target="_blank">
+                      <span class="fa-brands fa-facebook-square fa-2x mt-1" aria-hidden="true"></span></a>
+                    <a href="https://www.instagram.com/uva_math/" aria-label="UVA Math on Instagram" target="_blank">
+                      <span class="fa-brands fa-instagram fa-2x mt-1" aria-hidden="true"></span></a>
                     <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
-                  {% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank">
-                    <span class="fa-brands fa-square-github fa-2x mt-1"></span></a>
+                  {% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} aria-label="Contribute on GitHub" target="_blank">
+                    <span class="fa-brands fa-square-github fa-2x mt-1" aria-hidden="true"></span></a>
                 </div>
                 <div class="col-md-1 d-none d-md-block">
-                  <a href="https://www.facebook.com/UVAMath" title="Department of Mathematics Facebook page" target="_blank">
-                    <span class="fa-brands fa-facebook-square fa-2x mt-1 me-2"></span></a>
-                  <a href="https://www.instagram.com/uva_math/" title="Department of Mathematics Instagram" target="_blank">
-                    <span class="fa-brands fa-instagram fa-2x mt-1"></span></a>
+                  <a href="https://www.facebook.com/UVAMath" aria-label="UVA Math on Facebook" target="_blank">
+                    <span class="fa-brands fa-facebook-square fa-2x mt-1 me-2" aria-hidden="true"></span></a>
+                  <a href="https://www.instagram.com/uva_math/" aria-label="UVA Math on Instagram" target="_blank">
+                    <span class="fa-brands fa-instagram fa-2x mt-1" aria-hidden="true"></span></a>
                   <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
-                  {% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank">
-                    <span class="fa-brands fa-square-github fa-2x me-2 mt-1"></span></a>
-                  <a href="http://www.twitter.com/@math_uva"  target="_blank">
-                    <span class="fa-brands fa-square-twitter fa-2x mt-1"></span></a>
+                  {% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} aria-label="Contribute on GitHub" target="_blank">
+                    <span class="fa-brands fa-square-github fa-2x me-2 mt-1" aria-hidden="true"></span></a>
+                  <a href="http://www.twitter.com/@math_uva" aria-label="UVA Math on Twitter" target="_blank">
+                    <span class="fa-brands fa-square-twitter fa-2x mt-1" aria-hidden="true"></span></a>
                 </div>
               </div>
             </div>
@@ -78,7 +78,12 @@
   // Apply theme to document
   function applyTheme(theme) {
     document.documentElement.setAttribute('data-theme', theme);
-    // No need to update icons as both are always visible
+    // Update aria-pressed on toggle buttons to reflect dark mode state
+    var isDark = theme === 'dark';
+    var toggleBtns = document.querySelectorAll('#theme-toggle, #theme-toggle-mobile');
+    toggleBtns.forEach(function(btn) {
+      btn.setAttribute('aria-pressed', isDark ? 'true' : 'false');
+    });
   }
 
   // Toggle theme

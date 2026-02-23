@@ -93,14 +93,14 @@ Addresses: C5 (dark mode toggle focus removed), C6 (hamburger toggle focus remov
 
 Addresses: M1 (social links missing names), M2 (search input no label), M3 (search form no role), M4 (toggle missing state)
 
-- [ ] Add `aria-label` to the Twitter/X social media link in footer (both mobile and desktop instances)
-- [ ] Add `aria-label` to all other social links that rely only on `title` attribute
-- [ ] Add `aria-label="Search the UVA website"` to the search input field
-- [ ] Add `role="search"` and `aria-label="Site search"` to the search `<form>` element
-- [ ] Add `aria-label="Toggle dark mode"` and `aria-pressed="false"` to both dark mode toggle buttons
-- [ ] Update the `applyTheme()` JavaScript function in footer.html to dynamically set `aria-pressed` to `"true"` or `"false"` based on current theme
-- [ ] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser snapshot` - confirm social links, search form, and toggle all have accessible names
-- [ ] Verify with agent-browser: `agent-browser eval "document.querySelector('.theme-toggle-dual').getAttribute('aria-pressed')"` - confirm returns "false" or "true" matching current theme
+- [x] Add `aria-label` to the Twitter/X social media link in footer (both mobile and desktop instances)
+- [x] Add `aria-label` to all other social links that rely only on `title` attribute
+- [x] Add `aria-label="Search the UVA website"` to the search input field
+- [x] Add `role="search"` and `aria-label="Site search"` to the search `<form>` element
+- [x] Add `aria-label="Toggle dark mode"` and `aria-pressed="false"` to both dark mode toggle buttons
+- [x] Update the `applyTheme()` JavaScript function in footer.html to dynamically set `aria-pressed` to `"true"` or `"false"` based on current theme
+- [x] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser snapshot` - confirm social links, search form, and toggle all have accessible names
+- [x] Verify with agent-browser: `agent-browser eval "document.querySelector('.theme-toggle-dual').getAttribute('aria-pressed')"` - confirm returns "false" or "true" matching current theme
 
 ### Task 5: Fix sr-only Class and Malformed HTML
 
