@@ -175,9 +175,9 @@ Site-wide accessibility audit of the UVA Mathematics Department website (Jekyll-
 - Modify: `_layouts/post.html`
 - Modify: `index.html`
 
-- [ ] Add fallback alt text when `page.image-alt` is not provided: use `{{ page.title }}` as default
-- [ ] Apply the same pattern in index.html carousel where `post.image-alt` is used
-- [ ] Use agentic browser to visit localhost:4000/ and inspect carousel images to verify alt text is present
+- [x] Add fallback alt text when `page.image-alt` is not provided: use `{{ page.title }}` as default
+- [x] Apply the same pattern in index.html carousel where `post.image-alt` is used
+- [x] Use agentic browser to visit localhost:4000/ and inspect carousel images to verify alt text is present
 
 ### Task 12: Final verification with agentic browser
 
