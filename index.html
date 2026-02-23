@@ -143,11 +143,22 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                   threshold: 10,
                 });
 
+                // Disable autoplay if user prefers reduced motion
+                if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                  swiper.autoplay.stop();
+                }
+
                 // Pause/Play button functionality
                 (function() {
                   var pauseBtn = document.querySelector('.carousel-pause');
-                  var isPlaying = true;
+                  var isPlaying = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
                   if (pauseBtn) {
+                    // Update button state if autoplay was disabled due to reduced motion
+                    if (!isPlaying) {
+                      pauseBtn.setAttribute('aria-label', 'Play carousel');
+                      pauseBtn.setAttribute('aria-pressed', 'true');
+                      pauseBtn.querySelector('i').className = 'fas fa-play';
+                    }
                     pauseBtn.addEventListener('click', function() {
                       if (isPlaying) {
                         swiper.autoplay.stop();

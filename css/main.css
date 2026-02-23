@@ -1484,12 +1484,38 @@ pre, code {
   [data-theme="dark"] .navbar-nav .dropdown-menu {
     background-color: rgba(255, 255, 255, 0.03);
   }
-  
+
   [data-theme="dark"] .navbar-nav .dropdown-item:hover {
     border-left-color: var(--link-color);
     background-color: rgba(255, 255, 255, 0.05);
   }
 }
 
+/* Reduced motion preference - disable transitions and animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 
+  .toggle-thumb {
+    transition: none !important;
+  }
+
+  .toggle-track i {
+    transition: none !important;
+  }
+
+  .toggle-track {
+    transition: none !important;
+  }
+
+  .swiper-wrapper {
+    transition-duration: 0ms !important;
+  }
+}
 

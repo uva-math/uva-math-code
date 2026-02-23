@@ -127,11 +127,11 @@ Addresses: M5 (sr-only class undefined), M6 (span closed after anchor)
 
 Addresses: M7 (duplicate touch/click handlers), M8 (no prefers-reduced-motion)
 
-- [ ] Remove the `touchstart` event listeners from the dark mode toggle buttons in footer.html; keep only the `click` handler
-- [ ] Add `@media (prefers-reduced-motion: reduce)` block to `css/main.css` that disables transitions and animations site-wide
-- [ ] Add JavaScript check for `prefers-reduced-motion` to disable Swiper autoplay for users who prefer reduced motion
-- [ ] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser click ".theme-toggle-dual"` - confirm toggle works via click event
-- [ ] Verify with agent-browser: `agent-browser eval "window.matchMedia('(prefers-reduced-motion: reduce)').matches"` - check reduced motion detection is wired up
+- [x] Remove the `touchstart` event listeners from the dark mode toggle buttons in footer.html; keep only the `click` handler
+- [x] Add `@media (prefers-reduced-motion: reduce)` block to `css/main.css` that disables transitions and animations site-wide
+- [x] Add JavaScript check for `prefers-reduced-motion` to disable Swiper autoplay for users who prefer reduced motion
+- [x] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser click ".theme-toggle-dual"` - confirm toggle works via click event
+- [x] Verify with agent-browser: `agent-browser eval "window.matchMedia('(prefers-reduced-motion: reduce)').matches"` - check reduced motion detection is wired up
 
 ### Task 7: Navigation Landmark Labels
 
