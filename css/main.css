@@ -1,3 +1,36 @@
+/* Skip navigation link - visible only on keyboard focus */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  z-index: 10000;
+  padding: 0.75rem 1.5rem;
+  background-color: #002F6C;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom-right-radius: 4px;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #e57200;
+  outline-offset: 0;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+[data-theme="dark"] .skip-link {
+  background-color: #1a2a3f;
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .skip-link:focus {
+  outline-color: #4da3ff;
+  color: #e8e8e8;
+}
+
 html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;

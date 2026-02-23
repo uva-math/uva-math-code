@@ -47,11 +47,11 @@ Fix the 16 highest-severity WCAG 2.1 AA accessibility violations found in the UV
 
 Addresses: C1 (no skip-to-content link), C2 (no main landmark)
 
-- [ ] Add CSS class for visually-hidden-focusable skip link in `css/main.css` (only visible on focus)
-- [ ] Add `<a href="#main-content" class="skip-link">Skip to main content</a>` as the first child of `<body>` in each layout file
-- [ ] Wrap the primary content area in `<main id="main-content">` in each layout file and `index.html`
-- [ ] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser snapshot` - confirm `main` landmark appears in accessibility tree
-- [ ] Verify with agent-browser: `agent-browser press Tab && agent-browser screenshot /tmp/skip-link.png` - confirm skip link is visible on focus
+- [x] Add CSS class for visually-hidden-focusable skip link in `css/main.css` (only visible on focus)
+- [x] Add `<a href="#main-content" class="skip-link">Skip to main content</a>` as the first child of `<body>` in each layout file
+- [x] Wrap the primary content area in `<main id="main-content">` in each layout file and `index.html`
+- [x] Verify with agent-browser: `agent-browser open http://localhost:4000 && agent-browser snapshot` - confirm `main` landmark appears in accessibility tree
+- [x] Verify with agent-browser: `agent-browser press Tab && agent-browser screenshot /tmp/skip-link.png` - confirm skip link is visible on focus
 
 ### Task 2: Carousel Pause Control and Keyboard Navigation
 
