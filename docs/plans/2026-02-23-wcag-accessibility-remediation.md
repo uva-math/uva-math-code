@@ -156,15 +156,15 @@ Addresses: M9 (footer social links not in nav), M10 (sidebars lack nav landmark)
 
 All verification against http://localhost:4000 using agent-browser:
 
-- [ ] Full keyboard navigation test: `agent-browser open http://localhost:4000` then repeatedly `agent-browser press Tab` through skip link, navbar, carousel controls, content, footer - confirm all interactive elements are reachable
-- [ ] Accessibility tree completeness: `agent-browser snapshot` on home page - confirm main landmark, all nav landmarks with labels, carousel controls, search form
-- [ ] Dark mode toggle test: `agent-browser click ".theme-toggle-dual"` then `agent-browser eval "document.documentElement.getAttribute('data-theme')"` - confirm theme switches and `aria-pressed` updates
-- [ ] Carousel pause test: click pause button, wait 5 seconds, verify slide did not advance
-- [ ] Focus indicators: `agent-browser focus` on key interactive elements + `agent-browser screenshot` - confirm visible focus rings in both themes
-- [ ] Reduced motion: `agent-browser eval "CSS.supports('(prefers-reduced-motion: reduce)')"` - confirm media query is supported in the stylesheet
-- [ ] Run Lighthouse accessibility audit: `agent-browser eval` to inject and run axe-core, or use `agent-browser snapshot` to manually verify tree
-- [ ] Test a post page: `agent-browser open http://localhost:4000/2026/02/...` (a recent post) and `agent-browser snapshot` - confirm main landmark and skip link work on post layout
-- [ ] Verify no HTML validation errors related to the changes
+- [x] Full keyboard navigation test: `agent-browser open http://localhost:4000` then repeatedly `agent-browser press Tab` through skip link, navbar, carousel controls, content, footer - confirm all interactive elements are reachable
+- [x] Accessibility tree completeness: `agent-browser snapshot` on home page - confirm main landmark, all nav landmarks with labels, carousel controls, search form
+- [x] Dark mode toggle test: `agent-browser click ".theme-toggle-dual"` then `agent-browser eval "document.documentElement.getAttribute('data-theme')"` - confirm theme switches and `aria-pressed` updates
+- [x] Carousel pause test: click pause button, wait 5 seconds, verify slide did not advance
+- [x] Focus indicators: `agent-browser focus` on key interactive elements + `agent-browser screenshot` - confirm visible focus rings in both themes
+- [x] Reduced motion: `agent-browser eval "CSS.supports('(prefers-reduced-motion: reduce)')"` - confirm media query is supported in the stylesheet
+- [x] Run Lighthouse accessibility audit: `agent-browser eval` to inject and run axe-core, or use `agent-browser snapshot` to manually verify tree
+- [x] Test a post page: `agent-browser open http://localhost:4000/2026/02/...` (a recent post) and `agent-browser snapshot` - confirm main landmark and skip link work on post layout
+- [x] Verify no HTML validation errors related to the changes
 
 ### Task 9: Update Documentation
 
