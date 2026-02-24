@@ -82,3 +82,14 @@
 {
   color: #2e7a06;
 }
+
+[data-theme="dark"] .highlighter-rouge
+{
+  color: #a8e28a;
+}
+
+[data-theme="dark"] a .highlighter-rouge,
+[data-theme="dark"] a code.highlighter-rouge
+{
+  color: inherit;
+}

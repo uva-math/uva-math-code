@@ -16,8 +16,8 @@ tooltips: true
  
 ## Main links:
 
-- The Graduate School of Arts & Sciences page (with "apply" link): [`http://graduate.as.virginia.edu/`](http://graduate.as.virginia.edu/)
-- Direct link to application system at University of Virginia: [`https://applycentral.virginia.edu/apply/`](https://applycentral.virginia.edu/apply/) <code>&#8212;</code> the portal for Fall 2025 admission will open in October 2024.
+- [Graduate School of Arts & Sciences admissions page (includes "Apply")](https://graduate.as.virginia.edu/)
+- [Direct link to UVA's application system](https://applycentral.virginia.edu/apply/) &mdash; the portal for Fall 2025 admission opened in October 2024.
 
 ## Application Checklist:
 1. Application;
@@ -25,15 +25,15 @@ tooltips: true
 3. 2 or 3 letters of recommendation;
 4. Unofficial transcript;
 5. $85 application fee; 
-6. TOEFL score for international students (see <a href="http://graduate.as.virginia.edu/requirements">here</a>). In exceptional circumstances, it might be possible to replace TOEFL with an in-person / video interview with UVA faculty.
+6. TOEFL score for international students. See the [Graduate School requirements](https://graduate.as.virginia.edu/requirements). In exceptional circumstances, it might be possible to replace TOEFL with an in-person / video interview with UVA faculty.
 
-##### Other useful links
+### Other useful links
 
-- Fee waivers for US citizens: [`https://graddiversity.virginia.edu/application-fee-waiver`](https://graddiversity.virginia.edu/application-fee-waiver)
-- Requirements: [`http://graduate.as.virginia.edu/requirements`](http://graduate.as.virginia.edu/requirements)
+- [Application fee waiver information for U.S. citizens](https://graddiversity.virginia.edu/application-fee-waiver)
+- [Graduate School requirements](https://graduate.as.virginia.edu/requirements)
  	<br/>Under the Fees tab on this page, there is additional information about automatic application fee waivers for citizens of certain countries.
-- Deadlines: [`http://graduate.as.virginia.edu/deadlines`](http://graduate.as.virginia.edu/deadlines)
-- FAQ: [`http://graduate.as.virginia.edu/frequently-asked-questions`](http://graduate.as.virginia.edu/frequently-asked-questions)
+- [Graduate School deadlines](https://graduate.as.virginia.edu/deadlines)
+- [Graduate School frequently asked questions](https://graduate.as.virginia.edu/frequently-asked-questions)
 
 ## Criteria for Admission
 
@@ -58,9 +58,9 @@ As the University&#39;s most international department, we welcome applications f
 The following websites for international students should be helpful:
 
 - General information for admitted international students:
-	[`http://issp.virginia.edu/newly-admitted-students`](http://issp.virginia.edu/newly-admitted-students)
+	[General information for admitted international students](https://issp.virginia.edu/newly-admitted-students)
 - International Studies Office:
-	[`http://www.virginia.edu/iso/`](http://www.virginia.edu/iso/)
+	[International Studies Office](https://www.virginia.edu/iso/)
 
 New teaching assistants whose first language is not English have their spoken English proficiency evaluated by the International Students Office and Teaching Resource Center. This test is similar to ETS&#39;s Test of Spoken English (TSE), and students who have taken the TSE, and have a high enough score, can be exempted from this evaluation.
 

@@ -138,6 +138,27 @@ a:focus, a:hover {
   text-decoration: underline;
 }
 
+/* Keep content links visually distinct from surrounding text */
+main p a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item),
+main li a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item),
+main td a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item),
+main dd a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item) {
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.12em;
+}
+
+main p a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):focus,
+main p a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):hover,
+main li a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):focus,
+main li a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):hover,
+main td a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):focus,
+main td a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):hover,
+main dd a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):focus,
+main dd a:not(.btn):not(.nav-link):not(.dropdown-item):not(.list-group-item):hover {
+  text-decoration-thickness: 0.12em;
+}
+
 a.main-roll-link:link, a.main-roll-link:visited {
   color: inherit;
 }
@@ -1482,4 +1503,3 @@ pre, code {
     scroll-behavior: auto !important;
   }
 }
-
