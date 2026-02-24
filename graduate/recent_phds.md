@@ -400,7 +400,6 @@ Riverain Technologies, Chief Science Officer<br>
 (Advisor: Irena Lasiecka)
 
 - **Nathaniel Ray Pappas**<br>
-National Security Agency, Mathematician<br>
 *On Rank Gradient and p-Gradient of Finitely Generated Groups*<br>
 (Advisor: Mikhail Ershov)
 
