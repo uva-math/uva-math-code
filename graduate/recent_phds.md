@@ -19,7 +19,7 @@ The list includes initial job placement or current job (if known).
   (Advisor: Julie Bergner)
 
 - **Eleanor Grace McSpirit**<br>
-  TBA<br>
+  Vanderbilt University, Postdoc<br>
   (Advisor: Ken Ono)
 
 - **Donnelly Phillips**<br>
@@ -27,11 +27,11 @@ The list includes initial job placement or current job (if known).
   (Advisor: Tai Melcher)
 
 - **Hasan Saad**<br>
-  TBA<br>
+  Louisiana State University, Postdoc<br>
   (Advisor: Ken Ono)
 
 - **Yaolong Shen**<br>
-  TBA<br>
+  University of Ottawa, Postdoc<br>
   (Advisor: Weiqiang Wang)
 
 - **Alec Traaseth**<br>
