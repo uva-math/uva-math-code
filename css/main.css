@@ -204,18 +204,18 @@ a.main-roll-link:focus, a.main-roll-link:hover {
 }
 
 .orange-item {
-  background-color: #b34000;
-  color: #ffffff;
+  background-color: #E57200;
+  color: #111111;
 }
 
 a.orange-item:link, a.orange-item:visited {
-  background-color: #b34000;
-  color: #ffffff;
+  background-color: #E57200;
+  color: #111111;
 }
 
 a.orange-item:hover, a.orange-item:focus {
-  background-color: #c74a00 !important;
-  color: #ffffff !important;
+  background-color: #232D4B !important;
+  color: #FFFFFF !important;
 }
 
 a.list-group-item-action:hover, a.list-group-item-action:focus {
@@ -901,16 +901,16 @@ footer {
 .navbar-nav .nav-link.orange-item {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #111111;
 }
 
 .navbar-light .navbar-nav .nav-link.orange-item {
-  color: #ffffff;
+  color: #111111;
 }
 
 .navbar-light .navbar-nav .nav-link.orange-item:focus,
 .navbar-light .navbar-nav .nav-link.orange-item:hover {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 
 /* Search form styling */
@@ -948,8 +948,8 @@ footer {
 
 /* Orange items in dark mode */
 [data-theme="dark"] .orange-item {
-  background-color: #b34000;  /* Darker orange for dark mode — 4.58:1 with white */
-  color: #ffffff;
+  background-color: #E57200;
+  color: #111111;
 }
 
 /* Zebra stripes in dark mode */
@@ -1099,8 +1099,8 @@ pre, code {
 }
 
 [data-theme="dark"] .list-group-item.orange-item.active {
-  background-color: #b34000;
-  border-color: #b34000;
+  background-color: #E57200;
+  border-color: #E57200;
   color: #ffffff;
 }
 
@@ -1331,8 +1331,8 @@ pre, code {
 }
 
 .list-group-item.orange-item.active {
-  background-color: #EB5F0C;
-  border-color: #EB5F0C;
+  background-color: #E57200;
+  border-color: #E57200;
   color: white;
 }
 
