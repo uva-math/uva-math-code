@@ -15,7 +15,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<h5 class="mt-1 mb-1"><a href="https://people.math.wisc.edu/~ellenberg/">Jordan Ellenberg</a> (University of Wisconsin)</h5>
+<p class="h5 mt-1 mb-1"><a href="https://people.math.wisc.edu/~ellenberg/">Jordan Ellenberg</a> (University of Wisconsin)</p>
 
 
 <p>Jordan Ellenberg will deliver the Virginia Mathematics Lectures on March 4-5, 2025.</p>

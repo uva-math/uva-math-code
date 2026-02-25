@@ -47,7 +47,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
             <!-- Code for the news roll -->
 
             <div class="jumbotron" style="padding: 12px">
-            <div class="swiper-container mt-4" role="region" aria-label="News carousel" aria-roledescription="carousel">
+            <div class="swiper-container mt-4" role="region" aria-label="News carousel" aria-roledescription="carousel" aria-live="off">
             <div class="carousel-controls-bar mt-1">
               <div class="swiper-pagination" style="position: static; width: auto;"></div>
               <div class="carousel-nav-buttons">
@@ -78,7 +78,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                 {% else %}
                 <div class="d-none d-sm-block">{{ post.excerpt | markdownify }}
                 </div>
-                {% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal"  role="button">{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}
+                {% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" >{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}
                 {% endunless %}
                 </div>
             {% endif %}
@@ -145,6 +145,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                 var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
                 if (prefersReducedMotion) {
                   swiper.autoplay.stop();
+                  document.querySelector('.swiper-container').setAttribute('aria-live', 'polite');
                 }
 
                 // Pause/Play button functionality
@@ -170,11 +171,13 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
                     isPlaying = false;
                     pauseBtn.setAttribute('aria-label', 'Play carousel');
                     pauseBtn.querySelector('i').className = 'fas fa-play';
+                    document.querySelector('.swiper-container').setAttribute('aria-live', 'polite');
                   });
                   swiper.on('autoplayStart', function() {
                     isPlaying = true;
                     pauseBtn.setAttribute('aria-label', 'Pause carousel');
                     pauseBtn.querySelector('i').className = 'fas fa-pause';
+                    document.querySelector('.swiper-container').setAttribute('aria-live', 'off');
                   });
                 }
               </script>
@@ -195,7 +198,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
             {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %}max-height:400px;height:auto;width:auto;" alt="{{ post.image-alt | default: post.title }}" title="{{ post.image-alt | default: post.title }}"></a><br /><br />
           {% endif %}
           {{ post.excerpt | markdownify }}
-          {% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" role="button">{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}
+          {% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal">{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}
         </div>
         {% endunless %}
         {% endif %}
@@ -226,7 +229,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
               {% if post.event-date != null and post.multi-day-event != true %}
               <p class="h6">Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{% endif %}
               <span class="d-none d-sm-inline">{{ post.excerpt | markdownify }}</span>
-              <p>{% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal"  role="button">{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}</p>
+              <p>{% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" >{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}</p>
             </div><!--/span-->
           {% endif %}
           {% endunless %}
@@ -234,7 +237,7 @@ The Department of Mathematics stands with President  Ryan in opposing unpreceden
         </div><!--/row-->
         
         <div class="text-right mt-3">
-          <a href="{{site.url}}/allnews/" class="btn btn-secondary h5" role="button">All news and events &raquo;</a>
+          <a href="{{site.url}}/allnews/" class="btn btn-secondary h5">All news and events &raquo;</a>
         </div>
       </div><!--/span-->
 

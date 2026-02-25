@@ -15,7 +15,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<h5 class="mt-1 mb-1"><a href="https://www.brown.edu/academics/applied-mathematics/faculty/kavita-ramanan/home">Kavita Ramanan</a> (Brown University) - Tales of high-dimensional distributions</h5>
+<p class="h5 mt-1 mb-1"><a href="https://www.brown.edu/academics/applied-mathematics/faculty/kavita-ramanan/home">Kavita Ramanan</a> (Brown University) - Tales of high-dimensional distributions</p>
 
 Though they have a common thread, the three lectures will be self-contained, and can mostly be followed independently of each other.
 

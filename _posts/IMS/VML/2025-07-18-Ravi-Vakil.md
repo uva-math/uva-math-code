@@ -15,7 +15,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<h5 class="mt-1 mb-1"><a href="https://math.stanford.edu/~vakil/">Ravi Vakil</a> (Stanford University and AMS)</h5>
+<p class="h5 mt-1 mb-1"><a href="https://math.stanford.edu/~vakil/">Ravi Vakil</a> (Stanford University and AMS)</p>
 
 <ul>
         <li><strong>Lecture 1 - The Mathematics of Doodling:</strong> Monday, September 8, 2025 | 5-6pm | Wilson 402</li>

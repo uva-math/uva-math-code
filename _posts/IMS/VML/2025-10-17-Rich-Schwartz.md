@@ -15,7 +15,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<h5 class="mt-1 mb-1"><a href="https://www.math.brown.edu/reschwar/">Rich Schwartz</a> (Brown University)</h5>
+<p class="h5 mt-1 mb-1"><a href="https://www.math.brown.edu/reschwar/">Rich Schwartz</a> (Brown University)</p>
 
 <ul>
 	<li><strong>Lecture 1 - The Optimal Paper Moebius Band:</strong> Monday, March 23, 2026 | 5-6pm | Wilson 402</li>
