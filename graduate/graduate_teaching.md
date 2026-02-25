@@ -24,19 +24,19 @@ There are some opportunities for teaching other courses, such as Financial Mathe
 
 <h2 class="mb-3">Departmental Contacts</h2>
 
-**Director of Graduate Studies**:&nbsp;&nbsp;{% include person_info_email_only.html UVA_id="jeb2md" %}
+**Director of Graduate Studies**:&nbsp;&nbsp;{% include person_info_email_only.html UVA_id="tmk5a" %}
 
 Here are this year's course coordinators and GTA Mentor:
 
 - GTA Mentor:&nbsp;&nbsp;{% include person_info_email_only.html UVA_id="jsr2pz" %}
 
-- {% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="zka4tz" %}
+- {% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="qgf6bc" %} (Fall), {% include person_info_email_only.html UVA_id="rbh3vx" %} (Spring)
 
-- {% include course number=1220 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="ed8bg" %}
+- {% include course number=1220 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="nbm2vp" %}
 
 - {% include course number=1310 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="hdj4nd" %}
 
-- {% include course number=1320 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="jsr2pz" %}
+- {% include course number=1320 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="axh7cj" %}, {% include person_info_email_only.html UVA_id="jsr2pz" %} (co-coordinators)
 
 ---
 

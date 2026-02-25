@@ -3,8 +3,8 @@ title: Competitions
 layout: ug_page
 ug_info: true
 permalink: /undergraduate/competitions/
-nav_parent: Undergraduate
-nav_weight: 10
+# nav_parent: Undergraduate
+# nav_weight: 10
 ---
 
 <h1 class="mb-3">Competitions</h1>

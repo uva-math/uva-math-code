@@ -9,7 +9,7 @@ nav_weight: 8
 
 <h1 class="mb-3">Degree Programs &amp; Requirements</h1>
 
-**Note:** *The information and policies contained on this website is for informational purposes only. The Undergraduate Record and Graduate Record represent the official repository for academic program requirements. These publications may be found at [`http://records.ureg.virginia.edu/index.php`](http://records.ureg.virginia.edu/index.php).*
+**Note:** *The information and policies contained on this website is for informational purposes only. The Undergraduate Record and Graduate Record represent the official repository for academic program requirements. These publications may be found at [`https://records.ureg.virginia.edu/index.php`](https://records.ureg.virginia.edu/index.php).*
 
 *Official requirements for our graduate degrees are listed in the [Mathematics section of the Graduate Record](https://records.ureg.virginia.edu/preview_program.php?catoid=68&poid=10638).*
 

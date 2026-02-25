@@ -21,7 +21,7 @@ nav_weight: 1
 <h3 class="mt-3">Please note:</h3>
 
 <b>If you have questions about the requirements, please reach out to your intake advisor.</b> The intake advisor list is below, based on the first
-letter of you last name.
+letter of your last name.
 
 <h2 class="mb-3 mt-5">To Declare a Major/Minor:</h2>
 
