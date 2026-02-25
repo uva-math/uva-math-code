@@ -204,17 +204,17 @@ a.main-roll-link:focus, a.main-roll-link:hover {
 }
 
 .orange-item {
-  background-color: #c74a00;
+  background-color: #b34000;
   color: #ffffff;
 }
 
 a.orange-item:link, a.orange-item:visited {
-  background-color: #c74a00;
+  background-color: #b34000;
   color: #ffffff;
 }
 
 a.orange-item:hover, a.orange-item:focus {
-  background-color: #e57200 !important;
+  background-color: #c74a00 !important;
   color: #ffffff !important;
 }
 
@@ -1099,8 +1099,8 @@ pre, code {
 }
 
 [data-theme="dark"] .list-group-item.orange-item.active {
-  background-color: #d14900;
-  border-color: #d14900;
+  background-color: #b34000;
+  border-color: #b34000;
   color: #ffffff;
 }
 

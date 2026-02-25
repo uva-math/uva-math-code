@@ -230,11 +230,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 btn.style.backgroundColor = '#002F6C';
                 btn.style.borderColor = '#002F6C';
                 btn.style.color = 'white';
+                btn.setAttribute('aria-pressed', 'true');
             } else {
                 btn.classList.remove('active');
                 btn.style.backgroundColor = '';
                 btn.style.borderColor = '';
                 btn.style.color = '';
+                btn.setAttribute('aria-pressed', 'false');
             }
         });
     }
@@ -305,7 +307,8 @@ document.addEventListener('DOMContentLoaded', function() {
             btn.style.fontSize = '0.9em';
             btn.style.marginRight = '0.5em';
             btn.style.marginBottom = '0.5em';
-            
+            btn.setAttribute('aria-pressed', category === 'all' ? 'true' : 'false');
+
             categoryButtons.appendChild(btn);
         });
     }
