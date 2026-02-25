@@ -38,8 +38,22 @@ input:focus-visible,
 select:focus-visible,
 textarea:focus-visible,
 [tabindex]:focus-visible {
-  outline: 2px solid #e57200;
-  outline-offset: 2px;
+  outline: 2px solid #e57200 !important;
+  outline-offset: 2px !important;
+}
+
+/* Override Bootstrap component selectors that set outline: 0 */
+.btn:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible,
+.form-check-input:focus-visible,
+.dropdown-item:focus-visible,
+.nav-link:focus-visible,
+.page-link:focus-visible,
+.btn-close:focus-visible {
+  outline: 2px solid #e57200 !important;
+  outline-offset: 2px !important;
+  box-shadow: none !important;
 }
 
 [data-theme="dark"] a:focus-visible,
@@ -47,8 +61,17 @@ textarea:focus-visible,
 [data-theme="dark"] input:focus-visible,
 [data-theme="dark"] select:focus-visible,
 [data-theme="dark"] textarea:focus-visible,
-[data-theme="dark"] [tabindex]:focus-visible {
-  outline-color: #4da3ff;
+[data-theme="dark"] [tabindex]:focus-visible,
+[data-theme="dark"] .btn:focus-visible,
+[data-theme="dark"] .form-control:focus-visible,
+[data-theme="dark"] .form-select:focus-visible,
+[data-theme="dark"] .form-check-input:focus-visible,
+[data-theme="dark"] .dropdown-item:focus-visible,
+[data-theme="dark"] .nav-link:focus-visible,
+[data-theme="dark"] .page-link:focus-visible,
+[data-theme="dark"] .btn-close:focus-visible {
+  outline-color: #4da3ff !important;
+  box-shadow: none !important;
 }
 
 /* Visually hidden class (fallback if Bootstrap CSS fails to load) */
@@ -137,10 +160,12 @@ textarea:focus-visible,
 
 [data-theme="dark"] .swiper-pagination-bullet {
   background: #7a8494;  /* Light gray — 3.2:1 on dark carousel bg */
+  opacity: 0.8;  /* Override swiper.css default opacity: .2 */
 }
 
 [data-theme="dark"] .swiper-pagination-bullet-active {
   background: #4da3ff;  /* Bright blue — 5.3:1 on dark carousel bg */
+  opacity: 1;
 }
 
 html {
@@ -897,20 +922,23 @@ footer {
   }
 }
 
-/* Fix vertical alignment and contrast of Support us button */
+/* Fix vertical alignment and contrast of Support us button — !important to override Bootstrap .nav-link opacity */
 .navbar-nav .nav-link.orange-item {
   display: flex;
   align-items: center;
-  color: #111111;
+  color: #111111 !important;
+  opacity: 1 !important;
+  background-color: #E57200 !important;
 }
 
 .navbar-light .navbar-nav .nav-link.orange-item {
-  color: #111111;
+  color: #111111 !important;
 }
 
 .navbar-light .navbar-nav .nav-link.orange-item:focus,
 .navbar-light .navbar-nav .nav-link.orange-item:hover {
-  color: #FFFFFF;
+  color: #FFFFFF !important;
+  background-color: #232D4B !important;
 }
 
 /* Search form styling */
@@ -1277,24 +1305,24 @@ pre, code {
   box-shadow: 0 0 0 0.25rem rgba(222, 226, 230, 0.5);
 }
 
-/* Dark mode secondary buttons */
+/* Dark mode secondary buttons — !important needed to override Bootstrap CSS custom properties */
 [data-theme="dark"] .btn-secondary {
-  background-color: #243448;
-  border-color: #3a5068;
-  color: #6db3ff;
+  background-color: #243448 !important;
+  border-color: #3a5068 !important;
+  color: #6db3ff !important;
 }
 
 [data-theme="dark"] .btn-secondary:hover,
 [data-theme="dark"] .btn-secondary:focus,
 [data-theme="dark"] .btn-secondary:active,
 [data-theme="dark"] .btn-secondary.active {
-  background-color: #2e4460;
-  border-color: #4a6a88;
-  color: #8ec5ff;
+  background-color: #2e4460 !important;
+  border-color: #4a6a88 !important;
+  color: #8ec5ff !important;
 }
 
 [data-theme="dark"] .btn-secondary:focus {
-  box-shadow: 0 0 0 0.25rem rgba(77, 163, 255, 0.3);
+  box-shadow: 0 0 0 0.25rem rgba(77, 163, 255, 0.3) !important;
 }
 
 /* Modern list group sidebar styling */

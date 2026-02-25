@@ -22,5 +22,5 @@ The Math Circle is a Fall program for elementary and middle school students from
 - [Expanding the circle](http://as.virginia.edu/ampersand/expanding-circle), an overview of the Math Circle (<a href="MathCircle_article.pdf">PDF</a>)
 
 
-##### Contact:
+## Contact
 - {% include person_info.html UVA_id="vk6e" %}
