@@ -17,7 +17,7 @@ tooltips: true
 ## Main links:
 
 - [Graduate School of Arts & Sciences admissions page (includes "Apply")](https://graduate.as.virginia.edu/)
-- [Direct link to UVA's application system](https://applycentral.virginia.edu/apply/) &mdash; the portal for Fall 2025 admission opened in October 2024.
+- [Direct link to UVA's application system](https://applycentral.virginia.edu/apply/) &mdash; the portal for Fall 2026 admission opened in October 2025.
 
 ## Application Checklist:
 1. Application;

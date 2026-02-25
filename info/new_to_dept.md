@@ -15,13 +15,13 @@ nav_weight: 20
 <h5 class="mt-2 mb-4">Welcome to the Department of Mathematics!  Below is some information to get you started:</h5>
 
 
-- **University ID and Computing** [`http://its.virginia.edu/accounts/facstaffaccounts.html`](http://its.virginia.edu/accounts/facstaffaccounts.html) New faculty/staff begin here
+- **University ID and Computing** [`https://its.virginia.edu/accounts/facstaffaccounts.html`](https://its.virginia.edu/accounts/facstaffaccounts.html) New faculty/staff begin here
 
-- **Software Gateway** [`http://its.virginia.edu/software/`](http://its.virginia.edu/software//) provides access to site-licensed software that can be distributed to members of the University at no charge.  Our local IT person is {% include person_info.html UVA_id="vlb5y" %}
+- **Software Gateway** [`https://its.virginia.edu/software/`](https://its.virginia.edu/software/) provides access to site-licensed software that can be distributed to members of the University at no charge.  Our local IT person is {% include person_info.html UVA_id="vlb5y" %}
 
-- **Setting up Direct Deposit:**  In order to set up direct deposit for your paycheck, you will need to have an account on the University’s Integrated System [`http://www.virginia.edu/integratedsystem/`](http://www.virginia.edu/integratedsystem/)    
+- **Setting up Direct Deposit:**  In order to set up direct deposit for your paycheck, you will need to have an account on the University’s Integrated System [`https://www.virginia.edu/integratedsystem/`](https://www.virginia.edu/integratedsystem/)    
 
-- **Teaching:** SIS (Student Information System) at UVa.  Instructors use SIS [`http://sis.virginia.edu/`](http://sis.virginia.edu/) to generate class rosters and submit grades
+- **Teaching:** SIS (Student Information System) at UVa.  Instructors use SIS [`https://sis.virginia.edu/`](https://sis.virginia.edu/) to generate class rosters and submit grades
 
 - **Canvas** Course management system [`https://canvas.its.virginia.edu/`](https://canvas.its.virginia.edu/) Instructors may create course sites with official class rosters. We encourage all instructors to load their syllabus and other coursework on Canvas rather than making copies
 

@@ -10,19 +10,19 @@ nav_weight: 8
 
 <h1 class="mb-3">Undergraduate program policies</h1>
 
-**Note:** *The information and policies contained on this website is for informational purposes only. The Undergraduate Record and Graduate Record represent the official repository for academic program requirements. These publications may be found at [`http://records.ureg.virginia.edu/index.php`](http://records.ureg.virginia.edu/index.php).*
+**Note:** *The information and policies contained on this website is for informational purposes only. The Undergraduate Record and Graduate Record represent the official repository for academic program requirements. These publications may be found at [`https://records.ureg.virginia.edu/index.php`](https://records.ureg.virginia.edu/index.php).*
 
 ---
 
 <h2 class="mt-2 mb-3">Policies FAQ</h2>
 
-- If you are unsure about which UVa Mathematics course should be your first, consult the [Department's Placement Policy]({{site.url}}/content/math-placement/). If you have a question about mathematics placement, contact your [faculty advisor](http://college.as.virginia.edu/advisors).
+- If you are unsure about which UVa Mathematics course should be your first, consult the [Department's Placement Policy]({{site.url}}/content/math-placement/). If you have a question about mathematics placement, contact your [faculty advisor](https://college.as.virginia.edu/advisors).
 
 - How to set up an online advising schedule:
 [`https://advise.sites.virginia.edu`](https://advise.sites.virginia.edu)
 
 - When can an undergraduate add more than 15 credit-hours?
-[`http://college.as.virginia.edu/advisors_adviseandenroll`](http://college.as.virginia.edu/advisors_adviseandenroll)
+[`https://college.as.virginia.edu/advisors_adviseandenroll`](https://college.as.virginia.edu/advisors_adviseandenroll)
 
 - How do I compute my MATH GPA?
 To compute the MATH GPA, use the nine MATH courses that SIS shows were required for the
@@ -32,10 +32,10 @@ major.
 Yes, complete the [Participation in Final Exercises by BA Form]({{site.url}}/undergraduate/docs/Participation in Final Exercises by BA.pdf).
 
 - How to check on UVA courses?
-[`http://rabi.phys.virginia.edu/mySIS/CS2/index.php`](http://rabi.phys.virginia.edu/mySIS/CS2/index.php)
+[`https://rabi.phys.virginia.edu/mySIS/CS2/index.php`](https://rabi.phys.virginia.edu/mySIS/CS2/index.php)
 
 - What courses can I transfer to UVA?
-[`http://ascs8.eservices.virginia.edu/asEquivs`](http://ascs8.eservices.virginia.edu/asEquivs)
+[`https://ascs8.eservices.virginia.edu/asEquivs`](https://ascs8.eservices.virginia.edu/asEquivs)
 
 - How many courses must have a MATH prefix?
 At least 6 courses counted as major requirements must have a MATH prefix.
@@ -49,7 +49,7 @@ counted for another College major can also be counted for the major in mathemati
 courses may be allowed if the other major is interdisciplinary." See also [Double counting courses in the math major and minor]({{site.url}}/content/double-counting-seas/)
 
 - Course action form:
-[`http://www.virginia.edu/registrar/courseactionform.html`](http://www.virginia.edu/registrar/courseactionform.html)
+[`https://www.virginia.edu/registrar/courseactionform.html`](https://www.virginia.edu/registrar/courseactionform.html)
 
 - [If I need precalculus...]({{ site.url }}/undergraduate/docs/If I need precalculus....pdf)
 

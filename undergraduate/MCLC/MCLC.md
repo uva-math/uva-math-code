@@ -24,7 +24,7 @@ tooltips: true
 
 The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Student Center on the second floor of Clemons Library. </b> The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer assistance one-on-one (or in small groups) for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
 <ul>
- <li> {% include course number=1190 %}, {% include course number=1210 %}, {% include course number=1310 %} (collectively reffered to as Calculus I) </li>
+ <li> {% include course number=1190 %}, {% include course number=1210 %}, {% include course number=1310 %} (collectively referred to as Calculus I) </li>
  <li> {% include course number=1220 %}, {% include course number=1320 %} (collectively referred to as Calculus II) </li>
  <li> {% include course number=2310 %}, {% include course number=3000 %}, {% include course number=3100 %}, {% include course number=3250 %}, {% include course number=3310 %}, {% include course number=3350%}, and {% include course number=3351%} </li>
 </ul>

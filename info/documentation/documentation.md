@@ -34,7 +34,7 @@ There are two main ways to edit the website content:
 - **On the web**: Smaller edits can be made directly on the web at [GitHub](https://github.com/uva-math/uva-math-code). The GitHub icon <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
 {% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank">
   <span class="fa fa-github-square fa-2x"></span></a> in the lower right corner of each page points to the source file associated with this page, for quicker and simpler editing of existing content on the web.
-- **Locally**: Clone the website code to your local machine, make edits, and then sync the changes back to [GitHub](https://github.com/uva-math/uva-math-code). For this we recommend installing the [GitHub Desktop app](https://desktop.github.com/) and the [Atom text editor](https://atom.io/). Both are available for both Windows and Mac, and Atom is also available for Linux.
+- **Locally**: Clone the website code to your local machine, make edits, and then sync the changes back to [GitHub](https://github.com/uva-math/uva-math-code). For this we recommend installing the [GitHub Desktop app](https://desktop.github.com/) and [Visual Studio Code](https://code.visualstudio.com/). Both are available for Windows, Mac, and Linux.
 
 In both cases, the changes in the code will trigger the website to automatically update, this takes about 5 minutes.
 
