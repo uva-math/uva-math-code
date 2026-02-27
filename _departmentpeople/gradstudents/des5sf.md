@@ -1,7 +1,7 @@
 ---
 UVA_id: des5sf
-lastname: O Cobhthaigh
-name: Micheal
+lastname: Ó Cobhthaigh
+name: Mícheál
 general_position: gradstudent
 position: Graduate Student
 office: 114 Kerchof Hall
