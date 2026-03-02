@@ -76,7 +76,7 @@
   {
     if (abst)
     {
-      var retStr = ['<details><summary>Description</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '"  target="_blank" rel="noopener noreferrer">Google Calendar link<span class="visually-hidden"> (opens in new tab)</span></a><br>', '</details>'];
+      var retStr = ['<details><summary>Abstract</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '"  target="_blank" rel="noopener noreferrer">Google Calendar link<span class="visually-hidden"> (opens in new tab)</span></a><br>', '</details>'];
       // appendPre(retStr);
       return retStr.join('');
     }
