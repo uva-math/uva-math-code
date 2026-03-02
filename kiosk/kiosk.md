@@ -231,7 +231,7 @@ permalink: /kiosk/
   gapi.load('client', start);
 </script>
 
-<div id='preloader' class="h5" style="color:grey">Loading seminars...</div>
+<div id='preloader' class="h5" style="color:#595959">Loading seminars...</div>
 <div id='content' class="my-div-zebra">
   <div id='events'></div>
 </div>

@@ -718,7 +718,7 @@ font-weight: bold;
   --bg-color: #ffffff;
   --text-color: #212529;
   --card-bg: #f8f9fa;
-  --navbar-bg: rgba(0, 0, 0, 0.15);
+  --navbar-bg: #D9D9D9;
   --link-color: #007bff;
   --border-color: #dee2e6;
   --list-group-bg: #ffffff;
@@ -733,7 +733,7 @@ font-weight: bold;
   --bg-color: #0a1628;  /* Very dark navy blue */
   --text-color: #e8e8e8;
   --card-bg: #1a2a3f;  /* Dark navy blue */
-  --navbar-bg: rgba(255, 255, 255, 0.08);
+  --navbar-bg: #1a2536;
   --link-color: #4da3ff;  /* Lighter blue for links */
   --border-color: #2a3f5f;  /* Navy blue border */
   --list-group-bg: #1a2a3f;
@@ -1576,6 +1576,37 @@ pre, code {
     border-left-color: var(--link-color);
     background-color: rgba(255, 255, 255, 0.05);
   }
+}
+
+/* Footer bar — opaque backgrounds for accessibility contrast checks */
+.footer-bar {
+  background-color: #D3D4D4;
+}
+
+[data-theme="dark"] .footer-bar {
+  background-color: #121c2c;
+}
+
+/* Title links — explicit color instead of color:inherit for accessibility */
+.title-link {
+  color: #212529;
+}
+
+.title-link:hover {
+  color: #212529;
+}
+
+[data-theme="dark"] .title-link {
+  color: #e8e8e8;
+}
+
+[data-theme="dark"] .title-link:hover {
+  color: #e8e8e8;
+}
+
+/* Preloader text — dark mode override */
+[data-theme="dark"] #preloader {
+  color: #a0a0a0 !important;
 }
 
 /* Reduced motion preference - disable transitions and animations */

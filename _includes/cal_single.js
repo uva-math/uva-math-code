@@ -234,4 +234,4 @@
 		</table>
     <br><br>
 </div>
-<div id='preloader' class="h5" style="color:grey">Loading talks...</div>
+<div id='preloader' class="h5" style="color:#595959">Loading talks...</div>
