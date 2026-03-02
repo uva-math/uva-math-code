@@ -40,7 +40,7 @@
     {% for p in sorted_pages%}
     {% if p.nav_id != null and p.nav_nesting != true and p.nav_parent == null %}
       <li class="nav-item {%if p.url == page.url %}active bg-inverse{% endif %}">
-        <a class="nav-link" {% if p.nav_long %}style="white-space: normal"{% endif %} href="{{site.url}}{{p.url}}">{{ p.nav_id }}{%if p.url == page.url %}<span class="visually-hidden">(current)</span>{% endif %}</a>
+        <a class="nav-link" {% if p.nav_long %}style="white-space: normal"{% endif %} href="{{site.url}}{{p.url}}" {%if p.url == page.url %}aria-current="page"{% endif %}>{{ p.nav_id }}</a>
       </li>
     {% endif %}
     {% if p.nav_id != null and p.nav_nesting == true and p.nav_parent == null %}
@@ -50,11 +50,11 @@
         </a>
         <div class="dropdown-menu" role="menu" aria-labelledby="navdropdown-{{ forloop.index }}">
           {% if p.nav_id == "News&Events" %}
-            <a class="dropdown-item my-navbar-dropdown-item {%if paginator.page %}active bg-inverse{% endif %}" style="{% if p.nav_long %}white-space: normal{% endif %}" href="{{site.url}}/allnews/" role="menuitem">All News and Events{%if paginator.page %}<span class="visually-hidden">(current)</span>{% endif %}</a>
+            <a class="dropdown-item my-navbar-dropdown-item {%if paginator.page %}active bg-inverse{% endif %}" style="{% if p.nav_long %}white-space: normal{% endif %}" href="{{site.url}}/allnews/" role="menuitem" {%if paginator.page %}aria-current="page"{% endif %}>All News and Events</a>
           {% endif %}
           {% for pp in sorted_pages%}
           {% if pp.nav_id != null and pp.nav_parent == p.nav_id %}
-          <a class="dropdown-item my-navbar-dropdown-item {%if pp.url == page.url %}active bg-inverse{% endif %}" style="{% if pp.nav_long %}white-space: normal{% endif %}" href="{{site.url}}{{pp.url}}" role="menuitem">{{pp.nav_id}}{%if pp.url == page.url %}<span class="visually-hidden">(current)</span>{% endif %}</a>
+          <a class="dropdown-item my-navbar-dropdown-item {%if pp.url == page.url %}active bg-inverse{% endif %}" style="{% if pp.nav_long %}white-space: normal{% endif %}" href="{{site.url}}{{pp.url}}" role="menuitem" {%if pp.url == page.url %}aria-current="page"{% endif %}>{{pp.nav_id}}</a>
           {% endif %}
           {% endfor %}
           {% if p.nav_id == "Seminars" %}
@@ -64,7 +64,7 @@
             {% if sem.shortname == "separator" %}
             <div class="dropdown-divider" role="separator"></div>
             {% else %}
-            <a class="dropdown-item my-navbar-dropdown-item {%if page.url contains sem.shortname %}active bg-inverse{% endif %}" href="{{site.url}}/seminars/{{sem.shortname}}" {%if sem.nav_longname %}style="white-space: normal"{%endif%} role="menuitem">{{sem.name}}{%if page.url contains sem.shortname %}<span class="visually-hidden">(current)</span>{% endif %}</a>
+            <a class="dropdown-item my-navbar-dropdown-item {%if page.url contains sem.shortname %}active bg-inverse{% endif %}" href="{{site.url}}/seminars/{{sem.shortname}}" {%if sem.nav_longname %}style="white-space: normal"{%endif%} role="menuitem" {%if page.url contains sem.shortname %}aria-current="page"{% endif %}>{{sem.name}}</a>
             {% endif %}
             {% endunless %}
             {% endfor %}

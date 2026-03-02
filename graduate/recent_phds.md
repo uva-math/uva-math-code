@@ -135,7 +135,7 @@ University of Michigan, NSF Postdoc<br>
 *K-Theoretic Catalan Functions*<br>
 (Advisor: Jennifer Morse)
 
-### Fall 2020
+## Fall 2020
 
 - **Liaosha Xu**<br>
 MSRI, Postdoc<br>

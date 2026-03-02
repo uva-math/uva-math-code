@@ -28,7 +28,7 @@
   {
     if (abst)
     {
-      var retStr = ['<details><summary>More info</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '"  target="_blank" rel="noopener noreferrer">Google Calendar link</a><br>', '</details>'];
+      var retStr = ['<details><summary>More info</summary>' , abst.replace(/(?:\r\n|\r|\n)/g, '<br />'), '<br><a href="' ,  htlink, '"  target="_blank" rel="noopener noreferrer">Google Calendar link<span class="visually-hidden"> (opens in new tab)</span></a><br>', '</details>'];
       // appendPre(retStr);
       return retStr.join('');
     }
@@ -135,7 +135,7 @@
             {
               var strBegin = startDT +
                 propSep +
-                '<b><a href="' + item.htmlLink + '" class="mt-6"  target="_blank" rel="noopener noreferrer">' +
+                '<strong><a href="' + item.htmlLink + '" class="mt-6"  target="_blank" rel="noopener noreferrer">' +
 								propSep +
                 startDayWeek +
 								propSep +
@@ -144,7 +144,7 @@
                 startYear +
 								propSep +
 								propSep +
-								'</a></b>' +
+								'<span class="visually-hidden"> (opens in new tab)</span></a></strong>' +
 								propSep;
             }
             else
@@ -154,7 +154,7 @@
               var startMin = time[1];
               var strBegin = startDT +
                 propSep +
-                '<b><a href="' + item.htmlLink + '" class="mt-6"  target="_blank" rel="noopener noreferrer">' +
+                '<strong><a href="' + item.htmlLink + '" class="mt-6"  target="_blank" rel="noopener noreferrer">' +
 								propSep +
                 startDayWeek +
 								propSep +
@@ -164,7 +164,7 @@
 								propSep +
                 startHour + ':' + startMin + AmPm1(time[0]) +
 								propSep +
-								'</a></b>' +
+								'<span class="visually-hidden"> (opens in new tab)</span></a></strong>' +
 								propSep;
             }
             var str = strBegin + '<h5 class="mt-1" style="text-transform:none !important">' +
