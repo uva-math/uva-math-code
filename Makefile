@@ -1,7 +1,7 @@
 .PHONY: serve invalidate deploy autodeploy deploy-local
 
 serve:
-	bundle exec jekyll serve --incremental
+	bundle exec jekyll serve 
 
 deploy:
 	@echo "Committing changes..."
