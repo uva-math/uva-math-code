@@ -4,7 +4,7 @@ title: 2026 Blue Ridge Probability Day
 event-date: 2026-03-13 10:30:00
 multi-day-event: false
 comments: false
-categories: news events conferences swiper-news
+categories: news events conferences
 published: true
 good-md: true
 image: __SITE_URL__/img/news_events/BlueRidge2026.jpg
