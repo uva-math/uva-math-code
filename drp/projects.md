@@ -6,6 +6,43 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Fall 2025
+
++ Introduction to Matrix Lie Groups
+   - Text: Stillwell, Naive Lie Theory
+   - Mentee: Claire Guleyupoglu
+   - Mentor: Zivile Puospekaite
+
++ Complex Analytic Proof of the Fundamental Theorem of Algebra
+   - Text: Prof. Humphries' Complex Analysis Lecture Notes
+   - Mentee: Temuulen Enkhtuvshin
+   - Mentor: Maximiliano Sánchez Garza
+
++ Vector Fields on Manifolds and the Poincaré-Hopf Theorem
+   - Text: Milnor, Topology from the Differentiable Viewpoint
+   - Mentee: Meilin Ranjan
+   - Mentor: Nick Sweeney
+
++ On the Julia and Mandelbrot Sets
+   - Text: Devaney, An Introduction to Chaotic Dynamical Systems
+   - Mentee: Wyatt McEntyre
+   - Mentor: Oliver Wang
+
++ Hyperbolic Geometry: An Overview
+   - Text: Series, Hyperbolic Geometry (lecture notes)
+   - Mentee: Siddharth Sharma
+   - Mentor: Lam Nguyen
+
++ Markov Chains & Metropolis-Hastings Algorithm
+   - Mentee: Michael Dornic
+   - Mentor: Jun Park
+
++ Groups and Music Theory
+   - Text: Zhang, The Framework of Music Theory as Represented with Groups
+   - Mentee: Maya Pattison
+   - Mentor: Thomas Jaklitsch
+
+
 ### Spring 2025
 
 This list will be updated as more projects are confirmed.
