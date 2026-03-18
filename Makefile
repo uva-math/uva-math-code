@@ -1,7 +1,28 @@
-.PHONY: serve invalidate deploy autodeploy deploy-local
+.PHONY: serve serve-full invalidate deploy autodeploy deploy-local
+
+define jekyll_serve
+	@mkdir -p /tmp/jekyll-status
+	@echo "idle" > /tmp/jekyll-status/uva-math
+	@trap 'rm -f /tmp/jekyll-status/uva-math' EXIT INT TERM; \
+	bundle exec jekyll serve $(1) 2>&1 | while IFS= read -r line; do \
+		printf '%s\n' "$$line"; \
+		case "$$line" in \
+			*"Regenerating:"*|*"Generating..."*) echo "building" > /tmp/jekyll-status/uva-math ;; \
+			*"done in"*) echo "done" > /tmp/jekyll-status/uva-math ;; \
+			*"ERROR"*) \
+				case "$$line" in \
+					*".well-known"*|*"ECONNRESET"*) ;; \
+					*) echo "error" > /tmp/jekyll-status/uva-math ;; \
+				esac ;; \
+		esac; \
+	done
+endef
 
 serve:
-	bundle exec jekyll serve 
+	$(call jekyll_serve,--incremental)
+
+serve-full:
+	$(call jekyll_serve,)
 
 deploy:
 	@echo "Committing changes..."
