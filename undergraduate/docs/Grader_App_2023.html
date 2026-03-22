@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Grader Application — UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a5dab;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #6b3fa0;
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<main>
+<h1>Grader Application</h1>
+<div class="center">
+<p><span><strong>Department of Mathematics<br />
+Grader Application</strong></span></p>
+</div>
+<p>Semester for which you are applying: ________________</p>
+<p>Are you eligible for the work-study program? Yes
+<math role="math" aria-label="\bigcirc" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>○</mi><annotation encoding="application/x-tex">\bigcirc</annotation></semantics></math>
+No
+<math role="math" aria-label="\bigcirc" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>○</mi><annotation encoding="application/x-tex">\bigcirc</annotation></semantics></math></p>
+<p>Last name, First name: ________________</p>
+<p>University ID: ________________</p>
+<p>Phone: ________________</p>
+<p>Email address: __________ Hours you can be reached: ____________</p>
+<p>Present address: ________________</p>
+<p>Mailing address for your W-2 (tax forms):</p>
+<p>How many hours/week can you grade (max. 10):</p>
+<p>Preference of course(s) to grade: ________________</p>
+<p>Are you currently enrolled as a student at UVa? Yes
+<math role="math" aria-label="\bigcirc" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>○</mi><annotation encoding="application/x-tex">\bigcirc</annotation></semantics></math>
+No
+<math role="math" aria-label="\bigcirc" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>○</mi><annotation encoding="application/x-tex">\bigcirc</annotation></semantics></math></p>
+<p>In what school are you registered (A&amp;S, Eng, etc.):
+__________</p>
+<p>Have you been employed by the University within the last 12 months?
+Yes
+<math role="math" aria-label="\bigcirc" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>○</mi><annotation encoding="application/x-tex">\bigcirc</annotation></semantics></math>
+No
+<math role="math" aria-label="\bigcirc" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>○</mi><annotation encoding="application/x-tex">\bigcirc</annotation></semantics></math></p>
+<p><em>(If not, and you are hired as a grader, you must fill out tax
+forms, an I-9 form and an automatic deposit form before going on
+payroll)</em></p>
+<p>Have you previously been employed by this department? Yes
+<math role="math" aria-label="\bigcirc" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>○</mi><annotation encoding="application/x-tex">\bigcirc</annotation></semantics></math>
+No
+<math role="math" aria-label="\bigcirc" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>○</mi><annotation encoding="application/x-tex">\bigcirc</annotation></semantics></math></p>
+<p>Does another department now employ you? Yes
+<math role="math" aria-label="\bigcirc" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>○</mi><annotation encoding="application/x-tex">\bigcirc</annotation></semantics></math>
+No
+<math role="math" aria-label="\bullet" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>•</mi><annotation encoding="application/x-tex">\bullet</annotation></semantics></math></p>
+<p>Are you a graduate or undergraduate student? ________________</p>
+<p>If you are an undergraduate:</p>
+<p>What is your current major: ____________</p>
+<p>What is your expected graduation year? __________</p>
+<p>What is your cumulative GPA: ____________</p>
+<p>What math courses are you currently taking? ________________</p>
+<p>Please provide the name(s) of at least one of your previous math
+instructors who can give a recommendation.</p>
+<p>List past math courses and final grades for each:</p>
+<p>Additional information:</p>
+<p><em>NOTE: It will be the joint responsibility of the instructor and
+the grader to ensure the PROMPT pick-up and return of homework and/or
+test papers according to the arrangements. Failure to comply on the part
+of the grader may be a reason for removal from payroll.</em></p>
+<p><em>The Department will provide a textbook for grading purposes. The
+grader is required to return the textbook at the end of the
+semester.</em></p>
+<p>Bottom of Form</p>
+</main>
+</body>
+</html>

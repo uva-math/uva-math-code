@@ -12,7 +12,7 @@ tooltips: true
 <p> Now that you've taken  <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1320_2310.html">the diagnostic</a> to decide between Math 1310 and Math 1320,  </p>
 
  <ul>
-    <li> Grade diagnostic problems as either right or wrong <a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.pdf">using these solutions</a>. If you arrived at an incorrect solution owing only to a careless arithmetic error, then count the solution as correct. </li>
+    <li> Grade diagnostic problems as either right or wrong <a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.pdf">using these solutions</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.html">HTML</a>). If you arrived at an incorrect solution owing only to a careless arithmetic error, then count the solution as correct. </li>
     <li> <strong>If fewer than seven problems answered correctly</strong>, and you have credit for Math 1310 OR did well on the 1310/1320 diagnostic,  you should enroll in Math 1320.  </li>
       <li> <strong>If seven or more problems are  answered correctly</strong>, you are confident in your foundation for <a href="https://math.virginia.edu/undergraduate/placement-files/1320.html">Math 1320 topics</a>, are willing to tackle  <a href="https://math.virginia.edu/undergraduate/placement-files/2310.html">Math 2310 topics</a> then you should enroll in Math 2310 and/or consider enrolling in Math 3250, Differential Equations.</li>
   	 <li> <strong>If seven or more problems are  answered correctly</strong>, but you think you would benefit from a stronger foundation in Math 1320, then by all means come an join us in Math 1320!</li>

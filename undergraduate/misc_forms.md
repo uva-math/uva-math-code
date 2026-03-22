@@ -12,8 +12,8 @@ nav_weight: 200
 See the [College of Arts and Sciences](http://college.as.virginia.edu/forms) forms website for the up to date forms.  
 <br>
 
-- [Submit new course form]({{ site.url }}/undergraduate/docs/Submit new course to CEPC.pdf)
+- [Submit new course form]({{ site.url }}/undergraduate/docs/Submit new course to CEPC.pdf) ([HTML]({{ site.url }}/undergraduate/docs/Submit new course to CEPC.html))
 
-- [Repeating a course]({{ site.url }}/undergraduate/docs/Repeating a course.pdf)
+- [Repeating a course]({{ site.url }}/undergraduate/docs/Repeating a course.pdf) ([HTML]({{ site.url }}/undergraduate/docs/Repeating a course.html))
 
-- [Defer Major]({{ site.url }}/undergraduate/docs/Defer Major.pdf)
+- [Defer Major]({{ site.url }}/undergraduate/docs/Defer Major.pdf) ([HTML]({{ site.url }}/undergraduate/docs/Defer Major.html))

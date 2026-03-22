@@ -29,7 +29,7 @@ To compute the MATH GPA, use the nine MATH courses that SIS shows were required 
 major.
 
 - Can students in the 5 year BA/MT program participate in their 4th-year graduation?
-Yes, complete the [Participation in Final Exercises by BA Form]({{site.url}}/undergraduate/docs/Participation in Final Exercises by BA.pdf).
+Yes, complete the [Participation in Final Exercises by BA Form]({{site.url}}/undergraduate/docs/Participation in Final Exercises by BA.pdf) ([HTML]({{site.url}}/undergraduate/docs/Participation in Final Exercises by BA.html)).
 
 - How to check on UVA courses?
 [`https://rabi.phys.virginia.edu/mySIS/CS2/index.php`](https://rabi.phys.virginia.edu/mySIS/CS2/index.php)
@@ -51,10 +51,10 @@ courses may be allowed if the other major is interdisciplinary." See also [Doubl
 - Course action form:
 [`https://www.virginia.edu/registrar/courseactionform.html`](https://www.virginia.edu/registrar/courseactionform.html)
 
-- [If I need precalculus...]({{ site.url }}/undergraduate/docs/If I need precalculus....pdf)
+- [If I need precalculus...]({{ site.url }}/undergraduate/docs/If I need precalculus....pdf) ([HTML]({{ site.url }}/undergraduate/docs/If I need precalculus....html))
 
-- [If I took the wrong calculus course....]({{ site.url }}/undergraduate/docs/If I took the wrong calculus course....pdf)
+- [If I took the wrong calculus course....]({{ site.url }}/undergraduate/docs/If I took the wrong calculus course....pdf) ([HTML]({{ site.url }}/undergraduate/docs/If I took the wrong calculus course....html))
 
-- [Undergraduates taking graduate courses]({{site.url}}/undergraduate/docs/Undergraduates Taking Graduate Courses.pdf)
+- [Undergraduates taking graduate courses]({{site.url}}/undergraduate/docs/Undergraduates Taking Graduate Courses.pdf) ([HTML]({{site.url}}/undergraduate/docs/Undergraduates Taking Graduate Courses.html))
 
-- [Reasons one might not get into PBK]({{site.url}}/undergraduate/docs/Reasons one did not get into PBK.pdf)
+- [Reasons one might not get into PBK]({{site.url}}/undergraduate/docs/Reasons one did not get into PBK.pdf) ([HTML]({{site.url}}/undergraduate/docs/Reasons one did not get into PBK.html))

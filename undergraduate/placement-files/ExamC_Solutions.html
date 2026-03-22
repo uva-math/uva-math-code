@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Placement Exam C Solutions — UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a5dab;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #6b3fa0;
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<main>
+<h1>Placement Exam C Solutions</h1>
+<ol>
+<li><p>Evaluate
+<math role="math" aria-label="\int \frac{1}{\sqrt{x^{2}+2}} \mathrm{~d} x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&int;</mo><mfrac><mn>1</mn><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></msqrt></mfrac><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">d</mi></mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">\int \frac{1}{\sqrt{x^{2}+2}} \mathrm{~d} x</annotation></semantics></math>.</p>
+<p><strong>Solution</strong>:
+<math role="math" aria-label="\begin{aligned}
+\int \frac{1}{\sqrt{x^{2}+2}} d x &amp; =\int \frac{\sqrt{2} \sec ^{2} \theta}{\sqrt{2+2 \tan ^{2} \theta}} d \theta \quad\left(x=\sqrt{2} \tan \theta,-\frac{\pi}{2}&lt;\theta&lt;\frac{\pi}{2} ; d x=\sqrt{2} \sec ^{2} \theta d \theta\right) \\
+&amp; =\int \sec \theta d \theta+C \\
+&amp; =\ln |\sec \theta+\tan \theta|+C \\
+&amp; =\ln \left|\frac{\sqrt{x^{2}+2}}{\sqrt{2}}+\frac{x}{\sqrt{2}}\right|+C \\
+&amp; =\ln \left|\sqrt{x^{2}+2}+x\right|+C_{1}
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mo>&int;</mo><mfrac><mn>1</mn><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></msqrt></mfrac><mi>d</mi><mi>x</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo>&int;</mo><mfrac><mrow><msqrt><mn>2</mn></msqrt><msup><mrow><mi mathvariant="normal">sec</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mi>&theta;</mi></mrow><msqrt><mrow><mn>2</mn><mo>+</mo><mn>2</mn><msup><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mi>&theta;</mi></mrow></msqrt></mfrac><mi>d</mi><mi>&theta;</mi><mspace width="1.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>=</mo><msqrt><mn>2</mn></msqrt><mi mathvariant="normal">tan</mi><mi>&theta;</mi><mo>,</mo><mi>−</mi><mfrac><mi>&pi;</mi><mn>2</mn></mfrac><mo>&lt;</mo><mi>&theta;</mi><mo>&lt;</mo><mfrac><mi>&pi;</mi><mn>2</mn></mfrac><mo>;</mo><mi>d</mi><mi>x</mi><mo>=</mo><msqrt><mn>2</mn></msqrt><msup><mrow><mi mathvariant="normal">sec</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mi>&theta;</mi><mi>d</mi><mi>&theta;</mi><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo>&int;</mo><mrow><mi mathvariant="normal">sec</mi><mo>&#8289;</mo></mrow><mi>&theta;</mi><mi>d</mi><mi>&theta;</mi><mo>+</mo><mi>C</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">|</mo><mrow><mi mathvariant="normal">sec</mi><mo>&#8289;</mo></mrow><mi>&theta;</mi><mo>+</mo><mrow><mi mathvariant="normal">tan</mi><mo>&#8289;</mo></mrow><mi>&theta;</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mi>C</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mfrac><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></msqrt><msqrt><mn>2</mn></msqrt></mfrac><mo>+</mo><mfrac><mi>x</mi><msqrt><mn>2</mn></msqrt></mfrac><mo stretchy="true" form="postfix">|</mo></mrow><mo>+</mo><mi>C</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">|</mo><msqrt><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow></msqrt><mo>+</mo><mi>x</mi><mo stretchy="true" form="postfix">|</mo></mrow><mo>+</mo><msub><mi>C</mi><mn>1</mn></msub></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\int \frac{1}{\sqrt{x^{2}+2}} d x &amp; =\int \frac{\sqrt{2} \sec ^{2} \theta}{\sqrt{2+2 \tan ^{2} \theta}} d \theta \quad\left(x=\sqrt{2} \tan \theta,-\frac{\pi}{2}&lt;\theta&lt;\frac{\pi}{2} ; d x=\sqrt{2} \sec ^{2} \theta d \theta\right) \\
+&amp; =\int \sec \theta d \theta+C \\
+&amp; =\ln |\sec \theta+\tan \theta|+C \\
+&amp; =\ln \left|\frac{\sqrt{x^{2}+2}}{\sqrt{2}}+\frac{x}{\sqrt{2}}\right|+C \\
+&amp; =\ln \left|\sqrt{x^{2}+2}+x\right|+C_{1}
+\end{aligned}</annotation></semantics></math></p></li>
+<li><p>Evaluate
+<math role="math" aria-label="\int \frac{16}{x^{3}-4 x} \mathrm{~d} x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&int;</mo><mfrac><mn>16</mn><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>4</mn><mi>x</mi></mrow></mfrac><mrow><mspace width="0.222em"></mspace><mi mathvariant="normal">d</mi></mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">\int \frac{16}{x^{3}-4 x} \mathrm{~d} x</annotation></semantics></math>.</p>
+<p><strong>Solution</strong>:
+<math role="math" aria-label="\begin{aligned}
+\int \frac{16}{x^{3}-4 x} d x &amp; =\int\left(\frac{-4}{x}+\frac{2}{x+2}+\frac{2}{x-2}\right) d x \\
+&amp; =-4 \ln |x|+2 \ln |x+2|+2 \ln |x-2|+C
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mo>&int;</mo><mfrac><mn>16</mn><mrow><msup><mi>x</mi><mn>3</mn></msup><mo>−</mo><mn>4</mn><mi>x</mi></mrow></mfrac><mi>d</mi><mi>x</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo>&int;</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mi>−</mi><mn>4</mn></mrow><mi>x</mi></mfrac><mo>+</mo><mfrac><mn>2</mn><mrow><mi>x</mi><mo>+</mo><mn>2</mn></mrow></mfrac><mo>+</mo><mfrac><mn>2</mn><mrow><mi>x</mi><mo>−</mo><mn>2</mn></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>x</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mi>−</mi><mn>4</mn><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mn>2</mn><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo>+</mo><mn>2</mn><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mn>2</mn><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo>−</mo><mn>2</mn><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mi>C</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\int \frac{16}{x^{3}-4 x} d x &amp; =\int\left(\frac{-4}{x}+\frac{2}{x+2}+\frac{2}{x-2}\right) d x \\
+&amp; =-4 \ln |x|+2 \ln |x+2|+2 \ln |x-2|+C
+\end{aligned}</annotation></semantics></math></p></li>
+<li><p>The region under the graph of
+<math role="math" aria-label="y=\sin x, 0 \leq x \leq \pi" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>x</mi><mo>,</mo><mn>0</mn><mo>&le;</mo><mi>x</mi><mo>&le;</mo><mi>&pi;</mi></mrow><annotation encoding="application/x-tex">y=\sin x, 0 \leq x \leq \pi</annotation></semantics></math>,
+is rotated 360 degrees about the
+<math role="math" aria-label="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>-axis
+forming a solid of revolution
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.
+Find the volume of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>.</p>
+<p><strong>Solution</strong>: Via the method of cylindrical shells, we
+obtain the following integral yielding the volume of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>:
+<math role="math" aria-label="2 \pi \int_{0}^{\pi} x \sin (x) d x" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>&pi;</mi><msubsup><mo>&int;</mo><mn>0</mn><mi>&pi;</mi></msubsup><mi>x</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">2 \pi \int_{0}^{\pi} x \sin (x) d x</annotation></semantics></math>
+Integrating by parts with
+<math role="math" aria-label="u=x, d v=\sin x d x, d u=d x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mo>=</mo><mi>x</mi><mo>,</mo><mi>d</mi><mi>v</mi><mo>=</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>x</mi><mi>d</mi><mi>x</mi><mo>,</mo><mi>d</mi><mi>u</mi><mo>=</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">u=x, d v=\sin x d x, d u=d x</annotation></semantics></math>,
+and
+<math role="math" aria-label="v=-\cos x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>=</mo><mi>−</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">v=-\cos x</annotation></semantics></math>,
+we obtain
+<math role="math" aria-label="\int x \sin x d x=-x \cos x+\int \cos x d x=-x \cos x+\sin x+C" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&int;</mo><mi>x</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>x</mi><mi>d</mi><mi>x</mi><mo>=</mo><mi>−</mi><mi>x</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>x</mi><mo>+</mo><mo>&int;</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>x</mi><mi>d</mi><mi>x</mi><mo>=</mo><mi>−</mi><mi>x</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>x</mi><mo>+</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>x</mi><mo>+</mo><mi>C</mi></mrow><annotation encoding="application/x-tex">\int x \sin x d x=-x \cos x+\int \cos x d x=-x \cos x+\sin x+C</annotation></semantics></math>
+Thus, the volume of
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+is
+<math role="math" aria-label="2 \pi \int_{0}^{\pi} x \sin (x) d x=2 \pi[-x \cos x+\sin x]_{0}^{\pi}=2 \pi^{2}." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>&pi;</mi><msubsup><mo>&int;</mo><mn>0</mn><mi>&pi;</mi></msubsup><mi>x</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi><mo>=</mo><mn>2</mn><mi>&pi;</mi><mo stretchy="false" form="prefix">[</mo><mi>−</mi><mi>x</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>x</mi><mo>+</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>x</mi><msubsup><mo stretchy="false" form="postfix">]</mo><mn>0</mn><mi>&pi;</mi></msubsup><mo>=</mo><mn>2</mn><msup><mi>&pi;</mi><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">2 \pi \int_{0}^{\pi} x \sin (x) d x=2 \pi[-x \cos x+\sin x]_{0}^{\pi}=2 \pi^{2}.</annotation></semantics></math></p></li>
+<li><p>Solve the differential equation, obtaining an explicit solution:
+<math role="math" aria-label="\frac{d y}{d x}=y^{2} x^{2}+y^{2} ." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><msup><mi>y</mi><mn>2</mn></msup><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{d y}{d x}=y^{2} x^{2}+y^{2} .</annotation></semantics></math></p>
+<p><strong>Solution</strong>: Separating variables and integrating, we
+obtain
+<math role="math" aria-label="\int \frac{1}{y^{2}} d y=\int\left(1+x^{2}\right) d x," display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&int;</mo><mfrac><mn>1</mn><msup><mi>y</mi><mn>2</mn></msup></mfrac><mi>d</mi><mi>y</mi><mo>=</mo><mo>&int;</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>x</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">\int \frac{1}{y^{2}} d y=\int\left(1+x^{2}\right) d x,</annotation></semantics></math>
+which yields an implicit general solution
+<math role="math" aria-label="-\frac{1}{y}=x+\frac{x^{3}}{3}+C." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mfrac><mn>1</mn><mi>y</mi></mfrac><mo>=</mo><mi>x</mi><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>+</mo><mi>C</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">-\frac{1}{y}=x+\frac{x^{3}}{3}+C.</annotation></semantics></math>
+Solving for
+<math role="math" aria-label="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>y</mi><annotation encoding="application/x-tex">y</annotation></semantics></math>,
+we obtain an explicit general solution
+<math role="math" aria-label="y=-\frac{1}{x+\frac{x^{3}}{3}+C}." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>−</mi><mfrac><mn>1</mn><mrow><mi>x</mi><mo>+</mo><mfrac><msup><mi>x</mi><mn>3</mn></msup><mn>3</mn></mfrac><mo>+</mo><mi>C</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">y=-\frac{1}{x+\frac{x^{3}}{3}+C}.</annotation></semantics></math></p></li>
+<li><p>Show that the series
+<math role="math" aria-label="\sum_{n=2}^{\infty} \frac{1}{n(\ln n)^{2}}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mo accent="false">&infin;</mo></munderover><mfrac><mn>1</mn><mrow><mi>n</mi><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>n</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\sum_{n=2}^{\infty} \frac{1}{n(\ln n)^{2}}</annotation></semantics></math>
+converges.</p>
+<p><strong>Solution</strong>: The series may be written
+<math role="math" aria-label="\sum_{n=2}^{\infty} f(n)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi>&infin;</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\sum_{n=2}^{\infty} f(n)</annotation></semantics></math>,
+where
+<math role="math" aria-label="f(x)=\frac{1}{x(\ln x)^{2}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mi>x</mi><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>x</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(x)=\frac{1}{x(\ln x)^{2}}</annotation></semantics></math>.
+Note
+<math role="math" aria-label="\begin{aligned}
+\int_{2}^{\infty} f(x) d x &amp; =\lim _{t \rightarrow \infty} \int_{2}^{t}(\ln x)^{-2} \frac{1}{x} d x \\
+&amp; =\lim _{t \rightarrow \infty}\left[\frac{-1}{\ln x}\right]_{2}^{t} \\
+&amp; =\lim _{t \rightarrow \infty}\left(\frac{-1}{\ln t}+\frac{1}{\ln 2}\right) \\
+&amp; =\frac{1}{\ln 2}
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msubsup><mo>&int;</mo><mn>2</mn><mi>&infin;</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><munder><mi mathvariant="normal">lim</mi><mrow><mi>t</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mo>&int;</mo><mn>2</mn><mi>t</mi></msubsup><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>x</mi><msup><mo stretchy="false" form="postfix">)</mo><mrow><mi>−</mi><mn>2</mn></mrow></msup><mfrac><mn>1</mn><mi>x</mi></mfrac><mi>d</mi><mi>x</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><munder><mi mathvariant="normal">lim</mi><mrow><mi>t</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><msubsup><mrow><mo stretchy="true" form="prefix">[</mo><mfrac><mrow><mi>−</mi><mn>1</mn></mrow><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>x</mi></mrow></mfrac><mo stretchy="true" form="postfix">]</mo></mrow><mn>2</mn><mi>t</mi></msubsup></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><munder><mi mathvariant="normal">lim</mi><mrow><mi>t</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mi>−</mi><mn>1</mn></mrow><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>t</mi></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mn>2</mn></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mn>1</mn><mrow><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mn>2</mn></mrow></mfrac></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\int_{2}^{\infty} f(x) d x &amp; =\lim _{t \rightarrow \infty} \int_{2}^{t}(\ln x)^{-2} \frac{1}{x} d x \\
+&amp; =\lim _{t \rightarrow \infty}\left[\frac{-1}{\ln x}\right]_{2}^{t} \\
+&amp; =\lim _{t \rightarrow \infty}\left(\frac{-1}{\ln t}+\frac{1}{\ln 2}\right) \\
+&amp; =\frac{1}{\ln 2}
+\end{aligned}</annotation></semantics></math> Since
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is continuous, positive, and decreasing on
+<math role="math" aria-label="[2, \infty)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mn>2</mn><mo>,</mo><mi>&infin;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[2, \infty)</annotation></semantics></math>,
+and, by the preceding computation, the improper integral
+<math role="math" aria-label="\int_{2}^{\infty} f(x) d x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>2</mn><mi>&infin;</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{2}^{\infty} f(x) d x</annotation></semantics></math>
+converges, we conclude the infinite series
+<math role="math" aria-label="\sum_{n=2}^{\infty} \frac{1}{n(\ln n)^{2}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>2</mn></mrow><mi>&infin;</mi></msubsup><mfrac><mn>1</mn><mrow><mi>n</mi><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>n</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\sum_{n=2}^{\infty} \frac{1}{n(\ln n)^{2}}</annotation></semantics></math>
+converges by the Integral Test.</p>
+<div class="remark">
+<p><em>Remark 1</em>. When grading this problem, consider your solution
+“correct” provided you found the value of the improper integral
+<math role="math" aria-label="\int_{2}^{\infty} f(x) d x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&int;</mo><mn>2</mn><mi>&infin;</mi></msubsup><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mi>d</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">\int_{2}^{\infty} f(x) d x</annotation></semantics></math>
+to be
+<math role="math" aria-label="1/(\ln 2)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mn>2</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">1/(\ln 2)</annotation></semantics></math>
+and concluded that the series converges by the Integral Test.</p>
+</div></li>
+<li><p>Find the Maclaurin Series for
+<math role="math" aria-label="f(x)=\frac{x}{3+x^{2}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mfrac><mi>x</mi><mrow><mn>3</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">f(x)=\frac{x}{3+x^{2}}</annotation></semantics></math>.
+What is the radius of convergence?</p>
+<p><strong>Solution</strong>:
+<math role="math" aria-label="\begin{aligned}
+f(x) &amp; =\frac{x}{3+x^{2}} \\
+&amp; =\frac{x}{3} \frac{1}{1+\frac{x^{2}}{3}} \\
+&amp; =\frac{x}{3} \sum_{n=0}^{\infty}(-1)^{n}\left(\frac{x^{2}}{3}\right)^{n} \quad\left(\text { for } x \text { satisfying }\left|\frac{x^{2}}{3}\right|&lt;1\right) \\
+&amp; =\sum_{n=0}^{\infty} \frac{(-1)^{n}}{3^{n+1}} x^{2 n+1}
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>f</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mi>x</mi><mrow><mn>3</mn><mo>+</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mi>x</mi><mn>3</mn></mfrac><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>3</mn></mfrac></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mfrac><mi>x</mi><mn>3</mn></mfrac><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">&infin;</mo></munderover><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup><msup><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>3</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>n</mi></msup><mspace width="1.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for </mtext><mspace width="0.333em"></mspace></mrow><mi>x</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> satisfying </mtext><mspace width="0.333em"></mspace></mrow><mrow><mo stretchy="true" form="prefix">|</mo><mfrac><msup><mi>x</mi><mn>2</mn></msup><mn>3</mn></mfrac><mo stretchy="true" form="postfix">|</mo></mrow><mo>&lt;</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mo accent="false">&infin;</mo></munderover><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mrow><msup><mn>3</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><msup><mi>x</mi><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+f(x) &amp; =\frac{x}{3+x^{2}} \\
+&amp; =\frac{x}{3} \frac{1}{1+\frac{x^{2}}{3}} \\
+&amp; =\frac{x}{3} \sum_{n=0}^{\infty}(-1)^{n}\left(\frac{x^{2}}{3}\right)^{n} \quad\left(\text { for } x \text { satisfying }\left|\frac{x^{2}}{3}\right|&lt;1\right) \\
+&amp; =\sum_{n=0}^{\infty} \frac{(-1)^{n}}{3^{n+1}} x^{2 n+1}
+\end{aligned}</annotation></semantics></math> Thus, the Maclaurin series
+of
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+is
+<math role="math" aria-label="\sum_{n=0}^{\infty} \frac{(-1)^{n}}{3^{n+1}} x^{2 n+1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>0</mn></mrow><mi>&infin;</mi></msubsup><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mrow><msup><mn>3</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mfrac><msup><mi>x</mi><mrow><mn>2</mn><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\sum_{n=0}^{\infty} \frac{(-1)^{n}}{3^{n+1}} x^{2 n+1}</annotation></semantics></math>
+and, since it converges for precisely those
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+satisfying
+<math role="math" aria-label="|x|&lt;\sqrt{3}," display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><msqrt><mn>3</mn></msqrt><mo>,</mo></mrow><annotation encoding="application/x-tex">|x|&lt;\sqrt{3},</annotation></semantics></math>
+its radius of convergence is
+<math role="math" aria-label="\sqrt{3}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msqrt><mn>3</mn></msqrt><annotation encoding="application/x-tex">\sqrt{3}</annotation></semantics></math>.</p></li>
+<li><p>Determine the radius and interval of convergence of the power
+series
+<math role="math" aria-label="\sum_{n=1}^{\infty} \frac{1}{n 2^{n}}(x-1)^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mi>&infin;</mi></msubsup><mfrac><mn>1</mn><mrow><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty} \frac{1}{n 2^{n}}(x-1)^{n}</annotation></semantics></math>.</p>
+<p><strong>Solution</strong>: We employ the Ratio Test.
+<math role="math" aria-label="\begin{aligned}
+\lim _{n \rightarrow \infty}\left|\frac{\frac{1}{(n+1) 2^{n+1}}(x-1)^{n+1}}{\frac{1}{n 2^{n}}(x-1)^{n}}\right| &amp; =|x-1| \lim _{n \rightarrow \infty} \frac{n}{2(n+1)} \\
+&amp; =|x-1| \cdot \frac{1}{2}
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><mrow><mo stretchy="true" form="prefix">|</mo><mfrac><mrow><mfrac><mn>1</mn><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo><msup><mn>2</mn><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow></msup></mrow><mrow><mfrac><mn>1</mn><mrow><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mrow></mfrac><mo stretchy="true" form="postfix">|</mo></mrow></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="prefix">|</mo><munder><mi mathvariant="normal">lim</mi><mrow><mi>n</mi><mo>&rarr;</mo><mi>&infin;</mi></mrow></munder><mfrac><mi>n</mi><mrow><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>+</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="prefix">|</mo><mi>&sdot;</mi><mfrac><mn>1</mn><mn>2</mn></mfrac></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\lim _{n \rightarrow \infty}\left|\frac{\frac{1}{(n+1) 2^{n+1}}(x-1)^{n+1}}{\frac{1}{n 2^{n}}(x-1)^{n}}\right| &amp; =|x-1| \lim _{n \rightarrow \infty} \frac{n}{2(n+1)} \\
+&amp; =|x-1| \cdot \frac{1}{2}
+\end{aligned}</annotation></semantics></math> Thus, the series converges
+(absolutely) for those
+<math role="math" aria-label="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>x</mi><annotation encoding="application/x-tex">x</annotation></semantics></math>
+satisfying
+<math role="math" aria-label="\frac{1}{2}|x-1|&lt;1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="prefix">|</mo><mo>&lt;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">\frac{1}{2}|x-1|&lt;1</annotation></semantics></math>,
+that is, for
+<math role="math" aria-label="-1&lt;x&lt;3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn><mo>&lt;</mo><mi>x</mi><mo>&lt;</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">-1&lt;x&lt;3</annotation></semantics></math>.
+It diverges for
+<math role="math" aria-label="|x-1|&gt;2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="prefix">|</mo><mo>&gt;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">|x-1|&gt;2</annotation></semantics></math>.
+Thus, the radius of convergence of the power series is
+<math role="math" aria-label="2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+and its interval of convergence has endpoints
+<math role="math" aria-label="-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">-1</annotation></semantics></math>
+and
+<math role="math" aria-label="3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>.
+At the left endpoint
+<math role="math" aria-label="x=-1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">x=-1</annotation></semantics></math>,
+we obtain
+<math role="math" aria-label="\sum_{n=1}^{\infty} \frac{1}{n 2^{n}}(-2)^{n}=\sum_{n=1}^{\infty} \frac{(-1)^{n}}{n}," display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><mfrac><mn>1</mn><mrow><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>2</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>1</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mrow><mi>n</mi></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty} \frac{1}{n 2^{n}}(-2)^{n}=\sum_{n=1}^{\infty} \frac{(-1)^{n}}{n},</annotation></semantics></math>
+which converges by the Alternating-Series Test (because the sequence
+<math role="math" aria-label="(1/n)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mi>/</mi><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1/n)</annotation></semantics></math>
+decreases to
+<math role="math" aria-label="0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math>).
+At the right endpoint
+<math role="math" aria-label="x=3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">x=3</annotation></semantics></math>,
+we obtain
+<math role="math" aria-label="\sum_{n=1}^{\infty} \frac{1}{n 2^{n}}(2)^{n}=\sum_{n=1}^{\infty} \frac{1}{n}," display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><mfrac><mn>1</mn><mrow><mi>n</mi><msup><mn>2</mn><mi>n</mi></msup></mrow></mfrac><mo stretchy="false" form="prefix">(</mo><mn>2</mn><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup><mo>=</mo><munderover><mo>&sum;</mo><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><mo accent="false">&infin;</mo></munderover><mfrac><mn>1</mn><mi>n</mi></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">\sum_{n=1}^{\infty} \frac{1}{n 2^{n}}(2)^{n}=\sum_{n=1}^{\infty} \frac{1}{n},</annotation></semantics></math>
+which is the divergent harmonic series. Hence, the interval of
+convergence of the given power series is
+<math role="math" aria-label="[-1,3)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>−</mi><mn>1</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">[-1,3)</annotation></semantics></math>.</p></li>
+<li><p>Suppose that
+<math role="math" aria-label="(x, y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(x, y)</annotation></semantics></math>
+has distance
+<math role="math" aria-label="r \geq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&ge;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">r \geq 1</annotation></semantics></math>
+from the origin. Use polar coordinates to show that
+<math role="math" aria-label="(|x|+|y|) \ln \left(x^{2}+y^{2}\right) \leq 4 r \ln (r)." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><mi>y</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="postfix">)</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>&le;</mo><mn>4</mn><mi>r</mi><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo><mi>.</mi></mrow><annotation encoding="application/x-tex">(|x|+|y|) \ln \left(x^{2}+y^{2}\right) \leq 4 r \ln (r).</annotation></semantics></math></p>
+<p><strong>Solution</strong>: Suppose that
+<math role="math" aria-label="(x, y)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(x, y)</annotation></semantics></math>
+has distance
+<math role="math" aria-label="r \geq 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>&ge;</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">r \geq 1</annotation></semantics></math>
+from the origin. Choose
+<math role="math" aria-label="\theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&theta;</mi><annotation encoding="application/x-tex">\theta</annotation></semantics></math>
+such that
+<math role="math" aria-label="x=r \cos \theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mi>r</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>&theta;</mi></mrow><annotation encoding="application/x-tex">x=r \cos \theta</annotation></semantics></math>
+and
+<math role="math" aria-label="y=r \sin \theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><mi>r</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>&theta;</mi></mrow><annotation encoding="application/x-tex">y=r \sin \theta</annotation></semantics></math>;
+then, we have
+<math role="math" aria-label="\begin{aligned}
+(|x|+|y|) \ln \left(x^{2}+y^{2}\right) &amp; =(|r \cos \theta|+|r \sin \theta|) \ln \left(r^{2}\left(\cos ^{2}(\theta)+\sin ^{2}(\theta)\right)\right) \\
+&amp; =(|r||\cos \theta|+|r||\sin \theta|) \ln \left(r^{2}\right) \\
+&amp; \leq(|r|+|r|) \ln \left(r^{2}\right) \quad\left(\ln \left(r^{2}\right) \geq 0 \text { because } r^{2} \geq 1\right) \\
+&amp; =4|r| \ln (r) \quad \text { (laws of logarithms). }
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>x</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><mi>y</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="postfix">)</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>&theta;</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>&theta;</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="postfix">)</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>r</mi><mn>2</mn></msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&theta;</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><msup><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mn>2</mn></msup><mo stretchy="false" form="prefix">(</mo><mi>&theta;</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="prefix">|</mo><mrow><mi mathvariant="normal">cos</mi><mo>&#8289;</mo></mrow><mi>&theta;</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="prefix">|</mo><mrow><mi mathvariant="normal">sin</mi><mo>&#8289;</mo></mrow><mi>&theta;</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="postfix">)</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>r</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>&le;</mo><mo stretchy="false" form="prefix">(</mo><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo><mi>+</mi><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo><mo stretchy="false" form="postfix">)</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>r</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mspace width="1.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi mathvariant="normal">ln</mi><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>r</mi><mn>2</mn></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>&ge;</mo><mn>0</mn><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> because </mtext><mspace width="0.333em"></mspace></mrow><msup><mi>r</mi><mn>2</mn></msup><mo>&ge;</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><mn>4</mn><mo stretchy="false" form="prefix">|</mo><mi>r</mi><mo stretchy="false" form="prefix">|</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><mi>r</mi><mo stretchy="false" form="postfix">)</mo><mspace width="1.0em"></mspace><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> (laws of logarithms). </mtext><mspace width="0.333em"></mspace></mrow></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+(|x|+|y|) \ln \left(x^{2}+y^{2}\right) &amp; =(|r \cos \theta|+|r \sin \theta|) \ln \left(r^{2}\left(\cos ^{2}(\theta)+\sin ^{2}(\theta)\right)\right) \\
+&amp; =(|r||\cos \theta|+|r||\sin \theta|) \ln \left(r^{2}\right) \\
+&amp; \leq(|r|+|r|) \ln \left(r^{2}\right) \quad\left(\ln \left(r^{2}\right) \geq 0 \text { because } r^{2} \geq 1\right) \\
+&amp; =4|r| \ln (r) \quad \text { (laws of logarithms). }
+\end{aligned}</annotation></semantics></math></p></li>
+<li><p>Find an equation of the line tangent to the curve
+<math role="math" aria-label="x=1+\ln t, y=t^{2}+2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>1</mn><mo>+</mo><mrow><mi mathvariant="normal">ln</mi><mo>&#8289;</mo></mrow><mi>t</mi><mo>,</mo><mi>y</mi><mo>=</mo><msup><mi>t</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x=1+\ln t, y=t^{2}+2</annotation></semantics></math>
+at the point
+<math role="math" aria-label="(1,3)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1,3)</annotation></semantics></math>.</p>
+<p><strong>Solution</strong>: The slope of the tangent line is given by
+<math role="math" aria-label="\frac{y^{\prime}(1)}{x^{\prime}(1)}=\frac{2}{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><msup><mi>y</mi><mi>&prime;</mi></msup><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><mrow><msup><mi>x</mi><mi>&prime;</mi></msup><mo stretchy="false" form="prefix">(</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></mfrac><mo>=</mo><mfrac><mn>2</mn><mn>1</mn></mfrac></mrow><annotation encoding="application/x-tex">\frac{y^{\prime}(1)}{x^{\prime}(1)}=\frac{2}{1}</annotation></semantics></math>,
+and thus, an equation of the tangent line is
+<math role="math" aria-label="y-3=2(x-1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>−</mo><mn>3</mn><mo>=</mo><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">y-3=2(x-1)</annotation></semantics></math>.
+Alternatively, one might observe that
+<math role="math" aria-label="t=e^{x-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>t</mi><mo>=</mo><msup><mi>e</mi><mrow><mi>x</mi><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">t=e^{x-1}</annotation></semantics></math>,
+so that
+<math role="math" aria-label="y=e^{2 x-2}+2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>y</mi><mo>=</mo><msup><mi>e</mi><mrow><mn>2</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow></msup><mo>+</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">y=e^{2 x-2}+2</annotation></semantics></math>.
+Thus,
+<math role="math" aria-label="\frac{d y}{d x}=2 e^{2 x-2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo>=</mo><mn>2</mn><msup><mi>e</mi><mrow><mn>2</mn><mi>x</mi><mo>−</mo><mn>2</mn></mrow></msup></mrow><annotation encoding="application/x-tex">\frac{d y}{d x}=2 e^{2 x-2}</annotation></semantics></math>,
+yielding the tangent-line slope
+<math role="math" aria-label="\left.\frac{d y}{d x}\right|_{x=1}=2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mfrac><mrow><mi>d</mi><mi>y</mi></mrow><mrow><mi>d</mi><mi>x</mi></mrow></mfrac><mo stretchy="true" form="postfix">|</mo></mrow><mrow><mi>x</mi><mo>=</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">\left.\frac{d y}{d x}\right|_{x=1}=2</annotation></semantics></math>.</p></li>
+<li><p>Find the length of the curve
+<math role="math" aria-label="x=e^{t}-t, y=4 e^{t/2}, 0 \leq t \leq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><msup><mi>e</mi><mi>t</mi></msup><mo>−</mo><mi>t</mi><mo>,</mo><mi>y</mi><mo>=</mo><mn>4</mn><msup><mi>e</mi><mrow><mi>t</mi><mi>/</mi><mn>2</mn></mrow></msup><mo>,</mo><mn>0</mn><mo>&le;</mo><mi>t</mi><mo>&le;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x=e^{t}-t, y=4 e^{t/2}, 0 \leq t \leq 2</annotation></semantics></math>.</p>
+<p><strong>Solution</strong>: The length of the curve is given by
+<math role="math" aria-label="\begin{aligned}
+\int_{0}^{2} \sqrt{x^{\prime}(t)^{2}+y^{\prime}(t)^{2}} d t &amp; =\int_{0}^{2} \sqrt{\left(e^{t}-1\right)^{2}+\left(2 e^{t / 2}\right)^{2}} d t \\
+&amp; =\int_{0}^{2} \sqrt{e^{2 t}-2 e^{t}+1+4 e^{t}} d t \\
+&amp; =\int_{0}^{2} \sqrt{\left(e^{t}+1\right)^{2}} d t \\
+&amp; =\int_{0}^{2}\left(e^{t}+1\right) d t \\
+&amp; =\left[e^{t}+t\right]_{0}^{2} \\
+&amp; =e^{2}+2-1 \\
+&amp; =e^{2}+1.
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msubsup><mo>&int;</mo><mn>0</mn><mn>2</mn></msubsup><msqrt><mrow><msup><mi>x</mi><mi>&prime;</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>t</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mi>&prime;</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>t</mi><msup><mo stretchy="false" form="postfix">)</mo><mn>2</mn></msup></mrow></msqrt><mi>d</mi><mi>t</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>2</mn></msubsup><msqrt><mrow><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mi>t</mi></msup><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo stretchy="true" form="prefix">(</mo><mn>2</mn><msup><mi>e</mi><mrow><mi>t</mi><mi>/</mi><mn>2</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></mrow></msqrt><mi>d</mi><mi>t</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>2</mn></msubsup><msqrt><mrow><msup><mi>e</mi><mrow><mn>2</mn><mi>t</mi></mrow></msup><mo>−</mo><mn>2</mn><msup><mi>e</mi><mi>t</mi></msup><mo>+</mo><mn>1</mn><mo>+</mo><mn>4</mn><msup><mi>e</mi><mi>t</mi></msup></mrow></msqrt><mi>d</mi><mi>t</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>2</mn></msubsup><msqrt><msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mi>t</mi></msup><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mn>2</mn></msup></msqrt><mi>d</mi><mi>t</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msubsup><mo>&int;</mo><mn>0</mn><mn>2</mn></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>e</mi><mi>t</mi></msup><mo>+</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mi>d</mi><mi>t</mi></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msubsup><mrow><mo stretchy="true" form="prefix">[</mo><msup><mi>e</mi><mi>t</mi></msup><mo>+</mo><mi>t</mi><mo stretchy="true" form="postfix">]</mo></mrow><mn>0</mn><mn>2</mn></msubsup></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msup><mi>e</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mo>−</mo><mn>1</mn></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>=</mo><msup><mi>e</mi><mn>2</mn></msup><mo>+</mo><mn>1</mn><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+\int_{0}^{2} \sqrt{x^{\prime}(t)^{2}+y^{\prime}(t)^{2}} d t &amp; =\int_{0}^{2} \sqrt{\left(e^{t}-1\right)^{2}+\left(2 e^{t / 2}\right)^{2}} d t \\
+&amp; =\int_{0}^{2} \sqrt{e^{2 t}-2 e^{t}+1+4 e^{t}} d t \\
+&amp; =\int_{0}^{2} \sqrt{\left(e^{t}+1\right)^{2}} d t \\
+&amp; =\int_{0}^{2}\left(e^{t}+1\right) d t \\
+&amp; =\left[e^{t}+t\right]_{0}^{2} \\
+&amp; =e^{2}+2-1 \\
+&amp; =e^{2}+1.
+\end{aligned}</annotation></semantics></math></p></li>
+</ol>
+</main>
+</body>
+</html>

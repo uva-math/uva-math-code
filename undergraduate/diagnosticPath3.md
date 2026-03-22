@@ -36,7 +36,7 @@ tooltips: true
     <li> <em> Are you trying to decide betwen Math 1310 and Math 1320?</em> You will need to do 3 things.</li>
     	<ul>
 			  <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1310_1320.html">self-paced Diagnostic.</a></li>
-			  <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamB_Solutions.pdf">this solution guide.</a></li>
+			  <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamB_Solutions.pdf">this solution guide</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamB_Solutions.html">HTML</a>).</li>
 			  <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath3_1310_20Advice">this advice</a> to decide which course to take.</li>
     	</ul>
      <li> <em> Are you trying to decide betwen Math 1320 and Math 2310?</em> You will need to do 5 things.</li>
@@ -44,7 +44,7 @@ tooltips: true
 			  <li>Take the 1310/1320 self-paced diagnostic (see first bullet in #2).</li>
 			  <li>Check your answers to the 1310/1320 self-paced diagnostic (see second bullet in #2).</li>
 			  <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1320_2310.html">self-paced Diagnostic.</a></li>
-			  <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.pdf">this solution guide.</a></li>
+			  <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.pdf">this solution guide</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.html">HTML</a>).</li>
 			  <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath3_1320_2310Advice">this advice</a> to decide which course to take.</li>
     	</ul>
 </ol>
