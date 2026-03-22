@@ -24,4 +24,4 @@ out the following application.
 
 **Applications Due: January 13, 2026, 11:59pm EST. **
 
-Here is our set of Mentor Guidelines, where you can read the specifics about the role. [Mentor Guidelines]({{ site.url }}/drp/Mentor_Guidelines.pdf)
+Here is our set of Mentor Guidelines, where you can read the specifics about the role. [Mentor Guidelines]({{ site.url }}/drp/Mentor_Guidelines.pdf) ([HTML]({{ site.url }}/drp/Mentor_Guidelines.html))
