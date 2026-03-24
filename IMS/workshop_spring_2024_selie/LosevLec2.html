@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Quantum Category O, II</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a5dab;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #6b3fa0;
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Quantum Category
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">O</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math>,
+II</h1>
+</header>
+<main>
+<h2 id="affine-hecke-category">Affine Hecke Category</h2>
+<p>We have seen that the affine Weyl group controls certain aspects of
+<math role="math" aria-label="\mathcal{O}_\varepsilon^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">\mathcal{O}_\varepsilon^{\mathrm{mix}}</annotation></semantics></math>.
+In fact, much more is true: there are derived equivalences between
+<math role="math" aria-label="\mathcal{O}_\varepsilon^{\Theta}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><annotation encoding="application/x-tex">\mathcal{O}_\varepsilon^{\Theta}</annotation></semantics></math>’s
+&amp; certain “standard” categories associated to
+<math role="math" aria-label="W^a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mi>a</mi></msup><annotation encoding="application/x-tex">W^a</annotation></semantics></math>:
+(singular) blocks of the affine Hecke category.</p>
+<h3 id="definition">Definition</h3>
+<p>Let
+<math role="math" aria-label="W&#39;" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mo>&prime;</mo></msup><annotation encoding="application/x-tex">W&#39;</annotation></semantics></math>
+be a (possibly infinite) reflection group acting on its reflection
+representation
+<math role="math" aria-label="V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>V</mi><annotation encoding="application/x-tex">V</annotation></semantics></math>.</p>
+<div class="example">
+<p><strong>Example 1</strong>.
+<math role="math" aria-label="W&#39; = W^a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>W</mi><mo>&prime;</mo></msup><mo>=</mo><msup><mi>W</mi><mi>a</mi></msup></mrow><annotation encoding="application/x-tex">W&#39; = W^a</annotation></semantics></math>,
+<math role="math" aria-label="V = \mathfrak{h} \oplus \mathbb{C}\hbar" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi mathvariant="fraktur">h</mi><mo>&oplus;</mo><mi mathvariant="double-struck">&Copf;</mi><mi>&hbar;</mi></mrow><annotation encoding="application/x-tex">V = \mathfrak{h} \oplus \mathbb{C}\hbar</annotation></semantics></math>,
+<math role="math" aria-label="W^a \curvearrowright V" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>W</mi><mi>a</mi></msup><mo>↷</mo><mi>V</mi></mrow><annotation encoding="application/x-tex">W^a \curvearrowright V</annotation></semantics></math>:
+<math role="math" aria-label="\hbar" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&hbar;</mi><annotation encoding="application/x-tex">\hbar</annotation></semantics></math>
+is
+<math role="math" aria-label="W^a" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mi>a</mi></msup><annotation encoding="application/x-tex">W^a</annotation></semantics></math>-invariant,
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>
+acts on
+<math role="math" aria-label="\mathfrak{h}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="fraktur">h</mi><annotation encoding="application/x-tex">\mathfrak{h}</annotation></semantics></math>
+as usual, and for
+<math role="math" aria-label="\lambda \in \Lambda_0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>&isin;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\lambda \in \Lambda_0</annotation></semantics></math>,
+have
+<math role="math" aria-label="t_\lambda x = x + \langle \lambda, x \rangle \hbar" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mi>&lambda;</mi></msub><mi>x</mi><mo>=</mo><mi>x</mi><mo>+</mo><mo stretchy="false" form="prefix">⟨</mo><mi>&lambda;</mi><mo>,</mo><mi>x</mi><mo stretchy="false" form="postfix">⟩</mo><mi>&hbar;</mi></mrow><annotation encoding="application/x-tex">t_\lambda x = x + \langle \lambda, x \rangle \hbar</annotation></semantics></math>,
+<math role="math" aria-label="x \in \mathfrak{h}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>&isin;</mo><mi mathvariant="fraktur">h</mi></mrow><annotation encoding="application/x-tex">x \in \mathfrak{h}</annotation></semantics></math>.</p>
+</div>
+<p>Let
+<math role="math" aria-label="S \subset W&#39;" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi><mo>&sub;</mo><msup><mi>W</mi><mo>&prime;</mo></msup></mrow><annotation encoding="application/x-tex">S \subset W&#39;</annotation></semantics></math>
+be the subset of simple reflections in
+<math role="math" aria-label="W&#39;" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mo>&prime;</mo></msup><annotation encoding="application/x-tex">W&#39;</annotation></semantics></math>.
+Set
+<math role="math" aria-label="R = S(V)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mi>S</mi><mo stretchy="false" form="prefix">(</mo><mi>V</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">R = S(V)</annotation></semantics></math>,
+this is a graded algebra.</p>
+<div class="definition">
+<p><strong>Definition 1</strong>. Let
+<math role="math" aria-label="s \in S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&isin;</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">s \in S</annotation></semantics></math>.
+Define the Bott-Samelson
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-bimodule
+<math role="math" aria-label="B_s = R \otimes_{R^s} R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi>s</mi></msub><mo>=</mo><mi>R</mi><msub><mo>&otimes;</mo><msup><mi>R</mi><mi>s</mi></msup></msub><mi>R</mi></mrow><annotation encoding="application/x-tex">B_s = R \otimes_{R^s} R</annotation></semantics></math>
+(where
+<math role="math" aria-label="R^s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mi>s</mi></msup><annotation encoding="application/x-tex">R^s</annotation></semantics></math>
+is the subalgebra of
+<math role="math" aria-label="s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>s</mi><annotation encoding="application/x-tex">s</annotation></semantics></math>-invariants
+in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>).
+Note that
+<math role="math" aria-label="B_s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mi>s</mi></msub><annotation encoding="application/x-tex">B_s</annotation></semantics></math>
+is graded as a bimodule.</p>
+</div>
+<p>Consider the categories
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-grbimod
+&amp;
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-grmod
+of graded finitely generated
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-bimodules
+&amp; graded
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-modules.
+For
+<math role="math" aria-label="j \in \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>j</mi><mo>&isin;</mo><mi mathvariant="double-struck">&Zopf;</mi></mrow><annotation encoding="application/x-tex">j \in \mathbb{Z}</annotation></semantics></math>,
+let
+<math role="math" aria-label="\langle j \rangle" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>j</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle j \rangle</annotation></semantics></math>
+denote the endofunctor of grading shift:
+<math role="math" aria-label="B\langle j\rangle_i = B_{i+j} \quad (\text{for } B \in R\text{-gr(bi)mod})" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo stretchy="false" form="prefix">⟨</mo><mi>j</mi><msub><mo stretchy="false" form="postfix">⟩</mo><mi>i</mi></msub><mo>=</mo><msub><mi>B</mi><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msub><mspace width="1.0em"></mspace><mo stretchy="false" form="prefix">(</mo><mrow><mtext mathvariant="normal">for </mtext><mspace width="0.333em"></mspace></mrow><mi>B</mi><mo>&isin;</mo><mi>R</mi><mtext mathvariant="normal">-gr(bi)mod</mtext><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">B\langle j\rangle_i = B_{i+j} \quad (\text{for } B \in R\text{-gr(bi)mod})</annotation></semantics></math>
+We consider the following (additive) categories:</p>
+<ul>
+<li><p>SBim (the category of Soergel bimodules): the full subcategory in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-grbimod
+consisting of all graded bimodules obtained from
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+&amp;
+<math role="math" aria-label="B_{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mi>s</mi></msub><annotation encoding="application/x-tex">B_{s}</annotation></semantics></math>,
+<math role="math" aria-label="s \in S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&isin;</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">s \in S</annotation></semantics></math>,
+by
+<math role="math" aria-label="\otimes" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&otimes;</mi><annotation encoding="application/x-tex">\otimes</annotation></semantics></math>,
+<math role="math" aria-label="\oplus" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&oplus;</mi><annotation encoding="application/x-tex">\oplus</annotation></semantics></math>,
+<math role="math" aria-label="\langle j \rangle" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">⟨</mo><mi>j</mi><mo stretchy="false" form="postfix">⟩</mo></mrow><annotation encoding="application/x-tex">\langle j \rangle</annotation></semantics></math>,
+&amp; taking direct summands.</p></li>
+<li><p>SMod (the category of Soergel modules), the full subcategory
+<math role="math" aria-label="\{B / BV \in R\text{-grmod} \mid B \in \text{SBim}\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">{</mo><mi>B</mi><mi>/</mi><mi>B</mi><mi>V</mi><mo>&isin;</mo><mi>R</mi><mtext mathvariant="normal">-grmod</mtext><mo>∣</mo><mi>B</mi><mo>&isin;</mo><mtext mathvariant="normal">SBim</mtext><mo stretchy="false" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\{B / BV \in R\text{-grmod} \mid B \in \text{SBim}\}</annotation></semantics></math>.
+One can show it’s closed under taking direct summands.</p></li>
+<li><p><math role="math" aria-label="\underline{\text{SMod}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><munder><mtext mathvariant="normal">SMod</mtext><mo accent="true">_</mo></munder><annotation encoding="application/x-tex">\underline{\text{SMod}}</annotation></semantics></math>
+(the category of ungraded Soergel modules), a full subcategory in
+<math role="math" aria-label="R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>-mod
+whose objects are the same as in
+<math role="math" aria-label="\underline{\text{SMod}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><munder><mtext mathvariant="normal">SMod</mtext><mo accent="true">_</mo></munder><annotation encoding="application/x-tex">\underline{\text{SMod}}</annotation></semantics></math>
+(w. grading forgotten).</p></li>
+</ul>
+<p>The categories SBim, SMod &amp;
+<math role="math" aria-label="\underline{\text{SMod}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><munder><mtext mathvariant="normal">SMod</mtext><mo accent="true">_</mo></munder><annotation encoding="application/x-tex">\underline{\text{SMod}}</annotation></semantics></math>
+are "Krull-Schmidt": every object is isomorphic to a unique
+<math role="math" aria-label="\oplus" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&oplus;</mi><annotation encoding="application/x-tex">\oplus</annotation></semantics></math>
+of indecomposables. The Soergel categorification theorem describes the
+indecomposable objects in these categories, we will need a version for
+<math role="math" aria-label="\underline{\text{SMod}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><munder><mtext mathvariant="normal">SMod</mtext><mo accent="true">_</mo></munder><annotation encoding="application/x-tex">\underline{\text{SMod}}</annotation></semantics></math>.</p>
+<div class="proposition">
+<p><strong>Proposition 1</strong>. <em>The indecomposable objects in
+<math role="math" aria-label="\underline{\text{SMod}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><munder><mtext mathvariant="normal">SMod</mtext><mo accent="true">_</mo></munder><annotation encoding="application/x-tex">\underline{\text{SMod}}</annotation></semantics></math>
+are in bijection w.
+<math role="math" aria-label="W&#39;" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mo>&prime;</mo></msup><annotation encoding="application/x-tex">W&#39;</annotation></semantics></math></em></p>
+</div>
+<p>We are now in position to define the version of the affine Hecke
+category we need. Set
+<math role="math" aria-label="W&#39;=W^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>W</mi><mo>&prime;</mo></msup><mo>=</mo><msup><mi>W</mi><mi>a</mi></msup></mrow><annotation encoding="application/x-tex">W&#39;=W^{a}</annotation></semantics></math>
+&amp;
+<math role="math" aria-label="V=\mathfrak{h} \oplus \mathbb{C} \hbar" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mi mathvariant="fraktur">h</mi><mo>&oplus;</mo><mi mathvariant="double-struck">&Copf;</mi><mi>&hbar;</mi></mrow><annotation encoding="application/x-tex">V=\mathfrak{h} \oplus \mathbb{C} \hbar</annotation></semantics></math>,
+see Example.<br />
+<math role="math" aria-label="\mathcal{H} := K^{b}(\underline{\text{SMod}})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">ℋ</mi><mo>:=</mo><msup><mi>K</mi><mi>b</mi></msup><mo stretchy="false" form="prefix">(</mo><munder><mtext mathvariant="normal">SMod</mtext><mo accent="true">_</mo></munder><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{H} := K^{b}(\underline{\text{SMod}})</annotation></semantics></math>,
+where
+<math role="math" aria-label="K^{b}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>K</mi><mi>b</mi></msup><annotation encoding="application/x-tex">K^{b}</annotation></semantics></math>
+stands for the bounded homotopy category of complexes.</p>
+<h3 id="derived-equivalence-regular-blocks">Derived Equivalence, Regular
+Blocks</h3>
+<div class="theorem">
+<p><strong>Theorem 1</strong> (I.L. 23). <em>Suppose
+<math role="math" aria-label="\Theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Theta;</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>
+is a free
+<math role="math" aria-label="W^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mi>a</mi></msup><annotation encoding="application/x-tex">W^{a}</annotation></semantics></math>-orbit
+(no stabilizer). Then
+<math role="math" aria-label="D^{b}\left(\mathcal{O}_{\varepsilon}^{\Theta}\right) \xrightarrow{\sim} \mathcal{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>D</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mover><mo>&rarr;</mo><mo accent="false">&sim;</mo></mover><mi mathvariant="script">ℋ</mi></mrow><annotation encoding="application/x-tex">D^{b}\left(\mathcal{O}_{\varepsilon}^{\Theta}\right) \xrightarrow{\sim} \mathcal{H}</annotation></semantics></math>.</em></p>
+</div>
+<p>A somewhat weaker version of Thm was also obtained by R. Situ.</p>
+<div class="remark">
+<p><em>Remark 1</em>. Such orbit exists
+<math role="math" aria-label="\Leftrightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&hArr;</mo><annotation encoding="application/x-tex">\Leftrightarrow</annotation></semantics></math>
+<math role="math" aria-label="d &gt; h" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>&gt;</mo><mi>h</mi></mrow><annotation encoding="application/x-tex">d &gt; h</annotation></semantics></math>
+(<math role="math" aria-label="h =" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo></mrow><annotation encoding="application/x-tex">h =</annotation></semantics></math>
+Coxeter number of
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>,
+e.g. for
+<math role="math" aria-label="G = \operatorname{SL}_n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>=</mo><msub><mrow><mi mathvariant="normal">SL</mi><mo>&#8289;</mo></mrow><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">G = \operatorname{SL}_n</annotation></semantics></math>,
+<math role="math" aria-label="h = n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">h = n</annotation></semantics></math>).
+In this case
+<math role="math" aria-label="\Theta := W^{a} \cdot 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Theta;</mi><mo>:=</mo><msup><mi>W</mi><mi>a</mi></msup><mo>&sdot;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Theta := W^{a} \cdot 0</annotation></semantics></math>
+is free, the corresponding block is called principal.</p>
+</div>
+<h3 id="derived-equivalence-singular-blocks">Derived Equivalence,
+Singular Blocks</h3>
+<p>Consider the general (not necessarily free)
+<math role="math" aria-label="\Theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Theta;</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>.
+We want a description of
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\Theta}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\Theta}</annotation></semantics></math>
+similar to that in Theorem 1. First, we’ll choose a distinguished
+element
+<math role="math" aria-label="\lambda^{0} \in \Theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&lambda;</mi><mn>0</mn></msup><mo>&isin;</mo><mi mathvariant="normal">&Theta;</mi></mrow><annotation encoding="application/x-tex">\lambda^{0} \in \Theta</annotation></semantics></math>.
+Set
+<math role="math" aria-label="\mathcal{A} = \left\{\lambda \in \Lambda_{0} \mid \langle\lambda+\rho, \alpha_{i}^{\vee}\rangle \leq 0 \;\&amp;\; \langle\lambda+\rho, \delta^{\vee}\rangle \geqslant -d\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">A</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>&lambda;</mi><mo>&isin;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><mo>∣</mo><mo stretchy="false" form="prefix">⟨</mo><mi>&lambda;</mi><mo>+</mo><mi>&rho;</mi><mo>,</mo><msubsup><mi>&alpha;</mi><mi>i</mi><mo>&or;</mo></msubsup><mo stretchy="false" form="postfix">⟩</mo><mo>&le;</mo><mn>0</mn><mspace width="0.278em"></mspace><mi>&amp;</mi><mspace width="0.278em"></mspace><mo stretchy="false" form="prefix">⟨</mo><mi>&lambda;</mi><mo>+</mo><mi>&rho;</mi><mo>,</mo><msup><mi>&delta;</mi><mo>&or;</mo></msup><mo stretchy="false" form="postfix">⟩</mo><mo>&ge;</mo><mi>−</mi><mi>d</mi><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{A} = \left\{\lambda \in \Lambda_{0} \mid \langle\lambda+\rho, \alpha_{i}^{\vee}\rangle \leq 0 \;\&amp;\; \langle\lambda+\rho, \delta^{\vee}\rangle \geqslant -d\right\}</annotation></semantics></math>,
+where
+<math role="math" aria-label="\delta^{\vee}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>&delta;</mi><mo>&or;</mo></msup><annotation encoding="application/x-tex">\delta^{\vee}</annotation></semantics></math>
+is the maximal coroot. Then
+<math role="math" aria-label="\mathcal{A}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">A</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math>
+is a fundamental domain for
+<math role="math" aria-label="W^{a} \curvearrowright \Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>W</mi><mi>a</mi></msup><mo>↷</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">W^{a} \curvearrowright \Lambda_{0}</annotation></semantics></math>
+(exercise).
+<math role="math" aria-label="\lambda^{0} :=" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&lambda;</mi><mn>0</mn></msup><mo>:=</mo></mrow><annotation encoding="application/x-tex">\lambda^{0} :=</annotation></semantics></math>
+unique point in
+<math role="math" aria-label="\mathcal{A} \cap \Theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">A</mi><mo>&cap;</mo><mi mathvariant="normal">&Theta;</mi></mrow><annotation encoding="application/x-tex">\mathcal{A} \cap \Theta</annotation></semantics></math>.</p>
+<p>For
+<math role="math" aria-label="S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>S</mi><annotation encoding="application/x-tex">S</annotation></semantics></math>
+take the set of reflections about the walls of
+<math role="math" aria-label="\mathcal{A}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">A</mi><annotation encoding="application/x-tex">\mathcal{A}</annotation></semantics></math>.
+Set
+<math role="math" aria-label="J = \left\{s \in S \mid s \cdot \lambda^{0} = \lambda^{0}\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>J</mi><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>s</mi><mo>&isin;</mo><mi>S</mi><mo>∣</mo><mi>s</mi><mo>&sdot;</mo><msup><mi>&lambda;</mi><mn>0</mn></msup><mo>=</mo><msup><mi>&lambda;</mi><mn>0</mn></msup><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">J = \left\{s \in S \mid s \cdot \lambda^{0} = \lambda^{0}\right\}</annotation></semantics></math>.
+<math role="math" aria-label="R^{J} = \bigcap_{s \in J} R^{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mi>J</mi></msup><mo>=</mo><msub><mo>⋂</mo><mrow><mi>s</mi><mo>&isin;</mo><mi>J</mi></mrow></msub><msup><mi>R</mi><mi>s</mi></msup></mrow><annotation encoding="application/x-tex">R^{J} = \bigcap_{s \in J} R^{s}</annotation></semantics></math>,
+polynomial algebra.</p>
+<div class="definition">
+<p><strong>Definition 2</strong>. The category
+<math role="math" aria-label="{}_J\underline{\text{SMod}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow></mrow><mi>J</mi></msub><munder><mtext mathvariant="normal">SMod</mtext><mo accent="true">_</mo></munder></mrow><annotation encoding="application/x-tex">{}_J\underline{\text{SMod}}</annotation></semantics></math>
+is the full subcategory in
+<math role="math" aria-label="R^{J}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>R</mi><mi>J</mi></msup><annotation encoding="application/x-tex">R^{J}</annotation></semantics></math>-mod
+whose objects are direct summands of objects in
+<math role="math" aria-label="\underline{\text{SMod}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><munder><mtext mathvariant="normal">SMod</mtext><mo accent="true">_</mo></munder><annotation encoding="application/x-tex">\underline{\text{SMod}}</annotation></semantics></math>
+(viewed as modules over
+<math role="math" aria-label="R^{J} \subset R" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mi>J</mi></msup><mo>&sub;</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">R^{J} \subset R</annotation></semantics></math>).
+Set
+<math role="math" aria-label="\mathcal{H} := K^{b}({}_J\underline{\text{SMod}})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">ℋ</mi><mo>:=</mo><msup><mi>K</mi><mi>b</mi></msup><mo stretchy="false" form="prefix">(</mo><msub><mrow></mrow><mi>J</mi></msub><munder><mtext mathvariant="normal">SMod</mtext><mo accent="true">_</mo></munder><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathcal{H} := K^{b}({}_J\underline{\text{SMod}})</annotation></semantics></math>.</p>
+</div>
+<div class="theorem">
+<p><strong>Theorem 2</strong> (I.L. 23).
+<em><math role="math" aria-label="D^{b}\left(\mathcal{O}_{\varepsilon}^{\Theta}\right) \xrightarrow{\sim} \mathcal{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>D</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mover><mo>&rarr;</mo><mo accent="false">&sim;</mo></mover><mi mathvariant="script">ℋ</mi></mrow><annotation encoding="application/x-tex">D^{b}\left(\mathcal{O}_{\varepsilon}^{\Theta}\right) \xrightarrow{\sim} \mathcal{H}</annotation></semantics></math>.</em></p>
+</div>
+<h3 id="motivations">Motivations</h3>
+<p><math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>
+was popularized by Gaitsgory who wanted an extension of the famous
+Kazhdan-Lusztig equivalence between</p>
+<ol>
+<li><p>a certain parabolic category
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">O</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math>
+for the affine Lie algebra
+<math role="math" aria-label="\hat{\mathfrak{g}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi mathvariant="fraktur">g</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{\mathfrak{g}}</annotation></semantics></math></p></li>
+<li><p>and the finite dimensional representations of
+<math role="math" aria-label="U_{\varepsilon}^{l}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>&epsilon;</mi><mi>l</mi></msubsup><annotation encoding="application/x-tex">U_{\varepsilon}^{l}</annotation></semantics></math></p></li>
+</ol>
+<p>He proposed to replace (i) w. the full cat.
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">O</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math>
+&amp;
+<math role="math" aria-label="U_{\varepsilon}^{l}\text{-}\mathrm{mod}_{fd}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>U</mi><mi>&epsilon;</mi><mi>l</mi></msubsup><mtext mathvariant="normal">-</mtext><msub><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">o</mi><mi mathvariant="normal">d</mi></mrow><mrow><mi>f</mi><mi>d</mi></mrow></msub></mrow><annotation encoding="application/x-tex">U_{\varepsilon}^{l}\text{-}\mathrm{mod}_{fd}</annotation></semantics></math>
+w.
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>.
+His conjectures essentially yield our main equivalence &amp; were proved
+by his students Chen &amp; Fu by methods very different from mine (&amp;
+with different assumptions on
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>).
+The motivation came from Quantum Geometric Langlands.</p>
+<p>Another motivation: one should be able to use a connection between
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>
+and the affine Hecke category to get character formulas in the category
+of finite dimensional of
+<math role="math" aria-label="U_{\varepsilon}^{DK}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi>D</mi><mi>K</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{\varepsilon}^{DK}</annotation></semantics></math>
+with some (currently a bit mysterious) additional “equivariance”
+structure, similar in spirit to Bezrukavnikov-I.L. 20.</p>
+<p>Finally, a far reaching motivation is to understand the affine analog
+of
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>:
+where instead of
+<math role="math" aria-label="U_{\varepsilon}^{\mathrm{mix}}(\mathfrak{g})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><mo stretchy="false" form="prefix">(</mo><mi mathvariant="fraktur">g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U_{\varepsilon}^{\mathrm{mix}}(\mathfrak{g})</annotation></semantics></math>
+one has
+<math role="math" aria-label="U_{\varepsilon}^{\mathrm{mix}}(\hat{\mathfrak{g}})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><mo stretchy="false" form="prefix">(</mo><mover><mi mathvariant="fraktur">g</mi><mo accent="true">̂</mo></mover><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U_{\varepsilon}^{\mathrm{mix}}(\hat{\mathfrak{g}})</annotation></semantics></math>
+— understanding
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>
+is a necessary prerequisite.</p>
+</main>
+</body>
+</html>

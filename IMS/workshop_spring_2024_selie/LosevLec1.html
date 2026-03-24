@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Quantum Category O, I</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a5dab;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #6b3fa0;
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Quantum Category
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">O</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math>,
+I</h1>
+</header>
+<main>
+<ol>
+<li><p>Quantum groups &amp; their forms</p></li>
+<li><p>Quantum category
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">O</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math></p></li>
+</ol>
+<h2 id="quantum-groups-and-their-forms">Quantum Groups and Their
+Forms</h2>
+<p>Notation:
+<math role="math" aria-label="\mathfrak{g}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="fraktur">g</mi><annotation encoding="application/x-tex">\mathfrak{g}</annotation></semantics></math>
+simple Lie
+algebra/<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="double-struck">&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>,
+simply laced (ADE) — to simplify the exposition.</p>
+<p><math role="math" aria-label="\mathfrak{h} \subset \mathfrak{g}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="fraktur">h</mi><mo>&sub;</mo><mi mathvariant="fraktur">g</mi></mrow><annotation encoding="application/x-tex">\mathfrak{h} \subset \mathfrak{g}</annotation></semantics></math>
+Cartan<br />
+<math role="math" aria-label="\Lambda_r \subset \Lambda \subset \mathfrak{h}^*" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">&Lambda;</mi><mi>r</mi></msub><mo>&sub;</mo><mi mathvariant="normal">&Lambda;</mi><mo>&sub;</mo><msup><mi mathvariant="fraktur">h</mi><mo>*</mo></msup></mrow><annotation encoding="application/x-tex">\Lambda_r \subset \Lambda \subset \mathfrak{h}^*</annotation></semantics></math>
+root &amp; weight lattice<br />
+<math role="math" aria-label="\alpha_i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>&alpha;</mi><mi>i</mi></msub><annotation encoding="application/x-tex">\alpha_i</annotation></semantics></math>
+(<math role="math" aria-label="i \in I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>&isin;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">i \in I</annotation></semantics></math>)
+simple roots,
+<math role="math" aria-label="(a_{ij})_{i,j \in I}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><msub><mo stretchy="false" form="postfix">)</mo><mrow><mi>i</mi><mo>,</mo><mi>j</mi><mo>&isin;</mo><mi>I</mi></mrow></msub></mrow><annotation encoding="application/x-tex">(a_{ij})_{i,j \in I}</annotation></semantics></math>
+— Cartan matrix.<br />
+<math role="math" aria-label="v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>:
+indeterminate
+<math role="math" aria-label="\leadsto" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⤳</mo><annotation encoding="application/x-tex">\leadsto</annotation></semantics></math>
+field
+<math role="math" aria-label="\mathbb{C}(v)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(v)</annotation></semantics></math><br />
+<math role="math" aria-label="(\cdot,\cdot)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>&sdot;</mi><mo>,</mo><mi>&sdot;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\cdot,\cdot)</annotation></semantics></math>:
+invariant form on
+<math role="math" aria-label="\mathfrak{h}^*" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="fraktur">h</mi><mo>*</mo></msup><annotation encoding="application/x-tex">\mathfrak{h}^*</annotation></semantics></math>
+normalized by
+<math role="math" aria-label="(\alpha_i, \alpha_i) = 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi>&alpha;</mi><mi>i</mi></msub><mo>,</mo><msub><mi>&alpha;</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">(\alpha_i, \alpha_i) = 2</annotation></semantics></math>.</p>
+<h3 id="generic-version">Generic Version</h3>
+<div class="definition">
+<p><strong>Definition 1</strong> (Quantum group
+<math role="math" aria-label="U_v(\mathfrak{g})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>v</mi></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="fraktur">g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U_v(\mathfrak{g})</annotation></semantics></math>).
+<math role="math" aria-label="U_v(\mathfrak{g})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>v</mi></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="fraktur">g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U_v(\mathfrak{g})</annotation></semantics></math>
+is
+<math role="math" aria-label="\mathbb{C}(v)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(v)</annotation></semantics></math>-algebra
+w. generators
+<math role="math" aria-label="E_i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>i</mi></msub><annotation encoding="application/x-tex">E_i</annotation></semantics></math>,
+<math role="math" aria-label="F_i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>i</mi></msub><annotation encoding="application/x-tex">F_i</annotation></semantics></math>
+(<math role="math" aria-label="i \in I" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi><mo>&isin;</mo><mi>I</mi></mrow><annotation encoding="application/x-tex">i \in I</annotation></semantics></math>),
+<math role="math" aria-label="K_\nu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>&nu;</mi></msub><annotation encoding="application/x-tex">K_\nu</annotation></semantics></math>
+(<math role="math" aria-label="\nu \in \Lambda" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&nu;</mi><mo>&isin;</mo><mi mathvariant="normal">&Lambda;</mi></mrow><annotation encoding="application/x-tex">\nu \in \Lambda</annotation></semantics></math>)
+&amp; relations:</p>
+<ul>
+<li><p><math role="math" aria-label="K_\nu K_{\nu&#39;} = K_{\nu+\nu&#39;}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>&nu;</mi></msub><msub><mi>K</mi><msup><mi>&nu;</mi><mo>&prime;</mo></msup></msub><mo>=</mo><msub><mi>K</mi><mrow><mi>&nu;</mi><mo>+</mo><msup><mi>&nu;</mi><mo>&prime;</mo></msup></mrow></msub></mrow><annotation encoding="application/x-tex">K_\nu K_{\nu&#39;} = K_{\nu+\nu&#39;}</annotation></semantics></math>,
+<math role="math" aria-label="K_0 = 1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mn>0</mn></msub><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">K_0 = 1</annotation></semantics></math></p></li>
+<li><p><math role="math" aria-label="K_\nu E_i K_\nu^{-1} = v^{(\nu, \alpha_i)} E_i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>&nu;</mi></msub><msub><mi>E</mi><mi>i</mi></msub><msubsup><mi>K</mi><mi>&nu;</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mo>=</mo><msup><mi>v</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>&nu;</mi><mo>,</mo><msub><mi>&alpha;</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow></msup><msub><mi>E</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">K_\nu E_i K_\nu^{-1} = v^{(\nu, \alpha_i)} E_i</annotation></semantics></math>,
+<math role="math" aria-label="K_\nu F_i K_\nu^{-1} = v^{-(\nu, \alpha_i)} F_i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>K</mi><mi>&nu;</mi></msub><msub><mi>F</mi><mi>i</mi></msub><msubsup><mi>K</mi><mi>&nu;</mi><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mo>=</mo><msup><mi>v</mi><mrow><mi>−</mi><mo stretchy="false" form="prefix">(</mo><mi>&nu;</mi><mo>,</mo><msub><mi>&alpha;</mi><mi>i</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow></msup><msub><mi>F</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">K_\nu F_i K_\nu^{-1} = v^{-(\nu, \alpha_i)} F_i</annotation></semantics></math></p></li>
+<li><p><math role="math" aria-label="\left[E_i, F_j\right] = \delta_{i,j} \frac{K_{\alpha_i} - K_{\alpha_i}^{-1}}{v - v^{-1}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">[</mo><msub><mi>E</mi><mi>i</mi></msub><mo>,</mo><msub><mi>F</mi><mi>j</mi></msub><mo stretchy="true" form="postfix">]</mo></mrow><mo>=</mo><msub><mi>&delta;</mi><mrow><mi>i</mi><mo>,</mo><mi>j</mi></mrow></msub><mfrac><mrow><msub><mi>K</mi><msub><mi>&alpha;</mi><mi>i</mi></msub></msub><mo>−</mo><msubsup><mi>K</mi><msub><mi>&alpha;</mi><mi>i</mi></msub><mrow><mi>−</mi><mn>1</mn></mrow></msubsup></mrow><mrow><mi>v</mi><mo>−</mo><msup><mi>v</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">\left[E_i, F_j\right] = \delta_{i,j} \frac{K_{\alpha_i} - K_{\alpha_i}^{-1}}{v - v^{-1}}</annotation></semantics></math></p></li>
+<li><p>quantum Serre relations:
+<math role="math" aria-label="E_{i} E_{j}=E_{j} E_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>i</mi></msub><msub><mi>E</mi><mi>j</mi></msub><mo>=</mo><msub><mi>E</mi><mi>j</mi></msub><msub><mi>E</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">E_{i} E_{j}=E_{j} E_{i}</annotation></semantics></math>
+if
+<math role="math" aria-label="a_{ij}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">a_{ij}=0</annotation></semantics></math>
+<math role="math" aria-label="E_{i} E_{j}^{2}+E_{j}^{2} E_{i}=\left(v+v^{-1}\right) E_{j} E_{i} E_{j} \text{ if } a_{ij}=-1" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>E</mi><mi>i</mi></msub><msubsup><mi>E</mi><mi>j</mi><mn>2</mn></msubsup><mo>+</mo><msubsup><mi>E</mi><mi>j</mi><mn>2</mn></msubsup><msub><mi>E</mi><mi>i</mi></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mi>v</mi><mo>+</mo><msup><mi>v</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo stretchy="true" form="postfix">)</mo></mrow><msub><mi>E</mi><mi>j</mi></msub><msub><mi>E</mi><mi>i</mi></msub><msub><mi>E</mi><mi>j</mi></msub><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> if </mtext><mspace width="0.333em"></mspace></mrow><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>=</mo><mi>−</mi><mn>1</mn></mrow><annotation encoding="application/x-tex">E_{i} E_{j}^{2}+E_{j}^{2} E_{i}=\left(v+v^{-1}\right) E_{j} E_{i} E_{j} \text{ if } a_{ij}=-1</annotation></semantics></math>
+&amp; same for
+<math role="math" aria-label="F_i" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>i</mi></msub><annotation encoding="application/x-tex">F_i</annotation></semantics></math>’s</p></li>
+</ul>
+</div>
+<h3 id="forms-and-specializations">Forms and Specializations</h3>
+<p>We want to consider
+<math role="math" aria-label="\mathbb{C}[v^{\pm 1}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">&Copf;</mi><mo stretchy="false" form="prefix">[</mo><msup><mi>v</mi><mrow><mi>&plusmn;</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}[v^{\pm 1}]</annotation></semantics></math>-forms
+of
+<math role="math" aria-label="U_{v}(\mathfrak{g})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>v</mi></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="fraktur">g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U_{v}(\mathfrak{g})</annotation></semantics></math>
+i.e.
+<math role="math" aria-label="\mathbb{C}[v^{\pm 1}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">&Copf;</mi><mo stretchy="false" form="prefix">[</mo><msup><mi>v</mi><mrow><mi>&plusmn;</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}[v^{\pm 1}]</annotation></semantics></math>-subalgebras
+<math role="math" aria-label="A \subset U_{v}(\mathfrak{g})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>&sub;</mo><msub><mi>U</mi><mi>v</mi></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="fraktur">g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">A \subset U_{v}(\mathfrak{g})</annotation></semantics></math>
+w.
+<math role="math" aria-label="\mathbb{C}(v) \underset{\mathbb{C}[v^{\pm 1}]}{\otimes} A \xrightarrow{\sim} U_{v}(\mathfrak{g})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">&Copf;</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><munder><mo>&otimes;</mo><mrow><mi mathvariant="double-struck">&Copf;</mi><mo stretchy="false" form="prefix">[</mo><msup><mi>v</mi><mrow><mi>&plusmn;</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="postfix">]</mo></mrow></munder><mi>A</mi><mover><mo>&rarr;</mo><mo accent="false">&sim;</mo></mover><msub><mi>U</mi><mi>v</mi></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="fraktur">g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}(v) \underset{\mathbb{C}[v^{\pm 1}]}{\otimes} A \xrightarrow{\sim} U_{v}(\mathfrak{g})</annotation></semantics></math></p>
+<p>To define the forms we need we introduce some notation.
+<math role="math" aria-label="n \in \mathbb{Z}_{\geq 0} \leadsto [n]_{v}=v^{n-1}+v^{n-3}+\ldots+v^{-(n-1)}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><msub><mi mathvariant="double-struck">&Zopf;</mi><mrow><mo>&ge;</mo><mn>0</mn></mrow></msub><mo>⤳</mo><mo stretchy="false" form="prefix">[</mo><mi>n</mi><msub><mo stretchy="false" form="postfix">]</mo><mi>v</mi></msub><mo>=</mo><msup><mi>v</mi><mrow><mi>n</mi><mo>−</mo><mn>1</mn></mrow></msup><mo>+</mo><msup><mi>v</mi><mrow><mi>n</mi><mo>−</mo><mn>3</mn></mrow></msup><mo>+</mo><mi>&hellip;</mi><mo>+</mo><msup><mi>v</mi><mrow><mi>−</mi><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo>−</mo><mn>1</mn><mo stretchy="false" form="postfix">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">n \in \mathbb{Z}_{\geq 0} \leadsto [n]_{v}=v^{n-1}+v^{n-3}+\ldots+v^{-(n-1)}</annotation></semantics></math>,
+a quantum integer
+<math role="math" aria-label="[n]_{v}!=\prod_{i=1}^{n}[i]_{v}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>n</mi><msub><mo stretchy="false" form="postfix">]</mo><mi>v</mi></msub><mi>!</mi><mo>=</mo><munderover><mo>&prod;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo stretchy="false" form="prefix">[</mo><mi>i</mi><msub><mo stretchy="false" form="postfix">]</mo><mi>v</mi></msub></mrow><annotation encoding="application/x-tex">[n]_{v}!=\prod_{i=1}^{n}[i]_{v}</annotation></semantics></math>
+<math role="math" aria-label="E_{i}^{(n)}=E_{i}^{n} /[n]_{v}!" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>E</mi><mi>i</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><mo>=</mo><msubsup><mi>E</mi><mi>i</mi><mi>n</mi></msubsup><mi>/</mi><mo stretchy="false" form="prefix">[</mo><mi>n</mi><msub><mo stretchy="false" form="postfix">]</mo><mi>v</mi></msub><mi>!</mi></mrow><annotation encoding="application/x-tex">E_{i}^{(n)}=E_{i}^{n} /[n]_{v}!</annotation></semantics></math>
+(divided power), same for
+<math role="math" aria-label="F_{i}^{(n)}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>F</mi><mi>i</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><annotation encoding="application/x-tex">F_{i}^{(n)}</annotation></semantics></math>.</p>
+<div class="definition">
+<p><strong>Definition 2</strong> (Forms of
+<math role="math" aria-label="U_v(\mathfrak{g})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>U</mi><mi>v</mi></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="fraktur">g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U_v(\mathfrak{g})</annotation></semantics></math>).
+</p>
+<ul>
+<li><p>The De Concini-Kac form
+<math role="math" aria-label="U_{v}^{DK}(\mathfrak{g})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>U</mi><mi>v</mi><mrow><mi>D</mi><mi>K</mi></mrow></msubsup><mo stretchy="false" form="prefix">(</mo><mi mathvariant="fraktur">g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U_{v}^{DK}(\mathfrak{g})</annotation></semantics></math>
+is the
+<math role="math" aria-label="\mathbb{C}[v^{\pm 1}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">&Copf;</mi><mo stretchy="false" form="prefix">[</mo><msup><mi>v</mi><mrow><mi>&plusmn;</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}[v^{\pm 1}]</annotation></semantics></math>-subalgebra
+generated by
+<math role="math" aria-label="E_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>E</mi><mi>i</mi></msub><annotation encoding="application/x-tex">E_{i}</annotation></semantics></math>’s,
+<math role="math" aria-label="F_{i}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>F</mi><mi>i</mi></msub><annotation encoding="application/x-tex">F_{i}</annotation></semantics></math>’s
+&amp;
+<math role="math" aria-label="K_{\nu}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>K</mi><mi>&nu;</mi></msub><annotation encoding="application/x-tex">K_{\nu}</annotation></semantics></math>’s
+(the most obvious form).</p></li>
+<li><p>The Lusztig form
+<math role="math" aria-label="U_{v}^{l}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>v</mi><mi>l</mi></msubsup><annotation encoding="application/x-tex">U_{v}^{l}</annotation></semantics></math>:
+by
+<math role="math" aria-label="E_{i}^{(n)}, F_{i}^{(n)}, K_{\nu}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>E</mi><mi>i</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><mo>,</mo><msubsup><mi>F</mi><mi>i</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><mo>,</mo><msub><mi>K</mi><mi>&nu;</mi></msub></mrow><annotation encoding="application/x-tex">E_{i}^{(n)}, F_{i}^{(n)}, K_{\nu}</annotation></semantics></math>
+<math role="math" aria-label="(\forall i \in I, \nu \in \Lambda, n \in \mathbb{Z}_{\geq 0})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mo>&forall;</mo><mi>i</mi><mo>&isin;</mo><mi>I</mi><mo>,</mo><mi>&nu;</mi><mo>&isin;</mo><mi mathvariant="normal">&Lambda;</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><msub><mi mathvariant="double-struck">&Zopf;</mi><mrow><mo>&ge;</mo><mn>0</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\forall i \in I, \nu \in \Lambda, n \in \mathbb{Z}_{\geq 0})</annotation></semantics></math></p></li>
+<li><p>The mixed form
+<math role="math" aria-label="U_{v}^{mix}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>v</mi><mrow><mi>m</mi><mi>i</mi><mi>x</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{v}^{mix}</annotation></semantics></math>:
+<math role="math" aria-label="E_{i}^{(n)}, F_{i}, K_{\nu}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>E</mi><mi>i</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>n</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><mo>,</mo><msub><mi>F</mi><mi>i</mi></msub><mo>,</mo><msub><mi>K</mi><mi>&nu;</mi></msub></mrow><annotation encoding="application/x-tex">E_{i}^{(n)}, F_{i}, K_{\nu}</annotation></semantics></math>
+<math role="math" aria-label="(\forall i \in I, \nu \in \Lambda, n \in \mathbb{Z}_{\geq 0})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mo>&forall;</mo><mi>i</mi><mo>&isin;</mo><mi>I</mi><mo>,</mo><mi>&nu;</mi><mo>&isin;</mo><mi mathvariant="normal">&Lambda;</mi><mo>,</mo><mi>n</mi><mo>&isin;</mo><msub><mi mathvariant="double-struck">&Zopf;</mi><mrow><mo>&ge;</mo><mn>0</mn></mrow></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\forall i \in I, \nu \in \Lambda, n \in \mathbb{Z}_{\geq 0})</annotation></semantics></math></p></li>
+</ul>
+</div>
+<p>The point of considering the forms is that one can specialize
+<math role="math" aria-label="v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>v</mi><annotation encoding="application/x-tex">v</annotation></semantics></math>
+to
+<math role="math" aria-label="q \in \mathbb{C}^{\times}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>&isin;</mo><msup><mi mathvariant="double-struck">&Copf;</mi><mo>&times;</mo></msup></mrow><annotation encoding="application/x-tex">q \in \mathbb{C}^{\times}</annotation></semantics></math>
+getting algebras over
+<math role="math" aria-label="\mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="double-struck">&Copf;</mi><annotation encoding="application/x-tex">\mathbb{C}</annotation></semantics></math>,
+e.g.
+<math role="math" aria-label="U_{q}^{mix}=U_{v}^{mix} \otimes_{\mathbb{C}[v^{\pm 1}]} \mathbb{C}_{q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>U</mi><mi>q</mi><mrow><mi>m</mi><mi>i</mi><mi>x</mi></mrow></msubsup><mo>=</mo><msubsup><mi>U</mi><mi>v</mi><mrow><mi>m</mi><mi>i</mi><mi>x</mi></mrow></msubsup><msub><mo>&otimes;</mo><mrow><mi mathvariant="double-struck">&Copf;</mi><mo stretchy="false" form="prefix">[</mo><msup><mi>v</mi><mrow><mi>&plusmn;</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="postfix">]</mo></mrow></msub><msub><mi mathvariant="double-struck">&Copf;</mi><mi>q</mi></msub></mrow><annotation encoding="application/x-tex">U_{q}^{mix}=U_{v}^{mix} \otimes_{\mathbb{C}[v^{\pm 1}]} \mathbb{C}_{q}</annotation></semantics></math>
+(<math role="math" aria-label="\mathbb{C}_{q}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="double-struck">&Copf;</mi><mi>q</mi></msub><annotation encoding="application/x-tex">\mathbb{C}_{q}</annotation></semantics></math>
+is 1-dim.
+<math role="math" aria-label="\mathbb{C}[v^{\pm 1}]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">&Copf;</mi><mo stretchy="false" form="prefix">[</mo><msup><mi>v</mi><mrow><mi>&plusmn;</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathbb{C}[v^{\pm 1}]</annotation></semantics></math>-algebra
+w.
+<math role="math" aria-label="v \mapsto q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>v</mi><mo>&map;</mo><mi>q</mi></mrow><annotation encoding="application/x-tex">v \mapsto q</annotation></semantics></math>).
+When
+<math role="math" aria-label="q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is not a root of
+<math role="math" aria-label="1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>,
+<math role="math" aria-label="[n]_{q} \neq 0 \forall n \Rightarrow U_{q}^{DK}=U_{q}^{mix}=U_{q}^{l}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>n</mi><msub><mo stretchy="false" form="postfix">]</mo><mi>q</mi></msub><mo>&ne;</mo><mn>0</mn><mo>&forall;</mo><mi>n</mi><mo>&rArr;</mo><msubsup><mi>U</mi><mi>q</mi><mrow><mi>D</mi><mi>K</mi></mrow></msubsup><mo>=</mo><msubsup><mi>U</mi><mi>q</mi><mrow><mi>m</mi><mi>i</mi><mi>x</mi></mrow></msubsup><mo>=</mo><msubsup><mi>U</mi><mi>q</mi><mi>l</mi></msubsup></mrow><annotation encoding="application/x-tex">[n]_{q} \neq 0 \forall n \Rightarrow U_{q}^{DK}=U_{q}^{mix}=U_{q}^{l}</annotation></semantics></math>.
+But when
+<math role="math" aria-label="q" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>q</mi><annotation encoding="application/x-tex">q</annotation></semantics></math>
+is primitive
+<math role="math" aria-label="\sqrt[d]{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mroot><mn>1</mn><mi>d</mi></mroot><annotation encoding="application/x-tex">\sqrt[d]{1}</annotation></semantics></math>
+we have
+<math role="math" aria-label="[d]_{q}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>d</mi><msub><mo stretchy="false" form="postfix">]</mo><mi>q</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">[d]_{q}=0</annotation></semantics></math>
+(if
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+is even,
+<math role="math" aria-label="[d/2]_{q}=0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">[</mo><mi>d</mi><mi>/</mi><mn>2</mn><msub><mo stretchy="false" form="postfix">]</mo><mi>q</mi></msub><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">[d/2]_{q}=0</annotation></semantics></math>)
+&amp; the specializations behave differently from each other.</p>
+<p>There are several reasons to be interested in the specializations to
+<math role="math" aria-label="q=\sqrt[d]{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>q</mi><mo>=</mo><mroot><mn>1</mn><mi>d</mi></mroot></mrow><annotation encoding="application/x-tex">q=\sqrt[d]{1}</annotation></semantics></math>
+from a representation-theoretic perspective. Historically first was a
+connection to modular
+(<math role="math" aria-label="=\bmod p" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mrow><mspace width="0.222em"></mspace><mrow><mi mathvariant="normal">mod</mi><mo>&#8289;</mo></mrow><mspace width="0.222em"></mspace><mi>p</mi></mrow></mrow><annotation encoding="application/x-tex">=\bmod p</annotation></semantics></math>)
+representation theory of
+<math role="math" aria-label="U(\mathfrak{g})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo stretchy="false" form="prefix">(</mo><mi mathvariant="fraktur">g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U(\mathfrak{g})</annotation></semantics></math>
+&amp; the corresponding algebraic group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>.</p>
+<p>The form whose representation theory resembles that of
+<math role="math" aria-label="G/\overline{\mathbb{F}}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mi>/</mi><msub><mover><mi mathvariant="double-struck">&Fopf;</mi><mo accent="true">¯</mo></mover><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">G/\overline{\mathbb{F}}_{p}</annotation></semantics></math>
+is
+<math role="math" aria-label="U_{q}^{l}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>q</mi><mi>l</mi></msubsup><annotation encoding="application/x-tex">U_{q}^{l}</annotation></semantics></math>,
+it’s also the best understood (since the 90’s). The form whose
+representations resemble those of
+<math role="math" aria-label="U(\mathfrak{g}_{\overline{\mathbb{F}}_{p}})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="fraktur">g</mi><msub><mover><mi mathvariant="double-struck">&Fopf;</mi><mo accent="true">¯</mo></mover><mi>p</mi></msub></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U(\mathfrak{g}_{\overline{\mathbb{F}}_{p}})</annotation></semantics></math>
+is
+<math role="math" aria-label="U_{q}^{DK}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>q</mi><mrow><mi>D</mi><mi>K</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{q}^{DK}</annotation></semantics></math>,
+it’s least understood. For these lectures we’ll concentrate on the
+intermediate form,
+<math role="math" aria-label="U_{q}^{mix}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>q</mi><mrow><mi>m</mi><mi>i</mi><mi>x</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{q}^{mix}</annotation></semantics></math>.</p>
+<h2 id="quantum-category-mathcalo">Quantum Category
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">O</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math></h2>
+<h3 id="definition">Definition</h3>
+<p>We fix an odd positive integer
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>.
+Let
+<math role="math" aria-label="\varepsilon" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&epsilon;</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+be a primitive
+<math role="math" aria-label="\sqrt[d]{1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mroot><mn>1</mn><mi>d</mi></mroot><annotation encoding="application/x-tex">\sqrt[d]{1}</annotation></semantics></math>.
+Note that
+<math role="math" aria-label="U_{v}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>v</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{v}^{\mathrm{mix}}</annotation></semantics></math>
+&amp;
+<math role="math" aria-label="U_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>
+are graded by
+<math role="math" aria-label="\Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\Lambda_{0}</annotation></semantics></math>,
+<math role="math" aria-label="U_{\varepsilon}^{\mathrm{mix}}=\bigoplus_{\lambda \in \Lambda_{0}} U_{\varepsilon, \lambda}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><mo>=</mo><msub><mo>⨁</mo><mrow><mi>&lambda;</mi><mo>&isin;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub></mrow></msub><msubsup><mi>U</mi><mrow><mi>&epsilon;</mi><mo>,</mo><mi>&lambda;</mi></mrow><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup></mrow><annotation encoding="application/x-tex">U_{\varepsilon}^{\mathrm{mix}}=\bigoplus_{\lambda \in \Lambda_{0}} U_{\varepsilon, \lambda}^{\mathrm{mix}}</annotation></semantics></math>
+<math role="math" aria-label="\operatorname{deg} F_{i}=-\alpha_{i}, \quad \operatorname{deg} K_{\nu}=0, \quad \operatorname{deg} E_{i}^{(l)}=l\alpha_{i}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><msub><mi>F</mi><mi>i</mi></msub><mo>=</mo><mi>−</mi><msub><mi>&alpha;</mi><mi>i</mi></msub><mo>,</mo><mspace width="1.0em"></mspace><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><msub><mi>K</mi><mi>&nu;</mi></msub><mo>=</mo><mn>0</mn><mo>,</mo><mspace width="1.0em"></mspace><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><msubsup><mi>E</mi><mi>i</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>l</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><mo>=</mo><mi>l</mi><msub><mi>&alpha;</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\operatorname{deg} F_{i}=-\alpha_{i}, \quad \operatorname{deg} K_{\nu}=0, \quad \operatorname{deg} E_{i}^{(l)}=l\alpha_{i}</annotation></semantics></math>
+so it makes sense to speak about the category of graded
+<math role="math" aria-label="U_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>-modules:</p>
+<ul>
+<li><p>the objects are
+<math role="math" aria-label="U_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>-modules
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+w. direct sum decomposition
+<math role="math" aria-label="M=\bigoplus_{\mu \in \Lambda_{0}} M_{\mu}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><msub><mo>⨁</mo><mrow><mi>&mu;</mi><mo>&isin;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub></mrow></msub><msub><mi>M</mi><mi>&mu;</mi></msub></mrow><annotation encoding="application/x-tex">M=\bigoplus_{\mu \in \Lambda_{0}} M_{\mu}</annotation></semantics></math>
+w.
+<math role="math" aria-label="U_{\varepsilon, \lambda}^{\mathrm{mix}} M_{\mu} \subset M_{\lambda+\mu}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>U</mi><mrow><mi>&epsilon;</mi><mo>,</mo><mi>&lambda;</mi></mrow><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><msub><mi>M</mi><mi>&mu;</mi></msub><mo>&sub;</mo><msub><mi>M</mi><mrow><mi>&lambda;</mi><mo>+</mo><mi>&mu;</mi></mrow></msub></mrow><annotation encoding="application/x-tex">U_{\varepsilon, \lambda}^{\mathrm{mix}} M_{\mu} \subset M_{\lambda+\mu}</annotation></semantics></math>
+<math role="math" aria-label="\forall" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&forall;</mo><annotation encoding="application/x-tex">\forall</annotation></semantics></math>
+<math role="math" aria-label="\lambda, \mu \in \Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>,</mo><mi>&mu;</mi><mo>&isin;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\lambda, \mu \in \Lambda_{0}</annotation></semantics></math></p></li>
+<li><p>morphisms are
+<math role="math" aria-label="U_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>-linear
+maps
+<math role="math" aria-label="\varphi: M \rightarrow N" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi>N</mi></mrow><annotation encoding="application/x-tex">\varphi: M \rightarrow N</annotation></semantics></math>
+w.
+<math role="math" aria-label="\varphi\left(M_{\mu}\right) \subset N_{\mu} \quad \forall \mu." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&phi;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>M</mi><mi>&mu;</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&sub;</mo><msub><mi>N</mi><mi>&mu;</mi></msub><mspace width="1.0em"></mspace><mo>&forall;</mo><mi>&mu;</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\varphi\left(M_{\mu}\right) \subset N_{\mu} \quad \forall \mu.</annotation></semantics></math></p></li>
+</ul>
+<div class="definition">
+<p><strong>Definition 3</strong> (Quantum category
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">O</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math>).
+The quantum category
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">O</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math>,
+to be denoted by
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>,
+is the full subcategory in the category of graded
+<math role="math" aria-label="U_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>-modules
+consisting of all
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+s.t.</p>
+<ol>
+<li><p><math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+is finitely generated over
+<math role="math" aria-label="U_{\varepsilon}^{\mathrm{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{\varepsilon}^{\mathrm{mix}}</annotation></semantics></math>,</p></li>
+<li><p><math role="math" aria-label="\left.K_{\nu}\right|_{M_{\mu}}=\varepsilon^{(\mu, \nu)} \mathrm{id}_{M_{\mu}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><msub><mi>K</mi><mi>&nu;</mi></msub><mo stretchy="true" form="postfix">|</mo></mrow><msub><mi>M</mi><mi>&mu;</mi></msub></msub><mo>=</mo><msup><mi>&epsilon;</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>&mu;</mi><mo>,</mo><mi>&nu;</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><msub><mrow><mi mathvariant="normal">i</mi><mi mathvariant="normal">d</mi></mrow><msub><mi>M</mi><mi>&mu;</mi></msub></msub></mrow><annotation encoding="application/x-tex">\left.K_{\nu}\right|_{M_{\mu}}=\varepsilon^{(\mu, \nu)} \mathrm{id}_{M_{\mu}}</annotation></semantics></math>,
+where
+<math role="math" aria-label="(\cdot, \cdot)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>&sdot;</mi><mo>,</mo><mi>&sdot;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\cdot, \cdot)</annotation></semantics></math>
+is a
+<math role="math" aria-label="W" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>W</mi><annotation encoding="application/x-tex">W</annotation></semantics></math>-invariant
+form on
+<math role="math" aria-label="\mathfrak{h}^{*}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="fraktur">h</mi><mo>*</mo></msup><annotation encoding="application/x-tex">\mathfrak{h}^{*}</annotation></semantics></math>
+normalized so that
+<math role="math" aria-label="(\alpha, \alpha)=2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>&alpha;</mi><mo>,</mo><mi>&alpha;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">(\alpha, \alpha)=2</annotation></semantics></math>
+<math role="math" aria-label="\forall" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&forall;</mo><annotation encoding="application/x-tex">\forall</annotation></semantics></math>
+root
+<math role="math" aria-label="\alpha" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&alpha;</mi><annotation encoding="application/x-tex">\alpha</annotation></semantics></math>
+— recall that we assume that
+<math role="math" aria-label="\mathfrak{g}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="fraktur">g</mi><annotation encoding="application/x-tex">\mathfrak{g}</annotation></semantics></math>
+is simply laced for simplicity.</p></li>
+<li><p><math role="math" aria-label="\left\{\mu \mid M_{\mu} \neq 0\right\}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="true" form="prefix">{</mo><mi>&mu;</mi><mo>∣</mo><msub><mi>M</mi><mi>&mu;</mi></msub><mo>&ne;</mo><mn>0</mn><mo stretchy="true" form="postfix">}</mo></mrow><annotation encoding="application/x-tex">\left\{\mu \mid M_{\mu} \neq 0\right\}</annotation></semantics></math>
+is bounded from above:
+<math role="math" aria-label="\exists \mu_{M} \in \Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&exist;</mo><msub><mi>&mu;</mi><mi>M</mi></msub><mo>&isin;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\exists \mu_{M} \in \Lambda_{0}</annotation></semantics></math>
+s.t.
+<math role="math" aria-label="M_{\mu} \neq 0 \Rightarrow \mu_{M}-\mu \in \operatorname{Span}_{\mathbb{Z}_{\geq 0}}\left(\alpha_{i} \mid i=1, \ldots, r\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mi>&mu;</mi></msub><mo>&ne;</mo><mn>0</mn><mo>&rArr;</mo><msub><mi>&mu;</mi><mi>M</mi></msub><mo>−</mo><mi>&mu;</mi><mo>&isin;</mo><msub><mrow><mi mathvariant="normal">Span</mi><mo>&#8289;</mo></mrow><msub><mi mathvariant="double-struck">&Zopf;</mi><mrow><mo>&ge;</mo><mn>0</mn></mrow></msub></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>&alpha;</mi><mi>i</mi></msub><mo>∣</mo><mi>i</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>&hellip;</mi><mo>,</mo><mi>r</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">M_{\mu} \neq 0 \Rightarrow \mu_{M}-\mu \in \operatorname{Span}_{\mathbb{Z}_{\geq 0}}\left(\alpha_{i} \mid i=1, \ldots, r\right)</annotation></semantics></math>.</p></li>
+</ol>
+</div>
+<div class="example">
+<p><strong>Example 1</strong> (Verma module).
+<math role="math" aria-label="\lambda \in \Lambda_{0} \leadsto \Delta_{\varepsilon}^{\mathrm{mix}}(\lambda)=U_{\varepsilon}^{\mathrm{mix}} / U_{\varepsilon}^{\mathrm{mix}}\left(K_{\nu}-\varepsilon^{(\nu, \lambda)}, E_{i}^{(l)} \mid \forall i, \nu, l\right)" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>&isin;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><mo>⤳</mo><msubsup><mi mathvariant="normal">&Delta;</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><mi>/</mi><msubsup><mi>U</mi><mi>&epsilon;</mi><mrow><mi mathvariant="normal">m</mi><mi mathvariant="normal">i</mi><mi mathvariant="normal">x</mi></mrow></msubsup><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>K</mi><mi>&nu;</mi></msub><mo>−</mo><msup><mi>&epsilon;</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>&nu;</mi><mo>,</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup><mo>,</mo><msubsup><mi>E</mi><mi>i</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>l</mi><mo stretchy="false" form="postfix">)</mo></mrow></msubsup><mo>∣</mo><mo>&forall;</mo><mi>i</mi><mo>,</mo><mi>&nu;</mi><mo>,</mo><mi>l</mi><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda \in \Lambda_{0} \leadsto \Delta_{\varepsilon}^{\mathrm{mix}}(\lambda)=U_{\varepsilon}^{\mathrm{mix}} / U_{\varepsilon}^{\mathrm{mix}}\left(K_{\nu}-\varepsilon^{(\nu, \lambda)}, E_{i}^{(l)} \mid \forall i, \nu, l\right)</annotation></semantics></math>
+w. class of
+<math role="math" aria-label="1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+in
+<math role="math" aria-label="\deg = \lambda" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mo>=</mo><mi>&lambda;</mi></mrow><annotation encoding="application/x-tex">\deg = \lambda</annotation></semantics></math></p>
+</div>
+<h3 id="remarks">Remarks</h3>
+<ol>
+<li><p>Note that the definition makes perfect sense when
+<math role="math" aria-label="\varepsilon" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&epsilon;</mi><annotation encoding="application/x-tex">\varepsilon</annotation></semantics></math>
+is not a root of
+<math role="math" aria-label="1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>.
+In this case (ii) can be made into the definition of
+<math role="math" aria-label="M_{\mu}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mi>&mu;</mi></msub><annotation encoding="application/x-tex">M_{\mu}</annotation></semantics></math>:
+<math role="math" aria-label="\varepsilon^{(\nu, \mu_{1})}=\varepsilon^{(\nu, \mu_{2})} \forall \nu \Rightarrow \mu_{1}=\mu_{2}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&epsilon;</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>&nu;</mi><mo>,</mo><msub><mi>&mu;</mi><mn>1</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow></msup><mo>=</mo><msup><mi>&epsilon;</mi><mrow><mo stretchy="false" form="prefix">(</mo><mi>&nu;</mi><mo>,</mo><msub><mi>&mu;</mi><mn>2</mn></msub><mo stretchy="false" form="postfix">)</mo></mrow></msup><mo>&forall;</mo><mi>&nu;</mi><mo>&rArr;</mo><msub><mi>&mu;</mi><mn>1</mn></msub><mo>=</mo><msub><mi>&mu;</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">\varepsilon^{(\nu, \mu_{1})}=\varepsilon^{(\nu, \mu_{2})} \forall \nu \Rightarrow \mu_{1}=\mu_{2}</annotation></semantics></math>.
+So the category
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="script">O</mi><mi>&epsilon;</mi></msub><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}</annotation></semantics></math>
+(we omit the superscript "mix" b/c there’s no difference between the
+three specializations) is the complete analog of the classical BGG
+category
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">O</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math>
+of representations of simple Lie algebras.</p></li>
+<li><p>A counterpart of
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\text{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\text{mix}}</annotation></semantics></math>
+for modular representations is as follows. Let
+<math role="math" aria-label="\mathbb{F}=\bar{\mathbb{F}}_{p}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">&Fopf;</mi><mo>=</mo><msub><mover><mi mathvariant="double-struck">&Fopf;</mi><mo accent="true">‾</mo></mover><mi>p</mi></msub></mrow><annotation encoding="application/x-tex">\mathbb{F}=\bar{\mathbb{F}}_{p}</annotation></semantics></math>,
+<math role="math" aria-label="B_{\mathbb{F}} \subset G_{\mathbb{F}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>B</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><mo>&sub;</mo><msub><mi>G</mi><mi mathvariant="double-struck">&Fopf;</mi></msub></mrow><annotation encoding="application/x-tex">B_{\mathbb{F}} \subset G_{\mathbb{F}}</annotation></semantics></math>
+be a Borel subgroup. We can talk about
+<math role="math" aria-label="(\mathfrak{g}_{\mathbb{F}}, B_{\mathbb{F}})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="fraktur">g</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><mo>,</mo><msub><mi>B</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\mathfrak{g}_{\mathbb{F}}, B_{\mathbb{F}})</annotation></semantics></math>-modules:
+<math role="math" aria-label="U(\mathfrak{g}_{\mathbb{F}})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="fraktur">g</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U(\mathfrak{g}_{\mathbb{F}})</annotation></semantics></math>-modules
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+equipped in addition w. a rational representation of
+<math role="math" aria-label="B_{\mathbb{F}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><annotation encoding="application/x-tex">B_{\mathbb{F}}</annotation></semantics></math>
+s.t. the action map
+<math role="math" aria-label="U(\mathfrak{g}_{\mathbb{F}}) \otimes M \rightarrow M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="fraktur">g</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><mo stretchy="false" form="postfix">)</mo><mo>&otimes;</mo><mi>M</mi><mo>&rarr;</mo><mi>M</mi></mrow><annotation encoding="application/x-tex">U(\mathfrak{g}_{\mathbb{F}}) \otimes M \rightarrow M</annotation></semantics></math>
+is
+<math role="math" aria-label="B_{\mathbb{F}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><annotation encoding="application/x-tex">B_{\mathbb{F}}</annotation></semantics></math>-linear
+&amp; the differential of the
+<math role="math" aria-label="B_{\mathbb{F}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>B</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><annotation encoding="application/x-tex">B_{\mathbb{F}}</annotation></semantics></math>-action
+coincides w. the action of
+<math role="math" aria-label="\mathfrak{b}_{\mathbb{F}} \subset \mathfrak{g}_{\mathbb{F}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="fraktur">b</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><mo>&sub;</mo><msub><mi mathvariant="fraktur">g</mi><mi mathvariant="double-struck">&Fopf;</mi></msub></mrow><annotation encoding="application/x-tex">\mathfrak{b}_{\mathbb{F}} \subset \mathfrak{g}_{\mathbb{F}}</annotation></semantics></math>.
+The modular analog of
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\text{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\text{mix}}</annotation></semantics></math>
+consists of all
+<math role="math" aria-label="(\mathfrak{g}_{\mathbb{F}}, B_{\mathbb{F}})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="fraktur">g</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><mo>,</mo><msub><mi>B</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\mathfrak{g}_{\mathbb{F}}, B_{\mathbb{F}})</annotation></semantics></math>-modules
+finitely generated over
+<math role="math" aria-label="U(\mathfrak{g}_{\mathbb{F}})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>U</mi><mo stretchy="false" form="prefix">(</mo><msub><mi mathvariant="fraktur">g</mi><mi mathvariant="double-struck">&Fopf;</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U(\mathfrak{g}_{\mathbb{F}})</annotation></semantics></math>.</p></li>
+<li><p>As usual, each Verma
+<math role="math" aria-label="\Delta_{\varepsilon}^{\text{mix}}(\lambda)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="normal">&Delta;</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\Delta_{\varepsilon}^{\text{mix}}(\lambda)</annotation></semantics></math>
+has a unique irreducible quotient, to be denoted
+<math role="math" aria-label="L_{\varepsilon}^{\text{mix}}(\lambda)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>L</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">L_{\varepsilon}^{\text{mix}}(\lambda)</annotation></semantics></math>
+&amp;
+<math role="math" aria-label="\lambda \mapsto L_{\varepsilon}^{\text{mix}}(\lambda): \Lambda_{0} \xrightarrow{\sim} \operatorname{Irr}(\mathcal{O}_{\varepsilon}^{\text{mix}})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>&map;</mo><msubsup><mi>L</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo><mo>:</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><mover><mo>&rarr;</mo><mo accent="false">&sim;</mo></mover><mrow><mi mathvariant="normal">Irr</mi><mo>&#8289;</mo></mrow><mo stretchy="false" form="prefix">(</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\lambda \mapsto L_{\varepsilon}^{\text{mix}}(\lambda): \Lambda_{0} \xrightarrow{\sim} \operatorname{Irr}(\mathcal{O}_{\varepsilon}^{\text{mix}})</annotation></semantics></math>.
+One can show that
+<math role="math" aria-label="\operatorname{dim} L_{\varepsilon}^{\text{mix}}(\lambda)&lt;\infty" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">dim</mi><mo>&#8289;</mo></mrow><msubsup><mi>L</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo><mo>&lt;</mo><mi>&infin;</mi></mrow><annotation encoding="application/x-tex">\operatorname{dim} L_{\varepsilon}^{\text{mix}}(\lambda)&lt;\infty</annotation></semantics></math>.
+On the other hand,
+<math role="math" aria-label="\Delta_{\varepsilon}^{\text{mix}}(\lambda)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="normal">&Delta;</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\Delta_{\varepsilon}^{\text{mix}}(\lambda)</annotation></semantics></math>
+is infinite dimensional (in fact its formal character is the same as of
+the usual Verma). It follows that objects in
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\text{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\text{mix}}</annotation></semantics></math>
+may have infinite length. But they are Noetherian — in fact, each object
+in
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\text{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\text{mix}}</annotation></semantics></math>
+admits a finite filtration by quotients of Verma modules.</p></li>
+</ol>
+<h3 id="block-decomposition-of-mathcalo_varepsilontextmix">Block
+Decomposition of
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\text{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\text{mix}}</annotation></semantics></math></h3>
+<p>It turns out that the category
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\text{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\text{mix}}</annotation></semantics></math>
+introduced last time splits into the direct sum of subcategories called
+blocks (a more precise name would be "infinitesimal blocks"). To define
+the blocks we’ll need an affine Weyl group
+<math role="math" aria-label="W^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mi>a</mi></msup><annotation encoding="application/x-tex">W^{a}</annotation></semantics></math>
+and its suitable action on
+<math role="math" aria-label="\Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\Lambda_{0}</annotation></semantics></math>,
+the root lattice of
+<math role="math" aria-label="\mathfrak{g}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="fraktur">g</mi><annotation encoding="application/x-tex">\mathfrak{g}</annotation></semantics></math>.</p>
+<p>We set
+<math role="math" aria-label="W^{a}=W \ltimes \Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>W</mi><mi>a</mi></msup><mo>=</mo><mi>W</mi><mo>⋉</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">W^{a}=W \ltimes \Lambda_{0}</annotation></semantics></math>.
+We write
+<math role="math" aria-label="t_{\mu}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mi>&mu;</mi></msub><annotation encoding="application/x-tex">t_{\mu}</annotation></semantics></math>
+for
+<math role="math" aria-label="\mu \in \Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo>&isin;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\mu \in \Lambda_{0}</annotation></semantics></math>
+viewed as an element of
+<math role="math" aria-label="W^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mi>a</mi></msup><annotation encoding="application/x-tex">W^{a}</annotation></semantics></math>.
+Define an action of
+<math role="math" aria-label="W^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mi>a</mi></msup><annotation encoding="application/x-tex">W^{a}</annotation></semantics></math>
+on
+<math role="math" aria-label="\Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\Lambda_{0}</annotation></semantics></math>
+by
+<math role="math" aria-label="\begin{aligned}
+w \cdot \lambda &amp;:= w(\lambda+\rho)-\rho \quad \text{(as usual } \rho=\tfrac{1}{2} \textstyle\sum_{\alpha&gt;0} \alpha\text{)}\\
+t_{\mu} \cdot \lambda &amp;:= \lambda+d \mu \quad \text{(where } d \text{ is the order of } \varepsilon\text{)}
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><mi>w</mi><mo>&sdot;</mo><mi>&lambda;</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>:=</mo><mi>w</mi><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo>+</mo><mi>&rho;</mi><mo stretchy="false" form="postfix">)</mo><mo>−</mo><mi>&rho;</mi><mspace width="1.0em"></mspace><mrow><mtext mathvariant="normal">(as usual </mtext><mspace width="0.333em"></mspace></mrow><mi>&rho;</mi><mo>=</mo><mstyle displaystyle="false"><mfrac><mn>1</mn><mn>2</mn></mfrac></mstyle><munder><mo>&sum;</mo><mrow><mi>&alpha;</mi><mo>&gt;</mo><mn>0</mn></mrow></munder><mi>&alpha;</mi><mtext mathvariant="normal">)</mtext></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"><msub><mi>t</mi><mi>&mu;</mi></msub><mo>&sdot;</mo><mi>&lambda;</mi></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mo>:=</mo><mi>&lambda;</mi><mo>+</mo><mi>d</mi><mi>&mu;</mi><mspace width="1.0em"></mspace><mrow><mtext mathvariant="normal">(where </mtext><mspace width="0.333em"></mspace></mrow><mi>d</mi><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> is the order of </mtext><mspace width="0.333em"></mspace></mrow><mi>&epsilon;</mi><mtext mathvariant="normal">)</mtext></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+w \cdot \lambda &amp;:= w(\lambda+\rho)-\rho \quad \text{(as usual } \rho=\tfrac{1}{2} \textstyle\sum_{\alpha&gt;0} \alpha\text{)}\\
+t_{\mu} \cdot \lambda &amp;:= \lambda+d \mu \quad \text{(where } d \text{ is the order of } \varepsilon\text{)}
+\end{aligned}</annotation></semantics></math></p>
+<div class="definition">
+<p><strong>Definition 4</strong>. Let
+<math role="math" aria-label="\Theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="normal">&Theta;</mi><annotation encoding="application/x-tex">\Theta</annotation></semantics></math>
+be a
+<math role="math" aria-label="W^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mi>a</mi></msup><annotation encoding="application/x-tex">W^{a}</annotation></semantics></math>-orbit
+in
+<math role="math" aria-label="\Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\Lambda_{0}</annotation></semantics></math>.
+Define the full subcategory
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\Theta} \subset \mathcal{O}_{\varepsilon}^{\text{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo>&sub;</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup></mrow><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\Theta} \subset \mathcal{O}_{\varepsilon}^{\text{mix}}</annotation></semantics></math>
+as consisting of all objects
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+that admit a (finite) filtration by quotients of
+<math role="math" aria-label="\Delta_{\varepsilon}(\lambda), \lambda \in \Theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">&Delta;</mi><mi>&epsilon;</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>&lambda;</mi><mo>&isin;</mo><mi mathvariant="normal">&Theta;</mi></mrow><annotation encoding="application/x-tex">\Delta_{\varepsilon}(\lambda), \lambda \in \Theta</annotation></semantics></math>.</p>
+</div>
+<div class="proposition">
+<p><strong>Proposition 1</strong>.
+<em><math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\text{mix}}=\bigoplus_{\Theta} \mathcal{O}_{\varepsilon}^{\Theta}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><mo>=</mo><msub><mo>⨁</mo><mi mathvariant="normal">&Theta;</mi></msub><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup></mrow><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\text{mix}}=\bigoplus_{\Theta} \mathcal{O}_{\varepsilon}^{\Theta}</annotation></semantics></math>.</em></p>
+</div>
+<div class="proof">
+<p><em>Sketch of proof.</em> Recall the form
+<math role="math" aria-label="U_{v}^{DK} \subset U_{v}^{\text{mix}} \subset U_{v}(\mathfrak{g})" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>U</mi><mi>v</mi><mrow><mi>D</mi><mi>K</mi></mrow></msubsup><mo>&sub;</mo><msubsup><mi>U</mi><mi>v</mi><mtext mathvariant="normal">mix</mtext></msubsup><mo>&sub;</mo><msub><mi>U</mi><mi>v</mi></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="fraktur">g</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">U_{v}^{DK} \subset U_{v}^{\text{mix}} \subset U_{v}(\mathfrak{g})</annotation></semantics></math>.</p>
+<div class="exercise">
+<p><strong>Exercise 1</strong>. The center
+<math role="math" aria-label="Z_{v}^{DK}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>Z</mi><mi>v</mi><mrow><mi>D</mi><mi>K</mi></mrow></msubsup><annotation encoding="application/x-tex">Z_{v}^{DK}</annotation></semantics></math>
+of
+<math role="math" aria-label="U_{v}^{DK}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>v</mi><mrow><mi>D</mi><mi>K</mi></mrow></msubsup><annotation encoding="application/x-tex">U_{v}^{DK}</annotation></semantics></math>
+is central in
+<math role="math" aria-label="U_{v}^{\text{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>v</mi><mtext mathvariant="normal">mix</mtext></msubsup><annotation encoding="application/x-tex">U_{v}^{\text{mix}}</annotation></semantics></math>
+&amp; consists of
+<math role="math" aria-label="\deg 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mi mathvariant="normal">deg</mi><mo>&#8289;</mo></mrow><mn>0</mn></mrow><annotation encoding="application/x-tex">\deg 0</annotation></semantics></math>
+(w.r.t. the
+<math role="math" aria-label="\Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\Lambda_{0}</annotation></semantics></math>-grading
+on
+<math role="math" aria-label="U_{v}^{\text{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>U</mi><mi>v</mi><mtext mathvariant="normal">mix</mtext></msubsup><annotation encoding="application/x-tex">U_{v}^{\text{mix}}</annotation></semantics></math>)
+elements.</p>
+</div>
+<p>So
+<math role="math" aria-label="Z_{v}^{DK}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi>Z</mi><mi>v</mi><mrow><mi>D</mi><mi>K</mi></mrow></msubsup><annotation encoding="application/x-tex">Z_{v}^{DK}</annotation></semantics></math>
+acts on any object in
+<math role="math" aria-label="\mathcal{O}_{\varepsilon}^{\text{mix}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mtext mathvariant="normal">mix</mtext></msubsup><annotation encoding="application/x-tex">\mathcal{O}_{\varepsilon}^{\text{mix}}</annotation></semantics></math>
+by endomorphisms &amp; functorially leading to the decomposition of this
+category into the direct sum indexed by homomorphisms
+<math role="math" aria-label="Z_{v}^{DK} \rightarrow \mathbb{C}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>Z</mi><mi>v</mi><mrow><mi>D</mi><mi>K</mi></mrow></msubsup><mo>&rarr;</mo><mi mathvariant="double-struck">&Copf;</mi></mrow><annotation encoding="application/x-tex">Z_{v}^{DK} \rightarrow \mathbb{C}</annotation></semantics></math>.
+The following was essentially established by De Concini &amp; Kac.</p>
+<div class="fact">
+<p><strong>Fact 1</strong>.
+<em><math role="math" aria-label="Z_{v}^{DK} \xrightarrow{\sim} \operatorname{Span}_{\mathbb{Z}[v^{\pm 1}]}(K_{2\nu} \mid \nu \in \Lambda)^{(W, \cdot)}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>Z</mi><mi>v</mi><mrow><mi>D</mi><mi>K</mi></mrow></msubsup><mover><mo>&rarr;</mo><mo accent="false">&sim;</mo></mover><msub><mrow><mi mathvariant="normal">Span</mi><mo>&#8289;</mo></mrow><mrow><mi mathvariant="double-struck">&Zopf;</mi><mo stretchy="false" form="prefix">[</mo><msup><mi>v</mi><mrow><mi>&plusmn;</mi><mn>1</mn></mrow></msup><mo stretchy="false" form="postfix">]</mo></mrow></msub><mo stretchy="false" form="prefix">(</mo><msub><mi>K</mi><mrow><mn>2</mn><mi>&nu;</mi></mrow></msub><mo>∣</mo><mi>&nu;</mi><mo>&isin;</mo><mi mathvariant="normal">&Lambda;</mi><msup><mo stretchy="false" form="postfix">)</mo><mrow><mo stretchy="false" form="prefix">(</mo><mi>W</mi><mo>,</mo><mi>&sdot;</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">Z_{v}^{DK} \xrightarrow{\sim} \operatorname{Span}_{\mathbb{Z}[v^{\pm 1}]}(K_{2\nu} \mid \nu \in \Lambda)^{(W, \cdot)}</annotation></semantics></math>
+&amp; under this identification,
+<math role="math" aria-label="\sum_{\omega \in W} K_{2\omega \cdot \nu}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&sum;</mo><mrow><mi>&omega;</mi><mo>&isin;</mo><mi>W</mi></mrow></msub><msub><mi>K</mi><mrow><mn>2</mn><mi>&omega;</mi><mo>&sdot;</mo><mi>&nu;</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\sum_{\omega \in W} K_{2\omega \cdot \nu}</annotation></semantics></math>
+acts on
+<math role="math" aria-label="\Delta(\lambda)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Delta;</mi><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\Delta(\lambda)</annotation></semantics></math>
+by
+<math role="math" aria-label="\sum_{\omega \in W} \varepsilon^{2(\omega \cdot \nu, \lambda)}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mo>&sum;</mo><mrow><mi>&omega;</mi><mo>&isin;</mo><mi>W</mi></mrow></msub><msup><mi>&epsilon;</mi><mrow><mn>2</mn><mo stretchy="false" form="prefix">(</mo><mi>&omega;</mi><mo>&sdot;</mo><mi>&nu;</mi><mo>,</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">\sum_{\omega \in W} \varepsilon^{2(\omega \cdot \nu, \lambda)}</annotation></semantics></math></em></p>
+</div>
+<div class="exercise">
+<p><strong>Exercise 2</strong>. Deduce Proposition from Fact.</p>
+</div>
+<p> ◻</p>
+</div>
+</main>
+</body>
+</html>

@@ -19,7 +19,7 @@ The Math Circle is a Fall program for elementary and middle school students from
 - [Fall 2021 program](https://uva.theopenscholar.com/slava-krushkal/math-circle)
 - [Fall 2020 program](https://uva.theopenscholar.com/slava-krushkal/fall-2020-program)
 - [Fall 2019 program](https://uva.theopenscholar.com/slava-krushkal/fall-2019-program)
-- [Expanding the circle](http://as.virginia.edu/ampersand/expanding-circle), an overview of the Math Circle (<a href="MathCircle_article.pdf">PDF</a>)
+- [Expanding the circle](http://as.virginia.edu/ampersand/expanding-circle), an overview of the Math Circle (<a href="MathCircle_article.html">HTML</a>) (<a href="MathCircle_article.pdf">PDF</a>)
 
 
 ## Contact

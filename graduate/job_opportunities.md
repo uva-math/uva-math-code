@@ -194,4 +194,4 @@ The Mathematics Research Group at the National Security (NSA) offers two excepti
 
 They offer a unique opportunity for graduate students to work directly with NSA mathematicians on mission-critical problems and experience the excitement of the NSA mathematics community.
 
-Please click here:<a href="{{ site.url }}/graduate/docs/DSP-GMP Info Sheets_2015 2.pdf">&nbsp;Graduate Mathematics Program (GMP)</a>
+Please click here:<a href="{{ site.url }}/graduate/docs/DSP-GMP Info Sheets_2015 2.html">&nbsp;Graduate Mathematics Program (GMP)</a> (<a href="{{ site.url }}/graduate/docs/DSP-GMP Info Sheets_2015 2.pdf">PDF</a>)

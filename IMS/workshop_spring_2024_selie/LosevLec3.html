@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Quantum Category O, III</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a5dab;
+      text-decoration: underline;
+    }
+    a:visited {
+      color: #6b3fa0;
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<main>
+<h1 class="unnumbered" id="quantum-category-mathcalo-iii">Quantum
+Category
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">O</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math>,
+III</h1>
+<h2 id="images-of-vermas">Images of Vermas</h2>
+<h3 id="recap-and-questions">Recap and Questions</h3>
+<p>Last time we have stated the main equivalence between triangulated
+categories
+<math role="math" aria-label="\begin{equation*}
+D^b\left(\mathcal{O}_\varepsilon^\Theta\right) \xrightarrow{\sim} {}_gH := K^b({}_g\underline{SMod}) \tag{*}
+\end{equation*}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>D</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mover><mo>&rarr;</mo><mo accent="false">&sim;</mo></mover><msub><mrow></mrow><mi>g</mi></msub><mi>H</mi><mo>:=</mo><msup><mi>K</mi><mi>b</mi></msup><mo stretchy="false" form="prefix">(</mo><msub><mrow></mrow><mi>g</mi></msub><munder><mrow><mi>S</mi><mi>M</mi><mi>o</mi><mi>d</mi></mrow><mo accent="true">_</mo></munder><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\begin{equation*}
+D^b\left(\mathcal{O}_\varepsilon^\Theta\right) \xrightarrow{\sim} {}_gH := K^b({}_g\underline{SMod}) \tag{*}
+\end{equation*}</annotation></semantics></math></p>
+<h4 class="unnumbered" id="questions">Questions</h4>
+<ol>
+<li><p>Where does
+<math role="math" aria-label="\mathcal{O}_\varepsilon^\Theta \subset D^b\left(\mathcal{O}_\varepsilon^\Theta\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo>&sub;</mo><msup><mi>D</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{O}_\varepsilon^\Theta \subset D^b\left(\mathcal{O}_\varepsilon^\Theta\right)</annotation></semantics></math>
+go under
+<math role="math" aria-label="(*)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>*</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(*)</annotation></semantics></math>?</p></li>
+<li><p>Where do Verma modules
+<math role="math" aria-label="\Delta_\varepsilon(\lambda) \in \mathcal{O}_\varepsilon^\Theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">&Delta;</mi><mi>&epsilon;</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup></mrow><annotation encoding="application/x-tex">\Delta_\varepsilon(\lambda) \in \mathcal{O}_\varepsilon^\Theta</annotation></semantics></math>,
+<math role="math" aria-label="\lambda \in \Theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>&isin;</mo><mi mathvariant="normal">&Theta;</mi></mrow><annotation encoding="application/x-tex">\lambda \in \Theta</annotation></semantics></math>,
+go?</p></li>
+</ol>
+<h3 id="from-2-to-1">From 2) to 1)</h3>
+<p>It turns out that we can, to some extent, answer 1) if we know an
+answer to 2). Define the following subcategories in
+<math role="math" aria-label="D^b\left(\mathcal{O}_\varepsilon^\Theta\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>D</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">D^b\left(\mathcal{O}_\varepsilon^\Theta\right)</annotation></semantics></math>:
+<math role="math" aria-label="\mathcal{T}^{&gt;0}=\left\{X \in D^b\left(\mathcal{O}_\varepsilon^\Theta\right) \mid \operatorname{Hom}_{D^b\left(\mathcal{O}_\varepsilon^\Theta\right)}\left(\Delta_\varepsilon(\lambda)[i], X\right)=0, \forall \lambda \in \Theta, i \geqslant 0\right\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="script">T</mi><mrow><mo>&gt;</mo><mn>0</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>X</mi><mo>&isin;</mo><msup><mi>D</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mo>∣</mo><msub><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mrow><msup><mi>D</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi mathvariant="normal">&Delta;</mi><mi>&epsilon;</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="prefix">[</mo><mi>i</mi><mo stretchy="false" form="postfix">]</mo><mo>,</mo><mi>X</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mn>0</mn><mo>,</mo><mo>&forall;</mo><mi>&lambda;</mi><mo>&isin;</mo><mi mathvariant="normal">&Theta;</mi><mo>,</mo><mi>i</mi><mo>&ge;</mo><mn>0</mn><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{T}^{&gt;0}=\left\{X \in D^b\left(\mathcal{O}_\varepsilon^\Theta\right) \mid \operatorname{Hom}_{D^b\left(\mathcal{O}_\varepsilon^\Theta\right)}\left(\Delta_\varepsilon(\lambda)[i], X\right)=0, \forall \lambda \in \Theta, i \geqslant 0\right\}</annotation></semantics></math>
+<math role="math" aria-label="\mathcal{T}^{\leqslant 0}=\left\{Y \in D^b\left(\mathcal{O}_\varepsilon^\Theta\right) \mid \operatorname{Hom}_{D^b\left(\mathcal{O}_\varepsilon^\Theta\right)}(Y, X)=0 \; \forall X \in \mathcal{T}^{&gt;0}\right\}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="script">T</mi><mrow><mo>&le;</mo><mn>0</mn></mrow></msup><mo>=</mo><mrow><mo stretchy="true" form="prefix">{</mo><mi>Y</mi><mo>&isin;</mo><msup><mi>D</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mo>∣</mo><msub><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><mrow><msup><mi>D</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow></mrow></msub><mo stretchy="false" form="prefix">(</mo><mi>Y</mi><mo>,</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn><mspace width="0.278em"></mspace><mo>&forall;</mo><mi>X</mi><mo>&isin;</mo><msup><mi mathvariant="script">T</mi><mrow><mo>&gt;</mo><mn>0</mn></mrow></msup><mo stretchy="true" form="postfix">}</mo></mrow></mrow><annotation encoding="application/x-tex">\mathcal{T}^{\leqslant 0}=\left\{Y \in D^b\left(\mathcal{O}_\varepsilon^\Theta\right) \mid \operatorname{Hom}_{D^b\left(\mathcal{O}_\varepsilon^\Theta\right)}(Y, X)=0 \; \forall X \in \mathcal{T}^{&gt;0}\right\}</annotation></semantics></math></p>
+<div class="exercise">
+<p><strong>Exercise 1</strong>. Show that
+<math role="math" aria-label="\mathcal{O}_\varepsilon^\Theta = \mathcal{T}^{\leqslant 0} \cap \mathcal{T}^{&gt;0}[1]" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo>=</mo><msup><mi mathvariant="script">T</mi><mrow><mo>&le;</mo><mn>0</mn></mrow></msup><mo>&cap;</mo><msup><mi mathvariant="script">T</mi><mrow><mo>&gt;</mo><mn>0</mn></mrow></msup><mo stretchy="false" form="prefix">[</mo><mn>1</mn><mo stretchy="false" form="postfix">]</mo></mrow><annotation encoding="application/x-tex">\mathcal{O}_\varepsilon^\Theta = \mathcal{T}^{\leqslant 0} \cap \mathcal{T}^{&gt;0}[1]</annotation></semantics></math>
+(hint:
+<math role="math" aria-label="\forall M \in \mathcal{O}_\varepsilon^\Theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&forall;</mo><mi>M</mi><mo>&isin;</mo><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup></mrow><annotation encoding="application/x-tex">\forall M \in \mathcal{O}_\varepsilon^\Theta</annotation></semantics></math>
+<math role="math" aria-label="\exists \lambda \in \Theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&exist;</mo><mi>&lambda;</mi><mo>&isin;</mo><mi mathvariant="normal">&Theta;</mi></mrow><annotation encoding="application/x-tex">\exists \lambda \in \Theta</annotation></semantics></math>
+s.t.
+<math role="math" aria-label="\operatorname{Hom}_{\mathcal{O}_\varepsilon^\Theta}\left(\Delta_\varepsilon(\lambda), M\right) \neq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow><mi mathvariant="normal">Hom</mi><mo>&#8289;</mo></mrow><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup></msub><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi mathvariant="normal">&Delta;</mi><mi>&epsilon;</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>&lambda;</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>M</mi><mo stretchy="true" form="postfix">)</mo></mrow><mo>&ne;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\operatorname{Hom}_{\mathcal{O}_\varepsilon^\Theta}\left(\Delta_\varepsilon(\lambda), M\right) \neq 0</annotation></semantics></math>).</p>
+</div>
+<h3 id="affine-braid-group-action">Affine Braid Group Action</h3>
+<p><em>Motivation:</em>
+<math role="math" aria-label="\mathcal{O}_\varepsilon^\Theta" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msubsup><mi mathvariant="script">O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><annotation encoding="application/x-tex">\mathcal{O}_\varepsilon^\Theta</annotation></semantics></math>
+has very easy categorical symmetry – the shift of grading by an element
+of
+<math role="math" aria-label="d\Lambda_0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">d\Lambda_0</annotation></semantics></math>
+sending Vermas to Vermas. Can we see that for
+<math role="math" aria-label="{}_gH" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow></mrow><mi>g</mi></msub><mi>H</mi></mrow><annotation encoding="application/x-tex">{}_gH</annotation></semantics></math>?</p>
+<p>To
+<math role="math" aria-label="W^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>W</mi><mi>a</mi></msup><annotation encoding="application/x-tex">W^{a}</annotation></semantics></math>
+we can assign the corresponding affine braid group
+<math role="math" aria-label="\mathrm{Br}^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">r</mi></mrow><mi>a</mi></msup><annotation encoding="application/x-tex">\mathrm{Br}^{a}</annotation></semantics></math>:
+it’s generated by
+<math role="math" aria-label="T_{s}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>T</mi><mi>s</mi></msub><annotation encoding="application/x-tex">T_{s}</annotation></semantics></math>,
+<math role="math" aria-label="s \in S" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mo>&isin;</mo><mi>S</mi></mrow><annotation encoding="application/x-tex">s \in S</annotation></semantics></math>,
+with relations
+<math role="math" aria-label="\underbrace{T_{s} T_{t} T_{s} \ldots}_{m_{st}}=\underbrace{T_{t} T_{s} T_{t} \ldots}_{m_{st}} \text{ for } s \neq t, \quad m_{st}=\operatorname{order} \text{ of } st." display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><munder><mrow><msub><mi>T</mi><mi>s</mi></msub><msub><mi>T</mi><mi>t</mi></msub><msub><mi>T</mi><mi>s</mi></msub><mi>&hellip;</mi></mrow><mo accent="true">⏟</mo></munder><msub><mi>m</mi><mrow><mi>s</mi><mi>t</mi></mrow></msub></munder><mo>=</mo><munder><munder><mrow><msub><mi>T</mi><mi>t</mi></msub><msub><mi>T</mi><mi>s</mi></msub><msub><mi>T</mi><mi>t</mi></msub><mi>&hellip;</mi></mrow><mo accent="true">⏟</mo></munder><msub><mi>m</mi><mrow><mi>s</mi><mi>t</mi></mrow></msub></munder><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> for </mtext><mspace width="0.333em"></mspace></mrow><mi>s</mi><mo>&ne;</mo><mi>t</mi><mo>,</mo><mspace width="1.0em"></mspace><msub><mi>m</mi><mrow><mi>s</mi><mi>t</mi></mrow></msub><mo>=</mo><mrow><mi mathvariant="normal">order</mi><mo>&#8289;</mo></mrow><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> of </mtext><mspace width="0.333em"></mspace></mrow><mi>s</mi><mi>t</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\underbrace{T_{s} T_{t} T_{s} \ldots}_{m_{st}}=\underbrace{T_{t} T_{s} T_{t} \ldots}_{m_{st}} \text{ for } s \neq t, \quad m_{st}=\operatorname{order} \text{ of } st.</annotation></semantics></math>
+We want to construct an action of
+<math role="math" aria-label="\mathrm{Br}^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">r</mi></mrow><mi>a</mi></msup><annotation encoding="application/x-tex">\mathrm{Br}^{a}</annotation></semantics></math>
+on a deformed version of
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>
+by equivalences (of triangulated categories), which is more elementary
+than dealing w.
+<math role="math" aria-label="{}_gH" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mrow></mrow><mi>g</mi></msub><mi>H</mi></mrow><annotation encoding="application/x-tex">{}_gH</annotation></semantics></math>
+or
+<math role="math" aria-label="H" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>H</mi><annotation encoding="application/x-tex">H</annotation></semantics></math>.</p>
+<ul>
+<li><p>Deformed version:
+<math role="math" aria-label="\hat{R}=\lim\limits_{\longleftarrow\, n} S(v)/(v)^{n}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>R</mi><mo accent="true">̂</mo></mover><mo>=</mo><munder><mi mathvariant="normal">lim</mi><mrow><mo>&larr;</mo><mspace width="0.167em"></mspace><mi>n</mi></mrow></munder><mi>S</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mo stretchy="false" form="prefix">(</mo><mi>v</mi><msup><mo stretchy="false" form="postfix">)</mo><mi>n</mi></msup></mrow><annotation encoding="application/x-tex">\hat{R}=\lim\limits_{\longleftarrow\, n} S(v)/(v)^{n}</annotation></semantics></math>,
+completion at
+<math role="math" aria-label="0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>0</mn><annotation encoding="application/x-tex">0</annotation></semantics></math><br />
+<math role="math" aria-label="\underline{\text{SBim}}^{\wedge}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><munder><mtext mathvariant="normal">SBim</mtext><mo accent="true">_</mo></munder><mo>&and;</mo></msup><annotation encoding="application/x-tex">\underline{\text{SBim}}^{\wedge}</annotation></semantics></math>:
+full subcategory in
+<math role="math" aria-label="\hat{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>R</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{R}</annotation></semantics></math>-bimod
+w. objects
+<math role="math" aria-label="B \otimes_{R} \hat{R} \simeq \hat{R} \otimes_{R} B" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><msub><mo>&otimes;</mo><mi>R</mi></msub><mover><mi>R</mi><mo accent="true">̂</mo></mover><mo>&simeq;</mo><mover><mi>R</mi><mo accent="true">̂</mo></mover><msub><mo>&otimes;</mo><mi>R</mi></msub><mi>B</mi></mrow><annotation encoding="application/x-tex">B \otimes_{R} \hat{R} \simeq \hat{R} \otimes_{R} B</annotation></semantics></math><br />
+w.
+<math role="math" aria-label="B \in \text{SBim}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi><mo>&isin;</mo><mtext mathvariant="normal">SBim</mtext></mrow><annotation encoding="application/x-tex">B \in \text{SBim}</annotation></semantics></math>,
+monoidal additive category<br />
+<math role="math" aria-label="\rightarrow \hat{H}=K^{b}\left(\underline{\text{SBim}}^{\wedge}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&rarr;</mo><mover><mi>H</mi><mo accent="true">̂</mo></mover><mo>=</mo><msup><mi>K</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msup><munder><mtext mathvariant="normal">SBim</mtext><mo accent="true">_</mo></munder><mo>&and;</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\rightarrow \hat{H}=K^{b}\left(\underline{\text{SBim}}^{\wedge}\right)</annotation></semantics></math>
+w. monoidal structure denoted by
+<math role="math" aria-label="*" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>*</mi><annotation encoding="application/x-tex">*</annotation></semantics></math></p></li>
+</ul>
+<p><math role="math" aria-label="ev_{0}: \underline{\text{SBim}}^{\wedge} \rightarrow \underline{\text{SMod}}, \quad B \mapsto B/BV \sim ev_{0}: \hat{H} \rightarrow H" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>e</mi><msub><mi>v</mi><mn>0</mn></msub><mo>:</mo><msup><munder><mtext mathvariant="normal">SBim</mtext><mo accent="true">_</mo></munder><mo>&and;</mo></msup><mo>&rarr;</mo><munder><mtext mathvariant="normal">SMod</mtext><mo accent="true">_</mo></munder><mo>,</mo><mspace width="1.0em"></mspace><mi>B</mi><mo>&map;</mo><mi>B</mi><mi>/</mi><mi>B</mi><mi>V</mi><mo>&sim;</mo><mi>e</mi><msub><mi>v</mi><mn>0</mn></msub><mo>:</mo><mover><mi>H</mi><mo accent="true">̂</mo></mover><mo>&rarr;</mo><mi>H</mi></mrow><annotation encoding="application/x-tex">ev_{0}: \underline{\text{SBim}}^{\wedge} \rightarrow \underline{\text{SMod}}, \quad B \mapsto B/BV \sim ev_{0}: \hat{H} \rightarrow H</annotation></semantics></math></p>
+<ul>
+<li><p><math role="math" aria-label="\mathrm{Br}^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">r</mi></mrow><mi>a</mi></msup><annotation encoding="application/x-tex">\mathrm{Br}^{a}</annotation></semantics></math>-action
+(Rouquier):
+<math role="math" aria-label="\exists" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&exist;</mo><annotation encoding="application/x-tex">\exists</annotation></semantics></math>
+group homomorphism<br />
+<math role="math" aria-label="\mathcal{R}: \mathrm{Br}^{a} \rightarrow" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="script">ℛ</mi><mo>:</mo><msup><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">r</mi></mrow><mi>a</mi></msup><mo>&rarr;</mo></mrow><annotation encoding="application/x-tex">\mathcal{R}: \mathrm{Br}^{a} \rightarrow</annotation></semantics></math>
+group of iso. classes of invertible objects in
+<math role="math" aria-label="\hat{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mover><mi>H</mi><mo accent="true">̂</mo></mover><annotation encoding="application/x-tex">\hat{H}</annotation></semantics></math></p></li>
+</ul>
+<p><math role="math" aria-label="T_{s} \mapsto \left[\underset{\text{deg } -1}{0 \to \hat{R}} \underset{1 \mapsto \alpha_{s} \otimes 1+1 \otimes \alpha_{s}}{\longrightarrow} \hat{R} \otimes_{\hat{R}^{s}} \hat{R} \to 0\right]" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>T</mi><mi>s</mi></msub><mo>&map;</mo><mrow><mo stretchy="true" form="prefix">[</mo><munder><mrow><mn>0</mn><mo>&rarr;</mo><mover><mi>R</mi><mo accent="true">̂</mo></mover></mrow><mrow><mrow><mtext mathvariant="normal">deg </mtext><mspace width="0.333em"></mspace></mrow><mo>−</mo><mn>1</mn></mrow></munder><munder><mo>&rarr;</mo><mrow><mn>1</mn><mo>&map;</mo><msub><mi>&alpha;</mi><mi>s</mi></msub><mo>&otimes;</mo><mn>1</mn><mo>+</mo><mn>1</mn><mo>&otimes;</mo><msub><mi>&alpha;</mi><mi>s</mi></msub></mrow></munder><mover><mi>R</mi><mo accent="true">̂</mo></mover><msub><mo>&otimes;</mo><msup><mover><mi>R</mi><mo accent="true">̂</mo></mover><mi>s</mi></msup></msub><mover><mi>R</mi><mo accent="true">̂</mo></mover><mo>&rarr;</mo><mn>0</mn><mo stretchy="true" form="postfix">]</mo></mrow></mrow><annotation encoding="application/x-tex">T_{s} \mapsto \left[\underset{\text{deg } -1}{0 \to \hat{R}} \underset{1 \mapsto \alpha_{s} \otimes 1+1 \otimes \alpha_{s}}{\longrightarrow} \hat{R} \otimes_{\hat{R}^{s}} \hat{R} \to 0\right]</annotation></semantics></math></p>
+<h3 id="objects-hatdeltax-and-deltax">Objects
+<math role="math" aria-label="\hat{\Delta}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\hat{\Delta}(x)</annotation></semantics></math>
+and
+<math role="math" aria-label="\Delta(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Delta;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\Delta(x)</annotation></semantics></math></h3>
+<p><math role="math" aria-label="\begin{aligned}
+&amp; x \in W^{a} \leadsto T_{x} \in \mathrm{Br}^{a} \quad\left(x=s_{1} \ldots s_{e}, \text{ reduced}, \leadsto T_{x}:=T_{s_{1}} \ldots T_{s_{e}}\right) \\
+&amp; \hat{\Delta}(x):=\mathcal{R}\left(T_{x^{-1}}^{-1}\right) \in \hat{H}, \quad \Delta(x):=\operatorname{ev}_{0}(\hat{\Delta}(x)) \in H.
+\end{aligned}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mtable><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mi>x</mi><mo>&isin;</mo><msup><mi>W</mi><mi>a</mi></msup><mo>⤳</mo><msub><mi>T</mi><mi>x</mi></msub><mo>&isin;</mo><msup><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">r</mi></mrow><mi>a</mi></msup><mspace width="1.0em"></mspace><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><mo>=</mo><msub><mi>s</mi><mn>1</mn></msub><mi>&hellip;</mi><msub><mi>s</mi><mi>e</mi></msub><mo>,</mo><mrow><mspace width="0.333em"></mspace><mtext mathvariant="normal"> reduced</mtext></mrow><mo>,</mo><mo>⤳</mo><msub><mi>T</mi><mi>x</mi></msub><mo>:=</mo><msub><mi>T</mi><msub><mi>s</mi><mn>1</mn></msub></msub><mi>&hellip;</mi><msub><mi>T</mi><msub><mi>s</mi><mi>e</mi></msub></msub><mo stretchy="true" form="postfix">)</mo></mrow></mtd></mtr><mtr><mtd columnalign="right" style="text-align: right; padding-right: 0"></mtd><mtd columnalign="left" style="text-align: left; padding-left: 0"><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><mi mathvariant="script">ℛ</mi><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>T</mi><msup><mi>x</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mo>&isin;</mo><mover><mi>H</mi><mo accent="true">̂</mo></mover><mo>,</mo><mspace width="1.0em"></mspace><mi mathvariant="normal">&Delta;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><msub><mrow><mi mathvariant="normal">ev</mi><mo>&#8289;</mo></mrow><mn>0</mn></msub><mo stretchy="false" form="prefix">(</mo><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi>H</mi><mi>.</mi></mtd></mtr></mtable><annotation encoding="application/x-tex">\begin{aligned}
+&amp; x \in W^{a} \leadsto T_{x} \in \mathrm{Br}^{a} \quad\left(x=s_{1} \ldots s_{e}, \text{ reduced}, \leadsto T_{x}:=T_{s_{1}} \ldots T_{s_{e}}\right) \\
+&amp; \hat{\Delta}(x):=\mathcal{R}\left(T_{x^{-1}}^{-1}\right) \in \hat{H}, \quad \Delta(x):=\operatorname{ev}_{0}(\hat{\Delta}(x)) \in H.
+\end{aligned}</annotation></semantics></math></p>
+<div class="remark">
+<p><em>Remark 1</em>. One can play the same game as in Exercise in Sec
+1.1 w. the objects
+<math role="math" aria-label="\Delta(x) \in \mathcal{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Delta;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>&isin;</mo><mi mathvariant="script">ℋ</mi></mrow><annotation encoding="application/x-tex">\Delta(x) \in \mathcal{H}</annotation></semantics></math>
+getting an abelian subcategory in
+<math role="math" aria-label="\mathcal{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℋ</mi><annotation encoding="application/x-tex">\mathcal{H}</annotation></semantics></math>
+(the heart of a
+<math role="math" aria-label="t" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>-structure,
+in fact). In the constructible realization of
+<math role="math" aria-label="\mathcal{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">ℋ</mi><annotation encoding="application/x-tex">\mathcal{H}</annotation></semantics></math>,
+this is the category of perverse sheaves.</p>
+</div>
+<h3 id="lattice-and-stabilization">Lattice and Stabilization</h3>
+<p>The embedding
+<math role="math" aria-label="\Lambda_{0} \hookrightarrow W^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><mo>↪</mo><msup><mi>W</mi><mi>a</mi></msup></mrow><annotation encoding="application/x-tex">\Lambda_{0} \hookrightarrow W^{a}</annotation></semantics></math>
+lifts to
+<math role="math" aria-label="\Lambda_{0} \rightarrow \mathrm{Br}^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><mo>&rarr;</mo><msup><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">r</mi></mrow><mi>a</mi></msup></mrow><annotation encoding="application/x-tex">\Lambda_{0} \rightarrow \mathrm{Br}^{a}</annotation></semantics></math>
+uniquely so that for
+<math role="math" aria-label="\lambda \in \Lambda_{0}^{+}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>&isin;</mo><msubsup><mi mathvariant="normal">&Lambda;</mi><mn>0</mn><mo>+</mo></msubsup></mrow><annotation encoding="application/x-tex">\lambda \in \Lambda_{0}^{+}</annotation></semantics></math>
+(dominant)
+<math role="math" aria-label="\lambda \mapsto T_{t_{\lambda}}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>&map;</mo><msub><mi>T</mi><msub><mi>t</mi><mi>&lambda;</mi></msub></msub></mrow><annotation encoding="application/x-tex">\lambda \mapsto T_{t_{\lambda}}</annotation></semantics></math>
+(unique b/c
+<math role="math" aria-label="\forall" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&forall;</mo><annotation encoding="application/x-tex">\forall</annotation></semantics></math>
+element of
+<math role="math" aria-label="\Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\Lambda_{0}</annotation></semantics></math>
+is the difference of dominant ones).</p>
+<p><em>Notation:</em>
+<math role="math" aria-label="J_{\mu}:=" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>J</mi><mi>&mu;</mi></msub><mo>:=</mo></mrow><annotation encoding="application/x-tex">J_{\mu}:=</annotation></semantics></math>
+image of
+<math role="math" aria-label="\mu \in \Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo>&isin;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\mu \in \Lambda_{0}</annotation></semantics></math>
+in
+<math role="math" aria-label="\mathrm{Br}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">B</mi><mi mathvariant="normal">r</mi></mrow><annotation encoding="application/x-tex">\mathrm{Br}</annotation></semantics></math>.</p>
+<p>Note that
+<math role="math" aria-label="\hat{\Delta}\left(x t_{\mu}\right) \not\simeq \hat{\Delta}(x) * J_{\mu}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><msub><mi>t</mi><mi>&mu;</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>≄</mo><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>*</mo><msub><mi>J</mi><mi>&mu;</mi></msub></mrow><annotation encoding="application/x-tex">\hat{\Delta}\left(x t_{\mu}\right) \not\simeq \hat{\Delta}(x) * J_{\mu}</annotation></semantics></math>
+for general
+<math role="math" aria-label="x, \mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>,</mo><mi>&mu;</mi></mrow><annotation encoding="application/x-tex">x, \mu</annotation></semantics></math>.
+But there’s “stabilization.”</p>
+<div class="observation">
+<p><em>Observation 1</em>.
+<math role="math" aria-label="\lambda, \mu \in -\Lambda_{0}^{+}, w \in W, x = w t_{\lambda} \Rightarrow \ell\left(x t_{\mu}\right) = \ell(x) + \ell\left(t_{\mu}\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&lambda;</mi><mo>,</mo><mi>&mu;</mi><mo>&isin;</mo><mi>−</mi><msubsup><mi mathvariant="normal">&Lambda;</mi><mn>0</mn><mo>+</mo></msubsup><mo>,</mo><mi>w</mi><mo>&isin;</mo><mi>W</mi><mo>,</mo><mi>x</mi><mo>=</mo><mi>w</mi><msub><mi>t</mi><mi>&lambda;</mi></msub><mo>&rArr;</mo><mi>&ell;</mi><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><msub><mi>t</mi><mi>&mu;</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mi>&ell;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>+</mo><mi>&ell;</mi><mrow><mo stretchy="true" form="prefix">(</mo><msub><mi>t</mi><mi>&mu;</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\lambda, \mu \in -\Lambda_{0}^{+}, w \in W, x = w t_{\lambda} \Rightarrow \ell\left(x t_{\mu}\right) = \ell(x) + \ell\left(t_{\mu}\right)</annotation></semantics></math><br />
+<math role="math" aria-label="\Rightarrow T_{\left(x t_{-\mu}\right)^{-1}}^{-1} J_{-\mu} = T_{x^{-1}}^{-1} \Rightarrow \hat{\Delta}\left(x t_{-\mu}\right) = \hat{\Delta}(x) * J_{-\mu}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&rArr;</mo><msubsup><mi>T</mi><msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><msub><mi>t</mi><mrow><mi>−</mi><mi>&mu;</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><msub><mi>J</mi><mrow><mi>−</mi><mi>&mu;</mi></mrow></msub><mo>=</mo><msubsup><mi>T</mi><msup><mi>x</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mrow><mi>−</mi><mn>1</mn></mrow></msubsup><mo>&rArr;</mo><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><msub><mi>t</mi><mrow><mi>−</mi><mi>&mu;</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>*</mo><msub><mi>J</mi><mrow><mi>−</mi><mi>&mu;</mi></mrow></msub></mrow><annotation encoding="application/x-tex">\Rightarrow T_{\left(x t_{-\mu}\right)^{-1}}^{-1} J_{-\mu} = T_{x^{-1}}^{-1} \Rightarrow \hat{\Delta}\left(x t_{-\mu}\right) = \hat{\Delta}(x) * J_{-\mu}</annotation></semantics></math></p>
+</div>
+<div class="lemma">
+<p><strong>Lemma 1</strong> (Definition of
+<math role="math" aria-label="\hat{\Delta}^{st}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\hat{\Delta}^{st}(x)</annotation></semantics></math>).
+<em><math role="math" aria-label="\forall x \in W^{a}\ \exists \mu_{x} \in \Lambda_{0}^{+}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&forall;</mo><mi>x</mi><mo>&isin;</mo><msup><mi>W</mi><mi>a</mi></msup><mspace width="0.222em"></mspace><mo>&exist;</mo><msub><mi>&mu;</mi><mi>x</mi></msub><mo>&isin;</mo><msubsup><mi mathvariant="normal">&Lambda;</mi><mn>0</mn><mo>+</mo></msubsup></mrow><annotation encoding="application/x-tex">\forall x \in W^{a}\ \exists \mu_{x} \in \Lambda_{0}^{+}</annotation></semantics></math>
+s.t. <math role="math" aria-label="\hat{\Delta}\left(x t_{-\mu}\right) * J_{\mu}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><msub><mi>t</mi><mrow><mi>−</mi><mi>&mu;</mi></mrow></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>*</mo><msub><mi>J</mi><mi>&mu;</mi></msub></mrow><annotation encoding="application/x-tex">\hat{\Delta}\left(x t_{-\mu}\right) * J_{\mu}</annotation></semantics></math>
+doesn’t depend on
+<math role="math" aria-label="\mu" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&mu;</mi><annotation encoding="application/x-tex">\mu</annotation></semantics></math>
+if
+<math role="math" aria-label="\mu \geqslant \mu_{x}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&mu;</mi><mo>&ge;</mo><msub><mi>&mu;</mi><mi>x</mi></msub></mrow><annotation encoding="application/x-tex">\mu \geqslant \mu_{x}</annotation></semantics></math>.
+Denote this object by
+<math role="math" aria-label="\hat{\Delta}^{st}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\hat{\Delta}^{st}(x)</annotation></semantics></math>
+(“st” for stabilized).</em></p>
+</div>
+<div class="exercise">
+<p><strong>Exercise 2</strong>.
+<math role="math" aria-label="\hat{\Delta}^{st}\left(x t_{\mu}\right) \simeq \hat{\Delta}^{st}(x) * J_{\mu}\ \forall x \in W^{a}, \mu \in \Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mrow><mi>s</mi><mi>t</mi></mrow></msup><mrow><mo stretchy="true" form="prefix">(</mo><mi>x</mi><msub><mi>t</mi><mi>&mu;</mi></msub><mo stretchy="true" form="postfix">)</mo></mrow><mo>&simeq;</mo><msup><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>*</mo><msub><mi>J</mi><mi>&mu;</mi></msub><mspace width="0.222em"></mspace><mo>&forall;</mo><mi>x</mi><mo>&isin;</mo><msup><mi>W</mi><mi>a</mi></msup><mo>,</mo><mi>&mu;</mi><mo>&isin;</mo><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\hat{\Delta}^{st}\left(x t_{\mu}\right) \simeq \hat{\Delta}^{st}(x) * J_{\mu}\ \forall x \in W^{a}, \mu \in \Lambda_{0}</annotation></semantics></math>.</p>
+</div>
+<p><math role="math" aria-label="\Delta^{st}(x) := \mathrm{ev}_{0}\left(\hat{\Delta}^{st}(x)\right) \in \mathcal{H}" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi mathvariant="normal">&Delta;</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo>:=</mo><msub><mrow><mi mathvariant="normal">e</mi><mi mathvariant="normal">v</mi></mrow><mn>0</mn></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mover><mi mathvariant="normal">&Delta;</mi><mo accent="true">̂</mo></mover><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>&isin;</mo><mi mathvariant="script">ℋ</mi></mrow><annotation encoding="application/x-tex">\Delta^{st}(x) := \mathrm{ev}_{0}\left(\hat{\Delta}^{st}(x)\right) \in \mathcal{H}</annotation></semantics></math></p>
+<div class="theorem">
+<p><strong>Theorem 1</strong>. <em>Let
+<math role="math" aria-label="\Theta = W^{a} \cdot 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Theta;</mi><mo>=</mo><msup><mi>W</mi><mi>a</mi></msup><mo>&sdot;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Theta = W^{a} \cdot 0</annotation></semantics></math>.
+<math role="math" aria-label="\exists" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&exist;</mo><annotation encoding="application/x-tex">\exists</annotation></semantics></math>
+equivalence
+<math role="math" aria-label="D^{b}\left(O_{\varepsilon}^{\Theta}\right) \xrightarrow{\sim} \mathcal{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>D</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mover><mo>&rarr;</mo><mo accent="false">&sim;</mo></mover><mi mathvariant="script">ℋ</mi></mrow><annotation encoding="application/x-tex">D^{b}\left(O_{\varepsilon}^{\Theta}\right) \xrightarrow{\sim} \mathcal{H}</annotation></semantics></math>
+w. <math role="math" aria-label="\Delta_{\varepsilon}\left(x^{-1} \cdot(-2 \rho)\right) \mapsto \Delta^{st}(x)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">&Delta;</mi><mi>&epsilon;</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo>&sdot;</mo><mo stretchy="false" form="prefix">(</mo><mi>−</mi><mn>2</mn><mi>&rho;</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>&map;</mo><msup><mi mathvariant="normal">&Delta;</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\Delta_{\varepsilon}\left(x^{-1} \cdot(-2 \rho)\right) \mapsto \Delta^{st}(x)</annotation></semantics></math>.</em></p>
+</div>
+<h3 id="singular-blocks">Singular Blocks</h3>
+<p><math role="math" aria-label="\mathbb{A}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="double-struck">&Aopf;</mi><annotation encoding="application/x-tex">\mathbb{A}</annotation></semantics></math>:
+anti-dominant alcove in
+<math role="math" aria-label="\Lambda_{0}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi mathvariant="normal">&Lambda;</mi><mn>0</mn></msub><annotation encoding="application/x-tex">\Lambda_{0}</annotation></semantics></math>,
+<math role="math" aria-label="\lambda^{\circ} \in \Theta \cap \mathbb{A} \leadsto J \subset S \leadsto R^{J} \subset R \sim \pi_{J}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>&lambda;</mi><mo>&SmallCircle;</mo></msup><mo>&isin;</mo><mi mathvariant="normal">&Theta;</mi><mo>&cap;</mo><mi mathvariant="double-struck">&Aopf;</mi><mo>⤳</mo><mi>J</mi><mo>&sub;</mo><mi>S</mi><mo>⤳</mo><msup><mi>R</mi><mi>J</mi></msup><mo>&sub;</mo><mi>R</mi><mo>&sim;</mo><msub><mi>&pi;</mi><mi>J</mi></msub></mrow><annotation encoding="application/x-tex">\lambda^{\circ} \in \Theta \cap \mathbb{A} \leadsto J \subset S \leadsto R^{J} \subset R \sim \pi_{J}</annotation></semantics></math>:
+<math role="math" aria-label="\underline{SMod} \rightarrow_{J} \underline{SMod} \sim \pi_{J}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><munder><mrow><mi>S</mi><mi>M</mi><mi>o</mi><mi>d</mi></mrow><mo accent="true">_</mo></munder><msub><mo>&rarr;</mo><mi>J</mi></msub><munder><mrow><mi>S</mi><mi>M</mi><mi>o</mi><mi>d</mi></mrow><mo accent="true">_</mo></munder><mo>&sim;</mo><msub><mi>&pi;</mi><mi>J</mi></msub></mrow><annotation encoding="application/x-tex">\underline{SMod} \rightarrow_{J} \underline{SMod} \sim \pi_{J}</annotation></semantics></math>:
+<math role="math" aria-label="H \rightarrow_{J} \mathcal{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>H</mi><msub><mo>&rarr;</mo><mi>J</mi></msub><mi mathvariant="script">ℋ</mi></mrow><annotation encoding="application/x-tex">H \rightarrow_{J} \mathcal{H}</annotation></semantics></math>.</p>
+<div class="observation">
+<p><em>Observation 2</em>.
+<math role="math" aria-label="\pi_{J}(\Delta(w x)) \simeq \pi_{J}(\Delta(x)) \quad \forall w \in W_{J}, x \in W^{a}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mi>J</mi></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">&Delta;</mi><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mo>&simeq;</mo><msub><mi>&pi;</mi><mi>J</mi></msub><mo stretchy="false" form="prefix">(</mo><mi mathvariant="normal">&Delta;</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="false" form="postfix">)</mo><mspace width="1.0em"></mspace><mo>&forall;</mo><mi>w</mi><mo>&isin;</mo><msub><mi>W</mi><mi>J</mi></msub><mo>,</mo><mi>x</mi><mo>&isin;</mo><msup><mi>W</mi><mi>a</mi></msup></mrow><annotation encoding="application/x-tex">\pi_{J}(\Delta(w x)) \simeq \pi_{J}(\Delta(x)) \quad \forall w \in W_{J}, x \in W^{a}</annotation></semantics></math>.</p>
+</div>
+<p>Compare to: Behavior of Vermas in the BGG category
+<math role="math" aria-label="\mathcal{O}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi mathvariant="script">O</mi><annotation encoding="application/x-tex">\mathcal{O}</annotation></semantics></math>
+under translations to the wall.</p>
+<p>From Observation (&amp; its deformed version):
+<math role="math" aria-label="\pi_{J}\left(\Delta^{st}(w x)\right) \simeq \pi_{J}\left(\Delta^{st}(x)\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mi>J</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi mathvariant="normal">&Delta;</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>w</mi><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow><mo>&simeq;</mo><msub><mi>&pi;</mi><mi>J</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi mathvariant="normal">&Delta;</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\pi_{J}\left(\Delta^{st}(w x)\right) \simeq \pi_{J}\left(\Delta^{st}(x)\right)</annotation></semantics></math></p>
+<div class="theorem">
+<p><strong>Theorem 2</strong>. <em>Let
+<math role="math" aria-label="\Theta = W^{a} \cdot 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">&Theta;</mi><mo>=</mo><msup><mi>W</mi><mi>a</mi></msup><mo>&sdot;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\Theta = W^{a} \cdot 0</annotation></semantics></math>.
+<math role="math" aria-label="\exists" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>&exist;</mo><annotation encoding="application/x-tex">\exists</annotation></semantics></math>
+equivalence
+<math role="math" aria-label="D^{b}\left(O_{\varepsilon}^{\Theta}\right) \xrightarrow{\sim} {}_{J}\mathcal{H}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>D</mi><mi>b</mi></msup><mrow><mo stretchy="true" form="prefix">(</mo><msubsup><mi>O</mi><mi>&epsilon;</mi><mi mathvariant="normal">&Theta;</mi></msubsup><mo stretchy="true" form="postfix">)</mo></mrow><mover><mo>&rarr;</mo><mo accent="false">&sim;</mo></mover><msub><mrow></mrow><mi>J</mi></msub><mi mathvariant="script">ℋ</mi></mrow><annotation encoding="application/x-tex">D^{b}\left(O_{\varepsilon}^{\Theta}\right) \xrightarrow{\sim} {}_{J}\mathcal{H}</annotation></semantics></math>
+w. <math role="math" aria-label="\Delta_{\varepsilon}\left(x^{-1} \cdot \lambda^{\circ}\right) \mapsto \pi_{J}\left(\Delta^{st}(x)\right)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi mathvariant="normal">&Delta;</mi><mi>&epsilon;</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi>x</mi><mrow><mi>−</mi><mn>1</mn></mrow></msup><mo>&sdot;</mo><msup><mi>&lambda;</mi><mo>&SmallCircle;</mo></msup><mo stretchy="true" form="postfix">)</mo></mrow><mo>&map;</mo><msub><mi>&pi;</mi><mi>J</mi></msub><mrow><mo stretchy="true" form="prefix">(</mo><msup><mi mathvariant="normal">&Delta;</mi><mrow><mi>s</mi><mi>t</mi></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo stretchy="false" form="postfix">)</mo><mo stretchy="true" form="postfix">)</mo></mrow></mrow><annotation encoding="application/x-tex">\Delta_{\varepsilon}\left(x^{-1} \cdot \lambda^{\circ}\right) \mapsto \pi_{J}\left(\Delta^{st}(x)\right)</annotation></semantics></math>.</em></p>
+</div>
+</main>
+</body>
+</html>
