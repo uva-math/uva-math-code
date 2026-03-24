@@ -20,9 +20,6 @@ The Department of Mathematics hosted an online diploma ceremony on May 16.
     YouTube link to the <a href="https://youtu.be/Vkgagv9r3MU">UVA Class of 2020 Virtual Celebration</a>
   </li>
   <li>
-    <a href="https://math.virginia.edu/img/news_events/2020ceremony_program.pdf">PDF of the Math Department program</a>
-  </li>
-  <li>
     Math diploma ceremonies recordings:
 <br>
 <iframe width="400" height="250" src="https://www.youtube-nocookie.com/embed/fuQ4-p05kGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>

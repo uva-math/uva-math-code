@@ -12,8 +12,6 @@ hide-this-item: true
 
 "_The family index of the odd signature operator with coeffcients in a flat bundle_".
 
-<a href="{{site.url}}/img/news_events/MattGagne_DefensePoster.pdf">Poster (PDF)</a>
-
 - Date: Wednesday, April 24
 - Time: 1:15 pm 
 - Place: Gilmer 166
