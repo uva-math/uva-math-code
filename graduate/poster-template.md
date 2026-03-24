@@ -37,14 +37,6 @@ This LaTeX template is designed for creating professional announcement posters f
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <div class="card h-100">
-      <div class="card-body">
-        <h5 class="card-title">Example PDF</h5>
-        <a href="{{site.url}}/graduate/docs/PosterTemplate.pdf" target="_blank">View PDF (6.6 MB)</a>
-      </div>
-    </div>
-  </div>
 </div>
 
 ## Template Features
