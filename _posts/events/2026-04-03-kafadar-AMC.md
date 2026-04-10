@@ -3,7 +3,7 @@ layout: post
 title: "Applied Mathematics Colloquium, April 9: Karen Kafadar (UVA Statistics)"
 event-date: 2026-04-09 15:45:00
 comments: false
-categories: news events major-news
+categories: news events
 published: true
 image: __SITE_URL__/img/news_events/Kafadar-AMC-2026-04-09.jpg
 image-alt: "Applied Mathematics Colloquium poster featuring Commonwealth Professor Karen Kafadar from the UVA Department of Statistics"
