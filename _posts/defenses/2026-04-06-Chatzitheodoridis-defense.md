@@ -5,6 +5,7 @@ event-date: 2026-04-06 12:30:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **Eleftherios Chatzitheodoridis** will defend the Ph.D. thesis on **Monday, April 6**. The title is
