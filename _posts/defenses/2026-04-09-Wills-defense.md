@@ -5,6 +5,7 @@ event-date: 2026-04-10 15:30:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **Michael Wills** will defend the Ph.D. thesis on **Friday, April 10**. The title is
