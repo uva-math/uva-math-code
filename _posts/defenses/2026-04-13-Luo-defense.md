@@ -5,6 +5,7 @@ event-date: 2026-04-14 14:15:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **Yangxiao Luo** will defend the Ph.D. thesis on **Tuesday, April 14**. The title is
