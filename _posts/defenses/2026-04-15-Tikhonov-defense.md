@@ -5,6 +5,7 @@ event-date: 2026-04-17 14:00:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **Mikhail Tikhonov** will defend the Ph.D. thesis on **Friday, April 17**. The title is
