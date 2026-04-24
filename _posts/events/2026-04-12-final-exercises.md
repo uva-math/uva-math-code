@@ -59,14 +59,14 @@ details > div {
 
 <h3>Saturday &nbsp;|&nbsp; May 16th &nbsp;|&nbsp; 2:30 &ndash; 4:00 P.M.</h3>
 
-<p><strong>The Rotunda</strong> &nbsp;|&nbsp; 1826 University Avenue &nbsp;|&nbsp; Charlottesville, VA 22904</p>
+<p><strong>The Rotunda, North Steps</strong> &nbsp;|&nbsp; 1826 University Avenue &nbsp;|&nbsp; Charlottesville, VA 22904</p>
 
 <p>In the case of inclement or severe weather, the ceremony will be held at <strong>Warner Hall</strong> at the same time. Check the <a href="https://majorevents.virginia.edu/finals/weatherplans">Weather Plans</a> site for updates.</p>
 
 <ul>
-<li><strong>Fair-Weather Location:</strong> The Rotunda</li>
+<li><strong>Fair-Weather Location:</strong> The Rotunda, North Steps</li>
 <li><strong>Inclement-Weather Location:</strong> Warner Hall</li>
-<li><strong>Department Contact:</strong> Malvika Rajagopal: <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a></li>
+<li><strong>Department Contact:</strong> Malvika Rajagopal: <a href="mailto:geg7jw@virginia.edu">geg7jw@virginia.edu</a></li>
 </ul>
 
 <p>Please visit the <a href="https://majorevents.virginia.edu/finals/schedule">Office of Major Events</a> for the complete schedule of events for finals weekend, including the Lawn Ceremony.</p>
@@ -83,7 +83,7 @@ details > div {
 <details>
 <summary>Student Arrival Time</summary>
 <div>
-<p>Graduates must be seated no later than 10 minutes before the start of the ceremony (start time TBD) at the Rotunda (in front of the Jefferson Statue).</p>
+<p>Graduates should arrive by <strong>2:00 P.M.</strong>, and all guests must be seated at least 10 minutes before the ceremony starts. The ceremony is anticipated to be 60 minutes long, followed by a short reception.</p>
 </div>
 </details>
 
@@ -104,7 +104,10 @@ details > div {
 <details>
 <summary>Disability and Accessibility</summary>
 <div>
-<p>Please visit the <a href="https://majorevents.virginia.edu/finals/generalinformation/accessibility">Major Events Accessibility</a> page for information about services for persons with disabilities/limited mobility. Should you or your guests require disability-related accommodations, please send your request to <a href="mailto:adacoordinator@virginia.edu">adacoordinator@virginia.edu</a> as early as possible. Examples of accommodations may include real-time captioning, ASL-English interpreting services, accessible seating, and accessible parking. The University ADA Coordinator will be available to provide assistance and guidance regarding accommodation requests.</p>
+<p>Please visit the <a href="https://majorevents.virginia.edu/finals/generalinformation/accessibility">Major Events Accessibility</a> page for information about services for persons with disabilities/limited mobility for the Lawn ceremony.</p>
+<p>Guests needing accessibility accommodation (e.g., wheelchair seating) should contact Malvika Rajagopal: <a href="mailto:geg7jw@virginia.edu">geg7jw@virginia.edu</a>, or email <a href="mailto:uvagraduation@virginia.edu">uvagraduation@virginia.edu</a>.</p>
+<p>Please contact <a href="mailto:adacoordinator@virginia.edu">adacoordinator@virginia.edu</a> for Deaf/hard of hearing access.</p>
+<p>Examples of accommodations may include real-time captioning, ASL-English interpreting services, accessible seating, and accessible parking. The University ADA Coordinator will be available to provide assistance and guidance regarding accommodation requests.</p>
 </div>
 </details>
 
@@ -130,8 +133,15 @@ details > div {
 </details>
 
 <details>
+<summary>Diplomas</summary>
+<div>
+<p>All students receive a commemorative scroll featuring the Rotunda during the ceremony. Official diplomas are mailed to graduates (or have already been mailed for August/December graduates).</p>
+</div>
+</details>
+
+<details>
 <summary>Contact / Questions</summary>
 <div>
-<p>We will post updates to this site. Please reach out to Malvika Rajagopal (<a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a>) with any questions.</p>
+<p>We will post updates to this site. Please reach out to Malvika Rajagopal (<a href="mailto:geg7jw@virginia.edu">geg7jw@virginia.edu</a>) with any questions.</p>
 </div>
 </details>
