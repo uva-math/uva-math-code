@@ -8,19 +8,22 @@ nav_weight: 4
 tooltips: true
 ---
 
-<h1 class="mb-4">Diagnostic for Path 2</h1>
+# Diagnostic for Path 2
 
-<p> We offer Math 1190, 1210, and 1220 for Path 2 </p>
+<p> We offer Math 1191/1192, 1210, and 1220 for Path 2 </p>
 
  <ul>
-    <li> <span class="bolded">Math 1190</span>, Survey of Calculus 1 with Algebra is a <strong>4</strong> credit course designed to provide a gentle introduction to Survey of Calculus 1 with addtional pre-calculus and algebra practice.  This is a great course if it's been awhile since your last math course and/or you would like to brush up on your pre-calculus and/or algebra skills.  </li>
-    <li> <span class="bolded">Math 1210</span>, Survey of Calculus 1, is a <strong>3</strong> credit course designed to answer the question "How do we describe how things change?" for non-STEM majors.  This is sometimes called <em>Differential Calculus</em>.  </li>
-      <li> <span class="bolded">Math 1220</span>, Survey of Calculus 2, is a <strong>3</strong> credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for non-STEM majors. This is sometimes called <em>Integral Calculus</em>.  </li>
+    <li> **Math 1191 and 1192**, (Survey of Calculus 1A and 1B) - is a two semester sequence (3 credits each semester) that provides extra support to obtain a course equivalency for  Math 1210. 
+
+	Sudents will get help to “knock the rust off” of algebra and pre-calculus ideas that they may have seen before. They will also see how math is applied in other disciplines that they might encounter in their major.
+	 </li>
+    <li> **Math 1210**, Survey of Calculus 1, is a <strong>3</strong> credit course designed to answer the question "How do we describe how things change?" for non-STEM majors.  This is sometimes called <em>Differential Calculus</em>.  </li>
+      <li> **Math 1220**, Survey of Calculus 2, is a <strong>3</strong> credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for non-STEM majors. This is sometimes called <em>Integral Calculus</em>.  </li>
   </ul>
 
   
 <p>
- <span class="bolded"> <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a></span> has more complete descriptions of each of these courses.
+ <span class="bolded"> <a href=" https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a></span> has more complete descriptions of each of these courses.
  </p>
 
  

@@ -8,7 +8,7 @@ nav_weight: 4
 tooltips: true
 ---
 
-<h1 class="mb-4">Diagnostic for Path 1</h1>
+# Diagnostic for Path 1
 
 <p>We have several great choices for non-Calculus based courses. </p>
 <div class=diagnostic>
@@ -19,10 +19,10 @@ tooltips: true
 <li> <span class="bolded">MATH 1160:</span> Algebra, Number Systems and Number Theory </li>
 </ul>
 
- <span class="bolded"> <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a></span> has more complete descriptions of each of these courses.
+ <span class="bolded"> <a href=" https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a></span> has more complete descriptions of each of these courses.
  </div>
   <p></p>
  
- <h3 class="mb-4"> Which course is the best place to start?  </h3>
+# Which course is the best place to start? 
  <p>Simply pick the course that is most interesting to you and sign up!</p>
  
