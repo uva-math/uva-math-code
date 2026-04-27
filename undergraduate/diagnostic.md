@@ -13,7 +13,7 @@ tooltips: true
  
 ## What Math courses do I need?
 <p> First, you will want to think about what major you are considering and the introductory mathematics courses you should take. <a href="https://math.virginia.edu/undergraduate/diagnosticCourses">Here's a list</a> of some majors and courses they require. </p>
-<h3 class="mb-4">Introductory Math courses: Three Pathways </h3>
+## Introductory Math courses: Three Pathways
 <div class="diagnostic">
 <ol>
   <li>   <em>Do you need to fulfill a quantitative reasoning requirement and don't need a calculus-based course for your major?</em> We offer MATH 1110 Probability/Finite Mathematics, MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and MATH 1160 Algebra, Number Systems and Number Theory.  </li>

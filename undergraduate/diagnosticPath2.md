@@ -9,43 +9,33 @@ tooltips: true
 ---
 
 # Diagnostic for Path 2
+We offer Math 1191/1192, 1210, and 1220 for Path 2.
 
-<p> We offer Math 1191/1192, 1210, and 1220 for Path 2 </p>
+1. **Math 1191 and 1192**, (Survey of Calculus 1A and 1B) - is a two semester sequence (3 credits each semester) that provides extra support to obtain a course equivalency for  Math 1210. 
+    - Students will get help to “knock the rust off” of algebra and pre-calculus ideas that they may have seen before. They will also see how math is applied in other disciplines that they might encounter in their major.
+    - Students will get help to “knock the rust off” of algebra and pre-calculus ideas that they may have seen before. They will also see how math is applied in other disciplines that they might encounter in their major.
+    - Students must take both 1191 and 1192 (a total of 6 credits) to get course equivalency for Math 1210.
+ <div style="padding-left: 2em;"> **Questions that might help decide whether or not Math 1191/92 might be for you.** </div>
+	- *Has it been a long time since I took calculus or pre-calculus?
+	- Was my last math class in high school  geometry or Algebra II instead of pre-calculus?
+	- Does a slower pace appeal to me?
+2. **Math 1210**, Survey of Calculus 1, is a **3** credit course designed to answer the question "How do we describe how things change?" for non-STEM majors.  This is sometimes called  _Differential Calculus_. 
+3. **Math 1220**, Survey of Calculus 2, is a **3** credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for non-STEM majors. This is sometimes called _Integral Calculus_.
 
- <ul>
-    <li> **Math 1191 and 1192**, (Survey of Calculus 1A and 1B) - is a two semester sequence (3 credits each semester) that provides extra support to obtain a course equivalency for  Math 1210. 
+[Hoo's List](https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics) has more complete descriptions of each of these courses
+# Which course is the best place to start? 
+ 1. *Has it been a long time since I took calculus or pre-calculus?* If yes, Math 1191 is a great place to start. If no, Math 1210 could be your course.
+ 2. *Was my last math class in high school  geometry or Algebra II instead of pre-calculus?* If yes, Math 1191 is the best course to start in.
+ 3. *Does a slower pace appeal to me?* If yes, Math 1191 is a great environment to start in.
+ 4. *Would it be helpful to brush up or get more practice with Algebra and/or Pre-Calculus?* If yes, Math 1191 is a good course to get this. If no, Math 1210 is a good starting point.
+ 5. A*re you trying to decide betwen Math 1210 and Math 1220?* You will need to do 3 things
+	  - Take this [self-paced diagnostic](https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html).
+	  - Check your answers with this [solution guide](https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pd) ([HTML](https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html"))
+	  - Use [this advice](https://math.virginia.edu/undergraduate/diagnosticPath2Advice) to decide which course to take.
 
-	Sudents will get help to “knock the rust off” of algebra and pre-calculus ideas that they may have seen before. They will also see how math is applied in other disciplines that they might encounter in their major.
-	 </li>
-    <li> **Math 1210**, Survey of Calculus 1, is a <strong>3</strong> credit course designed to answer the question "How do we describe how things change?" for non-STEM majors.  This is sometimes called <em>Differential Calculus</em>.  </li>
-      <li> **Math 1220**, Survey of Calculus 2, is a <strong>3</strong> credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for non-STEM majors. This is sometimes called <em>Integral Calculus</em>.  </li>
-  </ul>
 
-  
-<p>
- <span class="bolded"> <a href=" https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a></span> has more complete descriptions of each of these courses.
- </p>
 
- 
- <h3> Which course is the best place to start?  </h3>
- 
- 
- <ol>
-    <li><em>Have you <span class="bolded">not</span> taken calculus course before?  Has it been quite awhile since your last calculus course?</em> </li>
-		<ul>
-			<li>Math 1190 or Math 1210 is probably your best starting point.</li>
-		</ul>
    
-    <li><em> Would it be helpful to brush up or get more practice with Algebra and/or Pre-Calculus?</em> </li>
-		 <ul>
-			 <li>if 'yes' is your answer, then 1190 Would be a great environment to do this. </li>
-			 <li>if 'no' is your answer then Math 1210 would be a good fit. </li>
-		</ul>
+
+
   
-    <li> <em> Are you trying to decide betwen Math 1210 and Math 1220?</em> You will need to do 3 things.</li>
-    	<ul>
-			  <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">self-paced Diagnostic.</a></li>
-			  <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">this solution guide</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html">HTML</a>).</li>
-			  <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">this advice</a> to decide which course to take.</li>
-    	</ul>
-</ol>
