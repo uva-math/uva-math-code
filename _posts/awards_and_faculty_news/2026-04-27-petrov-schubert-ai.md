@@ -15,14 +15,4 @@ The preprint is on the arXiv: [*Computation and sampling for Schubert specializa
 
 <!--more-->
 
-The assumption, known as the Merzon-Smirnov conjecture, proposed that a key measure of complexity for these polynomials would always reach its highest value in a specific kind of ordering called a "layered permutation." Researchers were able to confirm this pattern in smaller cases by checking every possibility with a computer. However, as the size of the problem grew, the number of possibilities increased so rapidly that a complete search became impractical.
-
-Despite growing excitement around AI-driven mathematical discovery, no automated system had identified an example where the pattern breaks down. The first such counterexample appears at a size just beyond what earlier computational searches had been able to reach.
-
-Ultimately, Petrov and his collaborators combined improved computational methods with new theoretical approaches to resolve the problem, which underscores both the promise and current limits of artificial intelligence in mathematical research.
-
-The result also contributes to an ongoing conversation about how AI can support — but not replace — human creativity in solving complex problems.
-
-"Over the past several months, we've seen many accounts of AI achieving results in mathematics that are truly impressive. This is one example of how it couldn't," Petrov said. "In the end, the conjecture fell to a combination of improved computational techniques and human insight."
-
 [Read the full story at UVA Arts & Sciences](https://as.virginia.edu/news/mathematicians-outperform-ai-solving-complex-math-challenge)
