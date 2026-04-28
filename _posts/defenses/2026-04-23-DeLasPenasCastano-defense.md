@@ -5,6 +5,7 @@ event-date: 2026-04-24 15:30:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **Alejandro De Las Penas Castano** will defend the Ph.D. thesis on **Friday, April 24**. The title is

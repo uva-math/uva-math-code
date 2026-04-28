@@ -5,6 +5,7 @@ event-date: 2026-04-23 09:00:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **John Layne** will defend the DMP thesis on **Thursday, April 23**. The title is

@@ -5,6 +5,7 @@ event-date: 2026-04-24 13:00:00
 comments: false
 categories: news events defenses
 published: true
+hide-this-item: true
 ---
 
 **Anthony Doll** will defend the DMP thesis on **Friday, April 24**. The title is
