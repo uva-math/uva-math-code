@@ -8,6 +8,6 @@ office: 119 Kerchof Hall
 phone: 
 email: gvs3ka@virginia.edu
 image: __SITE_URL__/img/people/2022-fall/Jaklitsch.jpg 
-personal_page:
+personal_page: https://sites.google.com/view/thomasjaklitsch
 
 ---
