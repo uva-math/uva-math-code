@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "undergraduate/diagnostic.md",
+                "file": "undergraduate/placement.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "diagnostic"
+              "title": "placement"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "undergraduate/diagnostic.md",
+                "file": "undergraduate/placement.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for diagnostic"
+              "title": "Backlinks for placement"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "undergraduate/diagnostic.md",
+                "file": "undergraduate/placement.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from diagnostic"
+              "title": "Outgoing links from placement"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "undergraduate/diagnostic.md",
+                "file": "undergraduate/placement.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of diagnostic"
+              "title": "Outline of placement"
             }
           }
         ]
@@ -185,11 +185,11 @@
   },
   "active": "842c3ebf61f73674",
   "lastOpenFiles": [
+    "undergraduate/diagnostic.md",
     "undergraduate/placementOLD_4_29_26.md",
     "undergraduate/placement copy.md",
     "_posts/defenses/2026-04-28-Lichtman-defense.md",
     "Advanced Placement Credit.md",
-    "undergraduate/diagnostic.md",
     "undergraduate/diagnosticCourses.md",
     "undergraduate/diagnosticPath2.md",
     "undergraduate/placement.md",
