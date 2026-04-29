@@ -10,9 +10,11 @@ tooltips: true
 # Placement: What's the best math course to take?
 * **Incoming students** We are excited that you are interested in taking a math class at UVA! It is important to find a good starting place so that we can best support your learning. Here's a link to the pre-enrollment survey PUTLINKHERE
 * **What courses do I need?**  [Here's a list](https://math.virginia.edu/undergraduate/diagnosticCourses/) of some majors and courses they require.
-* **Which introductory course should I start in?** FIXLINK2 [Go here](#intro-courses-pathways-anchor)
-* **Advanced and Additional Math Courses** FIXLINK [Go here][#advanced-math-courses]
-* **Advanced Placement Credit** FIXLINK [[placement#advanced-placement-credit|Go here]]
+* **Which introductory course should I start in?**  [Go here](#intro-courses-pathways-anchor)
+* **Advanced Calculus and Linear Algebra** FIXLINK2[Go here](#advanced-courses-anchor)
+* **Additional Math Courses** FIXLINK2 [Go here](#additional-courses-anchor)
+* **Advanced Placement Credit** FIXLINK2 [Go here](#advanced-placement-anchor)
+
 ## Introductory Math courses: Three Pathways <a name="intro-courses-pathways-anchor"></a>
 1. *Do you need to fulfill a quantitative reasoning requirement and don't need a calculus-based course for your major?* We offer MATH 1110 Probability/Finite Mathematics, MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and MATH 1160 Algebra, Number Systems and Number Theory.  
 
@@ -28,11 +30,11 @@ tooltips: true
 
 *If you are unsure which UVA math course should be your first, please consult your [Advising Dean](https://college.as.virginia.edu/academic-advising-deans).*
 
-## Advanced Calculus and Linear Algebra
+## Advanced Calculus and Linear Algebra  <a name="advanced-courses-anchor"></a>
 
 To enroll in accelerated sections {%include course number=2315%} and its continuation {%include course number=3315%}<span style="margin-left:-4px"></span>, the student should contact the instructor. These courses are designed for highly motivated mathematics students. These courses are meant for those students who expect to major in subjects requiring the use of fairly advanced mathematics and for others who just love doing mathematics. It differs from {%include course number=2310%} in that more advanced material will be covered and more work on the part of the student will be expected. We expect that the additional effort will be amply rewarded. The prerequisite is a good command of single variable calculus.
 
-## Additional Courses
+## Additional Courses <a name="additional-courses-anchor"></a>
 
 Pre-med students who are seeking to fulfill the &ldquo;second-semester&rdquo; calculus course required by some medical schools typically take {%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%}.
 
@@ -40,7 +42,7 @@ Elementary Education students planning to enroll in the 5-year Teacher Education
 
 To prepare for the mathematics major, you should complete the calculus sequence {%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}<span style="margin-left:-4px"></span>, {%include course number=2310%} by the end of your fourth semester; you also must demonstrate computer proficiency by completing CS 1110, CS 1111, CS 1112, &nbsp;CS 1113, CS 1120, or PHYS 2660, or an approved equivalent course with a grade of C- or higher. Please refer to the School of Engineering&rsquo;s enrollment policy on CS courses, which may be found on their web site. Descriptions of the major and minor programs are available from the Mathematics Department office.
 
-## Advanced Placement Credit
+## Advanced Placement Credit <a name="advanced-placement-anchor"></a>
 
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
 
