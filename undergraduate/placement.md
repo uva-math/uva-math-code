@@ -23,8 +23,8 @@ tooltips: true
 2. *Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?* Path 2 includes Differential and Integral Calculus for non-STEM majors via MATH 1191/1192, MATH 1210, and MATH 1220.
 
 >>>>>*Next Step*. Take the [Path 2 diagnostic and course information](https://math.virginia.edu/undergraduate/diagnosticPath2)
->
->3. *Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?* Path 3 includes Differential Calculus, Integral Calculus, and Multivariable Calculus. We offer MATH 1310, MATH 1320 and Math 2310 for this path.
+
+3. *Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?* Path 3 includes Differential Calculus, Integral Calculus, and Multivariable Calculus. We offer MATH 1310, MATH 1320 and Math 2310 for this path.
 
 >>>>>*Next Step*. Take the [Path 3 diagnostic and course information](https://math.virginia.edu/undergraduate/diagnosticPath3)
 
