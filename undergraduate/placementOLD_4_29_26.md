@@ -1,7 +1,7 @@
 ---
 title: Math placement
 layout: ug_page
-ug_policy: true
+ug_policy: false <!--  changed from true to false -->
 permalink: /content/math-placement/
 nav_parent: Undergraduate
 nav_weight: 5
