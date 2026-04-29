@@ -4,16 +4,16 @@ layout: ug_page
 ug_page: true
 permalink: /undergraduate/diagnostic/
 nav_parent: Undergraduate
-nav_weight: 4
+nav_weight: 3
 tooltips: true
 ---
 # Placement: What's the best math course to take?
 * **Incoming students** We are excited that you are interested in taking a math class at UVA! It is important to find a good starting place so that we can best support your learning. Here's a link to the pre-enrollment survey PUTLINKHERE
 * **What courses do I need?**  [Here's a list](https://math.virginia.edu/undergraduate/diagnosticCourses/) of some majors and courses they require.
-* **Which introductory course should I start in?** FIXLINK [Go here][#introductory-math-courses-three-pathways]
+* **Which introductory course should I start in?** FIXLINK2 [Go here](#intro-courses-pathways-anchor)
 * **Advanced and Additional Math Courses** FIXLINK [Go here][#advanced-math-courses]
 * **Advanced Placement Credit** FIXLINK [[placement#advanced-placement-credit|Go here]]
-## Introductory Math courses: Three Pathways
+## Introductory Math courses: Three Pathways <a name="intro-courses-pathways-anchor"></a>
 1. *Do you need to fulfill a quantitative reasoning requirement and don't need a calculus-based course for your major?* We offer MATH 1110 Probability/Finite Mathematics, MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and MATH 1160 Algebra, Number Systems and Number Theory.  
 
 >>>>>*Next Step*. Take the  [Path 1 diagnostic and course information](https://math.virginia.edu/undergraduate/diagnosticPath1).
@@ -27,12 +27,12 @@ tooltips: true
 >>>>>*Next Step*. Take the [Path 3 diagnostic and course information](https://math.virginia.edu/undergraduate/diagnosticPath3)
 
 *If you are unsure which UVA math course should be your first, please consult your [Advising Dean](https://college.as.virginia.edu/academic-advising-deans).*
-## Advanced Math courses 
-### Advanced Calculus and Linear Algebra
+
+## Advanced Calculus and Linear Algebra
 
 To enroll in accelerated sections {%include course number=2315%} and its continuation {%include course number=3315%}<span style="margin-left:-4px"></span>, the student should contact the instructor. These courses are designed for highly motivated mathematics students. These courses are meant for those students who expect to major in subjects requiring the use of fairly advanced mathematics and for others who just love doing mathematics. It differs from {%include course number=2310%} in that more advanced material will be covered and more work on the part of the student will be expected. We expect that the additional effort will be amply rewarded. The prerequisite is a good command of single variable calculus.
 
-### Additional Courses
+## Additional Courses
 
 Pre-med students who are seeking to fulfill the &ldquo;second-semester&rdquo; calculus course required by some medical schools typically take {%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%}.
 
