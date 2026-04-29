@@ -4,7 +4,7 @@ layout: ug_page
 ug_info: true
 permalink: /content/math-placement/
 nav_parent: Undergraduate
-nav_weight: 2
+nav_weight: 1
 tooltips: true
 ---
 # Placement: What's the best math course to take?
