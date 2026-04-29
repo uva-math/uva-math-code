@@ -1,40 +1,38 @@
 ---
-title: Math placement
+title: Math Placement
 layout: ug_page
-ug_policy: true
+ug_info: true
 permalink: /content/math-placement/
 nav_parent: Undergraduate
-nav_weight: 5
+nav_weight: 3
 tooltips: true
 ---
+# Placement: What's the best math course to take?
+* **Incoming students** We are excited that you are interested in taking a math class at UVA! It is important to find a good starting place so that we can best support your learning. Here's a link to the pre-enrollment survey PUTLINKHERE
+* **What courses do I need?**  [Here's a list](https://math.virginia.edu/undergraduate/diagnosticCourses/) of some majors and courses they require.
+* Which introductory course should I start in?  [Go here][#introductory-math-courses-three-pathways]
+* **Advanced and Additional Math Courses** [Go here][#advanced-math-courses]
+* **Advanced Placement Credit** [Go here][advanced-placement-credit]
+## Introductory Math courses: Three Pathways
+1. *Do you need to fulfill a quantitative reasoning requirement and don't need a calculus-based course for your major?* We offer MATH 1110 Probability/Finite Mathematics, MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and MATH 1160 Algebra, Number Systems and Number Theory.  
 
-<h1 class="mb-4">Placement in Math courses</h1>
+>>>>>*Next Step*. Take the  [Path 1 diagnostic and course information](https://math.virginia.edu/undergraduate/diagnosticPath1).
 
-## Social sciences, arts, humanities students
+2. *Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?* Path 2 includes Differential and Integral Calculus for non-STEM majors via MATH 1191/1192, MATH 1210, and MATH 1220.
 
-Students planning to major in the social sciences, arts, or humanities, and who wish to take a mathematics course but omit the study of calculus, may choose from {%include course number=1110%} or {%include course number=1140%}<span style="margin-left:-4px"></span>. Students may not take all 12 credits needed to satisfy the math/science requirement from the Department of Mathematics and the Department of Statistics. For purposes of the requirement, the courses in these two departments are treated as coming from a single department.
+>>>>>*Next Step*. Take the [Path 2 diagnostic and course information](https://math.virginia.edu/undergraduate/diagnosticPath2)
+>
+>3. *Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?* Path 3 includes Differential Calculus, Integral Calculus, and Multivariable Calculus. We offer MATH 1310, MATH 1320 and Math 2310 for this path.
 
-## Calculus
+>>>>>*Next Step*. Take the [Path 3 diagnostic and course information](https://math.virginia.edu/undergraduate/diagnosticPath3)
 
-<p>The study of calculus is the foundation of college mathematics for students planning to major in mathematics or the physical sciences, or for those who anticipate a career or graduate study in any of the physical sciences, engineering, or applied social sciences (such as economics). There are essentially three programs of study available in calculus:&nbsp;</p>
-
-- {%include course number=1190%} is a one-semester four hour course covering the same material as {%include course number=1210%}, but with additional instruction in college algebra.&nbsp; It is intended for students with no previous exposure to Calculus who may need extra help.
-
-- {%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%} is a terminal one-year sequence intended for business, biology, and social science majors, and for some students fulfilling their premed requirements.
-
-- {%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}<span style="margin-left:-4px"></span>, {%include course number=2310%} is the traditional calculus sequence intended for students of mathematics and the natural sciences, as well as for students intending to pursue graduate work in the applied social sciences.
-
-**You may NOT** take more than one of {%include course number=1190%}<span style="margin-left:-4px"></span>, {%include course number=1210%}<span style="margin-left:-4px"></span>, or {%include course number=1310%} for credit. Also, **you may NOT** take both {%include course number=1220%} and {%include course number=1320%} for credit. The courses have overlapping material.
-
-The {%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%} sequence is unacceptable as a prerequisite for mathematics courses numbered 2310 and above. Students anticipating the need for higher mathematics courses should instead select the {%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%} sequence. In all cases, {%include course number=1310%} (including AP credit) may be substituted for {%include course number=1210%}<span style="margin-left:-4px"></span>. However, the reverse is **not always true**. Unless otherwise specified, {%include course number=1210%} may not be substituted for {%include course number=1310%}<span style="margin-left:-4px"></span>. Similarly, {%include course number=1320%} can always be substituted for {%include course number=1220%}<span style="margin-left:-4px"></span>, but the reverse is **typically not true**.
-
-Students who do not have credit for a first-semester calculus course (via exam or transfer work) may elect to take {%include course number=1210%} or {%include course number=1310%}<span style="margin-left:-4px"></span>. Exceptionally well-prepared students (who place out of both {%include course number=1310%} and {%include course number=1320%}<span style="margin-left:-4px"></span>) may choose either {%include course number=2310%} or {%include course number=3250%} as their first course in the fall.
-
-## Advanced Calculus and Linear Algebra
+*If you are unsure which UVA math course should be your first, please consult your [Advising Dean](https://college.as.virginia.edu/academic-advising-deans).*
+## Advanced Math courses: 
+### Advanced Calculus and Linear Algebra
 
 To enroll in accelerated sections {%include course number=2315%} and its continuation {%include course number=3315%}<span style="margin-left:-4px"></span>, the student should contact the instructor. These courses are designed for highly motivated mathematics students. These courses are meant for those students who expect to major in subjects requiring the use of fairly advanced mathematics and for others who just love doing mathematics. It differs from {%include course number=2310%} in that more advanced material will be covered and more work on the part of the student will be expected. We expect that the additional effort will be amply rewarded. The prerequisite is a good command of single variable calculus.
 
-## Additional Courses
+### Additional Courses
 
 Pre-med students who are seeking to fulfill the &ldquo;second-semester&rdquo; calculus course required by some medical schools typically take {%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%}.
 
@@ -42,104 +40,7 @@ Elementary Education students planning to enroll in the 5-year Teacher Education
 
 To prepare for the mathematics major, you should complete the calculus sequence {%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}<span style="margin-left:-4px"></span>, {%include course number=2310%} by the end of your fourth semester; you also must demonstrate computer proficiency by completing CS 1110, CS 1111, CS 1112, &nbsp;CS 1113, CS 1120, or PHYS 2660, or an approved equivalent course with a grade of C- or higher. Please refer to the School of Engineering&rsquo;s enrollment policy on CS courses, which may be found on their web site. Descriptions of the major and minor programs are available from the Mathematics Department office.
 
-## Mathematics Prerequisites for the Sciences and Economics
-
-<p>Students who plan to major in economics or in one of the sciences need to pay careful attention to the requirements of those programs. Below is a list of minimal requirements; additional math courses are often recommended and are sometimes prerequisites for advanced courses and for admission to graduate programs. Since individual departments can change their requirements for their major, please verify their requirements by reading their departmental announcements. Specific questions should be addressed to individual departments.</p>
-
-<table border="1" cellpadding="5" cellspacing="0">
-	<thead>
-		<tr>
-			<th scope="col"><strong>Program</strong></th>
-			<th scope="col"><strong>Math Requirements</strong></th>
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>
-			<p>Astronomy</p>
-			</td>
-			<td>
-			<p>{%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%} or {%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Astro-Physics</p>
-			</td>
-			<td>
-			<p>{%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}<span style="margin-left:-4px"></span>, {%include course number=2310%}<span style="margin-left:-4px"></span>, {%include course number=3250%}<span style="margin-left:-4px"></span>, {%include course number=4210%}<span style="margin-left:-4px"></span>, {%include course number=4220%}</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Biology</p>
-			</td>
-			<td>
-			<p>One semester of calculus ({%include course number=1190%}, {%include course number=1210%}, or {%include course number=1310%}) required for B.S.; optional for B.A. (may substitute statistics course)</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Chemistry B.A.</p>
-			</td>
-			<td>
-			<p>{%include course number=1210%}<span style="margin-left:-4px"></span>, {%include course number=1220%} or {%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Chemistry B.S.</p>
-			</td>
-			<td>
-			<p>{%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%} and either {%include course number=2310%} or {%include course number=3250%}</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Cognitive Science</p>
-			</td>
-			<td>
-			<p>{%include course number=1220%} or {%include course number=1310%}<span style="margin-left:-4px"></span>. Note that {%include course number=1210%} or equivalent is a prerequisite for {%include course number=1220%}<span style="margin-left:-4px"></span>.
-			</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Economics</p>
-			</td>
-			<td>
-			<p>{%include course number=1210%}, or {%include course number=1190%}, or {%include course number=1310%}, or APMA 1090</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Environmental Sciences</p>
-			</td>
-			<td>
-			<p>{%include course number=1210%} or {%include course number=1310%}</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Physics B.A.</p>
-			</td>
-			<td>
-			<p>{%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}<span style="margin-left:-4px"></span>, {%include course number=2310%}<span style="margin-left:-4px"></span>, {%include course number=3250%}</p>
-			</td>
-		</tr>
-		<tr>
-			<td>
-			<p>Physics B.S.</p>
-			</td>
-			<td>
-			<p>{%include course number=1310%}<span style="margin-left:-4px"></span>, {%include course number=1320%}<span style="margin-left:-4px"></span>, {%include course number=2310%}<span style="margin-left:-4px"></span>, {%include course number=3250%}<span style="margin-left:-4px"></span>, {%include course number=4210%}<span style="margin-left:-4px"></span>, {%include course number=4220%}</p>
-			</td>
-		</tr>
-	</tbody>
-</table>
-<br>
-
-## Advanced Placement
+## Advanced Placement Credit
 
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
 
@@ -214,16 +115,3 @@ We give credit in the calculus sequence based upon the College Entrance Examinat
 A score of 5, 6, or 7 on the IB HL exam in mathematics yields
 credit for {%include course number=1310%} as well as Math 2000T (as per <a
 href="http://college.as.virginia.edu/iclec">the College's international credit policies page</a>)
-
-## Calculus Placement (Without Credit)
-
-If you believe your previous experience in calculus has prepared
-you to begin your work in calculus at UVA at an advanced level,
-but you do not have credit for the prerequisite lower-level course
-or courses, then the placement exams provided at [Advisory
-Calculus-Placement Exams]({{site.url}}/undergraduate/placement-backup/) can help you decide which calculus
-course to enroll in.
-
----
-
-<h2>If you are unsure about which UVa Mathematics course should be your first, consult&nbsp;your <a href="http://college.artsandsciences.virginia.edu/advisors">faculty advisor</a>.</h2>
