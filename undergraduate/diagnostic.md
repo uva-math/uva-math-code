@@ -12,7 +12,7 @@ tooltips: true
 * **What courses do I need?**  [Here's a list](https://math.virginia.edu/undergraduate/diagnosticCourses/) of some majors and courses they require.
 * Which introductory course should I start in?  [Go here][#introductory-math-courses-three-pathways]
 * **Advanced and Additional Math Courses** [Go here][#advanced-math-courses]
-* **Advanced Placement Credit** [Go here][advanced-placement-credit]
+* **Advanced Placement Credit** [[placement#advanced-placement-credit|Go here]]
 ## Introductory Math courses: Three Pathways
 1. *Do you need to fulfill a quantitative reasoning requirement and don't need a calculus-based course for your major?* We offer MATH 1110 Probability/Finite Mathematics, MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and MATH 1160 Algebra, Number Systems and Number Theory.  
 
