@@ -2,7 +2,7 @@
 title: Math placement OLD <!--  added OLD to title -->
 layout: ug_page
 ug_policy: false <!--  changed from true to false -->
-permalink: /content/math-placement/
+ <!-- removed permalink: /content/math-placement/  -->
 nav_parent: Undergraduate
 nav_weight: 5
 tooltips: true
