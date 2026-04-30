@@ -21,6 +21,7 @@ tooltips: true
       <li> <i>Has it been a long time since I took calculus or pre-calculus?</i> </li>
       <li> <i>Was my last math class in high school  geometry or Algebra II instead of pre-calculus?</i> </li>
       <li> <i>Does a slower pace appeal to me?</i> </li>
+      <li> <i>Would it be helpful to brush up or get more practice with Algebra and/or Pre-Calculus?</i></li>
 	</ul>
 </ol>
 <ol start="2">
