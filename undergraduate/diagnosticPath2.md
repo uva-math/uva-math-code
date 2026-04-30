@@ -22,8 +22,8 @@ tooltips: true
       <li> <i>Was my last math class in high school  geometry or Algebra II instead of pre-calculus?<\i> </li>
       <li> <i>Does a slower pace appeal to me?<\i> </li>
 	</ul>
-<li> <b>Math 1210</b>, Survey of Calculus 1, is a **3** credit course designed to answer the question "How do we describe how things change?" for non-STEM majors.  This is sometimes called  _Differential Calculus_. </li>
-<li> <b>Math 1220</b>, Survey of Calculus 2, is a **3** credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for non-STEM majors. This is sometimes called _Integral Calculus_.</li>
+<li> <b>Math 1210</b>, Survey of Calculus 1, is a <b>3</b> credit course designed to answer the question "How do we describe how things change?" for non-STEM majors.  This is sometimes called  _Differential Calculus_. </li>
+<li> <b>Math 1220</b>, Survey of Calculus 2, is a <b>3</b> credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for non-STEM majors. This is sometimes called _Integral Calculus_.</li>
 </ol>
 
 [Hoo's List](https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics) has more complete descriptions of each of these courses
