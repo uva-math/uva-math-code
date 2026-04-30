@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "undergraduate/faq119192_advisors.md",
+                "file": "undergraduate/placement.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "faq119192_advisors"
+              "title": "placement"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "undergraduate/faq119192_advisors.md",
+                "file": "undergraduate/placement.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for faq119192_advisors"
+              "title": "Backlinks for placement"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "undergraduate/faq119192_advisors.md",
+                "file": "undergraduate/placement.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from faq119192_advisors"
+              "title": "Outgoing links from placement"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "undergraduate/faq119192_advisors.md",
+                "file": "undergraduate/placement.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of faq119192_advisors"
+              "title": "Outline of placement"
             }
           }
         ]
@@ -185,8 +185,9 @@
   },
   "active": "842c3ebf61f73674",
   "lastOpenFiles": [
-    "undergraduate/placement.md",
+    "undergraduate/faq119192.md",
     "undergraduate/faq119192_advisors.md",
+    "undergraduate/placement.md",
     "undergraduate/diagnosticPath2.md",
     "undergraduate/diagnostic copy.md",
     "undergraduate/diagnostic.md",
