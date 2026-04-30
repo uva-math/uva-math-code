@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "undergraduate/diagnosticPath2.md",
+                "file": "undergraduate/faq119192_advisors.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "diagnosticPath2"
+              "title": "faq119192_advisors"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "undergraduate/diagnosticPath2.md",
+                "file": "undergraduate/faq119192_advisors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for diagnosticPath2"
+              "title": "Backlinks for faq119192_advisors"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "undergraduate/diagnosticPath2.md",
+                "file": "undergraduate/faq119192_advisors.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from diagnosticPath2"
+              "title": "Outgoing links from faq119192_advisors"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "undergraduate/diagnosticPath2.md",
+                "file": "undergraduate/faq119192_advisors.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of diagnosticPath2"
+              "title": "Outline of faq119192_advisors"
             }
           }
         ]
@@ -183,9 +183,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "acc2c6eef4a70975",
+  "active": "842c3ebf61f73674",
   "lastOpenFiles": [
     "undergraduate/placement.md",
+    "undergraduate/faq119192_advisors.md",
+    "undergraduate/diagnosticPath2.md",
+    "undergraduate/diagnostic copy.md",
     "undergraduate/diagnostic.md",
     "_UNPUBLISHED/undergraduate/placementOLD_4_29_26.md",
     "_UNPUBLISHED/undergraduate/_placementOLD_4_29_26.md",
@@ -198,7 +201,6 @@
     "_posts/defenses/2026-04-28-Lichtman-defense.md",
     "Advanced Placement Credit.md",
     "undergraduate/diagnosticCourses.md",
-    "undergraduate/diagnosticPath2.md",
     "undergraduate/diagnosticPath1.md"
   ]
 }

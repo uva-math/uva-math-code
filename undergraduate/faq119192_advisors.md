@@ -1,0 +1,47 @@
+---
+title: 1191/92 FAQ (advisors)
+layout: ug_page
+ug_info: true
+permalink: /undergraduate/faq119192_advisors/
+nav_parent: Undergraduate
+nav_weight: 3
+tooltips: true
+---
+# MATH 1191 and MATH 1192 FAQ for Advisors:
+1. *What is MATH 1191 and 1192?* 
+    - MATH 1191 and 1192 is a new two-semester sequence of 3-credit courses that, together, are equivalent to completing MATH 1210. This sequence is replacing the previous offering of MATH 1190. The MATH 1191/1192 sequence is intended for students who would like to take Calculus I and would benefit from additional support.
+ 
+ 2. *What additional support is provided in MATH 1191/1192?* 
+    - Additional support will be offered in the form of (1) time––students will cover the Calculus I content over two semesters instead of one (2) pre-calculus content––instruction will touch on some precalculus concepts that students may not have learned previously (3) student skills––there will be explicit instruction on student skills such as how to study or take notes (4) math belonging––there will be an emphasis on developing a growth mindset and a sense of belonging toward mathematics.
+
+3. *Will completing both MATH 1191 and MATH 1192 satisfy the Quantification, Computation, and Data Analysis (QCDA) requirement?*
+    - Yes. MATH 1191 counts as one three-credit course toward the QCDA requirement. Similarly, MATH 1192 counts as a second three-credit course toward the QCDA requirement. Taking both MATH 1191 and MATH 1192 will complete the full QCDA requirement.
+
+4. Will MATH 1191 be offered in both the fall and the spring?
+    - No. For the 2026–2027 academic year, MATH 1191 will only be offered in the fall and MATH 1192 will only be offered in the spring. We hope to offer both MATH 1191 and 1192 in the fall and spring in future semesters.
+
+5. Will first year students be pre-enrolled in MATH 1191?
+    - No. For the 2026–2027 academic year, MATH 1191 will only be offered in the fall and MATH 1192 will only be offered in the spring. We hope to offer both MATH 1191 and 1192 in the fall and spring in future semesters.
+
+6. What is the math placement diagnostic?
+    - It is important to note that there are multiple math placement diagnostics. The diagnostic for MATH 1191 is a short survey that asks students affective questions about mathematics such as their confidence level and how they perceive others think of them as capable in mathematics. It also asks for their SAT/ACT/IB math scores. The diagnostic for MATH 1191 does not require students to do any math.
+    
+7. Why is taking the math placement diagnostic important?
+    - The diagnostic is a helpful starting place for students choosing which Calculus I course they will be most successful in. The diagnostic will identify students who are most likely to benefit from the MATH 1191/1192 sequence.
+
+8. Can students decide to enroll in MATH 1191 even if they were not pre-enrolled into the course?
+    - Yes. Students may choose to enroll in MATH 1191. Students who do so should intend to complete the full MATH 1191 and 1192 sequence.
+
+9. Can a student choose to take MATH 1192 only?
+    - No. MATH 1191 is a prerequisite for enrolling in MATH 1192
+
+10. Can students continue on to Calculus II after completing MATH 1191 and 1192?
+    - Yes. Students who have completed MATH 1191/1192 are eligible to take either MATH 1220 or 1320, with MATH 1220 being advisable in most cases.
+
+11. When is it advisable for students to take MATH 1191 and MATH 1192?
+    - Students might choose to take MATH 1191 if they do not have adequate preparation in pre-calculus concepts or if they feel that additional support would help them be successful in learning calculus. Students who have been pre-enrolled in MATH 1191 based on the diagnostic are likely to be more successful in MATH 1191 than MATH 1210 or 1310.
+    - Students might ask themselves the following questions:
+        - _Has it been a long time since I took calculus or pre-calculus?_ If yes, Math 1191 is a great place to start. If no, Math 1210 could be your course.
+        - _Was my last math class in high school  geometry or Algebra II instead of pre-calculus?_ If yes, Math 1191 is the best course to start in.
+        - _Does a slower pace appeal to me?_ If yes, Math 1191 is a great environment to start in.
+        - _Would it be helpful to brush up or get more practice with Algebra and/or Pre-Calculus?_ If yes, Math 1191 is a good course to get this. If no, Math 1210 is a good starting point.
