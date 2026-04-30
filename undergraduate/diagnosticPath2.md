@@ -23,7 +23,7 @@ tooltips: true
       <li> <i>Does a slower pace appeal to me?<\i> </li>
 	</ul>
 </ol>
-<ol>
+<ol start="2">
 <li> <b>Math 1210</b>, Survey of Calculus 1, is a <b>3</b> credit course designed to answer the question "How do we describe how things change?" for non-STEM majors.  This is sometimes called  _Differential Calculus_. </li>
 <li> <b>Math 1220</b>, Survey of Calculus 2, is a <b>3</b> credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?"  for non-STEM majors. This is sometimes called _Integral Calculus_.</li>
 </ol>
