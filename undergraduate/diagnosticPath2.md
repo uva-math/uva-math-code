@@ -38,7 +38,7 @@ tooltips: true
  	<li> <i>Are you trying to decide betwen Math 1210 and Math 1220?</i> You will need to do 3 things</li>
  		<ul>
 			<li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">self-paced diagnostic</a>. </li>
-	  		<li>Check your answers with this <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">solution guide</a>. (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html"> (HTML)</a>) </li>
+	  		<li>Check your answers with this <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">solution guide</a>. (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html"> HTML</a>) </li>
 	  		<li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">this advice</a> to decide which course to take. </li>
 		</ul>
 </ol>
