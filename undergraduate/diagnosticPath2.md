@@ -14,7 +14,8 @@ tooltips: true
 1. **Math 1191 and 1192**, (Survey of Calculus 1A and 1B) - is a two semester sequence (3 credits each semester) that provides extra support to obtain a course equivalency for  Math 1210. 
     - Students will get help to “knock the rust off” of algebra and pre-calculus ideas that they may have seen before. They will also see how math is applied in other disciplines that they might encounter in their major.
     - Students must take both 1191 and 1192 (a total of 6 credits) to get course equivalency for Math 1210.
-    -**Questions that might help decide whether or not Math 1191/92 might be for you.**
+
+**Questions that might help decide whether or not Math 1191/92 might be for you.**
       -*Has it been a long time since I took calculus or pre-calculus?*
       -*Was my last math class in high school  geometry or Algebra II instead of pre-calculus?*
       -*Does a slower pace appeal to me?*
