@@ -2,22 +2,14 @@
 title: Math placement
 layout: ug_page
 ug_info: true
-permalink: /content/math-placement/
+<!-- permalink: /content/math-placement/ -->
 nav_id: Math Placement
 nav_parent: Undergraduate
 nav_nesting: true
 nav_weight: 10
 tooltips: true
 ---
-# Placement: What's the best course to start in??
-
-
-<details>
-<summary>Calculus Courses </summary>
-Our 1191/1192, 1210, 1220 sequence (Applied Calculus1 and 2) is designed for non-STEM majors such as Economics, Kinesiology, Environmental Sciences, Cognitive Sciences, etc.
-
-Our 1310, 1320 sequence (Calculus 1 and 2) is designed for STEM majors such as Physics, Mathematics, Chemistry, Engineering majors, etc.
-</details>
+# Placement: What's the best math course to take?
 * **Incoming students** We are excited that you are interested in taking a math class at UVA! It is important to find a good starting place so that we can best support your learning. Here's a link to the pre-enrollment survey PUTLINKHERE
 * **FAQ for new 1191 and 1192 sequence** [Go here](https://math.virginia.edu/undergraduate/faq119192/).
 * **What courses do I need?**  [Here's a list](https://math.virginia.edu/undergraduate/diagnosticCourses/) of some majors and courses they require.
