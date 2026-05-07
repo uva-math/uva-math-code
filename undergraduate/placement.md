@@ -6,7 +6,7 @@ permalink: /content/math-placement/
 nav_id: Math Placement
 nav_parent: Undergraduate
 nav_nesting: true
-nav_weight: 1
+nav_weight: 5
 tooltips: true
 ---
 # Placement: What's the best math course to take?
