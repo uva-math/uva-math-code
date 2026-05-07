@@ -3,7 +3,9 @@ title: Math placement
 layout: ug_page
 ug_info: true
 permalink: /content/math-placement/
+nav_id: Math Placement
 nav_parent: Undergraduate
+nav_nesting: true
 nav_weight: 1
 tooltips: true
 ---
