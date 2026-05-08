@@ -158,7 +158,7 @@ We have two pathways:
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses.
 </details>
 <br/>
-<details  >
+<details  open>
 <summary><span style="font-size: 1.2em;"><strong>Advanced Placement Credit</strong></span> </summary>
 <br/>
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
