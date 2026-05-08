@@ -12,11 +12,12 @@ tooltips: false
 <html>
 
 <style>
-summary {
-  display: list-item;
-}
 
+/*summary {
+  display: list-item;
+}*/
 details > summary {
+  display: list-item;
   padding: 4px;
   /*width: 200px;*/z*
   background-color: #eeeeee;
@@ -36,18 +37,13 @@ details > p {
 
 <body>
 
-<!--
-<details>
-  <summary>Epcot Center</summary>
-  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
-</details>
--->
 
-<h1> Placement: What's the best course to start in??</h1>
+
+<h2> Placement: What's the best course to start in?</h2>
 
 
 <details >
-<summary><h3>What are my introductory Calculus options?</h3> </summary>We have two pathways:
+<summary><h3>6What are my introductory Calculus options?</h3> </summary>We have two pathways:
 <ol>
 	<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
 		<ul>
