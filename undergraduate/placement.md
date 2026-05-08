@@ -51,7 +51,7 @@ We have two pathways:
 		<ul>
 			<li><strong><em>Math 1191 and 1192</em></strong> is a two-semester sequence (3 credits each). Upon completion of both, students receive course equivalency to 1210. This course sequence will move at a slower pace than than 1210 in order to provide extra support and the opportunity to see applications of math that show up in other majors. This is sometimes called <em>Differential Calculus</em>.</li>
 			<li><strong><em>Math 1210</em></strong> is a 3 credit course designed to answer the questions "How do we measure how things change?" and "How do we measure uncertainty?" for non-STEM majors. This is sometimes called <em>Differential Calculus</em>.</li>
-			<li><strong><em>Math 1220</em></strong> is a 3 credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?" for non-STEM majors. This is sometimes called <em>Integral Calculus</em>.</em>.</li>
+			<li><strong><em>Math 1220</em></strong> is a 3 credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?" for non-STEM majors. This is sometimes called <em>Integral Calculus</em>.</li>
 		</ul>
 	<br/>
 	<li><strong>Calculus 1 and 2</strong>. <em>Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?</em> Our 1310, 1320 sequence  is designed for STEM majors such as Physics, Mathematics, Chemistry, Engineering, etc.</li>
@@ -64,6 +64,7 @@ We have two pathways:
 <br/>
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses
 </details>
+
 <br/>
 <details >
 <summary><span style="font-size: 1.2em;"><strong>How do I decide which Introductory Calculus course to start in?</strong></span> </summary>
@@ -71,7 +72,6 @@ We have two pathways:
 <div style="padding-left: 20px;">
 <details>
 <summary><span style="font-size: 1em;"><strong>Applied Calculus 1 and 2 (1191/92, 1210, or 1220)</strong></span></summary>
-
 <ol>
 <li> <em>Has it been a long time since I took calculus or pre-calculus?</em> 	</li>
 	<ul>
@@ -83,7 +83,6 @@ We have two pathways:
 		<li>If yes, Math 1191 is the best course to start in.</li>
 	</ul>
 <br/>
-
 <li> <em>Does a slower pace appeal to me?</em> 	</li>
 	<ul>
 		<li>If yes, Math 1191 is a great environment to start in.</li>
@@ -107,7 +106,6 @@ We have two pathways:
 <div style="padding-left: 20px;">
 <details >
 <summary> <span style="font-size: 1em;"><strong>Calculus 1 and 2 (1310 or 1320)</strong></span></summary> 
-
  <ol>
 	<li><em>Have you not taken calculus course before?  Has it been quite awhile since your last calculus course?</em> </li>
 		<ul>
@@ -133,7 +131,9 @@ We have two pathways:
 </details>
 </div>
 </details>
+
 <br/>
+
 <details >
 <summary><span style="font-size: 1.2em;"><strong>What are my  non-Calculus introductory options?</strong></span> </summary>
 <br/>
@@ -144,25 +144,27 @@ We have two pathways:
  </ul>
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses.
 </details>
+
 <br/>
+
 <details >
 <summary><span style="font-size: 1.2em;"><strong>What are my advanced math options?</strong></span> </summary>
 <br/>
 <ul>
-<li><strong><em>Math Major Preparation.</em> </strong> To prepare for the mathematics major, you should complete the calculus sequenceMath 1310, 1320 and 2310 by the end of your fourth semester; you also must demonstrate computer proficiency by completing CS 1110, CS 1111, CS 1112, &nbsp;CS 1113, CS 1120, or PHYS 2660, or an approved equivalent course with a grade of C- or higher. Please refer to the School of Engineering&rsquo;s enrollment policy on CS courses, which may be found on their web site. Descriptions of the major and minor programs are available from the Mathematics Department office.</li>
+<li><strong><em>Math Major Preparation.</em> </strong> To prepare for the mathematics major, you should complete the calculus sequence Math 1310, 1320 and 2310 by the end of your fourth semester; you also must demonstrate computer proficiency by completing CS 1110, CS 1111, CS 1112, &nbsp;CS 1113, CS 2100, CD 3140, DS 1002, or PHYS 2660, or an approved equivalent course. Please refer to the School of Engineering&rsquo;s enrollment policy on CS courses, which may be found on their web site. Descriptions of the major and minor programs are available from the Mathematics Department office.</li>
 <br/>
 <li><strong><em>Advanced Calculus and Linear Algebra.</em> </strong>To enroll in accelerated sections of <strong><em>Math 2315 (Advanced Calculus and Linear Algebra 1)</em></strong> and its continuation <strong><em>Math 3315 (Advanced Calculus and Linear Algebra 2)</em></strong>, the student should contact the instructor. These courses are designed for highly motivated mathematics students. These courses are meant for those students who expect to major in subjects requiring the use of fairly advanced mathematics and for others who just love doing mathematics. They differ from <strong><em>Math 2310 (Calculus 3)</em></strong> in that more advanced material will be covered and more work on the part of the student will be expected. We expect that the additional effort will be amply rewarded. The prerequisite is a good command of single variable calculus.</li>
-
-
 </ul>
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses.
 </details>
 <br/>
 <details>
-<summary><span style="font-size: 1.2em;"><strong>Advanced Placement Credit</strong></span> </summary>
+<summary><span style="font-size: 1.2em;"><strong>Test Credit</strong></span> </summary>
 <br/>
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
-
+<br/><br/>
+More details about UVA credit for AP and other exams taken prior to starting at UVA  <a href="https://college.as.virginia.edu/test-credit">can be found here</a>.
+<br/><br/>
 <table border="1" cellpadding="5" cellspacing="0" class="mb-3">
 		<tr>
 			<th colspan="3" style="text-align: center;"><strong>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</strong></th>
@@ -229,9 +231,7 @@ We give credit in the calculus sequence based upon the College Entrance Examinat
 		</tr>
 </table>
 <br/>
-A score of 5, 6, or 7 on the IB HL exam in mathematics yields
-credit for Math 131 as well as Math 2000T (as per <a
-href="http://college.as.virginia.edu/iclec">the College's international credit policies page</a>)
+
 
 </details>
 
