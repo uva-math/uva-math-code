@@ -14,7 +14,7 @@ tooltips: false
 
 <details >
 <summary><h3>What are my introductory Calculus options?</h3> </summary>
-We have two pathways:
+We have two (2) pathways:
 <ol>
 	<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
 		<ul>
