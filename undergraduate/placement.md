@@ -41,9 +41,9 @@ details > p {
 
 <h2> Placement: What's the best course to start in?</h2>
 
-
+<br/>
 <details >
-<summary><span style="font-size: 1.2em;"><strong>10What are my introductory Calculus options?</strong></span> </summary>
+<summary><span style="font-size: 1.2em;"><strong>What are my introductory Calculus options?</strong></span> </summary>
 <br/>
 We have two pathways:
 <ol>
