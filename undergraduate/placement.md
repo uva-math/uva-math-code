@@ -43,7 +43,9 @@ details > p {
 
 
 <details >
-<summary><span style="font-size: 1.2em;"><strong>9What are my introductory Calculus options?</strong></span> </summary>We have two pathways:
+<summary><span style="font-size: 1.2em;"><strong>What are my introductory Calculus options?</strong></span> </summary>
+<br/>
+We have two pathways:
 <ol>
 	<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
 		<ul>
@@ -134,7 +136,7 @@ details > p {
 <br/>
 <details >
 <summary><span style="font-size: 1.2em;"><strong>What are my  non-Calculus introductory options?</strong></span> </summary>
-
+<br/>
 <ul>
 <li><em>Do you need to fulfill a quantitative reasoning (QCDA) requirement and don't need a calculus-based course for your major?</em> We offer MATH 1110 Probability/Finite Mathematics, MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and MATH 1160 Algebra, Number Systems and Number Theory.</li>
 <br/>
@@ -142,9 +144,10 @@ details > p {
  </ul>
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses.
 </details>
-</br>
+<br/>
 <details >
 <summary><span style="font-size: 1.2em;"><strong>What are my advanced math options?</strong></span> </summary>
+<br/>
 <ul>
 <li><strong><em>Math Major Preparation.</em> </strong> To prepare for the mathematics major, you should complete the calculus sequenceMath 1310, 1320 and 2310 by the end of your fourth semester; you also must demonstrate computer proficiency by completing CS 1110, CS 1111, CS 1112, &nbsp;CS 1113, CS 1120, or PHYS 2660, or an approved equivalent course with a grade of C- or higher. Please refer to the School of Engineering&rsquo;s enrollment policy on CS courses, which may be found on their web site. Descriptions of the major and minor programs are available from the Mathematics Department office.</li>
 <br/>
@@ -157,7 +160,7 @@ details > p {
 <br/>
 <details  >
 <summary><span style="font-size: 1.2em;"><strong>Advanced Placement Credit</strong></span> </summary>
-
+<br/>
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
 
 <table border="1" cellpadding="5" cellspacing="0" class="mb-3">
@@ -227,7 +230,7 @@ We give credit in the calculus sequence based upon the College Entrance Examinat
 </table>
 <br/>
 A score of 5, 6, or 7 on the IB HL exam in mathematics yields
-credit for Math 1310 as well as Math 2000T (as per <a
+credit for Math 131 as well as Math 2000T (as per <a
 href="http://college.as.virginia.edu/iclec">the College's international credit policies page</a>)
 
 </details>
