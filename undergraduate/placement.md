@@ -1,6 +1,6 @@
 ---
 title: Math placement
-layout: ug_page
+
 ug_info: true
 permalink: /content/math-placement/
 nav_id: Math Placement
@@ -43,7 +43,7 @@ details > p {
 
 
 <details >
-<summary><h3>6What are my introductory Calculus options?</h3> </summary>We have two pathways:
+<summary><h3>7What are my introductory Calculus options?</h3> </summary>We have two pathways:
 <ol>
 	<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
 		<ul>
@@ -139,9 +139,9 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 <br/>
 <li><em>Are you interested in the Teacher Education program?</em> Elementary Education students planning to enroll in the 5-year Teacher Education program are encouraged to take Math 1150 (The Shape of Space) and Math 1160 (Algebra). Enrollment in both  and 1150 and 1160 is restricted to prospective students of the 5-year elementary education program. The instructor&rsquo;s permission is required for other students and may be obtained via e-mail to the instructor or from the instructor on the first day of class.</li>
  </ul>
-
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses.
 </details>
+
 <details >
 <summary><h3>What are my advanced math options?</h3> </summary>
 <ul>
