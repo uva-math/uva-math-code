@@ -165,7 +165,7 @@ We give credit in the calculus sequence based upon the College Entrance Examinat
 
 <table border="1" cellpadding="5" cellspacing="0" class="mb-3">
 		<tr>
-			<th colspan="3""><strong>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</strong></th>
+			<th colspan="3"><strong>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</strong></th>
 		</tr>
 		<tr>
 			<th scope="col">AP Test and Score</th>
