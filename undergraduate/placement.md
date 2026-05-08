@@ -227,7 +227,7 @@ We give credit in the calculus sequence based upon the College Entrance Examinat
 </table>
 <br/>
 A score of 5, 6, or 7 on the IB HL exam in mathematics yields
-credit for {%include course number=1310%} as well as Math 2000T (as per <a
+credit for Math 1310 as well as Math 2000T (as per <a
 href="http://college.as.virginia.edu/iclec">the College's international credit policies page</a>)
 
 </details>
