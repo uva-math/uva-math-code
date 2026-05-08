@@ -43,7 +43,7 @@ details > p {
 
 
 <details >
-<summary><span style="font-size: 1.2em;"><strong>What are my introductory Calculus options?</strong></span> </summary>
+<summary><span style="font-size: 1.2em;"><strong>10What are my introductory Calculus options?</strong></span> </summary>
 <br/>
 We have two pathways:
 <ol>
@@ -158,14 +158,14 @@ We have two pathways:
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses.
 </details>
 <br/>
-<details  open>
+<details>
 <summary><span style="font-size: 1.2em;"><strong>Advanced Placement Credit</strong></span> </summary>
 <br/>
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
 
 <table border="1" cellpadding="5" cellspacing="0" class="mb-3">
 		<tr>
-			<th colspan="3"><strong>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</strong></th>
+			<th colspan="3" style="text-align: center;"><strong>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</strong></th>
 		</tr>
 		<tr>
 			<th scope="col">AP Test and Score</th>
