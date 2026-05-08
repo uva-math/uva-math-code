@@ -16,55 +16,52 @@ tooltips: false
 <summary><h3>What are my introductory Calculus options?</h3> </summary>
 We have two pathways:
 <ol>
-<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. 
-<ul>
-<li><strong><em>Math 1191 and 1192</em></strong> is a two-semester sequence (3 credits each). Upon completion of both, students receive course equivalency to 1210. This course sequence will move at a slower pace than than 1210 in order to provide extra support and the opportunity to see applications of math that show up in other majors. This is sometimes called <em>Differential Calculus</em>.</li>
-<li><strong><em>Math 1210</em></strong> is a 3 credit course designed to answer the questions "How do we measure how things change?" and "How do we measure uncertainty?" for non-STEM majors. This is sometimes called <em>Differential Calculus</em>.</li>
-<li><strong><em>Math 1220</em></strong> is a 3 credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?" for non-STEM majors. This is sometimes called <em>Integral Calculus</em>.</em>.</li>
-</ul>
-
-<br/>
-<li><strong>Calculus 1 and 2</strong>. <em>Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?</em> Our 1310, 1320 sequence  is designed for STEM majors such as Physics, Mathematics, Chemistry, Engineering, etc.<ul>
-<li><strong><em>Math 1310</em></strong>  is a 4 credit course designed to answer the question "How do we measure how things change?" for STEM majors. This is sometimes called  <em>Differential Calculus</em>.</li>
-<li><strong><em>Math 1320</em></strong> is a 4 credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?" for STEM majors. This is sometimes called <em>Integral Calculus.</em></li>
-</ul>
-</li>
+	<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
+		<ul>
+			<li><strong><em>Math 1191 and 1192</em></strong> is a two-semester sequence (3 credits each). Upon completion of both, students receive course equivalency to 1210. This course sequence will move at a slower pace than than 1210 in order to provide extra support and the opportunity to see applications of math that show up in other majors. This is sometimes called <em>Differential Calculus</em>.</li>
+			<li><strong><em>Math 1210</em></strong> is a 3 credit course designed to answer the questions "How do we measure how things change?" and "How do we measure uncertainty?" for non-STEM majors. This is sometimes called <em>Differential Calculus</em>.</li>
+			<li><strong><em>Math 1220</em></strong> is a 3 credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?" for non-STEM majors. This is sometimes called <em>Integral Calculus</em>.</em>.</li>
+		</ul>
+	<br/>
+	<li><strong>Calculus 1 and 2</strong>. <em>Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?</em> Our 1310, 1320 sequence  is designed for STEM majors such as Physics, Mathematics, Chemistry, Engineering, etc.</li>
+		<ul>
+			<li><strong><em>Math 1310</em></strong>  is a 4 credit course designed to answer the question "How do we measure how things change?" for STEM majors. This is sometimes called  <em>Differential Calculus</em>.</li>
+			<li><strong><em>Math 1320</em></strong> is a 4 credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?" for STEM majors. This is sometimes called <em>Integral Calculus.</em></li>
+		</ul>
 </ol>
-<a href="https://math.virginia.edu/undergraduate/diagnosticCourses/">Here's a list </a> of majors and math courses they require. </br>
+<a href="https://math.virginia.edu/undergraduate/diagnosticCourses/">Here's a list </a> of majors and math courses they require. 
+<br/>
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses
 </details>
-<details open>
+<details >
 <summary><h3>How do I decide which Introductory Calculus course to start in?</h3> </summary>
 
 First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 <details >
 <summary><h4>Applied Calculus 1 and 2 (1191/92, 1210, or 1220)</h4></summary>
 <ol>
-	<li> <i>Has it been a long time since I took calculus or pre-calculus?</i> 
-	<ul>
-		<li>If yes, Math 1191 is a great place to start. If no, Math 1210 could be your course.</li>
-	</ul>
+	<li> <em>Has it been a long time since I took calculus or pre-calculus?</em> 	</li>
+		<ul>
+			<li>If yes, Math 1191 is a great place to start. If no, Math 1210 could be your course.</li>
+		</ul>
 	<br/>
-	</li>
-	<li> <i>Was my last math class in high school  geometry or Algebra II instead of pre-calculus?</i> 
-	<ul>
-		<li>If yes, Math 1191 is the best course to start in.</li>
-	</ul>
+	<li> <em>Was my last math class in high school  geometry or Algebra II instead of pre-calculus?</em> 	</li>
+		<ul>
+			<li>If yes, Math 1191 is the best course to start in.</li>
+		</ul>
 	<br/>
-	</li>
- 	<li> <i>Does a slower pace appeal to me?</i> 
+
+ 	<li> <em>Does a slower pace appeal to me?</em> 	</li>
 		<ul>
 			<li>If yes, Math 1191 is a great environment to start in.</li>
 		</ul>
-	</li>
 	<br/>
- 	<li> <i>Would it be helpful to brush up or get more practice with Algebra and/or Pre-Calculus?</i> 
+ 	<li> <em>Would it be helpful to brush up or get more practice with Algebra and/or Pre-Calculus?</em> 	</li>
 		<ul>
 			<li>If yes, Math 1191 is a good course to get this. If no, Math 1210 is a good starting point.</li>
 		</ul>
-	</li>
 	<br/>
- 	<li> <i>Are you trying to decide betwen Math 1210 and Math 1220?</i> You will need to do 3 things</li>
+ 	<li> <em>Are you trying to decide betwen Math 1210 and Math 1220?</em> You will need to do 3 things</li>
  		<ul>
 			<li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">self-paced diagnostic</a>. </li>
 	  		<li>Check your answers with this <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">solution guide</a>. (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html">HTML</a>) </li>
