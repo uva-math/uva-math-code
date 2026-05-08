@@ -47,8 +47,7 @@ details > p {
 
 
 <details >
-<summary><h3>5 What are my introductory Calculus options?</h3> </summary>
-<p>We have two pathways:</p>
+<summary><h3>What are my introductory Calculus options?</h3> </summary>We have two pathways:
 <ol>
 	<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
 		<ul>
@@ -70,10 +69,12 @@ details > p {
 
 <details >
 <summary><h3>How do I decide which Introductory Calculus course to start in?</h3> </summary>
+
 First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 
 <details>
 <summary><h4>Applied Calculus 1 and 2 (1191/92, 1210, or 1220)</h4></summary>
+
 <ol>
 <li> <em>Has it been a long time since I took calculus or pre-calculus?</em> 	</li>
 	<ul>
@@ -107,6 +108,7 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 
 <details >
 <summary> <h4>Calculus 1 and 2 (1310 or 1320)</h4></summary> 
+
  <ol>
 	<li><em>Have you not taken calculus course before?  Has it been quite awhile since your last calculus course?</em> </li>
 		<ul>
@@ -135,6 +137,7 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 
 <details >
 <summary><h3>What are my  non-Calculus introductory options?</h3> </summary>
+
 <ul>
 <li><em>Do you need to fulfill a quantitative reasoning (QCDA) requirement and don't need a calculus-based course for your major?</em> We offer MATH 1110 Probability/Finite Mathematics, MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and MATH 1160 Algebra, Number Systems and Number Theory.</li>
 <br/>
@@ -157,6 +160,7 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 
 <details  >
 <summary><h3>Advanced Placement Credit</h3> </summary>
+
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
 
 <table border="1" cellpadding="5" cellspacing="0" class="mb-3">
