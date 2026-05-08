@@ -10,10 +10,15 @@ nav_weight: 5
 tooltips: false
 ---
 <html>
+
 <style>
+summary {
+  display: list-item;
+}
+
 details > summary {
   padding: 4px;
-  width: 200px;
+  /*width: 200px;*/z*
   background-color: #eeeeee;
   border: none;
   box-shadow: 1px 1px 2px #bbbbbb;
@@ -26,7 +31,9 @@ details > p {
   margin: 0;
   box-shadow: 1px 1px 2px #bbbbbb;
 }
+
 </style>
+
 <body>
 
 <!--
@@ -40,7 +47,7 @@ details > p {
 
 
 <details >
-<summary><h3>4 What are my introductory Calculus options?</h3> </summary>
+<summary><h3>5 What are my introductory Calculus options?</h3> </summary>
 <p>We have two pathways:</p>
 <ol>
 	<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
@@ -123,10 +130,11 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 		</ul>
    </ol>
 </details>
+
 </details>
+
 <details >
 <summary><h3>What are my  non-Calculus introductory options?</h3> </summary>
-
 <ul>
 <li><em>Do you need to fulfill a quantitative reasoning (QCDA) requirement and don't need a calculus-based course for your major?</em> We offer MATH 1110 Probability/Finite Mathematics, MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and MATH 1160 Algebra, Number Systems and Number Theory.</li>
 <br/>
@@ -146,6 +154,7 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 </ul>
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses.
 </details>
+
 <details  >
 <summary><h3>Advanced Placement Credit</h3> </summary>
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
