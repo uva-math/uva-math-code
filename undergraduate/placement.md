@@ -9,11 +9,38 @@ nav_nesting: true
 nav_weight: 5
 tooltips: false
 ---
-# Placement: What's the best course to start in??
+<html>
+<style>
+details > summary {
+  padding: 4px;
+  width: 200px;
+  background-color: #eeeeee;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+}
+
+details > p {
+  background-color: #eeeeee;
+  padding: 4px;
+  margin: 0;
+  box-shadow: 1px 1px 2px #bbbbbb;
+}
+</style>
+<body>
+
+<!--
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+-->
+
+<h1> Placement: What's the best course to start in??</h1>
 
 
 <details >
-<summary><h3>3 What are my introductory Calculus options?</h3> </summary>
+<summary><h3>4 What are my introductory Calculus options?</h3> </summary>
 <p>We have two pathways:</p>
 <ol>
 	<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
@@ -197,3 +224,5 @@ href="http://college.as.virginia.edu/iclec">the College's international credit p
 
 </details>
 
+</body>
+</html>
