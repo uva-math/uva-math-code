@@ -13,8 +13,8 @@ tooltips: false
 
 
 <details >
-<summary><h3>What are my introductory Calculus options?</h3> </summary>
-We have two (2) pathways:
+<summary><h3>3 What are my introductory Calculus options?</h3> </summary>
+<p>We have two pathways:</p>
 <ol>
 	<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
 		<ul>
@@ -33,71 +33,68 @@ We have two (2) pathways:
 <br/>
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses
 </details>
+
 <details >
 <summary><h3>How do I decide which Introductory Calculus course to start in?</h3> </summary>
-
 First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
-<details >
+
+<details>
 <summary><h4>Applied Calculus 1 and 2 (1191/92, 1210, or 1220)</h4></summary>
 <ol>
-	<li> <em>Has it been a long time since I took calculus or pre-calculus?</em> 	</li>
-		<ul>
-			<li>If yes, Math 1191 is a great place to start. If no, Math 1210 could be your course.</li>
-		</ul>
-	<br/>
-	<li> <em>Was my last math class in high school  geometry or Algebra II instead of pre-calculus?</em> 	</li>
-		<ul>
-			<li>If yes, Math 1191 is the best course to start in.</li>
-		</ul>
-	<br/>
+<li> <em>Has it been a long time since I took calculus or pre-calculus?</em> 	</li>
+	<ul>
+		<li>If yes, Math 1191 is a great place to start. If no, Math 1210 could be your course.</li>
+	</ul>
+<br/>
+<li> <em>Was my last math class in high school  geometry or Algebra II instead of pre-calculus?</em></li>
+	<ul>
+		<li>If yes, Math 1191 is the best course to start in.</li>
+	</ul>
+<br/>
 
- 	<li> <em>Does a slower pace appeal to me?</em> 	</li>
-		<ul>
-			<li>If yes, Math 1191 is a great environment to start in.</li>
-		</ul>
-	<br/>
- 	<li> <em>Would it be helpful to brush up or get more practice with Algebra and/or Pre-Calculus?</em> 	</li>
-		<ul>
-			<li>If yes, Math 1191 is a good course to get this. If no, Math 1210 is a good starting point.</li>
-		</ul>
-	<br/>
- 	<li> <em>Are you trying to decide betwen Math 1210 and Math 1220?</em> You will need to do 3 things</li>
- 		<ul>
-			<li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">self-paced diagnostic</a>. </li>
-	  		<li>Check your answers with this <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">solution guide</a>. (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html">HTML</a>) </li>
-	  		<li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">this advice</a> to decide which course to take. </li>
-		</ul>
+<li> <em>Does a slower pace appeal to me?</em> 	</li>
+	<ul>
+		<li>If yes, Math 1191 is a great environment to start in.</li>
+	</ul>
+<br/>
+<li> <em>Would it be helpful to brush up or get more practice with Algebra and/or Pre-Calculus?</em> 	</li>
+	<ul>
+		<li>If yes, Math 1191 is a good course to get this. If no, Math 1210 is a good starting point.</li>
+	</ul>
+<br/>
+<li> <em>Are you trying to decide betwen Math 1210 and Math 1220?</em> You will need to do 3 things</li>
+	<ul>
+		<li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">self-paced diagnostic</a>. </li>
+		<li>Check your answers with this <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">solution guide</a>. (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html">HTML</a>) </li>
+		<li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">this advice</a> to decide which course to take. </li>
+	</ul>
 </ol>
 </details>
 
 <details >
-<summary> <h4>Calculus 1 and 2 (1310 or 1320)</h4></summary>
- 
+<summary> <h4>Calculus 1 and 2 (1310 or 1320)</h4></summary> 
  <ol>
-    <li><em>Have you not taken calculus course before?  Has it been quite awhile since your last calculus course?</em> </li>
+	<li><em>Have you not taken calculus course before?  Has it been quite awhile since your last calculus course?</em> </li>
 		<ul>
 			<li>Math 1310 is probably your best starting point.</li>
 		</ul>
 		<br/>
 	<li><em> Are you trying to decide betwen Math 1310 and Math 1320?</em> You will need to do 3 things.</li>
-	    	<ul>
+			<ul>
 			  <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1310_1320.html">self-paced Diagnostic.</a></li>
 			  <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamB_Solutions.pdf">this solution guide</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamB_Solutions.html">HTML</a>).</li>
 			  <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath3_1310_20Advice">this advice</a> to decide which course to take.</li>
-    	</ul>
+		</ul>
 		<br/>
 	 <li> <em> Are you trying to decide betwen Math 1320 and Math 2310?</em> You will need to do 5 things.</li>
-     <ul>
+	 <ul>
 			  <li>Take the 1310/1320 self-paced diagnostic (see first bullet in #2).</li>
 			  <li>Check your answers to the 1310/1320 self-paced diagnostic (see second bullet in #2).</li>
 			  <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1320_2310.html">self-paced Diagnostic.</a></li>
 			  <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.pdf">this solution guide</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.html">HTML</a>).</li>
 			  <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath3_1320_2310Advice">this advice</a> to decide which course to take.</li>
-    	</ul>
+		</ul>
    </ol>
- 
- 
-
 </details>
 </details>
 <details >
