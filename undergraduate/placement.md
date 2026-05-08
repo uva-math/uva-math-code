@@ -1,6 +1,6 @@
 ---
 title: Math placement
-
+layout: ug_page
 ug_info: true
 permalink: /content/math-placement/
 nav_id: Math Placement
@@ -43,7 +43,7 @@ details > p {
 
 
 <details >
-<summary><h3>7What are my introductory Calculus options?</h3> </summary>We have two pathways:
+<summary><span style="font-size: 1.2em;"><strong>8What are my introductory Calculus options?</strong></span> </summary>We have two pathways:
 <ol>
 	<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
 		<ul>
@@ -64,7 +64,7 @@ details > p {
 </details>
 
 <details >
-<summary><h3>How do I decide which Introductory Calculus course to start in?</h3> </summary>
+<summary><span style="font-size: 1.2em;"><strong>How do I decide which Introductory Calculus course to start in?</strong></span> </summary>
 
 First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 
@@ -132,7 +132,7 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 </details>
 
 <details >
-<summary><h3>What are my  non-Calculus introductory options?</h3> </summary>
+<summary><span style="font-size: 1.2em;"><strong>What are my  non-Calculus introductory options?</strong></span> </summary>
 
 <ul>
 <li><em>Do you need to fulfill a quantitative reasoning (QCDA) requirement and don't need a calculus-based course for your major?</em> We offer MATH 1110 Probability/Finite Mathematics, MATH 1140 Financial Mathematics, MATH 1150 The Shape of Space, and MATH 1160 Algebra, Number Systems and Number Theory.</li>
@@ -143,7 +143,7 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 </details>
 
 <details >
-<summary><h3>What are my advanced math options?</h3> </summary>
+<summary><span style="font-size: 1.2em;"><strong>What are my advanced math options?</strong></span> </summary>
 <ul>
 <li><strong><em>Math Major Preparation.</em> </strong> To prepare for the mathematics major, you should complete the calculus sequenceMath 1310, 1320 and 2310 by the end of your fourth semester; you also must demonstrate computer proficiency by completing CS 1110, CS 1111, CS 1112, &nbsp;CS 1113, CS 1120, or PHYS 2660, or an approved equivalent course with a grade of C- or higher. Please refer to the School of Engineering&rsquo;s enrollment policy on CS courses, which may be found on their web site. Descriptions of the major and minor programs are available from the Mathematics Department office.</li>
 <br/>
@@ -155,7 +155,7 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 </details>
 
 <details  >
-<summary><h3>Advanced Placement Credit</h3> </summary>
+<summary><span style="font-size: 1.2em;"><strong>Advanced Placement Credit</strong></span> </summary>
 
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
 
