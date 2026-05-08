@@ -19,7 +19,7 @@ tooltips: false
 details > summary {
   display: list-item;
   padding: 4px;
-  /*width: 200px;*/z*
+  /*width: 200px;*/
   background-color: #eeeeee;
   border: none;
   box-shadow: 1px 1px 2px #bbbbbb;
@@ -43,7 +43,7 @@ details > p {
 
 
 <details >
-<summary><span style="font-size: 1.2em;"><strong>8What are my introductory Calculus options?</strong></span> </summary>We have two pathways:
+<summary><span style="font-size: 1.2em;"><strong>9What are my introductory Calculus options?</strong></span> </summary>We have two pathways:
 <ol>
 	<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
 		<ul>
@@ -62,14 +62,13 @@ details > p {
 <br/>
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses
 </details>
-
+<br/>
 <details >
 <summary><span style="font-size: 1.2em;"><strong>How do I decide which Introductory Calculus course to start in?</strong></span> </summary>
-
-First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
-
+<br/>First, take our diagnosticPUTLINKHERE. Next choose one of the following options.<br/><br/>
+<div style="padding-left: 20px;">
 <details>
-<summary><h4>Applied Calculus 1 and 2 (1191/92, 1210, or 1220)</h4></summary>
+<summary><span style="font-size: 1em;"><strong>Applied Calculus 1 and 2 (1191/92, 1210, or 1220)</strong></span></summary>
 
 <ol>
 <li> <em>Has it been a long time since I took calculus or pre-calculus?</em> 	</li>
@@ -101,9 +100,11 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 	</ul>
 </ol>
 </details>
-
+</div>
+<br/>
+<div style="padding-left: 20px;">
 <details >
-<summary> <h4>Calculus 1 and 2 (1310 or 1320)</h4></summary> 
+<summary> <span style="font-size: 1em;"><strong>Calculus 1 and 2 (1310 or 1320)</strong></span></summary> 
 
  <ol>
 	<li><em>Have you not taken calculus course before?  Has it been quite awhile since your last calculus course?</em> </li>
@@ -128,9 +129,9 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 		</ul>
    </ol>
 </details>
-
+</div>
 </details>
-
+<br/>
 <details >
 <summary><span style="font-size: 1.2em;"><strong>What are my  non-Calculus introductory options?</strong></span> </summary>
 
@@ -141,7 +142,7 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
  </ul>
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses.
 </details>
-
+</br>
 <details >
 <summary><span style="font-size: 1.2em;"><strong>What are my advanced math options?</strong></span> </summary>
 <ul>
@@ -153,22 +154,21 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 </ul>
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses.
 </details>
-
+<br/>
 <details  >
 <summary><span style="font-size: 1.2em;"><strong>Advanced Placement Credit</strong></span> </summary>
 
 We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
 
 <table border="1" cellpadding="5" cellspacing="0" class="mb-3">
-	<caption><strong>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</strong></caption>
-	<thead>
+		<tr>
+			<th colspan="3""><strong>STUDENTS WITH PRIOR CALCULUS AND AP EXAMINATIONS</strong></th>
+		</tr>
 		<tr>
 			<th scope="col">AP Test and Score</th>
 			<th scope="col">Credit Awarded</th>
 			<th scope="col">Recommended Course</th>
 		</tr>
-	</thead>
-	<tbody>
 		<tr>
 			<td>
 			<p>AB less than or = 3</p>
@@ -224,9 +224,8 @@ We give credit in the calculus sequence based upon the College Entrance Examinat
 			<p>Math 2310 and/or Math 3250 (Ordinary Differential Equations)</p>
 			</td>
 		</tr>
-	</tbody>
 </table>
-
+<br/>
 A score of 5, 6, or 7 on the IB HL exam in mathematics yields
 credit for {%include course number=1310%} as well as Math 2000T (as per <a
 href="http://college.as.virginia.edu/iclec">the College's international credit policies page</a>)
