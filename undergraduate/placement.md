@@ -143,7 +143,7 @@ First, take our diagnosticPUTLINKHERE. Next choose one of the following options.
 <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a> has more complete descriptions of each of these courses.
 </details>
 <details >
-<summary><h3>What are my advanced options?</h3> </summary>
+<summary><h3>What are my advanced math options?</h3> </summary>
 <ul>
 <li><strong><em>Math Major Preparation.</em> </strong> To prepare for the mathematics major, you should complete the calculus sequenceMath 1310, 1320 and 2310 by the end of your fourth semester; you also must demonstrate computer proficiency by completing CS 1110, CS 1111, CS 1112, &nbsp;CS 1113, CS 1120, or PHYS 2660, or an approved equivalent course with a grade of C- or higher. Please refer to the School of Engineering&rsquo;s enrollment policy on CS courses, which may be found on their web site. Descriptions of the major and minor programs are available from the Mathematics Department office.</li>
 <br/>
