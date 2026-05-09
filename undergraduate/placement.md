@@ -147,7 +147,7 @@ details > p {
 	<summary><span style="font-size: 1.2em;"><strong>What are my advanced math options?</strong></span> </summary>
 	<br/>
 	<ul>
-		<li><strong><em>Math Major Preparation.</em> </strong> To prepare for the mathematics major, you should complete the calculus sequence Math 1310, 1320 and 2310 by the end of your fourth semester. You also must demonstrate computer proficiency by completing CS 1110, CS 1111, CS 1112, &nbsp;CS 1113, CS 2100, CD 3140, DS 1002, or PHYS 2660, or an approved equivalent course. Please refer to the School of Engineering&rsquo;s enrollment policy on CS courses, which may be found on their web site. Descriptions of the major and minor programs are available from the Mathematics Department office.</li>
+		<li><strong><em>Math Major Preparation.</em> </strong> To prepare for the mathematics major, you should complete the calculus sequence Math 1310, 1320 and 2310 by the end of your fourth semester. You also must demonstrate computer proficiency by completing CS 1110, CS 1111, CS 1112, &nbsp;CS 1113, CS 2100, CS 3140, DS 1002, or PHYS 2660, or an approved equivalent course. Please refer to the School of Engineering&rsquo;s enrollment policy on CS courses, which may be found on their web site. Descriptions of the major and minor programs are available from the Mathematics Department office.</li>
 		<br/>
 		<li><strong><em>Advanced Calculus and Linear Algebra.</em> </strong>To enroll in accelerated sections of <strong><em>Math 2315 (Advanced Calculus and Linear Algebra 1)</em></strong> and its continuation <strong><em>Math 3315 (Advanced Calculus and Linear Algebra 2)</em></strong>, the student should contact the instructor. These courses are designed for highly motivated mathematics students. These courses are meant for those students who expect to major in subjects requiring the use of fairly advanced mathematics and for others who just love doing mathematics. They differ from <strong><em>Math 2310 (Calculus 3)</em></strong> in that more advanced material will be covered and more work on the part of the student will be expected. We expect that the additional effort will be amply rewarded. The prerequisite is a good command of single variable calculus.</li>
 	</ul>
@@ -159,9 +159,9 @@ details > p {
 <details>
 	<summary><span style="font-size: 1.2em;"><strong>Test Credit</strong></span> </summary>
 	<br/>
-	We give credit in the calculus sequence based upon the College Entrance Examination Board Advanced Placement Test (either AB or BC). It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.
+	UVA gives credit for AP, IB and other standard college placement exams.  It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.	
 	<br/><br/>
-	More details about UVA credit for AP and other exams taken prior to starting at UVA  <a href="https://college.as.virginia.edu/test-credit">can be found here</a>.
+	More details about UVA credit for AP and other exams  <a href="https://college.as.virginia.edu/test-credit">can be found here</a>. AP specific information is also duplicated in the table below. 
 	<br/><br/>
 	<table border="1" cellpadding="5" cellspacing="0" class="mb-3">
 			<tr>
