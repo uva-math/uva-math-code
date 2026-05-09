@@ -155,6 +155,7 @@ details > p {
 </details>
 
 <br/>
+
 <!-- Test Credit-->
 <details>
 	<summary><span style="font-size: 1.2em;"><strong>Test Credit</strong></span> </summary>
