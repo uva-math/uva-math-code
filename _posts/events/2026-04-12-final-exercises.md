@@ -97,7 +97,7 @@ details > div {
 <details>
 <summary>Guests / Tickets</summary>
 <div>
-<p><strong>Mathematics Diploma Ceremony (no tickets required):</strong> Tickets are not issued/required for the Mathematics Diploma Ceremony. Each graduate may bring up to <strong>4 guests</strong> so that each graduate has an equitable opportunity for family and friends to attend. You may request additional guests on your RSVP form (to be sent out soon) and the department will let you know if this is possible by May 1st if additional space is available.</p>
+<p><strong>Mathematics Diploma Ceremony (no tickets required):</strong> Tickets are not issued/required for the Mathematics Diploma Ceremony. Each graduate may bring up to <strong>4 guests</strong> so that each graduate has an equitable opportunity for family and friends to attend. Please reach out to Malvika Rajagopal (<a href="mailto:geg7jw@virginia.edu">geg7jw@virginia.edu</a>) if you would like to bring additional guests to the ceremony (over 4) to make sure there will be enough seating.</p>
 </div>
 </details>
 
