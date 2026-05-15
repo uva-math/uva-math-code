@@ -34,25 +34,27 @@ details > p {
 
 
 <h2> Placement: What's the best course to start in?</h2>
-
-<br/>
-<!--Wha are my Introductory Calculus options?-->
+Information on this page will help you understand the best pace to start out of the many great math options here at UVA. 
+<br/><br/>
+<strong>For incoming students</strong>-- <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_50I54xhW5Yclcvc">here’s a link to the math diagnostic</a>. It will take 5 minutes (or less) of your time. Afterwards, proceed to <a href="#howDecide">“How do I decide which Introductory Calculus course to start in?”</a> below.
+<br/><br/>
+<!--What are my Introductory Calculus options?-->
 <details >
 	<summary><span style="font-size: 1.2em;"><strong>What are my introductory Calculus options?</strong></span> </summary>
 	<br/>
 	We have two pathways:
 	<ol>
-		<li><strong>Applied Calculus 1 and 2</strong>.  <em>Are you interested in business, biology, a social science, or need to fulfill pre-health requirements?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
+		<li><strong>Survey of Calculus 1 and 2</strong>.  <em>Are you interested in biological sciences, business,  social sciences of data science?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
 			<ul>
-				<li><strong><em>Math 1191 and 1192</em></strong> is a two-semester sequence (3 credits each). Upon completion of both, students receive course equivalency to 1210. This course sequence will move at a slower pace than than 1210 in order to provide extra support and the opportunity to see applications of math that show up in other majors. This is sometimes called <em>Differential Calculus</em>.</li>
-				<li><strong><em>Math 1210</em></strong> is a 3 credit course designed to answer the questions "How do we measure how things change?" and "How do we measure uncertainty?" for non-STEM majors. This is sometimes called <em>Differential Calculus</em>.</li>
-				<li><strong><em>Math 1220</em></strong> is a 3 credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?" for non-STEM majors. This is sometimes called <em>Integral Calculus</em>.</li>
+				<li><strong><em>Math 1191 and 1192</em></strong> is a two-semester sequence (3 credits each semester) that is meant to be a first course in differential calculus with algebra support. This course reinforces and refreshes concepts from algebra and precalculus while also covering the course content and applications of A Survey of Calculus I. </li>
+				<li><strong><em>Math 1210</em></strong> is a 3-credit course in differential calculus with a focus on applications to biological sciences, business, and social sciences. This course moves at a faster pace than the 1191/1192 sequence and is recommended for those who have completed a pre-calculus course and/or have recent high school calculus exposure.</li>
+				<li><strong><em>Math 1220</em></strong> is a one-semester, 3-credit course in integral calculus with a focus on applications to biological sciences, business, data science, and statistics. This course is appropriate for those who have successfully completed either the 1191/1192 sequence or 1210 or have college credit in Calculus 1.</li>
 			</ul>
 		<br/>
-		<li><strong>Calculus 1 and 2</strong>. <em>Are you interested in one of the natural sciences, engineering, mathematics or doing graduate work in one of the social sciences?</em> Our 1310, 1320 sequence  is designed for STEM majors such as Physics, Mathematics, Chemistry, Engineering, etc.</li>
+		<li><strong>Calculus 1 and 2</strong>. <em>Are you interested in physics, chemistry, mathematics, engineering, or doing graduate work in one of the social sciences?</em> Our 1310, 1320 sequence  is designed for you.</li>
 			<ul>
-				<li><strong><em>Math 1310</em></strong>  is a 4 credit course designed to answer the question "How do we measure how things change?" for STEM majors. This is sometimes called  <em>Differential Calculus</em>.</li>
-				<li><strong><em>Math 1320</em></strong> is a 4 credit course designed to answer the question "What happens when we accumulate an infinite number of quantities?" for STEM majors. This is sometimes called <em>Integral Calculus.</em></li>
+				<li><strong><em>Math 1310</em></strong>  is a one-semester, 4-credit course in differential calculus that focuses on both theory and applications. This course is appropriate for those who are considering pursuing fields such as chemistry, engineering, mathematics, and physics. Previous exposure to trigonometry is expected for this course.</li>
+				<li><strong><em>Math 1320</em></strong> is a one-semester, 4-credit course in integral calculus that focuses on both theory and applications. This course is appropriate for those who are considering pursuing fields such as chemistry, engineering, mathematics, and physics. Students should either successfully complete 1310 or have college credit in Calculus I before enrolling in this course.</li>
 			</ul>
 	</ol>
 	<a href="https://math.virginia.edu/undergraduate/diagnosticCourses/">Here's a list </a> of majors and math courses they require. 
@@ -63,11 +65,11 @@ details > p {
 <br/>
 <!-- How do I decide which Introductory Calculus courseto start in?-->
 <details >
-	<summary><span style="font-size: 1.2em;"><strong>How do I decide which Introductory Calculus course to start in?</strong></span> </summary>
+	<summary ><span style="font-size: 1.2em;"><strong>How do I decide which Introductory Calculus course to start in?</strong></span> </summary>
 	<br/>First, <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_50I54xhW5Yclcvc">take our diagnostic here</a>. Next choose one of the following options.<br/><br/>
 	<div style="padding-left: 20px;">
-		<details>
-			<summary><span style="font-size: 1em;"><strong>Applied Calculus 1 and 2 (1191/92, 1210, or 1220)</strong></span></summary>
+		<details id="howDecide">
+			<summary><span style="font-size: 1em;"><strong>Survey of Calculus 1 and 2 (1191/92, 1210, or 1220)</strong></span></summary>
 			<ol>
 			<li> <em>Has it been a long time since I took calculus or pre-calculus?</em> 	</li>
 				<ul>
@@ -91,7 +93,7 @@ details > p {
 			<br/>
 			<li> <em>Are you trying to decide betwen Math 1210 and Math 1220?</em> You will need to do 3 things</li>
 				<ul>
-					<li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">self-paced diagnostic</a>. </li>
+					<li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">self-paced placement exam</a>. </li>
 					<li>Check your answers with this <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">solution guide</a>. (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html">HTML</a>) </li>
 					<li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">this advice</a> to decide which course to take. </li>
 				</ul>
@@ -110,7 +112,7 @@ details > p {
 					<br/>
 				<li><em> Are you trying to decide betwen Math 1310 and Math 1320?</em> You will need to do 3 things.</li>
 						<ul>
-						<li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1310_1320.html">self-paced Diagnostic.</a></li>
+						<li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1310_1320.html">self-paced placement exam</a>.</li>
 						<li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamB_Solutions.pdf">this solution guide</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamB_Solutions.html">HTML</a>).</li>
 						<li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath3_1310_20Advice">this advice</a> to decide which course to take.</li>
 					</ul>
@@ -119,7 +121,7 @@ details > p {
 				<ul>
 						<li>Take the 1310/1320 self-paced diagnostic (see first bullet in #2).</li>
 						<li>Check your answers to the 1310/1320 self-paced diagnostic (see second bullet in #2).</li>
-						<li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1320_2310.html">self-paced Diagnostic.</a></li>
+						<li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1320_2310.html">self-paced placement exam</a>.</li>
 						<li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.pdf">this solution guide</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.html">HTML</a>).</li>
 						<li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath3_1320_2310Advice">this advice</a> to decide which course to take.</li>
 					</ul>
@@ -161,11 +163,8 @@ details > p {
 <details>
 	<summary><span style="font-size: 1.2em;"><strong>Test Credit</strong></span> </summary>
 	<br/>
-	UVA gives credit for AP, IB and other standard college placement exams.  It is the student&rsquo;s responsibility to have these scores sent directly to the Admissions Office prior to enrolling.	
-	<br/><br/>
-	More details about UVA credit for AP and other exams  <a href="https://college.as.virginia.edu/test-credit">can be found here</a>. AP specific information is also duplicated in the table below. 
-	<br/><br/>
-	UVA gives credit for AP, IB and other standard college placement exams.  It is the student’s responsibility to have scores sent directly to the Admissions Office prior to enrolling.  A score of 5, 6, or 7 on the IB HL Analysis and Approaches (AA) exam yields credit for MATH 1310 and 2000T.  We do not award credit for the IB Applications and Interpretation (AI) exam.  AP specific policies are in the table below.  See <a href="https://records.ureg.virginia.edu/content.php?catoid=72&navoid=6694">this college site</a>.
+	UVA gives credit for AP, IB and other standard college placement exams.  It is the student’s responsibility to have scores sent directly to the Admissions Office prior to enrolling. <br/> <br/> 
+	A score of 5, 6, or 7 on the IB HL Analysis and Approaches (AA) exam yields credit for MATH 1310 and 2000T.  We do not award credit for the IB Applications and Interpretation (AI) exam.  AP specific policies are in the table below.  See <a href="https://college.as.virginia.edu/test-credit"">this college site</a>.
 	<br/><br/>
 	<table border="1" cellpadding="5" cellspacing="0" class="mb-3">
 			<tr>
