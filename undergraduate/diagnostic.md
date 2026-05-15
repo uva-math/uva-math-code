@@ -1,5 +1,5 @@
 ---
-title: Diagnostic
+title: Diagnostic Survey
 layout: ug_page
 ug_info: true
 permalink: /undergraduate/diagnostic/
@@ -35,8 +35,8 @@ details > p {
 
 
 
-<h2> Diagnostic</h2>
-If you are<strong> an incoming student</strong> and/or <strong>have not had a chance to take our diagnostic</strong>, start  <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_50I54xhW5Yclcvc">here</a>. It will take 5 minutes (or less) of your time. 
+<h2> Diagnostic Survey</h2>
+If you are<strong> an incoming student</strong> and/or <strong>have not had a chance to take our diagnostic survey</strong>, start  <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_50I54xhW5Yclcvc">here</a>. It will take 5 minutes (or less) of your time. 
 <br/><br/>
 Afterwards, proceed to <a href="https://math.virginia.edu/content/math-placement/#howDecidee">“How do I decide which Introductory Calculus course to start in?”</a> for next steps.
 

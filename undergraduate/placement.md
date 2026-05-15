@@ -36,8 +36,8 @@ details > p {
 <h2> Placement: What's the best course to start in?</h2>
 Information on this page will help you understand the best pace to start out of the many great math options here at UVA. 
 <br/><br/>
-<strong>For incoming students</strong>-- <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_50I54xhW5Yclcvc">here’s a link to the math diagnostic</a>. It will take 5 minutes (or less) of your time. 
-<br/><vr/>Afterwards, proceed to <a href="#howDecide">“How do I decide which Introductory Calculus course to start in?”</a> below for next steps.
+<strong>For incoming students</strong>-- <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_50I54xhW5Yclcvc">here’s a link to the math diagnostic survey</a>. It will take 5 minutes (or less) of your time. 
+<br/><br/>Afterwards, proceed to <a href="#howDecide">“How do I decide which Introductory Calculus course to start in?”</a> below for next steps.
 <br/><br/>
 <!--What are my Introductory Calculus options?-->
 <details >
