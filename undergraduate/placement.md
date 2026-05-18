@@ -12,6 +12,9 @@ tooltips: false
 <html>
 
 <style>
+[data-theme="dark"] details > summary {
+  color: #232d4b;
+}
 details > summary {
   display: list-item;
   padding: 4px;
@@ -69,7 +72,7 @@ Information on this page will help you understand the best pace to start out of 
 <!-- How do I decide which Introductory Calculus courseto start in?-->
 <details >
 	<summary ><span style="font-size: 1.2em;"><strong>How do I decide which Introductory Calculus course to start in?</strong></span> </summary>
-	<br/>First, <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_50I54xhW5Yclcvc">take our diagnostic here</a>. Next choose one of the following options.<br/><br/>
+	<br/>First, <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_50I54xhW5Yclcvc">take our diagnostic survey here</a>. Next choose one of the following options.<br/><br/>
 	<div style="padding-left: 20px;">
 		<details id="howDecide">
 			<summary><span style="font-size: 1em;"><strong>Survey of Calculus 1 and 2 (1191/92, 1210, or 1220)</strong></span></summary>
@@ -122,8 +125,8 @@ Information on this page will help you understand the best pace to start out of 
 					<br/>
 				<li> <em> Are you trying to decide betwen Math 1320 and Math 2310?</em> You will need to do 5 things.</li>
 				<ul>
-						<li>Take the 1310/1320 self-paced diagnostic (see first bullet in #2).</li>
-						<li>Check your answers to the 1310/1320 self-paced diagnostic (see second bullet in #2).</li>
+						<li>Take the 1310/1320 self-paced placement (see first bullet in #2).</li>
+						<li>Check your answers to the 1310/1320 self-paced placement (see second bullet in #2).</li>
 						<li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1320_2310.html">self-paced placement exam</a>.</li>
 						<li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.pdf">this solution guide</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.html">HTML</a>).</li>
 						<li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath3_1320_2310Advice">this advice</a> to decide which course to take.</li>
