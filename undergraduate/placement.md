@@ -15,6 +15,9 @@ tooltips: false
 [data-theme="dark"] details > summary {
   color: #232d4b;
 }
+[data-theme="dark"] details[open] > summary {
+  color: #4da6ff;
+}
 details > summary {
   display: list-item;
   padding: 4px;
