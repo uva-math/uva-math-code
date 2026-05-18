@@ -47,7 +47,7 @@ Information on this page will help you understand the best pace to start out of 
 	<br/>
 	We have two pathways:
 	<ol>
-		<li><strong>Survey of Calculus 1 and 2</strong>.  <em>Are you interested in biological sciences, business,  social sciences of data science?</em>  Our 1191/1192, 1210, 1220 sequence  is designed just for you. </li>
+		<li><strong>Survey of Calculus 1 and 2</strong>.  <em>Are you interested in biological sciences, business,  social sciences or data science?</em>  Our 1191/1192, 1210, 1220 sequence is designed just for you. </li>
 			<ul>
 				<li><strong><em>Math 1191 and 1192</em></strong> is a two-semester sequence (3 credits each semester) that is meant to be a first course in differential calculus with algebra support. This course reinforces and refreshes concepts from algebra and precalculus while also covering the course content and applications of A Survey of Calculus I. </li>
 				<li><strong><em>Math 1210</em></strong> is a 3-credit course in differential calculus with a focus on applications to biological sciences, business, and social sciences. This course moves at a faster pace than the 1191/1192 sequence and is recommended for those who have completed a pre-calculus course and/or have recent high school calculus exposure.</li>
