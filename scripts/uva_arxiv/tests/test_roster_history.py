@@ -1,0 +1,304 @@
+from __future__ import annotations
+
+import csv
+import json
+import tempfile
+import unittest
+from datetime import date
+from pathlib import Path
+
+from scripts.uva_arxiv import roster, roster_history
+
+
+def empty_roster_result() -> roster.RosterResult:
+    return roster.RosterResult(
+        records={},
+        conflicts=[],
+        unpublished=[],
+        active_directory_special_cases=[],
+        duplicates=[],
+        parse_errors=[],
+    )
+
+
+def record(
+    person_id: str,
+    display_name: str,
+    role_group: str,
+    position: str,
+    path: str,
+    directory_key: str,
+    published: bool = True,
+) -> roster_history.HistoricalPersonRecord:
+    return roster_history.HistoricalPersonRecord(
+        person_id=person_id,
+        display_name=display_name,
+        role_group=role_group,
+        position=position,
+        published=published,
+        path=path,
+        directory_key=directory_key,
+    )
+
+
+def event(
+    commit: str,
+    commit_date: str,
+    status: str,
+    path: str,
+    event_record: roster_history.HistoricalPersonRecord | None,
+    old_path: str | None = None,
+) -> roster_history.HistoryFileEvent:
+    return roster_history.HistoryFileEvent(
+        commit=commit,
+        commit_date=roster_history.parse_date(commit_date),
+        status=status,
+        path=path,
+        old_path=old_path,
+        record=event_record,
+    )
+
+
+class RosterHistoryInferenceTests(unittest.TestCase):
+    def test_interval_inference_handles_role_change_unpublished_and_emeritus_moves(self) -> None:
+        faculty_path = "_departmentpeople/faculty/abc1de.md"
+        emeritus_path = "_departmentpeople/emeriti/abc1de.md"
+        grad_path = "_departmentpeople/gradstudents/gr1aa.md"
+        hidden_path = "_departmentpeople/_unpublished/gr1aa.md"
+        events = [
+            event(
+                "c1",
+                "2021-08-10",
+                "A",
+                faculty_path,
+                record("abc1de", "Ada Curie", "faculty", "Assistant Professor", faculty_path, "faculty"),
+            ),
+            event(
+                "c2",
+                "2023-08-15",
+                "M",
+                faculty_path,
+                record("abc1de", "Ada Curie", "faculty", "Associate Professor", faculty_path, "faculty"),
+            ),
+            event(
+                "c3",
+                "2025-08-01",
+                "R",
+                emeritus_path,
+                record("abc1de", "Ada Curie", "emeritus", "Professor Emeritus", emeritus_path, "emeriti"),
+                old_path=faculty_path,
+            ),
+            event(
+                "c4",
+                "2021-09-01",
+                "A",
+                grad_path,
+                record("gr1aa", "Grace Student", "grad", "Graduate Student", grad_path, "grad"),
+            ),
+            event(
+                "c5",
+                "2022-05-01",
+                "R",
+                hidden_path,
+                record("gr1aa", "Grace Student", "grad", "Graduate Student", hidden_path, "unpublished", published=False),
+                old_path=grad_path,
+            ),
+        ]
+
+        result = roster_history.build_history_result(
+            events=events,
+            current_roster=empty_roster_result(),
+            overrides={},
+            initial_start_date=date(2021, 8, 1),
+            as_of_date=date(2026, 6, 2),
+        )
+
+        intervals = result.appointments["abc1de"]
+        self.assertEqual([interval.role_group for interval in intervals], ["faculty", "faculty", "emeritus"])
+        self.assertEqual(intervals[0].end_date, date(2023, 8, 15))
+        self.assertEqual(intervals[1].end_date, date(2025, 8, 1))
+        self.assertIsNone(intervals[2].end_date)
+        grad_interval = result.appointments["gr1aa"][0]
+        self.assertEqual(grad_interval.end_date, date(2022, 5, 1))
+        notice_types = {notice.notice_type for notice in result.notices}
+        self.assertIn("inferred_role_or_position_boundary", notice_types)
+        self.assertIn("inferred_inactive_boundary", notice_types)
+
+        rows = {(row.person_id, row.academic_year, row.role_group): row for row in result.rows}
+        self.assertEqual(rows[("abc1de", "2021-2022", "faculty")].start_date, date(2021, 8, 10))
+        self.assertTrue(rows[("abc1de", "2021-2022", "faculty")].current_active)
+        self.assertEqual(rows[("abc1de", "2025-2026", "emeritus")].start_date, date(2025, 8, 1))
+        self.assertTrue(rows[("abc1de", "2025-2026", "emeritus")].current_active)
+        self.assertEqual(rows[("gr1aa", "2021-2022", "grad")].end_date, date(2022, 5, 1))
+        self.assertNotIn(("gr1aa", "2022-2023", "grad"), rows)
+
+    def test_manual_overrides_replace_inferred_intervals(self) -> None:
+        faculty_path = "_departmentpeople/faculty/abc1de.md"
+        events = [
+            event(
+                "c1",
+                "2021-08-10",
+                "A",
+                faculty_path,
+                record("abc1de", "Ada Curie", "faculty", "Assistant Professor", faculty_path, "faculty"),
+            )
+        ]
+        overrides = {
+            "abc1de": roster_history.AppointmentOverride(
+                display_name="Ada C.",
+                appointments=[
+                    roster_history.AppointmentInterval(
+                        start_date=date(2022, 8, 1),
+                        end_date=date(2023, 7, 31),
+                        role_group="postdoc",
+                        position="Visiting Postdoc",
+                        source="manual",
+                        confidence="exact",
+                    )
+                ],
+            )
+        }
+
+        result = roster_history.build_history_result(
+            events=events,
+            current_roster=empty_roster_result(),
+            overrides=overrides,
+            initial_start_date=date(2021, 8, 1),
+            as_of_date=date(2024, 6, 1),
+        )
+
+        self.assertEqual(result.people["abc1de"].display_name, "Ada C.")
+        self.assertEqual(len(result.appointments["abc1de"]), 1)
+        self.assertEqual(result.appointments["abc1de"][0].role_group, "postdoc")
+        self.assertEqual([(row.academic_year, row.role_group, row.source) for row in result.rows], [("2022-2023", "postdoc", "manual")])
+        self.assertIn("manual_override_applied", {notice.notice_type for notice in result.notices})
+
+    def test_same_path_person_id_change_closes_previous_identity(self) -> None:
+        faculty_path = "_departmentpeople/faculty/person.md"
+        events = [
+            event(
+                "c1",
+                "2021-08-01",
+                "A",
+                faculty_path,
+                record("oldid", "Ada Curie", "faculty", "Professor", faculty_path, "faculty"),
+            ),
+            event(
+                "c2",
+                "2021-09-01",
+                "M",
+                faculty_path,
+                record("newid", "Ada Curie", "faculty", "Professor", faculty_path, "faculty"),
+            ),
+        ]
+
+        people, appointments, notices = roster_history.infer_git_intervals(events)
+
+        self.assertEqual(people["newid"].display_name, "Ada Curie")
+        self.assertEqual(appointments["oldid"][0].end_date, date(2021, 9, 1))
+        self.assertIsNone(appointments["newid"][0].end_date)
+        self.assertIn("path_person_id_change", {notice.notice_type for notice in notices})
+
+    def test_override_yaml_loader_supports_manual_appointment_examples(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "appointments_overrides.yml"
+            path.write_text(
+                """
+abc1de:
+  display_name: Ada Curie
+  appointments:
+    - start_date: 2021-08-01
+      end_date: null
+      role_group: faculty
+      position: Professor
+      source: manual
+""",
+                encoding="utf-8",
+            )
+
+            overrides = roster_history.load_appointment_overrides(path)
+
+        interval = overrides["abc1de"].appointments[0]
+        self.assertEqual(overrides["abc1de"].display_name, "Ada Curie")
+        self.assertEqual(interval.start_date, date(2021, 8, 1))
+        self.assertIsNone(interval.end_date)
+        self.assertEqual(interval.confidence, "exact")
+
+    def test_academic_year_expansion_clips_to_initial_start_and_windows(self) -> None:
+        rows = roster_history.expand_active_years(
+            people={"abc1de": roster_history.PersonSummary("abc1de", "Ada Curie")},
+            appointments={
+                "abc1de": [
+                    roster_history.AppointmentInterval(
+                        start_date=date(2019, 1, 1),
+                        end_date=None,
+                        role_group="faculty",
+                        position="Professor",
+                        source="git-history",
+                        confidence="commit-date",
+                    )
+                ]
+            },
+            initial_start_date=date(2021, 8, 1),
+            as_of_date=date(2023, 7, 1),
+        )
+
+        self.assertEqual([row.academic_year for row in rows], ["2021-2022", "2022-2023"])
+        self.assertEqual(rows[0].start_date, date(2021, 8, 1))
+        self.assertEqual(rows[0].end_date, date(2022, 7, 31))
+        self.assertEqual(rows[1].end_date, date(2023, 7, 31))
+
+    def test_write_outputs_creates_json_csv_and_markdown(self) -> None:
+        result = roster_history.HistoryResult(
+            people={"abc1de": roster_history.PersonSummary("abc1de", "Ada Curie")},
+            appointments={
+                "abc1de": [
+                    roster_history.AppointmentInterval(
+                        start_date=date(2021, 8, 1),
+                        end_date=None,
+                        role_group="faculty",
+                        position="Professor",
+                        source="manual",
+                        confidence="exact",
+                    )
+                ]
+            },
+            rows=[
+                roster_history.ActiveYearRow(
+                    person_id="abc1de",
+                    display_name="Ada Curie",
+                    academic_year="2021-2022",
+                    start_date=date(2021, 8, 1),
+                    end_date=date(2022, 7, 31),
+                    role_group="faculty",
+                    position="Professor",
+                    source="manual",
+                    confidence="exact",
+                    current_active=True,
+                )
+            ],
+            notices=[],
+            initial_start_date=date(2021, 8, 1),
+            as_of_date=date(2022, 1, 1),
+            generated_at="2022-01-01T00:00:00Z",
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            json_path = root / "cache" / "active_people_by_year.json"
+            csv_path = root / "reports" / "active.csv"
+            md_path = root / "reports" / "active.md"
+
+            roster_history.write_outputs(result, json_path, csv_path, md_path)
+
+            payload = json.loads(json_path.read_text(encoding="utf-8"))
+            with csv_path.open(encoding="utf-8", newline="") as handle:
+                rows = list(csv.DictReader(handle))
+            markdown = md_path.read_text(encoding="utf-8")
+
+        self.assertEqual(payload["rows"][0]["person_id"], "abc1de")
+        self.assertEqual(rows[0]["academic_year"], "2021-2022")
+        self.assertIn("Counts by Academic Year and Role", markdown)
+
+
+if __name__ == "__main__":
+    unittest.main()

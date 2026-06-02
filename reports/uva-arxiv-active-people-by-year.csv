@@ -1,0 +1,659 @@
+person_id,display_name,academic_year,start_date,end_date,role_group,position,source,confidence,current_active
+aa4cr,Abdelmalek Abdesselam,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+asr3x,Andrei Rapinchuk,2021-2022,2021-08-01,2022-07-31,faculty,McConnell-Bernard Professor of Mathematics,git-history,commit-date,true
+brh5c,Benjamin Hayes,2021-2022,2022-06-09,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+hcg3m,Christian Gromoll,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+cmr3hk,Christian Reidys,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
+clh4xd,Craig Huneke,2021-2022,2021-08-01,2022-07-31,faculty,Marvin Rosenblum Professor,git-history,commit-date,true
+des5e,David Sherman,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+eg4va,Evangelia Gazaki,2021-2022,2021-08-01,2022-07-31,faculty,Assistant Professor,git-history,commit-date,true
+iwh,Ira Herbst,2021-2022,2021-08-01,2021-08-20,faculty,Professor and Associate Chair,git-history,commit-date,true
+jlm6cj,Jennifer Morse,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
+ji2k,John Imbrie,2021-2022,2021-08-20,2022-07-31,faculty,Professor,git-history,commit-date,true
+jeb2md,Julie Bergner,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
+jf8dc,Juraj Földes,2021-2022,2022-06-09,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+khp3k,Karen Parshall,2021-2022,2021-08-01,2022-07-31,faculty,Commonwealth Professor of Mathematics and History,git-history,commit-date,true
+ko5wk,Ken Ono,2021-2022,2022-07-31,2022-07-31,faculty,Chairman and Marvin Rosenblum Professor of Mathematics,git-history,commit-date,true
+lap5r,Leonid Petrov,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+mve2x,Mikhail Ershov,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
+njk4x,Nicholas Kuhn,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
+pa8e,Peter Abramenko,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
+ph7ph,Peter Humphries,2021-2022,2021-08-01,2022-07-31,faculty,Assistant Professor,git-history,commit-date,true
+sm4cw,Sara Maloni,2021-2022,2022-06-09,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+vk6e,Slava Krushkal,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
+tam7b,Tai Melcher,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+tmk5a,Thomas Koberda,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+tmark,Thomas Mark,2021-2022,2021-08-20,2022-07-31,faculty,Professor and Associate Chair,git-history,commit-date,true
+ww9c,Weiqiang Wang,2021-2022,2021-08-01,2022-07-31,faculty,Gordon Whyburn Professor of Mathematics,git-history,commit-date,true
+yqd3p,Yen Do,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+yq2dw,You Qi,2021-2022,2021-08-01,2022-07-31,faculty,Assistant Professor,git-history,commit-date,true
+zg7c,Zoran Grujic,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,false
+ayp6e,Anna Pun,2021-2022,2021-08-01,2022-07-31,postdoc,Whyburn Research Associate,git-history,commit-date,false
+bd7bp,Bruno Braga,2021-2022,2021-08-01,2022-07-31,postdoc,Mary Ann Pitts Research Associate,git-history,commit-date,false
+cu9da,Charlotte Ure,2021-2022,2021-08-01,2022-07-31,postdoc,Research Associate and Lecturer,git-history,commit-date,false
+ecu4xw,Filippo Mazzoli,2021-2022,2021-08-01,2022-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+gu8gs,Gennady Uraltsev,2021-2022,2021-08-01,2022-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+jr9zb,Jinbo Ren,2021-2022,2021-08-01,2021-08-20,postdoc,Research Associate,git-history,commit-date,false
+nsr6sf,Joe Webster,2021-2022,2021-08-20,2022-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+lx5af,Liaosha Xu,2021-2022,2021-08-20,2022-07-31,postdoc,Research Associate,git-history,commit-date,false
+waj9cr,Mark Pengitore,2021-2022,2021-08-20,2022-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+ms3wq,Mouhamadou Sy,2021-2022,2021-08-01,2021-08-20,postdoc,Whyburn Research Associate,git-history,commit-date,false
+xce4ux,Neelam Saikia,2021-2022,2021-08-20,2022-07-31,postdoc,Visiting Scholar,git-history,commit-date,false
+tp2tt,Thomas Polstra,2021-2022,2021-08-20,2022-07-31,postdoc,Visiting Scholar,git-history,commit-date,false
+ws7jx,Walker Stern,2021-2022,2021-08-01,2022-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+wt8zj,Wei-Lun Tsai,2021-2022,2021-08-01,2022-07-31,postdoc,Research Associate and Lecturer,git-history,commit-date,false
+eqr8nm,William Balderrama,2021-2022,2021-08-20,2022-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+weo3y,William Olsen,2021-2022,2021-08-01,2022-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+ala3t,Adrian Avalos,2021-2022,2021-08-01,2022-07-31,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+at3kk,Alec Traaseth,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+ad7ag,Alejandro De Las Penas Castano,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+aaj4w,Alex Jenny,2021-2022,2021-08-01,2022-07-31,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+zsz8yz,Amelia Buckland,2021-2022,2021-08-31,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+aw5dk,Aoran Wu,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+akd4ae,Aron Daw,2021-2022,2021-08-01,2021-09-14,grad,Graduate Student,git-history,commit-date,false
+bp3aq,Badri Vishal Pandey,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+vba4jq,Biying Wang,2021-2022,2021-08-31,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+cls8az,Casia Siegel,2021-2022,2021-09-30,2022-07-31,grad,4+1,git-history,commit-date,false
+gcc2hq,Charlie Conneen,2021-2022,2021-09-30,2022-07-31,grad,4+1,git-history,commit-date,false
+cjl8zf,Christopher J. R. Lloyd,2021-2022,2021-08-01,2021-08-26,grad,Graduate Student,git-history,commit-date,false
+kxk2dr,David Chasteen-Boyd,2021-2022,2021-08-31,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+daw5de,David Will,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+dkp7tpj,Donnelly Phillips,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+arj9zs,Dounia Lazreq,2021-2022,2021-08-31,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+egm3zq,Eleanor McSpirit,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+thp5uc,Eleftherios Chatzitheodoridis,2021-2022,2021-08-31,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+aus8ng,Eloisa Sanchez,2021-2022,2021-08-31,2022-07-31,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+ghs9ae,George Seelinger,2021-2022,2021-08-01,2021-08-26,grad,Graduate Student,git-history,commit-date,false
+hl6de,Haoyu Li,2021-2022,2021-09-30,2022-07-31,grad,4+1,git-history,commit-date,false
+hs7gy,Hasan Saad,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+iir4pk,Ian Runnels,2021-2022,2021-08-01,2021-08-26,grad,Graduate Student,git-history,commit-date,false
+jy4au,Jiajun Yan,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+jlh6fp,John Harnois Jr.,2021-2022,2021-08-01,2021-08-26,grad,Graduate Student,git-history,commit-date,false
+je5pd,Joseph Eisner,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+rsx5wp,Jun Hyun Park,2021-2022,2021-08-31,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+ka7mx,Kian Cheong Aik,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+qpz4ex,Kristen Scheckelhoff,2021-2022,2021-08-31,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+lx5af,Liaosha Xu,2021-2022,2021-08-01,2021-08-20,grad,Graduate Student,git-history,commit-date,false
+lml2tb,Louisa Liles,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+czj9zj,Luz Melo,2021-2022,2021-08-31,2022-07-31,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+mas3er,Mark Schrecengost,2021-2022,2021-08-01,2021-08-20,grad,grad,git-history,commit-date,false
+mjf7eb,Matthew Feller,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+mm8fb,Matthew McCarthy,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+muf5cz,Michael Wills,2021-2022,2021-08-31,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+mit8vu,Miika Tuominen,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+mst2ae,Mikhail Tikhonov,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+mt3cb,Mojdeh Tarighat Feller,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+nsd8uc,Neelav Sayer Dutta,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+ndn3em,Nhan Nguyen,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+pkj4vj,Peter Johnson,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+rmk3g,Reina Kirkendall,2021-2022,2021-08-01,2021-08-26,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+rtw9aa,Robert Williams,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+ra5aq,Rostislav Akhmechet,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+sm3vg,Sarasij Maitra,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+sy8vb,Shengkuan Yan,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+sw6vm,Shunyu Wan,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+guc8ns,Suchakree Chueluecha,2021-2022,2021-08-31,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+tc2bb,Tanner Carawan,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+tpb9ds,Tyler Burger,2021-2022,2021-08-01,2021-08-26,grad,Graduate Student,git-history,commit-date,false
+vz6an,Valentina Zapata Castro,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+wz3nz,Weinan Zhang,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+wlc3vf,William Craig,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+wt4fw,Wojciech Tralle,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+yl8by,Yangxiao Luo,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,true
+ys8pfr,Yaolong Shen,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+yz3yq,Yuan Zhang,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
+hdj4nd,Daniel James,2021-2022,2021-08-20,2022-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+ds5nd,Dmitriy Sonkin,2021-2022,2021-08-01,2022-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
+ed8bg,Evangelos Dimou,2021-2022,2021-08-01,2022-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+it2h,Irina Timchenko,2021-2022,2021-08-01,2021-08-20,agfm_other,Lecturer,git-history,commit-date,false
+jjh2b,Jeffrey Holt,2021-2022,2021-08-01,2022-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+jsr2pz,Jim Rolf,2021-2022,2022-06-09,2022-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+kc5kv,Kristina Cernekova,2021-2022,2021-08-01,2022-07-31,agfm_other,Lecturer,git-history,commit-date,true
+zka4tz,Matt Demers,2021-2022,2021-08-20,2022-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
+mrg9ap,Matthew Gagne,2021-2022,2021-08-01,2022-07-31,agfm_other,Lecturer,git-history,commit-date,false
+psb7p,Paul Bourdon,2021-2022,2021-08-01,2021-08-20,agfm_other,"Professor & Director of Lower Division Courses, General Faculty",git-history,commit-date,false
+vvs9cc,Veronica Shalotenko,2021-2022,2021-08-01,2021-08-20,agfm_other,Lecturer,git-history,commit-date,false
+wec8v,Wendi Dass,2021-2022,2021-08-01,2022-07-31,agfm_other,Lecturer,git-history,commit-date,true
+bdm3f,Barbara MacCluer,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+bjp8w,Brian Parshall,2021-2022,2021-08-01,2022-01-19,emeritus,Gordon Whyburn Professor of Mathematics Emeritus,git-history,commit-date,false
+cfd5z,Charles Dunkl,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+clh4xd,Craig Huneke,2021-2022,2022-07-31,2022-07-31,emeritus,Marvin Rosenblum Professor Emeritus,git-history,commit-date,true
+der,Donald Ramirez,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+hnw,Harold Ward,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+iwh,Ira Herbst,2021-2022,2021-08-20,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+il2v,Irena Lasiecka,2021-2022,2021-08-01,2022-07-31,emeritus,Commonwealth Professor Emerita,git-history,commit-date,true
+jsh2a,James Howland,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+jlr5m,James Rovnyak,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+jrf,John Faulkner,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,false
+kmm4m,Kevin McCrimmon,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+let,Lawrence Thomas,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+lls2l,Leonard Scott,2021-2022,2021-08-01,2022-07-31,emeritus,McConnell-Bernard Professor of Mathematics Emeritus,git-history,commit-date,true
+ldp,Loren Pitt,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+rt7u,Roberto Triggiani,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+tlk8q,Thomas Kriete,2021-2022,2021-08-01,2022-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+aa4cr,Abdelmalek Abdesselam,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
+asr3x,Andrei Rapinchuk,2022-2023,2022-08-01,2023-07-31,faculty,McConnell-Bernard Professor of Mathematics,git-history,commit-date,true
+brh5c,Benjamin Hayes,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
+hcg3m,Christian Gromoll,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
+cmr3hk,Christian Reidys,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
+des5e,David Sherman,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
+eg4va,Evangelia Gazaki,2022-2023,2022-08-01,2023-07-31,faculty,Assistant Professor,git-history,commit-date,true
+jlm6cj,Jennifer Morse,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
+ji2k,John Imbrie,2022-2023,2022-12-22,2023-07-31,faculty,Interim Chair and Professor,git-history,commit-date,true
+jeb2md,Julie Bergner,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
+jf8dc,Juraj Földes,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
+khp3k,Karen Parshall,2022-2023,2022-08-01,2023-07-31,faculty,Commonwealth Professor of Mathematics and History,git-history,commit-date,true
+ko5wk,Ken Ono,2022-2023,2022-12-22,2023-07-31,faculty,STEM Advisor to the Provost and Marvin Rosenblum Professor of Mathematics,git-history,commit-date,true
+lap5r,Leonid Petrov,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
+mve2x,Mikhail Ershov,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
+njk4x,Nicholas Kuhn,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
+pa8e,Peter Abramenko,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
+ph7ph,Peter Humphries,2022-2023,2022-08-01,2023-07-31,faculty,Assistant Professor,git-history,commit-date,true
+sm4cw,Sara Maloni,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
+vk6e,Slava Krushkal,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
+tam7b,Tai Melcher,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
+tmk5a,Thomas Koberda,2022-2023,2022-08-08,2023-07-31,faculty,Associate Professor and Associate Chair,git-history,commit-date,true
+tmark,Thomas Mark,2022-2023,2022-08-08,2023-07-31,faculty,Professor,git-history,commit-date,true
+ww9c,Weiqiang Wang,2022-2023,2022-08-01,2023-07-31,faculty,Gordon Whyburn Professor of Mathematics,git-history,commit-date,true
+yqd3p,Yen Do,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
+yq2dw,You Qi,2022-2023,2022-08-01,2023-07-31,faculty,Assistant Professor,git-history,commit-date,true
+zg7c,Zoran Grujic,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,false
+szq3yx,Beth Branman,2022-2023,2023-02-01,2023-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+cu9da,Charlotte Ure,2022-2023,2022-08-01,2023-07-31,postdoc,Research Associate and Lecturer,git-history,commit-date,false
+dku8jc,Daniel Slonim,2022-2023,2023-01-23,2023-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+ecu4xw,Filippo Mazzoli,2022-2023,2022-08-01,2023-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+gu8gs,Gennady Uraltsev,2022-2023,2022-08-01,2023-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+nsr6sf,Joe Webster,2022-2023,2022-08-01,2023-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+wbt4qn,Kang Lu,2022-2023,2023-01-23,2023-07-31,postdoc,Mary Ann Pitts Research Associate and Lecturer,git-history,commit-date,false
+lx5af,Liaosha Xu,2022-2023,2023-01-13,2023-07-31,postdoc,Visiting Scholar,git-history,commit-date,false
+waj9cr,Mark Pengitore,2022-2023,2022-08-01,2023-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+xce4ux,Neelam Saikia,2022-2023,2022-08-01,2022-08-08,postdoc,Visiting Scholar,git-history,commit-date,false
+tp2tt,Thomas Polstra,2022-2023,2022-08-01,2022-08-18,postdoc,Visiting Scholar,git-history,commit-date,false
+ws7jx,Walker Stern,2022-2023,2022-08-01,2023-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+wt8zj,Wei-Lun Tsai,2022-2023,2022-08-01,2023-07-31,postdoc,Research Associate and Lecturer,git-history,commit-date,false
+eqr8nm,William Balderrama,2022-2023,2022-08-01,2023-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+weo3y,William Olsen,2022-2023,2022-08-01,2023-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+asm4pr,Adam Thomas Friedman-Brown,2022-2023,2022-08-08,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+ala3t,Adrian Avalos,2022-2023,2022-08-01,2022-08-08,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+at3kk,Alec Traaseth,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+ad7ag,Alejandro De Las Penas Castano,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+aaj4w,Alex Jenny,2022-2023,2022-08-01,2022-08-08,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+zsz8yz,Amelia Buckland,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+aw5dk,Aoran Wu,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+bp3aq,Badri Vishal Pandey,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+vba4jq,Biying Wang,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+cls8az,Casia Siegel,2022-2023,2022-08-01,2022-08-08,grad,4+1,git-history,commit-date,false
+gcc2hq,Charlie Conneen,2022-2023,2022-08-01,2022-08-08,grad,4+1,git-history,commit-date,false
+qzr2cy,Darien Jade Farnham,2022-2023,2022-08-08,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+kxk2dr,David Chasteen-Boyd,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+daw5de,David Will,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+dkp7tpj,Donnelly Phillips,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+arj9zs,Dounia Lazreq,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+egm3zq,Eleanor McSpirit,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+thp5uc,Eleftherios Chatzitheodoridis,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+aus8ng,Eloisa Sanchez,2022-2023,2022-08-17,2023-07-31,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+hmy3tf,Felipe Flores Llarena,2022-2023,2022-08-18,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+_Llarena,Felipe Ignacio Flores Llarena,2022-2023,2022-08-08,2022-08-08,grad,Graduate Student,git-history,commit-date,true
+tmpIDLlarena,Felipe Ignacio Flores Llarena,2022-2023,2022-08-08,2022-08-18,grad,Graduate Student,git-history,commit-date,false
+hl6de,Haoyu Li,2022-2023,2022-08-01,2022-08-08,grad,4+1,git-history,commit-date,false
+hs7gy,Hasan Saad,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+jy4au,Jiajun Yan,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+rsx5wp,Jun Hyun Park,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+vhe4ht,Kevin Joseph Gomez,2022-2023,2022-08-08,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+ka7mx,Kian Cheong Aik,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+qpz4ex,Kristen Scheckelhoff,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+lml2tb,Louisa Liles,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+czj9zj,Luz Melo,2022-2023,2022-08-01,2022-08-08,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+zuy3cu,Mason Hart,2022-2023,2022-08-08,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+mjf7eb,Matthew Feller,2022-2023,2022-08-01,2022-08-08,grad,Graduate Student,git-history,commit-date,false
+mm8fb,Matthew McCarthy,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+tmpIDMacmillan,Matthew McMillan,2022-2023,2022-08-08,2023-07-31,grad,Visiting Student,git-history,commit-date,false
+zha5sb,Maximiliano Sanchez Garza,2022-2023,2022-08-08,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+muf5cz,Michael Wills,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+mit8vu,Miika Tuominen,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+mst2ae,Mikhail Tikhonov,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+mt3cb,Mojdeh Tarighat Feller,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+nsd8uc,Neelav Sayer Dutta,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+ndn3em,Nhan Nguyen,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+eyu4dh,Pedro Brunialti Lima de Andrade,2022-2023,2022-08-08,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+tmpIDHernandez,Raul Arturo Hernandez-Gonzalez,2022-2023,2022-08-08,2022-08-23,grad,Graduate Student,git-history,commit-date,false
+xgr6vm,Raul Arturo Hernandez-Gonzalez,2022-2023,2022-08-23,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+rtw9aa,Robert Williams,2022-2023,2022-08-01,2022-08-08,grad,Graduate Student,git-history,commit-date,false
+ra5aq,Rostislav Akhmechet,2022-2023,2022-08-01,2022-08-08,grad,Graduate Student,git-history,commit-date,false
+sy8vb,Shengkuan Yan,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+sw6vm,Shunyu Wan,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+guc8ns,Suchakree Chueluecha,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+tc2bb,Tanner Carawan,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+gvs3ka,Thomas Jaklitsch,2022-2023,2022-08-08,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+vz6an,Valentina Zapata Castro,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+wz3nz,Weinan Zhang,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+wlc3vf,William Craig,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+wt4fw,Wojciech Tralle,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+yl8by,Yangxiao Luo,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+ys8pfr,Yaolong Shen,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+yz3yq,Yuan Zhang,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
+dkm7mj,Zivile Puospekaite,2022-2023,2022-08-08,2023-07-31,grad,Graduate Student,git-history,commit-date,true
+nbm2vp,Brianna Kurtz,2022-2023,2022-08-08,2023-07-31,agfm_other,Lecturer,git-history,commit-date,true
+hdj4nd,Daniel James,2022-2023,2022-08-01,2023-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+ds5nd,Dmitriy Sonkin,2022-2023,2022-08-01,2023-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
+ed8bg,Evangelos Dimou,2022-2023,2022-08-01,2023-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+jsr2pz,Jim Rolf,2022-2023,2022-08-01,2023-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+tmpIDNaab,Keith Naab,2022-2023,2022-08-08,2022-08-18,agfm_other,Lecturer,git-history,commit-date,false
+axv9hp,Keith Nabb,2022-2023,2022-08-18,2023-07-31,agfm_other,Lecturer,git-history,commit-date,false
+kc5kv,Kristina Cernekova,2022-2023,2022-08-18,2023-07-31,agfm_other,General Faculty Lecturer,git-history,commit-date,true
+zka4tz,Matt Demers,2022-2023,2022-08-01,2023-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
+mrg9ap,Matthew Gagne,2022-2023,2022-08-01,2023-07-31,agfm_other,Lecturer,git-history,commit-date,false
+wec8v,Wendi Dass,2022-2023,2022-08-01,2023-07-31,agfm_other,Lecturer,git-history,commit-date,true
+zg8bf,Zach Gates,2022-2023,2022-08-18,2023-07-31,agfm_other,General Faculty Lecturer,git-history,commit-date,false
+bdm3f,Barbara MacCluer,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+cfd5z,Charles Dunkl,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+clh4xd,Craig Huneke,2022-2023,2022-08-01,2023-07-31,emeritus,Marvin Rosenblum Professor Emeritus,git-history,commit-date,true
+der,Donald Ramirez,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+hnw,Harold Ward,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+iwh,Ira Herbst,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+il2v,Irena Lasiecka,2022-2023,2022-08-01,2023-07-31,emeritus,Commonwealth Professor Emerita,git-history,commit-date,true
+jsh2a,James Howland,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+jlr5m,James Rovnyak,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+jrf,John Faulkner,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,false
+kmm4m,Kevin McCrimmon,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+let,Lawrence Thomas,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+lls2l,Leonard Scott,2022-2023,2022-08-01,2023-07-31,emeritus,McConnell-Bernard Professor of Mathematics Emeritus,git-history,commit-date,true
+ldp,Loren Pitt,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+rt7u,Roberto Triggiani,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+tlk8q,Thomas Kriete,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+aa4cr,Abdelmalek Abdesselam,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
+asr3x,Andrei Rapinchuk,2023-2024,2023-08-01,2024-07-31,faculty,McConnell-Bernard Professor of Mathematics,git-history,commit-date,true
+af7py,Aseel Farhat,2023-2024,2024-07-31,2024-07-31,faculty,Assistant Professor,git-history,commit-date,true
+brh5c,Benjamin Hayes,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
+hcg3m,Christian Gromoll,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
+cmr3hk,Christian Reidys,2023-2024,2023-08-01,2024-07-31,faculty,Professor,git-history,commit-date,true
+des5e,David Sherman,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
+eg4va,Evangelia Gazaki,2023-2024,2023-08-01,2024-07-31,faculty,Assistant Professor,git-history,commit-date,true
+mbp6pj,J.D. Quigley,2023-2024,2023-08-15,2024-07-31,faculty,Assistant Professor,git-history,commit-date,true
+jlm6cj,Jennifer Morse,2023-2024,2023-08-01,2024-07-31,faculty,Professor,git-history,commit-date,true
+ji2k,John Imbrie,2023-2024,2023-08-15,2024-07-31,faculty,Professor,git-history,commit-date,true
+jeb2md,Julie Bergner,2023-2024,2023-08-22,2024-07-31,faculty,Professor and Associate Chair,git-history,commit-date,true
+jf8dc,Juraj Földes,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
+khp3k,Karen Parshall,2023-2024,2023-08-01,2023-08-15,faculty,Commonwealth Professor of Mathematics and History,git-history,commit-date,true
+ko5wk,Ken Ono,2023-2024,2023-08-01,2024-07-31,faculty,STEM Advisor to the Provost and Marvin Rosenblum Professor of Mathematics,git-history,commit-date,true
+lap5r,Leonid Petrov,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
+mve2x,Mikhail Ershov,2023-2024,2023-08-01,2024-07-31,faculty,Professor,git-history,commit-date,true
+njk4x,Nicholas Kuhn,2023-2024,2023-08-01,2024-07-31,faculty,Professor,git-history,commit-date,true
+pa8e,Peter Abramenko,2023-2024,2023-08-01,2024-07-31,faculty,Professor,git-history,commit-date,true
+ph7ph,Peter Humphries,2023-2024,2023-08-01,2024-07-31,faculty,Assistant Professor,git-history,commit-date,true
+sm4cw,Sara Maloni,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
+vk6e,Slava Krushkal,2023-2024,2023-08-01,2024-07-31,faculty,Professor,git-history,commit-date,true
+tam7b,Tai Melcher,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
+tmk5a,Thomas Koberda,2023-2024,2023-08-21,2024-07-31,faculty,Professor,git-history,commit-date,true
+tmark,Thomas Mark,2023-2024,2023-08-15,2024-07-31,faculty,Professor and Chair,git-history,commit-date,true
+ww9c,Weiqiang Wang,2023-2024,2023-08-01,2024-07-31,faculty,Gordon Whyburn Professor of Mathematics,git-history,commit-date,true
+yqd3p,Yen Do,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
+yq2dw,You Qi,2023-2024,2023-08-01,2024-07-31,faculty,Assistant Professor,git-history,commit-date,true
+zg7c,Zoran Grujic,2023-2024,2023-08-01,2023-08-15,faculty,Professor,git-history,commit-date,false
+tmpidsingh,Ajit Singh,2023-2024,2023-08-15,2024-07-31,postdoc,Nehru-Fulbright Postdoctoral Fellow,git-history,commit-date,false
+spitz_tmp_id,Ben Spitz,2023-2024,2024-07-31,2024-07-31,postdoc,Postdoc,git-history,commit-date,false
+szq3yx,Beth Branman,2023-2024,2023-08-01,2024-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+pfy7cf,Brandon Shapiro,2023-2024,2023-08-15,2024-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
+cu9da,Charlotte Ure,2023-2024,2023-08-01,2023-08-15,postdoc,Research Associate and Lecturer,git-history,commit-date,false
+dku8jc,Daniel Slonim,2023-2024,2023-08-01,2024-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+ecu4xw,Filippo Mazzoli,2023-2024,2023-08-01,2023-08-15,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+gu8gs,Gennady Uraltsev,2023-2024,2023-08-01,2023-08-15,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+cgh6uv,Jacob Campbell,2023-2024,2023-08-15,2024-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
+jy4au,Jiajun Yan,2023-2024,2023-08-11,2024-06-29,postdoc,Terrence D. Daniels Family Jefferson Fellow,git-history,commit-date,false
+nsr6sf,Joe Webster,2023-2024,2023-08-01,2023-08-15,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+wbt4qn,Kang Lu,2023-2024,2023-08-01,2024-07-31,postdoc,Mary Ann Pitts Research Associate and Lecturer,git-history,commit-date,false
+lx5af,Liaosha Xu,2023-2024,2023-08-01,2023-08-15,postdoc,Visiting Scholar,git-history,commit-date,false
+waj9cr,Mark Pengitore,2023-2024,2023-08-01,2024-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+dfh3fs,Oliver Wang,2023-2024,2024-07-31,2024-07-31,postdoc,Postdoc,git-history,commit-date,true
+rs2sf,Ryan Stees,2023-2024,2023-08-15,2024-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
+bug4bt,Sarah Blackwell,2023-2024,2023-08-15,2024-07-31,postdoc,NSF Postdoctoral Research Fellow,git-history,commit-date,true
+ws7jx,Walker Stern,2023-2024,2023-08-01,2023-08-15,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+wt8zj,Wei-Lun Tsai,2023-2024,2023-08-01,2023-08-15,postdoc,Research Associate and Lecturer,git-history,commit-date,false
+eqr8nm,William Balderrama,2023-2024,2023-08-01,2024-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+weo3y,William Olsen,2023-2024,2023-08-01,2023-08-15,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+ukg7ef,Aaratrick Basu,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+asm4pr,Adam Thomas Friedman-Brown,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+at3kk,Alec Traaseth,2023-2024,2023-08-01,2024-06-29,grad,Graduate Student,git-history,commit-date,false
+ad7ag,Alejandro De Las Penas Castano,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+zsz8yz,Amelia Buckland,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+aw5dk,Aoran Wu,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+ftq4mr,Astrid Lilly,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+bp3aq,Badri Vishal Pandey,2023-2024,2023-08-01,2023-08-15,grad,Graduate Student,git-history,commit-date,false
+vba4jq,Biying Wang,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+taq4re,Brandon Sisler,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+gsm6dn,Connor MacMahon,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+qzr2cy,Darien Jade Farnham,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+kxk2dr,David Chasteen-Boyd,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+daw5de,David Will,2023-2024,2023-08-01,2023-08-15,grad,Graduate Student,git-history,commit-date,false
+dkp7tpj,Donnelly Phillips,2023-2024,2023-08-01,2024-06-29,grad,Graduate Student,git-history,commit-date,false
+arj9zs,Dounia Lazreq,2023-2024,2023-08-01,2023-09-08,grad,Graduate Student,git-history,commit-date,false
+egm3zq,Eleanor McSpirit,2023-2024,2023-08-01,2024-06-29,grad,Graduate Student,git-history,commit-date,false
+thp5uc,Eleftherios Chatzitheodoridis,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+aus8ng,Eloisa Sanchez,2023-2024,2023-08-01,2023-08-15,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+amb9cc,Emily Hafken,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-history,commit-date,false
+hmy3tf,Felipe Flores Llarena,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+_Llarena,Felipe Ignacio Flores Llarena,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+hs7gy,Hasan Saad,2023-2024,2023-08-01,2024-06-29,grad,Graduate Student,git-history,commit-date,false
+mmw2va,Holden Eriksson,2023-2024,2023-08-15,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+jy4au,Jiajun Yan,2023-2024,2023-08-01,2023-08-11,grad,Graduate Student,git-history,commit-date,false
+eme4uf,Jing Wang,2023-2024,2023-08-11,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+rsx5wp,Jun Hyun Park,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+vhe4ht,Kevin Joseph Gomez,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+ka7mx,Kian Cheong Aik,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,false
+qpz4ex,Kristen Scheckelhoff,2023-2024,2023-08-01,2023-09-08,grad,Graduate Student,git-history,commit-date,false
+qsg2kv,Lam Ngoc Nguyen,2023-2024,2023-08-15,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+lml2tb,Louisa Liles,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,false
+zuy3cu,Mason Hart,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+mux9mj,Matthew Hudson,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+mm8fb,Matthew McCarthy,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,false
+tmpIDMacmillan,Matthew McMillan,2023-2024,2023-08-01,2023-08-15,grad,Visiting Student,git-history,commit-date,false
+zha5sb,Maximiliano Sanchez Garza,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+muf5cz,Michael Wills,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+mit8vu,Miika Tuominen,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,false
+mst2ae,Mikhail Tikhonov,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+mt3cb,Mojdeh Tarighat Feller,2023-2024,2023-08-01,2023-08-15,grad,Graduate Student,git-history,commit-date,false
+des5sf,Mícheál Ó Cobhthaigh,2023-2024,2023-08-15,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+nsd8uc,Neelav Sayer Dutta,2023-2024,2023-08-01,2023-08-15,grad,Graduate Student,git-history,commit-date,false
+ndn3em,Nhan Nguyen,2023-2024,2023-08-01,2023-08-15,grad,Graduate Student,git-history,commit-date,false
+nas3ek,Nick Sweeney,2023-2024,2023-08-15,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+ntr2qp,Oscar Arévalo,2023-2024,2023-08-11,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+eyu4dh,Pedro Brunialti Lima de Andrade,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+xrw6eh,Rahmat Rashid,2023-2024,2023-08-15,2023-10-10,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+xgr6vm,Raul Arturo Hernandez-Gonzalez,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+nbc3hn,Ruiqi Zou,2023-2024,2023-08-11,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+czh2zu,Samir Lassaad Fridhi,2023-2024,2023-08-15,2024-07-31,grad,Bridge to the Doctorate Student,git-history,commit-date,true
+sy8vb,Shengkuan Yan,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+sw6vm,Shunyu Wan,2023-2024,2023-08-01,2024-06-29,grad,Graduate Student,git-history,commit-date,false
+guc8ns,Suchakree Chueluecha,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+yyk2hk,Suren Kyurumyan,2023-2024,2023-08-11,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+tc2bb,Tanner Carawan,2023-2024,2023-08-01,2024-06-29,grad,Graduate Student,git-history,commit-date,false
+gvs3ka,Thomas Jaklitsch,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+frj5jd,Vadim Leshkov,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+vz6an,Valentina Zapata Castro,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,false
+wz3nz,Weinan Zhang,2023-2024,2023-08-01,2023-08-15,grad,Graduate Student,git-history,commit-date,false
+wlc3vf,William Craig,2023-2024,2023-08-01,2023-08-15,grad,Graduate Student,git-history,commit-date,false
+wt4fw,Wojciech Tralle,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,false
+yl8by,Yangxiao Luo,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+ys8pfr,Yaolong Shen,2023-2024,2023-08-01,2024-06-29,grad,Graduate Student,git-history,commit-date,false
+smb2tp,Yizhen Li,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+yz3yq,Yuan Zhang,2023-2024,2023-08-01,2024-06-29,grad,Graduate Student,git-history,commit-date,false
+jrd6an,Ziming Chen,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+dkm7mj,Zivile Puospekaite,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
+ans5k,Ana Nora Evans,2023-2024,2023-08-15,2024-07-31,agfm_other,Lecturer,git-history,commit-date,false
+axh7cj,Bakhyt Aitzhanova,2023-2024,2023-08-30,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+nbm2vp,Brianna Kurtz,2023-2024,2023-08-15,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+qgf6bc,Caelan Wang,2023-2024,2024-07-31,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+zfg4vh,Charles Baker,2023-2024,2023-08-15,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
+hdj4nd,Daniel James,2023-2024,2023-08-01,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+ds5nd,Dmitriy Sonkin,2023-2024,2023-08-01,2023-08-15,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
+ed8bg,Evangelos Dimou,2023-2024,2023-08-01,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+gps9h,Gregory Simms,2023-2024,2023-08-15,2024-07-31,agfm_other,Lecturer,git-history,commit-date,false
+jsr2pz,Jim Rolf,2023-2024,2023-08-01,2024-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+rbh3vx,Josh Turner,2023-2024,2024-07-31,2024-07-31,agfm_other,Lecturer,git-history,commit-date,true
+axv9hp,Keith Nabb,2023-2024,2023-08-01,2023-08-15,agfm_other,Lecturer,git-history,commit-date,false
+kc5kv,Kristina Cernekova,2023-2024,2023-08-01,2024-07-31,agfm_other,General Faculty Lecturer,git-history,commit-date,true
+zka4tz,Matt Demers,2023-2024,2023-08-01,2023-08-15,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
+mrg9ap,Matthew Gagne,2023-2024,2023-08-01,2023-08-15,agfm_other,Lecturer,git-history,commit-date,false
+fxk2nk,Matthew McMillan,2023-2024,2023-08-15,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
+jqg2xb,Susan Mitchell,2023-2024,2024-07-31,2024-07-31,agfm_other,Lecturer,git-history,commit-date,true
+wec8v,Wendi Dass,2023-2024,2023-08-01,2024-07-31,agfm_other,Lecturer,git-history,commit-date,true
+zg8bf,Zach Gates,2023-2024,2023-08-01,2023-08-15,agfm_other,General Faculty Lecturer,git-history,commit-date,false
+zmb9b,Zachary Beamer,2023-2024,2023-08-15,2024-07-31,agfm_other,Lecturer,git-history,commit-date,true
+bdm3f,Barbara MacCluer,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+cfd5z,Charles Dunkl,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+clh4xd,Craig Huneke,2023-2024,2023-08-01,2024-07-31,emeritus,Marvin Rosenblum Professor Emeritus,git-history,commit-date,true
+der,Donald Ramirez,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+hnw,Harold Ward,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+iwh,Ira Herbst,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+il2v,Irena Lasiecka,2023-2024,2023-08-01,2024-07-31,emeritus,Commonwealth Professor Emerita,git-history,commit-date,true
+jsh2a,James Howland,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+jlr5m,James Rovnyak,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+jrf,John Faulkner,2023-2024,2023-08-01,2023-08-15,emeritus,Professor Emeritus,git-history,commit-date,false
+khp3k,Karen Parshall,2023-2024,2023-08-15,2024-07-31,emeritus,Commonwealth Professor of Mathematics and History Emerita,git-history,commit-date,true
+kmm4m,Kevin McCrimmon,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+let,Lawrence Thomas,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+lls2l,Leonard Scott,2023-2024,2023-08-01,2024-07-31,emeritus,McConnell-Bernard Professor of Mathematics Emeritus,git-history,commit-date,true
+ldp,Loren Pitt,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+njk4x,Nicholas Kuhn,2023-2024,2024-07-31,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+rt7u,Roberto Triggiani,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+tlk8q,Thomas Kriete,2023-2024,2023-08-01,2024-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+aa4cr,Abdelmalek Abdesselam,2024-2025,2024-08-01,2025-07-31,faculty,Associate Professor,git-history,commit-date,true
+asr3x,Andrei Rapinchuk,2024-2025,2024-08-01,2025-07-31,faculty,McConnell-Bernard Professor of Mathematics,git-history,commit-date,true
+af7py,Aseel Farhat,2024-2025,2024-08-01,2025-07-31,faculty,Assistant Professor,git-history,commit-date,true
+brh5c,Benjamin Hayes,2024-2025,2024-08-01,2025-07-31,faculty,Associate Professor,git-history,commit-date,true
+hcg3m,Christian Gromoll,2024-2025,2024-08-01,2025-07-31,faculty,Associate Professor,git-history,commit-date,true
+cmr3hk,Christian Reidys,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
+des5e,David Sherman,2024-2025,2024-08-01,2025-07-31,faculty,Associate Professor,git-history,commit-date,true
+eg4va,Evangelia Gazaki,2024-2025,2024-08-01,2025-07-31,faculty,Assistant Professor,git-history,commit-date,true
+mbp6pj,J.D. Quigley,2024-2025,2024-08-01,2025-07-31,faculty,Assistant Professor,git-history,commit-date,true
+jlm6cj,Jennifer Morse,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
+ji2k,John Imbrie,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
+rbh3vx,Josh Turner,2024-2025,2024-09-18,2024-09-18,faculty,Assistant Professor,git-history,commit-date,true
+jeb2md,Julie Bergner,2024-2025,2024-11-14,2025-07-31,faculty,Professor,git-history,commit-date,true
+jf8dc,Juraj Földes,2024-2025,2024-08-01,2025-07-31,faculty,Associate Professor,git-history,commit-date,true
+ko5wk,Ken Ono,2024-2025,2024-08-01,2025-07-31,faculty,STEM Advisor to the Provost and Marvin Rosenblum Professor of Mathematics,git-history,commit-date,true
+lap5r,Leonid Petrov,2024-2025,2024-08-20,2025-07-31,faculty,Professor,git-history,commit-date,true
+mve2x,Mikhail Ershov,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
+pa8e,Peter Abramenko,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
+ph7ph,Peter Humphries,2024-2025,2024-08-01,2025-07-31,faculty,Assistant Professor,git-history,commit-date,true
+sm4cw,Sara Maloni,2024-2025,2024-08-01,2025-07-31,faculty,Associate Professor,git-history,commit-date,true
+vk6e,Slava Krushkal,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
+tam7b,Tai Melcher,2024-2025,2024-08-01,2025-07-31,faculty,Associate Professor,git-history,commit-date,true
+tmk5a,Thomas Koberda,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
+tmark,Thomas Mark,2024-2025,2024-08-01,2025-07-31,faculty,Professor and Chair,git-history,commit-date,true
+ww9c,Weiqiang Wang,2024-2025,2024-08-01,2025-07-31,faculty,Gordon Whyburn Professor of Mathematics,git-history,commit-date,true
+yqd3p,Yen Do,2024-2025,2024-08-01,2025-07-31,faculty,Associate Professor,git-history,commit-date,true
+yq2dw,You Qi,2024-2025,2024-08-01,2025-07-31,faculty,Assistant Professor,git-history,commit-date,true
+tmpidsingh,Ajit Singh,2024-2025,2024-08-01,2025-07-31,postdoc,Nehru-Fulbright Postdoctoral Fellow,git-history,commit-date,false
+pej7rg,Ben Spitz,2024-2025,2024-10-10,2025-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+spitz_tmp_id,Ben Spitz,2024-2025,2024-08-01,2024-08-22,postdoc,Postdoc,git-history,commit-date,false
+szq3yx,Beth Branman,2024-2025,2024-08-01,2025-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+pfy7cf,Brandon Shapiro,2024-2025,2024-08-01,2025-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
+cgh6uv,Jacob Campbell,2024-2025,2024-08-01,2025-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
+wbt4qn,Kang Lu,2024-2025,2024-08-01,2025-07-31,postdoc,Mary Ann Pitts Research Associate and Lecturer,git-history,commit-date,false
+dfh3fs,Oliver Wang,2024-2025,2024-10-10,2025-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,true
+rs2sf,Ryan Stees,2024-2025,2024-08-01,2025-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
+bug4bt,Sarah Blackwell,2024-2025,2024-08-01,2025-07-31,postdoc,NSF Postdoctoral Research Fellow,git-history,commit-date,true
+ukg7ef,Aaratrick Basu,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+asm4pr,Adam Thomas Friedman-Brown,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+ad7ag,Alejandro De Las Penas Castano,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+zsz8yz,Amelia Buckland,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+aw5dk,Aoran Wu,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+ftq4mr,Astrid Lilly,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+vba4jq,Biying Wang,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+taq4re,Brandon Sisler,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+gsm6dn,Connor MacMahon,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+qzr2cy,Darien Jade Farnham,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+kxk2dr,David Chasteen-Boyd,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+thp5uc,Eleftherios Chatzitheodoridis,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+amb9cc,Emily Hafken,2024-2025,2024-08-01,2025-03-17,grad,Graduate Student,git-history,commit-date,false
+hmy3tf,Felipe Flores Llarena,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+_Llarena,Felipe Ignacio Flores Llarena,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+mmw2va,Holden Eriksson,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+eme4uf,Jing Wang,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+rsx5wp,Jun Hyun Park,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+vhe4ht,Kevin Joseph Gomez,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+ka7mx,Kian Cheong Aik,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,false
+qsg2kv,Lam Ngoc Nguyen,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+lml2tb,Louisa Liles,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,false
+zuy3cu,Mason Hart,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+mux9mj,Matthew Hudson,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+mm8fb,Matthew McCarthy,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,false
+zha5sb,Maximiliano Sanchez Garza,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+muf5cz,Michael Wills,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+mit8vu,Miika Tuominen,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,false
+mst2ae,Mikhail Tikhonov,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+des5sf,Mícheál Ó Cobhthaigh,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+nas3ek,Nick Sweeney,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+ntr2qp,Oscar Arévalo,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+eyu4dh,Pedro Brunialti Lima de Andrade,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+xgr6vm,Raul Arturo Hernandez-Gonzalez,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+nbc3hn,Ruiqi Zou,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+czh2zu,Samir Lassaad Fridhi,2024-2025,2025-05-21,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+sy8vb,Shengkuan Yan,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+guc8ns,Suchakree Chueluecha,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+yyk2hk,Suren Kyurumyan,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+gvs3ka,Thomas Jaklitsch,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+frj5jd,Vadim Leshkov,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+vz6an,Valentina Zapata Castro,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,false
+wt4fw,Wojciech Tralle,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,false
+yl8by,Yangxiao Luo,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+smb2tp,Yizhen Li,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+jrd6an,Ziming Chen,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+dkm7mj,Zivile Puospekaite,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+axh7cj,Bakhyt Aitzhanova,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+nbm2vp,Brianna Kurtz,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+qgf6bc,Caelan Wang,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+hdj4nd,Daniel James,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+ed8bg,Evangelos Dimou,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+jjh2b,Jeffrey Holt,2024-2025,2024-11-13,2025-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+jsr2pz,Jim Rolf,2024-2025,2024-08-01,2025-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+rbh3vx,Josh Turner,2024-2025,2024-09-18,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+kc5kv,Kristina Cernekova,2024-2025,2024-08-01,2025-07-31,agfm_other,General Faculty Lecturer,git-history,commit-date,true
+jqg2xb,Susan Mitchell,2024-2025,2024-08-01,2025-07-31,agfm_other,Lecturer,git-history,commit-date,true
+wec8v,Wendi Dass,2024-2025,2024-08-01,2025-07-31,agfm_other,Lecturer,git-history,commit-date,true
+zmb9b,Zachary Beamer,2024-2025,2024-08-01,2025-07-31,agfm_other,Lecturer,git-history,commit-date,true
+bdm3f,Barbara MacCluer,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+cfd5z,Charles Dunkl,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+clh4xd,Craig Huneke,2024-2025,2024-08-01,2025-07-31,emeritus,Marvin Rosenblum Professor Emeritus,git-history,commit-date,true
+der,Donald Ramirez,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+hnw,Harold Ward,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+iwh,Ira Herbst,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+il2v,Irena Lasiecka,2024-2025,2024-08-01,2025-07-31,emeritus,Commonwealth Professor Emerita,git-history,commit-date,true
+jsh2a,James Howland,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+jlr5m,James Rovnyak,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+khp3k,Karen Parshall,2024-2025,2024-08-01,2025-07-31,emeritus,Commonwealth Professor of Mathematics and History Emerita,git-history,commit-date,true
+kmm4m,Kevin McCrimmon,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+let,Lawrence Thomas,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+lls2l,Leonard Scott,2024-2025,2024-08-01,2025-07-31,emeritus,McConnell-Bernard Professor of Mathematics Emeritus,git-history,commit-date,true
+ldp,Loren Pitt,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+njk4x,Nicholas Kuhn,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+rt7u,Roberto Triggiani,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+tlk8q,Thomas Kriete,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+aa4cr,Abdelmalek Abdesselam,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+asr3x,Andrei Rapinchuk,2025-2026,2025-08-01,2026-07-31,faculty,McConnell-Bernard Professor of Mathematics,git-history,commit-date,true
+af7py,Aseel Farhat,2025-2026,2025-08-26,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+brh5c,Benjamin Hayes,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+hcg3m,Christian Gromoll,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+cmr3hk,Christian Reidys,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
+des5e,David Sherman,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+eg4va,Evangelia Gazaki,2025-2026,2025-08-26,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+mbp6pj,J.D. Quigley,2025-2026,2025-08-01,2026-07-31,faculty,Assistant Professor,git-history,commit-date,true
+jlm6cj,Jennifer Morse,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
+ji2k,John Imbrie,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
+jeb2md,Julie Bergner,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
+jf8dc,Juraj Földes,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+ko5wk,Ken Ono,2025-2026,2025-08-01,2026-07-31,faculty,STEM Advisor to the Provost and Marvin Rosenblum Professor of Mathematics,git-history,commit-date,true
+lap5r,Leonid Petrov,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
+mve2x,Mikhail Ershov,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
+pa8e,Peter Abramenko,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
+ph7ph,Peter Humphries,2025-2026,2025-08-01,2026-07-31,faculty,Assistant Professor,git-history,commit-date,true
+sm4cw,Sara Maloni,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+vk6e,Slava Krushkal,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
+tam7b,Tai Melcher,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+tmk5a,Thomas Koberda,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
+tmark,Thomas Mark,2025-2026,2025-08-01,2026-07-31,faculty,Professor and Chair,git-history,commit-date,true
+ww9c,Weiqiang Wang,2025-2026,2025-08-01,2026-07-31,faculty,Gordon Whyburn Professor of Mathematics,git-history,commit-date,true
+yqd3p,Yen Do,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+yq2dw,You Qi,2025-2026,2025-08-26,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+tmpidsingh,Ajit Singh,2025-2026,2025-08-01,2025-08-25,postdoc,Nehru-Fulbright Postdoctoral Fellow,git-history,commit-date,false
+pej7rg,Ben Spitz,2025-2026,2025-08-01,2025-08-25,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+szq3yx,Beth Branman,2025-2026,2025-08-01,2025-08-25,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+pfy7cf,Brandon Shapiro,2025-2026,2025-08-01,2026-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
+cgh6uv,Jacob Campbell,2025-2026,2025-08-01,2026-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
+wbt4qn,Kang Lu,2025-2026,2025-08-01,2026-01-26,postdoc,Mary Ann Pitts Research Associate and Lecturer,git-history,commit-date,false
+dfh3fs,Oliver Wang,2025-2026,2025-08-01,2026-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,true
+kym4jc,Pavel Coupek,2025-2026,2025-08-25,2026-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
+gdj6dy,Pranava Chaitanya Jayanti,2025-2026,2025-08-25,2026-07-31,postdoc,Pitts Research Associate and Lecturer,git-history,commit-date,true
+rs2sf,Ryan Stees,2025-2026,2025-08-01,2026-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
+bug4bt,Sarah Blackwell,2025-2026,2025-08-01,2026-07-31,postdoc,NSF Postdoctoral Research Fellow,git-history,commit-date,true
+ukg7ef,Aaratrick Basu,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+asm4pr,Adam Thomas Friedman-Brown,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+ad7ag,Alejandro De Las Penas Castano,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+zsz8yz,Amelia Buckland,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+vkn5ht,Andrew Scott Taylor,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+aw5dk,Aoran Wu,2025-2026,2025-08-01,2026-02-10,grad,Graduate Student,git-history,commit-date,true
+ftq4mr,Astrid Lilly,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+ufh5yp,Avinash Iyer,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+hcg4dz,Ben Alexander Hilbert,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+vba4jq,Biying Wang,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+taq4re,Brandon Sisler,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+gsm6dn,Connor MacMahon,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+qzr2cy,Darien Jade Farnham,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+kxk2dr,David Chasteen-Boyd,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+thp5uc,Eleftherios Chatzitheodoridis,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+djd3xs,Erica (Lanwen) Zhang,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+xvt8sy,Fausto Navarro Cepeda,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+hmy3tf,Felipe Flores Llarena,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+_Llarena,Felipe Ignacio Flores Llarena,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+avm5ax,Gabriel Adriano Collins Diraviam,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+mmw2va,Holden Eriksson,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+eme4uf,Jing Wang,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+rsx5wp,Jun Hyun Park,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+vhe4ht,Kevin Joseph Gomez,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+ymw4jf,Khoa Dang Nguyen Dinh,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+ka7mx,Kian Cheong Aik,2025-2026,2025-08-01,2025-08-27,grad,Graduate Student,git-history,commit-date,false
+qsg2kv,Lam Ngoc Nguyen,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+tdy3af,Liam Michael Staker,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+lml2tb,Louisa Liles,2025-2026,2025-08-01,2025-08-27,grad,Graduate Student,git-history,commit-date,false
+zuy3cu,Mason Hart,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+mux9mj,Matthew Hudson,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+mm8fb,Matthew McCarthy,2025-2026,2025-08-01,2025-08-27,grad,Graduate Student,git-history,commit-date,false
+zha5sb,Maximiliano Sanchez Garza,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+muf5cz,Michael Wills,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+mit8vu,Miika Tuominen,2025-2026,2025-08-01,2025-08-27,grad,Graduate Student,git-history,commit-date,false
+mst2ae,Mikhail Tikhonov,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+des5sf,Mícheál Ó Cobhthaigh,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+nas3ek,Nick Sweeney,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+ntr2qp,Oscar Arévalo,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+eyu4dh,Pedro Brunialti Lima de Andrade,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+xgr6vm,Raul Arturo Hernandez-Gonzalez,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+yhp9jm,Roan Luikart,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+nbc3hn,Ruiqi Zou,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+czh2zu,Samir Lassaad Fridhi,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+cdn6nr,Shaoyi Zhang,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+sy8vb,Shengkuan Yan,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+jrj8aa,Shoya Shimazaki,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+guc8ns,Suchakree Chueluecha,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+yyk2hk,Suren Kyurumyan,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+gvs3ka,Thomas Jaklitsch,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+xhs2hf,Tommaso Punis,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+frj5jd,Vadim Leshkov,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+vz6an,Valentina Zapata Castro,2025-2026,2025-08-01,2025-08-27,grad,Graduate Student,git-history,commit-date,false
+ejp2sa,Wing Chun Yu,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+wt4fw,Wojciech Tralle,2025-2026,2025-08-01,2025-08-27,grad,Graduate Student,git-history,commit-date,false
+yl8by,Yangxiao Luo,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+smb2tp,Yizhen Li,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+jrd6an,Ziming Chen,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+dkm7mj,Zivile Puospekaite,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
+aw5dk,Aoran Wu,2025-2026,2026-02-10,2026-07-31,agfm_other,Lecturer,git-history,commit-date,true
+axh7cj,Bakhyt Aitzhanova,2025-2026,2025-08-01,2026-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+nbm2vp,Brianna Kurtz,2025-2026,2025-08-01,2026-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+qgf6bc,Caelan Wang,2025-2026,2025-08-01,2026-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+hdj4nd,Daniel James,2025-2026,2025-08-27,2026-07-31,agfm_other,"Associate Professor, General Faculty",git-history,commit-date,true
+ed8bg,Evangelos Dimou,2025-2026,2025-08-01,2026-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+jdb5e,James Bowling,2025-2026,2025-08-25,2026-07-31,agfm_other,Lecturer,git-history,commit-date,true
+jjh2b,Jeffrey Holt,2025-2026,2025-08-01,2026-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+jsr2pz,Jim Rolf,2025-2026,2025-08-01,2026-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+rbh3vx,Josh Turner,2025-2026,2025-08-01,2026-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+kc5kv,Kristina Cernekova,2025-2026,2025-08-01,2026-07-31,agfm_other,General Faculty Lecturer,git-history,commit-date,true
+jqg2xb,Susan Mitchell,2025-2026,2025-08-01,2026-07-31,agfm_other,Lecturer,git-history,commit-date,true
+wec8v,Wendi Dass,2025-2026,2025-08-01,2026-07-31,agfm_other,Lecturer,git-history,commit-date,true
+zmb9b,Zachary Beamer,2025-2026,2025-08-01,2026-07-31,agfm_other,Lecturer,git-history,commit-date,true
+bdm3f,Barbara MacCluer,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+cfd5z,Charles Dunkl,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+clh4xd,Craig Huneke,2025-2026,2025-08-01,2026-07-31,emeritus,Marvin Rosenblum Professor Emeritus,git-history,commit-date,true
+der,Donald Ramirez,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+hnw,Harold Ward,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+iwh,Ira Herbst,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+il2v,Irena Lasiecka,2025-2026,2025-08-01,2026-07-31,emeritus,Commonwealth Professor Emerita,git-history,commit-date,true
+jsh2a,James Howland,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+jlr5m,James Rovnyak,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+khp3k,Karen Parshall,2025-2026,2025-08-01,2026-07-31,emeritus,Commonwealth Professor of Mathematics and History Emerita,git-history,commit-date,true
+kmm4m,Kevin McCrimmon,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+let,Lawrence Thomas,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+lls2l,Leonard Scott,2025-2026,2025-08-01,2026-07-31,emeritus,McConnell-Bernard Professor of Mathematics Emeritus,git-history,commit-date,true
+ldp,Loren Pitt,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+njk4x,Nicholas Kuhn,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+rt7u,Roberto Triggiani,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
+tlk8q,Thomas Kriete,2025-2026,2025-08-01,2026-07-31,emeritus,Professor Emeritus,git-history,commit-date,true

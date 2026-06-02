@@ -881,13 +881,13 @@ If `SINCE` is omitted, the updater defaults to DB max date minus overlap days.
 
 ### Task 4: Build appointment history and person-by-year roster output
 
-- [ ] implement `scripts/uva_arxiv/roster_history.py` to inspect git history, file additions/removals/moves, and historical front matter under `_departmentpeople`
-- [ ] apply `appointments_overrides.yml` before inferred intervals and record interval source/confidence
-- [ ] infer active appointment intervals across role changes, moves to `_unpublished`, and moves to `emeriti`
-- [ ] expand intervals from `2021-08-01` onward into academic-year windows running August 1 through July 31
-- [ ] write the first milestone outputs: `scripts/uva_arxiv/cache/active_people_by_year.json`, `reports/uva-arxiv-active-people-by-year.csv`, and `reports/uva-arxiv-active-people-by-year.md`
-- [ ] add dry-run output with yearly counts by role group and clear uncertainty/conflict reporting
-- [ ] add tests or fixture smoke checks for interval inference, manual overrides, academic-year expansion, and role changes
+- [x] implement `scripts/uva_arxiv/roster_history.py` to inspect git history, file additions/removals/moves, and historical front matter under `_departmentpeople`
+- [x] apply `appointments_overrides.yml` before inferred intervals and record interval source/confidence
+- [x] infer active appointment intervals across role changes, moves to `_unpublished`, and moves to `emeriti`
+- [x] expand intervals from `2021-08-01` onward into academic-year windows running August 1 through July 31
+- [x] write the first milestone outputs: `scripts/uva_arxiv/cache/active_people_by_year.json`, `reports/uva-arxiv-active-people-by-year.csv`, and `reports/uva-arxiv-active-people-by-year.md`
+- [x] add dry-run output with yearly counts by role group and clear uncertainty/conflict reporting
+- [x] add tests or fixture smoke checks for interval inference, manual overrides, academic-year expansion, and role changes
 
 ### Task 5: Add source fetch and UVA affiliation evidence tooling
 
