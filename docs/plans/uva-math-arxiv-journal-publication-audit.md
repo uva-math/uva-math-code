@@ -32,8 +32,10 @@ Initial operational scope:
 - First priority is current active `faculty`; then add `postdoc`, `grad`, `agfm_other`, and `emeritus`.
 - First concrete data product is the person-by-academic-year roster, not papers.
 - For the initial public-quality dataset, every included paper should have a manual approval record; automation and AI only pre-triage and prepare evidence.
-- Separate dates: `arxiv_date` for the `/arxiv/` feed and appointment-overlap checks on preprints; `journal_publication_date` for journal-publication reports. A journal report for publications since `2021-08-01` may need older arXiv records whose journal date falls in the window.
+- Initial paper scan is strictly `arxiv_date >= 2021-08-01`. Do not chase older arXiv records in the first pass.
+- Store `journal_publication_date` when available, but it is secondary metadata for the first pass.
 - Missing journal metadata is not evidence that a paper is unpublished; recent years will be arXiv-heavy because of publication lag and incomplete metadata.
+- Deeper backfill by journal publication date can be a later phase if needed.
 
 ## 0. Phase 1 non-goals
 
@@ -144,8 +146,7 @@ arxiv_db: /Users/leo/Data/arxiv/arxiv-metadata.db
 arxiv_sources_dir: /Users/leo/Homepage/_scripts/arxiv/sources
 homepage_arxiv_scripts: /Users/leo/Homepage/_scripts/arxiv
 initial_arxiv_start_date: 2021-08-01
-initial_publication_start_date: 2021-08-01
-backfill_start_date: 2020-01-01   # optional later; older arXiv records may matter for journal-date reports
+# First pass filters by arXiv date only. Journal-publication-date backfill is optional later.
 site_endpoint: /arxiv/
 
 people_dirs:
@@ -508,7 +509,7 @@ No API keys in cache filenames or logs. Store raw JSON if useful, but keep cache
 Cross-check policy:
 
 - Treat journal metadata as laggy/incomplete. Especially for 2024--2026, many valid arXiv papers will have no journal data yet.
-- For journal-publication reports since `2021-08-01`, later phases may need to query older arXiv records whose `journal_publication_date` is inside the reporting window.
+- First pass does not query older arXiv records for journal-date backfill; it only enriches arXiv records dated `2021-08-01` or later.
 - If arXiv, S2, and CrossRef disagree on DOI/title/journal, record conflict for review.
 - S2 author IDs can become strong identity evidence after manual association in `aliases.yml`.
 - CrossRef/S2 affiliation absence is weak; many records omit affiliations.
