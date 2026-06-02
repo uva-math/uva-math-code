@@ -24,6 +24,14 @@ class ScaffoldConfigTests(unittest.TestCase):
     def test_required_data_files_exist(self) -> None:
         self.assertEqual(env.missing_data_files(), [])
 
+    def test_yaml_loader_accepts_top_level_manual_lists(self) -> None:
+        accepted_path = env.DATA_DIR / "accepted_matches.yml"
+
+        self.assertEqual(env.load_yaml_file(accepted_path), [])
+        self.assertEqual(env.load_yaml_text('- arxiv_id: "2501.01234"\n'), [{"arxiv_id": "2501.01234"}])
+        with self.assertRaises(env.ConfigError):
+            env.load_yaml_mapping_file(accepted_path)
+
     def test_ensure_local_dirs_creates_cache_and_data_dirs(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

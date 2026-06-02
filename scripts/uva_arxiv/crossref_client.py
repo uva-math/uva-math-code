@@ -45,6 +45,10 @@ class CrossRefRateLimitError(CrossRefError):
         super().__init__(message)
 
 
+class CrossRefNotFoundError(CrossRefError):
+    """Raised when CrossRef has no record for the requested DOI."""
+
+
 @dataclass(frozen=True)
 class MetadataConflict:
     field: str
@@ -94,6 +98,8 @@ def default_http_get(request: urllib.request.Request, timeout: int) -> bytes:
     except urllib.error.HTTPError as exc:
         if exc.code == 429:
             raise CrossRefRateLimitError(exc.headers.get("Retry-After")) from exc
+        if exc.code == 404:
+            raise CrossRefNotFoundError("CrossRef record not found") from exc
         raise CrossRefError(f"CrossRef request failed with HTTP {exc.code}") from exc
     except urllib.error.URLError as exc:
         raise CrossRefError(f"CrossRef request failed: {exc}") from exc
@@ -485,6 +491,45 @@ def _error_result(
     )
 
 
+def _not_found_result(
+    doi: str,
+    mailto_present: bool,
+    api_key_present: bool,
+    notes: str,
+) -> CrossRefSmokeResult:
+    normalized_doi = normalize_doi(doi)
+    return CrossRefSmokeResult(
+        doi=normalized_doi,
+        status="incomplete",
+        cache_hit=False,
+        mailto_present=mailto_present,
+        api_key_present=api_key_present,
+        metadata_doi=None,
+        title=None,
+        container_title=None,
+        short_container_title=None,
+        published_date=None,
+        issued_date=None,
+        authors=(),
+        incomplete_fields=(
+            "metadata_doi",
+            "title",
+            "authors",
+            "container_title",
+            "published_date",
+        ),
+        conflicts=(),
+        raw_json={
+            "error": {
+                "source": "crossref",
+                "status": "not_found",
+                "doi": normalized_doi,
+            }
+        },
+        notes=f"{notes}; missing journal/API metadata is incomplete metadata, not publication or department-scope evidence",
+    )
+
+
 def smoke_crossref(
     doi: str,
     cache_path: Path,
@@ -518,6 +563,11 @@ def smoke_crossref(
     request = build_crossref_request(url, api_key)
     try:
         payload = _json_loads(http_get(request, timeout))
+    except CrossRefNotFoundError as exc:
+        result = _not_found_result(doi, mailto_present, api_key_present, str(exc))
+        if write_cache:
+            store_result(result, cache_path)
+        return result
     except CrossRefRateLimitError as exc:
         return _error_result(doi, "rate_limited", mailto_present, api_key_present, str(exc))
     except CrossRefError as exc:

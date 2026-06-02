@@ -76,7 +76,6 @@ qpz4ex,Kristen Scheckelhoff,2021-2022,2021-08-31,2022-07-31,grad,Graduate Studen
 lx5af,Liaosha Xu,2021-2022,2021-08-01,2021-08-20,grad,Graduate Student,git-history,commit-date,false
 lml2tb,Louisa Liles,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
 czj9zj,Luz Melo,2021-2022,2021-08-31,2022-07-31,grad,Bridge to the Doctorate Student,git-history,commit-date,false
-mas3er,Mark Schrecengost,2021-2022,2021-08-01,2021-08-20,grad,grad,git-history,commit-date,false
 mjf7eb,Matthew Feller,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
 mm8fb,Matthew McCarthy,2021-2022,2021-08-01,2022-07-31,grad,Graduate Student,git-history,commit-date,false
 muf5cz,Michael Wills,2021-2022,2021-08-31,2022-07-31,grad,Graduate Student,git-history,commit-date,true
@@ -106,9 +105,10 @@ hdj4nd,Daniel James,2021-2022,2021-08-20,2022-07-31,agfm_other,"Assistant Profes
 ds5nd,Dmitriy Sonkin,2021-2022,2021-08-01,2022-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
 ed8bg,Evangelos Dimou,2021-2022,2021-08-01,2022-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 it2h,Irina Timchenko,2021-2022,2021-08-01,2021-08-20,agfm_other,Lecturer,git-history,commit-date,false
-jjh2b,Jeffrey Holt,2021-2022,2021-08-01,2022-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+jjh2b,Jeffrey Holt,2021-2022,2022-07-31,2022-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
 jsr2pz,Jim Rolf,2021-2022,2022-06-09,2022-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
 kc5kv,Kristina Cernekova,2021-2022,2021-08-01,2022-07-31,agfm_other,Lecturer,git-history,commit-date,true
+mas3er,Mark Schrecengost,2021-2022,2021-08-01,2021-08-20,agfm_other,Lecturer,git-history,commit-date,false
 zka4tz,Matt Demers,2021-2022,2021-08-20,2022-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
 mrg9ap,Matthew Gagne,2021-2022,2021-08-01,2022-07-31,agfm_other,Lecturer,git-history,commit-date,false
 psb7p,Paul Bourdon,2021-2022,2021-08-01,2021-08-20,agfm_other,"Professor & Director of Lower Division Courses, General Faculty",git-history,commit-date,false
@@ -193,7 +193,7 @@ egm3zq,Eleanor McSpirit,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,gi
 thp5uc,Eleftherios Chatzitheodoridis,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
 aus8ng,Eloisa Sanchez,2022-2023,2022-08-17,2023-07-31,grad,Bridge to the Doctorate Student,git-history,commit-date,false
 hmy3tf,Felipe Flores Llarena,2022-2023,2022-08-18,2023-07-31,grad,Graduate Student,git-history,commit-date,true
-_Llarena,Felipe Ignacio Flores Llarena,2022-2023,2022-08-08,2022-08-08,grad,Graduate Student,git-history,commit-date,true
+_Llarena,Felipe Ignacio Flores Llarena,2022-2023,2022-08-08,2022-08-08,grad,Graduate Student,git-history,commit-date,false
 tmpIDLlarena,Felipe Ignacio Flores Llarena,2022-2023,2022-08-08,2022-08-18,grad,Graduate Student,git-history,commit-date,false
 hl6de,Haoyu Li,2022-2023,2022-08-01,2022-08-08,grad,4+1,git-history,commit-date,false
 hs7gy,Hasan Saad,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
@@ -237,6 +237,7 @@ nbm2vp,Brianna Kurtz,2022-2023,2022-08-08,2023-07-31,agfm_other,Lecturer,git-his
 hdj4nd,Daniel James,2022-2023,2022-08-01,2023-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 ds5nd,Dmitriy Sonkin,2022-2023,2022-08-01,2023-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
 ed8bg,Evangelos Dimou,2022-2023,2022-08-01,2023-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+jjh2b,Jeffrey Holt,2022-2023,2022-08-01,2023-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
 jsr2pz,Jim Rolf,2022-2023,2022-08-01,2023-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
 tmpIDNaab,Keith Naab,2022-2023,2022-08-08,2022-08-18,agfm_other,Lecturer,git-history,commit-date,false
 axv9hp,Keith Nabb,2022-2023,2022-08-18,2023-07-31,agfm_other,Lecturer,git-history,commit-date,false
@@ -332,7 +333,6 @@ thp5uc,Eleftherios Chatzitheodoridis,2023-2024,2023-08-01,2024-07-31,grad,Gradua
 aus8ng,Eloisa Sanchez,2023-2024,2023-08-01,2023-08-15,grad,Bridge to the Doctorate Student,git-history,commit-date,false
 amb9cc,Emily Hafken,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-history,commit-date,false
 hmy3tf,Felipe Flores Llarena,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
-_Llarena,Felipe Ignacio Flores Llarena,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
 hs7gy,Hasan Saad,2023-2024,2023-08-01,2024-06-29,grad,Graduate Student,git-history,commit-date,false
 mmw2va,Holden Eriksson,2023-2024,2023-08-15,2024-07-31,grad,Graduate Student,git-history,commit-date,true
 jy4au,Jiajun Yan,2023-2024,2023-08-01,2023-08-11,grad,Graduate Student,git-history,commit-date,false
@@ -381,13 +381,14 @@ jrd6an,Ziming Chen,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-his
 dkm7mj,Zivile Puospekaite,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
 ans5k,Ana Nora Evans,2023-2024,2023-08-15,2024-07-31,agfm_other,Lecturer,git-history,commit-date,false
 axh7cj,Bakhyt Aitzhanova,2023-2024,2023-08-30,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
-nbm2vp,Brianna Kurtz,2023-2024,2023-08-15,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+nbm2vp,Brianna Kurtz,2023-2024,2023-08-16,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 qgf6bc,Caelan Wang,2023-2024,2024-07-31,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 zfg4vh,Charles Baker,2023-2024,2023-08-15,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
 hdj4nd,Daniel James,2023-2024,2023-08-01,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 ds5nd,Dmitriy Sonkin,2023-2024,2023-08-01,2023-08-15,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
 ed8bg,Evangelos Dimou,2023-2024,2023-08-01,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 gps9h,Gregory Simms,2023-2024,2023-08-15,2024-07-31,agfm_other,Lecturer,git-history,commit-date,false
+jjh2b,Jeffrey Holt,2023-2024,2023-08-01,2024-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
 jsr2pz,Jim Rolf,2023-2024,2023-08-01,2024-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
 rbh3vx,Josh Turner,2023-2024,2024-07-31,2024-07-31,agfm_other,Lecturer,git-history,commit-date,true
 axv9hp,Keith Nabb,2023-2024,2023-08-01,2023-08-15,agfm_other,Lecturer,git-history,commit-date,false
@@ -468,7 +469,6 @@ kxk2dr,David Chasteen-Boyd,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student
 thp5uc,Eleftherios Chatzitheodoridis,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
 amb9cc,Emily Hafken,2024-2025,2024-08-01,2025-03-17,grad,Graduate Student,git-history,commit-date,false
 hmy3tf,Felipe Flores Llarena,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
-_Llarena,Felipe Ignacio Flores Llarena,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
 mmw2va,Holden Eriksson,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
 eme4uf,Jing Wang,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
 rsx5wp,Jun Hyun Park,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
@@ -506,7 +506,7 @@ nbm2vp,Brianna Kurtz,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Profe
 qgf6bc,Caelan Wang,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 hdj4nd,Daniel James,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 ed8bg,Evangelos Dimou,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
-jjh2b,Jeffrey Holt,2024-2025,2024-11-13,2025-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+jjh2b,Jeffrey Holt,2024-2025,2024-08-01,2025-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
 jsr2pz,Jim Rolf,2024-2025,2024-08-01,2025-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
 rbh3vx,Josh Turner,2024-2025,2024-09-18,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 kc5kv,Kristina Cernekova,2024-2025,2024-08-01,2025-07-31,agfm_other,General Faculty Lecturer,git-history,commit-date,true
@@ -585,7 +585,6 @@ thp5uc,Eleftherios Chatzitheodoridis,2025-2026,2025-08-01,2026-07-31,grad,Gradua
 djd3xs,Erica (Lanwen) Zhang,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
 xvt8sy,Fausto Navarro Cepeda,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
 hmy3tf,Felipe Flores Llarena,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
-_Llarena,Felipe Ignacio Flores Llarena,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
 avm5ax,Gabriel Adriano Collins Diraviam,2025-2026,2025-08-27,2026-07-31,grad,Graduate Student,git-history,commit-date,true
 mmw2va,Holden Eriksson,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true
 eme4uf,Jing Wang,2025-2026,2025-08-01,2026-07-31,grad,Graduate Student,git-history,commit-date,true

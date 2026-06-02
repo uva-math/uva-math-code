@@ -249,6 +249,22 @@ def fetch_api_records(
             return
 
 
+def _oai_records_with_api_fallback(
+    since: dt.date,
+    limit: int | None,
+    endpoint: str | None,
+) -> Iterator[arxiv_db.PaperRecord]:
+    yielded = 0
+    try:
+        for record in fetch_oai_records(since, limit, endpoint or OAI_ENDPOINT):
+            yielded += 1
+            yield record
+    except FetchError:
+        if yielded:
+            raise
+        yield from fetch_api_records(since, limit, API_ENDPOINT)
+
+
 def _source_records(
     since: dt.date,
     limit: int | None,
@@ -259,10 +275,7 @@ def _source_records(
     if source == "api":
         return fetch_api_records(since, limit, endpoint or API_ENDPOINT)
     if allow_api_fallback:
-        try:
-            return list(fetch_oai_records(since, limit, endpoint or OAI_ENDPOINT))
-        except FetchError:
-            return fetch_api_records(since, limit, API_ENDPOINT)
+        return _oai_records_with_api_fallback(since, limit, endpoint)
     return fetch_oai_records(since, limit, endpoint or OAI_ENDPOINT)
 
 

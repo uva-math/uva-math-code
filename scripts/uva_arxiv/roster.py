@@ -144,7 +144,7 @@ def extract_front_matter_text(path: Path) -> str:
 
 def parse_front_matter(text: str) -> dict[str, Any]:
     try:
-        return env.load_yaml_text(text, "people front matter")
+        return env.load_yaml_mapping_text(text, "people front matter")
     except env.ConfigError as exc:
         raise RosterError(str(exc)) from exc
 

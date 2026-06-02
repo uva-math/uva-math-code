@@ -56,6 +56,10 @@ class SemanticScholarRateLimitError(SemanticScholarError):
         super().__init__(message)
 
 
+class SemanticScholarNotFoundError(SemanticScholarError):
+    """Raised when Semantic Scholar has no record for the requested paper."""
+
+
 @dataclass(frozen=True)
 class MetadataConflict:
     field: str
@@ -98,6 +102,10 @@ def default_http_get(request: urllib.request.Request, timeout: int) -> bytes:
     except urllib.error.HTTPError as exc:
         if exc.code == 429:
             raise SemanticScholarRateLimitError(exc.headers.get("Retry-After")) from exc
+        if exc.code == 404:
+            raise SemanticScholarNotFoundError(
+                "Semantic Scholar record not found"
+            ) from exc
         raise SemanticScholarError(
             f"Semantic Scholar request failed with HTTP {exc.code}"
         ) from exc
@@ -448,6 +456,43 @@ def _error_result(
     )
 
 
+def _not_found_result(
+    arxiv_id: str,
+    api_key_present: bool,
+    notes: str,
+) -> SemanticScholarSmokeResult:
+    normalized_id = normalize_arxiv_id(arxiv_id)
+    return SemanticScholarSmokeResult(
+        arxiv_id=normalized_id,
+        status="incomplete",
+        cache_hit=False,
+        api_key_present=api_key_present,
+        doi=None,
+        title=None,
+        year=None,
+        publication_date=None,
+        venue=None,
+        journal=None,
+        authors=(),
+        incomplete_fields=(
+            "doi",
+            "title",
+            "authors",
+            "venue_or_journal",
+            "publication_date",
+        ),
+        conflicts=(),
+        raw_json={
+            "error": {
+                "source": "semantic_scholar",
+                "status": "not_found",
+                "arxiv_id": normalized_id,
+            }
+        },
+        notes=f"{notes}; missing metadata is incomplete metadata, not publication or department-scope evidence",
+    )
+
+
 def smoke_s2(
     arxiv_id: str,
     cache_path: Path,
@@ -473,6 +518,11 @@ def smoke_s2(
     request = build_s2_request(url, api_key)
     try:
         payload = _json_loads(http_get(request, timeout))
+    except SemanticScholarNotFoundError as exc:
+        result = _not_found_result(arxiv_id, api_key_present, str(exc))
+        if write_cache:
+            store_result(result, cache_path)
+        return result
     except SemanticScholarRateLimitError as exc:
         return _error_result(
             arxiv_id,

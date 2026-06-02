@@ -188,6 +188,48 @@ class SemanticScholarClientTests(unittest.TestCase):
                     self.assertEqual(result.status, "request_error")
                     self.assertFalse(cache_path.exists())
 
+    def test_s2_not_found_is_cached_as_incomplete_metadata(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_path = Path(tmp) / "s2.sqlite"
+            calls: list[str] = []
+
+            def not_found_get(request: urllib.request.Request, timeout: int) -> bytes:
+                calls.append(request.full_url)
+                raise s2_client.SemanticScholarNotFoundError("Semantic Scholar record not found")
+
+            result = s2_client.smoke_s2(
+                "2501.01234",
+                cache_path=cache_path,
+                api_key="s2-secret",
+                http_get=not_found_get,
+            )
+
+            self.assertEqual(result.status, "incomplete")
+            self.assertTrue(result.incomplete_metadata)
+            self.assertIn("doi", result.incomplete_fields)
+            self.assertIn("not publication", result.notes)
+            with sqlite3.connect(cache_path) as conn:
+                row = conn.execute(
+                    "SELECT status, raw_json FROM s2_papers WHERE arxiv_id = ?",
+                    ("2501.01234",),
+                ).fetchone()
+            self.assertEqual(row[0], "incomplete")
+            self.assertEqual(json.loads(row[1])["error"]["status"], "not_found")
+
+            def forbidden_get(request: urllib.request.Request, timeout: int) -> bytes:
+                raise AssertionError(f"unexpected network call to {request.full_url}")
+
+            cached = s2_client.smoke_s2(
+                "2501.01234",
+                cache_path=cache_path,
+                api_key="s2-secret",
+                http_get=forbidden_get,
+            )
+
+            self.assertTrue(cached.cache_hit)
+            self.assertEqual(cached.status, "incomplete")
+            self.assertEqual(len(calls), 1)
+
     def test_s2_metadata_conflict_is_recorded(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             cache_path = Path(tmp) / "s2.sqlite"
@@ -357,6 +399,48 @@ class CrossRefClientTests(unittest.TestCase):
 
                     self.assertEqual(result.status, "request_error")
                     self.assertFalse(cache_path.exists())
+
+    def test_crossref_not_found_is_cached_as_incomplete_metadata(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            cache_path = Path(tmp) / "crossref.sqlite"
+            calls: list[str] = []
+
+            def not_found_get(request: urllib.request.Request, timeout: int) -> bytes:
+                calls.append(request.full_url)
+                raise crossref_client.CrossRefNotFoundError("CrossRef record not found")
+
+            result = crossref_client.smoke_crossref(
+                "10.1000/missing",
+                cache_path=cache_path,
+                mailto="math@example.edu",
+                http_get=not_found_get,
+            )
+
+            self.assertEqual(result.status, "incomplete")
+            self.assertTrue(result.incomplete_metadata)
+            self.assertIn("metadata_doi", result.incomplete_fields)
+            self.assertIn("not publication", result.notes)
+            with sqlite3.connect(cache_path) as conn:
+                row = conn.execute(
+                    "SELECT status, raw_json FROM crossref_works WHERE doi = ?",
+                    ("10.1000/missing",),
+                ).fetchone()
+            self.assertEqual(row[0], "incomplete")
+            self.assertEqual(json.loads(row[1])["error"]["status"], "not_found")
+
+            def forbidden_get(request: urllib.request.Request, timeout: int) -> bytes:
+                raise AssertionError(f"unexpected network call to {request.full_url}")
+
+            cached = crossref_client.smoke_crossref(
+                "10.1000/missing",
+                cache_path=cache_path,
+                mailto="math@example.edu",
+                http_get=forbidden_get,
+            )
+
+            self.assertTrue(cached.cache_hit)
+            self.assertEqual(cached.status, "incomplete")
+            self.assertEqual(len(calls), 1)
 
     def test_crossref_metadata_conflict_is_recorded(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

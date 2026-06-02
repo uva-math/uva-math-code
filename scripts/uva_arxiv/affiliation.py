@@ -58,7 +58,7 @@ class AffiliationScanResult:
 
 def load_patterns(path: Path) -> AffiliationPatternSet:
     try:
-        loaded = env.load_yaml_file(path)
+        loaded = env.load_yaml_mapping_file(path)
     except env.ConfigError as exc:
         raise AffiliationError(str(exc)) from exc
     positive = tuple(str(item).strip() for item in loaded.get("positive", []) if str(item).strip())

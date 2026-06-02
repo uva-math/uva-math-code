@@ -10,7 +10,7 @@ import unittest
 from datetime import date
 from pathlib import Path
 
-from scripts.uva_arxiv import roster, roster_history
+from scripts.uva_arxiv import env, roster, roster_history
 
 
 def empty_roster_result() -> roster.RosterResult:
@@ -412,6 +412,39 @@ abc1de:
         self.assertEqual(payload["rows"][0]["person_id"], "abc1de")
         self.assertEqual(rows[0]["academic_year"], "2021-2022")
         self.assertIn("Counts by Academic Year and Role", markdown)
+
+    def test_committed_support_reports_match_fixed_as_of_generator(self) -> None:
+        config = env.load_config(load_env_file=False)
+        result = roster_history.build_from_repo(config, date(2026, 6, 2))
+        csv_path = config.repo_root / "reports" / "uva-arxiv-active-people-by-year.csv"
+        md_path = config.repo_root / "reports" / "uva-arxiv-active-people-by-year.md"
+
+        with csv_path.open(encoding="utf-8", newline="") as handle:
+            committed_rows = list(csv.DictReader(handle))
+        expected_rows = [row.to_dict() for row in result.rows]
+        markdown = md_path.read_text(encoding="utf-8")
+
+        self.assertEqual(committed_rows, expected_rows)
+        self.assertIn("As-of date: 2026-06-02", markdown)
+        self.assertIn(f"Rows: {len(result.rows)}", markdown)
+        counts = result.counts_by_year_role()
+        for academic_year in sorted(counts):
+            year_counts = counts[academic_year]
+            expected_line = (
+                "| "
+                + " | ".join(
+                    [
+                        academic_year,
+                        str(year_counts.get("faculty", 0)),
+                        str(year_counts.get("postdoc", 0)),
+                        str(year_counts.get("grad", 0)),
+                        str(year_counts.get("agfm_other", 0)),
+                        str(year_counts.get("emeritus", 0)),
+                    ]
+                )
+                + " |"
+            )
+            self.assertIn(expected_line, markdown)
 
 
 if __name__ == "__main__":

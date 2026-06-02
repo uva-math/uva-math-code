@@ -126,14 +126,22 @@ def _simple_yaml_lines(text: str) -> list[tuple[int, str, int]]:
     return lines
 
 
-def _parse_simple_yaml(text: str) -> dict[str, Any]:
+def _parse_simple_yaml(text: str) -> Any:
     stripped_text = text.strip()
     if not stripped_text:
         return {}
-    if stripped_text.endswith("{}") and not _simple_yaml_lines(text.replace("{}", "")):
+    if stripped_text == "{}":
         return {}
+    if stripped_text == "[]":
+        return []
     lines = _simple_yaml_lines(text)
-    parsed, next_index = _parse_yaml_mapping(lines, 0, 0)
+    if not lines:
+        return {}
+    if len(lines) == 1 and lines[0][1] == "{}":
+        return {}
+    if len(lines) == 1 and lines[0][1] == "[]":
+        return []
+    parsed, next_index = _parse_yaml_block(lines, 0, lines[0][0])
     if next_index != len(lines):
         _indent, stripped, line_number = lines[next_index]
         raise ConfigError(f"Unexpected YAML content at line {line_number}: {stripped}")
@@ -229,20 +237,31 @@ def _parse_yaml_block(
     return _parse_yaml_mapping(lines, index, indent)
 
 
-def load_yaml_text(text: str, source: str = "YAML") -> dict[str, Any]:
+def load_yaml_text(text: str, source: str = "YAML") -> Any:
     try:
         import yaml  # type: ignore
     except ModuleNotFoundError:
         return _parse_simple_yaml(text)
 
-    loaded = yaml.safe_load(text) or {}
+    loaded = yaml.safe_load(text)
+    if loaded is None:
+        return {}
+    return loaded
+
+
+def load_yaml_mapping_text(text: str, source: str = "YAML") -> dict[str, Any]:
+    loaded = load_yaml_text(text, source)
     if not isinstance(loaded, dict):
         raise ConfigError(f"Expected mapping at top level of {source}")
     return loaded
 
 
-def load_yaml_file(path: Path) -> dict[str, Any]:
+def load_yaml_file(path: Path) -> Any:
     return load_yaml_text(path.read_text(encoding="utf-8"), str(path))
+
+
+def load_yaml_mapping_file(path: Path) -> dict[str, Any]:
+    return load_yaml_mapping_text(path.read_text(encoding="utf-8"), str(path))
 
 
 def _resolve_path(value: str | os.PathLike[str], repo_root: Path = REPO_ROOT) -> Path:
@@ -322,7 +341,7 @@ def load_config(
         load_dotenv(repo_root / ".env")
     normalize_api_env()
 
-    raw = load_yaml_file(config_path)
+    raw = load_yaml_mapping_file(config_path)
     for key, env_key in PATH_ENV_OVERRIDES.items():
         if os.environ.get(env_key):
             raw[key] = os.environ[env_key]

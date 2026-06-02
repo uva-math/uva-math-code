@@ -474,7 +474,7 @@ def infer_git_intervals(
 
 def load_override_mapping(path: Path) -> dict[str, Any]:
     try:
-        return env.load_yaml_file(path)
+        return env.load_yaml_mapping_file(path)
     except env.ConfigError as exc:
         raise RosterHistoryError(str(exc)) from exc
 

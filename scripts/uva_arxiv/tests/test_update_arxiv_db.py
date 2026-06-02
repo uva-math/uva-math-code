@@ -217,6 +217,57 @@ class SinceUpdaterTests(unittest.TestCase):
         with self.assertRaises(update_arxiv_db.FetchError):
             list(update_arxiv_db.fetch_api_records(dt.date(2026, 5, 29), limit=None))
 
+    def test_allow_api_fallback_streams_oai_success_without_preloading(self) -> None:
+        first_page = b"""<?xml version="1.0" encoding="UTF-8"?>
+        <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
+          <ListRecords>
+            <record>
+              <metadata><arXiv xmlns="http://arxiv.org/OAI/arXiv/">
+                <id>2605.00001</id><created>2026-05-30</created>
+                <authors><author><keyname>Smith</keyname></author></authors>
+                <title>First</title><categories>math.PR</categories><abstract>One</abstract>
+              </arXiv></metadata>
+            </record>
+            <resumptionToken>next-token</resumptionToken>
+          </ListRecords>
+        </OAI-PMH>"""
+        second_page = b"""<?xml version="1.0" encoding="UTF-8"?>
+        <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
+          <ListRecords>
+            <record>
+              <metadata><arXiv xmlns="http://arxiv.org/OAI/arXiv/">
+                <id>2605.00002</id><created>2026-05-31</created>
+                <authors><author><keyname>Jones</keyname></author></authors>
+                <title>Second</title><categories>math.CO</categories><abstract>Two</abstract>
+              </arXiv></metadata>
+            </record>
+          </ListRecords>
+        </OAI-PMH>"""
+        calls: list[str] = []
+        original_get = update_arxiv_db.default_http_get
+        try:
+            def fake_get(url: str) -> bytes:
+                calls.append(url)
+                return second_page if "resumptionToken=next-token" in url else first_page
+
+            update_arxiv_db.default_http_get = fake_get
+            records = update_arxiv_db._source_records(
+                dt.date(2026, 5, 29),
+                limit=None,
+                source="oai",
+                endpoint="https://oai.test",
+                allow_api_fallback=True,
+            )
+            record_iter = iter(records)
+
+            self.assertEqual(calls, [])
+            self.assertEqual(next(record_iter).id, "2605.00001")
+            self.assertEqual(len(calls), 1)
+            self.assertEqual(next(record_iter).id, "2605.00002")
+            self.assertEqual(len(calls), 2)
+        finally:
+            update_arxiv_db.default_http_get = original_get
+
     def test_api_fetch_and_oai_failure_fallback_parse_records(self) -> None:
         api_payload = b"""<?xml version="1.0" encoding="UTF-8"?>
         <feed xmlns="http://www.w3.org/2005/Atom">
