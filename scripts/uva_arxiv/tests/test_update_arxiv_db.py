@@ -6,6 +6,7 @@ import os
 import sqlite3
 import tempfile
 import unittest
+from dataclasses import replace
 from pathlib import Path
 
 from scripts.uva_arxiv import arxiv_db, check_env, env, update_arxiv_db
@@ -115,7 +116,7 @@ class SinceUpdaterTests(unittest.TestCase):
             self.assertEqual(rows, [("2605.00001", "Updated"), ("2605.00002", "New")])
             self.assertEqual(indexes, [])
 
-    def test_oai_fetch_parses_records_and_skips_deleted_records(self) -> None:
+    def test_oai_fetch_parses_records_and_collects_deleted_records(self) -> None:
         payload = b"""<?xml version="1.0" encoding="UTF-8"?>
         <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
           <ListRecords>
@@ -147,10 +148,12 @@ class SinceUpdaterTests(unittest.TestCase):
             calls.append(url)
             return payload
 
+        deleted_records: list[update_arxiv_db.DeletedOaiRecord] = []
         records = list(
             update_arxiv_db.fetch_oai_records(
                 dt.date(2026, 5, 29),
                 http_get=fake_get,
+                deleted_records=deleted_records,
             )
         )
 
@@ -160,6 +163,58 @@ class SinceUpdaterTests(unittest.TestCase):
         self.assertEqual(records[0].title, "A title with whitespace")
         self.assertEqual(records[0].authors, "Alice Smith, Bob Jones")
         self.assertEqual(records[0].date, "2026-05-30")
+        self.assertEqual(deleted_records[0].id, "2605.00002")
+        self.assertEqual(deleted_records[0].identifier, "oai:arXiv.org:2605.00002")
+
+    def test_since_update_records_deleted_oai_records_in_sidecar_cache(self) -> None:
+        payload = b"""<?xml version="1.0" encoding="UTF-8"?>
+        <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
+          <ListRecords>
+            <record>
+              <header status="deleted">
+                <identifier>oai:arXiv.org:2605.00002</identifier>
+                <datestamp>2026-05-31</datestamp>
+              </header>
+            </record>
+          </ListRecords>
+        </OAI-PMH>"""
+
+        def fake_get(_url: str) -> bytes:
+            return payload
+
+        original_get = update_arxiv_db.default_http_get
+        try:
+            update_arxiv_db.default_http_get = fake_get
+            with tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                db_path = root / "arxiv.sqlite"
+                cache_dir = root / "cache"
+                create_papers_db(db_path)
+                with sqlite3.connect(db_path) as conn:
+                    conn.execute(
+                        "INSERT INTO papers VALUES (?, ?, ?, ?, ?, ?)",
+                        ("2605.00002", "Existing", "Abstract", "math.PR", "A. Author", "2026-05-30"),
+                    )
+                result = update_arxiv_db.run_since_update(
+                    config=replace(self.config, cache_dir=cache_dir),
+                    db_path=db_path,
+                    since=dt.date(2026, 5, 29),
+                    source="oai",
+                    out=io.StringIO(),
+                )
+
+                with sqlite3.connect(cache_dir / "arxiv_update_state.sqlite") as conn:
+                    deleted = conn.execute(
+                        "SELECT id, datestamp, identifier FROM arxiv_deleted_records"
+                    ).fetchall()
+                with sqlite3.connect(db_path) as conn:
+                    remaining = conn.execute("SELECT COUNT(*) FROM papers WHERE id = ?", ("2605.00002",)).fetchone()[0]
+
+            self.assertEqual(result.deleted_recorded, 1)
+            self.assertEqual(deleted, [("2605.00002", "2026-05-31", "oai:arXiv.org:2605.00002")])
+            self.assertEqual(remaining, 1)
+        finally:
+            update_arxiv_db.default_http_get = original_get
 
     def test_oai_fetch_follows_resumption_tokens_and_handles_errors(self) -> None:
         first_page = b"""<?xml version="1.0" encoding="UTF-8"?>
@@ -216,6 +271,21 @@ class SinceUpdaterTests(unittest.TestCase):
     def test_api_fallback_requires_limit(self) -> None:
         with self.assertRaises(update_arxiv_db.FetchError):
             list(update_arxiv_db.fetch_api_records(dt.date(2026, 5, 29), limit=None))
+
+    def test_fetchers_reject_non_positive_limits_before_fetching(self) -> None:
+        called = False
+
+        def fake_get(_url: str) -> bytes:
+            nonlocal called
+            called = True
+            return b"<OAI-PMH />"
+
+        with self.assertRaises(update_arxiv_db.FetchError):
+            list(update_arxiv_db.fetch_oai_records(dt.date(2026, 5, 29), limit=0, http_get=fake_get))
+        self.assertFalse(called)
+        with self.assertRaises(update_arxiv_db.FetchError):
+            list(update_arxiv_db.fetch_api_records(dt.date(2026, 5, 29), limit=0, http_get=fake_get))
+        self.assertFalse(called)
 
     def test_allow_api_fallback_streams_oai_success_without_preloading(self) -> None:
         first_page = b"""<?xml version="1.0" encoding="UTF-8"?>
@@ -348,6 +418,27 @@ class SinceUpdaterTests(unittest.TestCase):
                 os.environ.pop("S2_API_KEY", None)
             else:
                 os.environ["S2_API_KEY"] = original_s2
+
+    def test_check_env_reports_corrupt_database_without_traceback(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            db_path = root / "not-sqlite.db"
+            sources_dir = root / "sources"
+            sources_dir.mkdir()
+            db_path.write_text("not a sqlite database", encoding="utf-8")
+
+            out = io.StringIO()
+            exit_code = check_env.run_checks(
+                config=self.config,
+                db_path=db_path,
+                sources_dir=sources_dir,
+                out=out,
+            )
+            text = out.getvalue()
+
+        self.assertEqual(exit_code, 1)
+        self.assertIn("arxiv_db_status: failed", text)
+        self.assertNotIn("Traceback", text)
 
 
 if __name__ == "__main__":

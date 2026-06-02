@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import sqlite3
 import sys
 import urllib.error
 import urllib.parse
@@ -40,6 +41,14 @@ class SinceUpdateResult:
     max_date_before: str | None
     fetched: int
     upserted: int
+    deleted_recorded: int = 0
+
+
+@dataclass(frozen=True)
+class DeletedOaiRecord:
+    id: str
+    identifier: str
+    datestamp: str
 
 
 def parse_date(value: str) -> dt.date:
@@ -47,6 +56,22 @@ def parse_date(value: str) -> dt.date:
         return dt.date.fromisoformat(value)
     except ValueError as exc:
         raise argparse.ArgumentTypeError(f"expected YYYY-MM-DD date, got {value!r}") from exc
+
+
+def parse_positive_int(value: str) -> int:
+    try:
+        parsed = int(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError(f"expected a positive integer, got {value!r}") from exc
+    if parsed < 1:
+        raise argparse.ArgumentTypeError("--limit must be at least 1")
+    return parsed
+
+
+def validate_limit(limit: int | None) -> int | None:
+    if limit is not None and limit < 1:
+        raise FetchError("--limit must be at least 1")
+    return limit
 
 
 def default_since_date(max_date: str | None, overlap_days: int, fallback: str) -> dt.date:
@@ -67,6 +92,14 @@ def strip_version(arxiv_id: str) -> str:
         if version.isdigit():
             return stem
     return arxiv_id
+
+
+def arxiv_id_from_oai_identifier(identifier: str) -> str:
+    value = normalize_text(identifier)
+    prefix = "oai:arXiv.org:"
+    if value.startswith(prefix):
+        value = value[len(prefix):]
+    return strip_version(value)
 
 
 def default_http_get(url: str, timeout: int = 30) -> bytes:
@@ -144,12 +177,29 @@ def _oai_record_to_paper(record: ET.Element) -> arxiv_db.PaperRecord | None:
     )
 
 
+def _oai_record_to_deleted(record: ET.Element) -> DeletedOaiRecord | None:
+    header = _first_descendant(record, "header")
+    if header is None or header.attrib.get("status") != "deleted":
+        return None
+    identifier = _child_text(header, "identifier")
+    arxiv_id = arxiv_id_from_oai_identifier(identifier)
+    if not arxiv_id:
+        return None
+    return DeletedOaiRecord(
+        id=arxiv_id,
+        identifier=identifier,
+        datestamp=_child_text(header, "datestamp"),
+    )
+
+
 def fetch_oai_records(
     since: dt.date,
     limit: int | None = None,
     endpoint: str = OAI_ENDPOINT,
     http_get: HttpGet | None = None,
+    deleted_records: list[DeletedOaiRecord] | None = None,
 ) -> Iterator[arxiv_db.PaperRecord]:
+    limit = validate_limit(limit)
     http_get = http_get or default_http_get
     yielded = 0
     token: str | None = None
@@ -178,6 +228,11 @@ def fetch_oai_records(
             return
 
         for record in _children(list_records, "record"):
+            deleted = _oai_record_to_deleted(record)
+            if deleted is not None:
+                if deleted_records is not None:
+                    deleted_records.append(deleted)
+                continue
             paper = _oai_record_to_paper(record)
             if paper is None:
                 continue
@@ -225,6 +280,7 @@ def fetch_api_records(
 ) -> Iterator[arxiv_db.PaperRecord]:
     if limit is None:
         raise FetchError("API fallback requires --limit to avoid broad unbounded queries")
+    limit = validate_limit(limit)
     http_get = http_get or default_http_get
     submitted_start = since.strftime("%Y%m%d") + "0000"
     params = {
@@ -253,10 +309,11 @@ def _oai_records_with_api_fallback(
     since: dt.date,
     limit: int | None,
     endpoint: str | None,
+    deleted_records: list[DeletedOaiRecord] | None,
 ) -> Iterator[arxiv_db.PaperRecord]:
     yielded = 0
     try:
-        for record in fetch_oai_records(since, limit, endpoint or OAI_ENDPOINT):
+        for record in fetch_oai_records(since, limit, endpoint or OAI_ENDPOINT, deleted_records=deleted_records):
             yielded += 1
             yield record
     except FetchError:
@@ -271,12 +328,13 @@ def _source_records(
     source: str,
     endpoint: str | None,
     allow_api_fallback: bool,
+    deleted_records: list[DeletedOaiRecord] | None = None,
 ) -> Iterable[arxiv_db.PaperRecord]:
     if source == "api":
         return fetch_api_records(since, limit, endpoint or API_ENDPOINT)
     if allow_api_fallback:
-        return _oai_records_with_api_fallback(since, limit, endpoint)
-    return fetch_oai_records(since, limit, endpoint or OAI_ENDPOINT)
+        return _oai_records_with_api_fallback(since, limit, endpoint, deleted_records)
+    return fetch_oai_records(since, limit, endpoint or OAI_ENDPOINT, deleted_records=deleted_records)
 
 
 def _record_batches(
@@ -293,6 +351,40 @@ def _record_batches(
         yield batch
 
 
+def record_deleted_oai_records(cache_path: Path, records: Iterable[DeletedOaiRecord]) -> int:
+    deleted_records = list(records)
+    if not deleted_records:
+        return 0
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    seen_at = dt.datetime.now(dt.UTC).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    with sqlite3.connect(cache_path) as conn:
+        conn.execute(
+            """
+            CREATE TABLE IF NOT EXISTS arxiv_deleted_records (
+                id TEXT NOT NULL,
+                datestamp TEXT NOT NULL,
+                identifier TEXT NOT NULL,
+                seen_at TEXT NOT NULL,
+                PRIMARY KEY (id, datestamp)
+            )
+            """
+        )
+        conn.executemany(
+            """
+            INSERT INTO arxiv_deleted_records (id, datestamp, identifier, seen_at)
+            VALUES (?, ?, ?, ?)
+            ON CONFLICT(id, datestamp) DO UPDATE SET
+                identifier = excluded.identifier,
+                seen_at = excluded.seen_at
+            """,
+            [
+                (record.id, record.datestamp, record.identifier, seen_at)
+                for record in deleted_records
+            ],
+        )
+    return len(deleted_records)
+
+
 def run_since_update(
     config: env.UvaArxivConfig,
     db_path: Path | None = None,
@@ -306,6 +398,7 @@ def run_since_update(
     allow_api_fallback: bool = False,
     out: TextIO = sys.stdout,
 ) -> SinceUpdateResult:
+    limit = validate_limit(limit)
     db_path = Path(db_path or config.arxiv_db)
     connector = arxiv_db.connect_readonly if dry_run else arxiv_db.connect_readwrite
     with connector(db_path) as conn:
@@ -336,9 +429,11 @@ def run_since_update(
                 max_date_before=stats.max_date,
                 fetched=0,
                 upserted=0,
+                deleted_recorded=0,
             )
 
         print("dry_run: false", file=out)
+        deleted_records: list[DeletedOaiRecord] = []
         fetch_records = fetcher or (
             lambda fetch_since, fetch_limit: _source_records(
                 fetch_since,
@@ -346,6 +441,7 @@ def run_since_update(
                 source,
                 endpoint,
                 allow_api_fallback,
+                deleted_records,
             )
         )
         fetched = 0
@@ -353,8 +449,13 @@ def run_since_update(
         for batch in _record_batches(fetch_records(effective_since, limit)):
             fetched += len(batch)
             upserted += arxiv_db.upsert_papers(conn, batch)
+        deleted_recorded = record_deleted_oai_records(
+            config.cache_dir / "arxiv_update_state.sqlite",
+            deleted_records,
+        )
         print(f"fetched: {fetched}", file=out)
         print(f"upserted: {upserted}", file=out)
+        print(f"deleted_recorded: {deleted_recorded}", file=out)
         return SinceUpdateResult(
             since=effective_since,
             dry_run=False,
@@ -362,6 +463,7 @@ def run_since_update(
             max_date_before=stats.max_date,
             fetched=fetched,
             upserted=upserted,
+            deleted_recorded=deleted_recorded,
         )
 
 
@@ -372,7 +474,7 @@ def main() -> int:
     since_parser.add_argument("--db", type=Path, help="Override the configured shared arXiv DB path.")
     since_parser.add_argument("--since", type=parse_date, help="Use an explicit YYYY-MM-DD start date.")
     since_parser.add_argument("--overlap-days", type=int, default=DEFAULT_OVERLAP_DAYS)
-    since_parser.add_argument("--limit", type=int, help="Limit fetched records for smoke tests.")
+    since_parser.add_argument("--limit", type=parse_positive_int, help="Limit fetched records for smoke tests.")
     since_parser.add_argument("--dry-run", action="store_true", help="Report plan without fetching or writing.")
     since_parser.add_argument("--source", choices=("oai", "api"), default="oai")
     since_parser.add_argument("--endpoint", help="Override the source endpoint URL.")

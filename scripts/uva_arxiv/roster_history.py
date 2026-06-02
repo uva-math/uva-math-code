@@ -525,7 +525,10 @@ def add_current_roster_context(
     notices: list[HistoryNotice],
     current_roster: roster.RosterResult,
     initial_start_date: date,
+    as_of_date: date,
 ) -> None:
+    current_year_start = date(academic_year_start_year(as_of_date), 8, 1)
+    fallback_start = max(initial_start_date, current_year_start)
     for record in current_roster.records.values():
         people[record.person_id] = PersonSummary(record.person_id, record.display_name)
         active = (
@@ -537,7 +540,7 @@ def add_current_roster_context(
         if active and not appointments.get(record.person_id):
             appointments.setdefault(record.person_id, []).append(
                 AppointmentInterval(
-                    start_date=initial_start_date,
+                    start_date=fallback_start,
                     end_date=None,
                     role_group=record.role.role_group,
                     position=record.position,
@@ -550,14 +553,14 @@ def add_current_roster_context(
                 HistoryNotice(
                     person_id=record.person_id,
                     notice_type="current_roster_without_history",
-                    message="current active record had no parseable git-history interval",
+                    message="current active record had no parseable git-history interval; using current academic-year fallback",
                     path=roster.format_path(record.current_file),
                 )
             )
         elif active and not has_open_interval:
             appointments.setdefault(record.person_id, []).append(
                 AppointmentInterval(
-                    start_date=initial_start_date,
+                    start_date=fallback_start,
                     end_date=None,
                     role_group=record.role.role_group,
                     position=record.position,
@@ -570,7 +573,7 @@ def add_current_roster_context(
                 HistoryNotice(
                     person_id=record.person_id,
                     notice_type="current_roster_reopened_history",
-                    message="current active record did not have an open inferred interval",
+                    message="current active record did not have an open inferred interval; using current academic-year fallback",
                     path=roster.format_path(record.current_file),
                 )
             )
@@ -722,7 +725,7 @@ def build_history_result(
 ) -> HistoryResult:
     people, appointments, notices = infer_git_intervals(events)
     notices.extend(extra_notices)
-    add_current_roster_context(people, appointments, notices, current_roster, initial_start_date)
+    add_current_roster_context(people, appointments, notices, current_roster, initial_start_date, as_of_date)
     apply_overrides(people, appointments, notices, overrides)
 
     current_active_ids = {
@@ -871,7 +874,7 @@ def main() -> int:
     as_of_date = parse_date(args.as_of, "as-of date") if args.as_of else date.today()
     result = build_from_repo(config, as_of_date)
 
-    if not args.no_write:
+    if not args.dry_run and not args.no_write:
         write_outputs(
             result,
             config.cache_dir / "active_people_by_year.json",

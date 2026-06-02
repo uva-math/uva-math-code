@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import sqlite3
 import sys
 from pathlib import Path
 from typing import TextIO
@@ -56,7 +57,7 @@ def run_checks(
             print(f"papers_count: {stats.count}", file=out)
             print(f"papers_min_date: {stats.min_date or 'none'}", file=out)
             print(f"papers_max_date: {stats.max_date or 'none'}", file=out)
-        except arxiv_db.ArxivDatabaseError as exc:
+        except (arxiv_db.ArxivDatabaseError, sqlite3.Error) as exc:
             print(f"arxiv_db_status: failed ({exc})", file=out)
             ok = False
 
