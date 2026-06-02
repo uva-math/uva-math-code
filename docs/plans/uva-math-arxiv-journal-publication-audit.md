@@ -873,11 +873,11 @@ If `SINCE` is omitted, the updater defaults to DB max date minus overlap days.
 
 ### Task 3: Parse current people records and classify role groups
 
-- [ ] implement `scripts/uva_arxiv/roles.py` to assign `faculty`, `postdoc`, `grad`, `agfm_other`, and `emeritus` from front matter rather than directory alone
-- [ ] implement `scripts/uva_arxiv/roster.py` to parse `_departmentpeople` YAML front matter into stable records keyed by `UVA_id`
-- [ ] preserve display names with diacritics while adding normalized search aliases where useful
-- [ ] report directory/front-matter conflicts, unpublished records, and emeriti/general-faculty records found in active directories
-- [ ] add fixture-based tests for TT faculty, general faculty, lecturers, postdocs, graduate students, emeriti, unpublished records, and directory/front-matter conflicts
+- [x] implement `scripts/uva_arxiv/roles.py` to assign `faculty`, `postdoc`, `grad`, `agfm_other`, and `emeritus` from front matter rather than directory alone
+- [x] implement `scripts/uva_arxiv/roster.py` to parse `_departmentpeople` YAML front matter into stable records keyed by `UVA_id`
+- [x] preserve display names with diacritics while adding normalized search aliases where useful
+- [x] report directory/front-matter conflicts, unpublished records, and emeriti/general-faculty records found in active directories
+- [x] add fixture-based tests for TT faculty, general faculty, lecturers, postdocs, graduate students, emeriti, unpublished records, and directory/front-matter conflicts
 
 ### Task 4: Build appointment history and person-by-year roster output
 
