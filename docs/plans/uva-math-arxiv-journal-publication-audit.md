@@ -891,11 +891,11 @@ If `SINCE` is omitted, the updater defaults to DB max date minus overlap days.
 
 ### Task 5: Add source fetch and UVA affiliation evidence tooling
 
-- [ ] implement `scripts/uva_arxiv/sources.py fetch --id ...` with dry-run support, safe arXiv-ID directory names, shared source-corpus output, rate limiting, retry hooks, and archive unpacking for tar/gzip/raw TeX/PDF fallback cases
-- [ ] implement `scripts/uva_arxiv/affiliation.py scan --id ...` using `affiliation_patterns.yml` positive/negative patterns and the shared source corpus
-- [ ] store affiliation evidence in a cache-side record/database without committing fetched sources or generated cache data
-- [ ] keep absence of UVA evidence as an evidence state rather than a rejection reason
-- [ ] add tests with temporary source trees for positive, negative, conflicting, absent, and missing-source cases
+- [x] implement `scripts/uva_arxiv/sources.py fetch --id ...` with dry-run support, safe arXiv-ID directory names, shared source-corpus output, rate limiting, retry hooks, and archive unpacking for tar/gzip/raw TeX/PDF fallback cases
+- [x] implement `scripts/uva_arxiv/affiliation.py scan --id ...` using `affiliation_patterns.yml` positive/negative patterns and the shared source corpus
+- [x] store affiliation evidence in a cache-side record/database without committing fetched sources or generated cache data
+- [x] keep absence of UVA evidence as an evidence state rather than a rejection reason
+- [x] add tests with temporary source trees for positive, negative, conflicting, absent, and missing-source cases
 
 ### Task 6: Add Semantic Scholar and CrossRef smoke clients
 
