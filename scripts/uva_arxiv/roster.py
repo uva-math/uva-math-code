@@ -158,8 +158,39 @@ def display_name_from_front_matter(front_matter: Mapping[str, Any]) -> tuple[str
     return display_name, first, last
 
 
+def _strip_latex_name_markup(value: str) -> str:
+    """Convert common TeX accent/name markup to plain text before matching."""
+    text = value
+    # TeX accent commands can be braced or unbraced: F\"oldes, F\"{o}ldes, F{\"o}ldes.
+    accent_commands = r"[`'\"^~=.]"
+    text = re.sub(rf"\\({accent_commands})\s*\{{\s*([A-Za-z])\s*\}}", r"\2", text)
+    text = re.sub(rf"\\({accent_commands})\s*([A-Za-z])", r"\2", text)
+    text = re.sub(r"\\([Hcuvrktbd])\s*\{\s*([A-Za-z])\s*\}", r"\2", text)
+    text = re.sub(r"\\([Hcuvrktbd])\s*([A-Za-z])", r"\2", text)
+
+    # Common TeX letter commands appearing in names.
+    for command, replacement in {
+        "ae": "ae",
+        "AE": "AE",
+        "oe": "oe",
+        "OE": "OE",
+        "aa": "a",
+        "AA": "A",
+        "o": "o",
+        "O": "O",
+        "l": "l",
+        "L": "L",
+        "ss": "ss",
+    }.items():
+        text = re.sub(rf"\\{command}\b", replacement, text)
+
+    # Remove grouping braces left after accent replacement, so F{\"o}ldes -> Foldes.
+    return text.replace("{", "").replace("}", "")
+
+
 def normalize_name(value: str) -> str:
-    decomposed = unicodedata.normalize("NFKD", value)
+    plain_value = _strip_latex_name_markup(value)
+    decomposed = unicodedata.normalize("NFKD", plain_value)
     ascii_value = "".join(char for char in decomposed if not unicodedata.combining(char))
     lowered = ascii_value.casefold()
     normalized = re.sub(r"[^a-z0-9]+", " ", lowered)

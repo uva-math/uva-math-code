@@ -11,13 +11,14 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 MAKEFILE = REPO_ROOT / "Makefile"
-PHASE_ONE_TARGETS = (
+OLD_UVA_ARXIV_TARGETS = (
     "uva-arxiv-check",
     "uva-arxiv-db-since",
     "uva-arxiv-db-since-dry",
     "uva-arxiv-roster-history",
     "uva-arxiv-source-smoke",
     "uva-arxiv-api-smoke",
+    "uva-arxiv-journal-refs",
 )
 
 
@@ -34,60 +35,38 @@ def make_dry_run(*args: str) -> str:
 
 
 class MakefileTargetTests(unittest.TestCase):
-    def test_phase_one_targets_are_declared_phony(self) -> None:
+    def test_only_one_uva_arxiv_make_target_is_declared_phony(self) -> None:
         text = MAKEFILE.read_text(encoding="utf-8")
         phony_targets: set[str] = set()
         for line in text.splitlines():
             if line.startswith(".PHONY:"):
                 phony_targets.update(line.split(":", 1)[1].split())
 
-        for target in PHASE_ONE_TARGETS:
-            self.assertIn(target, phony_targets)
+        self.assertIn("uva-arxiv", phony_targets)
+        for target in OLD_UVA_ARXIV_TARGETS:
+            self.assertNotIn(target, phony_targets)
 
-    def test_db_since_dry_omits_since_when_not_set(self) -> None:
-        output = make_dry_run("uva-arxiv-db-since-dry")
+    def test_single_target_forwards_args_to_dispatcher(self) -> None:
+        output = make_dry_run("uva-arxiv", "ARGS=journal-refs --dry-run --limit 3")
 
-        self.assertIn("scripts/uva_arxiv/update_arxiv_db.py since", output)
-        self.assertIn("--dry-run", output)
-        self.assertNotIn("--since", output)
+        self.assertIn("scripts/uva_arxiv/cli.py journal-refs --dry-run --limit 3", output)
 
-    def test_db_since_targets_pass_since_and_args_when_set(self) -> None:
-        output = make_dry_run(
-            "uva-arxiv-db-since-dry",
-            "SINCE=2026-05-29",
-            "ARGS=--limit 3",
+    def test_cli_help_lists_representative_subcommands(self) -> None:
+        result = subprocess.run(
+            [sys.executable, "scripts/uva_arxiv/cli.py", "help"],
+            cwd=REPO_ROOT,
+            check=True,
+            text=True,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
         )
 
-        self.assertIn('--since "2026-05-29"', output)
-        self.assertIn("--dry-run", output)
-        self.assertIn("--limit 3", output)
+        self.assertIn("journal-refs", result.stdout)
+        self.assertIn("db-since", result.stdout)
+        self.assertIn("source-fetch", result.stdout)
+        self.assertNotIn("Traceback", result.stderr + result.stdout)
 
-    def test_source_and_api_smoke_targets_pass_id_and_args(self) -> None:
-        source_output = make_dry_run(
-            "uva-arxiv-source-smoke",
-            "ID=2501.01234",
-            "ARGS=--rate-limit 0",
-        )
-        api_output = make_dry_run(
-            "uva-arxiv-api-smoke",
-            "ID=2501.01234",
-            "ARGS=--no-cache",
-        )
-
-        self.assertIn('scripts/uva_arxiv/sources.py fetch --id "2501.01234"', source_output)
-        self.assertIn("--dry-run", source_output)
-        self.assertIn("--rate-limit 0", source_output)
-        self.assertIn('scripts/uva_arxiv/s2_client.py smoke --id "2501.01234"', api_output)
-        self.assertIn("--no-cache", api_output)
-
-    def test_roster_history_target_is_dry_run_with_args_passthrough(self) -> None:
-        output = make_dry_run("uva-arxiv-roster-history", "ARGS=--as-of 2026-06-02")
-
-        self.assertIn("scripts/uva_arxiv/roster_history.py --dry-run", output)
-        self.assertIn("--no-write", output)
-        self.assertIn("--as-of 2026-06-02", output)
-
-    def test_representative_targets_execute_with_temp_overrides(self) -> None:
+    def test_representative_dispatcher_commands_execute_with_temp_overrides(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
             db_path = root / "arxiv.sqlite"
@@ -120,9 +99,9 @@ class MakefileTargetTests(unittest.TestCase):
             )
 
             for args in (
-                ["uva-arxiv-check"],
-                ["uva-arxiv-db-since-dry", "ARGS=--limit 1"],
-                ["uva-arxiv-source-smoke", "ID=2501.01234", "ARGS=--rate-limit 0"],
+                ["uva-arxiv"],
+                ["uva-arxiv", "ARGS=db-since --dry-run --limit 1"],
+                ["uva-arxiv", "ARGS=source-fetch --id 2501.01234 --dry-run --rate-limit 0"],
             ):
                 with self.subTest(args=args):
                     result = subprocess.run(
@@ -136,7 +115,7 @@ class MakefileTargetTests(unittest.TestCase):
                     )
                     self.assertNotIn("Traceback", result.stderr + result.stdout)
 
-    def test_phase_one_targets_do_not_generate_public_paper_outputs(self) -> None:
+    def test_uva_arxiv_target_does_not_generate_public_paper_outputs(self) -> None:
         text = MAKEFILE.read_text(encoding="utf-8")
 
         self.assertNotIn("assets/data/uva-arxiv-papers.json", text)
@@ -145,8 +124,8 @@ class MakefileTargetTests(unittest.TestCase):
         self.assertNotIn("vectors", text.lower())
 
 
-class PlaceholderPageTests(unittest.TestCase):
-    def test_arxiv_placeholder_is_unlinked_and_not_in_sitemap(self) -> None:
+class ArxivPageTests(unittest.TestCase):
+    def test_arxiv_page_is_unlinked_not_in_sitemap_and_loads_preview_ui(self) -> None:
         page = REPO_ROOT / "arxiv" / "index.md"
         text = page.read_text(encoding="utf-8")
         self.assertTrue(text.startswith("---\n"))
@@ -156,7 +135,9 @@ class PlaceholderPageTests(unittest.TestCase):
         self.assertIn("sitemap: false", front_matter)
         self.assertNotIn("nav_id", front_matter)
         self.assertNotIn("nav_weight", front_matter)
-        self.assertIn("Data is not loaded yet", text)
+        self.assertIn("id=\"uva-arxiv-app\"", text)
+        self.assertIn("assets/data/uva-arxiv-papers.json", text)
+        self.assertIn("assets/js/uva-arxiv.js", text)
 
 
 if __name__ == "__main__":

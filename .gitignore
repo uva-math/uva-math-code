@@ -28,6 +28,10 @@ script/page.html
 scripts/uva_arxiv/cache/*
 !scripts/uva_arxiv/cache/.gitkeep
 
+# UVA arXiv generated review reports (private/intermediate; keep decisions in YAML)
+reports/uva-arxiv-tt-*.csv
+reports/uva-arxiv-tt-*.md
+
 _site*
 _includes_backup*
 _layouts_backup*

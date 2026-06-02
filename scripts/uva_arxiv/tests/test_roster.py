@@ -238,6 +238,12 @@ class RosterParserTests(unittest.TestCase):
         self.assertEqual(record.display_name, "Élise Brézin")
         self.assertIn("elise brezin", record.normalized_aliases)
 
+    def test_normalize_name_handles_tex_accent_markup(self) -> None:
+        self.assertEqual(roster.normalize_name('Juraj F\\"oldes'), "juraj foldes")
+        self.assertEqual(roster.normalize_name('Juraj F\\"{o}ldes'), "juraj foldes")
+        self.assertEqual(roster.normalize_name('Juraj F{\\"o}ldes'), "juraj foldes")
+        self.assertEqual(roster.normalize_name("Andr\\'e Weil"), "andre weil")
+
     def test_duplicate_uva_ids_are_reported_without_name_keying(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

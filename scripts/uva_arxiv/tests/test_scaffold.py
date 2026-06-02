@@ -27,7 +27,12 @@ class ScaffoldConfigTests(unittest.TestCase):
     def test_yaml_loader_accepts_top_level_manual_lists(self) -> None:
         accepted_path = env.DATA_DIR / "accepted_matches.yml"
 
-        self.assertEqual(env.load_yaml_file(accepted_path), [])
+        loaded = env.load_yaml_file(accepted_path)
+        self.assertIsInstance(loaded, list)
+        for row in loaded:
+            self.assertIn("arxiv_id", row)
+            self.assertIn("person_id", row)
+            self.assertEqual(row.get("decision"), "accept")
         self.assertEqual(env.load_yaml_text('- arxiv_id: "2501.01234"\n'), [{"arxiv_id": "2501.01234"}])
         with self.assertRaises(env.ConfigError):
             env.load_yaml_mapping_file(accepted_path)
