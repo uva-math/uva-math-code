@@ -1,0 +1,12 @@
+# Manual appointment intervals keyed by UVA computing ID. Overrides beat inferred
+# git-history intervals.
+#
+# Example:
+# lap5r:
+#   appointments:
+#     - start_date: 2017-08-25
+#       end_date: null
+#       role_group: faculty
+#       position: Professor
+#       source: manual
+{}

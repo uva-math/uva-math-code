@@ -855,12 +855,12 @@ If `SINCE` is omitted, the updater defaults to DB max date minus overlap days.
 
 ### Task 1: Create UVA arXiv scaffold and configuration
 
-- [ ] create the `scripts/uva_arxiv/` namespace with `README.md`, `cache/.gitkeep`, and the planned module/script files needed for Phase 1
-- [ ] add `scripts/uva_arxiv/config.yml` with the shared DB/source paths, initial arXiv start date, people directories, and role-group rules from this plan
-- [ ] add `.gitignore` entries for `scripts/uva_arxiv/cache/*` while preserving `scripts/uva_arxiv/cache/.gitkeep`
-- [ ] create the manual YAML data files under `scripts/uva_arxiv/data/` with documented examples and no accepted/rejected paper data
-- [ ] add lightweight config/env loading helpers that support ignored local `.env` files without ever logging API key values
-- [ ] add tests or smoke checks for config loading and cache/data path creation
+- [x] create the `scripts/uva_arxiv/` namespace with `README.md`, `cache/.gitkeep`, and the planned module/script files needed for Phase 1
+- [x] add `scripts/uva_arxiv/config.yml` with the shared DB/source paths, initial arXiv start date, people directories, and role-group rules from this plan
+- [x] add `.gitignore` entries for `scripts/uva_arxiv/cache/*` while preserving `scripts/uva_arxiv/cache/.gitkeep`
+- [x] create the manual YAML data files under `scripts/uva_arxiv/data/` with documented examples and no accepted/rejected paper data
+- [x] add lightweight config/env loading helpers that support ignored local `.env` files without ever logging API key values
+- [x] add tests or smoke checks for config loading and cache/data path creation
 
 ### Task 2: Implement shared arXiv DB checks and the `since` updater
 

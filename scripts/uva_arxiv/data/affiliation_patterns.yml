@@ -1,0 +1,13 @@
+positive:
+  - "University of Virginia"
+  - "Department of Mathematics, University of Virginia"
+  - "Dept. of Mathematics, University of Virginia"
+  - "@virginia.edu"
+  - "virginia.edu"
+  - "Charlottesville, VA"
+
+negative:
+  - "Virginia Tech"
+  - "West Virginia University"
+  - "Virginia Commonwealth University"
+  - "George Mason University"

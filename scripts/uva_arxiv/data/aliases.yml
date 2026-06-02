@@ -1,0 +1,15 @@
+# Manual arXiv/Semantic Scholar aliases keyed by UVA computing ID.
+#
+# Example:
+# lap5r:
+#   display_name: Leonid Petrov
+#   arxiv_names:
+#     - Leonid Petrov
+#     - L. Petrov
+#   normalized_names:
+#     - leonid petrov
+#   semantic_scholar_author_ids: []
+#   orcid: []
+#   safe_match: true
+#   notes: "Rare enough; still check active appointment."
+{}

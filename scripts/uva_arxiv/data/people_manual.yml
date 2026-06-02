@@ -1,0 +1,10 @@
+# Manual person metadata keyed by UVA computing ID. Use this for stable external
+# identifiers or profile facts that are not present in _departmentpeople files.
+#
+# Example:
+# lap5r:
+#   display_name: Leonid Petrov
+#   orcid: []
+#   semantic_scholar_author_ids: []
+#   notes: ""
+{}

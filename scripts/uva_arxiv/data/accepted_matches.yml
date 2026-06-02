@@ -1,0 +1,13 @@
+# Manual accept decisions for paper/person matches. Public paper outputs later
+# must include only records represented here, but Phase 1 does not add data.
+#
+# Example:
+# - arxiv_id: "2501.01234"
+#   person_id: "lap5r"
+#   decision: accept
+#   identity_confidence: confirmed_manual
+#   department_scope: true
+#   reason: "Full-name match; active UVA appointment."
+#   decided_by: leo
+#   decided_at: "2026-06-02"
+[]

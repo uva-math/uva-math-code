@@ -1,0 +1,9 @@
+# Manual ambiguity notes keyed by UVA computing ID. Use this for common names,
+# initials-only risks, or people requiring additional review evidence.
+#
+# Example:
+# tmark:
+#   display_name: Thomas Mark
+#   require_review_if_no_affiliation: true
+#   notes: "Use categories/coauthors/source evidence."
+{}

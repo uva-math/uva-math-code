@@ -1,0 +1,10 @@
+# Manual reject decisions for paper/person matches. Phase 1 does not add data.
+#
+# Example:
+# - arxiv_id: "2501.01234"
+#   person_id: "abc1de"
+#   decision: reject
+#   reason: "Name collision; S2 author cluster is different person."
+#   decided_by: leo
+#   decided_at: "2026-06-02"
+[]

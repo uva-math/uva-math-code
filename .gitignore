@@ -25,6 +25,9 @@ script/page.html
 .aider*
 .env
 
+scripts/uva_arxiv/cache/*
+!scripts/uva_arxiv/cache/.gitkeep
+
 _site*
 _includes_backup*
 _layouts_backup*
