@@ -899,11 +899,11 @@ If `SINCE` is omitted, the updater defaults to DB max date minus overlap days.
 
 ### Task 6: Add Semantic Scholar and CrossRef smoke clients
 
-- [ ] implement `scripts/uva_arxiv/s2_client.py smoke --id ...` with environment-key normalization, safe logging, rate-limit-aware request handling, and `scripts/uva_arxiv/cache/s2.sqlite`
-- [ ] implement `scripts/uva_arxiv/crossref_client.py smoke --doi ...` with `CROSSREF_MAILTO`/optional key support, safe logging, and `scripts/uva_arxiv/cache/crossref.sqlite`
-- [ ] cache raw JSON or normalized fields useful for DOI, journal, publication-date, author, venue, and conflict checks
-- [ ] treat missing journal/API metadata as incomplete metadata, not publication or scope evidence
-- [ ] add mocked-HTTP tests for cache hits, cache misses, missing keys, rate limits, and metadata-conflict recording
+- [x] implement `scripts/uva_arxiv/s2_client.py smoke --id ...` with environment-key normalization, safe logging, rate-limit-aware request handling, and `scripts/uva_arxiv/cache/s2.sqlite`
+- [x] implement `scripts/uva_arxiv/crossref_client.py smoke --doi ...` with `CROSSREF_MAILTO`/optional key support, safe logging, and `scripts/uva_arxiv/cache/crossref.sqlite`
+- [x] cache raw JSON or normalized fields useful for DOI, journal, publication-date, author, venue, and conflict checks
+- [x] treat missing journal/API metadata as incomplete metadata, not publication or scope evidence
+- [x] add mocked-HTTP tests for cache hits, cache misses, missing keys, rate limits, and metadata-conflict recording
 
 ### Task 7: Wire Makefile targets and optional unlinked placeholder page
 
