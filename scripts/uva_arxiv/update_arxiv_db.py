@@ -22,6 +22,7 @@ from scripts.uva_arxiv import arxiv_db, env
 OAI_ENDPOINT = "https://export.arxiv.org/oai2"
 API_ENDPOINT = "https://export.arxiv.org/api/query"
 DEFAULT_OVERLAP_DAYS = 7
+UPSERT_BATCH_SIZE = 500
 
 HttpGet = Callable[[str], bytes]
 RecordFetcher = Callable[[dt.date, int | None], Iterable[arxiv_db.PaperRecord]]
@@ -101,6 +102,13 @@ def _first_descendant(parent: ET.Element, name: str) -> ET.Element | None:
     return None
 
 
+def _xml_from_bytes(payload: bytes, source_name: str) -> ET.Element:
+    try:
+        return ET.fromstring(payload)
+    except ET.ParseError as exc:
+        raise FetchError(f"{source_name} returned malformed XML: {exc}") from exc
+
+
 def _oai_record_to_paper(record: ET.Element) -> arxiv_db.PaperRecord | None:
     header = _first_descendant(record, "header")
     if header is not None and header.attrib.get("status") == "deleted":
@@ -156,7 +164,7 @@ def fetch_oai_records(
                 "from": since.isoformat(),
             }
         url = endpoint + "?" + urllib.parse.urlencode(params)
-        root = ET.fromstring(http_get(url))
+        root = _xml_from_bytes(http_get(url), "OAI-PMH")
 
         error = _first_descendant(root, "error")
         if error is not None:
@@ -226,7 +234,10 @@ def fetch_api_records(
         "start": "0",
         "max_results": str(min(limit, 100)),
     }
-    root = ET.fromstring(http_get(endpoint + "?" + urllib.parse.urlencode(params)))
+    root = _xml_from_bytes(
+        http_get(endpoint + "?" + urllib.parse.urlencode(params)),
+        "arXiv API",
+    )
     yielded = 0
     for entry in _children(root, "entry"):
         paper = _api_entry_to_paper(entry)
@@ -238,22 +249,35 @@ def fetch_api_records(
             return
 
 
-def make_fetcher(
+def _source_records(
+    since: dt.date,
+    limit: int | None,
     source: str,
-    endpoint: str | None = None,
-    allow_api_fallback: bool = False,
-) -> RecordFetcher:
-    def fetcher(since: dt.date, limit: int | None) -> Iterable[arxiv_db.PaperRecord]:
-        if source == "api":
-            return fetch_api_records(since, limit, endpoint or API_ENDPOINT)
+    endpoint: str | None,
+    allow_api_fallback: bool,
+) -> Iterable[arxiv_db.PaperRecord]:
+    if source == "api":
+        return fetch_api_records(since, limit, endpoint or API_ENDPOINT)
+    if allow_api_fallback:
         try:
             return list(fetch_oai_records(since, limit, endpoint or OAI_ENDPOINT))
         except FetchError:
-            if not allow_api_fallback:
-                raise
             return fetch_api_records(since, limit, API_ENDPOINT)
+    return fetch_oai_records(since, limit, endpoint or OAI_ENDPOINT)
 
-    return fetcher
+
+def _record_batches(
+    records: Iterable[arxiv_db.PaperRecord],
+    batch_size: int = UPSERT_BATCH_SIZE,
+) -> Iterator[list[arxiv_db.PaperRecord]]:
+    batch: list[arxiv_db.PaperRecord] = []
+    for record in records:
+        batch.append(record)
+        if len(batch) >= batch_size:
+            yield batch
+            batch = []
+    if batch:
+        yield batch
 
 
 def run_since_update(
@@ -302,17 +326,28 @@ def run_since_update(
             )
 
         print("dry_run: false", file=out)
-        fetch_records = fetcher or make_fetcher(source, endpoint, allow_api_fallback)
-        records = list(fetch_records(effective_since, limit))
-        upserted = arxiv_db.upsert_papers(conn, records)
-        print(f"fetched: {len(records)}", file=out)
+        fetch_records = fetcher or (
+            lambda fetch_since, fetch_limit: _source_records(
+                fetch_since,
+                fetch_limit,
+                source,
+                endpoint,
+                allow_api_fallback,
+            )
+        )
+        fetched = 0
+        upserted = 0
+        for batch in _record_batches(fetch_records(effective_since, limit)):
+            fetched += len(batch)
+            upserted += arxiv_db.upsert_papers(conn, batch)
+        print(f"fetched: {fetched}", file=out)
         print(f"upserted: {upserted}", file=out)
         return SinceUpdateResult(
             since=effective_since,
             dry_run=False,
             db_count_before=stats.count,
             max_date_before=stats.max_date,
-            fetched=len(records),
+            fetched=fetched,
             upserted=upserted,
         )
 

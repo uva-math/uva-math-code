@@ -21,6 +21,27 @@ The website uses [Jekyll](https://jekyllrb.com/) to generate static content from
 
 ---
 
+## UVA arXiv Tracker
+
+Phase 1 tracker code lives under `scripts/uva_arxiv/`. Keep fetched sources, SQLite caches, and generated scratch data out of git; `scripts/uva_arxiv/cache/` is ignored except for `.gitkeep`. Manual curation files live under `scripts/uva_arxiv/data/`.
+
+Role classification is front-matter-first in `roles.py`; directory names are only fallbacks or conflict checks. Current roster parsing in `roster.py` is keyed by `UVA_id`, not display name. Appointment history in `roster_history.py` uses git history plus current roster context, then applies manual appointment overrides. A display-name-only override must not replace inferred appointment intervals.
+
+Evidence scripts produce review inputs, not accept/reject decisions. Missing Semantic Scholar/CrossRef metadata is incomplete metadata, and missing or absent UVA affiliation evidence is not a rejection reason.
+
+Useful validation/debug commands:
+
+```bash
+python3 -m unittest discover -s scripts/uva_arxiv/tests
+make uva-arxiv-check ARXIV_DB=/tmp/arxiv.sqlite ARXIV_SOURCES_DIR=/tmp/sources
+make uva-arxiv-db-since-dry ARXIV_DB=/tmp/arxiv.sqlite ARGS="--limit 1"
+python3 scripts/uva_arxiv/roster_history.py --dry-run --no-write --as-of YYYY-MM-DD
+python3 scripts/uva_arxiv/s2_client.py smoke --id 2501.01234 --refresh
+python3 scripts/uva_arxiv/crossref_client.py smoke --doi 10.xxxx/example --no-cache
+```
+
+---
+
 ## Post Creation and Management
 
 ### File Location

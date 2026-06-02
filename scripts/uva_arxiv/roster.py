@@ -144,79 +144,9 @@ def extract_front_matter_text(path: Path) -> str:
 
 def parse_front_matter(text: str) -> dict[str, Any]:
     try:
-        import yaml  # type: ignore
-    except ModuleNotFoundError:
-        return parse_simple_front_matter(text)
-
-    loaded = yaml.safe_load(text) or {}
-    if not isinstance(loaded, dict):
-        raise RosterError("front matter must be a mapping")
-    return dict(loaded)
-
-
-def parse_simple_front_matter(text: str) -> dict[str, Any]:
-    parsed: dict[str, Any] = {}
-    current_list_key: str | None = None
-
-    for raw_line in text.splitlines():
-        if not raw_line.strip() or raw_line.lstrip().startswith("#"):
-            continue
-        indent = len(raw_line) - len(raw_line.lstrip(" "))
-        stripped = strip_comment(raw_line).strip()
-        if not stripped:
-            continue
-        if current_list_key and stripped.startswith("- "):
-            if not isinstance(parsed[current_list_key], list):
-                parsed[current_list_key] = []
-            parsed[current_list_key].append(parse_scalar(stripped[2:].strip()))
-            continue
-        current_list_key = None
-        if ":" not in stripped:
-            continue
-        key, value = stripped.split(":", 1)
-        key = key.strip()
-        value = value.strip()
-        if not key:
-            continue
-        if value == "":
-            parsed[key] = None
-            current_list_key = key
-        else:
-            parsed[key] = parse_scalar(value)
-    return parsed
-
-
-def strip_comment(line: str) -> str:
-    quote: str | None = None
-    for index, char in enumerate(line):
-        if char in {"'", '"'}:
-            if quote == char:
-                quote = None
-            elif quote is None:
-                quote = char
-            continue
-        if char == "#" and quote is None:
-            return line[:index]
-    return line
-
-
-def parse_scalar(value: str) -> Any:
-    if value in {"true", "True", "TRUE"}:
-        return True
-    if value in {"false", "False", "FALSE"}:
-        return False
-    if value in {"null", "Null", "NULL", "~"}:
-        return None
-    if value.startswith("[") and value.endswith("]"):
-        inner = value[1:-1].strip()
-        if not inner:
-            return []
-        return [parse_scalar(part.strip()) for part in inner.split(",")]
-    if (value.startswith('"') and value.endswith('"')) or (
-        value.startswith("'") and value.endswith("'")
-    ):
-        return value[1:-1]
-    return value
+        return env.load_yaml_text(text, "people front matter")
+    except env.ConfigError as exc:
+        raise RosterError(str(exc)) from exc
 
 
 def display_name_from_front_matter(front_matter: Mapping[str, Any]) -> tuple[str, str, str]:

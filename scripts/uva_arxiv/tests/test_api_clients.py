@@ -172,6 +172,22 @@ class SemanticScholarClientTests(unittest.TestCase):
             self.assertIn("retry_after=5", result.notes)
             self.assertFalse(cache_path.exists())
 
+    def test_s2_request_errors_do_not_write_cache(self) -> None:
+        for payload in (b"{not json", b"[]"):
+            with self.subTest(payload=payload):
+                with tempfile.TemporaryDirectory() as tmp:
+                    cache_path = Path(tmp) / "s2.sqlite"
+
+                    result = s2_client.smoke_s2(
+                        "2501.01234",
+                        cache_path=cache_path,
+                        api_key="s2-secret",
+                        http_get=lambda request, timeout: payload,
+                    )
+
+                    self.assertEqual(result.status, "request_error")
+                    self.assertFalse(cache_path.exists())
+
     def test_s2_metadata_conflict_is_recorded(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             cache_path = Path(tmp) / "s2.sqlite"
@@ -215,7 +231,10 @@ class CrossRefClientTests(unittest.TestCase):
 
             def fake_get(request: urllib.request.Request, timeout: int) -> bytes:
                 calls.append(request.full_url)
-                self.assertEqual(header_value(request, "X-API-KEY"), "crossref-secret")
+                self.assertEqual(
+                    header_value(request, "Crossref-Plus-API-Token"),
+                    "Bearer crossref-secret",
+                )
                 self.assertIn("mailto=math%40example.edu", request.full_url)
                 return crossref_payload()
 
@@ -274,7 +293,7 @@ class CrossRefClientTests(unittest.TestCase):
                 cache_path = Path(tmp) / "crossref.sqlite"
 
                 def fake_get(request: urllib.request.Request, timeout: int) -> bytes:
-                    self.assertIsNone(header_value(request, "X-API-KEY"))
+                    self.assertIsNone(header_value(request, "Crossref-Plus-API-Token"))
                     self.assertNotIn("mailto=", request.full_url)
                     return crossref_payload(
                         {
@@ -322,6 +341,22 @@ class CrossRefClientTests(unittest.TestCase):
             self.assertEqual(result.status, "rate_limited")
             self.assertIn("retry_after=3", result.notes)
             self.assertFalse(cache_path.exists())
+
+    def test_crossref_request_errors_do_not_write_cache(self) -> None:
+        for payload in (b"{not json", b"[]", json.dumps({"status": "ok"}).encode("utf-8")):
+            with self.subTest(payload=payload):
+                with tempfile.TemporaryDirectory() as tmp:
+                    cache_path = Path(tmp) / "crossref.sqlite"
+
+                    result = crossref_client.smoke_crossref(
+                        "10.1000/crossref-test",
+                        cache_path=cache_path,
+                        mailto="math@example.edu",
+                        http_get=lambda request, timeout: payload,
+                    )
+
+                    self.assertEqual(result.status, "request_error")
+                    self.assertFalse(cache_path.exists())
 
     def test_crossref_metadata_conflict_is_recorded(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

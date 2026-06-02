@@ -313,6 +313,7 @@ def git_history_events(repo_root: Path) -> tuple[list[HistoryFileEvent], list[Hi
             "--date=short",
             "--pretty=format:commit %H %ad",
             "--name-status",
+            "--find-renames",
             "--",
             "_departmentpeople",
         ],
@@ -397,7 +398,7 @@ def infer_git_intervals(
     path_to_person: dict[str, str] = {}
     notices: list[HistoryNotice] = []
 
-    for event in sorted(events, key=lambda item: (item.commit_date, item.commit, item.path)):
+    for event in events:
         if event.status == "D":
             person_id = path_to_person.pop(event.path, None)
             if person_id and person_id in open_intervals:
@@ -471,86 +472,11 @@ def infer_git_intervals(
     return people, {person_id: list(intervals) for person_id, intervals in appointments.items()}, notices
 
 
-def scalar_from_override(value: str) -> Any:
-    stripped = value.strip()
-    if stripped in {"null", "Null", "NULL", "~"}:
-        return None
-    if stripped in {"true", "True", "TRUE"}:
-        return True
-    if stripped in {"false", "False", "FALSE"}:
-        return False
-    if (stripped.startswith('"') and stripped.endswith('"')) or (
-        stripped.startswith("'") and stripped.endswith("'")
-    ):
-        return stripped[1:-1]
-    return stripped
-
-
-def parse_simple_overrides(text: str) -> dict[str, Any]:
-    if text.strip() in {"", "{}"}:
-        return {}
-
-    parsed: dict[str, Any] = {}
-    current_person: str | None = None
-    current_item: dict[str, Any] | None = None
-
-    def flush_item() -> None:
-        nonlocal current_item
-        if current_person and current_item is not None:
-            parsed[current_person].setdefault("appointments", []).append(current_item)
-        current_item = None
-
-    for raw_line in text.splitlines():
-        if not raw_line.strip() or raw_line.lstrip().startswith("#"):
-            continue
-        line = roster.strip_comment(raw_line).rstrip()
-        if not line.strip():
-            continue
-        indent = len(line) - len(line.lstrip(" "))
-        stripped = line.strip()
-
-        if indent == 0 and stripped.endswith(":"):
-            flush_item()
-            current_person = stripped[:-1].strip()
-            parsed[current_person] = {}
-            continue
-        if current_person is None:
-            continue
-        if indent == 2 and ":" in stripped:
-            key, value = stripped.split(":", 1)
-            key = key.strip()
-            value = value.strip()
-            if key == "appointments":
-                continue
-            parsed[current_person][key] = scalar_from_override(value)
-            continue
-        if indent == 4 and stripped.startswith("- "):
-            flush_item()
-            current_item = {}
-            rest = stripped[2:].strip()
-            if rest and ":" in rest:
-                key, value = rest.split(":", 1)
-                current_item[key.strip()] = scalar_from_override(value)
-            continue
-        if indent >= 6 and current_item is not None and ":" in stripped:
-            key, value = stripped.split(":", 1)
-            current_item[key.strip()] = scalar_from_override(value.strip())
-
-    flush_item()
-    return parsed
-
-
 def load_override_mapping(path: Path) -> dict[str, Any]:
-    text = path.read_text(encoding="utf-8")
     try:
-        import yaml  # type: ignore
-    except ModuleNotFoundError:
-        loaded = parse_simple_overrides(text)
-    else:
-        loaded = yaml.safe_load(text) or {}
-    if not isinstance(loaded, dict):
-        raise RosterHistoryError(f"appointment overrides must be a mapping: {path}")
-    return loaded
+        return env.load_yaml_file(path)
+    except env.ConfigError as exc:
+        raise RosterHistoryError(str(exc)) from exc
 
 
 def load_appointment_overrides(path: Path) -> dict[str, AppointmentOverride]:
@@ -671,14 +597,23 @@ def apply_overrides(
             people[person_id] = PersonSummary(person_id, override.display_name)
         elif person_id not in people:
             people[person_id] = PersonSummary(person_id, person_id)
-        appointments[person_id] = [copy_interval(interval) for interval in override.appointments]
-        notices.append(
-            HistoryNotice(
-                person_id=person_id,
-                notice_type="manual_override_applied",
-                message="manual appointment overrides replaced inferred intervals",
+        if override.appointments:
+            appointments[person_id] = [copy_interval(interval) for interval in override.appointments]
+            notices.append(
+                HistoryNotice(
+                    person_id=person_id,
+                    notice_type="manual_override_applied",
+                    message="manual appointment overrides replaced inferred intervals",
+                )
             )
-        )
+        elif override.display_name:
+            notices.append(
+                HistoryNotice(
+                    person_id=person_id,
+                    notice_type="manual_display_name_override_applied",
+                    message="manual display-name override preserved inferred intervals",
+                )
+            )
 
 
 def copy_interval(interval: AppointmentInterval) -> AppointmentInterval:

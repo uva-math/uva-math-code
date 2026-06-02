@@ -114,7 +114,7 @@ def build_crossref_url(
 def build_crossref_request(url: str, api_key: str | None) -> urllib.request.Request:
     headers = {"User-Agent": "uva-math-arxiv-phase1-crossref/0.1"}
     if api_key:
-        headers["X-API-KEY"] = api_key
+        headers["Crossref-Plus-API-Token"] = f"Bearer {api_key}"
     return urllib.request.Request(url, headers=headers)
 
 
@@ -523,13 +523,16 @@ def smoke_crossref(
     except CrossRefError as exc:
         return _error_result(doi, "request_error", mailto_present, api_key_present, str(exc))
 
-    result = normalize_crossref_payload(
-        doi=doi,
-        payload=payload,
-        cache_hit=False,
-        mailto_present=mailto_present,
-        api_key_present=api_key_present,
-    )
+    try:
+        result = normalize_crossref_payload(
+            doi=doi,
+            payload=payload,
+            cache_hit=False,
+            mailto_present=mailto_present,
+            api_key_present=api_key_present,
+        )
+    except CrossRefError as exc:
+        return _error_result(doi, "request_error", mailto_present, api_key_present, str(exc))
     if write_cache:
         store_result(result, cache_path)
     return result

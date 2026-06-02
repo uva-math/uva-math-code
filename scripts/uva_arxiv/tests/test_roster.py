@@ -274,6 +274,34 @@ class RosterParserTests(unittest.TestCase):
         self.assertEqual(len(result.duplicates), 1)
         self.assertEqual(result.duplicates[0].person_id, "dup1a")
 
+    def test_parse_errors_report_missing_front_matter_and_uva_id(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            people_dir = root / "_departmentpeople" / "faculty"
+            people_dir.mkdir(parents=True)
+            (people_dir / "plain.md").write_text("No front matter here.\n", encoding="utf-8")
+            write_person(
+                people_dir,
+                "missing-id.md",
+                """
+                lastname: Missing
+                name: Person
+                general_position: faculty
+                position: Professor
+                """,
+            )
+
+            result = roster.load_current_roster(
+                people_dirs={"faculty": people_dir},
+                repo_root=root,
+            )
+
+        self.assertEqual(result.records, {})
+        self.assertEqual({notice.person_id for notice in result.parse_errors}, {"plain", "missing-id"})
+        messages = "\n".join(notice.message for notice in result.parse_errors)
+        self.assertIn("missing YAML front matter", messages)
+        self.assertIn("missing UVA_id", messages)
+
 
 if __name__ == "__main__":
     unittest.main()

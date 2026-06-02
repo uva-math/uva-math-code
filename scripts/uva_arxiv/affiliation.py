@@ -55,42 +55,12 @@ class AffiliationScanResult:
     matches: tuple[AffiliationMatch, ...]
     notes: str
 
-    @property
-    def is_rejection(self) -> bool:
-        return False
-
-
-def _parse_scalar(value: str) -> str:
-    value = value.strip()
-    if (value.startswith('"') and value.endswith('"')) or (
-        value.startswith("'") and value.endswith("'")
-    ):
-        return value[1:-1]
-    return value
-
-
-def _parse_pattern_text(text: str) -> dict[str, list[str]]:
-    patterns: dict[str, list[str]] = {"positive": [], "negative": []}
-    current: str | None = None
-    for raw_line in text.splitlines():
-        line = raw_line.split("#", 1)[0].rstrip()
-        stripped = line.strip()
-        if not stripped:
-            continue
-        if stripped.endswith(":"):
-            key = stripped[:-1].strip()
-            current = key if key in patterns else None
-            continue
-        if current and stripped.startswith("- "):
-            patterns[current].append(_parse_scalar(stripped[2:]))
-    return patterns
-
 
 def load_patterns(path: Path) -> AffiliationPatternSet:
     try:
         loaded = env.load_yaml_file(path)
-    except Exception:
-        loaded = _parse_pattern_text(path.read_text(encoding="utf-8"))
+    except env.ConfigError as exc:
+        raise AffiliationError(str(exc)) from exc
     positive = tuple(str(item).strip() for item in loaded.get("positive", []) if str(item).strip())
     negative = tuple(str(item).strip() for item in loaded.get("negative", []) if str(item).strip())
     if not positive and not negative:
@@ -251,7 +221,6 @@ def scan_affiliation(
 def _result_payload(result: AffiliationScanResult) -> str:
     data = asdict(result)
     data["matches"] = [asdict(match) for match in result.matches]
-    data["is_rejection"] = result.is_rejection
     return json.dumps(data, ensure_ascii=False, sort_keys=True)
 
 
@@ -320,7 +289,6 @@ def print_scan_result(
     print(f"checked_files: {result.checked_files}", file=out)
     print(f"positive_matches: {result.positive_count}", file=out)
     print(f"negative_matches: {result.negative_count}", file=out)
-    print(f"is_rejection: {'true' if result.is_rejection else 'false'}", file=out)
     print(f"notes: {result.notes}", file=out)
     if cache_path is not None:
         print(f"cache_path: {cache_path}", file=out)

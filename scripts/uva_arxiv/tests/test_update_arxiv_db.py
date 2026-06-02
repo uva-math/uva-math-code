@@ -161,9 +161,110 @@ class SinceUpdaterTests(unittest.TestCase):
         self.assertEqual(records[0].authors, "Alice Smith, Bob Jones")
         self.assertEqual(records[0].date, "2026-05-30")
 
+    def test_oai_fetch_follows_resumption_tokens_and_handles_errors(self) -> None:
+        first_page = b"""<?xml version="1.0" encoding="UTF-8"?>
+        <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
+          <ListRecords>
+            <record>
+              <metadata><arXiv xmlns="http://arxiv.org/OAI/arXiv/">
+                <id>2605.00001</id><created>2026-05-30</created>
+                <authors><author><keyname>Smith</keyname></author></authors>
+                <title>First</title><categories>math.PR</categories><abstract>One</abstract>
+              </arXiv></metadata>
+            </record>
+            <resumptionToken>next-token</resumptionToken>
+          </ListRecords>
+        </OAI-PMH>"""
+        second_page = b"""<?xml version="1.0" encoding="UTF-8"?>
+        <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
+          <ListRecords>
+            <record>
+              <metadata><arXiv xmlns="http://arxiv.org/OAI/arXiv/">
+                <id>2605.00002</id><created>2026-05-31</created>
+                <authors><author><keyname>Jones</keyname></author></authors>
+                <title>Second</title><categories>math.CO</categories><abstract>Two</abstract>
+              </arXiv></metadata>
+            </record>
+          </ListRecords>
+        </OAI-PMH>"""
+        calls: list[str] = []
+
+        def fake_get(url: str) -> bytes:
+            calls.append(url)
+            return second_page if "resumptionToken=next-token" in url else first_page
+
+        records = list(update_arxiv_db.fetch_oai_records(dt.date(2026, 5, 29), http_get=fake_get))
+
+        self.assertEqual([record.id for record in records], ["2605.00001", "2605.00002"])
+        self.assertEqual(len(calls), 2)
+
+        no_records = b"""<OAI-PMH><error code="noRecordsMatch">none</error></OAI-PMH>"""
+        self.assertEqual(
+            list(update_arxiv_db.fetch_oai_records(dt.date(2026, 5, 29), http_get=lambda url: no_records)),
+            [],
+        )
+        bad_error = b"""<OAI-PMH><error code="badArgument">broken</error></OAI-PMH>"""
+        with self.assertRaises(update_arxiv_db.FetchError):
+            list(update_arxiv_db.fetch_oai_records(dt.date(2026, 5, 29), http_get=lambda url: bad_error))
+
+    def test_xml_parse_errors_are_fetch_errors(self) -> None:
+        with self.assertRaises(update_arxiv_db.FetchError):
+            list(update_arxiv_db.fetch_oai_records(dt.date(2026, 5, 29), http_get=lambda url: b"<broken"))
+        with self.assertRaises(update_arxiv_db.FetchError):
+            list(update_arxiv_db.fetch_api_records(dt.date(2026, 5, 29), limit=1, http_get=lambda url: b"<broken"))
+
     def test_api_fallback_requires_limit(self) -> None:
         with self.assertRaises(update_arxiv_db.FetchError):
             list(update_arxiv_db.fetch_api_records(dt.date(2026, 5, 29), limit=None))
+
+    def test_api_fetch_and_oai_failure_fallback_parse_records(self) -> None:
+        api_payload = b"""<?xml version="1.0" encoding="UTF-8"?>
+        <feed xmlns="http://www.w3.org/2005/Atom">
+          <entry>
+            <id>http://arxiv.org/abs/2605.00003v2</id>
+            <published>2026-05-31T00:00:00Z</published>
+            <title> API title </title>
+            <summary> API abstract </summary>
+            <author><name>Ada Author</name></author>
+            <category term="math.NT" />
+          </entry>
+        </feed>"""
+        calls: list[str] = []
+
+        def fake_get(url: str) -> bytes:
+            calls.append(url)
+            return api_payload
+
+        records = list(update_arxiv_db.fetch_api_records(dt.date(2026, 5, 29), limit=1, http_get=fake_get))
+
+        self.assertIn("max_results=1", calls[0])
+        self.assertEqual(records[0].id, "2605.00003")
+        self.assertEqual(records[0].authors, "Ada Author")
+
+        original_get = update_arxiv_db.default_http_get
+        try:
+            def fallback_get(url: str) -> bytes:
+                if "oai.test" in url:
+                    raise update_arxiv_db.FetchError("OAI unavailable")
+                return api_payload
+
+            update_arxiv_db.default_http_get = fallback_get
+            with tempfile.TemporaryDirectory() as tmp:
+                db_path = Path(tmp) / "arxiv.sqlite"
+                create_papers_db(db_path)
+                result = update_arxiv_db.run_since_update(
+                    config=self.config,
+                    db_path=db_path,
+                    since=dt.date(2026, 5, 29),
+                    limit=1,
+                    endpoint="https://oai.test",
+                    allow_api_fallback=True,
+                    out=io.StringIO(),
+                )
+            self.assertEqual(result.fetched, 1)
+            self.assertEqual(result.upserted, 1)
+        finally:
+            update_arxiv_db.default_http_get = original_get
 
     def test_check_env_reports_safe_status_without_secret_values(self) -> None:
         original_s2 = os.environ.get("S2_API_KEY")

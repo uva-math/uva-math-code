@@ -76,6 +76,69 @@ class SourceFetchTests(unittest.TestCase):
             self.assertEqual(result.source_format, "tar")
             self.assertEqual((root / "2501.01234" / "main.tex").read_text(), "University of Virginia\n")
 
+    def test_fetch_rejects_unsafe_tar_members_and_cleans_temp_dir(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            payload = make_tar({"../escape.tex": b"outside\n"})
+
+            with self.assertRaises(sources.SourceFetchError):
+                sources.fetch_source(
+                    self.config,
+                    "2501.01234",
+                    sources_dir=root,
+                    http_get=lambda url: payload,
+                    retries=0,
+                    rate_limit_seconds=0,
+                )
+
+            self.assertFalse((root / "escape.tex").exists())
+            self.assertFalse((root / "2501.01234").exists())
+            self.assertEqual(list(root.iterdir()), [])
+
+    def test_fetch_existing_source_skips_network_unless_force_is_set(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            target = root / "2501.01234"
+            target.mkdir()
+            (target / "old.tex").write_text("old\n", encoding="utf-8")
+            payload = make_tar({"new.tex": b"new\n"})
+            calls = 0
+
+            def fake_get(url: str) -> bytes:
+                nonlocal calls
+                calls += 1
+                return payload
+
+            existing = sources.fetch_source(
+                self.config,
+                "2501.01234",
+                sources_dir=root,
+                http_get=fake_get,
+                rate_limit_seconds=0,
+            )
+            forced = sources.fetch_source(
+                self.config,
+                "2501.01234",
+                sources_dir=root,
+                force=True,
+                http_get=fake_get,
+                rate_limit_seconds=0,
+            )
+
+            self.assertEqual(existing.status, "exists")
+            self.assertEqual(calls, 1)
+            self.assertEqual(forced.status, "fetched")
+            self.assertFalse((target / "old.tex").exists())
+            self.assertEqual((target / "new.tex").read_text(encoding="utf-8"), "new\n")
+
+    def test_unpack_rejects_oversized_tar_member(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            payload = make_tar({"huge.tex": b"x" * (sources.MAX_ARCHIVE_FILE_BYTES + 1)})
+
+            with self.assertRaises(sources.SourceFetchError):
+                sources.unpack_source_bytes(payload, root / "source")
+
     def test_unpack_gzip_raw_tex_and_raw_pdf_fallbacks(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -126,7 +189,6 @@ class AffiliationScanTests(unittest.TestCase):
         self.assertEqual(result.evidence, "confirmed")
         self.assertEqual(result.positive_count, 1)
         self.assertEqual(result.negative_count, 0)
-        self.assertFalse(result.is_rejection)
 
     def test_negative_source_evidence_is_conflict_not_rejection(self) -> None:
         result = self.scan_text("Current affiliation: Virginia Tech\n")
@@ -134,7 +196,6 @@ class AffiliationScanTests(unittest.TestCase):
         self.assertEqual(result.evidence, "conflict")
         self.assertEqual(result.positive_count, 0)
         self.assertEqual(result.negative_count, 1)
-        self.assertFalse(result.is_rejection)
 
     def test_conflicting_source_evidence_records_both_sides(self) -> None:
         result = self.scan_text("University of Virginia and Virginia Tech\n")
@@ -150,7 +211,6 @@ class AffiliationScanTests(unittest.TestCase):
         self.assertEqual(result.positive_count, 0)
         self.assertEqual(result.negative_count, 0)
         self.assertIn("not a rejection", result.notes)
-        self.assertFalse(result.is_rejection)
 
     def test_missing_source_is_recorded_separately(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -162,7 +222,6 @@ class AffiliationScanTests(unittest.TestCase):
 
         self.assertEqual(result.evidence, "missing_source")
         self.assertEqual(result.checked_files, 0)
-        self.assertFalse(result.is_rejection)
 
     def test_scan_affiliation_writes_ignored_cache_database(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
@@ -195,7 +254,7 @@ class AffiliationScanTests(unittest.TestCase):
             self.assertEqual(row[0], "confirmed")
             self.assertEqual(row[1], 1)
             self.assertEqual(row[2], 0)
-            self.assertIn('"is_rejection": false', row[3])
+            self.assertNotIn("is_rejection", row[3])
 
 
 if __name__ == "__main__":

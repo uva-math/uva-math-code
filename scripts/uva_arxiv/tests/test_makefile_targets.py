@@ -1,12 +1,24 @@
 from __future__ import annotations
 
+import os
+import sqlite3
 import subprocess
+import sys
+import tempfile
 import unittest
 from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[3]
 MAKEFILE = REPO_ROOT / "Makefile"
+PHASE_ONE_TARGETS = (
+    "uva-arxiv-check",
+    "uva-arxiv-db-since",
+    "uva-arxiv-db-since-dry",
+    "uva-arxiv-roster-history",
+    "uva-arxiv-source-smoke",
+    "uva-arxiv-api-smoke",
+)
 
 
 def make_dry_run(*args: str) -> str:
@@ -24,15 +36,13 @@ def make_dry_run(*args: str) -> str:
 class MakefileTargetTests(unittest.TestCase):
     def test_phase_one_targets_are_declared_phony(self) -> None:
         text = MAKEFILE.read_text(encoding="utf-8")
-        for target in (
-            "uva-arxiv-check",
-            "uva-arxiv-db-since",
-            "uva-arxiv-db-since-dry",
-            "uva-arxiv-roster-history",
-            "uva-arxiv-source-smoke",
-            "uva-arxiv-api-smoke",
-        ):
-            self.assertIn(target, text)
+        phony_targets: set[str] = set()
+        for line in text.splitlines():
+            if line.startswith(".PHONY:"):
+                phony_targets.update(line.split(":", 1)[1].split())
+
+        for target in PHASE_ONE_TARGETS:
+            self.assertIn(target, phony_targets)
 
     def test_db_since_dry_omits_since_when_not_set(self) -> None:
         output = make_dry_run("uva-arxiv-db-since-dry")
@@ -71,10 +81,60 @@ class MakefileTargetTests(unittest.TestCase):
         self.assertIn("--no-cache", api_output)
 
     def test_roster_history_target_is_dry_run_with_args_passthrough(self) -> None:
-        output = make_dry_run("uva-arxiv-roster-history", "ARGS=--no-write")
+        output = make_dry_run("uva-arxiv-roster-history", "ARGS=--as-of 2026-06-02")
 
         self.assertIn("scripts/uva_arxiv/roster_history.py --dry-run", output)
         self.assertIn("--no-write", output)
+        self.assertIn("--as-of 2026-06-02", output)
+
+    def test_representative_targets_execute_with_temp_overrides(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            db_path = root / "arxiv.sqlite"
+            sources_dir = root / "sources"
+            sources_dir.mkdir()
+            with sqlite3.connect(db_path) as conn:
+                conn.execute(
+                    """
+                    CREATE TABLE papers (
+                        id TEXT PRIMARY KEY,
+                        title TEXT,
+                        abstract TEXT,
+                        categories TEXT,
+                        authors TEXT,
+                        date TEXT
+                    )
+                    """
+                )
+                conn.execute(
+                    "INSERT INTO papers VALUES (?, ?, ?, ?, ?, ?)",
+                    ("2605.00001", "Existing", "Abstract", "math.PR", "A. Author", "2026-05-29"),
+                )
+            env = os.environ.copy()
+            env.update(
+                {
+                    "ARXIV_DB": str(db_path),
+                    "ARXIV_SOURCES_DIR": str(sources_dir),
+                    "UVA_ARXIV_PYTHON": sys.executable,
+                }
+            )
+
+            for args in (
+                ["uva-arxiv-check"],
+                ["uva-arxiv-db-since-dry", "ARGS=--limit 1"],
+                ["uva-arxiv-source-smoke", "ID=2501.01234", "ARGS=--rate-limit 0"],
+            ):
+                with self.subTest(args=args):
+                    result = subprocess.run(
+                        ["make", *args],
+                        cwd=REPO_ROOT,
+                        env=env,
+                        check=True,
+                        text=True,
+                        stdout=subprocess.PIPE,
+                        stderr=subprocess.PIPE,
+                    )
+                    self.assertNotIn("Traceback", result.stderr + result.stdout)
 
     def test_phase_one_targets_do_not_generate_public_paper_outputs(self) -> None:
         text = MAKEFILE.read_text(encoding="utf-8")

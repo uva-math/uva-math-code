@@ -55,7 +55,7 @@ uva-arxiv-db-since-dry:
 	$(UVA_ARXIV_PYTHON) scripts/uva_arxiv/update_arxiv_db.py since $(UVA_ARXIV_SINCE_ARG) --dry-run $(ARGS)
 
 uva-arxiv-roster-history:
-	$(UVA_ARXIV_PYTHON) scripts/uva_arxiv/roster_history.py --dry-run $(ARGS)
+	$(UVA_ARXIV_PYTHON) scripts/uva_arxiv/roster_history.py --dry-run --no-write $(ARGS)
 
 uva-arxiv-source-smoke:
 	@test -n "$(ID)" || { echo "ID is required, e.g. make uva-arxiv-source-smoke ID=2501.01234"; exit 2; }

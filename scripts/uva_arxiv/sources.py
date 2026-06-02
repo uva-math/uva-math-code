@@ -28,6 +28,11 @@ except ImportError:  # pragma: no cover - direct script execution
 EPRINT_ENDPOINT = "https://arxiv.org/e-print"
 DEFAULT_RETRIES = 2
 DEFAULT_RATE_LIMIT_SECONDS = 3.0
+MAX_SOURCE_RESPONSE_BYTES = 50_000_000
+MAX_ARCHIVE_MEMBERS = 2_000
+MAX_ARCHIVE_FILE_BYTES = 20_000_000
+MAX_ARCHIVE_TOTAL_BYTES = 100_000_000
+COPY_CHUNK_BYTES = 1_048_576
 TEXT_EXTENSIONS = {
     ".aux",
     ".bbl",
@@ -133,6 +138,13 @@ def eprint_url(arxiv_id: str, endpoint: str = EPRINT_ENDPOINT) -> str:
     return endpoint.rstrip("/") + "/" + quoted_id
 
 
+def _check_payload_size(payload: bytes, limit: int = MAX_SOURCE_RESPONSE_BYTES) -> None:
+    if len(payload) > limit:
+        raise SourceFetchError(
+            f"source response is too large: {len(payload)} bytes exceeds {limit}"
+        )
+
+
 def default_http_get(url: str, timeout: int = 45) -> bytes:
     request = urllib.request.Request(
         url,
@@ -140,7 +152,9 @@ def default_http_get(url: str, timeout: int = 45) -> bytes:
     )
     try:
         with urllib.request.urlopen(request, timeout=timeout) as response:
-            return response.read()
+            payload = response.read(MAX_SOURCE_RESPONSE_BYTES + 1)
+            _check_payload_size(payload)
+            return payload
     except urllib.error.URLError as exc:
         raise SourceFetchError(f"request failed for {url}: {exc}") from exc
 
@@ -155,28 +169,62 @@ def _write_file(path: Path, content: bytes) -> None:
     path.write_bytes(content)
 
 
+def _write_stream_bounded(path: Path, source: io.BufferedIOBase, expected_size: int) -> None:
+    if expected_size < 0:
+        raise SourceFetchError("archive member has unknown size")
+    if expected_size > MAX_ARCHIVE_FILE_BYTES:
+        raise SourceFetchError(
+            f"archive member is too large: {expected_size} bytes exceeds {MAX_ARCHIVE_FILE_BYTES}"
+        )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    remaining = expected_size
+    with path.open("wb") as handle:
+        while remaining:
+            chunk = source.read(min(COPY_CHUNK_BYTES, remaining))
+            if not chunk:
+                raise SourceFetchError("archive member ended before its declared size")
+            handle.write(chunk)
+            remaining -= len(chunk)
+        if source.read(1):
+            raise SourceFetchError("archive member exceeded its declared size")
+
+
 def _extract_tar(payload: bytes, target_dir: Path) -> tuple[str, tuple[str, ...]] | None:
     try:
         with tarfile.open(fileobj=io.BytesIO(payload), mode="r:*") as archive:
             members = archive.getmembers()
+            if len(members) > MAX_ARCHIVE_MEMBERS:
+                raise SourceFetchError(
+                    f"archive has too many members: {len(members)} exceeds {MAX_ARCHIVE_MEMBERS}"
+                )
             written: list[str] = []
+            total_bytes = 0
             for member in members:
                 if not _is_safe_member_name(member.name):
-                    continue
+                    raise SourceFetchError(f"archive member has unsafe path: {member.name}")
                 destination = target_dir / member.name
                 if member.isdir():
                     destination.mkdir(parents=True, exist_ok=True)
                     continue
                 if not member.isfile():
                     continue
+                if member.size > MAX_ARCHIVE_FILE_BYTES:
+                    raise SourceFetchError(
+                        f"archive member {member.name} is too large: {member.size} bytes"
+                    )
+                total_bytes += member.size
+                if total_bytes > MAX_ARCHIVE_TOTAL_BYTES:
+                    raise SourceFetchError(
+                        f"archive extraction is too large: {total_bytes} bytes exceeds {MAX_ARCHIVE_TOTAL_BYTES}"
+                    )
                 extracted = archive.extractfile(member)
                 if extracted is None:
                     continue
-                _write_file(destination, extracted.read())
+                _write_stream_bounded(destination, extracted, member.size)
                 written.append(str(Path(member.name)))
             if written:
                 return ("tar", tuple(sorted(written)))
-            return None
+            raise SourceFetchError("archive contains no extractable regular files")
     except tarfile.TarError:
         return None
 
@@ -208,6 +256,19 @@ def _fallback_filename(payload: bytes) -> str:
     return "source.bin"
 
 
+def _decompress_gzip_bounded(payload: bytes) -> bytes | None:
+    try:
+        with gzip.GzipFile(fileobj=io.BytesIO(payload), mode="rb") as compressed:
+            decompressed = compressed.read(MAX_ARCHIVE_TOTAL_BYTES + 1)
+    except OSError:
+        return None
+    if len(decompressed) > MAX_ARCHIVE_TOTAL_BYTES:
+        raise SourceFetchError(
+            f"decompressed source is too large: {len(decompressed)} bytes exceeds {MAX_ARCHIVE_TOTAL_BYTES}"
+        )
+    return decompressed
+
+
 def unpack_source_bytes(payload: bytes, target_dir: Path) -> tuple[str, tuple[str, ...]]:
     """Unpack an arXiv e-print payload into target_dir."""
     target_dir.mkdir(parents=True, exist_ok=True)
@@ -216,10 +277,7 @@ def unpack_source_bytes(payload: bytes, target_dir: Path) -> tuple[str, tuple[st
     if tar_result is not None:
         return tar_result
 
-    try:
-        decompressed = gzip.decompress(payload)
-    except OSError:
-        decompressed = None
+    decompressed = _decompress_gzip_bounded(payload)
 
     if decompressed is not None:
         tar_result = _extract_tar(decompressed, target_dir)
@@ -297,6 +355,7 @@ def fetch_source(
         limiter.wait()
         try:
             payload = getter(source_url)
+            _check_payload_size(payload)
             break
         except Exception as exc:  # noqa: BLE001 - keep retry hook generic.
             last_error = exc

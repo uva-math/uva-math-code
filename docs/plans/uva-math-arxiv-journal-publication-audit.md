@@ -43,7 +43,7 @@ Phase 1 does **not**:
 
 - scan the full DB for UVA matches;
 - generate `assets/data/uva-arxiv-papers.json`;
-- generate reports;
+- generate public publication reports;
 - populate journal metadata for all candidates;
 - expose a complete public page;
 - classify journal tiers;
@@ -103,9 +103,6 @@ scripts/uva_arxiv/
   affiliation.py            # grep/extract UVA and negative affiliation evidence
   s2_client.py              # Semantic Scholar cache/client scaffolding
   crossref_client.py        # CrossRef cache/client scaffolding
-  arxiv_api.py              # arXiv API/OAI helpers
-  disambiguation.py         # scoring skeleton; no final matching in Phase 1
-  review_schema.py          # accepted/rejected/review queue schemas
   check_env.py              # smoke-test paths, DB schema, API env vars
   data/
     aliases.yml
@@ -126,8 +123,8 @@ assets/data/uva-arxiv-papers.json
 assets/data/uva-arxiv-summary.json
 assets/data/uva-arxiv-people.json
 assets/data/uva-arxiv-index.json
-reports/uva-arxiv-*.csv
-reports/uva-arxiv-*.md
+reports/uva-arxiv-publication-*.csv
+reports/uva-arxiv-publication-*.md
 ```
 
 Future unlinked page, not a data build:
@@ -156,21 +153,6 @@ people_dirs:
   lecturer: _departmentpeople/lecturers
   emeriti: _departmentpeople/emeriti
   unpublished: _departmentpeople/_unpublished
-
-role_groups:
-  faculty:
-    include_general_position: [faculty]
-    exclude_position_regex: "General Faculty|Emeritus|Emerita"
-  postdoc:
-    include_general_position: [postdoc]
-  grad:
-    include_general_position: [gradstudent]
-  agfm_other:
-    include_general_position: [lecturer]
-    include_position_regex: "General Faculty|Lecturer|Instructor|Academic General Faculty"
-  emeritus:
-    include_general_position: [emeritus]
-    include_position_regex: "Emeritus|Emerita"
 ```
 
 Environment variables:
@@ -942,7 +924,7 @@ Expected outcomes:
 - active roster/history dry-run reports counts by year and role group;
 - no `assets/data/uva-arxiv-papers.json` is generated;
 - no full candidate scan occurs;
-- no generated publication/report data is committed;
+- no generated publication data is committed; roster-history support reports may be committed as Phase 1 validation outputs;
 - no related-paper/embedding files are created.
 
 ## 15. Later phases, deliberately out of scope now

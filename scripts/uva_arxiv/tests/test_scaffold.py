@@ -20,11 +20,6 @@ class ScaffoldConfigTests(unittest.TestCase):
             Path("/Users/leo/Homepage/_scripts/arxiv/sources"),
         )
         self.assertIn("faculty", config.people_dirs)
-        self.assertIn("agfm_other", config.role_groups)
-        self.assertEqual(
-            config.role_groups["faculty"]["include_general_position"],
-            ["faculty"],
-        )
 
     def test_required_data_files_exist(self) -> None:
         self.assertEqual(env.missing_data_files(), [])

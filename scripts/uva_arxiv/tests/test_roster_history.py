@@ -2,7 +2,10 @@ from __future__ import annotations
 
 import csv
 import json
+import os
+import subprocess
 import tempfile
+import textwrap
 import unittest
 from datetime import date
 from pathlib import Path
@@ -56,6 +59,40 @@ def event(
         path=path,
         old_path=old_path,
         record=event_record,
+    )
+
+
+def write_history_person(path: Path, person_id: str, position: str, general_position: str = "faculty") -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(
+        "---\n"
+        + textwrap.dedent(
+            f"""
+            UVA_id: {person_id}
+            lastname: Person
+            name: Test
+            general_position: {general_position}
+            position: {position}
+            """
+        ).strip()
+        + "\n---\n",
+        encoding="utf-8",
+    )
+
+
+def run_git(repo_root: Path, *args: str, date_value: str | None = None) -> None:
+    env = os.environ.copy()
+    if date_value:
+        env["GIT_AUTHOR_DATE"] = f"{date_value}T12:00:00Z"
+        env["GIT_COMMITTER_DATE"] = f"{date_value}T12:00:00Z"
+    subprocess.run(
+        ["git", *args],
+        cwd=repo_root,
+        env=env,
+        check=True,
+        text=True,
+        stdout=subprocess.PIPE,
+        stderr=subprocess.PIPE,
     )
 
 
@@ -173,6 +210,40 @@ class RosterHistoryInferenceTests(unittest.TestCase):
         self.assertEqual([(row.academic_year, row.role_group, row.source) for row in result.rows], [("2022-2023", "postdoc", "manual")])
         self.assertIn("manual_override_applied", {notice.notice_type for notice in result.notices})
 
+    def test_display_name_only_override_preserves_inferred_intervals(self) -> None:
+        faculty_path = "_departmentpeople/faculty/abc1de.md"
+        events = [
+            event(
+                "c1",
+                "2021-08-10",
+                "A",
+                faculty_path,
+                record("abc1de", "Ada Curie", "faculty", "Assistant Professor", faculty_path, "faculty"),
+            )
+        ]
+        overrides = {
+            "abc1de": roster_history.AppointmentOverride(
+                display_name="Ada C.",
+                appointments=[],
+            )
+        }
+
+        result = roster_history.build_history_result(
+            events=events,
+            current_roster=empty_roster_result(),
+            overrides=overrides,
+            initial_start_date=date(2021, 8, 1),
+            as_of_date=date(2022, 6, 1),
+        )
+
+        self.assertEqual(result.people["abc1de"].display_name, "Ada C.")
+        self.assertEqual(len(result.appointments["abc1de"]), 1)
+        self.assertEqual(result.rows[0].display_name, "Ada C.")
+        self.assertIn(
+            "manual_display_name_override_applied",
+            {notice.notice_type for notice in result.notices},
+        )
+
     def test_same_path_person_id_change_closes_previous_identity(self) -> None:
         faculty_path = "_departmentpeople/faculty/person.md"
         events = [
@@ -223,6 +294,49 @@ abc1de:
         self.assertEqual(interval.start_date, date(2021, 8, 1))
         self.assertIsNone(interval.end_date)
         self.assertEqual(interval.confidence, "exact")
+
+    def test_override_yaml_loader_accepts_comment_then_empty_mapping(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "appointments_overrides.yml"
+            path.write_text("# no overrides yet\n{}\n", encoding="utf-8")
+
+            overrides = roster_history.load_appointment_overrides(path)
+
+        self.assertEqual(overrides, {})
+
+    def test_git_history_events_parse_real_temp_repo_history(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            run_git(root, "init")
+            run_git(root, "config", "user.email", "math@example.edu")
+            run_git(root, "config", "user.name", "Math Test")
+            run_git(root, "config", "commit.gpgsign", "false")
+
+            faculty_path = root / "_departmentpeople" / "faculty" / "abc1de.md"
+            write_history_person(faculty_path, "abc1de", "Assistant Professor")
+            run_git(root, "add", "_departmentpeople/faculty/abc1de.md")
+            run_git(root, "commit", "-m", "add faculty", date_value="2021-08-10")
+
+            write_history_person(faculty_path, "abc1de", "Associate Professor")
+            run_git(root, "add", "_departmentpeople/faculty/abc1de.md")
+            run_git(root, "commit", "-m", "promote faculty", date_value="2023-08-15")
+
+            emeritus_rel = "_departmentpeople/emeriti/abc1de.md"
+            (root / "_departmentpeople" / "emeriti").mkdir(parents=True)
+            run_git(root, "mv", "_departmentpeople/faculty/abc1de.md", emeritus_rel)
+            run_git(root, "commit", "-m", "move emeritus", date_value="2025-08-01")
+
+            write_history_person(root / emeritus_rel, "abc1de", "Professor Emeritus", "emeritus")
+            run_git(root, "add", emeritus_rel)
+            run_git(root, "commit", "-m", "mark emeritus", date_value="2025-08-02")
+
+            events, notices = roster_history.git_history_events(root)
+
+        self.assertEqual(notices, [])
+        self.assertEqual([item.status for item in events], ["A", "M", "R", "M"])
+        self.assertEqual(events[-2].old_path, "_departmentpeople/faculty/abc1de.md")
+        self.assertEqual(events[-2].path, "_departmentpeople/emeriti/abc1de.md")
+        self.assertEqual(events[-1].record.role_group, "emeritus")
 
     def test_academic_year_expansion_clips_to_initial_start_and_windows(self) -> None:
         rows = roster_history.expand_active_years(

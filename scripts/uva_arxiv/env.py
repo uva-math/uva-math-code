@@ -1,8 +1,8 @@
 """Configuration and environment helpers for UVA arXiv scripts.
 
 This module intentionally avoids a hard dependency on PyYAML. If PyYAML is
-available it is used; otherwise a small parser handles the limited YAML shape in
-`config.yml`.
+available it is used; otherwise a small parser handles the limited YAML shapes
+used by the UVA arXiv config and manual data files.
 """
 
 from __future__ import annotations
@@ -62,7 +62,6 @@ class UvaArxivConfig:
     initial_arxiv_start_date: str
     site_endpoint: str
     people_dirs: dict[str, Path]
-    role_groups: dict[str, dict[str, Any]]
     cache_dir: Path
     data_dir: Path
 
@@ -110,10 +109,8 @@ def _parse_scalar(value: str) -> Any:
     return value
 
 
-def _parse_simple_yaml(text: str) -> dict[str, Any]:
-    root: dict[str, Any] = {}
-    stack: list[tuple[int, dict[str, Any]]] = [(-1, root)]
-
+def _simple_yaml_lines(text: str) -> list[tuple[int, str, int]]:
+    lines: list[tuple[int, str, int]] = []
     for line_number, raw_line in enumerate(text.splitlines(), start=1):
         if raw_line.strip() == "" or raw_line.lstrip().startswith("#"):
             continue
@@ -125,7 +122,38 @@ def _parse_simple_yaml(text: str) -> dict[str, Any]:
             continue
 
         indent = len(uncommented) - len(uncommented.lstrip(" "))
-        stripped = uncommented.strip()
+        lines.append((indent, uncommented.strip(), line_number))
+    return lines
+
+
+def _parse_simple_yaml(text: str) -> dict[str, Any]:
+    stripped_text = text.strip()
+    if not stripped_text:
+        return {}
+    if stripped_text.endswith("{}") and not _simple_yaml_lines(text.replace("{}", "")):
+        return {}
+    lines = _simple_yaml_lines(text)
+    parsed, next_index = _parse_yaml_mapping(lines, 0, 0)
+    if next_index != len(lines):
+        _indent, stripped, line_number = lines[next_index]
+        raise ConfigError(f"Unexpected YAML content at line {line_number}: {stripped}")
+    return parsed
+
+
+def _parse_yaml_mapping(
+    lines: list[tuple[int, str, int]],
+    index: int,
+    indent: int,
+) -> tuple[dict[str, Any], int]:
+    parsed: dict[str, Any] = {}
+    while index < len(lines):
+        line_indent, stripped, line_number = lines[index]
+        if line_indent < indent:
+            break
+        if line_indent > indent:
+            raise ConfigError(f"Unexpected YAML indentation at line {line_number}: {stripped}")
+        if stripped.startswith("- "):
+            break
         if ":" not in stripped:
             raise ConfigError(f"Expected key/value YAML at line {line_number}: {stripped}")
 
@@ -134,22 +162,74 @@ def _parse_simple_yaml(text: str) -> dict[str, Any]:
         if not key:
             raise ConfigError(f"Empty YAML key at line {line_number}")
 
-        while indent <= stack[-1][0]:
-            stack.pop()
-        parent = stack[-1][1]
-
         if value.strip() == "":
-            child: dict[str, Any] = {}
-            parent[key] = child
-            stack.append((indent, child))
+            index += 1
+            if index >= len(lines) or lines[index][0] < indent:
+                parsed[key] = None
+                continue
+            child_indent = lines[index][0]
+            if child_indent == indent and lines[index][1].startswith("- "):
+                parsed[key], index = _parse_yaml_list(lines, index, child_indent)
+            elif child_indent > indent:
+                parsed[key], index = _parse_yaml_block(lines, index, child_indent)
+            else:
+                parsed[key] = None
         else:
-            parent[key] = _parse_scalar(value)
+            parsed[key] = _parse_scalar(value)
+            index += 1
+    return parsed, index
 
-    return root
+
+def _parse_yaml_list(
+    lines: list[tuple[int, str, int]],
+    index: int,
+    indent: int,
+) -> tuple[list[Any], int]:
+    parsed: list[Any] = []
+    while index < len(lines):
+        line_indent, stripped, line_number = lines[index]
+        if line_indent < indent:
+            break
+        if line_indent > indent:
+            raise ConfigError(f"Unexpected YAML indentation at line {line_number}: {stripped}")
+        if not stripped.startswith("- "):
+            break
+
+        item = stripped[2:].strip()
+        index += 1
+        if item == "":
+            if index < len(lines) and lines[index][0] > indent:
+                value, index = _parse_yaml_block(lines, index, lines[index][0])
+            else:
+                value = None
+            parsed.append(value)
+            continue
+
+        if ":" in item:
+            key, value = item.split(":", 1)
+            item_mapping: dict[str, Any] = {
+                key.strip(): _parse_scalar(value) if value.strip() else None
+            }
+            if index < len(lines) and lines[index][0] > indent:
+                nested, index = _parse_yaml_mapping(lines, index, lines[index][0])
+                item_mapping.update(nested)
+            parsed.append(item_mapping)
+        else:
+            parsed.append(_parse_scalar(item))
+    return parsed, index
 
 
-def load_yaml_file(path: Path) -> dict[str, Any]:
-    text = path.read_text(encoding="utf-8")
+def _parse_yaml_block(
+    lines: list[tuple[int, str, int]],
+    index: int,
+    indent: int,
+) -> tuple[Any, int]:
+    if lines[index][1].startswith("- "):
+        return _parse_yaml_list(lines, index, indent)
+    return _parse_yaml_mapping(lines, index, indent)
+
+
+def load_yaml_text(text: str, source: str = "YAML") -> dict[str, Any]:
     try:
         import yaml  # type: ignore
     except ModuleNotFoundError:
@@ -157,8 +237,12 @@ def load_yaml_file(path: Path) -> dict[str, Any]:
 
     loaded = yaml.safe_load(text) or {}
     if not isinstance(loaded, dict):
-        raise ConfigError(f"Expected mapping at top level of {path}")
+        raise ConfigError(f"Expected mapping at top level of {source}")
     return loaded
+
+
+def load_yaml_file(path: Path) -> dict[str, Any]:
+    return load_yaml_text(path.read_text(encoding="utf-8"), str(path))
 
 
 def _resolve_path(value: str | os.PathLike[str], repo_root: Path = REPO_ROOT) -> Path:
@@ -250,15 +334,12 @@ def load_config(
         "initial_arxiv_start_date",
         "site_endpoint",
         "people_dirs",
-        "role_groups",
     )
     missing = [key for key in required if key not in raw]
     if missing:
         raise ConfigError(f"Missing required config keys: {', '.join(missing)}")
     if not isinstance(raw["people_dirs"], dict):
         raise ConfigError("people_dirs must be a mapping")
-    if not isinstance(raw["role_groups"], dict):
-        raise ConfigError("role_groups must be a mapping")
 
     if ensure_dirs:
         ensure_local_dirs()
@@ -276,7 +357,6 @@ def load_config(
             key: _resolve_path(str(value), repo_root)
             for key, value in raw["people_dirs"].items()
         },
-        role_groups=dict(raw["role_groups"]),
         cache_dir=CACHE_DIR,
         data_dir=DATA_DIR,
     )
