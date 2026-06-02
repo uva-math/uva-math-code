@@ -446,13 +446,14 @@ def run_since_update(
         )
         fetched = 0
         upserted = 0
-        for batch in _record_batches(fetch_records(effective_since, limit)):
-            fetched += len(batch)
-            upserted += arxiv_db.upsert_papers(conn, batch)
-        deleted_recorded = record_deleted_oai_records(
-            config.cache_dir / "arxiv_update_state.sqlite",
-            deleted_records,
-        )
+        with conn:
+            for batch in _record_batches(fetch_records(effective_since, limit)):
+                fetched += len(batch)
+                upserted += arxiv_db.upsert_papers(conn, batch, commit=False)
+            deleted_recorded = record_deleted_oai_records(
+                config.cache_dir / "arxiv_update_state.sqlite",
+                deleted_records,
+            )
         print(f"fetched: {fetched}", file=out)
         print(f"upserted: {upserted}", file=out)
         print(f"deleted_recorded: {deleted_recorded}", file=out)

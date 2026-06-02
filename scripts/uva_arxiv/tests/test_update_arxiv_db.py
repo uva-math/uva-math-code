@@ -116,6 +116,37 @@ class SinceUpdaterTests(unittest.TestCase):
             self.assertEqual(rows, [("2605.00001", "Updated"), ("2605.00002", "New")])
             self.assertEqual(indexes, [])
 
+    def test_since_update_rolls_back_all_batches_on_late_fetch_error(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            db_path = Path(tmp) / "arxiv.sqlite"
+            create_papers_db(db_path)
+
+            def fetcher(since: dt.date, limit: int | None):
+                self.assertEqual(since, dt.date(2026, 5, 29))
+                for index in range(update_arxiv_db.UPSERT_BATCH_SIZE):
+                    yield arxiv_db.PaperRecord(
+                        id=f"2605.{index:05d}",
+                        title=f"Title {index}",
+                        abstract="Abstract",
+                        categories="math.PR",
+                        authors="A. Author",
+                        date="2026-05-29",
+                    )
+                raise update_arxiv_db.FetchError("late fetch failure")
+
+            with self.assertRaises(update_arxiv_db.FetchError):
+                update_arxiv_db.run_since_update(
+                    config=self.config,
+                    db_path=db_path,
+                    since=dt.date(2026, 5, 29),
+                    fetcher=fetcher,
+                    out=io.StringIO(),
+                )
+
+            with sqlite3.connect(db_path) as conn:
+                count = conn.execute("SELECT COUNT(*) FROM papers").fetchone()[0]
+            self.assertEqual(count, 0)
+
     def test_oai_fetch_parses_records_and_collects_deleted_records(self) -> None:
         payload = b"""<?xml version="1.0" encoding="UTF-8"?>
         <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">

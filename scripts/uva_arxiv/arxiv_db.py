@@ -142,7 +142,9 @@ def get_max_date(conn: sqlite3.Connection) -> str | None:
 def upsert_papers(
     conn: sqlite3.Connection,
     papers: Iterable[PaperRecord | Mapping[str, Any]],
+    commit: bool = True,
 ) -> int:
+    """Upsert paper records, optionally leaving transaction control to the caller."""
     records = [
         paper if isinstance(paper, PaperRecord) else PaperRecord.from_mapping(paper)
         for paper in papers
@@ -160,6 +162,10 @@ def upsert_papers(
             authors = excluded.authors,
             date = excluded.date
     """
-    with conn:
-        conn.executemany(sql, [record.as_db_params() for record in records])
+    params = [record.as_db_params() for record in records]
+    if commit:
+        with conn:
+            conn.executemany(sql, params)
+    else:
+        conn.executemany(sql, params)
     return len(records)
