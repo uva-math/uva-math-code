@@ -915,12 +915,12 @@ If `SINCE` is omitted, the updater defaults to DB max date minus overlap days.
 
 ### Task 8: Verify Phase 1 acceptance criteria and guardrails
 
-- [ ] run `make uva-arxiv-check` and confirm DB schema, DB date stats, source-corpus path, and API-key presence reporting are safe and correct
-- [ ] run `make uva-arxiv-db-since-dry` and confirm it reports the planned date range without writing to the shared DB
-- [ ] run `make uva-arxiv-roster-history` and confirm yearly active counts by role group plus the person-by-year support outputs are produced
-- [ ] run `make uva-arxiv-source-smoke ID=2501.01234` and confirm it is a dry-run smoke command unless explicitly overridden
-- [ ] verify no secrets, fetched sources, SQLite caches, generated publication data, or scratch artifacts are staged for commit
-- [ ] verify this plan still parses as a ralphex task plan with `### Task N:` headers and checkboxes only inside Task sections
+- [x] run `make uva-arxiv-check` and confirm DB schema, DB date stats, source-corpus path, and API-key presence reporting are safe and correct (validated with temporary `ARXIV_DB` / `ARXIV_SOURCES_DIR` overrides because the configured `/Users/leo` shared paths are not mounted in this workspace)
+- [x] run `make uva-arxiv-db-since-dry` and confirm it reports the planned date range without writing to the shared DB (validated with the same temporary DB override; default shared DB path is external to this workspace)
+- [x] run `make uva-arxiv-roster-history` and confirm yearly active counts by role group plus the person-by-year support outputs are produced
+- [x] run `make uva-arxiv-source-smoke ID=2501.01234` and confirm it is a dry-run smoke command unless explicitly overridden
+- [x] verify no secrets, fetched sources, SQLite caches, generated publication data, or scratch artifacts are staged for commit
+- [x] verify this plan still parses as a ralphex task plan with `### Task N:` headers and checkboxes only inside Task sections
 
 ## 14. Phase 1 acceptance criteria
 
