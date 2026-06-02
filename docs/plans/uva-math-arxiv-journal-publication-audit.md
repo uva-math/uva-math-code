@@ -864,12 +864,12 @@ If `SINCE` is omitted, the updater defaults to DB max date minus overlap days.
 
 ### Task 2: Implement shared arXiv DB checks and the `since` updater
 
-- [ ] implement `scripts/uva_arxiv/arxiv_db.py` with read-only/read-write SQLite connections, schema validation, max-date lookup, and schema-preserving upsert helpers
-- [ ] implement `scripts/uva_arxiv/check_env.py` to confirm repo root, shared DB existence/schema/count/min/max dates, shared source directory, safe API-key presence reporting, and ignored `.env` status
-- [ ] implement `scripts/uva_arxiv/update_arxiv_db.py since` with `--dry-run`, explicit/default `--since`, overlap-days handling, `--limit`, and transaction upserts
-- [ ] add OAI-PMH fetch plumbing for whole-archive updates and a conservative API fallback/skeleton without changing the `papers` schema
-- [ ] add tests using a temporary SQLite database and mocked fetch responses for validation, dry-run, and upsert behavior
-- [ ] verify the updater does not run a full shared-DB update or add indexes unless explicitly requested
+- [x] implement `scripts/uva_arxiv/arxiv_db.py` with read-only/read-write SQLite connections, schema validation, max-date lookup, and schema-preserving upsert helpers
+- [x] implement `scripts/uva_arxiv/check_env.py` to confirm repo root, shared DB existence/schema/count/min/max dates, shared source directory, safe API-key presence reporting, and ignored `.env` status
+- [x] implement `scripts/uva_arxiv/update_arxiv_db.py since` with `--dry-run`, explicit/default `--since`, overlap-days handling, `--limit`, and transaction upserts
+- [x] add OAI-PMH fetch plumbing for whole-archive updates and a conservative API fallback/skeleton without changing the `papers` schema
+- [x] add tests using a temporary SQLite database and mocked fetch responses for validation, dry-run, and upsert behavior
+- [x] verify the updater does not run a full shared-DB update or add indexes unless explicitly requested
 
 ### Task 3: Parse current people records and classify role groups
 
