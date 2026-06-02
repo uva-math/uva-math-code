@@ -1,6 +1,6 @@
 # UVA Math arXiv Active People By Academic Year
 
-Generated: 2026-06-02T10:59:46Z
+Generated: 2026-06-02T13:25:50Z
 Initial arXiv start date: 2021-08-01
 As-of date: 2026-06-02
 Rows: 657
@@ -21,9 +21,8 @@ Rows: 657
 |---|---:|
 | current_active_directory_special_case | 15 |
 | current_unpublished_record | 33 |
-| history_parse_error | 36 |
 | inferred_inactive_boundary | 72 |
-| inferred_role_or_position_boundary | 277 |
+| inferred_role_or_position_boundary | 279 |
 | path_person_id_change | 16 |
 
 ## Notice Details
@@ -228,4 +227,4 @@ Rows: 657
 - inferred_role_or_position_boundary: zg7c: faculty/Professor -> faculty/Professor & Chair (_departmentpeople/faculty/zg7c.md) [2017-08-04]
 - inferred_role_or_position_boundary: ji2k: faculty/Professor & Associate Chair -> faculty/Professor (_departmentpeople/faculty/ji2k.md) [2017-08-04]
 - inferred_role_or_position_boundary: mve2x: faculty/Professor -> faculty/Professor  & Associate Chair (_departmentpeople/faculty/mve2x.md) [2017-08-04]
-- Additional notices omitted: 249
+- Additional notices omitted: 215
