@@ -39,18 +39,33 @@ class PaperRecord:
     authors: str
     date: str
 
+    def __post_init__(self) -> None:
+        values = {
+            "id": _as_text(self.id),
+            "title": _as_text(self.title),
+            "abstract": _as_text(self.abstract),
+            "categories": _as_text(self.categories, separator=" "),
+            "authors": _as_text(self.authors),
+            "date": _as_text(self.date),
+        }
+        missing = [key for key in ("id", "date") if not values[key]]
+        if missing:
+            raise ArxivDatabaseError(f"Paper record missing required fields: {', '.join(missing)}")
+        for key, value in values.items():
+            object.__setattr__(self, key, value)
+
     @classmethod
     def from_mapping(cls, mapping: Mapping[str, Any]) -> "PaperRecord":
-        missing = [key for key in ("id", "date") if not str(mapping.get(key, "")).strip()]
+        missing = [key for key in ("id", "date") if not _as_text(mapping.get(key))]
         if missing:
             raise ArxivDatabaseError(f"Paper record missing required fields: {', '.join(missing)}")
         return cls(
-            id=str(mapping["id"]).strip(),
+            id=_as_text(mapping.get("id")),
             title=_as_text(mapping.get("title", "")),
             abstract=_as_text(mapping.get("abstract", "")),
             categories=_as_text(mapping.get("categories", ""), separator=" "),
             authors=_as_text(mapping.get("authors", "")),
-            date=str(mapping["date"]).strip(),
+            date=_as_text(mapping.get("date")),
         )
 
     def as_db_params(self) -> dict[str, str]:
@@ -169,3 +184,27 @@ def upsert_papers(
     else:
         conn.executemany(sql, params)
     return len(records)
+
+
+def delete_papers_by_id(
+    conn: sqlite3.Connection,
+    paper_ids: Iterable[str],
+    commit: bool = True,
+) -> int:
+    """Delete paper records by arXiv ID, optionally leaving transaction control to the caller."""
+    ids = tuple(dict.fromkeys(_as_text(paper_id) for paper_id in paper_ids if _as_text(paper_id)))
+    if not ids:
+        return 0
+
+    def delete_rows() -> int:
+        deleted = 0
+        for paper_id in ids:
+            cursor = conn.execute("DELETE FROM papers WHERE id = ?", (paper_id,))
+            if cursor.rowcount > 0:
+                deleted += cursor.rowcount
+        return deleted
+
+    if commit:
+        with conn:
+            return delete_rows()
+    return delete_rows()

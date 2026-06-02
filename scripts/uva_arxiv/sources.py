@@ -46,6 +46,8 @@ TEXT_EXTENSIONS = {
     ".tex",
     ".txt",
 }
+MODERN_ARXIV_ID_RE = re.compile(r"\d{4}\.\d{4,5}")
+LEGACY_ARXIV_ID_RE = re.compile(r"[A-Za-z][A-Za-z0-9-]*(?:\.[A-Za-z][A-Za-z0-9-]*)?/\d{7}")
 
 HttpGet = Callable[[str], bytes]
 Sleeper = Callable[[float], None]
@@ -108,7 +110,13 @@ def normalize_arxiv_id(value: str) -> str:
     if arxiv_id.endswith(".pdf"):
         arxiv_id = arxiv_id[:-4]
     arxiv_id = strip_version(arxiv_id.strip("/"))
-    if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._+/-]*", arxiv_id):
+    path_parts = arxiv_id.split("/")
+    if any(part in {"", ".", ".."} for part in path_parts):
+        raise SourceFetchError(f"unsafe arXiv ID: {value!r}")
+    if not (
+        MODERN_ARXIV_ID_RE.fullmatch(arxiv_id)
+        or LEGACY_ARXIV_ID_RE.fullmatch(arxiv_id)
+    ):
         raise SourceFetchError(f"unsafe arXiv ID: {value!r}")
     return arxiv_id
 

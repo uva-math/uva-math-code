@@ -28,6 +28,21 @@ class SourceFetchTests(unittest.TestCase):
     def test_safe_source_dir_names_normalize_versions_and_old_ids(self) -> None:
         self.assertEqual(sources.safe_source_dir_name("2501.01234v2"), "2501.01234")
         self.assertEqual(sources.safe_source_dir_name("math/0301234"), "math__0301234")
+        self.assertEqual(sources.safe_source_dir_name("math.AG/0301234v2"), "math.AG__0301234")
+        self.assertEqual(sources.safe_source_dir_name("hep-th/9901001v3"), "hep-th__9901001")
+
+    def test_source_urls_reject_path_traversal_like_ids(self) -> None:
+        unsafe_ids = (
+            "a/../../b",
+            "2501/../01234",
+            "math//0301234",
+            "2501.01234/extra",
+        )
+
+        for arxiv_id in unsafe_ids:
+            with self.subTest(arxiv_id=arxiv_id):
+                with self.assertRaises(sources.SourceFetchError):
+                    sources.eprint_url(arxiv_id, endpoint="https://example.test/e-print")
 
     def test_fetch_dry_run_does_not_create_target_or_call_network(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:

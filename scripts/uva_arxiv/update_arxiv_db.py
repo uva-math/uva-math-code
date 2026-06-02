@@ -283,25 +283,35 @@ def fetch_api_records(
     limit = validate_limit(limit)
     http_get = http_get or default_http_get
     submitted_start = since.strftime("%Y%m%d") + "0000"
-    params = {
-        "search_query": f"submittedDate:[{submitted_start} TO *]",
-        "sortBy": "submittedDate",
-        "sortOrder": "ascending",
-        "start": "0",
-        "max_results": str(min(limit, 100)),
-    }
-    root = _xml_from_bytes(
-        http_get(endpoint + "?" + urllib.parse.urlencode(params)),
-        "arXiv API",
-    )
     yielded = 0
-    for entry in _children(root, "entry"):
-        paper = _api_entry_to_paper(entry)
-        if paper is None:
-            continue
-        yield paper
-        yielded += 1
-        if yielded >= limit:
+    start = 0
+
+    while yielded < limit:
+        max_results = min(limit - yielded, 100)
+        params = {
+            "search_query": f"submittedDate:[{submitted_start} TO *]",
+            "sortBy": "submittedDate",
+            "sortOrder": "ascending",
+            "start": str(start),
+            "max_results": str(max_results),
+        }
+        root = _xml_from_bytes(
+            http_get(endpoint + "?" + urllib.parse.urlencode(params)),
+            "arXiv API",
+        )
+        entries = _children(root, "entry")
+        if not entries:
+            return
+        start += len(entries)
+        for entry in entries:
+            paper = _api_entry_to_paper(entry)
+            if paper is None:
+                continue
+            yield paper
+            yielded += 1
+            if yielded >= limit:
+                return
+        if len(entries) < max_results:
             return
 
 
@@ -450,6 +460,11 @@ def run_since_update(
             for batch in _record_batches(fetch_records(effective_since, limit)):
                 fetched += len(batch)
                 upserted += arxiv_db.upsert_papers(conn, batch, commit=False)
+            arxiv_db.delete_papers_by_id(
+                conn,
+                (record.id for record in deleted_records),
+                commit=False,
+            )
             deleted_recorded = record_deleted_oai_records(
                 config.cache_dir / "arxiv_update_state.sqlite",
                 deleted_records,

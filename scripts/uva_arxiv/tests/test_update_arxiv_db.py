@@ -6,6 +6,7 @@ import os
 import sqlite3
 import tempfile
 import unittest
+import urllib.parse
 from dataclasses import replace
 from pathlib import Path
 
@@ -197,7 +198,7 @@ class SinceUpdaterTests(unittest.TestCase):
         self.assertEqual(deleted_records[0].id, "2605.00002")
         self.assertEqual(deleted_records[0].identifier, "oai:arXiv.org:2605.00002")
 
-    def test_since_update_records_deleted_oai_records_in_sidecar_cache(self) -> None:
+    def test_since_update_records_and_removes_deleted_oai_records(self) -> None:
         payload = b"""<?xml version="1.0" encoding="UTF-8"?>
         <OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/">
           <ListRecords>
@@ -243,7 +244,7 @@ class SinceUpdaterTests(unittest.TestCase):
 
             self.assertEqual(result.deleted_recorded, 1)
             self.assertEqual(deleted, [("2605.00002", "2026-05-31", "oai:arXiv.org:2605.00002")])
-            self.assertEqual(remaining, 1)
+            self.assertEqual(remaining, 0)
         finally:
             update_arxiv_db.default_http_get = original_get
 
@@ -417,6 +418,45 @@ class SinceUpdaterTests(unittest.TestCase):
             self.assertEqual(result.upserted, 1)
         finally:
             update_arxiv_db.default_http_get = original_get
+
+    def test_api_fetch_paginates_past_first_100_results(self) -> None:
+        calls: list[tuple[int, int]] = []
+
+        def api_payload(start: int, count: int) -> bytes:
+            entries = []
+            for index in range(start, start + count):
+                entries.append(
+                    f"""
+                    <entry>
+                      <id>http://arxiv.org/abs/2605.{index:05d}v1</id>
+                      <published>2026-05-31T00:00:00Z</published>
+                      <title>Title {index}</title>
+                      <summary>Abstract {index}</summary>
+                      <author><name>Author {index}</name></author>
+                      <category term="math.NT" />
+                    </entry>
+                    """
+                )
+            return ('<feed xmlns="http://www.w3.org/2005/Atom">' + "".join(entries) + "</feed>").encode()
+
+        def fake_get(url: str) -> bytes:
+            query = urllib.parse.parse_qs(urllib.parse.urlsplit(url).query)
+            start = int(query["start"][0])
+            max_results = int(query["max_results"][0])
+            calls.append((start, max_results))
+            return api_payload(start, max_results)
+
+        records = list(
+            update_arxiv_db.fetch_api_records(
+                dt.date(2026, 5, 29),
+                limit=150,
+                http_get=fake_get,
+            )
+        )
+
+        self.assertEqual(calls, [(0, 100), (100, 50)])
+        self.assertEqual(len(records), 150)
+        self.assertEqual(records[-1].id, "2605.00149")
 
     def test_check_env_reports_safe_status_without_secret_values(self) -> None:
         original_s2 = os.environ.get("S2_API_KEY")

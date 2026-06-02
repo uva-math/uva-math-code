@@ -98,6 +98,53 @@ class ArxivDatabaseTests(unittest.TestCase):
 
             self.assertEqual(tuple(row), ("Updated", "New abstract", "math.PR", "A. Author", "2025-01-02"))
 
+    def test_paper_record_validation_applies_to_direct_instances(self) -> None:
+        record = arxiv_db.PaperRecord(
+            id=" 2501.00001 ",
+            title=" Title ",
+            abstract=" Abstract ",
+            categories=("math.PR", "math.CO"),
+            authors=("A. Author", "B. Author"),
+            date=" 2025-01-01 ",
+        )
+
+        self.assertEqual(record.id, "2501.00001")
+        self.assertEqual(record.title, "Title")
+        self.assertEqual(record.categories, "math.PR math.CO")
+        self.assertEqual(record.authors, "A. Author, B. Author")
+        self.assertEqual(record.date, "2025-01-01")
+        with self.assertRaises(arxiv_db.ArxivDatabaseError):
+            arxiv_db.PaperRecord(
+                id="",
+                title="Title",
+                abstract="Abstract",
+                categories="math.PR",
+                authors="A. Author",
+                date="2025-01-01",
+            )
+        with self.assertRaises(arxiv_db.ArxivDatabaseError):
+            arxiv_db.PaperRecord(
+                id="2501.00001",
+                title="Title",
+                abstract="Abstract",
+                categories="math.PR",
+                authors="A. Author",
+                date="",
+            )
+
+    def test_mapping_records_reject_none_required_fields(self) -> None:
+        with self.assertRaises(arxiv_db.ArxivDatabaseError):
+            arxiv_db.PaperRecord.from_mapping(
+                {
+                    "id": None,
+                    "title": "Title",
+                    "abstract": "Abstract",
+                    "categories": "math.PR",
+                    "authors": "A. Author",
+                    "date": "2025-01-01",
+                }
+            )
+
     def test_schema_validation_rejects_missing_required_column(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             db_path = Path(tmp) / "bad.sqlite"
