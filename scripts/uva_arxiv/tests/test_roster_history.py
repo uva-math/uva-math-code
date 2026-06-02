@@ -149,6 +149,60 @@ def run_git(repo_root: Path, *args: str, date_value: str | None = None) -> None:
 
 
 class RosterHistoryInferenceTests(unittest.TestCase):
+    def test_historical_record_parser_tolerates_legacy_people_file_shapes(self) -> None:
+        with_body = textwrap.dedent(
+            """
+            ---
+            UVA_id: clh4xd
+            lastname: Huneke
+            name: Craig
+            general_position: faculty
+            position: Marvin Rosenblum Professor & Chair
+            information: |
+              Commutative algebra text below the YAML header should not be treated as malformed.
+            ---
+            """
+        ).lstrip()
+        record_with_body = roster_history.parse_historical_record(with_body, "_departmentpeople/clh4xd.md")
+        self.assertEqual(record_with_body.person_id, "clh4xd")
+        self.assertEqual(record_with_body.display_name, "Craig Huneke")
+        self.assertEqual(record_with_body.role_group, "faculty")
+
+        without_markers = textwrap.dedent(
+            """
+            UVA_id: ecu4xw
+            lastname: Mazzoli
+            name: Filippo
+            general_position: postdoc
+            position: Whyburn Research Associate
+            """
+        ).lstrip()
+        record_without_markers = roster_history.parse_historical_record(
+            without_markers,
+            "_departmentpeople/postdocs/ecu4xw.md",
+        )
+        self.assertEqual(record_without_markers.person_id, "ecu4xw")
+        self.assertEqual(record_without_markers.role_group, "postdoc")
+
+        missing_close_and_id = textwrap.dedent(
+            """
+            ---
+            UVA_id:
+            lastname: Sanchez
+            name: Eloisa
+            general_position: gradstudent
+            position: Graduate Student
+            personal_page
+            """
+        ).lstrip()
+        record_missing_close_and_id = roster_history.parse_historical_record(
+            missing_close_and_id,
+            "_departmentpeople/gradstudents/aus8ng.md",
+        )
+        self.assertEqual(record_missing_close_and_id.person_id, "aus8ng")
+        self.assertEqual(record_missing_close_and_id.display_name, "Eloisa Sanchez")
+        self.assertEqual(record_missing_close_and_id.role_group, "grad")
+
     def test_interval_inference_handles_role_change_unpublished_and_emeritus_moves(self) -> None:
         faculty_path = "_departmentpeople/faculty/abc1de.md"
         emeritus_path = "_departmentpeople/emeriti/abc1de.md"
@@ -407,6 +461,30 @@ abc1de:
         self.assertEqual(events[-2].old_path, "_departmentpeople/faculty/abc1de.md")
         self.assertEqual(events[-2].path, "_departmentpeople/emeriti/abc1de.md")
         self.assertEqual(events[-1].record.role_group, "emeritus")
+
+    def test_git_history_events_skips_empty_placeholder_revisions(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            run_git(root, "init")
+            run_git(root, "config", "user.email", "math@example.edu")
+            run_git(root, "config", "user.name", "Math Test")
+            run_git(root, "config", "commit.gpgsign", "false")
+
+            faculty_path = root / "_departmentpeople" / "faculty" / "abc1de.md"
+            faculty_path.parent.mkdir(parents=True)
+            faculty_path.write_text("\n", encoding="utf-8")
+            run_git(root, "add", "_departmentpeople/faculty/abc1de.md")
+            run_git(root, "commit", "-m", "empty placeholder", date_value="2021-08-09")
+
+            write_history_person(faculty_path, "abc1de", "Assistant Professor")
+            run_git(root, "add", "_departmentpeople/faculty/abc1de.md")
+            run_git(root, "commit", "-m", "fill placeholder", date_value="2021-08-10")
+
+            events, notices = roster_history.git_history_events(root)
+
+        self.assertEqual(notices, [])
+        self.assertEqual(len(events), 1)
+        self.assertEqual(events[0].record.person_id, "abc1de")
 
     def test_academic_year_expansion_clips_to_initial_start_and_windows(self) -> None:
         rows = roster_history.expand_active_years(

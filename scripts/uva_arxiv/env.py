@@ -183,8 +183,19 @@ def _parse_yaml_mapping(
             else:
                 parsed[key] = None
         else:
-            parsed[key] = _parse_scalar(value)
-            index += 1
+            scalar_value = value.strip()
+            if scalar_value in {"|", ">"}:
+                index += 1
+                block_lines: list[str] = []
+                while index < len(lines) and lines[index][0] > indent:
+                    _child_indent, child_stripped, _child_line_number = lines[index]
+                    block_lines.append(child_stripped)
+                    index += 1
+                separator = "\n" if scalar_value == "|" else " "
+                parsed[key] = separator.join(block_lines)
+            else:
+                parsed[key] = _parse_scalar(value)
+                index += 1
     return parsed, index
 
 
@@ -243,7 +254,10 @@ def load_yaml_text(text: str, source: str = "YAML") -> Any:
     except ModuleNotFoundError:
         return _parse_simple_yaml(text)
 
-    loaded = yaml.safe_load(text)
+    try:
+        loaded = yaml.safe_load(text)
+    except yaml.YAMLError:
+        return _parse_simple_yaml(text)
     if loaded is None:
         return {}
     return loaded

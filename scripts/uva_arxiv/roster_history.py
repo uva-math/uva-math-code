@@ -241,17 +241,63 @@ def directory_key_for_path(path: str) -> str:
 
 def front_matter_from_text(text: str) -> str:
     lines = text.splitlines()
-    if not lines or lines[0].strip() != "---":
-        raise RosterHistoryError("missing YAML front matter opening marker")
-    for index, line in enumerate(lines[1:], start=1):
+    first_content_index = None
+    for index, line in enumerate(lines):
+        if line.strip():
+            first_content_index = index
+            break
+    if first_content_index is None:
+        raise RosterHistoryError("empty people file")
+
+    if lines[first_content_index].strip() != "---":
+        return "\n".join(lines[first_content_index:])
+
+    for index, line in enumerate(lines[first_content_index + 1 :], start=first_content_index + 1):
         if line.strip() == "---":
-            return "\n".join(lines[1:index])
-    raise RosterHistoryError("missing YAML front matter closing marker")
+            return "\n".join(lines[first_content_index + 1 : index])
+    return "\n".join(lines[first_content_index + 1 :])
+
+
+def repair_historical_front_matter_yaml(text: str) -> str:
+    repaired_lines: list[str] = []
+    for raw_line in text.splitlines():
+        stripped = raw_line.strip()
+        if (
+            not stripped
+            or stripped.startswith("#")
+            or stripped.startswith("- ")
+            or ":" in stripped
+        ):
+            repaired_lines.append(raw_line)
+            continue
+        possible_key = stripped.replace("_", "").replace("-", "")
+        if possible_key and possible_key[0].isalpha() and possible_key.isalnum():
+            indent = raw_line[: len(raw_line) - len(raw_line.lstrip(" "))]
+            repaired_lines.append(f"{indent}{stripped}:")
+        else:
+            repaired_lines.append(raw_line)
+    return "\n".join(repaired_lines)
+
+
+def parse_historical_front_matter(text: str) -> dict[str, Any]:
+    front_matter_text = front_matter_from_text(text)
+    try:
+        return roster.parse_front_matter(front_matter_text)
+    except roster.RosterError as original_exc:
+        repaired = repair_historical_front_matter_yaml(front_matter_text)
+        if repaired != front_matter_text:
+            try:
+                return roster.parse_front_matter(repaired)
+            except roster.RosterError:
+                pass
+        raise original_exc
 
 
 def parse_historical_record(text: str, repo_path: str) -> HistoricalPersonRecord:
-    front_matter = roster.parse_front_matter(front_matter_from_text(text))
+    front_matter = parse_historical_front_matter(text)
     person_id = roster.clean_text(front_matter.get("UVA_id") or front_matter.get("uva_id"))
+    if not person_id:
+        person_id = Path(repo_path).stem
     if not person_id:
         raise RosterHistoryError("missing UVA_id")
 
@@ -340,11 +386,14 @@ def git_history_events(repo_root: Path) -> tuple[list[HistoryFileEvent], list[Hi
                 content = _run_git(repo_root, ["show", f"{commit}:{path}"])
                 record = parse_historical_record(content, path)
             except (subprocess.CalledProcessError, RosterHistoryError, roster.RosterError) as exc:
+                message = str(exc)
+                if message == "empty people file":
+                    continue
                 notices.append(
                     HistoryNotice(
                         person_id=Path(path).stem,
                         notice_type="history_parse_error",
-                        message=str(exc),
+                        message=message,
                         path=path,
                         commit=commit,
                         date=commit_date,
@@ -712,9 +761,9 @@ def role_order(role_group: str) -> int:
         return len(ROLE_GROUPS)
 
 
-def row_sort_key(row: ActiveYearRow) -> tuple[int, date, str]:
+def row_sort_key(row: ActiveYearRow) -> tuple[int, date, date, str]:
     source_priority = {"manual": 3, "git-history": 2, "current-roster": 1}.get(row.source, 0)
-    return source_priority, row.start_date, row.position
+    return source_priority, row.start_date, row.end_date, row.position
 
 
 def merge_active_year_rows(left: ActiveYearRow, right: ActiveYearRow) -> ActiveYearRow:
