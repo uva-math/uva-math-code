@@ -141,6 +141,18 @@ def source_dir_for_id(sources_root: Path, arxiv_id: str) -> Path:
     return Path(sources_root) / safe_source_dir_name(arxiv_id)
 
 
+def existing_source_files(target_dir: Path) -> tuple[str, ...]:
+    if not target_dir.is_dir():
+        return ()
+    return tuple(
+        sorted(
+            str(path.relative_to(target_dir))
+            for path in target_dir.rglob("*")
+            if path.is_file()
+        )
+    )
+
+
 def eprint_url(arxiv_id: str, endpoint: str = EPRINT_ENDPOINT) -> str:
     quoted_id = urllib.parse.quote(normalize_arxiv_id(arxiv_id), safe="/.")
     return endpoint.rstrip("/") + "/" + quoted_id
@@ -322,13 +334,7 @@ def fetch_source(
     sources_root = Path(sources_dir or config.arxiv_sources_dir)
     target_dir = sources_root / safe_id
 
-    existing_files = tuple(
-        sorted(
-            str(path.relative_to(target_dir))
-            for path in target_dir.rglob("*")
-            if path.is_file()
-        )
-    ) if target_dir.is_dir() else ()
+    existing_files = existing_source_files(target_dir)
     if dry_run:
         status = "exists" if existing_files else "would_fetch"
         return SourceFetchResult(
@@ -378,7 +384,8 @@ def fetch_source(
     try:
         source_format, files_written = unpack_source_bytes(payload, temp_dir)
         if target_dir.exists():
-            if not force:
+            current_files = existing_source_files(target_dir)
+            if current_files and not force:
                 shutil.rmtree(temp_dir)
                 return SourceFetchResult(
                     arxiv_id=normalized_id,
@@ -388,7 +395,7 @@ def fetch_source(
                     dry_run=False,
                     status="exists",
                     source_format="existing",
-                    files_written=existing_files,
+                    files_written=current_files,
                 )
             shutil.rmtree(target_dir)
         temp_dir.rename(target_dir)

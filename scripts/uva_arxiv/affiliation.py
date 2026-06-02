@@ -85,15 +85,6 @@ def _source_kind(path: Path) -> str:
     return "text"
 
 
-def _iter_text_files(source_dir: Path) -> Iterable[Path]:
-    for path in sorted(source_dir.rglob("*")):
-        if not path.is_file():
-            continue
-        if path.stat().st_size > MAX_TEXT_FILE_BYTES:
-            continue
-        yield path
-
-
 def _read_text(path: Path) -> str | None:
     payload = path.read_bytes()
     if b"\x00" in payload[:4096]:
@@ -148,7 +139,13 @@ def scan_source_dir(
 
     matches: list[AffiliationMatch] = []
     checked_files = 0
-    for path in _iter_text_files(source_dir):
+    source_file_count = 0
+    for path in sorted(source_dir.rglob("*")):
+        if not path.is_file():
+            continue
+        source_file_count += 1
+        if path.stat().st_size > MAX_TEXT_FILE_BYTES:
+            continue
         text = _read_text(path)
         if text is None:
             continue
@@ -183,6 +180,25 @@ def scan_source_dir(
 
     positive_count = sum(1 for match in matches if match.kind == "positive")
     negative_count = sum(1 for match in matches if match.kind == "negative")
+    if checked_files == 0:
+        evidence = "unreadable_source" if source_file_count else "empty_source"
+        notes = (
+            "source directory has files, but none were readable text files"
+            if source_file_count
+            else "source directory contains no files"
+        )
+        return AffiliationScanResult(
+            arxiv_id=normalized_id,
+            safe_id=safe_id,
+            source_dir=str(source_dir),
+            evidence=evidence,
+            checked_files=0,
+            positive_count=0,
+            negative_count=0,
+            matches=(),
+            notes=notes,
+        )
+
     evidence = _evidence_state(positive_count, negative_count, missing_source=False)
     notes = (
         "absence of UVA evidence is an evidence state, not a rejection reason"

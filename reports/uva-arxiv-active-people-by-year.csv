@@ -1,7 +1,7 @@
 person_id,display_name,academic_year,start_date,end_date,role_group,position,source,confidence,current_active
 aa4cr,Abdelmalek Abdesselam,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
 asr3x,Andrei Rapinchuk,2021-2022,2021-08-01,2022-07-31,faculty,McConnell-Bernard Professor of Mathematics,git-history,commit-date,true
-brh5c,Benjamin Hayes,2021-2022,2022-06-09,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+brh5c,Benjamin Hayes,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
 hcg3m,Christian Gromoll,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
 cmr3hk,Christian Reidys,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
 clh4xd,Craig Huneke,2021-2022,2021-08-01,2022-07-31,faculty,Marvin Rosenblum Professor,git-history,commit-date,true
@@ -9,21 +9,21 @@ des5e,David Sherman,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,
 eg4va,Evangelia Gazaki,2021-2022,2021-08-01,2022-07-31,faculty,Assistant Professor,git-history,commit-date,true
 iwh,Ira Herbst,2021-2022,2021-08-01,2021-08-20,faculty,Professor and Associate Chair,git-history,commit-date,true
 jlm6cj,Jennifer Morse,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
-ji2k,John Imbrie,2021-2022,2021-08-20,2022-07-31,faculty,Professor,git-history,commit-date,true
+ji2k,John Imbrie,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
 jeb2md,Julie Bergner,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
-jf8dc,Juraj Földes,2021-2022,2022-06-09,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+jf8dc,Juraj Földes,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
 khp3k,Karen Parshall,2021-2022,2021-08-01,2022-07-31,faculty,Commonwealth Professor of Mathematics and History,git-history,commit-date,true
-ko5wk,Ken Ono,2021-2022,2022-07-31,2022-07-31,faculty,Chairman and Marvin Rosenblum Professor of Mathematics,git-history,commit-date,true
+ko5wk,Ken Ono,2021-2022,2021-08-01,2022-07-31,faculty,Chairman and Marvin Rosenblum Professor of Mathematics,git-history,commit-date,true
 lap5r,Leonid Petrov,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
 mve2x,Mikhail Ershov,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
 njk4x,Nicholas Kuhn,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
 pa8e,Peter Abramenko,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
 ph7ph,Peter Humphries,2021-2022,2021-08-01,2022-07-31,faculty,Assistant Professor,git-history,commit-date,true
-sm4cw,Sara Maloni,2021-2022,2022-06-09,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
+sm4cw,Sara Maloni,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
 vk6e,Slava Krushkal,2021-2022,2021-08-01,2022-07-31,faculty,Professor,git-history,commit-date,true
 tam7b,Tai Melcher,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
 tmk5a,Thomas Koberda,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
-tmark,Thomas Mark,2021-2022,2021-08-20,2022-07-31,faculty,Professor and Associate Chair,git-history,commit-date,true
+tmark,Thomas Mark,2021-2022,2021-08-01,2022-07-31,faculty,Professor and Associate Chair,git-history,commit-date,true
 ww9c,Weiqiang Wang,2021-2022,2021-08-01,2022-07-31,faculty,Gordon Whyburn Professor of Mathematics,git-history,commit-date,true
 yqd3p,Yen Do,2021-2022,2021-08-01,2022-07-31,faculty,Associate Professor,git-history,commit-date,true
 yq2dw,You Qi,2021-2022,2021-08-01,2022-07-31,faculty,Assistant Professor,git-history,commit-date,true
@@ -39,7 +39,7 @@ lx5af,Liaosha Xu,2021-2022,2021-08-20,2022-07-31,postdoc,Research Associate,git-
 waj9cr,Mark Pengitore,2021-2022,2021-08-20,2022-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
 ms3wq,Mouhamadou Sy,2021-2022,2021-08-01,2021-08-20,postdoc,Whyburn Research Associate,git-history,commit-date,false
 xce4ux,Neelam Saikia,2021-2022,2021-08-20,2022-07-31,postdoc,Visiting Scholar,git-history,commit-date,false
-tp2tt,Thomas Polstra,2021-2022,2021-08-20,2022-07-31,postdoc,Visiting Scholar,git-history,commit-date,false
+tp2tt,Thomas Polstra,2021-2022,2021-08-01,2022-07-31,postdoc,Visiting Scholar,git-history,commit-date,false
 ws7jx,Walker Stern,2021-2022,2021-08-01,2022-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
 wt8zj,Wei-Lun Tsai,2021-2022,2021-08-01,2022-07-31,postdoc,Research Associate and Lecturer,git-history,commit-date,false
 eqr8nm,William Balderrama,2021-2022,2021-08-20,2022-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
@@ -105,8 +105,8 @@ hdj4nd,Daniel James,2021-2022,2021-08-20,2022-07-31,agfm_other,"Assistant Profes
 ds5nd,Dmitriy Sonkin,2021-2022,2021-08-01,2022-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
 ed8bg,Evangelos Dimou,2021-2022,2021-08-01,2022-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 it2h,Irina Timchenko,2021-2022,2021-08-01,2021-08-20,agfm_other,Lecturer,git-history,commit-date,false
-jjh2b,Jeffrey Holt,2021-2022,2022-07-31,2022-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
-jsr2pz,Jim Rolf,2021-2022,2022-06-09,2022-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+jjh2b,Jeffrey Holt,2021-2022,2021-08-01,2022-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
+jsr2pz,Jim Rolf,2021-2022,2021-08-01,2022-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
 kc5kv,Kristina Cernekova,2021-2022,2021-08-01,2022-07-31,agfm_other,Lecturer,git-history,commit-date,true
 mas3er,Mark Schrecengost,2021-2022,2021-08-01,2021-08-20,agfm_other,Lecturer,git-history,commit-date,false
 zka4tz,Matt Demers,2021-2022,2021-08-20,2022-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
@@ -139,11 +139,11 @@ cmr3hk,Christian Reidys,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-hi
 des5e,David Sherman,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
 eg4va,Evangelia Gazaki,2022-2023,2022-08-01,2023-07-31,faculty,Assistant Professor,git-history,commit-date,true
 jlm6cj,Jennifer Morse,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
-ji2k,John Imbrie,2022-2023,2022-12-22,2023-07-31,faculty,Interim Chair and Professor,git-history,commit-date,true
+ji2k,John Imbrie,2022-2023,2022-08-01,2023-07-31,faculty,Interim Chair and Professor,git-history,commit-date,true
 jeb2md,Julie Bergner,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
 jf8dc,Juraj Földes,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
 khp3k,Karen Parshall,2022-2023,2022-08-01,2023-07-31,faculty,Commonwealth Professor of Mathematics and History,git-history,commit-date,true
-ko5wk,Ken Ono,2022-2023,2022-12-22,2023-07-31,faculty,STEM Advisor to the Provost and Marvin Rosenblum Professor of Mathematics,git-history,commit-date,true
+ko5wk,Ken Ono,2022-2023,2022-08-01,2023-07-31,faculty,STEM Advisor to the Provost and Marvin Rosenblum Professor of Mathematics,git-history,commit-date,true
 lap5r,Leonid Petrov,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
 mve2x,Mikhail Ershov,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
 njk4x,Nicholas Kuhn,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
@@ -152,19 +152,19 @@ ph7ph,Peter Humphries,2022-2023,2022-08-01,2023-07-31,faculty,Assistant Professo
 sm4cw,Sara Maloni,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
 vk6e,Slava Krushkal,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
 tam7b,Tai Melcher,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
-tmk5a,Thomas Koberda,2022-2023,2022-08-08,2023-07-31,faculty,Associate Professor and Associate Chair,git-history,commit-date,true
-tmark,Thomas Mark,2022-2023,2022-08-08,2023-07-31,faculty,Professor,git-history,commit-date,true
+tmk5a,Thomas Koberda,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor and Associate Chair,git-history,commit-date,true
+tmark,Thomas Mark,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,true
 ww9c,Weiqiang Wang,2022-2023,2022-08-01,2023-07-31,faculty,Gordon Whyburn Professor of Mathematics,git-history,commit-date,true
 yqd3p,Yen Do,2022-2023,2022-08-01,2023-07-31,faculty,Associate Professor,git-history,commit-date,true
 yq2dw,You Qi,2022-2023,2022-08-01,2023-07-31,faculty,Assistant Professor,git-history,commit-date,true
 zg7c,Zoran Grujic,2022-2023,2022-08-01,2023-07-31,faculty,Professor,git-history,commit-date,false
-szq3yx,Beth Branman,2022-2023,2023-02-01,2023-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
+szq3yx,Beth Branman,2022-2023,2022-08-08,2023-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
 cu9da,Charlotte Ure,2022-2023,2022-08-01,2023-07-31,postdoc,Research Associate and Lecturer,git-history,commit-date,false
-dku8jc,Daniel Slonim,2022-2023,2023-01-23,2023-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+dku8jc,Daniel Slonim,2022-2023,2022-08-08,2023-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
 ecu4xw,Filippo Mazzoli,2022-2023,2022-08-01,2023-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
 gu8gs,Gennady Uraltsev,2022-2023,2022-08-01,2023-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
 nsr6sf,Joe Webster,2022-2023,2022-08-01,2023-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
-wbt4qn,Kang Lu,2022-2023,2023-01-23,2023-07-31,postdoc,Mary Ann Pitts Research Associate and Lecturer,git-history,commit-date,false
+wbt4qn,Kang Lu,2022-2023,2022-08-08,2023-07-31,postdoc,Mary Ann Pitts Research Associate and Lecturer,git-history,commit-date,false
 lx5af,Liaosha Xu,2022-2023,2023-01-13,2023-07-31,postdoc,Visiting Scholar,git-history,commit-date,false
 waj9cr,Mark Pengitore,2022-2023,2022-08-01,2023-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
 xce4ux,Neelam Saikia,2022-2023,2022-08-01,2022-08-08,postdoc,Visiting Scholar,git-history,commit-date,false
@@ -191,7 +191,7 @@ dkp7tpj,Donnelly Phillips,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,
 arj9zs,Dounia Lazreq,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
 egm3zq,Eleanor McSpirit,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,false
 thp5uc,Eleftherios Chatzitheodoridis,2022-2023,2022-08-01,2023-07-31,grad,Graduate Student,git-history,commit-date,true
-aus8ng,Eloisa Sanchez,2022-2023,2022-08-17,2023-07-31,grad,Bridge to the Doctorate Student,git-history,commit-date,false
+aus8ng,Eloisa Sanchez,2022-2023,2022-08-01,2023-07-31,grad,Bridge to the Doctorate Student,git-history,commit-date,false
 hmy3tf,Felipe Flores Llarena,2022-2023,2022-08-18,2023-07-31,grad,Graduate Student,git-history,commit-date,true
 _Llarena,Felipe Ignacio Flores Llarena,2022-2023,2022-08-08,2022-08-08,grad,Graduate Student,git-history,commit-date,false
 tmpIDLlarena,Felipe Ignacio Flores Llarena,2022-2023,2022-08-08,2022-08-18,grad,Graduate Student,git-history,commit-date,false
@@ -241,11 +241,11 @@ jjh2b,Jeffrey Holt,2022-2023,2022-08-01,2023-07-31,agfm_other,"Professor, Genera
 jsr2pz,Jim Rolf,2022-2023,2022-08-01,2023-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
 tmpIDNaab,Keith Naab,2022-2023,2022-08-08,2022-08-18,agfm_other,Lecturer,git-history,commit-date,false
 axv9hp,Keith Nabb,2022-2023,2022-08-18,2023-07-31,agfm_other,Lecturer,git-history,commit-date,false
-kc5kv,Kristina Cernekova,2022-2023,2022-08-18,2023-07-31,agfm_other,General Faculty Lecturer,git-history,commit-date,true
+kc5kv,Kristina Cernekova,2022-2023,2022-08-01,2023-07-31,agfm_other,General Faculty Lecturer,git-history,commit-date,true
 zka4tz,Matt Demers,2022-2023,2022-08-01,2023-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
 mrg9ap,Matthew Gagne,2022-2023,2022-08-01,2023-07-31,agfm_other,Lecturer,git-history,commit-date,false
 wec8v,Wendi Dass,2022-2023,2022-08-01,2023-07-31,agfm_other,Lecturer,git-history,commit-date,true
-zg8bf,Zach Gates,2022-2023,2022-08-18,2023-07-31,agfm_other,General Faculty Lecturer,git-history,commit-date,false
+zg8bf,Zach Gates,2022-2023,2022-08-08,2023-07-31,agfm_other,General Faculty Lecturer,git-history,commit-date,false
 bdm3f,Barbara MacCluer,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
 cfd5z,Charles Dunkl,2022-2023,2022-08-01,2023-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
 clh4xd,Craig Huneke,2022-2023,2022-08-01,2023-07-31,emeritus,Marvin Rosenblum Professor Emeritus,git-history,commit-date,true
@@ -272,8 +272,8 @@ des5e,David Sherman,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,
 eg4va,Evangelia Gazaki,2023-2024,2023-08-01,2024-07-31,faculty,Assistant Professor,git-history,commit-date,true
 mbp6pj,J.D. Quigley,2023-2024,2023-08-15,2024-07-31,faculty,Assistant Professor,git-history,commit-date,true
 jlm6cj,Jennifer Morse,2023-2024,2023-08-01,2024-07-31,faculty,Professor,git-history,commit-date,true
-ji2k,John Imbrie,2023-2024,2023-08-15,2024-07-31,faculty,Professor,git-history,commit-date,true
-jeb2md,Julie Bergner,2023-2024,2023-08-22,2024-07-31,faculty,Professor and Associate Chair,git-history,commit-date,true
+ji2k,John Imbrie,2023-2024,2023-08-01,2024-07-31,faculty,Professor,git-history,commit-date,true
+jeb2md,Julie Bergner,2023-2024,2023-08-01,2024-07-31,faculty,Professor and Associate Chair,git-history,commit-date,true
 jf8dc,Juraj Földes,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
 khp3k,Karen Parshall,2023-2024,2023-08-01,2023-08-15,faculty,Commonwealth Professor of Mathematics and History,git-history,commit-date,true
 ko5wk,Ken Ono,2023-2024,2023-08-01,2024-07-31,faculty,STEM Advisor to the Provost and Marvin Rosenblum Professor of Mathematics,git-history,commit-date,true
@@ -285,8 +285,8 @@ ph7ph,Peter Humphries,2023-2024,2023-08-01,2024-07-31,faculty,Assistant Professo
 sm4cw,Sara Maloni,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
 vk6e,Slava Krushkal,2023-2024,2023-08-01,2024-07-31,faculty,Professor,git-history,commit-date,true
 tam7b,Tai Melcher,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
-tmk5a,Thomas Koberda,2023-2024,2023-08-21,2024-07-31,faculty,Professor,git-history,commit-date,true
-tmark,Thomas Mark,2023-2024,2023-08-15,2024-07-31,faculty,Professor and Chair,git-history,commit-date,true
+tmk5a,Thomas Koberda,2023-2024,2023-08-01,2024-07-31,faculty,Professor,git-history,commit-date,true
+tmark,Thomas Mark,2023-2024,2023-08-01,2024-07-31,faculty,Professor and Chair,git-history,commit-date,true
 ww9c,Weiqiang Wang,2023-2024,2023-08-01,2024-07-31,faculty,Gordon Whyburn Professor of Mathematics,git-history,commit-date,true
 yqd3p,Yen Do,2023-2024,2023-08-01,2024-07-31,faculty,Associate Professor,git-history,commit-date,true
 yq2dw,You Qi,2023-2024,2023-08-01,2024-07-31,faculty,Assistant Professor,git-history,commit-date,true
@@ -381,7 +381,7 @@ jrd6an,Ziming Chen,2023-2024,2024-07-01,2024-07-31,grad,Graduate Student,git-his
 dkm7mj,Zivile Puospekaite,2023-2024,2023-08-01,2024-07-31,grad,Graduate Student,git-history,commit-date,true
 ans5k,Ana Nora Evans,2023-2024,2023-08-15,2024-07-31,agfm_other,Lecturer,git-history,commit-date,false
 axh7cj,Bakhyt Aitzhanova,2023-2024,2023-08-30,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
-nbm2vp,Brianna Kurtz,2023-2024,2023-08-16,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+nbm2vp,Brianna Kurtz,2023-2024,2023-08-01,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 qgf6bc,Caelan Wang,2023-2024,2024-07-31,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 zfg4vh,Charles Baker,2023-2024,2023-08-15,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,false
 hdj4nd,Daniel James,2023-2024,2023-08-01,2024-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
@@ -430,10 +430,10 @@ mbp6pj,J.D. Quigley,2024-2025,2024-08-01,2025-07-31,faculty,Assistant Professor,
 jlm6cj,Jennifer Morse,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
 ji2k,John Imbrie,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
 rbh3vx,Josh Turner,2024-2025,2024-09-18,2024-09-18,faculty,Assistant Professor,git-history,commit-date,true
-jeb2md,Julie Bergner,2024-2025,2024-11-14,2025-07-31,faculty,Professor,git-history,commit-date,true
+jeb2md,Julie Bergner,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
 jf8dc,Juraj Földes,2024-2025,2024-08-01,2025-07-31,faculty,Associate Professor,git-history,commit-date,true
 ko5wk,Ken Ono,2024-2025,2024-08-01,2025-07-31,faculty,STEM Advisor to the Provost and Marvin Rosenblum Professor of Mathematics,git-history,commit-date,true
-lap5r,Leonid Petrov,2024-2025,2024-08-20,2025-07-31,faculty,Professor,git-history,commit-date,true
+lap5r,Leonid Petrov,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
 mve2x,Mikhail Ershov,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
 pa8e,Peter Abramenko,2024-2025,2024-08-01,2025-07-31,faculty,Professor,git-history,commit-date,true
 ph7ph,Peter Humphries,2024-2025,2024-08-01,2025-07-31,faculty,Assistant Professor,git-history,commit-date,true
@@ -446,13 +446,13 @@ ww9c,Weiqiang Wang,2024-2025,2024-08-01,2025-07-31,faculty,Gordon Whyburn Profes
 yqd3p,Yen Do,2024-2025,2024-08-01,2025-07-31,faculty,Associate Professor,git-history,commit-date,true
 yq2dw,You Qi,2024-2025,2024-08-01,2025-07-31,faculty,Assistant Professor,git-history,commit-date,true
 tmpidsingh,Ajit Singh,2024-2025,2024-08-01,2025-07-31,postdoc,Nehru-Fulbright Postdoctoral Fellow,git-history,commit-date,false
-pej7rg,Ben Spitz,2024-2025,2024-10-10,2025-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
+pej7rg,Ben Spitz,2024-2025,2024-08-22,2025-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
 spitz_tmp_id,Ben Spitz,2024-2025,2024-08-01,2024-08-22,postdoc,Postdoc,git-history,commit-date,false
 szq3yx,Beth Branman,2024-2025,2024-08-01,2025-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
 pfy7cf,Brandon Shapiro,2024-2025,2024-08-01,2025-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
 cgh6uv,Jacob Campbell,2024-2025,2024-08-01,2025-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
 wbt4qn,Kang Lu,2024-2025,2024-08-01,2025-07-31,postdoc,Mary Ann Pitts Research Associate and Lecturer,git-history,commit-date,false
-dfh3fs,Oliver Wang,2024-2025,2024-10-10,2025-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,true
+dfh3fs,Oliver Wang,2024-2025,2024-08-01,2025-07-31,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,true
 rs2sf,Ryan Stees,2024-2025,2024-08-01,2025-07-31,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,true
 bug4bt,Sarah Blackwell,2024-2025,2024-08-01,2025-07-31,postdoc,NSF Postdoctoral Research Fellow,git-history,commit-date,true
 ukg7ef,Aaratrick Basu,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
@@ -489,7 +489,7 @@ ntr2qp,Oscar Arévalo,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-
 eyu4dh,Pedro Brunialti Lima de Andrade,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
 xgr6vm,Raul Arturo Hernandez-Gonzalez,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
 nbc3hn,Ruiqi Zou,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
-czh2zu,Samir Lassaad Fridhi,2024-2025,2025-05-21,2025-07-31,grad,Graduate Student,git-history,commit-date,true
+czh2zu,Samir Lassaad Fridhi,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
 sy8vb,Shengkuan Yan,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
 guc8ns,Suchakree Chueluecha,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
 yyk2hk,Suren Kyurumyan,2024-2025,2024-08-01,2025-07-31,grad,Graduate Student,git-history,commit-date,true
@@ -508,7 +508,7 @@ hdj4nd,Daniel James,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Profes
 ed8bg,Evangelos Dimou,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 jjh2b,Jeffrey Holt,2024-2025,2024-08-01,2025-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
 jsr2pz,Jim Rolf,2024-2025,2024-08-01,2025-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true
-rbh3vx,Josh Turner,2024-2025,2024-09-18,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
+rbh3vx,Josh Turner,2024-2025,2024-08-01,2025-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 kc5kv,Kristina Cernekova,2024-2025,2024-08-01,2025-07-31,agfm_other,General Faculty Lecturer,git-history,commit-date,true
 jqg2xb,Susan Mitchell,2024-2025,2024-08-01,2025-07-31,agfm_other,Lecturer,git-history,commit-date,true
 wec8v,Wendi Dass,2024-2025,2024-08-01,2025-07-31,agfm_other,Lecturer,git-history,commit-date,true
@@ -532,12 +532,12 @@ rt7u,Roberto Triggiani,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emerit
 tlk8q,Thomas Kriete,2024-2025,2024-08-01,2025-07-31,emeritus,Professor Emeritus,git-history,commit-date,true
 aa4cr,Abdelmalek Abdesselam,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
 asr3x,Andrei Rapinchuk,2025-2026,2025-08-01,2026-07-31,faculty,McConnell-Bernard Professor of Mathematics,git-history,commit-date,true
-af7py,Aseel Farhat,2025-2026,2025-08-26,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+af7py,Aseel Farhat,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
 brh5c,Benjamin Hayes,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
 hcg3m,Christian Gromoll,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
 cmr3hk,Christian Reidys,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
 des5e,David Sherman,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
-eg4va,Evangelia Gazaki,2025-2026,2025-08-26,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+eg4va,Evangelia Gazaki,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
 mbp6pj,J.D. Quigley,2025-2026,2025-08-01,2026-07-31,faculty,Assistant Professor,git-history,commit-date,true
 jlm6cj,Jennifer Morse,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
 ji2k,John Imbrie,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-history,commit-date,true
@@ -555,7 +555,7 @@ tmk5a,Thomas Koberda,2025-2026,2025-08-01,2026-07-31,faculty,Professor,git-histo
 tmark,Thomas Mark,2025-2026,2025-08-01,2026-07-31,faculty,Professor and Chair,git-history,commit-date,true
 ww9c,Weiqiang Wang,2025-2026,2025-08-01,2026-07-31,faculty,Gordon Whyburn Professor of Mathematics,git-history,commit-date,true
 yqd3p,Yen Do,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
-yq2dw,You Qi,2025-2026,2025-08-26,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
+yq2dw,You Qi,2025-2026,2025-08-01,2026-07-31,faculty,Associate Professor,git-history,commit-date,true
 tmpidsingh,Ajit Singh,2025-2026,2025-08-01,2025-08-25,postdoc,Nehru-Fulbright Postdoctoral Fellow,git-history,commit-date,false
 pej7rg,Ben Spitz,2025-2026,2025-08-01,2025-08-25,postdoc,Whyburn Research Associate and Lecturer,git-history,commit-date,false
 szq3yx,Beth Branman,2025-2026,2025-08-01,2025-08-25,postdoc,RTG Research Associate and Lecturer,git-history,commit-date,false
@@ -629,7 +629,7 @@ aw5dk,Aoran Wu,2025-2026,2026-02-10,2026-07-31,agfm_other,Lecturer,git-history,c
 axh7cj,Bakhyt Aitzhanova,2025-2026,2025-08-01,2026-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 nbm2vp,Brianna Kurtz,2025-2026,2025-08-01,2026-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 qgf6bc,Caelan Wang,2025-2026,2025-08-01,2026-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
-hdj4nd,Daniel James,2025-2026,2025-08-27,2026-07-31,agfm_other,"Associate Professor, General Faculty",git-history,commit-date,true
+hdj4nd,Daniel James,2025-2026,2025-08-01,2026-07-31,agfm_other,"Associate Professor, General Faculty",git-history,commit-date,true
 ed8bg,Evangelos Dimou,2025-2026,2025-08-01,2026-07-31,agfm_other,"Assistant Professor, General Faculty",git-history,commit-date,true
 jdb5e,James Bowling,2025-2026,2025-08-25,2026-07-31,agfm_other,Lecturer,git-history,commit-date,true
 jjh2b,Jeffrey Holt,2025-2026,2025-08-01,2026-07-31,agfm_other,"Professor, General Faculty",git-history,commit-date,true

@@ -432,6 +432,39 @@ abc1de:
         self.assertEqual(rows[0].end_date, date(2022, 7, 31))
         self.assertEqual(rows[1].end_date, date(2023, 7, 31))
 
+    def test_academic_year_expansion_merges_same_year_same_role_windows(self) -> None:
+        rows = roster_history.expand_active_years(
+            people={"abc1de": roster_history.PersonSummary("abc1de", "Ada Curie")},
+            appointments={
+                "abc1de": [
+                    roster_history.AppointmentInterval(
+                        start_date=date(2021, 8, 1),
+                        end_date=date(2022, 1, 15),
+                        role_group="faculty",
+                        position="Assistant Professor",
+                        source="git-history",
+                        confidence="commit-date",
+                    ),
+                    roster_history.AppointmentInterval(
+                        start_date=date(2022, 3, 1),
+                        end_date=date(2022, 7, 31),
+                        role_group="faculty",
+                        position="Associate Professor",
+                        source="git-history",
+                        confidence="commit-date",
+                    ),
+                ]
+            },
+            initial_start_date=date(2021, 8, 1),
+            as_of_date=date(2022, 7, 31),
+        )
+
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0].academic_year, "2021-2022")
+        self.assertEqual(rows[0].start_date, date(2021, 8, 1))
+        self.assertEqual(rows[0].end_date, date(2022, 7, 31))
+        self.assertEqual(rows[0].position, "Associate Professor")
+
     def test_write_outputs_creates_json_csv_and_markdown(self) -> None:
         result = roster_history.HistoryResult(
             people={"abc1de": roster_history.PersonSummary("abc1de", "Ada Curie")},

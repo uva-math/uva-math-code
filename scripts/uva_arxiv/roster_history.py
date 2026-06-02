@@ -694,8 +694,10 @@ def expand_active_years(
                 )
                 key = (person_id, academic_year, interval.role_group)
                 existing = rows_by_key.get(key)
-                if existing is None or row_sort_key(row) > row_sort_key(existing):
+                if existing is None:
                     rows_by_key[key] = row
+                else:
+                    rows_by_key[key] = merge_active_year_rows(existing, row)
 
     return sorted(
         rows_by_key.values(),
@@ -713,6 +715,22 @@ def role_order(role_group: str) -> int:
 def row_sort_key(row: ActiveYearRow) -> tuple[int, date, str]:
     source_priority = {"manual": 3, "git-history": 2, "current-roster": 1}.get(row.source, 0)
     return source_priority, row.start_date, row.position
+
+
+def merge_active_year_rows(left: ActiveYearRow, right: ActiveYearRow) -> ActiveYearRow:
+    metadata = right if row_sort_key(right) > row_sort_key(left) else left
+    return ActiveYearRow(
+        person_id=metadata.person_id,
+        display_name=metadata.display_name,
+        academic_year=metadata.academic_year,
+        start_date=min(left.start_date, right.start_date),
+        end_date=max(left.end_date, right.end_date),
+        role_group=metadata.role_group,
+        position=metadata.position,
+        source=metadata.source,
+        confidence=metadata.confidence,
+        current_active=left.current_active or right.current_active,
+    )
 
 
 def build_history_result(

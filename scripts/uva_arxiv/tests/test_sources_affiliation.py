@@ -146,6 +146,25 @@ class SourceFetchTests(unittest.TestCase):
             self.assertFalse((target / "old.tex").exists())
             self.assertEqual((target / "new.tex").read_text(encoding="utf-8"), "new\n")
 
+    def test_fetch_replaces_stale_empty_source_directory(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            target = root / "2501.01234"
+            target.mkdir()
+            payload = make_tar({"main.tex": b"fresh\n"})
+
+            result = sources.fetch_source(
+                self.config,
+                "2501.01234",
+                sources_dir=root,
+                http_get=lambda url: payload,
+                rate_limit_seconds=0,
+            )
+
+            self.assertEqual(result.status, "fetched")
+            self.assertEqual(result.files_written, ("main.tex",))
+            self.assertEqual((target / "main.tex").read_text(encoding="utf-8"), "fresh\n")
+
     def test_unpack_rejects_oversized_tar_member(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)
@@ -237,6 +256,29 @@ class AffiliationScanTests(unittest.TestCase):
 
         self.assertEqual(result.evidence, "missing_source")
         self.assertEqual(result.checked_files, 0)
+
+    def test_empty_source_directory_is_not_recorded_as_absent(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            source_dir = Path(tmp) / "2501.01234"
+            source_dir.mkdir()
+
+            result = affiliation.scan_source_dir("2501.01234", source_dir, self.patterns)
+
+        self.assertEqual(result.evidence, "empty_source")
+        self.assertEqual(result.checked_files, 0)
+        self.assertNotIn("not a rejection", result.notes)
+
+    def test_unreadable_source_directory_is_not_recorded_as_absent(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            source_dir = Path(tmp) / "2501.01234"
+            source_dir.mkdir()
+            (source_dir / "source.bin").write_bytes(b"\x00" * 4096)
+
+            result = affiliation.scan_source_dir("2501.01234", source_dir, self.patterns)
+
+        self.assertEqual(result.evidence, "unreadable_source")
+        self.assertEqual(result.checked_files, 0)
+        self.assertNotIn("not a rejection", result.notes)
 
     def test_scan_affiliation_writes_ignored_cache_database(self) -> None:
         with tempfile.TemporaryDirectory() as tmp:
