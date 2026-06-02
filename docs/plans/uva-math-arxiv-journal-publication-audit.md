@@ -907,11 +907,11 @@ If `SINCE` is omitted, the updater defaults to DB max date minus overlap days.
 
 ### Task 7: Wire Makefile targets and optional unlinked placeholder page
 
-- [ ] add the Phase 1 Makefile targets from this plan: `uva-arxiv-check`, `uva-arxiv-db-since`, `uva-arxiv-db-since-dry`, `uva-arxiv-roster-history`, `uva-arxiv-source-smoke`, and `uva-arxiv-api-smoke`
-- [ ] ensure the `SINCE`, `ID`, and `ARGS` variables work as documented and omitted `SINCE` falls back to DB max date minus overlap days
-- [ ] optionally add an unlinked `/arxiv/` placeholder page with `permalink: /arxiv/`, `sitemap: false`, and no `nav_id`/`nav_weight`
-- [ ] verify no Phase 1 target generates `assets/data/uva-arxiv-papers.json`, performs a full candidate scan, or creates related-paper/embedding files
-- [ ] add or update tests/smoke checks for the Makefile targets and placeholder page metadata if the page is created
+- [x] add the Phase 1 Makefile targets from this plan: `uva-arxiv-check`, `uva-arxiv-db-since`, `uva-arxiv-db-since-dry`, `uva-arxiv-roster-history`, `uva-arxiv-source-smoke`, and `uva-arxiv-api-smoke`
+- [x] ensure the `SINCE`, `ID`, and `ARGS` variables work as documented and omitted `SINCE` falls back to DB max date minus overlap days
+- [x] optionally add an unlinked `/arxiv/` placeholder page with `permalink: /arxiv/`, `sitemap: false`, and no `nav_id`/`nav_weight`
+- [x] verify no Phase 1 target generates `assets/data/uva-arxiv-papers.json`, performs a full candidate scan, or creates related-paper/embedding files
+- [x] add or update tests/smoke checks for the Makefile targets and placeholder page metadata if the page is created
 
 ### Task 8: Verify Phase 1 acceptance criteria and guardrails
 
