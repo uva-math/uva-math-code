@@ -1,4 +1,6 @@
-.PHONY: serve serve-full invalidate deploy autodeploy deploy-local
+.PHONY: serve serve-full invalidate deploy autodeploy deploy-local uva-arxiv
+
+UVA_ARXIV_PYTHON ?= python3
 
 define jekyll_serve
 	@mkdir -p /tmp/jekyll-status
@@ -41,3 +43,6 @@ deploy-local:
 	bundle exec jekyll build
 	find _site -name "*.html" -type f -exec sh -c 'grep -v "^[[:space:]]*$$" "$$1" > "$$1.tmp" && mv "$$1.tmp" "$$1"' _ {} \;
 	aws s3 sync ./_site/ s3://math.virginia.edu --delete --profile dept
+
+uva-arxiv:
+	$(UVA_ARXIV_PYTHON) scripts/uva_arxiv/cli.py $(ARGS)

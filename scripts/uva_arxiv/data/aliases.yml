@@ -1,0 +1,81 @@
+# Manual arXiv/Semantic Scholar aliases keyed by UVA computing ID.
+#
+# Example:
+# lap5r:
+#   display_name: Leonid Petrov
+#   arxiv_names:
+#     - Leonid Petrov
+#     - L. Petrov
+#   normalized_names:
+#     - leonid petrov
+#   semantic_scholar_author_ids: []
+#   orcid: []
+#   safe_match: true
+#   notes: "Rare enough; still check active appointment."
+
+jeb2md:
+  display_name: Julie Bergner
+  arxiv_names:
+    - Julia E. Bergner
+    - Julia Bergner
+  safe_match: true
+  notes: "Website uses Julie Bergner; arXiv papers use Julia E. Bergner."
+
+hcg3m:
+  display_name: Christian Gromoll
+  arxiv_names:
+    - H. Christian Gromoll
+  safe_match: true
+
+zg7c:
+  display_name: Zoran Grujic
+  arxiv_names:
+    - Zoran Grujic
+  safe_match: true
+
+brh5c:
+  display_name: Benjamin Hayes
+  arxiv_names:
+    - Ben Hayes
+  safe_match: true
+  notes: "arXiv papers commonly use Ben Hayes."
+
+iwh:
+  display_name: Ira Herbst
+  arxiv_names:
+    - Ira W. Herbst
+    - Ira Herbst
+  safe_match: true
+
+tmk5a:
+  display_name: Thomas Koberda
+  arxiv_names:
+    - Thomas Koberda
+  safe_match: true
+
+vk6e:
+  display_name: Slava Krushkal
+  arxiv_names:
+    - Vyacheslav Krushkal
+  safe_match: true
+  notes: "Website uses Slava; arXiv papers use Vyacheslav Krushkal."
+
+njk4x:
+  display_name: Nicholas Kuhn
+  arxiv_names:
+    - Nicholas J. Kuhn
+  safe_match: true
+
+tmark:
+  display_name: Thomas Mark
+  arxiv_names:
+    - Thomas E. Mark
+    - Thomas Mark
+  safe_match: true
+
+cmr3hk:
+  display_name: Christian Reidys
+  arxiv_names:
+    - Christian M. Reidys
+    - Christian Reidys
+  safe_match: true

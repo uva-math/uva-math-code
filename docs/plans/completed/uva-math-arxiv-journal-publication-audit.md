@@ -43,7 +43,7 @@ Phase 1 does **not**:
 
 - scan the full DB for UVA matches;
 - generate `assets/data/uva-arxiv-papers.json`;
-- generate reports;
+- generate public publication reports;
 - populate journal metadata for all candidates;
 - expose a complete public page;
 - classify journal tiers;
@@ -103,9 +103,6 @@ scripts/uva_arxiv/
   affiliation.py            # grep/extract UVA and negative affiliation evidence
   s2_client.py              # Semantic Scholar cache/client scaffolding
   crossref_client.py        # CrossRef cache/client scaffolding
-  arxiv_api.py              # arXiv API/OAI helpers
-  disambiguation.py         # scoring skeleton; no final matching in Phase 1
-  review_schema.py          # accepted/rejected/review queue schemas
   check_env.py              # smoke-test paths, DB schema, API env vars
   data/
     aliases.yml
@@ -126,8 +123,8 @@ assets/data/uva-arxiv-papers.json
 assets/data/uva-arxiv-summary.json
 assets/data/uva-arxiv-people.json
 assets/data/uva-arxiv-index.json
-reports/uva-arxiv-*.csv
-reports/uva-arxiv-*.md
+reports/uva-arxiv-publication-*.csv
+reports/uva-arxiv-publication-*.md
 ```
 
 Future unlinked page, not a data build:
@@ -156,21 +153,6 @@ people_dirs:
   lecturer: _departmentpeople/lecturers
   emeriti: _departmentpeople/emeriti
   unpublished: _departmentpeople/_unpublished
-
-role_groups:
-  faculty:
-    include_general_position: [faculty]
-    exclude_position_regex: "General Faculty|Emeritus|Emerita"
-  postdoc:
-    include_general_position: [postdoc]
-  grad:
-    include_general_position: [gradstudent]
-  agfm_other:
-    include_general_position: [lecturer]
-    include_position_regex: "General Faculty|Lecturer|Instructor|Academic General Faculty"
-  emeritus:
-    include_general_position: [emeritus]
-    include_position_regex: "Emeritus|Emerita"
 ```
 
 Environment variables:
@@ -851,56 +833,76 @@ uva-arxiv-api-smoke:
 
 If `SINCE` is omitted, the updater defaults to DB max date minus overlap days.
 
-## 13. Phase 1 implementation checklist
+## 13. Phase 1 implementation tasks
 
-1. Create `scripts/uva_arxiv/` skeleton and README.
-2. Add `config.yml` with shared DB/source paths.
-3. Add `.gitignore` entries for:
-   ```text
-   scripts/uva_arxiv/cache/*
-   !scripts/uva_arxiv/cache/.gitkeep
-   ```
-4. Implement `check_env.py`:
-   - confirms repo root;
-   - confirms shared DB exists and has expected `papers` schema;
-   - prints count/min/max date;
-   - confirms shared source dir exists;
-   - reports API key presence without printing values;
-   - confirms `.env` is ignored.
-5. Implement `arxiv_db.py`:
-   - connect read-only/read-write modes;
-   - schema validation;
-   - max-date lookup;
-   - upsert helper preserving existing schema.
-6. Implement `update_arxiv_db.py since`:
-   - dry-run;
-   - explicit `--since`;
-   - default `max(date) - overlap`;
-   - OAI/API fetch skeleton;
-   - `--limit` smoke option;
-   - transaction upserts.
-7. Implement `roster.py` and `roles.py`:
-   - parse current people;
-   - classify role groups, including `emeritus`;
-   - report conflicts and emeriti in active dirs.
-8. Implement `roster_history.py` as the first real milestone:
-   - inspect git history;
-   - infer appointment intervals;
-   - expand intervals into academic years from `2021-08-01` onward;
-   - apply manual overrides;
-   - dry-run yearly active counts by role group;
-   - generate the person-by-year preview/report before any paper scan.
-9. Implement `sources.py` and `affiliation.py` wrappers:
-   - use shared source corpus;
-   - one-ID smoke fetch;
-   - pattern scan and evidence record.
-10. Implement API client scaffolds with caches:
-    - S2 smoke;
-    - CrossRef smoke;
-    - no bulk fetching.
-11. Create empty/manual YAML files with documented examples.
-12. Add Makefile targets.
-13. Optionally add unlinked `/arxiv/` placeholder page, with no real data.
+### Task 1: Create UVA arXiv scaffold and configuration
+
+- [x] create the `scripts/uva_arxiv/` namespace with `README.md`, `cache/.gitkeep`, and the planned module/script files needed for Phase 1
+- [x] add `scripts/uva_arxiv/config.yml` with the shared DB/source paths, initial arXiv start date, people directories, and role-group rules from this plan
+- [x] add `.gitignore` entries for `scripts/uva_arxiv/cache/*` while preserving `scripts/uva_arxiv/cache/.gitkeep`
+- [x] create the manual YAML data files under `scripts/uva_arxiv/data/` with documented examples and no accepted/rejected paper data
+- [x] add lightweight config/env loading helpers that support ignored local `.env` files without ever logging API key values
+- [x] add tests or smoke checks for config loading and cache/data path creation
+
+### Task 2: Implement shared arXiv DB checks and the `since` updater
+
+- [x] implement `scripts/uva_arxiv/arxiv_db.py` with read-only/read-write SQLite connections, schema validation, max-date lookup, and schema-preserving upsert helpers
+- [x] implement `scripts/uva_arxiv/check_env.py` to confirm repo root, shared DB existence/schema/count/min/max dates, shared source directory, safe API-key presence reporting, and ignored `.env` status
+- [x] implement `scripts/uva_arxiv/update_arxiv_db.py since` with `--dry-run`, explicit/default `--since`, overlap-days handling, `--limit`, and transaction upserts
+- [x] add OAI-PMH fetch plumbing for whole-archive updates and a conservative API fallback/skeleton without changing the `papers` schema
+- [x] add tests using a temporary SQLite database and mocked fetch responses for validation, dry-run, and upsert behavior
+- [x] verify the updater does not run a full shared-DB update or add indexes unless explicitly requested
+
+### Task 3: Parse current people records and classify role groups
+
+- [x] implement `scripts/uva_arxiv/roles.py` to assign `faculty`, `postdoc`, `grad`, `agfm_other`, and `emeritus` from front matter rather than directory alone
+- [x] implement `scripts/uva_arxiv/roster.py` to parse `_departmentpeople` YAML front matter into stable records keyed by `UVA_id`
+- [x] preserve display names with diacritics while adding normalized search aliases where useful
+- [x] report directory/front-matter conflicts, unpublished records, and emeriti/general-faculty records found in active directories
+- [x] add fixture-based tests for TT faculty, general faculty, lecturers, postdocs, graduate students, emeriti, unpublished records, and directory/front-matter conflicts
+
+### Task 4: Build appointment history and person-by-year roster output
+
+- [x] implement `scripts/uva_arxiv/roster_history.py` to inspect git history, file additions/removals/moves, and historical front matter under `_departmentpeople`
+- [x] apply `appointments_overrides.yml` before inferred intervals and record interval source/confidence
+- [x] infer active appointment intervals across role changes, moves to `_unpublished`, and moves to `emeriti`
+- [x] expand intervals from `2021-08-01` onward into academic-year windows running August 1 through July 31
+- [x] write the first milestone outputs: `scripts/uva_arxiv/cache/active_people_by_year.json`, `reports/uva-arxiv-active-people-by-year.csv`, and `reports/uva-arxiv-active-people-by-year.md`
+- [x] add dry-run output with yearly counts by role group and clear uncertainty/conflict reporting
+- [x] add tests or fixture smoke checks for interval inference, manual overrides, academic-year expansion, and role changes
+
+### Task 5: Add source fetch and UVA affiliation evidence tooling
+
+- [x] implement `scripts/uva_arxiv/sources.py fetch --id ...` with dry-run support, safe arXiv-ID directory names, shared source-corpus output, rate limiting, retry hooks, and archive unpacking for tar/gzip/raw TeX/PDF fallback cases
+- [x] implement `scripts/uva_arxiv/affiliation.py scan --id ...` using `affiliation_patterns.yml` positive/negative patterns and the shared source corpus
+- [x] store affiliation evidence in a cache-side record/database without committing fetched sources or generated cache data
+- [x] keep absence of UVA evidence as an evidence state rather than a rejection reason
+- [x] add tests with temporary source trees for positive, negative, conflicting, absent, and missing-source cases
+
+### Task 6: Add Semantic Scholar and CrossRef smoke clients
+
+- [x] implement `scripts/uva_arxiv/s2_client.py smoke --id ...` with environment-key normalization, safe logging, rate-limit-aware request handling, and `scripts/uva_arxiv/cache/s2.sqlite`
+- [x] implement `scripts/uva_arxiv/crossref_client.py smoke --doi ...` with `CROSSREF_MAILTO`/optional key support, safe logging, and `scripts/uva_arxiv/cache/crossref.sqlite`
+- [x] cache raw JSON or normalized fields useful for DOI, journal, publication-date, author, venue, and conflict checks
+- [x] treat missing journal/API metadata as incomplete metadata, not publication or scope evidence
+- [x] add mocked-HTTP tests for cache hits, cache misses, missing keys, rate limits, and metadata-conflict recording
+
+### Task 7: Wire Makefile targets and optional unlinked placeholder page
+
+- [x] add the Phase 1 Makefile targets from this plan: `uva-arxiv-check`, `uva-arxiv-db-since`, `uva-arxiv-db-since-dry`, `uva-arxiv-roster-history`, `uva-arxiv-source-smoke`, and `uva-arxiv-api-smoke`
+- [x] ensure the `SINCE`, `ID`, and `ARGS` variables work as documented and omitted `SINCE` falls back to DB max date minus overlap days
+- [x] optionally add an unlinked `/arxiv/` placeholder page with `permalink: /arxiv/`, `sitemap: false`, and no `nav_id`/`nav_weight`
+- [x] verify no Phase 1 target generates `assets/data/uva-arxiv-papers.json`, performs a full candidate scan, or creates related-paper/embedding files
+- [x] add or update tests/smoke checks for the Makefile targets and placeholder page metadata if the page is created
+
+### Task 8: Verify Phase 1 acceptance criteria and guardrails
+
+- [x] run `make uva-arxiv-check` and confirm DB schema, DB date stats, source-corpus path, and API-key presence reporting are safe and correct (validated with temporary `ARXIV_DB` / `ARXIV_SOURCES_DIR` overrides because the configured `/Users/leo` shared paths are not mounted in this workspace)
+- [x] run `make uva-arxiv-db-since-dry` and confirm it reports the planned date range without writing to the shared DB (validated with the same temporary DB override; default shared DB path is external to this workspace)
+- [x] run `make uva-arxiv-roster-history` and confirm yearly active counts by role group plus the person-by-year support outputs are produced
+- [x] run `make uva-arxiv-source-smoke ID=2501.01234` and confirm it is a dry-run smoke command unless explicitly overridden
+- [x] verify no secrets, fetched sources, SQLite caches, generated publication data, or scratch artifacts are staged for commit
+- [x] verify this plan still parses as a ralphex task plan with `### Task N:` headers and checkboxes only inside Task sections
 
 ## 14. Phase 1 acceptance criteria
 
@@ -922,7 +924,7 @@ Expected outcomes:
 - active roster/history dry-run reports counts by year and role group;
 - no `assets/data/uva-arxiv-papers.json` is generated;
 - no full candidate scan occurs;
-- no generated publication/report data is committed;
+- no generated publication data is committed; roster-history support reports may be committed as Phase 1 validation outputs;
 - no related-paper/embedding files are created.
 
 ## 15. Later phases, deliberately out of scope now

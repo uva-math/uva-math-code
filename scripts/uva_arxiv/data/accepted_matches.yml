@@ -1,0 +1,147 @@
+# Manual accept decisions for paper/person matches. Public paper outputs later
+# must include only records represented here, but Phase 1 does not add data.
+#
+# Example:
+# - arxiv_id: "2501.01234"
+#   person_id: "lap5r"
+#   decision: accept
+#   identity_confidence: confirmed_manual
+#   department_scope: true
+#   reason: "Full-name match; active UVA appointment."
+#   decided_by: leo
+#   decided_at: "2026-06-02"
+
+- arxiv_id: "2507.04120"
+  person_id: "mve2x"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed from no-positive-source to-check review."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2503.11772"
+  person_id: "tmk5a"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed from no-positive-source to-check review."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2602.03716"
+  person_id: "ko5wk"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed all Ken Ono no-positive-source to-check rows."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2602.03722"
+  person_id: "ko5wk"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed all Ken Ono no-positive-source to-check rows."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2602.05090"
+  person_id: "ko5wk"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed all Ken Ono no-positive-source to-check rows."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2602.05095"
+  person_id: "ko5wk"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed all Ken Ono no-positive-source to-check rows."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2603.23928"
+  person_id: "ko5wk"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed all Ken Ono no-positive-source to-check rows."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2603.29970"
+  person_id: "ko5wk"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed all Ken Ono no-positive-source to-check rows."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2604.25246"
+  person_id: "ko5wk"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed all Ken Ono no-positive-source to-check rows."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2605.21718"
+  person_id: "ko5wk"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed all Ken Ono no-positive-source to-check rows."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2605.24976"
+  person_id: "lap5r"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed from no-positive-source to-check review."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2603.23241"
+  person_id: "mbp6pj"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed from unreadable-source to-check review."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2401.04827"
+  person_id: "cmr3hk"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP confirmed from PDF/unreadable-source to-check review."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2410.11811"
+  person_id: "hcg3m"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "LP requested inclusion from Spring 2025 annual-review smoke check; non-math q-bio arXiv category."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2412.11323"
+  person_id: "jf8dc"
+  decision: accept
+  identity_confidence: confirmed_manual
+  department_scope: true
+  reason: "Confirmed from Spring 2025 annual-review smoke check; fetched source has no UVA affiliation string."
+  decided_by: leo
+  decided_at: "2026-06-02"

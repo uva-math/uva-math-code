@@ -1,0 +1,65 @@
+# Manual reject decisions for paper/person matches. Phase 1 does not add data.
+#
+# Example:
+# - arxiv_id: "2501.01234"
+#   person_id: "abc1de"
+#   decision: reject
+#   reason: "Name collision; S2 author cluster is different person."
+#   decided_by: leo
+#   decided_at: "2026-06-02"
+
+- arxiv_id: "2201.07957"
+  person_id: "ww9c"
+  decision: reject
+  reason: "Name collision: source identifies Weiqiang Wang at Academy of Mathematics and Systems Science, Chinese Academy of Sciences; PDE/compressible Euler paper."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2210.04616"
+  person_id: "ww9c"
+  decision: reject
+  reason: "Name collision: source identifies W. Q. Wang at Academy of Mathematics and Systems Science, Chinese Academy of Sciences; PDE/Boltzmann paper."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2303.10358"
+  person_id: "ww9c"
+  decision: reject
+  reason: "Name collision: source identifies Weiqiang Wang with Ant Group email; machine-learning/statistics paper."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2303.12550"
+  person_id: "ww9c"
+  decision: reject
+  reason: "Name collision: source identifies W. Q. Wang at Academy of Mathematics and Systems Science, Chinese Academy of Sciences; PDE/Navier-Stokes paper."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2305.12615"
+  person_id: "ww9c"
+  decision: reject
+  reason: "Name collision: source identifies Weiqiang Wang at Academy of Mathematics and Systems Science, Chinese Academy of Sciences; PDE/Euler-Poisson paper."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2407.16400"
+  person_id: "ww9c"
+  decision: reject
+  reason: "Name collision: source identifies W.-Q. Wang at Academy of Mathematics and Systems Science, Chinese Academy of Sciences; PDE/fluid paper."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2512.20036"
+  person_id: "ww9c"
+  decision: reject
+  reason: "Name collision: source identifies W. Q. Wang at Department of Mathematics, University of Pittsburgh; PDE/Boltzmann paper."
+  decided_by: leo
+  decided_at: "2026-06-02"
+
+- arxiv_id: "2602.22598"
+  person_id: "ww9c"
+  decision: reject
+  reason: "Name collision: source identifies W.-Q. Wang at Department of Mathematics, University of Pittsburgh; PDE/Euler flows paper."
+  decided_by: leo
+  decided_at: "2026-06-02"
