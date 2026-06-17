@@ -3,7 +3,7 @@ UVA_id: geg7jw
 lastname: Rajagopal
 name: Malvika
 general_position: staff
-position: Senior Administrative Coordinator
+position: "Academic Operations Specialist; Mathematics & Statistics Graduate Program Coordinator"
 office: 216 Kerchof Hall
 phone:
 email: geg7jw@virginia.edu
