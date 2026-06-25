@@ -11,9 +11,9 @@ nav_weight: 8
 
 **Note:** *The information and policies contained on this website is for informational purposes only. The Undergraduate Record and Graduate Record represent the official repository for academic program requirements. These publications may be found at [`https://records.ureg.virginia.edu/index.php`](https://records.ureg.virginia.edu/index.php).*
 
-*Official requirements for our graduate degrees are listed in the [Mathematics section of the Graduate Record](https://records.ureg.virginia.edu/preview_program.php?catoid=68&poid=10638).*
+*Official requirements for our graduate degrees are listed in the [Mathematics section of the Graduate Record](https://records.ureg.virginia.edu/preview_program.php?catoid=73&poid=12186).*
 
-*The general rules and requirements governed by the Graduate School of Arts and Sciences can also be found in the Graduate Record under [Policies](https://records.ureg.virginia.edu/content.php?catoid=68&navoid=6049).*
+*The general rules and requirements governed by the Graduate School of Arts and Sciences can also be found in the Graduate Record under [Policies](https://records.ureg.virginia.edu/index.php?catoid=73).*
 
 ---
 

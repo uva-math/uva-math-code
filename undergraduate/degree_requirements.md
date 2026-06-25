@@ -11,11 +11,11 @@ nav_weight: 1
 
 ## Major in Mathematics Requirements
 
-### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=67&poid=10259) to the UREG page
+### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=72&poid=11827) to the UREG page
 
 ## Minor in Mathematics Requirements
 
-### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=67&poid=10261) to the UREG page
+### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=72&poid=11829) to the UREG page
 
 
 <h3 class="mt-3">Please note:</h3>
