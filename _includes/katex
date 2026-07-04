@@ -2,13 +2,19 @@
 <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/contrib/auto-render.min.js" integrity="sha384-hCXGrW6PitJEwbkoStFjeJxv+fSOOQKOPbJxSfM6G5sWZjAyWhXiTIIAmQqnlLlh" crossorigin="anonymous"></script>
 
 <script>
-  renderMathInElement(document.body,
-  {
-      delimiters: [
-          {left: "$$", right: "$$", display: true},
-          {left: "\\[", right: "\\]", display: true},
-          {left: "$", right: "$", display: false},
-          {left: "\\(", right: "\\)", display: false}
-      ]
+  // The katex libraries above load with `defer`, so they only execute after
+  // the document is parsed. Wait for DOMContentLoaded (which fires after all
+  // deferred scripts have run) before calling renderMathInElement, otherwise
+  // the function is undefined and no math renders. See KaTeX auto-render docs.
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body,
+    {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "\\[", right: "\\]", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false}
+        ]
+    });
   });
 </script>
