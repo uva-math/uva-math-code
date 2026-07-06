@@ -5,7 +5,7 @@ event-date: 2026-11-10 17:00:00
 multi-day-event: true
 permalink: /ims/lectures/lauren-williams/
 comments: false
-categories: news virginia-mathematics-lectures ims events
+categories: news virginia-mathematics-lectures ims events major-news
 published: true
 image-alt: Lauren Williams
 image-tall: true
