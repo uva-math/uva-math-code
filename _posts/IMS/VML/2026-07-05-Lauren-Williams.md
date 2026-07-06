@@ -9,7 +9,7 @@ categories: news virginia-mathematics-lectures ims events major-news
 published: true
 image: __SITE_URL__/img/IMS/Lauren-Williams.jpg
 image-alt: Lauren Williams
-image-tall: true
+image-wide: true
 more-text: Abstracts
 nav_parent: IMS
 ---
