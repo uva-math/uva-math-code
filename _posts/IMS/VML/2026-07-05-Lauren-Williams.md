@@ -7,6 +7,7 @@ permalink: /ims/lectures/lauren-williams/
 comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
+image: __SITE_URL__/img/IMS/Lauren-Williams.jpg
 image-alt: Lauren Williams
 image-tall: true
 more-text: Abstracts
