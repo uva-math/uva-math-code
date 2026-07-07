@@ -17,18 +17,18 @@ nav_parent: IMS
 <p class="h5 mt-1 mb-1"><a href="https://people.math.harvard.edu/~williams/">Lauren Williams</a> (Harvard University)</p>
 
 <ul>
-	<li><strong>Lecture 1 - TBA:</strong> Tuesday, November 10, 2026 | TBA | TBA</li>
-	<li><strong>Lecture 2 - TBA:</strong> Wednesday, November 11, 2026 | TBA | TBA</li>
+	<li><strong>Lecture 1 - First Proof: Mathematicians putting AI to the test:</strong> Tuesday, November 10, 2026 | TBA | TBA</li>
+	<li><strong>Lecture 2 - Macdonald polynomials and probability:</strong> Wednesday, November 11, 2026 | TBA | TBA</li>
 </ul>
 
 <!--more-->
 
-<h2>Lecture 1: TBA</h2>
+<h2>Lecture 1: First Proof: Mathematicians putting AI to the test</h2>
 <p><strong>Date:</strong> Tuesday, November 10, 2026 | TBA<br>
 <strong>Location:</strong> TBA<br>
 <strong>Abstract:</strong> TBA</p>
 
-<h2>Lecture 2: TBA</h2>
+<h2>Lecture 2: Macdonald polynomials and probability</h2>
 <p><strong>Date:</strong> Wednesday, November 11, 2026 | TBA<br>
 <strong>Location:</strong> TBA<br>
 <strong>Abstract:</strong> TBA</p>
