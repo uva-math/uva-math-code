@@ -23,6 +23,8 @@ nav_parent: IMS
 
 <!--more-->
 
+<p class="text-muted"><em>Photo credit: Lucy Lu</em></p>
+
 <h2>Lecture 1: First Proof: Mathematicians putting AI to the test</h2>
 <p><strong>Date:</strong> Tuesday, November 10, 2026 | TBA<br>
 <strong>Location:</strong> TBA<br>
