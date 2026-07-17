@@ -8,7 +8,7 @@ position: Professor
 office: 209 Kerchof Hall
 phone: 434-924-4167
 email: petrov@virginia.edu
-image: __SITE_URL__/img/people/2023-fall/Leonid.jpg
+image: __SITE_URL__/img/people/Petrov_YBE.jpg
 personal_page: http://lpetrov.cc/
 areas: #Must coincide with the ones in _data/research_areas.yml
   - Probability, Combinatorics
@@ -23,8 +23,6 @@ specialty: Integrable Probability, Algebraic Combinatorics
 
 
 ---
-
-<img src="/img/people/Petrov_YBE.jpg" style="max-width:100%;height:auto;" alt="Leonid Petrov beside a stone carving of the Yang-Baxter equation" title="Leonid Petrov beside a stone carving of the Yang-Baxter equation">
 
 <!-- ignore this outdated info for now -->
 
