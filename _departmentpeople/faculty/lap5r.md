@@ -24,6 +24,8 @@ specialty: Integrable Probability, Algebraic Combinatorics
 
 ---
 
+<img src="/img/people/Petrov_YBE.jpg" style="max-width:100%;height:auto;" alt="Leonid Petrov beside a stone carving of the Yang-Baxter equation" title="Leonid Petrov beside a stone carving of the Yang-Baxter equation">
+
 <!-- ignore this outdated info for now -->
 
 <!--
