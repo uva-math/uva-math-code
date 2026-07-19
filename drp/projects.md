@@ -6,6 +6,79 @@ permalink: /drp/projects/
 
 <h2 class="mb-3">Projects</h2>
 
+### Spring 2026
+
++ Introduction to Stochastic Calculus
+   - Text: Duke Math 545 Lecture Notes (Introduction to Stochastic Calculus)
+   - Mentee: Siwen Liao
+   - Mentor: Jun Park
+
++ TBD
+   - Text: Hastie, Tibshirani, and Friedman, The Elements of Statistical Learning
+   - Mentee: Chloe Gao
+   - Mentor: Pranava Chaitanya Jayanti
+
++ Ergodic Theory and Equidistribution
+   - Text: Einsiedler and Ward, Ergodic Theory with a view towards Number Theory
+   - Mentee: Tristan Hernandez
+   - Mentor: John Layne
+
++ Lie Groups, Lie Algebras, and Applications in Physics
+   - Texts: Steinacker, Lie Groups and Lie Algebras for Physicists (lecture notes, University of Vienna, 2023); Arvanitoyeorgos, An Introduction to Lie Groups and the Geometry of Homogeneous Spaces
+   - Mentee: Charles Dorsey
+   - Mentor: Lam Nguyen
+
++ P-Adic Analysis
+   - Text: Gouvea, p-adic Numbers: An Introduction
+   - Mentee: Annie von Dohlen
+   - Mentor: Astrid Lilly
+
++ TBD
+   - Mentee: Sabin Long
+   - Mentor: Grady Hollar
+
++ Machine Learning
+   - Mentee: Yipeng Cao
+   - Mentor: Shengkuan Yan
+
++ Proving the Fundamental Theorem of Algebra
+   - Text: Milnor, Topology from the Differentiable Viewpoint
+   - Mentee: Carson Harter
+   - Mentor: Oscar Arévalo
+
++ Lozenge Tiling
+   - Text: Gorin, Lectures on Random Lozenge Tilings
+   - Mentee: Nathan Howard
+   - Mentor: Mikhail Tikhonov
+
++ TBD
+   - Mentee: Aaditi Rai
+   - Mentor: Wynn Smith
+
++ An Introduction to Simplicial Complexes
+   - Text: Rotman, An Introduction to Algebraic Topology
+   - Mentee: Srinivasan Kannan
+   - Mentor: Mason Hart
+
++ Knot Theory
+   - Text: Adams, The Knot Book
+   - Mentee: Abel Lynerd
+   - Mentor: Adam Friedman-Brown
+
++ Applications of Ergodic Theory
+   - Mentee: Vikhyaath Ale
+   - Mentor: Nick Sweeney
+
++ Fermat's Last Theorem
+   - Text: Hardy and Wright, An Introduction to the Theory of Numbers
+   - Mentee: Kate Peevey
+   - Mentor: Maximiliano Sánchez Garza
+
++ TBD
+   - Text: Resnick, A Probability Path
+   - Mentee: Yona Sankar
+   - Mentor: Mitansh Kagalwala
+
 ### Fall 2025
 
 + Introduction to Matrix Lie Groups
@@ -41,6 +114,11 @@ permalink: /drp/projects/
    - Text: Zhang, The Framework of Music Theory as Represented with Groups
    - Mentee: Maya Pattison
    - Mentor: Thomas Jaklitsch
+
++ Baire Category in C([a,b]): Why "Most" Continuous Functions Are Nowhere Differentiable
+   - Text: Pugh, Real Mathematical Analysis
+   - Mentee: Giau Pham
+   - Mentor: Felipe Flores
 
 
 ### Spring 2025
