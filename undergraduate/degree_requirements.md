@@ -17,6 +17,17 @@ nav_weight: 1
 
 ### &bull; [Most up-to-date link](https://records.ureg.virginia.edu/preview_program.php?catoid=72&poid=11829) to the UREG page
 
+<h2 class="mb-3 mt-5">What is being offered this term</h2>
+
+<!-- term-schedule-pdf -->
+<p class="mt-3"><a href="{{ site.url }}/schedule.pdf"><b>Fall 2026 Mathematics class schedule (PDF)</b></a>
+&mdash; every Mathematics section on two printable pages: meeting times, enrollment,
+and instructors. This is a manual snapshot of
+<a href="https://hooslist.virginia.edu/1268/Group/Mathematics">HoosList</a>; the date and
+time it was taken are printed in the header of the sheet. For live enrollment numbers,
+use HoosList or <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SIS</a>.</p>
+<!-- /term-schedule-pdf -->
+
 
 <h3 class="mt-3">Please note:</h3>
 

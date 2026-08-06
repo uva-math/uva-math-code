@@ -19,7 +19,7 @@ tooltips: true
 </ul>
 
 <p>
- <span class="bolded"> <a href=" https://louslist.org/CC/Mathematics.html">Lou's List</a></span> has more complete descriptions of each of these courses.
+ <span class="bolded"> <a href="https://hooslist.virginia.edu/ClassSchedule/">HoosList</a></span> has more complete descriptions of each of these courses.
  </p>
  
  
