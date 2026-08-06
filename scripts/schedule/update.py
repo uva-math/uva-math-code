@@ -61,7 +61,15 @@ def main() -> int:
     schedule_build.assert_room_free(result, tex_path)
     tex_path.write_text(result)
     print(f"\nwrote {tex_path.name}\n")
-    return schedule_build.build_and_stage(site, semester)
+    try:
+        return schedule_build.build_and_stage(site, semester)
+    except BaseException:
+        # The build is what validates the refresh. If it fails the sheet must go back
+        # as it was, or the tree is left holding a rewritten source that was never
+        # compiled and never checked.
+        tex_path.write_text(tex)
+        print(f"restored {tex_path.name} — the refresh was not applied", file=sys.stderr)
+        raise
 
 
 if __name__ == "__main__":

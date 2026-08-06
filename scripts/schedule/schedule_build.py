@@ -148,6 +148,50 @@ def assert_room_free(tex: str, path: pathlib.Path) -> None:
                                      m.start()))
 
 
+# Rooms as they are actually written: a building abbreviation or name followed by a
+# number. Checked against the *rendered* text, which is the only place that catches a
+# room typed as free text somewhere the argument-level check does not look.
+PDF_ROOM = re.compile(
+    r"\b(?:NCH|KER|MEC|OLS|RIC|CLK|GIL|WIL|MON|PHY|CHM|NAU|DEL|THN|CAB|BRN)\s*-?\s*\d{2,4}\b"
+    r"|\b(?:Kerchof|New Cabell|Olsson|Gilmer|Thornton|Monroe Hall|Nau Hall|Rice Hall|"
+    r"Clark Hall)\b")
+
+# The public build prints this in place of the building legend. Its absence means the
+# sheet was compiled without \PublicSchedule, i.e. as the room-bearing variant.
+PUBLIC_MARK = "rooms omitted"
+
+
+def pdf_text(pdf: bytes) -> str | None:
+    """Rendered text of a PDF, or None if pdftotext is unavailable."""
+    try:
+        r = subprocess.run(["pdftotext", "-", "-"], input=pdf,
+                           capture_output=True, timeout=60)
+    except (FileNotFoundError, subprocess.TimeoutExpired):
+        return None
+    return r.stdout.decode("utf-8", "replace") if r.returncode == 0 else None
+
+
+def assert_pdf_room_free(pdf: bytes, what: str) -> None:
+    """Refuse a rendered sheet that shows rooms.
+
+    The source check reads the arguments the sheet is supposed to use. This one reads
+    what a reader actually sees, so it also catches a room written as ordinary text
+    into the weekly grid or a course header -- fields public mode does not discard.
+    """
+    text = pdf_text(pdf)
+    if text is None:
+        print(f"warning: pdftotext unavailable, so {what} was not checked for rooms "
+              "in its rendered output", file=sys.stderr)
+        return
+    hit = PDF_ROOM.search(text)
+    if hit:
+        raise SystemExit(f"{what} shows a room in its rendered output: {hit.group(0)!r}\n"
+                         "rooms are not public data and must not be published")
+    if PUBLIC_MARK not in text:
+        raise SystemExit(f"{what} does not print {PUBLIC_MARK!r} in its header, so it "
+                         "was not built as the public sheet; refusing to publish it")
+
+
 def build_pdf(tex_path: pathlib.Path) -> tuple[bytes, int]:
     """Compile in a scratch directory; return (pdf bytes, page count)."""
     with tempfile.TemporaryDirectory() as tmp:
@@ -204,6 +248,7 @@ def build_and_stage(site: pathlib.Path, semester: str | None = None) -> int:
     term, slug = term_code(semester), term_slug(semester)
 
     pdf, pages = build_pdf(tex_path)
+    assert_pdf_room_free(pdf, "the sheet just built from schedule.tex")
     if pages != 2:
         print(f"warning: the sheet came out {pages} pages, not 2", file=sys.stderr)
     for name in ("schedule.pdf", f"{slug}.pdf"):

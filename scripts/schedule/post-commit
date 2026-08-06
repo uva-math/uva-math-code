@@ -36,6 +36,14 @@ sys.path.insert(0, str(HERE))
 GUARD = "UVA_SCHEDULE_HOOK"
 SHEET_FILES = ("schedule.tex", "schedule.pdf")
 
+# The build also rewrites the term name inside these, so they are part of what a
+# refresh may legitimately change and must be committed with it at a rollover.
+LINK_PAGES = ("undergraduate/degree_requirements.md",
+              "undergraduate/undergraduate_main_page.md",
+              "undergraduate/all_courses.md",
+              "undergraduate/undergraduate_courses.html",
+              "graduate/graduate_courses.html")
+
 
 def git(*args: str, **kw) -> subprocess.CompletedProcess:
     return subprocess.run(["git", *args], capture_output=True, text=True, **kw)
@@ -68,6 +76,28 @@ def main() -> int:
     today = dt.date.today().isoformat()
     if stamp.is_file() and stamp.read_text().strip() == today:
         return 0
+
+    # Only on a real branch. On a detached HEAD the refresh commit would be orphaned
+    # by the next checkout, and on a side branch it would collide with the same
+    # refresh made on another branch as an unmergeable binary conflict in the PDFs.
+    if git("symbolic-ref", "-q", "HEAD", cwd=str(root)).returncode != 0:
+        print("schedule: detached HEAD, skipping the daily refresh", file=sys.stderr)
+        return 0
+
+    # Refuse on a dirty sheet. Everything this hook does -- rewriting schedule.tex,
+    # committing by pathspec, rolling back with checkout -- operates on the working
+    # tree, so uncommitted work here would be either published under a message
+    # claiming it is a HoosList refresh, or destroyed by the rollback. Neither is
+    # acceptable, and the stamp is deliberately NOT burned: it retries once clean.
+    watched = [*_sheet_paths(root), *LINK_PAGES]
+    dirty = [ln[3:].strip() for ln in
+             git("status", "--porcelain", "--", *watched, cwd=str(root)).stdout.splitlines()]
+    if dirty:
+        print("schedule: skipping the daily refresh — uncommitted changes in "
+              + ", ".join(dirty) + "\n         (commit or stash them and it will run "
+              "on your next commit)", file=sys.stderr)
+        return 0
+
     # Written before the work, not after: a failure must not retry on every commit
     # for the rest of the day.
     stamp.write_text(today + "\n")
@@ -90,11 +120,14 @@ def main() -> int:
         if line.startswith(("  NEW", "  DROPPED", "  TITLE", "  INSTR")):
             print(f"schedule: NEEDS A HUMAN -> {line.strip()}", file=sys.stderr)
 
-    paths = _sheet_paths(root)
     # status --porcelain rather than diff: a repo may configure an external diff
     # driver, and then `git diff` prints something this cannot parse.
-    changed = [ln[3:].strip() for ln in
-               git("status", "--porcelain", "--", *paths, cwd=str(root)).stdout.splitlines()]
+    status = [(ln[:2], ln[3:].strip()) for ln in
+              git("status", "--porcelain", "--", *watched, cwd=str(root)).stdout.splitlines()]
+    changed = [p for _, p in status]
+    # Untracked at a rollover (the new s27.pdf): `git checkout --` cannot restore
+    # those, and passing one makes the whole checkout fail and restore nothing.
+    restorable = [p for code, p in status if "?" not in code]
     if not changed:
         print("schedule: already current, nothing to commit", file=sys.stderr)
         return 0
@@ -107,8 +140,8 @@ def main() -> int:
     new = (root / "schedule.tex").read_text().splitlines()
     edits = [ln for ln in difflib.unified_diff(old, new, n=0)
              if ln[:1] in "+-" and not ln.startswith(("+++", "---"))]
-    if edits and all("SnapshotStamp" in ln for ln in edits):
-        git("checkout", "--", *paths, cwd=str(root))
+    if edits and all("SnapshotStamp" in ln for ln in edits) and restorable == changed:
+        git("checkout", "--", *restorable, cwd=str(root))
         print("schedule: no change in the data today; sheet left as it was",
               file=sys.stderr)
         return 0

@@ -48,7 +48,16 @@ never lands inside an unrelated commit. It does not push — the refresh goes ou
 your next push. If the only thing that moved is the snapshot stamp, it rolls the sheet
 back rather than committing a fresh 200KB PDF for no change in the data. Anything the
 refresh could not decide is printed with a `NEEDS A HUMAN` prefix, so watch for that
-after a commit.
+after a commit. (`SPLIT` is not in that list — MATH 2559-200 is permanently split and
+would cry wolf every single day.)
+
+It **skips entirely if `schedule.tex`, either archival copy, or any of the five link
+pages has uncommitted changes**, and says so. This is the important safety property:
+everything the hook does works on the working tree, so running over a half-finished
+edit would either publish that draft under a commit message claiming it is a HoosList
+refresh, or destroy it in the rollback. Skipping does not burn the day's slot — it runs
+on your next commit once the tree is clean. It also skips on a detached HEAD, where the
+commit would be orphaned.
 
 Because it hangs off commits, the sheet is only as current as your commit habit; a
 refresh that runs whether or not you commit would need a launchd job instead.
@@ -78,11 +87,22 @@ only way to obtain them is a logged-in SIS pull. Every room argument in `schedul
 is empty, `\PublicSchedule` is defined so the room macros expand to nothing, and the
 header prints "rooms omitted".
 
-`schedule_build.py` refuses to compile if `\PublicSchedule` is missing or if any room
-argument is non-empty. It brace-matches the `\Sx`/`\Dx` arguments rather than pattern-
-matching them, so a row it cannot read is an error rather than a pass — a checker that
-skipped what it could not parse would clear exactly the rows most likely to have been
-pasted in from a room-bearing copy. Do not work around it, and do not add rooms.
+There are two independent checks, because either one alone has a blind spot.
+
+**On the source.** `assert_room_free` refuses if `\PublicSchedule` is missing or if any
+room argument is non-empty. It brace-matches the `\Sx`/`\Dx` arguments rather than
+pattern-matching them, so a row it cannot read is an error rather than a pass — a
+checker that skipped what it could not parse would clear exactly the rows most likely
+to have been pasted in from a room-bearing copy.
+
+**On the rendered PDF.** `assert_pdf_room_free` reads the built sheet back with
+`pdftotext` and refuses if it shows anything shaped like a room, or if the header does
+not say `rooms omitted`. This is the check that matters, because the source check only
+inspects the fields public mode is supposed to discard: a room typed as ordinary text
+into the weekly grid or a course header is invisible to it and lands in the PDF anyway.
+It also catches a PDF compiled from the private room-bearing variant.
+
+Do not work around either, and do not add rooms.
 
 The same check runs as a **pre-commit hook**, against the staged content, because a
 sheet can be hand-edited and committed without ever being built:
@@ -92,9 +112,11 @@ ln -sf ../../scripts/schedule/pre-commit  .git/hooks/pre-commit
 ln -sf ../../scripts/schedule/post-commit .git/hooks/post-commit
 ```
 
-It exits immediately unless `schedule.tex` or an archival `f26.tex`-style copy is part
-of the change, so it costs nothing on an unrelated commit. Hooks are not cloned, so both
-need installing once per working copy.
+It exits immediately unless a staged file both looks like a schedule sheet by name and
+proves to be one by content, so it costs nothing on an unrelated commit. It checks
+staged **PDFs** as well as sources — the PDF is the artifact actually served, and a
+room-bearing PDF can otherwise be committed alongside a perfectly clean `.tex`. Hooks
+are not cloned, so both need installing once per working copy.
 
 ## What the refresh decides and what it reports
 
