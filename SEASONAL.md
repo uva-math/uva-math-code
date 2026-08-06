@@ -16,7 +16,9 @@ When an item is refreshed, update its **Last done** line in the same commit.
 ## Seminar academic-year rollover
 
 **Due:** every August, before fall classes begin.
-**Last done:** August 2025 (for 2025-26).
+**Last done:** May 2025 (for 2025-26).
+**Status: DUE NOW.** Every seminar currently stops at a `25_26.html` archive; no
+`26_27.html` pages exist yet, and the 2026-27 year starts this fall.
 
 Each seminar has one live page plus one archive page per academic year. Without the
 rollover, the previous year's archive keeps collecting new talks and the new year never
@@ -79,7 +81,7 @@ same way.
 ## Job postings
 
 **Due:** at the start of each hiring season, early fall.
-**Last done:** unknown; the filter currently reads 2026.
+**Last done:** August 2026 (commit 242e4b66, filter bumped to 2026).
 
 [`current-jobs.html`](current-jobs.html) selects posts with `post.job-year >= 2026`. That
 year is hardcoded in two places in the file. If it is not bumped, the page keeps showing
