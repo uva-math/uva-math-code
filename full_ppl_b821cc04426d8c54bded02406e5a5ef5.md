@@ -101,6 +101,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
     }
   });
 
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      e.preventDefault();
+      searchInput.focus();
+      searchInput.select();
+    }
+  });
+
   // Add a reset functionality
   searchInput.addEventListener('input', function() {
     if (this.value === '') {
