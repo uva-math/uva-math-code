@@ -15,7 +15,9 @@ Mathematics competitions are open to all UVA undergraduates, not only to math ma
 
 <h2 class="bodoni-h2">Putnam Competition</h2>
 
-The [William Lowell Putnam Mathematical Competition](https://maa.org/putnam/) is the main undergraduate mathematics competition in the United States and Canada. The **87th Putnam will be held on Saturday, December 5, 2026**, and will be proctored on Grounds; the room and the schedule for the day will be announced here and by the Math Club in the fall.
+The [William Lowell Putnam Mathematical Competition](https://maa.org/putnam/) is an annual mathematics competition for undergraduate college students enrolled at institutions of higher learning in the United States and Canada. It awards scholarships with cash prizes ranging from $250 to $2,500 for the top students and $5,000 to $25,000 for the top schools, plus the top ten individual scores get tuition waived at Harvard, and the top 100 individual scores have their names mentioned by rank to leading universities. It is considered by many to be the most prestigious university-level mathematics examination in the world. The competition was founded in 1927 by Elizabeth Lowell Putnam in memory of her husband William Lowell Putnam, who was an advocate of intercollegiate intellectual competition. The exam has been offered annually since 1938 and is administered by the Mathematical Association of America.
+
+The **87th Putnam will be held on Saturday, December 5, 2026**, and will be proctored on Grounds; the room and the schedule for the day will be announced here and by the Math Club in the fall.
 
 Beginning with the 2026 exam, the format changes from two three-hour sessions to **four 90-minute sessions of three problems each** — twelve problems in total, worth 10 points apiece, with breaks between sessions. The competition is open to undergraduates who have not yet received a college degree, and each student may take it at most four times.
 
