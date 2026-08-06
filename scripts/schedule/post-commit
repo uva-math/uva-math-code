@@ -1,0 +1,150 @@
+#!/usr/bin/env python3
+"""post-commit hook: refresh the class-schedule sheet at most once a day.
+
+Runs the full update -- fetch HoosList, rewrite the mechanical cells, recompile
+schedule.pdf, restage the archival copies -- on the first commit of each day, and
+commits the result *separately* so it never rides along inside an unrelated commit.
+
+Why post-commit and not pre-commit: a pre-commit refresh would fold schedule changes
+into whatever you were actually committing, and would put a network fetch in the path
+of every commit. Here the commit you made is already safe on disk before anything
+happens, and a bad day on the network costs nothing.
+
+It does not push. The new commit goes out with your next push, which for this repo is
+usually seconds later.
+
+Scope of the daily run: it fires on your first commit of the day, so the sheet is as
+current as your commit habit. For a refresh that happens whether or not you commit,
+use a launchd job instead.
+
+Install:
+    ln -sf ../../scripts/schedule/post-commit .git/hooks/post-commit
+"""
+
+from __future__ import annotations
+
+import datetime as dt
+import difflib
+import os
+import pathlib
+import subprocess
+import sys
+
+HERE = pathlib.Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+
+GUARD = "UVA_SCHEDULE_HOOK"
+SHEET_FILES = ("schedule.tex", "schedule.pdf")
+
+
+def git(*args: str, **kw) -> subprocess.CompletedProcess:
+    return subprocess.run(["git", *args], capture_output=True, text=True, **kw)
+
+
+def repo_root() -> pathlib.Path:
+    return pathlib.Path(git("rev-parse", "--show-toplevel", check=True).stdout.strip())
+
+
+def git_dir() -> pathlib.Path:
+    return pathlib.Path(git("rev-parse", "--absolute-git-dir", check=True).stdout.strip())
+
+
+def busy(gd: pathlib.Path) -> bool:
+    """Mid-rebase, mid-merge, mid-cherry-pick: stay out of the way."""
+    return any((gd / n).exists() for n in
+               ("MERGE_HEAD", "CHERRY_PICK_HEAD", "REVERT_HEAD",
+                "rebase-merge", "rebase-apply", "BISECT_LOG"))
+
+
+def main() -> int:
+    if os.environ.get(GUARD):                      # our own commit, below
+        return 0
+
+    gd, root = git_dir(), repo_root()
+    if busy(gd):
+        return 0
+
+    stamp = gd / "schedule-last-refresh"
+    today = dt.date.today().isoformat()
+    if stamp.is_file() and stamp.read_text().strip() == today:
+        return 0
+    # Written before the work, not after: a failure must not retry on every commit
+    # for the rest of the day.
+    stamp.write_text(today + "\n")
+
+    print("schedule: daily refresh from HoosList (once a day; skipped for the rest "
+          "of today)", file=sys.stderr)
+
+    env = {**os.environ, GUARD: "1"}
+    r = subprocess.run([sys.executable, str(HERE / "update.py"), "--write",
+                        "--site", str(root)],
+                       capture_output=True, text=True, env=env, cwd=str(root))
+    sys.stderr.write(r.stdout)
+    if r.returncode != 0:
+        sys.stderr.write(r.stderr)
+        print("schedule: refresh failed; the sheet is unchanged and the commit you "
+              "just made is fine", file=sys.stderr)
+        return 0
+
+    for line in r.stdout.splitlines():
+        if line.startswith(("  NEW", "  DROPPED", "  TITLE", "  INSTR")):
+            print(f"schedule: NEEDS A HUMAN -> {line.strip()}", file=sys.stderr)
+
+    paths = _sheet_paths(root)
+    # status --porcelain rather than diff: a repo may configure an external diff
+    # driver, and then `git diff` prints something this cannot parse.
+    changed = [ln[3:].strip() for ln in
+               git("status", "--porcelain", "--", *paths, cwd=str(root)).stdout.splitlines()]
+    if not changed:
+        print("schedule: already current, nothing to commit", file=sys.stderr)
+        return 0
+
+    # The snapshot stamp moves on every run. Committing that alone would push a
+    # fresh 200KB PDF into history every single day for no change in the data, so
+    # a stamp-only difference is rolled back instead. Compared here in Python for
+    # the same reason as above.
+    old = git("show", "HEAD:schedule.tex", cwd=str(root)).stdout.splitlines()
+    new = (root / "schedule.tex").read_text().splitlines()
+    edits = [ln for ln in difflib.unified_diff(old, new, n=0)
+             if ln[:1] in "+-" and not ln.startswith(("+++", "---"))]
+    if edits and all("SnapshotStamp" in ln for ln in edits):
+        git("checkout", "--", *paths, cwd=str(root))
+        print("schedule: no change in the data today; sheet left as it was",
+              file=sys.stderr)
+        return 0
+
+    git("add", "--", *changed, cwd=str(root))
+    msg = f"Refresh the {_semester(root)} class schedule from HoosList\n"
+    c = subprocess.run(["git", "commit", "-m", msg, "--", *changed],
+                       capture_output=True, text=True, env=env, cwd=str(root))
+    if c.returncode != 0:
+        sys.stderr.write(c.stdout + c.stderr)
+        return 0
+    print(f"schedule: committed {', '.join(changed)} — goes live on your next push",
+          file=sys.stderr)
+    return 0
+
+
+def _sheet_paths(root: pathlib.Path) -> list[str]:
+    """schedule.tex/.pdf plus whatever archival slug this term uses."""
+    paths = list(SHEET_FILES)
+    try:
+        import schedule_build
+        from hooslist_fetch import term_slug
+        slug = term_slug(schedule_build.detect_semester((root / "schedule.tex").read_text()))
+        paths += [f"{slug}.tex", f"{slug}.pdf"]
+    except Exception:
+        pass
+    return paths
+
+
+def _semester(root: pathlib.Path) -> str:
+    try:
+        import schedule_build
+        return schedule_build.detect_semester((root / "schedule.tex").read_text())
+    except Exception:
+        return "class"
+
+
+if __name__ == "__main__":
+    sys.exit(main())

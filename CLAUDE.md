@@ -37,8 +37,10 @@ is self-contained — `pdflatex schedule.tex` reproduces the PDF with no externa
 
 `python3 scripts/schedule/update.py` (or `make schedule`) refreshes the meeting, enrollment,
 and instructor cells from HoosList, recompiles the PDF, restages the archival copies, and
-rewrites the link blocks; a bare run reports and touches nothing, `--write` applies. The
-`uva-class-schedule` skill documents the whole workflow.
+rewrites the link blocks; a bare run reports and touches nothing, `--write` applies.
+`scripts/schedule/post-commit` runs that same update once a day, on the first commit of the
+day, and commits the result separately. The `uva-class-schedule` skill documents the whole
+workflow, including installing both hooks.
 
 Rooms are absent by design and must not be added: they are not public data. The build
 refuses to run if any room argument is filled in, and `scripts/schedule/pre-commit` is a

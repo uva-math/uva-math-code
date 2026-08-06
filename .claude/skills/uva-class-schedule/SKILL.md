@@ -42,6 +42,17 @@ python3 scripts/schedule/update.py --write     # apply, rebuild, restage
 
 `make schedule` and `make schedule ARGS=--write` do the same thing.
 
+There is also a **daily refresh on commit**. `scripts/schedule/post-commit` runs the
+full update on your first commit of each day and commits the result *separately*, so it
+never lands inside an unrelated commit. It does not push — the refresh goes out with
+your next push. If the only thing that moved is the snapshot stamp, it rolls the sheet
+back rather than committing a fresh 200KB PDF for no change in the data. Anything the
+refresh could not decide is printed with a `NEEDS A HUMAN` prefix, so watch for that
+after a commit.
+
+Because it hangs off commits, the sheet is only as current as your commit habit; a
+refresh that runs whether or not you commit would need a launchd job instead.
+
 Always read the dry-run report first — the `--write` run applies only the mechanical
 cells and reports the rest identically, but a `NEW`, `DROPPED`, or `TITLE` line means
 the sheet needs hand editing that no flag will do for you.
@@ -77,12 +88,13 @@ The same check runs as a **pre-commit hook**, against the staged content, becaus
 sheet can be hand-edited and committed without ever being built:
 
 ```bash
-ln -sf ../../scripts/schedule/pre-commit .git/hooks/pre-commit
+ln -sf ../../scripts/schedule/pre-commit  .git/hooks/pre-commit
+ln -sf ../../scripts/schedule/post-commit .git/hooks/post-commit
 ```
 
 It exits immediately unless `schedule.tex` or an archival `f26.tex`-style copy is part
-of the change, so it costs nothing on an unrelated commit. Hooks are not cloned, so it
-needs installing once per working copy.
+of the change, so it costs nothing on an unrelated commit. Hooks are not cloned, so both
+need installing once per working copy.
 
 ## What the refresh decides and what it reports
 
