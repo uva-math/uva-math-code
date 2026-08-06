@@ -5,7 +5,7 @@ permalink: /undergraduate/policies/
 nav_id: Policies
 nav_parent: Undergraduate
 nav_nesting: true
-nav_weight: 8
+nav_weight: 12
 ---
 
 <h1 class="mb-3">Undergraduate program policies</h1>

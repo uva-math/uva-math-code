@@ -4,7 +4,7 @@ layout: ug_page
 ug_info: true
 permalink: /undergraduate/academic-life/
 nav_parent: Undergraduate
-nav_weight: 3
+nav_weight: 5
 math: false
 ---
 <h1 class="mb-3"> Academic life </h1>

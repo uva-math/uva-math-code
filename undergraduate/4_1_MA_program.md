@@ -4,7 +4,7 @@ layout: ug_page
 ug_policy: true
 permalink: /content/41-ba-ma-program/
 nav_parent: Undergraduate
-nav_weight: 8
+nav_weight: 9
 nav_id: 4+1 BA/MA Program
 nav_nesting: true
 ---

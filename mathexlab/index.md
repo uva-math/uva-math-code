@@ -7,7 +7,7 @@ redirect_from:
 nav_id: Math Experimental Lab
 nav_parent: Undergraduate
 nav_nesting: true
-nav_weight: 970
+nav_weight: 971
 ---
 
 <img src="{{site.url}}/mathexlab/images/Group3.jpeg" class="centerImage" style="cermax-width:100%;max-height:300px;height:auto;width:auto" class="mb-3" alt="Group Math Experimental Lab">

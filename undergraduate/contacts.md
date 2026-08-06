@@ -5,7 +5,7 @@ ug_info: true
 nav_id: Contacts
 permalink: /undergrad/contacts/
 nav_parent: Undergraduate
-nav_weight: 3
+nav_weight: 4
 tooltips: true
 ---
 
