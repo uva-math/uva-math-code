@@ -67,9 +67,22 @@ only way to obtain them is a logged-in SIS pull. Every room argument in `schedul
 is empty, `\PublicSchedule` is defined so the room macros expand to nothing, and the
 header prints "rooms omitted".
 
-`schedule_build.py` refuses to compile if `\PublicSchedule` is missing or if any
-`\Sx`/`\Dx` room argument or `\GridRoom` argument is non-empty. That check runs on the
-actual source text, not on trust — do not work around it, and do not add rooms.
+`schedule_build.py` refuses to compile if `\PublicSchedule` is missing or if any room
+argument is non-empty. It brace-matches the `\Sx`/`\Dx` arguments rather than pattern-
+matching them, so a row it cannot read is an error rather than a pass — a checker that
+skipped what it could not parse would clear exactly the rows most likely to have been
+pasted in from a room-bearing copy. Do not work around it, and do not add rooms.
+
+The same check runs as a **pre-commit hook**, against the staged content, because a
+sheet can be hand-edited and committed without ever being built:
+
+```bash
+ln -sf ../../scripts/schedule/pre-commit .git/hooks/pre-commit
+```
+
+It exits immediately unless `schedule.tex` or an archival `f26.tex`-style copy is part
+of the change, so it costs nothing on an unrelated commit. Hooks are not cloned, so it
+needs installing once per working copy.
 
 ## What the refresh decides and what it reports
 

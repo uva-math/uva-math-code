@@ -40,8 +40,10 @@ and instructor cells from HoosList, recompiles the PDF, restages the archival co
 rewrites the link blocks; a bare run reports and touches nothing, `--write` applies. The
 `uva-class-schedule` skill documents the whole workflow.
 
-Rooms are absent by design and must not be added: they are not public data, and the build
-refuses to run if any room argument is filled in.
+Rooms are absent by design and must not be added: they are not public data. The build
+refuses to run if any room argument is filled in, and `scripts/schedule/pre-commit` is a
+hook that runs the same check against staged content (install it with
+`ln -sf ../../scripts/schedule/pre-commit .git/hooks/pre-commit`; hooks are not cloned).
 
 Five pages link the sheet inside a pair of `term-schedule-pdf` HTML comment markers, and all
 five bodies are rewritten together by the build — so the marker pair must never appear as an
