@@ -29,6 +29,24 @@ the 2026-27 pages have not been created.
 
 ---
 
+## Term class-schedule sheet
+
+`schedule.pdf` is the printable MATH class schedule for the current term and `schedule.tex`
+is its source; `f26.pdf` / `f26.tex` are the archival per-term copies. The source is
+self-contained — `pdflatex schedule.tex` reproduces the PDF — but it is **generated**, so a
+hand-edit is lost the next time the term is staged. Rooms are absent by design and must not
+be added: they are not public data.
+
+Five pages link the sheet inside a pair of `term-schedule-pdf` HTML comment markers, and all
+five bodies are rewritten together at rollover — so the marker pair must never appear in a
+file that is not one of those pages, documentation included. Never hand-edit between the
+markers; headings and surrounding prose go outside them. The block tells readers the PDF is a
+print-only convenience sheet and points anyone needing an accessible version at HoosList or
+SIS — the sheet itself is an 8pt landscape grid and is not screen-reader material, so that
+sentence is the accessible alternative and has to stay.
+
+---
+
 ## Content Structure
 
 The website uses [Jekyll](https://jekyllrb.com/) to generate static content from markdown files. All website edits are managed through [GitHub](https://github.com/uva-math/uva-math-code), with changes taking approximately 5 minutes to appear on the live site.

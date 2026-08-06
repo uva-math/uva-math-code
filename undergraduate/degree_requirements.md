@@ -24,8 +24,13 @@ nav_weight: 1
 &mdash; every Mathematics section on two printable pages: meeting times, enrollment,
 and instructors. This is a manual snapshot of
 <a href="https://hooslist.virginia.edu/1268/Group/Mathematics">HoosList</a>; the date and
-time it was taken are printed in the header of the sheet. For live enrollment numbers,
-use HoosList or <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SIS</a>.</p>
+time it was taken are printed in the header of the sheet.</p>
+
+<p><b>The PDF is a print-only convenience sheet.</b> For an accessible version, and for
+live enrollment numbers, use
+<a href="https://hooslist.virginia.edu/1268/Group/Mathematics">HoosList</a> or
+<a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SIS</a>, which work with
+screen readers and can be resized.</p>
 <!-- /term-schedule-pdf -->
 
 

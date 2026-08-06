@@ -1,0 +1,377 @@
+% UVA Mathematics --- Fall 2026 class schedule, compact printable sheet.
+% Builds schedule.pdf and f26.pdf: pdflatex f26.tex, one pass, no dependencies.
+%
+% Generated from a working sheet kept outside this repository, with room assignments
+% stripped. Edits made here are lost the next time the term is restaged.
+\def\PublicSchedule{1}
+\documentclass[8pt,landscape]{extarticle}
+\usepackage[letterpaper,margin=0.32in,top=0.28in,bottom=0.28in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{multicol}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage[table]{colortbl}
+\pagestyle{empty}
+\linespread{0.90}\selectfont
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.28in}
+\definecolor{hdr}{gray}{0.25}
+\definecolor{lite}{gray}{0.45}
+
+\ifdefined\PublicSchedule
+  \newcommand{\VersionLabel}{\enspace\textcolor{lite}{(public reference)}}
+  \newcommand{\Room}[1]{}
+  \newcommand{\GridRoom}[1]{}
+  \newcommand{\RoomLegend}{rooms omitted}
+  \newcommand{\GridRoomNote}{rooms omitted;\space}
+\else
+  \newcommand{\VersionLabel}{}
+  \newcommand{\Room}[1]{#1}
+  \newcommand{\GridRoom}[1]{ (#1)}
+  \newcommand{\RoomLegend}{NCH = New Cabell}
+  \newcommand{\GridRoomNote}{room in parentheses;\space}
+\fi
+
+% column widths for a section row
+\newlength{\wsec}\setlength{\wsec}{0.30in}
+\newlength{\wnum}\setlength{\wnum}{0.40in}
+\newlength{\wtime}\setlength{\wtime}{1.00in}
+\newlength{\wroom}
+\ifdefined\PublicSchedule
+  \setlength{\wroom}{0.20in}
+\else
+  \setlength{\wroom}{0.82in}
+\fi
+\newlength{\wseat}\setlength{\wseat}{0.78in}
+
+% \s{sec}{class#}{days time}{room}{seats}{instructor}
+\newcommand{\Sx}[6]{%
+  \makebox[\wsec][l]{#1}\makebox[\wnum][l]{\textcolor{lite}{#2}}%
+  \makebox[\wtime][l]{#3}\makebox[\wroom][l]{\Room{#4}}%
+  \makebox[\wseat][l]{#5}#6\par}
+% discussion row: section label already carries the D
+\newcommand{\Dx}[5]{%
+  \makebox[\wsec][l]{\textcolor{lite}{#1}}\makebox[\wnum][l]{\textcolor{lite}{#2}}%
+  \makebox[\wtime][l]{\textcolor{lite}{#3}}\makebox[\wroom][l]{\textcolor{lite}{\Room{#4}}}%
+  \makebox[\wseat][l]{}\textcolor{lite}{#5}\par}
+% course header
+\newcommand{\Ch}[3]{%
+  \par\addvspace{2.4pt}\penalty-200
+  {\color{hdr}\hrule height 0.4pt}\nobreak\vspace{0.9pt}\nobreak
+  \textbf{#1}\hspace{0.6em}#2\hfill\textcolor{lite}{#3}\par\nobreak\vspace{0.9pt}\nobreak}
+\newcommand{\tbd}{\textcolor{lite}{---}}
+
+\newcommand{\SnapshotStamp}{manual HoosList snapshot, 2026-08-06 09:20 EDT}
+
+\begin{document}
+
+{\large\textbf{UVA Mathematics --- Fall 2026}\VersionLabel}\quad\hfill
+Aug 25 -- Dec 8\quad\textbullet\quad
+section size = enrolled/capacity\quad\textbullet\quad
+\RoomLegend\quad\textbullet\quad
+\SnapshotStamp
+\vspace{2pt}\hrule height 0.8pt
+\vspace{3pt}
+
+\begin{multicols}{2}
+
+\Ch{MATH 1140}{Financial Mathematics}{3 units}
+\Sx{001}{11834}{TuTh 11:00--12:15}{}{36/36}{\tbd}
+\Sx{002}{12861}{MoWe 2:00--3:15}{}{31/32}{\tbd}
+\Sx{003}{13778}{MWF 11:00--11:50}{}{32/32}{\tbd}
+
+\Ch{MATH 1150}{The Shape of Space}{3 units}
+\Sx{001}{14311}{TuTh 11:00--12:15}{}{35/35}{Choi}
+
+\Ch{MATH 1191}{Survey of Calculus IA}{3 units}
+\Sx{100}{20609}{MWF 9:00--9:50}{}{28/28}{\tbd}
+\Sx{200}{20610}{MWF 10:00--10:50}{}{24/28}{\tbd}
+\Sx{300}{20611}{TuTh 3:30--4:45}{}{18/28}{\tbd}
+\Sx{400}{20612}{TuTh 2:00--3:15}{}{26/28}{\tbd}
+
+\Ch{MATH 1210}{A Survey of Calculus I}{3 units}
+\Sx{100}{10662}{TuTh 8:00--9:15}{}{31/36}{\tbd}
+\Sx{200}{10663}{TuTh 9:30--10:45}{}{35/36}{\tbd}
+\Sx{300}{10665}{TuTh 11:00--12:15}{}{36/36}{\tbd}
+\Sx{400}{13113}{TuTh 12:30--1:45}{}{33/36}{\tbd}
+\Sx{500}{12860}{TuTh 2:00--3:15}{}{34/36}{\tbd}
+\Sx{600}{11882}{TuTh 2:00--3:15}{}{20/20}{\tbd}
+\Sx{700}{13501}{TuTh 5:00--6:15}{}{27/36}{\tbd}
+\Sx{800}{10664}{MWF 11:00--11:50}{}{10/20}{\tbd}
+\Sx{900}{10666}{MoWe 3:30--4:45}{}{33/36}{\tbd}
+\Sx{920}{14109}{MoWe 5:00--6:15}{}{27/36}{\tbd}
+\Sx{940}{10667}{MWF 10:00--10:50}{}{32/36}{\tbd}
+\Sx{960}{11479}{MWF 12:00--12:50}{}{32/36}{\tbd}
+
+\Ch{MATH 1220}{A Survey of Calculus II}{3 units}
+\Sx{300}{14110}{MWF 11:00--11:50}{}{22/40}{\tbd}
+\Sx{400}{19952}{MoWe 3:30--4:45}{}{15/34}{\tbd}
+\Sx{500}{20177}{MoWe 2:00--3:15}{}{29/34}{\tbd}
+
+\Ch{MATH 1310}{Calculus I}{4 units}
+\Sx{100}{10668}{TuTh 9:30--10:45}{}{24/28}{\tbd}
+\Dx{101}{10674}{Fr 10:00--10:50}{}{\tbd}
+\Sx{200}{10669}{TuTh 11:00--12:15}{}{26/28}{\tbd}
+\Dx{201}{10677}{Fr 9:00--9:50}{}{\tbd}
+\Sx{300}{10670}{TuTh 12:30--1:45}{}{24/28}{\tbd}
+\Dx{301}{10675}{Fr 11:00--11:50}{}{\tbd}
+\Sx{400}{10671}{TuTh 2:00--3:15}{}{21/28}{\tbd}
+\Dx{401}{10676}{Fr 12:00--12:50}{}{\tbd}
+\Sx{500}{10672}{TuTh 3:30--4:45}{}{16/28}{\tbd}
+\Dx{501}{10678}{Fr 1:00--1:50}{}{MacMahon}
+\Sx{600}{10673}{TuTh 5:00--6:15}{}{8/28}{\tbd}
+\Dx{601}{10679}{Fr 12:00--12:50}{}{\tbd}
+\Sx{700}{10681}{MoWe 2:00--3:15}{}{24/28}{\tbd}
+\Dx{701}{10680}{Th 5:00--5:50}{}{\tbd}
+\Sx{800}{13502}{MoWe 3:30--4:45}{}{13/28}{\tbd}
+\Dx{801}{13503}{Th 4:00--4:50}{}{\tbd}
+\Sx{900}{11931}{MoWe 5:00--6:15}{}{12/28}{\tbd}
+\Dx{901}{11932}{Fr 1:00--1:50}{}{\tbd}
+
+\Ch{MATH 1320}{Calculus II}{4 units}
+\Sx{100}{10684}{TuTh 9:30--10:45}{}{18/28}{\tbd}
+\Dx{101}{10687}{Fr 10:00--10:50}{}{\tbd}
+\Sx{200}{10682}{TuTh 11:00--12:15}{}{27/28}{\tbd}
+\Dx{201}{10685}{Fr 9:00--9:50}{}{\tbd}
+\Sx{300}{10683}{TuTh 12:30--1:45}{}{20/28}{\tbd}
+\Dx{301}{10686}{Fr 11:00--11:50}{}{\tbd}
+\Sx{400}{12277}{TuTh 2:00--3:15}{}{25/28}{\tbd}
+\Dx{401}{12278}{Fr 12:00--12:50}{}{\tbd}
+\Sx{600}{12161}{MoWe 2:00--3:15}{}{20/28}{\tbd}
+\Dx{601}{12162}{Th 5:00--5:50}{}{\tbd}
+\Sx{700}{19956}{MoWe 3:30--4:45}{}{20/28}{\tbd}
+\Dx{701}{19957}{Th 4:00--4:50}{}{\tbd}
+
+\Ch{MATH 2310}{Calculus III}{4 units}
+\Sx{100}{10688}{MWF 10:00--10:50}{}{36/36}{\tbd}
+\Dx{101}{10689}{Tu 5:00--5:50}{}{\tbd}
+\Sx{200}{12858}{MWF 11:00--11:50}{}{36/36}{\tbd}
+\Dx{201}{12859}{Tu 6:00--6:50}{}{\tbd}
+\Sx{300}{11599}{MoWe 2:00--3:15}{}{34/36}{Dimou}
+\Dx{301}{11600}{Tu 5:00--5:50}{}{\tbd}
+\Sx{400}{11731}{MoWe 3:30--4:45}{}{34/36}{\tbd}
+\Dx{401}{11732}{Th 5:00--5:50}{}{\tbd}
+\Sx{500}{14111}{TuTh 11:00--12:15}{}{36/36}{\tbd}
+\Dx{501}{14112}{We 5:00--5:50}{}{\tbd}
+\Sx{600}{13497}{TuTh 12:30--1:45}{}{26/25}{\tbd}
+\Dx{601}{13498}{We 6:00--6:50}{}{\tbd}
+
+\Ch{MATH 2315}{Advanced Calculus and Linear Algebra I}{4 units}
+\Sx{100}{11601}{TuTh 11:00--12:15}{}{34/36}{Koberda}
+\Dx{101}{12368}{We 5:00--5:50}{}{Navarro Cepeda}
+
+\Ch{MATH 2559}{New Course --- Math. Foundations for Data Analysis}{4 units}
+\Sx{100}{20160}{TuTh 9:30--10:45}{}{14/36}{Foldes}
+\Dx{101}{20614}{We 5:00--5:50}{}{\tbd}
+
+\Ch{MATH 2559}{New Course --- Introduction to Mathematical Writing}{3 units}
+\Sx{200}{20161}{Mo 2:00--3:15}{}{1/18 (9/18)}{Bergner}
+\Sx{}{}{We 2:00--3:15}{}{}{}
+
+\Ch{MATH 3000}{Transition to Higher Mathematics}{4 units}
+\Sx{100}{11933}{MWF 10:00--10:50}{}{34/35}{Sherman}
+\Dx{101}{12051}{Th 5:00--5:50}{}{\tbd}
+
+\Ch{MATH 3100}{Introduction to Probability}{3 units}
+\Sx{001}{10690}{TuTh 9:30--10:45}{}{27/36}{Melcher}
+\Sx{002}{11934}{TuTh 11:00--12:15}{}{34/36}{Melcher}
+\Sx{003}{11602}{MWF 10:00--10:50}{}{36/36}{Turner}
+\Sx{004}{13777}{MWF 11:00--11:50}{}{34/36}{Turner}
+
+\Ch{MATH 3250}{Ordinary Differential Equations}{4 units}
+\Sx{100}{10691}{TuTh 12:30--1:45}{}{36/36}{Farhat}
+\Dx{101}{10693}{We 6:00--6:50}{}{\tbd}
+\Sx{200}{10692}{TuTh 2:00--3:15}{}{36/36}{Farhat}
+\Dx{201}{10694}{We 5:00--5:50}{}{\tbd}
+\Sx{300}{13499}{MoWe 3:30--4:45}{}{39/40}{Dimou}
+\Dx{301}{13500}{Th 5:00--5:50}{}{\tbd}
+
+\Ch{MATH 3310}{Basic Real Analysis}{4 units}
+\Sx{100}{10695}{TuTh 2:00--3:15}{}{35/35}{Wattanawanichkul}
+\Dx{101}{12466}{We 6:00--6:50}{}{\tbd}
+\Sx{200}{10696}{MWF 10:00--10:50}{}{35/35}{Mark}
+\Dx{201}{12467}{Th 5:00--5:50}{}{\tbd}
+\Sx{300}{14115}{MWF 11:00--11:50}{}{35/35}{Mark}
+\Dx{301}{14116}{Th 6:00--6:50}{}{\tbd}
+
+\Ch{MATH 3340}{Complex Variables with Applications}{3 units}
+\Sx{001}{11617}{TuTh 9:30--10:45}{}{33/35}{Qi}
+
+\Ch{MATH 3350}{Applied Linear Algebra}{3 units}
+\Sx{001}{11935}{TuTh 3:30--4:45}{}{44/45}{Holt}
+\Sx{002}{12053}{TuTh 5:00--6:15}{}{41/45}{Holt}
+
+\Ch{MATH 3351}{Elementary Linear Algebra}{3 units}
+\Sx{001}{10697}{MWF 11:00--11:50}{}{34/36}{Cai}
+\Sx{002}{21706}{MoWe 2:00--3:15}{}{8/36}{Hopkins}
+\Sx{003}{14113}{MWF 12:00--12:50}{}{34/36}{Cai}
+
+\Ch{MATH 3354}{Survey of Algebra}{3 units}
+\Sx{001}{10698}{MoWe 3:30--4:45}{}{35/35}{Gazaki}
+\Sx{002}{12163}{TuTh 12:30--1:45}{}{25/25}{\tbd}
+\Sx{003}{14114}{TuTh 9:30--10:45}{}{21/35}{Pappe}
+
+\Ch{MATH 4040}{Discrete Mathematics}{3 units}
+\Sx{001}{10699}{TuTh 9:30--10:45}{}{21/32}{W. Wang}
+
+\Ch{MATH 4110}{Introduction to Stochastic Processes}{3 units}
+\Sx{001}{11705}{TuTh 12:30--1:45}{}{36/36}{Do}
+\Sx{002}{21736}{TuTh 2:00--3:15}{}{7/36}{Do}
+
+\Ch{MATH 4140}{Mathematics of Derivative Securities}{3 units}
+\Sx{001}{11749}{MoWe 2:00--3:15}{}{18/35}{Jayanti}
+
+\Ch{MATH 4220}{PDE and Applied Mathematics}{3 units}
+\Sx{001}{11936}{TuTh 12:30--1:45}{}{39/40}{Humphries}
+
+\Ch{MATH 4310}{Introduction to Real Analysis}{3 units}
+\Sx{001}{11706}{TuTh 11:00--12:15}{}{32/35}{Humphries}
+
+\Ch{MATH 4651}{Advanced Linear Algebra}{3 units}
+\Sx{001}{10700}{MoWe 2:00--3:15}{}{28/35}{Ershov}
+
+\Ch{MATH 4720}{Introduction to Differential Geometry}{3 units}
+\Sx{001}{14117}{TuTh 12:30--1:45}{}{7/16}{Krushkal}
+
+\Ch{MATH 4770}{General Topology}{3 units}
+\Sx{001}{11824}{MoWe 3:30--4:45}{}{22/23}{Hayes}
+
+\Ch{MATH 5653}{Number Theory}{3 units}
+\Sx{001}{14378}{MoWe 5:00--6:15}{}{16/20}{Reidys}
+
+\Ch{MATH 7000}{Seminar on College Teaching}{3 units}
+\Sx{001}{10900}{Mo 3:30--4:45}{}{0/15}{Kurtz}
+
+\Ch{MATH 7340}{Complex Analysis I}{3 units}
+\Sx{001}{11556}{TuTh 2:00--3:15}{}{0/18}{Foldes}
+
+\Ch{MATH 7360}{Probability Theory I}{3 units}
+\Sx{001}{19944}{MoWe 9:30--10:45}{}{6/15}{Gromoll}
+
+\Ch{MATH 7410}{Functional Analysis I}{3 units}
+\Sx{001}{12862}{TuTh 11:00--12:15}{}{7/12}{Abdesselam}
+
+\Ch{MATH 7751}{Algebra I}{3 units}
+\Sx{001}{10701}{MoWe 2:00--3:15}{}{0/18}{Gazaki}
+
+\Ch{MATH 7810}{Algebraic Topology II}{3 units}
+\Sx{001}{10702}{MWF 11:00--11:50}{}{3/12}{Bergner}
+
+\Ch{MATH 7820}{Differential Topology}{3 units}
+\Sx{001}{11342}{TuTh 9:30--10:45}{}{0/18}{Koberda}
+
+\Ch{MATH 8510}{Topics in Number Theory --- Galois Representations}{3 units}
+\Sx{001}{14557}{MoWe 3:30--4:45}{}{4/8}{Coupek}
+
+\Ch{MATH 8559}{New Course --- Ergodic Theory}{3 units}
+\Sx{001}{20901}{MoWe 2:00--3:15}{}{4/12}{Hayes}
+
+\Ch{MATH 8710}{Lie Algebras}{3 units}
+\Sx{001}{13117}{TuTh 12:30--1:45}{}{6/12}{W. Wang}
+
+\Ch{MATH 8750}{Topology of Manifolds}{3 units}
+\Sx{001}{13705}{TuTh 9:30--10:45}{}{5/12}{Maloni}
+
+\Ch{MATH 8850}{Topics in Algebraic Topology}{3 units}
+\Sx{001}{19947}{MoWe 5:00--6:15}{}{4/12}{O. Wang}
+
+\Ch{MATH 8852}{Representation Theory}{3 units}
+\Sx{001}{19946}{TuTh 12:30--1:45}{}{3/12}{Qi}
+
+\Ch{Seminars}{}{3 units each}
+\Sx{9010}{12644}{Fr 1:00--1:50}{}{3/18}{Ramanujan--Serre (Gazaki)}
+\Sx{9250}{10901}{Tu 11:00--12:15}{}{0/12}{Harmonic Analysis \& PDE (Farhat)}
+\Sx{9310}{10902}{Tu 3:30--4:45}{}{0/15}{Operator Theory (Hayes)}
+\Sx{9360}{10987}{Fr 1:00--3:00}{}{2/8}{Probability (Gromoll)}
+\Sx{9410}{11744}{Tu 3:30--6:00}{}{0/20}{Galois--Grothendieck (Rapinchuk)}
+\Sx{9450}{14467}{We 2:00--3:15}{}{1/12}{Mathematical Physics (Abdesselam)}
+\Sx{9820}{10989}{TuTh 2:00--3:15}{}{9/18}{Geometry \& Topology (Mark)}
+\Sx{9950}{10903}{WeFr 3:30--4:45}{}{2/18}{Algebra (Qi)}
+
+\Ch{Independent study and research}{no meeting time}{}
+\textbf{4900} Distinguished Major Thesis: Humphries 12236, Quigley 12295;
+\tbd\ 13802--13805.\par
+\textbf{4993} Independent Study: Gazaki 12361, Hayes 12714, Foldes 12715,
+Maloni 12748, Mark 12752, Koberda 12753, Qi 12971, Humphries 12993,
+James 13051, Ono 13363, Quigley 13779, Abdesselam 14693, Turner 14727.\par
+\textbf{5896} Supervised Study: Foldes 13052, Humphries 13839, Melcher 14617.\par
+\textbf{8998} Prep.\ for Research: Abramenko 10703.\par
+\textbf{8999} Non-Topical Research: Grujic 10704, Ono 12713.\par
+\textbf{9995} Independent Research: Gazaki 12712, Petrov 12093,
+Ershov 13031, Hayes 13035, Mark 11487, Humphries 13830, Quigley 14681,
+Sherman 12068, Maloni 12298, Krushkal 12316, Melcher 12352, Bergner 12705.\par
+\textbf{9998} Prep.\ for Doctoral Research: Abramenko 10705, Gromoll 11173,
+Maloni 13274, Sherman 11512, Melcher 11514, Hayes 12760.\par
+\textbf{9999} Non-Topical Research: Morse 12083, Gromoll 11065, Koberda 12055,
+Kuhn 11066, Humphries 13272, W. Wang 11067, Mark 11227, Krushkal 11228,
+Abdesselam 11229, Abramenko 11230, Rapinchuk 11231, Sherman 11241,
+Ershov 11392, Melcher 11465, Foldes 11508, Quigley 11648, Farhat 11742,
+Bergner 11876, Do 11894, Ono 12666, Reidys 12736, Maloni 14673.\par
+
+\Ch{Evening special sessions}{0 units, exam nights, not listed above}{}
+\textbf{1191} all sections: Th 7:00--9:00 pm.\par
+\textbf{1210} all sections: Th 7:00--9:00 pm, Sep 24, Oct 22, Nov 12, Dec 3.\par
+\textbf{1220} all sections: 7:00--9:00 pm, Sep 24 Th, Oct 22 Th, Nov 17 Tu.\par
+\textbf{1310} all sections: Th 7:00--9:00 pm, Sep 24, Oct 15, Nov 5, Dec 3.\par
+\textbf{1320} all sections: Tu 7:00--9:15 pm, Sep 29, Nov 17.\par
+\textbf{2310-300} only: We 7:00--8:30 pm, Oct 21, Nov 18.\par
+
+\end{multicols}
+
+\vspace{2pt}
+{\color{hdr}\hrule height 0.8pt}
+\vspace{3pt}
+\textbf{Graduate courses and seminars --- weekly grid}\hspace{1em}
+\textcolor{lite}{(5000-level and above; \GridRoomNote
+clashes: 7820/8750 TuTh 9:30; 7410/9250 Tu 11:00;
+8710/8852 TuTh 12:30; 9010/9360 Fr 1:00;
+7751/8559 MoWe 2:00 (+9450 We); 7340/9820 TuTh 2:00;
+7000/8510 Mo 3:30; 8510/9950 We 3:30; 9310/9410 Tu 3:30;
+5653/8850 MoWe 5:00.)}
+\vspace{3pt}
+
+\small
+\setlength{\tabcolsep}{3.8pt}
+\renewcommand{\arraystretch}{1.05}
+\begin{tabular}{@{}>{\bfseries}p{0.55in}
+  p{1.85in} p{1.85in} p{1.85in} p{1.85in} p{1.85in}@{}}
+\hline
+& \textbf{Monday} & \textbf{Tuesday} & \textbf{Wednesday} & \textbf{Thursday}
+& \textbf{Friday}\\
+\hline
+9:30 & 7360 Prob.\ Theory I\GridRoom{} &
+  7820 Diff.\ Top.\GridRoom{};
+  8750 Top.\ Manifolds\GridRoom{} &
+  7360 Prob.\ Theory I\GridRoom{}
+  & 7820 Diff.\ Top.; 8750 Top.\ Manifolds & \\
+11:00 & 7810 Alg.\ Top.\ II\GridRoom{} &
+  7410 Funct.\ Anal.\ I\GridRoom{};
+  \textit{9250 Harm.\ An./PDE\GridRoom{}}
+  & 7810 Alg.\ Top.\ II\GridRoom{} & 7410 Funct.\ Anal.\ I
+  & 7810 Alg.\ Top.\ II\GridRoom{}\\
+12:30 & & 8710 Lie Algebras\GridRoom{};
+  8852 Rep.\ Theory\GridRoom{} & &
+  8710 Lie Algebras; 8852 Rep.\ Theory & \\
+1:00 & & & & & \textit{9010 Ramanujan--Serre\GridRoom{}};
+  \textit{9360 Probability, --3:00\GridRoom{}}\\
+2:00 & 7751 Algebra I\GridRoom{};
+  8559 Ergodic Theory\GridRoom{}
+  & 7340 Complex An.\ I\GridRoom{};
+  \textit{9820 Geom.\ \& Top.\GridRoom{}}
+  & 7751 Algebra I; 8559 Ergodic Theory;
+  \textit{9450 Math.\ Phys.\GridRoom{}}
+  & 7340 Complex An.\ I; \textit{9820 Geom.\ \& Top.} & \\
+3:30 & 7000 College Teaching\GridRoom{};
+  8510 Galois Reps.\GridRoom{}
+  & \textit{9310 Operator Theory\GridRoom{}};
+    \textit{9410 Galois--Groth., --6:00\GridRoom{}}
+  & 8510 Galois Reps.; \textit{9950 Algebra\GridRoom{}} & &
+  \textit{9950 Algebra\GridRoom{}}\\
+5:00 & 5653 Number Theory\GridRoom{};
+  8850 Top.\ Alg.\ Top.\GridRoom{}
+  & & 5653 Number Theory; 8850 Top.\ Alg.\ Top.\ & & \\
+\hline
+\end{tabular}
+
+\end{document}
