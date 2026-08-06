@@ -5,9 +5,15 @@ events: false
 title: Current job opportunities
 ---
 
+{% assign current_jobs = site.posts | where_exp: "post", "post.job-year >= 2026" %}
+
+{% if current_jobs.size == 0 %}
+<p class="lead">There are no open positions in the Department of Mathematics at this time. Please check back later in the fall for the upcoming hiring season.</p>
+{% endif %}
+
 <div class="row my-col-12-zebra">
   {% for post in site.posts limit: 30 %}
-  {% if post.categories contains "jobs" and post.job-year >= 2025 %}
+  {% if post.categories contains "jobs" and post.job-year >= 2026 %}
   <div class="col-12 my-bordered-news-snippets">
   <h2 class="mb-2 mt-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{ post.title }}</a></h2>
   <h6>{{ post.date |  date: "%B %-d, %Y" }}</h6>
