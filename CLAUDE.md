@@ -15,6 +15,17 @@ When processing email requests, extract the key information (speaker names, titl
 
 ---
 
+## Seasonal maintenance
+
+Several pages carry dates that expire on a yearly cycle — the seminar archives, the
+competitions page, the contacts pages, and the job-postings filter. They are listed in
+[`SEASONAL.md`](SEASONAL.md) with their due dates and the primary sources to re-check.
+
+Read that file when working in this repository between July and October, and tell Leo
+which items are due. Do not run a rollover unless asked.
+
+---
+
 ## Content Structure
 
 The website uses [Jekyll](https://jekyllrb.com/) to generate static content from markdown files. All website edits are managed through [GitHub](https://github.com/uva-math/uva-math-code), with changes taking approximately 5 minutes to appear on the live site.
