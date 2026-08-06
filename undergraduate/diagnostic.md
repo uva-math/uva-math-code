@@ -5,9 +5,7 @@ ug_info: true
 permalink: /undergraduate/diagnostic/
 nav_id: Diagnostic
 nav_parent: Undergraduate
-nav_weight: 3
-tooltips: true
-nav_weight: 1
+nav_weight: 2
 tooltips: false
 ---
 
