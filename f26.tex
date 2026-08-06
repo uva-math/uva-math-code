@@ -1,8 +1,12 @@
 % UVA Mathematics --- Fall 2026 class schedule, compact printable sheet.
-% Builds schedule.pdf and f26.pdf: pdflatex f26.tex, one pass, no dependencies.
+% Builds schedule.pdf: pdflatex schedule.tex, one pass, no dependencies.
 %
-% Generated from a working sheet kept outside this repository, with room assignments
-% stripped. Edits made here are lost the next time the term is restaged.
+% This file is the source of record. Refresh the meeting, enrollment, and instructor
+% cells from HoosList with scripts/schedule/update.py --write, which also recompiles
+% the PDF and restages the archival per-term copy.
+%
+% Rooms are deliberately absent -- they are not public data. Every room argument is
+% empty, and the build refuses to run if one is ever filled in.
 \def\PublicSchedule{1}
 \documentclass[8pt,landscape]{extarticle}
 \usepackage[letterpaper,margin=0.32in,top=0.28in,bottom=0.28in]{geometry}
@@ -62,7 +66,7 @@
   \textbf{#1}\hspace{0.6em}#2\hfill\textcolor{lite}{#3}\par\nobreak\vspace{0.9pt}\nobreak}
 \newcommand{\tbd}{\textcolor{lite}{---}}
 
-\newcommand{\SnapshotStamp}{manual HoosList snapshot, 2026-08-06 09:20 EDT}
+\newcommand{\SnapshotStamp}{manual HoosList snapshot, 2026-08-06 10:04 EDT}
 
 \begin{document}
 
@@ -184,7 +188,7 @@ section size = enrolled/capacity\quad\textbullet\quad
 \Dx{101}{10693}{We 6:00--6:50}{}{\tbd}
 \Sx{200}{10692}{TuTh 2:00--3:15}{}{36/36}{Farhat}
 \Dx{201}{10694}{We 5:00--5:50}{}{\tbd}
-\Sx{300}{13499}{MoWe 3:30--4:45}{}{39/40}{Dimou}
+\Sx{300}{13499}{MoWe 3:30--4:45}{}{40/40}{Dimou}
 \Dx{301}{13500}{Th 5:00--5:50}{}{\tbd}
 
 \Ch{MATH 3310}{Basic Real Analysis}{4 units}
@@ -203,7 +207,7 @@ section size = enrolled/capacity\quad\textbullet\quad
 \Sx{002}{12053}{TuTh 5:00--6:15}{}{41/45}{Holt}
 
 \Ch{MATH 3351}{Elementary Linear Algebra}{3 units}
-\Sx{001}{10697}{MWF 11:00--11:50}{}{34/36}{Cai}
+\Sx{001}{10697}{MWF 11:00--11:50}{}{36/36}{Cai}
 \Sx{002}{21706}{MoWe 2:00--3:15}{}{8/36}{Hopkins}
 \Sx{003}{14113}{MWF 12:00--12:50}{}{34/36}{Cai}
 

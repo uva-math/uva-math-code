@@ -1,6 +1,7 @@
-.PHONY: serve serve-full invalidate deploy autodeploy deploy-local uva-arxiv
+.PHONY: serve serve-full invalidate deploy autodeploy deploy-local uva-arxiv schedule
 
 UVA_ARXIV_PYTHON ?= python3
+SCHEDULE_PYTHON ?= python3
 
 define jekyll_serve
 	@mkdir -p /tmp/jekyll-status
@@ -46,3 +47,7 @@ deploy-local:
 
 uva-arxiv:
 	$(UVA_ARXIV_PYTHON) scripts/uva_arxiv/cli.py $(ARGS)
+
+# Bare run reports what would change; make schedule ARGS=--write applies it.
+schedule:
+	$(SCHEDULE_PYTHON) scripts/schedule/update.py $(ARGS)
