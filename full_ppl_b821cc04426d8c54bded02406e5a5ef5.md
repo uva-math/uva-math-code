@@ -12,8 +12,8 @@ redirect_from:
 <div class="col-md-6">
 <!-- Search bar HTML -->
 <div id="search-container">
-  <input type="text" id="search-input" placeholder="Filter by name or UVA ID...">
-  <button id="search-button">Filter</button>
+  <input type="text" id="search-input" autofocus aria-label="Filter people by name or UVA ID" placeholder="Filter by name or UVA ID...">
+  <p id="search-hint">Filters as you type. Press Escape to clear and start over, and click a UVA ID to copy it.</p>
 </div>
 
 <!-- CSS Styles -->
@@ -27,16 +27,17 @@ redirect_from:
     width: 300px;
     font-size: 16px;
   }
-  #search-button {
-    padding: 8px 15px;
-    font-size: 16px;
-    background-color: #232D4B;
-    color: white;
-    border: none;
+  #search-hint {
+    margin-top: 8px;
+    font-size: 0.85em;
+    opacity: 0.75;
+  }
+  td.uva-id {
     cursor: pointer;
   }
-  #search-button:hover {
-    background-color: #0E1836;
+  td.uva-id.copied {
+    background-color: #232D4B;
+    color: white;
   }
   .highlight {
     background-color: yellow;
@@ -47,7 +48,6 @@ redirect_from:
 <script>
 document.addEventListener('DOMContentLoaded', (event) => {
   const searchInput = document.getElementById('search-input');
-  const searchButton = document.getElementById('search-button');
   const table = document.querySelector('table');
   const rows = table.querySelectorAll('tr');
 
@@ -55,9 +55,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
     return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
   }
 
+  function escapeRegExp(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  }
+
+  function resetRows() {
+    rows.forEach((row, index) => {
+      if (index === 0) return; // Skip header row
+
+      row.style.display = '';
+      row.cells[0].innerHTML = row.cells[0].textContent;
+      row.cells[1].innerHTML = row.cells[1].textContent;
+    });
+  }
+
   function performSearch() {
     const searchTerm = removeAccents(searchInput.value.toLowerCase());
-    
+
+    // An empty term would make the highlight regex match forever
+    if (searchTerm === '') {
+      resetRows();
+      return;
+    }
+
     rows.forEach((row, index) => {
       if (index === 0) return; // Skip header row
       
@@ -81,7 +101,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
       let highlightedText = '';
       let lastIndex = 0;
 
-      const regex = new RegExp(searchTerm, 'gi');
+      const regex = new RegExp(escapeRegExp(searchTerm), 'gi');
       let match;
       while ((match = regex.exec(normalizedText)) !== null) {
         highlightedText += originalText.slice(lastIndex, match.index);
@@ -94,31 +114,29 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
   }
 
-  searchButton.addEventListener('click', performSearch);
-  searchInput.addEventListener('keypress', function(e) {
-    if (e.key === 'Enter') {
-      performSearch();
-    }
-  });
+  searchInput.addEventListener('input', performSearch);
 
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
       e.preventDefault();
+      searchInput.value = '';
+      performSearch();
       searchInput.focus();
-      searchInput.select();
     }
   });
 
-  // Add a reset functionality
-  searchInput.addEventListener('input', function() {
-    if (this.value === '') {
-      rows.forEach(row => {
-        row.style.display = '';
-        row.cells[0].innerHTML = row.cells[0].textContent;
-        row.cells[1].innerHTML = row.cells[1].textContent;
-      });
-    }
+  // Clicking an ID copies it, which is what the page is usually opened for
+  table.addEventListener('click', function(e) {
+    const cell = e.target.closest('td.uva-id');
+    if (!cell || !navigator.clipboard) return;
+
+    navigator.clipboard.writeText(cell.textContent.trim()).then(() => {
+      cell.classList.add('copied');
+      window.setTimeout(() => cell.classList.remove('copied'), 900);
+    });
   });
+
+  searchInput.focus();
 });
 </script>
 </div>
@@ -136,7 +154,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     {% for person in sorted_people %}
       <tr>
         <td>{{ person.name }} {{ person.lastname }}</td>
-        <td>{{ person.UVA_id }}</td>
+        <td class="uva-id" title="Click to copy">{{ person.UVA_id }}</td>
         <td><a href="{{ site.url }}/people/{{ person.UVA_id }}/">Page</a></td>
       </tr>
     {% endfor %}
