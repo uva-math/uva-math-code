@@ -28,9 +28,23 @@ serve-full:
 	$(call jekyll_serve,)
 
 deploy:
-	@echo "Committing changes..."
-	@git add -A
-	@git commit --verbose --signoff || echo "No changes to commit"
+	@echo "Checking for changes..."
+	@if git diff --quiet && git diff --cached --quiet && [ -z "$$(git ls-files --others --exclude-standard)" ]; then \
+		echo "No changes detected. Creating/toggling trigger file..."; \
+		if [ -f trigger ]; then \
+			echo "Removing existing trigger file"; \
+			rm trigger; \
+		else \
+			echo "Creating trigger file"; \
+			touch trigger; \
+		fi; \
+		git add trigger; \
+		git commit -m "Trigger CI deployment" --signoff; \
+	else \
+		echo "Changes detected. Committing all changes..."; \
+		git add -A; \
+		git commit --verbose --signoff || echo "No changes to commit"; \
+	fi
 	@echo "Pushing to remote..."
 	@git push
 	@echo "Deployment complete!"
