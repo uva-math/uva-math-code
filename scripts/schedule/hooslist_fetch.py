@@ -119,8 +119,14 @@ def fetch_via_chrome(term: str, group: str) -> str:
         if "Executing JavaScript through AppleScript is turned off" in err:
             raise SystemExit(CHROME_OFF_HELP)
         if "is not running" in err or "isn't running" in err:
-            raise SystemExit("Google Chrome is not running; open it and rerun")
-        raise SystemExit(f"could not read the page out of Chrome: {err}")
+            raise SystemExit("Google Chrome is not running. Open it, load any page, "
+                             "and rerun.")
+        # Anything unexpected still has to leave the reader with something to do: the
+        # two things that actually go wrong here are Chrome being closed and the
+        # AppleScript permission being off.
+        raise SystemExit(f"could not read the page out of Chrome: {err}\n\n"
+                         "Check that Chrome is running, and that View > Developer > "
+                         "Allow JavaScript from Apple Events is ticked.")
     return r.stdout
 
 
