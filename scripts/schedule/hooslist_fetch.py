@@ -6,13 +6,20 @@ HoosList home page, losing the subject path, so every URL here targets HoosList
 directly.
 
 Every section is server-rendered into a `js-section-link` anchor carrying the whole
-record in data-* attributes, so no login and no JS execution is needed. Rooms are the
-one field the public view withholds ("Login Required"), which is why the sheet this
+record in data-* attributes, so parsing needs no login and no JS execution. Rooms are
+the one field the public view withholds ("Login Required"), which is why the sheet this
 feeds carries no rooms -- see --room-note.
+
+Reaching the page is the part that can fail: since August 2026 HoosList sits behind a
+Cloudflare managed challenge, which answers every plain HTTP client with 403 no matter
+what headers it sends. --html parses a page saved from a browser instead, which is the
+way through when that is switched on.
 
 Usage:
     python3 scripts/schedule/hooslist_fetch.py --semester "Fall 2026" -o sections.json
     python3 scripts/schedule/hooslist_fetch.py --term 1268 --group Mathematics
+    python3 scripts/schedule/hooslist_fetch.py --semester "Fall 2026" \\
+        --html saved-page.html -o sections.json
 """
 
 from __future__ import annotations
@@ -21,8 +28,10 @@ import argparse
 import datetime as dt
 import html
 import json
+import pathlib
 import re
 import sys
+import urllib.error
 import urllib.request
 
 BASE = "https://hooslist.virginia.edu"
