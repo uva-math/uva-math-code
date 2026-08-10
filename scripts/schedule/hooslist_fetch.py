@@ -70,13 +70,35 @@ def term_slug(semester: str) -> str:
     return f"{prefix}{year % 100:02d}"
 
 
-def fetch(term: str, group: str) -> str:
+CHALLENGE_HELP = """\
+{url}
+is behind a Cloudflare challenge: it answered HTTP 403 with 'cf-mitigated: challenge'.
+
+The challenge is solved by running JavaScript, so no combination of headers gets a
+plain HTTP client past it -- the page still loads normally in a browser. Refresh from
+a browser instead:
+
+  1. open the URL above in a browser and let the page finish loading
+  2. save it as HTML (in Chrome: File > Save Page As, "Webpage, Single File")
+  3. python3 scripts/schedule/hooslist_fetch.py {which} \\
+         --html <saved-file> -o sections.json
+  4. python3 scripts/schedule/update.py --write --data sections.json"""
+
+
+def fetch(term: str, group: str, which: str = "") -> str:
     url = f"{BASE}/{term}/Group/{group}"
     req = urllib.request.Request(url, headers={"User-Agent": UA})
-    with urllib.request.urlopen(req, timeout=90) as r:
-        if r.status != 200:
-            raise SystemExit(f"{url} returned HTTP {r.status}")
-        return r.read().decode("utf-8", "replace")
+    try:
+        with urllib.request.urlopen(req, timeout=90) as r:
+            if r.status != 200:
+                raise SystemExit(f"{url} returned HTTP {r.status}")
+            return r.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        if e.code == 403 and e.headers.get("cf-mitigated") == "challenge":
+            raise SystemExit(CHALLENGE_HELP.format(url=url, which=which)) from None
+        raise SystemExit(f"{url} returned HTTP {e.code} {e.reason}") from None
+    except urllib.error.URLError as e:
+        raise SystemExit(f"{url} is unreachable: {e.reason}") from None
 
 
 def parse_attrs(anchor: str) -> dict:
@@ -132,7 +154,11 @@ def surname(full: str, ambiguous: set[str]) -> str:
 
 
 def collect(page: str) -> list[dict]:
-    anchors = re.findall(r"""<a href="#"\s+class="js-section-link.*?>""", page, re.S)
+    # Matched on the class alone, not on href="#" as served: saving the page from a
+    # browser rewrites relative links to absolute, so the href a --html run sees is
+    # ".../Group/Mathematics#". No attribute holds a raw '>' (the markup escapes them),
+    # so [^>]* stops at the end of the tag.
+    anchors = re.findall(r"<a\b[^>]*\bjs-section-link\b[^>]*>", page)
     raw = [parse_attrs(a) for a in anchors]
 
     # A surname is ambiguous when two different full names share it.
@@ -175,10 +201,26 @@ def collect(page: str) -> list[dict]:
 
 
 def fetch_sections(semester: str | None = None, term: str | None = None,
-                   group: str = "Mathematics") -> dict:
-    """Fetch and normalize one subject group; returns the document written by -o."""
+                   group: str = "Mathematics", html_path: str | None = None) -> dict:
+    """Fetch and normalize one subject group; returns the document written by -o.
+
+    html_path parses a page saved from a browser instead of fetching it, for when
+    HoosList is behind a challenge -- see CHALLENGE_HELP.
+    """
     code = term or term_code(semester)
-    sections = collect(fetch(code, group))
+    which = f'--semester "{semester}"' if semester else f"--term {code}"
+    if html_path:
+        page = pathlib.Path(html_path).read_text(errors="replace")
+    else:
+        page = fetch(code, group, which)
+    sections = collect(page)
+    if not sections and html_path:
+        raise SystemExit(
+            f"no sections found in {html_path}. A saved HoosList page holds one "
+            "js-section-link anchor per section; a file with none is usually the "
+            "Cloudflare 'Just a moment...' interstitial saved before the real page "
+            "loaded. Reload it in the browser and save again once the table is on "
+            "screen.")
     if not sections:
         raise SystemExit(f"no sections found for term {code} group {group}; check the "
                          "term code against https://hooslist.virginia.edu/ClassSchedule/")
@@ -188,7 +230,8 @@ def fetch_sections(semester: str | None = None, term: str | None = None,
         "term_code": code,
         "term": semester or "",
         "group": group,
-        "source": f"{BASE}/{code}/Group/{group}",
+        "source": (f"{BASE}/{code}/Group/{group}"
+                   + (f" (saved page {html_path})" if html_path else "")),
         "fetched_at": stamp.isoformat(timespec="seconds"),
         "fetched_date": stamp.strftime("%Y-%m-%d"),
         "fetched_time": stamp.strftime("%H:%M %Z"),
@@ -207,12 +250,14 @@ def main() -> int:
     g.add_argument("--semester", help='e.g. "Fall 2026"')
     g.add_argument("--term", help="raw UVA term code, e.g. 1268")
     p.add_argument("--group", default="Mathematics", help="HoosList subject group")
+    p.add_argument("--html", help="parse a page saved from a browser instead of "
+                                  "fetching (use when HoosList is behind a challenge)")
     p.add_argument("-o", "--out", help="write JSON here (default: stdout)")
     p.add_argument("--room-note", action="store_true",
                    help="report how many sections expose a room (public view: none)")
     args = p.parse_args()
 
-    doc = fetch_sections(args.semester, args.term, args.group)
+    doc = fetch_sections(args.semester, args.term, args.group, args.html)
 
     text = json.dumps(doc, indent=1, ensure_ascii=False)
     if args.out:
