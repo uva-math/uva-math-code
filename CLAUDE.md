@@ -42,6 +42,16 @@ rewrites the link blocks; a bare run reports and touches nothing, `--write` appl
 day, and commits the result separately. The `uva-class-schedule` skill documents the whole
 workflow, including installing both hooks.
 
+Since August 2026 that fetch no longer works unattended: HoosList sits behind a Cloudflare
+managed challenge that answers every plain HTTP client with 403 whatever headers it sends,
+and the SIS class-search API that would be the fallback now requires authentication. So the
+daily hook fails at the fetch each day and commits nothing — harmlessly, but it will never
+refresh the sheet on its own again. Refresh from a browser instead: open the term's group
+page (`https://hooslist.virginia.edu/<term>/Group/Mathematics`), save it with File > Save
+Page As, then `make schedule-saved ARGS=--write`. `HTML` defaults to the newest HoosList
+save in `~/Downloads` and can be pointed anywhere. Do not try to defeat the challenge; the
+saved-page route is the supported one.
+
 Rooms are absent by design and must not be added: they are not public data. The build
 refuses to run if any room argument is filled in, and `scripts/schedule/pre-commit` is a
 hook that runs the same check against staged content (install it with

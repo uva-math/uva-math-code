@@ -1,4 +1,4 @@
-.PHONY: serve serve-full invalidate deploy autodeploy deploy-local uva-arxiv schedule
+.PHONY: serve serve-full invalidate deploy autodeploy deploy-local uva-arxiv schedule schedule-saved
 
 UVA_ARXIV_PYTHON ?= python3
 SCHEDULE_PYTHON ?= python3
@@ -65,3 +65,20 @@ uva-arxiv:
 # Bare run reports what would change; make schedule ARGS=--write applies it.
 schedule:
 	$(SCHEDULE_PYTHON) scripts/schedule/update.py $(ARGS)
+
+# HoosList has been behind a Cloudflare challenge since August 2026, which no plain
+# HTTP client can pass, so `make schedule` above (and the daily post-commit hook) can
+# no longer reach it. This refreshes from a page saved out of a browser instead:
+# open the term's group page, File > Save Page As, then run this. HTML defaults to the
+# newest HoosList save in ~/Downloads, which is where that lands.
+# Same convention as `schedule`: bare run reports, ARGS=--write applies.
+HTML ?= $(shell ls -t $(HOME)/Downloads/*HoosList*.html 2>/dev/null | head -1)
+
+schedule-saved:
+	@test -n "$(HTML)" || { \
+	  echo "no saved HoosList page found in ~/Downloads."; \
+	  echo "open https://hooslist.virginia.edu/<term>/Group/Mathematics in a browser,"; \
+	  echo "save it with File > Save Page As, then rerun -- or pass HTML=<file>."; \
+	  exit 1; }
+	@echo "reading $(HTML)"
+	$(SCHEDULE_PYTHON) scripts/schedule/update.py --html "$(HTML)" $(ARGS)

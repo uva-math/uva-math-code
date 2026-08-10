@@ -12,6 +12,11 @@ Usage:
     python3 scripts/schedule/update.py                  # report only
     python3 scripts/schedule/update.py --write          # apply, rebuild, restage
     python3 scripts/schedule/update.py --write --data sections.json   # reuse a dump
+    python3 scripts/schedule/update.py --write --html saved-page.html # browser save
+
+Since August 2026 HoosList answers plain HTTP clients with a Cloudflare challenge, so
+the fetching form above cannot reach it; --html is the working route -- `make
+schedule-saved` wraps it.
 """
 
 from __future__ import annotations
@@ -36,6 +41,9 @@ def main() -> int:
                    help="apply the changes, recompile, and restage")
     p.add_argument("--semester", help='override the term read off the sheet, e.g. "Spring 2027"')
     p.add_argument("--data", help="reuse a hooslist_fetch.py dump instead of fetching")
+    p.add_argument("--html", help="parse a HoosList page saved from a browser instead "
+                                  "of fetching (HoosList is behind a challenge that no "
+                                  "plain HTTP client can pass -- see hooslist_fetch.py)")
     p.add_argument("--site", default=str(REPO), help="repository root")
     args = p.parse_args()
 
@@ -49,7 +57,7 @@ def main() -> int:
     semester = args.semester or schedule_build.detect_semester(tex)
 
     data = (json.load(open(args.data)) if args.data
-            else fetch_sections(semester=semester))
+            else fetch_sections(semester=semester, html_path=args.html))
 
     result, changes, notes = refresh(tex, data)
     report(data, changes, notes)
