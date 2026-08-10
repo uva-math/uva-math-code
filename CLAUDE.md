@@ -55,11 +55,9 @@ JavaScript from Apple Events** turned on (one-time, Chrome remembers). The Apple
 reuses a tab already showing the page, or opens one and closes it again. `--chrome` skips
 the HTTP attempt that will be refused; it takes about a second.
 
-If the Chrome route is unavailable, save the page (File > Save Page As) and run
-`make schedule-saved ARGS=--write`; `HTML` defaults to the newest HoosList save in
-`~/Downloads`. Do not try to defeat the challenge itself — driving the browser Leo already
-uses is the supported route, and the durable fix is an API or allowlist from whoever runs
-HoosList.
+Do not try to defeat the challenge itself, and do not add a save-the-page-by-hand path —
+driving the browser Leo already uses is the supported route. The durable fix is an API or
+allowlist from whoever runs HoosList.
 
 Rooms are absent by design and must not be added: they are not public data. The build
 refuses to run if any room argument is filled in, and `scripts/schedule/pre-commit` is a

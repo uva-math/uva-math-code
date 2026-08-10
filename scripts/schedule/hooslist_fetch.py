@@ -12,14 +12,13 @@ feeds carries no rooms -- see --room-note.
 
 Reaching the page is the part that can fail: since August 2026 HoosList sits behind a
 Cloudflare managed challenge, which answers every plain HTTP client with 403 no matter
-what headers it sends. --html parses a page saved from a browser instead, which is the
-way through when that is switched on.
+what headers it sends. The fetch falls back to reading the page out of a running
+Chrome, which passes the challenge because it is a browser actually in use.
 
 Usage:
     python3 scripts/schedule/hooslist_fetch.py --semester "Fall 2026" -o sections.json
     python3 scripts/schedule/hooslist_fetch.py --term 1268 --group Mathematics
-    python3 scripts/schedule/hooslist_fetch.py --semester "Fall 2026" \\
-        --html saved-page.html -o sections.json
+    python3 scripts/schedule/hooslist_fetch.py --semester "Fall 2026" --chrome
 """
 
 from __future__ import annotations
@@ -95,12 +94,8 @@ page out of Chrome did not work either:
 
 The challenge is solved by running JavaScript, so no plain HTTP client gets past it --
 and a fresh automated browser is blocked outright, harder than curl. The page has to
-come from a browser you actually use. Either fix the Chrome route above, or save the
-page by hand and feed it in:
-
-  1. open the URL above in Chrome and let it finish loading
-  2. File > Save Page As, "Webpage, Single File"
-  3. make schedule-saved ARGS=--write        (or: {which} --html <saved-file>)"""
+come from a browser actually in use, so the Chrome route above is the way in; fix
+whatever it reported and rerun."""
 
 
 def fetch_via_chrome(term: str, group: str) -> str:
@@ -206,10 +201,9 @@ def surname(full: str, ambiguous: set[str]) -> str:
 
 
 def collect(page: str) -> list[dict]:
-    # Matched on the class alone, not on href="#" as served: saving the page from a
-    # browser rewrites relative links to absolute, so the href a --html run sees is
-    # ".../Group/Mathematics#". No attribute holds a raw '>' (the markup escapes them),
-    # so [^>]* stops at the end of the tag.
+    # Matched on the class alone rather than on the href, which is "#" as served but
+    # absolute once a browser has resolved it. No attribute holds a raw '>' (the markup
+    # escapes them), so [^>]* stops at the end of the tag.
     anchors = re.findall(r"<a\b[^>]*\bjs-section-link\b[^>]*>", page)
     raw = [parse_attrs(a) for a in anchors]
 
@@ -253,28 +247,16 @@ def collect(page: str) -> list[dict]:
 
 
 def fetch_sections(semester: str | None = None, term: str | None = None,
-                   group: str = "Mathematics", html_path: str | None = None,
-                   chrome: bool = False) -> dict:
+                   group: str = "Mathematics", chrome: bool = False) -> dict:
     """Fetch and normalize one subject group; returns the document written by -o.
 
-    html_path parses a page saved from a browser instead of fetching it; chrome reads
-    it out of a running Chrome. Both exist because HoosList is behind a challenge no
-    plain HTTP client can pass -- see CHALLENGE_HELP.
+    chrome reads the page out of a running Chrome rather than fetching it, which is
+    how the challenge gets passed -- see CHALLENGE_HELP.
     """
     code = term or term_code(semester)
     which = f'--semester "{semester}"' if semester else f"--term {code}"
-    if html_path:
-        page = pathlib.Path(html_path).read_text(errors="replace")
-    else:
-        page = fetch(code, group, which, chrome)
+    page = fetch(code, group, which, chrome)
     sections = collect(page)
-    if not sections and html_path:
-        raise SystemExit(
-            f"no sections found in {html_path}. A saved HoosList page holds one "
-            "js-section-link anchor per section; a file with none is usually the "
-            "Cloudflare 'Just a moment...' interstitial saved before the real page "
-            "loaded. Reload it in the browser and save again once the table is on "
-            "screen.")
     if not sections:
         raise SystemExit(f"no sections found for term {code} group {group}; check the "
                          "term code against https://hooslist.virginia.edu/ClassSchedule/")
@@ -284,8 +266,7 @@ def fetch_sections(semester: str | None = None, term: str | None = None,
         "term_code": code,
         "term": semester or "",
         "group": group,
-        "source": (f"{BASE}/{code}/Group/{group}"
-                   + (f" (saved page {html_path})" if html_path else "")),
+        "source": f"{BASE}/{code}/Group/{group}",
         "fetched_at": stamp.isoformat(timespec="seconds"),
         "fetched_date": stamp.strftime("%Y-%m-%d"),
         "fetched_time": stamp.strftime("%H:%M %Z"),
@@ -304,8 +285,6 @@ def main() -> int:
     g.add_argument("--semester", help='e.g. "Fall 2026"')
     g.add_argument("--term", help="raw UVA term code, e.g. 1268")
     p.add_argument("--group", default="Mathematics", help="HoosList subject group")
-    p.add_argument("--html", help="parse a page saved from a browser instead of "
-                                  "fetching (use when HoosList is behind a challenge)")
     p.add_argument("--chrome", action="store_true",
                    help="read the page out of a running Chrome via AppleScript, "
                         "skipping the HTTP attempt that the challenge will refuse")
@@ -314,7 +293,7 @@ def main() -> int:
                    help="report how many sections expose a room (public view: none)")
     args = p.parse_args()
 
-    doc = fetch_sections(args.semester, args.term, args.group, args.html, args.chrome)
+    doc = fetch_sections(args.semester, args.term, args.group, args.chrome)
 
     text = json.dumps(doc, indent=1, ensure_ascii=False)
     if args.out:
