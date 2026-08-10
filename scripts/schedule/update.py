@@ -44,6 +44,10 @@ def main() -> int:
     p.add_argument("--html", help="parse a HoosList page saved from a browser instead "
                                   "of fetching (HoosList is behind a challenge that no "
                                   "plain HTTP client can pass -- see hooslist_fetch.py)")
+    p.add_argument("--chrome", action="store_true",
+                   help="read the page out of a running Chrome, skipping the HTTP "
+                        "attempt the challenge will refuse (it falls back to this "
+                        "anyway)")
     p.add_argument("--site", default=str(REPO), help="repository root")
     args = p.parse_args()
 
@@ -57,7 +61,8 @@ def main() -> int:
     semester = args.semester or schedule_build.detect_semester(tex)
 
     data = (json.load(open(args.data)) if args.data
-            else fetch_sections(semester=semester, html_path=args.html))
+            else fetch_sections(semester=semester, html_path=args.html,
+                                chrome=args.chrome))
 
     result, changes, notes = refresh(tex, data)
     report(data, changes, notes)

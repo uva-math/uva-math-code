@@ -30,6 +30,7 @@ import html
 import json
 import pathlib
 import re
+import subprocess
 import sys
 import urllib.error
 import urllib.request
@@ -70,23 +71,68 @@ def term_slug(semester: str) -> str:
     return f"{prefix}{year % 100:02d}"
 
 
+CHROME_SCRIPT = pathlib.Path(__file__).resolve().parent / "chrome_page.applescript"
+
+# Only the section anchors, not the whole 1.5MB document: they carry every field this
+# script reads, and collect() matches them wherever they sit.
+CHROME_JS = ('[...document.querySelectorAll("a.js-section-link")]'
+             '.map(a=>a.outerHTML).join("\\n")')
+
+CHROME_OFF_HELP = """\
+Chrome refused to hand over the page: executing JavaScript through AppleScript is
+turned off. Turn it on once, in Chrome's menu bar:
+
+    View > Developer > Allow JavaScript from Apple Events
+
+Then rerun. Chrome keeps the setting, so this is a one-time step."""
+
 CHALLENGE_HELP = """\
 {url}
-is behind a Cloudflare challenge: it answered HTTP 403 with 'cf-mitigated: challenge'.
+is behind a Cloudflare challenge (HTTP 403, 'cf-mitigated: challenge') and reading the
+page out of Chrome did not work either:
 
-The challenge is solved by running JavaScript, so no combination of headers gets a
-plain HTTP client past it -- the page still loads normally in a browser. Refresh from
-a browser instead:
+{why}
 
-  1. open the URL above in a browser and let the page finish loading
-  2. save it as HTML (in Chrome: File > Save Page As, "Webpage, Single File")
-  3. python3 scripts/schedule/hooslist_fetch.py {which} \\
-         --html <saved-file> -o sections.json
-  4. python3 scripts/schedule/update.py --write --data sections.json"""
+The challenge is solved by running JavaScript, so no plain HTTP client gets past it --
+and a fresh automated browser is blocked outright, harder than curl. The page has to
+come from a browser you actually use. Either fix the Chrome route above, or save the
+page by hand and feed it in:
+
+  1. open the URL above in Chrome and let it finish loading
+  2. File > Save Page As, "Webpage, Single File"
+  3. make schedule-saved ARGS=--write        (or: {which} --html <saved-file>)"""
 
 
-def fetch(term: str, group: str, which: str = "") -> str:
+def fetch_via_chrome(term: str, group: str) -> str:
+    """Read the section anchors out of a running Chrome, via AppleScript.
+
+    Chrome passes the Cloudflare challenge because it is a real browser with a real
+    profile; Playwright/Chromium does not -- Cloudflare fingerprints it and returns a
+    firewall block rather than a challenge. So this drives the browser already on the
+    desk instead of launching one.
+    """
     url = f"{BASE}/{term}/Group/{group}"
+    try:
+        r = subprocess.run(["osascript", str(CHROME_SCRIPT), url, CHROME_JS],
+                           capture_output=True, text=True, timeout=180)
+    except FileNotFoundError:
+        raise SystemExit("osascript not found; the Chrome route is macOS-only") from None
+    except subprocess.TimeoutExpired:
+        raise SystemExit("Chrome did not finish loading the page within 180s") from None
+    if r.returncode != 0:
+        err = " ".join(r.stderr.split())
+        if "Executing JavaScript through AppleScript is turned off" in err:
+            raise SystemExit(CHROME_OFF_HELP)
+        if "is not running" in err or "isn't running" in err:
+            raise SystemExit("Google Chrome is not running; open it and rerun")
+        raise SystemExit(f"could not read the page out of Chrome: {err}")
+    return r.stdout
+
+
+def fetch(term: str, group: str, which: str = "", chrome: bool = False) -> str:
+    url = f"{BASE}/{term}/Group/{group}"
+    if chrome:
+        return fetch_via_chrome(term, group)
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     try:
         with urllib.request.urlopen(req, timeout=90) as r:
@@ -95,7 +141,13 @@ def fetch(term: str, group: str, which: str = "") -> str:
             return r.read().decode("utf-8", "replace")
     except urllib.error.HTTPError as e:
         if e.code == 403 and e.headers.get("cf-mitigated") == "challenge":
-            raise SystemExit(CHALLENGE_HELP.format(url=url, which=which)) from None
+            print("hooslist: challenged over HTTP; reading the page out of Chrome",
+                  file=sys.stderr)
+            try:
+                return fetch_via_chrome(term, group)
+            except SystemExit as why:
+                raise SystemExit(CHALLENGE_HELP.format(
+                    url=url, which=which, why=f"    {why}".replace("\n", "\n    "))) from None
         raise SystemExit(f"{url} returned HTTP {e.code} {e.reason}") from None
     except urllib.error.URLError as e:
         raise SystemExit(f"{url} is unreachable: {e.reason}") from None
@@ -201,18 +253,20 @@ def collect(page: str) -> list[dict]:
 
 
 def fetch_sections(semester: str | None = None, term: str | None = None,
-                   group: str = "Mathematics", html_path: str | None = None) -> dict:
+                   group: str = "Mathematics", html_path: str | None = None,
+                   chrome: bool = False) -> dict:
     """Fetch and normalize one subject group; returns the document written by -o.
 
-    html_path parses a page saved from a browser instead of fetching it, for when
-    HoosList is behind a challenge -- see CHALLENGE_HELP.
+    html_path parses a page saved from a browser instead of fetching it; chrome reads
+    it out of a running Chrome. Both exist because HoosList is behind a challenge no
+    plain HTTP client can pass -- see CHALLENGE_HELP.
     """
     code = term or term_code(semester)
     which = f'--semester "{semester}"' if semester else f"--term {code}"
     if html_path:
         page = pathlib.Path(html_path).read_text(errors="replace")
     else:
-        page = fetch(code, group, which)
+        page = fetch(code, group, which, chrome)
     sections = collect(page)
     if not sections and html_path:
         raise SystemExit(
@@ -252,12 +306,15 @@ def main() -> int:
     p.add_argument("--group", default="Mathematics", help="HoosList subject group")
     p.add_argument("--html", help="parse a page saved from a browser instead of "
                                   "fetching (use when HoosList is behind a challenge)")
+    p.add_argument("--chrome", action="store_true",
+                   help="read the page out of a running Chrome via AppleScript, "
+                        "skipping the HTTP attempt that the challenge will refuse")
     p.add_argument("-o", "--out", help="write JSON here (default: stdout)")
     p.add_argument("--room-note", action="store_true",
                    help="report how many sections expose a room (public view: none)")
     args = p.parse_args()
 
-    doc = fetch_sections(args.semester, args.term, args.group, args.html)
+    doc = fetch_sections(args.semester, args.term, args.group, args.html, args.chrome)
 
     text = json.dumps(doc, indent=1, ensure_ascii=False)
     if args.out:

@@ -42,15 +42,24 @@ rewrites the link blocks; a bare run reports and touches nothing, `--write` appl
 day, and commits the result separately. The `uva-class-schedule` skill documents the whole
 workflow, including installing both hooks.
 
-Since August 2026 that fetch no longer works unattended: HoosList sits behind a Cloudflare
-managed challenge that answers every plain HTTP client with 403 whatever headers it sends,
-and the SIS class-search API that would be the fallback now requires authentication. So the
-daily hook fails at the fetch each day and commits nothing — harmlessly, but it will never
-refresh the sheet on its own again. Refresh from a browser instead: open the term's group
-page (`https://hooslist.virginia.edu/<term>/Group/Mathematics`), save it with File > Save
-Page As, then `make schedule-saved ARGS=--write`. `HTML` defaults to the newest HoosList
-save in `~/Downloads` and can be pointed anywhere. Do not try to defeat the challenge; the
-saved-page route is the supported one.
+Since August 2026 HoosList sits behind a Cloudflare managed challenge: it answers every
+plain HTTP client with 403 whatever headers it sends, and the SIS class-search API that
+would be the fallback now requires authentication. The challenge is passed by running its
+JavaScript, so the page has to come from a real browser — and not a fresh automated one,
+which Cloudflare fingerprints and blocks outright, harder than curl.
+
+So the fetch falls back automatically to reading the page out of a running Chrome, via
+`scripts/schedule/chrome_page.applescript`. `make schedule` and the daily hook work
+unchanged; they just need Chrome running, and Chrome's **View > Developer > Allow
+JavaScript from Apple Events** turned on (one-time, Chrome remembers). The AppleScript
+reuses a tab already showing the page, or opens one and closes it again. `--chrome` skips
+the HTTP attempt that will be refused; it takes about a second.
+
+If the Chrome route is unavailable, save the page (File > Save Page As) and run
+`make schedule-saved ARGS=--write`; `HTML` defaults to the newest HoosList save in
+`~/Downloads`. Do not try to defeat the challenge itself — driving the browser Leo already
+uses is the supported route, and the durable fix is an API or allowlist from whoever runs
+HoosList.
 
 Rooms are absent by design and must not be added: they are not public data. The build
 refuses to run if any room argument is filled in, and `scripts/schedule/pre-commit` is a

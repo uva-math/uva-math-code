@@ -66,10 +66,10 @@ uva-arxiv:
 schedule:
 	$(SCHEDULE_PYTHON) scripts/schedule/update.py $(ARGS)
 
-# HoosList has been behind a Cloudflare challenge since August 2026, which no plain
-# HTTP client can pass, so `make schedule` above (and the daily post-commit hook) can
-# no longer reach it. This refreshes from a page saved out of a browser instead:
-# open the term's group page, File > Save Page As, then run this. HTML defaults to the
+# Fallback for when the Chrome route is unavailable. HoosList has been behind a
+# Cloudflare challenge since August 2026, so `make schedule` above reads the page out of
+# a running Chrome instead of fetching it; if Chrome is not around, save the page by hand
+# (open the term's group page, File > Save Page As) and run this. HTML defaults to the
 # newest HoosList save in ~/Downloads, which is where that lands.
 # Same convention as `schedule`: bare run reports, ARGS=--write applies.
 HTML ?= $(shell ls -t $(HOME)/Downloads/*HoosList*.html 2>/dev/null | head -1)
