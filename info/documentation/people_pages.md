@@ -19,27 +19,27 @@ Each person's page corresponds to a single file in the `_departmentpeople/` fold
 
 **Note.** The subfolders in `_departmentpeople/` are purely for convenience - they do not affect anything in the actual website.
 
-Here's an example of such a file for a particular faculty member. The page itself is at [{{site.url}}/people/aso9t/]({{site.url}}/people/aso9t/).
+Here's an example of such a file for a particular faculty member. The page itself is at [{{site.url}}/people/lap5r/]({{site.url}}/people/lap5r/).
 
 {% highlight markdown linenos %}
 ---
-UVA_id: aso9t
-lastname: Obus
-name: Andrew
+UVA_id: lap5r
+lastname: Petrov
+name: Leonid
+pronouns: he/him
 general_position: faculty
-position: Assistant Professor
-office: 208 Kerchof Hall
-phone: 434-924-4930
-email: obus@virginia.edu
-image: __SITE_URL__/img/people/Obus.jpg
-personal_page: http://people.virginia.edu/~aso9t/
-areas:
-  - Algebra, Arithmetic Geometry/Number Theory, Representation Theory
-  - Geometry, Topology
-grad_general_areas:
-  - algebra
-grad_special_areas:
-  - algebraic_geometry
+position: Professor
+office: 209 Kerchof Hall
+phone: 434-924-4167
+email: petrov@virginia.edu
+image: __SITE_URL__/img/people/2023-fall/Leonid.jpg
+personal_page: http://lpetrov.cc/
+
+research_tags:
+- PR
+- CO
+
+specialty: Integrable Probability, Algebraic Combinatorics
 ---
 
 
@@ -52,13 +52,13 @@ grad_special_areas:
 
 Having all data on people in one place allows to quickly reference them by
 UVA computing ID. For example, the code
-`{% raw %}{% include person_info.html UVA_id="aso9t" %}{% endraw %}`
+`{% raw %}{% include person_info.html UVA_id="lap5r" %}{% endraw %}`
 produces the following nice listing of information about a
-faculty member with computing ID `aso9t`:
+faculty member with computing ID `lap5r`:
 
-{% include person_info.html UVA_id="aso9t" %}
+{% include person_info.html UVA_id="lap5r" %}
 
-This is powered by [this include file](https://github.com/uva-math/uva-math-code/blob/master/_includes/person_info.html) on GitHub, and one can create similar files to get, for example, reference without office number. All links are also taken from the person's data and are handled correctly in case, say, personal page or phone is missing:&nbsp; {% include person_info.html UVA_id="ds5nd" %}
+This is powered by [this include file](https://github.com/uva-math/uva-math-code/blob/master/_includes/person_info.html) on GitHub, and one can create similar files to get, for example, reference without office number. All links are also taken from the person's data and are handled correctly in case, say, personal page or phone is missing:&nbsp; {% include person_info.html UVA_id="hcg3m" %}
 
 If there is no such computing ID (e.g. if a person left), then one space is displayed: {% include person_info.html UVA_id="no_such_id" %}. (Code: `{% raw %}{% include person_info.html UVA_id="no_such_id" %}{% endraw %}`)
 
@@ -87,11 +87,16 @@ This field is used to put the person in a correct listing such as [{{site.url}}/
 - `gradstudent`
 - `lecturer`
 - `postdoc`
+- `recent-postdoc` (postdocs who recently finished; they appear only under "Recent Postdoctoral Scholars" on [{{site.url}}/postdocs/]({{site.url}}/postdocs/), and are left out of the alphabetical [directory]({{site.url}}/directory/))
 - `staff`
 
 This field is also used in automatically counting the number of faculty/postdocs/etc on pages like [about]({{site.url}}/about/).
 
 The exact title of the position is under `position:` configuration field, as in `position: Assistant Professor`.
+
+<span class="nonupper-h5">years</span>
+
+Optional. Give the years the person held the position, as in `years: 2023-2026`. When present, it is printed after the position title, both in listings and on the person's own page. It is meant for people who have left, such as `recent-postdoc`; leave it out for current members.
 
 <span class="nonupper-h5">image</span>
 

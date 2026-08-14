@@ -3,16 +3,11 @@ UVA_id: bug4bt
 lastname: Blackwell
 name: Sarah
 pronouns: she/her
-general_position: postdoc
+general_position: recent-postdoc
 position: NSF Postdoctoral Research Fellow
-office: 223 Kerchof Hall 
-email: blackwell@virginia.edu
+years: 2023-2026
 image: __SITE_URL__/img/people/2023-fall/Blackwell.jpg
 personal_page: https://seblackwell.com/
-
-research_tags:
-- GE
-- TO
 
 specialty:  Low-dimensional Topology, Symplectic/Contact Geometry
 

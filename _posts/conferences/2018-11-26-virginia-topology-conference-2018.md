@@ -44,8 +44,7 @@ Daniel Ruberman</a> (Brandeis)</li>
 <ul id="lists">
 <li><a href="https://www.math.princeton.edu/people/irving-dai">
 Irving Dai</a> (Princeton)</li>
-<li><a href="http://math.virginia.edu/people/gfi8ps/">
-Gabriel Islambouli</a> (Virginia)</li>
+<li>Gabriel Islambouli (Virginia)</li>
 <li><a href="http://math.rice.edu/~mk29/">
 Miriam Kuzbary</a> (Rice)</li>
 <li><a href="https://williamolsen.github.io/">

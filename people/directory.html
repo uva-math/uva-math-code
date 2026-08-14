@@ -19,6 +19,7 @@ nav_nesting: true
 
 <div class="my-row-zebra">
 {% for ppl in sorted_people %}
+{% unless ppl.general_position == 'recent-postdoc' %}
   <div class="row" style="padding:10px 0px">
     <div class="col-md-6">
       <a href="{{site.url}}/people/{{ppl.UVA_id}}/" class="nonupper-h5">{{ ppl.name }} {{ ppl.lastname }}</a>
@@ -72,6 +73,7 @@ nav_nesting: true
       {% endif %}
     </div>
   </div>
+{% endunless %}
 {% endfor %}
 </div>
 
