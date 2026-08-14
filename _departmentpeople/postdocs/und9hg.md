@@ -7,7 +7,7 @@ position: Whyburn Research Associate and Lecturer
 office: 311 Kerchof Hall
 phone:
 email: tjweisman@virginia.edu
-image:
-personal_page:
+image: __SITE_URL__/img/people/Weisman.jpg
+personal_page: https://tjweisman.github.io/
 
 ---
