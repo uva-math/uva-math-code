@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Update the printable term class-schedule sheet end to end.
 
-Pulls the current numbers from HoosList, rewrites the cells it can rewrite
-mechanically, recompiles schedule.pdf, restages the archival per-term copy, and
-refreshes the link blocks. Everything it cannot decide -- new sections, cancelled
-sections, retitled courses, split meeting patterns -- is reported for a human.
+Pulls the current numbers from HoosList, rewrites the cells, adds the sections
+HoosList has added and drops the ones it no longer lists, recompiles schedule.pdf,
+restages the archival per-term copy, and refreshes the link blocks. The result is a
+snapshot of HoosList. The few things a cell cannot express -- a retitled course, a
+section meeting at two different times -- are reported for a human.
 
 A bare run is a dry run: it fetches, reports what would change, and touches nothing.
 

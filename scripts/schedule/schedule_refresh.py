@@ -2,13 +2,16 @@
 """Refresh the enrollment/instructor/meeting numbers in schedule.tex from a
 hooslist_fetch.py dump, and report everything it could not do mechanically.
 
-Sections are matched on class number, which is stable for the life of a term. Only
-three cells are ever rewritten: the meeting time, the seat count, and the instructor.
-The room cell is never written and is empty throughout the sheet -- rooms are not
-public data and must not be added.
+Sections are matched on class number, which is stable for the life of a term. Three
+cells are rewritten in place -- the meeting time, the seat count, and the instructor
+-- and the sheet gains the rows HoosList has added and loses the ones it no longer
+lists, so the PDF stays a faithful snapshot without hand editing. The room cell is
+never written and is empty throughout the sheet -- rooms are not public data and
+must not be added.
 
-Anything needing judgment (new sections, cancelled sections, retitled courses,
-split meeting patterns, unfamiliar instructor names) is reported, not applied.
+The few things a cell cannot express are still reported rather than guessed: a
+retitled course, a section meeting at two different times, an unfamiliar instructor
+name, and a new section whose topic block is ambiguous.
 
 Usage:
     python3 scripts/schedule/schedule_refresh.py --tex schedule.tex --data sections.json
@@ -84,11 +87,134 @@ def instructor_cell(existing: str, name: str) -> tuple[str, str | None]:
     return new, None
 
 
+CH_RE = re.compile(r"^\\Ch\{MATH (\d{4})\}")
+ROW_RE = re.compile(r"^\\(?:Sx|Dx)\{(\d+)\}")
+NUM_RE = re.compile(r"^\\(?:Sx|Dx)\{[^}]*\}\{(\d+)\}")
+CONT_RE = re.compile(r"^\\(?:Sx|Dx)\{[^}]*\}\{\s*\}")
+
+
+DAY_ORDER = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]
+
+
+def merge_meetings(meetings: list[dict]) -> str:
+    """Fold patterns that share a time into one cell: HoosList lists 'We 2:00--3:15'
+    and 'Mo 2:00--3:15' separately for what the sheet writes 'MoWe 2:00--3:15'.
+    Return '' when the times differ, which no single cell can express."""
+    times = {(m["start"], m["end"]) for m in meetings if m["start"]}
+    if len(times) != 1 or not all(m["days"] for m in meetings):
+        return ""
+    days = set()
+    for m in meetings:
+        days |= ({"Mo", "We", "Fr"} if m["days"] == "MWF"
+                 else set(re.findall(r"[A-Z][a-z]", m["days"])))
+    order = [d for d in DAY_ORDER if d in days]
+    if not order:
+        return ""
+    start, end = times.pop()
+    return f"{'MWF' if order == ['Mo', 'We', 'Fr'] else ''.join(order)} {start}--{end}"
+
+
+def section_line(sec: dict) -> str:
+    """The sheet row for a section. The room argument stays empty: the sheet
+    carries no rooms. `when` is only the first pattern, so a section split across
+    days has to be folded the same way an existing row would be."""
+    macro = "Dx" if sec["component"] == "Discussion" else "Sx"
+    when = sec["when"] if len(sec["meetings"]) == 1 else merge_meetings(sec["meetings"])
+    return (f"\\{macro}{{{sec['section']}}}{{{sec['class_number']}}}"
+            f"{{{when or sec['when']}}}{{}}"
+            + (f"{{{sec['seats']}}}" if macro == "Sx" else "")
+            + "{" + (sec["instructor"] or r"\tbd") + "}")
+
+
+def remove_sections(tex: str, dropped: list[str]) -> tuple[str, list[str]]:
+    """Delete the rows for class numbers HoosList no longer lists, along with any
+    continuation rows they carry, and any course header left with no rows."""
+    lines, changes = tex.split("\n"), []
+    keep, i = [], 0
+    while i < len(lines):
+        m = NUM_RE.match(lines[i])
+        if m and m.group(1) in dropped:
+            changes.append(f"  -row  class {m.group(1)}: {lines[i]}")
+            i += 1
+            while i < len(lines) and CONT_RE.match(lines[i]):
+                i += 1
+            continue
+        keep.append(lines[i])
+        i += 1
+
+    lines, keep = keep, []
+    for i, line in enumerate(lines):
+        m = CH_RE.match(line)
+        if m and not (i + 1 < len(lines) and ROW_RE.match(lines[i + 1])):
+            changes.append(f"  -course MATH {m.group(1)}: no sections left")
+            continue
+        keep.append(line)
+
+    return "\n".join(keep), changes
+
+
+def insert_sections(tex: str, missing: list[dict]) -> tuple[str, list[str], list[str]]:
+    """Add sections HoosList has that the sheet does not, in catalog and section
+    order. Return (new source, applied changes, items needing a human).
+
+    A section of a course already on the sheet goes into that course's block. A
+    course the sheet has never carried gets a new block, which needs a later \\Ch
+    to anchor it -- the tail of the sheet is hand-written prose and notes, so
+    appending past the last block would land in the wrong place.
+    """
+    lines = tex.split("\n")
+    changes, notes = [], []
+
+    for sec in sorted(missing, key=lambda s: (s["catalog"], s["section"])):
+        row = section_line(sec)
+        label = f"MATH {sec['catalog']}-{sec['section']}"
+        heads = [(i, m.group(1)) for i, l in enumerate(lines) if (m := CH_RE.match(l))]
+        same = [i for i, cat in heads if cat == sec["catalog"]]
+
+        # An xx59 topics number carries one block per topic, so the catalog number
+        # alone does not identify the block; pick the one whose title shares a
+        # substantive word with this section's topic.
+        if len(same) > 1:
+            want = words(sec["topic"] or sec["title"])
+            best = max(len(want & words(lines[i])) for i in same)
+            same = [i for i in same if len(want & words(lines[i])) == best] if best else same
+            if len(same) > 1:
+                notes.append(f"NEW      {label} \"{sec['topic'] or sec['title']}\" "
+                             f"matches {len(same)} MATH {sec['catalog']} blocks; add "
+                             f"it to the right one by hand:\n           {row}")
+                continue
+        hdr = same[0] if same else None
+
+        if hdr is not None:
+            end = hdr + 1
+            while end < len(lines) and ROW_RE.match(lines[end]):
+                end += 1
+            at = next((i for i in range(hdr + 1, end)
+                       if ROW_RE.match(lines[i]).group(1) > sec["section"]), end)
+            changes.append(f"  +row  {label}: {row}")
+        else:
+            at = next((i for i, cat in heads if cat > sec["catalog"]), None)
+            if at is None:
+                notes.append(f"NEW      {label} \"{sec['title']}\" ({sec['credits']}) "
+                             "sorts after every course on the sheet; add its block by "
+                             f"hand:\n           {row}")
+                continue
+            credits = re.sub(r"\bUnits?\b", lambda m: m.group(0).lower(), sec["credits"])
+            lines[at:at] = [f"\\Ch{{MATH {sec['catalog']}}}{{{sec['title']}}}"
+                            f"{{{credits}}}", row, ""]
+            changes.append(f"  +course {label} \"{sec['title']}\" ({credits})")
+            continue
+
+        lines.insert(at, row)
+
+    return "\n".join(lines), changes, notes
+
+
 def refresh(tex: str, data: dict) -> tuple[str, list[str], list[str]]:
     """Return (new source, applied changes, items needing a human)."""
     by_num = {s["class_number"]: s for s in data["sections"]}
 
-    changes, notes, seen = [], [], set()
+    changes, notes, seen, dropped = [], [], set(), []
     out, cursor = [], 0
 
     for macro, a, (s0, s1) in scan(tex):
@@ -100,22 +226,24 @@ def refresh(tex: str, data: dict) -> tuple[str, list[str], list[str]]:
             continue
         sec = by_num.get(num)
         if sec is None:
-            notes.append(f"DROPPED  {a[0] or '?':>4} class {num} is in the sheet but "
-                         "not in HoosList (cancelled, or moved to another subject)")
+            dropped.append(num)
             out.append(tex[s0:s1])
             continue
         seen.add(num)
         new = list(a)
         label = f"{sec['catalog']}-{sec['section']} ({num})"
 
-        # meeting time: only when the section still has exactly one meeting pattern
-        if len(sec["meetings"]) == 1 and sec["when"] and new[2].strip() != sec["when"]:
-            changes.append(f"  time  {label}: {new[2]} -> {sec['when']}")
-            new[2] = sec["when"]
-        elif len(sec["meetings"]) > 1:
+        # meeting time. Several patterns at one time are the same meeting split
+        # across days, so they fold back into one cell; genuinely different times
+        # cannot go in a one-line cell and are left for a human.
+        when = sec["when"] if len(sec["meetings"]) == 1 else merge_meetings(sec["meetings"])
+        if when and new[2].strip() != when:
+            changes.append(f"  time  {label}: {new[2]} -> {when}")
+            new[2] = when
+        elif not when:
             pats = "; ".join(m["when"] for m in sec["meetings"])
-            notes.append(f"SPLIT    {label} has {len(sec['meetings'])} meeting "
-                         f"patterns ({pats}); left alone")
+            notes.append(f"SPLIT    {label} meets at {len(sec['meetings'])} different "
+                         f"times ({pats}); left alone")
 
         # seats (\Sx only -- discussions inherit the lecture's count, so the sheet
         # deliberately leaves that cell empty)
@@ -136,19 +264,18 @@ def refresh(tex: str, data: dict) -> tuple[str, list[str], list[str]]:
     out.append(tex[cursor:])
     result = "".join(out)
 
-    # sections HoosList has that the sheet does not. The room argument stays empty:
-    # the sheet carries no rooms.
-    for sec in data["sections"]:
-        if sec["class_number"] in seen or sec["component"] not in INLINE:
-            continue
-        macro = "Dx" if sec["component"] == "Discussion" else "Sx"
-        line = (f"\\{macro}{{{sec['section']}}}{{{sec['class_number']}}}"
-                f"{{{sec['when']}}}{{}}"
-                + (f"{{{sec['seats']}}}" if macro == "Sx" else "")
-                + "{" + (sec["instructor"] or r"\tbd") + "}")
-        notes.append(f"NEW      MATH {sec['catalog']}-{sec['section']} "
-                     f"\"{sec['title']}\" ({sec['credits']}) -- insert in catalog "
-                     f"order:\n           {line}")
+    # sections the sheet carries that HoosList no longer lists
+    if dropped:
+        result, removed = remove_sections(result, dropped)
+        changes.extend(removed)
+
+    # sections HoosList has that the sheet does not
+    missing = [s for s in data["sections"]
+               if s["class_number"] not in seen and s["component"] in INLINE]
+    if missing:
+        result, added, blocked = insert_sections(result, missing)
+        changes.extend(added)
+        notes.extend(blocked)
 
     # course headers: catch a genuinely retitled course. The sheet abbreviates
     # freely ("PDE and Applied Mathematics") and replaces the placeholder title of
