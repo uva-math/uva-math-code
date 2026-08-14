@@ -10,7 +10,7 @@ redirect_from:
 
 For questions about the Math Experimental Lab, please contact:
 
-[Sara Maloni](https://math.virginia.edu/people/sm4cw/)  
-Associate Professor  
+[Leonid Petrov](https://math.virginia.edu/people/lap5r/)  
+Professor  
 Department of Mathematics  
 University of Virginia

@@ -8,13 +8,9 @@ redirect_from:
 
 <h2 class="mb-3">Schedule</h2>
 
-### Spring 2026
+### Fall 2027
 
-<ul>
-  <li>Introductory group meeting: Tuesday, February 17, 5-6pm, Kerchof Hall 111 </li>
-  <li>Visit from Starr Hill Pathways: Friday, March 20, 10am-12pm, Chemistry Building 202 </li>
-  <li>Final group presentations: Thursday, April 23, 5-6pm, Kerchof Hall 111 </li>
-</ul>
+The Fall 2027 meeting dates will be posted here once they are set. Each semester the lab holds an introductory group meeting, a visit from the Starr Hill Pathways program, and final group presentations.
 
 **Examples of past common meetings:**
 

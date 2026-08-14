@@ -33,7 +33,7 @@ Applications to participate in the Math Experimental Lab open at the start of ea
 
 <h2 class="mb-3">Got Questions?</h2>
 
-See the <a href="{{site.url}}/mathexlab/faq/">FAQ page</a> for more details about the lab. If your question is not answered there, please feel free to contact [Aseel Farhat](https://math.virginia.edu/people/af7py/) or [J.D. Quigley](https://math.virginia.edu/people/mbp6pj/).
+See the <a href="{{site.url}}/mathexlab/faq/">FAQ page</a> for more details about the lab. If your question is not answered there, please feel free to contact [Leonid Petrov](https://math.virginia.edu/people/lap5r/).
 
 
 <h2 class="mb-3">Other labs</h2>
