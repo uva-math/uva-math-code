@@ -8,9 +8,9 @@ redirect_from:
 
 <h2 class="mb-3">Schedule</h2>
 
-### Fall 2027
+### Fall 2026
 
-The Fall 2027 meeting dates will be posted here once they are set. Each semester the lab holds an introductory group meeting, a visit from the Starr Hill Pathways program, and final group presentations.
+Applications are due **Wednesday, September 2** — see the [application page]({{site.url}}/mathexlab/application/). The remaining Fall 2026 meeting dates will be posted here once they are set. Each semester the lab holds an introductory group meeting, a visit from the Starr Hill Pathways program, and final group presentations.
 
 **Examples of past common meetings:**
 
