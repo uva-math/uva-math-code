@@ -7,7 +7,7 @@ position: Lecturer
 office: 129 Kerchof Hall
 phone:
 email: sbx2wu@virginia.edu
-image:
+image: __SITE_URL__/img/people/Ryang.jpg
 personal_page:
 
 ---
