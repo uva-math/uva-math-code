@@ -32,6 +32,11 @@
   offered: Spring 2020
   descr: " A first calculus course for business/biology/social-science students. Topics include college algebra/limits and continuity/differentiation and integration of algebraic and elementary transcendental functions/applications to related-rates & optimization problems as well as to curve sketching & exponential growth. At most one of MATH 1190, MATH 1210, and 1310 may be taken for credit. Prerequisite: No previous exposure to Calculus. "
 
+- name: " Survey of Calculus IA (3) "
+  number: 1191
+  offered: Fall 2026
+  descr: " A first course of a 2-semester Calculus sequence for business/biology/social-science students. Topics include algebra, limits, continuity, differentiation, exponential and logarithmic functions and modelling with applications to economics, data science, biology. At most one of the sequence MATH 1191/MATH 1192, MATH 1210, and MATH 1310 may be taken for credit. Prerequisite: No previous exposure to Calculus is required. "
+
 - name: " A survey of Calculus I (3) "
   number: 1210
   offered: Spring 2020
@@ -699,4 +704,3 @@ Prerequisite: MATH 2310 and 3351, and 3310. "
   graduate: true
   offered: Spring 2020
   descr: " The Mathematics Colloquium is held weekly, the sessions being devoted to research activities of students and faculty members, and to reports by visiting mathematicians on current work of interest. For doctoral dissertation, taken under the supervision of a dissertation director. "
-
