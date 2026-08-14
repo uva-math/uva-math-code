@@ -24,8 +24,7 @@ competitions page, the contacts pages, and the job-postings filter. They are lis
 Read that file when working in this repository between July and October, and tell Leo
 which items are due. Do not run a rollover unless asked.
 
-As of August 2026 the seminar rollover is outstanding: the archives stop at 2025-26 and
-the 2026-27 pages have not been created.
+The seminar rollover was done in August 2026, for 2026-27.
 
 ---
 

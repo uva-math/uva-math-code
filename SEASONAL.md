@@ -16,18 +16,20 @@ When an item is refreshed, update its **Last done** line in the same commit.
 ## Seminar academic-year rollover
 
 **Due:** every August, before fall classes begin.
-**Last done:** May 2025 (for 2025-26).
-**Status: DUE NOW.** Every seminar currently stops at a `25_26.html` archive; no
-`26_27.html` pages exist yet, and the 2026-27 year starts this fall.
+**Last done:** August 2026 (for 2026-27).
 
 Each seminar has one live page plus one archive page per academic year. Without the
 rollover, the previous year's archive keeps collecting new talks and the new year never
 appears in the archive list.
 
-The procedure is in [`seminars/seminar_updating.md`](seminars/seminar_updating.md). Note
-that both that document and `seminars/update_sems_year.zsh` hardcode the year pair they
-were last used for — the year strings inside the script must be bumped before it is run,
-or it will recreate the previous year's files.
+The procedure is in [`seminars/seminar_updating.md`](seminars/seminar_updating.md). It now
+takes the old and the new year as arguments — `python3 seminars/rollover.py 2026-27
+2027-28` — so there is no year string left to bump. It reports by default and applies with
+`--write`, and it is idempotent, so a re-run is safe. It also reports any page whose archive
+line it cannot parse, instead of passing over it. The old `seminars/update_sems_year.zsh` was
+removed in August 2026: it hardcoded its year pair and, because of a trailing space after each
+line-continuation backslash, copied each new archive page without rewriting its title,
+permalink or date window — while still exiting 0.
 
 Verify afterwards that each seminar's main page lists the new year first in its archive
 line, that `show_from` and `show_to` bracket the correct July-to-July window, and that the
