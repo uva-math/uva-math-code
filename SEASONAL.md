@@ -80,6 +80,41 @@ same way.
 
 ---
 
+## Major intake advisors
+
+**Due:** twice a year — every August for the fall, and every December for the spring.
+**Last done:** August 2026 (fall only; the spring 2027 reshuffle is outstanding).
+
+[`_includes/CONTACTS/major_intake.md`](_includes/CONTACTS/major_intake.md) splits major
+declaration advising across the intake circle by student last name. It is included by
+[`undergraduate/contacts.md`](undergraduate/contacts.md) and
+[`undergraduate/degree_requirements.md`](undergraduate/degree_requirements.md), so one edit
+serves both pages.
+
+The membership comes from the chair's service assignments for the year, not from last
+year's copy of this file. The 2026-27 circle is Abdesselam, Abramenko, Do, Gromoll, Hayes,
+Qi, and W. Wang.
+
+**Leaves drive the reshuffle.** The circle is rarely present in full for both terms. In
+2026-27 Abdesselam and Hayes are fall-only and Abramenko is spring-only, so the fall list
+has six advisors and the spring list will have five. The page therefore carries one term at
+a time, and the letter ranges are recut whenever the roster changes — a five-way split is
+not a six-way split with one range deleted.
+
+**Recutting the ranges.** The ranges are balanced by student volume, not by letter count.
+UVA math majors run roughly 25-40% Asian surnames, which makes C, L, W, and Z far heavier
+than a general US surname distribution predicts, and T-Z a full-weight bucket rather than
+the scrap it usually is. The August 2026 six-way cut (A-C, D-H, I-L, M-P, Q-S, T-Z) came
+from brute-forcing all 53,130 contiguous splits against a mixed model, and holds to within
+2.5 points of even across the whole 25-40% band. Redo that arithmetic for whatever number
+of advisors the new term has; do not eyeball it. If a real major roster can be pulled from
+SIS, count it instead of modelling it.
+
+Advisors are deliberately not seated in the range containing their own initial, and the
+assignment is shuffled rather than alphabetical.
+
+---
+
 ## Job postings
 
 **Due:** at the start of each hiring season, early fall.
