@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Topology General Exam January 2026 - UVA Mathematics</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    /* Exam problem styling */
+    .problem-number {
+      display: block;
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+    }
+  </style>
+</head>
+<body>
+<nav aria-label="Breadcrumb" style="margin-bottom: 1em;">
+  <ol style="list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5em; font-size: 0.9em;">
+    <li><a href="/">Home</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/">Graduate</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li><a href="/graduate/generals/">General Exams</a></li>
+    <li aria-hidden="true" style="color: #999;">/</li>
+    <li aria-current="page" style="color: #666;">Topology
+General Exam — January 2026</li>
+  </ol>
+</nav>
+
+
+
+<nav aria-label="Page navigation" style="margin-bottom: 2em;">
+  <a href="/graduate/generals/" style="display: inline-block; padding: 0.5em 1em; background-color: #f0f0f0; border: 1px solid #ccc; border-radius: 4px; text-decoration: none; color: #333;">&larr; Back to General Exams</a>
+</nav>
+
+<main>
+<h1 class="unnumbered" id="topology-general-exam-january-2026">Topology
+General Exam — January 2026</h1>
+<p>Instructions: Please provide your ID number, do no sign your
+name!</p>
+<p>This is a four hour exam. Your solutions should be legible and
+clearly organized, written in complete sentences in good mathematical
+style on your own paper. All work should be your own—no outside sources
+are permitted—using methods and results from the first year topology
+courses. Each problem is worth the same number of points.</p>
+<h2 class="unnumbered" id="problem-1">Problem 1</h2>
+<p>Consider the 2-sphere
+<math role="math" aria-label="S^2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>2</mn></msup><annotation encoding="application/x-tex">S^2</annotation></semantics></math>
+and the 2-dimensional torus
+<math role="math" aria-label="T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>T</mi><annotation encoding="application/x-tex">T</annotation></semantics></math>.<br />
+(a) For what values
+<math role="math" aria-label="m \in \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>&isin;</mo><mi mathvariant="double-struck">&Zopf;</mi></mrow><annotation encoding="application/x-tex">m \in \mathbb{Z}</annotation></semantics></math>
+does there exist a degree
+<math role="math" aria-label="m" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>
+map
+<math role="math" aria-label="f \colon S^2 \rightarrow T" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mn>2</mn></msup><mo>&rarr;</mo><mi>T</mi></mrow><annotation encoding="application/x-tex">f \colon S^2 \rightarrow T</annotation></semantics></math>?<br />
+(b) For what values
+<math role="math" aria-label="n \in \mathbb{Z}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&isin;</mo><mi mathvariant="double-struck">&Zopf;</mi></mrow><annotation encoding="application/x-tex">n \in \mathbb{Z}</annotation></semantics></math>
+does there exist a degree
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+map
+<math role="math" aria-label="f \colon T \rightarrow S^2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>T</mi><mo>&rarr;</mo><msup><mi>S</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">f \colon T \rightarrow S^2</annotation></semantics></math>?<br />
+In both questions, if you state that a map of a certain degree exists
+then give a construction; otherwise prove its non-existence.</p>
+<h2 class="unnumbered" id="problem-2">Problem 2</h2>
+<p>Let
+<math role="math" aria-label="M" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+be a smooth manifold and let
+<math role="math" aria-label="f \colon M \rightarrow \mathbb{R}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><mi>M</mi><mo>&rarr;</mo><mi mathvariant="double-struck">&Ropf;</mi></mrow><annotation encoding="application/x-tex">f \colon M \rightarrow \mathbb{R}</annotation></semantics></math>
+be a smooth function. Define a linear map
+<math role="math" aria-label="D_f^k \colon \Omega^k(M) \rightarrow \Omega^{k+1}(M)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>f</mi><mi>k</mi></msubsup><mo>:</mo><msup><mi mathvariant="normal">&Omega;</mi><mi>k</mi></msup><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo><mo>&rarr;</mo><msup><mi mathvariant="normal">&Omega;</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo stretchy="false" form="prefix">(</mo><mi>M</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">D_f^k \colon \Omega^k(M) \rightarrow \Omega^{k+1}(M)</annotation></semantics></math>
+by:
+<math role="math" aria-label="D_f^k(\omega) = d\omega + df \wedge \omega" display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>f</mi><mi>k</mi></msubsup><mo stretchy="false" form="prefix">(</mo><mi>&omega;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>d</mi><mi>&omega;</mi><mo>+</mo><mi>d</mi><mi>f</mi><mo>&and;</mo><mi>&omega;</mi></mrow><annotation encoding="application/x-tex">D_f^k(\omega) = d\omega + df \wedge \omega</annotation></semantics></math>
+where
+<math role="math" aria-label="d" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>d</mi><annotation encoding="application/x-tex">d</annotation></semantics></math>
+is the standard exterior derivative.<br />
+(a) Show that
+<math role="math" aria-label="D_f^{k+1} \circ D_f^k = 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>f</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>&SmallCircle;</mo><msubsup><mi>D</mi><mi>f</mi><mi>k</mi></msubsup><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">D_f^{k+1} \circ D_f^k = 0</annotation></semantics></math>.<br />
+(b) Let
+<math role="math" aria-label="\omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>&omega;</mi><annotation encoding="application/x-tex">\omega</annotation></semantics></math>
+be a
+<math role="math" aria-label="k" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-form.
+Show that
+<math role="math" aria-label="D_f^k(\omega) = 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mi>D</mi><mi>f</mi><mi>k</mi></msubsup><mo stretchy="false" form="prefix">(</mo><mi>&omega;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">D_f^k(\omega) = 0</annotation></semantics></math>
+if and only if the form
+<math role="math" aria-label="e^f \omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>e</mi><mi>f</mi></msup><mi>&omega;</mi></mrow><annotation encoding="application/x-tex">e^f \omega</annotation></semantics></math>
+is closed:
+<math role="math" aria-label="d(e^f \omega) = 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo stretchy="false" form="prefix">(</mo><msup><mi>e</mi><mi>f</mi></msup><mi>&omega;</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">d(e^f \omega) = 0</annotation></semantics></math>.<br />
+(c) Prove that the map
+<math role="math" aria-label="\omega \mapsto e^f \omega" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&omega;</mi><mo>&map;</mo><msup><mi>e</mi><mi>f</mi></msup><mi>&omega;</mi></mrow><annotation encoding="application/x-tex">\omega \mapsto e^f \omega</annotation></semantics></math>
+defines a chain isomorphism between the chain complexes
+<math role="math" aria-label="(\Omega^*(X), D_f)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msup><mi mathvariant="normal">&Omega;</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><msub><mi>D</mi><mi>f</mi></msub><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\Omega^*(X), D_f)</annotation></semantics></math>
+and
+<math role="math" aria-label="(\Omega^*(X), d)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><msup><mi mathvariant="normal">&Omega;</mi><mo>*</mo></msup><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo><mo>,</mo><mi>d</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(\Omega^*(X), d)</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-3">Problem 3</h2>
+<p>Let
+<math role="math" aria-label="F \colon \mathbb{R}^3 \rightarrow \mathbb{R}^3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo>:</mo><msup><mi mathvariant="double-struck">&Ropf;</mi><mn>3</mn></msup><mo>&rarr;</mo><msup><mi mathvariant="double-struck">&Ropf;</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">F \colon \mathbb{R}^3 \rightarrow \mathbb{R}^3</annotation></semantics></math>
+be the map defined by
+<math role="math" aria-label="F(x, y, z) = (xz, yz, z)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>F</mi><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mo stretchy="false" form="prefix">(</mo><mi>x</mi><mi>z</mi><mo>,</mo><mi>y</mi><mi>z</mi><mo>,</mo><mi>z</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">F(x, y, z) = (xz, yz, z)</annotation></semantics></math>.
+Let
+<math role="math" aria-label="f \colon S^2 \rightarrow \mathbb{R}^3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>S</mi><mn>2</mn></msup><mo>&rarr;</mo><msup><mi mathvariant="double-struck">&Ropf;</mi><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">f \colon S^2 \rightarrow \mathbb{R}^3</annotation></semantics></math>
+be the restriction of
+<math role="math" aria-label="F" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>F</mi><annotation encoding="application/x-tex">F</annotation></semantics></math>
+to the unit sphere
+<math role="math" aria-label="S^2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi>S</mi><mn>2</mn></msup><annotation encoding="application/x-tex">S^2</annotation></semantics></math>.
+Determine the set of points
+<math role="math" aria-label="p \in S^2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>&isin;</mo><msup><mi>S</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">p \in S^2</annotation></semantics></math>
+at which
+<math role="math" aria-label="f" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>f</mi><annotation encoding="application/x-tex">f</annotation></semantics></math>
+fails to be an immersion.</p>
+<h2 class="unnumbered" id="problem-4">Problem 4</h2>
+<p>Let
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+be a Lie group. Show that its tangent bundle
+<math role="math" aria-label="TG" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi><mi>G</mi></mrow><annotation encoding="application/x-tex">TG</annotation></semantics></math>
+is trivial, that is isomorphic to
+<math role="math" aria-label="G \times \mathbb{R}^n \rightarrow G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi><mo>&times;</mo><msup><mi mathvariant="double-struck">&Ropf;</mi><mi>n</mi></msup><mo>&rarr;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">G \times \mathbb{R}^n \rightarrow G</annotation></semantics></math>
+for some
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>.
+(Recall that a Lie group
+<math role="math" aria-label="G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>G</mi><annotation encoding="application/x-tex">G</annotation></semantics></math>
+is a smooth manifold which is also a group, such that the multiplication
+map
+<math role="math" aria-label="(f, g) \mapsto f \cdot g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mi>f</mi><mo>,</mo><mi>g</mi><mo stretchy="false" form="postfix">)</mo><mo>&map;</mo><mi>f</mi><mo>&sdot;</mo><mi>g</mi></mrow><annotation encoding="application/x-tex">(f, g) \mapsto f \cdot g</annotation></semantics></math>,
+and the inverse map
+<math role="math" aria-label="f \mapsto f^{-1}" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>&map;</mo><msup><mi>f</mi><mrow><mi>&minus;</mi><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">f \mapsto f^{-1}</annotation></semantics></math>
+are smooth.)</p>
+<p><em>Hint.</em> Given
+<math role="math" aria-label="g \in G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>g</mi><mo>&isin;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">g \in G</annotation></semantics></math>,
+the map
+<math role="math" aria-label="L_g \colon G \longrightarrow G" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>g</mi></msub><mo>:</mo><mi>G</mi><mo>&rarr;</mo><mi>G</mi></mrow><annotation encoding="application/x-tex">L_g \colon G \longrightarrow G</annotation></semantics></math>,
+given by
+<math role="math" aria-label="L_g(h) = gh" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>L</mi><mi>g</mi></msub><mo stretchy="false" form="prefix">(</mo><mi>h</mi><mo stretchy="false" form="postfix">)</mo><mo>=</mo><mi>g</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">L_g(h) = gh</annotation></semantics></math>,
+may be helpful; note that it is a diffeomorphism.</p>
+<h2 class="unnumbered" id="problem-5">Problem 5</h2>
+<p>Let
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+be a 2-dimensional disk with
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+distinct points on its boundary identified,
+<math role="math" aria-label="n \geq 2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">n \geq 2</annotation></semantics></math>.
+Let
+<math role="math" aria-label="A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>A</mi><annotation encoding="application/x-tex">A</annotation></semantics></math>
+be its boundary
+<math role="math" aria-label="\bigvee_{i=1}^{n} S^1" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msubsup><mo>&Vee;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msup><mi>S</mi><mn>1</mn></msup></mrow><annotation encoding="application/x-tex">\bigvee_{i=1}^{n} S^1</annotation></semantics></math>.<br />
+(a) Compute
+<math role="math" aria-label="\pi_1(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\pi_1(X)</annotation></semantics></math>
+and
+<math role="math" aria-label="\pi_1(A)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>A</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\pi_1(A)</annotation></semantics></math>.<br />
+(b) Show that there is no retraction
+<math role="math" aria-label="r \colon X \rightarrow A" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>:</mo><mi>X</mi><mo>&rarr;</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">r \colon X \rightarrow A</annotation></semantics></math>.</p>
+<h2 class="unnumbered" id="problem-6">Problem 6</h2>
+<p>Let
+<math role="math" aria-label="X = (S^1 \vee S^1) \times (S^1 \vee S^1)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>S</mi><mn>1</mn></msup><mo>&or;</mo><msup><mi>S</mi><mn>1</mn></msup><mo stretchy="false" form="postfix">)</mo><mo>&times;</mo><mo stretchy="false" form="prefix">(</mo><msup><mi>S</mi><mn>1</mn></msup><mo>&or;</mo><msup><mi>S</mi><mn>1</mn></msup><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">X = (S^1 \vee S^1) \times (S^1 \vee S^1)</annotation></semantics></math>.<br />
+(a) Compute
+<math role="math" aria-label="\pi_1(X)" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>&pi;</mi><mn>1</mn></msub><mo stretchy="false" form="prefix">(</mo><mi>X</mi><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">\pi_1(X)</annotation></semantics></math>.<br />
+(b) Compute the homology groups of
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>.<br />
+(c) Show that every continuous map
+<math role="math" aria-label="\mathbb{R}P^2 \rightarrow X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">&Ropf;</mi><msup><mi>P</mi><mn>2</mn></msup><mo>&rarr;</mo><mi>X</mi></mrow><annotation encoding="application/x-tex">\mathbb{R}P^2 \rightarrow X</annotation></semantics></math>
+is nullhomotopic.</p>
+<h2 class="unnumbered" id="problem-7">Problem 7</h2>
+<p>For all
+<math role="math" aria-label="n \geq 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>&ge;</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">n \geq 0</annotation></semantics></math>,
+compute the homology groups with
+<math role="math" aria-label="\mathbb{Z}/2" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="double-struck">&Zopf;</mi><mi>/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\mathbb{Z}/2</annotation></semantics></math>-coefficients
+of the space
+<math role="math" aria-label="X" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>X</mi><annotation encoding="application/x-tex">X</annotation></semantics></math>
+obtained from the standard
+<math role="math" aria-label="n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>-simplex
+<math role="math" aria-label="\Delta^n" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mi mathvariant="normal">&Delta;</mi><mi>n</mi></msup><annotation encoding="application/x-tex">\Delta^n</annotation></semantics></math>
+by identifying all faces of the same dimension.</p>
+</main>
+</body>
+</html>
