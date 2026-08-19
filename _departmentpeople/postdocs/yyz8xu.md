@@ -7,7 +7,7 @@ position: Whyburn Research Associate and Lecturer
 office: 229 Kerchof Hall
 phone:
 email: yyz8xu@virginia.edu
-image:
+image: __SITE_URL__/img/people/Pappe.jpg
 personal_page:
 
 ---
