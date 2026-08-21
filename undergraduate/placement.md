@@ -44,7 +44,7 @@ Information on this page will help you understand the best pace to start out of 
 <br/><br/>
 <strong>For incoming students</strong>-- 
 <ul>
-	<li><a href="https://virginia.az1.qualtrics.com/jfe/form/SV_50I54xhW5Yclcvc">Here’s a link to the math diagnostic survey</a>. It will take 5 minutes (or less) of your time.</li>
+	<li><a href="https://virginia.az1.qualtrics.com/jfe/form/SV_43mWSGdLfcda5ue">Here’s a link to the math diagnostic survey</a>. It will take 5 minutes (or less) of your time.</li>
 	<li>Afterwards, proceed to <a href="#howDecide">“How do I decide which Introductory Calculus course to start in?”</a> below for next steps.</li>
 </ul>
 <!--What are my Introductory Calculus options?-->
@@ -75,7 +75,7 @@ Information on this page will help you understand the best pace to start out of 
 <!-- How do I decide which Introductory Calculus courseto start in?-->
 <details >
 	<summary ><span style="font-size: 1.2em;"><strong>How do I decide which Introductory Calculus course to start in?</strong></span> </summary>
-	<br/>First, <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_50I54xhW5Yclcvc">take our diagnostic survey here</a>. Next choose one of the following options.<br/><br/>
+	<br/>First, <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_43mWSGdLfcda5ue">take our diagnostic survey here</a>. Next choose one of the following options.<br/><br/>
 	<div style="padding-left: 20px;">
 		<details id="howDecide">
 			<summary><span style="font-size: 1em;"><strong>Survey of Calculus 1 and 2 (1191/92, 1210, or 1220)</strong></span></summary>
