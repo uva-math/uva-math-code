@@ -9,7 +9,7 @@ nav_weight: 4
 tooltips: true
 ---
 
-<h1 class="mb-4">Contacts (2025-26 Academic Year)</h1>
+<h1 class="mb-4">Contacts (2026-27 Academic Year)</h1>
 
 - **Chair:**<br>
 {% include person_info_email_only.html UVA_id="lap5r" %}
@@ -20,18 +20,23 @@ tooltips: true
 - **Director of Undergraduate Studies:**<br>
 {% include DUS.html UVA_id="des5e" %}
 
-- <strong>{% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinators:</strong><br>
-{% include person_info_email_only.html UVA_id="qgf6bc" %} (Fall)<br>
-{% include person_info_email_only.html UVA_id="rbh3vx" %} (Spring)
+- <strong>{% include course number=1140 code=false %} Coordinator:</strong><br>
+{% include person_info_email_only.html UVA_id="kc5kv" %} (Fall), Spring TBD
 
-- <strong>{% include course number=1220 code=false %} Coordinator:</strong><br>
-{% include person_info_email_only.html UVA_id="nbm2vp" %}
+- <strong>{% include course number=1191 code=false %} and MATH 1192 Coordinator:</strong><br>
+{% include person_info_email_only.html UVA_id="jsr2pz" %}
+
+- <strong>{% include course number=1210 code=false %} Coordinator:</strong><br>
+{% include person_info_email_only.html UVA_id="rbh3vx" %}
+
+- <strong>{% include course number=1220 code=false %} Coordinators:</strong><br>
+{% include person_info_email_only.html UVA_id="kc5kv" %} (Fall), {% include person_info_email_only.html UVA_id="vyr5zh" %}
 
 - <strong>{% include course number=1310 code=false %} Coordinator:</strong><br>
-{% include person_info_email_only.html UVA_id="hdj4nd" %}
+{% include person_info_email_only.html UVA_id="nbm2vp" %}
 
 - <strong>{% include course number=1320 code=false %} Coordinator:</strong><br>
-{% include person_info_email_only.html UVA_id="jsr2pz" %}
+{% include person_info_email_only.html UVA_id="qgf6bc" %}
 
 - <strong>{% include course number=2310 code=false %} Coordinator:</strong><br>
 {% include person_info_email_only.html UVA_id="ed8bg" %}
@@ -59,7 +64,7 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="des5e" %} -->
 
 - **Ombudsperson:**<br>
-{% include person_info_email_only.html UVA_id="ph7ph" %}
+{% include person_info_email_only.html UVA_id="jlm6cj" %}
 
 - **Math Collaborative Learning Center:**<br>
 {% include person_info_email_only.html UVA_id="ed8bg" %}
@@ -70,15 +75,14 @@ tooltips: true
 - **Summer Session:**<br>
 {% include person_info_email_only.html UVA_id="pa8e" %}
 
-- **Math Club advisor:**<br>
-{% include person_info_email_only.html UVA_id="af7py" %}
-
-- **AWM (Association for Women in Mathematics) Coordinators:**<br>
-{% include person_info_email_only.html UVA_id="brh5c" %} and
-{% include person_info_email_only.html UVA_id="jlm6cj" %}
+- **AWM (Association for Women in Mathematics) / Math Club committee:**<br>
+{% include person_info_email_only.html UVA_id="af7py" %},
+{% include person_info_email_only.html UVA_id="brh5c" %},
+{% include person_info_email_only.html UVA_id="sm4cw" %},
+{% include person_info_email_only.html UVA_id="rbh3vx" %}
 
 - **Math Circle:**<br>
-{% include person_info_email_only.html UVA_id="jf8dc" %}, {% include person_info_email_only.html UVA_id="vk6e" %}, {% include person_info_email_only.html UVA_id="lap5r" %}
+{% include person_info_email_only.html UVA_id="jf8dc" %} (Fall), {% include person_info_email_only.html UVA_id="vk6e" %} (Fall), {% include person_info_email_only.html UVA_id="rbh3vx" %}
 
 - **Putnam coaches:**<br>
 {% include person_info_email_only.html UVA_id="yqd3p" %},

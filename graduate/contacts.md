@@ -9,7 +9,7 @@ nav_weight: 2
 tooltips: true
 ---
 
-<h1 class="mb-4">Contacts (2025-26 Academic Year)</h1>
+<h1 class="mb-4">Contacts (2026-27 Academic Year)</h1>
 
 - ##### Chair:<br>
 {% include person_info_email_only.html UVA_id="lap5r" %}
@@ -21,7 +21,7 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="tmk5a" %}
 
 - ##### Graduate Admissions (Chair):<br>
-{% include person_info_email_only.html UVA_id="asr3x" %}
+{% include person_info_email_only.html UVA_id="af7py" %}
 
 - ##### Ombudsperson:<br>
-{% include person_info_email_only.html UVA_id="ph7ph" %}
+{% include person_info_email_only.html UVA_id="jlm6cj" %}

@@ -82,7 +82,7 @@ same way.
 
 ## Major intake advisors
 
-**Due:** twice a year — every August for the fall, and every December for the spring.
+**Due:** twice a year — every August for the fall, and early January for the spring.
 **Last done:** August 2026 (fall only; the spring 2027 reshuffle is outstanding).
 
 [`_includes/CONTACTS/major_intake.md`](_includes/CONTACTS/major_intake.md) splits major

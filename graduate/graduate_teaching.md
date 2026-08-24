@@ -26,17 +26,23 @@ There are some opportunities for teaching other courses, such as Financial Mathe
 
 **Director of Graduate Studies**:&nbsp;&nbsp;{% include person_info_email_only.html UVA_id="tmk5a" %}
 
-Here are this year's course coordinators and GTA Mentor:
+Here are this year's course coordinators and GTA Committee Chair:
 
-- GTA Mentor:&nbsp;&nbsp;{% include person_info_email_only.html UVA_id="jsr2pz" %}
+- GTA Committee Chair:&nbsp;&nbsp;{% include person_info_email_only.html UVA_id="nbm2vp" %}
 
-- {% include course number=1190 code=false %} and {% include course number=1210 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="qgf6bc" %} (Fall), {% include person_info_email_only.html UVA_id="rbh3vx" %} (Spring)
+- {% include course number=1140 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="kc5kv" %} (Fall), Spring TBD
 
-- {% include course number=1220 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="nbm2vp" %}
+- {% include course number=1191 code=false %} and MATH 1192 Coordinator: {% include person_info_email_only.html UVA_id="jsr2pz" %}
 
-- {% include course number=1310 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="hdj4nd" %}
+- {% include course number=1210 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="rbh3vx" %}
 
-- {% include course number=1320 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="jsr2pz" %}
+- {% include course number=1220 code=false %} Coordinators: {% include person_info_email_only.html UVA_id="kc5kv" %} (Fall), {% include person_info_email_only.html UVA_id="vyr5zh" %}
+
+- {% include course number=1310 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="nbm2vp" %}
+
+- {% include course number=1320 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="qgf6bc" %}
+
+- {% include course number=2310 code=false %} Coordinator: {% include person_info_email_only.html UVA_id="ed8bg" %}
 
 ---
 
