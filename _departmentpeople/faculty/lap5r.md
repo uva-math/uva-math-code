@@ -4,7 +4,7 @@ lastname: Petrov
 name: Leonid
 pronouns: he/him
 general_position: faculty
-position: Professor
+position: Professor and Chair
 office: 209 Kerchof Hall
 phone: 434-924-4167
 email: petrov@virginia.edu

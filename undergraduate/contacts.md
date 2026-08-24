@@ -12,10 +12,10 @@ tooltips: true
 <h1 class="mb-4">Contacts (2025-26 Academic Year)</h1>
 
 - **Chair:**<br>
-{% include person_info_email_only.html UVA_id="tmark" %}
+{% include person_info_email_only.html UVA_id="lap5r" %}
 
 - **Associate Chair:**<br>
-{% include person_info_email_only.html UVA_id="hcg3m" %}
+{% include person_info_email_only.html UVA_id="sm4cw" %}
 
 - **Director of Undergraduate Studies:**<br>
 {% include DUS.html UVA_id="des5e" %}
@@ -30,8 +30,8 @@ tooltips: true
 - <strong>{% include course number=1310 code=false %} Coordinator:</strong><br>
 {% include person_info_email_only.html UVA_id="hdj4nd" %}
 
-- <strong>{% include course number=1320 code=false %} Co-coordinators:</strong><br>
-{% include person_info_email_only.html UVA_id="axh7cj" %}, {% include person_info_email_only.html UVA_id="jsr2pz" %}
+- <strong>{% include course number=1320 code=false %} Coordinator:</strong><br>
+{% include person_info_email_only.html UVA_id="jsr2pz" %}
 
 - <strong>{% include course number=2310 code=false %} Coordinator:</strong><br>
 {% include person_info_email_only.html UVA_id="ed8bg" %}

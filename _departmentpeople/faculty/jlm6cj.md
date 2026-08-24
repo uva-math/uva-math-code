@@ -4,7 +4,7 @@ lastname: Morse
 name: Jennifer
 pronouns: she/her
 general_position: faculty
-position: Professor
+position: Marvin Rosenblum Professor of Mathematics
 office: 206 Kerchof Hall
 phone: 434-924-4934
 email: jlm6cj@virginia.edu
