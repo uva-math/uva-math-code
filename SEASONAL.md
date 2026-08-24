@@ -70,13 +70,38 @@ duplicates this page.
 ## Contacts pages
 
 **Due:** every August, once teaching assignments are settled.
-**Last done:** unknown; currently stamped 2025-26.
+**Last done:** August 2026 (for 2026-27, from the final service roster; satellite pages
+below swept the same day).
 
 [`undergraduate/contacts.md`](undergraduate/contacts.md) carries an explicit academic year
 in its heading, so a stale one is visible to any reader. It lists the DUS, course
-coordinators, Putnam coaches, Math Club and AWM advisors, and the Math Circle organizers —
-all of which rotate. [`graduate/contacts.md`](graduate/contacts.md) is year-stamped the
-same way.
+coordinators, Putnam coaches, the AWM / Math Club committee, and the Math Circle
+organizers — all of which rotate. [`graduate/contacts.md`](graduate/contacts.md) is
+year-stamped the same way. Transfer-of-credit advising sits with the DUP, so that row
+tracks the DUS line rather than a separate assignment.
+
+**Satellite pages that carry service assignments but no year stamp.** Each of these had
+gone stale invisibly before the August 2026 sweep; check every one against the new
+roster in the same pass as the contacts pages:
+
+- [`awm/index.md`](awm/index.md) — faculty mentors appear in **three** places: the top
+  email line, the mailing-list sentence, and the leadership list. Since 2026-27 this is
+  the merged AWM / Math Club committee, not a separate pair of AWM mentors.
+- [`drp/committee.md`](drp/committee.md) — the sponsoring faculty line, plus a
+  graduate-student committee list that rotates on its own schedule.
+- [`graduate/admissions.md`](graduate/admissions.md) — the "Admissions, Department of
+  Mathematics" e-mail contact near the bottom is the Graduate Admissions chair.
+- [`_data/seminars.yml`](_data/seminars.yml) — the `colloq` contact list is the
+  Colloquium committee, and the `mathclub` contact is the Math Club face of the
+  AWM / Math Club committee.
+- [`mathcircle/index.md`](mathcircle/index.md) — the organizers under Contact, and the
+  program description (fall-only vs. full-year varies by year).
+- [`graduate/graduate_teaching.md`](graduate/graduate_teaching.md) — the GTA Committee
+  chair and the same course-coordinator slate as the undergraduate contacts page.
+- [`undergraduate/competitions.md`](undergraduate/competitions.md) — the Putnam coaches
+  (also on the competitions rollover item above).
+- [`mathexlab/contact.md`](mathexlab/contact.md) and
+  [`mathexlab/index.md`](mathexlab/index.md) — the lab's faculty contact.
 
 ---
 
