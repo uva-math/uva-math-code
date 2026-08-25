@@ -73,7 +73,7 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="jsr2pz" %} -->
 
 - **Summer Session:**<br>
-{% include person_info_email_only.html UVA_id="pa8e" %}
+{% include person_info_email_only.html UVA_id="hcg3m" %}
 
 - **AWM (Association for Women in Mathematics) / Math Club committee:**<br>
 {% include person_info_email_only.html UVA_id="af7py" %},
