@@ -51,12 +51,18 @@ The August 2026 audit found three dead contacts (`dku8jc` Slonim, gone 2023; `pf
 Shapiro, postdoc ended 2026; `wbt4qn` Lu, moved to `_UNPUBLISHED`) and a
 `regular_times` still labelled "(Spring 2026)".
 
-**Rooms cannot be looked up.** HoosList withholds `data-location` from the public view
-("Login Required") for every section, and the 9xxx seminar sections carry no meeting
-pattern at all, so neither `scripts/schedule/hooslist_fetch.py` nor the cached term pages
-can supply a seminar room. The only source is the organizers. Mail all faculty, postdocs
-and the graduate-seminar student organizers the current listing and ask each seminar to
-confirm organizers, day/time and room.
+**Ask the organizers; do not copy HoosList.** The rooms are visible on HoosList, but only
+to a logged-in session: `data-location` reads `Login Required` for every section when
+`scripts/schedule/hooslist_fetch.py` runs logged out, and carries the real room when the
+same fetch runs against a live HoosList login. That is worth knowing, and it is still not
+the source for this page. What HoosList shows is the **registrar's booking for the
+MATH 9xxx course**, which is routinely longer than the talk and can sit in a room the
+seminar does not actually use — in August 2026 it gave Operator Theory a 3:30 start
+against the seminar's real 3:45, and a 3:30–6:00 block for Galois-Grothendieck. Treat a
+HoosList/`seminars.yml` disagreement as a **question for the organizer**, never as a
+correction to apply. Mail all faculty, postdocs and the graduate-seminar student
+organizers the current listing, ask each seminar to confirm organizers, day, time and
+room, and edit only on an answer.
 
 Check every `contact` ID against `_departmentpeople/`: an ID under `recent-postdocs/`,
 `emeriti/` or `_UNPUBLISHED/`, or one with no file at all, is a stale organizer. Also
