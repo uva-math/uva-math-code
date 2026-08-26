@@ -196,6 +196,44 @@ New postings go in `_posts/jobs/` and need a `job-year` field to appear here at 
 
 ---
 
+## Recent postdoctoral scholars
+
+**Due:** every August, in the same pass as the postdoc roster update.
+**Last done:** August 2026 (2025 and 2026 leavers seated; three 2025 files recovered).
+
+Departing postdocs are kept on [`people/postdocs.html`](people/postdocs.html) under
+"Recent Postdoctoral Scholars" for **two years**, then dropped. A leaver needs three
+things in their file, and the folder is the least important of them:
+
+- `general_position: recent-postdoc` — this, not the folder, is what the listing selects
+  on, and it is also what keeps the person out of [`people/directory.html`](people/directory.html)
+  and out of the current-postdoc count on [`about.md`](about.md).
+- `years: 2023-2026` — printed after the position title. A current member has no `years`.
+- `office` and `email` removed. A departed person has neither, and a stale office number
+  is the kind of thing a visitor acts on.
+
+Move the file to `_departmentpeople/recent-postdocs/`, and fix `personal_page` while you
+are there — a postdoc who leaves for a faculty job almost always changes their homepage.
+
+**Do not delete the file, and do not move it to `_departmentpeople/_unpublished/`.** Both
+mistakes have happened and both are silent. Commit 698acb1f (August 2025) deleted Spitz,
+Branman and Singh outright while its message said it had moved them; commit c45b2b58
+(January 2026) moved Lu to `_unpublished/`, which Jekyll skips because the directory name
+begins with an underscore. All four vanished from the site with no error, and were only
+recovered in August 2026 by reading `git show 698acb1f^:` for the deleted frontmatter.
+A mid-year resignation is the likeliest case to be handled off-cycle and therefore
+mishandled, so check for one before you assume the August batch is the whole list.
+
+The authority for the `years` range is the repo's own history, not memory: the appointment
+table in [`scripts/uva_arxiv/cache/active_people_by_year.json`](scripts/uva_arxiv/cache/active_people_by_year.json)
+carries a start and end date per person, derived from commit dates.
+
+**Ageing out.** Nothing in the build enforces the two-year window; it needs a person. The
+2025 leavers (Branman, Singh, Spitz) come out in August 2027, the 2026 leavers (Blackwell,
+Campbell, Lu, Shapiro, Stees) in August 2028.
+
+---
+
 ## Adding an entry
 
 Anything with a date that expires on a yearly cycle belongs here: a hardcoded year in a
