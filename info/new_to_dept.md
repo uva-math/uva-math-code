@@ -27,7 +27,7 @@ nav_weight: 20
 
 - **Books:** The Department will provide instructors with desk copies for their courses. See the front office (room `216`).
 
-- **Graders:**  The Department provides graders for courses in the 2000-5000 level with good enrollment (> 20). Grader applications are available in the front office (room `216`). You may search the applications, select a grader, and contact the student to confirm. The grader should visit the front office to complete paperwork.
+- **Graders:**  The Department can pay for a grader for courses in the 2000-5000 level with good enrollment (> 20), but finding the grader is up to the instructor. Student grader applications are kept on file in the front office (room `216`); you may search that pool, select a grader, and contact the student to confirm. The grader should then visit the front office to complete paperwork.
 
 - **Course Enrollments:**  Students enroll in their courses through SIS. SIS maintains waiting lists for courses and automatically enrolls waitlisted students as space comes available. Situations may arise when students cannot enroll through SIS, and need a permission from the instructor which is handled by SIS.
 
