@@ -37,6 +37,34 @@ line, that `show_from` and `show_to` bracket the correct July-to-July window, an
 
 ---
 
+## Seminar organizers, times and rooms
+
+**Due:** every August, once the seminars settle their slots for the fall.
+**Last done:** never as a sweep; the entries in
+[`_data/seminars.yml`](_data/seminars.yml) drift one seminar at a time.
+
+Each entry in `_data/seminars.yml` carries a `contact` list of computing IDs and a
+`regular_times` string holding the day, the time and the **room**. Both go stale
+silently: a departed organizer stays listed because nothing in the build checks that the
+ID still resolves to a current person, and a room changes without anyone editing the file.
+The August 2026 audit found three dead contacts (`dku8jc` Slonim, gone 2023; `pfy7cf`
+Shapiro, postdoc ended 2026; `wbt4qn` Lu, moved to `_UNPUBLISHED`) and a
+`regular_times` still labelled "(Spring 2026)".
+
+**Rooms cannot be looked up.** HoosList withholds `data-location` from the public view
+("Login Required") for every section, and the 9xxx seminar sections carry no meeting
+pattern at all, so neither `scripts/schedule/hooslist_fetch.py` nor the cached term pages
+can supply a seminar room. The only source is the organizers. Mail all faculty, postdocs
+and the graduate-seminar student organizers the current listing and ask each seminar to
+confirm organizers, day/time and room.
+
+Check every `contact` ID against `_departmentpeople/`: an ID under `recent-postdocs/`,
+`emeriti/` or `_UNPUBLISHED/`, or one with no file at all, is a stale organizer. Also
+decide the status of `ancommons` (Analysis Commons), whose archives stop at 2021-22 and
+which `seminars/seminar_updating.md` already treats as discontinued.
+
+---
+
 ## Competitions page
 
 **Due:** every August, before the Putnam registration window opens in September.
