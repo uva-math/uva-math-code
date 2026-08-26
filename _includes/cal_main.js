@@ -18,7 +18,7 @@
     "n6dhh35l2td9i73ii6dbkpqtro@group.calendar.google.com",   //10 - gradsem
     "8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com",   //11 - galois
     "ftc1mbjbp95irpj6t9e2tfl020@group.calendar.google.com",   //12 - operator
-    "fj2uv2u9ea74h8b0gihm3iu73c@group.calendar.google.com",   //13 - analysis commons
+    "empty@virginia.edu",   //13 - analysis commons, discontinued after 2021-22; slot kept so 14+ do not shift
     "3ehl1jte3jnlftm6h5m28b96jo@group.calendar.google.com",   //14 - AWM
     "56un1k179o7d8mtj85o12qsg7c@group.calendar.google.com",   //15 - Number Theory
     // (REMOVE AMS CHAPTER) "c_60f1de561954223e1933f83f3bfb2520fd742ca85cbd6a02dade97379ec7fad3@group.calendar.google.com",  // 16 - AMS chapter

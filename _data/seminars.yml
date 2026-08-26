@@ -176,13 +176,18 @@
     - UVA_id: asr3x
     - UVA_id: eg4va
 
+# Discontinued after 2021-22. The entry stays because the archive pages under
+# seminars/ancommons/ read their title, description and past talks through it --
+# the talks come from the Google calendar below, so removing the id blanks them.
+# defunct keeps it out of the seminar list and the week-view calendar instead.
 - cal_number: "13"
   name: Analysis Commons
   shortname: ancommons
   published_in_nav: false
+  defunct: true
   google_cal_id: "fj2uv2u9ea74h8b0gihm3iu73c@group.calendar.google.com"
   seminar_weight: 50
-  regular_times: TBD
+  regular_times: Discontinued after 2021-22. The archives below remain available.
   information: |
     Talks at the Analysis Commons seminar cover topics of broader interest to the analysis community at University of Virginia. This includes functional analysis and operator algebras, mathematical physics, harmonic analysis and PDEs, probability theory, and other research areas. Presentations at this seminar are accessible to beginning graduate students in analysis. This calendar also lists talks at other UVA Math seminars which may be of interest to general analysis audience.
   contact:

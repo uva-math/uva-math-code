@@ -7,6 +7,16 @@ sem_page: true
 # title: CAN OVERRIDE the title in <h1> on the page; the title of the page itself is hardcoded from seminars.yml
 ---
 
-{% include seminar_page.html 
-    archives='<a href="/seminars/ancommons/">upcoming</a> 
+<div class="alert alert-secondary" role="alert">
+  The Analysis Commons seminar is no longer running; its last talks were in
+  2021&ndash;22. The archives below are kept for reference. For current analysis
+  talks see the
+  <a href="/seminars/diffeq/">Harmonic Analysis and PDE</a>,
+  <a href="/seminars/sotoa/">Operator Theory</a>,
+  <a href="/seminars/mathphys/">Mathematical Physics</a> and
+  <a href="/seminars/probability/">Probability</a> seminars.
+</div>
+
+{% include seminar_page.html
+    archives='<a href="/seminars/ancommons/">upcoming</a>
     | <a href="/seminars/ancommons/2021-22/">2021-22</a> | <a href="/seminars/ancommons/2020-21/">2020-21</a> | <a href="/seminars/ancommons/2019-20/">2019-20</a> | <a href="/seminars/ancommons/2018-19/">2018-19</a>' %}
