@@ -58,7 +58,7 @@ permalink: /kiosk/
     if(num == 10) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "10" %}{{sem.name}}{% endif %}{% endfor %}'; }
     if(num == 11) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "11" %}{{sem.name}}{% endif %}{% endfor %}'; }
     if(num == 12) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "12" %}{{sem.name}}{% endif %}{% endfor %}'; }
-    if(num == 13) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "13" %}{{sem.name}}{% endif %}{% endfor %}'; }
+    if(num == 13) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "13" and sem.defunct != true %}{{sem.name}}{% endif %}{% endfor %}'; }
     if(num == 14) { return '{% for sem in site.data.seminars %}{% if sem.cal_number == "14" %}{{sem.name}}{% endif %}{% endfor %}'; }
     return '';
   }
