@@ -37,6 +37,8 @@ nav_weight: 20
 
 - **Copying Exams:** The Department has a copier/scanner (room `203`) and floor printers (rooms `313`, `118`) for printing. You should be able to print from your office computer (hooked up to LAN or eduroam wifi) to any of these printers. The front office (room `216`) can send large print jobs to UVA Printing and Copying Services. Please allow two days for turn around.
 
+- **Printers and Toner:** The Department supplies and maintains the shared black and white printers in the common areas, and supplies the paper. The front office (room `216`) can print in color on request. Faculty may keep a printer in their own office. Toner and other consumables for such a printer can be charged to the faculty member's chair, startup, research, or grant funds, when those funds exist. When a faculty member has no such funds, the Department covers reasonable consumable costs on request.
+
 
 <!-- - **UNIX home directory service at `blue.unix.virginia.edu`:**
 [`https://admin.people.virginia.edu/cgi-local/ww/menu`](https://admin.people.virginia.edu/cgi-local/ww/menu) -->
@@ -47,4 +49,6 @@ nav_weight: 20
 
 - **Mailboxes:** Everyone has a mailbox in the mailroom (off the Lobby on the main floor).
 
-- **Supply Room (220):** The Supply Room has paper, pens, chalk, toner cartridges, and other supplies. There is also a refrigerator, microwave, and FAX machine, and a large refrigerator in the coffee room (Ker 312). You may check out a projector and cable connectors at the Math main office (room `216`).
+- **Supply Room (220):** The Supply Room has paper, pens, chalk, and other supplies. There is also a refrigerator, a microwave, and a FAX machine. You may check out a projector and cable connectors at the Math main office (room `216`).
+
+- **Kitchen facilities:** The coffee room (`312`), next to the Math Lounge (room `314`), has a large refrigerator and a microwave. The graduate student lounge has a microwave. The Supply Room (room `220`) has a refrigerator and a microwave.
