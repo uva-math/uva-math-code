@@ -65,9 +65,17 @@ organizers the current listing, ask each seminar to confirm organizers, day, tim
 room, and edit only on an answer.
 
 Check every `contact` ID against `_departmentpeople/`: an ID under `recent-postdocs/`,
-`emeriti/` or `_UNPUBLISHED/`, or one with no file at all, is a stale organizer. Also
-decide the status of `ancommons` (Analysis Commons), whose archives stop at 2021-22 and
-which `seminars/seminar_updating.md` already treats as discontinued.
+`emeriti/` or `_UNPUBLISHED/`, or one with no file at all, is a stale organizer.
+
+**Retiring a seminar.** `ancommons` (Analysis Commons) was retired in August 2026. The way
+to do it is `defunct: true` on its `_data/seminars.yml` entry, **not** deleting the entry
+or the pages. The archive pages render their title and pull their past talks through that
+entry's `google_cal_id`, so removing it blanks the archives it is meant to preserve.
+`defunct` drops the seminar from the "List of seminars" and from the week-view calendar in
+`_includes/seminar_main_page.html`; `published_in_nav: false` keeps it out of the navbar.
+Blank the seminar's slot in the calendar arrays in `_includes/cal_main.js` and
+`kiosk/kiosk.md` by replacing the id with `"empty@virginia.edu"` — those arrays are
+positional, so deleting a line shifts every seminar after it.
 
 ---
 
