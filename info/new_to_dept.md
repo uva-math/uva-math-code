@@ -51,4 +51,4 @@ nav_weight: 20
 
 - **Supply Room (220):** The Supply Room has paper, pens, chalk, and other supplies. There is also a refrigerator, a microwave, and a FAX machine. You may check out a projector and cable connectors at the Math main office (room `216`).
 
-- **Kitchen facilities:** The coffee room (`312`), next to the Math Lounge (room `314`), has a large refrigerator and a microwave. The graduate student lounge has a microwave. The Supply Room (room `220`) has a refrigerator and a microwave.
+- **Kitchen facilities:** The coffee room (`312`), next to the Math Lounge (room `314`), has a large refrigerator and a microwave. The graduate student lounge (room `118`) has a microwave. The Supply Room (room `220`) has a refrigerator and a microwave.
