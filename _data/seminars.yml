@@ -32,7 +32,6 @@
   regular_times: Wednesdays 3:30-4:30pm and Fridays 11:00am-12:00pm, Kerchof 111
   contact:
     - UVA_id: yq2dw
-    - UVA_id: wbt4qn
     - UVA_id: mve2x
 
 - cal_number: "15"
@@ -66,7 +65,7 @@
   webpage: "http://pi.math.virginia.edu/diffeq/"
   google_cal_id: "5rjqjb9rg8t3ent7bo5kp4fka0@group.calendar.google.com"
   seminar_weight: 70
-  regular_times: Tuesdays 11:00am, CAB 036
+  regular_times: Tuesdays 11:00am, New Cabell Hall 207
   information: |
     The Harmonic Analysis and PDE seminar features a mix of local speakers (graduate students and faculty) and visitors. The ideal topics live on the interface between the two fields; luckily, the interface has been steadily expanding. This seminar runs jointly with the <a href="https://sites.google.com/view/potomacpde/home" target="_blank">Potomac Region PDE seminar</a>.
   contact:
@@ -100,7 +99,6 @@
     - UVA_id: hcg3m
     - UVA_id: tam7b
     - UVA_id: lap5r
-    - UVA_id: dku8jc
 
 - cal_number: "8"
   name: Topology Seminar
@@ -114,7 +112,6 @@
   contact:
     - UVA_id: jeb2md
     - UVA_id: mbp6pj
-    - UVA_id: pfy7cf
     - UVA_id: dfh3fs
 
 - cal_number: "2"
@@ -169,7 +166,7 @@
   published_in_nav: true
   google_cal_id: "8qr0g4b576nd86cvbaogamclj8@group.calendar.google.com"
   seminar_weight: 60
-  regular_times: Tuesdays, 3:30-4:45 in New Cabell Hall 389
+  regular_times: Tuesdays, 3:30-4:45 in New Cabell Hall 283
   information: |
     The Galois-Grothendieck Seminar is an expository seminar about various aspects of Galois theory and arithmetic geometry. Each semester/year has a coherent program, with graduate students contributing many of the talks.
   contact:
