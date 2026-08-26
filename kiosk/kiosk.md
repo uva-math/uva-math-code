@@ -157,10 +157,11 @@ permalink: /kiosk/
         request[cal_j][0].execute(function (resp)
         {
           calsArray.push(cal_j);
-          for (var i = 0; i < resp.items.length; i++)
+          var respItems = (resp && resp.items) || [];
+          for (var i = 0; i < respItems.length; i++)
           {
             // formatted google calendar events are packed into array of strings here
-            var item = resp.items[i];
+            var item = respItems[i];
             var allDay = item.start.date? true : false;
             var startDT = allDay ? item.start.date : item.start.dateTime;
             var dateTime = startDT.split("T"); //split date from time

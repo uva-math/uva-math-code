@@ -174,7 +174,7 @@
     - UVA_id: eg4va
 
 # Discontinued after 2021-22. The entry stays because the archive pages under
-# seminars/ancommons/ read their title, description and past talks through it --
+# seminars/ancommons/ read their title, contacts and past talks through it --
 # the talks come from the Google calendar below, so removing the id blanks them.
 # defunct keeps it out of the seminar list and the week-view calendar instead.
 - cal_number: "13"
