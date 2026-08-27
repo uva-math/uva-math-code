@@ -4,7 +4,7 @@ lastname: Jayanti
 name: Pranava Chaitanya
 general_position: postdoc
 position: Pitts Research Associate and Lecturer
-office:
+office: 301 Kerchof Hall
 phone:
 email: gdj6dy@virginia.edu
 image: __SITE_URL__/img/people/fall25/Pranava_Jayanti.png

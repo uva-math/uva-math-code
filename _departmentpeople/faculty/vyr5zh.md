@@ -5,7 +5,7 @@ name: Shuler
 general_position: faculty
 non-tt: true
 position: Assistant Professor, General Faculty
-office:
+office: 225 Kerchof Hall
 phone:
 email: vyr5zh@virginia.edu
 image:
