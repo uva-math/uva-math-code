@@ -17,6 +17,8 @@ nav_weight: 20
 
 - **University ID and Computing** [`https://its.virginia.edu/accounts/facstaffaccounts.html`](https://its.virginia.edu/accounts/facstaffaccounts.html) New faculty/staff begin here
 
+- **Arriving and leaving UVA: the ITS checklists** [`Technology Checklists for the UVA Community`](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=7927f5c8db0a1b80f032f1f51d96190e) covers both joining and departing. One thing to be careful about on the way out: **your UVA email and files can be switched off abruptly when your appointment ends, sometimes with no warning at all** - the grace period depends on how the departure is recorded centrally, not on your job title, and deleted mail cannot be recovered. Export anything you need well before your last day.
+
 - **Software Gateway** [`https://its.virginia.edu/software/`](https://its.virginia.edu/software/) provides access to site-licensed software that can be distributed to members of the University at no charge.  Our local IT person is {% include person_info.html UVA_id="vlb5y" %}
 
 - **Setting up Direct Deposit:**  In order to set up direct deposit for your paycheck, you will need to have an account on the University’s Integrated System [`https://www.virginia.edu/integratedsystem/`](https://www.virginia.edu/integratedsystem/)    
