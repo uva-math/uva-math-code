@@ -10,7 +10,7 @@ redirect_from:
 
 ### Fall 2026
 
-Applications are due **Wednesday, September 2** — see the [application page]({{site.url}}/mathexlab/application/). The remaining Fall 2026 meeting dates will be posted here once they are set. Each semester the lab holds an introductory group meeting, a visit from the Starr Hill Pathways program, and final group presentations.
+**The Lab is not running in Fall 2026.** It will return in Spring 2027: applications will open in December, and the meeting dates will be posted here once they are set. Each semester the lab holds an introductory group meeting, a visit from the Starr Hill Pathways program, and final group presentations.
 
 **Examples of past common meetings:**
 

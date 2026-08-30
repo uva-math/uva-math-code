@@ -10,4 +10,4 @@ redirect_from:
 
 Any undergraduate student can apply. Applications are not limited to math majors, but we expect students to be curious and enthusiastic about exploring new mathematical ideas and work with hands-on material to explore those ideas. The applications are judged on a holistic basis. You need to plan to sign up for one course credit.
 
-Mentee Application: link TBA. The Fall 2026 application deadline is **Wednesday, September 2**. Applying by then leaves time to match you with a project before September 8, the last day to add the course.
+**The Math Experimental Lab is not running in Fall 2026.** The Lab will return in Spring 2027; the application link and deadline will be posted here in December.
