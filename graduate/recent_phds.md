@@ -10,6 +10,68 @@ nav_weight: 70
 <h1 class="mb-3">Recent PhDs</h1>
 
 
+## 2026
+
+- **Eleftherios Chatzitheodoridis**<br>
+  Virginia Commonwealth University, Postdoctoral Fellow<br>
+  (Advisor: Julie Bergner)
+
+- **Alejandro De Las Penas Castano**<br>
+  UNAM, Facultad de Ciencias<br>
+  (Advisor: Valia Gazaki)
+
+- **Kevin Gomez**<br>
+  NYU Tandon School of Engineering, Postdoctoral Researcher<br>
+  (Advisor: Ken Ono)
+
+- **Yangxiao Luo**<br>
+  Ohio State University, Zassenhaus Assistant Professor<br>
+  (Advisor: Slava Krushkal)
+
+- **Mikhail Tikhonov**<br>
+  Oregon State University, Postdoctoral Scholar<br>
+  (Advisor: Leonid Petrov)
+
+- **Michael Wills**<br>
+  Purdue University, Golomb Visiting Assistant Professor<br>
+  (Advisor: Valia Gazaki)
+
+
+## 2025
+
+- **Kian Aik Cheong**<br>
+  TBA<br>
+  (Advisor: Valia Gazaki)
+
+- **Louisa Liles**<br>
+  Oberlin College, Assistant Professor<br>
+  (Advisor: Slava Krushkal)
+
+- **Matthew McCarthy**<br>
+  TBA<br>
+  (Advisor: Peter Abramenko)
+
+- **Mojdeh Tarighat Feller**<br>
+  Pepperdine University, Visiting Assistant Professor<br>
+  (Advisor: Jennifer Morse)
+
+- **Wojciech Tralle**<br>
+  University of Tampa, Assistant Teaching Professor<br>
+  (Advisor: Andrei Rapinchuk)
+
+- **Miika Tuominen**<br>
+  TBA<br>
+  (Advisor: Julie Bergner)
+
+- **Aoran Wu**<br>
+  University of Virginia, Lecturer<br>
+  (Advisor: Ben Hayes)
+
+- **Valentina Zapata Castro**<br>
+  University of Massachusetts Amherst, Visiting Assistant Professor<br>
+  (Advisor: Julie Bergner)
+
+
 ## Spring 2024
 
 - **Tanner Carawan**<br>
@@ -92,7 +154,8 @@ University of Cologne, Postdoc<br>
 - **Ross Akhmechet**<br>
 Columbia University, Ritt Assistant Professor<br>
 *Annular Link Homology Theories and Their Homotopical Refinement*<br>
-(Advisor: Slava Krushkal)
+(Advisor: Slava Krushkal)<br>
+Currently: University of Southern California
 
 - **Matthew Feller**<br>
 Max Planck Institute, Postdoc<br>	
@@ -146,7 +209,8 @@ Currently: UC Riverside, Visiting Assistant Professor
 - **Chris Chung**<br>
 Okinawa Institute of Science and Technology, Postdoc<br>
 *Quantum Covering Groups and Quantum Symmetric Pairs*<br>
-(Advisor: Weiqiang Wang)
+(Advisor: Weiqiang Wang)<br>
+Currently: Xiamen University Malaysia, Assistant Professor
 
 - **Huy Dang**<br> National Center for Theoretical Sciences, Taipei, Postdoc<br> *Quantum Covering Groups and Quantum Symmetric Pairs*<br> (Advisor: Andrew Obus)
 
@@ -190,8 +254,7 @@ Currently: EMT
 - **Gabriel Islambouli**<br>
 University of Waterloo, Postdoc<br>
 *Parallels Between Heegaard Splittings and Trisections of 4-Manifolds*<br>
-(Advisor: Slava Krushkal)<br>
-Currently: UC Davis, Krener Assistant Professor
+(Advisor: Slava Krushkal)
 
 - **Christopher Leonard**<br>
 Houst, Pricing and Data Solutions Lead<br>
@@ -242,8 +305,7 @@ Currently: Cedarville University, Assistant Professor
 - **Michael Reeks**<br>
 University of Ottawa, Postdoc<br>
 *Trace and Center of the Twisted Heisenberg Category*<br>
-(Advisor: Weiqiang Wang)<br>
-Currently: Bucknell University, Assistant Professor
+(Advisor: Weiqiang Wang)
 
 - **Veronica Shalotenko**<br>
 UVA Lecturer<br>
@@ -486,7 +548,8 @@ Grant Street Group, Software Developer<br>
 - **Yung Ning Peng**<br>
 National Central University, Taiwan, Associate Professor<br>
 *Parabolic Presentations of the Super Yangian YM|N and Applications*<br>
-(Advisor: Weiqiang Wang)
+(Advisor: Weiqiang Wang)<br>
+Currently: National Cheng Kung University, Professor
 
 - **Justin Webster**<br>
 University of Maryland Baltimore County, Associate Professor<br>
