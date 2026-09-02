@@ -13,7 +13,7 @@ applications are judged on a holistic basis. You may opt to receive up to one co
 
 [Mentee Application](https://docs.google.com/forms/d/e/1FAIpQLSeUoDCRlgWrCbe7ussw8GJ8nXP7bBdMTCKxu3YbezjqMKVwTQ/viewform?usp=dialog)
 
-**Applications Due: August 28, 2026, 11:59pm EST**
+**Applications Due: September 3rd, 2026, 11:59pm EST**
 
 <h2 class="mb-3">Mentor Application</h2>
 
@@ -22,6 +22,6 @@ out the following application.
 
 [Mentor Application](https://docs.google.com/forms/d/e/1FAIpQLSfc7bXOuGwpnLZs3Mt75MGPi-T_Cmlhv1jQp6l2otLhr1YpTw/viewform?usp=dialog)
 
-**Applications Due: August 28, 2026, 11:59pm EST.**
+**Applications Due: September 3rd, 2026, 11:59pm EST.**
 
 Here is our set of Mentor Guidelines, where you can read the specifics about the role. [Mentor Guidelines]({{ site.url }}/drp/Mentor_Guidelines.pdf) ([HTML]({{ site.url }}/drp/Mentor_Guidelines.html))
