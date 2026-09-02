@@ -116,11 +116,11 @@ duplicates this page.
 below swept the same day).
 
 [`undergraduate/contacts.md`](undergraduate/contacts.md) carries an explicit academic year
-in its heading, so a stale one is visible to any reader. It lists the DUS, course
+in its heading, so a stale one is visible to any reader. It lists the DUP, course
 coordinators, Putnam coaches, the AWM / Math Club committee, and the Math Circle
 organizers — all of which rotate. [`graduate/contacts.md`](graduate/contacts.md) is
 year-stamped the same way. Transfer-of-credit advising sits with the DUP, so that row
-tracks the DUS line rather than a separate assignment.
+tracks the DUP line rather than a separate assignment.
 
 **Satellite pages that carry service assignments but no year stamp.** Each of these had
 gone stale invisibly before the August 2026 sweep; check every one against the new
@@ -179,6 +179,11 @@ SIS, count it instead of modelling it.
 
 Advisors are deliberately not seated in the range containing their own initial, and the
 assignment is shuffled rather than alphabetical.
+
+The lead is tagged "(lead declaration advisor)", not "(lead advisor)". Gromoll asked for
+the narrower wording in September 2026: the bare "lead advisor" read to students as a
+general escalation path and sent him questions belonging to the DUP. The tag exists for the
+intake circle, not for students. Carry the full wording across at a rollover.
 
 ---
 

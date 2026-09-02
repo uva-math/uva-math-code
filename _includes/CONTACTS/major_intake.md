@@ -5,4 +5,4 @@
 - Last name begins with **I-L:** {% include person_info_OH.html UVA_id="brh5c" %}<br><br class="hidden-sm-up">
 - Last name begins with **M-P:** {% include person_info_OH.html UVA_id="yqd3p" %}<br><br class="hidden-sm-up">
 - Last name begins with **Q-S:** {% include person_info_OH.html UVA_id="aa4cr" %}<br><br class="hidden-sm-up">
-- Last name begins with **T-Z:** {% include person_info_OH.html UVA_id="hcg3m" %} (lead advisor)<br><br class="hidden-sm-up">
+- Last name begins with **T-Z:** {% include person_info_OH.html UVA_id="hcg3m" %} (lead declaration advisor)<br><br class="hidden-sm-up">

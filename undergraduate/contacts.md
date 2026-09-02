@@ -17,8 +17,8 @@ tooltips: true
 - **Associate Chair:**<br>
 {% include person_info_email_only.html UVA_id="sm4cw" %}
 
-- **Director of Undergraduate Studies:**<br>
-{% include person_info_OH.html UVA_id="des5e" email_override="math-dus@virginia.edu" email_label="Director of Undergraduate Studies" %}
+- **Director of Undergraduate Programs:**<br>
+{% include person_info_OH.html UVA_id="des5e" email_override="math-dus@virginia.edu" email_label="Director of Undergraduate Programs" %}
 
 - <strong>{% include course number=1140 code=false %} Coordinator:</strong><br>
 {% include person_info_email_only.html UVA_id="kc5kv" %} (Fall), Spring TBD
@@ -42,7 +42,7 @@ tooltips: true
 {% include person_info_email_only.html UVA_id="ed8bg" %}
 
 - **Transfer of Credit Advisors:**<br>
-{% include person_info_OH.html UVA_id="des5e" email_override="math-dus@virginia.edu" email_label="Director of Undergraduate Studies" %} <br>
+{% include person_info_OH.html UVA_id="des5e" email_override="math-dus@virginia.edu" email_label="Director of Undergraduate Programs" %} <br>
 
 - **To Declare a Major/Minor:**<br>
 

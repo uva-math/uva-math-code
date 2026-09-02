@@ -33,7 +33,7 @@ Past UVA Putnam Prize winners are listed on the [undergraduate awards page]({{si
 
 The [Mathematical Contest in Modeling and the Interdisciplinary Contest in Modeling](https://www.comap.com/contests/mcm-icm), run by COMAP, are 96-hour team competitions in applied and computational mathematics. Teams of up to three undergraduates choose one open-ended real-world problem and submit a written solution paper — there is no proctored exam, and programming and writing count as much as the mathematics.
 
-The **2027 contest runs from 5:00 p.m. EST on Thursday, January 28, 2027, to 8:00 p.m. EST on Monday, February 1, 2027**. Teams must be registered by a faculty advisor before 3:00 p.m. EST on January 28, and the registration fee is $100 per team. Students interested in forming a team should contact the [Director of Undergraduate Studies]({{site.url}}/undergrad/contacts/) about finding an advisor.
+The **2027 contest runs from 5:00 p.m. EST on Thursday, January 28, 2027, to 8:00 p.m. EST on Monday, February 1, 2027**. Teams must be registered by a faculty advisor before 3:00 p.m. EST on January 28, and the registration fee is $100 per team. Students interested in forming a team should contact the [Director of Undergraduate Programs]({{site.url}}/undergrad/contacts/) about finding an advisor.
 
 ---
 
