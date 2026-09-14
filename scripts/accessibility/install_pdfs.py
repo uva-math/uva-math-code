@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Install reviewed PDF candidates only after checking every receipt and source hash."""
 import argparse
+from collections import Counter
 import hashlib
 import json
 from pathlib import Path
@@ -43,12 +44,21 @@ for item in manifest['documents']:
     source = root / relative
     # schedule_build.py owns the schedule PDFs, which change on every data refresh.
     if item.get('print_layout') == 'schedule':
-        records.append(dict(pdf=str(relative), status='schedule build output', sha256=sha(source)))
+        result = subprocess.run(['verapdf', '--flavour', 'ua1', '--format', 'json', str(source)],
+            check=True, text=True, capture_output=True)
+        if not validated(json.loads(result.stdout)):
+            raise ValueError(f'Schedule validation failed: {relative}')
+        records.append(dict(pdf=str(relative), status='schedule build output', pdfua1=True,
+            managed_by='scripts/schedule/schedule_build.py',
+            original_sha256=item['original_sha256'], sha256=sha(source)))
         continue
     if sha(source) not in {item['original_sha256'], *installed.get(relative.as_posix(), ())}:
         raise ValueError(f'Source changed since inventory: {relative}')
     if item.get('retain_original'):
-        records.append(dict(pdf=str(relative), status='retained historical archive', sha256=sha(source)))
+        kind = item['retain_kind']
+        if kind not in {'historical archive', 'original poster', 'fillable form'}:
+            raise ValueError(f'Unknown retention kind for {relative}: {kind}')
+        records.append(dict(pdf=str(relative), status=f'retained {kind}', sha256=sha(source)))
         continue
     candidate = candidates / relative
     if not candidate.is_file():
@@ -79,7 +89,9 @@ if args.write:
     for candidate, source in replacements:
         shutil.copyfile(candidate, source)
 report = dict(installed=args.write, documents=len(records), replaced=len(replacements),
-    retained=sum(record['status'] == 'retained historical archive' for record in records), records=records)
+    retained=sum(record['status'].startswith('retained ') for record in records),
+    schedule_outputs=sum(record['status'] == 'schedule build output' for record in records),
+    status_counts=dict(sorted(Counter(record['status'] for record in records).items())), records=records)
 Path(args.report).parent.mkdir(parents=True, exist_ok=True)
 Path(args.report).write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps({key: value for key, value in report.items() if key != 'records'}))

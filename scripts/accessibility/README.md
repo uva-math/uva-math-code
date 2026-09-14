@@ -39,7 +39,10 @@ and margins. Schedule tables use scoped course and column headers, preserve the 
 source including supplementary notes and the weekly grid, and keep 8pt section rows.
 The schedule helper also requires Poppler's `pdfinfo` and `pdftotext` (on macOS,
 `brew install poppler`). It refuses a failed PDF/UA validation, room data, or more than
-four pages before writing either published PDF.
+four pages before writing either published PDF. A successful build also refreshes the
+inventoried schedule hashes in `docs/accessibility-pdf-results-september-2026.json`;
+the daily schedule hook includes that report in its refresh commit. A term rollover
+does not add the new archive to the fixed September inventory.
 
 The CLI writes `OUTPUT.validation.json` with the complete veraPDF result and `OUTPUT.export.json` with counts and a summary. An independent validation uses:
 
@@ -55,9 +58,9 @@ The postprocessor also creates PDF list bodies, maps emphasis roles, labels link
 
 Before replacing an existing PDF, compare the companion's complete text, figures, tables, and mathematical expressions with that PDF. Review representative printed pages and reading order as well as the validator report. Automated PDF/UA validation does not establish that a transcription is complete or a generated mathematical description is correct.
 
-The reviewed samples include Placement Exam B Solutions, all eight Virginia Math Bulletins, the three combined exam archives, and lecture posters. Original poster layout is not reproduced by a text companion; event information and meaningful illustrations are preserved in the reflowed export. The installation record contains final formula and figure counts for each PDF.
+The reviewed document samples include Placement Exam B Solutions, all eight Virginia Math Bulletins and the three combined exam archives. The 29 posters and example templates restored during follow-up preserve their original layout; their complete HTML alternatives remain available. The two fillable forms also retain their original PDFs and all 25 and 24 field widgets. The installation record contains formula and figure counts for the reflowed document exports, and separate statuses for artwork, retained originals and the schedule workflow's outputs.
 
-For the complete inventory, `pdf-manifest.json` records original hashes, complete HTML sources, combined archive parts and retained historical lecture decks. `prepare_pdfs.rb` assembles the complete print documents, resolving image/link paths and retaining the contents of every constituent exam:
+For the complete inventory, `pdf-manifest.json` records original hashes, complete HTML sources, combined archive parts, artwork and retained originals. Retained items have a machine-readable `retain_kind` (`historical archive`, `original poster` or `fillable form`) as well as a description of their limitations. `prepare_pdfs.rb` assembles the complete print documents, resolving image/link paths and retaining the contents of every constituent exam:
 
 ```sh
 ruby scripts/accessibility/prepare_pdfs.rb --site /tmp/uva-a11y-final --output /tmp/uva-pdf-source
@@ -74,7 +77,19 @@ python3 scripts/accessibility/batch_export.py \
 
 This command only stages candidates. Its cache requires matching HTML and exporter hashes. Errors retain logs and prevent a success receipt. Empty table values use a dash in the reflowed print version so the browser does not drop their cells from the PDF structure tree.
 
-`tag_artwork.py` preserves the visible contents of a reviewed one-page illustration and tags the page as one described Figure. It is used only for the two poster-template artwork assets; it is not a way to tag ordinary document pages as images.
+`tag_artwork.py` preserves the visible contents of a reviewed one-page illustration and tags the page as one described Figure. The installed artwork consists of 27 original posters and flyers and two poster-template graphics. Their full text alternatives are reviewed separately in HTML. Ordinary document pages use the semantic document exporter.
+
+Artwork is staged separately from `batch_export.py`. For each manifest entry with `artwork: true`, supply its reviewed original, title and complete alternative, placing the candidate at the same relative PDF path inside the candidates directory:
+
+```sh
+scripts/accessibility/.venv/bin/python scripts/accessibility/tag_artwork.py \
+  --input /tmp/reviewed-original.pdf \
+  --output /tmp/uva-pdf-candidates/relative/path/to/poster.pdf \
+  --title 'Reviewed poster title' --alt 'Complete reviewed poster description'
+verapdf --flavour ua1 --format json /tmp/uva-pdf-candidates/relative/path/to/poster.pdf
+```
+
+Create the candidate's parent directory first. For the three defense posters marked `artwork_unicode_repair: tex`, add `--repair-tex-unicode`; this repairs the reviewed Computer Modern glyph mappings without changing the artwork. Some other originals needed font metadata corrections or removal of incomplete original tags before this step; the manifest describes those corrections. Review their rendering and links again after such repairs. Both example-template copies remain `retain_kind: original poster`: their arrow-tip font fragments need further mapping work. Do not replace them with a failed candidate, and do not run the artwork tagger on either fillable form.
 
 After content, visual and validation review, check the entire catalog before installing:
 
@@ -84,4 +99,10 @@ python3 scripts/accessibility/install_pdfs.py \
   --report /tmp/uva-pdf-install-review.json
 ```
 
-Add `--write` to install reviewed candidates. The installer verifies every source against the inventory's original hash and every document against its current receipt and validation report before copying any PDF. It leaves historical originals unchanged, and it never replaces `schedule.pdf` or the term archive, which `scripts/schedule/schedule_build.py` owns. The manifest is the September 2026 baseline. Now that those PDFs have been replaced, rerun the installer with `--baseline docs/accessibility-pdf-results-september-2026.json`, which also accepts a source matching the hash recorded in that installation report. Any other document revision requires an updated inventory and renewed review, not bypassing a hash failure.
+Add `--write` to install reviewed candidates. The installer verifies each non-schedule source against its recorded hashes and each reflowed candidate against its current receipt and validation report before copying any PDF. It independently validates artwork candidates and the currently installed schedule outputs with veraPDF. It leaves all retained originals unchanged, and it never replaces `schedule.pdf` or the term archive, which `scripts/schedule/schedule_build.py` owns.
+
+The report separates `replaced` candidates, all `retained` originals and `schedule_outputs`, and gives their exact `status_counts`; these three totals add up to `documents`. Schedule records contain the current PDF hash and validation result, without stale receipts from the earlier document export.
+
+For other PDFs, `source_sha256` and `exporter_sha256` record the inputs to the reviewed export; they are historical receipts, not a claim that every later HTML or stylesheet edit has been re-exported. The September mobile-table follow-up changed screen wrappers and screen-only CSS while preserving the print presentation. Run `prepare_pdfs.rb` again before a future export, and let the matching-source receipt checks decide which candidates need rebuilding; never rewrite an old receipt to match a newer source.
+
+The manifest is the September 2026 baseline. Now that those PDFs have been replaced, rerun the installer with `--baseline docs/accessibility-pdf-results-september-2026.json`, which also accepts a source matching the hash recorded in that installation report. Any other document revision requires an updated inventory and renewed review, not bypassing a hash failure.

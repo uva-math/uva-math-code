@@ -26,6 +26,9 @@ Usage:
 from __future__ import annotations
 
 import argparse
+from collections import Counter
+import hashlib
+import json
 import pathlib
 import re
 import subprocess
@@ -36,6 +39,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 from hooslist_fetch import term_code, term_slug          # noqa: E402
 
 REPO = pathlib.Path(__file__).resolve().parents[2]
+PDF_REPORT = pathlib.Path('docs/accessibility-pdf-results-september-2026.json')
 
 BLOCK = re.compile(r"(<!-- term-schedule-pdf -->)(.*?)(<!-- /term-schedule-pdf -->)", re.S)
 SEMESTER_RE = re.compile(r"UVA Mathematics --- ([A-Z][a-z]+ \d{4})")
@@ -257,6 +261,37 @@ def rewrite_blocks(site: pathlib.Path, semester: str, term: str) -> list[pathlib
     return touched
 
 
+def refreshed_pdf_report(site: pathlib.Path, pdf: bytes, names: tuple[str, ...]) -> str | None:
+    """Refresh inventoried schedule hashes after this build has validated the PDF.
+
+    The September inventory is fixed: a future term archive is not added to it.
+    Other PDF records retain their original review receipts and validation claims.
+    """
+    path = site / PDF_REPORT
+    if not path.is_file():
+        return None
+    report = json.loads(path.read_text())
+    for record in report['records']:
+        if record['pdf'] not in names:
+            continue
+        original_hash = record.get('original_sha256')
+        name = record['pdf']
+        record.clear()
+        record.update(pdf=name, status='schedule build output', pdfua1=True,
+                      managed_by='scripts/schedule/schedule_build.py')
+        if original_hash:
+            record['original_sha256'] = original_hash
+        record['sha256'] = hashlib.sha256(pdf).hexdigest()
+    counts = Counter(record['status'] for record in report['records'])
+    report['documents'] = len(report['records'])
+    report['retained'] = sum(count for status, count in counts.items()
+                             if status.startswith('retained '))
+    report['schedule_outputs'] = counts['schedule build output']
+    report['replaced'] = report['documents'] - report['retained'] - report['schedule_outputs']
+    report['status_counts'] = dict(sorted(counts.items()))
+    return json.dumps(report, indent=2) + '\n'
+
+
 def build_and_stage(site: pathlib.Path, semester: str | None = None) -> int:
     """Validate the tagged sheet, write both PDF names and the HTML snapshot, relink."""
     tex_path = site / "schedule.tex"
@@ -272,11 +307,16 @@ def build_and_stage(site: pathlib.Path, semester: str | None = None) -> int:
 
     pdf, pages = build_pdf(tex_path)
     assert_pdf_room_free(pdf, "the sheet just built from schedule.tex")
+    names = ('schedule.pdf', f'{slug}.pdf')
+    report = refreshed_pdf_report(site, pdf, names)
     if pages > 2:
         print(f"note: the complete compact sheet uses {pages} pages", file=sys.stderr)
-    for name in ("schedule.pdf", f"{slug}.pdf"):
+    for name in names:
         (site / name).write_bytes(pdf)
         print(f"wrote  -> {name}  ({len(pdf)} bytes, {pages} pages)")
+    if report is not None:
+        (site / PDF_REPORT).write_text(report)
+        print(f'wrote  -> {PDF_REPORT}')
     (site / f"{slug}.tex").write_text(tex)
     print(f"wrote  -> {slug}.tex")
 

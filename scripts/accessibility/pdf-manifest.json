@@ -25,7 +25,8 @@
       "original_sha256": "e43509da4551c9eef1535a5d2a49d70ea0ebf2e37abe0bece24c59364688cc15",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Friday/1 - Welch - UVA.pdf",
@@ -33,7 +34,8 @@
       "original_sha256": "8909278b1fb66d6ce0d2d36501b8c0de18afa7159b3b7d153665c807dc58bf2a",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Friday/2 - 18UVa20m.pdf",
@@ -41,7 +43,8 @@
       "original_sha256": "c2b362b9ec281b13a9613297a4be643c85a73bd87636fc678e2178472ce2ac9a",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Friday/3 - SatConjD.pdf",
@@ -49,7 +52,8 @@
       "original_sha256": "f9bfdc9efe31e95db574b810ff2c288d14df01518e21c23af8ec3f4a517158cb",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Li.pdf",
@@ -57,7 +61,8 @@
       "original_sha256": "3066ad7e1868cd8da1146dd195d75f6757f55b302f983ef9687d1c073254b54a",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Saturday/1 - tpc_pres.pdf",
@@ -65,7 +70,8 @@
       "original_sha256": "11de08b6371dcc96d7e3dac72b397d6e00159b081d58d0a404e4b64d77d6d9bd",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Saturday/2 - vanishing_pres__VA.pdf",
@@ -73,7 +79,8 @@
       "original_sha256": "dcce323618679973a0bd24a6693ac1fe89b39ec63eeb73605dc6a7cf325b64d5",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Saturday/3 - KRcactusslides_short.pdf",
@@ -81,7 +88,8 @@
       "original_sha256": "d85e67333d6c8c4fe4c42a7e3500ae4401c385f32d1e52082147ee7f97a648b2",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Schilling.pdf",
@@ -89,7 +97,8 @@
       "original_sha256": "4736a12e3e607d0c58b91258201340adbbacf2d04cee0b516b8e2211ad562c42",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Sunday/1 - UVA_oct21_workshop.pdf",
@@ -97,7 +106,8 @@
       "original_sha256": "fac6ac1878c9331b5989f6d464fbcbc3f4ec5d0036b14280c006480f517d25e5",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Sunday/2 - UVA2018Kvinge.pdf",
@@ -105,7 +115,8 @@
       "original_sha256": "c92959b3f12889e461d31ea8f9a01c7a36e60438c51551484859e0dd7be3db9e",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Wan.pdf",
@@ -113,7 +124,8 @@
       "original_sha256": "e29aea4601124b75bd189a45ad843189ef2368b565e50bb66f30df99f7a522fe",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Webster.pdf",
@@ -121,7 +133,8 @@
       "original_sha256": "1346e20a7982c2a10f7b8b1de857cc439bac6abf85b2979ee9b1a1bb1344eefe",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/okounkov_workshop_fall_2018/talks/Yong.pdf",
@@ -129,7 +142,8 @@
       "original_sha256": "9427eaf22da94a057b314af917b75785800455fe3dc0ca1917af427797f39ad1",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "IMS/parshall-workshop-spring-2020/parshall-workshop-spring-2020-poster.pdf",
@@ -313,7 +327,8 @@
       "original_sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9",
       "html_alternative": "/graduate/docs/PosterTemplate.html",
       "status": "Original single-page poster restored unchanged and untagged: artwork tagging fails PDF/UA-1 clause 7.21.7 because its embedded TeX fonts lack Unicode mappings. The complete text is in the HTML alternative.",
-      "retain_original": true
+      "retain_original": true,
+      "retain_kind": "original poster"
     },
     {
       "pdf": "graduate/docs/PosterTemplate/PosterTemplate.pdf",
@@ -322,7 +337,8 @@
       "sources": [],
       "status": "Original single-page poster restored unchanged and untagged: artwork tagging fails PDF/UA-1 clause 7.21.7 because its embedded TeX fonts lack Unicode mappings. The complete text is in the HTML alternative.",
       "html_alternative": "/graduate/docs/PosterTemplate.html",
-      "retain_original": true
+      "retain_original": true,
+      "retain_kind": "original poster"
     },
     {
       "pdf": "graduate/docs/PosterTemplate/mathlogo2.pdf",
@@ -1539,9 +1555,10 @@
       "original_pages": 1,
       "original_sha256": "211673d991bde57ed8695de7c6f3eab5311e3b80901b2f90d3b7a560fdc34644",
       "sources": [],
-      "status": "Original single-page poster restored unchanged and untagged: artwork tagging fails PDF/UA-1 clause 7.21.7 because its embedded TeX fonts lack Unicode mappings. The complete text is in the HTML alternative.",
+      "status": "Original single-page poster retained visually; tagged as a described Figure and validated against PDF/UA-1 after repairing its TeX glyph Unicode maps. Drawing instructions and embedded image/font data are unchanged; the complete text is in the HTML alternative.",
       "html_alternative": "/img/news_events/MattGagne_DefensePoster.html",
-      "retain_original": true
+      "artwork": true,
+      "artwork_unicode_repair": "tex"
     },
     {
       "pdf": "img/news_events/Perea-AMC-2026-03-12.pdf",
@@ -1566,18 +1583,20 @@
       "original_pages": 1,
       "original_sha256": "c7f099b1d52cd9b4833d1d7bb4d637fd533b58cbd9ff65429e7a06203b4d3825",
       "sources": [],
-      "status": "Original single-page poster restored unchanged and untagged: artwork tagging fails PDF/UA-1 clause 7.21.7 because its embedded TeX fonts lack Unicode mappings. The complete text is in the HTML alternative.",
+      "status": "Original single-page poster retained visually; tagged as a described Figure and validated against PDF/UA-1 after repairing its TeX glyph Unicode maps. Drawing instructions and embedded image/font data are unchanged; the complete text is in the HTML alternative.",
       "html_alternative": "/img/news_events/defenses/Craig_defense.html",
-      "retain_original": true
+      "artwork": true,
+      "artwork_unicode_repair": "tex"
     },
     {
       "pdf": "img/news_events/defenses/Pandey_defense.pdf",
       "original_pages": 1,
       "original_sha256": "c7564d0b00ba812c79e6c01b7a7196f5843db74efa3a91b352cac56813b377a2",
       "sources": [],
-      "status": "Original single-page poster restored unchanged and untagged: artwork tagging fails PDF/UA-1 clause 7.21.7 because its embedded TeX fonts lack Unicode mappings. The complete text is in the HTML alternative.",
+      "status": "Original single-page poster retained visually; tagged as a described Figure and validated against PDF/UA-1 after repairing its TeX glyph Unicode maps. Drawing instructions and embedded image/font data are unchanged; the complete text is in the HTML alternative.",
       "html_alternative": "/img/news_events/defenses/Pandey_defense.html",
-      "retain_original": true
+      "artwork": true,
+      "artwork_unicode_repair": "tex"
     },
     {
       "pdf": "img/news_events/fluid-refl-conf-schedule.pdf",
@@ -1603,7 +1622,8 @@
       "original_sha256": "f4e0e8380b08ace172447acaac4ccbebf1ed9a9fa7ae59f29d6729b58a756b12",
       "sources": [],
       "retain_original": true,
-      "status": "historical lecture archive; no complete accessible source; retained publicly"
+      "status": "historical lecture archive; no complete accessible source; retained publicly",
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "mathcircle/MathCircle_article.pdf",
@@ -1842,7 +1862,8 @@
       "original_pages": 658,
       "status": "Retain public historical archive as requested by LP on 2026-09-13",
       "original_sha256": "b82ab7b1094b90982a1338b0a3f2bc22bfdf09da6905cbe1e38100dc161ad976",
-      "retain_original": true
+      "retain_original": true,
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "talks_seminars_data/B_Simon_2018/Tales of our Forefathers - B. Simon.pdf",
@@ -1850,7 +1871,8 @@
       "original_pages": 369,
       "status": "Retain public historical archive as requested by LP on 2026-09-13",
       "original_sha256": "c3dd7af402817a30d1cf6167bd147606631b9d4aa38292bc02503c2773ecb039",
-      "retain_original": true
+      "retain_original": true,
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "talks_seminars_data/B_Simon_2018/chebyshev - B. Simon.pdf",
@@ -1858,7 +1880,8 @@
       "original_pages": 252,
       "status": "Retain public historical archive as requested by LP on 2026-09-13",
       "original_sha256": "fd7388d315cff372029cf5637e7fc072af3b51848e7e878666e8c4160b0a6aab",
-      "retain_original": true
+      "retain_original": true,
+      "retain_kind": "historical archive"
     },
     {
       "pdf": "undergraduate/docs/DSP-GMP Info Sheets_2015 1.pdf",
@@ -1883,7 +1906,8 @@
       "original_sha256": "130b89336fd4ae4d87c26ad107325c4ba2df9287cfab84f880b873b872a72d3d",
       "html_alternative": "/undergraduate/docs/Grader_App_2023.html",
       "status": "Original fillable form restored unchanged (AcroForm fields kept) and untagged: PDF/UA tagging would need Form structure for every field and tagged page text. The labeled HTML form is the accessible version.",
-      "retain_original": true
+      "retain_original": true,
+      "retain_kind": "fillable form"
     },
     {
       "pdf": "undergraduate/docs/MathMajorCourseGuide_Fall25_version.pdf",
@@ -1940,7 +1964,8 @@
       "sources": [],
       "status": "Original fillable form restored unchanged (AcroForm fields kept) and untagged: PDF/UA tagging would need Form structure for every field and tagged page text. The labeled HTML form is the accessible version.",
       "html_alternative": "/undergraduate/docs/exception(fillable)_1.html",
-      "retain_original": true
+      "retain_original": true,
+      "retain_kind": "fillable form"
     },
     {
       "pdf": "undergraduate/docs/precalculus.pdf",

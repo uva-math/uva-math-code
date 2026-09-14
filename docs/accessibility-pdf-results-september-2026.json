@@ -1,8 +1,8 @@
 {
   "installed": true,
   "documents": 227,
-  "replaced": 202,
-  "retained": 25,
+  "replaced": 203,
+  "retained": 22,
   "records": [
     {
       "pdf": "IMS/files/CIRMATH AMERICAS Program 2018.pdf",
@@ -349,17 +349,11 @@
     },
     {
       "pdf": "f26.pdf",
-      "status": "reflowed tagged document",
+      "status": "schedule build output",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/schedule/index.html"
-      ],
-      "source_sha256": "1aba518235ec0011fff6d8551514fc1bbd1a98124388cac744262c46e4c94e60",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "managed_by": "scripts/schedule/schedule_build.py",
       "original_sha256": "9775f6fa4d2d903117be22fc43d3a94148d4f540dff82809afe3652f8a4d5a06",
-      "sha256": "52e4a8b898181e7fc5fdbfc5d1f8d461d0fe6557f746a110c9ed8e094423003b"
+      "sha256": "52aee9298bce115722d2dcdf6574c12ea8530d79cfc80db6cfb90e7744f51173"
     },
     {
       "pdf": "graduate/docs/DSP-GMP Info Sheets_2015 2.pdf",
@@ -2230,8 +2224,10 @@
     },
     {
       "pdf": "img/news_events/MattGagne_DefensePoster.pdf",
-      "status": "retained original poster",
-      "sha256": "211673d991bde57ed8695de7c6f3eab5311e3b80901b2f90d3b7a560fdc34644"
+      "sha256": "4487acd2b5c4c5711da6ecc101ff6cd52214f9fb4fc40801ff19823deef3b179",
+      "pdfua1": true,
+      "status": "tagged artwork",
+      "original_sha256": "211673d991bde57ed8695de7c6f3eab5311e3b80901b2f90d3b7a560fdc34644"
     },
     {
       "pdf": "img/news_events/Perea-AMC-2026-03-12.pdf",
@@ -2256,13 +2252,17 @@
     },
     {
       "pdf": "img/news_events/defenses/Craig_defense.pdf",
-      "status": "retained original poster",
-      "sha256": "c7f099b1d52cd9b4833d1d7bb4d637fd533b58cbd9ff65429e7a06203b4d3825"
+      "sha256": "544869cd0961bc39c4ac220958393f74f2a8601d8bc8f3983569eb993022e0f9",
+      "pdfua1": true,
+      "status": "tagged artwork",
+      "original_sha256": "c7f099b1d52cd9b4833d1d7bb4d637fd533b58cbd9ff65429e7a06203b4d3825"
     },
     {
       "pdf": "img/news_events/defenses/Pandey_defense.pdf",
-      "status": "retained original poster",
-      "sha256": "c7564d0b00ba812c79e6c01b7a7196f5843db74efa3a91b352cac56813b377a2"
+      "sha256": "2f91dfa0d209d375374c483fa511bbe6e5b47819b0a813438d2d739523bacb81",
+      "pdfua1": true,
+      "status": "tagged artwork",
+      "original_sha256": "c7564d0b00ba812c79e6c01b7a7196f5843db74efa3a91b352cac56813b377a2"
     },
     {
       "pdf": "img/news_events/fluid-refl-conf-schedule.pdf",
@@ -2306,17 +2306,11 @@
     },
     {
       "pdf": "schedule.pdf",
-      "status": "reflowed tagged document",
+      "status": "schedule build output",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/schedule/index.html"
-      ],
-      "source_sha256": "1aba518235ec0011fff6d8551514fc1bbd1a98124388cac744262c46e4c94e60",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "managed_by": "scripts/schedule/schedule_build.py",
       "original_sha256": "9775f6fa4d2d903117be22fc43d3a94148d4f540dff82809afe3652f8a4d5a06",
-      "sha256": "c5daab1e71767f9bef68309cbe9038b399539e6858f875d17bed22cfafeff1b8"
+      "sha256": "52aee9298bce115722d2dcdf6574c12ea8530d79cfc80db6cfb90e7744f51173"
     },
     {
       "pdf": "seminars/colloq/files/Gilles_Fall2020.pdf",
@@ -2889,5 +2883,14 @@
       "original_sha256": "791b40a2a41293894bf6d3b45cc699c20c3a0cd14a8e2b6a5b244727025b51d9",
       "sha256": "0ed38fb95e5ff27e644416c305d6641262350ce7592520e067c9c40120dd792a"
     }
-  ]
+  ],
+  "schedule_outputs": 2,
+  "status_counts": {
+    "reflowed tagged document": 174,
+    "retained fillable form": 2,
+    "retained historical archive": 18,
+    "retained original poster": 2,
+    "schedule build output": 2,
+    "tagged artwork": 29
+  }
 }
