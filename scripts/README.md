@@ -168,6 +168,8 @@ It checks for words split across lines, page overflow, named keyboard-accessible
 scroll containers, and arrow-key scrolling on the schedule and a legacy archive.
 Wrap wide tables in a labeled `.table-responsive` region with `tabindex="0"` so
 columns can scroll without compressing words or widening the whole page.
+Name the region from its caption or nearby heading, using `aria-labelledby` when
+possible. Avoid generic names such as "Table 1" in the screen reader's landmark list.
 
 These are limited automated checks. Neither they nor the conversion scripts
 establish WCAG conformance or legal compliance. They cannot verify the accuracy

@@ -48,14 +48,29 @@ function tablePages(dir) {
               }
             }
           }
-          const inaccessible = [...document.querySelectorAll('main .table-responsive')]
+          const wrappers = [...document.querySelectorAll('main .table-responsive')];
+          const invalidNames = wrappers.flatMap(el => {
+            const ids = (el.getAttribute('aria-labelledby') || '').trim().split(/\s+/).filter(Boolean);
+            const targets = ids.map(id => document.getElementById(id));
+            const name = (ids.length
+              ? targets.map(target => target?.textContent || '').join(' ')
+              : el.getAttribute('aria-label') || '').replace(/\s+/g, ' ').trim();
+            if (ids.some(id => document.querySelectorAll('#' + CSS.escape(id)).length !== 1)) {
+              return [{ name, reason: 'Label reference must identify one element' }];
+            }
+            if (!name || /^(?:table|region|table region)(?:\s+\d+)?$/i.test(name)) {
+              return [{ name, reason: 'Table region needs a descriptive name' }];
+            }
+            return [];
+          });
+          const inaccessible = wrappers
             .filter(el => el.scrollWidth > el.clientWidth + 1 && (el.tabIndex < 0 || !(el.getAttribute('aria-label') || el.getAttribute('aria-labelledby'))));
           return {
             overflow: document.documentElement.scrollWidth > innerWidth + 1,
-            splitWords: splitWords.slice(0, 10), inaccessible: inaccessible.length
+            splitWords: splitWords.slice(0, 10), inaccessible: inaccessible.length, invalidNames
           };
         });
-        if (result.overflow || result.splitWords.length || result.inaccessible) errors.push({ file, width, theme, ...result });
+        if (result.overflow || result.splitWords.length || result.inaccessible || result.invalidNames.length) errors.push({ file, width, theme, ...result });
         if (width === 320 && ['schedule/index.html', 'seminars/algebra/2009-10/index.html'].includes(file)) {
           const wrappers = page.locator('main .table-responsive');
           for (let i = 0; i < await wrappers.count(); i++) {

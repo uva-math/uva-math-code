@@ -11,10 +11,10 @@ nav_parent: Seminars
 <h1 class="mt-2 mb-4">COLLOQUIUM 2010-11</h1>
 
 
-<h2 class="mb-3 mt-3">Spring 2011</h2>
+<h2 id="spring-2011" class="mb-3 mt-3">Spring 2011</h2>
 
 
-<div class="table-responsive" role="region" tabindex="0" aria-label="Table 1">
+<div class="table-responsive" role="region" tabindex="0" aria-labelledby="spring-2011">
 <table border="no" width="97%" cellpadding="3">
     <thead>
         <tr>
@@ -125,13 +125,13 @@ nav_parent: Seminars
 </div>
 
 <center>
-<h2 class="mb-3 mt-3">
+<h2 id="fall-2010" class="mb-3 mt-3">
 Fall 2010
 </h2>
 
 </center>
 
-<div class="table-responsive" role="region" tabindex="0" aria-label="Table 2">
+<div class="table-responsive" role="region" tabindex="0" aria-labelledby="fall-2010">
 <table border="no" WIDTH="97%" CELLPADDING="3">
 <thead>
     <tr>

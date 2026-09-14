@@ -192,10 +192,11 @@ intake circle, not for students. Carry the full wording across at a rollover.
 **Due:** at the start of each hiring season, early fall.
 **Last done:** August 2026 (commit 242e4b66, filter bumped to 2026).
 
-[`current-jobs.html`](current-jobs.html) selects posts with `post.job-year >= 2026`. That
-year is hardcoded in two places in the file. If it is not bumped, the page keeps showing
-the previous cycle's advertisements; if it is bumped before the new ads are posted, the
-page correctly falls back to its "no open positions" message.
+[`current-jobs.html`](current-jobs.html) selects posts with `post.job-year >= 2026`.
+Update both that cutoff and the hiring-season year in the empty-list message at a
+rollover. This filter controls department announcements on this page, not whether
+positions are open in UVA Careers. Keep the Careers link and avoid describing an
+empty announcement list as "no open positions."
 
 New postings go in `_posts/jobs/` and need a `job-year` field to appear here at all.
 

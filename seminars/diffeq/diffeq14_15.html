@@ -15,9 +15,9 @@ nav_parent: Seminars
 {%if sem.shortname == cur_shortname %}
 
 {% if page.title == null %}
-  <h1 class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
+  <h1 id="seminar-title" class="mt-2 mb-4">University of Virginia {{sem.name}}</h1>
 {% else %}
-  <h1 class="mt-2 mb-4">{{page.title}}</h1>
+  <h1 id="seminar-title" class="mt-2 mb-4">{{page.title}}</h1>
 {% endif %}
 
 {% if sem.image != null %}
@@ -29,7 +29,7 @@ nav_parent: Seminars
 {% endif %}
 
 
-<div class="table-responsive" role="region" tabindex="0" aria-label="Table 1">
+<div class="table-responsive" role="region" tabindex="0" aria-labelledby="seminar-title">
 <table width=100%>
   <thead>
     <tr>
