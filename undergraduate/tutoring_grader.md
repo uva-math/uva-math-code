@@ -19,4 +19,4 @@ nav_weight: 6
 
 <h2>Be a Grader!</h2>
 
-<p><a href="{{ site.url }}/undergraduate/docs/Grader_App_2023.pdf">Grader application (fillable PDF)</a> (<a href="{{ site.url }}/undergraduate/docs/Grader_App_2023.html">accessible grader application form</a>)&nbsp;to grade for the Math Department. Please submit your application to <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a> or bring it to 216 Kerchof Hall. Applications are kept on file; instructors contact potential graders individually after reviewing applications.</p>
+<p>Complete the <a href="{{ site.url }}/undergraduate/docs/Grader_App_2023.html">grader application (HTML)</a> to apply to grade for the Math Department. An optional <a href="{{ site.url }}/undergraduate/docs/Grader_App_2023.pdf">fillable PDF for printing</a> is also available. Please submit your application to <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a> or bring it to 216 Kerchof Hall. Applications are kept on file; instructors contact potential graders individually after reviewing applications.</p>

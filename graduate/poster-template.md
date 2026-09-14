@@ -21,7 +21,7 @@ This LaTeX template is designed for creating professional announcement posters f
         <p class="card-text">Contains:</p>
         <ul>
           <li><code>PosterTemplate.tex</code></li>
-          <li><code>PosterTemplate.pdf</code></li>
+          <li><code>PosterTemplate.pdf</code> (example for printing)</li>
           <li><code>mathlogo2.pdf</code></li>
           <li><code>rotunda-drawing.pdf</code></li>
         </ul>
@@ -42,7 +42,7 @@ This LaTeX template is designed for creating professional announcement posters f
       <div class="card-body">
         <h3 class="card-title">Example Output</h3>
         <a href="{{site.url}}/graduate/docs/PosterTemplate.html">View Example (HTML)</a> |
-        <a href="{{site.url}}/graduate/docs/PosterTemplate.pdf">PDF (6.6 MB)</a>
+        <a href="{{site.url}}/graduate/docs/PosterTemplate.pdf">PDF for printing (6.6 MB)</a>
       </div>
     </div>
   </div>
