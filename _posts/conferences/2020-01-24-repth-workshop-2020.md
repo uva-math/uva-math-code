@@ -15,7 +15,7 @@ Institute of Mathematical Science
 will hold the workshop on 
 <a href="{{site.url}}/ims/rt-workshop-spring-2020/">Representations of Algebraic Groups and Quantum Groups</a>.
 
-## [PDF Poster]({{site.url}}/IMS/parshall-workshop-spring-2020/parshall-workshop-spring-2020-poster.pdf)
+[Workshop poster text (HTML)]({{site.url}}/IMS/parshall-workshop-spring-2020/parshall-workshop-spring-2020-poster.html) · [Workshop poster (PDF)]({{site.url}}/IMS/parshall-workshop-spring-2020/parshall-workshop-spring-2020-poster.pdf)
 
 Organizers: <a href="https://www.math.uga.edu/directory/people/daniel-k-nakano">Dan Nakano (University of Georgia)</a>&nbsp;&nbsp;
     {% include person_info_email_only.html UVA_id="asr3x" %}&nbsp;&nbsp;

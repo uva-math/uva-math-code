@@ -36,18 +36,18 @@ tooltips: true
     </li>
 <li> <em> Are you trying to decide between Math 1310 and Math 1320?</em> You will need to do 3 things.
         <ul>
-              <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1310_1320.html">self-paced Diagnostic.</a></li>
+              <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1310_1320.html">Math 1310/1320 self-paced placement exam</a>.</li>
               <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamB_Solutions.pdf">Math 1310/1320 placement solutions (PDF)</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamB_Solutions.html">Math 1310/1320 placement solutions (HTML)</a>).</li>
-              <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath3_1310_20Advice">this advice</a> to decide which course to take.</li>
+              <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath3_1310_20Advice">placement advice for Math 1310/1320</a> to decide which course to take.</li>
         </ul>
      </li>
 <li> <em> Are you trying to decide between Math 1320 and Math 2310?</em> You will need to do 5 things.
      <ul>
               <li>Take the 1310/1320 self-paced diagnostic (see first bullet in #2).</li>
               <li>Check your answers to the 1310/1320 self-paced diagnostic (see second bullet in #2).</li>
-              <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1320_2310.html">self-paced Diagnostic.</a></li>
+              <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1320_2310.html">Math 1320/2310 self-paced placement exam</a>.</li>
               <li>Check your answers  with <a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.pdf">Math 1320/2310 placement solutions (PDF)</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamC_Solutions.html">Math 1320/2310 placement solutions (HTML)</a>).</li>
-              <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath3_1320_2310Advice">this advice</a> to decide which course to take.</li>
+              <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath3_1320_2310Advice">placement advice for Math 1320/2310</a> to decide which course to take.</li>
         </ul>
 </li>
 </ol>

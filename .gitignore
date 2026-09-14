@@ -38,6 +38,12 @@ _layouts_backup*
 venv/
 node_modules/
 scripts/accessibility/.venv/
+*.pdf.validation.json
+*.pdf.export.json
+*.pdf.receipt.json
+*.pdf.pending
+*.pdf.log
+batch-report.json
 __pycache__/
 *.py[cod]
 scripts/__pycache__

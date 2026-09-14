@@ -12,7 +12,7 @@ import subprocess
 parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--jobs', required=True)
 parser.add_argument('--output', required=True)
-parser.add_argument('--python', default=os.environ.get('PDF_PYTHON', 'python3'))
+parser.add_argument('--python', default=os.environ.get('PDF_PYTHON'))
 parser.add_argument('--workers', type=int, default=3)
 parser.add_argument('--only', help='Regular expression selecting PDF paths')
 args = parser.parse_args()
@@ -33,8 +33,9 @@ def export(job):
         receipt = json.loads(receipt_path.read_text())
         if receipt.get('source_sha256') == job['source_sha256'] and receipt.get('exporter_sha256') == exporter_sha256:
             return dict(job, status='cached')
-    command = ['node', str(exporter), '--url', job['url'],
-        '--output', str(destination), '--python', args.python]
+    command = ['node', str(exporter), '--url', job['url'], '--output', str(destination)]
+    if args.python:
+        command += ['--python', args.python]
     if job.get('landscape'):
         command.append('--landscape')
     result = subprocess.run(command, text=True,

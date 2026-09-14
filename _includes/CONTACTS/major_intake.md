@@ -1,4 +1,4 @@
-**Fall 2026 Intake Advisors:**
+### Fall 2026 Intake Advisors:
 
 - Last name begins with **A-C:** {% include person_info_OH.html UVA_id="yq2dw" %}<br><br class="hidden-sm-up">
 - Last name begins with **D-H:** {% include person_info_OH.html UVA_id="ww9c" %}<br><br class="hidden-sm-up">

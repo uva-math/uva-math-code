@@ -43,7 +43,7 @@ specialty: Integrable Probability, Algebraic Combinatorics
 ---
 
 
-#### Selected Publications
+## Selected Publications
 - Cyclic extensions and the local lifting problem (with S. Wewers), Ann. of Math. **180**, No. 1 (2014), 233--284.
 - Fields of moduli of three-point $G$-covers with cyclic $p$-Sylow, I, Algebra Number Theory **6**, No. 5 (2012), 833--883.
 {% endhighlight %}

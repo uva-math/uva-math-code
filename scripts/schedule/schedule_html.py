@@ -160,16 +160,28 @@ def render(tex, path):
         out += [f'<h2>{plain(code)}' + (f': {plain(title)}' if title else '') + '</h2>']
         if units:
             out.append(f'<p>{plain(units)}</p>')
+        # A group headed by something other than a course code (the Seminars group)
+        # lists course numbers in the section field and "Topic (Instructor)" cells.
+        seminar_group = not re.fullmatch(r'MATH \d{4}', code.strip())
         if course['rows']:
             out.append('<ul class="schedule-sections">')
             for macro, fields in course['rows']:
                 section, number, meeting, room = fields[:4]
                 instructor = fields[-1]
                 kind = 'Discussion section' if macro == 'Dx' else 'Section'
-                out += [f'<li><h3>{kind} {plain(section)}</h3>', '<dl>',
+                heading, label = f'{kind} {plain(section)}', 'Instructor'
+                if seminar_group:
+                    topic = re.fullmatch(r'(.+?)\s*\(([^()]+)\)\s*', instructor)
+                    heading = f'MATH {plain(section)}'
+                    if topic:
+                        heading += f': {plain(topic.group(1))}'
+                        instructor = topic.group(2)
+                    else:
+                        label = 'Topic and instructor'
+                out += [f'<li><h3>{heading}</h3>', '<dl>',
                         f'<dt>Class number</dt><dd>{plain(number)}</dd>',
                         f'<dt>Meetings</dt><dd>{plain(meeting)}</dd>',
-                        f'<dt>Instructor</dt><dd>{plain(instructor)}</dd>']
+                        f'<dt>{label}</dt><dd>{plain(instructor)}</dd>']
                 if macro == 'Sx':
                     out.append(f'<dt>Enrollment / capacity</dt><dd>{plain(fields[4])}</dd>')
                 out += ['</dl></li>']

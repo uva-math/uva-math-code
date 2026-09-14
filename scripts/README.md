@@ -98,7 +98,7 @@ python3 scripts/fix_unicode_violations.py
 
 1. **Upload PDF** to Mathpix API
 2. **Download** TeX format
-3. **Convert** with Pandoc: `pandoc input.tex -f latex -t html --mathml --standalone -o output.html`
+3. **Convert** with Pandoc: `pandoc input.tex -f latex -t html --mathml -o content.html` (add `--standalone` only for the legacy `fix_mathml.py` standalone route)
 4. **Prepare the page** with the shared `document_page` layout, or use `fix_mathml.py` for a fresh standalone exam as described above. Preserve native MathML; do not add raw-TeX ARIA labels.
 5. **Validate the rendered HTML**: `python3 scripts/validate_conversion.py path/to/rendered.html`
 6. **Fix reported issues** and rerun the affected checks.

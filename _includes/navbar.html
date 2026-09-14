@@ -53,6 +53,9 @@
           {{p.nav_id}}
         </button>
         <ul class="dropdown-menu" id="navlinks-{{ forloop.index }}" aria-labelledby="navdropdown-{{ forloop.index }}">
+          {% unless p.redirect_to or p.content contains 'http-equiv="refresh"' %}
+            <li><a class="dropdown-item my-navbar-dropdown-item {%if p.url == page.url %}active bg-inverse{% endif %}" href="{{site.url}}{{p.url}}" {%if p.url == page.url %}aria-current="page"{% endif %}>{{p.nav_id}} overview</a></li>
+          {% endunless %}
           {% if p.nav_id == "News" or p.nav_id == "News&Events" %}
             <li><a class="dropdown-item my-navbar-dropdown-item {%if paginator.page %}active bg-inverse{% endif %}" style="{% if p.nav_long %}white-space: normal{% endif %}" href="{{site.url}}/allnews/" {%if paginator.page %}aria-current="page"{% endif %}>All News and Events</a></li>
           {% endif %}

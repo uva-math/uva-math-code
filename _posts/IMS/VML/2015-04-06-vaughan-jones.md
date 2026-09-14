@@ -18,9 +18,11 @@ nav_parent: IMS
 
 <h2 class="mt-3 mb-4">Vaughan Jones (Vanderbilt University)</h2>
 
-- Lecture 1: Knots and Groups
-- Lecture 2: Lecture 2: Von Neumann Algebra and Physics
-- Lecture 3: Do all Subfactors arise in Conformal Field Theory?
+- Lecture 1: Knots and Groups. Monday, April 6, 4-5pm, Clark 108
+- Lecture 2: Von Neumann Algebra and Physics. Tuesday, April 7, 5-6pm, Clark 108
+- Lecture 3: Do all Subfactors arise in Conformal Field Theory? Wednesday, April 8, 4-5pm, Monroe 130
+
+Organizers: Andrei Rapinchuk and David Sherman
 
 <!--more-->
 

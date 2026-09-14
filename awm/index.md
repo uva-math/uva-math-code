@@ -1,5 +1,5 @@
 ---
-title: AWM&commat;UVa
+title: "AWM@UVa"
 layout: awm_page
 permalink: /awm/
 nav_parent: Undergraduate
@@ -22,7 +22,7 @@ at the [University of Virginia](http://www.virginia.edu). Email: {% include pers
 We are the student chapter of the AWM at the University of Virginia. Our goal is to provide opportunities for all students, regardless of gender identity, to be exposed to the world of professional mathematics, to obtain information about the varied career options in mathematics, to network with professional mathematicians, and to develop leadership skills.
 If you would like to participate in any of our events, check out our <a href="{{site.url}}/awm/calendar/">calendar</a> and just show up! If you would like to be part of our mailing list, please send us a message ({% include person_info_email_only.html UVA_id="af7py" %}, {% include person_info_email_only.html UVA_id="brh5c" %}, {% include person_info_email_only.html UVA_id="sm4cw" %}, or {% include person_info_email_only.html UVA_id="rbh3vx" %}) and we will send you a message whenever we schedule a new event. You are also welcome to email us with any questions or suggestions you might have.
 
-Our AWM student chapter maintains a separate webpage at [AWM at UVA student chapter website](https://sites.google.com/view/awmatuva/home). Please visit that page for more information!
+Our AWM student chapter maintains a separate [AWM at UVA student chapter website](https://sites.google.com/view/awmatuva/home). Please visit that page for more information!
 
 
 ## Mentorship Program

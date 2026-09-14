@@ -27,17 +27,17 @@ The Distinguished Major Program (DMP) is a special option within the math major 
 
  Students are expected to complete the following courses with a GPA of at least 3.4 and a minimum grade of B- in each course:
 
-- {% include course number=3340 %} <em>Complex Variables with Applications</em>
+- {% include course number=3340 %}
 
-- {% include course number=4310 %} <em>Introduction to Real Analysis</em>
+- {% include course number=4310 %}
 
-- {% include course number=4651 %} <em>Advanced Linear Algebra</em>
+- {% include course number=4651 %}
 
-- {% include course number=4652 %} <em>Introduction to Abstract Algebra</em>
+- {% include course number=4652 %}
 
-- {% include course number=4770 %} <em>General Topology</em>
+- {% include course number=4770 %}
 
-- {% include course number=4330 %} <em>Advanced Multivariable Calculus</em>, or {% include course number=4720 %} <em>Introduction to Differential Geometry</em>
+- {% include course number=4330 %}, or {% include course number=4720 %}
 
  In addition, students must complete at least two math electives at the 4000 level and above. Furthermore, {% include course number=4840 %}<span style="margin-left:-4px"></span>, and the two semester sequence <em>Distinguished Major Thesis I and II</em> {% include course number=4900 %} and {% include course number=4901 %} (see below) are required. Certain substitutions such as graduate level versions of the courses listed above are possible at the discretion of the DUP.
 

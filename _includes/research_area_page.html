@@ -62,9 +62,7 @@
       </div>
 
       <!-- Section for Other Faculty -->
-      <div class="other-faculty-section mt-5">
-        <h2>Other Faculty and Emeriti</h2>
-        <ul>
+      {% capture other_items %}
           {% for person in sorted_people %}
             {% comment %}
               Determine if the person should be included in Other Faculty based on the current tag.
@@ -104,13 +102,18 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+      {% endcapture %}
+      {% if other_items contains '<li' %}
+      <div class="other-faculty-section mt-5">
+        <h2>Other Faculty and Emeriti</h2>
+        <ul>
+          {{ other_items }}
         </ul>
       </div>
+      {% endif %}
 
       <!-- Section for Graduate Students and Postdocs -->
-      <div class="grad-postdoc-section mt-5">
-        <h2>Graduate Students and Postdocs</h2>
-        <ul>
+      {% capture grad_items %}
           {% for person in sorted_people %}
             {% comment %}
               Determine if the person should be included in Graduate Students or Postdocs based on the current tag.
@@ -143,8 +146,15 @@
               {% endif %}
             {% endif %}
           {% endfor %}
+      {% endcapture %}
+      {% if grad_items contains '<li' %}
+      <div class="grad-postdoc-section mt-5">
+        <h2>Graduate Students and Postdocs</h2>
+        <ul>
+          {{ grad_items }}
         </ul>
       </div>
+      {% endif %}
 
     </div>
     <div class="col-md-3">

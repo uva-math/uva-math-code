@@ -19,7 +19,7 @@ Public lecture by Prof. Diane Hoffoss (University of San Diego)
 will be 
 on October 21 at 5:30pm in Physics Building 204. The public talk is for general audience.
 
-Diane will visit UVa on October 21–22. The public lecture and geometry seminar abstracts appear below.
+Diane will visit UVa on October 21–22. The announcement includes the public lecture and geometry seminar abstracts.
 
 <!--more-->
 

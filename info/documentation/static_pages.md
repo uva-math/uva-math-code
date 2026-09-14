@@ -63,7 +63,7 @@ nav_nesting: true
 nav_parent: People
 ---
 
-<h2 class="mb-4">Postdoctoral Scholars</h2>
+<h1 class="mb-4">Postdoctoral Scholars</h1>
 
 {% include people_roll.html type='postdoc' %}
 {%endraw%}
@@ -143,7 +143,7 @@ should not typically be accessed as there are no links pointing to them.
 
 ---
 
-### Static pages
+## Static pages
 
 A vast number of pages in the website are generated automatically
 (examples: news rolls, people pages, etc.).
@@ -166,9 +166,9 @@ website ignores
 (for the purposes of static pages generation)
 subfolders starting with `_` like `/_posts/`.
 
-#### To create a static page
+### To create a static page
 
-##### 1.
+#### 1.
 
 Create `.md` or `.html` file somewhere in the code of the website, and
 specify the configuration variables in the beginning of the file. A minimal collection of the configuration
@@ -189,14 +189,14 @@ only having the top brand bar, the navigation bar, and the footer element.
 The `nav_parent` variable is also optional. If it is not specified then
 no navigation bar entry is highlighted.
 
-##### 2.
+#### 2.
 
 Then edit the content of the page in
 [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 or plain HTML.
 Math formulas are also [supported]({{site.url}}/doc/math/).
 
-##### 3.
+#### 3.
 
 The static page just added can be linked on existing website pages
 using its permalink. [Remember]({{site.url}}/doc/reminders/) to use

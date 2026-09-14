@@ -10,6 +10,8 @@ image-alt: UVA Lawn
 more-text: Details
 ---
 
+*This search has closed; this announcement is kept as an archive.*
+
 The Department of Mathematics at the University of Virginia invites applications for the inaugural Mary Ann Pitts Jefferson Scholars Foundation Distinguished Professorship in Mathematics, beginning August 10, 2026.
 
 We seek exceptional candidates with a distinguished research profile in any area aligned with the department's strengths. Ideal candidates will also demonstrate excellence in teaching, mentoring, and engagement with the department and university community.

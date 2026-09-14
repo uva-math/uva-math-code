@@ -19,4 +19,4 @@ Professors [Nicholas J. Kuhn]({{site.url}}/people/njk4x/) and [Weiqiang Wang]({{
 
 Sixty-three mathematical scientists have been named 2018 Fellows of the AMS. AMS President Kenneth A. Ribet says, *"This year's class of AMS Fellows has been selected from a large and deep pool of superb candidates. It is my pleasure and honor as AMS President to congratulate the new Fellows for their diverse contributions to the mathematical sciences and to the mathematics profession."*
 
-See the full list of the 2018 AMS Fellows class [AMS Fellows](http://www.ams.org/profession/ams-fellows/new-fellows)
+See the [full list of 2018 AMS Fellows](http://www.ams.org/profession/ams-fellows/new-fellows)

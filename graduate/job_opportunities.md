@@ -15,7 +15,7 @@ workshop. Here is a brief rundown of what you need and what you need to do.
 
 The Center for Teaching Excellence (CTE) has some fantastic workshops geared to helping
 you produce the best job materials possible as part of their <a href="http://cte.virginia.edu/programs/tomorrows-professor-today/">Tomorrow's
-Professors Today</a> program. See also the list of all CTE programs [Center for Teaching Excellence programs](http://cte.virginia.edu/programs/).
+Professors Today</a> program. See also the [list of all Center for Teaching Excellence programs](http://cte.virginia.edu/programs/).
 
 A great resource for job-seekers is the <a href="http://www.ams.org/profession/employment-services/eims/eims-home">AMS Job Hunt</a> page. It includes much more
 detailed information than we cover here.

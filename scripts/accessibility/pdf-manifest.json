@@ -193,28 +193,28 @@
       "pdf": "PDFs/Alec_Traaseth.pdf",
       "original_pages": 1,
       "original_sha256": "77460525d651d24e7cd3b81ef789e218c69e6be0b2fd842e7b472a9583f0b26a",
-      "sources": [
-        "/PDFs/Alec_Traaseth.html"
-      ],
-      "status": "Complete HTML transcription reviewed against all rendered source pages."
+      "sources": [],
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "html_alternative": "/PDFs/Alec_Traaseth.html",
+      "artwork": true
     },
     {
       "pdf": "PDFs/Hasan_Saad.pdf",
       "original_pages": 1,
       "original_sha256": "bdf9867223803f095a0d0d1e2483c18b1c08ea892bb63ee2ceacc6b7b4d6b74f",
-      "sources": [
-        "/PDFs/Hasan_Saad.html"
-      ],
-      "status": "Complete HTML transcription reviewed against all rendered source pages."
+      "sources": [],
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "html_alternative": "/PDFs/Hasan_Saad.html",
+      "artwork": true
     },
     {
       "pdf": "PDFs/Yaolong_Shen.pdf",
       "original_pages": 1,
       "original_sha256": "f65eeda1023e9bbe71dbffef7ab9bf9514b7dd4da1506d142494c18c81a496e3",
-      "sources": [
-        "/PDFs/Yaolong_Shen.html"
-      ],
-      "status": "Complete HTML transcription reviewed against all rendered source pages."
+      "sources": [],
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "html_alternative": "/PDFs/Yaolong_Shen.html",
+      "artwork": true
     },
     {
       "pdf": "allnews/virginia-math-bulletin/Bulletin2014.pdf",
@@ -308,20 +308,21 @@
     },
     {
       "pdf": "graduate/docs/PosterTemplate.pdf",
-      "sources": [
-        "/graduate/docs/PosterTemplate.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9"
+      "original_sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9",
+      "html_alternative": "/graduate/docs/PosterTemplate.html",
+      "status": "Original single-page poster restored unchanged and untagged: artwork tagging fails PDF/UA-1 clause 7.21.7 because its embedded TeX fonts lack Unicode mappings. The complete text is in the HTML alternative.",
+      "retain_original": true
     },
     {
       "pdf": "graduate/docs/PosterTemplate/PosterTemplate.pdf",
       "original_pages": 1,
       "original_sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9",
-      "sources": [
-        "/graduate/docs/PosterTemplate.html"
-      ],
-      "status": "complete HTML companion verified"
+      "sources": [],
+      "status": "Original single-page poster restored unchanged and untagged: artwork tagging fails PDF/UA-1 clause 7.21.7 because its embedded TeX fonts lack Unicode mappings. The complete text is in the HTML alternative.",
+      "html_alternative": "/graduate/docs/PosterTemplate.html",
+      "retain_original": true
     },
     {
       "pdf": "graduate/docs/PosterTemplate/mathlogo2.pdf",
@@ -852,11 +853,13 @@
         "/graduate/exams/analysis/analysis-1993-01-complex.html",
         "/graduate/exams/analysis/analysis-1998-08-complex.html",
         "/graduate/exams/analysis/analysis-2003-12-complex.html",
+        "/graduate/exams/analysis/analysis-052.html",
         "/graduate/exams/analysis/analysis-1993-xx-general.html",
         "/graduate/exams/analysis/analysis-029.html",
         "/graduate/exams/analysis/analysis-030.html",
         "/graduate/exams/analysis/analysis-2003-xx-general.html",
         "/graduate/exams/analysis/analysis-054.html",
+        "/graduate/exams/analysis/analysis-055.html",
         "/graduate/exams/analysis/analysis-1997-08-general.html"
       ],
       "original_pages": 107,
@@ -1353,147 +1356,165 @@
     },
     {
       "pdf": "img/IMS/Alan-Reid-poster-pdf.pdf",
-      "sources": [
-        "/img/IMS/Alan-Reid-poster-pdf.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "3e4b8ee20741118c5ce3a997867456bf52ca7492ed9b4cd7a5b2bff87cf1c76e"
+      "original_sha256": "3e4b8ee20741118c5ce3a997867456bf52ca7492ed9b4cd7a5b2bff87cf1c76e",
+      "html_alternative": "/img/IMS/Alan-Reid-poster-pdf.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Art Benjamin Mathemagics 03-23-2015.pdf",
-      "sources": [
-        "/img/IMS/Art Benjamin Mathemagics 03-23-2015.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "23c069b937c69d32244af5ae845d5313a26b134cd78d759f97c3760cc0c632c8"
+      "original_sha256": "23c069b937c69d32244af5ae845d5313a26b134cd78d759f97c3760cc0c632c8",
+      "html_alternative": "/img/IMS/Art Benjamin Mathemagics 03-23-2015.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative. An inaccurate CIDSet entry was removed from one font descriptor before tagging.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Fonseca_poster_1.pdf",
-      "sources": [
-        "/img/IMS/Fonseca_poster_1.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "6081032f5a91ba9b030381143868923e8d58982fbf7faedb866d97c5c7c13f01"
+      "original_sha256": "6081032f5a91ba9b030381143868923e8d58982fbf7faedb866d97c5c7c13f01",
+      "html_alternative": "/img/IMS/Fonseca_poster_1.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Hairer_poster.pdf",
-      "sources": [
-        "/img/IMS/Hairer_poster.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "b6c207293b3e57c308c6d535af8168da5e7eb9770987daa0d134b700a4064007"
+      "original_sha256": "b6c207293b3e57c308c6d535af8168da5e7eb9770987daa0d134b700a4064007",
+      "html_alternative": "/img/IMS/Hairer_poster.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Hoffoss.pdf",
-      "sources": [
-        "/img/IMS/Hoffoss.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "6ed9402718ab1b374b0cda55daec16808d1c7f38a43488a1c5205004658f9305"
+      "original_sha256": "6ed9402718ab1b374b0cda55daec16808d1c7f38a43488a1c5205004658f9305",
+      "html_alternative": "/img/IMS/Hoffoss.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative. The default Identity CIDToGIDMap was written explicitly for one TrueType CID font before tagging.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Jordan-Ellenberg-poster.pdf",
-      "sources": [
-        "/img/IMS/Jordan-Ellenberg-poster.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "0530a22dbf441d6ccf3109e40860db0e29156ae74b0aa03f071672037584e14f"
+      "original_sha256": "0530a22dbf441d6ccf3109e40860db0e29156ae74b0aa03f071672037584e14f",
+      "html_alternative": "/img/IMS/Jordan-Ellenberg-poster.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Kavita-Ramanan-poster-pdf.pdf",
-      "sources": [
-        "/img/IMS/Kavita-Ramanan-poster-pdf.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "e0e7386e5ba9b3b5cdfe851804c8371953e9a894fc77e314f3ca483440fd28ed"
+      "original_sha256": "e0e7386e5ba9b3b5cdfe851804c8371953e9a894fc77e314f3ca483440fd28ed",
+      "html_alternative": "/img/IMS/Kavita-Ramanan-poster-pdf.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Lawler_poster.pdf",
-      "sources": [
-        "/img/IMS/Lawler_poster.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "a20b91ccef92b07cafe1ba299a5c20ea2e84fb0e7b98a8850bd70cc5a6041aee"
+      "original_sha256": "a20b91ccef92b07cafe1ba299a5c20ea2e84fb0e7b98a8850bd70cc5a6041aee",
+      "html_alternative": "/img/IMS/Lawler_poster.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/McMullen_poster.pdf",
-      "sources": [
-        "/img/IMS/McMullen_poster.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "c6e75561a8b57b52ba161120ebbecea7bf5df319bffd323ad2ca9720745ea96b"
+      "original_sha256": "c6e75561a8b57b52ba161120ebbecea7bf5df319bffd323ad2ca9720745ea96b",
+      "html_alternative": "/img/IMS/McMullen_poster.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Minsky_poster092517.pdf",
-      "sources": [
-        "/img/IMS/Minsky_poster092517.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "67521ee93378a652fb8f64b612c04571ba9503cfdefd44f6c58570548ac0516e"
+      "original_sha256": "67521ee93378a652fb8f64b612c04571ba9503cfdefd44f6c58570548ac0516e",
+      "html_alternative": "/img/IMS/Minsky_poster092517.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Okounkov_poster3.pdf",
-      "sources": [
-        "/img/IMS/Okounkov_poster3.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "ddbf63cdd9ffcdcb52205112894788f0f86dd7777259ef393b5e0e6362edacb1"
+      "original_sha256": "ddbf63cdd9ffcdcb52205112894788f0f86dd7777259ef393b5e0e6362edacb1",
+      "html_alternative": "/img/IMS/Okounkov_poster3.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative. The default Identity CIDToGIDMap was written explicitly for one TrueType CID font before tagging.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Poonen_poster.pdf",
-      "sources": [
-        "/img/IMS/Poonen_poster.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "b883c5b5e4e3794667142d8196542662b78d981407be65a5423820d2877db330"
+      "original_sha256": "b883c5b5e4e3794667142d8196542662b78d981407be65a5423820d2877db330",
+      "html_alternative": "/img/IMS/Poonen_poster.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Ravi-Vakil-poster.pdf",
-      "sources": [
-        "/img/IMS/Ravi-Vakil-poster.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "28d9d050f997443d2a9ab35b98a6051f575a0363c40e34e6e2de337f119ad447"
+      "original_sha256": "28d9d050f997443d2a9ab35b98a6051f575a0363c40e34e6e2de337f119ad447",
+      "html_alternative": "/img/IMS/Ravi-Vakil-poster.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Rich-Schwartz-poster.pdf",
-      "sources": [
-        "/img/IMS/Rich-Schwartz-poster.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "1a65d6db217a151d6b068e7ceb6b79c137fada218962d8a4e540bd13f8883df2"
+      "original_sha256": "1a65d6db217a151d6b068e7ceb6b79c137fada218962d8a4e540bd13f8883df2",
+      "html_alternative": "/img/IMS/Rich-Schwartz-poster.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Sarnak-poster.pdf",
-      "sources": [
-        "/img/IMS/Sarnak-poster.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "e237238fc84c1d52a4ca59a2cce13aaf44f0906d5835f0d056efeb88bc655a26"
+      "original_sha256": "e237238fc84c1d52a4ca59a2cce13aaf44f0906d5835f0d056efeb88bc655a26",
+      "html_alternative": "/img/IMS/Sarnak-poster.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Sherson.pdf",
-      "sources": [
-        "/img/IMS/Sherson.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "f866f1a9e1228005b20bfa2334915f27bcc7fcda23d926538ba04e3f99e02995"
+      "original_sha256": "f866f1a9e1228005b20bfa2334915f27bcc7fcda23d926538ba04e3f99e02995",
+      "html_alternative": "/img/IMS/Sherson.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative. Incomplete original tags were removed before tagging.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Simon-2018.pdf",
-      "sources": [
-        "/img/IMS/Simon-2018.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "42b345d32eda1cb29fd54ad40933ccc459fe529db7d060fe2fa43d3d16ee8ca0"
+      "original_sha256": "42b345d32eda1cb29fd54ad40933ccc459fe529db7d060fe2fa43d3d16ee8ca0",
+      "html_alternative": "/img/IMS/Simon-2018.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/IMS/Van_Vu_poster.pdf",
-      "sources": [
-        "/img/IMS/Van_Vu_poster.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "dae559ae14c5871afa577fd3f343abd0c96ad93c3d453b255046e4ae50e0cd5a"
+      "original_sha256": "dae559ae14c5871afa577fd3f343abd0c96ad93c3d453b255046e4ae50e0cd5a",
+      "html_alternative": "/img/IMS/Van_Vu_poster.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
     },
     {
       "pdf": "img/news_events/2020ceremony_program.pdf",
@@ -1506,28 +1527,30 @@
     },
     {
       "pdf": "img/news_events/Kafadar-AMC-2026-04-09.pdf",
-      "sources": [
-        "/2026/04/kafadar-AMC/index.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "56770c631f00f13ba854db5ade77ad30df0d213e58a5bc28e7e7d443e89c93a9"
+      "original_sha256": "56770c631f00f13ba854db5ade77ad30df0d213e58a5bc28e7e7d443e89c93a9",
+      "html_alternative": "/2026/04/kafadar-AMC/",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative. Incomplete original tags were removed before tagging.",
+      "artwork": true
     },
     {
       "pdf": "img/news_events/MattGagne_DefensePoster.pdf",
       "original_pages": 1,
       "original_sha256": "211673d991bde57ed8695de7c6f3eab5311e3b80901b2f90d3b7a560fdc34644",
-      "sources": [
-        "/img/news_events/MattGagne_DefensePoster.html"
-      ],
-      "status": "Complete HTML transcription reviewed against all rendered source pages."
+      "sources": [],
+      "status": "Original single-page poster restored unchanged and untagged: artwork tagging fails PDF/UA-1 clause 7.21.7 because its embedded TeX fonts lack Unicode mappings. The complete text is in the HTML alternative.",
+      "html_alternative": "/img/news_events/MattGagne_DefensePoster.html",
+      "retain_original": true
     },
     {
       "pdf": "img/news_events/Perea-AMC-2026-03-12.pdf",
-      "sources": [
-        "/img/news_events/Perea-AMC-2026-03-12.html"
-      ],
+      "sources": [],
       "original_pages": 1,
-      "original_sha256": "ca6d09f033e0516c0a3df5fdb3efb70d317b71852d344a5600d84764d5611ea5"
+      "original_sha256": "ca6d09f033e0516c0a3df5fdb3efb70d317b71852d344a5600d84764d5611ea5",
+      "html_alternative": "/img/news_events/Perea-AMC-2026-03-12.html",
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative. Incomplete original tags were removed before tagging; its two links are tagged with descriptions.",
+      "artwork": true
     },
     {
       "pdf": "img/news_events/WINRS-SCHEDULE-2018.pdf",
@@ -1542,19 +1565,19 @@
       "pdf": "img/news_events/defenses/Craig_defense.pdf",
       "original_pages": 1,
       "original_sha256": "c7f099b1d52cd9b4833d1d7bb4d637fd533b58cbd9ff65429e7a06203b4d3825",
-      "sources": [
-        "/img/news_events/defenses/Craig_defense.html"
-      ],
-      "status": "Complete HTML transcription reviewed against all rendered source pages."
+      "sources": [],
+      "status": "Original single-page poster restored unchanged and untagged: artwork tagging fails PDF/UA-1 clause 7.21.7 because its embedded TeX fonts lack Unicode mappings. The complete text is in the HTML alternative.",
+      "html_alternative": "/img/news_events/defenses/Craig_defense.html",
+      "retain_original": true
     },
     {
       "pdf": "img/news_events/defenses/Pandey_defense.pdf",
       "original_pages": 1,
       "original_sha256": "c7564d0b00ba812c79e6c01b7a7196f5843db74efa3a91b352cac56813b377a2",
-      "sources": [
-        "/img/news_events/defenses/Pandey_defense.html"
-      ],
-      "status": "Complete HTML transcription reviewed against all rendered source pages."
+      "sources": [],
+      "status": "Original single-page poster restored unchanged and untagged: artwork tagging fails PDF/UA-1 clause 7.21.7 because its embedded TeX fonts lack Unicode mappings. The complete text is in the HTML alternative.",
+      "html_alternative": "/img/news_events/defenses/Pandey_defense.html",
+      "retain_original": true
     },
     {
       "pdf": "img/news_events/fluid-refl-conf-schedule.pdf",
@@ -1569,10 +1592,10 @@
       "pdf": "img/news_events/fluid-refl-conf.pdf",
       "original_pages": 1,
       "original_sha256": "4e206e2613529a6c859a925a093237e8c1874df35b33a9516cf71ea376e0fb07",
-      "sources": [
-        "/img/news_events/fluid-refl-conf.html"
-      ],
-      "status": "Complete HTML transcription reviewed against all rendered source pages."
+      "sources": [],
+      "status": "Original single-page poster restored; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "html_alternative": "/img/news_events/fluid-refl-conf.html",
+      "artwork": true
     },
     {
       "pdf": "img/seminars/Gorsky_S21.pdf",
@@ -1855,11 +1878,12 @@
     },
     {
       "pdf": "undergraduate/docs/Grader_App_2023.pdf",
-      "sources": [
-        "/undergraduate/docs/Grader_App_2023.html"
-      ],
+      "sources": [],
       "original_pages": 2,
-      "original_sha256": "130b89336fd4ae4d87c26ad107325c4ba2df9287cfab84f880b873b872a72d3d"
+      "original_sha256": "130b89336fd4ae4d87c26ad107325c4ba2df9287cfab84f880b873b872a72d3d",
+      "html_alternative": "/undergraduate/docs/Grader_App_2023.html",
+      "status": "Original fillable form restored unchanged (AcroForm fields kept) and untagged: PDF/UA tagging would need Form structure for every field and tagged page text. The labeled HTML form is the accessible version.",
+      "retain_original": true
     },
     {
       "pdf": "undergraduate/docs/MathMajorCourseGuide_Fall25_version.pdf",
@@ -1913,10 +1937,10 @@
       "pdf": "undergraduate/docs/exception(fillable)_1.pdf",
       "original_pages": 1,
       "original_sha256": "2f6cbfbd4da6d5e68c575a3ed9b3852dd79169f5c5dd9b52e3d9c5e284a50b42",
-      "sources": [
-        "/undergraduate/docs/exception(fillable)_1.html"
-      ],
-      "status": "complete HTML companion verified"
+      "sources": [],
+      "status": "Original fillable form restored unchanged (AcroForm fields kept) and untagged: PDF/UA tagging would need Form structure for every field and tagged page text. The labeled HTML form is the accessible version.",
+      "html_alternative": "/undergraduate/docs/exception(fillable)_1.html",
+      "retain_original": true
     },
     {
       "pdf": "undergraduate/docs/precalculus.pdf",

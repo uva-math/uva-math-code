@@ -239,7 +239,7 @@
     if (paper.publication_year && label.indexOf(String(paper.publication_year)) === -1) label += ' ' + paper.publication_year;
     var filterName = paper.journal_full || paper.journal_name;
     var title = paper.journal_ref || paper.journal_full || paper.journal_name;
-    var attrs = ' class="badge uva-arxiv-link-badge uva-arxiv-link-journal" data-journal="' + escapeHtml(filterName) + '" aria-label="Filter papers by journal: ' + escapeHtml(title) + '"';
+    var attrs = ' class="badge uva-arxiv-link-badge uva-arxiv-link-journal" data-journal="' + escapeHtml(filterName) + '" aria-label="' + escapeHtml(label) + ': filter papers by journal ' + escapeHtml(title) + '"';
     return '<button type="button"' + attrs + '>' + escapeHtml(label) + '</button>';
   }
 
@@ -425,15 +425,17 @@
       catToggle.setAttribute('aria-expanded', catPanel.hidden ? 'false' : 'true');
     });
     if (yearApply) yearApply.addEventListener('click', function () {
-      state.customFrom = yearFrom && yearFrom.value ? parseInt(yearFrom.value, 10) : null;
-      state.customTo = yearTo && yearTo.value ? parseInt(yearTo.value, 10) : null;
-      if (!yearFrom.checkValidity() || !yearTo.checkValidity() || (state.customFrom && state.customTo && state.customFrom > state.customTo)) {
+      var from = yearFrom && yearFrom.value ? parseInt(yearFrom.value, 10) : null;
+      var to = yearTo && yearTo.value ? parseInt(yearTo.value, 10) : null;
+      if (!yearFrom.checkValidity() || !yearTo.checkValidity() || (from && to && from > to)) {
         yearError.textContent = 'Enter years from 1900 to 2099, with the first year no later than the last year.';
         yearError.hidden = false;
         yearFrom.setAttribute('aria-invalid', 'true');
         yearFrom.focus();
         return;
       }
+      state.customFrom = from;
+      state.customTo = to;
       var label = (state.customFrom || '…') + '–' + (state.customTo || '…');
       setDateFilter('custom', label);
     });

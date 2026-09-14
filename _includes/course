@@ -1,1 +1,1 @@
-{% for course in site.data.courses %}{% if course.number == include.number %}<a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics" class="course-link">MATH {{include.number}}<span class="course-description"> ({{course.name | strip_html}})</span></a>{%endif%}{%endfor%}
+{% for course in site.data.courses %}{% if course.number == include.number %}<a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics" class="course-link">MATH {{include.number}}<span class="course-description"> ({{course.name | strip_html | strip}})</span></a>{%endif%}{%endfor%}

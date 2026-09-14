@@ -11,9 +11,7 @@ nav_parent: Seminars
 <h1 class="mt-2 mb-4">COLLOQUIUM 2010-11</h1>
 
 
-    <h2 class="mb-3 mt-3">
-        Spring 2011
-    </h2>
+<h2 class="mb-3 mt-3">Spring 2011</h2>
 
 
 <table border="no" width="97%" cellpadding="3">

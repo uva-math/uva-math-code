@@ -39,9 +39,9 @@ tooltips: true
     <li> <i>Would it be helpful to brush up or get more practice with Algebra and/or Pre-Calculus?</i> If yes, Math 1191 is a good course to get this. If no, Math 1210 is a good starting point.</li>
     <li> <i>Are you trying to decide between Math 1210 and Math 1220?</i> You will need to do 3 things
         <ul>
-            <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">self-paced diagnostic</a>. </li>
-            <li>Check your answers with this <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">Math 1210/1220 placement solutions (PDF)</a>. (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html">Math 1210/1220 placement solutions (HTML)</a>) </li>
-            <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">this advice</a> to decide which course to take. </li>
+            <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">Math 1210/1220 self-paced placement exam</a>. </li>
+            <li>Check your answers with the <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">Math 1210/1220 placement solutions (PDF)</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html">Math 1210/1220 placement solutions (HTML)</a>). </li>
+            <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">placement advice for Math 1210/1220</a> to decide which course to take. </li>
         </ul>
 </li>
 </ol>

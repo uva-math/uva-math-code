@@ -155,9 +155,6 @@ categories: news events conferences swiper-news
 published: true
 image: __SITE_URL__/img/news_events/example-image.jpg
 image-alt: "Description of the image for accessibility"
-image-tall: true
-more-text: "Details and Schedule"
-good-md: true
 ---
 ```
 
@@ -175,14 +172,13 @@ good-md: true
 
 #### Optional Front Matter Fields
 
-- `image` - Path to the post image (use `__SITE_URL__` prefix: `__SITE_URL__/img/news_events/image.jpg`)
-- `image-alt` - Alternative text for the image (for accessibility). If omitted, the post title is used as fallback alt text. Providing specific descriptive alt text is still recommended.
-- `image-tall` or `image-wide` - Add if your image has unusual dimensions
-- `image-address` - URL where clicking the image leads (defaults to post page if omitted)
-- `more-text` - Custom text for the "read more" button (defaults to "View details")
+- `image` - Path to the post image (use `__SITE_URL__` prefix: `__SITE_URL__/img/news_events/image.jpg`). The image is not a link. It is scaled to at most 400px tall on the post page and in the featured box, 175px in the carousel, and 240px in the news grid and category pages.
+- `image-alt` - Alternative text describing the image. **Required for the image to appear**: a post with `image` but no `image-alt` shows no image on the post page or in any news list.
+- `image-address` - Only matters when it points to a `.pdf`: the image is then suppressed, as it is when the image path or alt text contains "poster" and for `virginia-math-bulletin` posts. Link the PDF from the post body instead.
 - `hide-this-item: true` - Hides post from main page but not from category pages or all news
 - `permalink` - Custom URL for the post (default is `/YYYY/MM/name-of-the-post`)
-- `good-md: true` - Indicates that the markdown in the post is well-formed (affects rendering)
+
+`image-tall`, `image-wide`, `more-text` and `good-md` still appear in older posts but have no effect in the news templates; only the AWM blog roll (`awm/blog.html`) still reads `image-address`, `image-wide` and `more-text`.
 
 ### Categories
 
@@ -224,7 +220,6 @@ categories: news events conferences
 - Use markdown for post content
 - Place `<!--more-->` to separate the excerpt (shown in list views) from full content
 - Include key details in the excerpt for visibility in post rolls
-- Add `good-md: true` to front matter if your post contains well-formatted markdown
 - Math formulas are supported using LaTeX syntax
 
 ### Images
@@ -241,7 +236,7 @@ To combine multiple photos into a single wider image for carousel posts, use Ima
 ```bash
 magick image1.png image2.png +append combined-output.png
 ```
-This creates a horizontally combined image. Add `image-wide: true` to the front matter when using wide combined images.
+This creates a horizontally combined image. The templates scale images by maximum height and width, so a wide image needs no extra front matter.
 
 ---
 

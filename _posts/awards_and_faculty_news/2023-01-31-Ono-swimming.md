@@ -9,4 +9,4 @@ image-alt: "Ken Ono and Virginia head coach Todd DeSorbo. Photo Courtesy: Matthe
 good-md: true
 ---
 
-The Swimming World magazine published a feature article on the work of Professor Ken Ono, who is helping the University of Virginia's swimming team to reach new heights. The article is available [The Math Behind the Medals](https://www.swimmingworldmagazine.com/news/the-math-behind-the-medals-professor-ken-ono-is-helping-virginia-revolutionize-swimming-performance/).
+The Swimming World magazine published a feature article on the work of Professor Ken Ono, who is helping the University of Virginia's swimming team to reach new heights. The article, [The Math Behind the Medals](https://www.swimmingworldmagazine.com/news/the-math-behind-the-medals-professor-ken-ono-is-helping-virginia-revolutionize-swimming-performance/), is available from Swimming World.

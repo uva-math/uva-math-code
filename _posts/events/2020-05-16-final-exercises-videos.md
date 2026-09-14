@@ -28,4 +28,4 @@ The Department of Mathematics hosted an online diploma ceremony on May 16.
 </li>
 </ul>
 
-Complete ceremony program, graduates and awards: [HTML](/img/news_events/2020ceremony_program.html) | [PDF](/img/news_events/2020ceremony_program.pdf).
+Complete ceremony program, graduates and awards: [2020 diploma ceremony program (HTML)](/img/news_events/2020ceremony_program.html) | [2020 diploma ceremony program (PDF)](/img/news_events/2020ceremony_program.pdf).

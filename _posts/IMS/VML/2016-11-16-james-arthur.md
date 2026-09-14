@@ -18,9 +18,11 @@ nav_parent: IMS
 
 <h2 class="mt-3 mb-4">James Arthur (University of Toronto)</h2>
 
-- Lecture 1: L-functions and Number Theory
-- Lecture 2: The Trace Formula and Automorphic Forms
-- Lecture 3: Beyond Endoscopy and Functoriality
+- Lecture 1: L-functions and Number Theory. Monday, November 14; time and location TBA
+- Lecture 2: The Trace Formula and Automorphic Forms. Tuesday, November 15; time and location TBA
+- Lecture 3: Beyond Endoscopy and Functoriality. Wednesday, November 16, 5-6pm, Monroe 116
+
+Organizers: Andrei Rapinchuk and Brian Parshall
 
 <!--more-->
 

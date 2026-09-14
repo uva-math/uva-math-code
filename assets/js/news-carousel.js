@@ -77,8 +77,14 @@
   carousel.addEventListener('pointerdown', event => {
     if (!pause.contains(event.target)) stopRotation();
   });
-  pause.addEventListener('click', () => {
-    if (swiper.autoplay.running) stopRotation();
+  // A tap emulates mouseenter and focus between pointerdown and click, which
+  // would stop rotation before the click reads the state.
+  let runningAtPress = null;
+  pause.addEventListener('pointerdown', () => { runningAtPress = swiper.autoplay.running; });
+  pause.addEventListener('click', event => {
+    const wasRunning = event.detail && runningAtPress !== null ? runningAtPress : swiper.autoplay.running;
+    runningAtPress = null;
+    if (wasRunning) stopRotation();
     else {
       // Starting rotation is always an explicit user action after focus/hover.
       swiper.params.autoplay = { delay: 6500, disableOnInteraction: true };

@@ -66,7 +66,7 @@ Information on this page will help you understand the best pace to start out of 
 
 <li> <em>Are you trying to decide betwen Math 1210 and Math 1220?</em> You will need to do 3 things<ul>
 <li>Take this <a href="https://math.virginia.edu/undergraduate/placement-files/diagnostic_1210_1220.html">Math 1210/1220 self-paced placement exam</a>. </li>
-<li>Check your answers with this <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">Math 1210/1220 solutions (PDF)</a>. (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html">Math 1210/1220 solutions (HTML)</a>) </li>
+<li>Check your answers with the <a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.pdf">Math 1210/1220 solutions (PDF)</a> (<a href="https://math.virginia.edu/undergraduate/placement-files/ExamA_Solutions.html">Math 1210/1220 solutions (HTML)</a>). </li>
 <li>Use <a href="https://math.virginia.edu/undergraduate/diagnosticPath2Advice">placement advice for Math 1210/1220</a> to decide which course to take. </li>
 </ul></li>
 </ol>

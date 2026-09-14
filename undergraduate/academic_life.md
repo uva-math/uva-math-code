@@ -19,7 +19,7 @@ UVA undergraduates take part in the Putnam Competition and in several other nati
 
 <h2 class="bodoni-h2">Math Club</h2>
 
-The Undergraduate Math Club at University of Virginia is a weekly seminar and a club for students interested in mathematics and related areas. An up-to-date calendar of meetings is [Undergraduate Math Club calendar]({{site.url}}/seminars/mathclub/). The Math Club is a students' space having an official UVA CIO status (a student-led organization). This provides the Club with a student managing board which helps plan and organize events.
+The Undergraduate Math Club at University of Virginia is a weekly seminar and a club for students interested in mathematics and related areas. An up-to-date calendar of meetings is on the [Undergraduate Math Club page]({{site.url}}/seminars/mathclub/). The Math Club is a students' space having an official UVA CIO status (a student-led organization). This provides the Club with a student managing board which helps plan and organize events.
 
 {% for sem in site.data.seminars %}{%if sem.shortname == "mathclub" %}{% for cnt in sem.contact %}{% include person_info_email_only.html UVA_id = cnt.UVA_id %}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}{% endfor %}is the faculty coordinator of the Club for the current academic year.
 

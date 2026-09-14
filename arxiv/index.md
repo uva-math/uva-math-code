@@ -4,6 +4,7 @@ layout: static_page_no_right_menu
 permalink: /arxiv/
 published: true
 sitemap: false
+search_exclude: true
 ---
 
 <h1 class="mb-3">UVA Math arXiv</h1>

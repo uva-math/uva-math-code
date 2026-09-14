@@ -10,11 +10,6 @@
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl)
     });
-    
-    // iOS touch fix (vanilla JS version)
-    if ('ontouchstart' in document.documentElement || window.Touch) {
-      document.body.style.cursor = 'pointer';
-    }
   });
 </script>
 {% endif %}

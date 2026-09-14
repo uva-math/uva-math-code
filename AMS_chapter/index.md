@@ -30,7 +30,7 @@ Fellow AMS graduate student chapters are most welcome and encouraged to get in t
 
 <p><a href="https://calendar.google.com/calendar/u/0/r?cid=c_60f1de561954223e1933f83f3bfb2520fd742ca85cbd6a02dade97379ec7fad3@group.calendar.google.com">Open the AMS chapter calendar in Google Calendar</a>.</p>
 
-{% include calendar_events.html mode="single" current="true" google_cal_id="c_60f1de561954223e1933f83f3bfb2520fd742ca85cbd6a02dade97379ec7fad3@group.calendar.google.com" max_sem=5 %}
+{% include calendar_events.html mode="single" current="true" google_cal_id="c_60f1de561954223e1933f83f3bfb2520fd742ca85cbd6a02dade97379ec7fad3@group.calendar.google.com" max_sem=5 noun="event" %}
 
 ##  AMS mission statement
 

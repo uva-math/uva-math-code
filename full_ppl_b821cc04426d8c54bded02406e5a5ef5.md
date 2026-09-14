@@ -2,6 +2,7 @@
 layout: static_page_no_right_menu
 title: Department People List
 permalink: /people-id/
+search_exclude: true
 redirect_from:
   - /people-list/b821cc04426d8c54bded02406e5a5ef5/
 ---
@@ -9,7 +10,7 @@ redirect_from:
 <h1>Department people and UVA IDs</h1>
 <form id="id-search" role="search" aria-label="Department names and UVA IDs">
   <label for="id-search-input">Filter by name or UVA ID</label>
-  <input class="form-control" type="search" id="id-search-input" aria-describedby="id-search-hint">
+  <input class="form-control" type="search" id="id-search-input" aria-describedby="id-search-hint" autofocus>
   <p id="id-search-hint">Results update as you type. Press Escape in the search field to clear it. Use an ID button to copy that ID.</p>
 </form>
 <p id="id-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
@@ -40,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const term = normalize(input.value.trim());
     let count = 0;
     rows.forEach(row => { row.hidden = !normalize(row.textContent).includes(term); if (!row.hidden) count++; });
-    status.textContent = count ? count + ' people found.' : 'No people found. Try another name or UVA ID.';
+    status.textContent = count ? count + (count === 1 ? ' person' : ' people') + ' found.' : 'No people found. Try another name or UVA ID.';
   }
   document.getElementById('id-search').addEventListener('submit', event => { event.preventDefault(); filter(); });
   input.addEventListener('input', filter);

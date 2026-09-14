@@ -41,8 +41,8 @@ def check_links_and_images(filepath):
     img_srcs = re.findall(img_pattern, content, re.IGNORECASE)
 
     for src in img_srcs:
-        # Skip external images
-        if src.startswith(('http://', 'https://', '//')):
+        # Skip external and inline images
+        if src.startswith(('http://', 'https://', '//', 'data:')):
             continue
 
         # Check if local file exists (relative paths only)
@@ -60,19 +60,20 @@ def check_links_and_images(filepath):
 
     # Check 4: Links without text content or aria-label
     # This is complex with regex, so we'll do a simpler check
-    link_pattern = r'<a[^>]*href="([^"]*)"[^>]*>(.*?)</a>'
+    link_pattern = r'(<a[^>]*href="([^"]*)"[^>]*>)(.*?)</a>'
     links = re.findall(link_pattern, content, re.DOTALL | re.IGNORECASE)
 
     empty_links = []
-    for href, link_content in links:
-        # Check if link has aria-label
-        aria_label_pattern = r'aria-label="[^"]+"'
-        has_aria = re.search(aria_label_pattern, link_content)
+    for start_tag, href, link_content in links:
+        # Check if link has aria-label, on the link itself or inside it
+        aria_label_pattern = r'aria-label(?:ledby)?="[^"]*[^"\s][^"]*"'
+        has_aria = re.search(aria_label_pattern, start_tag + link_content)
 
-        # Remove HTML tags and check if there's text
+        # Remove HTML tags and check if there's text; image alt text also names a link
         text = re.sub(r'<[^>]+>', '', link_content).strip()
+        alt_text = ''.join(re.findall(r'<img[^>]*\balt="([^"]*)"', link_content, re.IGNORECASE)).strip()
 
-        if not text and not has_aria:
+        if not text and not alt_text and not has_aria:
             empty_links.append(href)
 
     if empty_links:

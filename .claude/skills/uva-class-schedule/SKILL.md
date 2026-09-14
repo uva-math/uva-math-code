@@ -5,9 +5,17 @@ description: Refresh the printable UVA Mathematics term class-schedule sheet (sc
 
 # UVA Mathematics term class-schedule sheet
 
-A two-page landscape sheet listing every MATH section for a term: meeting time,
-class number, enrollment, instructor. It lives in this repository as LaTeX, builds
-with one `pdflatex` pass and no external files, and is linked from five pages.
+A listing of every MATH section for a term: meeting time, class number, enrollment,
+instructor. It lives in this repository as LaTeX and is published as a compact
+landscape PDF (currently three pages) plus the reflowable `/schedule/` page
+(`schedule.html`), both generated from `schedule.tex` by
+`scripts/schedule/schedule_build.py` through `scripts/accessibility/export_pdf.cjs`
+(PDF/UA-validated); a direct `pdflatex` run is only a local preview. It is linked
+from five pages.
+
+The build needs the pinned Node and Python tooling (Node, Playwright Chromium, the
+pikepdf venv, veraPDF) and Poppler's `pdfinfo`/`pdftotext`; install them as described
+in `scripts/accessibility/README.md`.
 
 **Lou's List is gone.** `louslist.org` now 301-redirects to the HoosList home page and
 drops the subject path, so any old URL silently lands on a generic landing page.
@@ -19,11 +27,13 @@ Everything here targets `hooslist.virginia.edu` directly.
 |---|---|
 | Sheet source (the source of record) | `schedule.tex` |
 | Published PDF, always the current term | `schedule.pdf` |
+| Reflowable HTML snapshot (`/schedule/`) | `schedule.html` |
 | Archival per-term copies | `f26.pdf`, `f26.tex` (`s27`, `f27`, … later) |
 | End-to-end updater | `scripts/schedule/update.py` |
 | HoosList fetch | `scripts/schedule/hooslist_fetch.py` |
 | Cell refresh | `scripts/schedule/schedule_refresh.py` |
 | Compile, stage, relink | `scripts/schedule/schedule_build.py` |
+| Screen and print HTML rendering | `scripts/schedule/schedule_html.py` |
 
 Published URLs: **`https://math.virginia.edu/schedule.pdf`** is what every page links
 to and always holds the current term; **`https://math.virginia.edu/f26.pdf`** is the
@@ -32,8 +42,8 @@ archival per-term copy.
 ## The update run
 
 One command. A bare run fetches and reports without touching anything; `--write`
-applies the cells it can decide, recompiles the PDF, rewrites the archival copies,
-and refreshes the link blocks.
+applies the cells it can decide, rebuilds the tagged PDF and `schedule.html`, rewrites
+the archival copies, and refreshes the link blocks.
 
 ```bash
 python3 scripts/schedule/update.py             # report only
@@ -46,7 +56,7 @@ There is also a **daily refresh on commit**. `scripts/schedule/post-commit` runs
 full update on your first commit of each day and commits the result *separately*, so it
 never lands inside an unrelated commit. It does not push — the refresh goes out with
 your next push. If the only thing that moved is the snapshot stamp, it rolls the sheet
-back rather than committing a fresh 200KB PDF for no change in the data. Anything the
+back rather than committing a fresh 600KB PDF for no change in the data. Anything the
 refresh could not decide is printed with a `NEEDS A HUMAN` prefix, so watch for that
 after a commit. (`SPLIT` is not in that list — MATH 2559-200 is permanently split and
 would cry wolf every single day.)
@@ -69,15 +79,8 @@ the sheet needs hand editing that no flag will do for you.
 Then commit and push — Leonid has said to push without asking. The push is what makes
 it live (~5 minutes).
 
-Confirm afterwards that the sheet is still two pages (the build prints the count and
-warns if it is not) and that the header stamp did not wrap onto a second line:
-
-```bash
-pdftotext -f 1 -l 1 -layout schedule.pdf - | head -2
-```
-
-The header is tight. If a longer stamp ever wraps, shorten the phrasing in
-`schedule_refresh.py` rather than letting the date orphan.
+Confirm the build reported at most four pages (it refuses more) and review the
+rendered pages.
 
 ## Rooms are the thing to be careful about
 
@@ -182,8 +185,6 @@ complete pair must never appear anywhere but those five pages — this file incl
 Documentation quotes the opening marker on its own, which is the only reason this file
 survives a build; paste a full example block in here and the next run silently eats it.
 
-The block says in as many words that the PDF is a print-only convenience sheet and
-sends anyone who needs an accessible version to HoosList or SIS. A two-page 8pt
-landscape sheet of `\makebox` columns is not screen-reader material and will not become
-so; the accessible route is the live system, and the link text has to say that. Keep
-that sentence in `TEMPLATE` in `schedule_build.py` through every rollover.
+The block links the compact PDF and the local HTML version of the same dated
+snapshot. Preserve that HTML link and the separate HoosList/SIS links for current
+enrollment; avoid a fixed page count.

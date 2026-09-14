@@ -24,6 +24,8 @@ nav_parent: IMS
 - Lecture 2: From Ramanujan Graphs to Ramanujan Complexes
 - Lecture 3: Coboundary Expanders and Property Testing
 
+November 18-20, 2014. Organizer: Andrei Rapinchuk
+
 <!--more-->
 
 

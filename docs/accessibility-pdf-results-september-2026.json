@@ -1,8 +1,8 @@
 {
   "installed": true,
   "documents": 227,
-  "replaced": 209,
-  "retained": 18,
+  "replaced": 202,
+  "retained": 25,
   "records": [
     {
       "pdf": "IMS/files/CIRMATH AMERICAS Program 2018.pdf",
@@ -111,10 +111,10 @@
       "source_urls": [
         "/IMS/parshall-workshop-spring-2020/parshall-workshop-spring-2020-poster.html"
       ],
-      "source_sha256": "58ae1e11d025897e9313804e335f577973eb5bd15c9326b9a0f46a2c11ead6e7",
+      "source_sha256": "e8682a1144f49daa84045399c6702002d8973dc403fc2263a44105f022083cd8",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "50113b9d8b16d2b960a8de1b4e4075e097e5817d70db988a999d061d59a93e68",
-      "sha256": "d4d24fed99515503a63f2ececb3dfc36b480d329c32d4dc81d73a51b341698f4"
+      "sha256": "37fd55a5b1a9a181008099621e6826cb47319dca463acfa6b5d00f2a67df8662"
     },
     {
       "pdf": "IMS/selie_icm2026/conf_schedule.pdf",
@@ -202,45 +202,24 @@
     },
     {
       "pdf": "PDFs/Alec_Traaseth.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 18,
-      "figures": 1,
-      "source_urls": [
-        "/PDFs/Alec_Traaseth.html"
-      ],
-      "source_sha256": "f8d154fab59e2651524688a3a18ece9efcbc813dc4d3e8d85bcf8a975cd75220",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "77460525d651d24e7cd3b81ef789e218c69e6be0b2fd842e7b472a9583f0b26a",
-      "sha256": "e8e0e7dfea0597ef6c4c3e39796ac5fa256cd9c1f54833a6b479a56bc8077bf7"
+      "sha256": "5b5b045260d61b0ad0e0a71ffed58a63f44efa17d8f86e47c2c709ec2de11471"
     },
     {
       "pdf": "PDFs/Hasan_Saad.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 15,
-      "figures": 0,
-      "source_urls": [
-        "/PDFs/Hasan_Saad.html"
-      ],
-      "source_sha256": "428e1c9f055223fbd5b547d48d9b8e38795e13c60f0478c1930ff623dd728f73",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "bdf9867223803f095a0d0d1e2483c18b1c08ea892bb63ee2ceacc6b7b4d6b74f",
-      "sha256": "93f9882f47f6ebc7b718510853cc2c4c13999b420be546cb9cee37907b0e0ca9"
+      "sha256": "a3dc312b5e612751bcd497c479ebaa36df3f063eb6825a2d54c4e847c9b8f5ba"
     },
     {
       "pdf": "PDFs/Yaolong_Shen.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 20,
-      "figures": 0,
-      "source_urls": [
-        "/PDFs/Yaolong_Shen.html"
-      ],
-      "source_sha256": "ee928a02a0ebe8a28597d3526d5508eaef00274ab25cfc8cfce61ccfc819e320",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "f65eeda1023e9bbe71dbffef7ab9bf9514b7dd4da1506d142494c18c81a496e3",
-      "sha256": "275f3346ca47b9d0fcc3fe193eaf7285194ad7cdbf720aa771470f81eb7d8502"
+      "sha256": "baf967acb2581c011b5a0a340584c137f7ec53ffc6a006f3d4f4e1260d3aca4a"
     },
     {
       "pdf": "allnews/virginia-math-bulletin/Bulletin2014.pdf",
@@ -279,10 +258,10 @@
       "source_urls": [
         "/allnews/virginia-math-bulletin/Bulletin2016.html"
       ],
-      "source_sha256": "f026a8b0b1fb186bca98a36c9c07afe4de8864a4e45cf19f28113a4679e2393c",
+      "source_sha256": "166a1875d3b35672e2b6347d85d5ef05d502ca8976acb96a1a4a646b00272d60",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "cc446c47ad9eafe865a9c4102a500976a5dc36ad40534dce5555ec9205cef568",
-      "sha256": "811a876e72761cb7945f1f62e782a5f0d68f7331a07e257b9729a3cc1c6406a9"
+      "sha256": "95fb41b01eca8a2c6eac2e882e58204844aa7a918e67ce17a095ddb693af9dc8"
     },
     {
       "pdf": "allnews/virginia-math-bulletin/Bulletin2017.pdf",
@@ -293,10 +272,10 @@
       "source_urls": [
         "/allnews/virginia-math-bulletin/Bulletin2017.html"
       ],
-      "source_sha256": "44f3ba42f028146c4c557ba137da9f0fd25dfd33435aeb741d7fb41032d40b3f",
+      "source_sha256": "f56738761321b3e87ca42d479c47791ed3346cd714a3b4c99d169bf12829c266",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "983c1b7046cc301d8a2a582798f5badf4df962be40182f5a9c7e303ba10ffabd",
-      "sha256": "fb8160d4fea747e42fdcad7120f8dede206e88b2319083fc09043c0e0e57fe30"
+      "sha256": "7f31ab5837f5f1b5eca8d2babffa835a53b5b373996d09463ec9f6cd9e24681f"
     },
     {
       "pdf": "allnews/virginia-math-bulletin/Bulletin2018.pdf",
@@ -307,52 +286,52 @@
       "source_urls": [
         "/allnews/virginia-math-bulletin/Bulletin2018.html"
       ],
-      "source_sha256": "2f5f2d5d6e3c4dd9c9efb9c190bbe3ba1c5d3b05b0ca667fbbc9deebdc83be2a",
+      "source_sha256": "82f92ffacf3a090ebfc54c14099c547887bb6da33018ebf02cf41e2a27b4f73a",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "a576ef6afbc0c385035757b16980610cc599f943cd8ded3f652fe280dd96010c",
-      "sha256": "2b570d2b11ee16aa85464c60c17f0b65a2d5e97614abc37427b83f1f794c38ad"
+      "sha256": "f52cd1257304d2e3a1265b39e393571e1de95886fde3be7ce7edefd56c3ee8fa"
     },
     {
       "pdf": "allnews/virginia-math-bulletin/Bulletin2019.pdf",
       "status": "reflowed tagged document",
       "pdfua1": true,
       "formulas": 139,
-      "figures": 33,
+      "figures": 35,
       "source_urls": [
         "/allnews/virginia-math-bulletin/Bulletin2019.html"
       ],
-      "source_sha256": "61bcd4346d8865eaa09748c5160976473851cef5402a20c19587e4ee8ad048cb",
+      "source_sha256": "a20503cfc5c27218f590864bf2bec4094eac69e6aa700ad71911a6ba49adab9d",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "e980dcfe3a186fbfa3b4451395406776d0d6890cf13c87589245b6a38c48abdc",
-      "sha256": "6c09843fcdd298f5f5d812eb73e87be7d5aa78667a7f2b88a1f6072d9c42540d"
+      "sha256": "efe9050c59e628e9694e646bed485aaa4d20fca450c61cd21e2aad6d20163319"
     },
     {
       "pdf": "allnews/virginia-math-bulletin/Bulletin2020.pdf",
       "status": "reflowed tagged document",
       "pdfua1": true,
       "formulas": 130,
-      "figures": 43,
+      "figures": 42,
       "source_urls": [
         "/allnews/virginia-math-bulletin/Bulletin2020.html"
       ],
-      "source_sha256": "e5e5a9f2e1f5faa9e7b2294492d40fbcf631f81ee220123d91dff62af10355fb",
+      "source_sha256": "ac6511148c568188fb9fa79e0691315d03af4ca570b1d93281b02eadc36feb59",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "29c1813df8c37df2cebe231dd059179c55fdd564e6f2bf2d208ca358d7080b92",
-      "sha256": "5f7ba9cca429716f777ffbed129fe6c13c30edaddb3fa0ad85c235a8a52dae80"
+      "sha256": "ce4fd5c5140add7ce06ae48f961b5761fe7b03cf9e060aa0ac09ab4826259eab"
     },
     {
       "pdf": "allnews/virginia-math-bulletin/Bulletin2021.pdf",
       "status": "reflowed tagged document",
       "pdfua1": true,
       "formulas": 79,
-      "figures": 44,
+      "figures": 52,
       "source_urls": [
         "/allnews/virginia-math-bulletin/Bulletin2021.html"
       ],
-      "source_sha256": "8e1670c86f74c2b14127872a7885648850739e02a022919700e8bc282ae1c566",
+      "source_sha256": "3ae503ed8020f005226f898241221bf6b7c950e25ea9a2ff363ac4b3581c7d70",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "b1a9ba7c7693b45d620f3eaf7c645ed5e135f1b14a69986cebc778cf906f8d37",
-      "sha256": "4a4585f611b35f5fe06b7bb4f7b2c61a726d5ce4347b0312919b8395e5e20dc2"
+      "sha256": "228999646c295fe47cb89fdd64281497994c5943c9d25010e27675934dedab47"
     },
     {
       "pdf": "drp/Mentor_Guidelines.pdf",
@@ -363,10 +342,10 @@
       "source_urls": [
         "/drp/Mentor_Guidelines.html"
       ],
-      "source_sha256": "927226912c4f4b6482c51792a1157b0e6efdd8df1cb32439f5adad92b18a5b80",
+      "source_sha256": "8327b8be5756bc0f26c8e42b8f0b13b7131e405e14a719f664ef79452cd86b2f",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "5baa3dd0fb56e6ad6b0ac8a502b81dc1e05bc590ca7849469b32e98b4923875c",
-      "sha256": "9d180071d71601862f48ffbaebb37a1586998b4f23a19ceb48693f3e2b716e13"
+      "sha256": "5c5ea6afaeed6a443dbe597fd8516a0b62a4f393d6eba93331e41de1c9ad8868"
     },
     {
       "pdf": "f26.pdf",
@@ -398,31 +377,13 @@
     },
     {
       "pdf": "graduate/docs/PosterTemplate.pdf",
-      "status": "reflowed tagged document",
-      "pdfua1": true,
-      "formulas": 2,
-      "figures": 0,
-      "source_urls": [
-        "/graduate/docs/PosterTemplate.html"
-      ],
-      "source_sha256": "ab9f41c22c67e1f961730bd0cb870a3d914abee363bba8f1dfb9bba223ed3cb6",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
-      "original_sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9",
-      "sha256": "19f777868f19f48b0f527cbffeb69d44f58064590ddd89983a9769ce3909155f"
+      "status": "retained original poster",
+      "sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9"
     },
     {
       "pdf": "graduate/docs/PosterTemplate/PosterTemplate.pdf",
-      "status": "reflowed tagged document",
-      "pdfua1": true,
-      "formulas": 2,
-      "figures": 0,
-      "source_urls": [
-        "/graduate/docs/PosterTemplate.html"
-      ],
-      "source_sha256": "ab9f41c22c67e1f961730bd0cb870a3d914abee363bba8f1dfb9bba223ed3cb6",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
-      "original_sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9",
-      "sha256": "858b8084a0078a1a06aec2cbbf8be89005a4bbf33b534864cdca2a84b34edff9"
+      "status": "retained original poster",
+      "sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9"
     },
     {
       "pdf": "graduate/docs/PosterTemplate/mathlogo2.pdf",
@@ -475,10 +436,10 @@
       "source_urls": [
         "/graduate/docs/topology-general-exam-syllabus/index.html"
       ],
-      "source_sha256": "777c8d376bedbb427e6802dcba29db9b956b0bb0a3d4501424820bf1781d0424",
+      "source_sha256": "cfe13e9f98be8e1c24a352d30362ebdeb52a3cb4d606d6dd4ddccea94acceaab",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "5c26818a30e75c75bc0742ee3681f9d7bd3ff75f8c5b9fa43a7a38f73a8e1728",
-      "sha256": "6319a237c9674a41bd8b87f84f22701b27a7e6dfea3e58ea11360ee9b4780ecd"
+      "sha256": "6e54ad38b977695dcb6555bf3df96a9779165057160c4578dd7df73985d293a3"
     },
     {
       "pdf": "graduate/docs/oral_exam_form.pdf",
@@ -559,10 +520,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2004-08.html"
       ],
-      "source_sha256": "ba049f47826e7069e157e7eaeeda39b199de6c32a224f31e0b8889307e177661",
+      "source_sha256": "50f24dd56595f3f4c762967c001411e85ddfe684e7455dc794e9efe98f509f47",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "551df1dfadccef6f8bfecc81b5dc5bb5e878841f12a85a4d98c4a20ea59e0f2a",
-      "sha256": "cbfae585b4aef721d2456f4592a34e0ec3838f1a5f7340ea053b1af35fd097e0"
+      "sha256": "5b513701963e1da093b908ce91324065d7c8c69dc6c4caf2084aedfd1a5af8c1"
     },
     {
       "pdf": "graduate/exams/algebra/2006-01.pdf",
@@ -587,10 +548,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2006-08.html"
       ],
-      "source_sha256": "538b2679f0c02f2e45fc698813e9ae7039acb3f940a64f8b515130cd6435d2fa",
+      "source_sha256": "c10277c24769f4d48f08fb43702d3f9bc7346bf6613ff78183fe181d97205b33",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "98d8e72719e2e7cdb7dd628506f2ebba6e3db3fbd874e833b9d79517d73fe3a0",
-      "sha256": "db041b5bb5a4abd09e6c23f7b466e266924065c6c48ef57506bf77e489da8322"
+      "sha256": "44fd2bfae9fd8cbca5ad26c88468fe00994fa7a174ab30325701729a0d17772a"
     },
     {
       "pdf": "graduate/exams/algebra/2007-01.pdf",
@@ -601,10 +562,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2007-01.html"
       ],
-      "source_sha256": "fded525f9f789f4a1a5acd0386e23b789514f90f5b1a47ddc45f67aaf18c2dc3",
+      "source_sha256": "785f5c99cd882bcc814a2e1bdcf89d1626ef8d95325030e501675b0ac16a5277",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "4793dd6aa2bf151e9c5747193e86ae01276f2ffa03cba2dd1c8782cc8559da48",
-      "sha256": "4c06f509b59c28ffb3fbd8632c73c62c826d31395ad35ed84c63482c1a0a3662"
+      "sha256": "1ecd0f919f4ef8a70183bd76459e593773b260760666074e0a2ba99950bdf62a"
     },
     {
       "pdf": "graduate/exams/algebra/2007-08.pdf",
@@ -615,10 +576,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2007-08.html"
       ],
-      "source_sha256": "2234bed0801322dad57e94cf252a272f66994a90527ca718d41e4f7dfc27f739",
+      "source_sha256": "7489badb59208c78b4ee41beef91d439302fe36e6978fb5617e86dbb2e901ef0",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "2530e0777e877ce19bd4ce29d8b9841d14b55530c717713c64c9b632f467e561",
-      "sha256": "8a4e61dea43358e579a2005d5ad347a318b4acc517dbb6ba9450c608bf364d68"
+      "sha256": "5641d167ca2ee23df2e0eeb8368188ee4e11b89a814eac6e3374ffbbb0bceb1f"
     },
     {
       "pdf": "graduate/exams/algebra/2008-01.pdf",
@@ -769,10 +730,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2013-08.html"
       ],
-      "source_sha256": "abc94758e681a7102847288a27493902fdf4d347ad9f7fc7cbf8fc4efdb2acf4",
+      "source_sha256": "bca813c2a6e82e032bd7a965753ac341292d9390059cac38521b34faecfae668",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "6c9f6038c9f8308acd7ffc3f8dea4673d8487e531a32b15b24b249fa6f6d26e7",
-      "sha256": "862b53b57357c6dd245d576e6fa95063c57b1bc113a66fe5c50f53c942ac3fb0"
+      "sha256": "30dc49272621b470048714cf5ee5734bce8d736373ec469c786af06cd7f9b8a3"
     },
     {
       "pdf": "graduate/exams/algebra/2014-01.pdf",
@@ -811,10 +772,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2015-08.html"
       ],
-      "source_sha256": "a73882c6e14d753eb02eda8aadee1ee3b992178a6295e4425bdc85d770ce3654",
+      "source_sha256": "340baaf4a27a095045a8c72b97006c43467ef1f128ce9d623de9ba6722818cc6",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "95be8d1efd1a4a4a61d21e5c2401fbfab18fd8a3c15bbe4be0048ed37daaf891",
-      "sha256": "1fd50df17c8ba2fe8a5c0f052a1e6d3448029a30c7c1d8a6f6428b47681ac3b9"
+      "sha256": "ef2babf067c872674f5cfdb43b39a59e18212f61dd5af85dce72b9e90fef610a"
     },
     {
       "pdf": "graduate/exams/algebra/2016-01.pdf",
@@ -839,10 +800,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2016-08.html"
       ],
-      "source_sha256": "dcfbec121e8e50307446ee849c145d053746834d4f8c32b4c35f4402ce9057c1",
+      "source_sha256": "ecb66353c36c6aeb7cd60f431ee31441d3914475d8e7886de692c27f23b6daa2",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "9465543583870ddf5f9304d739c5a7c471aeb6afb0cb071b40f4d7eed4055207",
-      "sha256": "fd09519ffe9e1c69adc0d8b9f986e0c2e13cf63ed9f57e6b1d37b59ba6bfed78"
+      "sha256": "5f01fc1fdb33052807daf6d4f5cc6045b8635ee260784cbf9a71bab3bab2934f"
     },
     {
       "pdf": "graduate/exams/algebra/2017-01.pdf",
@@ -853,10 +814,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2017-01.html"
       ],
-      "source_sha256": "c43f7aa46e51cb4b407a2bc2e555fcd47d98f2140fa6ccaed755193baba1dda5",
+      "source_sha256": "6f3473dcd196795aba4a4f974a70d5676209fae81e2c44b58fba0276700b3e65",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "d67d70f1b704e9046683938cb356becbab04f845cb0e3e68d7575ac0658d081b",
-      "sha256": "4b15a5b5197ec00081c729059ef97ad50a7be8a24e32e995810b82e4894b4a60"
+      "sha256": "7636c697bd99ca99108ed32aedc20f9a31354f67946a65424dafb0563e179149"
     },
     {
       "pdf": "graduate/exams/algebra/2017-08.pdf",
@@ -867,10 +828,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2017-08.html"
       ],
-      "source_sha256": "a8b28f13b6f6e0b1cf9d03e3f672c6fa22f70c197dbff9659f0c9dda44ea332a",
+      "source_sha256": "b7ba9e9e2978278b94129fa33b021c6d8b9d8fb8c9f9d910e3daeac8f9f652be",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "0d1a3d5d3eb298e2bc58be46d67f2161fdf2c91fe86b3626db1f5cc0f3cbebf5",
-      "sha256": "8a5eef1f26c8d68ca45122b4e4255807dc222f13ad27b8dff7d6fd38edf79331"
+      "sha256": "70b84f887c27b1942a76f71508d4ca6de1ab87a55e4f78f54d5fdcdb73939d75"
     },
     {
       "pdf": "graduate/exams/algebra/2018-01.pdf",
@@ -881,10 +842,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2018-01.html"
       ],
-      "source_sha256": "4f985850c222806d4e4cdad9302ce5be26e83e9f0a4d638e86375095bcb470a8",
+      "source_sha256": "0c4b3161421f618057b8c61e7f3d5bb6a5f9b0da705ea533c4388ec4b093a191",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "15d02a25b9d92faf4862fec5a5622856d90538343e00b49791ee4f638524e32d",
-      "sha256": "49629afb2d5e1708330f4f2a7fea1d32205190c7c8de5661fe39dd9584a10e6d"
+      "sha256": "e99f9c2d9c69352e644c453d25024ce26d3783e88d6f381a45135cf5874c20a9"
     },
     {
       "pdf": "graduate/exams/algebra/2018-08.pdf",
@@ -909,10 +870,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2019-01.html"
       ],
-      "source_sha256": "4127b2999ffd280d12c28ec11255552a005487afdbcf2309f4be73589d61a9aa",
+      "source_sha256": "ee2a82b9996bbf23f7bd4cc7c3dffcfb9045e5cfcc65ba584d1f88a86798d269",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "9944dcafcfff2030bd549f0e575d7238272b8e9097c5bd1e60e800505741dcb6",
-      "sha256": "82ee296759150c31136ccc27bc26cd86998765b23df83f359af76d72fc502665"
+      "sha256": "7e6155e65f52ea5f1469862566bc8561e4fdb9be0ee88dbcbec337c7e7261201"
     },
     {
       "pdf": "graduate/exams/algebra/2019-08.pdf",
@@ -923,10 +884,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2019-08.html"
       ],
-      "source_sha256": "f4360a79731047ace1318a8815f7b01bb1a142f562b61457b155951ebf4a0462",
+      "source_sha256": "10f3381e579dbabc233ab71215c5af0894181bc3c9df1dd87502567ec8f00d09",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "9f30d81b473acd5500d52d5561edac362dafb4c5f24669b5d64502135770f16b",
-      "sha256": "8faba66448a3b5e010f245db1487af18a3db524a22635668322e7ce863df9da4"
+      "sha256": "161e7d73b2abeff6ab59f2ba949b7f734dd7ac286fe7891defd7b7b153051ab0"
     },
     {
       "pdf": "graduate/exams/algebra/2020-01.pdf",
@@ -937,10 +898,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2020-01.html"
       ],
-      "source_sha256": "c033fecada42710858aa9136082d98b96f0c4e66774546c956c1d2f2c38e1c07",
+      "source_sha256": "d048c56e18263a5976e6d8efcb22e3bfe10d6a725f035beef1a5b245dbeeac36",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "453b09323343d2911dbc93997ea72195eec4d772229370cb89363283cf759995",
-      "sha256": "d80dc02abd24765ef6f7c65573119e26928795713c02640f87ee75f710219f08"
+      "sha256": "6cb189a9d9e9ca367b7bd3cd200d97735e58f7db9bdd0152e926133b6b0ca652"
     },
     {
       "pdf": "graduate/exams/algebra/2020-08.pdf",
@@ -1091,10 +1052,10 @@
       "source_urls": [
         "/graduate/exams/algebra/2025-08.html"
       ],
-      "source_sha256": "fe71be50a923c2bc0a8c5c6b9500f54fb2def32355ac366ba753d3c578b490ca",
+      "source_sha256": "d41aab5aa5c0ad0e0e0d9823bdc728f14c100cd4139a2a3d2b7a6553856e2bda",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "ccd1be1723dca697baa65ba6fad64cd8a73b835601dd7f4d570ceb4d92b0feb6",
-      "sha256": "96f3a5e9c51788eead9fda7d259c691e19ed3ab2dc64cbbeb3532926253d1f68"
+      "sha256": "b87111057c150fc2e957aebc9ce10a7c498993d3799a36b2bc72f458763a5566"
     },
     {
       "pdf": "graduate/exams/algebra/2026-01.pdf",
@@ -1114,7 +1075,7 @@
       "pdf": "graduate/exams/algebra/AlgGento02.pdf",
       "status": "reflowed tagged document",
       "pdfua1": true,
-      "formulas": 2289,
+      "formulas": 2318,
       "figures": 0,
       "source_urls": [
         "/graduate/exams/algebra/AlgGento02.html",
@@ -1162,10 +1123,10 @@
         "/graduate/exams/algebra/alg-2000-xx.html",
         "/graduate/exams/algebra/alg-2002-xx.html"
       ],
-      "source_sha256": "183746cb52666d47ad99067170adc2ccee8970d9d148f8077a885fe67c0f57e8",
+      "source_sha256": "9ebe5cc5719bb1cc798c9fdd9300a7069823db05b26e83b81220dcad584963b3",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "cb37ce0b178a062d7181c6c446811336e9c1f2529af11c801b52886d29343ca4",
-      "sha256": "37f4b7971fae66e09061ec09682c93b79173694a80938f73e20531b56b0001dc"
+      "sha256": "1f392ee48ff742b960f73be298a0d902782a950718a0053b71275f1f39b8c24b"
     },
     {
       "pdf": "graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.pdf",
@@ -1189,16 +1150,16 @@
         "/graduate/exams/algebra/alg-prep-5-2.html",
         "/graduate/exams/algebra/alg-prep-5-3.html"
       ],
-      "source_sha256": "a125038495b0658fb0f72a0754552cd3d29fb6415cc6640169d414b1119c8e22",
+      "source_sha256": "241e9089612809f4ec6429825b8d26384b3cee7ee8303353c4d4b10d1072815b",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "3c59cf7e1f997192d4a72457bbb655bd7ab2360cbe498becd9f1d133bc298b8b",
-      "sha256": "632c7656409233767639351584ac27e98d36ca5c6167e6cdb3bf0770db5c259a"
+      "sha256": "82d74e896b530425292717035dd65d83a112b695673e63df4b1455fecc9900b1"
     },
     {
       "pdf": "graduate/exams/analysis/1977-2004.pdf",
       "status": "reflowed tagged document",
       "pdfua1": true,
-      "formulas": 2647,
+      "formulas": 2739,
       "figures": 1,
       "source_urls": [
         "/graduate/exams/analysis/1977-2004.html",
@@ -1252,17 +1213,19 @@
         "/graduate/exams/analysis/analysis-1993-01-complex.html",
         "/graduate/exams/analysis/analysis-1998-08-complex.html",
         "/graduate/exams/analysis/analysis-2003-12-complex.html",
+        "/graduate/exams/analysis/analysis-052.html",
         "/graduate/exams/analysis/analysis-1993-xx-general.html",
         "/graduate/exams/analysis/analysis-029.html",
         "/graduate/exams/analysis/analysis-030.html",
         "/graduate/exams/analysis/analysis-2003-xx-general.html",
         "/graduate/exams/analysis/analysis-054.html",
+        "/graduate/exams/analysis/analysis-055.html",
         "/graduate/exams/analysis/analysis-1997-08-general.html"
       ],
-      "source_sha256": "94113d8358b153f3cd958ba5a25bcfd005d3555a7b8b8935dbdfcadc1e57c1d4",
+      "source_sha256": "2acbeac3822c9325dd9834ac2ffe6845b9d8986bfbfcddc01df915ceb74e1e8e",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "da5664513c352a2184de9e63ff8a129c1d3c6437ba9c31fbac8c0b5b6a96bb78",
-      "sha256": "60f00dd0ca0ac6b027c672c6a2f228c4e0fdd740d92c787e89583d297de9f2a0"
+      "sha256": "21daa8a8a6d6a37722e0d24deaa4085ea60a59f085dbc98350d39e873fce203d"
     },
     {
       "pdf": "graduate/exams/analysis/2007Aug.pdf",
@@ -1315,10 +1278,10 @@
       "source_urls": [
         "/graduate/exams/analysis/2010Aug.html"
       ],
-      "source_sha256": "a93731391505414c20a841c7102db8fc967c2cd5b76fd90f50800277733318af",
+      "source_sha256": "6e2d88f510054377e15da992ac24c32307416866eb1451f631177db5f9ae1aab",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "12e06f183ab3c72cd8117e969598db1578544209077771dcc3241eb9644565d4",
-      "sha256": "fa9ab0661055744f55258207e418c63a6c55058ee47216b5a41c16d6b506b074"
+      "sha256": "69db0085d38c34c4ffd7bb1e592f2787de438642981bcaef7bfd787200064506"
     },
     {
       "pdf": "graduate/exams/analysis/2010Jan.pdf",
@@ -1329,10 +1292,10 @@
       "source_urls": [
         "/graduate/exams/analysis/2010Jan.html"
       ],
-      "source_sha256": "347502f4d28559515453e5fe1f998ca20750e918bf8596e080c472b05d90b205",
+      "source_sha256": "7065e57190b64c0b2093223757f4a1963213bf40ff608796c3227fed08348325",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "c4e0bffbac14a655ef22be2fb7dfd49c5325189f7f9c09065f58c48967d54133",
-      "sha256": "0a124288326564841bad6563321694ea0543927288e1d9778683dfed93b5bdd5"
+      "sha256": "b12558989f5fce06bd70991638b8c4e6dc9bd0d94274c45763cd5ab00c03aead"
     },
     {
       "pdf": "graduate/exams/analysis/2011Aug.pdf",
@@ -1343,10 +1306,10 @@
       "source_urls": [
         "/graduate/exams/analysis/2011Aug.html"
       ],
-      "source_sha256": "e91956714cc94b6acd2fb9be44e55dcf637eecd31608ec03ffa97d6fd0f2cd85",
+      "source_sha256": "85c08a517eeb466d94ef3086690a7d42a07465a7f1b977957de2d337ca3aa657",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "8eb784f66bcb876904c2c846e0e017314b9de2444f92e6054815f93fbc237eaf",
-      "sha256": "f63ed10f6fcc5c91341a623beabf4e2c73b832d0b88d7c7bfbf81548516466c3"
+      "sha256": "415b82c4ef23a792c1f792aaa22dc03ee306b8418e4f56f0ceb27ff557af3f24"
     },
     {
       "pdf": "graduate/exams/analysis/2011Jan.pdf",
@@ -1357,10 +1320,10 @@
       "source_urls": [
         "/graduate/exams/analysis/2011Jan.html"
       ],
-      "source_sha256": "bf4331ffc3eff5c49e743fbfaaabdcb546d4151b44a934456eca926a4697e4b8",
+      "source_sha256": "d5e566eb7ddf9d772cdcf6c42ef1bb61fd74491f7115ec09c430a3bdf5d07f66",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "d0d2fa4eb586d069b20afa5f571646eaba92e6e1aa1b2bfe3c926642545bd936",
-      "sha256": "f5b42eb2b68afdab05ffb794f24825d8ab50a94a0c0a95d038a86516548451a0"
+      "sha256": "c079de21f27f784772f6c8e408048a7c56011304d39c1c57aa401192bd34452b"
     },
     {
       "pdf": "graduate/exams/analysis/2012Aug.pdf",
@@ -1469,10 +1432,10 @@
       "source_urls": [
         "/graduate/exams/analysis/2017Jan.html"
       ],
-      "source_sha256": "d086cce4ae3eac652c1e6b46f954fb2f8dd50caa93e4b999a8d7515b357bea8a",
+      "source_sha256": "a1cf2e5b204aed78b010f37538e83e779df7cd116cbe4528b5e7567136f8343d",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "30e2fbe517581b794a636faf9d73268893dafafa2fd0e2b9efccf5311697560b",
-      "sha256": "82691fafd20912fd50f646c52d34071f4c1029ffc315be49ee513af8c79769a5"
+      "sha256": "1c93bce6d64384a88a41080c494d5d6fef27b97a8a543e42837a8607dbf4f941"
     },
     {
       "pdf": "graduate/exams/analysis/2019Aug_complex.pdf",
@@ -1581,10 +1544,10 @@
       "source_urls": [
         "/graduate/exams/analysis/2021Jan_complex.html"
       ],
-      "source_sha256": "2c3e506178492a31c60288267813c477b890066813a696839a452b616f2df0ef",
+      "source_sha256": "6dfd28abe77c351240d4975356c351b55d87966acf615d5e8e5676767679451a",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "45a9f1fce453a80668b430463dfb446441424cfe8528d438d2d77cb26ce3e0d0",
-      "sha256": "4bca6bef04ae3db7b2d916142fcfb0abc1a2af5b429ee944217e2de9a6f5d9e8"
+      "sha256": "6eae8f96ad143b663a9c0d01099f1fea4feab58994180186381f382e094f84dc"
     },
     {
       "pdf": "graduate/exams/analysis/2021Jan_real.pdf",
@@ -1595,10 +1558,10 @@
       "source_urls": [
         "/graduate/exams/analysis/2021Jan_real.html"
       ],
-      "source_sha256": "afd6582c5abd3011056f7106d494f74dd9e129e31836e4c902babe1eaae40573",
+      "source_sha256": "15d5579de569e0ab8227b81346f9f20b3a7543594442114d30a44deba37ae1f1",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "2657e8477e6d50077db4703ae5fa2ac88c73b4d47a35add5c6aaf3de3e110b51",
-      "sha256": "c672da7d94387b66dc936ec365bdacfbe46209e4da5112ccf0d4927dd76a3ef3"
+      "sha256": "4a74dfc6dd43e6849eef5401c8f4dc59e40ce2f8e0c73b8901e280ca2c1c7985"
     },
     {
       "pdf": "graduate/exams/analysis/2022Aug_complex.pdf",
@@ -1819,10 +1782,10 @@
       "source_urls": [
         "/graduate/exams/topology/2010-08.html"
       ],
-      "source_sha256": "7cfc581ac7cc8ed9e0e4e16e9ea2b1c03128bdd9ecf9d5489136a831b09f5c11",
+      "source_sha256": "b59818525183d7cbe5191582bb218f5198ad42405f61a4a9eaa45c9432ba7add",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "d534a18cabd1a67142c8a4e03145b3bde4fa75ebec72f75b8205acf2d94b1e06",
-      "sha256": "17bf9f6018aabdc1221b2ba84c91df0a2b12dc5c271b0431b40fb8c4bb377a93"
+      "sha256": "96ab1712ab0374e4b7d12d9593379a999b971013747a8963cd62983ce964f6ea"
     },
     {
       "pdf": "graduate/exams/topology/2012-08.pdf",
@@ -1847,10 +1810,10 @@
       "source_urls": [
         "/graduate/exams/topology/2013-08.html"
       ],
-      "source_sha256": "177e3d4b6edb0801de7ad4b22e72a8efde6ebc74c82216e45582f58f8396708b",
+      "source_sha256": "52cb2fb4ff0738662a441b7baca93ada2776bb84ea10c17c689bc6a0a7355069",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "5ea5349d076cf33acf5809bce2f1581cffe1afe27db0ab833e27723df64af01b",
-      "sha256": "3f89af25575a7cf99e5f26e2c062b04eb1847d9ffb896be216535e0861ef1ff6"
+      "sha256": "46119114e1dc3965b95f7153dd5564e6f804f82ab216e83b85f7ce5eb52a87c5"
     },
     {
       "pdf": "graduate/exams/topology/2014-01.pdf",
@@ -1861,10 +1824,10 @@
       "source_urls": [
         "/graduate/exams/topology/2014-01.html"
       ],
-      "source_sha256": "d5a2d079144a21b50667aae5725504fc40217a4f3247099544147b2c67d461fe",
+      "source_sha256": "75ab2c10bbcaa64682db078eea2fb26657e0409b005508319ff87b0d1d907efd",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "b72a9b7537598a1e181b2b2593212a1b10e7c41c8fb93674596793270000471d",
-      "sha256": "0267eacb539243aee21cc9353db4dda96586df75a466123ab21531e1c8c3fad6"
+      "sha256": "ec7a0ec2e8e57790e9a40ce96e8333ed67e1c03c90089163874368ab30aa222f"
     },
     {
       "pdf": "graduate/exams/topology/2014-08.pdf",
@@ -1917,10 +1880,10 @@
       "source_urls": [
         "/graduate/exams/topology/2016-08.html"
       ],
-      "source_sha256": "4ecb4c7aa73b1fb14a3dc1ffb74406e98cdc4023e7d7783b49039f7f50ebee57",
+      "source_sha256": "44ab1a0ca49e9a04df7353f7052265eb0b0d8ed496b9518e626de2b6d2a98a69",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "dcab85ce41e77d4c981ce72e82f52ef9568a982eeab3843d12aeb2f0173c68cc",
-      "sha256": "b7dac95edfa117403d0bdeabdfa5db5b75b3165d3d1d15daf9d91c84a261ba3a"
+      "sha256": "38856dcfccd723e2f9aad9ae9dfe4597198292a30b65d27fce4bd6eccd967d06"
     },
     {
       "pdf": "graduate/exams/topology/2017-01.pdf",
@@ -1945,10 +1908,10 @@
       "source_urls": [
         "/graduate/exams/topology/2017-08.html"
       ],
-      "source_sha256": "3510281b4da5253c36f094f47938110faa7d68626963f7eea41c4b097610af3a",
+      "source_sha256": "90e4b2e29629cf3fbcdc97c735fc5f9e9dd49ba860018da547d06604c6dce775",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "26c38fe60af7b5a89d4f3c8f5ab214aa7d633d36c16b4e4fae170373783ed01e",
-      "sha256": "4c8907eefe85be5259581bb11ada46b60c064fcbe29cb0730ea5d4e332295338"
+      "sha256": "f7b765f77ac5a31b3bae80c57a60c336a906e6687afadf3a6602e40434299039"
     },
     {
       "pdf": "graduate/exams/topology/2018-08.pdf",
@@ -1973,10 +1936,10 @@
       "source_urls": [
         "/graduate/exams/topology/2019-01.html"
       ],
-      "source_sha256": "2ac0c24c69f3e66cfeaf1649de360bc989a41a30ba1af9ce6eb3caf147292902",
+      "source_sha256": "cb99afc2da16684353c2723fb33aa060bb218528669f67d02aea889f46891c82",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "a5b6893c0ecae54f88ab8f90d3bdeebfd2989a69cd678ac1466eefbf37c523e5",
-      "sha256": "88ef53f16bccd304b6a9d0dc5850475857c94324c1331006f2e3233e35d2856d"
+      "sha256": "dd0ce6d0d64fa6ad803071837199b7fe8d1e028093bfacde1ad663a53c0aff30"
     },
     {
       "pdf": "graduate/exams/topology/2019-08.pdf",
@@ -1987,10 +1950,10 @@
       "source_urls": [
         "/graduate/exams/topology/2019-08.html"
       ],
-      "source_sha256": "5a0beb3e4ce576a0586b95506aca6bdceb42e115f1a65eea1a2afde9c62bf517",
+      "source_sha256": "28cae0a4a5ac0c5a1cf4aeb1b5034fadbf95656397eed80f0c81da3143fff09b",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "6a57eb59d92645d77371c6d666b0b0f04a3b4e1add44900bfcd6ee4870fc7817",
-      "sha256": "b8b25a289e4a00e2f37abea12c6a29a640985a2e11097ff38856c04ec3c19b9b"
+      "sha256": "865b4e0f6eb037c4b3923b74192e4657ef8b84f70a1b5a9f459881bc27ba313f"
     },
     {
       "pdf": "graduate/exams/topology/2022-01.pdf",
@@ -2001,10 +1964,10 @@
       "source_urls": [
         "/graduate/exams/topology/2022-01.html"
       ],
-      "source_sha256": "5fdf4a891d854a01c2b55138d64e57d38487eb4c325262b521002a593b8a0164",
+      "source_sha256": "43175f62c3dd5ebe032b28235efd77b9a1ef162efd3a38cf5f9562db16cb57ff",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "b087c5315641e536a33d313432d25daa4ba85a8d4580c89c6df959b26727697c",
-      "sha256": "ad581fa94e8fc9415f1a820a2c8eec8248c5e836cc96fe378349d4c7620deaf3"
+      "sha256": "82cb9906aeccbbd0f01568e070a1d9c119b4c786492c371a297eae04e5b250fb"
     },
     {
       "pdf": "graduate/exams/topology/2022-08.pdf",
@@ -2015,10 +1978,10 @@
       "source_urls": [
         "/graduate/exams/topology/2022-08.html"
       ],
-      "source_sha256": "dddfd9c9ea5bd076cec298353940dad6424e4058d706ea29554542f68b8ed63c",
+      "source_sha256": "f9cbabba8bfe735a1b12b383de2c4556db84c505825731ee2aa2c2d3ea8b296f",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "b557b6039fa64a9b68901709f4aa2a0244ad535f0d5af2416a4f36c95b67c1bc",
-      "sha256": "6279922b2994c591f49bf5ce2ccf6de4deda7ed17a49eda8c0d18643d1fd2333"
+      "sha256": "ed85d3dc3c592b0fd9ac28c9af32beb749b99b799946427bd8cd159b09a95067"
     },
     {
       "pdf": "graduate/exams/topology/2023-01.pdf",
@@ -2057,10 +2020,10 @@
       "source_urls": [
         "/graduate/exams/topology/2024-01.html"
       ],
-      "source_sha256": "69c40d5a02601bd15202baed5ab240d7ed844f4578f8ec22f860c9e493be6a9c",
+      "source_sha256": "255c4d4719686f21409ce11367bc513c922ebb3a6f67c99f33692b4ef3dcc071",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "11c48b10c592c3a8bd4cdf771b1ae0cdce567bfc57787d894515f292458a23a6",
-      "sha256": "724b8f89efddacb499a6f4a56fe5c3c259b10880f52020c3534d7a867de80292"
+      "sha256": "ea4ea80e170e7769ffd4ae2fa8584f95751793e45febc7226f342a6158b38eb3"
     },
     {
       "pdf": "graduate/exams/topology/2024-08.pdf",
@@ -2085,10 +2048,10 @@
       "source_urls": [
         "/graduate/exams/topology/2025-01.html"
       ],
-      "source_sha256": "e90df3a5075dfefa71568922b64f55be52d5fb7b85f6beefdae464fb9301799c",
+      "source_sha256": "bbfd2ac3b016ef55833a39ea60df2c48a216f4956adbdfde9237d1fb843abfeb",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "74a5b7f21a9a2f162f47380b90c28cab7f458f7be931b3d866554d02334a666c",
-      "sha256": "93fd9ecedc6f4cfb9fb1e91c48e1fda51abac55b77b323e2e811779e7f255f04"
+      "sha256": "2771e72e1fa526d8b34499ec6ce83d2d841f663fb7f7bd6087c32c7c9609bd2e"
     },
     {
       "pdf": "graduate/exams/topology/2025-08.pdf",
@@ -2120,255 +2083,129 @@
     },
     {
       "pdf": "img/IMS/Alan-Reid-poster-pdf.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Alan-Reid-poster-pdf.html"
-      ],
-      "source_sha256": "7662392d2a2dd23bb0e8ff2209acc533f7261ade15f4908480164361a242513c",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "3e4b8ee20741118c5ce3a997867456bf52ca7492ed9b4cd7a5b2bff87cf1c76e",
-      "sha256": "e778f228441748101e76bc445c006d63b4c5a7f9d46ce7a228655085963ea855"
+      "sha256": "f5f8c95cf4cf7024dc5bf048fc90fddf1505f6b6047d1086d098ff76687ab9af"
     },
     {
       "pdf": "img/IMS/Art Benjamin Mathemagics 03-23-2015.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Art Benjamin Mathemagics 03-23-2015.html"
-      ],
-      "source_sha256": "c88c2d9980530c5e27fc224b0b1f9c84db4f6309571bd9e569941aad855868d9",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "23c069b937c69d32244af5ae845d5313a26b134cd78d759f97c3760cc0c632c8",
-      "sha256": "17c37b9e18c16baa81ed34cb69a3fde6694c8da7bedb66a37ebaeb894b32535b"
+      "sha256": "d8b68c4bd3c7e8a69eec87e48f6de7110e0d951b45c6ce9bae3eea0ba7bb60ba"
     },
     {
       "pdf": "img/IMS/Fonseca_poster_1.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Fonseca_poster_1.html"
-      ],
-      "source_sha256": "4cfa5f30310e6836764d6fc107635ff353ff8704d1215d078cfcfea4a46cfc65",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "6081032f5a91ba9b030381143868923e8d58982fbf7faedb866d97c5c7c13f01",
-      "sha256": "7e83e3bb05888f79f410618f837a3d0cdddc97ea12d1454d017622e7733e6243"
+      "sha256": "8ba375c91d35394aa4640e29910230c2dd8881ae71622aca6db9fa51f990742e"
     },
     {
       "pdf": "img/IMS/Hairer_poster.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Hairer_poster.html"
-      ],
-      "source_sha256": "edcf7176d3c405c694dee332c3263615ec9347383be49a9d9f39600ffb7d4111",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "b6c207293b3e57c308c6d535af8168da5e7eb9770987daa0d134b700a4064007",
-      "sha256": "bab649a6f1c3d621a8d722ddabc50b1637a2cdaf0427a9b82c5020c5cf786c1b"
+      "sha256": "e1b189d6c91778d7f3082ff9b3a282720eaa9f7209451b5885c75265b3baaa24"
     },
     {
       "pdf": "img/IMS/Hoffoss.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Hoffoss.html"
-      ],
-      "source_sha256": "421ba790d610980e513d444ae53af811d530e6066003934c511ccad1c9f1e3b1",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "6ed9402718ab1b374b0cda55daec16808d1c7f38a43488a1c5205004658f9305",
-      "sha256": "08349cb8a9939ce90d3e4a3c0dd7af651b28421f163fcade036f9934657d732f"
+      "sha256": "b8a6909d75f0eb7e754e5f38cdce27cd6854f6e38c0029837da742eda0000c84"
     },
     {
       "pdf": "img/IMS/Jordan-Ellenberg-poster.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Jordan-Ellenberg-poster.html"
-      ],
-      "source_sha256": "b20b8fb51e52aa345498540be4ff64af042dfec295f0aaea0715fc0255a0400c",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "0530a22dbf441d6ccf3109e40860db0e29156ae74b0aa03f071672037584e14f",
-      "sha256": "83815cbe4fcf27841efd5d7b4a16215125cf935d7263fa091a8a9097b26ab5cd"
+      "sha256": "d558082c9a66b120539bdb446f8a295ae79469cedfeecd950f41d987458bcd83"
     },
     {
       "pdf": "img/IMS/Kavita-Ramanan-poster-pdf.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Kavita-Ramanan-poster-pdf.html"
-      ],
-      "source_sha256": "fb6f0fcecbd06fe19601d217907013533422716af145be473c0244ee8bd96519",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "e0e7386e5ba9b3b5cdfe851804c8371953e9a894fc77e314f3ca483440fd28ed",
-      "sha256": "7c9921f9d41efe52f2cb45dab5328529ce78a803f0a96f97e9baf463342b5059"
+      "sha256": "ca6d4e4a183ae6e4b5b5c5811a9339604f1f831356b0584c30574c915112b19c"
     },
     {
       "pdf": "img/IMS/Lawler_poster.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Lawler_poster.html"
-      ],
-      "source_sha256": "93442de04c33a6fbbbf07343658ccf0d96e837b43901ff9cb5c41de18ee8267d",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "a20b91ccef92b07cafe1ba299a5c20ea2e84fb0e7b98a8850bd70cc5a6041aee",
-      "sha256": "df760810a08c787f240de2c83ab1eb1e2509838b4203558d108c063ab32701f3"
+      "sha256": "5ac5da75645c17723978b8dec6eedb7dcc5b94f29d52d932c5b8b0ead9ef7db0"
     },
     {
       "pdf": "img/IMS/McMullen_poster.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/McMullen_poster.html"
-      ],
-      "source_sha256": "989874985723dc8cab9c8c3ec412900d01d8e5b04048bb0431bd004d384cad1c",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "c6e75561a8b57b52ba161120ebbecea7bf5df319bffd323ad2ca9720745ea96b",
-      "sha256": "a6517600f33a907faa4fab68a4875d282b7d54281e19b9d96e4e3670228971ed"
+      "sha256": "ab5bfba7389228e58aba6b1f9bd6e5ccbf957667a7d8d1f1a14bff3dac999146"
     },
     {
       "pdf": "img/IMS/Minsky_poster092517.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Minsky_poster092517.html"
-      ],
-      "source_sha256": "5e61da65519df8db291fff86fd7785551e27acdec717f38c4f9044f97bf4bfe3",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "67521ee93378a652fb8f64b612c04571ba9503cfdefd44f6c58570548ac0516e",
-      "sha256": "fb093afe9ccc90faeebeb4997d916ee111c6973f061b73827328bba8aecf141f"
+      "sha256": "09b9dc1d6edd338adcb40a9ef95c4afe7c1559a1278119e3351529965c656f04"
     },
     {
       "pdf": "img/IMS/Okounkov_poster3.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Okounkov_poster3.html"
-      ],
-      "source_sha256": "a19dc5c2c37dd363473809a48b687e83fd52c968d39900e7df59ad2652c832d1",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "ddbf63cdd9ffcdcb52205112894788f0f86dd7777259ef393b5e0e6362edacb1",
-      "sha256": "66e52954944a2f1dd8c7d9867dd5206a0299deab9d164b551a9063a3b094bba1"
+      "sha256": "ccab35cc78409de917c44a91aa8455e96589f47d6ced868f0b2947ed54cf0c27"
     },
     {
       "pdf": "img/IMS/Poonen_poster.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Poonen_poster.html"
-      ],
-      "source_sha256": "30284cc184664fa6fede33c0ce5fa84df62c5f7767c1026494c9936eba9e3f4e",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "b883c5b5e4e3794667142d8196542662b78d981407be65a5423820d2877db330",
-      "sha256": "a8cba4b444df5ff5e9d7abcc572999952adc5a8bc21220126a908b168fb816fe"
+      "sha256": "c46e762d43268aa5f5b0989cf1000463ef8badbe6c9667eb723e65eeedf506ab"
     },
     {
       "pdf": "img/IMS/Ravi-Vakil-poster.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Ravi-Vakil-poster.html"
-      ],
-      "source_sha256": "e73b6f67f502c3ebb1e52d4e83bdfbbec6242bc6169927d9c8a67fd1dc3b02a6",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "28d9d050f997443d2a9ab35b98a6051f575a0363c40e34e6e2de337f119ad447",
-      "sha256": "e6eb903c409eb5e5b4dc450061c57f1356fe36f5b64faaacb86852fd4a2f484a"
+      "sha256": "1daaeb4af4225a52aae812ae1f08c3f6daae90d9cd46d91669d31ba3197c0e7a"
     },
     {
       "pdf": "img/IMS/Rich-Schwartz-poster.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Rich-Schwartz-poster.html"
-      ],
-      "source_sha256": "abecaccab8a8d849be458c627d3da214bd2ab4dff5dd61d4be253e365c65ff62",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "1a65d6db217a151d6b068e7ceb6b79c137fada218962d8a4e540bd13f8883df2",
-      "sha256": "61757c59ed8ed17acbabd7be96f395d2345032e22a64cc7a29acc30f6c1ba9f2"
+      "sha256": "ff8a3559e52bb8f139c8d338893b04b998c4731d94d28d476ac4d23d161705e9"
     },
     {
       "pdf": "img/IMS/Sarnak-poster.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Sarnak-poster.html"
-      ],
-      "source_sha256": "f1da16b509149fd891dea8920b6224873175a2c193214afa3c34a90b75868c62",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "e237238fc84c1d52a4ca59a2cce13aaf44f0906d5835f0d056efeb88bc655a26",
-      "sha256": "edc64033e400225d9f9cc40557f4b9ab30591e4c004370ea94e3f87b889e8dc6"
+      "sha256": "133f1ace266e175b24318adcb3a837347fb02d0f33acbfeb963969455850104a"
     },
     {
       "pdf": "img/IMS/Sherson.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Sherson.html"
-      ],
-      "source_sha256": "abe4646ed4a1b6457be54c4550ac0dd44f2d98c76bbdd2ae73281847ddbf21fc",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "f866f1a9e1228005b20bfa2334915f27bcc7fcda23d926538ba04e3f99e02995",
-      "sha256": "29bf4089e86c306cc4cca3c40d75915643e6c11eb8b89c04842594ceb56bf8fb"
+      "sha256": "2f08db5408c9d4ed3e5601c7f0795ae8e7408abdd39e41cc40a74e0394858dfc"
     },
     {
       "pdf": "img/IMS/Simon-2018.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Simon-2018.html"
-      ],
-      "source_sha256": "7604c33be09b31ff04a684f558ab86e1dc3a7ce6d47cc37fa04448050694080d",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "42b345d32eda1cb29fd54ad40933ccc459fe529db7d060fe2fa43d3d16ee8ca0",
-      "sha256": "eefd577dc39fb65538fb63e1b77620d91e81dfbe4544870590e726f9c340b5d1"
+      "sha256": "64dd26b5e9bc9fbb6f07bdb0ed940eaa5ac37cdc6ad88ac5455e7e5a04697fea"
     },
     {
       "pdf": "img/IMS/Van_Vu_poster.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/IMS/Van_Vu_poster.html"
-      ],
-      "source_sha256": "11a05cd944ef31b20b4ae9e907dfa56cb26b66bcffbfbeb8ee4c48968b4797b8",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "dae559ae14c5871afa577fd3f343abd0c96ad93c3d453b255046e4ae50e0cd5a",
-      "sha256": "b70b0a329db029c6e661f09b9dc2fd59c56ca3102525a499461e456812ee4349"
+      "sha256": "5bbdf3f073407988285a8841706dc1cfe06506f1c09ed874a8853844318067aa"
     },
     {
       "pdf": "img/news_events/2020ceremony_program.pdf",
@@ -2386,45 +2223,22 @@
     },
     {
       "pdf": "img/news_events/Kafadar-AMC-2026-04-09.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/2026/04/kafadar-AMC/index.html"
-      ],
-      "source_sha256": "f46b749a8bc6ba6a09f9560ba6d118946a82e45a62d61e67e054faa3820fb69b",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "56770c631f00f13ba854db5ade77ad30df0d213e58a5bc28e7e7d443e89c93a9",
-      "sha256": "da98203319894ab5d68b89750efd9a6bb90e8c449b2940b9dfd994763a93ca89"
+      "sha256": "3f01809fb47665eb6c15cf7f0723d6a9cacdae7ea4b83fd1bd6e7f0bdcc4ecc7"
     },
     {
       "pdf": "img/news_events/MattGagne_DefensePoster.pdf",
-      "status": "reflowed tagged document",
-      "pdfua1": true,
-      "formulas": 46,
-      "figures": 0,
-      "source_urls": [
-        "/img/news_events/MattGagne_DefensePoster.html"
-      ],
-      "source_sha256": "3f69b5c844b68c8cfd64b61f161ecf48ab08d06cef6846b26e361ef8fe1c5450",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
-      "original_sha256": "211673d991bde57ed8695de7c6f3eab5311e3b80901b2f90d3b7a560fdc34644",
-      "sha256": "57bada6025da69ffec21f79207a5f0c85e49471f4ebdbb45040ac46b313dd34f"
+      "status": "retained original poster",
+      "sha256": "211673d991bde57ed8695de7c6f3eab5311e3b80901b2f90d3b7a560fdc34644"
     },
     {
       "pdf": "img/news_events/Perea-AMC-2026-03-12.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 2,
-      "source_urls": [
-        "/img/news_events/Perea-AMC-2026-03-12.html"
-      ],
-      "source_sha256": "734751968fadfecb7000f957be7a9fe7ce06f2b6531e7e24ee921f13d1b65a90",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "ca6d09f033e0516c0a3df5fdb3efb70d317b71852d344a5600d84764d5611ea5",
-      "sha256": "1d4fe475c1086de338f47042c6cd768d241bf5525756b7dc5f1fed12a8c93114"
+      "sha256": "4c2909e3bad7aea7b59b162ae7d72a0143b83c59d60264c9f52ed30a0370e54d"
     },
     {
       "pdf": "img/news_events/WINRS-SCHEDULE-2018.pdf",
@@ -2442,31 +2256,13 @@
     },
     {
       "pdf": "img/news_events/defenses/Craig_defense.pdf",
-      "status": "reflowed tagged document",
-      "pdfua1": true,
-      "formulas": 31,
-      "figures": 0,
-      "source_urls": [
-        "/img/news_events/defenses/Craig_defense.html"
-      ],
-      "source_sha256": "cff6babcd68154bb49bfa3a38cd6e94fcb8d317ce6210fcf29de75998b7001ed",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
-      "original_sha256": "c7f099b1d52cd9b4833d1d7bb4d637fd533b58cbd9ff65429e7a06203b4d3825",
-      "sha256": "cea50af708c94db25542e449948f4b2b36e768fe65a458ede733447b2081e33d"
+      "status": "retained original poster",
+      "sha256": "c7f099b1d52cd9b4833d1d7bb4d637fd533b58cbd9ff65429e7a06203b4d3825"
     },
     {
       "pdf": "img/news_events/defenses/Pandey_defense.pdf",
-      "status": "reflowed tagged document",
-      "pdfua1": true,
-      "formulas": 30,
-      "figures": 0,
-      "source_urls": [
-        "/img/news_events/defenses/Pandey_defense.html"
-      ],
-      "source_sha256": "970845e33750170f74e676b8552814ee0757ca94e021dd658f9eb66dc090c711",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
-      "original_sha256": "c7564d0b00ba812c79e6c01b7a7196f5843db74efa3a91b352cac56813b377a2",
-      "sha256": "4796b7f6f6890b96f46d7934adbdca82fb4c433b2456878849bf8dedfa22a651"
+      "status": "retained original poster",
+      "sha256": "c7564d0b00ba812c79e6c01b7a7196f5843db74efa3a91b352cac56813b377a2"
     },
     {
       "pdf": "img/news_events/fluid-refl-conf-schedule.pdf",
@@ -2477,24 +2273,17 @@
       "source_urls": [
         "/img/news_events/fluid-refl-conf-schedule.html"
       ],
-      "source_sha256": "e286c6af2e60ac28a59c033f8df454e2b936ecb2a291d2cd983022d4aa41db60",
+      "source_sha256": "b51dbd1c75fd53c92030f0423a07ef5bca8c989981caa8c238edb1ea3b3dd87c",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "ddc48e22f493384a017816a49c896e2b0c3a958f2f96955ef0ee8b914d02f2c7",
-      "sha256": "50482c9834c484d7b7dcfae377bc7dcf26416afbcc137d56459a3a64707a1b04"
+      "sha256": "43e9404b56f933bb0e2293e94d8f520fe3a9f767502a8fc92212794c361c4aa6"
     },
     {
       "pdf": "img/news_events/fluid-refl-conf.pdf",
-      "status": "reflowed tagged document",
+      "status": "tagged artwork",
       "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/img/news_events/fluid-refl-conf.html"
-      ],
-      "source_sha256": "25ab4a7b1cfa317d744ed260eb876e8c6f2c66bc2c77ec36f611e160ba94ff46",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "4e206e2613529a6c859a925a093237e8c1874df35b33a9516cf71ea376e0fb07",
-      "sha256": "0f7ec289099c832f55a786a5cd858909b6ee099980e54619aeb7513562af7ca7"
+      "sha256": "743298f2e8709c696dd8a4df99649b1b52605cf381ec3a8de255b36cb1d3d369"
     },
     {
       "pdf": "img/seminars/Gorsky_S21.pdf",
@@ -2561,15 +2350,15 @@
       "pdf": "seminars/diffeq/xiangwan092915.pdf",
       "status": "reflowed tagged document",
       "pdfua1": true,
-      "formulas": 0,
+      "formulas": 8,
       "figures": 0,
       "source_urls": [
         "/seminars/diffeq/xiangwan092915.html"
       ],
-      "source_sha256": "3c219840803902a52a00a5efd7bda962c6c0e8867b44d18122b96b9b2f65d8e4",
+      "source_sha256": "ad172a1df9f3443dc1a01e31b49704df893b40a1a168e5e45693b0705ac9b4cf",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "5e5624d469a6afff08747825712bf1c9dce0c9581f82e76453e4e555e6f1c9c1",
-      "sha256": "031d8c0af17dc85dc2c1b26779ac13ab6ca45614e26b451dd79248cedb266147"
+      "sha256": "08033767d0df130ff9ec3d007b9a636af95d828a917f0c6ec5c83e0b73522d8b"
     },
     {
       "pdf": "seminars/mathphys/1999-03/Fine.pdf",
@@ -2818,10 +2607,10 @@
       "source_urls": [
         "/seminars/topology/AroneDelooping.html"
       ],
-      "source_sha256": "a9ba1200f991636afa892b4f62d74ade15e96230a26134e8541a54de57f77444",
+      "source_sha256": "c16df904e9a9b8d780c31ae7267e2d04f0d16de71a8be54a90eebd02d0f51e27",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "ff1d9d1f032ceab727c91da99153b87496d71f2e2157079dccfdb467fcdbb4b5",
-      "sha256": "31beb4ed1cc23a82d6a1fbb7c2b1cce2f96134723216b3961198e4f0788f85a7"
+      "sha256": "fdb7bed3ef46d46cad2f0d467d77a5a3e25a2acbc723f783cf5aae9de793053c"
     },
     {
       "pdf": "seminars/topology/HambletPoset.pdf",
@@ -2938,17 +2727,8 @@
     },
     {
       "pdf": "undergraduate/docs/Grader_App_2023.pdf",
-      "status": "reflowed tagged document",
-      "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/undergraduate/docs/Grader_App_2023.html"
-      ],
-      "source_sha256": "acacd4f1922004e2083bb0c06934a8d0e3f47c275440285b0bea2f5046a82e37",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
-      "original_sha256": "130b89336fd4ae4d87c26ad107325c4ba2df9287cfab84f880b873b872a72d3d",
-      "sha256": "9dcfc3e49a8f5901068b8b8437001f6afb832355dc2ea9cffbcc47f6250c66ca"
+      "status": "retained fillable form",
+      "sha256": "130b89336fd4ae4d87c26ad107325c4ba2df9287cfab84f880b873b872a72d3d"
     },
     {
       "pdf": "undergraduate/docs/MathMajorCourseGuide_Fall25_version.pdf",
@@ -2959,10 +2739,10 @@
       "source_urls": [
         "/undergraduate/docs/MathMajorCourseGuide_Fall25_version.html"
       ],
-      "source_sha256": "36be0b1f74a60ce1c10c6736a38bd9b0e9bfbd3492c0f340fa5c71da47a1b3d3",
+      "source_sha256": "e54276fbf1b8e5ad50326246f229f39bd84669ab30d02feedb2fed1a336e6b68",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "832aabed034bf9f2cd9ea638dc3c51e3f6bd155dd969baa130267dde24864cc1",
-      "sha256": "4051525485227eefb9a8b09a72a56567d144b44f7de12009b5afbebc9074973c"
+      "sha256": "a4f6c471c13a55d743a8b3d94f91db7e840cb5cf58a2fa44ec3bb1e77f7c0e28"
     },
     {
       "pdf": "undergraduate/docs/Participation in Final Exercises by BA.pdf",
@@ -2987,10 +2767,10 @@
       "source_urls": [
         "/undergraduate/docs/Reasons one did not get into PBK.html"
       ],
-      "source_sha256": "116ed2d4928a4b6e1f9187461225e2026ba7543a8e04c5c7f034d48d2b7ee803",
+      "source_sha256": "e71296fa99b1373b4e107c2c364f86eed9bddd83fefa708146e98654efcb2e8b",
       "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
       "original_sha256": "464b47a1d22f90abb74549e5f07852deb598f3990c331e6f1ea09a6f44359a25",
-      "sha256": "68f4c3ac1882cc68290d19ecaa5e0322e6f056d247bbe567fbe93f967b604219"
+      "sha256": "1941ca40bc980a530dc33734f195f5aec29dafdaa2d4d3c26897665f932232c8"
     },
     {
       "pdf": "undergraduate/docs/Repeating a course.pdf",
@@ -3036,17 +2816,8 @@
     },
     {
       "pdf": "undergraduate/docs/exception(fillable)_1.pdf",
-      "status": "reflowed tagged document",
-      "pdfua1": true,
-      "formulas": 0,
-      "figures": 0,
-      "source_urls": [
-        "/undergraduate/docs/exception(fillable)_1.html"
-      ],
-      "source_sha256": "95f619c69bab4ede946e628e0234775b2d705713a520686f57ed013ba5deaff3",
-      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
-      "original_sha256": "2f6cbfbd4da6d5e68c575a3ed9b3852dd79169f5c5dd9b52e3d9c5e284a50b42",
-      "sha256": "09adbe687ddb7cfbbf66fa89a245ff10b2e5a490579eefef1ae5b579473a4107"
+      "status": "retained fillable form",
+      "sha256": "2f6cbfbd4da6d5e68c575a3ed9b3852dd79169f5c5dd9b52e3d9c5e284a50b42"
     },
     {
       "pdf": "undergraduate/docs/precalculus.pdf",

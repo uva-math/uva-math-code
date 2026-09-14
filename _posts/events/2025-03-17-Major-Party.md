@@ -6,6 +6,7 @@ comments: false
 categories: news events swiper-news
 published: true
 image: __SITE_URL__/img/news_events/MathMajorDeclaration_2025.png
+image-alt: "Math Major Declaration Party flyer: Friday, March 21, Kerchof 314, 2-4pm, with food and UVA math stickers"
 good-md: true
 ---
 

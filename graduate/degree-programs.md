@@ -1,5 +1,5 @@
 ---
-title: Degree Programs &amp; Requirements
+title: "Degree Programs & Requirements"
 layout: g_page
 g_policy: true
 permalink: /graduate/requirements/
@@ -31,7 +31,7 @@ Courses and research amounting to 72 credit hours. Courses must include satisfac
 
 {% include grad_general_exams.md %}
 
-<b>Examples of past general exams can be found [Past graduate general exams]({{site.url}}/graduate/generals/)</b>.
+<b>[Examples of past general exams]({{site.url}}/graduate/generals/)</b>.
 
 ### Second-Year Proficiency Examination
 

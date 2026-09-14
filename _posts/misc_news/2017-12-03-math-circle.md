@@ -10,6 +10,6 @@ image-alt: Math Circle 2017
 image-wide: true
 ---
 
-The **UVa Math Circle** is a new outreach program for elementary and middle school students. Organized by <a href="{{site.url}}/people/vk6e/">Slava Krushkal</a>, Professor in the Department of Mathematics, the Fall 2017 program ran weekly from August through December on UVa grounds. There were 15 students nominated by seven Charlottesville area schools, who explored topics in geometry, logic, combinatorics and algebra. See the Fall 2017 poster [Fall 2017 Math Circle poster (PDF)](http://people.virginia.edu/~vk6e/MathCirclePoster.pdf).
+The **UVa Math Circle** is a new outreach program for elementary and middle school students. Organized by <a href="{{site.url}}/people/vk6e/">Slava Krushkal</a>, Professor in the Department of Mathematics, the Fall 2017 program ran weekly from August through December on UVa grounds. There were 15 students nominated by seven Charlottesville area schools, who explored topics in geometry, logic, combinatorics and algebra. See the [Fall 2017 Math Circle poster (PDF)](http://people.virginia.edu/~vk6e/MathCirclePoster.pdf).
 
 The program will continue (possibly covering different age groups) in Fall 2018.

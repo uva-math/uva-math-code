@@ -18,9 +18,11 @@ nav_parent: IMS
 
 <h2 class="mt-3 mb-4"> Benedict H. Gross (Harvard)</h2>
 
-- Lecture 1: The rank of elliptic curves
-- Lecture 2: The arithmetic of hyperelliptic curves
-- Lecture 3: Heegner points on modular curves
+- Lecture 1: The rank of elliptic curves. Monday, March 27, 5-6pm, Physics 203
+- Lecture 2: The arithmetic of hyperelliptic curves. Tuesday, March 28, 5-6pm, Monroe 124
+- Lecture 3: Heegner points on modular curves. Wednesday, March 29, 5-6pm, Physics 203
+
+Organizers: Andrew Obus, Andrei Rapinchuk and Lloyd West
 
 <!--more-->
 

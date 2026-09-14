@@ -20,7 +20,11 @@ nav_parent: IMS
 
 ## Algebra, Geometry and Analysis over Finite Fields
 
-<br>
+- Lecture 1: Monday, February 29, 5-6pm, Clark 108
+- Lecture 2: Tuesday, March 1, 5-6pm, Clark 108
+- Lecture 3: Wednesday, March 2, 3:30-4:30pm, Physics 203
+
+Organizers: Andrei Rapinchuk and Craig Huneke
 
 <!--more-->
 

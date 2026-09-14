@@ -18,4 +18,4 @@ hide-this-item: true
 
 Everyone is invited to attend.
 
-Full defense poster: [HTML](/img/news_events/MattGagne_DefensePoster.html) | [PDF](/img/news_events/MattGagne_DefensePoster.pdf).
+[Matt Gagne defense poster (HTML)](/img/news_events/MattGagne_DefensePoster.html) | [Matt Gagne defense poster (PDF)](/img/news_events/MattGagne_DefensePoster.pdf)

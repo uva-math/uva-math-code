@@ -15,6 +15,8 @@ parser.add_argument('--report', required=True)
 parser.add_argument('--write', action='store_true')
 parser.add_argument('--reviewed-exporter-sha256', action='append', default=[],
     help='Also accept a specifically reviewed earlier exporter version for unchanged sources')
+parser.add_argument('--baseline', action='append', default=[],
+    help='Earlier installation report; a source matching the sha256 it records is also unchanged')
 args = parser.parse_args()
 root = Path(__file__).resolve().parents[2]
 candidates = Path(args.candidates).resolve()
@@ -23,6 +25,10 @@ jobs = {item['pdf']: item for item in json.loads(Path(args.jobs).read_text())}
 exporter = Path(__file__).with_name('export_pdf.cjs')
 exporter_hash = hashlib.sha256(exporter.read_bytes() + exporter.with_name('tag_pdf.py').read_bytes()).hexdigest()
 reviewed_exporters = {exporter_hash, *args.reviewed_exporter_sha256}
+installed = {}
+for baseline in args.baseline:
+    for record in json.loads(Path(baseline).read_text())['records']:
+        installed.setdefault(record['pdf'], set()).add(record['sha256'])
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
 def validated(report):
@@ -35,7 +41,11 @@ for item in manifest['documents']:
     if relative.is_absolute() or '..' in relative.parts:
         raise ValueError(f'Invalid manifest path: {relative}')
     source = root / relative
-    if sha(source) != item['original_sha256']:
+    # schedule_build.py owns the schedule PDFs, which change on every data refresh.
+    if item.get('print_layout') == 'schedule':
+        records.append(dict(pdf=str(relative), status='schedule build output', sha256=sha(source)))
+        continue
+    if sha(source) not in {item['original_sha256'], *installed.get(relative.as_posix(), ())}:
         raise ValueError(f'Source changed since inventory: {relative}')
     if item.get('retain_original'):
         records.append(dict(pdf=str(relative), status='retained historical archive', sha256=sha(source)))
@@ -69,7 +79,7 @@ if args.write:
     for candidate, source in replacements:
         shutil.copyfile(candidate, source)
 report = dict(installed=args.write, documents=len(records), replaced=len(replacements),
-    retained=len(records)-len(replacements), records=records)
+    retained=sum(record['status'] == 'retained historical archive' for record in records), records=records)
 Path(args.report).parent.mkdir(parents=True, exist_ok=True)
 Path(args.report).write_text(json.dumps(report, indent=2) + '\n')
 print(json.dumps({key: value for key, value in report.items() if key != 'records'}))

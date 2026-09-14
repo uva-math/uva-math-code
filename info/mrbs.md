@@ -31,7 +31,7 @@ nav_weight: 30
 
 <h2>Reservation assistance</h2>
 
-<p>If you need assistance checking room availability or making a reservation, the Department Office in Kerchof Hall 216 can help.</p>
+<p>If you need assistance checking room availability or making a reservation, the Department Office (Kerchof Hall 216, <a href="tel:+1-434-924-4919">434-924-4919</a>, <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a>) can help.</p>
 
 <h2>Contact</h2>
 
