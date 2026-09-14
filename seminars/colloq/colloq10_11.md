@@ -14,6 +14,7 @@ nav_parent: Seminars
 <h2 class="mb-3 mt-3">Spring 2011</h2>
 
 
+<div class="table-responsive" role="region" tabindex="0" aria-label="Table 1">
 <table border="no" width="97%" cellpadding="3">
     <thead>
         <tr>
@@ -121,6 +122,7 @@ nav_parent: Seminars
 </tr>
 </tbody>
 </table>
+</div>
 
 <center>
 <h2 class="mb-3 mt-3">
@@ -129,6 +131,7 @@ Fall 2010
 
 </center>
 
+<div class="table-responsive" role="region" tabindex="0" aria-label="Table 2">
 <table border="no" WIDTH="97%" CELLPADDING="3">
 <thead>
     <tr>
@@ -263,6 +266,7 @@ Thanksgiving
 </tr>
 </tbody>
 </TABLE>
+</div>
 
 <hr />
 <h2 class="mb-3">Archives</h2>

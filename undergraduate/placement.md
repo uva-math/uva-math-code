@@ -131,6 +131,7 @@ Information on this page will help you understand the best pace to start out of 
 	UVA gives credit for AP, IB and other standard college placement exams.  It is the student’s responsibility to have scores sent directly to the Admissions Office prior to enrolling. <br/> <br/> 
 	A score of 5, 6, or 7 on the IB HL Analysis and Approaches (AA) exam yields credit for MATH 1310 and 2000T.  We do not award credit for the IB Applications and Interpretation (AI) exam.  AP specific policies are in the table below.  See <a href="https://college.as.virginia.edu/test-credit">College test credit policies</a>.
 	<br/><br/>
+<div class="table-responsive" role="region" tabindex="0" aria-label="Students with prior calculus and AP examinations">
 <table border="1" cellpadding="5" cellspacing="0" class="mb-3">
 <caption>Students with prior calculus and AP examinations</caption>
 <tr>
@@ -194,5 +195,6 @@ Information on this page will help you understand the best pace to start out of 
 </td>
 </tr>
 </table>
+</div>
 <br/>
 </details>

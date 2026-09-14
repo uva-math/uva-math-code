@@ -1,1 +1,1 @@
-{% include calendar_events.html mode="awm" google_cal_id=include.google_cal_id current=include.current max_sem=include.max_sem max_from_cal=include.max_from_cal days_back=include.days_back show_from=include.show_from show_to=include.show_to %}
+{% include calendar_events.html mode="awm" noun=include.noun google_cal_id=include.google_cal_id current=include.current max_sem=include.max_sem max_from_cal=include.max_from_cal days_back=include.days_back show_from=include.show_from show_to=include.show_to %}

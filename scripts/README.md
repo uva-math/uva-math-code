@@ -153,6 +153,7 @@ built site locally, and run:
 ```bash
 npm run accessibility:browser -- --site _site --url http://127.0.0.1:4173 --report /tmp/browser-accessibility.json
 node scripts/test_dynamic_accessibility.cjs
+node scripts/test_table_accessibility.cjs _site http://127.0.0.1:4173
 ```
 
 Build with a local `url` override matching the preview server so assets and links
@@ -161,6 +162,12 @@ and `--paths /tmp/pages.json` (a JSON list of paths relative to the build direct
 It checks rendered axe rules, page overflow, and JavaScript errors. The dynamic
 checks exercise keyboard controls, carousel state, search feedback, and calendar
 success/error cases with deterministic fixtures.
+
+The table check visits every built page containing a table at 320, 400 and 1280px.
+It checks for words split across lines, page overflow, named keyboard-accessible
+scroll containers, and arrow-key scrolling on the schedule and a legacy archive.
+Wrap wide tables in a labeled `.table-responsive` region with `tabindex="0"` so
+columns can scroll without compressing words or widening the whole page.
 
 These are limited automated checks. Neither they nor the conversion scripts
 establish WCAG conformance or legal compliance. They cannot verify the accuracy

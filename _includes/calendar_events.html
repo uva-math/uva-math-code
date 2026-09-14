@@ -1,4 +1,12 @@
-<div class="seminar-calendar" data-mode="{{ include.mode }}"
+{%- if include.mode == 'visitors' -%}
+  {%- assign calendar_noun = 'visit' -%}
+{%- elsif include.mode == 'awm' -%}
+  {%- assign calendar_noun = 'activity' -%}
+{%- else -%}
+  {%- assign calendar_noun = 'talk' -%}
+{%- endif -%}
+{%- assign calendar_noun = include.noun | default: calendar_noun -%}
+<div class="seminar-calendar" data-mode="{{ include.mode }}" data-noun="{{ calendar_noun | escape }}"
      data-open-details="{{ include.open_details | default: false }}"
      data-heading-level="{% if include.heading_level %}{{ include.heading_level }}{% elsif page.sem_archive or include.mode == 'awm' %}2{% else %}3{% endif %}"
      data-current="{{ include.current }}" data-max-events="{{ include.max_sem | default: 50 }}"
@@ -24,6 +32,6 @@
     {% endif %}
     ]
   </script>
-  <noscript><p>JavaScript is needed to load the live schedule. Contact the seminar organizers for talk details, or <a href="https://calendar.google.com/calendar/u/0/r">open Google Calendar</a>.</p></noscript>
+  <noscript><p>JavaScript is needed to load the live schedule. Contact the organizers for {{ calendar_noun | escape }} details, or <a href="https://calendar.google.com/calendar/u/0/r">open Google Calendar</a>.</p></noscript>
 </div>
 <script defer src="{{ site.url }}/assets/js/seminar-calendar.js"></script>

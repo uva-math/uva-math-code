@@ -64,10 +64,23 @@
     return element;
   }
 
-  function renderEvent(event, calendar, headingLevel, mode) {
+  function calendarWording(container) {
+    const mode = container.dataset.mode;
+    const noun = container.dataset.noun || (mode === 'visitors' ? 'visit' : mode === 'awm' ? 'activity' : 'talk');
+    const capitalized = noun.charAt(0).toUpperCase() + noun.slice(1);
+    return {
+      noun,
+      plural: noun === 'activity' ? 'activities' : noun + 's',
+      title: noun === 'talk' ? 'Seminar talk' : capitalized,
+      details: noun === 'talk' ? 'Talk abstract and details' : capitalized + ' details',
+      calendar: noun === 'talk' ? 'Seminar calendar' : capitalized + ' calendar'
+    };
+  }
+
+  function renderEvent(event, calendar, headingLevel, wording) {
     const article = document.createElement('article');
     article.className = 'seminar-event';
-    const title = event.summary || 'Seminar talk';
+    const title = event.summary || wording.title;
     const heading = document.createElement(headingLevel === '2' ? 'h2' : 'h3');
     const href = event.htmlLink && safeURL(event.htmlLink);
     if (href) {
@@ -107,7 +120,7 @@
     if (event.location) appendText(article, 'p', 'Location: ' + event.location);
     if (event.description) {
       const details = document.createElement('details');
-      const label = mode === 'visitors' ? 'Visit details' : mode === 'awm' ? 'Activity details' : 'Talk abstract and details';
+      const label = wording.details;
       const summary = appendText(details, 'summary', label);
       summary.setAttribute('aria-label', label + ': ' + title);
       const body = document.createElement('div');
@@ -120,6 +133,7 @@
   }
 
   async function loadCalendar(container) {
+    const wording = calendarWording(container);
     const status = container.querySelector('.seminar-status');
     const eventsElement = container.querySelector('.seminar-events');
     const calendars = JSON.parse(container.querySelector('.seminar-calendar-data').textContent);
@@ -151,21 +165,20 @@
     events.sort((a, b) => new Date(a.event.start.dateTime || a.event.start.date) - new Date(b.event.start.dateTime || b.event.start.date));
     if (!current && container.dataset.mode === 'awm') events.reverse();
     const displayed = events.slice(0, maxEvents);
-    displayed.forEach(item => eventsElement.appendChild(renderEvent(item.event, item.calendar, container.dataset.headingLevel, container.dataset.mode)));
+    displayed.forEach(item => eventsElement.appendChild(renderEvent(item.event, item.calendar, container.dataset.headingLevel, wording)));
     if (container.dataset.openDetails === 'true') {
       eventsElement.querySelectorAll('details').forEach(details => { details.open = true; });
     }
     renderMath(eventsElement);
     const failed = responses.filter(result => result.status === 'rejected').length;
-    const noun = container.dataset.mode === 'visitors' ? 'visit' : container.dataset.mode === 'awm' ? 'activity' : 'talk';
-    const plural = noun === 'activity' ? 'activities' : noun + 's';
+    const { noun, plural } = wording;
     status.textContent = displayed.length ? displayed.length + ' ' + (displayed.length === 1 ? noun : plural) + ' listed.' : (failed ? 'The live schedule could not be loaded.' : 'No ' + plural + ' are scheduled in this period.');
     if (failed) {
       status.textContent += displayed.length ? ' Some calendars could not be loaded.' : '';
-      const fallback = appendText(container, 'p', 'For the full schedule, use the seminar links below or contact the organizers. ');
+      const fallback = appendText(container, 'p', 'For the full schedule, use the calendar links below or contact the organizers. ');
       calendars.forEach((calendar, index) => {
         if (index) fallback.appendChild(document.createTextNode(' · '));
-        const link = appendText(fallback, 'a', calendar.name || 'Seminar calendar');
+        const link = appendText(fallback, 'a', calendar.name || wording.calendar);
         link.href = 'https://calendar.google.com/calendar/embed?mode=AGENDA&ctz=America%2FNew_York&src=' + encodeURIComponent(calendar.id);
       });
     }
@@ -174,7 +187,7 @@
   function initialize() {
     document.querySelectorAll('.seminar-calendar').forEach(container => {
       loadCalendar(container).catch(() => {
-        container.querySelector('.seminar-status').textContent = 'The schedule could not be loaded. Please contact the seminar organizers for talk details.';
+        container.querySelector('.seminar-status').textContent = 'The schedule could not be loaded. Please contact the organizers for ' + calendarWording(container).noun + ' details.';
       });
     });
   }

@@ -8,11 +8,13 @@ const axePath = require.resolve('axe-core/axe.min.js');
 (async () => {
   const browser = await chromium.launch({headless:true});
   const context = await browser.newContext({viewport:{width:1280,height:900}});
-  await context.route('**/calendar/v3/calendars/**', route => route.fulfill({json:{items:[{
+  let calendarItems = [{
     id:'test-talk', summary:'Juraj Foldes — stochastic extinction', start:{dateTime:'2026-09-15T11:00:00-04:00'},
     htmlLink:'https://calendar.google.com/calendar/event?eid=test', location:'Kerchof 111',
     description:'<p>We study $X_t \\to \\infty$ and \\(x^2\\).</p><p>Details <a href="javascript:window.badCalendar=1">unsafe link</a>.</p><script>window.badCalendar=1</script>'
-  }]}}));
+  }];
+  let calendarStatus = 200;
+  await context.route('**/calendar/v3/calendars/**', route => route.fulfill({status:calendarStatus,json:{items:calendarItems}}));
   const page = await context.newPage();
   const errors = [];
   page.on('pageerror', e => errors.push(e.message));
@@ -129,10 +131,48 @@ const axePath = require.resolve('axe-core/axe.min.js');
   assert(!(await page.evaluate(()=>window.badCalendar)),'Calendar description executed code');
   assert((await page.locator('.seminar-event time').first().textContent()).includes('11:00'));
   assert.equal(await page.locator('.seminar-event a[target="_blank"]').count(),0);
-  await context.route('**/calendar/v3/calendars/**', route => route.fulfill({status:503,json:{error:'Unavailable'}}));
-  await page.reload({waitUntil:'domcontentloaded'});
-  await page.waitForFunction(() => document.querySelector('.seminar-status')?.textContent.includes('could not be loaded'));
-  assert((await page.locator('.seminar-status').textContent()).includes('could not be loaded'));
+  const untitledEvent = {...calendarItems[0], summary:''};
+  const calendarCases = [
+    {path:'/drp/calendar/',noun:'event',plural:'events',title:'Event',details:'Event details',calendar:'Event calendar'},
+    {path:'/ams_chapter/',noun:'event',plural:'events',title:'Event',details:'Event details',calendar:'Event calendar'},
+    {path:'/seminars/colloq/',noun:'talk',plural:'talks',title:'Seminar talk',details:'Talk abstract and details',calendar:'Seminar calendar'},
+    {path:'/deptvisitors/',noun:'visit',plural:'visits',title:'Visit',details:'Visit details',calendar:'Visit calendar'},
+    {path:'/awm/calendar/',noun:'activity',plural:'activities',title:'Activity',details:'Activity details',calendar:'Activity calendar'}
+  ];
+  const waitForCalendar = () => page.waitForFunction(() => {
+    const status = document.querySelector('.seminar-status');
+    return status && !/loading/i.test(status.textContent);
+  });
+  for(const fixture of calendarCases){
+    calendarItems = [untitledEvent];
+    calendarStatus = 200;
+    await page.goto(base+fixture.path,{waitUntil:'load'});
+    await waitForCalendar();
+    assert.equal(await page.locator('.seminar-status').textContent(),'1 '+fixture.noun+' listed.',fixture.path);
+    assert.equal(await page.locator('.seminar-event h2,.seminar-event h3').textContent(),fixture.title,fixture.path);
+    assert.equal(await page.locator('.seminar-event summary').textContent(),fixture.details,fixture.path);
+    assert.equal(await page.locator('.seminar-event summary').getAttribute('aria-label'),fixture.details+': '+fixture.title,fixture.path);
+    assert((await page.locator('.seminar-calendar noscript').textContent()).includes('for '+fixture.noun+' details'),fixture.path);
+    calendarItems = [untitledEvent,{...untitledEvent,id:'second-event'}];
+    await page.reload({waitUntil:'load'});
+    await waitForCalendar();
+    assert.equal(await page.locator('.seminar-status').textContent(),'2 '+fixture.plural+' listed.',fixture.path);
+    calendarItems = [];
+    await page.reload({waitUntil:'load'});
+    await waitForCalendar();
+    assert.equal(await page.locator('.seminar-status').textContent(),'No '+fixture.plural+' are scheduled in this period.',fixture.path);
+    calendarStatus = 503;
+    await page.reload({waitUntil:'load'});
+    await waitForCalendar();
+    assert((await page.locator('.seminar-status').textContent()).includes('could not be loaded'),fixture.path);
+    assert.equal(await page.locator('.seminar-calendar > p a').textContent(),fixture.calendar,fixture.path);
+    calendarStatus = 200;
+    calendarItems = [{...untitledEvent,start:{dateTime:'invalid-date'}}];
+    await page.reload({waitUntil:'load'});
+    await waitForCalendar();
+    assert.equal(await page.locator('.seminar-status').textContent(),
+      'The schedule could not be loaded. Please contact the organizers for '+fixture.noun+' details.',fixture.path);
+  }
   const reduced=await context.newPage();
   await reduced.emulateMedia({reducedMotion:'reduce'});
   await reduced.goto(base+'/',{waitUntil:'load'});

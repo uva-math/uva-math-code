@@ -1666,6 +1666,25 @@ main, footer {
   overflow-wrap: anywhere;
 }
 
+/* Keep words intact in tables; wide columns scroll inside their own container. */
+@media screen {
+  main .table-responsive {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  main .table-responsive :is(th, td) {
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+}
+
+@media print {
+  main .table-responsive {
+    overflow: visible;
+  }
+}
+
 main img, main video, main iframe {
   max-width: 100%;
 }
