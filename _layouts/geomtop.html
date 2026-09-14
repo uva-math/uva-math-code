@@ -13,7 +13,7 @@
 
 {% include navbar.html %}
 
-<main id="main-content">
+<main id="main-content" tabindex="-1">
 <div class="container">
   <div class="container">
 
@@ -21,21 +21,23 @@
     <div class="row row-offcanvas row-offcanvas-right">
       <div class="col-md-8">
 
-        {{ content | markdownify }}
+        {% assign rendered_content = content | markdownify %}
+        {% unless rendered_content contains '<h1' %}<h1>{{ page.title | escape }}</h1>{% endunless %}
+        {{ rendered_content }}
 
       </div>
       <div class="col-md-4">
         <hr class="hidden-md-up">
-        <h3 class="mb-3 sidebar-offcanvas">Geometry, Topology</h3>
+        <h2 class="h3 mb-3 sidebar-offcanvas">Geometry, Topology</h2>
 
-        <div class="list-group h5">
-            {% assign sorted_pages = site.pages | sort: "nav_weight" %}
+        <nav aria-label="Geometry and topology"><div class="list-group h5">
+            {% assign sorted_pages = site.pages | where: "geomtop_page", true | sort: "nav_weight" %}
             {% for pg in sorted_pages %}
             {% if pg.geomtop_page == true %}
-                <a class="list-group-item list-group-item-action {% if page.permalink ==  pg.permalink %}active{% endif %} {%if page.geomtop_act_page != true and page.geomtop_act_main_page != true and pg.geomtop_act_page == true %}hidden-md-up hidden-md-down{% endif %}" href="{{pg.url}}">{%if pg.geomtop_act_page == true%}&nbsp;&nbsp;&nbsp;&nbsp;{%endif%}{{pg.title}}</a>
+                <a class="list-group-item list-group-item-action {% if page.permalink ==  pg.permalink %}active{% endif %} {%if page.geomtop_act_page != true and page.geomtop_act_main_page != true and pg.geomtop_act_page == true %}hidden-md-up hidden-md-down{% endif %}" href="{{pg.url}}" {% if page.url == pg.url %}aria-current="page"{% endif %}>{%if pg.geomtop_act_page == true%}&nbsp;&nbsp;&nbsp;&nbsp;{%endif%}{{pg.title}}</a>
             {% endif %}
             {% endfor %}
-        </div>
+        </div></nav>
           
       </div>
     </div>

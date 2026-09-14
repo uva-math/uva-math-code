@@ -16,9 +16,9 @@ more-text: Abstracts of talks
 nav_parent: IMS
 ---
 
-<h5 class="mt-3 mb-4"><a href="https://www.math.cmu.edu/math/faculty/fonsecairene">Irene Fonseca</a> (Carnegie Mellon University)</h5>
+<h2 class="mt-3 mb-4"><a href="https://www.math.cmu.edu/math/faculty/fonsecairene">Irene Fonseca</a> (Carnegie Mellon University)</h2>
 
-### Variational Methods for Materials and Imaging Sciences
+## Variational Methods for Materials and Imaging Sciences
 
 **Abstract:** Recently developed methods and a deep articulation of ideas from the Calculus of Variations, Geometric
 Measure Theory, and nonlinear Partial Differential Equations (PDEs), have been instrumental
@@ -30,7 +30,7 @@ This leads to the two talks of this series: **Variational Problems in Materials 
 
 ---
 
-### Variational Problems in Materials Science
+## Variational Problems in Materials Science
 
 *Lecture 1: Thursday, March 15, 2018 5-6pm, Clark 108*
 
@@ -42,7 +42,7 @@ In this talk we will use methods from the calculus of variations and partial dif
 
 ---
 
-### Variational Problems in Imaging Science
+## Variational Problems in Imaging Science
 
 *Lecture 2: Friday, March 16, 2018 4-5pm, Clark 108*
 
@@ -50,3 +50,6 @@ In this talk we will use methods from the calculus of variations and partial dif
 
 
 
+
+
+<p><a href="/img/IMS/Fonseca_poster_1.html">Event poster text (HTML)</a>.</p>

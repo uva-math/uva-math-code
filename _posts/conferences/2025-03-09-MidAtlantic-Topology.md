@@ -13,11 +13,11 @@ image-alt: "Mid-Atlantic Topology Conference 2025"
 
 The Mid-Atlantic Topology Conference 2025 (MATC-25) will be held at the University of Virginia from March 22-23, 2025, celebrating {% include person_info_just_name.html UVA_id="njk4x" %}'s 70th birthday!
 
-[Conference Website](https://sites.google.com/view/matc-25){:target="_blank"}
+[Mid-Atlantic Topology Conference website](https://sites.google.com/view/matc-25)
 
 <!--more-->
 
-##### Plenary Speakers
+## Plenary Speakers
 
 - Greg Arone (Stockholm University)
 - William Balderrama (University of Bonn)
@@ -27,12 +27,12 @@ The Mid-Atlantic Topology Conference 2025 (MATC-25) will be held at the Universi
 - Jeremy Hahn (Massachusetts Institute of Technology)
 - Inna Zakharevich (Cornell University)
 
-##### Young Faculty Speakers
+## Young Faculty Speakers
 
 - Yang Hu (New Mexico State University)
 - Sarah Petersen (University of Colorado)
 
-##### Organizers
+## Organizers
 
 - William Balderrama (eqr8nm@virginia.edu)
 - Prasit Bhattacharya (prasit@nmsu.edu)

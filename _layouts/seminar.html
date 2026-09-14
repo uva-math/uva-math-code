@@ -46,8 +46,8 @@
       {%endif%}
 
       {% if page.events == true %}
-        <h3>{{ site.new_seminars_label }}</h3>
-        <div style="font-size:15px; margin: 0.5cm 0cm 0cm 0cm;" class="container">
+        <h2>{{ site.new_seminars_label }}</h2>
+        <div class="container mt-3">
           {% include cal_main.js current="true" max_sem=12 max_from_cal=7 %}
         </div>
       {% endif %}

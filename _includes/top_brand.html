@@ -1,44 +1,15 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="University brand and search">
-     <!-- <button class="navbar-toggler navbar-toggler-right" style="padding:8px" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-     </button> -->
-     <div class="container">
-     <div class="navbar-brand" style="padding-top: 0 ;padding-bottom: 0;">
-       <a href="{{site.url}}" class="dept-logo-large me-1 d-none d-lg-inline" style="vertical-align: middle;">Mathematics</a>
-       <a href="{{site.url}}" class="dept-logo-large d-none d-md-inline d-lg-none" style="vertical-align: middle;">Math</a>
-       <a href="{{site.url}}" class="dept-logo-large d-md-none" style="vertical-align: -6%; font-size:28px">Math</a>
-      <a href="https://www.virginia.edu" class="d-none d-md-inline" style="vertical-align: baseline;">
-        <img src="{{site.url}}/img/brand/uva-horiz.png" style="margin-top:20px; margin-bottom:23px;width:324px" alt="UVA Logo"></a>
-      <a href="https://www.virginia.edu" class="d-md-none"  style="vertical-align: baseline;">
-        <img src="{{site.url}}/img/brand/uva-horiz.png" style="margin-top:12px; margin-bottom:15px;width:200px" alt="UVA Logo"></a>
-      
-      <a href="https://www.virginia.edu/search/site/" class="d-none d-sm-inline d-md-none navbar-toggler-right">
-        <img src="{{site.url}}/img/brand/search.png" style="width:20px;margin: 14px 0px 12px 0px" alt="Search">
-      </a>
-
-     </div>
-     <div class="collapse navbar-collapse" id="navbarCollapse">
-       <div class="navbar-nav me-auto">
-       </div>
-       
-       <form class="form-inline mt-2 mt-md-0 d-none d-md-block d-flex align-items-center" id="search_form" name="q" role="search" aria-label="Site search">
-         <div class="input-group">
-           <input class="form-control" type="text" id="q" placeholder="UVA Search" aria-label="Search the UVA website">
-           <button class="btn bg-inverse" style="border:none;" type="submit" value="">
-             <img src="{{site.url}}/img/brand/search.png" style="width:24px" alt="UVA Search" title="UVA Search">
-           </button>
-         </div>
-       </form>
-     </div>
-     </div>
-   </nav>
-
-<!-- simple search script calling the UVA search -->
-   <script>
-     document.getElementById("search_form").onsubmit = searchFunction;
-     function searchFunction() {
-        var link_s = document.getElementById('q').value;
-        window.open("https://www.virginia.edu/search/site/" + link_s);
-        return false;
-     }
-   </script>
+<header class="site-brand bg-dark">
+  <div class="container site-brand-inner">
+    <a href="{{ site.url }}/" class="dept-logo-large">Mathematics</a>
+    <a href="https://www.virginia.edu/" class="university-brand">
+      <img src="{{ site.url }}/img/brand/uva-horiz.png" width="324" height="35" alt="University of Virginia">
+    </a>
+    <form class="site-search" action="{{ site.url }}/search/" method="get" role="search" aria-label="Mathematics website">
+      <label for="site-search-query">Search UVA Mathematics</label>
+      <div class="input-group">
+        <input class="form-control" type="search" id="site-search-query" name="q" required>
+        <button class="btn btn-secondary" type="submit">Search</button>
+      </div>
+    </form>
+  </div>
+</header>

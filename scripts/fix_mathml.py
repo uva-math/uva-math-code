@@ -1,15 +1,16 @@
 #!/usr/bin/env python3
 """
-Fix MathML HTML to remove Unicode characters and improve accessibility.
-- Replace Unicode math characters with MathML entity references
-- Fix heading hierarchy
-- Add/improve ARIA attributes
+Post-process standalone exam HTML while preserving native MathML.
+- Preserve mathematical Unicode and structured math semantics
+- Remove legacy raw-TeX labels that override MathML
+- Apply the legacy exam heading, navigation, and landmark helpers
 """
 
 import re
 import sys
+from html import unescape
 
-# Unicode to MathML entity mapping
+# Legacy serialization helper; Unicode is valid MathML and needs no replacement.
 UNICODE_TO_ENTITY = {
     '∞': '&infin;',
     '→': '&rarr;',
@@ -139,29 +140,38 @@ def fix_heading_hierarchy(html):
 
     return '\n'.join(result)
 
-def add_aria_to_math(html):
-    """Add aria-label to math elements based on LaTeX annotation."""
-    def add_aria(match):
-        math_element = match.group(0)
-        # Extract LaTeX from annotation
-        latex_match = re.search(r'<annotation encoding="application/x-tex">([^<]+)</annotation>', math_element)
-        if latex_match:
-            latex = latex_match.group(1)
-            # Add aria-label to math tag
-            math_element = math_element.replace(
-                '<math ',
-                f'<math role="math" aria-label="{latex}" '
-            )
-        return math_element
+def preserve_native_mathml(html):
+    """Remove labels copied from TeX; retain MathML and authored speech labels."""
+    def remove_tex_label(match):
+        attributes = match.group('attributes')
+        body = match.group('body')
+        annotation = re.search(
+            r"<annotation\b[^>]*\bencoding\s*=\s*['\"]application/x-tex['\"][^>]*>(.*?)</annotation\s*>",
+            body, re.DOTALL | re.IGNORECASE
+        )
+        if not annotation:
+            return match.group(0)
 
-    # Match math elements
-    html = re.sub(
-        r'<math[^>]*>.*?</math>',
-        add_aria,
-        html,
-        flags=re.DOTALL
+        def normalized(value):
+            return re.sub(r'\s+', ' ', unescape(value)).strip()
+
+        source = normalized(annotation.group(1))
+        if not source:
+            return match.group(0)
+
+        def keep_authored_label(label):
+            return '' if normalized(label.group('value')) == source else label.group(0)
+
+        attributes = re.sub(
+            r"\s+aria-label\s*=\s*(?P<quote>['\"])(?P<value>.*?)(?P=quote)",
+            keep_authored_label, attributes, flags=re.DOTALL | re.IGNORECASE
+        )
+        return '<math' + attributes + '>' + body + '</math>'
+
+    return re.sub(
+        r"<math\b(?P<attributes>(?:[^>\"']|\"[^\"]*\"|'[^']*')*)>(?P<body>.*?)</math\s*>",
+        remove_tex_label, html, flags=re.DOTALL | re.IGNORECASE
     )
-    return html
 
 def add_lang_attribute(html):
     """Add lang='en' attribute to <html> element."""
@@ -303,9 +313,8 @@ def main():
         html = f.read()
 
     # Apply fixes
-    html = replace_unicode_with_entities(html)
     html = fix_heading_hierarchy(html)
-    html = add_aria_to_math(html)
+    html = preserve_native_mathml(html)
     html = add_lang_attribute(html)
     html = improve_title(html)
     html = add_breadcrumb_navigation(html)

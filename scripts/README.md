@@ -4,25 +4,26 @@ This directory contains automated validation scripts for converting PDFs to acce
 
 ## Scripts Overview
 
-All scripts use **Python 3 standard library only** - no external dependencies required.
+The legacy Python conversion validators listed below use the Python standard library. Browser, PDF export, and schedule tools have separate dependencies documented in their own sections.
 
 ### Master Validation Script
 
-**`validate_conversion.py`** - Comprehensive validation suite that runs all checks
+**`validate_conversion.py`** - Runs the four legacy conversion checks listed below
 ```bash
 python3 scripts/validate_conversion.py path/to/file.html
 ```
 
-Outputs a complete report with overall PASS/FAIL verdict.
+Outputs a report with an overall PASS/FAIL result for the implemented checks. A passing result does not establish WCAG conformance; inspect the rendered document and compare it with the source PDF.
 
 ### Individual Validation Scripts
 
-**`verify_wcag.py`** - WCAG 2.1 Level AA compliance
-- Unicode violations (U+1D400-U+1D7FF mathematical alphanumeric symbols)
+**`verify_wcag.py`** - Limited HTML structure checks
 - H1 tag presence
 - `<main>` landmark element
-- MathML `role="math"` attributes
-- Breadcrumb navigation
+
+Mathematical Unicode is valid inside native MathML. An explicit `role="math"`
+and breadcrumb navigation are not universal accessibility requirements. The
+historical script name does not imply a WCAG certification.
 
 ```bash
 python3 scripts/verify_wcag.py path/to/file.html
@@ -48,12 +49,15 @@ python3 scripts/check_heading_hierarchy.py path/to/file.html
 python3 scripts/check_links_images.py path/to/file.html
 ```
 
-**`check_mathml.py`** - MathML accessibility
-- All `<math>` elements have `role="math"`
-- All `<math>` elements have `aria-label` with LaTeX
-- Proper `<semantics>` wrappers
-- LaTeX `<annotation>` elements
-- Statistics: inline vs block display mode
+**`check_mathml.py`** - MathML structure checks
+- Rejects `aria-label` values copied from the LaTeX annotation, which override native math semantics
+- Reports missing namespaces, `<semantics>` wrappers, and source annotations as warnings
+- Reports inline/block counts and optional ARIA attributes as statistics
+
+Native `<math>` has implicit math semantics. Preserve its structured content and
+mathematical Unicode; do not add a raw LaTeX label. A source `<annotation>` keeps
+TeX available without making it the accessible name. Verify mathematical meaning
+and assistive-technology output separately.
 
 ```bash
 python3 scripts/check_mathml.py path/to/file.html
@@ -61,21 +65,28 @@ python3 scripts/check_mathml.py path/to/file.html
 
 ### Processing Scripts
 
-**`fix_mathml.py`** - Post-processing for accessibility
-- Replace Unicode mathematical characters with HTML entities
-- Fix heading hierarchy
-- Add ARIA attributes to math elements
-- Add breadcrumb and back button navigation
-- Wrap content in `<main>` landmark
-- Extract title and set page title
+**`fix_mathml.py`** - Legacy standalone exam post-processing
+- Preserves native MathML and mathematical Unicode
+- Removes existing math labels copied from source TeX; retains authored speech labels
+- Applies its legacy heading, exam navigation, title, and `<main>` helpers
+
+Use this helper only on a fresh standalone exam conversion. Existing Jekyll
+`document_page` content already receives shared navigation and landmarks from its
+layout; do not apply the standalone wrapper helpers to it.
 
 ```bash
 python3 scripts/fix_mathml.py input.html output.html
 ```
 
-**`fix_unicode_violations.py`** - Batch fix Unicode violations
-- Converts Unicode mathematical characters to HTML entities
-- Designed for fixing multiple files
+Run the native-MathML regression fixtures with
+`python3 scripts/test_fix_mathml.py`. They cover Unicode preservation, removal of
+copied TeX labels, retained authored speech labels, and the command-line pipeline.
+
+**`fix_unicode_violations.py`** - Legacy entity serialization utility
+- Converts selected Unicode mathematical characters to HTML entities in batches
+- This is not an accessibility repair and is not needed for native MathML
+
+Do not use this utility as a conversion validation or compliance requirement.
 
 ```bash
 python3 scripts/fix_unicode_violations.py
@@ -88,10 +99,10 @@ python3 scripts/fix_unicode_violations.py
 1. **Upload PDF** to Mathpix API
 2. **Download** TeX format
 3. **Convert** with Pandoc: `pandoc input.tex -f latex -t html --mathml --standalone -o output.html`
-4. **Post-process**: `python3 scripts/fix_mathml.py output.html fixed.html`
-5. **Validate**: `python3 scripts/validate_conversion.py fixed.html`
-6. **Fix violations** if needed
-7. **Re-validate** until PASS
+4. **Prepare the page** with the shared `document_page` layout, or use `fix_mathml.py` for a fresh standalone exam as described above. Preserve native MathML; do not add raw-TeX ARIA labels.
+5. **Validate the rendered HTML**: `python3 scripts/validate_conversion.py path/to/rendered.html`
+6. **Fix reported issues** and rerun the affected checks.
+7. **Compare against the original PDF** for complete prose, formulas, figures, captions, and reading order; review image descriptions, keyboard access, both themes, reflow, and assistive-technology behavior. Automated PASS results cover only their implemented checks.
 
 ### Expected output (when all checks pass):
 
@@ -102,7 +113,7 @@ PDF TO HTML CONVERSION VALIDATION REPORT
 
 File: graduate/exams/analysis/2025Jan_complex.html
 
-1. WCAG 2.1 LEVEL AA COMPLIANCE
+1. AUTOMATED ACCESSIBILITY STRUCTURE CHECKS
    ✅ PASS
 
 2. HEADING HIERARCHY
@@ -116,40 +127,59 @@ File: graduate/exams/analysis/2025Jan_complex.html
 
    Statistics:
       Total math elements: 47
-      With role="math": 47
-      With aria-label: 47
+      With role="math": 0
+      With aria-label: 0
       Inline/Block: 32/15
 
 ================================================================================
 OVERALL VERDICT
 ================================================================================
-✅ PRODUCTION READY - All checks passed
-✅ WCAG 2.1 Level AA compliant
-✅ ADA Title II & III compliant
-✅ Lawsuit risk: MINIMAL
+All implemented conversion checks passed.
+These checks do not certify WCAG conformance or legal compliance.
+Review content, keyboard behavior, visual presentation, and assistive technology manually.
 ```
 
-## Legal Compliance
+## Accessibility regression checks
 
-These scripts ensure:
-- **WCAG 2.1 Level AA** compliance
-- **ADA Title II & III** compliance (public entities, places of public accommodation)
-- **Section 508** compliance (federal accessibility standards)
-- **Minimized lawsuit risk** from accessibility violations
+Run `bundle exec ruby scripts/audit_accessibility.rb _site /tmp/accessibility.json`
+after a full Jekyll build to check every rendered HTML page for document titles,
+language, main landmarks, skip links, heading structure, duplicate IDs, image
+alternatives, frame titles, form labels, unnamed controls, and new-window links.
+The JSON report lists paths, rendered line numbers, and individual findings.
+
+For a browser scan, run `npm ci`, then `npx playwright install chromium`, serve the
+built site locally, and run:
+
+```bash
+npm run accessibility:browser -- --site _site --url http://127.0.0.1:4173 --report /tmp/browser-accessibility.json
+node scripts/test_dynamic_accessibility.cjs
+```
+
+Build with a local `url` override matching the preview server so assets and links
+remain on the local site. The browser scanner supports `--width 320`, `--theme dark`,
+and `--paths /tmp/pages.json` (a JSON list of paths relative to the build directory).
+It checks rendered axe rules, page overflow, and JavaScript errors. The dynamic
+checks exercise keyboard controls, carousel state, search feedback, and calendar
+success/error cases with deterministic fixtures.
+
+These are limited automated checks. Neither they nor the conversion scripts
+establish WCAG conformance or legal compliance. They cannot verify the accuracy
+of image descriptions, complete mathematical content, keyboard task completion,
+screen-reader usability, or PDF tagging. Review those separately.
 
 ## Python Version
 
-All scripts require **Python 3.6+** (uses f-strings and type hints).
+The legacy Python conversion validators require **Python 3.6+**. Other tools have their own runtime requirements.
 
-## No External Dependencies
+## Legacy Validator Dependencies
 
-All scripts use only Python standard library:
+The legacy Python conversion validators use only the Python standard library:
 - `re` - Regular expressions
 - `os` - File system operations
 - `sys` - System-specific parameters
 - Built-in data structures (dict, list, set)
 
-No `pip install` required!
+No `pip install` is required for these legacy validators. See [accessibility/README.md](accessibility/README.md) for the PDF exporter dependencies.
 
 ## Virtual Environment (Optional)
 
@@ -167,7 +197,7 @@ source venv/bin/activate
 
 ## Exit Codes
 
-All scripts follow standard Unix exit codes:
+The conversion validators follow these exit codes:
 - **0** = All checks passed (success)
 - **1** = One or more checks failed (failure)
 
@@ -187,3 +217,18 @@ When adding new validation checks:
 - See `/.claude/commands/mathml-general-exam.md` for exam conversion workflow
 - See `/.claude/commands/mathml-any-pdf.md` for general PDF conversion workflow
 - See `/CLAUDE.md` for website content management guidelines
+
+## Public class schedule
+
+`schedule.tex` feeds both the reflowable `/schedule/` snapshot and the compact tagged
+landscape PDF. `python3 scripts/schedule/schedule_build.py` validates the room-free
+source, exports and validates the PDF, updates `schedule.html`, stages both current and
+term-specific PDF/TeX files, and refreshes the five page link blocks. Use `--site PATH`
+with a copied `schedule.tex` and `_config.yml` to test staging outside the repository.
+The HTML renderer retains all section rows, independent-study and exam notes, and the
+graduate weekly grid; it rejects unknown source markup instead of dropping text.
+
+The tagged exporter needs the pinned Node/Python tooling, Chromium, veraPDF, and
+Poppler described in [accessibility/README.md](accessibility/README.md). A direct
+LaTeX preview does not replace this validated publishing workflow. For enrollment
+refresh commands and the room safeguards, see the schedule section of `CLAUDE.md`.

@@ -4,9 +4,9 @@ layout: drp_page
 permalink: /drp/projects/
 ---
 
-<h2 class="mb-3">Projects</h2>
+<h1 class="mb-3">Projects</h1>
 
-### Spring 2026
+## Spring 2026
 
 + Introduction to Stochastic Calculus
    - Text: Duke Math 545 Lecture Notes (Introduction to Stochastic Calculus)
@@ -79,7 +79,7 @@ permalink: /drp/projects/
    - Mentee: Yona Sankar
    - Mentor: Mitansh Kagalwala
 
-### Fall 2025
+## Fall 2025
 
 + Introduction to Matrix Lie Groups
    - Text: Stillwell, Naive Lie Theory
@@ -121,7 +121,7 @@ permalink: /drp/projects/
    - Mentor: Felipe Flores
 
 
-### Spring 2025
+## Spring 2025
 
 This list will be updated as more projects are confirmed.
 
@@ -161,7 +161,7 @@ This list will be updated as more projects are confirmed.
    - Mentee: Nate Bryerton
    - Mentor: Mikhail Tikhonov
      
-### Fall 2024
+## Fall 2024
 
 + Introduction to Algebraic Topology
    - Text:  Hatcher, Algebraic Topology
@@ -201,7 +201,7 @@ This list will be updated as more projects are confirmed.
      
      
 
-### Spring 2024
+## Spring 2024
 
 + From calculus to de Rham cohomology
    - Text: Madsen and Tornehave, From calculus to cohomology: de Rham cohomology and characteristic classes
@@ -254,7 +254,7 @@ This list will be updated as more projects are confirmed.
    - Mentor: Petch Chueluecha
 
 
-### Fall 2023
+## Fall 2023
 
 + Choosing the optimal number of clusters for the k-means algorithm
    - Text: Murphey, Machine learning: a probabalistic perspective
@@ -292,7 +292,7 @@ This list will be updated as more projects are confirmed.
    - Mentor: Maximiliano Sánchez Garza
 
 
-### Spring 2023
+## Spring 2023
 
 + Topological data analysis
    - Text: Carlsson and Vejdemo-Johansson, Topological data analysis with applications
@@ -319,7 +319,7 @@ This list will be updated as more projects are confirmed.
    - Mentor: Yaolong Shen
 
 
-### Fall 2022
+## Fall 2022
 
 + Naturality of the double dual evaluation map
    - Text: Serge Lang, Linear algebra & Harold Simmons, An introduction to category theory
@@ -366,7 +366,7 @@ This list will be updated as more projects are confirmed.
    - Mentor: Alejandro de las Peñas Castaño
 
 
-### Spring 2022
+## Spring 2022
 
 + Introduction to Knot Theory
    - Text: The Knot Book, Adams
@@ -418,7 +418,7 @@ This list will be updated as more projects are confirmed.
    - Mentee: Ningxin Zhang
    - Mentor: Gennady Uraltsev
 
-### Fall 2021
+## Fall 2021
 
 + Geometric Group Theory
    - Text: Office Hours with a Geometric Group Theorist, Clay and Margalit
@@ -465,7 +465,7 @@ This list will be updated as more projects are confirmed.
    - Mentee: Eli Kin
    - Mentor: Neelav Dutta
 
-### Spring 2021
+## Spring 2021
 
 + Hilbert's Nullstellensatz
    - Text: Abstract Algebra, Dummit and Foote
@@ -487,7 +487,7 @@ This list will be updated as more projects are confirmed.
    - Mentee: Nick Cooney
    - Mentor: Peter Johnson
 
-### Fall 2020
+## Fall 2020
 
 + Galois Theory and its Applications
    - Text: A Book of Abstract Algebra, Charles Pinter
@@ -516,14 +516,14 @@ This list will be updated as more projects are confirmed.
    - Mentee: Joey Rudek
    - Mentor: Neelav Dutta
    
-### Spring 2020
+## Spring 2020
 
 + Homological proof of the Brouwer fixed point theorem 
    - Text: Algebraic Topology, Hatcher
    - Mentee: Thomas Blue
    - Mentor: Chris Lloyd
 
-### Fall 2019
+## Fall 2019
       
 + The Geometries of Surfaces
   - Text: Low-Dimensional Geometry, Bonahon
@@ -551,7 +551,7 @@ This list will be updated as more projects are confirmed.
   - Mentee: Noah Brenny
   - Mentor: Rostislav Akhmechet  
 
-### Spring 2019
+## Spring 2019
 
 + Gröbner bases and applications in characteristic p
   - Text: Ideals, Varieties, and Algorithms: An Introduction to Computational Algebraic Geometry and Commutative Algebra, Cox, O'Shea, and Little
@@ -593,7 +593,7 @@ This list will be updated as more projects are confirmed.
   - Mentee: Aaron Christian
   - Mentor: Jiajun Yan
 
-### Fall 2018
+## Fall 2018
   
 + Support vector machines and kernel methods    
   - Text: Foundations of Machine Learning, Mohri, Rostamizadeh, and Talwalkar
@@ -638,7 +638,7 @@ This list will be updated as more projects are confirmed.
   - Mentee: Xinru Cheng
   - Mentor: Ethan Zell
   
-### Summer 2018
+## Summer 2018
 
 + An Introduction to Computability Theory and 'Universal Programs'
   - Text: Computability: An introduction to recursive function theory, N.J. Cutland

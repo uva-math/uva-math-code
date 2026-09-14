@@ -23,14 +23,14 @@ nav_parent: Seminars
 {% if sem.image != null %}
   <div class="row">
     <div class="col-md-3">
-      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image"/>
     </div>
   </div>
 {% endif %}
 
 
 <table width=100%>
-<h3>Fall Semester</h3>
+<h2>Fall Semester</h2>
 <thead>
     <tr>
         <th width="12%">Date</th>
@@ -57,8 +57,8 @@ nav_parent: Seminars
       <tr>
           <td>September 28</td>
           <td>Jacob Lurie (Harvard)</td>
-          <td><a href="javascript:Toggle('Jacob')">Equivariant Cohomology via Algebraic Groups</a>
-          <p id="Jacob" style="display:none">I will explain how the study of group schemes in derived algebraic geometry leads naturally to the construction of equivariant cohomology theories. In particular, I will sketch a purely algebraic construction of equivariant K-theory and provide an interpretation of Snaith's theorem, which relates complex K-theory to the suspension spectrum of CP^{infty}.</p></td>
+          <td><details><summary>Equivariant Cohomology via Algebraic Groups</summary>
+<p>I will explain how the study of group schemes in derived algebraic geometry leads naturally to the construction of equivariant cohomology theories. In particular, I will sketch a purely algebraic construction of equivariant K-theory and provide an interpretation of Snaith's theorem, which relates complex K-theory to the suspension spectrum of CP^{infty}.</p></details></td>
       </tr>
       <tr>
           <td>October 5</td>
@@ -68,8 +68,8 @@ nav_parent: Seminars
       <tr>
           <td>October 12</td>
           <td>Kai-Uwe Bux (UVa)</td>
-          <td><a href="javascript:Toggle('KaiUwe')">Connectivity of Spheres and Horospheres in Euclidean Buildings</a>
-          <p id="KaiUwe" style="display:none">Let $X$ be a Euclidean building of dimension $m$. The Tits-Solomon theorem implies that metric spheres of small diameter are $(m-1)$-spherical. We show that this generalizes to metric spheres of arbitrary size. If $X$ is irreducible, we want to show that horospheres are also $(m-2)$-connected, and we may already have a proof. This is joint with Kevin Wortman (Yale). </p></td>
+          <td><details><summary>Connectivity of Spheres and Horospheres in Euclidean Buildings</summary>
+<p>Let $X$ be a Euclidean building of dimension $m$. The Tits-Solomon theorem implies that metric spheres of small diameter are $(m-1)$-spherical. We show that this generalizes to metric spheres of arbitrary size. If $X$ is irreducible, we want to show that horospheres are also $(m-2)$-connected, and we may already have a proof. This is joint with Kevin Wortman (Yale). </p></details></td>
       </tr>
       <tr>
           <td>October 19</td>
@@ -109,7 +109,7 @@ nav_parent: Seminars
       <tr>
           <td>December 7</td>
           <td>Bob Stong (UVa)</td>
-          <td>SU(n)/SO(n): Landweber's manifolds <a href="../StongSUnSOn.pdf">Bob's Notes</a></td>
+          <td>SU(n)/SO(n): Landweber's manifolds — <a href="../StongSUnSOn.html">Bob Stong's notes (HTML)</a> · <a href="../StongSUnSOn.pdf">Printable notes (PDF)</a></td>
       </tr>
 </tbody>
 </table>
@@ -117,7 +117,7 @@ nav_parent: Seminars
 <hr />
 
 <table width=100%>
-    <h3>Spring Semester</h3>
+    <h2>Spring Semester</h2>
   <thead>
     <tr>
       <th width="12%">Date</th>
@@ -129,7 +129,7 @@ nav_parent: Seminars
     <tr>
     <td>January 18</td>
     <td>Greg Arone (UVA)</td>
-    <td>Deloopings for Connecting Maps in Taylor Towers <a href="../AroneDelooping.pdf">Notes</a></td>
+    <td>Deloopings for Connecting Maps in Taylor Towers — <a href="../AroneDelooping.html">Greg Arone's notes (HTML)</a> · <a href="../AroneDelooping.pdf">Printable notes (PDF)</a></td>
     </tr>
     <tr>
     <td>January 25</td>
@@ -164,8 +164,8 @@ nav_parent: Seminars
     <tr>
     <td>March 15</td>
     <td>Soren Galatius (Stanford)</td>
-    <td><a href="javascript:Toggle('Soren')">Homotopy Type of the Cobordism Category</a>
-    <p id="Soren" style="display:none">The d-dimensional cobordism category C_d has closed (d-1)-dimensional manifolds as objects and compact d-dimensional cobordisms as morphisms. Thom's theorem determines pi_0 of the classifying space BC_d. I will discuss joint work with Madsen, Tillmann and Weiss, in which we determine the homotopy type of BC_d. As a corollary we get a new proof of Madsen-Weiss' generalized Mumford conjecture. <a href="http://arxiv.org/abs/math/0605249">arXiv</a></p></td>
+    <td><details><summary>Homotopy Type of the Cobordism Category</summary>
+<p>The d-dimensional cobordism category C_d has closed (d-1)-dimensional manifolds as objects and compact d-dimensional cobordisms as morphisms. Thom's theorem determines pi_0 of the classifying space BC_d. I will discuss joint work with Madsen, Tillmann and Weiss, in which we determine the homotopy type of BC_d. As a corollary we get a new proof of Madsen-Weiss' generalized Mumford conjecture. <a href="http://arxiv.org/abs/math/0605249">arXiv</a></p></details></td>
     </tr>
     <tr>
     <td>March 22</td>
@@ -200,20 +200,10 @@ nav_parent: Seminars
 
 {%endif%} {% endfor %}
 
-<script type="text/javascript">
-function Toggle(abstractID) {
-     var CurrentAbstract = document.getElementById(abstractID);
-     if (CurrentAbstract.style.display == 'none') {
-         CurrentAbstract.style.display = 'block';
-     }
-     else {
-         CurrentAbstract.style.display = 'none';
-     }
- }
-</script>
+
 
 <hr />
-<h3 class="mb-3">Archives</h3>
+<h2 class="mb-3">Archives</h2>
 
 <p><a href="/seminars/topology/">upcoming</a> | <a href="/seminars/topology/2026-27/">2026-27</a> | <a href="/seminars/topology/2025-26/">2025-26</a> | <a href="/seminars/topology/2024-25/">2024-25</a> | <a href="/seminars/topology/2023-24/">2023-24</a> | <a href="/seminars/topology/2022-23/">2022-23</a> | <a href="/seminars/topology/2021-22/">2021-22</a> | <a href="/seminars/topology/2020-21/">2020-21</a> | <a href="/seminars/topology/2019-20/">2019-20</a> | <a href="/seminars/topology/2018-19/">2018-19</a> | <a href="/seminars/topology/2017-18/">2017-18</a> | <a href="/seminars/topology/2016-17/">2016-17</a> |
 <a href="/seminars/topology/2015-16/">2015-16</a> |

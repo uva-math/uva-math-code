@@ -1,0 +1,2 @@
+# Tagged PDFs can start with long text metadata before their binary streams.
+*.pdf binary

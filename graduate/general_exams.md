@@ -7,7 +7,7 @@ nav_parent: Graduate
 nav_weight: 18
 ---
 
-<h1 class="mb-3"></h1>
+<h1 class="mb-3">Graduate general examinations</h1>
 
 {% include grad_general_exams.md %}
 

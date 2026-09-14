@@ -21,13 +21,14 @@ nav_weight: 1
 
 <!-- term-schedule-pdf -->
 <p class="mt-3"><a href="{{ site.url }}/schedule.pdf"><b>Fall 2026 Mathematics class schedule (PDF)</b></a>
-&mdash; every Mathematics section on two printable pages: meeting times, enrollment,
+&mdash; every Mathematics section in a compact printable schedule: meeting times, enrollment,
 and instructors. This is a manual snapshot of
-<a href="https://hooslist.virginia.edu/1268/Group/Mathematics">HoosList</a>; the date and
+HoosList; the date and
 time it was taken are printed in the header of the sheet.</p>
 
-<p><b>The PDF is a print-only convenience sheet.</b> For an accessible version, and for
-live enrollment numbers, use
+<p><b>The PDF is a compact print version.</b> Read the
+<a href="{{ site.url }}/schedule/">HTML version of this schedule snapshot</a>.
+For live enrollment numbers, use
 <a href="https://hooslist.virginia.edu/1268/Group/Mathematics">HoosList</a> or
 <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SIS</a>, which work with
 screen readers and can be resized.</p>
@@ -64,4 +65,4 @@ letter of your last name.
 
 ---
 
-- **Math Major Course Guide: [PDF]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Fall25_version.pdf) \| [HTML]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Fall25_version.html)**
+- **Math Major Course Guide: [Math Major Course Guide (PDF)]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Fall25_version.pdf) \| [Math Major Course Guide (HTML)]({{ site.url }}/undergraduate/docs/MathMajorCourseGuide_Fall25_version.html)**

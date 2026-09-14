@@ -23,7 +23,7 @@ nav_parent: Seminars
 {% if sem.image != null %}
   <div class="row">
     <div class="col-md-3">
-      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image"/>
     </div>
   </div>
 {% endif %}
@@ -44,8 +44,8 @@ nav_parent: Seminars
         <tr>
           <td valign="top">Sep 08, 2015</td>
           <td valign="top">	Zoran Grujic (UVA)</td>
-            <td><a href="javascript:Toggle('a2')">3D Navier-Stokes equations and criticality, part I. </a>
-            <p id="a2" style="display:none;">The problem of possible singularity formation in solutions to the 3D Navier-Stokes equations is super-critical in the sense that all the regularity criteria are at best scaling-invariant (with respect to the natural scaling of the equations), while all the a priori bounds scale super-criticaly. Moreover, there is a `scaling gap' between any regularity criterion in view and the corresponding a priori bound. A possible avenue to gaining insight into the problem is to assume a certain criticality scenario, and then identify a condition breaking the criticality, leading to the regularity of solutions. The goal of these lectures is to briefly review the current state of the art in the study of various physically, numerically and/or mathematically motivated criticality scenarios in the 3D Navier-Stokes problem.</p>
+            <td><details><summary>3D Navier-Stokes equations and criticality, part I.</summary>
+<p>The problem of possible singularity formation in solutions to the 3D Navier-Stokes equations is super-critical in the sense that all the regularity criteria are at best scaling-invariant (with respect to the natural scaling of the equations), while all the a priori bounds scale super-criticaly. Moreover, there is a `scaling gap' between any regularity criterion in view and the corresponding a priori bound. A possible avenue to gaining insight into the problem is to assume a certain criticality scenario, and then identify a condition breaking the criticality, leading to the regularity of solutions. The goal of these lectures is to briefly review the current state of the art in the study of various physically, numerically and/or mathematically motivated criticality scenarios in the 3D Navier-Stokes problem.</p></details>
           </td>
         </tr>
 
@@ -61,9 +61,14 @@ nav_parent: Seminars
         <tr>
           <td valign="top">Sep 29, 2015</td>
           <td valign="top">Xiang Wan (UVA)</td>
-          <td><a href="javascript:Toggle('a4')">Global Wellposedness and Uniform Stability of a Quasilinear Thermo-elastic PDE system.
-</a>
-            <a href="../xiangwan092915.pdf">Abstract (PDF)</a>
+          <td><details><summary>Global Wellposedness and Uniform Stability of a Quasilinear Thermo-elastic PDE system.</summary>
+            <p>We consider a nonlinear thermoelastic system defined on a bounded domain $\Omega \subset \mathbb{R}^n$, $n=2$ or $3$:</p>
+            <p>$$\begin{cases}w_{tt}-\gamma\Delta w_{tt}+\Delta^2w+\alpha\Delta((\Delta w)^3)=\Delta\theta,\\\theta_t-\Delta\theta=-\Delta w_t,\end{cases}\tag{1}$$</p>
+            <p>for $\gamma\geq 0$ with the boundary conditions imposed on $\Gamma=\partial\Omega$ corresponding to the simply supported plate. The main goal of this talk is to discuss the wellposedness of suitable solutions to the system defined above.</p>
+            <p>I will first introduce the background of this model, and then briefly talk about the work on the case $\gamma=0$. Our main challenge is to consider the case when $\gamma>0$, of which the first equation (elasticity) is of hyperbolic — rather than of parabolic type. From a mathematical point of view, the most important message is that the <em>analyticity</em> and <em>maximal regularity</em> of the associated linear system are <em>gone</em>. We will show how to choose suitable topologies to overcome this difficulty.</p>
+            <p>This is a joint work with Irena Lasiecka, University of Memphis.</p>
+            <p><a href="/seminars/diffeq/xiangwan092915.html">Read the abstract (HTML)</a> or <a href="../xiangwan092915.pdf">download the abstract (PDF)</a>.</p>
+          </details>
           </td>
         </tr>
 
@@ -90,10 +95,10 @@ nav_parent: Seminars
         <tr>
           <td valign="top">Oct 22, 2015</td>
           <td valign="top">Stefan Steinerberger (Yale)</td>
-          <td><a href="javascript:Toggle('a7')">Analysis meets Number Theory: two new theorems and a mystery. </a>
-            <p id="a7" style="display:none;">Analysis and Number Theory have always enjoyed a fruitful interaction; we discuss three new (and independent) chapters in the story (with focus on the Analysis part of the story). (1) Improvements of the Poincare inequality obtained by replacing the gradient with a gradient in a fixed direction - amusing things happen. (2) The Hardy-Littlewood maximal function is a cornerstone in real analysis -- we describe a new rigidity phenomenon: if the maximal function is easy to compute, then the function is, up to symmetries, sin(x). The only proof we could find requires nontrivial input from transcendental number theory. (3) The Mystery: some experimental (but truly elementary) observations connecting Ulam's mysterious integer sequence from additive combinatorics (1,2,3,4,6,8,11,...), about which still not a single statement is known (except infinitude), to basic measure theory.
+          <td><details><summary>Analysis meets Number Theory: two new theorems and a mystery.</summary>
+<p>Analysis and Number Theory have always enjoyed a fruitful interaction; we discuss three new (and independent) chapters in the story (with focus on the Analysis part of the story). (1) Improvements of the Poincare inequality obtained by replacing the gradient with a gradient in a fixed direction - amusing things happen. (2) The Hardy-Littlewood maximal function is a cornerstone in real analysis -- we describe a new rigidity phenomenon: if the maximal function is easy to compute, then the function is, up to symmetries, sin(x). The only proof we could find requires nontrivial input from transcendental number theory. (3) The Mystery: some experimental (but truly elementary) observations connecting Ulam's mysterious integer sequence from additive combinatorics (1,2,3,4,6,8,11,...), about which still not a single statement is known (except infinitude), to basic measure theory.
 
-Start time: 4pm at Kerchof Hall 317. This is now a colloquium talk.</p>
+Start time: 4pm at Kerchof Hall 317. This is now a colloquium talk.</p></details>
           </td>
         </tr>
 
@@ -102,10 +107,9 @@ Start time: 4pm at Kerchof Hall 317. This is now a colloquium talk.</p>
         <tr>
           <td valign="top">Oct 27, 2015	</td>
           <td valign="top"> Aseel Farhat (UVA) </td>
-          <td><a href="javascript:Toggle('a8')">On Vorticity Directions near Singularities of the NSE.
-</a>
-            <p id="a8" style="display:none;">We will discuss the geometric regularity criterion for the NSE introduced by Giga and Miura. Under the restriction of type I blow-up, the authors show that if the vorticity direction is uniformly continuous on some super-level set, then the solution does not blow-up. The weak solutions here are not restricted to have finite energy and this improves many known results.
-</p>
+          <td><details><summary>On Vorticity Directions near Singularities of the NSE.</summary>
+<p>We will discuss the geometric regularity criterion for the NSE introduced by Giga and Miura. Under the restriction of type I blow-up, the authors show that if the vorticity direction is uniformly continuous on some super-level set, then the solution does not blow-up. The weak solutions here are not restricted to have finite energy and this improves many known results.
+</p></details>
           </td>
         </tr>
 
@@ -114,9 +118,8 @@ Start time: 4pm at Kerchof Hall 317. This is now a colloquium talk.</p>
         <tr>
           <td valign="top">Nov 03, 2015	</td>
           <td valign="top">Oanh Nguyen (Yale) </td>
-          <td><a href="javascript:Toggle('a9')">Roots of random polynomials with arbitrary coefficients
-</a>
-            <p id="a9" style="display:none;">We consider the following model of random polynomials
+          <td><details><summary>Roots of random polynomials with arbitrary coefficients</summary>
+<p>We consider the following model of random polynomials
 
 $$P_n (x) = c_n \xi_n x^n + ... + c_1 \xi_1 x + c_0 \xi_0, $$
 
@@ -124,7 +127,7 @@ where the $\xi_i$'s are independent random variables with bounded $(2+\epsilon)$
 <br /><br />
 In this talk, we discuss optimal local universality for roots of $P_n$ when the $c_i$ have polynomial growth and as an application, we derive sharp estimates for the number of real roots of this polynomial. Our results also hold for series; in particular, we prove local universality for random hyperbolic series.
 <br /><br />
-This is joint work with Yen Do and Van Vu. </p>
+This is joint work with Yen Do and Van Vu. </p></details>
           </td>
         </tr>
 
@@ -133,10 +136,9 @@ This is joint work with Yen Do and Van Vu. </p>
         <tr>
           <td valign="top">Nov 10, 2015	</td>
           <td valign="top">Karen Zaya (UIC)</td>
-          <td><a href="javascript:Toggle('a10')">On Regularity Properties for Fluid Equations.
-</a>
-            <p id="a10" style="display:none;">Abstract: Fundamental mathematical questions about the 3D Navier-Stokes remain unanswered, such as the question of the regularity of solutions to the equations. Thus it is natural to ask: If we assume a smooth solution to the 3D Navier-Stokes equations $u$ loses regularity at time $T^*$, what is the rate of blow-up? In this talk, we discuss blow-up rates of solutions in the homogeneous Sobolev spaces, in particular the new result in $\dot{H}^\frac{3}{2}$. We will also discuss a newly developed regularity criterion for the 3D Boussinesq equations, which only imposes a condition on the low modes of the velocity $u$. The key tool in the development of this weaker regularity criterion is linked to the dissipation wave number.
-</p>
+          <td><details><summary>On Regularity Properties for Fluid Equations.</summary>
+<p>Abstract: Fundamental mathematical questions about the 3D Navier-Stokes remain unanswered, such as the question of the regularity of solutions to the equations. Thus it is natural to ask: If we assume a smooth solution to the 3D Navier-Stokes equations $u$ loses regularity at time $T^*$, what is the rate of blow-up? In this talk, we discuss blow-up rates of solutions in the homogeneous Sobolev spaces, in particular the new result in $\dot{H}^\frac{3}{2}$. We will also discuss a newly developed regularity criterion for the 3D Boussinesq equations, which only imposes a condition on the low modes of the velocity $u$. The key tool in the development of this weaker regularity criterion is linked to the dissipation wave number.
+</p></details>
           </td>
         </tr>
 
@@ -145,9 +147,9 @@ This is joint work with Yen Do and Van Vu. </p>
         <tr>
           <td valign="top">Dec 1, 2015	</td>
           <td valign="top">Vincent Martinez (Tulane)</td>
-          <td><a href="javascript:Toggle('a11')">A data assimilation algorithm for the 2D subcritical SQG equation. </a>
-            <p id="a11" style="display:none;">
-Abstract: In the early 1900s, the meteorologist V. Bjerknes defined the problem of weather prediction as the integration of the equations of the atmosphere themselves. The problem in practice, however, is how to initialize the system to begin with given the data collected from the field. In this talk we will discuss an algorithm for data assimilation introduced by Azouani-Olson-Titi for dissipative systems based on feedback control, and could be used to deal with this problem of initialization. Indeed, by modifying the original system by directly inputting finitely many observables and introducing a suitable controller for them, one can show that corresponding solution of this system converges exponentially to the reference solution. We show that this algorithm can also be adapted to the 2D subcritically dissipative surface quasigeostrophic (SQG) equation, a standard equation in geophysics used for studying the evolution of ocean surface temperature, and most importantly, that it enjoys the property of exponential synchronization. From the point of view of the analysis, the fractional dissipation operator offers some difficulties in how one should input the observables into the system. We show a natural way to overcome this. We moreover show that the observables to be fed into the system need only be given as time averages over small windows, which is how the observables are collected by instruments in practice. (This is joint work with Michael Jolly and Edriss Titi). </p>
+          <td><details><summary>A data assimilation algorithm for the 2D subcritical SQG equation.</summary>
+<p>
+Abstract: In the early 1900s, the meteorologist V. Bjerknes defined the problem of weather prediction as the integration of the equations of the atmosphere themselves. The problem in practice, however, is how to initialize the system to begin with given the data collected from the field. In this talk we will discuss an algorithm for data assimilation introduced by Azouani-Olson-Titi for dissipative systems based on feedback control, and could be used to deal with this problem of initialization. Indeed, by modifying the original system by directly inputting finitely many observables and introducing a suitable controller for them, one can show that corresponding solution of this system converges exponentially to the reference solution. We show that this algorithm can also be adapted to the 2D subcritically dissipative surface quasigeostrophic (SQG) equation, a standard equation in geophysics used for studying the evolution of ocean surface temperature, and most importantly, that it enjoys the property of exponential synchronization. From the point of view of the analysis, the fractional dissipation operator offers some difficulties in how one should input the observables into the system. We show a natural way to overcome this. We moreover show that the observables to be fed into the system need only be given as time averages over small windows, which is how the observables are collected by instruments in practice. (This is joint work with Michael Jolly and Edriss Titi). </p></details>
           </td>
         </tr>
 
@@ -165,10 +167,9 @@ Abstract: In the early 1900s, the meteorologist V. Bjerknes defined the problem 
         <tr>
           <td valign="top">Feb 16, 2016	</td>
           <td valign="top">	Zoran Grujic (UVA)</td>
-          <td><a href="javascript:Toggle('a13')">A geometric perspective on dissipation in 3D Navier-Stokes flows (part I)
-</a>
-            <p id="a13" style="display:none;">This will be an introductory-level talk on significance of the geometry of the 3D incompressible viscous flows in the mathematical study of the problem of possible formation of singularities in the 3D Navier-Stokes equations.
-</p>
+          <td><details><summary>A geometric perspective on dissipation in 3D Navier-Stokes flows (part I)</summary>
+<p>This will be an introductory-level talk on significance of the geometry of the 3D incompressible viscous flows in the mathematical study of the problem of possible formation of singularities in the 3D Navier-Stokes equations.
+</p></details>
           </td>
         </tr>
 
@@ -193,10 +194,9 @@ Abstract: In the early 1900s, the meteorologist V. Bjerknes defined the problem 
             <tr>
               <td valign="top">Mar 15, 2016	</td>
               <td valign="top">Radu Dascaliuc (Oregon State University)</td>
-              <td><a href="javascript:Toggle('b4')">Navier-Stokes equations, stochastic cascades, and the issue of symmetry breaking
-</a>
-                <p id="b4" style="display:none;">We will discuss a probabilistic cascade structure that can be naturally associated with the 3D Navier-Stokes equations. In particular, our aim will be to see how the explosion properties of such cascades help establish a connection between the uniqueness of symmetry-preserving (self-similar) solutions and the uniqueness of the general problem.
-</p>
+              <td><details><summary>Navier-Stokes equations, stochastic cascades, and the issue of symmetry breaking</summary>
+<p>We will discuss a probabilistic cascade structure that can be naturally associated with the 3D Navier-Stokes equations. In particular, our aim will be to see how the explosion properties of such cascades help establish a connection between the uniqueness of symmetry-preserving (self-similar) solutions and the uniqueness of the general problem.
+</p></details>
               </td>
             </tr>
 
@@ -205,10 +205,9 @@ Abstract: In the early 1900s, the meteorologist V. Bjerknes defined the problem 
             <tr>
               <td valign="top">Mar 22, 2016	</td>
               <td valign="top">Yen Do (UVA)</td>
-              <td><a href="javascript:Toggle('b5')">Atomic decomposition (expository talk)
-</a>
-                <p id="b5" style="display:none;">We will discuss atomic decomposition of functions, with emphasis on Hardy spaces as examples.
-</p>
+              <td><details><summary>Atomic decomposition (expository talk)</summary>
+<p>We will discuss atomic decomposition of functions, with emphasis on Hardy spaces as examples.
+</p></details>
               </td>
             </tr>
 
@@ -217,10 +216,9 @@ Abstract: In the early 1900s, the meteorologist V. Bjerknes defined the problem 
             <tr>
               <td valign="top">Mar 29, 2016	</td>
               <td valign="top">Michele Coti Zelati (UMD)</td>
-              <td><a href="javascript:Toggle('b6')">Enhanced dissipation and hypoellipticity in shear flows
-</a>
-                <p id="b6" style="display:none;">We analyze the decay and instant regularization properties of the evolution semigroups generated by two-dimensional drift-diffusion equations in which the scalar is advected by a shear flow and dissipated by full or partial diffusion. We consider both the case of space-periodic and the case of a bounded channel with no-flux boundary conditions. In the infinite PŽclet number limit, our work quantifies the enhanced dissipation effect due to the shear. We also obtain hypoelliptic regularization, showing that solutions are instantly Gevrey regular even with only partial diffusion.
-</p>
+              <td><details><summary>Enhanced dissipation and hypoellipticity in shear flows</summary>
+<p>We analyze the decay and instant regularization properties of the evolution semigroups generated by two-dimensional drift-diffusion equations in which the scalar is advected by a shear flow and dissipated by full or partial diffusion. We consider both the case of space-periodic and the case of a bounded channel with no-flux boundary conditions. In the infinite PŽclet number limit, our work quantifies the enhanced dissipation effect due to the shear. We also obtain hypoelliptic regularization, showing that solutions are instantly Gevrey regular even with only partial diffusion.
+</p></details>
               </td>
             </tr>
 
@@ -229,10 +227,9 @@ Abstract: In the early 1900s, the meteorologist V. Bjerknes defined the problem 
             <tr>
               <td valign="top">Apr 5, 2016	</td>
               <td valign="top"> Aseel Farhat (UVA) </td>
-              <td><a href="javascript:Toggle('b7')">Atomic decomposition for the vorticity of a viscous flow in the whole space I
-</a>
-                <p id="b7" style="display:none;">We will go over the results of Lorenzo Brandolese on atomic decomposition of vorticity of 3D viscous flows and the long time behavior of isolated coherent structures and the behavior of flows with highly oscillating vorticities.
-</p>
+              <td><details><summary>Atomic decomposition for the vorticity of a viscous flow in the whole space I</summary>
+<p>We will go over the results of Lorenzo Brandolese on atomic decomposition of vorticity of 3D viscous flows and the long time behavior of isolated coherent structures and the behavior of flows with highly oscillating vorticities.
+</p></details>
               </td>
             </tr>
 
@@ -241,10 +238,9 @@ Abstract: In the early 1900s, the meteorologist V. Bjerknes defined the problem 
             <tr>
               <td valign="top">Apr 12, 2016	</td>
               <td valign="top">Mark Lewers (UVA)</td>
-              <td><a href="javascript:Toggle('b8')">Random Fourier series
-</a>
-                <p id="b8" style="display:none;">We will go over a result of Nazarov - Nishry - Sodin on the log integrability of random Fourier series.
-</p>
+              <td><details><summary>Random Fourier series</summary>
+<p>We will go over a result of Nazarov - Nishry - Sodin on the log integrability of random Fourier series.
+</p></details>
               </td>
             </tr>
 
@@ -253,10 +249,9 @@ Abstract: In the early 1900s, the meteorologist V. Bjerknes defined the problem 
             <tr>
               <td valign="top">Apr 19, 2016	</td>
               <td valign="top">Liaosha Xu (UVA)</td>
-              <td><a href="javascript:Toggle('b9')">Vorticity direction and regularity for the 3D NSE
-</a>
-                <p id="b9" style="display:none;">This will be an introductory talk on the role that the vorticity direction plays in the regularity theory for the 3D Navier-Stokes equations.
-</p>
+              <td><details><summary>Vorticity direction and regularity for the 3D NSE</summary>
+<p>This will be an introductory talk on the role that the vorticity direction plays in the regularity theory for the 3D Navier-Stokes equations.
+</p></details>
               </td>
             </tr>
 
@@ -275,7 +270,7 @@ Abstract: In the early 1900s, the meteorologist V. Bjerknes defined the problem 
 
 
 <hr>
-<h3 class="mb-3">Archives</h3>
+<h2 class="mb-3">Archives</h2>
 
 <p><a href="/seminars/diffeq/">upcoming</a> | <a href="/seminars/diffeq/2026-27/">2026-27</a> | <a href="/seminars/diffeq/2025-26/">2025-26</a> | <a href="/seminars/diffeq/2024-25/">2024-25</a> | <a href="/seminars/diffeq/2023-24/">2023-24</a> | <a href="/seminars/diffeq/2022-23/">2022-23</a> | <a href="/seminars/diffeq/2021-22/">2021-22</a> | <a href="/seminars/diffeq/2020-21/">2020-21</a> | <a href="/seminars/diffeq/2019-20/">2019-20</a> | <a href="/seminars/diffeq/2018-19/">2018-19</a> | <a href="/seminars/diffeq/2017-18/">2017-18</a> | <a href="/seminars/diffeq/2016-17/">2016-17</a> |
   <a href="/seminars/diffeq/2015-16/">2015-16</a> |
@@ -285,22 +280,10 @@ Abstract: In the early 1900s, the meteorologist V. Bjerknes defined the problem 
 
   <hr />
 
-  <b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
+  <h2>Contacts</h2> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
 
-  
+
 
 
 {%endif%}
 {% endfor %}
-
-<script type="text/javascript">
-function Toggle(abstractID) {
-     var CurrentAbstract = document.getElementById(abstractID);
-     if (CurrentAbstract.style.display == 'none') {
-         CurrentAbstract.style.display = 'block';
-     }
-     else {
-         CurrentAbstract.style.display = 'none';
-     }
- }
-</script>

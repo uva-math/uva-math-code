@@ -7,8 +7,9 @@ Three things happen here, in order:
   1. schedule.tex is checked for room data. Rooms are not public and must never
      appear in the sheet; every room argument has to be empty and \\PublicSchedule
      has to be defined, which is what makes the room macros expand to nothing.
-  2. pdflatex runs in a scratch directory (so no .aux/.log lands in the repo) and
-     the result is written to schedule.pdf plus the archival name, e.g. f26.pdf.
+  2. A compact landscape HTML document is rendered in a scratch directory and
+     exported as tagged PDF. PDF/UA validation, a four-page size limit, and the
+     rendered room check must pass before schedule.pdf or its archive is written.
   3. Every
 
          <!-- term-schedule-pdf --> ... <!-- /term-schedule-pdf -->
@@ -41,13 +42,14 @@ SEMESTER_RE = re.compile(r"UVA Mathematics --- ([A-Z][a-z]+ \d{4})")
 
 TEMPLATE = """
 <p class="mt-3"><a href="{{{{ site.url }}}}/schedule.pdf"><b>{semester} Mathematics class schedule (PDF)</b></a>
-&mdash; every Mathematics section on two printable pages: meeting times, enrollment,
+&mdash; every Mathematics section in a compact printable schedule: meeting times, enrollment,
 and instructors. This is a manual snapshot of
-<a href="https://hooslist.virginia.edu/{term}/Group/Mathematics">HoosList</a>; the date and
+HoosList; the date and
 time it was taken are printed in the header of the sheet.</p>
 
-<p><b>The PDF is a print-only convenience sheet.</b> For an accessible version, and for
-live enrollment numbers, use
+<p><b>The PDF is a compact print version.</b> Read the
+<a href="{{{{ site.url }}}}/schedule/">HTML version of this schedule snapshot</a>.
+For live enrollment numbers, use
 <a href="https://hooslist.virginia.edu/{term}/Group/Mathematics">HoosList</a> or
 <a href="https://sisuva.admin.virginia.edu/ihprd/signon.html">SIS</a>, which work with
 screen readers and can be resized.</p>
@@ -193,24 +195,45 @@ def assert_pdf_room_free(pdf: bytes, what: str) -> None:
 
 
 def build_pdf(tex_path: pathlib.Path) -> tuple[bytes, int]:
-    """Compile in a scratch directory; return (pdf bytes, page count)."""
-    with tempfile.TemporaryDirectory() as tmp:
+    """Export and validate a compact tagged PDF in a scratch directory.
+
+    The semantic screen page and print sheet share the same source parser. The
+    exporter uses pinned local dependencies and will not write an invalid PDF.
+    """
+    from schedule_html import render_print
+
+    tex_path = tex_path.resolve()
+    tex = tex_path.read_text()
+    assert_room_free(tex, tex_path)
+    with tempfile.TemporaryDirectory(prefix="uva-schedule-") as tmp:
         out = pathlib.Path(tmp)
-        r = subprocess.run(
-            ["pdflatex", "-interaction=nonstopmode", "-halt-on-error",
-             "-output-directory", str(out), str(tex_path)],
-            capture_output=True, text=True, cwd=tex_path.parent)
-        pdf = out / (tex_path.stem + ".pdf")
-        log = out / (tex_path.stem + ".log")
-        if r.returncode != 0 or not pdf.is_file():
-            tail = (log.read_text(errors="replace").splitlines()[-25:]
-                    if log.is_file() else r.stdout.splitlines()[-25:])
-            raise SystemExit("pdflatex failed:\n  " + "\n  ".join(tail))
-        # pdflatex hard-wraps the log at 79 columns, so the "Output written on
-        # <long temp path> (2 pages, N bytes)" line arrives split; flatten first.
-        flat = log.read_text(errors="replace").replace("\n", "")
-        m = re.search(r"Output written on .*?\((\d+) pages?,", flat)
-        return pdf.read_bytes(), int(m.group(1)) if m else 0
+        source = out / "schedule-print.html"
+        source.write_text(render_print(tex, tex_path))
+        pdf = out / "schedule.pdf"
+        exporter = REPO / "scripts/accessibility/export_pdf.cjs"
+        try:
+            result = subprocess.run(
+                ["node", str(exporter), "--url", source.as_uri(),
+                 "--output", str(pdf), "--landscape"],
+                capture_output=True, text=True, cwd=REPO, timeout=180)
+        except (FileNotFoundError, subprocess.TimeoutExpired) as error:
+            raise SystemExit(f"Tagged schedule PDF export could not run: {error}\n"
+                             "See scripts/accessibility/README.md for local dependencies.") from error
+        if result.returncode != 0 or not pdf.is_file():
+            raise SystemExit("Tagged schedule PDF export failed:\n" +
+                             (result.stderr or result.stdout))
+        info = subprocess.run(["pdfinfo", str(pdf)], capture_output=True,
+                              text=True, timeout=30, check=True)
+        match = re.search(r"^Pages:\s+(\d+)$", info.stdout, re.M)
+        if not match:
+            raise SystemExit("Cannot determine the compact schedule PDF page count")
+        pages = int(match.group(1))
+        if not 1 <= pages <= 4:
+            raise SystemExit(f"Compact schedule has {pages} pages (maximum four); "
+                             "review its content and print layout before publishing")
+        content = pdf.read_bytes()
+        assert_pdf_room_free(content, "the tagged compact schedule")
+        return content, pages
 
 
 def rewrite_blocks(site: pathlib.Path, semester: str, term: str) -> list[pathlib.Path]:
@@ -235,7 +258,7 @@ def rewrite_blocks(site: pathlib.Path, semester: str, term: str) -> list[pathlib
 
 
 def build_and_stage(site: pathlib.Path, semester: str | None = None) -> int:
-    """Compile the sheet, write both PDF names and the archival source, relink."""
+    """Validate the tagged sheet, write both PDF names and the HTML snapshot, relink."""
     tex_path = site / "schedule.tex"
     if not (site / "_config.yml").is_file():
         raise SystemExit(f"{site} does not look like the website repo")
@@ -249,13 +272,17 @@ def build_and_stage(site: pathlib.Path, semester: str | None = None) -> int:
 
     pdf, pages = build_pdf(tex_path)
     assert_pdf_room_free(pdf, "the sheet just built from schedule.tex")
-    if pages != 2:
-        print(f"warning: the sheet came out {pages} pages, not 2", file=sys.stderr)
+    if pages > 2:
+        print(f"note: the complete compact sheet uses {pages} pages", file=sys.stderr)
     for name in ("schedule.pdf", f"{slug}.pdf"):
         (site / name).write_bytes(pdf)
         print(f"wrote  -> {name}  ({len(pdf)} bytes, {pages} pages)")
     (site / f"{slug}.tex").write_text(tex)
     print(f"wrote  -> {slug}.tex")
+
+    from schedule_html import write_html
+    write_html(site)
+    print("wrote  -> schedule.html")
 
     touched = rewrite_blocks(site, semester, term)
     print(f"\n{len(touched)} page(s) rewritten:" if touched

@@ -6,7 +6,7 @@ nav_weight: 100
 doc_page: true
 ---
 
-## Purpose of the documentation pages
+# Purpose of the documentation pages
 
 The purpose of these pages is to help understand the structure of the department
 website, and to invite everyone at the department to [contribute]({{site.url}}/doc/contribute/) to updating the content
@@ -14,7 +14,7 @@ on our website.
 
 
 
-<h1 class="mt-5">General principles of the website organization</h1>
+<h2 class="mt-5">General principles of the website organization</h2>
 
 ---
 
@@ -24,18 +24,18 @@ Edits to the website are tested automatically so are unlikely to break anything.
 Moreover, any edit can be reverted. Therefore, *you* are welcome to
 participate in editing the content. The first step is to sign up on [GitHub.com](https://github.com)
 and send your username to [L. Petrov](mailto:petrov@virginia.edu) to be added as a collaborator.
-See [here]({{site.url}}/doc/contribute/) for more details on how to contribute.
+See [Contributing to this website]({{site.url}}/doc/contribute/) for more details on how to contribute.
 
 There are two main ways to edit the website content:
 
 - **On the web**: Smaller edits can be made directly on the web at [GitHub](https://github.com/uva-math/uva-math-code). The GitHub icon <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
-{% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank">
-  <span class="fa fa-github-square fa-2x"></span></a> in the lower right corner of each page points to the source file associated with this page, for quicker and simpler editing of existing content on the web.
+{% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} aria-label="Edit this page on GitHub">
+  <span class="fa fa-github-square fa-2x" aria-hidden="true"></span></a> in the lower right corner of each page points to the source file associated with this page, for quicker and simpler editing of existing content on the web.
 - **Locally**: Clone the website code to your local machine, make edits, and then sync the changes back to [GitHub](https://github.com/uva-math/uva-math-code). For this we recommend installing the [GitHub Desktop app](https://desktop.github.com/) and [Visual Studio Code](https://code.visualstudio.com/). Both are available for Windows, Mac, and Linux.
 
 In both cases, the changes in the code will trigger the website to automatically update, this takes about 5 minutes.
 
-Having a local copy of the website allows to preview your edits locally using [Jekyll](https://jekyllrb.com/) (only on Mac and Linux). This procedure is described in detail in Jekyll documentation, see for example [here](https://jekyllrb.com/docs/installation/) and [here](https://jekyllrb.com/docs/usage/). **Note that due to API limitations seminar google calendars will not work in local previews**.
+Having a local copy of the website allows to preview your edits locally using [Jekyll](https://jekyllrb.com/) (only on Mac and Linux). This procedure is described in detail in Jekyll documentation, see for example [Jekyll installation instructions](https://jekyllrb.com/docs/installation/) and [Jekyll usage documentation](https://jekyllrb.com/docs/usage/). **Note that due to API limitations seminar google calendars will not work in local previews**.
 
 The website building (and testing) are powered by Github Actions.
 

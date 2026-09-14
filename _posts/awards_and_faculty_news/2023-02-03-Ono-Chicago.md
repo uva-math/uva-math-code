@@ -9,8 +9,4 @@ image-alt: "Ken Ono"
 good-md: true
 ---
 
-In May, Ono will receive the 2023 University of Chicago Alumni Award for Professional Achievement for his research in algebra, combinatorics and number theory. More details [here](http://as.virginia.edu/math-professor-honored-university-chicago). 
-
-
-
-
+In May, Ono will receive the 2023 University of Chicago Alumni Award for Professional Achievement for his research in algebra, combinatorics and number theory. More details [Ken Ono receives University of Chicago alumni award](http://as.virginia.edu/math-professor-honored-university-chicago).

@@ -1,7 +1,7 @@
 <nav aria-label="Math Circle">
 <div class="list-group h5">
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathcircle/">Home</a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathcircle/fall-21/">Fall 2021</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathcircle/" {% if page.url == '/mathcircle/' %}aria-current="page"{% endif %}>Math Circle home</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathcircle/fall-21/" {% if page.url == '/mathcircle/fall-21/' %}aria-current="page"{% endif %}>Fall 2021</a>
 </div>
 
 <br class="hidden-sm-down"><br class="hidden-sm-down">

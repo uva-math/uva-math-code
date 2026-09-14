@@ -13,11 +13,11 @@ published: false
 
 <!-- add book list? -->
 
-### [Lou's Unofficial Class Schedule for Fall 2017 Math classes](http://rabi.phys.virginia.edu/mySIS/CS2/page.php?Semester=1178&Type=Group&Group=Mathematics)
+## [Lou's Unofficial Class Schedule for Fall 2017 Math classes](http://rabi.phys.virginia.edu/mySIS/CS2/page.php?Semester=1178&Type=Group&Group=Mathematics)
 
 ---
 
-### Math Collaborative Learning Center
+## Math Collaborative Learning Center
 
 If you need help with a math course, the [Math Collaborative Learning Center](http://people.virginia.edu/~psb7p/MCLCsch.html) operates all 7 days of the week during the semester.
 

@@ -6,160 +6,53 @@ redirect_from:
   - /people-list/b821cc04426d8c54bded02406e5a5ef5/
 ---
 
-<div class="container">
-<div class="row">
-
-<div class="col-md-6">
-<!-- Search bar HTML -->
-<div id="search-container">
-  <input type="text" id="search-input" autofocus aria-label="Filter people by name or UVA ID" placeholder="Filter by name or UVA ID...">
-  <p id="search-hint">Filters as you type. Press Escape to clear and start over, and click a UVA ID to copy it.</p>
-</div>
-
-<!-- CSS Styles -->
-<style>
-  #search-container {
-    margin: 20px 0;
-    text-align: center;
-  }
-  #search-input {
-    padding: 8px;
-    width: 300px;
-    font-size: 16px;
-  }
-  #search-hint {
-    margin-top: 8px;
-    font-size: 0.85em;
-    opacity: 0.75;
-  }
-  td.uva-id {
-    cursor: pointer;
-  }
-  td.uva-id.copied {
-    background-color: #232D4B;
-    color: white;
-  }
-  .highlight {
-    background-color: yellow;
-  }
-</style>
-
-<!-- JavaScript for search functionality -->
-<script>
-document.addEventListener('DOMContentLoaded', (event) => {
-  const searchInput = document.getElementById('search-input');
-  const table = document.querySelector('table');
-  const rows = table.querySelectorAll('tr');
-
-  function removeAccents(str) {
-    return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  }
-
-  function escapeRegExp(str) {
-    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  }
-
-  function resetRows() {
-    rows.forEach((row, index) => {
-      if (index === 0) return; // Skip header row
-
-      row.style.display = '';
-      row.cells[0].innerHTML = row.cells[0].textContent;
-      row.cells[1].innerHTML = row.cells[1].textContent;
-    });
-  }
-
-  function performSearch() {
-    const searchTerm = removeAccents(searchInput.value.toLowerCase());
-
-    // An empty term would make the highlight regex match forever
-    if (searchTerm === '') {
-      resetRows();
-      return;
-    }
-
-    rows.forEach((row, index) => {
-      if (index === 0) return; // Skip header row
-      
-      const name = removeAccents(row.cells[0].textContent.toLowerCase());
-      const uvaId = row.cells[1].textContent.toLowerCase();
-      
-      if (name.includes(searchTerm) || uvaId.includes(searchTerm)) {
-        row.style.display = '';
-        highlightText(row, searchTerm);
-      } else {
-        row.style.display = 'none';
-      }
-    });
-  }
-
-  function highlightText(row, searchTerm) {
-    [0, 1].forEach(cellIndex => {
-      const cell = row.cells[cellIndex];
-      const originalText = cell.textContent;
-      const normalizedText = removeAccents(originalText);
-      let highlightedText = '';
-      let lastIndex = 0;
-
-      const regex = new RegExp(escapeRegExp(searchTerm), 'gi');
-      let match;
-      while ((match = regex.exec(normalizedText)) !== null) {
-        highlightedText += originalText.slice(lastIndex, match.index);
-        highlightedText += `<span class="highlight">${originalText.slice(match.index, match.index + match[0].length)}</span>`;
-        lastIndex = match.index + match[0].length;
-      }
-      highlightedText += originalText.slice(lastIndex);
-
-      cell.innerHTML = highlightedText;
-    });
-  }
-
-  searchInput.addEventListener('input', performSearch);
-
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-      e.preventDefault();
-      searchInput.value = '';
-      performSearch();
-      searchInput.focus();
-    }
-  });
-
-  // Clicking an ID copies it, which is what the page is usually opened for
-  table.addEventListener('click', function(e) {
-    const cell = e.target.closest('td.uva-id');
-    if (!cell || !navigator.clipboard) return;
-
-    navigator.clipboard.writeText(cell.textContent.trim()).then(() => {
-      cell.classList.add('copied');
-      window.setTimeout(() => cell.classList.remove('copied'), 900);
-    });
-  });
-
-  searchInput.focus();
-});
-</script>
-</div>
-<div class="col-md-6">
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>UVA ID</th>
-      <th>Dept link</th>
-    </tr>
-  </thead>
+<h1>Department people and UVA IDs</h1>
+<form id="id-search" role="search" aria-label="Department names and UVA IDs">
+  <label for="id-search-input">Filter by name or UVA ID</label>
+  <input class="form-control" type="search" id="id-search-input" aria-describedby="id-search-hint">
+  <p id="id-search-hint">Results update as you type. Press Escape in the search field to clear it. Use an ID button to copy that ID.</p>
+</form>
+<p id="id-search-status" role="status" aria-live="polite" aria-atomic="true"></p>
+<p id="copy-id-status" role="status" aria-live="polite" aria-atomic="true"></p>
+<div class="table-responsive" role="region" aria-label="Department people and IDs" tabindex="0">
+<table id="people-ids" class="table table-striped">
+  <caption>Department members, computing IDs, and profile links</caption>
+  <thead><tr><th scope="col">Name</th><th scope="col">UVA ID</th><th scope="col">Profile</th></tr></thead>
   <tbody>
-    {% assign sorted_people = site.departmentpeople | sort: "lastname" %}
-    {% for person in sorted_people %}
-      <tr>
-        <td>{{ person.name }} {{ person.lastname }}</td>
-        <td class="uva-id" title="Click to copy">{{ person.UVA_id }}</td>
-        <td><a href="{{ site.url }}/people/{{ person.UVA_id }}/">Page</a></td>
-      </tr>
-    {% endfor %}
+  {% assign sorted_people = site.departmentpeople | sort: "lastname" %}
+  {% for person in sorted_people %}
+    <tr>
+      <th scope="row">{{ person.name }} {{ person.lastname }}</th>
+      <td><button type="button" class="btn btn-secondary copy-uva-id" data-uva-id="{{ person.UVA_id }}" aria-label="Copy UVA ID {{ person.UVA_id }} for {{ person.name | escape }} {{ person.lastname | escape }}">{{ person.UVA_id }}</button></td>
+      <td><a href="{{ site.url }}/people/{{ person.UVA_id }}/">{{ person.name }} {{ person.lastname }} profile</a></td>
+    </tr>
+  {% endfor %}
   </tbody>
 </table>
 </div>
-
-</div></div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  const input = document.getElementById('id-search-input');
+  const rows = Array.from(document.querySelectorAll('#people-ids tbody tr'));
+  const status = document.getElementById('id-search-status');
+  const normalize = text => text.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+  function filter() {
+    const term = normalize(input.value.trim());
+    let count = 0;
+    rows.forEach(row => { row.hidden = !normalize(row.textContent).includes(term); if (!row.hidden) count++; });
+    status.textContent = count ? count + ' people found.' : 'No people found. Try another name or UVA ID.';
+  }
+  document.getElementById('id-search').addEventListener('submit', event => { event.preventDefault(); filter(); });
+  input.addEventListener('input', filter);
+  input.addEventListener('keydown', event => { if (event.key === 'Escape') { input.value = ''; filter(); } });
+  document.querySelectorAll('.copy-uva-id').forEach(button => {
+    button.addEventListener('click', async () => {
+      const id = button.dataset.uvaId;
+      const feedback = document.getElementById('copy-id-status');
+      try { await navigator.clipboard.writeText(id); feedback.textContent = 'Copied UVA ID ' + id + '.'; }
+      catch (_) { feedback.textContent = 'Could not copy automatically. Select and copy UVA ID ' + id + '.'; }
+    });
+  });
+  filter();
+});
+</script>

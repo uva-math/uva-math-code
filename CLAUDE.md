@@ -30,12 +30,24 @@ The seminar rollover was done in August 2026, for 2026-27.
 
 ## Term class-schedule sheet
 
-`schedule.pdf` is the printable MATH class schedule for the current term and `schedule.tex`
-is its source of record; `f26.pdf` / `f26.tex` are the archival per-term copies. The source
-is self-contained — `pdflatex schedule.tex` reproduces the PDF with no external file.
+`schedule.tex` is the source of record for the public MATH class schedule. The generated
+`schedule.html` supplies the reflowable snapshot at `/schedule/`; `schedule.pdf` is its
+compact, tagged landscape print version. `f26.pdf` / `f26.tex` are the archival per-term
+copies. The TeX source remains self-contained for a local LaTeX preview, but publishable
+PDFs must be made with `python3 scripts/schedule/schedule_build.py`. It renders semantic
+HTML with scoped table headers and exports through `scripts/accessibility/export_pdf.cjs`.
+The source, screen HTML, and PDF include the supplementary notes and graduate weekly grid.
+
+Install the pinned Node and Python dependencies using
+[`scripts/accessibility/README.md`](scripts/accessibility/README.md). The exporter chooses
+`PDF_PYTHON` when set, then `scripts/accessibility/.venv/bin/python`, then `python3`.
+The build validates PDF/UA tags, checks the rendered text for rooms, and rejects PDFs
+longer than four landscape Letter pages before staging either public PDF. The current
+complete snapshot uses three pages with 8pt section rows. Review the rendered pages after
+substantial schedule changes; do not reduce text size merely to meet an old page count.
 
 `python3 scripts/schedule/update.py` (or `make schedule`) refreshes the meeting, enrollment,
-and instructor cells from HoosList, recompiles the PDF, restages the archival copies, and
+and instructor cells from HoosList, regenerates HTML and the tagged PDF, restages the archival copies, and
 rewrites the link blocks; a bare run reports and touches nothing, `--write` applies.
 `scripts/schedule/post-commit` runs that same update once a day, on the first commit of the
 day, and commits the result separately. The `uva-class-schedule` skill documents the whole
@@ -66,10 +78,11 @@ hook that runs the same check against staged content (install it with
 Five pages link the sheet inside a pair of `term-schedule-pdf` HTML comment markers, and all
 five bodies are rewritten together by the build — so the marker pair must never appear as an
 HTML comment in a file that is not one of those pages. Never hand-edit between the
-markers; headings and surrounding prose go outside them. The block tells readers the PDF is a
-print-only convenience sheet and points anyone needing an accessible version at HoosList or
-SIS — the sheet itself is an 8pt landscape grid and is not screen-reader material, so that
-sentence is the accessible alternative and has to stay.
+markers; headings and surrounding prose go outside them. The block links the compact
+PDF and the local HTML version of the same dated snapshot. Preserve that HTML link and
+the separate HoosList/SIS links for current enrollment; the external services are not a
+replacement for an accessible version of the stored snapshot. Avoid a fixed page count
+in the generated block, since the schedule length changes each term.
 
 ---
 

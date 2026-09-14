@@ -9,7 +9,7 @@ nav_weight: 969
 has_DRP_calendar: false
 ---
 
-<h2 class="mb-3">Directed Reading Program</h2>
+<h1 class="mb-3">Directed Reading Program</h1>
 
 The Directed Reading Program pairs undergraduate students with
 graduate student or postdoc mentors for independent reading projects. Each

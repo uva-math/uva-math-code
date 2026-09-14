@@ -1,286 +1,96 @@
 ---
 events: true
-# no layout since it's a main page with special navbar that will not be repeated
-# nav_id: Home
-# nav_weight: 10
-# nav_nesting: true
+# Home has its own layout.
 ---
-
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  {% include main_header.html %}
-</head>
-
+<head><title>Mathematics at the University of Virginia</title>{% include main_header.html %}</head>
 <body>
-
 <a href="#main-content" class="skip-link">Skip to main content</a>
-
 {% include top_brand.html %}
-
 {% include navbar.html %}
-
 <main id="main-content">
-<h1 class="visually-hidden">University of Virginia Mathematics Department</h1>
-<div class="container">
   <div class="container">
-    <div class="row row-offcanvas row-offcanvas-right">
+    <h1 class="mb-4">University of Virginia Mathematics Department</h1>
+    <div class="row">
       <div class="col-12 col-md-8">
-
-        <!--
-          <p>On April 22, 2025, UVa President James Ryan, along with over two hundred other college and 
-    university presidents, signed a <a href="https://www.aacu.org/newsroom/a-call-for-constructive-engagement">
-      Call for Constructive Engagement</a> that was published on the AACU web site. 
-  
-<p>  
-The Department of Mathematics stands with President  Ryan in opposing unprecedented government overreach
-  and political interference in American higher education. As members of a public university
-  and in service of democracy and the public good, we express our bedrock commitment (1) to
-  academic and intellectual freedom, (2) to free and open inquiry, (3) to our core missions
-  of teaching and research in pursuit of truth, (4) to the autonomy of colleges and universities
-  to conduct their affairs free of undue government intrusion and the coercive use of public
-  funding, and (5) to constructive engagement that will improve our institutions and serve our
-  republic.</p>
-        -->
-        
-            <!-- Code for the news roll -->
-
-            <div class="jumbotron" style="padding: 12px">
-            <div class="swiper-container mt-4" role="region" aria-label="News carousel" aria-roledescription="carousel" aria-live="off">
-            <div class="carousel-controls-bar mt-1">
-              <div class="swiper-pagination" style="position: static; width: auto;"></div>
+        <div class="jumbotron p-3">
+          <div class="swiper-container" role="region" aria-label="Featured news" aria-roledescription="carousel">
+            <div class="carousel-controls-bar">
               <div class="carousel-nav-buttons">
-                <button class="carousel-btn carousel-prev" aria-label="Previous slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                <button class="carousel-btn carousel-pause" aria-label="Pause carousel"><i class="fas fa-pause" aria-hidden="true"></i></button>
-                <button class="carousel-btn carousel-next" aria-label="Next slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
+                <button type="button" class="carousel-btn carousel-pause" aria-label="Pause automatic slide rotation"><i class="fas fa-pause" aria-hidden="true"></i></button>
+                <button type="button" class="carousel-btn carousel-prev" aria-label="Previous news slide"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button type="button" class="carousel-btn carousel-next" aria-label="Next news slide"><i class="fas fa-chevron-right" aria-hidden="true"></i></button>
               </div>
+              <div class="swiper-pagination" style="position:static;width:auto" role="group" aria-label="Choose a news slide"></div>
             </div>
+            <p class="carousel-status visually-hidden" role="status" aria-live="polite" aria-atomic="true"></p>
             <div class="swiper-wrapper">
-              {% assign swiper-news_counter = 0 %}
+              {% assign swiper_news_counter = 0 %}
               {% for post in site.categories['news'] limit:20 %}
-              {% if post.categories contains 'swiper-news' and swiper-news_counter < 6 %}
-              {% assign swiper-news_id = post.id %}
-              {% assign swiper-news_counter = swiper-news_counter | plus:1 %}
-                <div class="swiper-slide">
-                <h2 class="h4 mb-3"><a href="{{site.url }}{{ post.url }}" class="title-link">{{post.title}}</a></h2>
-                {% if post.event-date != null and post.multi-day-event %}
-                <p class="h5">Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{%else%}<br>{% endif %}
-                {% if post.event-date != null and post.multi-day-event != true %}
-                <p class="h5">Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{%else%}<br>{% endif %}
-                {% if post.image != null %}
-                  {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:175px;height:auto;width:auto;" alt="{{ post.image-alt | default: post.title }}" title="{{ post.image-alt | default: post.title }}"></a><br /><br />
+                {% if post.categories contains 'swiper-news' and swiper_news_counter < 6 %}
+                  <div class="swiper-slide" role="group" aria-roledescription="slide"{% if swiper_news_counter > 0 %} inert aria-hidden="true"{% endif %}>
+                    {% include news_snippet.html post=post image_height=175 %}
+                  </div>
+                  {% assign swiper_news_counter = swiper_news_counter | plus:1 %}
                 {% endif %}
-                {% unless post.good-md %}
-                <a href="{{site.url }}{{ post.url }}" class="main-roll-link d-none d-sm-inline">
-                {{ post.excerpt | markdownify | strip_html | markdownify  }}
-                </a>
-                {% else %}
-                <div class="d-none d-sm-block">{{ post.excerpt | markdownify }}
-                </div>
-                {% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" >{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}
-                {% endunless %}
-                </div>
-            {% endif %}
-            {% endfor %}
+              {% endfor %}
             </div>
-            </div>
-            </div>
-              <!-- Swiper JS -->
-              <script src="../css/swiper.min.js"></script>
-
-              <!-- Initialize Swiper -->
-              <script>
-                var swiper = new Swiper('.swiper-container', {
-                  spaceBetween: 30,
-                  centeredSlides: true,
-                  loop: true,
-                  autoplay: {
-                    delay: 6500,
-                    disableOnInteraction: true,
-                  },
-                  pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                  },
-                  navigation: {
-                    nextEl: '.carousel-next',
-                    prevEl: '.carousel-prev',
-                  },
-                  keyboard: {
-                    enabled: true,
-                    onlyInViewport: true,
-                  },
-                  a11y: {
-                    enabled: true,
-                    prevSlideMessage: 'Previous slide',
-                    nextSlideMessage: 'Next slide',
-                    paginationBulletMessage: 'Go to slide {% raw %}{{index}}{% endraw %}',
-                  },
-                  // Enable mouse wheel support (two-finger swipes on Mac)
-                  mousewheel: {
-                    enabled: true,
-                    sensitivity: 1,
-                    thresholdDelta: 50,
-                    thresholdTime: 500,
-                  },
-                  // Enhanced touch support for mobile devices
-                  touchRatio: 1,
-                  touchAngle: 45,
-                  simulateTouch: true,
-                  allowTouchMove: true,
-                  touchStartPreventDefault: false,
-                  touchStartForcePreventDefault: false,
-                  touchMoveStopPropagation: false,
-                  // Better responsiveness for touch devices
-                  longSwipes: true,
-                  longSwipesRatio: 0.5,
-                  longSwipesMs: 300,
-                  followFinger: true,
-                  shortSwipes: true,
-                  threshold: 10,
-                });
-
-                // Disable autoplay if user prefers reduced motion
-                var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-                if (prefersReducedMotion) {
-                  swiper.autoplay.stop();
-                  document.querySelector('.swiper-container').setAttribute('aria-live', 'polite');
-                }
-
-                // Pause/Play button functionality
-                var pauseBtn = document.querySelector('.carousel-pause');
-                var isPlaying = !prefersReducedMotion;
-                if (pauseBtn) {
-                  // Update button state if autoplay was disabled due to reduced motion
-                  if (!isPlaying) {
-                    pauseBtn.setAttribute('aria-label', 'Play carousel');
-                    pauseBtn.querySelector('i').className = 'fas fa-play';
-                  }
-                  pauseBtn.addEventListener('click', function() {
-                    if (isPlaying) {
-                      swiper.autoplay.stop();
-                    } else {
-                      swiper.autoplay.start();
-                    }
-                  });
-
-                  // Sync button state with actual Swiper autoplay state
-                  // (autoplay can stop via user interaction with disableOnInteraction: true)
-                  swiper.on('autoplayStop', function() {
-                    isPlaying = false;
-                    pauseBtn.setAttribute('aria-label', 'Play carousel');
-                    pauseBtn.querySelector('i').className = 'fas fa-play';
-                    document.querySelector('.swiper-container').setAttribute('aria-live', 'polite');
-                  });
-                  swiper.on('autoplayStart', function() {
-                    isPlaying = true;
-                    pauseBtn.setAttribute('aria-label', 'Pause carousel');
-                    pauseBtn.querySelector('i').className = 'fas fa-pause';
-                    document.querySelector('.swiper-container').setAttribute('aria-live', 'off');
-                  });
-                }
-              </script>
-
-        {% assign major-news_counter = 0 %}
-        {% for post in site.categories['news'] limit:10 %}
-        {% if post.categories contains 'major-news' and major-news_counter == 0 %}
-        {% unless post.categories contains 'swiper-news' %}
-        {% assign major-news_id = post.id %}
-        {% assign major-news_counter = major-news_counter | plus:1 %}
-        <div class="jumbotron" style="background:#DADADA; padding: 12px">
-          <h2 class="{% if post.title.size<35 %}bodoni-h2{% else %}h2{% endif %} mb-3"><a href="{{site.url }}{{ post.url }}" class="title-link">{{post.title}}</a></h2>
-          {% if post.event-date != null and post.multi-day-event %}
-          <p class="h5">Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{%else%}<br>{% endif %}
-          {% if post.event-date != null and post.multi-day-event != true %}
-          <p class="h5">Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{%else%}<br>{% endif %}
-          {% if post.image != null %}
-            {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %}max-height:400px;height:auto;width:auto;" alt="{{ post.image-alt | default: post.title }}" title="{{ post.image-alt | default: post.title }}"></a><br /><br />
-          {% endif %}
-          {{ post.excerpt | markdownify }}
-          {% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal">{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}
+          </div>
         </div>
-        {% endunless %}
-        {% endif %}
+        <script defer src="{{ site.url }}/css/swiper.min.js"></script>
+        <script defer src="{{ site.url }}/assets/js/news-carousel.js"></script>
+
+        {% assign major_news_counter = 0 %}
+        {% for post in site.categories['news'] limit:10 %}
+          {% if post.categories contains 'major-news' and major_news_counter == 0 %}
+            {% unless post.categories contains 'swiper-news' %}
+              {% assign major_news_id = post.id %}
+              {% assign major_news_counter = major_news_counter | plus:1 %}
+              <div class="jumbotron p-3">
+                {% include news_snippet.html post=post image_height=400 %}
+              </div>
+            {% endunless %}
+          {% endif %}
         {% endfor %}
 
-        <div class="list-group h5 d-lg-none">
+        <div class="list-group h5 d-lg-none mb-4">
           {% include front_page_link_list.html classes="orange-item" %}
         </div>
-        <div class="list-group h5 d-lg-none">
-          <br />
-        </div>
 
-
-
-        {% assign usual-news-counter = 0 %}
+        <h2 class="mt-4">Department news and events</h2>
+        {% assign usual_news_counter = 0 %}
         <div class="row zebra-md">
           {% for post in site.categories['news'] %}
-          {% unless post.categories contains 'swiper-news' %}
-          {% if post.id != major-news_id and post.hide-this-item != true and usual-news-counter <= 5 %}
-            {% assign usual-news-counter = usual-news-counter | plus:1 %}
-            <div class="col-12 col-lg-6 my-bordered-news-snippets">
-              <h3 class="mb-3 mt-3"><a href="{{site.url }}{{ post.url }}" class="title-link">{{ post.title }}</a></h3>
-              {% if post.image != null %}
-                {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" alt="{{ post.image-alt | default: post.title }}" title="{{ post.image-alt | default: post.title }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %};max-height:240px;height:auto;width:auto;" class="mb-3"></a>
+            {% unless post.categories contains 'swiper-news' %}
+              {% if post.id != major_news_id and post.hide-this-item != true and usual_news_counter < 6 %}
+                {% assign usual_news_counter = usual_news_counter | plus:1 %}
+                <article class="col-12 col-lg-6 my-bordered-news-snippets">
+                  {% include news_snippet.html post=post heading_level=3 %}
+                </article>
               {% endif %}
-              {% if post.event-date != null and post.multi-day-event %}
-              <p class="h6">Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{% endif %}
-              {% if post.event-date != null and post.multi-day-event != true %}
-              <p class="h6">Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</p>{% endif %}
-              <span class="d-none d-sm-inline">{{ post.excerpt | markdownify }}</span>
-              <p>{% if post.more-text != null %}<a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal" >{{ post.more-text }} &raquo;</a>{% endif %}{% include categories.html %}</p>
-            </div><!--/span-->
-          {% endif %}
-          {% endunless %}
+            {% endunless %}
           {% endfor %}
-        </div><!--/row-->
-        
-        <div class="text-right mt-3">
-          <a href="{{site.url}}/allnews/" class="btn btn-secondary h5">All news and events &raquo;</a>
         </div>
-      </div><!--/span-->
+        <p class="mt-3"><a href="{{ site.url }}/allnews/" class="btn btn-secondary">All news and events &raquo;</a></p>
+      </div>
 
-<!-- The main page's right menu -->
-
-      <div class="col-10 col-md-4 sidebar-offcanvas" id="sidebar">
-
-<!-- Link group on the right -->
-
-        <br class="d-md-none">
-        <div class="list-group h5 d-none d-lg-block">
+      <aside class="col-12 col-md-4" aria-label="Department links and seminars">
+        <div class="list-group h5 d-none d-lg-block mb-4">
           {% include front_page_link_list.html %}
         </div>
-        <br class="d-none d-lg-block">
-
-<!-- Unifying upcoming seminars calendar -->
-
         {% if page.events %}
-          <h3 class="mt-4">{{ site.new_seminars_label }} (<a href="{{site.url}}/calendar/">all</a>)</h3>
-
-          <!-- <div class="list-group-item h5 orange-item">In-person seminars are suspended until further notice due to COVID-19</div> -->
-          <div style="font-size:15px; margin: 0.5cm 0cm 0cm 0cm;" class="container">
-            <!-- {% include cal_main.js show_from="2014" show_to="2015" max_sem=300 max_from_cal=100 %} -->
-            {% include cal_main.js current="true" max_sem=12 max_from_cal=9 %}
-          </div>
+          <h2 class="mt-4">{{ site.new_seminars_label }}</h2>
+          <p><a href="{{ site.url }}/calendar/">See all upcoming seminars</a></p>
+          {% include cal_main.js current="true" max_sem=12 max_from_cal=9 %}
         {% endif %}
-
-      </div><!--/span-->
-    </div><!--/row-->
+      </aside>
+    </div>
   </div>
-</div>
 </main>
-
 {% include footer.html %}
-
-{%unless page.math == false %}{% include katex %}{%endunless%}
-
+{% unless page.math == false %}{% include katex %}{% endunless %}
 {% include bootjs %}
-
 {% include google-analytics.html %}{% include UVA_fonts.html %}
-
 </body>
-
 </html>
-
-

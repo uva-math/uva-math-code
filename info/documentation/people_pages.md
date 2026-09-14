@@ -43,7 +43,7 @@ specialty: Integrable Probability, Algebraic Combinatorics
 ---
 
 
-##### Selected Publications
+#### Selected Publications
 - Cyclic extensions and the local lifting problem (with S. Wewers), Ann. of Math. **180**, No. 1 (2014), 233--284.
 - Fields of moduli of three-point $G$-covers with cyclic $p$-Sylow, I, Algebra Number Theory **6**, No. 5 (2012), 833--883.
 {% endhighlight %}
@@ -114,12 +114,12 @@ hours should probably not be added for all facutly.
 <span class="nonupper-h5">areas</span>
 
 This is a field which determines how people are displayed by research area
-in the general lists of the people in the department (for example, [here]({{site.url}}/research/analysis/)).
+in the general lists of the people in the department (for example, [Analysis research group]({{site.url}}/research/APDE/)).
 See [below](#research_areas_pages) for details.
 
 <span class="nonupper-h5">grad\_general\_areas and grad\_special\_areas</span>
 
-These fields determine only where the person is displayed in the [graduate research areas information page]({{site.url}}/graduate/research-areas/).
+These fields determine only where the person is displayed in the [graduate research areas information page]({{site.url}}/graduate/research_areas/).
 
 ### Adding/removing people
 
@@ -135,7 +135,7 @@ To unpublish a person's page, set `published: false` in their file, or move the 
 
 ### Adding research areas to people
 
-The listings of people by research area such as [{{site.url}}/research/analysis/]({{site.url}}/research/analysis/) are generated automatically. To ensure correct generation of the website, one needs to add the exact research areas to each person's configuration, as in the example above:
+The listings of people by research area such as [{{site.url}}/research/APDE/]({{site.url}}/research/APDE/) are generated automatically. To ensure correct generation of the website, one needs to add the exact research areas to each person's configuration, as in the example above:
 
 {% highlight html %}
 areas:

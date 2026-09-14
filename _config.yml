@@ -31,7 +31,7 @@ collections:
     output: true
     permalink: /people/:name/
 
-exclude: [vendor, venv]
+exclude: [vendor, venv, node_modules, scripts, script, docs, reports, README.md, CLAUDE.md, SEASONAL.md, Makefile, requirements.txt, todo.md, package.json, package-lock.json]
 
 plugins:
   - jekyll-paginate

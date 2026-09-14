@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-WCAG 2.1 Level AA Compliance Verification Script
-Checks HTML files for accessibility violations as required by the slash command.
+Legacy structural checks for rendered HTML documents.
+Use audit_accessibility.rb and audit_browser.cjs for the current site checks.
+This script does not certify WCAG conformance.
 """
 
 import os
@@ -43,21 +44,13 @@ def check_breadcrumb(filepath):
 
 def verify_file(filepath, verbose=True):
     """
-    Run all WCAG 2.1 Level AA checks on a single file.
+    Run limited structural checks on one rendered file.
     Returns: (passed: bool, violations: list)
     """
     violations = []
 
-    # Check 1: Unicode violations
-    unicode_chars = check_unicode_violations(filepath)
-    if unicode_chars:
-        violations.append(f"Unicode violations: {len(unicode_chars)} characters found")
-        if verbose:
-            from collections import Counter
-            char_counts = Counter(unicode_chars)
-            for char, count in char_counts.most_common():
-                codepoint = f"U+{ord(char):04X}"
-                violations.append(f"  {char} ({codepoint}): {count} occurrences")
+    # Mathematical Unicode inside native MathML is valid. Neither an explicit
+    # math role nor breadcrumb navigation is a universal accessibility requirement.
 
     # Check 2: H1 tag
     if not check_h1_tag(filepath):
@@ -66,15 +59,6 @@ def verify_file(filepath, verbose=True):
     # Check 3: <main> landmark
     if not check_main_landmark(filepath):
         violations.append("Missing <main> landmark")
-
-    # Check 4: MathML role
-    math_count, role_count, passed = check_mathml_role(filepath)
-    if not passed:
-        violations.append(f"MathML role mismatch: {math_count} <math> tags, {role_count} with role=\"math\"")
-
-    # Check 5: Breadcrumb
-    if not check_breadcrumb(filepath):
-        violations.append("Missing breadcrumb navigation")
 
     return (len(violations) == 0, violations)
 
@@ -105,7 +89,7 @@ def main():
     """Main entry point for standalone verification."""
     import argparse
 
-    parser = argparse.ArgumentParser(description='Verify WCAG 2.1 Level AA compliance for HTML files')
+    parser = argparse.ArgumentParser(description='Run limited structure checks on rendered HTML files')
     parser.add_argument('path', nargs='?', help='File or directory to check')
     parser.add_argument('--quiet', '-q', action='store_true', help='Minimal output')
     args = parser.parse_args()
@@ -159,7 +143,7 @@ def main():
                     all_violations[f"{directory}/{filename}"] = file_violations
 
         print("=" * 80)
-        print("WCAG 2.1 LEVEL AA VERIFICATION")
+        print("HTML STRUCTURE CHECKS (NOT A WCAG CERTIFICATION)")
         print("=" * 80)
         print()
         print(f"Total files checked: {total_passed + total_failed}")
@@ -177,8 +161,8 @@ def main():
                 print()
             return 1
         else:
-            print("✅ ALL FILES PRODUCTION READY")
-            print("✅ Lawsuit Risk: MINIMAL")
+            print("All implemented structural checks passed.")
+            print("Manual accessibility and assistive-technology testing is still required.")
             return 0
 
 if __name__ == '__main__':

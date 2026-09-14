@@ -15,7 +15,7 @@ workshop. Here is a brief rundown of what you need and what you need to do.
 
 The Center for Teaching Excellence (CTE) has some fantastic workshops geared to helping
 you produce the best job materials possible as part of their <a href="http://cte.virginia.edu/programs/tomorrows-professor-today/">Tomorrow's
-Professors Today</a> program. See also the list of all CTE programs [here](http://cte.virginia.edu/programs/).
+Professors Today</a> program. See also the list of all CTE programs [Center for Teaching Excellence programs](http://cte.virginia.edu/programs/).
 
 A great resource for job-seekers is the <a href="http://www.ams.org/profession/employment-services/eims/eims-home">AMS Job Hunt</a> page. It includes much more
 detailed information than we cover here.
@@ -27,7 +27,7 @@ detailed information than we cover here.
 
 Academic job applications require several standard items discussed below.
 
-##### MathJobs.org Account
+### MathJobs.org Account
 
 Create an account on <a
 href="https://mathjobs.org">mathjobs.org</a>. This is the central repository for
@@ -36,7 +36,7 @@ mathjobs and you can apply here directly. All of your materials will be
 uploaded to mathjobs, as will your letter writers'
 recommendations.
 
-##### Curriculum vitae (CV)
+### Curriculum vitae (CV)
 
 List your education, professional
 preparation, and any papers and publications (even if you include a
@@ -47,14 +47,14 @@ personal information, and for jobs in the US, avoid including things
 like marital status,
 children, age, etc.
 
-##### Research Statement
+### Research Statement
 
 Explain your thesis
 research and any previous work and briefly describe some of your
 research plans. The page limit for the NSF Postdoc is 5 pages, and this
 is a standard limit for most jobs.
 
-##### Teaching Statement
+### Teaching Statement
 
 Describe your experience
 in the classroom and your approach to teaching. This is a forum to
@@ -63,20 +63,20 @@ in specific classroom experiences. For research postdocs, the usual
 length is a page. For teaching-focused jobs, the teaching statement is often
 longer.
 
-##### Diversity Statement
+### Diversity Statement
 
 This item is increasingly common in job applications. May include the following: (1) a statement of your values around diversity, inclusion, equity, and/or justice in higher education; (2) examples of your efforts towards fostering diversity of perspectives, and success of underrepresented members of the mathematical community; (3) future plans of said efforts. See the [Berkeley rubric](https://ofew.berkeley.edu/recruitment/contributions-diversity/rubric-assessing-candidate-contributions-diversity-equity).
 
 More resources on diversity statements: [[1]](https://www.insidehighered.com/advice/2016/06/10/how-write-effective-diversity-statement-essay), [[2]](https://cft.vanderbilt.edu/guides-sub-pages/developing-and-writing-a-diversity-statement/).
 
-##### Cover Letter
+### Cover Letter
 
 Briefly spell out your
 background and qualifications for a job. Cover letters should be
 somewhat tailored for each individual job, and can indicate people at
 the institution with whom you would be interested in working.
 
-##### Publication List
+### Publication List
 
 Enumerate all of your papers. If
 you have not yet published any, then you may list work in preparation
@@ -85,13 +85,13 @@ on your website. Completed works (ready for publication or wide
 distribution) should be put on the <a
 href="https://arxiv.org">ArXiv</a>.
 
-##### Personal Website
+### Personal Website
 
 People at schools to which you
 apply will Google you. Control what they see by having a <a href="#Website">professional
 website</a>.
 
-##### Letters of recommendation
+### Letters of recommendation
 
 Academic jobs will require <b>3-5 letters of recommendation</b>, 1-2 of which
 address teaching. One should be from your advisor; the remaining letters should
@@ -115,7 +115,7 @@ For your teaching letter, you should consider asking someone to observe your
 teaching in the Spring semester before you go on the job market or at the
 latest, early in the Fall semester of your final year.
 
-###### A note on personal contacts
+#### A note on personal contacts
 
 When making your list of schools to which you will apply, spend some time
 thinking about the faculty at the various institutions. If you know anyone there
@@ -131,11 +131,11 @@ stand out.
 
 If you are applying to teaching-focused jobs, you should have more data available to make a case for your teaching prowess. You should craft a teaching portfolio including the following items. Having specifically tailored cover letters is important for these job applications.
 
-##### Teaching Evaluations
+#### Teaching Evaluations
 
 Summarize these in a table. Presenting data in a more user-friendly format (for example, giving percentages of 4s and 5s rather than the average score can have a bigger impact) makes it more readable.
 
-##### Syllabi
+#### Syllabi
 
 Include a sampling of course syllabi you have written, especially those for courses referenced in your teaching statement. The CTE's [Course Design Institute](http://cte.virginia.edu/programs/course-design-institute/) is a great resource helping to come up with more students-oriented syllabi and courses.
 
@@ -146,30 +146,30 @@ Include a sampling of course syllabi you have written, especially those for cour
 ## Building a Website
 
 
-Your website is your profile on the web. Prospective employers will visit your website to look at your academic and job materials. Academic pages for students on the market have a fairly standard format. UVA can host a page for you at "theopenscholar", see [here](https://uva.theopenscholar.com/get-a-website/). There are also several popular third-party free hosting solutions, such as [GitHub Pages](https://pages.github.com/) and [Google sites](https://sites.google.com/new). 
+Your website is your profile on the web. Prospective employers will visit your website to look at your academic and job materials. Academic pages for students on the market have a fairly standard format. UVA can host a page for you at "theopenscholar", see [UVA OpenScholar website hosting](https://uva.theopenscholar.com/get-a-website/). There are also several popular third-party free hosting solutions, such as [GitHub Pages](https://pages.github.com/) and [Google sites](https://sites.google.com/new).
 
-##### Main Page
+### Main Page
 
 Briefly describe yourself and
 include links to your job materials here. Say who your advisor is and
 some about your working group. It's also common to include several
 hobbies here and a picture.
 
-##### Research Page
+### Research Page
 
 Include any papers,
 preprints, and drafts you are comfortable sharing. You can also include
 expository works that flesh out your profile. A brief summary of your
 research and findings should also go here.
 
-##### Teaching Page
+### Teaching Page
 
 Include a list of your
 courses along with links to any publically accessible course pages. You
 should say a little about the classes, rather than simply including a
 list.
 
-###### A note on tracking
+#### A note on tracking
 
 You may also include in your webpage some tracking / analytical cookies.
 This will help you gauge interest by seeing from where traffic comes. <a

@@ -29,6 +29,10 @@ nav_weight: 30
 <li>To request a recurring booking (e.g., weekly meetings or a course pattern), please contact the Mathematics Department office</li>
 </ul>
 
+<h2>Reservation assistance</h2>
+
+<p>If you need assistance checking room availability or making a reservation, the Department Office in Kerchof Hall 216 can help.</p>
+
 <h2>Contact</h2>
 
 <ul>

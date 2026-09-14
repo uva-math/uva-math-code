@@ -54,6 +54,6 @@ The university will perform background checks on all new hires prior to employme
 
 ## Equal Employment Opportunity Statement
 
-The University of Virginia is an equal opportunity employer. All interested persons are encouraged to apply, including veterans and individuals with disabilities. [Click here to read more about UVA's commitment to non-discrimination and equal opportunity employment.](https://eocr.virginia.edu/notice-non-discrimination-and-equal-opportunity)
+The University of Virginia is an equal opportunity employer. All interested persons are encouraged to apply, including veterans and individuals with disabilities. [UVA Notice of Non-Discrimination and Equal Opportunity](https://eocr.virginia.edu/notice-non-discrimination-and-equal-opportunity)
 
-The University of Virginia offers confidential Dual Career Services to partners of incoming faculty candidates. To learn more, please visit [dualcareer.virginia.edu](https://dualcareer.virginia.edu/)
+The University of Virginia offers confidential Dual Career Services to partners of incoming faculty candidates. To learn more, please visit [UVA Dual Career Services](https://dualcareer.virginia.edu/)

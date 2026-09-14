@@ -1,0 +1,43 @@
+---
+layout: static_page_no_right_menu
+title: Site map
+permalink: /sitemap/
+search_exclude: true
+---
+
+<h1>Site map</h1>
+<p>Browse department pages and documents, people, and news. You can also <a href="{{ site.url }}/search/">search the Mathematics website</a>.</p>
+<nav aria-label="Site map sections"><ul>
+  <li><a href="#pages">Pages and documents</a></li>
+  <li><a href="#people">People</a></li>
+  <li><a href="#news">News and events</a></li>
+</ul></nav>
+<h2 id="pages">Pages and documents</h2>
+<ul class="site-map-pages">
+  <li><a href="{{ site.url }}/">Department home page</a></li>
+  {% assign sorted_pages = site.pages | sort_natural: 'title' %}
+  {% for item in sorted_pages %}
+    {% if item.title and item.search_exclude != true and item.redirect_to == nil and item.published != false %}
+      {% unless item.url contains '/allnews/page' %}
+      <li><a href="{{ site.url }}{{ item.url }}">{{ item.title | strip_html | escape }}</a></li>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+</ul>
+<h2 id="people">People</h2>
+<ul>
+  {% assign sorted_people = site.departmentpeople | sort_natural: 'lastname' %}
+  {% for item in sorted_people %}
+  <li><a href="{{ site.url }}{{ item.url }}">{{ item.name | escape }} {{ item.lastname | escape }}</a></li>
+  {% endfor %}
+</ul>
+<h2 id="news">News and events</h2>
+{% assign news_years = site.posts | group_by_exp: 'post', "post.date | date: '%Y'" %}
+{% for year in news_years %}
+<h3>{{ year.name }}</h3>
+<ul>
+  {% for item in year.items %}
+  <li><a href="{{ site.url }}{{ item.url }}">{{ item.title | strip_html | escape }}</a></li>
+  {% endfor %}
+</ul>
+{% endfor %}

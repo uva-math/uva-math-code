@@ -1,0 +1,1962 @@
+{
+  "version": 1,
+  "public_origin": "https://math.virginia.edu",
+  "documents": [
+    {
+      "pdf": "IMS/files/CIRMATH AMERICAS Program 2018.pdf",
+      "original_pages": 12,
+      "original_sha256": "0951de60a6bafc12c036e5caadf3071677b32e890b522e532ce13cde48577279",
+      "sources": [
+        "/IMS/files/CIRMATH AMERICAS Program 2018.html"
+      ],
+      "status": "complete HTML companion verified"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/Schedule.pdf",
+      "sources": [
+        "/ims/workshop-fall-2018/schedule/index.html"
+      ],
+      "original_pages": 6,
+      "original_sha256": "f739c7f253619dae4229a06f8478fc4c30644382267042c8881683a4a2ee95f0"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Collins.pdf",
+      "original_pages": 36,
+      "original_sha256": "e43509da4551c9eef1535a5d2a49d70ea0ebf2e37abe0bece24c59364688cc15",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Friday/1 - Welch - UVA.pdf",
+      "original_pages": 22,
+      "original_sha256": "8909278b1fb66d6ce0d2d36501b8c0de18afa7159b3b7d153665c807dc58bf2a",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Friday/2 - 18UVa20m.pdf",
+      "original_pages": 19,
+      "original_sha256": "c2b362b9ec281b13a9613297a4be643c85a73bd87636fc678e2178472ce2ac9a",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Friday/3 - SatConjD.pdf",
+      "original_pages": 100,
+      "original_sha256": "f9bfdc9efe31e95db574b810ff2c288d14df01518e21c23af8ec3f4a517158cb",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Li.pdf",
+      "original_pages": 105,
+      "original_sha256": "3066ad7e1868cd8da1146dd195d75f6757f55b302f983ef9687d1c073254b54a",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Saturday/1 - tpc_pres.pdf",
+      "original_pages": 33,
+      "original_sha256": "11de08b6371dcc96d7e3dac72b397d6e00159b081d58d0a404e4b64d77d6d9bd",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Saturday/2 - vanishing_pres__VA.pdf",
+      "original_pages": 12,
+      "original_sha256": "dcce323618679973a0bd24a6693ac1fe89b39ec63eeb73605dc6a7cf325b64d5",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Saturday/3 - KRcactusslides_short.pdf",
+      "original_pages": 26,
+      "original_sha256": "d85e67333d6c8c4fe4c42a7e3500ae4401c385f32d1e52082147ee7f97a648b2",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Schilling.pdf",
+      "original_pages": 83,
+      "original_sha256": "4736a12e3e607d0c58b91258201340adbbacf2d04cee0b516b8e2211ad562c42",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Sunday/1 - UVA_oct21_workshop.pdf",
+      "original_pages": 19,
+      "original_sha256": "fac6ac1878c9331b5989f6d464fbcbc3f4ec5d0036b14280c006480f517d25e5",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Sunday/2 - UVA2018Kvinge.pdf",
+      "original_pages": 30,
+      "original_sha256": "c92959b3f12889e461d31ea8f9a01c7a36e60438c51551484859e0dd7be3db9e",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Wan.pdf",
+      "original_pages": 100,
+      "original_sha256": "e29aea4601124b75bd189a45ad843189ef2368b565e50bb66f30df99f7a522fe",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Webster.pdf",
+      "original_pages": 31,
+      "original_sha256": "1346e20a7982c2a10f7b8b1de857cc439bac6abf85b2979ee9b1a1bb1344eefe",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Yong.pdf",
+      "original_pages": 13,
+      "original_sha256": "9427eaf22da94a057b314af917b75785800455fe3dc0ca1917af427797f39ad1",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "IMS/parshall-workshop-spring-2020/parshall-workshop-spring-2020-poster.pdf",
+      "sources": [
+        "/IMS/parshall-workshop-spring-2020/parshall-workshop-spring-2020-poster.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "50113b9d8b16d2b960a8de1b4e4075e097e5817d70db988a999d061d59a93e68"
+    },
+    {
+      "pdf": "IMS/selie_icm2026/conf_schedule.pdf",
+      "sources": [
+        "/IMS/selie_icm2026/conf_schedule.html"
+      ],
+      "original_pages": 17,
+      "original_sha256": "03e0c73300235e6dd59d299f0ace69a0a3a0d3cc78fd87f6a34f9612e2e21617"
+    },
+    {
+      "pdf": "IMS/workshop_spring_2022/Schedule.pdf",
+      "original_pages": 8,
+      "original_sha256": "852334586b65b2d6f879e0472c0c729d900b6df66acc9f511c41bce85fb86cf2",
+      "sources": [
+        "/ims/workshop-spring-2022/schedule/index.html"
+      ],
+      "status": "complete HTML companion verified"
+    },
+    {
+      "pdf": "IMS/workshop_spring_2024_selie/LosevLec1.pdf",
+      "sources": [
+        "/IMS/workshop_spring_2024_selie/LosevLec1.html"
+      ],
+      "original_pages": 8,
+      "original_sha256": "129920ccd78b253ed4bf61340ef6275dd0b87011f03e6a71fefe9164d79bb42d"
+    },
+    {
+      "pdf": "IMS/workshop_spring_2024_selie/LosevLec2.pdf",
+      "sources": [
+        "/IMS/workshop_spring_2024_selie/LosevLec2.html"
+      ],
+      "original_pages": 6,
+      "original_sha256": "ea5ed7d3e91b8f4a3533be946c323241644560db0028e9ad3f0f4b424c3dece9"
+    },
+    {
+      "pdf": "IMS/workshop_spring_2024_selie/LosevLec3.pdf",
+      "sources": [
+        "/IMS/workshop_spring_2024_selie/LosevLec3.html"
+      ],
+      "original_pages": 5,
+      "original_sha256": "422e928f32188f731d326fb5dc99babf83b782f7011b91636a9cfa0f7d12c805"
+    },
+    {
+      "pdf": "IMS/workshop_spring_2024_selie/Schedule.pdf",
+      "original_pages": 9,
+      "original_sha256": "f7ce69c0f6aaf8c607b50980accc1322719cbe8e30899f2362b914296073e767",
+      "sources": [
+        "/ims/workshop-spring-2024/schedule/index.html"
+      ],
+      "status": "complete HTML companion verified"
+    },
+    {
+      "pdf": "PDFs/Alec_Traaseth.pdf",
+      "original_pages": 1,
+      "original_sha256": "77460525d651d24e7cd3b81ef789e218c69e6be0b2fd842e7b472a9583f0b26a",
+      "sources": [
+        "/PDFs/Alec_Traaseth.html"
+      ],
+      "status": "Complete HTML transcription reviewed against all rendered source pages."
+    },
+    {
+      "pdf": "PDFs/Hasan_Saad.pdf",
+      "original_pages": 1,
+      "original_sha256": "bdf9867223803f095a0d0d1e2483c18b1c08ea892bb63ee2ceacc6b7b4d6b74f",
+      "sources": [
+        "/PDFs/Hasan_Saad.html"
+      ],
+      "status": "Complete HTML transcription reviewed against all rendered source pages."
+    },
+    {
+      "pdf": "PDFs/Yaolong_Shen.pdf",
+      "original_pages": 1,
+      "original_sha256": "f65eeda1023e9bbe71dbffef7ab9bf9514b7dd4da1506d142494c18c81a496e3",
+      "sources": [
+        "/PDFs/Yaolong_Shen.html"
+      ],
+      "status": "Complete HTML transcription reviewed against all rendered source pages."
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2014.pdf",
+      "sources": [
+        "/allnews/virginia-math-bulletin/Bulletin2014.html"
+      ],
+      "original_pages": 9,
+      "original_sha256": "2ef4627c1ee74c05cfde30caf2915780f7442693a8d70d24bf461fadd12415f1"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2015.pdf",
+      "sources": [
+        "/allnews/virginia-math-bulletin/Bulletin2015.html"
+      ],
+      "original_pages": 11,
+      "original_sha256": "c726ccc02b8478926d65d474d8a1548139e060bb5ca40a8b86efa82f991c56b5"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2016.pdf",
+      "sources": [
+        "/allnews/virginia-math-bulletin/Bulletin2016.html"
+      ],
+      "original_pages": 13,
+      "original_sha256": "cc446c47ad9eafe865a9c4102a500976a5dc36ad40534dce5555ec9205cef568"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2017.pdf",
+      "sources": [
+        "/allnews/virginia-math-bulletin/Bulletin2017.html"
+      ],
+      "original_pages": 11,
+      "original_sha256": "983c1b7046cc301d8a2a582798f5badf4df962be40182f5a9c7e303ba10ffabd"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2018.pdf",
+      "sources": [
+        "/allnews/virginia-math-bulletin/Bulletin2018.html"
+      ],
+      "original_pages": 15,
+      "original_sha256": "a576ef6afbc0c385035757b16980610cc599f943cd8ded3f652fe280dd96010c"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2019.pdf",
+      "sources": [
+        "/allnews/virginia-math-bulletin/Bulletin2019.html"
+      ],
+      "original_pages": 15,
+      "original_sha256": "e980dcfe3a186fbfa3b4451395406776d0d6890cf13c87589245b6a38c48abdc"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2020.pdf",
+      "sources": [
+        "/allnews/virginia-math-bulletin/Bulletin2020.html"
+      ],
+      "original_pages": 15,
+      "original_sha256": "29c1813df8c37df2cebe231dd059179c55fdd564e6f2bf2d208ca358d7080b92"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2021.pdf",
+      "sources": [
+        "/allnews/virginia-math-bulletin/Bulletin2021.html"
+      ],
+      "original_pages": 33,
+      "original_sha256": "b1a9ba7c7693b45d620f3eaf7c645ed5e135f1b14a69986cebc778cf906f8d37"
+    },
+    {
+      "pdf": "drp/Mentor_Guidelines.pdf",
+      "sources": [
+        "/drp/Mentor_Guidelines.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "5baa3dd0fb56e6ad6b0ac8a502b81dc1e05bc590ca7849469b32e98b4923875c"
+    },
+    {
+      "pdf": "f26.pdf",
+      "original_pages": 2,
+      "original_sha256": "9775f6fa4d2d903117be22fc43d3a94148d4f540dff82809afe3652f8a4d5a06",
+      "sources": [
+        "/schedule/index.html"
+      ],
+      "status": "Compact tagged print layout from the full room-free schedule source; complete semantic HTML companion.",
+      "print_layout": "schedule"
+    },
+    {
+      "pdf": "graduate/docs/DSP-GMP Info Sheets_2015 2.pdf",
+      "sources": [
+        "/graduate/docs/DSP-GMP Info Sheets_2015 2.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "c69c92f46c1c8f79d8835fe7e01cefeb1f8174b45328feb9d57b36168b8c3273"
+    },
+    {
+      "pdf": "graduate/docs/PosterTemplate.pdf",
+      "sources": [
+        "/graduate/docs/PosterTemplate.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9"
+    },
+    {
+      "pdf": "graduate/docs/PosterTemplate/PosterTemplate.pdf",
+      "original_pages": 1,
+      "original_sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9",
+      "sources": [
+        "/graduate/docs/PosterTemplate.html"
+      ],
+      "status": "complete HTML companion verified"
+    },
+    {
+      "pdf": "graduate/docs/PosterTemplate/mathlogo2.pdf",
+      "original_pages": 1,
+      "original_sha256": "94eea540fbd2c5e247935018306d2b7faec4f2f12addd7f415c932432367c24c",
+      "sources": [],
+      "status": "Original single-page artwork retained visually; tagged as a described Figure and validated against PDF/UA-1.",
+      "artwork": true
+    },
+    {
+      "pdf": "graduate/docs/PosterTemplate/rotunda-drawing.pdf",
+      "original_pages": 1,
+      "original_sha256": "5bda1600e54040e93fc5392289c8a8f8df1a6487ab5d4f17024f95ad327d3752",
+      "sources": [],
+      "status": "Original single-page artwork retained visually; tagged as a described Figure and validated against PDF/UA-1.",
+      "artwork": true
+    },
+    {
+      "pdf": "graduate/docs/Syllabus for Algebra General Exam 1 - update 2023.pdf",
+      "sources": [
+        "/graduate/docs/algebra-general-exam-syllabus/index.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "287056e8244353df53b7989fb9ba9d4e1470aff05b225b74e391b73e6d409163"
+    },
+    {
+      "pdf": "graduate/docs/Syllabus for Analysis General Exam 2.pdf",
+      "sources": [
+        "/graduate/docs/analysis-general-exam-syllabus/index.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "03ac7418e90b879ba2f494bd1227dddf1acf5a667e74acabc4ccc12e7164b6a1"
+    },
+    {
+      "pdf": "graduate/docs/Syllabus for Topology General Exam 3.pdf",
+      "sources": [
+        "/graduate/docs/topology-general-exam-syllabus/index.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "5c26818a30e75c75bc0742ee3681f9d7bd3ff75f8c5b9fa43a7a38f73a8e1728"
+    },
+    {
+      "pdf": "graduate/docs/oral_exam_form.pdf",
+      "sources": [
+        "/graduate/docs/oral_exam_form.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "9fbfa5dfe0011b68aedb25ec018b9d627f66e7c8b2c58d6ba647ca54772b14d7"
+    },
+    {
+      "pdf": "graduate/exams/algebra/01-2026.pdf",
+      "original_pages": 2,
+      "original_sha256": "a429b771ef46d0262e7edd3df2069cd80462840db4890d1267b4b29978aece95",
+      "sources": [
+        "/graduate/exams/algebra/2026-01.html"
+      ],
+      "status": "complete HTML companion verified"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2003-05.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2003-05.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "7800d5c046eef95473c63cb80be72b169397b8d9ee886e77b43d5bd539c442f1"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2003-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2003-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "386b5de6c334ed72f19212beaeeca37f549a9edf3ede00d4272f600a2d77e100"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2004-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2004-01.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "74af7e81309ea4d43852e831c60ec7bc418fac4f24f47cba9f915f23415a3183"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2004-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2004-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "551df1dfadccef6f8bfecc81b5dc5bb5e878841f12a85a4d98c4a20ea59e0f2a"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2006-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2006-01.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "fe2109bdbfe4a1463d316898fbbea55324b213f3c117afa5d0274f57eb10bf05"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2006-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2006-08.html"
+      ],
+      "original_pages": 11,
+      "original_sha256": "98d8e72719e2e7cdb7dd628506f2ebba6e3db3fbd874e833b9d79517d73fe3a0"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2007-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2007-01.html"
+      ],
+      "original_pages": 11,
+      "original_sha256": "4793dd6aa2bf151e9c5747193e86ae01276f2ffa03cba2dd1c8782cc8559da48"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2007-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2007-08.html"
+      ],
+      "original_pages": 10,
+      "original_sha256": "2530e0777e877ce19bd4ce29d8b9841d14b55530c717713c64c9b632f467e561"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2008-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2008-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "56d110704acbe205cfc18c46e6f1a8047d47ae3c9b4a76df74e030bd0b970113"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2008-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2008-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "9c35fd135fd66f67ee91c71fd25c8dbf7217cc112f61478d82eb61a386c37869"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2009-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2009-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "b563f279b5017b227bcd3a5679f1e83f73123e1237a705c52ae7367f0eeb4a4f"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2009-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2009-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "646a2577292b5eef1c432c09a8c826561b1967b14ce9dee4b5fa1d51a8cab480"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2010-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2010-08.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "334de222535d5a5fb541e977b8cec005f22dcc480d38a36223e4ed507cbb108e"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2011-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2011-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "625ea0cb9e8ff8127c3e5e9ad50d7cb20a1dce5d2f580974abdb27d57d56c2e7"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2011-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2011-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "b1edcc37626dc9433207b306c059aed97c10d8dc10829043e49d0a201f7f1005"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2012-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2012-01.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "2cda76dd038fdb72067e3dfe1ac9e3f58952e8b33289cf7dc31f256abebf81f4"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2012-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2012-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "2cd961d87d28ba7b4e6d489662717d86cdedb718a2d1e04b9e0fa9cc8ac62f3e"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2013-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2013-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "ddc0f2742ddb1ac26804912f0a9898d08816f7553b21731ef43bce8597abe8eb"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2013-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2013-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "6c9f6038c9f8308acd7ffc3f8dea4673d8487e531a32b15b24b249fa6f6d26e7"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2014-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2014-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "535f668b2692aa9851748eebb59c4f0bde5d2517b4feafcd6d1d1f88be074cc0"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2014-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2014-08.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "c6d845cc407bee69767c9be81355e3890e9914e6d49380a7ddf080d2b9db888d"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2015-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2015-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "95be8d1efd1a4a4a61d21e5c2401fbfab18fd8a3c15bbe4be0048ed37daaf891"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2016-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2016-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "b13dcbfc69d7ae530c086ded0be76959aa796fa473d25b4d9ffb684dbf4efece"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2016-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2016-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "9465543583870ddf5f9304d739c5a7c471aeb6afb0cb071b40f4d7eed4055207"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2017-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2017-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "d67d70f1b704e9046683938cb356becbab04f845cb0e3e68d7575ac0658d081b"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2017-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2017-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "0d1a3d5d3eb298e2bc58be46d67f2161fdf2c91fe86b3626db1f5cc0f3cbebf5"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2018-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2018-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "15d02a25b9d92faf4862fec5a5622856d90538343e00b49791ee4f638524e32d"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2018-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2018-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "8ffdb1fcdb7231e0332f48c71d78248cb6877a0042a320ddbdf4ee7225d532c8"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2019-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2019-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "9944dcafcfff2030bd549f0e575d7238272b8e9097c5bd1e60e800505741dcb6"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2019-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2019-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "9f30d81b473acd5500d52d5561edac362dafb4c5f24669b5d64502135770f16b"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2020-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2020-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "453b09323343d2911dbc93997ea72195eec4d772229370cb89363283cf759995"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2020-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2020-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "792184c8d9b410cb790b73b20c25bcefb9033f2d7092617c2979d040af79ab12"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2021-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2021-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "dc7970411d41dc212576b5dba1a9d06e2937276822a0d6eb9c85885efaa58c75"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2021-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2021-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "c1284af17fda5798f7a7cfe0aa811d8980c9045c8a51916f829cfb9f565d8398"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2022-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2022-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "11d122cf3766fab853f2f60ebdde607589b4fca45af19295b1bf29bffb48a8d7"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2022-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2022-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "2ed6636741fbbc860f64c275751bf079c9966f18cae9fd24bd8c52819cba6f16"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2023-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2023-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "3d5b892132f1b8306a15464d30689cfd08e12a81ff98f6ca376b4bd02857772f"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2023-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2023-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "d41f04e0df69cbc860453d54c888664cc830744aece889b7803e66c10d803aad"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2024-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2024-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "54708493749c86308133c546d344806cf56376e5a78c8882c5627fc3e4c762f8"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2024-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2024-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "42abb56e7bf33f1586872cac74dc86792f72cf90d053be0ac92f6fdc98266846"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2025-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2025-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "00406b15f32f151435d071db0ab5c97ccc28de79e2e8bbe48defc8de123426b8"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2025-08.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2025-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "ccd1be1723dca697baa65ba6fad64cd8a73b835601dd7f4d570ceb4d92b0feb6"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2026-01.pdf",
+      "sources": [
+        "/graduate/exams/algebra/2026-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "a429b771ef46d0262e7edd3df2069cd80462840db4890d1267b4b29978aece95"
+    },
+    {
+      "pdf": "graduate/exams/algebra/AlgGento02.pdf",
+      "sources": [
+        "/graduate/exams/algebra/AlgGento02.html",
+        "/graduate/exams/algebra/alg-001.html",
+        "/graduate/exams/algebra/alg-006.html",
+        "/graduate/exams/algebra/alg-009.html",
+        "/graduate/exams/algebra/alg-010.html",
+        "/graduate/exams/algebra/alg-011.html",
+        "/graduate/exams/algebra/alg-012.html",
+        "/graduate/exams/algebra/alg-013.html",
+        "/graduate/exams/algebra/alg-015.html",
+        "/graduate/exams/algebra/alg-018.html",
+        "/graduate/exams/algebra/alg-027.html",
+        "/graduate/exams/algebra/alg-028.html",
+        "/graduate/exams/algebra/alg-035.html",
+        "/graduate/exams/algebra/alg-038.html",
+        "/graduate/exams/algebra/alg-040.html",
+        "/graduate/exams/algebra/alg-041.html",
+        "/graduate/exams/algebra/alg-043.html",
+        "/graduate/exams/algebra/alg-1977-04-1.html",
+        "/graduate/exams/algebra/alg-1977-04.html",
+        "/graduate/exams/algebra/alg-1977-11-1.html",
+        "/graduate/exams/algebra/alg-1977-11.html",
+        "/graduate/exams/algebra/alg-1978-05-1.html",
+        "/graduate/exams/algebra/alg-1978-05.html",
+        "/graduate/exams/algebra/alg-1978-09-1.html",
+        "/graduate/exams/algebra/alg-1978-09.html",
+        "/graduate/exams/algebra/alg-1980-05-1.html",
+        "/graduate/exams/algebra/alg-1980-05.html",
+        "/graduate/exams/algebra/alg-1980-09-1.html",
+        "/graduate/exams/algebra/alg-1980-09.html",
+        "/graduate/exams/algebra/alg-1987-xx.html",
+        "/graduate/exams/algebra/alg-1992-01.html",
+        "/graduate/exams/algebra/alg-1992-05.html",
+        "/graduate/exams/algebra/alg-1993-xx.html",
+        "/graduate/exams/algebra/alg-1994-xx-1.html",
+        "/graduate/exams/algebra/alg-1994-xx.html",
+        "/graduate/exams/algebra/alg-1997-xx.html",
+        "/graduate/exams/algebra/alg-1998-xx-1.html",
+        "/graduate/exams/algebra/alg-1998-xx-2.html",
+        "/graduate/exams/algebra/alg-1998-xx.html",
+        "/graduate/exams/algebra/alg-1999-xx-1.html",
+        "/graduate/exams/algebra/alg-1999-xx-2.html",
+        "/graduate/exams/algebra/alg-1999-xx.html",
+        "/graduate/exams/algebra/alg-2000-xx.html",
+        "/graduate/exams/algebra/alg-2002-xx.html"
+      ],
+      "original_pages": 90,
+      "compilation": true,
+      "original_sha256": "cb37ce0b178a062d7181c6c446811336e9c1f2529af11c801b52886d29343ca4"
+    },
+    {
+      "pdf": "graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.pdf",
+      "sources": [
+        "/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html",
+        "/graduate/exams/algebra/alg-prep-1-1.html",
+        "/graduate/exams/algebra/alg-prep-1-2.html",
+        "/graduate/exams/algebra/alg-prep-1-3.html",
+        "/graduate/exams/algebra/alg-prep-2-1.html",
+        "/graduate/exams/algebra/alg-prep-2-2.html",
+        "/graduate/exams/algebra/alg-prep-2-3.html",
+        "/graduate/exams/algebra/alg-prep-3-1.html",
+        "/graduate/exams/algebra/alg-prep-3-2.html",
+        "/graduate/exams/algebra/alg-prep-4-1.html",
+        "/graduate/exams/algebra/alg-prep-4-2.html",
+        "/graduate/exams/algebra/alg-prep-5-1.html",
+        "/graduate/exams/algebra/alg-prep-5-2.html",
+        "/graduate/exams/algebra/alg-prep-5-3.html"
+      ],
+      "original_pages": 78,
+      "compilation": true,
+      "original_sha256": "3c59cf7e1f997192d4a72457bbb655bd7ab2360cbe498becd9f1d133bc298b8b"
+    },
+    {
+      "pdf": "graduate/exams/analysis/1977-2004.pdf",
+      "sources": [
+        "/graduate/exams/analysis/1977-2004.html",
+        "/graduate/exams/analysis/analysis-1977-10-real.html",
+        "/graduate/exams/analysis/analysis-1978-04-real.html",
+        "/graduate/exams/analysis/analysis-1978-09-real.html",
+        "/graduate/exams/analysis/analysis-1979-01-real.html",
+        "/graduate/exams/analysis/analysis-1980-01-real.html",
+        "/graduate/exams/analysis/analysis-1980-09-real.html",
+        "/graduate/exams/analysis/analysis-1981-01-real.html",
+        "/graduate/exams/analysis/analysis-1981-09-real.html",
+        "/graduate/exams/analysis/analysis-1982-01-real.html",
+        "/graduate/exams/analysis/analysis-1982-09-real.html",
+        "/graduate/exams/analysis/analysis-1983-01-real.html",
+        "/graduate/exams/analysis/analysis-1983-09-real.html",
+        "/graduate/exams/analysis/analysis-1984-09-real.html",
+        "/graduate/exams/analysis/analysis-1985-09-real.html",
+        "/graduate/exams/analysis/analysis-1986-01-real.html",
+        "/graduate/exams/analysis/analysis-1986-09-real.html",
+        "/graduate/exams/analysis/analysis-1987-01-real.html",
+        "/graduate/exams/analysis/analysis-1987-09-real.html",
+        "/graduate/exams/analysis/analysis-1988-05-real.html",
+        "/graduate/exams/analysis/analysis-1988-09-real.html",
+        "/graduate/exams/analysis/analysis-1989-01-real.html",
+        "/graduate/exams/analysis/analysis-1989-05-real.html",
+        "/graduate/exams/analysis/analysis-1989-09-real.html",
+        "/graduate/exams/analysis/analysis-1990-05-real.html",
+        "/graduate/exams/analysis/analysis-1990-09-real.html",
+        "/graduate/exams/analysis/analysis-1991-01-real.html",
+        "/graduate/exams/analysis/analysis-1993-08-real.html",
+        "/graduate/exams/analysis/analysis-1996-12-real.html",
+        "/graduate/exams/analysis/analysis-1997-08-real.html",
+        "/graduate/exams/analysis/analysis-1998-12-real.html",
+        "/graduate/exams/analysis/analysis-1998-08-real.html",
+        "/graduate/exams/analysis/analysis-2000-09-real.html",
+        "/graduate/exams/analysis/analysis-2003-12-real.html",
+        "/graduate/exams/analysis/analysis-1977-05-complex.html",
+        "/graduate/exams/analysis/analysis-1977-11-complex.html",
+        "/graduate/exams/analysis/analysis-1978-05-complex.html",
+        "/graduate/exams/analysis/analysis-1978-09-complex.html",
+        "/graduate/exams/analysis/analysis-1979-05-complex.html",
+        "/graduate/exams/analysis/analysis-1979-09-complex.html",
+        "/graduate/exams/analysis/analysis-1980-04-complex.html",
+        "/graduate/exams/analysis/analysis-1980-09-complex.html",
+        "/graduate/exams/analysis/analysis-1981-01-complex.html",
+        "/graduate/exams/analysis/analysis-1988-09-complex.html",
+        "/graduate/exams/analysis/analysis-1989-01-complex.html",
+        "/graduate/exams/analysis/analysis-1990-09-complex.html",
+        "/graduate/exams/analysis/analysis-1991-05-complex.html",
+        "/graduate/exams/analysis/analysis-1992-01-complex.html",
+        "/graduate/exams/analysis/analysis-1993-01-complex.html",
+        "/graduate/exams/analysis/analysis-1998-08-complex.html",
+        "/graduate/exams/analysis/analysis-2003-12-complex.html",
+        "/graduate/exams/analysis/analysis-1993-xx-general.html",
+        "/graduate/exams/analysis/analysis-029.html",
+        "/graduate/exams/analysis/analysis-030.html",
+        "/graduate/exams/analysis/analysis-2003-xx-general.html",
+        "/graduate/exams/analysis/analysis-054.html",
+        "/graduate/exams/analysis/analysis-1997-08-general.html"
+      ],
+      "original_pages": 107,
+      "compilation": true,
+      "original_sha256": "da5664513c352a2184de9e63ff8a129c1d3c6437ba9c31fbac8c0b5b6a96bb78"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2007Aug.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2007Aug.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "bf6b0b4d1da825a7f5181ffeb0d3db25ffaa36d178ac4eb063115e7101965c9f"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2009Aug.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2009Aug.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "8baa1cb1658b30c998802a570aa8666f47781a789a0f9541c52fa0df9fff32e0"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2009Jan.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2009Jan.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "967bca97b9c0ef9ef6c27e2756de7c9dc8f1e4f5dfa35dc8cb3d25dd00a4acef"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2010Aug.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2010Aug.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "12e06f183ab3c72cd8117e969598db1578544209077771dcc3241eb9644565d4"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2010Jan.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2010Jan.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "c4e0bffbac14a655ef22be2fb7dfd49c5325189f7f9c09065f58c48967d54133"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2011Aug.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2011Aug.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "8eb784f66bcb876904c2c846e0e017314b9de2444f92e6054815f93fbc237eaf"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2011Jan.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2011Jan.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "d0d2fa4eb586d069b20afa5f571646eaba92e6e1aa1b2bfe3c926642545bd936"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2012Aug.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2012Aug.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "9086ea514366b7026f8ccd751fa1dd6c303ac12cbb4cea430418d6c48a14250b"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2013Aug.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2013Aug.html"
+      ],
+      "original_pages": 4,
+      "original_sha256": "1d8dd51b0c70658139485e408248d191dd47cb2c9a009af518db2d1e3243c74c"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2013Jan.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2013Jan.html"
+      ],
+      "original_pages": 9,
+      "original_sha256": "3fbe02145e8d818b28ef2960b35ae1f0476e7da1c3cbf4e3ff33ce32c1df9f57"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2014Aug.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2014Aug.html"
+      ],
+      "original_pages": 11,
+      "original_sha256": "999e96b11e7e62e870c89ac8e92f42a5c9d87c7002c0c2d3188bbef2e3a3bac7"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2015Aug.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2015Aug.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "bd11e9fc5d709a7edf2ed1e56b0ea8ad6e58306eb74adad4a7dc4795f8ec2a7c"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2016Aug.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2016Aug.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "b09b8e2898ab4ac6f398dd0f61e4103ade92e00e161c352024e2ac6b290b1337"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2017Aug.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2017Aug.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "544d0be0e877f1fcafebb0c0348d7c68d121aaaeb8a74b3a06597d17797e9cec"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2017Jan.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2017Jan.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "30e2fbe517581b794a636faf9d73268893dafafa2fd0e2b9efccf5311697560b"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2019Aug_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2019Aug_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "044c5e6cc48d4e05c57d0bb409ea9d34a43d2e75e5a74162f717dfefb4c2d62a"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2019Aug_real.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2019Aug_real.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "000194e6a34c0baaa52d889c6757020b2297379bca35404cb743045807e387ef"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2020Aug_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2020Aug_complex.html"
+      ],
+      "original_pages": 5,
+      "original_sha256": "e783e466f75506629b95217b9b949b773b9feab252af86ec0257dc15f009ae3c"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2020Aug_real.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2020Aug_real.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "da44ba5df89483e4f7b087cab56392dd4d379ae7e390147839c65c00bb57c6d8"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2020Jan_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2020Jan_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "9e562dbc1fba7f36f40118894173022703311781af94dbc76e6b669f12ecf519"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2020Jan_real.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2020Jan_real.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "eb927dbfc0e3649e8557c083c92135cdd67d075bb79b42e7c85157f611c033be"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2021Aug_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2021Aug_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "ede1d50a4d170ff4a60f72b304655609c7e7e5c94246b32ee86f6f4c374c6782"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2021Jan_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2021Jan_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "45a9f1fce453a80668b430463dfb446441424cfe8528d438d2d77cb26ce3e0d0"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2021Jan_real.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2021Jan_real.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "2657e8477e6d50077db4703ae5fa2ac88c73b4d47a35add5c6aaf3de3e110b51"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2022Aug_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2022Aug_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "e97df5bb9bb59e4c041ba314745dbddb712b968f10687df26c0cdc69bc77cf7d"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2022Aug_real.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2022Aug_real.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "96a5e38e25a55d9bb57625bdba98c3f503ceb8c566c0a2c6ad45cbd4574b5c18"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2022Jan_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2022Jan_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "d3bfc11d22497d26d1c0021aeda926506dcb2b2db661a377ca5ef03a42bcb88d"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2022Jan_real.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2022Jan_real.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "c4468d3b72af3f7846176b2fd9daa243dd263f55de14204d1f8801030a7a19da"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2023Aug_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2023Aug_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "82bda7c876fddbb56d981e7e972dd19e5d71b18ef1e869dbebcc4ee144ca1b81"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2023Aug_real.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2023Aug_real.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "c4b00fbb68a4569724221373bd0153bb07c5849f6453962b72a50dcd42b0ce04"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2023Jan_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2023Jan_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "db4a274b7d005baa2e4cbf64dfd48c3d127654806d92aaed2350749276c73fc3"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2023Jan_real.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2023Jan_real.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "2507beb80608fb56aaf8cee801a558d042b3e36fb20f984586b68760abbb517b"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2024Aug_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2024Aug_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "d05f6e36d5b0a70296049ab244458786c5a999589a304b15715c7dacdb711905"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2024Aug_real.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2024Aug_real.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "44968141a90e5d1027f17c23637b15bc68c510aff3405bfd0f2cddbe4c9aa2c4"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2024Jan_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2024Jan_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "91a374fac3a391145d437777b1cfa519afc55f41a8f30ada2453fae07335b362"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2025Aug_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2025Aug_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "9b10d69324866a084f103e1eb40bb78ffd48c90671d247825954e2ff03bd0181"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2025Aug_real.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2025Aug_real.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "fbb3fbcb38d0469d9fcb82e2ed8a41026b907a53c2cb7cc389caf485e81b9bc1"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2025Jan_complex.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2025Jan_complex.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "c764fadfa1d7171891ac0ee2131e2a7d2c160fa4236ffc4a77cecbf0092116a2"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2025Jan_real.pdf",
+      "sources": [
+        "/graduate/exams/analysis/2025Jan_real.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "1c55edf2e8cb9f28f368a79d36155290f9f6861efecd2c7e5e26ef03c12ab172"
+    },
+    {
+      "pdf": "graduate/exams/topology/2010-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2010-08.html"
+      ],
+      "original_pages": 9,
+      "original_sha256": "d534a18cabd1a67142c8a4e03145b3bde4fa75ebec72f75b8205acf2d94b1e06"
+    },
+    {
+      "pdf": "graduate/exams/topology/2012-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2012-08.html"
+      ],
+      "original_pages": 8,
+      "original_sha256": "ae7631ddd230ce41d3f53ba97dab1692b47e0c71435c60988b3b9059139a748c"
+    },
+    {
+      "pdf": "graduate/exams/topology/2013-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2013-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "5ea5349d076cf33acf5809bce2f1581cffe1afe27db0ab833e27723df64af01b"
+    },
+    {
+      "pdf": "graduate/exams/topology/2014-01.pdf",
+      "sources": [
+        "/graduate/exams/topology/2014-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "b72a9b7537598a1e181b2b2593212a1b10e7c41c8fb93674596793270000471d"
+    },
+    {
+      "pdf": "graduate/exams/topology/2014-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2014-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "2fdda94216baf68963045ad5506b80a233133a7ebbf1b6481fc22430df687b86"
+    },
+    {
+      "pdf": "graduate/exams/topology/2015-01.pdf",
+      "sources": [
+        "/graduate/exams/topology/2015-01.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "9236761a88f46114dc0e569f29bb83e97962ba39da8a2fff16eb1e9c0b5f6bb3"
+    },
+    {
+      "pdf": "graduate/exams/topology/2015-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2015-08.html"
+      ],
+      "original_pages": 7,
+      "original_sha256": "7adfd3cdfe0bb9fab13357b3565ded775bd7d603abe7251bbf4d8a8e382ae1f0"
+    },
+    {
+      "pdf": "graduate/exams/topology/2016-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2016-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "dcab85ce41e77d4c981ce72e82f52ef9568a982eeab3843d12aeb2f0173c68cc"
+    },
+    {
+      "pdf": "graduate/exams/topology/2017-01.pdf",
+      "sources": [
+        "/graduate/exams/topology/2017-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "5834e15d771ef3d2360efd0c372e412c0c768399e31350c495ca6d81ca87aa09"
+    },
+    {
+      "pdf": "graduate/exams/topology/2017-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2017-08.html"
+      ],
+      "original_pages": 8,
+      "original_sha256": "26c38fe60af7b5a89d4f3c8f5ab214aa7d633d36c16b4e4fae170373783ed01e"
+    },
+    {
+      "pdf": "graduate/exams/topology/2018-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2018-08.html"
+      ],
+      "original_pages": 8,
+      "original_sha256": "331a4729c6641c85afea7e90a5eb52120a90baf9412458ff4225b8a5fc8775fb"
+    },
+    {
+      "pdf": "graduate/exams/topology/2019-01.pdf",
+      "sources": [
+        "/graduate/exams/topology/2019-01.html"
+      ],
+      "original_pages": 8,
+      "original_sha256": "a5b6893c0ecae54f88ab8f90d3bdeebfd2989a69cd678ac1466eefbf37c523e5"
+    },
+    {
+      "pdf": "graduate/exams/topology/2019-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2019-08.html"
+      ],
+      "original_pages": 8,
+      "original_sha256": "6a57eb59d92645d77371c6d666b0b0f04a3b4e1add44900bfcd6ee4870fc7817"
+    },
+    {
+      "pdf": "graduate/exams/topology/2022-01.pdf",
+      "sources": [
+        "/graduate/exams/topology/2022-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "b087c5315641e536a33d313432d25daa4ba85a8d4580c89c6df959b26727697c"
+    },
+    {
+      "pdf": "graduate/exams/topology/2022-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2022-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "b557b6039fa64a9b68901709f4aa2a0244ad535f0d5af2416a4f36c95b67c1bc"
+    },
+    {
+      "pdf": "graduate/exams/topology/2023-01.pdf",
+      "sources": [
+        "/graduate/exams/topology/2023-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "32962b290abc8767e21e68898ac1a8840a8ad0d75871184c5a281b536dd28b23"
+    },
+    {
+      "pdf": "graduate/exams/topology/2023-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2023-08.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "ea1ff0fcbfb39bd074947dec9dc8fe402969aaee88719698b5fb8f36b8154a28"
+    },
+    {
+      "pdf": "graduate/exams/topology/2024-01.pdf",
+      "sources": [
+        "/graduate/exams/topology/2024-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "11c48b10c592c3a8bd4cdf771b1ae0cdce567bfc57787d894515f292458a23a6"
+    },
+    {
+      "pdf": "graduate/exams/topology/2024-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2024-08.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "110bca40601e1d19b759409422068bec071a014e0745ba344dede5c986c4373d"
+    },
+    {
+      "pdf": "graduate/exams/topology/2025-01.pdf",
+      "sources": [
+        "/graduate/exams/topology/2025-01.html"
+      ],
+      "original_pages": 8,
+      "original_sha256": "74a5b7f21a9a2f162f47380b90c28cab7f458f7be931b3d866554d02334a666c"
+    },
+    {
+      "pdf": "graduate/exams/topology/2025-08.pdf",
+      "sources": [
+        "/graduate/exams/topology/2025-08.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "78f764bd6e6c6d9e3e367cd96619ec3c142afef7f4e0ada73bf4912eff94d0d9"
+    },
+    {
+      "pdf": "graduate/exams/topology/2026-01.pdf",
+      "sources": [
+        "/graduate/exams/topology/2026-01.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "85a81fab60e361f442db0d4e8f045eba5b4a682dba24e916aa5986509274e401"
+    },
+    {
+      "pdf": "img/IMS/Alan-Reid-poster-pdf.pdf",
+      "sources": [
+        "/img/IMS/Alan-Reid-poster-pdf.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "3e4b8ee20741118c5ce3a997867456bf52ca7492ed9b4cd7a5b2bff87cf1c76e"
+    },
+    {
+      "pdf": "img/IMS/Art Benjamin Mathemagics 03-23-2015.pdf",
+      "sources": [
+        "/img/IMS/Art Benjamin Mathemagics 03-23-2015.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "23c069b937c69d32244af5ae845d5313a26b134cd78d759f97c3760cc0c632c8"
+    },
+    {
+      "pdf": "img/IMS/Fonseca_poster_1.pdf",
+      "sources": [
+        "/img/IMS/Fonseca_poster_1.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "6081032f5a91ba9b030381143868923e8d58982fbf7faedb866d97c5c7c13f01"
+    },
+    {
+      "pdf": "img/IMS/Hairer_poster.pdf",
+      "sources": [
+        "/img/IMS/Hairer_poster.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "b6c207293b3e57c308c6d535af8168da5e7eb9770987daa0d134b700a4064007"
+    },
+    {
+      "pdf": "img/IMS/Hoffoss.pdf",
+      "sources": [
+        "/img/IMS/Hoffoss.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "6ed9402718ab1b374b0cda55daec16808d1c7f38a43488a1c5205004658f9305"
+    },
+    {
+      "pdf": "img/IMS/Jordan-Ellenberg-poster.pdf",
+      "sources": [
+        "/img/IMS/Jordan-Ellenberg-poster.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "0530a22dbf441d6ccf3109e40860db0e29156ae74b0aa03f071672037584e14f"
+    },
+    {
+      "pdf": "img/IMS/Kavita-Ramanan-poster-pdf.pdf",
+      "sources": [
+        "/img/IMS/Kavita-Ramanan-poster-pdf.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "e0e7386e5ba9b3b5cdfe851804c8371953e9a894fc77e314f3ca483440fd28ed"
+    },
+    {
+      "pdf": "img/IMS/Lawler_poster.pdf",
+      "sources": [
+        "/img/IMS/Lawler_poster.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "a20b91ccef92b07cafe1ba299a5c20ea2e84fb0e7b98a8850bd70cc5a6041aee"
+    },
+    {
+      "pdf": "img/IMS/McMullen_poster.pdf",
+      "sources": [
+        "/img/IMS/McMullen_poster.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "c6e75561a8b57b52ba161120ebbecea7bf5df319bffd323ad2ca9720745ea96b"
+    },
+    {
+      "pdf": "img/IMS/Minsky_poster092517.pdf",
+      "sources": [
+        "/img/IMS/Minsky_poster092517.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "67521ee93378a652fb8f64b612c04571ba9503cfdefd44f6c58570548ac0516e"
+    },
+    {
+      "pdf": "img/IMS/Okounkov_poster3.pdf",
+      "sources": [
+        "/img/IMS/Okounkov_poster3.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "ddbf63cdd9ffcdcb52205112894788f0f86dd7777259ef393b5e0e6362edacb1"
+    },
+    {
+      "pdf": "img/IMS/Poonen_poster.pdf",
+      "sources": [
+        "/img/IMS/Poonen_poster.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "b883c5b5e4e3794667142d8196542662b78d981407be65a5423820d2877db330"
+    },
+    {
+      "pdf": "img/IMS/Ravi-Vakil-poster.pdf",
+      "sources": [
+        "/img/IMS/Ravi-Vakil-poster.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "28d9d050f997443d2a9ab35b98a6051f575a0363c40e34e6e2de337f119ad447"
+    },
+    {
+      "pdf": "img/IMS/Rich-Schwartz-poster.pdf",
+      "sources": [
+        "/img/IMS/Rich-Schwartz-poster.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "1a65d6db217a151d6b068e7ceb6b79c137fada218962d8a4e540bd13f8883df2"
+    },
+    {
+      "pdf": "img/IMS/Sarnak-poster.pdf",
+      "sources": [
+        "/img/IMS/Sarnak-poster.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "e237238fc84c1d52a4ca59a2cce13aaf44f0906d5835f0d056efeb88bc655a26"
+    },
+    {
+      "pdf": "img/IMS/Sherson.pdf",
+      "sources": [
+        "/img/IMS/Sherson.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "f866f1a9e1228005b20bfa2334915f27bcc7fcda23d926538ba04e3f99e02995"
+    },
+    {
+      "pdf": "img/IMS/Simon-2018.pdf",
+      "sources": [
+        "/img/IMS/Simon-2018.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "42b345d32eda1cb29fd54ad40933ccc459fe529db7d060fe2fa43d3d16ee8ca0"
+    },
+    {
+      "pdf": "img/IMS/Van_Vu_poster.pdf",
+      "sources": [
+        "/img/IMS/Van_Vu_poster.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "dae559ae14c5871afa577fd3f343abd0c96ad93c3d453b255046e4ae50e0cd5a"
+    },
+    {
+      "pdf": "img/news_events/2020ceremony_program.pdf",
+      "original_pages": 4,
+      "original_sha256": "55a86418793804cf020183991ee9b5e0cf21a0955131dfcbb601bbe88c1ad13c",
+      "sources": [
+        "/img/news_events/2020ceremony_program.html"
+      ],
+      "status": "Complete HTML transcription reviewed against all rendered source pages."
+    },
+    {
+      "pdf": "img/news_events/Kafadar-AMC-2026-04-09.pdf",
+      "sources": [
+        "/2026/04/kafadar-AMC/index.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "56770c631f00f13ba854db5ade77ad30df0d213e58a5bc28e7e7d443e89c93a9"
+    },
+    {
+      "pdf": "img/news_events/MattGagne_DefensePoster.pdf",
+      "original_pages": 1,
+      "original_sha256": "211673d991bde57ed8695de7c6f3eab5311e3b80901b2f90d3b7a560fdc34644",
+      "sources": [
+        "/img/news_events/MattGagne_DefensePoster.html"
+      ],
+      "status": "Complete HTML transcription reviewed against all rendered source pages."
+    },
+    {
+      "pdf": "img/news_events/Perea-AMC-2026-03-12.pdf",
+      "sources": [
+        "/img/news_events/Perea-AMC-2026-03-12.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "ca6d09f033e0516c0a3df5fdb3efb70d317b71852d344a5600d84764d5611ea5"
+    },
+    {
+      "pdf": "img/news_events/WINRS-SCHEDULE-2018.pdf",
+      "original_pages": 3,
+      "original_sha256": "fb613bb795540f674a03c8275ba64f808850ec3b222fadbf44b8a9f6d46c875a",
+      "sources": [
+        "/img/news_events/WINRS-SCHEDULE-2018.html"
+      ],
+      "status": "Complete HTML transcription reviewed against all rendered source pages."
+    },
+    {
+      "pdf": "img/news_events/defenses/Craig_defense.pdf",
+      "original_pages": 1,
+      "original_sha256": "c7f099b1d52cd9b4833d1d7bb4d637fd533b58cbd9ff65429e7a06203b4d3825",
+      "sources": [
+        "/img/news_events/defenses/Craig_defense.html"
+      ],
+      "status": "Complete HTML transcription reviewed against all rendered source pages."
+    },
+    {
+      "pdf": "img/news_events/defenses/Pandey_defense.pdf",
+      "original_pages": 1,
+      "original_sha256": "c7564d0b00ba812c79e6c01b7a7196f5843db74efa3a91b352cac56813b377a2",
+      "sources": [
+        "/img/news_events/defenses/Pandey_defense.html"
+      ],
+      "status": "Complete HTML transcription reviewed against all rendered source pages."
+    },
+    {
+      "pdf": "img/news_events/fluid-refl-conf-schedule.pdf",
+      "original_pages": 2,
+      "original_sha256": "ddc48e22f493384a017816a49c896e2b0c3a958f2f96955ef0ee8b914d02f2c7",
+      "sources": [
+        "/img/news_events/fluid-refl-conf-schedule.html"
+      ],
+      "status": "Complete HTML transcription reviewed against all rendered source pages."
+    },
+    {
+      "pdf": "img/news_events/fluid-refl-conf.pdf",
+      "original_pages": 1,
+      "original_sha256": "4e206e2613529a6c859a925a093237e8c1874df35b33a9516cf71ea376e0fb07",
+      "sources": [
+        "/img/news_events/fluid-refl-conf.html"
+      ],
+      "status": "Complete HTML transcription reviewed against all rendered source pages."
+    },
+    {
+      "pdf": "img/seminars/Gorsky_S21.pdf",
+      "original_pages": 21,
+      "original_sha256": "f4e0e8380b08ace172447acaac4ccbebf1ed9a9fa7ae59f29d6729b58a756b12",
+      "sources": [],
+      "retain_original": true,
+      "status": "historical lecture archive; no complete accessible source; retained publicly"
+    },
+    {
+      "pdf": "mathcircle/MathCircle_article.pdf",
+      "original_pages": 2,
+      "original_sha256": "dfd20bd8a9f6fd77cab5e2f85992f0d57d11cd392db15a02b81d3dd8da2796eb",
+      "sources": [
+        "/mathcircle/MathCircle_article.html"
+      ],
+      "status": "complete HTML companion verified"
+    },
+    {
+      "pdf": "schedule.pdf",
+      "sources": [
+        "/schedule/index.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "9775f6fa4d2d903117be22fc43d3a94148d4f540dff82809afe3652f8a4d5a06",
+      "print_layout": "schedule",
+      "status": "Compact tagged print layout from the full room-free schedule source; complete semantic HTML companion."
+    },
+    {
+      "pdf": "seminars/colloq/files/Gilles_Fall2020.pdf",
+      "original_pages": 1,
+      "original_sha256": "d7eb61032dac8886a7c221d79906ccf714c558227b4195dc1bd103b67cb1e7e7",
+      "sources": [
+        "/seminars/colloq/files/Gilles_Fall2020.html"
+      ],
+      "status": "complete HTML companion verified"
+    },
+    {
+      "pdf": "seminars/diffeq/oanhnguyen110315.pdf",
+      "original_pages": 1,
+      "original_sha256": "0f3b8565952d8105749f72aec39d25bc501dc6f17ce2495a6f142cd637b7477a",
+      "sources": [
+        "/seminars/diffeq/oanhnguyen110315.html"
+      ],
+      "status": "complete HTML companion verified"
+    },
+    {
+      "pdf": "seminars/diffeq/xiangwan092915.pdf",
+      "sources": [
+        "/seminars/diffeq/xiangwan092915.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "5e5624d469a6afff08747825712bf1c9dce0c9581f82e76453e4e555e6f1c9c1"
+    },
+    {
+      "pdf": "seminars/mathphys/1999-03/Fine.pdf",
+      "sources": [
+        "/seminars/mathphys/1999-03/Fine.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "6cdd5af321029eb174607f1eeeb965f0cd1a9a7ad2265e3ea5e493332532116f"
+    },
+    {
+      "pdf": "seminars/mathphys/1999-03/Hempel.pdf",
+      "sources": [
+        "/seminars/mathphys/1999-03/Hempel.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "933ffa983d7007c8949c0aa0754535eb0705a1581e6bd9276bbc6c960735b0ae"
+    },
+    {
+      "pdf": "seminars/mathphys/1999-03/Mar23.pdf",
+      "sources": [
+        "/seminars/mathphys/1999-03/Mar23.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "76d99192d78bbca8ae90fa50dca87fa5da185e921c4b7edb33feff8450d92764"
+    },
+    {
+      "pdf": "seminars/mathphys/1999-03/Mar24.pdf",
+      "sources": [
+        "/seminars/mathphys/1999-03/Mar24.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "143e0af0642b88661826325ae8abeea00fb80a9b4e67612e4157d6450ada78ed"
+    },
+    {
+      "pdf": "seminars/mathphys/2003-07/Jan17.pdf",
+      "sources": [
+        "/seminars/mathphys/2003-07/Jan17.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "ea918e4793b0f9e751a0ee1a6b8a5f0ad079fbeb218b8d3f60b7eaec5108dc1b"
+    },
+    {
+      "pdf": "seminars/mathphys/2010-11/abstract_paley_wiener-2.pdf",
+      "sources": [
+        "/seminars/mathphys/2010-11/abstract_paley_wiener-2.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "21620349a883a36d843cfef0ebb4211902ac678c5bccda1e553458300b06f0ea"
+    },
+    {
+      "pdf": "seminars/probability/Fall2010/blanchet.pdf",
+      "sources": [
+        "/seminars/probability/Fall2010/blanchet.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "99d21e8de106913dce493efae303cd245f8067e6ceaf446986b16633096eed33"
+    },
+    {
+      "pdf": "seminars/probability/Fall2010/eldredge.pdf",
+      "sources": [
+        "/seminars/probability/Fall2010/eldredge.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "3290240c4866ab4c8fc59133f459d8e4112a268a2c0e8a71467cf041b087d99a"
+    },
+    {
+      "pdf": "seminars/probability/Fall2010/goel.pdf",
+      "sources": [
+        "/seminars/probability/Fall2010/goel.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "bb6ff00ef86652241047951b40d6952fc1377163f79fa947ecb15e75842d24ec"
+    },
+    {
+      "pdf": "seminars/probability/Fall2010/gordina.pdf",
+      "sources": [
+        "/seminars/probability/Fall2010/gordina.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "c83695fe068ec5d45893559539d8edc218b53bdb5f1794f65f49a5972b3a8deb"
+    },
+    {
+      "pdf": "seminars/probability/Fall2010/li.pdf",
+      "sources": [
+        "/seminars/probability/Fall2010/li.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "c9e7b01a659a1aa95c05db32954e5a122329335354569090ad868e74e8a09afb"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/blitzstein.pdf",
+      "sources": [
+        "/seminars/probability/Spring2007/blitzstein.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "7fec215e068266d091379e8ceae3e6070cac9dc06988cd1829fddc525ccb8e89"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/cecil.pdf",
+      "sources": [
+        "/seminars/probability/Spring2007/cecil.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "828992db9d69909d4dbfb3a65db490c3786022fe219ee85d608cf3e5e82c0cdc"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/kang.pdf",
+      "sources": [
+        "/seminars/probability/Spring2007/kang.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "38a4bda3279a35b502fc0788f4f31f1f60552a6ebc884ba56d80d686ee155261"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/lim.pdf",
+      "sources": [
+        "/seminars/probability/Spring2007/lim.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "d0779430206a7b35d0625192768915b2fd55214be96e0d96db4b405c88391452"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/sturm.pdf",
+      "sources": [
+        "/seminars/probability/Spring2007/sturm.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "eae56588b5581b4fc1b370cd39ff31ee70742b4626b47a186b791358ff29d67f"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/zwart.pdf",
+      "sources": [
+        "/seminars/probability/Spring2007/zwart.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "a064425a977d7e6962f27baf748ef5298128ab24382c178efa998cf67b158b57"
+    },
+    {
+      "pdf": "seminars/topology/AroneDelooping.pdf",
+      "sources": [
+        "/seminars/topology/AroneDelooping.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "ff1d9d1f032ceab727c91da99153b87496d71f2e2157079dccfdb467fcdbb4b5"
+    },
+    {
+      "pdf": "seminars/topology/HambletPoset.pdf",
+      "sources": [
+        "/seminars/topology/HambletPoset.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "5a180ab097ae8349674f7be8170a549906b96007fd5960fa8b7bdab90fa2effd"
+    },
+    {
+      "pdf": "seminars/topology/JPark-abstract.pdf",
+      "sources": [
+        "/seminars/topology/JPark-abstract.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "68600cb0ab7c3fe7c7949ed27b2b795be710ad0b4b587617a1f09403c227fae6"
+    },
+    {
+      "pdf": "seminars/topology/Josh Greene - Floer Homology and Knot Concordance.pdf",
+      "original_pages": 3,
+      "original_sha256": "e467e1719599e97916da83e0004ed2d74d501f63c014540ae10b9503bc5ad2b6",
+      "sources": [
+        "/seminars/topology/Josh Greene - Floer Homology and Knot Concordance.html"
+      ],
+      "status": "complete HTML companion verified"
+    },
+    {
+      "pdf": "seminars/topology/NickRealizability.pdf",
+      "original_pages": 3,
+      "original_sha256": "c53d8cf5b850f7e89e8acae86dc016279d0426b67abbba2e37ed23ff7a8857c5",
+      "sources": [
+        "/seminars/topology/NickRealizability.html"
+      ],
+      "status": "complete HTML companion verified"
+    },
+    {
+      "pdf": "seminars/topology/StongSUnSOn.pdf",
+      "sources": [
+        "/seminars/topology/StongSUnSOn.html"
+      ],
+      "original_pages": 8,
+      "original_sha256": "c18203d88cdea45b20e55323975b20303850289c0c73624ab9c333448045ed4b"
+    },
+    {
+      "pdf": "talks_seminars_data/B_Simon_2018/More Tales of our Forefathers - B. Simon.pdf",
+      "sources": [],
+      "original_pages": 658,
+      "status": "Retain public historical archive as requested by LP on 2026-09-13",
+      "original_sha256": "b82ab7b1094b90982a1338b0a3f2bc22bfdf09da6905cbe1e38100dc161ad976",
+      "retain_original": true
+    },
+    {
+      "pdf": "talks_seminars_data/B_Simon_2018/Tales of our Forefathers - B. Simon.pdf",
+      "sources": [],
+      "original_pages": 369,
+      "status": "Retain public historical archive as requested by LP on 2026-09-13",
+      "original_sha256": "c3dd7af402817a30d1cf6167bd147606631b9d4aa38292bc02503c2773ecb039",
+      "retain_original": true
+    },
+    {
+      "pdf": "talks_seminars_data/B_Simon_2018/chebyshev - B. Simon.pdf",
+      "sources": [],
+      "original_pages": 252,
+      "status": "Retain public historical archive as requested by LP on 2026-09-13",
+      "original_sha256": "fd7388d315cff372029cf5637e7fc072af3b51848e7e878666e8c4160b0a6aab",
+      "retain_original": true
+    },
+    {
+      "pdf": "undergraduate/docs/DSP-GMP Info Sheets_2015 1.pdf",
+      "sources": [
+        "/undergraduate/docs/DSP-GMP Info Sheets_2015 1.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "2c5346320e2a0a8a97e9f7f652e7d6685efe1a163a159dd9a55dc9e716e497e4"
+    },
+    {
+      "pdf": "undergraduate/docs/Defer Major.pdf",
+      "sources": [
+        "/undergraduate/docs/Defer Major.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "9e1893e122d0765924d8ceccb5a29d186cd28acb32044bbc72eef827a7741f34"
+    },
+    {
+      "pdf": "undergraduate/docs/Grader_App_2023.pdf",
+      "sources": [
+        "/undergraduate/docs/Grader_App_2023.html"
+      ],
+      "original_pages": 2,
+      "original_sha256": "130b89336fd4ae4d87c26ad107325c4ba2df9287cfab84f880b873b872a72d3d"
+    },
+    {
+      "pdf": "undergraduate/docs/MathMajorCourseGuide_Fall25_version.pdf",
+      "sources": [
+        "/undergraduate/docs/MathMajorCourseGuide_Fall25_version.html"
+      ],
+      "original_pages": 3,
+      "original_sha256": "832aabed034bf9f2cd9ea638dc3c51e3f6bd155dd969baa130267dde24864cc1"
+    },
+    {
+      "pdf": "undergraduate/docs/Participation in Final Exercises by BA.pdf",
+      "sources": [
+        "/undergraduate/docs/Participation in Final Exercises by BA.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "ba4b60c37d65d2dae8233e86c6c4f4ba48331fa7d92e132f477545f804aa42bf"
+    },
+    {
+      "pdf": "undergraduate/docs/Reasons one did not get into PBK.pdf",
+      "sources": [
+        "/undergraduate/docs/Reasons one did not get into PBK.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "464b47a1d22f90abb74549e5f07852deb598f3990c331e6f1ea09a6f44359a25"
+    },
+    {
+      "pdf": "undergraduate/docs/Repeating a course.pdf",
+      "sources": [
+        "/undergraduate/docs/Repeating a course.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "68ab96954ff534fd9030d49ff2879aba3f9f8836560ac8d98e89bfff80611926"
+    },
+    {
+      "pdf": "undergraduate/docs/Submit new course to CEPC.pdf",
+      "sources": [
+        "/undergraduate/docs/Submit new course to CEPC.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "c6adad6971d03f525f85dc27c212b76d777f5766ebe517a598ed93765d1e6f68"
+    },
+    {
+      "pdf": "undergraduate/docs/Undergraduates Taking Graduate Courses.pdf",
+      "sources": [
+        "/undergraduate/docs/Undergraduates Taking Graduate Courses.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "af52ee9e9d97175d94f05a8a1c13f4fc78d3bf9a2d6bc2e226973c3c26f622c9"
+    },
+    {
+      "pdf": "undergraduate/docs/exception(fillable)_1.pdf",
+      "original_pages": 1,
+      "original_sha256": "2f6cbfbd4da6d5e68c575a3ed9b3852dd79169f5c5dd9b52e3d9c5e284a50b42",
+      "sources": [
+        "/undergraduate/docs/exception(fillable)_1.html"
+      ],
+      "status": "complete HTML companion verified"
+    },
+    {
+      "pdf": "undergraduate/docs/precalculus.pdf",
+      "sources": [
+        "/undergraduate/docs/precalculus.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "13b67e1c2a3bb6896bbdf3e8f6708d521f0e69a87af4f934f7b6b38d72831fa6"
+    },
+    {
+      "pdf": "undergraduate/docs/wrong-calculus-course.pdf",
+      "sources": [
+        "/undergraduate/docs/wrong-calculus-course.html"
+      ],
+      "original_pages": 1,
+      "original_sha256": "38f0006f75da0fb86349ec38ed5fd2f5e298da18ad52e35cd4124f1cc4695584"
+    },
+    {
+      "pdf": "undergraduate/placement-files/ExamA_Solutions.pdf",
+      "sources": [
+        "/undergraduate/placement-files/ExamA_Solutions.html"
+      ],
+      "original_pages": 4,
+      "original_sha256": "b7b621fee0e9866d487d5c4d7639ff202ab48f56e0cc9b57b142370db2fc61bd"
+    },
+    {
+      "pdf": "undergraduate/placement-files/ExamB_Solutions.pdf",
+      "sources": [
+        "/undergraduate/placement-files/ExamB_Solutions.html"
+      ],
+      "original_pages": 4,
+      "original_sha256": "ea4b13d067bdc0676866f2583e49bcff9b91611bb4eb7d549894591442eba0e7"
+    },
+    {
+      "pdf": "undergraduate/placement-files/ExamC_Solutions.pdf",
+      "sources": [
+        "/undergraduate/placement-files/ExamC_Solutions.html"
+      ],
+      "original_pages": 4,
+      "original_sha256": "791b40a2a41293894bf6d3b45cc699c20c3a0cd14a8e2b6a5b244727025b51d9"
+    }
+  ]
+}

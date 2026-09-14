@@ -23,7 +23,7 @@ nav_parent: Seminars
 {% if sem.image != null %}
   <div class="row">
     <div class="col-md-3">
-      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image"/>
     </div>
   </div>
 {% endif %}
@@ -159,12 +159,12 @@ Thursday 4pm
 
 <li><a href="../1999-03/Mar22">
    Week of Mar 22</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  Friday at 2 p.m. in Ker 317:  Herbert Koch (Heidelberg) <em><a href="../1999-03/Mar24.pdf"
->"Unique continuation for elliptic equations with nonsmooth coefficients."</A></em>
+  Friday at 2 p.m. in Ker 317:  Herbert Koch (Heidelberg) <em><a aria-label="PDF abstract: Unique continuation for elliptic equations with nonsmooth coefficients" href="../1999-03/Mar24.pdf"
+>"Unique continuation for elliptic equations with nonsmooth coefficients."</A> <a href="/seminars/mathphys/1999-03/Mar24.html" aria-label="HTML abstract: Unique continuation for elliptic equations with nonsmooth coefficients">HTML abstract</a></em>
 <br>Of related interest:  Koch will also give the
 Colloquium
 Thursday 4pm
-<em><a href="../1999-03/Mar23.pdf">"Well-posedness for the Navier-Stokes equations."</a></em>
+<em><a aria-label="PDF abstract: Well-posedness for the Navier-Stokes equations" href="../1999-03/Mar23.pdf">"Well-posedness for the Navier-Stokes equations."</a> <a href="/seminars/mathphys/1999-03/Mar23.html" aria-label="HTML abstract: Well-posedness for the Navier-Stokes equations">HTML abstract</a></em>
 
 <li><a href="../1999-03/Mar29">
    Week of Mar 29</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -193,7 +193,7 @@ Larry Thomas, <em>"Stochastic Differential Equations Stuff, continued."</em>
 </ul>
 
 <hr />
-<h3 class="mb-3">Archives</h3>
+<h2 class="mb-3">Archives</h2>
 
 <p><a href="/seminars/mathphys/">upcoming</a> | <a href="/seminars/mathphys/2026-27/">2026-27</a> | <a href="/seminars/mathphys/2025-26/">2025-26</a> | <a href="/seminars/mathphys/2024-25/">2024-25</a> | <a href="/seminars/mathphys/2023-24/">2023-24</a> | <a href="/seminars/mathphys/2022-23/">2022-23</a> | <a href="/seminars/mathphys/2021-22/">2021-22</a> | <a href="/seminars/mathphys/2020-21/">2020-21</a> | <a href="/seminars/mathphys/2019-20/">2019-20</a> | <a href="/seminars/mathphys/2018-19/">2018-19</a> | <a href="/seminars/mathphys/2017-18/">2017-18</a> | <a href="/seminars/mathphys/2016-17/">2016-17</a> |
 <a href="/seminars/mathphys/2015-16/">2015-16</a> |
@@ -216,7 +216,7 @@ Larry Thomas, <em>"Stochastic Differential Equations Stuff, continued."</em>
 
 <hr />
 
-<b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
+<h2>Contacts</h2> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
 
 
 {%endif%}

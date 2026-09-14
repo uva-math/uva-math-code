@@ -24,7 +24,7 @@ title: Seminar in operator theory and operator algebras
 {% if sem.image != null %}
   <div class="row">
     <div class="col-md-3">
-      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image"/>
     </div>
     <div class="col-md-9">
       <b>Regular time and location: {{sem.regular_times}}</b>
@@ -49,10 +49,10 @@ title: Seminar in operator theory and operator algebras
 
 <hr />
 
-<b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %}{% endfor %}
+<h2>Contacts</h2> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %}{% endfor %}
 
 <hr />
-<h3 class="mb-3">Archives</h3>
+<h2 class="mb-3">Archives</h2>
 
 <p><a href="/seminars/sotoa/">upcoming</a> | <a href="/seminars/sotoa/2026-27/">2026-27</a> | <a href="/seminars/sotoa/2025-26/">2025-26</a> | <a href="/seminars/sotoa/2024-25/">2024-25</a> | <a href="/seminars/sotoa/2023-24/">2023-24</a> | <a href="/seminars/sotoa/2022-23/">2022-23</a> | <a href="/seminars/sotoa/2021-22/">2021-22</a> | <a href="/seminars/sotoa/2020-21/">2020-21</a> | <a href="/seminars/sotoa/2019-20/">2019-20</a> | <a href="/seminars/sotoa/2018-19/">2018-19</a> | <a href="/seminars/sotoa/2017-18/">2017-18</a></p>
 

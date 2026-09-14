@@ -1,71 +1,40 @@
 <footer class="mt-3">
-<div class="footer-bar">
-  <div class="container" style="padding:10px">
-              <div class="row" style="font-size:14px;font-weight:600">
-                <div class="col-md-3">
-                  Maintained by: <a href='mailto:math-help@virginia.edu'>Department of Mathematics</a>
-                  <br>
-                   <a href="https://www.virginia.edu/copyright.html" target="_blank" rel="noopener noreferrer" aria-label="Copyright information (opens in new tab)">
-                     <i class="fa-regular fa-copyright" aria-hidden="true"></i></a> Copyright
-                    by the Rector and Visitors of the University of Virginia
-                </div>
-                <div class="col-md-4 d-none d-md-block" style="text-align:right">
-                  <span class="fa-solid fa-phone" aria-hidden="true"></span>
-                  <a href="tel:+1-434-924-4919">(434) 924-4919</a><br>
-                  <span class="fa-solid fa-fax" aria-hidden="true"></span>
-                  (434) 982-3084<br>
-                  <span class="fa-solid fa-envelope" aria-hidden="true"></span>
-                  <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a>
-                </div>
-                <div class="col-md-4 d-md-none">
-                  <hr />
-                  <span class="fa-solid fa-phone" aria-hidden="true"></span>
-                  <a href="tel:+1-434-924-4919">(434) 924-4919</a><br>
-                  <span class="fa-solid fa-fax" aria-hidden="true"></span>
-                  (434) 982-3084<br>
-                  <span class="fa-solid fa-envelope" aria-hidden="true"></span>
-                  <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a>
-                  <hr />
-                </div>
-                <div class="col-md-4">
-                  <address style="margin-bottom:0;font-style:normal">
-                  141 Cabell Drive, Kerchof Hall<br>
-                  P.O. Box 400137<br>
-                  Charlottesville, VA 22904<br>
-                  <span class="fa-regular fa-map" aria-hidden="true"></span>
-                  <a href="https://www.google.com/maps/place/Kerchof+Hall,+Charlottesville,+VA+22903/@38.0321891,-78.5088882,18z" target="_blank" rel="noopener noreferrer">Directions<span class="visually-hidden"> (opens in new tab)</span></a>
-                  </address>
-                </div>
-                <div class="col-md-1 d-md-none">
-                  <hr>
-                  <nav aria-label="Social media links">
-                  <a href="https://x.com/math_uva" aria-label="UVA Math on Twitter (opens in new tab)" target="_blank" rel="noopener noreferrer">
-                    <span class="fa-brands fa-square-twitter fa-2x" aria-hidden="true"></span></a>
-                    <a href="https://www.facebook.com/UVAMath" aria-label="UVA Math on Facebook (opens in new tab)" target="_blank" rel="noopener noreferrer">
-                      <span class="fa-brands fa-facebook-square fa-2x mt-1" aria-hidden="true"></span></a>
-                    <a href="https://www.instagram.com/uva_math/" aria-label="UVA Math on Instagram (opens in new tab)" target="_blank" rel="noopener noreferrer">
-                      <span class="fa-brands fa-instagram fa-2x mt-1" aria-hidden="true"></span></a>
-                    <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
-                  {% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} aria-label="Contribute on GitHub (opens in new tab)" target="_blank" rel="noopener noreferrer">
-                    <span class="fa-brands fa-square-github fa-2x mt-1" aria-hidden="true"></span></a>
-                  </nav>
-                </div>
-                <div class="col-md-1 d-none d-md-block">
-                  <nav aria-label="Social media">
-                  <a href="https://www.facebook.com/UVAMath" aria-label="UVA Math on Facebook (opens in new tab)" target="_blank" rel="noopener noreferrer">
-                    <span class="fa-brands fa-facebook-square fa-2x mt-1 me-2" aria-hidden="true"></span></a>
-                  <a href="https://www.instagram.com/uva_math/" aria-label="UVA Math on Instagram (opens in new tab)" target="_blank" rel="noopener noreferrer">
-                    <span class="fa-brands fa-instagram fa-2x mt-1" aria-hidden="true"></span></a>
-                  <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
-                  {% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} aria-label="Contribute on GitHub (opens in new tab)" target="_blank" rel="noopener noreferrer">
-                    <span class="fa-brands fa-square-github fa-2x me-2 mt-1" aria-hidden="true"></span></a>
-                  <a href="https://x.com/math_uva" aria-label="UVA Math on Twitter (opens in new tab)" target="_blank" rel="noopener noreferrer">
-                    <span class="fa-brands fa-square-twitter fa-2x mt-1" aria-hidden="true"></span></a>
-                  </nav>
-                </div>
-              </div>
-            </div>
-</div>
+  <div class="footer-bar">
+    <div class="container py-3">
+      <div class="row g-3 footer-content">
+        <div class="col-md-6 col-xl-3">
+          <p>Maintained by: <a href="mailto:math-help@virginia.edu">Department of Mathematics</a></p>
+          <p><a href="https://www.virginia.edu/copyright/">&copy; Copyright information</a><br>
+            Rector and Visitors of the University of Virginia</p>
+          <p><a href="{{ site.url }}/sitemap/">Website sitemap</a></p>
+        </div>
+        <div class="col-md-6 col-xl-3 footer-contact">
+          <p><span class="fa-solid fa-phone" aria-hidden="true"></span> Phone: <a href="tel:+1-434-924-4919">(434) 924-4919</a></p>
+          <p><span class="fa-solid fa-fax" aria-hidden="true"></span> Fax: (434) 982-3084</p>
+          <p><span class="fa-solid fa-envelope" aria-hidden="true"></span> Email: <a href="mailto:math-help@virginia.edu">math-help@virginia.edu</a></p>
+        </div>
+        <div class="col-md-6 col-xl-4">
+          <address class="mb-0">
+            141 Cabell Drive, Kerchof Hall<br>
+            P.O. Box 400137<br>
+            Charlottesville, VA 22904<br>
+            <span class="fa-regular fa-map" aria-hidden="true"></span>
+            <a href="https://www.google.com/maps/place/Kerchof+Hall,+Charlottesville,+VA+22903/@38.0321891,-78.5088882,18z">Directions to Kerchof Hall</a>
+          </address>
+        </div>
+        <div class="col-md-6 col-xl-2">
+          <nav aria-label="Social media and contributions">
+            <ul class="footer-social list-unstyled mb-0">
+              <li><a href="https://www.facebook.com/UVAMath" aria-label="UVA Math on Facebook"><span class="fa-brands fa-facebook-square fa-2x" aria-hidden="true"></span></a></li>
+              <li><a href="https://www.instagram.com/uva_math/" aria-label="UVA Math on Instagram"><span class="fa-brands fa-instagram fa-2x" aria-hidden="true"></span></a></li>
+              <li><a href="https://github.com/uva-math/uva-math-code/blob/master/{% if paginator.page %}allnews/index.html{% else %}{{ page.path }}{% endif %}" aria-label="Contribute to this page on GitHub"><span class="fa-brands fa-square-github fa-2x" aria-hidden="true"></span></a></li>
+              <li><a href="https://x.com/math_uva" aria-label="UVA Math on X (Twitter)"><span class="fa-brands fa-square-twitter fa-2x" aria-hidden="true"></span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
 <!-- Dark mode functionality -->
@@ -73,8 +42,9 @@
 (function() {
   // Get the current theme from localStorage or OS preference
   function getThemePreference() {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme) {
+    let savedTheme;
+    try { savedTheme = localStorage.getItem('theme'); } catch (error) { /* Storage can be unavailable. */ }
+    if (savedTheme === 'dark' || savedTheme === 'light') {
       return savedTheme;
     }
     // Check OS preference
@@ -97,7 +67,7 @@
     const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     applyTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
+    try { localStorage.setItem('theme', newTheme); } catch (error) { /* The theme still changes for this page. */ }
   }
 
   // Initialize theme on page load (immediately)
@@ -121,7 +91,9 @@
   // Listen for OS theme changes
   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
     // Only apply OS preference if user hasn't manually set a preference
-    if (!localStorage.getItem('theme')) {
+    let savedTheme;
+    try { savedTheme = localStorage.getItem('theme'); } catch (error) { /* Use the OS preference. */ }
+    if (!savedTheme) {
       applyTheme(e.matches ? 'dark' : 'light');
     }
   });
@@ -139,7 +111,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
   dropdowns.forEach((dropdown, index) => {
     dropdown.addEventListener('shown.bs.dropdown', function() {
-      if (window.innerWidth > 767) {
+      if (window.matchMedia('(min-width: 1200px)').matches) {
         const menu = this.querySelector('.dropdown-menu');
         const toggle = this.querySelector('.dropdown-toggle');
         const menuRect = menu.getBoundingClientRect();

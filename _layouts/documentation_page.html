@@ -13,7 +13,7 @@
 
 {% include navbar.html %}
 
-<main id="main-content">
+<main id="main-content" tabindex="-1">
 <div class="container">
   {% if page.reminders_page != true %}
   <div class="list-group-sm">
@@ -28,12 +28,14 @@
     <div class="row row-offcanvas row-offcanvas-right">
       <div class="col-md-8">
 
-        {{ content | markdownify }}
+        {% assign rendered_content = content | markdownify %}
+        {% unless rendered_content contains '<h1' %}<h1>{{ page.title | escape }}</h1>{% endunless %}
+        {{ rendered_content }}
 
       </div>
       <div class="col-md-4">
         <hr class="hidden-md-up">
-        <h3 class="mb-3 sidebar-offcanvas">&lt;Website documentation&gt;</h3>
+        <h2 class="h3 mb-3 sidebar-offcanvas">&lt;Website documentation&gt;</h2>
 
         {% include documentation_sidebar.html %}
       </div>

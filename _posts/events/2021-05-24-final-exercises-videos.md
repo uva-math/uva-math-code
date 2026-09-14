@@ -11,10 +11,10 @@ hide-this-item: true
 
 The Department of Mathematics hosted an online diploma ceremony on May 24.
 
-##### Undergraduate diploma ceremony
+## Undergraduate diploma ceremony
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/FzyEDcy8e24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://www.youtube.com/watch?v=FzyEDcy8e24">Watch the 2021 undergraduate mathematics diploma ceremony on YouTube</a>.</p>
 
-##### Graduate diploma ceremony
+## Graduate diploma ceremony
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/NAyMKPHyq8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://www.youtube.com/watch?v=NAyMKPHyq8Q">Watch the 2021 graduate mathematics diploma ceremony on YouTube</a>.</p>

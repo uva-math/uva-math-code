@@ -16,9 +16,9 @@ he 2018 Virginia Topology Conference will have a focus on new methods in the stu
 
 <!--more-->
 
-<h4>Plenary lectures</h4>
+<h2>Plenary lectures</h2>
 
-<ul id="lists">
+<ul class="lists">
 <li><a href="http://math.columbia.edu/~alishahi/">
 Akram Alishahi</a> (Columbia)</li>
 <li><a href="https://www2.bc.edu/john-baldwin/">
@@ -39,9 +39,9 @@ Juanita Pinz&oacute;n Caicedo</a> (NC State)</li>
 Daniel Ruberman</a> (Brandeis)</li>
 </ul>
 
-<h4>Contributed talks</h4>
+<h2>Contributed talks</h2>
 		
-<ul id="lists">
+<ul class="lists">
 <li><a href="https://www.math.princeton.edu/people/irving-dai">
 Irving Dai</a> (Princeton)</li>
 <li>Gabriel Islambouli (Virginia)</li>
@@ -53,9 +53,9 @@ William Olsen</a> (Georgia)</li>
 Adam Saltz</a> (Georgia)</li>
 </ul>
 
-<h4>Organizers</h4>
+<h2>Organizers</h2>
 
-<ul id="lists">
+<ul class="lists">
 <li> <a href="http://people.virginia.edu/~vk6e/">Slava Krushkal</a> (UVa)</li>
 <li> <a href="http://www.people.virginia.edu/~sm4cw/">Sara Maloni</a> (UVa)</li>
 <li> <a href="http://www.faculty.virginia.edu/tmark/">Thomas Mark</a> (UVa)</li>

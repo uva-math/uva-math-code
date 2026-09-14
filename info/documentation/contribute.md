@@ -18,14 +18,14 @@ allows everyone to contribute to updating its contents.
 Here are several examples:
 
 - Every member of the Department can update own personal information, such as
-research interests, selected publications, link to personal page, etc. See [here]({{site.url}}/doc/people/) for details.
+research interests, selected publications, link to personal page, etc. See [People page documentation]({{site.url}}/doc/people/) for details.
 
 - One can add news about conferences or seminar series being organized, and it will be displayed on the Department main page.
-See [here]({{site.url}}/doc/news/) for details.
+See [News post documentation]({{site.url}}/doc/news/) for details.
 
 - The website contains lots of information that should be kept up-to-date, including
 undergraduate and graduate policies, etc. This can be updated by people in charge of these subjects.
-See [here]({{site.url}}/doc/ugg/) for details.
+See [Program page documentation]({{site.url}}/doc/ugg/) for details.
 
 - Dedicated static pages can be created within the website, for example,
 to host Collaborative Learning Center information, etc. In this case, person(s) in charge would need to keep the information
@@ -52,13 +52,13 @@ containing more of the relevant information.
 ## 1. GitHub issues
 
 Having a [GitHub](https://www.github.com) account, one can add an **issue**. Current issues for the website are
-located here: [`https://github.com/uva-math/uva-math-code/issues`](https://github.com/uva-math/uva-math-code/issues). There is also a wiki page at [`https://github.com/uva-math/uva-math-code/wiki/Issues-extended`](https://github.com/uva-math/uva-math-code/wiki/Issues-extended) for issues with longer turnaround.
+located here: [Website issues on GitHub](https://github.com/uva-math/uva-math-code/issues). There is also a wiki page at [Longer-term website issues](https://github.com/uva-math/uva-math-code/wiki/Issues-extended) for issues with longer turnaround.
 A new issue can be added by anyone. **Issues are public** (but after all we're talking about editing a public website, right?).
 
 The advantage of issues is that they can easily reference code, can be discussed and commented on, and ultimately be resolved and closed
 (though closed issues also stay public). To view the source code for any page click on the
 GitHub icon <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
-{% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank"><span class="fa fa-github-square fa-2x"></span></a> in the lower right corner. Then there is a link to
+{% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} aria-label="Edit this page on GitHub"><span class="fa fa-github-square fa-2x" aria-hidden="true"></span></a> in the lower right corner. Then there is a link to
 issues on top of the resulting GitHub page.
 
 ---
@@ -76,12 +76,12 @@ make changes there, and create a pull-request). Here are the steps:
 1. Go to your page such as [`{{site.url}}/people/lap5r/`]({{site.url}}/people/lap5r/),
 and click on the
 GitHub icon <a {% if paginator.page %}href="https://github.com/uva-math/uva-math-code/blob/master/allnews/index.html"
-{% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} title="Contribute to the website's content on GitHub" target="_blank"><span class="fa fa-github-square fa-2x"></span></a> in the lower right corner.
+{% else %}href="https://github.com/uva-math/uva-math-code/blob/master/{{page.path}}"{% endif %} aria-label="Edit this page on GitHub"><span class="fa fa-github-square fa-2x" aria-hidden="true"></span></a> in the lower right corner.
 
 2.
 You will see the source of the page.
 To edit the source, click on the pen icon in this panel on the right:<br>
-<img src="{{site.url}}/img/github_editing.png" alt="GitHub editing" title="GitHub editing">
+<img src="{{site.url}}/img/github_editing.png" alt="GitHub editing">
 
 3. Make the necessary changes in browser. Hint: for formatting tips, check other webpages,
 click on the GitHub icon, and click `Raw` on the same panel as above to see the actual source code.
@@ -95,7 +95,7 @@ The administrator(s) will be notified and can approve or decline (or edit and th
 You should then be notified of the outcome by email, and the changes will appear on the webpage.
 
 **Note**: Pull requests are public, and existing open pull requests are seen on GitHub
-at [`https://github.com/uva-math/uva-math-code/pulls`](https://github.com/uva-math/uva-math-code/pulls)
+at [Website pull requests on GitHub](https://github.com/uva-math/uva-math-code/pulls)
 
 
 ---

@@ -1,0 +1,29 @@
+<div class="seminar-calendar" data-mode="{{ include.mode }}"
+     data-open-details="{{ include.open_details | default: false }}"
+     data-heading-level="{% if include.heading_level %}{{ include.heading_level }}{% elsif page.sem_archive or include.mode == 'awm' %}2{% else %}3{% endif %}"
+     data-current="{{ include.current }}" data-max-events="{{ include.max_sem | default: 50 }}"
+     data-per-calendar="{{ include.max_from_cal | default: include.max_sem | default: 50 }}"
+     data-days-back="{{ include.days_back | default: 0 }}"
+     data-from="{{ include.show_from }}" data-to="{{ include.show_to }}">
+  <p class="seminar-status" role="status" aria-live="polite" aria-atomic="true">Loading schedule...</p>
+  <p>All times are Eastern Time (Charlottesville).</p>
+  <div class="seminar-events"></div>
+  <script type="application/json" class="seminar-calendar-data">
+    [
+    {% if include.mode == "all" %}
+      {% assign calendar_first = true %}
+      {% for calendar in site.data.seminars %}
+        {% if calendar.google_cal_id and calendar.defunct != true %}
+          {% unless calendar_first %},{% endunless %}
+          {"id": {{ calendar.google_cal_id | jsonify }}, "name": {{ calendar.name | jsonify }}, "url": "{% if calendar.shortname == 'awm' %}{{ site.url }}/awm/calendar/{% elsif calendar.shortname == 'drp' %}{{ site.url }}/drp/calendar/{% elsif calendar.shortname != 'one_off' %}{{ site.url }}/seminars/{{ calendar.shortname }}/{% endif %}"}
+          {% assign calendar_first = false %}
+        {% endif %}
+      {% endfor %}
+    {% else %}
+      {"id": {{ include.google_cal_id | jsonify }}, "name": "", "url": ""}
+    {% endif %}
+    ]
+  </script>
+  <noscript><p>JavaScript is needed to load the live schedule. Contact the seminar organizers for talk details, or <a href="https://calendar.google.com/calendar/u/0/r">open Google Calendar</a>.</p></noscript>
+</div>
+<script defer src="{{ site.url }}/assets/js/seminar-calendar.js"></script>

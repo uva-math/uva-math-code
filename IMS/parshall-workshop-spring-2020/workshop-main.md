@@ -5,7 +5,7 @@ permalink: /ims/rt-workshop-spring-2020/
 nav_parent: IMS
 ---
 
-<h2 class="mb-2">Representations of Algebraic Groups and Quantum Groups</h2>
+<h1 class="mb-2">Representations of Algebraic Groups and Quantum Groups</h1>
 
 <b>Thursday March 12 — Friday March 13, 2020</b>
 
@@ -16,13 +16,15 @@ Organizers: <a href="https://www.math.uga.edu/directory/people/daniel-k-nakano">
     {% include person_info_email_only.html UVA_id="ww9c" %}
 
 
-<h5><a href="{{site.url}}/ims/rt-workshop-spring-2020/schedule/">Schedule</a> &bull; All talks are in Monroe Hall 122</h5>
+<h2><a href="{{site.url}}/ims/rt-workshop-spring-2020/schedule/">Schedule</a> &bull; All talks are in Monroe Hall 122</h2>
 
 This workshop celebrates the work of G.T. Whyburn Professor of Mathematics Brian J. Parshall and his collaborators. 
 In the course of his career, together with Ed Cline and <a href="http://people.virginia.edu/~lls2l/">Leonard Scott</a> (CPS) as well as with others, Brian has made important contributions to the representation theory of algebraic and quantum groups.
 The workshop is held on the occasion of Brian's retirement.
 
-<h4>Speakers</h4>
+The workshop is followed by an AMS special session on "Representations of algebraic groups and quantum groups: a tribute to Cline-Parshall-Scott (CPS)", Charlottesville, Virginia, March 13–15, 2020.
+
+<h2>Speakers</h2>
 
 1. Jon Carlson (University of Georgia)
 1. Jie Du (University of New South Wales, Australia)

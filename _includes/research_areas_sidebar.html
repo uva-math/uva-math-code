@@ -3,7 +3,7 @@
   <a class="list-group-item list-group-item-action {% if page.url contains "facultyresearch" %}active{% endif %}" href="{{site.url}}/facultyresearch/">All research areas</a>
 </div>
 
-<h3 class="mt-4 mb-2">People by area</h3>
+<h2 class="mt-4 mb-2">People by area</h2>
 <div class="list-group smaller-h5 mt-2">
     {% assign sorted_tags = site.data.research_tags | sort: 'name' %}
     {% for tag in sorted_tags %}

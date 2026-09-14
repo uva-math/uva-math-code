@@ -19,7 +19,7 @@ This conference is in conjunction with and immediately followed by the [Fall 201
 
 <!--more-->
 
-#### Confirmed speakers:
+## Confirmed speakers:
 
 - Carolyn Abbott (University of California, Berkeley)
 - Ara Basmajian (Hunter College, CUNY)

@@ -7,6 +7,7 @@ gem "jekyll"
 gem "jekyll-paginate"
 gem "jekyll-feed"
 gem "html-proofer"
+gem "nokogiri"
 gem 'jekyll-redirect-from'
 gem 'erb'
 gem 'logger'

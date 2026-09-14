@@ -16,7 +16,7 @@ more-text: Abstract
 nav_parent: IMS
 ---
 
-<h5 class="mt-3 mb-4">James Arthur (University of Toronto)</h5>
+<h2 class="mt-3 mb-4">James Arthur (University of Toronto)</h2>
 
 - Lecture 1: L-functions and Number Theory
 - Lecture 2: The Trace Formula and Automorphic Forms
@@ -24,7 +24,7 @@ nav_parent: IMS
 
 <!--more-->
 
-#### General Abstract
+## General Abstract
 
 Number theory is founded on the basic properties of integers and prime numbers. But its study these days is increasingly leading us to the far reaches of some of the most diverse and powerful areas of mathematics. Nowhere is this more apparent than in the Langlands program, which represents a profound unifying force for mathematics.
 

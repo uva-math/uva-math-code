@@ -15,7 +15,7 @@ image-address: __SITE_URL__/img/IMS/McMullen_poster.pdf
 nav_parent: IMS
 ---
 
-<h5 class="mt-1 mb-4"><a href="http://people.math.harvard.edu/~ctm/">Curtis McMullen</a> (Harvard)</h5>
+<h2 class="mt-1 mb-4"><a href="http://people.math.harvard.edu/~ctm/">Curtis McMullen</a> (Harvard)</h2>
 
 - Lecture 1 - "**Solving the quintic by iteration**". Monday, November 8, 2021, 5:00-6:00pm, Nau 101.
 - Lecture 2 - "**Billiards and moduli spaces**". Tuesday, November 9, 2021, 5:00-6:00pm, Clark 108
@@ -26,3 +26,6 @@ The lectures are preceded by the <a href="https://filippomazzoli.github.io/confe
 <!--more-->
 
 
+
+
+<p><a href="/img/IMS/McMullen_poster.html">Event poster text (HTML)</a>.</p>

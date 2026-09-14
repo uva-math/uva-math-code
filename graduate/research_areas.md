@@ -348,7 +348,7 @@ The graduate program in the history of mathematics includes a component in the h
  <strong>Program Coursework</strong>
 The following is typical for a student in the graduate program in the history of mathematics:
 
-#### First Year
+### First Year
 
 
 
@@ -356,7 +356,7 @@ The following is typical for a student in the graduate program in the history of
 - _Second Semester:_ MATH 7320 (Real Analysis II), MATH 7520 (Algebra II), one additional mathematics course (again to be determined depending on the student&#39;s future historical interests). General exams are taken at the end of the summer after the first year.
 
 
-#### Second Year
+### Second Year
 
 
 
@@ -366,15 +366,15 @@ The following is typical for a student in the graduate program in the history of
 - _Second Semester:_ MATH 5010 (The History of the Calculus) or MATH 5030 (The History of Mathematics) (depending on the year), HIUS 3401 (The Development of American Science) (taken as MATH 9999), MATH 7800 (Algebraic Topology I), or one additional course depending on specific needs and interests. The summer after the second year involves directed readings geared toward the isolation of an eventual dissertation topic.
 
 
-#### Third Year and Beyond
+### Third Year and Beyond
 
 Additional mathematics courses to complete the number of hours required for the degree (chosen in consultation with the adviser), and any additional courses as needed (in, for example, language(s), history, or philosophy).
 
-#### Research Seminar
+### Research Seminar
 
 Students are expected to participate actively in MATH 9010 History of Mathematics Seminar in all semesters.
 
-#### Dissertation Proposal
+### Dissertation Proposal
 
 For students in this program, the proposal defense replaces the Second-Year Proficiency Exam. It generally takes place before the end of the third year. Successful defense of the proposal represents &quot;permission to proceed&quot; to the dissertation phase of the program. The proposal is a written document (generally thirty to forty pages in length, exclusive of bibliography) that is presented in a public forum. It
 

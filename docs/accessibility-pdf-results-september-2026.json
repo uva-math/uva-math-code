@@ -1,0 +1,3122 @@
+{
+  "installed": true,
+  "documents": 227,
+  "replaced": 209,
+  "retained": 18,
+  "records": [
+    {
+      "pdf": "IMS/files/CIRMATH AMERICAS Program 2018.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 5,
+      "source_urls": [
+        "/IMS/files/CIRMATH AMERICAS Program 2018.html"
+      ],
+      "source_sha256": "158395e792da28f8edaba2c458792236f437b1576d427e0742f5d88df9ac873e",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "0951de60a6bafc12c036e5caadf3071677b32e890b522e532ce13cde48577279",
+      "sha256": "80c8ecb0325d9841a57c3fed2316055ba1e495e277d37073b8e4cb9450311853"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/Schedule.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 56,
+      "figures": 0,
+      "source_urls": [
+        "/ims/workshop-fall-2018/schedule/index.html"
+      ],
+      "source_sha256": "366e6d095ac46f09418e764b1b24e608d1addd3ed0eeb29e51c62dce437efe0b",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "f739c7f253619dae4229a06f8478fc4c30644382267042c8881683a4a2ee95f0",
+      "sha256": "5d29c7b3b269845001cf4369fa6c7e46e842275150a98350f2492dee31085cd7"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Collins.pdf",
+      "status": "retained historical archive",
+      "sha256": "e43509da4551c9eef1535a5d2a49d70ea0ebf2e37abe0bece24c59364688cc15"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Friday/1 - Welch - UVA.pdf",
+      "status": "retained historical archive",
+      "sha256": "8909278b1fb66d6ce0d2d36501b8c0de18afa7159b3b7d153665c807dc58bf2a"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Friday/2 - 18UVa20m.pdf",
+      "status": "retained historical archive",
+      "sha256": "c2b362b9ec281b13a9613297a4be643c85a73bd87636fc678e2178472ce2ac9a"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Friday/3 - SatConjD.pdf",
+      "status": "retained historical archive",
+      "sha256": "f9bfdc9efe31e95db574b810ff2c288d14df01518e21c23af8ec3f4a517158cb"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Li.pdf",
+      "status": "retained historical archive",
+      "sha256": "3066ad7e1868cd8da1146dd195d75f6757f55b302f983ef9687d1c073254b54a"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Saturday/1 - tpc_pres.pdf",
+      "status": "retained historical archive",
+      "sha256": "11de08b6371dcc96d7e3dac72b397d6e00159b081d58d0a404e4b64d77d6d9bd"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Saturday/2 - vanishing_pres__VA.pdf",
+      "status": "retained historical archive",
+      "sha256": "dcce323618679973a0bd24a6693ac1fe89b39ec63eeb73605dc6a7cf325b64d5"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Saturday/3 - KRcactusslides_short.pdf",
+      "status": "retained historical archive",
+      "sha256": "d85e67333d6c8c4fe4c42a7e3500ae4401c385f32d1e52082147ee7f97a648b2"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Schilling.pdf",
+      "status": "retained historical archive",
+      "sha256": "4736a12e3e607d0c58b91258201340adbbacf2d04cee0b516b8e2211ad562c42"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Sunday/1 - UVA_oct21_workshop.pdf",
+      "status": "retained historical archive",
+      "sha256": "fac6ac1878c9331b5989f6d464fbcbc3f4ec5d0036b14280c006480f517d25e5"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Sunday/2 - UVA2018Kvinge.pdf",
+      "status": "retained historical archive",
+      "sha256": "c92959b3f12889e461d31ea8f9a01c7a36e60438c51551484859e0dd7be3db9e"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Wan.pdf",
+      "status": "retained historical archive",
+      "sha256": "e29aea4601124b75bd189a45ad843189ef2368b565e50bb66f30df99f7a522fe"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Webster.pdf",
+      "status": "retained historical archive",
+      "sha256": "1346e20a7982c2a10f7b8b1de857cc439bac6abf85b2979ee9b1a1bb1344eefe"
+    },
+    {
+      "pdf": "IMS/okounkov_workshop_fall_2018/talks/Yong.pdf",
+      "status": "retained historical archive",
+      "sha256": "9427eaf22da94a057b314af917b75785800455fe3dc0ca1917af427797f39ad1"
+    },
+    {
+      "pdf": "IMS/parshall-workshop-spring-2020/parshall-workshop-spring-2020-poster.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 1,
+      "source_urls": [
+        "/IMS/parshall-workshop-spring-2020/parshall-workshop-spring-2020-poster.html"
+      ],
+      "source_sha256": "58ae1e11d025897e9313804e335f577973eb5bd15c9326b9a0f46a2c11ead6e7",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "50113b9d8b16d2b960a8de1b4e4075e097e5817d70db988a999d061d59a93e68",
+      "sha256": "d4d24fed99515503a63f2ececb3dfc36b480d329c32d4dc81d73a51b341698f4"
+    },
+    {
+      "pdf": "IMS/selie_icm2026/conf_schedule.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 220,
+      "figures": 0,
+      "source_urls": [
+        "/IMS/selie_icm2026/conf_schedule.html"
+      ],
+      "source_sha256": "b333ab912e7b051d0fbaf59654c9a10614ebe27684c596f18a440362ce09ac72",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "03e0c73300235e6dd59d299f0ace69a0a3a0d3cc78fd87f6a34f9612e2e21617",
+      "sha256": "f88002f20cbaa82f92b072643b0bc99e5a87964ce2698ebfea03cf7d870df975"
+    },
+    {
+      "pdf": "IMS/workshop_spring_2022/Schedule.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 22,
+      "figures": 0,
+      "source_urls": [
+        "/ims/workshop-spring-2022/schedule/index.html"
+      ],
+      "source_sha256": "3b5cc01bf649fcf07f83069bffee6a05f3a7b63cfd7e0323e56183eab7d4db02",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "852334586b65b2d6f879e0472c0c729d900b6df66acc9f511c41bce85fb86cf2",
+      "sha256": "6695a70800eba536c742c3c885930acfa6523baa4839a88e72db0ece5236af32"
+    },
+    {
+      "pdf": "IMS/workshop_spring_2024_selie/LosevLec1.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 177,
+      "figures": 0,
+      "source_urls": [
+        "/IMS/workshop_spring_2024_selie/LosevLec1.html"
+      ],
+      "source_sha256": "b13cc1a82b83d0cf249b88a50e978be6bff1191153ae093db9d9f094e4f61b66",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "129920ccd78b253ed4bf61340ef6275dd0b87011f03e6a71fefe9164d79bb42d",
+      "sha256": "d193479a1a83002dedf8030b0ac01116d7d1824eb77d6437858566acd2afc16f"
+    },
+    {
+      "pdf": "IMS/workshop_spring_2024_selie/LosevLec2.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 96,
+      "figures": 0,
+      "source_urls": [
+        "/IMS/workshop_spring_2024_selie/LosevLec2.html"
+      ],
+      "source_sha256": "d84c2e9ef3a7b937814d482482e184e9b410794141d226f2b1b561a05e268862",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ea5ed7d3e91b8f4a3533be946c323241644560db0028e9ad3f0f4b424c3dece9",
+      "sha256": "038e70c21998769f1e3eefdbd9541cddda0fb3c72ffe24e1b7a32c04dca3226e"
+    },
+    {
+      "pdf": "IMS/workshop_spring_2024_selie/LosevLec3.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 83,
+      "figures": 0,
+      "source_urls": [
+        "/IMS/workshop_spring_2024_selie/LosevLec3.html"
+      ],
+      "source_sha256": "f5a70c4917dc64d438f1036260c91a79fd958fb86e1890c13fcf2b874185c3b9",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "422e928f32188f731d326fb5dc99babf83b782f7011b91636a9cfa0f7d12c805",
+      "sha256": "c786450b0c8551ec26c0b621bca3c120edd72ab95dd757ae7fcf37f0932ddee9"
+    },
+    {
+      "pdf": "IMS/workshop_spring_2024_selie/Schedule.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 65,
+      "figures": 0,
+      "source_urls": [
+        "/ims/workshop-spring-2024/schedule/index.html"
+      ],
+      "source_sha256": "52e05d37f113dc6bd890f3eb96fbaefad8bc58321ce0474526889abb238c0cc4",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "f7ce69c0f6aaf8c607b50980accc1322719cbe8e30899f2362b914296073e767",
+      "sha256": "4cc6e43d56732987479a2c42a1a779662aa2a53169cb9810ac2b795887166ce4"
+    },
+    {
+      "pdf": "PDFs/Alec_Traaseth.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 18,
+      "figures": 1,
+      "source_urls": [
+        "/PDFs/Alec_Traaseth.html"
+      ],
+      "source_sha256": "f8d154fab59e2651524688a3a18ece9efcbc813dc4d3e8d85bcf8a975cd75220",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "77460525d651d24e7cd3b81ef789e218c69e6be0b2fd842e7b472a9583f0b26a",
+      "sha256": "e8e0e7dfea0597ef6c4c3e39796ac5fa256cd9c1f54833a6b479a56bc8077bf7"
+    },
+    {
+      "pdf": "PDFs/Hasan_Saad.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 15,
+      "figures": 0,
+      "source_urls": [
+        "/PDFs/Hasan_Saad.html"
+      ],
+      "source_sha256": "428e1c9f055223fbd5b547d48d9b8e38795e13c60f0478c1930ff623dd728f73",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "bdf9867223803f095a0d0d1e2483c18b1c08ea892bb63ee2ceacc6b7b4d6b74f",
+      "sha256": "93f9882f47f6ebc7b718510853cc2c4c13999b420be546cb9cee37907b0e0ca9"
+    },
+    {
+      "pdf": "PDFs/Yaolong_Shen.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 20,
+      "figures": 0,
+      "source_urls": [
+        "/PDFs/Yaolong_Shen.html"
+      ],
+      "source_sha256": "ee928a02a0ebe8a28597d3526d5508eaef00274ab25cfc8cfce61ccfc819e320",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "f65eeda1023e9bbe71dbffef7ab9bf9514b7dd4da1506d142494c18c81a496e3",
+      "sha256": "275f3346ca47b9d0fcc3fe193eaf7285194ad7cdbf720aa771470f81eb7d8502"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2014.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 46,
+      "figures": 19,
+      "source_urls": [
+        "/allnews/virginia-math-bulletin/Bulletin2014.html"
+      ],
+      "source_sha256": "b8c5f712ff637896316847bd603475fbd001b825ee276241d6a36e0692912548",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "2ef4627c1ee74c05cfde30caf2915780f7442693a8d70d24bf461fadd12415f1",
+      "sha256": "df0925427e85d2cab7b6cac227f3a48d99c965f1136587498c22ac334e54025c"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2015.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 18,
+      "figures": 37,
+      "source_urls": [
+        "/allnews/virginia-math-bulletin/Bulletin2015.html"
+      ],
+      "source_sha256": "a03254fbecb732e65fe40ee6f99c4bfce56023683b601cbe58afa71a97b24e35",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c726ccc02b8478926d65d474d8a1548139e060bb5ca40a8b86efa82f991c56b5",
+      "sha256": "50d81b7568d90aabe89fb5420a683a6ebf4325489892691a6e0f51bc0519599b"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2016.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 17,
+      "figures": 23,
+      "source_urls": [
+        "/allnews/virginia-math-bulletin/Bulletin2016.html"
+      ],
+      "source_sha256": "f026a8b0b1fb186bca98a36c9c07afe4de8864a4e45cf19f28113a4679e2393c",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "cc446c47ad9eafe865a9c4102a500976a5dc36ad40534dce5555ec9205cef568",
+      "sha256": "811a876e72761cb7945f1f62e782a5f0d68f7331a07e257b9729a3cc1c6406a9"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2017.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 37,
+      "figures": 28,
+      "source_urls": [
+        "/allnews/virginia-math-bulletin/Bulletin2017.html"
+      ],
+      "source_sha256": "44f3ba42f028146c4c557ba137da9f0fd25dfd33435aeb741d7fb41032d40b3f",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "983c1b7046cc301d8a2a582798f5badf4df962be40182f5a9c7e303ba10ffabd",
+      "sha256": "fb8160d4fea747e42fdcad7120f8dede206e88b2319083fc09043c0e0e57fe30"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2018.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 287,
+      "figures": 44,
+      "source_urls": [
+        "/allnews/virginia-math-bulletin/Bulletin2018.html"
+      ],
+      "source_sha256": "2f5f2d5d6e3c4dd9c9efb9c190bbe3ba1c5d3b05b0ca667fbbc9deebdc83be2a",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "a576ef6afbc0c385035757b16980610cc599f943cd8ded3f652fe280dd96010c",
+      "sha256": "2b570d2b11ee16aa85464c60c17f0b65a2d5e97614abc37427b83f1f794c38ad"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2019.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 139,
+      "figures": 33,
+      "source_urls": [
+        "/allnews/virginia-math-bulletin/Bulletin2019.html"
+      ],
+      "source_sha256": "61bcd4346d8865eaa09748c5160976473851cef5402a20c19587e4ee8ad048cb",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "e980dcfe3a186fbfa3b4451395406776d0d6890cf13c87589245b6a38c48abdc",
+      "sha256": "6c09843fcdd298f5f5d812eb73e87be7d5aa78667a7f2b88a1f6072d9c42540d"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2020.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 130,
+      "figures": 43,
+      "source_urls": [
+        "/allnews/virginia-math-bulletin/Bulletin2020.html"
+      ],
+      "source_sha256": "e5e5a9f2e1f5faa9e7b2294492d40fbcf631f81ee220123d91dff62af10355fb",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "29c1813df8c37df2cebe231dd059179c55fdd564e6f2bf2d208ca358d7080b92",
+      "sha256": "5f7ba9cca429716f777ffbed129fe6c13c30edaddb3fa0ad85c235a8a52dae80"
+    },
+    {
+      "pdf": "allnews/virginia-math-bulletin/Bulletin2021.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 79,
+      "figures": 44,
+      "source_urls": [
+        "/allnews/virginia-math-bulletin/Bulletin2021.html"
+      ],
+      "source_sha256": "8e1670c86f74c2b14127872a7885648850739e02a022919700e8bc282ae1c566",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "b1a9ba7c7693b45d620f3eaf7c645ed5e135f1b14a69986cebc778cf906f8d37",
+      "sha256": "4a4585f611b35f5fe06b7bb4f7b2c61a726d5ce4347b0312919b8395e5e20dc2"
+    },
+    {
+      "pdf": "drp/Mentor_Guidelines.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/drp/Mentor_Guidelines.html"
+      ],
+      "source_sha256": "927226912c4f4b6482c51792a1157b0e6efdd8df1cb32439f5adad92b18a5b80",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "5baa3dd0fb56e6ad6b0ac8a502b81dc1e05bc590ca7849469b32e98b4923875c",
+      "sha256": "9d180071d71601862f48ffbaebb37a1586998b4f23a19ceb48693f3e2b716e13"
+    },
+    {
+      "pdf": "f26.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/schedule/index.html"
+      ],
+      "source_sha256": "1aba518235ec0011fff6d8551514fc1bbd1a98124388cac744262c46e4c94e60",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9775f6fa4d2d903117be22fc43d3a94148d4f540dff82809afe3652f8a4d5a06",
+      "sha256": "52e4a8b898181e7fc5fdbfc5d1f8d461d0fe6557f746a110c9ed8e094423003b"
+    },
+    {
+      "pdf": "graduate/docs/DSP-GMP Info Sheets_2015 2.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 1,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/docs/DSP-GMP Info Sheets_2015 2.html"
+      ],
+      "source_sha256": "9bc236c1875974f63e55424a48b2992929e951a6b49f7b9383daffd5ed3a42bc",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c69c92f46c1c8f79d8835fe7e01cefeb1f8174b45328feb9d57b36168b8c3273",
+      "sha256": "b592ff640af03797088cfcc3fefbcbba0fef6aee2147aaf95e52a672139d12bc"
+    },
+    {
+      "pdf": "graduate/docs/PosterTemplate.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 2,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/docs/PosterTemplate.html"
+      ],
+      "source_sha256": "ab9f41c22c67e1f961730bd0cb870a3d914abee363bba8f1dfb9bba223ed3cb6",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9",
+      "sha256": "19f777868f19f48b0f527cbffeb69d44f58064590ddd89983a9769ce3909155f"
+    },
+    {
+      "pdf": "graduate/docs/PosterTemplate/PosterTemplate.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 2,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/docs/PosterTemplate.html"
+      ],
+      "source_sha256": "ab9f41c22c67e1f961730bd0cb870a3d914abee363bba8f1dfb9bba223ed3cb6",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "536a5e97724db3ab7c487320c5b256a101a3242ddf1d6bfbc2e2bc6f1f3ae0b9",
+      "sha256": "858b8084a0078a1a06aec2cbbf8be89005a4bbf33b534864cdca2a84b34edff9"
+    },
+    {
+      "pdf": "graduate/docs/PosterTemplate/mathlogo2.pdf",
+      "status": "tagged artwork",
+      "pdfua1": true,
+      "original_sha256": "94eea540fbd2c5e247935018306d2b7faec4f2f12addd7f415c932432367c24c",
+      "sha256": "fd62ff7a3226e02b014c3249b168bf85f481eca3cb31788bfcb9153e813929b1"
+    },
+    {
+      "pdf": "graduate/docs/PosterTemplate/rotunda-drawing.pdf",
+      "status": "tagged artwork",
+      "pdfua1": true,
+      "original_sha256": "5bda1600e54040e93fc5392289c8a8f8df1a6487ab5d4f17024f95ad327d3752",
+      "sha256": "8506075ddb88610ddc480856dee18d5e5c821848648135052dcf8c7074d3abba"
+    },
+    {
+      "pdf": "graduate/docs/Syllabus for Algebra General Exam 1 - update 2023.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/docs/algebra-general-exam-syllabus/index.html"
+      ],
+      "source_sha256": "6ac3ff53bb7ba14665c2d0b130854df9f25722f85c136a19f9bf3abc812298aa",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "287056e8244353df53b7989fb9ba9d4e1470aff05b225b74e391b73e6d409163",
+      "sha256": "ce167b21170c48cfcb4cdde1da2b7731813ad7c7a162df43d26058ba253ef35d"
+    },
+    {
+      "pdf": "graduate/docs/Syllabus for Analysis General Exam 2.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 14,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/docs/analysis-general-exam-syllabus/index.html"
+      ],
+      "source_sha256": "95a6aa2910a99a55a1770844d6c63faf53dddf15cb01cf535e0071a7e97bfa53",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "03ac7418e90b879ba2f494bd1227dddf1acf5a667e74acabc4ccc12e7164b6a1",
+      "sha256": "e1bd1726a40b594d7c1398359cb695bae621c3f5af9cc05c91ca49d720722cf0"
+    },
+    {
+      "pdf": "graduate/docs/Syllabus for Topology General Exam 3.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 17,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/docs/topology-general-exam-syllabus/index.html"
+      ],
+      "source_sha256": "777c8d376bedbb427e6802dcba29db9b956b0bb0a3d4501424820bf1781d0424",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "5c26818a30e75c75bc0742ee3681f9d7bd3ff75f8c5b9fa43a7a38f73a8e1728",
+      "sha256": "6319a237c9674a41bd8b87f84f22701b27a7e6dfea3e58ea11360ee9b4780ecd"
+    },
+    {
+      "pdf": "graduate/docs/oral_exam_form.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/docs/oral_exam_form.html"
+      ],
+      "source_sha256": "bbb3084ed5beb9d567cf8b4dc48e008d5ff7f80359328772ecfdf727fdd9ec65",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9fbfa5dfe0011b68aedb25ec018b9d627f66e7c8b2c58d6ba647ca54772b14d7",
+      "sha256": "188050c15d78e853c73f174e380ada65a200a242f22f26c6089022632dd965a2"
+    },
+    {
+      "pdf": "graduate/exams/algebra/01-2026.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 127,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2026-01.html"
+      ],
+      "source_sha256": "e99df5cfec5b57aabb0fae226db002ecb1d46676c89e6d38bcdc0ffe1b3ca63d",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "a429b771ef46d0262e7edd3df2069cd80462840db4890d1267b4b29978aece95",
+      "sha256": "eb1489b2cb719c3999bfcd47f362cb1f27322d650c865ad7782dec362d5a741c"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2003-05.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 39,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2003-05.html"
+      ],
+      "source_sha256": "4acab1cf6d3a30ab4971a9c6421c49e628e05bddb516ad6a5a0bd660caf7789f",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "7800d5c046eef95473c63cb80be72b169397b8d9ee886e77b43d5bd539c442f1",
+      "sha256": "889be352716db24a37ee786a59f265755394543f1147768ac41bf5744ea31c50"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2003-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 93,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2003-08.html"
+      ],
+      "source_sha256": "f46d9c5d9f9bef40efdfdca31ce9dae4f5bec63450f15ce013e07394908dfa9d",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "386b5de6c334ed72f19212beaeeca37f549a9edf3ede00d4272f600a2d77e100",
+      "sha256": "06ac4e44358205f3341589a2897b84397bee7cb150a8b1470f0897bcf03c929c"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2004-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 42,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2004-01.html"
+      ],
+      "source_sha256": "47794467cc333a9e3a6711c075a20263ebc1a49f98787f8f350fa9fbc4747dab",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "74af7e81309ea4d43852e831c60ec7bc418fac4f24f47cba9f915f23415a3183",
+      "sha256": "46c7f751907eb64492bea21bae8e04e2d20035e336a1b594bf8af731cd559515"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2004-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 101,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2004-08.html"
+      ],
+      "source_sha256": "ba049f47826e7069e157e7eaeeda39b199de6c32a224f31e0b8889307e177661",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "551df1dfadccef6f8bfecc81b5dc5bb5e878841f12a85a4d98c4a20ea59e0f2a",
+      "sha256": "cbfae585b4aef721d2456f4592a34e0ec3838f1a5f7340ea053b1af35fd097e0"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2006-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 73,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2006-01.html"
+      ],
+      "source_sha256": "d8abfd920f484a0a06a80cdb04abafb8f0af57c0bc075290352116d21d446e0e",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "fe2109bdbfe4a1463d316898fbbea55324b213f3c117afa5d0274f57eb10bf05",
+      "sha256": "7640508a0498d23b2ed9900d87867dd333461d018d73fb5f16cbee241960b90b"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2006-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 37,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2006-08.html"
+      ],
+      "source_sha256": "538b2679f0c02f2e45fc698813e9ae7039acb3f940a64f8b515130cd6435d2fa",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "98d8e72719e2e7cdb7dd628506f2ebba6e3db3fbd874e833b9d79517d73fe3a0",
+      "sha256": "db041b5bb5a4abd09e6c23f7b466e266924065c6c48ef57506bf77e489da8322"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2007-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 38,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/algebra/2007-01.html"
+      ],
+      "source_sha256": "fded525f9f789f4a1a5acd0386e23b789514f90f5b1a47ddc45f67aaf18c2dc3",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "4793dd6aa2bf151e9c5747193e86ae01276f2ffa03cba2dd1c8782cc8559da48",
+      "sha256": "4c06f509b59c28ffb3fbd8632c73c62c826d31395ad35ed84c63482c1a0a3662"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2007-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 44,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/algebra/2007-08.html"
+      ],
+      "source_sha256": "2234bed0801322dad57e94cf252a272f66994a90527ca718d41e4f7dfc27f739",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "2530e0777e877ce19bd4ce29d8b9841d14b55530c717713c64c9b632f467e561",
+      "sha256": "8a4e61dea43358e579a2005d5ad347a318b4acc517dbb6ba9450c608bf364d68"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2008-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 103,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2008-01.html"
+      ],
+      "source_sha256": "27eeab8d53c2196993a7c021fc85b041cf634f162a703849eabb7da30a913bec",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "56d110704acbe205cfc18c46e6f1a8047d47ae3c9b4a76df74e030bd0b970113",
+      "sha256": "9d1176f03d40f343c24a9098d82ed3f36ce853843b02d3347190ffa1cafe739a"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2008-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 101,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2008-08.html"
+      ],
+      "source_sha256": "415425ec9b209db16db52982ef9fd195fc24410ae6fe438149966854f0453eba",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9c35fd135fd66f67ee91c71fd25c8dbf7217cc112f61478d82eb61a386c37869",
+      "sha256": "334808731903b3e48d60110c728c064637dcfc167a69f64f44cecacae30810a8"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2009-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 103,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2009-01.html"
+      ],
+      "source_sha256": "af4b0d97ad84fe1c993b95254f3a3b1a8093f5ce968566062b4dbdf8f4d301d5",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "b563f279b5017b227bcd3a5679f1e83f73123e1237a705c52ae7367f0eeb4a4f",
+      "sha256": "37cf2ec678d0bff38974fdfe2aededbeb82dfd035a8f9910cbb400f7bd80b356"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2009-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 96,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2009-08.html"
+      ],
+      "source_sha256": "9be8efc5687fb50201f3346588239c73f02eb26d2bb277e8e9cfd8d536ec19d5",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "646a2577292b5eef1c432c09a8c826561b1967b14ce9dee4b5fa1d51a8cab480",
+      "sha256": "7e61a2edd29e99d830a19bea774ef5108346e0a8190a1df1de16fc1e45fc9dae"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2010-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 138,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2010-08.html"
+      ],
+      "source_sha256": "063bae408fbd4b55fcca6ba80207567ecdfd44d4e1ec3a0d8fff518d99054bd4",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "334de222535d5a5fb541e977b8cec005f22dcc480d38a36223e4ed507cbb108e",
+      "sha256": "dd9766fcabcdd310b4b00e622709b895a473259fdfce4b43be0dbc36e166c457"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2011-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 85,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2011-01.html"
+      ],
+      "source_sha256": "3a0f1aae8dcdfe28d3d35e3635d11080fc9ffea73dcd3e97078304ac2881c324",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "625ea0cb9e8ff8127c3e5e9ad50d7cb20a1dce5d2f580974abdb27d57d56c2e7",
+      "sha256": "136c5bb8e7353762c1bd7308cdc6504ab0b8eff66832ebeeedda389e31e963d8"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2011-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 115,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2011-08.html"
+      ],
+      "source_sha256": "c4cde950394f3b39935eba3d0b57b9e220f8f46b114a93c9d4ac02e5b42bb241",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "b1edcc37626dc9433207b306c059aed97c10d8dc10829043e49d0a201f7f1005",
+      "sha256": "47469de81fa3c8ddf41874e29f827cd709c0410fe2781626d00d64a333e66ab1"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2012-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 159,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2012-01.html"
+      ],
+      "source_sha256": "1cf78ec74bc1f7d1ac136fd7c02a558a01f8ffc97158f6c7cef9df7815fe6ed0",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "2cda76dd038fdb72067e3dfe1ac9e3f58952e8b33289cf7dc31f256abebf81f4",
+      "sha256": "fe53c171b9d8af05a8d11b64fab9f7b503b7d5437b6b4b894dbc14ab2610687f"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2012-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 102,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2012-08.html"
+      ],
+      "source_sha256": "db0f8f618053733a5bcb00a9512986e4145323c678b78622fb3cb8ade4ba6ef2",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "2cd961d87d28ba7b4e6d489662717d86cdedb718a2d1e04b9e0fa9cc8ac62f3e",
+      "sha256": "36df2320a8be28f44c0189a1ee80615acbdaa81d8d4118f8f456a61d1371fc16"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2013-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 101,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2013-01.html"
+      ],
+      "source_sha256": "9896f33c943015870fce0517dbcbeaf84d55156ebad45354d96c750d30ca4b3e",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ddc0f2742ddb1ac26804912f0a9898d08816f7553b21731ef43bce8597abe8eb",
+      "sha256": "b64df33ae93faf56366690ba2bf09de23820abf78aa5052caa718c0c164c2326"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2013-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 112,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2013-08.html"
+      ],
+      "source_sha256": "abc94758e681a7102847288a27493902fdf4d347ad9f7fc7cbf8fc4efdb2acf4",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "6c9f6038c9f8308acd7ffc3f8dea4673d8487e531a32b15b24b249fa6f6d26e7",
+      "sha256": "862b53b57357c6dd245d576e6fa95063c57b1bc113a66fe5c50f53c942ac3fb0"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2014-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 35,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2014-01.html"
+      ],
+      "source_sha256": "de10b82e43a179cf49df8fba0549d544ca39013dd887ad3ae2b7094f30d868f8",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "535f668b2692aa9851748eebb59c4f0bde5d2517b4feafcd6d1d1f88be074cc0",
+      "sha256": "b7f6b63daa2fd1fdd89f97835ae763f24987131640354b9872aa778ac0080f9d"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2014-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 59,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2014-08.html"
+      ],
+      "source_sha256": "18a1cf4002d6d5c1a481ff4163d5976bccd6d67a23c0b4ff88ecb162ce143d45",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c6d845cc407bee69767c9be81355e3890e9914e6d49380a7ddf080d2b9db888d",
+      "sha256": "ccd805727b67f0f2f243f6d8f70c934b0ede96a55a491869c6d4d965ff654ca9"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2015-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 60,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2015-08.html"
+      ],
+      "source_sha256": "a73882c6e14d753eb02eda8aadee1ee3b992178a6295e4425bdc85d770ce3654",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "95be8d1efd1a4a4a61d21e5c2401fbfab18fd8a3c15bbe4be0048ed37daaf891",
+      "sha256": "1fd50df17c8ba2fe8a5c0f052a1e6d3448029a30c7c1d8a6f6428b47681ac3b9"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2016-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 67,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2016-01.html"
+      ],
+      "source_sha256": "50447c3b9fa87fba89d4be150a92a264fd9896c30cce7d5c27144f2cbc0b1016",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "b13dcbfc69d7ae530c086ded0be76959aa796fa473d25b4d9ffb684dbf4efece",
+      "sha256": "c226b7c21bca8733e3a040c247abe5c048416ca55ddd0f8a5048f5a3a2541f73"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2016-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 54,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2016-08.html"
+      ],
+      "source_sha256": "dcfbec121e8e50307446ee849c145d053746834d4f8c32b4c35f4402ce9057c1",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9465543583870ddf5f9304d739c5a7c471aeb6afb0cb071b40f4d7eed4055207",
+      "sha256": "fd09519ffe9e1c69adc0d8b9f986e0c2e13cf63ed9f57e6b1d37b59ba6bfed78"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2017-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 62,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2017-01.html"
+      ],
+      "source_sha256": "c43f7aa46e51cb4b407a2bc2e555fcd47d98f2140fa6ccaed755193baba1dda5",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "d67d70f1b704e9046683938cb356becbab04f845cb0e3e68d7575ac0658d081b",
+      "sha256": "4b15a5b5197ec00081c729059ef97ad50a7be8a24e32e995810b82e4894b4a60"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2017-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 87,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2017-08.html"
+      ],
+      "source_sha256": "a8b28f13b6f6e0b1cf9d03e3f672c6fa22f70c197dbff9659f0c9dda44ea332a",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "0d1a3d5d3eb298e2bc58be46d67f2161fdf2c91fe86b3626db1f5cc0f3cbebf5",
+      "sha256": "8a5eef1f26c8d68ca45122b4e4255807dc222f13ad27b8dff7d6fd38edf79331"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2018-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 58,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2018-01.html"
+      ],
+      "source_sha256": "4f985850c222806d4e4cdad9302ce5be26e83e9f0a4d638e86375095bcb470a8",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "15d02a25b9d92faf4862fec5a5622856d90538343e00b49791ee4f638524e32d",
+      "sha256": "49629afb2d5e1708330f4f2a7fea1d32205190c7c8de5661fe39dd9584a10e6d"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2018-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 65,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2018-08.html"
+      ],
+      "source_sha256": "d87054822504d4c0f1970bd6b37597c481cbbbda0c46ecdeb4f1726fb709725d",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "8ffdb1fcdb7231e0332f48c71d78248cb6877a0042a320ddbdf4ee7225d532c8",
+      "sha256": "3b26814ce392649d76eefc0a6d3505b5b39e89cd3b7625cca9ef8a7358ed13c2"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2019-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 98,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2019-01.html"
+      ],
+      "source_sha256": "4127b2999ffd280d12c28ec11255552a005487afdbcf2309f4be73589d61a9aa",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9944dcafcfff2030bd549f0e575d7238272b8e9097c5bd1e60e800505741dcb6",
+      "sha256": "82ee296759150c31136ccc27bc26cd86998765b23df83f359af76d72fc502665"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2019-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 89,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2019-08.html"
+      ],
+      "source_sha256": "f4360a79731047ace1318a8815f7b01bb1a142f562b61457b155951ebf4a0462",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9f30d81b473acd5500d52d5561edac362dafb4c5f24669b5d64502135770f16b",
+      "sha256": "8faba66448a3b5e010f245db1487af18a3db524a22635668322e7ce863df9da4"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2020-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 82,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2020-01.html"
+      ],
+      "source_sha256": "c033fecada42710858aa9136082d98b96f0c4e66774546c956c1d2f2c38e1c07",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "453b09323343d2911dbc93997ea72195eec4d772229370cb89363283cf759995",
+      "sha256": "d80dc02abd24765ef6f7c65573119e26928795713c02640f87ee75f710219f08"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2020-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 85,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2020-08.html"
+      ],
+      "source_sha256": "80d311f7ae5436a18872bcffe26cd98fc7c282b10ad09a9d1532eba9cf265d82",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "792184c8d9b410cb790b73b20c25bcefb9033f2d7092617c2979d040af79ab12",
+      "sha256": "55f5918732028b081ada781aa975f4f881c8a264504d68d738c6a5d30e2d97e0"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2021-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 75,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2021-01.html"
+      ],
+      "source_sha256": "fa1e903e930e55d4791f271df4953b285e053f2510b46a9ed8e6a0af5e813d8b",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "dc7970411d41dc212576b5dba1a9d06e2937276822a0d6eb9c85885efaa58c75",
+      "sha256": "64a7c9b43856a3a3c57b585e4053e701c28cd822dfa15f975cd570582963f694"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2021-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 74,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2021-08.html"
+      ],
+      "source_sha256": "cafa5b8700ffd4fdbf0fe8a0db03f2113f928cb26e677fc61498e5145f293884",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c1284af17fda5798f7a7cfe0aa811d8980c9045c8a51916f829cfb9f565d8398",
+      "sha256": "85071c69619dc08496334e9797d529d61f2c7a3d207920dd8e0a02b267bbe0a8"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2022-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 96,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2022-01.html"
+      ],
+      "source_sha256": "3ee6c0740ffcc1a5d0fd88f1c9945e2bdf674571c78f5d408e5804bb77f28846",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "11d122cf3766fab853f2f60ebdde607589b4fca45af19295b1bf29bffb48a8d7",
+      "sha256": "c1e0a88c30f87cc207ca9bca947c17a982664eca5bfb6e1439e73406348d5ad9"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2022-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 98,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2022-08.html"
+      ],
+      "source_sha256": "d30906e353eafd93e7722eece351afed7e4eacf10846c7df297f38a5c73a8b95",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "2ed6636741fbbc860f64c275751bf079c9966f18cae9fd24bd8c52819cba6f16",
+      "sha256": "cbfb201c8b21823faa26b97dc220511049a20e105ce73fe7057658952cf1364a"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2023-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 82,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2023-01.html"
+      ],
+      "source_sha256": "71def9e986036c844dc50ab7ad2b3c9608ac16b9efd1997ae2144e7b72d03121",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "3d5b892132f1b8306a15464d30689cfd08e12a81ff98f6ca376b4bd02857772f",
+      "sha256": "a7aae380d8859f9a2ee0b85363dab9180d13f575551677dbf06692a7374cc561"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2023-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 98,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2023-08.html"
+      ],
+      "source_sha256": "10bd3f409e166e11d188e64791389764d50064d31671fd93977a671c7abaf5af",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "d41f04e0df69cbc860453d54c888664cc830744aece889b7803e66c10d803aad",
+      "sha256": "971c87ce07652be619f1251e27029a00ce5f281220629d7043af59e3438c9c2e"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2024-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 93,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2024-01.html"
+      ],
+      "source_sha256": "ba4408877c5d02e1c289fc49046d4d0a3236f6efcf70155ada8d81f1055d415c",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "54708493749c86308133c546d344806cf56376e5a78c8882c5627fc3e4c762f8",
+      "sha256": "948ac91df9db965547f490662317855e1be5a7738b4a6ebda167036960f11d96"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2024-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 61,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2024-08.html"
+      ],
+      "source_sha256": "5f66c44549ce7a8caa7ef124d69f925428f057a82b7050269176099894ff707b",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "42abb56e7bf33f1586872cac74dc86792f72cf90d053be0ac92f6fdc98266846",
+      "sha256": "528dec1e51130e220a1365fadd0a58fcbe1cefdc8c6fa4bd4cb8c7535e06bb5e"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2025-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 74,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2025-01.html"
+      ],
+      "source_sha256": "168ced03d182e119caefc3b8a734f0079cf0ebdbf8795483789413b512608f2b",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "00406b15f32f151435d071db0ab5c97ccc28de79e2e8bbe48defc8de123426b8",
+      "sha256": "fcbcafdeb790377f94b7f8a83d0eae074230bc8f4d4a3f7ea42e8133d9121a74"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2025-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 96,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2025-08.html"
+      ],
+      "source_sha256": "fe71be50a923c2bc0a8c5c6b9500f54fb2def32355ac366ba753d3c578b490ca",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ccd1be1723dca697baa65ba6fad64cd8a73b835601dd7f4d570ceb4d92b0feb6",
+      "sha256": "96f3a5e9c51788eead9fda7d259c691e19ed3ab2dc64cbbeb3532926253d1f68"
+    },
+    {
+      "pdf": "graduate/exams/algebra/2026-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 127,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/2026-01.html"
+      ],
+      "source_sha256": "e99df5cfec5b57aabb0fae226db002ecb1d46676c89e6d38bcdc0ffe1b3ca63d",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "a429b771ef46d0262e7edd3df2069cd80462840db4890d1267b4b29978aece95",
+      "sha256": "a85f8ba5734790254a8d4806ae064a9fc961421df2490b4f55512f61eb1f71c8"
+    },
+    {
+      "pdf": "graduate/exams/algebra/AlgGento02.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 2289,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/AlgGento02.html",
+        "/graduate/exams/algebra/alg-001.html",
+        "/graduate/exams/algebra/alg-006.html",
+        "/graduate/exams/algebra/alg-009.html",
+        "/graduate/exams/algebra/alg-010.html",
+        "/graduate/exams/algebra/alg-011.html",
+        "/graduate/exams/algebra/alg-012.html",
+        "/graduate/exams/algebra/alg-013.html",
+        "/graduate/exams/algebra/alg-015.html",
+        "/graduate/exams/algebra/alg-018.html",
+        "/graduate/exams/algebra/alg-027.html",
+        "/graduate/exams/algebra/alg-028.html",
+        "/graduate/exams/algebra/alg-035.html",
+        "/graduate/exams/algebra/alg-038.html",
+        "/graduate/exams/algebra/alg-040.html",
+        "/graduate/exams/algebra/alg-041.html",
+        "/graduate/exams/algebra/alg-043.html",
+        "/graduate/exams/algebra/alg-1977-04-1.html",
+        "/graduate/exams/algebra/alg-1977-04.html",
+        "/graduate/exams/algebra/alg-1977-11-1.html",
+        "/graduate/exams/algebra/alg-1977-11.html",
+        "/graduate/exams/algebra/alg-1978-05-1.html",
+        "/graduate/exams/algebra/alg-1978-05.html",
+        "/graduate/exams/algebra/alg-1978-09-1.html",
+        "/graduate/exams/algebra/alg-1978-09.html",
+        "/graduate/exams/algebra/alg-1980-05-1.html",
+        "/graduate/exams/algebra/alg-1980-05.html",
+        "/graduate/exams/algebra/alg-1980-09-1.html",
+        "/graduate/exams/algebra/alg-1980-09.html",
+        "/graduate/exams/algebra/alg-1987-xx.html",
+        "/graduate/exams/algebra/alg-1992-01.html",
+        "/graduate/exams/algebra/alg-1992-05.html",
+        "/graduate/exams/algebra/alg-1993-xx.html",
+        "/graduate/exams/algebra/alg-1994-xx-1.html",
+        "/graduate/exams/algebra/alg-1994-xx.html",
+        "/graduate/exams/algebra/alg-1997-xx.html",
+        "/graduate/exams/algebra/alg-1998-xx-1.html",
+        "/graduate/exams/algebra/alg-1998-xx-2.html",
+        "/graduate/exams/algebra/alg-1998-xx.html",
+        "/graduate/exams/algebra/alg-1999-xx-1.html",
+        "/graduate/exams/algebra/alg-1999-xx-2.html",
+        "/graduate/exams/algebra/alg-1999-xx.html",
+        "/graduate/exams/algebra/alg-2000-xx.html",
+        "/graduate/exams/algebra/alg-2002-xx.html"
+      ],
+      "source_sha256": "183746cb52666d47ad99067170adc2ccee8970d9d148f8077a885fe67c0f57e8",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "cb37ce0b178a062d7181c6c446811336e9c1f2529af11c801b52886d29343ca4",
+      "sha256": "37f4b7971fae66e09061ec09682c93b79173694a80938f73e20531b56b0001dc"
+    },
+    {
+      "pdf": "graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 5299,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/algebra/CombinedPrep2022Jan-AlgebraGeneral.html",
+        "/graduate/exams/algebra/alg-prep-1-1.html",
+        "/graduate/exams/algebra/alg-prep-1-2.html",
+        "/graduate/exams/algebra/alg-prep-1-3.html",
+        "/graduate/exams/algebra/alg-prep-2-1.html",
+        "/graduate/exams/algebra/alg-prep-2-2.html",
+        "/graduate/exams/algebra/alg-prep-2-3.html",
+        "/graduate/exams/algebra/alg-prep-3-1.html",
+        "/graduate/exams/algebra/alg-prep-3-2.html",
+        "/graduate/exams/algebra/alg-prep-4-1.html",
+        "/graduate/exams/algebra/alg-prep-4-2.html",
+        "/graduate/exams/algebra/alg-prep-5-1.html",
+        "/graduate/exams/algebra/alg-prep-5-2.html",
+        "/graduate/exams/algebra/alg-prep-5-3.html"
+      ],
+      "source_sha256": "a125038495b0658fb0f72a0754552cd3d29fb6415cc6640169d414b1119c8e22",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "3c59cf7e1f997192d4a72457bbb655bd7ab2360cbe498becd9f1d133bc298b8b",
+      "sha256": "632c7656409233767639351584ac27e98d36ca5c6167e6cdb3bf0770db5c259a"
+    },
+    {
+      "pdf": "graduate/exams/analysis/1977-2004.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 2647,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/analysis/1977-2004.html",
+        "/graduate/exams/analysis/analysis-1977-10-real.html",
+        "/graduate/exams/analysis/analysis-1978-04-real.html",
+        "/graduate/exams/analysis/analysis-1978-09-real.html",
+        "/graduate/exams/analysis/analysis-1979-01-real.html",
+        "/graduate/exams/analysis/analysis-1980-01-real.html",
+        "/graduate/exams/analysis/analysis-1980-09-real.html",
+        "/graduate/exams/analysis/analysis-1981-01-real.html",
+        "/graduate/exams/analysis/analysis-1981-09-real.html",
+        "/graduate/exams/analysis/analysis-1982-01-real.html",
+        "/graduate/exams/analysis/analysis-1982-09-real.html",
+        "/graduate/exams/analysis/analysis-1983-01-real.html",
+        "/graduate/exams/analysis/analysis-1983-09-real.html",
+        "/graduate/exams/analysis/analysis-1984-09-real.html",
+        "/graduate/exams/analysis/analysis-1985-09-real.html",
+        "/graduate/exams/analysis/analysis-1986-01-real.html",
+        "/graduate/exams/analysis/analysis-1986-09-real.html",
+        "/graduate/exams/analysis/analysis-1987-01-real.html",
+        "/graduate/exams/analysis/analysis-1987-09-real.html",
+        "/graduate/exams/analysis/analysis-1988-05-real.html",
+        "/graduate/exams/analysis/analysis-1988-09-real.html",
+        "/graduate/exams/analysis/analysis-1989-01-real.html",
+        "/graduate/exams/analysis/analysis-1989-05-real.html",
+        "/graduate/exams/analysis/analysis-1989-09-real.html",
+        "/graduate/exams/analysis/analysis-1990-05-real.html",
+        "/graduate/exams/analysis/analysis-1990-09-real.html",
+        "/graduate/exams/analysis/analysis-1991-01-real.html",
+        "/graduate/exams/analysis/analysis-1993-08-real.html",
+        "/graduate/exams/analysis/analysis-1996-12-real.html",
+        "/graduate/exams/analysis/analysis-1997-08-real.html",
+        "/graduate/exams/analysis/analysis-1998-12-real.html",
+        "/graduate/exams/analysis/analysis-1998-08-real.html",
+        "/graduate/exams/analysis/analysis-2000-09-real.html",
+        "/graduate/exams/analysis/analysis-2003-12-real.html",
+        "/graduate/exams/analysis/analysis-1977-05-complex.html",
+        "/graduate/exams/analysis/analysis-1977-11-complex.html",
+        "/graduate/exams/analysis/analysis-1978-05-complex.html",
+        "/graduate/exams/analysis/analysis-1978-09-complex.html",
+        "/graduate/exams/analysis/analysis-1979-05-complex.html",
+        "/graduate/exams/analysis/analysis-1979-09-complex.html",
+        "/graduate/exams/analysis/analysis-1980-04-complex.html",
+        "/graduate/exams/analysis/analysis-1980-09-complex.html",
+        "/graduate/exams/analysis/analysis-1981-01-complex.html",
+        "/graduate/exams/analysis/analysis-1988-09-complex.html",
+        "/graduate/exams/analysis/analysis-1989-01-complex.html",
+        "/graduate/exams/analysis/analysis-1990-09-complex.html",
+        "/graduate/exams/analysis/analysis-1991-05-complex.html",
+        "/graduate/exams/analysis/analysis-1992-01-complex.html",
+        "/graduate/exams/analysis/analysis-1993-01-complex.html",
+        "/graduate/exams/analysis/analysis-1998-08-complex.html",
+        "/graduate/exams/analysis/analysis-2003-12-complex.html",
+        "/graduate/exams/analysis/analysis-1993-xx-general.html",
+        "/graduate/exams/analysis/analysis-029.html",
+        "/graduate/exams/analysis/analysis-030.html",
+        "/graduate/exams/analysis/analysis-2003-xx-general.html",
+        "/graduate/exams/analysis/analysis-054.html",
+        "/graduate/exams/analysis/analysis-1997-08-general.html"
+      ],
+      "source_sha256": "94113d8358b153f3cd958ba5a25bcfd005d3555a7b8b8935dbdfcadc1e57c1d4",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "da5664513c352a2184de9e63ff8a129c1d3c6437ba9c31fbac8c0b5b6a96bb78",
+      "sha256": "60f00dd0ca0ac6b027c672c6a2f228c4e0fdd740d92c787e89583d297de9f2a0"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2007Aug.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 79,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2007Aug.html"
+      ],
+      "source_sha256": "b0eebb8f91ef4a4e09b39b0aa3bf9439cbaa41ff00cbfe124b072f5edeea022f",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "bf6b0b4d1da825a7f5181ffeb0d3db25ffaa36d178ac4eb063115e7101965c9f",
+      "sha256": "96d1b15e44196521c2d51a010b9ee5a4dc449de3d07fe27624a1abdf76c40f55"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2009Aug.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 76,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2009Aug.html"
+      ],
+      "source_sha256": "bb696d03c63e55110aea6f1c355e6063997c637486809e87ef5989a14e6cb26e",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "8baa1cb1658b30c998802a570aa8666f47781a789a0f9541c52fa0df9fff32e0",
+      "sha256": "edcb845a4e0077d914b682c4b1bbae4c71c18d27563598e066a048a3e839df2a"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2009Jan.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 69,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2009Jan.html"
+      ],
+      "source_sha256": "cd97f94f14346a16382fe42d573c3a5b3f3972aecb9958399f2fa6a1c88e6f04",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "967bca97b9c0ef9ef6c27e2756de7c9dc8f1e4f5dfa35dc8cb3d25dd00a4acef",
+      "sha256": "51066959521322b2acb1496dba6f535fb16d9c3c0afe9f7eec929cf8b7e67505"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2010Aug.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 64,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2010Aug.html"
+      ],
+      "source_sha256": "a93731391505414c20a841c7102db8fc967c2cd5b76fd90f50800277733318af",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "12e06f183ab3c72cd8117e969598db1578544209077771dcc3241eb9644565d4",
+      "sha256": "fa9ab0661055744f55258207e418c63a6c55058ee47216b5a41c16d6b506b074"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2010Jan.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 59,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2010Jan.html"
+      ],
+      "source_sha256": "347502f4d28559515453e5fe1f998ca20750e918bf8596e080c472b05d90b205",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c4e0bffbac14a655ef22be2fb7dfd49c5325189f7f9c09065f58c48967d54133",
+      "sha256": "0a124288326564841bad6563321694ea0543927288e1d9778683dfed93b5bdd5"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2011Aug.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 106,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/analysis/2011Aug.html"
+      ],
+      "source_sha256": "e91956714cc94b6acd2fb9be44e55dcf637eecd31608ec03ffa97d6fd0f2cd85",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "8eb784f66bcb876904c2c846e0e017314b9de2444f92e6054815f93fbc237eaf",
+      "sha256": "f63ed10f6fcc5c91341a623beabf4e2c73b832d0b88d7c7bfbf81548516466c3"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2011Jan.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 65,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2011Jan.html"
+      ],
+      "source_sha256": "bf4331ffc3eff5c49e743fbfaaabdcb546d4151b44a934456eca926a4697e4b8",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "d0d2fa4eb586d069b20afa5f571646eaba92e6e1aa1b2bfe3c926642545bd936",
+      "sha256": "f5b42eb2b68afdab05ffb794f24825d8ab50a94a0c0a95d038a86516548451a0"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2012Aug.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 55,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2012Aug.html"
+      ],
+      "source_sha256": "a877fee411b5336c19064fae1da73cd21e46e5f52c0b037e34dcfcc83c564127",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9086ea514366b7026f8ccd751fa1dd6c303ac12cbb4cea430418d6c48a14250b",
+      "sha256": "3e63f0eae160cf7e438d205eef1332a1277bd9cd9533946f89d5ffb65f4cc400"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2013Aug.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 81,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2013Aug.html"
+      ],
+      "source_sha256": "495cb68e3a37bd1b4890d91cbedb140f72d30874df682a42ecb27c1620ccfdf6",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "1d8dd51b0c70658139485e408248d191dd47cb2c9a009af518db2d1e3243c74c",
+      "sha256": "16e1cb4a61a467be98b36a7ccf063356cdaadd9f1c83dce1aeb924dc560ffd46"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2013Jan.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 55,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2013Jan.html"
+      ],
+      "source_sha256": "7dc377f66d8037e7b6c1cd67cf4b40641f20035ce404e2d81ca5e8f4b53bb46f",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "3fbe02145e8d818b28ef2960b35ae1f0476e7da1c3cbf4e3ff33ce32c1df9f57",
+      "sha256": "47b144bfa8b593e7fd67c598669935b5a4a00160a0cd2505d0b183f0929c3197"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2014Aug.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 58,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2014Aug.html"
+      ],
+      "source_sha256": "58f82d1e26ddf4c358a2dee332cc86e05ba162319d1fffab686836b8904ffd90",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "999e96b11e7e62e870c89ac8e92f42a5c9d87c7002c0c2d3188bbef2e3a3bac7",
+      "sha256": "a1293524f15525a00c3c2fa9fa0a51922087fbbf42a4dd7760f3443d185ebb1e"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2015Aug.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 66,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2015Aug.html"
+      ],
+      "source_sha256": "573351974477c241e889967c0a58fa51c1e57eaa8b7c2a2de4ab95718f1dc576",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "bd11e9fc5d709a7edf2ed1e56b0ea8ad6e58306eb74adad4a7dc4795f8ec2a7c",
+      "sha256": "45b8be9b95badc272d29a69a9026663f22f835310d045e1db1bcba3da8e60888"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2016Aug.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 65,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2016Aug.html"
+      ],
+      "source_sha256": "a603b7e3b41db82c58c452bd2fff2710c914406eaf8321e33b6b4531138ffcb9",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "b09b8e2898ab4ac6f398dd0f61e4103ade92e00e161c352024e2ac6b290b1337",
+      "sha256": "21788176076ef5836e3aea1c781e1428fa29853f306f017099c046871336b615"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2017Aug.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 96,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2017Aug.html"
+      ],
+      "source_sha256": "037d72111ad20ce3bec5b4eeb903bae170fe934fe01a88e50efc465ae45a5652",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "544d0be0e877f1fcafebb0c0348d7c68d121aaaeb8a74b3a06597d17797e9cec",
+      "sha256": "0f6ccd00b0f494bda43a32c5c1469c35a6635adcad6c6de42509031c97c154e5"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2017Jan.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 87,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2017Jan.html"
+      ],
+      "source_sha256": "d086cce4ae3eac652c1e6b46f954fb2f8dd50caa93e4b999a8d7515b357bea8a",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "30e2fbe517581b794a636faf9d73268893dafafa2fd0e2b9efccf5311697560b",
+      "sha256": "82691fafd20912fd50f646c52d34071f4c1029ffc315be49ee513af8c79769a5"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2019Aug_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 41,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2019Aug_complex.html"
+      ],
+      "source_sha256": "77ca67a9c604029e46c7bd1845b92913d50049f04afa37e8e9af245a5110d0ad",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "044c5e6cc48d4e05c57d0bb409ea9d34a43d2e75e5a74162f717dfefb4c2d62a",
+      "sha256": "5ce504d155682002c0cda58b82cef94a5dc2ee4bd39722a4eed5eade5455bb90"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2019Aug_real.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 40,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2019Aug_real.html"
+      ],
+      "source_sha256": "5274ddd894a4fe0335e9af9472f6f304ffaeb82d27b8faad33f03bec8c4c5cc7",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "000194e6a34c0baaa52d889c6757020b2297379bca35404cb743045807e387ef",
+      "sha256": "8b7e23c542b48e6b89eeef5fb8848b8d51ee4609c7c6d271997c88ea5183e415"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2020Aug_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 30,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2020Aug_complex.html"
+      ],
+      "source_sha256": "e2eba320ff5c22170e5f9271e200553832fd76fc1c3e049201ce78211a7d13c4",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "e783e466f75506629b95217b9b949b773b9feab252af86ec0257dc15f009ae3c",
+      "sha256": "8d7597dd65055ac9f2a4910f13a3fcf0af051ebb832b4804fcf89d2b391d3d0d"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2020Aug_real.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 23,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2020Aug_real.html"
+      ],
+      "source_sha256": "91a54a90cbbdb76ad32495bd3ad4220104edd63b2ca4f8e5592a5bce930698c2",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "da44ba5df89483e4f7b087cab56392dd4d379ae7e390147839c65c00bb57c6d8",
+      "sha256": "5649e5b6a383827e082d60bb931d61d1c624a6b8b04e1fe98b40b306641de4ff"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2020Jan_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 29,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2020Jan_complex.html"
+      ],
+      "source_sha256": "f6b3cf66b2f21603fcb853bd5138a76402a205e96aaddc808a16c212e4e99222",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9e562dbc1fba7f36f40118894173022703311781af94dbc76e6b669f12ecf519",
+      "sha256": "79500a344c92a682183160f74c70f59facdb83204e87519e3b31110b29e10749"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2020Jan_real.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 47,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2020Jan_real.html"
+      ],
+      "source_sha256": "e833fdcf9db95e395ed1d221bf755b48bfc0bb7c18b13cd2e9c41d3be8610bd5",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "eb927dbfc0e3649e8557c083c92135cdd67d075bb79b42e7c85157f611c033be",
+      "sha256": "1411c5f6f3681e771cf061461609250a277e135717ebed2e96674ea3f70ce491"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2021Aug_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 30,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2021Aug_complex.html"
+      ],
+      "source_sha256": "c9797f509b82334f579f8fec26abe84555dbdb996156ac8f88277edde32af2b3",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ede1d50a4d170ff4a60f72b304655609c7e7e5c94246b32ee86f6f4c374c6782",
+      "sha256": "4184339f445440b99ea06131a2f2ad28bed384ae9a751b57d269f93dcfe46052"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2021Jan_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 30,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2021Jan_complex.html"
+      ],
+      "source_sha256": "2c3e506178492a31c60288267813c477b890066813a696839a452b616f2df0ef",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "45a9f1fce453a80668b430463dfb446441424cfe8528d438d2d77cb26ce3e0d0",
+      "sha256": "4bca6bef04ae3db7b2d916142fcfb0abc1a2af5b429ee944217e2de9a6f5d9e8"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2021Jan_real.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 39,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2021Jan_real.html"
+      ],
+      "source_sha256": "afd6582c5abd3011056f7106d494f74dd9e129e31836e4c902babe1eaae40573",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "2657e8477e6d50077db4703ae5fa2ac88c73b4d47a35add5c6aaf3de3e110b51",
+      "sha256": "c672da7d94387b66dc936ec365bdacfbe46209e4da5112ccf0d4927dd76a3ef3"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2022Aug_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 37,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2022Aug_complex.html"
+      ],
+      "source_sha256": "1c7aa33011f71267e1247ce8d080d64bfbdc55d6975403719b111c21cd104c6d",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "e97df5bb9bb59e4c041ba314745dbddb712b968f10687df26c0cdc69bc77cf7d",
+      "sha256": "8325e4bbb9e5e6159c6a1ca12bff9476186b4b113618778a788b1346ae28c703"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2022Aug_real.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 59,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2022Aug_real.html"
+      ],
+      "source_sha256": "45ff30fe4e07b23be859edc8da12238d33d67bcbc90a185c9448f61ec53f8b69",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "96a5e38e25a55d9bb57625bdba98c3f503ceb8c566c0a2c6ad45cbd4574b5c18",
+      "sha256": "301760c12b9dfc68f9326c2c3209ca71c74dd6c3a3d3385bf76abb10ab72c9e0"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2022Jan_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 30,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2022Jan_complex.html"
+      ],
+      "source_sha256": "246a8ca58902f03000fbd7580abf0391a700f085aea11feab93655c15f7b7000",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "d3bfc11d22497d26d1c0021aeda926506dcb2b2db661a377ca5ef03a42bcb88d",
+      "sha256": "7842ba743c0bcb5e1e0776b2708db4f626b90ed6f03dec5e8ab5017f2d5b8e85"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2022Jan_real.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 62,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2022Jan_real.html"
+      ],
+      "source_sha256": "80b231270cfbc17489d2a57ee31cda517efc2d0bb9217ae5265b931ec812d2e3",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c4468d3b72af3f7846176b2fd9daa243dd263f55de14204d1f8801030a7a19da",
+      "sha256": "590c058724b8914586453f47babe5c291e461c4f1d4f859624da3eecaf5adf82"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2023Aug_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 35,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2023Aug_complex.html"
+      ],
+      "source_sha256": "3e78d960b645e3fd5449bdca96d090f5c6845faf4b047b5e7bb388fa2c65fa1f",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "82bda7c876fddbb56d981e7e972dd19e5d71b18ef1e869dbebcc4ee144ca1b81",
+      "sha256": "ad08cc4386f3b78af2d01ec17bcac3d1c3d60b74b4bfd6335c374c345b7e9ec0"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2023Aug_real.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 56,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2023Aug_real.html"
+      ],
+      "source_sha256": "be8af1c616f6546131615df4c91a74d9311dcc00daaec929aeedda142a8b6a39",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c4b00fbb68a4569724221373bd0153bb07c5849f6453962b72a50dcd42b0ce04",
+      "sha256": "fa5b910f36c1ab09b589025be5476a8124f6eea796169ac87228e6695a23c74a"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2023Jan_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 26,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2023Jan_complex.html"
+      ],
+      "source_sha256": "c564ff49c5497c3ca32d9573cc2213e4f1c5e8727b7507d17688dde7caa9343b",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "db4a274b7d005baa2e4cbf64dfd48c3d127654806d92aaed2350749276c73fc3",
+      "sha256": "da7813e6240c4b54af3509b5f7adfdcef3c08781b873d29f0ba8853eaa22aaec"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2023Jan_real.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 66,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2023Jan_real.html"
+      ],
+      "source_sha256": "b02279d002cdf77966df4e7c02d90f64cdd82a6d4dae73babfa7595bd3b42369",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "2507beb80608fb56aaf8cee801a558d042b3e36fb20f984586b68760abbb517b",
+      "sha256": "d63af812c136411d97e4ba1db8e36c6f2dd6dcd26bd62f93f8aedcb1246fa2bc"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2024Aug_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 52,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2024Aug_complex.html"
+      ],
+      "source_sha256": "86de929486ce2cebca52701ea90f3415b97bc36d3b2c180942ac7b7e07edfeb6",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "d05f6e36d5b0a70296049ab244458786c5a999589a304b15715c7dacdb711905",
+      "sha256": "6d1371934912e90da16a7a271f5fabeb23620c3089555358816de47abdffd6d2"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2024Aug_real.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 40,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2024Aug_real.html"
+      ],
+      "source_sha256": "0f5787a9543fc5b13842cdf9f363cfdc377148ba075632de7579c7d7e6fbcd41",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "44968141a90e5d1027f17c23637b15bc68c510aff3405bfd0f2cddbe4c9aa2c4",
+      "sha256": "a52e1503853548f061a37bb340b9537682d76378de7cacfe89dab319d4c43e65"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2024Jan_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 54,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2024Jan_complex.html"
+      ],
+      "source_sha256": "70aaca164438d9840cc7c93fa5e0a8b1e14a1d31938019bf50cf46530b0c6562",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "91a374fac3a391145d437777b1cfa519afc55f41a8f30ada2453fae07335b362",
+      "sha256": "067f53f9a2580b549e2088b0dccd90cc20353123c0128a62b1354016f90df13f"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2025Aug_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 30,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2025Aug_complex.html"
+      ],
+      "source_sha256": "a0fc27a4e125c854072605c246fafdd2831a20690a94505dc283ae06c9835b3e",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9b10d69324866a084f103e1eb40bb78ffd48c90671d247825954e2ff03bd0181",
+      "sha256": "af75fa4967160b5e80207cce13243e3248165382463acf5d163fb47128a06270"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2025Aug_real.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 43,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2025Aug_real.html"
+      ],
+      "source_sha256": "14e31d242fc161e58ac684d47070efac965bfb0fd527ed4f5792e28dad34f297",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "fbb3fbcb38d0469d9fcb82e2ed8a41026b907a53c2cb7cc389caf485e81b9bc1",
+      "sha256": "e13f40516bce5d7a4b140a4494bbfeb8803418f8ebdaf4787d6b0060a72dd77d"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2025Jan_complex.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 30,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2025Jan_complex.html"
+      ],
+      "source_sha256": "217f75e763e9ae88d7c66eed32bad8ddd20a86579612b2b2b52b467180a13184",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c764fadfa1d7171891ac0ee2131e2a7d2c160fa4236ffc4a77cecbf0092116a2",
+      "sha256": "a419a02dacd6d9be67c534ca169b7359d28388878b3e0610385a7433d2c56949"
+    },
+    {
+      "pdf": "graduate/exams/analysis/2025Jan_real.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 48,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/analysis/2025Jan_real.html"
+      ],
+      "source_sha256": "c693a44bd1e15073eb96a49f001e3328dc1796dff5c6a4f7669dadce8ab7fc8e",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "1c55edf2e8cb9f28f368a79d36155290f9f6861efecd2c7e5e26ef03c12ab172",
+      "sha256": "75c6b8441bc12c07d3889d715c8232c3d386862b05ff1ae85a8f5bce4df4de0a"
+    },
+    {
+      "pdf": "graduate/exams/topology/2010-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 64,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/topology/2010-08.html"
+      ],
+      "source_sha256": "7cfc581ac7cc8ed9e0e4e16e9ea2b1c03128bdd9ecf9d5489136a831b09f5c11",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "d534a18cabd1a67142c8a4e03145b3bde4fa75ebec72f75b8205acf2d94b1e06",
+      "sha256": "17bf9f6018aabdc1221b2ba84c91df0a2b12dc5c271b0431b40fb8c4bb377a93"
+    },
+    {
+      "pdf": "graduate/exams/topology/2012-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 69,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/topology/2012-08.html"
+      ],
+      "source_sha256": "8fff2fb020f7e922b8a8a8bfd025fea5cee67eda2be57a2e8039a512f93f7eb1",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ae7631ddd230ce41d3f53ba97dab1692b47e0c71435c60988b3b9059139a748c",
+      "sha256": "e25a6e92add85f0d694f714b502155839e0ca6e620467b258ec27e492a548262"
+    },
+    {
+      "pdf": "graduate/exams/topology/2013-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 87,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/topology/2013-08.html"
+      ],
+      "source_sha256": "177e3d4b6edb0801de7ad4b22e72a8efde6ebc74c82216e45582f58f8396708b",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "5ea5349d076cf33acf5809bce2f1581cffe1afe27db0ab833e27723df64af01b",
+      "sha256": "3f89af25575a7cf99e5f26e2c062b04eb1847d9ffb896be216535e0861ef1ff6"
+    },
+    {
+      "pdf": "graduate/exams/topology/2014-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 49,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/topology/2014-01.html"
+      ],
+      "source_sha256": "d5a2d079144a21b50667aae5725504fc40217a4f3247099544147b2c67d461fe",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "b72a9b7537598a1e181b2b2593212a1b10e7c41c8fb93674596793270000471d",
+      "sha256": "0267eacb539243aee21cc9353db4dda96586df75a466123ab21531e1c8c3fad6"
+    },
+    {
+      "pdf": "graduate/exams/topology/2014-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 77,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/topology/2014-08.html"
+      ],
+      "source_sha256": "4c5d23d580396afabc81f44aa26ab8275f5e8f65ce00c384db42cd8450e1e6bd",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "2fdda94216baf68963045ad5506b80a233133a7ebbf1b6481fc22430df687b86",
+      "sha256": "aa8c3de44245509bc368bc4c122e6c46ea14b26cb7e545589c24f568deb66bd0"
+    },
+    {
+      "pdf": "graduate/exams/topology/2015-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 106,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/topology/2015-01.html"
+      ],
+      "source_sha256": "2778d7b30ccbac5ccdc214e376681bbb4c351a3533c4652aadbab373cdd5a04b",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9236761a88f46114dc0e569f29bb83e97962ba39da8a2fff16eb1e9c0b5f6bb3",
+      "sha256": "44bf239cf2ce70b0095ef7e0c88cb5271457c5edb8030ab6a117b824c63e3882"
+    },
+    {
+      "pdf": "graduate/exams/topology/2015-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 42,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/topology/2015-08.html"
+      ],
+      "source_sha256": "940fedb75dc76e8e6235c09cd4d28c1160325008a6ca50585edab87d445ef4c8",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "7adfd3cdfe0bb9fab13357b3565ded775bd7d603abe7251bbf4d8a8e382ae1f0",
+      "sha256": "83bf4bb37ccc2ebe503ee6ebacae0c037bb46a034c62a41b85f50908abfb3934"
+    },
+    {
+      "pdf": "graduate/exams/topology/2016-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 69,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/topology/2016-08.html"
+      ],
+      "source_sha256": "4ecb4c7aa73b1fb14a3dc1ffb74406e98cdc4023e7d7783b49039f7f50ebee57",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "dcab85ce41e77d4c981ce72e82f52ef9568a982eeab3843d12aeb2f0173c68cc",
+      "sha256": "b7dac95edfa117403d0bdeabdfa5db5b75b3165d3d1d15daf9d91c84a261ba3a"
+    },
+    {
+      "pdf": "graduate/exams/topology/2017-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 65,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/topology/2017-01.html"
+      ],
+      "source_sha256": "fb71887699f31adfcc864e6a1fdade23cd15e89815489195aec104c832cd2774",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "5834e15d771ef3d2360efd0c372e412c0c768399e31350c495ca6d81ca87aa09",
+      "sha256": "16720fc02453111f477f88da18aae6708e77ee0deb8633040b558d602738d381"
+    },
+    {
+      "pdf": "graduate/exams/topology/2017-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 75,
+      "figures": 2,
+      "source_urls": [
+        "/graduate/exams/topology/2017-08.html"
+      ],
+      "source_sha256": "3510281b4da5253c36f094f47938110faa7d68626963f7eea41c4b097610af3a",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "26c38fe60af7b5a89d4f3c8f5ab214aa7d633d36c16b4e4fae170373783ed01e",
+      "sha256": "4c8907eefe85be5259581bb11ada46b60c064fcbe29cb0730ea5d4e332295338"
+    },
+    {
+      "pdf": "graduate/exams/topology/2018-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 67,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/topology/2018-08.html"
+      ],
+      "source_sha256": "1b38f9d759b0a23217ba78184841c2d203b9546c54af9774dbd40bc81e0799ae",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "331a4729c6641c85afea7e90a5eb52120a90baf9412458ff4225b8a5fc8775fb",
+      "sha256": "0c4f07b6f5d443994adcf2d836964b47921b586031ff58a5280c7a08bc44e97d"
+    },
+    {
+      "pdf": "graduate/exams/topology/2019-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 100,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/topology/2019-01.html"
+      ],
+      "source_sha256": "2ac0c24c69f3e66cfeaf1649de360bc989a41a30ba1af9ce6eb3caf147292902",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "a5b6893c0ecae54f88ab8f90d3bdeebfd2989a69cd678ac1466eefbf37c523e5",
+      "sha256": "88ef53f16bccd304b6a9d0dc5850475857c94324c1331006f2e3233e35d2856d"
+    },
+    {
+      "pdf": "graduate/exams/topology/2019-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 47,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/topology/2019-08.html"
+      ],
+      "source_sha256": "5a0beb3e4ce576a0586b95506aca6bdceb42e115f1a65eea1a2afde9c62bf517",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "6a57eb59d92645d77371c6d666b0b0f04a3b4e1add44900bfcd6ee4870fc7817",
+      "sha256": "b8b25a289e4a00e2f37abea12c6a29a640985a2e11097ff38856c04ec3c19b9b"
+    },
+    {
+      "pdf": "graduate/exams/topology/2022-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 38,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/topology/2022-01.html"
+      ],
+      "source_sha256": "5fdf4a891d854a01c2b55138d64e57d38487eb4c325262b521002a593b8a0164",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "b087c5315641e536a33d313432d25daa4ba85a8d4580c89c6df959b26727697c",
+      "sha256": "ad581fa94e8fc9415f1a820a2c8eec8248c5e836cc96fe378349d4c7620deaf3"
+    },
+    {
+      "pdf": "graduate/exams/topology/2022-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 66,
+      "figures": 2,
+      "source_urls": [
+        "/graduate/exams/topology/2022-08.html"
+      ],
+      "source_sha256": "dddfd9c9ea5bd076cec298353940dad6424e4058d706ea29554542f68b8ed63c",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "b557b6039fa64a9b68901709f4aa2a0244ad535f0d5af2416a4f36c95b67c1bc",
+      "sha256": "6279922b2994c591f49bf5ce2ccf6de4deda7ed17a49eda8c0d18643d1fd2333"
+    },
+    {
+      "pdf": "graduate/exams/topology/2023-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 73,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/topology/2023-01.html"
+      ],
+      "source_sha256": "d9e2f2bb9e3ae897f2301793d074c4405a59d36a69ad61f4011dca9b27384370",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "32962b290abc8767e21e68898ac1a8840a8ad0d75871184c5a281b536dd28b23",
+      "sha256": "0d59b7b41df3e7e9a5a57bf47883636d25468938a3554767878ad16eb215f447"
+    },
+    {
+      "pdf": "graduate/exams/topology/2023-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 57,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/topology/2023-08.html"
+      ],
+      "source_sha256": "d626f9b183aad349c70d1e8edf26051a0cf3224e40ac6c8718fff8b2e72d8e3c",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ea1ff0fcbfb39bd074947dec9dc8fe402969aaee88719698b5fb8f36b8154a28",
+      "sha256": "b439df29b681dc16d916ee30a977538a1c4ee854d87e2ed76e9e3973ae7fba85"
+    },
+    {
+      "pdf": "graduate/exams/topology/2024-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 45,
+      "figures": 3,
+      "source_urls": [
+        "/graduate/exams/topology/2024-01.html"
+      ],
+      "source_sha256": "69c40d5a02601bd15202baed5ab240d7ed844f4578f8ec22f860c9e493be6a9c",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "11c48b10c592c3a8bd4cdf771b1ae0cdce567bfc57787d894515f292458a23a6",
+      "sha256": "724b8f89efddacb499a6f4a56fe5c3c259b10880f52020c3534d7a867de80292"
+    },
+    {
+      "pdf": "graduate/exams/topology/2024-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 57,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/topology/2024-08.html"
+      ],
+      "source_sha256": "5166e4ca19f3da1f4713b55383636773ecf17bce5da580e834cbad017c1875d7",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "110bca40601e1d19b759409422068bec071a014e0745ba344dede5c986c4373d",
+      "sha256": "d7e2836a390936ff7562a4eedb36e8d3dbb4c785606d98def5be6a34c2cc1214"
+    },
+    {
+      "pdf": "graduate/exams/topology/2025-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 38,
+      "figures": 1,
+      "source_urls": [
+        "/graduate/exams/topology/2025-01.html"
+      ],
+      "source_sha256": "e90df3a5075dfefa71568922b64f55be52d5fb7b85f6beefdae464fb9301799c",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "74a5b7f21a9a2f162f47380b90c28cab7f458f7be931b3d866554d02334a666c",
+      "sha256": "93fd9ecedc6f4cfb9fb1e91c48e1fda51abac55b77b323e2e811779e7f255f04"
+    },
+    {
+      "pdf": "graduate/exams/topology/2025-08.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 42,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/topology/2025-08.html"
+      ],
+      "source_sha256": "528b5f42a3110d86181b3cafa00614fb5a132ffa59b90695afd963494f5984e3",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "78f764bd6e6c6d9e3e367cd96619ec3c142afef7f4e0ada73bf4912eff94d0d9",
+      "sha256": "fb821342722a65a3703201f5ed9c21d24bcb1cd96ca46794263852daee77c597"
+    },
+    {
+      "pdf": "graduate/exams/topology/2026-01.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 56,
+      "figures": 0,
+      "source_urls": [
+        "/graduate/exams/topology/2026-01.html"
+      ],
+      "source_sha256": "0c665abc37ef0a80a30be443e73e5c73546a17b0cf49204457c4259ac3725fde",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "85a81fab60e361f442db0d4e8f045eba5b4a682dba24e916aa5986509274e401",
+      "sha256": "0188f442ce0df0594c35536e5f37bacfb8aa1f650bfbe5209325dffb3010a6d5"
+    },
+    {
+      "pdf": "img/IMS/Alan-Reid-poster-pdf.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Alan-Reid-poster-pdf.html"
+      ],
+      "source_sha256": "7662392d2a2dd23bb0e8ff2209acc533f7261ade15f4908480164361a242513c",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "3e4b8ee20741118c5ce3a997867456bf52ca7492ed9b4cd7a5b2bff87cf1c76e",
+      "sha256": "e778f228441748101e76bc445c006d63b4c5a7f9d46ce7a228655085963ea855"
+    },
+    {
+      "pdf": "img/IMS/Art Benjamin Mathemagics 03-23-2015.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Art Benjamin Mathemagics 03-23-2015.html"
+      ],
+      "source_sha256": "c88c2d9980530c5e27fc224b0b1f9c84db4f6309571bd9e569941aad855868d9",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "23c069b937c69d32244af5ae845d5313a26b134cd78d759f97c3760cc0c632c8",
+      "sha256": "17c37b9e18c16baa81ed34cb69a3fde6694c8da7bedb66a37ebaeb894b32535b"
+    },
+    {
+      "pdf": "img/IMS/Fonseca_poster_1.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Fonseca_poster_1.html"
+      ],
+      "source_sha256": "4cfa5f30310e6836764d6fc107635ff353ff8704d1215d078cfcfea4a46cfc65",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "6081032f5a91ba9b030381143868923e8d58982fbf7faedb866d97c5c7c13f01",
+      "sha256": "7e83e3bb05888f79f410618f837a3d0cdddc97ea12d1454d017622e7733e6243"
+    },
+    {
+      "pdf": "img/IMS/Hairer_poster.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Hairer_poster.html"
+      ],
+      "source_sha256": "edcf7176d3c405c694dee332c3263615ec9347383be49a9d9f39600ffb7d4111",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "b6c207293b3e57c308c6d535af8168da5e7eb9770987daa0d134b700a4064007",
+      "sha256": "bab649a6f1c3d621a8d722ddabc50b1637a2cdaf0427a9b82c5020c5cf786c1b"
+    },
+    {
+      "pdf": "img/IMS/Hoffoss.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Hoffoss.html"
+      ],
+      "source_sha256": "421ba790d610980e513d444ae53af811d530e6066003934c511ccad1c9f1e3b1",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "6ed9402718ab1b374b0cda55daec16808d1c7f38a43488a1c5205004658f9305",
+      "sha256": "08349cb8a9939ce90d3e4a3c0dd7af651b28421f163fcade036f9934657d732f"
+    },
+    {
+      "pdf": "img/IMS/Jordan-Ellenberg-poster.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Jordan-Ellenberg-poster.html"
+      ],
+      "source_sha256": "b20b8fb51e52aa345498540be4ff64af042dfec295f0aaea0715fc0255a0400c",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "0530a22dbf441d6ccf3109e40860db0e29156ae74b0aa03f071672037584e14f",
+      "sha256": "83815cbe4fcf27841efd5d7b4a16215125cf935d7263fa091a8a9097b26ab5cd"
+    },
+    {
+      "pdf": "img/IMS/Kavita-Ramanan-poster-pdf.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Kavita-Ramanan-poster-pdf.html"
+      ],
+      "source_sha256": "fb6f0fcecbd06fe19601d217907013533422716af145be473c0244ee8bd96519",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "e0e7386e5ba9b3b5cdfe851804c8371953e9a894fc77e314f3ca483440fd28ed",
+      "sha256": "7c9921f9d41efe52f2cb45dab5328529ce78a803f0a96f97e9baf463342b5059"
+    },
+    {
+      "pdf": "img/IMS/Lawler_poster.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Lawler_poster.html"
+      ],
+      "source_sha256": "93442de04c33a6fbbbf07343658ccf0d96e837b43901ff9cb5c41de18ee8267d",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "a20b91ccef92b07cafe1ba299a5c20ea2e84fb0e7b98a8850bd70cc5a6041aee",
+      "sha256": "df760810a08c787f240de2c83ab1eb1e2509838b4203558d108c063ab32701f3"
+    },
+    {
+      "pdf": "img/IMS/McMullen_poster.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/McMullen_poster.html"
+      ],
+      "source_sha256": "989874985723dc8cab9c8c3ec412900d01d8e5b04048bb0431bd004d384cad1c",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c6e75561a8b57b52ba161120ebbecea7bf5df319bffd323ad2ca9720745ea96b",
+      "sha256": "a6517600f33a907faa4fab68a4875d282b7d54281e19b9d96e4e3670228971ed"
+    },
+    {
+      "pdf": "img/IMS/Minsky_poster092517.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Minsky_poster092517.html"
+      ],
+      "source_sha256": "5e61da65519df8db291fff86fd7785551e27acdec717f38c4f9044f97bf4bfe3",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "67521ee93378a652fb8f64b612c04571ba9503cfdefd44f6c58570548ac0516e",
+      "sha256": "fb093afe9ccc90faeebeb4997d916ee111c6973f061b73827328bba8aecf141f"
+    },
+    {
+      "pdf": "img/IMS/Okounkov_poster3.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Okounkov_poster3.html"
+      ],
+      "source_sha256": "a19dc5c2c37dd363473809a48b687e83fd52c968d39900e7df59ad2652c832d1",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ddbf63cdd9ffcdcb52205112894788f0f86dd7777259ef393b5e0e6362edacb1",
+      "sha256": "66e52954944a2f1dd8c7d9867dd5206a0299deab9d164b551a9063a3b094bba1"
+    },
+    {
+      "pdf": "img/IMS/Poonen_poster.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Poonen_poster.html"
+      ],
+      "source_sha256": "30284cc184664fa6fede33c0ce5fa84df62c5f7767c1026494c9936eba9e3f4e",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "b883c5b5e4e3794667142d8196542662b78d981407be65a5423820d2877db330",
+      "sha256": "a8cba4b444df5ff5e9d7abcc572999952adc5a8bc21220126a908b168fb816fe"
+    },
+    {
+      "pdf": "img/IMS/Ravi-Vakil-poster.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Ravi-Vakil-poster.html"
+      ],
+      "source_sha256": "e73b6f67f502c3ebb1e52d4e83bdfbbec6242bc6169927d9c8a67fd1dc3b02a6",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "28d9d050f997443d2a9ab35b98a6051f575a0363c40e34e6e2de337f119ad447",
+      "sha256": "e6eb903c409eb5e5b4dc450061c57f1356fe36f5b64faaacb86852fd4a2f484a"
+    },
+    {
+      "pdf": "img/IMS/Rich-Schwartz-poster.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Rich-Schwartz-poster.html"
+      ],
+      "source_sha256": "abecaccab8a8d849be458c627d3da214bd2ab4dff5dd61d4be253e365c65ff62",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "1a65d6db217a151d6b068e7ceb6b79c137fada218962d8a4e540bd13f8883df2",
+      "sha256": "61757c59ed8ed17acbabd7be96f395d2345032e22a64cc7a29acc30f6c1ba9f2"
+    },
+    {
+      "pdf": "img/IMS/Sarnak-poster.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Sarnak-poster.html"
+      ],
+      "source_sha256": "f1da16b509149fd891dea8920b6224873175a2c193214afa3c34a90b75868c62",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "e237238fc84c1d52a4ca59a2cce13aaf44f0906d5835f0d056efeb88bc655a26",
+      "sha256": "edc64033e400225d9f9cc40557f4b9ab30591e4c004370ea94e3f87b889e8dc6"
+    },
+    {
+      "pdf": "img/IMS/Sherson.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Sherson.html"
+      ],
+      "source_sha256": "abe4646ed4a1b6457be54c4550ac0dd44f2d98c76bbdd2ae73281847ddbf21fc",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "f866f1a9e1228005b20bfa2334915f27bcc7fcda23d926538ba04e3f99e02995",
+      "sha256": "29bf4089e86c306cc4cca3c40d75915643e6c11eb8b89c04842594ceb56bf8fb"
+    },
+    {
+      "pdf": "img/IMS/Simon-2018.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Simon-2018.html"
+      ],
+      "source_sha256": "7604c33be09b31ff04a684f558ab86e1dc3a7ce6d47cc37fa04448050694080d",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "42b345d32eda1cb29fd54ad40933ccc459fe529db7d060fe2fa43d3d16ee8ca0",
+      "sha256": "eefd577dc39fb65538fb63e1b77620d91e81dfbe4544870590e726f9c340b5d1"
+    },
+    {
+      "pdf": "img/IMS/Van_Vu_poster.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/IMS/Van_Vu_poster.html"
+      ],
+      "source_sha256": "11a05cd944ef31b20b4ae9e907dfa56cb26b66bcffbfbeb8ee4c48968b4797b8",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "dae559ae14c5871afa577fd3f343abd0c96ad93c3d453b255046e4ae50e0cd5a",
+      "sha256": "b70b0a329db029c6e661f09b9dc2fd59c56ca3102525a499461e456812ee4349"
+    },
+    {
+      "pdf": "img/news_events/2020ceremony_program.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/news_events/2020ceremony_program.html"
+      ],
+      "source_sha256": "ca99dcf26662ba81565dc835d35bc181164556aba34b1efc14983cb003b439c9",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "55a86418793804cf020183991ee9b5e0cf21a0955131dfcbb601bbe88c1ad13c",
+      "sha256": "a3d9111b95c0e587c80900d65a49f2035f1d25f6c703be417cb290e4d87cde53"
+    },
+    {
+      "pdf": "img/news_events/Kafadar-AMC-2026-04-09.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/2026/04/kafadar-AMC/index.html"
+      ],
+      "source_sha256": "f46b749a8bc6ba6a09f9560ba6d118946a82e45a62d61e67e054faa3820fb69b",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "56770c631f00f13ba854db5ade77ad30df0d213e58a5bc28e7e7d443e89c93a9",
+      "sha256": "da98203319894ab5d68b89750efd9a6bb90e8c449b2940b9dfd994763a93ca89"
+    },
+    {
+      "pdf": "img/news_events/MattGagne_DefensePoster.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 46,
+      "figures": 0,
+      "source_urls": [
+        "/img/news_events/MattGagne_DefensePoster.html"
+      ],
+      "source_sha256": "3f69b5c844b68c8cfd64b61f161ecf48ab08d06cef6846b26e361ef8fe1c5450",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "211673d991bde57ed8695de7c6f3eab5311e3b80901b2f90d3b7a560fdc34644",
+      "sha256": "57bada6025da69ffec21f79207a5f0c85e49471f4ebdbb45040ac46b313dd34f"
+    },
+    {
+      "pdf": "img/news_events/Perea-AMC-2026-03-12.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 2,
+      "source_urls": [
+        "/img/news_events/Perea-AMC-2026-03-12.html"
+      ],
+      "source_sha256": "734751968fadfecb7000f957be7a9fe7ce06f2b6531e7e24ee921f13d1b65a90",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ca6d09f033e0516c0a3df5fdb3efb70d317b71852d344a5600d84764d5611ea5",
+      "sha256": "1d4fe475c1086de338f47042c6cd768d241bf5525756b7dc5f1fed12a8c93114"
+    },
+    {
+      "pdf": "img/news_events/WINRS-SCHEDULE-2018.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/news_events/WINRS-SCHEDULE-2018.html"
+      ],
+      "source_sha256": "385003d06cbf8649e5879ef3965b08233fee5c51936fb6455169e5a78abcc521",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "fb613bb795540f674a03c8275ba64f808850ec3b222fadbf44b8a9f6d46c875a",
+      "sha256": "342e5a7236a6f764118e145422c274ba35e84890f66f56c514742cf108ed5a01"
+    },
+    {
+      "pdf": "img/news_events/defenses/Craig_defense.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 31,
+      "figures": 0,
+      "source_urls": [
+        "/img/news_events/defenses/Craig_defense.html"
+      ],
+      "source_sha256": "cff6babcd68154bb49bfa3a38cd6e94fcb8d317ce6210fcf29de75998b7001ed",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c7f099b1d52cd9b4833d1d7bb4d637fd533b58cbd9ff65429e7a06203b4d3825",
+      "sha256": "cea50af708c94db25542e449948f4b2b36e768fe65a458ede733447b2081e33d"
+    },
+    {
+      "pdf": "img/news_events/defenses/Pandey_defense.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 30,
+      "figures": 0,
+      "source_urls": [
+        "/img/news_events/defenses/Pandey_defense.html"
+      ],
+      "source_sha256": "970845e33750170f74e676b8552814ee0757ca94e021dd658f9eb66dc090c711",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c7564d0b00ba812c79e6c01b7a7196f5843db74efa3a91b352cac56813b377a2",
+      "sha256": "4796b7f6f6890b96f46d7934adbdca82fb4c433b2456878849bf8dedfa22a651"
+    },
+    {
+      "pdf": "img/news_events/fluid-refl-conf-schedule.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 1,
+      "figures": 0,
+      "source_urls": [
+        "/img/news_events/fluid-refl-conf-schedule.html"
+      ],
+      "source_sha256": "e286c6af2e60ac28a59c033f8df454e2b936ecb2a291d2cd983022d4aa41db60",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ddc48e22f493384a017816a49c896e2b0c3a958f2f96955ef0ee8b914d02f2c7",
+      "sha256": "50482c9834c484d7b7dcfae377bc7dcf26416afbcc137d56459a3a64707a1b04"
+    },
+    {
+      "pdf": "img/news_events/fluid-refl-conf.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/img/news_events/fluid-refl-conf.html"
+      ],
+      "source_sha256": "25ab4a7b1cfa317d744ed260eb876e8c6f2c66bc2c77ec36f611e160ba94ff46",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "4e206e2613529a6c859a925a093237e8c1874df35b33a9516cf71ea376e0fb07",
+      "sha256": "0f7ec289099c832f55a786a5cd858909b6ee099980e54619aeb7513562af7ca7"
+    },
+    {
+      "pdf": "img/seminars/Gorsky_S21.pdf",
+      "status": "retained historical archive",
+      "sha256": "f4e0e8380b08ace172447acaac4ccbebf1ed9a9fa7ae59f29d6729b58a756b12"
+    },
+    {
+      "pdf": "mathcircle/MathCircle_article.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 2,
+      "source_urls": [
+        "/mathcircle/MathCircle_article.html"
+      ],
+      "source_sha256": "38a3b5582dbccc97cb21d1865189419f07cc6f7ef728eccff0d7f0ba73e0a072",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "dfd20bd8a9f6fd77cab5e2f85992f0d57d11cd392db15a02b81d3dd8da2796eb",
+      "sha256": "0261e1ff55ed1018c42d469ba38e49490e6818cab0eb2d8fe8b8cb4e4ccc0cdd"
+    },
+    {
+      "pdf": "schedule.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/schedule/index.html"
+      ],
+      "source_sha256": "1aba518235ec0011fff6d8551514fc1bbd1a98124388cac744262c46e4c94e60",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9775f6fa4d2d903117be22fc43d3a94148d4f540dff82809afe3652f8a4d5a06",
+      "sha256": "c5daab1e71767f9bef68309cbe9038b399539e6858f875d17bed22cfafeff1b8"
+    },
+    {
+      "pdf": "seminars/colloq/files/Gilles_Fall2020.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 18,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/colloq/files/Gilles_Fall2020.html"
+      ],
+      "source_sha256": "e3357601eeea2059be66516a1e593f41e1a4b4957b38cd553cc455d08b6ddd40",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "d7eb61032dac8886a7c221d79906ccf714c558227b4195dc1bd103b67cb1e7e7",
+      "sha256": "d0b9933aef6628f7f1c3c1f9c18713b2b4ac0c6abd573d2781f555330ab9caf9"
+    },
+    {
+      "pdf": "seminars/diffeq/oanhnguyen110315.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 12,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/diffeq/oanhnguyen110315.html"
+      ],
+      "source_sha256": "6e983de28100bc0e176883e1d549bbe66fab232e912217f868db3a6950274dad",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "0f3b8565952d8105749f72aec39d25bc501dc6f17ce2495a6f142cd637b7477a",
+      "sha256": "b9036ced2f699fbe41ddd13af35a72213203d09f3a5c9f48270630a1c65964a2"
+    },
+    {
+      "pdf": "seminars/diffeq/xiangwan092915.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/diffeq/xiangwan092915.html"
+      ],
+      "source_sha256": "3c219840803902a52a00a5efd7bda962c6c0e8867b44d18122b96b9b2f65d8e4",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "5e5624d469a6afff08747825712bf1c9dce0c9581f82e76453e4e555e6f1c9c1",
+      "sha256": "031d8c0af17dc85dc2c1b26779ac13ab6ca45614e26b451dd79248cedb266147"
+    },
+    {
+      "pdf": "seminars/mathphys/1999-03/Fine.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 5,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/mathphys/1999-03/Fine.html"
+      ],
+      "source_sha256": "4b5ca83c8bf7ee3cca120f6cc89c162f803114cfa7b9ccdbb94d4b7eb807df48",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "6cdd5af321029eb174607f1eeeb965f0cd1a9a7ad2265e3ea5e493332532116f",
+      "sha256": "204c332a6f4bef009b30ef430e6dab82c6044d94cc088e72de9c72434da5b99d"
+    },
+    {
+      "pdf": "seminars/mathphys/1999-03/Hempel.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/mathphys/1999-03/Hempel.html"
+      ],
+      "source_sha256": "2d08e6d6ba9185c05c49c69be7969cf95419f161397c03e8f22b0b3e0dd1cc51",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "933ffa983d7007c8949c0aa0754535eb0705a1581e6bd9276bbc6c960735b0ae",
+      "sha256": "7cdfdbc61ce17417c3cd06f56ce80b4b72dafd340c2a951b7885d98b1418ca52"
+    },
+    {
+      "pdf": "seminars/mathphys/1999-03/Mar23.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 29,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/mathphys/1999-03/Mar23.html"
+      ],
+      "source_sha256": "16b55ba1832d2a22acf9168ec8d603ca2164fb0dadc9bd797a9497a3b96d8880",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "76d99192d78bbca8ae90fa50dca87fa5da185e921c4b7edb33feff8450d92764",
+      "sha256": "b723a59aad3ea3871048a8ed78411d442ec23e253ea8c2d9722bd6004abe2376"
+    },
+    {
+      "pdf": "seminars/mathphys/1999-03/Mar24.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 12,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/mathphys/1999-03/Mar24.html"
+      ],
+      "source_sha256": "5d432f0e55f114fad4da754dc067d0b5eb33cf46333cad6023413e91a0ff3045",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "143e0af0642b88661826325ae8abeea00fb80a9b4e67612e4157d6450ada78ed",
+      "sha256": "48fe61e19ce30e5eba33cc466f8ddc8632b4ed86971bce5ac67d2080f920c97e"
+    },
+    {
+      "pdf": "seminars/mathphys/2003-07/Jan17.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 11,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/mathphys/2003-07/Jan17.html"
+      ],
+      "source_sha256": "c207c5e634b5f7c6ccfe3f4a00f1457d46423ba004b7be4f9ff9f5f3f900f9d4",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ea918e4793b0f9e751a0ee1a6b8a5f0ad079fbeb218b8d3f60b7eaec5108dc1b",
+      "sha256": "26881b96c2e1c5f1a64c9870b631e2f5906f31758e7ed77954964c446a3174ba"
+    },
+    {
+      "pdf": "seminars/mathphys/2010-11/abstract_paley_wiener-2.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 20,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/mathphys/2010-11/abstract_paley_wiener-2.html"
+      ],
+      "source_sha256": "6850c9859404569cf861b4cdefdf8217c112677a4c544ff674f629bd2a91d4f7",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "21620349a883a36d843cfef0ebb4211902ac678c5bccda1e553458300b06f0ea",
+      "sha256": "1ea6432721d5c65934eaa9f3d1354b94e02a6f44abd5ac7b4fdd247b5d0f1190"
+    },
+    {
+      "pdf": "seminars/probability/Fall2010/blanchet.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/probability/Fall2010/blanchet.html"
+      ],
+      "source_sha256": "3a08bb5c25aba47374ecd034929d90c72c831accf1b4ce5c194195525b8c3592",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "99d21e8de106913dce493efae303cd245f8067e6ceaf446986b16633096eed33",
+      "sha256": "46125aa0e935eea6b6d017813b9e1332c608c42ec8f0097a319277eaa0071eb4"
+    },
+    {
+      "pdf": "seminars/probability/Fall2010/eldredge.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/probability/Fall2010/eldredge.html"
+      ],
+      "source_sha256": "dc46b8bee811d6ab5e56104524420f654a14e65dea37ad0a8dd29250c59cbf9c",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "3290240c4866ab4c8fc59133f459d8e4112a268a2c0e8a71467cf041b087d99a",
+      "sha256": "a681da98c6cdd4ab8c1227a424f5f5301ed6f38baf474f9906fc8c8030c8f151"
+    },
+    {
+      "pdf": "seminars/probability/Fall2010/goel.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/probability/Fall2010/goel.html"
+      ],
+      "source_sha256": "e30674e985f3bae348929278edb500455170c017d7650b97ca808d080c75b2a2",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "bb6ff00ef86652241047951b40d6952fc1377163f79fa947ecb15e75842d24ec",
+      "sha256": "0110f5bda8b465db2a1bd8ef8c3c4708d837abaaaf751db5e47ba5684d004377"
+    },
+    {
+      "pdf": "seminars/probability/Fall2010/gordina.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/probability/Fall2010/gordina.html"
+      ],
+      "source_sha256": "5e6c9e2cf4411e29dd75de6d09e40e60107e53dfcc052100cf4c80eb1c78d28b",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c83695fe068ec5d45893559539d8edc218b53bdb5f1794f65f49a5972b3a8deb",
+      "sha256": "59c537eec7c2eb820bf8f4746678488e54153c114ba3722f4c9d8d2c62d28831"
+    },
+    {
+      "pdf": "seminars/probability/Fall2010/li.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/probability/Fall2010/li.html"
+      ],
+      "source_sha256": "d4133222f3003be35db75e834580fa86529879af03c9bf3ff9cf6203db403ff7",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c9e7b01a659a1aa95c05db32954e5a122329335354569090ad868e74e8a09afb",
+      "sha256": "71e631bf72ec39ffebf5ff2002b85d86e86c024bd1a25c2855b67fc26e09ae27"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/blitzstein.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/probability/Spring2007/blitzstein.html"
+      ],
+      "source_sha256": "7cc753e5032e956d28d1beb4c3921c1fd116ede07d35c18c610c3a02e01bc56a",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "7fec215e068266d091379e8ceae3e6070cac9dc06988cd1829fddc525ccb8e89",
+      "sha256": "47ee31eb662d5e57023f8e5464bbc4bb146220fbe1bd76f908e6cf55ac92197d"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/cecil.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 3,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/probability/Spring2007/cecil.html"
+      ],
+      "source_sha256": "dad5fe1cf0e16f3ba0e50bb9261c8c78c52ba1db88bcad36841d1193b17d144e",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "828992db9d69909d4dbfb3a65db490c3786022fe219ee85d608cf3e5e82c0cdc",
+      "sha256": "239e5d86e02271ba555ea4c799ef101614d733e01f68730aeceb517978551d46"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/kang.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 1,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/probability/Spring2007/kang.html"
+      ],
+      "source_sha256": "f273106dedfe7eab7f376fe03ebe51003450326127e1650323fcebaabae72bb3",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "38a4bda3279a35b502fc0788f4f31f1f60552a6ebc884ba56d80d686ee155261",
+      "sha256": "c7dbf8ac01def0f7f41788602ee3900a58c0d4f4b0508e69410307510dd533f7"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/lim.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 11,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/probability/Spring2007/lim.html"
+      ],
+      "source_sha256": "5aeaf41e52dc986b70d170cb6923f9db3850306c32625132f597bf33194d1e9a",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "d0779430206a7b35d0625192768915b2fd55214be96e0d96db4b405c88391452",
+      "sha256": "550ed35e1088ec1bbe84f8542fa3b70d53564933160f461c0ce0108ac4a4ea82"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/sturm.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/probability/Spring2007/sturm.html"
+      ],
+      "source_sha256": "2ebfabf0ae552ad2b77a8852468dddd93d9746d4e2fcb7cac2fcc2245cbcfc56",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "eae56588b5581b4fc1b370cd39ff31ee70742b4626b47a186b791358ff29d67f",
+      "sha256": "a4f7872d97ca6d2e7d01451cc0bc818c9122a88d6d221974a5f3562148d453fe"
+    },
+    {
+      "pdf": "seminars/probability/Spring2007/zwart.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/probability/Spring2007/zwart.html"
+      ],
+      "source_sha256": "fe2f7a0cf56d347290a892634331f6800ddbf873ea0409b483cce5a5adcf67ce",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "a064425a977d7e6962f27baf748ef5298128ab24382c178efa998cf67b158b57",
+      "sha256": "b5254d31ffa67da2932081a9b345e0f971c251a6916fe61e8e042906c232161f"
+    },
+    {
+      "pdf": "seminars/topology/AroneDelooping.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 84,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/topology/AroneDelooping.html"
+      ],
+      "source_sha256": "a9ba1200f991636afa892b4f62d74ade15e96230a26134e8541a54de57f77444",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ff1d9d1f032ceab727c91da99153b87496d71f2e2157079dccfdb467fcdbb4b5",
+      "sha256": "31beb4ed1cc23a82d6a1fbb7c2b1cce2f96134723216b3961198e4f0788f85a7"
+    },
+    {
+      "pdf": "seminars/topology/HambletPoset.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 60,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/topology/HambletPoset.html"
+      ],
+      "source_sha256": "7f1b583b7c44cb8bfc56466793daf1e5ce38ddebe9cebae355952e4bb422198f",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "5a180ab097ae8349674f7be8170a549906b96007fd5960fa8b7bdab90fa2effd",
+      "sha256": "52f3248a1fc761e66827affa325445c79e333a165c5e1aaf099f0e8ecfcdd69d"
+    },
+    {
+      "pdf": "seminars/topology/JPark-abstract.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 8,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/topology/JPark-abstract.html"
+      ],
+      "source_sha256": "8e01f908cfed6bb1943694c335bf3e9869d4ce5514598e9bbdd9d39852b5a877",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "68600cb0ab7c3fe7c7949ed27b2b795be710ad0b4b587617a1f09403c227fae6",
+      "sha256": "f4e622b8b3fe15d819c2c25f32c6e918ce00b99995184003fb2212c0a2c75cc7"
+    },
+    {
+      "pdf": "seminars/topology/Josh Greene - Floer Homology and Knot Concordance.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 87,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/topology/Josh Greene - Floer Homology and Knot Concordance.html"
+      ],
+      "source_sha256": "dbb2254b5cd99d532302639ddc38280d2713d54bda24a277c1bfa0d1a5e49974",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "e467e1719599e97916da83e0004ed2d74d501f63c014540ae10b9503bc5ad2b6",
+      "sha256": "8b22f35b238d16af0319c5ca0a1813c64b9f521fd8b84b696c124075b63ee5f6"
+    },
+    {
+      "pdf": "seminars/topology/NickRealizability.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 89,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/topology/NickRealizability.html"
+      ],
+      "source_sha256": "0d309059b969c4dbbfcb0b695a8e112f157fe7cf8387289dccc68be6d61fb105",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c53d8cf5b850f7e89e8acae86dc016279d0426b67abbba2e37ed23ff7a8857c5",
+      "sha256": "d006292bd7b22ca490711895eec70ce646ce92212b21d9988085eca33d59aa44"
+    },
+    {
+      "pdf": "seminars/topology/StongSUnSOn.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 286,
+      "figures": 0,
+      "source_urls": [
+        "/seminars/topology/StongSUnSOn.html"
+      ],
+      "source_sha256": "72081d189cb594d513dbbad2510d0c05106799e7e38ca14684ae4144bb3eebe5",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c18203d88cdea45b20e55323975b20303850289c0c73624ab9c333448045ed4b",
+      "sha256": "b84693ff768e309014cf712b5dd5db79b86fd4e9fd713a75af184a111ffcebdd"
+    },
+    {
+      "pdf": "talks_seminars_data/B_Simon_2018/More Tales of our Forefathers - B. Simon.pdf",
+      "status": "retained historical archive",
+      "sha256": "b82ab7b1094b90982a1338b0a3f2bc22bfdf09da6905cbe1e38100dc161ad976"
+    },
+    {
+      "pdf": "talks_seminars_data/B_Simon_2018/Tales of our Forefathers - B. Simon.pdf",
+      "status": "retained historical archive",
+      "sha256": "c3dd7af402817a30d1cf6167bd147606631b9d4aa38292bc02503c2773ecb039"
+    },
+    {
+      "pdf": "talks_seminars_data/B_Simon_2018/chebyshev - B. Simon.pdf",
+      "status": "retained historical archive",
+      "sha256": "fd7388d315cff372029cf5637e7fc072af3b51848e7e878666e8c4160b0a6aab"
+    },
+    {
+      "pdf": "undergraduate/docs/DSP-GMP Info Sheets_2015 1.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 2,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/DSP-GMP Info Sheets_2015 1.html"
+      ],
+      "source_sha256": "fbae5ec5b36984e8d74656722e7d85188b14f27e1b4322df6c36f9c15fbe15a4",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "2c5346320e2a0a8a97e9f7f652e7d6685efe1a163a159dd9a55dc9e716e497e4",
+      "sha256": "7ca8dd8ec6587a29de162375fbaa2c137bef0e3e4efd94027840a2a1b3b3cf89"
+    },
+    {
+      "pdf": "undergraduate/docs/Defer Major.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 1,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/Defer Major.html"
+      ],
+      "source_sha256": "4ec06c21d7874583e9470fa93443dc673a9683423d372656731d80e73a956cdb",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "9e1893e122d0765924d8ceccb5a29d186cd28acb32044bbc72eef827a7741f34",
+      "sha256": "d52a0ece319b7372fbc95b37014c5e512cba8536fc7292d1ff7cd9cf5ef0839f"
+    },
+    {
+      "pdf": "undergraduate/docs/Grader_App_2023.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/Grader_App_2023.html"
+      ],
+      "source_sha256": "acacd4f1922004e2083bb0c06934a8d0e3f47c275440285b0bea2f5046a82e37",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "130b89336fd4ae4d87c26ad107325c4ba2df9287cfab84f880b873b872a72d3d",
+      "sha256": "9dcfc3e49a8f5901068b8b8437001f6afb832355dc2ea9cffbcc47f6250c66ca"
+    },
+    {
+      "pdf": "undergraduate/docs/MathMajorCourseGuide_Fall25_version.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/MathMajorCourseGuide_Fall25_version.html"
+      ],
+      "source_sha256": "36be0b1f74a60ce1c10c6736a38bd9b0e9bfbd3492c0f340fa5c71da47a1b3d3",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "832aabed034bf9f2cd9ea638dc3c51e3f6bd155dd969baa130267dde24864cc1",
+      "sha256": "4051525485227eefb9a8b09a72a56567d144b44f7de12009b5afbebc9074973c"
+    },
+    {
+      "pdf": "undergraduate/docs/Participation in Final Exercises by BA.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/Participation in Final Exercises by BA.html"
+      ],
+      "source_sha256": "09a03d2097f051cba008742f8fc100b355f55a11168dfe8f6247e09d78723f73",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ba4b60c37d65d2dae8233e86c6c4f4ba48331fa7d92e132f477545f804aa42bf",
+      "sha256": "ee557814068a76883e2811e4f93796f29680b98913fbf079cc4738943981517a"
+    },
+    {
+      "pdf": "undergraduate/docs/Reasons one did not get into PBK.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/Reasons one did not get into PBK.html"
+      ],
+      "source_sha256": "116ed2d4928a4b6e1f9187461225e2026ba7543a8e04c5c7f034d48d2b7ee803",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "464b47a1d22f90abb74549e5f07852deb598f3990c331e6f1ea09a6f44359a25",
+      "sha256": "68f4c3ac1882cc68290d19ecaa5e0322e6f056d247bbe567fbe93f967b604219"
+    },
+    {
+      "pdf": "undergraduate/docs/Repeating a course.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/Repeating a course.html"
+      ],
+      "source_sha256": "cdb3fd02d99c94e740f97b2851ef89183ba6134476134d582196620739e1206d",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "68ab96954ff534fd9030d49ff2879aba3f9f8836560ac8d98e89bfff80611926",
+      "sha256": "1b0e99bdb092a4d651381889de8385aac175e21450fa16af0acef845090481d5"
+    },
+    {
+      "pdf": "undergraduate/docs/Submit new course to CEPC.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/Submit new course to CEPC.html"
+      ],
+      "source_sha256": "111c83a6ca828a84ef1a887042161532556468e76f4f2c9073fe84762cd3ed26",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "c6adad6971d03f525f85dc27c212b76d777f5766ebe517a598ed93765d1e6f68",
+      "sha256": "3f0e344ca74e284e1865335fcaaecfca8a139657ded2cc5bf28430641ce50287"
+    },
+    {
+      "pdf": "undergraduate/docs/Undergraduates Taking Graduate Courses.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/Undergraduates Taking Graduate Courses.html"
+      ],
+      "source_sha256": "3efb484a87e91c63c862280ad702c7fceb4078c70873157ccce974b9418ed02b",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "af52ee9e9d97175d94f05a8a1c13f4fc78d3bf9a2d6bc2e226973c3c26f622c9",
+      "sha256": "a37100c2becca3da8f0d0c5dbbe0f01c79a09046fb78a03cd36a75f856c818ce"
+    },
+    {
+      "pdf": "undergraduate/docs/exception(fillable)_1.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/exception(fillable)_1.html"
+      ],
+      "source_sha256": "95f619c69bab4ede946e628e0234775b2d705713a520686f57ed013ba5deaff3",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "2f6cbfbd4da6d5e68c575a3ed9b3852dd79169f5c5dd9b52e3d9c5e284a50b42",
+      "sha256": "09adbe687ddb7cfbbf66fa89a245ff10b2e5a490579eefef1ae5b579473a4107"
+    },
+    {
+      "pdf": "undergraduate/docs/precalculus.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/precalculus.html"
+      ],
+      "source_sha256": "4a71e9bf78d6e2c1de2d05bf2ac481070bf21910b3ccaee8b2574df7e4adc23c",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "13b67e1c2a3bb6896bbdf3e8f6708d521f0e69a87af4f934f7b6b38d72831fa6",
+      "sha256": "97f5c003b1eaabdeba36aa7055de3bfdbe2dbc0a78cefbe9cd176bbfc3afee8e"
+    },
+    {
+      "pdf": "undergraduate/docs/wrong-calculus-course.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 0,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/docs/wrong-calculus-course.html"
+      ],
+      "source_sha256": "fe093aab9e2639becdcf224b080fb84bdbffda776c59732ba8fbce6a62aeb1f2",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "38f0006f75da0fb86349ec38ed5fd2f5e298da18ad52e35cd4124f1cc4695584",
+      "sha256": "8035971683e00c53a921e7d12b9e6d1059c44e4ca3ec8b43c6b732eed405c0d4"
+    },
+    {
+      "pdf": "undergraduate/placement-files/ExamA_Solutions.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 87,
+      "figures": 2,
+      "source_urls": [
+        "/undergraduate/placement-files/ExamA_Solutions.html"
+      ],
+      "source_sha256": "7359d0a68356aee757749172159fa9b15a083470dd24b9494f6e494c2e5afaf0",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "b7b621fee0e9866d487d5c4d7639ff202ab48f56e0cc9b57b142370db2fc61bd",
+      "sha256": "44d9899511fecd9c0555c8d04dd1f30c41379c2377e9749ca12694f17fb8d5f4"
+    },
+    {
+      "pdf": "undergraduate/placement-files/ExamB_Solutions.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 111,
+      "figures": 4,
+      "source_urls": [
+        "/undergraduate/placement-files/ExamB_Solutions.html"
+      ],
+      "source_sha256": "135fbfbda8b9db55088a8679df0003ed5d17b5b6ff3b9159700ca29391a974e3",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "ea4b13d067bdc0676866f2583e49bcff9b91611bb4eb7d549894591442eba0e7",
+      "sha256": "3fcc9bee7c0da06985ba7cc0c8ae0a426cb3f7335248c7491a367dee86dbdac8"
+    },
+    {
+      "pdf": "undergraduate/placement-files/ExamC_Solutions.pdf",
+      "status": "reflowed tagged document",
+      "pdfua1": true,
+      "formulas": 72,
+      "figures": 0,
+      "source_urls": [
+        "/undergraduate/placement-files/ExamC_Solutions.html"
+      ],
+      "source_sha256": "f03a9c6cf0a6599bace1d1cb54983e4f255ba71e7852db2d83244a3b3424aff8",
+      "exporter_sha256": "bad1db44e5f32b614edbcfec6a5650c652bc98d8111499888412a186425f7bf0",
+      "original_sha256": "791b40a2a41293894bf6d3b45cc699c20c3a0cd14a8e2b6a5b244727025b51d9",
+      "sha256": "0ed38fb95e5ff27e644416c305d6641262350ce7592520e067c9c40120dd792a"
+    }
+  ]
+}

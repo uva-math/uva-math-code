@@ -15,7 +15,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<p class="h5 mt-1 mb-1"><a href="https://people.math.wisc.edu/~ellenberg/">Jordan Ellenberg</a> (University of Wisconsin)</p>
+<h2 class="h5 mt-1 mb-1"><a href="https://people.math.wisc.edu/~ellenberg/">Jordan Ellenberg</a> (University of Wisconsin)</h2>
 
 
 <p>Jordan Ellenberg will deliver the Virginia Mathematics Lectures on March 4-5, 2025.</p>
@@ -50,3 +50,6 @@ nav_parent: IMS
 
   **Abstract:**
   The interaction of machine learning with math has attracted a lot of attention, because mathematics is in some respects a closed world with well-defined rules (like chess, and unlike poetry-writing) but also a domain where success is ultimately judged by human assessments of ingenuity and importance, not rigid criteria (like poetry-writing, and unlike chess). Can machines prove theorems? Can they have mathematical ideas?  In what areas of mathematics and in what aspects of mathematical practice is machine learning likely to have the biggest impact?  I'm not going to answer any of these questions, obviously.  But I'm going to speculate about them, based on my own experience working on applications of ML to pure math with both industry and academic collaborators.   Many of the problems discussed in my first lecture will appear again here, but each lecture will make sense without the other.
+
+
+<p><a href="/img/IMS/Jordan-Ellenberg-poster.html">Event poster text (HTML)</a>.</p>

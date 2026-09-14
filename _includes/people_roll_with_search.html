@@ -1,18 +1,23 @@
 <!-- Search Bar -->
-<div id="people-search-group" class="input-group mb-4">
-  <input type="text" id="people-search-input" class="form-control" placeholder="Search people… (Esc to clear)" aria-label="Search people">
-  <button class="btn btn-secondary" type="button" id="people-search-clear">Clear</button>
-</div>
+<form id="people-search-form" role="search" aria-label="People directory">
+  <label for="people-search-input" class="form-label">Search people</label>
+  <p id="people-search-help">Search by name, research area, office, email, or UVA ID. Press Escape in the search field to clear.</p>
+  <div id="people-search-group" class="input-group mb-3">
+    <input type="search" id="people-search-input" class="form-control" aria-describedby="people-search-help" aria-controls="people-results-status" autocomplete="off">
+    <button class="btn btn-secondary" type="button" id="people-search-clear">Clear search and filters</button>
+  </div>
+</form>
 
 <!-- Category Buttons (only show on pages with multiple types) -->
 {% if include.show_categories %}
-<div id="people-cat-buttons" class="d-none d-md-flex flex-wrap gap-2 mb-4">
+<div id="people-cat-buttons" class="d-flex flex-wrap gap-2 mb-4" role="group" aria-label="Filter people by position">
   <!-- Categories will be dynamically generated -->
 </div>
 {% endif %}
+<p id="people-results-status" role="status" aria-live="polite" aria-atomic="true"></p>
 
 <!-- Include the original people roll -->
-{% include people_roll.html type=include.type %}
+{% if include.type %}{% include people_roll.html type=include.type heading_level=2 %}{% endif %}
 
 <!-- Include search script -->
 <script src="{{ site.url }}/css/people-search.js"></script>

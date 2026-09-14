@@ -1,15 +1,14 @@
 <nav aria-label="Math Experimental Lab">
-{% assign sorted_pages = site.pages | sort: "nav_weight" %}
 
 <div class="list-group h5">
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/">Home</a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/application/">Apply Now</a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/current_projects/">Current Projects</a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/projects/">Past Projects</a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/schedule/">Schedule</a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/faq/">FAQ</a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/pictures/">Pictures</a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/contact/">Contact</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/" {% if page.url == '/mathexlab/' %}aria-current="page"{% endif %}>Math Experimental Lab home</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/application/" {% if page.url == '/mathexlab/application/' %}aria-current="page"{% endif %}>Apply Now</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/current_projects/" {% if page.url == '/mathexlab/current_projects/' %}aria-current="page"{% endif %}>Current Projects</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/projects/" {% if page.url == '/mathexlab/projects/' %}aria-current="page"{% endif %}>Past Projects</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/schedule/" {% if page.url == '/mathexlab/schedule/' %}aria-current="page"{% endif %}>Schedule</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/faq/" {% if page.url == '/mathexlab/faq/' %}aria-current="page"{% endif %}>FAQ</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/pictures/" {% if page.url == '/mathexlab/pictures/' %}aria-current="page"{% endif %}>Pictures</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/mathexlab/contact/" {% if page.url == '/mathexlab/contact/' %}aria-current="page"{% endif %}>Contact</a>
 </div>
 
 <br class="hidden-sm-down"><br class="hidden-sm-down">

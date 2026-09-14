@@ -12,20 +12,20 @@ nav_weight: 20
 
 ---
 
-<h5 class="mt-2 mb-4">Welcome to the Department of Mathematics!  Below is some information to get you started:</h5>
+<h2 class="mt-2 mb-4">Welcome to the Department of Mathematics!  Below is some information to get you started:</h2>
 
 
-- **University ID and Computing** [`https://its.virginia.edu/accounts/facstaffaccounts.html`](https://its.virginia.edu/accounts/facstaffaccounts.html) New faculty/staff begin here
+- **University ID and Computing** [Faculty and staff computing accounts](https://its.virginia.edu/accounts/facstaffaccounts.html) New faculty/staff begin here
 
 - **Arriving and leaving UVA: the ITS checklists** [`Technology Checklists for the UVA Community`](https://virginia.service-now.com/its?id=itsweb_kb_article&sys_id=7927f5c8db0a1b80f032f1f51d96190e) covers both joining and departing. One thing to be careful about on the way out: **your UVA email and files can be switched off abruptly when your appointment ends, sometimes with no warning at all** - the grace period depends on how the departure is recorded centrally, not on your job title, and deleted mail cannot be recovered. Export anything you need well before your last day.
 
-- **Software Gateway** [`https://its.virginia.edu/software/`](https://its.virginia.edu/software/) provides access to site-licensed software that can be distributed to members of the University at no charge.  Our local IT person is {% include person_info.html UVA_id="vlb5y" %}
+- **Software Gateway** [UVA Software Gateway](https://its.virginia.edu/software/) provides access to site-licensed software that can be distributed to members of the University at no charge.  Our local IT person is {% include person_info.html UVA_id="vlb5y" %}
 
-- **Setting up Direct Deposit:**  In order to set up direct deposit for your paycheck, you will need to have an account on the University’s Integrated System [`https://www.virginia.edu/integratedsystem/`](https://www.virginia.edu/integratedsystem/)    
+- **Setting up Direct Deposit:**  In order to set up direct deposit for your paycheck, you will need to have an account on the University’s Integrated System [UVA Integrated System](https://www.virginia.edu/integratedsystem/)
 
-- **Teaching:** SIS (Student Information System) at UVa.  Instructors use SIS [`https://sis.virginia.edu/`](https://sis.virginia.edu/) to generate class rosters and submit grades
+- **Teaching:** SIS (Student Information System) at UVa.  Instructors use SIS [Student Information System (SIS)](https://sis.virginia.edu/) to generate class rosters and submit grades
 
-- **Canvas** Course management system [`https://canvas.its.virginia.edu/`](https://canvas.its.virginia.edu/) Instructors may create course sites with official class rosters. We encourage all instructors to load their syllabus and other coursework on Canvas rather than making copies
+- **Canvas** Course management system [UVA Canvas](https://canvas.its.virginia.edu/) Instructors may create course sites with official class rosters. We encourage all instructors to load their syllabus and other coursework on Canvas rather than making copies
 
 - **Books:** The Department will provide instructors with desk copies for their courses. See the front office (room `216`).
 
@@ -45,7 +45,7 @@ nav_weight: 20
 <!-- - **UNIX home directory service at `blue.unix.virginia.edu`:**
 [`https://admin.people.virginia.edu/cgi-local/ww/menu`](https://admin.people.virginia.edu/cgi-local/ww/menu) -->
 
-- **Advanced Research Computing Services:** [`https://arcs.virginia.edu`](https://arcs.virginia.edu), and in particular [Rivanna Cluster](https://arcs.virginia.edu/rivanna)
+- **Advanced Research Computing Services:** [UVA Advanced Research Computing Services](https://arcs.virginia.edu), and in particular [Rivanna Cluster](https://arcs.virginia.edu/rivanna)
 
 - **Math Department Tea Time** is every Tuesday and Thursday during the semester in Kerchof 314 (Math Lounge / Common Room), starting at 3:15.
 

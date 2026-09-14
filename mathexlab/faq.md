@@ -6,12 +6,12 @@ redirect_from:
   - /geolab/faq/
 ---
 
-<h2 class="mb-3">Frequently Asked Questions</h2>
+<h1 class="mb-3">Frequently Asked Questions</h1>
 
 + Am I eligible to participate in the Math Experimental Lab?
-    - Any undergraduate student can apply to participate. You do not need to be a math major, but you need to be curious and enthusiastic about exploring some new mathematical ideas and making real life models of these ideas in a chosen medium. There are projects at all levels. You do not need to have any specific prior mathematical background: you will learn it here! You can apply to participate <a href="{{site.url}}/mathexlab/application/">here</a>.
+    - Any undergraduate student can apply to participate. You do not need to be a math major, but you need to be curious and enthusiastic about exploring some new mathematical ideas and making real life models of these ideas in a chosen medium. There are projects at all levels. You do not need to have any specific prior mathematical background: you will learn it here! You can apply to participate <a href="{{site.url}}/mathexlab/application/">Math Experimental Lab application</a>.
 + Why should I apply to participate in the Math Experimental Lab?
-    - Participation in the Math Experimental Lab is a great opportunity to learn some advanced math topics in a very experimental way, join a welcoming and inclusive community of people curious and enthusiastic about math, and get a little glimpse of what math research is about. You can apply to participate <a href="{{site.url}}/mathexlab/application/">here</a>.
+    - Participation in the Math Experimental Lab is a great opportunity to learn some advanced math topics in a very experimental way, join a welcoming and inclusive community of people curious and enthusiastic about math, and get a little glimpse of what math research is about. You can apply to participate <a href="{{site.url}}/mathexlab/application/">Math Experimental Lab application</a>.
 + What kinds of things will I learn about?
     - Generally speaking, the projects will explore geometric concepts beyond what one might see in traditional lower-level math courses. (But note that you do not need any specific mathematical background to participate!) See <a href="{{site.url}}/mathexlab/projects/">past projects</a> for examples of projects we have run in the past.
 + How is the Math Experimental Lab structured? How will the groups be assigned?
@@ -25,9 +25,8 @@ redirect_from:
 
  For current participants:
  + Where can my team present the results of our project?
-    - A list of recurring undergraduate research conferences is available <a href="https://seminar.math.vt.edu/mathclub/conferences.html">here</a>. Locally, you may also consider presenting in the Math Club, AWM, Graduate Student Seminar, <a href="https://vacadsci.org/">Virginia Academy of Science</a>, or <a href="https://sites.google.com/view/mid-atlantic-math-alliance/">Mid-Atlantic Regional Math Alliance</a>. Check each site for the current registration deadline.
+    - A list of recurring undergraduate research conferences is available <a href="https://seminar.math.vt.edu/mathclub/conferences.html">Undergraduate research conferences</a>. Locally, you may also consider presenting in the Math Club, AWM, Graduate Student Seminar, <a href="https://vacadsci.org/">Virginia Academy of Science</a>, or <a href="https://sites.google.com/view/mid-atlantic-math-alliance/">Mid-Atlantic Regional Math Alliance</a>. Check each site for the current registration deadline.
 + What are some possible final products for our project?
     - Some possible final products: expository/research paper; blog posts/journal throughout the semester documenting your project; code (in a GitHub repository) and user’s manual; poster at undergraduate conference (see above for a list of conferences); article in the Math Newsletter
 + It's my first time presenting! Any tips for giving a good math talk?
-   - Some advice for giving good math talks can be found <a href="https://blog.richmond.edu/wross/2008/03/26/how-to-give-a-good-20-minute-math-talk/">here</a>, <a href="https://www.math.stonybrook.edu/~bishop/lectures/GiveGoodTalk.pdf">here</a>, or <a href="https://terrytao.wordpress.com/career-advice/talks-are-not-the-same-as-papers/">here</a>. 
-
+   - Some advice for giving good math talks can be found <a href="https://blog.richmond.edu/wross/2008/03/26/how-to-give-a-good-20-minute-math-talk/">How to give a good 20-minute math talk</a>, <a href="https://www.math.stonybrook.edu/~bishop/lectures/GiveGoodTalk.pdf">How to give a good mathematical talk (PDF)</a>, or <a href="https://terrytao.wordpress.com/career-advice/talks-are-not-the-same-as-papers/">Talks are not the same as papers</a>.

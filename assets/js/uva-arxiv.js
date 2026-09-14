@@ -63,6 +63,7 @@
     var d = parseDate(paper.date);
     if (!d) return true;
     var now = new Date();
+    now.setHours(0, 0, 0, 0);
     var y = now.getFullYear();
     var start, end;
     if (state.activeDate === 'this-week') {
@@ -170,12 +171,7 @@
     input.focus();
   }
 
-  function appendSearch(value) {
-    var input = $('uva-arxiv-search-input');
-    if (!input) return;
-    input.value = value;
-    applyFilters(true);
-  }
+  function appendSearch(value) { setSearch(value); }
 
   function categoryCounts() {
     var counts = {};
@@ -193,41 +189,47 @@
       if (counts[b] !== counts[a]) return counts[b] - counts[a];
       return a.localeCompare(b);
     });
+    var focusedCategory = wrap.contains(document.activeElement) ? document.activeElement.dataset.category : null;
     wrap.innerHTML = '';
     var all = document.createElement('button');
     all.type = 'button';
-    all.className = 'btn btn-sm category-btn ' + (state.activeCategory === 'all' ? 'btn-primary active' : 'btn-outline-secondary');
+    all.dataset.category = 'all';
+    all.setAttribute('aria-pressed', String(state.activeCategory === 'all'));
+    all.className = 'btn btn-sm category-btn ' + (state.activeCategory === 'all' ? 'btn-primary active' : 'btn-secondary');
     all.textContent = 'All categories (' + state.papers.length + ')';
     all.addEventListener('click', function () { state.activeCategory = 'all'; buildCategoryButtons(); applyFilters(true); });
     wrap.appendChild(all);
     cats.forEach(function (cat) {
       var btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = 'btn btn-sm category-btn ' + (state.activeCategory === cat ? 'btn-primary active' : 'btn-outline-secondary');
+      btn.dataset.category = cat;
+      btn.setAttribute('aria-pressed', String(state.activeCategory === cat));
+      btn.className = 'btn btn-sm category-btn ' + (state.activeCategory === cat ? 'btn-primary active' : 'btn-secondary');
       btn.innerHTML = escapeHtml(cat) + ' <span class="uva-arxiv-cat-count">' + counts[cat] + '</span>';
       btn.addEventListener('click', function () { state.activeCategory = cat; buildCategoryButtons(); applyFilters(true); });
       wrap.appendChild(btn);
     });
+    if (focusedCategory) Array.from(wrap.children).find(function (button) { return button.dataset.category === focusedCategory; })?.focus();
   }
 
   function authorHtml(paper) {
     var authors = paper.authors && paper.authors.length ? paper.authors : [paper.authors_text || ''];
     return authors.map(function (author) {
       var label = escapeHtml(author);
-      return '<button type="button" class="uva-arxiv-author-name" data-author="' + escapeHtml(author) + '">' + label + '</button>';
+      return '<button type="button" class="uva-arxiv-author-name" aria-label="Filter papers by author ' + escapeHtml(author) + '" data-author="' + escapeHtml(author) + '">' + label + '</button>';
     }).join(', ');
   }
 
   function peopleHtml(paper) {
     if (!paper.people || !paper.people.length) return '';
     return paper.people.map(function (person) {
-      return '<button type="button" class="badge uva-arxiv-person-badge" data-person="' + escapeHtml(person.name) + '">' + escapeHtml(person.name) + '</button>';
+      return '<span class="badge uva-arxiv-person-badge">UVA: ' + escapeHtml(person.name) + '</span>';
     }).join(' ');
   }
 
   function categoryHtml(paper) {
     return (paper.categories || []).map(function (cat) {
-      return '<button type="button" class="badge uva-arxiv-cat-badge" data-cat="' + escapeHtml(cat) + '">' + escapeHtml(cat) + '</button>';
+      return '<button type="button" class="badge uva-arxiv-cat-badge" aria-label="Filter papers by category ' + escapeHtml(cat) + '" data-cat="' + escapeHtml(cat) + '">' + escapeHtml(cat) + '</button>';
     }).join(' ');
   }
 
@@ -237,16 +239,15 @@
     if (paper.publication_year && label.indexOf(String(paper.publication_year)) === -1) label += ' ' + paper.publication_year;
     var filterName = paper.journal_full || paper.journal_name;
     var title = paper.journal_ref || paper.journal_full || paper.journal_name;
-    var attrs = ' class="badge uva-arxiv-link-badge uva-arxiv-link-journal" data-journal="' + escapeHtml(filterName) + '" title="' + escapeHtml(title) + '"';
+    var attrs = ' class="badge uva-arxiv-link-badge uva-arxiv-link-journal" data-journal="' + escapeHtml(filterName) + '" aria-label="Filter papers by journal: ' + escapeHtml(title) + '"';
     return '<button type="button"' + attrs + '>' + escapeHtml(label) + '</button>';
   }
 
   function linkBadgesHtml(paper) {
-    var html = '';
-    html += '<a href="https://arxiv.org/abs/' + encodeURIComponent(paper.id) + '" target="_blank" rel="noopener" class="badge uva-arxiv-link-badge uva-arxiv-link-abs">arXiv<span class="visually-hidden"> (opens in new tab)</span></a>';
-    html += '<a href="https://arxiv.org/pdf/' + encodeURIComponent(paper.id) + '" target="_blank" rel="noopener" class="badge uva-arxiv-link-badge uva-arxiv-link-pdf">pdf<span class="visually-hidden"> (opens in new tab)</span></a>';
-    html += '<a href="https://arxiv.org/html/' + encodeURIComponent(paper.id) + '" target="_blank" rel="noopener" class="badge uva-arxiv-link-badge uva-arxiv-link-html">html<span class="visually-hidden"> (opens in new tab)</span></a>';
-    if (paper.doi) html += '<a href="https://doi.org/' + encodeURIComponent(paper.doi) + '" target="_blank" rel="noopener" class="badge uva-arxiv-link-badge uva-arxiv-link-doi">doi<span class="visually-hidden"> (opens in new tab)</span></a>';
+    var title = escapeHtml(paper.title);
+    var html = '<a href="https://arxiv.org/pdf/' + encodeURIComponent(paper.id) + '" aria-label="PDF: ' + title + '" class="badge uva-arxiv-link-badge uva-arxiv-link-pdf">PDF</a>';
+    html += '<a href="https://arxiv.org/html/' + encodeURIComponent(paper.id) + '" aria-label="HTML: ' + title + '" class="badge uva-arxiv-link-badge uva-arxiv-link-html">HTML</a>';
+    if (paper.doi) html += '<a href="https://doi.org/' + encodeURIComponent(paper.doi) + '" aria-label="Published version: ' + title + '" class="badge uva-arxiv-link-badge uva-arxiv-link-doi">Published version</a>';
     return html;
   }
 
@@ -256,15 +257,17 @@
     li.dataset.id = paper.id;
     li.dataset.month = paper.month;
     li.innerHTML =
-      '<div class="uva-arxiv-entry">' +
-      '  <div class="uva-arxiv-date-col"><time datetime="' + escapeHtml(paper.date) + '">' + escapeHtml(paper.date) + '</time><br><a href="https://arxiv.org/abs/' + encodeURIComponent(paper.id) + '" target="_blank" rel="noopener" class="uva-arxiv-id-label">' + escapeHtml(paper.id) + '<span class="visually-hidden"> (opens in new tab)</span></a></div>' +
+      '<article class="uva-arxiv-entry">' +
+      '  <div class="uva-arxiv-date-col"><time datetime="' + escapeHtml(paper.date) + '">' + escapeHtml(paper.date) + '</time><br><span class="uva-arxiv-id-label">arXiv:' + escapeHtml(paper.id) + '</span></div>' +
       '  <div class="uva-arxiv-body">' +
+      '    <h3 class="uva-arxiv-title"><a href="https://arxiv.org/abs/' + encodeURIComponent(paper.id) + '">' + escapeHtml(paper.title) + '</a></h3>' +
+      '    <p>' + authorHtml(paper) + '</p>' +
       '    <div class="uva-arxiv-tags">' + categoryHtml(paper) + ' ' + journalBadgeHtml(paper) + '</div>' +
-      '    <div><strong>' + authorHtml(paper) + '</strong>, "<em class="uva-arxiv-title" role="button" tabindex="0" aria-label="Toggle abstract for ' + escapeHtml(paper.id) + '">' + escapeHtml(paper.title) + '</em>" <span class="uva-arxiv-links">' + linkBadgesHtml(paper) + '</span></div>' +
+      '    <p class="uva-arxiv-links">' + linkBadgesHtml(paper) + '</p>' +
       '    <div class="uva-arxiv-people mt-1">' + peopleHtml(paper) + '</div>' +
-      (paper.abstract ? '    <details class="uva-arxiv-abstract-wrap"><summary class="uva-arxiv-abstract-toggle">Abstract</summary><div class="uva-arxiv-abstract">' + escapeHtml(paper.abstract) + (paper.journal_ref ? '<div class="uva-arxiv-journal-ref">Published in: ' + (paper.doi ? '<a href="https://doi.org/' + encodeURIComponent(paper.doi) + '" target="_blank" rel="noopener">' + escapeHtml(paper.journal_ref) + '</a>' : escapeHtml(paper.journal_ref)) + '</div>' : '') + '</div></details>' : '') +
+      (paper.abstract ? '    <details class="uva-arxiv-abstract-wrap"><summary class="uva-arxiv-abstract-toggle" aria-label="Abstract: ' + escapeHtml(paper.title) + '">Abstract</summary><div class="uva-arxiv-abstract">' + escapeHtml(paper.abstract) + (paper.journal_ref ? '<p class="uva-arxiv-journal-ref">Published in: ' + escapeHtml(paper.journal_ref) + '</p>' : '') + '</div></details>' : '') +
       '  </div>' +
-      '</div>';
+      '</article>';
     return li;
   }
 
@@ -278,6 +281,9 @@
           { left: '\\(', right: '\\)', display: false },
           { left: '\\[', right: '\\]', display: true }
         ],
+        output: 'htmlAndMathml',
+        trust: false,
+        errorColor: 'inherit',
         throwOnError: false
       });
     } catch (e) { /* ignore rendering errors */ }
@@ -289,6 +295,7 @@
     if (reset) {
       list.innerHTML = '';
       state.rendered = 0;
+      list.dataset.lastMonth = '';
     }
     var target = Math.min(state.filtered.length, state.rendered + (state.rendered ? state.batchSize : state.initialBatch));
     var lastMonth = list.dataset.lastMonth || '';
@@ -319,7 +326,7 @@
     if (count) count.textContent = 'Showing ' + state.rendered + ' of ' + state.filtered.length + ' papers';
     if (noResults) noResults.hidden = state.filtered.length !== 0;
     var status = $('uva-arxiv-status');
-    if (status) status.textContent = state.filtered.length + ' papers match the current filters.';
+    if (status) status.textContent = state.filtered.length ? 'Showing ' + state.rendered + ' of ' + state.filtered.length + ' matching papers.' : 'No papers match the current filters.';
   }
 
   function applyFilters(reset) {
@@ -331,9 +338,7 @@
   }
 
   function updateFilterButtons() {
-    var dateBtn = $('uva-arxiv-date-btn');
     var catToggle = $('uva-arxiv-cat-toggle');
-    if (dateBtn) dateBtn.classList.toggle('has-filter', state.activeDate !== 'all');
     if (catToggle) {
       catToggle.classList.toggle('has-filter', state.activeCategory !== 'all');
       var label = $('uva-arxiv-cat-toggle-label');
@@ -345,31 +350,34 @@
     state.activeDate = value;
     var dateLabel = $('uva-arxiv-date-label');
     if (dateLabel) dateLabel.textContent = label;
-    var items = document.querySelectorAll('.uva-arxiv-dropdown-item[data-date]');
-    for (var i = 0; i < items.length; i++) items[i].classList.toggle('active', items[i].dataset.date === value);
-    closeDateMenu();
+    var select = $('uva-arxiv-date-select');
+    if (select) select.value = value;
     applyFilters(true);
   }
 
-  function closeDateMenu() {
-    var menu = $('uva-arxiv-date-menu');
-    var btn = $('uva-arxiv-date-btn');
-    if (menu) menu.classList.remove('open');
-    if (btn) btn.setAttribute('aria-expanded', 'false');
-  }
 
   function wireEvents() {
     var input = $('uva-arxiv-search-input');
+    var searchForm = $('uva-arxiv-search-form');
+    if (searchForm) searchForm.addEventListener('submit', function (event) { event.preventDefault(); applyFilters(true); });
+    var dateSelect = $('uva-arxiv-date-select');
+    if (dateSelect) dateSelect.addEventListener('change', function () {
+      $('uva-arxiv-year-range').hidden = this.value !== 'custom';
+      if (this.value !== 'custom') setDateFilter(this.value, this.options[this.selectedIndex].text);
+    });
     var clear = $('uva-arxiv-search-clear');
     var helpBtn = $('uva-arxiv-search-help-btn');
     var help = $('uva-arxiv-search-help');
     var catToggle = $('uva-arxiv-cat-toggle');
     var catPanel = $('uva-arxiv-cat-panel');
     var dateBtn = $('uva-arxiv-date-btn');
-    var dateMenu = $('uva-arxiv-date-menu');
     var yearFrom = $('uva-arxiv-year-from');
     var yearTo = $('uva-arxiv-year-to');
     var yearApply = $('uva-arxiv-year-range-apply');
+    var yearError = $('uva-arxiv-year-error');
+    [yearFrom, yearTo].forEach(function (field) {
+      if (field) field.addEventListener('input', function () { yearError.hidden = true; yearFrom.removeAttribute('aria-invalid'); yearTo.removeAttribute('aria-invalid'); });
+    });
     var loadMore = $('uva-arxiv-load-more');
     var list = $('uva-arxiv-list');
     var backTop = $('uva-arxiv-back-top');
@@ -391,14 +399,20 @@
       state.customTo = null;
       var label = $('uva-arxiv-date-label');
       if (label) label.textContent = 'All time';
+      if (dateSelect) dateSelect.value = 'all';
+      if (yearFrom) yearFrom.value = '';
+      if (yearTo) yearTo.value = '';
+      $('uva-arxiv-year-range').hidden = true;
+      yearError.hidden = true;
+      yearFrom.removeAttribute('aria-invalid');
+      yearTo.removeAttribute('aria-invalid');
       buildCategoryButtons();
       applyFilters(true);
     }
     if (clear) clear.addEventListener('click', clearAllAndFocus);
-    document.addEventListener('keydown', function (e) {
+    if (input) input.addEventListener('keydown', function (e) {
       if (e.key === 'Escape') {
         e.preventDefault();
-        closeDateMenu();
         clearAllAndFocus();
       }
     });
@@ -410,51 +424,37 @@
       catPanel.hidden = !catPanel.hidden;
       catToggle.setAttribute('aria-expanded', catPanel.hidden ? 'false' : 'true');
     });
-    if (dateBtn && dateMenu) dateBtn.addEventListener('click', function () {
-      var open = !dateMenu.classList.contains('open');
-      dateMenu.classList.toggle('open', open);
-      dateBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-    document.addEventListener('click', function (e) {
-      if (dateMenu && dateBtn && !dateMenu.contains(e.target) && !dateBtn.contains(e.target)) closeDateMenu();
-    });
-    var dateItems = document.querySelectorAll('.uva-arxiv-dropdown-item[data-date]');
-    for (var i = 0; i < dateItems.length; i++) {
-      dateItems[i].addEventListener('click', function () { setDateFilter(this.dataset.date, this.textContent.trim()); });
-    }
     if (yearApply) yearApply.addEventListener('click', function () {
       state.customFrom = yearFrom && yearFrom.value ? parseInt(yearFrom.value, 10) : null;
       state.customTo = yearTo && yearTo.value ? parseInt(yearTo.value, 10) : null;
+      if (!yearFrom.checkValidity() || !yearTo.checkValidity() || (state.customFrom && state.customTo && state.customFrom > state.customTo)) {
+        yearError.textContent = 'Enter years from 1900 to 2099, with the first year no later than the last year.';
+        yearError.hidden = false;
+        yearFrom.setAttribute('aria-invalid', 'true');
+        yearFrom.focus();
+        return;
+      }
       var label = (state.customFrom || '…') + '–' + (state.customTo || '…');
       setDateFilter('custom', label);
     });
-    if (loadMore) loadMore.addEventListener('click', function () { renderList(false); });
+    if (loadMore) loadMore.addEventListener('click', function () {
+      var firstNew = state.rendered;
+      renderList(false);
+      var papers = list.querySelectorAll('li[data-id] .uva-arxiv-title a');
+      if (papers[firstNew]) papers[firstNew].focus();
+    });
     if (list) list.addEventListener('click', function (e) {
       var author = e.target.closest('.uva-arxiv-author-name');
-      var person = e.target.closest('.uva-arxiv-person-badge');
       var cat = e.target.closest('.uva-arxiv-cat-badge');
       var journal = e.target.closest('.uva-arxiv-link-journal');
-      var title = e.target.closest('.uva-arxiv-title');
       if (author) appendSearch('au:"' + author.dataset.author + '"');
-      else if (person) appendSearch('au:"' + person.dataset.person + '"');
-      else if (cat) { state.activeCategory = cat.dataset.cat; buildCategoryButtons(); applyFilters(true); }
+      else if (cat) { state.activeCategory = cat.dataset.cat; buildCategoryButtons(); applyFilters(true); if (catToggle) catToggle.focus(); }
       else if (journal) appendSearch('in:"' + journal.dataset.journal + '"');
-      else if (title) {
-        var details = title.closest('li[data-id]').querySelector('.uva-arxiv-abstract-wrap');
-        if (details) details.open = !details.open;
-      }
+
     });
-    if (list) list.addEventListener('keydown', function (e) {
-      var title = e.target.closest('.uva-arxiv-title');
-      if (title && (e.key === 'Enter' || e.key === ' ')) {
-        e.preventDefault();
-        var details = title.closest('li[data-id]').querySelector('.uva-arxiv-abstract-wrap');
-        if (details) details.open = !details.open;
-      }
-    });
+
     if (backTop) {
-      window.addEventListener('scroll', function () { backTop.classList.toggle('visible', window.scrollY > 500); });
-      backTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: 'smooth' }); });
+      backTop.addEventListener('click', function () { if (input) input.focus(); window.scrollTo({ top: 0, behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); });
     }
   }
 

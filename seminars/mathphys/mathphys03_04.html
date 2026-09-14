@@ -23,7 +23,7 @@ nav_parent: Seminars
 {% if sem.image != null %}
   <div class="row">
     <div class="col-md-3">
-      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image"/>
     </div>
   </div>
 {% endif %}
@@ -67,7 +67,7 @@ Rich Felker, "Gaussian Correlation Inequalities."
   Week of Oct 22</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Brian Rider, Duke. (Wednesday, Oct 22 at 2 in Kerchof 228)
 <em> " Some formulas surrounding non-Hermitian matrix ensembles"</em><br>
-Terry Fine, Cornell, <a href="../1999-03/Fine.pdf">"Making Sense of Probability as a Set of Measures,"</a> (Friday, Oct 24 at 2 in Kerchof 317)
+Terry Fine, Cornell, <a aria-label="PDF abstract: Making Sense of Probability as a Set of Measures" href="../1999-03/Fine.pdf">"Making Sense of Probability as a Set of Measures,"</a> <a href="/seminars/mathphys/1999-03/Fine.html" aria-label="HTML abstract: Making Sense of Probability as a Set of Measures">HTML abstract</a> (Friday, Oct 24 at 2 in Kerchof 317)
 
 <li><a href="../1999-03/Oct29.txt">
   Week of Oct29</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -85,8 +85,8 @@ Erin Valenti, "Stability Results for the Infinite Elastic Wire"
  Week of Nov. 19 </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 Gianluca Guadagni "Functional Integrals" (Wednesday, Nov 19 at 2 in Kerchof 228)
 <br>
-Rainer Hempel, Technical University of Braunschweig,  <a href="../1999-03/Hempel.pdf">"Small obstacles with Neumann boundary condition:
-a variant of the Crushed Ice Problem,"</a>(Friday, Nov 21 at 2 in Kerchof 317).
+Rainer Hempel, Technical University of Braunschweig,  <a aria-label="PDF abstract: Small obstacles with Neumann boundary condition: a variant of the Crushed Ice Problem." href="../1999-03/Hempel.pdf">"Small obstacles with Neumann boundary condition:
+a variant of the Crushed Ice Problem,"</a> <a href="/seminars/mathphys/1999-03/Hempel.html" aria-label="HTML abstract: Small obstacles with Neumann boundary condition: a variant of the Crushed Ice Problem.">HTML abstract</a>(Friday, Nov 21 at 2 in Kerchof 317).
 
 <li><a href="../1999-03/Nov26.txt">
   Week of Nov 26</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -180,7 +180,7 @@ Thomas Chen, "Infrared renormalization and spectral problems in non-relativistic
 
 
 <hr />
-<h3 class="mb-3">Archives</h3>
+<h2 class="mb-3">Archives</h2>
 
 <p><a href="/seminars/mathphys/">upcoming</a> | <a href="/seminars/mathphys/2026-27/">2026-27</a> | <a href="/seminars/mathphys/2025-26/">2025-26</a> | <a href="/seminars/mathphys/2024-25/">2024-25</a> | <a href="/seminars/mathphys/2023-24/">2023-24</a> | <a href="/seminars/mathphys/2022-23/">2022-23</a> | <a href="/seminars/mathphys/2021-22/">2021-22</a> | <a href="/seminars/mathphys/2020-21/">2020-21</a> | <a href="/seminars/mathphys/2019-20/">2019-20</a> | <a href="/seminars/mathphys/2018-19/">2018-19</a> | <a href="/seminars/mathphys/2017-18/">2017-18</a> | <a href="/seminars/mathphys/2016-17/">2016-17</a> |
 <a href="/seminars/mathphys/2015-16/">2015-16</a> |
@@ -203,7 +203,7 @@ Thomas Chen, "Infrared renormalization and spectral problems in non-relativistic
 
 <hr />
 
-<b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
+<h2>Contacts</h2> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
 
 
 

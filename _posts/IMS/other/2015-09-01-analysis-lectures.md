@@ -17,7 +17,7 @@ Part of the 2015-2016 focus year in analysis sponsored by the Institute of Mathe
 
 <!--more-->
 
-<h3 class="mt-3 mb-3">Speakers:</h3>
+<h2 class="mt-3 mb-3">Speakers:</h2>
 
 - Horia Cornean (Aalborg)
 - Jonathan Dimock (Buffalo)

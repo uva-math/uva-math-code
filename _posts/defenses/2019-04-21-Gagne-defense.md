@@ -17,3 +17,5 @@ hide-this-item: true
 - Place: Gilmer 166
 
 Everyone is invited to attend.
+
+Full defense poster: [HTML](/img/news_events/MattGagne_DefensePoster.html) | [PDF](/img/news_events/MattGagne_DefensePoster.pdf).

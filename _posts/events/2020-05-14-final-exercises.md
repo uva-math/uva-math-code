@@ -21,5 +21,4 @@ The schedule is as follows:
 
 - 3pm: The Director of Graduate Studies, Julie Bergner, will continue with recognitions for our graduating Masters and PhD students, including remarks from thesis advisors.
 
-The Math Department events will take place via Zoom and will also be available via livestream [here](https://www.youtube.com/watch?v=Pu7lUFHww7U), starting at around 1:55pm 
-
+The Math Department events will take place via Zoom and will also be available via livestream [2020 Mathematics Department graduation livestream](https://www.youtube.com/watch?v=Pu7lUFHww7U), starting at around 1:55pm

@@ -19,6 +19,6 @@ specialty: Arithmetic Geometry
 
 ---
 
-##### Selected Publications
+## Selected Publications
 - A finer Tate duality theorem for local Galois symbols, J. of Algebra **509**,  (2018), 337--385.
 - On a filtration of $CH_0$ for an abelian variety, Comp. Math. **151**,  (2015), 435--460.

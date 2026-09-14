@@ -1,11 +1,10 @@
 <nav aria-label="AWM program">
-{% assign sorted_pages = site.pages | sort: "nav_weight" %}
 
 
 <div class="list-group h5">
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/awm/">Home</a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/awm/calendar/">Calendar</span></a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/awm/resources/">Resources</span></a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/awm/" {% if page.url == '/awm/' %}aria-current="page"{% endif %}>AWM chapter home</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/awm/calendar/" {% if page.url == '/awm/calendar/' %}aria-current="page"{% endif %}>Calendar</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/awm/resources/" {% if page.url == '/awm/resources/' %}aria-current="page"{% endif %}>Resources</a>
 </div>
 
 <br class="hidden-sm-down"><br class="hidden-sm-down">
@@ -13,7 +12,7 @@
 
 {% if page.has_AWM_calendar %}
 
-<iframe class="hidden-sm-down" src="https://calendar.google.com/calendar/embed?height=270&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=3ehl1jte3jnlftm6h5m28b96jo%40group.calendar.google.com&amp;color=%23691426&amp;ctz=America%2FNew_York" style="border-width:0" width="380" height="300" frameborder="0" scrolling="no" title="AWM Calendar"></iframe>
+<p><a href="https://calendar.google.com/calendar/embed?src=3ehl1jte3jnlftm6h5m28b96jo%40group.calendar.google.com&amp;ctz=America%2FNew_York">Open the AWM calendar on Google Calendar</a></p>
 {% endif %}
 
 <br />

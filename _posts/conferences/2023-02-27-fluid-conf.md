@@ -17,3 +17,7 @@ The conference "Reflections on mathematical fluid dynamics" will be held at the 
 Conference schedule
 
 <!--more-->
+
+[Conference schedule with all talk titles (HTML)](/img/news_events/fluid-refl-conf-schedule.html) | [Conference schedule (PDF)](/img/news_events/fluid-refl-conf-schedule.pdf).
+
+[Conference poster with speakers and organizers (HTML)](/img/news_events/fluid-refl-conf.html) | [Conference poster (PDF)](/img/news_events/fluid-refl-conf.pdf).

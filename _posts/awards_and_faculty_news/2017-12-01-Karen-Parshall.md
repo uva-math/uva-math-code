@@ -16,7 +16,7 @@ will receive the [2018 Albert Leon Whiteman Memorial Prize](http://www.ams.org/n
 
 Professor Parshall has a long and distinguished publishing record in the history of mathematics: four seminal books, one monograph, four co-edited volumes, more than 50 research papers, and a great number of reviews and papers directed at wider audiences. She has particularly studied two themes: the evolution of mathematics in the USA and the history of algebra. Parshall unites approaches long thought to be contradictory. She masters impressive amounts of archival evidence, applies utmost scrutiny and competence in analyzing both mathematical content and institutional contexts, and establishes links between local mathematical environments and the appreciation of particular mathematical objects within those environments. The depth and variety of her contributions, historical and mathematical, make her a natural and notable recipient of the Whiteman Prize.
 
-#### Biographical Sketch of Karen Hunger Parshall:
+## Biographical Sketch of Karen Hunger Parshall:
 
 Since 1988, Parshall has been on the faculty at the University of Virginia, where she has a joint appointment in the Departments of History and Mathematics, teaching the history of science in the History Department and mathematics and the history of mathematics in the Mathematics Department.
 
@@ -24,7 +24,7 @@ She has been an invited hour speaker at the International Congress of Mathematic
 
 
 
-#### Response from Karen Hunger Parshall:
+## Response from Karen Hunger Parshall:
 
 I am deeply honored and profoundly humbled to be named the 2018 recipient of the Albert Leon Whiteman Memorial Prize in the history of mathematics.
 
@@ -42,6 +42,6 @@ I extend my most heartfelt thanks to all of these colleagues as well as to the A
 
 
 
-#### Background of the Albert Leon Whiteman Memorial Prize:
+## Background of the Albert Leon Whiteman Memorial Prize:
 
 The Albert Leon Whiteman Memorial Prize recognizes notable exposition and exceptional scholarship in the history of mathematics. It was established in 1998 using funds donated by Mrs. Sally Whiteman in memory of her husband, Albert Leon Whiteman. The 2018 prize will be awarded Thursday, January 11, 2018, at the Joint Mathematics Meetings in San Diego.

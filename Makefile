@@ -1,4 +1,4 @@
-.PHONY: serve serve-full invalidate deploy autodeploy deploy-local uva-arxiv schedule
+.PHONY: serve serve-full invalidate deploy autodeploy deploy-local uva-arxiv schedule accessibility
 
 UVA_ARXIV_PYTHON ?= python3
 SCHEDULE_PYTHON ?= python3
@@ -65,3 +65,8 @@ uva-arxiv:
 # Bare run reports what would change; make schedule ARGS=--write applies it.
 schedule:
 	$(SCHEDULE_PYTHON) scripts/schedule/update.py $(ARGS)
+
+# Full rendered-page structural checks; browser and manual checks are documented in scripts/README.md.
+accessibility:
+	bundle exec jekyll build
+	bundle exec ruby scripts/audit_accessibility.rb _site /tmp/uva-accessibility.json

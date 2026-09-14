@@ -29,4 +29,4 @@ The Edwin E. Floyd Prize prize is given annually to second- or third-year majors
 
 The number of Floyd winners this year (5) ties the all-time high from 2021, reflecting the exceptional quality of this year's pool.
 
-### Congratulations!
+## Congratulations!

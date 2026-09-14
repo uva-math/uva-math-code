@@ -1,11 +1,14 @@
 {% assign sorted_people = site.departmentpeople | sort: 'lastname' %}
 
-<div class="my-row-zebra">
+<div class="my-row-zebra people-directory" data-category="{{ include.type }}">
 {% for ppl in sorted_people %}
-{% if ppl.general_position == include.type %}
+{% assign show_person = false %}
+{% if ppl.general_position == include.type %}{% assign show_person = true %}{% endif %}
+{% if include.type == 'all' and ppl.general_position != 'recent-postdoc' %}{% assign show_person = true %}{% endif %}
+{% if show_person %}
   <div class="row" style="padding:10px 0px">
     <div class="col-md-6">
-      <a href="{{site.url}}/people/{{ppl.UVA_id}}/" class="nonupper-h5">{{ ppl.name }} {{ ppl.lastname }}</a>
+      <h{{ include.heading_level | default: 3 }} class="h5"><a href="{{site.url}}/people/{{ppl.UVA_id}}/" class="nonupper-h5">{{ ppl.name }} {{ ppl.lastname }}</a></h{{ include.heading_level | default: 3 }}>
       {%if ppl.pronouns != null %}
       ({{ppl.pronouns}})
       {%endif%}
@@ -60,15 +63,12 @@
 
       {% if ppl.personal_page != null %}
         <span class="fa-solid fa-up-right-from-square" aria-hidden="true" style="font-size:0.8em"></span>
-        <a href="{{ ppl.personal_page }}">Personal page</a>
+        <a href="{{ ppl.personal_page }}">{{ ppl.name }} {{ ppl.lastname }}'s personal page</a>
       {% endif %}
     </div>
     <div class="col-md-2">
       {% if ppl.image != null %}
-      <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:70px" class="d-none d-md-block float-end"></a>
-      <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:100px" class="d-md-none mt-3"></a>
-      {% else %}
-        <a href="{{site.url}}/people/{{ppl.UVA_id}}/"><img src="{{site.url}}/img/people/Avatar_image.png" alt="{{ ppl.name }} {{ ppl.lastname }}" title="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:70px" class="d-none d-md-block float-end"></a>
+      <img src="{{ ppl.image | replace: '__SITE_URL__', site.url }}" alt="{{ ppl.name }} {{ ppl.lastname }}" style="width:100%;max-width:100px" class="img-fluid mt-3 mt-md-0" loading="lazy">
       {% endif %}
     </div>
   </div>

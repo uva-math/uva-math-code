@@ -23,7 +23,7 @@ nav_parent: Seminars
 {% if sem.image != null %}
   <div class="row">
     <div class="col-md-3">
-      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image"/>
     </div>
   </div>
 {% endif %}
@@ -31,7 +31,7 @@ nav_parent: Seminars
 
 
 <table width=100%>
-    <h3>Spring Semester</h3>
+    <h2>Spring Semester</h2>
   <thead>
     <tr>
       <th width="12%">Date</th>
@@ -41,32 +41,32 @@ nav_parent: Seminars
   </thead>
   <tbody class="my-tr-zebra">
     <tr>
-    	<td valign="top">February 22</td>
-    	<td valign="top">Wilbur Whitten</td>
-    	<td><a href="javascript:Toggle('February 22')">Pseudo-meridians of knot groups</a>
-    <p id="February 22" style="display:none;">A pseudo-meridian of the group of a knot in the 3-sphere is an element that normally generates the group, but is not automorphic to a meridian.  In this talk, we will see that many knot groups contain an infinite number of pseudo-meridians (up to automorphism), and that the existence of such elements is connected with Simon's conjecture (Problem 1.12 (D) of Rob Kirby's list) and with other questions concerning knot-group epimorphisms.</p></td>
+      <td valign="top">February 22</td>
+      <td valign="top">Wilbur Whitten</td>
+      <td><details><summary>Pseudo-meridians of knot groups</summary>
+<p>A pseudo-meridian of the group of a knot in the 3-sphere is an element that normally generates the group, but is not automorphic to a meridian.  In this talk, we will see that many knot groups contain an infinite number of pseudo-meridians (up to automorphism), and that the existence of such elements is connected with Simon's conjecture (Problem 1.12 (D) of Rob Kirby's list) and with other questions concerning knot-group epimorphisms.</p></details></td>
     </tr>
 
     <tr>
-    	<td valign="top">March 1</td>
-    	<td valign="top">Joshua Greene (Columbia)</td>
-    	<td><a href="javascript:Toggle('March 1')">Conway mutation and alternating links</a>
-    <p id="March 1" style="display:none;">Let D and D' denote connected, reduced, alternating diagrams for a pair of links, and Y and Y' their branched double-covers. I'll discuss the proof and consequences of the following result: Y and Y' have isomorphic Heegaard Floer homology groups iff Y and Y' are homeomorphic iff D and D' are mutants.<br /></p></td>
+      <td valign="top">March 1</td>
+      <td valign="top">Joshua Greene (Columbia)</td>
+      <td><details><summary>Conway mutation and alternating links</summary>
+<p>Let D and D' denote connected, reduced, alternating diagrams for a pair of links, and Y and Y' their branched double-covers. I'll discuss the proof and consequences of the following result: Y and Y' have isomorphic Heegaard Floer homology groups iff Y and Y' are homeomorphic iff D and D' are mutants.<br /></p></details></td>
     </tr>
 
 
     <tr>
-    	<td valign="top">March 29</td>
-    	<td valign="top">David Clark</td>
-    	<td><a href="javascript:Toggle('March 29')">(No title)</a>
-    <p id="March 29" style="display:none;">A version of Khovanov link homology categorifies the Reshetikhin-Turaev polynomial corresponding to the fundamental vector representation of su(3). We demonstrate an action of the symmetric group on this homology, and discuss implications for extending the theory to a categorification of polynomials related to higher irreps of su(3).</p></td>
+      <td valign="top">March 29</td>
+      <td valign="top">David Clark</td>
+      <td><details><summary>(No title)</summary>
+<p>A version of Khovanov link homology categorifies the Reshetikhin-Turaev polynomial corresponding to the fundamental vector representation of su(3). We demonstrate an action of the symmetric group on this homology, and discuss implications for extending the theory to a categorification of polynomials related to higher irreps of su(3).</p></details></td>
     </tr>
 
     <tr>
-    	<td valign="top">April 12</td>
-    	<td valign="top">Jennifer Hom (U Penn)</td>
-    	<td><a href="javascript:Toggle('April 12')">Concordance and the knot Floer complex</a>
-    <p id="April 12" style="display:none;">We will use the knot Floer complex, in particular the<br />invariant epsilon, to define a new smooth concordance homomorphism.<br />Applications include a formula for tau of iterated cables, better<br />bounds (in many cases) on the 4-ball genus than tau alone, and a new<br />infinite family of smoothly independent topologically slice knots. We<br />will also discuss various algebraic properties of this construction,<br />including a total ordering, a ``much greater than'' relation, and a<br />filtration.</p></td>
+      <td valign="top">April 12</td>
+      <td valign="top">Jennifer Hom (U Penn)</td>
+      <td><details><summary>Concordance and the knot Floer complex</summary>
+<p>We will use the knot Floer complex, in particular the<br />invariant epsilon, to define a new smooth concordance homomorphism.<br />Applications include a formula for tau of iterated cables, better<br />bounds (in many cases) on the 4-ball genus than tau alone, and a new<br />infinite family of smoothly independent topologically slice knots. We<br />will also discuss various algebraic properties of this construction,<br />including a total ordering, a ``much greater than'' relation, and a<br />filtration.</p></details></td>
     </tr>
 
 
@@ -77,20 +77,10 @@ nav_parent: Seminars
 
 {%endif%} {% endfor %}
 
-<script type="text/javascript">
-function Toggle(abstractID) {
-     var CurrentAbstract = document.getElementById(abstractID);
-     if (CurrentAbstract.style.display == 'none') {
-         CurrentAbstract.style.display = 'block';
-     }
-     else {
-         CurrentAbstract.style.display = 'none';
-     }
- }
-</script>
+
 
 <hr />
-<h3 class="mb-3">Archives</h3>
+<h2 class="mb-3">Archives</h2>
 
 <p><a href="/seminars/geometry/">upcoming</a> | <a href="/seminars/geometry/2026-27/">2026-27</a> | <a href="/seminars/geometry/2025-26/">2025-26</a> | <a href="/seminars/geometry/2024-25/">2024-25</a> | <a href="/seminars/geometry/2023-24/">2023-24</a> | <a href="/seminars/geometry/2022-23/">2022-23</a> | <a href="/seminars/geometry/2021-22/">2021-22</a> | <a href="/seminars/geometry/2020-21/">2020-21</a> | <a href="/seminars/geometry/2019-20/">2019-20</a> | <a href="/seminars/geometry/2018-19/">2018-19</a> | <a href="/seminars/geometry/2017-18/">2017-18</a> | <a href="/seminars/geometry/2016-17/">2016-17</a> |
 <a href="/seminars/geometry/2015-16/">2015-16</a> |

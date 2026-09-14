@@ -23,7 +23,7 @@ nav_parent: Seminars
 {% if sem.image != null %}
   <div class="row">
     <div class="col-md-3">
-      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image"/>
     </div>
   </div>
 {% endif %}
@@ -79,10 +79,9 @@ nav_parent: Seminars
         <tr>
           <td valign="top">Oct 07, 2014	</td>
           <td valign="top">Gautam Iyer (Carnegie Mellon) </td>
-          <td><a href="javascript:Toggle('a8')">Mixing of passive scalars by incompressible enstrophy-constrained flows
-</a>
-            <p id="a8" style="display:none;">Consider a diffusion-free passive scalar $\theta$ being mixed by an incompressible flow $u$ on the torus. We study how well this scalar can be mixed under an enstrophy constraint on the advecting velocity field. Our main result shows that the mix-norm ||u(t)||_{H^{-1} is bounded below by an exponential function of time. The exponential decay rate is morally the measure of the support of the initial data, and agrees with both physical intuition and numerical simulations. The main idea behind our proof is to use the notion of ``mixed to scale delta'' and recent work of Crippa and DeLellis towards the proof of Bressan's rearrangement cost conjecture.
-</p>
+          <td><details><summary>Mixing of passive scalars by incompressible enstrophy-constrained flows</summary>
+<p>Consider a diffusion-free passive scalar $\theta$ being mixed by an incompressible flow $u$ on the torus. We study how well this scalar can be mixed under an enstrophy constraint on the advecting velocity field. Our main result shows that the mix-norm ||u(t)||_{H^{-1} is bounded below by an exponential function of time. The exponential decay rate is morally the measure of the support of the initial data, and agrees with both physical intuition and numerical simulations. The main idea behind our proof is to use the notion of ``mixed to scale delta'' and recent work of Crippa and DeLellis towards the proof of Bressan's rearrangement cost conjecture.
+</p></details>
           </td>
         </tr>
 
@@ -119,14 +118,14 @@ nav_parent: Seminars
         <tr>
           <td valign="top">Nov 11, 2014	</td>
           <td valign="top">Andrei Martínez-Finkelshtein (University of Almeria and Vanderbilt)</td>
-          <td><a href="javascript:Toggle('a12')">Random Matrix Models, Non-intersecting random paths, and the Riemann-Hilbert Analysis [joint with Probability Seminar]</a>
-            <p id="a12" style="display:none;">Random matrix theory (RMT) is a very active area of research and a great source of exciting and challenging problems for specialists in many branches of analysis, spectral theory, probability and mathematical physics. The analysis of the eigenvalue distribution of many random matrix ensembles leads naturally to the concepts of determinantal point processes and to their particular case, biorthogonal ensembles, when the main object to study, the correlation kernel, can be written explicitly in terms of two sequences of mutually orthogonal functions.
+          <td><details><summary>Random Matrix Models, Non-intersecting random paths, and the Riemann-Hilbert Analysis [joint with Probability Seminar]</summary>
+<p>Random matrix theory (RMT) is a very active area of research and a great source of exciting and challenging problems for specialists in many branches of analysis, spectral theory, probability and mathematical physics. The analysis of the eigenvalue distribution of many random matrix ensembles leads naturally to the concepts of determinantal point processes and to their particular case, biorthogonal ensembles, when the main object to study, the correlation kernel, can be written explicitly in terms of two sequences of mutually orthogonal functions.
 <br /><br />
 Another source of determinantal point processes is a class of stochastic models of particles following non-intersecting paths. In fact, the connection of these models with the RMT is very tight: the eigenvalues of the so-called Gaussian Unitary Ensemble (GUE) and the distribution of random particles performing a Brownian motion, departing and ending at the origin under condition that their paths never collide are, roughly speaking, statistically identical.
 <br /><br />
 A great challenge is the description of the detailed asymptotics of these processes when the size of the matrices (or the number of particles) grows infinitely large. This is needed, for instance, for verification of different forms of "universality" in the behavior of these models. One of the rapidly developing tools, based on the matrix Riemann-Hilbert characterization of the correlation kernel, is the associated non-commutative steepest descent analysis of Deift and Zhou.
 <br /><br />
-Without going into technical details, some ideas behind this technique will be illustrated in the case of a model of squared Bessel nonintersecting paths. </p>
+Without going into technical details, some ideas behind this technique will be illustrated in the case of a model of squared Bessel nonintersecting paths. </p></details>
           </td>
         </tr>
 
@@ -159,8 +158,8 @@ Without going into technical details, some ideas behind this technique will be i
             <tr>
               <td valign="top">Mar 17, 2015	</td>
               <td valign="top">Chuntian Wang (Indiana)</td>
-              <td><a href="javascript:Toggle('b4')">Numerical Analysis of the Stochastic Navier-Stokes Equations: Stability and Convergence of Invariant Measures </a>
-                <p id="b4" style="display:none;">When studying turbulence of the fluids, many outstanding problems are concerned with the long-term behaviors. This motivates us to design schemes that justify the long-term simulations of chaotic and complex systems. Working towards this final goal, in this article, we propose a class of space-time discretization numerical schemes that preserve certain statistical features for the stochastic Navier-Stokes equations (NSE) subject to a nonlinear state dependent white noise forcing. We first demonstrate the stability criteria and convergence of schemes. Then we establish existence and convergence of an invariant measure for each step of the schemes to the ergodic measure of the limit system, provided that the associated semigroup of the limit system has a strict contraction property. It is also verified that this is the case in many meaningful settings of the stochastic NSE.</p>
+              <td><details><summary>Numerical Analysis of the Stochastic Navier-Stokes Equations: Stability and Convergence of Invariant Measures</summary>
+<p>When studying turbulence of the fluids, many outstanding problems are concerned with the long-term behaviors. This motivates us to design schemes that justify the long-term simulations of chaotic and complex systems. Working towards this final goal, in this article, we propose a class of space-time discretization numerical schemes that preserve certain statistical features for the stochastic Navier-Stokes equations (NSE) subject to a nonlinear state dependent white noise forcing. We first demonstrate the stability criteria and convergence of schemes. Then we establish existence and convergence of an invariant measure for each step of the schemes to the ergodic measure of the limit system, provided that the associated semigroup of the limit system has a strict contraction property. It is also verified that this is the case in many meaningful settings of the stochastic NSE.</p></details>
               </td>
             </tr>
 
@@ -169,10 +168,9 @@ Without going into technical details, some ideas behind this technique will be i
             <tr>
               <td valign="top">Mar 24, 2015	</td>
               <td valign="top">Sean O'Rourke (University of Colorado, Boulder)</td>
-              <td><a href="javascript:Toggle('b5')">Singular values and vectors under random perturbation
-</a>
-                <p id="b5" style="display:none;">Computing the singular values and singular vectors of a large matrix is a basic task in high dimensional data analysis with many applications in computer science and statistics. In practice, however, data is often perturbed by noise. A natural question is the following. How much does a smallperturbation to the matrix change the singular values and vectors?
-Classical (deterministic) theorems, such as those by Davis-Kahan, Wedin, and Weyl, give tight estimates for the worst-case scenario. In this talk, I will consider the case when the perturbation is random. In this setting, better estimates can be achieved when our matrix has low rank. This talk is based on joint work with Van Vu and Ke Wang. </p>
+              <td><details><summary>Singular values and vectors under random perturbation</summary>
+<p>Computing the singular values and singular vectors of a large matrix is a basic task in high dimensional data analysis with many applications in computer science and statistics. In practice, however, data is often perturbed by noise. A natural question is the following. How much does a smallperturbation to the matrix change the singular values and vectors?
+Classical (deterministic) theorems, such as those by Davis-Kahan, Wedin, and Weyl, give tight estimates for the worst-case scenario. In this talk, I will consider the case when the perturbation is random. In this setting, better estimates can be achieved when our matrix has low rank. This talk is based on joint work with Van Vu and Ke Wang. </p></details>
               </td>
             </tr>
 
@@ -190,9 +188,9 @@ Classical (deterministic) theorems, such as those by Davis-Kahan, Wedin, and Wey
             <tr>
               <td valign="top">April 28, 2015	</td>
               <td valign="top">Francesco Di Plinio (Brown)</td>
-              <td><a href="javascript:Toggle('b7')">A Calderon-Zygmund decompositions for multiple frequencies and applications. </a>
-                <p id="b7" style="display:none;">In joint work with C. Thiele, we prove that the bilinear Hilbert transform maps into weak L^{2/3}, up to a doubly logarithmic factor. The main technical advancement we employ in the proof is a strengthening of the multi-frequency Calderon-Zygmund decomposition of Nazarov, Oberlin and Thiele where, loosely speaking, the interaction of the "bad" part, i.e. having mean-zero with respect to N frequencies, with functions localized near one of these frequencies is exponentially small in terms of the "good", i.e. L^2, part.
-Via the same techniques, we also investigate some deeply connected results and open problems on pointwise convergence of Fourier series near L^1. The talk will be suitable for a general audience of analysts (essentially, anyone who has ever seen the classical Calderon-Zygmund decomposition). </p>
+              <td><details><summary>A Calderon-Zygmund decompositions for multiple frequencies and applications.</summary>
+<p>In joint work with C. Thiele, we prove that the bilinear Hilbert transform maps into weak L^{2/3}, up to a doubly logarithmic factor. The main technical advancement we employ in the proof is a strengthening of the multi-frequency Calderon-Zygmund decomposition of Nazarov, Oberlin and Thiele where, loosely speaking, the interaction of the "bad" part, i.e. having mean-zero with respect to N frequencies, with functions localized near one of these frequencies is exponentially small in terms of the "good", i.e. L^2, part.
+Via the same techniques, we also investigate some deeply connected results and open problems on pointwise convergence of Fourier series near L^1. The talk will be suitable for a general audience of analysts (essentially, anyone who has ever seen the classical Calderon-Zygmund decomposition). </p></details>
               </td>
             </tr>
 
@@ -204,7 +202,7 @@ Via the same techniques, we also investigate some deeply connected results and o
 
 
 <hr>
-<h3 class="mb-3">Archives</h3>
+<h2 class="mb-3">Archives</h2>
 
 <p><a href="/seminars/diffeq/">upcoming</a> | <a href="/seminars/diffeq/2026-27/">2026-27</a> | <a href="/seminars/diffeq/2025-26/">2025-26</a> | <a href="/seminars/diffeq/2024-25/">2024-25</a> | <a href="/seminars/diffeq/2023-24/">2023-24</a> | <a href="/seminars/diffeq/2022-23/">2022-23</a> | <a href="/seminars/diffeq/2021-22/">2021-22</a> | <a href="/seminars/diffeq/2020-21/">2020-21</a> | <a href="/seminars/diffeq/2019-20/">2019-20</a> | <a href="/seminars/diffeq/2018-19/">2018-19</a> | <a href="/seminars/diffeq/2017-18/">2017-18</a> | <a href="/seminars/diffeq/2016-17/">2016-17</a> |
   <a href="/seminars/diffeq/2015-16/">2015-16</a> |
@@ -214,22 +212,10 @@ Via the same techniques, we also investigate some deeply connected results and o
 
   <hr />
 
-  <b>Contact:</b> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
+  <h2>Contacts</h2> {% for cnt in sem.contact %}<br />{% include person_info_email_only.html UVA_id = cnt.UVA_id %} {% endfor %}
 
-  
+
 
 
 {%endif%}
 {% endfor %}
-
-<script type="text/javascript">
-function Toggle(abstractID) {
-     var CurrentAbstract = document.getElementById(abstractID);
-     if (CurrentAbstract.style.display == 'none') {
-         CurrentAbstract.style.display = 'block';
-     }
-     else {
-         CurrentAbstract.style.display = 'none';
-     }
- }
-</script>

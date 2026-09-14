@@ -23,14 +23,14 @@ nav_parent: Seminars
 {% if sem.image != null %}
   <div class="row">
     <div class="col-md-3">
-      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image" title="{{sem.name}} image"/>
+      <img src="{{ sem.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto;padding:10px" alt="{{sem.name}} image"/>
     </div>
   </div>
 {% endif %}
 
 
 <table width=100%>
-<h3>Fall Semester</h3>
+<h2>Fall Semester</h2>
 <thead>
     <tr>
         <th width="12%">Date</th>
@@ -42,20 +42,20 @@ nav_parent: Seminars
   <tr>
           <td>September 17</td>
           <td>Nick Kuhn (UVA)</td>
-          <td><a href="javascript:Toggle('Nick')">What is the Adams Spectral Sequence?</a>
-          <p id="Nick" style="display:none;"> I will give a little introduction to the classical Adams spectral sequence.  Prerequisites will be minimal: if you know what Ext groups over a ring are, and maybe what a triangulated category is, you should be able to follow.  I should be able to state what the Hopf Invariant 1 (Adams' theorem) and the Kervaire Invariant 1 (now a theorem of Hopkins, Ravenel, and our own Mike Hill) problems are from this point of view.</p></td>
+          <td><details><summary>What is the Adams Spectral Sequence?</summary>
+<p> I will give a little introduction to the classical Adams spectral sequence.  Prerequisites will be minimal: if you know what Ext groups over a ring are, and maybe what a triangulated category is, you should be able to follow.  I should be able to state what the Hopf Invariant 1 (Adams' theorem) and the Kervaire Invariant 1 (now a theorem of Hopkins, Ravenel, and our own Mike Hill) problems are from this point of view.</p></details></td>
       </tr>
       <tr>
           <td>September 24</td>
           <td>Bjorn Dundas</td>
-          <td><a href="javascript:Toggle('Dundas')">Integral excision and the cyclotomic trace</a>
-          <p id="Dundas" style="display:none">If $A$ is a square of ring spectra (satisfying hypotheses essentlially saying that it is opposite to a gluing of closed embeddings of schemes), then the cube induced by Goodwillie's integral cyclotomic trace $K(A)\to TC(A)$ is homotopy cartesian. In other words, the homotopy fiber of the cyclotomic trace satisfies "excision" for closed embeddings.<br /> So, if one, for instance, is able to calculate $TC$, this means that its K-theory is accessible through assembling the K-theories of simpler closed subspaces. The theorem works equally well for the non-commutative case.</p></td>
+          <td><details><summary>Integral excision and the cyclotomic trace</summary>
+<p>If $A$ is a square of ring spectra (satisfying hypotheses essentlially saying that it is opposite to a gluing of closed embeddings of schemes), then the cube induced by Goodwillie's integral cyclotomic trace $K(A)\to TC(A)$ is homotopy cartesian. In other words, the homotopy fiber of the cyclotomic trace satisfies "excision" for closed embeddings.<br /> So, if one, for instance, is able to calculate $TC$, this means that its K-theory is accessible through assembling the K-theories of simpler closed subspaces. The theorem works equally well for the non-commutative case.</p></details></td>
       </tr>
       <tr>
           <td>October 1</td>
           <td>Robert Lipshitz (Columbia)</td>
-          <td><a href="javascript:Toggle('Lipshitz')">Bordered Floer homology in brief</a>
-          <p id="Lipshitz" style="display:none;">Heegaard Floer homology is an attempt to compute the Seiberg- Witten invariant of smooth 4-manifolds by cutting those manifolds up along 3-manifolds. Unfortunately, the resulting 3-manifold invariants remain mysterious, as well as hard to compute. We will discuss joint work with Peter Ozsvath and Dylan Thurston to understand the 3- manifold invariants by further decomposing along surfaces. The talk will focus on the formal structure of the theory, rather than the (somewhat technical) definitions of the invariants.</p></td>
+          <td><details><summary>Bordered Floer homology in brief</summary>
+<p>Heegaard Floer homology is an attempt to compute the Seiberg- Witten invariant of smooth 4-manifolds by cutting those manifolds up along 3-manifolds. Unfortunately, the resulting 3-manifold invariants remain mysterious, as well as hard to compute. We will discuss joint work with Peter Ozsvath and Dylan Thurston to understand the 3- manifold invariants by further decomposing along surfaces. The talk will focus on the formal structure of the theory, rather than the (somewhat technical) definitions of the invariants.</p></details></td>
       </tr>
       <tr>
           <td>October 8</td>
@@ -70,14 +70,14 @@ nav_parent: Seminars
       <tr>
           <td>October 22</td>
           <td>Nick Kuhn (UVA)</td>
-          <td><a href="javascript:Toggle('NickJacob')">Non-abelian Poincare duality, a la Jacob Lurie</a>
-          <p id="NickJacob" style="display:none;">I will report on a talk by Jacob Lurie that I heard last weekend. He is playing with the favorite toyes of ffolks (Goodwillie, Weiss, Greg A and collaborators) who study "Embedding calculus".</p></td>
+          <td><details><summary>Non-abelian Poincare duality, a la Jacob Lurie</summary>
+<p>I will report on a talk by Jacob Lurie that I heard last weekend. He is playing with the favorite toyes of ffolks (Goodwillie, Weiss, Greg A and collaborators) who study "Embedding calculus".</p></details></td>
       </tr>
       <tr>
           <td>October 29</td>
           <td>Greg Arone (UVA)</td>
-          <td><a href="javascript:Toggle('Arone')">On the rational homotopy type of high-dimensional analogues of spaces of knots</a>
-          <p id="Arone" style="display:none;">We will consider the space of compactly supported smooth embeddings (modulo immersions) of R^m into R^n. For m=1 this is sometimes called the space of long knots in R^n. When n>2m+1, both rational homology and the rational homotopy groups are isomorphic to the homology of a direct sum of rather explicit finite chain complexes. The proof uses calculus of functors, the theory of operads, and some homological algebra a la Pirashvili. I will try to explain the splitting and its proof. This is a report on joint work with V. Turchin.</p></td>
+          <td><details><summary>On the rational homotopy type of high-dimensional analogues of spaces of knots</summary>
+<p>We will consider the space of compactly supported smooth embeddings (modulo immersions) of R^m into R^n. For m=1 this is sometimes called the space of long knots in R^n. When n>2m+1, both rational homology and the rational homotopy groups are isomorphic to the homology of a direct sum of rather explicit finite chain complexes. The proof uses calculus of functors, the theory of operads, and some homological algebra a la Pirashvili. I will try to explain the splitting and its proof. This is a report on joint work with V. Turchin.</p></details></td>
       </tr>
       <tr>
           <td>November 5</td>
@@ -92,8 +92,8 @@ nav_parent: Seminars
       <tr>
           <td>November 19</td>
           <td>Collin Bleak (UNebraska - Lincoln)</td>
-          <td><a href="javascript:Toggle('Bleak')">PL actions on n-cubes</a>
-          <p id="Bleak" style="display:none;">We trace an idea similar to the existence of a basis for R^j in linear algebra; that, in some sense, closed n-1 dimensional manifolds seem not to admit "true" Z^n PL actions. We outline the proof that Z \wr Z^2 fails to embed in PL(I), and our separate (easy) proof that Z \wr Z^n embeds in PL(I^n) with no difficulty.  We then explain why, if Z^n is acting on an (n-1) cube in PL fashion so as to fix the boundary, the local orbit of interior points in the cube will appear as a Z^j orbit, for some j < n. We also mention the non-embedding of Z \wr Z^2 into PL(S^1) as evidence that a non-embedding result for Z \wr Z^n into PL(I^{n-1}) suggests that Z \wr Z^n will also fail to embed into PL(M) for M any closed PL manifold of dimension n-1. The work is joint with Benjamin Krause.</p></td>
+          <td><details><summary>PL actions on n-cubes</summary>
+<p>We trace an idea similar to the existence of a basis for R^j in linear algebra; that, in some sense, closed n-1 dimensional manifolds seem not to admit "true" Z^n PL actions. We outline the proof that Z \wr Z^2 fails to embed in PL(I), and our separate (easy) proof that Z \wr Z^n embeds in PL(I^n) with no difficulty.  We then explain why, if Z^n is acting on an (n-1) cube in PL fashion so as to fix the boundary, the local orbit of interior points in the cube will appear as a Z^j orbit, for some j < n. We also mention the non-embedding of Z \wr Z^2 into PL(S^1) as evidence that a non-embedding result for Z \wr Z^n into PL(I^{n-1}) suggests that Z \wr Z^n will also fail to embed into PL(M) for M any closed PL manifold of dimension n-1. The work is joint with Benjamin Krause.</p></details></td>
       </tr>
       <tr>
           <td>November 26</td>
@@ -103,8 +103,8 @@ nav_parent: Seminars
       <tr>
           <td>December 3</td>
           <td>Nick Kuhn (UVA)</td>
-          <td><a href="javascript:Toggle('NickRegularity')">On Symond's proof of Benson's Regularity Conjecture</a>
-          <p id="NickRegularity" style="display:none;">In pondering duality in the mod p cohomology of finite groups, Dave Benson conjectured that the Castelnuovo-Mumford regularity of such a cohomology ring will be 0.  Peter Symonds has proved this by generalizing the question to one about smooth actions of compact Lie groups on manifolds.  What Benson's conjecture means, why Benson conjectured this, what Symonds did, and maybe why I care, will be the subject of the talk.</p></td>
+          <td><details><summary>On Symond's proof of Benson's Regularity Conjecture</summary>
+<p>In pondering duality in the mod p cohomology of finite groups, Dave Benson conjectured that the Castelnuovo-Mumford regularity of such a cohomology ring will be 0.  Peter Symonds has proved this by generalizing the question to one about smooth actions of compact Lie groups on manifolds.  What Benson's conjecture means, why Benson conjectured this, what Symonds did, and maybe why I care, will be the subject of the talk.</p></details></td>
       </tr>
       <tr>
           <td>December 10</td>
@@ -117,7 +117,7 @@ nav_parent: Seminars
 <hr />
 
 <table width=100%>
-    <h3>Spring Semester</h3>
+    <h2>Spring Semester</h2>
   <thead>
     <tr>
       <th width="12%">Date</th>
@@ -194,19 +194,9 @@ nav_parent: Seminars
 
 {%endif%} {% endfor %}
 
-<script type="text/javascript">
-function Toggle(abstractID) {
-     var CurrentAbstract = document.getElementById(abstractID);
-     if (CurrentAbstract.style.display == 'none') {
-         CurrentAbstract.style.display = 'block';
-     }
-     else {
-         CurrentAbstract.style.display = 'none';
-     }
- }
-</script>
+
 <hr />
-<h3 class="mb-3">Archives</h3>
+<h2 class="mb-3">Archives</h2>
 
 <p><a href="/seminars/topology/">upcoming</a> | <a href="/seminars/topology/2026-27/">2026-27</a> | <a href="/seminars/topology/2025-26/">2025-26</a> | <a href="/seminars/topology/2024-25/">2024-25</a> | <a href="/seminars/topology/2023-24/">2023-24</a> | <a href="/seminars/topology/2022-23/">2022-23</a> | <a href="/seminars/topology/2021-22/">2021-22</a> | <a href="/seminars/topology/2020-21/">2020-21</a> | <a href="/seminars/topology/2019-20/">2019-20</a> | <a href="/seminars/topology/2018-19/">2018-19</a> | <a href="/seminars/topology/2017-18/">2017-18</a> | <a href="/seminars/topology/2016-17/">2016-17</a> |
 <a href="/seminars/topology/2015-16/">2015-16</a> |

@@ -15,7 +15,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<p class="h5 mt-1 mb-1"><a href="https://www.math.brown.edu/reschwar/">Rich Schwartz</a> (Brown University)</p>
+<h2 class="h5 mt-1 mb-1"><a href="https://www.math.brown.edu/reschwar/">Rich Schwartz</a> (Brown University)</h2>
 
 <ul>
 	<li><strong>Lecture 1 - The Optimal Paper Moebius Band:</strong> Monday, March 23, 2026 | 5-6pm | Wilson 402</li>
@@ -43,3 +43,6 @@ nav_parent: IMS
 <hr>
 
 <p>The Virginia Mathematics Lectures are supported by the University of Virginia Department of Mathematics and the Institute of Mathematical Sciences.</p>
+
+
+<p><a href="/img/IMS/Rich-Schwartz-poster.html">Event poster text (HTML)</a>.</p>

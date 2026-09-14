@@ -21,4 +21,4 @@ image-alt: Academical village
 
 <!--more-->
 
-### Congratulations!
+## Congratulations!

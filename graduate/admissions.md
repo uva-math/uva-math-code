@@ -29,7 +29,7 @@ tooltips: true
 
 ### Other useful links
 
-- [Application fee waiver information for U.S. citizens](https://graddiversity.virginia.edu/application-fee-waiver)
+- [Application fee waiver information for U.S. citizens](https://gradoutreach.virginia.edu/application-fee-waiver)
 - [Graduate School requirements](https://graduate.as.virginia.edu/requirements)
  	<br/>Under the Fees tab on this page, there is additional information about automatic application fee waivers for citizens of certain countries.
 - [Graduate School deadlines](https://graduate.as.virginia.edu/deadlines)

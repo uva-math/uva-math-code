@@ -9,36 +9,13 @@ nav_weight: 2
 tooltips: false
 ---
 
-<html>
-
-<style>
-details > summary {
-  display: list-item;
-  padding: 4px;
-  /*width: 200px;*/
-  background-color: #eeeeee;
-  border: none;
-  box-shadow: 1px 1px 2px #bbbbbb;
-  cursor: pointer;
-}
-details > p {
-  background-color: #eeeeee;
-  padding: 4px;
-  margin: 0;
-  box-shadow: 1px 1px 2px #bbbbbb;
-}
-</style>
-
-<body>
 
 
 
-<h2> Diagnostic Survey</h2>
-If you are<strong> an incoming student</strong> and/or <strong>have not had a chance to take our diagnostic survey</strong>, start  <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_43mWSGdLfcda5ue">here</a>. It will take 5 minutes (or less) of your time. 
+
+
+
+<h1>Diagnostic Survey</h1>
+If you are<strong> an incoming student</strong> and/or <strong>have not had a chance to take our diagnostic survey</strong>, take the <a href="https://virginia.az1.qualtrics.com/jfe/form/SV_43mWSGdLfcda5ue">math diagnostic survey</a>. It will take 5 minutes (or less) of your time.
 <br/><br/>
-Afterwards, proceed to <a href="https://math.virginia.edu/content/math-placement/#howDecidee">“How do I decide which Introductory Calculus course to start in?”</a> for next steps.
-
-
-</body>
-</html>
-
+Afterwards, proceed to <a href="https://math.virginia.edu/content/math-placement/#howDecide">“How do I decide which Introductory Calculus course to start in?”</a> for next steps.

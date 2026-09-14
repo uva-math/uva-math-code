@@ -1,0 +1,27 @@
+{% assign news_item = include.post %}
+{% assign news_heading = include.heading_level | default: 2 %}
+<h{{ news_heading }} class="mb-3 mt-3"><a href="{{ site.url }}{{ news_item.url }}" class="title-link">{{ news_item.title }}</a></h{{ news_heading }}>
+{% if news_item.event-date %}
+  <p>{% if news_item.multi-day-event %}Event start date:{% else %}Event date:{% endif %}
+    <time datetime="{{ news_item.event-date | date: '%Y-%m-%d' }}">{{ news_item.event-date | date: "%B %-d, %Y" }}</time>
+  </p>
+{% else %}
+  <p><time datetime="{{ news_item.date | date: '%Y-%m-%d' }}">{{ news_item.date | date: "%B %-d, %Y" }}</time></p>
+{% endif %}
+{% assign news_image_path = news_item.image | downcase %}
+{% assign news_image_alt = news_item.image-alt | downcase %}
+{% if news_item.image and news_item.image-alt %}
+  {% unless news_image_path contains 'poster' or news_image_alt contains 'poster' or news_item.image-address contains '.pdf' or news_item.categories contains 'virginia-math-bulletin' %}
+    <img src="{{ news_item.image | replace: '__SITE_URL__', site.url }}"
+         alt="{{ news_item.image-alt | escape }}"
+         style="max-width:100%;max-height:{{ include.image_height | default: 240 }}px;height:auto;width:auto"
+         class="mb-3" loading="lazy">
+  {% endunless %}
+{% endif %}
+{% assign news_subheading = news_heading | plus: 1 %}
+{% assign news_subsubheading = news_heading | plus: 2 %}
+{% capture subheading_open %}<h{{ news_subheading }}{% endcapture %}
+{% capture subheading_close %}</h{{ news_subheading }}>{% endcapture %}
+{% capture subsubheading_open %}<h{{ news_subsubheading }}{% endcapture %}
+{% capture subsubheading_close %}</h{{ news_subsubheading }}>{% endcapture %}
+<div class="news-excerpt">{{ news_item.excerpt | markdownify | replace: '<h3', '<news-subheading' | replace: '</h3>', '</news-subheading>' | replace: '<h2', subheading_open | replace: '</h2>', subheading_close | replace: '<news-subheading', subsubheading_open | replace: '</news-subheading>', subsubheading_close }}</div>

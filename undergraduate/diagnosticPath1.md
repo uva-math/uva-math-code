@@ -19,10 +19,9 @@ tooltips: true
 <li> <span class="bolded">MATH 1160:</span> Algebra, Number Systems and Number Theory </li>
 </ul>
 
- <span class="bolded"> <a href=" https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a></span> has more complete descriptions of each of these courses.
+ <span class="bolded"> <a href="https://hooslist.virginia.edu/CourseCatalog/Group/Mathematics">Hoo's List</a></span> has more complete descriptions of each of these courses.
  </div>
   <p></p>
  
-# Which course is the best place to start? 
+## Which course is the best place to start?
  <p>Simply pick the course that is most interesting to you and sign up!</p>
- 

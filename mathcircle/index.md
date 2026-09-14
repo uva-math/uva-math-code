@@ -8,9 +8,9 @@ nav_weight: 1011
 
 # UVA Math Circle
 
-<img src="{{site.url}}/img/MathCircle-collage.jpg" style="max-width:100%" class="mt-3" alt="Math circle collage">
 
-<div style="font-size: 12px">Photo courtesy of Molly Angevine / A&S Communications Coordinator</div>
+
+
 
 <br>
 
@@ -19,7 +19,7 @@ The Math Circle is a program for elementary and middle school students from Char
 - [Fall 2021 program](https://uva.theopenscholar.com/slava-krushkal/math-circle)
 - [Fall 2020 program](https://uva.theopenscholar.com/slava-krushkal/fall-2020-program)
 - [Fall 2019 program](https://uva.theopenscholar.com/slava-krushkal/fall-2019-program)
-- [Expanding the circle](http://as.virginia.edu/ampersand/expanding-circle), an overview of the Math Circle (<a href="MathCircle_article.html">HTML</a>) (<a href="MathCircle_article.pdf">PDF</a>)
+- [Reaching Out: Math Circles](MathCircle_article.html), an overview of the program.
 
 
 ## Contact

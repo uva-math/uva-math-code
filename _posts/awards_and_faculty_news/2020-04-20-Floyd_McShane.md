@@ -24,5 +24,5 @@ The E.J. McShane Prize prize is given annually to graduating math majors of outs
 
 The Edwin E. Floyd Prize prize is given annually to second- or third-year majors who show exceptional promise in mathematics.
 
-### Congratulations!
+## Congratulations!
 

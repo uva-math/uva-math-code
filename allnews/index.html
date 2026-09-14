@@ -12,19 +12,7 @@ nav_parent: News
     <div class="row my-col-12-zebra-twocols">
       {% for post in paginator.posts %}
       <div class="col-12 col-lg-6 my-bordered-news-snippets">
-        {% if post.image != null %} {% if post.image-address != null %}<a href="{{ post.image-address | replace: '__SITE_URL__', site.url }}">{% else %}<a href="{{site.url }}{{ post.url }}">{% endif %}<img src="{{ post.image | replace: '__SITE_URL__', site.url }}" alt="{{ post.image-alt }}" title="{{ post.image-alt }}" style="{% if post.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %}{% if post.image-tall %}max-height:300px;{% endif %}height:auto;width:auto;" class="mt-3"></a>
-        {% endif %}
-        <h3 class="mb-2 mt-3"><a href="{{site.url }}{{ post.url }}" style="color:inherit;">{{ post.title }}</a></h3>
-        {% if post.event-date != null and post.multi-day-event %}
-        <h6>Event start date: {{ post.event-date |  date: "%Y/%m/%d" }}</h6>{% endif %}
-        {% if post.event-date != null and post.multi-day-event != true %}
-        <h6>Event date: {{ post.event-date |  date: "%Y/%m/%d" }}</h6>{% endif %}
-        {% if post.event-date == null %}
-        <h6>{{ post.date |  date: "%Y/%m/%d" }}</h6>
-        {% endif %}
-
-        {{ post.excerpt | markdownify }}
-        <p><a class="btn btn-secondary h5" href="{{site.url }}{{ post.url }}" style="white-space: normal">{% if post.more-text == null %}View details{% else %}{{ post.more-text }}{% endif %} &raquo;</a></p>
+        {% include news_snippet.html post=post %}
       </div>
       <!--/span-->
       {% endfor %}
@@ -32,17 +20,17 @@ nav_parent: News
 
       <div class="col-lg-12 hidden-sm-down">
         {% if paginator.total_pages > 1 %}
-          <div class="btn-group btn-group mt-4">
+          <nav class="d-flex flex-wrap gap-2 mt-4" aria-label="News pages">
           {% for page in (1..paginator.total_pages) %}
               {% if page == paginator.page %}
-                <span class="btn btn-secondary h5"><em>{{ page }}</em></span>
+                <span class="btn btn-secondary h5" aria-current="page"><span class="visually-hidden">Page </span>{{ page }}</span>
               {% elsif page == 1 %}
-                <a class="btn btn-secondary list-group-item-action h5" href="{{site.url}}/allnews/">{{ page }}</a>
+                <a class="btn btn-secondary list-group-item-action h5" href="{{site.url}}/allnews/"><span class="visually-hidden">Page </span>{{ page }}</a>
               {% else %}
-                <a class="btn btn-secondary list-group-item-action h5" href="{{site.url}}/{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a>
+                <a class="btn btn-secondary list-group-item-action h5" href="{{site.url}}/{{ site.paginate_path | replace: ':num', page }}"><span class="visually-hidden">Page </span>{{ page }}</a>
               {% endif %}
             {% endfor %}
-            </div>
+            </nav>
             {%endif%}
       </div>
 
@@ -56,17 +44,17 @@ nav_parent: News
 
     <div class="list-group h5">
       {% if paginator.previous_page %}
-        <a class="list-group-item list-group-item-action" href="{{ paginator.previous_page_path }}">Previous</a>
+        <a class="list-group-item list-group-item-action" href="{{ paginator.previous_page_path }}">Previous news page</a>
       {% else %}
-        <li class="list-group-item disabled">Previous</li>
+        <span class="list-group-item disabled">Previous news page</span>
       {% endif %}
 
-      <li class="list-group-item active">Page: {{ paginator.page }} of {{ paginator.total_pages }}</li>
+      <p class="list-group-item active" aria-current="page">Page: {{ paginator.page }} of {{ paginator.total_pages }}</p>
 
       {% if paginator.next_page %}
-        <a class="list-group-item list-group-item-action" href="{{ paginator.next_page_path }}">Next</a>
+        <a class="list-group-item list-group-item-action" href="{{ paginator.next_page_path }}">Next news page</a>
       {% else %}
-        <li class="list-group-item disabled">Next</li>
+        <span class="list-group-item disabled">Next news page</span>
       {% endif %}
     </div>
   </div>

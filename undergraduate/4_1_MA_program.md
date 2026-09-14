@@ -11,11 +11,11 @@ nav_nesting: true
 
 <h1 class="mb-3">4+1 BA/MA Program</h1>
 
-**Information on the 5-year Master&#39;s Program:**
+## Information on the five-year master’s program
 
 The 4+1 program offers streamlined admission to the graduate school for the purpose of obtaining a master’s degree after 1 additional year at UVa. The program is “terminal,” meaning that you would not be eligible to continue toward a doctoral degree without going through the usual, full admission process.  Students who are able to complete the requirements for their bachelors degree in 3 years may be able to do the program in four years, as a 3+1 option.
 
-Requirements for the 4+1 program:
+## Requirements for the 4+1 program
 
 - Completion of 30-units of graduate-level (5000 and above) coursework, in addition to requirements for the undergraduate degree.
 - Passing either a masters thesis defense, a qualifying exam (standard PhD level general exam in Algebra, Topology, or Analysis), or an ad hoc exam (likely on selected material from one or more courses, subject to approval by two faculty members administering the exam and the Graduate Committee).

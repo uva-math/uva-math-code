@@ -10,32 +10,32 @@ nav_weight: 12
 
 <h1 class="mb-3">Undergraduate program policies</h1>
 
-**Note:** *The information and policies contained on this website is for informational purposes only. The Undergraduate Record and Graduate Record represent the official repository for academic program requirements. These publications may be found at [`https://records.ureg.virginia.edu/index.php`](https://records.ureg.virginia.edu/index.php).*
+**Note:** *The information and policies contained on this website is for informational purposes only. The Undergraduate Record and Graduate Record represent the official repository for academic program requirements. These publications may be found at [UVA Undergraduate and Graduate Records](https://records.ureg.virginia.edu/index.php).*
 
 ---
 
 <h2 class="mt-2 mb-3">Policies FAQ</h2>
 
-- If you are unsure about which UVa Mathematics course should be your first, consult the [Department's Placement Policy]({{site.url}}/content/math-placement/). If you have a question about mathematics placement, contact your [faculty advisor](https://college.as.virginia.edu/advisors).
+- If you are unsure about which UVa Mathematics course should be your first, consult the [Department's Placement Policy]({{site.url}}/content/math-placement/). If you have a question about mathematics placement, contact your [mathematics advisor]({{site.url}}/undergrad/contacts/).
 
-- How to set up an online advising schedule:
-[`https://advise.sites.virginia.edu`](https://advise.sites.virginia.edu)
+- How do I arrange an advising appointment?
+Contact the appropriate [mathematics advisor]({{site.url}}/undergrad/contacts/).
 
 - When can an undergraduate add more than 15 credit-hours?
-[`https://college.as.virginia.edu/advisors_adviseandenroll`](https://college.as.virginia.edu/advisors_adviseandenroll)
+See the University Registrar’s [current enrollment instructions and credit limits](https://registrar.virginia.edu/enrollment-information).
 
 - How do I compute my MATH GPA?
 To compute the MATH GPA, use the nine MATH courses that SIS shows were required for the
 major.
 
 - Can students in the 5 year BA/MT program participate in their 4th-year graduation?
-Yes, complete the [Participation in Final Exercises by BA Form]({{site.url}}/undergraduate/docs/Participation in Final Exercises by BA.pdf) ([HTML]({{site.url}}/undergraduate/docs/Participation in Final Exercises by BA.html)).
+Yes, complete the [Participation in Final Exercises by BA Form]({{site.url}}/undergraduate/docs/Participation%20in%20Final%20Exercises%20by%20BA.html) ([download Participation in Final Exercises by BA Form as PDF]({{site.url}}/undergraduate/docs/Participation%20in%20Final%20Exercises%20by%20BA.pdf)).
 
 - How to check on UVA courses?
-[`https://rabi.phys.virginia.edu/mySIS/CS2/index.php`](https://rabi.phys.virginia.edu/mySIS/CS2/index.php)
+Use the [HoosList course catalog and class schedules](https://hooslist.virginia.edu/).
 
 - What courses can I transfer to UVA?
-[`https://ascs8.eservices.virginia.edu/asEquivs`](https://ascs8.eservices.virginia.edu/asEquivs)
+Consult the [College transfer credit equivalency database](https://ascs8.eservices.virginia.edu/asEquivs).
 
 - How many courses must have a MATH prefix?
 At least 6 courses counted as major requirements must have a MATH prefix.
@@ -48,13 +48,13 @@ Yes. The current policy is given in the Undergraduate Record: "Up to two courses
 counted for another College major can also be counted for the major in mathematics. Three
 courses may be allowed if the other major is interdisciplinary." See also [Double counting courses in the math major and minor]({{site.url}}/content/double-counting-seas/)
 
-- Course action form:
-[`https://www.virginia.edu/registrar/courseactionform.html`](https://www.virginia.edu/registrar/courseactionform.html)
+- Enrollment changes and course action forms:
+See the [University Registrar’s forms](https://registrar.virginia.edu/forms) and [course registration guidance](https://advising.virginia.edu/course-registration).
 
-- [If I need precalculus...]({{ site.url }}/undergraduate/docs/If I need precalculus....pdf) ([HTML]({{ site.url }}/undergraduate/docs/If I need precalculus....html))
+- [If I need precalculus...]({{ site.url }}/undergraduate/docs/precalculus.html) ([download If I need precalculus... as PDF]({{ site.url }}/undergraduate/docs/precalculus.pdf))
 
-- [If I took the wrong calculus course....]({{ site.url }}/undergraduate/docs/If I took the wrong calculus course....pdf) ([HTML]({{ site.url }}/undergraduate/docs/If I took the wrong calculus course....html))
+- [If I took the wrong calculus course....]({{ site.url }}/undergraduate/docs/wrong-calculus-course.html) ([download If I took the wrong calculus course.... as PDF]({{ site.url }}/undergraduate/docs/wrong-calculus-course.pdf))
 
-- [Undergraduates taking graduate courses]({{site.url}}/undergraduate/docs/Undergraduates Taking Graduate Courses.pdf) ([HTML]({{site.url}}/undergraduate/docs/Undergraduates Taking Graduate Courses.html))
+- [Undergraduates taking graduate courses]({{site.url}}/undergraduate/docs/Undergraduates%20Taking%20Graduate%20Courses.html) ([download Undergraduates taking graduate courses as PDF]({{site.url}}/undergraduate/docs/Undergraduates%20Taking%20Graduate%20Courses.pdf))
 
-- [Reasons one might not get into PBK]({{site.url}}/undergraduate/docs/Reasons one did not get into PBK.pdf) ([HTML]({{site.url}}/undergraduate/docs/Reasons one did not get into PBK.html))
+- [Reasons one might not get into PBK]({{site.url}}/undergraduate/docs/Reasons%20one%20did%20not%20get%20into%20PBK.html) ([download Reasons one might not get into PBK as PDF]({{site.url}}/undergraduate/docs/Reasons%20one%20did%20not%20get%20into%20PBK.pdf))

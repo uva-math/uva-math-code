@@ -27,7 +27,7 @@ This seminar is a regional conference with a goal of bringing together the mid-A
  
 All talks will be held in Clark Hall 107. Free parking is available in the C1 parking lot behind Clark Hall, next to Kerchof Hall.
  
-##### Schedule
+## Schedule
 
 (coffee and pastries: 9-9:30)
  

@@ -4,7 +4,7 @@ layout: drp_page
 permalink: /drp/faq/
 ---
 
-<h2 class="mb-3">Frequently Asked Questions</h2>
+<h1 class="mb-3">Frequently Asked Questions</h1>
 
 **Do I have to be a math major to apply?**
 

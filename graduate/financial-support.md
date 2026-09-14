@@ -33,14 +33,14 @@ Some graduate students in topology are supported by the NSF RTG grant. See the [
 
 <p>The department solicits nominations from eligible students in the Spring, and department nominees are considered by a college-wide committee.</p>
 
-<p>For more information about this see&nbsp; <a href=" https://www.jeffersonscholars.org/jefferson-fellowship"><code class="highlighter-rouge"> https://www.jeffersonscholars.org/jefferson-fellowship</code></a>.</p>
+<p>For more information about this see&nbsp; <a href="https://www.jeffersonscholars.org/jefferson-fellowship"><code class="highlighter-rouge"> https://www.jeffersonscholars.org/jefferson-fellowship</code></a>.</p>
 
 
-<h1 class="mb-3">Funding opportunities for current graduate students</h1>
+<h2 class="mb-3">Funding opportunities for current graduate students</h2>
 
 ---
 
-<h2 class="mb-3">Internal DGS funding</h2>
+<h3 class="mb-3">Internal DGS funding</h3>
 
 We have money to support graduate student travel to conferences, workshops,
 and other institutions for work-related visits. Apply for funding with the host
@@ -61,15 +61,15 @@ Funding may sometimes be used by students for other purposes, such as poster pre
 
 ---
 
-<h2 class="mb-3">Outside Sources</h2>
+<h3 class="mb-3">Outside Sources</h3>
 
-### Conferences Organizers
+#### Conferences Organizers
 
 Many conferences have money to support the travel of younger mathematicians. If you are attending a conference and need funding, you should contact the organizers and ask if funding is available and what you need to do to procure it.
 
 
 
-### American Mathematical Society
+#### American Mathematical Society
 
 {%assign d = site.time | date: '%y' %}
 
@@ -78,7 +78,7 @@ The AMS has several kinds of travel grants{% if d <= '18' %}, ranging in scope f
 - <a href="http://www.ams.org/programs/travel-grants/travel-grants">AMS Travel Grants Main Page</a>
 
 
-### Association for Women in Mathematics
+#### Association for Women in Mathematics
 
 The AWM provides funding for women in mathematics to travel for conferences, mentoring opportunites, and workshops. More information can be found at their website:
 - <a href="https://awm-math.org/awards/awm-grants/travel-grants/">AWM Travel Grants</a>

@@ -20,7 +20,7 @@ The **Mathematics Department Diploma Ceremony** will be held on **Saturday, May 
 
 <!--more-->
 
-### FAQ
+## FAQ
 
 **Will I be included in the math graduation ceremony if math is my second major?**
 Yes, all students who are graduating with a major in mathematics, whether it is their primary or secondary major, are invited to participate in the Mathematics Department Diploma Ceremony.
@@ -32,13 +32,13 @@ For more information about university-wide graduation events, please visit the [
 
 
 
-### General Info
+## General Info
 - **Fair-Weather Location:** Pavilion I, Lower Garden (11:00 a.m. - 12:30 p.m.)
 - **Inclement-Weather Location:** Warner Hall, Room 209 (11:00 a.m. - 12:30 p.m.)
 - **Severe-Weather Location:** Warner Hall, Room 209 (11:00 a.m. - 12:30 p.m.)
 - **Mathematics Department Contact:** Katie Coleman; kgc8z@virginia.edu
 
-### Schedule of Events
+## Schedule of Events
 
 Light refreshments will be available at the venue before the ceremony.
 

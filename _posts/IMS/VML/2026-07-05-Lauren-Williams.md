@@ -14,7 +14,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<p class="h5 mt-1 mb-1"><a href="https://people.math.harvard.edu/~williams/">Lauren Williams</a> (Harvard University)</p>
+<h2 class="h5 mt-1 mb-1"><a href="https://people.math.harvard.edu/~williams/">Lauren Williams</a> (Harvard University)</h2>
 
 <ul>
 	<li><strong>Lecture 1 - First Proof: Mathematicians putting AI to the test:</strong> Tuesday, November 10, 2026 | TBA | TBA</li>

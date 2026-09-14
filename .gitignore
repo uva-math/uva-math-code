@@ -36,6 +36,8 @@ _site*
 _includes_backup*
 _layouts_backup*
 venv/
+node_modules/
+scripts/accessibility/.venv/
 __pycache__/
 *.py[cod]
 scripts/__pycache__

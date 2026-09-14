@@ -15,7 +15,7 @@ research_tags:
 
 ---
 
-### Research interests
+## Research interests
 
 - Group theory
 - Algebraic coding theory

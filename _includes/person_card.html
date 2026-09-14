@@ -1,26 +1,13 @@
 <div class="col-lg-4 col-md-6 mb-4">
-    <div class="card h-100 text-center">
-      <a href="{{ site.url }}/people/{{ include.person.UVA_id }}/">
-        {% if include.person.image %}
-          <img src="{{ include.person.image | replace: '__SITE_URL__', site.url }}" 
-               alt="{{ include.person.name }} {{ include.person.lastname }}" 
-               class="card-img-top img-fluid" 
-               style="max-height: 200px; object-fit: cover;" 
-               loading="lazy">
-        {% else %}
-          <img src="{{ site.url }}/img/people/Avatar_image.png" 
-               alt="{{ include.person.name }} {{ include.person.lastname }}" 
-               class="card-img-top img-fluid" 
-               style="max-height: 200px; object-fit: cover;" 
-               loading="lazy">
-        {% endif %}
-      </a>
-      <div class="card-body">
-          <a href="{{ site.url }}/people/{{ include.person.UVA_id }}/" class="text-decoration-none text-dark">
-            <span  class="nonupper-h5">{{ include.person.name }} {{ include.person.lastname }}</span>
-          </a>
-        <p class="card-text"><i>{{ include.person.position }}</i></p>
-      </div>
+  <div class="card h-100 text-center">
+    {% if include.person.image %}
+      <img src="{{ include.person.image | replace: '__SITE_URL__', site.url }}"
+           alt="{{ include.person.name }} {{ include.person.lastname }}"
+           class="card-img-top img-fluid" style="max-height:200px;object-fit:cover" loading="lazy">
+    {% endif %}
+    <div class="card-body">
+      <h3 class="nonupper-h5"><a href="{{ site.url }}/people/{{ include.person.UVA_id }}/">{{ include.person.name }} {{ include.person.lastname }}</a></h3>
+      <p class="card-text"><em>{{ include.person.position }}</em></p>
     </div>
   </div>
-  
+</div>

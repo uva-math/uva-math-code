@@ -39,7 +39,19 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 </ul> -->
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QNGNmmVGzDQ" title="Introduction to the Math Collaborative Learning Center" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://www.youtube.com/watch?v=QNGNmmVGzDQ">Watch the introduction to the Math Collaborative Learning Center on YouTube</a>.</p>
+
+<details>
+<summary>Transcript: Introduction to the Math Collaborative Learning Center</summary>
+<p>This transcript follows the video's published English captions.</p>
+<p>[Music playing]</p>
+<p><strong>Speaker 1:</strong> At the Math Collaborative Learning Center, we're trying to create a pleasant environment where we can all learn together. We know that math can be hard and sometimes even intimidating. So we're here to help.</p>
+<p>So whether you are with a group of your classmates or just by yourself, whether just this one homework problem that stumped you or you want to clarify a concept for a class, or even if you feel completely lost and you don't know where to start, stop by the MCLC and one of our consultants will be happy to help you.</p>
+<p><strong>Speaker 2:</strong> The MCLC is a fantastic resource for students. It's a great place to come in for a variety of reasons, whether you want to come in and just sit, work on your homework, and ask questions if you get stuck, or if you want to come in with a specific topic in mind in order to get help talking it through with one of the consultants.</p>
+<p>It's a really friendly and welcoming environment here. I mean, there are no bad questions. We get that math can be tricky, and we're here to help. Also, math builds upon itself. So a proactive approach is always best. Make sure to come in whenever you have questions so that we can help you stay on top of the material.</p>
+<p><strong>Speaker 1:</strong> We provide help with all Calculus 1 and Calculus 2 courses offered by the math department as well as some of our 2,000 and 3,000 level courses. No sign-up is necessary. Just check out our weekly schedule at the MCLC web page to find a convenient time and stop by. We'll be glad to see you.</p>
+<p>[Music playing]</p>
+</details>
 
 <br>
 
@@ -69,6 +81,5 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <!-- <p style="font-size:100%;"> <b>Math 1220:</b> Monday & Wednseday, 5-6 pm  (not held the week of the exam)</p> -->
 
 <br>
----
-
+<hr>
 <!-- Contact: {% include person_info_OH.html UVA_id="ed8bg"%} -->

@@ -16,10 +16,10 @@ nav_parent: IMS
 ---
 
 A Public Lecture by **Jacob Sherson**
-([Department of Physics and Astronomy, Aarhus University, Denmark](http://pure.au.dk/portal/en/persons/jacob-sherson(3d8e1590-c4fa-495b-81b4-588fe374b36c).html) and [ScienceAtHome](https://www.scienceathome.org))
+([Department of Physics and Astronomy, Aarhus University, Denmark](https://pure.au.dk/portal/en/persons/sherson%40mgmt.au.dk/) and ScienceAtHome)
 entitled
 
-##### Citizen science: benchmarking human and artificial intelligence
+## Citizen science: benchmarking human and artificial intelligence
 
 will be given on **April 19 at 7:00pm in Clark 108**
 
@@ -32,3 +32,6 @@ Artificial intelligence (AI) is a field is in rapid development and there is alm
 Finally, I will describe our work within the new global educational movement, Think Like a Scientist, in which we introduce citizen science games to the formal school setting at all levels as a means to make the world of research and knowledge generation available to the students from an early age.​
 
 
+
+
+<p><a href="/img/IMS/Sherson.html">Event poster text (HTML)</a>.</p>

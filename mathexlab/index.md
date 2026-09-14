@@ -10,18 +10,18 @@ nav_nesting: true
 nav_weight: 971
 ---
 
-<img src="{{site.url}}/mathexlab/images/Group3.jpeg" class="centerImage" style="cermax-width:100%;max-height:300px;height:auto;width:auto" class="mb-3" alt="Group Math Experimental Lab">
+<img src="{{site.url}}/mathexlab/images/Group3.jpeg" class="centerImage" style="cermax-width:100%;max-height:300px;height:auto;width:auto" class="mb-3" alt="Math Experimental Lab participants connecting strings across a circle of chairs">
 
 
-<h2 class="mb-3">Math Experimental Lab</h2>
+<h1 class="mb-3">Math Experimental Lab</h1>
 
-<h4 class="mb-3">(formerly Geometry Lab)</h4>
+<p class="mb-3">Formerly Geometry Lab</p>
 
 The Math Experimental Lab is a mentoring and research opportunity for students interested in experiencing Mathematics in a more hands-on way. Undergraduate students are paired with graduate students, postdocs, or faculty for a semester-long project. See the <a href="{{site.url}}/mathexlab/projects/">projects page</a> for examples of projects which have run in the past. During the semesters there are various opportunities for the different groups to interact and for presenting the ideas behind the project to a wider community, like high school students from the <a href="https://www.virginiaequitycenter.org/starr-hill-pathways">Starr Hill Pathways</a> program, other undergraduate students from the <a href="{{site.url}}/awm/">AWM Student Chapter</a> or <a href="{{site.url}}/undergraduate/mathclub_redirect/">Math Club</a>, and also the Charlottesville community at the local Farmers Market. The mentors suggest general projects or media to use, but the details of the work will be decided together with the students.
 
 This program allows students to learn and understand subjects not usually covered in the classes currently offered by the department. In addition, the students learn how to use hands-on activities to learn how to ask questions and start answering those questions which is exactly what research in mathematics is about, so for students interested in pursuing undergraduate research this is a great first step, together with the <a href="{{site.url}}/drp/">Directed Reading Program</a>. This program is also a great way to see if a math major is right for you.
 
-**Current projects**: Click <a href="{{site.url}}/mathexlab/current_projects/">here</a>
+<a href="{{site.url}}/mathexlab/current_projects/">Current Math Experimental Lab projects</a>
 
 <h2 class="mb-3">Requirements</h2>
 
@@ -29,7 +29,7 @@ The students are required to meet with their group and their mentor(s) once a we
 
 <h2 class="mb-3">Apply</h2>
 
-Applications to participate in the Math Experimental Lab open at the start of each semester. Click <a href="{{site.url}}/mathexlab/application/">here</a> for more information about applying.
+Applications to participate in the Math Experimental Lab open at the start of each semester. Read <a href="{{site.url}}/mathexlab/application/">how to apply to the Math Experimental Lab</a>.
 
 <h2 class="mb-3">Got Questions?</h2>
 
@@ -38,6 +38,6 @@ See the <a href="{{site.url}}/mathexlab/faq/">FAQ page</a> for more details abou
 
 <h2 class="mb-3">Other labs</h2>
 
-*   [https://geometrylabs.net/](https://geometrylabs.net/)
+*   [Geometry Labs United](https://geometrylabs.net/)
 
-<img src="{{site.url}}/mathexlab/images/Group2.JPG" class="centerImage" style="cermax-width:100%;max-height:300px;height:auto;width:auto" class="mb-3" alt="Group2 Math Experimental Lab">
+<img src="{{site.url}}/mathexlab/images/Group2.JPG" class="centerImage" style="cermax-width:100%;max-height:300px;height:auto;width:auto" class="mb-3" alt="Math Experimental Lab group beside its activity table at a farmers market">

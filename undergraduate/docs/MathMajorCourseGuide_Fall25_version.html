@@ -1,99 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UVA Math Courses</title>
-    <style>
-        body {
-            font-family: "Times New Roman", serif;
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-            line-height: 1.6;
-        }
-        h1 {
-            text-align: center;
-            font-variant: small-caps;
-            font-size: 1.5em;
-            margin-bottom: 30px;
-        }
-        h2 {
-            font-variant: small-caps;
-            font-size: 1.2em;
-            margin-top: 40px;
-            margin-bottom: 20px;
-        }
-        h3 {
-            font-size: 1.1em;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            text-align: center;
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 20px 0;
-        }
-        td, th {
-            border: 1px solid black;
-            padding: 8px 12px;
-            text-align: left;
-        }
-        th {
-            background-color: #f0f0f0;
-        }
-        .course-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin: 30px 0;
-        }
-        .course-section h3 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .course-table {
-            border: 1px solid black;
-            padding: 20px;
-        }
-        .course-row {
-            display: flex;
-            justify-content: space-between;
-            margin: 5px 0;
-        }
-        .course-code {
-            font-weight: normal;
-        }
-        .course-name {
-            flex: 1;
-            margin: 0 10px;
-        }
-        .course-schedule {
-            text-align: right;
-            min-width: 60px;
-        }
-        ul {
-            margin: 10px 0;
-        }
-        li {
-            margin: 8px 0;
-        }
-        .prereq-table {
-            font-size: 0.95em;
-        }
-        .prereq-table td, .prereq-table th {
-            text-align: center;
-            padding: 6px 8px;
-        }
-        .prereq-table th {
-            font-weight: bold;
-        }
-    </style>
-</head>
-<body>
+---
+layout: document_page
+permalink: "/undergraduate/docs/MathMajorCourseGuide_Fall25_version.html"
+title: "UVA Math Courses"
+---
 
-<h1>1. UVA Math courses sorted by subject</h1>
+{% raw %}
+
+<h1>UVA Math Courses</h1>
+<h2>1. UVA Math courses sorted by subject</h2>
 
 <p>The tables below list UVA math courses sorted by subject that have been offered in the last 2 years. FS next to a course means that the course is offered every semester, F means every fall and S means every spring. For the remaining courses the table indicates the next planned offering if known. The courses listed as TBD are typically offered once every 2 years, but the exact schedule depends on the interests of the students and instructor availability. Further information about the next offering for these courses will likely be available by January 2026.</p>
 
@@ -285,7 +199,7 @@
     </div>
 </div>
 
-<h1>2. Tables of prerequisites</h1>
+<h2>2. Tables of prerequisites</h2>
 
 <p>This section describes the prerequisite relations between different math classes and contains additional comments that should help you choose a suitable order in which to take the classes.</p>
 
@@ -306,7 +220,10 @@
     <li><strong>Math 3000 Transition to Higher Mathematics</strong> is an introduction to proofs class. While it is not an official prerequisite for any other math class, students without prior experience constructing rigorous proofs are encouraged to take Math 3000 before Math 3310, 3354 and any 4000+ level math classes. It is generally expected that students take Math 3000 at the same time or right after Math 2310, but the course is in no way dependent on the material from 1310, 1320 or 2310.</li>
 </ul>
 
+<p id="course-table-scroll-help">These tables can scroll horizontally. Focus a table and use the left and right arrow keys to see additional columns.</p>
+<div class="table-responsive" role="region" tabindex="0" aria-label="Algebra prerequisite table" aria-describedby="course-table-scroll-help">
 <table class="prereq-table">
+<caption>Algebra prerequisite relationships</caption>
     <thead>
     <tr>
         <th scope="col">Algebra</th>
@@ -321,7 +238,7 @@
     </thead>
     <tbody>
     <tr>
-        <td>3351</td>
+        <th scope="row">3351</th>
         <td></td>
         <td>2</td>
         <td></td>
@@ -331,7 +248,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>3354</td>
+        <th scope="row">3354</th>
         <td></td>
         <td>2</td>
         <td></td>
@@ -341,7 +258,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4040</td>
+        <th scope="row">4040</th>
         <td>*</td>
         <td>2</td>
         <td>1</td>
@@ -351,7 +268,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4452</td>
+        <th scope="row">4452</th>
         <td></td>
         <td></td>
         <td></td>
@@ -361,7 +278,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4651</td>
+        <th scope="row">4651</th>
         <td>*</td>
         <td></td>
         <td></td>
@@ -371,7 +288,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4652</td>
+        <th scope="row">4652</th>
         <td></td>
         <td></td>
         <td></td>
@@ -381,7 +298,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4660</td>
+        <th scope="row">4660</th>
         <td></td>
         <td></td>
         <td></td>
@@ -391,7 +308,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>5653</td>
+        <th scope="row">5653</th>
         <td></td>
         <td></td>
         <td></td>
@@ -401,7 +318,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>5657</td>
+        <th scope="row">5657</th>
         <td></td>
         <td></td>
         <td></td>
@@ -412,8 +329,11 @@
     </tr>
     </tbody>
 </table>
+</div>
 
+<div class="table-responsive" role="region" tabindex="0" aria-label="Analysis/Prob prerequisite table" aria-describedby="course-table-scroll-help">
 <table class="prereq-table">
+<caption>Analysis/Prob prerequisite relationships</caption>
     <thead>
     <tr>
         <th scope="col">Analysis/Prob</th>
@@ -432,7 +352,7 @@
     </thead>
     <tbody>
     <tr>
-        <td>3100</td>
+        <th scope="row">3100</th>
         <td></td>
         <td>2</td>
         <td>2</td>
@@ -446,7 +366,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>3250</td>
+        <th scope="row">3250</th>
         <td></td>
         <td>2</td>
         <td>2</td>
@@ -460,7 +380,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>3310</td>
+        <th scope="row">3310</th>
         <td></td>
         <td>2</td>
         <td>2</td>
@@ -474,7 +394,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>3340</td>
+        <th scope="row">3340</th>
         <td></td>
         <td>2</td>
         <td>2</td>
@@ -488,7 +408,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4110</td>
+        <th scope="row">4110</th>
         <td></td>
         <td></td>
         <td></td>
@@ -502,7 +422,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4140</td>
+        <th scope="row">4140</th>
         <td>*</td>
         <td></td>
         <td></td>
@@ -516,7 +436,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4220</td>
+        <th scope="row">4220</th>
         <td></td>
         <td></td>
         <td></td>
@@ -530,7 +450,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4250</td>
+        <th scope="row">4250</th>
         <td></td>
         <td></td>
         <td></td>
@@ -544,7 +464,7 @@
         <td>1</td>
     </tr>
     <tr>
-        <td>4300</td>
+        <th scope="row">4300</th>
         <td></td>
         <td>2</td>
         <td>2</td>
@@ -558,7 +478,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4310</td>
+        <th scope="row">4310</th>
         <td></td>
         <td></td>
         <td></td>
@@ -573,8 +493,11 @@
     </tr>
     </tbody>
 </table>
+</div>
 
+<div class="table-responsive" role="region" tabindex="0" aria-label="Geom/Top prerequisite table" aria-describedby="course-table-scroll-help">
 <table class="prereq-table">
+<caption>Geom/Top prerequisite relationships</caption>
     <thead>
     <tr>
         <th scope="col">Geom/Top</th>
@@ -588,7 +511,7 @@
     </thead>
     <tbody>
     <tr>
-        <td>4330</td>
+        <th scope="row">4330</th>
         <td>2</td>
         <td></td>
         <td>2</td>
@@ -597,7 +520,7 @@
         <td>2-</td>
     </tr>
     <tr>
-        <td>4720</td>
+        <th scope="row">4720</th>
         <td>2</td>
         <td>2</td>
         <td>2-</td>
@@ -606,7 +529,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4750</td>
+        <th scope="row">4750</th>
         <td>2</td>
         <td></td>
         <td></td>
@@ -615,7 +538,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>4770</td>
+        <th scope="row">4770</th>
         <td>2</td>
         <td></td>
         <td>2</td>
@@ -624,7 +547,7 @@
         <td>1</td>
     </tr>
     <tr>
-        <td>5700</td>
+        <th scope="row">5700</th>
         <td>2</td>
         <td></td>
         <td></td>
@@ -634,8 +557,11 @@
     </tr>
     </tbody>
 </table>
+</div>
 
+<div class="table-responsive" role="region" tabindex="0" aria-label="Other courses prerequisite table" aria-describedby="course-table-scroll-help">
 <table class="prereq-table">
+<caption>Other courses prerequisite relationships</caption>
     <thead>
     <tr>
         <th scope="col">Other courses</th>
@@ -650,7 +576,7 @@
     </thead>
     <tbody>
     <tr>
-        <td>4559 Intro to Sequence Analysis</td>
+        <th scope="row">4559 Intro to Sequence Analysis</th>
         <td></td>
         <td></td>
         <td></td>
@@ -660,7 +586,7 @@
         <td>1</td>
     </tr>
     <tr>
-        <td>5080 Operations Research</td>
+        <th scope="row">5080 Operations Research</th>
         <td>*</td>
         <td>2</td>
         <td>2</td>
@@ -671,14 +597,13 @@
     </tr>
     </tbody>
 </table>
+</div>
 
-<h1>3. Some additional comments</h1>
+<h2>3. Some additional comments</h2>
 
 <ul>
     <li><strong>Math 2315/3315 Advanced Calculus and Linear Algebra I/II</strong> is a two semester sequence which covers the majority of content from 2310 (Calc III), 3250 (differential equations) and 3351 (elementary linear algebra) and some additional topics from real analysis, set theory and combinatorics.</li>
 
     <li><strong>Math 4840 Introduction to Mathematical Research</strong>. The mathematical content discussed in this course (as well as the exact course format) varies from year to year. The subjects covered in recent years include Number Theory, Knot Theory, Permutation Groups, Combinatorics/Representation Theory and Geometric Group Theory, and sometimes the course does not concentrate on a particular area of mathematics. There are no strict prerequisites for this class, and the expectations about the background vary from year to year. Students are encouraged to contact the instructor as soon as possible if they are not sure they have adequate background for the class.</li>
 </ul>
-
-</body>
-</html>
+{% endraw %}

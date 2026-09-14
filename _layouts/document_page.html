@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>{{ page.title | escape }} | UVA Mathematics</title>
+  {% include header.html %}
+  <link rel="stylesheet" href="{{ site.url }}/css/documents.css">
+  <script src="{{ site.url }}/assets/js/document-forms.js" defer></script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  {% include top_brand.html %}
+  {% include navbar.html %}
+  <main id="main-content" class="container document-content" tabindex="-1">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+  {% include bootjs %}
+  {% include UVA_fonts.html %}
+</body>
+</html>

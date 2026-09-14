@@ -9,7 +9,7 @@ nav_weight: 200
 
 <h1 class="mb-3">Graduate forms and links</h1>
 
-- For more about graduate life at the University, see [`https://gradstudies.virginia.edu/grad-guide`](https://gradstudies.virginia.edu/grad-guide)
+- For more about graduate life at the University, see [UVA Graduate Guide](https://gradstudies.virginia.edu/grad-guide)
 
 - [Oral Examination form]({{site.url}}/graduate/docs/oral_exam_form.html) &bull; ([PDF for printing]({{site.url}}/graduate/docs/oral_exam_form.pdf))
 

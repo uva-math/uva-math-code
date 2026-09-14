@@ -6,9 +6,9 @@ redirect_from:
   - /geolab/projects/
 ---
 
-<h2 class="mb-3">Past Projects</h2>
+<h1 class="mb-3">Past Projects</h1>
 
-### Spring 2026
+## Spring 2026
 
 + Random surfaces and random permutations
     - Mentor: Leonid Petrov
@@ -21,7 +21,7 @@ redirect_from:
     - Mentees: Annie von Dohlen, Jackson Coleman, Jack Dunn, Owen Chanana, Eleanor Cheng, Hoda Vohra, Emma Cucca
     - Description: Straightedge and compass constructions are incredibly old, dating back over 2000 years. They consist of the construction of lengths, angles, and other geometric figures using only an idealized unmarked straightedge and a compass. It is well known that one can construct regular hexagons, bisect angles, and construct square roots of lengths, among other figures. However, there are limitations to the kinds of operations that can be performed using only a straightedge and compass. In this project, we will learn the basic constructions and explore their limitations through a surprising connection with field theory, a branch of mathematics developed in the 18th and 19th centuries and therefore relatively very recent when compared to these ancient geometric methods.
 
-### Fall 2025
+## Fall 2025
 
 + Differential Geometry and the Shape of Data
     - Mentors: Bakhyt Aitzhanova and Josh Turner
@@ -38,7 +38,7 @@ redirect_from:
     - Mentees: Yona	Sankar, Ewan	Speicher, Carter	Herman, Abel	Lynerd
     - Description: Discrete dynamics studies the behavior of functions as we iterate them. For instance, if f(x)=x+2, and we let f^n(x) denote f(f(f(...f(x)))) (where we've iterated f n-many times) then, for every fixed x, f^n(x) approaches infinity, as n increases. If f(x)=x^2, then f^n(x) approaches 0 for -1<x<1 and it approaches infinity for x<-1 and x>1. When x=-1 or 1, f^n(x)=1. We will study the behavior of f^n for more complicated functions. We may also explore some complex dynamics where we see fractals arise.
       
-### Spring 2025
+## Spring 2025
 
 + Computer graphics and Robotics
     - Mentors: Bakhyt Aitzhanova
@@ -55,7 +55,7 @@ redirect_from:
     - Mentees: Yunjie Tong Annie, Rachel Earle, Ari Escandon, Grayson Gemmell, George Li, Kate Peevey, Pierce Tan. 
     - Description: The Zome toolkit makes it easy to build toy models of polyhedra, 3 dimensional solid shapes like cubes and pyramids built out of polygons on the outside. Using the Zome pieces, we can show why there are only 5 polyhedra whose faces are all the same shape, and also why in the fourth dimension there are only 6 shapes with the same kind of property. We will explor the geometry of shapes we can build using Zome, such as angles, counting faces of solid shapes, symmetries, knots, and/or many other possibilities.
 
-### Fall 2024
+## Fall 2024
 
 + Computer graphics and Robotics
     - Mentor: Bakhyt Aitzhanova
@@ -78,7 +78,7 @@ redirect_from:
     - Mentees: Maya Clifford, Kyla Fish, Justin Gu, Wenwan Xu.
     - Description: The Zome toolkit makes it easy to build toy models of polyhedra, 3 dimensional solid shapes like cubes and pyramids built out of polygons on the outside. Using the Zome pieces, we can show why there are only 5 polyhedra whose faces are all the same shape, and also why in the fourth dimension there are only 6 shapes with the same kind of property. We explored the geometry of shapes we can build using Zome, such as angles, counting faces of solid shapes, symmetries, knots, and/or many other possibilities.
 
-### Spring 2024
+## Spring 2024
 
 + Knots: Spirographs, Wire, Clay
     - Mentors: Sarah Blackwell, Jiajun Yan
@@ -101,7 +101,7 @@ redirect_from:
     - Mentees: Kai Garcia-Lorincz, Mitansh Kagalwala, Ridge Redding, Matthew Schlueter, Anna Tu
     - Description: We explored algorithms in computational geometry including convex hulls, Voronoi diagrams, and Delauney triangulations and coded them in Python. Students undertook individual capstone projects that included topics such as orthogonal range searching, line-segment intersection, Page rank, and hyperbolic convex hulls. We also had one final project to explore Djistraka’s algorithm.
 
-### Fall 2023
+## Fall 2023
 
 + Spirographs
     - Mentors: Sarah Blackwell, Zivile Puospekaite
@@ -125,7 +125,7 @@ redirect_from:
     - Description: We explored various models of the hyperbolic plane and isometries between them using wire constructions and string.
 
 
-### Spring 2023
+## Spring 2023
 
 + <a href="https://github.com/geolab-UVA/geolab-UVA-Spring2023">Spring 2023 GitHub Repository</a>
 
@@ -145,7 +145,7 @@ redirect_from:
     - Description: We used specialized software to design models for 3D printing. This included several platonic solids, fractal-like objects, and some objects from hyperbolic geometry such as pleated surfaces and hyperbolic polyhedra.
 
 
-### Fall 2022
+## Fall 2022
 
 + Crochet
     - Mentors: Valentina Zapata Castro

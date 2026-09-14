@@ -13,7 +13,7 @@ nav_weight: 103
 
 ## Overview
 
-The "posts" mechanism powers all regularly updated items except seminar talks (those a powered by google calendars, see [here]({{site.url}}/doc/seminars/) for details). Examples of these include:
+The "posts" mechanism powers all regularly updated items except seminar talks (those a powered by google calendars, see [Seminar page documentation]({{site.url}}/doc/seminars/) for details). Examples of these include:
 
 - Event announcements (such as graduation)
 - Conference announcements
@@ -181,7 +181,7 @@ says simply "View details".
 
 This variable is specific to the IMS lectures (and typically should not be used for any other posts).
 It is used to highlight the IMS navigation bar item which clearly corresponds to the IMS lectures.
-See [here]({{site.url}}/doc/static/) for details on how pages interact with the navigation bar.
+See [Static page documentation]({{site.url}}/doc/static/) for details on how pages interact with the navigation bar.
 
 <span class="nonupper-h5">variables related to post image</span>
 
@@ -270,28 +270,28 @@ Again, even if a post does not have category `news` it will be displayed in the 
 page below if it has a suitable category.
 To remove a post from the website set the configuration variable `published: false`.
 
-##### [IMS lectures]({{site.url}}/ims/lectures/)
+#### [IMS lectures]({{site.url}}/ims/lectures/)
 
 This page has some general information on the IMS Virginia Mathematics Lectures,
 and also an archive of all the IMS lectures posts.
 Posts having category `virginia-mathematics-lectures` appear there.
 
-##### [Virginia math Bulletin]({{site.url}}/newsletter/)
+#### [Virginia math Bulletin]({{site.url}}/newsletter/)
 
 This page collects issues of Virginia Math Bulletin.
 Posts having category `virginia-math-bulletin` appear there.
 
-##### [Awards]({{site.url}}/awards/)
+#### [Awards]({{site.url}}/awards/)
 
 This page collects information on awards in the department (both faculty and student).
 Posts having category `awards` appear there.
 
-##### [Conferences]({{site.url}}/conferences/)
+#### [Conferences]({{site.url}}/conferences/)
 
 This page collects conference announcements.
 Posts having category `conferences` appear there.
 
-##### [Job opportunities]({{site.url}}/job-opportunities/)
+#### [Job opportunities]({{site.url}}/job-opportunities/)
 
 This page collects postings of job opportunities.
 Posts having category `jobs` appear there.

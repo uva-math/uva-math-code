@@ -17,8 +17,8 @@ The Institute of Mathematical Science (IMS) will bring together--in a centralize
 ---
 
 <ul>
-    <li><h3><a href="{{site.url}}/ims/lectures/">VIRGINIA MATHEMATICS LECTURES</a></h3></li>
-    <li><h3><a href="{{site.url}}/ims/special-events/">IMS SPECIAL EVENTS</a></h3></li>
+    <li><h2><a href="{{site.url}}/ims/lectures/">VIRGINIA MATHEMATICS LECTURES</a></h2></li>
+    <li><h2><a href="{{site.url}}/ims/special-events/">IMS SPECIAL EVENTS</a></h2></li>
 </ul>
 
 <img src="{{site.url}}/img/Routunda.jpg" class="clear-right" style="max-width:45%; padding:20px" alt="Rotunda">

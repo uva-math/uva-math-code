@@ -22,8 +22,10 @@ The Department of Mathematics hosted an online diploma ceremony on May 16.
   <li>
     Math diploma ceremonies recordings:
 <br>
-<iframe width="400" height="250" src="https://www.youtube-nocookie.com/embed/fuQ4-p05kGM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><a href="https://www.youtube.com/watch?v=fuQ4-p05kGM">Watch the 2020 mathematics diploma ceremony, recording 1 on YouTube</a>.</p>
 
-<iframe width="400" height="250" src="https://www.youtube-nocookie.com/embed/EPfyJ1DuQpk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+<p><a href="https://www.youtube.com/watch?v=EPfyJ1DuQpk">Watch the 2020 mathematics diploma ceremony, recording 2 on YouTube</a>.</p>
 </li>
 </ul>
+
+Complete ceremony program, graduates and awards: [HTML](/img/news_events/2020ceremony_program.html) | [PDF](/img/news_events/2020ceremony_program.pdf).

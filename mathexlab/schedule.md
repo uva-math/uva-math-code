@@ -6,9 +6,9 @@ redirect_from:
   - /geolab/schedule/
 ---
 
-<h2 class="mb-3">Schedule</h2>
+<h1 class="mb-3">Schedule</h1>
 
-### Fall 2026
+## Fall 2026
 
 **The Lab is not running in Fall 2026.** It will return in Spring 2027: applications will open in December, and the meeting dates will be posted here once they are set. Each semester the lab holds an introductory group meeting, a visit from the Starr Hill Pathways program, and final group presentations.
 

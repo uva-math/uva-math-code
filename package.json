@@ -1,0 +1,11 @@
+{
+  "name": "uva-mathematics-accessibility-checks",
+  "private": true,
+  "scripts": {
+    "accessibility:browser": "node scripts/audit_browser.cjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.11.1",
+    "playwright": "1.58.2"
+  }
+}

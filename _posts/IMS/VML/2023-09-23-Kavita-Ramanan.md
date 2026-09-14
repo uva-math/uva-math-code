@@ -15,7 +15,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<p class="h5 mt-1 mb-1"><a href="https://www.brown.edu/academics/applied-mathematics/faculty/kavita-ramanan/home">Kavita Ramanan</a> (Brown University) - Tales of high-dimensional distributions</p>
+<h2 class="h5 mt-1 mb-1"><a href="https://www.brown.edu/academics/applied-mathematics/faculty/kavita-ramanan/home">Kavita Ramanan</a> (Brown University) - Tales of high-dimensional distributions</h2>
 
 Though they have a common thread, the three lectures will be self-contained, and can mostly be followed independently of each other.
 
@@ -40,3 +40,6 @@ Though they have a common thread, the three lectures will be self-contained, and
 <p><strong>Date:</strong> November 15 | 5-6pm<br>
 <strong>Location:</strong> Wilson 402<br>
 <strong>Abstract:</strong> Interacting particle systems consist of collections of stochastically evolving particles indexed by the vertices of a graph, where each particle’s state depends directly only on the states of neighboring vertices in the graph. Such systems model a wide range of physical phenomena including magnetism, the spread of diseases and information, neuronal spiking and opinion dynamics. An important goal is the characterization of both typical and atypical (or large deviations) behaviour of macroscopic quantities, captured by empirical measures, of these systems as the number of vertices goes to infinity. While classical work has mostly focused on the case when the underlying graph is dense, where mean-field theory is applicable, most real-world networks are sparse. We describe recent developments in the sparse setting, including a generalization of the classical Sanov theorem from large deviations theory to the setting of marked unimodular random graphs.</p>
+
+
+<p><a href="/img/IMS/Kavita-Ramanan-poster-pdf.html">Event poster text (HTML)</a>.</p>

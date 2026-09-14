@@ -17,9 +17,9 @@ more-text: Abstract
 nav_parent: IMS
 ---
 
-<h5 class="mt-1 mb-4"><a href="http://www.math.columbia.edu/~okounkov/">Andrei Okounkov</a> (Columbia University)</h5>
+<h2 class="mt-1 mb-4"><a href="http://www.math.columbia.edu/~okounkov/">Andrei Okounkov</a> (Columbia University)</h2>
 
-### New worlds for Lie theory
+## New worlds for Lie theory
 
 - Lecture 1 - October 22, 5-6pm, Nau 101
 - Lecture 2 - October 23, 5-6pm, Nau 101
@@ -39,3 +39,6 @@ Unfamiliar terminology notwithstanding, there are good applications to very clas
 
 
 
+
+
+<p><a href="/img/IMS/Okounkov_poster3.html">Event poster text (HTML)</a>.</p>

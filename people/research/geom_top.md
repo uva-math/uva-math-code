@@ -9,4 +9,4 @@ title: Geometry and Topology Research
 {% include research_area_page.html %}
 
 
-<h3 class="mt-5">&bull; <a href="{{site.url}}/geomtop/">Geometry and Topology group and RTG page</a></h3>
+<ul class="mt-5"><li><a href="{{site.url}}/geomtop/">Geometry and Topology group and RTG page</a></li></ul>

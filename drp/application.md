@@ -4,7 +4,7 @@ layout: drp_page
 permalink: /drp/application/
 ---
 
-<h2 class="mb-3">Mentee Application</h2>
+<h1 class="mb-3">Mentee Application</h1>
 
 Any undergraduate student who has completed Calculus III (Math 2310 or equivalent)
 may apply. Applications are not limited to math majors. The evaluation
@@ -24,4 +24,4 @@ out the following application.
 
 **Applications Due: September 3rd, 2026, 11:59pm EST.**
 
-Here is our set of Mentor Guidelines, where you can read the specifics about the role. [Mentor Guidelines]({{ site.url }}/drp/Mentor_Guidelines.pdf) ([HTML]({{ site.url }}/drp/Mentor_Guidelines.html))
+Here is our set of Mentor Guidelines, where you can read the specifics about the role. [Mentor Guidelines]({{ site.url }}/drp/Mentor_Guidelines.pdf) ([DRP mentor guidelines (HTML)]({{ site.url }}/drp/Mentor_Guidelines.html))

@@ -87,7 +87,7 @@ def print_report(filepath, passed, report):
     print()
 
     # Check 1: WCAG 2.1 Level AA
-    print("1. WCAG 2.1 LEVEL AA COMPLIANCE")
+    print("1. AUTOMATED ACCESSIBILITY STRUCTURE CHECKS")
     if report['wcag']['passed']:
         print("   ✅ PASS")
     else:
@@ -145,21 +145,19 @@ def print_report(filepath, passed, report):
     print("OVERALL VERDICT")
     print("=" * 80)
     if passed:
-        print("✅ PRODUCTION READY - All checks passed")
-        print("✅ WCAG 2.1 Level AA compliant")
-        print("✅ ADA Title II & III compliant")
-        print("✅ Lawsuit risk: MINIMAL")
+        print("All implemented conversion checks passed.")
+        print("These checks do not certify WCAG conformance or legal compliance.")
+        print("Review content, keyboard behavior, visual presentation, and assistive technology manually.")
     else:
-        print("❌ NOT PRODUCTION READY - Fix violations before deployment")
-        print("⚠️  Legal compliance: AT RISK")
-        print("⚠️  Lawsuit risk: ELEVATED")
+        print("❌ Automated checks found issues requiring review")
+        print("Review and resolve the findings above.")
     print()
 
 def main():
     if len(sys.argv) < 2:
         print("Usage: python3 validate_conversion.py <html_file>")
         print("\nValidates PDF to HTML conversions with comprehensive checks:")
-        print("  - WCAG 2.1 Level AA compliance")
+        print("  - Automated accessibility structure checks")
         print("  - Heading hierarchy")
         print("  - Links and images")
         print("  - MathML accessibility")

@@ -15,12 +15,12 @@ nav_nesting: true
     {% assign sorted_pages = site.pages | sort: "nav_weight" %}
     {% for p in sorted_pages %}
     {% if p.nav_parent == "Info" and p.nav_nesting %}
-    <li> <h3><a href="{{site.url}}{{p.url}}">{{p.nav_id}}</a></h3></li>
+    <li> <h2><a href="{{site.url}}{{p.url}}">{{p.nav_id}}</a></h2></li>
     {% endif %}
     {% endfor %}
     </ul>
   </div>
   <div class="col-md-3">
-    <img src="{{ site.url }}/img/people/Avatar_image.png" style="max-width:100%;max-height:150px;height:auto;width:auto;" class="hidden-sm-down" alt="UVA Mathematics Logo" title="UVA Mathematics Logo">
+    <img src="{{ site.url }}/img/people/Avatar_image.png" style="max-width:100%;max-height:150px;height:auto;width:auto;" class="hidden-sm-down" alt="UVA Mathematics Logo">
   </div>
 </div>

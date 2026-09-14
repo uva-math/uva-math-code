@@ -1,0 +1,20 @@
+---
+layout: static_page_no_right_menu
+title: Search UVA Mathematics
+permalink: /search/
+search_exclude: true
+---
+
+<h1>Search UVA Mathematics</h1>
+<form id="content-search" action="{{ site.url }}/search/" method="get" role="search" aria-label="Find pages and people">
+  <label for="content-search-query">Search pages, people, news, and documents</label>
+  <div class="input-group mb-3">
+    <input class="form-control" id="content-search-query" type="search" name="q" required aria-describedby="search-help">
+    <button class="btn btn-primary" type="submit">Search</button>
+  </div>
+</form>
+<p id="search-help">Enter a name, course number, or a few words. You can also browse the <a href="{{ site.url }}/sitemap/">complete site map</a>.</p>
+<p id="search-status" role="status" aria-live="polite" aria-atomic="true"></p>
+<ol id="search-results" class="search-results"></ol>
+<noscript><p>Search requires JavaScript. The <a href="{{ site.url }}/sitemap/">site map</a> lists the site's pages, people, news, and documents without JavaScript.</p></noscript>
+<script src="{{ site.url }}/assets/js/site-search.js" defer></script>

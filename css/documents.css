@@ -1,0 +1,67 @@
+/* Shared presentation for converted documents; the source retains native MathML. */
+.document-content { max-width: 72rem; overflow-wrap: anywhere; }
+.document-content :is(h1,h2,h3,h4,h5,h6) { text-transform: none; }
+.document-content :is(h2,h3,h4,h5,h6) { margin-top: 1.5em; }
+.document-content p { margin-block: 1em; }
+.document-content li { margin-block: .5em; }
+.document-content :is(img,svg) { max-width: 100%; height: auto; }
+.document-content :is(figure,.figure) { margin: 1.5rem 0; }
+.document-content figcaption { font-size: 1rem; margin-top: .5rem; }
+.document-content .figure-pair { display: flex; flex-wrap: wrap; gap: 1.5rem; }
+.document-content .figure-pair > * { flex: 1 1 18rem; min-width: 0; }
+.document-content table { border-collapse: collapse; margin-block: 1.5rem; max-width: 100%; }
+.document-content :is(th,td) { border: 1px solid var(--border-color); padding: .5rem; }
+.document-content th { text-align: start; }
+.document-content caption { color: var(--text-color); caption-side: top; font-weight: bold; }
+.document-content math[display="block"] { display: block; overflow-x: auto; padding-block: .5rem; }
+.document-content .flushright { text-align: right; }
+.document-content .center { text-align: center; }
+.document-content .footnotes { font-size: 1rem; border-top: 1px solid var(--border-color); }
+.document-content blockquote { border-inline-start: 3px solid var(--border-color); padding-inline-start: 1rem; }
+.document-content input:not([type="checkbox"]):not([type="radio"]) { max-width: 100%; }
+.document-print-value { display: none; }
+@media print {
+  .site-brand, body > nav, body > footer, .skip-link { display: none !important; }
+  .document-content { max-width: none; color: #000; background: #fff; color-scheme: light; }
+  .document-content :is(h1,h2,h3) { break-after: avoid; }
+  .document-content :is(p,li) { orphans: 3; widows: 3; }
+  .document-content :is(input,textarea,select,.form-control,.form-select) {
+    color: #000 !important;
+    background: #fff !important;
+    border-color: #000 !important;
+    -webkit-text-fill-color: #000 !important;
+  }
+  .document-content button { display: none; }
+  .document-content .document-print-source { display: none !important; }
+  .document-content .document-print-value {
+    display: block;
+    min-height: 1.8em;
+    padding: .35em;
+    border: 1px solid #000;
+    color: #000;
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+  }
+  .document-content .form-check-input {
+    float: none !important;
+    margin: 0 .35em 0 0 !important;
+    flex-shrink: 0;
+    appearance: auto !important;
+    -webkit-appearance: auto !important;
+    background-image: none !important;
+    accent-color: #000;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .document-content .form-check {
+    display: flex;
+    align-items: center;
+    min-height: 1.8em;
+    padding-left: 0;
+    break-inside: avoid;
+  }
+  html body .document-content input:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}

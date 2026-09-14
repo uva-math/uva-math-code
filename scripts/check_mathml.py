@@ -6,6 +6,7 @@ Checks for proper MathML elements, ARIA attributes, and semantics.
 
 import sys
 import re
+from html import unescape
 
 def check_mathml(filepath):
     """
@@ -42,17 +43,16 @@ def check_mathml(filepath):
         math_tag = math_match.group(0)
         math_content = math_match.group(1)
 
-        # Check 1: role="math"
+        # Native MathML has implicit math semantics; an explicit role is optional.
         if re.search(r'role="math"', math_tag):
             stats['with_role'] += 1
-        else:
-            issues.append(f"Math element #{i} missing role=\"math\"")
-
-        # Check 2: aria-label with LaTeX
+        # A raw TeX label must not override the structured mathematical content.
         if re.search(r'aria-label="[^"]+"', math_tag):
             stats['with_aria_label'] += 1
-        else:
-            issues.append(f"Math element #{i} missing aria-label")
+        label = re.search(r'aria-label="([^"]+)"', math_tag)
+        annotation = re.search(r'<annotation[^>]+encoding="application/x-tex"[^>]*>(.*?)</annotation>', math_content, re.DOTALL)
+        if label and annotation and unescape(label.group(1)).strip() == unescape(annotation.group(1)).strip():
+            issues.append(f"Math element #{i} has a raw TeX label overriding MathML")
 
         # Check 3: xmlns namespace
         if 'xmlns' not in math_tag:
@@ -79,19 +79,6 @@ def check_mathml(filepath):
             stats['with_annotation'] += 1
         else:
             warnings.append(f"Math element #{i} missing LaTeX annotation")
-
-    # Summary checks
-    if stats['with_role'] < stats['total_math']:
-        issues.append(
-            f"{stats['total_math'] - stats['with_role']}/{stats['total_math']} "
-            "math elements missing role=\"math\""
-        )
-
-    if stats['with_aria_label'] < stats['total_math']:
-        issues.append(
-            f"{stats['total_math'] - stats['with_aria_label']}/{stats['total_math']} "
-            "math elements missing aria-label"
-        )
 
     return (len(issues) == 0, issues, warnings, stats)
 

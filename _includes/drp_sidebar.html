@@ -1,16 +1,15 @@
 <nav aria-label="DRP program">
-{% assign sorted_pages = site.pages | sort: "nav_weight" %}
 
 
 <div class="list-group h5">
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/">Home</a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/application/">Apply Now</span></a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/projects/">Projects</span></a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/faq/">Frequently Asked Questions</span></a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/calendar/">Calendar</span></a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/committee/">Graduate Committee</span></a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/contact/">Contact Us</span></a>
-  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/otherdrp/">Other DRP Programs</span></a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/" {% if page.url == '/drp/' %}aria-current="page"{% endif %}>Directed Reading Program home</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/application/" {% if page.url == '/drp/application/' %}aria-current="page"{% endif %}>Apply Now</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/projects/" {% if page.url == '/drp/projects/' %}aria-current="page"{% endif %}>Projects</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/faq/" {% if page.url == '/drp/faq/' %}aria-current="page"{% endif %}>Frequently Asked Questions</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/calendar/" {% if page.url == '/drp/calendar/' %}aria-current="page"{% endif %}>Calendar</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/committee/" {% if page.url == '/drp/committee/' %}aria-current="page"{% endif %}>Graduate Committee</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/contact/" {% if page.url == '/drp/contact/' %}aria-current="page"{% endif %}>Contact Us</a>
+  <a class="list-group-item list-group-item-action" href="{{site.url}}/drp/otherdrp/" {% if page.url == '/drp/otherdrp/' %}aria-current="page"{% endif %}>Other DRP Programs</a>
 </div>
 
 <br class="hidden-sm-down"><br class="hidden-sm-down">
@@ -18,7 +17,7 @@
 
 {% if page.has_DRP_calendar %}
 
-<iframe src="https://calendar.google.com/calendar/embed?src=virginia.edu_9n2f4rpuqe828d6evcg97096n0%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" width="380" height="300" frameborder="0" scrolling="no" title="DRP Calendar"></iframe>
+<p><a href="https://calendar.google.com/calendar/embed?src=virginia.edu_9n2f4rpuqe828d6evcg97096n0%40group.calendar.google.com&amp;ctz=America%2FNew_York">Open the Directed Reading Program calendar on Google Calendar</a></p>
 
 {% endif %}
 

@@ -19,12 +19,13 @@ sitemap: false
     </p>
   </div>
 
-  <search aria-label="UVA Math arXiv search and filters">
+  <form id="uva-arxiv-search-form" role="search" aria-label="UVA Math arXiv search and filters">
+    <label for="uva-arxiv-search-input" class="form-label">Search UVA Math arXiv papers</label>
+    <p id="uva-arxiv-search-instructions">Search by author, title, or keyword. Open Search help for advanced filters. Press Escape in the search field to clear.</p>
     <div class="input-group mb-3">
-      <label for="uva-arxiv-search-input" class="visually-hidden">Search UVA Math arXiv papers</label>
-      <input type="text" id="uva-arxiv-search-input" class="form-control" placeholder="Search… au:Morse in:Advances cat:math.AG y:2024 (Esc to clear)" aria-label="Search UVA Math arXiv papers" autocomplete="off">
-      <button class="btn btn-outline-secondary" type="button" id="uva-arxiv-search-help-btn" aria-label="Search help" aria-expanded="false" title="Search syntax help">?</button>
-      <button class="btn btn-outline-secondary" type="button" id="uva-arxiv-search-clear" aria-label="Clear search and filters">Clear</button>
+      <input type="search" id="uva-arxiv-search-input" class="form-control" aria-describedby="uva-arxiv-search-instructions" autocomplete="off">
+      <button class="btn btn-secondary" type="button" id="uva-arxiv-search-help-btn" aria-expanded="false" aria-controls="uva-arxiv-search-help">Search help</button>
+      <button class="btn btn-secondary" type="button" id="uva-arxiv-search-clear" aria-label="Clear search and filters">Clear</button>
     </div>
 
     <div id="uva-arxiv-search-help" class="uva-arxiv-search-help" hidden>
@@ -38,33 +39,30 @@ sitemap: false
     </div>
 
     <div class="d-flex flex-wrap gap-2 mb-3 align-items-center">
-      <div id="uva-arxiv-date-filter" class="uva-arxiv-dropdown">
-        <button class="btn btn-sm btn-outline-secondary uva-arxiv-dropdown-btn" type="button" id="uva-arxiv-date-btn" aria-haspopup="true" aria-expanded="false">
-          <span id="uva-arxiv-date-label">All time</span> <span class="uva-arxiv-dropdown-arrow" aria-hidden="true">&#9662;</span>
-        </button>
-        <div class="uva-arxiv-dropdown-menu" id="uva-arxiv-date-menu" role="menu">
-          <button class="uva-arxiv-dropdown-item active" role="menuitem" data-date="all">All time</button>
-          <hr class="uva-arxiv-dropdown-divider">
-          <button class="uva-arxiv-dropdown-item" role="menuitem" data-date="this-week">This week</button>
-          <button class="uva-arxiv-dropdown-item" role="menuitem" data-date="last-week">Last week</button>
-          <button class="uva-arxiv-dropdown-item" role="menuitem" data-date="this-month">This month</button>
-          <button class="uva-arxiv-dropdown-item" role="menuitem" data-date="last-month">Last month</button>
-          <button class="uva-arxiv-dropdown-item" role="menuitem" data-date="this-year">This year</button>
-          <button class="uva-arxiv-dropdown-item" role="menuitem" data-date="last-year">Last year</button>
-          <hr class="uva-arxiv-dropdown-divider">
-          <div class="uva-arxiv-dropdown-custom" role="menuitem">
-            <span class="uva-arxiv-dropdown-custom-label">Custom year range</span>
-            <div class="uva-arxiv-dropdown-custom-inputs">
-              <input type="text" id="uva-arxiv-year-from" class="form-control form-control-sm" placeholder="From" maxlength="4" size="4" aria-label="From year">
-              <span>&ndash;</span>
-              <input type="text" id="uva-arxiv-year-to" class="form-control form-control-sm" placeholder="To" maxlength="4" size="4" aria-label="To year">
-              <button class="btn btn-sm btn-outline-primary" id="uva-arxiv-year-range-apply" type="button">Go</button>
-            </div>
-          </div>
-        </div>
+      <div>
+        <label for="uva-arxiv-date-select" class="form-label">Filter by date</label>
+        <select class="form-select" id="uva-arxiv-date-select">
+          <option value="all">All time</option>
+          <option value="this-week">This week</option>
+          <option value="last-week">Last week</option>
+          <option value="this-month">This month</option>
+          <option value="last-month">Last month</option>
+          <option value="this-year">This year</option>
+          <option value="last-year">Last year</option>
+          <option value="custom">Custom year range</option>
+        </select>
       </div>
+      <fieldset id="uva-arxiv-year-range" hidden>
+        <legend class="h5">Custom year range</legend>
+        <p id="uva-arxiv-year-error" role="alert" hidden></p>
+        <div class="d-flex flex-wrap gap-2 align-items-end">
+          <div><label for="uva-arxiv-year-from">From year</label><input type="number" id="uva-arxiv-year-from" class="form-control" min="1900" max="2099" inputmode="numeric"></div>
+          <div><label for="uva-arxiv-year-to">To year</label><input type="number" id="uva-arxiv-year-to" class="form-control" min="1900" max="2099" inputmode="numeric"></div>
+          <button class="btn btn-secondary" id="uva-arxiv-year-range-apply" type="button">Apply year range</button>
+        </div>
+      </fieldset>
 
-      <button id="uva-arxiv-cat-toggle" class="btn btn-sm btn-outline-secondary" type="button" aria-expanded="false" aria-controls="uva-arxiv-cat-panel">
+      <button id="uva-arxiv-cat-toggle" class="btn btn-sm btn-secondary" type="button" aria-expanded="false" aria-controls="uva-arxiv-cat-panel">
         <span id="uva-arxiv-cat-toggle-label">Filter by category</span>
       </button>
     </div>
@@ -72,9 +70,9 @@ sitemap: false
     <div id="uva-arxiv-cat-panel" class="mb-3" hidden>
       <div id="uva-arxiv-cat-buttons" class="d-flex flex-wrap gap-2" role="group" aria-label="Filter by arXiv category"></div>
     </div>
-  </search>
+  </form>
 
-  <div id="uva-arxiv-status" class="visually-hidden" role="status" aria-live="polite"></div>
+  <div id="uva-arxiv-status" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></div>
   <div id="uva-arxiv-loading" class="alert alert-info" role="status">Loading UVA Math arXiv data…</div>
 
   <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-2">
@@ -84,290 +82,65 @@ sitemap: false
 
   <ul id="uva-arxiv-list" class="uva-arxiv-list" style="list-style:none;padding-left:0" aria-label="UVA Math arXiv papers"></ul>
 
-  <div id="uva-arxiv-no-results" class="alert alert-info mt-4" role="alert" hidden>
+  <div id="uva-arxiv-no-results" class="alert alert-info mt-4" hidden>
     No results found. Try adjusting your search or filters.
   </div>
 
   <div class="text-center my-4">
-    <button type="button" id="uva-arxiv-load-more" class="btn btn-outline-secondary" hidden>Load more papers</button>
+    <button type="button" id="uva-arxiv-load-more" class="btn btn-secondary" hidden>Load more papers</button>
   </div>
 </div>
 
-<button class="uva-arxiv-back-top" id="uva-arxiv-back-top" aria-label="Back to top">&#9650;</button>
+<button type="button" class="btn btn-secondary uva-arxiv-back-top" id="uva-arxiv-back-top" >Back to search</button>
+
 
 <style>
   .uva-arxiv-month-header {
-    padding: 0.6em 6px 0.2em;
-    border-bottom: 2px solid #ccc;
-    margin-top: 0.5em;
+    padding: .6rem .4rem .2rem;
+    border-bottom: 2px solid var(--border-color, #767676);
+    margin-top: 1rem;
   }
-  .uva-arxiv-month-header h2 {
-    margin: 0;
-    font-size: 1.15em;
-    color: #002F6C;
-  }
-  .uva-arxiv-list li[data-id]:nth-child(odd) {
-    background-color: var(--bg-secondary, #f8f9fa);
-  }
+  .uva-arxiv-month-header h2 { margin: 0; font-size: 1.25rem; }
   .uva-arxiv-list li[data-id] {
-    border-bottom: 1px solid #e9ecef;
-    padding: 10px 8px;
+    border-bottom: 1px solid var(--border-color, #767676);
+    padding: 1rem .5rem;
   }
-  .uva-arxiv-entry {
-    display: flex;
-    gap: 1em;
-  }
-  .uva-arxiv-date-col {
-    flex-shrink: 0;
-    width: 7.5em;
-    font-weight: bold;
-    color: #222;
-    font-size: 0.95em;
-    padding-top: 1px;
-  }
-  a.uva-arxiv-id-label {
-    font-size: 0.78em;
-    font-weight: normal;
-    color: #767676;
-    text-decoration: underline;
-  }
-  a.uva-arxiv-id-label:hover { color: #b31b1b; }
+  .uva-arxiv-list li[data-id]:nth-child(odd) { background: var(--card-bg, #f8f9fa); }
+  .uva-arxiv-entry { display: flex; gap: 1rem; }
+  .uva-arxiv-date-col { flex: 0 0 10rem; font-size: 1rem; }
+  .uva-arxiv-id-label { overflow-wrap: anywhere; }
   .uva-arxiv-body { flex: 1; min-width: 0; }
-  .uva-arxiv-body strong { font-weight: 500; color: #111; }
-  .uva-arxiv-tags { margin-bottom: 0.15rem; }
-  .uva-arxiv-link-badge,
-  .uva-arxiv-cat-badge,
-  .uva-arxiv-person-badge {
-    color: #fff !important;
-    font-size: 0.75em;
-    font-weight: normal;
-    margin-right: 3px;
-    text-decoration: none !important;
-    border: 0;
-    vertical-align: middle;
+  .uva-arxiv-title { font-size: 1.2rem; text-transform: none; }
+  .uva-arxiv-tags, .uva-arxiv-people, .uva-arxiv-links {
+    display: flex; flex-wrap: wrap; gap: .4rem; margin: .5rem 0;
   }
-  .uva-arxiv-cat-badge { background-color: #495057; cursor: pointer; }
-  .uva-arxiv-cat-badge:hover { opacity: 0.82; }
-  .uva-arxiv-person-badge { background-color: #002F6C; cursor: pointer; }
-  .uva-arxiv-person-badge:hover { background-color: #001f49; }
+  .uva-arxiv-link-badge, .uva-arxiv-cat-badge, .uva-arxiv-person-badge {
+    font-size: 1rem; line-height: 1.5; font-weight: normal;
+    padding: .25rem .5rem; min-height: 24px;
+    color: #fff !important; background: #232d4b;
+    white-space: normal; text-align: left; overflow-wrap: anywhere;
+  }
+  .uva-arxiv-link-badge { text-decoration: underline !important; }
+  .uva-arxiv-cat-badge, button.uva-arxiv-link-badge { border: 1px solid currentColor; }
   .uva-arxiv-author-name {
-    border: 0;
-    padding: 0;
-    background: transparent;
-    color: inherit;
-    font-weight: 500;
-    cursor: pointer;
-  }
-  .uva-arxiv-author-name:hover { text-decoration: underline; color: #2A69A6; }
-  .uva-arxiv-link-badge { margin-left: 3px; }
-  .uva-arxiv-link-abs { background-color: #b31b1b; }
-  .uva-arxiv-link-pdf { background-color: #1a5276; }
-  .uva-arxiv-link-html { background-color: #0e7c86; }
-  .uva-arxiv-link-doi { background-color: #2e7d32; }
-  .uva-arxiv-link-journal {
-    background-color: #2e7d32;
-    max-width: 22em;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    cursor: pointer;
-  }
-  button.uva-arxiv-link-journal { border: 0; }
-  .uva-arxiv-title { cursor: pointer; }
-  .uva-arxiv-title:hover { text-decoration: underline; }
-  .uva-arxiv-title:focus-visible {
-    outline: 2px solid #e57200;
-    outline-offset: 2px;
-    border-radius: 2px;
-  }
-  .uva-arxiv-abstract-toggle {
-    cursor: pointer;
-    color: #1a5276;
+    font: inherit; min-height: 24px; border: 0; padding: 0 .15rem;
+    background: transparent; color: var(--link-color, #245d91);
     text-decoration: underline;
-    display: inline;
-    font-size: 0.9em;
   }
-  .uva-arxiv-abstract {
-    margin-top: 0.5em;
-    padding: 0.5em 0.75em;
-    border-left: 3px solid #ccc;
-    font-size: 0.92em;
-    line-height: 1.5;
-  }
-  .uva-arxiv-journal-ref {
-    margin-top: 0.5em;
-    font-size: 0.9em;
-    color: #555;
-  }
-  .uva-arxiv-dropdown-btn,
-  #uva-arxiv-cat-toggle {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4em;
-    min-height: 34px;
-    white-space: nowrap;
-    font-size: 0.88em;
-    color: #232d4b !important;
-    border-color: #232d4b !important;
-    background: transparent;
-  }
-  .uva-arxiv-dropdown-btn:hover,
-  #uva-arxiv-cat-toggle:hover {
-    background: #232d4b !important;
-    color: #fff !important;
-  }
-  .uva-arxiv-dropdown { position: relative; display: inline-block; }
-  .uva-arxiv-dropdown-arrow { font-size: 0.7em; }
-  .uva-arxiv-dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 100;
-    min-width: 220px;
-    margin-top: 2px;
-    padding: 4px 0;
-    background: #fff;
-    border: 1px solid #bbb;
-    border-radius: 6px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  }
-  .uva-arxiv-dropdown-menu.open { display: block; }
-  .uva-arxiv-dropdown-item {
-    display: block;
-    width: 100%;
-    padding: 7px 14px;
-    text-align: left;
-    background: none;
-    border: none;
-    font-size: 0.92em;
-    cursor: pointer;
-    color: #222;
-  }
-  .uva-arxiv-dropdown-item:hover { background: #e9ecef; }
-  .uva-arxiv-dropdown-item.active { font-weight: 700; color: #b45309; }
-  .uva-arxiv-dropdown-divider { margin: 4px 0; border: none; border-top: 1px solid #ddd; }
-  .uva-arxiv-dropdown-custom { padding: 7px 14px; }
-  .uva-arxiv-dropdown-custom-label { font-size: 0.85em; color: #555; display: block; margin-bottom: 4px; }
-  .uva-arxiv-dropdown-custom-inputs { display: flex; align-items: center; gap: 6px; }
-  .uva-arxiv-dropdown-custom-inputs input { width: 60px; text-align: center; }
-  #uva-arxiv-cat-toggle.has-filter,
-  .uva-arxiv-dropdown-btn.has-filter {
-    background: #e57200 !important;
-    color: #fff !important;
-    border-color: #e57200 !important;
-  }
-  .uva-arxiv-cat-count { font-size: 0.78em; font-weight: normal; opacity: 0.8; }
+  .uva-arxiv-abstract-toggle { display: list-item; cursor: pointer; font-size: 1rem; }
+  .uva-arxiv-abstract { padding: .5rem .75rem; border-left: 3px solid var(--border-color, #767676); }
+  .uva-arxiv-journal-ref { margin-top: .75rem; }
+  .uva-arxiv-search-help { padding: 1rem; border: 1px solid var(--border-color, #767676); margin-bottom: 1rem; }
+  .uva-arxiv-cat-count { font-size: 1rem; }
   .uva-arxiv-cat-count::before { content: "("; }
   .uva-arxiv-cat-count::after { content: ")"; }
-  .uva-arxiv-search-help {
-    background: #f8f9fa;
-    border: 1px solid #dee2e6;
-    border-radius: 4px;
-    padding: 10px 14px;
-    margin-bottom: 12px;
-    font-size: 0.9em;
-    line-height: 1.7;
-  }
-  .uva-arxiv-search-help code { background: #e9ecef; padding: 1px 5px; border-radius: 3px; font-size: 0.95em; }
-  #uva-arxiv-search-help-btn { font-weight: bold; min-width: 2.2em; }
-  .uva-arxiv-back-top { display: none; }
+  #uva-arxiv-year-range input { width: 8rem; }
   @media (max-width: 767px) {
-    .uva-arxiv-date-col { width: 5.5em; font-size: 0.88em; }
-    .uva-arxiv-entry { gap: 0.5em; }
-    .uva-arxiv-abstract-toggle,
-    .uva-arxiv-dropdown-btn,
-    #uva-arxiv-cat-toggle { min-height: 44px; }
-    .uva-arxiv-back-top.visible {
-      display: block;
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      z-index: 200;
-      width: 36px;
-      height: 36px;
-      border: none;
-      border-radius: 50%;
-      background: rgba(35,45,75,0.75);
-      color: #fff;
-      font-size: 18px;
-      line-height: 36px;
-      text-align: center;
-      cursor: pointer;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-    }
+    .uva-arxiv-entry { display: block; }
+    .uva-arxiv-date-col { margin-bottom: .5rem; }
+    #uva-arxiv-search-form .input-group { flex-wrap: wrap; }
+    #uva-arxiv-search-input { flex-basis: 100%; }
   }
-  [data-theme="dark"] #uva-arxiv-app {
-    color: var(--text-color, #e8e8e8);
-  }
-  [data-theme="dark"] #uva-arxiv-app .jumbotron {
-    background: #1a2a3f;
-    color: #e8e8e8;
-  }
-  [data-theme="dark"] #uva-arxiv-app .text-muted,
-  [data-theme="dark"] .uva-arxiv-dropdown-custom-label {
-    color: #b8c4d6 !important;
-  }
-  [data-theme="dark"] .uva-arxiv-month-header h2,
-  [data-theme="dark"] .uva-arxiv-date-col,
-  [data-theme="dark"] .uva-arxiv-body strong,
-  [data-theme="dark"] .uva-arxiv-author-name { color: #f1f5f9; }
-  [data-theme="dark"] a.uva-arxiv-id-label { color: #7fb3ff; }
-  [data-theme="dark"] .uva-arxiv-list li[data-id] {
-    background: transparent;
-    border-bottom-color: #33445c;
-  }
-  [data-theme="dark"] .uva-arxiv-list li[data-id]:nth-child(odd) {
-    background: #162133;
-  }
-  [data-theme="dark"] .uva-arxiv-list li[data-id]:hover {
-    background: #1a2a3f;
-  }
-  [data-theme="dark"] #uva-arxiv-search-input,
-  [data-theme="dark"] .uva-arxiv-dropdown-custom-inputs input {
-    background: #162133;
-    border-color: #50647f;
-    color: #f1f5f9;
-  }
-  [data-theme="dark"] #uva-arxiv-search-input::placeholder,
-  [data-theme="dark"] .uva-arxiv-dropdown-custom-inputs input::placeholder {
-    color: #9fb0c5;
-    opacity: 1;
-  }
-  [data-theme="dark"] #uva-arxiv-search-help-btn,
-  [data-theme="dark"] #uva-arxiv-search-clear,
-  [data-theme="dark"] #uva-arxiv-load-more,
-  [data-theme="dark"] #uva-arxiv-app .btn-outline-secondary,
-  [data-theme="dark"] .uva-arxiv-dropdown-btn,
-  [data-theme="dark"] #uva-arxiv-cat-toggle {
-    color: #dce8f8 !important;
-    border-color: #7d91ad !important;
-    background: #162133;
-  }
-  [data-theme="dark"] #uva-arxiv-search-help-btn:hover,
-  [data-theme="dark"] #uva-arxiv-search-clear:hover,
-  [data-theme="dark"] #uva-arxiv-load-more:hover,
-  [data-theme="dark"] #uva-arxiv-app .btn-outline-secondary:hover,
-  [data-theme="dark"] .uva-arxiv-dropdown-btn:hover,
-  [data-theme="dark"] #uva-arxiv-cat-toggle:hover {
-    background: #243448 !important;
-    color: #fff !important;
-  }
-  [data-theme="dark"] .uva-arxiv-dropdown-menu,
-  [data-theme="dark"] .uva-arxiv-search-help {
-    background: #162133;
-    border-color: #50647f;
-    color: #e8e8e8;
-  }
-  [data-theme="dark"] .uva-arxiv-dropdown-item { color: #e8e8e8; }
-  [data-theme="dark"] .uva-arxiv-dropdown-item:hover,
-  [data-theme="dark"] .uva-arxiv-search-help code { background: #243448; }
-  [data-theme="dark"] .uva-arxiv-dropdown-divider,
-  [data-theme="dark"] .uva-arxiv-month-header { border-color: #50647f; }
-  [data-theme="dark"] .uva-arxiv-author-name:hover,
-  [data-theme="dark"] .uva-arxiv-abstract-toggle { color: #7fb3ff; }
-  [data-theme="dark"] .uva-arxiv-abstract { border-left-color: #50647f; }
-  [data-theme="dark"] .uva-arxiv-journal-ref { color: #cbd5e1; }
 </style>
 
 <script src="/assets/js/uva-arxiv.js" defer></script>

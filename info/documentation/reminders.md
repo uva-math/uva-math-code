@@ -12,7 +12,7 @@ reminders_page: true
 
 ---
 
-### 1. Tip for web editing on GitHub
+## 1. Tip for web editing on GitHub
 
 To get started it is helpful to view the code of the current page.
 
@@ -27,7 +27,7 @@ Edits (web or local) take up to five minutes to appear on the actual website.
 The current build status can be viewed by clicking on the checkmark icon next to the GitHub icon 
 in the lower right corner of each page.
 
-### 2. Do not forget to sync with GitHub when editing locally
+## 2. Do not forget to sync with GitHub when editing locally
 
 *(This does not apply if you're making changes in the web editor)*
 
@@ -36,7 +36,7 @@ Also remember that the website will be built and updated with your local changes
 
 **Remember!** If you edit on the web then the web changes should also be synced with the local ones.
 
-### 3. Formatting of internal links
+## 3. Formatting of internal links
 
 For internal links (when referencing a page on the department website)
 in pages' contents

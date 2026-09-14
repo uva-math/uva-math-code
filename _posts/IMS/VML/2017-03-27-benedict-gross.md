@@ -16,7 +16,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<h5 class="mt-3 mb-4"> Benedict H. Gross (Harvard)</h5>
+<h2 class="mt-3 mb-4"> Benedict H. Gross (Harvard)</h2>
 
 - Lecture 1: The rank of elliptic curves
 - Lecture 2: The arithmetic of hyperelliptic curves
@@ -24,7 +24,7 @@ nav_parent: IMS
 
 <!--more-->
 
-#### Lecture 1: The rank of elliptic curves
+## Lecture 1: The rank of elliptic curves
 
 *Abstract:* Cubic equations in two variables, or elliptic curves,
 have been in the forefront of number theory since since the time of Fermat.
@@ -34,7 +34,7 @@ Dyer, which attempts to predict the rank of this group from the average
 number of points ($$\mod p$$), and will discuss the progress that has been
 made on this conjecture to date.
 
-#### Lecture 2: The arithmetic of hyperelliptic curves
+## Lecture 2: The arithmetic of hyperelliptic curves
 
 *Abstract:* Hyperelliptic curves first appeared in work of Abel, who generalized
 Euler's addition laws for elliptic integrals. Abel defined their genus $$g$$ as the number
@@ -47,7 +47,7 @@ that when the genus $$g$$ is at least $$2$$, this set is finite. Using ideas of 
 one can now show that it is usually empty.
 
 
-#### Lecture 3: Heegner points on modular curves
+## Lecture 3: Heegner points on modular curves
 
 *Abstract:* In this talk, we will briefly review the theory of complex multiplication
 and define certain special points, called Heegner points, on the modular curves

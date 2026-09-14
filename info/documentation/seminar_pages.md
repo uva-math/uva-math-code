@@ -23,7 +23,7 @@ nav_parent: Seminars
 events: false
 sem_page: true
 title: University of Virginia Mathematics Colloquium #override the default title in <h1> on the page
-# title: CAN OVERRIDE the title in <h1> on the page; the title of the page itself is hardcoded from seminars.yml
+## title: CAN OVERRIDE the title in <h1> on the page; the title of the page itself is hardcoded from seminars.yml
 ---
 
 {% include seminar_page.html
@@ -50,14 +50,14 @@ The unified list of talks is displayed on the main page. **Note:** only 180 days
 
 ### Archives
 
-###### More recent
+#### More recent
 
 The recent archives using google calendars are displayed year by year, semi-automatically: one simply needs to create archive pages each year - these can be copied from a previous example like at [this GitHub link](https://github.com/uva-math/uva-math-code/blob/master/seminars/colloq/colloq15_16.html).
 
 **Note:** Links from google calendar entries displayed on seminar pages can be broken over time (i.e. when the linked external URL becomes unavailable). There is currently no way implemented to control this because these links are grabbed by javascript. This issue does not affect the displaying of more recent seminar talks, and will likely not be fixed.
 
 
-###### Older
+#### Older
 
 Older archives not using google calendar were moved manually from the old seminar pages.
 
@@ -71,7 +71,7 @@ The javascript code which generates talks lists is in the files `_includes/cal_m
 
 ---
 
-## Seminars data file
+### Seminars data file
 
 `_data/seminars.yml` ([file on GitHub](https://github.com/uva-math/uva-math-code/blob/master/_data/seminars.yml)) is the main file which contains all information about seminars. An example of a seminar entry is below:
 {% highlight yaml linenos %}
@@ -132,16 +132,16 @@ Under `information: |` field, put a paragraph's description of the seminar. This
 
 ---
 
-## How to change seminar pages
+### How to change seminar pages
 
-### Changing seminar information
+#### Changing seminar information
 
 To change information of an existing seminar, edit `_data/seminars.yml`. To add additional information to the seminar page, add it to `content=""` or `contacts=""` in the `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].html` corresponding to the seminar.
 
 **Advanced**. To make even more changes to the page of a seminar you can copy the template in `/_includes/seminar_page.html` into the content section (below second `---`) of the seminar page `/seminars/[SEMINAR_NAME]/[SEMINAR_NAME].html`, and make deeper edits there.
 
 
-### Adding a seminar globally
+#### Adding a seminar globally
 
 To ensure that the seminar information renders properly the following conditions must be met:
 
@@ -151,7 +151,7 @@ To ensure that the seminar information renders properly the following conditions
 
 If removing a seminar, consider keeping the archives. One can link them maybe on the all seminars page, or create a special archive page for a no longer existing seminar.
 
-### Standalone seminar pages
+#### Standalone seminar pages
 
 The google calendar feature allows to create pages with event lists displayed from google calendar,
 but not linked to the "all seminars" page on the unifying calendar on the main page.

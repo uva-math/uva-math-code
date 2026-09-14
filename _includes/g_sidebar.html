@@ -1,8 +1,8 @@
 <nav aria-label="Graduate program{% if include.sidebar_variant == 'mobile' %} (mobile){% endif %}">
-{% assign sorted_pages = site.pages | sort: "nav_weight" %}
+{% assign sorted_pages = site.pages | where: "layout", "g_page" | sort: "nav_weight" %}
 
 <div class="list-group h5">
-  <a class="list-group-item list-group-item-action orange-item {% if page.permalink == "/graduate/" %}active{% endif %}" {% if page.permalink == "/graduate/" %}aria-current="page"{% endif %} href="{{site.url}}/graduate/">Information</a>
+  <a class="list-group-item list-group-item-action orange-item {% if page.permalink == "/graduate/" %}active{% endif %}" {% if page.permalink == "/graduate/" %}aria-current="page"{% endif %} href="{{site.url}}/graduate/">Graduate Program in Mathematics</a>
     {% for pg in sorted_pages %}
     {% if pg.layout == "g_page" and pg.g_info and pg.nav_weight <=10 %}
         <a class="list-group-item list-group-item-action {% if page.permalink ==  pg.permalink %}active{% endif %}" {% if page.permalink == pg.permalink %}aria-current="page"{% endif %} href="{{pg.url}}">{{pg.title}}</a>

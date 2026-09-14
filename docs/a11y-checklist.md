@@ -1,13 +1,13 @@
-# WCAG 2.1 Level AA Accessibility Checklist
+# Website Accessibility Review Checklist
 
-Comprehensive checklist derived from accessibility work on lpetrov.cc (commits d44ded7b through b4f5e47b). Use this to audit and fix other websites.
+Practical review prompts derived from earlier work on lpetrov.cc and adapted for this repository. This is not an exhaustive WCAG checklist or a certification of legal compliance. Use the current shared templates and validation tools; verify their results with content, visual, keyboard, and assistive-technology review.
 
 ---
 
 ## 1. Page Structure & Landmarks
 
 - [ ] `<html lang="en">` set on root element
-- [ ] Single `<h1>` per page (use `sr-only` class if visually hidden)
+- [ ] Single visible `<h1>` describing the page
 - [ ] Heading hierarchy is sequential: H1 → H2 → H3 (no skipping levels)
 - [ ] `<main id="main-content">` wraps page content
 - [ ] `<nav aria-label="Main navigation">` on primary nav
@@ -16,17 +16,16 @@ Comprehensive checklist derived from accessibility work on lpetrov.cc (commits d
 
 ## 2. Semantic HTML
 
-- [ ] Use `<strong>` instead of `<b>` for emphasis (screen readers announce `<strong>`)
-- [ ] Use `<em>` instead of `<i>` for italic emphasis (except icon fonts with `aria-hidden="true"`)
+- [ ] Use `<strong>` for importance and `<em>` for stress emphasis; choose markup by meaning rather than assuming a screen reader announces typography
 - [ ] `<li>` elements only appear inside `<ul>` or `<ol>` parents
-- [ ] Use `<table>` with `aria-label` for data tables; add `<th>` headers
+- [ ] Data tables have descriptive captions and correctly associated row/column headers (`<th scope="row">`, `<th scope="col">`, or explicit associations for complex tables)
 - [ ] `<details>/<summary>` for collapsible content (semantically accessible)
 - [ ] Lists (`<ul>`, `<ol>`) used for groups of related items, not `<div>` sequences
 
 ## 3. Links
 
 ### External links (`target="_blank"`)
-- [ ] Every `target="_blank"` link has `<span class="sr-only"> (opens in new tab)</span>` before `</a>`
+- [ ] Ordinary links open in the same tab; when a new tab is necessary, the link gives a visible warning available to assistive technology too
 - [ ] Template/layout files fixed (covers dynamically generated links for all pages)
 
 ### Downloadable files (PDF, TeX, etc.)
@@ -41,18 +40,18 @@ Comprehensive checklist derived from accessibility work on lpetrov.cc (commits d
 ## 4. Images
 
 - [ ] Every `<img>` has an `alt` attribute
-- [ ] Decorative images: `alt=""` (empty) or `aria-hidden="true"`
-- [ ] Meaningful images: descriptive alt text (200-400 chars for complex visuals)
+- [ ] Decorative images have `alt=""`; decorative icons are hidden from assistive technology
+- [ ] Meaningful images have concise accurate alternatives; complex diagrams also have a complete nearby or linked description of their data and relationships ([W3C complex-image guidance](https://www.w3.org/WAI/tutorials/images/complex/))
 - [ ] Icon fonts (`<i class="fas fa-*">`) have `aria-hidden="true"`
 - [ ] Adjacent text link + image link to same URL are combined into one `<a>`
 - [ ] SVG icons have `aria-hidden="true"` when decorative
 
 ## 5. Forms & Interactive Controls
 
-- [ ] Every `<input>` has an associated `<label>` or `aria-label`
+- [ ] Every user-entry field has a persistent visible label associated with its control
 - [ ] Every `<button>` has visible text or `aria-label`
 - [ ] Icon-only buttons have `aria-label` describing the action
-- [ ] `<select>` elements have `<label>` or `aria-label`
+- [ ] `<select>` elements have associated visible labels
 - [ ] `<canvas>` elements have `role="img"` and `aria-label`
 - [ ] Toggle buttons use `aria-pressed` state
 - [ ] Search inputs have `aria-label="Search [context]"`
@@ -60,7 +59,7 @@ Comprehensive checklist derived from accessibility work on lpetrov.cc (commits d
 ## 6. Color & Contrast
 
 - [ ] Text contrast ratio ≥ 4.5:1 against background (normal text)
-- [ ] Large text (18px+ or 14px+ bold) contrast ratio ≥ 3:1
+- [ ] Large text (18pt/24px, or 14pt/about 18.67px bold) has contrast ≥ 3:1; smaller text uses ≥ 4.5:1 ([W3C contrast guidance](https://www.w3.org/WAI/WCAG22/Understanding/contrast-minimum.html))
 - [ ] Links distinguishable by more than color alone (underline, weight, icon)
 - [ ] Focus indicators visible in both light and dark modes
 - [ ] Active/selected states meet contrast requirements
@@ -137,9 +136,23 @@ Fix these once in templates to cover all generated pages:
 - [ ] **Research listing template**: sr-only on arXiv, journal-web, PDF links; `aria-label` on PDF/TeX links
 - [ ] **Search components**: live region for result counts, `aria-label` on inputs
 
-## 12. Automated Testing
+## 12. Mathematics and converted documents
 
-Run these tools to catch remaining issues:
+- [ ] Published PDF companions use `document_page` with an explicit `.html` permalink and content-only markup; the layout provides the HTML shell, skip link, navigation, and single main landmark.
+- [ ] Mathematical expressions retain native MathML, including valid Unicode characters such as `ℝ`, `α`, and `≤`; converting characters to entities is not an accessibility repair.
+- [ ] Raw TeX stays in source annotations rather than overriding native MathML through `aria-label`; an explicit `role="math"` is optional.
+- [ ] The full source PDF and companion have been compared for complete prose, equations, problem parts, tables, photographs, diagrams, captions, and references. Large documents are reviewed in tracked batches.
+- [ ] Image descriptions have been checked against the actual figures and captions; generic text and incorrectly named portraits are corrected.
+- [ ] Combined archives contain every constituent document, and any retained historical files without complete accessible sources are identified honestly.
+- [ ] PDF candidates use the current exporter, receive PDF/UA-1 validation, and undergo a separate content, formula-description, reading-order, and print review before replacement.
+
+See [the conversion workflow](../.claude/commands/mathml-any-pdf.md),
+[the current checks](../scripts/README.md), and
+[the PDF pipeline](../scripts/accessibility/README.md).
+
+## 13. Automated Testing
+
+Run the repository checks described in `scripts/README.md` on the built site. The following tools can support review. A passing scan covers only its implemented rules; it does not verify transcription completeness, correct mathematical speech, image-description accuracy, or overall WCAG/legal compliance:
 
 1. **AudioEye / axe DevTools** — browser extension scan
 2. **Lighthouse Accessibility audit** — Chrome DevTools → Lighthouse → Accessibility

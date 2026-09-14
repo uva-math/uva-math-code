@@ -23,6 +23,8 @@ redirect_from:
   }
 </style>
 
+<h1>Math Experimental Lab pictures</h1>
+
 <div class="container">
   <div class="row mb-4">
     <div class="col-12">

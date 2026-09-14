@@ -1,0 +1,14 @@
+{
+  "name": "uva-math-accessible-pdf-tools",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Validated PDF exports from the department's accessible HTML documents",
+  "dependencies": {
+    "mathjax-full": "3.2.2",
+    "playwright": "1.58.2",
+    "speech-rule-engine": "4.1.4"
+  },
+  "overrides": {
+    "@xmldom/xmldom": "0.9.12"
+  }
+}

@@ -23,14 +23,18 @@
       <h1>{{page.title}}</h1>
 
       {% if page.event-date != null and page.multi-day-event %}
-      <p class="h4">Event start date: {{ page.event-date |  date: "%A, %B %-d, %Y" }}</p>{% endif %}
+      <p>Event start date: <time datetime="{{ page.event-date | date: '%Y-%m-%d' }}">{{ page.event-date | date: "%A, %B %-d, %Y" }}</time></p>{% endif %}
       {% if page.event-date != null and page.multi-day-event != true %}
-      <p class="h4">Event date: {{ page.event-date |  date: "%A, %B %-d, %Y" }}</p>{% endif %}
+      <p>Event date: <time datetime="{{ page.event-date | date: '%Y-%m-%d' }}">{{ page.event-date | date: "%A, %B %-d, %Y" }}</time></p>{% endif %}
 
       {% include categories.html %}
 
-      {% if page.image != null %}
-        {% if page.image-address != null %}<a href="{{ page.image-address | replace: '__SITE_URL__', site.url }}">{% endif %}<img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="{% if page.image-wide != true %}max-width:70%;{% else %}max-width:100%;{% endif %}{% if page.image-tall %}max-height:800px;{% endif %}height:auto;width:auto;" alt="{{ page.image-alt | default: page.title }}" title="{{ page.image-alt | default: page.title }}">{% if page.image-address != null %}</a>{% endif %}<br><br />
+      {% assign post_image_path = page.image | downcase %}
+      {% assign post_image_alt = page.image-alt | downcase %}
+      {% if page.image and page.image-alt %}
+        {% unless post_image_path contains 'poster' or post_image_alt contains 'poster' or page.image-address contains '.pdf' or page.categories contains 'virginia-math-bulletin' %}
+          <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto" alt="{{ page.image-alt | escape }}" class="mb-4">
+        {% endunless %}
       {% endif %}
 
 

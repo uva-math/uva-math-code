@@ -14,7 +14,7 @@ to be held on
 UVa Grounds, Saturday March 2, 2019 – 9:30am to 5pm. 
 This event is open to all students regardless of gender.
 
-For a more detailed schedule, and to register (by February 25th) please follow [this link](http://www.people.virginia.edu/~sm4cw/Sonia_Day.html).
+For a more detailed schedule, and to register (by February 25th) please follow [Sonia Kovalevsky Math Day schedule and registration](http://www.people.virginia.edu/~sm4cw/Sonia_Day.html).
 
 <!--more-->
 

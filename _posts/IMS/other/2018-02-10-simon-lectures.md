@@ -18,7 +18,7 @@ nav_parent: IMS
 
 The UVa Department of Mathematics &amp; The Institute of Mathematical Sciences present Special Lectures by **[Barry Simon (California Institute of Technology)](http://math.caltech.edu/simon/simon.html)** entitled
 
-<h5 class="mb-2">Tales of Our Forefathers</h5>
+<h2 class="mb-2">Tales of Our Forefathers</h2>
 
 <!--more-->
 
@@ -31,7 +31,7 @@ The UVa Department of Mathematics &amp; The Institute of Mathematical Sciences p
 
 This is not a mathematics talk but it is a talk for mathematicians. Too often, we think of historical mathematicians as only names assigned to theorems. With vignettes and anecdotes, I’ll convince you they were also human beings and that, as the Chinese say, “May you live in interesting times” really is a curse.
 
-##### [`PDF slides`]({{site.url}}/talks_seminars_data/B_Simon_2018/Tales of our Forefathers - B. Simon.pdf)
+[Tales of Our Forefathers — historical slides (PDF)]({{site.url}}/talks_seminars_data/B_Simon_2018/Tales%20of%20our%20Forefathers%20-%20B.%20Simon.pdf)
 
 ---
 
@@ -43,8 +43,12 @@ This is not a mathematics talk but it is a talk for mathematicians. Too often, w
 
 This is not a mathematics talk but it is a talk for mathematicians. Too often, we think of historical mathematicians as only names assigned to theorems. With vignettes and anecdotes, I’ll convince you they were also human beings and that, as the Chinese say, ‘May you live in interesting times’ really is a curse. It is not assumed that listeners heard my earlier talk. Amongst the mathematicians that I’ll discuss are Riemann, Newton, Krein and Noether”.
 
-##### [`PDF slides`]({{site.url}}/talks_seminars_data/B_Simon_2018/More Tales of our Forefathers - B. Simon.pdf)
+[More Tales of Our Forefathers — historical slides (PDF)]({{site.url}}/talks_seminars_data/B_Simon_2018/More%20Tales%20of%20our%20Forefathers%20-%20B.%20Simon.pdf)
 
 ---
 
-##### [`PDF slides "Asymptotics of the Chebyshev Polynomials of General Sets"`]({{site.url}}/talks_seminars_data/B_Simon_2018/chebyshev - B. Simon.pdf)
+[Asymptotics of the Chebyshev Polynomials of General Sets — historical slides (PDF)]({{site.url}}/talks_seminars_data/B_Simon_2018/chebyshev%20-%20B.%20Simon.pdf)
+
+These original slide decks remain available as a historical archive. They contain images and mathematical material without a complete accessible transcript. For assistance accessing a particular passage, please [contact the Mathematics Department](mailto:math-help@virginia.edu).
+
+<p><a href="/img/IMS/Simon-2018.html">Event poster text (HTML)</a>.</p>

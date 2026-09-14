@@ -6,7 +6,7 @@ redirect_from:
   - /geolab/contact/
 ---
 
-<h2 class="mb-3">Contact Information</h2>
+<h1 class="mb-3">Contact Information</h1>
 
 For questions about the Math Experimental Lab, please contact:
 

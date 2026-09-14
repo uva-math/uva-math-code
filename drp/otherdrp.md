@@ -4,7 +4,7 @@ layout: drp_page
 permalink: /drp/otherdrp/
 ---
 
-<h2 class="mb-3">Other DRP Programs</h2>
+<h1 class="mb-3">Other DRP Programs</h1>
 
 - [Indiana University](http://www.indiana.edu/~mathdrp/)
 - [Massachusetts Institute of Technology](https://math.mit.edu/research/undergraduate/drp/index.php)

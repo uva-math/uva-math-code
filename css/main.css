@@ -5,7 +5,7 @@
   left: 0;
   z-index: 10000;
   padding: 0.75rem 1.5rem;
-  background-color: #002F6C;
+  background-color: #232D4B;
   color: #ffffff;
   font-weight: 700;
   font-size: 1rem;
@@ -106,20 +106,20 @@ textarea:focus-visible,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
-  border: 1px solid #002F6C;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #232D4B;
   border-radius: 4px;
   background: #ffffff;
-  color: #002F6C;
+  color: #232D4B;
   cursor: pointer;
-  font-size: 0.85rem;
+  font-size: 1rem;
   padding: 0;
   transition: background-color 0.15s ease, color 0.15s ease;
 }
 
 .carousel-btn:hover {
-  background-color: #002F6C;
+  background-color: #232D4B;
   color: #ffffff;
 }
 
@@ -174,7 +174,8 @@ html {
 }
 body {
     padding-top: 20px;
-    /*font-size: 14px;*/
+    font-size: 1rem;
+    line-height: 1.5;
     margin:0px;
     padding:0px;
     font-family: "franklin-gothic-urw", arial, sans-serif;
@@ -183,11 +184,13 @@ body {
 
 a:link, a:visited {
   color: #245d91;
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.15em;
 }
 
 a:focus, a:hover {
-  color: #e57200;
+  color: #9b3a00;
   text-decoration: underline;
 }
 
@@ -217,7 +220,7 @@ a.main-roll-link:link, a.main-roll-link:visited {
 }
 
 a.main-roll-link:focus, a.main-roll-link:hover {
-  color: #e57200;
+  color: #9b3a00;
   text-decoration: underline;
 }
 
@@ -244,11 +247,11 @@ a.orange-item:hover, a.orange-item:focus {
 }
 
 a.list-group-item-action:hover, a.list-group-item-action:focus {
-  color: #e57200;
+  color: #9b3a00;
 }
 
 .bg-inverse, .bg-dark {
-  background-color: #002F6C !important;
+  background-color: #232D4B !important;
 }
 
 a.bg-inverse:link, a.bg-inverse:visited {
@@ -256,30 +259,29 @@ a.bg-inverse:link, a.bg-inverse:visited {
 }
 
 a.bg-inverse:focus, a.bg-inverse:hover {
-  background-color: #002F6C !important;
-  color: #e57200;
+  background-color: #232D4B !important;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .list-group-item.active {
   color: white;
-  background-color: #002F6C;
-  border-color: #002F6C;
+  background-color: #232D4B;
+  border-color: #232D4B;
 }
 
 a.list-group-item.active,
 button.list-group-item.active {
   color: white;
-  background-color: #002F6C;
-  border-color: #002F6C;
+  background-color: #232D4B;
+  border-color: #232D4B;
 }
 
 a:focus.list-group-item.active,
 a:hover.list-group-item.active {
   color: white;
-  color: #e57200;
-  background-color: #002F6C;
-  border-color: #002F6C;
+  background-color: #232D4B;
+  border-color: #232D4B;
 }
 
 .dropdown-menu a {
@@ -296,7 +298,7 @@ a:hover.list-group-item.active {
 }
 
 .dropdown-item.active, .dropdown-item:active {
-  background-color: #002F6C;
+  background-color: #232D4B;
 }
 
 
@@ -310,7 +312,7 @@ a:hover.list-group-item.active {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #002F6C;
+  color: #232D4B;
   font-family: 'franklin-gothic-urw-cond', 'arial narrow', sans-serif;
   font-size: 18px;
   font-weight: 700;
@@ -318,7 +320,7 @@ a:hover.list-group-item.active {
 }
 
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-  color: #EB5F0C;
+  color: #9b3a00;
 }
 
 .navbar-light .navbar-nav .open > .nav-link,
@@ -326,7 +328,7 @@ a:hover.list-group-item.active {
 .navbar-light .navbar-nav .nav-link.open,
 .navbar-light .navbar-nav .nav-link.active {
   color: white;
-  background-color: #002F6C;
+  background-color: #232D4B;
 }
 
 .my-navbar-dropdown-item
@@ -338,11 +340,11 @@ a:hover.list-group-item.active {
 }
 
 .navbar-light .navbar-toggler {
-  border-color: #002F6C;
+  border-color: #232D4B;
 }
 
 .navbar-light .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke=#002F6C stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke=#232D4B stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 @media (max-width: 575px){.jumbotron {
@@ -446,7 +448,7 @@ h2,
   }
   h6,
   .h6 {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -537,7 +539,7 @@ a.dept-logo-large:link, a.dept-logo-large:visited
 
 a.dept-logo-large:focus, a.dept-logo-large:hover
 {
-  color: #e57200;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -633,7 +635,7 @@ font-weight: bold;
 
 /* Navbar compatibility */
 .navbar-inverse {
-  background-color: #002F6C !important;
+  background-color: #232D4B !important;
 }
 
 .navbar-inverse .navbar-nav .nav-link {
@@ -642,14 +644,14 @@ font-weight: bold;
 
 .navbar-inverse .navbar-nav .nav-link:hover,
 .navbar-inverse .navbar-nav .nav-link:focus {
-  color: #EB5F0C;
+  color: #ffffff;
 }
 
 /* Active nav item styling */
 .navbar-light .navbar-nav .nav-item.active .nav-link,
 .navbar-light .navbar-nav .nav-link.active {
   color: white;
-  background-color: #002F6C;
+  background-color: #232D4B;
 }
 
 /* Fix dropdown menu positioning */
@@ -705,7 +707,7 @@ font-weight: bold;
 }
 
 .navbar-toggler:focus-visible {
-  outline: 2px solid #002F6C;
+  outline: 2px solid #232D4B;
   outline-offset: 2px;
 }
 
@@ -719,11 +721,11 @@ font-weight: bold;
   --text-color: #212529;
   --card-bg: #f8f9fa;
   --navbar-bg: #D9D9D9;
-  --link-color: #007bff;
+  --link-color: #245d91;
   --border-color: #dee2e6;
   --list-group-bg: #ffffff;
   --list-group-hover: #f8f9fa;
-  --list-group-active-bg: #007bff;
+  --list-group-active-bg: #232D4B;
   --list-group-active-color: #ffffff;
   --code-bg: #f8f9fa;
   --footer-bg: #f8f9fa;
@@ -838,7 +840,7 @@ footer {
 }
 
 .toggle-track i {
-  font-size: 0.9rem;
+  font-size: 1rem;
   padding: 4px 6px;
   position: relative;
   z-index: 2;
@@ -846,11 +848,11 @@ footer {
 }
 
 .toggle-track .fa-cloud-sun {
-  color: #002F6C;
+  color: #232D4B;
 }
 
 .toggle-track .fa-moon {
-  color: rgba(0, 47, 108, 0.4);
+  color: #232D4B;
 }
 
 .toggle-thumb {
@@ -870,7 +872,7 @@ footer {
 }
 
 .theme-toggle-dual:focus-visible {
-  outline: 2px solid #002F6C;
+  outline: 2px solid #232D4B;
   outline-offset: 2px;
   border-radius: 20px;
 }
@@ -881,11 +883,11 @@ footer {
 }
 
 [data-theme="dark"] .toggle-track .fa-cloud-sun {
-  color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
 }
 
 [data-theme="dark"] .toggle-track .fa-moon {
-  color: #e8e8e8;
+  color: #232D4B;
 }
 
 [data-theme="dark"] .toggle-thumb {
@@ -909,7 +911,7 @@ footer {
   }
   
   .toggle-track i {
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding: 3px 5px;
   }
 }
@@ -1083,7 +1085,7 @@ pre, code {
 
 /* Seminar listings */
 [data-theme="dark"] .cal_event_time {
-  color: #999999;
+  color: #b8c3d1;
 }
 
 [data-theme="dark"] .my_col_date {
@@ -1129,7 +1131,7 @@ pre, code {
 [data-theme="dark"] .list-group-item.orange-item.active {
   background-color: #E57200;
   border-color: #E57200;
-  color: #ffffff;
+  color: #111111;
 }
 
 /* Default card background for dark mode */
@@ -1229,7 +1231,7 @@ pre, code {
 [data-theme="dark"] .pagination .page-link:hover {
   background-color: #2a3f5f;
   border-color: #2a3f5f;
-  color: #4da3ff;
+  color: #6db3ff;
 }
 
 [data-theme="dark"] .pagination .page-item.active .page-link {
@@ -1239,7 +1241,7 @@ pre, code {
 }
 
 .navbar-toggler i {
-  color: #002F6C;
+  color: #232D4B;
 }
 
 .navbar-toggler:hover {
@@ -1249,11 +1251,11 @@ pre, code {
 /* Remove the orange background from secondary menu button */
 .navbar-toggler.orange-item {
   background-color: transparent !important;
-  color: #EB5F0C;
+  color: #9b3a00;
 }
 
 .navbar-toggler.orange-item i {
-  color: #EB5F0C;
+  color: #9b3a00;
 }
 
 /* Dark mode navbar toggle icons */
@@ -1272,7 +1274,7 @@ pre, code {
 /* Style the mobile page title */
 .navbar .h5 {
   font-weight: 600;
-  color: #002F6C !important;
+  color: #232D4B !important;
 }
 
 [data-theme="dark"] .navbar .h5 {
@@ -1286,6 +1288,9 @@ pre, code {
 
 /* Style secondary buttons as white with gray hover */
 .btn-secondary {
+  --bs-btn-color: #245d91;
+  --bs-btn-hover-color: #245d91;
+  --bs-btn-active-color: #245d91;
   background-color: white;
   border-color: #dee2e6;
   color: #245d91;
@@ -1307,6 +1312,9 @@ pre, code {
 
 /* Dark mode secondary buttons — !important needed to override Bootstrap CSS custom properties */
 [data-theme="dark"] .btn-secondary {
+  --bs-btn-color: #6db3ff;
+  --bs-btn-hover-color: #8ec5ff;
+  --bs-btn-active-color: #8ec5ff;
   background-color: #243448 !important;
   border-color: #3a5068 !important;
   color: #6db3ff !important;
@@ -1342,15 +1350,15 @@ pre, code {
 
 .list-group-item-action.active {
   color: #fff;
-  background-color: #002F6C;
-  border-color: #002F6C;
+  background-color: #232D4B;
+  border-color: #232D4B;
 }
 
 /* Orange section headers */
 .list-group-item.orange-item {
   background-color: rgba(235, 95, 12, 0.1);
   border-color: rgba(235, 95, 12, 0.3);
-  color: #002F6C;
+  color: #232D4B;
   font-weight: 600;
 }
 
@@ -1361,7 +1369,7 @@ pre, code {
 .list-group-item.orange-item.active {
   background-color: #E57200;
   border-color: #E57200;
-  color: white;
+  color: #111111;
 }
 
 /* Clean list group styling */
@@ -1371,7 +1379,7 @@ pre, code {
 
 .list-group-sm .list-group-item {
   padding: 0.5rem 1rem;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
 .list-group-sm .list-group-item:first-child {
@@ -1444,13 +1452,13 @@ pre, code {
 .navbar-nav .dropdown-item:hover,
 .navbar-nav .dropdown-item:focus {
   background-color: rgba(0, 47, 108, 0.05);
-  color: #002F6C;
+  color: #232D4B;
   text-decoration: none;
 }
 
 .navbar-nav .dropdown-item.active,
 .navbar-nav .dropdown-item:active {
-  background-color: #002F6C;
+  background-color: #232D4B;
   color: white;
 }
 
@@ -1501,17 +1509,6 @@ pre, code {
     transform: translateY(-50%) rotate(180deg);
   }
   
-  /* Add subtle animation for mobile dropdowns */
-  .navbar-nav .dropdown-menu {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
-  }
-  
-  .navbar-nav .dropdown-menu.show {
-    max-height: 600px; /* Adjust based on content */
-    transition: max-height 0.3s ease-in;
-  }
 }
 
 /* Fix alignment issues for rightmost dropdowns on desktop */
@@ -1620,3 +1617,526 @@ pre, code {
     scroll-behavior: auto !important;
   }
 }
+
+/* Shared accessibility defaults. Keep meaningful text at least 16 CSS pixels. */
+:root {
+  --uva-blue: #232D4B;
+  --focus-color: #232D4B;
+  --focus-halo: #ffffff;
+  --muted-color: #555e68;
+  --bs-primary-rgb: 35, 45, 75;
+  --success-color: #006b45;
+  --danger-color: #b42318;
+  --warning-color: #8b4000;
+}
+
+[data-theme="dark"] {
+  --focus-color: #ffffff;
+  --focus-halo: #000000;
+  --muted-color: #bac4d0;
+  --success-color: #8bd5aa;
+  --danger-color: #ffa49c;
+  --warning-color: #ffc070;
+  color-scheme: dark;
+}
+
+small, .small, .btn-sm, .form-control-sm, .form-select-sm,
+.input-group-sm > .form-control, .input-group-sm > .form-select,
+.input-group-sm > .input-group-text, .input-group-sm > .btn,
+.badge, .figure-caption, .blockquote-footer {
+  font-size: 1rem;
+}
+
+.text-muted, .text-secondary, .figure-caption, .blockquote-footer {
+  color: var(--muted-color) !important;
+}
+
+.text-primary { color: var(--link-color) !important; }
+.text-success { color: var(--success-color) !important; }
+.text-danger { color: var(--danger-color) !important; }
+.text-warning { color: var(--warning-color) !important; }
+
+[data-theme="dark"] .text-dark { color: var(--text-color) !important; }
+
+main, .container, .row > *, .card, .card-body, .navbar-brand {
+  min-width: 0;
+}
+
+main, footer {
+  overflow-wrap: anywhere;
+}
+
+main img, main video, main iframe {
+  max-width: 100%;
+}
+
+main img {
+  height: auto;
+}
+
+main pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+main :is(h1, h2, h3, h4, h5, h6), :target {
+  scroll-margin-top: 1rem;
+}
+
+.btn, .nav-link, .dropdown-item, .page-link, .list-group-item-action,
+button, input:not([type="hidden"]):not([type="checkbox"]):not([type="radio"]),
+select, summary {
+  min-height: 2.75rem;
+}
+
+button, summary {
+  min-width: 2.75rem;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+}
+
+.btn {
+  white-space: normal;
+}
+
+a.btn, a.btn:visited,
+[data-theme="dark"] a.btn, [data-theme="dark"] a.btn:visited {
+  color: var(--bs-btn-color);
+}
+
+a.btn:hover, a.btn:focus,
+[data-theme="dark"] a.btn:hover, [data-theme="dark"] a.btn:focus {
+  color: var(--bs-btn-hover-color);
+}
+
+.btn-primary {
+  --bs-btn-bg: #232D4B;
+  --bs-btn-border-color: #232D4B;
+  --bs-btn-hover-bg: #141c33;
+  --bs-btn-hover-border-color: #141c33;
+  --bs-btn-active-bg: #141c33;
+  --bs-btn-active-border-color: #141c33;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--link-color);
+  --bs-btn-border-color: var(--link-color);
+  --bs-btn-hover-bg: #232D4B;
+  --bs-btn-hover-border-color: #232D4B;
+  --bs-btn-active-bg: #232D4B;
+  --bs-btn-active-border-color: #232D4B;
+}
+
+a:is(.btn, .nav-link, .dropdown-item, .page-link, .list-group-item, .dept-logo-large) {
+  text-decoration: none;
+}
+
+/* Icon-only contact links have a real pointer target without enlarging inline prose. */
+a[href^="mailto:"][aria-label]:has(> :is(.fa-solid, .fa-regular, .fas):only-child) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  margin-inline-end: 0.2rem;
+}
+
+/* Both icons remain readable on the track and its moving white thumb. */
+.theme-toggle-dual {
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+}
+
+.toggle-track {
+  border: 1px solid #657083;
+  background-color: #d8dce3;
+}
+
+.theme-toggle-dual:hover .toggle-track {
+  background-color: #c7cdd6;
+}
+
+[data-theme="dark"] .toggle-track,
+[data-theme="dark"] .theme-toggle-dual:hover .toggle-track {
+  background-color: #232D4B;
+  border-color: #bac4d0;
+}
+
+[data-theme="dark"] .toggle-thumb {
+  background-color: #ffffff;
+}
+
+/* Main navigation becomes a disclosure list before its labels run out of space. */
+.site-navigation .navbar-collapse {
+  min-width: 0;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.site-navigation .navbar-nav {
+  flex-wrap: wrap;
+  min-width: 0;
+}
+
+.site-navigation .navbar-nav.me-auto {
+  flex: 1 1 auto;
+}
+
+.site-navigation .nav-link {
+  white-space: normal;
+  text-align: left;
+}
+
+.site-navigation button.nav-link {
+  border: 0;
+  border-radius: 0;
+}
+
+.site-navigation .nav-link:hover,
+.site-navigation .nav-link:focus-visible {
+  color: #232D4B;
+  background-color: #ffffff;
+  text-decoration: underline;
+}
+
+.site-navigation .nav-item.active > .nav-link:hover,
+.site-navigation .nav-item.active > .nav-link:focus-visible {
+  color: #ffffff;
+  background-color: #232D4B;
+}
+
+[data-theme="dark"] .site-navigation .nav-link:hover,
+[data-theme="dark"] .site-navigation .nav-link:focus-visible {
+  color: #ffffff;
+  background-color: #34445e;
+}
+
+.site-navigation .dropdown-menu {
+  max-width: min(28rem, calc(100vw - 2rem));
+}
+
+.site-navigation .dropdown-item {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.site-navigation .dropdown-toggle::before {
+  content: "";
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-70%) rotate(45deg);
+  opacity: 1;
+}
+
+.site-navigation .dropdown-toggle[aria-expanded="true"]::before {
+  transform: translateY(-20%) rotate(225deg);
+}
+
+@media (max-width: 1199.98px) {
+  .site-navigation .navbar-collapse {
+    flex-basis: 100%;
+  }
+
+  .site-navigation .navbar-nav.ms-auto {
+    align-items: stretch !important;
+  }
+
+  .site-navigation .dropdown-menu {
+    position: static !important;
+    transform: none !important;
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    box-shadow: none;
+    border: 0;
+    padding: 0.25rem 0;
+  }
+
+  .site-navigation .dropdown-toggle {
+    width: 100%;
+  }
+
+  .site-navigation .dropdown-item {
+    padding-inline: 2rem 1rem;
+  }
+}
+
+/* Single footer markup keeps contact information and social links in the same order. */
+.footer-content {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.footer-content p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-content address {
+  font-style: normal;
+}
+
+.footer-content a {
+  display: inline-block;
+  min-height: 1.5rem;
+}
+
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.footer-social a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  text-decoration: none;
+}
+
+/* Carousel bullets have generous targets and an active outline as well as color. */
+.carousel-controls-bar .swiper-pagination {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.carousel-controls-bar .swiper-pagination-bullet {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  flex: 0 0 2.75rem;
+  margin: 0;
+  padding: 0;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  background: transparent;
+  color: #232D4B;
+  opacity: 1;
+}
+
+.carousel-controls-bar .swiper-pagination-bullet::before {
+  content: "";
+  width: 0.65rem;
+  height: 0.65rem;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+}
+
+.carousel-controls-bar .swiper-pagination-bullet-active {
+  border-color: currentColor;
+}
+
+.carousel-controls-bar .swiper-pagination-bullet-active::before {
+  background-color: currentColor;
+}
+
+[data-theme="dark"] .carousel-controls-bar .swiper-pagination-bullet {
+  color: #9bcbff;
+}
+
+.swiper-slide[inert] {
+  visibility: hidden;
+}
+
+.seminar-events article {
+  padding: 0.75rem;
+  margin-block-end: 0.75rem;
+}
+
+.seminar-events h2, .seminar-events h3 {
+  font-size: 1.1rem;
+  text-transform: none;
+  line-height: 1.4;
+}
+
+.seminar-events p, .seminar-events a {
+  font-size: 1rem;
+}
+
+/* A dark/light double ring remains visible against light, dark, and orange surfaces. */
+html body :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible,
+html[data-theme="dark"] body :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+  outline: 3px solid var(--focus-color) !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 3px var(--focus-halo) !important;
+}
+
+@media (forced-colors: active) {
+  html body :is(a, button, input, select, textarea, summary, [tabindex]):focus-visible {
+    outline-color: Highlight !important;
+  }
+
+  .carousel-controls-bar .swiper-pagination-bullet-active,
+  .toggle-track {
+    border-color: ButtonText;
+  }
+}
+
+/* Brand and site search wrap together at zoomed and narrow viewports. */
+.site-brand {
+  color: #ffffff;
+}
+
+.site-brand-inner {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 1.5rem;
+  padding-block: 1rem;
+}
+
+.site-brand a.dept-logo-large,
+[data-theme="dark"] .site-brand a.dept-logo-large {
+  color: #ffffff;
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+}
+
+.university-brand {
+  display: block;
+  flex: 0 1 20.25rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.university-brand img {
+  display: block;
+  width: 100%;
+  max-width: 20.25rem;
+  height: auto;
+}
+
+.site-search {
+  flex: 1 1 17rem;
+  max-width: 24rem;
+  min-width: 0;
+  margin-inline-start: auto;
+}
+
+.site-search label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.site-search .form-control {
+  min-width: 0;
+}
+
+.site-search .input-group,
+.site-search .btn {
+  min-height: 2.75rem;
+}
+
+@media (max-width: 575.98px) {
+  .site-brand-inner {
+    align-items: flex-start;
+  }
+
+  .site-search {
+    flex-basis: 100%;
+    max-width: none;
+  }
+}
+
+/* Native disclosures retain their marker, keyboard behavior, and readable theme colors. */
+details > summary {
+  display: list-item;
+  list-style-position: inside;
+  padding: 0.5rem 0.75rem;
+  color: var(--text-color);
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+details > summary:hover,
+details > summary:focus-visible {
+  background-color: var(--list-group-hover);
+}
+
+details[open] > summary {
+  margin-bottom: 0.75rem;
+}
+
+details > p {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+caption {
+  color: var(--muted-color);
+  font-size: 1rem;
+}
+
+/* Bootstrap table cells use these variables for their own painted backgrounds. */
+.table {
+  --bs-table-color: var(--text-color);
+  --bs-table-bg: var(--bg-color);
+  --bs-table-border-color: var(--border-color);
+  --bs-table-striped-color: var(--text-color);
+  --bs-table-striped-bg: var(--card-bg);
+  --bs-table-active-color: var(--text-color);
+  --bs-table-active-bg: var(--card-bg);
+  --bs-table-hover-color: var(--text-color);
+  --bs-table-hover-bg: var(--card-bg);
+}
+
+.seminar-abstract {
+  white-space: pre-line;
+}
+
+.seminar-archive-event {
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.prereq-table { min-width: 48rem; }
+
+/* Display equations can scroll independently while the surrounding prose reflows. */
+main .math-block-scroll {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 0.125rem;
+}
+
+main .math-block-scroll > math[display="block"] {
+  width: max-content;
+  min-width: 100%;
+  max-width: none;
+  overflow: visible;
+}
+
+main .math-inline-scroll {
+  display: inline-block;
+  max-width: 100%;
+  overflow-x: auto;
+  vertical-align: middle;
+  padding: 0.125rem;
+}
+
+main .katex-display {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.25rem 0.125rem;
+}
+
+/* Older seminar archives use presentational font colors; retain readable emphasis. */
+main font[color="red" i], main font[color="#ff0000" i] { color: var(--danger-color); }
+main font[color="gray" i], main font[color="grey" i], main font[color="#808080" i] { color: var(--muted-color); }
+main font[color="green" i], main font[color="#008000" i] { color: var(--success-color); }
+main font[color="orange" i], main font[color="#ffa500" i] { color: var(--warning-color); }
+main font[color="blue" i], main font[color="#0000ff" i] { color: var(--link-color); }
+main font[color="black" i], main font[color="#000000" i] { color: var(--text-color); }

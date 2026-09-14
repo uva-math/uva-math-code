@@ -34,7 +34,7 @@ HERE = pathlib.Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
 
 GUARD = "UVA_SCHEDULE_HOOK"
-SHEET_FILES = ("schedule.tex", "schedule.pdf")
+SHEET_FILES = ("schedule.tex", "schedule.pdf", "schedule.html")
 
 # The build also rewrites the term name inside these, so they are part of what a
 # refresh may legitimately change and must be committed with it at a rollover.
@@ -159,7 +159,7 @@ def main() -> int:
 
 
 def _sheet_paths(root: pathlib.Path) -> list[str]:
-    """schedule.tex/.pdf plus whatever archival slug this term uses."""
+    """Current TeX, PDF, HTML and whatever archival slug this term uses."""
     paths = list(SHEET_FILES)
     try:
         import schedule_build

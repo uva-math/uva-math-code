@@ -17,13 +17,13 @@ nav_nesting: true
     {% for p in sorted_pages %}
     {% unless p.permalink contains "/ims/workshop-fall-2018/" %}
       {% if p.nav_parent == "IMS" and p.nav_id and p.permalink != "/ims/analysis2015/" %}
-      <li><h3><a href="{{site.url}}{{p.url}}">{{p.nav_id}}</a></h3></li>
+      <li><h2><a href="{{site.url}}{{p.url}}">{{p.nav_id}}</a></h2></li>
       {% endif %}
     {% endunless %}
     {% endfor %}
     </ul>
   </div>
   <div class="col-md-3">
-    <img src="{{ site.url }}/img/people/Avatar_image.png" style="max-width:100%;max-height:150px;height:auto;width:auto;" class="hidden-sm-down" alt="UVA Mathematics Logo" title="UVA Mathematics Logo">
+    <img src="{{ site.url }}/img/people/Avatar_image.png" style="max-width:100%;max-height:150px;height:auto;width:auto;" class="hidden-sm-down" alt="UVA Mathematics Logo">
   </div>
 </div>

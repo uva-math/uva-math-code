@@ -16,7 +16,7 @@ more-text: Abstracts
 nav_parent: IMS
 ---
 
-<h5 class="mt-3 mb-4"><a href="https://sites.google.com/view/yair-minsky/">Yair Minsky (Yale University)</a></h5>
+<h2 class="mt-3 mb-4"><a href="https://sites.google.com/view/yair-minsky/">Yair Minsky (Yale University)</a></h2>
 
 <ul>
   <li>
@@ -37,7 +37,7 @@ nav_parent: IMS
 
 ---
 
-### Hyperbolic 3-manifolds, their structure and deformations
+## Hyperbolic 3-manifolds, their structure and deformations
 
 *Lecture 1: November 13, 2017. Time and location: 5-6pm, Physics 203*
 
@@ -45,7 +45,7 @@ nav_parent: IMS
 
 ---
 
-### Between 2 and 3 dimensions: Teichmuller theory, pleated surfaces, and the complex of curves
+## Between 2 and 3 dimensions: Teichmuller theory, pleated surfaces, and the complex of curves
 
 *Lecture 2: November 14, 2017. Time and location: 5-6pm, Rouss 410*
 
@@ -53,10 +53,13 @@ nav_parent: IMS
 
 ---
 
-### Quantitative models, Thurston's skinning map, and beyond
+## Quantitative models, Thurston's skinning map, and beyond
 
 *Lecture 3: November 15, 2017. Time and location: 5-6pm, Rouss 410*
 
 **Abstract:** While the theory has had many successes, we are still far from having a complete "effective" recipe for predicting the geometry of a hyperbolic 3-manifold from its topological description. I will describe some ongoing work in this direction, and some remaining questions.
 
 
+
+
+<p><a href="/img/IMS/Minsky_poster092517.html">Event poster text (HTML)</a>.</p>

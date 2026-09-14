@@ -1,95 +1,97 @@
-.highlight  { background: #F1F1EF; }
-.highlight .hll { background-color: #ffffcc }
-.highlight .c { color: #8f5902; font-style: italic } /* Comment */
-.highlight .err { color: #a40000; border: 1px solid #ef2929 } /* Error */
-.highlight .g { color: #000000 } /* Generic */
-.highlight .k { color: #204a87; font-weight: bold } /* Keyword */
-.highlight .l { color: #000000 } /* Literal */
-.highlight .n { color: #000000 } /* Name */
-.highlight .o { color: #ce5c00; font-weight: bold } /* Operator */
-.highlight .x { color: #000000 } /* Other */
-.highlight .p { color: #000000; font-weight: bold } /* Punctuation */
-.highlight .cm { color: #8f5902; font-style: italic } /* Comment.Multiline */
-.highlight .cp { color: #8f5902; font-style: italic } /* Comment.Preproc */
-.highlight .c1 { color: #8f5902; font-style: italic } /* Comment.Single */
-.highlight .cs { color: #8f5902; font-style: italic } /* Comment.Special */
-.highlight .gd { color: #a40000 } /* Generic.Deleted */
-.highlight .ge { color: #000000; font-style: italic } /* Generic.Emph */
-.highlight .gr { color: #ef2929 } /* Generic.Error */
-.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
-.highlight .gi { color: #00A000 } /* Generic.Inserted */
-.highlight .go { color: #000000; font-style: italic } /* Generic.Output */
-.highlight .gp { color: #8f5902 } /* Generic.Prompt */
-.highlight .gs { color: #000000; font-weight: bold } /* Generic.Strong */
-.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
-.highlight .gt { color: #a40000; font-weight: bold } /* Generic.Traceback */
-.highlight .kc { color: #204a87; font-weight: bold } /* Keyword.Constant */
-.highlight .kd { color: #204a87; font-weight: bold } /* Keyword.Declaration */
-.highlight .kn { color: #204a87; font-weight: bold } /* Keyword.Namespace */
-.highlight .kp { color: #204a87; font-weight: bold } /* Keyword.Pseudo */
-.highlight .kr { color: #204a87; font-weight: bold } /* Keyword.Reserved */
-.highlight .kt { color: #204a87; font-weight: bold } /* Keyword.Type */
-.highlight .ld { color: #000000 } /* Literal.Date */
-.highlight .m { color: #0000cf; font-weight: bold } /* Literal.Number */
-.highlight .s { color: #2e7a06 } /* Literal.String */
-.highlight .na { color: #c4a000 } /* Name.Attribute */
-.highlight .nb { color: #204a87 } /* Name.Builtin */
-.highlight .nc { color: #000000 } /* Name.Class */
-.highlight .no { color: #000000 } /* Name.Constant */
-.highlight .nd { color: #5c35cc; font-weight: bold } /* Name.Decorator */
-.highlight .ni { color: #ce5c00 } /* Name.Entity */
-.highlight .ne { color: #cc0000; font-weight: bold } /* Name.Exception */
-.highlight .nf { color: #000000 } /* Name.Function */
-.highlight .nl { color: #f57900 } /* Name.Label */
-.highlight .nn { color: #000000 } /* Name.Namespace */
-.highlight .nx { color: #000000 } /* Name.Other */
-.highlight .py { color: #000000 } /* Name.Property */
-.highlight .nt { color: #204a87; font-weight: bold } /* Name.Tag */
-.highlight .nv { color: #000000 } /* Name.Variable */
-.highlight .ow { color: #204a87; font-weight: bold } /* Operator.Word */
-.highlight .w { color: #f8f8f8; text-decoration: underline } /* Text.Whitespace */
-.highlight .mf { color: #0000cf; font-weight: bold } /* Literal.Number.Float */
-.highlight .mh { color: #0000cf; font-weight: bold } /* Literal.Number.Hex */
-.highlight .mi { color: #0000cf; font-weight: bold } /* Literal.Number.Integer */
-.highlight .mo { color: #0000cf; font-weight: bold } /* Literal.Number.Oct */
-.highlight .sb { color: #2e7a06 } /* Literal.String.Backtick */
-.highlight .sc { color: #2e7a06 } /* Literal.String.Char */
-.highlight .sd { color: #8f5902; font-style: italic } /* Literal.String.Doc */
-.highlight .s2 { color: #2e7a06 } /* Literal.String.Double */
-.highlight .se { color: #2e7a06 } /* Literal.String.Escape */
-.highlight .sh { color: #2e7a06 } /* Literal.String.Heredoc */
-.highlight .si { color: #2e7a06 } /* Literal.String.Interpol */
-.highlight .sx { color: #2e7a06 } /* Literal.String.Other */
-.highlight .sr { color: #2e7a06 } /* Literal.String.Regex */
-.highlight .s1 { color: #2e7a06 } /* Literal.String.Single */
-.highlight .ss { color: #2e7a06 } /* Literal.String.Symbol */
-.highlight .bp { color: #3465a4 } /* Name.Builtin.Pseudo */
-.highlight .vc { color: #000000 } /* Name.Variable.Class */
-.highlight .vg { color: #000000 } /* Name.Variable.Global */
-.highlight .vi { color: #000000 } /* Name.Variable.Instance */
-.highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
-
-.lineno {background-color: #DADADA;}
-
-/* Make line numbers unselectable: excludes line numbers from copy-paste user ops */
-.lineno::-moz-selection {background-color: transparent;} /* Mozilla specific */
-.lineno::selection {background-color: transparent;} /* Other major browsers */
-
-.highlight .lineno {padding: 0 5px; border-right:1px solid #ccc; -webkit-user-select: none;-moz-user-select: none; -o-user-select: none;}
-.highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
-
-.highlighter-rouge
-{
-  color: #2e7a06;
+/* Rouge syntax colors, with readable text on every code surface in both themes. */
+:root {
+  --syntax-bg: #f8f9fa;
+  --syntax-text: #212529;
+  --syntax-comment: #6b5300;
+  --syntax-keyword: #204a87;
+  --syntax-number: #2146a6;
+  --syntax-string: #236300;
+  --syntax-attribute: #725300;
+  --syntax-operator: #984100;
+  --syntax-decorator: #6333a8;
+  --syntax-error: #a40000;
+  --syntax-highlight: #fff3c4;
+  --syntax-line-bg: #edf0f3;
+  --syntax-line-text: #555e68;
 }
 
-[data-theme="dark"] .highlighter-rouge
-{
-  color: #a8e28a;
+[data-theme="dark"] {
+  --syntax-bg: #1a2a3f;
+  --syntax-text: #e8e8e8;
+  --syntax-comment: #d9c394;
+  --syntax-keyword: #9dccff;
+  --syntax-number: #b3c6ff;
+  --syntax-string: #a8e28a;
+  --syntax-attribute: #f1d28a;
+  --syntax-operator: #ffc175;
+  --syntax-decorator: #dab6ff;
+  --syntax-error: #ffa49c;
+  --syntax-highlight: #243448;
+  --syntax-line-bg: #243448;
+  --syntax-line-text: #bac4d0;
 }
 
-[data-theme="dark"] a .highlighter-rouge,
-[data-theme="dark"] a code.highlighter-rouge
-{
-  color: inherit;
+main pre, main code {
+  font-size: 1rem;
 }
+
+.highlight, .highlight pre, .highlight code {
+  background-color: var(--syntax-bg);
+  color: var(--syntax-text);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.highlight .hll { background-color: var(--syntax-highlight); }
+.highlight :is(.c, .cm, .cp, .c1, .cs, .sd, .gp) { color: var(--syntax-comment); }
+.highlight :is(.c, .cm, .cp, .c1, .cs, .sd) { font-style: italic; }
+.highlight :is(.k, .kc, .kd, .kn, .kp, .kr, .kt, .nt, .ow) { color: var(--syntax-keyword); font-weight: bold; }
+.highlight :is(.nb, .bp) { color: var(--syntax-keyword); }
+.highlight :is(.m, .mf, .mh, .mi, .mo, .il) { color: var(--syntax-number); font-weight: bold; }
+.highlight :is(.s, .sb, .sc, .s2, .se, .sh, .si, .sx, .sr, .s1, .ss, .gi) { color: var(--syntax-string); }
+.highlight .na { color: var(--syntax-attribute); }
+.highlight :is(.o, .ni, .nl) { color: var(--syntax-operator); }
+.highlight .o { font-weight: bold; }
+.highlight :is(.nd, .gu) { color: var(--syntax-decorator); font-weight: bold; }
+.highlight :is(.err, .gd, .gr, .ne, .gt) { color: var(--syntax-error); }
+.highlight :is(.ne, .gt) { font-weight: bold; }
+.highlight .err { border-bottom: 1px solid currentColor; }
+.highlight :is(.g, .l, .n, .x, .p, .ld, .nc, .no, .nf, .nn, .nx, .py, .nv, .vc, .vg, .vi, .w, .ge, .go, .gs, .gh) { color: var(--syntax-text); }
+.highlight :is(.ge, .go) { font-style: italic; }
+.highlight :is(.p, .gs, .gh) { font-weight: bold; }
+
+/* The outer pre scrolls; nested code and line-number tables do not add scroll areas. */
+.highlight pre {
+  max-width: 100%;
+  overflow-x: auto;
+  padding-block: 0.25rem;
+}
+
+.highlight pre code {
+  display: block;
+  white-space: pre;
+  overflow: visible;
+  word-wrap: normal;
+}
+
+.highlight pre pre {
+  max-width: none;
+  overflow: visible;
+  margin: 0;
+  padding: 0;
+}
+
+.highlight table { margin: 0; }
+.highlight .lineno {
+  padding: 0 0.5rem;
+  border-right: 1px solid var(--border-color);
+  background-color: var(--syntax-line-bg);
+  color: var(--syntax-line-text);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.lineno::-moz-selection { background-color: transparent; }
+.lineno::selection { background-color: transparent; }
+.highlighter-rouge { color: var(--syntax-string); }
+a .highlighter-rouge { color: inherit; }
