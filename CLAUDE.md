@@ -86,6 +86,26 @@ in the generated block, since the schedule length changes each term.
 
 ---
 
+## Course titles (`_data/courses.yml`)
+
+`_data/courses.yml` is generated; never hand-edit it. Its one consumer is the `course`
+include, which prints "MATH 3351 (Elementary Linear Algebra)" wherever a page cites a
+course. It therefore carries titles, units and the graduate flag only. Descriptions and
+prerequisites are the registrar's text: the site links to the catalog and does not mirror
+them, because a mirrored prerequisite goes stale silently (the old copy was three to five
+years behind SIS by September 2026).
+
+`python3 scripts/courses/update.py` (or `make courses`) rebuilds the file from the public
+SIS catalog endpoints; a bare run reports and touches nothing, `--write` applies. Run it
+once a term, or when a course is renamed. A course that a page cites but SIS no longer
+lists is kept with `sis_missing: true` and reported, so the page's sentence does not
+break; whether the page should still name that course is a content decision.
+
+The SIS endpoints need no login, but PeopleSoft answers a first request with a 302 that
+sets a session cookie, so the client must keep a cookie jar and follow the redirect.
+
+---
+
 ## Content Structure
 
 The website uses [Jekyll](https://jekyllrb.com/) to generate static content from markdown files. All website edits are managed through [GitHub](https://github.com/uva-math/uva-math-code), with changes taking approximately 5 minutes to appear on the live site.
@@ -359,7 +379,7 @@ This repository contains the source code for the University of Virginia Mathemat
    - `mathcircle/` - K-12 outreach
 
 5. **Data Files** (`_data/`)
-   - `courses.yml` - Course catalog
+   - `courses.yml` - Course titles, generated from SIS (see "Course titles" above)
    - `seminars.yml` - Seminar configurations
    - `research_areas.yml` - Research group definitions
 

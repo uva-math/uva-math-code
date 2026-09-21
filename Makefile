@@ -1,7 +1,8 @@
-.PHONY: serve serve-full invalidate deploy autodeploy deploy-local uva-arxiv schedule accessibility
+.PHONY: serve serve-full invalidate deploy autodeploy deploy-local uva-arxiv schedule courses accessibility
 
 UVA_ARXIV_PYTHON ?= python3
 SCHEDULE_PYTHON ?= python3
+COURSES_PYTHON ?= python3
 
 define jekyll_serve
 	@mkdir -p /tmp/jekyll-status
@@ -65,6 +66,10 @@ uva-arxiv:
 # Bare run reports what would change; make schedule ARGS=--write applies it.
 schedule:
 	$(SCHEDULE_PYTHON) scripts/schedule/update.py $(ARGS)
+
+# Bare run reports what would change; make courses ARGS=--write rewrites _data/courses.yml.
+courses:
+	$(COURSES_PYTHON) scripts/courses/update.py $(ARGS)
 
 # Full rendered-page structural checks; browser and manual checks are documented in scripts/README.md.
 accessibility:
