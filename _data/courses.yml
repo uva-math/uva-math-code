@@ -60,9 +60,6 @@
   number: 4110
 - name: "Mathematics of Derivative Securities (3)"
   number: 4140
-- name: "Mathematics for Physics (3)"
-  number: 4210
-  sis_missing: true
 - name: "Partial Differential Equations and Applied Mathematics (3)"
   number: 4220
 - name: "Differential Equations and Dynamical Systems (3)"
