@@ -1434,6 +1434,15 @@
       "artwork": true
     },
     {
+      "pdf": "img/IMS/Lauren-Williams-poster.pdf",
+      "sources": [],
+      "original_pages": 1,
+      "original_sha256": "df05f23a406e111888b66f7c3596b62f7f080e448a4eb9c27db5bd48a79ad221",
+      "html_alternative": "/img/IMS/Lauren-Williams-poster.html",
+      "status": "Original single-page poster; its rendering is unchanged and it is tagged as a described Figure, validated against PDF/UA-1. The complete text is in the HTML alternative.",
+      "artwork": true
+    },
+    {
       "pdf": "img/IMS/Lawler_poster.pdf",
       "sources": [],
       "original_pages": 1,
