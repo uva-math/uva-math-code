@@ -18,20 +18,20 @@ nav_parent: IMS
 <h2 class="h5 mt-1 mb-1"><a href="https://people.math.harvard.edu/~williams/">Lauren Williams</a> (Harvard University)</h2>
 
 <ul>
-	<li><strong>Lecture 1 - First Proof: Mathematicians putting AI to the test:</strong> Tuesday, November 10, 2026 | 5-6pm | Nau 101</li>
-	<li><strong>Lecture 2 - Macdonald polynomials and probability:</strong> Wednesday, November 11, 2026 | 5-6pm | Nau 101</li>
+	<li><strong>Lecture 1 - Mathematicians Putting AI to the Test:</strong> Tuesday, November 10, 2026 | 5-6pm | Nau 101</li>
+	<li><strong>Lecture 2 - Macdonald Polynomials and Probability:</strong> Wednesday, November 11, 2026 | 5-6pm | Nau 101</li>
 </ul>
 
 <!--more-->
 
 <p class="text-muted"><em>Photo credit: Lucy Lu</em></p>
 
-<h2>Lecture 1: First Proof: Mathematicians putting AI to the test</h2>
+<h2>Lecture 1: Mathematicians Putting AI to the Test</h2>
 <p><strong>Date:</strong> Tuesday, November 10, 2026 | 5-6pm<br>
 <strong>Location:</strong> Nau 101<br>
 <strong>Abstract:</strong> TBA</p>
 
-<h2>Lecture 2: Macdonald polynomials and probability</h2>
+<h2>Lecture 2: Macdonald Polynomials and Probability</h2>
 <p><strong>Date:</strong> Wednesday, November 11, 2026 | 5-6pm<br>
 <strong>Location:</strong> Nau 101<br>
 <strong>Abstract:</strong> TBA</p>
