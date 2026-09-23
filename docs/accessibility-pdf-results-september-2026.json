@@ -353,7 +353,7 @@
       "pdfua1": true,
       "managed_by": "scripts/schedule/schedule_build.py",
       "original_sha256": "9775f6fa4d2d903117be22fc43d3a94148d4f540dff82809afe3652f8a4d5a06",
-      "sha256": "52aee9298bce115722d2dcdf6574c12ea8530d79cfc80db6cfb90e7744f51173"
+      "sha256": "d68995d576621c342a97bdb2e817bd6f4834cf15db5416d4cf43bc2a70ce5e49"
     },
     {
       "pdf": "graduate/docs/DSP-GMP Info Sheets_2015 2.pdf",
@@ -2310,7 +2310,7 @@
       "pdfua1": true,
       "managed_by": "scripts/schedule/schedule_build.py",
       "original_sha256": "9775f6fa4d2d903117be22fc43d3a94148d4f540dff82809afe3652f8a4d5a06",
-      "sha256": "52aee9298bce115722d2dcdf6574c12ea8530d79cfc80db6cfb90e7744f51173"
+      "sha256": "d68995d576621c342a97bdb2e817bd6f4834cf15db5416d4cf43bc2a70ce5e49"
     },
     {
       "pdf": "seminars/colloq/files/Gilles_Fall2020.pdf",
