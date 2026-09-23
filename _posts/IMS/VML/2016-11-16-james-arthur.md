@@ -9,7 +9,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Arthur_poster1_0.jpg
-image-alt: James Arthur Poster
+image-alt: "Virginia Mathematics Lectures poster for James Arthur, University of Toronto, with three lectures on November 14, 15 and 16, 2016. It shows his portrait in front of a blackboard of formulas and a hexagonal diagram of a piece of SL(3), on a green chalkboard background."
 image-address: __SITE_URL__/img/IMS/Arthur_poster1_0.jpg
 image-tall: true
 more-text: Abstract

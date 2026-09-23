@@ -9,7 +9,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Lubotzky8x14_5_0.jpg
-image-alt: Alex Lubotzky Poster
+image-alt: "Virginia Mathematics Lectures poster for Alex Lubotzky, Hebrew University of Jerusalem: Expanders: From One-Dimensional to Multidimensional, with three lectures on November 18, 19 and 20, 2014. It shows his photograph lecturing at a laptop, on a light blue background with a pentagonal graph drawing."
 image-address: __SITE_URL__/img/IMS/Lubotzky8x14_5_0.jpg
 image-tall: true
 more-text: Abstracts

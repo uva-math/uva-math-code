@@ -9,7 +9,7 @@ categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Rich-Schwartz-poster.jpg
 image-address: __SITE_URL__/img/IMS/Rich-Schwartz-poster.pdf
-image-alt: Rich Schwartz
+image-alt: "Virginia Mathematics Lectures poster for Richard Schwartz, Brown University, with three lectures on March 23, 24 and 25, 2026. It shows his photograph sitting outdoors and a paper Moebius band, on a pastel background of folded triangles."
 image-tall: true
 more-text: Abstracts
 nav_parent: IMS

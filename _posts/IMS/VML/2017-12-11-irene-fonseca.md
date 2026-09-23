@@ -9,7 +9,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events major-news
 published: true
 image: __SITE_URL__/img/IMS/Fonseca_poster_1.jpg
-image-alt: Irene Fonseca
+image-alt: "Virginia Mathematics Lectures poster for Irene Fonseca, Carnegie Mellon University: Variational Methods for Materials and Imaging Sciences, with lectures on March 15 and 16, 2018. It shows her portrait and an image of fresco fragments used in a computer-based reconstruction, over a background of molecular models."
 image-address: __SITE_URL__/img/IMS/Fonseca_poster_1.pdf
 image-tall: true
 more-text: Abstracts of talks

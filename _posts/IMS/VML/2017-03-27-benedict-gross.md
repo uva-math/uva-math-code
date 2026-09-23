@@ -9,7 +9,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Gross_poster.jpg
-image-alt: Benedict H. Gross Poster
+image-alt: "Virginia Mathematics Lectures poster for Benedict H. Gross, Harvard University, with three lectures on March 27, 28 and 29, 2017. It shows his portrait, a plot of an elliptic curve cut by a line, and a blue torus, on a gray background with a blue frame."
 image-address: __SITE_URL__/img/IMS/Gross_poster.jpg
 image-tall: true
 more-text: Abstracts

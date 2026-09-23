@@ -9,7 +9,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Karen_Smith_poster_4_0.jpg
-image-alt: Karen Smith Poster
+image-alt: "Virginia Mathematics Lectures poster for Karen Smith, University of Michigan: Algebra, Geometry and Analysis Over Finite Fields, with three lectures from February 29 to March 2, 2016. It shows her portrait and colored algebraic surfaces, on a tan background."
 image-address: __SITE_URL__/img/IMS/Karen_Smith_poster_4_0.jpg
 image-tall: true
 more-text: Abstracts

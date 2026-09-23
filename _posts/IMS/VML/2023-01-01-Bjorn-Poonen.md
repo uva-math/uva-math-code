@@ -9,7 +9,7 @@ categories: news virginia-mathematics-lectures ims events
 published: true
 image:  __SITE_URL__/img/IMS/Poonen_poster.jpg
 image-address: __SITE_URL__/img/IMS/Poonen_poster.pdf
-image-alt: Bjorn Poonen
+image-alt: "Virginia Mathematics Lectures poster for Bjorn Poonen, MIT, with three lectures on undecidability on January 24, 25 and 26, 2023. It shows his portrait on a dark blue background of gears."
 image-tall: true
 more-text: Abstracts
 nav_parent: IMS

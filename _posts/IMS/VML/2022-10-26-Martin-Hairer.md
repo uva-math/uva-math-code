@@ -9,7 +9,7 @@ categories: news virginia-mathematics-lectures ims events
 published: true
 image:  __SITE_URL__/img/IMS/Hairer_poster.jpg
 image-address: __SITE_URL__/img/IMS/Hairer_poster.pdf
-image-alt: Martin Hairer
+image-alt: "Virginia Mathematics Lectures poster for Fields Medalist Martin Hairer, EPFL (Lausanne) and Imperial College (London), with three lectures from November 29 to December 1, 2022. It shows his portrait on a dark textured background."
 image-tall: true
 more-text: Abstracts
 nav_parent: IMS

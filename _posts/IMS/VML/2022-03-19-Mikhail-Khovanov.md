@@ -8,7 +8,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Khovanov_poster1.jpg
-image-alt: Mikhail Khovanov
+image-alt: "Virginia Mathematics Lectures poster for Mikhail Khovanov, Columbia University, with three lectures on April 18, 19 and 20, 2022. It shows his portrait outdoors in front of a building, on a dark blue background of intertwined tubes."
 image-tall: true
 # image-address: __SITE_URL__/img/IMS/???.pdf
 more-text: Abstracts

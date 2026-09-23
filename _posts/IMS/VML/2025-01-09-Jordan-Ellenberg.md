@@ -9,7 +9,7 @@ categories: news virginia-mathematics-lectures ims events major-news
 published: true
 image: __SITE_URL__/img/IMS/Jordan-Ellenberg-poster.jpg
 image-address: __SITE_URL__/img/IMS/Jordan-Ellenberg-poster.pdf
-image-alt: Jordan Ellenberg
+image-alt: "Virginia Mathematics Lectures poster for Jordan Ellenberg, University of Wisconsin, with two lectures on March 4 and 5, 2025. It shows his circular portrait and the covers of his books Shape and How Not to Be Wrong, on a dark blue circuit-pattern background."
 image-tall: true
 more-text: Abstracts
 nav_parent: IMS

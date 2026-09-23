@@ -10,7 +10,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Okounkov_poster3.jpg
-image-alt: Andrei Okounkov
+image-alt: "Virginia Mathematics Lectures poster for Andrei Okounkov, Columbia University: New Worlds for Lie Theory, with an abstract and three lectures on October 22, 23 and 24, 2018. It shows his portrait outdoors against a starry night sky with constellation lines."
 image-address: __SITE_URL__/img/IMS/Okounkov_poster3.pdf
 image-tall: true
 more-text: Abstract

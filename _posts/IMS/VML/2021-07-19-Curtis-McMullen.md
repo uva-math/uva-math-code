@@ -8,7 +8,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events 
 published: true
 image: __SITE_URL__/img/IMS/McMullen_poster.jpg
-image-alt: Curtis McMullen Poster
+image-alt: "Virginia Mathematics Lectures poster for Fields Medalist Curtis T. McMullen, Harvard University, with three lectures on November 8, 9 and 10, 2021. It shows his photograph holding a small polyhedron model, on a gray background of circle packings."
 image-tall: true
 image-address: __SITE_URL__/img/IMS/McMullen_poster.pdf
 # more-text: Lectures and abstracts

@@ -9,7 +9,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Jones_poster_3_0.jpg
-image-alt: Vaughan Jones Poster
+image-alt: "Virginia Mathematics Lectures poster for Fields Medalist Vaughan F. R. Jones, Vanderbilt University, with three lectures on April 6, 7 and 8, 2015. It shows his portrait in front of frosted branches, surrounded by blue three-dimensional knots."
 image-address: __SITE_URL__/img/IMS/Jones_poster_3_0.jpg
 image-tall: true
 more-text: Abstracts

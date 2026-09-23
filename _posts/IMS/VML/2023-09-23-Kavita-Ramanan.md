@@ -9,7 +9,7 @@ categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Kavita-Ramanan-poster.jpg
 image-address: __SITE_URL__/img/IMS/Kavita-Ramanan-poster-pdf.pdf
-image-alt: Kavita Ramanan poster
+image-alt: "Virginia Mathematics Lectures poster for Kavita Ramanan, Brown University: Tales of High-Dimensional Distributions, with three lectures on November 13, 14 and 15, 2023. It shows her circular portrait on a dark background of network lines."
 image-tall: true
 more-text: Abstracts
 nav_parent: IMS

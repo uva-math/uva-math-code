@@ -9,7 +9,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Minsky_poster092517.jpg
-image-alt: Yair Minsky Poster
+image-alt: "Virginia Mathematics Lectures poster for Yair Minsky, Yale University, with three lectures on November 13, 14 and 15, 2017. It shows his portrait, a rendered hyperbolic space with arches and red tubes, and a wireframe drawing of a nested geometric structure on a blue tiled background."
 image-address: __SITE_URL__/img/IMS/Minsky_poster092517.pdf
 image-tall: true
 more-text: Abstracts

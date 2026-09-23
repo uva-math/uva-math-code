@@ -8,7 +8,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
 image: __SITE_URL__/img/IMS/Lawler_poster.jpg
-image-alt: Greg Lawler
+image-alt: "Virginia Mathematics Lectures poster for Wolf Prize recipient Gregory F. Lawler, University of Chicago, with three lectures on February 12, 13 and 14, 2020. It shows his portrait, an orange random-walk path on a dark background, and a colored three-dimensional surface plot."
 image-tall: true
 image-address: __SITE_URL__/img/IMS/Lawler_poster.pdf
 more-text: Lectures and abstracts

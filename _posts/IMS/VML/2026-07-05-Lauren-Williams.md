@@ -9,7 +9,7 @@ categories: news virginia-mathematics-lectures ims events major-news
 published: true
 image: __SITE_URL__/img/IMS/Lauren-Williams-poster.jpg
 image-address: __SITE_URL__/img/IMS/Lauren-Williams-poster.pdf
-image-alt: Lauren Williams
+image-alt: "Virginia Mathematics Lectures poster for Lauren Williams, Harvard University, with two lectures on November 10 and 11, 2026. It shows her photograph in front of a large round lens, and diagrams of arrows and circles, on a dark blue background of circuit patterns, formulas and the outline of a human head."
 image-tall: true
 more-text: Abstracts
 nav_parent: IMS

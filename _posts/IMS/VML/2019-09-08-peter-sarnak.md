@@ -8,7 +8,7 @@ comments: false
 categories: news virginia-mathematics-lectures ims events major-news 
 published: true
 image: __SITE_URL__/img/IMS/Sarnak-poster.jpg
-image-alt: Peter Sarnak
+image-alt: "Virginia Mathematics Lectures poster for Peter Sarnak, Princeton University and IAS, with three lectures on November 4, 5 and 6, 2019. It shows his portrait, the quadratic form q(x1, ..., xn) equals the sum over i, j from 1 to n of a_ij x_i x_j, a rendered cubic surface, and two title pages of Diophantus's Arithmetica, on a blue patterned background."
 image-address: __SITE_URL__/img/IMS/Sarnak-poster.pdf
 image-tall: true
 more-text: Abstracts

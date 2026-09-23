@@ -9,7 +9,7 @@ categories: news virginia-mathematics-lectures ims events major-news
 published: true
 image: __SITE_URL__/img/IMS/Ravi-Vakil-poster.jpg
 image-address: __SITE_URL__/img/IMS/Ravi-Vakil-poster.pdf
-image-alt: Ravi Vakil
+image-alt: "Virginia Mathematics Lectures poster for Ravi Vakil, President of the American Mathematical Society, Stanford University, with two lectures and a town hall on September 8, 9 and 10, 2025. It shows his circular portrait and the American Mathematical Society logo on a blue background with curved surfaces."
 image-tall: true
 more-text: Abstracts
 nav_parent: IMS
