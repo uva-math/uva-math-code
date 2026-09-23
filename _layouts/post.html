@@ -29,11 +29,9 @@
 
       {% include categories.html %}
 
-      {% assign post_image_path = page.image | downcase %}
-      {% assign post_image_alt = page.image-alt | downcase %}
       {% if page.image and page.image-alt %}
-        {% unless post_image_path contains 'poster' or post_image_alt contains 'poster' or page.image-address contains '.pdf' or page.categories contains 'virginia-math-bulletin' %}
-          <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:400px;height:auto;width:auto" alt="{{ page.image-alt | escape }}" class="mb-4">
+        {% unless page.categories contains 'virginia-math-bulletin' %}
+          <img src="{{ page.image | replace: '__SITE_URL__', site.url }}" style="max-width:100%;max-height:{% if page.image-tall %}800{% else %}400{% endif %}px;height:auto;width:auto" alt="{{ page.image-alt | escape }}" class="mb-4">
         {% endunless %}
       {% endif %}
 

@@ -192,13 +192,13 @@ image-alt: "Description of the image for accessibility"
 
 #### Optional Front Matter Fields
 
-- `image` - Path to the post image (use `__SITE_URL__` prefix: `__SITE_URL__/img/news_events/image.jpg`). The image is not a link. It is scaled to at most 400px tall on the post page and in the featured box, 175px in the carousel, and 240px in the news grid and category pages.
+- `image` - Path to the post image (use `__SITE_URL__` prefix: `__SITE_URL__/img/news_events/image.jpg`). The image is not a link. It is scaled to at most 400px tall on the post page (800px with `image-tall: true`, used for posters) and in the featured box, 175px in the carousel, and 240px in the news grid and category pages.
 - `image-alt` - Alternative text describing the image. **Required for the image to appear**: a post with `image` but no `image-alt` shows no image on the post page or in any news list.
-- `image-address` - Only matters when it points to a `.pdf`: the image is then suppressed, as it is when the image path or alt text contains "poster" and for `virginia-math-bulletin` posts. Link the PDF from the post body instead.
+- `image-address` - Path to the poster PDF, for poster posts. Posters are shown as the post image; the image is suppressed only for `virginia-math-bulletin` posts.
 - `hide-this-item: true` - Hides post from main page but not from category pages or all news
 - `permalink` - Custom URL for the post (default is `/YYYY/MM/name-of-the-post`)
 
-`image-tall`, `image-wide`, `more-text` and `good-md` still appear in older posts but have no effect in the news templates; only the AWM blog roll (`awm/blog.html`) still reads `image-address`, `image-wide` and `more-text`.
+`image-wide`, `more-text` and `good-md` still appear in older posts but have no effect in the news templates; only the AWM blog roll (`awm/blog.html`) still reads `image-address`, `image-wide` and `more-text`.
 
 ### Categories
 

@@ -8,10 +8,8 @@
 {% else %}
   <p><time datetime="{{ news_item.date | date: '%Y-%m-%d' }}">{{ news_item.date | date: "%B %-d, %Y" }}</time></p>
 {% endif %}
-{% assign news_image_path = news_item.image | downcase %}
-{% assign news_image_alt = news_item.image-alt | downcase %}
 {% if news_item.image and news_item.image-alt %}
-  {% unless news_image_path contains 'poster' or news_image_alt contains 'poster' or news_item.image-address contains '.pdf' or news_item.categories contains 'virginia-math-bulletin' %}
+  {% unless news_item.categories contains 'virginia-math-bulletin' %}
     <img src="{{ news_item.image | replace: '__SITE_URL__', site.url }}"
          alt="{{ news_item.image-alt | escape }}"
          style="max-width:100%;max-height:{{ include.image_height | default: 240 }}px;height:auto;width:auto"
