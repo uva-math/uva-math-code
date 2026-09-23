@@ -8,6 +8,6 @@ position: Assistant Professor, General Faculty
 office: 225 Kerchof Hall
 phone:
 email: vyr5zh@virginia.edu
-image:
+image: __SITE_URL__/img/people-since-2024/2026/vyr5zh.jpg
 personal_page:
 ---
