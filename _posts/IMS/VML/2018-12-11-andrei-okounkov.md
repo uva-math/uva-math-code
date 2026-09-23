@@ -9,7 +9,7 @@ permalink: /ims/lectures/andrei-okounkov/
 comments: false
 categories: news virginia-mathematics-lectures ims events
 published: true
-image: __SITE_URL__/img/IMS/Okounkov_poster3.png
+image: __SITE_URL__/img/IMS/Okounkov_poster3.jpg
 image-alt: Andrei Okounkov
 image-address: __SITE_URL__/img/IMS/Okounkov_poster3.pdf
 image-tall: true
