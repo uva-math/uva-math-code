@@ -321,8 +321,7 @@ Currently: Georgia Tech, Visiting Assistant Professor
 - **Peter Bonventre**<br>
 University of Kentucky, Postdoc<br>
 *Comparison of Models for Equivariant Operads*<br>
-(Advisor: Mike Hill)<br>
-Currently: National Security Agency
+(Advisor: Mike Hill)
 
 - **Katelynn Kochalski**<br>
 SUNY Cortland/SUNY Geneseo Assistant Professor<br>
