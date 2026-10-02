@@ -49,14 +49,15 @@ letter of your last name.
 {% include CONTACTS/major_intake.md%}
 
 <ol>
-<li value="4">After the discussion with the advisor, send the declaration advisor a major (or minor) declaration form for official approval, prefilled with the courses you discussed at your meeting. Once admitted to the major/minor, you will be assigned to a new advisor in the department for ongoing advising  during course registration periods etc.
+<li value="4">After the discussion with the advisor, submit your major declaration using the <a href="https://college.as.virginia.edu/declaration-major-and-minor-form-and-instructions">Declare a Major or Minor form</a> on the College website. Instructions for logging in and accessing the form can be found at that link. Be sure to select the correct major (or minor) so that we receive your declaration. Once admitted to the major/minor, you will be assigned to a new advisor in the department for ongoing advising during course registration periods.
 </li>
 </ol>
 
----
+Once you have submitted your declaration, you can expect an email response from us in 5 business days during the Fall/Spring semester and within 10 business days at any other time.
 
-- **[Declaration of math major form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)**
-- **[Declaration of math minor form - DocuSign link](https://na2.docusign.net/Member/PowerFormSigning.aspx?PowerFormId=8ac06762-93a5-4b69-a317-096a66807599&env=na2&acct=cb8f3d97-c474-4da1-9ceb-17a5b1681cc6&v=2)**
+**Having trouble using the form?** Email [CollegeForms@virginia.edu](mailto:CollegeForms@virginia.edu) with as much information as possible about your specific problem.
+
+**Haven't heard back from us?** Thank you for your patience! If your declaration is still in progress but you haven't received an email from us in the time windows mentioned above, feel free to email us at [math-help@virginia.edu](mailto:math-help@virginia.edu), including your full name, computing ID, and the major/minor you are trying to declare.
 
 <!--
 ---
