@@ -24,6 +24,7 @@ A department award recognizing graduate teaching assistants for their exceptiona
 - 2018, Zach Gates
 - 2016, Xiang Wan
 - 2014, Scott Atkinson
+- 2013, Ajay Chandra
 
 ---
 
@@ -41,72 +42,36 @@ A University-wide award honoring graduate students from all disciplines for exce
 
 ---
 
-## Class of 1985 Fellowship for Creative Teaching
+## Other teaching awards
 
-- 2018, Mike Reeks
-
----
-
-## Frank Finger Graduate Fellowship Award for Teaching
-
-- 2015, Katelynn Kochalski
+- 2018, Mike Reeks, Class of 1985 Fellowship for Creative Teaching
+- 2015, Katelynn Kochalski, Frank Finger Graduate Fellowship Award for Teaching
 
 ---
 
-## Teaching Resource Center Graduate Teaching Assistant Award
+## Dissertation fellowships
 
-- 2013, Ajay Chandra
-
----
-
-## Jefferson Fellowship (Jefferson Scholars Foundation)
-
-- 2026, Max Sanchez Garza
-- 2025, Alejandro De Las Penas Castano
-- 2023, Yaolong Shen
-- 2022, Jiajun Yan
-- 2020, Ross Akhmechet
+- 2026, Max Sanchez Garza, Jefferson Fellowship
+- 2025, Felipe Flores, Simons Foundation Dissertation Fellowship
+- 2025, Alejandro De Las Penas Castano, Jefferson Dissertation Year Fellowship
+- 2024, Louisa Liles, Roselle-Huneke Award in Mathematics
+- 2023, Yaolong Shen, Jefferson Scholars Foundation Dissertation Fellowship
+- 2022, Nhan Nguyen, Roselle-Huneke Award in Mathematics
+- 2022, Jiajun Yan, GSAS Jefferson Fellowship
+- 2020, Ross Akhmechet, Jefferson Dissertation Year Fellowship
 
 ---
 
-## Roselle-Huneke Award in Mathematics
+## Thesis prizes
 
-- 2024, Louisa Liles
-- 2022, Nhan Nguyen
-
----
-
-## Simons Foundation Dissertation Fellowship
-
-- 2025, Felipe Flores
+- 2024, Weinan Zhang, Gold Prize, 2023 ICCM Best Thesis Award
 
 ---
 
-## ICCM Best Thesis Award, Gold Prize
+## Other fellowships and honors
 
-- 2024, Weinan Zhang
-
----
-
-## NSF Graduate Research Fellowship
-
-- 2024, Darien Farnham
-- 2023, Lam Nguyen
-
----
-
-## MOST Fellowship, National Museum of Mathematics
-
-- 2025, Louisa Liles
-
----
-
-## Terrill Graduate Fellowship
-
-- 2023, David Winters
-
----
-
-## Virginia Space Grant Consortium Fellowship
-
-- 2013, Zachary Bradshaw
+- 2025, Louisa Liles, MOST Fellow, National Museum of Mathematics
+- 2024, Darien Farnham, NSF Graduate Research Fellowship
+- 2023, Lam Nguyen, NSF Graduate Research Fellowship
+- 2023, David Winters, Terrill Graduate Fellowship, second place
+- 2013, Zachary Bradshaw, Virginia Space Grant Consortium Fellowship
