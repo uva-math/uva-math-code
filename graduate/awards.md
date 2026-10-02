@@ -52,12 +52,12 @@ A University-wide award honoring graduate students from all disciplines for exce
 ## Dissertation fellowships
 
 - 2026, Max Sanchez Garza, Jefferson Fellowship
-- 2025, Felipe Flores, Simons Foundation Dissertation Fellowship (inaugural class)
+- 2025, Felipe Flores, Simons Foundation Dissertation Fellowship
 - 2025, Alejandro De Las Penas Castano, Jefferson Dissertation Year Fellowship
 - 2024, Louisa Liles, Roselle-Huneke Award in Mathematics
 - 2023, Yaolong Shen, Jefferson Scholars Foundation Dissertation Fellowship
-- 2022, Nhan Nguyen, Roselle-Huneke Award in Mathematics (first recipient)
-- 2022, Jiajun Yan, GSAS Jefferson Fellowship (first cohort)
+- 2022, Nhan Nguyen, Roselle-Huneke Award in Mathematics
+- 2022, Jiajun Yan, GSAS Jefferson Fellowship
 - 2020, Ross Akhmechet, Jefferson Dissertation Year Fellowship
 
 ---
