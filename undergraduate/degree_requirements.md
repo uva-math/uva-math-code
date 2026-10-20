@@ -40,20 +40,13 @@ screen readers and can be resized.</p>
 <b>If you have questions about the requirements, please reach out to your intake advisor.</b> The intake advisor list is below, based on the first
 letter of your last name.
 
-<h2 class="mb-3 mt-5">To Declare a Major/Minor:</h2>
-
-1. Review the above document for prerequisites to declare the major/minor and the requirements to earn the degree
-2. Select a concentration (if majoring) and create a tentative list of proposed courses that will earn the degree
-3. Contact the appropriate major declaration advisor below (according to your last name) to review your plan
-
 {% include CONTACTS/major_intake.md%}
 
-<ol>
-<li value="4">After the discussion with the advisor, submit your major declaration using the <a href="https://college.as.virginia.edu/declaration-major-and-minor-form-and-instructions">Declare a Major or Minor form</a> on the College website. Instructions for logging in and accessing the form can be found at that link. Be sure to select the correct major (or minor) so that we receive your declaration. Once admitted to the major/minor, you will be assigned to a new advisor in the department for ongoing advising during course registration periods.
-</li>
-</ol>
+<h2 class="mb-3 mt-5">To Declare a Major/Minor:</h2>
 
-Once you have submitted your declaration, you can expect an email response from us in 5 business days during the Fall/Spring semester and within 10 business days at any other time.
+1. Review the UREG [Math Major](https://records.ureg.virginia.edu/preview_program.php?catoid=72&poid=11827) or [Math Minor](https://records.ureg.virginia.edu/preview_program.php?catoid=72&poid=11829) page for prerequisites to declare the major/minor and the requirements to earn the degree.
+2. Submit your major declaration using the [Declaration of Major and Minor form](https://college.as.virginia.edu/declaration-major-and-minor-form-and-instructions) on the College of Arts and Sciences website. Instructions for logging in and accessing the form can be found at that link. Be sure to select the correct major (or minor) so that our department receives your declaration.
+3. Once you have submitted your declaration, you can expect an email response from the Math Department in 5 business days during the Fall/Spring semester and within 10 business days at any other time. This email will include information about steps for finalizing your declaration, including a full list of courses you propose for meeting the requirements.
 
 **Having trouble using the form?** Email [CollegeForms@virginia.edu](mailto:CollegeForms@virginia.edu) with as much information as possible about your specific problem.
 
