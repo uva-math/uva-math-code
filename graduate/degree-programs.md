@@ -51,6 +51,8 @@ Successfully teaching and directing discussion sections of undergraduate courses
 
 Written under the supervision of the major advisor, the PhD dissertation must contain original contributions to the field of mathematics. The main results of the dissertation are presented at a public oral defense. A committee consisting of the major advisor and three other faculty members (two from within the Department and one from outside) must approve the dissertation and defense in order for the dissertation to be accepted by the faculty.
 
+See the [departmental policy on Ph.D. dissertation defenses]({{site.url}}/graduate/defense-policy/) for advance distribution of the dissertation and the in-person defense requirement.
+
 ---
 
 ## Masters Degree Requirements
