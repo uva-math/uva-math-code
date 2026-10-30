@@ -180,10 +180,11 @@ SIS, count it instead of modelling it.
 Advisors are deliberately not seated in the range containing their own initial, and the
 assignment is shuffled rather than alphabetical.
 
-The lead is tagged "(lead declaration advisor)", not "(lead advisor)". Gromoll asked for
-the narrower wording in September 2026: the bare "lead advisor" read to students as a
-general escalation path and sent him questions belonging to the DUP. The tag exists for the
-intake circle, not for students. Carry the full wording across at a rollover.
+The lead is not tagged on the page. Gromoll asked in September 2026 to narrow "(lead
+advisor)" to "(lead declaration advisor)", and in October 2026 to drop the tag entirely:
+students outside his last-name range wrote to him because of it. The lead role (training
+and answering the other intake advisors) is for the intake circle, not for students. Do not
+reintroduce a tag at a rollover.
 
 ---
 
