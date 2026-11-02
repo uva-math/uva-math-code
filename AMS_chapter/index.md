@@ -18,11 +18,11 @@ To become a member and enjoy extra perks, such as being added to the chapter mai
 
 The University of Virginia AMS graduate student chapter executive committee consists of:
 <ul>
-  <li>President: <a href="https://pbrunialti.github.io/">Pedro Brunialti Lima de Andrade</a></li>
+  <li>President: <a href="https://math.virginia.edu/people/taq4re/">Brandon Sisler</a></li>
   <li>Vice President: <a href="https://math.virginia.edu/people/ftq4mr/">Astrid Lilly</a></li>
-  <li>Secretary: <a href="https://sites.google.com/view/raulhdz">Raúl Hernández-González</a></li>
+  <li>Secretary: <a href="https://math.virginia.edu/people/frj5jd/">Vadim Leshkov</a></li>
   <li>Treasurer: <a href="https://awnathan1893.github.io/">Aaratrick Basu</a></li>
-  <li>Member At Large: <a href="https://math.virginia.edu/people/frj5jd/">Vadim Leshkov</a></li>
+  <li>Member At Large: <a href="https://math.virginia.edu/people/bye8nr/">Neelabjya Das</a></li>
 </ul>
 Fellow AMS graduate student chapters are most welcome and encouraged to get in touch with us for joint social events!
 
