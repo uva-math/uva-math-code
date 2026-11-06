@@ -9,8 +9,8 @@ published: true
 good-md: true
 ---
 
-Congratulations to [Julie Bergner]({{site.url}}/people/jeb2md) on being elected to the 2027 Class of Fellows of the [American Mathematical Society](https://www.ams.org/grants-awards/ams-fellows/ams-fellows)! The AMS Fellows program recognizes mathematicians for exceptional contributions to the creation, exposition, advancement, communication, and use of mathematics. Fellows are nominated by their peers, and each year's class is capped at a small fraction of one percent of the Society's membership.
-
-<!--more-->
+Congratulations to [Julie Bergner]({{site.url}}/people/jeb2md) on being elected to the 2027 Class of Fellows of the [American Mathematical Society](https://www.ams.org/grants-awards/ams-fellows/ams-fellows)! The AMS Fellows program recognizes mathematicians for exceptional contributions to the creation, exposition, advancement, communication, and use of mathematics.
 
 Bergner's research is in homotopy theory, algebraic topology, and algebraic K-theory.
+
+<!--more-->
