@@ -121,6 +121,19 @@ staged **PDFs** as well as sources — the PDF is the artifact actually served, 
 room-bearing PDF can otherwise be committed alongside a perfectly clean `.tex`. Hooks
 are not cloned, so both need installing once per working copy.
 
+## EGMT sections taught by the department
+
+The sheet also carries the Engagements (EGMT) sections taught by department members.
+`update.py` fetches the HoosList `Engagements` group alongside `Mathematics` and keeps
+a section when an instructor's full name matches a published `_departmentpeople/`
+entry (`name` + `lastname`) or an instructor of a MATH section that term. They sit
+in `\Ch{EGMT ...}` blocks after the Seminars block, before the independent-study
+block; the refresh adds, updates and drops them like MATH rows. The instructor cell
+is `Topic (Surname)`, and the header's units field carries the half-term date range
+(`2 units, Oct 15--Dec 8`); a `DATES` note fires if a row's dates disagree with it.
+A name that HoosList spells differently from the roster is missed silently, so
+glance at the HoosList Engagements page at rollover.
+
 ## What the refresh decides and what it reports
 
 Sections match on **class number**, stable for the life of a term. Three cells get

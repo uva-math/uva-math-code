@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Update the printable term class-schedule sheet end to end.
 
-Pulls the current numbers from HoosList, rewrites the cells, adds the sections
+Pulls the current numbers from HoosList (the Mathematics group, plus the EGMT
+sections taught by department members), rewrites the cells, adds the sections
 HoosList has added and drops the ones it no longer lists, recompiles schedule.pdf,
 restages the archival per-term copy, and refreshes the link blocks. The result is a
 snapshot of HoosList. The few things a cell cannot express -- a retitled course, a
@@ -28,7 +29,7 @@ import sys
 
 sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent))
 import schedule_build                                     # noqa: E402
-from hooslist_fetch import fetch_sections                 # noqa: E402
+from hooslist_fetch import fetch_sheet_sections           # noqa: E402
 from schedule_refresh import refresh, report              # noqa: E402
 
 REPO = pathlib.Path(__file__).resolve().parents[2]
@@ -58,7 +59,7 @@ def main() -> int:
     semester = args.semester or schedule_build.detect_semester(tex)
 
     data = (json.load(open(args.data)) if args.data
-            else fetch_sections(semester=semester, chrome=args.chrome))
+            else fetch_sheet_sections(semester, site, chrome=args.chrome))
 
     result, changes, notes = refresh(tex, data)
     report(data, changes, notes)

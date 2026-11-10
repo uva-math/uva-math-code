@@ -162,7 +162,7 @@ def render(tex, path):
             out.append(f'<p>{plain(units)}</p>')
         # A group headed by something other than a course code (the Seminars group)
         # lists course numbers in the section field and "Topic (Instructor)" cells.
-        seminar_group = not re.fullmatch(r'MATH \d{4}', code.strip())
+        seminar_group = not re.fullmatch(r'[A-Z]{2,4} \d{4}', code.strip())
         if course['rows']:
             out.append('<ul class="schedule-sections">')
             for macro, fields in course['rows']:
@@ -170,14 +170,18 @@ def render(tex, path):
                 instructor = fields[-1]
                 kind = 'Discussion section' if macro == 'Dx' else 'Section'
                 heading, label = f'{kind} {plain(section)}', 'Instructor'
+                topic = re.fullmatch(r'(.+?)\s*\(([^()]+)\)\s*', instructor)
                 if seminar_group:
-                    topic = re.fullmatch(r'(.+?)\s*\(([^()]+)\)\s*', instructor)
                     heading = f'MATH {plain(section)}'
                     if topic:
                         heading += f': {plain(topic.group(1))}'
                         instructor = topic.group(2)
                     else:
                         label = 'Topic and instructor'
+                elif topic:
+                    # EGMT rows: one course title, a topic per section.
+                    heading += f': {plain(topic.group(1))}'
+                    instructor = topic.group(2)
                 out += [f'<li><h3>{heading}</h3>', '<dl>',
                         f'<dt>Class number</dt><dd>{plain(number)}</dd>',
                         f'<dt>Meetings</dt><dd>{plain(meeting)}</dd>',

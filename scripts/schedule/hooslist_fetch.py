@@ -206,22 +206,25 @@ def surname(full: str, ambiguous: set[str]) -> str:
     return last
 
 
+def ambiguous_surnames(names) -> set[str]:
+    """Surnames that two different full names share."""
+    seen: dict[str, set[str]] = {}
+    for name in names:
+        name = name.strip()
+        if name in ("", "-", "TBD"):
+            continue
+        last = SURNAME_OVERRIDES.get(name, name.split()[-1])
+        seen.setdefault(last, set()).add(name)
+    return {k for k, v in seen.items() if len(v) > 1}
+
+
 def collect(page: str) -> list[dict]:
     # Matched on the class alone rather than on the href, which is "#" as served but
     # absolute once a browser has resolved it. No attribute holds a raw '>' (the markup
     # escapes them), so [^>]* stops at the end of the tag.
     anchors = re.findall(r"<a\b[^>]*\bjs-section-link\b[^>]*>", page)
     raw = [parse_attrs(a) for a in anchors]
-
-    # A surname is ambiguous when two different full names share it.
-    seen: dict[str, set[str]] = {}
-    for r in raw:
-        name = (r.get("instructors") or "").strip()
-        if name in ("", "-", "TBD"):
-            continue
-        last = SURNAME_OVERRIDES.get(name, name.split()[-1])
-        seen.setdefault(last, set()).add(name)
-    ambiguous = {k for k, v in seen.items() if len(v) > 1}
+    ambiguous = ambiguous_surnames(r.get("instructors") or "" for r in raw)
 
     out = []
     for r in raw:
@@ -281,6 +284,44 @@ def fetch_sections(semester: str | None = None, term: str | None = None,
     }
     if semester:
         doc["term_slug"] = term_slug(semester)
+    return doc
+
+
+def roster_names(site: pathlib.Path) -> set[str]:
+    """'First Last' for everyone on the published department roster."""
+    names = set()
+    for f in site.glob("_departmentpeople/*/*.md"):
+        if f.parent.name.startswith("_"):
+            continue
+        front = f.read_text().split("---")[1:2]
+        fields = dict(re.findall(r'^(name|lastname):\s*"?([^"\n]*?)"?\s*$',
+                                 front[0] if front else "", re.M))
+        if fields.get("name") and fields.get("lastname"):
+            names.add(f"{fields['name']} {fields['lastname']}")
+    return names
+
+
+def fetch_sheet_sections(semester: str, site: pathlib.Path, chrome: bool = False) -> dict:
+    """The Mathematics group plus the Engagements (EGMT) sections taught by people
+    in the department -- the full set of rows the sheet carries.
+
+    An EGMT instructor counts as department when the name matches a published roster
+    entry or an instructor of a MATH section this term. HoosList lists only names, so
+    this is the narrowest test available; two people sharing a full name would pass.
+    """
+    doc = fetch_sections(semester=semester, chrome=chrome)
+    egmt = fetch_sections(semester=semester, group="Engagements", chrome=chrome)
+    ours = (roster_names(site) | {s["instructor_full"] for s in doc["sections"]}) - {"", "-", "TBD"}
+    picked = [s for s in egmt["sections"]
+              if any(n.strip() in ours for n in s["instructor_full"].split(","))]
+
+    sections = doc["sections"] + picked
+    ambiguous = ambiguous_surnames(s["instructor_full"] for s in sections)
+    for s in sections:
+        s["instructor"] = surname(s["instructor_full"], ambiguous)
+    doc["sections"] = sections
+    doc["section_count"] = len(sections)
+    doc["group"] = f"Mathematics + {len(picked)} department EGMT"
     return doc
 
 

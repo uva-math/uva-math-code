@@ -87,13 +87,27 @@ def instructor_cell(existing: str, name: str) -> tuple[str, str | None]:
     return new, None
 
 
-CH_RE = re.compile(r"^\\Ch\{MATH (\d{4})\}")
+CH_RE = re.compile(r"^\\Ch\{([A-Z]{2,4}) (\d{4})\}")
 ROW_RE = re.compile(r"^\\(?:Sx|Dx)\{(\d+)\}")
 NUM_RE = re.compile(r"^\\(?:Sx|Dx)\{[^}]*\}\{(\d+)\}")
 CONT_RE = re.compile(r"^\\(?:Sx|Dx)\{[^}]*\}\{\s*\}")
 
 
 DAY_ORDER = ["Mo", "Tu", "We", "Th", "Fr", "Sa", "Su"]
+
+# Blocks of another subject (the department's EGMT sections) sit after every MATH
+# block, just before this hand-written header.
+OTHER_SUBJECTS_BEFORE = r"\Ch{Independent study"
+
+
+def tex_text(s: str) -> str:
+    return re.sub(r"([&%#$_])", r"\\\1", s)
+
+
+def date_span(sec: dict) -> str:
+    """'Oct 15 - Dec 8' -> 'Oct 15--Dec 8', the term a half-semester section runs."""
+    spans = {m["date_range"] for m in sec["meetings"] if m["date_range"]}
+    return spans.pop().replace(" - ", "--") if len(spans) == 1 else ""
 
 
 def merge_meetings(meetings: list[dict]) -> str:
@@ -120,10 +134,14 @@ def section_line(sec: dict) -> str:
     days has to be folded the same way an existing row would be."""
     macro = "Dx" if sec["component"] == "Discussion" else "Sx"
     when = sec["when"] if len(sec["meetings"]) == 1 else merge_meetings(sec["meetings"])
+    who = sec["instructor"] or r"\tbd"
+    # EGMT sections share one course title; what tells them apart is the topic.
+    if sec["subject"] != "MATH" and sec["topic"]:
+        who = f"{tex_text(sec['topic'])} ({who})"
     return (f"\\{macro}{{{sec['section']}}}{{{sec['class_number']}}}"
             f"{{{when or sec['when']}}}{{}}"
             + (f"{{{sec['seats']}}}" if macro == "Sx" else "")
-            + "{" + (sec["instructor"] or r"\tbd") + "}")
+            + "{" + who + "}")
 
 
 def remove_sections(tex: str, dropped: list[str]) -> tuple[str, list[str]]:
@@ -146,7 +164,7 @@ def remove_sections(tex: str, dropped: list[str]) -> tuple[str, list[str]]:
     for i, line in enumerate(lines):
         m = CH_RE.match(line)
         if m and not (i + 1 < len(lines) and ROW_RE.match(lines[i + 1])):
-            changes.append(f"  -course MATH {m.group(1)}: no sections left")
+            changes.append(f"  -course {m.group(1)} {m.group(2)}: no sections left")
             continue
         keep.append(line)
 
@@ -165,10 +183,12 @@ def insert_sections(tex: str, missing: list[dict]) -> tuple[str, list[str], list
     lines = tex.split("\n")
     changes, notes = [], []
 
-    for sec in sorted(missing, key=lambda s: (s["catalog"], s["section"])):
+    for sec in sorted(missing, key=lambda s: (s["subject"], s["catalog"], s["section"])):
         row = section_line(sec)
-        label = f"MATH {sec['catalog']}-{sec['section']}"
-        heads = [(i, m.group(1)) for i, l in enumerate(lines) if (m := CH_RE.match(l))]
+        subj = sec["subject"]
+        label = f"{subj} {sec['catalog']}-{sec['section']}"
+        heads = [(i, m.group(2)) for i, l in enumerate(lines)
+                 if (m := CH_RE.match(l)) and m.group(1) == subj]
         same = [i for i, cat in heads if cat == sec["catalog"]]
 
         # An xx59 topics number carries one block per topic, so the catalog number
@@ -180,7 +200,7 @@ def insert_sections(tex: str, missing: list[dict]) -> tuple[str, list[str], list
             same = [i for i in same if len(want & words(lines[i])) == best] if best else same
             if len(same) > 1:
                 notes.append(f"NEW      {label} \"{sec['topic'] or sec['title']}\" "
-                             f"matches {len(same)} MATH {sec['catalog']} blocks; add "
+                             f"matches {len(same)} {subj} {sec['catalog']} blocks; add "
                              f"it to the right one by hand:\n           {row}")
                 continue
         hdr = same[0] if same else None
@@ -194,13 +214,18 @@ def insert_sections(tex: str, missing: list[dict]) -> tuple[str, list[str], list
             changes.append(f"  +row  {label}: {row}")
         else:
             at = next((i for i, cat in heads if cat > sec["catalog"]), None)
+            if at is None and subj != "MATH":
+                at = next((i for i, l in enumerate(lines)
+                           if l.startswith(OTHER_SUBJECTS_BEFORE)), None)
             if at is None:
                 notes.append(f"NEW      {label} \"{sec['title']}\" ({sec['credits']}) "
                              "sorts after every course on the sheet; add its block by "
                              f"hand:\n           {row}")
                 continue
             credits = re.sub(r"\bUnits?\b", lambda m: m.group(0).lower(), sec["credits"])
-            lines[at:at] = [f"\\Ch{{MATH {sec['catalog']}}}{{{sec['title']}}}"
+            if subj != "MATH" and date_span(sec):
+                credits += f", {date_span(sec)}"
+            lines[at:at] = [f"\\Ch{{{subj} {sec['catalog']}}}{{{tex_text(sec['title'])}}}"
                             f"{{{credits}}}", row, ""]
             changes.append(f"  +course {label} \"{sec['title']}\" ({credits})")
             continue
@@ -287,18 +312,27 @@ def refresh(tex: str, data: dict) -> tuple[str, list[str], list[str]]:
         cands = {sec["title"]}
         if sec["topic"]:
             cands |= {sec["topic"], f"{sec['title']} {sec['topic']}"}
-        titles.setdefault(sec["catalog"], set()).update(cands)
+        titles.setdefault((sec["subject"], sec["catalog"]), set()).update(cands)
     for m in re.finditer(r"\\Ch(?=\{)", result):
-        ch, _ = split_args(result, m.end(), 3)
+        ch, end = split_args(result, m.end(), 3)
         if not ch:
             continue
-        cm = re.match(r"MATH (\d{4})", ch[0])
+        cm = re.match(r"([A-Z]{2,4}) (\d{4})", ch[0])
         if not cm:
             continue
-        known = titles.get(cm.group(1), set())
+        known = titles.get((cm.group(1), cm.group(2)), set())
         if known and not (words(ch[1]) & set().union(*(words(t) for t in known))):
-            notes.append(f"TITLE    MATH {cm.group(1)}: sheet says {ch[1]!r}, "
+            notes.append(f"TITLE    {ch[0]}: sheet says {ch[1]!r}, "
                          f"HoosList says {sorted(known)}")
+        # The EGMT header carries the half of the term its sections meet in, since
+        # no row has room for dates; every row must agree with it.
+        if cm.group(1) != "MATH":
+            block = result[end:].split("\n\n", 1)[0]
+            for num in re.findall(r"^\\Sx\{[^}]*\}\{(\d+)\}", block, re.M):
+                span = date_span(by_num[num]) if num in by_num else ""
+                if span and span not in ch[2]:
+                    notes.append(f"DATES    {ch[0]} class {num} meets {span}, but the "
+                                 f"header says {ch[2]!r}")
 
     # Kept short deliberately: the header is one line on a landscape page and a
     # longer phrasing wraps, orphaning the date.
