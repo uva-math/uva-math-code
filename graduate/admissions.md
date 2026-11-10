@@ -41,7 +41,7 @@ tooltips: true
 
 In making its decisions about admission and financial aid, the Department is first and foremost looking for students that we feel will flourish in our program. To determine if a student will be successful, the Department pays close attention to the overall undergraduate record, letters of recommendation, and the student&#39;s personal statement.
 
-Regarding the undergraduate record, the rigor of the applicant&#39;s mathematics program is an important factor; a good grounding in real analysis (as in our {% include course number=4310 %} and {% include course number=4330 %}<span style="margin-left: -4px;"></span>), algebra (as in {% include course number=4651 %} and {% include course number=4652 %}<span style="margin-left: -4px;"></span>), general topology (as in {% include course number=5700 %}<span style="margin-left: -4px;"></span>), and complex analysis (as in {% include course number=3340 %}<span style="margin-left: -4px;"></span>) is ideal. Applicants may or may not choose to include unofficial GRE Mathematics Subject scores. Applications that do not include GRE Mathematics Subject scores will not be penalized in any way.
+Regarding the undergraduate record, the rigor of the applicant&#39;s mathematics program is an important factor; a good grounding in real analysis (as in our {% include course number=4310 %} and {% include course number=4330 %}<span style="margin-left: -4px;"></span>), algebra (as in {% include course number=4651 %} and {% include course number=4652 %}<span style="margin-left: -4px;"></span>), general topology (as in {% include course number=4770 %}<span style="margin-left: -4px;"></span>), and complex analysis (as in {% include course number=3340 %}<span style="margin-left: -4px;"></span>) is ideal. Applicants may or may not choose to include unofficial GRE Mathematics Subject scores. Applications that do not include GRE Mathematics Subject scores will not be penalized in any way.
 
 ## Research areas
 
@@ -62,18 +62,18 @@ The following websites for international students should be helpful:
 - International Studies Office:
 	[International Studies Office](https://www.virginia.edu/iso/)
 
-New teaching assistants whose first language is not English have their spoken English proficiency evaluated by the International Students Office and Teaching Resource Center. This test is similar to ETS&#39;s Test of Spoken English (TSE), and students who have taken the TSE, and have a high enough score, can be exempted from this evaluation.
+New teaching assistants whose first language is not English must take the oral section of the University of Virginia English Language Proficiency Exam (UVELPE), administered by the Center for American English Language and Culture (CAELC), even if they were exempt from the TOEFL/IELTS requirement at admission. There are no exemptions from the oral section. A score of 55 or higher, or successful completion of ESL 911, releases a student to teach.
 
 ---
 
 ## Contact Information
 
 ### Graduate School of Arts and Sciences
-P. O. Box 400775<br>
+P. O. Box 401102<br>
 University of Virginia<br>
-Charlottesville, Virginia 22904-4775<br>
-e-mail: <a href="mailto:gsas.admission@virginia.edu">gsas.admission@virginia.edu</a><br>
-Telephone (434) 924-7184 (TDD: (434) 982-HEAR)
+Charlottesville, Virginia 22904<br>
+e-mail: <a href="mailto:gsasadmission@virginia.edu">gsasadmission@virginia.edu</a><br>
+Telephone (434) 243-0209
 
 ### Admissions, Department of Mathematics
 P. O. Box 400137<br>
