@@ -334,6 +334,12 @@ def refresh(tex: str, data: dict) -> tuple[str, list[str], list[str]]:
                     notes.append(f"DATES    {ch[0]} class {num} meets {span}, but the "
                                  f"header says {ch[2]!r}")
 
+    for r in data.get("egmt_review", []):
+        notes.append(f"EGMT?    {r['section']} ({r['class_number']}) \"{r['topic']}\" is "
+                     f"taught by {r['name']!r}, who shares a surname with {r['department']!r}; "
+                     "put the name under include or exclude in "
+                     "scripts/schedule/egmt_people.json")
+
     # Kept short deliberately: the header is one line on a landscape page and a
     # longer phrasing wraps, orphaning the date.
     stamp = (f"manual HoosList snapshot, {data['fetched_date']} "

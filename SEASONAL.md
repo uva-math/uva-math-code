@@ -241,6 +241,37 @@ Campbell, Lu, Shapiro, Stees) in August 2028.
 
 ---
 
+## EGMT instructors on the class schedule
+
+**Due:** every term, at the schedule rollover (November for spring, April for fall),
+and again once HoosList fills in instructors shortly before classes start.
+**Last done:** November 2026 (Fall 2026 checked; Spring 2027 previewed: Morse, 1520-103).
+
+The class schedule ([`schedule.pdf`](schedule.pdf), `/schedule/`) lists the Engagements
+(EGMT) sections taught by department members. Nothing in SIS marks those sections as
+ours: `update.py` picks them from the HoosList Engagements group by **instructor name
+alone**, keeping a section when the full name matches a published `_departmentpeople/`
+entry, an instructor of a MATH section that term, or the `include` list of
+[`scripts/schedule/egmt_people.json`](scripts/schedule/egmt_people.json). Two failures
+are silent unless someone looks:
+
+- **A department member whose HoosList name differs from the roster** (nickname,
+  middle name, a person not yet on the roster) is left out. Read the HoosList
+  Engagements page for the new term
+  (`https://hooslist.virginia.edu/<term>/Group/Engagements`) and look for colleagues;
+  add any missed name to `include`.
+- **A non-member who shares a surname with someone in the department** is not added,
+  but is printed as an `EGMT?` item in the update report (and as `NEEDS A HUMAN` by the
+  daily hook) until the name is put on `exclude` or `include`. Decide each one; do not
+  clear the list by excluding names unread.
+
+Each EGMT block header carries the half-term date range (`2 units, Oct 15--Dec 8`); a
+`DATES` item means a section meets in the other half and needs its own block. Check also
+that last term's EGMT instructors still teach EGMT, and prune `exclude` entries that no
+longer appear, so the list stays readable.
+
+---
+
 ## Adding an entry
 
 Anything with a date that expires on a yearly cycle belongs here: a hardcoded year in a

@@ -126,7 +126,10 @@ are not cloned, so both need installing once per working copy.
 The sheet also carries the Engagements (EGMT) sections taught by department members.
 `update.py` fetches the HoosList `Engagements` group alongside `Mathematics` and keeps
 a section when an instructor's full name matches a published `_departmentpeople/`
-entry (`name` + `lastname`) or an instructor of a MATH section that term. They sit
+entry (`name` + `lastname`), an instructor of a MATH section that term, or the
+`include` list in `scripts/schedule/egmt_people.json` (`exclude` overrides all
+three). A surname-only match is reported as `EGMT?` until a human puts the name on
+one of the lists; the per-term check is in `SEASONAL.md`. They sit
 in `\Ch{EGMT ...}` blocks after the Seminars block, before the independent-study
 block; the refresh adds, updates and drops them like MATH rows. The instructor cell
 is `Topic (Surname)`, and the header's units field carries the half-term date range

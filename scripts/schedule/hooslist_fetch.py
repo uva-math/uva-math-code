@@ -301,19 +301,42 @@ def roster_names(site: pathlib.Path) -> set[str]:
     return names
 
 
+EGMT_PEOPLE = pathlib.Path(__file__).resolve().parent / "egmt_people.json"
+
+
 def fetch_sheet_sections(semester: str, site: pathlib.Path, chrome: bool = False) -> dict:
     """The Mathematics group plus the Engagements (EGMT) sections taught by people
     in the department -- the full set of rows the sheet carries.
 
-    An EGMT instructor counts as department when the name matches a published roster
-    entry or an instructor of a MATH section this term. HoosList lists only names, so
-    this is the narrowest test available; two people sharing a full name would pass.
+    An EGMT instructor counts as department when the full name matches a published
+    roster entry, an instructor of a MATH section this term, or the "include" list of
+    egmt_people.json; the "exclude" list overrides all three. HoosList lists only
+    names, so a name that shares only its surname with the department is not decided
+    here: it lands in doc["egmt_review"] for a human to put on one list or the other.
     """
     doc = fetch_sections(semester=semester, chrome=chrome)
     egmt = fetch_sections(semester=semester, group="Engagements", chrome=chrome)
-    ours = (roster_names(site) | {s["instructor_full"] for s in doc["sections"]}) - {"", "-", "TBD"}
-    picked = [s for s in egmt["sections"]
-              if any(n.strip() in ours for n in s["instructor_full"].split(","))]
+    lists = json.loads(EGMT_PEOPLE.read_text())
+    include, exclude = set(lists["include"]), set(lists["exclude"])
+    placeholders = {"", "-", "TBD"}
+    dept = roster_names(site) | {s["instructor_full"] for s in doc["sections"]}
+    ours = (dept | include) - exclude - placeholders
+    dept_last = {n.split()[-1].lower(): n for n in dept - placeholders}
+
+    picked, review = [], []
+    for s in egmt["sections"]:
+        names = [n.strip() for n in s["instructor_full"].split(",")]
+        if any(n in ours for n in names):
+            picked.append(s)
+            continue
+        for n in names:
+            if n in placeholders or n in exclude:
+                continue
+            twin = dept_last.get(n.split()[-1].lower())
+            if twin:
+                review.append({"name": n, "department": twin,
+                               "section": f"EGMT {s['catalog']}-{s['section']}",
+                               "class_number": s["class_number"], "topic": s["topic"]})
 
     sections = doc["sections"] + picked
     ambiguous = ambiguous_surnames(s["instructor_full"] for s in sections)
@@ -322,6 +345,7 @@ def fetch_sheet_sections(semester: str, site: pathlib.Path, chrome: bool = False
     doc["sections"] = sections
     doc["section_count"] = len(sections)
     doc["group"] = f"Mathematics + {len(picked)} department EGMT"
+    doc["egmt_review"] = review
     return doc
 
 

@@ -118,7 +118,8 @@ def main() -> int:
         return 0
 
     for line in r.stdout.splitlines():
-        if line.startswith(("  NEW", "  DROPPED", "  TITLE", "  INSTR")):
+        if line.startswith(("  NEW", "  DROPPED", "  TITLE", "  INSTR", "  DATES",
+                            "  EGMT")):
             print(f"schedule: NEEDS A HUMAN -> {line.strip()}", file=sys.stderr)
 
     # status --porcelain rather than diff: a repo may configure an external diff

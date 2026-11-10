@@ -1,0 +1,14 @@
+{
+ "_about": "EGMT instructors decided by hand. include: HoosList names of department members that the roster does not spell the same way. exclude: HoosList names that share a surname with the department but are not in it. update.py flags every undecided surname match as EGMT?; see SEASONAL.md.",
+ "include": [],
+ "exclude": [
+  "Canaan Morse",
+  "Demetia Hopkins",
+  "Elizabeth Taylor",
+  "Jun Wang",
+  "Lana Park",
+  "Lean Sweeney",
+  "Peter Miller",
+  "YOON HWA CHOI"
+ ]
+}
