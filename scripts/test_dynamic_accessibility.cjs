@@ -59,7 +59,7 @@ const axePath = require.resolve('axe-core/axe.min.js');
     ...['2010-11','2011-12','2012-13','2013-14','2014-15'].map(year=>'/seminars/geometry/'+year+'/'),
     ...['2006-07','2007-08','2008-09','2009-10','2010-11','2011-12','2012-13','2013-14','2014-15'].map(year=>'/seminars/topology/'+year+'/')
   ];
-  for(const path of (process.env.TEST_INTERACTIONS_ONLY ? [] : ['/','/people/all/','/faculty/','/postdocs/','/research/PR/','/directory/','/deptvisitors/','/calendar/','/seminars/colloq/','/arxiv/','/kiosk/',...archivePaths])){
+  for(const path of (process.env.TEST_INTERACTIONS_ONLY ? [] : ['/','/faculty/','/postdocs/','/research/PR/','/directory/','/deptvisitors/','/calendar/','/seminars/colloq/','/arxiv/','/kiosk/',...archivePaths])){
     console.log('Checking '+path);
     await page.goto(base+path,{waitUntil:'load'});
     await page.evaluate(() => document.fonts.ready);
@@ -90,7 +90,7 @@ const axePath = require.resolve('axe-core/axe.min.js');
       assert(await page.locator('.seminar-event details[open]').count(),'Kiosk must display its abstracts');
     }
   }
-  await page.goto(base+'/people/all/',{waitUntil:'load'});
+  await page.goto(base+'/directory/',{waitUntil:'load'});
   assert(await page.getByRole('search',{name:'People directory'}).count());
   assert.notEqual(await page.evaluate(()=>document.activeElement.id),'people-search-input','Page must not steal initial keyboard focus');
   await page.getByLabel('Search people',{exact:true}).fill('zzzz-no-person');
@@ -100,11 +100,12 @@ const axePath = require.resolve('axe-core/axe.min.js');
   await page.getByLabel('Search people',{exact:true}).press('Escape');
   await page.waitForTimeout(250);
   assert(await page.locator('.people-directory .row:visible').count()>20);
-  await page.getByRole('button',{name:'Staff',exact:true}).click();
+  await page.goto(base+'/faculty/',{waitUntil:'load'});
+  await page.getByRole('button',{name:'Lecturers',exact:true}).click();
   await page.waitForTimeout(250);
-  assert.equal(await page.getByRole('button',{name:'Staff',exact:true}).getAttribute('aria-pressed'),'true');
-  assert.equal(await page.locator('.people-directory:not([data-category="staff"]) .row:visible').count(),0);
-  assert((await page.locator('#people-results-status').textContent()).includes('Staff'));
+  assert.equal(await page.getByRole('button',{name:'Lecturers',exact:true}).getAttribute('aria-pressed'),'true');
+  assert.equal(await page.locator('.people-directory:not([data-category="lecturer"]) .row:visible').count(),0);
+  assert((await page.locator('#people-results-status').textContent()).includes('Lecturers'));
   await page.goto(base+'/arxiv/',{waitUntil:'load'});
   await page.waitForSelector('#uva-arxiv-list li[data-id]');
   assert.equal(await page.locator('.uva-arxiv-title[role="button"],#uva-arxiv-app a[target]').count(),0);
