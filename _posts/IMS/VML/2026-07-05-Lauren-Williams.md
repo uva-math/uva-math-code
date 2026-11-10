@@ -11,7 +11,7 @@ image: __SITE_URL__/img/IMS/Lauren-Williams-poster.jpg
 image-address: __SITE_URL__/img/IMS/Lauren-Williams-poster.pdf
 image-alt: "Virginia Mathematics Lectures poster for Lauren Williams, Harvard University, with two lectures on November 10 and 11, 2026. It shows her photograph in front of a large round lens, and diagrams of arrows and circles, on a dark blue background of circuit patterns, formulas and the outline of a human head."
 image-tall: true
-more-text: Abstracts
+more-text: Details
 nav_parent: IMS
 ---
 
@@ -28,13 +28,11 @@ nav_parent: IMS
 
 <h2>Lecture 1: Mathematicians Putting AI to the Test</h2>
 <p><strong>Date:</strong> Tuesday, November 10, 2026 | 5-6pm<br>
-<strong>Location:</strong> Nau 101<br>
-<strong>Abstract:</strong> TBA</p>
+<strong>Location:</strong> Nau 101</p>
 
 <h2>Lecture 2: Macdonald Polynomials and Probability</h2>
 <p><strong>Date:</strong> Wednesday, November 11, 2026 | 5-6pm<br>
-<strong>Location:</strong> Nau 101<br>
-<strong>Abstract:</strong> TBA</p>
+<strong>Location:</strong> Nau 101</p>
 
 <hr>
 
