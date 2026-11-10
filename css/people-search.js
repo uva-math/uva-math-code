@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     category: container.dataset.category,
     rows: Array.from(container.children).filter(row => row.classList.contains('row')).map(row => ({
       element: row,
+      category: row.dataset.category || container.dataset.category,
       search: normalize(row.textContent + ' ' + (row.querySelector('a.nonupper-h5')?.getAttribute('href') || ''))
     }))
   }));
@@ -31,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     sections.forEach(section => {
       let sectionCount = 0;
       section.rows.forEach(row => {
-        const visible = (category === 'all' || category === section.category) && row.search.includes(query);
+        const visible = (category === 'all' || category === row.category) && row.search.includes(query);
         row.element.hidden = !visible;
         row.element.style.display = visible ? '' : 'none';
         if (visible) sectionCount++;
@@ -64,8 +65,14 @@ document.addEventListener('DOMContentLoaded', function () {
     if (event.key === 'Escape') { event.preventDefault(); clearSearch(); }
   });
   clear.addEventListener('click', clearSearch);
+  document.addEventListener('keydown', event => {
+    if (event.key !== 'Escape' || event.defaultPrevented || event.target === input) return;
+    if (document.querySelector('.dropdown-menu.show')) return;
+    clearSearch();
+  });
   if (filters) {
-    const categories = new Set(['all', ...sections.map(section => section.category)]);
+    const present = new Set(sections.flatMap(section => section.rows.map(row => row.category)));
+    const categories = new Set(['all', ...Object.keys(labels).filter(value => present.has(value)), ...present]);
     categories.forEach(value => {
       const button = document.createElement('button');
       button.type = 'button';

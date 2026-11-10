@@ -6,7 +6,7 @@
 {% if ppl.general_position == include.type %}{% assign show_person = true %}{% endif %}
 {% if include.type == 'all' and ppl.general_position != 'recent-postdoc' %}{% assign show_person = true %}{% endif %}
 {% if show_person %}
-  <div class="row" style="padding:10px 0px">
+  <div class="row" data-category="{{ ppl.general_position }}" style="padding:10px 0px">
     <div class="col-md-6">
       <h{{ include.heading_level | default: 3 }} class="h5"><a href="{{site.url}}/people/{{ppl.UVA_id}}/" class="nonupper-h5">{{ ppl.name }} {{ ppl.lastname }}</a></h{{ include.heading_level | default: 3 }}>
       {%if ppl.pronouns != null %}
