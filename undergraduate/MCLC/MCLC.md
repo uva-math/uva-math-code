@@ -22,12 +22,12 @@ tooltips: true
 <!-- <p style="font-size:150%;color:Red;"> The MCLC will not offer sessions during Reading Days, October 1-3 </p> -->
 
 
-The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Student Center on the second floor of Clemons Library. </b> The MCLC is staffed with experienced undergraduate students (MCLC consultants) that offer assistance one-on-one (or in small groups) for many 1000/2000/3000-level math courses. This service is free and available to all UVA students enrolled in one of the following courses: <br>
+The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Student Center on the second floor of Clemons Library. </b> The MCLC is staffed with experienced undergraduate students (MATH Peer Coaches) who offer assistance one-on-one (or in small groups) for many 1000/2000/3000-level math courses. This service is free and available to all UVA students. The MCLC supports the following courses: <br>
 <ul>
  <li> {% include course number=1140 %} </li>
- <li> {% include course number=1191 %}, {% include course number=1210 %}, {% include course number=1310 %} (collectively referred to as Calculus I) </li>
+ <li> {% include course number=1191 %}, {% include course number=1192 %}, {% include course number=1210 %}, {% include course number=1310 %} (collectively referred to as Calculus I) </li>
  <li> {% include course number=1220 %}, {% include course number=1320 %} (collectively referred to as Calculus II) </li>
- <li> {% include course number=2310 %}, {% include course number=3000 %}, {% include course number=3100 %}, {% include course number=3250 %}, {% include course number=3310 %}, {% include course number=3350%}, and {% include course number=3351%} </li>
+ <li> {% include course number=2310 %}, {% include course number=3000 %}, {% include course number=3100 %}, and {% include course number=3351 %} </li>
 </ul>
 
 <!-- Due to the ongoing situation with COVID-19 all MCLC sessions for the Spring 2021 semester will be held virtually, via Zoom (links found in the table below). Here are a few things that you should have in mind before joining a session:
@@ -68,6 +68,8 @@ The Math Collaborative Learning Center (MCLC) operates in the <b> Georges Studen
 <!-- <p style="font-size:120%;color:red;"> Sessions in red will NOT be held this current week. </p> -->
 
 <p style="font-size:120%;"> See the <a href="https://academicsupport.virginia.edu/mclc-math-collaborative-learning-center">MCLC schedule on the Academic Support site</a>. </p>
+
+<p> Some instructors also hold office hours at the MCLC; these appear in the same drop-in schedule. Peer coach appointments for {% include course number=1140 %}, {% include course number=1190 %}, {% include course number=1210 %}, {% include course number=1220 %}, {% include course number=1310 %}, and {% include course number=1320 %} can be booked through <a href="https://virginia.traccloud.com/">TracCloud</a> (log in with NetBadge and search for Peer Academic Coaching). </p>
 
 <br> 
 
