@@ -17,12 +17,13 @@ When processing email requests, extract the key information (speaker names, titl
 
 ## Seasonal maintenance
 
-Several pages carry dates that expire on a yearly cycle — the seminar archives, the
-competitions page, the contacts pages, and the job-postings filter. They are listed in
+Several pages carry dates that expire on a yearly or per-term cycle — the seminar
+archives, the competitions page, the contacts pages, the job-postings filter, and the
+EGMT instructors on the class schedule. They are listed in
 [`SEASONAL.md`](SEASONAL.md) with their due dates and the primary sources to re-check.
 
-Read that file when working in this repository between July and October, and tell Leo
-which items are due. Do not run a rollover unless asked.
+Read that file at the start of any session in this repository, whatever the month, and
+tell Leo which items are due. Do not run a rollover unless asked.
 
 The seminar rollover was done in August 2026, for 2026-27.
 

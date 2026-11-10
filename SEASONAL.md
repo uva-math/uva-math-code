@@ -5,8 +5,8 @@ page just keeps serving last year's information, which is worse than an error be
 nobody notices. This file lists every recurring item, when it comes due, and what has to
 be verified.
 
-**If you are an agent working in this repository between July and October, read this file
-and tell Leo which items are due.** Do not perform a rollover unless asked; the point of
+**If you are an agent working in this repository, read this file at the start of every
+session, whatever the month, and tell Leo which items are due.** Do not perform a rollover unless asked; the point of
 the registry is the reminder, not the automation.
 
 When an item is refreshed, update its **Last done** line in the same commit.
