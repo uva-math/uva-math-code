@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A Large Audience for Lauren Williams's Virginia Mathematics Lecture"
+title: "Audience at Lauren Williams's Virginia Mathematics Lecture"
 comments: false
 categories: news events virginia-mathematics-lectures ims swiper-news
 published: true
