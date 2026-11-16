@@ -14,11 +14,16 @@
     } catch (_) { return null; }
   }
 
+  // Many descriptions are plain text, where "p<q" and "<x,y>" are mathematics:
+  // a "<" is markup only where it opens a real HTML tag, written as a tag is
+  // (the name, then ">" or attributes with "="). Every other "<" is text.
+  const markup = /<!--[\s\S]*?-->|<\/?(?:a|abbr|b|big|blockquote|br|center|cite|code|dd|del|div|dl|dt|em|font|g|h[1-6]|hr|html-blob|i|iframe|img|ins|li|mark|object|ol|p|pre|s|script|small|span|strike|strong|style|sub|sup|table|tbody|td|th|thead|tr|tt|u|ul|wbr)(?:\s*\/?>|\s+[^<>]*=[^<>]*>)|</gi;
+
   // Calendar descriptions are rich text supplied by organizers. Preserve their
   // semantics without importing scripts, presentation styles, or unnamed links.
   function descriptionFragment(html) {
     const source = document.createElement('template');
-    source.innerHTML = html;
+    source.innerHTML = html.replace(markup, match => match === '<' ? '&lt;' : match);
     const output = document.createDocumentFragment();
     const allowed = new Set(['P', 'DIV', 'BR', 'UL', 'OL', 'LI', 'STRONG', 'EM', 'B', 'I', 'A', 'SUB', 'SUP', 'BLOCKQUOTE']);
     function copy(node, parent) {

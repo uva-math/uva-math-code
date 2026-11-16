@@ -52,19 +52,17 @@
     return Date.UTC(Number(parts.year), Number(parts.month) - 1, Number(parts.day));
   }
 
-  const descriptionTag = /<\/?(?:p|div|br|span|a|b|i|u|em|strong|ul|ol|li|sub|sup|blockquote|h[1-6]|html-blob)(?:\s+[a-z-]+\s*=\s*(?:"[^"]*"|'[^']*'|[^\s"'<>]+))*\s*\/?>/gi;
+  // Most descriptions are plain text, where "p<q" and "<x,y>" are mathematics:
+  // a "<" is markup only where it opens a real HTML tag, written as a tag is
+  // (the name, then ">" or attributes with "="). Every other "<" is text.
+  const markup = /<!--[\s\S]*?-->|<\/?(?:a|abbr|b|big|blockquote|br|center|cite|code|dd|del|div|dl|dt|em|font|g|h[1-6]|hr|html-blob|i|iframe|img|ins|li|mark|object|ol|p|pre|s|script|small|span|strike|strong|style|sub|sup|table|tbody|td|th|thead|tr|tt|u|ul|wbr)(?:\s*\/?>|\s+[^<>]*=[^<>]*>)|</gi;
 
-  // Most descriptions are plain text, where "p<q" is mathematics: only a
-  // well-formed tag from the list above is read as markup.
   function plainText(description) {
-    const tags = [];
     const html = description
       .replace(/<(script|style|title|textarea|noscript|iframe|object)\b[\s\S]*?<\/\1\s*>/gi, '')
-      .replace(descriptionTag, tag => { tags.push(tag); return '\u0000'; })
-      .replace(/</g, '&lt;')
-      .replace(/\u0000/g, () => tags.shift());
+      .replace(markup, match => match === '<' ? '&lt;' : match);
     const source = document.createElement('template');
-    source.innerHTML = html.replace(/<br\s*\/?>/gi, '\n').replace(/<li\b[^>]*>/gi, '\n- ').replace(/<\/(p|div|li|ul|ol|blockquote|h[1-6])>/gi, '\n\n');
+    source.innerHTML = html.replace(/<br\s*\/?>/gi, '\n').replace(/<li\b[^>]*>/gi, '\n- ').replace(/<\/(p|div|li|ul|ol|blockquote|h[1-6]|pre|tr|table)>/gi, '\n\n');
     source.content.querySelectorAll('a[href]').forEach(anchor => {
       const href = anchor.getAttribute('href');
       if (/^(https?:|mailto:)/i.test(href) && !anchor.textContent.includes(href.replace(/^mailto:/i, ''))) anchor.append(' (' + href + ')');
