@@ -2,28 +2,28 @@
 title: Weekly seminar email
 layout: static_page_no_right_menu
 permalink: /seminars/weekly-email/
-sitemap: false
 search_exclude: true
+noindex: true
 math: false
 ---
 
 <style>
   .weekly-email-preview { background: #ffffff; color: #000000; border: 1px solid #767676; padding: 1rem; font-family: Aptos, Calibri, Arial, sans-serif; font-size: 11pt; }
   .weekly-email-preview p { margin: 0; }
-  .weekly-email-preview a { color: #0b57d0; }
+  #weekly-email .weekly-email-preview a:link, #weekly-email .weekly-email-preview a:visited, #weekly-email .weekly-email-preview a:hover { color: #0b57d0; }
   .weekly-email-preview hr { border: 0; border-top: 1px solid #000000; opacity: 1; margin: 0.5rem 0; }
 </style>
 
 <h1 class="mb-3">Weekly seminar email</h1>
 
-<p>This page reads every seminar calendar when it loads and prints one week in the layout of the weekly email. Copy the subject and the list into a new message to <code>math-seminarlist@virginia.edu</code>.</p>
+<p>This page reads every seminar calendar when it loads and prints one week in the layout of the weekly email. Copy the subject and the list into a new message to the seminar mailing list.</p>
 
 <div id="weekly-email" data-calendar-url="{{ site.url }}/calendar/">
   <p>
     <button type="button" class="btn btn-outline-secondary weekly-email-previous">Previous week</button>
     <button type="button" class="btn btn-outline-secondary weekly-email-next">Next week</button>
   </p>
-  <h2 class="weekly-email-range"></h2>
+  <h2 class="weekly-email-range">Week</h2>
   <p class="weekly-email-status" role="status" aria-live="polite" aria-atomic="true">Loading calendars...</p>
 
   <h2>Check by hand before sending</h2>
@@ -55,7 +55,7 @@ math: false
     {% for calendar in site.data.seminars %}
       {% if calendar.google_cal_id and calendar.defunct != true %}
         {% unless calendar_first %},{% endunless %}
-        {"id": {{ calendar.google_cal_id | jsonify }}, "name": {{ calendar.name | jsonify }}, "occasional": {% if calendar.published_in_nav == false or calendar.shortname == 'colloq' %}true{% else %}false{% endif %}}
+        {"id": {{ calendar.google_cal_id | jsonify }}, "name": {{ calendar.name | jsonify }}, "occasional": {% if calendar.published_in_nav == false or calendar.shortname == 'colloq' %}true{% else %}false{% endif %}, "oneOff": {% if calendar.shortname == 'one_off' %}true{% else %}false{% endif %}}
         {% assign calendar_first = false %}
       {% endif %}
     {% endfor %}
