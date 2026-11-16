@@ -155,17 +155,30 @@
     return text.replace(/([\^_])\{([^{}]*)\}(?![\p{L}\p{N}])/gu, (match, mark, group) => Array.from(group).length === 1 ? mark + group : match);
   }
 
-  // Superscripts and subscripts travel through the text as private-use marks
-  // (start of a superscript, start of a subscript, end) and become <sup> and
-  // <sub> elements when a line is drawn.
-  const scriptMarks = /[\uE000-\uE002]/g;
+  const superscripts = {
+    0: '⁰', 1: '¹', 2: '²', 3: '³', 4: '⁴', 5: '⁵', 6: '⁶', 7: '⁷', 8: '⁸', 9: '⁹', '+': '⁺', '-': '⁻', '−': '⁻', '=': '⁼', '(': '⁽', ')': '⁾',
+    a: 'ᵃ', b: 'ᵇ', c: 'ᶜ', d: 'ᵈ', e: 'ᵉ', f: 'ᶠ', g: 'ᵍ', h: 'ʰ', i: 'ⁱ', j: 'ʲ', k: 'ᵏ', l: 'ˡ', m: 'ᵐ', n: 'ⁿ', o: 'ᵒ', p: 'ᵖ',
+    r: 'ʳ', s: 'ˢ', t: 'ᵗ', u: 'ᵘ', v: 'ᵛ', w: 'ʷ', x: 'ˣ', y: 'ʸ', z: 'ᶻ'
+  };
+  const subscripts = {
+    0: '₀', 1: '₁', 2: '₂', 3: '₃', 4: '₄', 5: '₅', 6: '₆', 7: '₇', 8: '₈', 9: '₉', '+': '₊', '-': '₋', '−': '₋', '=': '₌', '(': '₍', ')': '₎',
+    a: 'ₐ', e: 'ₑ', h: 'ₕ', i: 'ᵢ', j: 'ⱼ', k: 'ₖ', l: 'ₗ', m: 'ₘ', n: 'ₙ', o: 'ₒ', p: 'ₚ', r: 'ᵣ', s: 'ₛ', t: 'ₜ', u: 'ᵤ', v: 'ᵥ', x: 'ₓ'
+  };
 
+  // Superscripts and subscripts are written with Unicode characters, never with
+  // <sup> or <sub>: pasting into Outlook can drop those tags, and "σ3" for σ³ is
+  // wrong mathematics. A script is rewritten only if Unicode has a character for
+  // every part of it; otherwise it keeps its ^ or _ (there is no superscript "/").
   function texScripts(text) {
     let previous;
     do {
       previous = text;
-      text = text.replace(/([\^_])(?:\{([^{}]*)\}|([^\s{}^_\uE000-\uE002]\p{M}*))/gu, (match, mark, group, single) =>
-        (mark === '^' ? '\uE000' : '\uE001') + (group !== undefined ? group : single) + '\uE002');
+      text = text.replace(/([\^_])(?:\{([^{}^_]*)\}|([^\s{}^_]))/gu, (match, mark, group, single) => {
+        const table = mark === '^' ? superscripts : subscripts;
+        const characters = Array.from(group !== undefined ? group.replace(/\s+/g, '') : single);
+        const covered = characters.length > 0 && characters.every(character => Object.prototype.hasOwnProperty.call(table, character));
+        return covered ? characters.map(character => table[character]).join('') : match;
+      });
     } while (text !== previous);
     return text;
   }
@@ -205,8 +218,7 @@
 
   const texDelimited = /\$\$([^$]+)\$\$|\\\[([\s\S]+?)\\\]|\\\(([\s\S]+?)\\\)|\\begin\{([a-z]+\*?)\}([\s\S]+?)\\end\{\4\}|\$([^$\n]+)\$/g;
 
-  function texToUnicode(source) {
-    const text = source.replace(scriptMarks, '');
+  function texToUnicode(text) {
     let output = '';
     let last = 0;
     let match;
@@ -254,32 +266,15 @@
     return { raw: text };
   }
 
-  function appendMarked(parent, text) {
-    const open = [parent];
-    text.split(/([\uE000-\uE002])/).forEach(piece => {
-      if (piece === '\uE000' || piece === '\uE001') {
-        const element = document.createElement(piece === '\uE000' ? 'sup' : 'sub');
-        open[open.length - 1].appendChild(element);
-        open.push(element);
-      } else if (piece === '\uE002') {
-        if (open.length > 1) open.pop();
-      } else if (piece) open[open.length - 1].appendChild(document.createTextNode(piece));
-    });
-  }
-
   function line(parent, text, bold) {
     const paragraph = document.createElement('p');
-    appendMarked(bold ? paragraph.appendChild(document.createElement('strong')) : paragraph, text);
+    if (bold) {
+      const strong = document.createElement('strong');
+      strong.textContent = text;
+      paragraph.appendChild(strong);
+    } else paragraph.textContent = text;
     parent.appendChild(paragraph);
     return paragraph;
-  }
-
-  // The plain-text copy writes a superscript as ^ and a subscript as _, and a link with its address.
-  function plain(node) {
-    if (node.nodeType === Node.TEXT_NODE) return node.textContent;
-    const inner = Array.from(node.childNodes).map(plain).join('');
-    if (node.tagName === 'SUP' || node.tagName === 'SUB') return (node.tagName === 'SUP' ? '^' : '_') + (Array.from(inner).length === 1 ? inner : '{' + inner + '}');
-    return node.tagName === 'A' ? inner + ' (' + node.href + ')' : inner;
   }
 
   function renderEvent(parent, item) {
@@ -427,7 +422,11 @@
   root.querySelector('.weekly-email-next').addEventListener('click', () => { offset += 1; start(); });
   copyButtons[0].addEventListener('click', event => copy(event.currentTarget, subject.value));
   copyButtons[1].addEventListener('click', event => {
-    const text = Array.from(preview.children).map(node => node.tagName === 'HR' ? '________________________________' : plain(node)).join('\n');
+    const text = Array.from(preview.children).map(node => {
+      if (node.tagName === 'HR') return '________________________________';
+      const anchor = node.querySelector('a');
+      return anchor ? node.textContent.replace(anchor.textContent, anchor.textContent + ' (' + anchor.href + ')') : node.textContent;
+    }).join('\n');
     const html = '<div style="font-family: Aptos, Calibri, Arial, sans-serif; font-size: 11pt; color: #000000;">' +
       preview.innerHTML.replace(/<p>/g, '<p style="margin: 0;">') + '</div>';
     copy(event.currentTarget, text, html);
