@@ -8,8 +8,8 @@ math: false
 ---
 
 <style>
-  .weekly-email-preview { background: #ffffff; color: #000000; border: 1px solid #767676; padding: 1rem; font-family: Aptos, Calibri, Arial, sans-serif; font-size: 11pt; }
-  .weekly-email-preview p { margin: 0; }
+  .weekly-email-preview { background: #ffffff; color: #000000; border: 1px solid #767676; padding: 1rem; font-family: Aptos, Calibri, Arial, sans-serif; font-size: 12pt; }
+  .weekly-email-preview p { margin: 0 0 8pt; line-height: 1.38; }
   #weekly-email .weekly-email-preview a:link, #weekly-email .weekly-email-preview a:visited, #weekly-email .weekly-email-preview a:hover { color: #0b57d0; }
   .weekly-email-preview hr { border: 0; border-top: 1px solid #000000; opacity: 1; margin: 0.5rem 0; }
 </style>
@@ -25,6 +25,7 @@ math: false
   </p>
   <h2 class="weekly-email-range">Week</h2>
   <p class="weekly-email-status" role="status" aria-live="polite" aria-atomic="true">Loading calendars...</p>
+  <p>Page version {{ site.time | date: "%Y-%m-%d %H:%M %Z" }}. Reload the page before each use, so that the newest version builds the list.</p>
 
   <h2>Check by hand before sending</h2>
   <ul>
@@ -63,4 +64,4 @@ math: false
   </script>
   <noscript><p>JavaScript is needed to load the calendars.</p></noscript>
 </div>
-<script defer src="{{ site.url }}/assets/js/seminar-weekly-email.js"></script>
+<script defer src="{{ site.url }}/assets/js/seminar-weekly-email.js?v={{ site.time | date: '%s' }}"></script>

@@ -264,13 +264,18 @@
     return { raw: text };
   }
 
-  function line(parent, text, bold) {
+  // The look of the list as it is sent: day lines bold on yellow, seminar and
+  // speaker lines bold, titles italic. The yellow is an inline style because it
+  // has to travel with the copied HTML; a stylesheet rule would stay on the page.
+  function line(parent, text, look) {
     const paragraph = document.createElement('p');
-    if (bold) {
-      const strong = document.createElement('strong');
-      strong.textContent = text;
-      paragraph.appendChild(strong);
-    } else paragraph.textContent = text;
+    let holder = paragraph;
+    if (look === 'day') {
+      holder = holder.appendChild(document.createElement('span'));
+      holder.style.backgroundColor = 'rgb(255, 255, 0)';
+    }
+    if (look) holder = holder.appendChild(document.createElement(look === 'italic' ? 'em' : 'strong'));
+    holder.textContent = text;
     parent.appendChild(paragraph);
     return paragraph;
   }
@@ -290,15 +295,15 @@
     const parts = splitSummary(summary);
     // The one-off calendar has no seminar name of its own: the entry names the event.
     if (item.calendar.oneOff) {
-      line(parent, time + ' – ' + (summary || 'TBA'), true);
+      line(parent, time + ' – ' + (summary || 'TBA'), 'bold');
       line(parent, room);
     } else {
-      line(parent, time + ' – ' + item.calendar.name, true);
+      line(parent, time + ' – ' + item.calendar.name, 'bold');
       line(parent, room);
-      if (parts.raw !== undefined) line(parent, parts.raw || 'TBA');
+      if (parts.raw !== undefined) line(parent, parts.raw || 'TBA', 'bold');
       else {
-        line(parent, 'Speaker: ' + parts.speaker);
-        line(parent, 'Title: ' + (parts.title || 'TBA'));
+        line(parent, 'Speaker: ' + parts.speaker, 'bold');
+        line(parent, 'Title: ' + (parts.title || 'TBA'), 'italic');
       }
     }
     const paragraphs = plainText(event.description || '');
@@ -365,7 +370,7 @@
     range.textContent = 'Week of ' + longDate(monday) + ' – ' + longDate(lastListed, true);
     subject.value = 'Mathematics Seminars and Colloquia ' + longDate(monday) + ' – ' + longDate(lastListed, true);
 
-    if (failed.length) line(preview, 'NOT LOADED, EVENTS MISSING: ' + failed.join(', ') + '. Reload the page.', true);
+    if (failed.length) line(preview, 'NOT LOADED, EVENTS MISSING: ' + failed.join(', ') + '. Reload the page.', 'bold');
     line(preview, 'Hello All,');
     line(preview, 'The seminar and colloquium list for the week ending ' + longDate(lastListed, true) + ' is below. If you have any additions or corrections, please email me and I will send out an updated version.');
     const pointer = line(preview, 'You can refer to the ');
@@ -379,7 +384,7 @@
       if (dayOf(item) !== lastDay) {
         lastDay = dayOf(item);
         preview.appendChild(document.createElement('hr'));
-        line(preview, '🗓 ' + new Intl.DateTimeFormat('en-US', { timeZone: 'UTC', weekday: 'long', month: 'long', day: 'numeric' }).format(new Date(lastDay)), true);
+        line(preview, '🗓 ' + new Intl.DateTimeFormat('en-US', { timeZone: 'UTC', weekday: 'long', month: 'long', day: 'numeric' }).format(new Date(lastDay)), 'day');
       }
       renderEvent(preview, item);
     });
@@ -425,8 +430,8 @@
       const anchor = node.querySelector('a');
       return anchor ? node.textContent.replace(anchor.textContent, anchor.textContent + ' (' + anchor.href + ')') : node.textContent;
     }).join('\n');
-    const html = '<div style="font-family: Aptos, Calibri, Arial, sans-serif; font-size: 11pt; color: #000000;">' +
-      preview.innerHTML.replace(/<p>/g, '<p style="margin: 0;">') + '</div>';
+    const html = '<div style="font-family: Aptos, Calibri, Arial, sans-serif; font-size: 12pt; color: #000000;">' +
+      preview.innerHTML.replace(/<p>/g, '<p style="margin: 0 0 8pt; line-height: 1.38;">') + '</div>';
     copy(event.currentTarget, text, html);
   });
   start();
