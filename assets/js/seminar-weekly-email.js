@@ -163,13 +163,25 @@
     return text.replace(/\u0001/g, '{').replace(/\u0002/g, '}').replace(/\s+/g, ' ').replace(/([(\[]) /g, '$1').replace(/ ([)\],.;])/g, '$1').trim();
   }
 
-  // Commands typed without dollar signs ("n \geq 6"). A line is converted only
-  // if every command on it is covered and it holds no stray formula delimiter.
+  const textAccents = { "'": '\u0301', '"': '\u0308', '`': '\u0300', '^': '\u0302', '~': '\u0303', H: '\u030B', v: '\u030C', c: '\u0327', u: '\u0306' };
+
+  // Text outside formulas. Accents in names ("G\'alvez", "Erd\H{o}s") and TeX
+  // dashes ("Sato--Tate") are always converted. Commands typed without dollar
+  // signs ("n \geq 6") are converted sentence by sentence, and only where every
+  // command in the sentence is covered and the line holds no stray dollar sign.
   function texProse(chunk) {
-    return chunk.split('\n').map(line => {
+    return chunk.split('\n').map(source => {
+      const line = source
+        .replace(/\{\\(['"`^~])\{?([A-Za-z])\}?\}|\\(['"`^~])\{([A-Za-z])\}|\\(['"`^~])([A-Za-z])/g, (match, a, x, b, y, c, z) => (x || y || z) + textAccents[a || b || c])
+        .replace(/\{\\([Hvcu])\{([A-Za-z])\}\}|\\([Hvcu])\{([A-Za-z])\}/g, (match, a, x, b, y) => (x || y) + textAccents[a || b])
+        .normalize('NFC')
+        .replace(/([\p{L}\p{N}])---(?=[\p{L}\p{N}])/gu, '$1—')
+        .replace(/([\p{L}\p{N}])--(?=[\p{L}\p{N}])/gu, '$1–');
       if (!line.includes('\\') || line.includes('$')) return line;
-      const converted = texCommands(line);
-      return converted.includes('\\') ? line : converted.replace(/ {2,}/g, ' ').replace(/ ([,.;])/g, '$1');
+      return (line.match(/[^.!?]+(?:[.!?]+["')\]”’]*\s*|$)|[.!?]+\s*/g) || [line]).map(sentence => {
+        const converted = texCommands(sentence);
+        return converted.includes('\\') ? sentence : converted.replace(/ {2,}/g, ' ').replace(/ ([,.;])/g, '$1');
+      }).join('');
     }).join('\n');
   }
 
@@ -245,18 +257,19 @@
       if (last > first) time = longDate(first) + ' to ' + longDate(last);
     }
     const room = '📍 ' + ((event.location || '').replace(/\s+/g, ' ').trim() || 'TBA');
-    const parts = splitSummary(event.summary);
+    const summary = texToUnicode((event.summary || '').replace(/\s+/g, ' ').trim());
+    const parts = splitSummary(summary);
     // The one-off calendar has no seminar name of its own: the entry names the event.
     if (item.calendar.oneOff) {
-      line(parent, time + ' – ' + (texToUnicode((event.summary || '').replace(/\s+/g, ' ').trim()) || 'TBA'), true);
+      line(parent, time + ' – ' + (summary || 'TBA'), true);
       line(parent, room);
     } else {
       line(parent, time + ' – ' + item.calendar.name, true);
       line(parent, room);
-      if (parts.raw !== undefined) line(parent, texToUnicode(parts.raw) || 'TBA');
+      if (parts.raw !== undefined) line(parent, parts.raw || 'TBA');
       else {
         line(parent, 'Speaker: ' + parts.speaker);
-        line(parent, 'Title: ' + (texToUnicode(parts.title) || 'TBA'));
+        line(parent, 'Title: ' + (parts.title || 'TBA'));
       }
     }
     const paragraphs = plainText(event.description || '');
