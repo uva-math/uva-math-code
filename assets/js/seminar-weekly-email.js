@@ -155,12 +155,27 @@
     return text.replace(/([\^_])\{([^{}]*)\}(?![\p{L}\p{N}])/gu, (match, mark, group) => Array.from(group).length === 1 ? mark + group : match);
   }
 
+  // Superscripts and subscripts travel through the text as private-use marks
+  // (start of a superscript, start of a subscript, end) and become <sup> and
+  // <sub> elements when a line is drawn.
+  const scriptMarks = /[\uE000-\uE002]/g;
+
+  function texScripts(text) {
+    let previous;
+    do {
+      previous = text;
+      text = text.replace(/([\^_])(?:\{([^{}]*)\}|([^\s{}^_\uE000-\uE002]\p{M}*))/gu, (match, mark, group, single) =>
+        (mark === '^' ? '\uE000' : '\uE001') + (group !== undefined ? group : single) + '\uE002');
+    } while (text !== previous);
+    return text;
+  }
+
   // Returns null when a formula keeps a command or grouping the table does not
   // cover; the caller then leaves that formula as TeX.
   function texFormula(source) {
     const text = texCommands(source.replace(/\\\{/g, '\u0001').replace(/\\\}/g, '\u0002').replace(/\\([%&#$])/g, '$1'));
     if (/\\/.test(text) || /[{}]/.test(text.replace(/[\^_]\{[^{}]*\}/g, ''))) return null;
-    return text.replace(/\u0001/g, '{').replace(/\u0002/g, '}').replace(/\s+/g, ' ').replace(/([(\[]) /g, '$1').replace(/ ([)\],.;])/g, '$1').trim();
+    return texScripts(text.replace(/\s+/g, ' ').replace(/([(\[]) /g, '$1').replace(/ ([)\],.;])/g, '$1').trim()).replace(/\u0001/g, '{').replace(/\u0002/g, '}');
   }
 
   const textAccents = { "'": '\u0301', '"': '\u0308', '`': '\u0300', '^': '\u0302', '~': '\u0303', H: '\u030B', v: '\u030C', c: '\u0327', u: '\u0306' };
@@ -177,17 +192,21 @@
         .normalize('NFC')
         .replace(/([\p{L}\p{N}])---(?=[\p{L}\p{N}])/gu, '$1—')
         .replace(/([\p{L}\p{N}])--(?=[\p{L}\p{N}])/gu, '$1–');
-      if (!line.includes('\\') || line.includes('$')) return line;
+      if (line.includes('$')) return line;
+      // Without a command in sight, only a short word such as "GL_1" or "L^2" is read as an index.
+      if (!line.includes('\\')) return line.replace(/(^|[\s(\["“])([A-Za-z]{1,3}[\^_](?:\{[^{}\s]+\}|[A-Za-z0-9]))(?![A-Za-z0-9_^{])/g, (match, lead, word) => lead + texScripts(word));
       return (line.match(/[^.!?]+(?:[.!?]+["')\]”’]*\s*|$)|[.!?]+\s*/g) || [line]).map(sentence => {
         const converted = texCommands(sentence);
-        return converted.includes('\\') ? sentence : converted.replace(/ {2,}/g, ' ').replace(/ ([,.;])/g, '$1');
+        if (converted.includes('\\')) return sentence;
+        return converted.replace(/ {2,}/g, ' ').replace(/ ([,.;])/g, '$1').replace(/\S+/g, word => /:\/\/|@|www\./.test(word) ? word : texScripts(word));
       }).join('');
     }).join('\n');
   }
 
   const texDelimited = /\$\$([^$]+)\$\$|\\\[([\s\S]+?)\\\]|\\\(([\s\S]+?)\\\)|\\begin\{([a-z]+\*?)\}([\s\S]+?)\\end\{\4\}|\$([^$\n]+)\$/g;
 
-  function texToUnicode(text) {
+  function texToUnicode(source) {
+    const text = source.replace(scriptMarks, '');
     let output = '';
     let last = 0;
     let match;
@@ -235,15 +254,32 @@
     return { raw: text };
   }
 
+  function appendMarked(parent, text) {
+    const open = [parent];
+    text.split(/([\uE000-\uE002])/).forEach(piece => {
+      if (piece === '\uE000' || piece === '\uE001') {
+        const element = document.createElement(piece === '\uE000' ? 'sup' : 'sub');
+        open[open.length - 1].appendChild(element);
+        open.push(element);
+      } else if (piece === '\uE002') {
+        if (open.length > 1) open.pop();
+      } else if (piece) open[open.length - 1].appendChild(document.createTextNode(piece));
+    });
+  }
+
   function line(parent, text, bold) {
     const paragraph = document.createElement('p');
-    if (bold) {
-      const strong = document.createElement('strong');
-      strong.textContent = text;
-      paragraph.appendChild(strong);
-    } else paragraph.textContent = text;
+    appendMarked(bold ? paragraph.appendChild(document.createElement('strong')) : paragraph, text);
     parent.appendChild(paragraph);
     return paragraph;
+  }
+
+  // The plain-text copy writes a superscript as ^ and a subscript as _, and a link with its address.
+  function plain(node) {
+    if (node.nodeType === Node.TEXT_NODE) return node.textContent;
+    const inner = Array.from(node.childNodes).map(plain).join('');
+    if (node.tagName === 'SUP' || node.tagName === 'SUB') return (node.tagName === 'SUP' ? '^' : '_') + (Array.from(inner).length === 1 ? inner : '{' + inner + '}');
+    return node.tagName === 'A' ? inner + ' (' + node.href + ')' : inner;
   }
 
   function renderEvent(parent, item) {
@@ -391,11 +427,7 @@
   root.querySelector('.weekly-email-next').addEventListener('click', () => { offset += 1; start(); });
   copyButtons[0].addEventListener('click', event => copy(event.currentTarget, subject.value));
   copyButtons[1].addEventListener('click', event => {
-    const text = Array.from(preview.children).map(node => {
-      if (node.tagName === 'HR') return '________________________________';
-      const anchor = node.querySelector('a');
-      return anchor ? node.textContent.replace(anchor.textContent, anchor.textContent + ' (' + anchor.href + ')') : node.textContent;
-    }).join('\n');
+    const text = Array.from(preview.children).map(node => node.tagName === 'HR' ? '________________________________' : plain(node)).join('\n');
     const html = '<div style="font-family: Aptos, Calibri, Arial, sans-serif; font-size: 11pt; color: #000000;">' +
       preview.innerHTML.replace(/<p>/g, '<p style="margin: 0;">') + '</div>';
     copy(event.currentTarget, text, html);
