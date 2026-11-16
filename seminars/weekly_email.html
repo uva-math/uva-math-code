@@ -1,0 +1,66 @@
+---
+title: Weekly seminar email
+layout: static_page_no_right_menu
+permalink: /seminars/weekly-email/
+sitemap: false
+search_exclude: true
+math: false
+---
+
+<style>
+  .weekly-email-preview { background: #ffffff; color: #000000; border: 1px solid #767676; padding: 1rem; font-family: Aptos, Calibri, Arial, sans-serif; font-size: 11pt; }
+  .weekly-email-preview p { margin: 0; }
+  .weekly-email-preview a { color: #0b57d0; }
+  .weekly-email-preview hr { border: 0; border-top: 1px solid #000000; opacity: 1; margin: 0.5rem 0; }
+</style>
+
+<h1 class="mb-3">Weekly seminar email</h1>
+
+<p>This page reads every seminar calendar when it loads and prints one week in the layout of the weekly email. Copy the subject and the list into a new message to <code>math-seminarlist@virginia.edu</code>.</p>
+
+<div id="weekly-email" data-calendar-url="{{ site.url }}/calendar/">
+  <p>
+    <button type="button" class="btn btn-outline-secondary weekly-email-previous">Previous week</button>
+    <button type="button" class="btn btn-outline-secondary weekly-email-next">Next week</button>
+  </p>
+  <h2 class="weekly-email-range"></h2>
+  <p class="weekly-email-status" role="status" aria-live="polite" aria-atomic="true">Loading calendars...</p>
+
+  <h2>Check by hand before sending</h2>
+  <ul>
+    <li>Remove entries that are not department events. Everything on a calendar is printed, including an organizer's own notes (an exam, "no meeting", "Open").</li>
+    <li>Joint events sit on two calendars and are printed twice. Keep one.</li>
+    <li>Events on no seminar calendar are missing: add them by hand, or to the calendar first.</li>
+    <li>Where the speaker and the title were not separated, the calendar line is printed as it is.</li>
+  </ul>
+  <div class="weekly-email-notes"></div>
+
+  <h2>Subject</h2>
+  <p>
+    <label for="weekly-email-subject" class="visually-hidden">Email subject</label>
+    <input type="text" id="weekly-email-subject" class="form-control weekly-email-subject" readonly>
+  </p>
+  <p>
+    <button type="button" class="btn btn-primary weekly-email-copy-subject">Copy subject</button>
+    <button type="button" class="btn btn-primary weekly-email-copy-list">Copy list</button>
+    <span class="weekly-email-copied" role="status" aria-live="polite"></span>
+  </p>
+
+  <h2>List</h2>
+  <div class="weekly-email-preview"></div>
+
+  <script type="application/json" class="weekly-email-data">
+    [
+    {% assign calendar_first = true %}
+    {% for calendar in site.data.seminars %}
+      {% if calendar.google_cal_id and calendar.defunct != true %}
+        {% unless calendar_first %},{% endunless %}
+        {"id": {{ calendar.google_cal_id | jsonify }}, "name": {{ calendar.name | jsonify }}, "occasional": {% if calendar.published_in_nav == false or calendar.shortname == 'colloq' %}true{% else %}false{% endif %}}
+        {% assign calendar_first = false %}
+      {% endif %}
+    {% endfor %}
+    ]
+  </script>
+  <noscript><p>JavaScript is needed to load the calendars.</p></noscript>
+</div>
+<script defer src="{{ site.url }}/assets/js/seminar-weekly-email.js"></script>
